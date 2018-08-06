@@ -1,0 +1,31 @@
+---
+title: Prise en charge de la validation des messages signés DKIM
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 12/9/2016
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
+description: Exchange Online Protection (EOP) et Exchange Online prennent en charge la validation entrante des messages DKIM (Domain Keys Identified Mail). Il s'agit d'une méthode de validation des messages envoyés depuis le domaine dont ils indiquent provenir et qui n'ont pas été usurpés par un autre utilisateur. Elle associe un message électronique à l'organisation responsable de son envoi. La vérification DKIM est automatiquement utilisée pour tous les messages envoyés dans le cadre de communications IPv6. (Pour plus d'informations sur la prise en charge d'IPv6, voir Prise en charge des messages entrants anonymes sur IPv6.)
+ms.openlocfilehash: 0fafc5a4754309f8f467a712f934fea3067b660d
+ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "22026151"
+---
+# <a name="support-for-validation-of-dkim-signed-messages"></a>Prise en charge de la validation des messages signés DKIM
+
+Exchange Online Protection (EOP) et Exchange Online prennent en charge la validation entrante des messages DKIM ([Domain Keys Identified Mail](https://www.rfc-editor.org/rfc/rfc6376.txt)). Il s'agit d'une méthode de validation des messages envoyés depuis le domaine dont ils indiquent provenir et qui n'ont pas été usurpés par un autre utilisateur. Elle associe un message électronique à l'organisation responsable de son envoi. La vérification DKIM est automatiquement utilisée pour tous les messages envoyés dans le cadre de communications IPv6. (Pour plus d'informations sur la prise en charge d'IPv6, voir [Prise en charge des messages entrants anonymes sur IPv6](support-for-anonymous-inbound-email-messages-over-ipv6.md).)
+  
+La technologie DKIM valide un message signé numériquement qui apparaît dans l'en-tête réservé à la signature DKIM au niveau des en-têtes de message. Les résultats d'une validation par signature DKIM sont intégrés à l'en-tête des résultats d'authentification, conformément à la norme RFC 7001 ([champ de l'en-tête du message permettant d'indiquer le statut d'authentification du message](https://www.rfc-editor.org/rfc/rfc7001.txt)). Le texte de l'en-tête du message ressemble à peu près à ce qui suit (où contoso.com correspond à l'expéditeur) :
+  
+ `Authentication-Results: <contoso.com>; dkim=pass (signature was verified) header.d=example.com;`
+  
+Les administrateurs peuvent créer des [Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) Exchange à partir des résultats d’une validation DKIM pour filtrer ou acheminer des messages en fonction de leurs besoins. 
+  
+

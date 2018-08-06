@@ -1,0 +1,81 @@
+---
+title: Accessibilité pour les personnes présentant un handicap
+ms.author: scotv
+author: scotvidican
+manager: laurawi
+ms.date: 12/15/2016
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+ms.collection: Ent_O365_Hybrid
+ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
+description: Microsoft s'engage à faciliter l'utilisation de ses produits et services pour tous.
+ms.openlocfilehash: 1e59e995ffaa4b3324913d8e49a9c2ee00b142fb
+ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "22026211"
+---
+# <a name="accessibility-for-people-with-disabilities"></a>Accessibilité pour les personnes présentant un handicap
+
+## <a name="accessibility-features-of-exchange"></a>Fonctionnalités d'accessibilité d'Exchange
+
+Les fonctionnalités suivantes visent à faciliter l’accès des personnes à mobilité réduite à Microsoft :
+  
+- [Raccourcis clavier dans Exchange 2013 Preview](http://technet.microsoft.com/library/146b2b52-1ef8-4606-991a-4cf4da694970.aspx)
+    
+- [Raccourcis clavier dans Outlook Web App](https://go.microsoft.com/fwlink/p/?LinkId=268079)
+    
+En outre, certaines fonctionnalités d’accessibilité et les utilitaires de Windows peuvent bénéficier des utilisateurs Exchange présentant un handicap. En outre, les modifications de taille et la couleur de Windows PowerShell fournissent des options d’accessibilité lors de l’utilisation d’Exchange Management Shell. Pour plus d’informations sur les options d’accessibilité de Windows PowerShell, voir [accessibilité de Windows PowerShell 2.0 ISE](https://go.microsoft.com/fwlink/p/?LinkId=258240).
+  
+## <a name="accessibility-features-of-exchange-help"></a>Fonctionnalités d'accessibilité d'Aide de Microsoft Exchange
+
+Toutes les figures dans l’Aide de Microsoft Exchange (captures d’écran, diagrammes, organigrammes et autres figures) sont associées à un texte de remplacement. Les utilisateurs rencontrant des difficultés pour afficher des figures peuvent placer le curseur sur la figure pour lire le texte de remplacement. Le texte de remplacement décrit l’illustration dans la figure.
+  
+## <a name="accessibility-products-and-services-from-microsoft"></a>Produits et services d’accessibilité de Microsoft
+
+Les sections suivantes fournissent des informations sur les fonctionnalités, produits et services visant à faciliter l'accès des personnes à mobilité réduite à Microsoft Windows.
+  
+> [!NOTE]
+> Les informations de cette section concernent uniquement les utilisateurs détenteurs d'une licence pour les produits Microsoft aux États-Unis. Si vous avez obtenu ce produit en dehors des États-Unis, visitez le [site web Microsoft Accessibility](https://www.microsoft.com/enable) pour obtenir la liste des numéros de téléphone et adresses des services de support technique de Microsoft. Vous pouvez contacter votre filiale pour savoir si le type de produits et services décrit dans cette section est disponible dans votre pays. Pour plus d'informations sur les fonctionnalités d'accessibilité incluses dans les produits Microsoft, consultez le site web sur l'accessibilité des produits Microsoft. 
+  
+### <a name="accessibility-features-of-windows"></a>Fonctionnalités d'accessibilité de Windows
+
+Le système d'exploitation Windows inclut de nombreuses fonctionnalités d'accessibilité intégrées utiles pour les personnes pour lesquelles l'utilisation d'un clavier ou d'une souris présente une difficulté, les personnes aveugles et à acuité visuelle réduite, et les personnes sourdes et malentendantes. Les fonctionnalités sont installées dans le cadre de l'installation. Pour plus d'informations sur ces fonctionnalités, voir l'Aide dans Windows et la page sur l'[accessibilité de Microsoft](https://go.microsoft.com/fwlink/p/?linkId=18139).
+  
+- **Didacticiels pas-à-pas gratuits** Microsoft offre une série de didacticiels pas-à-pas présentant les procédures détaillées de réglage des options et paramètres d'accessibilité sur votre ordinateur. Ces informations étant présentées en vis-à-vis, un simple coup d'œil suffit pour savoir comment utiliser la souris et/ou le clavier. 
+    
+    Pour rechercher des didacticiels pas à pas pour les produits Microsoft, voir [accessibilité de Microsoft](https://go.microsoft.com/fwlink/p/?linkId=18139).
+    
+- **Produits de technologie d'assistance pour Windows** Divers produits de technologie d'assistance sont disponibles pour faciliter l'utilisation des ordinateurs par les personnes à mobilité réduite. Vous pouvez effectuer une recherche dans un catalogue de produits de technologie d'assistance s'exécutant sur Windows dans la page sur l'accessibilité de Microsoft. 
+    
+    Si vous utilisez une technologie d'assistance, contactez votre fournisseur spécialisé dans les technologies d'assistance avant de procéder à une mise à niveau logicielle ou matérielle afin de détecter les problèmes de compatibilité éventuels. 
+    
+### <a name="documentation-in-alternative-formats"></a>Documentation dans d'autres formats
+
+Si vous rencontrez des difficultés pour consulter les supports imprimés, vous pouvez obtenir de la documentation pour de nombreux produits Microsoft dans des formats plus accessibles. La documentation produit accessible est indiquée à la page sur l'[accessibilité de Microsoft](https://go.microsoft.com/fwlink/p/?linkId=18139). 
+  
+En outre, vous pouvez obtenir des publications Microsoft supplémentaires auprès de Learning Ally. Learning Ally distribue ces documents aux membres inscrits et éligibles de leur service de distribution. Pour plus d’informations sur la disponibilité de la documentation produit Microsoft et des livres de Microsoft Press, contactez Learning Ally. 
+  
+||
+|:-----|
+|Learning Ally  <br/> 20 Roszel Road  <br/> Princeton, NJ 08540  <br/> Numéro de téléphone depuis les États-Unis : (800) 221-4792  <br/> Site Web : [Learning Ally](https://www.learningally.org/) <br/> |
+   
+### <a name="customer-service-for-people-with-hearing-impairments"></a>Service clientèle pour les personnes malentendantes
+
+Si vous êtes sourd ou malentendant, les services clientèle et produits Microsoft sont accessibles via un service téléphonique texte (TTY/TDD) :
+  
+- Pour le service clientèle, contactez le Microsoft Sales Information Center au (800) 892 5234 entre 06h30 et 17h30 (heure du Pacifique), du lundi au vendredi, en dehors des jours fériés. 
+    
+- Pour l’assistance technique aux États-Unis, contactez le Microsoft Sales Information Center au (800) 892 5234 entre 06h00 et 17h30 (heure du Pacifique), du lundi au vendredi, en dehors des jours fériés. Au Canada, composez le (905) 568 9641 entre 8h00 et 20h00 (heure de l’Est), du lundi au vendredi, en dehors des jours fériés. 
+    
+Les services de support technique Microsoft sont soumis aux tarifs, termes et conditions valables au moment de leur utilisation. Pour plus d'informations, voir [Support technique de Microsoft](https://go.microsoft.com/fwlink/p/?linkId=18142).
+  
+## <a name="for-more-information"></a>Pour plus d’informations
+
+Pour plus d'informations sur la manière dont la technologie d'accessibilité pour les ordinateurs contribue à faciliter la vie des personnes à mobilité réduite, consultez la page sur l'[accessibilité de Microsoft](http://go.microsoft.com/fwlink/p/?linkId=18139). 
+  
+
