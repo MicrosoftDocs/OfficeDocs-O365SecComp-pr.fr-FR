@@ -3,7 +3,6 @@ title: Utiliser des règles de transport pour bloquer le signalement des courrie
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 8/23/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,19 +10,18 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 description: Vous pouvez créer une règle de Transport Exchange pour empêcher les utilisateurs d’envoyer des messages électroniques à Microsoft pour analyse et de les utiliser dans votre propre processus de sécurité
-ms.openlocfilehash: f2376668e2a1a16eba9913178a100fc31763b227
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 6c6af23e6a5f345e26c7dc09c898f2978ea51a5f
+ms.sourcegitcommit: df1e9590a9fa152fa776f16d9b25c180ba7198f3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026771"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "22122584"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>Utiliser des règles de transport pour bloquer le signalement des courriers indésirables à Microsoft
 
 Il existe plusieurs façons, vous pouvez envoyer des messages faux positifs et faux négatifs à Microsoft pour analyse. En tant qu’administrateur, vous pouvez utiliser les règles de flux de messagerie pour voir ce que vos utilisateurs sont des rapports à Microsoft en tant que courrier indésirable, non-spam et hameçonnage. Pour plus d’informations, voir [envoi spam, légitimes et des hameçonnage anti-spam à Microsoft pour analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). Inversement, vous pouvez créer une règle de Transport Exchange pour empêcher les utilisateurs d’envoyer des messages électroniques à Microsoft pour analyse et de les utiliser dans votre propre processus de sécurité.
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
-<a name="sectionSection0"> </a>
 
 Durée d'exécution estimée : 5 minutes
   
@@ -32,7 +30,6 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
 Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013 **Keyboard shortcuts in Exchange 2013**.
   
 ## <a name="use-the-eac-to-create-a-mail-flow-rule-to-view-users-manual-junk-phishing-and-not-junk-reports"></a>Utiliser le CAE pour créer une règle de flux de messagerie afin d'afficher le courrier signalé comme indésirable, comme hameçonnage et comme non indésirable par les utilisateurs
-<a name="sectionSection1"> </a>
 
 1. Dans le CAE, accédez à **Flux de messagerie** \> **Règles**.
     
@@ -43,14 +40,14 @@ Pour des informations sur les raccourcis clavier applicables aux procédures de 
 4. Sous **Appliquer cette règle si**, sélectionnez **Le destinataire**, puis **l'adresse comprend l'un des mots suivants**.
     
 5. Dans la zone **spécifier des mots ou des expressions**, effectuez les opérations suivantes : 
-    - Saisissez **abuse@messaging.microsoft.com**, cliquez sur ![Icône Ajouter](media/ITPro-EAC-AddIcon.png), saisissez **junk@office365.microsoft.com**, puis cliquez sur ![Icône Ajouter](media/ITPro-EAC-AddIcon.png). Ces adresses de messagerie sont utilisées pour envoyer les messages faux négatifs à Microsoft.
-    - Saisissez **phish@office365.microsoft.com**, puis cliquez sur ![Icône Ajouter](media/ITPro-EAC-AddIcon.png). Cette adresse de messagerie est utilisée pour envoyer des messages de tentative de hameçonnage à Microsoft.
-    - Saisissez **false_positive@messaging.microsoft.com**, cliquez sur ![Icône Ajouter](media/ITPro-EAC-AddIcon.png), saisissez **not_junk@office365.microsoft.com**, puis cliquez sur ![Icône Ajouter](media/ITPro-EAC-AddIcon.png). Ces adresses de messagerie sont utilisées pour envoyer les messages faux positifs à Microsoft.
+    - Type de `abuse@messaging.microsoft.com` , puis cliquez sur ![ajouter une icône](media/ITPro-EAC-AddIcon.png), puis tapez `junk@office365.microsoft.com` , puis cliquez sur ![ajouter une icône](media/ITPro-EAC-AddIcon.png). Ces adresses de messagerie sont utilisés pour envoyer des messages faux négatifs à Microsoft.
+    - Type de `phish@office365.microsoft.com` , puis cliquez sur ![ajouter une icône](media/ITPro-EAC-AddIcon.png). Cette adresse de messagerie est utilisée pour envoyer des messages de hameçonnage manquées à Microsoft.
+    - Type de `false_positive@messaging.microsoft.com` , puis cliquez sur ![ajouter une icône](media/ITPro-EAC-AddIcon.png), puis tapez `not_junk@office365.microsoft.com` , puis cliquez sur ![ajouter une icône](media/ITPro-EAC-AddIcon.png). Ces adresses de messagerie sont utilisés pour envoyer des messages faux positifs à Microsoft.
     - Cliquez sur **OK**.
     
 6. Sous **Effectuer les opérations suivantes**, sélectionnez **Envoyer le message en Cci vers...**, puis sélectionnez les boîtes aux lettres où vous voulez recevoir les messages. 
     
-7. Si vous le souhaitez, vous pouvez effectuer des sélections pour auditer, tester et activer la règle sur une période spécifique, etc. Nous vous recommandons de tester la règle pendant un certain temps avant de l'appliquer. Pour plus d'informations sur ces sélections, voir [Manage Transport Rules](http://technet.microsoft.com/library/e7a81372-b6d7-4d1f-bc9e-a845a7facac2.aspx). 
+7. Si vous le souhaitez, vous pouvez émettre des sélections d’audit de la règle, test de la règle, activez la règle pendant une période spécifique et des autres sélections. Nous vous recommandons de tester la règle pour une période avant que vous l’appliquez. Voir les [procédures pour les règles de flux de messagerie](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures). 
     
 8. Pour enregistrer la règle, cliquez sur **Enregistrer**. Elle apparaît dans votre liste de règles. 
     
