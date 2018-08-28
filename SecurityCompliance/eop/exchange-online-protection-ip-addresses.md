@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: eb14f38b-7b55-4a47-84a0-4a56a59e4111
 description: Les adresses IP de centre de données Microsoft suivantes sont utilisées par Microsoft Exchange Online Protection (EOP) lors de l'envoi et de la réception d'e-mails, ou pour les services d'administration et de portail Exchange Online Protection. Pour envoyer et recevoir des messages à partir d'EOP ou utiliser les services d'administration, vérifiez que votre réseau autorise les connexions à partir de ces adresses IP.
-ms.openlocfilehash: 1b5dad69fb300f36bc94c9d264492f9c9be8948f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 853b64410969fcc2f3c9ef238d2e9f4a4bb36e7b
+ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026321"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "23230006"
 ---
 # <a name="exchange-online-protection-ip-addresses"></a>Adresses IP d'Exchange Online Protection
 
@@ -26,8 +26,6 @@ Les adresses IP de centre de données Microsoft suivantes sont utilisées par Mi
 > Microsoft développe un service web basée sur REST pour l’adresse IP et les entrées de nom de domaine complet de cette page. Ce nouveau service vous aideront à configurer et mettre à jour des périphériques de périmètre de réseau tels que des pare-feu et des serveurs proxy. Vous pouvez télécharger la liste des points de terminaison, la version actuelle de la liste, ou les modifications spécifiques. Ce service remplacera le document XML, flux RSS et l’adresse IP et les entrées de nom de domaine complet de cette page. Pour essayer ce nouveau service, accédez au [service Web](https://support.office.com/article/managing-office-365-endpoints-99cab9d4-ef59-4207-9f2b-3728eb46bf9a#webservice). 
  
 ## <a name="eop-ip-address-ranges"></a>Plages d'adresses IP EOP
-
-Voici la liste complète des plages d’adresses IP EOP à compter de **7/2/2018**. 
 
 ||||
 |:-----|:-----|:-----|
@@ -91,3 +89,4 @@ Exchange Online Protection achemine le courrier de la manière la plus efficace 
 | 216.32.180.0/23 |  | |
 | c 2a01:111:f400:7 00 :: / 54 |  | |
 ||||
+
