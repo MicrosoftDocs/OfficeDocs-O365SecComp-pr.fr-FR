@@ -9,14 +9,16 @@ ms.topic: hub-page
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: f9d4b5b6-8f4c-44df-9b06-2f9b3058ca20
 description: Ces articles aident les expéditeurs externes à améliorer leur réputation et à augmenter leur capacité à remettre des e-mails à des utilisateurs dans Office 365. Ils fournissent également des informations sur la façon dont vous pouvez signaler du courrier indésirable et des tentatives de hameçonnage même si vous n'êtes pas un utilisateur d'Office 365.
-ms.openlocfilehash: 551faf356678e0adecab784b1a473cfaa7e7e088
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 21784ecfd9a4ffe1e70268de6cc1146167d566fe
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22028121"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002533"
 ---
 # <a name="sending-mail-to-office-365"></a>Envoyer du courrier vers Office 365
 

@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: e9eecdde-dcc2-4283-a820-98d1e740e4f1
 description: Obtenir des informations sur la mise en quarantaine hébergée pour Exchange Online et Exchange Online Protection.
-ms.openlocfilehash: 58bd7d6f191f3a331cb387ae326153b4649571d2
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 2455f912fbe3b309e3759a0fdc3fd7df7ed47390
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027431"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003003"
 ---
 # <a name="quarantine"></a>Mise en quarantaine
 

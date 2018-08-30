@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 description: Paramètres du filtre de courrier indésirable de base sont sélection de l’action à effectuer sur les messages identifiés comme courrier indésirable et choisir de filtrer les messages qui sont enregistrés dans des langues spécifiques ou envoyés à partir de certains pays ou régions.
-ms.openlocfilehash: b0a5fa1a5640bd0baab68c29d8098059a6025f7d
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 3e24a69dacc18272baa710c18492759f67583f4f
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026531"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002963"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configuration de vos stratégies de filtrage du courrier indésirable
   
@@ -26,7 +28,6 @@ Paramètres du filtre de courrier indésirable de base sont sélection de l’ac
 > Pour les clients autonomes Exchange Online Protection (EOP) : par défaut, les filtres anti-spam EOP envoient des messages de courrier indésirable détectés au dossier courrier indésirable de chaque destinataire. Toutefois, afin de vous assurer que l’action **déplacer le message vers le dossier courrier indésirable** fonctionne pour les boîtes aux lettres locales, vous devez configurer les règles de Transport Exchange sur vos serveurs sur site pour détecter les en-têtes de spam ajoutés par EOP. Pour plus d’informations, voir [vous assurer que le courrier indésirable est routé vers le dossier courrier indésirable de chaque utilisateur](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
 ## <a name="what-you-must-know-before-you-begin"></a>Vous devez connaître avant de commencer
-<a name="sectionSection0"> </a>
 
 Durée d'exécution estimée : 30 minutes
   
@@ -35,7 +36,6 @@ Vous devez avoir les autorisations avant de pouvoir effectuer cette procédure, 
 Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013 **Keyboard shortcuts in Exchange 2013**.
   
 ## <a name="use-the-exchange-admin-center-eac-to-configure-spam-filter-policies"></a>Utilisation du Centre d'administration Exchange (CAE) pour configurer les stratégies de filtrage du courrier indésirable
-<a name="sectionSection1"> </a>
 
 1. Dans le Centre d'administration Exchange (CAE), accédez à **Protection** \> **Filtre de courrier indésirable**.
     
@@ -43,7 +43,7 @@ Pour des informations sur les raccourcis clavier applicables aux procédures de 
     
   - Double-cliquez sur la stratégie par défaut afin de modifier cette dernière pour l'ensemble de l'organisation.
     
-  - Cliquez sur l'icône ![Icône Ajouter](media/ITPro-EAC-AddIcon.png) **Nouveau** pour créer une stratégie personnalisée de filtrage du courrier indésirable applicable à des utilisateurs, des groupes et des domaines au sein de votre organisation. Vous pouvez également modifier des stratégies personnalisées en double-cliquant dessus. 
+  - Cliquez sur l'icône ![Icône Ajouter](media/ITPro-EAC-AddIcon.gif) **Nouveau** pour créer une stratégie personnalisée de filtrage du courrier indésirable applicable à des utilisateurs, des groupes et des domaines au sein de votre organisation. Vous pouvez également modifier des stratégies personnalisées en double-cliquant dessus. 
     
 3. Pour les stratégies personnalisées, spécifiez un nom pour cette stratégie. Si vous le souhaitez, vous pouvez également spécifier une description plus détaillée. Vous ne pouvez pas renommer la stratégie par défaut.
     
@@ -85,27 +85,27 @@ Pour des informations sur les raccourcis clavier applicables aux procédures de 
     
 6. Dans la page **Listes rouges**, vous pouvez indiquer des entrées, telles que des expéditeurs ou des domaines, qui seront toujours marquées comme courrier indésirable. Le service applique l'action configurée de courrier indésirable à probabilité élevée sur le courrier électronique correspondant à ces entrées. 
     
-  - Ajoutez des expéditeurs indésirables à la liste de blocage des expéditeurs. Cliquez sur **Ajouter**![Icône Ajouter](media/ITPro-EAC-AddIcon.png), puis ajoutez les adresses des expéditeurs à bloquer dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l'aide d'un point-virgule ou d'un retour à la ligne. Cliquez sur **OK** pour revenir à la page **Listes rouges**. 
+  - Ajoutez des expéditeurs indésirables à la liste de blocage des expéditeurs. Cliquez sur **Ajouter**![Icône Ajouter](media/ITPro-EAC-AddIcon.gif), puis ajoutez les adresses des expéditeurs à bloquer dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l'aide d'un point-virgule ou d'un retour à la ligne. Cliquez sur **OK** pour revenir à la page **Listes rouges**. 
     
-  - Ajoutez des domaines indésirables à la liste des domaines bloqués. Cliquez sur **Ajouter**![Icône Ajouter](media/ITPro-EAC-AddIcon.png), puis ajoutez les domaines à bloquer dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l'aide d'un point-virgule ou d'un retour à la ligne. Cliquez sur **OK** pour revenir à la page **Listes rouges**. 
+  - Ajoutez des domaines indésirables à la liste des domaines bloqués. Cliquez sur **Ajouter**![Icône Ajouter](media/ITPro-EAC-AddIcon.gif), puis ajoutez les domaines à bloquer dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l'aide d'un point-virgule ou d'un retour à la ligne. Cliquez sur **OK** pour revenir à la page **Listes rouges**. 
     
     > [!CAUTION]
     > Si vous bloquez des domaines de niveau supérieur, il est probable que le courrier électronique que vous souhaitez recevoir soit marqué comme courrier indésirable. 
   
 7. Dans la page **Listes vertes**, vous pouvez indiquer des entrées, telles que des expéditeurs ou des domaines, qui seront toujours remises dans la boîte de réception. Le courrier électronique provenant de ces entrées n'est pas traité par le filtre de courrier indésirable. 
     
-  - Ajoutez des expéditeurs approuvés à la liste des expéditeurs autorisés. Cliquez sur **Ajouter**![Icône Ajouter](media/ITPro-EAC-AddIcon.png), puis ajoutez les adresses des expéditeurs à autoriser dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l'aide d'un point-virgule ou d'un retour à la ligne. Cliquez sur OK pour revenir à la page **Listes vertes**. 
+  - Ajoutez des expéditeurs approuvés à la liste des expéditeurs autorisés. Cliquez sur **Ajouter**![Icône Ajouter](media/ITPro-EAC-AddIcon.gif), puis ajoutez les adresses des expéditeurs à autoriser dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l'aide d'un point-virgule ou d'un retour à la ligne. Cliquez sur OK pour revenir à la page **Listes vertes**. 
     
-  - Ajoutez des domaines approuvés à la liste de domaines autorisés. Cliquez sur **Ajouter**![Icône Ajouter](media/ITPro-EAC-AddIcon.png), puis ajoutez les domaines à autoriser dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l'aide d'un point-virgule ou d'un retour à la ligne. Cliquez sur OK pour revenir à la page **Listes vertes**. 
+  - Ajoutez des domaines approuvés à la liste de domaines autorisés. Cliquez sur **Ajouter**![Icône Ajouter](media/ITPro-EAC-AddIcon.gif), puis ajoutez les domaines à autoriser dans la boîte de dialogue de sélection. Vous pouvez séparer les entrées à l'aide d'un point-virgule ou d'un retour à la ligne. Cliquez sur OK pour revenir à la page **Listes vertes**. 
     
     > [!CAUTION]
     > Si vous autorisez des domaines de niveau supérieur, le courrier électronique indésirable sera probablement remis dans une boîte de réception. 
   
 8. Dans la page **Du courrier indésirable International** , vous pouvez filtrer les messages électroniques qui sont enregistrés dans des langues spécifiques ou envoyés à partir de certains pays ou régions. Vous pouvez configurer jusqu'à 250 différentes régions et de 86 différentes langues. Le service s’applique l’action configurée pour le courrier indésirable fiables. 
     
-1. Activez la case à cocher de **filtrer les messages électroniques écrites dans les langues suivantes** pour activer cette fonctionnalité. Cliquez sur ![ajouter une icône](media/ITPro-EAC-AddIcon.png)et puis, dans la boîte de dialogue de sélection, faites votre choix (sélection multiple est prise en charge). Par exemple, si vous sélectionnez cette option pour filtrer les messages écrits en arabe (AR) et **message de quarantaine** est votre action configurée pour les messages de courrier indésirable de niveau de confiance élevé, écrits en arabe tous les messages seront mis en quarantaine. Cliquez sur **OK** pour revenir au volet de **Courrier indésirable International** . 
+1. Activez la case à cocher de **filtrer les messages électroniques écrites dans les langues suivantes** pour activer cette fonctionnalité. Cliquez sur ![ajouter une icône](media/ITPro-EAC-AddIcon.gif)et puis, dans la boîte de dialogue de sélection, faites votre choix (sélection multiple est prise en charge). Par exemple, si vous sélectionnez cette option pour filtrer les messages écrits en arabe (AR) et **message de quarantaine** est votre action configurée pour les messages de courrier indésirable de niveau de confiance élevé, écrits en arabe tous les messages seront mis en quarantaine. Cliquez sur **OK** pour revenir au volet de **Courrier indésirable International** . 
     
-2. Activez la case à cocher **filtrer les messages électroniques envoyés à partir de suivant pays ou régions** pour activer cette fonctionnalité. Cliquez sur ![ajouter une icône](media/ITPro-EAC-AddIcon.png)et puis, dans la boîte de dialogue de sélection, faites votre choix (sélection multiple est prise en charge). Par exemple, si vous sélectionnez cette option pour filtrer tous les messages envoyés à partir de l’Australie (AU) et **message de quarantaine** est votre action configurée pour fiables de courrier indésirable, puis tous les messages émanant d’Australie seront mis en quarantaine. Cliquez sur **OK** pour revenir au volet de **Courrier indésirable International** . 
+2. Activez la case à cocher **filtrer les messages électroniques envoyés à partir de suivant pays ou régions** pour activer cette fonctionnalité. Cliquez sur ![ajouter une icône](media/ITPro-EAC-AddIcon.gif)et puis, dans la boîte de dialogue de sélection, faites votre choix (sélection multiple est prise en charge). Par exemple, si vous sélectionnez cette option pour filtrer tous les messages envoyés à partir de l’Australie (AU) et **message de quarantaine** est votre action configurée pour fiables de courrier indésirable, puis tous les messages émanant d’Australie seront mis en quarantaine. Cliquez sur **OK** pour revenir au volet de **Courrier indésirable International** . 
     
     > [!NOTE]
     > Par défaut, si aucune option de courrier indésirable international n'est sélectionnée, le service applique le filtrage de courrier indésirable standard à tous les messages envoyés, quelle qu'en soit la langue ou la région d'origine. Les messages sont analysés et les actions configurées sont appliquées si le message est identifié comme courrier indésirable ou comme courrier indésirable à probabilité élevée. 
@@ -143,10 +143,9 @@ Pour des informations sur les raccourcis clavier applicables aux procédures de 
 11. Cliquez sur **Enregistrer**. Un résumé de vos paramètres de stratégie s'affiche dans le volet droit.
     
 > [!TIP]
->  Vous pouvez activez ou désactivez les cases à cocher dans la colonne **activé** pour activer ou désactiver vos stratégies personnalisées. Par défaut, toutes les stratégies sont activées. La stratégie par défaut ne peut pas être désactivée. > Pour supprimer une stratégie personnalisée, sélectionnez la stratégie, cliquez sur le ![icône de suppression](media/ITPro-EAC-DeleteIcon.png) **Supprimer** l’icône, puis vérifiez que vous souhaitez supprimer la stratégie. Impossible de supprimer la stratégie par défaut. > Stratégies personnalisées sont toujours prioritaires sur la stratégie par défaut. Stratégies personnalisées s’exécutent dans l’ordre inverse dans lequel vous avez créé (de la plus ancienne à la plus récente), mais vous pouvez modifier la priorité (marche) de vos stratégies personnalisées en cliquant sur le ![d’icône de flèche](media/ITPro-EAC-UpArrowIcon.png) flèche vers le haut et ![icône représentant une flèche vers le bas](media/ITPro-EAC-DownArrowIcon.png) vers le bas flèche. La stratégie qui a une **priorité** **0** s’exécutera en premier, suivi par **1**, puis **2**et ainsi de suite. 
+>  Vous pouvez activez ou désactivez les cases à cocher dans la colonne **activé** pour activer ou désactiver vos stratégies personnalisées. Par défaut, toutes les stratégies sont activées. La stratégie par défaut ne peut pas être désactivée. > Pour supprimer une stratégie personnalisée, sélectionnez la stratégie, cliquez sur le ![icône de suppression](media/ITPro-EAC-DeleteIcon.gif) **Supprimer** l’icône, puis vérifiez que vous souhaitez supprimer la stratégie. Impossible de supprimer la stratégie par défaut. > Stratégies personnalisées sont toujours prioritaires sur la stratégie par défaut. Stratégies personnalisées s’exécutent dans l’ordre inverse dans lequel vous avez créé (de la plus ancienne à la plus récente), mais vous pouvez modifier la priorité (marche) de vos stratégies personnalisées en cliquant sur le ![d’icône de flèche](media/ITPro-EAC-UpArrowIcon.gif) flèche vers le haut et ![icône représentant une flèche vers le bas](media/ITPro-EAC-DownArrowIcon.gif) vers le bas flèche. La stratégie qui a une **priorité** **0** s’exécutera en premier, suivi par **1**, puis **2**et ainsi de suite. 
   
 ## <a name="use-remote-powershell-to-configure-spam-filter-policies"></a>Utilisation de PowerShell à distance pour configurer les stratégies de filtrage du courrier indésirable
-<a name="sectionSection2"> </a>
 
 Vous pouvez également configurer et appliquer des stratégies de filtrage du courrier indésirable dans PowerShell. Pour savoir comment utiliser Windows PowerShell pour se connecter à Exchange Online, voir [se connecter à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554). Pour savoir comment utiliser Windows PowerShell pour se connecter à Exchange Online Protection, voir [se connecter à Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290).
   
@@ -161,7 +160,6 @@ Vous pouvez également configurer et appliquer des stratégies de filtrage du co
 Pour appliquer une stratégie de filtrage du courrier indésirable personnalisée à des utilisateurs, à des groupes et/ou à des domaines, utilisez la cmdlet [New-HostedContentFilterRule](http://technet.microsoft.com/library/2df13ba9-1eb0-4da3-bd72-a79d5fa15e26.aspx) (pour créer une règle de filtrage pouvant être appliquée aux stratégies personnalisées) ou la cmdlet [Set-HostedContentFilterRule](http://technet.microsoft.com/library/ba259260-ffd3-43f3-8ef4-9d8659679d02.aspx) (pour modifier une règle de filtrage existante pouvant être appliquée aux stratégies personnalisées). Utilisez les cmdlets [Enable-HostedContentFilterRule](http://technet.microsoft.com/library/354ece28-dcde-4b5f-88ed-475115e7ea78.aspx) ou [Disable-HostedContentFilterRule](http://technet.microsoft.com/library/c1f8dafc-ef5d-47e3-b0fb-71a88e145fc5.aspx) pour activer ou désactiver la règle appliquée à la stratégie. 
   
 ## <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
-<a name="sectionSection3"> </a>
 
 Pour vous assurer que le courrier indésirable est correctement détecté et traité, vous pouvez envoyer un message GTUBE via le service. Comme le fichier test d'antivirus EICAR, le message GTUBE teste le service pour vérifier qu'il détecte le courrier indésirable entrant. Un message GTUBE doit toujours être détecté comme courrier indésirable par le filtre de courrier indésirable, et les actions appliquées au message doivent correspondre aux paramètres que vous avez configurés.
   
@@ -172,16 +170,8 @@ XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 ```
 
 ## <a name="fine-tuning-your-spam-filter-policy-to-prevent-false-positives-and-false-negatives"></a>Optimisation de votre stratégie de filtrage de courrier indésirable pour éviter les faux positifs et les faux négatifs
-<a name="sectionSection4"> </a>
 
 Vous pouvez activer des options de filtrage avancé du courrier indésirable si vous souhaitez adopter une approche agressive du filtrage du courrier indésirable. Pour plus d'informations sur les paramètres de courrier indésirable généraux applicables à l'ensemble de l'organisation, consultez les rubriques relatives aux procédures visant à [empêcher que des courriers électroniques faux positifs soient marqués comme courrier indésirable à l'aide d'une liste fiable ou d'autres techniques](https://go.microsoft.com/fwlink/p/?LinkId=534224) et à [bloquer du courrier indésirable à l'aide du filtre d'Office 365 afin d'éviter les problèmes de faux négatifs](https://go.microsoft.com/fwlink/p/?LinkId=534225). Elles sont utiles si vous disposez d'un contrôle de niveau administrateur et que vous souhaitez éviter les faux positifs ou les faux négatifs.
-  
-## <a name="new-to-office-365"></a>Vous débutez avec Office 365 ?
-<a name="sectionSection5"> </a>
-
-||
-|:-----|
-|![Icône rapide pour LinkedIn Learning](media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Vous débutez avec Office 365 ?**         Découvrez les cours vidéo gratuits pour **Office 365 admins and IT pros** proposés par LinkedIn Learning. |
    
 ## <a name="for-more-information"></a>Pour plus d'informations
 <a name="sectionSection6"> </a>

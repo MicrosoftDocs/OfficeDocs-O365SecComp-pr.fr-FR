@@ -9,14 +9,16 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
 description: En tant qu'administrateur Exchange Online ou Exchange Online Protection (EOP), vous pouvez faire en sorte qu'un message électronique circulant via le service ne soit pas marqué comme courrier indésirable. Une manière de procéder consiste à créer des listes d'expéditeurs approuvés et d'expéditeurs bloqués pour les membres de votre organisation.
-ms.openlocfilehash: fcb43f990750782788dc6f459dd5c7d296146a38
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: cbf886bdcc40044a31b285b6806aecbc95f0f97c
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22028081"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003103"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>Listes des expéditeurs autorisés et des expéditeurs bloqués dans Exchange Online
 
@@ -38,7 +40,7 @@ Remarque :
   
 Vous pouvez rencontrer l’erreur qui est décrite dans KB 2590466 (« vous recevez l’erreur « Erreur de validation de courrier indésirable » dans Outlook Web App pour Exchange Server 2010 »). Pour résoudre ce problème, désactivez la case à cocher « Approuver les messages électroniques à partir de mes contacts ». Vous pouvez également réduire la quantité d’adresses de messagerie qui sont dans votre dossier de Contacts par défaut afin qu’elle le nombre maximal autorisé de limite de 1 024 dans Exchange Online est définie pour l’attribut « MaxSafeSenders ». Pour plus d’informations sur cet attribut et l’applet de commande Set-Mailbox, reportez-vous à la suite de rubrique :
   
-[Set-Mailbox](https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/Set-Mailbox?view=exchange-ps)
+[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Set-Mailbox?view=exchange-ps)
   
 ## <a name="see-also"></a>See also
 

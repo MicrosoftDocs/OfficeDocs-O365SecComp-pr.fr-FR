@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 'En règle générale, que vous utilisez un connecteur pour router les messages à partir de votre organisation Office 365 à votre site environnement de messagerie. Vous pouvez également utiliser un connecteur pour router les messages à partir d’Office 365 à une organisation partenaire. Lorsque Office 365 ne peut pas remettre les messages via le connecteur, ils sont en file d’attente dans Office 365. '
-ms.openlocfilehash: 495d73524afb3ab3a34fd2f1f5f4cd747481f9d8
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 4effbb783d6ba8f3b33d0aed446e031193d2f2a3
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027621"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002718"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Intelligence de flux de messagerie dans Office 365
   
@@ -39,7 +41,6 @@ Office 365 génère une erreur lorsqu'un message ne peut pas être remis à l'ai
 - [Code d'erreur : 450 4.7.320 Échec de la validation du certificat](mail-flow-intelligence-in-office-365.md#ErrorCode47320)
     
 ## <a name="error-code-450-44312-dns-query-failed"></a>Code d'erreur : 450 4.4.312 Échec de la requête DNS
-<a name="ErrorCode44312"> </a>
 
 En règle générale, cette erreur signifie qu'Office 365 a essayé de se connecter à l'hôte actif qui est spécifié dans le connecteur, mais que la requête DNS permettant de rechercher les adresses IP de l'hôte actif a échoué. Les causes pouvant être à l'origine de cette erreur sont les suivantes :
   
@@ -54,7 +55,6 @@ Vous devez résoudre le problème de DNS en collaborant avec votre service d'hé
 Si votre organisation partenaire (par exemple, un fournisseur de services cloud tiers) est à l'origine de l'erreur, vous devez contacter votre partenaire afin de résoudre le problème.
   
 ## <a name="error-code-450-44315-connection-timed-out"></a>Code d'erreur : 450 4.4.315 Délai de connexion dépassé
-<a name="ErrorCode44315"> </a>
 
 En règle générale, cela signifie qu'Office 365 ne peut pas se connecter au serveur de messagerie de destination. Les détails de l'erreur expliquent le problème. Par exemple :
   
@@ -67,7 +67,6 @@ Déterminez le scénario qui vous concerne et apportez les corrections nécessai
 Si votre organisation partenaire (par exemple, un fournisseur de services cloud tiers) est à l’origine de l’erreur, vous devez contacter votre partenaire afin de résoudre le problème.
   
 ## <a name="error-code-450-44316-connection-refused"></a>Code d'erreur : 450 4.4.316 Connexion refusée.
-<a name="ErrorCode44316"> </a>
 
 En règle générale, cette erreur signifie qu'Office 365 a rencontré une erreur de connexion lors de la tentative de connexion au serveur de messagerie de destination. Une cause probable de cette erreur est que votre pare-feu bloque les connexions depuis des adresses IP Office 365. Cette erreur peut également être naturelle si vous avez effectué la migration complète de votre système de messagerie local vers Office 365 et éteint votre environnement de messagerie local.
   
@@ -75,7 +74,7 @@ En règle générale, cette erreur signifie qu'Office 365 a rencontré une erreu
     
 - Si aucun autre message ne doit être remis dans votre environnement local, cliquez sur **Fix now** (Corriger maintenant) dans l'alerte afin qu'Office 365 puisse rejeter immédiatement les messages dont les destinataires ne sont pas valides. Cette action réduira le risque de dépasser le quota de destinataires non valides de votre organisation, ce qui peut avoir des répercussions négatives sur la remise normale des messages. Vous pouvez également suivre les instructions suivantes pour résoudre manuellement le problème : 
     
-  - Désactivez ou supprimez le connecteur d'Office 365 pour votre environnement local : Centre d'administration Office 365 \> **Centre d'administration** \> **Exchange** \> **Flux de messagerie** \> **Connecteurs** \> sélectionnez le connecteur avec **Office 365** pour valeur **De** et **Serveur de messagerie de votre organisation** pour valeur **À**. Supprimez le connecteur en cliquant sur **Supprimer**![Icône Supprimer](media/ITPro-EAC-DeleteIcon.png) ou désactivez le connecteur en cliquant sur **Modifier**![Icône Modifier](media/ITPro-EAC-EditIcon.png) et en décochant **Activer**.
+  - Désactiver ou supprimer le connecteur à partir d’Office 365 à votre environnement local : centre d’administration Office 365 \> **Admin centres** \> **Exchange** \> **flux de messagerie** \> **connecteurs** \> sélectionner le connecteur avec la valeur **de** **Office 365** et **à** la valeur **serveur de messagerie de votre organisation**. Supprimez le connecteur en cliquant sur **Supprimer**![icône de suppression](media/ITPro-EAC-DeleteIcon.gif), ou de désactiver le connecteur en cliquant sur **Modifier** ![icône Modifier](media/ITPro-EAC-EditIcon.gif) et annulation de l' **Activer**.
     
   - Modifiez le domaine accepté dans Office 365 qui est associé à votre environnement de messagerie local en remplaçant **Relais interne** pour **Faisant autorité**. Pour obtenir des instructions, consultez la rubrique [Manage Accepted Domains in Exchange Online](http://technet.microsoft.com/library/0fc0ecc0-e133-48fa-9d72-cb4793a73960.aspx).
     
@@ -84,7 +83,6 @@ En règle générale, cette erreur signifie qu'Office 365 a rencontré une erreu
 Si votre organisation partenaire (par exemple, un fournisseur de services cloud tiers) est à l'origine de l'erreur, vous devez contacter votre partenaire afin de résoudre le problème.
   
 ## <a name="error-code-450-44317-cannot-connect-to-remote-server"></a>Code d'erreur : 450 4.4.317 La connexion au serveur distant a échoué
-<a name="ErrorCode44317"> </a>
 
 En règle générale, cette erreur signifie qu'Office 365 s'est connecté au serveur de messagerie de destination, mais que le serveur a répondu avec une erreur immédiate ou ne répond pas à la configuration requise en matière de connexion. Les détails de l'erreur expliquent le problème. Par exemple :
   
@@ -97,7 +95,6 @@ Vérifiez les certificats et les paramètres TLS sur vos serveurs de messagerie 
 Si votre organisation partenaire (par exemple, un fournisseur de services cloud tiers) est à l'origine de l'erreur, vous devez contacter votre partenaire afin de résoudre le problème.
   
 ## <a name="error-code-450-44318-connection-was-closed-abruptly"></a>Code d'erreur : 450 4.4.318 La connexion a été interrompue brusquement
-<a name="ErrorCode44318"> </a>
 
 En règle générale, cette erreur signifie que la connexion a été coupée car Office 365 a des difficultés à communiquer avec votre environnement de messagerie local. Les causes pouvant être à l'origine de cette erreur sont les suivantes :
   
@@ -112,7 +109,6 @@ Déterminez le scénario qui vous concerne et apportez les corrections nécessai
 Si votre organisation partenaire (par exemple, un fournisseur de services cloud tiers) est à l'origine de l'erreur, vous devez contacter votre partenaire afin de résoudre le problème.
   
 ## <a name="error-code-450-47320-certificate-validation-failed"></a>Code d'erreur : 450 4.7.320 Échec de la validation du certificat
-<a name="ErrorCode47320"> </a>
 
 En règle générale, cette erreur signifie qu'Office 365 a rencontré une erreur lors de la tentative de validation du certificat du serveur de messagerie de destination. Les détails de l'erreur expliquent cette dernière. Par exemple :
   
@@ -127,7 +123,6 @@ Corrigez le certificat ou le connecteur afin que les messages mis en file d'atte
 Si votre organisation partenaire (par exemple, un fournisseur de services cloud tiers) est à l'origine de l'erreur, vous devez contacter votre partenaire afin de résoudre le problème.
   
 ## <a name="other-error-codes"></a>Autres codes d'erreur
-<a name="sectionSection6"> </a>
 
 Office 365 a des difficultés à remettre des messages à votre serveur de messagerie local ou partenaire. Utilisez les informations sur le **serveur de destination** dans l'erreur afin d'examiner le problème dans votre environnement ou modifiez le connecteur en cas d'erreur de configuration. 
   

@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: Les administrateurs peuvent utiliser la cmdlet Search-Mailbox pour faire une recherche dans des boîtes aux lettres utilisateur, puis supprimer des messages d'une boîte aux lettres.
-ms.openlocfilehash: ed110c4a3e36a93970af99e9548aa293d94307fd
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: c5f727d7772e23cc8723eee6a45e51e3ac074648
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026581"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002823"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>Recherche et suppression de messages - Aide de l’administrateur
   
@@ -26,8 +28,7 @@ Pour rechercher et supprimer des messages en une seule étape, exécutez la cmdl
   
 Pour plus de sécurité, vous pouvez d'abord copier les messages vers une autre boîte aux lettres à l'aide des paramètres  _TargetMailbox_ et  _TargetFolder_. De cette manière, vous êtes assuré de conserver une copie des messages supprimés pour pouvoir y accéder ultérieurement. 
   
-## <a name="what-do-i-need-to-know-before-i-begin"></a>Que dois-je savoir avant de commencer ?
-<a name="sectionSection0"> </a>
+## <a name="before-you-begin"></a>Avant de commencer
 
 - Durée d'exécution estimée : 10 minutes. La durée réelle dépend de la taille de la boîte aux lettres et de la requête de recherche.
     
@@ -35,9 +36,9 @@ Pour plus de sécurité, vous pouvez d'abord copier les messages vers une autre 
     
 - Vous devez disposer des deux rôles de gestion suivants pour rechercher et supprimer des messages dans les boîtes aux lettres des utilisateurs :
     
-  - **Recherche de boîte aux lettres** Ce rôle permet de rechercher des messages dans plusieurs boîtes aux lettres dans votre organisation. Les administrateurs ne sont pas affectés à ce rôle par défaut. Pour affecter vous-même ce rôle afin que vous pouvez rechercher les boîtes aux lettres, ajoutez-vous en tant que membre du groupe de rôles de gestion de la découverte. Consultez la rubrique [Ajouter un utilisateur au groupe de rôles de gestion de découverte](http://technet.microsoft.com/library/729e09d8-614b-431f-ae04-ae41fb4c628e.aspx).
+  - **Recherche de boîte aux lettres**- ce rôle vous permet de rechercher des messages entre plusieurs boîtes aux lettres dans votre organisation. Les administrateurs ne sont pas affectés à ce rôle par défaut. Pour affecter vous-même ce rôle afin que vous pouvez rechercher les boîtes aux lettres, ajoutez-vous en tant que membre du groupe de rôles de gestion de la découverte. Consultez la rubrique [Ajouter un utilisateur au groupe de rôles de gestion de découverte](http://technet.microsoft.com/library/729e09d8-614b-431f-ae04-ae41fb4c628e.aspx).
     
-  - **Exportation d’importation de boîte aux lettres** Ce rôle permet de supprimer des messages de boîte aux lettres d’un utilisateur. Par défaut, ce rôle n’est pas affecté à un groupe de rôles. Pour supprimer les messages des boîtes aux lettres des utilisateurs, vous pouvez ajouter le rôle de boîte aux lettres importer exporter au groupe de rôles de gestion de l’organisation. Pour plus d’informations, voir la section « Ajouter un rôle à un groupe de rôles » dans [Gérer les groupes de rôles](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx) . 
+  - **Boîte aux lettres importer exporter** : ce rôle permet de supprimer des messages de boîte aux lettres d’un utilisateur. Par défaut, ce rôle n’est pas affecté à un groupe de rôles. Pour supprimer les messages des boîtes aux lettres des utilisateurs, vous pouvez ajouter le rôle de boîte aux lettres importer exporter au groupe de rôles de gestion de l’organisation. Pour plus d’informations, voir la section « Ajouter un rôle à un groupe de rôles » dans [Gérer les groupes de rôles](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx) . 
     
 - Si la fonctionnalité de récupération d'élément unique est activée pour la boîte aux lettres dont vous souhaitez supprimer des messages, vous devez d'abord la désactiver. Pour plus d'informations, voir [Activation de la récupération d'élément unique pour une boîte aux lettres](http://technet.microsoft.com/library/2e7f1bcd-8395-45ad-86ce-22868bd46af0.aspx).
     
@@ -50,9 +51,8 @@ Pour plus de sécurité, vous pouvez d'abord copier les messages vers une autre 
 - Pour rechercher des boîtes aux lettres de l’utilisateur archive également lorsque vous exécutez l’applet de commande **Search-Mailbox** . De même, les éléments dans la boîte aux lettres d’archivage principal seront supprimés lorsque vous utilisez l’applet de commande **Search-Mailbox** avec le commutateur _DeleteContent_ . Pour éviter ce problème, vous pouvez inclure le commutateur *DoNotIncludeArchive* . En outre, nous vous recommandons de ne pas utiliser le commutateur _DeleteContent_ pour supprimer des messages dans Exchange Online boîtes aux lettres dont l’extension automatique d’archivage activé parce que la perte de données inattendue. 
     
 ## <a name="search-messages-and-log-the-search-results"></a>Rechercher des messages et enregistrer les résultats de la recherche
-<a name="sectionSection1"> </a>
 
-Cet exemple permet d'effectuer une recherche dans la boîte aux lettres d'April Stewart au niveau des messages dont le champ Objet contient l'expression « Your bank statement » (Votre relevé de compte) et de consigner les résultats de la recherche dans le dossier SearchAndDeleteLog de la boîte aux lettres de l'administrateur. Les messages ne sont ni copiés ni supprimés de la boîte aux lettres cible.
+Cet exemple permet d'effectuer une recherche dans la boîte aux lettres d'April Stewart au niveau des messages dont le champ Objet contient l'expression « Your bank statement » (Votre relevé de compte) et de consigner les résultats de la recherche dans le dossier SearchAndDeleteLog de la boîte aux lettres de l'administrateur. Les messages ne sont ni copiés ni supprimés de la boîte aux lettres cible.
   
 ```
 Search-Mailbox -Identity "April Stewart" -SearchQuery 'Subject:"Your bank statement"' -TargetMailbox administrator -TargetFolder "SearchAndDeleteLog" -LogOnly -LogLevel Full
@@ -66,10 +66,8 @@ Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery attachment:troja
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Search-Mailbox](http://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx).
   
-[Revenir en haut de la page](search-for-and-delete-messagesadmin-help.md#top)
-  
+ 
 ## <a name="search-and-delete-messages"></a>Rechercher et supprimer des messages
-<a name="sectionSection2"> </a>
 
 Cet exemple permet d'effectuer une recherche dans la boîte aux lettres d'April Stewart au niveau des messages dont le champ Objet contient l'expression « Your bank statement » et de supprimer les messages de la boîte aux lettres source sans copier les résultats de la recherche dans un autre dossier. Comme expliqué précédemment, le rôle de gestion Importation/Exportation de boîte aux lettres doit vous avoir été attribué pour que vous puissiez supprimer des messages de la boîte aux lettres d'un utilisateur.
   
@@ -93,12 +91,7 @@ Get-Mailbox -ResultSize unlimited | Search-Mailbox -SearchQuery 'Subject:"Downlo
 ```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Search-Mailbox](http://technet.microsoft.com/library/9ee3b02c-d343-4816-a583-a90b1fad4b26.aspx).
-  
-[Revenir en haut de la page](search-for-and-delete-messagesadmin-help.md#top)
-  
+
 ## <a name="using-the--loglevel-full-parameter"></a>Utilisation du paramètre -LogLevel Full
-<a name="sectionSection3"> </a>
 
 Dans certains des exemples ci-dessus, le paramètre  _LogLevel_ avec la valeur  `Full` est utilisé pour consigner des informations détaillées concernant les résultats renvoyés par la cmdlet **Search-Mailbox**. Lorsque vous incluez ce paramètre, un courrier électronique est créé et envoyé à la boîte aux lettres spécifiée par le paramètre  _TargetMailbox_. Le fichier journal (au format CSV nommé Résultats recherche.csv) est joint au courrier électronique et est disponible dans le dossier indiqué par le paramètre  _TargetFolder_. Le fichier journal comporte une ligne par message inclus dans les résultats de la recherche lorsque vous exécutez la cmdlet **Search-Mailbox**. 
-  
-

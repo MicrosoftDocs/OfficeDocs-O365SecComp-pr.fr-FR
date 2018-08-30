@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 description: Messages de RÉTRODIFFUSION sont les messages de rebond automatique envoyées par les serveurs de messagerie, généralement à la suite du courrier indésirable entrant. Le Backscatterer DNSBL est une liste d’adresses IP qui envoient des messages de RÉTRODIFFUSION. Il n’est pas une liste spammeur, et nous n’essayez pas de supprimer nos serveurs du Backscatterer.
-ms.openlocfilehash: 8f8a60715f9fb12ca53ffddc6d4fca6e9fab2ede
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 2ab5c6a3bec347446452acd3bdfd8c5d309994a9
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22028171"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002680"
 ---
 # <a name="backscatter-messages-and-eop"></a>Messages de rétrodiffusion et EOP
 

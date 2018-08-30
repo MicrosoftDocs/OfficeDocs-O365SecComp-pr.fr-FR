@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: c7dee22c-9b5b-425c-91a9-d093204ff84e
 description: En tant qu’administrateur d’organisation pour Exchange 2013 et Exchange Online, vous pouvez configurer Outlook Web App pour autoriser l’envoi et réception de messages S/MIME-protégé. Utilisez l’applet de commande SMIMEConfig pour gérer cette fonctionnalité par le biais de l’interface Exchange Management Shell.
-ms.openlocfilehash: d351129c7e12a66b530e0e4f82107728fd8387ae
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: e4bbf6cb8b0e2976b856045fc8a474bc2aa2a55a
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027131"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002505"
 ---
 # <a name="configure-smime-settings-for-outlook-web-app"></a>Configurer les paramètres S/MIME pour Outlook Web App
 

@@ -9,14 +9,16 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 description: Le Centre d'administration Exchange (CAE) est la console de gestion basée sur le web pour Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 99640e561b41e47a74e7c22f0bbdcacd0dd80bd7
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 144907110af9fcbec1c6399e0695abb705bef409
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026311"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002943"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Centre d’administration Exchange dans Exchange Online Protection 
 
@@ -24,7 +26,7 @@ Le Centre d'administration Exchange (CAE) est la console de gestion basée sur l
   
 Vous recherchez la version Exchange 2013 de cette rubrique ? Consultez la rubrique [Exchange admin center in Exchange 2013](http://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx).
   
-Vous recherchez la version Exchange Online de cette rubrique ? Consultez la rubrique [Exchange admin center in Exchange Online](http://technet.microsoft.com/library/ace44f6b-4084-4f9c-89b3-e0317962472b.aspx).
+Vous recherchez la version Exchange Online de cette rubrique ? Consultez la rubrique [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
   
 ## <a name="accessing-the-eac"></a>Accès au CAE
 
@@ -32,8 +34,7 @@ Dans la plupart des cas, les clients EOP accèdent au CAE via le Centre d'admini
   
 Vous pouvez également accéder à la page de connexion du CAE directement via l'URL suivante : https://admin.protection.outlook.com/ecp/\<companydomain\>. Par exemple, https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com. Après avoir indiqué vos informations de connexion d'utilisateur, vous être envoyé directement dans le CAE.
   
-## <a name="common-user-interface-elements-in-the-eac"></a>Éléments d'interface utilisateur communs dans le CAE
-<a name="BKMK_CommonUserInterfaceElements"> </a>
+## <a name="common-user-interface-elements-in-the-eac"></a>Éléments d'interface utilisateur courants dans le CAE
 
 Cette section décrit les éléments d'interface utilisateur disponibles dans le CAE.
   
@@ -63,14 +64,14 @@ Lorsque vous cliquez sur la plupart des onglets, vous devez voir une barre d'out
   
 |**Icône**|**Nom**|**Action**|
 |:-----|:-----|:-----|
-|![Icône Ajouter](media/ITPro-EAC-AddIcon.png)           <br/> |Ajouter, Nouveau  <br/> |Permet de créer un objet. Certaines de ces icônes comportent une flèche vers le bas associée, sur laquelle vous pouvez cliquer pour afficher des objets supplémentaires que vous pouvez créer.  <br/> |
-|![Icône Modifier](media/ITPro-EAC-EditIcon.png)           <br/> |Modifier  <br/> |Permet de modifier un objet.  <br/> |
-|![Icône Supprimer](media/ITPro-EAC-DeleteIcon.png)           <br/> |Supprimer  <br/> |Permet de supprimer un objet. Certaines des icônes de suppression comportent une flèche vers le bas, sur laquelle vous pouvez cliquer pour afficher des options supplémentaires.  <br/> |
-|![Icône Recherche](media/ITPro-EAC-.png)           <br/> |Rechercher  <br/> |Permet d'ouvrir une zone de recherche dans laquelle vous pouvez entrer une expression pour rechercher un objet.  <br/> |
-|![Icône Actualiser](media/ITPro-EAC-RefreshIcon.png)           <br/> |Actualiser  <br/> |Permet d'actualiser l'affichage Liste.  <br/> |
-|![Icône Options supplémentaires](media/ITPro-EAC-MoreOptionsIcon.png)           <br/> |Plus d'options  <br/> |Utilisez cette icône pour afficher d'autres actions que vous pouvez effectuer pour les objets figurant sous cet onglet. Par exemple, dans **Destinataires \> Utilisateurs**, le fait de cliquer sur cette icône affiche l'option de **Recherche avancée**.  <br/> |
-|![Icône flèche vers le haut](media/ITPro-EAC-UpArrowIcon.png)![Icône de flèche vers le bas](media/ITPro-EAC-DownArrowIcon.png)           <br/> |Flèche Haut et flèche Bas  <br/> |Utilisez ces icônes pour relever ou abaisser la priorité d'un objet.  <br/> |
-|![Icône Suppression](media/ITPro-EAC-RemoveIcon.png)           <br/> |Supprimer  <br/> |Permet de supprimer des objets d'une liste.  <br/> |
+|![Icône Ajouter](media/ITPro-EAC-AddIcon.gif)           <br/> |Ajouter, Nouveau  <br/> |Permet de créer un objet. Certaines de ces icônes comportent une flèche vers le bas associée, sur laquelle vous pouvez cliquer pour afficher des objets supplémentaires que vous pouvez créer.  <br/> |
+|![Icône Modifier](media/ITPro-EAC-EditIcon.gif)           <br/> |Modifier  <br/> |Permet de modifier un objet.  <br/> |
+|![Icône Supprimer](media/ITPro-EAC-DeleteIcon.gif)           <br/> |Supprimer  <br/> |Permet de supprimer un objet. Certaines des icônes de suppression comportent une flèche vers le bas, sur laquelle vous pouvez cliquer pour afficher des options supplémentaires.  <br/> |
+|![Icône Recherche](media/ITPro-EAC-.gif)           <br/> |Rechercher  <br/> |Permet d'ouvrir une zone de recherche dans laquelle vous pouvez entrer une expression pour rechercher un objet.  <br/> |
+|![Icône Actualiser](media/ITPro-EAC-RefreshIcon.gif)           <br/> |Actualiser  <br/> |Permet d'actualiser l'affichage Liste.  <br/> |
+|![Icône Options supplémentaires](media/ITPro-EAC-MoreOptionsIcon.gif)           <br/> |Plus d'options  <br/> |Utilisez cette icône pour afficher d'autres actions que vous pouvez effectuer pour les objets figurant sous cet onglet. Par exemple, dans **Destinataires \> Utilisateurs**, le fait de cliquer sur cette icône affiche l'option de **Recherche avancée**.  <br/> |
+|![Icône flèche vers le haut](media/ITPro-EAC-UpArrowIcon.gif)![Icône de flèche vers le bas](media/ITPro-EAC-DownArrowIcon.gif)           <br/> |Flèche Haut et flèche Bas  <br/> |Utilisez ces icônes pour relever ou abaisser la priorité d'un objet.  <br/> |
+|![Icône Suppression](media/ITPro-EAC-RemoveIcon.gif)           <br/> |Supprimer  <br/> |Permet de supprimer des objets d'une liste.  <br/> |
    
 ### <a name="list-view"></a>Affichage Liste
 
@@ -82,9 +83,9 @@ Quand vous sélectionnez un objet de l'affichage Liste, les informations relativ
   
 ### <a name="me-tile-and-help"></a>Vignette de l'utilisateur en cours et Aide
 
-La vignette **Moi** vous permet de fermer votre session du Centre d'administration Exchange (CAE) pour ouvrir ensuite une session en tant qu'utilisateur différent. Dans le menu déroulant **Aide**![Icône d'aide](media/ITPro-EAC-HelpIcon.png), vous pouvez effectuer les actions suivantes : 
+La vignette **Moi** vous permet de fermer votre session du Centre d'administration Exchange (CAE) pour ouvrir ensuite une session en tant qu'utilisateur différent. Dans le menu déroulant **Aide**![Icône d'aide](media/ITPro-EAC-HelpIcon.gif), vous pouvez effectuer les actions suivantes : 
   
-1. **Aide** Cliquez sur ![Icône d'aide](media/ITPro-EAC-HelpIcon.png) pour afficher le contenu de l'aide en ligne. 
+1. **Aide** Cliquez sur ![Icône d'aide](media/ITPro-EAC-HelpIcon.gif) pour afficher le contenu de l'aide en ligne. 
     
 2. **Désactiver la bulle d'aide** La bulle d'aide affiche une aide contextuelle pour des champs spécifiques quand vous créez ou modifiez un objet. Vous pouvez activer ou désactiver la bulle d'aide. 
     
@@ -93,12 +94,10 @@ La vignette **Moi** vous permet de fermer votre session du Centre d'administrati
 4. **Confidentialité** Cliquez pour lire la politique de confidentialité pour Exchange Online Protection. 
     
 ## <a name="supported-browsers"></a>Navigateurs pris en charge
-<a name="BKMK_SupportedBrowsers"> </a>
 
 Pour bénéficier d'une meilleure expérience d'utilisation du CAE, nous vous recommandons de toujours utiliser les navigateurs, clients Office et applications les plus récents. Nous vous recommandons également d'installer les mises à jour logicielles lorsqu'elles sont disponibles. Pour plus d'informations sur les navigateurs pris en charge et la configuration requise pour le service, voir [Configuration requise pour Office 365](https://go.microsoft.com/fwlink/p/?LinkID=402699). 
   
 ## <a name="supported-languages-in-eop"></a>Langues prises en charge dans EOP
-<a name="BKMK_SupportedLanguages"> </a>
 
 Les langues suivantes sont prises en charge et disponibles dans Exchange Online Protection.
   

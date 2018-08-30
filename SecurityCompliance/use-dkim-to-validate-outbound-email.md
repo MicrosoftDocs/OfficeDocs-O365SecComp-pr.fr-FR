@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.custom: TN2DMC
+search.appverid:
+- MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 'Résumé : Cet article décrit comment utiliser DKIM (DomainKeys Identified Mail) avec Office 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.'
-ms.openlocfilehash: 0626a2c7bc33df3dc77d3aec8be6dbec5a96472b
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 7dccab55ab86d9ecac14b7042b5a030c2415fece
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026161"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003213"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé dans Office 365
 
@@ -26,7 +28,7 @@ Vous devez utiliser DKIM en plus de SPF et DMARC pour empêcher les usurpateurs 
   
 En bref, vous utilisez une clé privée pour chiffrer l’en-tête du message électronique sortant de votre domaine. Vous publiez une clé publique sur les enregistrements DNS de votre domaine que les serveurs de réception peuvent utiliser pour décoder la signature. Ils utilisent la clé publique pour vérifier que les messages sont réellement envoyés par vous et pas par une personne qui tente d’usurper votre domaine.
   
-Office 365 configure automatiquement DKIM pour les domaines initiaux. Le domaine initial est le domaine qu'Office 365 a créé pour vous lorsque vous vous êtes inscrit au service, par exemple, contoso.onmicrosoft.com. Vous n'avez rien à faire pour configurer DKIM pour votre domaine initial. Pour plus d'informations sur les domaines, consultez l'article [Forum aux questions sur les domaines](https://support.office.com/en-us/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
+Office 365 configure automatiquement DKIM pour les domaines initiaux. Le domaine initial est le domaine qu'Office 365 a créé pour vous lorsque vous vous êtes inscrit au service, par exemple, contoso.onmicrosoft.com. Vous n'avez rien à faire pour configurer DKIM pour votre domaine initial. Pour plus d'informations sur les domaines, consultez l'article [Forum aux questions sur les domaines](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
   
 Vous pouvez également choisir de n’effectuer aucun réglage DKIM pour votre domaine personnalisé. Si vous ne configurez pas DKIM, Office 365 crée une paire de clés privée et publique, active la signature DKIM et configure la stratégie par défaut d’Office 365 pour votre domaine personnalisé. Bien que cela soit suffisant pour la plupart des clients Office 365, vous devez configurer manuellement DKIM pour votre domaine personnalisé dans les circonstances suivantes :
   
@@ -105,7 +107,7 @@ Où :
   contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
   ```
 
--  _initialDomain_ est le domaine que vous avez utilisé lorsque vous vous êtes inscrit à Office 365. Pour plus d'informations sur la façon de déterminer votre domaine initial, consultez l'article [Forum aux questions sur les domaines](https://support.office.com/en-us/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
+-  _initialDomain_ est le domaine que vous avez utilisé lorsque vous vous êtes inscrit à Office 365. Pour plus d'informations sur la façon de déterminer votre domaine initial, consultez l'article [Forum aux questions sur les domaines](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
     
 Par exemple, si vous avez un domaine initial cohovineyardandwinery.onmicrosoft.com, ainsi que deux domaines personnalisés cohovineyard.com et cohowinery.com, vous devez configurer deux enregistrements CNAME pour chaque domaine supplémentaire, soit un total de quatre enregistrements CNAME.
   
@@ -245,7 +247,7 @@ DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
 
 ```
 
-Dans cet exemple, le domaine et le nom d'hôte contiennent les valeurs vers lesquelles l'enregistrement CNAME pointerait si la signature DKIM pour fabrikam.com avait été activée par l'administrateur du domaine. Au bout d'un certain temps, chaque message envoyé à partir d'Office 365 comportera une signature DKIM. Si vous activez DKIM vous-même, le domaine est identique à celui de l'adresse de l'expéditeur, ici fabrikam.com. Dans le cas contraire, DKIM ne s'aligne pas et utilise le domaine initial de votre organisation. Pour plus d'informations sur la façon de déterminer votre domaine initial, consultez la rubrique [Forum aux questions sur les domaines](https://support.office.com/en-us/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
+Dans cet exemple, le domaine et le nom d'hôte contiennent les valeurs vers lesquelles l'enregistrement CNAME pointerait si la signature DKIM pour fabrikam.com avait été activée par l'administrateur du domaine. Au bout d'un certain temps, chaque message envoyé à partir d'Office 365 comportera une signature DKIM. Si vous activez DKIM vous-même, le domaine est identique à celui de l'adresse de l'expéditeur, ici fabrikam.com. Dans le cas contraire, DKIM ne s'aligne pas et utilise le domaine initial de votre organisation. Pour plus d'informations sur la façon de déterminer votre domaine initial, consultez la rubrique [Forum aux questions sur les domaines](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
   
 ## <a name="set-up-dkim-so-that-a-third-party-service-can-send-or-spoof-email-on-behalf-of-your-custom-domain"></a>Configuration de DKIM permettant à un service tiers d'envoyer des courriers électroniques au nom de votre domaine personnalisé, ou d'usurper ce dernier
 <a name="SetUp3rdPartyspoof"> </a>

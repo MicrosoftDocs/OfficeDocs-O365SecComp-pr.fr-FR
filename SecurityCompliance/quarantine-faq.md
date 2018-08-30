@@ -9,14 +9,16 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 description: Cette rubrique présente les questions fréquemment posées ainsi que les réponses au sujet de la mise en quarantaine hébergée.
-ms.openlocfilehash: 6aebeadc5155cbdb8cbeeb73e29c8b8cb0d53767
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: cc8a05b575e17dbc71d4b9e214cb29a4cafe8b6b
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027081"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003193"
 ---
 # <a name="quarantine-faq"></a>FAQ sur la mise en quarantaine
 
@@ -24,7 +26,7 @@ Cette rubrique présente les questions fréquemment posées ainsi que les répon
   
  **Q : comment gérer les messages mis en quarantaine de programmes malveillants dans la mise en quarantaine ?**
   
-Vous devez utiliser la sécurité &amp; centre de conformité pour pouvoir afficher et travailler avec des messages qui ont été mis en quarantaine parce qu’ils contiennent des programmes malveillants. Pour plus d’informations, voir les [messages électroniques de mise en quarantaine dans Office 365](https://support.office.com/en-US/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
+Vous devez utiliser la sécurité &amp; centre de conformité pour pouvoir afficher et travailler avec des messages qui ont été mis en quarantaine parce qu’ils contiennent des programmes malveillants. Pour plus d’informations, voir les [messages électroniques de mise en quarantaine dans Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
   
  **Q. Comment puis-je configurer le service pour envoyer des messages de courrier indésirable mis en quarantaine vers la mise en quarantaine ?**
   

@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
 description: Exchange Online Protection (EOP) et Exchange Online prennent en charge la validation entrante des messages DKIM (Domain Keys Identified Mail). Il s'agit d'une méthode de validation des messages envoyés depuis le domaine dont ils indiquent provenir et qui n'ont pas été usurpés par un autre utilisateur. Elle associe un message électronique à l'organisation responsable de son envoi. La vérification DKIM est automatiquement utilisée pour tous les messages envoyés dans le cadre de communications IPv6. (Pour plus d'informations sur la prise en charge d'IPv6, voir Prise en charge des messages entrants anonymes sur IPv6.)
-ms.openlocfilehash: 0fafc5a4754309f8f467a712f934fea3067b660d
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: d2fab69847732bb7ed54f943d2c7845e06084936
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026151"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002256"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>Prise en charge de la validation des messages signés DKIM
 

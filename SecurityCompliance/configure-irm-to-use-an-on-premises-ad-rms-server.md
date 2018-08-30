@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 description: Cette rubrique décrit la configuration de la gestion des droits relatifs à l'information de manière à utiliser un serveur AD RMS.
-ms.openlocfilehash: 198d7b86b39318361a174395bc460b4a4bd35847
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 82eed73797cfb4ade04bfeed9118d8466c5c5480
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027371"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002785"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configuration de la Gestion des droits relatifs à l’information (IRM) pour utiliser un serveur AD RMS local
   
@@ -163,6 +165,6 @@ Pour vérifier que vous avez correctement importé le domaine de publication app
   
 - Exécutez la cmdlet **Test-IRMConfiguration** pour tester la fonctionnalité IRM. Pour plus d'informations, consultez « Exemple 1 » dans la rubrique [Test-IRMConfiguration](http://technet.microsoft.com/library/a730e7ff-a67f-4360-b5ff-70d171bb5e1d.aspx).
     
-- Rédigez un nouveau message dans Outlook Web App et protégez-le à l'aide de la fonctionnalité IRM en sélectionnant **Définir les autorisations** dans le menu étendu ( ![Icône Options supplémentaires](media/ITPro-EAC-MoreOptionsIcon.png)).
+- Rédigez un nouveau message dans Outlook Web App et protégez-le à l'aide de la fonctionnalité IRM en sélectionnant **Définir les autorisations** dans le menu étendu ( ![Icône Options supplémentaires](media/ITPro-EAC-MoreOptionsIcon.gif)).
     
 

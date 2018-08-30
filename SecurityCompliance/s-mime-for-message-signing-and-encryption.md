@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: S/MIME vous permet de chiffrer les messages électroniques et les signer numériquement. Lorsque vous utilisez S/MIME avec un message électronique, il vous aide aux personnes qui reçoivent ces messages pour être certain que ce qu’ils voient dans leur boîte de réception est le message exact en main de l’expéditeur.
-ms.openlocfilehash: 3ce95132476417df8949cdc12f2d825047f6b76d
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 26c50fb6e4d1b07b7dba26948ae46e7f36eeaec5
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027591"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002764"
 ---
 # <a name="smime-for-message-signing-and-encryption"></a>S/MIME pour la signature et le chiffrement des messages
 

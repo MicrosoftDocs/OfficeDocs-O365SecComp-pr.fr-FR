@@ -8,15 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.custom: TN2DMC
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 description: "Domain-based Message Authentication, Reporting, and Conformance (DMARC) utilise SPF (Sender Policy Framework) et DKIM (DomainKeys Identified Mail) pour authentifier les expéditeurs d'e-mails et faire en sorte que les systèmes de messagerie de destination acceptent les messages envoyés depuis votre domaine comme fiables. "
-ms.openlocfilehash: a95e41011e802a583ddd053d2ae4699ff46112b9
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 199ab67d17152fc0c4ed6b9f87cde66beaf913d5
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026821"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003223"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Utiliser DMARC pour valider les e-mails dans Office 365
 
@@ -223,7 +225,8 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 
 ```
 
-L’ensemble ou la majorité des messages électroniques seront d’abord acheminés vers mail.contoso.com, puisqu’il s’agit de l’enregistrement MX principal, avant d’être acheminés vers Exchange Online Protection. Dans certains cas, EOP n’est même pas présent dans la liste des enregistrements MX et des connecteurs sont simplement mis en place pour acheminer les messages électroniques. EOP doit figurer en premier dans les enregistrements MX de votre domaine afin que les vérifications DMARC soient appliquées à votre domaine.
+Courrier électronique, la plupart des, ou tous les premiers est acheminé vers mail.contoso.com car il est la principale MX, et puis messagerie est routée vers EOP. Dans certains cas, vous ne pourrez pas même liste tout EOP comme un enregistrement MX et raccordées simplement les connecteurs pour router votre courrier électronique. EOP ne dispose pas à la première entrée pour la validation DMARC à effectuer. Elle vérifie simplement la validation, comme nous ne pouvons être certains que tous les serveurs sur-site/non-O365 fera DMARC vérifications.  DMARC est susceptible d’être appliquées pour le domaine d’un client (non serveur) lorsque vous configurez l’enregistrement TXT DMARC, mais il est jusqu'à effectuent la mise en œuvre le serveur de réception.  Si vous définissez EOP en tant que le serveur de réception, EOP effectue la mise en œuvre DMARC.
+
   
 ## <a name="for-more-information"></a>Pour plus d'informations
 <a name="sectionSection8"> </a>

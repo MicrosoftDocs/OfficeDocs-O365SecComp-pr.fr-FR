@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 description: Vous pouvez utiliser Exchange Online Protection (EOP) pour créer des groupes à extension messagerie pour une organisation Exchange. Vous pouvez également utiliser EOP pour définir ou mettre à jour les propriétés du groupe qui spécifient l’appartenance, les adresses de messagerie et les autres aspects des groupes.
-ms.openlocfilehash: 744a28d2003496650e7350108797cc5cc4eaad4f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 1af39e3a55864a9a87f90e0a00957ebf1631bb45
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026341"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003173"
 ---
 # <a name="manage-groups-in-eop"></a>Gestion des groupes dans Exchange Online Protection (EOP)
 
@@ -41,7 +41,7 @@ Vous pouvez créer deux types de groupes pour votre organisation Exchange :
     
 - Cette cmdlet utilise une méthode de traitement par lots qui se traduit par un retard de propagation de quelques minutes avant que les résultats de la cmdlet ne soient visibles.
     
-- Pour découvrir comment utiliser Windows PowerShell pour se connecter à Exchange Online Protection, consultez la rubrique [Connexion à Exchange Online Protection à l'aide d'une session PowerShell distante](http://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx).
+- Pour découvrir comment utiliser Windows PowerShell pour se connecter à Exchange Online Protection, consultez la rubrique [Connexion à Exchange Online Protection à l'aide d'une session PowerShell distante](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell?view=exchange-ps).
     
 - Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013 **Keyboard shortcuts in Exchange 2013**.
     
@@ -52,7 +52,7 @@ Vous pouvez créer deux types de groupes pour votre organisation Exchange :
 
 1. Dans le Centre d'administration Exchange (CAE), accédez à **Destinataires** \> **Groupes**.
     
-2. Cliquez sur **Nouveau**![Icône Ajouter](../media/ITPro-EAC-AddIcon.png), puis sur **Groupe de distribution** ou sur **Groupe de sécurité**, en fonction de vos besoins. Consultez l'article [Types de groupe à extension messagerie](manage-groups-in-eop.md) pour comprendre la distinction. 
+2. Cliquez sur **Nouveau**![Icône Ajouter](../media/ITPro-EAC-AddIcon.gif), puis sur **Groupe de distribution** ou sur **Groupe de sécurité**, en fonction de vos besoins. Consultez l'article [Types de groupe à extension messagerie](manage-groups-in-eop.md) pour comprendre la distinction. 
     
 3. Sur la page **Nouveau groupe de distribution** ou **Nouveau groupe de sécurité**, renseignez les champs suivants : 
     
@@ -62,12 +62,12 @@ Vous pouvez créer deux types de groupes pour votre organisation Exchange :
     
   - **Description** Saisissez la description du groupe afin d'informer d'autres personnes du but du groupe. 
     
-  - **Propriétaires** Par défaut, la personne qui crée un groupe en est le propriétaire. Vous pouvez ajouter un propriétaire en cliquant sur **Ajouter**![Icône Ajouter](../media/ITPro-EAC-AddIcon.png). Tous les groupes doivent avoir au moins un propriétaire.
+  - **Propriétaires** Par défaut, la personne qui crée un groupe en est le propriétaire. Vous pouvez ajouter un propriétaire en cliquant sur **Ajouter**![Icône Ajouter](../media/ITPro-EAC-AddIcon.gif). Tous les groupes doivent avoir au moins un propriétaire.
     
     > [!NOTE]
     > Les propriétaires des groupes ne doivent pas nécessairement en être membres. 
   
-  - **Membres** Utilisez cette section pour ajouter des membres au groupe et pour spécifier si une approbation est nécessaire pour que des personnes rejoignent ou quittent le groupe. Pour ajouter des membres au groupe, cliquez sur **Ajouter**![Icône Ajouter](../media/ITPro-EAC-AddIcon.png).
+  - **Membres** Utilisez cette section pour ajouter des membres au groupe et pour spécifier si une approbation est nécessaire pour que des personnes rejoignent ou quittent le groupe. Pour ajouter des membres au groupe, cliquez sur **Ajouter**![Icône Ajouter](../media/ITPro-EAC-AddIcon.gif).
     
 4. Cliquez sur **OK** pour revenir à la page d'origine. 
     
@@ -79,9 +79,9 @@ Vous pouvez créer deux types de groupes pour votre organisation Exchange :
     
 2. Effectuez l'une des opérations suivantes :
     
-  - Pour modifier un groupe : dans la liste des groupes, cliquez sur le groupe de distribution ou de sécurité à afficher ou à modifier, puis cliquez sur **Modifier**![Icône Modifier](../media/ITPro-EAC-EditIcon.png). Vous pouvez mettre à jour les paramètres généraux, ajouter ou supprimer des propriétaires du groupe, et ajouter ou supprimer des membres du groupe, selon vos besoins.
+  - Pour modifier un groupe : dans la liste des groupes, cliquez sur la distribution ou un groupe de sécurité que vous souhaitez afficher ou modifier, puis cliquez sur **Modifier** ![icône Modifier](../media/ITPro-EAC-EditIcon.gif). Vous pouvez mettre à jour les paramètres généraux, ajouter ou supprimer du groupe propriétaires et ajouter ou supprimer des membres du groupe, selon vos besoins.
     
-  - Pour supprimer un groupe : Sélectionnez le groupe et cliquez sur **Supprimer**![Icône Suppression](../media/ITPro-EAC-RemoveIcon.png).
+  - Pour supprimer un groupe : Sélectionnez le groupe et cliquez sur **Supprimer**![Icône Suppression](../media/ITPro-EAC-RemoveIcon.gif).
     
 3. Après avoir effectué toutes les modifications voulues, cliquez sur **Enregistrer**.
     

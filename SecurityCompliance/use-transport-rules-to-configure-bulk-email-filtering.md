@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 description: Vous pouvez définir des filtres de contenu à l'échelle de l'entreprise pour le courrier indésirable et le courrier en masse à l'aide des stratégies de filtrage de contenu du courrier indésirable par défaut. Consultez la rubrique Configuration de vos stratégies de filtrage du courrier indésirable et Set-HostedContentFilterPolicy sur la façon de définir les stratégies de filtrage de contenu.
-ms.openlocfilehash: f72fa5cc50ab6aa5447e3af9fabc365457c82973
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 8fa4ba619b55ae12207f36b7625acfaa9838e696
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027681"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002473"
 ---
 # <a name="use-transport-rules-to-configure-bulk-email-filtering"></a>Utiliser les règles de transport pour configurer le filtrage de courrier électronique en bloc
 
@@ -34,7 +36,7 @@ Si vous souhaitez utiliser des options supplémentaires pour filtrer les message
 
 1. Dans le Centre d'administration Exchange (CAE), accédez à **Flux de messagerie** \> **Règles**.
     
-2. Cliquez sur **Ajouter**![Icône Ajouter](media/ITPro-EAC-AddIcon.png), puis sélectionnez **Créer une nouvelle règle**.
+2. Cliquez sur **Ajouter**![Icône Ajouter](media/ITPro-EAC-AddIcon.gif), puis sélectionnez **Créer une nouvelle règle**.
     
 3. Indiquez le nom de la règle.
     
@@ -89,7 +91,7 @@ Si vous souhaitez utiliser des options supplémentaires pour filtrer les message
 
 1. Dans le CAE, accédez à **Flux de messagerie** \> **Règles**.
     
-2. Cliquez sur **Ajouter**![Icône Ajouter](media/ITPro-EAC-AddIcon.png), puis sélectionnez **Créer une nouvelle règle**.
+2. Cliquez sur **Ajouter**![Icône Ajouter](media/ITPro-EAC-AddIcon.gif), puis sélectionnez **Créer une nouvelle règle**.
     
 3. Indiquez le nom de la règle.
     

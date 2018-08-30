@@ -8,14 +8,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 description: Vous pouvez créer une règle de Transport Exchange pour empêcher les utilisateurs d’envoyer des messages électroniques à Microsoft pour analyse et de les utiliser dans votre propre processus de sécurité
-ms.openlocfilehash: 6c6af23e6a5f345e26c7dc09c898f2978ea51a5f
-ms.sourcegitcommit: df1e9590a9fa152fa776f16d9b25c180ba7198f3
+ms.openlocfilehash: 92acabe133ef154d880104c20aeed7572ea87d41
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "22122584"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002622"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>Utiliser des règles de transport pour bloquer le signalement des courriers indésirables à Microsoft
 
@@ -33,16 +35,16 @@ Pour des informations sur les raccourcis clavier applicables aux procédures de 
 
 1. Dans le CAE, accédez à **Flux de messagerie** \> **Règles**.
     
-2. Cliquez sur ![Icône Ajouter](media/ITPro-EAC-AddIcon.png), puis sélectionnez **Créer une règle**.
+2. Cliquez sur ![Icône Ajouter](media/ITPro-EAC-AddIcon.gif), puis sélectionnez **Créer une règle**.
     
 3. Nommez la règle, puis cliquez sur **Autres options**.
     
 4. Sous **Appliquer cette règle si**, sélectionnez **Le destinataire**, puis **l'adresse comprend l'un des mots suivants**.
     
 5. Dans la zone **spécifier des mots ou des expressions**, effectuez les opérations suivantes : 
-    - Type de `abuse@messaging.microsoft.com` , puis cliquez sur ![ajouter une icône](media/ITPro-EAC-AddIcon.png), puis tapez `junk@office365.microsoft.com` , puis cliquez sur ![ajouter une icône](media/ITPro-EAC-AddIcon.png). Ces adresses de messagerie sont utilisés pour envoyer des messages faux négatifs à Microsoft.
-    - Type de `phish@office365.microsoft.com` , puis cliquez sur ![ajouter une icône](media/ITPro-EAC-AddIcon.png). Cette adresse de messagerie est utilisée pour envoyer des messages de hameçonnage manquées à Microsoft.
-    - Type de `false_positive@messaging.microsoft.com` , puis cliquez sur ![ajouter une icône](media/ITPro-EAC-AddIcon.png), puis tapez `not_junk@office365.microsoft.com` , puis cliquez sur ![ajouter une icône](media/ITPro-EAC-AddIcon.png). Ces adresses de messagerie sont utilisés pour envoyer des messages faux positifs à Microsoft.
+    - Type de `abuse@messaging.microsoft.com` , puis cliquez sur ![ajouter une icône](media/ITPro-EAC-AddIcon.gif), puis tapez `junk@office365.microsoft.com` , puis cliquez sur ![ajouter une icône](media/ITPro-EAC-AddIcon.gif). Ces adresses de messagerie sont utilisés pour envoyer des messages faux négatifs à Microsoft.
+    - Type de `phish@office365.microsoft.com` , puis cliquez sur ![ajouter une icône](media/ITPro-EAC-AddIcon.gif). Cette adresse de messagerie est utilisée pour envoyer des messages de hameçonnage manquées à Microsoft.
+    - Type de `false_positive@messaging.microsoft.com` , puis cliquez sur ![ajouter une icône](media/ITPro-EAC-AddIcon.gif), puis tapez `not_junk@office365.microsoft.com` , puis cliquez sur ![ajouter une icône](media/ITPro-EAC-AddIcon.gif). Ces adresses de messagerie sont utilisés pour envoyer des messages faux positifs à Microsoft.
     - Cliquez sur **OK**.
     
 6. Sous **Effectuer les opérations suivantes**, sélectionnez **Envoyer le message en Cci vers...**, puis sélectionnez les boîtes aux lettres où vous voulez recevoir les messages. 

@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 description: Lorsque Exchange Online Protection analyse un message entrant, il insère l'en-tête **X-Forefront-Antispam-Report** dans chaque message.
-ms.openlocfilehash: 7baa15f4d687c809d45461a135f64f0d18f49a7f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 192a1d3e3331256819ddd68fbe0aa0c1fa16c9a7
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026501"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003143"
 ---
 # <a name="anti-spam-message-headers"></a>En-têtes de messages anti-courrier indésirable
 
