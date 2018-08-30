@@ -1,0 +1,40 @@
+---
+title: Principes de base d’Office 365 de défense contre les attaques par déni de Service
+ms.author: robmazz
+author: robmazz
+manager: laurawi
+ms.date: 8/21/2018
+audience: ITPro
+ms.topic: article
+ms.service: Office 365 Administration
+localization_priority: None
+search.appverid:
+- MET150
+ms.collection: Strat_O365_Enterprise
+description: Comment Microsoft utilise les principes fondamentaux d’absorber, la détection et atténuation dans sa défense contre les attaques de déni de service (DoS).
+ms.openlocfilehash: 8355a7897c788241092363a23e198423e81c587a
+ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "22527497"
+---
+# <a name="core-principles-of-defense-against-denial-of-service-attacks"></a><span data-ttu-id="30e8d-103">Principes fondamentaux de la défense contre les attaques par déni de Service</span><span class="sxs-lookup"><span data-stu-id="30e8d-103">Core Principles of Defense Against Denial-of-Service Attacks</span></span>
+<span data-ttu-id="30e8d-p101">Les trois principaux principes lors de la défense contre les attaques de déni de service sur le réseau est absorber, la détection et atténuation. Absorber se produit avant la détection et détection se produit avant l’atténuation. Absorber est la meilleure défense attaques de déni de service. Si l’attaque ne peut pas être détectée, il ne peut pas être atténué. Mais si même la plus petite attaques DOS ne peut pas être pris en charge, puis services ne sont pas survivre suffisamment longtemps pour que l’attaque être détecté.</span><span class="sxs-lookup"><span data-stu-id="30e8d-p101">The three core principles when defending against network-based DoS attacks are Absorption, Detection, and Mitigation. Absorption happens before detection, and detection happens before mitigation. Absorption is the best defense against a DoS attacks. If the attack can't be detected, it can't be mitigated. But if even the smallest DoS attack can't be absorbed, then services aren't going to survive long enough for the attack to be detected.</span></span>
+
+<span data-ttu-id="30e8d-p102">Bien sûr, il n’est généralement pas rentables pour la plupart des organisations d’acquérir la capacité supplémentaire nécessaire pour absorber les attaques par déni de service, comme cela nécessite un investissement considérable dans les technologies et techniques. Cela met en évidence l’avantage de la sécurité de l’utilisation des services de cloud Microsoft. l’échelle de réception de nos services permet de nous permettent de protection réseau fort à nos clients de cloud de manière rentable. Mais même à notre à l’échelle, cependant, il doit toujours exister un équilibre entre absorber, la détection et atténuation. Pour que l’équilibre, nous étudier les taux de croissance d’une attaque pour évaluer combien il nous faut absorber.</span><span class="sxs-lookup"><span data-stu-id="30e8d-p102">Of course, it is generally not economically feasible for most organizations to purchase the excess capacity necessary to absorb DoS attacks, as this requires a considerable investment in technology and technical skills. This highlights one of the security benefits of using Microsoft cloud services; the sheer scale of our services enables us to provide strong network protection to our cloud customers in a cost-effective manner. But even at our scale, though, there must still be a balance between absorption, detection, and mitigation. To find that balance, we study an attack's growth rate to estimate how much we need to absorb.</span></span>
+
+<span data-ttu-id="30e8d-p103">Détection est un véritable jeu. Vous devez rechercher en permanence pour les nouveaux modes sont vous attaquer ou essaient de contrer vos systèmes. Détecter -> atténuer -> détecter -> atténuer, etc., est un état définitive, persistent continuera indéfiniment.</span><span class="sxs-lookup"><span data-stu-id="30e8d-p103">Detection is a cat-and-mouse game. You must constantly look for the new ways people are attacking you or trying to defeat your systems. Detect -> Mitigate -> Detect -> Mitigate, etc., is a perpetual, persistent state that will continue indefinitely.</span></span>
+
+## <a name="defending-against-dos-attacks"></a><span data-ttu-id="30e8d-116">Défense contre les attaques de déni de service</span><span class="sxs-lookup"><span data-stu-id="30e8d-116">Defending Against DoS Attacks</span></span>
+<span data-ttu-id="30e8d-p104">Pour protéger correctement une attaque par déni de service, au plus tôt détection est essentielle. En détectant les attaques avant que le système est surchargé, défenses peuvent exécuter un plan d’action.</span><span class="sxs-lookup"><span data-stu-id="30e8d-p104">To successfully defend against a DoS attack, early detection is essential. By detecting an attack before the system is overwhelmed, defenders can execute a response plan.</span></span>
+
+<span data-ttu-id="30e8d-119">La formule suivante vous aidera à élever à la durée de l’impact d’une attaque par déni de service :</span><span class="sxs-lookup"><span data-stu-id="30e8d-119">The following formula will help approximate the time to impact of a DoS attack:</span></span>
+
+   <span data-ttu-id="30e8d-120">**Capacité maximale / (taux de croissance de la capacité maximale X) = durée Impact**</span><span class="sxs-lookup"><span data-stu-id="30e8d-120">**Maximum Capacity / (Maximum Capacity X Growth Rate) = Time to Impact**</span></span>
+
+<span data-ttu-id="30e8d-p105">Si l’heure détection se produit après l’heure-impact, il est probable que l’attaque par déni de service sera réussi. Si l’heure détection se produit avant l’impact de l’heure, les services attaques doivent rester en ligne et accessible, si les stratégies d’atténuation sont utilisées. Par conséquent, il existe seulement deux choses qui peuvent être effectuées pour la défense contre les attaques de déni de service :</span><span class="sxs-lookup"><span data-stu-id="30e8d-p105">If the time-to-detection occurs after time-to-impact, then it is likely the DoS attack will be successful. If the time-to-detection occurs before time-to-impact, then the services being attacked should remain online and accessible, if mitigation strategies are used. Thus, there are only two things that can be done to defend against DoS attacks:</span></span>
+- <span data-ttu-id="30e8d-124">Augmenter la capacité pour augmenter la limite de capacité maximale (qui à son tour fournit davantage de temps pour détecter une attaque) ; ou</span><span class="sxs-lookup"><span data-stu-id="30e8d-124">Increase capacity to raise the ceiling of maximum capacity (which in turn provides more time to detect an attack); or</span></span>
+- <span data-ttu-id="30e8d-125">Réduire le temps de détecter.</span><span class="sxs-lookup"><span data-stu-id="30e8d-125">Decrease the time to detect.</span></span>
+
+<span data-ttu-id="30e8d-p106">Augmentation de la capacité a un impact direct fiscal. Microsoft recommande que les clients développent au moins base absorber la capacité, pour s’assurer qu’ils peuvent résister à un niveau de l’attaque par déni de service. La capacité d’absorber réel varie client, que chaque client a son propre seuils d’exposition, les risques et financier. Enfin, pour des raisons économiques, investissements en matière de recherche et l’heure de manière à réduire la détection de l’heure sont généralement la défense plus rentable.</span><span class="sxs-lookup"><span data-stu-id="30e8d-p106">Increasing capacity has a direct fiscal impact. Microsoft recommends that customers develop at least basic absorption capacity, to ensure that they can survive some level of DoS attack. The actual absorption capacity will vary from customer to customer, as each customer has their own thresholds for exposure, risk, and financial outlay. Ultimately, for economic reasons, investments of research and time in ways to decrease time-to-detection are usually the most cost-effective defense.</span></span>
