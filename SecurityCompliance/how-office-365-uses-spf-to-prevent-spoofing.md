@@ -9,14 +9,16 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 description: "Résumé : Cet article décrit comment Office 365 utilise l'enregistrement TXT SPF (Sender Policy Framework) dans le système DNS pour s'assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé. Cela s'applique aux messages sortants envoyés à partir d'Office 365. Les messages envoyés à partir d'Office 365 à un destinataire d'Office 365 passent toujours par SPF."
-ms.openlocfilehash: aea7f740a67ce282424efc409d25f3f135546ada
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: b42c2528f7a6a272e11d2434cce1e1735649962a
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026461"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003283"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Comment Office 365 utilise SPF (Sender Policy Framework) pour éviter l’usurpation
 
@@ -124,7 +126,7 @@ Si vous disposez d'un déploiement hybride (autrement dit, avec quelques boîtes
 
 Utilisez les informations de syntaxe de cet article afin de formuler l'enregistrement TXT SPF pour votre domaine personnalisé. Bien qu'il existe des options de syntaxe qui ne sont pas mentionnées ici, il s'agit des options les plus fréquemment utilisées. Une fois que vous avez formulé votre enregistrement, vous devez le mettre à jour auprès de votre bureau d'enregistrement de domaine.
   
-Pour plus d'informations sur les domaines que vous devez inclure pour Office 365, voir [Enregistrements DNS externes pour Office 365](https://support.office.com/en-us/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US). Utilisez les [instructions pas à pas](https://office.microsoft.com/en-us/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404) pour mettre à jour les enregistrements SPF (TXT) dans votre bureau d'enregistrement de domaines. Si votre bureau d'enregistrement n'est pas répertorié, vous devez le contacter séparément pour savoir comment mettre à jour votre enregistrement. 
+Pour plus d'informations sur les domaines que vous devez inclure pour Office 365, voir [Enregistrements DNS externes pour Office 365](https://support.office.com/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US). Utilisez les [instructions pas à pas](https://office.microsoft.com/en-us/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404) pour mettre à jour les enregistrements SPF (TXT) dans votre bureau d'enregistrement de domaines. Si votre bureau d'enregistrement n'est pas répertorié, vous devez le contacter séparément pour savoir comment mettre à jour votre enregistrement. 
   
 ### <a name="spf-txt-record-syntax-for-office-365"></a>Syntaxe d'enregistrement TXT SPF pour Office 365
 <a name="SPFSyntaxO365"> </a>
@@ -149,7 +151,7 @@ où :
     
 -  _IP address_ est l'adresse IP à ajouter à l'enregistrement TXT SPF. En règle générale, il s'agit de l'adresse IP du serveur de messagerie sortant pour votre organisation. Vous pouvez répertorier plusieurs serveurs de messagerie sortants. Pour plus d'informations, consultez la section [Exemple : enregistrement TXT SPF pour plusieurs serveurs de messagerie locaux sortants et Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#ExampleSPFMultipleMailServerO365).
     
--  _domain name_ est le domaine que vous souhaitez ajouter en tant qu'expéditeur légitime. Pour obtenir la liste de noms de domaine que vous devez inclure pour Office 365, voir [Enregistrements DNS externes pour Office 365](https://support.office.com/en-us/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US).
+-  _domain name_ est le domaine que vous souhaitez ajouter en tant qu'expéditeur légitime. Pour obtenir la liste de noms de domaine que vous devez inclure pour Office 365, voir [Enregistrements DNS externes pour Office 365](https://support.office.com/article/External-Domain-Name-System-records-for-Office-365-c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0?ui=en-US&amp;rs=en-US&amp;ad=US).
     
 - La règle de mise en œuvre est généralement l'une des règles suivantes :
     

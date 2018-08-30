@@ -9,14 +9,16 @@ ms.topic: troubleshooting
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 description: Obtenez-vous un message d'erreur lorsque vous tentez d'envoyer un courrier électronique à un destinataire dont l'adresse de messagerie est dans Office 365 ? Si vous pensez que vous ne devriez pas recevoir de message d'erreur, vous pouvez utiliser le portail Supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués Office 365.
-ms.openlocfilehash: 127b305cdb27cffadc7ad6a43a5d2db2440365ca
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 4964429f4d3aa1a585b1b543929f83c2cebfb9a4
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026231"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003253"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>Utilisation du portail Supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués Office 365
 
@@ -28,7 +30,7 @@ Microsoft utilise la liste des expéditeurs bloqués pour protéger ses clients 
   
 Vous savez que vous avez été ajouté à la liste si vous recevez une réponse à un courrier électronique incluant une erreur ressemblant à ce qui suit :
   
-550 5.7.606-649 accès refusé, interdit l’envoi IP [ _adresse IP_] ; Pour demander la suppression de cette liste, consultez https://sender.office.com/ et suivez les instructions affichées. Pour plus d’informations, voir [les rapports de non-remise messagerie dans Office 365](http://go.microsoft.com/fwlink/?LinkID=526653).
+550 5.7.606-649 accès refusé, interdit l’envoi IP [_adresse IP_] ; Pour demander la suppression de cette liste, consultez https://sender.office.com/ et suivez les instructions affichées. Pour plus d’informations, voir [les rapports de non-remise messagerie dans Office 365](http://go.microsoft.com/fwlink/?LinkID=526653).
   
 où  _IP address_ est l'adresse IP de l'ordinateur sur lequel s'exécute le serveur de messagerie. 
   

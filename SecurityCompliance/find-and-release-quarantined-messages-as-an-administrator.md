@@ -9,20 +9,22 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 description: Cette rubrique explique comment les administrateurs Exchange Online et Exchange Online Protection (EOP) peuvent rechercher, récupérer et signaler les messages mis en quarantaine dans le Centre d'administration Exchange (CAE).
-ms.openlocfilehash: 5ebe65bf703087e8ad4bace827d84833eddb038f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: a8c450471d2fe627346b5bea8db50b91d67ffd3f
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027481"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003273"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Rechercher et débloquer les messages mis en quarantaine en tant qu'administrateur
 
 Cette rubrique explique comment les administrateurs Exchange Online et Exchange Online Protection (EOP) peuvent rechercher, récupérer et signaler les messages mis en quarantaine dans le Centre d'administration Exchange (CAE). Office 365 envoie les messages en quarantaine soit parce qu'ils ont été identifiés comme courrier indésirable, soit parce qu'ils tombaient sous le coup d'une règle de transport. 
   
-Utilisez la sécurité &amp; centre de conformité au lieu du CAE pour effectuer l’une de ces tâches, ainsi qu’afficher et travailler avec des messages qui ont été mis en quarantaine parce qu’ils contiennent des programmes malveillants. Pour plus d’informations, voir les [messages électroniques de mise en quarantaine dans Office 365](https://support.office.com/en-US/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
+Utilisez la sécurité &amp; centre de conformité au lieu du CAE pour effectuer l’une de ces tâches, ainsi qu’afficher et travailler avec des messages qui ont été mis en quarantaine parce qu’ils contiennent des programmes malveillants. Pour plus d’informations, voir les [messages électroniques de mise en quarantaine dans Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
   
 Les messages mis en quarantaine sont répertoriés sur la page de **mise en quarantaine** dans le CAE. Par défaut, les messages sont triés du plus récent au plus ancien sur la base du champ **REÇU**. Les valeurs **EXPÉDITEUR**, **OBJET** et **EXPIRE** sont également indiquées pour chaque message. Vous pouvez ordonner les messages en fonction des valeurs de l'un ou l'autre de ces champs en cliquant sur leur en-tête. Pour inverser l'ordre, cliquez sur l'en-tête de colonne une seconde fois. La page de **mise en quarantaine** affiche un maximum de 500 messages. 
   
@@ -158,7 +160,7 @@ Cliquez sur **Diffuser le message sélectionné et autoriser l'expéditeur** dan
     
 4. Cliquez sur **Libérer**. 
     
-Si vous cliquez sur l'icône **Actualiser**![Icône Actualiser](media/ITPro-EAC-RefreshIcon.png) pour actualiser vos données, puis que vous double-cliquez sur le message, vous devriez voir que celui-ci a été libéré et envoyé aux destinataires appropriés 
+Si vous cliquez sur l'icône **Actualiser**![Icône Actualiser](media/ITPro-EAC-RefreshIcon.gif) pour actualiser vos données, puis que vous double-cliquez sur le message, vous devriez voir que celui-ci a été libéré et envoyé aux destinataires appropriés 
   
 ### <a name="release-one-or-more-quarantined-messages-to-all-recipients"></a>Diffuser un ou plusieurs messages en quarantaine à tous les destinataires
 <a name="Releaseoneormorequarantinedmessagestoallrecipients"> </a>
@@ -187,7 +189,7 @@ Si vous cliquez sur l'icône **Actualiser**![Icône Actualiser](media/ITPro-EAC-
 > [!TIP]
 > Assurez-vous que le message n'est pas marqué comme courrier indésirable en suivant les étapes de la rubrique [Comment s'assurer qu'un message n'est pas marqué comme courrier indésirable](how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md). 
   
-Si vous cliquez sur l'icône **Actualiser**![Icône Actualiser](media/ITPro-EAC-RefreshIcon.png) pour actualiser vos données, puis que vous double-cliquez sur le message, vous devriez voir que celui-ci a été libéré et envoyé aux destinataires appropriés 
+Si vous cliquez sur l'icône **Actualiser**![Icône Actualiser](media/ITPro-EAC-RefreshIcon.gif) pour actualiser vos données, puis que vous double-cliquez sur le message, vous devriez voir que celui-ci a été libéré et envoyé aux destinataires appropriés 
   
 ## <a name="for-more-information"></a>Pour plus d'informations
 <a name="sectionSection4"> </a>

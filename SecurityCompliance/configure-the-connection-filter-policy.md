@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 description: Pour vous assurer que le courrier envoyé des personnes de que confiance n’est pas bloqué, vous pouvez utiliser la stratégie de filtrage de connexion pour créer une liste verte, également appelé une liste d’expéditeurs autorisés, des adresses IP que vous approuvez. Vous pouvez également créer une liste des expéditeurs bloqués.
-ms.openlocfilehash: d106e55779c6246b77018fef3ab9d58fa759d99e
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: cb9b73ff61b477f1c7ea0bb8da4039bebce83d1b
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027601"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003263"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configuration de la stratégie de filtrage des connexions
  
@@ -52,7 +54,7 @@ Créez une liste d'adresses IP approuvées ou bloquées en modifiant la stratég
     
 2. Cliquez sur l'option de menu **Filtrage des connexions**, puis créez les listes nécessaires : une liste d'adresses IP approuvées, une liste d'adresses IP bloquées ou les deux. 
     
-    Pour créer ces listes, cliquez sur ![Icône Ajouter](media/ITPro-EAC-AddIcon.png). Dans la boîte de dialogue qui s'affiche, spécifiez l'adresse ou la plage d'adresses IP, puis cliquez sur **OK**. Pour ajouter d'autres adresses, répétez ce processus (vous pouvez également modifier ou supprimer des adresses IP après les avoir ajoutées).
+    Pour créer ces listes, cliquez sur ![Icône Ajouter](media/ITPro-EAC-AddIcon.gif). Dans la boîte de dialogue qui s'affiche, spécifiez l'adresse ou la plage d'adresses IP, puis cliquez sur **OK**. Pour ajouter d'autres adresses, répétez ce processus (vous pouvez également modifier ou supprimer des adresses IP après les avoir ajoutées).
     
     > [!NOTE]
     >  Si vous ajoutez une adresse IP aux deux listes, les messages envoyés par cette adresse IP seront autorisés. >  Les adresses IP IPV4 doivent être spécifiées au format nnn.nnn.nnn.nnn, où nnn est un nombre compris entre 0 et 255. Vous pouvez également spécifier des plages CIDR (Classless Inter-Domain Routing) au format nnn.nnn.nnn.nnn/rr, où rr est un nombre compris entre 24 et 32. Pour spécifier des plages en dehors de celle comprise entre 24 et 32, consultez la rubrique [Considérations concernant la configuration des listes vertes IP](configure-the-connection-filter-policy.md#bkmk_addtionalconsiderationswhenconfiguringipallowlists). >  Vous pouvez spécifier 1273 entrées maximum, sachant qu'une entrée est une adresse IP unique ou une plage CIDR d'adresses IP entre /24 et /32. >  Si vous envoyez des messages chiffrés via TLS, les adresses IPv6 et les plages d'adresses ne sont pas prises en charge. 
@@ -74,13 +76,13 @@ Pour créer cette règle de transport, procédez comme suit :
   
 1. Dans le CAE, accédez à **Flux de messagerie** \> **Règles**.
     
-2. Cliquez sur ![Icône Ajouter](media/ITPro-EAC-AddIcon.png), puis sélectionnez **Créer une règle**.
+2. Cliquez sur ![Icône Ajouter](media/ITPro-EAC-AddIcon.gif), puis sélectionnez **Créer une règle**.
     
 3. Nommez la règle, puis cliquez sur **Plus d'options**.
     
 4. Sous **Appliquer cette règle si**, sélectionnez **L'expéditeur**, puis **l'adresse IP se situe dans l'une de ces plages ou correspond exactement**.
     
-5. Dans le champ **Spécifier des adresses IP**, spécifiez la plage d'adresses IP, cliquez sur **Ajouter**![Icône Ajouter](media/ITPro-EAC-AddIcon.png), puis sur **OK**.
+5. Dans le champ **Spécifier des adresses IP**, spécifiez la plage d'adresses IP, cliquez sur **Ajouter**![Icône Ajouter](media/ITPro-EAC-AddIcon.gif), puis sur **OK**.
     
 6. Sous **Faire ceci**, définissez l'action en sélectionnant **Modifier les propriétés des messages**, puis **Définir le seuil de probabilité de courrier indésirable (SCL)**. Dans le champ **spécifier la valeur SCL**, sélectionnez **Ignorer le filtrage du courrier indésirable**, puis cliquez sur **OK**.
     
@@ -100,19 +102,19 @@ Pour ce faire, procédez comme suit :
   
 1. Dans le CAE, accédez à **Flux de messagerie** \> **Règles**.
     
-2. Cliquez sur ![Icône Ajouter](media/ITPro-EAC-AddIcon.png), puis sélectionnez **Créer une règle**.
+2. Cliquez sur ![Icône Ajouter](media/ITPro-EAC-AddIcon.gif), puis sélectionnez **Créer une règle**.
     
 3. Nommez la règle, puis cliquez sur **Plus d'options**.
     
 4. Sous **Appliquer cette règle si**, sélectionnez **L'expéditeur**, puis **l'adresse IP se situe dans l'une de ces plages ou correspond exactement**.
     
-5. Dans le champ **Spécifier des adresses IP**, spécifiez l'adresse IP ou la plage d'adresses IP que vous avez entrée dans la liste d'adresses IP autorisées, cliquez sur **Ajouter**![Icône Ajouter](media/ITPro-EAC-AddIcon.png), puis sur **OK**.
+5. Dans le champ **Spécifier des adresses IP**, spécifiez l'adresse IP ou la plage d'adresses IP que vous avez entrée dans la liste d'adresses IP autorisées, cliquez sur **Ajouter**![Icône Ajouter](media/ITPro-EAC-AddIcon.gif), puis sur **OK**.
     
 6. Sous **Faire ceci**, définissez l'action en sélectionnant **Modifier les propriétés des messages**, puis **définir le seuil de probabilité de courrier indésirable (SCL)**. Dans le champ **spécifier la valeur SCL**, sélectionnez **0**, puis cliquez sur **OK**.
     
 7. Cliquez sur **Ajouter une exception**et sous **sauf si**, sélectionnez **l’expéditeur** et choisissez le **domaine est**. 
     
-8. Dans le champ **Spécifier le domaine**, entrez le domaine pour lequel vous voulez contourner le filtrage du courrier indésirable, par exemple **contosob.com**. Cliquez sur **Ajouter**![Icône Ajouter](media/ITPro-EAC-AddIcon.png) pour le déplacer vers la liste d'expressions. Répétez cette étape pour ajouter d'autres domaines et exceptions, puis cliquez sur **OK** quand vous avez terminé. 
+8. Dans le champ **Spécifier le domaine**, entrez le domaine pour lequel vous voulez contourner le filtrage du courrier indésirable, par exemple **contosob.com**. Cliquez sur **Ajouter**![Icône Ajouter](media/ITPro-EAC-AddIcon.gif) pour le déplacer vers la liste d'expressions. Répétez cette étape pour ajouter d'autres domaines et exceptions, puis cliquez sur **OK** quand vous avez terminé. 
     
 9. Si vous le souhaitez, vous pouvez effectuer des sélections pour auditer, tester et activer la règle sur une période spécifique, etc. Nous vous recommandons de tester la règle pendant un certain temps avant de l'appliquer. Pour plus d'informations sur ces sélections, voir [Manage Transport Rules](http://technet.microsoft.com/library/e7a81372-b6d7-4d1f-bc9e-a845a7facac2.aspx). 
     
