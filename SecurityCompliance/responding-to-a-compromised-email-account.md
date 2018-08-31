@@ -3,7 +3,6 @@ title: Réponse à un compte de messagerie compromis dans Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 06/27/2018
 ms.audience: ITPro
 ms.topic: article
 ms.collection:
@@ -16,12 +15,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Découvrez comment reconnaître et répondre à un compte de messagerie compromis dans Office 365
-ms.openlocfilehash: ef97ecd3198234cf2c3d609f81a4a4a8af2c237e
-ms.sourcegitcommit: 08f36794552e2213d0baf35180e47744d3e87fe4
+ms.openlocfilehash: 9a3dcc2d10c7487e525ae127674a830f9a921a60
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23531877"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782181"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Réponse à un compte de messagerie compromis dans Office 365
 
@@ -33,11 +32,11 @@ Accès aux boîtes aux lettres, les données et les autres services Office 365, 
 ## <a name="symptoms-of-a-compromised-office-365-email-account"></a>Symptômes d’un compte de messagerie compromis Office 365
 Les utilisateurs peuvent remarquer et signaler une activité inhabituelle dans leurs boîtes aux lettres Office 365. Voici quelques symptômes courants :
 - Activités suspectes, telles que les messages électroniques manquants ou supprimés.
-- Les autres utilisateurs peuvent recevoir des messages électroniques à partir du compte compromis sans l’e-mail correspondante existants dans le dossier **Éléments envoyés** de l’expéditeur.
+- Les autres utilisateurs peuvent recevoir les messages électroniques à partir du compte compromis sans l’e-mail correspondante existants dans le dossier **Éléments envoyés** de l’expéditeur.
 - La présence de règles de boîte de réception qui n’ont pas été créées par l’utilisateur concerné ou l’administrateur. Ces règles peuvent automatiquement transférer les messages électroniques à des adresses inconnues ou déplacez-les vers le dossier **Notes**, **Courrier indésirable**ou **Abonnements RSS** .
-- Le nom d’affichage des utilisateurs peut être modifié dans la liste d’adresses globale.
+- Nom complet de l’utilisateur peut être modifié dans la liste d’adresses globale.
 - Boîte aux lettres de l’utilisateur est bloqué à partir de l’envoi de courrier électronique.
-- Le dossier éléments envoyés ou éléments supprimés dans Microsoft Outlook ou dans Microsoft Outlook Web App contiennent commun piraté--messages du compte, tel que « Je suis bloqué à Londres, envoi d’argent ».
+- Le dossier éléments envoyés ou éléments supprimés dans Microsoft Outlook ou dans Microsoft Outlook Web App contiennent des messages compte piraté courants, tels que « Je suis bloqué à Londres, envoi d’argent ».
 - Modifications du profil inhabituelle, telles que le nom, le numéro de téléphone ou le code postal ont été mis à jour.
 - Modifications inhabituel d’informations d’identification, telles que plusieurs modifications de mot de passe sont requises.
 - Transfert de messages a été récemment ajouté.

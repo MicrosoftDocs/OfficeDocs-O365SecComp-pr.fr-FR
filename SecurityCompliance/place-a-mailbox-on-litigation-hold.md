@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
 description: 'Vous pouvez placer une boîte aux lettres en conservation pour litige pour conserver tout le contenu de la boîte aux lettres, y compris les éléments supprimés et les versions originales des éléments modifiés. '
-ms.openlocfilehash: 8f440f5fc0bc7dafd639bdf8136808aa2f3bd35f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 9c2d5c77a604e4dbe6e1f1db75142d3bf5790618
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026441"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002843"
 ---
 # <a name="place-a-mailbox-on-litigation-hold"></a>Placement d'une boîte aux lettres en conservation pour litige
  
@@ -51,7 +53,7 @@ Vous pouvez placer une boîte aux lettres en conservation pour litige pour conse
 
 1. Accédez à **Destinataires**\> **Boîtes aux lettres**.
     
-2. Dans la liste des boîtes aux lettres utilisateur, cliquez sur la boîte aux lettres pour laquelle vous souhaitez activer ou désactiver la conservation pour litige, puis cliquez sur **Modifier**![Icône Modifier](media/ITPro-EAC-EditIcon.png).
+2. Dans la liste des boîtes aux lettres utilisateur, cliquez sur la boîte aux lettres que vous souhaitez mettre en attente pour litige, puis cliquez sur **Modifier** ![icône Modifier](media/ITPro-EAC-EditIcon.gif).
     
 3. Dans la page Propriétés de boîte aux lettres, cliquez sur **les fonctionnalités de boîte aux lettres.**
     
@@ -124,7 +126,7 @@ Pour vérifier que vous avez correctement placé une boîte aux lettres en conse
     
 1. Accédez à **Destinataires**\> **Boîtes aux lettres**.
     
-2. Dans la liste des boîtes aux lettres d'utilisateurs, cliquez sur la boîte aux lettres pour laquelle vous souhaitez vérifier les paramètres de conservation pour litige, puis cliquez sur **Modifier**![Icône Modifier](media/ITPro-EAC-EditIcon.png).
+2. Dans la liste des boîtes aux lettres utilisateur, cliquez sur la boîte aux lettres que vous souhaitez vérifier les paramètres de blocage pour litige pour, puis cliquez sur **Modifier** ![icône Modifier](media/ITPro-EAC-EditIcon.gif).
     
 3. Dans la page Propriétés de boîte aux lettres, cliquez sur **les fonctionnalités de boîte aux lettres.**
     
