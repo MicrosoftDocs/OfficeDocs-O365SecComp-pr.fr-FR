@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Pour les administrateurs : supprimer des éléments dans le dossier des éléments récupérables d’un utilisateur pour une boîte aux lettres Exchange Online, même si cette boîte aux lettres se trouve en conservation légale. Il s’agit d’un moyen efficace pour supprimer les données sont répandues par inadvertance dans Office 365.'
-ms.openlocfilehash: 0519e389f05ed9952090fb9b163a05d18e3bd762
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c984bcaa35a9bc7bc30e11d68ba8f7f0ce75b64d
+ms.sourcegitcommit: 31e0d94244c76a9f5118efee8bbc93395d080f91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23014028"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "23796880"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Supprimer des éléments dans le dossier éléments récupérables de nuage des boîtes aux lettres en attente - aide d’administration
 
@@ -110,7 +110,7 @@ En outre, vous devez obtenir les paramètres d’accès client de la boîte aux 
 
    Si la boîte aux lettres de l’utilisateur archive est activé, exécutez la commande suivante pour obtenir la taille et le nombre total d’éléments dans des dossiers et les sous-dossiers du dossier éléments récupérables dans leur boîte aux lettres d’archive. 
 
-    ```
+    ```s
     Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
     ```
 
