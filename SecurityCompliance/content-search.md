@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Utiliser la recherche de contenu de sécurité Office 365 &amp; centre de conformité pour rechercher du contenu dans les boîtes aux lettres, les sites SharePoint Online, les comptes OneDrive, Microsoft Teams, groupes d’Office 365 et Skype pour des Conversations. Vous pouvez utiliser des requêtes de recherche de mot clé et conditions pour affiner les résultats de recherche. Ensuite, vous pouvez afficher un aperçu et exporter les résultats de recherche. Recherche de contenu est également un outil efficace pour rechercher du contenu qui peut être lié à une demande d’objet de données PIBR.
-ms.openlocfilehash: f0064ae08226b1b0e864b25bb845054184f1efa4
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 11e96c6a11dd66c0095b7c624413e9e39036d8d6
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528784"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782081"
 ---
 # <a name="content-search-in-office-365"></a>Recherche de contenu dans Office 365
 
@@ -34,7 +34,7 @@ Vous pouvez utiliser l’outil de découverte électronique de recherche de cont
     
 - Microsoft Teams 
     
-- Groupes Office 365
+- Groupes Office 365
     
 Une fois que vous exécutez une recherche de contenu, le nombre d’emplacements de contenu et un estimation du nombre de résultats de la recherche est affiché dans le profil de la recherche. Vous pouvez également rapidement afficher les statistiques, tels que les emplacements de contenu dont la plupart des éléments qui correspondent à la requête de recherche. Après avoir exécuté une recherche, vous pouvez afficher les résultats ou les exporter vers un ordinateur local.
 
@@ -75,7 +75,7 @@ Pour accéder à la page de **recherche de contenu** pour exécuter des recherch
     
     Pourquoi utiliser la liste des mots clés ? Vous pouvez obtenir des statistiques indiquant le nombre d’éléments correspondent à chaque mot clé. Cela peut vous aider à identifier rapidement les mots clés qui sont le plus (et moins) efficaces. Vous pouvez également utiliser une phrase de mots clés (entourée parenthèses) dans une ligne. Pour plus d’informations sur les statistiques de recherche, voir [Afficher les statistiques de mots clés pour les résultats de recherche de contenu](view-keyword-statistics-for-content-search.md).
     
-- **Conditions** - vous pouvez ajouter des conditions de recherche pour affiner la recherche et de renvoyer un jeu de résultats plus précis. Chaque condition ajoute une clause à la requête de recherche KQL qui est créée et exécutée lorsque vous démarrez la recherche. Une condition est logiquement connectée à la requête de mot clé (spécifiée dans la zone mots clés) par un opérateur logique ( **c : c**) des fonctionnalités similaires à l’opérateur **et** . Cela signifie que les éléments ont afin de répondre à la requête de mot clé et une ou plusieurs conditions à inclure dans les résultats. Il s’agit de comment conditions vous aider à limiter les résultats. Pour une liste et une description des conditions que vous pouvez utiliser dans une requête de recherche, voir la section « Conditions de recherche » dans les [requêtes de mot clé et les conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md#search-conditions).
+- **Conditions** - vous pouvez ajouter des conditions de recherche pour affiner la recherche et de renvoyer un jeu de résultats plus précis. Chaque condition ajoute une clause à la requête de recherche qui est créée et exécutée lorsque vous démarrez la recherche. Une condition est logiquement connectée à la requête de mot clé (spécifiée dans la zone mots clés) par un opérateur logique ( **c : c**) des fonctionnalités similaires à l’opérateur **et** . Cela signifie que les éléments ont afin de répondre à la requête de mot clé et une ou plusieurs conditions à inclure dans les résultats. Il s’agit de comment conditions vous aider à limiter les résultats. Pour une liste et une description des conditions que vous pouvez utiliser dans une requête de recherche, voir la section « Conditions de recherche » dans les [requêtes de mot clé et les conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md#search-conditions).
     
 - **Emplacements** - hoisir les emplacements de contenu à rechercher.
     

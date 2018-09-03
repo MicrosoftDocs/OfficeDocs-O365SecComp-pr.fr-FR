@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'En savoir plus sur les propriétés de fichier et de messagerie que vous pouvez rechercher dans les boîtes aux lettres Exchange Online et SharePoint ou OneDrive pour les sites d’entreprise à l’aide de l’outil de recherche de contenu de sécurité Office 365 &amp; centre de conformité.  '
-ms.openlocfilehash: c043b6667e6847ff944b05e6bbe91df8ed2f600c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8501743d38425cb980088d65e1dd6bd0bd45cc08
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528260"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782101"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Requêtes par mots clés et conditions de recherche pour la recherche de contenu
 
@@ -134,7 +134,7 @@ Opérateurs de recherche booléens, tels que **AND**, **OR**et **pas**, vous aid
 |**Opérateur**|**Utilisation**|**Description**|
 |:-----|:-----|:-----|
 |AND  <br/> |keyword1 AND keyword2  <br/> |Renvoie les éléments qui contiennent tous les mots clés spécifiés ou `property:value` expressions. Par exemple, `from:"Ann Beebe" AND subject:northwind` renvoie tous les messages envoyés à Ann Beebe qui contenait northwind dans la ligne d’objet word. <sup>2</sup> <br/> |
-|+  <br/> |MotClé1 ?? + MotClé2 ?? + keyword3  <br/> |Renvoie les éléments qui contiennent  *soit*  `keyword2` soit  `keyword3` *, et*  qui contiennent également  `keyword1`. Par conséquent, cet exemple équivaut à la requête  `(keyword2 OR keyword3) AND keyword1`.  <br/> Notez que la requête  `keyword1 + keyword2` (avec un espace après le symbole **+** ) revient au même que d'utiliser l'opérateur ** AND **. Cette requête est équivalente à  `"keyword1 + keyword2"` et renvoie des éléments contenant l'expression exacte  `"keyword1 + keyword2"`.  <br/> |
+|+  <br/> |MotClé1 MotClé2 + keyword3  <br/> |Renvoie les éléments qui contiennent  *soit*  `keyword2` soit  `keyword3` *, et*  qui contiennent également  `keyword1`. Par conséquent, cet exemple équivaut à la requête  `(keyword2 OR keyword3) AND keyword1`.  <br/> Notez que la requête  `keyword1 + keyword2` (avec un espace après le symbole **+** ) revient au même que d'utiliser l'opérateur ** AND **. Cette requête est équivalente à  `"keyword1 + keyword2"` et renvoie des éléments contenant l'expression exacte  `"keyword1 + keyword2"`.  <br/> |
 |OR  <br/> |keyword1 OR keyword2  <br/> |Renvoie les éléments qui comprennent une ou plusieurs des mots clés spécifiés ou `property:value` expressions. <sup>2</sup> <br/> |
 |NOT  <br/> |keyword1 NOT keyword2  <br/> NOT from:"Ann Beebe"  <br/> PAS type : messagerie instantanée  <br/> |Exclut les éléments spécifiés par un mot clé ou un `property:value` expression. Dans le deuxième exemple montre comment exclure les messages envoyés à Ann Beebe. Le troisième exemple exclut les conversations par messagerie instantanées, tels que Skype pour des conversations qui sont enregistrés dans le dossier de boîte aux lettres de l’historique des conversations. <sup>2</sup> <br/> |
 |-  <br/> |keyword1 -keyword2  <br/> |Identique à l’opérateur **pas** . Pour cette requête renvoie les éléments qui contiennent des `keyword1` et exclut les éléments qui contiennent `keyword2`.<br/> |
@@ -152,7 +152,7 @@ Opérateurs de recherche booléens, tels que **AND**, **OR**et **pas**, vous aid
 |(  )  <br/> | (fair OR free) AND from:contoso.com  <br/> (IPO OR initial) AND (stock OR shares)  <br/> (quarterly financials)  <br/> |Les parenthèses regroupent des expressions booléennes, des éléments  `property:value` et des mots-clés. Par exemple,  `(quarterly financials)` renvoie les éléments contenant les mots « quarterly » et « financials ».  <br/> |
    
 > [!NOTE]
-> <sup>1</sup>??????Use cet opérateur pour les propriétés dont les valeurs de date ou numérique. > <sup>2</sup>??????Boolean des opérateurs de recherche doivent être en majuscules. par exemple, **et**. Si vous utilisez un opérateur en minuscules, telles **et**, il est considéré comme un mot clé dans la requête de recherche. 
+> <sup>1</sup> Utilisez cet opérateur pour les propriétés ayant des valeurs de date ou des valeurs numériques.<br/> <sup>2</sup> les opérateurs de recherche booléenne doivent être en majuscules. par exemple, **et**. Si vous utilisez un opérateur en minuscules, telles **et**, il est considéré comme un mot clé dans la requête de recherche. 
   
 ## <a name="search-conditions"></a>Conditions de recherche
 

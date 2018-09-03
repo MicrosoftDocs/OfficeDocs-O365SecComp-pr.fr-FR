@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Pour les administrateurs : Découvrez comment activer développer automatiquement l’archivage dans Office 365, qui propose aux utilisateurs du stockage illimité pour leurs boîtes aux lettres Exchange Online. Vous pouvez activer l’extension automatique d’archivage pour votre organisation ou juste pour des utilisateurs spécifiques.'
-ms.openlocfilehash: 6dd49433a1692d3a0ba23af57e7e2d9544f8a2b1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 823e4ed0049e7a28a6c97c4045fb75987f43db5f
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527520"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782151"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>Activer l’archivage illimité dans Office 365 - aide d’administration
 
@@ -56,9 +56,9 @@ Au lieu d’activer l’extension automatique de l’archivage pour tous les uti
   
 Lorsque vous activez l’extension automatique de l’archivage pour un utilisateur spécifique, les modifications de deux configurations suivantes sont également apportées :
   
-- Le quota de stockage de boîte aux lettres de l’utilisateur principal d’archivage est augmenté de 10 Go (de 100 à 110 Go).
+- Le quota de stockage de boîte aux lettres de l’utilisateur principal d’archivage est augmenté de 10 Go (de 100 à 110 Go). Le quota d’avertissement d’archivage est également augmenté de 10 Go (de 90 à 100 Go).
     
-- Le quota de stockage pour le dossier éléments récupérables dans la boîte aux lettres principale de l’utilisateur est augmenté de 10 Go (également de 100 à 110 Go). Cette modification s’applique uniquement si la boîte aux lettres en attente.
+- Le quota de stockage pour le dossier éléments récupérables dans la boîte aux lettres principale de l’utilisateur est augmenté de 10 Go (également de 100 à 110 Go). Le quota d’avertissement éléments récupérables est également augmenté de 10 Go (de 90 à 100 Go). Ces modifications sont applicables uniquement si la boîte aux lettres en blocage ou affectés à une stratégie de rétention d’Office 365.
     
 Cet espace supplémentaire est ajouté pour éviter les problèmes de stockage qui peuvent se produire avant l’archive de l’extension automatique est mis en service. Notez que stockage supplémentaire espace *n’est pas* ajouté lorsque vous activez l’extension automatique de l’archivage pour votre organisation, comme décrit dans la section précédente. 
   

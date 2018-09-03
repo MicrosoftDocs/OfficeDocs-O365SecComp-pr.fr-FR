@@ -3,7 +3,6 @@ title: Afficher les rapports de Protection de menace avancées d’Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 08/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: Découvrez comment trouver et utiliser les rapports pour Office 365 avancée contre les menaces de sécurité &amp; centre de conformité.
-ms.openlocfilehash: bd02989711629cc67f7a7d5e061862a1146ff21b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 13b2a4c142a223a8a912c9017b6033b0b5a1548b
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527934"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782111"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Afficher les rapports de Protection de menace avancées d’Office 365
 
@@ -26,7 +25,7 @@ Si votre organisation a [Contre les menaces avancées Office 365](office-365-atp
   
 ![La sécurité &amp; tableau de bord de centre de conformité peut vous aider à voir où travaille protection contre les menaces avancées](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
-Rapports DAV incluent le [rapport d’état de protection de menace](view-reports-for-atp.md#advancedthreats), le [rapport de Types de fichiers DAV](view-reports-for-atp.md#atpfiletypes)et le [rapport de Disposition de Message DAV](view-reports-for-atp.md#atpmessagedisp). Cet article décrit les rapports DAV et inclut des liens vers [des rapports supplémentaires à afficher](view-reports-for-atp.md#addl).
+Rapports DAV incluent le rapport d’état Threat protection, le rapport de Types de fichiers DAV et le rapport de Disposition de Message DAV. Cet article décrit les rapports DAV et inclut des liens vers des rapports supplémentaires à afficher.
   
 ## <a name="threat-protection-status-report"></a>Rapport d’état Threat protection
 

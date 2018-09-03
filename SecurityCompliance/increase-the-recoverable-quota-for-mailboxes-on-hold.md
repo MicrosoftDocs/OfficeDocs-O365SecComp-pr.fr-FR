@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: 'Activer la boîte aux lettres d’archive et activer l’archivage pour augmenter la taille du dossier éléments récupérables pour une boîte aux lettres dans Office 365 développer automatiquement. '
-ms.openlocfilehash: 2e7149ef10152a11dc638c04b61a261440b539b8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: cd2d07e6ef1637343798ccb71870c8d436f10574
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527627"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782091"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Augmenter le quota des éléments récupérables pour les boîtes aux lettres placées en conservation
 
@@ -35,11 +35,11 @@ Pour réduire le risque de dépassement de cette limite, le quota de stockage po
 |**Quota de stockage total pour le dossier Éléments récupérables** <br/> |Illimité  <br/> |Illimité  <br/> |
    
 > [!NOTE]
-> <sup>\*</sup>Quota de stockage initial de la boîte aux lettres d’archive est de 100 Go pour les utilisateurs disposant d’une licence Exchange Online (Plan 2). Toutefois, lors de l’extension automatique d’archivage est activé, le quota de stockage pour l’archivage de l’utilisateur et le dossier éléments récupérables dans l’archive est illimité. Pour plus d’informations sur l’extension automatique d’archivage, consultez la rubrique [vue d’ensemble de l’archivage illimité dans Office 365](unlimited-archiving.md). 
+> <sup>\*</sup>Quota de stockage initial de la boîte aux lettres d’archive est de 100 Go pour les utilisateurs disposant d’une licence Exchange Online (Plan 2). Toutefois, lorsque développer automatiquement l’archivage est activée pour les boîtes aux lettres en attente, le quota de stockage pour les deux la la boîte aux lettres d’archivage et le dossier éléments récupérables est augmentée à 110 Go. Espace de stockage d’archive supplémentaires système mis en service lorsque cela est nécessaire ce qui génère un nombre illimité de stockage d’archives. Pour plus d’informations sur l’extension automatique d’archivage, consultez la rubrique [vue d’ensemble de l’archivage illimité dans Office 365](unlimited-archiving.md). 
   
 Lorsque le quota de stockage pour le dossier Éléments récupérables dans la boîte aux lettres principale d’une boîte aux lettres placée en conservation est proche de sa limite, vous pouvez effectuer les opérations suivantes :
   
-- **Activer la boîte aux lettres d’archivage et d’activer l’archivage automatique-développement** - vous pouvez activer une capacité de stockage illimitée pour le dossier éléments récupérables simplement par l’activation de la boîte aux lettres d’archive et puis activer la fonctionnalité d’archivage automatique-développement dans Exchange En ligne. Le résultat de 100 Go pour le dossier éléments récupérables dans la boîte aux lettres principale et un nombre illimité de capacité de stockage pour le dossier éléments récupérables dans l’archive de l’utilisateur. Voir comment : [Activer les boîtes aux lettres archive de sécurité Office 365 &amp; centre de conformité](enable-archive-mailboxes.md) et [Activer l’archivage illimité dans Office 365](enable-unlimited-archiving.md).
+- **Activer la boîte aux lettres d’archivage et d’activer l’archivage automatique-développement** - vous pouvez activer une capacité de stockage illimitée pour le dossier éléments récupérables simplement par l’activation de la boîte aux lettres d’archive et puis activer la fonctionnalité d’archivage automatique-développement dans Exchange En ligne. Le résultat 110 Go pour le dossier éléments récupérables dans la boîte aux lettres principale et un nombre illimité de capacité de stockage pour le dossier éléments récupérables dans l’archive de l’utilisateur. Voir comment : [Activer les boîtes aux lettres archive de sécurité Office 365 &amp; centre de conformité](enable-archive-mailboxes.md) et [Activer l’archivage illimité dans Office 365](enable-unlimited-archiving.md).
     
     > [!NOTE]
     > Après avoir activé l’archivage pour une boîte aux lettres qui est proche dépassant le quota de stockage pour le dossier éléments récupérables, vous voudrez peut-être exécuter l’Assistant dossier géré pour déclencher manuellement l’assistant pour traiter la boîte aux lettres afin que les éléments arrivés à expiration sont déplacés le Dossier éléments récupérables dans la boîte aux lettres d’archive. Pour plus d’informations, voir [l’étape 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) . Notez que les autres éléments de boîte aux lettres de l’utilisateur peuvent être déplacés vers la nouvelle boîte aux lettres d’archive. Prendre en compte pour présenter à l’utilisateur que cela peut se produire après l’activation de la boîte aux lettres d’archive. 
