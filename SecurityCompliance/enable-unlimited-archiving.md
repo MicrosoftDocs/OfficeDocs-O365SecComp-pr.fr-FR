@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Pour les administrateurs : Découvrez comment activer développer automatiquement l’archivage dans Office 365, qui propose aux utilisateurs du stockage illimité pour leurs boîtes aux lettres Exchange Online. Vous pouvez activer l’extension automatique d’archivage pour votre organisation ou juste pour des utilisateurs spécifiques.'
-ms.openlocfilehash: 823e4ed0049e7a28a6c97c4045fb75987f43db5f
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: ede3e75a021d750160268ccf06ac4fe1637d219a
+ms.sourcegitcommit: 81c2fd5cd940c51bc43ac7858c7bdfa207ce401a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782151"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "23809699"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>Activer l’archivage illimité dans Office 365 - aide d’administration
 
@@ -54,7 +54,7 @@ Vous pouvez activer l’extension automatique de l’archivage pour votre organi
 
 Au lieu d’activer l’extension automatique de l’archivage pour tous les utilisateurs de votre organisation, vous pouvez activer simplement pour des utilisateurs spécifiques. Vous pouvez procéder parce uniquement certains utilisateurs peuvent avoir besoin d’un stockage d’archives de très grande taille.
   
-Lorsque vous activez l’extension automatique de l’archivage pour un utilisateur spécifique, les modifications de deux configurations suivantes sont également apportées :
+Lorsque vous activez développer automatiquement l’archivage pour un utilisateur spécifique et maintenez de boîte aux lettres de l’utilisateur dans sur ou attribué à une stratégie de rétention d’Office 365, les modifications de deux configurations suivantes sont apportées :
   
 - Le quota de stockage de boîte aux lettres de l’utilisateur principal d’archivage est augmenté de 10 Go (de 100 à 110 Go). Le quota d’avertissement d’archivage est également augmenté de 10 Go (de 90 à 100 Go).
     

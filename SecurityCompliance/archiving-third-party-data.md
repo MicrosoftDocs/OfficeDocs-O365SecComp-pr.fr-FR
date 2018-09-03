@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: Les administrateurs peuvent importer des données tierces à partir de plateformes de médias sociaux, plates-formes de messagerie instantanées et plates-formes de collaboration de documents aux boîtes aux lettres dans votre organisation Office 365. Cela vous permet d’archiver des données à partir de Facebook, Twitter et sources de données dans Office 365. Vous pouvez ensuite appply des fonctionnalités de conformité d’Office 365 (telles que la conservation légale, recherche de contenu et les stratégies de rétention) à des données tierces.
-ms.openlocfilehash: 3d51d9f5cb546b33fa636fab0ca319e4d24b1ad4
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: f5590d170986b8ae69458e69cedeb8a0ef137ef4
+ms.sourcegitcommit: 81c2fd5cd940c51bc43ac7858c7bdfa207ce401a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23230036"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "23809709"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>Archivage de données tierces dans Office 365
 
@@ -46,6 +46,8 @@ Voici une vue d’ensemble du processus et les étapes nécessaires pour importe
 [Étape 3 : configurer des boîtes aux lettres d’utilisateurs pour les données tierces](#step-3-configure-user-mailboxes-for-third-party-data)
 
 [Étape 4 : fournir des informations au partenaire](#step-4-provide-your-partner-with-information)
+
+[Étape 5 : Enregistrer le connecteur des données tierces dans Azure Active Directory](#step-5-register-the-third-party-data-connector-in-azure-active-directory)
 
 ## <a name="how-the-third-party-data-import-process-works"></a>Fonctionnement de la façon dont les données tiers processus d’importation >
 
@@ -622,8 +624,28 @@ La dernière étape consiste à fournir à votre partenaire les informations sui
     ```
 
 - La connexion dans les informations d’identification (Office 365 ID d’utilisateur et mot de passe) de la boîte aux lettres des données tierces que vous avez créé à l’étape 2. Ces informations d’identification sont nécessaires pour que le connecteur de partenaires permettre accéder et importer des éléments à des boîtes aux lettres utilisateur et à la boîte aux lettres des données tierces.
-    
+ 
+## <a name="step-5-register-the-third-party-data-connector-in-azure-active-directory"></a>Étape 5 : Enregistrer le connecteur des données tierces dans Azure Active Directory
 
+Démarrage du 30 septembre 2018, le service Azure dans Office 365 commencera utilisant l’authentification moderne dans Exchange Online pour authentifier les connecteurs de données tierce qui tentent de se connecter à votre organisation Office 365 pour importer des données. Pour que cette modification parce que l’authentification moderne offre davantage de sécurité que la méthode actuelle, qui repose sur la création de listes autorisées les connecteurs tiers qui utilisent le point de terminaison décrit précédemment pour se connecter au service Azure.
+
+Pour activer un connecteur tiers pour se connecter à Office 365 à l’aide de la nouvelle méthode d’authentification moderne, un administrateur de votre organisation Office 365 doit consentement pour inscrire le connecteur comme une application de service approuvé dans Azure Active Directory. Cela s’effectue par l’acceptation d’une demande d’autorisations pour autoriser le connecteur accéder aux données de votre organisation dans Azure Active Directory. Après avoir accepté cette demande, le connecteur de données tiers est ajouté en tant qu’une application d’entreprise pour Azure Active Directory et représenté sous la forme d’un principal de service. Pour plus d’informations le processus d’autorisation, voir [Consentement de client d’administration](https://docs.microsoft.com/en-us/skype-sdk/trusted-application-api/docs/tenantadminconsent).
+
+Voici les étapes pour accéder et accepter la demande pour inscrire le connecteur :
+
+1. Accédez à [cette page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) et vous connecter en utilisant les informations d’identification d’un administrateur global d’Office 365.<br/><br/>La boîte de dialogue s’affiche. Vous pouvez développer les crochets pour passer en revue les autorisations qui seront affectées au connecteur.<br/><br/>![La boîte de dialogue de demande d’autorisations s’affiche.](media/O365_ThirdPartyDataConnector_OptIn1.png)
+2. Cliquez sur **Accepter**.
+
+Après avoir accepté la demande, le [tableau de bord de portail Azure](https://portal.azure.com) s’affiche. Pour afficher la liste des applications pour votre organisation, cliquez sur **Azure Active Directory** > **applications d’entreprise**. Le connecteur de données tierce Office 365 est répertorié sur la blade **d’applications d’entreprise** .
+
+> [!IMPORTANT]
+> Après 30 septembre 2018, les données tiers ne seront n’est plus importées dans les boîtes aux lettres dans votre organisation si vous n’enregistrez un connecteur tiers dans Azure Active Directory. Remarque existants aux connecteurs de données de tiers (ceux créés avant le 30 septembre 2018) doit également être enregistré dans Azure Active Directory en suivant la procédure à l’étape 5.
+
+### <a name="revoking-consent-for-a-third-party-data-connector"></a>Révoquer le consentement de l’utilisateur pour un connecteur tiers
+
+Une fois que votre organisation consent à la demande d’autorisations pour inscrire un connecteur tiers dans Azure Active Directory, votre organisation peut révoquer cette autorisation à tout moment. Toutefois, révoquer l’autorisation d’un connecteur signifie que les données à partir de la source de données tierce ne seront importées dans Office 365.
+
+Pour révoquer l’autorisation pour un connecteur tiers, vous pouvez supprimer l’application (en supprimant le principal de service correspondant) d’Azure Active Directory à l’aide de la lame **d’applications d’entreprise** dans le portail Azure, ou à l’aide de la [ Remove-MsolServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/msonline/remove-msolserviceprincipal) dans Office 365 PowerShell. Vous pouvez également utiliser l’applet de commande [Remove-AzureADServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/azuread/remove-azureadserviceprincipal) dans Windows Azure Active Directory PowerShell.
   
 ## <a name="more-information"></a>Plus d'informations
 
