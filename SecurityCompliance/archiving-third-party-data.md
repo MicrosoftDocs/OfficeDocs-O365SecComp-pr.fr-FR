@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: Les administrateurs peuvent importer des données tierces à partir de plateformes de médias sociaux, plates-formes de messagerie instantanées et plates-formes de collaboration de documents aux boîtes aux lettres dans votre organisation Office 365. Cela vous permet d’archiver des données à partir de Facebook, Twitter et sources de données dans Office 365. Vous pouvez ensuite appply des fonctionnalités de conformité d’Office 365 (telles que la conservation légale, recherche de contenu et les stratégies de rétention) à des données tierces.
-ms.openlocfilehash: f5590d170986b8ae69458e69cedeb8a0ef137ef4
-ms.sourcegitcommit: 81c2fd5cd940c51bc43ac7858c7bdfa207ce401a
+ms.openlocfilehash: 7af88338333e90bd208d693fbfd5bb691d44b538
+ms.sourcegitcommit: 4c6c937ec51e8b754332e4c1c8d286e73e197e2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2018
-ms.locfileid: "23809709"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "23827088"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>Archivage de données tierces dans Office 365
 
@@ -636,7 +636,7 @@ Voici les étapes pour accéder et accepter la demande pour inscrire le connecte
 1. Accédez à [cette page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) et vous connecter en utilisant les informations d’identification d’un administrateur global d’Office 365.<br/><br/>La boîte de dialogue s’affiche. Vous pouvez développer les crochets pour passer en revue les autorisations qui seront affectées au connecteur.<br/><br/>![La boîte de dialogue de demande d’autorisations s’affiche.](media/O365_ThirdPartyDataConnector_OptIn1.png)
 2. Cliquez sur **Accepter**.
 
-Après avoir accepté la demande, le [tableau de bord de portail Azure](https://portal.azure.com) s’affiche. Pour afficher la liste des applications pour votre organisation, cliquez sur **Azure Active Directory** > **applications d’entreprise**. Le connecteur de données tierce Office 365 est répertorié sur la blade **d’applications d’entreprise** .
+Après avoir accepté la demande, le [portail Azure](https://portal.azure.com) s’affiche. Pour afficher la liste des applications pour votre organisation, cliquez sur **Azure Active Directory** > **applications d’entreprise**. Le connecteur de données tierce Office 365 est répertorié sur la blade **d’applications d’entreprise** .
 
 > [!IMPORTANT]
 > Après 30 septembre 2018, les données tiers ne seront n’est plus importées dans les boîtes aux lettres dans votre organisation si vous n’enregistrez un connecteur tiers dans Azure Active Directory. Remarque existants aux connecteurs de données de tiers (ceux créés avant le 30 septembre 2018) doit également être enregistré dans Azure Active Directory en suivant la procédure à l’étape 5.
