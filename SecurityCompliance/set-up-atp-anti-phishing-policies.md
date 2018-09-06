@@ -5,31 +5,34 @@ author: kccross
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.date: 9/5/2018
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: DAV protection anti-hameçonnage, composant d’Office 365 avancée contre les menaces, peut aider à protéger votre organisation contre les attaques malveillantes hameçonnage basée sur l’emprunt d’identité et autres hameçonnage. Si vous êtes un administrateur de sécurité ou d’Office 365 entreprise globale, vous pouvez configurer les stratégies anti-hameçonnage DAV. Hameçonnage attaques entrent dans diverses formes contre les attaques de marchandise sonde ciblé phishing ou baleine. À la complexité, il est difficile de même un œil formé à identifier certains de ces attaques sophistiquées. Heureusement, contre les menaces avancées Office 365 peut vous aider. Vous pouvez configurer une stratégie d’anti-hameçonnage DAV pour vous assurer que votre organisation est protégée contre les attaques de ce type.
-ms.openlocfilehash: 2f2258c4059d17410fd040782d7ee9dfca12576d
-ms.sourcegitcommit: 4c6c937ec51e8b754332e4c1c8d286e73e197e2c
+ms.openlocfilehash: 5c93ae5de7d7b021dbe1c1da682e35799938e456
+ms.sourcegitcommit: a8884b9675559018e1fddec1c0cc2de0bc3bdde5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "23827078"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839964"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-policies"></a>Configurer des stratégies anti-hameçonnage d’Office 365 DAV
 
-[Protection anti - hameçonnage DAV](atp-anti-phishing.md) , composant d' [Office 365 avancée protection contre les menaces](office-365-atp.md), peuvent aider à protéger votre organisation contre les attaques malveillantes hameçonnage basée sur l’emprunt d’identité et autres hameçonnage. Si vous êtes un administrateur de sécurité ou d’Office 365 entreprise globale, vous pouvez configurer les stratégies anti-hameçonnage DAV. Hameçonnage attaques entrent dans diverses formes contre les attaques de marchandise sonde ciblé phishing ou baleine. À la complexité, il est difficile de même un œil formé à identifier certains de ces attaques sophistiquées. Heureusement, contre les menaces avancées Office 365 peut vous aider. Vous pouvez configurer une stratégie d’anti-hameçonnage DAV pour vous assurer que votre organisation est protégée contre les attaques de ce type.
+[Protection anti - hameçonnage DAV](atp-anti-phishing.md), composant d' [Office 365 avancée protection contre les menaces](office-365-atp.md), peuvent aider à protéger votre organisation contre les attaques malveillantes hameçonnage basée sur l’emprunt d’identité et autres hameçonnage. Si vous êtes un administrateur de sécurité ou d’Office 365 entreprise globale, vous pouvez configurer les stratégies anti-hameçonnage DAV. 
+
+Hameçonnage attaques entrent dans diverses formes contre les attaques de marchandise sonde ciblé phishing ou baleine. À la complexité, il est difficile de même un œil formé à identifier certains de ces attaques sophistiquées. Heureusement, contre les menaces avancées Office 365 peut vous aider. Vous pouvez configurer une stratégie d’anti-hameçonnage DAV pour vous assurer que votre organisation est protégée contre les attaques de ce type.
   
 > [!NOTE]
 > DAV anti-hameçonnage est uniquement disponible en avancée contre les menaces, disponible avec Office 365 entreprise E5. Si votre organisation utilise un autre abonnement Office 365 pour entreprises, contre les menaces avancées peut être acheté comme module complémentaire. (Comme un administrateur global, dans le centre d’administration Office 365, choisissez **facturation** \> **abonnements Add**.) Pour plus d’informations sur les options de plan, voir [comparer toutes les Office 365 pour les Plans d’activité](https://go.microsoft.com/fwlink/?linkid=844053). Assurez-vous que votre organisation utilise la dernière version d’Office 365 ProPlus sur Windows pour tirer pleinement parti de protection anti-hameçonnage DAV. 
   
 Procédure à suivre :
   
-1. [Passez en revue les conditions préalables](#review-the-prerequisites)
+1. Passez en revue les composants requis.
     
-2. [En savoir plus sur les options de stratégie anti-hameçonnage DAV](#learn-about-atp-anti-phishing-policy-options)
+2. Découvrez les options de stratégie anti-hameçonnage DAV.
     
-3. [Configurer une stratégie d’anti-hameçonnage DAV](#set-up-an-atp-anti-phishing-policy)
+3. Configurer une stratégie d’anti-hameçonnage DAV.
     
 ## <a name="review-the-prerequisites"></a>Passez en revue les conditions préalables
 
@@ -45,7 +48,7 @@ Procédure à suivre :
     
 ## <a name="set-up-an-atp-anti-phishing-policy"></a>Configurer une stratégie d’anti-hameçonnage DAV
 
-Vous ajouter, modifier et supprimer des stratégies d’anti-hameçonnage DAV de sécurité Office 365 &amp; centre de conformité.
+Chaque organisation dans Office 365 dispose d’une stratégie par défaut anti-hameçonnage qui s’applique à tous les utilisateurs. Vous pouvez également créer plusieurs stratégies anti-hameçonnage personnalisées que vous pouvez limiter l’étendue à des utilisateurs spécifiques, des groupes ou des domaines au sein de votre organisation. Les stratégies personnalisées que vous créez sont prioritaires sur la stratégie par défaut. Vous ajouter, modifier et supprimer des stratégies d’anti-hameçonnage DAV de sécurité Office 365 &amp; centre de conformité.
   
 1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous avec votre compte professionnel ou de l’école. 
     
@@ -57,7 +60,7 @@ Vous ajouter, modifier et supprimer des stratégies d’anti-hameçonnage DAV de
     
   - Pour ajouter une nouvelle stratégie sélectionnez **+ créer**.
     
-  - Pour modifier une stratégie existante, sélectionnez le nom de stratégie dans la liste affichée dans la page **Anti-hameçonnage** . Dans la page qui apparaît, choisissez **Modifier la stratégie**.
+  - Pour modifier une stratégie existante, sélectionnez le nom de stratégie dans la liste affichée dans la page **Anti-hameçonnage** ou choisissez **Une stratégie par défaut** au-dessus de la liste pour modifier la poicy par défaut pour votre organisation. Dans la page qui apparaît, choisissez **Modifier la stratégie**.  
     
     Un Assistant démarre vous guider dans la définition de votre stratégie anti-hameçonnage.
     
@@ -96,7 +99,7 @@ L’administrateur de sécurité chez Contoso peut utiliser des valeurs, comme c
 |||
 |:-----|:-----|
 |**Paramètre ou option** <br/> |**Exemple** <br/> |
-|Name  <br/> |Domaine et PDG  <br/> |
+|Nom  <br/> |Domaine et PDG  <br/> |
 |Description  <br/> |Assurez-vous que le PDG et notre domaine ne sont pas empruntées.  <br/> |
 |Ajouter des utilisateurs à protéger  <br/> |Adresse de messagerie du PDG au minimum.  <br/> |
 |Ajouter des domaines à protéger  <br/> |Le domaine d’organisation qui inclut le bureau du PDG.  <br/> |
@@ -107,7 +110,7 @@ L’administrateur de sécurité chez Contoso peut utiliser des valeurs, comme c
    
 ## <a name="delete-an-atp-anti-phishing-policy"></a>Supprimer une stratégie d’anti-hameçonnage DAV
 
-Vous pouvez ajouter ou modifier des stratégies de sécurité &amp; centre de conformité. Nous recommandons l’utilisation de la sécurité &amp; centre de conformité pour consulter ou modifier un de vos stratégies DAV.
+Vous pouvez supprimer des stratégies personnalisées que vous avez créé à l’aide de la sécurité &amp; centre de conformité. Vous ne pouvez pas supprimer la stratégie par défaut pour votre organisation. Nous recommandons l’utilisation de la sécurité &amp; centre de conformité pour consulter ou modifier un de vos stratégies DAV.
   
 1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous avec votre compte professionnel ou de l’école. 
     

@@ -3,7 +3,6 @@ title: Définir des stratégies Office 365 DAV fiables liens
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 5/30/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Définir des stratégies de liens fiables pour protéger votre organisation contre les liens malveillants dans les fichiers Word, Excel, PowerPoint et Visio, ainsi que dans les messages électroniques.
-ms.openlocfilehash: 0f43cf1eec63df4b70f88abf36e8f097da72ebbc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a0c88a81503555417c16501ec9283cf2316c6d09
+ms.sourcegitcommit: a8884b9675559018e1fddec1c0cc2de0bc3bdde5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528540"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839974"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Définir des stratégies Office 365 DAV fiables liens
 
@@ -38,13 +37,13 @@ Ajout de nouvelles fonctionnalités, vous devrez peut-être ajuster vos stratég
 
 ## <a name="what-to-do"></a>Procédure 
   
-1. [Passez en revue les conditions préalables](#review-the-prerequisites)
+1. [Passez en revue les composants requis](#review-the-prerequisites).
     
-2. [Définir une stratégie de liens fiables DAV qui s’applique à tout le monde](set-up-atp-safe-links-policies.md#reveddefaultscc), y compris [la configuration de votre liste des URL bloqué personnalisé pour les liens sécurisés DAV](set-up-a-custom-blocked-urls-list-wtih-atp.md)
+2. [Réviser et modifier la stratégie de liens fiables DAV par défaut qui s’applique à tout le monde](#define-an-atp-safe-links-policy-that-applies-to-everyone). Par exemple, vous pouvez [configurer votre liste des URL bloqué personnalisé pour les liens sécurisés DAV](set-up-a-custom-blocked-urls-list-wtih-atp.md).
     
-3. [Ajouter une stratégie pour les destinataires de courriers électroniques spécifique](set-up-atp-safe-links-policies.md#addemailpolscc), y compris [la configuration de votre liste des URL « Pas de rewrite » personnalisé pour les liens sécurisés DAV](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
+3. [Ajouter une stratégie pour les destinataires de courriers électroniques spécifique](#add-a-policy-for-specific-email-recipients), y compris [la configuration de votre liste des URL « Pas de rewrite » personnalisé pour les liens sécurisés DAV](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
     
-4. [Découvrez les options de stratégie de liens fiables DAV](set-up-atp-safe-links-policies.md#policyoptions), notamment les paramètres pour les modifications récentes
+4. [Découvrez les options de stratégie de liens fiables DAV](#learn-about-atp-safe-links-policy-options) (dans cet article), notamment les paramètres pour les modifications récentes
     
 ## <a name="review-the-prerequisites"></a>Passez en revue les conditions préalables
 
@@ -58,7 +57,7 @@ Ajout de nouvelles fonctionnalités, vous devrez peut-être ajuster vos stratég
     
 ## <a name="define-an-atp-safe-links-policy-that-applies-to-everyone"></a>Définir une stratégie de liens fiables DAV qui s’applique à tout le monde
 
-Lorsque vous avez protection contre les menaces avancées dans Office 365 pour entreprises, vous aurez une stratégie pour définir des liens fiables DAV qui s’applique à tout le monde dans votre organisation. Vous pouvez modifier votre stratégie de sécurité soit &amp; centre de conformité ou le centre d’administration Exchange. Nous recommandons l’utilisation de la sécurité &amp; centre de conformité pour consulter ou modifier un de vos stratégies DAV.
+Lorsque vous avez protection contre les menaces avancées dans Office 365 pour entreprises, vous aurez une stratégie par défaut des liens fiables DAV qui s’applique à tout le monde dans votre organisation. Vous pouvez modifier votre stratégie de sécurité soit &amp; centre de conformité ou le centre d’administration Exchange. **Nous recommandons l’utilisation de la sécurité &amp; centre de conformité pour consulter ou modifier un de vos stratégies DAV**.
   
 1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous avec votre compte professionnel ou de l’école. 
     
@@ -76,7 +75,7 @@ Lorsque vous avez protection contre les menaces avancées dans Office 365 pour e
     
 ## <a name="add-a-policy-for-specific-email-recipients"></a>Ajouter une stratégie pour les destinataires de messages électroniques spécifique
 
-Après avoir défini une stratégie pour tous les utilisateurs, envisagez d’ajouter des stratégies pour des groupes spécifiques de destinataires de courriers électroniques. Cela vous permet de spécifier des exceptions à votre stratégie par défaut. Vous pouvez ajouter des stratégies à l’aide de la sécurité de le &amp; centre de conformité (recommandé) ou le centre d’administration Exchange. Nous recommandons l’utilisation de la sécurité &amp; centre de conformité pour consulter ou modifier un de vos stratégies DAV.
+Après avoir consulté la stratégie pour tous les utilisateurs, vous pouvez définir des stratégies supplémentaires pour des groupes spécifiques de destinataires de courriers électroniques. Cela vous permet de spécifier des exceptions à votre stratégie par défaut. Vous pouvez ajouter des stratégies à l’aide de la sécurité de le &amp; centre de conformité (recommandé) ou le centre d’administration Exchange. **Nous recommandons l’utilisation de la sécurité &amp; centre de conformité pour consulter ou modifier un de vos stratégies DAV**.
   
 1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous avec votre compte professionnel ou de l’école. 
     
@@ -117,16 +116,16 @@ Comme vous configurez ou modifiez une stratégie de liens fiables DAV, verront p
 |**Pour cette stratégie.**|**Cette option**|**Effectue cette action**|
 |:-----|:-----|:-----|
 |Par défaut (une fois définies, la stratégie par défaut s’applique à tout le monde dans l’organisation)  <br/> |**Bloquer les URL suivantes** <br/> |Permet à votre organisation d’avoir une liste personnalisée d’URL qui sont bloqués automatiquement. Lorsque les utilisateurs cliquent sur une URL dans cette liste, il est dirigé vers une [page d’avertissement](atp-safe-links-warning-pages.md) qui explique pourquoi l’URL est bloquée.<br/> Pour plus de détails, tels que de la prise en charge ajoutée pour trois astérisques générique, consultez [configurer une liste d’URL bloquée personnalisée à l’aide de liens fiables DAV](set-up-a-custom-blocked-urls-list-wtih-atp.md) (\*).  <br/> |
-|Par défaut  <br/> |**Office 365 ProPlus, Office pour iOS et Android** <br/> |Lorsque cette option est sélectionnée, les liens sécurisés DAV protection est appliquée aux URL dans les documents qui sont ouvrir dans Office 365 ProPlus (Word, Excel et PowerPoint sous Windows ou Mac OS), des documents Office sur iOS ou Android appareils, 2016 Visio sur Windows et Office Online (Word En ligne, PowerPoint Online, Excel Online et OneNote en ligne), fournies à que l’utilisateur s’est connecté à Office 365.  <br/> > [!TIP]> Si vous voyez uniquement **2016 Office sur Windows**, puis les mises à jour de la fonctionnalité ne parviennent pas à encore votre environnement Office 365 (et ils sont bientôt disponible). En attendant, protection liens fiables DAV s’applique à Word 2016, 2016 Excel, PowerPoint 2016 ou 2016 Visio en cours d’exécution sur Windows.           |
+|Par défaut  <br/> |**Office 365 ProPlus, Office pour iOS et Android** <br/> |Lorsque cette option est sélectionnée, les liens sécurisés DAV protection est appliquée aux URL dans les documents qui sont ouvrir dans Office 365 ProPlus (Word, Excel et PowerPoint sous Windows ou Mac OS), des documents Office sur iOS ou Android appareils, 2016 Visio sur Windows et Office Online (Word En ligne, PowerPoint Online, Excel Online et OneNote en ligne), fournies à que l’utilisateur s’est connecté à Office 365. </br></br>Si vous voyez uniquement **2016 Office sur Windows**, puis les mises à jour de la fonctionnalité ne parviennent pas à encore votre environnement Office 365 (et ils sont bientôt disponible). En attendant, protection liens fiables DAV s’applique à Word 2016, 2016 Excel, PowerPoint 2016 ou 2016 Visio en cours d’exécution sur Windows.           |
 |Par défaut  <br/> |**Ne suivez pas lorsque les utilisateurs cliquent sur les liens sécurisés DAV** <br/> |Lorsque cette option est sélectionnée, cliquez sur données pour l’URL dans les documents Word, Excel, PowerPoint et Visio n’est pas stocké.  <br/> |
 |Par défaut  <br/> |**Ne laissez pas vos utilisateurs cliquez sur par le biais de DAV fiables des liens vers des URL d’origine** <br/> |Lorsque cette option est sélectionnée, les utilisateurs ne peut pas continuer au-delà d’une [page d’avertissement](atp-safe-links-warning-pages.md) à une URL qui est définie comme étant malveillants.  <br/> |
 |Une stratégie créée pour les destinataires de messages électroniques spécifique  <br/> |**Off** <br/> |N’analyse pas les URL dans les messages électroniques.  <br/> Vous permet de définir une règle d’exception, par exemple une règle qui n’analyse pas les URL dans les messages électroniques pour un groupe spécifique de destinataires.  <br/> |
 |Une stratégie créée pour les destinataires de messages électroniques spécifique  <br/> |**Sur** <br/> |Réécrit URL aux utilisateurs d’itinéraire par le biais de protection des liens fiables DAV lorsque les utilisateurs cliquent sur les URL dans les messages électroniques.  <br/> Vérifie une URL lorsque vous cliquez sur par rapport à une liste d’URL bloquées ou malveillants.  <br/> |
 |Une stratégie créée pour les destinataires de messages électroniques spécifique  <br/> |**Pièces jointes fiables permet d’analyser le contenu téléchargeable** <br/> |Lorsque cette option est sélectionnée, les URL qui pointent vers le contenu téléchargeable sont analysés.  <br/> |
-|Une stratégie créée pour les destinataires de messages électroniques spécifique  <br/> |**Appliquez les liens sécurisés pour les messages envoyés au sein de l’organisation** <br/> | *Cette fonctionnalité est présentant au début du 2018 mars.*  <br/> Lorsque cette option est disponible et activée, protection liens fiables DAV est appliquée pour les messages envoyés entre les personnes dans votre organisation, fournie les comptes de messagerie sont hébergées dans Office 365 les courriers électroniques.  <br/> |
-|Une stratégie créée pour les destinataires de messages électroniques spécifique  <br/> |**Ne suivent pas les clics de l’utilisateur** <br/> |Lorsque cette option est sélectionnée, cliquez sur données pour l’URL dans le courrier provenant d’expéditeurs externes n’est pas stocké.  <br/> Cliquez sur URL de suivi pour les liens dans les messages électroniques envoyés au sein de l’organisation n’est pas actuellement pris en charge.  <br/> |
+|Une stratégie créée pour les destinataires de messages électroniques spécifique  <br/> |**Appliquez les liens sécurisés pour les messages envoyés au sein de l’organisation** <br/> | Lorsque cette option est disponible et activée, protection liens fiables DAV est appliquée pour les messages envoyés entre les personnes dans votre organisation, fournie les comptes de messagerie sont hébergées dans Office 365 les courriers électroniques.  <br/> |
+|Une stratégie créée pour les destinataires de messages électroniques spécifique  <br/> |**Ne suivent pas les clics de l’utilisateur** <br/> |Lorsque cette option est sélectionnée, cliquez sur données pour l’URL dans le courrier provenant d’expéditeurs externes n’est pas stocké. Cliquez sur URL de suivi pour les liens dans les messages électroniques envoyés au sein de l’organisation n’est pas actuellement pris en charge.  <br/> |
 |Une stratégie créée pour les destinataires de messages électroniques spécifique  <br/> |**Ne pas autoriser les utilisateurs à l’URL d’origine** <br/> |Lorsque cette option est sélectionnée, les utilisateurs ne peut pas continuer au-delà d’une [page d’avertissement](atp-safe-links-warning-pages.md) à une URL qui est définie comme étant malveillants.  <br/> |
-|Une stratégie créée pour les destinataires de messages électroniques spécifique  <br/> |**Pas réécrire les URL suivantes** <br/> |Laisse les URL en tant qu’ils reçoivent. Tenir à jour une liste personnalisée d’URL fiables qui n’ont pas besoin d’analyse pour un groupe spécifique de destinataires de courriers électroniques dans votre organisation.<br/> Pour plus d’informations, y compris les modifications récentes apportées pour prendre en charge pour le caractère générique astérisque, consultez [configurer une liste d’URL personnalisée du « Pas de rewrite » à l’aide de liens fiables DAV](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) (\*).  <br/> |
+|Une stratégie créée pour les destinataires de messages électroniques spécifique  <br/> |**Pas réécrire les URL suivantes** <br/> |Laisse les URL en tant qu’ils reçoivent. Tenir à jour une liste personnalisée d’URL fiables qui n’ont pas besoin d’analyse pour un groupe spécifique de destinataires de courriers électroniques dans votre organisation.  Pour plus d’informations, y compris les modifications récentes apportées pour prendre en charge pour le caractère générique astérisque, consultez [configurer une liste d’URL personnalisée du « Pas de rewrite » à l’aide de liens fiables DAV](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) (\*).<br/> |
    
 ## <a name="related-topics"></a>Voir aussi
 
