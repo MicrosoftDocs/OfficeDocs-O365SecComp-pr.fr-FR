@@ -3,7 +3,7 @@ title: Gérer les messages mis en quarantaine et les fichiers en tant qu’admin
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 5/19/2018
+ms.date: 09/05/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: 'En tant qu’administrateur, vous pouvez afficher, version et signaler un faux positif mis en quarantaine dans Office 365. Vous pouvez définir des stratégies afin que le filtrage des messages Office 365 et l’envoie à mettre en quarantaine pour plusieurs raisons : car ils ont été identifiés comme du courrier indésirable, en bloc, l’hameçonnage, les logiciels malveillants ou car il correspondant à une règle de flux de messagerie. '
-ms.openlocfilehash: f30604da185b3455d89ae7c1206bda2149ef7778
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: be6384d8937e25aec55d82d8212c49d25b64b9a1
+ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528153"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839098"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gérer les messages mis en quarantaine et les fichiers en tant qu’administrateur dans Office 365
 
@@ -34,7 +34,7 @@ Vous devez disposer des autorisations d’administrateur dans Office 365 pour tr
   
 ## <a name="view-your-organizations-quarantined-messages"></a>Afficher les messages mis en quarantaine de votre organisation
 
-1. À l’aide d’un compte disposant de privilèges d’administrateur global dans votre 365organization Office Professionnel ou de l’école, connectez-vous à Office 365 et [accédez au centre de conformité et de sécurité](go-to-the-securitycompliance-center.md).
+1. À l’aide d’un compte professionnel ou de l’école ayant des privilèges d’administrateur global dans votre organisation Office 365, connectez-vous à Office 365 et [accédez au centre de conformité et de sécurité](go-to-the-securitycompliance-center.md).
     
 2. Dans la liste de gauche, développez **Threat Management**, sélectionnez **révision**, puis **mise en quarantaine**.
     

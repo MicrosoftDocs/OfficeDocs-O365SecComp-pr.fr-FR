@@ -3,7 +3,7 @@ title: Suppression d’un utilisateur, d’un domaine ou d’une adresse IP d’
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/20/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 description: 'Si un utilisateur envoie en continu des messages électroniques classés comme courriers indésirables depuis Office 365, ses envois seront bloqués. '
-ms.openlocfilehash: 87b7083fe1345a15ea582f12a5b0d417bbe6b568
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 3f3130bec3cde4cdc1343a0140a9013deacfc519
+ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002593"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839108"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>Suppression d’un utilisateur, d’un domaine ou d’une adresse IP d’une liste rouge après l’envoi de courrier indésirable
 
@@ -35,27 +35,19 @@ Vous pouvez configurer des paramètres de courrier indésirable sortant afin de 
   
 ## <a name="unblock-a-blocked-office-365-email-account"></a>Retirer un compte de messagerie Office 365 de la liste rouge
 
-Vous effectuez cette tâche dans le centre d’administration Exchange (CAE). Consultez la rubrique [Centre d’administration Exchange dans Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md) pour plus d’informations sur le centre d’administration Exchange. 
-  
-> [!NOTE]
-> Vous ne verrez pas le centre de maintenance, sauf si vous vous trouvez dans le centre d’administration Exchange pour Exchange Online. 
-  
-1. Dans le CAE, accédez à **protection** \> **Centre de maintenance**.
+Vous effectuez cette tâche dans la sécurité pour Microsoft Office 365 & centre de conformité (SCC). Pour plus d’informations sur le contrôle de code source, [accédez au portail Office 365 sécurité & centre de conformité](go-to-the-securitycompliance-center.md) .
+
+1. À l’aide d’un compte disposant de privilèges d’administrateur général Office 365, vous connecter dans le centre de conformité et de sécurité pour Microsoft Office 365 et dans la liste de gauche, développez **Threat Management**, sélectionnez **passer en revue les**, puis **Restricted Professionnel ou de l’école Les utilisateurs**.
     
-    ![Accéder au Centre de maintenance dans le Centre d’administration Exchange](media/9bbf0844-7b34-4a86-a2b7-8c7e9c8519a3.png)
-  
-2. Sélectionnez l’icône **Rechercher** et entrez l’adresse SMTP de l’utilisateur bloqué. 
-    
-    ![Rechercher un utilisateur bloqué dans le Centre de maintenance](media/f931b5a0-7115-4d95-9f6f-b403436031ba.png)
-  
-3. Cliquez sur **Débloquer le compte** dans le volet Description. 
-    
-    ![Débloquer un utilisateur dans le Centre de maintenance](media/c5d5b1b9-8416-45aa-9631-881e94d1d056.png)
-  
-4. Cliquez sur **Oui** pour confirmer la modification. 
+    > [!TIP]
+    > Pour accéder directement à la page **Utilisateurs restreints** dans la sécurité &amp; centre de conformité, utilisez l’URL suivante : >[https://protection.office.com/?hash=/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
+
+2. Cette page contient la liste des utilisateurs qui ont été bloqués à partir de l’envoi de courrier à l’extérieur de votre organisation.  Recherchez les utilisateurs que vous souhaitez supprimer les restrictions, puis cliquez sur **Débloquer**.
+
+3. Cliquez sur **Oui** pour confirmer la modification. 
     
 > [!NOTE]
-> Il existe une limite au nombre de déblocages d’un compte par l’administrateur client. Le dépassement de la limite pour un utilisateur entraîne l’affichage d’un message d’erreur. Contactez le support pour débloquer l’utilisateur. 
+> Il existe une limite au nombre de fois qu’un compte peut être non bloquée par l’administrateur du client. Si la limite d’un utilisateur a été dépassée, un message d’erreur s’affiche. Vous devrez contacter le Support pour débloquer l’utilisateur. 
   
 ## <a name="third-party-block-lists"></a>Listes rouges tierces
 
