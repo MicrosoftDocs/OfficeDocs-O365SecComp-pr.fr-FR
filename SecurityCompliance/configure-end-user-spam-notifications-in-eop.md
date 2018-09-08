@@ -3,7 +3,6 @@ title: Configurer des notifications de courrier indésirable pour l’utilisateu
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 description: Vous pouvez configurer les notifications de courrier indésirable à l'utilisateur final pour la stratégie de filtrage de contenu par défaut à l'échelle de l'entreprise, ou pour les stratégies de filtrage de contenu personnalisées appliquées à des domaines.
-ms.openlocfilehash: 990fa31cc22b33d235d6e8f106511996a52212a2
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 3acb825a0b9e15c01c8b1c3266289c273b323d88
+ms.sourcegitcommit: 234a22c61859133ed5e7988a9551a569781518a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002923"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23875796"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>Configurer des notifications de courrier indésirable pour l’utilisateur final dans EOP
   
@@ -29,7 +28,19 @@ Vous pouvez configurer les notifications de courrier indésirable pour l’utili
   
 Les notifications de courrier indésirable à l’utilisateur final contiennent la liste de tous les messages de courrier indésirable mis en quarantaine reçus par l’utilisateur final au cours d’une période que vous configurez (vous pouvez spécifier une valeur comprise entre 1 et 15 jours). Vous pouvez également configurer la langue dans laquelle est écrit le message de notification.
   
-Une fois que les utilisateurs finaux ont reçu un message de notification, ils peuvent cliquer pour déplacer un message indésirable vers leur boîte de réception ou le signaler comme Légitime, auquel cas il sera envoyé à l'équipe d'analyse de courrier indésirable de Microsoft.
+Après avoir reçu un message de notification, les utilisateurs finaux peuvent choisir parmi les options suivantes :
+
+**Aperçu** du message si vous souhaitez afficher un aperçu de l’en-tête avant d’effectuer action ou le contenu.
+
+**Télécharger** le message que vous souhaitez passer en revue les messages et les pièces jointes (le cas échéant) sur votre appareil avant d’effectuer action.
+
+**Version** si le message n’est pas du courrier indésirable et que vous souhaitez qu’Office 365 pour envoyer le message vers votre boîte aux lettres.
+
+**Version & expéditeur autoriser** si le message n’est pas du courrier indésirable et que vous souhaitez qu’Office 365 pour ajouter l’expéditeur à votre expéditeurs fiables et la liste des destinataires pour les courriers électroniques futurs. N’oubliez pas que votre administrateur peut avoir autres configurations d’autoriser/bloquer large organisation qui remplacent votre liste des expéditeurs approuvés.
+
+**Version & rapport**, si le message n’est pas du courrier indésirable et que vous souhaitez envoyer le message vers votre boîte aux lettres et de signaler à Microsoft pour analyse.
+
+**Bloc** de si vous souhaitez que Office 365 pour ajouter l’expéditeur à votre liste des expéditeurs bloqués.
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
 <a name="sectionSection0"> </a>
