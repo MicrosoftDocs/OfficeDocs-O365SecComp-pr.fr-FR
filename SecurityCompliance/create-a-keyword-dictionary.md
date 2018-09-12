@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: c8a95d1b-c3b6-4613-98ab-0331d1872cf3
 description: Pour identifier des informations sensibles, vous devrez parfois rechercher des mots clés, notamment pour identifier du contenu générique (par exemple, des communications liées au secteur de la santé) ou du langage inapproprié ou explicite. Vous pouvez créer des listes de mots clés dans les types d’informations sensibles, mais la taille de ces listes de mots clés est limitée, et vous devez modifier le code XML pour créer ou modifier ces listes. Les dictionnaires de mots clés simplifient la gestion des mots clés et, à plus grande échelle, permettent la prise en charge de 100 000 termes par dictionnaire.
-ms.openlocfilehash: 3a6557e14a3dd8bdc9e803915ea460c1fbda704b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 5dd0459c801b433b8f0a477aeb2ab4192236bd28
+ms.sourcegitcommit: 4be502d1fc6cbaef4c72d599758d51efe3a173c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013988"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23849397"
 ---
 # <a name="create-a-keyword-dictionary"></a>Créer un dictionnaire de mots clés
 
@@ -29,7 +29,7 @@ La protection contre la perte de données (DLP) dans Office 365 permet d’iden
 
 Les mots clés de votre dictionnaire peuvent provenir de diverses sources, le plus souvent d’un fichier (par exemple, comme une liste .csv ou .txt), d’une liste à laquelle vous accédez directement dans la cmdlet ou d’un dictionnaire existant. Lorsque vous créez un dictionnaire de mots clés, vous suivez les mêmes étapes fondamentales :
   
-1. **Connexion au Centre de sécurité &amp; PowerShell** : consultez [cet article](https://go.microsoft.com/fwlink/p/?linkid=799771).
+1. **Connexion au Centre de sécurité &amp; PowerShell** : consultez [cet article](https://docs.microsoft.com/fr-FR/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
     
 2. **Définition ou chargement de vos mots clés à partir de la source prévue** : étant donné que la cmdlet permettant de créer un dictionnaire de mots clés accepte une liste de mots clés séparés par des virgules, cette étape varie légèrement en fonction de l’origine de vos mots clés. 
     
@@ -39,7 +39,7 @@ Les mots clés de votre dictionnaire peuvent provenir de diverses sources, le pl
     
 ## <a name="create-a-keyword-dictionary-from-a-file"></a>Création d’un dictionnaire de mots clés à partir d’un fichier
 
-Lorsque vous avez besoin de créer un dictionnaire volumineux, c’est souvent pour utiliser des mots clés d’un fichier ou d’une liste exportée à partir d’une autre source. Dans ce cas, créez un dictionnaire de mots clés contenant une liste de termes inappropriés à rechercher dans les e-mails externes. Vous devez d’abord vous [connecter au Centre de sécurité &amp; conformité PowerShell](https://go.microsoft.com/fwlink/p/?linkid=799771).
+Lorsque vous avez besoin de créer un dictionnaire volumineux, c’est souvent pour utiliser des mots clés d’un fichier ou d’une liste exportée à partir d’une autre source. Dans ce cas, créez un dictionnaire de mots clés contenant une liste de termes inappropriés à rechercher dans les e-mails externes. Vous devez d’abord vous [connecter au Centre de sécurité Office 365 &amp; conformité PowerShell](https://docs.microsoft.com/fr-FR/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
 1. Copiez les mots clés dans un fichier texte et assurez-vous que chaque mot clé est sur une ligne distincte.
     
