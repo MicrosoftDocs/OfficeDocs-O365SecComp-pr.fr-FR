@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 description: 'Pour éviter l’hameçonnage, Office 365 et Outlook.com requièrent maintenant pour la conformité RFC à partir de : adresses.'
-ms.openlocfilehash: 562e08aa54cb6544beccb6f0e8760735f67b834b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8425d4ef7635c2beddcd7915daf73736432d4ca9
+ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527542"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "23955426"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Comment Office 365 valide l’adresse de provenance pour empêcher l’hameçonnage
 
@@ -35,8 +35,6 @@ Microsoft démarrera présentant l’application des stratégies décrites dans 
 
 Office 365 est apporter des modifications à la façon dont il impose l’utilisation de la provenance : adresse dans les messages qu’il reçoit afin de mieux vous protéger contre les attaques par hameçonnage. Dans cet article :
   
-- [Tous les messages doivent inclure valide à partir de : adresse](how-office-365-validates-the-from-address.md#MustIncludeFromAddress)
-    
 - [Tous les messages doivent inclure valide à partir de : adresse](how-office-365-validates-the-from-address.md#MustIncludeFromAddress)
     
 - [Format du : adresse si vous n’incluez pas un nom d’affichage](how-office-365-validates-the-from-address.md#FormatNoDisplayName)

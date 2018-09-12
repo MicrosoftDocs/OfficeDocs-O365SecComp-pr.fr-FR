@@ -1,5 +1,5 @@
 ---
-title: Office 365 DAV Safe liens
+title: Liens fiables Office 365 ATP
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -19,14 +19,14 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La fonctionnalité de liens fiables offre-heure des clics de vérification des liens hypertexte dans les documents Office et dans les messages électroniques. Utilisez les liens sécurisés pour protéger votre organisation contre les attaques par hameçonnage et les autres attaques.
-ms.openlocfilehash: 2844be795eade9cfe29fbd50a5b3678680999171
-ms.sourcegitcommit: 5befdaad0f84112cb71a97fce1322579458d1622
+ms.openlocfilehash: b2aa83d7958e030170bcbdc4bfb5e27578bf8b81
+ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23867387"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "23955456"
 ---
-# <a name="office-365-atp-safe-links"></a>Office 365 DAV Safe liens
+# <a name="office-365-atp-safe-links"></a>Liens fiables Office 365 ATP
 
 Office 365 DAV fiables liens (liens fiables DAV) (ainsi que les [Pièces jointes sûres Office 365 DAV](atp-safe-attachments.md)) est un ensemble de fonctionnalités de sécurité offertes dans le cadre [d’Office 365 avancée protection contre les menaces](office-365-atp.md) pour les entreprises. Liens approuvés DAV permet de protéger votre organisation en fournissant-heure des clics de vérification des adresses web (URL) dans les messages électroniques et des documents Office. Protection est définie par le biais de [liens fiables DAV stratégies](set-up-atp-safe-links-policies.md) définies par votre équipe de sécurité d’Office 365. 
   
@@ -85,6 +85,8 @@ Nous poursuivons à ajouter de nouvelles fonctionnalités aux liens fiables DAV.
 - Au début de la liaison tardive 2017 octobre, protection liens fiables DAV est étendue pour appliquer aux URL dans un e-mail ainsi que les URL dans les documents Office 365 ProPlus, telles que Word, Excel, PowerPoint et Visio sur Windows, ainsi que Office applications sur les périphériques iOS ou Android. (Assurez-vous que vous utilisez [l’Authentification moderne pour Office](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)).
     
 - Au début de mars 2018, protection liens fiables DAV est étendue s’appliquent aux messages envoyés entre les personnes dans votre organisation.
+
+- À partir de juin 2018, personnes utilisent quand Outlook Web Application (OWA), liens fiables DAV affiche l’URL d’origine et pas afficher URL réécrites. Cela permet aux utilisateurs d’afficher les liens d’origine dans le message électronique. (Cette fonctionnalité n’est pas encore disponible pour les applications de client Outlook.)
     
 - À partir du deuxième semestre 2018, protection liens fiables DAV est étendue pour appliquer aux URL dans Office Online (Word en ligne, Online Excel, PowerPoint en ligne et OneNote en ligne) et Office 365 ProPlus sur Mac.
     
@@ -122,13 +124,13 @@ Le tableau suivant décrit quelques exemples de scénarios où protection liens 
    
 ## <a name="related-topics"></a>Voir aussi
 
-[Protection de Microsoft Office 365 menace avancées](office-365-atp.md)
+[Office 365 - Protection avancée contre les menaces](office-365-atp.md)
   
 [Définir des stratégies de liens fiables DAV dans Office 365](set-up-atp-safe-links-policies.md)
   
 [Pièces jointes DAV Safe dans Office 365](atp-safe-attachments.md)
   
-[Fonctionnalités anti-hameçonnage de DAV dans Office 365](atp-anti-phishing.md)
+[Fonctionnalités anti-hameçonnage ATP dans Office 365](atp-anti-phishing.md)
   
 [Afficher les rapports de protection contre les menaces avancées](view-reports-for-atp.md)
   

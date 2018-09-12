@@ -15,23 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 description: 'Si un utilisateur envoie en continu des messages électroniques classés comme courriers indésirables depuis Office 365, ses envois seront bloqués. '
-ms.openlocfilehash: ff5bb010f45b0c89e08239f0e37885bd7ae5c7cd
-ms.sourcegitcommit: 234a22c61859133ed5e7988a9551a569781518a4
+ms.openlocfilehash: 8dcd6c8f55d867e1c2e249ec71a3a5c6b78ac76a
+ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23875786"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "23955436"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>Suppression d’un utilisateur, d’un domaine ou d’une adresse IP d’une liste rouge après l’envoi de courrier indésirable
 
-Si un utilisateur envoie en continu des messages électroniques classés comme courriers indésirables depuis Office 365, ses envois seront bloqués.  
-  
+Si un utilisateur envoie des messages électroniques en continu d’Office 365 qui est considéré comme du courrier indésirable, ils seront bloquées d’envoyer plus de messages. L’utilisateur est répertorié dans le service en tant qu’incorrect sortant expéditeur et reçoit un rapport de remise (NDR ou Impossible d’envoyer des messages de courrier électronique) qui fournit des informations spécifiques sur les étapes qu’ils doivent suivre pour débloquer eux-mêmes.
 
-Lorsque les messages électroniques d’un expéditeur sont bloqués, ce dernier une notification d’échec de remise (impossible d’envoyer le message) qui fournit des informations spécifiques sur les étapes à suivre pour débloquer les messages.
-  
-Non seulement des utilisateurs individuels peuvent être bloquées par les domaines de service, mais les sites Web spécifiques, et adresses IP peuvent aussi être bloquées. Dans certains cas, des domaines ou des sites Web peuvent être ajoutés à une liste d’adresses bloquées seulement car ils apparaissent dans un message de courrier indésirable. En tant que l’administrateur Office 365, vous pouvez essayer d’obtenir des utilisateurs, sites Web, des domaines et supprimées à partir de listes d’interdiction tiers des adresses IP. Utilisez les liens de la table en bas de cette rubrique pour contacter chaque tiers, puis suivez les instructions. Si une personne extérieure à Office 365 ne peuvent pas envoyer des messages à votre compte Office 365, leur compte peut se trouver sur la liste des expéditeurs bloqués externe. Les utilisateurs en dehors d’Office 365 peuvent tenter de se supprimer de la liste des expéditeurs bloqués à l’aide du [portail libre-service de retrait de la liste](https://technet.microsoft.com/library/mt661881%28v=exchg.150%29.aspx).
-  
-Vous pouvez configurer des paramètres de courrier indésirable sortant afin de recevoir une notification lorsque les messages d’un utilisateur Office 365 sont classés comme courrier indésirable. Une fois que le problème lié à la boîte aux lettres de l’utilisateur est résolu, vous pouvez le retirer de la liste rouge.
+Vous pouvez configurer vos paramètres de stratégie de courrier indésirable sortant afin que vous recevez une notification lorsqu’un utilisateur d’Office 365 est bloqué à partir de l’envoi de courrier électronique. Après avoir résolu le problème de boîte aux lettres de l’utilisateur, vous pouvez supprimer le bloc de cet expéditeur.
   
 ## <a name="unblock-a-blocked-office-365-email-account"></a>Retirer un compte de messagerie Office 365 de la liste rouge
 
@@ -47,9 +42,11 @@ Vous effectuez cette tâche dans la sécurité pour Microsoft Office 365 & centr
 3. Cliquez sur **Oui** pour confirmer la modification. 
     
 > [!NOTE]
-> Il existe une limite au nombre de fois qu’un compte peut être non bloquée par l’administrateur du client. Si la limite d’un utilisateur a été dépassée, un message d’erreur s’affiche. Vous devrez contacter le Support pour débloquer l’utilisateur. 
+> Il existe une limite au nombre de fois qu’un compte peut être non bloquée par l’administrateur du client. Si la limite d’un utilisateur a été dépassée, un message d’erreur s’affiche. Vous devrez contacter le Support pour débloquer l’utilisateur.
   
 ## <a name="third-party-block-lists"></a>Listes rouges tierces
+
+Exchange Online Protection utilise également des listes rouges tiers pour aider à prendre des décisions de filtrage du courrier indésirable. Les utilisateurs, des sites Web, des domaines et des adresses IP peuvent être ajoutés pour bloquer des listes figurant dans un message de courrier indésirable pour. En tant que l’administrateur Office 365, vous devriez obtenir ces objets supprimés des fournisseurs de listes de tiers si elles vous appartient. Utilisez les liens dans le tableau contacter chaque tiers, puis suivez les instructions ci-dessous.
 
 |**Nom de la liste**|**Portail de retrait de la liste**|**Pour plus d'informations**|
 |:-----|:-----|:-----|
@@ -58,17 +55,18 @@ Vous effectuez cette tâche dans la sécurité pour Microsoft Office 365 & centr
 |Spamhaus   <br/> |[https://www.spamhaus.org/lookup/](https://www.spamhaus.org/lookup/) <br/> |[Présentation du filtrage DNSBL](https://www.spamhaus.org/whitepapers/dnsbl_function/) <br/> |
 |invaluement  <br/> |[http://dnsbl.invaluement.com/lookup/](http://dnsbl.invaluement.com/lookup/) <br/> |[liste de blocage du courrier indésirable de liste](http://dnsbl.invaluement.com/) <br/> |
 |Phishtank  <br/> |[https://www.phishtank.com/](https://www.phishtank.com/) <br/> |[PhishTank Forum aux questions](https://www.phishtank.com/faq.php) <br/> |
-   
+
 > [!NOTE]
-> Exchange Online Protection utilise également des listes rouges tiers pour le filtrage du courrier indésirable. 
-   
-## <a name="for-more-information"></a>Pour plus d'informations
+> Si une personne extérieure à Office 365 ne peuvent pas envoyer des messages à votre compte Office 365, leur compte peut se trouver sur la liste des expéditeurs bloqués externe. Les utilisateurs en dehors d’Office 365 peuvent tenter de se supprimer à l’aide du [portail libre-service de retrait de la liste](https://docs.microsoft.com/en-us/office365/SecurityCompliance/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis). 
+
+## <a name="for-more-information"></a>Pour plus d’informations
+
+[Répondre à un compte de messagerie compromis](responding-to-a-compromised-email-account.md)
 
 [Configurer la stratégie anti-courrier indésirable sortant](configure-the-outbound-spam-policy.md)
   
 [Pool de remise à risque élevé pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md)
 
-[Utilisation du portail Supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués Office 365](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)
   
 
   

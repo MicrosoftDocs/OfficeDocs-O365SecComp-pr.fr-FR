@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 description: Nouvel Office 365 Message Encryption fonctionnalités greffées sur la Protection des informations Azure, votre organisation peuvent utiliser protégé de communication par courrier électronique avec des personnes à l’intérieur et à l’extérieur de votre organisation. Les nouvelles fonctionnalités OME fonctionnent avec d’autres organisations Office 365, Outlook.com, Gmail et autres services de messagerie.
-ms.openlocfilehash: e59368f5854c86c04f4f0bdf376537d3f6b02d33
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c24b2f9b612b863217df8afd951424d1a89295c9
+ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528681"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "23955416"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>Configurer les nouvelles fonctionnalités de chiffrement de messages Office 365
 
@@ -25,7 +25,7 @@ Avec les nouvelles fonctionnalités d’Office 365 Message Encryption (OME), qui
   
 ## <a name="get-started-with-ome-by-activating-azure-rights-management-part-of-azure-information-protection"></a>Mise en route avec OME en activant Azure Rights Management, composant Azure de Protection des informations
 
-Il est désormais facile à prendre en main les nouvelles fonctionnalités d’OME. À compter de février 2018, Office 365 active automatiquement les nouvelles fonctionnalités OME pour les organisations éligibles dans nos centres de données. Votre organisation est éligible s’il est un nouveau client Office 365 et votre organisation a les abonnements appropriés. ** If ** ** vous avez activé Azure Rights Management Services (RMS Azure), partie Azure de Protection des informations, puis nous activer automatiquement Office 365 Message Encryption pour vous. ** Vous n’êtes pas obligé de faire quoi pour activer OME. Pour activer Azure Rights Management, consultez la rubrique [Activer Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service). Pour plus d’informations sur les abonnements, voir « les abonnements ai-je besoin pour utiliser le nouveau capabilities? OME » dans le [Forum aux questions sur le chiffrement de Message Office 365](ome-faq.md). Pour plus d’informations sur l’achat d’un abonnement Azure protection des informations, voir [La Protection des informations Azure](https://azure.microsoft.com/services/information-protection/).
+Il est désormais facile à prendre en main les nouvelles fonctionnalités d’OME. À compter de février 2018, Office 365 active automatiquement les nouvelles fonctionnalités OME pour les organisations éligibles dans nos centres de données. Votre organisation est éligible s’il est un nouveau client Office 365 et votre organisation a les abonnements appropriés. **Si vous avez activé Azure Rights Management Services (RMS Azure), partie Azure de Protection des informations, puis nous activer automatiquement Office 365 Message Encryption pour vous.** Vous n’êtes pas obligé de faire quoi pour activer OME. Pour activer Azure Rights Management, consultez la rubrique [Activer Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service). Pour plus d’informations sur les abonnements, voir « les abonnements ai-je besoin pour utiliser le nouveau capabilities? OME » dans le [Forum aux questions sur le chiffrement de Message Office 365](ome-faq.md). Pour plus d’informations sur l’achat d’un abonnement Azure protection des informations, voir [La Protection des informations Azure](https://azure.microsoft.com/services/information-protection/).
   
 Si vous utilisez Exchange Online avec Active Directory Rights Management Services AD RMS, vous ne pouvez pas activer ces nouvelles fonctionnalités immédiatement. Au lieu de cela, vous devez migrer à partir d’AD RMS pour la Protection des informations Azure tout d’abord. Lorsque vous avez terminé la migration, vous pouvez appliquer la procédure suivante.
   
@@ -62,22 +62,18 @@ Procédez comme suit pour vérifier que votre client est correctement configuré
     
 2. Exécutez l’applet de commande Test-IRMConfiguration à l’aide de la syntaxe suivante :
     
-  ```
-  Test-IRMConfiguration [-Sender <email address >]
-  ```
+    ```Test-IRMConfiguration [-Sender <email address >]```  
 
-    Par exemple :
+   Par exemple :
     
-  ```
-  Test-IRMConfiguration -Sender securityadmin@contoso.com
-  ```
+    ```Test-IRMConfiguration -Sender securityadmin@contoso.com```
 
     Où l’adresse est l’adresse de messagerie d’un utilisateur dans votre organisation Office 365. Facultatif, qui fournit une adresse de messagerie de l’expéditeur force le système à effectuer des contrôles supplémentaires.
     
     Vos résultats doivent se présenter comme celles-ci :
     
-  ```
-  Results : Acquiring RMS Templates ...
+    ```
+    Results : Acquiring RMS Templates ...
                 - PASS: RMS Templates acquired.  Templates available: Contoso  - Confidential View Only, Contoso  - Confidential, Do Not 
             Forward.
             Verifying encryption ...
@@ -88,7 +84,7 @@ Procédez comme suit pour vérifier que votre client est correctement configuré
                 - PASS: IRM verified successfully.
             
             OVERALL RESULT: PASS
-  ```
+    ```
 
     Où *Contoso* est remplacée par le nom de votre organisation Office 365. 
     
@@ -98,9 +94,7 @@ Procédez comme suit pour vérifier que votre client est correctement configuré
     
 3. Exécutez l’applet de commande Remove-PSSession pour déconnecter la session à partir du service de gestion des droits.
     
-  ```
-  Remove-PSSession $session
-  ```
+    ```Remove-PSSession $session```
 
 ## <a name="next-steps-define-new-mail-flow-rules-that-use-the-new-ome-capabilities"></a>Étapes suivantes : définir de nouvelles règles de flux de messagerie qui utilisent les nouvelles fonctionnalités OME
 <a name="Rules_1"> </a>
