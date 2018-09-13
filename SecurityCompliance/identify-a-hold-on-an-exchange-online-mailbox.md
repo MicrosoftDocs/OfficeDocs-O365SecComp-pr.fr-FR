@@ -1,5 +1,5 @@
 ---
-title: Comment faire pour identifier le type de suspension placé sur une boîte aux lettres Exchange Online
+title: Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,18 +11,19 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
-ms.openlocfilehash: d24e51bca0e3d290f110b1ab40f3ee9ae7993678
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Découvrez comment identifier les différents types d’attente qui peuvent être placées sur une boîte aux lettres Office 365. Ces types de suspensions incluent litige, suspensions eDiscovery et des stratégies de rétention Office 365. Vous pouvez également déterminer si un utilisateur a été exclu d’une stratégie de rétention de l’entreprise
+ms.openlocfilehash: 375bd86df370fe34fbe59f6581836da7e9d06515
+ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528368"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965261"
 ---
-# <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Comment faire pour identifier le type de suspension placé sur une boîte aux lettres Exchange Online
+# <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online
 
 Cet article explique comment identifier les suspensions placées sur les boîtes aux lettres Exchange Online dans Office 365.
 
-Office 365 offre plusieurs manières dont votre organisation peut empêcher le contenu de la boîte aux lettres d’être définitivement supprimé. Cela permet à votre organisation conserver le contenu pour répondre aux élèves en conformité ou pendant la durée du département juridique ou d’autres types d’enquêtes. Voici une liste des fonctionnalités de rétention (également appelées suspensions) dans Office 365 :
+Office 365 offre plusieurs manières dont votre organisation peut empêcher le contenu de la boîte aux lettres d’être définitivement supprimé. Cela permet à votre organisation conserver le contenu pour répondre aux élèves en conformité ou pendant la durée du département juridique ou d’autres types d’enquêtes. Voici une liste des fonctionnalités de rétention (également appelée *contient*) dans Office 365 :
 
 - **Litige** - suspensions appliquées aux boîtes aux lettres dans Exchange Online.
 
@@ -34,9 +35,11 @@ Office 365 offre plusieurs manières dont votre organisation peut empêcher le c
 
   Il existe deux types de stratégies de rétention Office 365 qui peuvent être affectés aux boîtes aux lettres.
 
-    - **Stratégies de rétention emplacement spécifique** : il s’agit de stratégies attribuées pour les emplacements de contenu d’utilisateurs spécifiques. L’applet de commande Get-Mailbox dans Exchange Online PowerShell vous permet d’obtenir des informations sur les stratégies de rétention affectés à des boîtes aux lettres spécifiques.
+    - **Stratégies de rétention emplacement spécifique** : il s’agit de stratégies attribuées pour les emplacements de contenu d’utilisateurs spécifiques. L’applet de commande **Get-Mailbox** dans Exchange Online PowerShell vous permet d’obtenir des informations sur les stratégies de rétention affectés à des boîtes aux lettres spécifiques.
 
-    - **Stratégies de rétention de l’entreprise** : il s’agit de stratégies qui sont affectés à tous les emplacements de contenu dans votre organisation. L’applet de commande Get-OrganizationConfig dans Exchange Online PowerShell vous permet d’obtenir des informations sur les stratégies de rétention de l’entreprise. Pour plus d’informations, voir la section « Application d’une stratégie de rétention à un ensemble de l’organisation ou des sites spécifiques » dans les stratégies de rétention de vue d’ensemble d’Office 365.
+    - **Stratégies de rétention de l’entreprise** : il s’agit de stratégies qui sont affectés à tous les emplacements de contenu dans votre organisation. L’applet de commande **Get-OrganizationConfig** dans Exchange Online PowerShell vous permet d’obtenir des informations sur les stratégies de rétention de l’entreprise. Pour plus d’informations, voir la section « Application d’une stratégie de rétention à un ensemble de l’organisation ou des sites spécifiques » dans [les stratégies de rétention de vue d’ensemble d’Office 365](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
+
+- **Étiquettes de office 365** - si un utilisateur s’applique une étiquette d’Office 365 (celui qui est configuré pour conserver le contenu ou conserver et puis supprimer le contenu) à *tout* dossier ou un élément dans leur boîte aux lettres, une suspension est placé sur la boîte aux lettres comme si la boîte aux lettres a été mis en cas de litige Blocage ou affectés à une stratégie de rétention d’Office 365. Pour plus d’informations, voir la section [identification boîtes aux lettres sur une suspension, car une étiquette a été appliquée à un dossier ou un élément](#identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item) dans cet article.
 
 Pour gérer les boîtes aux lettres en attente, vous devrez peut-être identifier le type de suspension est placé dans une boîte aux lettres afin que vous pouvez effectuer des tâches telles que la modification de la durée d’attente, titre temporaire ou permanent suppression de la suspension ou à l’exception d’une boîte aux lettres à partir d’une stratégie de rétention d’Office 365. Dans ce cas, la première étape consiste à identifier le type de suspension placé dans la boîte aux lettres. Et parce que plusieurs suspensions (et les différents types de suspensions) peuvent être placées sur une seule boîte aux lettres, vous devez identifier toutes les suspensions placées sur une boîte aux lettres si vous voulez supprimer ou modifier ces suspensions.
 
@@ -151,6 +154,48 @@ Exécutez la commande suivante dans PowerShell du centre de conformité et de s�
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
 ```
 
+## <a name="identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item"></a>Identifier les boîtes aux lettres sur stocker, car une étiquette a été appliquée à un dossier ou un élément
+
+Chaque fois qu’un utilisateur s’applique une étiquette qui est configurée pour conserver le contenu ou conserver et puis supprimer le contenu à un dossier ou un élément dans leur boîte aux lettres, la propriété de la boîte aux lettres *ComplianceTagHoldApplied* est définie sur **True**. Dans ce cas, la boîte aux lettres est considéré comme être mise en attente, comme s’il a été mis en attente pour litige ou affecté à une stratégie de rétention d’Office 365. Lorsque la propriété *ComplianceTagHoldApplied* est définie sur **True**, les éléments suivants peuvent se produire :
+
+- Si la boîte aux lettres ou le compte d’utilisateur de l’utilisateur Office 365 est supprimé, la boîte aux lettres devient une [boîte aux lettres inactive](inactive-mailboxes-in-office-365.md).
+- Vous ne pourrez pas désactiver la boîte aux lettres (la boîte aux lettres principale ou la boîte aux lettres archive, s’il est activé).
+- Éléments dans la boîte aux lettres peuvent être conservés plus longtemps que prévu. Il s’agit, car la boîte aux lettres est en attente et par conséquent aucun élément n’est définitivement supprimés (définitivement).
+
+Pour afficher la valeur de la propriété *ComplianceTagHoldApplied* , exécutez la commande suivante dans Exchange Online PowerShell :
+
+```
+Get-Mailbox <username> |FL ComplianceTagHoldApplied
+```
+
+Pour plus d’informations sur les étiquettes, voir [vue d’ensemble d’Office 365 étiquettes](labels.md).
+
+## <a name="managing-mailboxes-on-delay-hold"></a>La gestion des boîtes aux lettres sur le délai de blocage
+
+Une fois que n’importe quel type de suspension est supprimé d’une boîte aux lettres, la valeur de la propriété de la boîte aux lettres *DelayHoldApplied* est définie sur **True**. Est appelé un *délai de blocage* et signifie que la suppression effective de la suspension est différée pendant 30 jours empêcher les données d’être définitivement supprimés (définitivement) de la boîte aux lettres. Cela permet d’administrateurs permet de rechercher ou de récupérer des éléments de boîte aux lettres qui seront purgés une fois la suspension est réellement supprimée. Lorsque le délai est suspendu sur la boîte aux lettres, la boîte aux lettres est considérée en attente pour une durée illimitée, en tant que si la boîte aux lettres a été litige. Après 30 jours, la suspension de délai d’attente expire et Office 365 tente automatiquement de supprimer la suspension de délai d’attente (en définissant la propriété *DelayHoldApplied* sur **False**) afin que le blocage soit réellement supprimé. Après la propriété *DelayHoldApplied* sur **False**, les éléments qui sont marquées pour suppression seront purgés la prochaine fois que la boîte aux lettres est traitée par l’Assistant dossier géré.
+
+Pour afficher la valeur de la propriété *DelayHoldApplied* pour une boîte aux lettres, exécutez la commande suivante dans Exchange Online PowerShell.
+
+```
+Get-Mailbox <username> | FL DelayHoldApplied
+```
+
+Pour supprimer la suspension de délai d’attente avant son expiration, vous pouvez exécuter la commande suivante dans Exchange Online PowerShell : 
+ 
+```
+Set-Mailbox <username> -RemoveDelayHoldApplied
+```
+Notez que vous devez être affecté au rôle suspens pour raisons juridiques dans Exchange Online à utiliser le paramètre *RemoveDelayHoldApplied* 
+
+Pour supprimer la suspension de délai d’attente sur une boîte aux lettres inactive, exécutez la commande suivante dans Exchange Online PowerShell :
+
+```
+Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
+```
+
+> [!TIP]
+> La meilleure façon de spécifier une boîte aux lettres inactive dans la commande précédente consiste à utiliser sa valeur de nom unique ou le GUID de Exchange. À l’aide d’une de ces valeurs permet d’éviter que par inadvertance spécifiant la boîte aux lettres incorrect. 
+
 ## <a name="next-steps"></a>Étapes suivantes
 
 Après avoir identifié les suspensions appliquées à une boîte aux lettres, vous pouvez effectuer des tâches telles que la modification de la durée de la suspension, temporairement ou supprimer définitivement la suspension, ou dans le cas des stratégies de rétention Office 365, à l’exception d’une boîte aux lettres inactive à partir de la stratégie. Pour plus d’informations sur l’exécution de tâches relatives aux suspensions, voir l’une des rubriques suivantes :
@@ -163,4 +208,4 @@ Après avoir identifié les suspensions appliquées à une boîte aux lettres, v
 
 - [Supprimer une boîte aux lettres inactive dans Office 365](delete-an-inactive-mailbox.md)
 
-- [Supprimer des éléments dans le dossier éléments récupérables de nuage des boîtes aux lettres en attente](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
+- [Supprimer des éléments en attente dans le dossier Éléments récupérables des boîtes aux lettres basées sur le cloud](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
