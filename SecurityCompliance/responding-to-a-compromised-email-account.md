@@ -15,12 +15,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Découvrez comment reconnaître et répondre à un compte de messagerie compromis dans Office 365
-ms.openlocfilehash: 9a3dcc2d10c7487e525ae127674a830f9a921a60
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: bf3350da88804639356100fb5be2403c76cbcec6
+ms.sourcegitcommit: 17dda7ece5c9e884944a92ac0f842cf1e62ec506
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782181"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23977589"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Réponse à un compte de messagerie compromis dans Office 365
 
@@ -66,10 +66,13 @@ Vous devez effectuer toutes les étapes suivantes pour accéder à votre compte 
 
 1. Suivez le mot de passe réinitialiser un Office 365 entreprise d’une personne autres procédures dans [administrateurs : les mots de passe réinitialiser Office 365 entreprise](https://support.office.com/article/admins-reset-office-365-business-passwords-7a5d073b-7fae-4aa5-8f96-9ecd041aba9c)
 
-**Remarques :**
+**Remarques :**
 - Assurez-vous que le mot de passe est fort et qu’il contient des lettres majuscules et minuscules, au moins un chiffre et au moins un caractère spécial. 
 - Ne pas réutiliser votre cinq derniers mots de passe. Bien que l’exigence de l’historique du mot de passe vous permet de réutiliser un mot de passe plus récente, vous devez sélectionner quelque chose que l’intrus ne peuvent pas deviner.
 - Si votre identité locale est fédérée avec Office 365, vous devez modifier votre mot de passe local, puis vous devez en informer le compromis à votre administrateur.
+
+> [!TIP]
+> Il est vivement recommandé d’activer l’authentification multifacteur (MFA) afin d’empêcher les compromis, en particulier pour les comptes avec des privilèges d’administration.  Vous en apprendrez plus [ici](https://support.office.com/en-us/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Étape 2 Supprimez les adresses de transfert d’e-mail suspects
 1. Ouvrir le **Centre d’administration Office 365 > utilisateurs actifs**.
@@ -126,6 +129,6 @@ Votre abonnement Office 365 est fourni avec un ensemble de fonctionnalités de s
 
 ## <a name="see-also"></a>Voir aussi :
 - [Meilleures pratiques de sécurité pour Office 365](https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3)
-- [Détecter et résoudre les règles d’Outlook et les attaques Injections de formulaires personnalisés dans Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
+- [Détecter et résoudre les attaques par injections sur les règles d’Outlook et les formulaires personnalisés dans Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 - [Centre de réclamation délits Internet](http://www.ic3.gov/preventiontips.aspx)
 - [Securities and Exchange Commission - fraude « Phishing »](http://www.sec.gov/investor/pubs/phishing.htm)
