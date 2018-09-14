@@ -1,9 +1,9 @@
 ---
-title: Contrôle de vos données dans Office 365 à l’aide de la clé de client
+title: Contrôler vos données dans Office 365 à l'aide de la clé client
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 7/2/2018
+ms.date: 8/1/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: f2cd475a-e592-46cf-80a3-1bfb0fa17697
 description: Découvrez comment configurer la clé client pour Office 365 pour Exchange Online, Skype pour les entreprises, SharePoint Online et OneDrive for Business. Avec la clé client, vous contrôler les clés de chiffrement de votre organisation, puis configurez Office 365 pour les utiliser pour chiffrer vos données au repos dans les centres de données de Microsoft.
-ms.openlocfilehash: f8d7c12c32ca74b842f676f4a2ccde4d1c758361
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 3eeccd03b89aa5a79ceba536d3f13c7a881b6ca7
+ms.sourcegitcommit: ef0bb05a0cf7974ae5083c7551ce3fe4ab7a9544
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22559229"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965608"
 ---
-# <a name="controlling-your-data-in-office-365-using-customer-key"></a>Contrôle de vos données dans Office 365 à l’aide de la clé de client
+# <a name="controlling-your-data-in-office-365-using-customer-key"></a>Contrôler vos données dans Office 365 à l'aide de la clé client
 
 Avec la clé client, vous contrôler les clés de chiffrement de votre organisation, puis configurez Office 365 pour les utiliser pour chiffrer vos données au repos dans les centres de données de Microsoft. Données au repos comprennent des données à partir d’Exchange Online et Skype pour les entreprises qui est stocké dans les boîtes aux lettres et les fichiers qui sont stockés dans SharePoint Online et OneDrive for Business.
   
