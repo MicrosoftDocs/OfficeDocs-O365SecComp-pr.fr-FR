@@ -15,16 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 description: 'Si un utilisateur envoie en continu des messages électroniques classés comme courriers indésirables depuis Office 365, ses envois seront bloqués. '
-ms.openlocfilehash: 8dcd6c8f55d867e1c2e249ec71a3a5c6b78ac76a
-ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
+ms.openlocfilehash: 6665c405c62f75b77e7898419ebcfbc1c8c20f4c
+ms.sourcegitcommit: 7b85c22fc85ec19e4b44a07e91bfa9ade768185a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23955436"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "23998608"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>Suppression d’un utilisateur, d’un domaine ou d’une adresse IP d’une liste rouge après l’envoi de courrier indésirable
 
-Si un utilisateur envoie des messages électroniques en continu d’Office 365 qui est considéré comme du courrier indésirable, ils seront bloquées d’envoyer plus de messages. L’utilisateur est répertorié dans le service en tant qu’incorrect sortant expéditeur et reçoit un rapport de remise (NDR ou Impossible d’envoyer des messages de courrier électronique) qui fournit des informations spécifiques sur les étapes qu’ils doivent suivre pour débloquer eux-mêmes.
+Si un utilisateur envoie des messages électroniques en continu d’Office 365 qui est considéré comme du courrier indésirable, ils seront bloquées d’envoyer plus de messages. L’utilisateur est répertorié dans le service en tant qu’incorrect sortant expéditeur et reçoit un rapport de remise (NDR) indique :
+
+- Votre message n’a pas pu être remis car vous n’ont pas été reconnue comme un expéditeur valide. La raison la plus courante est que votre adresse de messagerie est soupçonné d’envoyer du courrier indésirable et qu’il a n’est plus autorisé à envoyer des messages à l’extérieur de votre organisation. Contactez votre administrateur de messagerie.  Serveur distant a retourné « 550 5.1.8 accès refusé, expéditeur sortant incorrecte »
 
 Vous pouvez configurer vos paramètres de stratégie de courrier indésirable sortant afin que vous recevez une notification lorsqu’un utilisateur d’Office 365 est bloqué à partir de l’envoi de courrier électronique. Après avoir résolu le problème de boîte aux lettres de l’utilisateur, vous pouvez supprimer le bloc de cet expéditeur.
   
