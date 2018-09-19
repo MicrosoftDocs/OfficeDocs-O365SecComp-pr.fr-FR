@@ -1,5 +1,5 @@
 ---
-title: Protection contre les menaces dans Office 365
+title: Se protéger contre les menaces dans Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: Découvrez comment Office 365 pour entreprises peuvent aider à protéger votre organisation contre une variété de menaces, y compris l’usurpation d’identité, logiciels malveillants, du courrier indésirable, les tentatives de hameçonnage et contre les accès aux données.
-ms.openlocfilehash: ac4ac5d9800402c587ed52cc03905414a60471f6
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4534e12280b5e627c2594c0365262a5c7c14a8c4
+ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527972"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24011266"
 ---
-# <a name="protect-against-threats-in-office-365"></a>Protection contre les menaces dans Office 365
+# <a name="protect-against-threats-in-office-365"></a>Se protéger contre les menaces dans Office 365
 
 Avec Office 365 pour entreprises, vous pouvez protéger votre organisation contre diverses menaces, y compris l’usurpation d’identité, logiciels malveillants, du courrier indésirable, les tentatives de hameçonnage et contre les accès aux données. Utilisez les ressources de cette page pour en savoir plus sur la protection contre les menaces et les actions à qu'entreprendre.
   
@@ -42,7 +42,7 @@ Découvrez Office 365 score de blocage du courrier indésirable, le filtrage des
     
 - [Activer la journalisation pour le courrier électronique](https://technet.microsoft.com/en-us/library/dn879651.aspx)
     
-- [Mise en quarantaine les messages électroniques dans Office 365](quarantine-email-messages.md)
+- [Mise en quarantaine des messages électroniques dans Office 365](quarantine-email-messages.md)
     
 - [Envoi d’un contenu suspect à Microsoft](https://technet.microsoft.com/en-us/library/dn762129%28v=exchg.150%29.aspx)
     
@@ -56,9 +56,9 @@ Configurer des stratégies pour gérer l’usurpation d’identité, protection 
     
 - [Configurer les stratégies anti-hameçonnage DAV](set-up-atp-anti-phishing-policies.md)
     
-- [Définir des stratégies de liens fiables DAV](set-up-atp-safe-links-policies.md)
+- [Configuration des stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md)
     
-- [Définir des stratégies de pièces jointes sûres DAV](set-up-atp-safe-attachments-policies.md)
+- [Configurer des stratégies de pièces jointes fiables ATP](set-up-atp-safe-attachments-policies.md) 
     
 ## <a name="encryption"></a>Chiffrement
 
@@ -66,7 +66,7 @@ Obtenir une vue d’ensemble de chiffrement, configurer les stratégies de gesti
   
 - [En savoir plus sur le chiffrement dans Office 365](encryption.md)
     
-- [Configurez le chiffrement dans Office 365 pour entreprises](set-up-encryption.md)
+- [Configurer le chiffrement dans Office 365 Entreprise](set-up-encryption.md)
     
 - [Chiffrement de messages Office 365 (OME)](ome.md)
     
@@ -78,7 +78,7 @@ Surveiller et contrôler l’accès de périphériques mobiles vos données Offi
   
 - [Créer et déployer des stratégies de sécurité des appareils](https://support.office.com/article/d310f556-8bfb-497b-9bd7-fe3c36ea2fd6)
     
-- [Gérer les autorisations d’application à l’aide de la sécurité d’application Office 365 dans le nuage](manage-app-permissions-in-ocas.md)
+- [Gérer les autorisations des applications à l’aide de la sécurité des applications cloud Office 365](manage-app-permissions-in-ocas.md)
     
 ## <a name="threat-intelligence"></a>Informations sur les menaces
 
@@ -86,8 +86,16 @@ Identifier, analyser et comprendre les attaques et menaces rapidement en utilisa
   
 - [Obtenir une vue d’ensemble des menaces Office 365](office-365-ti.md)
     
-- [Prendre en main menaces Office 365](get-started-with-ti.md)
+- [Prise en main d’Office 365 Threat Intelligence](get-started-with-ti.md)
     
+## <a name="privileged-access-management"></a>Gestion des accès privilégiés
+
+Aider à protéger votre organisation contre les violations qui peuvent utiliser des comptes d’administration privilégié existants avec accès permanent à des données sensibles ou l’accès aux paramètres de configuration critique. Après avoir activé la gestion de l’accès privilégié, les utilisateurs devront demander l’accès juste-à-temps pour effectuer des tâches avec des privilèges élevés et privilégiés via un flux de travail d’approbation qui est hautement et de temps.
+  
+- [Obtenir une vue d’ensemble des privilèges accéder à la gestion](privileged-access-management-overview.md)
+    
+- [Prendre en main privilégié accéder à la gestion](privileged-access-management-configuration.md)
+
 ## <a name="additional-options"></a>Options supplémentaires
 
 Obtenir plus d’informations sur les technologies Microsoft associées et les processus permettant de sécurité Office 365 contre les menaces.

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: page d’accueil pour la protection de l’accès aux services et données O365
-ms.openlocfilehash: 6ea617b1a7a7a34492689908d4816a851d58e776
-ms.sourcegitcommit: 0ce722533d72fa8dcc1d8a58d3c649cb345b938d
+ms.openlocfilehash: 652a14c5f1f29187aeac51355e7a924c9378806f
+ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/19/2018
-ms.locfileid: "24009100"
+ms.locfileid: "24011276"
 ---
 # <a name="protect-access-to-data-and-services-in-office-365"></a>Pour protéger l’accès aux données et aux services dans Office 365
 
@@ -58,7 +58,7 @@ Si vous utilisez Azure AD MFA, créez une règle d’accès conditionnel pour ex
 
 Un accès privilégié gestion permet de contrôle d’accès granulaire sur les tâches d’administration privilégié dans Office 365.  Il permet de protéger votre organisation contre les violations qui peuvent utiliser des comptes d’administration privilégié existants avec accès permanent à des données sensibles ou l’accès aux paramètres de configuration critique.
 
-- [Vue d’ensemble des privilèges accéder à la gestion](privileged-access-managment-overview.md)
+- [Vue d’ensemble des privilèges accéder à la gestion](privileged-access-management-overview.md)
 - [Configurer la gestion des accès privilégié](privileged-access-management-configuration.md)
 
 ## <a name="step-5-configure-sharepoint-device-access-policies"></a>Étape 5 : Configurez les stratégies d’accès de périphérique de SharePoint
