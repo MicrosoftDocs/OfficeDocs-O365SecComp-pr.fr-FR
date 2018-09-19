@@ -1,9 +1,8 @@
 ---
-title: Rétention des données, la suppression et Destruction dans Office 365
+title: Conservation, suppression et destruction de données dans Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -12,14 +11,14 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: Vue d’ensemble des stratégies de Microsoft pour Office 365 concernant la rétention des données, la suppression et destruction.
-ms.openlocfilehash: 4d952058df8d0efb664f23e5495796fdb9e006f2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: bb038f8bd8e3f0286ea7d673e5e286bdc4a9677d
+ms.sourcegitcommit: 1bccdaacf358505604c9cf422cb1e272aefae19d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527861"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "23999145"
 ---
-# <a name="data-retention-deletion-and-destruction-in-office-365"></a>Rétention des données, la suppression et Destruction dans Office 365
+# <a name="data-retention-deletion-and-destruction-in-office-365"></a>Conservation, suppression et destruction de données dans Office 365
 
 ## <a name="introduction"></a>Présentation
 Microsoft dispose d’une stratégie de gestion de données Standard pour Office 365 qui spécifie la durée de conservation des données client après avoir supprimé. En règle générale, dans Office 365, il existe deux scénarios dans lesquels les données de client sont supprimées :
@@ -32,7 +31,7 @@ Stratégie de gestion de données Standard de Microsoft pour Office 365 spécifi
 
 | Catégorie de données | Conserver au moins | Conserver au maximum |
 |---------------------------------------|:-----------------:|:-----------------:|:----------------------------------:|:-------------------------------:|
-| Données de contrôle d’accès | N/D | S/O |
+| Données de contrôle d’accès | N/D | N/D |
 | Contenu de client | 7 jours | 30 jours |
 | Informations d’identification personnelle utilisateur final | 90 jours | 180 jours |
 | Données de compte | 1 an | 3 ans |
@@ -68,8 +67,8 @@ Microsoft a également une stratégie Standard de gestion des données qui réso
 À tout moment pendant la durée d’un abonnement, un abonné peut contacter demande EF mise hors service par abonnement et Support de Microsoft. Dans ce processus, toutes les données utilisateur, y compris les données dans SharePoint Online, Exchange Online peut se trouver sous blocage ou stockés dans des boîtes aux lettres inactives, est supprimée de trois jours après l’administrateur entre le code de verrouillage fourni par Microsoft. Pour plus d’informations sur la mise hors service prioritaire, voir [Annuler Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a).
 
 ## <a name="related-links"></a>Liens connexes
-- [Suppression de données en ligne Exchange](/office365/enterprise/office-365-exchange-online-data-deletion)
-- [Suppression des données en ligne de SharePoint](/office365/enterprise/office-365-sharepoint-online-data-deletion)
-- [Skype pour la suppression des données métiers](/office365/enterprise/office-365-skype-data-deletion)
-- [Immuabilité dans Office 365](/office365/enterprise/office-365-data-immutability)
-- [Destruction des données](/office365/enterprise/office-365-data-destruction)
+- [Suppression de données Exchange Online](office-365-exchange-online-data-deletion.md)
+- [Suppression de données SharePoint Online](office-365-sharepoint-online-data-deletion.md)
+- [Suppression des données Skype Entreprise](office-365-skype-data-deletion.md)
+- [Immuabilité dans Office 365](office-365-data-immutability.md)
+- [Destruction de données](office-365-data-destruction.md)
