@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'En savoir plus sur les propriétés de fichier et de messagerie que vous pouvez rechercher dans les boîtes aux lettres Exchange Online et SharePoint ou OneDrive pour les sites d’entreprise à l’aide de l’outil de recherche de contenu de sécurité Office 365 &amp; centre de conformité.  '
-ms.openlocfilehash: 8501743d38425cb980088d65e1dd6bd0bd45cc08
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: a797a8d6dd616616c5dc8606c3e3043530e873c3
+ms.sourcegitcommit: 7675230c9cda25cbf7ad7d4cadf4372c03789cf6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782101"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24015355"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Requêtes par mots clés et conditions de recherche pour la recherche de contenu
 
-Cette rubrique décrit les propriétés de messagerie et des documents que vous pouvez rechercher dans les éléments de courrier électronique dans Exchange Online et les documents stockés sur SharePoint et OneDrive entreprise des sites à l’aide de la fonctionnalité de recherche de contenu de sécurité Office 365 &amp; la conformité Centre. Vous pouvez également utiliser le ** \*- ComplianceSearch** applets de commande de la sécurité &amp; PowerShell du centre de conformité pour rechercher ces propriétés. Il décrit également la rubrique : 
+Cette rubrique décrit les propriétés de messagerie et des documents que vous pouvez rechercher dans les éléments de courrier électronique dans Exchange Online et les documents stockés sur SharePoint et OneDrive entreprise des sites à l’aide de la fonctionnalité de recherche de contenu de sécurité Office 365 &amp; la conformité Centre. Vous pouvez également utiliser le ** \*- ComplianceSearch** applets de commande de la sécurité &amp; PowerShell du centre de conformité pour rechercher ces propriétés. Il décrit également la rubrique :   
   
 - À l’aide des opérateurs de recherche booléens, conditions de recherche et d’autres techniques de requête de recherche permettant d’affiner vos résultats de recherche.
     
