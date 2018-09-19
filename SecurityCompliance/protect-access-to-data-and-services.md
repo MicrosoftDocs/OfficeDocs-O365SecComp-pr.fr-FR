@@ -1,5 +1,5 @@
 ---
-title: Protéger l’accès aux données et services dans Office 365
+title: Pour protéger l’accès aux données et aux services dans Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: page d’accueil pour la protection de l’accès aux services et données O365
-ms.openlocfilehash: e6e2d8d3ba6482d4b80593bd9e09d49d6120af80
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 6ea617b1a7a7a34492689908d4816a851d58e776
+ms.sourcegitcommit: 0ce722533d72fa8dcc1d8a58d3c649cb345b938d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528362"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24009100"
 ---
-# <a name="protect-access-to-data-and-services-in-office-365"></a>Protéger l’accès aux données et services dans Office 365
+# <a name="protect-access-to-data-and-services-in-office-365"></a>Pour protéger l’accès aux données et aux services dans Office 365
 
 Protection de l’accès à vos données d’Office 365 et des services est essentielle pour la défense contre les attaques informatiques et de protection contre la perte de données. Les mêmes protections peuvent être appliquées à d’autres applications SaaS dans votre environnement et même à des applications sur site publié avec un Proxy d’Application Azure Active Directory.
   
@@ -54,13 +54,20 @@ Si vous utilisez Azure AD MFA, créez une règle d’accès conditionnel pour ex
   
 - [Accès conditionnel dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
     
-## <a name="step-4-configure-sharepoint-device-access-policies"></a>Étape 4 : Configurer des stratégies d’accès périphérique SharePoint
+## <a name="step-4-configure-privileged-access-management"></a>Étape 4 : Configurer la gestion des accès privilégié
+
+Un accès privilégié gestion permet de contrôle d’accès granulaire sur les tâches d’administration privilégié dans Office 365.  Il permet de protéger votre organisation contre les violations qui peuvent utiliser des comptes d’administration privilégié existants avec accès permanent à des données sensibles ou l’accès aux paramètres de configuration critique.
+
+- [Vue d’ensemble des privilèges accéder à la gestion](privileged-access-managment-overview.md)
+- [Configurer la gestion des accès privilégié](privileged-access-management-configuration.md)
+
+## <a name="step-5-configure-sharepoint-device-access-policies"></a>Étape 5 : Configurez les stratégies d’accès de périphérique de SharePoint
 
 Stratégies d’accès de périphérique pour SharePoint Online et OneDrive entreprise sont recommandés pour la protection des données sensibles, confidentielles et régulées. Bientôt disponible est la possibilité d’appliquer des stratégies d’accès de périphérique à des sites d’équipe.
   
 - [Contrôler l’accès depuis des appareils enregistrés](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&amp;rs=en-US&amp;ad=US)
     
-## <a name="step-5-configure-app-and-data-protection-for-devices"></a>Étape 5 : Configurer l’application et protection des données pour les périphériques
+## <a name="step-6-configure-app-and-data-protection-for-devices"></a>Étape 6 : Configurer l’application et protection des données pour les périphériques
 
 Vous pouvez gérer les applications sur les appareils mobiles indépendamment si les périphériques sont inscrits pour la gestion des appareils mobiles. Cela protège contre la perte accidentelle de données dans Office 365, notamment la messagerie et les fichiers.
   
@@ -72,13 +79,13 @@ Pour Windows 10, configurer la Protection des informations Windows (TEC) pour em
     
 - Pour les périphériques non gérés : [créer et déployer une stratégie de protection d’application Windows informations Protection travaux avec Intune](https://docs.microsoft.com/intune/windows-information-protection-policy-create)
     
-## <a name="step-6-manage-devices-with-intune"></a>Étape 6 : Gestion des périphériques avec Intune
+## <a name="step-7-manage-devices-with-intune"></a>Étape 7 : Gestion des périphériques avec Intune
 
 Gestion des appareils permettent de vous assurer qu’ils sont intègres et conformes avant de leur donner accès à des ressources dans votre environnement. Accès conditionnel règles garantir les pirates ne peuvent pas accéder à vos ressources à partir des périphériques non gérés en fonction de périphérique.
   
 - [Inscrire des périphériques pour la gestion de Intune](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
     
-## <a name="step-7-configure-additional-intune-policies-and-conditional-access-rules-for-your-environment"></a>Étape 7 : Configurer des stratégies Intune supplémentaires et les règles d’accès conditionnel pour votre environnement
+## <a name="step-8-configure-additional-intune-policies-and-conditional-access-rules-for-your-environment"></a>Étape 8 : Configurer des stratégies Intune supplémentaires et les règles d’accès conditionnel pour votre environnement
 
 Utilisez ces configurations recommandées comme point de départ pour l’échelle de l’entreprise ou les scénarios de sécurité d’accès complexe.
   
