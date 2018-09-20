@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilisez cette rubrique pour en savoir plus sur la configuration de gestion de l’accès privilégié dans Office 365
-ms.openlocfilehash: b2b6ab18687617c0da3425f4ee60cf81074f6f69
-ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
+ms.openlocfilehash: 6494505554a02f005df8f45839c9575094acbf1a
+ms.sourcegitcommit: d31904e81f81d0fba75309a2bc8bbfb05565a0b4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "24021399"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "24055249"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Configuration de la gestion accès privilégié dans Office 365
 
@@ -201,7 +201,7 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 ```
 
 ### <a name="approving-an-elevation-authorization-request"></a>L’approbation d’une demande d’autorisation de l’élévation
-Lors de la création d’une demande d’approbation, les membres du groupe pertinents approbateur reçoivent une notification par courrier électronique et peuvent approuver la requête associée à l’ID de demande.
+Lors de la création d’une demande d’approbation, les membres du groupe pertinents approbateur reçoivent une notification par courrier électronique et peuvent approuver la requête associée à l’ID de demande. Le demandeur sera averti de l’approbation de la demande ou de refus via le message électronique.
 
 #### <a name="using-the-microsoft-365-admin-center"></a>À l’aide du centre d’administration Microsoft 365
 
