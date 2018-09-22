@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Utilisez le Office 365 Security &amp; centre de conformité pour la recherche dans le journal d’audit unifiée pour afficher l’activité utilisateur et l’administrateur de votre organisation Office 365. '
-ms.openlocfilehash: 3fe8b4ade1b82cc76fcc300284127693b7e5fc07
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: dc673b8f52bacccfa746ad258ea91d8dd2074eeb
+ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527752"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "24962970"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Effectuer des recherches dans le journal d’audit dans le Centre de sécurité et de conformité Office 365
 
@@ -95,7 +95,7 @@ Veillez à lire le journal d’audit des éléments suivants avant de commencer 
 |Azure Active Directory (événements d’ouverture de session utilisateur)  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
 |Exchange Online  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |Microsoft Teams  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Power BI  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Power BI  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
 |Sécurité &amp; centre de conformité  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |Sharepoint Online et OneDrive Entreprise  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |Sway  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
@@ -108,7 +108,7 @@ Veillez à lire le journal d’audit des éléments suivants avant de commencer 
 - Enregistrement d’audit pour Power BI n’est pas activée par défaut. Pour rechercher des activités de Power BI dans le journal d’audit d’Office 365, vous devez activer l’audit dans le portail d’administration Power BI. Pour plus d’informations, voir [L’audit Power BI](https://docs.microsoft.com/power-bi/service-admin-auditing#enabling-auditing-functionality-in-the-power-bi-admin-portal).
     
     
-## <a name="search-the-audit-log"></a>Recherche dans le journal d’audit
+## <a name="search-the-audit-log"></a>Rechercher le journal d’audit
 
 Voici le processus de recherche dans le journal d’audit dans Office 365.
   
@@ -647,3 +647,60 @@ Voici quelques conseils pour la recherche d’activité dans le journal d’audi
     
 - Vous pouvez également afficher les événements dans le journal d’audit d’administration Exchange à l’aide du centre d’administration Exchange. Pour obtenir des instructions, consultez la rubrique [Afficher journal d’audit de l’administrateur](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx).
   
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+
+**Où puis-je trouver sur les fonctionnalités offertes par le service d’audit dans Office 365 ?**
+
+Pour plus d’informations sur les fonctionnalités d’audit et création de rapports disponibles dans Office 365, voir [l’audit et la création de rapports dans Office 365](office-365-auditing-and-reporting-overview.md). 
+
+**Quels sont les différents Services Office 365 actuellement audités ?**
+
+Services Office 365 plus utilisés comme Exchange Online, SharePoint, OneDrive, Azure Active Directory, Microsoft Teams, CRM, protection contre les menaces avancées et Data Loss Prevention audités. Voir la section [Introduction](#search-the-audit-log-in-the-office-365-security-amp-compliance-center) de cet article pour obtenir la liste complète.
+
+**Quelles activités sont contrôlées par l’audit service dans Office 365 ?**
+
+Consultez la section [activités contrôlé](#audited-activities) dans cet article pour obtenir une liste et une description des activités audités dans Office 365.
+
+**Combien de temps faut-il pour un enregistrement d’audit après un événement s’est produit ?**
+
+La plupart des données d’audit sont disponibles dans les 30 minutes, mais elle peut prendre jusqu'à 24 heures après qu’un événement se produit pour l’entrée du journal d’audit correspondant à afficher dans les résultats de recherche. Consultez le tableau dans la section [avant de commencer](#before-you-begin) de cet article qui indique le temps que nécessaire pour les événements dans les différents services Office 365 soit disponible.
+
+**Combien de temps sont les enregistrements d’audit conservés pour ?**
+
+Enregistrements du journal d’audit sont actuellement conservées pendant 90 jours. Microsoft travaille activement sur un plan pour augmenter la taille limite. 
+
+**Puis-je accéder par programme les données d’audit ?**
+
+Oui. L’API d’activité de gestion Office 365 est utilisé pour extraire les journaux d’audit par programme.  Pour commencer, consultez la rubrique [en route avec l’API de gestion d’Office 365](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis).
+
+**Existe-t-il d’autres façons d’obtenir l’audit des journaux qu’exploiteront la Office 365 Security & centre de conformité ou de l’API d’activité de gestion Office 365 ?**
+
+Non. Voici les uniquement deux façons d’obtenir des données à partir du service d’audit Office 365. 
+
+**Dois-je individuellement activer l’audit dans chaque service à capturer des journaux d’audit pour ?**
+
+Dans la plupart des services Office 365, l’audit est activé par défaut après l’activation à l’origine de l’audit pour votre organisation Office 365 (comme décrit dans la section [avant de commencer](#before-you-begin) dans cet article). Toutefois, vous devez activer la boîte aux lettres de l’audit dans Exchange Online pour chaque boîte aux lettres que vous souhaitez auditer.   Nous cherchons sur l’activation de l’audit des boîtes aux lettres par défaut pour toutes les boîtes aux lettres dans une organisation Office 365. Pour plus d’informations, voir « audit de boîte aux lettres Exchange sera activé par défaut » dans le [blog de sécurité de Microsoft, de confidentialité et de conformité](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Exchange-Mailbox-Auditing-will-be-enabled-by-default/ba-p/215171).
+
+**Supprime la prise en charge de service audit Office 365 les doublons d’enregistrements ?**
+
+Non. Le pipeline de service d’audit est quasiment en temps réel et par conséquent ne prennent en charge la déduplication.
+ 
+**Données d’audit Office 365 ne sont transmis dans le monde entier ?**
+
+Non. Nous disposons d’audit des déploiements de pipeline NA (Amérique du Nord), EMEA (Europe, Moyen-Orient et Afrique) et régions APAC (Asie-Pacifique). Toutefois, nous pouvons le débit entre ces régions pour l’équilibrage de charge et uniquement pendant les problèmes live. Lorsque nous effectuer ces activités, les données en transit sont chiffrées.   
+ 
+**Est l’audit des données chiffrées ?**
+
+Données d’audit sont stockée dans des boîtes aux lettres Exchange (données au repos) dans la même région dans lequel le pipeline de l’audit est déployé. Ces données ne sont pas chiffrées. Toutefois, les données en transit sont toujours chiffrées. 
+
+
+
+
+
+
+
+
+
+
+
+

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exporter les résultats de recherche à partir d’une recherche de contenu de sécurité Office 365 &amp; centre de conformité à un ordinateur local. Résultats de la messagerie Emaill sont exportées dans des fichiers PST. Contenu de SharePoint et OneDrive pour les sites sont exportées dans des documents Office natives. '
-ms.openlocfilehash: a1ea1daef438225b5e65d835efbcdecdb2178da8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 9b6db129371b234713b5504f5763ee1dc3d7d638
+ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528577"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "24962960"
 ---
 # <a name="export-content-search-results-from-the-office-365-security-amp-compliance-center"></a>Exporter les résultats de recherche de contenu à partir de la sécurité de 365 Office &amp; centre de conformité
 
@@ -182,7 +182,7 @@ Voici le plus d’informations sur l’exportation de résultats de recherche.
   
 [Exporter des rapports](export-search-results.md#export-reports)
   
-[L’exportation d’éléments non indexés](export-search-results.md#exporting-unindexed-items)
+[Exportation d’éléments indexés partiellement](#exporting-partially-indexed-items)
   
 [Exportation des messages ou des fichiers PST](export-search-results.md#Exporting-individual-messages-or-PST-files)
   
@@ -279,6 +279,8 @@ Voici le plus d’informations sur l’exportation de résultats de recherche.
     C - tous les éléments partiellement indexées à partir de tous les sites de la recherche sont exportés, quel que soit si un site contient des éléments qui correspondent aux critères de recherche.
     
     Si vous choisissez d’exporter les éléments indexés partiellement, des éléments de boîte aux lettres partiellement indexés sont exportées dans un fichier PST distinct quel que soit l’option que vous choisissez sous **Exchange exporter du contenu en tant que**.
+
+- Si des éléments indexés partiellement sont renvoyés dans la recherche de résultats (étant donné que les autres propriétés d’un élément partiellement indexé correspond aux critères de recherche), puis ces partiellement indexés sont exportés avec les résultats de recherche ordinaire. Par conséquent, si vous choisissez d’exporter les éléments indexés et éléments indexés partiellement (en sélectionnant l’option d’exportation **sont chiffrées, de tous les éléments, y compris celles qui ont un format non reconnu, ou n’ont pas été indexés pour toute autre raison** ), les éléments indexés partiellement exportés avec la reslts régulière seront consignées dans le rapport Results.csv. Ils ne seront pas figurer dans le rapport items.csv non indexés.
     
  ### <a name="exporting-individual-messages-or-pst-files"></a>Exportation des messages ou des fichiers PST
   
