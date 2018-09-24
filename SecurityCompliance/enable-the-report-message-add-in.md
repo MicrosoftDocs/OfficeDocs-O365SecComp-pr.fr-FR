@@ -1,5 +1,5 @@
 ---
-title: Activer le complément de Message de rapport
+title: Activer le complément Signaler le message
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 description: Découvrez comment activer le complément de Message de rapport pour Outlook et Outlook sur le web, pour des utilisateurs individuels ou la totalité de votre organisation.
-ms.openlocfilehash: 2260f8823132d23e0e1f57a421fd223ea3ab14bd
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: 68b70cdb138ad38216f188116e576a24304a3769
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23229996"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972266"
 ---
-# <a name="enable-the-report-message-add-in"></a>Activer le complément de Message de rapport
+# <a name="enable-the-report-message-add-in"></a>Activer le complément Signaler le message
 
 Le complément de Message de rapport pour Outlook permet aux utilisateurs de créer facilement des rapports e-mail mal classé, fiables ou malveillantes, Microsoft et ses filiales pour l’analyse. Microsoft utilise ces envois pour améliorer l’efficacité des technologies de protection de courrier électronique.
   
@@ -40,8 +40,8 @@ Si vous êtes un administrateur Exchange Online, vous pouvez activer le complém
     
 Une fois que le complément est installé et activé, vous verrez les icônes suivantes : 
 
-- Dans Outlook, l’icône ressemble à ceci : </br> ![Icône Message Add-in rapport pour Outlook](media/OutlookReportMessageIcon.png)</br>
-- Dans Outlook Web App, l’icône ressemble à ceci :</br>![Outlook sur l’icône Ajouter dans un Message de rapport Web](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)</br>
+- Dans Outlook, l’icône ressemble à ceci : <br/> ![Icône Message Add-in rapport pour Outlook](media/OutlookReportMessageIcon.png)<br/>
+- Dans Outlook Web App, l’icône ressemble à ceci :<br/>![Outlook sur l’icône Ajouter dans un Message de rapport Web](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
 
   
 Étape suivante, découvrez comment [utiliser le complément de Message de rapport](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
@@ -131,6 +131,6 @@ Vous pouvez configurer une règle pour obtenir une copie des messages électroni
 
 [Utiliser le complément de Message de rapport](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
   
-[Protection de Microsoft Office 365 menace avancées](office-365-atp.md)
+[Office 365 - Protection avancée contre les menaces](office-365-atp.md)
   
 

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 description: Découvrez comment activer DAV pour SharePoint, OneDrive et les équipes, notamment comment définir des alertes pour les fichiers détectés.
-ms.openlocfilehash: c29ed850257e04ba9b88745157f33a6e16948c2f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: bb99aee0887f15f065a47d691c59ce47639bdc32
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528641"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972236"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Activer Office 365 DAV pour SharePoint, OneDrive et les équipes de Microsoft
 
@@ -27,7 +27,7 @@ ms.locfileid: "22528641"
 > [!TIP]
 > Afin d’effectuer les tâches décrites dans cet article, vous devez disposer des autorisations nécessaires affectées dans Office 365 et de la sécurité &amp; centre de conformité.
   
-## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Activer DAV pour SharePoint, OneDrive et les équipes de Microsoft
+## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Activer ATP pour SharePoint, OneDrive et Microsoft Teams
 
  **Avant de commencer cette procédure, assurez-vous que l’enregistrement d’audit est déjà activé pour votre environnement Office 365**. Cela s’effectue généralement par toute personne ayant le rôle journaux d’Audit affecté dans Exchange Online. Pour plus d’informations, voir [recherche des journaux d’audit d’activer Office 365 activé ou désactivé](turn-audit-log-search-on-or-off.md).
   
@@ -45,7 +45,7 @@ ms.locfileid: "22528641"
     
 5. Passez en revue (et, selon le cas, modifier) [des stratégies de pièces jointes fiables](set-up-atp-safe-attachments-policies.md) et des [stratégies de liens fiables](set-up-atp-safe-links-policies.md)de votre organisation.
     
-6. (Recommandé) En tant qu’administrateur global ou un administrateur SharePoint Online, exécutez l’applet de commande **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** avec le paramètre **DisallowInfectedFileDownload** la valeur *true* . </br></br>Le paramètre *true* blocs toutes les actions (à l’exception de la suppression) pour les fichiers détectés. Personnes ne peut pas ouvrir, déplacer, copier ou partager des fichiers détectés.</br></br>Définition du paramètre sur *false* bloque toutes les actions à l’exception de suppression et le téléchargement. Personnes peuvent choisir d’accepter le risque et télécharger un fichier détecté.</br></br>Nous vous recommandons de définir le paramètre sur *true*. 
+6. (Recommandé) En tant qu’administrateur global ou un administrateur SharePoint Online, exécutez l’applet de commande **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** avec le paramètre **DisallowInfectedFileDownload** la valeur *true* . <br/><br/>Le paramètre *true* blocs toutes les actions (à l’exception de la suppression) pour les fichiers détectés. Personnes ne peut pas ouvrir, déplacer, copier ou partager des fichiers détectés.<br/><br/>Définition du paramètre sur *false* bloque toutes les actions à l’exception de suppression et le téléchargement. Personnes peuvent choisir d’accepter le risque et télécharger un fichier détecté.<br/><br/>Nous vous recommandons de définir le paramètre sur *true*. 
    
 7. Autoriser jusqu'à 30 minutes pour que vos modifications à répartir pour tous les centres de données Office 365.
     
@@ -87,7 +87,7 @@ Pour recevoir une notification lorsqu’un fichier dans SharePoint Online, OneDr
     
 ## <a name="related-topics"></a>Voir aussi
 
-[Protection de Microsoft Office 365 menace avancées](office-365-atp.md)
+[Office 365 - Protection avancée contre les menaces](office-365-atp.md)
   
 [Afficher les rapports pour Office 365 avancée protection contre les menaces](view-reports-for-atp.md)
   

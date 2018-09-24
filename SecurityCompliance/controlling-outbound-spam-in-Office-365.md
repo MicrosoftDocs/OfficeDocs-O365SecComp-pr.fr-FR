@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 description: Si votre organisation envoie un grand nombre de courrier en nombre qui a été marqué comme courrier indésirable, vous pourriez être bloqué à partir de l’envoi de courrier électronique avec Office 365. Lisez cet article pour en savoir plus sur ce comportement et ce que vous pouvez faire parler.
-ms.openlocfilehash: c5baf12b9b54e46e3863e33172cfb7339227e309
-ms.sourcegitcommit: 122646e570bb13e93d4fdc5090bdd25ed65d1997
+ms.openlocfilehash: 947ea4ed7a37b2ba1c5332aa07582fa4c4949eb0
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "23998973"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972246"
 ---
 # <a name="controlling-outbound-spam-in-office-365"></a>Contrôle du courrier indésirable sortant dans Office 365
 
@@ -32,11 +32,11 @@ Nous prenons la gestion du courrier indésirable sortant sérieusement, car nous
 
 ## <a name="what-eop-does-to-control-outbound-spam"></a>Ce que fait EOP pour contrôler le courrier indésirable sortant 
 
-1. **Séparation du trafic sortant dans des pools distincts d’adresses IP**. Chaque message clients envoient sortants via le service est analysé pour le courrier indésirable. Si le message est le courrier indésirable, il est acheminé via le pool de remise de risque élevé. Ce pool IP contient le courrier indésirable et les notifications d’état non remis. Remise au destinataire n’est pas garanti que nombreux tiers n’accepte pas courrier électronique, car la qualité des courriers électroniques, il émet.</br></br>Fractionnement du trafic de cette manière garantit que l’e-mail qualité inférieure (spam, rapports de non-remise RÉTRODIFFUSION) ne pas glisser vers le bas la réputation des pools régulièrement du courrier sortant. Le risque élevé du pool est généralement réputation faible à plusieurs destinataires autour d’Internet, bien que cela ne soit pas universel. 
+1. **Séparation du trafic sortant dans des pools distincts d’adresses IP**. Chaque message clients envoient sortants via le service est analysé pour le courrier indésirable. Si le message est le courrier indésirable, il est acheminé via le pool de remise de risque élevé. Ce pool IP contient le courrier indésirable et les notifications d’état non remis. Remise au destinataire n’est pas garanti que nombreux tiers n’accepte pas courrier électronique, car la qualité des courriers électroniques, il émet.<br/><br/>Fractionnement du trafic de cette manière garantit que l’e-mail qualité inférieure (spam, rapports de non-remise RÉTRODIFFUSION) ne pas glisser vers le bas la réputation des pools régulièrement du courrier sortant. Le risque élevé du pool est généralement réputation faible à plusieurs destinataires autour d’Internet, bien que cela ne soit pas universel. 
 
 2. **Réputation d’IP de surveillance**. Office 365 interroge différentes noires d’IP tiers 3e et génère des alertes si un des nos IP sortant sont répertorié dans les. Cela nous permet de réagir rapidement lorsque le courrier indésirable a provoqué notre réputation à se dégrader. Lorsqu’une alerte est générée, nous avons documentation interne excentrée les étapes à suivre pour obtenir delisted. 
 
-3. **Désactivation de comptes incriminées lorsqu’ils envoient trop courrier marqué comme courrier indésirable**. Même si nous séparer notre du courrier indésirable et les légitimes dans deux pools distincts d’IP sortants, les comptes de messagerie ne peuvent pas envoyer du courrier indésirable indéfiniment. Nous surveiller dont les comptes sont l’envoi du courrier indésirable et s’il dépasse une limite divulguer, le compte est bloqué à partir de l’envoi du courrier indésirable.</br></br>Un seul message marqué comme courrier indésirable peut être une erreur de classement par le moteur de courrier indésirable et également appelé un faux positif. Nous envoyer via le pool risque élevé à l’occasion de sortir ; Toutefois, un grand nombre de messages dans un court délai est indicatif d’un problème et qui se produit, nous bloquer le compte d’envoyer les messages plus. Il existe différents seuils qui existent pour les comptes de messagerie individuelles ainsi comme agrégat pour le client entière.
+3. **Désactivation de comptes incriminées lorsqu’ils envoient trop courrier marqué comme courrier indésirable**. Même si nous séparer notre du courrier indésirable et les légitimes dans deux pools distincts d’IP sortants, les comptes de messagerie ne peuvent pas envoyer du courrier indésirable indéfiniment. Nous surveiller dont les comptes sont l’envoi du courrier indésirable et s’il dépasse une limite divulguer, le compte est bloqué à partir de l’envoi du courrier indésirable.<br/><br/>Un seul message marqué comme courrier indésirable peut être une erreur de classement par le moteur de courrier indésirable et également appelé un faux positif. Nous envoyer via le pool risque élevé à l’occasion de sortir ; Toutefois, un grand nombre de messages dans un court délai est indicatif d’un problème et qui se produit, nous bloquer le compte d’envoyer les messages plus. Il existe différents seuils qui existent pour les comptes de messagerie individuelles ainsi comme agrégat pour le client entière.
 
 4. **Désactivation de comptes incriminées lorsqu’ils envoient trop courrier dans trop court un laps de temps**. Outre les limites ci-dessus recherchent une proportion des messages marqués comme courrier indésirable, il existe des limites qui bloquent les comptes lorsqu’ils atteignent une limite globale, quel que soit ou non les messages sont marqués comme courrier indésirable. La raison pour laquelle qu'il existe cette limite est, car un compte compromis peut envoyer du courrier indésirable zéro jour qui n’est pas respectée par le filtre de courrier indésirable. Car il est difficile, voire impossible, parfois indiquer la différence entre une campagne de publipostage légitime et une campagne de spam massive, ces limites activer pour limiter les dommages potentiels.
 

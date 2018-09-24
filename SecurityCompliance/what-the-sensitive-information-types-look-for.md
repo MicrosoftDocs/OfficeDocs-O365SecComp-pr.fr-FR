@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: Strat_O365_IP
 ms.assetid: fd505979-76be-4d9f-b459-abef3fc9e86b
 description: Prévention des pertes de données (DLP) de sécurité Office 365 &amp; centre de conformité inclut 80 types d’informations sensibles qui sont prêts à utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d’informations sensibles et illustre une stratégie DLP lorsqu’il détecte chaque type.
-ms.openlocfilehash: 064606085363ba9de972511642993277451c8ce3
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 2e59b322730ca7fa828a685ed3a80c48ebdbbfd8
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528476"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972356"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Éléments recherchés par les types d’informations sensibles
 
@@ -3050,7 +3050,7 @@ Sosiaaliturvatunnus
 - Personbeteckning
 - Personnummer
    
-## <a name="finland-passport-number"></a>Numéro de passeport Finlande
+## <a name="finland-passport-number"></a>Numéro de passeport finlandais
 
 Combinaison de lettres et de chiffres motif combinaison de lettres et chiffres de neuf neuf de format : stratégie de somme de contrôle non définition A DLP deux lettres (non sensible à la casse) sept chiffres est 75 % convaincu que ce type d’informations sensibles a été détecté si, dans un proximité de 300 caractères : l’expression régulière Regex_finland_passport_number recherche de contenu qui correspond au modèle. Un mot clé à partir de Keyword_finland_passport_number est trouvé. <!-- Finland Passport Number --> 
  <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern> 
@@ -3225,7 +3225,7 @@ Passeportn °
 ### <a name="pattern"></a>Modèle
 
 Doit correspondre à l’un des deux modèles suivants :
-- 13 chiffres suivis d’un espace suivi de deux chiffres</br>
+- 13 chiffres suivis d’un espace suivi de deux chiffres<br/>
 ou
 - 15 chiffres consécutifs
 
@@ -4018,7 +4018,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
       </Entity>
 ```
 
-Keywords
+Mots-clés
 
 Les termes à partir du dictionnaire de mot clé Dictionary_icd_10_cm, qui repose sur [International Classification de maux, révision dixième, Modification cliniques (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). Ce type de recherche uniquement le terme, pas les codes d’assurance.
 
@@ -4050,7 +4050,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 Les termes à partir du dictionnaire de mot clé Dictionary_icd_9_cm, qui repose sur [International Classification de maux, révision neuvième, Modification cliniques (ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605). Ce type de recherche uniquement le terme, pas les codes d’assurance.
    
@@ -5036,7 +5036,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
  
 
    
-## <a name="portugal-citizen-card-number"></a>Numéro de carte de citoyen Portugal
+## <a name="portugal-citizen-card-number"></a>Numéro de carte de citoyen portugais
 
 ### <a name="format"></a>Format
 

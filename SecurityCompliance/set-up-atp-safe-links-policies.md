@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Définir des stratégies de liens fiables pour protéger votre organisation contre les liens malveillants dans les fichiers Word, Excel, PowerPoint et Visio, ainsi que dans les messages électroniques.
-ms.openlocfilehash: 01ba394053e2da137d5adafa4799040507ab4270
-ms.sourcegitcommit: f8cc2c7bad31d04c99a8eca5e0f8fad72494087a
+ms.openlocfilehash: f1b5ca193043c5fffdcf5e2dee21a08f388fdcdf
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23848084"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972306"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Définir des stratégies Office 365 DAV fiables liens
 
@@ -118,7 +118,7 @@ Comme vous configurez ou modifiez une stratégie de liens fiables DAV, verront p
 |**Pour cette stratégie.**|**Cette option**|**Effectue cette action**|
 |:-----|:-----|:-----|
 |Par défaut (une fois définies, la stratégie par défaut s’applique à tout le monde dans l’organisation)  <br/> |**Bloquer les URL suivantes** <br/> |Permet à votre organisation d’avoir une liste personnalisée d’URL qui sont bloqués automatiquement. Lorsque les utilisateurs cliquent sur une URL dans cette liste, il est dirigé vers une [page d’avertissement](atp-safe-links-warning-pages.md) qui explique pourquoi l’URL est bloquée.<br/> Pour plus de détails, tels que de la prise en charge ajoutée pour trois astérisques générique, consultez [configurer une liste d’URL bloquée personnalisée à l’aide de liens fiables DAV](set-up-a-custom-blocked-urls-list-wtih-atp.md) (\*).  <br/> |
-|Par défaut  <br/> |**Office 365 ProPlus, Office pour iOS et Android** <br/> |Lorsque cette option est sélectionnée, les liens sécurisés DAV protection est appliquée aux URL dans les documents qui sont ouvrir dans Office 365 ProPlus (Word, Excel et PowerPoint sous Windows ou Mac OS), des documents Office sur iOS ou Android appareils, 2016 Visio sur Windows et Office Online (Word En ligne, PowerPoint Online, Excel Online et OneNote en ligne), fournies à que l’utilisateur s’est connecté à Office 365. </br></br>Si vous voyez uniquement **2016 Office sur Windows**, puis les mises à jour de la fonctionnalité ne parviennent pas à encore votre environnement Office 365 (et ils sont bientôt disponible). En attendant, protection liens fiables DAV s’applique à Word 2016, 2016 Excel, PowerPoint 2016 ou 2016 Visio en cours d’exécution sur Windows.           |
+|Par défaut  <br/> |**Office 365 ProPlus, Office pour iOS et Android** <br/> |Lorsque cette option est sélectionnée, les liens sécurisés DAV protection est appliquée aux URL dans les documents qui sont ouvrir dans Office 365 ProPlus (Word, Excel et PowerPoint sous Windows ou Mac OS), des documents Office sur iOS ou Android appareils, 2016 Visio sur Windows et Office Online (Word En ligne, PowerPoint Online, Excel Online et OneNote en ligne), fournies à que l’utilisateur s’est connecté à Office 365. <br/><br/>Si vous voyez uniquement **2016 Office sur Windows**, puis les mises à jour de la fonctionnalité ne parviennent pas à encore votre environnement Office 365 (et ils sont bientôt disponible). En attendant, protection liens fiables DAV s’applique à Word 2016, 2016 Excel, PowerPoint 2016 ou 2016 Visio en cours d’exécution sur Windows.           |
 |Par défaut  <br/> |**Ne suivez pas lorsque les utilisateurs cliquent sur les liens sécurisés DAV** <br/> |Lorsque cette option est sélectionnée, cliquez sur données pour l’URL dans les documents Word, Excel, PowerPoint et Visio n’est pas stocké.  <br/> |
 |Par défaut  <br/> |**Ne laissez pas vos utilisateurs cliquez sur par le biais de DAV fiables des liens vers des URL d’origine** <br/> |Lorsque cette option est sélectionnée, les utilisateurs ne peut pas continuer au-delà d’une [page d’avertissement](atp-safe-links-warning-pages.md) à une URL qui est définie comme étant malveillants.  <br/> |
 |Une stratégie créée pour les destinataires de messages électroniques spécifique  <br/> |**Off** <br/> |N’analyse pas les URL dans les messages électroniques.  <br/> Vous permet de définir une règle d’exception, par exemple une règle qui n’analyse pas les URL dans les messages électroniques pour un groupe spécifique de destinataires.  <br/> |
@@ -131,7 +131,7 @@ Comme vous configurez ou modifiez une stratégie de liens fiables DAV, verront p
    
 ## <a name="related-topics"></a>Voir aussi
 
-[Protection de Microsoft Office 365 menace avancées](office-365-atp.md)
+[Office 365 - Protection avancée contre les menaces](office-365-atp.md)
   
 [Liens DAV Safe dans Office 365](atp-safe-links.md)
   

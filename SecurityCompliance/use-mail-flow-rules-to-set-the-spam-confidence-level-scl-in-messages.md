@@ -1,5 +1,5 @@
 ---
-title: Use mail flow rules to set the spam confidence level (SCL) in messages
+title: Utilisation des règles de flux de courrier pour définir le seuil de probabilité de courrier indésirable (SCL) dans les messages
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 description: Vous pouvez créer une règle de transport qui définit le seuil de probabilité de courrier indésirable (SCL) d'un message électronique. Le SCL mesure la probabilité qu'un message soit un courrier indésirable. Le courrier indésirable représente les messages électroniques non sollicités (et généralement indésirables). Le service prend différentes mesures en ce qui concerne le message en fonction de la notation SCL. Par exemple, vous pouvez contourner le filtrage de contenu de courrier indésirable pour les messages envoyés par des membres de votre organisation, car vous pensez qu'un message envoyé en interne par un collègue n'est pas un courrier indésirable. L'utilisation des règles de transport pour définir la valeur SCL d'un message vous offre un contrôle accru en matière de gestion du courrier indésirable.
-ms.openlocfilehash: 7abd0d1881374b1f2a4bd32ee480445f7683d1b3
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 97b9a62e76efea134af5bb1bb7bd25a98bb466d2
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002893"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972276"
 ---
-# <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Use mail flow rules to set the spam confidence level (SCL) in messages
+# <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Utilisation des règles de flux de courrier pour définir le seuil de probabilité de courrier indésirable (SCL) dans les messages
 
 Vous pouvez créer une règle de transport qui définit le seuil de probabilité de courrier indésirable (SCL) d'un message électronique. Le SCL mesure la probabilité qu'un message soit un courrier indésirable. Le courrier indésirable représente les messages électroniques non sollicités (et généralement indésirables). Le service prend différentes mesures en ce qui concerne le message en fonction de la notation SCL. Par exemple, vous pouvez contourner le filtrage de contenu de courrier indésirable pour les messages envoyés par des membres de votre organisation, car vous pensez qu'un message envoyé en interne par un collègue n'est pas un courrier indésirable. L'utilisation des règles de transport pour définir la valeur SCL d'un message vous offre un contrôle accru en matière de gestion du courrier indésirable. 
   
@@ -42,7 +42,7 @@ Vous pouvez créer une règle de transport qui définit le seuil de probabilité
     
 4. Choisissez **Plus d'options** et, sous **Appliquer cette règle si**, indiquez une condition qui déclenchera l'action que vous allez définir pour cette règle (c'est-à-dire la valeur SCL).
     
-    Par exemple, vous pouvez définir **L'expéditeur** \> **est interne/externe** et, dans la boîte de dialogue **Sélectionner l'emplacement de l'expéditeur**, choisir **À l'intérieur de l'organisation**, puis cliquer sur **OK**.</br>
+    Par exemple, vous pouvez définir **L'expéditeur** \> **est interne/externe** et, dans la boîte de dialogue **Sélectionner l'emplacement de l'expéditeur**, choisir **À l'intérieur de l'organisation**, puis cliquer sur **OK**.<br/>
     ![Sélectionner l'emplacement de l'expéditeur](media/EOP-ETR-SetSCL-1.jpg)
   
 5. Sous **Effectuer les opérations suivantes**, sélectionnez **Modifier les propriétés des messages** \> **Définir le seuil de probabilité de courrier indésirable (SCL)**.

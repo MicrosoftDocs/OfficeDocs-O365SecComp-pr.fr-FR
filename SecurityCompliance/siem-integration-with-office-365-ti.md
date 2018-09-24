@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb56b69b-3170-4086-82cf-ba40a530fa1b
 description: Intégrer le serveur de votre organisation SIEM avec Office 365 menaces et contre les menaces avancées avec l’API de gestion Office 365 activité.
-ms.openlocfilehash: 40c84b9d7b7ec4c9b15383e3ffbbabf839294def
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: 057d8ac101b96f37846ac751645934279d45dc88
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782141"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972256"
 ---
 # <a name="siem-integration-with-office-365-threat-intelligence-and-advanced-threat-protection"></a>Intégration SIEM avec Office 365 menaces et de protection contre les menaces avancées
 
@@ -28,13 +28,13 @@ L’API de gestion Office 365 activité récupère des informations sur l’util
 Le serveur SIEM ou un autre système similaire doit interroger la charge de travail **audit.general** aux événements de détection d’accès. Pour en savoir plus, voir [mise en route des API de gestion Office 365](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis). 
 
 > [!IMPORTANT]
-> Vous devez être un administrateur global d’Office 365 ou avoir le rôle d’administrateur de sécurité affecté dans le centre de conformité & de sécurité à configurer l’intégration SIEM avec Office 365 menaces et de protection contre les menaces avancées.</br>Enregistrement d’audit doit être activée pour votre environnement Office 365. Pour obtenir l’aide à ce sujet, voir [recherche des journaux d’audit d’activer Office 365 activé ou désactivé](turn-audit-log-search-on-or-off.md).
+> Vous devez être un administrateur global d’Office 365 ou avoir le rôle d’administrateur de sécurité affecté dans le centre de conformité & de sécurité à configurer l’intégration SIEM avec Office 365 menaces et de protection contre les menaces avancées.<br/>Enregistrement d’audit doit être activée pour votre environnement Office 365. Pour obtenir l’aide à ce sujet, voir [recherche des journaux d’audit d’activer Office 365 activé ou désactivé](turn-audit-log-search-on-or-off.md).
 
 ## <a name="related-topics"></a>Voir aussi
 
-[Intelligence des menaces d’Office 365](office-365-ti.md)
+[Office 365 Threat Intelligence](office-365-ti.md)
 
-[Protection de Microsoft Office 365 menace avancées](office-365-atp.md)
+[Office 365 - Protection avancée contre les menaces](office-365-atp.md)
 
 [Active les rapports et les vues d’ensemble de sécurité Office 365 &amp; centre de conformité](reports-and-insights-in-security-and-compliance.md)
   

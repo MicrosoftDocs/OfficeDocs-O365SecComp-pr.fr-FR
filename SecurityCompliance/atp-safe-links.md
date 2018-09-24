@@ -19,12 +19,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La fonctionnalité de liens fiables offre-heure des clics de vérification des liens hypertexte dans les documents Office et dans les messages électroniques. Utilisez les liens sécurisés pour protéger votre organisation contre les attaques par hameçonnage et les autres attaques.
-ms.openlocfilehash: b2aa83d7958e030170bcbdc4bfb5e27578bf8b81
-ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
+ms.openlocfilehash: 35975ee58763578586b78d7d1f281fde81e1139b
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23955456"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972346"
 ---
 # <a name="office-365-atp-safe-links"></a>Liens fiables Office 365 ATP
 
@@ -60,9 +60,9 @@ Une fois vos stratégies de liens fiables DAV sont mis en place, les administrat
     
 ## <a name="how-atp-safe-links-works-with-office-documents"></a>Fonctionnement des liens fiables DAV avec les documents Office
 
-À un niveau élevé, voici le fonctionne de protection DAV des liens sécurisés pour les URL dans les applications Office 365 ProPlus (versions actuelles de OneNote, Word, Excel et PowerPoint sur Windows ou Mac, les applications Office sur iOS ou Android appareils, Visio sur Windows et Office Online) :
+À un niveau élevé, voici le fonctionne de protection DAV des liens sécurisés pour les URL dans les applications Office 365 ProPlus (versions actuelles de Word, Excel et PowerPoint sur Windows ou Mac, les applications Office sur iOS ou Android appareils, Visio sur Office Online, OneNote en ligne et Windows) :
   
-1. Personnes ont installé Office 365 ProPlus sur leur ordinateur, smartphone ou tablette.
+1. Personnes ont installé Office 365 ProPlus sur leur ordinateur, smartphone ou tablette. (Ou, ils sont à l’aide en ligne Office dans leur navigateur.)
     
 2. Un utilisateur ouvre une Word, Excel, PowerPoint ou Visio et se connecte à Office 365 pour entreprises à l’aide de leur compte professionnel ou de l’école. Le document contient des URL.
     

@@ -1,5 +1,5 @@
 ---
-title: Intégrer votre serveur SIEM avec Office 365 Cloud application sécurité
+title: Intégrer votre serveur SIEM à la sécurité des applications cloud Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: Vous pouvez intégrer votre serveur SIEM avec Office 365 Cloud Application Security. Lisez cet article pour obtenir une vue d’ensemble de son fonctionnement et comment la configurer.
-ms.openlocfilehash: 6b9d51d91d4b1ae55dd0dd16a92872daa4ecef90
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a2bd75e73ddccef9359ace304faa3c8b1dd4a728
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23043262"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972326"
 ---
-# <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>Intégrer votre serveur SIEM avec Office 365 Cloud application sécurité
+# <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>Intégrer votre serveur SIEM à la sécurité des applications cloud Office 365
   
 |Évaluation **\>**|Planification **\>**|Déploiement **\>**|Utilisation du ***|
 |:-----|:-----|:-----|:-----|
@@ -71,25 +71,25 @@ Sécurité d’application Office 365 Cloud prend actuellement en charge les ser
     
 2. Accédez à des **alertes** \> **Gestion avancée des alertes**.
     
-3. Cliquez sur **Aller à la sécurité d’application Office 365 dans le nuage**.</br>
+3. Cliquez sur **Aller à la sécurité d’application Office 365 dans le nuage**.<br/>
     ![Dans la sécurité &amp; centre de conformité, cliquez sur Gérer les alertes avancées pour accéder à la sécurité d’application dans le nuage Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
   
-4. Cliquez sur **paramètres** \> **extensions de sécurité**.</br>
+4. Cliquez sur **paramètres** \> **extensions de sécurité**.<br/>
 ![Choisissez Paramètres > extensions de sécurité](media/Settings-SecurityExtensions.png)
 
-5. Choisissez **SIEM ajouter des agents**.</br>![Choisissez agent SIEM ajouter.](media/SIEMAgents.png)
+5. Choisissez **SIEM ajouter des agents**.<br/>![Choisissez agent SIEM ajouter.](media/SIEMAgents.png)
     
-6. Cliquez sur **Démarrer l’Assistant**.</br>![Obtenir de l’aide ou de démarrer l’Assistant](media/HelpOrWizard.png) 
+6. Cliquez sur **Démarrer l’Assistant**.<br/>![Obtenir de l’aide ou de démarrer l’Assistant](media/HelpOrWizard.png) 
     
-7. Dans l’étape **Général** , spécifiez un nom et **Sélectionnez votre format SIEM** et définir des **Paramètres avancés** qui sont pertinents pour ce format. Puis cliquez sur **suivant**.</br>![Spécifiez le nom et type](media/ChooseAgentTypeAndName.png)
+7. Dans l’étape **Général** , spécifiez un nom et **Sélectionnez votre format SIEM** et définir des **Paramètres avancés** qui sont pertinents pour ce format. Puis cliquez sur **suivant**.<br/>![Spécifiez le nom et type](media/ChooseAgentTypeAndName.png)
     
-8. Dans l’étape de **Journal système distant** , spécifiez l’adresse IP ou le nom d’hôte de l' **hôte de journal système distant** et le **numéro de port de journal système**. Sélectionnez TCP ou UDP comme protocole de journal système distant. (Vous pouvez travailler avec votre administrateur réseau ou à un administrateur de sécurité pour obtenir ces informations si vous ne les avez). Puis cliquez sur **suivant**.</br>![Spécifier les détails du journal système distant](media/ArcSightS1Syslog.png)
+8. Dans l’étape de **Journal système distant** , spécifiez l’adresse IP ou le nom d’hôte de l' **hôte de journal système distant** et le **numéro de port de journal système**. Sélectionnez TCP ou UDP comme protocole de journal système distant. (Vous pouvez travailler avec votre administrateur réseau ou à un administrateur de sécurité pour obtenir ces informations si vous ne les avez). Puis cliquez sur **suivant**.<br/>![Spécifier les détails du journal système distant](media/ArcSightS1Syslog.png)
   
 9. Dans l’étape de **Types de données** , effectuez l’une des opérations suivantes, puis cliquez sur **suivant**:
-    - Conservez la valeur par défaut de **Toutes les alertes**</br>OU
-    - Cliquez sur **toutes les alertes**, puis cliquez sur **filtres spécifiques**. Définir des filtres pour sélectionner les types d’alertes que vous voulez envoyer à votre serveur SIEM.</br>![Étape de Types de données de l’Assistant](media/ArcSightS1ExportOptions.png)
+    - Conservez la valeur par défaut de **Toutes les alertes**<br/>OU
+    - Cliquez sur **toutes les alertes**, puis cliquez sur **filtres spécifiques**. Définir des filtres pour sélectionner les types d’alertes que vous voulez envoyer à votre serveur SIEM.<br/>![Étape de Types de données de l’Assistant](media/ArcSightS1ExportOptions.png)
   
-10. Dans l’écran Félicitations, copiez le jeton et enregistrer pour plus tard.</br>![Écran de l’agent créé SIEM](media/SIEMAgentFinished.png) 
+10. Dans l’écran Félicitations, copiez le jeton et enregistrer pour plus tard.<br/>![Écran de l’agent créé SIEM](media/SIEMAgentFinished.png) 
 
 > [!IMPORTANT]
 > À ce stade, vous avez configuré un agent SIEM dans Office 365 Cloud application sécurité, mais votre intégration du serveur SIEM n’est pas encore terminée. Passez à l’étape suivante pour continuer votre intégration du serveur SIEM.
@@ -104,7 +104,7 @@ Une fois que vous cliquez sur Fermer et quitter l’Assistant, dans l’écran d
     
 2. Extrayez le fichier JAR à partir du dossier compressé et exécutez-le sur votre serveur.
     
-3. Après avoir exécuté le fichier, exécutez la commande suivante : commande :</br>
+3. Après avoir exécuté le fichier, exécutez la commande suivante : commande :<br/>
   ```
   java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
   ```
@@ -115,7 +115,7 @@ Une fois que vous cliquez sur Fermer et quitter l’Assistant, dans l’écran d
 - Nous vous conseillons d’exécuter le remplissage JAR sur votre serveur lors de l’installation du serveur.
     - **Windows**: exécuter en tant qu’une tâche planifiée, en veillant à la configuration de la tâche à **exécuter si l’utilisateur est connecté ou non** et désactivez l’option **Arrêter la tâche si elle s’exécute plu** .
 
-    - **Linux**: ajouter la commande Exécuter avec un **&** à la `rc.local` fichier. </br>Exemple :</br> 
+    - **Linux**: ajouter la commande Exécuter avec un **&** à la `rc.local` fichier. <br/>Exemple :<br/> 
     ```
     java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &
     ```
@@ -128,7 +128,7 @@ Une fois que vous cliquez sur Fermer et quitter l’Assistant, dans l’écran d
   
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>Étape 3 : Valider l’utilisation de l’agent SIEM
 
-1. Assurez-vous que l’état de l’agent SIEM dans le portail Office 365 Cloud application sécurité n’est pas affiché en tant que **message erreur de connexion** ou **déconnecté** et qu’il n’existe aucune notification de l’agent.</br>Par exemple, nous voyons ici qu'est connecté le serveur SIEM :</br>![Serveur SIEM connecté](media/siem-connected.png)</br>Et nous pouvons voir ici, que le serveur SIEM est déconnecté :</br>![Serveur SIEM ne sont ne pas connecté](media/siem-not-connected.png) 
+1. Assurez-vous que l’état de l’agent SIEM dans le portail Office 365 Cloud application sécurité n’est pas affiché en tant que **message erreur de connexion** ou **déconnecté** et qu’il n’existe aucune notification de l’agent.<br/>Par exemple, nous voyons ici qu'est connecté le serveur SIEM :<br/>![Serveur SIEM connecté](media/siem-connected.png)<br/>Et nous pouvons voir ici, que le serveur SIEM est déconnecté :<br/>![Serveur SIEM ne sont ne pas connecté](media/siem-not-connected.png) 
   
 2. Dans votre serveur/SIEM journal système, vérifiez que les alertes sont arrivées à partir de la sécurité d’application Office 365 dans le nuage.
   
@@ -184,7 +184,7 @@ Et Voici un exemple de format format CEF
   
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Activités de l’utilisation après le déploiement d’Office 365 Cloud Application Security](utilization-activities-for-ocas.md)
+- [Activités d’utilisation après avoir déployé la sécurité des applications cloud Office 365](utilization-activities-for-ocas.md)
     
 - [Passez en revue et effectuer une action sur les alertes](review-office-365-cas-alerts.md)
     
