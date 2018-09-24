@@ -3,7 +3,7 @@ title: Effectuer des recherches dans le journal d’audit dans le Centre de séc
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Utilisez le Office 365 Security &amp; centre de conformité pour la recherche dans le journal d’audit unifiée pour afficher l’activité utilisateur et l’administrateur de votre organisation Office 365. '
-ms.openlocfilehash: dc673b8f52bacccfa746ad258ea91d8dd2074eeb
-ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
+ms.openlocfilehash: 4c56f6f0c5f5a1ace7b94fab63d839760045c66f
+ms.sourcegitcommit: 6562a0d171dacdcdb945d192f45ea1a4c0c1c0c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "24962970"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24974684"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Effectuer des recherches dans le journal d’audit dans le Centre de sécurité et de conformité Office 365
 
@@ -47,7 +47,11 @@ Vous devez trouver si un utilisateur affiché d’un document spécifique ou pur
 - Activité utilisateur et d’administration dans Power BI pour Office 365
     
 - Activité utilisateur et d’administration dans Microsoft Teams
+
+- Activité utilisateur et d’administration dans Dynamics 365
     
+- Activité utilisateur et d’administration dans Microsoft Flow
+
 - Activité utilisateur et d’administration dans Yammer
     
 - Activité utilisateur et d’administration dans Microsoft Stream
@@ -57,7 +61,7 @@ Vous devez trouver si un utilisateur affiché d’un document spécifique ou pur
 
 Veillez à lire le journal d’audit des éléments suivants avant de commencer la recherche dans Office 365.
   
-- Vous (ou un autre administrateur) devez d’abord activer sur l’enregistrement d’audit avant de commencer la recherche dans le journal d’audit de Office 365. Pour l’activer, cliquez simplement sur ** lancer l’enregistrement d’activité de l’utilisateur et d’administration ** dans la page de **recherche des journaux d’Audit** de sécurité &amp; centre de conformité. (Si vous ne voyez pas ce lien, l’audit a déjà été activé pour votre organisation.) Une fois que vous l’activer, un message s’affiche indiquant que le journal d’audit est préparé et que vous pouvez exécuter une recherche en quelques heures après que la préparation est terminée. Vous ne devez cela qu’une seule fois. 
+- Vous (ou un autre administrateur) devez d’abord activer sur l’enregistrement d’audit avant de commencer la recherche dans le journal d’audit de Office 365. Pour l’activer, cliquez sur **Démarrer l’enregistrement d’utilisateur et des activités d’administration** dans la page de **recherche des journaux d’Audit** de sécurité &amp; centre de conformité. (Si vous ne voyez pas ce lien, l’audit a déjà été activé pour votre organisation.) Une fois que vous l’activer, un message s’affiche indiquant que le journal d’audit est préparé et que vous pouvez exécuter une recherche en quelques heures après que la préparation est terminée. Vous ne devez cela qu’une seule fois. 
     
     > [!NOTE]
     > Nous sommes en cours de l’activation de l’audit par défaut. En attendant, vous pouvez l’activer comme décrit précédemment. 
@@ -91,11 +95,20 @@ Veillez à lire le journal d’audit des éléments suivants avant de commencer 
     
 |**Service Office 365**|**30 minutes**|**24 heures**|
 |:-----|:-----|:-----|
-|Azure Active Directory (événements d’administration)  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Protection contre les menaces avancées et les informations sur les menaces  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
 |Azure Active Directory (événements d’ouverture de session utilisateur)  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Azure Active Directory (événements d’administration)  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
+|Azure Active Directory (événements d’ouverture de session utilisateur)  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Prévention contre la perte de données  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Dynamics 365 CRM <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|eDiscovery  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Exchange Online  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+|Microsoft Flow  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Microsoft Forms  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Microsoft Project  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Microsoft Stream  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Microsoft Teams  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Power BI  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Power BI  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Sécurité &amp; centre de conformité  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |Sharepoint Online et OneDrive Entreprise  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |Sway  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
