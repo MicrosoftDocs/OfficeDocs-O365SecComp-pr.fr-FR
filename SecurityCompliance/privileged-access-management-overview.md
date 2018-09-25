@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilisez cette rubrique pour en savoir plus sur les privilèges accéder à la gestion dans Office 365
-ms.openlocfilehash: 063d291005ec40c21e55188e4ee7c6c8ed6594e8
-ms.sourcegitcommit: d31904e81f81d0fba75309a2bc8bbfb05565a0b4
+ms.openlocfilehash: 07e1f9090418e4261fef188ceb109c1b8083d34c
+ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24055259"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25011860"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Privilèges d’accès gestion dans Office 365
 
@@ -70,10 +70,14 @@ Pour les demandes approuvées, la tâche est traitée par l’instance d’exéc
 ## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 ### <a name="what-skus-do-i-need-to-use-privileged-access-in-office-365"></a>Quelles versions clientes ai-je besoin pour utiliser un accès privilégié dans Office 365 ?
-Un accès privilégié gestion dans Office 365 n’est actuellement disponible pour les clients avec E5 et références de conformité avancées.
+Un accès privilégié gestion n’est actuellement disponible pour les clients avec Office 365 E5 et références de conformité avancées.
 
 ### <a name="when-will-privileged-access-be-available-for-office-365-workloads-beyond-exchange"></a>Lorsqu’un accès privilégié sera disponible pour des charges de travail Office 365 au-delà Exchange ?
 Nous prévoyons de proposer cette fonctionnalité dans les autres charges de travail Office 365 bientôt. Lorsque nous sommes prêts à partager une chronologie, il sera disponible par le biais de la feuille de route d’Office 365.
+
+### <a name="my-organization-needs-more-than-30-privileged-access-polices-will-this-limit-be-increased"></a>Stratégies de besoins de mon organisation plus de 30 accès privilégié, cette limite augmentera ?
+
+Nous comptons augmenter la limite actuelle de 30 stratégies d’accès privilégié par l’organisation Office 365 bientôt.
 
 ### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>Je dois être un administrateur Global pour gérer l’accès privilégié dans Office 365
 Vous devez disposer de privilèges d’administrateur Global pour être en mesure de gérer l’accès privilégié dans Office 365. Les utilisateurs qui sont inclus dans le groupe d’un approbateurs ne doivent être un administrateur Global pour examiner et approuver les demandes. 

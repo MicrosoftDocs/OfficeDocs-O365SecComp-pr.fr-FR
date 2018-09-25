@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: En tant qu’un administrateur Office 365, vous pouvez retirer certains messages électroniques chiffrés avec Office 365 Message Encryption.
-ms.openlocfilehash: b2fd3e07bec6dfedd783a8a68169fc5f990a80d3
-ms.sourcegitcommit: 2150f49cf4305b75591a238ff649c57684c7632f
+ms.openlocfilehash: 19eb874fa15a21c29a9eb2823829e81ff244a555
+ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "25004247"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25011820"
 ---
 # <a name="office-365-message-encryption-email-revocation"></a>Révocation de courrier électronique de chiffrement de messages Office 365
 
@@ -62,7 +62,7 @@ Il existe plusieurs manières pour trouver l’ID de Message du courrier électr
 
 Une fois que vous connaissez l’ID de Message du courrier électronique que vous souhaitez révoquer, vous pouvez annuler le courrier électronique à l’aide de l’applet de commande Set-OMEMessageRevocation. 
 
-1. [Se connecter à Exchange Online à l’aide de PowerShell à distance](http://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx).
+1. [Se connecter à Exchange Online à l’aide de PowerShell à distance](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
     
 2. Exécutez l’applet de commande Set-OMEMessageRevocation comme suit :
     

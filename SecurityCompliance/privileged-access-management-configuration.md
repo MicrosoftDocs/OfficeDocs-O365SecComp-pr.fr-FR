@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilisez cette rubrique pour en savoir plus sur la configuration de gestion de l’accès privilégié dans Office 365
-ms.openlocfilehash: 6494505554a02f005df8f45839c9575094acbf1a
-ms.sourcegitcommit: d31904e81f81d0fba75309a2bc8bbfb05565a0b4
+ms.openlocfilehash: 47cae93a41b0fd60645021f6f299645777a9a2e1
+ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24055249"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25011840"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Configuration de la gestion accès privilégié dans Office 365
 
@@ -102,6 +102,8 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 ## <a name="step-3---create-an-access-policy"></a>Étape 3 : créer une stratégie d’accès
 
+Vous pouvez créer et configurer des stratégies d’accès privilégié jusqu'à 30 pour votre organisation Office 365.
+
 ### <a name="using-the-microsoft-365-admin-center"></a>À l’aide du centre d’administration Microsoft 365
 
 1. Connectez-vous au [Centre d’administration de Microsoft 365](https://portal.office.com) à l’aide des informations d’identification pour un compte d’administrateur de votre organisation.
@@ -144,6 +146,8 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 ### <a name="requesting-elevation-authorization-to-execute-privileged-tasks"></a>Demande d’autorisation élévation pour exécuter des tâches privilégiées
 
+Demandes d’accès privilégié valent jusqu'à 24 heures après que la demande est envoyée. Si non approuvé ou refusé, les demandes d’expirent et access n’est pas approuvé.
+
 #### <a name="using-the-microsoft-365-admin-center"></a>À l’aide du centre d’administration Microsoft 365
 
 1. Connectez-vous au [Centre d’administration de Microsoft 365](https://portal.office.com) à l’aide de vos informations d’identification.
@@ -160,7 +164,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
     **Demande de**: sélectionnez dans les stratégies disponibles
 
-    **Durée (en heures)**: nombre d’heures d’accès demandé
+    **Durée (en heures)**: nombre d’heures d’accès demandé. Il n’est pas une limite sur le nombre d’heures qui peut être demandée.
 
     **Commentaires**: champ de texte pour les commentaires relatifs à votre demande d’accès
 
@@ -235,6 +239,31 @@ Deny-ElevatedAccessRequest -RequestId <request id> -Comment '<denial comment>'
 Exemple :
 ```
 Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comment '<denial comment>'
+```
+
+## <a name="delete-a-privileged-access-policy-in-office-365"></a>Supprimer une stratégie d’accès privilégié dans Office 365
+Vous pouvez supprimer une stratégie d’accès privilégié si elle n’est plus nécessaire dans votre organisation.
+
+### <a name="using-the-microsoft-365-admin-center"></a>À l’aide du centre d’administration Microsoft 365
+
+1. Connectez-vous au [Centre d’administration de Microsoft 365](https://portal.office.com) à l’aide des informations d’identification pour un compte d’administrateur de votre organisation.
+
+2. Dans le centre d’administration, cliquez sur **paramètres** > **sécurité et confidentialité** > **accès privilégié**.
+
+3. Sélectionnez **Gérer les stratégies d’accès et les demandes**.
+
+4. Sélectionnez **la configuration des stratégies**.
+
+5. Sélectionnez la stratégie que vous souhaitez supprimer, puis sélectionnez **Supprimer la stratégie**.
+
+6. Sélectionnez **Fermer**.
+
+### <a name="using-exchange-management-powershell"></a>À l’aide d’Exchange Management PowerShell
+
+Exécutez la commande suivante dans Exchange Online Powershell pour supprimer une stratégie d’accès privilégié :
+
+```
+Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you want to delete>
 ```
 
 ## <a name="disable-privileged-access-in-office-365"></a>Désactiver l’accès privilégié dans Office 365
