@@ -1,5 +1,5 @@
 ---
-title: Recommandations concernant la stratégie DLP en main
+title: Prise en main des recommandations en matière de stratégie DLP
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
@@ -8,19 +8,16 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
 ms.assetid: 2ea4459b-cb13-4ce2-b9d1-0619316df88c
 description: Cette recommandation pilotée par un aperçu permet à votre organisation de protéger les contenus sensibles lorsqu’il est stocké et partagée dans Office 365 par pour vous informer lorsqu’il est possible la couverture de stratégie DLP. Cette recommandation s’affiche sur la page d’accueil de la sécurité &amp; centre de conformité, si vos documents contiennent les types les plus courants haut-cinq d’informations sensibles, mais ne sont pas protégés par une stratégie DLP.
-ms.openlocfilehash: 842387397b9b95d236660c5809174c2b356cf14a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: fcd3a5a3a12932b22c310938c12f71fb01019411
+ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528647"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25002627"
 ---
-# <a name="get-started-with-dlp-policy-recommendations"></a>Recommandations concernant la stratégie DLP en main
+# <a name="get-started-with-dlp-policy-recommendations"></a>Prise en main des recommandations en matière de stratégie DLP
 
 Cette recommandation pilotée par un aperçu permet à votre organisation de protéger les contenus sensibles lorsqu’il est stocké et partagée dans Office 365 par pour vous informer lorsqu’il est possible la couverture de stratégie DLP. Cette recommandation s’affiche sur la page **d’accueil** de la sécurité &amp; centre de conformité, si vos documents contiennent les types les plus courants haut-cinq d’informations sensibles, mais ne sont pas protégées par une stratégie de protection contre la perte données. 
   
