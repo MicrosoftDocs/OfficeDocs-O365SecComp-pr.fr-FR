@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: 'En tant qu’administrateur, vous pouvez afficher, version et signaler un faux positif mis en quarantaine dans Office 365. Vous pouvez définir des stratégies afin que le filtrage des messages Office 365 et l’envoie à mettre en quarantaine pour plusieurs raisons : car ils ont été identifiés comme du courrier indésirable, en bloc, l’hameçonnage, les logiciels malveillants ou car il correspondant à une règle de flux de messagerie. '
-ms.openlocfilehash: be6384d8937e25aec55d82d8212c49d25b64b9a1
-ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
+ms.openlocfilehash: 67fb4ac8e3a5fd443efb04d4f74e9844d2fa8c86
+ms.sourcegitcommit: f7fff49ae0b1c3056faa58d73c1070cb4e638fbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839098"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25018878"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gérer les messages mis en quarantaine et les fichiers en tant qu’administrateur dans Office 365
 
@@ -59,7 +59,7 @@ En outre, en tant qu’administrateur, vous pouvez choisir filtrer tous les mess
   
 Vous pouvez également filtrer les résultats pour rechercher des messages spécifiques. Pour obtenir des conseils, voir [pour filtrer les résultats et de rechercher des fichiers et des messages mis en quarantaine](manage-quarantined-messages-and-files.md#BKMK_AdvSearch) dans cet article. 
   
-Après avoir trouvé un message en quarantaine spécifique, cliquez sur le message pour afficher les détails et effectuer des actions, comme libérer le message à la boîte de réception d’une personne.
+Après avoir trouvé un message en quarantaine spécifique, cliquez sur le message pour afficher les détails et effectuer des actions, comme libérer le message vers la boîte aux lettres d’une personne.
   
 ## <a name="view-your-organizations-quarantined-files"></a>Afficher les fichiers mis en quarantaine de votre organisation
 

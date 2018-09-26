@@ -13,12 +13,12 @@ search.appverid:
 - MEW150
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 description: 'En tant qu’un utilisateur d’Office 365, vous pouvez gérer vos propres messages mis en quarantaine du courrier indésirable d’une des deux façons : en répondant spam notifications envoyées directement (si votre administrateur a configuré cette fonctionnalité), ou à l’aide de la fonctionnalité de mise en quarantaine du courrier indésirable dans la sécurité &amp; la conformité Centre.'
-ms.openlocfilehash: 08a0c5c35edb6c0829a1c7cafd7eaf9a41fa22ae
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 728273838d9e592e17638638258f481830bc0bbe
+ms.sourcegitcommit: f7fff49ae0b1c3056faa58d73c1070cb4e638fbf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527503"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25018888"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Rechercher et débloquer les messages mis en quarantaine en tant qu’utilisateur dans Office 365
 
@@ -44,7 +44,7 @@ Vous pouvez afficher une liste de tous les messages mis en quarantaine, ou vous 
     
 - Messages identifiés comme courrier indésirable.
     
-Une fois que vous trouvez un message en quarantaine spécifique, cliquez sur le message pour afficher les détails et effectuer des actions. Vous pouvez libérer le message vers votre boîte de réception, afficher un aperçu du message, téléchargez le message ou supprimer le message en quarantaine immédiatement.
+Une fois que vous trouvez un message en quarantaine spécifique, cliquez sur le message pour afficher les détails et effectuer des actions. Vous pouvez libérer le message vers votre boîte aux lettres, afficher un aperçu du message, téléchargez le message ou supprimer le message en quarantaine immédiatement.
   
 > [!NOTE]
 > Vous devez disposer des autorisations d’administrateur dans Office 365 pour travailler avec des messages mis en quarantaine qui ont été envoyés à d’autres utilisateurs. 
@@ -94,7 +94,7 @@ Après avoir sélectionné un message, vous verrez un résumé des propriétés 
     
 - **À :** Toutes les adresses de messagerie (le cas échéant) à laquelle le message a été envoyé. 
     
-- **N’est pas encore publié à :** Toutes les adresses de messagerie (le cas échéant) à laquelle le message n’a pas été envoyé. Vous pouvez choisir la **version** si vous souhaitez le message vers votre boîte de réception (plus d’informations sur libération des messages dans la section suivante). 
+- **N’est pas encore publié à :** Toutes les adresses de messagerie (le cas échéant) à laquelle le message n’a pas été envoyé. Vous pouvez choisir la **version** si vous souhaitez le message vers votre boîte aux lettres (plus d’informations sur libération des messages dans la section suivante). 
     
 Vous pouvez obtenir davantage d’informations sur le message en choisissant une des options suivantes :
   
@@ -108,12 +108,12 @@ Après avoir sélectionné un message ou un groupe de messages, vous disposez de
   
 - Ne rien faire. Si vous choisissez de ne rien faire, le message sera supprimé par Office 365 automatiquement à expiration. N’oubliez pas lorsqu’Office 365 supprime un message de quarantaine, vous ne pouvez pas le récupérer.
     
-- **Libérer le message** Libérer un message mis en quarantaine (ou ensemble de messages) pour que le message est envoyé à votre boîte de réception. Lorsque vous relâchez un message, vous avez la possibilité de signaler le message à Microsoft pour analyse. 
+- **Libérer le message** Libérer un message mis en quarantaine (ou ensemble de messages) pour que le message est envoyé à votre boîte aux lettres. Lorsque vous relâchez un message, vous avez la possibilité de signaler le message à Microsoft pour analyse. 
     
     Lorsque vous choisissez de signaler un message, également appelé signale un message comme faux positif, le message est envoyé à l’équipe d’analyse de courrier indésirable Microsoft. L’équipe évalue et analyse des messages faux positifs et, en fonction des résultats de l’analyse, les règles de filtrage du courrier indésirable à l’échelle du service peuvent être ajustés pour autoriser les messages par le biais de.
     
 - **Téléchargement des messages** Vous permet de télécharger le message comme un fichier .eml. Une fois que vous téléchargez un message, vous pouvez consulter le fichier .eml à l’aide de votre client de messagerie avant de libérer le message. 
     
-- **Supprimer la mise en quarantaine** Supprime immédiatement le message en quarantaine sans libérer le message vers votre boîte de réception. 
+- **Supprimer la mise en quarantaine** Supprime immédiatement le message en quarantaine sans libérer le message vers votre boîte aux lettres. 
     
 
