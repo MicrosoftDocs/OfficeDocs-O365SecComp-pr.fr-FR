@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Utiliser la recherche de contenu de sécurité Office 365 &amp; centre de conformité pour effectuer des collections ciblées. Un regroupement cible signifie que vous êtes convaincu qu’articles réactifs à un cas ou privilégié se trouvent dans un dossier de boîte aux lettres ou un site spécifique. Utilisez le script dans cet article pour obtenir l’ID de dossier ou le chemin d’accès pour les dossiers de boîte aux lettres ou des sites spécifiques que vous souhaitez rechercher.
-ms.openlocfilehash: 3ff0ca00915bce53e9e932316c5ab47884f346b2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: bb808e38f24ebf09a975b3082ef1dc61bc6344c4
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527625"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038297"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Utiliser la recherche de contenu dans Office 365 pour les collections ciblées
 
@@ -264,7 +262,7 @@ Voici quelques exemples d’utilisation de la `folderid` et `path` propriétés 
   path:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
   
-## <a name="more-information"></a>Plus d'informations
+## <a name="more-information"></a>Plus d’informations
 
 Gardez les éléments suivants à l’esprit lorsque vous utilisez le script dans cet article et effectue ciblés collections.
   

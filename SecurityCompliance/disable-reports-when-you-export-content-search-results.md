@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 description: Modifiez le Registre de Windows sur votre ordinateur local pour désactiver les rapports lorsque vous exportez les résultats d’une recherche de contenu à partir de la sécurité de 365 Office &amp; Comliance centre. Désactivation de ces rapports, vous pouvez accélérer le temps de téléchargement et économiser de l’espace disque.
-ms.openlocfilehash: 3c09e0563ddd4469f21950dc3a698ce08b0014df
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 62782c472adca892e1dcf239a45fe80f0fa7251b
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528628"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25037977"
 ---
 # <a name="disable-reports-when-you-export-content-search-results-in-the-office-365-security-amp-compliance-center"></a>Désactiver les rapports lorsque vous exportez des résultats de la recherche de contenu de sécurité Office 365 &amp; centre de conformité
 

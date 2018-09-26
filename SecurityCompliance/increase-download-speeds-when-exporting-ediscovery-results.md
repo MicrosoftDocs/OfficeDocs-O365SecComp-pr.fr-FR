@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: Découvrez comment configurer le Registre Windows pour augmenter le débit de données lorsque je télécharge des résultats de la recherche et rechercher des données à partir de la sécurité de 365 Office &amp; centre de conformité et Office 365 avancée eDiscovery.
-ms.openlocfilehash: 3f456f5ee0312d4d4d7b95f868520e6756a90fd1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a05c2b786d1d1de7ff5014d12c708484345f908b
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528761"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038117"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>Augmenter la vitesse de téléchargement lors de l’exportation des résultats de recherche de découverte électronique à partir d’Office 365
 
@@ -55,7 +53,7 @@ Effectuez la procédure suivante sur l’ordinateur que vous utiliserez pour té
     > [!IMPORTANT]
     > Une fois que vous créez ou modifiez la `DownloadConcurrency` clé de Registre, veillez à créer une nouvelle tâche d’exportation ou redémarrer une tâche d’exportation existante pour les résultats de recherche ou les données que vous souhaitez télécharger. Voir la section [plus d’informations](increase-download-speeds-when-exporting-ediscovery-results.md#moreinfo) pour plus d’informations. 
   
-## <a name="more-information"></a>Plus d'informations
+## <a name="more-information"></a>Plus d’informations
 
 - Une nouvelle clé de Registre est créée la première fois que vous exécutez le fichier .reg que vous avez créé dans cette procédure. Le `DownloadConcurrency` paramètre de Registre est modifié à chaque fois que vous modifiez et réexécutez la modifier le fichier .reg. 
     
@@ -67,5 +65,5 @@ Effectuez la procédure suivante sur l’ordinateur que vous utiliserez pour té
     
   - [Exporter les résultats de recherche de contenu à partir de la sécurité de 365 Office &amp; centre de conformité](export-search-results.md)
     
-  - [Exporter les résultats dans Office 365 avancée de découverte électronique](export-results-in-advanced-ediscovery.md)
+  - [Exporter les résultats dans Office 365 Advanced eDiscovery](export-results-in-advanced-ediscovery.md)
     

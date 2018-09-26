@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: Vous pouvez modifier le la taille par défaut des fichiers PST qui est téléchargé sur votre ordinateur lorsque vous exportez des résultats de recherche eDiscovery.
-ms.openlocfilehash: d38189c437154dbe27a084230d4d3fd4de418ece
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 1479db72117729d2e5cfa6feec1d9a0d9a60ffb5
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527568"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25037987"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Modifier la taille des fichiers PST lors de l’exportation des résultats de recherche eDiscovery
 
@@ -46,7 +44,7 @@ Effectuez la procédure suivante sur l’ordinateur que vous allez utiliser pour
     |**Taille en Go (environ)**|**Taille en octets**|
     |:-----|:-----|
     |.7 GO (700 MO)  <br/> |751619277  <br/> |
-    |2 Go  <br/> |2147483648  <br/> |
+    |2 Go  <br/> |2147483648  <br/> |
     |4 Go  <br/> |4294967296  <br/> |
     |8 Go  <br/> |8589934592  <br/> |
    

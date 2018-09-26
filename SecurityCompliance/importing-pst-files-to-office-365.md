@@ -11,15 +11,15 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid: MOE150
+search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 'Pour les administrateurs : en savoir plus sur l’utilisation du service d’importation de sécurité Office 365 &amp; centre de conformité pour l’importation de données de messagerie (fichiers PST) pour les boîtes aux lettres dans Exchange Online. Cette rubrique fournit des questions fréquentes et explique comment fonctionne le processus d’importation PST.'
-ms.openlocfilehash: 1cbe5627ffb906b6a87541f4c4582a2806562ca4
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 2bd58b879d9d4d1ff9d3d2c6c8680a0171d42689
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528400"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038017"
 ---
 # <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Vue d’ensemble de l’importation de fichiers de votre organisation PST vers Office 365
 

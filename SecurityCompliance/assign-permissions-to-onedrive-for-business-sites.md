@@ -11,15 +11,14 @@ localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
-- MET150
 ms.assetid: 422858ff-917b-46d4-9e5b-3397f60eee4d
 description: Vous pouvez utiliser le centre eDiscovery dans SharePoint Online pour rechercher toutes les OneDrive pour les sites dans votre organisation pour certains mots clés, les informations sensibles et autres critères de recherche. Chaque utilisateur de votre organisation est le propriétaire de leur site Business, qui se trouve dans la collection de sites nommée OneDrive https://domain-my.sharepoint.com. Par défaut, un administrateur général Office 365 ou un gestionnaire de conformité ne peuvent pas utiliser le centre eDiscovery dans SharePoint Online pour rechercher les sites de Commerce OneDrive. Pour rechercher un site, les administrateurs ou les responsables de la conformité Business OneDrive doit être un administrateur de collection de sites pour ce site Business OneDrive.
-ms.openlocfilehash: 48f84dfe21f0f99913ba2c27123d6c0e1f8bc03f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 61f068a03bcce599d9f1b7eb62d7b317b7feab68
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528124"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038087"
 ---
 # <a name="assign-ediscovery-permissions-to-onedrive-for-business-sites"></a>Attribuer des autorisations de découverte électronique aux sites OneDrive Entreprise
 
@@ -178,7 +177,7 @@ L’étape suivante consiste à exécuter un script qui affecte un utilisateur s
 
     Vous serez invité à entrer le mot de passe pour le compte d’administrateur que vous avez spécifié dans le script. Si le script s’exécute correctement, le message `"Making  _\<user specified by $eDiscoveryUser\>_ a Site Collection Admin"` est affichée pour chaque site d’entreprise est répertorié dans le fichier d’entrée spécifié par **$MySiteListFile**OneDrive.
 
-## <a name="more-information"></a>Plus d'informations
+## <a name="more-information"></a>Plus d’informations
 
 - Le script que vous avez exécuté l’étape 3 utilise la cmdlet **Set-SPOUser** pour assigner l’utilisateur spécifié en tant qu’administrateur de collection de sites pour chaque OneDrive entreprise est répertorié dans le fichier spécifié par la variable **$MySiteListFile** . Si vous avez une très grande entreprise avec des milliers d’utilisateurs, suivez les recommandations suivantes pour la rendre plus facile de gérer l’affectation d’autorisations eDiscovery. 
     

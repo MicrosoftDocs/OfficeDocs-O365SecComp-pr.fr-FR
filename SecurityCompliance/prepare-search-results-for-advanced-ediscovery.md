@@ -11,17 +11,15 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Découvrez comment préparer les résultats d’une recherche de contenu de sécurité Office 365 &amp; centre de conformité pour une analyse approfondie avec l’outil de découverte électronique avancées.
-ms.openlocfilehash: 4e5668c88d62e99f7a5f40ed2e17f4687a7e9adb
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f5b10ac7fcfa67f67618c936000832b9bdb7d533
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528772"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038307"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Préparation des résultats de recherche pour la découverte électronique avancée Office 365
 
@@ -49,7 +47,7 @@ Après une recherche qui est associé à un cas de découverte électronique de 
 
 Vous pouvez préparer les résultats de recherche qui est associé à une affaire eDiscovery. Lorsque vous préparez des résultats de la recherche avancée eDiscovery, les données sont téléchargées et temporairement stockées dans une zone de stockage unique Windows Azure dans le nuage Microsoft. Il est à ce stade que la fonctionnalité de reconnaissance optique de caractères extrait le texte à partir d’images dans les résultats de recherche. Dans [l’étape 2](#step-2-add-the-search-results-data-to-the-case-in-advanced-ediscovery), ce texte et l’autre recherche résultats chargement des données dans le cas d’eDiscovery avancée.
   
-1. Dans la sécurité &amp; centre de conformité, cliquez sur **recherche &amp; enquête** \> **eDiscovery** vous permet d’afficher la liste des incidents dans votre organisation. 
+1. Dans le Centre de sécurité &amp; conformité, cliquez sur **Recherches &amp; enquêtes** \> **eDiscovery** pour afficher la liste des cas de votre organisation. 
     
 2. En regard de la casse que vous souhaitez préparer des résultats de recherche pour l’analyse d’eDiscovery avancée, cliquez sur **Ouvrir** . 
     
@@ -82,11 +80,11 @@ Une fois la préparation terminée, l’étape suivante consiste accéder à eDi
 > [!NOTE]
 > Le temps nécessaire pour les données à partir de la sécurité &amp; centre de conformité soit disponible pour l’ajouter à un cas de découverte électronique avancée varie selon la taille des résultats de la recherche de découverte électronique. 
   
-1. Dans la sécurité &amp; centre de conformité, cliquez sur **recherche &amp; enquête** \> **eDiscovery** vous permet d’afficher la liste des incidents dans votre organisation. 
+1. Dans le Centre de sécurité &amp; conformité, cliquez sur **Recherches &amp; enquêtes** \> **eDiscovery** pour afficher la liste des cas de votre organisation. 
     
 2. En regard de la casse que vous souhaitez charger des données dans eDiscovery avancée, cliquez sur **Ouvrir** . 
     
-3. Dans la page **d’accueil** pour le cas, cliquez sur **Avancé eDiscovery**. 
+3. Sur la page **Accueil** du cas, cliquez sur **Advanced eDiscovery**. 
     
     ![Cliquez sur Basculer en découverte avancée pour ouvrir le cas de découverte électronique avancée](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
@@ -102,7 +100,7 @@ Une fois la préparation terminée, l’étape suivante consiste accéder à eDi
 
 Une fois les résultats d’une découverte électronique recherche sont ajoutés à un cas, l’étape suivante consiste à utiliser les outils de découverte électronique avancées pour analyser les données et d’identifier le contenu qui répond à une affaire juridique spécifique. Pour plus d’informations sur l’utilisation de découverte électronique avancée, voir [eDiscovery Office 365 avancés](office-365-advanced-ediscovery.md).
   
-## <a name="more-information"></a>Plus d'informations
+## <a name="more-information"></a>Plus d’informations
 
 Tous les messages électroniques chiffrés RMS qui sont inclus dans les résultats de recherche sont déchiffrées lorsque les préparer pour l’analyse d’eDiscovery avancée. Cette fonctionnalité de déchiffrement est activée par défaut pour les membres du groupe de rôles gestionnaire eDiscovery. Il s’agit, car le rôle de gestion de déchiffrement RMS est affecté à ce groupe de rôles. Gardez les éléments suivants à l’esprit déchiffrement des messages électroniques :
   

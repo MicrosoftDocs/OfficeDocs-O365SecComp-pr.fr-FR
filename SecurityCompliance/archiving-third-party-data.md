@@ -9,17 +9,15 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: Les administrateurs peuvent importer des données tierces à partir de plateformes de médias sociaux, plates-formes de messagerie instantanées et plates-formes de collaboration de documents aux boîtes aux lettres dans votre organisation Office 365. Cela vous permet d’archiver des données à partir de Facebook, Twitter et sources de données dans Office 365. Vous pouvez ensuite appply des fonctionnalités de conformité d’Office 365 (telles que la conservation légale, recherche de contenu et les stratégies de rétention) à des données tierces.
-ms.openlocfilehash: 7af88338333e90bd208d693fbfd5bb691d44b538
-ms.sourcegitcommit: 4c6c937ec51e8b754332e4c1c8d286e73e197e2c
+ms.openlocfilehash: 5e8fe94e0c3e8b39aec479f4755a263438513d35
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "23827088"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038107"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>Archivage de données tierces dans Office 365
 
@@ -647,7 +645,7 @@ Une fois que votre organisation consent à la demande d’autorisations pour ins
 
 Pour révoquer l’autorisation pour un connecteur tiers, vous pouvez supprimer l’application (en supprimant le principal de service correspondant) d’Azure Active Directory à l’aide de la lame **d’applications d’entreprise** dans le portail Azure, ou à l’aide de la [ Remove-MsolServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/msonline/remove-msolserviceprincipal) dans Office 365 PowerShell. Vous pouvez également utiliser l’applet de commande [Remove-AzureADServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/azuread/remove-azureadserviceprincipal) dans Windows Azure Active Directory PowerShell.
   
-## <a name="more-information"></a>Plus d'informations
+## <a name="more-information"></a>Plus d’informations
 
 - Indiqué comme précédent, les éléments à partir des données tiers sources sont importées dans les boîtes aux lettres Exchange en tant que messages électroniques. Le connecteur de partenaire importe l’élément à l’aide d’un schéma requis par l’API d’Office 365. Le tableau suivant décrit les propriétés de message d’un élément à partir d’une source de données tierce après l’importation de boîte aux lettres Exchange en tant qu’un message électronique. Le tableau indique également si la propriété message est obligatoire. Les propriétés obligatoires doivent être remplies. Si un élément ne dispose pas d’une propriété obligatoire, il ne seront pas importée vers Office 365. Le processus d’importation renverra un message d’erreur expliquant pourquoi un élément n’a pas été importé et que la propriété est manquante.
     

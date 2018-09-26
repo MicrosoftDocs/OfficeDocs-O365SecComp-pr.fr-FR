@@ -8,19 +8,14 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MED150
-- MBS150
-- MET150
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: Utilisez le Office 365 Security &amp; centre de conformité pour créer des suspensions eDiscovery, ainsi que d’accéder et de gérer des affaires eDiscovery dans votre organisation.
-ms.openlocfilehash: 5be66419e19f9703be5dde3fad82837bda249b72
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: cf7d821b9883caa98e867f4a38ee3caeddb2712b
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528087"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038327"
 ---
 # <a name="manage-ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>Gérer des affaires eDiscovery de sécurité Office 365 &amp; centre de conformité
 
@@ -121,7 +116,7 @@ L’étape suivante consiste à créer un nouveau cas eDiscovery. Vous devez êt
 
 Après avoir créé un nouveau cas, l’étape suivante consiste à ajouter des membres à la casse. Indiqué comme précédente, seuls les utilisateurs qui sont membres du relecteur ou groupes de rôles de gestionnaire de découverte électronique peuvent être ajoutés en tant que membre de la casse. Notez que le responsable qui a créé le cas de découverte électronique est automatiquement ajouté en tant que membre.
   
-1. Dans la sécurité &amp; centre de conformité, cliquez sur **recherche &amp; enquête** \> **eDiscovery** vous permet d’afficher la liste des incidents dans votre organisation. 
+1. Dans le Centre de sécurité &amp; conformité, cliquez sur **Recherches &amp; enquêtes** \> **eDiscovery** pour afficher la liste des cas de votre organisation. 
     
 2. Cliquez sur le nom du dossier que vous souhaitez ajouter des membres.
     
@@ -160,7 +155,7 @@ Lorsque vous créez une suspension, vous disposez des options suivantes pour dé
   
 Pour créer une suspension pour un cas de découverte électronique :
   
-1. Dans la sécurité &amp; centre de conformité, cliquez sur **recherche &amp; enquête** \> **eDiscovery** vous permet d’afficher la liste des incidents dans votre organisation. 
+1. Dans le Centre de sécurité &amp; conformité, cliquez sur **Recherches &amp; enquêtes** \> **eDiscovery** pour afficher la liste des cas de votre organisation. 
     
 2. En regard de que vous souhaitez créer la suspension dans le cas, cliquez sur **Ouvrir** . 
     
@@ -230,7 +225,7 @@ Gardez les éléments suivants à l’esprit les statistiques d’attente :
 
 Une fois un cas eDiscovery est créé et les dépositaires liées à la casse sont mis en attente, vous pouvez créer et exécuter une ou plusieurs recherches de contenu qui sont associés à la casse. Contenu associé à un cas de recherche ne sont pas répertoriés dans la page de **recherche** dans la sécurité &amp; centre de conformité. Cela signifie que les recherches de contenu associés à un cas est accessible uniquement par les membres du cas qui sont également membres du groupe de rôles gestionnaire eDiscovery. 
   
-1. Dans la sécurité &amp; centre de conformité, cliquez sur **recherche &amp; enquête** \> **eDiscovery** vous permet d’afficher la liste des incidents dans votre organisation. 
+1. Dans le Centre de sécurité &amp; conformité, cliquez sur **Recherches &amp; enquêtes** \> **eDiscovery** pour afficher la liste des cas de votre organisation. 
     
 2. En regard de la casse que vous souhaitez créer une recherche de contenu, cliquez sur **Ouvrir** . 
     
@@ -308,7 +303,7 @@ Vous pouvez exporter les résultats d’un [Exporter les résultats d’une rech
 ### <a name="export-the-results-of-a-single-search-associated-with-a-case"></a>Exporter les résultats d’une recherche unique associé à un incident
 <a name="singlesearch_1"> </a>
 
-1. Dans la sécurité &amp; centre de conformité, cliquez sur **recherche &amp; enquête** \> **eDiscovery** vous permet d’afficher la liste des incidents dans votre organisation. 
+1. Dans le Centre de sécurité &amp; conformité, cliquez sur **Recherches &amp; enquêtes** \> **eDiscovery** pour afficher la liste des cas de votre organisation. 
     
 2. En regard de la casse que vous souhaitez exporter la recherche à partir de, cliquez sur **Ouvrir** . 
     
@@ -339,7 +334,7 @@ Comme alternative à exporter les résultats d’une recherche de contenu unique
 > [!NOTE]
 > Vous ne pouvez pas exporter les résultats des recherches de plusieurs si une de ces recherches a été configurée pour rechercher tout le contenu. exporter uniquement les résultats des recherches multiples pour les recherches associées à une affaire eDiscovery. Vous ne pouvez pas exporter les résultats de plusieurs recherches répertoriées dans la page de **recherche de contenu** dans la sécurité &amp; centre de conformité. 
   
-1. Dans la sécurité &amp; centre de conformité, cliquez sur **recherche &amp; enquête** \> **eDiscovery** vous permet d’afficher la liste des incidents dans votre organisation. 
+1. Dans le Centre de sécurité &amp; conformité, cliquez sur **Recherches &amp; enquêtes** \> **eDiscovery** pour afficher la liste des cas de votre organisation. 
     
 2. En regard de la casse que vous souhaitez exporter la recherche à partir de, cliquez sur **Ouvrir** . 
     
@@ -399,7 +394,7 @@ Lorsque vous préparez des résultats de la recherche avancée eDiscovery, les f
 > [!NOTE]
 > Pour analyser les données d’un utilisateur à l’aide de la découverte électronique avancée, l’utilisateur (le dépositaire des données) doit être affecté à une licence Office 365 E5. Autrement, les utilisateurs possédant une licence Office 365 E1 ou E3 peuvent être affectés à une licence autonome de découverte avancée. Les administrateurs et des agents de conformité qui sont affectées à des cas et utilisent eDiscovery avancée pour analyser des données inutile d’une licence E5. 
   
-1. Dans la sécurité &amp; centre de conformité, cliquez sur **recherche &amp; enquête** \> **eDiscovery** vous permet d’afficher la liste des incidents dans votre organisation. 
+1. Dans le Centre de sécurité &amp; conformité, cliquez sur **Recherches &amp; enquêtes** \> **eDiscovery** pour afficher la liste des cas de votre organisation. 
     
 2. En regard de la casse que vous souhaitez préparer des résultats de recherche pour l’analyse d’eDiscovery avancée, cliquez sur **Ouvrir** . 
     
@@ -428,9 +423,9 @@ Lorsque vous préparez des résultats de la recherche avancée eDiscovery, les f
 
 Après avoir créé un cas de la sécurité &amp; centre de conformité, vous pouvez accéder à la même casse d’eDiscovery avancée.
   
-Pour accéder à un cas de découverte électronique avancée :
+Pour accéder à un cas dans Advanced eDiscovery :
   
-1. Dans la sécurité &amp; centre de conformité, cliquez sur **recherche &amp; enquête** \> **eDiscovery** vous permet d’afficher la liste des incidents dans votre organisation. 
+1. Dans le Centre de sécurité &amp; conformité, cliquez sur **Recherches &amp; enquêtes** \> **eDiscovery** pour afficher la liste des cas de votre organisation. 
     
 2. En regard de la casse que vous souhaitez atteindre dans eDiscovery avancée, cliquez sur **Ouvrir** . 
     
@@ -468,7 +463,7 @@ Lorsque le jugement pris en charge par un cas eDiscovery ou juridique est termin
     
 Pour fermer un cas :
   
-1. Dans la sécurité &amp; centre de conformité, cliquez sur **recherche &amp; enquête** \> **eDiscovery** vous permet d’afficher la liste des incidents dans votre organisation. 
+1. Dans le Centre de sécurité &amp; conformité, cliquez sur **Recherches &amp; enquêtes** \> **eDiscovery** pour afficher la liste des cas de votre organisation. 
     
 2. Cliquez sur le nom du dossier que vous souhaitez fermer.
     
@@ -497,7 +492,7 @@ Pour fermer un cas :
 
 Lorsque vous rouvrez un cas, les suspensions qui étaient en place lors de la fermeture de la casse ne sont pas automatiquement rétablies. Une fois le cas ouvert à nouveau, vous devrez accéder à la page **blocage** et activer la suspension précédente. Pour activer une suspension, sélectionnez-le et cliquez sur **Activer** dans le volet détails. 
   
-1. Dans la sécurité &amp; centre de conformité, cliquez sur **recherche &amp; enquête** \> **eDiscovery** vous permet d’afficher la liste des incidents dans votre organisation. 
+1. Dans le Centre de sécurité &amp; conformité, cliquez sur **Recherches &amp; enquêtes** \> **eDiscovery** pour afficher la liste des cas de votre organisation. 
     
 2. Cliquez sur le nom du dossier que vous souhaitez ouvrir à nouveau.
     
@@ -526,9 +521,9 @@ Lorsque vous rouvrez un cas, les suspensions qui étaient en place lors de la fe
     
 |**Description de la limite**|**Limite**|
 |:-----|:-----|
-|Nombre maximal de cas d’une organisation  <br/> |Sans limite  <br/> |
+|Nombre maximal de cas d’une organisation  <br/> |Aucune limite  <br/> |
 |Nombre maximal de cas conserve d’une organisation  <br/> |10 000  <br/> |
-|Nombre maximal de boîtes aux lettres dans un dossier attente  <br/> |1,000  <br/> |
+|Nombre maximal de boîtes aux lettres dans un dossier attente  <br/> |1 000  <br/> |
 |Nombre maximal de SharePoint et OneDrive pour les sites d’entreprise dans un seul cas blocage  <br/> |100  <br/> |
    
 - **Qu’en est-il des cas qui ont été créés dans la page Gestion des dossiers d’eDiscovery avancée ?** Vous pouvez accéder à une liste des anciens cas eDiscovery avancé en cliquant sur le lien en bas dans la page de **découverte électronique** dans la sécurité &amp; centre de conformité. Toutefois, pour effectuer le travail dans un cas antérieur, vous devez contacter le support technique de Office 365 et demander que le cas être déplacés vers un nouveau cas eDiscovery dans la sécurité &amp; centre de conformité. 

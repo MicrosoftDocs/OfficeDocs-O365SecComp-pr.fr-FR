@@ -9,16 +9,14 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
-search.appverid:
-- MET150
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: Stratégies de rétention de blocage sur Place, litige et Office 365 permettent de conserver le contenu des boîtes aux lettres pour répondre aux exigences de découverte et de conformité réglementaire.
-ms.openlocfilehash: fe13884497db9e2549011815704c571c66a92476
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 1149834181bca527bd06cea846f455e36fad283c
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002833"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038157"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Conserver les destinataires Cci et les destinataires de groupe de distribution étendu pour la découverte électronique
   

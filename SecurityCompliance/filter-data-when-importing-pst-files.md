@@ -9,17 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: 'Utilisez la nouvelle fonctionnalité d’importation intelligente dans le service Office 365 importation pour filtrer les éléments qui sont réellement importées pour les boîtes aux lettres cible. Importation intelligente vous permet de décider de manière proactive les données à importer et les éléments à laisser. Importation intelligente fournit également insights sur les données que vous importez vers Office 365. '
-ms.openlocfilehash: 723a2e05a1f5d256e99bcf8497643435d0c98a23
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c90d9df62c7d8c411196b283acec37959fc95e57
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527513"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038197"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>Filtrer les données lors de l’importation des fichiers PST vers Office 365
 
@@ -125,7 +123,7 @@ Une fois que vous avez créé un fichier PST importer le travail, suivez ces ét
 7. Cliquez sur l’importation de la tâche pour afficher des informations plus détaillées, telles que l’état de chaque fichier PST et les paramètres de filtre que vous avez configuré.
 
   
-## <a name="more-information"></a>Plus d'informations
+## <a name="more-information"></a>Plus d’informations
 
 - Comment Office 365 détermine-t-il les incréments pour le filtre d’âge ? Lorsque Office 365 analyse un fichier PST, il se présente au niveau de l’horodatage envoyé ou reçu de chaque élément (si un élément a un horodatage envoyé et reçu, la date la plus ancienne est activée). Office 365 ressemble à la valeur de l’année pour cette valeur, puis il compare la date actuelle pour déterminer l’âge de l’élément. Ces qui est ensuite utilisés comme valeurs dans la liste déroulante pour le filtre **d’âge** . Par exemple, si un fichier PST comporte des messages à partir de 2016, 2015 et 2014, des valeurs dans le filtre **d’âge** serait **année 1**, **2 ans**et **3 ans**.
     

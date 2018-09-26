@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: Après une boîte aux lettres Office 365 est inactive, vous pouvez modifier la durée de la suspension ou la stratégie de rétention Office 365 affecté à la boîte aux lettres inactive. La durée d’attente définit des éléments de la durée dans les éléments récupérables de conservation des dossiers.
-ms.openlocfilehash: 22bd9f9294b625a38d243f6235097d1aee437121
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e3d1d6c7ec0311813dfa1144cc960d2fed9e160d
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528138"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038057"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>Modifier la durée d’attente pour une boîte aux lettres inactive dans Office 365
 
@@ -35,7 +33,7 @@ Une boîte aux lettres inactive est utilisée pour conserver l'e-mail d'un ancie
     
   - [Connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
-  - [Se connecter à Office 365 sécurité &amp; PowerShell du centre de conformité](https://go.microsoft.com/fwlink/?linkid=799771)
+  - [Connexion au Centre de sécurité &amp; conformité Office 365 PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)
     
 - Notez que les conservations associées aux cas eDiscovery sont des conservations infinies, ce qui signifie qu'il n'existe aucune durée de conservation à modifier. Les éléments sont mis en conservation indéfiniment ou jusqu'à ce que la conservation et la boîte aux lettres inactive soient supprimées.
     
@@ -166,7 +164,7 @@ Les éléments de la boîte aux lettres inactive sont alors conservés indéfini
 
      Pour modifier la durée de la conservation sur une période illimitée, utilisez  _-ItemHoldPeriod unlimited_.
   
-## <a name="more-information"></a>Plus d'informations
+## <a name="more-information"></a>Plus d’informations
 
 - **Comment la durée de la conservation est-elle calculée pour un élément dans une boîte aux lettres inactive ?** La durée est calculée à partir de la date de réception ou de création d'origine d'un élément de boîte aux lettres. 
     

@@ -1,5 +1,5 @@
 ---
-title: Créer, rapport et supprimer plusieurs recherches de contenu
+title: Créer, générer des rapports et supprimer plusieurs recherches de contenu
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,17 +11,16 @@ localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
-- MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Découvrez comment automatiser les tâches de recherche de contenu à créer des recherches et exécuter des rapports via des scripts PowerShell de sécurité Office 365 &amp; centre de conformité.
-ms.openlocfilehash: 2baa569c28ed5324e6674addeac688b854a65ed8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a32c003dfd9a27ea8c38b29b31001b612368bc4a
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527754"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038137"
 ---
-# <a name="create-report-on-and-delete-multiple-content-searches"></a>Créer, rapport et supprimer plusieurs recherches de contenu
+# <a name="create-report-on-and-delete-multiple-content-searches"></a>Créer, générer des rapports et supprimer plusieurs recherches de contenu
 
  Rapidement de créer et de signaler les recherches de découverte sont souvent une étape importante dans eDiscovery et des investigations lorsque vous essayez d’en savoir plus sur les données sous-jacentes et la plus grande richesse et la qualité de vos recherches. Pour vous aider à cela, la sécurité &amp; centre de conformité propose un ensemble d’applets de commande Windows PowerShell pour automatiser les tâches de recherche de contenu beaucoup de temps. Ces scripts fournissent un moyen simple et rapide pour créer un nombre de recherches et exécuter des rapports de l’estimation des résultats de recherche qui peuvent vous aider à déterminer la quantité de données en question. Vous pouvez également utiliser les scripts pour créer des versions différentes de recherches pour comparer les résultats de que chaque produit. Ces scripts peuvent vous aider à identifier et de vos données de réforme rapidement et efficacement. 
   
@@ -35,7 +34,7 @@ ms.locfileid: "22527754"
     
 - Les scripts minimal gestion des erreurs. Leur principal objectif consiste à créer rapidement, rapport et supprimer plusieurs recherches de contenu.
     
-- Les exemples de scripts fournis dans cette rubrique ne sont pas pris en charge par n’importe quel programme de prise en charge standard de Microsoft ou le service. Les exemples de scripts sont fournis en l’état sans aucune garantie. Microsoft exclut toute garantie implicite, y compris, sans limitation, une garantie implicite de qualité ou d’adéquation à un usage particulier. Vous assumez tous les risques liés à l’utilisation ou les performances de la documentation et les exemples de scripts. En aucun cas Microsoft, ses auteurs ou toute autre impliqués dans la création, la production ou la remise des scripts est responsable de tout dommage que ce soit (y compris, sans limitation, pertes de bénéfices, interruption d’activité, la perte de informations professionnelles ou autre perte pécuniaire) résultant de l’utilisation ou l’impossibilité d’utiliser les exemples de scripts ou la documentation, même si Microsoft a été averti de la possibilité de tels dommages.
+- Les exemples de script fournis dans cette rubrique ne sont pris en charge dans aucun programme de support ou service standard de Microsoft. Les exemples de scripts sont fournis en l’état, sans garantie d’aucune sorte. Microsoft exclut toute garantie implicite, y compris, sans limitation, les garanties implicites de qualité marchande ou d’adéquation à un usage particulier. Vous assumez tous les risques liés à l’utilisation ou à l’exécution des exemples de scripts et de la documentation. En aucun cas, Microsoft, ses auteurs ou toute personne impliquée dans la création, la production ou la livraison des scripts ne sont responsables de dommages quelconques (y compris, sans limitation, pertes de bénéfices, interruption d’activité, perte d’informations commerciales ou toute autre perte pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
     
 ## <a name="step-1-create-a-csv-file-that-contains-information-about-the-searches-you-want-to-run"></a>Étape 1 : Créer un fichier CSV qui contient des informations sur la recherche que vous souhaitez exécuter
 

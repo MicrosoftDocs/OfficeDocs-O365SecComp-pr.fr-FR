@@ -3,7 +3,6 @@ title: Enregistrement interne Office 365 pour l’ingénierie Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/18/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -12,15 +11,15 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: Une explication de journalisation comment interne pour Office 365 ingénierie équipes works.
-ms.openlocfilehash: 1a613584b6b815524435acb20db7a8022d95e3bc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4cade759fb4c095565b4e1f85ce15ed546177082
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527810"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038187"
 ---
-# <a name="internal-logging-for-office-365-engineering"></a>Enregistrement interne pour ingénierie Office 365
-Outre les événements et les données du journal disponibles pour les clients, il existe également un système de collection de données de journal interne qui est disponible pour les ingénieurs d’Office 365. Différents types de données du journal sont téléchargés à partir des serveurs Office 365 à des données internes, big informatique service appelé Cosmos. Chaque équipe service télécharge les journaux d’audit à partir de leurs serveurs respectifs dans la base de données Cosmos d’agrégation et d’analyse. Ce transfert de données se produit via une connexion TLS FIPS 140-2-validé sur spécifiquement approuvées ports et protocoles à l’aide d’un outil d’automatisation propriétaire appelé le chargeur de données Office (ODL).
+# <a name="internal-logging-for-office-365-engineering"></a>Journalisation interne pour Office 365 Engineering
+Outre les événements et les données du journal disponibles pour les clients, il existe également un système de collection de données de journal interne qui est disponible pour les ingénieurs d’Office 365. Différents types de données du journal sont téléchargés à partir des serveurs Office 365 à des données internes, big informatique service appelé Cosmos. Chaque équipe service télécharge les journaux d’audit à partir de leurs serveurs respectifs dans la base de données Cosmos d’agrégation et d’analyse. Ce transfert de données se produit via une connexion TLS FIPS 140-2-validé sur spécifiquement approuvées ports et protocoles à l’aide d’un outil d’automatisation propriétaire appelé le chargeur de données Office (ODL). Les outils utilisés dans Office 365 pour collecter et traiter les enregistrements d’audit ne pas autorisent définitive ou contenu d’enregistrement ou la commande de l’heure d’audit de modifications irréversibles d’origine.
 
 Les équipes du service utilisent Cosmos comme un référentiel centralisé pour effectuer une analyse de l’utilisation d’applications, à mesurer les performances du système et opérationnelles et rechercher les anomalies et les modèles qui peuvent indiquer des problèmes de sécurité. Chaque équipe service télécharge une ligne de base des journaux dans Cosmos, selon qu’ils cherchent à analyser, qui comportent généralement :
 - Journaux des événements

@@ -11,15 +11,14 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Utilisez les cas eDiscovery de sécurité Office 365 &amp; centre de conformité pour gérer l’enquête juridique de votre organisation. Si vous disposez d’un abonnement E5, vous pouvez analyser plus données cas à l’aide de l’analytique de texte, ordinateur apprentissage et des fonctionnalités de codage prévision d’eDiscovery avancée.
-ms.openlocfilehash: ef8ff9347f7c1d604a01b70f54a1998fde91ace8
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: 7d00268a94613dfc0a1bef6314b5f917de5b9954
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23230026"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038267"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>Gérer les enquêtes légales dans Office 365
 

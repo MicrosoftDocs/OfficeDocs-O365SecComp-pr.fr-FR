@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: Utilisez le script dans cet article pour générer un rapport qui contient des informations sur toutes les suspensions qui sont associés à des cas de découverte de sécurité Office 365 &amp; centre de conformité.
-ms.openlocfilehash: 8bc1285f776e2b1aa0c0330c06ccffff8ce4585c
-ms.sourcegitcommit: c166964fe14eec69139a2d3d9c10d2c40ab33f91
+ms.openlocfilehash: b6cef2824002d7e45e4f500bc6c1e9bc880cbd41
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23258642"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038207"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>Créer un rapport sur les suspensions dans les cas eDiscovery dans Office 365
   
@@ -32,7 +30,7 @@ Voir la section [plus d’informations](#more-information) pour une description 
     
 - Le script dans cet article présente un traitement minimale des erreurs. Le principal objectif consiste à créer rapidement des rapports sur les blocages qui sont associées dans les cas eDiscovery dans votre organisation.
     
-- Les exemples de scripts fournis dans cette rubrique ne sont pas pris en charge par n’importe quel programme de prise en charge standard de Microsoft ou le service. Les exemples de scripts sont fournis en l’état sans aucune garantie. Microsoft exclut toute garantie implicite, y compris, sans limitation, une garantie implicite de qualité ou d’adéquation à un usage particulier. Vous assumez tous les risques liés à l’utilisation ou les performances de la documentation et les exemples de scripts. En aucun cas Microsoft, ses auteurs ou toute autre impliqués dans la création, la production ou la remise des scripts est responsable de tout dommage que ce soit (y compris, sans limitation, pertes de bénéfices, interruption d’activité, la perte de informations professionnelles ou autre perte pécuniaire) résultant de l’utilisation ou l’impossibilité d’utiliser les exemples de scripts ou la documentation, même si Microsoft a été averti de la possibilité de tels dommages.
+- Les exemples de script fournis dans cette rubrique ne sont pris en charge dans aucun programme de support ou service standard de Microsoft. Les exemples de scripts sont fournis en l’état, sans garantie d’aucune sorte. Microsoft exclut toute garantie implicite, y compris, sans limitation, les garanties implicites de qualité marchande ou d’adéquation à un usage particulier. Vous assumez tous les risques liés à l’utilisation ou à l’exécution des exemples de scripts et de la documentation. En aucun cas, Microsoft, ses auteurs ou toute personne impliquée dans la création, la production ou la livraison des scripts ne sont responsables de dommages quelconques (y compris, sans limitation, pertes de bénéfices, interruption d’activité, perte d’informations commerciales ou toute autre perte pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
     
 ## <a name="step-1-connect-to-the-security-amp-compliance-center-using-remote-powershell"></a>Étape 1 : Connectez-vous à la sécurité &amp; centre de conformité à l’aide de PowerShell à distance
 
@@ -175,7 +173,7 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
     
     ![La sortie après avoir exécuté le script CaseHoldsReport.ps1](media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
-## <a name="more-information"></a>Plus d'informations
+## <a name="more-information"></a>Plus d’informations
 
 Le cas contient l’état qui est créé lorsque vous exécutez le script dans cet article contient les informations suivantes sur chaque suspension. Comme expliqué précédemment, vous devez être une administrateur pour renvoyer des informations pour toutes les suspensions placées dans votre organisation eDiscovery. Pour plus d’informations sur le cas des blocages, voir [cas eDiscovery de sécurité Office 365 &amp; centre de conformité](ediscovery-cases.md).
   

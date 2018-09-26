@@ -9,16 +9,15 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: ''
 ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
 description: 'Vous pouvez placer une boîte aux lettres en conservation pour litige pour conserver tout le contenu de la boîte aux lettres, y compris les éléments supprimés et les versions originales des éléments modifiés. '
-ms.openlocfilehash: 9c2d5c77a604e4dbe6e1f1db75142d3bf5790618
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 00f83d69d90f10659427986ffcb16f9e5358c054
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002843"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038037"
 ---
 # <a name="place-a-mailbox-on-litigation-hold"></a>Placement d'une boîte aux lettres en conservation pour litige
  
@@ -27,7 +26,7 @@ Vous pouvez placer une boîte aux lettres en conservation pour litige pour conse
 > [!IMPORTANT]
 > Blocage pour litige conserve les éléments du dossier éléments récupérables dans la boîte aux lettres de l’utilisateur. Selon le nombre et la taille des éléments supprimés ou modifiés, la taille du dossier éléments récupérables de la boîte aux lettres peut augmenter rapidement. Le dossier éléments récupérables est configuré avec un haute quota par défaut. Dans Exchange Online, ce quota est augmenté automatiquement lorsque vous placez une boîte aux lettres en conservation pour litige. Dans Exchange Server 2013, nous vous recommandons d’analyser les boîtes aux lettres qui sont mis en attente pour litige hebdomadaires pour s’assurer qu’ils n’atteignent les limites des quotas éléments récupérables. 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 <a name="sectionSection0"> </a>
 
 - Durée d’exécution estimée : 5 minutes

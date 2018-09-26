@@ -8,15 +8,16 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid: MET150
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Pour les rapports de conformité aux exigences réglementaires Office 365, Azure et Dynamics 365 Online, pour afficher des audits tiers, découvrez comment Microsoft préserver des données client, et comment vous pouvez être compatibles avec ISO, HIPAA, NIST, FINRA, PIBR et FedRAMP lorsque vous utilisez ces services en ligne.
-ms.openlocfilehash: a924ce157b89215e3c9909d791f0e8adb4cd684d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 886c6df96bfe0821dd277b279d5aa16d038fae18
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527944"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038217"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Prendre en main le portail de gestion de la confidentialité de Microsoft Service
 
@@ -119,28 +120,28 @@ Fonctions d’administration qui sont disponibles pour le compte d’administrat
   
  **Paramètres** permet d’affecter l’accès basé sur un rôle au Gestionnaire de conformité. Pour plus d’informations, voir la section « Autorisations et contrôle d’accès basé sur les rôles » dans le [Gestionnaire de conformité utilisés pour aider à répondre à la protection des données et des exigences réglementaires lors de l’utilisation des services en nuage Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control).
   
-### <a name="search"></a>Recherche
+### <a name="search"></a>Rechercher
 
-![Portail du service gestion de la confidentialité - champ d’entrée de recherche](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
+![Portail d’approbation de services – Champ d’entrée Recherche](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
   
-Développez le champ de recherche, entrez vos termes de recherche et appuyez sur entrée, cliquez sur la Loupe dans l’angle supérieur droit de la page. Le contrôle de recherche s’ouvre et affiche le terme de recherche dans le volet champ de recherche, et les résultats de la recherche seront affichent sous.
+Cliquez sur la loupe dans le coin supérieur droit de la page pour développer le champ d’entrée Recherche. Saisissez les mots que vous recherchez et appuyez sur Entrée. Le contrôle Recherche apparaît avec le mot recherché dans le champ d’entrée du volet de recherche, et les résultats de la recherche s’affichent en dessous.
   
-Par défaut, la recherche renvoie des résultats de Document, et vous pouvez utiliser les listes déroulantes filtrer par permettant d’affiner la liste des documents affichés, pour ajouter ou supprimer des résultats de la recherche de l’affichage. Vous pouvez utiliser plusieurs attributs de filtre en même temps pour affiner les documents renvoyés pour les services en nuage spécifiques, des catégories de conformité ou les pratiques de sécurité, les régions du monde ou de secteurs. Cliquez sur le lien du nom document pour télécharger le document.
+Par défaut, le contrôle Recherche affiche des documents dans les résultats. Vous pouvez utiliser les listes déroulantes situées à côté de « Filtrer par » pour affiner la liste des documents affichés, ou pour ajouter ou supprimer des résultats sur la page. Vous pouvez utiliser plusieurs filtres d’attribut en même temps pour réduire le nombre de documents liés à des services cloud, des catégories de pratiques de conformité ou de sécurité, des régions du monde, ou des secteurs d’activité spécifiques. Cliquez sur le lien du document pour le télécharger.
   
-![Portail du service gestion de la confidentialité - recherche sur des Documents avec filtre appliqué](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+![Portail d’approbation de services – Recherche de documents filtrée](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
   
 Cliquez sur le lien Gestionnaire de conformité pour afficher les résultats de recherche pour les contrôles d’évaluation de gestionnaire de conformité. Les résultats de recherche affichent la date de l’évaluation a été créée, le nom de l’évaluation de regroupement, le service en nuage applicable, et si les contrôles sont gérées par le client ou Microsoft.
   
-![Portail de gestion de la confidentialité du service - recherche sur les contrôles du Gestionnaire de conformité](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+![Portail d’approbation de services – Recherche sur les contrôles du Gestionnaire de conformité](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
   
 > [!NOTE]
-> Portail de gestion de la confidentialité du service rapports et les documents sont disponibles à télécharger pour au moins douze mois après la publication ou jusqu'à ce qu’une nouvelle version du document est disponible. 
+> Les rapports et les documents du Portail d’approbation de services peuvent être téléchargés dans les douze mois suivant leur publication ou jusqu’à ce qu’une nouvelle version du document soit disponible. 
   
-## <a name="localization-support"></a>Prise en charge de la localisation
+## <a name="localization-support"></a>Prise en charge de localisation
 
-Portail de gestion de la confidentialité du service permet de vous permet de visualiser le contenu de page dans différentes langues. Pour changer la langue de la page, cliquez sur l’icône de globe dans le coin inférieur gauche de la page simplement et sélectionnez la langue de votre choix. 
+Le Portail d’approbation de services vous permet d’afficher le contenu de la page dans différentes langues. Pour modifier la langue de la page, cliquez sur l’icône du globe dans le coin inférieur gauche de la page et sélectionnez la langue de votre choix. 
   
-![Portail de gestion de la confidentialité du service - localisée options du contenu](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+![Portail d’approbation de services – Options de localisation du contenu](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
   
 ## <a name="feedback"></a>Commentaires
 

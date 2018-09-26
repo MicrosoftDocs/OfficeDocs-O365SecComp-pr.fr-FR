@@ -8,16 +8,14 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MET150
 ms.assetid: 56e2978f-71b6-4141-b769-ad856d31bbec
 description: Dans le centre eDiscovery dans Office 365, vous pouvez rechercher toutes les boîtes aux lettres Exchange Online, SharePoint Online et des OneDrive pour les sites d’entreprise dans une recherche de découverte électronique unique. Pour rechercher toutes les sources de contenu dans l’organisation, un gestionnaire de découverte électronique doit avoir les autorisations de découverte électronique approprié pour chaque source de contenu.
-ms.openlocfilehash: b3508d5929ca2b5b7a937eb2dccf677a2968cbbc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 5612faf6113ceef292f90b49ec70ad7b30905646
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527943"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038097"
 ---
 # <a name="search-all-mailboxes-and-sites-using-the-ediscovery-center"></a>Rechercher dans toutes les boîtes aux lettres et tous les sites à l’aide du centre eDiscovery
 
@@ -31,7 +29,7 @@ Dans le centre eDiscovery dans Office 365, vous pouvez rechercher toutes les bo�
     
   - [Attribuer des autorisations eDiscovery dans SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=526885)
     
-  - [Attribuer des autorisations de découverte électronique aux sites OneDrive Entreprise](assign-permissions-to-onedrive-for-business-sites.md)
+  - [Attribuer des autorisations eDiscovery aux sites OneDrive Entreprise](assign-permissions-to-onedrive-for-business-sites.md)
     
 - Vous pouvez rechercher un maximum de 10 000 boîtes aux lettres et un nombre illimité de SharePoint Online et OneDrive pour les sites dans une requête de recherche de découverte électronique unique. Toutefois, si vous spécifiez les sites spécifiques à rechercher, la limite est de 100 sites.
     

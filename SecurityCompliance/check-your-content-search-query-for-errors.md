@@ -1,5 +1,5 @@
 ---
-title: Vérifiez votre requête de recherche de contenu pour les erreurs
+title: Vérifier la présence d’erreurs dans votre requête de recherche de contenu
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -8,19 +8,17 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 description: Vérifiez votre requête de mot clé pour la recherche de contenu pour les erreurs et les erreurs typographiques, tels que des caractères non pris en charge et en minuscules les opérateurs booléens, avant d’exécuter la recherche. Si nous trouve une erreur, nous vous suggérons une requête révisée.
-ms.openlocfilehash: 0d2119ceef4ce3777d3967a56357551e235e426c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 6ae14edc29bb7f8bab5dd2306282a69443872633
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528092"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038287"
 ---
-# <a name="check-your-content-search-query-for-errors"></a>Vérifiez votre requête de recherche de contenu pour les erreurs
+# <a name="check-your-content-search-query-for-errors"></a>Vérifier la présence d’erreurs dans votre requête de recherche de contenu
 
 Lorsque vous créez ou modifiez une recherche de contenu, vous pouvez avoir Office 365 pour vérifier votre requête pour les caractères non pris en charge et des opérateurs booléens ne peuvent pas être mise en majuscule. Comment ? Cliquez sur **vérifier la requête pour toute erreur** dans la page de requête d’une recherche de contenu. 
   

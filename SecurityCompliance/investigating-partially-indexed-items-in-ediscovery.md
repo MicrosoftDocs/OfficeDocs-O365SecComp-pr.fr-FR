@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: Partiellement des éléments indexés (également les éléments d’appel non indexé) sont des éléments de boîte aux lettres Exchange et des documents dans SharePoint et OneDrive que des sites pour une raison quelconque n’ont pas été entièrement indexée pour la recherche de contenu. Dans cet article, découvrez pourquoi les éléments ne peuvent pas être indexés pour la recherche et sont renvoyés en tant qu’éléments indexés partiellement, identifier les erreurs de recherche pour les éléments indexés partiellement et utiliser un script PowerShell pour déterminer l’exposition de votre organisation pour les courriers électroniques partiellement indexés éléments.
-ms.openlocfilehash: 4e8e8c31e6c5450a9b84a1240c2ae8d891c1bd6f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 98f794e80ea8a6016887ff139bc5b546c438f093
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528649"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038077"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Examen d’éléments partiellement indexés dans eDiscovery Office 365
 

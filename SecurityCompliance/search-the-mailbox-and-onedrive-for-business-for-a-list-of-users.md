@@ -1,5 +1,5 @@
 ---
-title: Recherche de contenu permet de rechercher les boîtes aux lettres et OneDrive pour le site de l’entreprise pour une liste d’utilisateurs
+title: Utiliser la recherche de contenu pour rechercher une liste d’utilisateurs dans la boîte aux lettres et OneDrive Entreprise
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -8,19 +8,17 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Utilisez la recherche de contenu et le script dans cet article pour rechercher les boîtes aux lettres et OneDrive pour les sites d’entreprise pour un groupe d’utilisateurs.
-ms.openlocfilehash: cc88f8e81a9883b8d392965db14994691878748d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e7f16ec0ca34d9f7f6155cab7e473119de3966cb
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527959"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038167"
 ---
-# <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Recherche de contenu permet de rechercher les boîtes aux lettres et OneDrive pour le site de l’entreprise pour une liste d’utilisateurs
+# <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Utiliser la recherche de contenu pour rechercher une liste d’utilisateurs dans la boîte aux lettres et OneDrive Entreprise
 
 L’Office 365 Security &amp; centre de conformité fournit un certain nombre de cmdlets Windows PowerShell qui vous permettent d’automatiser des tâches liées à la découverte du temps. Actuellement, création d’une recherche de contenu dans la sécurité &amp; centre de conformité pour rechercher un grand nombre d’emplacements de contenu dépositaire prend la préparation et du temps. Avant de créer une recherche, vous devez recueillir l’URL pour chaque site Business OneDrive, puis ajoutez chaque boîte aux lettres et O neDrive pour le site de l’entreprise pour la recherche. Dans les futures versions précédentes, il sera plus facile de la sécurité &amp; centre de conformité. En attendant, vous pouvez utiliser le script dans cet article pour automatiser ce processus. Ce script vous invite à fournir le nom de domaine du site Mon site dans votre organisation (par exemple, **contoso** dans l’URL https://contoso-my.sharepoint.com), répond à une liste de messages, le nom de la recherche de contenu nouveau et la requête de recherche à utiliser. Le script obtient OneDrive pour l’URL de l’entreprise pour chaque utilisateur dans la liste, puis crée et démarre une recherche de contenu qui recherche dans la boîte aux lettres et OneDrive pour le site de l’entreprise pour chaque utilisateur dans la liste, à l’aide de la requête de recherche que vous fournissez. 
   

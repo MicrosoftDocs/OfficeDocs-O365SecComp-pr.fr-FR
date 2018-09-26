@@ -1,5 +1,5 @@
 ---
-title: La déduplication dans les résultats de recherche de découverte électronique
+title: Déduplication dans les résultats de recherche eDiscovery
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -9,19 +9,17 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: Vous avez la possibilité de suppression des doublons des résultats de recherche de découverte électronique qui sont exportés afin qu’une seule copie d’un message électronique est exportée, même si plusieurs instances du même message a été trouvés dans différentes boîtes aux lettres.
-ms.openlocfilehash: 02a4f9f6db0fb8831d5e5cc13adaffbd0c4dcecc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 5e54f0e5841fdbd29d1ab8b6b9509ff06e827920
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528644"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038007"
 ---
-# <a name="de-duplication-in-ediscovery-search-results"></a>La déduplication dans les résultats de recherche de découverte électronique
+# <a name="de-duplication-in-ediscovery-search-results"></a>Déduplication dans les résultats de recherche eDiscovery
 
 Cet article décrit le fonctionnement de la déduplication des résultats de recherche eDiscovery et explique les limitations de l’algorithme de la déduplication.
   
@@ -62,7 +60,7 @@ Notez que des messages uniques peuvent également être marqués comme doublons 
 > [!IMPORTANT]
 > Si les limitations de l’algorithme de la déduplication peuvent avoir un impact sur la qualité de vos résultats de recherche, vous ne doivent pas activer la déduplication lorsque vous exportez des éléments. Si les situations décrites dans cette section sont peu de chances d’être un facteur dans vos résultats de recherche, et que vous souhaitez réduire le nombre d’éléments susceptibles d’être des doublons, vous devez envisager l’activation de la déduplication. 
   
-## <a name="more-information"></a>Plus d'informations
+## <a name="more-information"></a>Plus d’informations
 
 - Les informations de cet article s’appliquent lors de l’exportation des résultats de recherche à l’aide d’un des outils de découverte électronique suivants :
     
