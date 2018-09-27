@@ -15,12 +15,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Découvrez comment reconnaître et répondre à un compte de messagerie compromis dans Office 365
-ms.openlocfilehash: bf3350da88804639356100fb5be2403c76cbcec6
-ms.sourcegitcommit: 17dda7ece5c9e884944a92ac0f842cf1e62ec506
+ms.openlocfilehash: b10bf58aaebc46938e3962494ff30dfb1e226130
+ms.sourcegitcommit: 411713004251ee62d29b550eabea04c08a87e41f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23977589"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "25341419"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Réponse à un compte de messagerie compromis dans Office 365
 
@@ -72,7 +72,7 @@ Vous devez effectuer toutes les étapes suivantes pour accéder à votre compte 
 - Si votre identité locale est fédérée avec Office 365, vous devez modifier votre mot de passe local, puis vous devez en informer le compromis à votre administrateur.
 
 > [!TIP]
-> Il est vivement recommandé d’activer l’authentification multifacteur (MFA) afin d’empêcher les compromis, en particulier pour les comptes avec des privilèges d’administration.  Vous en apprendrez plus [ici](https://support.office.com/en-us/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
+> Il est vivement recommandé d’activer l’authentification multifacteur (MFA) afin d’empêcher les compromis, notamment pour les comptes disposant de privilèges d’administration.  Vous en apprendrez plus [ici](https://support.office.com/en-us/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Étape 2 Supprimez les adresses de transfert d’e-mail suspects
 1. Ouvrir le **Centre d’administration Office 365 > utilisateurs actifs**.

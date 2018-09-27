@@ -3,7 +3,7 @@ title: FAQ sur le chiffrement de messages Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 8/28/2018
+ms.date: 09/27/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Vous avez une question sur le fonctionnement des nouvelles fonctionnalités de protection de message dans Office 365 ? Recherchez une réponse ici.
-ms.openlocfilehash: 8fc3fa2378dfc8dba6ed17c042269f726235bc58
-ms.sourcegitcommit: a8884b9675559018e1fddec1c0cc2de0bc3bdde5
+ms.openlocfilehash: c580ef701f6ee98ea2fc71df792256b1792c73cd
+ms.sourcegitcommit: 411713004251ee62d29b550eabea04c08a87e41f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839954"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "25341429"
 ---
 # <a name="office-365-message-encryption-faq"></a>FAQ sur le chiffrement de messages Office 365
 
@@ -121,6 +121,10 @@ Oui. Utiliser les règles de flux de messagerie dans Exchange Online pour chiffr
 
 Actuellement vous pouvez uniquement définir des règles de flux de messagerie dans Exchange Online. Chiffrement n’est actuellement pas pris en charge dans DLP par le biais de la sécurité &amp; centre de conformité.
   
+## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>Puis-je ouvrir les messages chiffrés envoyés à une boîte aux lettres partagées ?
+
+Messages chiffrés actuellement ne sont pas pris en charge pour une boîte aux lettres partagée.
+
 ## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>Puis-je personnaliser les messages chiffrés avec personnalisation de mon entreprise ?
 
 Oui ! Pour plus d’informations sur la personnalisation des messages électroniques et le portail OME, consultez la rubrique Ajouter la marque de votre organisation à vos messages chiffrés. Voir [Ajouter marque de votre organisation à vos messages chiffrés.](add-your-organization-brand-to-encrypted-messages.md)
