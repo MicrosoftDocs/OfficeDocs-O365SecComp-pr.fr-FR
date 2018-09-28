@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Dans Office 365, les étiquettes vous aident à entreprendre les bonnes actions sur le contenu approprié. Grâce aux étiquettes, vous pouvez classer les données au sein de votre organisation à des fins de gouvernance, et appliquer des règles de rétention basées sur cette classification. Vous pouvez également utiliser des étiquettes pour implémenter la gestion des enregistrements dans Office 365.
-ms.openlocfilehash: e08a1772a7e04f459b80762e3da17600ef84c95a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 6c47f48a773b3b3078a5d4c83b01b5300ce82eda
+ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013748"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25002677"
 ---
 # <a name="overview-of-labels"></a>Vue d’ensemble des étiquettes
 
@@ -267,11 +267,20 @@ Après avoir sélectionné un modèle de stratégie, vous pouvez ajouter ou supp
     
 ![Options permettant d’identifier les types d’informations sensibles](media/de255881-f596-4c8d-8359-e974e3a0819a.png)
   
-### <a name="auto-apply-labels-to-content-with-specific-keywords"></a>Application automatique d’étiquettes au contenu avec des mots clés spécifiques
+### <a name="auto-apply-labels-to-content-with-specific-keywords-or-searchable-properties"></a>Application automatique d’étiquettes au contenu comprenant des mots clés spécifiques ou des propriétés pouvant faire l’objet d’une recherche
 
-Vous pouvez appliquer automatiquement des étiquettes au contenu remplissant certaines conditions. Les conditions actuellement disponibles prennent en charge l’application d’une étiquette au contenu comprenant des mots ou des phrases spécifiques. Vous pouvez affiner votre requête à l’aide des opérateurs de recherche tels que AND, OR et NOT. Pour obtenir plus d’informations sur ces opérateurs, consultez l’article [Requêtes par mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).
+Vous pouvez appliquer automatiquement des étiquettes au contenu remplissant certaines conditions. Les conditions actuellement disponibles prennent en charge l’application d’une étiquette au contenu comprenant des mots, des phrases spécifiques ou des propriétés pouvant faire l’objet d’une recherche. Vous pouvez affiner votre requête à l’aide des opérateurs de recherche tels que AND, OR et NOT. Pour obtenir plus d’informations sur ces opérateurs, consultez l’article :
+
+- [Requêtes par mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md)
+- [Référence de syntaxe de langage de requête de mot clé (KQL)](https://docs.microsoft.com/fr-FR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
   
-La prise en charge de l’ajout de propriétés utilisables dans une requête (par exemple, **subject:**) sera bientôt disponible. 
+Exemples de requêtes :
+
+- Exchange
+    - subject:"Quarterly Financials"
+- SharePoint et OneDrive Entreprise
+    - contenttype:contract
+    - site:`https://contoso.sharepoint.com/sites/teams/procurement` AND contenttype:contract
   
 Notez que les étiquettes basées sur une requête utilisent l’index de recherche pour identifier le contenu.
   
