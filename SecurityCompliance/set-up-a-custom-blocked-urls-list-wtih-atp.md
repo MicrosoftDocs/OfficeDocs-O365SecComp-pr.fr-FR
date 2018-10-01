@@ -3,7 +3,6 @@ title: Configurer une liste d’URL bloquée personnalisée à l’aide d’Offi
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 5/30/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 description: Lisez cet article pour apprendre à configurer une liste d’URL bloqués pour votre organisation à l’aide d’Office 365 avancée protection contre les menaces. Les URL bloquées s’appliquera aux messages électroniques et des documents Office en fonction de vos stratégies de liens fiables DAV.
-ms.openlocfilehash: cd1e7858c8929bf468b2a4d5e09ccde9d5adc7b1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 36d295e6924d2e9972c185657885fa25bd96bf08
+ms.sourcegitcommit: 7032830867eb3fc71760e04b8342aff174c5d757
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528146"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "25353250"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Configurer une liste d’URL bloquée personnalisée à l’aide d’Office 365 DAV fiables liens
 
@@ -56,9 +55,9 @@ Lisez cet article pour apprendre à configurer la liste des URL bloqué personna
     
 |**Exemple d’entrée**|**Fonction**|
 |:-----|:-----|
-|`contoso.com`ou`\*contoso.com\*`  <br/> |Bloque le domaine, les sous-domaines et les chemins d’accès, tel que `https://www.contoso.com`, `http://sub.contoso.com`, et`http://contoso.com/abc`  <br/> |
+|`contoso.com`ou`*contoso.com*`  <br/> |Bloque le domaine, les sous-domaines et les chemins d’accès, tel que `https://www.contoso.com`, `http://sub.contoso.com`, et`http://contoso.com/abc`  <br/> |
 |`http://contoso.com/a`  <br/> |Bloque un site `http://contoso.com/a` mais pas les autres sections`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a\*`  <br/> |Bloque un site `http://contoso.com/a` et sections supplémentaires`http://contoso.com/a/b`  <br/> |
+|`http://contoso.com/a*`  <br/> |Bloque un site `http://contoso.com/a` et sections supplémentaires`http://contoso.com/a/b`  <br/> |
    
 5. Lorsque vous avez terminé d’ajouter des URL, dans le coin inférieur droit de l’écran, cliquez sur **Enregistrer**.
     
@@ -68,7 +67,7 @@ Si vous souhaitez que certains groupes pour être en mesure d’afficher les URL
   
 ## <a name="related-topics"></a>Voir aussi
 
-[Protection de Microsoft Office 365 menace avancées](office-365-atp.md)
+[Protection avancée contre les menaces dans Office 365](office-365-atp.md)
   
 [Liens DAV Safe dans Office 365](atp-safe-links.md)
   

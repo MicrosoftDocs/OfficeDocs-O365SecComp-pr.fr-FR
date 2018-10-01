@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 description: Lorsque vous configurez vos stratégies de liens fiables DAV, vous pouvez inclure une réécriture non ' liste d’URL pour activer certaines personnes de votre organisation à visiter des sites que vous incluez dans votre liste.
-ms.openlocfilehash: 0ee9c87c90e6e30d6c43fb0de5291dd85b03be07
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: 3ce783a3f783889bdc59ad8d412c80a79e7dd914
+ms.sourcegitcommit: 7032830867eb3fc71760e04b8342aff174c5d757
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782161"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "25353260"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurer une liste d’URL non--réécriture personnalisée à l’aide d’Office 365 DAV fiables liens
 
@@ -52,9 +52,9 @@ Protection des liens fiables DAV utilise plusieurs listes, y compris la liste de
 
 - Les URL que vous spécifiez dans la liste « pas de rewrite » sont exclues liens sécurisés DAV pour les destinataires d’analyse que vous spécifiez.
  
-- Lorsque vous spécifiez une liste « pas de rewrite » pour une stratégie de liens fiables DAV, vous pouvez inclure jusqu'à trois astérisques générique (\*). Des caractères génériques (\*) sont considérées comme tels que pour les entrées de `contoso.com`, qui ne pas explicitement incluez les préfixes ou sous-domaines, comme `http://` ou `https://`. Cela signifie que l’entrée, tel que `contoso.com` est similaire à `\*contoso.com\*` pour votre liste « pas de rewrite ».
+- Lorsque vous spécifiez une liste « pas de rewrite » pour une stratégie de liens fiables DAV, vous pouvez inclure jusqu'à trois astérisques générique (\*). Des caractères génériques (\*) sont considérées comme tels que pour les entrées de `contoso.com`, qui ne pas explicitement incluez les préfixes ou sous-domaines, comme `http://` ou `https://`. Cela signifie que l’entrée, tel que `contoso.com` est similaire à `*contoso.com*` pour votre liste « pas de rewrite ».
 
-- Si vous avez déjà une liste d’URL dans votre liste des « pas de rewrite », veillez à consulter cette liste et ajouter des caractères génériques comme il convient. Par exemple, si votre liste existante a une entrée comme `http://contoso.com/a` et que vous souhaitez inclure plusieurs comme `http://contoso.com/a/b` dans votre stratégie, ajoutez un caractère générique à votre entrée afin qu’il ressemble à `http://contoso.com/a\*`.
+- Si vous avez déjà une liste d’URL dans votre liste des « pas de rewrite », veillez à consulter cette liste et ajouter des caractères génériques comme il convient. Par exemple, si votre liste existante a une entrée comme `http://contoso.com/a` et que vous souhaitez inclure plusieurs comme `http://contoso.com/a/b` dans votre stratégie, ajoutez un caractère générique à votre entrée afin qu’il ressemble à `http://contoso.com/a*`.
     
 - N’incluez pas une barre oblique (/) dans les URL que vous spécifiez dans votre liste des « pas de rewrite ». Par exemple, plutôt que d’entrer `contoso.com/` dans votre liste des « pas de rewrite », entrez `contoso.com`.
     
@@ -62,15 +62,15 @@ Les tableau Voici des exemples de ce que vous pouvez entrer et les effets que ce
     
 |**Exemple d’entrée**|**Fonction**|
 |:-----|:-----|
-|`\*contoso.com\*`  <br/> |Permet à des destinataires spécifiques à un domaine, des sous-domaines et des chemins d’accès, tel que `http://www.contoso.com`, `https://www.contoso.com`, `https://maps.contoso.com`, ou`http://www.contoso.com/a`  <br/> |
+|`*contoso.com*`  <br/> |Permet à des destinataires spécifiques à un domaine, des sous-domaines et des chemins d’accès, tel que `http://www.contoso.com`, `https://www.contoso.com`, `https://maps.contoso.com`, ou`http://www.contoso.com/a`  <br/> |
 |`http://contoso.com/a`  <br/> |Permet à des destinataires spécifiques à visiter un site comme `http://contoso.com/a`, mais pas les sections que`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a\*`  <br/> |Permet à des destinataires spécifiques à visiter un site comme `http://contoso.com/a` et sections`http://contoso.com/a/b`  <br/> |
+|`http://contoso.com/a*`  <br/> |Permet à des destinataires spécifiques à visiter un site comme `http://contoso.com/a` et sections`http://contoso.com/a/b`  <br/> |
    
   
 
 ## <a name="related-topics"></a>Voir aussi
 
-[Protection de Microsoft Office 365 menace avancées](office-365-atp.md)
+[Protection avancée contre les menaces dans Office 365](office-365-atp.md)
   
 [Liens DAV Safe dans Office 365](atp-safe-links.md)
   

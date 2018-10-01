@@ -1,5 +1,5 @@
 ---
-title: Protection de Microsoft Office 365 menace avancées
+title: Office 365 - Protection avancée contre les menaces
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 description: Protection contre les menaces avancées Office 365 inclut usurpation d’identité aide à la décision, liens fiables, pièces jointes fiables et des fonctionnalités anti-hameçonnage avancées. Protection contre les menaces avancées est également étendu aux fichiers dans SharePoint Online, OneDrive pour les entreprises et Teams Microsoft.
-ms.openlocfilehash: dbf604dfc6367ac225e57158e6b784952c081773
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 53488534d3a74f9e026142ed053dfcff5db6cbf9
+ms.sourcegitcommit: 7032830867eb3fc71760e04b8342aff174c5d757
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528139"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "25353270"
 ---
-# <a name="office-365-advanced-threat-protection"></a>Protection de Microsoft Office 365 menace avancées
+# <a name="office-365-advanced-threat-protection"></a>Office 365 - Protection avancée contre les menaces
 
 Office 365 Advanced Threat Protection (DAV) vous aide à protéger votre organisation contre les attaques par :
   
@@ -34,7 +34,7 @@ Office 365 Advanced Threat Protection (DAV) vous aide à protéger votre organis
     
 - Détecter lorsqu’un utilisateur tente d’emprunter l’identité de vos utilisateurs et les domaines personnalisés de votre organisation grâce à des [fonctionnalités anti-hameçonnage de DAV dans Office 365](atp-anti-phishing.md)
     
-Protection via Office 365 DAV est déterminée par les stratégies de l’équipe de sécurité de votre organisation définit pour les liens fiables, les pièces jointes sûres et Anti-hameçonnage. [Les rapports sont disponibles](view-reports-for-atp.md) pour afficher le fonctionne DAV pour votre organisation. Et, vous pouvez [Envoyer des fichiers suspects à Microsoft pour analyse](office-365-atp.md#submitlalware).
+**Protection via Office 365 DAV est déterminée par les stratégies de l’équipe de sécurité de votre organisation définit pour les liens fiables, pièces jointes fiables et Anti-hameçonnage**. Il est important de consulter régulièrement et de modifier vos stratégies pour les mettre à jour et de tirer parti des nouvelles fonctionnalités qui sont ajoutées au service. [Les rapports sont disponibles](view-reports-for-atp.md) pour afficher le fonctionne DAV pour votre organisation. Ces rapports peuvent également vous montrer les domaines où vous devrez peut-être passer en revue et mettre à jour vos stratégies. Et, si vous disposez des fichiers qui sont marqués comme les logiciels malveillants qui ne doivent pas être ou fichiers que vous souhaitez que Microsoft pour examiner, vous pouvez [Envoyer des fichiers à Microsoft pour analyse](office-365-atp.md#submitlalware).
   
 > [!IMPORTANT]
 > Office 365 DAV est inclus dans les abonnements, telles que Office 365 entreprise E5 et Office 365 éducation A5 et, depuis le 30 avril 2018, également les [fonctionnalités de sécurité Microsoft 365 Business](https://support.office.com/article/c123694a-1efb-459e-a8d5-2187975373dc). Si votre organisation a un abonnement à Office 365 qui n’inclut pas d’Office 365 DAV, vous pouvez acheter potentiellement DAV comme module complémentaire. Pour plus d’informations, voir [Office 365 Advanced Threat Protection Service Description](https://technet.microsoft.com/library/exchange-online-advanced-threat-protection-service-description.aspx). 
