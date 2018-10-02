@@ -3,7 +3,7 @@ title: Activer l’audit de boîte aux lettres dans Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/19/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: Dans Office 365, vous pouvez activer l’enregistrement d’audit boîte aux lettres pour enregistrer l’accès des boîtes aux lettres par les propriétaires de boîte aux lettres, les délégués et les administrateurs. Par défaut, l’audit de boîte aux lettres dans Office 365 n’est pas activé. Une fois que la boîte aux lettres enregistrement d’audit pour une boîte aux lettres, vous pouvez rechercher le journal d’audit de Office 365 pour les activités effectuées sur la boîte aux lettres.
-ms.openlocfilehash: a31a96c8c5c65965746a3a31bc924731289795f0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 9952cc94fe48e289e6eaf8de665a82cb3da4746d
+ms.sourcegitcommit: b6473cd6ba3f9ac79dc6a2040fc148020dfbe464
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527928"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "25358383"
 ---
 # <a name="enable-mailbox-auditing-in-office-365"></a>Activer l’audit de boîte aux lettres dans Office 365
   
@@ -129,14 +129,14 @@ Le tableau suivant répertorie les actions qui peuvent être enregistrées par b
 |:-----|:-----|:-----|:-----|:-----|
 |**Copier** <br/> |Un message a été copié dans un autre dossier.  <br/> |Oui  <br/> |Non  <br/> |Non  <br/> |
 |**Create** <br/> |Un élément est créé dans le dossier calendrier, Contacts, Notes ou les tâches dans la boîte aux lettres ; par exemple, une demande de réunion est créée. Notez que la création, l’envoi ou la réception d’un message n’est pas audités. En outre, la création d’un dossier de boîte aux lettres n’est pas analysé.  <br/> |Oui\*  <br/> |Oui\*  <br/> |Oui  <br/> |
-|**FolderBind** <br/> |Un utilisateur a accédé au dossier de boîte aux lettres. Cette action est également enregistrée lorsque l’administrateur ou un délégué ouvre la boîte aux lettres.  <br/> |Oui\*  <br/> |Oui\*\*  <br/> |Non  <br/> |
+|**FolderBind** <br/> |Un utilisateur a accédé au dossier de boîte aux lettres. Cette action est également enregistrée lorsque l’administrateur ou un délégué ouvre la boîte aux lettres.  <br/> |Oui  <br/> |Oui\*\*  <br/> |Non  <br/> |
 |**HardDelete** <br/> |Un message a été purgé du dossier Éléments récupérables.  <br/> |Oui\*  <br/> |Oui\*  <br/> |Oui  <br/> |
 |**MailboxLogin** <br/> |L'utilisateur s'est connecté à sa boîte aux lettres.  <br/> |Non  <br/> |Non  <br/> |Oui  <br/> |
 |**Messagebind ne** <br/> |Un message a été affiché dans le volet de visualisation ou ouvert.  <br/> |Oui  <br/> |Non  <br/> |Non  <br/> |
-|**Déplacer** <br/> |Un message a été déplacé vers un autre dossier.  <br/> |Oui\*  <br/> |Oui  <br/> |Oui  <br/> |
-|**MoveToDeletedItems** <br/> |Un message a été supprimé et déplacé vers le dossier Éléments supprimés.  <br/> |Oui\*  <br/> |Oui  <br/> |Oui  <br/> |
+|**Déplacer** <br/> |Un message a été déplacé vers un autre dossier.  <br/> |Oui  <br/> |Oui  <br/> |Oui  <br/> |
+|**MoveToDeletedItems** <br/> |Un message a été supprimé et déplacé vers le dossier Éléments supprimés.  <br/> |Oui\*  <br/> |Oui\*  <br/> |Oui  <br/> |
 |**SendAs** <br/> |Un message a été envoyé à l’aide de l’autorisation SendAs. Cela signifie qu’un autre utilisateur a envoyé le message comme s’il provenait du propriétaire de la boîte aux lettres.  <br/> |Oui\*  <br/> |Oui\*  <br/> |Non  <br/> |
-|**SendOnBehalf** <br/> |Un message a été envoyé à l’aide de l’autorisation SendOnBehalf. Cela signifie qu’un autre utilisateur a envoyé le message de la part du propriétaire de la boîte aux lettres. Le message indique au destinataire de la part de qui le message a été envoyé et qui a envoyé réellement le message.  <br/> |Oui\*  <br/> |Oui  <br/> |Non  <br/> |
+|**SendOnBehalf** <br/> |Un message a été envoyé à l’aide de l’autorisation SendOnBehalf. Cela signifie qu’un autre utilisateur a envoyé le message de la part du propriétaire de la boîte aux lettres. Le message indique au destinataire de la part de qui le message a été envoyé et qui a envoyé réellement le message.  <br/> |Oui\*  <br/> |Oui\*  <br/> |Non  <br/> |
 |**SoftDelete** <br/> |Un message a été définitivement supprimé ou supprimé (récupérable) du dossier Éléments supprimés. Les éléments supprimés récupérables sont déplacés vers le dossier Éléments récupérables.  <br/> |Oui\*  <br/> |Oui\*  <br/> |Oui  <br/> |
 |**Mettre à jour** <br/> |Un message ou ses propriétés ont été modifiés.  <br/> |Oui\*  <br/> |Oui\*  <br/> |Oui  <br/> |
 |**UpdateCalendarDelegation** <br/> |Une délégation de calendrier a été affectée à une boîte aux lettres. La délégation de calendrier donne à quelqu'un d’autre dans les mêmes autorisations d’organisation pour gérer le calendrier du propriétaire de la boîte aux lettres.  <br/> |Oui\*  <br/> |Non  <br/> |Oui\*  <br/> |
@@ -144,7 +144,7 @@ Le tableau suivant répertorie les actions qui peuvent être enregistrées par b
 |**UpdateInboxRules** <br/> |Une règle de boîte de réception a été ajoutée, supprimée ou modifiée. Règles de boîte de réception sont utilisés pour traiter les messages dans la boîte de réception en fonction de conditions spécifiées et prennent les mesures lorsque les conditions d’une règle sont remplies, telles que le déplacement d’un message dans un dossier spécifié ou suppression d’un message.  <br/> |Oui\*  <br/> |Oui\*  <br/> |Oui\*  <br/> |
    
 > [!NOTE]
-> <sup>\*</sup>Enregistré par défaut si l’audit est activé pour une boîte aux lettres. > <sup> \* </sup> Entrées pour les actions de lier dossier effectuées par les délégués sont consolidées. Une entrée de journal est générée pour l’accès à un dossier spécifique dans une période de 24 heures. > <sup> \* \* </sup> Un administrateur qui a été attribué l’autorisation accès total aux boîtes aux lettres d’un utilisateur est considéré comme un utilisateur délégué. 
+> <sup>\*</sup>Enregistré par défaut si l’audit est activé pour une boîte aux lettres.<br/><br/>  <sup>\*\*</sup>Consolidation des entrées pour lier des actions effectuées par les délégués du dossier. Une entrée de journal est générée pour l’accès à un dossier spécifique dans une période de 24 heures.<br/><br/><sup>\*\*\*</sup>Un administrateur qui a été attribué l’autorisation accès total aux boîtes aux lettres d’un utilisateur est considéré comme un utilisateur délégué. 
   
 Si vous avez besoin n’est plus certains types d’actions de boîte aux lettres à auditer, vous devez modifier la configuration de journalisation d’audit de la boîte aux lettres pour désactiver ces actions. Les entrées existantes ne sont pas supprimées jusqu'à ce que la limite d’âge de 90 jours pour les entrées du journal d’audit est atteint.
   
