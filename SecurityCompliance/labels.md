@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Dans Office 365, les étiquettes vous aident à entreprendre les bonnes actions sur le contenu approprié. Grâce aux étiquettes, vous pouvez classer les données au sein de votre organisation à des fins de gouvernance, et appliquer des règles de rétention basées sur cette classification. Vous pouvez également utiliser des étiquettes pour implémenter la gestion des enregistrements dans Office 365.
-ms.openlocfilehash: 6c47f48a773b3b3078a5d4c83b01b5300ce82eda
-ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
+ms.openlocfilehash: 3a99a3e563913a11da2d9f4a2eb745cb8fa80dd2
+ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25002677"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "25342812"
 ---
 # <a name="overview-of-labels"></a>Vue d’ensemble des étiquettes
 
@@ -267,22 +267,28 @@ Après avoir sélectionné un modèle de stratégie, vous pouvez ajouter ou supp
     
 ![Options permettant d’identifier les types d’informations sensibles](media/de255881-f596-4c8d-8359-e974e3a0819a.png)
   
-### <a name="auto-apply-labels-to-content-with-specific-keywords-or-searchable-properties"></a>Application automatique d’étiquettes au contenu comprenant des mots clés spécifiques ou des propriétés pouvant faire l’objet d’une recherche
+### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>Application automatique d’étiquettes au contenu comprenant des mots clés ou des propriétés pouvant faire l’objet d’une recherche
 
-Vous pouvez appliquer automatiquement des étiquettes au contenu remplissant certaines conditions. Les conditions actuellement disponibles prennent en charge l’application d’une étiquette au contenu comprenant des mots, des phrases spécifiques ou des propriétés pouvant faire l’objet d’une recherche. Vous pouvez affiner votre requête à l’aide des opérateurs de recherche tels que AND, OR et NOT. Pour obtenir plus d’informations sur ces opérateurs, consultez l’article :
+Vous pouvez appliquer automatiquement des étiquettes au contenu remplissant certaines conditions. Les conditions actuellement disponibles prennent en charge l’application d’une étiquette au contenu comprenant des mots, des phrases spécifiques ou des valeurs de propriété pouvant faire l’objet d’une recherche. Vous pouvez affiner votre requête à l’aide des opérateurs de recherche tels que AND, OR et NOT. 
+
+Pour obtenir plus d’informations sur la syntaxe de requête, consultez l’article suivant :
+
+- [Référence de syntaxe de langage de requête de mot clé (KQL)](https://docs.microsoft.com/fr-FR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+
+Les étiquettes basées sur une requête utilisent l’index de recherche pour identifier le contenu. Pour plus d’informations sur les propriétés valides utilisables dans une requête, consultez l’article suivant :
 
 - [Requêtes par mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md)
-- [Référence de syntaxe de langage de requête de mot clé (KQL)](https://docs.microsoft.com/fr-FR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [Vue d’ensemble des propriétés analysées et gérées dans SharePoint Server](https://docs.microsoft.com/fr-FR/SharePoint/technical-reference/crawled-and-managed-properties-overview)
   
 Exemples de requêtes :
 
 - Exchange
     - subject:"Quarterly Financials"
+    - recipients:garthf<!--nolink-->@contoso.com
+
 - SharePoint et OneDrive Entreprise
     - contenttype:contract
-    - site:`https://contoso.sharepoint.com/sites/teams/procurement` AND contenttype:contract
-  
-Notez que les étiquettes basées sur une requête utilisent l’index de recherche pour identifier le contenu.
+    - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
   
 ![Éditeur de requête](media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
   
