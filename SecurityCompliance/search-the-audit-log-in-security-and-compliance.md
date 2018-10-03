@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Utilisez le Office 365 Security &amp; centre de conformité pour la recherche dans le journal d’audit unifiée pour afficher l’activité utilisateur et l’administrateur de votre organisation Office 365. '
-ms.openlocfilehash: 4c56f6f0c5f5a1ace7b94fab63d839760045c66f
-ms.sourcegitcommit: 6562a0d171dacdcdb945d192f45ea1a4c0c1c0c3
+ms.openlocfilehash: 79aa544d7243a4f3a81aebea3ffce92e2ad057f8
+ms.sourcegitcommit: 09d34bf058c0afce2c3800f207d64020ca984d57
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24974684"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25363147"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Effectuer des recherches dans le journal d’audit dans le Centre de sécurité et de conformité Office 365
 
@@ -50,9 +50,9 @@ Vous devez trouver si un utilisateur affiché d’un document spécifique ou pur
 
 - Activité utilisateur et d’administration dans Dynamics 365
     
-- Activité utilisateur et d’administration dans Microsoft Flow
-
 - Activité utilisateur et d’administration dans Yammer
+ 
+- Activité utilisateur et d’administration dans Microsoft Flow
     
 - Activité utilisateur et d’administration dans Microsoft Stream
     
@@ -71,6 +71,15 @@ Veillez à lire le journal d’audit des éléments suivants avant de commencer 
     > [!IMPORTANT]
     > Si vous attribuez à un utilisateur le rôle journaux d’Audit en affichage seul ou des journaux d’Audit dans la page **autorisations** de sécurité &amp; centre de conformité, ils ne pourront recherche Office 365 dans le journal d’audit. Vous devez attribuer les autorisations dans Exchange Online. Il s’agit de l’applet de commande sous-jacent utilisé pour la recherche dans le journal d’audit étant une applet de commande Exchange Online. 
   
+- Lorsqu’une activité auditée est effectuée par un utilisateur ou un administrateur, un enregistrement d’audit est généré et stocké dans le journal d’audit de Office 365 pour votre organisation. La durée pendant laquelle un enregistrement d’audit est conservé (et de recherche dans le journal d’audit) dépend de votre abonnement à Office 365.
+
+     - **Office 365 E3** - d’Audit des enregistrements sont conservées pendant 90 jours. Cela signifie que vous pouvez rechercher le journal d’audit pour les activités qui ont été effectuées au cours des 90 derniers jours.
+
+     - **Office 365 E5** - d’Audit de la rétention des enregistrements pour 365 jours (un an). Cela signifie que vous pouvez rechercher le journal d’audit pour les activités qui ont été effectuées dans l’année dernière. Conservation des enregistrements d’audit de l’année est également disponible pour les organisations qui ont un abonnement E3 et un abonnement à Office 365 avancée conformité module complémentaire.
+
+        > [!NOTE]
+        > La période de rétention d’un an pour les enregistrements d’audit n’est actuellement disponible dans le cadre d’Office 365 Preview program et n’est disponible pour les organisations qui sont inscrits au programme Preview avec un abonnement E5. En outre, pour les activités qui ont été effectuées avant octobre 2018 seront toujours conservées pendant 90 jours uniquement des enregistrements d’audit. À compter d’octobre 2018, nouveaux enregistrements d’audit sont conservés pendant un an pour les organisations avec un abonnement E5 ou qui ont un abonnement E3 et un abonnement de module complémentaire de conformité avancées.
+
 - Si vous souhaitez désactiver la recherche du journal d’audit dans Office 365 pour votre organisation, vous pouvez exécuter la commande suivante dans PowerShell distant connecté à votre organisation Exchange Online :
     
   ```
@@ -89,8 +98,6 @@ Veillez à lire le journal d’audit des éléments suivants avant de commencer 
     
 - Si vous souhaitez télécharger par programme des données à partir du journal d’audit de Office 365, nous recommandons d’utiliser l’API d’activité de gestion Office 365 au lieu d’utiliser un script PowerShell. L’API d’activité de gestion Office 365 est un service web REST que vous pouvez utiliser pour développer des solutions de surveillance de la conformité pour votre organisation, la sécurité et opérations. Pour plus d’informations, voir [référence des API d’activité de gestion Office 365](https://go.microsoft.com/fwlink/?linkid=852309).
     
-- Vous pouvez rechercher le journal d’audit de Office 365 pour les activités qui ont été effectuées au cours des 90 derniers jours.
-    
 - Il peut prendre jusqu'à 30 minutes ou les 24 heures après un événement se produit pour l’entrée du journal d’audit correspondant à afficher dans les résultats de recherche. Le tableau suivant indique le temps que nécessaire pour les différents services dans Office 365.
     
 |**Service Office 365**|**30 minutes**|**24 heures**|
@@ -108,7 +115,7 @@ Veillez à lire le journal d’audit des éléments suivants avant de commencer 
 |Microsoft Project  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Microsoft Stream  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Microsoft Teams  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Power BI  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Power BI  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Sécurité &amp; centre de conformité  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |Sharepoint Online et OneDrive Entreprise  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |Sway  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
@@ -287,7 +294,8 @@ Cliquez sur un des liens suivants pour accéder à une table spécifique.
 |[Balancement des activités](#sway-activities) <br/> |[Activités de l’administration des utilisateurs](#user-administration-activities) <br/> |[Activités de l’administration du groupe AD Azure](#azure-ad-group-administration-activities) <br/> |
 |[Activités de l’administration d’applications](#application-administration-activities) <br/> |[Activités de l’administration des rôles](#role-administration-activities) <br/> |[Opérations de l’administration d’annuaire](#directory-administration-activities) <br/> |
 |[activités de découverte électronique](#ediscovery-activities) <br/> |[Activités de Power BI](#power-bi-activities) <br/> |[Activités Microsoft Teams](#microsoft-teams-activities) <br/> |
-|[Activités de Yammer](#yammer-activities) <br/> |[Microsoft Stream](#microsoft-stream) <br/> |[Journal d’audit de l’administrateur Exchange](#exchange-admin-audit-log) <br/> |
+|[Activités de Yammer](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> |[Microsoft Stream](#microsoft-stream) <br/>|
+|[Journal d’audit de l’administrateur Exchange](#exchange-admin-audit-log) <br/> |
    
   
 ### <a name="file-and-page-activities"></a>Activités de fichier et de page
@@ -640,6 +648,11 @@ Le tableau suivant répertorie l’utilisateur et le journal d’audit des activ
 |Nom du fichier mis à jour  <br/> |FileUpdateName  <br/> |Utilisateur modifie le nom d’un fichier.  <br/> |
 |Fichier visualisé  <br/> |FileVisited  <br/> |Utilisateur visualise un fichier.  <br/> |
    
+### <a name="microsoft-flow"></a>Microsoft Flow
+
+Vous pouvez rechercher le journal d’audit pour les activités in Microsoft Flow. Ces activités incluent la création, la modification et la suppression de flux et autorisations de flux. Pour plus d’informations sur l’audit des activités de flux, voir le blog [Microsoft flux Auditer maintenant disponibles dans Office 365 sécurité & centre de conformité](https://flow.microsoft.com/blog/security-and-compliance-center).
+
+
 ### <a name="microsoft-stream"></a>Microsoft Stream
   
 Vous pouvez rechercher le journal d’audit pour les activités dans Microsoft Stream. Ces activités incluent vidéo activités effectuées par les utilisateurs, les activités de canal de groupe et activités telles que la gestion des utilisateurs, la gestion des paramètres de l’organisation et l’exportation des rapports d’administration. Pour obtenir une description de ces activités, consultez la section « Activités enregistrées dans Microsoft Stream » dans [Les journaux d’Audit dans le flux de Microsoft](https://docs.microsoft.com/stream/audit-logs).
@@ -678,9 +691,16 @@ Consultez la section [activités contrôlé](#audited-activities) dans cet artic
 
 La plupart des données d’audit sont disponibles dans les 30 minutes, mais elle peut prendre jusqu'à 24 heures après qu’un événement se produit pour l’entrée du journal d’audit correspondant à afficher dans les résultats de recherche. Consultez le tableau dans la section [avant de commencer](#before-you-begin) de cet article qui indique le temps que nécessaire pour les événements dans les différents services Office 365 soit disponible.
 
-**Combien de temps sont les enregistrements d’audit conservés pour ?**
+**La durée pendant laquelle les enregistrements d’audit sont conservées pour ?**
 
-Enregistrements du journal d’audit sont actuellement conservées pendant 90 jours. Microsoft travaille activement sur un plan pour augmenter la taille limite. 
+Comme expliqué précédemment, la période de rétention pour les enregistrements d’audit dépend de l’abonnement de votre organisation Office 365.  
+
+- **Office 365 E3** - d’Audit des enregistrements sont conservées pendant 90 jours.
+
+- **Office 365 E5** - d’Audit de la rétention des enregistrements pour 365 jours (un an). Conservation des enregistrements d’audit de l’année est également disponible pour les organisations qui ont un abonnement E3 et un abonnement à Office 365 avancée conformité module complémentaire.
+
+     > [!NOTE]
+     > La période de rétention d’un an pour les enregistrements d’audit est actuellement disponible uniquement pour les organisations qui sont inscrits au programme Office 365 Preview.
 
 **Puis-je accéder par programme les données d’audit ?**
 
