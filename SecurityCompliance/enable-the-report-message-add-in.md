@@ -3,7 +3,7 @@ title: Activer le complément Signaler le message
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/28/2018
+ms.date: 10/04/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,44 +13,46 @@ search.appverid:
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 description: Découvrez comment activer le complément de Message de rapport pour Outlook et Outlook sur le web, pour des utilisateurs individuels ou la totalité de votre organisation.
-ms.openlocfilehash: 68b70cdb138ad38216f188116e576a24304a3769
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: 2eb12bd14f92e2d4ee26fbef817578d32e737b85
+ms.sourcegitcommit: e14dec9bed0c0009acbc1f1cb80b4d0794ad5739
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972266"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "25435091"
 ---
 # <a name="enable-the-report-message-add-in"></a>Activer le complément Signaler le message
 
-Le complément de Message de rapport pour Outlook permet aux utilisateurs de créer facilement des rapports e-mail mal classé, fiables ou malveillantes, Microsoft et ses filiales pour l’analyse. Microsoft utilise ces envois pour améliorer l’efficacité des technologies de protection de courrier électronique.
+Le complément de Message de rapport pour Outlook permet aux utilisateurs de créer facilement des rapports e-mail mal classé, fiables ou malveillantes, Microsoft et ses filiales pour l’analyse. Microsoft utilise ces envois pour améliorer l’efficacité des technologies de protection de courrier électronique. En outre, si votre organisation utilise les services de Cloud Microsoft incluant les [Menaces](office-365-ti.md)ou [Contre les menaces avancées Office 365](office-365-atp.md) , le complément de Message de rapport fournit l’équipe de sécurité de votre organisation avec des informations utiles ils peuvent utiliser pour examiner et mettre à jour des stratégies de sécurité. 
+
+Par exemple, supposons que personnes signalent un grand nombre de messages phishing. Cette surfaces d’informations dans le [Tableau de bord de sécurité](security-dashboard.md) et autres rapports. L’équipe de sécurité de votre organisation permettre utiliser ces informations comme une indication que les stratégies anti-hameçonnage devront être mis à jour. Ou, si un grand nombre de messages qui ont été marqués comme courrier indésirable comme légitime à l’aide du complément de Message de rapport signalez des personnes, l’équipe de sécurité de votre organisation devront ajuster les [stratégies de blocage du courrier indésirable](configure-the-anti-spam-policies.md).  
   
-Si vous êtes un utilisateur individuel, vous pouvez activer le complément de Message de rapport par vous-même. 
+Si vous êtes un utilisateur individuel, vous pouvez [Activer le complément de Message de rapport par vous-même](#get-the-report-message-add-in-for-yourself). 
   
-Si vous êtes un administrateur Exchange Online, vous pouvez activer le complément de Message de rapport pour votre organisation.
+Si vous êtes un administrateur Exchange Online, vous pouvez [Activer le complément de Message de rapport pour votre organisation](#get-and-enable-the-report-message-add-in-for-your-organization).
     
 ## <a name="get-the-report-message-add-in-for-yourself"></a>Obtenez le Message de rapport de complément pour vous-même
 
-1. Accédez à [https://store.office.com](https://store.office.com)et la recherche pour le complément de Message de rapport.
+1. Dans le [magasin d’Office](https://appsource.microsoft.com/product/office/WA104381180?src=office), obtenir le Message de rapport complément.
     
-2. Choisissez **obtenir maintenant** (ou **Ajouter** ). 
+2. Choisissez **obtenir maintenant IT**.<br/>![Déclaration de Message - maintenant](media/ReportMessageGETITNOW.png)<br/> 
     
 3. Passez en revue les termes du contrat de stratégie de confidentialité et d’utilisation. Puis cliquez sur **Continuer**. 
     
 4. Connectez-vous à votre messagerie électronique Office 365 à l’aide de votre travail compte école (pour une utilisation professionnelle) ou votre compte Microsoft (pour une utilisation personnelle).
     
+
 Une fois que le complément est installé et activé, vous verrez les icônes suivantes : 
 
 - Dans Outlook, l’icône ressemble à ceci : <br/> ![Icône Message Add-in rapport pour Outlook](media/OutlookReportMessageIcon.png)<br/>
 - Dans Outlook Web App, l’icône ressemble à ceci :<br/>![Outlook sur l’icône Ajouter dans un Message de rapport Web](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
 
-  
 Étape suivante, découvrez comment [utiliser le complément de Message de rapport](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
   
 ## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>Obtenir et activer le complément de Message de rapport pour votre organisation
 
 > [!IMPORTANT]
-> Vous devez être administrateur Exchange Online pour effectuer cette tâche.
-  
+> Vous devez être un administrateur global d’Office 365 ou Exchange Online administrateur pour effectuer cette tâche.
+
 1. Accédez à [https://portal.office.com](https://portal.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école. 
     
 2. Choisissez **Admin** pour accéder au centre d’administration. 
@@ -59,40 +61,49 @@ Une fois que le complément est installé et activé, vous verrez les icônes su
     
 4. Cliquez sur **organisation** \> **des compléments**. 
     
-5. Choisissez **+** \> **Ajouter à partir de l’Office Store**. 
+5. Choisissez **+**  >  **Ajouter à partir de l’Office Store**.<br/>![Choisissez Ajouter à partir de l’Office Store](media/EAC-Org-AddFromOfficeStore.png)<br/>L’Office Store dans votre navigateur web s’ouvre.
     
-6. Rechercher les messages d’état.
+6. Rechercher les messages d’état.<br/>![Rechercher les messages d’état](media/ReportMessageSearchOfficeStore.png)<br/>
     
-7. Dans la liste des **résultats de l’application** , rechercher **Un Message de rapport**, puis cliquez sur **obtenir maintenant** (ou **Ajouter** ). 
+7. Dans la liste des **applications** , sélectionnez **Rapport de Message**, puis cliquez sur **Obtenir les maintenant**.<br/>![Choisissez GET IT maintenant](media/ReportMessageGETITNOW.png)<br/> 
     
 8. Passez en revue les termes du contrat de stratégie de confidentialité et d’utilisation. Puis cliquez sur **Continuer**. 
     
-    ![Cliquez sur Continuer pour accepter les termes et la politique de confidentialité](media/3c813cd6-1601-4791-97dc-f8edbbd3fb6b.png)
+    ![Cliquez sur Continuer pour accepter les termes et la politique de confidentialité](media/ReportMessageTermsAndConditions.png)
   
-9. Dans l’écran de confirmation, cliquez sur **Oui**. 
+9. Un Assistant s’ouvre pour vous aider à configurer la révision de complément de Message de rapport les informations et cliquez sur **suivant** pour continuer.<br/>![Message complément Assistant Rapport pour Office 365](media/ReportMessageAdminInstallUI.png)<br/> 
+
+10. Spécifiez le paramètre par défaut que vous souhaitez que les utilisateurs ont pour le complément de Message de rapport.<br/>![Spécifier les paramètres par défaut pour le complément de Message de rapport](media/ReportMessageUserOptionsAdminsSet.png)<br/>
     
-10. Après avoir installé le complément de Message de rapport, vous devez l’activer. Pour cela, procédez comme suit :
-    
-1. Revenez au CAE et actualiser la fenêtre du navigateur.
-    
-2. Cliquez sur **organisation** \> **des compléments**. 
-    
-3. Dans la liste des compléments, sélectionnez **Rapport de Message**. 
-    
-    ![Dans le centre d’administration Exchange, vous pouvez activer le complément de Message de rapport pour Outlook](media/b496743c-55fa-4cdb-aa06-0b2a7aec6dab.png)
-  
-4. Choisissez **Modifier**et sélectionnez une option pour activer le complément. 
-    
-    ![Activer le complément de Message de rapport dans le CAE](media/578b1b66-3620-4a8a-9819-1c9cc6836f37.png)
-  
-5. Sélectionnez **Enregistrer**. 
-    
-> [!TIP]
-> Une fois que le complément est installé et activé, les personnes dans votre organisation voyez seront afficher les icônes suivantes : 
-  
+11. Spécifier qui obtient le Message de rapport de complément. <br/>![Spécifier qui obtient le Message de rapport de complément](media/ReportMessageChooseWhoGetsItAdminSettings.png)<br/>
+
+12. Sélectionnez **Enregistrer**.
+
+Selon ce que vous sélectionné à l’aide de l’Assistant, les personnes de votre organisation auront le complément Message d’état disponible. Les personnes dans votre organisation, voient les icônes suivantes : 
+
+- Dans Outlook, l’icône ressemble à ceci : <br/> ![Icône Message Add-in rapport pour Outlook](media/OutlookReportMessageIcon.png)<br/>
+- Dans Outlook Web App, l’icône ressemble à ceci :<br/>![Outlook sur l’icône Ajouter dans un Message de rapport Web](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
+
+
 Ensuite, découvrez comment [utiliser le complément de Message de rapport](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)et configurer une règle pour voir les messages électroniques signalés.
+
+## <a name="review-or-edit-the-default-settings-for-the-report-message-add-in"></a>Consulter ou modifier les paramètres par défaut pour le complément de Message de rapport
+
+Vous pouvez consulter et modifier les paramètres par défaut pour le Message de rapport complément à l’aide du centre d’administration. 
+
+> [!IMPORTANT]
+> Vous devez être un administrateur global d’Office 365 ou Exchange Online administrateur pour effectuer cette tâche.
+    
+1. Si vous avez uniquement installé le complément de Message de rapport pour votre organisation, vous serez déjà dans la page Services et compléments. Dans le cas contraire, accédez [ici](https://portal.office.com/adminportal/home#/Settings/ServicesAndAddIns) et connexion à l’aide de votre compte professionnel ou de l’école pour Office 365.
+
+2. Rechercher **Un Message de rapport**, puis sélectionnez-le.<br/>![Services et des compléments pour Office 365](media/ReportMessage-o365servicesaddins.png)<br/> 
+    
+3. Un volet s’ouvre et affiche les paramètres qui ont été activées pour le complément de Message d’état pendant le déploiement.<br/>![Complément de paramètres pour le Message d’état](media/ReportMessage-reviewaddinsettings.png)<br/> 
+
+4. Passez en revue et modifier les paramètres pour le complément de Message de rapport et si nécessaire, puis enregistrez vos modifications.
+    
   
-### <a name="set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users"></a>Définir une règle pour obtenir une copie des messages électroniques signalés par vos utilisateurs
+## <a name="set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users"></a>Définir une règle pour obtenir une copie des messages électroniques signalés par vos utilisateurs
 
 > [!IMPORTANT]
 > Vous devez être administrateur Exchange Online pour effectuer cette tâche.
@@ -131,6 +142,10 @@ Vous pouvez configurer une règle pour obtenir une copie des messages électroni
 
 [Utiliser le complément de Message de rapport](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
   
-[Office 365 - Protection avancée contre les menaces](office-365-atp.md)
+[Afficher les rapports de sécurité de messagerie de la sécurité &amp; centre de conformité](view-email-security-reports.md)
+
+[Afficher les rapports de Protection de menace avancées d’Office 365](view-reports-for-atp.md)
+
+[Utiliser l’Explorateur de solutions de sécurité &amp; centre de conformité](use-explorer-in-security-and-compliance.md)
   
 
