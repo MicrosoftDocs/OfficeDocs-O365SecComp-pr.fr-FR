@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 description: Microsoft Outlook sur les utilisateurs du web peuvent signaler hameçonnage et courrier indésirable (spam) à l’aide des options de rapport de courrier intégré. Vous pouvez également signaler à Microsoft si un message électronique a été incorrectement identifié comme indésirable (spam).
-ms.openlocfilehash: 4dab3013f2ca9918dc8529cb67113469ea945015
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: d495f5648d4e4ac7ee7335d58a4268bdfecb6109
+ms.sourcegitcommit: 4a7d7717f0da05cf5a3c506df2989a9d02f33dfa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972296"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "25450069"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Signaler les fraudes de messagerie et l’hameçonnage indésirables dans Outlook sur le web 
 
@@ -59,6 +59,8 @@ Quand un message est incorrectement identifié comme courrier indésirable par O
 ## <a name="for-more-information"></a>Pour plus d’informations
 
 [En savoir plus sur le courrier indésirable et le hameçonnage](https://go.microsoft.com/fwlink/p/?LinkId=270068)
+
+[Complément de création de rapports de courrier indésirable pour Microsoft Outlook](https://docs.microsoft.com/en-us/office365/securitycompliance/junk-email-reporting-add-in-for-microsoft-outlook)
   
   
 
