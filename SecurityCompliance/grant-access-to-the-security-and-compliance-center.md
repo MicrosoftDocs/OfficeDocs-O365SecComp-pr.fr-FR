@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Les utilisateurs doivent être affectées des autorisations de sécurité Office 365 &amp; centre de conformité avant qu’ils peuvent gérer une de ses fonctionnalités de sécurité ou de conformité.
-ms.openlocfilehash: c612c99f7d72b19d072d728eb4851532d4012414
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e0c8b655b1b3300e4ffa9aba1d94e65a9ef26121
+ms.sourcegitcommit: 2e41cc24ad92005084f2ba432e724bdcc4e295ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013798"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25450739"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>Donner aux utilisateurs l’accès à la la sécurité d’Office 365 &amp; centre de conformité
 
@@ -41,11 +41,7 @@ Pour plus d’informations sur les différentes autorisations que vous pouvez do
 
 1. [Se connecter à Office 365 et accédez au centre d’administration](https://go.microsoft.com/fwlink/p/?LinkId=525275).
     
-<<<<<<< HEAD
 2. Dans le centre d’administration Office 365, ouvrez le **Centre d’administration** , puis sur **sécurité &amp; conformité**. 
-=======
-2. Dans le centre d’administration Office 365, ouvrez le **Centre d’administration** , puis sur **sécurité &amp; conformité**. 
->>>>>>> master
     
 3. Dans la sécurité &amp; centre de conformité, accédez à **autorisations**.
     

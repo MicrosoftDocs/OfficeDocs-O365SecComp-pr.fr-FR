@@ -1,7 +1,7 @@
 ---
-title: Présentation de la note sécurisé Office 365
-ms.author: brendonb
-author: brendonb
+title: Présentation du degré de sécurisation Office 365
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/23/2018
 ms.audience: Admin
@@ -13,34 +13,22 @@ search.appverid:
 - MET150
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
 description: Demandez jamais votre organisation Office 365 vraiment est-il sécurisé ? Temps d’arrêt vous demandez - le Score de sécuriser Office 365 est là pour aider. Score sécurisé analyse la sécurité de votre organisation Office 365 basée sur les activités normales et les paramètres de sécurité et attribue une note. Considérer comme une note de crédit pour la sécurité.
-ms.openlocfilehash: 02f958ec4b9b9287f5db8ddbb5cd83f3cef68007
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 958744696e0d9d8c7e8f29b9bdc460c5aa05eb3a
+ms.sourcegitcommit: 2e41cc24ad92005084f2ba432e724bdcc4e295ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527584"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25450749"
 ---
-# <a name="introducing-the-office-365-secure-score"></a>Présentation de la note sécurisé Office 365
+# <a name="introducing-the-office-365-secure-score"></a>Présentation du degré de sécurisation Office 365
 
 Demandez jamais votre organisation Office 365 vraiment est-il sécurisé ? Temps d’arrêt vous demandez - le Score de sécuriser Office 365 est là pour aider. Score sécurisé analyse la sécurité de votre organisation Office 365 basée sur les activités normales et les paramètres de sécurité et attribue une note. Considérer comme une note de crédit pour la sécurité.
   
-## <a name="in-this-article"></a>Contenu de cet article
-
-[Comment obtenir au Score sécurisé ?](office-365-secure-score.md#howtoaccess)
-  
-[Comment cela fonctionne-t-il ?](office-365-secure-score.md#HowWorks)
-  
-[Comment cela va m’aider ?](office-365-secure-score.md#HowHelps)
-  
-[FAQ](office-365-secure-score.md#FAQ)
-  
 ## <a name="how-do-i-get-to-secure-score"></a>Comment obtenir au Score sécurisé ?
-<a name="howtoaccess"> </a>
 
 Toute personne disposant d’autorisations d’administrateur (administrateur global ou un rôle d’administration personnalisée) pour un abonnement à Office 365 entreprise Premium ou entreprise peut accéder le Score d’informations sécurisé à [https://securescore.office.com](https://securescore.office.com). Les utilisateurs qui ne sont pas affectés à un rôle d’administrateur sera en mesure d’accéder de Score d’informations sécurisé. Toutefois, admins permet de partager leurs résultats avec d’autres personnes dans leur organisation.
   
 ## <a name="how-does-it-work"></a>Comment fonctionne-t-il ?
-<a name="HowWorks"> </a>
 
 Sécurisation du Score illustrations les services qu’Office 365, vous utilisez (comme OneDrive, SharePoint et Exchange), puis examine les paramètres et les activités et les compare à une base établie par Microsoft. Vous obtiendrez un score dépendent de comment aligné avec les meilleures pratiques de sécurité.
   
@@ -63,7 +51,6 @@ Cliquez sur n’importe quel point de données pour afficher un découpage de vo
 ![Sous l’onglet de l’Analyseur de Score affichant un point de données sélectionné du graphique](media/b8427837-2ed9-4319-ba71-7d03bd99129c.png)
   
 ## <a name="how-will-it-help-me"></a>Comment cela va m’aider ?
-<a name="HowHelps"> </a>
 
 À l’aide de Score d’informations sécurisé vous aide à renforcer la sécurité de votre organisation en encourageant vous permet d’utiliser les fonctionnalités de sécurité intégrées dans Office 365 (dont beaucoup vous déjà acheté mais ne Sachez pas informés de). En savoir plus sur ces fonctionnalités que vous utilisez l’outil vous permettent d’exercer toute confiance que vous prenez les mesures à protéger votre organisation contre les menaces.
   
@@ -75,7 +62,6 @@ Consultez notre [billet de blog](https://go.microsoft.com/fwlink/?linkid=836898)
 > Le Score d’informations sécurisé n’exprime pas une mesure absolue de probable que vous êtes à obtenir franchi. Il exprime l’étendue à laquelle vous avez adoptées contrôles dont vous pouvant décaler le risque d’être franchi. Aucun service ne garantit que vous ne serez pas franchi, et le Score d’informations sécurisé ne doit pas être interprété comme une garantie en aucune façon. 
   
 ## <a name="faqs"></a>FAQ
-<a name="FAQ"> </a>
 
 ### <a name="who-can-use-secure-score"></a>Qui peut utiliser le Score d’informations sécurisé ?
 
@@ -118,5 +104,9 @@ Si vous rencontrez des problèmes, faites-le nous savoir en le publiant sur le [
 ### <a name="my-organization-only-has-certain-security-features-does-this-affect-my-score"></a>Mon organisation ne comporte que certaines fonctionnalités de sécurité. Cela affecte-t-il mon score ?
 
 Le Score d’informations sécurisé calcule votre note basées sur les services que vous avez acheté. Par exemple, si vous avez acheté uniquement un plan Exchange Online, vous ne sont pas marqués pour les fonctionnalités de sécurité SharePoint Online. Le dénominateur de la note est la somme de toutes les lignes de base pour les contrôles qui s’appliquent aux produits que vous avez acheté. Le numérateur est la somme de tous les contrôles pour lesquels vous, ou partiellement achevée, les actions à réaliser ce contrôle.
+
+## <a name="related-topics"></a>Voir aussi
+
+[Vue d’ensemble du tableau de bord de sécurité](security-dashboard.md)
   
 
