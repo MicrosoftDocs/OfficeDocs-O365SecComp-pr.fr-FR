@@ -3,7 +3,6 @@ title: Afficher les rapports de sécurité de messagerie de la sécurité &amp; 
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 08/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,16 +12,16 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: Découvrez comment trouver et utiliser les rapports de sécurité de messagerie pour votre organisation avec Office 365 pour entreprises. Rapports de sécurité de messagerie sont disponibles dans la sécurité &amp; centre de conformité.
-ms.openlocfilehash: 81716a3ecc506d36c786d53068f7d2cce8a44a9a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0dd0c2ee7090e488d8619e71c6e4931f1934e9b0
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528773"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454341"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Afficher les rapports de sécurité de messagerie de la sécurité &amp; centre de conformité
 
-Une variété de sécurité de messagerie électronique des rapports sont disponibles dans la sécurité &amp; centre de conformité pour vous aider à voir la façon dont des fonctionnalités anti-spam et contre les programmes malveillants dans Office 365 sont protège votre organisation. Si vous disposez des autorisations nécessaires, vous pouvez afficher ces rapports dans la sécurité &amp; centre de conformité en accédant aux **rapports** \> **tableau de bord**.
+Une variété de sécurité de messagerie électronique des rapports sont disponibles dans la sécurité &amp; centre de conformité pour vous aider à voir la façon dont des fonctionnalités anti-spam et contre les programmes malveillants dans Office 365 sont protège votre organisation. Si vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-these-reports), vous pouvez afficher ces rapports dans la sécurité &amp; centre de conformité en accédant aux **rapports** \> **tableau de bord**.
   
 ![La sécurité &amp; tableau de bord de centre de conformité peut vous aider à voir où travaille protection contre les menaces avancées](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   

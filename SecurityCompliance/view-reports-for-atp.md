@@ -12,20 +12,20 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: Découvrez comment trouver et utiliser les rapports pour Office 365 avancée contre les menaces de sécurité &amp; centre de conformité.
-ms.openlocfilehash: 13b2a4c142a223a8a912c9017b6033b0b5a1548b
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: 4a76c6a5b888142dc4c35af432fa61916145d648
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782111"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454301"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Afficher les rapports de Protection de menace avancées d’Office 365
 
-Si votre organisation a [Contre les menaces avancées Office 365](office-365-atp.md) (DAV) et que vous disposez des autorisations nécessaires, vous pouvez utiliser plusieurs rapports DAV dans la sécurité &amp; centre de conformité. (Accédez aux **rapports** \> **tableau de bord**.)
+Si votre organisation a [Contre les menaces avancées Office 365](office-365-atp.md) (DAV) et que vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-these-reports), vous pouvez utiliser plusieurs rapports DAV dans la sécurité &amp; centre de conformité. (Accédez aux **rapports** \> **tableau de bord**.)
   
 ![La sécurité &amp; tableau de bord de centre de conformité peut vous aider à voir où travaille protection contre les menaces avancées](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
-Rapports DAV incluent le rapport d’état Threat protection, le rapport de Types de fichiers DAV et le rapport de Disposition de Message DAV. Cet article décrit les rapports DAV et inclut des liens vers des rapports supplémentaires à afficher.
+Rapports DAV incluent le [rapport d’état de protection de menace](#threat-protection-status-report), le [rapport de Types de fichiers DAV](#atp-file-types-report)et le [rapport de Disposition de Message DAV](#atp-message-disposition-report). Cet article décrit les rapports DAV et inclut des liens vers [des rapports supplémentaires à afficher](#additional-reports-to-view).
   
 ## <a name="threat-protection-status-report"></a>Rapport d’état Threat protection
 
@@ -77,9 +77,9 @@ Outre les rapports DAV décrites dans cet article, les [rapports de sécurité d
   
 Et, si votre organisation dispose des [Informations sur les menaces Office 365](office-365-ti.md), vous pouvez également [Utilisez l’Explorateur de la sécurité &amp; centre de conformité](use-explorer-in-security-and-compliance.md).
   
-## <a name="what-permissions-are-needed-to-view-these-reports"></a>Les autorisations requises pour afficher ces rapports ?
+## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>Les autorisations requises pour afficher les rapports DAV ?
 
-Pour pouvoir afficher et utiliser les rapports de sécurité de messagerie décrites dans cet article, vous devez disposer d’un rôle approprié est affecté de la sécurité &amp; centre de conformité et dans le centre d’administration Exchange.
+Pour pouvoir afficher et utiliser les rapports décrits dans cet article, vous devez disposer d’un rôle approprié est affecté de la sécurité &amp; centre de conformité et dans le centre d’administration Exchange.
   
 |**Groupe de rôles**|**Où affecté**|**En savoir plus**|
 |:-----|:-----|:-----|

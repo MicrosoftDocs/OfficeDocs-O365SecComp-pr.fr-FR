@@ -19,20 +19,22 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La fonctionnalité de liens fiables offre-heure des clics de vérification des liens hypertexte dans les documents Office et dans les messages électroniques. Utilisez les liens sécurisés pour protéger votre organisation contre les attaques par hameçonnage et les autres attaques.
-ms.openlocfilehash: 9199c69d73a1585d76181c7a5feba79e465289db
-ms.sourcegitcommit: e14dec9bed0c0009acbc1f1cb80b4d0794ad5739
+ms.openlocfilehash: 75703cbe6b6a5a5d102570288bb20e6814d095fc
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "25435111"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454371"
 ---
 # <a name="office-365-atp-safe-links"></a>Liens fiables ATP Office 365
+
+## <a name="overview-of-office-365-atp-safe-links"></a>Vue d’ensemble de liens de DAV Safe Office 365
 
 Office 365 DAV fiables liens (liens fiables DAV) (ainsi que les [Pièces jointes sûres Office 365 DAV](atp-safe-attachments.md)) est un ensemble de fonctionnalités de sécurité offertes dans le cadre [d’Office 365 avancée protection contre les menaces](office-365-atp.md) pour les entreprises. Liens approuvés DAV peuvent aider à protéger votre organisation en fournissant-heure des clics de vérification des adresses web (URL) dans [les messages électroniques](#how-atp-safe-links-works-with-email) et des [documents Office](#how-atp-safe-links-works-with-office-documents). Protection est définie par le biais de [liens fiables DAV stratégies](set-up-atp-safe-links-policies.md) définies par votre équipe de sécurité d’Office 365. 
   
 Une fois vos stratégies de liens fiables DAV sont mis en place, les administrateurs globaux Office 365, les administrateurs de sécurité et les lecteurs de sécurité peuvent [Afficher les rapports de protection contre les menaces avancées](view-reports-for-atp.md). Les informations contenues dans ces rapports peuvent aider votre équipe de sécurité à prendre des mesures supplémentaires pour protéger votre organisation ou de rechercher des incidents de sécurité.
          
-## <a name="how-atp-safe-links-works-with-email"></a>Fonctionnement des liens fiables DAV avec messagerie
+### <a name="how-atp-safe-links-works-with-urls-in-email"></a>Fonctionnement des liens fiables DAV avec des URL dans le message électronique
 
 À un niveau élevé, voici le fonctionne de protection des liens fiables DAV pour les URL dans le message électronique (hébergé dans Office 365, pas sur site) :
   
@@ -58,7 +60,7 @@ Une fois vos stratégies de liens fiables DAV sont mis en place, les administrat
     
     - Si l’URL est déterminée pour être sûr, le site Web s’ouvre.
     
-## <a name="how-atp-safe-links-works-with-office-documents"></a>Fonctionnement des liens fiables DAV avec les documents Office
+### <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>Fonctionnement des liens fiables DAV avec des URL dans les documents Office
 
 À un niveau élevé, voici le fonctionne de protection DAV des liens sécurisés pour les URL dans les applications Office 365 ProPlus (versions actuelles de Word, Excel et PowerPoint sur Windows ou Mac, les applications Office sur iOS ou Android appareils, Visio sur Office Online, OneNote en ligne et Windows) :
   
@@ -78,25 +80,9 @@ Une fois vos stratégies de liens fiables DAV sont mis en place, les administrat
     
   - Si l’URL est fiable, l’utilisateur est dirigé vers le site Web.
 
-## <a name="new-features-added-to-atp-safe-links"></a>Nouvelles fonctionnalités ajoutées aux liens fiables DAV
-
-Nous poursuivons à ajouter de nouvelles fonctionnalités aux liens fiables DAV. Voici quelques exemples :
-  
-- Au début de la liaison tardive 2017 octobre, protection liens fiables DAV est étendue pour appliquer aux URL dans un e-mail ainsi que les URL dans les documents Office 365 ProPlus, telles que Word, Excel, PowerPoint et Visio sur Windows, ainsi que Office applications sur les périphériques iOS ou Android. (Assurez-vous que vous utilisez [l’Authentification moderne pour Office](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)).
-    
-- Au début de mars 2018, protection liens fiables DAV est étendue s’appliquent aux messages envoyés entre les personnes dans votre organisation. (Assurez-vous [d’examiner et modifier vos stratégies de liens fiables DAV](set-up-atp-safe-links-policies.md).)
-
-- À partir de juin 2018, personnes utilisent quand Outlook Web Application (OWA), liens fiables DAV affiche l’URL d’origine et pas afficher URL réécrites. Cela permet aux utilisateurs d’afficher les liens d’origine dans le message électronique. (Nous appelons cette visbility lien native).
-
-- Début de septembre 2018, [pages d’avertissement Office 365 DAV](atp-safe-links-warning-pages.md) fonctionnalité un jeu de couleurs, plus de détails et la possibilité de passer à un site en dépit de donné avertissements et des recommandations. 
-  
-- À partir du deuxième semestre 2018, protection liens fiables DAV est étendue pour appliquer aux URL dans Office Online (Word en ligne, Online Excel, PowerPoint en ligne et OneNote en ligne) et Office 365 ProPlus sur Mac. (Assurez-vous [d’examiner et modifier vos stratégies de liens fiables DAV](set-up-atp-safe-links-policies.md).)
-   
-- Visibilité de lien native au début de la liaison tardive 2018, est disponible dans Outlook. Les utilisateurs sont en mesure d’afficher l’URL d’origine (non réécrit les URL) dans le message électronique, qu’ils fassent OWA ou Outlook.
-    
 ## <a name="how-to-get-atp-safe-links-protection"></a>Comment obtenir la protection des liens fiables DAV
 
-Fonctionnalités des liens fiables DAV font partie de la [Protection contre les menaces avancées](office-365-atp.md), inclus dans Office 365 entreprise E5. Si votre organisation utilise un autre abonnement Office 365 pour entreprises, contre les menaces avancées peut être acheté comme module complémentaire. Pour plus d’informations, voir [Office 365 Platform Service Description : Office 365 sécurité &amp; centre de conformité](https://technet.microsoft.com/en-us/library/dn933793.aspx) et [acheter ou modifier un module complémentaire pour Office 365 pour entreprises](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6).
+Fonctionnalités de liens fiables DAV font partie de [Protection contre les menaces avancées](office-365-atp.md), qui est inclus dans Office 365 entreprise E5, Microsoft 365 Business et Microsoft 365 pour entreprises. Si votre organisation utilise un autre abonnement Office 365 pour entreprises, contre les menaces avancées peut être acheté comme module complémentaire. Pour plus d’informations, voir [Office 365 Platform Service Description : Office 365 sécurité &amp; centre de conformité](https://technet.microsoft.com/en-us/library/dn933793.aspx) et [acheter ou modifier un module complémentaire pour Office 365 pour entreprises](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6).
   
 Les fonctionnalités des liens fiables DAV sont actifs quand :
   
@@ -108,21 +94,36 @@ Les fonctionnalités des liens fiables DAV sont actifs quand :
     
 - **Que courrier électronique de votre organisation est hébergée dans Office 365**, pas dans un serveur local. 
     
-## <a name="make-sure-atp-safe-links-protection-is-in-place"></a>Assurez-vous que la protection des liens fiables DAV est en place
+### <a name="how-to-make-sure-atp-safe-links-protection-is-in-place"></a>Pour rendre la protection de liens fiables DAV qu’est en place
 
-Un excellent moyen de voir le fonctionne de protection des liens fiables DAV pour votre organisation est en [affichage des rapports de protection contre les menaces avancées](view-reports-for-atp.md). En outre, un administrateur global ou de sécurité, veillez à consulter vos [stratégies de liens fiables DAV](set-up-atp-safe-links-policies.md). Stratégies de liens fiables DAV pour déterminer si protection applicable des liens hypertexte dans les messages électroniques, ou à l’URL dans des documents Office.
+Un excellent moyen de voir le fonctionne de protection des liens fiables DAV pour votre organisation est en [affichage des rapports de protection contre les menaces avancées](view-reports-for-atp.md). En outre, comme un administrateur global ou administrateur de la sécurité, n’oubliez pas passer en revue vos [stratégies de liens fiables DAV](set-up-atp-safe-links-policies.md). Stratégies de liens fiables DAV pour déterminer si protection applicable des liens hypertexte dans les messages électroniques, ou à l’URL dans des documents Office.
 
-## <a name="example-scenarios-where-atp-safe-links-protection-might-or-might-not-be-in-place"></a>Exemples de scénarios où protection liens fiables DAV peut ou ne peut pas en place
+### <a name="example-scenarios-where-atp-safe-links-protection-might-or-might-not-be-in-place"></a>Exemples de scénarios où protection liens fiables DAV peut ou ne peut pas en place
   
 Le tableau suivant décrit quelques exemples de scénarios où protection liens fiables DAV peut ou ne peut pas en place. (Dans tous les cas, nous partons du principe que l’organisation a Office 365 entreprise E5.)
   
 |**Exemple de scénario**|**Protection des liens fiables DAV applicable dans ce cas ?**|
 |:-----|:-----|
-|Jean est un membre d’un groupe qui possède des stratégies de liens fiables DAV couvrant les URL dans le courrier électronique et des documents Office. Jean ouvre une présentation que quelqu'un envoyés dans PowerPoint 2016, puis clique sur une URL de la présentation.  <br/> |Oui. Les stratégies de liens fiables DAV définis s’appliquent à de Jean groupe, de Jean courrier électronique et des documents Word, Excel, PowerPoint ou Visio Jean s’ouvre, dans la mesure où Jean est connectée et l’utilisation Office 365 ProPlus sur des appareils Android, iOS ou Windows.  <br/> |
+|Jean est un membre d’un groupe qui possède des stratégies de liens fiables DAV couvrant les URL dans le courrier électronique et des documents Office. Jean ouvre une présentation PowerPoint que quelqu'un envoyé, puis clique sur une URL de la présentation.  <br/> |Oui. Les stratégies de liens fiables DAV définis s’appliquent à de Jean groupe, de Jean courrier électronique et des documents Word, Excel, PowerPoint ou Visio Jean s’ouvre, dans la mesure où Jean est connectée et l’utilisation Office 365 ProPlus sur des appareils Android, iOS ou Windows.  <br/> |
 |Dans l’organisation, non globale ou de sécurité de Chris les administrateurs ont défini des stratégies de liens fiables DAV encore. Chris reçoit un message électronique contenant une URL vers un site Web malveillant. Chris connaît l’URL est malveillant et clique sur le lien.  <br/> |Non. La stratégie par défaut qui couvre les URL pour tout le monde dans l’organisation doit être définie dans l’ordre de protection à mettre en place.  <br/> |
 |Dans organisation, non globale ou de sécurité Pat administrateurs défini ou modifié les stratégies de liens fiables DAV encore. Pat s’ouvre un document Word et clique sur une URL dans le fichier.  <br/> |Stratégie de No. A qui inclut les documents Office doit être défini dans l’ordre de protection à mettre en place. Voir [définir des stratégies de liens fiables DAV dans Office 365](set-up-atp-safe-links-policies.md).<br/> |
 |Organisation de Lee dispose d’une stratégie de liens fiables DAV ayant `http://tailspintoys.com` répertorié en tant qu’un site Web bloqué. Lee reçoit un message électronique qui contient une URL vers `http://tailspintoys.com/aboutus/trythispage`. Lee clique sur l’URL.<br/> |Cela dépend si l’intégralité du site et tous ses sous-pages sont inclus dans la liste des bloqué URL. Voir [configurer une liste d’URL bloquée personnalisée à l’aide de liens fiables DAV](set-up-a-custom-blocked-urls-list-wtih-atp.md).<br/> |
 |Importation des collègues de Jean, Marie envoie un courrier électronique à Jean, ne pas savoir que le courrier électronique contienne une URL malveillante.  <br/> |Cela dépend si les stratégies de liens fiables DAV sont définies pour le courrier électronique envoyé au sein de l’organisation. Voir [définir des stratégies de liens fiables DAV dans Office 365](set-up-atp-safe-links-policies.md).<br/> |
+
+## <a name="new-features-are-continually-being-added-to-atp-safe-links"></a>Nouvelles fonctionnalités sont continuellement en cours d’ajout aux liens fiables DAV
+
+Nous poursuivons à ajouter de nouvelles fonctionnalités aux liens fiables DAV. Parfois, une nouvelle fonctionnalité appelle pour les stratégies de liens fiables DAV être révisé et mis à jour. Voici quelques exemples :
+  
+- Au début de la liaison tardive 2017 octobre, protection liens fiables DAV est étendue pour appliquer aux URL dans un e-mail ainsi que les URL dans les documents Office 365 ProPlus, telles que Word, Excel, PowerPoint et Visio sur Windows, ainsi que Office applications sur les périphériques iOS ou Android. (Assurez-vous que vous utilisez [l’Authentification moderne pour Office](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)).
+    
+- Au début de mars 2018, protection liens fiables DAV est étendue s’appliquent aux messages envoyés entre les personnes dans votre organisation. (Assurez-vous [d’examiner et modifier vos stratégies de liens fiables DAV](set-up-atp-safe-links-policies.md).)
+ 
+- À partir du deuxième semestre 2018, protection liens fiables DAV est étendue pour appliquer aux URL dans Office Online (Word en ligne, Online Excel, PowerPoint en ligne et OneNote en ligne) et Office 365 ProPlus sur Mac. (Assurez-vous [d’examiner et modifier vos stratégies de liens fiables DAV](set-up-atp-safe-links-policies.md).)
+
+- Début de septembre 2018, [pages d’avertissement Office 365 DAV](atp-safe-links-warning-pages.md) fonctionnalité un jeu de couleurs, plus de détails et la possibilité de passer à un site en dépit de donné avertissements et des recommandations. 
+ 
+- À partir de 2018 octobre et présentant les prochains mois plusieurs, lorsque personnes utilisent Outlook Web Application (OWA) ou Outlook, les liens sécurisés DAV n'affiche pas les URL d’origine, réécrit URL. (Nous appelons cette visibilité lien native).
+
    
 ## <a name="related-topics"></a>Voir aussi
 

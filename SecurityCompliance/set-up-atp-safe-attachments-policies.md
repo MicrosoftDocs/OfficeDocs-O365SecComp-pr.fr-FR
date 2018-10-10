@@ -3,7 +3,6 @@ title: Définir des stratégies Office 365 DAV approuvés en pièce jointe
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 5/8/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Définir des stratégies de pièces jointes fiables pour protéger votre organisation à partir des fichiers malveillants dans le message électronique.
-ms.openlocfilehash: bc52522a45071776835efe20f57cf37c415d2436
-ms.sourcegitcommit: 9826013c3e0532ae5d01b3d88a14691f8dd0f6b7
+ms.openlocfilehash: c57f9320c7cd2b8b75bc2dc58d1f72ce136acbb6
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25092940"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454281"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Définir des stratégies Office 365 DAV approuvés en pièce jointe
 
@@ -43,9 +42,6 @@ Personnes régulièrement envoient, recevoir et partager des pièces jointes, te
 - Autoriser jusqu'à 30 minutes pour votre stratégie de nouveau ou mis à jour pour se propager sur tous les centres de données Office 365.
     
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Étape 2 : Configurer une stratégie de pièces jointes sûres DAV (ou en modifier)
-
-> [!TIP]
-> Vous pouvez configurer une stratégie de pièces jointes sûres DAV en utilisant le Office 365 Security &amp; centre de conformité ou le centre d’administration Exchange (CAE). **Nous recommandons l’utilisation de la sécurité de 365 Office &amp; centre de conformité**. 
   
 1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous avec votre compte professionnel ou de l’école. 
     
@@ -88,7 +84,7 @@ Lorsque vous définissez vos stratégies de pièces jointes sûres DAV, vous cho
    
 ## <a name="related-topics"></a>Voir aussi
 
-[Office 365 - Protection avancée contre les menaces](office-365-atp.md)
+[Protection avancée contre les menaces dans Office 365](office-365-atp.md)
   
 [Pièces jointes DAV Safe dans Office 365](atp-safe-attachments.md)
   
