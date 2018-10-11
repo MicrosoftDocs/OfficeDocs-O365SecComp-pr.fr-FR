@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 description: Protection contre les menaces avancées Office 365 inclut usurpation d’identité aide à la décision, liens fiables, pièces jointes fiables et des fonctionnalités anti-hameçonnage avancées. Protection contre les menaces avancées est également étendu aux fichiers dans SharePoint Online, OneDrive pour les entreprises et Teams Microsoft.
-ms.openlocfilehash: fed816ec8cd0e3e7a6b5118fde35d81647b94f02
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: e3b282118b5fde0374bb9f052e7efe8a13e2fd70
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454351"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496858"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 - Protection avancée contre les menaces
 
@@ -51,7 +51,7 @@ Une fois que vous avez DAV, l’étape suivante consiste à votre équipe de sé
   
 ## <a name="define-policies-for-atp"></a>Définir des stratégies pour DAV
 
-- **[Configurer des stratégies anti-hameçonnage de DAV dans Office 365](set-up-atp-anti-phishing-policies.md)** , y compris les attaques de l’emprunt d’identité pour protéger contre les attaques qui envoient des messages électroniques qui semblent à partir de domaines ou des personnes de confiance 
+- **[Configurer des stratégies anti-hameçonnage de DAV dans Office 365](set-up-anti-phishing-policies.md)** , y compris les attaques de l’emprunt d’identité pour protéger contre les attaques qui envoient des messages électroniques qui semblent à partir de domaines ou des personnes de confiance 
 
 - **[Définir des stratégies de liens fiables DAV dans Office 365](set-up-atp-safe-links-policies.md)** , y compris la [liste URL bloqué personnalisée](set-up-a-custom-blocked-urls-list-wtih-atp.md) et [liste des URL personnalisée « Pas de rewrite »](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) de votre organisation
     
@@ -69,7 +69,7 @@ Une fois vos stratégies DAV sont mis en place, les rapports sont disponibles po
     
 3. Si nécessaire, ajuster vos stratégies de sécurité. Voir les ressources suivantes :
 
-  - [Stratégies anti-hameçonnage DAV dans Office 365](set-up-atp-anti-phishing-policies.md)
+  - [Stratégies anti-hameçonnage DAV dans Office 365](set-up-anti-phishing-policies.md)
     
   - [Stratégies de liens fiables DAV dans Office 365](set-up-atp-safe-links-policies.md)
     
@@ -82,10 +82,10 @@ Une fois vos stratégies DAV sont mis en place, les rapports sont disponibles po
 
 - Si vous recevez un message électronique (avec ou sans pièce jointe) que vous souhaitez envoyer à Microsoft pour analyse, utilisez le [complément de Message de rapport](enable-the-report-message-add-in.md). 
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Afficher les rapports de protection contre les menaces avancées](view-reports-for-atp.md)
   
-[Menaces de sécurité Office 365 la gestion &amp; centre de conformité](threat-management.md)
+[Threat management in the Office 365 Security &amp; Compliance Center](threat-management.md)
   
 

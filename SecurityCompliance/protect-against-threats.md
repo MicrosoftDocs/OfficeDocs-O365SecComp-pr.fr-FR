@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: Découvrez comment Office 365 pour entreprises peuvent aider à protéger votre organisation contre une variété de menaces, y compris l’usurpation d’identité, logiciels malveillants, du courrier indésirable, les tentatives de hameçonnage et contre les accès aux données.
-ms.openlocfilehash: 4534e12280b5e627c2594c0365262a5c7c14a8c4
-ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
+ms.openlocfilehash: 18e91b3a27ff9722a285a4c84f810876e1cab462
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "24011266"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496848"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Se protéger contre les menaces dans Office 365
 
@@ -46,7 +46,7 @@ Découvrez Office 365 score de blocage du courrier indésirable, le filtrage des
     
 - [Envoi d’un contenu suspect à Microsoft](https://technet.microsoft.com/en-us/library/dn762129%28v=exchg.150%29.aspx)
     
-## <a name="advanced-threat-protection"></a>Protection avancée contre les menaces
+## <a name="advanced-threat-protection"></a>Advanced Threat Protection
 
 Configurer des stratégies pour gérer l’usurpation d’identité, protection contre les attaques par hameçonnage et intercepter les URL malveillantes ou des fichiers dans les messages électroniques avec Advanced Threat Protection (DAV).
   
@@ -54,7 +54,7 @@ Configurer des stratégies pour gérer l’usurpation d’identité, protection 
     
 - [En savoir plus sur l’aide à la décision usurpation d’identité](learn-about-spoof-intelligence.md)
     
-- [Configurer les stratégies anti-hameçonnage DAV](set-up-atp-anti-phishing-policies.md)
+- [Configurer des stratégies anti-hameçonnage](set-up-anti-phishing-policies.md)
     
 - [Configuration des stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md)
     

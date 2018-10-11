@@ -1,9 +1,9 @@
 ---
-title: Configurer votre client Office 365 pour accroître la sécurité
+title: Configurer votre client Office 365 pour une sécurité accrue
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
-ms.date: 6/27/2018
+ms.date: 10/11/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -11,14 +11,14 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Vous guide dans la configuration recommandée pour les paramètres au niveau du client qui affectent la sécurité de votre environnement Office 365. Vos besoins en matière de sécurité peuvent nécessiter plus ou moins de sécurité. Utilisez ces recommandations comme point de départ.
-ms.openlocfilehash: e81c3e18bccc9ccaab7c6f018c6f40b5ea796e14
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: de3a1d19e09144105f9576b3a4eb8ed76eb08585
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013868"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496868"
 ---
-# <a name="configure-your-office-365-tenant-for-increased-security"></a>Configurer votre client Office 365 pour accroître la sécurité
+# <a name="configure-your-office-365-tenant-for-increased-security"></a>Configurer votre client Office 365 pour une sécurité accrue
 
 Cette rubrique vous guide tout au long de la configuration recommandée pour les paramètres au niveau du client qui affectent la sécurité de votre environnement Office 365. Vos besoins en matière de sécurité peuvent nécessiter plus ou moins de sécurité. Utilisez ces recommandations comme point de départ.
   
@@ -32,9 +32,9 @@ L’Office 365 Security &amp; centre de conformité inclut des fonctionnalités 
   
 |Zone ***|Inclut une stratégie par défaut ***|Recommandation ***|
 |:-----|:-----|:-----|
-|**DAV anti-hameçonnage** <br/> |Non  <br/> | Si vous avez un domaine personnalisé, créez une stratégie anti-hameçonnage pour protéger les comptes de messagerie de vos utilisateurs plus importantes, telles que votre PDG et pour protéger votre domaine. Passez en revue la [définir une stratégie d’anti-hameçonnage DAV](set-up-atp-anti-phishing-policies.md) et créer une stratégie à l’aide de l’exemple comme guide : « exemple : Anti-hameçonnage stratégie pour protéger un utilisateur et un domaine. »|
+|**Anti-hameçonnage** <br/> |Oui  <br/> | Si vous avez un domaine personnalisé, créez une stratégie anti-hameçonnage pour protéger les comptes de messagerie de vos utilisateurs plus importantes, telles que votre PDG et pour protéger votre domaine. Passez en revue la [définir une stratégie anti-hameçonnage](set-up-anti-phishing-policies.md) et créer une stratégie à l’aide de l’exemple comme guide : « exemple : Anti-hameçonnage stratégie pour protéger un utilisateur et un domaine. »|
 |**Moteur anti-programme malveillant** <br/> |Oui  <br/> | Modifier la stratégie par défaut :  <br/> • Des pièces jointes courantes de Types de filtre, sélectionnez sur  <br/><br>  Vous pouvez également créer des stratégies de filtrage de programmes malveillants personnalisée et les appliquer à des utilisateurs, groupes ou domaines dans votre organisation.  <br/> <br> Plus d’informations :  <br/> • [Protection contre les programmes malveillants](https://technet.microsoft.com/en-us/library/jj200669%28v=exchg.150%29.aspx) <br/> • [Configurer les stratégies anti-programme malveillant](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |
-|**Pièces jointes DAV fiable** <br/> |Non  <br/> | Dans la page principale pour les pièces jointes fiables, protéger les fichiers de SharePoint, OneDrive et Microsoft Teams en activant cette case :  <br/>  • Activer DAV pour SharePoint, OneDrive et les équipes de Microsoft  <br/> <br> Ajouter une nouvelle stratégie de pièces jointes sécurisées avec ces paramètres :  <br/>  • Bloc — blocage actuelles et futures de courriers électroniques et les pièces jointes par un programme malveillant détecté (choisir cette option)  <br/>  • Activer redirection — (cette case à cocher et entrez une adresse de messagerie, par exemple un compte d’administration ou mise en quarantaine)  <br/>  • Appliquer la sélection ci-dessus si les logiciels malveillants analyse les pièces jointes arrive à expiration ou erreur se produit (cochez cette case)  <br/>  • Appliqué à — le domaine du destinataire est (sélectionnez votre domaine)  <br/>  <br>Plus d’informations : [définir des stratégies de pièces jointes sûres Office 365 DAV](set-up-atp-safe-attachments-policies.md) <br/> |
+|**Pièces jointes fiables ATP** <br/> |Non  <br/> | Dans la page principale pour les pièces jointes fiables, protéger les fichiers de SharePoint, OneDrive et Microsoft Teams en activant cette case :  <br/>  • Activer DAV pour SharePoint, OneDrive et les équipes de Microsoft  <br/> <br> Ajouter une nouvelle stratégie de pièces jointes sécurisées avec ces paramètres :  <br/>  • Bloc — blocage actuelles et futures de courriers électroniques et les pièces jointes par un programme malveillant détecté (choisir cette option)  <br/>  • Activer redirection — (cette case à cocher et entrez une adresse de messagerie, par exemple un compte d’administration ou mise en quarantaine)  <br/>  • Appliquer la sélection ci-dessus si les logiciels malveillants analyse les pièces jointes arrive à expiration ou erreur se produit (cochez cette case)  <br/>  • Appliqué à — le domaine du destinataire est (sélectionnez votre domaine)  <br/>  <br>Plus d’informations : [définir des stratégies de pièces jointes sûres Office 365 DAV](set-up-atp-safe-attachments-policies.md) <br/> |
 |**Liens DAV fiable** <br/> |Oui  <br/> | Ajoutez ce paramètre à la stratégie par défaut pour toute l’organisation :  <br/> • Utiliser les liens sécurisés dans : Office 365 ProPlus, Office pour iOS et Android (sélectionnez cette option).  <br/> <br>Stratégie recommandée pour des destinataires spécifiques :  <br/>  • URL seront réécrites et comparées à une liste de liens malveillants connus lorsque l’utilisateur clique sur le lien (sélectionnez cette option).  <br/>  • Les pièces jointes fiables à utiliser pour analyser le contenu téléchargeable (cochez cette case).  <br/>  • Appliqué à — le domaine du destinataire est (sélectionnez votre domaine).  <br/> <br> Plus d’informations : [les liens sans échec Office 365 DAV](atp-safe-links.md).  <br/> |
 |**Blocage du courrier indésirable (filtrage de messagerie)** <br/> |Oui  <br/> | Les points à surveiller pour :  <br/>  • Trop de courrier indésirable, choisissez les paramètres personnalisés et de modifier la stratégie de filtrage du courrier indésirable par défaut.  <br/>  Aide à la décision de • usurpation d’identité, passez en revue les expéditeurs sont l’usurpation de votre domaine. Bloquer ou autoriser les expéditeurs.<br/>  <br>Plus d’informations : [Protection de blocage du courrier indésirable messagerie Office 365](anti-spam-protection.md).  <br/> |
 |**DKIM (DomainKeys identifié messagerie)** <br/> |Oui  <br/> |DKIM est un processus d’authentification qui peuvent aider à protéger les expéditeurs et destinataires de falsifié (usurpés) et au courrier électronique de phishing. Votre client inclut une signature par défaut pour votre domaine. Créer une signature DKIM supplémentaire si vous ajoutez des domaines à votre client.<br/> <br>Plus d’informations : [DKIM utilisés pour valider le courrier sortant envoyé à partir de votre domaine personnalisé dans Office 365](https://technet.microsoft.com/en-us/library/mt695945%28v=exchg.150%29.aspx) <br/> |
@@ -110,7 +110,7 @@ Plus d’informations :
     
 - Rubrique relative aux [informations supplémentaires concernant Microsoft Cloud App Security](https://www.microsoft.com/en-us/cloud-platform/cloud-app-security)
     
-- [Vue d’ensemble de la sécurité d’application Office 365 dans le nuage](office-365-cas-overview.md)
+- [Overview of Office 365 Cloud App Security](office-365-cas-overview.md)
     
 ![Tableau de bord Cloud App Security](media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
   

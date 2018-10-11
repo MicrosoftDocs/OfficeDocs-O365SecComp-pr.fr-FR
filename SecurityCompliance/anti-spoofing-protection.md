@@ -1,9 +1,9 @@
 ---
-title: L’usurpation d’identité contre la protection dans Office 365
+title: Protection anti-usurpation dans Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 7/2/2018
+ms.date: 10/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,20 +12,20 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: Cet article explique comment Office 365 atténue contre les attaques par hameçonnage qu’utilise falsifié expéditeur domaines, c'est-à-dire, qui sont usurpés. Pour ce faire, il analyse les messages et le blocage de celles qui peuvent être authentifiés neithe à l’aide des méthodes d’authentification standard de courrier électronique, ni les autres techniques de réputation de l’expéditeur. Cette modification est en cours implémentée pour réduire le nombre d’organisations dans Office 365 sont affichent dans les attaques par phishing.
-ms.openlocfilehash: bbcfbcdf32c87e070f10c9478a7c5978e909f009
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 37eddfcad9bc5e412f62dd857178eafa8cac9355
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22559219"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496898"
 ---
-# <a name="anti-spoofing-protection-in-office-365"></a>L’usurpation d’identité contre la protection dans Office 365
+# <a name="anti-spoofing-protection-in-office-365"></a>Protection anti-usurpation dans Office 365
 
 Cet article explique comment Office 365 atténue contre les attaques par hameçonnage qu’utilise falsifié expéditeur domaines, c'est-à-dire, qui sont usurpés. Il y parvient en analysant les messages et de blocage de ceux qui ne peuvent pas être authentifiés à l’aide des méthodes d’authentification standard de courrier électronique, ni les autres techniques de réputation de l’expéditeur. Cette modification est en cours implémentée pour réduire le nombre de clients sont exposés à des attaques de phishing.
   
 Cet article décrit également pourquoi ce changement est effectué, comment les clients peuvent préparer à cette modification, comment afficher les messages qui seront affectés, comment créer des rapports sur les messages, comment limiter le nombre de faux positifs, ainsi que comment expéditeurs à Microsoft doivent préparer modifier.
   
-La technologie anti-usurpation de Microsoft est initialement déployée clients E5 et Office 365 Advanced Threat Protection (DAV). Toutefois, en raison de la façon dont tous les filtres à l’occasion d’eux, les clients non DAV et même Outlook.com les utilisateurs peuvent également être affectés.
+La technologie anti-usurpation de Microsoft a été initialement déployée à ses organisations qui avaient un abonnement à Office 365 entreprise E5 ou avaient acheté module complémentaire de leur abonnement Office 365 Advanced Threat Protection (DAV). À compter d’octobre, 2018, nous avons étendu la protection pour les organisations ayant ainsi que Exchange Online Protection (EOP). En outre, en raison de la manière que tous nos filtres Découvrez chacun des autres utilisateurs Outlook.com peuvent également être affectées.
   
 ## <a name="how-spoofing-is-used-in-phishing-attacks"></a>Utilisation de l’usurpation d’identité dans les attaques par hameçonnage
 
@@ -174,7 +174,7 @@ Authentication-Results: spf=none (sender IP is 1.2.3.4)
 From: sender @ example.com
 To: receiver @ contoso.com
 ```
-Après avoir anti-usurpation, si vous êtes un client de protection contre les menaces avancées ou E5, la valeur compauth est marquée (non-DAV et non E5 clients ne sont pas affectées) :
+Après avoir anti-usurpation, si vous avez Office 365 entreprise E5, EOP ou DAV, la valeur compauth est marquée :
   
 ```
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
@@ -408,24 +408,24 @@ Cette fonctionnalité est actuellement en cours de développement. Lorsque plus 
   
 ### <a name="understanding-how-spam-phishing-and-advanced-phishing-detections-are-combined"></a>Comprendre comment spam, hameçonnage et l’hameçonnage avancée détections sont combinées
 
-Les clients Exchange Online - non DAV et DAV - sont en mesure de spécifier les actions à entreprendre lorsque le service identifie les messages comme des programmes malveillants, le courrier indésirable, du courrier indésirable de niveau de confiance élevé, l’hameçonnage et en bloc. Toutefois, avec l’introduction de nouvelles stratégies Anti-hameçonnage pour les clients DAV et le fait qu’un message peut-être atteint plusieurs types de détection (par exemple, les logiciels malveillants, le hameçonnage et emprunt d’identité de l’utilisateur), il peut être une certaine confusion quant à laquelle s’applique la stratégie. 
+Les organisations qui utilisent Exchange Online, avec ou sans DAV, pouvant spécifier les actions à entreprendre lorsque le service identifie les messages comme des programmes malveillants, le courrier indésirable, du courrier indésirable de niveau de confiance élevé, l’hameçonnage et en bloc. Avec les stratégies Anti-hameçonnage ATP pour les clients DAV et les stratégies Anti-hameçonnage pour les clients EOP et le fait qu’un message peut-être atteint plusieurs types de détection (par exemple, les logiciels malveillants, phishing et emprunt d’identité utilisateur), il peut y avoir une certaine confusion quant à laquelle stratégie s’applique. 
   
 En règle générale, la stratégie appliquée à un message est identifiée dans l’en-tête X-Forefront-Antispam-Report dans la propriété CAT (catégorie). 
   
-|**Priority**|**Stratégie**|**Catégorie**|**Où gérée ?**|**S'applique à**|
+|**Priority (Priorité)**|**Stratégie**|**Catégorie**|**Où gérée ?**|**S'applique à**|
 |:-----|:-----|:-----|:-----|:-----|
-|1  <br/> |Malware :   <br/> |MALW  <br/> |[Stratégie de programmes malveillants](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Tous les clients  <br/> |
-|2  <br/> |Hameçonnage  <br/> |PHSH  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tous les clients  <br/> |
-|3  <br/> |Courrier indésirable à probabilité élevée  <br/> |HSPM  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tous les clients  <br/> |
-|4  <br/> |L’usurpation d’identité  <br/> |USURPATION D’IDENTITÉ  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553), [aide à la décision usurpation d’identité](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |DAV uniquement  <br/> |
-|5  <br/> |Courrier indésirable  <br/> |MONITEUR DE PORT STANDARD  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tous les clients  <br/> |
-|6  <br/> |En bloc  <br/> |EN BLOC  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Tous les clients  <br/> |
-|7  <br/> |Emprunt d’identité de domaine  <br/> |DIMP  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |DAV uniquement  <br/> |
-|8  <br/> |Emprunt d’identité de l’utilisateur  <br/> |UIMP  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |DAV uniquement  <br/> |
+|1  <br/> |Malware :   <br/> |MALW  <br/> |[Stratégie de programmes malveillants](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
+|2  <br/> |Hameçonnage  <br/> |PHSH  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
+|3  <br/> |Courrier indésirable à probabilité élevée  <br/> |HSPM  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
+|4  <br/> |L’usurpation d’identité  <br/> |USURPATION D’IDENTITÉ  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553), [aide à la décision usurpation d’identité](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Toutes les organisations  <br/> |
+|5   <br/> |Courrier indésirable  <br/> |MONITEUR DE PORT STANDARD  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
+|6   <br/> |En bloc  <br/> |EN BLOC  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
+|7   <br/> |Emprunt d’identité de domaine  <br/> |DIMP  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organisations avec DAV  <br/> |
+|8   <br/> |Emprunt d’identité de l’utilisateur  <br/> |UIMP  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organisations avec DAV <br/> |
    
 Si vous disposez de plusieurs stratégies Anti-hameçonnage différents, celui dont la priorité la plus élevée s’appliquera. Par exemple, supposons que vous avez deux stratégies :
   
-|**Stratégie**|**Priority**|**Emprunt d’identité de l’utilisateur ou du domaine**|**Anti-l’usurpation d’identité**|
+|**Stratégie**|**Priority (Priorité)**|**Emprunt d’identité de l’utilisateur ou du domaine**|**Anti-l’usurpation d’identité**|
 |:-----|:-----|:-----|:-----|
 |A  <br/> |1  <br/> |On  <br/> |Off  <br/> |
 |B  <br/> |2  <br/> |Off  <br/> |On  <br/> |
@@ -683,7 +683,7 @@ Microsoft lui-même adopté tout d’abord cette fonctionnalité plusieurs semai
   
 ### <a name="will-microsoft-bring-this-feature-to-outlookcom-and-non-advanced-threat-protection-customers-of-office-365"></a>Microsoft apportera cette fonctionnalité pour les clients Outlook.com et non - avancée contre les menaces d’Office 365 ?
 
-Protection anti-usurpation sera initialement déployée pour les clients DAV/E5 et à l’avenir peut être libérée à ses autres utilisateurs. Toutefois, si c’est le cas, il peut y avoir des fonctions qui ne sont pas appliquées telles que la création de rapports et des remplacements personnalisés.
+La technologie anti-usurpation de Microsoft a été initialement déployée à ses organisations qui avaient un abonnement à Office 365 entreprise E5 ou avaient acheté module complémentaire de leur abonnement Office 365 Advanced Threat Protection (DAV). À compter d’octobre, 2018, nous avons étendu la protection pour les organisations ayant ainsi que Exchange Online Protection (EOP). À l’avenir, nous pouvons diffuser Outlook.com. Toutefois, dans ce cas, il peut y avoir des fonctions qui ne sont pas appliquées telles que la création de rapports et des remplacements personnalisés.
   
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Comment signaler les messages de courrier indésirable ou non-spam retour à Microsoft ?
 
