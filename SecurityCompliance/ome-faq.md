@@ -3,7 +3,7 @@ title: FAQ sur le chiffrement de messages Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 09/27/2018
+ms.date: 10/9/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Vous avez une question sur le fonctionnement des nouvelles fonctionnalités de protection de message dans Office 365 ? Recherchez une réponse ici.
-ms.openlocfilehash: c580ef701f6ee98ea2fc71df792256b1792c73cd
-ms.sourcegitcommit: 411713004251ee62d29b550eabea04c08a87e41f
+ms.openlocfilehash: 63bea478e144f42cabc67f7075cd52199d954d9c
+ms.sourcegitcommit: d3f3e2eb9ef05ebef85d83935a2cb0f7690ee6fe
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25341429"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25495518"
 ---
 # <a name="office-365-message-encryption-faq"></a>FAQ sur le chiffrement de messages Office 365
 
@@ -89,7 +89,7 @@ Non. Si vous utilisez Exchange Online avec Active Directory Rights Management Se
   
 ## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>Mon organisation possède un déploiement Exchange hybride. Puis-je utiliser cette fonctionnalité ?
 
-Les utilisateurs peuvent envoyer des messages chiffrés à l’aide de règles de flux de messagerie Exchange Online sur site. Pour ce faire, vous devez router le courrier électronique via Exchange Online.
+Les utilisateurs peuvent envoyer des messages chiffrés à l’aide de règles de flux de messagerie Exchange Online sur site. Pour ce faire, vous devez router le courrier électronique via Exchange Online. Pour plus d’informations, voir [partie 2 : configurer la messagerie pour transmettre à partir de votre serveur de messagerie vers Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365).
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>Le client de messagerie dois-je utiliser afin de créer un message chiffré OME ? Quelles applications sont pris en charge pour l’envoi de messages protégés ?
 
@@ -119,7 +119,7 @@ Oui. Utiliser les règles de flux de messagerie dans Exchange Online pour chiffr
   
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>Je peux automatiquement chiffrer les messages en définissant des stratégies dans Data Loss Prevention (DLP) par le biais de la sécurité &amp; centre de conformité ?
 
-Actuellement vous pouvez uniquement définir des règles de flux de messagerie dans Exchange Online. Chiffrement n’est actuellement pas pris en charge dans DLP par le biais de la sécurité &amp; centre de conformité.
+Oui ! Vous pouvez définir des règles de flux de messagerie dans Exchange Online ou à l’aide de la sécurité de DLP &amp; centre de conformité.
   
 ## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>Puis-je ouvrir les messages chiffrés envoyés à une boîte aux lettres partagées ?
 
