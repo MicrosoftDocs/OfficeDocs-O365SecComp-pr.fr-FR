@@ -16,12 +16,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Cette solution indique les attaques vous quel la plus courantes la sécurité peut se présenter comme dans Office 365 et comment y répondre
-ms.openlocfilehash: 3b72b9bf8c68df2fcc1233b56ee33eaf45695bfe
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: d2caea8cc7ceecb18cd477b8a1ff12352d83c3df
+ms.sourcegitcommit: 87a3ca55b6e9cf7e9ccf73e64013dc78dd7660f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528518"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "25494075"
 ---
 # <a name="office-365-security-incident-response"></a>Réponse aux incidents de sécurité Office 365
 
@@ -40,10 +40,15 @@ Cette série d’article permet de comprendre qu’un type particulier d’attaq
 
 Recherchez tous les mois comme d’autres articles seront ajoutés au fil du temps.
 
-## <a name="detect-and-remediate-articles"></a>Détecter et de corriger des Articles
-- [Détecter et résoudre les accorde consentement illicite dans Office 365](detect-and-remediate-illicit-consent-grants.md)
-- [Détecter et résoudre les règles d’Outlook et les attaques Injections de formulaires personnalisés dans Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
+## <a name="detect-and-remediate-articles"></a>Détecter et de corriger des articles
+
+- [Détecter et résoudre les problèmes d’octroi illégal de consentement dans Office 365](detect-and-remediate-illicit-consent-grants.md)
+- [Détecter et résoudre les attaques par injections sur les règles d’Outlook et les formulaires personnalisés dans Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
  
+## <a name="incident-response-articles"></a>Articles de réponse aux incidents
+
+- [Réponse à un compte de messagerie compromis dans Office 365](responding-to-a-compromised-email-account.md)
+
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Sécuriser Office 365 comme une sécurité pro
 Votre abonnement Office 365 est fourni avec un ensemble de fonctionnalités de sécurité que vous pouvez utiliser pour protéger vos données et vos utilisateurs puissantes.  Utiliser le [Guide de sécurité Office 365 : principaux des priorités pour les 30 premiers jours, 90 jours et au-delà](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) à mettre en œuvre les meilleures pratiques pour la sécurisation de votre client Office 365 de Microsoft.
 - Tâches à accomplir dans les 30 jours.  Ces ont une incidence immédiate et sont faible impact à vos utilisateurs.
