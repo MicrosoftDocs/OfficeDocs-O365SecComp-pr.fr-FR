@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Vous guide dans la configuration recommandée pour les paramètres au niveau du client qui affectent la sécurité de votre environnement Office 365. Vos besoins en matière de sécurité peuvent nécessiter plus ou moins de sécurité. Utilisez ces recommandations comme point de départ.
-ms.openlocfilehash: de3a1d19e09144105f9576b3a4eb8ed76eb08585
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: 5c989b5a8abace686df50b6847a0a182393927d5
+ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496868"
+ms.locfileid: "25498100"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Configurer votre client Office 365 pour une sécurité accrue
 
@@ -37,7 +37,7 @@ L’Office 365 Security &amp; centre de conformité inclut des fonctionnalités 
 |**Pièces jointes fiables ATP** <br/> |Non  <br/> | Dans la page principale pour les pièces jointes fiables, protéger les fichiers de SharePoint, OneDrive et Microsoft Teams en activant cette case :  <br/>  • Activer DAV pour SharePoint, OneDrive et les équipes de Microsoft  <br/> <br> Ajouter une nouvelle stratégie de pièces jointes sécurisées avec ces paramètres :  <br/>  • Bloc — blocage actuelles et futures de courriers électroniques et les pièces jointes par un programme malveillant détecté (choisir cette option)  <br/>  • Activer redirection — (cette case à cocher et entrez une adresse de messagerie, par exemple un compte d’administration ou mise en quarantaine)  <br/>  • Appliquer la sélection ci-dessus si les logiciels malveillants analyse les pièces jointes arrive à expiration ou erreur se produit (cochez cette case)  <br/>  • Appliqué à — le domaine du destinataire est (sélectionnez votre domaine)  <br/>  <br>Plus d’informations : [définir des stratégies de pièces jointes sûres Office 365 DAV](set-up-atp-safe-attachments-policies.md) <br/> |
 |**Liens DAV fiable** <br/> |Oui  <br/> | Ajoutez ce paramètre à la stratégie par défaut pour toute l’organisation :  <br/> • Utiliser les liens sécurisés dans : Office 365 ProPlus, Office pour iOS et Android (sélectionnez cette option).  <br/> <br>Stratégie recommandée pour des destinataires spécifiques :  <br/>  • URL seront réécrites et comparées à une liste de liens malveillants connus lorsque l’utilisateur clique sur le lien (sélectionnez cette option).  <br/>  • Les pièces jointes fiables à utiliser pour analyser le contenu téléchargeable (cochez cette case).  <br/>  • Appliqué à — le domaine du destinataire est (sélectionnez votre domaine).  <br/> <br> Plus d’informations : [les liens sans échec Office 365 DAV](atp-safe-links.md).  <br/> |
 |**Blocage du courrier indésirable (filtrage de messagerie)** <br/> |Oui  <br/> | Les points à surveiller pour :  <br/>  • Trop de courrier indésirable, choisissez les paramètres personnalisés et de modifier la stratégie de filtrage du courrier indésirable par défaut.  <br/>  Aide à la décision de • usurpation d’identité, passez en revue les expéditeurs sont l’usurpation de votre domaine. Bloquer ou autoriser les expéditeurs.<br/>  <br>Plus d’informations : [Protection de blocage du courrier indésirable messagerie Office 365](anti-spam-protection.md).  <br/> |
-|**DKIM (DomainKeys identifié messagerie)** <br/> |Oui  <br/> |DKIM est un processus d’authentification qui peuvent aider à protéger les expéditeurs et destinataires de falsifié (usurpés) et au courrier électronique de phishing. Votre client inclut une signature par défaut pour votre domaine. Créer une signature DKIM supplémentaire si vous ajoutez des domaines à votre client.<br/> <br>Plus d’informations : [DKIM utilisés pour valider le courrier sortant envoyé à partir de votre domaine personnalisé dans Office 365](https://technet.microsoft.com/en-us/library/mt695945%28v=exchg.150%29.aspx) <br/> |
+|**DKIM (DomainKeys identifié messagerie)** <br/> |Oui  <br/> |DKIM est un processus d’authentification qui peuvent aider à protéger les expéditeurs et destinataires de falsifié (usurpés) et au courrier électronique de phishing. Votre client inclut une signature par défaut pour votre domaine. Créer une signature DKIM supplémentaire si vous ajoutez des domaines à votre client.<br/> <br>Plus d’informations : [DKIM utilisés pour valider le courrier sortant envoyé à partir de votre domaine personnalisé dans Office 365](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email) <br/> |
    
 ## <a name="view-dashboards-and-reports-in-the-security-amp-compliance-center"></a>Afficher les rapports et tableaux de bord de la sécurité &amp; centre de conformité
 

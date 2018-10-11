@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: Cet article explique comment Office 365 atténue contre les attaques par hameçonnage qu’utilise falsifié expéditeur domaines, c'est-à-dire, qui sont usurpés. Pour ce faire, il analyse les messages et le blocage de celles qui peuvent être authentifiés neithe à l’aide des méthodes d’authentification standard de courrier électronique, ni les autres techniques de réputation de l’expéditeur. Cette modification est en cours implémentée pour réduire le nombre d’organisations dans Office 365 sont affichent dans les attaques par phishing.
-ms.openlocfilehash: 37eddfcad9bc5e412f62dd857178eafa8cac9355
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: 231f66b094a98363375a68fbddc8b71077b7baa4
+ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496898"
+ms.locfileid: "25498110"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protection anti-usurpation dans Office 365
 
@@ -55,7 +55,7 @@ Deuxième messages usurpés créer incertitude pour les utilisateurs qui savoir 
   
 Le message ci-dessus provient de Microsoft, mais en même temps, les utilisateurs sont utilisés pour l’obtention de messages de phishing qui peut-être amener un utilisateur en cliquant sur un lien et abandonner leurs informations d’identification, le téléchargement de logiciels malveillants ou répondre à un message avec du contenu sensible. Comme il est difficile de déterminer la différence entre une réinitialisation du mot de passe réel et un substitut un grand nombre d’utilisateurs ignore ces messages, les signaler comme courrier indésirable ou inutilement compte-rendu les messages à Microsoft en tant que hameçonnage manqués.
     
-Pour arrêter l’usurpation d’identité, le courrier électronique du secteur de filtrage a développé des protocoles d’authentification électronique comme [SPF](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx), [DKIM](https://technet.microsoft.com/en-us/library/mt695945%28v=exchg.150%29.aspx)et [DMARC](https://technet.microsoft.com/en-us/library/mt734386%28v=exchg.150%29.aspx). DMARC empêche l’usurpation examinant l’expéditeur d’un message - celle que l’utilisateur voit dans leur client de messagerie (dans l’exemple ci-dessus, il s’agit service.outlook.com, outlook.com et accountprotection.microsoft.com) - avec le domaine transmis SPF ou DKIM. Autrement dit, le domaine que voit l’utilisateur a été authentifié et n’est donc pas usurpé. Pour une description plus complète, consultez la section « *comprendre pourquoi l’authentification du courrier électronique n’est pas toujours suffisant pour empêcher l’usurpation d’identité «* plus loin dans ce document. 
+Pour arrêter l’usurpation d’identité, le courrier électronique du secteur de filtrage a développé des protocoles d’authentification électronique comme [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)et [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email). DMARC empêche l’usurpation examinant l’expéditeur d’un message - celle que l’utilisateur voit dans leur client de messagerie (dans l’exemple ci-dessus, il s’agit service.outlook.com, outlook.com et accountprotection.microsoft.com) - avec le domaine transmis SPF ou DKIM. Autrement dit, le domaine que voit l’utilisateur a été authentifié et n’est donc pas usurpé. Pour une description plus complète, consultez la section «*comprendre pourquoi l’authentification du courrier électronique n’est pas toujours suffisant pour empêcher l’usurpation d’identité «* plus loin dans ce document. 
   
 Toutefois, le problème est que l’authentification de courrier électronique enregistrements sont facultatives, non requis. Par conséquent, tandis que les domaines avec les stratégies de l’authentification forte comme microsoft.com et skype.com sont protégés contre l’usurpation d’identité, domaines que publier tout les stratégies d’authentification plus faibles ou aucune stratégie, sont les objectifs de l’usurpation. À compter de mars 2018, uniquement 9 % des domaines de sociétés dans le classement Fortune 500 publier des stratégies de messagerie fort d’authentification. Le 91 % restants peuvent être usurpés par un auteur de phishing, et à moins que le filtre de courrier détecte à l’aide d’une autre stratégie, peuvent être remis à un utilisateur final et les inciter :
   
@@ -65,7 +65,7 @@ La proportion de petites et moyennes entreprises qui se trouvent pas dans le cla
   
 Il s’agit d’un problème très grand car alors que les entreprises ne connaissent pas forcément de fonctionnement de l’authentification du courrier électronique, phishing comprendre et tirer parti de l’absence de celle-ci.
   
-Pour plus d’informations sur la configuration de SPF, DKIM et DMARC, consultez la section « *clients d’Office 365"* plus loin dans ce document. 
+Pour plus d’informations sur la configuration de SPF, DKIM et DMARC, consultez la section «*clients d’Office 365"* plus loin dans ce document. 
   
 ## <a name="stopping-spoofing-with-implicit-email-authentication"></a>Arrêt de l’usurpation d’identité avec l’authentification implicite de courrier électronique
 
@@ -619,11 +619,11 @@ Si vous êtes un administrateur ayant actuellement envoie des messages à Micros
 
 Si vous êtes un client Office 365 et Office 365 vous permet d’envoyer des messages électroniques sortants :
   
-- Pour vos domaines, [configurer SPF dans Office 365 afin d’empêcher l’usurpation d’identité](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx)
+- Pour vos domaines, [configurer SPF dans Office 365 afin d’empêcher l’usurpation d’identité](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)
     
-- Pour vos domaines principaux, [DKIM utilisés pour valider le courrier sortant envoyé à partir de votre domaine personnalisé dans Office 365](https://technet.microsoft.com/en-us/library/mt695945%28v=exchg.150%29.aspx)
+- Pour vos domaines principaux, [DKIM utilisés pour valider le courrier sortant envoyé à partir de votre domaine personnalisé dans Office 365](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)
     
-- [Envisager la création d’enregistrements DMARC](https://technet.microsoft.com/en-us/library/mt734386%28v=exchg.150%29.aspx) pour votre domaine pour déterminer quels sont vos expéditeurs légitimes 
+- [Envisager la création d’enregistrements DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email) pour votre domaine pour déterminer quels sont vos expéditeurs légitimes 
     
 Microsoft ne fournit pas d’instructions d’implémentation détaillées pour chacune des SPF, DKIM et DMARC. Toutefois, il est beaucoup d’informations de publication en ligne. 3e entreprises tierces sont également dédié pour aider votre organisation à configurer des enregistrements de messagerie d’authentification.
   

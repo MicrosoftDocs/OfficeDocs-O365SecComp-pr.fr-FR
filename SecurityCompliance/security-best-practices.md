@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 9295e396-e53d-49b9-ae9b-0b5828cdedc3
 description: Réduire le risque d’une violation de données ou d’un compte compromis en suivant ces meilleures pratiques recommandées.
-ms.openlocfilehash: 245302af0b08a4ee8183345fc386fe47985c93dd
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 63bda11afdd1e02e9e12e8c505aca7100c4deade
+ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528664"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25498090"
 ---
 # <a name="security-best-practices-for-office-365"></a>Meilleures pratiques de sécurité pour Office 365
 
@@ -44,9 +44,9 @@ Accès sécurisé Score à [https://SecureScore.office.com](https://SecureScore.
 
 MFA ajoute une couche de protection supplémentaire à une stratégie de mot de passe fort en demandant aux utilisateurs à remercier un appel téléphonique, message texte ou une notification de l’application sur leur téléphone active après avoir entré correctement leur mot de passe. Avec MFA en place, les comptes d’utilisateurs Office 365 sont toujours protégés contre les accès non autorisés même si le mot de passe d’un utilisateur est compromise. Les comptes sont protégées car pas l’accès à un compte jusqu'à une fois le défi supplémentaire a été satisfait. Un mot de passe compromis ou volé ne suffit pas.
   
-- [Planifier l’authentification multifacteur pour les déploiements d’Office 365](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+- [Offre pour l'authentification multifacteur des déploiements Office 365](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
     
-- [Configurer l’authentification multifacteur pour les utilisateurs Office 365](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+- [Configurer l’authentification multifacteur pour les utilisateurs d’Office 365](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
     
 ## <a name="use-office-365-cloud-app-security"></a>Utilisation de la sécurité d’application Office 365 dans le nuage
 
@@ -54,7 +54,7 @@ Définir des stratégies en fonction des besoins de votre entreprise pour suivre
   
 - [Vue d’ensemble de la sécurité des application Cloud O365](office-365-cas-overview.md)
     
-- [Activer la sécurité d’application Office 365 dans le nuage](turn-on-office-365-cas.md)
+- [Activer la sécurité des applications cloud Office 365](turn-on-office-365-cas.md)
     
 ## <a name="secure-mail-flow"></a>Flux de messagerie sécurisée
 
@@ -70,9 +70,9 @@ Implémenter les riches fonctionnalités dans Exchange Online Protection et obte
     
 - Si vous utilisez un domaine personnalisé pour votre organisation dans Office 365, configurer SPF, DKIM, puis DMARC pour valider les messages envoyés par votre organisation et afin d’empêcher l’usurpation d’identité :
     
-  - [Configurer SPF dans Office 365 afin d’empêcher l’usurpation d’identité](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx).
+  - [Configurer SPF dans Office 365 afin d’empêcher l’usurpation d’identité](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing).
     
-  - [Utilisez DKIM pour valider le courrier sortant envoyé à partir de votre domaine personnalisé dans Office 365](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx).
+  - [Utilisez DKIM pour valider le courrier sortant envoyé à partir de votre domaine personnalisé dans Office 365](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing).
     
   - [Utiliser DMARC pour valider le courrier dans Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
     
