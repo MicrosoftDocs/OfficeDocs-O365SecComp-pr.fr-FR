@@ -1,5 +1,5 @@
 ---
-title: Pour plus d’informations sur l’aide à la décision usurpation d’identité
+title: En savoir plus sur l’usurpation d’identité
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,17 +12,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
-description: Utilisez aide à la décision usurpation d’identité de la sécurité &amp; centre de conformité dans la page Paramètres de blocage du courrier indésirable pour passer en revue tous les expéditeurs qui sont l’usurpation des domaines qui font partie de votre organisation ou l’usurpation des domaines externes. Aide à la décision usurpation d’identité n’est disponible dans le cadre d’Office 365 entreprise E5 ou séparément dans le cadre de la protection contre les menaces avancées.
-ms.openlocfilehash: a6e5f2daeab20b86354c4bf0d8d8abe0907095d1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Utilisez aide à la décision usurpation d’identité de la sécurité &amp; centre de conformité dans la page Paramètres de blocage du courrier indésirable pour passer en revue tous les expéditeurs qui sont l’usurpation des domaines qui font partie de votre organisation ou l’usurpation des domaines externes. Aide à la décision usurpation d’identité n’est disponible dans le cadre d’Office 365 entreprise E5 ou séparément dans le cadre de la protection contre les menaces avancées et Exchange Online Protection.
+ms.openlocfilehash: 3be606c05dde4a13d3a6a4a43ce927cf4f0ca53c
+ms.sourcegitcommit: 176ce86e2b440c079414fe99d4b0b9e89ccebb40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528185"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496555"
 ---
-# <a name="learn-more-about-spoof-intelligence"></a>Pour plus d’informations sur l’aide à la décision usurpation d’identité
+# <a name="learn-more-about-spoof-intelligence"></a>En savoir plus sur l’usurpation d’identité
 
-Utilisez aide à la décision usurpation d’identité de la sécurité &amp; centre de conformité dans la **page Paramètres de blocage du courrier indésirable** pour passer en revue tous les expéditeurs qui sont l’usurpation des domaines qui font partie de votre organisation ou l’usurpation des domaines externes. Aide à la décision usurpation d’identité n’est disponible dans le cadre d’Office 365 entreprise E5 ou séparément dans le cadre de la protection contre les menaces avancées. 
+Utilisez aide à la décision usurpation d’identité de la sécurité &amp; centre de conformité dans la **page Paramètres de blocage du courrier indésirable** pour passer en revue tous les expéditeurs qui sont l’usurpation des domaines qui font partie de votre organisation ou l’usurpation des domaines externes. Aide à la décision usurpation d’identité n’est disponible dans le cadre d’Office 365 entreprise E5 ou séparément dans le cadre de Protection de menace avancées (DAV) et à compter d’octobre, 2018 Exchange Online Protection (EOP). 
   
 ## <a name="what-types-of-email-spoofing-can-i-review-and-which-should-i-protect-against-with-spoof-intelligence"></a>Quels types de messagerie usurpation puis-je consulter et qui dois-je protéger contre avec intelligence usurpation d’identité ?
 
@@ -46,7 +46,7 @@ Les domaines externes envoient fréquemment e-mail falsifié et un grand nombre 
     
 Vous avez besoin d’un moyen pour vous assurer que les messages envoyés par des questions légitimes n’obtenir intercepté dans les filtres anti-spam dans Office 365 ou des systèmes de messagerie externe. En règle générale, Office 365 traite les messages électroniques comme courrier indésirable. En tant qu’un administrateur Office 365, vous avez la possibilité d’éviter cela en définissant des filtres d’usurpation d’identité dans la sécurité &amp; centre de conformité. Si vous êtes propriétaire du domaine, vous pouvez configurer SPF DKIM et DMARC pour autoriser les expéditeurs.
   
-En revanche, questions malveillantes, l’usurpation d’identité votre domaine ou des domaines externes à envoyer un courrier électronique indésirable ou hameçonnage, les expéditeurs doivent doit être bloquée. L’usurpation d’identité est également un moyen commun de phishing obtenir des informations d’identification de l’utilisateur. Office 365 offre une protection intégrée usurpation d’identité pour aider à protéger votre organisation des expéditeurs de ces messages. Protection usurpation d’identité pour les domaines de votre organisation est toujours activé pour tous les clients Office 365 et protection d’usurpation d’identité de domaine externe est activée par défaut pour les clients de protection contre les menaces avancées. Pour renforcer cette protection, nous indiquer les expéditeurs sont autorisés à usurper des domaines de votre organisation et envoyer un message électronique en votre nom, et si tous les domaines externes sont autorisés à usurper. Tout le courrier envoyé par un expéditeur que vous n’autorisez est considéré comme du courrier indésirable ou usurpation d’identité par Office 365. Surveillez les expéditeurs l’usurpation d’identité de votre domaine et nous aider à améliorer l’aide à la décision usurpation d’identité à l’aide de la sécurité &amp; centre de conformité.
+En revanche, questions malveillantes, l’usurpation d’identité votre domaine ou des domaines externes à envoyer un courrier électronique indésirable ou hameçonnage, les expéditeurs doivent doit être bloquée. L’usurpation d’identité est également un moyen commun de phishing obtenir des informations d’identification de l’utilisateur. Office 365 offre une protection intégrée usurpation d’identité pour aider à protéger votre organisation des expéditeurs de ces messages. Protection contre l’usurpation des domaines de votre organisation est toujours active pour tous les clients Office 365 et protection d’usurpation d’identité de domaine externe est activée par défaut pour les clients de protection contre les menaces avancées et à compter d’octobre, 2018 EOP ainsi que les clients. Pour renforcer cette protection, nous indiquer les expéditeurs sont autorisés à usurper des domaines de votre organisation et envoyer un message électronique en votre nom, et si tous les domaines externes sont autorisés à usurper. Tout le courrier envoyé par un expéditeur que vous n’autorisez est considéré comme du courrier indésirable ou usurpation d’identité par Office 365. Surveillez les expéditeurs l’usurpation d’identité de votre domaine et nous aider à améliorer l’aide à la décision usurpation d’identité à l’aide de la sécurité &amp; centre de conformité.
   
 ## <a name="managing-spoof-intelligence-in-the-security-amp-compliance-center"></a>Aide à la décision usurpation d’identité dans la sécurité de la gestion des &amp; centre de conformité
 <a name="Managespooflist"> </a>
@@ -96,17 +96,19 @@ Pour définir la stratégie pour les domaines vous ne possédez pas, sélectionn
 ![](media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
   
 6. Cliquez sur **Enregistrer** pour enregistrer les modifications. 
+
+Si vous êtes un client E5 ou DAV, vous pouvez également gérer les expéditeurs sont l’usurpation de votre domaine par le biais de l' [Usurpation d’identité présente les aide à la décision](https://docs.microsoft.com/en-us/office365/securitycompliance/walkthrough-spoof-intelligence-insight)
     
 ## <a name="configuring-the-anti-spoofing-policy"></a>Configuration de la stratégie anti-l’usurpation d’identité
 <a name="Managespooflist"> </a>
 
 Outre l’autorisation ou le blocage d’un expéditeur particulier d’envoyer l’e-mail falsifié dans votre organisation, vous pouvez également configurer strict comment vous souhaitez le filtre à l’action à effectuer lorsqu’un message usurpation d’identité est trouvé et s’il faut activer les conseils de sécurité pour anti-usurpation d’identité.
   
-Protection anti-usurpation est appliquée aux messages provenant d’expéditeurs de domaines qui sont externes à votre organisation Office 365. Vous pouvez appliquer la stratégie aux destinataires dont les boîtes aux lettres sont une licence pour Office 365 entreprise E5 ou de protection contre les menaces avancées. Vous gérer la stratégie de l’usurpation d’identité anti ainsi que d’autres paramètres anti-hameçonnage DAV. Pour plus d’informations sur les paramètres anti-hameçonnage DAV, voir [configurer les stratégies anti-hameçonnage d’Office 365](https://support.office.com/article/set-up-office-365-atp-anti-phishing-policies-5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578?ui=en-US&amp;rs=en-US&amp;ad=US#phishpolicyoptions).
+Protection anti-usurpation est appliquée aux messages provenant d’expéditeurs de domaines qui sont externes à votre organisation Office 365. Vous pouvez appliquer la stratégie aux destinataires dont les boîtes aux lettres sont une licence pour Office 365 entreprise E5, protection contre les menaces avancées et à compter d’octobre, ainsi que les clients EOP 2018. Vous gérer la stratégie de l’usurpation d’identité anti ainsi que les autres paramètres anti-hameçonnage. Pour plus d’informations sur les paramètres anti-hameçonnage, voir [configurer les stratégies anti-hameçonnage d’Office 365](https://support.office.com/article/set-up-office-365-atp-anti-phishing-policies-5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578?ui=en-US&amp;rs=en-US&amp;ad=US#phishpolicyoptions).
   
 Office 365 inclut la protection anti-usurpation par défaut qui est toujours en cours d’exécution. Cette protection par défaut n’est pas visible dans la sécurité &amp; centre de conformité ou récupérable par le biais des applets de commande Windows PowerShell. Vous ne pouvez pas modifier la protection anti-l’usurpation d’identité par défaut. Au lieu de cela, vous pouvez configurer la façon dont Office 365 applique la protection anti-l’usurpation d’identité de chaque stratégie anti-hameçonnage que vous créez. 
   
-Même si la stratégie de l’usurpation d’identité contre apparaît sous la stratégie anti-hameçonnage DAV dans la sécurité &amp; centre de conformité, il n’hérite pas son comportement par défaut de l’hameçonnage existante sous la configuration de blocage du courrier indésirable. Si vous avez des paramètres de **blocage du courrier indésirable** \> **hameçonnage** que vous souhaitez répliquer anti-l’usurpation d’identité, vous devez créer une stratégie anti-hameçonnage, puis sur Modifier la partie de l’usurpation d’identité de la stratégie anti-hameçonnage pour refléter vos paramètres d’usurpation d’identité décrit dans la section suivante, au lieu d’accepter les paramètres par défaut qui s’exécutent en arrière-plan. 
+Même si la stratégie de l’usurpation d’identité contre apparaît sous la stratégie anti-hameçonnage dans la sécurité &amp; centre de conformité, il n’hérite pas son comportement par défaut de l’hameçonnage existante sous la configuration de blocage du courrier indésirable. Si vous avez des paramètres de **blocage du courrier indésirable** \> **hameçonnage** que vous souhaitez répliquer anti-l’usurpation d’identité, vous devez créer une stratégie anti-hameçonnage, puis sur Modifier la partie de l’usurpation d’identité de la stratégie anti-hameçonnage pour refléter vos paramètres d’usurpation d’identité décrit dans la section suivante, au lieu d’accepter les paramètres par défaut qui s’exécutent en arrière-plan. 
   
  **Pour configurer l’usurpation d’identité contre la protection d’une stratégie anti-hameçonnage à l’aide de la sécurité &amp; centre de conformité**
   
@@ -114,21 +116,17 @@ Même si la stratégie de l’usurpation d’identité contre apparaît sous la 
     
 2. Connectez-vous à Office 365 avec votre compte professionnel ou de l’école. Votre compte doit disposer des informations d’identification d’administrateur de votre organisation Office 365.
     
-3. Dans la sécurité &amp; centre de conformité, développez **Threat Management** \> **stratégie** \> **DAV Anti-hameçonnage**. 
+3. Dans la sécurité &amp; centre de conformité, développez **Threat Management** \> **stratégie** \> **Anti-hameçonnage**. 
     
 4. Dans la page **Anti-hameçonnage** dans le volet droit, sélectionnez la stratégie anti-hameçonnage que vous souhaitez configurer. 
     
 5. Dans la page qui s’affiche, dans la ligne de **l’usurpation d’identité** , choisissez **Modifier**. 
     
-6. Les **seuils d’usurpation** page, si vous sélectionnez **par défaut**, tous les messages explicitement ou implicitement authentification seront remis, autrement dit, envoi de pour le filtrage du courrier électronique normal. Si vous sélectionnez **Strict**, puis messages qui transitent authentification implicitement en toute confiance moyenne, également appelé une authentification composite de « passe logicielle », sera ignorée quand même et marqués en tant que messages électroniques de l’usurpation d’identité. Le paramètre Strict est agressif et génère de faux positifs. Faites votre choix, puis sélectionnez **Actions**. 
+6. Ensuite, configurez les actions à effectuer lorsqu’un message est identifié comme une usurpation d’identité inter-domaines. Le comportement par défaut consiste à déplacer le message vers le dossier de courrier indésirable du destinataire. L’autre option consiste à envoyer le message en quarantaine. Pour plus d’informations sur la gestion des messages mis en quarantaine, voir les [messages électroniques de mise en quarantaine dans Office 365](quarantine-email-messages.md).
   
-![](media/62327314-a65f-49b0-bf60-ab4775e0bc9e.jpg)
+![](media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)(
   
-7. Ensuite, configurez les actions à effectuer lorsqu’un message est identifié comme une usurpation d’identité inter-domaines. Le comportement par défaut consiste à déplacer le message vers le dossier de courrier indésirable du destinataire. L’autre option consiste à envoyer le message en quarantaine. Pour plus d’informations sur la gestion des messages mis en quarantaine, voir les [messages électroniques de mise en quarantaine dans Office 365](quarantine-email-messages.md).
-  
-![](media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
-  
-8. Indiquez si vous souhaitez activer ou désactiver l’usurpation d’identité contre les conseils de sécurité. Office 365 recommande l’activation de la pointe de sécurité de **l’authentification échoue** pour avertir les utilisateurs lorsqu’ils interagissent avec un expéditeur dont l’identité n’a pas pu être vérifiée. Office 365 recommande également d’activer l’info-bulle de sécurité pour une **authentification récupérable passes** les petits groupes d’utilisateurs, car ce Conseil de sécurité peut générer un grand nombre d’avertissements si l’utilisateur reçoit un courrier électronique provenant de sources légitimes, mais non authentifiés. 
+7. Indiquez si vous souhaitez activer ou désactiver l’usurpation d’identité contre les conseils de sécurité. Office 365 recommande l’activation de la pointe de sécurité de **l’authentification échoue** pour avertir les utilisateurs lorsqu’ils interagissent avec un expéditeur dont l’identité n’a pas pu être vérifiée. Office 365 recommande également d’activer l’info-bulle de sécurité pour une **authentification récupérable passes** les petits groupes d’utilisateurs, car ce Conseil de sécurité peut générer un grand nombre d’avertissements si l’utilisateur reçoit un courrier électronique provenant de sources légitimes, mais non authentifiés. 
   
 ![](media/1ed675c0-48c2-4587-a957-60eb68dc9628.jpg)
   

@@ -5,17 +5,17 @@ author: kccross
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.date: 9/5/2018
+ms.date: 10/11/2018
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: DAV protection anti-hameçonnage, composant d’Office 365 avancée contre les menaces, peut aider à protéger votre organisation contre les attaques malveillantes hameçonnage basée sur l’emprunt d’identité et autres hameçonnage. Si vous êtes un administrateur de sécurité ou d’Office 365 entreprise globale, vous pouvez configurer les stratégies anti-hameçonnage DAV. Hameçonnage attaques entrent dans diverses formes contre les attaques de marchandise sonde ciblé phishing ou baleine. À la complexité, il est difficile de même un œil formé à identifier certains de ces attaques sophistiquées. Heureusement, contre les menaces avancées Office 365 peut vous aider. Vous pouvez configurer une stratégie d’anti-hameçonnage DAV pour vous assurer que votre organisation est protégée contre les attaques de ce type.
-ms.openlocfilehash: 9ceef88a2d60a10a8911e7559e10850858015977
-ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
+ms.openlocfilehash: 37a38863296ab87feaade93b7939029b9306ec30
+ms.sourcegitcommit: 176ce86e2b440c079414fe99d4b0b9e89ccebb40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23955446"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496565"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-policies"></a>Configuration des stratégies anti-hameçonnage ATP d’Office 365
 
@@ -122,9 +122,9 @@ Vous pouvez supprimer des stratégies personnalisées que vous avez créé à l�
     
 ## <a name="related-topics"></a>Voir aussi
 
-[Office 365 - Protection avancée contre les menaces](office-365-atp.md)
+[Protection avancée contre les menaces dans Office 365](office-365-atp.md)
   
-[Protection contre les messages d’hameçonnage dans Office 365](anti-phishing-protection.md)
+[Protection anti-hameçonnage dans Office 365](anti-phishing-protection.md)
   
 [Fonctionnalités anti-hameçonnage ATP dans Office 365](atp-anti-phishing.md)
   
