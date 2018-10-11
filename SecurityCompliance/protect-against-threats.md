@@ -13,97 +13,97 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: Découvrez comment Office 365 pour entreprises peuvent aider à protéger votre organisation contre une variété de menaces, y compris l’usurpation d’identité, logiciels malveillants, du courrier indésirable, les tentatives de hameçonnage et contre les accès aux données.
-ms.openlocfilehash: 4534e12280b5e627c2594c0365262a5c7c14a8c4
-ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
+ms.openlocfilehash: 18e91b3a27ff9722a285a4c84f810876e1cab462
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "24011266"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496848"
 ---
-# <a name="protect-against-threats-in-office-365"></a><span data-ttu-id="065be-103">Se protéger contre les menaces dans Office 365</span><span class="sxs-lookup"><span data-stu-id="065be-103">Protect against threats in Office 365</span></span>
+# <a name="protect-against-threats-in-office-365"></a><span data-ttu-id="c8954-103">Se protéger contre les menaces dans Office 365</span><span class="sxs-lookup"><span data-stu-id="c8954-103">Protect against threats in Office 365</span></span>
 
-<span data-ttu-id="065be-p101">Avec Office 365 pour entreprises, vous pouvez protéger votre organisation contre diverses menaces, y compris l’usurpation d’identité, logiciels malveillants, du courrier indésirable, les tentatives de hameçonnage et contre les accès aux données. Utilisez les ressources de cette page pour en savoir plus sur la protection contre les menaces et les actions à qu'entreprendre.</span><span class="sxs-lookup"><span data-stu-id="065be-p101">With Office 365 Enterprise, you can help protect your organization against a variety of threats, including spoofing, malware, spam, phishing attempts, and unauthorized access to data. Use the resources on this page to learn about threat protection and actions you can take.</span></span>
+<span data-ttu-id="c8954-p101">Avec Office 365 pour entreprises, vous pouvez protéger votre organisation contre diverses menaces, y compris l’usurpation d’identité, logiciels malveillants, du courrier indésirable, les tentatives de hameçonnage et contre les accès aux données. Utilisez les ressources de cette page pour en savoir plus sur la protection contre les menaces et les actions à qu'entreprendre.</span><span class="sxs-lookup"><span data-stu-id="c8954-p101">With Office 365 Enterprise, you can help protect your organization against a variety of threats, including spoofing, malware, spam, phishing attempts, and unauthorized access to data. Use the resources on this page to learn about threat protection and actions you can take.</span></span>
   
-## <a name="anti-spoofing"></a><span data-ttu-id="065be-106">Anti-l’usurpation d’identité</span><span class="sxs-lookup"><span data-stu-id="065be-106">Anti-spoofing</span></span>
+## <a name="anti-spoofing"></a><span data-ttu-id="c8954-106">Anti-l’usurpation d’identité</span><span class="sxs-lookup"><span data-stu-id="c8954-106">Anti-spoofing</span></span>
 
-<span data-ttu-id="065be-107">Si vous utilisez un domaine personnalisé dans Office 365, aident à arrêter fraude expéditeur de votre organisation, améliorer la sécurité de messagerie électronique et protéger la réputation de votre domaine.</span><span class="sxs-lookup"><span data-stu-id="065be-107">If you're using a custom domain in Office 365, help stop sender fraud from your organization, improve email security, and protect your domain's reputation.</span></span>
+<span data-ttu-id="c8954-107">Si vous utilisez un domaine personnalisé dans Office 365, aident à arrêter fraude expéditeur de votre organisation, améliorer la sécurité de messagerie électronique et protéger la réputation de votre domaine.</span><span class="sxs-lookup"><span data-stu-id="c8954-107">If you're using a custom domain in Office 365, help stop sender fraud from your organization, improve email security, and protect your domain's reputation.</span></span>
   
-- [<span data-ttu-id="065be-108">Empêcher l’usurpation d’identité avec SPF</span><span class="sxs-lookup"><span data-stu-id="065be-108">Prevent spoofing with SPF</span></span>](https://go.microsoft.com/fwlink/?linkid=851943)
+- [<span data-ttu-id="c8954-108">Empêcher l’usurpation d’identité avec SPF</span><span class="sxs-lookup"><span data-stu-id="c8954-108">Prevent spoofing with SPF</span></span>](https://go.microsoft.com/fwlink/?linkid=851943)
     
-- [<span data-ttu-id="065be-109">Valider le courrier sortant avec DKIM</span><span class="sxs-lookup"><span data-stu-id="065be-109">Validate outbound email with DKIM</span></span>](https://go.microsoft.com/fwlink/?linkid=851944)
+- [<span data-ttu-id="c8954-109">Valider le courrier sortant avec DKIM</span><span class="sxs-lookup"><span data-stu-id="c8954-109">Validate outbound email with DKIM</span></span>](https://go.microsoft.com/fwlink/?linkid=851944)
     
-- [<span data-ttu-id="065be-110">Valider le courrier avec DMARC</span><span class="sxs-lookup"><span data-stu-id="065be-110">Validate email with DMARC</span></span>](https://go.microsoft.com/fwlink/?linkid=832951)
+- [<span data-ttu-id="c8954-110">Valider le courrier avec DMARC</span><span class="sxs-lookup"><span data-stu-id="c8954-110">Validate email with DMARC</span></span>](https://go.microsoft.com/fwlink/?linkid=832951)
     
-## <a name="anti-spam-amp-anti-malware"></a><span data-ttu-id="065be-111">Anti-spam &amp; contre les programmes malveillants</span><span class="sxs-lookup"><span data-stu-id="065be-111">Anti-spam &amp; anti-malware</span></span>
+## <a name="anti-spam-amp-anti-malware"></a><span data-ttu-id="c8954-111">Anti-spam &amp; contre les programmes malveillants</span><span class="sxs-lookup"><span data-stu-id="c8954-111">Anti-spam &amp; anti-malware</span></span>
 
-<span data-ttu-id="065be-112">Découvrez Office 365 score de blocage du courrier indésirable, le filtrage des connexions et capture de programmes malveillants, y compris les paramètres par défaut et signaler le courrier électronique malveillant.</span><span class="sxs-lookup"><span data-stu-id="065be-112">Learn about Office 365 anti-spam scoring, connection filtering, and malware capture, including default settings and how to report malicious email.</span></span>
+<span data-ttu-id="c8954-112">Découvrez Office 365 score de blocage du courrier indésirable, le filtrage des connexions et capture de programmes malveillants, y compris les paramètres par défaut et signaler le courrier électronique malveillant.</span><span class="sxs-lookup"><span data-stu-id="c8954-112">Learn about Office 365 anti-spam scoring, connection filtering, and malware capture, including default settings and how to report malicious email.</span></span>
   
-- [<span data-ttu-id="065be-113">Anti-spam &amp; protection anti-programme malveillant</span><span class="sxs-lookup"><span data-stu-id="065be-113">Anti-spam &amp; anti-malware protection</span></span>](anti-spam-and-anti-malware-protection.md)
+- [<span data-ttu-id="c8954-113">Anti-spam &amp; protection anti-programme malveillant</span><span class="sxs-lookup"><span data-stu-id="c8954-113">Anti-spam &amp; anti-malware protection</span></span>](anti-spam-and-anti-malware-protection.md)
     
-- [<span data-ttu-id="065be-114">Activer la journalisation pour le courrier électronique</span><span class="sxs-lookup"><span data-stu-id="065be-114">Turn on logging for email</span></span>](https://technet.microsoft.com/en-us/library/dn879651.aspx)
+- [<span data-ttu-id="c8954-114">Activer la journalisation pour le courrier électronique</span><span class="sxs-lookup"><span data-stu-id="c8954-114">Turn on logging for email</span></span>](https://technet.microsoft.com/en-us/library/dn879651.aspx)
     
-- [<span data-ttu-id="065be-115">Mise en quarantaine des messages électroniques dans Office 365</span><span class="sxs-lookup"><span data-stu-id="065be-115">Quarantine email messages in Office 365</span></span>](quarantine-email-messages.md)
+- [<span data-ttu-id="c8954-115">Mise en quarantaine des messages électroniques dans Office 365</span><span class="sxs-lookup"><span data-stu-id="c8954-115">Quarantine email messages in Office 365</span></span>](quarantine-email-messages.md)
     
-- [<span data-ttu-id="065be-116">Envoi d’un contenu suspect à Microsoft</span><span class="sxs-lookup"><span data-stu-id="065be-116">Submit suspicious content to Microsoft</span></span>](https://technet.microsoft.com/en-us/library/dn762129%28v=exchg.150%29.aspx)
+- [<span data-ttu-id="c8954-116">Envoi d’un contenu suspect à Microsoft</span><span class="sxs-lookup"><span data-stu-id="c8954-116">Submit suspicious content to Microsoft</span></span>](https://technet.microsoft.com/en-us/library/dn762129%28v=exchg.150%29.aspx)
     
-## <a name="advanced-threat-protection"></a><span data-ttu-id="065be-117">Protection avancée contre les menaces</span><span class="sxs-lookup"><span data-stu-id="065be-117">Advanced Threat Protection</span></span>
+## <a name="advanced-threat-protection"></a><span data-ttu-id="c8954-117">Advanced Threat Protection</span><span class="sxs-lookup"><span data-stu-id="c8954-117">Advanced Threat Protection</span></span>
 
-<span data-ttu-id="065be-118">Configurer des stratégies pour gérer l’usurpation d’identité, protection contre les attaques par hameçonnage et intercepter les URL malveillantes ou des fichiers dans les messages électroniques avec Advanced Threat Protection (DAV).</span><span class="sxs-lookup"><span data-stu-id="065be-118">Configure policies to manage spoofing, protect against phishing attacks, and catch malicious URLs or files in email messages with Advanced Threat Protection (ATP).</span></span>
+<span data-ttu-id="c8954-118">Configurer des stratégies pour gérer l’usurpation d’identité, protection contre les attaques par hameçonnage et intercepter les URL malveillantes ou des fichiers dans les messages électroniques avec Advanced Threat Protection (DAV).</span><span class="sxs-lookup"><span data-stu-id="c8954-118">Configure policies to manage spoofing, protect against phishing attacks, and catch malicious URLs or files in email messages with Advanced Threat Protection (ATP).</span></span>
   
-- [<span data-ttu-id="065be-119">En savoir plus sur Office 365 DAV</span><span class="sxs-lookup"><span data-stu-id="065be-119">Learn about Office 365 ATP</span></span>](office-365-atp.md)
+- [<span data-ttu-id="c8954-119">En savoir plus sur Office 365 DAV</span><span class="sxs-lookup"><span data-stu-id="c8954-119">Learn about Office 365 ATP</span></span>](office-365-atp.md)
     
-- [<span data-ttu-id="065be-120">En savoir plus sur l’aide à la décision usurpation d’identité</span><span class="sxs-lookup"><span data-stu-id="065be-120">Learn about spoof intelligence</span></span>](learn-about-spoof-intelligence.md)
+- [<span data-ttu-id="c8954-120">En savoir plus sur l’aide à la décision usurpation d’identité</span><span class="sxs-lookup"><span data-stu-id="c8954-120">Learn about spoof intelligence</span></span>](learn-about-spoof-intelligence.md)
     
-- [<span data-ttu-id="065be-121">Configurer les stratégies anti-hameçonnage DAV</span><span class="sxs-lookup"><span data-stu-id="065be-121">Set up ATP anti-phishing policies</span></span>](set-up-atp-anti-phishing-policies.md)
+- [<span data-ttu-id="c8954-121">Configurer des stratégies anti-hameçonnage</span><span class="sxs-lookup"><span data-stu-id="c8954-121">Set up anti-phishing policies</span></span>](set-up-anti-phishing-policies.md)
     
-- [<span data-ttu-id="065be-122">Configuration des stratégies de liens fiables ATP</span><span class="sxs-lookup"><span data-stu-id="065be-122">Set up ATP Safe Links policies</span></span>](set-up-atp-safe-links-policies.md)
+- [<span data-ttu-id="c8954-122">Configuration des stratégies de liens fiables ATP</span><span class="sxs-lookup"><span data-stu-id="c8954-122">Set up ATP Safe Links policies</span></span>](set-up-atp-safe-links-policies.md)
     
-- <span data-ttu-id="065be-123">[Configurer des stratégies de pièces jointes fiables ATP](set-up-atp-safe-attachments-policies.md) </span><span class="sxs-lookup"><span data-stu-id="065be-123">[Set up ATP Safe Attachments policies](set-up-atp-safe-attachments-policies.md)</span></span>
+- <span data-ttu-id="c8954-123">[Configurer des stratégies de pièces jointes fiables ATP](set-up-atp-safe-attachments-policies.md) </span><span class="sxs-lookup"><span data-stu-id="c8954-123">[Set up ATP Safe Attachments policies](set-up-atp-safe-attachments-policies.md)</span></span>
     
-## <a name="encryption"></a><span data-ttu-id="065be-124">Chiffrement</span><span class="sxs-lookup"><span data-stu-id="065be-124">Encryption</span></span>
+## <a name="encryption"></a><span data-ttu-id="c8954-124">Chiffrement</span><span class="sxs-lookup"><span data-stu-id="c8954-124">Encryption</span></span>
 
-<span data-ttu-id="065be-p102">Obtenir une vue d’ensemble de chiffrement, configurer les stratégies de gestion des droits et le chiffrement du courrier électronique et configurer les paramètres de chiffrement supplémentaires. Obtenir plus d’informations sur le certificat racine utilisé par les serveurs de messagerie électronique pour Office 365.</span><span class="sxs-lookup"><span data-stu-id="065be-p102">Get a primer on encryption, set up rights management policies and email encryption, and configure additional encryption settings. Get details about the root certificate used by our mail servers for Office 365.</span></span>
+<span data-ttu-id="c8954-p102">Obtenir une vue d’ensemble de chiffrement, configurer les stratégies de gestion des droits et le chiffrement du courrier électronique et configurer les paramètres de chiffrement supplémentaires. Obtenir plus d’informations sur le certificat racine utilisé par les serveurs de messagerie électronique pour Office 365.</span><span class="sxs-lookup"><span data-stu-id="c8954-p102">Get a primer on encryption, set up rights management policies and email encryption, and configure additional encryption settings. Get details about the root certificate used by our mail servers for Office 365.</span></span>
   
-- [<span data-ttu-id="065be-127">En savoir plus sur le chiffrement dans Office 365</span><span class="sxs-lookup"><span data-stu-id="065be-127">Learn about encryption in Office 365</span></span>](encryption.md)
+- [<span data-ttu-id="c8954-127">En savoir plus sur le chiffrement dans Office 365</span><span class="sxs-lookup"><span data-stu-id="c8954-127">Learn about encryption in Office 365</span></span>](encryption.md)
     
-- [<span data-ttu-id="065be-128">Configurer le chiffrement dans Office 365 Entreprise</span><span class="sxs-lookup"><span data-stu-id="065be-128">Set up encryption in Office 365 Enterprise</span></span>](set-up-encryption.md)
+- [<span data-ttu-id="c8954-128">Configurer le chiffrement dans Office 365 Entreprise</span><span class="sxs-lookup"><span data-stu-id="c8954-128">Set up encryption in Office 365 Enterprise</span></span>](set-up-encryption.md)
     
-- [<span data-ttu-id="065be-129">Chiffrement de messages Office 365 (OME)</span><span class="sxs-lookup"><span data-stu-id="065be-129">Office 365 Message Encryption (OME)</span></span>](ome.md)
+- [<span data-ttu-id="c8954-129">Chiffrement de messages Office 365 (OME)</span><span class="sxs-lookup"><span data-stu-id="c8954-129">Office 365 Message Encryption (OME)</span></span>](ome.md)
     
-- [<span data-ttu-id="065be-130">Implémenter mettre votre propre clé (BYOK)</span><span class="sxs-lookup"><span data-stu-id="065be-130">Implement bring your own key (BYOK)</span></span>](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault)
+- [<span data-ttu-id="c8954-130">Implémenter mettre votre propre clé (BYOK)</span><span class="sxs-lookup"><span data-stu-id="c8954-130">Implement bring your own key (BYOK)</span></span>](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault)
     
-## <a name="managing-devices-amp-apps"></a><span data-ttu-id="065be-131">Gestion des appareils &amp; applications</span><span class="sxs-lookup"><span data-stu-id="065be-131">Managing devices &amp; apps</span></span>
+## <a name="managing-devices-amp-apps"></a><span data-ttu-id="c8954-131">Gestion des appareils &amp; applications</span><span class="sxs-lookup"><span data-stu-id="c8954-131">Managing devices &amp; apps</span></span>
 
-<span data-ttu-id="065be-132">Surveiller et contrôler l’accès de périphériques mobiles vos données Office 365 et interdire ou approuver les applications mobiles utilisés dans votre organisation.</span><span class="sxs-lookup"><span data-stu-id="065be-132">Monitor and control how mobile devices access your Office 365 data, and ban or approve mobile apps in use at your organization.</span></span>
+<span data-ttu-id="c8954-132">Surveiller et contrôler l’accès de périphériques mobiles vos données Office 365 et interdire ou approuver les applications mobiles utilisés dans votre organisation.</span><span class="sxs-lookup"><span data-stu-id="c8954-132">Monitor and control how mobile devices access your Office 365 data, and ban or approve mobile apps in use at your organization.</span></span>
   
-- [<span data-ttu-id="065be-133">Créer et déployer des stratégies de sécurité des appareils</span><span class="sxs-lookup"><span data-stu-id="065be-133">Create and deploy device security policies</span></span>](https://support.office.com/article/d310f556-8bfb-497b-9bd7-fe3c36ea2fd6)
+- [<span data-ttu-id="c8954-133">Créer et déployer des stratégies de sécurité des appareils</span><span class="sxs-lookup"><span data-stu-id="c8954-133">Create and deploy device security policies</span></span>](https://support.office.com/article/d310f556-8bfb-497b-9bd7-fe3c36ea2fd6)
     
-- [<span data-ttu-id="065be-134">Gérer les autorisations des applications à l’aide de la sécurité des applications cloud Office 365</span><span class="sxs-lookup"><span data-stu-id="065be-134">Manage app permissions using Office 365 Cloud App Security</span></span>](manage-app-permissions-in-ocas.md)
+- [<span data-ttu-id="c8954-134">Gérer les autorisations des applications à l’aide de la sécurité des applications cloud Office 365</span><span class="sxs-lookup"><span data-stu-id="c8954-134">Manage app permissions using Office 365 Cloud App Security</span></span>](manage-app-permissions-in-ocas.md)
     
-## <a name="threat-intelligence"></a><span data-ttu-id="065be-135">Informations sur les menaces</span><span class="sxs-lookup"><span data-stu-id="065be-135">Threat intelligence</span></span>
+## <a name="threat-intelligence"></a><span data-ttu-id="c8954-135">Informations sur les menaces</span><span class="sxs-lookup"><span data-stu-id="c8954-135">Threat intelligence</span></span>
 
-<span data-ttu-id="065be-136">Identifier, analyser et comprendre les attaques et menaces rapidement en utilisant les analyses et la base de connaissances disponible pour empêcher les attaques.</span><span class="sxs-lookup"><span data-stu-id="065be-136">Identify, monitor, and understand attacks, and quickly address threats by using the insights and knowledge available to prevent attacks.</span></span>
+<span data-ttu-id="c8954-136">Identifier, analyser et comprendre les attaques et menaces rapidement en utilisant les analyses et la base de connaissances disponible pour empêcher les attaques.</span><span class="sxs-lookup"><span data-stu-id="c8954-136">Identify, monitor, and understand attacks, and quickly address threats by using the insights and knowledge available to prevent attacks.</span></span>
   
-- [<span data-ttu-id="065be-137">Obtenir une vue d’ensemble des menaces Office 365</span><span class="sxs-lookup"><span data-stu-id="065be-137">Get an overview of Office 365 Threat Intelligence</span></span>](office-365-ti.md)
+- [<span data-ttu-id="c8954-137">Obtenir une vue d’ensemble des menaces Office 365</span><span class="sxs-lookup"><span data-stu-id="c8954-137">Get an overview of Office 365 Threat Intelligence</span></span>](office-365-ti.md)
     
-- [<span data-ttu-id="065be-138">Prise en main d’Office 365 Threat Intelligence</span><span class="sxs-lookup"><span data-stu-id="065be-138">Get started with Office 365 Threat Intelligence</span></span>](get-started-with-ti.md)
+- [<span data-ttu-id="c8954-138">Prise en main d’Office 365 Threat Intelligence</span><span class="sxs-lookup"><span data-stu-id="c8954-138">Get started with Office 365 Threat Intelligence</span></span>](get-started-with-ti.md)
     
-## <a name="privileged-access-management"></a><span data-ttu-id="065be-139">Gestion des accès privilégiés</span><span class="sxs-lookup"><span data-stu-id="065be-139">Privileged access management</span></span>
+## <a name="privileged-access-management"></a><span data-ttu-id="c8954-139">Gestion des accès privilégiés</span><span class="sxs-lookup"><span data-stu-id="c8954-139">Privileged access management</span></span>
 
-<span data-ttu-id="065be-p103">Aider à protéger votre organisation contre les violations qui peuvent utiliser des comptes d’administration privilégié existants avec accès permanent à des données sensibles ou l’accès aux paramètres de configuration critique. Après avoir activé la gestion de l’accès privilégié, les utilisateurs devront demander l’accès juste-à-temps pour effectuer des tâches avec des privilèges élevés et privilégiés via un flux de travail d’approbation qui est hautement et de temps.</span><span class="sxs-lookup"><span data-stu-id="065be-p103">Help protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. After enabling privileged access management, users will need to request just-in-time access to complete elevated and privileged tasks through an approval workflow that is highly scoped and time-bound.</span></span>
+<span data-ttu-id="c8954-p103">Aider à protéger votre organisation contre les violations qui peuvent utiliser des comptes d’administration privilégié existants avec accès permanent à des données sensibles ou l’accès aux paramètres de configuration critique. Après avoir activé la gestion de l’accès privilégié, les utilisateurs devront demander l’accès juste-à-temps pour effectuer des tâches avec des privilèges élevés et privilégiés via un flux de travail d’approbation qui est hautement et de temps.</span><span class="sxs-lookup"><span data-stu-id="c8954-p103">Help protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. After enabling privileged access management, users will need to request just-in-time access to complete elevated and privileged tasks through an approval workflow that is highly scoped and time-bound.</span></span>
   
-- [<span data-ttu-id="065be-142">Obtenir une vue d’ensemble des privilèges accéder à la gestion</span><span class="sxs-lookup"><span data-stu-id="065be-142">Get an overview of privileged access management</span></span>](privileged-access-management-overview.md)
+- [<span data-ttu-id="c8954-142">Obtenir une vue d’ensemble des privilèges accéder à la gestion</span><span class="sxs-lookup"><span data-stu-id="c8954-142">Get an overview of privileged access management</span></span>](privileged-access-management-overview.md)
     
-- [<span data-ttu-id="065be-143">Prendre en main privilégié accéder à la gestion</span><span class="sxs-lookup"><span data-stu-id="065be-143">Get started with privileged access management</span></span>](privileged-access-management-configuration.md)
+- [<span data-ttu-id="c8954-143">Prendre en main privilégié accéder à la gestion</span><span class="sxs-lookup"><span data-stu-id="c8954-143">Get started with privileged access management</span></span>](privileged-access-management-configuration.md)
 
-## <a name="additional-options"></a><span data-ttu-id="065be-144">Options supplémentaires</span><span class="sxs-lookup"><span data-stu-id="065be-144">Additional options</span></span>
+## <a name="additional-options"></a><span data-ttu-id="c8954-144">Options supplémentaires</span><span class="sxs-lookup"><span data-stu-id="c8954-144">Additional options</span></span>
 
-<span data-ttu-id="065be-145">Obtenir plus d’informations sur les technologies Microsoft associées et les processus permettant de sécurité Office 365 contre les menaces.</span><span class="sxs-lookup"><span data-stu-id="065be-145">Get more information about related Microsoft technologies and processes that help secure Office 365 against threats.</span></span>
+<span data-ttu-id="c8954-145">Obtenir plus d’informations sur les technologies Microsoft associées et les processus permettant de sécurité Office 365 contre les menaces.</span><span class="sxs-lookup"><span data-stu-id="c8954-145">Get more information about related Microsoft technologies and processes that help secure Office 365 against threats.</span></span>
   
-- [<span data-ttu-id="065be-146">En savoir plus sur Azure Rights Management</span><span class="sxs-lookup"><span data-stu-id="065be-146">Learn about Azure Rights Management</span></span>](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
+- [<span data-ttu-id="c8954-146">En savoir plus sur Azure Rights Management</span><span class="sxs-lookup"><span data-stu-id="c8954-146">Learn about Azure Rights Management</span></span>](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
     
-- [<span data-ttu-id="065be-147">En savoir plus sur Azure coffre-fort clé</span><span class="sxs-lookup"><span data-stu-id="065be-147">Learn about Azure Key Vault</span></span>](https://docs.microsoft.com/azure/key-vault/)
+- [<span data-ttu-id="c8954-147">En savoir plus sur Azure coffre-fort clé</span><span class="sxs-lookup"><span data-stu-id="c8954-147">Learn about Azure Key Vault</span></span>](https://docs.microsoft.com/azure/key-vault/)
     
-- [<span data-ttu-id="065be-148">En savoir plus sur l’isolation du locataire</span><span class="sxs-lookup"><span data-stu-id="065be-148">Learn about tenant isolation</span></span>](http://download.microsoft.com/download/3/F/0/3F0420A2-657B-44B6-B21E-D7BD98A94390/Tenant%20Isolation%20in%20Office%20365.pdf)
+- [<span data-ttu-id="c8954-148">En savoir plus sur l’isolation du locataire</span><span class="sxs-lookup"><span data-stu-id="c8954-148">Learn about tenant isolation</span></span>](http://download.microsoft.com/download/3/F/0/3F0420A2-657B-44B6-B21E-D7BD98A94390/Tenant%20Isolation%20in%20Office%20365.pdf)
     
 
