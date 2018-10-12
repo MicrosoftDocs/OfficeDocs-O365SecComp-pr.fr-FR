@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Créer une stratégie d’archivage et de suppression dans Office 365 qui déplace automatiquement les éléments de boîte aux lettres d’archivage d’un utilisateur.
-ms.openlocfilehash: 807488f9ec7088adccdf1fc111d67b9dab8e0a38
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 740164ee840a32aff20f5c2dc1b1ae433d95cfe5
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528179"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522295"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Configurer une stratégie d’archivage et de suppression des boîtes aux lettres dans votre organisation Office 365
 
@@ -104,7 +104,7 @@ Pour créer des balises de rétention, vous allez utiliser le centre d’adminis
     
 2. Dans le volet de navigation de gauche du centre d’administration Office 365, cliquez sur **Centre d’administration**, puis cliquez sur **Exchange**.
     
-    ![Capture d’écran montre que le centre d’administration Office 365 avec l’administrateur centres option développé et Exchange sélectionné.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
+    ![Screenshot shows the Office 365 admin center with the Admin centers option expanded and Exchange selected.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
   
 3. Dans le CAE, accédez à **gestion de la conformité** \> **balises de rétention**
     
@@ -238,7 +238,7 @@ Lorsqu’une nouvelle boîte aux lettres est créé, une stratégie de rétentio
 ## <a name="optional-step-5-run-the-managed-folder-assistant-to-apply-the-new-settings"></a>(Facultatif) Étape 5 : Exécuter l’Assistant dossier géré pour appliquer les nouveaux paramètres
 <a name="step3"> </a>
 
-Après avoir appliqué la nouvelle stratégie de rétention aux boîtes aux lettres à l’étape 4, elle peut prendre jusqu'à sept jours dans Exchange Online pour les nouveaux paramètres de rétention à appliquer aux boîtes aux lettres. Il s’agit, car un processus appelé l’Assistant dossier géré boîtes aux lettres du processus de 7 jours. Au lieu d’attendre l’Assistant dossier géré à exécuter, vous pouvez forcer cette situation en exécutant la l’applet de commande **Start-ManagedFolderAssistant** dans Exchange Online PowerShell. 
+Après avoir appliqué la nouvelle stratégie de rétention aux boîtes aux lettres à l’étape 4, elle peut prendre jusqu'à sept jours dans Exchange Online pour les nouveaux paramètres de rétention à appliquer aux boîtes aux lettres. Il s’agit, car un processus appelé l’Assistant dossier géré boîtes aux lettres du processus de 7 jours. Au lieu d’attendre l’Assistant dossier géré à exécuter, vous pouvez forcer cette situation en exécutant l’applet de commande **Start-ManagedFolderAssistant** dans Exchange Online PowerShell. 
   
  **Que se passe-t-il lorsque vous exécutez l’Assistant dossier géré ?** Il applique les paramètres dans la stratégie de rétention par inspection des éléments dans la boîte aux lettres et de déterminer si elles sont soumis à rétention. Il affecte ensuite les éléments soumis à rétention avec la balise de rétention appropriées et effectue l’action de rétention spécifié sur les éléments au-delà de leur âge de rétention. 
   
@@ -292,7 +292,7 @@ Voilà ! Vous avez configuré une stratégie d’archivage et de suppression de
     
 - Le tableau suivant fournit plus d’informations sur chaque balise de rétention qui est ajouté à la stratégie de rétention personnalisée qui a été créée en suivant les étapes décrites dans cette rubrique.
     
-    |**Balise de rétention**|**Ce que fait cette balise**|**Intégrée ou personnalisée ?**|**Type**|
+    |**Balise de rétention**|**Ce que fait cette balise**|**Intégrée ou personnalisée ?**|**Type (Type)**|
     |:-----|:-----|:-----|:-----|
     |Déplacement vers l’Archive-3 ans Alpine House  <br/> |Déplace les éléments qui sont 1095 jours (3 ans) à la boîte aux lettres d’archive.  <br/> |Personnalisé (voir [étape 2 : créer des balises de rétention nouvelle pour les stratégies d’archivage et de suppression](set-up-an-archive-and-deletion-policy-for-mailboxes.md#step3) )  <br/> |Balise de stratégie par défaut (archive) ; Cette balise est automatiquement appliquée à la boîte aux lettres entière.  <br/> |
     |Maison Alpine 7 ans supprimer définitivement  <br/> |Supprime définitivement les éléments dans la boîte aux lettres principale ou de la boîte aux lettres d’archive lorsqu’ils sont 7 ans.  <br/> |Personnalisé (voir [étape 2 : créer des balises de rétention nouvelle pour les stratégies d’archivage et de suppression](set-up-an-archive-and-deletion-policy-for-mailboxes.md#step3) )  <br/> |Balise de stratégie par défaut (suppression) ; Cette balise est automatiquement appliquée à la boîte aux lettres entière.  <br/> |

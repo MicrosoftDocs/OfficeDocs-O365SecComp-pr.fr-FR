@@ -3,19 +3,19 @@ title: Gérer des affaires eDiscovery de sécurité Office 365 &amp; centre de c
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 7/2/2018
+ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: Utilisez le Office 365 Security &amp; centre de conformité pour créer des suspensions eDiscovery, ainsi que d’accéder et de gérer des affaires eDiscovery dans votre organisation.
-ms.openlocfilehash: cf7d821b9883caa98e867f4a38ee3caeddb2712b
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 604bdb5adff69911945c279fcb4fcd8a2e105632
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038327"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522305"
 ---
 # <a name="manage-ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>Gérer des affaires eDiscovery de sécurité Office 365 &amp; centre de conformité
 
@@ -73,9 +73,9 @@ La première étape consiste à attribuer les autorisations appropriées liés �
   
  **Pour attribuer des autorisations de découverte électronique, procédez comme suit :**
   
-1. Accédez à [https://protection.office.com](https://protection.office.com).
+1. Accédez à la page [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à Office 365 à l’aide de votre compte professionnel ou de l’école.
+2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
 3. Dans la sécurité &amp; centre de conformité, cliquez sur **autorisations**, puis effectuez l’une des opérations suivantes en fonction des autorisations que vous souhaitez affecter eDiscovery.
     
@@ -87,16 +87,16 @@ La première étape consiste à attribuer les autorisations appropriées liés �
     
 4. Une fois que vous avez ajouté tous les utilisateurs, cliquez sur **terminé**, cliquez sur **Enregistrer** pour enregistrer les modifications apportées au groupe de rôles, puis cliquez sur **Fermer**.
     
-[Return to top](manage-ediscovery-cases.md#top)
+
   
 ## <a name="step-2-create-a-new-case"></a>Étape 2 : Créer un nouveau cas
 <a name="step2_1"> </a>
 
 L’étape suivante consiste à créer un nouveau cas eDiscovery. Vous devez être membre du groupe de rôles responsables eDiscovery pour créer des cas de découverte électronique. Comme expliqué, après avoir créé un nouveau cas de la sécurité &amp; centre de conformité, vous (et autres membres de l’incidents) seront en mesure d’accès que même casse d’eDiscovery avancée si vous êtes organisation dispose d’un abonnement à Office 365 E5.
   
-1. Accédez à [https://protection.office.com](https://protection.office.com).
+1. Accédez à la page [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à Office 365 à l’aide de votre compte professionnel ou de l’école.
+2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
 3. Dans la sécurité &amp; centre de conformité, cliquez sur **recherche &amp; enquête** \> **eDiscovery**, puis cliquez sur ![ajouter une icône](media/ITPro-EAC-AddIcon.gif) **créer un cas**.
     
@@ -108,8 +108,6 @@ L’étape suivante consiste à créer un nouveau cas eDiscovery. Vous devez êt
     
     > [!TIP]
     > Après avoir créé un nouveau cas, vous pouvez le renommer à tout moment. Cliquez simplement sur le nom du dossier dans la page de **découverte électronique** . Dans la page Lanceur de **gérer ce cas** , modifiez le nom affiché dans la zone sous **nom**, puis enregistrer les modifications. 
-  
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="step-3-add-members-to-a-case"></a>Étape 3 : Ajouter des membres à un cas
 <a name="step2a_1"> </a>
@@ -136,8 +134,6 @@ Après avoir créé un nouveau cas, l’étape suivante consiste à ajouter des 
     Dans **ce cas, de gérer**, cliquez sur **Enregistrer** pour enregistrer la nouvelle liste de membres de l’incidents. 
     
 6. Cliquez sur **Enregistrer** pour enregistrer la nouvelle liste de membres de l’incidents. 
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="step-4-place-content-locations-on-hold"></a>Étape 4 : Suspendre sur les emplacements de contenu
 <a name="step3_1"> </a>
@@ -178,11 +174,10 @@ Pour créer une suspension pour un cas de découverte électronique :
   
 2. **Sites** Cliquez sur **Ajouter**![ajouter une icône](media/ITPro-EAC-AddIcon.gif) SharePoint et OneDrive pour les sites à mettre en attente. Tapez l’URL pour chaque site que vous souhaitez mettre en attente. Vous pouvez également ajouter l’URL du site SharePoint pour un groupe d’Office 365 ou un Team Microsoft. 
     
-<<<<<<< Tête de voir le [gérer des affaires eDiscovery de sécurité Office 365 &amp; centre de conformité](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da#moreinfo_1) section pour obtenir des conseils sur le fait de placer des groupes Office 365 et Microsoft Teams en attente. === Voir la section [plus d’informations](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da.aspx#moreinfo_1) pour obtenir des conseils sur le fait de placer des groupes Office 365 et Microsoft Teams en attente. 
->>>>>>> conversion deniseb
+    Voir la section [plus d’informations](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da.aspx#moreinfo_1) pour obtenir des conseils sur le fait de placer des groupes Office 365 et Microsoft Teams en attente. 
     
     > [!NOTE]
-    > In the rare case that a person's user principal name (UPN) is changed, the URL for their OneDrive account will also be changed to incorporate the new UPN. If this happens, you'll have to modify the hold by adding the user's new OneDrive URL and removing the old one. 
+    > Dans ce cas rare que le nom d’une personne utilisateur principal (UPN) est modifié, l’URL de leur compte OneDrive système aussi être modifié pour incorporer le nouvel UPN. Dans ce cas, vous devrez modifier la suspension en ajoutant une nouvelle URL l’utilisateur de OneDrive et de supprimer l’ancien. 
   
 3. **Dossiers publics** Cliquez sur **maintenez tous les dossiers publics** pour placer tous les dossiers publics dans votre Exchange Online blocage de l’organisation. Notez que vous ne pouvez pas choisir des dossiers publics spécifiques à mettre en attente. Laissez l’option **ne pas contenir tous les dossiers publics** sélectionnée si vous ne souhaitez pas placer une suspension sur les dossiers publics. 
     
@@ -199,8 +194,6 @@ Pour créer une suspension pour un cas de découverte électronique :
 2. Sous **Conditions**, cliquez sur **Ajouter une condition** pour ajouter une ou plusieurs conditions pour limiter la requête de recherche pour la suspension. Chaque condition ajoute une clause à la requête de recherche KQL qui est créée et exécuter lorsque vous créez la suspension. Par exemple, vous pouvez spécifier une plage de dates afin que le courrier électronique ou site de documents qui ont été créés dans la plage de date sont mis en attente. Une condition est logiquement connectée à la requête de mot clé (spécifiée dans la zone mots clés) par l’opérateur **AND** . Ce qui signifie que les éléments doivent satisfaire à la fois la requête de mot clé et la condition à être mis en attente. 
     
 9. Après avoir configuré basée sur une requête permanente, cliquez sur **Terminer** pour créer la suspension. 
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ### <a name="hold-statistics"></a>Maintenez les statistiques
 
@@ -217,8 +210,6 @@ Gardez les éléments suivants à l’esprit les statistiques d’attente :
 - Vous pouvez obtenir la dernière version maintenez estimer les statistiques en cliquant sur **mettre à jour les statistiques** pour réexécuter une recherche qui calcule le nombre actuel d’éléments en attente. Si nécessaire, cliquez sur **Actualiser**![icône Actualiser](media/O365-MDM-Policy-RefreshIcon.gif) dans la barre d’outils pour mettre à jour les statistiques d’attente dans le volet détails. 
     
 - Normal pour le nombre d’éléments de blocage pour augmenter au fil du temps, car les utilisateurs dont la boîte aux lettres ou site sont en attente sont généralement envoi ou la réception de nouveau message électronique et la création SharePoint nouvelle et OneDrive des documents d’entreprise.
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="step-5-create-and-run-a-content-search-associated-with-a-case"></a>Étape 5 : Créer et exécuter une recherche de contenu associé à un incident
 <a name="step4_1"> </a>
@@ -265,13 +256,11 @@ Une fois un cas eDiscovery est créé et les dépositaires liées à la casse so
     
 7. Après avoir sélectionné les emplacements de contenu de recherche, cliquez sur **suivant**.
     
-8. Sur la page **Nouvelle recherche**, vous pouvez ajouter des mots clés et des conditions pour créer la requête de recherche. 
-    
-    ![Les conditions et les critères de recherche](media/9064147e-feac-4090-bbf6-2298ad7622c6.png)
+8. Sur la page **Nouvelle recherche**, vous pouvez ajouter des mots clés et des conditions pour créer la requête de recherche. <br/>![Les conditions et les critères de recherche](media/9064147e-feac-4090-bbf6-2298ad7622c6.png)
   
-1. Dans la zone sous **que voulez-vous rechercher les ?**, tapez une requête de recherche dans la zone. Vous pouvez spécifier des mots clés, message propriétés telles qu’envoyés et reçus de dates, ou des propriétés de document telles que les noms de fichiers ou la date de dernière modification un document. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, tels que **et**, **ou**, **pas**, **NEAR**ou **ONEAR**. Vous pouvez également rechercher des informations sensibles (comme les numéros de sécurité sociale) dans des documents ou de recherche pour les documents qui ont été partagées en externe. Si vous laissez la zone mot clé vide, tout le contenu situé dans les emplacements de contenu spécifiés sera inclus dans les résultats de recherche. 
+9. Dans la zone sous **que voulez-vous rechercher les ?**, tapez une requête de recherche dans la zone. Vous pouvez spécifier des mots clés, message propriétés telles qu’envoyés et reçus de dates, ou des propriétés de document telles que les noms de fichiers ou la date de dernière modification un document. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, tels que **et**, **ou**, **pas**, **NEAR**ou **ONEAR**. Vous pouvez également rechercher des informations sensibles (comme les numéros de sécurité sociale) dans des documents ou de recherche pour les documents qui ont été partagées en externe. Si vous laissez la zone mot clé vide, tout le contenu situé dans les emplacements de contenu spécifiés sera inclus dans les résultats de recherche. 
     
-2. Vous pouvez cliquer sur la case à cocher **Afficher la liste des mots clés** et le type d’un mot clé dans chaque ligne. Si vous procédez ainsi, les mots clés dans chaque ligne sont connectés par l’opérateur **ou** dans la requête de recherche qui est créée. 
+10. Vous pouvez cliquer sur la case à cocher **Afficher la liste des mots clés** et le type d’un mot clé dans chaque ligne. Si vous procédez ainsi, les mots clés dans chaque ligne sont connectés par l’opérateur **ou** dans la requête de recherche qui est créée. 
     
     ![Mots clés de recherche](media/c3ef511a-e0a3-4b5d-9779-36803270a193.png)
   
@@ -279,19 +268,17 @@ Une fois un cas eDiscovery est créé et les dépositaires liées à la casse so
     
     Pour plus d’informations sur l’utilisation de la liste des mots clés, voir [plus d’informations](run-a-content-search-in-the-security-and-compliance-center.md#moreinfo).
     
-3. Cliquez sur **vérifier la requête pour toute erreur** pour vérifier votre requête pour les caractères non pris en charge et des opérateurs booléens qui ne peuvent pas être mise en majuscule. Caractères non pris en charge sont souvent masqués et généralement de provoquer une erreur de recherche ou renvoyer des résultats inattendus. Pour plus d’informations sur les caractères non pris en charge qui sont en cours, voir [vérifier votre requête de recherche de contenu pour les erreurs](check-your-content-search-query-for-errors.md).
+11. Cliquez sur **vérifier la requête pour toute erreur** pour vérifier votre requête pour les caractères non pris en charge et des opérateurs booléens qui ne peuvent pas être mise en majuscule. Caractères non pris en charge sont souvent masqués et généralement de provoquer une erreur de recherche ou renvoyer des résultats inattendus. Pour plus d’informations sur les caractères non pris en charge qui sont en cours, voir [vérifier votre requête de recherche de contenu pour les erreurs](check-your-content-search-query-for-errors.md).
     
-4. Dans des **Conditions**, ajouter des conditions à une requête de recherche pour affiner la recherche et de renvoyer un jeu de résultats plus précis. Chaque condition ajoute une clause à la requête de recherche KQL qui est créée et exécutée lorsque vous démarrez la recherche. Une condition est logiquement connectée à la requête de mot clé (spécifiée dans la zone mots clés) par l’opérateur **AND** . Cela signifie que les éléments ont afin de répondre à la requête de mot clé et la condition à inclure dans les résultats. Il s’agit de comment conditions vous aider à limiter les résultats. 
+12. Dans des **Conditions**, ajouter des conditions à une requête de recherche pour affiner la recherche et de renvoyer un jeu de résultats plus précis. Chaque condition ajoute une clause à la requête de recherche KQL qui est créée et exécutée lorsque vous démarrez la recherche. Une condition est logiquement connectée à la requête de mot clé (spécifiée dans la zone mots clés) par l’opérateur **AND** . Cela signifie que les éléments ont afin de répondre à la requête de mot clé et la condition à inclure dans les résultats. Il s’agit de comment conditions vous aider à limiter les résultats. 
     
     Pour plus d’informations sur la création d’une requête de recherche et l’utilisation de conditions, voir [Keyword queries for Content Search](keyword-queries-and-search-conditions.md).
     
-9. Cliquez sur **Rechercher** pour enregistrer les paramètres de recherche et commencer la recherche. 
+13. Cliquez sur **Rechercher** pour enregistrer les paramètres de recherche et commencer la recherche. 
     
     La recherche est lancée. Après un certain temps, une estimation des résultats de recherche s’affiche dans le volet détails. L’estimation inclut la taille totale et le nombre d’éléments qui correspond aux critères de recherche. L’estimation de la recherche inclut également le nombre d’éléments non indexés dans les emplacements de contenu qui ont été exclus. Le nombre d’éléments non indexés qui ne respectent pas les critères de recherche s’être inclus dans les statistiques de la recherche affichés dans le volet détails. Si un élément non indexés correspondances la recherche de requête (étant donné que les autres propriétés de message ou un document aux critères de recherche), il ne sont pas inclus dans l’estimation du nombre d’éléments non indexés. Si un élément non indexée est exclu par les critères de recherche, il n’est également inclus dans l’estimation des éléments non indexés.
     
     Une fois que la recherche est terminée, vous pouvez afficher les résultats de recherche. Si nécessaire, cliquez sur **Actualiser**![icône Actualiser](media/O365-MDM-Policy-RefreshIcon.gif) pour mettre à jour les informations contenues dans le volet de détails. 
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="step-6-export-the-results-of-a-content-search-associated-with-a-case"></a>Étape 6 : Exporter les résultats d’une recherche de contenu associé à un incident
 <a name="step5_1"> </a>
@@ -381,8 +368,6 @@ Comme alternative à exporter les résultats d’une recherche de contenu unique
 - Si vous redémarrez une exportation dans la page **exportation** dans un cas eDiscovery, les résultats de recherche qui sont transférés vers la zone de stockage Azure remplacera les résultats de la précédentes ; les résultats précédents, il y avait transféré n’est pas disponible pour être téléchargé. 
     
 - Préparer les résultats des recherches multiples pour l’analyse d’eDiscovery avancée n’est pas disponible. Vous pouvez uniquement préparer les résultats d’une recherche unique pour l’analyse d’eDiscovery avancée.
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="step-7-prepare-search-results-for-advanced-ediscovery"></a>Étape 7 : Préparation de résultats pour la découverte avancée de la recherche
 <a name="step7_1"> </a>
@@ -415,8 +400,6 @@ Lorsque vous préparez des résultats de la recherche avancée eDiscovery, les f
     Les résultats de recherche sont préparés pour l’analyse de découverte électronique avancée.
     
 7. Dans le volet détails, cliquez sur **vérifier l’état de préparation** pour afficher des informations sur le processus de préparation. Une fois le processus de préparation terminé, vous pouvez passer au cas d’eDiscovery avancée pour traiter les données d’analyse. 
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="step-8-go-to-the-case-in-advanced-ediscovery"></a>Étape 8 : Accédez à la casse d’eDiscovery avancée
 <a name="gotoAeD_1"> </a>
@@ -445,8 +428,6 @@ Pour accéder à un cas dans Advanced eDiscovery :
     
 > [!TIP]
 > Cliquez sur le **commutateur à la découverte électronique** pour revenir à la casse de la sécurité &amp; centre de conformité. 
-  
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="optional-step-9-close-a-case"></a>(Facultatif) Étape 9 : Fermer un incident
 <a name="closecase_1"> </a>
@@ -484,8 +465,6 @@ Pour fermer un cas :
 7. Dans la page de la **découverte électronique** , cliquez sur ![icône Actualiser](media/O365-MDM-Policy-RefreshIcon.gif) **Actualiser** pour mettre à jour le statut de l’incident fermé. Il peut prendre jusqu'à 60 minutes pour terminer le processus de fermeture. 
     
     Lorsque le processus est terminé, le statut de l’incident est modifié pour **Fermer** dans la page de **découverte électronique** . Cliquez sur le nom de la casse pour afficher la page **gérer ce cas** flottant, qui contient des informations sur la casse a été fermée et qui a été fermé. 
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="optional-step-10-re-open-a-closed-case"></a>(Facultatif) Étape 10 : Rouvrir un incident fermé
 <a name="reopencase_1"> </a>
@@ -511,8 +490,6 @@ Lorsque vous rouvrez un cas, les suspensions qui étaient en place lors de la fe
 6. Dans la page de la **découverte électronique** , cliquez sur ![icône Actualiser](media/O365-MDM-Policy-RefreshIcon.gif) **Actualiser** pour mettre à jour le statut de l’incident ouvert à nouveau. Il peut prendre jusqu'à 60 minutes pour le processus d’ouverture de nouveau terminer. 
     
     Lorsque le processus est terminé, le statut de l’incident est modifié **actif** dans la page de **découverte électronique** . 
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="more-information"></a>Plus d'informations
 <a name="moreinfo_1"> </a>
@@ -536,11 +513,8 @@ Lorsque vous rouvrez un cas, les suspensions qui étaient en place lors de la fe
     
     Enfin, précédente comme expliqué, administrateurs de découverte électronique dans la sécurité &amp; centre de conformité sont automatiquement ajoutés en tant qu’administrateurs d’eDiscovery avancée. Par conséquent, une personne qui est une administrateur de découverte électronique peut effectuer des tâches administratives d’eDiscovery avancée, telles que la configuration des utilisateurs, des cas de création et ajout de données à des cas.
     
-<<<<<<< HEAD
-- **Quelles sont les conditions de licence pour placer les emplacements de contenu en attente ?** En règle générale, les organisations nécessitent un abonnement à Office 365 E3 ou supérieur pour mettre les emplacements de contenu en attente. Pour mettre des boîtes aux lettres en attente, une licence Exchange Online Plan 2 est requise. Pour plus d’informations, consultez la rubrique cette [FAQ sur eDiscovery](https://support.office.com/article/9d1a29ae-b7b4-4a27-9c8c-84289023dcae#Q5). =======
 - **Quelles sont les conditions de licence pour placer les emplacements de contenu en attente ?** En règle générale, les organisations nécessitent un abonnement à Office 365 E3 ou supérieur pour mettre les emplacements de contenu en attente. Pour mettre des boîtes aux lettres en attente, une licence Exchange Online Plan 2 est requise. Pour plus d’informations, voir ce [Forum aux questions](https://support.office.com/article/9d1a29ae-b7b4-4a27-9c8c-84289023dcae.aspx#Q5).
->>>>>>> conversion deniseb
-    
+
 - **Else doivent savoir à propos de la recherche dans tout le contenu à l’étape 5 ?** Comme expliqué précédemment, vous pouvez rechercher les emplacements de contenu qui ont été mis en attente dans le cas. Lorsque vous effectuez cette opération, uniquement le contenu qui correspond aux critères de suspension est recherche. S’il n’existe aucun critère d’attente, tout le contenu est recherché. Si le contenu est sur une requête bloquer, uniquement le contenu que correspond à la fois doit contenir les critères (à partir de la suspension placés à l’étape 4) et les critères de recherche (à partir de la recherche à l’étape 5) est renvoyée avec les résultats de recherche.
     
     Voici quelques autres éléments à prendre en compte lors de la recherche tout le contenu :

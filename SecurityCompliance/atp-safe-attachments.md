@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 description: La fonctionnalité pièces jointes sûres assure une vérification clic du temps de pièces jointes. Les pièces jointes fiables à utiliser pour protéger votre organisation contre les personnes malveillantes fichiers envoyer ou recevoir de courrier électronique.
-ms.openlocfilehash: 44a7aa56db6b19ac948184988c930841fc7ffb89
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: a43f5aac30f074f6331d809c800005596a721204
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454311"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522265"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 DAV fiable en pièce jointe
 
@@ -28,13 +28,13 @@ Pièces jointes fiables de DAV (ainsi que les [Liens sécurisés DAV](atp-safe-l
   
 Récemment, protection DAV a été étendue aux fichiers dans SharePoint Online, OneDrive pour les entreprises et Teams Microsoft. Pour plus d’informations, voir [Office 365 avancée protection contre les menaces pour SharePoint, OneDrive et les équipes Microsoft](atp-for-spo-odb-and-teams.md).
        
-### <a name="how-it-works"></a>Fonctionnement
+### <a name="how-it-works"></a>Mode de fonctionnement
 
 La fonctionnalité pièces jointes sûres DAV vérifie les pièces jointes des personnes de votre organisation. Lorsqu’une stratégie de pièces jointes sûres DAV est en place et une personne faisant que stratégie affiche leur messagerie électronique dans Office 365, les pièces jointes et les actions appropriées proviennent, en fonction de vos stratégies de pièces jointes sûres DAV. Selon la façon dont vos stratégies définies, personnes peuvent continuer à travailler sans même savoir qu’ils ont été envoyés à des fichiers malveillants.
   
 Voici deux exemples de pièces jointes fiables DAV au travail.
   
-- **Exemple 1 : pièce jointe** Supposons que Lee reçoit un message électronique comportant une pièce jointe. Si elle n’est pas évidente pour Lee que la pièce jointe est fiable ou réellement contienne un programme malveillant conçu pour dérober des informations d’identification de le Lee. Dans l’organisation de Lee, un administrateur de sécurité défini une stratégie de pièces jointes sûres DAV quelques jours. Avec la fonctionnalité pièces jointes sûres DAV, la pièce jointe est ouvert et testée dans un environnement virtuel avant Lee les reçoit. Si la pièce jointe est déterminée malveillante, il sera automatiquement supprimé. Si la pièce jointe est fiable, il s’ouvre normalement lorsque Lee clique dessus. 
+- **Exemple 1 : pièce jointe** Supposons que Lee reçoit un message électronique comportant une pièce jointe. Si elle n’est pas évidente pour Lee que la pièce jointe est fiable ou réellement contienne un programme malveillant conçu pour dérober des informations d’identification de Lee. Dans l’organisation de Lee, un administrateur de sécurité défini une stratégie de pièces jointes sûres DAV quelques jours. Avec la fonctionnalité pièces jointes sûres DAV, la pièce jointe est ouvert et testée dans un environnement virtuel avant Lee les reçoit. Si la pièce jointe est déterminée malveillante, il sera automatiquement supprimé. Si la pièce jointe est fiable, il s’ouvre normalement lorsque Lee clique dessus. 
     
 - **L’exemple 2 : fichier dans SharePoint Online** Supposons que Jean a reçu un fichier et il téléchargé dans une bibliothèque SharePoint Online. Jean partage le lien vers le fichier avec le reste de l’équipe, ne pas savoir que le fichier est réellement malveillant. Heureusement, [DAV pour SharePoint, OneDrive et les équipes Microsoft](atp-for-spo-odb-and-teams.md) détecte le fichier malveillant et bloque. Quelques jours plus tard, Chris accède à ouvrir le document. Bien que Chris peuvent voir que le fichier existe, Chris ne peut pas ouvrir ou partagez-le, ce qui empêche l’ordinateur de Chris et autres personnes à partir du fichier malveillant. 
     
@@ -72,7 +72,7 @@ En outre, le tableau suivant décrit quelques exemples de scénarios. Dans tous 
 
 - Si vous recevez un message électronique (avec ou sans pièce jointe) que vous souhaitez envoyer à Microsoft pour analyse, utilisez le [complément de Message de rapport](enable-the-report-message-add-in.md).
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Protection avancée contre les menaces dans Office 365](office-365-atp.md)
   

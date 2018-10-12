@@ -3,7 +3,7 @@ title: Augmenter le quota des éléments récupérables pour les boîtes aux let
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 8/22/2017
+ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: 'Activer la boîte aux lettres d’archive et activer l’archivage pour augmenter la taille du dossier éléments récupérables pour une boîte aux lettres dans Office 365 développer automatiquement. '
-ms.openlocfilehash: cd2d07e6ef1637343798ccb71870c8d436f10574
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: a347155645d7c058080b1db7fd47f7ea16249724
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782091"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522275"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Augmenter le quota des éléments récupérables pour les boîtes aux lettres placées en conservation
 
@@ -30,12 +30,12 @@ Pour réduire le risque de dépassement de cette limite, le quota de stockage po
   
 |**Emplacement du dossier Éléments récupérables**|**Boîtes aux lettres non placées en conservation**|**Boîtes aux lettres placées en conservation**|
 |:-----|:-----|:-----|
-|Boîte aux lettres principale  <br/> |30 Go  <br/> |100 Go  <br/> |
+|Boîte aux lettres principale  <br/> |30 Go  <br/> |100 Go  <br/> |
 |Boîte aux lettres d’archive<sup>\*</sup> <br/> |Illimité  <br/> |Illimité  <br/> |
 |**Quota de stockage total pour le dossier Éléments récupérables** <br/> |Illimité  <br/> |Illimité  <br/> |
    
 > [!NOTE]
-> <sup>\*</sup>Quota de stockage initial de la boîte aux lettres d’archive est de 100 Go pour les utilisateurs disposant d’une licence Exchange Online (Plan 2). Toutefois, lorsque développer automatiquement l’archivage est activée pour les boîtes aux lettres en attente, le quota de stockage pour les deux la la boîte aux lettres d’archivage et le dossier éléments récupérables est augmentée à 110 Go. Espace de stockage d’archive supplémentaires système mis en service lorsque cela est nécessaire ce qui génère un nombre illimité de stockage d’archives. Pour plus d’informations sur l’extension automatique d’archivage, consultez la rubrique [vue d’ensemble de l’archivage illimité dans Office 365](unlimited-archiving.md). 
+> <sup>\*</sup>Quota de stockage initial de la boîte aux lettres d’archive est de 100 Go pour les utilisateurs disposant d’une licence Exchange Online (Plan 2). Toutefois, lors de l’extension automatique d’archivage est activé pour les boîtes aux lettres en attente, le quota de stockage pour la boîte aux lettres d’archivage et le dossier éléments récupérables est augmenté à 110 Go. Espace de stockage d’archive supplémentaires système mis en service lorsque cela est nécessaire ce qui génère un nombre illimité de stockage d’archives. Pour plus d’informations sur l’extension automatique d’archivage, consultez la rubrique [vue d’ensemble de l’archivage illimité dans Office 365](unlimited-archiving.md). 
   
 Lorsque le quota de stockage pour le dossier Éléments récupérables dans la boîte aux lettres principale d’une boîte aux lettres placée en conservation est proche de sa limite, vous pouvez effectuer les opérations suivantes :
   
@@ -60,7 +60,7 @@ Le reste de cette rubrique décrit les procédures détaillées de création d�
 
 La première étape consiste à créer une balise de rétention personnalisée (appelée balise de stratégie de rétention ou RPT) pour le dossier éléments récupérables. Comme expliqué précédemment, ce rapport déplace les éléments à partir du dossier éléments récupérables dans la boîte aux lettres principale de l’utilisateur dans le dossier éléments récupérables dans la boîte aux lettres de l’utilisateur archive. Vous devez utiliser PowerShell pour créer un rapport pour le dossier éléments récupérables. Vous ne pouvez pas utiliser le centre d’administration Exchange (CAE). 
   
-1. [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)
+1. [Connexion à Exchange Online à l'aide de Remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)
     
 2. Exécutez la commande suivante pour créer une balise de stratégie de rétention pour le dossier Éléments récupérables :  
     
@@ -220,7 +220,7 @@ $MailboxesOnHold = Get-Mailbox -ResultSize unlimited | Where-Object {($_.InPlace
 $MailboxesOnHold.DistinguishedName | Start-ManagedFolderAssistant
 ```
 
-## <a name="more-information"></a>Plus d'informations
+## <a name="more-information"></a>Informations complémentaires
 
 - Une fois que la boîte aux lettres de l’utilisateur archive, prenez en compte pour présenter à l’utilisateur que les autres éléments dans leur boîte aux lettres (pas seulement les éléments dans le dossier éléments récupérables) peuvent être déplacés vers la boîte aux lettres d’archive. Il s’agit, car la stratégie MRM par défaut qui est affecté à des boîtes aux lettres Exchange Online contient une balise de rétention (nommé par défaut de 2 ans à déplacer vers l’archive) qui déplace les éléments dans la boîte aux lettres d’archive deux ans après la date de l’élément a été remis à la boîte aux lettres ou créé par le utilisateur. Pour plus d’informations, voir [Stratégie de rétention par défaut dans Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=746954)
     
