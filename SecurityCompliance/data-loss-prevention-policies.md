@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: Avec une stratégie de protection contre la perte données de sécurité Office 365 &amp; centre de conformité, vous pouvez identifier, analyser et protéger automatiquement les informations sensibles dans Office 365.
-ms.openlocfilehash: e9d033bc54aae6bc1c8089793dbc618f11bef273
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c33fe53797f86208e7cd033029949737a5c84d2f
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013738"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540420"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Vue d’ensemble des stratégies de protection contre la perte de données
 
@@ -304,7 +304,7 @@ Pour ces raisons, les instructions pour la création de règles avec corresponda
     
 - Les niveaux de confiance entre allant généralement juste au-dessus du niveau de confiance inférieur juste en dessous du niveau de confiance plus élevé.
     
-## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>À l’aide d’une étiquette comme une condition dans une stratégie DLP
+## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>Utilisation d’une étiquette comme condition dans une stratégie DLP
 
 Vous pouvez créer une étiquette, puis :
   
@@ -312,7 +312,7 @@ Vous pouvez créer une étiquette, puis :
     
 - **Auto-appliquer** à du contenu qui correspond aux conditions que vous choisissez. 
     
-Pour plus d’informations sur les étiquettes, voir [vue d’ensemble des étiquettes](labels.md).
+Pour en savoir plus sur les étiquettes, consultez l’article [Vue d’ensemble des étiquettes](labels.md).
   
 Après avoir créé une étiquette, vous pouvez ensuite utiliser cette étiquette comme une condition dans vos stratégies DLP. Par exemple, vous pouvez souhaiter car :
   
@@ -332,7 +332,7 @@ Après avoir créé une étiquette, vous pouvez ensuite utiliser cette étiquett
 
 Plusieurs fonctionnalités peuvent être appliquées au contenu contenant des informations sensibles :
   
-- Une [application d’une étiquette automatiquement selon les conditions](labels.md#applying-a-label-automatically-based-on-conditions) et une [stratégie de rétention](retention-policies.md) peuvent appliquer des actions de **rétention** sur ce contenu. 
+- Une [étiquette de rétention](labels.md#applying-a-retention-label-automatically-based-on-conditions)[application d’une étiquette automatiquement en fonction de conditions] et une [stratégie de rétention](retention-policies.md) peuvent appliquer des actions de **rétention** sur ce contenu. 
     
 - Une stratégie DLP peut appliquer les actions de **protection** sur ce contenu. Et avant d’appliquer ces actions, une stratégie DLP peut requérir d’autres conditions à respecter en plus du contenu qui contient une étiquette. 
     
@@ -478,13 +478,13 @@ Ces autorisations sont requises uniquement pour créer et appliquer une stratég
 
 Pour utiliser la plupart des applets de commande pour la sécurité &amp; centre de conformité, vous devez :
   
-1. [Se connecter à l’Office 365 Security &amp; centre de conformité à l’aide de PowerShell à distance](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Se connecter au Centre de sécurité &amp; conformité Office 365 à l’aide de PowerShell à distance](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
 2. Utilisez une de ces [Office 365 sécurité &amp; centre de conformité des applets de commande](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     
 Toutefois, les rapports DLP doivent extraire des données dans Office 365, notamment Exchange Online. Pour cette raison, les applets de commande pour les rapports DLP sont disponibles dans Exchange Online Powershell--pas de sécurité &amp; Powershell du centre de conformité. Par conséquent, pour utiliser les applets de commande pour les rapports DLP, vous devez :
   
-1. [Connect to Exchange Online using remote PowerShell](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [Connexion à Exchange Online à l'aide de Remote PowerShell](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
     
 2. Utilisez une de ces applets de commande pour les rapports DLP :
     
@@ -492,15 +492,15 @@ Toutefois, les rapports DLP doivent extraire des données dans Office 365, notam
     
   - [Get-DlpDetailReport](http://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
     
-## <a name="more-information"></a>Plus d'informations
+## <a name="more-information"></a>Informations complémentaires
 
-- [Création d'une stratégie DLP à partir d'un modèle](create-a-dlp-policy-from-a-template.md)
+- [Créer une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md)
     
 - [Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP](use-notifications-and-policy-tips.md)
     
-- [Création d’une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés](protect-documents-that-have-fci-or-other-properties.md)
+- [Créer une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés](protect-documents-that-have-fci-or-other-properties.md)
     
-- [Ce qu’incluent les modèles de stratégie DLP](what-the-dlp-policy-templates-include.md)
+- [Contenu des modèles de stratégie DLP](what-the-dlp-policy-templates-include.md)
     
 - [Éléments recherchés par les types d’informations sensibles](what-the-sensitive-information-types-look-for.md)
     
