@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 description: Découvrez où aller pour afficher des informations sur les fichiers malveillants détecté dans SharePoint, OneDrive ou équipes et comment effectuer une action sur ces fichiers.
-ms.openlocfilehash: 370e5e3d4d7fd5f35caa8ef993f6245d15ee9999
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 37cd721c9ec2608ddcd74f9ae1ed6991b5f0cea7
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454271"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552382"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>Afficher des informations sur les fichiers malveillants détecté dans SharePoint, OneDrive ou Microsoft Teams
 
@@ -27,9 +27,9 @@ Afin d’effectuer les tâches décrites dans cet article, vous devez disposer n
   
 ## <a name="view-reports-with-information-about-detected-files"></a>Afficher les rapports avec des informations sur les fichiers détectés
 
-Pour afficher l’état et des informations détaillées sur les fichiers qui ont été détectés par Office 365 DAV, vous pouvez utiliser le rapport d’état Threat protection.
+Pour afficher l’état et des informations détaillées sur les fichiers qui ont été détectés par Office 365 DAV, vous pouvez utiliser le rapport d’état de Protection de menace.
   
-1. De sécurité Office 365 &amp; centre de conformité, cliquez sur **rapports** \> **tableau de bord** \> **état de protection de menace**.
+1. De sécurité Office 365 &amp; centre de conformité, cliquez sur **rapports** \> **tableau de bord** \> **État de Protection de menace**.
     
 2. Dans le coin supérieur droit du rapport, cliquez sur **Afficher la table de détails**.
     
@@ -59,7 +59,7 @@ Pour afficher l’état et des informations détaillées sur les fichiers qui on
     
 5. Cliquez sur **Fermer** pour fermer les détails d’un élément sélectionné. 
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Protection avancée contre les menaces dans Office 365](office-365-atp.md)
   

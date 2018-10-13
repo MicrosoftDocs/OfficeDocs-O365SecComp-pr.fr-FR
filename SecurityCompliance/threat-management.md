@@ -1,5 +1,5 @@
 ---
-title: Menaces de sécurité Office 365 la gestion &amp; centre de conformité
+title: Threat management in the Office 365 Security &amp; Compliance Center
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 0a73d5fa-b2c8-43e7-9ed4-61f0552b1c98
 description: Gestion des menaces permet de contrôler et de gérer l’accès d’appareil mobile aux données de votre organisation, de protéger votre organisation contre la perte de données et protéger les messages entrants et sortants à partir du courrier indésirable et les logiciels malveillants. Vous utilisez également threat management pour protéger la réputation de votre domaine et pour déterminer si les expéditeurs sont à des fins malveillantes usurpation de comptes à partir de votre domaine.
-ms.openlocfilehash: 88b2727b76fad1e8d700f15717a8aeedea934093
-ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
+ms.openlocfilehash: df843ab95920d24af778a9edf31626f4d6b08cff
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25011830"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552402"
 ---
-# <a name="threat-management-in-the-office-365-security-amp-compliance-center"></a>Menaces de sécurité Office 365 la gestion &amp; centre de conformité
+# <a name="threat-management-in-the-office-365-security-amp-compliance-center"></a>Threat management in the Office 365 Security &amp; Compliance Center
 
 Gestion des menaces permet de contrôler et de gérer l’accès d’appareil mobile aux données de votre organisation, de protéger votre organisation contre la perte de données et protéger les messages entrants et sortants à partir du courrier indésirable et les logiciels malveillants. Vous utilisez également threat management pour protéger la réputation de votre domaine et pour déterminer si les expéditeurs sont à des fins malveillantes usurpation de comptes à partir de votre domaine.
   
@@ -29,9 +29,9 @@ Dans Office 365, utilisez la sécurité &amp; centre de conformité pour gérer 
   
  **Pour accéder directement à la sécurité &amp; centre de conformité :**
   
-1. Accédez à [https://protection.office.com](https://protection.office.com).
+1. Accédez à la page [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à Office 365 à l’aide de votre compte professionnel ou de l’école.
+2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
 3. Dans le volet gauche, sélectionnez **Gestion des menaces**.
     
@@ -39,7 +39,7 @@ Dans Office 365, utilisez la sécurité &amp; centre de conformité pour gérer 
   
  **Pour accéder à la sécurité &amp; centre de conformité à l’aide du lancement d’application Office 365 :**
   
-1. Connectez-vous à Office 365 à l’aide de votre compte professionnel ou de l’école.
+1. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
 2. Sélectionnez le lancement d’application ![l’icône de lancement d’application dans Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) dans le coin supérieur gauche d’angle, puis sélectionnez le **sécurité &amp; conformité** mosaïque. 
     
@@ -62,6 +62,6 @@ Dans certains cas, il existe des différences mineures entre la sécurité et le
 |**Pièces jointes fiables** <br/> |[Pièces jointes sûres](atp-safe-attachments.md) fait partie de la protection contre les menaces avancées. Lorsqu’il est activé, les pièces jointes sont ouverts dans un environnement isolé spécial qui est distinct de Office 365 avant de les envoyer à la boîte de réception des destinataires. Pièces jointes sûres est conçu pour détecter les pièces jointes malveillants avant même que les signatures de virus sont disponibles. Pour plus d’informations, voir [Les pièces jointes fiables dans Office 365](atp-safe-attachments.md).<br/> |
 |**Liens fiables** <br/> |[Liens approuvés](atp-safe-links.md) fait partie de protection contre les menaces avancées. Liens approuvés d’empêcher les utilisateurs à partir des URL suivantes dans le message électronique ou dans les documents Office qui pointent vers les sites web qui sont reconnus comme malveillants. Pour plus d’informations, voir [Les liens sécurisés dans Office 365](atp-safe-links.md).<br/> |
 |**Mise en quarantaine** <br/> |Configurer la [mise en quarantaine](http://go.microsoft.com/fwlink/p/?LinkID=809005) pour les messages électroniques entrants dans Office 365 dans lequel les messages qui ont été filtrés comme courrier indésirable, en bloc, phishing, et programmes malveillants messagerie peut être conservée pour consultation ultérieure. Utilisateurs et administrateurs peuvent travailler avec des messages mis en quarantaine. Les utilisateurs peuvent utiliser uniquement leurs propres messages filtrés en quarantaine. Administrateurs peuvent rechercher et gérer les messages mis en quarantaine pour tous les utilisateurs.<br/> |
-|**Menaces avancées** <br/> |Afficher le [rapport d’état de protection de menace](https://support.office.com/article/View-the-reports-for-Advanced-Threat-Protection-E47E838C-D99E-4C0B-B9AA-E66C4FAE902F#advancedthreats) pour afficher des informations sur le contenu malveillant trouvé et bloqués par Exchange Online Protection et de protection contre les menaces avancées.  <br/> |
+|**Menaces avancées** <br/> |Afficher le [rapport d’état de Protection de menace](https://support.office.com/article/View-the-reports-for-Advanced-Threat-Protection-E47E838C-D99E-4C0B-B9AA-E66C4FAE902F#advancedthreats) pour afficher des informations sur le contenu malveillant trouvé et bloqués par Exchange Online Protection et de protection contre les menaces avancées.  <br/> |
    
 

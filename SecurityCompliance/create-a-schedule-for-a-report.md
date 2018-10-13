@@ -13,25 +13,25 @@ search.appverid:
 - MOE150
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 description: Découvrez comment configurer une planification pour un état dans la sécurité &amp; centre de conformité.
-ms.openlocfilehash: 38223d670622e602fbb145aed6b4dc0f6ecb36f2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 411379d0be2d0af3843c3ccfec87ea6184fdb0c8
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527499"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552352"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Créer une planification pour un état de la sécurité &amp; centre de conformité
 
 Dans la sécurité &amp; centre de conformité, plusieurs [rapports et vues d’ensemble](reports-and-insights-in-security-and-compliance.md) sont disponibles pour aider à l’équipe de sécurité de votre organisation atténuer et adresses contre les menaces envers votre organisation. Si vous êtes un membre de l’équipe de sécurité de votre organisation, vous pouvez créer une planification pour un état. La planification que vous créez peut inclure une date personnalisé aux besoins de votre organisation. 
   
-## <a name="create-a-schedule-for-a-report"></a>Créer une planification pour un état
+## <a name="create-a-schedule-for-a-report"></a>Créer une planification pour un rapport
 
 > [!IMPORTANT]
 > Assurez-vous que vous disposez des autorisations nécessaires pour effectuer cette tâche. En règle générale, les administrateurs globaux d’Office 365, les administrateurs de sécurité et les lecteurs de sécurité peuvent accéder aux rapports de sécurité &amp; centre de conformité. Pour plus d’informations sur les autorisations, voir [des autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md).
   
 1. Dans la sécurité &amp; centre de conformité, accédez aux **rapports** \> **tableau de bord**.
     
-2. Choisissez un rapport. Cet exemple, nous allons sélectionner le rapport d’état Threat protection.
+2. Choisissez un rapport. Cet exemple, nous allons sélectionner le rapport d’état de Protection de menace.
     
 3. Dans le coin supérieur gauche de l’état, choisissez **+ créer une planification**.
     
@@ -47,7 +47,7 @@ Dans la sécurité &amp; centre de conformité, plusieurs [rapports et vues d’
     
 Une fois que vous avez créé une planification d’un rapport, rapport est remis par courrier électronique pour les adresses des destinataires emali automatiquement. 
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Rapports et vues d’ensemble de sécurité Office 365 &amp; centre de conformité](reports-and-insights-in-security-and-compliance.md)
   
