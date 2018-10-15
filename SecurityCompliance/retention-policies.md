@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à seulement quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou seulement au contenu remplissant certaines conditions
-ms.openlocfilehash: 82def4182607e6dde4f9d6612cdb93f6f8564f2a
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: 5b02d57931a47ca86f4da884463cfc0e52476d3c
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23230016"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540400"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -259,7 +259,7 @@ Une stratégie de rétention qui s’applique à Teams peut utiliser le [Verroui
 ## <a name="excluding-specific-types-of-exchange-items-from-a-retention-policy"></a>Exclusion de types spécifiques d’éléments Exchange d’une stratégie de rétention
 À l’aide de PowerShell, vous pouvez exclure des types spécifiques d’éléments Exchange d’une stratégie de rétention. Par exemple, vous pouvez exclure des messages vocaux, des conversations par messagerie instantanée et d’autre contenu Skype Entreprise Online dans les boîtes aux lettres. Vous pouvez également exclure des éléments de calendrier, de note et de tâche. Cette fonctionnalité est disponible uniquement à l’aide de PowerShell ; elle n’est pas disponible dans l’interface utilisateur lorsque vous créez une stratégie de rétention.
   
-Pour ce faire, utilisez le paramètre `ExcludedItemClasses` des cmdlets `New-RetentionComplianceRule` et `Set-RetentionComplianceRule`. Pour obtenir plus d’informations sur PowerShell, consultez la section [Trouver les cmdlets PowerShell pour les stratégies de rétention](retention-policies.md#powershell) indiquée ci-après.
+Pour ce faire, utilisez le paramètre `ExcludedItemClasses` des cmdlets `New-RetentionComplianceRule` et `Set-RetentionComplianceRule`. Pour obtenir plus d’informations sur PowerShell, consultez la section [Trouver les cmdlets PowerShell pour les stratégies de rétention](#find-the-powershell-cmdlets-for-retention-policies) indiquée ci-après.
   
 ## <a name="locking-a-retention-policy"></a>Verrouillage d’une stratégie de rétention
 Certaines organisations doivent respecter des règles définies par des organismes de réglementation, comme la règle 17a-4 de la SEC (Securities and Exchange Commission), stipulant qu’après l’activation d’une stratégie de rétention, celle-ci ne peut pas être désactivée ni rendue moins restrictive. Grâce au verrouillage de conservation, vous pouvez verrouiller la stratégie afin que personne ne puisse la désactiver ni la rendre moins restrictive, pas même l’administrateur.
@@ -268,11 +268,11 @@ Après qu’une stratégie a été verrouillée, personne ne peut la désactiver
   
 Par conséquent, avant de verrouiller une stratégie de rétention, il est **essentiel** de comprendre les exigences de conformité de votre organisation. **Ne verrouillez pas une stratégie** tant que vous n’êtes pas certain qu’elle répond exactement à vos besoins.
   
-Seule l’utilisation de PowerShell vous permet de verrouiller une stratégie de rétention. Utilisez le paramètre `RestrictiveRetention` de la cmdlet `New-RetentionCompliancePolicy` ou `Set-RetentionCompliancePolicy`. Pour obtenir plus d’informations sur PowerShell, consultez la section [Trouver les cmdlets PowerShell pour les stratégies de rétention](retention-policies.md#powershell) indiquée ci-après.
+Seule l’utilisation de PowerShell vous permet de verrouiller une stratégie de rétention. Utilisez le paramètre `RestrictiveRetention` de la cmdlet `New-RetentionCompliancePolicy` ou `Set-RetentionCompliancePolicy`. Pour obtenir plus d’informations sur PowerShell, consultez la section [Trouver les cmdlets PowerShell pour les stratégies de rétention](#find-the-powershell-cmdlets-for-retention-policies) indiquée ci-après.
   
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Principes de rétention et priorité
 
-Il est possible, voire même probable, que le contenu fasse l’objet de plusieurs stratégies de rétention, chacune avec une action (conserver, supprimer ou les deux) et une période de rétention différentes. Laquelle est prioritaire ? Au plus haut niveau, sachez que le contenu conservé par une stratégie ne peut pas être supprimé définitivement par une autre stratégie.
+Il est possible, voire même probable, que le contenu fasse l’objet de plusieurs stratégies de rétention, chacune avec une action (conservation, suppression ou les deux) et une période de rétention différentes. Laquelle est prioritaire ? Au plus haut niveau, sachez que le contenu conservé par une stratégie ne peut pas être supprimé définitivement par une autre stratégie.
   
 ![Diagramme des principes de rétention](media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
   
@@ -346,7 +346,7 @@ Pour utiliser les cmdlets des stratégies de rétention, vous devez effectuer le
   
 1. [Se connecter au Centre de sécurité &amp; conformité Office 365 à l’aide de PowerShell à distance](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
-2. Utiliser ces [Cmdlets du Centre de sécurité &amp; conformité Office 365](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
+2. Utiliser ces [cmdlets du Centre de sécurité &amp; conformité Office 365](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     
 ## <a name="more-information"></a>Plus d’informations
 
