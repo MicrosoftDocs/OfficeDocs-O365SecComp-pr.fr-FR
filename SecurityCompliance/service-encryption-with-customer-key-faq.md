@@ -1,5 +1,5 @@
 ---
-title: Chiffrement de service avec la clé de client pour le Forum aux questions sur Office 365
+title: Chiffrement de service avec une clé client pour Office 365 FAQ
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: Outre la planification, le chiffrement au niveau du volume qui est activé par le biais de BitLocker et distribué clé Manager (DKM), Office 365 offre un niveau supplémentaire de chiffrement au niveau des applications de contenu client dans Office 365, notamment les données à partir d’Exchange En ligne, Skype pour les entreprises, SharePoint Online et OneDrive for Business. Il s’agit de chiffrement du service.
-ms.openlocfilehash: 38731d22b78274e42b0886c41884a0395d8df69f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ceba35233872bb65b7706ed4e11a263057adc6c1
+ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22559239"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575328"
 ---
-# <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Chiffrement de service avec la clé de client pour le Forum aux questions sur Office 365
+# <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Chiffrement de service avec une clé client pour Office 365 FAQ
 
 Outre la planification, le chiffrement au niveau du volume qui est activé par le biais de BitLocker et distribué clé Manager (DKM), Office 365 offre un niveau supplémentaire de chiffrement au niveau des applications de contenu client dans Office 365, notamment les données à partir d’Exchange En ligne, Skype pour les entreprises, SharePoint Online et OneDrive for Business. Il s’agit de chiffrement du service.
   
@@ -29,8 +29,8 @@ Pour fournir des commentaires sur la clé client, y compris la documentation, en
   
 ## <a name="what-is-service-encryption-with-customer-key"></a>Quel est le chiffrement de service avec la clé client ?
 
-Clé de client est une fonctionnalité qui vous permet de mettre en service et de gérer les clés utilisées pour chiffrer les données au repos dans Office 365. La fonctionnalité exploite le chiffrement service, qui est le chiffrement est effectué par Office 365 Exchange et SharePoint. Chiffrement service offre les avantages au-delà de ce que BitLocker peut fournir - à savoir supérieure défense en profondeur contre les attaques. Chiffrement de service est une contre-mesure forte si une personne malveillante tente de contourner le système de contrôle d’accès Office 365 qui est utilisé pour traiter toutes les demandes d’accès aux données client. Il s’agit, car le chiffrement service signifie qu’un administrateur de serveur n’a pas de contrôle ou même accès au chiffrement des clés et ne pouvez pas désactiver le chiffrement, à la différence avec BitLocker. Par conséquent, une personne malveillante avec un accès administratif à un serveur hébergeant les données du client qui a été chiffrées à l’aide du chiffrement de service ne pourront pas lire les données du client et même si les données chiffrées sont copiées sur le serveur il reste inutile. 
-  
+Clé de client améliore la capacité de votre organisation à répondre aux exigences de conformité qui spécifient les dispositions clées avec le fournisseur de services en nuage. Avec la clé client, que vous fournissez et contrôler les clés de chiffrement pour votre Office 365 données au repos au niveau de l’application. Par conséquent, vous pouvez contrôler et révoquer les clés de votre organisation, vous devez décider quitter le service. Par révoquer les clés, les données sont illisibles au service. Révocation de clé est la première étape dans le chemin d’accès vers la suppression des données.
+
 ## <a name="what-office-365-data-at-rest-is-covered-by-customer-key"></a>Les données d’Office 365 au repos sont couverts par la clé client ?
 <a name="WhatDataIsCoveredbyCustomerKey"> </a>
 

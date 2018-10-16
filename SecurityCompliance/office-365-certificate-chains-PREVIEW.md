@@ -7,18 +7,19 @@ ms.date: 6/26/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
+ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: Ent_O365
 ms.assetid: 0c03e6b3-e73f-4316-9e2b-bf4091ae96bb
 description: Office 365 utilise un certain nombre de fournisseurs de certificat différent. Voici la liste complète des certificats racines Office 365 connus que les clients peuvent rencontrer lors de l’accès à Office 365. Pour plus d’informations sur les certificats, vous devrez peut-être installer dans votre propre infrastructure, voir Plan pour les certificats SSL tiers pour Office 365. Les informations de certificat suivantes s’applique à toutes les instances de cloud dans le monde entier et national d’Office 365.
-ms.openlocfilehash: 1dcc2dc38bb8e3239a3be3983791b0c60917dc5e
-ms.sourcegitcommit: 13f40ff7c1799152bf45af2d8110f4f3235b770a
+ms.openlocfilehash: 97e00833e57f8f6b7352650b0efdef51ddba77fa
+ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25549749"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575358"
 ---
 # <a name="office-365-certificate-chains"></a>Chaînes de certificats d’Office 365
 

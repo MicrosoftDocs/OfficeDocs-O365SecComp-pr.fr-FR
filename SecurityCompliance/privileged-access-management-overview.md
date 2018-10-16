@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilisez cette rubrique pour en savoir plus sur les privilèges accéder à la gestion dans Office 365
-ms.openlocfilehash: 07e1f9090418e4261fef188ceb109c1b8083d34c
-ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
+ms.openlocfilehash: e92bbecd5957261c1eaf3088d872ae6572b7f235
+ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25011860"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575338"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Privilèges d’accès gestion dans Office 365
 
@@ -31,7 +31,7 @@ Un accès privilégié gestion permet de contrôle d’accès granulaire sur les
 
 Un accès privilégié gestion complète autres protections de fonctionnalité de données et l’accès au sein de l’architecture de sécurité d’Office 365. À l’activation de la gestion des accès privilégié dans le cadre d’une approche intégrée à la sécurité et protection de votre organisation, un modèle de sécurité permet d’optimiser la protection des informations sensibles et les paramètres de configuration d’Office 365. Comme indiqué dans le schéma ci-dessous, l’activation de privilèges permet de gestion d’access s’appuie sur la protection fournie avec le chiffrement de données Office 365 natif et le modèle de sécurité de contrôle d’accès basé sur un rôle des services Office 365. Lorsqu’elle est utilisée conjointement avec [la gestion des identités Azure AD privilégié](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure), ces deux fonctionnalités fournissent le contrôle d’accès avec un accès à différentes étendues juste-à-temps.
 
-![Protection multiniveau dans Office 365](media/pam-layered-protection.jpg)
+![Protection multiniveau dans Office 365](media/pam-layered-protection.png)
 
 Un accès privilégié gestion dans Office 365 peut être définie et étendue au niveau de la **tâche** , de gestion des identités Azure AD privilégié s’applique la protection au niveau du **rôle** avec la possibilité d’exécuter plusieurs tâches.  Gestion des identités Azure AD privilégié permet principalement d’accès aux rôles AD et des groupes de rôles de gestion, tandis que les privilèges d’accès gestion dans Office 365 s’applique uniquement au niveau de la tâche.
 
@@ -67,7 +67,7 @@ Pour les demandes approuvées, la tâche est traitée par l’instance d’exéc
 
 ![Étape 4 : traitement de l’accès](media/pam-step4-access-processing.jpg)
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Forum aux questions
 
 ### <a name="what-skus-do-i-need-to-use-privileged-access-in-office-365"></a>Quelles versions clientes ai-je besoin pour utiliser un accès privilégié dans Office 365 ?
 Un accès privilégié gestion n’est actuellement disponible pour les clients avec Office 365 E5 et références de conformité avancées.
