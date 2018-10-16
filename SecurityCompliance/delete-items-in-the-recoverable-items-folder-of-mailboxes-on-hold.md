@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Pour les administrateurs : supprimer des éléments dans le dossier des éléments récupérables d’un utilisateur pour une boîte aux lettres Exchange Online, même si cette boîte aux lettres se trouve en conservation légale. Il s’agit d’un moyen efficace pour supprimer les données sont répandues par inadvertance dans Office 365.'
-ms.openlocfilehash: 9174e953ebdd7f0032f411b99a814aeacd880a1e
-ms.sourcegitcommit: dd58ed6fd424272e361bc3c109ecd6d63d673048
+ms.openlocfilehash: a10965ad088da98b4e4d84d823c124e5b192d505
+ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "25566885"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25577083"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Supprimer des éléments dans le dossier éléments récupérables de nuage des boîtes aux lettres en attente - aide d’administration
 
@@ -245,22 +245,22 @@ Une fois que vous avez identifié le nom de la casse eDiscovery et la suspension
   
 ## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>Étape 4 : Supprimer la suspension de délai d’attente de la boîte aux lettres
 
-Une fois que n’importe quel type de suspension est supprimé d’une boîte aux lettres, la valeur de la propriété de la boîte aux lettres *DelayHoldApplied* est définie sur **True**. Est appelé un *délai de blocage* et signifie que la suppression effective de la suspension est différée pendant 30 jours empêcher les données d’être définitivement supprimés (définitivement) de la boîte aux lettres.   Lorsque le délai est suspendu sur la boîte aux lettres, la boîte aux lettres est considérée en attente pour une durée illimitée, en tant que si la boîte aux lettres a été litige. (L’objectif d’une suspension du délai d’attente est Administrateurs de donner la possibilité permet de rechercher ou de récupérer des éléments de boîte aux lettres qui seront purgés après la suppression d’une suspension.) Noe qu’après 30 jours, le délai d’attente expire et Office 365 tente automatiquement de supprimer la suspension de délai d’attente (en définissant la propriété *DelayHoldApplied* sur **False**) afin que le blocage soit réellement supprimé. 
+Une fois que n’importe quel type de suspension est supprimé d’une boîte aux lettres, la valeur de la propriété de la boîte aux lettres *DelayHoldApplied* est définie sur **True**. Cela se produit la prochaine fois que l’Assistant dossier géré traite la boîte aux lettres et détecte qu’une suspension a été supprimée. Cela est appelé un *délai de blocage* et signifie que la suppression effective de la suspension est retardée de 30 jours pour empêcher les données définitivement supprimées de la boîte aux lettres. (L’objectif d’une suspension du délai d’attente est Administrateurs de donner la possibilité permet de rechercher ou de récupérer des éléments de boîte aux lettres qui seront purgés après la suppression d’une suspension.)  Lorsque le délai est suspendu sur la boîte aux lettres, la boîte aux lettres est considérée en attente pour une durée illimitée, en tant que si la boîte aux lettres a été litige. Après 30 jours, la suspension de délai d’attente expire et Office 365 tente automatiquement de supprimer la suspension de délai d’attente (en définissant la propriété *DelayHoldApplied* sur **False**) afin que la suspension est réellement supprimée. 
 
-Avant de pouvoir supprimer des éléments à l’étape 5, vous devez supprimer la suspension de délai d’attente de la boîte aux lettres. Exécutez la commande suivante dans Exchange Online PowerShell pour supprimer la suspension de délai d’attente : 
- 
-```
-Set-Mailbox <username> -RemoveDelayHoldApplied
-```
-Notez que vous devez être affecté au rôle suspens pour raisons juridiques dans Exchange Online à utiliser le paramètre *RemoveDelayHoldApplied* .
-
-Pour vérifier que la suspension du délai d’attente a été supprimée, exécutez la commande suivante.
+Avant de pouvoir supprimer des éléments à l’étape 5, vous devez supprimer la suspension de délai d’attente de la boîte aux lettres. Commencez par déterminer si la suspension du délai d’attente est appliquée à la boîte aux lettres en exécutant la commande suivante dans Exchange Online PowerShell :
 
 ```
 Get-Mailbox <username> | FL DelayHoldApplied
 ```
 
-La valeur **False** pour la propriété *DelayHoldApplied* indique le délai a été supprimé.
+Si la valeur de la propriété *DelayHoldApplied* est définie sur **False**, une suspension du délai d’attente n’a pas été placée dans la boîte aux lettres. Vous pouvez accéder à l’étape 5 et supprimer des éléments dans le dossier éléments récupérables.
+
+Si la valeur de la propriété *DelayHoldApplied* est définie sur **True**, exécutez la commande suivante pour supprimer la suspension de délai d’attente :
+
+```
+Set-Mailbox <username> -RemoveDelayHoldApplied
+```
+Notez que vous devez être affecté au rôle suspens pour raisons juridiques dans Exchange Online à utiliser le paramètre *RemoveDelayHoldApplied* .
 
 ## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>Étape 5 : Supprimer des éléments dans le dossier éléments récupérables
 

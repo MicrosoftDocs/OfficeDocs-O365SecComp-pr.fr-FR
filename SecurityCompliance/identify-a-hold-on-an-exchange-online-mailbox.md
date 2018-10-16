@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Découvrez comment identifier les différents types d’attente qui peuvent être placées sur une boîte aux lettres Office 365. Ces types de suspensions incluent litige, suspensions eDiscovery et des stratégies de rétention Office 365. Vous pouvez également déterminer si un utilisateur a été exclu d’une stratégie de rétention de l’entreprise
-ms.openlocfilehash: 375bd86df370fe34fbe59f6581836da7e9d06515
-ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
+ms.openlocfilehash: 821ec2a8be9ecd89a13ad9ad0378bc6e24fcee1e
+ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965261"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25577073"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online
 
@@ -172,7 +172,7 @@ Pour plus d’informations sur les étiquettes, voir [vue d’ensemble d’Offic
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>La gestion des boîtes aux lettres sur le délai de blocage
 
-Une fois que n’importe quel type de suspension est supprimé d’une boîte aux lettres, la valeur de la propriété de la boîte aux lettres *DelayHoldApplied* est définie sur **True**. Est appelé un *délai de blocage* et signifie que la suppression effective de la suspension est différée pendant 30 jours empêcher les données d’être définitivement supprimés (définitivement) de la boîte aux lettres. Cela permet d’administrateurs permet de rechercher ou de récupérer des éléments de boîte aux lettres qui seront purgés une fois la suspension est réellement supprimée. Lorsque le délai est suspendu sur la boîte aux lettres, la boîte aux lettres est considérée en attente pour une durée illimitée, en tant que si la boîte aux lettres a été litige. Après 30 jours, la suspension de délai d’attente expire et Office 365 tente automatiquement de supprimer la suspension de délai d’attente (en définissant la propriété *DelayHoldApplied* sur **False**) afin que le blocage soit réellement supprimé. Après la propriété *DelayHoldApplied* sur **False**, les éléments qui sont marquées pour suppression seront purgés la prochaine fois que la boîte aux lettres est traitée par l’Assistant dossier géré.
+Une fois que n’importe quel type de suspension est supprimé d’une boîte aux lettres, la valeur de la propriété de la boîte aux lettres *DelayHoldApplied* est définie sur **True**. Cela se produit la prochaine fois que l’Assistant dossier géré traite la boîte aux lettres et détecte qu’une suspension a été supprimée. Est appelé un *délai de blocage* et signifie que la suppression effective de la suspension est différée pendant 30 jours empêcher les données d’être définitivement supprimés (définitivement) de la boîte aux lettres. Cela permet d’administrateurs permet de rechercher ou de récupérer des éléments de boîte aux lettres qui seront purgés une fois la suspension est réellement supprimée. Lorsque le délai est suspendu sur la boîte aux lettres, la boîte aux lettres est considérée en attente pour une durée illimitée, en tant que si la boîte aux lettres a été litige. Après 30 jours, la suspension de délai d’attente expire et Office 365 tente automatiquement de supprimer la suspension de délai d’attente (en définissant la propriété *DelayHoldApplied* sur **False**) afin que le blocage soit réellement supprimé. Après la propriété *DelayHoldApplied* sur **False**, les éléments qui sont marquées pour suppression seront purgés la prochaine fois que la boîte aux lettres est traitée par l’Assistant dossier géré.
 
 Pour afficher la valeur de la propriété *DelayHoldApplied* pour une boîte aux lettres, exécutez la commande suivante dans Exchange Online PowerShell.
 
