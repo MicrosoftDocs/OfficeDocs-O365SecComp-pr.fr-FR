@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utiliser les outils de recherche et de découverte électronique Office 365 pour gérer et répondre à un incident débordements de données dans votre organisation.
-ms.openlocfilehash: 2bf17923408bd5cf8325d27a38595331d169906f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4da8efdb6f5d129e08d85f9b6c94726a7d099cb3
+ms.sourcegitcommit: dd58ed6fd424272e361bc3c109ecd6d63d673048
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527610"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "25566875"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>série de solution eDiscovery : scénario débordements de données - recherche et purge
 
@@ -159,6 +159,8 @@ Si la récupération d’élément unique est activée ou si une boîte aux lett
 - Consultez la rubrique « étape 2 : préparer la boîte aux lettres » dans la zone [Supprimer des éléments dans les éléments récupérables dossier du nuage des boîtes aux lettres sur Maintenez](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-2-prepare-the-mailbox) pour obtenir des instructions sur la désactivation de récupération d’élément unique. 
     
 - Consultez la rubrique « étape 3 : supprimer toutes les suspensions à partir de la boîte aux lettres » dans la zone [Supprimer des éléments dans les éléments récupérables dossier du nuage des boîtes aux lettres sur Maintenez](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox) pour obtenir des instructions sur la façon de supprimer une stratégie de blocage ou de rétention d’une boîte aux lettres. 
+
+- Consultez la rubrique « étape 4 : supprimer le délai d’attente à partir de la boîte aux lettres » dans la zone [Supprimer des éléments dans les éléments récupérables dossier du nuage des boîtes aux lettres sur Maintenez](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-4-remove-the-delay-hold-from-the-mailbox) pour obtenir des instructions sur la suppression de la suspension de délai d’attente est placée sur la boîte aux lettres après la suppression de n’importe quel type de suspension.
     
  **Important :** Renseignez-vous auprès de votre gestion des enregistrements ou les services juridiques avant la suppression d’une stratégie de blocage ou de rétention. Votre organisation peut avoir une stratégie qui définit si une boîte aux lettres sur blocage ou un incident débordements de données est prioritaire. 
   
@@ -168,9 +170,9 @@ N’oubliez pas de rétablir la boîte aux lettres pour les configurations préc
 
 Utilisant les emplacements de boîte aux lettres collectées que vous avez préparé à l’étape 6 et la requête de recherche qui a été créée et affinée à l’étape 3 pour rechercher les messages électroniques qui contiennent les données dispersées, vous pouvez désormais supprimer définitivement les données dispersées. Comme expliqué précédemment, vous devez disposer du rôle de boîte aux lettres importer exporter dans Exchange Online pour supprimer des messages à l’aide de la procédure suivante.
   
-1. [Connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554).
+1. [Connectez-vous à Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554).
     
-2. Exécutez la commande suivante :
+2. Exécutez la commande suivante :
     
     ```
     Search-Mailbox -Identity <mailbox identity> -SearchDumpster -DeleteContent $true -SearchQuery <search query>
@@ -198,7 +200,7 @@ La dernière étape de flux de travail pour gérer un incident débordements de 
   
 ### <a name="reverting-the-mailboxes-to-their-previous-state"></a>Restauration des boîtes aux lettres à leur état antérieur
 
-Si vous avez modifié toutes les configurations de boîte aux lettres à l’étape 6 pour préparer les boîtes aux lettres avant que les données dispersées a été supprimées, vous devrez les restaurer à leur état antérieur. Voir « étape 5 : rétablir la boîte aux lettres à son état antérieur » de [Supprimer des éléments dans les éléments récupérables dossier de boîtes aux lettres en nuage sur contenir](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-5-revert-the-mailbox-to-its-previous-state).
+Si vous avez modifié toutes les configurations de boîte aux lettres à l’étape 6 pour préparer les boîtes aux lettres avant que les données dispersées a été supprimées, vous devrez les restaurer à leur état antérieur. Voir « étape 6 : rétablir la boîte aux lettres à son état antérieur » de [Supprimer des éléments dans les éléments récupérables dossier de boîtes aux lettres en nuage sur contenir](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-6-revert-the-mailbox-to-its-previous-state).
   
 ### <a name="deleting-the-search-query"></a>Suppression de la requête de recherche
 

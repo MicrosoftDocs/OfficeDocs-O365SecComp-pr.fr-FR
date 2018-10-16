@@ -3,7 +3,7 @@ title: Supprimer des éléments dans le dossier éléments récupérables de nua
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 9/21/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Pour les administrateurs : supprimer des éléments dans le dossier des éléments récupérables d’un utilisateur pour une boîte aux lettres Exchange Online, même si cette boîte aux lettres se trouve en conservation légale. Il s’agit d’un moyen efficace pour supprimer les données sont répandues par inadvertance dans Office 365.'
-ms.openlocfilehash: c984bcaa35a9bc7bc30e11d68ba8f7f0ce75b64d
-ms.sourcegitcommit: 31e0d94244c76a9f5118efee8bbc93395d080f91
+ms.openlocfilehash: 9174e953ebdd7f0032f411b99a814aeacd880a1e
+ms.sourcegitcommit: dd58ed6fd424272e361bc3c109ecd6d63d673048
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "23796880"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "25566885"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Supprimer des éléments dans le dossier éléments récupérables de nuage des boîtes aux lettres en attente - aide d’administration
 
@@ -33,16 +33,18 @@ Le dossier éléments récupérables pour une boîte aux lettres Exchange Online
 
 [Étape 3 : Suppression de toutes les suspensions à partir de la boîte aux lettres](#step-3-remove-all-holds-from-the-mailbox)
 
-[Étape 4 : Supprimer des éléments dans le dossier éléments récupérables](#step-4-delete-items-in-the-recoverable-items-folder)
+[Étape 4 : Supprimer la suspension de délai d’attente de la boîte aux lettres](#step-4-remove-the-delay-hold-from-the-mailbox)
 
-[Étape 5 : Rétablir la boîte aux lettres à son état précédent](#step-5-revert-the-mailbox-to-its-previous-state)
+[Étape 5 : Supprimer des éléments dans le dossier éléments récupérables](#step-5-delete-items-in-the-recoverable-items-folder)
+
+[Étape 6 : Rétablir la boîte aux lettres à son état précédent](#step-6-revert-the-mailbox-to-its-previous-state)
   
 > [!CAUTION]
 > Les procédures décrites dans cet article entraînera données définitivement supprimés (définitivement) à partir d’une boîte aux lettres Exchange Online. Cela signifie que les messages que vous supprimez à partir du dossier éléments récupérables ne peuvent pas être récupérés et ne sont pas disponibles pour la récupération sur demande juridique ou autres à des fins de conformité. Si vous souhaitez supprimer des messages à partir d’une boîte aux lettres qui est mis en attente dans le cadre d’un litige, blocage sur Place, maintenez la touche e-Discovery, ou stratégie de rétention Office 365 créée de sécurité Office 365 &amp; centre de conformité, vérifiez auprès de votre gestion des enregistrements ou le département juridique Services avant la suppression de la suspension. Votre organisation peut avoir une stratégie qui définit si une boîte aux lettres sur blocage ou un incident débordements de données est prioritaire. 
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Vous devez être affectées à la fois des rôles de gestion suivants dans Exchange Online pour rechercher et supprimer des messages à partir du dossier éléments récupérables à l’étape 4.
+- Vous devez être affectées à la fois des rôles de gestion suivants dans Exchange Online pour rechercher et supprimer des messages à partir du dossier éléments récupérables à l’étape 5.
     
   - **Recherche de boîte aux lettres** - ce rôle permet pour rechercher les boîtes aux lettres dans votre organisation. Les administrateurs Exchange ne sont pas affectés à ce rôle par défaut. Pour assigner vous-même ce rôle, ajoutez-vous en tant que membre du groupe de rôles de gestion de la découverte dans Exchange Online. 
     
@@ -56,13 +58,13 @@ Le dossier éléments récupérables pour une boîte aux lettres Exchange Online
   
 ## <a name="step-1-collect-information-about-the-mailbox"></a>Étape 1 : Collecter des informations sur la boîte aux lettres
 
-Cette première étape consiste à collecter les propriétés sélectionnées à partir de la boîte aux lettres cible auront une incidence sur cette procédure. Veillez à noter ces paramètres ou de les enregistrer dans un fichier texte, car vous allez modifier certaines de ces propriétés et puis rétablir les valeurs d’origine à l’étape 5, après la suppression d’éléments à partir du dossier éléments récupérables. Voici une liste des propriétés de boîte aux lettres que vous devez recueillir.
+Cette première étape consiste à collecter les propriétés sélectionnées à partir de la boîte aux lettres cible auront une incidence sur cette procédure. Veillez à noter ces paramètres ou de les enregistrer dans un fichier texte, car vous allez modifier certaines de ces propriétés et puis rétablir les valeurs d’origine à l’étape 6, après la suppression d’éléments à partir du dossier éléments récupérables. Voici une liste des propriétés de boîte aux lettres que vous devez recueillir.
   
 -  *SingleItemRecoveryEnabled* et *RetainDeletedItemsFor* ; Si nécessaire, vous devez désactiver la récupération unique et augmenter la période de rétention des éléments supprimés à l’étape 3. 
     
 -  *LitigationHoldEnabled* et *InPlaceHolds* ; Vous devez identifier toutes les suspensions placées sur la boîte aux lettres afin que vous pouvez les supprimer temporairement à l’étape 3. Voir la section [plus d’informations](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#moreinfo) pour obtenir des conseils sur la façon d’identifier la suspension de type qui peut-être être placée sur une boîte aux lettres. 
     
-En outre, vous devez obtenir les paramètres d’accès client de la boîte aux lettres afin que vous pouvez temporairement désactiver afin que le propriétaire (ou autres utilisateurs) ne peut pas accéder à la boîte aux lettres au cours de cette procédure. Enfin, vous pouvez obtenir la taille actuelle et le nombre d’éléments dans le dossier éléments récupérables. Après la suppression d’éléments dans le dossier éléments récupérables à l’étape 4, vous allez utiliser ces informations pour vérifier que les éléments ont été supprimées réellement.
+En outre, vous devez obtenir les paramètres d’accès client de la boîte aux lettres afin que vous pouvez temporairement désactiver afin que le propriétaire (ou autres utilisateurs) ne peut pas accéder à la boîte aux lettres au cours de cette procédure. Enfin, vous pouvez obtenir la taille actuelle et le nombre d’éléments dans le dossier éléments récupérables. Après la suppression d’éléments dans le dossier éléments récupérables à l’étape 5, vous allez utiliser ces informations pour vérifier que les éléments ont été supprimées réellement.
   
 1. [Connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554). Veillez à utiliser un nom d’utilisateur et le mot de passe pour un compte d’administrateur qui a été affecté les rôles de gestion dans Exchange Online. 
     
@@ -114,7 +116,7 @@ En outre, vous devez obtenir les paramètres d’accès client de la boîte aux 
     Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
     ```
 
-   Lorsque vous supprimez des éléments à l’étape 4, vous pouvez choisir de supprimer ou pas supprimer des éléments dans le dossier éléments récupérables de boîte aux lettres de l’utilisateur principal d’archivage. Notez que si l’extension automatique d’archivage est activé pour la boîte aux lettres, les éléments dans une boîte aux lettres d’archive auxiliaire ne sont pas supprimés.
+   Lorsque vous supprimez des éléments à l’étape 5, vous pouvez choisir de supprimer ou pas supprimer des éléments dans le dossier éléments récupérables de boîte aux lettres de l’utilisateur principal d’archivage. Notez que si l’extension automatique d’archivage est activé pour la boîte aux lettres, les éléments dans une boîte aux lettres d’archive auxiliaire ne sont pas supprimés.
   
 ## <a name="step-2-prepare-the-mailbox"></a>Étape 2 : Préparation de la boîte aux lettres
 
@@ -122,11 +124,11 @@ Après la collecte et l’enregistrement des informations sur la boîte aux lett
   
 - **Désactiver l’accès client aux boîtes aux lettres** afin que le propriétaire de la boîte aux lettres ne peut pas accéder à leur boîte aux lettres et apportez des modifications aux données de boîte aux lettres au cours de cette procédure. 
     
-- **Augmenter la période de rétention des éléments supprimés** de 30 jours (la valeur maximale dans Exchange Online) afin que les éléments ne sont pas supprimés du dossier éléments récupérables avant de les supprimer à l’étape 4. 
+- **Augmenter la période de rétention des éléments supprimés** de 30 jours (la valeur maximale dans Exchange Online) afin que les éléments ne sont pas supprimés du dossier éléments récupérables avant de les supprimer à l’étape 5. 
     
-- **Désactiver la récupération d’élément unique** afin que les articles ne seront pas conservées (pendant la durée de la période de rétention des éléments supprimés) après leur suppression à partir du dossier éléments récupérables à l’étape 4. 
+- **Désactiver la récupération d’élément unique** afin que les articles ne seront pas conservées (pendant la durée de la période de rétention des éléments supprimés) après leur suppression à partir du dossier éléments récupérables à l’étape 5. 
     
-- **Désactiver l’Assistant dossier géré** afin qu’elle ne traiter la boîte aux lettres et conserver les éléments supprimés à l’étape 4. 
+- **Désactiver l’Assistant dossier géré** afin qu’elle ne traiter la boîte aux lettres et conserver les éléments supprimés à l’étape 5. 
     
 Dans Exchange Online PowerShell, procédez comme suit.
   
@@ -162,7 +164,7 @@ Dans Exchange Online PowerShell, procédez comme suit.
 
 ## <a name="step-3-remove-all-holds-from-the-mailbox"></a>Étape 3 : Suppression de toutes les suspensions à partir de la boîte aux lettres
 
-Avant de pouvoir supprimer des éléments à partir du dossier éléments récupérables de la dernière étape consiste à supprimer toutes les suspensions (que vous avez identifié à l’étape 1) placées sur la boîte aux lettres. Toutes les suspensions doivent être supprimées afin que les éléments ne seront pas conservées après leur suppression à partir du dossier éléments récupérables. Les sections suivantes contiennent des informations sur la suppression de différents types de suspensions sur une boîte aux lettres. Voir la section [plus d’informations](#more-information) pour obtenir des conseils sur la façon d’identifier la suspension de type qui peut-être être placée sur une boîte aux lettres. 
+Avant de pouvoir supprimer des éléments à partir du dossier éléments récupérables de la dernière étape consiste à supprimer toutes les suspensions (que vous avez identifié à l’étape 1) placées sur la boîte aux lettres. Toutes les suspensions doivent être supprimées afin que les éléments ne seront pas conservées après leur suppression à partir du dossier éléments récupérables. Les sections suivantes contiennent des informations sur la suppression de différents types de suspensions sur une boîte aux lettres. Voir la section [plus d’informations](#more-information) pour obtenir des conseils sur la façon d’identifier la suspension de type qui peut-être être placée sur une boîte aux lettres. Pour plus d’informations, voir [Comment faire pour identifier le type de blocage placé dans une boîte aux lettres Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md).
   
 > [!CAUTION]
 > Comme indiqué précédemment, vérifiez auprès de votre gestion des enregistrements ou les services juridiques avant la suppression d’une suspension à partir d’une boîte aux lettres. 
@@ -208,7 +210,21 @@ Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
 Après avoir identifié les stratégies de rétention de l’organisation Office 365, accédez à la **gouvernance de Date** \> page de **rétention** dans la sécurité &amp; centre de conformité, modifier chaque stratégie de rétention de l’organisation que vous avez identifié dans la précédente étape, puis ajoutez la boîte aux lettres à la liste des destinataires exclus. Cette opération supprimera boîte aux lettres de l’utilisateur de la stratégie de rétention. 
-  
+
+### <a name="office-365-retention-labels"></a>Étiquettes de rétention d’Office 365
+
+Chaque fois qu’un utilisateur s’applique une étiquette qui est configurée pour conserver le contenu ou conserver et puis supprimer le contenu à un dossier ou un élément dans leur boîte aux lettres, la propriété de la boîte aux lettres *ComplianceTagHoldApplied* est définie sur **True**. Dans ce cas, la boîte aux lettres est considéré comme être mise en attente, comme s’il a été mis en attente pour litige ou affecté à une stratégie de rétention d’Office 365.
+
+Pour afficher la valeur de la propriété *ComplianceTagHoldApplied* , exécutez la commande suivante dans Exchange Online PowerShell :
+
+```
+Get-Mailbox <username> |FL ComplianceTagHoldApplied
+```
+
+Une fois que vous avez identifié qu’une boîte aux lettres est sur en attente, car une étiquette de rétention est appliquée à un dossier ou un élément, vous pouvez utiliser l’outil de recherche de contenu dans la sécurité et centre de conformité pour rechercher les éléments étiquetés à l’aide de la condition de recherche ComplianceTag. Pour plus d’informations, consultez la section « Conditions de recherche » dans les [requêtes de mot clé et les conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md#conditions-for-common-properties).
+
+Pour plus d’informations sur les étiquettes, voir [vue d’ensemble d’Office 365 étiquettes](labels.md).
+
  ### <a name="ediscovery-case-holds"></a>contient des cas de découverte électronique
   
 Exécutez les commandes suivantes [sécurité &amp; PowerShell du centre de conformité](https://go.microsoft.com/fwlink/?linkid=627084) pour identifier la suspension associée à un cas de découverte électronique qui est appliqué à la boîte aux lettres. Utilisez le GUID (non compris le `UniH` préfixe) pour la découverte électronique maintenez que vous avez identifié à l’étape 1. Notez que la deuxième commande affiche le nom du cas eDiscovery que la suspension associée ; la troisième commande affiche le nom de la suspension. 
@@ -227,7 +243,26 @@ $CaseHold.Name
 
 Une fois que vous avez identifié le nom de la casse eDiscovery et la suspension, accédez à la **recherche &amp; enquête** \> page de **découverte électronique** dans la sécurité &amp; centre de conformité, ouvrez le cas et supprimer la boîte aux lettres de la suspension. Pour plus d’informations, voir [gérer des affaires eDiscovery de sécurité Office 365 &amp; centre de conformité](manage-ediscovery-cases.md).
   
-## <a name="step-4-delete-items-in-the-recoverable-items-folder"></a>Étape 4 : Supprimer des éléments dans le dossier éléments récupérables
+## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>Étape 4 : Supprimer la suspension de délai d’attente de la boîte aux lettres
+
+Une fois que n’importe quel type de suspension est supprimé d’une boîte aux lettres, la valeur de la propriété de la boîte aux lettres *DelayHoldApplied* est définie sur **True**. Est appelé un *délai de blocage* et signifie que la suppression effective de la suspension est différée pendant 30 jours empêcher les données d’être définitivement supprimés (définitivement) de la boîte aux lettres.   Lorsque le délai est suspendu sur la boîte aux lettres, la boîte aux lettres est considérée en attente pour une durée illimitée, en tant que si la boîte aux lettres a été litige. (L’objectif d’une suspension du délai d’attente est Administrateurs de donner la possibilité permet de rechercher ou de récupérer des éléments de boîte aux lettres qui seront purgés après la suppression d’une suspension.) Noe qu’après 30 jours, le délai d’attente expire et Office 365 tente automatiquement de supprimer la suspension de délai d’attente (en définissant la propriété *DelayHoldApplied* sur **False**) afin que le blocage soit réellement supprimé. 
+
+Avant de pouvoir supprimer des éléments à l’étape 5, vous devez supprimer la suspension de délai d’attente de la boîte aux lettres. Exécutez la commande suivante dans Exchange Online PowerShell pour supprimer la suspension de délai d’attente : 
+ 
+```
+Set-Mailbox <username> -RemoveDelayHoldApplied
+```
+Notez que vous devez être affecté au rôle suspens pour raisons juridiques dans Exchange Online à utiliser le paramètre *RemoveDelayHoldApplied* .
+
+Pour vérifier que la suspension du délai d’attente a été supprimée, exécutez la commande suivante.
+
+```
+Get-Mailbox <username> | FL DelayHoldApplied
+```
+
+La valeur **False** pour la propriété *DelayHoldApplied* indique le délai a été supprimé.
+
+## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>Étape 5 : Supprimer des éléments dans le dossier éléments récupérables
 
 Vous êtes maintenant prêt à supprimer les éléments dans le dossier éléments récupérables à l’aide de l’applet de commande [Search-Mailbox](https://go.microsoft.com/fwlink/?linkid=852595) dans Exchange Online PowerShell. Vous disposez de trois options lors de l’exécution de l’applet de commande **Search-Mailbox** . 
   
@@ -308,7 +343,7 @@ Exécutez la commande suivante pour obtenir la taille et le nombre total d’él
 Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
 ```
   
-## <a name="step-5-revert-the-mailbox-to-its-previous-state"></a>Étape 5 : Rétablir la boîte aux lettres à son état précédent
+## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>Étape 6 : Rétablir la boîte aux lettres à son état précédent
 
 L’étape finale consiste à rétablir la boîte aux lettres à sa configuration précédente. Cela signifie réinitialiser les propriétés que vous avez modifié à l’étape 2 et réappliquer la suspension que vous avez supprimé à l’étape 3. Cela inclut :
   
@@ -387,9 +422,11 @@ Dans Exchange Online PowerShell, procédez comme suit (dans l’ordre spécifié
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
   
-## <a name="more-information"></a>Plus d'informations
+## <a name="more-information"></a>Plus d’informations
 
-Voici un tableau qui décrit comment identifier les différents types de suspensions en fonction des valeurs dans la propriété *InPlaceHolds* lorsque vous exécutez les applets de commande **Get-Mailbox** ou **Get-OrganizationConfig** . Comme indiqué, vous devez supprimer toutes les suspensions et stratégies de rétention d’Office 365 à partir d’une boîte aux lettres avant de supprimer les éléments dans le dossier éléments récupérables. 
+Voici un tableau qui décrit comment identifier les différents types de suspensions en fonction des valeurs dans la propriété *InPlaceHolds* lorsque vous exécutez les applets de commande **Get-Mailbox** ou **Get-OrganizationConfig** . Pour plus d’informations, voir [Comment faire pour identifier le type de blocage placé dans une boîte aux lettres Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md).
+
+Comme indiqué, vous devez supprimer toutes les suspensions et stratégies de rétention d’Office 365 à partir d’une boîte aux lettres avant de supprimer les éléments dans le dossier éléments récupérables. 
   
 |**Type de conservation**|**Exemple de valeur**|**Comment identifier la suspension**|
 |:-----|:-----|:-----|
