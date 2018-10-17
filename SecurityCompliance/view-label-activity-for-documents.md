@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: af341600-5f68-40b3-a73e-73562715acd1
 description: Avec l’Explorateur d’activité des étiquettes dans le Centre de sécurité &amp; conformité Office 365, vous pouvez rapidement rechercher et afficher l’activité des étiquettes pour tout le contenu au sein de SharePoint et OneDrive Entreprise au cours des 30 derniers jours. Il s’agit des données en temps réel qui vous offrent une bonne visibilité de ce qui se passe dans votre client.
-ms.openlocfilehash: b40d1f9bdad4d0fcb3647f0c79c265bfe0713cd1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 69e99ea7af683d7850cd56f356ad0ac99f8c084e
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013958"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540390"
 ---
 # <a name="view-label-activity-for-documents"></a>Afficher l’activité des étiquettes pour les documents
 
@@ -46,7 +46,7 @@ Notez que l’Explorateur d’activité des étiquettes requiert un abonnement O
 
 En haut de l’Explorateur d’activité des étiquettes, vous pouvez choisir d’afficher les activités pour les fichiers ou les dossiers. Notez que l’activité des dossiers inclut uniquement le dossier lui-même, pas les fichiers contenus dans le dossier.
   
-Vous voudrez peut-être consulter l’activité des étiquettes pour les dossiers, car si vous étiquetez un dossier, tous les fichiers contenus dans ce dossier sont également étiquetés (à l’exception des fichiers ayant été étiquetés spécifiquement). Par conséquent, l’étiquetage des dossiers risque d’affecter un certain nombre de fichiers. Pour obtenir plus d’informations, consultez la rubrique [Application d’une étiquette par défaut à tout le contenu d’une bibliothèque, d’un dossier ou d’un ensemble de documents SharePoint](labels.md#applying-a-default-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
+Vous voudrez peut-être consulter l’activité des étiquettes pour les dossiers, car si vous étiquetez un dossier, tous les fichiers contenus dans ce dossier sont également étiquetés (à l’exception des fichiers ayant été étiquetés spécifiquement). Par conséquent, l’étiquetage des dossiers risque d’affecter un certain nombre de fichiers. Pour obtenir plus d’informations, consultez la rubrique [Application d’une étiquette de rétention par défaut à tout le contenu d’une bibliothèque, d’un dossier ou d’un ensemble de documents SharePoint](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
   
 ![Menu déroulant affichant les activités des étiquettes pour les fichiers et les dossiers](media/11030584-f52d-49eb-86f3-7ead16a3b704.png)
   

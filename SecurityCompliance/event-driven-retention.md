@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: dd851332-747b-45b9-82de-e3cd7d01c8a7
 description: Dans Office 365, vous pouvez baser une période de rétention sur l’occurrence d’un type spécifique d’événement grâce aux étiquettes. L’événement déclenche le début de la période de rétention, et les actions de rétention d’une étiquette sont appliquées sur tout le contenu portant l’étiquette en question pour ce type d’événement. Les rétentions basées sur des événements sont généralement utilisées dans le cadre d’un processus de gestion des enregistrements.
-ms.openlocfilehash: 7a360ec665843db2e7fb3ec5dc11e286a99b3f12
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: fca335d8218c2c22335592fd71bffd00a805f6fb
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013708"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540410"
 ---
 # <a name="overview-of-event-driven-retention"></a>Vue d’ensemble des rétentions basées sur des événements
 
@@ -35,7 +35,7 @@ Par exemple, vous pouvez utiliser des étiquettes avec des rétentions basées s
     
 Les rétentions basées sur des événements sont généralement utilisées dans le cadre d’un processus de gestion des enregistrements. Il faut alors prendre en compte les points suivants :
   
-- Les étiquettes basées sur des événements classent aussi généralement du contenu en tant qu’enregistrement. Pour obtenir plus d’informations, consultez la rubrique [Utilisation de la recherche de contenu pour trouver tout le contenu portant une étiquette spécifique](labels.md#using-content-search-to-find-all-content-with-a-specific-label-applied-to-it).
+- Les étiquettes basées sur des événements classent aussi généralement du contenu en tant qu’enregistrement. Pour obtenir plus d’informations, consultez la rubrique [Utilisation de la recherche de contenu pour trouver tout le contenu portant une étiquette spécifique](labels.md#using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it).
     
 - Un document qui a été déclaré comme enregistrement, mais dont l’événement déclencheur ne s’est pas encore produit, est conservé indéfiniment (les enregistrements ne peuvent pas être supprimés définitivement) jusqu’à ce qu’un événement déclenche la période de rétention du document en question.
     
