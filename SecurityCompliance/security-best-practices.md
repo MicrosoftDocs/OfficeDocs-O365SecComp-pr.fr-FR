@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 9295e396-e53d-49b9-ae9b-0b5828cdedc3
 description: Réduire le risque d’une violation de données ou d’un compte compromis en suivant ces meilleures pratiques recommandées.
-ms.openlocfilehash: 63bda11afdd1e02e9e12e8c505aca7100c4deade
-ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
+ms.openlocfilehash: 0d3dc30a9975f2ed8fe6d524b4fc67918b34e51d
+ms.sourcegitcommit: 49b565f6a57febe53f331b2605d6a06d11e2d0be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25498090"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "25637998"
 ---
 # <a name="security-best-practices-for-office-365"></a>Meilleures pratiques de sécurité pour Office 365
 
@@ -90,7 +90,7 @@ DLP permet d’identifier les données sensibles et créer des stratégies qui p
   
 ## <a name="use-customer-lockbox"></a>Utilisez la zone de sécurité client
 
-En tant qu’un administrateur Office 365, vous pouvez utiliser la zone de sécurité client pour contrôler la façon dont un ingénieur du support technique Microsoft accède à vos données pendant une session de l’aide. Dans les cas où l’ingénieur requiert l’accès à vos données à résoudre les problèmes et à résoudre un problème, zone de sécurité client vous permet d’approuver ou refuser la demande d’accès. Si vous l’approuver, l’ingénieur peut accéder aux données. Chaque demande a un délai d’expiration et une fois que le problème est résolu, la demande est fermée et l’accès a été révoqué. Zone de sécurité client est inclus dans le plan Office 365 pour entreprises 5, ou vous pouvez acheter un abonnement distinct avec tout autre plan d’entreprise Office 365. Pour plus d’informations, voir [Demandes de zone de sécurité du client Office 365](https://support.office.com/article/36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
+En tant qu’un administrateur Office 365, vous pouvez utiliser la zone de sécurité client pour contrôler la façon dont un ingénieur du support technique Microsoft accède à vos données pendant une session de l’aide. Dans les cas où l’ingénieur requiert l’accès à vos données à résoudre les problèmes et à résoudre un problème, zone de sécurité client vous permet d’approuver ou refuser la demande d’accès. Si vous l’approuver, l’ingénieur peut accéder aux données. Chaque demande a un délai d’expiration et une fois que le problème est résolu, la demande est fermée et l’accès a été révoqué. Zone de sécurité client est inclus dans le plan Office 365 entreprise E5, ou vous pouvez acheter un abonnement distinct avec tout autre plan d’entreprise Office 365. Pour plus d’informations, voir [Demandes de zone de sécurité du client Office 365](https://support.office.com/article/36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
   
 ## <a name="try-it-yourself"></a>Essayer
 <a name="SecureScore"> </a>
