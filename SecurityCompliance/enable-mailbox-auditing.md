@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: Dans Office 365, vous pouvez activer l’enregistrement d’audit boîte aux lettres pour enregistrer l’accès des boîtes aux lettres par les propriétaires de boîte aux lettres, les délégués et les administrateurs. Par défaut, l’audit de boîte aux lettres dans Office 365 n’est pas activé. Une fois que la boîte aux lettres enregistrement d’audit pour une boîte aux lettres, vous pouvez rechercher le journal d’audit de Office 365 pour les activités effectuées sur la boîte aux lettres.
-ms.openlocfilehash: 9952cc94fe48e289e6eaf8de665a82cb3da4746d
-ms.sourcegitcommit: b6473cd6ba3f9ac79dc6a2040fc148020dfbe464
+ms.openlocfilehash: 6d3de226e7c0e03be824b14e1b16fadaae3f040e
+ms.sourcegitcommit: 8294182d4dd124f035a221de0b90159ef7eec4ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "25358383"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "25639663"
 ---
 # <a name="enable-mailbox-auditing-in-office-365"></a>Activer l’audit de boîte aux lettres dans Office 365
   
@@ -28,8 +28,6 @@ Dans Office 365, vous pouvez activer l’enregistrement d’audit boîte aux let
 ## <a name="before-you-begin"></a>Avant de commencer
   
 - Vous devez utiliser Exchange Online PowerShell pour activer la boîte aux lettres de journal d’audit. Vous ne pouvez pas utiliser le Office 365 Security &amp; centre de conformité ou le centre d’administration Exchange.
-    
-- Une fois que la boîte aux lettres enregistrement d’audit pour une boîte aux lettres, accès aux boîtes aux lettres et certains admin et délégué actions sont enregistrés par défaut. Pour enregistrer les actions effectuées par le propriétaire de boîte aux lettres, vous devez spécifier les actions de propriétaire à auditer. Consultez la section « Informations supplémentaires » pour voir une liste des actions qui sont enregistrés après l’enregistrement d’audit de boîte aux lettres est activée, et les actions qui sont disponibles pour chaque type d’ouverture de session utilisateur.
     
 - Vous ne pouvez pas activer la boîte aux lettres enregistrement d’audit pour la boîte aux lettres qui est associé à un groupe d’Office 365 ou d’une équipe dans Microsoft Teams.
     
@@ -45,7 +43,7 @@ Dans Office 365, vous pouvez activer l’enregistrement d’audit boîte aux let
 
 2. Dans la boîte de dialogue **Demande d'informations d'identification Windows PowerShell**, saisissez le nom d'utilisateur et le mot de passe d'un compte d'administrateur global Office 365, puis cliquez sur **OK**.
     
-3. Exécutez la commande suivante :
+3. Exécutez la commande suivante :
     
     ```
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
@@ -83,7 +81,7 @@ Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox
   
 ## <a name="step-3-specify-owner-actions-to-audit"></a>Étape 3 : indication des actions de propriétaire à auditer
 
-Lorsque vous activez l’audit pour une boîte aux lettres, une seule action ( **UpdateFolderPermissions** ) effectuée par le propriétaire de boîte aux lettres est enregistrée par défaut. Vous devez spécifier d’autres actions propriétaire à auditer. Consultez le tableau dans la section « Actions de boîte aux lettres » pour une liste et une description des actions propriétaire pouvant être audités. 
+Lorsque vous activez l’audit pour une boîte aux lettres, certaines actions effectuées par le propriétaire de boîte aux lettres sont contrôlées par défaut. Vous devez spécifier d’autres actions propriétaire à auditer. Consultez le tableau dans la section [actions d’audit de boîte aux lettres](#mailbox-auditing-actions) pour une liste et une description des actions de propriétaire qui sont enregistrées par défaut et les autres actions qui peuvent être auditées. 
   
 Cet exemple ajoute les actions de propriétaire **MailboxLogin** et **HardDelete** à la boîte aux lettres de l’audit de boîte aux lettres de Pilar Pinilla. Cet exemple suppose que l’audit de boîte aux lettres a déjà été activé pour cette boîte aux lettres. 
 
@@ -103,7 +101,7 @@ Cet exemple ajoute les actions de propriétaire **SoftDelete** , **HardDelete**e
 Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -AuditOwner @{Add="MailboxLogin","HardDelete","SoftDelete"}
 ```
   
-## <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
+## <a name="how-do-you-know-this-worked"></a>Comment vérifier que l'opération a fonctionné ?
 
 Pour vérifier que vous avez activé la journalisation d’audit de boîte aux lettres pour une boîte aux lettres donnée, utilisez la cmdlet **Get-Mailbox** pour récupérer les paramètres d’audit de cette boîte aux lettres. 
   
@@ -123,7 +121,7 @@ Une valeur **true** pour la propriété **AuditEnabled** vérifie que d’audit 
     
 ## <a name="mailbox-auditing-actions"></a>Actions d’audit de boîte aux lettres
   
-Le tableau suivant répertorie les actions qui peuvent être enregistrées par boîte aux lettres de journal d’audit. Le tableau inclut l’action qui peut être enregistrée pour les types d’ouverture de session utilisateur différent. Dans le tableau, un **No** indique qu’une action ne peut pas être enregistrée pour ce type d’ouverture de session. Un astérisque ( **\*** ) indique que l’action est consignée par défaut lors de l’enregistrement d’audit de boîte aux lettres est activée pour la boîte aux lettres. Comme indiqué précédemment, l’action seuls le propriétaire enregistrée par défaut lorsque vous activez l’audit de boîte aux lettres est UpdateFolderPermissions. Pour enregistrer les autres actions effectuées par le propriétaire de boîte aux lettres, vous devez spécifier les actions supplémentaires propriétaire à auditer. Pour ce faire, consultez [l’étape 3](#step-3-specify-owner-actions-to-audit) dans cette rubrique. 
+Le tableau suivant répertorie les actions qui peuvent être enregistrées par boîte aux lettres de journal d’audit. Le tableau inclut l’action qui peut être enregistrée pour les types d’ouverture de session utilisateur différent. Dans le tableau, un **No** indique qu’une action ne peut pas être enregistrée pour ce type d’ouverture de session. Un astérisque ( **\*** ) indique que l’action est consignée par défaut lors de l’enregistrement d’audit de boîte aux lettres est activée pour la boîte aux lettres. 
   
 |**Action**|**Description**|**Administrateur**|**Délégué\*\*\***|**Propriétaire**|
 |:-----|:-----|:-----|:-----|:-----|
@@ -146,7 +144,7 @@ Le tableau suivant répertorie les actions qui peuvent être enregistrées par b
 > [!NOTE]
 > <sup>\*</sup>Enregistré par défaut si l’audit est activé pour une boîte aux lettres.<br/><br/>  <sup>\*\*</sup>Consolidation des entrées pour lier des actions effectuées par les délégués du dossier. Une entrée de journal est générée pour l’accès à un dossier spécifique dans une période de 24 heures.<br/><br/><sup>\*\*\*</sup>Un administrateur qui a été attribué l’autorisation accès total aux boîtes aux lettres d’un utilisateur est considéré comme un utilisateur délégué. 
   
-Si vous avez besoin n’est plus certains types d’actions de boîte aux lettres à auditer, vous devez modifier la configuration de journalisation d’audit de la boîte aux lettres pour désactiver ces actions. Les entrées existantes ne sont pas supprimées jusqu'à ce que la limite d’âge de 90 jours pour les entrées du journal d’audit est atteint.
+Si vous avez besoin n’est plus certains types d’actions de boîte aux lettres à auditer, vous devez modifier la configuration de journalisation d’audit de la boîte aux lettres pour désactiver ces actions. Les entrées existantes ne sont pas supprimées jusqu'à ce que la limite d’âge de rétention des entrées du journal d’audit est atteint. Pour plus d’informations sur l’âge de rétention des entrées du journal d’audit, consultez la section « avant de commencer » de la [recherche, ouvrez une session de l’audit dans la sécurité pour Microsoft Office 365 et le centre de conformité](search-the-audit-log-in-security-and-compliance.md#before-you-begin).
   
 ## <a name="more-infotab"></a>[Informations supplémentaires](#tab/)
   
