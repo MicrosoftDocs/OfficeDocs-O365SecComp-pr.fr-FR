@@ -3,7 +3,7 @@ title: Gérer les enquêtes légales dans Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 5/18/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Utilisez les cas eDiscovery de sécurité Office 365 &amp; centre de conformité pour gérer l’enquête juridique de votre organisation. Si vous disposez d’un abonnement E5, vous pouvez analyser plus données cas à l’aide de l’analytique de texte, ordinateur apprentissage et des fonctionnalités de codage prévision d’eDiscovery avancée.
-ms.openlocfilehash: 7d00268a94613dfc0a1bef6314b5f917de5b9954
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 4e7b9117b3f0cb2fd6d4e70a7767f3cbe7b79724
+ms.sourcegitcommit: 01813cb9bbc2400d21bc99144745af953f9356e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038267"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "25719048"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>Gérer les enquêtes légales dans Office 365
 
@@ -32,7 +32,7 @@ Les organisations ont plusieurs raisons pour répondre à une affaire juridique 
    
 ## <a name="manage-legal-investigations-with-ediscovery-cases"></a>Gérer les enquêtes légales avec cas eDiscovery
 
-Découverte des cas vous permettent de contrôler qui peut créer, accéder et gérer des affaires eDiscovery dans votre organisation. Pour ajouter des membres et contrôle les types d’actions qu’ils peuvent effectuer, placer une suspension sur les emplacements de contenu approprié à une affaire juridique et utilisez l’outil de recherche de contenu pour rechercher les emplacements de blocage pour le contenu qui peut être réactif à un cas de cas d’utilisation. Ensuite, vous pouvez également exporter et télécharger ces résultats pour une analyse approfondie des réviseurs externes. Si votre organisation Office 365 a et abonnement E5, vous pouvez également préparer les résultats de recherche pour l’analyse d’eDiscovery avancée.
+Découverte des cas vous permettent de contrôler qui peut créer, accéder et gérer des affaires eDiscovery dans votre organisation. Pour ajouter des membres et contrôle les types d’actions qu’ils peuvent effectuer, placer une suspension sur les emplacements de contenu approprié à une affaire juridique et utilisez l’outil de recherche de contenu pour rechercher les emplacements de blocage pour le contenu qui peut être réactif à un cas de cas d’utilisation. Ensuite, vous pouvez également exporter et télécharger ces résultats pour une analyse approfondie des réviseurs externes. Si votre organisation Office 365 dispose d’un abonnement de E5, vous pouvez également préparer des résultats de recherche pour l’analyse d’eDiscovery avancée.
   
 - [Gérer votre flux de travail eDiscovery](ediscovery-cases.md) en créant et en utilisant cas eDiscovery pour chaque enquête juridique de votre organisation dispose d’entreprendre 
     
