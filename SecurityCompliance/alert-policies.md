@@ -3,7 +3,7 @@ title: Stratégies de sécurité Office 365 d’alerte &amp; centre de conformit
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/8/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Créer des stratégies de l’alerte de sécurité Office 365 &amp; centre de conformité à surveiller les menaces potentielles, la perte de données et problème d’autorisations. Ensuite, vous pouvez afficher et gérer les alertes sont générées lorsque les utilisateurs effectuent des activités qui correspondent aux conditions d’une stratégie de l’alerte.
-ms.openlocfilehash: 1404f03fdc59583fdf402f2cdc6209f4d55c23f3
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 020e9871170091e63cd6a59e6f1a0bfe50124fef
+ms.sourcegitcommit: 98a418052be88137c06f5c1abe7012359a7e90ee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528052"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "25698020"
 ---
 # <a name="alert-policies-in-the-office-365-security-amp-compliance-center"></a>Stratégies de sécurité Office 365 d’alerte &amp; centre de conformité
 
@@ -74,7 +74,9 @@ Une stratégie d’alerte comprend les conditions et les paramètres suivants.
     
   - Gouvernance des données
     
-  - Protection contre les fuites de données
+  - Protection contre la perte de données
+
+  - Flux de messagerie
     
   - Autorisations
     
@@ -100,6 +102,7 @@ Le tableau suivant répertorie et décrit les règles d’alerte par défaut dis
 |**Stratégie de l’alerte par défaut**|**Description**|**Abonnement à Office 365 entreprise**|
 |:-----|:-----|:-----|
 |**Création de règles de transfert/redirection** <br/> |Génère une alerte lorsqu’une personne de votre organisation crée une règle de boîte de réception pour leur boîte aux lettres qui transfère ou redirige les messages vers un autre compte de messagerie. Cette stratégie suit uniquement les règles de boîte de réception sont créés à l’aide d’Outlook Web App ou Exchange Online PowerShell. Cette stratégie possède un paramètre de niveau de gravité **faible** . Pour plus d’informations à l’aide de règles de boîte de réception pour transférer et rediriger les messages électroniques dans Outlook Web App, voir [utiliser les règles dans Outlook Web App pour transférer automatiquement les messages vers un autre compte](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).<br/> |E1, E3 ou E5  <br/> |
+|**recherche de découverte électronique démarré ou exportés** <br/> |Génère une alerte lorsqu’une personne utilise l’outil de recherche de contenu dans la sécurité et le centre de conformité. Une alerte est déclenchée lorsque les activités de recherche de contenu suivantes sont effectuées :<br/><br/>• Une recherche de contenu est démarré.<br/>• Les résultats d’une recherche de contenu sont exportées.<br/>• Exportation d’un rapport de recherche de contenu<br/><br/>Alertes sont déclenchées également lorsque les activités de recherche de contenu précédente sont effectuées en association avec un cas eDiscovery. Cette stratégie possède un paramètre de gravité **moyenne** . Pour plus d’informations sur les activités de recherche de contenu, voir [recherche d’activités de découverte électronique dans Office 365 journal d’audit](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities).<br/> |E1, E3 ou E5  <br/> |
 |**Élévation de privilèges d’administrateur Exchange** <br/> |Génère une alerte lorsqu’une personne est attribuée des autorisations d’administration dans votre organisation Exchange Online ; par exemple, si un utilisateur est ajouté au rôle de gestion de l’organisation de groupe dans Exchange Online. Cette stratégie possède un paramètre de niveau de gravité **faible** .<br/> |E1, E3 ou E5  <br/> |
 |**Les messages qui ont été retardées** <br/> |Génère une alerte lorsque Office 365 ne peut pas remettre les messages électroniques à votre organisation locale ou à un partenaire de serveurs à l’aide d’un connecteur. Lorsque cela se produit, le message est en file d’attente dans Office 365. Cette alerte se déclenche quand il y a 2 000 messages ou plus qui ont été mis en attente pour plus d’une heure. Cette stratégie possède un paramètre de gravité **élevée** .<br/> |E1, E3 ou E5  <br/> |
 |**Campagne de programme malveillant détecté après la remise** <br/> |Génère une alerte lorsqu’un nombre excessif de messages contenant des programmes malveillants est remis aux boîtes aux lettres dans votre organisation. Si cet événement se produit, Office 365 supprime les messages infectés de boîtes aux lettres Exchange Online. Cette stratégie possède un paramètre de gravité **élevée** .<br/> |Abonnement de module complémentaire E5 ou menaces Office 365  <br/> |
@@ -124,7 +127,7 @@ Vous pouvez utiliser les filtres suivants pour afficher un sous-ensemble de tout
   
 - **État** - Utilisez ce filtre pour afficher les alertes qui sont affectés à un état particulier ; l’état par défaut est **Active**. Autres administrateurs ou vous pouvant modifier la valeur d’état.
     
-- **Stratégies** - Utilisez ce filtre pour afficher les alertes qui correspondent à la valeur d’une ou plusieurs stratégies de l’alerte. Ou bien, vous pouvez uniquement afficher toutes les alertes pour toutes les stratégies de l’alerte.
+- **Stratégie** - Utilisez ce filtre pour afficher les alertes qui correspondent à la valeur d’une ou plusieurs stratégies de l’alerte. Ou bien, vous pouvez uniquement afficher toutes les alertes pour toutes les stratégies de l’alerte.
     
 - **Période** - Utilisez ce filtre pour afficher les alertes qui ont été générés au sein d’une date spécifique et une plage de temps.
     

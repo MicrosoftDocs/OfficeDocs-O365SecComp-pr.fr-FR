@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Découvrez comment rechercher dans le journal d’audit Office 365 pour les événements qui sont consignés lorsque des administrateurs de conformité effectuer une recherche de contenu et eDiscovery cas la sécurité &amp; centre de conformité.
-ms.openlocfilehash: a4cc3a6b5030a6412d739236e4c534f36948d57f
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: f3d8e49da32de85c127d6bbf28d0b53bd6974c09
+ms.sourcegitcommit: 98a418052be88137c06f5c1abe7012359a7e90ee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038347"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "25698030"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Rechercher des activités de découverte électronique dans le journal d’audit d’Office 365
 
@@ -41,9 +41,9 @@ Pour plus d’informations sur la recherche dans le journal d’audit de Office 
 
 Actuellement, vous devez effectuer quelques opérations spécifiques permet d’afficher les activités de découverte électronique dans le journal d’audit d’Office 365. Voici comment.
   
-1. Accédez à [https://protection.office.com](https://protection.office.com).
+1. Accédez à la page [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à Office 365 à l’aide de votre compte professionnel ou de l’école.
+2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
 3. Dans le volet gauche, cliquez sur **recherche &amp; enquête**, puis cliquez sur **Rechercher des journaux d’Audit**.
     
@@ -81,9 +81,9 @@ Le tableau suivant décrit la recherche de contenu et les activités liées à l
 |Appartenance cas eDiscovery modifié  <br/> |CaseMemberUpdated  <br/> |Mise à jour-ComplianceCaseMember  <br/> |La liste d’appartenance d’un cas de découverte électronique a été modifiée. Cette action est consignée lors du remplacement de tous les membres d’un groupe de nouveaux utilisateurs. Si un seul membre est ajouté ou supprimé, opération CaseMemberAdded ou CaseMemberRemoved est enregistrée.  <br/> |
 |Modification de filtre des autorisations de recherche  <br/> |SearchPermissionUpdated  <br/> |Set-ComplianceSecurityFilter  <br/> |Un filtre d’autorisations de recherche a été modifié.  <br/> |
 |Requête de recherche modifiées pour blocage cas eDiscovery  <br/> |HoldUpdated  <br/> |Set-CaseHoldRule  <br/> |Un blocage de requête associé à un cas de découverte électronique a été modifié. Modifications possibles comprennent la modification de la requête ou mise en suspens de la plage de dates pour basée sur une requête.  <br/> |
-|Élément d’aperçu de recherche de contenu téléchargé  <br/> |PreviewItemDownloaded  <br/> |N/D  <br/> |Un utilisateur téléchargé un élément sur leur ordinateur local (en cliquant sur le lien **Télécharger l’élément d’origine** ) s’afficher un aperçu des résultats de la recherche.  <br/> |
-|Élément d’aperçu de recherche de contenu répertorié  <br/> |PreviewItemListed  <br/> |N/D  <br/> |Un utilisateur clique sur **Aperçu des résultats de recherche** pour afficher la page de résultats de recherche preview, qui répertorie les jusqu'à 1 000 éléments dans les résultats d’une recherche de contenu.  <br/> |
-|Recherche de contenu aperçu affiché  <br/> |PreviewItemRendered  <br/> |N/D  <br/> |Un gestionnaire de découverte électronique afficher un élément en cliquant dessus lors de l’aperçu des résultats de la recherche.  <br/> |
+|Élément d’aperçu de recherche de contenu téléchargé  <br/> |PreviewItemDownloaded  <br/> |N/A  <br/> |Un utilisateur téléchargé un élément sur leur ordinateur local (en cliquant sur le lien **Télécharger l’élément d’origine** ) s’afficher un aperçu des résultats de la recherche.  <br/> |
+|Élément d’aperçu de recherche de contenu répertorié  <br/> |PreviewItemListed  <br/> |N/A  <br/> |Un utilisateur clique sur **Aperçu des résultats de recherche** pour afficher la page de résultats de recherche preview, qui répertorie les jusqu'à 1 000 éléments dans les résultats d’une recherche de contenu.  <br/> |
+|Recherche de contenu aperçu affiché  <br/> |PreviewItemRendered  <br/> |N/A  <br/> |Un gestionnaire de découverte électronique afficher un élément en cliquant dessus lors de l’aperçu des résultats de la recherche.  <br/> |
 |Recherche de contenu créée  <br/> |SearchCreated  <br/> |New-ComplianceSearch  <br/> |Une recherche de contenu a été créée.  <br/> |
 |Administrateur de créer d’eDiscovery  <br/> |CaseAdminAdded  <br/> |EDiscoveryCaseAdmin ajouter  <br/> |Un utilisateur a été ajouté en tant qu’une administrateur de découverte électronique dans l’organisation.  <br/> |
 |Cas de découverte électronique créé  <br/> |CaseAdded  <br/> |Nouvelle ComplianceCase  <br/> |Un cas de découverte électronique a été créé. Création d’un cas, il vous suffit de lui donner un nom. Autres tâches liées à la casse, telles que l’ajout de membres, création de suspensions et la création de recherches de contenu associés avec le résultat de la cas dans d’autres événements en cours de journalisation.  <br/> |
@@ -94,8 +94,8 @@ Le tableau suivant décrit la recherche de contenu et les activités liées à l
 |Cas de découverte électronique supprimé  <br/> |CaseRemoved  <br/> |Remove-ComplianceCase  <br/> |Un cas de découverte électronique a été supprimé. Notez que toute suspension associée au cas doit être supprimé avant de pouvoir supprimer le cas.  <br/> |
 |Filtre des autorisations de recherche supprimés  <br/> |SearchPermissionRemoved  <br/> |Remove-ComplianceSecurityFilter  <br/> |Un filtre d’autorisations de recherche a été supprimé.  <br/> |
 |Requête de recherche supprimés pour blocage cas eDiscovery  <br/> |HoldRemoved  <br/> |Remove-CaseHoldRule  <br/> |Un blocage de requête associé à un cas de découverte électronique a été supprimé. Suppression de la requête à partir de la suspension est souvent le résultat de la suppression d’une suspension. Lors d’une suspension ou une requête de suspension sont supprimés, les emplacements de contenu qui ont été en attente sont annulées.  <br/> |
-|Exportation téléchargée de recherche de contenu  <br/> |SearchResultDownloaded  <br/> |N/D  <br/> |Un utilisateur a téléchargé les résultats d’une recherche de contenu sur leur ordinateur local. Notez qu’une activité **démarré l’exportation de la recherche de contenu** soient initialisées avant que les résultats de la recherche peuvent être téléchargés.<br/> |
-|Aperçu des résultats de recherche de contenu  <br/> |SearchPreviewed  <br/> |N/D  <br/> |Un utilisateur les résultats d’une recherche de contenu d’aperçu.  <br/> |
+|Exportation téléchargée de recherche de contenu  <br/> |SearchExportDownloaded  <br/> |N/A  <br/> |Un utilisateur a téléchargé les résultats d’une recherche de contenu sur leur ordinateur local. Notez qu’une activité **démarré l’exportation de la recherche de contenu** soient initialisées avant que les résultats de la recherche peuvent être téléchargés.<br/> |
+|Aperçu des résultats de recherche de contenu  <br/> |SearchPreviewed  <br/> |N/A  <br/> |Un utilisateur les résultats d’une recherche de contenu d’aperçu.  <br/> |
 |Purgés de résultats de recherche de contenu  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |Un utilisateur purgés les résultats d’une recherche de contenu en exécutant la **New-ComplianceSearchAction-purger** commande.  <br/> |
 |Suppression d’analyse de recherche de contenu  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |Une recherche de contenu préparer (en vue de résultats de recherche pour la découverte Office 365 avancée) a été supprimé. Si l’action de la préparation a moins de deux semaines, les résultats de recherche qui ont été préparés pour la découverte avancée ont été supprimés de la zone de stockage Microsoft Azure. Si l’action de la préparation est antérieure à 2 semaines, cet événement indique qu’uniquement l’action préparation correspondant a été supprimée.  <br/> |
 |Exportation supprimée de la recherche de contenu  <br/> |RemovedSearchExported  <br/> |Remove-ComplianceSearchAction  <br/> |Une action d’exportation de recherche de contenu a été supprimée. Si l’action de l’exportation a moins de deux semaines, les résultats de recherche qui ont été téléchargés dans la zone de stockage Microsoft Azure ont été supprimées. Si l’action d’exportation est antérieure à 2 semaines, cet événement indique que seule l’action d’exportation correspondant a été supprimée.  <br/> |
