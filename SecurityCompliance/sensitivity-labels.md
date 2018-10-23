@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Avec les étiquettes de niveau de confidentialité dans Office 365, vous pouvez classer et protéger le contenu sensible, tout en vous assurant que la productivité et la possibilité de collaboration des membres de votre organisation ne sont pas altérées. Vous pouvez utiliser les étiquettes de niveau de confidentialité afin d’appliquer des paramètres de protection, comme le chiffrement ou les filigranes, sur le contenu étiqueté.
-ms.openlocfilehash: fae238e4c8409288175a3de305d12c76efcec5c2
-ms.sourcegitcommit: 13f40ff7c1799152bf45af2d8110f4f3235b770a
+ms.openlocfilehash: 736975d10084cb6672ae21b1716cd92d0956c6c6
+ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25549747"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25577093"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Vue d’ensemble des étiquettes de niveau de confidentialité
 
@@ -37,13 +37,11 @@ Vous pouvez utiliser les étiquettes de niveau de confidentialité aux fins suiv
     
 - **Empêcher le contenu sensible de sortir de votre organisation sur des appareils exécutant Windows**, à l’aide de la protection de point de terminaison (Endpoint Protection) dans Microsoft Intune. Après l’application d’une étiquette de niveau de confidentialité à du contenu qui se trouve sur un appareil Windows, Endpoint Protection peut empêcher de copier le contenu vers une application tierce, comme Twitter ou Gmail, ou de le copier sur un périphérique de stockage amovible, comme un lecteur USB.
 
-- **Protéger le contenu dans des applications et services tiers**, à l’aide de Cloud App Security (CAS). Avec CAS, vous pouvez détecter, classer, étiqueter et protéger le contenu dans les applications et services tiers, comme SalesForce, Box ou Dropbox, même si l’application tierce ou le service tiers ne lit pas ou ne prend pas en charge les étiquettes de niveau de confidentialité.    
-
 - **Étendre les étiquettes de niveau de confidentialité à des applications et services tiers.** Avec le kit de développement logiciel (SDK) Microsoft Information Protection, les applications tierces sur Windows, Mac et Linux peuvent lire les étiquettes de niveau de confidentialité et appliquer les paramètres de protection. La prise en charge pour les applications sur iOS et Android sera bientôt disponible.
 
-- **Classer le contenu sans utiliser les paramètres de protection.** Vous pouvez également affecter une classification au contenu (par exemple, un autocollant) qui continue de s’afficher en itinérance au fur et à mesure qu’il est utilisé et partagé. Vous pouvez utiliser cette classification pour générer des rapports d’utilisation et consulter les données d’activité liées au contenu sensible. En fonction de ces informations, vous pouvez toujours choisir ultérieurement de configurer les paramètres de protection pouvant être appliqués selon la classification du document.
+- **Classer le contenu sans utiliser les paramètres de protection.** Vous pouvez également affecter une classification au contenu (par exemple, un autocollant) qui continue de s’afficher en itinérance au fur et à mesure qu’il est utilisé et partagé. Vous pouvez utiliser cette classification pour générer des rapports d’utilisation et consulter les données d’activité liées au contenu sensible. En fonction de ces informations, vous pouvez toujours choisir ultérieurement d’appliquer les paramètres de protection.
     
-Dans tous ces cas, les étiquettes de niveau de confidentialité dans Office 365 vous aident à entreprendre les bonnes actions sur le contenu approprié. Grâce aux étiquettes, vous pouvez classer les données au sein de votre organisation et appliquer des paramètres de protection en fonction de cette classification.
+Dans tous ces cas, les étiquettes de niveau de confidentialité dans Office 365 vous aident à entreprendre les bonnes actions sur le contenu approprié. Grâce aux étiquettes de niveau de confidentialité, vous pouvez classer les données au sein de votre organisation et appliquer des paramètres de protection en fonction de cette classification.
   
 Vous créez les étiquettes de niveau de confidentialité dans le Centre de sécurité et conformité d’Office 365. Le Centre de sécurité et conformité est désormais le seul endroit dédié à la configuration des stratégies et des étiquettes de niveau de confidentialité dans Azure Information Protection et Office 365. Ces étiquettes de niveau de confidentialité peuvent être utilisées par Azure Information Protection, par les applications Office et par les services Office 365.
 
@@ -73,7 +71,7 @@ Une fois qu’une étiquette de niveau de confidentialité est appliquée à un 
 
 - **Chiffrer** des e-mails uniquement, ou des e-mails et des documents. Vous pouvez déterminer quels utilisateurs ou groupes sont autorisés à effectuer telle ou telle action, et pendant combien de temps. Par exemple, vous pouvez choisir d’autoriser les utilisateurs dans un domaine spécifique en dehors de votre organisation à passer en revue le contenu pendant 7 jours uniquement une fois que le contenu est étiqueté.
 
-- **Marquer le contenu** en ajoutant des pieds de page, en-têtes ou filigranes personnalisés à des e-mails ou des documents portant l’étiquette. (Les filigranes sont appliqués uniquement aux documents, pas aux e-mails).
+- **Marquer le contenu** en ajoutant des en-têtes, des pieds de page ou des filigranes personnalisés à des e-mails ou à des documents auxquels l’étiquette a été appliquée. (Notez que les filigranes sont appliqués uniquement aux documents, et non aux e-mails, et qu’ils sont limités à 255 caractères. Quant aux en-têtes et aux pieds de page, ils sont limités à 1 024 caractères, sauf dans Excel, où ils sont limités à 253 caractères.)
 
     ![Filigrane et en-tête appliqués au document](media/Sensitivity_label_watermark_header.png)
 
@@ -142,15 +140,15 @@ Voici le flux de base des actions de l’administrateur, de l’utilisateur et d
 
 ## <a name="where-sensitivity-labels-can-appear"></a>Où apparaissent les étiquettes de niveau de confidentialité
 
-Les étiquettes de niveau de confidentialité apparaissent dans l’interface utilisateur des applications Office. Pour afficher la disponibilité actuelle pour des applications et plateformes spécifiques, reportez-vous à la section [Où cette fonctionnalité est-elle disponible aujourd'hui ?](https://support.office.com/fr-FR/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US&ui=en-US&rs=en-US#bkmk_whereavailable).
+Les étiquettes de niveau de confidentialité apparaissent dans l’interface utilisateur des applications Office. Pour afficher la disponibilité actuelle pour des applications et plateformes spécifiques, reportez-vous à la section **[Où cette fonctionnalité est-elle disponible aujourd’hui ?](https://support.office.com/fr-FR/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US&ui=en-US&rs=en-US#bkmk_whereavailable)**
 
 ### <a name="office-apps-on-windows"></a>Applications Office sur Windows
 
 Dans les applications Office sur les appareils exécutant Windows, les étiquettes de niveau de confidentialité apparaissent sur le bouton **Niveau de confidentialité** dans l’onglet **Accueil** du ruban. L’étiquette appliquée apparaît également dans la barre d’état en bas de la fenêtre.
 
-La prise en charge native des étiquettes de sensibilité sera bientôt disponible dans les applications Office sur Windows.
+La prise en charge native des étiquettes de niveau de confidentialité sera bientôt disponible dans les applications Office sur Windows.
 
-Si vous êtes un client Azure Information Protection existant, vous pouvez déployer le client d’étiquetage unifié Azure Information Protection, qui prend en charge les étiquettes de niveau de confidentialité et sera bientôt disponible. (Vérifiez fréquemment pour obtenir un lien vers des informations sur la façon de déployer le client). Nous travaillons actuellement sur la prise en charge native des étiquettes de niveau de confidentialité dans les applications Office sur Windows, afin que le client d’étiquetage unifié Azure Information Protection ne soit plus nécessaire.
+Si vous êtes un client Azure Information Protection existant, vous pouvez déployer le client d’étiquetage unifié Azure Information Protection, qui prend en charge les étiquettes de niveau de confidentialité et qui sera bientôt disponible. (Vérifiez fréquemment pour obtenir un lien vers des informations sur la façon de déployer le client). Nous travaillons actuellement sur la prise en charge native des étiquettes de niveau de confidentialité dans les applications Office sur Windows, afin que le client d’étiquetage unifié Azure Information Protection ne soit plus nécessaire.
 
 ![Bouton Niveau de confidentialité sur le ruban dans Excel pour Windows](media/Sensitivity_label_Sensitivity_button.png)
 
@@ -188,7 +186,7 @@ Si vous utilisez des étiquettes Azure Information Protection, pour l’instant,
 
 ## <a name="protect-content-on-windows-devices-by-using-endpoint-protection-in-microsoft-intune"></a>Protéger le contenu sur les appareils Windows à l’aide de la protection de point de terminaison dans Microsoft Intune
 
-Lorsque vous créez une étiquette de niveau de confidentialité, vous pouvez indiquer à Windows que les fichiers portant cette étiquette sont sensibles et doivent être protégés contre la fuite de données lorsqu’ils sont stockés sur des appareils Windows. Cette option vous assure que le contenu avec cette étiquette peut uniquement être partagé ou copié dans des emplacements approuvés, même lorsqu’il est stocké sur un point de terminaison. En réalité, l’activation de cette option pour une étiquette de niveau de confidentialité indique à Windows qu’il s’agit de données particulièrement critiques qui nécessitent des contraintes d’utilisation supplémentaires.
+Lorsque vous créez une étiquette de niveau de confidentialité, vous pouvez indiquer à Windows que les fichiers portant cette étiquette sont sensibles et qu’ils doivent être protégés contre la fuite de données lorsqu’ils sont stockés sur des appareils Windows. Cette option vous assure que le contenu avec cette étiquette peut être partagé ou copié uniquement dans des emplacements approuvés, même lorsqu’il est stocké sur un point de terminaison. En réalité, l’activation de cette option pour une étiquette de niveau de confidentialité indique à Windows qu’il s’agit de données particulièrement critiques qui nécessitent des contraintes d’utilisation supplémentaires.
 
 Lorsque vous activez cette option, Windows peut lire, comprendre et agir sur les étiquettes de niveau de confidentialité dans les documents, et appliquer automatiquement la protection des informations Windows sur le contenu, quelle que soit la manière dont il atteint un appareil Windows géré. Cela permet de protéger les fichiers étiquetés contre les fuites de données accidentelles, avec ou sans chiffrement.
 
@@ -208,22 +206,9 @@ Avant que les étiquettes de niveau de confidentialité puissent utiliser la pro
 
 - Vérifiez que vous exécutez Windows 10, version 1809 ou version ultérieure.
 - [Configurez le module Protection avancée contre les menaces (ATP) Windows Defender](https://docs.microsoft.com/fr-FR/windows/security/threat-protection/windows-defender-atp/get-started), qui analyse le contenu pour une étiquette et applique la protection des informations Windows correspondante. ATP effectue certaines actions indépendamment de la protection des informations Windows, par exemple, la création de rapports sur les anomalies.
-- Créez une stratégie de Protection des informations Windows (WIP) qui s’applique aux appareils de point de terminaison :
+- Créez une stratégie de Protection des informations Windows (WIP) qui s’applique aux appareils de point de terminaison. Vous pouvez effectuer cette opération à partir de l’un des emplacements suivants :
     - [Créer une stratégie de Protection des informations Windows (WIP) avec GPM à l’aide du portail Azure pour Microsoft Intune](https://docs.microsoft.com/fr-FR/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
     - [Créer et déployer une stratégie de Protection des informations Windows (WIP) à l’aide de System Center Configuration Manager](https://docs.microsoft.com/fr-FR/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
-
-## <a name="protect-content-in-third-party-apps-and-services-by-using-microsoft-cloud-app-security"></a>Protéger le contenu dans les services tiers et les applications tierces à l’aide de Microsoft Cloud App Security
-
-Protégez le contenu dans les services tiers et les applications tierces à l’aide de Cloud App Security (CAS). Avec CAS, vous pouvez détecter, classer, étiqueter et protéger le contenu dans des services tiers et des applications tierces, telles que SalesForce, Box ou Dropbox. Par exemple, Dropbox ne comprend peut-être pas une étiquette de niveau de confidentialité, mais CAS peut identifier et protéger le contenu étiqueté à cet emplacement. 
-
-Pour plus d’informations, reportez-vous à l’article [Appliquer automatiquement des étiquettes de classification Azure Information Protection](https://docs.microsoft.com/fr-FR/cloud-app-security/use-case-information-protection).
-
-### <a name="important-prerequisites"></a>Conditions préalables importantes
-
-Avant que vos étiquettes de niveau de confidentialité puissent utiliser CAS, vous devez d’abord remplir les conditions préalables décrites ici : [Appliquer automatiquement des étiquettes de classification Azure Information Protection](https://docs.microsoft.com/fr-FR/cloud-app-security/use-case-information-protection). Cette rubrique décrit les conditions préalables suivantes :
-
-- [Activez Cloud App Security et Azure Information Protection](https://docs.microsoft.com/fr-FR/cloud-app-security/azip-integration) pour votre client.
-- [Connectez l’application](https://docs.microsoft.com/fr-FR/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) à Cloud App Security.
 
 ## <a name="extend-sensitivity-labels-to-third-party-apps-and-services-by-using-the-microsoft-information-protection-sdk"></a>Étendre les étiquettes de niveau de confidentialité à des services tiers et applications tierces à l’aide du SDK Microsoft Information Protection
 

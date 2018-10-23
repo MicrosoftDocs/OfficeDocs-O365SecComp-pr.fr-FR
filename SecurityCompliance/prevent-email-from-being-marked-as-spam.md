@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
 description: Découvrez comment empêcher le courrier d’être déplacé dans le dossier Courrier indésirable et marqué comme courrier indésirable dans Office 365.
-ms.openlocfilehash: 05fb9858adb279d74368fc979db44cfd84b7f71e
-ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
+ms.openlocfilehash: f7ba560b4eb30abcda4c97617ead883659558bd8
+ms.sourcegitcommit: 6d72cdb882b93edf6dfddb5ff2e6d8a16e2fa0bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25002637"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25596717"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Empêcher le courrier d’être marqué comme courrier indésirable dans Office 365
 
