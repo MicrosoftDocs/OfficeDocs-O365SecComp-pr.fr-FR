@@ -11,8 +11,10 @@
 ## [Planifier la sécurité et la conformité dans Office 365](plan-for-security-and-compliance.md)
 # Protéger l’accès aux données et services
 ## [Pour protéger l’accès aux données et aux services dans Office 365](protect-access-to-data-and-services.md)
-## [Choisir entre GPM et Intune](choose-between-mdm-and-intune.md)
-# [Éviter les pertes de données (DLP)](data-loss-prevention-policies.md)
+## [Choisir entre MDM et Intune](choose-between-mdm-and-intune.md)
+# Protéger les informations
+## [Étiquettes de niveau de confidentialité](sensitivity-labels.md)
+## [Éviter les pertes de données (DLP)](data-loss-prevention-policies.md)
 ## [Visionner une présentation étendue de la DLP](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## Configurer le DLP
 ### [Prise en main des recommandations en matière de stratégie DLP](get-started-with-dlp-policy-recommendations.md)
@@ -46,12 +48,12 @@
 ### [Vue d’ensemble de l’archivage illimité](unlimited-archiving.md)
 ### [Activer l’archivage illimité](enable-unlimited-archiving.md)
 ### [Configurer une stratégie d’archivage et de suppression de boîtes aux lettres](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
-## Conserver des données
-### [Vue d’ensemble des stratégies de rétention](retention-policies.md)
-### [Vue d’ensemble des étiquettes](labels.md)
-### [Vue d’ensemble des révisions avant destruction](disposition-reviews.md)
-### [Vue d’ensemble des rétentions basées sur des événements](event-driven-retention.md)
-### [Vue d’ensemble du gestionnaire de plan de gestion de fichiers](file-plan-manager.md)
+## Conservation de données
+### [Stratégies de rétention](retention-policies.md)
+### [Étiquettes de rétention](labels.md)
+### [Révisions avant destruction](disposition-reviews.md)
+### [Rétentions basées sur des événements](event-driven-retention.md)
+### [Gestionnaire de plan de fichiers](file-plan-manager.md)
 ## [Gestion des boîtes aux lettres inactives](inactive-mailboxes-in-office-365.md)
 ### [Créer et gérer des boîtes aux lettres inactives](create-and-manage-inactive-mailboxes.md)
 ### [Modifier la durée de conservation pour une boîte aux lettres inactive](change-the-hold-duration-for-an-inactive-mailbox.md)
