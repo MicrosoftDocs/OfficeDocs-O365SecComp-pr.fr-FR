@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 87496bc5-9601-4473-8021-cb05c71369c1
 description: 'Un Conseil de stratégie est une notification ou avertissement qui s’affiche lorsqu’une personne fonctionne avec le contenu qui est en conflit avec une stratégie DLP. Vous pouvez utiliser les notifications par courrier électronique et les conseils de stratégie pour sensibiliser et aider à former les utilisateurs sur les stratégies de votre organisation. Vous pouvez également permettent d’être affichées aux personnes cette option pour remplacer la stratégie, afin qu’ils ne sont pas bloqués s’ils disposent d’une entreprise valide ou si la stratégie détecte un faux positif. '
-ms.openlocfilehash: a24afe6dd1203af4dc1f0f21468e828751bc5f3b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f95e392cc6cced6da29d34abfcab0fa0c3add069
+ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528710"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "25769913"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Envoyer des notifications par courrier électronique et afficher les conseils de stratégie pour les stratégies DLP
 
@@ -206,6 +206,25 @@ Si les conseils de stratégie sont configurés pour autoriser le remplacement, v
 ![Boîte de dialogue Stratégie Conseil où vous pouvez substituer le Conseil de stratégie](media/f97e836c-04bd-44b4-aec6-ed9526ea31f8.png)
   
 Notez que lorsque vous ajoutez des informations sensibles à un message électronique, il peut y avoir latence entre lors de l’ajout des informations sensibles et lorsque le Conseil de stratégie s’affiche.
+
+### <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions"></a>Outlook 2013 et versions ultérieures prend en charge affichant les conseils de stratégie pour uniquement certaines conditions
+
+Actuellement, Outlook 2013 et versions ultérieures prend en charge affichant les conseils de stratégie uniquement pour les conditions suivantes :
+
+- Contient le contenu
+- Le contenu est partagé
+
+Nous sommes actuellement en train de prise en charge pour l’affichage des conseils de stratégie pour des conditions supplémentaires. Cela inclut :
+
+- Contenu de pièce jointe électronique n’a pas pu être analysé.
+- Contenu de pièce jointe électronique n’a pas terminé l’analyse
+- Extension de fichier des pièces jointes
+- Pièce jointe est protégé par mot de passe
+- Propriété de document est
+- Domaine du destinataire est
+- Adresse IP de l’expéditeur est
+
+Notez que toutes les conditions suivantes fonctionnent dans Outlook, où ils correspondent au contenu et appliquer les mesures de protection du contenu. Mais affichant les conseils de stratégie aux utilisateurs n'est pas encore pris en charge.
   
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-office-365-security-amp-compliance-center"></a>Conseils de stratégie dans le centre d’administration Exchange et la sécurité de 365 Office &amp; centre de conformité
 
@@ -218,8 +237,7 @@ Notez que les notifications de messagerie pendant que les conseils de stratégie
 ### <a name="default-text-for-policy-tips-in-email"></a>Texte par défaut pour les conseils de stratégie dans le message électronique
 
 Par défaut, les conseils de stratégie affichent du texte semblable au suivant pour le courrier électronique.
-  
-| |
+
 |**Si la règle de stratégie DLP...**|**Le conseil de stratégie par défaut indique que...**|
 |:-----|:-----|
 |Envoie une notification, mais ne permet pas de substitution  <br/> |Votre courrier électronique en conflit avec une stratégie de votre organisation.  <br/> |
@@ -255,8 +273,7 @@ Dans chacun de ces programmes de bureau Office 2016, les utilisateurs peuvent c
 ### <a name="default-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Texte par défaut pour les conseils de stratégie dans Excel 2016, PowerPoint 2016 et Word 2016
 
 Par défaut, les conseils de stratégie affichent un texte semblable à ce qui suit sur la barre des messages et le mode Backstage d’un document ouvert. Le texte des notifications est configuré séparément pour chaque règle, afin que le texte qui s’affiche varie en fonction de la règle mise en correspondance.
-  
-| |
+
 |**Si la règle de stratégie DLP...**|**Le conseil de stratégie par défaut indique que...**|
 |:-----|:-----|
 |Envoie une notification, mais ne permet pas de substitution  <br/> |Ce fichier est en conflit avec une stratégie de votre organisation. Ouvrez le menu **fichier** pour plus d’informations.<br/> |
@@ -267,15 +284,15 @@ Par défaut, les conseils de stratégie affichent un texte semblable à ce qui s
 
 Vous pouvez personnaliser le texte de conseils de stratégie séparément à partir de la notification par courrier électronique. Contrairement à un texte personnalisé pour les notifications par courrier électronique (voir ci-dessus section), un texte personnalisé pour les conseils de stratégie n’accepte pas HTML ou les jetons. Au lieu de cela, le texte personnalisé pour des conseils de stratégie est en texte brut uniquement avec une limite de 256 caractères.
   
-## <a name="more-information"></a>Plus d'informations
+## <a name="more-information"></a>Plus d’informations
 
 - [Vue d’ensemble des stratégies de protection contre la perte de données](data-loss-prevention-policies.md)
     
-- [Création d'une stratégie DLP à partir d'un modèle](create-a-dlp-policy-from-a-template.md)
+- [Créer une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md)
     
-- [Création d’une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés](protect-documents-that-have-fci-or-other-properties.md)
+- [Créer une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés](protect-documents-that-have-fci-or-other-properties.md)
     
-- [Ce qu’incluent les modèles de stratégie DLP](what-the-dlp-policy-templates-include.md)
+- [Contenu des modèles de stratégie DLP](what-the-dlp-policy-templates-include.md)
     
 - [Éléments recherchés par les types d’informations sensibles](what-the-sensitive-information-types-look-for.md)
     
