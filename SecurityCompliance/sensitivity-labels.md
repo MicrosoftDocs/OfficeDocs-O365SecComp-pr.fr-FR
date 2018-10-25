@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Avec les étiquettes de niveau de confidentialité dans Office 365, vous pouvez classer et protéger le contenu sensible, tout en vous assurant que la productivité et la possibilité de collaboration des membres de votre organisation ne sont pas altérées. Vous pouvez utiliser les étiquettes de niveau de confidentialité afin d’appliquer des paramètres de protection, comme le chiffrement ou les filigranes, sur le contenu étiqueté.
-ms.openlocfilehash: 736975d10084cb6672ae21b1716cd92d0956c6c6
-ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
+ms.openlocfilehash: 9d3082d7bd5ce2b090c8e03605c2a8825a5acce3
+ms.sourcegitcommit: e9c3befa019463aedce681607fd23786786f76aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25577093"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "25678123"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Vue d’ensemble des étiquettes de niveau de confidentialité
 
@@ -71,7 +71,7 @@ Une fois qu’une étiquette de niveau de confidentialité est appliquée à un 
 
 - **Chiffrer** des e-mails uniquement, ou des e-mails et des documents. Vous pouvez déterminer quels utilisateurs ou groupes sont autorisés à effectuer telle ou telle action, et pendant combien de temps. Par exemple, vous pouvez choisir d’autoriser les utilisateurs dans un domaine spécifique en dehors de votre organisation à passer en revue le contenu pendant 7 jours uniquement une fois que le contenu est étiqueté.
 
-- **Marquer le contenu** en ajoutant des en-têtes, des pieds de page ou des filigranes personnalisés à des e-mails ou à des documents auxquels l’étiquette a été appliquée. (Notez que les filigranes sont appliqués uniquement aux documents, et non aux e-mails, et qu’ils sont limités à 255 caractères. Quant aux en-têtes et aux pieds de page, ils sont limités à 1 024 caractères, sauf dans Excel, où ils sont limités à 253 caractères.)
+- **Marquer le contenu** en ajoutant des en-têtes, des pieds de page ou des filigranes personnalisés à des e-mails ou à des documents auxquels l’étiquette a été appliquée. Notez que les filigranes sont appliqués uniquement aux documents, et non aux e-mails, et qu’ils sont limités à 255 caractères. Quant aux en-têtes et aux pieds de page, ils sont limités à 1 024 caractères (sauf dans Excel, où ils sont limités à 255 caractères, en fonction de la présence d’autres en-têtes ou pieds de page dans le document ainsi que d’autres facteurs).
 
     ![Filigrane et en-tête appliqués au document](media/Sensitivity_label_watermark_header.png)
 
@@ -92,7 +92,7 @@ Une seule étiquette de niveau de confidentialité peut être appliquée à un d
 
 ### <a name="sublabels-grouping-labels"></a>Sous-étiquettes (regroupement d’étiquettes)
 
-Avec les sous-étiquettes, vous pouvez regrouper plusieurs étiquettes sous un en-tête visible par l’utilisateur dans une application Office. Par exemple, sous Confidentiel, votre organisation peut utiliser différentes étiquettes pour des types spécifiques de cette classification. Dans cet exemple, l’étiquette Confidentiel étant simplement une étiquette de texte sans paramètre de protection, elle ne peut pas être appliquée au contenu. Dans ce cas, les utilisateurs doivent sélectionner Confidentiel pour afficher les sous-étiquettes, puis choisir une sous-étiquette à appliquer au contenu.
+Avec les sous-étiquettes, vous pouvez regrouper plusieurs étiquettes sous un en-tête visible par l’utilisateur dans une application Office. Par exemple, sous Confidentiel, votre organisation peut utiliser différentes étiquettes pour des types spécifiques de cette classification. Dans cet exemple, comme l’étiquette Confidentiel est simplement une étiquette de texte sans paramètre de protection et comme elle a des sous-étiquettes, elle ne peut pas être appliquée au contenu. Dans ce cas, les utilisateurs doivent sélectionner Confidentiel pour afficher les sous-étiquettes, puis choisir une sous-étiquette à appliquer au contenu.
 
 Les sous-étiquettes sont simplement un moyen de présenter les étiquettes aux utilisateurs par groupes logiques. Les sous-étiquettes n’héritent d’aucun paramètre de leur étiquette parent.
 
@@ -148,7 +148,7 @@ Dans les applications Office sur les appareils exécutant Windows, les étiquett
 
 La prise en charge native des étiquettes de niveau de confidentialité sera bientôt disponible dans les applications Office sur Windows.
 
-Si vous êtes un client Azure Information Protection existant, vous pouvez déployer le client d’étiquetage unifié Azure Information Protection, qui prend en charge les étiquettes de niveau de confidentialité et qui sera bientôt disponible. (Vérifiez fréquemment pour obtenir un lien vers des informations sur la façon de déployer le client). Nous travaillons actuellement sur la prise en charge native des étiquettes de niveau de confidentialité dans les applications Office sur Windows, afin que le client d’étiquetage unifié Azure Information Protection ne soit plus nécessaire.
+Si vous êtes un client Azure Information Protection existant, vous pouvez déployer le client d’étiquetage unifié Azure Information Protection, qui prend en charge les étiquettes de niveau de confidentialité. Pour plus d’informations sur le téléchargement du client, reportez-vous à [Client d’étiquetage unifié Azure Information Protection : historique des versions](https://docs.microsoft.com/fr-FR/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). Nous travaillons actuellement sur la prise en charge native des étiquettes de niveau de confidentialité dans les applications Office sur Windows, afin que le client d’étiquetage unifié Azure Information Protection ne soit plus nécessaire.
 
 ![Bouton Niveau de confidentialité sur le ruban dans Excel pour Windows](media/Sensitivity_label_Sensitivity_button.png)
 
