@@ -49,7 +49,7 @@ ms.locfileid: "22527693"
     
   -  Advanced eDiscovery peut servir à générer des fichiers de privilège des candidats. Configurez un autre sujet selon son privilège. Si possible, entraînez et sélectionnez les fichiers selon leur pertinence, puis entraînez les fichiers selon leur privilège parmi les fichiers sélectionnés uniquement (rechargez les fichiers sélectionnés dans un cas distinct). 
     
-  - Un traitement par lots peut être effectué seulement si aucun échantillon n’est ouvert (quand vous cliquez sur Traitement par lots, une liste d’utilisateurs contenant des échantillons ouverts s’affiche). Pour « fermer » les échantillons d’autres utilisateurs (seulement si ces utilisateurs ne sont pas en train d’étiqueter ces échantillons), un administrateur peut utiliser l’utilitaire « Modifier la pertinence » avec l’option « Tous les échantillons des utilisateurs ».
+  - Vous pouvez uniquement effectuer un traitement par lots si aucun échantillon n’est ouvert (quand vous cliquez sur Traitement par lots, une liste d’utilisateurs contenant des échantillons ouverts s’affiche). Un administrateur peut « fermer » les échantillons d’autres utilisateurs (seulement si ces utilisateurs ne sont pas en train d’étiqueter ces échantillons), en utilisant l’utilitaire « Modifier la pertinence » avec l’option « Tous les échantillons des utilisateurs ».
     
 - **Métadonnées** : Advanced eDiscovery se concentre sur le contenu. Il ne tient pas compte des métadonnées dans les critères de pertinence. 
     
