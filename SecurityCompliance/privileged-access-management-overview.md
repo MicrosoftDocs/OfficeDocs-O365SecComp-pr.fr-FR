@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilisez cette rubrique pour en savoir plus sur les privilèges accéder à la gestion dans Office 365
-ms.openlocfilehash: e92bbecd5957261c1eaf3088d872ae6572b7f235
-ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
+ms.openlocfilehash: 5056c19acb03b2486cc84fe085ffd6c2814007dc
+ms.sourcegitcommit: a07b91723bae9ecee2cb092bfbc5b208b30b11a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575338"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "25793549"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Privilèges d’accès gestion dans Office 365
 
@@ -80,7 +80,7 @@ Nous prévoyons de proposer cette fonctionnalité dans les autres charges de tra
 Nous comptons augmenter la limite actuelle de 30 stratégies d’accès privilégié par l’organisation Office 365 bientôt.
 
 ### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>Je dois être un administrateur Global pour gérer l’accès privilégié dans Office 365
-Vous devez disposer de privilèges d’administrateur Global pour être en mesure de gérer l’accès privilégié dans Office 365. Les utilisateurs qui sont inclus dans le groupe d’un approbateurs ne doivent être un administrateur Global pour examiner et approuver les demandes. 
+Non, vous devez disposer du rôle de gestion des rôles Exchange attribué à des comptes de gérer un accès privilégié dans Office 365. Toutefois, le rôle d’administrateur Global inclut ce rôle par défaut et peut être utilisé pour gérer un accès privilégié si vous ne souhaitez pas configurer le rôle de gestion de rôle comme une autorisation compte autonome. Les utilisateurs qui sont inclus dans le groupe d’un approbateurs n’avez pas besoin être un administrateur Global ou avoir le rôle de gestion des rôles affecté à examiner et approuver les demandes. 
 
 ### <a name="how-is-privileged-access-management-in-office-365-related-to-customer-lockbox"></a>Quelle est la gestion des accès privilégié dans Office 365 liés à la zone de sécurité client ?
 [Zone de sécurité client](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2) permet à un niveau de contrôle d’accès pour les organisations pour l’accès aux données par leur fournisseur de services, par exemple, Microsoft. Un accès privilégié gestion dans Office 365 permet de contrôle d’accès granulaire au sein d’une organisation pour toutes les tâches Office 365 privilégié.
