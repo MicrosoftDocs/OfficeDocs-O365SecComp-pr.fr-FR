@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 3019fbc5-7f15-4972-8d0e-dc182dc7f836
 description: Avec data loss prevention (DLP) dans SharePoint Online, vous pouvez découvrir des documents qui contiennent des données sensibles au sein de votre client. Après avoir découvert les documents, vous pouvez travailler avec les propriétaires de document pour protéger les données. Cette rubrique peut vous aider à créer une requête pour rechercher des données sensibles.
-ms.openlocfilehash: 13954a856dd265e3b735d940c7d334d922713637
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c30cb2e4b93e1a7db90f3e3f922f406285c6f692
+ms.sourcegitcommit: 81e06e09bf5ca8e3f51b164d6251b1c35b3285cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013858"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "25829185"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Créer une requête pour trouver des données sensibles stockées sur des sites
 
@@ -84,9 +84,7 @@ Toutes les requêtes sont égales. Le tableau suivant donne des exemples de requ
    
 ## <a name="for-more-information"></a>Pour plus d’informations
 
-[Rechercher des données sensibles stockées dans des sites SharePoint Online](https://support.office.com/article/ef788d8f-9748-4025-bfe4-40541ca4cfb2)
-  
-[Inventaire des types d'informations sensibles](https://go.microsoft.com/fwlink/?LinkID=509999)
+[Éléments recherchés par les types d’informations sensibles](what-the-sensitive-information-types-look-for.md)
   
 [Exécuter une recherche de contenu de la sécurité Office 365 &amp; centre de conformité](run-a-content-search-in-the-security-and-compliance-center.md)
   

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: Avec une stratégie de protection contre la perte données de sécurité Office 365 &amp; centre de conformité, vous pouvez identifier, analyser et protéger automatiquement les informations sensibles dans Office 365.
-ms.openlocfilehash: c33fe53797f86208e7cd033029949737a5c84d2f
-ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
+ms.openlocfilehash: b342686f38d734a0eff0df896204d7a2f4bfde6a
+ms.sourcegitcommit: 81e06e09bf5ca8e3f51b164d6251b1c35b3285cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25540420"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "25829195"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Vue d’ensemble des stratégies de protection contre la perte de données
 
@@ -312,7 +312,7 @@ Vous pouvez créer une étiquette, puis :
     
 - **Auto-appliquer** à du contenu qui correspond aux conditions que vous choisissez. 
     
-Pour en savoir plus sur les étiquettes, consultez l’article [Vue d’ensemble des étiquettes](labels.md).
+Pour plus d’informations sur les étiquettes, voir [vue d’ensemble des étiquettes de rétention](labels.md).
   
 Après avoir créé une étiquette, vous pouvez ensuite utiliser cette étiquette comme une condition dans vos stratégies DLP. Par exemple, vous pouvez souhaiter car :
   
@@ -327,12 +327,16 @@ Après avoir créé une étiquette, vous pouvez ensuite utiliser cette étiquett
 À l’aide des étiquettes comme une condition dans vos règles DLP, pourrez vous appliquer de façon sélective des actions de protection sur un ensemble spécifique de contenu, les emplacements ou les utilisateurs.
   
 ![Étiquettes comme une condition](media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+
+### <a name="support-for-sensitivity-labels-is-coming"></a>Prise en charge des étiquettes de sensibilité est bientôt
+
+Notez que vous pouvez utiliser actuellement une étiquette de rétention uniquement en tant qu’une condition, pas une [étiquette de sensibilité](sensitivity-labels.md). Nous sommes actuellement en train de prise en charge pour l’utilisation d’une étiquette de sensibilité dans cette condition.
   
 ### <a name="how-this-feature-relates-to-other-features"></a>Comment cette fonctionnalité est lié à d’autres fonctionnalités
 
 Plusieurs fonctionnalités peuvent être appliquées au contenu contenant des informations sensibles :
   
-- Une [étiquette de rétention](labels.md#applying-a-retention-label-automatically-based-on-conditions)[application d’une étiquette automatiquement en fonction de conditions] et une [stratégie de rétention](retention-policies.md) peuvent appliquer des actions de **rétention** sur ce contenu. 
+- Une [étiquette de rétention](labels.md#applying-a-retention-label-automatically-based-on-conditions) et une [stratégie de rétention](retention-policies.md) peuvent appliquer des actions de **rétention** sur ce contenu. 
     
 - Une stratégie DLP peut appliquer les actions de **protection** sur ce contenu. Et avant d’appliquer ces actions, une stratégie DLP peut requérir d’autres conditions à respecter en plus du contenu qui contient une étiquette. 
     
@@ -492,7 +496,7 @@ Toutefois, les rapports DLP doivent extraire des données dans Office 365, notam
     
   - [Get-DlpDetailReport](http://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
     
-## <a name="more-information"></a>Informations complémentaires
+## <a name="more-information"></a>Plus d’informations
 
 - [Créer une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md)
     
