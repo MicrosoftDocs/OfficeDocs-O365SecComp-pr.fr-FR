@@ -3,7 +3,7 @@ title: Chiffrement du courrier électronique dans Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/22/2018
+ms.date: 10/30/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c0d87cbe-6d65-4c03-88ad-5216ea5564e8
 description: Comparaison des options de chiffrement dans Office 365, notamment Office Message de chiffrement S/MIME, Information Rights Management (IRM) et en savoir plus sur la sécurité TLS (Transport Layer).
-ms.openlocfilehash: a705637b85e73c6d1e5bcb3595dcd0b7766411e2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c9c83283cab09ac81ab2856aec53fe8682ec45b8
+ms.sourcegitcommit: c05076501dfe118e575998ecfc08ad69d13c8abc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528189"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25853079"
 ---
 # <a name="email-encryption-in-office-365"></a>Chiffrement du courrier électronique dans Office 365
 
@@ -54,7 +54,7 @@ Regardez cette vidéo pour une présentation du [chiffrement dans Office 365](ht
   
 ## <a name="comparing-email-encryption-options-available-in-office-365"></a>Comparaison des options de chiffrement des messages électroniques disponibles dans Office 365
 
-||**        ![Illustration conceptuelle qui décrit OME](media/2bf27b5e-bbb3-46d1-95bf-884dc27a746c.png)                 **|**        ![Illustration conceptuelle qui décrit IRM](media/9c0cc444-9448-40c6-b244-8fcc593a64e0.png)                 **|**        ![Illustration conceptuelle qui décrit SMIME](media/ae4613a8-c17e-47e1-8e13-12e891e43744.png)                 **|
+||        ![Illustration conceptuelle qui décrit OME](media/2bf27b5e-bbb3-46d1-95bf-884dc27a746c.png)                 |        ![Illustration conceptuelle qui décrit IRM](media/9c0cc444-9448-40c6-b244-8fcc593a64e0.png)                 |        ![Illustration conceptuelle qui décrit SMIME](media/ae4613a8-c17e-47e1-8e13-12e891e43744.png)                |
 |:-----|:-----|:-----|:-----|
 |De quoi s’agit-il ?  <br/> |Le chiffrement des messages Office 365 (OME) est un service basé sur Azure Rights Management (Azure RMS) qui vous permet d’envoyer des messages chiffrés à des personnes internes ou externes à votre organisation, quelle que soit l’adresse de messagerie de destination (Gmail, Yahoo! Mail, Outlook.com, etc.).  <br/> En tant qu’administrateur, vous pouvez configurer des règles de transport qui définissent les conditions de chiffrement. Lorsqu’un utilisateur envoie un message qui correspond à une règle, le chiffrement est automatiquement appliqué.  <br/> Pour afficher les messages chiffrés, les destinataires peuvent obtenir un code secret unique, la connexion avec un compte Microsoft ou la connexion avec un travail ou école compte associé à Office 365. Destinataires peuvent également envoyer des réponses chiffrés. Un abonnement à Office 365 pour afficher des messages chiffrés ou envoyer des réponses chiffrées ne sont nécessaires.  <br/> |IRM est une solution de chiffrement qui applique également des restrictions d’utilisation aux messages électroniques. Cette solution permet d’empêcher que des informations sensibles ne soient imprimées, transmises ou copiées par des personnes non autorisées.  <br/> Les fonctionnalités IRM dans Office 365 utilisent Azure Rights Management (Azure RMS). 
   <br/> |S/MIME est une solution basée sur certificat de chiffrement qui permet de chiffrer et de signer numériquement un message. Le chiffrement du message permet de s’assurer que seul le destinataire peut ouvrir et lire le message. Une signature numérique permet au destinataire de valider l’identité de l’expéditeur.  <br/> Les signatures numériques et le chiffrement des messages sont possibles grâce à l’utilisation de certificats numériques uniques qui contiennent les clés pour la vérification des signatures numériques et le chiffrement ou le déchiffrement des messages.  <br/> Pour utiliser S/MIME, vous devez disposer des clés publiques sur le fichier pour chaque destinataire. Destinataires doivent gérer leurs propres clés privées, qui doivent rester sécurisés. Si les clés privées d’un destinataire sont compromises, le destinataire doit obtenir une nouvelle clé privée et à redistribuer les clés publiques à tous les expéditeurs potentiels.  <br/> |
@@ -88,7 +88,7 @@ Pour plus d’informations sur les options de chiffrement des messages électron
   
  **IRM**
   
-[Gestion des droits relatifs à l'information (IRM) dans Exchange Online](https://technet.microsoft.com/en-us/library/jj983436%28v=exchg.150%29.aspx)
+[Gestion des droits relatifs à l'information dans Exchange Online](https://technet.microsoft.com/en-us/library/jj983436%28v=exchg.150%29.aspx)
   
 [What ' s Azure Rights Management ?](https://technet.microsoft.com/library/jj585026)
   
