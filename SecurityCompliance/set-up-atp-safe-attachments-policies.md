@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Définir des stratégies de pièces jointes fiables pour protéger votre organisation à partir des fichiers malveillants dans le message électronique.
-ms.openlocfilehash: c57f9320c7cd2b8b75bc2dc58d1f72ce136acbb6
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 1fd831adf5166223ba5df159a131c71e3b467233
+ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454281"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25850838"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Définir des stratégies Office 365 DAV approuvés en pièce jointe
 
@@ -37,7 +37,7 @@ Personnes régulièrement envoient, recevoir et partager des pièces jointes, te
     
 - Assurez-vous que vous avez nécessaires [autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md).
     
-- [Découvrez les options de stratégie de pièces jointes sûres DAV](#learn-about-atp-safe-attachments-policy-options) (dans cet article). Certaines options, telles que les options de surveiller ou de remplacement, peuvent entraîner un délai d’attente secondaire des courriers électroniques tandis que les pièces jointes sont analysés. Pour éviter les retards de message, envisagez d’utiliser [une remise dynamique et l’aperçu](dynamic-delivery-and-previewing.md).
+- [Découvrez les options de stratégie de pièces jointes sûres DAV](#learn-about-atp-safe-attachments-policy-options) (dans cet article). Certaines options, telles que les options de surveiller ou de remplacement, peuvent entraîner un délai d’attente secondaire des courriers électroniques tandis que les pièces jointes sont analysés. Pour éviter les retards de message, envisagez d’utiliser [remise dynamique et l’aperçu](dynamic-delivery-and-previewing.md).
     
 - Autoriser jusqu'à 30 minutes pour votre stratégie de nouveau ou mis à jour pour se propager sur tous les centres de données Office 365.
     
@@ -65,7 +65,7 @@ Personnes régulièrement envoient, recevoir et partager des pièces jointes, te
     
       - Dans la section **Appliquée à** , choisissez **le domaine du destinataire est**, puis sélectionnez votre domaine. Cliquez sur **Ajouter**, puis cliquez sur **OK**.
     
-6. Sélectionnez **Enregistrer**.
+6. Sélectionnez **Save (Enregistrer)**.
     
 Pensez à configurer plusieurs stratégies de pièces jointes sûres DAV pour votre organisation. Ces stratégies seront appliquées dans l’ordre, qu'elles apparaissent dans la page **Pièces jointes sûres DAV** . Une fois une stratégie a été définie ou modifiée, permettre au moins 30 minutes pour les stratégies en vigueur au sein de centres de données Microsoft. 
   
@@ -82,7 +82,7 @@ Lorsque vous définissez vos stratégies de pièces jointes sûres DAV, vous cho
 |**Remise dynamique** <br/> |Remet les messages immédiatement  <br/> Remplace les pièces jointes avec un fichier d’espace réservé jusqu'à ce que l’analyse est terminée, puis rattache les pièces jointes si aucun programme malveillant n’est détecté  <br/> Inclut les pièces jointes afficher un aperçu des fonctionnalités pour la plupart des fichiers PDF et Office fichiers lors de l’analyse  <br/> Envoie des messages par un programme malveillant détecté à la mise en quarantaine où un administrateur ou un analyste peut consulter et version (ou supprimer) des messages  <br/> [En savoir plus sur la remise dynamique et aperçu des pièces jointes sûres DAV](dynamic-delivery-and-previewing.md) <br/> |Éviter les retards de message lors de la protection des destinataires à partir des fichiers malveillants  <br/> Activer l’aperçu des pièces jointes en mode sans échec pendant l’analyse des destinataires  <br/> |
 |**Activer la redirection** <br/> |S’applique lorsque vous choisissez l’option moniteur, bloquer ou remplacer  <br/> Envoie les pièces jointes à une adresse de messagerie spécifiée où les administrateurs de sécurité ou analystes peuvent étudier  <br/> |Permettre aux administrateurs de sécurité et les analystes à la recherche de pièces jointes suspectes  <br/> |
    
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Protection avancée contre les menaces dans Office 365](office-365-atp.md)
   

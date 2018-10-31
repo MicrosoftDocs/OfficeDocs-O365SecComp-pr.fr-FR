@@ -3,6 +3,7 @@ title: Remise dynamique et l’aperçu avec Office 365 DAV approuvés en pièce 
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 10/30/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -12,26 +13,30 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: Lorsque vous configurez vos stratégies de pièces jointes sûres DAV, vous choisissez remise dynamique afin d’éviter les retards de message et permettent aux utilisateurs d’afficher un aperçu des pièces jointes qui sont analysés.
-ms.openlocfilehash: 23ef316ed35b89ef1fad5e9639dd10e76036a4f3
-ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
+ms.openlocfilehash: b7b5f05170e6f27cbec9e0d5a121b2f71f16f41a
+ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965241"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25850818"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Remise dynamique et l’aperçu avec Office 365 DAV approuvés en pièce jointe
 
-Remise dynamique est une option qui peut être sélectionnée pour. Lisez cet article pour en savoir plus sur remise dynamique et les fonctionnalités d’aperçu de pièce jointe dans les [Pièces jointes fiables de DAV dans Office 365](atp-safe-attachments.md).
+**Résumé**: remise dynamique est une option qui peut être sélectionnée pour les [Pièces jointes fiables DAV](atp-safe-attachments.md). Lisez cet article pour en savoir plus sur remise dynamique et les fonctionnalités d’aperçu de pièce jointe dans les [Pièces jointes fiables de DAV dans Office 365](atp-safe-attachments.md).
   
-## <a name="how-dynamic-delivery-works"></a>Fonctionnement de la remise dynamique
+## <a name="how-dynamic-delivery-works"></a>Fonctionnement de distribution dynamique
 
-Lorsque vous [configurez des stratégies de pièces jointes sûres DAV dans Office 365](set-up-atp-safe-attachments-policies.md), vous pouvez choisir parmi plusieurs options, telles que le **bloc**, **Remplacer**et **Remise dynamique**. Selon la façon dont vos stratégies sont configurées, destinataires de courriers électroniques peuvent patienter quelques instants secondaire dans la remise du courrier électronique tandis que les pièces jointes sont analysés. Pour éviter les retards de message, choisissez **Remise dynamique**.
+Lorsque [les stratégies de pièces jointes sûres DAV sont configurés](set-up-atp-safe-attachments-policies.md) pour votre organisation, il existe plusieurs options pour la gestion des pièces jointes. Cela inclut les **Bloquer**, **Remplacer**et **Remise dynamique**. Selon la configuration des stratégies de pièces jointes sûres DAV, destinataires de courriers électroniques peuvent patienter quelques instants secondaire dans la remise du courrier électronique tandis que les pièces jointes sont analysés. Pour éviter les retards de message, choisissez **Remise dynamique**.
   
-L’option de distribution dynamique élimine les retards de courrier électronique en envoyant le corps d’un message électronique par le biais d’avec un espace réservé pour chaque pièce jointe. L’espace réservé reste jusqu'à ce que la pièce jointe est analysée par [Les pièces jointes fiables de DAV dans Office 365](atp-safe-attachments.md). Destinataires de courriers électroniques pouvant lire et répondre à leurs messages électroniques immédiatement, sachant que les pièces jointes sont en cours d’analyse.
-  
-La plupart des fichiers PDF et Office documents peuvent être affichés en mode sans échec pendant l’analyse DAV. Si une pièce jointe n’est pas compatible avec le Générateur d’aperçu dynamique de remise, destinataires de courriers électroniques voient l’espace réservé de pièce jointe jusqu'à ce que l’analyse des pièces jointes sûres DAV est terminée.
-  
-Comme chaque pièce jointe est désactivée, elle est automatiquement rattaché au message électronique d’origine. Si une pièce jointe est déterminée malveillants, il est envoyé à la mise en quarantaine, où une personne dans l’équipe de sécurité de votre organisation (comme un administrateur général Office 365 ou un administrateur de sécurité) peut [Gérer les messages mis en quarantaine dans Office 365](manage-quarantined-messages-and-files.md).
+Remise dynamique élimine les retards de courrier électronique en envoyant le corps d’un message électronique par le biais d’au destinataire avec un espace réservé pour chaque pièce jointe. L’espace réservé reste jusqu'à ce qu’une copie de la pièce jointe est analysée et déterminée sûrs par les [Pièces jointes sûres DAV](atp-safe-attachments.md). La plupart des fichiers PDF et Office documents peuvent être affichés en mode sans échec pendant l’analyse DAV. Si une pièce jointe n’est pas compatible avec le Générateur d’aperçu de distribution dynamique, destinataires de courriers électroniques voient un espace réservé de pièce jointe jusqu'à ce que l’analyse des pièces jointes sûres DAV est terminée.
+
+- Comme chaque pièce jointe est désactivée, il est disponible pour ouvrir ou télécharger. 
+
+- Si une pièce jointe est déterminée malveillants, il est envoyé à la mise en quarantaine, où une personne dans l’équipe de sécurité de votre organisation (comme un administrateur général Office 365 ou un administrateur de sécurité) peut [Gérer les messages mis en quarantaine dans Office 365](manage-quarantined-messages-and-files.md).
+
+Avec remise dynamique, les destinataires de courriers électroniques pouvant lire et répondre à leurs messages électroniques immédiatement, sachant que les pièces jointes sont en cours d’analyse. 
+
+Pièces jointes sûres DAV analyse prend place dans la même zone où résident vos données d’Office 365. Pour plus d’informations sur la zone géographique de centre de données, voir [où se trouvent vos données situées ?](https://products.office.com/where-is-your-data-located?geo=All) 
   
 ## <a name="what-happens-when-someone-forwards-an-email-that-contains-an-attachment"></a>Que se passe-t-il lorsqu’une personne envoie un message électronique qui contient une pièce jointe ?
 
@@ -67,9 +72,9 @@ Il existe certains scénarios dans lesquels remise dynamique n’est pas pris en
 
 - Messages chiffrés avec Secure/Multipurpose Internet Mail Extensions ([S/MIME](s-mime-for-message-signing-and-encryption.md))
     
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
-[Office 365 - Protection avancée contre les menaces](office-365-atp.md)
+[Protection avancée contre les menaces dans Office 365](office-365-atp.md)
   
 [Pièces jointes DAV Safe dans Office 365](atp-safe-attachments.md)
   
