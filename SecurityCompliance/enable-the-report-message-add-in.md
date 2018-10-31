@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 description: Découvrez comment activer le complément de Message de rapport pour Outlook et Outlook sur le web, pour des utilisateurs individuels ou la totalité de votre organisation.
-ms.openlocfilehash: ad07d594a78b8134984b48f08898ad1ba697e03a
-ms.sourcegitcommit: 49b565f6a57febe53f331b2605d6a06d11e2d0be
+ms.openlocfilehash: 8c9853c78a42d6eecd0989475ef8f0a44345f812
+ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "25638008"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25857262"
 ---
 # <a name="enable-the-report-message-add-in"></a>Activer le complément Signaler le message
 
@@ -41,7 +41,7 @@ Si vous êtes un administrateur Exchange Online, vous pouvez [Activer le complé
     
 ## <a name="get-the-report-message-add-in-for-yourself"></a>Obtenez le Message de rapport de complément pour vous-même
 
-1. Dans le [magasin d’Office](https://appsource.microsoft.com/product/office/WA104381180?src=office), obtenir le Message de rapport complément.
+1. Dans [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps), recherchez le [complément de Message de rapport](https://appsource.microsoft.com/product/office/wa104381180).
     
 2. Choisissez **obtenir maintenant IT**.<br/>![Déclaration de Message - maintenant](media/ReportMessageGETITNOW.png)<br/> 
     

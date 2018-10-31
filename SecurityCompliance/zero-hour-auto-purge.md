@@ -1,5 +1,5 @@
 ---
-title: Vider les heures zéro automatique - une protection contre le courrier indésirable et les programmes malveillants
+title: Purge automatique zéro heure - protection contre le courrier indésirable et les programmes malveillants
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 description: Purge automatique zéro heures (ZAP) est une fonctionnalité de protection de messagerie qui détecte les messages qui ont déjà été remis aux boîtes aux lettres des utilisateurs avec le courrier indésirable ou un programme malveillant, puis affiche le contenu malveillant sans conséquence. Comment ZAP cela dépend du type de contenu malveillant détecté.
-ms.openlocfilehash: dc8901dc7c1db5b323ccbeee610647b8a302fcb3
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: dabe4caf8916d3f0de7a70cb3d056dd9a7fdcc3f
+ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527706"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25857242"
 ---
-# <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Vider les heures zéro automatique - une protection contre le courrier indésirable et les programmes malveillants
+# <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Purge automatique zéro heure - protection contre le courrier indésirable et les programmes malveillants
 
 Purge automatique zéro heures (ZAP) est une fonctionnalité de protection de messagerie qui détecte les messages qui ont déjà été remis aux boîtes aux lettres des utilisateurs avec le courrier indésirable ou un programme malveillant, puis affiche le contenu malveillant sans conséquence. Comment ZAP cela dépend du type de contenu malveillant détecté.
   
@@ -74,7 +74,7 @@ Administrateurs peuvent également [désactiver ZAP](zero-hour-auto-purge.md#BK_
     
     Si vous choisissez **Enregistrer** à ce stade, la stratégie s’applique à votre organisation cliente Office 365. 
     
-    ![Définir les actions en bloc et de courrier indésirable à Mpve message vers le dossier courrier indésirable](media/4332cfb3-89e1-48ba-8da8-9286f2fa1089.PNG)
+    ![Définir les actions en bloc et de courrier indésirable pour déplacer le message vers le dossier courrier indésirable](media/4332cfb3-89e1-48ba-8da8-9286f2fa1089.PNG)
   
 4. Si vous avez créé une nouvelle stratégie et que vous voulez appliquer la stratégie à un ensemble d’utilisateurs, faites défiler jusqu'à la section **Appliquée à** la fenêtre de filtre de stratégie et dans les contrôles de menu Choisir les **destinataires**, **domaine**ou les **appartenances aux groupes** , vous vous souhaitez appliquer la stratégie. Vous pouvez également définir des exceptions et conditions supplémentaires. 
     
