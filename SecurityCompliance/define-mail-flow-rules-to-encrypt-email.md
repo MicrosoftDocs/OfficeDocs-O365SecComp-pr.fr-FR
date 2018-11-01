@@ -3,7 +3,7 @@ title: Définir des règles de flux de messagerie pour chiffrer les messages él
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/30/2018
+ms.date: 10/31/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: En tant qu’administrateur global Office 365, vous pouvez créer des règles de flux pour activer Office 365 Message de chiffrement de messagerie. Vous pouvez chiffrer tous les messages électroniques sortants et supprimer le chiffrement des messages internes ou à partir des réponses aux messages chiffrés envoyés depuis votre organisation.
-ms.openlocfilehash: e9c6874ce304d1af9da093c02cbc954c54dae8cc
-ms.sourcegitcommit: c05076501dfe118e575998ecfc08ad69d13c8abc
+ms.openlocfilehash: bd94d36543653d5767fe27aee0f859fe9e374b2f
+ms.sourcegitcommit: c0f5c92664b3fbed7b3c2f8232bb4046fc19d1b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25853089"
+ms.locfileid: "25890032"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Définir des règles de flux de messagerie pour chiffrer les messages électroniques dans Office 365
 
@@ -29,7 +29,7 @@ Si vous avez récemment migré à partir d’AD RMS pour la Protection des infor
 Pour plus d’informations sur les composants qui constituent des règles de flux de messagerie et de la façon dont des règles de flux de messagerie, consultez la rubrique [règles de flux (règles de transport) de messagerie dans Exchange Online](https://technet.microsoft.com/library/jj919238%28v=exchg.150%29.aspx). Pour plus d’informations sur le fonctionnement des règles de flux de messagerie avec Azure la Protection des informations, voir [configuration d’Exchange Online règles de flux de messagerie pour les étiquettes de Protection des informations Azure](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-exo-rules).
   
 ## <a name="hybrid-exchange-environments-do-this-first"></a>Les environnements Exchange hybride : préalable
-Les utilisateurs peuvent envoyer des messages chiffrés à l’aide de OME si vous routez le courrier électronique via Exchange Online sur site. Pour ce faire, vous devez configurer la messagerie flux au flux de votre serveur de messagerie vers Office 365. Une fois que vous avez configuré la messagerie pour transmettre via Office 365, vous pouvez émettre des règles de flux de messagerie pour OME à l’aide de cet article.
+Les utilisateurs peuvent envoyer des messages chiffrés à l’aide de OME si vous routez le courrier électronique via Exchange Online sur site. Pour ce faire, vous devez configurer la messagerie pour transmettre à partir de votre serveur de messagerie vers Office 365. Une fois que vous avez configurée via Office 365, du courrier, vous pouvez rendre des règles de flux de messagerie pour OME à l’aide de cet article.
 
 Pour plus d’informations, voir [configurer les connecteurs pour router les messages entre Office 365 et vos propres serveurs de messagerie](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail). En particulier, effectuez les étapes dans « partie 2 : configurer la messagerie pour transmettre à partir de votre serveur de messagerie vers Office 365 ».
 
