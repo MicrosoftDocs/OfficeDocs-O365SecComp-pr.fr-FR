@@ -14,6 +14,7 @@
 ## [Choisir entre MDM et Intune](choose-between-mdm-and-intune.md)
 # Protéger les informations
 ## [Étiquettes de niveau de confidentialité](sensitivity-labels.md)
+## [Restreindre l’accès au contenu à l’aide du chiffrement dans les étiquettes de niveau de confidentialité](encryption-sensitivity-labels.md)
 ## [Éviter les pertes de données (DLP)](data-loss-prevention-policies.md)
 ## [Visionner une présentation étendue de la DLP](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## Configurer le DLP
@@ -148,8 +149,8 @@
 # [Rechercher du contenu](search-for-content.md)
 ## [Utiliser la recherche de contenu](content-search.md)
 ### [Requêtes par mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md)
-### [Afficher les statistiques de mots clés pour les résultats de recherche de contenu](view-keyword-statistics-for-content-search.md)
-### [Exporter les résultats de la recherche de contenu](export-search-results.md)
+### [Afficher les statistiques de mot clé pour les résultats de recherche de contenu](view-keyword-statistics-for-content-search.md)
+### [Exporter les résultats de la recherche de contenu ](export-search-results.md)
 ### [Exporter un rapport de recherche de contenu](export-a-content-search-report.md)
 ### [Rechercher et supprimer des messages électroniques](search-for-and-delete-messagesadmin-help.md)
 ### [Rechercher les boîtes aux lettres sur le cloud des utilisateurs locaux dans Office 365](search-cloud-based-mailboxes-for-on-premises-users.md)
@@ -258,6 +259,7 @@
 ### [Déploiement d’un site d’équipe SharePoint Online isolé](deploy-an-isolated-sharepoint-online-team-site.md)
 ### [Gestion d’un site d’équipe SharePoint Online isolé](manage-an-isolated-sharepoint-online-team-site.md)
 ### [Site d’équipe SharePoint Online isolé dans votre environnement de développement/test](isolated-sharepoint-online-team-site-dev-test-environment.md)
+## [Intégration de serveur SIEM](siem-server-integration.md)
 
 # Solutions de conformité
 ## [Utiliser le Gestionnaire de conformité pour répondre aux exigences de protection des données et les exigences réglementaires lors de l’utilisation des services de cloud computing Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
@@ -321,7 +323,7 @@
 ### [Contrôles de technologie Office 365](office-365-technology-controls.md)
 ### [Contrôles d’accès Yammer Entreprise](office-365-yammer-enterprise-access-controls.md)
 ## [Protection contre les attaques par déni de service dans Office 365](office-365-defending-against-denial-of-service-attacks-overview.md)
-### [Stratégie de défense par déni de service de Microsoft](office-365-microsoft-dos-defense-strategy.md)
+### [Stratégie de défense de Microsoft contre les attaques par déni de service ](office-365-microsoft-dos-defense-strategy.md)
 ### [Principes fondamentaux de défense contre les attaques par déni de service](office-365-core-principles-of-defense-against-dos-attacks.md)
 ## [Audit et création de rapports dans Office 365](office-365-auditing-and-reporting-overview.md)
 ### [Fonctionnalités de création de rapports Office 365](office-365-reporting-features.md)
