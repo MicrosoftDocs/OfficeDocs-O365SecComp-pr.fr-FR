@@ -3,7 +3,7 @@ title: Suppression d’un utilisateur, d’un domaine ou d’une adresse IP d’
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/16/2018
+ms.date: 11/01/2018
 ms.audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 description: 'Si un utilisateur envoie en continu des messages électroniques classés comme courriers indésirables depuis Office 365, ses envois seront bloqués. '
-ms.openlocfilehash: 295d92fc6a1cd26783b18304a2d119d2ea0d7f1f
-ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
+ms.openlocfilehash: 0f58f9f2270c8be38b3ea2ea81f04656eb10e7fb
+ms.sourcegitcommit: 83406a3258e722020e46a82bbf4bc9d5d8a326ca
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25577063"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25899655"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>Suppression d’un utilisateur, d’un domaine ou d’une adresse IP d’une liste rouge après l’envoi de courrier indésirable
 
@@ -44,7 +44,7 @@ Vous effectuez cette tâche dans la sécurité pour Microsoft Office 365 & centr
 3. Cliquez sur **Oui** pour confirmer la modification. 
     
 > [!NOTE]
-> Il existe une limite au nombre de fois qu’un compte peut être non bloquée par l’administrateur du client. Si la limite d’un utilisateur a été dépassée, un message d’erreur s’affiche. Vous devrez contacter le Support pour débloquer l’utilisateur.
+> Il existe une limite au nombre de fois qu’un compte peut être non bloquée par l’administrateur du client. Si la limite d’un utilisateur a été dépassée, un message d’erreur s’affiche. Vous devrez contacter le Support pour débloquer l’utilisateur.</br></br> Il peut prendre jusqu'à 1 heure avant que l’utilisateur soit débloquer.
   
 ## <a name="third-party-block-lists"></a>Listes rouges tierces
 
