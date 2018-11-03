@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Utilisez le Office 365 Security &amp; centre de conformité pour la recherche dans le journal d’audit unifiée pour afficher l’activité utilisateur et l’administrateur de votre organisation Office 365. '
-ms.openlocfilehash: 5e0d19841c0e512173e8c42d37c0ec13867299af
-ms.sourcegitcommit: e14dec9bed0c0009acbc1f1cb80b4d0794ad5739
+ms.openlocfilehash: f44fa0a32a70a4b8d96b7bb7b9d9386f9efb74b6
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "25435121"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935591"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Effectuer des recherches dans le journal d’audit dans le Centre de sécurité et de conformité Office 365
 
@@ -78,7 +78,7 @@ Veillez à lire le journal d’audit des éléments suivants avant de commencer 
      - **Office 365 E5** - d’Audit de la rétention des enregistrements pour 365 jours (un an). Cela signifie que vous pouvez rechercher le journal d’audit pour les activités qui ont été effectuées dans l’année dernière. Conservation des enregistrements d’audit de l’année est également disponible pour les utilisateurs qui sont affectés à une licence E3/Exchange Online Plan 1 et qui ont une licence Office 365 avancée conformité.
 
         > [!NOTE]
-        > La période de rétention d’un an pour les enregistrements d’audit sera disponibles prochainement dans le cadre d’Office 365 Preview program et est disponible uniquement pour les organisations inscrits au programme Aperçu. Lors de la plus longue période de rétention pour les enregistrements d’audit devient disponible en mode Aperçu (et ultérieurement pour une disponibilité générale), seuls les nouveaux enregistrements d’audit (pour les activités effectuées après la publication de la période de rétention plue) seront conservés pour une année.
+        > La période de rétention d’an pour les enregistrements d’audit pour les organisations de E5 (ou E3 aux organisations qui ont des licences de module complémentaire de conformité avancées) est actuellement disponible uniquement dans le cadre d’un programme d’aperçu privé. Pour vous inscrire dans ce programme Aperçu, une demande de [Support technique Microsoft](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products?redirectSourcePath=%252fen-us%252farticle%252fcontact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online) de fichiers et inclure les éléments suivants en tant que la description de ce que vous avez besoin d’aide : « À long terme Office 365 d’audit journal privé preview ».
 
 - Si vous souhaitez désactiver la recherche du journal d’audit dans Office 365 pour votre organisation, vous pouvez exécuter la commande suivante dans PowerShell distant connecté à votre organisation Exchange Online :
     
@@ -147,7 +147,7 @@ Voici le processus de recherche dans le journal d’audit dans Office 365.
     > [!TIP]
     > Utiliser une session de navigation privée (pas une session standard) pour accéder à la sécurité du Office 365 &amp; , car cela empêche les informations d’identification que vous êtes actuellement connecté avec utilisation du centre de conformité. Pour ouvrir une session de navigation InPrivate dans Internet Explorer ou Microsoft Edge, appuyez sur CTRL + MAJ + P. Pour ouvrir une session de navigation privée dans Google Chrome (appelé une fenêtre incognito), appuyez sur CTRL + MAJ + N. 
   
-2. Connectez-vous à Office 365 à l’aide de votre compte professionnel ou de l’école.
+2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
 3. Dans le volet gauche de la sécurité &amp; centre de conformité, cliquez sur **recherche &amp; enquête**, puis cliquez sur **Rechercher des journaux d’Audit**.
     
@@ -485,7 +485,7 @@ Le tableau suivant répertorie les activités de l’administration utilisateur 
 |Ajout d’utilisateur  <br/> |Ajouter un utilisateur  <br/> |Un compte d’utilisateur Office 365 a été créé.  <br/> |
 |Licence utilisateur modifié  <br/> |Licence utilisateur de modification  <br/> |La licence est attribuée à un utilisateur, ce qui a changé. Pour voir quelles licences ont été modifications, voir l’activité de **mise à jour utilisateur** correspondante.<br/> |
 |Mot de passe utilisateur modifié  <br/> |Modification mot de passe utilisateur  <br/> |Administrateur a modifié le mot de passe le mot de passe pour un utilisateur.  <br/> |
-|Utilisateur supprimé  <br/> |Supprimer l’utilisateur  <br/> |Un compte d’utilisateur Office 365 a été supprimé.  <br/> |
+|Utilisateur supprimé  <br/> |Delete user  <br/> |Un compte d’utilisateur Office 365 a été supprimé.  <br/> |
 |Réinitialiser le mot de passe utilisateur  <br/> |Réinitialiser le mot de passe utilisateur  <br/> |Administrateur de réinitialiser le mot de passe pour un utilisateur.  <br/> |
 |Définir la propriété qui oblige l’utilisateur à modifier le mot de passe  <br/> |Jeu de force modification utilisateur mot de passe  <br/> |Administrateur de définie la propriété qui oblige un utilisateur à modifier leur mot de passe la prochaine fois que la connexion utilisateur vers Office 365.  <br/> |
 |Définition des propriétés de licence  <br/> |Définition des propriétés de licence  <br/> |Administrateur modifie les propriétés d’une licence attribuée à un utilisateur.  <br/> |
@@ -700,7 +700,7 @@ Comme expliqué précédemment, la période de rétention pour les enregistremen
 - **Office 365 E5** - d’Audit de la rétention des enregistrements pour 365 jours (un an). Conservation des enregistrements d’audit de l’année est également disponible pour les organisations qui ont un abonnement E3 et un abonnement à Office 365 avancée conformité module complémentaire.
 
      > [!NOTE]
-     > La période de rétention an audit enregistrements sera bientôt disponibles pour les organisations qui sont inscrits au programme Office 365 Preview.
+     > Expliqué précédemment, la période de rétention d’an pour les enregistrements d’audit pour les organisations de E5 (ou E3 aux organisations qui ont des licences de module complémentaire de conformité avancées) est actuellement disponible uniquement dans le cadre d’un programme d’aperçu privé. Pour vous inscrire dans ce programme Aperçu, une demande de [Support technique Microsoft](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products?redirectSourcePath=%252fen-us%252farticle%252fcontact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online) de fichiers et inclure les éléments suivants en tant que la description de ce que vous avez besoin d’aide : « À long terme Office 365 d’audit journal privé preview ».
 
 Notez également que la durée de la période de rétention pour les enregistrements d’audit est basée sur la gestion des licences utilisateur. Par exemple, si un utilisateur de votre organisation est attribué une licence Office 365 E3, les enregistrements d’audit pour les opérations effectuées par l’utilisateur sont conservées pendant 90 jours. Si un autre utilisateur est attribué une licence Office 365 E5, les enregistrements d’audit sont conservés pendant un an. 
 

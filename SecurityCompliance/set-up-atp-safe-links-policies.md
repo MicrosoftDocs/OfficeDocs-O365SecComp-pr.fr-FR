@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
+ms.date: 11/02/2018
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Définir des stratégies de liens fiables pour protéger votre organisation contre les liens malveillants dans les fichiers Word, Excel, PowerPoint et Visio, ainsi que dans les messages électroniques.
-ms.openlocfilehash: 6c4e208e9f944d9c38d43b5669167e0cf425ec39
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: 823dc6073dfa6302f19154a86bafa7f19d5affdc
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552342"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935551"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Définir des stratégies Office 365 DAV fiables liens
 
@@ -40,11 +41,11 @@ ms.locfileid: "25552342"
 - Assurez-vous que votre organisation dispose [d’Office 365 avancée protection contre les menaces](office-365-atp.md).
     
 - Assurez-vous que vous disposez des autorisations nécessaires pour définir ou modifier les stratégies DAV. Voir [les autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md).
+
+- Assurez-vous que les clients Office sont configurés pour utiliser l' [Authentification moderne](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) (il s’agit de protection DAV fiables liens dans les documents Office).
     
 - [Découvrez les options de stratégie de liens fiables DAV](#learn-about-atp-safe-links-policy-options) (dans cet article). 
 
-- Assurez-vous que les clients Office sont configurés pour utiliser [L’authentification moderne](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).
-    
 - Autoriser jusqu'à 30 minutes pour votre stratégie de nouveau ou mis à jour pour se propager sur tous les centres de données Office 365.
     
 ## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>Étape 2 : Définir (ou passez en revue) la stratégie de liens fiables DAV qui s’applique à tout le monde

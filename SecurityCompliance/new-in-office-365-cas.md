@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: reference
+ms.date: 10/31/2018
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: d674763c-a4c9-4604-8623-68c1836d27f3
 description: Nouveautés dans Office 365 Cloud Application Security
-ms.openlocfilehash: a8bca8cb62681491fb5a6964104b1aa1c626784d
-ms.sourcegitcommit: 31e0d94244c76a9f5118efee8bbc93395d080f91
+ms.openlocfilehash: f661d0d541e84db89b7abd99fd77ef9a767a4cd0
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "23796870"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935571"
 ---
 # <a name="what-is-new-in-office-365-cloud-app-security"></a>Nouveautés de la sécurité d’application Office 365 dans le nuage
 
@@ -27,11 +28,11 @@ Cet article est mis à jour fréquemment, comme les fonctionnalités sont ajout�
   
 ## <a name="office-365-cloud-app-security-release-130"></a>Version de sécurité des applications dans le nuage Office 365 130
 
-*Versions du 5 septembre 2018*
+*Publié le 5 septembre 2018*
 
 **Libération avec [Microsoft Cloud Application Security version 130](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-130)**:
 
-- **Nouvelle barre de menus** Pour fournir une expérience d’administration plus cohérente entre les produits Microsoft 365 et vous permettent de tableau croisé dynamique plus facilement entre les solutions de sécurité Microsoft, la barre de menus de portail de sécurité d’application Cloud a déplacé vers le côté gauche de l’écran. Cette navigation cohérente expérience vous aide à orienter lors du déplacement d’un portail de sécurité de Microsoft à l’autre.
+- **Nouvelle barre de menus** Pour fournir une expérience d’administration plus cohérente entre les produits Microsoft 365 et vous permettent de tableau croisé dynamique plus facilement entre les solutions de sécurité Microsoft, la barre de menus de portail de sécurité d’application Cloud a déplacé vers le côté gauche de l’écran. Cette navigation cohérente expérience vous aide à orienter lors du déplacement d’un portail de sécurité de Microsoft à l’autre.<br/>![Barre de menus dans la sécurité d’application Office sur le nuage](media/OCAS-MenuBar.png)<br/>
 
 - **Profil d’application impact OAuth** Vous pouvez maintenant envoyer les commentaires de l’équipe sécurité d’application Cloud pour nous indiquer s’il existe une application OAuth découverte dans votre organisation qui semble malveillante. Cette nouvelle fonctionnalité vous permet de faire partie de la Communauté de la sécurité et améliorer l’analyse et le score de risque d’application OAuth. Pour plus d’informations, voir [Gérer les autorisations d’application](manage-app-permissions-in-ocas.md).
 
@@ -220,11 +221,11 @@ Cet article est mis à jour fréquemment, comme les fonctionnalités sont ajout�
     
 - **Formats de fichiers journaux attendue**. Le format attendu journal pour les journaux de découverte dans le nuage maintenant fournit des exemples pour les formats de journal système et FTP. 
     
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Contenu de l’aide sur le nuage application sécurité Office 365](office-365-cas-help.md)
   
-[Activités de l’utilisation après le déploiement d’Office 365 Cloud Application Security](utilization-activities-for-ocas.md)
+[Activités d’utilisation après avoir déployé la sécurité des applications cloud Office 365](utilization-activities-for-ocas.md)
   
 [Autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md)
   
