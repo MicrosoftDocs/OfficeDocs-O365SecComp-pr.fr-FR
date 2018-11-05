@@ -17,28 +17,28 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Découvrez comment modifier ou créer des types d’informations sensibles Office 365 pour le RGPD.
-ms.openlocfilehash: e0e217ed44c5206828468b57d778bffa28c95da3
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: ed1dca161b5580d67b5a9071ca1d5b32e8b23d80
+ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272259"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25857282"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Personnalisation ou création d’un type d’informations sensibles
 
 Cet article fournit trois exemples qui décrivent comment modifier ou créer de nouveaux types d’informations sensibles Office 365 pour le RGPD.
 
--   Modification d’un type d’informations sensibles existant : Numéro de carte de crédit de l'U.E.
+- Modification d’un type d’informations sensibles existant : Numéro de carte de crédit de l'U.E.
 
--   Création d’un type d’informations sensibles : adresse e-mail
+- Création d’un type d’informations sensibles : adresse e-mail
 
--   Création d’un type d’informations sensibles avec un exemple de fichier XML : numéro de client Contoso
+- Création d’un type d’informations sensibles avec un exemple de fichier XML : numéro de client Contoso
 
 Voir également :
 
--   [Créer un type d’informations sensibles personnalisé](https://support.office.com/fr-FR/article/Create-a-custom-sensitive-information-type-82c382a5-b6db-44fd-995d-b333b3c7fc30)
+- [Créer un type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité Office 365 PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 
--   Rubrique relative à la [personnalisation d’un type d’informations sensibles intégré](https://support.office.com/fr-FR/article/Customize-a-built-in-sensitive-information-type-2164ce3d-4d64-4283-b6b1-b81fbe835e8e)
+- [Personnaliser un type d’informations sensibles intégré](customize-a-built-in-sensitive-information-type.md)
 
 ## <a name="modify-a-sensitive-information-type-to-improve-accuracy"></a>Modification d’un type d’informations sensibles pour améliorer la précision
 
@@ -142,7 +142,7 @@ Utilisez ces ressources pour formuler et optimiser des requêtes à l’aide de 
 
 -   [Référence de syntaxe de langage de requête de mot-clé (KQL) (DMC)](https://docs.microsoft.com/fr-FR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
--   [Exécuter une recherche de contenu dans le Centre de sécurité et de conformité Office 365](https://support.office.com/fr-FR/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
+-   [Exécuter une recherche de contenu dans le Centre de sécurité et de conformité Office 365](https://support.office.com/fr-FR/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
 
 La recherche de contenu fournit une autre ressource pour vous aider à développer des requêtes KQL appropriées et des types d’informations sensibles : les mots-clés. Pourquoi utiliser la liste de mots-clés ? Vous pouvez obtenir des statistiques indiquant le nombre d’éléments qui correspondent à chaque mot-clé. Cela peut vous aider à identifier rapidement les mots-clés les plus (et les moins) efficaces. Pour plus d’informations sur les statistiques de recherche, reportez-vous à la rubrique relative à l’[affichage des statistiques de mots-clés pour les résultats de la recherche de contenu](https://support.office.com/fr-FR/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
 
