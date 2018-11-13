@@ -1,5 +1,5 @@
 ---
-title: Création et publication en bloc d’étiquettes à l’aide de PowerShell
+title: Création et publication en bloc d’étiquettes de rétention à l’aide de PowerShell
 ms.author: stephow
 author: stephow-msft
 ms.date: 1/17/2018
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 8986701b-ffa1-46ec-8fd0-8f7e81d5b25f
 description: Dans Office 365, vous pouvez utiliser des étiquettes pour implémenter une planification de rétention pour votre organisation. En tant que gestionnaire des enregistrements ou responsable de la mise en conformité, vous avez peut-être des centaines d’étiquettes à créer et à publier. Vous pouvez le faire via l’interface utilisateur dans le Centre de sécurité et conformité, mais créer des étiquettes une à une est chronophage et inefficace. En utilisant le script et les fichiers .csv fournis ci-dessous, vous pouvez créer et publier en bloc des étiquettes et des stratégies d’étiquette. Tout d’abord, créez une liste des étiquettes et une liste des stratégies d’étiquette dans Excel, puis créez les étiquettes et les stratégies d’étiquette en bloc dans ces listes à l’aide de PowerShell. Cette méthode vous permet de créer et de publier en une fois toutes les étiquettes nécessaires pour votre planification de rétention.
-ms.openlocfilehash: 43e521d937a9589b522c608aca2e75fcfc2bf569
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 1cf597cf9453a2b9899141d708896b9782dc6047
+ms.sourcegitcommit: 83406a3258e722020e46a82bbf4bc9d5d8a326ca
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527601"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25899665"
 ---
-# <a name="bulk-create-and-publish-labels-by-using-powershell"></a>Création et publication en bloc d’étiquettes à l’aide de PowerShell
+# <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Création et publication en bloc d’étiquettes de rétention à l’aide de PowerShell
 
 Dans Office 365, vous pouvez utiliser des étiquettes pour implémenter une planification de rétention pour votre organisation. En tant que gestionnaire des enregistrements ou responsable de la mise en conformité, vous avez peut-être des centaines d’étiquettes à créer et à publier. Vous pouvez le faire via l’interface utilisateur dans le Centre de sécurité &amp; conformité, mais créer des étiquettes une à une est chronophage et inefficace.
   
