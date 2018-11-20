@@ -20,8 +20,9 @@
 ## Configurer le DLP
 ### [Prise en main des recommandations en matière de stratégie DLP](get-started-with-dlp-policy-recommendations.md)
 ### [Prise en main de la stratégie DLP par défaut](get-started-with-the-default-dlp-policy.md)
-### [Créer une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md)
-### [Utiliser les notifications et conseils de stratégie dans les stratégies DLP](use-notifications-and-policy-tips.md)
+### [Création d’une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md)
+### [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
+### [Utilisation des notifications et des conseils de stratégie dans les stratégies DLP](use-notifications-and-policy-tips.md)
 ### [Contenu des modèles de stratégie DLP](what-the-dlp-policy-templates-include.md)
 ### [Créer une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés](protect-documents-that-have-fci-or-other-properties.md)
 ### [Afficher les rapports DLP](view-the-dlp-reports.md)
