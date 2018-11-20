@@ -1,9 +1,8 @@
 ---
-title: Configurer des limites de conformité pour les enquêtes eDiscovery dans Office 365
+title: Configurer les limites de conformité pour les enquêtes eDiscovery dans Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/6/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,14 +13,14 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Limites de conformité permet de créer des limites logiques au sein d’une organisation Office 365 qui contrôlent les emplacements de contenu utilisateur qui permet de rechercher un gestionnaire de découverte électronique. Limites de conformité utilisent des autorisations de recherche (également appelé conformité sécurité filtres) de filtrage pour contrôler les boîtes aux lettres, les sites SharePoint et OneDrive comptes pouvant être explorées par des utilisateurs spécifiques.
-ms.openlocfilehash: 822d228d64d2fd5432db327db98e8d7329c7d939
-ms.sourcegitcommit: c166964fe14eec69139a2d3d9c10d2c40ab33f91
+ms.openlocfilehash: 2bebd29fa7701ba07aae7170142263aeaec5569e
+ms.sourcegitcommit: c7264f3a6a97f1ff544544e2c722e7825e265fa1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23258632"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "26299238"
 ---
-# <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurer des limites de conformité pour les enquêtes eDiscovery dans Office 365
+# <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurer les limites de conformité pour les enquêtes eDiscovery dans Office 365
 
 Limites de conformité créer des limites logiques au sein d’une organisation Office 365 qui contrôlent les emplacements de contenu utilisateur (telles que les boîtes aux lettres, les sites SharePoint et comptes OneDrive) qui peuvent de rechercher des gestionnaires de découverte électronique. En outre, la conformité des limites contrôler qui peut accéder cas eDiscovery permet de gérer le département juridique, des ressources humaines ou autres enquêtes au sein de votre organisation. Les limites de la conformité est souvent nécessaire pour les entreprises nations multiples doivent respecter la réglementation et les intrus géographiques et pour le secteur public, qui est souvent répartis en différents organismes. Dans Office 365, aide des limites de conformité vous respectez ces exigences lors de l’exécution de contenu recherches et la gestion des enquêtes avec cas eDiscovery.
   
@@ -179,9 +178,9 @@ N’oubliez pas les limites suivantes lors de la gestion des cas eDiscovery et d
     
 - Autorisations les filtres de recherche ne sont pas appliquées aux dossiers publics Exchange.
 
-## <a name="searching-and-exporting-sharepoint-content-in-multi-geo-environments"></a>Recherche et exportation de contenu SharePoint dans des environnements Multi-localisés
+## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>Recherche et exportation de contenu dans des environnements Multi-localisés
 
-Autorisations les filtres de recherche vous permettent de contrôler où le contenu est acheminé pour l’exportation et les centres de données peut être recherché comptes OneDrive et sites SharePoint dans un [environnement SharePoint Multi-localisés](https://go.microsoft.com/fwlink/?linkid=860840):
+Autorisations les filtres de recherche vous permettent de contrôler où le contenu est acheminé pour l’exportation et les centres de données pouvant être recherchées lors de la recherche des sites SharePoint et les comptes de OneDrive dans un [environnement SharePoint Multi-localisés](https://go.microsoft.com/fwlink/?linkid=860840):
   
 - Exporter les résultats de la recherche à partir d’un centre de données spécifique. Cela signifie que vous pouvez spécifier que les résultats seront exportés à partir de la recherche emplacement du centre de données.
     
@@ -211,7 +210,7 @@ De même, vous pouvez utiliser les valeurs suivantes pour les valeurs de paramè
 |IND  <br/> |Asie-Pacifique  <br/> |
 |LAM  <br/> |US  <br/> |
    
- **Remarque :** Si vous ne spécifiez pas le paramètre Region pour un filtre d’autorisations de recherche, les résultats de la recherche sont exportés à partir du centre de données le plus proche. 
+ **Remarque :** Si vous ne spécifiez pas le paramètre Region pour un filtre d’autorisations de recherche, la région de SharePoint par défaut organisations portera, puis les résultats de recherche sont exportés vers le centre de données le plus proche. 
   
 Voici des exemples d’utilisation de la **-région** paramètre lors de la création des filtres d’autorisation de recherche les limites de conformité. Cela suppose que la filiale Fourth Coffee se trouve en Amérique du Nord et que les zones de Coho Winery est en Europe. 
   
@@ -223,7 +222,7 @@ New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users 
 New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_Department -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL -Region EUR
 ```
    
-Gardez les éléments suivants à l’esprit lors de la recherche et l’exportation de SharePoint et OneDrive contenu dans des environnements multi-localisés.
+Gardez les éléments suivants à l’esprit lors de la recherche et l’exportation de contenu dans des environnements multi-localisés.
   
 - Le paramètre de **région** ne contrôle pas les recherches de boîtes aux lettres Exchange ; Pour rechercher tous les centres de données lorsque vous recherchez des boîtes aux lettres. Pour limiter l’étendue de quels Exchange boîtes aux lettres pouvant être recherchées, utilisez le paramètre de **filtre** lors de la création ou modification d’un filtre d’autorisations de recherche. 
     

@@ -1,9 +1,10 @@
 ---
-title: Office 365 ATP pour SharePoint, OneDrive et Microsoft Teams
+title: Office 365 - Protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft Teams.
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
+ms.date: 11/08/2018
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,20 +13,20 @@ search.appverid:
 - MOE150
 ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 description: Étendre Office 365 avancée protection contre les menaces de fichiers dans SharePoint Online, OneDrive entreprise et Microsoft Teams pour permettre une collaboration plus sûre pour votre organisation.
-ms.openlocfilehash: ff07d88a150d3f059681556feec9a5e89b5875a8
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 6891184b49aa4ea03d5c13672ac9b95fc9e6d162
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454321"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238446"
 ---
-# <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP pour SharePoint, OneDrive et Microsoft Teams
+# <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 - Protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft Teams.
 
 ## <a name="overview-of-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Vue d’ensemble d’Office 365 DAV pour SharePoint, OneDrive et les équipes de Microsoft
 
 Personnes régulièrement les fichiers de partager et collaborer à l’aide de SharePoint, OneDrive et Teams Microsoft. Avec [Office 365 avancée protection contre les menaces](office-365-atp.md) (DAV), votre organisation peut collaborer de manière plus sûre. DAV permet de détecter et de bloquer les fichiers qui sont identifiés comme malveillants dans les sites d’équipe et des bibliothèques de documents.  
   
-### <a name="how-it-works"></a>Fonctionnement
+## <a name="how-it-works"></a>Fonctionnement
 
 Lorsqu’un fichier dans SharePoint Online, OneDrive entreprise et Microsoft Teams a été identifié comme malveillants, DAV intègre directement les magasins de fichiers pour verrouiller ce fichier. L’image suivante montre un exemple d’un fichier malveillant détecté dans une bibliothèque.
   
@@ -41,7 +42,7 @@ Selon la configuration de Office 365, les personnes peuvent ou ne peut pas avoir
   
 Pour plus d’informations, voir [activer Office 365 DAV pour SharePoint, OneDrive et les équipes Microsoft](turn-on-atp-for-spo-odb-and-teams.md).
   
-### <a name="keep-the-following-points-in-mind"></a>Gardez les points suivants à l’esprit
+## <a name="keep-these-points-in-mind"></a>N’oubliez pas ces points
 
 - DAV n’analyse pas chaque fichier dans SharePoint Online, OneDrive pour les professionnels ou Teams Microsoft. Il s’agit de par sa conception. Les fichiers sont analysés en mode asynchrone, via un processus qui utilise des événements d’activité partage et invité ainsi que heuristique actives et les signaux des menaces pour identifier les fichiers malveillants.
 
@@ -69,16 +70,7 @@ Si vous faites partie de l’équipe de sécurité de votre organisation Office 
     
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Activer Office 365 DAV pour SharePoint, OneDrive et les équipes de Microsoft](turn-on-atp-for-spo-odb-and-teams.md)
+1. [Activer Office 365 DAV pour SharePoint, OneDrive et les équipes de Microsoft](turn-on-atp-for-spo-odb-and-teams.md)
     
-- [Afficher des informations sur les fichiers malveillants détecté dans SharePoint, OneDrive ou Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
+2. [Afficher des informations sur les fichiers malveillants détecté dans SharePoint, OneDrive ou Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
     
-## <a name="related-topics"></a>Voir aussi
-
-[Protection avancée contre les menaces dans Office 365](office-365-atp.md)
-  
-[Afficher les rapports pour Office 365 avancée protection contre les menaces](view-reports-for-atp.md)
-  
-[Autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md)
-  
-

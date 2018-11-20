@@ -3,7 +3,7 @@ title: Prise en charge de la validation des messages signés DKIM
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 12/9/2016
+ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,13 +12,13 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
-description: Exchange Online Protection (EOP) et Exchange Online prennent en charge la validation entrante des messages DKIM (Domain Keys Identified Mail). Il s'agit d'une méthode de validation des messages envoyés depuis le domaine dont ils indiquent provenir et qui n'ont pas été usurpés par un autre utilisateur. Elle associe un message électronique à l'organisation responsable de son envoi. La vérification DKIM est automatiquement utilisée pour tous les messages envoyés dans le cadre de communications IPv6. (Pour plus d'informations sur la prise en charge d'IPv6, voir Prise en charge des messages entrants anonymes sur IPv6.)
-ms.openlocfilehash: d2fab69847732bb7ed54f943d2c7845e06084936
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+description: En savoir plus sur la validation du DKIM signé des messages dans Exchange Online Protection et Exchange Online
+ms.openlocfilehash: 22f0d1c4fdd6b1e159db732d6ef3d956efbf99c9
+ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002256"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "26255829"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>Prise en charge de la validation des messages signés DKIM
 
@@ -28,6 +28,6 @@ La technologie DKIM valide un message signé numériquement qui apparaît dans l
   
  `Authentication-Results: <contoso.com>; dkim=pass (signature was verified) header.d=example.com;`
   
-Les administrateurs peuvent créer des [Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) Exchange à partir des résultats d’une validation DKIM pour filtrer ou acheminer des messages en fonction de leurs besoins. 
+Administrateurs peuvent créer des Exchange [les règles de flux de messagerie](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) (également connu sous les règles de transport) sur les résultats d’une validation DKIM pour filtrer ou acheminer les messages en tant que nécessaire. 
   
 

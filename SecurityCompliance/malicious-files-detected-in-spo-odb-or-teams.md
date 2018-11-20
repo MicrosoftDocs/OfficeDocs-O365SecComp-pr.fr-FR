@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 description: Découvrez où aller pour afficher des informations sur les fichiers malveillants détecté dans SharePoint, OneDrive ou équipes et comment effectuer une action sur ces fichiers.
-ms.openlocfilehash: 37cd721c9ec2608ddcd74f9ae1ed6991b5f0cea7
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: ba1dc3551e66800213a9cb988ebe9fc5e03e31f2
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552382"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238506"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>Afficher des informations sur les fichiers malveillants détecté dans SharePoint, OneDrive ou Microsoft Teams
 
@@ -59,14 +59,5 @@ Pour afficher l’état et des informations détaillées sur les fichiers qui on
     
 5. Cliquez sur **Fermer** pour fermer les détails d’un élément sélectionné. 
   
-## <a name="related-topics"></a>Rubriques connexes
-
-[Protection avancée contre les menaces dans Office 365](office-365-atp.md)
-  
-[Afficher les rapports pour Office 365 avancée protection contre les menaces](view-reports-for-atp.md)
-  
-[Autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md)
-
-[Gérer les messages mis en quarantaine et les fichiers en tant qu’administrateur dans Office 365](manage-quarantined-messages-and-files.md)
   
 

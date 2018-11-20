@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 description: Lorsque vous configurez vos stratégies de liens fiables DAV, vous pouvez inclure une réécriture non ' liste d’URL pour activer certaines personnes de votre organisation à visiter des sites que vous incluez dans votre liste.
-ms.openlocfilehash: 3ce783a3f783889bdc59ad8d412c80a79e7dd914
-ms.sourcegitcommit: 7032830867eb3fc71760e04b8342aff174c5d757
+ms.openlocfilehash: c954c12785659f9c025046bf3773cfec2d5dd5f9
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "25353260"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238386"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurer une liste d’URL non--réécriture personnalisée à l’aide d’Office 365 DAV fiables liens
 
@@ -66,20 +66,4 @@ Les tableau Voici des exemples de ce que vous pouvez entrer et les effets que ce
 |`http://contoso.com/a`  <br/> |Permet à des destinataires spécifiques à visiter un site comme `http://contoso.com/a`, mais pas les sections que`http://contoso.com/a/b`  <br/> |
 |`http://contoso.com/a*`  <br/> |Permet à des destinataires spécifiques à visiter un site comme `http://contoso.com/a` et sections`http://contoso.com/a/b`  <br/> |
    
-  
-
-## <a name="related-topics"></a>Voir aussi
-
-[Protection avancée contre les menaces dans Office 365](office-365-atp.md)
-  
-[Liens DAV Safe dans Office 365](atp-safe-links.md)
-  
-[Définir des stratégies de liens fiables DAV dans Office 365](set-up-atp-safe-links-policies.md)
-  
-[Configurer une liste d’URL bloquée personnalisée à l’aide de liens fiables DAV](set-up-a-custom-blocked-urls-list-wtih-atp.md)
-
-[Afficher les rapports de Protection de menace avancées d’Office 365](view-reports-for-atp.md)
-
-[Autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md)
-  
-
+ 

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Découvrez comment identifier les différents types d’attente qui peuvent être placées sur une boîte aux lettres Office 365. Ces types de suspensions incluent litige, suspensions eDiscovery et des stratégies de rétention Office 365. Vous pouvez également déterminer si un utilisateur a été exclu d’une stratégie de rétention de l’entreprise
-ms.openlocfilehash: 821ec2a8be9ecd89a13ad9ad0378bc6e24fcee1e
-ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
+ms.openlocfilehash: 1572b34d3f9abef2fb922fc9b01d1f5a27fcdf7b
+ms.sourcegitcommit: e4ebef6aaf756eefb86c9f3a602cf75f5d344271
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25577073"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026511"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online
 
@@ -39,7 +39,7 @@ Office 365 offre plusieurs manières dont votre organisation peut empêcher le c
 
     - **Stratégies de rétention de l’entreprise** : il s’agit de stratégies qui sont affectés à tous les emplacements de contenu dans votre organisation. L’applet de commande **Get-OrganizationConfig** dans Exchange Online PowerShell vous permet d’obtenir des informations sur les stratégies de rétention de l’entreprise. Pour plus d’informations, voir la section « Application d’une stratégie de rétention à un ensemble de l’organisation ou des sites spécifiques » dans [les stratégies de rétention de vue d’ensemble d’Office 365](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
 
-- **Étiquettes de office 365** - si un utilisateur s’applique une étiquette d’Office 365 (celui qui est configuré pour conserver le contenu ou conserver et puis supprimer le contenu) à *tout* dossier ou un élément dans leur boîte aux lettres, une suspension est placé sur la boîte aux lettres comme si la boîte aux lettres a été mis en cas de litige Blocage ou affectés à une stratégie de rétention d’Office 365. Pour plus d’informations, voir la section [identification boîtes aux lettres sur une suspension, car une étiquette a été appliquée à un dossier ou un élément](#identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item) dans cet article.
+- **Étiquettes de rétention office 365** - si un utilisateur s’applique une étiquette de rétention d’Office 365 (celui qui est configuré pour conserver le contenu ou conserver et puis supprimer le contenu) à *tout* dossier ou un élément dans leur boîte aux lettres, une suspension est placé sur la boîte aux lettres comme si la boîte aux lettres a été mis en attente pour litige ou affectés à une stratégie de rétention d’Office 365. Pour plus d’informations, voir la section [identification boîtes aux lettres sur une suspension, car une étiquette de rétention a été appliquée à un dossier ou un élément](#identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item) dans cet article.
 
 Pour gérer les boîtes aux lettres en attente, vous devrez peut-être identifier le type de suspension est placé dans une boîte aux lettres afin que vous pouvez effectuer des tâches telles que la modification de la durée d’attente, titre temporaire ou permanent suppression de la suspension ou à l’exception d’une boîte aux lettres à partir d’une stratégie de rétention d’Office 365. Dans ce cas, la première étape consiste à identifier le type de suspension placé dans la boîte aux lettres. Et parce que plusieurs suspensions (et les différents types de suspensions) peuvent être placées sur une seule boîte aux lettres, vous devez identifier toutes les suspensions placées sur une boîte aux lettres si vous voulez supprimer ou modifier ces suspensions.
 
@@ -154,9 +154,9 @@ Exécutez la commande suivante dans PowerShell du centre de conformité et de s�
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
 ```
 
-## <a name="identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item"></a>Identifier les boîtes aux lettres sur stocker, car une étiquette a été appliquée à un dossier ou un élément
+## <a name="identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item"></a>Identifier les boîtes aux lettres sur stocker, car une étiquette de rétention a été appliquée à un dossier ou un élément
 
-Chaque fois qu’un utilisateur s’applique une étiquette qui est configurée pour conserver le contenu ou conserver et puis supprimer le contenu à un dossier ou un élément dans leur boîte aux lettres, la propriété de la boîte aux lettres *ComplianceTagHoldApplied* est définie sur **True**. Dans ce cas, la boîte aux lettres est considéré comme être mise en attente, comme s’il a été mis en attente pour litige ou affecté à une stratégie de rétention d’Office 365. Lorsque la propriété *ComplianceTagHoldApplied* est définie sur **True**, les éléments suivants peuvent se produire :
+Chaque fois qu’un utilisateur s’applique une étiquette de rétention qui est configurée pour conserver le contenu ou conserver et puis supprimer le contenu à un dossier ou un élément dans leur boîte aux lettres, la propriété de la boîte aux lettres *ComplianceTagHoldApplied* est définie sur **True**. Dans ce cas, la boîte aux lettres est considéré comme être mise en attente, comme s’il a été mis en attente pour litige ou affecté à une stratégie de rétention d’Office 365. Lorsque la propriété *ComplianceTagHoldApplied* est définie sur **True**, les éléments suivants peuvent se produire :
 
 - Si la boîte aux lettres ou le compte d’utilisateur de l’utilisateur Office 365 est supprimé, la boîte aux lettres devient une [boîte aux lettres inactive](inactive-mailboxes-in-office-365.md).
 - Vous ne pourrez pas désactiver la boîte aux lettres (la boîte aux lettres principale ou la boîte aux lettres archive, s’il est activé).
@@ -168,7 +168,7 @@ Pour afficher la valeur de la propriété *ComplianceTagHoldApplied* , exécutez
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-Pour plus d’informations sur les étiquettes, voir [vue d’ensemble d’Office 365 étiquettes](labels.md).
+Pour plus d’informations sur les étiquettes de rétention, voir [étiquettes de rétention de vue d’ensemble d’Office 365](labels.md).
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>La gestion des boîtes aux lettres sur le délai de blocage
 

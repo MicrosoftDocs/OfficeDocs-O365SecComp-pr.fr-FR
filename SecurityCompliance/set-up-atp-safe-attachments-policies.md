@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Définir des stratégies de pièces jointes fiables pour protéger votre organisation à partir des fichiers malveillants dans le message électronique.
-ms.openlocfilehash: 1fd831adf5166223ba5df159a131c71e3b467233
-ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
+ms.openlocfilehash: 84625cc688be4b6aa98674563b5c6c30b1b35598
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25850838"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238406"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Définir des stratégies Office 365 DAV approuvés en pièce jointe
 
@@ -82,18 +82,9 @@ Lorsque vous définissez vos stratégies de pièces jointes sûres DAV, vous cho
 |**Remise dynamique** <br/> |Remet les messages immédiatement  <br/> Remplace les pièces jointes avec un fichier d’espace réservé jusqu'à ce que l’analyse est terminée, puis rattache les pièces jointes si aucun programme malveillant n’est détecté  <br/> Inclut les pièces jointes afficher un aperçu des fonctionnalités pour la plupart des fichiers PDF et Office fichiers lors de l’analyse  <br/> Envoie des messages par un programme malveillant détecté à la mise en quarantaine où un administrateur ou un analyste peut consulter et version (ou supprimer) des messages  <br/> [En savoir plus sur la remise dynamique et aperçu des pièces jointes sûres DAV](dynamic-delivery-and-previewing.md) <br/> |Éviter les retards de message lors de la protection des destinataires à partir des fichiers malveillants  <br/> Activer l’aperçu des pièces jointes en mode sans échec pendant l’analyse des destinataires  <br/> |
 |**Activer la redirection** <br/> |S’applique lorsque vous choisissez l’option moniteur, bloquer ou remplacer  <br/> Envoie les pièces jointes à une adresse de messagerie spécifiée où les administrateurs de sécurité ou analystes peuvent étudier  <br/> |Permettre aux administrateurs de sécurité et les analystes à la recherche de pièces jointes suspectes  <br/> |
    
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="next-steps"></a>Étapes suivantes
 
-[Protection avancée contre les menaces dans Office 365](office-365-atp.md)
-  
-[Pièces jointes DAV Safe dans Office 365](atp-safe-attachments.md)
-  
-[Liens DAV Safe dans Office 365](atp-safe-links.md)
-  
-[Définir des stratégies de liens fiables DAV dans Office 365](set-up-atp-safe-links-policies.md)
-  
-[Afficher les rapports de protection contre les menaces avancées](view-reports-for-atp.md)
-
-[Autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md)
-  
-
+Une fois vos stratégies de pièces jointes sûres DAV sont mis en place, vous pouvez voir comment fonctionne pour votre organisation DAV en affichant des rapports. Voir les ressources suivantes pour en savoir plus :
+- [Afficher les rapports de Protection de menace avancées d’Office 365](view-reports-for-atp.md)
+- [Utiliser l’Explorateur de solutions de sécurité &amp; centre de conformité](use-explorer-in-security-and-compliance.md)
+ 

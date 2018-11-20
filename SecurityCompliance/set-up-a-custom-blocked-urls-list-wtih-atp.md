@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 description: Lisez cet article pour apprendre à configurer une liste d’URL bloqués pour votre organisation à l’aide d’Office 365 avancée protection contre les menaces. Les URL bloquées s’appliquera aux messages électroniques et des documents Office en fonction de vos stratégies de liens fiables DAV.
-ms.openlocfilehash: 0429546e521bf3f6b7144342ab0997e924c2f616
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 1f7a991b9ab8f3a9f16616379cfb6c4c3c546260
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454361"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238366"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Configurer une liste d’URL bloquée personnalisée à l’aide d’Office 365 DAV fiables liens
 
@@ -64,17 +64,5 @@ Lisez cet article pour apprendre à configurer la liste des URL bloqué personna
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>Comment définir des exceptions pour certains utilisateurs dans une organisation
 
 Si vous souhaitez que certains groupes pour être en mesure d’afficher les URL qui peuvent être bloquées pour d’autres personnes, vous pouvez spécifier une stratégie de liens fiables DAV qui s’applique à des destinataires spécifiques. Voir [configurer une liste d’URL personnalisée du « pas de rewrite » à l’aide de liens fiables DAV](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
-  
-## <a name="related-topics"></a>Voir aussi
-
-[Protection avancée contre les menaces dans Office 365](office-365-atp.md)
-  
-[Liens DAV Safe dans Office 365](atp-safe-links.md)
-  
-[Définir des stratégies de liens fiables DAV dans Office 365](set-up-atp-safe-links-policies.md)
-  
-[Pièces jointes DAV Safe dans Office 365](atp-safe-attachments.md)
-
-[Autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md)
   
 

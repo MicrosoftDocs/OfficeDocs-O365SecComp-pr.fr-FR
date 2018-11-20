@@ -3,7 +3,7 @@ title: Activer le complément Signaler le message
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 10/18/2018
+ms.date: 11/19/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 description: Découvrez comment activer le complément de Message de rapport pour Outlook et Outlook sur le web, pour des utilisateurs individuels ou la totalité de votre organisation.
-ms.openlocfilehash: 8c9853c78a42d6eecd0989475ef8f0a44345f812
-ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
+ms.openlocfilehash: a62e3e6250d2eccd2109a71f994713e2dd1b262e
+ms.sourcegitcommit: 6669b7aae26965145e85d9613d3091bf389f000b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25857262"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "26618920"
 ---
 # <a name="enable-the-report-message-add-in"></a>Activer le complément Signaler le message
 
@@ -37,7 +37,7 @@ Le complément de Message de rapport fonctionne avec votre abonnement Office 365
   
 Si vous êtes un utilisateur individuel, vous pouvez [Activer le complément de Message de rapport par vous-même](#get-the-report-message-add-in-for-yourself). 
   
-Si vous êtes un administrateur Exchange Online, vous pouvez [Activer le complément de Message de rapport pour votre organisation](#get-and-enable-the-report-message-add-in-for-your-organization).
+Si vous êtes un administrateur global d’Office 365 ou un administrateur Exchange Online et Exchange est configuré pour utiliser l’authentification OAuth, vous pouvez [Activer le complément de Message de rapport pour votre organisation](#get-and-enable-the-report-message-add-in-for-your-organization). Le rapport de Message Add-In est désormais disponible par le biais de [Déploiement centralisé](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).
     
 ## <a name="get-the-report-message-add-in-for-yourself"></a>Obtenez le Message de rapport de complément pour vous-même
 
@@ -49,7 +49,6 @@ Si vous êtes un administrateur Exchange Online, vous pouvez [Activer le complé
     
 4. Connectez-vous à votre messagerie électronique Office 365 à l’aide de votre travail compte école (pour une utilisation professionnelle) ou votre compte Microsoft (pour une utilisation personnelle).
     
-
 Une fois que le complément est installé et activé, vous verrez les icônes suivantes : 
 
 - Dans Outlook, l’icône ressemble à ceci : <br/> ![Icône Message Add-in rapport pour Outlook](media/OutlookReportMessageIcon.png)<br/>
@@ -60,33 +59,24 @@ Une fois que le complément est installé et activé, vous verrez les icônes su
 ## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>Obtenir et activer le complément de Message de rapport pour votre organisation
 
 > [!IMPORTANT]
-> Vous devez être un administrateur global d’Office 365 ou Exchange Online administrateur pour effectuer cette tâche.
+> Vous devez être un administrateur global d’Office 365 ou Exchange Online administrateur pour effectuer cette tâche. En outre, Exchange doit être configuré pour utiliser l’authentification OAuth pour plus d’informations, voir [Configuration requise pour Exchange (centralisée le déploiement des compléments)](https://docs.microsoft.com/en-us/office365/admin/manage/centralized-deployment-of-add-ins&view=o365-worldwide#exchange-requirements). 
 
-1. Accédez à [https://portal.office.com](https://portal.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école. 
+1. Accédez à la [page des compléments et des Services](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) dans le centre d’administration Microsoft 365 nouveau.<br/>![Page Services et compléments dans le nouveau centre d’administration de 365 Microsoft](media/ServicesAddInsPageNewM365AdminCenter.png)<br/> 
     
-2. Choisissez **Admin** pour accéder au centre d’administration. 
+2. Choisissez **+ déployer le complément**.<br/>![Cliquez sur déployer le complément](media/ServicesAddIns-ChooseDeployAddIn.png)<br/> 
     
-3. Choisissez **Centre d’administration** \> **Exchange** pour accéder au centre d’administration Exchange (CAE). 
+3. Dans l’écran nouveau complément, passez en revue les informations, puis cliquez sur **suivant**.<br/>![Nouveau complément plus d’informations](media/NewAddInScreen1.png)<br/>
     
-4. Cliquez sur **organisation** \> **des compléments**. 
+4. Sélectionnez **Ajouter un complément à partir de l’Office Store**, puis cliquez sur **suivant**.<br/>![Vous voulez ajouter un nouveau complément](media/NewAddInScreen2.png)<br/> 
     
-5. Choisissez **+**  >  **Ajouter à partir de l’Office Store**.<br/>![Choisissez Ajouter à partir de l’Office Store](media/EAC-Org-AddFromOfficeStore.png)<br/>L’Office Store dans votre navigateur web s’ouvre.
+5. Pour un Message de rapport et dans la liste des résultats, en regard du complément Message d’état de la recherche, cliquez sur Ajouter.<br/>![Rechercher un Message de rapport, puis choisissez Ajouter](media/NewAddInScreen3.png)<br/>
     
-6. Rechercher les messages d’état.<br/>![Rechercher les messages d’état](media/ReportMessageSearchOfficeStore.png)<br/>
-    
-7. Dans la liste des **applications** , sélectionnez **Rapport de Message**, puis cliquez sur **Obtenir les maintenant**.<br/>![Choisissez GET IT maintenant](media/ReportMessageGETITNOW.png)<br/> 
-    
-8. Passez en revue les termes du contrat de stratégie de confidentialité et d’utilisation. Puis cliquez sur **Continuer**. 
-    
-    ![Cliquez sur Continuer pour accepter les termes et la politique de confidentialité](media/ReportMessageTermsAndConditions.png)
-  
-9. Un Assistant s’ouvre pour vous aider à configurer la révision de complément de Message de rapport les informations et cliquez sur **suivant** pour continuer.<br/>![Message complément Assistant Rapport pour Office 365](media/ReportMessageAdminInstallUI.png)<br/> 
+6. Dans l’écran de Message de rapport, passez en revue les informations, puis cliquez sur **suivant**.<br/>![Détails du Message](media/ReportMessageAdd-InNewScreen4.png)<br/>
 
-10. Spécifiez le paramètre par défaut que vous souhaitez que les utilisateurs ont pour le complément de Message de rapport.<br/>![Spécifier les paramètres par défaut pour le complément de Message de rapport](media/ReportMessageUserOptionsAdminsSet.png)<br/>
-    
-11. Spécifier qui obtient le Message de rapport de complément. <br/>![Spécifier qui obtient le Message de rapport de complément](media/ReportMessageChooseWhoGetsItAdminSettings.png)<br/>
+7. Spécifier les paramètres utilisateur par défaut pour Outlook, puis cliquez sur **suivant**.<br/>![Signaler les paramètres par défaut des messages pour Outlook](media/ReportMessageOptionsScreen5.png)<br/>
 
-12. Sélectionnez **Save (Enregistrer)**. <br/>
+8. Spécifier qui obtient le Message de rapport Add-in, puis cliquez sur **Enregistrer**. <br/>![Qui obtient le Message de rapport complément](media/ReportMessageOptionsScreen6.png)<br/>
+
 > [!TIP]
 > Nous vous recommandons de [paramétrage d’une règle pour obtenir une copie des messages électroniques signalés par vos utilisateurs](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users)
 
@@ -110,46 +100,38 @@ Vous pouvez configurer une règle pour obtenir une copie des messages électroni
     
 4. Dans la liste **appliquer cette règle si** , sélectionnez **l’adresse du destinataire inclut...**. 
     
-5. Dans l’écran **spécifier les mots ou expressions** , ajoutez junk@office365.microsoft.com et phish@office365.microsoft.com, puis cliquez sur **OK**. 
-    
-    ![Spécifier les adresses de courrier indésirable et de phishing pour la règle](media/018c1833-f336-4333-a45c-f2e8b75cd698.png)
+5. Dans l’écran **spécifier les mots ou expressions** , ajoutez `junk@office365.microsoft.com` et `phish@office365.microsoft.com`, puis cliquez sur **OK**.<br/>![Spécifier les adresses de courrier indésirable et de phishing pour la règle](media/018c1833-f336-4333-a45c-f2e8b75cd698.png)<br/>
   
 6. Dans la liste **effectuer les opérations suivantes** , choisissez **Cci du message pour...**. 
     
-7. Ajouter un administrateur global, un administrateur de sécurité et/ou lecteur de sécurité qui doit recevoir une copie de chaque message électronique qui signalent à Microsoft les personnes, puis cliquez sur **OK**. 
-    
-    ![Ajouter un administrateur global ou de sécurité pour recevoir une copie de chaque message signalé](media/a91ab9d1-66f2-4a2e-9dc1-f9f81a2298ad.png)
+7. Ajouter un administrateur global, un administrateur de sécurité et/ou lecteur de sécurité qui doit recevoir une copie de chaque message électronique qui signalent à Microsoft les personnes, puis cliquez sur **OK**.<br/>![Ajouter un administrateur global ou de sécurité pour recevoir une copie de chaque message signalé](media/a91ab9d1-66f2-4a2e-9dc1-f9f81a2298ad.png)<br/>
   
 8. Sélectionnez **Auditer cette règle avec le niveau de gravité**, puis choisissez **moyenne**. 
     
-9. Sous **Choisir un mode de cette règle**, cliquez sur **Appliquer**. 
-    
-    ![Définir une règle pour obtenir une copie de chaque message signalé](media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)
+9. Sous **Choisir un mode de cette règle**, cliquez sur **Appliquer**.<br/>![Définir une règle pour obtenir une copie de chaque message signalé](media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)<br/>
   
 10. Sélectionnez **Save (Enregistrer)**. 
     
 À cette règle en place, chaque fois qu’une personne de votre organisation signale un message électronique à l’aide du complément Message de rapport, votre administrateur général, administrateur de sécurité et/ou lecteur sécurité reçoit une copie de ce message. Ces informations permettent de vous permet de définir ou ajuster les stratégies, telles que les stratégies de [Liaisons sans échec de Office 365 DAV](atp-safe-links.md) . 
 
-## <a name="review-or-edit-the-default-settings-for-the-report-message-add-in"></a>Consulter ou modifier les paramètres par défaut pour le complément de Message de rapport
+## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Vérifier ou modifier les paramètres pour le complément de Message de rapport
 
-Vous pouvez consulter et modifier les paramètres par défaut pour le Message de rapport complément à l’aide du centre d’administration. 
+Vous pouvez consulter et modifier les paramètres par défaut pour le rapport de Message complément dans la [page Services et compléments](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns). 
 
 > [!IMPORTANT]
 > Vous devez être un administrateur global d’Office 365 ou Exchange Online administrateur pour effectuer cette tâche.
     
-1. Si vous avez uniquement installé le complément de Message de rapport pour votre organisation, vous serez déjà dans la page Services et compléments. Dans le cas contraire, accédez [ici](https://portal.office.com/adminportal/home#/Settings/ServicesAndAddIns) et connexion à l’aide de votre compte professionnel ou de l’école pour Office 365.
+1. Accédez à la [page des compléments et des Services](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) dans le centre d’administration Microsoft 365 nouveau.<br/>![Page Services et compléments dans le nouveau centre d’administration de 365 Microsoft](media/ServicesAddInsPageNewM365AdminCenter.png)<br/>
 
-2. Rechercher **Un Message de rapport**, puis sélectionnez-le.<br/>![Services et des compléments pour Office 365](media/ReportMessage-o365servicesaddins.png)<br/> 
+2. Recherchez et sélectionnez le rapport de Message Add-In.<br/>![Recherchez et sélectionnez le complément de Message de rapport](media/FindReportMessageAddIn.png)<br/> 
     
-3. Un volet s’ouvre et affiche les paramètres qui ont été activées pour le complément de Message d’état pendant le déploiement.<br/>![Complément de paramètres pour le Message d’état](media/ReportMessage-reviewaddinsettings.png)<br/> 
+3. Dans l’écran de Message de rapport, passez en revue et modifier les paramètres comme il convient pour votre organisation.<br/>![Complément de paramètres pour le Message d’état](media/EditReportMessageAddIn.png)<br/> 
 
-4. Passez en revue et modifier les paramètres pour le complément de Message de rapport et si nécessaire, puis enregistrez vos modifications.
-    
 ## <a name="learn-how-to-use-the-report-message-add-in"></a>Découvrez comment utiliser le complément de Message de rapport
 
 Consultez la rubrique [utiliser le complément de Message de rapport](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
   
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Utiliser le complément de Message de rapport](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
   

@@ -1,5 +1,5 @@
 ---
-title: Informations de référence technique de chiffrement dans Office 365
+title: Détails techniques de référence sur le chiffrement dans Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Afficher les informations techniques de chiffrement dans Office 365.
-ms.openlocfilehash: d86692119f7558d74e2083165b4eb6ab4a07da70
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 69365b66479ab89a9c036fe489b4087d327460eb
+ms.sourcegitcommit: e4ebef6aaf756eefb86c9f3a602cf75f5d344271
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528505"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026521"
 ---
-# <a name="technical-reference-details-about-encryption-in-office-365"></a>Informations de référence technique de chiffrement dans Office 365
+# <a name="technical-reference-details-about-encryption-in-office-365"></a>Détails techniques de référence sur le chiffrement dans Office 365
 
 Reportez-vous à cet article pour en savoir plus sur les certificats, les technologies et TLS suites de chiffrement utilisées pour le [chiffrement dans Office 365](encryption.md). Cet article fournit également des détails sur planifiées à éviter.
   
@@ -52,7 +52,11 @@ Les protocoles TLS (Transport Layer Security) et SSL (antérieur au protocole 
 ## <a name="deprecating-support-for-tls-10-and-11-and-what-this-means-for-you"></a>Déconseiller prise en charge TLS 1.0 et 1.1 et ce que cela signifie que vous
 <a name="TLS11and12deprecation"> </a>
 
-Provenant des modifications importantes apportées aux options de chiffrement pris en charge pour Office 365. À compter du 31 octobre 2018, Office 365 sera plus en charge l’utilisation de TLS 1.0 ou 1.1 pour les communications vers Office 365. Une fois Office 365 deprecates prise en charge de ces protocoles, toutes les communications vers et depuis les serveurs Office 365 vous devrez utiliser TLS 1.2. Pour plus d’informations sur leur impact sur vous, consultez [Préparation pour l’utilisation de TLS 1.2 dans Office 365 obligatoire](https://support.microsoft.com/en-us/help/4057306/preparing-for-tls-1-2-in-office-365). Serveurs et clients communiquant avec O365 après cette date doivent prendre en charge TLS 1.2.
+À compter du 31 octobre 2018, Office 365 sera n’est plus prise en charge TLS 1.0 et 1.1. Cela signifie que Microsoft résoudra pas les problèmes qui sont trouvent dans les clients, les périphériques ou les services qui se connectent à Office 365 à l’aide de TLS 1.0 et 1.1.
+
+Notez que cela ne signifie pas Qu'office 365 empêchera TLS 1.0 et 1.1 connexions. Il n’existe aucune date officielle de désactivation ou suppression du service TLS pour les connexions client TLS 1.0 et 1.1. La date de désapprobation éventuelle sera déterminée par la télémétrie client et n’est pas encore connue. Une fois la décision, il y aura une annonce six mois à l’avance, sauf si nous connaissance d’un compromis connu, auquel cas, nous pouvons disposer agir en moins de six mois pour protéger les clients qui utilisent les services.
+
+Vous devez vous assurer que toutes les combinaisons client-serveur et le navigateur et le serveur utilisent TLS 1.2 (ou version ultérieure) pour maintenir la connexion aux services Office 365. Vous devrez peut-être mettre à jour certaines combinaisons client-serveur et le navigateur et le serveur. Pour plus d’informations sur leur impact sur vous, consultez [Préparation pour l’utilisation de TLS 1.2 dans Office 365 obligatoire](https://support.microsoft.com/en-us/help/4057306/preparing-for-tls-1-2-in-office-365).
   
 ## <a name="deprecating-support-for-3des"></a>Prise en charge 3DES déconseiller
 <a name="TLS11and12deprecation"> </a>
@@ -100,7 +104,7 @@ Une suite de chiffrement est un ensemble d’algorithmes de chiffrement utilisé
 
 [Chiffrement dans Office 365](encryption.md)
   
-[Configurez le chiffrement dans Office 365 pour entreprises](set-up-encryption.md)
+[Configurer le chiffrement dans Office 365 Entreprise](set-up-encryption.md)
   
 [Implémentation de Schannel de TLS 1.0 dans la mise à jour de l’état de sécurité Windows : 24 novembre 2015](https://support.microsoft.com/kb/3117336)
   

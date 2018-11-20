@@ -1,9 +1,9 @@
 ---
-title: Exporter les résultats de recherche de contenu à partir de la sécurité de 365 Office &amp; centre de conformité
+title: Exporter les résultats de recherche de contenu à partir de la sécurité pour Microsoft Office 365 & centre de conformité
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exporter les résultats de recherche à partir d’une recherche de contenu de sécurité Office 365 &amp; centre de conformité à un ordinateur local. Résultats de la messagerie Emaill sont exportées dans des fichiers PST. Contenu de SharePoint et OneDrive pour les sites sont exportées dans des documents Office natives. '
-ms.openlocfilehash: 739d2c162dac938d593e0b65ebca3bf2101ec469
-ms.sourcegitcommit: 87a3ca55b6e9cf7e9ccf73e64013dc78dd7660f5
+ms.openlocfilehash: 35fb0aa8a037fc77020269d1b42d738dd801ea0a
+ms.sourcegitcommit: da4aa7335b577148ecd61e09bbb11039b817b287
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "25494065"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26539116"
 ---
-# <a name="export-content-search-results-from-the-office-365-security-amp-compliance-center"></a>Exporter les résultats de recherche de contenu à partir de la sécurité de 365 Office &amp; centre de conformité
+# <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>Exporter les résultats de recherche de contenu à partir de la sécurité pour Microsoft Office 365 & centre de conformité
 
 Après qu’une recherche de contenu est exécutée correctement, vous pouvez exporter les résultats de recherche sur un ordinateur local. Lorsque vous exportez des résultats de la messagerie, elles sont téléchargées sur votre ordinateur en tant que fichiers PST. Lorsque vous exportez le contenu à partir de SharePoint et OneDrive pour les sites, les copies des documents Office natifs sont exportées. Il existe des documents et des rapports qui sont inclus dans les résultats de recherche exportés.
   
@@ -83,9 +83,9 @@ Exporter les résultats d’une recherche de contenu consiste à préparer les r
 
 La première étape consiste à préparer les résultats de recherche pour l’exportation. Lorsque vous préparez des résultats, ils sont téléchargés vers un emplacement de stockage Azure dans le nuage Microsoft. Notez que le contenu des sites et des boîtes aux lettres est téléchargé au taux maximal de 2 Go par heure.
   
-1. Accédez à [https://protection.office.com](https://protection.office.com).
+1. Accédez à la page [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à Office 365 à l’aide de votre compte professionnel ou de l’école.
+2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
 3. Dans le volet gauche du Centre de sécurité et de conformité, cliquez sur **Recherches &amp; enquêtes** \> **Recherche de contenu**.
     
@@ -173,24 +173,23 @@ Comme expliqué précédemment, vous pouvez augmenter la vitesse de télécharge
     
 
   
-## <a name="more-information"></a>Plus d'informations
-<a name="moreinfo"> </a>
+## <a name="more-information"></a>Plus d’informations
 
 Voici le plus d’informations sur l’exportation de résultats de recherche.
   
-[Exporter des limites](export-search-results.md#export-limits)
+[Exporter des limites](#export-limits)
   
-[Exporter des rapports](export-search-results.md#export-reports)
+[Exporter des rapports](#export-reports)
   
 [Exportation d’éléments indexés partiellement](#exporting-partially-indexed-items)
+
+[Exportation des messages ou des fichiers PST](#exporting-individual-messages-or-pst-files)
   
-[Exportation des messages ou des fichiers PST](export-search-results.md#Exporting-individual-messages-or-PST-files)
+[Déchiffrement des messages chiffrés RMS](#decrypting-rms-encrypted-messages)
+
+[Noms de fichier des éléments exportés](#filenames-of-exported-items)  
   
-[Déchiffrement des messages chiffrés RMS](export-search-results.md#Decrypting-RMS-encrypted-messages)
-  
-[Noms de fichier des éléments exportés](export-search-results.md#Filenames-of-exported-items)
-  
-[Divers](export-search-results.md#miscellaneous)
+[Divers](#miscellaneous)
   
  ### <a name="export-limits"></a>Exporter des limites
   
@@ -206,7 +205,7 @@ Voici le plus d’informations sur l’exportation de résultats de recherche.
     
   - Exportation des rapports de recherche de contenu ne compte pas sur les limites d’exportation. 
     
-- Comme indiqué plus haut, résultats de la recherche de boîtes aux lettres et les sites sont téléchargées vers l’emplacement de stockage Azure (comme décrit dans [étape 1 : préparation pour l’exportation des résultats de recherche](export-search-results.md#step1)) à un taux maximal de 2 Go par heure.
+- Comme indiqué plus haut, résultats de la recherche de boîtes aux lettres et les sites sont téléchargées vers l’emplacement de stockage Azure (comme décrit dans [étape 1 : préparation pour l’exportation des résultats de recherche](#step-1-prepare-search-results-for-export)) à un taux maximal de 2 Go par heure.
     
 - La taille maximale d’un fichier PST qui peut être exporté est de 10 Go par défaut. Cela signifie que si les résultats de recherche de boîte aux lettres d’un utilisateur sont supérieures à 10 Go, les résultats de recherche pour la boîte aux lettres doit être exportées dans deux (ou plusieurs) des fichiers PST distincts. En outre, si vous choisissez d’exporter tous les résultats de recherche dans un seul fichier PST, le fichier PST sera spilt dans des fichiers PST supplémentaires si la taille totale des résultats de recherche est supérieure à 10 Go. Si vous souhaitez modifier cette taille par défaut, vous pouvez modifier le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de recherche. Voir [modification de la taille des fichiers PST lors de l’exportation des résultats de recherche eDiscovery](change-the-size-of-pst-files-when-exporting-results.md).
     

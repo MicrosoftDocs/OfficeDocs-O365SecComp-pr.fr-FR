@@ -6,8 +6,6 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-f1_keywords:
-- O365AC_AlternativeEmailAddress
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
@@ -15,15 +13,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: 'Utilisez le Office 365 Security &amp; centre de conformité pour la recherche dans le journal d’audit unifiée pour afficher l’activité utilisateur et l’administrateur de votre organisation Office 365. '
-ms.openlocfilehash: f44fa0a32a70a4b8d96b7bb7b9d9386f9efb74b6
-ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
+description: 'Utilisez la sécurité pour Microsoft Office 365 et le centre de conformité pour la recherche dans le journal d’audit unifiée pour afficher l’activité utilisateur et l’administrateur de votre organisation Office 365. '
+ms.openlocfilehash: 02e38917d3a82828d6602661b494ebc0ffb733d8
+ms.sourcegitcommit: 42c7ad69f95fc4d2de13293b39cc44931b9f82e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25935591"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "26522806"
 ---
-# <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Effectuer des recherches dans le journal d’audit dans le Centre de sécurité et de conformité Office 365
+# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Recherche dans le journal d’audit de la sécurité pour Microsoft Office 365 et le centre de conformité
 
 Vous devez trouver si un utilisateur affiché d’un document spécifique ou purgés un élément à partir de leur boîte aux lettres ? Si ce cas, vous pouvez utiliser la sécurité de 365 Office &amp; centre de conformité pour la recherche dans le journal d’audit unifiée pour afficher l’activité utilisateur et l’administrateur de votre organisation Office 365. Pourquoi un audit unifié se connecter ? Étant donné que vous pouvez rechercher les types suivants de l’activité utilisateur et d’administration d’Office 365 :
   
@@ -100,26 +98,26 @@ Veillez à lire le journal d’audit des éléments suivants avant de commencer 
     
 - Il peut prendre jusqu'à 30 minutes ou les 24 heures après un événement se produit pour l’entrée du journal d’audit correspondant à afficher dans les résultats de recherche. Le tableau suivant indique le temps que nécessaire pour les différents services dans Office 365.
     
-|**Service Office 365**|**30 minutes**|**24 heures**|
-|:-----|:-----|:-----|
-|Protection contre les menaces avancées et les informations sur les menaces  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
-|Azure Active Directory (événements d’ouverture de session utilisateur)  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|Azure Active Directory (événements d’administration)  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
-|Azure Active Directory (événements d’ouverture de session utilisateur)  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|Prévention contre la perte de données  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Dynamics 365 CRM <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|eDiscovery  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Exchange Online  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Microsoft Flow  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Forms  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Project  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Stream  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Teams  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Power BI  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Sécurité &amp; centre de conformité  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Sharepoint Online et OneDrive Entreprise  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Sway  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|Yammer  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |**Service Office 365**|**30 minutes**|**24 heures**|
+    |:-----|:-----|:-----|
+    |Protection contre les menaces avancées et les informations sur les menaces  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
+    |Azure Active Directory (événements d’ouverture de session utilisateur)  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |Azure Active Directory (événements d’administration)  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
+    |Azure Active Directory (événements d’ouverture de session utilisateur)  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |Prévention contre la perte de données  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Dynamics 365 CRM <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |eDiscovery  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Exchange Online  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Microsoft Flow  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Forms  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Project  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Stream  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Teams  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Power BI  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Sécurité &amp; centre de conformité  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Sharepoint Online et OneDrive Entreprise  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Sway  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |Yammer  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
 - Azure Active Directory (AD Azure) est le service d’annuaire pour Office 365. Le journal d’audit unifiée contient l’utilisateur, groupe, application, domaine et activités directory effectuées dans le centre d’administration d’Office 365 ou dans le dans Azure portail de gestion. Pour obtenir une liste complète des événements Azure AD, voir [Événements du rapport d’Audit Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=616549).
     
@@ -160,18 +158,18 @@ Voici le processus de recherche dans le journal d’audit dans Office 365.
   
 4. Configurer les critères de recherche suivants :
     
-1. **Activités** Cliquez sur la liste déroulante pour afficher les activités que vous pouvez rechercher. Activités des utilisateurs et d’administration sont organisées dans vers des groupes d’activités associées. Vous pouvez sélectionner des activités spécifiques ou vous pouvez cliquer sur le nom du groupe activité à sélectionner toutes les activités dans le groupe. Vous pouvez également cliquer sur une activité sélectionnée pour effacer la sélection. Après avoir exécuté la recherche, uniquement les entrées du journal d’audit pour les activités sélectionnées sont affichées. Sélectionnez **Afficher les résultats pour toutes les activités** affiche les résultats de toutes les activités effectuées par l’utilisateur sélectionné ou un groupe d’utilisateurs. 
+    a. **activités** sur la liste déroulante pour afficher les activités que vous pouvez rechercher. Activités des utilisateurs et d’administration sont organisées dans vers des groupes d’activités associées. Vous pouvez sélectionner des activités spécifiques ou vous pouvez cliquer sur le nom du groupe activité à sélectionner toutes les activités dans le groupe. Vous pouvez également cliquer sur une activité sélectionnée pour effacer la sélection. Après avoir exécuté la recherche, uniquement les entrées du journal d’audit pour les activités sélectionnées sont affichées. Sélectionnez **Afficher les résultats pour toutes les activités** affiche les résultats de toutes les activités effectuées par l’utilisateur sélectionné ou un groupe d’utilisateurs. 
     
     Plus de 100 activités d’utilisateur et d’administration sont consignées dans le journal d’audit d’Office 365. Cliquez sur l’onglet **activités contrôlé** le sujet de cet article pour consulter les descriptions de chaque activité dans chacun des différents services Office 365. 
     
-2. **Date de début** et **date de fin** au cours des sept derniers jours sont sélectionnés par défaut. Sélectionnez une plage de date et heure pour afficher les événements qui se sont produites pendant cette période. La date et l’heure sont présentées au format de temps universel coordonné (UTC). La plage de dates maximale que vous pouvez spécifier est 90 jours. Une erreur s’affiche si la plage de dates sélectionnée est supérieure à 90 jours. 
+    b. **date de début** et **date de fin** au cours des sept derniers jours sont sélectionnés par défaut. Sélectionnez une plage de date et heure pour afficher les événements qui se sont produites pendant cette période. La date et l’heure sont présentées au format de temps universel coordonné (UTC). La plage de dates maximale que vous pouvez spécifier est 90 jours. Une erreur s’affiche si la plage de dates sélectionnée est supérieure à 90 jours. 
     
     > [!TIP]
     > Si vous utilisez la plage de dates maximale de 90 jours, sélectionnez l’heure actuelle à la **date de début**. Sinon, vous recevrez une erreur indiquant que la date de début est antérieure à la date de fin. Si vous avez activé l’audit dans les 90 derniers jours, la plage de dates maximale ne peut pas démarrer avant la date à laquelle l’audit a été activé. 
   
-3. **Utilisateurs** Cliquez dans cette zone, puis sélectionnez un ou plusieurs utilisateurs pour afficher les résultats de recherche. Les entrées du journal d’audit pour l’activité sélectionnée effectuées par les utilisateurs que vous sélectionnez dans cette zone sont affichées dans la liste des résultats. Laissez cette zone vide de renvoi des entrées pour tous les utilisateurs (et les comptes de service) dans votre organisation. 
+    c. Cliquez sur **les utilisateurs** dans cette zone et sélectionnez un ou plusieurs utilisateurs à afficher la recherche résultats pour. Les entrées du journal d’audit pour l’activité sélectionnée effectuées par les utilisateurs que vous sélectionnez dans cette zone sont affichées dans la liste des résultats. Laissez cette zone vide de renvoi des entrées pour tous les utilisateurs (et les comptes de service) dans votre organisation. 
     
-4. **Fichier ou dossier** Tapez une partie ou la totalité d’un nom de fichier ou un dossier pour rechercher des activités liées au fichier du dossier qui contient le mot clé spécifié. Vous pouvez également spécifier une URL d’un fichier ou un dossier. Si vous utilisez une URL, assurez-vous que le type le chemin d’URL complète ou si vous tapez uniquement une partie de l’URL, n’incluez pas des caractères spéciaux ou des espaces. 
+    **fichier ou dossier** tapez tout ou partie d’un nom de fichier ou un dossier pour rechercher des activités liées au fichier du dossier qui contient le mot clé spécifié. Vous pouvez également spécifier une URL d’un fichier ou un dossier. Si vous utilisez une URL, assurez-vous que le type le chemin d’URL complète ou si vous tapez uniquement une partie de l’URL, n’incluez pas des caractères spéciaux ou des espaces. 
     
     Laissez cette zone vide de renvoi des entrées pour tous les fichiers et dossiers dans votre organisation.
     

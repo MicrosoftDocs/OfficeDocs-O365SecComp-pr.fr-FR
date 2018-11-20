@@ -11,12 +11,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: Utiliser l’outil de découverte électronique de recherche de contenu de sécurité Office 365 &amp; centre de conformité pour trouver rapidement les e-mails de boîtes aux lettres Exchange, des documents dans les sites SharePoint et les emplacements de OneDrive et les conversations dans Skype pour les entreprises de messagerie instantanée.
-ms.openlocfilehash: d7ccdd8e501e38b67cc00ec457622080d6c58001
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 96a30bfe7b7cc5a1398cafa66577f0b7dc681d23
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038227"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238396"
 ---
 # <a name="search-for-content-in-office-365"></a>Rechercher du contenu dans Office 365
 
@@ -42,6 +42,8 @@ La première étape consiste à démarrer à l’aide de l’outil de recherche 
     
 - [Modification](bulk-edit-content-searches.md) de la requête et les emplacements de contenu pour plusieurs recherches 
     
+- [Destinataires Cci conserver](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) , vous pouvez rechercher les 
+
 ## <a name="perform-actions-on-content-you-find"></a>Effectuer des actions sur le contenu que vous trouvez
 
 Après avoir exécuté une recherche et affiner selon les besoins, l’étape suivante consiste à effectuer une opération avec les résultats renvoyés par la recherche. Vous pouvez exporter et télécharger les résultats sur votre ordinateur local ou dans le cas d’une attaque par courrier électronique dans votre organisation, vous pouvez supprimer les résultats d’une recherche de boîtes aux lettres utilisateur.
