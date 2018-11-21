@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Dans Office 365, les étiquettes de rétention vous aident à entreprendre les bonnes actions sur le contenu approprié. Grâce aux étiquettes de rétention, vous pouvez classer les données au sein de votre organisation à des fins de gouvernance, et appliquer des règles de rétention basées sur cette classification. Vous pouvez également utiliser des étiquettes de rétention pour implémenter la gestion des enregistrements dans Office 365.
-ms.openlocfilehash: f172a723dad3cd555dd910458d27ec1bf7926d0f
-ms.sourcegitcommit: 98a418052be88137c06f5c1abe7012359a7e90ee
+ms.openlocfilehash: d957fc251aa4591d273a65d0a85ecde0df0845c9
+ms.sourcegitcommit: c7264f3a6a97f1ff544544e2c722e7825e265fa1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "25698040"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "26299248"
 ---
 # <a name="overview-of-retention-labels"></a>Vue d’ensemble des étiquettes de rétention
 
@@ -52,9 +52,10 @@ Avec les étiquettes de rétention, vous pouvez effectuer les actions suivantes�
   - Vous n’avez pas à dépendre des utilisateurs pour classer tout le contenu correctement.
     
   - Les utilisateurs n’ont plus à connaître les stratégies de gouvernance des données : à la place, ils peuvent se concentrer sur leur travail.
-    
-    Notez que les étiquettes à appliquer automatiquement requièrent un abonnement Office 365 Entreprise E5.
-    
+
+  > [!NOTE]
+  > Pour appliquer automatiquement des étiquettes, chaque utilisateur disposant des autorisations nécessaires pour modifier du contenu étiqueté automatiquement dans un site ou une boîte aux lettres doit disposer d’une licence Office 365 Entreprise E5. Les utilisateurs qui ont simplement un accès en lecture seule n’ont pas besoin d’une licence.
+      
 - **Appliquer une étiquette de rétention par défaut à une bibliothèque de documents** dans les sites de groupes Office 365 et SharePoint, afin que tous les documents figurant dans cette bibliothèque obtiennent l’étiquette de rétention par défaut. 
     
 - **Mettre en œuvre la gestion des enregistrements dans Office 365**, notamment les e-mails et les documents. Vous pouvez utiliser une étiquette de rétention pour classer du contenu en tant qu’enregistrement. Lorsque cela se produit, l’étiquette ne peut pas être modifiée ou supprimée, et le contenu ne peut pas être modifié ou supprimé. 

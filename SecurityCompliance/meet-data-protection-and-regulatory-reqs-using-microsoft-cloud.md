@@ -3,7 +3,7 @@ title: Répondre aux exigences sur la protection des données et aux réglementa
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/26/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Le Gestionnaire de conformité, disponible dans le Portail d’approbation de services de Microsoft, propose des outils pour suivre, implémenter et gérer les contrôles permettant à votre organisation de se conformer aux normes du secteur en matière de sécurité et de protection des données (par exemple, le RGPD, les normes ISO 27001 et 27018, la loi américaine HIPAA), quand elle utilise les services de cloud computing Microsoft, tels qu’Office 365 et Microsoft Azure. Le Gestionnaire de conformité permet à la personne responsable de la stratégie de protection des données et de la vie privée de votre organisation de gérer vos processus d’évaluation des risques et de conformité.
-ms.openlocfilehash: b8493775210be14a44c6d8185c56371b55634329
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a8d26db2a28d5b022f20408caf418b23edd98167
+ms.sourcegitcommit: 6669b7aae26965145e85d9613d3091bf389f000b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528278"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "26618930"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Répondre aux exigences sur la protection des données et aux réglementations pendant l’utilisation des services de cloud computing Microsoft à l’aide du Gestionnaire de conformité
 
  *Le Gestionnaire de conformité n’est pas disponible dans Office 365 géré par 21Vianet, Office 365 Germany, Office 365 U.S. GCC High ou Office 365 Department of Defense.* 
   
-Le Gestionnaire de conformité est un outil d’évaluation des risques des flux de travail disponible dans le [Portail d’approbation de services de Microsoft](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662). Il vous permet de suivre, d’affecter et de vérifier les activités de mise en conformité de votre organisation avec les réglementations liées aux services professionnels Microsoft et aux services de cloud computing Microsoft, tels que Microsoft Office 365, Microsoft Dynamics 365 et Microsoft Azure. Le Gestionnaire de conformité :
+Le gestionnaire de conformité est un outil d’évaluation des risques des flux de travail disponible dans le [Portail d’approbation de services de Microsoft](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662). Il vous permet de suivre, d’affecter et de vérifier les activités de mise en conformité de votre organisation avec les réglementations liées aux services professionnels Microsoft et aux services de cloud computing Microsoft, tels que Microsoft Office 365, Microsoft Dynamics 365 et Microsoft Azure. Le gestionnaire de conformité :
   
 - Rassemble, d’une part, les informations détaillées fournies par Microsoft aux auditeurs et aux autorités de régulation dans le cadre des audits des services cloud de Microsoft menés par des tiers dans le but de vérifier le respect de différentes normes (par exemple, ISO 27001, ISO 27018 et NIST), et, d’autre part, les informations collectées en interne par Microsoft pour assurer sa conformité aux réglementations en vigueur (par exemple, la loi américaine HIPAA et le Règlement général sur la protection des données de l’UE, ou RGPD) en laissant votre organisation vérifier sa propre conformité avec ces normes et réglementations.
     
@@ -131,7 +131,7 @@ Une fois le Gestionnaire de conformité configuré, tous les utilisateurs qui n�
 
 ## <a name="understanding-the-compliance-score"></a>Présentation du Score de conformité
 
-Dans le tableau de bord, le Gestionnaire de conformité affiche le score total des évaluations Office 365 dans le coin supérieur droit de la vignette. Il représente le Score de conformité total de l’évaluation. Celui-ci correspond à une accumulation de points obtenus pour chaque évaluation de contrôle marquée comme étant Implémenté et Testé dans l’évaluation. Quand vous ajoutez une évaluation, le Score de conformité affiché est supérieur à 0, car il prend en compte les points alloués aux contrôles gérés par Microsoft ayant été implémentés par Microsoft et testés par des tiers indépendants.
+Dans le tableau de bord, le gestionnaire de conformité affiche le score total des évaluations Office 365 dans le coin supérieur droit de la vignette. Il représente le score de conformité total de l’évaluation. Celui-ci correspond à une accumulation de points obtenus pour chaque évaluation de contrôle marquée comme étant Implémenté et Testé dans l’évaluation. Quand vous ajoutez une évaluation, le score de conformité affiché est supérieur à 0, car il prend en compte les points alloués aux contrôles gérés par Microsoft ayant été implémentés par Microsoft et testés par des tiers indépendants.
   
 ![Tableau de bord du Gestionnaire de conformité – Score de conformité total](media/756091aa-1afd-4aff-93ab-c6f6824f2add.png)
   
@@ -831,8 +831,8 @@ Le Gestionnaire de conformité est conçu pour être régulièrement mis à jour
    
 ## <a name="see-also"></a>Voir aussi
 
-- [Annonce de la mise à disposition générale du Gestionnaire de conformité](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-Compliance-Manager-general-availability/ba-p/161922)
-    
-- [Microsoft 365 propose une stratégie de protection des données pour se conformer au RGPD](https://blogs.office.com/fr-FR/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)
-    
+- [Guide interactif sur le gestionnaire de conformité](https://content.cloudguides.com/guides/Compliance%20Manager)
 
+- [Annonce de la mise à disposition générale du gestionnaire de conformité](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-Compliance-Manager-general-availability/ba-p/161922)
+
+- [Microsoft 365 propose une stratégie de protection des données pour se conformer au RGPD](https://blogs.office.com/fr-FR/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)
