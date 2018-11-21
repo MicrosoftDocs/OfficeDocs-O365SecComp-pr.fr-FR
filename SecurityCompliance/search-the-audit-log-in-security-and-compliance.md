@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Utilisez la sécurité pour Microsoft Office 365 et le centre de conformité pour la recherche dans le journal d’audit unifiée pour afficher l’activité utilisateur et l’administrateur de votre organisation Office 365. '
-ms.openlocfilehash: 02e38917d3a82828d6602661b494ebc0ffb733d8
-ms.sourcegitcommit: 42c7ad69f95fc4d2de13293b39cc44931b9f82e6
+ms.openlocfilehash: 39b3d6438d4680fe7a50f831bbd2d5667c4acffe
+ms.sourcegitcommit: a138cf89095ab0d2bd07caf82b3d48149002c1fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "26522806"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "26626150"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Recherche dans le journal d’audit de la sécurité pour Microsoft Office 365 et le centre de conformité
 
@@ -40,9 +40,9 @@ Vous devez trouver si un utilisateur affiché d’un document spécifique ou pur
     
 - Activité utilisateur et d’administration dans balancement
     
-- activités de découverte de sécurité Office 365 &amp; centre de conformité
+- activités de découverte électronique dans la sécurité pour Microsoft Office 365 et le centre de conformité
     
-- Activité utilisateur et d’administration dans Power BI pour Office 365
+- Activité utilisateur et d’administration dans Power BI
     
 - Activité utilisateur et d’administration dans Microsoft Teams
 
@@ -123,7 +123,7 @@ Veillez à lire le journal d’audit des éléments suivants avant de commencer 
     
 - Les journaux d’audit Exchange Online se composent de deux types d’événements : les événements d’administration (actions effectuées par les administrateurs) et événements (actions effectuées par les utilisateurs de boîtes aux lettres) de la boîte aux lettres Exchange. Notez que l’audit de boîte aux lettres n’est pas activé par défaut. Il doit être activer pour chaque boîte aux lettres de l’utilisateur avant que les événements de boîte aux lettres peuvent être recherchées dans le journal d’audit d’Office 365. Pour plus d’informations sur l’audit des boîtes aux lettres et de la boîte aux lettres de l’audit des actions que vous avez ouvert une session, voir [Activer la boîte aux lettres de l’audit dans Office 365](enable-mailbox-auditing.md).
     
-- Enregistrement d’audit pour Power BI n’est pas activée par défaut. Pour rechercher des activités de Power BI dans le journal d’audit d’Office 365, vous devez activer l’audit dans le portail d’administration Power BI. Pour plus d’informations, voir [L’audit Power BI](https://docs.microsoft.com/power-bi/service-admin-auditing#enabling-auditing-functionality-in-the-power-bi-admin-portal).
+- Enregistrement d’audit pour Power BI n’est pas activée par défaut. Pour rechercher des activités de Power BI dans le journal d’audit d’Office 365, vous devez activer l’audit dans le portail d’administration Power BI. Pour obtenir des instructions, consultez la section « Journaux d’Audit » dans le [portail d’administration Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
     
     
 ## <a name="search-the-audit-log"></a>Rechercher le journal d’audit
@@ -276,7 +276,6 @@ Vous pouvez exporter les résultats d’une recherche de journal d’audit pour 
     
     Pour obtenir une description des propriétés qui sont répertoriés dans la colonne **AuditData** dans le fichier CSV lorsque vous téléchargez tous les résultats et le service de chaque 1 s’applique à, consultez le [journal d’audit de propriétés détaillées dans Office 365](detailed-properties-in-the-office-365-audit-log.md).
 
-  
 ## <a name="audited-activities"></a>Audit des activités
 
 Les tableaux de cette section décrivent les activités audités dans Office 365. Vous pouvez rechercher ces événements en recherchant l’audit journal de la sécurité &amp; centre de conformité. Cliquez sur l’onglet **recherche le journal d’audit** pour obtenir des instructions pas à pas. 
@@ -565,32 +564,9 @@ Pour une liste et une description détaillée des activités de découverte éle
   
 ### <a name="power-bi-activities"></a>Activités de Power BI
   
-Le tableau suivant répertorie l’utilisateur et les activités d’administration dans Power BI qui sont enregistrées dans le journal d’audit Office 365.
+Vous pouvez rechercher le journal d’audit pour les activités dans Power BI. Pour plus d’informations sur les activités de Power BI, consultez la section « Activités audité par Power Power BI » dans [à l’aide de l’audit au sein de votre organisation](https://docs.microsoft.com/power-bi/service-admin-auditing#activities-audited-by-power-bi).
   
- **Important :** Enregistrement d’audit pour Power BI n’est pas activée par défaut. Pour rechercher des activités de Power BI dans le journal d’audit de theOffice 365, vous devez activer l’audit dans le portail d’administration Power BI. Pour plus d’informations, voir [L’audit Power BI](https://docs.microsoft.com/power-bi/service-admin-auditing#enabling-auditing-functionality-in-the-power-bi-admin-portal).
-  
-|**Nom convivial**|**Operation**|**Description**|
-|:-----|:-----|:-----|
-|Membres du groupe ajoutés Power BI  <br/> |AddGroupMembers  <br/> |Un membre est ajouté à un espace de travail de groupe Power BI.  <br/> |
-|Jeu de données analysée Power BI  <br/> |AnalyzedByExternalApplication  <br/> |Un ensemble de données est analysé par une application externe.  <br/> |
-|Tableau de bord créé Power BI  <br/> |CreateDashboard  <br/> |Un tableau de bord est créé.  <br/> |
-|Groupe Power BI  <br/> |CreateGroup  <br/> |Un groupe est créé.  <br/> |
-|Création d’organisation pack contenu Power BI  <br/> |CreateOrgApp  <br/> |Un module d’organisation de contenu est créé.  <br/> |
-|Tableau de bord supprimé Power BI  <br/> |DeleteDashboard  <br/> |Un tableau de bord est supprimé.  <br/> |
-|Jeu de données supprimé Power BI  <br/> |DeleteDataset  <br/> |Un ensemble de données est supprimé.  <br/> |
-|Rapport Power BI supprimé  <br/> |DeleteReport  <br/> |Un rapport est supprimé.  <br/> |
-|Rapport Power BI téléchargé  <br/> |DownloadReport  <br/> |Un utilisateur télécharge un rapport Power BI depuis le service sur leur ordinateur.  <br/> |
-|Tableau de bord modifiée Power BI  <br/> |EditDashboard  <br/> |Un tableau de bord est renommé.  <br/> |
-|Données de visual exportées des rapports Power BI  <br/> |ExportReport  <br/> |Données sont exportées depuis une mosaïque de rapport.  <br/> |
-|Données de mosaïque exportées Power BI  <br/> |ExportTile  <br/> |Données sont exportées depuis une mosaïque de tableau de bord.  <br/> |
-|Tableau de bord imprimé Power BI  <br/> |PrintDashboard  <br/> |Un tableau de bord est imprimée.  <br/> |
-|Page de rapport imprimé Power BI  <br/> |PrintReport  <br/> |Un état est imprimé.  <br/> |
-|Publication web rapport Power BI  <br/> |PublishToWebReport  <br/> |Un rapport est publié sur le web.  <br/> |
-|Tableau de bord de Power BI partagé  <br/> |ShareDashboard  <br/> |Un tableau de bord est partagé.  <br/> |
-|Version d’évaluation de prise en main Power BI  <br/> |OptInForProTrial  <br/> |Un utilisateur démarre une inscription d’essai Power BI Pro.  <br/> |
-|Paramètres de mise à jour de l’organisation Power BI  <br/> |UpdatedAdminFeatureSwitch  <br/> |Un administrateur modifié un paramètre d’organisation dans le portail d’administration Power BI.  <br/> |
-|Tableau de bord affiché Power BI  <br/> |ViewDashboard  <br/> |Un tableau de bord est affiché.  <br/> |
-|Visualisé rapport Power BI  <br/> |ViewReport  <br/> |Un rapport est affiché.  <br/> |
+Notez que l’enregistrement d’audit pour Power BI n’est pas activé par défaut. Pour rechercher des activités de Power BI dans le journal d’audit d’Office 365, vous devez activer l’audit dans le portail d’administration Power BI. Pour obtenir des instructions, consultez la section « Journaux d’Audit » dans le [portail d’administration Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
   
 ### <a name="microsoft-teams-activities"></a>Activités Microsoft Teams
   
