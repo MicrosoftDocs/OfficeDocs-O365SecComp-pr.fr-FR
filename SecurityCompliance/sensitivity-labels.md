@@ -3,7 +3,7 @@ title: Vue d’ensemble des étiquettes de niveau de confidentialité
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 6/22/2018
+ms.date: 10/22/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Avec les étiquettes de niveau de confidentialité dans Office 365, vous pouvez classer et protéger le contenu sensible, tout en vous assurant que la productivité et la possibilité de collaboration des membres de votre organisation ne sont pas altérées. Vous pouvez utiliser les étiquettes de niveau de confidentialité afin d’appliquer des paramètres de protection, comme le chiffrement ou les filigranes, sur le contenu étiqueté.
-ms.openlocfilehash: d08f0e630aeec185ac36998e611fa11ba5c5e007
-ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
+ms.openlocfilehash: ad6137ad00fa2e7eb83a405e429d6c7826cf6a90
+ms.sourcegitcommit: d7e87ce4b1579ac47af2e853ef59ef058c40191f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "25769903"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "26547216"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Vue d’ensemble des étiquettes de niveau de confidentialité
 
@@ -69,7 +69,7 @@ Une seule étiquette de niveau de confidentialité peut être affectée à chaqu
 
 Une fois qu’une étiquette de niveau de confidentialité est appliquée à un e-mail ou un document, les paramètres de protection relatifs à cette étiquette sont appliqués au contenu. Avec une étiquette de niveau de confidentialité, vous pouvez effectuer les actions suivantes :
 
-- **Chiffrer** des e-mails uniquement, ou des e-mails et des documents. Vous pouvez déterminer quels utilisateurs ou groupes sont autorisés à effectuer telle ou telle action, et pendant combien de temps. Par exemple, vous pouvez choisir d’autoriser les utilisateurs dans un domaine spécifique en dehors de votre organisation à passer en revue le contenu pendant 7 jours uniquement une fois que le contenu est étiqueté.
+- **Chiffrer** des e-mails uniquement, ou des e-mails et des documents. Vous pouvez déterminer quels utilisateurs ou groupes sont autorisés à effectuer telle ou telle action, et pendant combien de temps. Par exemple, vous pouvez choisir d’autoriser les utilisateurs dans un domaine spécifique en dehors de votre organisation à passer en revue le contenu pendant 7 jours uniquement une fois que le contenu est étiqueté. Pour plus d’informations, reportez-vous à l’article [Restriction de l’accès au contenu à l’aide du chiffrement dans les étiquettes de sensibilité](encryption-sensitivity-labels.md).
 
 - **Marquer le contenu** en ajoutant des en-têtes, des pieds de page ou des filigranes personnalisés à des e-mails ou à des documents auxquels l’étiquette a été appliquée. Notez que les filigranes sont appliqués uniquement aux documents, et non aux e-mails, et qu’ils sont limités à 255 caractères. Quant aux en-têtes et aux pieds de page, ils sont limités à 1 024 caractères (sauf dans Excel, où ils sont limités à 255 caractères, en fonction de la présence d’autres en-têtes ou pieds de page dans le document ainsi que d’autres facteurs).
 
