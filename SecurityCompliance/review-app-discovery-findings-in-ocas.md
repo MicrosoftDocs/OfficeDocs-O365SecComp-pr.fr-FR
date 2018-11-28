@@ -1,9 +1,8 @@
 ---
-title: Passez en revue les conclusions de découverte d’application dans Office 365 Cloud application sécurité
+title: Passer en revue les détections d'applications dans la sécurité des applications cloud Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/19/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,14 +12,14 @@ search.appverid:
 - MOE150
 ms.assetid: aac65513-e75e-4c82-a668-9a6604dd9f9d
 description: Consultation des rapports de détection d’application dans la gestion de la sécurité avancée peut vous aider à en savoir plus sur l’utilisation des applications dans le nuage par les personnes dans votre organisation. Une fois que vous avez créé des rapports de découverte d’application à l’aide de fichiers journaux à partir de votre pare-feu et des proxys, passez en revue les résultats du tableau de bord de détection d’application.
-ms.openlocfilehash: 188ef87920b26069e7d99057662b3812be22e46c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ddf3826f5aac9d3c837cf66f1b97b4650df70f32
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527508"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706258"
 ---
-# <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>Passez en revue les conclusions de découverte d’application dans Office 365 Cloud application sécurité
+# <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>Passer en revue les détections d'applications dans la sécurité des applications cloud Office 365
   
 |Évaluation **\>**|Planification **\>**|Déploiement **\>**|Utilisation du ***|
 |:-----|:-----|:-----|:-----|
@@ -36,9 +35,7 @@ Le tableau de bord dans le nuage découverte fonctionne avec les journaux de tra
 
 1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école pour Office 365. (Cela vous amène à la sécurité &amp; centre de conformité.) 
     
-2. Dans la sécurité &amp; centre de conformité, sélectionnez **alertes** \> **Gestion avancée des alertes**.
-    
-    (Si Office 365 Cloud application sécurité n’est pas encore activée, et vous êtes un administrateur global, [Activer la sécurité d’application Office 365 dans le nuage](turn-on-office-365-cas.md).)
+2. Dans la sécurité &amp; centre de conformité, sélectionnez **alertes** \> **Gestion avancée des alertes**.<br/>(Si Office 365 Cloud application sécurité n’est pas encore activée, et vous êtes un administrateur global, [Activer la sécurité d’application Office 365 dans le nuage](turn-on-office-365-cas.md).)
     
 3. Cliquez sur **Aller à la sécurité d’application Office 365 dans le nuage**.
     
@@ -70,21 +67,11 @@ Vous pouvez utiliser dans le nuage découverte pour jetez un œil plus approfond
     
 2. Utilisez la section filtres pour afficher les applications par nom, catégorie, au niveau de l’utilisation ou dernière date affichée.
     
-3. Dans la liste des résultats, placez le curseur par un nom d’application pour faire apparaître le lien **Afficher les sous-domaines** . 
+3. Dans la liste des résultats, placez le curseur par un nom d’application pour faire apparaître le lien **Afficher les sous-domaines** .<br/> ![En regard d’une application pour afficher un lien pour afficher les détails du sous-domaine de pointage](media/4a212215-8a2c-46fd-9ef9-89e4064658a6.png)<br/>Des informations détaillées sur l’application sélectionnée seront affiche.
     
-    ![En regard d’une application pour afficher un lien pour afficher les détails du sous-domaine de pointage](media/4a212215-8a2c-46fd-9ef9-89e4064658a6.png)
-  
-    Des informations détaillées sur l’application sélectionnée seront affiche.
+4. Pour afficher plus d’informations sur les adresses IP, sélectionnez l’onglet **adresses IP** .<br/>![Découverte de nuage affiche des informations détaillées sur les adresses IP](media/0c742bf6-da9e-4d22-8656-a27a5007d5d5.png)<br/>Dans la liste des résultats, sélectionnez une adresse IP pour afficher des informations plus détaillées.
     
-4. Pour afficher plus d’informations sur les adresses IP, sélectionnez l’onglet **adresses IP** . 
-    
-    ![Découverte de nuage affiche des informations détaillées sur les adresses IP](media/0c742bf6-da9e-4d22-8656-a27a5007d5d5.png)
-  
-    Dans la liste des résultats, sélectionnez une adresse IP pour afficher des informations plus détaillées.
-    
-5. Pour afficher plus d’informations sur les utilisateurs d’Office 365 au sein de votre organisation, sélectionnez l’onglet **utilisateurs** . 
-    
-    ![Découverte de nuage - informations sur les utilisateurs](media/2d9c2d85-01e6-4057-8020-d9a68f26bbac.png)
+5. Pour afficher plus d’informations sur les utilisateurs d’Office 365 au sein de votre organisation, sélectionnez l’onglet **utilisateurs** .<br/>![Découverte de nuage - informations sur les utilisateurs](media/2d9c2d85-01e6-4057-8020-d9a68f26bbac.png)
   
 ## <a name="exclude-entities"></a>Exclure les entités
 
@@ -98,7 +85,7 @@ Vous pouvez exclure certains utilisateurs du système ou les adresses IP afin de
     
 4. Spécifier les utilisateurs ou les adresses IP et dans la zone **commentaires** , tapez les informations sur pourquoi de l’exclusion de ces utilisateurs ou des adresses IP. 
     
-5. Sélectionnez **Ajouter**.
+5. Cliquez sur **Add (Ajouter)**.
     
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 description: Apprenez à utiliser sur les menaces pour rechercher et vérifier la messagerie.
-ms.openlocfilehash: 9d63bd69e11bca4bc76fa6d6d00a429ed1aac508
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4440b4d1503b9a13977ef773b95fa64873662b85
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527935"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706038"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>Rechercher et vérifier le courrier électronique malveillant qui a été remis (Office 365 Threat Intelligence)
 
@@ -48,43 +48,29 @@ Les pirates peuvent être envoient du courrier à vos utilisateurs à essayer et
 > [!TIP]
 > [Threat Explorer](get-started-with-ti.md#threat-explorer) (également appelé Explorateur de solutions), un rapport puissant qui peut servir à plusieurs fins, telles que la recherche et suppression des messages, qui identifie l’adresse IP d’un expéditeur malveillant ou lancer un incident examinés. La procédure suivante se concentre sur l’utilisation de l’Explorateur pour rechercher et supprimer de messagerie des boîtes aux lettres des destinataires. 
   
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école pour Office 365. Vous accédez à la sécurité &amp; centre de conformité. 
+1. Accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école pour Office 365. Vous accédez à la sécurité &amp; centre de conformité. 
     
 2. Dans la navigation de gauche, cliquez sur **Gestion des menaces** \> **Explorer**.
     
-3. Dans le menu Affichage, choisissez **tout le courrier**.
-    
-    ![Utilisez le menu Affichage pour choisir entre le courrier et les rapports de contenu](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
+3. Dans le menu Affichage, choisissez **tout le courrier**.<br/>![Utilisez le menu Affichage pour choisir entre le courrier et les rapports de contenu](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   
-4. Notez les étiquettes qui apparaissent dans le rapport, comme **remis**, **inconnu**ou **remis à indésirable**.
+4. Notez les étiquettes qui apparaissent dans le rapport, comme **remis**, **inconnu**ou **remis à indésirable**.<br/>![Threat Explorer affichant les données pour tous les messages](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>(Selon les actions qui ont été effectuées sur les messages électroniques pour votre organisation, vous pouvez voir des étiquettes supplémentaires, tels que **bloqué** ou **remplacement**).
     
-    ![Threat Explorer affichant les données pour tous les messages](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)
+5. Dans le rapport, choisissez **remis** pour afficher uniquement les messages électroniques que vous trouvez dans la boîte de réception des utilisateurs.<br/>![En cliquant sur « Remis à indésirable » supprime l’affichage de ces données](media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
   
-    (Selon les actions qui ont été effectuées sur les messages électroniques pour votre organisation, vous pouvez voir des étiquettes supplémentaires, tels que **bloqué** ou **remplacement**).
-    
-5. Dans le rapport, choisissez **remis** pour afficher uniquement les messages électroniques que vous trouvez dans la boîte de réception des utilisateurs. 
-    
-    ![En cliquant sur « Remis à indésirable » supprime l’affichage de ces données](media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
+6. Sous le graphique, passez en revue la liste de **courrier électronique** sous le graphique.<br/>![Sous le graphique, afficher la liste des messages électroniques qui ont été détectés](media/dfb60590-1236-499d-97da-86c68621e2bc.png)
   
-6. Sous le graphique, passez en revue la liste de **courrier électronique** sous le graphique. 
-    
-    ![Sous le graphique, afficher la liste des messages électroniques qui ont été détectés](media/dfb60590-1236-499d-97da-86c68621e2bc.png)
-  
-7. Dans la liste, sélectionnez un élément pour afficher plus d’informations sur ce message électronique. Par exemple, vous pouvez cliquer sur la ligne d’objet pour afficher des informations sur l’expéditeur, les destinataires, les pièces jointes et autres messages électroniques similaires.
-    
-    ![Vous pouvez afficher des informations supplémentaires sur un élément, y compris les détails et les pièces jointes](media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
+7. Dans la liste, sélectionnez un élément pour afficher plus d’informations sur ce message électronique. Par exemple, vous pouvez cliquer sur la ligne d’objet pour afficher des informations sur l’expéditeur, les destinataires, les pièces jointes et autres messages électroniques similaires.<br/>![Vous pouvez afficher des informations supplémentaires sur un élément, y compris les détails et les pièces jointes](media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
   
 8. Après l’affichage des informations sur les messages électroniques, sélectionnez un ou plusieurs éléments dans la liste pour activer **+ Actions**.
     
-9. Utilisez la liste **+ Actions** pour appliquer une action, telles que **déplacer pour supprimer** les éléments. Cette opération supprime les messages sélectionnés de boîtes aux lettres des destinataires. 
-    
-    ![Lorsque vous sélectionnez un ou plusieurs messages électroniques, vous pouvez choisir parmi plusieurs actions disponibles](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
+9. Utilisez la liste **+ Actions** pour appliquer une action, telles que **déplacer pour supprimer** les éléments. Cette opération supprime les messages sélectionnés de boîtes aux lettres des destinataires.<br/>![Lorsque vous sélectionnez un ou plusieurs messages électroniques, vous pouvez choisir parmi plusieurs actions disponibles](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
   
 ## <a name="related-topics"></a>Voir aussi
 
 [Intelligence des menaces d’Office 365](office-365-ti.md)
   
-[Protection contre les menaces dans Office 365](protect-against-threats.md)
+[Se protéger contre les menaces dans Office 365](protect-against-threats.md)
   
 [Afficher les rapports de Protection de menace avancées d’Office 365](view-reports-for-atp.md)
   

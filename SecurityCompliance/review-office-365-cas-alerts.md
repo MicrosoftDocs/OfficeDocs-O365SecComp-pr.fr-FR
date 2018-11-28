@@ -1,9 +1,8 @@
 ---
-title: Passez en revue et effectuer une action sur les alertes de sécurité pour application Cloud Microsoft Office 365
+title: Passer en revue et effectuer une action sur les alertes dans la sécurité des applications cloud Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,14 +12,14 @@ search.appverid:
 - MOE150
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: Utilisez la page alertes dans Office 365 Cloud application sécurité pour afficher les problèmes potentiels et effectuer une action. Vous pouvez faire disparaître ou résoudre les alertes et si nécessaire, suspendre un compte d’utilisateur.
-ms.openlocfilehash: 62431adc73354e573978781f120a11746aef08d9
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 16d24ef7075a2db1dab86ee322b14f886c48b98b
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527490"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706118"
 ---
-# <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Passez en revue et effectuer une action sur les alertes de sécurité pour application Cloud Microsoft Office 365
+# <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Passer en revue et effectuer une action sur les alertes dans la sécurité des applications cloud Office 365
   
 |Évaluation **\>**|Planification **\>**|Déploiement **\>**|Utilisation du ***|
 |:-----|:-----|:-----|:-----|
@@ -33,17 +32,13 @@ Vous pouvez utiliser la page alertes de sécurité pour application Cloud Micros
   
 ## <a name="how-to-get-to-the-alerts-page"></a>Comment accéder à la page alertes
 
-1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école. 
+1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école. 
     
 2. Dans la sécurité &amp; centre de conformité, sélectionnez **alertes** \> **Gestion avancée des alertes**.
     
-3. Cliquez sur **Aller à la sécurité d’application Office 365 dans le nuage**.
-    
-    ![Dans la sécurité &amp; centre de conformité, cliquez sur Gérer les alertes avancées pour accéder à la sécurité d’application dans le nuage Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+3. Cliquez sur **Aller à la sécurité d’application Office 365 dans le nuage**.<br/>![Dans la sécurité &amp; centre de conformité, cliquez sur Gérer les alertes avancées pour accéder à la sécurité d’application dans le nuage Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
   
-4. Dans la barre de navigation dans la partie supérieure de l’écran, cliquez sur **alertes**.
-    
-    ![Dans la page alertes, vous pouvez voir des alertes déclenchées et toutes les actions effectuées.](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
+4. Dans la barre de navigation dans la partie supérieure de l’écran, cliquez sur **alertes**.<br/>![Dans la page alertes, vous pouvez voir des alertes déclenchées et toutes les actions effectuées.](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
   
 ## <a name="review-and-handle-alerts"></a>Révision et gérer des alertes
 

@@ -12,24 +12,24 @@ search.appverid:
 - MOE150
 ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 description: Découvrez où aller pour afficher des informations sur les fichiers malveillants détecté dans SharePoint, OneDrive ou équipes et comment effectuer une action sur ces fichiers.
-ms.openlocfilehash: ba1dc3551e66800213a9cb988ebe9fc5e03e31f2
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: c22e57e34cccafa3dd30a77a5a6011f2999f708c
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238506"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706198"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>Afficher des informations sur les fichiers malveillants détecté dans SharePoint, OneDrive ou Microsoft Teams
 
 [Office 365 DAV pour SharePoint, OneDrive et les équipes Microsoft](atp-for-spo-odb-and-teams.md) protège votre organisation à partir des fichiers malveillants dans les bibliothèques de documents et des sites d’équipe. Lorsqu’un fichier malveillant est détecté, ce fichier est bloqué afin qu’aucun participant ne peut ouvrir, copier, déplacer ou partager jusqu'à ce que les autres actions effectuées par l’équipe de sécurité de l’organisation. Lisez cet article pour savoir comment afficher des informations sur les fichiers détectés et les actions à effectuer. 
 
-Afin d’effectuer les tâches décrites dans cet article, vous devez disposer nécessaires [autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md). 
+Afin d’effectuer les tâches décrites dans cet article, vous devez disposer nécessaires [les autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md). 
   
 ## <a name="view-reports-with-information-about-detected-files"></a>Afficher les rapports avec des informations sur les fichiers détectés
 
 Pour afficher l’état et des informations détaillées sur les fichiers qui ont été détectés par Office 365 DAV, vous pouvez utiliser le rapport d’état de Protection de menace.
   
-1. De sécurité Office 365 &amp; centre de conformité, cliquez sur **rapports** \> **tableau de bord** \> **État de Protection de menace**.
+1. Dans la [Office 365 sécurité &amp; centre de conformité](https://security.microsoft.com), cliquez sur **rapports** \> **tableau de bord** \> **État de Protection de menace**.
     
 2. Dans le coin supérieur droit du rapport, cliquez sur **Afficher la table de détails**.
     

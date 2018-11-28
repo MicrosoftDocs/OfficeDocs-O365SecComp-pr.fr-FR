@@ -3,6 +3,7 @@ title: Afficher les rapports de Protection de menace avancées d’Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 11/27/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: Découvrez comment trouver et utiliser les rapports pour Office 365 avancée contre les menaces de sécurité &amp; centre de conformité.
-ms.openlocfilehash: 1a0ecb9a6722deb50a491a15f720481a5bb7b0a4
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: e9d3088f81d1020e70de4c2260fba81cd469715d
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552332"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706318"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Afficher les rapports de Protection de menace avancées d’Office 365
 
@@ -34,7 +35,7 @@ Le rapport **d’État de Protection de menace** est un affichage simple qui ras
 > [!NOTE]
 > Un rapport d’état de Protection de menace est disponible pour les clients qui ont des [Office 365 DAV](office-365-atp.md) ou [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP) ; Toutefois, les informations qui s’affiche dans le rapport d’état de Protection des menaces pour les clients disposant contiendra probablement que les clients EOP peuvent afficher des données différentes. Par exemple, le rapport d’état de Protection des menaces pour les clients DAV contient plus d’informations sur [les fichiers malveillants détecté dans SharePoint Online, OneDrive ou les équipes Microsoft](atp-for-spo-odb-and-teams.md). Ces informations sont spécifiques à DAV, afin que les clients qui ont EOP mais pas DAV ne seront affiche pas ces détails dans leur état de Protection de menace.
   
-Pour afficher le rapport d’état de Protection de menace, de la sécurité &amp; centre de conformité, accédez aux **rapports** \> **tableau de bord** \> **État de Protection de menace**.
+Pour afficher le rapport d’état de Protection de menace, dans le [sécurité &amp; centre de conformité](https://security.microsoft.com), accédez aux **rapports** \> **tableau de bord** \> **État de Protection de menace**.
   
 ![Rapport d’état de Protection de menace DAV](media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
   
@@ -54,7 +55,7 @@ Vous pouvez également utiliser le menu **Afficher les données** pour modifier 
 
 Le rapport de **Types de fichiers DAV** indique le type de fichiers détecté comme malveillants par les [Pièces jointes sûres DAV](atp-safe-attachments.md).
   
-Pour afficher ce rapport, de la sécurité &amp; centre de conformité, accédez aux **rapports** \> **tableau de bord** \> **Types de fichiers DAV**.
+Pour afficher ce rapport, dans le [sécurité &amp; centre de conformité](https://security.microsoft.com), accédez aux **rapports** \> **tableau de bord** \> **Types de fichiers DAV**.
   
 ![Rapport sur les Types de fichier DAV](media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
@@ -66,7 +67,7 @@ Lorsque vous placez sur un jour donné, vous pouvez voir la répartition des typ
 
 Le rapport de **Disposition de Message DAV** indique les actions qui ont été prises pour les messages électroniques qui ont été détectés comme ayant un contenu malveillant. 
   
-Pour afficher ce rapport, de la sécurité &amp; centre de conformité, accédez aux **rapports** \> **tableau de bord** \> **Destruction du Message DAV**.
+Pour afficher ce rapport, dans le [sécurité &amp; centre de conformité](https://security.microsoft.com), accédez aux **rapports** \> **tableau de bord** \> **Destruction du Message DAV**.
   
 ![Rapport de Disposition Message DAV](media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
   
@@ -89,18 +90,30 @@ Outre les rapports DAV décrites dans cet article, plusieurs autres rapports son
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>Les autorisations requises pour afficher les rapports DAV ?
 
-Pour pouvoir afficher et utiliser les rapports décrits dans cet article, vous devez disposer d’un rôle approprié est affecté de la sécurité &amp; centre de conformité et dans le centre d’administration Exchange.
-  
-|**Groupe de rôles**|**Où affecté**|**En savoir plus**|
-|:-----|:-----|:-----|
-| Un des éléments suivants :  <br/><br/>: Gestion de l’organisation  <br/>: Administrateur de sécurité  <br/>: Lecteur de sécurité  <br/> |Sécurité &amp; centre de conformité  <br/> |[Autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md) <br/> |
-| Un des éléments suivants :  <br/><br/>: Gestion de l’organisation  <br/>--Gestion de l’organisation affichage seul  <br/>--Rôle destinataires affichage seul  <br/>: Gestion de la conformité  <br/> |Centre d’administration Exchange  <br/> |[Autorisations des fonctionnalités dans Exchange Online](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
+Pour pouvoir afficher et utiliser les rapports décrits dans cet article, vous devez disposer d’un rôle approprié est affecté de la sécurité &amp; centre de conformité et le centre d’administration Exchange.
+
+- Pour la sécurité &amp; centre de conformité, vous devez disposer d’un des rôles suivants est attribué :
+    - Gestion de l’organisation
+    - Administrateur de sécurité
+    - Lecteur de sécurité
+
+- Pour Exchange Online, vous devez disposer d’un des rôles suivants est attribué :
+    - Gestion de l’organisation
+    - Gestion de l’organisation en affichage seul
+    - Rôle Destinataires en affichage uniquement
+    - Gestion de la conformité
+
+Pour plus d’informations, voir les ressources suivantes :
+
+- [Autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md)
+
+- [Autorisations des fonctionnalités dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>Que se passe-t-il si les rapports ne sont pas affichant les données ?
 
 Si vous ne voyez pas les données dans vos rapports DAV, vérifiez que vos stratégies sont correctement configurés. Votre organisation doit avoir des [stratégies DAV fiables liens](set-up-atp-safe-links-policies.md) et [pièces jointes sûres DAV stratégies](set-up-atp-safe-attachments-policies.md) définies dans l’ordre de protection DAV pour mettre en place. Consultez également la [protection contre le courrier indésirable et anti-programme malveillant dans Office 365](anti-spam-and-anti-malware-protection.md).
   
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Rapports et vues d’ensemble de sécurité Office 365 &amp; centre de conformité](reports-and-insights-in-security-and-compliance.md)
   

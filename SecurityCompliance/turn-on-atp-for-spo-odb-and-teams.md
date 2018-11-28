@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 description: Découvrez comment activer DAV pour SharePoint, OneDrive et les équipes, notamment comment définir des alertes pour les fichiers détectés.
-ms.openlocfilehash: e413f0b57186dc1364b63e14985ef0f54ca7e442
-ms.sourcegitcommit: 0cc6083bd8cb2f7bbf18847149c6d5239f2a6403
+ms.openlocfilehash: e9df56da5d5f1a087d4e75e0122b51933ae7b315
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/27/2018
-ms.locfileid: "26699937"
+ms.locfileid: "26706448"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Activer Office 365 DAV pour SharePoint, OneDrive et les équipes de Microsoft
 
@@ -29,7 +29,7 @@ Afin d’effectuer les tâches décrites dans cet article, vous devez disposer d
 
  **Avant de commencer cette procédure, assurez-vous que l’enregistrement d’audit est déjà activé pour votre environnement Office 365**. Cela s’effectue généralement par toute personne ayant le rôle journaux d’Audit affecté dans Exchange Online. Pour plus d’informations, voir [recherche des journaux d’audit d’activer Office 365 activé ou désactivé](turn-audit-log-search-on-or-off.md).
   
-1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://protection.office.com](https://protection.office.com), puis connectez-vous avec votre compte professionnel ou de l’école.
+1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://security.microsoft.com](https://security.microsoft.com), puis connectez-vous avec votre compte professionnel ou de l’école.
     
 2. De sécurité Office 365 &amp; centre de conformité, dans le volet de navigation de gauche, sous **Gestion des menaces**, choisissez **stratégie** \> **Pièces jointes fiables**. <br/>![Dans la sécurité &amp; centre de conformité, cliquez sur gestion des menaces \> stratégie](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
   
@@ -55,7 +55,7 @@ Pour en savoir plus sur l’expérience utilisateur lorsqu’un fichier a été 
 
 Pour recevoir une notification lorsqu’un fichier dans SharePoint Online, OneDrive pour les professionnels ou Microsoft Teams a été identifié comme malveillant, vous pouvez configurer une alerte.
   
-1. De sécurité Office 365 &amp; centre de conformité, sélectionnez **alertes** \> **Gérer les alertes**.
+1. Dans la [Office 365 sécurité &amp; centre de conformité](https://security.microsoft.com), choisissez **alertes** \> **Gérer les alertes**.
     
 2. Choisissez **nouvelle stratégie de l’alerte**.
     

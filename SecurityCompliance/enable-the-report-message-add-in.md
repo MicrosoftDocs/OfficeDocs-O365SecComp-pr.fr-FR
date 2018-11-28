@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 description: Découvrez comment activer le complément de Message de rapport pour Outlook et Outlook sur le web, pour des utilisateurs individuels ou la totalité de votre organisation.
-ms.openlocfilehash: a62e3e6250d2eccd2109a71f994713e2dd1b262e
-ms.sourcegitcommit: 6669b7aae26965145e85d9613d3091bf389f000b
+ms.openlocfilehash: f35899d3f0be9ee07cb6dae5c5fec40395948340
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "26618920"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706368"
 ---
 # <a name="enable-the-report-message-add-in"></a>Activer le complément Signaler le message
 
@@ -59,7 +59,7 @@ Une fois que le complément est installé et activé, vous verrez les icônes su
 ## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>Obtenir et activer le complément de Message de rapport pour votre organisation
 
 > [!IMPORTANT]
-> Vous devez être un administrateur global d’Office 365 ou Exchange Online administrateur pour effectuer cette tâche. En outre, Exchange doit être configuré pour utiliser l’authentification OAuth pour plus d’informations, voir [Configuration requise pour Exchange (centralisée le déploiement des compléments)](https://docs.microsoft.com/en-us/office365/admin/manage/centralized-deployment-of-add-ins&view=o365-worldwide#exchange-requirements). 
+> Vous devez être un administrateur global d’Office 365 ou Exchange Online administrateur pour effectuer cette tâche. En outre, Exchange doit être configuré pour utiliser l’authentification OAuth pour plus d’informations, voir [Configuration requise pour Exchange (centralisée le déploiement des compléments)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins&view=o365-worldwide#exchange-requirements). 
 
 1. Accédez à la [page des compléments et des Services](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) dans le centre d’administration Microsoft 365 nouveau.<br/>![Page Services et compléments dans le nouveau centre d’administration de 365 Microsoft](media/ServicesAddInsPageNewM365AdminCenter.png)<br/> 
     

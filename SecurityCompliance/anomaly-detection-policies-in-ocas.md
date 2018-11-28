@@ -1,5 +1,5 @@
 ---
-title: Stratégies de détection des anomalies dans Office 365 Cloud Application Security
+title: Stratégies de détection des anomalies dans la sécurité des applications cloud Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Stratégies de détection des anomalies dans Office 365 Cloud application sécurité utilisent algorithmes intégrés pour découvrir des problèmes potentiels. Vous devez disposer de stratégie de détection au moins une anomalie, vous pouvez régler (lors de sa création) à l’aide de filtres. '
-ms.openlocfilehash: 80f576d7c1c42ab60c1b031dcd33591f8e1ce4b8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8babe86dd5adb6c25a069096157cac121ad66ab1
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528684"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706338"
 ---
-# <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Stratégies de détection des anomalies dans Office 365 Cloud Application Security
+# <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Stratégies de détection des anomalies dans la sécurité des applications cloud Office 365
 
 Gestion de la sécurité Office 365 avancée est désormais sécurité d’application Office 365 dans le nuage.
   
@@ -51,7 +51,7 @@ Vérifiez que :
     
 ## <a name="view-your-anomaly-detection-policies"></a>Afficher vos stratégies de détection des anomalies
 
-1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école. 
+1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école. 
     
 2. Dans la sécurité &amp; centre de conformité, sélectionnez **alertes** \> **Gestion avancée des alertes**.
     
@@ -67,7 +67,7 @@ Vérifiez que :
   
 5. Sélectionnez une stratégie pour consulter ou modifier ses paramètres.
     
-6. Choisissez **mise à jour** pour enregistrer vos modifications. 
+6. Choisissez **Update** (Mettre à jour) pour enregistrer vos modifications. 
     
 ## <a name="learn-more-about-anomaly-detection-policies"></a>Pour plus d’informations sur les stratégies de détection des anomalies
 
@@ -93,7 +93,7 @@ Le tableau suivant décrit les stratégies de détection des anomalies par défa
 
 Comme les alertes qui se vous pouvez trier ces alertes rapidement et déterminer ceux à gérer tout d’abord. Ayant le contexte d’une alerte vous permet de voir une image plus grande et de déterminer si un élément malveillant en effet se produit. Utilisez la procédure suivante pour commencer l’exploration d’une alerte :
   
-1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école. 
+1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école. 
     
 2. Dans la sécurité &amp; centre de conformité, sélectionnez **alertes** \> **Gestion avancée des alertes**.
     
@@ -118,7 +118,6 @@ Comme les alertes qui se vous pouvez trier ces alertes rapidement et déterminer
 Une alerte sur plusieurs échecs de connexion peut-être être en effet suspecte et peut indiquer une attaque potentielle contre les attaques en force. Toutefois, une telle alerte peut également être un problème de configuration d’application, à l’origine de l’alerte d’un faible positif true. Si vous voyez une alerte plusieurs Échec de connexions avec d’autres activités suspectes, il est une probabilité qu’un compte est compromis. Par exemple, supposons qu’une alerte plusieurs Échec de la connexion est suivie d’activité à partir d’une adresse IP de TOR et l’activité de déplacement impossible, les deux indicateurs forts de compromis. Vous pouvez même voir que le même utilisateur effectué une activité de téléchargement en masse, qui est souvent un indicateur de l’intrus effectue d’exfiltration de données. Il s’agit de choses comme que vous pouvez Explorer dans Office 365 Cloud application sécurité pour afficher et trier vos alertes et effectuer une action si nécessaire.
   
 ## <a name="next-steps"></a>Étapes suivantes
-<a name="nextsteps"> </a>
 
 - [Intégrer votre serveur SIEM](integrate-your-siem-server-with-office-365-cas.md)
     

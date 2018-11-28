@@ -1,5 +1,5 @@
 ---
-title: Rechercher une activité dans Office 365 Cloud Application Security
+title: Examiner une activité dans la sécurité des applications cloud Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.assetid: 15fa4545-28b4-4dd4-bf85-88e0926bd5fc
 description: 'Avec Office 365 de sécurité App dans le nuage, vous pouvez voir ce qui se passe dans votre environnement Office 365 en observant chargées activités et comptes. '
-ms.openlocfilehash: 03db572ebddbdf27371f8e6fd2f0cdd91c14a12f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 6b5aca33a73fbfaecf8133368a33956ddc92da7a
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527692"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706458"
 ---
-# <a name="investigate-an-activity-in-office-365-cloud-app-security"></a>Rechercher une activité dans Office 365 Cloud Application Security
+# <a name="investigate-an-activity-in-office-365-cloud-app-security"></a>Examiner une activité dans la sécurité des applications cloud Office 365
   
 |Évaluation **\>**|Planification **\>**|Déploiement **\>**|Utilisation du ***|
 |:-----|:-----|:-----|:-----|
@@ -30,17 +30,13 @@ Office 365 Cloud application sécurité fonctionne avec [journal d’audit Offic
   
 ## <a name="how-to-get-to-the-activity-log-page"></a>Comment accéder à la page journal d’activité
 
-1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école. (Voir [les autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md).)
+1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école. (Voir [les autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md).)
     
 2. Dans la sécurité &amp; centre de conformité, sélectionnez **alertes** \> **Gestion avancée des alertes**.
     
-3. Cliquez sur **Aller à la sécurité d’application Office 365 dans le nuage**.
-    
-    ![Dans la sécurité &amp; centre de conformité, cliquez sur Gérer les alertes avancées pour accéder à la sécurité d’application dans le nuage Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+3. Cliquez sur **Aller à la sécurité d’application Office 365 dans le nuage**.<br/>![Dans la sécurité &amp; centre de conformité, cliquez sur Gérer les alertes avancées pour accéder à la sécurité d’application dans le nuage Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
   
-4. Dans la barre de navigation dans la partie supérieure de l’écran, choisissez **examiner** \> **le journal d’activité**.
-    
-    ![Dans le portail O365 autorités de certification, cliquez sur examiner.](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
+4. Dans la barre de navigation dans la partie supérieure de l’écran, choisissez **examiner** \> **le journal d’activité**.<br/>![Dans le portail O365 autorités de certification, cliquez sur examiner.](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
   
 ## <a name="review-and-investigate-activities"></a>Passez en revue et examiner les activités
 
@@ -66,7 +62,7 @@ Utilisez la page de journal d’activité pour découvrir comment les personnes 
   
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Passez en revue et effectuer une action sur les alertes de sécurité pour application Cloud Microsoft Office 365](review-office-365-cas-alerts.md)
+- [Passer en revue et effectuer une action sur les alertes dans la sécurité des applications cloud Office 365](review-office-365-cas-alerts.md)
     
 - Passez en revue vos [activités utilisation Office 365 nuage sécurité des applications](utilization-activities-for-ocas.md)
     

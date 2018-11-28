@@ -1,5 +1,5 @@
 ---
-title: Procédure pas à pas - à partir d’un tableau de bord pour un aperçu
+title: Procédure pas à pas. D’un tableau de bord à un aperçu
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.assetid: 703c41df-b3e2-4e7e-9eeb-1a0b8d60fb56
 description: Découvrez comment vous pouvez passer un tableau de bord pour un aperçu des actions recommandées dans la sécurité &amp; centre de conformité.
-ms.openlocfilehash: 9245d26a98bac34836772cb1d895c638ed5e5564
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 933bf6e86bc1ddce9259d071b69654f68e4dd370
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528490"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706148"
 ---
-# <a name="walkthrough---from-a-dashboard-to-an-insight"></a>Procédure pas à pas - à partir d’un tableau de bord pour un aperçu
+# <a name="walkthrough---from-a-dashboard-to-an-insight"></a>Procédure pas à pas. D’un tableau de bord à un aperçu
 
 Si vous utilisez pour [des rapports et des vues d’ensemble de sécurité Office 365 &amp; centre de conformité](reports-and-insights-in-security-and-compliance.md), il peut vous aider à voir comment vous pouvez accéder facilement à partir d’un tableau de bord à un aperçu et les actions recommandées. 
   
@@ -30,7 +30,7 @@ Il s’agit d’une des procédures pas à pas plusieurs pour la sécurité &amp
 
 Examinons le flux à partir d’un tableau de bord à un rapport à un aperçu et une action. (Ceci est un exemple brève [aide à la décision usurpation d’identité](learn-about-spoof-intelligence.md) .) 
   
-1. Nous commençons par le tableau de bord de sécurité de la sécurité &amp; centre de conformité. (Accédez à **gestion de menace** \> **tableau de bord**.)
+1. Nous commençons par le tableau de bord de sécurité dans le [sécurité &amp; centre de conformité](https://security.microsoft.com). (Accédez à **gestion de menace** \> **tableau de bord**.)
     
     ![Dans la sécurité &amp; centre de conformité, cliquez sur gestion des menaces \> tableau de bord](media/05a38660-eb13-4960-a266-11809c453d95.png)
   

@@ -1,9 +1,8 @@
 ---
-title: Menaces suivis - nouvelles et utiles
+title: Suivis contre les menaces - nouveaux et intéressants
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/15/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,16 +12,16 @@ search.appverid:
 - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 description: Découvrez les suivis de menace, y compris les nouveaux dispositifs dignes d’intérêt, pour aider votre organisation à maîtriser les problèmes de sécurité.
-ms.openlocfilehash: 1ec772d367446b20f1846a71a86d6f62a2370e6c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e9dfdde563260ff7969f4749357c130ab98ce386
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527997"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706378"
 ---
-# <a name="threat-trackers---new-and-noteworthy"></a>Menaces suivis - nouvelles et utiles
+# <a name="threat-trackers---new-and-noteworthy"></a>Suivis contre les menaces - nouveaux et intéressants
 
-[Office 365 menaces](office-365-ti.md) permet à l’équipe de sécurité de votre organisation à découvrir et à effectuer une action contre les menaces de sécurité. **Que commençant dans fin mars 2018 et sur les semaines à venir, Office 365 menaces inclura nouvelles fonctionnalités de suivi de menace**, y compris des dispositifs dignes d’intérêt. Lisez cet article pour obtenir une vue d’ensemble de ces nouvelles fonctionnalités et les étapes suivantes. 
+[Office 365 menaces](office-365-ti.md) permet à l’équipe de sécurité de votre organisation à découvrir et à effectuer une action contre les menaces de sécurité. À partir de fin mars 2018 et sur les semaines à venir, Office 365 menaces inclura nouvelles fonctionnalités de suivi de menace, notamment des dispositifs dignes d’intérêt. Lisez cet article pour obtenir une vue d’ensemble de ces nouvelles fonctionnalités et les étapes suivantes. 
   
 ## <a name="what-are-threat-trackers"></a>Quelles sont les menaces suivis ?
 
@@ -36,7 +35,7 @@ La plupart des pages tracker inclure les numéros de tendances qui sont périodi
   
 Les dispositifs de suivi sont quelques-unes des nombreuses fonctionnalités que vous obtenez avec [Office 365 menaces](office-365-ti.md). Lorsqu’elle est disponible, votre nouveau suivis menace inclura [suivis dignes d’intérêt](threat-trackers.md#notey), [suivis Trending](threat-trackers.md#trending), [requêtes de suivi](threat-trackers.md#trackedq)et [enregistré](threat-trackers.md#savedq).
   
-Pour afficher et utiliser votre suivis menace lorsqu’ils sont disponibles pour votre organisation, accédez à la sécurité &amp; centre de conformité ([https://protection.office.com](https://protection.office.com)) et cliquez sur **Gestion des menaces** \> **suivi de menace**.
+Pour afficher et utiliser votre suivis menace lorsqu’ils sont disponibles pour votre organisation, accédez à la sécurité &amp; centre de conformité ([https://security.microsoft.com](https://security.microsoft.com)) et cliquez sur **Gestion des menaces** \> **suivi de menace**.
   
 > [!NOTE]
 > Pour utiliser les dispositifs de menace, vous devez être un administrateur global d’Office 365, un administrateur de sécurité ou un lecteur de sécurité. Voir [les autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md). 
@@ -75,7 +74,7 @@ Si vous êtes consultant courrier électronique, du contenu ou des activités de
   
 Quand menace suivis sont disponibles pour vous, essayez les - et n’oubliez pas que vous pouvez toujours fournir nous part de vos commentaires sur ce ou d’autres fonctionnalités de sécurité d’Office 365 en cliquant sur le bouton de **commentaires** dans le coin inférieur droit de la vue d’ensemble d’Office 365 [ Sécurité &amp; centre de conformité](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
   
-![Sécurité Office 365 &amp; centre de conformité](media/86c330db-8132-4150-8475-220258fe04fb.png)
+![Centre de sécurité et conformité Office 365](media/86c330db-8132-4150-8475-220258fe04fb.png)
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>Dispositifs de suivi et de Protection de Microsoft Office 365 menace avancées
 

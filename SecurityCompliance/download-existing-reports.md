@@ -13,30 +13,29 @@ search.appverid:
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
 description: Découvrez comment télécharger une ou plusieurs rapports existants dans la sécurité &amp; centre de conformité.
-ms.openlocfilehash: 0d176917d6591fa5b37c4db1e9bd0dfc761d670d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e9d27f61a88cd42a4808879686605a4c4eb796d4
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528088"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706328"
 ---
 # <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>Télécharger des rapports existants dans la sécurité &amp; centre de conformité
 
-Dans la sécurité &amp; centre de conformité, plusieurs [rapports et vues d’ensemble](reports-and-insights-in-security-and-compliance.md) sont disponibles pour aider à l’équipe de sécurité de votre organisation atténuer et adresses contre les menaces envers votre organisation. Si vous êtes un membre de l’équipe de sécurité de votre organisation, vous pouvez télécharger un ou plusieurs rapports existants. 
+Dans la [sécurité &amp; centre de conformité](https://security.microsoft.com), plusieurs [rapports et vues d’ensemble](reports-and-insights-in-security-and-compliance.md) sont disponibles pour aider à l’équipe de sécurité de votre organisation atténuer et adresses contre les menaces envers votre organisation. Si vous êtes un membre de l’équipe de sécurité de votre organisation, vous pouvez télécharger un ou plusieurs rapports existants. 
   
 ## <a name="download-existing-reports"></a>Télécharger des rapports existants
 
 > [!IMPORTANT]
 > Assurez-vous que vous avez nécessaires [autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md). En règle générale, les administrateurs globaux d’Office 365, les administrateurs de sécurité et les lecteurs de sécurité peuvent accéder aux rapports de sécurité &amp; centre de conformité. 
   
-1. Dans la sécurité &amp; centre de conformité, accédez aux **rapports** \> **rapports pour téléchargement**.
+1. Dans la [sécurité &amp; centre de conformité](https://security.microsoft.com), accédez aux **rapports** \> **rapports pour téléchargement**.
     
 2. Sélectionnez un ou plusieurs éléments dans la liste.
     
 3. Cliquez sur **Télécharger le rapport**, puis cliquez sur **Fermer**.
     
 ## <a name="related-topics"></a>Voir aussi
-<a name="download"> </a>
 
 [Rapports et vues d’ensemble de sécurité Office 365 &amp; centre de conformité](reports-and-insights-in-security-and-compliance.md)
   

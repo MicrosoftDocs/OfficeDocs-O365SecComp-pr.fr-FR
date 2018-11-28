@@ -13,16 +13,18 @@ search.appverid:
 - MOE150
 ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 description: Découvrez comment Office 365 menaces peut aider votre organisation à détecter des intrusions et les menaces et rapidement atténuer et récupérer contre les menaces.
-ms.openlocfilehash: f628b941f824e7ad2e327b476288c93f2fc535ad
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ffcbf6cc179ec8a7e8887402e139d2a0cc716eef
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528658"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706098"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-intelligence"></a>Protégez vos utilisateurs Office 365 avec Office 365 Threat Intelligence
 
- *Vous savez quels utilisateurs Office 365 sont une attaque, ou pire - compromise ? Savent atténuer et récupérer des attaques ciblant vos utilisateurs ? Saviez-vous que vous pouvez le faire exactement les fonctionnalités de sécurité qui sont déjà disponibles dans Office 365 ?* 
+## <a name="overview"></a>Vue d’ensemble
+
+Vous savez quels utilisateurs Office 365 sont une attaque, ou pire - compromise ? Savent atténuer et récupérer des attaques ciblant vos utilisateurs ? Saviez-vous que vous pouvez le faire exactement les fonctionnalités de sécurité qui sont déjà disponibles dans Office 365 ? 
   
 [Menaces Office 365](office-365-ti.md) est un ensemble de fonctionnalités incluses dans votre abonnement Office 365 E5. Office 365 menaces a permis à Microsoft IT réduire le temps moyen de résolution des incidents d’ingénierie sociale à 80 % et un débit accru cas 37 % par mois par rapport aux précédentes trimestres 2 ! 
   
@@ -30,9 +32,9 @@ Nous avons récemment ajouté de nouvelles fonctionnalités pour aider à améli
   
 ## <a name="detect-intrusions-and-threats"></a>Détecter des intrusions et les menaces
 
-L' **Explorateur de solutions Office 365 menace** permet de sécurité administrateurs et les analystes d’identifient et comprennent les menaces qui sont actifs dans votre entreprise, car même les paramètres de sécurité plus complexes peuvent échouer par la configuration de l’utilisateur a priori inoffensif comme listes d’expéditeurs autorisés. Threat Explorer permet à Office 365 globale ou administrateurs de la sécurité de déterminer rapidement si les utilisateurs ont été compromis par les menaces telles que les logiciels malveillants ou hameçonnage. Cela permet de définir la priorité dont les utilisateurs sont plus au risque d’une menace et la réponse requise. 
+[Explorateur de solutions](use-explorer-in-security-and-compliance.md) (également appelé Threat Explorer) vous aide à identifier et comprendre les menaces qui sont actifs dans votre entreprise, car même les paramètres de sécurité plus complexes peuvent échouer par la configuration de l’utilisateur a priori inoffensif comme sécurisés les analystes et les administrateurs de sécurité listes des expéditeurs autorisés. Explorer contribue à Office 365 globale ou administrateurs de la sécurité de déterminer rapidement si les utilisateurs ont été compromis par les menaces telles que les logiciels malveillants ou hameçonnage. Cela permet de définir la priorité dont les utilisateurs sont plus au risque d’une menace et la réponse requise. 
   
-Threat Explorer permet également d’administrateurs de parcourir les relations entre les utilisateurs et de messagerie. Connaissance d’un message particulier qui a été incorrect ? Rechercher pour voir quels utilisateurs reçu le message, puis suivez la série d’événements et de voir ce que les utilisateurs à son tour ont fait.
+Explorer permet également d’administrateurs de parcourir les relations entre les utilisateurs et de messagerie. Connaissance d’un message particulier qui a été incorrect ? Rechercher pour voir quels utilisateurs reçu le message, puis suivez la série d’événements et de voir ce que les utilisateurs à son tour ont fait.
 
 Si vous ne disposez pas d’informations sur les menaces, [Essayez-le maintenant](https://aka.ms/tryo365threatintel3)! Et [en savoir plus sur Office 365 menaces](https://aka.ms/readmoreabouto365threatintel).
   

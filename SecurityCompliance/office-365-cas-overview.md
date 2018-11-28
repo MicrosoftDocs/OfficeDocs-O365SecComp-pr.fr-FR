@@ -1,9 +1,8 @@
 ---
-title: Vue d’ensemble de la sécurité d’application Office 365 dans le nuage
+title: Vue d’ensemble de la sécurité des applications cloud Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -14,14 +13,14 @@ search.appverid:
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: 'Sécurité d’application Office 365 Cloud vous donne des informations sur les activités suspectes dans Office 365 afin que vous pouvez examiner les situations qui sont susceptibles de poser problème et, si nécessaire, prennent des mesures pour résoudre les problèmes de sécurité. '
-ms.openlocfilehash: 84d5b412b62bf113101d6322032f3b643d87d741
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: b146512c22cbe86ce3aef95c5916de6959341578
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527828"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706398"
 ---
-# <a name="overview-of-office-365-cloud-app-security"></a>Vue d’ensemble de la sécurité d’application Office 365 dans le nuage
+# <a name="overview-of-office-365-cloud-app-security"></a>Vue d’ensemble de la sécurité des applications cloud Office 365
   
 |Évaluation **\>**|Planification **\>**|Déploiement **\>**|Utilisation du ***|
 |:-----|:-----|:-----|:-----|
@@ -40,13 +39,9 @@ Sécurité d’application Office 365 dans le nuage donne un aperçu des activit
   
 Vous pouvez obtenir au portail Office 365 Cloud application sécurité par le biais de la sécurité de 365 Office &amp; centre de conformité. Voici un excellent moyen de le faire :
   
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école pour Office 365. (Cela vous amène à la sécurité &amp; centre de conformité.) 
+1. Accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école pour Office 365. (Cela vous amène à la sécurité &amp; centre de conformité.) 
     
-2. Dans la sécurité &amp; centre de conformité, sélectionnez **alertes** \> **Gestion avancée des alertes**. 
-    
-    ![Dans la sécurité &amp; centre de conformité, cliquez sur Gérer les alertes avancées pour accéder à la sécurité d’application dans le nuage Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
-  
-    (Si Office 365 Cloud application sécurité n’est pas encore activée, et vous êtes un administrateur global, [Activer la sécurité d’application Office 365 dans le nuage](turn-on-office-365-cas.md).)
+2. Dans la sécurité &amp; centre de conformité, sélectionnez **alertes** \> **Gestion avancée des alertes**. <br/>![Dans la sécurité &amp; centre de conformité, cliquez sur Gérer les alertes avancées pour accéder à la sécurité d’application dans le nuage Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>(Si Office 365 Cloud application sécurité n’est pas encore activée, et vous êtes un administrateur global, [Activer la sécurité d’application Office 365 dans le nuage](turn-on-office-365-cas.md).)
     
 3. Cliquez sur **Aller à la sécurité d’application Office 365 dans le nuage**. 
     
@@ -62,9 +57,9 @@ Pour afficher / l’utilisation des modèles de stratégie, dans le portail Offi
   
 Pour plus d’informations sur les stratégies, voir les ressources suivantes :
   
-- [Stratégies d’activité et les alertes de sécurité pour application Cloud Microsoft Office 365](activity-policies-and-alerts.md)
+- [Stratégies d’activité et alertes pour Office 365 Cloud App Security](activity-policies-and-alerts.md)
     
-- [Stratégies de détection des anomalies dans Office 365 Cloud Application Security](anomaly-detection-policies-in-ocas.md)
+- [Stratégies de détection des anomalies dans la sécurité des applications cloud Office 365](anomaly-detection-policies-in-ocas.md)
     
 ## <a name="alerts"></a>Alertes
 
@@ -76,9 +71,9 @@ Comme les alertes sont déclenchées vous pouvez les consulter pour en savoir pl
   
 Pour plus d’informations sur les alertes, voir les ressources suivantes :
   
-- [Stratégies d’activité et les alertes de sécurité pour application Cloud Microsoft Office 365](activity-policies-and-alerts.md)
+- [Stratégies d’activité et alertes pour Office 365 Cloud App Security](activity-policies-and-alerts.md)
     
-- [Stratégies de détection des anomalies dans Office 365 Cloud Application Security](anomaly-detection-policies-in-ocas.md)
+- [Stratégies de détection des anomalies dans la sécurité des applications cloud Office 365](anomaly-detection-policies-in-ocas.md)
     
 - [Passez en revue et effectuer une action sur les alertes de sécurité pour application Cloud Microsoft Office 365](review-office-365-cas-alerts.md)
     
@@ -106,7 +101,7 @@ Pour accéder à cette page, accédez à **examiner** \> **autorisations d’app
   
 ![Dans le portail O365 autorités de certification, cliquez sur examiner.](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
   
-[Gérer les autorisations d’application à l’aide de la sécurité d’application Office 365 dans le nuage](manage-app-permissions-in-ocas.md)
+[Gérer les autorisations des applications à l’aide de la sécurité des applications cloud Office 365](manage-app-permissions-in-ocas.md)
   
 ## <a name="cloud-discovery-dashboard"></a>Tableau de bord de découverte dans le nuage
 
@@ -118,12 +113,12 @@ Pour accéder à ce tableau de bord, dans le portail Office 365 Cloud applicatio
   
 ![Dans le portail Office 365 autorités de certification, cliquez sur découvrir](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)
   
-[Passez en revue les conclusions de découverte d’application dans Office 365 Cloud application sécurité](review-app-discovery-findings-in-ocas.md)
+[Passer en revue les détections d'applications dans la sécurité des applications cloud Office 365](review-app-discovery-findings-in-ocas.md)
   
 ## <a name="next-steps"></a>Étapes suivantes
 
 - Obtenir des [exemples d’utilisation de sécurité Office 365 Cloud application et le Guide d’utilisation](https://aka.ms/O365CASGuide)
     
-- [Préparez-vous pour la sécurité d’application Office 365 dans le nuage](get-ready-for-office-365-cas.md)
+- [Se préparer pour Office 365 Cloud App Security](get-ready-for-office-365-cas.md)
     
 

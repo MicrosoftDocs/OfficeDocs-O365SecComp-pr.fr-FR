@@ -3,7 +3,7 @@ title: Vue d’ensemble du tableau de bord de sécurité
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 11/27/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 description: Utilisez le nouveau tableau de bord de sécurité pour Office 365 Threat Protection état, de révision et d’afficher et agir sur les alertes de sécurité.
-ms.openlocfilehash: d124ce07fbd3eba633e8c1e844ef3f83fc8fd04f
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: d4dd20d5ce456bfca391925786a5cc02787dee54
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552362"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706278"
 ---
 # <a name="security-dashboard-overview"></a>Vue d’ensemble du tableau de bord de sécurité
 
-La sécurité &amp; centre de conformité permet à votre organisation gérer la protection des données et conformité. Début mars 2018, la sécurité &amp; centre de conformité comprend un tableau de bord de la sécurité vous pouvez utiliser pour consulter votre état de Protection des menaces et afficher et agir sur les alertes de sécurité. 
+Le [sécurité &amp; centre de conformité](go-to-the-securitycompliance-center.md) permet à votre organisation gérer la protection des données et conformité. Début mars 2018, la sécurité &amp; centre de conformité comprend un tableau de bord de la sécurité vous pouvez utiliser pour consulter votre état de Protection des menaces et afficher et agir sur les alertes de sécurité. 
   
 Regarder la vidéo pour obtenir une vue d’ensemble, puis lisez cet article pour en savoir plus.
   
@@ -41,7 +41,7 @@ Selon ce que l’abonnement de votre organisation Office 365 comprend le tableau
 Pour afficher le tableau de bord de sécurité, dans le [Office 365 sécurité &amp; centre de conformité](go-to-the-securitycompliance-center.md), accédez à **gestion de menace** \> **tableau de bord**.
   
 > [!NOTE]
-> Vous devez être un administrateur général Office 365, l’administrateur de sécurité ou le lecteur de sécurité pour afficher le tableau de bord de sécurité. Voir [les autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md). 
+> Vous devez être un administrateur global d’Office 365, un administrateur de sécurité ou un lecteur de sécurité pour afficher le tableau de bord de sécurité. Voir [les autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md). 
   
 ## <a name="threat-protection-status"></a>État de Protection de menace
 
@@ -72,7 +72,7 @@ Au bas du tableau de bord de sécurité est une section **tendances** , qui rés
   
 Et, si l’abonnement à Office 365 de votre organisation comprend des [Menaces Office 365](office-365-ti.md), vous devez également un rapport **récent gestion des alertes** dans cette section qui permet à votre équipe de sécurité pour afficher et agir sur haute priorité alertes de sécurité. 
   
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Afficher les rapports de sécurité de messagerie de la sécurité &amp; centre de conformité](view-email-security-reports.md)
   
@@ -80,6 +80,6 @@ Et, si l’abonnement à Office 365 de votre organisation comprend des [Menaces 
   
 [Protection avancée contre les menaces dans Office 365](office-365-atp.md)
   
-[Office 365 Threat Intelligence](office-365-ti.md)
+[Intelligence des menaces d’Office 365](office-365-ti.md)
   
 

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 description: Lorsque vous configurez vos stratégies de liens fiables DAV, vous pouvez inclure une réécriture non ' liste d’URL pour activer certaines personnes de votre organisation à visiter des sites que vous incluez dans votre liste.
-ms.openlocfilehash: c954c12785659f9c025046bf3773cfec2d5dd5f9
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 89fafd5ff7def491a231bc8bc3eb19ef8db16a59
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238386"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26705978"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurer une liste d’URL non--réécriture personnalisée à l’aide d’Office 365 DAV fiables liens
 
@@ -29,13 +29,11 @@ Cet article décrit comment spécifier une liste d’URL qui sont exclus de l’
 
 Protection des liens fiables DAV utilise plusieurs listes, y compris la liste des URL de votre organisation bloqué et les listes de « pas de rewrite » pour les exceptions. Si vous disposez des autorisations nécessaires, vous pouvez configurer vos listes personnalisées « pas de rewrite ». Cela lorsque vous ajoutez ou modifiez des stratégies de liens fiables qui s’appliquent à des destinataires spécifiques dans votre organisation. 
   
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous avec votre compte professionnel ou de l’école. 
+1. Accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous avec votre compte professionnel ou de l’école. 
     
 2. Dans la navigation de gauche, sous **Gestion des menaces** \> **stratégie** \> **Liens fiables**.
     
-3. Dans la section **stratégies qui s’appliquent à des destinataires spécifiques** , choisissez **Nouveau** (nouveau bouton ressemble à un signe plus ( **+**)) pour créer une nouvelle stratégie. (Vous pouvez également, vous pouvez modifier une stratégie existante).
-    
-    ![Cliquez sur Nouveau pour ajouter une stratégie de liens sécurisés pour les destinataires de messages électroniques spécifique](media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+3. Dans la section **stratégies qui s’appliquent à des destinataires spécifiques** , choisissez **Nouveau** (nouveau bouton ressemble à un signe plus ( **+**)) pour créer une nouvelle stratégie. (Vous pouvez également, vous pouvez modifier une stratégie existante).<br/>![Cliquez sur Nouveau pour ajouter une stratégie de liens sécurisés pour les destinataires de messages électroniques spécifique](media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
   
 4. Spécifiez un nom et une description pour votre stratégie.
     

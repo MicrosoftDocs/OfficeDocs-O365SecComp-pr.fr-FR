@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 description: Lisez cet article pour apprendre à configurer une liste d’URL bloqués pour votre organisation à l’aide d’Office 365 avancée protection contre les menaces. Les URL bloquées s’appliquera aux messages électroniques et des documents Office en fonction de vos stratégies de liens fiables DAV.
-ms.openlocfilehash: 1f7a991b9ab8f3a9f16616379cfb6c4c3c546260
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: cd17fe61b7ecd5becd0918323952f304a73a4ce0
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238366"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706208"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Configurer une liste d’URL bloquée personnalisée à l’aide d’Office 365 DAV fiables liens
 
@@ -33,17 +33,11 @@ Lisez cet article pour apprendre à configurer la liste des URL bloqué personna
 
 [Liens approuvés DAV dans Office 365](atp-safe-links.md) utilise plusieurs listes, y compris la liste des URL bloqué personnalisé de votre organisation. Si vous disposez des autorisations nécessaires, vous pouvez configurer la liste personnalisée de votre organisation. Pour cela, en modifiant la stratégie de liens fiables par défaut de votre organisation.
   
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous avec votre compte professionnel ou de l’école. 
+1. Accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous avec votre compte professionnel ou de l’école. 
     
 2. Dans la navigation de gauche, sous **Gestion des menaces**, choisissez **stratégie** \> **Liens fiables**.
     
-3. Dans la section **stratégies qui s’appliquent à toute l’organisation** , sélectionnez **par défaut**, puis choisissez **Modifier** (le bouton Modifier ressemble à un crayon). 
-    
-    ![Cliquez sur Modifier pour modifier votre stratégie par défaut pour la protection des liens fiables](media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
-  
-    C’est là vous permet d’afficher la liste des URL bloquées. Notez que dans un premier temps, vous n’avez aucune URL répertoriées.
-    
-    ![La liste des URL bloqués est par défaut stratégie liens fiables qui s’applique à toute votre organisation.](media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
+3. Dans la section **stratégies qui s’appliquent à toute l’organisation** , sélectionnez **par défaut**, puis choisissez **Modifier** (le bouton Modifier ressemble à un crayon).<br/>![Cliquez sur Modifier pour modifier votre stratégie par défaut pour la protection des liens fiables](media/d08f9615-d947-4033-813a-d310ec2c8cca.png)<br/>C’est là vous permet d’afficher la liste des URL bloquées. Notez que dans un premier temps, vous n’avez aucune URL répertoriées.<br/>![La liste des URL bloqués est par défaut stratégie liens fiables qui s’applique à toute votre organisation.](media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
   
 4. Sélectionnez la zone **Tapez une URL valide** et tapez une URL, puis cliquez sur le signe plus (+). Voici quelques points à prendre en compte : 
     

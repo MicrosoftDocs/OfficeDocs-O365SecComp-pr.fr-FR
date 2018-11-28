@@ -5,7 +5,6 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
-ms.date: 11/02/2018
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -13,16 +12,16 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Définir des stratégies de liens fiables pour protéger votre organisation contre les liens malveillants dans les fichiers Word, Excel, PowerPoint et Visio, ainsi que dans les messages électroniques.
-ms.openlocfilehash: 2fce043aaf6e5e844415bd0caaaded8d30c18291
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: fb2af8e29bfe2de027a2d0e88cf9bcc07299fba9
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238456"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706088"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Définir des stratégies Office 365 DAV fiables liens
 
-[Liens approuvés DAV](atp-safe-links.md) , une fonctionnalité d' [Office 365 avancée protection contre les menaces](office-365-atp.md) (DAV), peuvent aider à protéger votre organisation à partir des liens malveillants utilisés dans les attaques par hameçonnage et d’autres attaques. Si vous avez nécessaires [autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md), vous pouvez définir des stratégies de liens fiables DAV pour s’assurer que lorsque les utilisateurs cliquent sur les adresses web (URL), votre organisation est protégée. Vos stratégies de liens fiables DAV peuvent être configurées pour analyser les URL dans le message électronique et les URL dans les documents Office.
+[Liens approuvés DAV](atp-safe-links.md) , une fonctionnalité d' [Office 365 avancée protection contre les menaces](office-365-atp.md) (DAV), peuvent aider à protéger votre organisation à partir des liens malveillants utilisés dans les attaques par hameçonnage et d’autres attaques. Si vous avez nécessaires [les autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md), vous pouvez définir des stratégies de liens fiables DAV pour s’assurer que lorsque les utilisateurs cliquent sur les adresses web (URL), votre organisation est protégée. Vos stratégies de liens fiables DAV peuvent être configurées pour analyser les URL dans le message électronique et les URL dans les documents Office.
   
 [Nouvelles fonctionnalités sont continuellement ajoutées au DAV](office-365-atp.md#new-features-are-continually-being-added-to-atp). Ajout de nouvelles fonctionnalités, vous devrez peut-être ajuster vos stratégies DAV fiables liens existants.
 
@@ -52,13 +51,11 @@ ms.locfileid: "26238456"
 
 Lorsque vous avez [Contre les menaces avancées Office 365](office-365-atp.md), vous aurez une stratégie par défaut des liens fiables DAV qui s’applique à tout le monde dans votre organisation. Assurez-vous de consulter et si nécessaire, modifiez votre stratégie par défaut.
   
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous avec votre compte professionnel ou de l’école. 
+1. Accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous avec votre compte professionnel ou de l’école. 
     
 2. Dans la navigation de gauche, sous **Gestion des menaces**, choisissez **stratégie \> ** **Liens fiables**.
     
-3. Dans la section **stratégies qui s’appliquent à toute l’organisation** , sélectionnez **par défaut**, puis choisissez **Modifier** (le bouton Modifier ressemble à un crayon). 
-    
-    ![Cliquez sur Modifier pour modifier votre stratégie par défaut pour la protection des liens fiables](media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
+3. Dans la section **stratégies qui s’appliquent à toute l’organisation** , sélectionnez **par défaut**, puis choisissez **Modifier** (le bouton Modifier ressemble à un crayon).<br/>![Cliquez sur Modifier pour modifier votre stratégie par défaut pour la protection des liens fiables](media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
   
 4. Dans la section **bloquer les URL suivantes** , spécifiez une ou plusieurs URL que vous souhaitez empêcher les utilisateurs de votre organisation de se connecter. (Voir [configurer une liste d’URL bloquée personnalisée à l’aide de liens fiables DAV](set-up-a-custom-blocked-urls-list-wtih-atp.md)).
     
@@ -70,7 +67,7 @@ Lorsque vous avez [Contre les menaces avancées Office 365](office-365-atp.md), 
 
 Une fois que vous avez passé en revue (ou modifier) la stratégie de liens fiables DAV par défaut qui s’applique à tout le monde, l’étape suivante consiste à définir des stratégies supplémentaires qui s’appliquent à des destinataires spécifiques. Par exemple, vous pouvez spécifier des exceptions à votre stratégie par défaut en définissant une stratégie supplémentaire. 
   
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous avec votre compte professionnel ou de l’école. 
+1. Accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous avec votre compte professionnel ou de l’école. 
     
 2. Dans la navigation de gauche, sous **Gestion des menaces**, choisissez **une stratégie**.
     

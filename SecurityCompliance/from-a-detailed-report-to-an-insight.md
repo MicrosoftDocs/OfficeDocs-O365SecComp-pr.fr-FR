@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 description: Découvrez comment vous pouvez déplacer un rapport détaillé pour un aperçu des actions recommandées dans la sécurité &amp; centre de conformité.
-ms.openlocfilehash: be2af8916f70f9cf9fbacfcad8d26819c5001014
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: 8048e9aac9191bd89028ac3e4f5fdde577ad7226
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552372"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706248"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>Procédure pas à pas. D’un rapport détaillé à un aperçu
 
@@ -30,25 +30,17 @@ Il s’agit d’une des procédures pas à pas plusieurs pour la sécurité &amp
 
 Examinons le flux à partir d’un rapport détaillé pour un aperçu et actions. (Ceci est un exemple de brèves [anti-spam et contre les programmes malveillants](anti-spam-and-anti-malware-protection.md) .) 
   
-1. Nous commençons par sécurité &amp; rapports du centre de conformité. (Accédez aux **rapports** \> **tableau de bord**.)
-    
-    ![Dans la sécurité &amp; centre de conformité, accédez aux rapports \> tableau de bord](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
+1. Nous commençons par [sécurité &amp; centre de conformité](https://security.microsoft.com) rapports. (Accédez aux **rapports** \> **tableau de bord**.)<br/>![Dans la sécurité &amp; centre de conformité, accédez aux rapports \> tableau de bord](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
   
-2. Nous choisir un rapport pour obtenir une vue plus détaillée. (Choisir un rapport, telles que le rapport **d’État de Protection de menace** ). 
-    
-    ![Rapport d’état de Protection de menace affichant les détails](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
+2. Nous choisir un rapport pour obtenir une vue plus détaillée. (Choisir un rapport, telles que le rapport **d’État de Protection de menace** ).<br/>![Rapport d’état de Protection de menace affichant les détails](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   
 3. Nous constatons un indicateur insights dans le graphique et le rapport. Positionnement du pointeur de la souris sur le marqueur insights donne des informations supplémentaires. (Pointez sur le marqueur de détails pour afficher des détails supplémentaires).
     
-4. Cliquez sur l’indicateur insights dans le graphique ou le widget d’informations sur les programmes malveillants sous le graphique pour ouvrir un volet de détails. (Sous le graphique, sélectionnez le widget insights.)
-    
-    ![Détails d’informations sur les programmes malveillants](media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)
-  
-    Le volet de détails fournit des informations et des recommandations à prendre en compte, y compris l’examen des stratégies, mener davantage l’exploration et modification de l’état. ([En savoir plus sur la protection contre le courrier indésirable et anti-programme malveillant dans Office 365](anti-spam-and-anti-malware-protection.md)).
+4. Cliquez sur l’indicateur insights dans le graphique ou le widget d’informations sur les programmes malveillants sous le graphique pour ouvrir un volet de détails. (Sous le graphique, sélectionnez le widget insights.)<br/>![Détails d’informations sur les programmes malveillants](media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)<br/>Le volet de détails fournit des informations et des recommandations à prendre en compte, y compris l’examen des stratégies, mener davantage l’exploration et modification de l’état. ([En savoir plus sur la protection contre le courrier indésirable et anti-programme malveillant dans Office 365](anti-spam-and-anti-malware-protection.md)).
     
 De cette façon, nous pouvez passer d’un rapport détaillé à un aperçu et actions recommandées. 
   
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Procédure pas à pas : à partir d’un aperçu à un rapport détaillé](from-an-insight-to-a-detailed-report.md)
   

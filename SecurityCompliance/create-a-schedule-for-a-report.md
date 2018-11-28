@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 description: Découvrez comment configurer une planification pour un état dans la sécurité &amp; centre de conformité.
-ms.openlocfilehash: 411379d0be2d0af3843c3ccfec87ea6184fdb0c8
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: 4251296c75629062ca5cba2e6c2e1cb3972b3f8a
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552352"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706018"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Créer une planification pour un état de la sécurité &amp; centre de conformité
 
@@ -29,7 +29,7 @@ Dans la sécurité &amp; centre de conformité, plusieurs [rapports et vues d’
 > [!IMPORTANT]
 > Assurez-vous que vous disposez des autorisations nécessaires pour effectuer cette tâche. En règle générale, les administrateurs globaux d’Office 365, les administrateurs de sécurité et les lecteurs de sécurité peuvent accéder aux rapports de sécurité &amp; centre de conformité. Pour plus d’informations sur les autorisations, voir [des autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md).
   
-1. Dans la sécurité &amp; centre de conformité, accédez aux **rapports** \> **tableau de bord**.
+1. Dans la [sécurité &amp; centre de conformité](https://security.microsoft.com), accédez aux **rapports** \> **tableau de bord**.
     
 2. Choisissez un rapport. Cet exemple, nous allons sélectionner le rapport d’état de Protection de menace.
     
@@ -47,7 +47,7 @@ Dans la sécurité &amp; centre de conformité, plusieurs [rapports et vues d’
     
 Une fois que vous avez créé une planification d’un rapport, rapport est remis par courrier électronique pour les adresses des destinataires emali automatiquement. 
   
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Rapports et vues d’ensemble de sécurité Office 365 &amp; centre de conformité](reports-and-insights-in-security-and-compliance.md)
   

@@ -3,7 +3,6 @@ title: Se protéger contre les menaces dans Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 5/30/2018
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: Découvrez comment Office 365 pour entreprises peuvent aider à protéger votre organisation contre une variété de menaces, y compris l’usurpation d’identité, logiciels malveillants, du courrier indésirable, les tentatives de hameçonnage et contre les accès aux données.
-ms.openlocfilehash: 18e91b3a27ff9722a285a4c84f810876e1cab462
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: e5e14e66617af6a513979d93aa4764c8843b975f
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496848"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706058"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Se protéger contre les menaces dans Office 365
 
@@ -28,11 +27,11 @@ Avec Office 365 pour entreprises, vous pouvez protéger votre organisation contr
 
 Si vous utilisez un domaine personnalisé dans Office 365, aident à arrêter fraude expéditeur de votre organisation, améliorer la sécurité de messagerie électronique et protéger la réputation de votre domaine.
   
-- [Empêcher l’usurpation d’identité avec SPF](https://go.microsoft.com/fwlink/?linkid=851943)
+- [Empêcher l’usurpation d’identité avec SPF]([Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md))
     
-- [Valider le courrier sortant avec DKIM](https://go.microsoft.com/fwlink/?linkid=851944)
+- [Valider le courrier sortant avec DKIM]([Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md))
     
-- [Valider le courrier avec DMARC](https://go.microsoft.com/fwlink/?linkid=832951)
+- [Valider le courrier avec DMARC]([Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md))
     
 ## <a name="anti-spam-amp-anti-malware"></a>Anti-spam &amp; contre les programmes malveillants
 
@@ -40,13 +39,13 @@ Découvrez Office 365 score de blocage du courrier indésirable, le filtrage des
   
 - [Anti-spam &amp; protection anti-programme malveillant](anti-spam-and-anti-malware-protection.md)
     
-- [Activer la journalisation pour le courrier électronique](https://technet.microsoft.com/en-us/library/dn879651.aspx)
+- [Activer la journalisation pour le courrier électronique]([Enable mailbox auditing in Office 365](enable-mailbox-auditing.md))
     
 - [Mise en quarantaine des messages électroniques dans Office 365](quarantine-email-messages.md)
     
-- [Envoi d’un contenu suspect à Microsoft](https://technet.microsoft.com/en-us/library/dn762129%28v=exchg.150%29.aspx)
+- [Envoi d’un contenu suspect à Microsoft]([Submitting malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md))
     
-## <a name="advanced-threat-protection"></a>Advanced Threat Protection
+## <a name="advanced-threat-protection"></a>Protection avancée contre les menaces
 
 Configurer des stratégies pour gérer l’usurpation d’identité, protection contre les attaques par hameçonnage et intercepter les URL malveillantes ou des fichiers dans les messages électroniques avec Advanced Threat Protection (DAV).
   
@@ -58,7 +57,7 @@ Configurer des stratégies pour gérer l’usurpation d’identité, protection 
     
 - [Configuration des stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md)
     
-- [Configurer des stratégies de pièces jointes fiables ATP](set-up-atp-safe-attachments-policies.md) 
+- [Définir des stratégies de pièces jointes fiables ATP](set-up-atp-safe-attachments-policies.md)
     
 ## <a name="encryption"></a>Chiffrement
 

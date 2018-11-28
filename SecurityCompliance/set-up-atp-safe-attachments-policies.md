@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Définir des stratégies de pièces jointes fiables pour protéger votre organisation à partir des fichiers malveillants dans le message électronique.
-ms.openlocfilehash: 84625cc688be4b6aa98674563b5c6c30b1b35598
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 7c2bcfd1d9faad48cb8852b066f544abd1fb6ace
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238406"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706068"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Définir des stratégies Office 365 DAV approuvés en pièce jointe
 
@@ -35,7 +35,7 @@ Personnes régulièrement envoient, recevoir et partager des pièces jointes, te
 
 - Assurez-vous que votre organisation dispose [d’Office 365 avancée protection contre les menaces](office-365-atp.md).
     
-- Assurez-vous que vous avez nécessaires [autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md).
+- Assurez-vous que vous avez nécessaires [les autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md).
     
 - [Découvrez les options de stratégie de pièces jointes sûres DAV](#learn-about-atp-safe-attachments-policy-options) (dans cet article). Certaines options, telles que les options de surveiller ou de remplacement, peuvent entraîner un délai d’attente secondaire des courriers électroniques tandis que les pièces jointes sont analysés. Pour éviter les retards de message, envisagez d’utiliser [remise dynamique et l’aperçu](dynamic-delivery-and-previewing.md).
     
@@ -43,7 +43,7 @@ Personnes régulièrement envoient, recevoir et partager des pièces jointes, te
     
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Étape 2 : Configurer une stratégie de pièces jointes sûres DAV (ou en modifier)
   
-1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous avec votre compte professionnel ou de l’école. 
+1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous avec votre compte professionnel ou de l’école. 
     
 2. De sécurité Office 365 &amp; centre de conformité, dans le volet de navigation de gauche, sous **Gestion des menaces**, choisissez **stratégie** \> **Pièces jointes fiables**.
     
@@ -51,9 +51,7 @@ Personnes régulièrement envoient, recevoir et partager des pièces jointes, te
     
 4. Choisissez **Nouveau** (nouveau bouton ressemble à un signe plus ( **+**)) pour commencer à créer votre stratégie.
     
-5. Spécifiez le nom, description et paramètres de la stratégie.
-    
-    **Exemple :** Pour configurer une stratégie appelée « sans retard » qui offre des messages de tout le monde immédiatement et puis rattache les pièces jointes une fois qu’ils sont analysés, vous pouvez spécifier les paramètres suivants : 
+5. Spécifiez le nom, description et paramètres de la stratégie.<br/><br/>**Exemple :** Pour configurer une stratégie appelée « sans retard » qui offre des messages de tout le monde immédiatement et puis rattache les pièces jointes une fois qu’ils sont analysés, vous pouvez spécifier les paramètres suivants : 
     
       - Dans la zone **nom** , tapez sans retard.
     
