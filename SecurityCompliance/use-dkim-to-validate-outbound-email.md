@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 'Résumé : Cet article décrit comment utiliser DKIM (DomainKeys Identified Mail) avec Office 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.'
-ms.openlocfilehash: 6f09a75a96abda54e69833a8be14811c8113b5b1
-ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
+ms.openlocfilehash: 67652fc11a42263b2666554021c018df01ad33cd
+ms.sourcegitcommit: bf628da123a89d9422e8cff02165b1e2d35dfe12
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26255819"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "26872002"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé dans Office 365
 
@@ -107,7 +107,7 @@ Où :
     contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
     ```
 
-- _initialDomain_ est le domaine que vous avez utilisé lorsque vous vous êtes inscrit à Office 365. Pour plus d'informations sur la façon de déterminer votre domaine initial, consultez l'article [Forum aux questions sur les domaines](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
+- _initialDomain_ est le domaine que vous avez utilisé lors de l’inscription à Office 365. Domaines initiales se terminent toujours par onmicrosoft.com. Pour plus d’informations sur la détermination de votre domaine initial, voir [Le Forum aux questions sur les domaines](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
     
 Par exemple, si vous avez un domaine initial cohovineyardandwinery.onmicrosoft.com, ainsi que deux domaines personnalisés cohovineyard.com et cohowinery.com, vous devez configurer deux enregistrements CNAME pour chaque domaine supplémentaire, soit un total de quatre enregistrements CNAME.
   
@@ -208,7 +208,7 @@ La désactivation de la stratégie de signature ne désactive pas complètement 
     $p[0] | set-DkimSigningConfig -enabled $false
     ```
 
-   Par exemple :
+   Par exemple :
     
     ```
     $p=Get-DkimSigningConfig -identity contoso.com

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: 'Sécurité d’application Office 365 Cloud vous donne des informations sur les activités suspectes dans Office 365 afin que vous pouvez examiner les situations qui sont susceptibles de poser problème et, si nécessaire, prennent des mesures pour résoudre les problèmes de sécurité. '
-ms.openlocfilehash: b146512c22cbe86ce3aef95c5916de6959341578
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 722c305288798b38ac125a693d9d150446458324
+ms.sourcegitcommit: cd452513d8761b2e50b4f9b6cf29422d146307ec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706398"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "26864555"
 ---
 # <a name="overview-of-office-365-cloud-app-security"></a>Vue d’ensemble de la sécurité des applications cloud Office 365
   
@@ -47,7 +47,7 @@ Vous pouvez obtenir au portail Office 365 Cloud application sécurité par le bi
     
 ## <a name="policies"></a>Policies
 
-Office 365 Cloud application sécurité fonctionne avec les stratégies définies pour votre organisation. Avec Office 365 de sécurité application Cloud, votre organisation obtient 10 stratégies de détection des anomalies prédéfinis et plusieurs modèles de stratégies de l’activité. Ces stratégies sont conçues pour détecter les anomalies générales, identifier les utilisateurs de se connecter à partir d’une adresse IP risquée, détecter des activités de logiciels, détecter des activités administrateur de non entreprise des adresses IP et bien plus encore.
+Office 365 Cloud application sécurité fonctionne avec les stratégies définies pour votre organisation. Avec Office 365 de sécurité application Cloud, votre organisation obtient plusieurs stratégies de détection d’anomalie prédéfinis et plusieurs modèles de stratégies de l’activité. Ces stratégies sont conçues pour détecter les anomalies générales, identifier les utilisateurs de se connecter à partir d’une adresse IP risquée, détecter des activités de logiciels, détecter des activités administrateur de non entreprise des adresses IP et bien plus encore.
   
 ![Dans le portail d’autorités de certification, choisissez contrôle \> modèles permet d’afficher ou de créer des modèles de stratégie](media/88f615b4-aa8a-480c-b239-323dfcd628e1.png)
   
