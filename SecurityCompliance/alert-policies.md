@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Créer des stratégies de l’alerte de sécurité Office 365 &amp; centre de conformité à surveiller les menaces potentielles, la perte de données et problème d’autorisations. Ensuite, vous pouvez afficher et gérer les alertes sont générées lorsque les utilisateurs effectuent des activités qui correspondent aux conditions d’une stratégie de l’alerte.
-ms.openlocfilehash: 99025d4a3064e845358ad542d0bfd456d7669dcd
-ms.sourcegitcommit: a07b91723bae9ecee2cb092bfbc5b208b30b11a1
+ms.openlocfilehash: 9aea5660f6a890afb06c5bd04db812d6aeacd17a
+ms.sourcegitcommit: 95a3ce0bc5b0f3782fc4ef22a70f5ef1dc879ee3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "25793569"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "26988433"
 ---
 # <a name="alert-policies-in-the-office-365-security-amp-compliance-center"></a>Stratégies de sécurité Office 365 d’alerte &amp; centre de conformité
 
 Vous pouvez utiliser la nouvelle stratégie de l’alerte et outils de tableau de bord de l’alerte de sécurité Office 365 &amp; centre de conformité pour créer des stratégies de l’alerte et puis afficher les alertes sont générées lorsque les utilisateurs effectuent des activités qui correspondent aux conditions d’une stratégie de l’alerte. Alerte de stratégies de créer et d’étendre les fonctionnalités d’alertes de l’activité en vous permettant de classer la stratégie de l’alerte, appliquer la stratégie à tous les utilisateurs de votre organisation, définir un seuil de déclenche d’une alerte et décider s’il faut recevoir du courrier électronique notifications. Il existe également une page **Afficher les alertes** de sécurité &amp; centre de conformité où vous pouvez afficher et filtrer des alertes, des alertes définir un état d’alerte pour vous aider à gérer les alertes, puis faire disparaître une fois que vous avez résolu ou résolu l’incident sous-jacent. Nous avons également étendu le type d’événements que vous pouvez créer des alertes pour. Par exemple, vous pouvez créer des stratégies de l’alerte pour effectuer le suivi des incidents de perte de données et de l’activité de programmes malveillants. Enfin, nous avons également inclus un certain nombre de stratégies de l’alerte par défaut qui vous permettent de surveiller l’attribution de privilèges d’administrateur dans Exchange Online, les attaques de programmes malveillants et les niveaux inhabituelles de suppressions de fichiers et de partage externe. 
   
 > [!NOTE]
-> Stratégies de l’alerte sont disponibles pour les organisations avec un Office 365 pour entreprises et des plans Office 365 nous gouvernement E1/G1, E3/G3 ou E5/G5. Toutefois, certaines fonctionnalités avancées sont uniquement disponible pour les organisations possédant un plans E5/G5, ou pour les organisations qui ont un E1/G1 ou abonnement E3/G3 et un abonnement à Office 365 menaces ou Office 365 avancées module complémentaire. La fonctionnalité qui requiert un abonnement E5/G5 ou un module complémentaire est mise en surbrillance dans cette rubrique. 
+> Stratégies de l’alerte sont disponibles pour les organisations possédant un Office 365 pour entreprises ou Office 365 nous gouvernement E1/G1, E3/G3 ou abonnement E5/G5. Toutefois, certaines fonctionnalités avancées sont uniquement disponible pour les organisations avec un abonnement E5/G5, ou pour les organisations qui ont un E1/G1 ou abonnement E3/G3 et un abonnement à Office 365 menaces ou Office 365 avancées module complémentaire. La fonctionnalité qui requiert un abonnement E5/G5 ou un module complémentaire est mise en surbrillance dans cette rubrique. Notez également que les stratégies de l’alerte sont disponibles dans Office 365 GCC GCC haute et environnements DoD US.
   
 ## <a name="how-alert-policies-work"></a>Comment l’alerte travail stratégies
 
@@ -57,7 +57,7 @@ Une stratégie d’alerte comprend les conditions et les paramètres suivants.
 - **Effectue le suivi des activités de l’alerte** : vous créez une stratégie pour effectuer le suivi d’une activité ou dans certains cas, quelques activités associées, tel un partage un fichier avec un utilisateur externe par le partage, l’affectation des autorisations d’accès ou création d’un lien anonyme. Lorsqu’un utilisateur effectue l’activité définie par la stratégie, une alerte est déclenchée en fonction des paramètres de seuil d’alerte.
     
     > [!NOTE]
-    > Les activités que vous pouvez suivre dépendent de l’abonnement à Office 365 entreprise de votre organisation. En général, les activités liées aux campagnes de programmes malveillants et les attaques par hameçonnage nécessitent un abonnement E5 ou un abonnement E1 ou E3 avec un abonnement à un module complémentaire sur les menaces. 
+    > Les activités que vous pouvez suivre dépendent de votre organisation Office 365 pour entreprises ou Office 365 nous pour le plan. En règle générale, les activités relatives aux campagnes de programmes malveillants et attaques par hameçonnage nécessitent un abonnement E5/G5 ou un abonnement/G1 E1 ou E3/G3 avec un abonnement à un module complémentaire sur les menaces. 
   
 - **Conditions d’activité** - pour la plupart des activités, vous pouvez définir des conditions supplémentaires qui doivent être remplies pour une alerte doit être déclenchée. Conditions courantes incluent IP addresses (de sorte qu’une alerte est déclenchée lorsque l’utilisateur effectue l’activité sur un ordinateur avec une adresse IP spécifique ou au sein d’une plage d’adresses IP), si une alerte est déclenchée si un ou plusieurs utilisateurs effectuer cette activité et, si l’activité est effectuée sur une URL ou le nom de fichier spécifique. Vous pouvez également configurer une condition qui déclenche une alerte lorsque l’activité est effectuée par les utilisateurs dans votre organisation. Notez que les conditions disponibles dépendent de l’activité sélectionnée.
     
@@ -68,7 +68,7 @@ Une stratégie d’alerte comprend les conditions et les paramètres suivants.
     Si vous sélectionnez le paramètre basé sur l’activité inhabituelle, Office 365 établit une valeur de base qui définit la fréquence normale pour l’activité sélectionnée ; nécessaire pour établir une relation de cette ligne de base, au cours de laquelle des alertes ne sont pas générées jusqu'à sept jours. Une fois établie la ligne de base, une alerte sera déclenchée lorsque la fréquence de l’activité de suivi de la stratégie de l’alerte considérablement dépasse la valeur de la ligne de base. Pour les activités liées aux audit (par exemple, les activités de fichiers et de dossiers), vous pouvez définir une planification basée sur un seul utilisateur ou sur tous les utilisateurs de votre organisation ; pour les activités liées aux programmes malveillants, vous pouvez établir une planification basée sur une famille de programmes malveillants unique, un seul destinataire ou tous les messages dans votre organisation.
     
     > [!NOTE]
-    > La possibilité de configurer les stratégies des alertes basées sur un seuil ou sur toute activité inhabituelle requiert un abonnement E5 ou un abonnement E1 ou E3 avec un abonnement à un module complémentaire menaces ou de conformité avancées. Les organisations avec un abonnement de E1 à E3 peuvent uniquement créer une stratégie d’alerte où une alerte est déclenchée chaque fois que cet événement se produit une activité. 
+    > La possibilité de configurer alerte stratégies basée sur un seuil ou sur une activité inhabituelle requiert un abonnement E5/G5, un/G1 E1 ou E3/G3 abonnement avec une aide à la décision Threat ou abonnement de module complémentaire de conformité avancées. Les organisations avec un abonnement E1/G1 et E3/G3 peuvent uniquement créer une stratégie d’alerte où une alerte est déclenchée chaque fois que cet événement se produit une activité. 
   
 - **Catégorie d’alerte** - pour aider à suivre et à gérer les alertes générées par une stratégie, vous pouvez attribuer une des catégories suivantes à une stratégie.
     
@@ -97,9 +97,9 @@ Une stratégie d’alerte comprend les conditions et les paramètres suivants.
 
 Office 365 fournit les stratégies de l’alerte intégrés qui permettent d’identifier l’abus d’autorisations Exchange admin, activité de programmes malveillants et les risques de la gouvernance de données. Dans la page **stratégies des alertes** , le nom de ces stratégies intégrées sont en gras et le type de stratégie est défini en tant que **système**. Ces stratégies sont activées par défaut. Vous pouvez désactiver ces stratégies (ou reconnecter), configurez une liste de destinataires pour envoyer des notifications par courrier électronique à et définir une limite quotidienne de notification. Les autres paramètres de ces stratégies ne peuvent pas être modifiés.
   
-Le tableau suivant répertorie et décrit les règles d’alerte par défaut disponibles et indique les plans Office 365 pour entreprises et Office nous 365 Govenment requis pour chacun d’eux. Notez que certaines stratégies d’alerte par défaut ne sont disponibles que si votre organisation dispose de l’abonnement au module complémentaire appropriée en plus d’un abonnement/G1 E1 ou E3/G3. 
+Le tableau suivant répertorie et décrit les règles d’alerte par défaut disponibles et indique les plans Office 365 pour entreprises et Office 365 américains requis pour chacun d’eux. Notez que certaines stratégies d’alerte par défaut ne sont disponibles que si votre organisation dispose de l’abonnement au module complémentaire appropriée en plus d’un abonnement/G1 E1 ou E3/G3. 
   
-|**Stratégie de l’alerte par défaut**|**Description**|**Plans Office 365**|
+|**Stratégie de l’alerte par défaut**|**Description**|**Abonnement à Office 365 entreprise**|
 |:-----|:-----|:-----|
 |**Création de règles de transfert/redirection** <br/> |Génère une alerte lorsqu’une personne de votre organisation crée une règle de boîte de réception pour leur boîte aux lettres qui transfère ou redirige les messages vers un autre compte de messagerie. Cette stratégie suit uniquement les règles de boîte de réception sont créés à l’aide d’Outlook Web App ou Exchange Online PowerShell. Cette stratégie possède un paramètre de niveau de gravité **faible** . Pour plus d’informations à l’aide de règles de boîte de réception pour transférer et rediriger les messages électroniques dans Outlook Web App, voir [utiliser les règles dans Outlook Web App pour transférer automatiquement les messages vers un autre compte](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).<br/> |/ G1 E1, E3/G3 ou E5/G5  <br/> |
 |**recherche de découverte électronique démarré ou exportés** <br/> |Génère une alerte lorsqu’une personne utilise l’outil de recherche de contenu dans la sécurité et le centre de conformité. Une alerte est déclenchée lorsque les activités de recherche de contenu suivantes sont effectuées :<br/><br/>• Une recherche de contenu est démarré.<br/>• Les résultats d’une recherche de contenu sont exportées.<br/>• Exportation d’un rapport de recherche de contenu<br/><br/>Alertes sont déclenchées également lorsque les activités de recherche de contenu précédente sont effectuées en association avec un cas eDiscovery. Cette stratégie possède un paramètre de gravité **moyenne** . Pour plus d’informations sur les activités de recherche de contenu, voir [recherche d’activités de découverte électronique dans Office 365 journal d’audit](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities).<br/> |/ G1 E1, E3/G3 ou E5/G5  <br/> |
@@ -134,11 +134,11 @@ Vous pouvez utiliser les filtres suivants pour afficher un sous-ensemble de tout
 - **Gravité** - Utilisez ce filtre pour afficher les alertes qui sont affectés à un niveau de gravité spécifique.
     
 - **Catégorie** - Utilisez ce filtre pour afficher les alertes à partir d’une ou plusieurs catégories de l’alerte.
-    
+
+- **Source** - Utilisez ce filtre pour afficher les alertes déclenchées par les stratégies de l’alerte de sécurité & centre de conformité les alertes déclenchées par les stratégies de sécurité d’application Office 365 dans le nuage, ou les deux. Pour plus d’informations sur les alertes de sécurité pour application Cloud Microsoft Office 365, voir la section [affichage du nuage application sécurité alertes](#viewing-cloud-app-security-alerts) .
 
   
 ## <a name="managing-alerts"></a>Gestion des alertes
-<a name="managingalerts"> </a>
 
 Une fois que les alertes ont été générés et affichés sur la page **Afficher les alertes** de sécurité &amp; centre de conformité, vous pouvez trier, examiner et les résoudre. Voici certaines tâches que vous pouvez effectuer pour gérer les alertes. 
   
@@ -162,6 +162,19 @@ Une fois que les alertes ont été générés et affichés sur la page **Affiche
     
 - **Résoudre les alertes** - vous pouvez marquer une alerte comme résolu dans la page mobile d’une alerte (qui définit l’état de l’alerte **résolu**). Sauf si vous modifiez le filtre, alertes résolues ne sont pas affichés dans la page **Afficher les alertes** . 
     
-
+## <a name="viewing-cloud-app-security-alerts"></a>Affichage des alertes de sécurité des applications dans le nuage
   
+Les alertes qui sont déclenchées par les stratégies de sécurité d’application Office 365 nuage sont maintenant affichées dans la page **Afficher les alertes** de la sécurité et le centre de conformité. Cela inclut les alertes qui sont déclenchées par les stratégies d’activité et les alertes qui sont déclenchées par des stratégies de détection des anomalies dans Office 365 Cloud Application Security. Cela signifie que vous pouvez afficher toutes les alertes de sécurité et centre de conformité. Notez que Office 365 Cloud application sécurité n’est disponible pour les organisations avec un abonnement à Office 365 entreprise E5 ou Office 365 des G5 des administrations US. Pour plus d’informations, voir [Vue d’ensemble d’Office 365 Cloud Application Security](office-365-cas-overview.md).
 
+En outre, les organisations qui ont Microsoft Cloud Application Security dans le cadre d’une mobilité d’entreprise + l’abonnement E5 de sécurité ou en tant que service autonome peut également afficher des alertes de sécurité d’application Cloud qui sont liées aux services de sécurité et les applications Office 365 & Centre de conformité.
+
+Pour afficher uniquement les alertes de sécurité des applications dans le nuage dans la sécurité et le centre de conformité, utilisez le filtre de la **Source** et sélectionnez **Sécurité d’application dans le nuage**.
+
+![Utilisez le filtre de la Source pour afficher uniquement les alertes de sécurité des applications dans le nuage](media/FilterCASAlerts.png)
+
+Semblable à une alerte déclenchée par une stratégie de l’alerte de sécurité et le centre de conformité, vous pouvez cliquer sur une alerte de sécurité des applications dans le nuage pour afficher une page mobile avec plus d’informations sur l’alerte. Le message d’alerte inclut un lien pour afficher les détails et gérer l’alerte dans le portail de sécurité des applications dans le nuage et un lien vers la stratégie de sécurité des applications dans le nuage correspondante qui a déclenché l’alerte. Consultez la rubrique [révision et effectuer une opération sur les alertes de sécurité d’application Office 365 dans le nuage](review-office-365-cas-alerts.md).
+
+![Détails de l’alerte contiennent des liens vers le portail de sécurité des applications dans le nuage](media/CASAlertDetail.png)
+
+> [!IMPORTANT]
+> Modification du statut d’une alerte de sécurité des applications dans le Cloud dans la sécurité et le centre de conformité ne sont pas mettre à jour l’état de résolution de l’alerte même dans le portail de sécurité des applications dans le nuage. Par exemple, si vous activez l’état de l’alerte comme **résolu** dans la sécurité et le centre de conformité, l’état de l’alerte dans le portail de sécurité des applications dans le nuage est inchangée. Pour résoudre ou faire disparaître une alerte de sécurité des applications dans le nuage, gérer l’alerte dans le portail de sécurité des applications dans le nuage.
