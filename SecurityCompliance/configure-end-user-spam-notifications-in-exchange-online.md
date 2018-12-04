@@ -11,22 +11,22 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
-description: Vous pouvez configurer les notifications de courrier indésirable à l'utilisateur final pour la stratégie de filtrage de contenu par défaut à l'échelle de l'entreprise, ou pour les stratégies de filtrage de contenu personnalisées appliquées à des domaines.
-ms.openlocfilehash: e29cc850b7f91ed4ec963a8e52e40a0044fa7f6c
-ms.sourcegitcommit: 234a22c61859133ed5e7988a9551a569781518a4
+description: Vous pouvez configurer les notifications de courrier indésirable de l’utilisateur final pour la stratégie de filtrage du courrier indésirable de l’entreprise par défaut ou les stratégies de filtrage anti-spam personnalisés qui sont appliqués aux domaines.
+ms.openlocfilehash: 77ca32224cecaca2f558119db909ad74fdb6e858
+ms.sourcegitcommit: cc8550452d099b4c5852c6559f6ca94a77f1d93b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23875806"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "27134768"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Configurer des notifications de courrier indésirable pour l’utilisateur final dans Exchange Online
 
 > [!IMPORTANT]
 > Cette rubrique est pour les clients Exchange Online qui protègent les boîtes aux lettres hébergées sur le cloud. Les clients autonomes Exchange Online Protection (EOP) qui sont protection des boîtes aux lettres locales doivent lire la rubrique suivante au lieu de cela : [configuration de notifications de courrier indésirable pour l’utilisateur final dans EOP](configure-end-user-spam-notifications-in-eop.md). 
   
-Vous pouvez configurer les notifications de courrier indésirable pour l’utilisateur final pour la stratégie de filtrage de contenu par défaut à l’échelle de l’entreprise, ou pour les stratégies de filtrage de contenu personnalisées appliquées à des domaines. L’activation des notifications de courrier indésirable à l’utilisateur final permet à vos utilisateurs de gérer eux-mêmes leurs propres messages de courrier indésirable mis en quarantaine. La fonctionnalité ne peut pas être utilisée avec les stratégies appliquées à des utilisateurs ou des groupes, ou à une stratégie comportant des exceptions.
+Vous pouvez configurer les notifications de courrier indésirable de l’utilisateur final pour la stratégie de filtrage du courrier indésirable de l’entreprise par défaut ou les stratégies de filtrage anti-spam personnalisés qui sont appliqués aux domaines. Activation des messages de notification de courrier indésirable de l’utilisateur final permet à vos utilisateurs finaux de gérer eux-mêmes leurs propres messages mis en quarantaine du courrier indésirable. Notifications de courrier indésirable de l’utilisateur final ne peut pas être utilisées avec les stratégies appliquées à des utilisateurs ou groupes, ou à une stratégie avec des exceptions.
   
-Les notifications de courrier indésirable à l’utilisateur final contiennent la liste de tous les messages de courrier indésirable mis en quarantaine reçus par l’utilisateur final au cours d’une période que vous configurez (vous pouvez spécifier une valeur comprise entre 1 et 15 jours). Vous pouvez également configurer la langue dans laquelle est écrit le message de notification.
+Les notifications de courrier indésirable à l'utilisateur final contiennent la liste de tous les messages de courrier indésirable mis en quarantaine reçus par l'utilisateur final au cours d'une période que vous configurez (vous pouvez spécifier une valeur comprise entre 1 et 15 jours). Vous pouvez également configurer la langue dans laquelle est écrit le message de notification.
   
 Après avoir reçu un message de notification, les utilisateurs finaux peuvent choisir parmi les options suivantes :
 
@@ -52,9 +52,9 @@ Pour des informations sur les raccourcis clavier applicables aux procédures de 
   
 ## <a name="use-the-eac-to-configure-end-user-spam-notifications"></a>Utiliser le Centre d'administration Exchange (CAE) pour configurer les notifications de courrier indésirable à l'utilisateur final
 
-1. Dans le Centre d'administration Exchange (CAE), accédez à **Protection** \> **Filtre de contenu**.
+1. Dans le Centre d'administration Exchange (CAE), accédez à **Protection** \> **Filtre de courrier indésirable**.
     
-2. Sélectionnez la stratégie de filtrage de contenu pour laquelle vous voulez activer les notifications de courrier indésirable à l'utilisateur final (elles sont désactivées par défaut).
+2. Sélectionnez la stratégie de filtrage du courrier indésirable pour lequel vous souhaitez activer les notifications de courrier indésirable de l’utilisateur final (elles sont désactivées par défaut).
     
 3. Dans le volet de droite, dans lequel apparaissent des informations récapitulatives sur votre stratégie, cliquez sur le lien **Configurer les notifications de courrier indésirable à l'utilisateur final**. 
     
@@ -66,12 +66,12 @@ Pour des informations sur les raccourcis clavier applicables aux procédures de 
     
 3. **Langue de la notification** Dans la liste déroulante, sélectionnez la langue dans laquelle écrire les notifications de courrier indésirable à l'utilisateur final pour cette stratégie. 
     
-5. Cliquez sur **Enregistrer**. Un récapitulatif de vos paramètres de stratégie de filtrage de contenu, y compris vos paramètres de notification de courrier indésirable à l'utilisateur final, apparaît dans le volet de droite.
+5. Cliquez sur **Enregistrer**. Un résumé de vos paramètres de stratégie de filtrage du courrier indésirable, notamment vos paramètres de notification de courrier indésirable de l’utilisateur final, s’affiche dans le volet droit.
     
 > [!NOTE]
->  Les notifications de courrier indésirable à l'utilisateur final ne sont opérationnelles que pour les stratégies de filtrage de contenu activées. >  Les notifications de courrier indésirable pour l'utilisateur final sont envoyées uniquement une fois par jour. Le délai de remise de la notification ne peut pas être garanti pour chaque client et n'est pas configurable. 
+>  Notifications de courrier indésirable de l’utilisateur final ne seront fonctionnelles pour les stratégies de filtrage du courrier indésirable sont activés. > Notifications de courrier indésirable de l’utilisateur final sont envoyées uniquement une fois par jour. L’heure de remise de la notification ne peut pas être garanti pour un client spécifique et n’est pas configurable. 
   
- **Conseil :** si vous voulez tester les notifications de courrier indésirable destinées aux utilisateurs finals en les envoyant à un ensemble limité d'utilisateurs avant de les implémenter totalement, créez une stratégie de filtrage de contenu personnalisée autorisant ces notifications de courrier indésirable pour les domaines dans lesquels les utilisateurs résident. Ensuite, dans le CAE, sous **Flux de messagerie \> Règles**, créez une règle de transport permettant de bloquer les messages provenant de quarantine@messaging.microsoft.com (l'adresse de messagerie qui envoie les notifications) avec des exceptions pour les utilisateurs qui doivent recevoir les notifications. L'image suivante représente un exemple de création d'exception pour deux utilisateurs (SaraD et AlexD) du domaine Contoso.com : 
+ **Conseil :** Si vous souhaitez tester les notifications de courrier indésirable de l’utilisateur final en lui envoyant un ensemble limité d’utilisateurs avant de les implémenter entièrement, créez une stratégie de filtrage du courrier indésirable personnalisé qui permet à des notifications de courrier indésirable pour l’utilisateur final pour les domaines où résident les utilisateurs. Puis, dans le centre d’administration Exchange, sous **flux de messagerie \> règles**, créer une règle de transport pour bloquer les messages à partir de quarantine@messaging.microsoft.com (l’adresse de messagerie qui envoie des notifications) avec des exceptions pour les utilisateurs que vous souhaitez recevoir des notifications. L’image suivante est un exemple de création d’une exception pour deux utilisateurs (SaraD et AlexD) à partir du domaine Contoso.com : 
   
 ![Règle de transport pour tester les notifications de courrier indésirable de l'utilisateur final](media/EOP-ESN-testspecificusers.jpg)
   
