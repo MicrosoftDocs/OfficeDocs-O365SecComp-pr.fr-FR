@@ -3,7 +3,7 @@ title: Utiliser l’outil de collecte de PST pour rechercher, copier et supprime
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 10/18/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,14 +12,17 @@ ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Utilisez l’outil de collecte de PST Microsoft pour rechercher le réseau de votre organisation pour obtenir un inventaire des fichiers PST qui sont éparpillés dans votre organisation. Une fois que vous trouvez des fichiers PST, vous pouvez utiliser l’outil de collecte PST pour les copier dans un emplacement central afin que vous pouvez les importer dans Office 365.
-ms.openlocfilehash: 0537a65a32fa25704045bd587cb20f9eee13f628
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 34395eee7776d8bff1ddccb7fed5b683e97c02c7
+ms.sourcegitcommit: c59a082dca6593d0e35e58124ee6ba240547bfa5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038127"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27154210"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>Utiliser l’outil de collecte de PST pour rechercher, copier et supprimer des fichiers PST dans votre organisation
+
+> [!IMPORTANT]
+> L’outil PST Collection décrite dans cet article n’est pas pris en charge par n’importe quel programme de prise en charge standard de Microsoft ou le service. L’outil est fourni en l’état sans aucune garantie. Microsoft exclut toute garantie implicite, y compris, sans limitation, une garantie implicite de qualité ou d’adéquation à un usage particulier. Vous assumez tous les risques liés à l’utilisation ou les performances de l’outil et la documentation. En aucun cas Microsoft, ses auteurs ou toute personne autre impliquées dans la création, la production ou la remise de l’outil est responsable de tout dommage que ce soit (y compris, sans limitation, pertes de bénéfices, interruption d’activité, la perte de informations professionnelles ou autre perte pécuniaire) résultant de l’utilisation ou l’impossibilité d’utiliser l’outil ou la documentation, même si Microsoft a été averti de la possibilité de tels dommages.
 
 Vous pouvez utiliser l’outil de collecte de PST Microsoft pour rechercher le réseau de votre organisation pour les fichiers PST. L’outil vous permet d’obtenir un inventaire des fichiers PST qui sont éparpillés dans votre organisation. Une fois que vous trouvez des fichiers PST, vous pouvez utiliser l’outil de collecte de PST de les copier dans un emplacement central. Ayant des fichiers pst dans un seul endroit, puis vous permet d’importer les boîtes aux lettres Exchange Online (ou d’une seule boîte aux lettres Exchange Online), où vous pouvez ensuite appliquer l’ensemble complet de fonctionnalités de conformité dans Office 365. Cela inclut l’importation des fichiers pst dans l’archive contient des boîtes aux lettres, rechercher des messages spécifiques dans les fichiers PST que vous avez importés à l’aide des outils de recherche de découverte électronique, la conservation des messages à l’aide de découverte électronique des utilisateurs et les stratégies de rétention Office 365 et la gestion de la durée de vie cycle de ces messages à l’aide de la messagerie enregistre des fonctionnalités de gestion dans Exchange Online. Une fois que vous êtes convaincu que les fichiers PST que vous avez collectées ont été importés vers Office 365, vous pouvez utiliser l’outil de les supprimer de leur emplacement d’origine sur votre réseau. 
   
