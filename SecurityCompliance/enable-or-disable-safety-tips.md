@@ -3,7 +3,7 @@ title: Activer ou désactiver les conseils de sécurité dans Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/6/2017
+ms.date: 12/05/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
 description: Indique comment activer et désactiver les astuces de sécurité dans les messages électroniques à des administrateurs Office 365 et EOP.
-ms.openlocfilehash: 3a8257f9d34ec5def54e2b9c9e919172366d023f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8e5d8bf1d2f831b5d74ca3accd8b434519bfeaab
+ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528204"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27180854"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>Activer ou désactiver les conseils de sécurité dans Office 365
 
@@ -38,7 +38,7 @@ Contenu de cet article :
 
 1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à Office 365 avec votre compte professionnel ou scolaire.
+2. Connectez-vous à Office 365 à l'aide de votre compte professionnel ou scolaire.
     
 3. Cliquez sur **Gestion des menaces** \> **stratégie**. 
     
@@ -60,7 +60,7 @@ Contenu de cet article :
     
 9. Pour activer les conseils de sécurité, sous **Les conseils de sécurité**, activez la case à cocher **sur** . Pour désactiver les conseils de sécurité, désactivez la case à cocher **sur** . 
     
-10. Sélectionnez **Enregistrer**.
+10. Sélectionnez **Save (Enregistrer)**.
     
 ## <a name="to-enable-or-disable-safety-tips-by-using-powershell"></a>Pour activer ou désactiver les conseils de sécurité à l’aide de PowerShell
 <a name="pshellsafetytip"> </a>
@@ -75,7 +75,7 @@ Administrateurs peuvent utiliser Exchange Online PowerShell pour activer ou dés
   Set-HostedContentFilterPolicy -Identity "policy name " -InlineSafetyTipsEnabled <$true|$false>
   ```
 
-    Où :
+Où :
     
   -  *nom de la stratégie* est le nom de la stratégie que vous souhaitez modifier, par exemple **par défaut**.
     
@@ -89,9 +89,9 @@ Administrateurs peuvent utiliser Exchange Online PowerShell pour activer ou dés
   PS C:\> Set-HostedContentFilterPolicy -Identity "default" -InlineSafetyTipsEnabled $false
   ```
 
-    Pour plus d’informations sur cette applet de commande, voir [Set-HostedContentFilterPolicy](https://technet.microsoft.com/library/jj200781.aspx).
+Pour plus d’informations sur cette applet de commande, voir [Set-HostedContentFilterPolicy](https://technet.microsoft.com/library/jj200781.aspx).
     
-## <a name="still-need-help"></a>Besoin d’aide ?
+## <a name="still-need-help"></a>Vous avez encore besoin d'aide ?
 <a name="pshellsafetytip"> </a>
 
 Si vous désactivé les conseils de sécurité, mais sont toujours les voir dans vos courriers électroniques, vérifiez ces éléments :

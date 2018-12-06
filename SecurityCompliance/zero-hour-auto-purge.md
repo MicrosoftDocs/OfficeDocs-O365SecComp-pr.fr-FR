@@ -3,7 +3,7 @@ title: Purge automatique zéro heure - protection contre le courrier indésirabl
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/23/2018
+ms.date: 12/05/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 description: Purge automatique zéro heures (ZAP) est une fonctionnalité de protection de messagerie qui détecte les messages qui ont déjà été remis aux boîtes aux lettres des utilisateurs avec le courrier indésirable ou un programme malveillant, puis affiche le contenu malveillant sans conséquence. Comment ZAP cela dépend du type de contenu malveillant détecté.
-ms.openlocfilehash: ac181a7c57b4b16a952ff9c046edbff1380828d1
-ms.sourcegitcommit: 791d23e1c2dea622b6ef77a6e2bde32e1d31a41b
+ms.openlocfilehash: 1cf14051e91801a74a0d739c69900bb3f825b318
+ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25999973"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27180844"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Purge automatique zéro heure - protection contre le courrier indésirable et les programmes malveillants
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Vue d'ensemble
 
-Purge automatique zéro heures (ZAP) est une fonctionnalité de protection de messagerie qui détecte les messages qui ont déjà été remis aux boîtes aux lettres des utilisateurs avec le courrier indésirable ou un programme malveillant, puis affiche le contenu malveillant sans conséquence. Comment ZAP cela dépend du type de contenu malveillant détecté.
+Purge automatique zéro heures (ZAP) est une fonctionnalité de protection de messagerie qui détecte les messages avec des programmes malveillants, le courrier indésirable ou hameçonnage qui ont déjà été remis aux boîtes aux lettres de vos utilisateurs, puis affiche le contenu malveillant sans conséquence. Comment ZAP cela dépend du type de contenu malveillant détecté ; messagerie peut être zapped en raison de contenu du courrier électronique, URL ou les pièces jointes.
   
 ZAP est disponible avec la valeur par défaut Exchange Online Protection est fourni avec un abonnement à Office 365 qui contient les boîtes aux lettres Exchange Online.
 
@@ -39,7 +39,11 @@ ZAP est activée par défaut, mais les conditions suivantes doivent être rempli
 ## <a name="how-does-zap-work"></a>Comment fonctionne la ZAP ?
 
 Met à jour les signatures de moteur et des programmes malveillants contre le courrier indésirable dans Office 365 en temps réel au quotidien. Toutefois, les utilisateurs peuvent encore avoir malveillants messages remis dans leur boîte de réception pour plusieurs raisons, notamment si le contenu est weaponized après avoir fourni aux utilisateurs. SUPPRIMER les adresses de cette en surveillant en permanence des mises à jour pour les signatures de courrier indésirable et les programmes malveillants Office 365. ZAP permettre rechercher et supprimer des messages livrés qui figurent déjà dans la boîte de réception des utilisateurs. 
+
 - Pour le courrier électronique identifié comme courrier indésirable, ZAP déplace les messages non lus pour le dossier de courrier indésirable des utilisateurs. 
+
+- Pour le courrier électronique identifié comme courrier indésirable, ZAP déplace les messages vers le dossier courrier indésirable des utilisateurs, indépendamment de si le message électronique a été lu.
+
 - Pour les logiciels malveillants nouvellement détecté, ZAP supprime les pièces jointes des messages électroniques, quelle que soit ou non le courrier électronique a été lu. 
   
 L’action ZAP est transparente pour l’utilisateur de boîte aux lettres ; ils ne sont pas avertis si un message électronique est déplacé.
@@ -49,8 +53,11 @@ Autoriser les listes, [les règles de flux de messagerie](https://go.microsoft.c
 ## <a name="to-review-or-set-up-a-spam-filter-policy"></a>Pour vérifier ou configurer une stratégie de filtrage du courrier indésirable
   
 1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école pour Office 365.
+
 2. Sous **Gestion des menaces**, choisissez le **blocage du courrier indésirable**.
+
 3. Passez en revue les paramètres standards. 
+
 4. Si vous souhaitez personnaliser vos paramètres, sélectionnez l’onglet **personnalisé** et activer **les paramètres personnalisés**. Modifier vos paramètres et si vous le souhaitez, choisissez **+ créer une stratégie** pour ajouter une nouvelle stratégie. 
     
 ## <a name="to-see-if-zap-moved-your-message"></a>Pour voir si ZAP déplacé votre message
