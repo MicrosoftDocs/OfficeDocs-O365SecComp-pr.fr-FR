@@ -3,7 +3,7 @@ title: Protection anti-usurpation dans Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/11/2018
+ms.date: 12/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: Cet article explique comment Office 365 atténue contre les attaques par hameçonnage qu’utilise falsifié expéditeur domaines, c'est-à-dire, qui sont usurpés. Pour ce faire, il analyse les messages et le blocage de celles qui peuvent être authentifiés neithe à l’aide des méthodes d’authentification standard de courrier électronique, ni les autres techniques de réputation de l’expéditeur. Cette modification est en cours implémentée pour réduire le nombre d’organisations dans Office 365 sont affichent dans les attaques par phishing.
-ms.openlocfilehash: 231f66b094a98363375a68fbddc8b71077b7baa4
-ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
+ms.openlocfilehash: 95f4995b6447870700bc483f205ca3ff831045f5
+ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25498110"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27194715"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protection anti-usurpation dans Office 365
 
@@ -302,17 +302,17 @@ Contrairement à la stratégie que vous créez, vous ne peut pas supprimer la st
   
 ![Détails de la stratégie par défaut anti-hameçonnage](media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
   
-Plus loin dans 2018, pour configurer la protection par défaut via PowerShell :
+Pour configurer votre protection par défaut via PowerShell :
   
 ```
-$defaultAntiphishPolicy = Get-AntiphishingPolicy -IsDefault $true
+$defaultAntiphishPolicy = Get-AntiphishPolicy | ? {$_.IsDefault -eq $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement <$true|$false>
 ```
 
 Ne désactivez protection anti-usurpation si vous disposez d’un autre serveur de messagerie ou serveurs devant Office 365 (voir scénarios légitimes pour désactiver contre l’usurpation d’identité pour plus d’informations). 
   
 ```
-$defaultAntiphishPolicy = Get-AntiphishingPolicy -IsDefault $true
+$defaultAntiphishPolicy = Get-AntiphishiPolicy | ? {$_.IsDefault $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement $false 
 
 ```
@@ -414,10 +414,10 @@ En règle générale, la stratégie appliquée à un message est identifiée dan
   
 |**Priority (Priorité)**|**Stratégie**|**Catégorie**|**Où gérée ?**|**S'applique à**|
 |:-----|:-----|:-----|:-----|:-----|
-|1  <br/> |Malware :   <br/> |MALW  <br/> |[Stratégie de programmes malveillants](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
-|2  <br/> |Hameçonnage  <br/> |PHSH  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
-|3  <br/> |Courrier indésirable à probabilité élevée  <br/> |HSPM  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
-|4  <br/> |L’usurpation d’identité  <br/> |USURPATION D’IDENTITÉ  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553), [aide à la décision usurpation d’identité](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Toutes les organisations  <br/> |
+|1   <br/> |Malware :   <br/> |MALW  <br/> |[Stratégie de programmes malveillants](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
+|2   <br/> |Hameçonnage  <br/> |PHSH  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
+|3   <br/> |Courrier indésirable à probabilité élevée  <br/> |HSPM  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
+|4   <br/> |L’usurpation d’identité  <br/> |USURPATION D’IDENTITÉ  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553), [aide à la décision usurpation d’identité](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Toutes les organisations  <br/> |
 |5   <br/> |Courrier indésirable  <br/> |MONITEUR DE PORT STANDARD  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
 |6   <br/> |En bloc  <br/> |EN BLOC  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
 |7   <br/> |Emprunt d’identité de domaine  <br/> |DIMP  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organisations avec DAV  <br/> |
@@ -427,8 +427,8 @@ Si vous disposez de plusieurs stratégies Anti-hameçonnage différents, celui d
   
 |**Stratégie**|**Priority (Priorité)**|**Emprunt d’identité de l’utilisateur ou du domaine**|**Anti-l’usurpation d’identité**|
 |:-----|:-----|:-----|:-----|
-|A  <br/> |1  <br/> |On  <br/> |Off  <br/> |
-|B  <br/> |2  <br/> |Off  <br/> |On  <br/> |
+|A  <br/> |1   <br/> |On  <br/> |Off  <br/> |
+|B  <br/> |2   <br/> |Off  <br/> |On  <br/> |
    
 Si un message est proposé sous et est identifié en tant que l’emprunt d’identité à la fois l’usurpation d’identité et l’utilisateur et le même ensemble d’utilisateurs porte sur la stratégie A et B de la stratégie, puis le message est traité comme une usurpation d’identité mais aucune action n’est appliquée depuis anti-usurpation d’identité est désactivé , et l’usurpation d’identité s’exécute à une priorité plus élevée (4) à l’utilisateur d’emprunt d’identité (8).
   

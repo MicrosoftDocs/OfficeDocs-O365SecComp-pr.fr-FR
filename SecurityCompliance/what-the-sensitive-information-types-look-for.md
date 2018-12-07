@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection: Strat_O365_IP
 ms.assetid: fd505979-76be-4d9f-b459-abef3fc9e86b
 description: Prévention des pertes de données (DLP) de sécurité Office 365 &amp; centre de conformité inclut 80 types d’informations sensibles qui sont prêts à utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d’informations sensibles et illustre une stratégie DLP lorsqu’il détecte chaque type.
-ms.openlocfilehash: 5097227d8efa833f255631febde50b937add48ef
-ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
+ms.openlocfilehash: 4b083f80e02c80053b63ee897b2515a4505c16d9
+ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25002687"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27194735"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Éléments recherchés par les types d’informations sensibles
 
@@ -285,8 +285,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduite internationaux
 - 
 australian automobile association
-- 
-sydney nsw
 - 
 permis de conduite international
 - DriverLicence
@@ -2214,13 +2212,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="format"></a>Format
 
-10 chiffres
+11 chiffres
 
 ### <a name="pattern"></a>Modèle
 
-10 chiffres :
-- Six chiffres sous la forme JJMMAA qui correspondent à la date de naissance  
-- Quatre chiffres où le dernier chiffre est un chiffre de contrôle
+11 chiffres :
+- 10 chiffres 
+- Chiffre final est un chiffre de contrôle à des fins d’échanges internationaux de données, les lettres de ressources humaines sont ajoutés précédant les onze chiffres.
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -2261,16 +2259,29 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
  
 
    
-## <a name="czech-national-identity-card-number"></a>Numéro de carte d’identité nationale tchèque
+## <a name="czech-personal-identity-number"></a>Numéro d’identification personnelle tchèque
 
 ### <a name="format"></a>Format
 
-10 chiffres contenant une barre oblique
+Neuf chiffres avec facultatif barre oblique (ancien format) 10 chiffres avec facultatif barre oblique (nouveau format)
 
 ### <a name="pattern"></a>Modèle
 
-10 chiffres :
-- Six chiffres correspondant à la date de naissance  
+Neuf chiffres (ancien format) :
+- Neuf chiffres
+
+OU
+
+- Six chiffres qui représentent la date de naissance
+- Une barre oblique 
+- Trois chiffres
+
+10 chiffres (nouveau format) :
+- 10 chiffres
+
+OU
+
+- Six chiffres qui représentent la date de naissance
 - Une barre oblique  
 - Quatre chiffres où le dernier chiffre est un chiffre de contrôle
 
@@ -2283,21 +2294,18 @@ Oui
 Une stratégie DLP est de 85 % convaincu que ce type d’informations sensibles a été détecté if, au sein d’une proximité de 300 caractères : la fonction Func_czech_id_card recherche le contenu qui correspond au modèle. Un mot clé à partir de Keyword_czech_id_card est trouvé. Passe de la somme de contrôle.
 
 ```
-<!-- Czech National Identity Card Number -->
-<Entity id="60c0725a-4eb6-455b-9dda-05d8a7396497" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Func_czech_id_card"/>
-     <Match idRef="Keyword_czech_id_card"/>
-  </Pattern>
+<!-- Czech Personal Identity Number -->
+<Entity id="60c0725a-4eb6-455b-9dda-05d8a7396497"      patternsProximity="300" recommendedConfidence="85">
+   <Pattern confidenceLevel="85">
+      <IdMatch idRef="Func_czech_id_card" />
+      <Match idRef="Keyword_czech_id_card" />
+   </Pattern>
 </Entity>
 ```
+### <a name="keywords"></a>Mots-clés
 
-
-### <a name="keywords"></a>Mots clés
-
-- Keyword_czech_id_card
-- Czech national identity card
-- Občanský průka
+- numéro d’identification personnelle tchèque
+- Rodné číslo
    
 ## <a name="denmark-personal-identification-number"></a>	Numéro d’identification personnel Danemark
 
@@ -2373,7 +2381,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-Aucun
+Aucune
 
    
 ## <a name="eu-debit-card-number"></a>Numéro de carte de débit Union européenne
@@ -3143,7 +3151,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-Aucun
+Aucune
    
 ## <a name="france-passport-number"></a>Numéro de passeport France
 
@@ -3744,13 +3752,47 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywordhongkongidcard"></a>Keyword_hong_kong_id_card
 
-- Hong Kong Identity Card
-- HKID
-- ID card
+- carte d’identité de Hong kong
+- HKIDC
+- carte d’identité
+- Carte d’identité
+- carte d’identité HK
+- id de Hong kong
 - 香港身份證
- 
+
 - 香港永久性居民身份證
- 
+
+- 身份證
+
+- 身份証
+- 身分證 
+- 身分証
+- 香港身份証
+- 香港身分證
+- 香港身分証
+- 香港身份證
+
+- 香港居民身份證
+- 香港居民身份証
+- 香港居民身分證
+- 香港居民身分証
+- 香港永久性居民身份証
+- 香港永久性居民身分證
+- 香港永久性居民身分証
+- 香港永久性居民身份證
+
+- 香港非永久性居民身份證
+- 香港非永久性居民身份証
+- 香港非永久性居民身分證
+- 香港非永久性居民身分証
+- 香港特別行政區永久性居民身份證
+- 香港特別行政區永久性居民身份証
+- 香港特別行政區永久性居民身分證
+- 香港特別行政區永久性居民身分証
+- 香港特別行政區非永久性居民身份證
+- 香港特別行政區非永久性居民身份証
+- 香港特別行政區非永久性居民身分證
+- 香港特別行政區非永久性居民身分証
    
 ## <a name="india-permanent-account-number-pan"></a>Numéro de compte permanent Inde
 
@@ -3921,7 +3963,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-Aucun
+Aucune
 
    
 ## <a name="ip-address"></a>Adresse IP
@@ -4662,6 +4704,48 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
  
 - 社会保険番号
  
+
+## <a name="japanese-residence-card-number"></a>Numéro de carte de résidence (japonais)
+
+### <a name="format"></a>Format
+
+12 lettres et chiffres
+
+### <a name="pattern"></a>Modèle
+
+12 lettres et chiffres :
+- Deux lettres (ne respectant pas la casse) 
+- Huit chiffres 
+- Deux lettres (ne respectant pas la casse) 
+
+### <a name="checksum"></a>Somme de contrôle
+
+Non
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- L’expression régulière Regex_jp_residence_card_number recherche de contenu qui correspond au modèle.
+- Un mot clé à partir de Keyword_jp_residence_card_number est trouvé.
+
+```
+<!--Japan Residence Card Number-->
+-<Entity id="ac36fef2-a289-4e2c-bb48-b02366e89fc0" recommendedConfidence="75" patternsProximity="300">
+   -<Pattern confidenceLevel="75">
+      <IdMatch idRef="Regex_jp_residence_card_number"/>
+      <Match idRef="Keyword_jp_residence_card_number"/>
+   </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keywordjpresidencecardnumber"></a>Keyword_jp_residence_card_number
+
+- Numéro de carte de résidence
+- N° de carte de résidence
+- Résidence carte #
+- 在留カード番号
    
 ## <a name="malaysia-id-card-number"></a>Numéro de carte d’identité Malaisie
 
@@ -4704,16 +4788,30 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
    
 #### <a name="keywordmalaysiaidcardnumber"></a>Keyword_malaysia_id_card_number
 
-- MyKad 
-- Identity Card 
-- Carte d’identité 
-- Carte d’identification 
-- Digital Application Card
- 
-- Kad Akuan Diri
- 
-- Kad Aplikasi Digital
- 
+- fiche d’application numérique
+- i / c
+- i / c aucune
+- IC
+- IC aucune
+- carte d’identité
+- Carte d’identification
+- Carte d’identité
+- k/p
+- k/p aucune
+- kad akuan diri
+- aplikasi kad numérique
+- kad pengenalan Malaisie
+- KP
+- KP aucune
+- mykad
+- mykas
+- mykid
+- mypr
+- mytentera
+- carte d’identité Malaisie
+- Malaisie carte d’identité
+- NRIC
+- carte d’identification personnelle
    
 ## <a name="netherlands-citizens-service-bsn-number"></a>Numéro de service du citoyen (BSN) Pays-Bas
 
@@ -4946,12 +5044,16 @@ Une stratégie DLP est convaincu que ce type d’informations sensibles a été 
 
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
+- Dowód osobisty
+- Nombre dowodu osobistego
+- Nazwa i numéro dowodu osobistego
+- Nazwa i nr dowodu osobistego
 - Nazwa je nr dowodu tożsamości
- 
+
 - Dowód Tożsamości
- 
+
 - dow. os.
- 
+
 
    
 ## <a name="poland-national-id-pesel"></a>ID national polonais (PESEL)
@@ -5029,12 +5131,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
-- Nazwa je nr dowodu tożsamości
- 
-- Dowód Tożsamości
- 
-- dow. os.
- 
+- Numéro paszportu
+- Paszportu nr.
+- Paszport
 
    
 ## <a name="portugal-citizen-card-number"></a>Numéro de carte de citoyen portugais
@@ -5321,7 +5420,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-Aucun
+Aucune
    
 ## <a name="sweden-national-id"></a>ID national Suède
 
@@ -5721,7 +5820,101 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
  
 - 台灣地區居留證
  
-   
+
+## <a name="thai-population-identification-code"></a>Code d’Identification de la Population thaï
+
+### <a name="format"></a>Format
+
+13 chiffres
+
+### <a name="pattern"></a>Modèle
+
+13 chiffres :
+- Premier chiffre n’est pas 0 ou 9 
+- 12 chiffres
+
+### <a name="checksum"></a>Somme de contrôle
+
+Oui
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- La fonction Func_Thai_Citizen_Id recherche le contenu qui correspond au modèle.
+- Un mot clé à partir de Keyword_Thai_Citizen_Id est trouvé.
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- La fonction Func_Thai_Citizen_Id recherche le contenu qui correspond au modèle.
+
+```
+<!-- Thai Citizen ID -->
+-<Entity id="44ca9e86-ead7-4c5d-884a-e2eaa401515e" recommendedConfidence="75" patternsProximity="300">
+   -<Pattern confidenceLevel="85">
+      <IdMatch idRef="Func_Thai_Citizen_Id"/>
+      <Match idRef="Keyword_Thai_Citizen_Id"/>
+   </Pattern>
+   -<Pattern confidenceLevel="75">
+      <IdMatch idRef="Func_Thai_Citizen_Id"/>
+   </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keywordthaicitizenid"></a>Keyword_Thai_Citizen_Id
+
+- ID Number
+- Numéro d’identification
+- บัตรประชาชน
+- รหัสบัตรประชาชน
+- บัตรประชาชน
+- รหัสบัตรประชาชน
+  
+## <a name="turkish-national-identification-number"></a>Numéro d’Identification National turc
+
+### <a name="format"></a>Format
+
+11 chiffres
+
+### <a name="pattern"></a>Modèle
+
+11 chiffres
+
+### <a name="checksum"></a>Somme de contrôle
+
+Oui
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- La fonction Func_Turkish_National_Id recherche le contenu qui correspond au modèle.
+- Un mot clé à partir de Keyword_Turkish_National_Id est trouvé.
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
+- La fonction Func_Turkish_National_Id recherche le contenu qui correspond au modèle.
+
+```
+<!-- Turkish National Identity -->
+-<Entity id="fb621f20-3876-4cfc-acec-8c8e73ca32c7" recommendedConfidence="75" patternsProximity="300">
+   -<Pattern confidenceLevel="85">
+      <IdMatch idRef="Func_Turkish_National_Id"/>
+      <Match idRef="Keyword_Turkish_National_Id"/>
+   </Pattern>
+   -<Pattern confidenceLevel="75">
+      <IdMatch idRef="Func_Turkish_National_Id"/>
+   </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="keywordturkishnationalid"></a>Keyword_Turkish_National_Id
+
+- TC Kimlik No
+- TC Kimlik numarası
+- Vatandaşlık numarası
+- Vatandaşlık aucun
+
 ## <a name="uk-drivers-license-number"></a>Numéro de permis de conduire Royaume-Uni
 
 ### <a name="format"></a>Format
