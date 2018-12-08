@@ -16,13 +16,13 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: 'Exporter les résultats de recherche à partir d’une recherche de contenu de sécurité Office 365 &amp; centre de conformité à un ordinateur local. Résultats de la messagerie Emaill sont exportées dans des fichiers PST. Contenu de SharePoint et OneDrive pour les sites sont exportées dans des documents Office natives. '
-ms.openlocfilehash: 35fb0aa8a037fc77020269d1b42d738dd801ea0a
-ms.sourcegitcommit: da4aa7335b577148ecd61e09bbb11039b817b287
+description: 'Exporter les résultats de recherche à partir d’une recherche de contenu de la sécurité pour Microsoft Office 365 et le centre de conformité à un ordinateur local. Résultats de la messagerie sont exportées dans des fichiers PST. Contenu de SharePoint et OneDrive pour les sites sont exportées dans des documents Office natives. '
+ms.openlocfilehash: f4ecdb59b20138e8b159e6056cac791837a84387
+ms.sourcegitcommit: 9f08af5502070a42de22b6d83e3a08c67cc0c619
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26539116"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27201578"
 ---
 # <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>Exporter les résultats de recherche de contenu à partir de la sécurité pour Microsoft Office 365 & centre de conformité
 
@@ -173,7 +173,7 @@ Comme expliqué précédemment, vous pouvez augmenter la vitesse de télécharge
     
 
   
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>More information
 
 Voici le plus d’informations sur l’exportation de résultats de recherche.
   
@@ -330,3 +330,5 @@ Voici le plus d’informations sur l’exportation de résultats de recherche.
 - Tous les résultats de recherche et les rapports d’exportation sont inclus dans un dossier qui a le même nom que la recherche de contenu. Les messages électroniques qui ont été exportés se trouvent dans un dossier nommé **Exchange**. Documents se trouvent dans un dossier nommé **SharePoint**. 
     
 - Les métadonnées du système de fichiers pour les documents dans SharePoint et OneDrive pour les sites sont conservée lorsque les documents sont exportés vers votre ordinateur local. Qui signifie que les propriétés de document, telles que la création et la dernière modification de dates, ne sont pas modifiée lorsque les documents sont exportées.
+
+- Si vos résultats de recherche incluent un élément de liste à partir de SharePoint qui correspond à la requête de recherche, toutes les lignes dans la liste doit être exportées en plus de l’élément qui correspond à la requête de recherche. Cela inclut les pièces jointes dans la liste. La raison est de fournir un contexte pour les éléments de liste qui sont retournés dans les résultats de recherche. Notez également que les éléments de liste supplémentaires et les pièces jointes peuvent entraîner le nombre d’éléments exportés pour être différente de l’estimation d’origine des résultats de recherche.
