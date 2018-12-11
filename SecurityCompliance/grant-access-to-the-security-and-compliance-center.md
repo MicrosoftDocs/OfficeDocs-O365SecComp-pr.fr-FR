@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Les utilisateurs doivent être affectées des autorisations de sécurité Office 365 &amp; centre de conformité avant qu’ils peuvent gérer une de ses fonctionnalités de sécurité ou de conformité.
-ms.openlocfilehash: 976c4e21351e352672f3075d0f713e63a634ce42
-ms.sourcegitcommit: da4aa7335b577148ecd61e09bbb11039b817b287
+ms.openlocfilehash: 5055c64d914e15a6570c339ade48bb8f7e802ea7
+ms.sourcegitcommit: a56fa2e184a2662fd8a7881ccea0891e9a26d497
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26539106"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27221065"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>Donner aux utilisateurs l’accès à la la sécurité d’Office 365 &amp; centre de conformité
 
@@ -29,7 +29,7 @@ Les utilisateurs doivent être affectées des autorisations de sécurité Office
   
 Pour plus d’informations sur les différentes autorisations que vous pouvez donner aux utilisateurs de la sécurité &amp; centre de conformité, extraction [les autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md).
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 - Vous devez être un administrateur global d’Office 365, ou un membre du groupe de rôles de sécurité OrganizationManagement &amp; centre de conformité, pour effectuer les étapes décrites dans cet article.
     
@@ -74,9 +74,9 @@ Pour plus d’informations sur les différentes autorisations que vous pouvez do
 
  **Paramètres**
   
--  _-Identity_ est le groupe de rôles auquel ajouter un membre. 
+- _-Identity_ est le groupe de rôles auquel ajouter un membre. 
     
-- - _Membre_ est la boîte aux lettres, le groupe de sécurité universel (USG) ou d’ordinateur à ajouter au groupe de rôles. Vous pouvez spécifier qu’un seul membre à la fois. 
+- _Membre_ est la boîte aux lettres, le groupe de sécurité universel (USG) ou d’ordinateur à ajouter au groupe de rôles. Vous pouvez spécifier qu’un seul membre à la fois. 
     
 Pour plus d’informations sur la syntaxe et les paramètres, voir [Add-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510859).
   
