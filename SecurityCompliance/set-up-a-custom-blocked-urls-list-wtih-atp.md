@@ -5,19 +5,20 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
+ms.date: 12/11/2018
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
-description: Lisez cet article pour apprendre à configurer une liste d’URL bloqués pour votre organisation à l’aide d’Office 365 avancée protection contre les menaces. Les URL bloquées s’appliquera aux messages électroniques et des documents Office en fonction de vos stratégies de liens fiables DAV.
-ms.openlocfilehash: cd17fe61b7ecd5becd0918323952f304a73a4ce0
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+description: Découvrez comment configurer une liste d’URL bloqués pour votre organisation à l’aide d’Office 365 avancée protection contre les menaces. Les URL bloquées s’appliquera aux messages électroniques et des documents Office en fonction de vos stratégies de liens fiables DAV.
+ms.openlocfilehash: 25f01b767726ebf02d5da5d18444fa0428f144ac
+ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706208"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27240527"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Configurer une liste d’URL bloquée personnalisée à l’aide d’Office 365 DAV fiables liens
 
@@ -37,24 +38,32 @@ Lisez cet article pour apprendre à configurer la liste des URL bloqué personna
     
 2. Dans la navigation de gauche, sous **Gestion des menaces**, choisissez **stratégie** \> **Liens fiables**.
     
-3. Dans la section **stratégies qui s’appliquent à toute l’organisation** , sélectionnez **par défaut**, puis choisissez **Modifier** (le bouton Modifier ressemble à un crayon).<br/>![Cliquez sur Modifier pour modifier votre stratégie par défaut pour la protection des liens fiables](media/d08f9615-d947-4033-813a-d310ec2c8cca.png)<br/>C’est là vous permet d’afficher la liste des URL bloquées. Notez que dans un premier temps, vous n’avez aucune URL répertoriées.<br/>![La liste des URL bloqués est par défaut stratégie liens fiables qui s’applique à toute votre organisation.](media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
+3. Dans la section **stratégies qui s’appliquent à toute l’organisation** , sélectionnez **par défaut**, puis choisissez **Modifier** (le bouton Modifier ressemble à un crayon).<br/>![Cliquez sur Modifier pour modifier votre stratégie par défaut pour la protection des liens fiables](media/d08f9615-d947-4033-813a-d310ec2c8cca.png)<br/>Cela vous permet d’afficher la liste des URL bloquées. Tout d’abord, vous ne disposez pas des URL répertoriées ici.<br/>![Liste des URL dans la stratégie de liens fiables par défaut bloqués](media/575e1449-6191-40ac-b626-030a2fd3fb11.png)
   
-4. Sélectionnez la zone **Tapez une URL valide** et tapez une URL, puis cliquez sur le signe plus (+). Voici quelques points à prendre en compte : 
+4. Sélectionnez la zone **Tapez une URL valide** , tapez une URL, puis cliquez sur le signe plus (**+**). 
+
+5. Lorsque vous avez terminé d’ajouter des URL, dans le coin inférieur droit de l’écran, cliquez sur **Enregistrer**.
     
-  - Vous pouvez spécifier une URL de domaine (comme `contoso.com` ou `tailspintoys.com`). Cela empêchera clics sur n’importe quelle URL qui contient le domaine.
+## <a name="a-few-things-to-keep-in-mind"></a>Quelques éléments à prendre en compte
+
+Lorsque vous ajoutez à votre liste des URL, gardez les points suivants à l’esprit : 
+
+- N’incluez pas une barre oblique ( **/**) à la fin de l’URL. Par exemple, au lieu de saisir `http://www.contoso.com/`, entrez `http://www.contoso.com`.
     
-  - N’incluez pas une barre oblique ( **/**) à la fin de l’URL. Par exemple, au lieu de saisir `http://www.contoso.com/`, entrez `http://www.contoso.com`.
+- Vous pouvez spécifier une URL de domaine (comme `contoso.com` ou `tailspintoys.com`). Cela empêchera clics sur n’importe quelle URL qui contient le domaine.
+
+- Vous pouvez spécifier un sous-domaine (comme `toys.contoso.com*`) sans bloquer un domaine complet (comme `contoso.com`). Il est bloc clique sur une URL qui contient le sous-domaine, mais il ne bloque clique sur une URL qui contient le domaine complet.  
     
-  - Vous pouvez inclure jusqu'à trois astérisques générique (\*) par l’URL. Le tableau suivant répertorie quelques exemples de ce que vous pouvez entrer et les effets que ces entrées ont.
+- Vous pouvez inclure jusqu'à trois astérisques générique (\*) par l’URL. Le tableau suivant répertorie quelques exemples de ce que vous pouvez entrer et les effets que ces entrées ont.
     
 |**Exemple d’entrée**|**Fonction**|
 |:-----|:-----|
 |`contoso.com`ou`*contoso.com*`  <br/> |Bloque le domaine, les sous-domaines et les chemins d’accès, tel que `https://www.contoso.com`, `http://sub.contoso.com`, et`http://contoso.com/abc`  <br/> |
 |`http://contoso.com/a`  <br/> |Bloque un site `http://contoso.com/a` mais pas les autres sections`http://contoso.com/a/b`  <br/> |
 |`http://contoso.com/a*`  <br/> |Bloque un site `http://contoso.com/a` et sections supplémentaires`http://contoso.com/a/b`  <br/> |
+|`http://toys.contoso.com*`  <br/> |Bloque un sous-domaine (« toys » dans ce cas), mais autoriser les clics vers d’autres URL de domaine (comme `http://contoso.com` ou `http://home.contoso.com`).  <br/> |
    
-5. Lorsque vous avez terminé d’ajouter des URL, dans le coin inférieur droit de l’écran, cliquez sur **Enregistrer**.
-    
+
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>Comment définir des exceptions pour certains utilisateurs dans une organisation
 
 Si vous souhaitez que certains groupes pour être en mesure d’afficher les URL qui peuvent être bloquées pour d’autres personnes, vous pouvez spécifier une stratégie de liens fiables DAV qui s’applique à des destinataires spécifiques. Voir [configurer une liste d’URL personnalisée du « pas de rewrite » à l’aide de liens fiables DAV](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).

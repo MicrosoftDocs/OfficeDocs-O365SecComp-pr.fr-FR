@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 description: Cet article fournit des informations de dépannage pour les expéditeurs qui rencontrent des problèmes lors de l'envoi d'e-mail à des boîtes de réception dans Office 365 et les meilleures pratiques pour l'envoi de courrier en nombre à des clients Office 365.
-ms.openlocfilehash: 3d8c0a05d096da87b9f686222055d76a6ae96ff2
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 3d90da9ac239971fd888ed3b8637ba9941628fc2
+ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003203"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27240557"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Résolution des problèmes de messages envoyés à Office 365
 
@@ -115,7 +115,7 @@ Vous avez reçu une notification d'échec de remise car une activité suspecte a
 ### <a name="i-cant-receive-email-from-senders-in-office-365"></a>Je ne reçois pas les e-mails provenant d'expéditeurs dans Office 365
 <a name="AllowEOPIPs"> </a>
 
- Afin de recevoir des messages à partir de nos utilisateurs, assurez-vous que votre réseau autorise les connexions à partir des adresses IP qui utilise des EOP dans nos centres de données. Pour plus d’informations, voir [adresses IP de Protection Exchange Online](eop/exchange-online-protection-ip-addresses.md). Pour un enregistrement de IP toutes les adresses qui ont été ajoutées, modifiées ou déconseillées dans l’année dernière, voir [notification de modification pour les adresses IP EOP](eop/change-notification-for-eop-ip-addresses.md).
+ Afin de recevoir des messages à partir de nos utilisateurs, assurez-vous que votre réseau autorise les connexions à partir des adresses IP qui utilise des EOP dans nos centres de données. Pour plus d’informations, voir [adresses IP de Protection Exchange Online](eop/exchange-online-protection-ip-addresses.md). 
   
 ## <a name="best-practices-for-bulk-emailing-to-office-365-users"></a>Meilleures pratiques pour l'envoi en bloc d'e-mails aux utilisateurs d'Office 365
 <a name="BulkMailer"> </a>
@@ -162,7 +162,7 @@ Au cours du processus d'enregistrement, si la case à cocher « Oui, merci de m'
   
 ### <a name="ensure-that-email-message-content-is-transparent-and-traceable"></a>Vérifier que le contenu des messages électroniques est transparent et qu'il est possible de le suivre
 
-La façon dont les e-mails sont envoyés est aussi importante que leur contenu. Lorsque vous créez le contenu d’un e-mail, utilisez les meilleures pratiques suivantes pour vous assurer que vos e-mails ne seront pas signalés par des services de filtrage des messages électroniques :
+La façon dont les e-mails sont envoyés est aussi importante que leur contenu. Lorsque vous créez le contenu d'un e-mail, utilisez les meilleures pratiques suivantes pour vous assurer que vos e-mails ne seront pas signalés par des services de filtrage des messages électroniques :
   
 - Lorsque le message de l'e-mail demande aux destinataires d'ajouter l'expéditeur au carnet d'adresses, il doit clairement indiquer qu'une telle action ne constitue pas une garantie de remise.
     
@@ -190,6 +190,6 @@ La façon dont les e-mails sont envoyés est aussi importante que leur contenu. 
     
 ### <a name="remove-incorrect-email-aliases-from-your-databases"></a>Supprimer les alias de messagerie incorrects de vos bases de données
 
-Les alias de messagerie de votre base de données qui créent un renvoi sont inutiles et exposent vos messages électroniques sortants à des risques d’examen approfondi par les services de filtrage de courrier électronique. Assurez-vous que votre base de données de messagerie est à jour.
+Les alias de messagerie de votre base de données qui créent un renvoi sont inutiles et exposent vos messages électroniques sortants à des risques d'examen approfondi par les services de filtrage de courrier électronique. Assurez-vous que votre base de données de messagerie est à jour.
   
 

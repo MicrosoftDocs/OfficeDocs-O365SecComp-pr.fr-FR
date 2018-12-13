@@ -3,7 +3,7 @@ title: Utiliser la recherche de contenu dans Office 365 pour les collections cib
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 10/12/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -11,16 +11,16 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Utiliser la recherche de contenu de sécurité Office 365 &amp; centre de conformité pour effectuer des collections ciblées. Un regroupement cible signifie que vous êtes convaincu qu’articles réactifs à un cas ou privilégié se trouvent dans un dossier de boîte aux lettres ou un site spécifique. Utilisez le script dans cet article pour obtenir l’ID de dossier ou le chemin d’accès pour les dossiers de boîte aux lettres ou des sites spécifiques que vous souhaitez rechercher.
-ms.openlocfilehash: f4bb63a193a11e7467b3b296b2bdfa50657ae65a
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+ms.openlocfilehash: 094fa4de4b8de9782a9bafb2eb8fb6ef3c52b46b
+ms.sourcegitcommit: 06ae71741875f604bcc7a4e01b0b62cc768cbe97
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522285"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "27245061"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Utiliser la recherche de contenu dans Office 365 pour les collections ciblées
 
-La fonctionnalité de recherche de contenu de sécurité Office 365 &amp; centre de conformité ne fournit pas un moyen direct dans l’interface utilisateur de rechercher des dossiers spécifiques dans les boîtes aux lettres Exchange ou SharePoint et OneDrive pour les sites de l’entreprise. Toutefois, il est possible de rechercher des dossiers spécifiques (appelés un regroupement cible) en spécifiant l’ID de dossier ou le chemin d’accès dans la syntaxe de requête de recherche. À l’aide de la recherche de contenu pour effectuer un regroupement cible est utile lorsque vous êtes convaincu qu’articles réactifs à un cas ou privilégié se trouvent dans un dossier de boîte aux lettres ou un site spécifique. Vous pouvez utiliser le script dans cet article pour obtenir l’ID de dossier pour les dossiers de boîte aux lettres ou le chemin d’accès pour les dossiers SharePoint et OneDrive pour le site de l’entreprise. Puis vous pouvez utiliser l’ID de dossier ou le chemin d’accès dans une requête de recherche pour renvoyer des éléments situés dans le dossier.
+La fonctionnalité de recherche de contenu de sécurité Office 365 &amp; centre de conformité ne fournit pas un moyen direct dans l’interface utilisateur de rechercher des dossiers spécifiques dans les boîtes aux lettres Exchange ou SharePoint et OneDrive pour les sites de l’entreprise. Toutefois, il est possible de rechercher des dossiers spécifiques (appelés un *ciblés collection*) en spécifiant l’ID de dossier ou le chemin d’accès dans la syntaxe de requête de recherche. À l’aide de la recherche de contenu pour effectuer un regroupement cible est utile lorsque vous êtes convaincu qu’articles réactifs à un cas ou privilégié se trouvent dans un dossier de boîte aux lettres ou un site spécifique. Vous pouvez utiliser le script dans cet article pour obtenir l’ID de dossier pour les dossiers de boîte aux lettres ou le chemin d’accès pour les dossiers SharePoint et OneDrive pour le site de l’entreprise. Puis vous pouvez utiliser l’ID de dossier ou le chemin d’accès dans une requête de recherche pour renvoyer des éléments situés dans le dossier.
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -44,7 +44,7 @@ La fonctionnalité de recherche de contenu de sécurité Office 365 &amp; centre
 
 Le script que vous exécutez dans cette première étape renverra une liste de dossiers de boîte aux lettres ou SharePoint ou OneDrive pour les dossiers de l’entreprise et l’ID du dossier correspondant ou chemin d’accès pour chaque dossier. Lorsque vous exécutez ce script, il vous invite à vous pour obtenir les informations suivantes.
   
-- **URL de site ou adresse de messagerie** Tapez une adresse de messagerie de le dépositaire pour renvoyer une liste de dossiers de boîte aux lettres Exchange et pliez ID. Ou tapez l’URL pour un site SharePoint ou un site de l’entreprise OneDrive pour retourner une liste de chemins d’accès pour le site spécifié. Voici quelques exemples : 
+- **URL de site ou adresse de messagerie** Tapez une adresse de messagerie de le dépositaire pour renvoyer une liste des dossiers de boîte aux lettres Exchange et l’ID de dossier. Ou tapez l’URL pour un site SharePoint ou un site de l’entreprise OneDrive pour retourner une liste de chemins d’accès pour le site spécifié. Voici quelques exemples : 
     
   - **Exchange** - stacig@contoso.onmicrosoft.com 
     
@@ -138,7 +138,7 @@ Pour afficher la liste des dossiers de boîte aux lettres ou les noms de chemin 
       }while ($complianceSearch.Status -ne 'Completed')
       if ($complianceSearch.Items -gt 0)
       {
-          # Create a Complinace Search Action and wait for it to complete. The folders will be listed in the .Results parameter
+          # Create a Compliance Search Action and wait for it to complete. The folders will be listed in the .Results parameter
           $complianceSearchAction = New-ComplianceSearchAction -SearchName $searchName -Preview
           do
           {
@@ -216,7 +216,7 @@ Après avoir exécuté le script pour collecter une liste d’ID de dossier ou c
     
 4. Sur la page **Nouvelle recherche**, entrez un nom pour la recherche de contenu. Ce nom doit être unique dans votre organisation. 
     
-5. Sous **où souhaitez-vous rechercher**, effectuez l’une des valeurs suivantes, selon que votre recherche dans un dossier de boîte aux lettres ou un dossier de site :
+5. Sous **où souhaitez-vous rechercher**, effectuez l’une des valeurs suivantes, selon si vous recherchez un dossier de boîte aux lettres ou un dossier de site :
     
     - Cliquez sur **Choisir les boîtes aux lettres spécifiques à rechercher** , puis ajoutez la même boîte aux lettres que vous avez spécifié lorsque vous avez exécuté le script à l’étape 1. 
     
@@ -262,16 +262,18 @@ Voici quelques exemples d’utilisation de la `folderid` et `path` propriétés 
   path:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
   
-## <a name="more-information"></a>Informations complémentaires
+## <a name="more-information"></a>More information
 
-Gardez les éléments suivants à l’esprit lorsque vous utilisez le script dans cet article et effectue ciblés collections.
+Gardez les éléments suivants à l’esprit lorsque vous utilisez le script dans cet article pour effectuer des collections ciblées.
   
 - Le script ne supprime pas tous les dossiers à partir des résultats. Pour certains dossiers répertoriés dans les résultats peuvent être impossibles à rechercher (ou renvoyer des éléments de zéro), car elles contiennent le contenu généré par le système.
     
 - Ce script renvoie uniquement des informations de dossier de boîte aux lettres principale de l’utilisateur. Elle ne renvoie aucune information sur les dossiers de boîte aux lettres de l’utilisateur archive.
     
-- Lors de la recherche dans les dossiers de boîte aux lettres, uniquement dans le dossier spécifié (identifié par son `folderid` propriété) portera. Les sous-dossiers ne sont pas être recherchés. Pour rechercher des sous-dossiers, vous devez utiliser le `folderid` pour le dossier que vous souhaitez rechercher. 
+- Lors de la recherche dans les dossiers de boîte aux lettres, uniquement dans le dossier spécifié (identifié par son `folderid` propriété) portera. Les sous-dossiers ne sont pas être recherchés. Pour rechercher des sous-dossiers, vous devez utiliser l’ID de dossier pour le dossier que vous souhaitez rechercher. 
     
 - Lors de la recherche des dossiers du site, le dossier (identifiée par son `path` propriété) et tous les sous-dossiers sont recherchées. 
     
 - Comme indiqué précédemment, vous ne pouvez pas utiliser `path` propriété pour rechercher des fichiers multimédias, tels que .png, .tiff ou les fichiers .wav, situés dans des emplacements de OneDrive. Une autre [propriété site](keyword-queries-and-search-conditions.md#searchable-site-properties) permet de rechercher des fichiers multimédias dans les dossiers OneDrive. 
+
+- Lorsque vous exportez les résultats d’une recherche dans laquelle vous avez spécifié uniquement le `folderid` propriété dans la requête de recherche, vous pouvez choisir l’exportation première option, « tous les éléments, à l’exception de ceux qui ont un format non reconnu, sont chiffrées ou n’ont pas été indexés pour d’autres raisons ». Tous les éléments dans le dossier seront toujours exportées quel que soit leur état de l’indexation car l’ID de dossier est indexée à toujours.
