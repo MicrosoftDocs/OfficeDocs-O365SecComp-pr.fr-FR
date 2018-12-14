@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 'Résumé : Cet article décrit comment utiliser DKIM (DomainKeys Identified Mail) avec Office 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.'
-ms.openlocfilehash: 13af2ae96d8c4cbf363e1273a3d1ed5fb9be2077
-ms.sourcegitcommit: 9f08af5502070a42de22b6d83e3a08c67cc0c619
+ms.openlocfilehash: 1bafae2a1e1e5de390fd0b8d81c1cf2513092d8e
+ms.sourcegitcommit: 4f776e1cf8872ce90e632d4305cb727d31754767
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27201568"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "27263913"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé dans Office 365
 
@@ -83,9 +83,12 @@ Pour configurer DKIM, suivez les étapes ci-dessous :
 
 Pour chaque domaine auquel vous souhaitez ajouter une signature DKIM dans le système DNS, vous devez publier deux enregistrements CNAME. Un enregistrement CNAME est utilisé par le système DNS pour indiquer que le nom canonique d'un domaine est un alias d'un autre nom de domaine. 
   
- Office 365 effectue une rotation automatique des clés à l’aide des deux enregistrements que vous établissez. Si vous avez configuré des domaines personnalisés en plus du domaine initial dans Office 365, vous devez publier deux enregistrements CNAME pour chaque domaine supplémentaire. Par conséquent, si vous avez deux domaines, vous devez publier deux enregistrements CNAME supplémentaires, et ainsi de suite. 
+ Office 365 effectue une rotation automatique des clés à l'aide des deux enregistrements que vous établissez. Si vous avez configuré des domaines personnalisés en plus du domaine initial dans Office 365, vous devez publier deux enregistrements CNAME pour chaque domaine supplémentaire. Par conséquent, si vous avez deux domaines, vous devez publier deux enregistrements CNAME supplémentaires, et ainsi de suite.
   
-Utilisez le format suivant pour les enregistrements CNAME :
+Utilisez le format suivant pour les enregistrements CNAME.
+
+> [!IMPORTANT]
+> Si vous êtes un de nos clients GCC, la méthode domainGUID ne fonctionnera pas pour vous ! Veillez à utiliser la valeur correcte MX pour votre domaine. Utilisation : `selector2-<domain-key>._domainkey.<initialDomain>` pour les exemples ci-dessous. Utilisez [cet article](https://docs.microsoft.com/en-us/office365/admin/get-help-with-domains/information-for-dns-records?view=o365-worldwide) pour trouver l’enregistrement MX nécessaire pour votre valeur de *clé de domaine* .
   
 ```
 Host name:          selector1._domainkey
