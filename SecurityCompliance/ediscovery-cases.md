@@ -3,7 +3,7 @@ title: cas eDiscovery de sécurité Office 365 &amp; centre de conformité
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/26/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Utilisez le Office 365 Security &amp; centre de conformité pour créer et gérer des affaires eDiscovery dans votre organisation. Vous pouvez affecter des membres à la casse, placez le contenu des emplacements en attente, exécutez les recherches de contenu associé avec l’incident et l’exportation les résultats de recherche. Vous pouvez également préparer des données de cas pour une analyse approfondie d’eDiscovery avancée.
-ms.openlocfilehash: 3beb7dcf3e09816c1a282944767d2353f08943be
-ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
+ms.openlocfilehash: 8abaa0a962a63cc227a8bb1371e14218a9ee854d
+ms.sourcegitcommit: 3cc069415132ccaa1ead5162df15baa2203ca2e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965271"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27299360"
 ---
 # <a name="ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>cas eDiscovery de sécurité Office 365 &amp; centre de conformité
 
@@ -53,9 +53,9 @@ Utilisez la procédure suivante pour configurer et utiliser des cas eDiscovery d
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>Étape 1 : attribuer des autorisations de découverte électronique aux membres potentiels de cas
 
-La première étape consiste à attribuer les autorisations appropriées liés à la découverte électronique aux personnes afin que vous pouvez les ajouter à une affaire eDiscovery à l’étape 2. Vous devez être membre du groupe de rôles de gestion de l’organisation (ou attribuer le rôle de gestion du rôle) de sécurité Office 365 &amp; centre de conformité pour attribuer des autorisations de découverte électronique. La liste suivante décrit les groupes de rôles liés à la découverte de la sécurité &amp; centre de conformité.
+La première étape consiste à attribuer les autorisations appropriées liés à la découverte électronique aux personnes afin que vous pouvez les ajouter à une affaire eDiscovery à l’étape 2. Vous devez être membre du groupe de rôles de gestion de l’organisation (ou attribuer le rôle de gestion du rôle) de sécurité Office 365 &amp; centre de conformité pour attribuer des autorisations de découverte électronique. La liste suivante décrit les groupes de rôles liés à la découverte de la sécurité &amp; centre de conformité. 
   
-- **Relecteur** - ce groupe de rôles dispose des autorisations plus restrictives liés à la découverte électronique. Membres de ce groupe peuvent uniquement voir et ouvrir la liste des cas dans la page de **découverte électronique** dans la sécurité &amp; centre de conformité qui ils sont membres de. Ils ne peuvent pas créer des cas, ajouter des membres à un cas, créer des suspensions, créer des recherches, exporter les résultats de recherche ou préparer des résultats pour la découverte avancée. Toutefois, les membres peuvent accéder cas eDiscovery avancé pour effectuer les tâches d’analyse. 
+- **Relecteur** - ce groupe de rôles dispose des autorisations plus restrictives liés à la découverte électronique. Le principal objectif de ce groupe de rôles consiste à permettre aux membres de l’affichage et l’accès cas des données dans Office 365 avancée de découverte électronique. Membres de ce groupe peuvent uniquement voir et ouvrir la liste des cas dans la page de **découverte électronique** dans la sécurité &amp; centre de conformité qui ils sont membres de. Une fois que l’utilisateur accède à un cas de la sécurité et le centre de conformité, ils peuvent cliquer sur **commutateur eDiscovery avancé** pour accéder et analyser les données de cas de découverte avancée. Impossible de créer des cas, d’ajouter des membres à un cas, créer des suspensions, créer des recherches, afficher un aperçu des résultats de la recherche, exporter les résultats de recherche ou préparer des résultats pour la découverte avancée. 
     
 - **Gestionnaire de découverte électronique** - membres de ce groupe de rôles peut créer et gérer des affaires eDiscovery. Ils peuvent ajouter et supprimer des membres, placer le contenu des emplacements maintenant, créent et modifier des recherches de contenu associé à un cas, exporter les résultats d’une recherche de contenu et préparer les résultats de la recherche pour l’analyse d’eDiscovery avancée. Il existe deux sous-groupes dans ce groupe de rôles. La différence entre ces sous-groupes repose sur étendue.
     
@@ -65,20 +65,22 @@ La première étape consiste à attribuer les autorisations appropriées liés �
     
     - Afficher tous les cas répertoriés sur la page **Découverte électronique**. 
     
-    - Gérer des cas de découverte électronique dans l’organisation une fois qu’ils s’ajoutent en tant que membre de la casse.
+    - Gérer tous les cas dans l’organisation une fois qu’ils s’ajoutent en tant que membre de la casse.
     
-    - Effectuer des tâches administratives d’eDiscovery avancée, telles que le traitement des données pour l’analyse de cas, configuration des paramètres de casse et exportation de données à partir de la découverte électronique avancée. Il s’agit, car une personne qui est une administrateur de la sécurité de la découverte &amp; centre de conformité est automatiquement ajouté en tant qu’administrateur d’eDiscovery avancée.
+    - Accédez aux données cas d’eDiscovery avancée pour tous les cas dans l’organisation.
     
-    Consultez la section [More information](ediscovery-cases.md#moreinfo_1) pour connaître les raisons pour lesquelles vous pourriez avoir besoin d’un administrateur de découverte électronique dans votre organisation. 
+    Consultez la section [More information](#more-information) pour connaître les raisons pour lesquelles vous pourriez avoir besoin d’un administrateur de découverte électronique dans votre organisation. 
     
 > [!IMPORTANT]
 > Si une personne n’est pas membre d’un de ces groupes de rôles liés à la découverte électronique, ou n’est pas un membre d’un groupe de rôles qui a attribué le rôle de réviseur, vous ne pouvez pas ajouter les en tant que membre d’un cas de découverte électronique. 
+
+Pour plus d’informations sur les autorisations de découverte électronique, consultez la rubrique [attribuer des autorisations de sécurité Office 365 eDiscovery &amp; centre de conformité](assign-ediscovery-permissions.md).
   
  **Pour attribuer des autorisations de découverte électronique, procédez comme suit :**
   
-1. Accédez à [https://protection.office.com](https://protection.office.com).
+1. Accédez à la page [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à Office 365 à l’aide de votre compte professionnel ou de l’école.
+2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
 3. Dans la sécurité &amp; centre de conformité, cliquez sur **autorisations**, puis effectuez l’une des opérations suivantes en fonction des autorisations que vous souhaitez affecter eDiscovery.
     
@@ -94,9 +96,9 @@ La première étape consiste à attribuer les autorisations appropriées liés �
 
 L’étape suivante consiste à créer un nouveau cas eDiscovery. Vous devez être membre du groupe de rôles responsables eDiscovery pour créer des cas de découverte électronique. Comme expliqué, après avoir créé un nouveau cas de la sécurité &amp; centre de conformité, vous (et autres membres de l’incidents) seront en mesure d’accès que même casse d’eDiscovery avancée si vous êtes organisation dispose d’un abonnement à Office 365 E5.
   
-1. Accédez à [https://protection.office.com](https://protection.office.com).
+1. Accédez à la page [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à Office 365 à l’aide de votre compte professionnel ou de l’école.
+2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
 3. Dans la sécurité &amp; centre de conformité, cliquez sur **recherche &amp; enquête** \> **eDiscovery**, puis cliquez sur ![ajouter une icône](media/ITPro-EAC-AddIcon.gif) **créer un cas**.
     
@@ -142,7 +144,10 @@ Après avoir créé un nouveau cas, l’étape suivante consiste à ajouter des 
 ## <a name="step-4-place-content-locations-on-hold"></a>Étape 4 : Suspendre sur les emplacements de contenu
 
 Vous pouvez utiliser un cas de découverte électronique pour créer des suspensions pour conserver le contenu qui peut-être s’appliquer à la casse. Vous pouvez placer une suspension sur OneDrive les boîtes aux lettres des personnes qui sont dépositaires dans le cas des sites de commerce. Vous pouvez également placer une suspension sur la boîte aux lettres de groupe, du site SharePoint et OneDrive pour le site de l’entreprise pour un groupe d’Office 365. De même, vous pouvez placer une suspension sur le site qui sont associés à Microsoft Teams et de boîte aux lettres. Lorsque vous placez les emplacements de contenu en attente, le contenu est conservé jusqu'à ce que vous supprimez la suspension de l’emplacement du contenu ou jusqu'à ce que vous supprimez la suspension.
-  
+
+> [!NOTE]
+> Après avoir créé un emplacement de contenu en attente, il faut jusqu'à 24 heures pour le blocage prenne effet. 
+>   
 Lorsque vous créez une suspension, vous disposez des options suivantes pour définir la portée du contenu est conservé dans les emplacements de contenu spécifiés :
   
 - Vous créez une attente infinie où tout le contenu est mis en attente. Vous pouvez également créer une suspension basée sur une requête où seulement le contenu qui correspond à une requête de recherche est mis en attente.
@@ -183,7 +188,7 @@ Pour créer une suspension pour un cas de découverte électronique :
   
    b. **Les Sites SharePoint** : cliquez sur **Choisir les sites** , puis cliquez sur **Choisir les sites** pour spécifier SharePoint et OneDrive pour les sites à mettre en attente. Tapez l’URL pour chaque site que vous souhaitez mettre en attente. Vous pouvez également ajouter l’URL du site SharePoint pour un groupe d’Office 365 ou un Team Microsoft. Cliquez sur **Choisir**, puis cliquez sur **terminé**.
     
-    Voir la section [plus d’informations](ediscovery-cases.md#moreinfo_1) pour obtenir des conseils sur le fait de placer des groupes Office 365 et Microsoft Teams en attente. 
+    Voir la section [plus d’informations](#more-information) pour obtenir des conseils sur le fait de placer des groupes Office 365 et Microsoft Teams en attente. 
     
     > [!NOTE]
     > Dans ce cas rare que le nom d’une personne utilisateur principal (UPN) est modifié, l’URL de leur compte OneDrive système aussi être modifié pour incorporer le nouvel UPN. Dans ce cas, vous devrez modifier la suspension en ajoutant une nouvelle URL l’utilisateur de OneDrive et de supprimer l’ancien. 
@@ -391,7 +396,7 @@ Comme alternative à exporter les résultats d’une recherche de contenu unique
 
 ## <a name="step-7-prepare-search-results-for-advanced-ediscovery"></a>Étape 7 : Préparation de résultats pour la découverte avancée de la recherche
 
-Si votre organisation a un abonnement à Office 365 E5, vous pouvez préparer les résultats de recherches de contenu associé à un cas pour l’analyse d’eDiscovery avancée. Après avoir préparé les résultats de la recherche, vous pouvez passer à la découverte électronique avancée (voir [étape 8 : accédez à la casse d’eDiscovery avancée](ediscovery-cases.md#gotoAeD_1)) et traitent les données de résultats de recherche pour une analyse approfondie d’eDiscovery avancée.
+Si votre organisation a un abonnement à Office 365 E5, vous pouvez préparer les résultats de recherches de contenu associé à un cas pour l’analyse d’eDiscovery avancée. Après avoir préparé les résultats de la recherche, vous pouvez passer à la découverte électronique avancée (voir [étape 8 : accédez à la casse d’eDiscovery avancée](#step-8-go-to-the-case-in-advanced-ediscovery)) et traitent les données de résultats de recherche pour une analyse approfondie d’eDiscovery avancée.
   
 Lorsque vous préparez des résultats de la recherche avancée eDiscovery, les fonctionnalités de reconnaissance optique de caractères (OCR) extrait automatiquement le texte à partir d’images. Reconnaissance optique de caractères est pris en charge pour les fichiers à part, pièces jointes et des images incorporées. Cela vous permet d’appliquer les fonctionnalités d’analyse texte d’eDiscovery avancée (près de doublons, messagerie threading, thèmes et codage prédictive) à du texte dans des fichiers image.
   
@@ -509,7 +514,7 @@ Lorsque vous rouvrez un cas, les suspensions qui étaient en place lors de la fe
     
     Lorsque le processus est terminé, le statut de l’incident est modifié **actif** dans la page de **découverte électronique** . 
   
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>More information
 
 - **y a-t-il des limites pour les cas eDiscovery ou suspensions associées à une affaire eDiscovery ?** Le tableau suivant répertorie les limites pour les cas eDiscovery et blocages cas.
     
@@ -530,7 +535,7 @@ Lorsque vous rouvrez un cas, les suspensions qui étaient en place lors de la fe
     
     Enfin, précédente comme expliqué, administrateurs de découverte électronique dans la sécurité &amp; centre de conformité sont automatiquement ajoutés en tant qu’administrateurs d’eDiscovery avancée. Par conséquent, une personne qui est une administrateur de découverte électronique peut effectuer des tâches administratives d’eDiscovery avancée, telles que la configuration des utilisateurs, des cas de création et ajout de données à des cas.
     
-- **Quelles sont les conditions de licence pour placer les emplacements de contenu en attente ?** En règle générale, les organisations nécessitent un abonnement à Office 365 E3 ou supérieur pour mettre les emplacements de contenu en attente. Pour mettre des boîtes aux lettres en attente, une licence Exchange Online Plan 2 est requise.
+- **Quelles sont les conditions de licence pour placer les emplacements de contenu en attente ?** En règle générale, les organisations nécessitent un abonnement à Office 365 E3 ou supérieur pour mettre les emplacements de contenu en attente. Pour mettre des boîtes aux lettres en attente, une licence Exchange Online Plan 2 est requise pour la boîte aux lettres que vous souhaitez mettre en attente.
     
 - **Else doivent savoir à propos de la recherche dans tout le contenu à l’étape 5 ?** Comme expliqué précédemment, vous pouvez rechercher les emplacements de contenu qui ont été mis en attente dans le cas. Lorsque vous effectuez cette opération, uniquement le contenu qui correspond aux critères de suspension est recherche. S’il n’existe aucun critère d’attente, tout le contenu est recherché. Si le contenu est sur une requête bloquer, uniquement le contenu que correspond à la fois doit contenir les critères (à partir de la suspension placés à l’étape 4) et les critères de recherche (à partir de la recherche à l’étape 5) est renvoyée avec les résultats de recherche.
     
