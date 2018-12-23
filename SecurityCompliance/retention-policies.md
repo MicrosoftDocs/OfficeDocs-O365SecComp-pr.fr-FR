@@ -3,7 +3,7 @@ title: Vue d’ensemble des stratégies de rétention
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: 11/16/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à seulement quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou seulement au contenu remplissant certaines conditions
-ms.openlocfilehash: 5b02d57931a47ca86f4da884463cfc0e52476d3c
-ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
+ms.openlocfilehash: a6d185484f83ca93c99153d584af6841397dbc2f
+ms.sourcegitcommit: ec465771a846de103a365fcb36cb7a7c0a5744c1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25540400"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380614"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -197,18 +197,14 @@ Voici d’autres fonctionnalités importantes d’une stratégie de rétention m
 - Il n’existe aucune limite au nombre de boîtes aux lettres ou de sites que la stratégie peut inclure.
     
 - Pour Exchange, toute nouvelle boîte aux lettres créée après l’application de la stratégie hérite automatiquement de la stratégie.
-    
-Toutefois, il existe une limite de 10 stratégies mise en place à l’échelle de l’organisation et d’emplacements entiers par locataire (voir la section suivante).
   
 ### <a name="a-policy-that-applies-to-entire-locations"></a>Une stratégie qui s’applique aux emplacements entiers
 
 Lorsque vous choisissez des emplacements, vous pouvez facilement inclure ou exclure un emplacement entier, tel que la messagerie Exchange ou les comptes OneDrive. Pour ce faire, il suffit d’activer ou de désactiver le **Statut** de cet emplacement. 
   
 Comme pour une stratégie mise en place à l’échelle de l’organisation, si une stratégie s’applique à n’importe quelle combinaison d’emplacements entiers, il n’existe aucune limite au nombre de boîtes aux lettres ou de sites que la stratégie peut inclure. Par exemple, si une stratégie inclut toute la messagerie Exchange et tous les sites SharePoint, l’ensemble des sites et des boîtes aux lettres est également inclus, quel que soit le nombre. Et pour Exchange, toute nouvelle boîte aux lettres créée après la stratégie hérite automatiquement de la stratégie.
-  
-Toutefois, il existe une limite de 10 stratégies mise en place à l’échelle de l’organisation et d’emplacements entiers par locataire.
-  
-![Page Sélectionner des emplacements](media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
+ 
+![Sélectionner des pages emplacements](media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
   
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Une stratégie avec des inclusions ou exclusions spécifiques
 
@@ -218,7 +214,7 @@ Cependant, notez que les limites suivantes existent pour une stratégie de réte
   
 - Une telle stratégie de rétention peut contenir 1 000 boîtes aux lettres et 100 sites au maximum.
     
-- Un client peut contenir 1 000 stratégies de rétention au maximum.
+- Un client peut contenir 10 000 stratégies de rétention au maximum.
     
 Bien que ces limites existent, notez que vous pouvez les contourner en appliquant une stratégie mise en place à l’échelle de l’organisation ou une stratégie qui s’applique aux emplacements entiers.
   
