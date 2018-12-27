@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: reference
-ms.date: 11/28/2018
+ms.date: 12/26/2018
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -13,18 +13,41 @@ search.appverid:
 - MOE150
 ms.assetid: d674763c-a4c9-4604-8623-68c1836d27f3
 description: Nouveautés dans Office 365 Cloud Application Security
-ms.openlocfilehash: a3ca4504d80cbb39b51ecbcf3a5165bc5139e07c
-ms.sourcegitcommit: bf628da123a89d9422e8cff02165b1e2d35dfe12
+ms.openlocfilehash: 9f0c93d0de6ae8be72456c874ef8f5e3d42264e2
+ms.sourcegitcommit: 25f72d20e76463c2f0a075dfc0116f00c934bd77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "26872012"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "27447062"
 ---
 # <a name="what-is-new-in-office-365-cloud-app-security"></a>Nouveautés de la sécurité d’application Office 365 dans le nuage
 
 **Résumé** Lisez cet article pour obtenir une vue d’ensemble rapide des mises à jour et nouvelles fonctionnalités dans Office 365 Cloud Application Security (anciennement appelé gestion de la sécurité avancée Office 365), qui repose sur [Microsoft Cloud Application Security](https://aka.ms/whatiscas).
   
-Cet article est mis à jour fréquemment, comme les fonctionnalités sont ajoutées ou améliorées. Mises à jour de sécurité des applications dans le nuage Office 365 sont libérées environ deux semaines après Microsoft Cloud application des mises à jour, et pas toutes les mises à jour Microsoft dans le nuage Application Security s’appliquent à la sécurité d’application Office 365 dans le nuage. En outre, les nouvelles fonctionnalités peuvent prendre au moins une semaine après leur date de publication s’affiche dans votre environnement de sécurité d’application Office 365 dans le nuage.
+> [!TIP]
+> Cet article est mis à jour fréquemment, comme les fonctionnalités sont ajoutées ou améliorées. Mises à jour de sécurité des applications dans le nuage Office 365 sont libérées environ deux semaines après Microsoft Cloud application des mises à jour, et pas toutes les mises à jour Microsoft dans le nuage Application Security s’appliquent à la sécurité d’application Office 365 dans le nuage. En outre, les nouvelles fonctionnalités peuvent prendre au moins une semaine après leur date de publication s’affiche dans votre environnement de sécurité d’application Office 365 dans le nuage.
+
+## <a name="office-365-cloud-app-security-release-138"></a>Version de sécurité des applications dans le nuage Office 365 138
+
+*Publication le 23 décembre 2018,*
+
+**Suite [Microsoft Cloud Application Security version 138](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-138)**:
+
+- **Ouverture de session automatique télécharger à l’aide de Docker sur Windows** Sécurité d’application cloud prend désormais en charge le téléchargement automatique des journaux pour Windows 10 ([Mise à jour des créateurs automne](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) et versions ultérieures) et Windows Server ([version 1709](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1709) et versions ultérieures) à l’aide de Docker sur Windows. Consultez [cet article](https://docs.microsoft.com/cloud-app-security/discovery-docker-windows) pour en savoir plus et configurer Docker.  
+
+- **Intégration de flux de Microsoft** Sécurité d’application cloud intègre maintenant [Flux Microsoft](https://docs.microsoft.com/flow/getting-started) pour fournir personnalisés playbooks automation et d’orchestration l’alerte. Consultez [cet article](https://docs.microsoft.com/cloud-app-security/flow-integration) pour en savoir plus et configurer l’intégration de Microsoft Flow. 
+
+
+## <a name="office-365-cloud-app-security-release-137"></a>Version de sécurité des applications dans le nuage Office 365 137
+
+*Publication le 8 décembre 2018,*
+
+**Suite [Microsoft Cloud Application Security version 137](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-137)**:
+
+- **Prise en charge de l’ajout de Dynamics** Sécurité d’application cloud prend désormais en charge pour les activités de Microsoft Dynamics sont prises en charge dans le journal d’audit d’Office 365. 
+
+- **Synthétique – nouvelle terminologie !** Le nom de capacités des autorisations de l’application a été modifié pour plus de clarté, il s’appelle désormais OAuth applications. 
+
 
 ## <a name="office-365-cloud-app-security-release-136"></a>Version de sécurité des applications dans le nuage Office 365 136
 
@@ -73,7 +96,7 @@ Cet article est mis à jour fréquemment, comme les fonctionnalités sont ajout�
 
 - **Nouvelle barre de menus** Pour fournir une expérience d’administration plus cohérente entre les produits Microsoft 365 et vous permettent de tableau croisé dynamique plus facilement entre les solutions de sécurité Microsoft, la barre de menus de portail de sécurité d’application Cloud a déplacé vers le côté gauche de l’écran. Cette navigation cohérente expérience vous aide à orienter lors du déplacement d’un portail de sécurité de Microsoft à l’autre.<br/>![Barre de menus dans la sécurité d’application Office sur le nuage](media/OCAS-MenuBar.png)<br/>
 
-- **Profil d’application impact OAuth** Vous pouvez maintenant envoyer les commentaires de l’équipe sécurité d’application Cloud pour nous indiquer s’il existe une application OAuth découverte dans votre organisation qui semble malveillante. Cette nouvelle fonctionnalité vous permet de faire partie de la Communauté de la sécurité et améliorer l’analyse et le score de risque d’application OAuth. Pour plus d’informations, voir [Gérer les autorisations d’application](manage-app-permissions-in-ocas.md).
+- **Profil d’application impact OAuth** Vous pouvez maintenant envoyer les commentaires de l’équipe sécurité d’application Cloud pour nous indiquer s’il existe une application OAuth découverte dans votre organisation qui semble malveillante. Cette nouvelle fonctionnalité vous permet de faire partie de la Communauté de la sécurité et améliorer l’analyse et le score de risque d’application OAuth. Pour plus d’informations, voir [OAuth gérer les applications](manage-app-permissions-in-ocas.md).
 
 - **Analyseurs de nouvelle découverte dans le nuage** Les analyseurs de découverte dans le nuage prennent désormais en charge iboss passerelle de nuage sécurisé et Sophos XG.
 
@@ -84,9 +107,9 @@ Cet article est mis à jour fréquemment, comme les fonctionnalités sont ajout�
   
 **Suite [Microsoft Cloud Application Security version 128](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-128)**: 
   
-- **Autorisations d’application entre plusieurs applications** Pour les applications qui ont été accordées des autorisations de l’application, vous pouvez maintenant interdire ou approuver les applications multiples en une seule action. Par exemple, vous pouvez passer en revue toutes les applications qui ont été accordées des autorisations par les utilisateurs de votre organisation, sélectionnez toutes les applications que vous souhaitez exclure, puis cliquez sur applications interdiction pour tous les consentement accordé et n’est plus permettra aux utilisateurs d’octroyer des autorisations pour ces applications. 
+- **Applications OAuth entre plusieurs applications** Pour les applications OAuth, vous pouvez maintenant interdire ou approuver les applications multiples en une seule action. Par exemple, vous pouvez passer en revue toutes les applications qui ont été accordées des autorisations par les utilisateurs de votre organisation, sélectionnez toutes les applications que vous souhaitez exclure, puis cliquez sur applications interdiction pour tous les consentement accordé et n’est plus permettra aux utilisateurs d’octroyer des autorisations pour ces applications. Pour plus d’informations, voir [OAuth gérer les applications à l’aide de la sécurité d’application Office 365 dans le nuage](manage-app-permissions-in-ocas.md). 
     
-- **Nouvelle requête suggérée : PIBR prêt** Il existe une nouvelle requête suggérée pour vous permettent d’identifier les applications découvertes PIBR prêt. PIBR a détecté récemment une priorité pour les administrateurs de sécurité. Cette requête vous permet de facilement identifier les applications qui sont prêt PIBR et atténuer les menaces à évaluer le risque des applications qui ne sont pas. 
+- **Nouvelle requête suggérée : applications du nuage PIBR-prêt** Il existe une nouvelle requête suggérée pour vous permettent d’identifier les applications découvertes PIBR prêt. Comme vous le savez probablement déjà, PIBR a récemment est devenu une priorité pour les administrateurs de sécurité. Cette requête vous permet de facilement identifier les applications qui sont prêt PIBR et atténuer les menaces à évaluer le risque des applications qui ne sont pas. Pour utiliser la nouvelle requête, dans le tableau de bord de **Découverte dans le nuage** , sous l’onglet **applications découvert** , choisissez **requêtes** > **PIBR-prêt cloud apps**.<br/>![Requête d’applications cloud PIBR-prêt](media/OCAS-FindGDPRQueries.png)<br/>
     
 ## <a name="office-365-cloud-app-security-release-126"></a>Version de sécurité des applications dans le nuage Office 365 126
 
@@ -96,7 +119,7 @@ Cet article est mis à jour fréquemment, comme les fonctionnalités sont ajout�
   
 - **Correction automatique pour les activités suspectes** Vous pouvez maintenant définir des actions de correction automatique de session suspecte déclenchée par les stratégies de détection des anomalies. Cette amélioration permet d’être averti immédiatement lorsqu’une violation se produit et appliquer automatiquement des actions de la gouvernance, tels que suspendre utilisateur. Pour plus d’informations, voir [stratégies de détection des anomalies dans Office 365 Cloud Application Security](anomaly-detection-policies-in-ocas.md).
     
-- **Détection automatique des applications de OAuth risquée** Outre les examiner des applications OAuth connectées à votre environnement existant, sécurité pour application Cloud Microsoft Office 365 vous permet maintenant définir des notifications automatiques pour vous informer lorsqu’une application OAuth répond à certains critères. Par exemple, vous pouvez automatiquement averti lorsqu’il existe des applications qui nécessitent un niveau d’autorisation élevé et ont été autorisés par plus de 50 utilisateurs. Pour plus d’informations, voir [Gérer les autorisations d’application à l’aide de la sécurité d’application Office 365 dans le nuage](manage-app-permissions-in-ocas.md).
+- **Détection automatique des applications de OAuth risquée** Outre les examiner des applications OAuth connectées à votre environnement existant, sécurité pour application Cloud Microsoft Office 365 vous permet maintenant définir des notifications automatiques pour vous informer lorsqu’une application OAuth répond à certains critères. Par exemple, vous pouvez automatiquement averti lorsqu’il existe des applications qui nécessitent un niveau d’autorisation élevé et ont été autorisés par plus de 50 utilisateurs. Pour plus d’informations, voir [OAuth gérer les applications à l’aide de la sécurité d’application Office 365 dans le nuage](manage-app-permissions-in-ocas.md).
     
 - **Gestion du fournisseur de services de sécurité gérés (MSSP) pris en charge** Office 365 Cloud application sécurité maintenant fournit une meilleure expérience de gestion à MSSPs et permet de configurer les partenaires externes en tant qu’administrateurs avec un des rôles actuellement disponibles dans Office 365 Cloud Application Security. En outre, les administrateurs avec des droits d’accès au plusieurs client maintenant peuvent facilement croisés entre les clients. 
     
@@ -132,7 +155,7 @@ Cet article est mis à jour fréquemment, comme les fonctionnalités sont ajout�
   
 - **Applications internes en tant que des activités de l’utilisateur**. Pour Office 365 et Azure Active Directory (AD Azure), nous allons maintenant progressivement présentant la capacité de détecter des applications internes en tant qu’activités de compte d’utilisateur effectuées par les applications Office 365 et Azure AD (internes et externes). Cela vous permet de créer des stratégies afin de vous envoyer une alerte si une application effectue des activités inattendues et non autorisées. 
     
-- **Exporter des champs dans la liste des autorisations de l’application**. Lors de l’exportation d’une liste des autorisations d’application au format csv, des champs supplémentaires tels que publisher, utilisation des autorisations au niveau et de la Communauté fournis pour faciliter le processus de conformité et d’enquête. 
+- **Exporter des champs dans la liste des applications OAuth**. Lors de l’exportation d’une liste des applications OAuth au format csv, des champs supplémentaires tels que publisher, utilisation des autorisations au niveau et de la Communauté fournis pour faciliter le processus de conformité et d’enquête. 
     
 ## <a name="office-365-cloud-app-security-release-119"></a>Version de sécurité des applications dans le nuage Office 365 119
 
@@ -189,83 +212,8 @@ Cet article est mis à jour fréquemment, comme les fonctionnalités sont ajout�
 **Suite [Microsoft Cloud Application Security version 113](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-113)**: 
   
 - **Prise en charge Analyseur de journal pour les formats génériques**. Les analyseurs de journal de détection de nuage prennent désormais en charge les formats génériques suivants : LEEF et W3C Format CEF. 
-    
-## <a name="office-365-cloud-app-security-release-112"></a>Version de sécurité des applications dans le nuage Office 365 112
 
-*Publication le 24 décembre 2017* 
-  
-**Suite [Microsoft Cloud Application Security version 112](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-112)**: 
-  
-- **Bac d’alimentation insight pertinents**. Dans le journal d’activité, vous pouvez maintenant accéder le bac d’alimentation insight pertinents en cliquant sur une adresse IP ou le nom d’utilisateur. 
-    
-    ![Cliquez sur un nom d’utilisateur ou l’adresse IP à voir le bac d’alimentation insight pertinents dans le journal d’activité.](media/8e32b3fa-8c0c-4c5e-b248-fe7d7e1b516d.png)
-  
-- **Possibilité d’afficher plusieurs activités en un clic**. Dans le bac d’alimentation insight pertinent, vous pouvez cliquer pour afficher toutes les activités effectuées dans les 48 heures d’une activité sélectionnée l’icône d’horloge. 
-    
-    ![Dans le bac d’alimentation insights pertinent, vous pouvez cliquer sur l’icône d’horloge pour voir les activités effectuées dans les 48 heures d’une activité sélectionnée](media/c6c96aa0-98e5-4205-8873-45f8d6fd0843.png)
-  
-- **Améliorations d’analyseur de journal pour SRX Juniper**. Améliorations apportées à l’Analyseur de journal de découverte dans le nuage pour SRX Juniper. 
-    
-## <a name="office-365-cloud-app-security-release-111"></a>Version de sécurité des applications dans le nuage Office 365 111
+## <a name="releases-prior-to-113"></a>Versions antérieures 113
 
-*Publication le 10 décembre 2017* 
-  
-**Suite [Microsoft Cloud Application Security version 111](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-111)**: 
-  
-- **Améliorations du filtre heure**. Filtres de temps sont désormais plus faciles à utiliser. Pour accéder à un filtre de temps, dans un affichage, tels que des journaux d’activité, les stratégies, les alertes, à l’aide de la vue avancée, sélectionnez **Date** dans la liste des filtres. Puis choisissez une option, comme avant, après ou entre les deux pour appliquer le filtre de temps. 
+[Voir les mises à jour 2017 Office 365 nuage sécurité des applications](new-in-office-365-cas-2017.md)
     
-    ![Utilisez le filtre de Date pour afficher les informations avant, après ou entre les dates.](media/9dbb2a10-f68f-413b-8b4e-88911152cb92.png)
-  
-## <a name="office-365-cloud-app-security-release-110"></a>Version de sécurité des applications dans le nuage Office 365 110
-
-*Publication le 26 novembre 2017* 
-  
-**Suite [Microsoft Cloud Application Security version 110](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-110)**: 
-  
-- **Intégration du serveur SIEM désormais disponible**. Se connecter à votre serveur SIEM à la sécurité d’application Office 365 dans le nuage. Vous pouvez maintenant envoyer du alertes et des activités automatiquement à votre serveur SIEM de choix en configurant des Agents SIEM. Voir [intégrer votre serveur SIEM avec Office 365 Cloud Application Security](integrate-your-siem-server-with-office-365-cas.md).
-    
-- **Faciliter l’accès au contenu de l’aide**. Nouveau point d’interrogation dans le coin supérieur droit, vous pouvez maintenant accéder le contenu d’aide à partir de dans les pages du portail Office 365 Cloud Application Security. Chaque lien est contextuelle, vous en tenant aux informations dont vous avez besoin, en fonction de la page que vous êtes en. 
-    
-- **Envoyez-nous vos commentaires**. À l’aide de l’icône dans le coin supérieur droit, vous pouvez maintenant envoyer des commentaires à partir de chaque page du portail Office 365 Cloud Application Security. Cela permet de signaler des bogues, demander de nouvelles fonctionnalités et partager votre expérience directement avec l’équipe de sécurité d’application Office 365 dans le nuage. 
-    
-## <a name="office-365-cloud-app-security-release-102"></a>Version de sécurité des applications dans le nuage Office 365 102
-
-*Publication le 13 août 2017* 
-  
-**Suite [Microsoft Cloud Application Security version 102](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-102)**: 
-  
-- **Nouvelles actions d’enquête utilisateur** activer un niveau de zoom aux enquêtes utilisateur. Dans une page d’examiner, vous pouvez pointer sur une activité, compte d’utilisateur ou appliquer en tant qu’un filtre, et à partir de là, vous pouvez afficher le rapport des activités ou des événements. 
-    
-## <a name="office-365-cloud-app-security-release-100"></a>Version de sécurité des applications dans le nuage Office 365 100
-
-*Publication le 17 juillet 2017* 
-  
-**Suite [Microsoft Cloud Application Security version 100](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-100)**: 
-  
-- **Extensions de sécurité** est un tableau de bord où vous pouvez gérer centralement toutes les extensions de sécurité de votre Office 365 nuage sécurité des applications, y compris les jetons d’API et agents SIEM. Pour afficher le tableau de bord extensions sécurité, procédez comme suit : 
-    
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école pour Office 365. (Cela vous amène à la sécurité &amp; centre de conformité.) 
-    
-2. Accédez à des **alertes** \> **Gestion avancée des alertes**.
-    
-3. Cliquez sur **Aller à la sécurité d’application Office 365 dans le nuage**.
-    
-    ![Dans la sécurité &amp; centre de conformité, sélectionnez alertes \> gestion avancée des alertes \> accédez à gestion de la sécurité avancée](media/9792b121-9cd4-4faa-a6e0-81cfab4bf2f2.png)
-  
-4. Choisir les **paramètres** \> **extensions de sécurité**.
-    
-    ![Dans le portail ASM, choisissez paramètres \> extensions de sécurité](media/f03d47a1-91ff-41b9-9baf-b514cffe41a8.png)
-  
-- **Amélioration de l’analyse**. Améliorations ont été apportées dans le journal de détection de nuage mécanisme d’analyse. Erreurs internes sont beaucoup moins susceptibles de se produire. 
-    
-- **Formats de fichiers journaux attendue**. Le format attendu journal pour les journaux de découverte dans le nuage maintenant fournit des exemples pour les formats de journal système et FTP. 
-    
-## <a name="related-topics"></a>Voir aussi
-
-[Contenu de l’aide sur le nuage application sécurité Office 365](office-365-cas-help.md)
-  
-[Activités d’utilisation après avoir déployé la sécurité des applications cloud Office 365](utilization-activities-for-ocas.md)
-  
-[Autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md)
-  
-

@@ -1,9 +1,9 @@
 ---
-title: Sources de journaux et de données de trafic Office 365 nuage sécurité des applications Web
+title: Historique de trafic web et sources de données pour la sécurité des applications cloud Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 12/26/2018
 ms.audience: ITPro
 ms.topic: reference
 ms.service: o365-administration
@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.assetid: 290b02bf-a988-4fb9-88b2-34e408216ac8
 description: Office 365 Cloud application sécurité fonctionne avec les journaux de trafic web à partir d’un large éventail de fournisseurs. Lisez cet article pour en savoir plus sur les journaux de trafic web et prise en charge des sources de données Office 365 nuage sécurité des applications.
-ms.openlocfilehash: 09b0358e0d8b9a6ed59393d8771237f7eaf8bb98
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ab962e4a030d06c133ad9fc4aa62a60755793bc3
+ms.sourcegitcommit: 25f72d20e76463c2f0a075dfc0116f00c934bd77
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528197"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "27447052"
 ---
-# <a name="web-traffic-logs-and-data-sources-for-office-365-cloud-app-security"></a>Sources de journaux et de données de trafic Office 365 nuage sécurité des applications Web
+# <a name="web-traffic-logs-and-data-sources-for-office-365-cloud-app-security"></a>Historique de trafic web et sources de données pour la sécurité des applications cloud Office 365
   
 |Évaluation **\>**|Planification **\>**|Déploiement **\>**|Utilisation du ***|
 |:-----|:-----|:-----|:-----|
@@ -35,96 +35,96 @@ Vous pouvez utiliser un large éventail de sources de données et fichiers journ
 
 À l’aide de données d’utilise Office 365 Cloud application sécurité dans les journaux de trafic web pour vous aider à comprendre les applications de personnes dans votre organisation. Plus de détails sont inclus dans les fichiers journaux, la meilleure visibilité vous aurez activité de l’utilisateur.
   
-Le tableau suivant répertorie les conditions requises et les attributs qui sont nécessaires pour les journaux de trafic web fonctionne correctement avec Office 365 Cloud application sécurité :
-  
-|**Attributs**|**Autres conditions requises **|
-|:-----|:-----|
-| Date de la transaction  <br/>  Adresse IP source  <br/>  Utilisateur source (recommandé)  <br/>  Adresse IP de destination  <br/>  URL de destination (recommandé : URL fournissent plus précise de détection d’application cloud que les adresses IP)  <br/>  Quantité totale de données (recommandées)  <br/>  Quantité de téléchargement ou transfert de données (recommandé : fournit des modèles d’application d’utilisation détails sur le nuage)  <br/>  Action effectuée (autorisées ou bloquées)  <br/> | La source de données pour les fichiers journaux doit être pris en charge.  <br/>  Le format à qu'utilisent les fichiers journaux doit respecter le format standard. Lorsque le fichier est téléchargé, détection d’application vérifie ce.  <br/>  Les événements dans le journal doivent avoir eu lieu il y a pas plus de 90 jours.  <br/>  Le fichier journal doit inclure les informations de trafic sortant qui peuvent être analysées pour l’activité réseau.  <br/> |
-   
-Si les attributs ne sont pas inclus dans les journaux sont chargés, sécurité pour application Cloud Microsoft Office 365 ne peuvent pas afficher ou analyser les informations pour vous. Par exemple, format de journal standard du pare-feu Cisco ASA n’inclut pas le nombre d’octets téléchargés par transaction, le nom d’utilisateur ou une URL cible (uniquement une adresse IP cible). Étant donné que ces informations n’est pas dans les fichiers journaux de Cisco, Office 365 Cloud application sécurité ne sont pas l’inclure lors de l’analyse du trafic réseau de votre organisation.
-  
-> [!NOTE]
-> Pour certains types de pare-feu, vous devez définir un niveau d’informations pour les journaux de trafic web inclure les attributs obligatoires. Par exemple, Cisco ASA pare-feu doivent être le niveau d’information définie sur 6. Veillez à vérifier que votre pare-feu est définis pour fournir les informations appropriées dans les journaux de trafic web. 
+Les sections suivantes répertorient les attributs nécessaires et les autres exigences de journaux fonctionne correctement avec Office 365 Cloud application sécurité le trafic web.
+
+### <a name="attributes"></a>Attributs
+
+Office 365 Cloud application sécurité ne peut pas afficher ou analyser des attributs qui ne sont pas inclus dans les journaux de trafic web. Par exemple, le format de journal standard du pare-feu Cisco ASA ne dispose pas le nombre d’octets téléchargés par transaction, le nom d’utilisateur ou une URL cible (uniquement une adresse IP cible). Par conséquent, ces attributs ne sont pas affichés dans les données de découverte dans le nuage et visibilité dans les applications dans le nuage est limitée. Pour les pare-feu ASA Cisco, le niveau d’informations doit avoir 6. 
+
+Journaux du trafic web doit inclure les attributs suivants :
+
+- Date de la transaction
+- Adresse IP source
+- Utilisateur source (recommandé)
+- Adresse IP de destination
+- URL de destination (recommandé ; URL fournissent une précision supérieure pour la détection d’application dans le nuage à des adresses IP)
+- Quantité totale de données (recommandé ; de données est très utiles)
+- Quantité de téléchargement ou transfert de données (recommandé ; fournit des modèles d’application d’utilisation détails sur le nuage)
+- Action effectuée (autorisées ou bloquées)
+
+### <a name="additional-requirements"></a>Autres conditions requises 
+
+En plus, y compris les attributs répertoriés plus haut dans cet article, les journaux du trafic web doit satisfaire les exigences suivantes :
+
+- La source de données pour les fichiers journaux doit être pris en charge.
+- Le format à qu'utilisent les fichiers journaux doit respecter le format standard. Lorsque le fichier est téléchargé, détection d’application vérifie ce.
+- Les événements dans le journal doivent avoir eu lieu il y a pas plus de 90 jours.
+- Le fichier journal doit inclure les informations de trafic sortant qui peuvent être analysées pour l’activité réseau.
   
 ## <a name="data-attributes-for-different-vendors"></a>Attributs pour les différents fournisseurs de données
-<a name="BKMK_LogAndData"> </a>
 
 Le tableau suivant récapitule les informations contenues dans les journaux de trafic web à partir de divers fournisseurs. **Vérifiez avec votre fournisseur pour les informations les plus récentes.**
-  
-|**Source de données**|**URL d’application cible**|**IP d’application cible**|**Username**|**Origine IP**|**Trafic total**|**Octets téléchargés**|
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|Barracuda  <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |Non  <br/> |Non  <br/> |
-|REVÊTEMENT bleu  <br/> |**Oui** <br/> |Non  <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |
-|Point de contrôle  <br/> |Non  <br/> |**Oui** <br/> |Non  <br/> |**Oui** <br/> |Non  <br/> |Non  <br/> |
-|Cisco ASA  <br/> |Non  <br/> |**Oui** <br/> |Non  <br/> |**Oui** <br/> |**Oui** <br/> |Non  <br/> |
-|Cisco FWSM  <br/> |Non  <br/> |**Oui** <br/> |Non  <br/> |**Oui** <br/> |**Oui** <br/> |Non  <br/> |
-|Cisco Ironport WSA  <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |
-|Cisco Meraki  <br/> |**Oui** <br/> |**Oui** <br/> |Non  <br/> |**Oui** <br/> |Non  <br/> |Non  <br/> |
-|Clavister Conviction (journal système)  <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |
-|Dell SonicWall  <br/> |**Oui** <br/> |**Oui** <br/> |Non  <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |
-|Fortigate  <br/> |Non  <br/> |**Oui** <br/> |Non  <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |
-|Juniper SRX  <br/> |Non  <br/> |**Oui** <br/> |Non  <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |
-|Juniper SSG  <br/> |Non  <br/> |**Oui** <br/> |Non  <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |
-|McAfee SWG  <br/> |**Oui** <br/> |Non  <br/> |Non  <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |
-|Meraki (Cisco)  <br/> |**Oui** <br/> |**Oui** <br/> |Non  <br/> |**Oui** <br/> |Non  <br/> |Non  <br/> |
-|Microsoft Threat Management Gateway  <br/> |**Oui** <br/> |Non  <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |
-|Palo Alto Networks  <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |
-|Sophos  <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |Non  <br/> |
-|SqUID (Common)  <br/> |**Oui** <br/> |Non  <br/> |**Oui** <br/> |**Oui** <br/> |Non  <br/> |**Oui** <br/> |
-|SqUID (natif)  <br/> |**Oui** <br/> |Non  <br/> |**Oui** <br/> |**Oui** <br/> |Non  <br/> |**Oui** <br/> |
-|Websense - rapport sur le détail investigation (CSV)  <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |
-|Websense - journal d’activité Internet (format CEF)  <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |
-|Zscaler  <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |**Oui** <br/> |
+
+
+|                 Source de données                  |    URL d’application cible    |    IP de l’application cible     |       Nom d'utilisateur       |      Origine IP       |    Trafic total     |    Octets téléchargés    |
+|----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
+|                  Barracuda                   | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |          Non          |          Non          |
+|                  REVÊTEMENT bleu                   | <strong>Oui</strong> |          Non          | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+|                  Point de contrôle                  |          Non          | <strong>Oui</strong> |          Non          | <strong>Oui</strong> |          Non          |          Non          |
+|              Cisco ASA (journal système)              |          Non          | <strong>Oui</strong> |          Non          | <strong>Oui</strong> | <strong>Oui</strong> |          Non          |
+|           Cisco ASA avec la puissance d’analyse           | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+|                  Cisco FWSM                  |          Non          | <strong>Oui</strong> |          Non          | <strong>Oui</strong> | <strong>Oui</strong> |          Non          |
+|              Cisco Ironport WSA              | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+|                 Cisco Meraki                 | <strong>Oui</strong> | <strong>Oui</strong> |          Non          | <strong>Oui</strong> |          Non          |          Non          |
+|           Clavister Conviction (journal système)            | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+|                SonicWall (anciennement Dell)                | <strong>Oui</strong> | <strong>Oui</strong> |          Non          | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+|            Art numérique i-filtre             | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+|                  Fortigate                   |          Non          | <strong>Oui</strong> |          Non          | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+|                 Juniper SRX                  |          Non          | <strong>Oui</strong> |          Non          | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+|                 Juniper SSG                  |          Non          | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+|                  McAfee SWG                  | <strong>Oui</strong> |          Non          |          Non          | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+|                    TMG MS                    | <strong>Oui</strong> |          Non          | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+|              Palo Alto Networks              |          Non          | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+|                    Sophos                    | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |          Non          |
+|                SqUID (Common)                | <strong>Oui</strong> |          Non          | <strong>Oui</strong> | <strong>Oui</strong> |          Non          | <strong>Oui</strong> |
+|                SqUID (natif)                | <strong>Oui</strong> |          Non          | <strong>Oui</strong> | <strong>Oui</strong> |          Non          | <strong>Oui</strong> |
+| Websense - rapport sur le détail investigation (CSV) | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+|    Websense - journal d’activité Internet (format CEF)    | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+|                   Zscaler                    | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
    
 ## <a name="supported-vendor-firewalls-and-proxies"></a>Pare-feu de fournisseur pris en charge et des proxys
-<a name="BKMK_Supported"> </a>
 
 Sécurité d’application Office 365 Cloud prend en charge les proxys et les pare-feu suivants.
   
-- Barracuda - pare-feu de l’application Web (W3C)
-    
+- Barracuda - pare-feu de l’application Web (W3C)  
 - Bleu revêtement Proxy administratives - journal d’accès (W3C)
-    
 - Point de vérification
-    
-- Cisco ASA pare-feu (Notez que vous devez définir le niveau d’informations sur 6)
-    
+- Cisco ASA pare-feu (veillez à définir le niveau d’informations sur 6)
+- Cisco ASA avec la puissance d’analyse   
 - Cisco IronPort WSA
-    
 - Cisco ScanSafe
-    
 - Ouvrez une session Cisco Merkai - URL
-    
-- Dell Sonicwall
-    
+- Clavister Conviction (journal système)
+- Art numérique i-filtre
 - Fortinet Fortigate
-    
+- iboss passerelle de nuage sécurisé
 - Juniper SRX
-    
 - Juniper SSG
-    
 - Passerelle Web sécurisée de McAfee
-    
 - Microsoft Forefront Threat Management Gateway (W3C)
-    
 - Série Palo Alto pare-feu
-    
+- SonicWALL (anciennement Dell)   
 - Sophos administratives
-    
+- Sophos XG
 - Sophos Cyberoam
-    
 - SqUID (Common)
-    
 - SqUID (natif)
-    
 - Rapport sur le détail investigation Websense - Solutions de sécurité Web - (CSV)
-    
 - Journal d’activité Websense - Solutions de sécurité Web - Internet (format CEF)
-    
 - Zscaler
     
 > [!NOTE]
-> Si une source de données que vous souhaitez utiliser n’est pas incluse ici, vous pouvez demander à ajouter à la découverte de l’application. Pour cela, lorsque vous créez un rapport, sélectionnez **autre** pour la **source de données**. Puis tapez le nom de la source de données que vous essayez de télécharger. Nous allons consulter le journal et vous permettent de savoir si nous ajoutons prise en charge pour ce type de journal. 
+> Si une source de données que vous souhaitez utiliser n’est pas incluse ici, vous pouvez demander à ajouter à la découverte de l’application. Pour cela, lorsque vous créez un rapport, sélectionnez **autre** pour la **source de données**. Puis tapez le nom de la source de données que vous essayez de télécharger. Nous allons consulter le journal et vous permettent de savoir si nous ajoutons prise en charge pour ce type de journal. Vous pouvez également [définir un analyseur personnalisé](https://docs.microsoft.com/cloud-app-security/custom-log-parser) qui correspond à votre format. 
   
 ## <a name="troubleshoot-errors-when-log-files-are-uploaded"></a>Résoudre les erreurs lorsque les fichiers journaux sont téléchargés.
 
