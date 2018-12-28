@@ -5,19 +5,18 @@ services: office-365-security-compliance
 author: robmazz
 manager: laurawi
 layout: LandingPage
-ms.assetid: ''
 ms.service: office-365
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
-ms.date: 8/21/2018
+ms.date: 12/27/2018
 ms.author: robmazz
-ms.openlocfilehash: ed61d7995ab4b684f775b58f9fb4cd830222117a
-ms.sourcegitcommit: e5da81dd4c6ca7caa0f884fffff3876e87e2b217
+ms.openlocfilehash: 255bde226f5a284f2ac20d65124d4722e2357385
+ms.sourcegitcommit: 55762890e5129a5240054990ce64e93007ed7a32
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26254551"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "27449878"
 ---
 # <a name="office-365-security-and-compliance"></a>Conformité et sécurité d’office 365
 
@@ -52,7 +51,7 @@ Si votre organisation a besoin protéger vos données ou de se conformer aux nor
                     </div>
                     <div class="cardText">
                         <h3>Étapes suivantes dans les 90 jours</h3>
-                        <p>Ces tâches prennent un peu plus de temps pour planifier et implémenter mais augmentent sensiblement vos défenses : <br> - <a href="attack-simulator.md">Mener des simulations attaque</a> <br> - <a href="meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md">Gestionnaire de conformité de révision</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">Configurer la gestion des identités privilégié Azure</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">Activer l’authentification multifacteur</a> <br> - <a href="protect-against-threats.md">Révision et mise à jour des stratégies de protection</a> </p>
+                        <p>Ces tâches prennent un peu plus de temps pour planifier et implémenter mais augmentent sensiblement vos défenses : <br> - <a href="attack-simulator.md">Mener des simulations attaque</a> <br> - <a href="meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md">Gestionnaire de conformité de révision</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">Configurer la gestion des identités privilégié Azure</a> <br> - <a href="privileged-access-management-configuration.md">Configurer la gestion des accès privilégié</a>  <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">Activer l’authentification multifacteur</a> <br> - <a href="protect-against-threats.md">Révision et mise à jour des stratégies de protection</a> </p>
                     </div>
                 </div>
             </div>
@@ -70,7 +69,7 @@ Si votre organisation a besoin protéger vos données ou de se conformer aux nor
                     <div class="cardText">
                         <h3>Au-delà de 90 jours</h3>
                         <p>Il s’agit des mesures de sécurité importantes qui s’appuient sur le travail précédent :<br>
-                        - <a href="https://securescore.office.com" target="_blank">Passez en revue votre Score sécurisé</a><br>
+                        - <a href="office-365-secure-score.md" target="_blank">Passez en revue votre Score sécurisé</a><br>
                         - <a href="https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access">Implémenter un accès sécurisé privilégié</a><br>
                         - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection">Utilisez la Protection d’identité Azure AD</a><br>
                         - <a href="protect-against-threats.md">Affiner les stratégies de protection</a><br></p>
@@ -97,8 +96,8 @@ Si votre organisation a besoin protéger vos données ou de se conformer aux nor
                     <div class="cardText">
                         <h3>Maintien de la sécurité</h3>
                         <p><a href="security-roadmap.md">Guide de sécurité Office 365</a></p>
-                        <p><a href="https://securescore.microsoft.com" target="_blank">Note de sécurité Microsoft</a></p>
-                        <p><a href="https://protection.office.com" target="_blank">Centre de conformité et de sécurité Office 365</a></p>
+                        <p><a href="office-365-secure-score.md" target="_blank">Note de sécurité Microsoft</a></p>
+                        <p><a href="https://protection.office.com" target="_blank">Centre de sécurité et conformité Office 365</a></p>
                     </div>
                 </div>
             </div>
