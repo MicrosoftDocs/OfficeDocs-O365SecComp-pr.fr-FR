@@ -1,9 +1,8 @@
 ---
-title: Définir des règles de flux de messagerie pour chiffrer les messages électroniques dans Office 365
+title: Définir des règles de flux de courrier pour le chiffrement du courriers dans Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,14 +12,14 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: Administrateurs peuvent en créer des règles de flux (également connu sous les règles de transport) pour chiffrer et déchiffrer des messages à l’aide d’Office 365 Message de chiffrement de messages.
-ms.openlocfilehash: 35867d45bb8ad5cb8de2fa1aa0c870ee9a66fe5d
-ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
+ms.openlocfilehash: 6633958478c947d765251145ecd6d45e34dea2ab
+ms.sourcegitcommit: 31098b35607d0fd949fd357f783d1e9ed2444deb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27194675"
+ms.lasthandoff: 12/31/2018
+ms.locfileid: "27466923"
 ---
-# <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Définir des règles de flux de messagerie pour chiffrer les messages électroniques dans Office 365
+# <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Définir des règles de flux de courrier pour le chiffrement du courriers dans Office 365
 
 En tant qu’administrateur global Office 365, vous pouvez créer des règles de flux (également connu sous les règles de transport) messagerie pour protéger les messages électroniques envoyés et reçus. Vous pouvez définir des règles pour chiffrer les messages électroniques sortants et supprimer le chiffrement de messages chiffrés en provenance de l’intérieur de votre organisation ou de réponses aux messages chiffrés envoyés à partir de votre organisation. Vous pouvez utiliser le centre d’administration Exchange (EAC) ou Exchange Online PowerShell pour créer ces règles. En plus des règles de chiffrement globale, vous pouvez également choisir d’activer ou désactiver les options de chiffrement de message en particulier pour les utilisateurs finaux.
 
@@ -195,7 +194,7 @@ Lorsque les utilisateurs de votre messagerie envoient des messages chiffrés, de
 
 Pour accéder à la syntaxe détaillée et aux informations relatives aux paramètres, voir [Nouvelle-RègleTransport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Chiffrement dans Office 365](encryption.md)
 
