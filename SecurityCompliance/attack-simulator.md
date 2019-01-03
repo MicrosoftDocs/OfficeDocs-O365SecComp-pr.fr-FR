@@ -3,7 +3,7 @@ title: Simulateur d’attaques dans Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/09/2018
+ms.date: 01/02/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 description: En tant qu’administrateur global Office 365, vous pouvez utiliser attaque Simulator pour exécuter des scénarios d’attaque réaliste dans votre organisation. Cela peut vous aider à identifier et de rechercher des utilisateurs vulnérables avant une attaque réelle accède à votre entreprise.
-ms.openlocfilehash: 9a7e1fd5327b4a764356df110c46ee7a9f496b53
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 1a1d22b0b36ce8b6a2086296be8f8b5d47d79280
+ms.sourcegitcommit: d512c1df01377e305e8d5c0170c822cf78f09565
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706438"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "27471997"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulateur d’attaques dans Office 365
 
@@ -49,7 +49,7 @@ Assurez-vous que vous et votre organisation satisfaire les conditions suivantes 
     
 - Vous êtes un administrateur global d’Office 365
     
-- Votre organisation utilise [l’authentification multifacteur pour les utilisateurs d’Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication&view=o365-worldwide)
+- Votre organisation utilise [l’authentification multifacteur pour les utilisateurs d’Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide)
  
 - Votre organisation a des [Menaces Office 365](office-365-ti.md)avec attaque Simulator visibles dans la sécurité &amp; centre de conformité (accédez à **gestion de menace** \> **simulator attaque**)<br/>![Gestion des menaces - Simulator attaque](media/ThreatMgmt-AttackSimulator.png)
 
@@ -64,7 +64,7 @@ Cette attaque se concentre sur ce qui vous permet de manipuler les le message se
 
 ![Composez le corps du message électronique](media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
   
-Vous pouvez concevoir l’éditeur HTML enrichi directement dans le champ **corps du message électronique** lui-même ou travailler avec la source HTML. Il existe deux champs importants pour inclusion dans le code HTML : 
+Vous pouvez concevoir l’éditeur HTML enrichi directement dans le champ **corps du message électronique** lui-même ou travailler avec la source HTML.
   
 1. Dans la [sécurité &amp; centre de conformité](https://security.microsoft.com), cliquez sur **Gestion des menaces** \> **simulator attaque**.
     
@@ -118,7 +118,7 @@ Une attaque par mot de passe en force brute par rapport à une organisation est 
     
 3. Spécifiez le destinataire cible. Un destinataire cible doit avoir une Exchange Online boîte aux lettres pour que l’attaque aboutisse.
     
-4. Spécifiez un ensemble de mots de passe à utiliser pour l’attaque. Vous pouvez utiliser un fichier texte (.txt) pour votre liste de mots de passe. Le fichier texte ne peut pas dépasser 10 Mo dans la taille du fichier. Utilisez un mot de passe par ligne et veillez à inclure un retour chariot après le dernier mot de passe dans votre liste.
+4. Spécifiez un ensemble de mots de passe à utiliser pour l’attaque. Pour ce faire, vous pouvez utiliser un fichier texte (.txt) pour votre liste de mots de passe. Le fichier texte ne peut pas dépasser 10 Mo dans la taille du fichier. Utilisez un mot de passe par ligne et veillez à inclure un retour chariot après le dernier mot de passe dans votre liste.
     
 5. Cliquez sur **Terminer** pour lancer l’attaque. 
     
