@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exporter les résultats de recherche à partir d’une recherche de contenu de la sécurité pour Microsoft Office 365 et le centre de conformité à un ordinateur local. Résultats de la messagerie sont exportées dans des fichiers PST. Contenu de SharePoint et OneDrive pour les sites sont exportées dans des documents Office natives. '
-ms.openlocfilehash: f4ecdb59b20138e8b159e6056cac791837a84387
-ms.sourcegitcommit: 9f08af5502070a42de22b6d83e3a08c67cc0c619
+ms.openlocfilehash: d67b6aeedd3f01bd21de0e07f42870db7a18767b
+ms.sourcegitcommit: ea625737c4be14927f69aa71d4fbd7d7d94d9334
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27201578"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27544115"
 ---
 # <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>Exporter les résultats de recherche de contenu à partir de la sécurité pour Microsoft Office 365 & centre de conformité
 
@@ -74,10 +74,6 @@ Exporter les résultats d’une recherche de contenu consiste à préparer les r
        </defaultProxy>
     </system.net>
     ```
-
-- Voir la section pour obtenir une description des limites pour l’exportation des résultats de la recherche. 
-    
-- La taille maximale d’un fichier PST qui peut être exporté est de 10 Go. Si vous souhaitez modifier cette taille par défaut, vous pouvez modifier le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de recherche. Voir [modification de la taille des fichiers PST lors de l’exportation des résultats de recherche eDiscovery](change-the-size-of-pst-files-when-exporting-results.md).
     
 ## <a name="step-1-prepare-search-results-for-export"></a>Étape 1 : Préparer les résultats de recherche pour l’exportation
 
@@ -96,13 +92,13 @@ La première étape consiste à préparer les résultats de recherche pour l’e
     > [!NOTE]
     > Si les résultats d’une recherche datent d’il y a plus de 7 jours, vous êtes invité à mettre à jour les résultats. Dans ce cas, annulez l’exportation, cliquez sur **Mettre à jour les résultats de recherche** dans le volet Détails de la recherche sélectionnée, puis redémarrez l’exportation lorsque les résultats sont mis à jour.  
   
-6. Dans la page **Exporter les résultats de recherche** , sous **inclure ces éléments de la recherche**, choisissez une des options suivantes :
+6. Dans la page **Exporter les résultats de recherche** , sous **options de sortie**, choisissez une des options suivantes :
     
-    - exporter uniquement les éléments indexés ;
+    - Tous les éléments, à l’exception de ceux qui ont le format non reconnu, sont chiffrées ou n’ont pas été indexés pour d’autres raisons
     
-    - Exporter les éléments indexés et partiellement indexés
+    - Tous les éléments, y compris celles qui ont un format non reconnu, sont chiffrées ou n’ont pas été indexés pour d’autres raisons
     
-    - Exporter les éléments indexés partiellement uniquement
+    - Uniquement les éléments qui ont un format non reconnu, sont chiffrées ou n’ont pas été indexés pour d’autres raisons
     
     Voir la section [plus d’informations](#more-information) pour une description des éléments indexés comment partiellement sont exportées. Pour plus d’informations sur les éléments indexés partiellement, voir [partiellement indexé des éléments de recherche de contenu](partially-indexed-items-in-content-search.md).
     
@@ -173,7 +169,7 @@ Comme expliqué précédemment, vous pouvez augmenter la vitesse de télécharge
     
 
   
-## <a name="more-information"></a>More information
+## <a name="more-information"></a>Plus d’informations
 
 Voici le plus d’informations sur l’exportation de résultats de recherche.
   
@@ -202,8 +198,9 @@ Voici le plus d’informations sur l’exportation de résultats de recherche.
   - 10 exportations maximum peuvent être exécutées simultanément au sein de votre organisation.
     
   - Un utilisateur unique peut exécuter un maximum de trois exportations en même temps.
-    
-  - Exportation des rapports de recherche de contenu ne compte pas sur les limites d’exportation. 
+
+  > [!NOTE]
+  > Exportation uniquement les rapports à partir d’une recherche de contenu compte également par rapport au numéro de l’exportation en cours d’exécution en même temps et le nombre d’exporte un seul utilisateur peut exécuter.
     
 - Comme indiqué plus haut, résultats de la recherche de boîtes aux lettres et les sites sont téléchargées vers l’emplacement de stockage Azure (comme décrit dans [étape 1 : préparation pour l’exportation des résultats de recherche](#step-1-prepare-search-results-for-export)) à un taux maximal de 2 Go par heure.
     

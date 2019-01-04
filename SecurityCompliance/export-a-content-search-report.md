@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: Au lieu d’exporter les résultats d’une recherche de contenu de sécurité Office 365 réels &amp; centre de conformité, vous pouvez uniquement exporter un rapport de résultats de recherche. Le rapport contient un résumé des résultats de recherche et d’un document avec des informations détaillées sur chaque élément qui aurait à exporter.
-ms.openlocfilehash: e15c6550d58701abe9b268455deca0aef60265fb
-ms.sourcegitcommit: 1bc36cd57ab1604f057e2b5d336cf1893ba00125
+ms.openlocfilehash: db6ba2dd58befa782dc3a5968e0034bccfa46855
+ms.sourcegitcommit: ea625737c4be14927f69aa71d4fbd7d7d94d9334
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283140"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27544125"
 ---
 # <a name="export-a-content-search-report"></a>Exporter un rapport de recherche de contenu
 
@@ -54,6 +54,8 @@ Lorsque vous exportez un état, il est téléchargé vers un dossier qui a le m�
     **Remarque :** Microsoft ne fabrique extensions tierces ou les modules complémentaires pour les applications ClickOnce. Exportation des résultats de recherche à l’aide d’un navigateur non pris en charge avec des extensions tierces ou les modules complémentaires n’est pas pris en charge. 
 
 - Si la taille estimée total des résultats renvoyés par la recherche de contenu dépasse 20&nbsp;to, exporter le rapport échoue. Pour exporter le rapport, essayez de limiter l’étendue et exécutez à nouveau la recherche afin que la taille estimée des résultats est inférieur à 20&nbsp;to.
+
+- Exportation de recherche de contenu indique le nombre maximal d’exportation en cours d’exécution en même temps et le nombre maximal d’exporte un utilisateur unique peut exécuter des nombres. Pour plus d’informations sur les limites d’exportation, voir [les résultats de recherche de contenu exporter à partir de la sécurité pour Microsoft Office 365 & centre de conformité](export-search-results.md#export-limits).
 
 ## <a name="generate-and-download-a-content-search-report"></a>Générer et télécharger un rapport de recherche de contenu
 
