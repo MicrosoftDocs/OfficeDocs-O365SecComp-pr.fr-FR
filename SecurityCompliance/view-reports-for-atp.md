@@ -3,7 +3,7 @@ title: Afficher les rapports de Protection de menace avancées d’Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/27/2018
+ms.date: 01/07/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: Découvrez comment trouver et utiliser les rapports pour Office 365 avancée contre les menaces de sécurité &amp; centre de conformité.
-ms.openlocfilehash: e9d3088f81d1020e70de4c2260fba81cd469715d
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: d387e020e5834d4961e7bda50b418ea11b9f0f4d
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706318"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749348"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Afficher les rapports de Protection de menace avancées d’Office 365
 
@@ -90,7 +90,7 @@ Outre les rapports DAV décrites dans cet article, plusieurs autres rapports son
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>Les autorisations requises pour afficher les rapports DAV ?
 
-Pour pouvoir afficher et utiliser les rapports décrits dans cet article, vous devez disposer d’un rôle approprié est affecté de la sécurité &amp; centre de conformité et le centre d’administration Exchange.
+Pour pouvoir afficher et utiliser les rapports décrits dans cet article, **vous devez disposer d’un rôle approprié est affecté de la sécurité &amp; centre de conformité et le centre d’administration Exchange**.
 
 - Pour la sécurité &amp; centre de conformité, vous devez disposer d’un des rôles suivants est attribué :
     - Gestion de l’organisation

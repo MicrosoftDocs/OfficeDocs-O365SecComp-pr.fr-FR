@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: Administrateurs peuvent en créer des règles de flux (également connu sous les règles de transport) pour chiffrer et déchiffrer des messages à l’aide d’Office 365 Message de chiffrement de messages.
-ms.openlocfilehash: 6633958478c947d765251145ecd6d45e34dea2ab
-ms.sourcegitcommit: 31098b35607d0fd949fd357f783d1e9ed2444deb
+ms.openlocfilehash: ce6b1ce60abb58c5f4e217c66bca013101af5f91
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/31/2018
-ms.locfileid: "27466923"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749358"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Définir des règles de flux de courrier pour le chiffrement du courriers dans Office 365
 
@@ -61,10 +61,10 @@ Vous pouvez définir des règles de flux de messagerie pour déclencher le chiff
    Par exemple, pour appliquer la règle uniquement si le destinataire se situe en dehors de votre organisation, sélectionnez **Ajouter une condition** et puis sélectionnez **le destinataire est interne/externe** \> **en dehors de l’organisation** \> **OK**.
 
 8. Pour activer le chiffrement à l’aide des nouvelles fonctionnalités OME, **procédez comme suit**, sélectionnez **Modifier la sécurité des messages** , puis choisissez **Appliquer le chiffrement de messages Office 365 et de protection par des droits**. Sélectionnez un modèle RMS à partir de la liste, cliquez sur **Enregistrer**, puis cliquez sur **OK**.
+  
+  La liste des modèles inclut tous les modèles par défaut et les options, ainsi que des modèles personnalisés que vous avez créé pour utilisent par Office 365. Si la liste est vide, assurez-vous que vous avez configuré le chiffrement de messages Office 365 avec les nouvelles fonctionnalités comme décrit dans [configurer les nouvelles fonctionnalités d’Office 365 Message Encryption basées sur Azure de Protection des informations](set-up-new-message-encryption-capabilities.md). Pour plus d’informations sur les modèles par défaut, voir [configuration et gestion des modèles pour la Protection des informations Azure](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Pour plus d’informations sur l’option **Ne pas transférer** , voir [l’option ne pas transférer les messages électroniques](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Pour plus d’informations sur l’option **chiffrer uniquement** , voir [option chiffrer uniquement pour les courriers électroniques](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
-   La liste des modèles inclut tous les modèles par défaut et les options, ainsi que des modèles personnalisés que vous avez créé pour utilisent par Office 365. Si la liste est vide, assurez-vous que vous avez configuré le chiffrement de messages Office 365 avec les nouvelles fonctionnalités comme décrit dans [configurer les nouvelles fonctionnalités d’Office 365 Message Encryption basées sur Azure de Protection des informations](set-up-new-message-encryption-capabilities.md). Pour plus d’informations sur les modèles par défaut, voir [configuration et gestion des modèles pour la Protection des informations Azure](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Pour plus d’informations sur l’option **Ne pas transférer** , voir [l’option ne pas transférer les messages électroniques](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Pour plus d’informations sur l’option **chiffrer uniquement** , voir [option chiffrer uniquement pour les courriers électroniques](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
-
-   Vous pouvez choisir **d’Ajouter une action** si vous souhaitez spécifier une autre action.
+  Vous pouvez choisir **d’Ajouter une action** si vous souhaitez spécifier une autre action.
 
 ### <a name="use-the-eac-to-update-an-existing-mail-flow-rule-to-use-the-new-ome-capabilities"></a>Utiliser le CAE pour mettre à jour une règle de flux de messagerie existante pour utiliser les nouvelles fonctionnalités OME
 
@@ -118,11 +118,11 @@ Si vous n’avez pas encore déplacé votre organisation Office 365 pour les nou
 
    Par exemple, pour appliquer la règle uniquement si le destinataire se situe en dehors de votre organisation, sélectionnez **Ajouter une condition** et puis sélectionnez **le destinataire est interne/externe** \> **en dehors de l’organisation** \> **OK**.
 
-  8. Pour activer le chiffrement sans utiliser les nouvelles fonctionnalités OME, dans **effectuer les opérations suivantes**, sélectionnez **Modifier la sécurité des messages** \> **Appliquer la version précédente d’OME**, puis cliquez sur **Enregistrer**.
+8. Pour activer le chiffrement sans utiliser les nouvelles fonctionnalités OME, dans **effectuer les opérations suivantes**, sélectionnez **Modifier la sécurité des messages** \> **Appliquer la version précédente d’OME**, puis cliquez sur **Enregistrer**.
 
-    Si vous recevez une erreur de licence IRM n’est pas activé, puis vous n’avez pas configuré OME pour votre organisation encore. Si vous souhaitez configurer maintenant OME, vous devez le configurer pour utiliser les nouvelles fonctionnalités d’OME. Pour plus d’informations, voir [configurer les nouvelles fonctionnalités d’Office 365 Message Encryption greffées Azure la Protection des informations](set-up-new-message-encryption-capabilities.md). Microsoft ne prend en charge que la configuration de nouveaux déploiements de OME sans les nouvelles fonctionnalités.
+  Si vous recevez une erreur de licence IRM n’est pas activé, puis vous n’avez pas configuré OME pour votre organisation encore. Si vous souhaitez configurer maintenant OME, vous devez le configurer pour utiliser les nouvelles fonctionnalités d’OME. Pour plus d’informations, voir [configurer les nouvelles fonctionnalités d’Office 365 Message Encryption greffées Azure la Protection des informations](set-up-new-message-encryption-capabilities.md). Microsoft ne prend en charge que la configuration de nouveaux déploiements de OME sans les nouvelles fonctionnalités.
 
-    Vous pouvez choisir **d’Ajouter une action** si vous souhaitez spécifier une autre action.
+  Vous pouvez choisir **d’Ajouter une action** si vous souhaitez spécifier une autre action.
 
 ### <a name="use-exchange-online-powershell-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>Utiliser Exchange Online PowerShell pour créer une règle de flux de messagerie pour le chiffrement des messages électroniques sans les nouvelles fonctionnalités OME
 
@@ -194,7 +194,7 @@ Lorsque les utilisateurs de votre messagerie envoient des messages chiffrés, de
 
 Pour accéder à la syntaxe détaillée et aux informations relatives aux paramètres, voir [Nouvelle-RègleTransport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Chiffrement dans Office 365](encryption.md)
 

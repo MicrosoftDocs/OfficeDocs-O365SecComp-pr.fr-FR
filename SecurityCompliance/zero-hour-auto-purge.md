@@ -15,16 +15,16 @@ search.appverid:
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 description: Purge automatique zéro heures (ZAP) est une fonctionnalité de protection de messagerie qui détecte les messages qui ont déjà été remis aux boîtes aux lettres des utilisateurs avec le courrier indésirable ou un programme malveillant, puis affiche le contenu malveillant sans conséquence. Comment ZAP cela dépend du type de contenu malveillant détecté.
-ms.openlocfilehash: 1cf14051e91801a74a0d739c69900bb3f825b318
-ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
+ms.openlocfilehash: 1e90e69018b7640bb36011287abd5bcd77d43358
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27180844"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749318"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Purge automatique zéro heure - protection contre le courrier indésirable et les programmes malveillants
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Purge automatique zéro heures (ZAP) est une fonctionnalité de protection de messagerie qui détecte les messages avec des programmes malveillants, le courrier indésirable ou hameçonnage qui ont déjà été remis aux boîtes aux lettres de vos utilisateurs, puis affiche le contenu malveillant sans conséquence. Comment ZAP cela dépend du type de contenu malveillant détecté ; messagerie peut être zapped en raison de contenu du courrier électronique, URL ou les pièces jointes.
   
@@ -62,7 +62,7 @@ Autoriser les listes, [les règles de flux de messagerie](https://go.microsoft.c
     
 ## <a name="to-see-if-zap-moved-your-message"></a>Pour voir si ZAP déplacé votre message
 
-Si vous souhaitez voir si ZAP déplacé votre message, vous pouvez utiliser le [rapport d’état de Protection de menace](view-email-security-reports.md#threat-protection-status-report-new) (ou du [Threat Explorer](use-explorer-in-security-and-compliance.md)).
+Si vous souhaitez voir si ZAP déplacé votre message, vous pouvez utiliser le [rapport d’état de Protection de menace](view-email-security-reports.md#threat-protection-status-report) (ou du [Threat Explorer](use-explorer-in-security-and-compliance.md)).
     
 ## <a name="to-disable-zap"></a>Pour désactiver ZAP
   

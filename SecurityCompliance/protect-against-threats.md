@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: Découvrez comment Office 365 pour entreprises peuvent aider à protéger votre organisation contre une variété de menaces, y compris l’usurpation d’identité, logiciels malveillants, du courrier indésirable, les tentatives de hameçonnage et contre les accès aux données.
-ms.openlocfilehash: e5e14e66617af6a513979d93aa4764c8843b975f
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 38fc2590b8693989befcf399e32ef378ab89495d
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706058"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749308"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Se protéger contre les menaces dans Office 365
 
@@ -27,11 +27,11 @@ Avec Office 365 pour entreprises, vous pouvez protéger votre organisation contr
 
 Si vous utilisez un domaine personnalisé dans Office 365, aident à arrêter fraude expéditeur de votre organisation, améliorer la sécurité de messagerie électronique et protéger la réputation de votre domaine.
   
-- [Empêcher l’usurpation d’identité avec SPF]([Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md))
+- [Configurer SPF dans Office 365 pour empêcher l’usurpation](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
     
-- [Valider le courrier sortant avec DKIM]([Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md))
+- [Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé dans Office 365](use-dkim-to-validate-outbound-email.md)
     
-- [Valider le courrier avec DMARC]([Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md))
+- [Utiliser DMARC pour valider les e-mails dans Office 365](use-dmarc-to-validate-email.md)
     
 ## <a name="anti-spam-amp-anti-malware"></a>Anti-spam &amp; contre les programmes malveillants
 
@@ -39,11 +39,11 @@ Découvrez Office 365 score de blocage du courrier indésirable, le filtrage des
   
 - [Anti-spam &amp; protection anti-programme malveillant](anti-spam-and-anti-malware-protection.md)
     
-- [Activer la journalisation pour le courrier électronique]([Enable mailbox auditing in Office 365](enable-mailbox-auditing.md))
+- [Activer l’audit de boîte aux lettres dans Office 365](enable-mailbox-auditing.md)
     
 - [Mise en quarantaine des messages électroniques dans Office 365](quarantine-email-messages.md)
     
-- [Envoi d’un contenu suspect à Microsoft]([Submitting malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md))
+- [Envoi de programmes malveillants et non malveillants à Microsoft pour analyse](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
     
 ## <a name="advanced-threat-protection"></a>Protection avancée contre les menaces
 

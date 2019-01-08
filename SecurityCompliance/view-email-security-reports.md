@@ -3,7 +3,7 @@ title: Afficher les rapports de sécurité de messagerie de la sécurité &amp; 
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/27/2018
+ms.date: 01/07/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: Découvrez comment trouver et utiliser les rapports de sécurité de messagerie pour votre organisation avec Office 365 pour entreprises. Rapports de sécurité de messagerie sont disponibles dans la sécurité &amp; centre de conformité.
-ms.openlocfilehash: 72039afd52cd6e9da7dfd05bb67aac2c7e7db001
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 670317707c5695161f23615fb87fe93258e8d95b
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706418"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749328"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Afficher les rapports de sécurité de messagerie de la sécurité &amp; centre de conformité
 
@@ -28,7 +28,7 @@ Une série de rapports de sécurité de messagerie sont disponibles dans le [sé
   
 Vos rapports de sécurité de messagerie sont les suivantes :
   
-- [Rapport d’état de Protection de menace](view-email-security-reports.md#tps) (nouveau) ! 
+- [Rapport d’état de Protection de menace](view-email-security-reports.md#tps) 
     
 - [Rapport des détections de programmes malveillants](view-email-security-reports.md#maldet)
     
@@ -44,7 +44,7 @@ Vos rapports de sécurité de messagerie sont les suivantes :
     
 - [Rapport de messages signalés par les utilisateurs](view-email-security-reports.md#userreported) (nouveau) ! 
     
-## <a name="threat-protection-status-report-new"></a>Menaces de rapport d’état de Protection (nouveau) !
+## <a name="threat-protection-status-report"></a>Rapport d’état de Protection de menace
 
 Nouveau rapport **d’État de Protection de menace** est un rapport dynamique qui affiche la messagerie qui a été détecté et bloqué par Exchange Online Protection. Ce rapport affiche des informations sur le courrier identifié comme une tentative de hameçonnage ou de programmes malveillants. 
 
@@ -176,7 +176,7 @@ Pour afficher ce rapport, dans le [sécurité &amp; centre de conformité](https
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Les autorisations requises pour afficher ces rapports ?
 
-Pour pouvoir afficher et utiliser les rapports décrits dans cet article, vous devez disposer d’un rôle approprié est affecté de la sécurité &amp; centre de conformité et le centre d’administration Exchange.
+Pour pouvoir afficher et utiliser les rapports décrits dans cet article, **vous devez disposer d’un rôle approprié est affecté de la sécurité &amp; centre de conformité et le centre d’administration Exchange**.
 
 - Pour la sécurité &amp; centre de conformité, vous devez disposer d’un des rôles suivants est attribué :
     - Gestion de l’organisation
