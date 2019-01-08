@@ -13,12 +13,12 @@ search.appverid:
 ms.custom: TN2DMC
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 description: Découvrez la configuration d’authentification basé sur le domaine, création de rapports et conformité (DMARC) pour valider les messages envoyés à partir de votre organisation Office 365.
-ms.openlocfilehash: f8c310e5efb6859bff392a89a3ad325400aa369f
-ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
+ms.openlocfilehash: 2f8e712028b5b5ee8950b48780083a20c7dce6ab
+ms.sourcegitcommit: bd1762ccf63c7d2ad8b49a936115171c72fb2c0f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26255869"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27750043"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Utiliser DMARC pour valider les e-mails dans Office 365
 
@@ -136,17 +136,16 @@ Pour obtenir des instructions sur la configuration de DKIM pour votre domaine, y
 Bien qu'il existe des options de syntaxe qui ne sont pas mentionnées ici, voici les options les plus fréquemment utilisées pour Office 365. Créez l'enregistrement TXT DMARC pour votre domaine au format suivant :
   
 ```
-_dmarc.domainTTL IN TXT "v=DMARC1; pct=100; p=policy
+_dmarc.domain  TTL  IN  TXT  "v=DMARC1; pct=100; p=policy"
 ```
 
 où :
   
 - *domaine* est le domaine que vous souhaitez protéger. Par défaut, l’enregistrement protège la messagerie du domaine et tous les sous-domaines. Par exemple, si vous spécifiez \_dmarc.contoso.com, puis DMARC protège la messagerie du domaine et tous les sous-domaines, par exemple housewares.contoso.com ou plumbing.contoso.com. 
     
-- 
-            La valeur *TTL* doit toujours être équivalente à une heure. L’unité utilisée pour TTL, que ce soit les heures (1 heure), les minutes (60 minutes) ou les secondes (3 600 secondes), varie selon le bureau d’enregistrement de votre domaine. 
+- *Durée de vie* doit toujours être l’équivalent d’une heure. L’unité utilisée pour la durée de vie, les deux heures (1 heure), minutes (60 minutes), ou de secondes (3600 secondes), varie selon le serveur d’inscriptions pour votre domaine. 
     
-- pct=100 indique que cette règle doit être utilisée pour 100 % des e-mails.
+- *pourcentage = 100* indique que cette règle doit être utilisée pour 100 % des courriers électroniques.
     
 - *stratégie* spécifie la stratégie à suivre en cas d’échec de DMARC le serveur de réception. Vous pouvez définir la stratégie sur none, mise en quarantaine, ou rejeter. 
     

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 description: Nouvel Office 365 Message Encryption fonctionnalités greffées sur la Protection des informations Azure, votre organisation peuvent utiliser protégé de communication par courrier électronique avec des personnes à l’intérieur et à l’extérieur de votre organisation. Les nouvelles fonctionnalités OME fonctionnent avec d’autres organisations Office 365, Outlook.com, Gmail et autres services de messagerie.
-ms.openlocfilehash: c24b2f9b612b863217df8afd951424d1a89295c9
-ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
+ms.openlocfilehash: 0f601b425da294fbb2ddbfe1d7497c0d582e3238
+ms.sourcegitcommit: bd1762ccf63c7d2ad8b49a936115171c72fb2c0f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23955416"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27750033"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>Configurer les nouvelles fonctionnalités de chiffrement de messages Office 365
 
@@ -43,34 +43,33 @@ Si votre organisation ne possède pas automatiquement OME activé, ou si vous av
   
 ### <a name="to-manually-set-up-the-new-capabilities-for-ome"></a>Pour configurer manuellement les nouvelles fonctionnalités pour OME
 
-1. Vérifiez que vous avez l’abonnement pour votre organisation. Pour plus d’informations sur les abonnements, voir « les abonnements ai-je besoin pour utiliser le nouveau capabilities? OME » dans la [Office 365 Message Encryption FAQ.](ome-faq.md) Pour plus d’informations sur l’achat d’un abonnement Azure protection des informations, voir [La Protection des informations Azure](https://azure.microsoft.com/services/information-protection/).
-    
+1. Vérifiez que vous avez l’abonnement pour votre organisation. Pour plus d’informations sur les abonnements, voir « les abonnements ai-je besoin pour utiliser le nouveau capabilities? OME » dans la [Office 365 Message Encryption FAQ.](ome-faq.md). Pour plus d’informations sur l’achat d’un abonnement Azure protection des informations, voir [La Protection des informations Azure](https://azure.microsoft.com/services/information-protection/).
+
 2. Décider si vous souhaitez que Microsoft pour gérer la clé de la racine pour la Protection des informations Azure (par défaut), ou générer et gérer cette clé vous-même (également appelés mettre votre propre clé ou BYOK). Si vous souhaitez générer et gérer cette clé vous-même, vous devez effectuer certaines étapes avant de configurer les nouvelles fonctionnalités pour OME. Pour plus d’informations, voir [planification et l’implémentation de votre clé de client Azure la Protection des informations](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key). Microsoft recommande que vous effectuez ces étapes avant de configurer OME.
-    
+
 3. Activer les nouvelles fonctionnalités pour OME en activant Azure Rights Management. Pour plus d’informations, voir [Activation Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service). Lorsque vous effectuez cette opération, Office 365 active automatiquement les nouvelles fonctionnalités OME pour vous.
-    
+
     > [!TIP]
-    > Outlook sur le Web met en cache son interface utilisateur, il est conseillé d’attendre un jour avant que vous essayez d’appliquer les nouvelles fonctionnalités pour OME pour les messages électroniques à l’aide de ce client. Avant de l’interface utilisateur met à jour pour refléter la nouvelle configuration, les nouvelles fonctionnalités pour OME ne sont pas disponibles. Après mise à jour de l’interface utilisateur, les utilisateurs peuvent protéger les messages électroniques à l’aide des nouvelles fonctionnalités pour OME. 
+    > Outlook sur le Web met en cache son interface utilisateur, il est conseillé d’attendre un jour avant que vous essayez d’appliquer les nouvelles fonctionnalités pour OME pour les messages électroniques à l’aide de ce client. Avant de l’interface utilisateur met à jour pour refléter la nouvelle configuration, les nouvelles fonctionnalités pour OME ne sont pas disponibles. Après mise à jour de l’interface utilisateur, les utilisateurs peuvent protéger les messages électroniques à l’aide des nouvelles fonctionnalités pour OME.
   
 4. (Facultatif) Définir de nouvelles règles de flux de messagerie ou mettre à jour les règles de flux messagerie existante qui définissent comment et quand vous souhaitez qu’Office 365 pour chiffrer les messages envoyés à partir de votre organisation.
-    
+
 ## <a name="verify-that-the-new-capabilities-for-ome-are-configured-properly-by-using-windows-powershell"></a>Vérifiez que les nouvelles fonctionnalités pour OME sont correctement configurées à l’aide de Windows PowerShell
 
 Procédez comme suit pour vérifier que votre client est correctement configuré pour utiliser les nouvelles fonctionnalités pour OME via Exchange Online PowerShell.
   
-1. À l’aide d’un compte qui dispose des autorisations d’administrateur global dans votre organisation Office 365 Professionnel ou de l’école, démarrer une session Windows PowerShell et se connecter à Exchange Online. Pour plus d’informations, voir [se connecter à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
-    
+1. À l’aide d’un compte qui dispose des autorisations d’administrateur global dans votre organisation Office 365 Professionnel ou de l’école, démarrer une session Windows PowerShell et se connecter à Exchange Online. Pour plus d’informations, voir [se connecter à Exchange Online PowerShell](https://aka.ms/exopowershell).
+
 2. Exécutez l’applet de commande Test-IRMConfiguration à l’aide de la syntaxe suivante :
-    
+
     ```Test-IRMConfiguration [-Sender <email address >]```  
 
    Par exemple :
-    
+
     ```Test-IRMConfiguration -Sender securityadmin@contoso.com```
 
-    Où l’adresse est l’adresse de messagerie d’un utilisateur dans votre organisation Office 365. Facultatif, qui fournit une adresse de messagerie de l’expéditeur force le système à effectuer des contrôles supplémentaires.
-    
-    Vos résultats doivent se présenter comme celles-ci :
+    Où l’adresse est l’adresse de messagerie d’un utilisateur dans votre organisation Office 365. Facultatif, qui fournit une adresse de messagerie de l’expéditeur force le système à effectuer des contrôles supplémentaires. Vos résultats doivent se présenter comme celles-ci :
+
     
     ```
     Results : Acquiring RMS Templates ...
@@ -87,11 +86,11 @@ Procédez comme suit pour vérifier que votre client est correctement configuré
     ```
 
     Où *Contoso* est remplacée par le nom de votre organisation Office 365. 
-    
+
     Les noms des modèles par défaut renvoyés dans les résultats peuvent être différentes de celles affichées dans les résultats ci-dessus.
-    
+
     Pour obtenir une introduction aux modèles et des informations sur les modèles par défaut, voir [configuration et gestion des modèles pour la Protection des informations Azure](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Pour plus d’informations sur ne pas transférer option, l’option chiffrer uniquement et comment créer des modèles supplémentaires, ou Découvrez quels droits sont inclus dans un modèle existant, consultez la rubrique [Configuration des droits d’utilisation pour Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights).
-    
+
 3. Exécutez l’applet de commande Remove-PSSession pour déconnecter la session à partir du service de gestion des droits.
     
     ```Remove-PSSession $session```
@@ -106,7 +105,6 @@ Règles de flux de messagerie déterminent dans un message quelles conditions le
 Pour plus d’informations sur les règles de flux de messagerie, voir [définir les règles de flux des messages pour chiffrer les messages électroniques dans Office 365](define-mail-flow-rules-to-encrypt-email.md).
   
 ## <a name="related-topics"></a>Voir aussi
-<a name="Rules_1"> </a>
 
 [Envoyer, consulter et répondre aux messages chiffrés dans Outlook](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx)
   
@@ -114,6 +112,4 @@ Pour plus d’informations sur les règles de flux de messagerie, voir [définir
   
 [Connexion à Exchange Online PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx)
   
-[Définir des règles de flux de messagerie pour chiffrer les messages électroniques dans Office 365](define-mail-flow-rules-to-encrypt-email.md)
-  
-
+[Définir des règles de flux de courrier pour le chiffrement du courriers dans Office 365](define-mail-flow-rules-to-encrypt-email.md)
