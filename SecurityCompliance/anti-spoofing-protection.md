@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: Cet article explique comment Office 365 atténue contre les attaques par hameçonnage qu’utilise falsifié expéditeur domaines, c'est-à-dire, qui sont usurpés. Pour ce faire, il analyse les messages et le blocage de celles qui peuvent être authentifiés neithe à l’aide des méthodes d’authentification standard de courrier électronique, ni les autres techniques de réputation de l’expéditeur. Cette modification est en cours implémentée pour réduire le nombre d’organisations dans Office 365 sont affichent dans les attaques par phishing.
-ms.openlocfilehash: 95f4995b6447870700bc483f205ca3ff831045f5
-ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
+ms.openlocfilehash: 19e7ea957592a486a559dac222a51139bf79b574
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27194715"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769858"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protection anti-usurpation dans Office 365
 
@@ -414,21 +414,21 @@ En règle générale, la stratégie appliquée à un message est identifiée dan
   
 |**Priority (Priorité)**|**Stratégie**|**Catégorie**|**Où gérée ?**|**S'applique à**|
 |:-----|:-----|:-----|:-----|:-----|
-|1   <br/> |Malware :   <br/> |MALW  <br/> |[Stratégie de programmes malveillants](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
-|2   <br/> |Hameçonnage  <br/> |PHSH  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
-|3   <br/> |Courrier indésirable à probabilité élevée  <br/> |HSPM  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
-|4   <br/> |L’usurpation d’identité  <br/> |USURPATION D’IDENTITÉ  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553), [aide à la décision usurpation d’identité](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Toutes les organisations  <br/> |
-|5   <br/> |Courrier indésirable  <br/> |MONITEUR DE PORT STANDARD  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
-|6   <br/> |En bloc  <br/> |EN BLOC  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
-|7   <br/> |Emprunt d’identité de domaine  <br/> |DIMP  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organisations avec DAV  <br/> |
-|8   <br/> |Emprunt d’identité de l’utilisateur  <br/> |UIMP  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organisations avec DAV <br/> |
+|1  <br/> |Malware :   <br/> |MALW  <br/> |[Stratégie de programmes malveillants](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
+|2  <br/> |Hameçonnage  <br/> |PHSH  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
+|3  <br/> |Courrier indésirable à probabilité élevée  <br/> |HSPM  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
+|4  <br/> |L’usurpation d’identité  <br/> |USURPATION D’IDENTITÉ  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553), [aide à la décision usurpation d’identité](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Toutes les organisations  <br/> |
+|5  <br/> |Courrier indésirable  <br/> |MONITEUR DE PORT STANDARD  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
+|6  <br/> |En bloc  <br/> |EN BLOC  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
+|7  <br/> |Emprunt d’identité de domaine  <br/> |DIMP  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organisations avec DAV  <br/> |
+|8  <br/> |Emprunt d’identité de l’utilisateur  <br/> |UIMP  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organisations avec DAV <br/> |
    
 Si vous disposez de plusieurs stratégies Anti-hameçonnage différents, celui dont la priorité la plus élevée s’appliquera. Par exemple, supposons que vous avez deux stratégies :
   
 |**Stratégie**|**Priority (Priorité)**|**Emprunt d’identité de l’utilisateur ou du domaine**|**Anti-l’usurpation d’identité**|
 |:-----|:-----|:-----|:-----|
-|A  <br/> |1   <br/> |On  <br/> |Off  <br/> |
-|B  <br/> |2   <br/> |Off  <br/> |On  <br/> |
+|A  <br/> |1  <br/> |On  <br/> |Off  <br/> |
+|B  <br/> |2  <br/> |Off  <br/> |On  <br/> |
    
 Si un message est proposé sous et est identifié en tant que l’emprunt d’identité à la fois l’usurpation d’identité et l’utilisateur et le même ensemble d’utilisateurs porte sur la stratégie A et B de la stratégie, puis le message est traité comme une usurpation d’identité mais aucune action n’est appliquée depuis anti-usurpation d’identité est désactivé , et l’usurpation d’identité s’exécute à une priorité plus élevée (4) à l’utilisateur d’emprunt d’identité (8).
   
@@ -444,7 +444,7 @@ Toutefois, il existe un scénario authentique où l’usurpation d’identité a
   
 ![Enregistrement MX ne pointe pas vers Office 365](media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
   
-L’autre serveur peut être un serveur de messagerie sur site Exchange, un dispositif tel que Ironport, de filtrage de messagerie ou un autre dans le nuage hébergé par service.
+L’autre serveur peut être un échange de serveur de messagerie, une dispositif tel que Ironport, de filtrage de messagerie sur site ou service hébergé de nuage d’une autre.
   
 Si l’enregistrement MX du domaine destinataire ne pointe pas vers Office 365, il n’est pas nécessaire de désactiver l’usurpation d’identité contre, car Office 365 recherche un enregistrement MX de votre domaine de réception et supprime l’usurpation d’identité contre qu’il pointe vers un autre service. Si vous ignorez si votre domaine possède un autre serveur au premier plan, vous pouvez utiliser un site Web à la boîte à outils MX pour rechercher l’enregistrement MX. Elle peut indiquer ce qui suit :
   
@@ -456,7 +456,7 @@ Toutefois, si l’enregistrement MX du domaine du destinataire *est* pointe vers
   
 ![Diagramme de routage pour la réécriture de destinataire](media/070d90d1-50a0-42e4-9fd3-920bc99a7cad.jpg)
   
-Un enregistrement MX du domaine contoso.com pointe vers le serveur sur site, tandis que l’enregistrement MX de domaine @office365.contoso .Web .UI pointe vers Office 365, car il contient \*. protection.outlook.com, ou \*. eo.outlook.com dans l’enregistrement MX :
+Un enregistrement MX du domaine contoso.com pointe vers le serveur local, tandis que l’enregistrement MX de domaine @office365.contoso .Web .UI pointe vers Office 365, car il contient \*. protection.outlook.com, ou \*. eo.outlook.com dans l’enregistrement MX :
   
 ![Points d’enregistrement MX vers Office 365, par conséquent probablement destinataire réécrire](media/4101ad51-ef92-4907-b466-b41d14d344ca.jpg)
   
@@ -635,7 +635,7 @@ Si vous êtes un administrateur de domaine, mais ne sont pas un client Office 36
     
 - Si vous avez les expéditeurs qui transmettent courrier à votre place, vous devez travailler avec leur envoyer un message électronique d’une manière telle que dans le domaine : adresse (si elle appartient à vous) s’aligne sur le domaine qui transmet SPF ou DMARC.
     
-- Si vous avez sur site, les serveurs de messagerie ou envoyer à partir d’un fournisseur de logiciel en tant que service, ou d’un service d’hébergement cloud Microsoft Azure, GoDaddy, rack, Amazon Web Services, ou similaire, vous devez vous assurer que qu’ils sont ajoutés à votre enregistrement SPF.
+- Si vous avez localement, les serveurs de messagerie ou envoyer à partir d’un fournisseur de logiciel en tant que service, ou d’un service d’hébergement sur le nuage tels que Microsoft Azure, GoDaddy, rack, Amazon Web Services, ou similaire, vous devez vous assurer qu’ils sont ajoutés à votre enregistrement SPF.
     
 - Si vous êtes un domaine de petite taille qui est hébergé par un fournisseur de services Internet, vous devez configurer votre enregistrement SPF conformément aux instructions qui est fournie par votre fournisseur de services Internet. La plupart des fournisseurs de services Internet fournissent ces types d’instructions et se trouvent sur des pages de prise en charge de l’entreprise.
     

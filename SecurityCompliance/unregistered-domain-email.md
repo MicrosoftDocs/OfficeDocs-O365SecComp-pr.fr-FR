@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Si vous envoyez un volume élevé de messagerie du domaine ou non, vous courez le risque de votre courrier électronique bloqué. Lisez cet article pour en savoir plus.
-ms.openlocfilehash: 30d7887be0429195380f2c4ae1a328904dffd69c
-ms.sourcegitcommit: 6d72cdb882b93edf6dfddb5ff2e6d8a16e2fa0bc
+ms.openlocfilehash: f632c5f7ab94a200a364828408b13c0026335869
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25596727"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769781"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>Non domaine Email : Ce que vous devez connaître
 
-Permet à Office 365 pour les clients afin de relayer des messages via Exchange Online Protection (EOP). Un exemple pris en charge serait lorsque les utilisateurs ont une boîte aux lettres Office 365 et une personne externe les envoie un courrier électronique mais transfert de messages est configuré afin qu’il repasse à la boîte aux lettres externe. Il s’agit généralement dans les environnements de formation où les participants à tirer parti de leur interface électronique mais toujours obtenir courriels relatifs à l’école. Un autre exemple est lorsque des clients se trouvent dans un scénario hybride et des serveurs locaux envoyer un message électronique s’en déconnecter EOP.
+Permet à Office 365 pour les clients afin de relayer des messages via Exchange Online Protection (EOP). Un exemple pris en charge serait lorsque les utilisateurs ont une boîte aux lettres Office 365 et une personne externe les envoie un courrier électronique mais transfert de messages est configuré afin qu’il repasse à la boîte aux lettres externe. Il s’agit généralement dans les environnements de formation où les participants à tirer parti de leur interface électronique mais toujours obtenir courriels relatifs à l’école. Un autre exemple est lorsque les clients se trouvent dans un scénario hybride et des serveurs locaux envoyer un message électronique s’en déconnecter EOP.
 
 ## <a name="problems-with-unregistered-domains"></a>Problèmes liés à des domaines non enregistrés
 
@@ -46,7 +46,7 @@ Il existe plusieurs choses que vous devez faire si vous êtes bloqué pour l’e
 
 4. Une fois que vous avez terminé, vous devez appeler le Support de Microsoft et demander à obtenir votre client déblocage pour renvoyer à partir de domaines ou non.  Il est utile de fournir le code d’erreur, mais vous devez prouver que votre environnement est sécurisé et que le courrier indésirable n’est pas envoyé à nouveau. Vous pouvez trouver plus d’informations sur l’ouverture d’un cas de prise en charge [ici](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online).
   
-## <a name="for-more-information"></a>Pour plus d'informations
+## <a name="for-more-information"></a>Pour plus d’informations
 
 [Protection contre le courrier indésirable pour Office 365](anti-spam-protection.md)
 
@@ -54,6 +54,6 @@ Il existe plusieurs choses que vous devez faire si vous êtes bloqué pour l’e
 
 [Configurer le transfert du courrier pour une boîte aux lettres](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)
 
-[Comment configurer un appareil ou une application multifonction pour envoyer du courrier électronique à l'aide d'Office 365](https://support.office.com/en-us/article/How-to-set-up-a-multifunction-device-or-application-to-send-email-using-Office-365-69f58e99-c550-4274-ad18-c805d654b4c4)
+[Comment configurer une application ou un périphérique multi-fonction pour envoyer des courriers électroniques à l’aide d’Office 365](https://support.office.com/en-us/article/How-to-set-up-a-multifunction-device-or-application-to-send-email-using-Office-365-69f58e99-c550-4274-ad18-c805d654b4c4)
 
 [Gérer les domaines acceptés dans Exchange Online](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).

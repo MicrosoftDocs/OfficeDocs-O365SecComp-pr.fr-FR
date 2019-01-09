@@ -1,5 +1,5 @@
 ---
-title: Contrôle du courrier indésirable sortant dans Office 365
+title: Contrôle du courrier indésirable sortant dans Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 description: Si votre organisation envoie un grand nombre de courrier en nombre qui a été marqué comme courrier indésirable, vous pourriez être bloqué à partir de l’envoi de courrier électronique avec Office 365. Lisez cet article pour en savoir plus sur ce comportement et ce que vous pouvez faire parler.
-ms.openlocfilehash: 947ea4ed7a37b2ba1c5332aa07582fa4c4949eb0
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: 2d198bc1b61da429f45f0d1f54c63876d59d890f
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972246"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769808"
 ---
-# <a name="controlling-outbound-spam-in-office-365"></a>Contrôle du courrier indésirable sortant dans Office 365
+# <a name="controlling-outbound-spam-in-office-365"></a>Contrôle du courrier indésirable sortant dans Office 365
 
 Nous prenons la gestion du courrier indésirable sortant sérieusement, car nous sont un service partagé.  Il existe de nombreux clients derrière un pool partagé de ressources, où si un client envoie un courrier indésirable sortant, il peut nuire à la réputation d’IP sortante du service et affecte la remise réussie du courrier électronique pour les autres clients. Il est tranchée au client A client B véhiculés et différents noires IP 3ème partie liste l’adresse IP qu’il utilise.
 
@@ -47,7 +47,7 @@ Nous prenons la gestion du courrier indésirable sortant sérieusement, car nous
 
 Il est difficile de trouver un équilibre entre les clients qui souhaitent envoyer un volume important de courrier électronique et la protection du service de comptes compromis et emailers en bloc avec les pratiques d’acquisition de liste médiocre. Là encore, le coût d’une IP sortant d’arrivée sur une liste de blocage 3ème partie est supérieur du blocage d’un client d’envoyer des messages électroniques sortants. Comme décrit dans la [Description du Service Exchange Online](https://technet.microsoft.com/library/exchange-online-limits.aspx#RecipientLimits), à l’aide d’EOP pour envoyer des messages électroniques en masse n’est pas pris en charge utilisez du service et n’est autorisée sur une base « au mieux ». Pour les clients qui ne souhaitent pas envoyer de messages électroniques en masse, nous vous recommandons les éléments suivants :
 
-1. **Envoyer les messages électroniques en masse par le biais de ses serveurs de messagerie sur site**. Cela signifie que le client devra mettre à jour sa propre infrastructure de messagerie pour ce type de courrier électronique.
+1. **Envoyer les messages électroniques en masse par le biais de son propre site sur les serveurs de messagerie**. Cela signifie que le client devra mettre à jour sa propre infrastructure de messagerie pour ce type de courrier électronique.
 
 2. **Utiliser un 3ème partie emailer en bloc pour envoyer la communication de masse**. Il existe plusieurs emailers d’en bloc partie 3 dont l’activité exclusive il consiste à envoyer des messages électroniques en masse. Ils peuvent travailler avec les clients pour vous assurer qu’ils disposent des bonnes pratiques e-mail et qu’ils disposent de ressources dédiées à appliquer. 
 
@@ -59,6 +59,6 @@ La messagerie, Mobile, les logiciels malveillants anti-abus groupe de travail (M
 
 [Protection contre le courrier indésirable pour Office 365](anti-spam-protection.md)
 
-[Protection contre l’usurpation dans Office 365](anti-spoofing-protection.md)
+[Protection anti-usurpation dans Office 365](anti-spoofing-protection.md)
 
 [Seuils de probabilité de courrier indésirable](spam-confidence-levels.md)
