@@ -3,7 +3,7 @@ title: Nouvelle stratégie de chiffrement de messages Office 365 pour les inform
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/7/2019
+ms.date: 1/9/2019
 ROBOTS: NOINDEX, NOFOLLOW
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Résumé : Appliqué automatiquement la stratégie de chiffrement de messages Office 365 pour les types d’informations sensibles présentant à tous les clients.'
-ms.openlocfilehash: f5996707d1cafe8dc1bf90856878de0a4fb7b77b
-ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
+ms.openlocfilehash: a8cd132af2b1429698ea92779a3c54559e2b13e2
+ms.sourcegitcommit: b936a2fd4b7f7a7099b96cc29580ed55bdb8bf2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27752084"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "27789452"
 ---
 # <a name="office-365-message-encryption-policy-for-sensitive-information"></a>Stratégie de chiffrement de messages Office 365 pour les informations sensibles
 
@@ -30,7 +30,7 @@ Votre organisation reçoit une notification dans le centre de messages Office 36
 
 ## <a name="sensitive-information-type-policy-details"></a>Détails de la stratégie type des informations sensibles
 
-Une règle de flux de messagerie Exchange sera créée dans votre organisation qui sera chiffrer automatiquement sur le point à l’extérieur de votre organisation avec les messages électroniques le *Chiffrer seule* stratégie s’ils contiennent les informations sensibles suivants :
+Une règle de flux de messagerie Exchange sera créée dans votre organisation qui sera chiffrer automatiquement sur le point à l’extérieur de votre organisation avec les messages électroniques le *Chiffrer seule* stratégie si les e-mails ou les pièces jointes contient les types d’informations sensibles suivants :
 
 - Numéro de routage ABA
 - Numéro de carte de crédit
@@ -70,6 +70,6 @@ Si vous souhaitez les annulations de ce changement, procédez comme suit :
    Set-IRMConfiguration -AutomaticServiceUpdateEnabled $false
    ```
 
-## <a name="how-do-i-disable-the-automatic-policy"></a>Comment désactiver la stratégie automatique ?
+## <a name="how-do-i-disable-or-customize-the-automatic-policy"></a>Comment désactiver ou personnaliser la stratégie automatique ?
 
-Si vous n’avez pas annulations de ce changement et la règle de courrier Exchange a déjà été créée, vous pouvez [désactiver la règle](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule) à partir de **flux de messagerie** > **règles** dans Exchange admin center (EAC) et désactiver la règle «*chiffrer sortant les messages électroniques sensibles (hors de règle de zone)*».
+Si vous n’avez pas annulations de ce changement et la règle de flux de messagerie Exchange a déjà été créée, vous pouvez [désactiver ou modifier la règle](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule) à partir de **flux de messagerie** > **règles** dans Exchange admin center (EAC) et désactiver la règle «*chiffrer les messages électroniques sensibles sortants (hors de règle de zone)*».

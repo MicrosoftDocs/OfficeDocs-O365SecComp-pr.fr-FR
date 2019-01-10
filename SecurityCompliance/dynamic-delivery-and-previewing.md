@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: Lorsque vous configurez vos stratégies de pièces jointes sûres DAV, vous choisissez remise dynamique afin d’éviter les retards de message et permettent aux utilisateurs d’afficher un aperçu des pièces jointes qui sont analysés.
-ms.openlocfilehash: 95c270e871c3febb13eef8c4374d996fc763315b
-ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
+ms.openlocfilehash: fe1b8fd2e26c683735f64de6b5b195e3bc351c8e
+ms.sourcegitcommit: b936a2fd4b7f7a7099b96cc29580ed55bdb8bf2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27769828"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "27789462"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Remise dynamique et l’aperçu avec Office 365 DAV approuvés en pièce jointe
 
@@ -35,6 +35,9 @@ Remise dynamique élimine les retards de courrier électronique en envoyant le c
 - Si une pièce jointe est déterminée malveillants, il est envoyé à la mise en quarantaine, où une personne dans l’équipe de sécurité de votre organisation (comme un administrateur général Office 365 ou un administrateur de sécurité) peut [Gérer les messages mis en quarantaine dans Office 365](manage-quarantined-messages-and-files.md).
 
 La plupart des fichiers PDF et Office documents peuvent être affichés en mode sans échec pendant l’analyse DAV. Si une pièce jointe n’est pas compatible avec le Générateur d’aperçu de distribution dynamique, destinataires de courriers électroniques voient un espace réservé de pièce jointe jusqu'à ce que l’analyse des pièces jointes sûres DAV est terminée.
+
+> [!TIP]
+> Si vous utilisez un appareil mobile et un fichier PDF ne s’affichent pas dans le Générateur d’aperçu de distribution dynamique dans un premier temps, essayez de vous connecter à Office 365 à l’aide de votre navigateur mobile.
 
 Avec remise dynamique, les personnes pouvant lire et répondre à leurs messages électroniques immédiatement, tandis que les pièces jointes sont en cours d’analyse. 
 
@@ -73,4 +76,4 @@ Il existe certains scénarios dans lesquels remise dynamique n’est pas pris en
 - Environnements dans lesquels un administrateur Exchange Online a activé Exclaimer. Pour résoudre ce problème, voir [les Messages avec pièces jointes ne sont pas remis lors de la remise dynamique DAV et Exclaimer sont utilisées](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery)
 
 - Messages chiffrés avec [Secure/Multipurpose Internet Mail Extensions (S/MIME)](s-mime-for-message-signing-and-encryption.md))
-    
+
