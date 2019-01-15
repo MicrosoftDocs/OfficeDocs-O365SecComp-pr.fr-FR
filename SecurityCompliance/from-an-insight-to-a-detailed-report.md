@@ -13,24 +13,24 @@ search.appverid:
 - MOE150
 ms.assetid: f3724c6c-ec64-4a24-ba71-bfd68020d4d2
 description: Voir comment vous pouvez déplacer un aperçu à un rapport détaillé de la sécurité &amp; centre de conformité via un exemple de prévention de perte de données.
-ms.openlocfilehash: 82689b7f58dfc729fa78912f41ed89a3a2933bfb
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: d8ef40b000f9e5fcf7ee1826b020efc95776709c
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706108"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014856"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>Procédure pas à pas. D’un aperçu à un rapport détaillé
 
 Si vous utilisez pour [des rapports et des vues d’ensemble de sécurité Office 365 &amp; centre de conformité](reports-and-insights-in-security-and-compliance.md), il peut vous aider à voir comment vous pouvez accéder facilement à partir d’un aperçu à un rapport détaillé. 
   
-Il s’agit d’une des procédures pas à pas plusieurs pour la [sécurité &amp; centre de conformité](https://security.microsoft.com). Pour voir les procédures pas à pas supplémentaires, consultez la section [Rubriques connexes](#related-topics) . 
+Il s’agit d’une des procédures pas à pas plusieurs pour la [sécurité &amp; centre de conformité](https://protection.office.com). Pour voir les procédures pas à pas supplémentaires, consultez la section [Rubriques connexes](#related-topics) . 
   
 ## <a name="from-an-insight-to-a-detailed-report"></a>À partir d’un aperçu à un rapport détaillé
 
 Examinons le flux du tableau de bord pour un aperçu à un rapport détaillé pour l’exploration de données. (Ceci est un exemple de brève [prévention des pertes de données](data-loss-prevention-policies.md) .) 
   
-1. Nous commençons par un tableau de bord dans le [sécurité &amp; centre de conformité](https://security.microsoft.com). (Accédez aux **rapports** \> **tableau de bord**.)<br/>![Dans la sécurité &amp; centre de conformité, cliquez sur rapports \> tableau de bord](media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
+1. Nous commençons par un tableau de bord dans le [sécurité &amp; centre de conformité](https://protection.office.com). (Accédez aux **rapports** \> **tableau de bord**.)<br/>![Dans la sécurité &amp; centre de conformité, cliquez sur rapports \> tableau de bord](media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
   
 2. Dans l’angle supérieur gauche coin du tableau de bord, à côté **Top insights &amp; recommandations**, nous disposons d’un lien. (Cliquez sur **Afficher tout**.)<br/>![Dans la sécurité &amp; centre de conformité, cliquez sur rapports \> tableau de bord pour voir vos idées principales](media/9bb64e11-494f-40a4-ab3d-8d3c7789f300.png)<br/>Nous mène à une liste d’idées de votre organisation.<br/>![Dans la sécurité &amp; centre de conformité, vous pouvez afficher tous les détails dans une liste](media/1289af77-bf5a-444a-97a1-03d8a83f75a9.png)
   

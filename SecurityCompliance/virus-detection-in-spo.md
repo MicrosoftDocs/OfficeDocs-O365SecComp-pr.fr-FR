@@ -3,7 +3,7 @@ title: Détection de virus dans SharePoint Online
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 4/17/2018
+ms.date: 01/14/2019
 ms.audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 description: Office 365 peut aider à protéger votre environnement contre les logiciels malveillants en détectant les virus dans les fichiers que les utilisateurs téléchargent vers SharePoint Online. Les fichiers sont analysées après leur téléchargement. Si un fichier est infecté, une propriété est définie de sorte que les utilisateurs ne peuvent pas télécharger ou synchroniser le fichier.
-ms.openlocfilehash: 22e983d35283ff96e1469fdf913e25b8d1d1c485
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ab02d2d4e82e9427ec6b512490f94ccc9c14b54e
+ms.sourcegitcommit: 5ccc3dd0d1c087bffd3a8fc807d5d1750f046eeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528358"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "28009590"
 ---
 # <a name="virus-detection-in-sharepoint-online"></a>Détection de virus dans SharePoint Online
 
@@ -48,7 +48,10 @@ Voici ce qui se passe :
   
 1. Un utilisateur ouvre un navigateur web et tente de télécharger un fichier infecté à partir de SharePoint Online.
     
-2. L’utilisateur reçoit un avertissement indiquant qu’un virus a été détecté et bénéficie de l’option pour télécharger le fichier et essayer de nettoyer à l’aide de son propre logiciel antivirus.
+2. L’utilisateur reçoit un avertissement indiquant qu’un virus a été détecté. L’option pour télécharger le fichier et essayer de nettoyer à l’aide de son propre logiciel antivirus est proposée à l’utilisateur.
+
+> [!NOTE]
+> Vous pouvez utiliser l’applet de commande Set-SPOTenant avec le paramètre **DisallowInfectedFileDownload** à ne pas autoriser les utilisateurs à télécharger un fichier détecté, même dans la fenêtre d’avertissement antivirus. Voir [DisallowInfectedFileDownload] (https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant).
     
 ## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>Que se passe-t-il lorsque le client de synchronisation OneDrive tente de synchroniser un fichier infecté ?
 

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Définir des stratégies de pièces jointes fiables pour protéger votre organisation à partir des fichiers malveillants dans le message électronique.
-ms.openlocfilehash: 7c2bcfd1d9faad48cb8852b066f544abd1fb6ace
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: c5c18e3e8300a5cb8eabb8a099d6757a09170ff7
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706068"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014876"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Définir des stratégies Office 365 DAV approuvés en pièce jointe
 
@@ -43,7 +43,7 @@ Personnes régulièrement envoient, recevoir et partager des pièces jointes, te
     
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Étape 2 : Configurer une stratégie de pièces jointes sûres DAV (ou en modifier)
   
-1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous avec votre compte professionnel ou de l’école. 
+1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous avec votre compte professionnel ou de l’école. 
     
 2. De sécurité Office 365 &amp; centre de conformité, dans le volet de navigation de gauche, sous **Gestion des menaces**, choisissez **stratégie** \> **Pièces jointes fiables**.
     

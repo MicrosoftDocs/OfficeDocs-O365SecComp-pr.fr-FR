@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
 description: Lisez cet article pour savoir comment activer Office 365 sécurité Gestion avancée, fourni par le nuage Application Security in Microsoft Azure.
-ms.openlocfilehash: 586ebc5f496652e05b4ab6d2421fa9bc42603895
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 8964a0b413b0350188c7f61638d04032534e5374
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706288"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014786"
 ---
 # <a name="turn-on-office-365-cloud-app-security"></a>Activer la sécurité des applications cloud Office 365
   
@@ -30,7 +30,7 @@ ms.locfileid: "26706288"
 > [!IMPORTANT]
 > Vous devez être un administrateur global ou un administrateur de sécurité pour effectuer la tâche suivante. Pour plus d’informations, voir [des autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md). Office 365 nuage sécurité des applications travailler par ordre corriger, **l’enregistrement d’audit doit être activée** pour votre environnement Office 365. Pour plus d’informations, voir [recherche des journaux d’audit d’activer Office 365 activé ou désactivé](turn-audit-log-search-on-or-off.md). 
   
-1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école pour Office 365. (Cela vous amène à la sécurité &amp; centre de conformité.) 
+1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://protection.office.com](https://security.microsoft.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école pour Office 365. (Cela vous amène à la sécurité &amp; centre de conformité.) 
     
 2. Accédez à des **alertes** \> **Gestion avancée des alertes**.
     

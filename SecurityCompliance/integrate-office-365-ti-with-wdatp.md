@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 description: Intégrer contre les menaces avancées Office 365 avec Windows Defender avancée protection contre les menaces pour afficher des informations plus détaillées sur la gestion menace.
-ms.openlocfilehash: 1198f53c47811d69b93106c413e3d3a09d83e736
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 48e879c1d41b5aa662f5128e234be91eb8225e7b
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706138"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014766"
 ---
 # <a name="integrate-office-365-threat-intelligence-with-windows-defender-advanced-threat-protection"></a>Intégrer Office 365 Threat Intelligence à Windows Defender - Protection avancée contre les menaces
 
@@ -34,7 +34,7 @@ Dans cet exemple, vous pouvez voir que les destinataires du message électroniqu
 
 - Votre organisation doit avoir des informations sur les menaces Office 365 et Windows Defender DAV.
     
-- Vous devez être un administrateur global d’Office 365 ou avoir un rôle d’administrateur de sécurité affecté dans le [sécurité &amp; centre de conformité](https://security.microsoft.com). (Voir [les autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md))
+- Vous devez être un administrateur global d’Office 365 ou avoir un rôle d’administrateur de sécurité affecté dans le [sécurité &amp; centre de conformité](https://protection.office.com). (Voir [les autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md))
     
 - Vous devez avoir accès à Office 365 menaces et le portail Windows Defender DAV.
     
@@ -42,7 +42,7 @@ Dans cet exemple, vous pouvez voir que les destinataires du message électroniqu
 
 Intégration des menaces Office 365 avec Windows Defender DAV est configuré dans Office 365 et dans le portail Windows Defender DAV.
   
-1. En tant qu’un global Office 365 ou un administrateur de sécurité, accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous avec votre compte professionnel ou de l’école pour Office 365. 
+1. En tant qu’un global Office 365 ou un administrateur de sécurité, accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous avec votre compte professionnel ou de l’école pour Office 365. 
     
 2. Cliquez sur **Gestion des menaces** \> **explorer menace**.
     

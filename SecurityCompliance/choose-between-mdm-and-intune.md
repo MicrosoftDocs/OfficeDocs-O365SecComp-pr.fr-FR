@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c93d9ab9-efb2-4349-9b93-30c30562ee22
 description: Microsoft Intune et gestion des périphériques mobiles intégrées à Office 365 les deux vous permettent de gérer les appareils mobiles dans votre organisation. Mais il existe des différences fondamentales, décrites dans cette rubrique.
-ms.openlocfilehash: 03def8ea26c0cdfcb4782f2168840e6a15bd6606
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 553d401179f82b0f119f9e7d929b4af7d3df0c4a
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706008"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014736"
 ---
 # <a name="choose-between-mdm-for-office-365-and-microsoft-intune"></a>Choisir entre Mobile Device Manager pour Office 365 et Microsoft Intune
 
@@ -34,7 +34,7 @@ Microsoft Intune et gestion des périphériques mobiles intégrées à Office 36
 |:-----|:-----|:-----|
 |**Fonctionnalités** <br/> |**GPM pour Office 365** <br/> |**Microsoft Intune** <br/> |
 |Coût  <br/> |Fourni avec le nombre d’abonnements Office 365 commerciale.  <br/> |Requiert un abonnement payant pour Microsoft Intune ou peut être acheté avec la Suite de mobilité d’entreprise.  <br/> |
-|La gestion des périphériques  <br/> |Gérez des périphériques à l’aide de la [Office 365 sécurité &amp; centre de conformité](https://security.microsoft.com) Office 365.  <br/> |Si vous utilisez Intune par lui-même, vous gérez des périphériques à l’aide de la console d’administration Intune.  <br/> Si vous intégrez Intune avec System Center 2012 Configuration Manager, vous utilisez la console Configuration Manager pour gérer les périphériques locaux et dans le nuage.  <br/> |
+|La gestion des périphériques  <br/> |Gérez des périphériques à l’aide de la [Office 365 sécurité &amp; centre de conformité](https://protection.office.com) Office 365.  <br/> |Si vous utilisez Intune par lui-même, vous gérez des périphériques à l’aide de la console d’administration Intune.  <br/> Si vous intégrez Intune avec System Center 2012 Configuration Manager, vous utilisez la console Configuration Manager pour gérer les périphériques locaux et dans le nuage.  <br/> |
 |Vous pouvez gérer des appareils  <br/> |Gestion en nuage pour iOS, Android et Windows périphériques  <br/> |Gestion en nuage pour iOS, Mac OS X, Android, Windows 8.1 (téléphone et PC) et versions ultérieures pour inclure Windows 10. <br/> |
 |Fonctionnalités clés  <br/> |Garantir que les documents et messagerie d’entreprise Office 365 est accessible uniquement sur les téléphones et les tablettes qui sont gérés par votre société et qui sont compatibles avec vos stratégies informatiques.  <br/> Définir et gérer les stratégies de sécurité, comme le code confidentiel au niveau de verrouillage et jailbreak détection de périphérique, afin d’empêcher les utilisateurs non autorisés d’accéder à la messagerie d’entreprise et des données sur un périphérique lorsqu’il est perdu ou volé.  <br/> Supprimer les données d’entreprise Office 365 à partir de périphériques d’un employé tout en conservant leurs données personnelles en place.  <br/> Vous trouverez des détails dans les [fonctionnalités de gestion des périphériques mobiles intégrées à Office 365](https://support.office.com/article/a1da44e5-7475-4992-be91-9ccec25905b0).  <br/> |Mobile Device Manager pour les fonctionnalités d’Office 365, plus :  <br/> Permettent aux utilisateurs d’accéder en toute sécurité des ressources d’entreprise avec des certificats, Wi-Fi, VPN et profils de messagerie.  <br/> S’inscrire et gérer des collections de périphériques appartenant à l’entreprise, la simplification du déploiement de stratégie et d’application.  <br/> Déployer les applications dans des magasins internes line-of-business applications pour les utilisateurs.  <br/> Autoriser les utilisateurs à accéder en toute sécurité les informations d’entreprise à l’aide de l’Office mobile et ligne des applications qu’ils connaissent, tout en garantissant la sécurité des données en vous aidant à limiter les actions telles que copier, couper, coller, enregistrent en tant que, pour seulement ces applications gérées par Intune.  <br/> Activer le plus sécurisé navigation sur le web à l’aide de l’application Intune gérées navigateur.  <br/> Gérer les ordinateurs du nuage sans qu’aucune infrastructure nécessaire à l’aide de Intune ou connectez-vous Intune pour le Gestionnaire de Configuration pour gérer l’ensemble de vos périphériques, y compris les PC, Mac, Linux et UNIX serveurs et les périphériques mobiles à partir d’une console unique.  <br/> Un abonnement Intune permet également de configurer les stratégies MAM (gestion des applications mobiles) à l’aide du portail Azure, même si les périphériques de personnes ne sont pas inscrits dans Intune. Voir [protéger les données d’application à l’aide de stratégies MAM](https://go.microsoft.com/fwlink/?LinkId=825439).<br/> |
 

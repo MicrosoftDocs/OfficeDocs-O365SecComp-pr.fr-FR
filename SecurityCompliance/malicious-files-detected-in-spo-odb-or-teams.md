@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 description: Découvrez où aller pour afficher des informations sur les fichiers malveillants détecté dans SharePoint, OneDrive ou équipes et comment effectuer une action sur ces fichiers.
-ms.openlocfilehash: c22e57e34cccafa3dd30a77a5a6011f2999f708c
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 435e1f449003f670f698c4e6813e18f5e83c498d
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706198"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014796"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>Afficher des informations sur les fichiers malveillants détecté dans SharePoint, OneDrive ou Microsoft Teams
 
@@ -29,7 +29,7 @@ Afin d’effectuer les tâches décrites dans cet article, vous devez disposer n
 
 Pour afficher l’état et des informations détaillées sur les fichiers qui ont été détectés par Office 365 DAV, vous pouvez utiliser le rapport d’état de Protection de menace.
   
-1. Dans la [Office 365 sécurité &amp; centre de conformité](https://security.microsoft.com), cliquez sur **rapports** \> **tableau de bord** \> **État de Protection de menace**.
+1. Dans la [Office 365 sécurité &amp; centre de conformité](https://protection.office.com), cliquez sur **rapports** \> **tableau de bord** \> **État de Protection de menace**.
     
 2. Dans le coin supérieur droit du rapport, cliquez sur **Afficher la table de détails**.
     

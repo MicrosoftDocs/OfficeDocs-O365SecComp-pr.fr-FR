@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: Utilisez la page alertes dans Office 365 Cloud application sécurité pour afficher les problèmes potentiels et effectuer une action. Vous pouvez faire disparaître ou résoudre les alertes et si nécessaire, suspendre un compte d’utilisateur.
-ms.openlocfilehash: 16d24ef7075a2db1dab86ee322b14f886c48b98b
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 2665f4ebc9c5c24b95da64954a606dfc0df99082
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706118"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014826"
 ---
 # <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Passer en revue et effectuer une action sur les alertes dans la sécurité des applications cloud Office 365
   
@@ -32,7 +32,7 @@ Vous pouvez utiliser la page alertes de sécurité pour application Cloud Micros
   
 ## <a name="how-to-get-to-the-alerts-page"></a>Comment accéder à la page alertes
 
-1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école. 
+1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école. 
     
 2. Dans la sécurité &amp; centre de conformité, sélectionnez **alertes** \> **Gestion avancée des alertes**.
     

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 description: Étendre Office 365 avancée protection contre les menaces de fichiers dans SharePoint Online, OneDrive entreprise et Microsoft Teams pour permettre une collaboration plus sûre pour votre organisation.
-ms.openlocfilehash: 6891184b49aa4ea03d5c13672ac9b95fc9e6d162
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 29676bf7c326adf366cca79a59f5b4c40c672baa
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238446"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014816"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 - Protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft Teams.
 
@@ -30,15 +30,15 @@ Personnes régulièrement les fichiers de partager et collaborer à l’aide de 
 
 Lorsqu’un fichier dans SharePoint Online, OneDrive entreprise et Microsoft Teams a été identifié comme malveillants, DAV intègre directement les magasins de fichiers pour verrouiller ce fichier. L’image suivante montre un exemple d’un fichier malveillant détecté dans une bibliothèque.
   
-[![Capture d’écran de fichiers dans OneDrive entreprise avec identifié comme malveillants](media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+[![Fichiers OneDrive entreprise avec un détecté comme malveillants](media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
   
 Bien que les fichiers bloqués apparaît toujours dans la bibliothèque de documents et le web, les applications de bureau ou mobiles, les fichiers bloqués ne peut pas être ouvert, copié, déplacé ou partagé. Personnes peuvent, toutefois, supprimer un fichier bloqué. Voici un exemple de rôle qui ressemble à sur appareil mobile d’un utilisateur :
   
-[![Capture d’écran de la suppression d’un fichier bloqué depuis OneDrive entreprise de l’application mobile OneDrive](media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+[![Suppression d’un fichier bloqué depuis OneDrive entreprise de l’application mobile OneDrive](media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
   
 Selon la configuration de Office 365, les personnes peuvent ou ne peut pas avoir la possibilité de télécharger un fichier bloqué. Voici ce que le téléchargement d’un fichier bloqué sur l’appareil mobile d’un utilisateur :
   
-[![Capture d’écran de téléchargement d’un fichier bloqué dans OneDrive entreprise](media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+[![Téléchargement d’un fichier bloqué dans OneDrive entreprise](media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
   
 Pour plus d’informations, voir [activer Office 365 DAV pour SharePoint, OneDrive et les équipes Microsoft](turn-on-atp-for-spo-odb-and-teams.md).
   

@@ -12,23 +12,23 @@ search.appverid:
 - MOE150
 ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
 description: Découvrez comment configurer et télécharger un rapport avec une plage de dates personnalisée et des filtres de sécurité &amp; centre de conformité.
-ms.openlocfilehash: 4bfd2b0cc9d0076085e312c7478a0f356b4f39d5
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 313caf1e6d7a4cdca74979c3a5ccdbc413c6c7db
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706028"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014746"
 ---
 # <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>Configurer et télécharger un rapport personnalisé dans la sécurité &amp; centre de conformité
 
-Dans la [sécurité &amp; centre de conformité](https://security.microsoft.com), plusieurs [rapports et vues d’ensemble](reports-and-insights-in-security-and-compliance.md) sont disponibles pour aider à l’équipe de sécurité de votre organisation atténuer et adresses contre les menaces envers votre organisation. Si vous êtes un membre de l’équipe de sécurité de votre organisation, vous pouvez configurer un rapport avec des filtres et des plages de dates personnalisée et puis téléchargez votre rapport personnalisé. 
+Dans la [sécurité &amp; centre de conformité](https://protection.office.com), plusieurs [rapports et vues d’ensemble](reports-and-insights-in-security-and-compliance.md) sont disponibles pour aider à l’équipe de sécurité de votre organisation atténuer et adresses contre les menaces envers votre organisation. Si vous êtes un membre de l’équipe de sécurité de votre organisation, vous pouvez configurer un rapport avec des filtres et des plages de dates personnalisée et puis téléchargez votre rapport personnalisé. 
   
 ## <a name="download-a-custom-report"></a>Télécharger un rapport personnalisé
 
 > [!IMPORTANT]
 > Assurez-vous que vous avez nécessaires [les autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md). En règle générale, les administrateurs globaux d’Office 365, les administrateurs de sécurité et les lecteurs de sécurité peuvent accéder aux rapports de sécurité &amp; centre de conformité. 
   
-1. Dans la [sécurité &amp; centre de conformité](https://security.microsoft.com), accédez aux **rapports** \> **tableau de bord**.
+1. Dans la [sécurité &amp; centre de conformité](https://protection.office.com), accédez aux **rapports** \> **tableau de bord**.
     
 2. Choisissez un rapport. (Dans cet exemple, nous allons utiliser le rapport de Disposition de Message).<br/>![Cliquez sur Demander un rapport pour télécharger un rapport](media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
   
