@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Stratégies de détection des anomalies dans Office 365 Cloud application sécurité utilisent algorithmes intégrés pour découvrir des problèmes potentiels. Vous devez disposer de stratégie de détection au moins une anomalie, vous pouvez régler (lors de sa création) à l’aide de filtres. '
-ms.openlocfilehash: 8babe86dd5adb6c25a069096157cac121ad66ab1
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 62e2db3ba46f41bce5c5c4fab9e6c685838d68e8
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706338"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015075"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Stratégies de détection des anomalies dans la sécurité des applications cloud Office 365
 
@@ -51,7 +51,7 @@ Vérifiez que :
     
 ## <a name="view-your-anomaly-detection-policies"></a>Afficher vos stratégies de détection des anomalies
 
-1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école. 
+1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école. 
     
 2. Dans la sécurité &amp; centre de conformité, sélectionnez **alertes** \> **Gestion avancée des alertes**.
     
@@ -89,11 +89,10 @@ Le tableau suivant décrit les stratégies de détection des anomalies par défa
 |Plusieurs tentatives de connexion ayant échoué  <br/> |Identifie les utilisateurs qui ont échoué plusieurs tentatives de connexion en une seule session par rapport à la ligne de base par des professionnels qui pourraient indiquer sur une tentative de violation.  <br/> |
    
 ## <a name="triage-anomaly-detection-alerts"></a>Alertes de détection d’anomalie triage
-<a name="triage"> </a>
 
 Comme les alertes qui se vous pouvez trier ces alertes rapidement et déterminer ceux à gérer tout d’abord. Ayant le contexte d’une alerte vous permet de voir une image plus grande et de déterminer si un élément malveillant en effet se produit. Utilisez la procédure suivante pour commencer l’exploration d’une alerte :
   
-1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école. 
+1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école. 
     
 2. Dans la sécurité &amp; centre de conformité, sélectionnez **alertes** \> **Gestion avancée des alertes**.
     

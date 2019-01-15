@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: Découvrez comment trouver et utiliser les rapports pour Office 365 avancée contre les menaces de sécurité &amp; centre de conformité.
-ms.openlocfilehash: d387e020e5834d4961e7bda50b418ea11b9f0f4d
-ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
+ms.openlocfilehash: a17f182f5c8d79e7863b26324a3c073ef18f14c9
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27749348"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014946"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Afficher les rapports de Protection de menace avancées d’Office 365
 
@@ -35,7 +35,7 @@ Le rapport **d’État de Protection de menace** est un affichage simple qui ras
 > [!NOTE]
 > Un rapport d’état de Protection de menace est disponible pour les clients qui ont des [Office 365 DAV](office-365-atp.md) ou [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP) ; Toutefois, les informations qui s’affiche dans le rapport d’état de Protection des menaces pour les clients disposant contiendra probablement que les clients EOP peuvent afficher des données différentes. Par exemple, le rapport d’état de Protection des menaces pour les clients DAV contient plus d’informations sur [les fichiers malveillants détecté dans SharePoint Online, OneDrive ou les équipes Microsoft](atp-for-spo-odb-and-teams.md). Ces informations sont spécifiques à DAV, afin que les clients qui ont EOP mais pas DAV ne seront affiche pas ces détails dans leur état de Protection de menace.
   
-Pour afficher le rapport d’état de Protection de menace, dans le [sécurité &amp; centre de conformité](https://security.microsoft.com), accédez aux **rapports** \> **tableau de bord** \> **État de Protection de menace**.
+Pour afficher le rapport d’état de Protection de menace, dans le [sécurité &amp; centre de conformité](https://protection.office.com), accédez aux **rapports** \> **tableau de bord** \> **État de Protection de menace**.
   
 ![Rapport d’état de Protection de menace DAV](media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
   
@@ -55,7 +55,7 @@ Vous pouvez également utiliser le menu **Afficher les données** pour modifier 
 
 Le rapport de **Types de fichiers DAV** indique le type de fichiers détecté comme malveillants par les [Pièces jointes sûres DAV](atp-safe-attachments.md).
   
-Pour afficher ce rapport, dans le [sécurité &amp; centre de conformité](https://security.microsoft.com), accédez aux **rapports** \> **tableau de bord** \> **Types de fichiers DAV**.
+Pour afficher ce rapport, dans le [sécurité &amp; centre de conformité](https://protection.office.com), accédez aux **rapports** \> **tableau de bord** \> **Types de fichiers DAV**.
   
 ![Rapport sur les Types de fichier DAV](media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
@@ -67,7 +67,7 @@ Lorsque vous placez sur un jour donné, vous pouvez voir la répartition des typ
 
 Le rapport de **Disposition de Message DAV** indique les actions qui ont été prises pour les messages électroniques qui ont été détectés comme ayant un contenu malveillant. 
   
-Pour afficher ce rapport, dans le [sécurité &amp; centre de conformité](https://security.microsoft.com), accédez aux **rapports** \> **tableau de bord** \> **Destruction du Message DAV**.
+Pour afficher ce rapport, dans le [sécurité &amp; centre de conformité](https://protection.office.com), accédez aux **rapports** \> **tableau de bord** \> **Destruction du Message DAV**.
   
 ![Rapport de Disposition Message DAV](media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
   

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 description: Apprenez à utiliser sur les menaces pour rechercher et vérifier la messagerie.
-ms.openlocfilehash: 4440b4d1503b9a13977ef773b95fa64873662b85
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: b6d4f8a5d1fcfce4461b91796b1264f94d1eb4d1
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706038"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014916"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>Rechercher et vérifier le courrier électronique malveillant qui a été remis (Office 365 Threat Intelligence)
 
@@ -48,7 +48,7 @@ Les pirates peuvent être envoient du courrier à vos utilisateurs à essayer et
 > [!TIP]
 > [Threat Explorer](get-started-with-ti.md#threat-explorer) (également appelé Explorateur de solutions), un rapport puissant qui peut servir à plusieurs fins, telles que la recherche et suppression des messages, qui identifie l’adresse IP d’un expéditeur malveillant ou lancer un incident examinés. La procédure suivante se concentre sur l’utilisation de l’Explorateur pour rechercher et supprimer de messagerie des boîtes aux lettres des destinataires. 
   
-1. Accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école pour Office 365. Vous accédez à la sécurité &amp; centre de conformité. 
+1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école pour Office 365. Vous accédez à la sécurité &amp; centre de conformité. 
     
 2. Dans la navigation de gauche, cliquez sur **Gestion des menaces** \> **Explorer**.
     

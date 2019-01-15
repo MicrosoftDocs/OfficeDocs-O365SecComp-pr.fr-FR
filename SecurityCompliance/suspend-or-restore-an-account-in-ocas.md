@@ -1,9 +1,9 @@
 ---
-title: Suspendre ou restaurer un compte d’utilisateur dans Office 365 Cloud Application Security
+title: Suspendre ou restaurer un compte d’utilisateur dans la sécurité des applications cloud Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 12/03/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.assetid: 5f02d20f-b9aa-4b2f-ad2d-506a4a3c4540
 description: 'Avec Office 365 de sécurité application Cloud, les gouvernance actions possibles sont de suspendre ou reprendre un compte d’utilisateur. '
-ms.openlocfilehash: a5c75edefc6ddb87b5676c4253aafe04817f6a1d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 09d6ae870aa1a6b0a619ccf20f8cc19b392e23a8
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527695"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014846"
 ---
-# <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>Suspendre ou restaurer un compte d’utilisateur dans Office 365 Cloud Application Security
+# <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>Suspendre ou restaurer un compte d’utilisateur dans la sécurité des applications cloud Office 365
 
 Gestion de la sécurité Office 365 avancée est désormais sécurité d’application Office 365 dans le nuage.
   
@@ -44,9 +44,7 @@ Lorsque vous interrompez un compte d’utilisateur, vous empêchez l’utilisate
     
 2. Dans la sécurité &amp; centre de conformité, sélectionnez **alertes** \> **Gestion avancée des alertes**.
     
-3. Cliquez sur **Aller à la sécurité d’application Office 365 dans le nuage**.
-    
-    ![Dans la sécurité &amp; centre de conformité, cliquez sur Gérer les alertes avancées pour accéder à la sécurité d’application dans le nuage Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+3. Cliquez sur **Aller à la sécurité d’application Office 365 dans le nuage**.<br>![Dans la sécurité &amp; centre de conformité, cliquez sur Gérer les alertes avancées pour accéder à la sécurité d’application dans le nuage Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br>
   
 4. Dans la barre de navigation dans la partie supérieure de l’écran, cliquez sur **alertes**.
     
@@ -60,9 +58,9 @@ Reportez-vous à la section [restaurer un utilisateur dans Office 365](https://s
   
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Passez en revue et effectuer une action sur les alertes de sécurité pour application Cloud Microsoft Office 365](review-office-365-cas-alerts.md)
+- [Passer en revue et effectuer une action sur les alertes dans la sécurité des applications cloud Office 365](review-office-365-cas-alerts.md)
     
-- [Gérer les autorisations d’application à l’aide de la sécurité d’application Office 365 dans le nuage](manage-app-permissions-in-ocas.md)
+- [Gérer les applications OAuth à l’aide de la sécurité des applications cloud Office 365](manage-app-permissions-in-ocas.md)
     
 - Passez en revue vos [activités utilisation Office 365 nuage sécurité des applications](utilization-activities-for-ocas.md)
     

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Définir des stratégies de liens fiables pour protéger votre organisation contre les liens malveillants dans les fichiers Word, Excel, PowerPoint et Visio, ainsi que dans les messages électroniques.
-ms.openlocfilehash: fb2af8e29bfe2de027a2d0e88cf9bcc07299fba9
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 145e8998637756d204171f64021d6ad783b367f3
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706088"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015056"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Définir des stratégies Office 365 DAV fiables liens
 
@@ -51,7 +51,7 @@ ms.locfileid: "26706088"
 
 Lorsque vous avez [Contre les menaces avancées Office 365](office-365-atp.md), vous aurez une stratégie par défaut des liens fiables DAV qui s’applique à tout le monde dans votre organisation. Assurez-vous de consulter et si nécessaire, modifiez votre stratégie par défaut.
   
-1. Accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous avec votre compte professionnel ou de l’école. 
+1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous avec votre compte professionnel ou de l’école. 
     
 2. Dans la navigation de gauche, sous **Gestion des menaces**, choisissez **stratégie \> ** **Liens fiables**.
     
@@ -67,7 +67,7 @@ Lorsque vous avez [Contre les menaces avancées Office 365](office-365-atp.md), 
 
 Une fois que vous avez passé en revue (ou modifier) la stratégie de liens fiables DAV par défaut qui s’applique à tout le monde, l’étape suivante consiste à définir des stratégies supplémentaires qui s’appliquent à des destinataires spécifiques. Par exemple, vous pouvez spécifier des exceptions à votre stratégie par défaut en définissant une stratégie supplémentaire. 
   
-1. Accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous avec votre compte professionnel ou de l’école. 
+1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous avec votre compte professionnel ou de l’école. 
     
 2. Dans la navigation de gauche, sous **Gestion des menaces**, choisissez **une stratégie**.
     

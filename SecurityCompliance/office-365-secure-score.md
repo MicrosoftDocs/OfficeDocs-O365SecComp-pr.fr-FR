@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
 description: Demandez jamais sécurisé comment votre entreprise est vraiment dans Office 365 ? Score sécurisée est là pour aider. Score sécurisé analyse la sécurité de votre organisation basée sur les activités normales et les paramètres de sécurité dans Office 365 et attribue une note.
-ms.openlocfilehash: 0d19cd9512838bf2d8b0bff615ccaa1eea21266a
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 08d452f2b297948c13243a5eb36ae6e22839e545
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706178"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015066"
 ---
 # <a name="office-365-secure-score"></a>Secure Score Office 365
 
@@ -28,7 +28,7 @@ ms.locfileid: "26706178"
 
 Si votre organisation a un abonnement qui inclut [Office 365 pour entreprises](https://docs.microsoft.com/office365/enterprise/), [Microsoft 365 Professionnel](https://docs.microsoft.com/microsoft-365/business/)ou Office 365 entreprise Premium et que vous disposez des autorisations nécessaires, vous pouvez afficher le score sécurisée de votre organisation en consultant [https://securescore.office.com](https://securescore.office.com). 
 
-Sinon, vous pouvez visiter le centre de conformité & de sécurité ([https://security.microsoft.com](https://security.microsoft.com)), où vous trouverez un widget Score sécurisé que vous offre votre score actuel.
+Sinon, vous pouvez visiter le centre de conformité & de sécurité ([https://protection.office.com](https://protection.office.com)), où vous trouverez un widget Score sécurisé que vous offre votre score actuel.
 
 ![Utilisation du widget Score sécurisé](media/SecureScoreWidget-o365.png)
 

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 description: Découvrez les suivis de menace, y compris les nouveaux dispositifs dignes d’intérêt, pour aider votre organisation à maîtriser les problèmes de sécurité.
-ms.openlocfilehash: e9dfdde563260ff7969f4749357c130ab98ce386
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 7729a78d0b18df7d73751f4480ef095bedc5965b
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706378"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014996"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Suivis contre les menaces - nouveaux et intéressants
 
@@ -35,7 +35,7 @@ La plupart des pages tracker inclure les numéros de tendances qui sont périodi
   
 Les dispositifs de suivi sont quelques-unes des nombreuses fonctionnalités que vous obtenez avec [Office 365 menaces](office-365-ti.md). Lorsqu’elle est disponible, votre nouveau suivis menace inclura [suivis dignes d’intérêt](threat-trackers.md#notey), [suivis Trending](threat-trackers.md#trending), [requêtes de suivi](threat-trackers.md#trackedq)et [enregistré](threat-trackers.md#savedq).
   
-Pour afficher et utiliser votre suivis menace lorsqu’ils sont disponibles pour votre organisation, accédez à la sécurité &amp; centre de conformité ([https://security.microsoft.com](https://security.microsoft.com)) et cliquez sur **Gestion des menaces** \> **suivi de menace**.
+Pour afficher et utiliser votre suivis menace lorsqu’ils sont disponibles pour votre organisation, accédez à la sécurité &amp; centre de conformité ([https://protection.office.com](https://protection.office.com)) et cliquez sur **Gestion des menaces** \> **suivi de menace**.
   
 > [!NOTE]
 > Pour utiliser les dispositifs de menace, vous devez être un administrateur global d’Office 365, un administrateur de sécurité ou un lecteur de sécurité. Voir [les autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md). 

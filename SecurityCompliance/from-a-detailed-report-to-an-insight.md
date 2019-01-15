@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 description: Découvrez comment vous pouvez déplacer un rapport détaillé pour un aperçu des actions recommandées dans la sécurité &amp; centre de conformité.
-ms.openlocfilehash: 8048e9aac9191bd89028ac3e4f5fdde577ad7226
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 48c7283723a75685e16e1f7ddbe34bc3779819cf
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706248"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014976"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>Procédure pas à pas. D’un rapport détaillé à un aperçu
 
@@ -30,7 +30,7 @@ Il s’agit d’une des procédures pas à pas plusieurs pour la sécurité &amp
 
 Examinons le flux à partir d’un rapport détaillé pour un aperçu et actions. (Ceci est un exemple de brèves [anti-spam et contre les programmes malveillants](anti-spam-and-anti-malware-protection.md) .) 
   
-1. Nous commençons par [sécurité &amp; centre de conformité](https://security.microsoft.com) rapports. (Accédez aux **rapports** \> **tableau de bord**.)<br/>![Dans la sécurité &amp; centre de conformité, accédez aux rapports \> tableau de bord](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
+1. Nous commençons par [sécurité &amp; centre de conformité](https://protection.office.com) rapports. (Accédez aux **rapports** \> **tableau de bord**.)<br/>![Dans la sécurité &amp; centre de conformité, accédez aux rapports \> tableau de bord](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
   
 2. Nous choisir un rapport pour obtenir une vue plus détaillée. (Choisir un rapport, telles que le rapport **d’État de Protection de menace** ).<br/>![Rapport d’état de Protection de menace affichant les détails](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   

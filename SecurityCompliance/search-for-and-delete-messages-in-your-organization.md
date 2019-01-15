@@ -3,7 +3,7 @@ title: Rechercher et supprimer des messages électroniques dans votre organisati
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 4/25/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Utiliser la recherche et la purge des fonctionnalités de sécurité Office 365 &amp; centre de conformité pour rechercher et supprimer un message électronique à partir de toutes les boîtes aux lettres dans votre organisation.
-ms.openlocfilehash: d9ca212585f1cb7e98e5f577ce47fcdef7ea979f
-ms.sourcegitcommit: 08f36794552e2213d0baf35180e47744d3e87fe4
+ms.openlocfilehash: 82ba38ef2c3c8c6b78743a4b2263dde0ef3a5b48
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23531867"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015016"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>Rechercher et supprimer des messages électroniques dans votre organisation Office 365 - aide d’administration
 
@@ -99,20 +99,31 @@ Si votre compte Office 365 utilise l’authentification multifacteur (MFA) ou l�
   
 ## <a name="step-3-delete-the-message"></a>Étape 3 : Supprimer le message
 
-Une fois que vous avez créé et affiné une recherche de contenu pour renvoyer le message que vous souhaitez supprimer et sont connectés à la sécurité &amp; PowerShell du centre de conformité, l’étape finale consiste à exécuter la cmdlet **New-ComplianceSearchAction** pour supprimer le message. Messages supprimés sont déplacés vers le dossier éléments récupérables de l’utilisateur. 
+Une fois que vous avez créé et affiné une recherche de contenu pour renvoyer le message que vous souhaitez supprimer et sont connectés à la sécurité &amp; PowerShell du centre de conformité, l’étape finale consiste à exécuter la cmdlet **New-ComplianceSearchAction** pour supprimer le message. Vous pouvez récupérable - ou suppression définitive le message. Un message récupérable est déplacé vers le dossier des éléments récupérables d’un utilisateur et conservé avant l’expiration de la période de rétention des éléments supprimés. Messages supprimée sont marquées pour suppression définitive de la boîte aux lettres et seront définitivement supprimées la prochaine fois que la boîte aux lettres est traitée par l’Assistant dossier géré. Si la récupération d’élément unique est activée pour la boîte aux lettres, éléments supprimés définitivement seront définitivement supprimées après expiration de la période de rétention des éléments supprimés. Si une boîte aux lettres est mis en attente, les messages supprimés sont conservés jusqu'à ce que la durée de la suspension de l’élément expire ou jusqu'à ce que le blocage est supprimé de la boîte aux lettres.
   
-Dans l’exemple suivant, la commande supprime les résultats de recherche renvoyés par une recherche de contenu nommée « Remove Phishing Message ». 
+Dans l’exemple suivant, la commande sera récupérable-supprimer les résultats de recherche renvoyés par une recherche de contenu nommé « Supprimer du Message de Phishing ». 
 
 ```
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
 ```
-  
+Dans l’exemple suivant, la commande supprime définitivement les résultats de recherche renvoyés par une recherche de contenu nommé « Supprimer du Message de Phishing ». 
+
+```
+New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
+```
+
 La recherche spécifiée par le paramètre *SearchName* est la recherche de contenu que vous avez créé à l’étape 1. 
+
+Disque dur-supprimer les éléments renvoyés par la recherche de contenu « Supprimer du Message de Phishing », vous exécuterez cette commande :
+
+```
+New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
+```
   
 Pour plus d’informations, voir [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearchAction).
   
 
-## <a name="more-information"></a>Plus d'informations
+## <a name="more-information"></a>Plus d’informations
 
 - **Comment obtenir l’état de la recherche et l’opération de suppression ?**
 
@@ -120,11 +131,9 @@ Pour plus d’informations, voir [New-ComplianceSearchAction](https://docs.micro
     
 - **Que se passe-t-il après la suppression d’un message ?**
 
-    Un message est supprimé à l’aide de la `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` commande est déplacée vers le dossier de suppressions dans le dossier éléments récupérables de l’utilisateur. Il n’est pas immédiatement purgée à partir d’Office 365. L’utilisateur peut récupérer des messages dans le dossier éléments supprimés pour la durée en fonction de la période de rétention des éléments supprimés configurée pour la boîte aux lettres. Une fois cette période de rétention expire (ou si l’utilisateur supprime définitivement le message avant son expiration), le message est déplacé vers le dossier vide et n’est plus accessible par l’utilisateur. Une fois dans le dossier vide, le message est conservé à nouveau pour la durée en fonction de la période de rétention des éléments supprimés configurée pour la boîte aux lettres si la récupération d’éléments unique est activée pour la boîte aux lettres. (Dans Office 365, récupération d’élément unique est activée par défaut lors de la création d’une nouvelle boîte aux lettres.) Après l’expiration de la période de rétention des éléments supprimés, le message est marqué pour suppression définitive et la prochaine fois que la boîte aux lettres est traitée par l’assistant dossier géré est purgé à partir d’Office 365. 
-    
-- **Comment savoir que les messages sont supprimés et déplacés vers le dossier éléments récupérables de l’utilisateur ?**
+   Un message est supprimé avec la `New-ComplianceSearchAction -Purge -PurgeType HardDelete` commande est déplacée vers le dossier vide et n’est pas accessible par l’utilisateur. Une fois que le message est déplacé vers le dossier de purge, le message est conservé pendant la durée de la période de rétention des éléments supprimés si la récupération d’élément unique est activée pour la boîte aux lettres. (Dans Office 365, récupération d’élément unique est activée par défaut lors de la création d’une nouvelle boîte aux lettres.) Après l’expiration de la période de rétention des éléments supprimés, le message est marqué pour suppression définitive et la prochaine fois que la boîte aux lettres est traitée par l’assistant dossier géré est purgé à partir d’Office 365. 
 
-    Si vous exécutez la même recherche de contenu après la suppression d’un message, vous verrez toujours le même nombre de résultats de recherche (et pouvez supposer que le message n’a pas été supprimé de boîtes aux lettres utilisateur). Il s’agit, car une recherche de contenu de recherche dans le dossier éléments récupérables, qui est où le message supprimé est déplacé vers une fois que vous exécutez le `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` commande. Pour vérifier que les messages ont été déplacés vers le dossier éléments récupérables, vous pouvez exécuter une recherche de découverte électronique locale (en utilisant les mêmes boîtes aux lettres source et les critères de recherche en tant que la recherche de contenu créé à l’étape 1) et puis copier les résultats de recherche dans la boîte aux lettres de découverte. Vous pouvez afficher les résultats de recherche dans la boîte aux lettres de découverte et vérifiez que les messages ont été déplacés vers le dossier éléments récupérables. Pour plus d’informations sur la création d’une recherche de découverte électronique locale qui utilise la liste des boîtes aux lettres sources et de requête de recherche à partir d’une recherche de contenu, voir [Recherche de contenu utilisés dans votre flux de travail eDiscovery](use-content-search-in-ediscovery.md) . 
+   Si vous utilisez la `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` de commande, les messages sont placés dans le dossier de suppressions dans le dossier éléments récupérables de l’utilisateur. Il n’est pas immédiatement purgée à partir d’Office 365. L’utilisateur peut récupérer des messages dans le dossier éléments supprimés pour la durée en fonction de la période de rétention des éléments supprimés configurée pour la boîte aux lettres. Une fois cette période de rétention expire (ou si l’utilisateur supprime définitivement le message avant son expiration), le message est déplacé vers le dossier vide et n’est plus accessible par l’utilisateur. Une fois dans le dossier vide, le message est conservé pendant toute la durée en fonction de la période de rétention des éléments supprimés configurée pour la boîte aux lettres si la récupération d’éléments unique est activée pour la boîte aux lettres. (Dans Office 365, récupération d’élément unique est activée par défaut lors de la création d’une nouvelle boîte aux lettres.) Après l’expiration de la période de rétention des éléments supprimés, le message est marqué pour suppression définitive et la prochaine fois que la boîte aux lettres est traitée par l’assistant dossier géré est purgé à partir d’Office 365. 
     
 - **Que se passe-t-il si vous devez supprimer un message de plus de 50 000 boîtes aux lettres ?**
 
@@ -132,12 +141,12 @@ Pour plus d’informations, voir [New-ComplianceSearchAction](https://docs.micro
     
 - **Supprimer des éléments non indexés inclus dans les résultats de recherche ?**
 
-    Non, les `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` commande ne supprime pas les éléments non indexés. 
+    Non, la « New-ComplianceSearchAction-commande Vider ne supprime pas les éléments non indexés. 
     
 - **Que se passe-t-il si un message est supprimé d’une boîte aux lettres qui a été placé sur le blocage sur Place ou litige ou est affectée à une stratégie de rétention Office 365 ?**
 
-    Une fois que le message est éliminé (par l’utilisateur ou l’expiration de la période de rétention des éléments supprimés), le message est conservé jusqu'à ce que la durée d’attente expire. Si la durée d’attente est illimitée, les éléments sont conservés jusqu'à ce que le blocage est supprimé ou la durée d’attente est modifiée.
+    Une fois que le message est purgé et déplacé vers le dossier de purge, le message est conservé jusqu'à ce que la durée d’attente expire. Si la durée d’attente est illimitée, les éléments sont conservés jusqu'à ce que le blocage est supprimé ou la durée d’attente est modifiée.
     
-- **Pourquoi le flux de travail recherche et suppression est réparti entre les différents sécurité &amp; groupes de rôles de centre de conformité ?**
+- **Pourquoi la recherche et supprimer des flux de travail réparti entre les différents groupes de rôles de sécurité et le centre de conformité ?**
 
     Comme expliqué précédemment, une personne doit être un membre du groupe de rôles de gestionnaire de découverte électronique ou attribuer le rôle de gestion de conformité recherche pour rechercher les boîtes aux lettres. Pour supprimer des messages, une personne doit être un membre du groupe de rôles de gestion de l’organisation ou attribuer le rôle de gestion de recherche et de Purge. Cela permet à un contrôle qui peut rechercher des boîtes aux lettres dans l’organisation et qui peut supprimer des messages. 
