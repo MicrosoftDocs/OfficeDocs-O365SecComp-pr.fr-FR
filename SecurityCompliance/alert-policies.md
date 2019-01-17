@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Créer des stratégies de l’alerte de sécurité Office 365 &amp; centre de conformité à surveiller les menaces potentielles, la perte de données et problème d’autorisations. Ensuite, vous pouvez afficher et gérer les alertes sont générées lorsque les utilisateurs effectuent des activités qui correspondent aux conditions d’une stratégie de l’alerte.
-ms.openlocfilehash: 9aea5660f6a890afb06c5bd04db812d6aeacd17a
-ms.sourcegitcommit: 95a3ce0bc5b0f3782fc4ef22a70f5ef1dc879ee3
+ms.openlocfilehash: 6bdbf9c4c352bf16fd1a7b5c9f7b0af7eb4fadfd
+ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "26988433"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28328140"
 ---
 # <a name="alert-policies-in-the-office-365-security-amp-compliance-center"></a>Stratégies de sécurité Office 365 d’alerte &amp; centre de conformité
 
@@ -84,7 +84,7 @@ Une stratégie d’alerte comprend les conditions et les paramètres suivants.
     
   - Autres
     
-    Lorsqu’une activité se produit qui correspond aux conditions de la stratégie de l’alerte, l’alerte qui est généré est marqué avec la catégorie définie dans ce paramètre. Cela vous permet de suivre et gérer les alertes qui ont le même paramètre catégorie sur la page **Afficher les alertes** de sécurité &amp; , car vous pouvez trier et filtrer les alertes selon la catégorie du centre de conformité. 
+  Lorsqu’une activité se produit qui correspond aux conditions de la stratégie de l’alerte, l’alerte qui est généré est marqué avec la catégorie définie dans ce paramètre. Cela vous permet de suivre et gérer les alertes qui ont la même catégorie définition dans la page **Afficher les alertes** dans le centre de conformité de & sécurité car vous pouvez trier et filtrer les alertes selon la catégorie. 
     
 - **Gravité d’alerte** : similaire à la catégorie de l’alerte, vous assignez un attribut severity ( **faible**, **moyen**ou **élevé**) à des stratégies de l’alerte. Comme la catégorie de l’alerte, lorsqu’une activité se produit qui correspond aux conditions de la stratégie de l’alerte, l’alerte qui est généré est marqué avec le même niveau de gravité est défini pour la stratégie de l’alerte. Là encore, cela vous permet suivre et gérer les alertes qui ont le même paramètre gravité sur la page **Afficher les alertes** . Par exemple, vous pouvez filtrer la liste des alertes afin que seules les alertes de gravité **élevée** soient affichées. 
     
@@ -102,7 +102,7 @@ Le tableau suivant répertorie et décrit les règles d’alerte par défaut dis
 |**Stratégie de l’alerte par défaut**|**Description**|**Abonnement à Office 365 entreprise**|
 |:-----|:-----|:-----|
 |**Création de règles de transfert/redirection** <br/> |Génère une alerte lorsqu’une personne de votre organisation crée une règle de boîte de réception pour leur boîte aux lettres qui transfère ou redirige les messages vers un autre compte de messagerie. Cette stratégie suit uniquement les règles de boîte de réception sont créés à l’aide d’Outlook Web App ou Exchange Online PowerShell. Cette stratégie possède un paramètre de niveau de gravité **faible** . Pour plus d’informations à l’aide de règles de boîte de réception pour transférer et rediriger les messages électroniques dans Outlook Web App, voir [utiliser les règles dans Outlook Web App pour transférer automatiquement les messages vers un autre compte](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).<br/> |/ G1 E1, E3/G3 ou E5/G5  <br/> |
-|**recherche de découverte électronique démarré ou exportés** <br/> |Génère une alerte lorsqu’une personne utilise l’outil de recherche de contenu dans la sécurité et le centre de conformité. Une alerte est déclenchée lorsque les activités de recherche de contenu suivantes sont effectuées :<br/><br/>• Une recherche de contenu est démarré.<br/>• Les résultats d’une recherche de contenu sont exportées.<br/>• Exportation d’un rapport de recherche de contenu<br/><br/>Alertes sont déclenchées également lorsque les activités de recherche de contenu précédente sont effectuées en association avec un cas eDiscovery. Cette stratégie possède un paramètre de gravité **moyenne** . Pour plus d’informations sur les activités de recherche de contenu, voir [recherche d’activités de découverte électronique dans Office 365 journal d’audit](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities).<br/> |/ G1 E1, E3/G3 ou E5/G5  <br/> |
+|**recherche de découverte électronique démarré ou exportés** <br/> |Génère une alerte lorsqu’une personne utilise l’outil de recherche de contenu dans le centre de conformité de & sécurité. Une alerte est déclenchée lorsque les activités de recherche de contenu suivantes sont effectuées :<br/><br/>• Une recherche de contenu est démarré.<br/>• Les résultats d’une recherche de contenu sont exportées.<br/>• Exportation d’un rapport de recherche de contenu<br/><br/>Alertes sont déclenchées également lorsque les activités de recherche de contenu précédente sont effectuées en association avec un cas eDiscovery. Cette stratégie possède un paramètre de gravité **moyenne** . Pour plus d’informations sur les activités de recherche de contenu, voir [recherche d’activités de découverte électronique dans Office 365 journal d’audit](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities).<br/> |/ G1 E1, E3/G3 ou E5/G5  <br/> |
 |**Élévation de privilèges d’administrateur Exchange** <br/> |Génère une alerte lorsqu’une personne est attribuée des autorisations d’administration dans votre organisation Exchange Online ; par exemple, si un utilisateur est ajouté au rôle de gestion de l’organisation de groupe dans Exchange Online. Cette stratégie possède un paramètre de niveau de gravité **faible** .<br/> |/ G1 E1, E3/G3 ou E5/G5  <br/> |
 |**Les messages qui ont été retardées** <br/> |Génère une alerte lorsque Office 365 ne peut pas remettre les messages électroniques à votre organisation locale ou à un partenaire de serveurs à l’aide d’un connecteur. Lorsque cela se produit, le message est en file d’attente dans Office 365. Cette alerte se déclenche quand il y a 2 000 messages ou plus qui ont été mis en attente pour plus d’une heure. Cette stratégie possède un paramètre de gravité **élevée** .<br/> |/ G1 E1, E3/G3 ou E5/G5  <br/> |
 |**Campagne de programme malveillant détecté après la remise** <br/> |Génère une alerte lorsqu’un nombre excessif de messages contenant des programmes malveillants est remis aux boîtes aux lettres dans votre organisation. Si cet événement se produit, Office 365 supprime les messages infectés de boîtes aux lettres Exchange Online. Cette stratégie possède un paramètre de gravité **élevée** .<br/> |Abonnement de module complémentaire E5/G5 ou menaces Office 365  <br/> |
@@ -135,9 +135,66 @@ Vous pouvez utiliser les filtres suivants pour afficher un sous-ensemble de tout
     
 - **Catégorie** - Utilisez ce filtre pour afficher les alertes à partir d’une ou plusieurs catégories de l’alerte.
 
-- **Source** - Utilisez ce filtre pour afficher les alertes déclenchées par les stratégies de l’alerte de sécurité & centre de conformité les alertes déclenchées par les stratégies de sécurité d’application Office 365 dans le nuage, ou les deux. Pour plus d’informations sur les alertes de sécurité pour application Cloud Microsoft Office 365, voir la section [affichage du nuage application sécurité alertes](#viewing-cloud-app-security-alerts) .
+- **Source** - Utilisez ce filtre pour afficher les alertes déclenchées par des stratégies de l’alerte dans le centre de conformité de & sécurité ou les alertes déclenchées par les stratégies de sécurité d’application Office 365 dans le nuage, ou les deux. Pour plus d’informations sur les alertes de sécurité pour application Cloud Microsoft Office 365, voir la section [affichage du nuage application sécurité alertes](#viewing-cloud-app-security-alerts) .
 
-  
+### <a name="rbac-permissions-required-to-view-alerts"></a>Autorisations RBAC requises pour afficher les alertes
+
+> [!NOTE]
+> La fonctionnalité décrite dans cette section mettra en place pour les organisations commençant sur 20 février 2019 et sera effectuée dans le monde entier à la fin de mars 2019.
+
+Les autorisations de contrôle d’accès des Bases de rôle (RBAC) affectées aux utilisateurs dans votre organisation détermine les alertes, les utilisateurs peuvent voir dans la page **Afficher les alertes** . Comment est effectué ? Les rôles de gestion affectées aux utilisateurs (en fonction de leur appartenance à des groupes de rôles dans le centre de conformité de & sécurité) déterminent les catégories d’alerte un utilisateur peut voir dans la page **Afficher les alertes** . Voici quelques exemples :
+
+- Les membres du groupe de rôles de gestion des enregistrements peuvent afficher uniquement les alertes qui sont générés par les stratégies de l’alerte qui sont affectés à la catégorie de **la gouvernance des données** .
+- Les membres du groupe de rôles d’administrateur de la conformité ne peut pas afficher les alertes qui sont générées par des stratégies de l’alerte qui sont affectés à la catégorie de **Gestion des menaces** . 
+- Membres du groupe de rôles de gestionnaire de découverte ne peut pas afficher les alertes, car aucun des rôles affectés accordent des autorisations pour afficher les alertes à partir de n’importe quelle catégorie de l’alerte.
+
+Ce modèle (en fonction des autorisations RBAC) vous permet de déterminer les alertes qui peuvent être visualisés (et gérées) par les utilisateurs dans des rôles spécifiques dans votre organisation. 
+
+Le tableau suivant répertorie les rôles qui sont nécessaires pour afficher les alertes de 6 différentes catégories de l’alerte. La première colonne dans les tableaux répertorie tous les rôles de centre de conformité & sécurité.  Une coche indique qu’un utilisateur qui est affecté à ce rôle peut afficher des alertes à partir de la catégorie d’alerte correspondante répertorié dans la ligne supérieure.
+
+|<br/>|Gouvernance des données|Protection contre la perte de données|Flux de messagerie|Autorisations|Gestion des menaces|Autres | 
+|:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
+|Journaux d’audit <br/> |         ||         |         |         |         |
+|Gestion des incidents <br/>|         |         |         |         |         |         |
+|Administrateur de conformité<br/>|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| ![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Recherche de conformité<br/>|         |         |         |         |         |         |
+|Gestion des appareils<br/>|         |         |         |         |         |         |
+|Gestion de destruction<br/>|         |         |         |         |         |         |
+|Gestion de la conformité DLP<br/>|         |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |
+|Exporter<br/>|         |         |         |         |         |         |
+|Conservation<br/>|         |         |         |         |         |         |
+|Gérer les alertes<br/>|         |         |         |         |         |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Configuration de l’organisation|         |         |         |         |         |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Aperçu <br/>|         |         |         |         |         |         |
+|Gestion des enregistrements <br/>|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
+|Gestion de la rétention <br/>| ![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
+|Révision  <br/>|         |         |         |         |         |         |
+|Déchiffrement RMS<br/>|         |         |         |         |         |         |
+|Gestion des rôles<br/>|         |         |         |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |
+|Recherche et Purge<br/>|         |         |         |         |         |         |
+|Administrateur de sécurité<br/>||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| | ![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| ![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Lecteur de sécurité<br/>|         |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| | ![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| ![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
+|Affichage d’Assurance de service<br/>|         |         |         |         |         |         |
+|Surveillance administrateur de révision<br/>|         |         |         |         |         |         |
+|Journaux d’Audit affichage seul<br/>|         |         |         |         |         |         |
+|Gestion des périphériques affichage seul<br/>|         |         |         |         |         |         |
+|Gestion de la conformité DLP affichage seul<br/>|         |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |
+|Affichage seul gérer les alertes<br/>|         |         |         |         |         |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Afficher uniquement les destinataires<br/>|         |         |  ![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)       |         ||         |
+|Gestion des enregistrements affichage seul<br/>|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
+|Gestion de la rétention d’affichage seul<br/>|![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
+|         |         |         |         |         |         |
+
+**Conseil :** Pour afficher les rôles qui sont assignés à chacun des groupes de rôles par défaut, exécutez les commandes suivantes dans la sécurité & PowerShell du centre de conformité : 
+
+```
+$RoleGroups = Get-RoleGroup
+
+$RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
+```
+Vous pouvez également afficher les rôles attribués à un groupe de rôles dans le centre de conformité de & sécurité. Accédez à la page **autorisations** , cliquez sur un groupe de rôles. Les rôles attribués sont répertoriés dans la page mobile.
+
+
 ## <a name="managing-alerts"></a>Gestion des alertes
 
 Une fois que les alertes ont été générés et affichés sur la page **Afficher les alertes** de sécurité &amp; centre de conformité, vous pouvez trier, examiner et les résoudre. Voici certaines tâches que vous pouvez effectuer pour gérer les alertes. 
@@ -164,17 +221,17 @@ Une fois que les alertes ont été générés et affichés sur la page **Affiche
     
 ## <a name="viewing-cloud-app-security-alerts"></a>Affichage des alertes de sécurité des applications dans le nuage
   
-Les alertes qui sont déclenchées par les stratégies de sécurité d’application Office 365 nuage sont maintenant affichées dans la page **Afficher les alertes** de la sécurité et le centre de conformité. Cela inclut les alertes qui sont déclenchées par les stratégies d’activité et les alertes qui sont déclenchées par des stratégies de détection des anomalies dans Office 365 Cloud Application Security. Cela signifie que vous pouvez afficher toutes les alertes de sécurité et centre de conformité. Notez que Office 365 Cloud application sécurité n’est disponible pour les organisations avec un abonnement à Office 365 entreprise E5 ou Office 365 des G5 des administrations US. Pour plus d’informations, voir [Vue d’ensemble d’Office 365 Cloud Application Security](office-365-cas-overview.md).
+Les alertes qui sont déclenchées par les stratégies de sécurité d’application Office 365 dans le Cloud sont affichent dans la page **Afficher les alertes** dans le centre de conformité de & sécurité. Cela inclut les alertes qui sont déclenchées par les stratégies d’activité et les alertes qui sont déclenchées par des stratégies de détection des anomalies dans Office 365 Cloud Application Security. Cela signifie que vous pouvez afficher toutes les alertes dans le centre de conformité de & sécurité. Notez que Office 365 Cloud application sécurité n’est disponible pour les organisations avec un abonnement à Office 365 entreprise E5 ou Office 365 des G5 des administrations US. Pour plus d’informations, voir [Vue d’ensemble d’Office 365 Cloud Application Security](office-365-cas-overview.md).
 
-En outre, les organisations qui ont Microsoft Cloud Application Security dans le cadre d’une mobilité d’entreprise + l’abonnement E5 de sécurité ou en tant que service autonome peut également afficher des alertes de sécurité d’application Cloud qui sont liées aux services de sécurité et les applications Office 365 & Centre de conformité.
+En outre, les organisations qui ont Microsoft Cloud Application Security dans le cadre d’une mobilité d’entreprise + l’abonnement E5 de sécurité ou en tant que service autonome peuvent également afficher les alertes de sécurité d’application Cloud liés aux applications Office 365 et les services dans le & de sécurité Centre de conformité.
 
-Pour afficher uniquement les alertes de sécurité des applications dans le nuage dans la sécurité et le centre de conformité, utilisez le filtre de la **Source** et sélectionnez **Sécurité d’application dans le nuage**.
+Pour afficher uniquement les alertes de sécurité des applications dans le nuage dans le centre de conformité de & sécurité, utilisez le filtre de la **Source** et sélectionnez **Sécurité d’application dans le nuage**.
 
 ![Utilisez le filtre de la Source pour afficher uniquement les alertes de sécurité des applications dans le nuage](media/FilterCASAlerts.png)
 
-Semblable à une alerte déclenchée par une stratégie de l’alerte de sécurité et le centre de conformité, vous pouvez cliquer sur une alerte de sécurité des applications dans le nuage pour afficher une page mobile avec plus d’informations sur l’alerte. Le message d’alerte inclut un lien pour afficher les détails et gérer l’alerte dans le portail de sécurité des applications dans le nuage et un lien vers la stratégie de sécurité des applications dans le nuage correspondante qui a déclenché l’alerte. Consultez la rubrique [révision et effectuer une opération sur les alertes de sécurité d’application Office 365 dans le nuage](review-office-365-cas-alerts.md).
+Semblable à une alerte déclenchée par un & de sécurité Stratégie de l’alerte de centre de conformité, vous pouvez cliquer sur une alerte de sécurité des applications dans le nuage pour afficher une page mobile avec plus d’informations sur l’alerte. Le message d’alerte inclut un lien pour afficher les détails et gérer l’alerte dans le portail de sécurité des applications dans le nuage et un lien vers la stratégie de sécurité des applications dans le nuage correspondante qui a déclenché l’alerte. Consultez la rubrique [révision et effectuer une opération sur les alertes de sécurité d’application Office 365 dans le nuage](review-office-365-cas-alerts.md).
 
 ![Détails de l’alerte contiennent des liens vers le portail de sécurité des applications dans le nuage](media/CASAlertDetail.png)
 
 > [!IMPORTANT]
-> Modification du statut d’une alerte de sécurité des applications dans le Cloud dans la sécurité et le centre de conformité ne sont pas mettre à jour l’état de résolution de l’alerte même dans le portail de sécurité des applications dans le nuage. Par exemple, si vous activez l’état de l’alerte comme **résolu** dans la sécurité et le centre de conformité, l’état de l’alerte dans le portail de sécurité des applications dans le nuage est inchangée. Pour résoudre ou faire disparaître une alerte de sécurité des applications dans le nuage, gérer l’alerte dans le portail de sécurité des applications dans le nuage.
+> Modification de l’état d’une alerte de sécurité d’application Cloud dans le centre de conformité de & sécurité ne sont pas mettre à jour l’état de résolution de l’alerte même dans le portail de sécurité des applications dans le nuage. Par exemple, si vous activez l’état de l’alerte comme **résolu** dans le centre de conformité de & sécurité, l’état de l’alerte dans le portail de sécurité des applications dans le nuage est inchangée. Pour résoudre ou faire disparaître une alerte de sécurité des applications dans le nuage, gérer l’alerte dans le portail de sécurité des applications dans le nuage.
