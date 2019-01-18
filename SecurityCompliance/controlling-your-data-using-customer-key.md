@@ -1,5 +1,5 @@
 ---
-title: Contrôler vos données dans Office 365 à l'aide de la clé client
+title: Contrôle de vos données dans Office 365 à l'aide de la Clé client.
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: f2cd475a-e592-46cf-80a3-1bfb0fa17697
 description: Découvrez comment configurer la clé client pour Office 365 pour Exchange Online, Skype pour les entreprises, SharePoint Online et OneDrive for Business. Avec la clé client, vous contrôler les clés de chiffrement de votre organisation, puis configurez Office 365 pour les utiliser pour chiffrer vos données au repos dans les centres de données de Microsoft.
-ms.openlocfilehash: 3eeccd03b89aa5a79ceba536d3f13c7a881b6ca7
-ms.sourcegitcommit: ef0bb05a0cf7974ae5083c7551ce3fe4ab7a9544
+ms.openlocfilehash: c4a59af49efad3bb8539b6c83b9ad9fd1c2d1f43
+ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965608"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723251"
 ---
-# <a name="controlling-your-data-in-office-365-using-customer-key"></a>Contrôler vos données dans Office 365 à l'aide de la clé client
+# <a name="controlling-your-data-in-office-365-using-customer-key"></a>Contrôle de vos données dans Office 365 à l'aide de la Clé client.
 
 Avec la clé client, vous contrôler les clés de chiffrement de votre organisation, puis configurez Office 365 pour les utiliser pour chiffrer vos données au repos dans les centres de données de Microsoft. Données au repos comprennent des données à partir d’Exchange Online et Skype pour les entreprises qui est stocké dans les boîtes aux lettres et les fichiers qui sont stockés dans SharePoint Online et OneDrive for Business.
   
@@ -54,7 +54,7 @@ Vous allez exécuter la plupart de ces tâches en vous connectant à distance Po
     
 - [Pour soumettre une demande pour activer la clé client pour Office 365](controlling-your-data-using-customer-key.md#FastTrack)
     
-    Une fois que vous avez créé les deux nouveaux abonnements Azure, vous devez envoyer la demande d’offre de clé de client appropriée en effectuant un formulaire web qui est hébergé dans le portail Microsoft FastTrack. L’équipe FastTrack ne fournit pas d’assistance avec la clé client. Office utilise simplement le portail FastTrack pour vous permettre d’envoyer le formulaire et pour suivre les offres pertinentes pour la clé client.
+    Une fois que vous avez créé les deux nouveaux abonnements Azure, vous devez envoyer la demande d’offre de clé de client appropriée en effectuant un formulaire web qui est hébergé dans le portail Microsoft FastTrack. **FastTrack l’équipe ne fournit pas d’assistance avec la clé client. Office utilise simplement le portail FastTrack pour vous permettre d’envoyer le formulaire et pour suivre les offres pertinentes pour la clé client**.
   
 Une fois que vous avez soumis une offre de la clé client, Microsoft passe en revue votre demande et vous avertit que vous pouvez passer avec les autres tâches de configuration. Ce processus peut prendre jusqu'à cinq jours ouvrés.
     

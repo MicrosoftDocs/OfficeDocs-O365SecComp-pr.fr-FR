@@ -13,19 +13,19 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilisez cette rubrique pour en savoir plus sur les privilèges accéder à la gestion dans Office 365
-ms.openlocfilehash: 5056c19acb03b2486cc84fe085ffd6c2814007dc
-ms.sourcegitcommit: a07b91723bae9ecee2cb092bfbc5b208b30b11a1
+ms.openlocfilehash: f3cd5fb263fe3bb83d60a7938f0e22dc38f199e3
+ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "25793549"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723231"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Privilèges d’accès gestion dans Office 365
 
 > [!IMPORTANT]
 > Cette rubrique traite des instructions de déploiement et de configuration pour les fonctionnalités uniquement actuellement disponibles dans Office 365 E5 et références de conformité avancées.
 
-Un accès privilégié gestion permet de contrôle d’accès granulaire sur les tâches d’administration privilégié dans Office 365.  Il permet de protéger votre organisation contre les violations qui peuvent utiliser des comptes d’administration privilégié existants avec accès permanent à des données sensibles ou l’accès aux paramètres de configuration critique. Après avoir activé la gestion de l’accès privilégié, les utilisateurs devront demander l’accès juste-à-temps pour effectuer des tâches avec des privilèges élevés et privilégiés via un flux de travail d’approbation qui est hautement et de temps. Ainsi, les utilisateurs juste suffisamment-accès pour effectuer la tâche en cours, sans risque d’exposition des données sensibles ou des paramètres de configuration critique. Activation de la gestion des accès privilégié dans Office 365 permettra à votre organisation de fonctionner avec des privilèges zéro permanent et fournir une couche de protection contre les vulnérabilités résultant en raison de cet accès administratif permanent. 
+Un accès privilégié gestion permet de contrôle d’accès granulaire sur les tâches d’administration privilégié dans Office 365. Il permet de protéger votre organisation contre les violations qui peuvent utiliser des comptes d’administration privilégié existants avec accès permanent à des données sensibles ou l’accès aux paramètres de configuration critique. Après avoir activé la gestion de l’accès privilégié, les utilisateurs devront demander l’accès juste-à-temps pour effectuer des tâches avec des privilèges élevés et privilégiés via un flux de travail d’approbation qui est hautement et de temps. Ainsi, les utilisateurs juste suffisamment-accès pour effectuer la tâche en cours, sans risque d’exposition des données sensibles ou des paramètres de configuration critique. Activation de la gestion des accès privilégié dans Office 365 permettra à votre organisation de fonctionner avec des privilèges zéro permanent et fournir une couche de protection contre les vulnérabilités résultant en raison de cet accès administratif permanent. 
 
 ## <a name="layers-of-protection"></a>Couches de protection
 
@@ -57,7 +57,7 @@ Lorsque vous configurez une stratégie d’accès privilégié via le centre d�
 
 ### <a name="step-3-access-approval"></a>Étape 3 : Approbation d’accès
 
-Une demande d’approbation est générée et le groupe d’approbation est averti par courrier électronique de la demande en attente. Si l’approbation est accordée, la demande d’accès privilégié est traitée comme une approbation et la tâche est prête à être terminé. Si la demande est refusée, bloc et tâche aucun accès n’est accordé à la reqeustor. Le demandeur sera averti de l’approbation de la demande ou de refus via le message électronique.
+Une demande d’approbation est générée et le groupe d’approbation est averti par courrier électronique de la demande en attente. Si l’approbation est accordée, la demande d’accès privilégié est traitée comme une approbation et la tâche est prête à être terminé. Si la demande est refusée, tâche est bloquée et aucun accès n’est accordé à la reqeustor. Le demandeur sera averti de l’approbation de la demande ou de refus via le message électronique.
 
 ![Étape 3 : approbation d’accès](media/pam-step3-access-approval.jpg)
 
@@ -67,13 +67,13 @@ Pour les demandes approuvées, la tâche est traitée par l’instance d’exéc
 
 ![Étape 4 : traitement de l’accès](media/pam-step4-access-processing.jpg)
 
-## <a name="frequently-asked-questions"></a>Forum aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 ### <a name="what-skus-do-i-need-to-use-privileged-access-in-office-365"></a>Quelles versions clientes ai-je besoin pour utiliser un accès privilégié dans Office 365 ?
 Un accès privilégié gestion n’est actuellement disponible pour les clients avec Office 365 E5 et références de conformité avancées.
 
 ### <a name="when-will-privileged-access-be-available-for-office-365-workloads-beyond-exchange"></a>Lorsqu’un accès privilégié sera disponible pour des charges de travail Office 365 au-delà Exchange ?
-Nous prévoyons de proposer cette fonctionnalité dans les autres charges de travail Office 365 bientôt. Lorsque nous sommes prêts à partager une chronologie, il sera disponible par le biais de la feuille de route d’Office 365.
+Nous prévoyons de proposer cette fonctionnalité dans les autres charges de travail Office 365 bientôt. Lorsque nous sommes prêts à partager une chronologie, il sera disponible par le biais de la [Feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
 
 ### <a name="my-organization-needs-more-than-30-privileged-access-polices-will-this-limit-be-increased"></a>Stratégies de besoins de mon organisation plus de 30 accès privilégié, cette limite augmentera ?
 
@@ -83,4 +83,4 @@ Nous comptons augmenter la limite actuelle de 30 stratégies d’accès privilé
 Non, vous devez disposer du rôle de gestion des rôles Exchange attribué à des comptes de gérer un accès privilégié dans Office 365. Toutefois, le rôle d’administrateur Global inclut ce rôle par défaut et peut être utilisé pour gérer un accès privilégié si vous ne souhaitez pas configurer le rôle de gestion de rôle comme une autorisation compte autonome. Les utilisateurs qui sont inclus dans le groupe d’un approbateurs n’avez pas besoin être un administrateur Global ou avoir le rôle de gestion des rôles affecté à examiner et approuver les demandes. 
 
 ### <a name="how-is-privileged-access-management-in-office-365-related-to-customer-lockbox"></a>Quelle est la gestion des accès privilégié dans Office 365 liés à la zone de sécurité client ?
-[Zone de sécurité client](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2) permet à un niveau de contrôle d’accès pour les organisations pour l’accès aux données par leur fournisseur de services, par exemple, Microsoft. Un accès privilégié gestion dans Office 365 permet de contrôle d’accès granulaire au sein d’une organisation pour toutes les tâches Office 365 privilégié.
+[Zone de sécurité client](https://docs.microsoft.com/office365/admin/manage/customer-lockbox-requests) permet à un niveau de contrôle d’accès pour les organisations pour l’accès aux données par leur fournisseur de services, par exemple, Microsoft. Un accès privilégié gestion dans Office 365 permet de contrôle d’accès granulaire au sein d’une organisation pour toutes les tâches Office 365 privilégié.
