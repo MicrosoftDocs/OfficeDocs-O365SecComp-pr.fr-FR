@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Vous pouvez utiliser des règles de flux de messagerie (également appelées règles de transport) pour identifier les messages qui circulent dans votre organisation Office 365 et agir sur ceux-ci.
-ms.openlocfilehash: 841a88f7074ce469643630cf29e0674db8fb88b6
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: b6bd5f0510c8a9e5f5cc4679dce669b6da50f5e8
+ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026611"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723241"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Règles de flux de messagerie (règles de transport) dans Exchange Online Protection
 
@@ -32,7 +32,7 @@ Pour mettre en œuvre des stratégies de messagerie spécifiques à l'aide de r�
   
 - [Utilisez des règles de flux de messagerie pour analyser les pièces jointes des messages dans Office 365.](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
     
-- [Configurez le chiffrement dans Office 365 pour entreprises](https://support.office.com/article/e86fc991-0161-4f01-9c1c-d25e87733d06)
+- [Configurer le chiffrement dans Office 365 Entreprise](https://support.office.com/article/e86fc991-0161-4f01-9c1c-d25e87733d06)
     
 - [Organization-wide message disclaimers, signatures, footers, or headers in Office 365](http://technet.microsoft.com/library/29ac61c2-77f1-4071-b14e-8cc64e3e76ba.aspx)
     
@@ -54,7 +54,7 @@ Une règle de flux de messagerie est constituée de conditions, d'exceptions, d'
   
 - **Conditions** Identifient les messages auxquels que vous souhaitez appliquer les actions. Certaines conditions examinent les champs d'en-tête de message (par exemple, les champs À, De ou Cc). D'autres examinent les propriétés des messages (par exemple l'objet, le corps, les pièces jointes, la taille ou la classification du message). La plupart des conditions font appel à un opérateur de comparaison (par exemple, « égal à », « différent de » ou « contient ») ainsi qu'à une valeur de concordance que vous devez spécifier. S'il n'y a ni conditions ni d'exceptions, la règle s'applique à tous les messages. 
     
-    Pour plus d’informations sur la messagerie de conditions de règle flux dans Exchange Online Protection, voir [Mail flow conditions et les exceptions (prédicats) dans Exchange Online Protection](http://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx).
+    Pour plus d’informations sur les conditions de règle de flux de messagerie dans Exchange Online Protection, consultez la rubrique [exceptions (prédicats) et conditions de règle de flux de messagerie dans Exchange Online.](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
     
 - **Exceptions** Identifient éventuellement les messages auxquels les actions ne doivent pas s'appliquer. Les identificateurs de message disponibles dans les conditions le sont également dans les exceptions. Les exceptions ont la priorité sur les conditions et empêchent l'application d'actions à un message, même s'il remplit toutes les conditions configurées. 
     
