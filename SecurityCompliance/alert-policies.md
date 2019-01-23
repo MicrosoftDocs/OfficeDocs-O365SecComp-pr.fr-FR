@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Créer des stratégies de l’alerte de sécurité Office 365 &amp; centre de conformité à surveiller les menaces potentielles, la perte de données et problème d’autorisations. Ensuite, vous pouvez afficher et gérer les alertes sont générées lorsque les utilisateurs effectuent des activités qui correspondent aux conditions d’une stratégie de l’alerte.
-ms.openlocfilehash: 6bdbf9c4c352bf16fd1a7b5c9f7b0af7eb4fadfd
-ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
+ms.openlocfilehash: 28ea842c74f2d3d232218e582d3de31f3841284e
+ms.sourcegitcommit: a1d8174240eb88b51af3a1ba26d715292fe08c53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28328140"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29426029"
 ---
 # <a name="alert-policies-in-the-office-365-security-amp-compliance-center"></a>Stratégies de sécurité Office 365 d’alerte &amp; centre de conformité
 
@@ -34,11 +34,11 @@ Voici une vue d’ensemble rapide de travail de stratégies comment l’alerte e
   
 ![Vue d’ensemble du travail de stratégies comment l’alerte](media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
   
-1. Un administrateur de votre organisation crée, configure et Active une stratégie de l’alerte à l’aide de la page **stratégies des alertes** de sécurité &amp; centre de conformité. Vous pouvez également créer des stratégies des alertes à l’aide de l’applet de commande **New-ProtectionAlert** dans PowerShell. 
+1. Un administrateur de votre organisation crée, configure et Active une stratégie de l’alerte à l’aide de la page de **stratégies de l’alerte** dans le centre de conformité de & sécurité. Vous pouvez également créer des stratégies des alertes à l’aide de l’applet de commande **New-ProtectionAlert** dans PowerShell. Pour créer des stratégies de l’alerte, vous devez affecter le rôle de gestion des alertes dans le centre de conformité de & sécurité ou de la Configuration de l’organisation.
     
 2. Un utilisateur effectue une activité qui correspond aux conditions d’une stratégie de l’alerte. Dans le cas des attaques de programmes malveillants, messages électroniques infectés envoyés aux utilisateurs de votre organisation déclenche une alerte.
     
-3. Office 365 génère une alerte qui s’affiche dans la page **Afficher les alertes** de sécurité &amp; centre de conformité. En outre, si les notifications par courrier électronique sont activées pour la stratégie de l’alerte, Office 365 envoie une notification à une liste de destinataires. 
+3. Office 365 génère une alerte qui s’affiche dans la page **Afficher les alertes** de sécurité &amp; centre de conformité. En outre, si les notifications par courrier électronique sont activées pour la stratégie de l’alerte, Office 365 envoie une notification à une liste de destinataires. Les alertes que l’administrateur ou autres utilisateurs peuvent voir dans la page **Afficher les alertes** est déterminée par les rôles attribués à l’utilisateur. Pour plus d’informations, consultez la section [autorisations RBAC requises pour afficher les alertes](#rbac-permissions-required-to-view-alerts) .
     
 4. Un administrateur qui gère les alertes de sécurité &amp; centre de conformité. Gestion des alertes se compose de l’affectation d’un état d’alerte pour aider à suivre et gérer toute enquête.
     

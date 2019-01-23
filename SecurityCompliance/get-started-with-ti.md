@@ -3,7 +3,7 @@ title: Prise en main d’Office 365 Threat Intelligence
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/7/2018
+ms.date: 01/22/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 description: Découvrez les menaces Office 365 et la mise en route.
-ms.openlocfilehash: b30543c7338bcd581bd0596f1c71d42c48559a59
-ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
+ms.openlocfilehash: d2b3d245a0d3d26e26052468313da8db7df5ea9b
+ms.sourcegitcommit: a1d8174240eb88b51af3a1ba26d715292fe08c53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "25769893"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29426039"
 ---
 # <a name="get-started-with-office-365-threat-intelligence"></a>Prise en main d’Office 365 Threat Intelligence
 
@@ -46,7 +46,7 @@ Pour afficher et utiliser ce tableau de bord, dans la sécurité &amp; centre de
   
 ### <a name="threat-explorer"></a>Threat Explorer
 
-Utilisez l’Explorateur de menace pour analyser les menaces, voir le volume des attaques au fil du temps et analyser les données par les familles de menaces et infrastructure intrus. L’Explorateur de menace est le point de départ pour flux de travail de n’importe quel analyste de la sécurité enquête.
+Utilisez l’Explorateur de menace (également appelée Explorateur de solutions) pour analyser les menaces, voir le volume des attaques au fil du temps et analyser les données par les familles de menaces et infrastructure intrus. Explorateur de menace est le point de départ pour flux de travail de n’importe quel analyste de la sécurité enquête.
   
 ![Explorer des menaces](media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
   
@@ -54,7 +54,7 @@ Pour afficher et utiliser ce rapport, de la sécurité &amp; centre de conformit
   
  ### <a name="incidents"></a>Incidents
 
-Utilisez la liste des Incidents pour afficher une liste de d’incidents de sécurité de vol. Incidents sont utilisés pour effectuer le suivi des menaces telles que des messages suspects et plus approfondies investigation et correction.
+Utilisez la liste Incidents (également appelée enquêtes) pour afficher une liste de d’incidents de sécurité de vol. Incidents sont utilisés pour effectuer le suivi des menaces telles que des messages suspects et plus approfondies investigation et correction.
   
 ![Liste des Incidents en cours dans Office 365 menaces](media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
   
@@ -70,19 +70,21 @@ Dans le cadre de l’offre Office 365 menaces, analystes en sécurité pouvant c
   
 ## <a name="how-do-we-get-office-365-threat-intelligence"></a>Comment faire pour que sur les menaces Office 365 ?
 
-Menaces d’Office 365 est inclus dans Office 365 entreprise E5. Si votre organisation utilise un autre abonnement Office 365 pour entreprises, telles que Office 365 entreprise E3, menaces Office 365 peut être acheté comme module complémentaire. (En tant qu’administrateur global, dans le centre d’administration Office 365, choisissez **facturation** \> **abonnements Add**.) Pour plus d’informations sur les options de plan, consultez la rubrique [Office 365 Platform Service Description : Office 365 sécurité &amp; centre de conformité](https://technet.microsoft.com/en-us/library/dn933793.aspx) et [acheter ou modifier un module complémentaire pour Office 365 pour entreprises](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6).
+Menaces d’Office 365 est inclus dans Office 365 entreprise E5. 
+
+> [!TIP]
+> Si votre organisation a un abonnement à Office 365 qui n’inclut pas d’informations sur les menaces Office 365, vous pouvez acheter potentiellement menaces comme module complémentaire. Pour plus d’informations sur les options de plan, consultez la rubrique [Office 365 Platform Service Description : Office 365 sécurité &amp; centre de conformité](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) et [acheter ou modifier un module complémentaire pour Office 365 pour entreprises](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on).
   
 1. En tant qu’administrateur global Office 365, accédez à [https://portal.office.com](https://portal.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école pour Office 365. 
     
 2. Choisissez **Admin** \> **facturation** pour voir ce que comprend votre abonnement actuel. 
+
+    - Si vous voyez **Office 365 entreprise E5**, votre organisation a menaces Office 365. 
+    - Si vous voyez un autre abonnement, telles que **Office 365 entreprise E3** ou **Office 365 entreprise E1**, envisagez d’ajouter des informations sur les menaces. (Pour ce faire, choisissez **+ Ajouter abonnement**).
     
-3. Si vous voyez **Office 365 entreprise E5**, votre organisation a menaces Office 365.
+3. Dans le Centre d'administration Office 365, sélectionnez **Utilisateurs** \> **Utilisateurs actifs**.
     
-    Si vous voyez un autre abonnement, telles que **Office 365 entreprise E3** ou **Office 365 entreprise E1**, vous pouvez ajouter des informations sur les menaces Office 365. Pour ce faire, cliquez sur **+ Ajouter abonnement**.
-    
-4. Dans le Centre d'administration Office 365, sélectionnez **Utilisateurs** \> **Utilisateurs actifs**.
-    
-5. Attribuer des licences Office 365 menaces aux utilisateurs. Pour plus d’informations sur l’attribution de licences, voir [attribuer des licences aux utilisateurs dans Office 365 pour entreprises](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
+5. Attribution de licences de menaces Office 365 à tous les utilisateurs actifs. (Seuls les utilisateurs qui possèdent une licence pour les menaces apparaîtront dans les rapports, tels que de l’Explorateur de solutions.)
     
 6. Attribuer des rôles aux personnes de votre organisation travaillent avec les informations sur les menaces Office 365. Voir [donner aux utilisateurs l’accès à l’Office 365 Security &amp; centre de conformité](grant-access-to-the-security-and-compliance-center.md)et consultez le tableau suivant :
     
@@ -91,8 +93,8 @@ Menaces d’Office 365 est inclus dans Office 365 entreprise E5. Si votre organi
 |**Pour effectuer cette activité...** <br/> |**Vous devez disposer d’un de ces rôles** <br/> |
 |Utilisez le tableau de bord de menace (ou le nouveau [tableau de bord de sécurité](security-dashboard.md))  <br/> Afficher des informations sur les menaces récentes ou en cours  <br/> |Administrateur Global d’Office 365  <br/> Administrateur de sécurité (affecté de la sécurité &amp; centre de conformité)  <br/> Lecteur de sécurité (affecté de la sécurité &amp; centre de conformité)  <br/> |
 |Utilisez l’Explorateur de menace (également appelé Explorateur de solutions)  <br/> Analyser les menaces  <br/> |Administrateur Global d’Office 365  <br/> Administrateur de sécurité (affecté de la sécurité &amp; centre de conformité)  <br/> Lecteur de sécurité (affecté de la sécurité &amp; centre de conformité)  <br/> |
-|Affichage des Incidents  <br/> Ajouter des messages électroniques à un incident  <br/> |Administrateur Global d’Office 365  <br/> Administrateur de sécurité (affecté de la sécurité &amp; centre de conformité)  <br/> Lecteur de sécurité (affecté de la sécurité &amp; centre de conformité)  <br/> |
-|Déclencher des actions de courrier électronique dans un incident  <br/> Rechercher et supprimer des messages suspects  <br/> |Administrateur général Office 365 ou administrateur de sécurité  <br/> Rechercher et vider (affecté de la sécurité &amp; centre de conformité)  <br/> |
+|Affichage des Incidents (également appelés enquêtes) <br/> Ajouter des messages électroniques à un incident  <br/> |Administrateur Global d’Office 365  <br/> Administrateur de sécurité (affecté de la sécurité &amp; centre de conformité)  <br/> Lecteur de sécurité (affecté de la sécurité &amp; centre de conformité)  <br/> |
+|Déclencher des actions de courrier électronique dans un incident  <br/> Rechercher et supprimer des messages suspects  <br/> |Administrateur général Office 365 ou administrateur de sécurité  <br/> Un des rôles ci-dessus et recherche et Purge (affecté de la sécurité &amp; centre de conformité)  <br/> |
 |Intégrer Office 365 Threat Intelligence à Windows Defender - Protection avancée contre les menaces  <br/> Intégrer des informations sur les menaces Office 365 avec un serveur SIEM  <br/> |Administrateur Global d’Office 365  <br/> Administrateur de sécurité (affecté de la sécurité &amp; centre de conformité)  <br/> Rôle approprié affectée dans les applications supplémentaires (comme portail contre les menaces avancées Windows Defender ou un serveur SIEM)  <br/> |
    
 Pour plus d’informations sur les rôles, groupes de rôles et autorisations, voir [des autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md).
