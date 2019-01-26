@@ -5,16 +5,16 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: reference
-ms.date: 12/03/2018
+ms.date: 01/25/2019
 ms.service: o365-administration
 localization_priority: Normal
-description: Voir ce qui est publié en 2017 Office 365 nuage sécurité des applications
-ms.openlocfilehash: f30df4313b40007440aa37c9cc9aa17e16e5208f
-ms.sourcegitcommit: ce61b1ea9df1a69c6eef06a4de1f644ecb9b941d
+description: Voir quel publiée en 2017 Office 365 nuage sécurité des applications
+ms.openlocfilehash: a5f17f626876298d1551c9ca4439448c536a4d62
+ms.sourcegitcommit: 38ba284b793b080b77d9c9d94ae5a0b6c1ba689b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "27135077"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570180"
 ---
 # <a name="office-365-cloud-app-security-updates-during-2017"></a>Mises à jour de sécurité des applications dans le nuage Office 365 pendant 2017
     
@@ -91,9 +91,8 @@ ms.locfileid: "27135077"
 ## <a name="related-topics"></a>Voir aussi
 
 [Contenu de l’aide sur le nuage application sécurité Office 365](office-365-cas-help.md)
+
+[Nouveautés de la sécurité d’application Office 365 dans le nuage](new-in-office-365-cas.md)
   
 [Activités d’utilisation après avoir déployé la sécurité des applications cloud Office 365](utilization-activities-for-ocas.md)
-  
-[Autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md)
-  
 
