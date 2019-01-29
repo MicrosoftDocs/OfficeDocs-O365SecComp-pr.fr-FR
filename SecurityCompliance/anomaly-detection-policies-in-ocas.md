@@ -3,7 +3,7 @@ title: Stratégies de détection des anomalies dans la sécurité des applicatio
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 01/28/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Stratégies de détection des anomalies dans Office 365 Cloud application sécurité utilisent algorithmes intégrés pour découvrir des problèmes potentiels. Vous devez disposer de stratégie de détection au moins une anomalie, vous pouvez régler (lors de sa création) à l’aide de filtres. '
-ms.openlocfilehash: 62e2db3ba46f41bce5c5c4fab9e6c685838d68e8
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 7a1cb795531df168f0a5c425e7555ae6b1412d2b
+ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015075"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29604415"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Stratégies de détection des anomalies dans la sécurité des applications cloud Office 365
 
@@ -28,13 +28,13 @@ Gestion de la sécurité Office 365 avancée est désormais sécurité d’appli
 |:-----|:-----|:-----|:-----|
 |[Commencer à évaluer](office-365-cas-overview.md) <br/> |[Commencer à planifier](get-ready-for-office-365-cas.md) <br/> |Vous êtes ici !  <br/> [Étape suivante](integrate-your-siem-server-with-office-365-cas.md) <br/> |[Commencer à utiliser](utilization-activities-for-ocas.md) <br/> |
    
-Commençant par [Microsoft Cloud Application Security version 116](https://docs.microsoft.com/cloud-app-security/release-notes), Office 365 Cloud Application Security inclut plusieurs anomalies prédéfinis des stratégies de détection (« l’emploi ») qui incluent des utilisateurs analytique comportement entité (UEBA) et apprentissage (ML) de l’ordinateur.
+Commençant par [Microsoft Cloud Application Security version 116](new-in-office-365-cas-2018.md#office-365-cloud-app-security-release-116-3), Office 365 Cloud Application Security inclut plusieurs anomalies prédéfinis des stratégies de détection (« l’emploi ») qui incluent des utilisateurs analytique comportement entité (UEBA) et apprentissage (ML) de l’ordinateur.
   
 ![Pour afficher vos stratégies de détection des anomalies, choisissez contrôle \> stratégies.](media/9663baa5-98bf-45e0-9458-6e572b43ec72.png)
   
 Ces stratégies de détection des anomalies fournissent des résultats de l’exécution en fournissant des détections immédiates, ciblage de nombreuses anomalies de comportement entre vos utilisateurs et les ordinateurs et périphériques connectés à votre réseau. En outre, les nouvelles stratégies exposent plus de données à partir du moteur de détection de sécurité des applications dans le nuage pour vous aider à accélérer le processus d’enquête et contiennent les menaces en cours.
   
-En tant qu’un [administrateur global ou administrateur de la sécurité](permissions-in-the-security-and-compliance-center.md), vous pouvez consulter et si nécessaire, modifier les stratégies par défaut qui sont disponibles avec Office 365 Cloud Application Security.
+En tant qu’un administrateur général Office 365 ou un administrateur de sécurité, vous pouvez consulter et si nécessaire, modifier les stratégies par défaut qui sont disponibles avec Office 365 Cloud Application Security.
   
  > [!IMPORTANT]
 > Il existe une période de formation initiale de sept (7) jours au cours de laquelle les alertes de comportement anormal ne sont pas déclenchés. L’algorithme de détection des anomalies est optimisée pour réduire le nombre de faux positifs. 
@@ -51,23 +51,13 @@ Vérifiez que :
     
 ## <a name="view-your-anomaly-detection-policies"></a>Afficher vos stratégies de détection des anomalies
 
-1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école. 
+1. En tant qu’un administrateur global ou administrateur de sécurité, accédez au portail de sécurité des applications dans le nuage ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) et se connecter.<br>Vous accédez à la page de stratégies de sécurité des applications Office 365 dans le nuage.
     
-2. Dans la sécurité &amp; centre de conformité, sélectionnez **alertes** \> **Gestion avancée des alertes**.
-    
-3. Cliquez sur **Aller à la sécurité d’application Office 365 dans le nuage**.
-    
-    Vous accédez à la page de stratégies de sécurité des applications Office 365 dans le nuage.
-    
-4. Dans la liste **TYPE** , sélectionnez la **stratégie de détection des anomalies**.
-    
-    Votre organisation (ou) par défaut existant des stratégies de détection des anomalies sont affichés.
-    
-    ![Plusieurs stratégies de détection des anomalies sont disponibles par défaut dans Office 365 Cloud Application Security](media/2e0ee770-787a-4d4a-bea8-389dc765d4c6.png)
+2. Dans la liste **TYPE** , sélectionnez la **stratégie de détection des anomalies**.<br>Votre organisation (ou) par défaut existant des stratégies de détection des anomalies sont affichés.<br>![Stratégies de détection des anomalies dans la sécurité des applications cloud Office 365](media/2e0ee770-787a-4d4a-bea8-389dc765d4c6.png)
   
-5. Sélectionnez une stratégie pour consulter ou modifier ses paramètres.
+3. Sélectionnez une stratégie pour consulter ou modifier ses paramètres.
     
-6. Choisissez **Update** (Mettre à jour) pour enregistrer vos modifications. 
+4. Choisissez **Update** (Mettre à jour) pour enregistrer vos modifications. 
     
 ## <a name="learn-more-about-anomaly-detection-policies"></a>Pour plus d’informations sur les stratégies de détection des anomalies
 
@@ -92,27 +82,19 @@ Le tableau suivant décrit les stratégies de détection des anomalies par défa
 
 Comme les alertes qui se vous pouvez trier ces alertes rapidement et déterminer ceux à gérer tout d’abord. Ayant le contexte d’une alerte vous permet de voir une image plus grande et de déterminer si un élément malveillant en effet se produit. Utilisez la procédure suivante pour commencer l’exploration d’une alerte :
   
-1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école. 
+1. En tant qu’un administrateur global ou administrateur de sécurité, accédez au portail de sécurité des applications dans le nuage ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) et se connecter. 
     
-2. Dans la sécurité &amp; centre de conformité, sélectionnez **alertes** \> **Gestion avancée des alertes**.
+2. Choisissez les **alertes** pour afficher vos alertes. 
     
-3. Cliquez sur **Aller à la sécurité d’application Office 365 dans le nuage**.
+3. Pour obtenir le contexte d’une alerte, procédez comme suit :
     
-4. Choisissez les **alertes** pour afficher vos alertes. 
+4. Cliquez sur **examiner** \> **le journal d’activité**.
     
-5. Pour obtenir le contexte d’une alerte, procédez comme suit :
-    
-1. Cliquez sur **examiner** \> **le journal d’activité**.
-    
-2. Sélectionnez un élément, tel qu’un utilisateur ou l’adresse IP. Le bac d’alimentation insights pertinents s’ouvre.
-    
-    ![Dans le journal d’activité, vous pouvez rechercher une adresse IP.](media/32a727c5-e406-4fe2-9443-c1a7fb6628fc.png)
+5. Sélectionnez un élément, tel qu’un utilisateur ou l’adresse IP. Le bac d’alimentation insights pertinents s’ouvre.<br>![Dans le journal d’activité, vous pouvez rechercher une adresse IP.](media/32a727c5-e406-4fe2-9443-c1a7fb6628fc.png)
   
-3. Dans le bac d’alimentation insights approprié, cliquez sur une commande disponible, par exemple une icône dans la section **Afficher les éléments similaires** . 
-    
-    ![Dans le bac d’alimentation insights pertinent, vous pouvez cliquer sur l’icône d’horloge pour voir les activités effectuées dans les 48 heures d’une activité sélectionnée](media/c6c96aa0-98e5-4205-8873-45f8d6fd0843.png)
+6. Dans le bac d’alimentation insights approprié, cliquez sur une commande disponible, par exemple une icône dans la section **Afficher les éléments similaires** .<br> ![Cliquez sur l’icône d’horloge pour voir les activités effectuées dans les 48 heures d’une activité sélectionnée](media/c6c96aa0-98e5-4205-8873-45f8d6fd0843.png)
   
-4. Mieux sur l’élément sélectionné en continuant à Explorer les détails de cet élément.
+7. Mieux sur l’élément sélectionné en continuant à Explorer les détails de cet élément.
     
 Une alerte sur plusieurs échecs de connexion peut-être être en effet suspecte et peut indiquer une attaque potentielle contre les attaques en force. Toutefois, une telle alerte peut également être un problème de configuration d’application, à l’origine de l’alerte d’un faible positif true. Si vous voyez une alerte plusieurs Échec de connexions avec d’autres activités suspectes, il est une probabilité qu’un compte est compromis. Par exemple, supposons qu’une alerte plusieurs Échec de la connexion est suivie d’activité à partir d’une adresse IP de TOR et l’activité de déplacement impossible, les deux indicateurs forts de compromis. Vous pouvez même voir que le même utilisateur effectué une activité de téléchargement en masse, qui est souvent un indicateur de l’intrus effectue d’exfiltration de données. Il s’agit de choses comme que vous pouvez Explorer dans Office 365 Cloud application sécurité pour afficher et trier vos alertes et effectuer une action si nécessaire.
   
