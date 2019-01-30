@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à seulement quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou seulement au contenu remplissant certaines conditions
-ms.openlocfilehash: a6d185484f83ca93c99153d584af6841397dbc2f
-ms.sourcegitcommit: ec465771a846de103a365fcb36cb7a7c0a5744c1
+ms.openlocfilehash: 46b7cd133551d8a0756361fd209e93ab9e721678
+ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380614"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29607166"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -262,9 +262,33 @@ Certaines organisations doivent respecter des règles définies par des organism
   
 Après qu’une stratégie a été verrouillée, personne ne peut la désactiver ou en supprimer des emplacements. De plus, il n’est pas possible de modifier ni de supprimer le contenu soumis à la stratégie pendant la période de rétention. Une fois que la stratégie est verrouillée, vous pouvez seulement y ajouter des emplacements ou la prolonger. Une stratégie verrouillée peut être accrue ou étendue, mais pas réduite ni désactivée.
   
-Par conséquent, avant de verrouiller une stratégie de rétention, il est **essentiel** de comprendre les exigences de conformité de votre organisation. **Ne verrouillez pas une stratégie** tant que vous n’êtes pas certain qu’elle répond exactement à vos besoins.
+Par conséquent, avant de verrouiller une stratégie de rétention, il est **essentiel** de comprendre les exigences de conformité de votre organisation. **Ne verrouillez pas une stratégie** tant que vous n’êtes pas certain qu’elle réponde exactement à vos besoins.
+
+### <a name="lock-a-retention-policy-by-using-powershell"></a>Verrouiller une stratégie de rétention à l’aide de PowerShell
   
-Seule l’utilisation de PowerShell vous permet de verrouiller une stratégie de rétention. Utilisez le paramètre `RestrictiveRetention` de la cmdlet `New-RetentionCompliancePolicy` ou `Set-RetentionCompliancePolicy`. Pour obtenir plus d’informations sur PowerShell, consultez la section [Trouver les cmdlets PowerShell pour les stratégies de rétention](#find-the-powershell-cmdlets-for-retention-policies) indiquée ci-après.
+Vous pouvez verrouiller une stratégie de rétention à l’aide de PowerShell.
+
+Tout d’abord,[se connecter au Centre de Conformité et Sécurité Office 365 PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771).
+
+Ensuite, pour afficher une liste de vos stratégies de rétention et rechercher le nom de la stratégie que vous souhaitez verrouiller, exécutez `Get-RetentionCompliancePolicy`.
+
+![Liste des stratégies de rétention dans PowerShell](media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
+
+Enfin, pour placer un Verrouillage de Conservation sur la stratégie de rétention, exécutez `Set-RetentionCompliancePolicy` avec le`RestrictiveRetention` paramètre défini sur true, par exemple :
+
+`Set-RetentionCompliancePolicy -Identity “<Name of Policy>” – RestrictiveRetention $true`
+
+![Paramètre RestrictiveRetention dans PowerShell](media/retention-policy-preservation-lock-restrictiveretention.PNG)
+
+Après avoir exécuté cette applet de commande, vous voyez une invite de confirmation. Sélectionnez **Oui partout**.
+
+![Invite à confirmer que vous souhaitez verrouiller une stratégie de rétention dans PowerShell](media/retention-policy-preservation-lock-confirmation-prompt.PNG)
+
+Enfin, pour placer un Verrouillage de Conservation sur la stratégie de rétention. Si vous exécutez `Get-RetentionCompliancePolicy`le`RestrictiveRetention` paramètre défini sur true, par exemple:
+
+`Get-RetentionCompliancePolicy -Identity “<Name of Policy>” |Fl`
+
+![Stratégie verrouillée avec tous les paramètres affichés dans PowerShell](media/retention-policy-preservation-lock-locked-policy.PNG)
   
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Principes de rétention et priorité
 
