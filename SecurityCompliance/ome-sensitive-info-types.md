@@ -3,7 +3,7 @@ title: Nouvelle stratégie de chiffrement de messages Office 365 pour les inform
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/9/2019
+ms.date: 1/16/2019
 ROBOTS: NOINDEX, NOFOLLOW
 audience: ITPro
 ms.topic: article
@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Résumé : Appliqué automatiquement la stratégie de chiffrement de messages Office 365 pour les types d’informations sensibles présentant à tous les clients.'
-ms.openlocfilehash: a8cd132af2b1429698ea92779a3c54559e2b13e2
-ms.sourcegitcommit: b936a2fd4b7f7a7099b96cc29580ed55bdb8bf2b
+ms.openlocfilehash: f83bf0fe572586b3becf2dd53395e611bdaaea24
+ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "27789452"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29614378"
 ---
 # <a name="office-365-message-encryption-policy-for-sensitive-information"></a>Stratégie de chiffrement de messages Office 365 pour les informations sensibles
 
-Nous allons créer une nouvelle stratégie automatique dans les clients Office 365 qui seront appliqueront chiffrement de messages Office 365 pour tous les messages électroniques qui contiennent des informations sensibles et qui sont envoyées à l’extérieur de votre organisation. Cette nouvelle règle de flux de messagerie Exchange sera automatiquement créée dans votre organisation cliente Office 365 afin que votre organisation est protégée par défaut.
+Pour un groupe de clients, en fonction de leur taille de l’organisation et la complexité des flux de messagerie, nous effectuons un déploiement lente d’une nouvelle stratégie automatique dans les clients Office 365 qui s’appliqueront chiffrement de messages Office 365 pour les messages électroniques contenant certains types de critiques plus d’informations. Nous sommes le test avec un petit groupe de clients. Cette stratégie sera déployée pas toutes les organisations et des considérations comme taille de l’organisation et la complexité du flux de messagerie sera utilisée pour déterminer le droit à ce déploiement. Si votre organisation est activée pour ce déploiement, vous recevrez une notification dans le centre de messages Office 365 pour vous avertir de la date à laquelle cette stratégie automatique sera créée et vous aurez au moins un avis de 30 jours et l’option Annuler l’abonnement. Si vous ne souhaitez pas attendre que Microsoft créer cette stratégie et que vous souhaitez faire vous-même, vous pouvez créer cette stratégie automatique à l’aide de règles de flux de messagerie Exchange.
 
 ## <a name="when-to-expect-the-update-for-your-tenant"></a>Quand la mise à jour pour votre client
 
@@ -52,7 +52,7 @@ Il est inutile de mettre à jour ou modifier les paramètres de configuration d�
 
 ## <a name="how-will-this-change-be-represented-in-the-audit-log"></a>Comment ce changement est représenté dans le journal d’Audit ?
 
-Cette activité est analysée et est disponible pour les clients.  L’opération est 'New-TransportRule' et un extrait d’un exemple d’entrée d’audit à partir de la recherche dans le centre de conformité et de sécurité du journal d’Audit est ci-dessous :
+Cette activité est analysée et est disponible pour les clients.  L’opération est 'New-TransportRule' et un extrait d’un exemple d’entrée d’audit à partir de la recherche du journal d’Audit de sécurité & centre de conformité est ci-dessous :
 
 |     |
 | --- |

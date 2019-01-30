@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 description: Lorsque Exchange Online Protection analyse un message entrant, il insère l'en-tête **X-Forefront-Antispam-Report** dans chaque message.
-ms.openlocfilehash: 39cac8e1406bd4f7505ae4bc626b8c7e78f88101
-ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
+ms.openlocfilehash: d887fea94bac6177dde69fac9586d7d562ef50de
+ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26255889"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29614458"
 ---
 # <a name="anti-spam-message-headers"></a>En-têtes de messages anti-courrier indésirable
 
@@ -54,7 +54,7 @@ Après avoir accédé aux informations d'un en-tête de message, recherchez **X-
 |SFV:NSPM|Le message a été marqué comme n'étant pas un courrier indésirable et a été envoyé aux destinataires appropriés.|
 |H: [helostring]|Chaîne HELO ou EHLO du serveur de messagerie de connexion.|
 |PTR: [ReverseDNS]|Enregistrement PTR, ou enregistrement de pointeur, de l'adresse IP d'envoi, également appelé adresse DNS inverse.|
-|SFTY|Le message a été identifié comme hameçonnage et est également marqué avec une des valeurs suivantes : <br/>• 9.1 : valeur par défaut. Le message contient une URL hameçonnage, peut contenir des autres contenus phishing ou ont été marqué comme hameçonnage par un autre filtre de messagerie comme une version locale d’Exchange Server avant de relayer le message vers Office 365. <br/>• 9.11 : échec du message l’usurpation d’identité contre les contrôles où dans le domaine : en-tête est identique, ou s’aligne sur ou fait partie de la même organisation que le domaine de réception. <br/>• 9.21 : échec du message l’usurpation d’identité contre les vérifications et dans le domaine : en-tête n’authentifie pas. Utilisée conjointement avec CompAuth (voir les résultats de l’authentification). <br/>• 9.22 : identique à 9.21, sauf que l’utilisateur dispose d’un expéditeur fiable qui a été remplacé. <br/>• 9.23 : identique à 9.22, sauf que l’organisation a un expéditeur autorisé ou un domaine qui a été remplacé. <br/>• 9,24 : identique à 9.23, sauf que l’utilisateur dispose d’une règle de flux de messagerie Exchange qui a été remplacée.|
+|SFTY|Le message a été identifié comme hameçonnage et est également marqué avec une des valeurs suivantes : <br/>• 9.1 : valeur par défaut. Le message contient une URL hameçonnage, peut contenir des autres contenus phishing ou ont été marqué comme hameçonnage par un autre filtre de messagerie comme une version locale d’Exchange Server avant de relayer le message vers Office 365. <br/>• 9.11 : échec du message l’usurpation d’identité contre les contrôles où dans le domaine : en-tête est identique, ou s’aligne sur ou fait partie de la même organisation que le domaine de réception. Cela indique une info-bulle de sécurité d’usurpation interne à l’organisation sera ajoutée au message. <br/>• 9.19 : message d’échec de vérifications de l’emprunt d’identité de domaine dans lequel le domaine tente d’emprunter l’identité d’un domaine détenus par le récepteur, ou un domaine personnalisé est protégé par la stratégie Anti-hameçonnage. Cela indique un Conseil de sécurité de l’emprunt d’identité sera ajouté au message, si activé par le biais de la stratégie Anti-Phishig. <br/>• 9.20 : message d’échec de vérifications de l’emprunt d’identité d’utilisateur où l’utilisateur expéditeur tente d’emprunter l’identité d’un utilisateur au sein de l’organisation des récepteurs, ou un utilisateur personnalisée est protégé par la stratégie Anti-hameçonnage. Cela indique un Conseil de sécurité de l’emprunt d’identité sera ajouté au message, si activé par le biais de la stratégie Anti-Phishig. <br/>• 9.21 : échec du message l’usurpation d’identité contre les vérifications et dans le domaine : en-tête n’authentifie pas et provient d’un domaine externe. Utilisée conjointement avec CompAuth (voir les résultats de l’authentification). <br/>• 9.22 : identique à 9.21, sauf que l’utilisateur dispose d’un expéditeur fiable qui a été remplacé. <br/>• 9.23 : identique à 9.22, sauf que l’organisation a un expéditeur autorisé ou un domaine qui a été remplacé. <br/>• 9,24 : identique à 9.23, sauf que l’utilisateur dispose d’une règle de flux de messagerie Exchange qui a été remplacée.|
 |X-CustomSpam: [ASFOption]|Le message correspondait à un option de filtrage avancé du courrier indésirable. Par exemple, **X-CustomSpam : liens vers des sites distants d’Image** indique que l’option **Image des liens vers des sites distants** ASF a été mis en correspondance. Pour savoir comment le texte d’en-tête X est ajouté pour chaque option ASF spécifique, voir [options de filtrage avancé du courrier indésirable](advanced-spam-filtering-asf-options.md).|
    
 ## <a name="x-microsoft-antispam-message-header-fields"></a>Champs d'en-tête de message X-Microsoft-Antispam

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 'Résumé : Cet article décrit comment utiliser DKIM (DomainKeys Identified Mail) avec Office 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.'
-ms.openlocfilehash: 1bafae2a1e1e5de390fd0b8d81c1cf2513092d8e
-ms.sourcegitcommit: 4f776e1cf8872ce90e632d4305cb727d31754767
+ms.openlocfilehash: b5b28bef60148749e3ea6ac2619358fbc425e36c
+ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "27263913"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29614448"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé dans Office 365
 
@@ -88,7 +88,10 @@ Pour chaque domaine auquel vous souhaitez ajouter une signature DKIM dans le sys
 Utilisez le format suivant pour les enregistrements CNAME.
 
 > [!IMPORTANT]
-> Si vous êtes un de nos clients GCC, la méthode domainGUID ne fonctionnera pas pour vous ! Veillez à utiliser la valeur correcte MX pour votre domaine. Utilisation : `selector2-<domain-key>._domainkey.<initialDomain>` pour les exemples ci-dessous. Utilisez [cet article](https://docs.microsoft.com/en-us/office365/admin/get-help-with-domains/information-for-dns-records?view=o365-worldwide) pour trouver l’enregistrement MX nécessaire pour votre valeur de *clé de domaine* .
+> Si vous êtes un de nos clients GCC élevé, nous calculer différemment _domainGuid_ ! Au lieu de la recherche de l’enregistrement MX pour votre _initialDomain_ calculer _domainGuid_, au lieu de cela nous calculer directement depuis le domaine personnalisé. Par exemple, si votre domaine personnalisé est « contoso.com » votre domainGuid devient « contoso-com », les périodes sont remplacés par un tiret.
+
+Par conséquent, quel que soit l’enregistrement MX vos points initialDomain, vous allez toujours utiliser la méthode ci-dessus pour calculer le domainGuid à utiliser dans vos enregistrements CNAME.
+
   
 ```
 Host name:          selector1._domainkey
