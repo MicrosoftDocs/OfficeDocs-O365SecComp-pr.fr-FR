@@ -6,8 +6,7 @@
 ## [Office 365 Secure Score](office-365-secure-score.md)
 ## [Autorisations dans le centre de conformité et de sécurité](permissions-in-the-security-and-compliance-center.md)
 ## [Octroi de l’accès au Centre de conformité et de sécurité aux utilisateurs](grant-access-to-the-security-and-compliance-center.md)
-## [Vue d’ensemble du Tableau de bord de sécurité](security-dashboard.md)
-## [Installer le complément de surveillance pour la version d’Outlook pour ordinateur de bureau](install-the-supervision-add-in-for-outlook-desktop.md)
+## [Vue d’ensemble du tableau de bord de sécurité](security-dashboard.md)
 ## [Utiliser votre abonnement Azure Active Directory gratuit](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Planifier la sécurité et la conformité dans Office 365](plan-for-security-and-compliance.md)
 # Protéger l’accès aux données et services
@@ -16,6 +15,7 @@
 # Protéger les informations
 ## [Étiquettes de niveau de confidentialité](sensitivity-labels.md)
 ### [Restreindre l’accès au contenu à l’aide du chiffrement dans les étiquettes de niveau de confidentialité](encryption-sensitivity-labels.md)
+### [Appliquer automatiquement une étiquette de confidentialité au contenu](apply_sensitivity_label_automatically.md)
 ## [Éviter les pertes de données (DLP)](data-loss-prevention-policies.md)
 ### [Visionner une présentation étendue de la DLP](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## Configurer le DLP
@@ -38,6 +38,15 @@
 ### [Créer un type d’informations sensibles personnalisé dans le centre de conformité et de sécurité Office 365 PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 ### [Créer un dictionnaire de mots clés](create-a-keyword-dictionary.md)
 ### [Création d’une empreinte numérique de document](document-fingerprinting.md) 
+# Gestion des enregistrements
+## [Stratégies de rétention](retention-policies.md)
+## [Étiquettes de rétention](labels.md)
+## [Utiliser Exchange Online et le centre de sécurité et conformité pour se conformer à la règle SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+## [Révisions avant destruction](disposition-reviews.md)
+## [Rétentions fondées sur des événements](event-driven-retention.md)
+## [Automatiser la rétention fondée sur les événements](automate-event-driven-retention.md)
+## [Gestionnaire de plan de fichiers](file-plan-manager.md)
+## [Création et publication en bloc d’étiquettes de rétention à l’aide de PowerShell](https://docs.microsoft.com/fr-FR/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 # Gérer la gouvernance des données        
 ## [Importer des données](importing-pst-files-to-office-365.md)
 ### [Utiliser le chargement réseau pour importer des fichiers PST](use-network-upload-to-import-pst-files.md)
@@ -55,10 +64,14 @@
 ## Conservation de données
 ### [Stratégies de rétention](retention-policies.md)
 ### [Étiquettes de rétention](labels.md)
-### [Création et publication en bloc d’étiquettes de rétention à l’aide de PowerShell](https://docs.microsoft.com/fr-FR/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Utiliser Exchange Online et le centre de sécurité et conformité pour se conformer à la règle SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
 ### [Révisions avant destruction](disposition-reviews.md)
-### [Rétentions basées sur des événements](event-driven-retention.md)
+### [Rétentions fondées sur des événements](event-driven-retention.md)
+### [Automatiser la rétention fondée sur les événements](automate-event-driven-retention.md)
 ### [Gestionnaire de plan de fichiers](file-plan-manager.md)
+### [Création et publication en bloc d’étiquettes de rétention à l’aide de PowerShell](https://docs.microsoft.com/fr-FR/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+## [Superviser les communications](supervision-policies.md)
+### [Configurer des stratégies de surveillance pour votre organisation](configure-supervision-policies.md)
 ## [Gestion des boîtes aux lettres inactives](inactive-mailboxes-in-office-365.md)
 ### [Créer et gérer des boîtes aux lettres inactives](create-and-manage-inactive-mailboxes.md)
 ### [Modifier la durée de conservation pour une boîte aux lettres inactive](change-the-hold-duration-for-an-inactive-mailbox.md)
@@ -68,9 +81,6 @@
 ## Surveiller la gouvernance des données
 ### [Afficher les rapports de gouvernance des données](view-the-data-governance-reports.md)
 ### [Afficher l’activité des étiquettes pour les documents](view-label-activity-for-documents.md)
-### [Configurer des stratégies de surveillance pour votre organisation](configure-supervision-policies.md)
-### [Installer le complément Surveillance pour la version de bureau d’Outlook](install-the-supervision-add-in-for-outlook-desktop.md)
-### [Rapports de surveillance](supervision-reports.md)
 ## Plus d’informations sur la gouvernance des données
 ### [Regarder des vidéos de l’équipe de gouvernance des données Microsoft](https://go.microsoft.com/fwlink/?linkid=867039)
 # [Se protéger contre les menaces](protect-against-threats.md)
@@ -196,6 +206,67 @@
 ### [Supprimer des éléments en attente dans le dossier Éléments récupérables des boîtes aux lettres basées sur le cloud](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
 ### [Augmenter le quota des éléments récupérables pour les boîtes aux lettres placées en conservation](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
 ### [Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md)
+
+## [Advanced eDiscovery (préversion) dans Microsoft 365](compliance20/overview-ediscovery-20.md)
+### [Notes de publication](compliance20/release-notes-ediscovery20.md)
+### [Créer un cas](compliance20/create-new-ediscovery-case.md)
+
+### [Utiliser des consignataires](compliance20/managing-custodians.md)
+#### [Ajouter des consignataires à un cas](compliance20/add-custodians-to-case.md)
+#### [Gérer des consignataires](compliance20/manage-new-custodians.md)
+#### [Afficher l’activité des consignataires](compliance20/view-custodian-activity.md)
+
+### [Utiliser des communications](compliance20/managing-custodian-communications.md)
+#### [Créer une notification de conservation](compliance20/create-hold-notification.md)
+#### [Utiliser l’éditeur de communications](compliance20/using-communications-editor.md)
+#### [Gérer les notifications de conservation](compliance20/manage-hold-notification.md)
+#### [Modifier une notification de conservation](compliance20/edit-hold-notification.md)
+#### [Accuser réception de notifications de conservation](compliance20/acknowledge-hold-notification.md)
+
+### [Gérer des conservations](compliance20/managing-holds.md)
+
+### [Corriger des erreurs de traitement](compliance20/processing-data-for-case.md)
+#### [Indexation avancée des données des consignataires](compliance20/indexing-custodian-data.md)
+#### [Correction d’erreur lors du traitement des données](compliance20/error-remediation.md)
+
+### [Collecter des données pour un cas](compliance20/collecting-data-for-ediscovery.md)
+#### [Créer une recherche pour collecter des données](compliance20/create-search-to-collect-data.md)
+#### [Créer des requêtes de recherche](compliance20/building-search-queries.md)
+#### [Statistiques de recherche](compliance20/search-statistics.md)
+#### [Ajouter des résultats de recherche à un ensemble de travail](compliance20/add-data-to-working-set.md)
+
+### [Examiner les données d’un cas](compliance20/reviewing-data-in-working-set.md)
+#### [Gérer des ensembles de travail](compliance20/managing-working-sets.md)
+#### [Gérer les ensembles de charge](compliance20/manage-load-sets.md)
+#### [Charger les données ne provenant pas d’Office 365 dans un ensemble de travail](compliance20/load-non-office365-data.md)
+#### [Interroger les données d’un ensemble de travail](compliance20/working-set-search.md)
+#### [Afficher des documents dans un ensemble de travail](compliance20/annotating-and-redacting-documents.md)
+#### [Baliser des documents dans un ensemble de travail](compliance20/tagging-documents.md)
+
+### [Analyser les données d’un cas](compliance20/analyzing-data-in-working-set.md)
+#### [Détecter des quasi-duplicatas](compliance20/near-duplicates.md)
+#### [Threading de messagerie](compliance20/email-threading.md)
+#### [Thèmes](compliance20/themes.md)
+#### [Utiliser le module Pertinence pour analyser des données](compliance20/using-relevance.md)
+
+### [Exportation des données d’un cas](compliance20/exporting-data-ediscover20.md)
+#### [Exporter des documents à partir d’un ensemble de travail](compliance20/export-documents-from-working-set.md)
+#### [Télécharger l’exportation des travaux](compliance20/download-export-jobs.md)
+
+### [Gérer des travaux](compliance20/managing-jobs-ediscovery20.md)
+
+### [Configurer des paramètres de cas](compliance20/configuring-case-settings-ediscovery20.md)
+#### [Fermer ou supprimer un cas](compliance20/close-or-delete-case.md)
+#### [Ajouter ou supprimer des membres à partir d’un cas](compliance20/add-remove-members.md)
+#### [Configurer les paramètres de recherche et d’analyse](compliance20/configure-search-analytics-settings.md)
+
+### Référence pour Advanced eDiscovery (préversion)
+#### [Limites de la recherche](compliance20/search-limits-ediscovery20.md)
+#### [Limites d’indexation](compliance20/indexing-limits-ediscovery20.md)
+#### [Exporter des limites](compliance20/export-limits-ediscovery20.md)
+#### [Télécharger des limites](compliance20/download-limits-ediscovery20.md)
+#### [Types de fichiers pris en charge](compliance20/supported-filetypes-ediscovery20.md)
+#### [Champs de métadonnées de document](compliance20/document-metadata-fields.md)
 
 ## [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
 ### [Prise en main d’Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
