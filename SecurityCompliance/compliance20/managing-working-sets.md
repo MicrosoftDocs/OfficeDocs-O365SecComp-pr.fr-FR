@@ -1,5 +1,5 @@
 ---
-title: Gestion d’utilisation de jeux d’eDiscovery avancée (Preview)
+title: Gérer les ensembles de travail d’eDiscovery avancée (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3341236f568177480615d4572bb25407f6c3ad92
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 04078141e9a515cf7a3c34aa353759039cc00283
+ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607685"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29694830"
 ---
-# <a name="managing-working-sets-in-advanced-ediscovery-preview"></a>Gestion d’utilisation de jeux d’eDiscovery avancée (Preview)  
+# <a name="manage-working-sets-in-advanced-ediscovery-preview"></a>Gérer les ensembles de travail d’eDiscovery avancée (Preview)  
 
 Contenu à paraître prochainement.
 
