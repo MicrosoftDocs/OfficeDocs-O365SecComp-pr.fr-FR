@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à seulement quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou seulement au contenu remplissant certaines conditions
-ms.openlocfilehash: 46b7cd133551d8a0756361fd209e93ab9e721678
-ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
+ms.openlocfilehash: 61d5a79d46a35cf4a58fb3def8ae124f7025fd6d
+ms.sourcegitcommit: 71922c3e427008d904e5eb6c1a6dc7330e666c8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607166"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690415"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -60,7 +60,7 @@ Vous créez et gérez des stratégies de rétention sur la page **Rétention** d
 
 Lorsque vous incluez un emplacement tel qu’un site ou une boîte aux lettres dans une stratégie de rétention, le contenu reste dans son emplacement d’origine. Les utilisateurs peuvent continuer à traiter leurs documents ou leurs e-mails comme si rien n’avait changé. Cependant, s’ils modifient ou suppriment le contenu inclus dans la stratégie, une copie du contenu tel qu’il était lorsque vous avez appliqué la stratégie est conservée.
   
-Pour les sites, une copie du contenu d’origine est conservée dans la bibliothèque de conservation et de préservation des documents lorsque les utilisateurs le modifient ou le suppriment ; pour la messagerie et les dossiers publics, la copie est conservée dans le dossier Éléments récupérables. Ces emplacements sécurisés et le contenu conservé ne sont pas visibles à la plupart des utilisateurs. Avec une stratégie de rétention, il n’est même pas nécessaire de savoir que le contenu est soumis à la stratégie.
+Concernant les sites, une copie du contenu d’origine est conservée dans la bibliothèque de conservation et de préservation des documents lorsque les utilisateurs le modifient ou le suppriment ; pour la messagerie et les dossiers publics, la copie est conservée dans le dossier Éléments récupérables. Ces emplacements sécurisés et le contenu conservé ne sont pas visibles à la plupart des utilisateurs. Avec une stratégie de rétention, il n’est même pas nécessaire de savoir que le contenu est soumis à la stratégie.
   
 Remarques :
   
@@ -70,7 +70,7 @@ Remarques :
     
 ### <a name="content-in-onedrive-accounts-and-sharepoint-sites"></a>Contenu des comptes OneDrive et des sites SharePoint
 
-Une stratégie de rétention est appliquée au niveau d’un site. Lorsque vous incluez un site SharePoint ou un compte OneDrive dans une stratégie de rétention, une bibliothèque de conservation et de préservation des documents est créée, le cas échéant. La plupart des utilisateurs ne peuvent pas visualiser cette bibliothèque, car elle n’est visible qu’aux administrateurs de collection de sites.
+Une stratégie de rétention est appliquée au niveau d’un site. Lorsque vous incluez un site SharePoint ou un compte OneDrive dans une stratégie de rétention, une bibliothèque de conservation et de préservation des documents est créée, le cas échéant.Vous pouvez afficher la bibliothèque sur les**contenus du Site**de la page du site de premier niveau de la collection. La plupart des utilisateurs ne peuvent pas visualiser cette bibliothèque, car elle n’est visible qu’aux administrateurs de collection de sites.
   
 Si une personne tente de modifier ou de supprimer le contenu dans un site qui est soumis à une stratégie de rétention, la stratégie vérifie d’abord si le contenu a été modifié depuis qu’elle a été appliquée. S’il s’agit du premier changement depuis l’application de la stratégie de rétention, celle-ci copie le contenu dans la bibliothèque de conservation et de préservation des documents, puis permet à la personne de modifier ou de supprimer le contenu d’origine. Notez que tout le contenu du site peut être copié dans la bibliothèque de conservation et de préservation des documents, même si le contenu ne correspond pas à la requête utilisée par la stratégie de rétention.
   
@@ -78,7 +78,7 @@ Ensuite, un travail du minuteur nettoie la bibliothèque de conservation et de p
   
 Le précédent s’applique au contenu qui existe lorsque la stratégie de rétention est appliquée. En outre, tout contenu qui est créé ou ajouté au site après avoir été inclus dans la stratégie sera conservé après la suppression. Toutefois, le nouveau contenu n’est pas copié dans la bibliothèque de conservation et de préservation des documents la première fois qu’il est modifié, uniquement lorsqu’il est supprimé. Pour conserver les versions de tous les fichiers, vous devez activer le contrôle de version (consultez la section ci-après sur le contrôle de version).
   
-Notez qu’un utilisateur reçoit un message d’erreur s’il tente de supprimer une bibliothèque, une liste, un dossier ou un site soumis à une stratégie de rétention. Un utilisateur peut supprimer un dossier s’il déplace ou supprime d’abord les fichiers du dossier en question qui sont soumis à la stratégie.
+Notez qu’un utilisateur reçoit un message d’erreur si un autre utilisateur tente de supprimer une bibliothèque, une liste, un dossier ou un site soumis à une stratégie de rétention. Un utilisateur peut supprimer un dossier si tout d’abord ils déplacent ou suppriment les fichiers dans le dossier qui sont soumis à la stratégie. Notez également que la bibliothèque de conservation est créée uniquement lorsque le premier élément doit être copié dans la bibliothèque-pas lorsque vous créez la stratégie de rétention. Par conséquent, pour tester votre stratégie, vous devez d’abord modifier ou supprimer un document dans un site soumis à la stratégie, puis accédez à la bibliothèque de conservation pour afficher la copie conservée.
   
 ![Diagramme du flux de rétention dans SharePoint et OneDrive](media/858702f8-5a09-4464-86d0-3b16fed800f3.png)
   
@@ -108,7 +108,7 @@ Lorsqu’une stratégie de rétention est affectée à une boîte aux lettres ou
     
 2. **Si l’élément n’est pas modifié ou supprimé** pendant la période de rétention, le même processus s’exécute régulièrement sur tous les dossiers dans la boîte aux lettres et identifie les éléments dont la période de rétention a expiré, et ces éléments sont supprimés définitivement dans les 14 jours suivant la fin de la période de rétention. Notez que le paramètre par défaut est de 14 jours, mais qu’il peut être configuré sur 30 jours. 
     
-## <a name="how-a-retention-policy-works-with-document-versions-in-a-site"></a>Fonctionnement d’une stratégie de rétention avec les versions d’un document dans un site
+## <a name="how-a-retention-policy-works-with-document-versions-in-a-site-collection"></a>Fonctionnement d’une stratégie de rétention avec les versions d’un document dans un site
 
 Le contrôle de version est une fonctionnalité de toutes les bibliothèques de documents dans SharePoint Online et OneDrive Entreprise. Par défaut, le contrôle de version conserve un minimum de cent versions majeures, même si vous pouvez augmenter cette limite. Pour obtenir plus d’informations, consultez l’article [Activer et configurer le contrôle de version pour une liste ou une bibliothèque](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
   
@@ -180,9 +180,9 @@ Vous pouvez facilement appliquer une stratégie de rétention à l’ensemble d�
 
 L’une des fonctionnalités les plus puissantes d’une stratégie de rétention est que celle-ci s’applique par défaut aux emplacements au sein d’Office 365, notamment :
   
-- Messagerie Exchange
+- Messagerie électronique Exchange
     
-- Sites SharePoint
+- Vue d’ensemble des collections de sites SharePoint
     
 - Comptes OneDrive
     
