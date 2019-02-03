@@ -1,5 +1,5 @@
 ---
-title: Accusé de réception des notifications de suspension
+title: Reconnaître des notifications d’une suspension
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 2ed2a30919332f7c301d3175350dfd23a66b1f3c
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 5ed3d214fe55df658faee6859d366637ef0fd37b
+ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607728"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29694930"
 ---
-# <a name="acknowledging-hold-notifications"></a><span data-ttu-id="c6223-102">Accusé de réception des notifications de suspension</span><span class="sxs-lookup"><span data-stu-id="c6223-102">Acknowledging hold notifications</span></span> 
+# <a name="acknowledge-a-hold-notification"></a><span data-ttu-id="9c9c4-102">Reconnaître une notification de suspension</span><span class="sxs-lookup"><span data-stu-id="9c9c4-102">Acknowledge a hold notification</span></span> 
 
-<span data-ttu-id="c6223-103">Contenu à paraître prochainement.</span><span class="sxs-lookup"><span data-stu-id="c6223-103">Content coming soon.</span></span>
+<span data-ttu-id="9c9c4-103">Contenu à paraître prochainement.</span><span class="sxs-lookup"><span data-stu-id="9c9c4-103">Content coming soon.</span></span>
