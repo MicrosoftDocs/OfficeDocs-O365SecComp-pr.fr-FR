@@ -13,18 +13,20 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Le Gestionnaire de conformité, disponible dans le Portail d’approbation de services de Microsoft, propose des outils pour suivre, implémenter et gérer les contrôles permettant à votre organisation de se conformer aux normes du secteur en matière de sécurité et de protection des données (par exemple, le RGPD, les normes ISO 27001 et 27018, la loi américaine HIPAA), quand elle utilise les services de cloud computing Microsoft, tels qu’Office 365 et Microsoft Azure. Le Gestionnaire de conformité permet à la personne responsable de la stratégie de protection des données et de la vie privée de votre organisation de gérer vos processus d’évaluation des risques et de conformité.
-ms.openlocfilehash: a8d26db2a28d5b022f20408caf418b23edd98167
-ms.sourcegitcommit: 6669b7aae26965145e85d9613d3091bf389f000b
+ms.openlocfilehash: 6f423ba29540bdc498c2725b9741dece2557e4be
+ms.sourcegitcommit: 25f1028643d8a20d17306e8b09cafea46eaf7a58
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "26618930"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "29666174"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Répondre aux exigences sur la protection des données et aux réglementations pendant l’utilisation des services de cloud computing Microsoft à l’aide du Gestionnaire de conformité
 
  *Le Gestionnaire de conformité n’est pas disponible dans Office 365 géré par 21Vianet, Office 365 Germany, Office 365 U.S. GCC High ou Office 365 Department of Defense.* 
   
-Le gestionnaire de conformité est un outil d’évaluation des risques des flux de travail disponible dans le [Portail d’approbation de services de Microsoft](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662). Il vous permet de suivre, d’affecter et de vérifier les activités de mise en conformité de votre organisation avec les réglementations liées aux services professionnels Microsoft et aux services de cloud computing Microsoft, tels que Microsoft Office 365, Microsoft Dynamics 365 et Microsoft Azure. Le gestionnaire de conformité :
+Le gestionnaire de conformité est un outil d’évaluation des risques des flux de travail disponible dans le [Portail d’approbation de services de Microsoft](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662). Il vous permet de suivre, d’affecter et de vérifier les activités de mise en conformité de votre organisation avec les réglementations liées aux services professionnels Microsoft et aux services de cloud computing Microsoft, tels que Microsoft Office 365, Microsoft Dynamics 365 et Microsoft Azure. 
+
+Gestionnaire de conformité :
   
 - Rassemble, d’une part, les informations détaillées fournies par Microsoft aux auditeurs et aux autorités de régulation dans le cadre des audits des services cloud de Microsoft menés par des tiers dans le but de vérifier le respect de différentes normes (par exemple, ISO 27001, ISO 27018 et NIST), et, d’autre part, les informations collectées en interne par Microsoft pour assurer sa conformité aux réglementations en vigueur (par exemple, la loi américaine HIPAA et le Règlement général sur la protection des données de l’UE, ou RGPD) en laissant votre organisation vérifier sa propre conformité avec ces normes et réglementations.
     
@@ -35,36 +37,17 @@ Le gestionnaire de conformité est un outil d’évaluation des risques des flux
 - Vous offre un référentiel sécurisé pour charger et gérer les preuves et autres artefacts liés à vos activités de conformité.
     
 - Génère des rapports détaillés dans Microsoft Excel qui documentent les activités de conformité effectuées par Microsoft et votre organisation, qui peuvent être fournis aux auditeurs, aux autorités de régulation et aux autres acteurs de la conformité.
+
+Pour une brève démonstration du Gestionnaire de conformité, regardez cette vidéo [Gestionnaire de conformité](https://www.youtube.com/watch?v=r1vs8NdSXKQ).
+
     
 > [!IMPORTANT]
 > Le Gestionnaire de conformité est un tableau de bord qui vous donne un aperçu de votre situation en matière de protection des données et de conformité, ainsi que des recommandations pour l’améliorer. Les actions du client fournies dans le Gestionnaire de conformité sont des recommandations. Il appartient à chaque organisation d’évaluer l’efficacité de ces recommandations dans leur cadre réglementaire avant de les implémenter. Les recommandations figurant dans le Gestionnaire de conformité ne peuvent en aucun cas garantir le respect des réglementations en vigueur.
+
     
 ## <a name="what-is-compliance-manager"></a>Qu’est-ce que le Gestionnaire de conformité ?
 
 Le Gestionnaire de conformité est un outil d’évaluation des risques des flux de travail conçu pour vous aider à gérer votre mise en conformité avec les réglementations dans le cadre du modèle de responsabilité partagée du cloud. Le Gestionnaire de conformité affiche sous forme de tableau de bord les normes, les réglementations et les évaluations qui contiennent des détails sur l’implémentation des contrôles Microsoft, les résultats de test, des conseils pour implémenter les contrôles du client et le numéro de suivi à saisir par votre organisation. Le Gestionnaire de conformité définit les contrôles d’évaluation des certifications, propose des conseils sur l’implémentation et le test des contrôles, attribue aux contrôles un score pondéré en fonction des risques, assure la gestion des accès en fonction des rôles et fournit un flux de travail d’affectation des actions de contrôle inaltérable pour suivre l’implémentation des contrôles, l’état des tests et la gestion des preuves. Le Gestionnaire de conformité optimise la charge de travail liée à la vérification de la conformité en permettant aux clients de regrouper de façon logique les évaluations et de tester les contrôles d’évaluation identiques ou associés, leur permettant ainsi de réduire les efforts déployés pour satisfaire plus efficacement aux exigences relatives aux contrôles identiques imposées par différentes certifications.
-  
-## <a name="using-search"></a>Utilisation de la recherche
-
-![Portail d’approbation de services – Champ d’entrée Recherche](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
-  
-Cliquez sur la loupe dans le coin supérieur droit de la page pour développer le champ d’entrée Recherche. Saisissez les mots que vous recherchez et appuyez sur Entrée. Le contrôle Recherche apparaît avec le mot recherché dans le champ d’entrée du volet de recherche, et les résultats de la recherche s’affichent en dessous.
-  
-Par défaut, le contrôle Recherche affiche des documents dans les résultats. Vous pouvez utiliser les listes déroulantes situées à côté de « Filtrer par » pour affiner la liste des documents affichés, ou pour ajouter ou supprimer des résultats sur la page. Vous pouvez utiliser plusieurs filtres d’attribut en même temps pour réduire le nombre de documents liés à des services cloud, des catégories de pratiques de conformité ou de sécurité, des régions du monde, ou des secteurs d’activité spécifiques. Cliquez sur le lien du document pour le télécharger.
-  
-![Portail d’approbation de services – Recherche de documents filtrée](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
-  
-Cliquez sur le lien Gestionnaire de conformité pour afficher les résultats de la recherche associés aux contrôles d’évaluation du Gestionnaire de conformité. Les résultats répertoriés affichent la date de création de l’évaluation, le nom du regroupement d’évaluations, le service cloud concerné, et si les contrôles sont gérés par Microsoft ou le client.
-  
-![Portail d’approbation de services – Recherche sur les contrôles du Gestionnaire de conformité](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
-  
-> [!NOTE]
-> Les rapports et les documents du Portail d’approbation de services peuvent être téléchargés dans les douze mois suivant leur publication ou jusqu’à ce qu’une nouvelle version du document soit disponible. 
- 
-## <a name="localization-support"></a>Prise en charge de localisation
-
-Le Portail d’approbation de services vous permet d’afficher le contenu de la page dans différentes langues. Pour modifier la langue de la page, cliquez sur l’icône du globe dans le coin inférieur gauche de la page et sélectionnez la langue de votre choix. 
-  
-![Portail d’approbation de services – Options de localisation du contenu](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
 ## <a name="assessments-in-compliance-manager"></a>Évaluations dans le Gestionnaire de conformité
 
@@ -690,6 +673,30 @@ Pour afficher les évaluations archivées :
 3. Cliquez sur le nom de l’évaluation que vous souhaitez consulter.
     
 Quand vous affichez une évaluation archivée, aucun contrôle habituellement modifiable (par exemple, Implémentation, Résultats de test) ne sera actif et le bouton **Documents gérés** ne sera pas affiché.
+
+## <a name="using-search"></a>Utilisation de la recherche
+
+![Portail d’approbation de services – Champ d’entrée Recherche](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
+  
+Cliquez sur la loupe dans le coin supérieur droit de la page pour développer le champ d’entrée Recherche. Saisissez les mots que vous recherchez et appuyez sur Entrée. Le contrôle Recherche apparaît avec le mot recherché dans le champ d’entrée du volet de recherche, et les résultats de la recherche s’affichent en dessous.
+  
+Par défaut, le contrôle Recherche affiche des documents dans les résultats. Vous pouvez utiliser les listes déroulantes situées à côté de « Filtrer par » pour affiner la liste des documents affichés, ou pour ajouter ou supprimer des résultats sur la page. Vous pouvez utiliser plusieurs filtres d’attribut en même temps pour réduire le nombre de documents liés à des services cloud, des catégories de pratiques de conformité ou de sécurité, des régions du monde, ou des secteurs d’activité spécifiques. Cliquez sur le lien du document pour le télécharger.
+  
+![Portail d’approbation de services – Recherche de documents filtrée](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+  
+Cliquez sur le lien Gestionnaire de conformité pour afficher les résultats de la recherche associés aux contrôles d’évaluation du Gestionnaire de conformité. Les résultats répertoriés affichent la date de création de l’évaluation, le nom du regroupement d’évaluations, le service cloud concerné, et si les contrôles sont gérés par Microsoft ou le client.
+  
+![Portail d’approbation de services – Recherche sur les contrôles du Gestionnaire de conformité](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+  
+> [!NOTE]
+> Les rapports et les documents du Portail d’approbation de services peuvent être téléchargés dans les douze mois suivant leur publication ou jusqu’à ce qu’une nouvelle version du document soit disponible. 
+ 
+## <a name="localization-support"></a>Prise en charge de localisation
+
+Le Portail d’approbation de services vous permet d’afficher le contenu de la page dans différentes langues. Pour modifier la langue de la page, cliquez sur l’icône du globe dans le coin inférieur gauche de la page et sélectionnez la langue de votre choix. 
+  
+![Portail d’approbation de services – Options de localisation du contenu](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+
 
 ## <a name="change-log-for-customer-managed-controls"></a>Journal des modifications des contrôles gérés par le client
 
