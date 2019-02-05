@@ -13,15 +13,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: 'Utilisez la sécurité pour Microsoft Office 365 et le centre de conformité pour la recherche dans le journal d’audit unifiée pour afficher l’activité utilisateur et l’administrateur de votre organisation Office 365. '
-ms.openlocfilehash: 95516cd88677955137e51401113844375cb1e082
-ms.sourcegitcommit: c34f1a0d560117153fc9a7b8da8994bc6fc53791
+description: 'Utilisez le & Office 365 sécurité Centre de conformité pour rechercher le journal d’audit unifiée pour afficher l’activité utilisateur et l’administrateur de votre organisation Office 365. '
+ms.openlocfilehash: 848dbbdeb8b7cd9abd664b5ac401f6afde31c1e1
+ms.sourcegitcommit: c40eee4ef3890056da58649e4617283b0b9d1673
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27118140"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735466"
 ---
-# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Recherche dans le journal d’audit de la sécurité pour Microsoft Office 365 et le centre de conformité
+# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Recherche dans le journal d’audit dans le centre de conformité de & sécurité pour Microsoft Office 365
 
 Vous devez trouver si un utilisateur affiché d’un document spécifique ou purgés un élément à partir de leur boîte aux lettres ? Si ce cas, vous pouvez utiliser la sécurité de 365 Office &amp; centre de conformité pour la recherche dans le journal d’audit unifiée pour afficher l’activité utilisateur et l’administrateur de votre organisation Office 365. Pourquoi un audit unifié se connecter ? Étant donné que vous pouvez rechercher les types suivants de l’activité utilisateur et d’administration d’Office 365 :
   
@@ -40,7 +40,7 @@ Vous devez trouver si un utilisateur affiché d’un document spécifique ou pur
     
 - Activité utilisateur et d’administration dans balancement
     
-- activités de découverte électronique dans la sécurité pour Microsoft Office 365 et le centre de conformité
+- activités de découverte électronique dans le centre de conformité de & sécurité pour Microsoft Office 365
     
 - Activité utilisateur et d’administration dans Power BI
     
@@ -107,7 +107,7 @@ Veillez à lire le journal d’audit des éléments suivants avant de commencer 
     |Prévention contre la perte de données  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Dynamics 365 CRM <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |eDiscovery  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-    |Exchange Online  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Exchange Online  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Microsoft Flow  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Forms  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Project  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
@@ -172,6 +172,9 @@ Voici le processus de recherche dans le journal d’audit dans Office 365.
     **fichier, dossier ou site** tapez tout ou partie d’un nom de fichier ou un dossier pour rechercher des activités liées au fichier du dossier qui contient le mot clé spécifié. Vous pouvez également spécifier une URL d’un fichier ou un dossier. Si vous utilisez une URL, assurez-vous que le type le chemin d’URL complète ou si vous tapez uniquement une partie de l’URL, n’incluez pas des caractères spéciaux ou des espaces. 
     
     Laissez cette zone vide de renvoi des entrées pour tous les fichiers et dossiers dans votre organisation.
+    
+    > [!TIP]
+    > Si vous recherchez toutes les activités liées à un **site**, ajoutez le caractère générique (\*) après l’URL pour renvoyer toutes les entrées de ce site ; par exemple, **»https://contoso-my.sharepoint.com/personal/* »**.
     
 5. Cliquez sur **Rechercher** pour lancer la recherche à l’aide de vos critères de recherche. 
     
@@ -400,7 +403,8 @@ Le tableau suivant répertorie les événements qui résultent de tâches d’ad
 |**Nom convivial**|**Operation**|**Description**|
 |:-----|:-----|:-----|
 |Ajout des agents utilisateurs exemptés  <br/> |ExemptUserAgentSet  <br/> |Un administrateur global ou SharePoint ajoute un agent utilisateur à la liste des agents utilisateurs exemptés dans le centre d’administration de SharePoint.  <br/> |
-|Administrateur de collection de site ajouté  <br/> |SiteCollectionAdminAdded  <br/> |Administrateur de collection de sites ou propriétaire ajoute une personne comme un administrateur de collection de sites pour un site. Administrateurs de collection de sites ont des autorisations Contrôle total pour la collection de sites et tous ses sous-sites.  <br/> |
+|Administrateur de collection de site ajouté  <br/> |SiteCollectionAdminAdded  <br/> |Administrateur de collection de sites ou propriétaire ajoute une personne comme un administrateur de collection de sites pour un site. Administrateurs de collection de sites ont des autorisations Contrôle total pour la collection de sites et tous ses sous-sites. Cette activité est également enregistrée lorsqu’un administrateur qui donne elle-même accès à un compte d’utilisateur OneDrive (par la modification du profil utilisateur dans le centre d’administration SharePoint ou [à l’aide du centre d’administration Office 365](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)).<br/> |
+|(aucun)  <br/> |SiteCollectionAdminRemoved <br/> |Administrateur de collection de sites ou propriétaire supprime une personne en tant qu’administrateur de collection de sites pour un site. Cette activité est également enregistrée lorsqu’un administrateur eux-mêmes supprime de la liste des administrateurs de collection de sites pour un compte d’utilisateur OneDrive (par la modification du profil utilisateur dans le centre d’administration SharePoint).  Notez que pour renvoyer cette activité dans les résultats de recherche du journal d’audit, vous devez rechercher toutes les activités. <br/> |
 |Ajout d’utilisateur ou un groupe au groupe SharePoint  <br/> |AddedToGroup  <br/> |Utilisateur ajouté un membre ou un invité à un groupe SharePoint. Cela a peut-être été une action intentionnelle ou le résultat d’une autre activité, par exemple un événement de partage.  <br/> |
 |Autorisé l’utilisateur à créer des groupes  <br/> |AllowGroupCreationSet  <br/> |Administrateur de site ou propriétaire ajoute un niveau d’autorisation à un site qui permet à un utilisateur affecté à cette autorisation pour créer un groupe de ce site.  <br/> |
 |Site annulé geo déplacer  <br/> |SiteGeoMoveCancelled  <br/> |Un administrateur global ou SharePoint avec succès annule SharePoint ou déplacer OneDrive site géographique. La fonctionnalité Multi-Geo permet à une organisation Office 365 englober plusieurs régions de centre de données Office 365, qui sont appelées zones géographiques. Pour plus d’informations, voir [Fonctionnalités Multi-localisés dans OneDrive et SharePoint Online dans Office 365](https://go.microsoft.com/fwlink/?linkid=860840).<br/> |
@@ -421,7 +425,7 @@ Le tableau suivant répertorie les événements qui résultent de tâches d’ad
 |Flux RSS activés  <br/> |NewsFeedEnabledSet  <br/> |Administrateur de site ou propriétaire permet de flux RSS pour un site. Les administrateurs globaux peuvent activer les flux RSS pour toute l’organisation dans le centre d’administration de SharePoint.  <br/> |
 |Demande d’accès modifiés définition  <br/> |WebRequestAccessModified  <br/> |Les paramètres de demande d’accès ont été modifiés sur un site.  <br/> |
 |Paramètre de membres peuvent partager modifié  <br/> |WebMembersCanShareModified  <br/> |Le **Membres peuvent partager** un paramètre a été modifié sur un site.  <br/> |
-|Autorisations de site modifié  <br/> |SitePermissionsModified  <br/> |Administrateur de site ou propriétaire (ou compte système) modifie le niveau d’autorisation qui sont assignés à un groupe sur un site. Cette activité est également connectée si toutes les autorisations sont supprimées d’un groupe.<br/> > [!NOTE]> Cette opération a été désapprouvée dans SharePoint Online. Pour rechercher les événements associés, vous pouvez rechercher pour d’autres activités liées aux autorisations, comme **administrateur de collection de sites Ajout**, **Ajout d’utilisateur ou un groupe SharePoint groupe**, **utilisateur autorisé à créer des groupes**, **groupe créé**et **Deleted groupe.**         |
+|Autorisations de site modifié  <br/> |SitePermissionsModified  <br/> |Administrateur de site ou propriétaire (ou compte système) modifie le niveau d’autorisation qui sont assignés à un groupe sur un site. Cette activité est également connectée si toutes les autorisations sont supprimées d’un groupe.<br/> > [!NOTE]> que cette opération a été désapprouvée dans SharePoint Online. Pour rechercher les événements associés, vous pouvez rechercher pour d’autres activités liées aux autorisations, comme **administrateur de collection de sites Ajout**, **Ajout d’utilisateur ou un groupe SharePoint groupe**, **utilisateur autorisé à créer des groupes**, **groupe créé**et **Deleted groupe.**         |
 |Supprimé utilisateur ou du groupe SharePoint groupe  <br/> |RemovedFromGroup  <br/> |Utilisateur supprimé un invité ou un membre d’un groupe SharePoint. Cela a peut-être été une action intentionnelle ou le résultat d’une autre activité, comme un événement d’annulation du partage.  <br/> |
 |Site renommée  <br/> |SiteRenamed  <br/> |Administrateur de site ou propriétaire renomme un site  <br/> |
 |Autorisations d’administrateur de site demandé  <br/> |SiteAdminChangeRequest  <br/> |Demandes de l’utilisateur à ajouter comme administrateur de collection de sites pour une collection de sites. Administrateurs de collection de sites ont des autorisations Contrôle total pour la collection de sites et tous ses sous-sites.  <br/> |
@@ -682,7 +686,7 @@ Notez également que la durée de la période de rétention pour les enregistrem
 
 Oui. L’API d’activité de gestion Office 365 est utilisé pour extraire les journaux d’audit par programme.  Pour commencer, consultez la rubrique [en route avec l’API de gestion d’Office 365](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis).
 
-**Existe-t-il d’autres façons d’obtenir l’audit des journaux qu’exploiteront la Office 365 Security & centre de conformité ou de l’API d’activité de gestion Office 365 ?**
+**Existe-t-il d’autres façons d’obtenir l’audit des journaux qu’en utilisant le centre de conformité de sécurité pour Microsoft Office 365 & ou de l’API d’activité de gestion Office 365 ?**
 
 Non. Voici les uniquement deux façons d’obtenir des données à partir du service d’audit Office 365. 
 
