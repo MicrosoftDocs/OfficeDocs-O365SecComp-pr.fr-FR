@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
-ms.date: 01/08/2019
+ms.date: 02/05/2019
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 description: La fonctionnalité pièces jointes sûres assure une vérification clic du temps de pièces jointes. Les pièces jointes fiables à utiliser pour protéger votre organisation contre les personnes malveillantes fichiers envoyer ou recevoir de courrier électronique.
-ms.openlocfilehash: 85c1ec3e0126a155f863b9fef9ddb36b13d0b3fb
-ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
+ms.openlocfilehash: 3717c0d278aaba4fce25cb196ebef9e277921408
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27769838"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741127"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 DAV fiable en pièce jointe
 
@@ -27,7 +27,7 @@ ms.locfileid: "27769838"
 
 Pièces jointes fiables de DAV (ainsi que les [Liens sécurisés DAV](atp-safe-links.md)) fait partie d' [Office 365 avancée protection contre les menaces](office-365-atp.md) (DAV). La fonctionnalité pièces jointes sûres DAV vérifie si les pièces jointes sont malveillants, puis intervient pour protéger votre organisation. La fonctionnalité pièces jointes sûres DAV protège votre organisation en fonction des [stratégies de pièces jointes sûres DAV](set-up-atp-safe-attachments-policies.md) qui sont définis par des administrateurs de sécurité Office 365 globale. 
   
-Récemment, protection DAV a été étendue aux fichiers dans SharePoint Online, OneDrive pour les entreprises et Teams Microsoft. Pour plus d’informations, voir [Office 365 avancée protection contre les menaces pour SharePoint, OneDrive et les équipes Microsoft](atp-for-spo-odb-and-teams.md).
+Protection DAV peut également être étendue aux fichiers dans SharePoint Online, OneDrive pour les entreprises et Teams Microsoft. Pour plus d’informations, voir [Office 365 avancée protection contre les menaces pour SharePoint, OneDrive et les équipes Microsoft](atp-for-spo-odb-and-teams.md).
        
 ## <a name="how-it-works"></a>Fonctionnement
 
@@ -45,18 +45,25 @@ Stratégies de pièces jointes sûres DAV peuvent être appliquées à des perso
   
 ## <a name="how-to-get-atp-safe-attachments"></a>Comment obtenir des pièces jointes fiables DAV
 
-La fonctionnalité pièces jointes sûres DAV fait partie [d’Office 365 avancée protection contre les menaces](office-365-atp.md). Les fonctionnalités de pièces jointes sûres DAV s’appliquent lorsque :
+Tout d’abord, assurez-vous que votre abonnement comprend la [Protection contre les menaces avancées](office-365-atp.md). DAV est inclus dans les abonnements, tels que [Microsoft 365 pour entreprises](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 entreprise E5, Office 365 éducation A5, etc.. Si votre organisation a un abonnement à Office 365 qui n’inclut pas d’Office 365 DAV, vous pouvez acheter potentiellement DAV comme module complémentaire. Pour plus d’informations, voir [Office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). 
+
+Ensuite, assurez-vous que vos stratégies de pièces jointes sûres DAV sont définis. (Voir [définir des stratégies Office 365 DAV approuvés en pièce jointe](set-up-atp-safe-attachments-policies.md)) Fonctionnalités de pièces jointes sûres DAV sont actifs quand :
   
 - Stratégies de pièces jointes sûres DAV sont définies. (Voir [définir des stratégies de pièces jointes sûres DAV dans Office 365](set-up-atp-safe-attachments-policies.md)).
     
 - Les utilisateurs ont connecté à Office 365 à l’aide de leur compte professionnel ou de l’école. (Voir [se connecter à Office ou Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426)).
+
+Pour définir (ou modifier) les stratégies de vente, vous devez posséder un des rôles décrits dans le tableau suivant :
+
+|Rôle  |Où/procédure affecté  |
+|---------|---------|
+|Administrateur Global d’Office 365 |La personne qui s’inscrit à acheter Office 365 est un administrateur global par défaut. (Voir [les rôles d’administration sur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) pour en savoir plus).         |
+|Administrateur de sécurité Office 365 |Centre d’administration ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+|Gestion de l’organisation en ligne Exchange |Centre d’administration Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>ou <br>  Applets de commande PowerShell (voir [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
 ## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>Comment savoir si la protection des pièces jointes sûres DAV est en place
 
-Un excellent moyen de voir comment fonctionne le service est en [affichage des rapports de protection contre les menaces avancées](view-reports-for-atp.md).
-
-
-[Stratégies de pièces jointes sûres DAV](set-up-atp-safe-attachments-policies.md) doit être défini dans l’ordre pour la protection des pièces jointes sûres DAV mettre en place.   
+Une fois que vous avez [défini (ou révisé) vos stratégies de pièces jointes sûres DAV](set-up-atp-safe-attachments-policies.md), un excellent moyen de voir comment fonctionne le service est en [affichage des rapports de protection contre les menaces avancées](view-reports-for-atp.md).
   
 Le tableau suivant décrit quelques exemples de scénarios. Dans tous les cas, nous supposons que l’organisation a un abonnement à Office 365 qui inclut la protection contre les menaces avancées.
   

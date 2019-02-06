@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
+ms.date: 02/05/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Définir des stratégies de pièces jointes fiables pour protéger votre organisation à partir des fichiers malveillants dans le message électronique.
-ms.openlocfilehash: c5c18e3e8300a5cb8eabb8a099d6757a09170ff7
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 229f5eb4ec1af4302f724151f599bd33b15055e1
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014876"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741117"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Définir des stratégies Office 365 DAV approuvés en pièce jointe
 
@@ -35,7 +36,13 @@ Personnes régulièrement envoient, recevoir et partager des pièces jointes, te
 
 - Assurez-vous que votre organisation dispose [d’Office 365 avancée protection contre les menaces](office-365-atp.md).
     
-- Assurez-vous que vous avez nécessaires [les autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md).
+- Assurez-vous que vous disposez des autorisations nécessaires. Pour définir (ou modifier) les stratégies de vente, vous devez posséder un des rôles décrits dans le tableau suivant : <br>
+
+    |Rôle  |Où/procédure affecté  |
+    |---------|---------|
+    |Administrateur Global d’Office 365 |La personne qui s’inscrit à acheter Office 365 est un administrateur global par défaut. (Voir [les rôles d’administration sur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) pour en savoir plus).         |
+    |Administrateur de sécurité Office 365 |Centre d’administration ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+    |Gestion de l’organisation en ligne Exchange |Centre d’administration Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>ou <br>  Applets de commande PowerShell (voir [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
 - [Découvrez les options de stratégie de pièces jointes sûres DAV](#learn-about-atp-safe-attachments-policy-options) (dans cet article). Certaines options, telles que les options de surveiller ou de remplacement, peuvent entraîner un délai d’attente secondaire des courriers électroniques tandis que les pièces jointes sont analysés. Pour éviter les retards de message, envisagez d’utiliser [remise dynamique et l’aperçu](dynamic-delivery-and-previewing.md).
     
@@ -43,7 +50,7 @@ Personnes régulièrement envoient, recevoir et partager des pièces jointes, te
     
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Étape 2 : Configurer une stratégie de pièces jointes sûres DAV (ou en modifier)
   
-1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous avec votre compte professionnel ou de l’école. 
+1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous avec votre compte professionnel ou de l’école. 
     
 2. De sécurité Office 365 &amp; centre de conformité, dans le volet de navigation de gauche, sous **Gestion des menaces**, choisissez **stratégie** \> **Pièces jointes fiables**.
     
@@ -85,4 +92,6 @@ Lorsque vous définissez vos stratégies de pièces jointes sûres DAV, vous cho
 Une fois vos stratégies de pièces jointes sûres DAV sont mis en place, vous pouvez voir comment fonctionne pour votre organisation DAV en affichant des rapports. Voir les ressources suivantes pour en savoir plus :
 - [Afficher les rapports de Protection de menace avancées d’Office 365](view-reports-for-atp.md)
 - [Utiliser l’Explorateur de solutions de sécurité &amp; centre de conformité](use-explorer-in-security-and-compliance.md)
+
+Maîtriser les nouvelles fonctionnalités en DAV. visitez le site de la [Feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) et découvrez les [nouvelles fonctionnalités qui sont ajoutées à DAV](office-365-atp.md#new-features-are-continually-being-added-to-atp).
  

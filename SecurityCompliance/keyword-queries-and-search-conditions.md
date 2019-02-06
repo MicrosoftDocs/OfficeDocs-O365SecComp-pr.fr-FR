@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'En savoir plus sur les propriétés de fichier et de messagerie que vous pouvez rechercher dans les boîtes aux lettres Exchange Online et SharePoint ou OneDrive pour les sites d’entreprise à l’aide de l’outil de recherche de contenu de sécurité Office 365 &amp; centre de conformité.  '
-ms.openlocfilehash: c1b5c3721a892929535a7e699201d0bcfc39937b
-ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
+ms.openlocfilehash: 865affa06e32b440a71721487153044e036cc487
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28328160"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741167"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Requêtes par mots clés et conditions de recherche pour la recherche de contenu
 
@@ -206,7 +206,7 @@ Créer une condition à l’aide des propriétés de document lors de la recherc
 |:-----|:-----|
 |Author  <br/> |Le champ auteur des documents Office, qui fait persister si un document est copié. Par exemple, si un utilisateur crée un document et les messages électroniques à une autre personne qui télécharge puis sur SharePoint, le document conserve toujours l’auteur d’origine.  <br/> |
 |Titre  <br/> |Le titre du document. La propriété Title est métadonnées qui sont spécifiée dans les documents Office. Il est différent du nom de fichier du document.  <br/> |
-|Created  <br/> |Date de création d’un document.  <br/> |
+|Créé  <br/> |Date de création d’un document.  <br/> |
 |Dernière modification  <br/> |Date de la dernière modification apportée à un document.  <br/> |
 |Type de fichier  <br/> |L’extension d’un fichier. par exemple, docx, 1, pptx ou xlsx. Il s’agit de la même propriété en tant que la propriété site FileExtension.  <br/> |
   
@@ -401,4 +401,5 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 - Lors de la recherche une propriété, utilisez des guillemets doubles ( » «) si la valeur de recherche se compose de plusieurs mots. Par exemple `subject:budget Q1` renvoie des messages qui contiennent le **budget** dans le dans la ligne d’objet et qui contiennent des **T1** n’importe où dans le message ou d’une des propriétés de message. À l’aide de `subject:"budget Q1"` renvoie tous les messages qui contiennent le **budget T1** n’importe où dans la ligne d’objet. 
     
 - Pour exclure le contenu avec une certaine valeur de propriété à partir de vos résultats de recherche, placez un signe moins (-) avant le nom de la propriété. Par exemple, `-from:"Sara Davis"` exclura tous les messages envoyés par Sara Davis.
-- Vous pouvez exporter les éléments en fonction du type d’élément. Par exemple, pour exporter Skype IM messages recived par un utilisateur, utilisez la syntaxe « Type : messagerie instantanée ». Recherche de requête returen tous les messages de messagerie instantanée. 
+
+- Vous pouvez exporter les éléments selon le type de message. Par exemple, pour exporter les conversations Skype et salles de conversation dans Microsoft Teams, utilisez la syntaxe `kind:im`. Pour retourner uniquement les messages électroniques, vous utiliseriez `kind:email`. Pour renvoyer les conversations, les réunions et les appels dans Microsoft Teams, utilisez `kind:microsoftteams`.
