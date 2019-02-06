@@ -131,6 +131,7 @@
 ### [Configurer le chiffrement dans Office 365 Entreprise](set-up-encryption.md)
 ### [Chiffrement du courrier électronique dans Office 365](email-encryption.md)
 ### [Chiffrement de messages Office 365 (OME)](ome.md)
+#### [Comparez les versions de OME](ome-version-comparison.md)
 #### [Configurer les nouvelles fonctionnalités de chiffrement de messages Office 365](set-up-new-message-encryption-capabilities.md)
 #### [Définir des règles de flux de courrier pour le chiffrement du courriers dans Office 365](define-mail-flow-rules-to-encrypt-email.md)
 #### [Gérer le chiffrement de messages Office 365](manage-office-365-message-encryption.md)
@@ -260,21 +261,20 @@
 
 ## [Advanced eDiscovery (préversion) dans Microsoft 365](compliance20/overview-ediscovery-20.md)
 ### [Notes de publication](compliance20/release-notes-ediscovery20.md)
-### [Créer un cas](compliance20/create-new-ediscovery-case.md)
+### [Créer un nouveau cas](compliance20/create-new-ediscovery-case.md)
 
 ### [Utiliser des consignataires](compliance20/managing-custodians.md)
 #### [Ajouter des consignataires à un cas](compliance20/add-custodians-to-case.md)
-#### [Gérer des consignataires](compliance20/manage-new-custodians.md)
+#### [Gérer dépositaires](compliance20/manage-new-custodians.md)
 #### [Afficher l’activité des consignataires](compliance20/view-custodian-activity.md)
 
 ### [Utiliser des communications](compliance20/managing-custodian-communications.md)
 #### [Créer une notification de conservation](compliance20/create-hold-notification.md)
 #### [Utiliser l’éditeur de communications](compliance20/using-communications-editor.md)
 #### [Gérer les notifications de conservation](compliance20/manage-hold-notification.md)
-#### [Modifier une notification de conservation](compliance20/edit-hold-notification.md)
-#### [Accuser réception de notifications de conservation](compliance20/acknowledge-hold-notification.md)
+#### [Reconnaitre une notification de conservation](compliance20/acknowledge-hold-notification.md)
 
-### [Gérer des conservations](compliance20/managing-holds.md)
+### [Gérer les suspensions](compliance20/managing-holds.md)
 
 ### [Corriger des erreurs de traitement](compliance20/processing-data-for-case.md)
 #### [Indexation avancée des données des consignataires](compliance20/indexing-custodian-data.md)
@@ -286,7 +286,7 @@
 #### [Statistiques de recherche](compliance20/search-statistics.md)
 #### [Ajouter des résultats de recherche à un ensemble de travail](compliance20/add-data-to-working-set.md)
 
-### [Examiner les données d’un cas](compliance20/reviewing-data-in-working-set.md)
+### [Examiner les données de cas](compliance20/reviewing-data-in-working-set.md)
 #### [Gérer des ensembles de travail](compliance20/managing-working-sets.md)
 #### [Gérer les ensembles de charge](compliance20/manage-load-sets.md)
 #### [Charger les données ne provenant pas d’Office 365 dans un ensemble de travail](compliance20/load-non-office365-data.md)
@@ -294,17 +294,17 @@
 #### [Afficher des documents dans un ensemble de travail](compliance20/annotating-and-redacting-documents.md)
 #### [Baliser des documents dans un ensemble de travail](compliance20/tagging-documents.md)
 
-### [Analyser les données d’un cas](compliance20/analyzing-data-in-working-set.md)
+### [Analyser les données de cas](compliance20/analyzing-data-in-working-set.md)
 #### [Détecter des quasi-duplicatas](compliance20/near-duplicates.md)
 #### [Threading de messagerie](compliance20/email-threading.md)
 #### [Thèmes](compliance20/themes.md)
-#### [Utiliser le module Pertinence pour analyser des données](compliance20/using-relevance.md)
+#### [Utiliser le module de Pertinence pour analyser des données](compliance20/using-relevance.md)
 
-### [Exportation des données d’un cas](compliance20/exporting-data-ediscover20.md)
+### [Exporter les données de cas](compliance20/exporting-data-ediscover20.md)
 #### [Exporter des documents à partir d’un ensemble de travail](compliance20/export-documents-from-working-set.md)
 #### [Télécharger l’exportation des travaux](compliance20/download-export-jobs.md)
 
-### [Gérer des travaux](compliance20/managing-jobs-ediscovery20.md)
+### [Gérer les travaux](compliance20/managing-jobs-ediscovery20.md)
 
 ### [Configurer des paramètres de cas](compliance20/configuring-case-settings-ediscovery20.md)
 #### [Fermer ou supprimer un cas](compliance20/close-or-delete-case.md)
