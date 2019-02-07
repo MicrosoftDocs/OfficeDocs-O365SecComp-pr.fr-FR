@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Utilisez le Office 365 Security &amp; centre de conformité pour créer et gérer des affaires eDiscovery dans votre organisation. Vous pouvez affecter des membres à la casse, placez le contenu des emplacements en attente, exécutez les recherches de contenu associé avec l’incident et l’exportation les résultats de recherche. Vous pouvez également préparer des données de cas pour une analyse approfondie d’eDiscovery avancée.
-ms.openlocfilehash: 8abaa0a962a63cc227a8bb1371e14218a9ee854d
-ms.sourcegitcommit: 3cc069415132ccaa1ead5162df15baa2203ca2e6
+ms.openlocfilehash: d03ed0a16b74f1b073c2528fa2160ed182840ede
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27299360"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755245"
 ---
 # <a name="ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>cas eDiscovery de sécurité Office 365 &amp; centre de conformité
 
@@ -55,7 +55,7 @@ Utilisez la procédure suivante pour configurer et utiliser des cas eDiscovery d
 
 La première étape consiste à attribuer les autorisations appropriées liés à la découverte électronique aux personnes afin que vous pouvez les ajouter à une affaire eDiscovery à l’étape 2. Vous devez être membre du groupe de rôles de gestion de l’organisation (ou attribuer le rôle de gestion du rôle) de sécurité Office 365 &amp; centre de conformité pour attribuer des autorisations de découverte électronique. La liste suivante décrit les groupes de rôles liés à la découverte de la sécurité &amp; centre de conformité. 
   
-- **Relecteur** - ce groupe de rôles dispose des autorisations plus restrictives liés à la découverte électronique. Le principal objectif de ce groupe de rôles consiste à permettre aux membres de l’affichage et l’accès cas des données dans Office 365 avancée de découverte électronique. Membres de ce groupe peuvent uniquement voir et ouvrir la liste des cas dans la page de **découverte électronique** dans la sécurité &amp; centre de conformité qui ils sont membres de. Une fois que l’utilisateur accède à un cas de la sécurité et le centre de conformité, ils peuvent cliquer sur **commutateur eDiscovery avancé** pour accéder et analyser les données de cas de découverte avancée. Impossible de créer des cas, d’ajouter des membres à un cas, créer des suspensions, créer des recherches, afficher un aperçu des résultats de la recherche, exporter les résultats de recherche ou préparer des résultats pour la découverte avancée. 
+- **Relecteur** - ce groupe de rôles dispose des autorisations plus restrictives liés à la découverte électronique. Le principal objectif de ce groupe de rôles consiste à permettre aux membres de l’affichage et l’accès cas des données dans Office 365 avancée de découverte électronique. Membres de ce groupe peuvent uniquement voir et ouvrir la liste des cas dans la page de **découverte électronique** dans la sécurité &amp; centre de conformité qui ils sont membres de. Une fois que l’utilisateur accède à un cas dans le centre de conformité de & sécurité, ils peuvent cliquer sur **commutateur eDiscovery avancé** pour accéder et analyser les données de cas de découverte avancée. Impossible de créer des cas, d’ajouter des membres à un cas, créer des suspensions, créer des recherches, afficher un aperçu des résultats de la recherche, exporter les résultats de recherche ou préparer des résultats pour la découverte avancée. 
     
 - **Gestionnaire de découverte électronique** - membres de ce groupe de rôles peut créer et gérer des affaires eDiscovery. Ils peuvent ajouter et supprimer des membres, placer le contenu des emplacements maintenant, créent et modifier des recherches de contenu associé à un cas, exporter les résultats d’une recherche de contenu et préparer les résultats de la recherche pour l’analyse d’eDiscovery avancée. Il existe deux sous-groupes dans ce groupe de rôles. La différence entre ces sous-groupes repose sur étendue.
     
@@ -249,9 +249,9 @@ Une fois un cas eDiscovery est créé et les dépositaires liées à la casse so
     
     ![Nouvelle recherche](media/0e9954e7-c0ea-4e05-820b-e4b81dc5f81d.png)
   
-1. Vous pouvez spécifier des mots clés, propriétés, telles qu’envoyés et reçus de dates, ou des propriétés de document, tels que des noms de fichiers ou la date de dernière modification un document de message. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, tels que **et**, **ou**, **pas**, **NEAR**ou **ONEAR**. Vous pouvez également rechercher des informations sensibles (comme les numéros de sécurité sociale) dans des documents ou de recherche pour les documents qui ont été partagées en externe. Si vous laissez la zone mot clé vide, tout le contenu situé dans les emplacements de contenu spécifiés sera inclus dans les résultats de recherche. 
+6. Vous pouvez spécifier des mots clés, propriétés, telles qu’envoyés et reçus de dates, ou des propriétés de document, tels que des noms de fichiers ou la date de dernière modification un document de message. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, tels que **et**, **ou**, **pas**, **NEAR**ou **ONEAR**. Vous pouvez également rechercher des informations sensibles (comme les numéros de sécurité sociale) dans des documents ou de recherche pour les documents qui ont été partagées en externe. Si vous laissez la zone mot clé vide, tout le contenu situé dans les emplacements de contenu spécifiés sera inclus dans les résultats de recherche. 
     
-2. Vous pouvez cliquer sur la case à cocher **Afficher la liste des mots clés** et le type de mots clés dans chaque ligne. Si vous procédez ainsi, les mots clés dans chaque ligne sont connectés par l’opérateur **ou** dans la requête de recherche qui est créée. 
+7. Vous pouvez cliquer sur la case à cocher **Afficher la liste des mots clés** et le type de mots clés dans chaque ligne. Si vous procédez ainsi, les mots clés dans chaque ligne sont connectés par l’opérateur **ou** dans la requête de recherche qui est créée. 
     
     ![Liste des mots clés](media/29cceb5d-2817-4fc4-b91a-ced1c5824a17.png)
   
@@ -259,45 +259,45 @@ Une fois un cas eDiscovery est créé et les dépositaires liées à la casse so
     
     Pour plus d’informations sur l’utilisation de la liste des mots clés, consultez [Création d’une requête de recherche](content-search.md#building-a-search-query).
     
-3. Dans des **Conditions**, ajouter des conditions à une requête de recherche pour affiner la recherche et de renvoyer un jeu de résultats plus précis. Chaque condition ajoute une clause à la requête de recherche KQL qui est créée et exécutée lorsque vous démarrez la recherche. Une condition est logiquement connectée à la requête de mot clé (spécifiée dans la zone mots clés) par l’opérateur **AND** . Cela signifie que les éléments ont afin de répondre à la requête de mot clé et la condition à inclure dans les résultats. Il s’agit de comment conditions vous aider à limiter les résultats. 
+8. Dans des **Conditions**, ajouter des conditions à une requête de recherche pour affiner la recherche et de renvoyer un jeu de résultats plus précis. Chaque condition ajoute une clause à la requête de recherche KQL qui est créée et exécutée lorsque vous démarrez la recherche. Une condition est logiquement connectée à la requête de mot clé (spécifiée dans la zone mots clés) par l’opérateur **AND** . Cela signifie que les éléments ont afin de répondre à la requête de mot clé et la condition à inclure dans les résultats. Il s’agit de comment conditions vous aider à limiter les résultats. 
     
     Pour plus d’informations sur la création d’une requête de recherche et l’utilisation de conditions, voir [Keyword queries for Content Search](keyword-queries-and-search-conditions.md).
     
-6. Sous **emplacements : emplacements en attente**, choisissez les emplacements de contenu que vous souhaitez rechercher. Vous pouvez rechercher les boîtes aux lettres, les sites et les dossiers publics dans la même recherche.
+9. Sous **emplacements : emplacements en attente**, choisissez les emplacements de contenu que vous souhaitez rechercher. Vous pouvez rechercher les boîtes aux lettres, les sites et les dossiers publics dans la même recherche.
     
     ![Emplacements, les emplacements en attente](media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
   
-  - **Tous les emplacements** - Sélectionnez cette option pour rechercher tous les emplacements de contenu dans votre organisation. Lorsque vous sélectionnez cette option, vous pouvez choisir rechercher toutes les boîtes aux lettres Exchange (qui inclut les boîtes aux lettres pour tous les groupes d’Office 365 et Microsoft Teams), tous les SharePoint et OneDrive pour les sites de l’entreprise (qui inclut les sites pour tous les groupes d’Office 365 et Microsoft Équipes) et tous les dossiers publics.
+    - **Tous les emplacements** - Sélectionnez cette option pour rechercher tous les emplacements de contenu dans votre organisation. Lorsque vous sélectionnez cette option, vous pouvez choisir rechercher toutes les boîtes aux lettres Exchange (qui inclut les boîtes aux lettres pour tous les groupes d’Office 365 et Microsoft Teams), tous les SharePoint et OneDrive pour les sites de l’entreprise (qui inclut les sites pour tous les groupes d’Office 365 et Microsoft Équipes) et tous les dossiers publics.
     
-  - **Que tous les emplacements de blocage** - Sélectionnez cette option pour rechercher tous les emplacements de contenu qui ont été mis en attente dans le cas. Si celle-ci contient plusieurs suspensions, le contenu des emplacements toutes les suspensions portera lorsque vous sélectionnez cette option. En outre, si un emplacement de contenu a été mis en une attente basée sur une requête, uniquement les éléments qui sont en attente sont examinés lors de l’exécution de la recherche de contenu que vous créez dans cette étape. Par exemple, si un utilisateur a été mis en attente cas basée sur une requête qui conserve les éléments qui ont été envoyés ou créées avant une date spécifique, uniquement les éléments est recherchés à l’aide de critères de recherche de la recherche de contenu. Cette opération s’effectue en vous connectant la requête cas d’attente et la requête de recherche de contenu par un opérateur **AND** . Voir la section [plus d’informations](ediscovery-cases.md#moreinfo_1) à la fin de cet article pour plus d’informations sur la recherche de contenu du dossier. 
+    - **Que tous les emplacements de blocage** - Sélectionnez cette option pour rechercher tous les emplacements de contenu qui ont été mis en attente dans le cas. Si celle-ci contient plusieurs suspensions, le contenu des emplacements toutes les suspensions portera lorsque vous sélectionnez cette option. En outre, si un emplacement de contenu a été mis en une attente basée sur une requête, uniquement les éléments qui sont en attente sont examinés lors de l’exécution de la recherche de contenu que vous créez dans cette étape. Par exemple, si un utilisateur a été mis en attente cas basée sur une requête qui conserve les éléments qui ont été envoyés ou créées avant une date spécifique, uniquement les éléments est recherchés à l’aide de critères de recherche de la recherche de contenu. Cette opération s’effectue en vous connectant la requête cas d’attente et la requête de recherche de contenu par un opérateur **AND** . Voir la section [plus d’informations](ediscovery-cases.md#moreinfo_1) à la fin de cet article pour plus d’informations sur la recherche de contenu du dossier. 
     
-  - **Emplacements spécifiques** - Sélectionnez cette option pour sélectionner les boîtes aux lettres et les sites que vous souhaitez rechercher. Lorsque vous sélectionnez cette option et cliquez sur **Modifier**, une liste des emplacements s’affiche. Vous pouvez choisir de rechercher un ou tous les utilisateurs, groupes, les équipes ou sites.
+    - **Emplacements spécifiques** - Sélectionnez cette option pour sélectionner les boîtes aux lettres et les sites que vous souhaitez rechercher. Lorsque vous sélectionnez cette option et cliquez sur **Modifier**, une liste des emplacements s’affiche. Vous pouvez choisir de rechercher un ou tous les utilisateurs, groupes, les équipes ou sites.
     
-    ![Sélectionnez emplacements spécifiques](media/97469b15-7be1-4aee-be27-f8343636152c.png)
+      ![Sélectionnez emplacements spécifiques](media/97469b15-7be1-4aee-be27-f8343636152c.png)
   
-    Vous pouvez également choisir de rechercher tous les dossiers publics dans votre organisation, mais si vous sélectionnez cette option et n’importe quel emplacement du contenu qui se trouve sur la recherche de blocage, toutes les requêtes d’une suspension cas basée sur une requête ne seront pas appliquées à la requête de recherche. En d’autres termes, tout le contenu d’un emplacement de la recherche est effectuée, pas seulement le contenu qui est protégé par une suspension cas basée sur une requête.
+      Vous pouvez également choisir de rechercher tous les dossiers publics dans votre organisation, mais si vous sélectionnez cette option et n’importe quel emplacement du contenu qui se trouve sur la recherche de blocage, toutes les requêtes d’une suspension cas basée sur une requête ne seront pas appliquées à la requête de recherche. En d’autres termes, tout le contenu d’un emplacement de la recherche est effectuée, pas seulement le contenu qui est protégé par une suspension cas basée sur une requête.
     
-    Vous pouvez supprimer les emplacements de contenu cas prédéfinis ou ajouter de nouveaux. Si vous choisissez cette option, vous avez également la possibilité de rechercher tous les emplacements de contenu pour un service spécifique (par exemple, recherche toutes les boîtes aux lettres Exchange), ou vous pouvez rechercher les emplacements de contenu spécifiques d’un service. Vous pouvez également choisir s’il faut rechercher les dossiers publics dans votre organisation.
+      Vous pouvez supprimer les emplacements de contenu cas prédéfinis ou ajouter de nouveaux. Si vous choisissez cette option, vous avez également la possibilité de rechercher tous les emplacements de contenu pour un service spécifique (par exemple, recherche toutes les boîtes aux lettres Exchange), ou vous pouvez rechercher les emplacements de contenu spécifiques d’un service. Vous pouvez également choisir s’il faut rechercher les dossiers publics dans votre organisation.
     
-    Gardez à l’esprit lorsque vous ajoutez des emplacements de contenu à rechercher :
+      Gardez à l’esprit lorsque vous ajoutez des emplacements de contenu à rechercher :
     
-  - Lorsque vous cliquez sur **Choisir des utilisateurs, des équipes ou des groupes** pour spécifier des boîtes aux lettres à rechercher, le sélecteur de boîte aux lettres qui s’affiche est vide. Il s’agit par défaut pour améliorer les performances. Pour ajouter des destinataires à cette liste, cliquez sur **Choisir des utilisateurs, des équipes ou des groupes**, tapez un nom (un minimum de 3 caractères) dans la zone de recherche, activez la case à cocher en regard du nom, puis cliquez sur **Choisir**. 
+      - Lorsque vous cliquez sur **Choisir des utilisateurs, des équipes ou des groupes** pour spécifier des boîtes aux lettres à rechercher, le sélecteur de boîte aux lettres qui s’affiche est vide. Il s’agit par défaut pour améliorer les performances. Pour ajouter des destinataires à cette liste, cliquez sur **Choisir des utilisateurs, des équipes ou des groupes**, tapez un nom (un minimum de 3 caractères) dans la zone de recherche, activez la case à cocher en regard du nom, puis cliquez sur **Choisir**. 
     
-  - Vous pouvez ajouter des boîtes aux lettres inactives, groupes d’Office 365, Teams Microsoft et des groupes de distribution à la liste des boîtes aux lettres à rechercher. Groupes de distribution dynamique ne sont pas pris en charge. Si vous ajoutez des groupes d’Office 365 ou Microsoft Teams, la boîte aux lettres de groupe ou de l’équipe est recherché ; les membres du groupe de boîtes aux lettres ne sont pas recherchés.
+      - Vous pouvez ajouter des boîtes aux lettres inactives, groupes d’Office 365, Teams Microsoft et des groupes de distribution à la liste des boîtes aux lettres à rechercher. Groupes de distribution dynamique ne sont pas pris en charge. Si vous ajoutez des groupes d’Office 365 ou Microsoft Teams, la boîte aux lettres de groupe ou de l’équipe est recherché ; les membres du groupe de boîtes aux lettres ne sont pas recherchés.
     
-  - Pour ajouter des sites cliquez sur **Choisir les sites**et cliquez sur **Choisir des sites** à nouveau, puis tapez l’URL pour chaque site que vous souhaitez rechercher. Vous pouvez également ajouter l’URL du site SharePoint pour les groupes d’Office 365 et Microsoft Teams. 
+      - Pour ajouter des sites cliquez sur **Choisir les sites**et cliquez sur **Choisir des sites** à nouveau, puis tapez l’URL pour chaque site que vous souhaitez rechercher. Vous pouvez également ajouter l’URL du site SharePoint pour les groupes d’Office 365 et Microsoft Teams. 
     
-7. Après avoir sélectionné les emplacements de contenu de recherche, cliquez sur **terminé** et puis cliquez sur **Enregistrer**.
+10. Après avoir sélectionné les emplacements de contenu de recherche, cliquez sur **terminé** et puis cliquez sur **Enregistrer**.
     
-8. Dans la page **nouvelle recherche** , cliquez sur **Enregistrer** , puis tapez un nom pour la recherche. Recherches de contenu associés à un cas doivent avoir des noms uniques au sein de votre organisation Office 365. 
+11. Dans la page **nouvelle recherche** , cliquez sur **Enregistrer** , puis tapez un nom pour la recherche. Recherches de contenu associés à un cas doivent avoir des noms uniques au sein de votre organisation Office 365. 
     
-9. Cliquez sur **Enregistrer &amp; exécuter** pour enregistrer les paramètres de recherche. 
+12. Cliquez sur **Enregistrer &amp; exécuter** pour enregistrer les paramètres de recherche. 
     
-10. Entrez un nom unique pour la recherche, puis cliquez sur **Enregistrer** pour lancer la recherche. 
+13. Entrez un nom unique pour la recherche, puis cliquez sur **Enregistrer** pour lancer la recherche. 
     
     La recherche commence. Après un certain temps, une estimation des résultats de recherche s’affiche dans le volet détails. L’estimation inclut la taille totale et le nombre d’éléments qui correspond aux critères de recherche. L’estimation de la recherche inclut également le nombre d’éléments non indexés dans les emplacements de contenu qui ont été exclus. Le nombre d’éléments non indexés qui ne respectent pas les critères de recherche s’être inclus dans les statistiques de la recherche affichés dans le volet détails. Si un élément non indexés correspondances la recherche de requête (étant donné que les autres propriétés de message ou un document aux critères de recherche), il ne sont pas inclus dans l’estimation du nombre d’éléments non indexés. Si un élément non indexée est exclu par les critères de recherche, il n’est également inclus dans l’estimation des éléments non indexés.
     
-    Une fois que la recherche est terminée, vous pouvez afficher les résultats de recherche. Si nécessaire, cliquez sur **Actualiser**![icône Actualiser](media/O365-MDM-Policy-RefreshIcon.gif) pour mettre à jour les informations contenues dans le volet de détails. 
+  Une fois que la recherche est terminée, vous pouvez afficher les résultats de recherche. Si nécessaire, cliquez sur **Actualiser**![icône Actualiser](media/O365-MDM-Policy-RefreshIcon.gif) pour mettre à jour les informations contenues dans le volet de détails. 
     
 ## <a name="step-6-export-the-results-of-a-content-search-associated-with-a-case"></a>Étape 6 : Exporter les résultats d’une recherche de contenu associé à un incident
 
@@ -514,7 +514,7 @@ Lorsque vous rouvrez un cas, les suspensions qui étaient en place lors de la fe
     
     Lorsque le processus est terminé, le statut de l’incident est modifié **actif** dans la page de **découverte électronique** . 
   
-## <a name="more-information"></a>More information
+## <a name="more-information"></a>Plus d’informations
 
 - **y a-t-il des limites pour les cas eDiscovery ou suspensions associées à une affaire eDiscovery ?** Le tableau suivant répertorie les limites pour les cas eDiscovery et blocages cas.
     

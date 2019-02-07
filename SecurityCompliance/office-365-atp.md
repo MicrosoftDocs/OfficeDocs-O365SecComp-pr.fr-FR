@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 description: Protection contre les menaces avancées Office 365 inclut usurpation d’identité aide à la décision, liens fiables, pièces jointes fiables et des fonctionnalités anti-hameçonnage avancées. Protection contre les menaces avancées est également étendu aux fichiers dans SharePoint Online, OneDrive pour les entreprises et Teams Microsoft.
-ms.openlocfilehash: 7d60ac9bff108a6746a5e89d05d70bba23d2671d
-ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
+ms.openlocfilehash: b483ceb0da53b2f1c216f60d5271781072ebcf17
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29741037"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755225"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 - Protection avancée contre les menaces
 
@@ -65,8 +65,11 @@ Pour définir (ou modifier) les stratégies de vente, vous devez posséder un de
 |Rôle  |Où/procédure affecté  |
 |---------|---------|
 |Administrateur Global d’Office 365 |La personne qui s’inscrit à acheter Office 365 est un administrateur global par défaut. (Voir [les rôles d’administration sur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) pour en savoir plus).         |
-|Administrateur de sécurité Office 365 |Centre d’administration ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+|Administrateur de sécurité |Centre d’administration Active Directory Azure ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Gestion de l’organisation en ligne Exchange |Centre d’administration Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>ou <br>  Applets de commande PowerShell (voir [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+
+> [!TIP]
+> Pour en savoir plus sur les rôles et autorisations, voir [des autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md).
 
 Il existe plusieurs types de stratégies DAV pour définir et consulter régulièrement.
 

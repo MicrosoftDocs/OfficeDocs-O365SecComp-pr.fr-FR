@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de critère de diffusion, vous pouvez affecter automatiquement une étiquette à un document ou message électronique ou vous pouvez inviter les utilisateurs pour sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 8464847704b5e724b97b4af9b51397f2985311a8
-ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
+ms.openlocfilehash: 5165e9c7bd674046f6a3f3a9d1f1eeedc35f931e
+ms.sourcegitcommit: 44cea06d4b007988cadc1e9de2d5ef601f1b3863
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29610581"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760765"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette sensibilité au contenu
 
@@ -36,7 +36,7 @@ La possibilité d’appliquer automatiquement des étiquettes à du contenu est 
 
 ![Options pour les étiquettes de la sensibilité d’étiquetage automatique](media/Sensitivity_labels_Auto_labeling_options.png)
 
-# <a name="apply-a-sensitivity-label-automatically-based-on-conditions"></a>Application d’une étiquette automatiquement en fonction des conditions
+## <a name="apply-a-sensitivity-label-automatically-based-on-conditions"></a>Application d’une étiquette automatiquement en fonction des conditions
 
 L’une des fonctionnalités les plus puissantes des étiquettes de sensibilité est la possibilité de les appliquer automatiquement au contenu qui remplit certaines conditions. Dans ce cas, les membres de votre organisation ne doivent pas appliquer ces étiquettes de sensibilité: Office 365 s’en charge à leur place.
    
@@ -52,7 +52,7 @@ Lorsqu’une étiquette de critère de diffusion est automatiquement appliquée,
 
 ![Notification dont un document disposait d’une étiquette appliquée automatiquement](media/sensitivity_labels_msg_doc_was_auto_labeled.PNG)
 
-# <a name="recommend-that-the-user-apply-a-sensitivity-label"></a>Recommandé que l’utilisateur applique une étiquette de critère de diffusion
+## <a name="recommend-that-the-user-apply-a-sensitivity-label"></a>Recommandé que l’utilisateur applique une étiquette de critère de diffusion
 
 Si vous préférez, au lieu d’appliquer une étiquette sensibilité automatiquement au contenu, vous pouvez recommander à vos utilisateurs qu’elles s’appliquent à l’étiquette. Cette option permet à vos utilisateurs d’accepter la classification et toute protection associée ou faire disparaitre la valeur recommandée si l’étiquette n’est pas appropriée à leur document ou message électronique.
 
@@ -64,7 +64,7 @@ Voici un exemple d’une invite de commandes lorsque vous configurez une conditi
 
 ![Invite à appliquer une étiquette recommandée](media/Sensitivity_label_Prompt_for_required_label.png)
 
-# <a name="how-automatic-or-recommended-labels-are-applied"></a>Comment les étiquettes automatiques ou recommandées sont appliquées
+## <a name="how-automatic-or-recommended-labels-are-applied"></a>Comment les étiquettes automatiques ou recommandées sont appliquées
 
 - L’étiquetage automatique s’applique à Word, Excel et PowerPoint lorsque les documents sont enregistrés et dans Outlook lorsque des messages électroniques sont envoyés. Ces conditions détectent les informations sensibles dans le corps de texte dans des documents et messages électroniques et aux en-têtes et pieds de page, mais pas dans la ligne d’objet ou des pièces jointes de message électronique.
 
@@ -74,6 +74,6 @@ Voici un exemple d’une invite de commandes lorsque vous configurez une conditi
 
 - Vous ne pouvez pas utiliser la classification recommandée pour les documents qui ont été précédemment libellés avec une classification une version ultérieure. Dans ce cas, lorsque le contenu est déjà libellé avec une classification supérieure, l’utilisateur ne verra pas l’invite de commandes avec la recommandation et le conseil de stratégie.
 
-# <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Comment plusieurs conditions sont évaluées lorsqu’elles s’appliquent à plus d’une étiquette
+## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Comment plusieurs conditions sont évaluées lorsqu’elles s’appliquent à plus d’une étiquette
 
 Les étiquettes sont classées pour évaluation en fonction de leur position que vous spécifiez dans la stratégie: l’étiquette positionné a tout d’abord la position la plus basse (au moins sensible) et l’étiquette positionnée a dernière position plus élevée (plus sensible). Pour plus d’informations sur la priorité, voir [Priorité étiquettes (ordre aspects importants)](sensitivity-labels.md#label-priority-order-matters).

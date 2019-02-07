@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Présentation des stratégies de surveillance dans Office 365
-ms.openlocfilehash: 0c76ba5b17277d8bd441810415e7e9acd1adbf36
-ms.sourcegitcommit: 3cb775e60b3806b66568ed2f9664c17ef96ca8de
+ms.openlocfilehash: c66ded719791c4a5ecaaa459f81d0a0d4a3db924
+ms.sourcegitcommit: e4d56cab6bbb77404457d506d17f6a7577f302be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "29603524"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29760076"
 ---
 # <a name="supervision-policies-in-office-365"></a>Stratégies de surveillance dans Office 365
 
@@ -69,12 +69,7 @@ Pour simplifier votre installation, créez des personnes disposant de leurs comm
 
 Avec les stratégies de surveillance, vous pouvez choisir d’analyser les messages dans une ou plusieurs des plateformes suivantes :
 
-- **Échanger des courriers électroniques :** Boîtes aux lettres qui sont hébergées sur Exchange Online dans le cadre de votre abonnement Office 365 sont tous les éligibles pour la surveillance de message. Les messages électroniques et les pièces jointes correspondant à des conditions de stratégie de surveillance sont immédiatement disponibles pour la surveillance et dans les rapports de surveillance. Types de pièce jointe pris en charge sont les suivants :
-
-    - Microsoft Word (.docx)
-    - Microsoft Excel (.xlsx)
-    - Microsoft PowerPoint (.pptx)
-
+- **Échanger des courriers électroniques :** Boîtes aux lettres qui sont hébergées sur Exchange Online dans le cadre de votre abonnement Office 365 sont tous les éligibles pour la surveillance de message. Les messages électroniques et les pièces jointes correspondant à des conditions de stratégie de surveillance sont immédiatement disponibles pour la surveillance et dans les rapports de surveillance. Pièce jointe pris en charge les types de surveillance sont les mêmes que les [types de fichiers pris en charge pour les contrôles contenus d’Exchange mail flow règle](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 - **Équipes Microsoft :** Communications de conversation et les pièces jointes publiques et privées canaux Teams Microsoft et de salles de conversation individuelles peuvent être surveillés. Conversations équipes correspondant à des conditions de stratégie de surveillance sont traitées toutes les 24 heures, puis sont disponibles pour la surveillance et dans les rapports de surveillance.
 - **Sources tierces :** Vous pouvez contrôler les communications à partir de sources de tiers (comme à partir de Facebook ou échange) si vous avez importé ces données dans les boîtes aux lettres Office 365 dans votre organisation. [Découvrez comment importer des données de 3 rd tiers dans Office 365](https://docs.microsoft.com/office365/securitycompliance/archiving-third-party-data).
 

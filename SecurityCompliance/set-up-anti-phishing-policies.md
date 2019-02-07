@@ -5,17 +5,17 @@ author: kccross
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.date: 02/04/2019
+ms.date: 02/06/2019
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: Protection anti-hameçonnage, avec une protection complète dans le cadre d’Office 365 avancée protection contre les menaces et de protection de base dans Office 365 Exchange Online Protection permet de protéger votre organisation contre les attaques malveillantes hameçonnage basée sur l’emprunt d’identité et autres attaques par hameçonnage.
-ms.openlocfilehash: 1ef1dc0781cc28e660cbebf8cde59f97d3e65000
-ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
+ms.openlocfilehash: 1ecc76f674b1d64b59b5dec0f92cd06bbe8b55e8
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29741147"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755265"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Configurer des stratégies anti-hameçonnage et anti-hameçonnage d’Office 365 DAV
 
@@ -43,9 +43,11 @@ Procédure à suivre :
     |Rôle  |Où/procédure affecté  |
     |---------|---------|
     |Administrateur Global d’Office 365 |La personne qui s’inscrit à acheter Office 365 est un administrateur global par défaut. (Voir [les rôles d’administration sur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) pour en savoir plus).         |
-    |Administrateur de sécurité Office 365 |Centre d’administration ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+    |Administrateur de sécurité |Centre d’administration Active Directory Azure ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
     |Gestion de l’organisation en ligne Exchange |Centre d’administration Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>ou <br>  Applets de commande PowerShell (voir [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
+    Pour en savoir plus sur les rôles et autorisations, voir [des autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md).
+
 - Vous définirez probablement plusieurs stratégies anti-hameçonnage pour votre organisation. Office 365 applique ces stratégies dans l’ordre d’apparition dans les pages de **page Anti-hameçonnage** et **DAV anti-hameçonnage** dans la sécurité &amp; centre de conformité. Une fois que vous avez passé en revue vos [options de stratégie](#learn-about-atp-anti-phishing-policy-options), prendre un certain temps pour déterminer le nombre de stratégies que vous avez besoin et la priorité pour chacun. 
     
 - Plan de consacrer environ 5 à 15 minutes pour configurer votre première stratégie anti-hameçonnage.
