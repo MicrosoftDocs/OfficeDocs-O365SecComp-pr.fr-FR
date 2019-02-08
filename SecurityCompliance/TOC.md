@@ -1,8 +1,7 @@
 # Prise en main
 ## [Feuille de route relative à la sécurité d’Office 365](security-roadmap.md)
 ## [Configurer votre client Office 365 pour une sécurité accrue](tenant-wide-setup-for-increased-security.md)
-## [Accéder au Centre de sécurité et conformité Office 365](go-to-the-securitycompliance-center.md)
-## [Se préparer pour le nouveau Centre de sécurité Microsoft 365 et Centre de conformité Microsoft 365](microsoft-security-and-compliance.md)
+## [Accéder au centre de conformité et de sécurité](go-to-the-securitycompliance-center.md)
 ## [Office 365 Secure Score](office-365-secure-score.md)
 ## [Autorisations dans le centre de conformité et de sécurité](permissions-in-the-security-and-compliance-center.md)
 ## [Octroi de l’accès au Centre de conformité et de sécurité aux utilisateurs](grant-access-to-the-security-and-compliance-center.md)
