@@ -3,7 +3,7 @@ title: Prise en main d’Office 365 Threat Intelligence
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/22/2019
+ms.date: 02/07/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,18 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 description: Découvrez les menaces Office 365 et la mise en route.
-ms.openlocfilehash: d2b3d245a0d3d26e26052468313da8db7df5ea9b
-ms.sourcegitcommit: a1d8174240eb88b51af3a1ba26d715292fe08c53
+ms.openlocfilehash: 141bc0d2ffc2084f56f50333c756507d04a37d44
+ms.sourcegitcommit: c2ec9a4b0279a248b85c2e4a4e91458214b5b31c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29426039"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "29770789"
 ---
 # <a name="get-started-with-office-365-threat-intelligence"></a>Prise en main d’Office 365 Threat Intelligence
 
 Si vous faites partie de l’équipe de sécurité de votre organisation, vous pouvez utiliser Office 365 menaces pour protéger vos utilisateurs contre les attaques. Office 365 menaces aide les analystes de sécurité à et administrateurs de protéger les utilisateurs par propagation d’idées et identification action en fonction de ce qui se passe dans leur votre environnement Office 365. Ces informations sont basées sur un référentiel de données d’aide à la décision de menace et systèmes de repérer des modèles qui correspondent aux attaques de comportements et activités suspectes complet.
-  
-![Informations sur les menaces permet de comprendre les attaques ciblées vers votre organisation](media/6ce67cf2-3bbb-4008-9c55-1b4c7af0471f.png)
   
 Lisez cet article pour en savoir plus sur ce qui inclut les menaces Office 365 et la mise en route.
   
