@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 description: Cette rubrique présente les questions fréquemment posées ainsi que les réponses au sujet de la mise en quarantaine hébergée.
-ms.openlocfilehash: cc8a05b575e17dbc71d4b9e214cb29a4cafe8b6b
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 1473e682faab0471f5a6356e8d54a65a9baf291a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003193"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792495"
 ---
 # <a name="quarantine-faq"></a>FAQ sur la mise en quarantaine
 
@@ -50,7 +50,7 @@ R. Les messages concernés par une règle de transport peuvent également être 
   
  **Q. Pendant combien de temps les messages sont-ils mis en quarantaine ?**
   
-R. Par défaut, les messages de courrier indésirable mis en quarantaine sont conservés en quarantaine pendant 15 jours, tandis que les messages mis en quarantaine qui correspondent à une règle de transport sont maintenus en quarantaine pendant 7 jours. Une fois cette période écoulée, les messages sont supprimés et ne sont pas récupérables. La période de conservation des messages mis en quarantaine qui correspondent à une règle de transport n'est pas configurable. Vous pouvez raccourcir la période de rétention à l'aide du paramètre **Conserver les courriers indésirables pendant (jours)** dans vos stratégies de filtrage du contenu. Pour plus d'informations, voir [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md).
+A par défaut, les messages mis en quarantaine du courrier indésirable sont conservés dans la mise en quarantaine pendant 30 jours, tandis que les messages mis en quarantaine qui correspondent à une règle de transport sont conservés dans la mise en quarantaine pendant 7 jours. Une fois cette période de temps les messages sont supprimées et ne peuvent pas être extraites. La période de rétention des messages mis en quarantaine qui correspondent à une règle de transport n’est pas configurable. Toutefois, la période de rétention des messages mis en quarantaine du courrier indésirable peut être réduite via le paramètre de **conserver le courrier indésirable de (jours)** dans vos stratégies de filtrage de contenu. Pour plus d’informations, voir [configurer vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md).
   
  **Q. Est-ce que je peux libérer ou signaler plusieurs messages mis en quarantaine à la fois ?**
   

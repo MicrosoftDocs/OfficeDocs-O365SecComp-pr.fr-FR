@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: 'En tant qu’administrateur, vous pouvez afficher, version et signaler un faux positif mis en quarantaine dans Office 365. Vous pouvez définir des stratégies afin que le filtrage des messages Office 365 et l’envoie à mettre en quarantaine pour plusieurs raisons : car ils ont été identifiés comme du courrier indésirable, en bloc, l’hameçonnage, les logiciels malveillants ou car il correspondant à une règle de flux de messagerie. '
-ms.openlocfilehash: 1a0aa0b3f08b18d81b6e1e025e5672ab8fcfafa4
-ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
+ms.openlocfilehash: ed78fcd2652a723e97c288f6f8aa43d11d41f0dd
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27180884"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792505"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gérer les messages mis en quarantaine et les fichiers en tant qu’administrateur dans Office 365
 
@@ -27,10 +27,10 @@ En tant qu’administrateur, vous pouvez afficher, version et supprimer les mess
   
 Par défaut, Office 365 envoie les messages de hameçonnage et les messages contenant des programmes malveillants directement en quarantaine. Autres messages filtrés sont envoyées au dossier de courrier indésirable des utilisateurs, sauf si vous définissez une stratégie pour les envoyer au contrôle.
   
-Vous devez disposer des autorisations d’administrateur dans Office 365 pour travailler avec des messages mis en quarantaine qui ont été envoyés à d’autres utilisateurs et pour travailler avec les fichiers mis en quarantaine.
+Vous devez disposer des autorisations d’administrateur général (GA) dans Office 365 pour travailler avec des messages mis en quarantaine qui ont été envoyés à d’autres utilisateurs et pour travailler avec les fichiers mis en quarantaine.
   
 > [!IMPORTANT]
-> Par défaut, le courrier indésirable, en bloc, logiciels malveillants, hameçonnage et les messages qui ont été mis en quarantaine car ils correspondant à une règle de flux de messagerie sont conservés dans la mise en quarantaine pendant 30 jours. Vous pouvez personnaliser l’heure de mise en quarantaine dans les paramètres de blocage du courrier indésirable de la sécurité &amp; centre de conformité. Lorsque Office 365 supprime un message de mise en quarantaine, vous ne pouvez pas le récupérer. Si vous le souhaitez, vous pouvez modifier la période de rétention des messages mis en quarantaine dans vos stratégies de filtrage de blocage du courrier indésirable. Pour plus d’informations, voir [définition de la période de rétention de mise en quarantaine](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) dans cet article. 
+>Par défaut, les messages de courrier indésirable, en bloc et l’hameçonnage sont conservés dans la mise en quarantaine pendant 30 jours. Messages mis en quarantaine car ils correspondant à une règle de flux de messagerie sont conservés dans la mise en quarantaine pendant 7 jours. Messages de programmes malveillants sont conservés dans la mise en quarantaine pendant 15 jours. Vous pouvez personnaliser l’heure de mise en quarantaine du courrier indésirable dans les paramètres de blocage du courrier indésirable de la sécurité &amp; centre de conformité. Lorsque Office 365 supprime un message de mise en quarantaine, vous ne pouvez pas le récupérer. Si vous le souhaitez, vous pouvez modifier la période de rétention des messages mis en quarantaine dans vos stratégies de filtrage de blocage du courrier indésirable. Pour plus d’informations, voir [définition de la période de rétention de mise en quarantaine](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) dans cet article. 
   
 ## <a name="view-your-organizations-quarantined-messages"></a>Afficher les messages mis en quarantaine de votre organisation
 
