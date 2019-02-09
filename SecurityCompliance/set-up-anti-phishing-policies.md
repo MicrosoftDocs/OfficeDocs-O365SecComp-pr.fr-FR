@@ -10,12 +10,12 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: Protection anti-hameçonnage, avec une protection complète dans le cadre d’Office 365 avancée protection contre les menaces et de protection de base dans Office 365 Exchange Online Protection permet de protéger votre organisation contre les attaques malveillantes hameçonnage basée sur l’emprunt d’identité et autres attaques par hameçonnage.
-ms.openlocfilehash: 1ecc76f674b1d64b59b5dec0f92cd06bbe8b55e8
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: 333176ebef8d6367f5090730386fc820927cf3af
+ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755265"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792279"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Configurer des stratégies anti-hameçonnage et anti-hameçonnage d’Office 365 DAV
 
@@ -24,7 +24,7 @@ ms.locfileid: "29755265"
 Hameçonnage attaques entrent dans diverses formes contre les attaques de marchandise sonde ciblé phishing ou baleine. À la complexité, il est difficile de même un œil formé à identifier certains de ces attaques sophistiquées. Heureusement, contre les menaces avancées Office 365 peut vous aider. Vous pouvez configurer une stratégie d’anti-hameçonnage DAV pour vous assurer que votre organisation est protégée contre les attaques de ce type.
   
 > [!NOTE]
-> DAV anti-hameçonnage n’est disponible dans Advanced Threat Protection (DAV). DAV est inclus dans les abonnements, tels que [Microsoft 365 pour entreprises](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 entreprise E5, Office 365 éducation A5, etc.. Si votre organisation a un abonnement à Office 365 qui n’inclut pas d’Office 365 DAV, vous pouvez acheter potentiellement DAV comme module complémentaire. Pour plus d’informations, voir [Office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Assurez-vous que votre organisation utilise la dernière version d’Office 365 ProPlus sur Windows pour tirer pleinement parti de protection anti-hameçonnage DAV. 
+> DAV anti-hameçonnage n’est disponible dans Advanced Threat Protection (DAV). DAV est inclus dans les abonnements, tels que [Microsoft 365 pour entreprises](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 entreprise E5, Office 365 éducation A5, etc.. Si votre organisation a un abonnement à Office 365 qui n’inclut pas d’Office 365 DAV, vous pouvez acheter potentiellement DAV comme module complémentaire. Pour plus d’informations, voir [plans Office 365 avancée protection contre les menaces et les prix](https://products.office.com/exchange/advance-threat-protection) et [Office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Assurez-vous que votre organisation utilise la dernière version d’Office 365 ProPlus sur Windows pour tirer pleinement parti de protection anti-hameçonnage DAV. 
 
 Une stratégie anti-hameçonnage est également disponible pour Office 365 Exchange Online Protection, avec un ensemble limité de protection anti-l’usurpation d’identité qui est destiné à protéger contre les attaques basées sur la description et l’authentification.
   

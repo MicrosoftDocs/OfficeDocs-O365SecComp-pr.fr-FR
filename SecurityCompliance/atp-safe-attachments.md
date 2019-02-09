@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
-ms.date: 02/05/2019
+ms.date: 02/08/2019
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 description: La fonctionnalité pièces jointes sûres assure une vérification clic du temps de pièces jointes. Les pièces jointes fiables à utiliser pour protéger votre organisation contre les personnes malveillantes fichiers envoyer ou recevoir de courrier électronique.
-ms.openlocfilehash: 936d24e3782e1018e77e24373756e378472f7e7c
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: 45cd3b74b67d7ff8735da7a703ff14c4c517341f
+ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755275"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792229"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Office 365 DAV fiable en pièce jointe
 
@@ -45,7 +45,7 @@ Stratégies de pièces jointes sûres DAV peuvent être appliquées à des perso
   
 ## <a name="how-to-get-atp-safe-attachments"></a>Comment obtenir des pièces jointes fiables DAV
 
-Tout d’abord, assurez-vous que votre abonnement comprend la [Protection contre les menaces avancées](office-365-atp.md). DAV est inclus dans les abonnements, tels que [Microsoft 365 pour entreprises](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 entreprise E5, Office 365 éducation A5, etc.. Si votre organisation a un abonnement à Office 365 qui n’inclut pas d’Office 365 DAV, vous pouvez acheter potentiellement DAV comme module complémentaire. Pour plus d’informations, voir [Office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). 
+Tout d’abord, assurez-vous que votre abonnement comprend la [Protection contre les menaces avancées](office-365-atp.md). DAV est inclus dans les abonnements, tels que [Microsoft 365 pour entreprises](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 entreprise E5, Office 365 éducation A5, etc.. Si votre organisation a un abonnement à Office 365 qui n’inclut pas d’Office 365 DAV, vous pouvez acheter potentiellement DAV comme module complémentaire. Pour plus d’informations, voir [plans Office 365 avancée protection contre les menaces et les prix](https://products.office.com/exchange/advance-threat-protection) et [Office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). 
 
 Ensuite, assurez-vous que vos stratégies de pièces jointes sûres DAV sont définis. (Voir [définir des stratégies Office 365 DAV approuvés en pièce jointe](set-up-atp-safe-attachments-policies.md)) Fonctionnalités de pièces jointes sûres DAV sont actifs quand :
   
@@ -69,8 +69,8 @@ Le tableau suivant décrit quelques exemples de scénarios. Dans tous les cas, n
   
 |**Exemple de scénario**|**Protection des pièces jointes sûres DAV applicable dans ce cas ?**|
 |:-----|:-----|
-|Organisation de Pat a Office 365 entreprise E5, mais n’a encore défini des stratégies pour les pièces jointes fiables DAV.  <br/> |Non. Bien que la fonctionnalité est disponible, au moins une stratégie de pièces jointes sûres DAV doit être définie dans l’ordre pour la protection des pièces jointes sûres DAV mettre en place.  <br/> |
-|Lee est un employé dans le service des ventes de Contoso. Organisation de Lee possède une stratégie de pièces jointes sûres DAV en place qui s’applique aux employés finance uniquement.  <br/> |Non. Dans ce cas, employés finance aurait protection pièces jointes sûres DAV, mais les autres employés, y compris le service commercial, serait pas jusqu'à ce que les stratégies qui incluent ces groupes sont définies.  <br/> |
+|Organisation de Pat a Office 365 entreprise E5, mais n’a encore défini des stratégies pour les pièces jointes fiables DAV.  <br/> |non. Bien que la fonctionnalité est disponible, au moins une stratégie de pièces jointes sûres DAV doit être définie dans l’ordre pour la protection des pièces jointes sûres DAV mettre en place.  <br/> |
+|Lee est un employé dans le service des ventes de Contoso. Organisation de Lee possède une stratégie de pièces jointes sûres DAV en place qui s’applique aux employés finance uniquement.  <br/> |non. Dans ce cas, employés finance aurait protection pièces jointes sûres DAV, mais les autres employés, y compris le service commercial, serait pas jusqu'à ce que les stratégies qui incluent ces groupes sont définies.  <br/> |
 |Hier, un administrateur Office 365 à l’organisation de Jean définie une stratégie de pièces jointes sûres DAV qui s’applique à tous les employés. Journée, Jean a reçu un message électronique qui contient une pièce jointe.  <br/> |Oui. Dans cet exemple, Jean possède une licence pour la protection contre les menaces avancées, et une stratégie de pièces jointes sûres DAV incluant Jean a été définie. Il est généralement d’environ 30 minutes pour une nouvelle stratégie prennent effet sur les centres de données ; dans la mesure où un jour écoulé dans ce cas, la stratégie doit être en vigueur.  <br/> |
 |Organisation de Chris a Office 365 entreprise E5 avec les stratégies de pièces jointes sûres DAV en place pour tout le monde dans l’organisation. Chris reçoit un message électronique comportant une pièce jointe et transfère le message à d’autres personnes qui se trouvent en dehors de l’organisation.  <br/> |Protection des pièces jointes sûres DAV est en place pour les messages qui reçoit Chris. Si les organisations de destinataires ont également des stratégies de pièces jointes sûres DAV en place, Chris transfère le message serait soumis à ces stratégies lorsque le message transféré arrive.  <br/> |
 |Organisation de Marie a des stratégies de pièces jointes sûres DAV en place et [DAV pour SharePoint, OneDrive et les équipes Microsoft](atp-for-spo-odb-and-teams.md) a été activée. Marie suppose que tous les fichiers dans SharePoint Online a été analysé et qu’il sont fiable pour ouvrir ou télécharger.<br/> |Protection des pièces jointes sûres DAV est en place en fonction des stratégies définies ; Toutefois, cela ne signifie pas que chaque fichier dans SharePoint Online, OneDrive, ou de l’entreprise Microsoft Teams est analysé. (Pour plus d’informations, voir [DAV pour SharePoint, OneDrive et les équipes Microsoft](atp-for-spo-odb-and-teams.md)).<br/> |

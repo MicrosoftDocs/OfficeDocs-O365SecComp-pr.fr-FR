@@ -3,7 +3,7 @@ title: Office 365 - Protection avancée contre les menaces
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/04/2019
+ms.date: 02/08/2019
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -12,13 +12,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
-description: Protection contre les menaces avancées Office 365 inclut usurpation d’identité aide à la décision, liens fiables, pièces jointes fiables et des fonctionnalités anti-hameçonnage avancées. Protection contre les menaces avancées est également étendu aux fichiers dans SharePoint Online, OneDrive pour les entreprises et Teams Microsoft.
-ms.openlocfilehash: b483ceb0da53b2f1c216f60d5271781072ebcf17
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+description: Protection contre les menaces avancées Office 365 inclut l’usurpation d’identité aide à la décision, liens fiables, pièces jointes fiables, des fonctionnalités anti-hameçonnage avancées et sur les menaces.
+ms.openlocfilehash: 213b262b0ecc821b8f139b1b63568b2b03e635c5
+ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755225"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792249"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 - Protection avancée contre les menaces
 
@@ -47,16 +47,19 @@ Nous poursuivons ajouter de nouvelles fonctionnalités à Office 365, et qui inc
 
 |Mises à jour de fonctionnalité  |Points d’action  |
 |---------|---------|
+|À partir de février 2019 et présentant plusieurs mois suivant, fonctionnalités d’aide à la décision de menace sont ajoutées à DAV. En outre, si votre organisation ne dispose pas actuellement DAV, vous aurez nouvelles options à prendre en compte, y compris DAV Plan 1 et DAV Plan 2. Pour plus d’informations, voir [plans Office 365 avancée protection contre les menaces et les prix](https://products.office.com/exchange/advance-threat-protection) et [Office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). |Examiner l’abonnement de votre organisation et si nécessaire, [acheter ou en modifier un module complémentaire](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on).  |
 |À partir de 2018 octobre et présentant plusieurs mois suivant, lors de personnes utilisent Outlook ou Outlook Web Application (OWA), les liens sécurisés DAV affiche les URL d’origine, pas réécrites URL. (Nous appelons ce rendu lien native).<br>Lorsque le rendu de lien natif est disponible pour votre organisation, cette fonctionnalité fonctionne dans Outlook 365 (Click-to-Run) et OWA.|Aucun         |
 |Début de septembre 2018, [pages d’avertissement Office 365 DAV](atp-safe-links-warning-pages.md) fonctionnalité un jeu de couleurs, plus de détails et la possibilité de passer à un site en dépit de donné avertissements et des recommandations. |Aucun         |
 |À partir du deuxième semestre 2018, protection liens fiables DAV est étendue pour appliquer aux URL dans Office Online (Word en ligne, Online Excel, PowerPoint en ligne et OneNote en ligne) et Office 365 ProPlus sur Mac.   |[Revoir et modifier vos stratégies de liens fiables DAV](set-up-atp-safe-links-policies.md)  |
 |À partir de fin mai 2018, les fonctionnalités de [mise en quarantaine](quarantine-email-messages.md) dans la sécurité &amp; centre de conformité sont accordées à [DAV pour SharePoint Online, OneDrive entreprise et les équipes Microsoft](atp-for-spo-odb-and-teams.md). |[Revoir et modifier vos stratégies de pièces jointes sûres DAV](set-up-atp-safe-attachments-policies.md) |
 |Au début de mars 2018, protection liens fiables DAV est étendue s’appliquent aux messages envoyés entre les personnes dans votre organisation. |[Revoir et modifier vos stratégies de liens fiables DAV](set-up-atp-safe-links-policies.md) |
 |Au début de la liaison tardive 2017 octobre, protection liens fiables DAV est étendue pour appliquer aux URL dans un e-mail ainsi que les URL dans les documents Office 365 ProPlus, telles que Word, Excel, PowerPoint et Visio sur Windows, ainsi que Office applications sur les périphériques iOS ou Android.  |Assurez-vous que vous utilisez [l’Authentification moderne pour Office](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) |
-  
+
+
+      
 ## <a name="get-office-365-atp"></a>Obtenir DAV Office 365
 
-Office 365 DAV est inclus dans les abonnements, tels que [Microsoft 365 pour entreprises](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 entreprise E5 et Office 365 éducation A5. Si votre organisation a un abonnement à Office 365 qui n’inclut pas d’Office 365 DAV, vous pouvez acheter potentiellement DAV comme module complémentaire. Pour plus d’informations, voir [Office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). 
+Office 365 DAV est inclus dans les abonnements, tels que [Microsoft 365 pour entreprises](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 entreprise E5 et Office 365 éducation A5. Si votre organisation a un abonnement à Office 365 qui n’inclut pas d’Office 365 DAV, vous pouvez acheter potentiellement DAV comme module complémentaire. Pour plus d’informations, voir [plans Office 365 avancée protection contre les menaces et les prix](https://products.office.com/exchange/advance-threat-protection) et [Office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). 
 
 ## <a name="define-policies-for-atp"></a>Définir des stratégies pour DAV
 
@@ -85,7 +88,7 @@ Une fois vos stratégies DAV sont mis en place, les rapports sont disponibles po
 
 [![La sécurité &amp; tableau de bord de centre de conformité peut vous aider à voir où travaille protection contre les menaces avancées](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)](view-reports-for-atp.md)
   
-1. En tant qu’un administrateur global d’Office 365, un administrateur de sécurité ou un lecteur de sécurité, accédez à [https://protection.office.com](https://protection.office.com) et se connecter.
+1. Un administrateur global d’Office 365, un administrateur de sécurité ou un lecteur de sécurité, accédez à [https://protection.office.com](https://protection.office.com) et se connecter.
     
 2. Accédez aux **rapports** > **tableau de bord**. (Pour obtenir de l’aide avec ces rapports, voir [Afficher les rapports de protection contre les menaces avancées](view-reports-for-atp.md)).
     
