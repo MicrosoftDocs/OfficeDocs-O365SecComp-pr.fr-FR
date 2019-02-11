@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à seulement quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou seulement au contenu remplissant certaines conditions
-ms.openlocfilehash: 61d5a79d46a35cf4a58fb3def8ae124f7025fd6d
-ms.sourcegitcommit: 71922c3e427008d904e5eb6c1a6dc7330e666c8c
+ms.openlocfilehash: 328d63265fdaa311b94c25902e7f380c9b0be89c
+ms.sourcegitcommit: c2ec9a4b0279a248b85c2e4a4e91458214b5b31c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29690415"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "29770819"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -53,8 +53,6 @@ Vous créez et gérez des stratégies de rétention sur la page **Rétention** d
   
 ![Page Rétention dans le Centre de sécurité et conformité](media/107fc33a-6a29-44d1-85e4-0efef0544147.png)
   
-> [!NOTE]
-> Pour inclure une boîte aux lettres Exchange Online dans une stratégie de rétention, la boîte aux lettres doit disposer d’une licence Exchange Online Plan 2. Si une boîte aux lettres dispose d’une licence Exchange Online Plan 1, vous devez lui attribuer une licence Archivage Exchange Online distincte pour l’inclure dans une stratégie de rétention. 
   
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>Fonctionnement d’une stratégie de rétention avec du contenu sur place
 
