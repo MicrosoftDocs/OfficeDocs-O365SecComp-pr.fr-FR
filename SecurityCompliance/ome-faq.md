@@ -12,16 +12,21 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Vous avez une question sur le fonctionnement des nouvelles fonctionnalités de protection de message dans Office 365 ? Recherchez une réponse ici.
-ms.openlocfilehash: 63bea478e144f42cabc67f7075cd52199d954d9c
-ms.sourcegitcommit: d3f3e2eb9ef05ebef85d83935a2cb0f7690ee6fe
+ms.openlocfilehash: e35495106b44ccb566f4da743264def8c7d4f96f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25495518"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696268"
 ---
 # <a name="office-365-message-encryption-faq"></a>FAQ sur le chiffrement de messages Office 365
 
-Vous avez une question sur le fonctionnement des nouvelles fonctionnalités de protection de message dans Office 365 ? Recherchez une réponse ici. En outre, jetez un œil à [Forum aux questions sur la protection de données dans Azure la Protection des informations](https://docs.microsoft.com/information-protection/get-started/faqs-rms) pour obtenir des réponses aux questions sur le service de protection des données, Azure Rights Management, dans la Protection des informations Azure. 
+Vous avez une question sur le fonctionnement des nouvelles fonctionnalités de protection de message dans Office 365 ? Recherchez une réponse ici. En outre, jetez un œil à [Forum aux questions sur la protection de données dans Azure la Protection des informations](https://docs.microsoft.com/information-protection/get-started/faqs-rms) pour obtenir des réponses aux questions sur le service de protection des données, Azure Rights Management, dans la Protection des informations Azure.
+
+||
+|:-----|
+|Cet article fait partie d’une plus grande série d’articles sur Office 365 Message Encryption. Cet article est destiné aux administrateurs et les professionnels de l’informatique. Si vous êtes simplement vous recherchez des informations sur l’envoi ou la réception d’un message chiffré, vous trouverez la liste des articles inclus dans [Office 365 Message Encryption (OME)](ome.md) et recherchez l’article qui vous convient le mieux à vos besoins. |
+||
   
 ## <a name="what-is-office-365-message-encryption-ome"></a>Nouveautés d’Office 365 Message Encryption (OME) ?
 
@@ -59,7 +64,7 @@ Pour plus d’informations sur BYOK, voir [planification et l’implémentation 
   
 ## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>OME et BYOK avec la Protection des informations Azure modifient l’approche de Microsoft pour les demandes de données tiers tels que comparaître ?
 
-Non. OME et l’option pour fournir et contrôler vos propres clés de chiffrement, appelées BYOK, à partir de la Protection des informations Azure ne sont pas conçus pour répondre à comparaître de l’application de la réglementation. OME, avec BYOK pour la Protection des informations Azure, a été conçu pour les clients de respect de la réglementation. Microsoft prend très au sérieux tiers demandes de données du client. En tant qu’un fournisseur de services en nuage, nous toujours représenter la confidentialité des données du client. En cas de nous obtenons aux citations à comparaître, nous toujours tenter de rediriger le tiers au client afin d’obtenir les informations. (Veuillez lire le blog de Brad Smith : [protéger les données de clients de gouvernement snooping](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Nous publier régulièrement des informations détaillées de la demande de que réception. Pour plus d’informations concernant les demandes de données tierce, consultez [réponse aux administrations et les demandes de l’application de la réglementation pour accéder aux données client](https://www.microsoft.com/en-us/trustcenter/privacy/govt-requests-for-data) sur le Center Trust Microsoft. En outre, voir « Divulgation des données du client » dans les [Termes du contrat de Services en ligne (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx).
+non. OME et l’option pour fournir et contrôler vos propres clés de chiffrement, appelées BYOK, à partir de la Protection des informations Azure ne sont pas conçus pour répondre à comparaître de l’application de la réglementation. OME, avec BYOK pour la Protection des informations Azure, a été conçu pour les clients de respect de la réglementation. Microsoft prend très au sérieux tiers demandes de données du client. En tant qu’un fournisseur de services en nuage, nous toujours représenter la confidentialité des données du client. En cas de nous obtenons aux citations à comparaître, nous toujours tenter de rediriger le tiers au client afin d’obtenir les informations. (Veuillez lire le blog de Brad Smith : [protéger les données de clients de gouvernement snooping](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Nous publier régulièrement des informations détaillées de la demande de que réception. Pour plus d’informations concernant les demandes de données tierce, consultez [réponse aux administrations et les demandes de l’application de la réglementation pour accéder aux données client](https://www.microsoft.com/en-us/trustcenter/privacy/govt-requests-for-data) sur le Center Trust Microsoft. En outre, voir « Divulgation des données du client » dans les [Termes du contrat de Services en ligne (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx).
   
 ## <a name="how-is-this-feature-related-to-legacy-office-365-message-encryption-ome-and-information-rights-management-irm-features"></a>Comment cette fonctionnalité est liée aux fonctionnalités d’Office 365 Message Encryption (OME) et Information Rights Management (IRM) héritées ?
 
@@ -85,7 +90,7 @@ Vous pouvez toujours utiliser la version précédente d’OME, il ne sera pas d�
   
 ## <a name="my-organization-uses-active-directory-rights-management-can-i-use-this-functionality"></a>Mon organisation utilise Active Directory Rights Management, puis-je utiliser cette fonctionnalité ?
 
-Non. Si vous utilisez Exchange Online avec Active Directory Rights Management Services AD RMS, vous ne pouvez pas activer ces nouvelles fonctionnalités immédiatement. Au lieu de cela, vous devez [migrer AD RMS pour la Protection des informations Azure](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) tout d’abord. 
+non. Si vous utilisez Exchange Online avec Active Directory Rights Management Services AD RMS, vous ne pouvez pas activer ces nouvelles fonctionnalités immédiatement. Au lieu de cela, vous devez [migrer AD RMS pour la Protection des informations Azure](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) tout d’abord. 
   
 ## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>Mon organisation possède un déploiement Exchange hybride. Puis-je utiliser cette fonctionnalité ?
 

@@ -1,5 +1,5 @@
 ---
-title: Analyse des données dans un jeu de travail d’eDiscovery avancée (Preview)
+title: Analyser les données dans un jeu de travail d’eDiscovery avancée (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,19 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: a6284204fd709bcf936688f36f38f6b3283b1f98
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 68a8b7586700a9bffe78f2b3a4ff419a1f85ba8a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607651"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695140"
 ---
-# <a name="analyzing-data-in-a-working-set-in-advanced-ediscovery-preview"></a>Analyse des données dans un jeu de travail d’eDiscovery avancée (Preview)
+# <a name="analyze-data-in-a-working-set-in-advanced-ediscovery-preview"></a>Analyser les données dans un jeu de travail d’eDiscovery avancée (Preview)
 
 Lorsque le nombre de documents collectées est important, il peut être très difficile passer en revue toutes les. Découverte avancée (Preview) fournit un certain nombre d’outils pour analyser les documents pour réduire le volume de documents à réviser sans perte d’informations et pour vous aider à organiser les documents de manière cohérente. Pour en savoir plus sur ces fonctionnalités, voir :
 
-- [Près de la détection des doublons](near-duplicates.md)
-- [Threads de courrier électronique](email-threading.md)
+- [Détecter des quasi-duplicatas](near-duplicates.md)
+- [Threading de messagerie](email-threading.md)
 - [Thèmes](themes.md)
 
 Pour analyser des données dans un jeu de travail :

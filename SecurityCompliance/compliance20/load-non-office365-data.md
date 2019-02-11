@@ -1,5 +1,5 @@
 ---
-title: Charger des données de non Office 365 dans un jeu de travail
+title: Charger les données ne provenant pas d’Office 365 dans un ensemble de travail
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 427b4c8c9dfffe351827a6869ae26a5356d646d8
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 1dad52075303450673e7f48b87e2952e35629a5e
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607688"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706085"
 ---
-# <a name="load-non-office-365-data-into-a-working-set"></a>Charger des données de non Office 365 dans un jeu de travail
+# <a name="load-non-office-365-data-into-a-working-set"></a>Charger les données ne provenant pas d’Office 365 dans un ensemble de travail
 
 Pas de tous les documents que vous devrez peut-être analyser avec Office 365 avancée de découverte électronique résidera dans Office 365. Avec le contenu Non-Office 365 importer la fonctionnalité de découverte avancé, que vous pouvez télécharger des documents qui ne live dans Office 365 dans un jeu de travail afin qu’il est analysé avec eDiscovery avancée. Cette procédure indique comment intégrer vos documents non Office 365 à eDiscovery avancée pour l’analyse.
 
@@ -30,14 +30,21 @@ Pas de tous les documents que vous devrez peut-être analyser avec Office 365 av
 
 ## <a name="before-you-begin"></a>Avant de commencer
 À l’aide de la fonctionnalité de téléchargement Non-Office 365 comme décrit dans cette procédure suppose que :
-* Un Office 365 E3 avec le module complémentaire de conformité avancée ou abonnement E5
-* Tous les dépositaires non Office 365 dont le contenu sera téléchargé doivent avoir E3 avec le module complémentaire de conformité avancée ou licences E5
-* Un cas de découverte électronique existant
-* Tous les fichiers de téléchargement regroupés dans les dossiers où il existe un dossier par dépositaire et nom des dossiers dans ce format *alias@domainname* . *alias@domainname* doit être domaine et l’alias d’utilisateurs Office 365. Vous pouvez regrouper tous les dossiers *alias@domainname* dans un dossier racine. Le dossier racine ne peut contenir les dossiers *alias@domainname* , il ne doit exister aucun fichier libre dans le dossier racine
-* Un compte qui est installé sur un ordinateur ayant accès à la structure de dossier contenu Office 365 eDiscovery administrateur Microsoft Azure stockage outils ou un gestionnaire eDiscovery.
-* Installer AzCopy, vous pouvez le faire à partir d’ici :https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
+
+- Un Office 365 E3 avec le module complémentaire de conformité avancée ou abonnement E5.
+
+- Tous les dépositaires non Office 365 dont le contenu sera téléchargé doivent avoir E3 avec le module complémentaire de conformité avancée ou licences E5.
+
+- Un cas de découverte électronique existant.
+
+- Tous les fichiers de téléchargement regroupés dans les dossiers où il existe un dossier par dépositaire et nom des dossiers dans ce format *alias@domainname* . *alias@domainname* doit être domaine et l’alias d’utilisateurs Office 365. Vous pouvez regrouper tous les dossiers *alias@domainname* dans un dossier racine. Le dossier racine ne peut contenir les dossiers *alias@domainname* , il ne doit exister aucun fichier libre dans le dossier racine.
+
+- Un compte qui est installé sur un ordinateur ayant accès à la structure de dossier contenu Office 365 eDiscovery administrateur Microsoft Azure stockage outils ou un gestionnaire eDiscovery.
+
+- Installez AzCopy, que vous pouvez effectuer à partir d’ici :https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Télécharger du contenu d’Office 365 en découverte avancée
+
 1. En tant qu’un gestionnaire eDiscovery ou eDiscovery administrateur, ouvrez eDiscovery avancé, puis le cas pour les données non Office 365 seront téléchargées.  Cliquez sur l’onglet **jeux de travail** , puis sélectionnez le jeu de travail que vous souhaitez charger les données Non-Office 365.  Si vous n’avez pas déjà créé un jeu de travail, vous pouvez le faire maintenant.  Enfin, cliquez sur **Gérer les rouages** puis **téléchargements affichage** dans la section de données Non-Office 365
 
 2. Cliquez sur le bouton **télécharger des fichiers** pour démarrer l’Assistant Importation de données Non-Office 365.

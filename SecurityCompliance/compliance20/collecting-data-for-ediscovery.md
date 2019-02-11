@@ -1,5 +1,5 @@
 ---
-title: Collecte de données pour un cas de découverte électronique avancée (Preview)
+title: Collecter des données pour un cas de découverte électronique avancée (Preview)
 ms.author: esclee
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 6964cc00d7ae78078aa0729bd5408abd5ed9542a
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 11e2c336512c91d65bd046c3022d5375ebecde4a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607694"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695050"
 ---
-# <a name="collecting-data-for-a-case-in-advanced-ediscovery-preview"></a>Collecte de données pour un cas de découverte électronique avancée (Preview)
+# <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>Collecter des données pour un cas de découverte électronique avancée (Preview)
 
 Une fois que vous avez identifié dépositaires et sources de données qui présentent un intérêt pour votre cas, il est temps pour identifier l’ensemble de documents pour approfondir. Vous pouvez utiliser l’outil de recherche de découverte électronique avancée (Preview) pour identifier des emplacements garde et non garde dans Office 365.
 

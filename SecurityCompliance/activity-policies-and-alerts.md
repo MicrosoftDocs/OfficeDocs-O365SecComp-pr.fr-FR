@@ -3,7 +3,7 @@ title: Stratégies d’activité et alertes pour Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 367f25d3-10a0-4a91-bdae-70ebb7a79c98
 description: Définir des stratégies d’activité avec Office 365 Cloud application sécurité pour définir des alertes se déclenche lorsque des activités spécifiques se produire ou se produire trop souvent. En définissant des stratégies pour déclencher les alertes, vous pourrez être averti et surveiller les activités spécifiques.
-ms.openlocfilehash: 6f5039d09dea98de970ab4bd28e95a6cfad73db4
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: af364e7ff96f6d18b60d3267c5992d4c5533ea8c
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015006"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29604091"
 ---
 # <a name="activity-policies-and-alerts-in-office-365-cloud-app-security"></a>Stratégies d’activité et alertes pour Office 365 Cloud App Security
 
@@ -47,42 +47,25 @@ Vérifiez que :
     
 ## <a name="create-a-new-activity-policy"></a>Créer une nouvelle stratégie d’activité
 
-1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école. 
-    
-2. Dans la sécurité &amp; centre de conformité, sélectionnez **alertes** \> **Gestion avancée des alertes**.
-    
-3. Cliquez sur **Aller à la sécurité d’application Office 365 dans le nuage**.
-    
-    Vous accédez à la page de stratégies de sécurité des applications Office 365 dans le nuage.
-    
-    ![Lorsque vous accédez au portail Office 365 Cloud Application Security, vous démarrez avec la page de stratégies](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)
+1. En tant qu’un administrateur global ou administrateur de sécurité, accédez au portail de sécurité des applications dans le nuage ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) et se connecter. <br>Vous accédez à la page de stratégies de sécurité des applications Office 365 dans le nuage.<br>![Lorsque vous accédez au portail Office 365 Cloud Application Security, vous démarrez avec la page de stratégies](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)
   
-4. Cliquez sur **créer une stratégie**, puis sélectionnez la **stratégie de l’activité**.
-    
-    ![Lorsque vous créez une stratégie dans O365 autorités de certification, vous pouvez choisir entre les stratégies de l’activité et de détection des anomalies.](media/79f34535-ddf9-4a5b-a0a3-8766bf9c174c.png)
+2. Cliquez sur **créer une stratégie**, puis sélectionnez la **stratégie de l’activité**.<br>![Lorsque vous créez une stratégie dans O365 autorités de certification, vous pouvez choisir entre les stratégies de l’activité et de détection des anomalies.](media/79f34535-ddf9-4a5b-a0a3-8766bf9c174c.png)
   
-5. Dans la page **créer une stratégie activité** , spécifiez le **nom de la stratégie** et la **Description**. Pour baser votre stratégie sur un modèle par défaut, choisissez dans la liste **modèle de stratégie** , ou créer votre propre stratégie sans utiliser de modèle. 
-    
-    ![Vous pouvez créer des stratégies de l’activité avec Office 365 Cloud Application Security.](media/4083a76f-7074-4d6a-8200-6d76d49259d7.png)
+3. Dans la page **créer une stratégie activité** , spécifiez le **nom de la stratégie** et la **Description**. Pour baser votre stratégie sur un modèle par défaut, choisissez dans la liste **modèle de stratégie** , ou créer votre propre stratégie sans utiliser de modèle.<br>![Vous pouvez créer des stratégies de l’activité avec Office 365 Cloud Application Security.](media/4083a76f-7074-4d6a-8200-6d76d49259d7.png)
   
-6. Choisissez une **gravité stratégie** (faible, moyen ou élevé) qui mesure grave comment il doit vous si cette stratégie déclenche une alerte. Cela vous permettra de filtrer les alertes lorsque vous êtes de les consulter ultérieurement. 
+4. Choisissez une **gravité stratégie** (faible, moyen ou élevé) qui mesure grave comment il doit vous si cette stratégie déclenche une alerte. Cela vous permettra de filtrer les alertes lorsque vous êtes de les consulter ultérieurement. 
     
-7. Choisissez une **catégorie** pour cette stratégie. Cela vous permettra de filtrer et trier les alertes qui ont été déclenchés, ou aux stratégies de groupe, lorsque vous êtes en examinant les apporter des modifications. 
+5. Choisissez une **catégorie** pour cette stratégie. Cela vous permettra de filtrer et trier les alertes qui ont été déclenchés, ou aux stratégies de groupe, lorsque vous êtes en examinant les apporter des modifications. 
     
-8. Choisissez **filtres d’activité** pour configurer d’autres actions ou les mesures qui déclenchent une alerte basée sur cette stratégie. 
+6. Choisissez **filtres d’activité** pour configurer d’autres actions ou les mesures qui déclenchent une alerte basée sur cette stratégie. 
     
-9. Sous l' **activité correspondent aux paramètres**, spécifiez si une violation de stratégie sera déclenchée lorsqu’une activité unique établit une correspondance avec les filtres, ou si un nombre spécifié d’activités est requise avant les déclencheurs de l’alerte.
+7. Sous l' **activité correspondent aux paramètres**, spécifiez si une violation de stratégie sera déclenchée lorsqu’une activité unique établit une correspondance avec les filtres, ou si un nombre spécifié d’activités est requise avant les déclencheurs de l’alerte.<br>Si vous sélectionnez **activité répétée**, spécifiez le nombre d’activités, le critère de temps, et si une violation de compte pour un utilisateur au sein d’une application spécifique ou pour le même utilisateur avec n’importe quelle application.
     
-    Si vous sélectionnez **activité répétée**, spécifiez le nombre d’activités, le critère de temps, et si une violation de compte pour un utilisateur au sein d’une application spécifique ou pour le même utilisateur avec n’importe quelle application.
-    
-10. Si vous le souhaitez, vous pouvez sélectionner **alerte créer** pour créer des alertes supplémentaires pour recevoir des notifications de cette stratégie (via le courrier électronique, message texte ou les deux). 
-    
-    > [!IMPORTANT]
-    > Assurez-vous que votre fournisseur de messagerie électronique ne bloque pas les messages électroniques envoyés à partir de no-reply@cloudappsecurity.com. 
+8. Si vous le souhaitez, vous pouvez sélectionner **alerte créer** pour créer des alertes supplémentaires pour recevoir des notifications de cette stratégie (via le courrier électronique, message texte ou les deux).<br>**Vous assurer que votre fournisseur de messagerie électronique ne bloque pas les messages électroniques envoyés à partir de `no-reply@cloudappsecurity.com` **. 
   
-11. Choisissez les **Actions** à entreprendre lors du déclenche d’une alerte de suspendre l’utilisateur ou de l’utilisateur doit se reconnecter pour que les applications Office 365. 
+9. Choisissez les **Actions** à entreprendre lors du déclenche d’une alerte de suspendre l’utilisateur ou de l’utilisateur doit se reconnecter pour que les applications Office 365. 
     
-12. Cliquez sur **créer** pour terminer la création de votre stratégie. 
+10. Cliquez sur **créer** pour terminer la création de votre stratégie. 
     
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: Cet article explique comment Office 365 atténue contre les attaques par hameçonnage qu’utilise falsifié expéditeur domaines, c'est-à-dire, qui sont usurpés. Pour ce faire, il analyse les messages et le blocage de celles qui peuvent être authentifiés neithe à l’aide des méthodes d’authentification standard de courrier électronique, ni les autres techniques de réputation de l’expéditeur. Cette modification est en cours implémentée pour réduire le nombre d’organisations dans Office 365 sont affichent dans les attaques par phishing.
-ms.openlocfilehash: 19e7ea957592a486a559dac222a51139bf79b574
-ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
+ms.openlocfilehash: 4ce195feae002e468d1b6ed61c6b186af7f8950d
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27769858"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29614508"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protection anti-usurpation dans Office 365
 
 Cet article explique comment Office 365 atténue contre les attaques par hameçonnage qu’utilise falsifié expéditeur domaines, c'est-à-dire, qui sont usurpés. Il y parvient en analysant les messages et de blocage de ceux qui ne peuvent pas être authentifiés à l’aide des méthodes d’authentification standard de courrier électronique, ni les autres techniques de réputation de l’expéditeur. Cette modification est en cours implémentée pour réduire le nombre de clients sont exposés à des attaques de phishing.
   
-Cet article décrit également pourquoi ce changement est effectué, comment les clients peuvent préparer à cette modification, comment afficher les messages qui seront affectés, comment créer des rapports sur les messages, comment limiter le nombre de faux positifs, ainsi que comment expéditeurs à Microsoft doivent préparer modifier.
+Cet article décrit également pourquoi ce changement est effectué, comment les clients peuvent préparer à cette modification, comment afficher les messages qui seront affectés, comment créer des rapports sur les messages, comment limiter le nombre de faux positifs, ainsi que comment expéditeurs à Microsoft doivent préparer changement.
   
 La technologie anti-usurpation de Microsoft a été initialement déployée à ses organisations qui avaient un abonnement à Office 365 entreprise E5 ou avaient acheté module complémentaire de leur abonnement Office 365 Advanced Threat Protection (DAV). À compter d’octobre, 2018, nous avons étendu la protection pour les organisations ayant ainsi que Exchange Online Protection (EOP). En outre, en raison de la manière que tous nos filtres Découvrez chacun des autres utilisateurs Outlook.com peuvent également être affectées.
   
@@ -99,7 +99,7 @@ Authentication-Results:
 |||
 |:-----|:-----|
 |**Reason**|**Description**|
-|0XX|Message d’échec de l’authentification composite.<br/>**000** signifie que le message d’échec de DMARC avec une action de rejet ou mise en quarantaine.                    -001 signifie que le message d’échec de l’authentification de courrier électronique implicite. Cela signifie que le domaine ne dispose pas d’enregistrements d’authentification e-mail publiés, ou si c’était le cas, il était une stratégie de défaillance plus faible (échec logicielle SPF ou neutre, stratégie DMARC de p = none).<br/>**002** signifie que de l’organisation dispose d’une stratégie pour la paire de l’expéditeur ou du domaine qui est interdite explicitement d’envoyer l’e-mail falsifié, ce paramètre est défini manuellement par un administrateur.  <br/>**010** signifie que le message a échoué DMARC avec une action de rejet ou mise en quarantaine, et le domaine est un des domaines acceptés de votre organisation (Cela fait partie de self-à-self ou interne à l’organisation, l’usurpation d’identité).  <br/>**011** signifie que le message d’échec de l’authentification de courrier électronique implicite et le domaine est un des domaines acceptés de votre organisation (Cela fait partie de self-à-self ou interne à l’organisation, l’usurpation d’identité).|
+|0XX|Message d’échec de l’authentification composite.<br/>**000** signifie que le message d’échec de DMARC avec une action de rejet ou mise en quarantaine.  <br/>**001** signifie que le message d’échec de l’authentification de courrier électronique implicite. Cela signifie que le domaine ne dispose pas d’enregistrements d’authentification e-mail publiés, ou si c’était le cas, il était une stratégie de défaillance plus faible (échec logicielle SPF ou neutre, stratégie DMARC de p = none).<br/>**002** signifie que de l’organisation dispose d’une stratégie pour la paire de l’expéditeur ou du domaine qui est interdite explicitement d’envoyer l’e-mail falsifié, ce paramètre est défini manuellement par un administrateur.  <br/>**010** signifie que le message a échoué DMARC avec une action de rejet ou mise en quarantaine, et le domaine est un des domaines acceptés de votre organisation (Cela fait partie de self-à-self ou interne à l’organisation, l’usurpation d’identité).  <br/>**011** signifie que le message d’échec de l’authentification de courrier électronique implicite et le domaine est un des domaines acceptés de votre organisation (Cela fait partie de self-à-self ou interne à l’organisation, l’usurpation d’identité).|
 |Tous les autres codes (1xx, 2xx, 3xx, 4xx, 5xx)|Correspond à différents codes internes pour la raison pour laquelle un message authentification implicite ou n’eu aucune authentification mais aucune action n’a été appliquée.|
    
 En examinant les en-têtes d’un message, un administrateur ou même un utilisateur final peut déterminer comment Office 365 arrive à la conclusion que l’expéditeur peut être usurpé.
@@ -415,20 +415,20 @@ En règle générale, la stratégie appliquée à un message est identifiée dan
 |**Priority (Priorité)**|**Stratégie**|**Catégorie**|**Où gérée ?**|**S'applique à**|
 |:-----|:-----|:-----|:-----|:-----|
 |1  <br/> |Malware :   <br/> |MALW  <br/> |[Stratégie de programmes malveillants](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
-|2  <br/> |Hameçonnage  <br/> |PHSH  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
-|3  <br/> |Courrier indésirable à probabilité élevée  <br/> |HSPM  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
-|4  <br/> |L’usurpation d’identité  <br/> |USURPATION D’IDENTITÉ  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553), [aide à la décision usurpation d’identité](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Toutes les organisations  <br/> |
-|5  <br/> |Courrier indésirable  <br/> |MONITEUR DE PORT STANDARD  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
-|6  <br/> |En bloc  <br/> |EN BLOC  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
-|7  <br/> |Emprunt d’identité de domaine  <br/> |DIMP  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organisations avec DAV  <br/> |
-|8  <br/> |Emprunt d’identité de l’utilisateur  <br/> |UIMP  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organisations avec DAV <br/> |
+|2   <br/> |Hameçonnage  <br/> |PHSH  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
+|3   <br/> |Courrier indésirable à probabilité élevée  <br/> |HSPM  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
+|4   <br/> |L’usurpation d’identité  <br/> |USURPATION D’IDENTITÉ  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553), [aide à la décision usurpation d’identité](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Toutes les organisations  <br/> |
+|5   <br/> |Courrier indésirable  <br/> |MONITEUR DE PORT STANDARD  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
+|6   <br/> |En bloc  <br/> |EN BLOC  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
+|7   <br/> |Emprunt d’identité de domaine  <br/> |DIMP  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organisations avec DAV  <br/> |
+|8   <br/> |Emprunt d’identité de l’utilisateur  <br/> |UIMP  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organisations avec DAV <br/> |
    
 Si vous disposez de plusieurs stratégies Anti-hameçonnage différents, celui dont la priorité la plus élevée s’appliquera. Par exemple, supposons que vous avez deux stratégies :
   
 |**Stratégie**|**Priority (Priorité)**|**Emprunt d’identité de l’utilisateur ou du domaine**|**Anti-l’usurpation d’identité**|
 |:-----|:-----|:-----|:-----|
 |A  <br/> |1  <br/> |On  <br/> |Off  <br/> |
-|B  <br/> |2  <br/> |Off  <br/> |On  <br/> |
+|B  <br/> |2   <br/> |Off  <br/> |On  <br/> |
    
 Si un message est proposé sous et est identifié en tant que l’emprunt d’identité à la fois l’usurpation d’identité et l’utilisateur et le même ensemble d’utilisateurs porte sur la stratégie A et B de la stratégie, puis le message est traité comme une usurpation d’identité mais aucune action n’est appliquée depuis anti-usurpation d’identité est désactivé , et l’usurpation d’identité s’exécute à une priorité plus élevée (4) à l’utilisateur d’emprunt d’identité (8).
   

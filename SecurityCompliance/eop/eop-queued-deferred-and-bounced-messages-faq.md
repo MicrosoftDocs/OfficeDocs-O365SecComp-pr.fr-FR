@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
 description: Cette rubrique fournit des réponses aux questions fréquemment posées sur les messages mis en file d'attente, différés ou retournés lors du processus de filtrage Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 17e5955195c4e38299712fb9161822984b2a643a
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 4b2c902adacd6e72e587aadaceecd22dd0084d85
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026221"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686424"
 ---
 # <a name="eop-queued-deferred-and-bounced-messages-faq"></a>Questions fréquemment posées sur les messages mis en file d'attente, différés et retournés dans EOP
 
@@ -32,7 +32,7 @@ R. Les messages sont retenus s'il est impossible d'établir une connexion au ser
   
  **Q. Combien de temps un message reste-t-il en attente et quel est l'intervalle des nouvelles tentatives ?**
   
-R. Les messages différés resteront dans nos files d'attente pendant 2 jours. Les nouvelles tentatives d'envoi de message sont basées sur les erreurs que nous recevons à partir du système de messagerie du destinataire. En moyenne, les messages sont renvoyés toutes les 5 minutes.
+A messages report reste dans nos files d’attente pendant deux jours. Nouvelle tentative est basées sur l’erreur, que nous obtenons à partir du système de messagerie du destinataire. Premières Reports peu sont 15 minutes ou moins, avec des tentatives suivantes (sur la dizaine de moitié suivant ou ainsi) en augmentant l’intervalle sur plusieurs tentatives pour un maximum de 60 minutes. Le développement de durée intervalle est dynamique, en tenant compte de plusieurs variables, telles que les tailles de file d’attente et la priorité du message interne. Dans basic, il est de 15 minutes (ou moins) pour démarrer, puis en développant à partir de là sur les quelques heures suivant à 60 minutes maximum.
   
  **Q. Après la restauration du serveur de messagerie, comment les messages mis en file d'attente sont-ils distribués ?**
   

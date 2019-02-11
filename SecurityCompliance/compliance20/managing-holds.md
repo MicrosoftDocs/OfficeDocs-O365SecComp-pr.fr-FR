@@ -1,5 +1,5 @@
 ---
-title: Gestion des suspensions d’eDiscovery avancée (Preview)
+title: Gérer les suspensions d’eDiscovery avancée (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 861b8fb8c0595f4ede0327d7426650d21046eba3
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 476ea80e61b5354c53368613e29a79c55a50276f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607703"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695180"
 ---
-# <a name="managing-holds-in-advanced-ediscovery-preview"></a>Gestion des suspensions d’eDiscovery avancée (Preview)
+# <a name="manage-holds-in-advanced-ediscovery-preview"></a>Gérer les suspensions d’eDiscovery avancée (Preview)
 
 Vous pouvez utiliser un cas eDiscovery avancées (Preview) pour créer des suspensions pour conserver le contenu qui peut-être s’appliquer à votre cas. À l’aide de la découverte électronique avancée (Preview) maintenez les fonctionnalités, vous pouvez placer les suspensions sur dépositaires et leurs sources de données. En outre, vous pouvez placer une suspension non garde sur les boîtes aux lettres et OneDrive pour les sites de l’entreprise. Vous pouvez également placer une suspension sur la boîte aux lettres de groupe, du site SharePoint et OneDrive pour le site de l’entreprise pour un groupe d’Office 365. De même, vous pouvez placer une suspension sur le site qui sont associés à Microsoft Teams et de boîte aux lettres. Lorsque vous placez les emplacements de contenu en attente, le contenu est conservé jusqu'à ce que vous libérez le dépositaire, supprimez un emplacement de données spécifique ou supprimez la totalité de la stratégie de blocage.
 

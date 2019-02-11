@@ -1,5 +1,5 @@
 ---
-title: Gestion d’un incident débordements de données dans Microsoft 365
+title: Gérer un incident débordements de données dans Microsoft 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article décrit l’utilisation du nouvel outil enquêtes (Preview) de données dans le centre de conformité de & sécurité pour Microsoft Office 365 pour gérer un incident débordements de données.
-ms.openlocfilehash: d863d87cc667b9695f9bf619c35575715dfa144e
-ms.sourcegitcommit: 98ec28932ae20e848f9f489c3c78e4a7edab6d18
+ms.openlocfilehash: d7adc17d01a0ae2ad6b7bfb7052862a5a6419882
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29636618"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706175"
 ---
-# <a name="managing-a-data-spillage-incident-in-microsoft-365"></a>Gestion d’un incident débordements de données dans Microsoft 365 
+# <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Gérer un incident débordements de données dans Microsoft 365 
 
 Débordements de données est lorsque l’utilisateur relâche un document confidentiel dans un environnement non fiable. Lorsqu’un incident débordements de données est détecté, il est important évaluer rapidement la taille et l’emplacement de l’écoulement, examinez les activités utilisateur et puis vider définitivement les données dispersées à partir du système.
 
@@ -111,8 +111,8 @@ Lors de l’enquête, accédez à l’onglet **Incidents** et cliquez sur l’in
 
 Pour regrouper les documents et obtenir une assistance supplémentaire pour révision, cliquez sur **Gérer les incidents**. Dans la fenêtre **Analytique** , cliquez sur **analyser**. Cela s’exécutera analytique avancées telles que la détection des doublons, messagerie threading et l’analyse du thème. Pour plus d’informations, voir :
 
-- [Près de la détection des doublons](near-duplicates.md)
-- [Threads de courrier électronique](email-threading.md)
+- [Détecter des quasi-duplicatas](near-duplicates.md)
+- [Threading de messagerie](email-threading.md)
 - [Thèmes](themes.md)
 
 Pour déterminer les utilisateurs qui sont impliqués dans les débordements de données, vous pouvez créer une nouvelle requête dans l’incident et utiliser ensuite l’expéditeur/auteur et les conditions de destinataires. Cela créera une liste de tous les expéditeurs, les destinataires et les auteurs de données collectées qui a été ajoutées à l’incident. Veillez à examiner la liste pour déterminer si des utilisateurs externes sont dans la liste. Pour plus d’informations, voir [conditions de recherche](../keyword-queries-and-search-conditions.md#search-conditions).
@@ -130,7 +130,7 @@ Notez que si la récupération d’élément unique est activée pour les boîte
 
 ### <a name="deleting-site-items"></a>Suppression d’éléments de site
 
-Pour supprimer définitivement un document à partir d’un site SharePoint ou un OneDrive pour un compte professionnel, vous devez supprimer et vous devrez supprimer à partir du site, puis supprimez-le de la Corbeille de la collection de sites. Pour obtenir des instructions, consultez la rubrique [suppression des documents dans SharePoint et OneDrive](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#deleting-documents-in-sharepoint-online-and-onedrive-for-business).
+Pour supprimer définitivement un document à partir d’un site SharePoint ou un OneDrive pour un compte professionnel, vous devez supprimer et vous devrez supprimer à partir du site, puis supprimez-le de la Corbeille de la collection de sites. Pour obtenir des instructions, consultez la rubrique [Supprimer des documents dans SharePoint et OneDrive](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#deleting-documents-in-sharepoint-online-and-onedrive-for-business).
 
 Vous pouvez également supprimer une collection de sites contenant des données dispersées. Pour plus d’informations, voir [suppression d’une collection de sites](https://docs.microsoft.com/sharepoint/delete-site-collection).
 
@@ -141,6 +141,7 @@ Après la suppression de documents dans les emplacements de contenu source (boî
 Pour supprimer une enquête :
 
 1. Sous l’onglet **paramètres** , cliquez sur **informations de l’enquête**.
+
 2. Cliquez sur **Supprimer le cas**. 
 
 Si vous n’avez pas besoin de supprimer l’enquête ou si vous souhaitez enregistrer les informations que vous avez collectées lors de l’enquête, vous pouvez cliquer sur **Fermer le cas**. Ultérieurement, vous pouvez rouvrir enquêtes fermés.

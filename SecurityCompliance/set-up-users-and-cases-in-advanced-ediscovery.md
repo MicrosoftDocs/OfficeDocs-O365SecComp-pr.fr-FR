@@ -1,5 +1,5 @@
 ---
-title: Configurer les utilisateurs et les cas dans Office 365 avancée de découverte électronique
+title: Configurer des utilisateurs et des cas dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: 'Découvrez comment configurer les rôles d’utilisateur, de créer des cas et affecter des utilisateurs au cas dans Office 365 avancée de découverte électronique.  '
-ms.openlocfilehash: 49f76b415d86035cecafc19c23b36c413f7576e5
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4c0043b7651cc82272492e19faf01041c6f67932
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528359"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29559057"
 ---
-# <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>Configurer les utilisateurs et les cas dans Office 365 avancée de découverte électronique
+# <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>Configurer des utilisateurs et des cas dans Office 365 Advanced eDiscovery
 
 Cette rubrique décrit comment configurer les utilisateurs et les cas eDiscovery Office 365 avancés.
   
 > [!NOTE]
-> Découverte avancée nécessite un Office 365 E3 avec le module complémentaire de conformité avancée ou un abonnement E5 pour votre organisation. Si vous n’avez qu’un plan d’et essayer eDiscovery avancé, vous pouvez [inscrire à une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="prerequisites"></a>Conditions préalables
 
@@ -59,9 +59,7 @@ Une fois que vous créez un cas eDiscovery et ajoutez des membres, vous (ou un m
   
 ## <a name="see-also"></a>Voir aussi
 
-[eDiscovery avancée Office 365](office-365-advanced-ediscovery.md)
+[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
 [Préparation des données](prepare-data-for-advanced-ediscovery.md)
-  
-[Accès et rôles d’utilisateur](user-roles-and-access-in-advanced-ediscovery.md)
-
+ 

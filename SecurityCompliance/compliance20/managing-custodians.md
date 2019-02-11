@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5f29ef72ed885ab268292667e6e5fd2f53c4d15a
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 4dd2c44b40b5d458f9b200c249fe2f9bb16f83e0
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607704"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706015"
 ---
-# <a name="working-with-custodians-in-advanced-ediscovery-preview"></a>Utilisation de dépositaires d’eDiscovery avancée (Preview)
+# <a name="work-with-custodians-in-advanced-ediscovery-preview"></a>Utilisation de dépositaires d’eDiscovery avancée (Preview)
 
 Souvent, lorsqu’une organisation répond à une enquête juridique, le flux de travail autour de collecte, identification et conservation du contenu potentiellement pertinent repose sur dépositaires personnes ou des données au sein de leur organisation. Dans la découverte électronique, ces personnes sont appelées dépositaires de données et sont définis en tant que « personnes ayant contrôle administratif de document ou de fichier électronique ». Par exemple, le dépositaire des données d’un message électronique peut être le propriétaire de la boîte aux lettres qui contient le message approprié.  
 
@@ -31,11 +31,11 @@ Dans un cas eDiscovery avancées (Preview), juridique les équipes peuvent ajout
 
 Pour plus d’informations sur l’utilisation des dépositaires, voir les articles suivants : 
 
-- [Ajouter des dépositaires à un cas](add-custodians-to-case.md)
+- [Ajouter des consignataires à un cas](add-custodians-to-case.md)
 
-- [Dépositaires en cas de gestion](manage-new-custodians.md)
+- [Gérer les dépositaires dans un cas](manage-new-custodians.md)
 
-- [Affichage de l’activité dépositaire](view-custodian-activity.md)
+- [Afficher l’activité des consignataires](view-custodian-activity.md)
 
 ## <a name="roles-and-permissions"></a>Rôles et autorisations
 

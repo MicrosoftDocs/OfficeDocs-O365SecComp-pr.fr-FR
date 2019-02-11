@@ -1,5 +1,5 @@
 ---
-title: Afficher les statistiques de mots clés pour les résultats de recherche de contenu
+title: Afficher les statistiques de mot clé pour les résultats de recherche de contenu
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: Utiliser la fonctionnalité de statistiques de la recherche pour afficher et comparer les statistiques pour plusieurs recherches de contenu de la sécurité Office 365 &amp; centre de conformité. Vous pouvez également configurer la liste des mots clés lorsque vous créez ou modifiez une requête de recherche pour obtenir les statistiques améliorées montrant le nombre d’éléments mis en correspondance chaque mot clé ou une phrase de mots clés.
-ms.openlocfilehash: cb71b30b32ff6a24cd68ea5728063c2997d8ada0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0f0258f228e296e48def8de16aabc068901dffc7
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528166"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "27209805"
 ---
-# <a name="view-keyword-statistics-for-content-search-results"></a>Afficher les statistiques de mots clés pour les résultats de recherche de contenu
+# <a name="view-keyword-statistics-for-content-search-results"></a>Afficher les statistiques de mot clé pour les résultats de recherche de contenu
 
 Après avoir créé et exécuter une recherche de contenu, vous pouvez afficher des statistiques sur les résultats de recherche estimés. Cela inclut un résumé des résultats de recherche (comme le résumé de l’estimation des résultats de recherche affichés dans le volet de détails), les statistiques de requête tels que le nombre d’emplacements de contenu avec les éléments qui correspondent à la requête de recherche et le nom des emplacements de contenu dont les éléments correspondants plus. Vous pouvez afficher des statistiques pour une ou plusieurs recherches de contenu. Cela vous permet pour comparer les résultats de plusieurs recherches rapidement et de prendre des décisions concernant l’efficacité de vos requêtes de recherche.
   
@@ -100,6 +100,10 @@ Pour afficher les statistiques de recherches de contenu :
 ## <a name="get-keyword-statistics-for-content-searches"></a>Obtenir les statistiques de mots clés pour les recherches de contenu
 
 Précédente comme expliqué, la page de **requêtes** affiche la requête de recherche et le nombre (et la taille) d’éléments qui correspondent à la requête. Si vous utilisez une liste de mots-clés lorsque vous créez ou modifiez une requête de recherche, vous pouvez obtenir les statistiques améliorées montrant le nombre d’éléments correspondent à chaque mot clé ou une phrase de mots clés. Cela peut vous aider à identifier rapidement les parties de la requête sont les plus (et moins) efficaces. Par exemple, si un mot clé renvoie un grand nombre d’éléments, vous pouvez choisir d’affiner la requête de mot clé pour limiter les résultats de recherche. Vous pouvez configurer une liste des mots clés lorsque vous créez ou modifiez une recherche de contenu. 
+
+
+
+
   
 Pour créer une liste des mots clés et afficher les statistiques de mots clés pour une recherche de contenu :
   
@@ -130,3 +134,6 @@ Pour créer une liste des mots clés et afficher les statistiques de mots clés 
     - La requête de recherche pour chaque mot clé, qui inclut toutes les conditions de la requête de recherche. 
     
     - La requête de recherche complète (identifié comme **principale** dans la colonne **composant** ) et les statistiques de la requête terminée. Notez que ce sont les mêmes statistiques affichés sur la page de **Résumé** . 
+
+> [!NOTE]
+> Pour réduire les problèmes causés par mot clé grandes listes, vous êtes limité à un maximum de 20 lignes dans la liste des mots clés d’une requête de recherche.

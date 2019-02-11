@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d9a7dc6b1c2eeffdcd49be64d1d09d4a2bda782b
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 88d2e64f4e1fb519955d8970b34e9670fb18d3f8
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607691"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706105"
 ---
-# <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>Ajouter des dépositaires à une découverte électronique avancée (Preview) cas
+# <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>Ajouter des dépositaires à une affaire eDiscovery avancées (Preview)
 
 À l’aide de la découverte électronique avancée (Preview), vous pouvez utiliser l’outil de gestion intégrés dépositaire pour coordonner votre flux de travail autour de la gestion des dépositaires et identification des sources de données pertinentes, garde au sein d’un cas. Lorsque vous ajoutez un dépositaire, le système peut automatiquement identifier et archives permanentes dans leur boîte aux lettres Exchange principale et de OneDrive pour le site de l’entreprise. Lorsque vous effectuez votre recherche, vous pouvez également découvrir et mapper les autres boîtes aux lettres ou les sites qu’un dépositaire accessible dans le passé ou des équipes qu’un dépositaire est un membre de la journée.
 

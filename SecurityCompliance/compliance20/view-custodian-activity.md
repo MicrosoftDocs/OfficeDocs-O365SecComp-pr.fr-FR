@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8219ae8a061f6d08dd37da5b7f2974dd86c68f04
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 34e3fe207cf440c5992cdba7186e919a3968db22
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607660"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706145"
 ---
-# <a name="viewing-custodian-audit-activity"></a>Affichage de l’activité d’audit de dépositaire
+# <a name="view-custodian-audit-activity"></a>Afficher l’activité d’audit dépositaire
 
 Vous devez trouver si un utilisateur affiché d’un document spécifique ou purgés un élément à partir de leur boîte aux lettres ? Découverte avancée (Preview) est désormais intégré à l’outil de recherche de journal d’audit existant dans le centre de conformité de & sécurité. À l’aide de cette expérience incorporée, vous pouvez utiliser l’outil de gestion de dépositaire eDiscovery avancées (Preview) pour faciliter vos recherches en accédant à facilement et de recherche de l’activité de dépositaires dans votre cas.
 
@@ -101,8 +101,4 @@ Vous pouvez exporter les résultats d’une recherche de journal d’audit pour 
 
 3. Après avoir sélectionné une option d’exportation, un message s’affiche en bas de la fenêtre qui vous invite à ouvrir le fichier CSV, enregistrez-le dans le dossier téléchargements ou enregistrez-le dans un dossier spécifique
 
-[!NOTE] 
- Pour plus d’informations sur l’affichage, le filtrage ou l’exportation des résultats de recherche du journal d’audit, voir :
-   - Afficher la liste des activités d’auditées 
-   - Avant de commencer : Les journaux d’Audit unifiée
- 
+Pour plus d’informations sur l’affichage, le filtrage, ou l’exportation des résultats de recherche du journal d’audit, voir [recherche d’audit de l’ouvrir une session dans le centre de conformité de & Office 365 sécurité](../search-the-audit-log-in-security-and-compliance.md).

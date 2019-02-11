@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article décrit la nouvelle version de découverte avancée (Preview) dans Microsoft 365.
-ms.openlocfilehash: bcf10f5154723709b1cde761b0e8d02540341a26
-ms.sourcegitcommit: 98ec28932ae20e848f9f489c3c78e4a7edab6d18
+ms.openlocfilehash: 90bcbd4cae1e410e1544352a776ba4cbbedfa429
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29636617"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695060"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Notes de publication de données enquêtes (Preview) dans Microsoft 365
 
-Vous pouvez utiliser le nouvel outil données enquêtes (Preview) dans Microsoft 365 triage, examiner et corriger les données liées incidents, par exemple un incident débordements de données ou une enquête interne. Les enquêtes de visualisation de données Public offre Profitez d’un accès aux mises à jour et les fonctionnalités à venir. Pour accéder au plus tôt aux fonctionnalités plus récentes, créez une nouvelle enquête dans les enquêtes de données (Preview) dans le centre de conformité de & Office 365 sécurité. Pour en savoir plus, voir [Gestion d’un incident débordements de données dans Microsoft 365](manage-data-spillage-incidents.md).
+Vous pouvez utiliser le nouvel outil données enquêtes (Preview) dans Microsoft 365 triage, examiner et corriger les données liées incidents, par exemple un incident débordements de données ou une enquête interne. Les enquêtes de visualisation de données Public offre Profitez d’un accès aux mises à jour et les fonctionnalités à venir. Pour accéder au plus tôt aux fonctionnalités plus récentes, créez une nouvelle enquête dans les enquêtes de données (Preview) dans le centre de conformité de & Office 365 sécurité. Pour en savoir plus, consultez la rubrique [gérer un incident débordements de données dans Microsoft 365](manage-data-spillage-incidents.md).
 
 ## <a name="whats-new"></a>Nouveautés 
 

@@ -3,6 +3,7 @@ title: Aide et procédures office 365 sécurité des applications dans le nuage
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 12/03/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: ade98409-a15e-4de3-8c06-8e748f5b7e96
 description: Rechercher du contenu d’aide pour la gestion de la sécurité avancée dans Office 365, maintenant appelé sécurité d’application Office 365 dans le nuage.
-ms.openlocfilehash: d38b12afe50ac56b3047b24d68c9c00d3bcbf602
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 45f45812251d17a7a58d8c5f6cbd23d27407daf1
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706268"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "27131834"
 ---
 # <a name="office-365-cloud-app-security-help-and-how-to"></a>Aide et procédures office 365 sécurité des applications dans le nuage
   
@@ -28,21 +29,21 @@ Avec Office 365 de sécurité application Cloud, les administrateurs globaux, le
   
 ## <a name="help-content-for-office-365-cloud-app-security"></a>Contenu de l’aide Office 365 nuage sécurité des applications
 
-|**Tâche**|**Ressources**|
+|**Tâche**|**Resources**|
 |:-----|:-----|
-|Obtenir une vue d’ensemble de la sécurité d’application Office 365 dans le nuage  <br/> |[Vue d’ensemble de la sécurité des applications cloud Office 365](office-365-cas-overview.md) <br/> [Se préparer pour Office 365 Cloud App Security](get-ready-for-office-365-cas.md) <br/> [Exemples d’utilisation de sécurité Office 365 Cloud application et le Guide d’utilisation](https://aka.ms/O365CASGuide) <br/> |
+|Obtenir une vue d’ensemble de la sécurité d’application Office 365 dans le nuage  <br/> |[Vue d’ensemble de la sécurité des applications cloud Office 365](office-365-cas-overview.md) <br/> [Se préparer pour la sécurité des applications cloud Office 365](get-ready-for-office-365-cas.md) <br/> [Exemples d’utilisation de sécurité Office 365 Cloud application et le Guide d’utilisation](https://aka.ms/O365CASGuide) <br/> |
 |Activer la sécurité d’application Office 365 dans le nuage pour votre organisation  <br/> |[Activer ou désactiver la recherche dans un journal d’audit Office 365](turn-audit-log-search-on-or-off.md) <br/> [Activer la sécurité des applications cloud Office 365](turn-on-office-365-cas.md) <br/> |
 |Définir les stratégies et les alertes pour votre organisation  <br/> |[Stratégies d’activité et alertes pour Office 365 Cloud App Security](activity-policies-and-alerts.md) <br/> [Stratégies de détection des anomalies dans Office 365 Cloud Application Security](anomaly-detection-policies-in-ocas.md) (nouvellement mis à jour !)  <br/> [Intégration SIEM avec Office 365 Cloud application sécurité](integrate-your-siem-server-with-office-365-cas.md) <br/> [Informations de référence de stratégie de sécurité Office 365 nuage sécurité des applications](security-policy-reference-information-for-ocas.md) <br/> |
 |Ajuster les paramètres de sécurité d’application Office 365 dans le nuage  <br/> |[Grouper vos adresses IP pour simplifier la gestion dans la sécurité des applications cloud Office 365](group-your-ip-addresses-in-ocas.md) <br/> [Activités d’utilisation après avoir déployé la sécurité des applications cloud Office 365](utilization-activities-for-ocas.md) <br/> |
-|Examiner les activités et effectuer une action  <br/> |[Passez en revue et effectuer une action sur les alertes de sécurité pour application Cloud Microsoft Office 365](review-office-365-cas-alerts.md) <br/> [Examiner une activité dans la sécurité des applications cloud Office 365](investigate-an-activity-in-office-365-cas.md) <br/> [Suspendre ou restaurer un compte d’utilisateur dans la sécurité des applications cloud Office 365](suspend-or-restore-an-account-in-ocas.md) <br/> |
-|Gérer les applications tierces dans Office 365  <br/> |[Gérer les autorisations des applications à l’aide de la sécurité des applications cloud Office 365](manage-app-permissions-in-ocas.md) <br/> |
-|Créer et afficher les rapports de détection d’application  <br/> |[Journaux du trafic web et sources de données pour la sécurité des applications cloud Office 365](web-traffic-logs-and-data-sources-for-ocas.md) <br/> [Créer des rapports de détection d’application dans Office 365 Cloud Application Security](create-app-discovery-reports-in-ocas.md) <br/> [Résultats de la découverte passer en revue les application dans Office 365 Cloud Application Security](review-app-discovery-findings-in-ocas.md) (nouvellement mis à jour !)  <br/> |
-|Rester dans la boucle sur les nouvelles fonctionnalités de sécurité d’application Office 365 dans le nuage  <br/> |[Nouveautés de la sécurité des applications cloud Office 365](new-in-office-365-cas.md) <br/> |
+|Examiner les activités et effectuer une action  <br/> |[Passez en revue et effectuer une action sur les alertes de sécurité pour application Cloud Microsoft Office 365](review-office-365-cas-alerts.md) <br/> [Examiner une activité concernant la sécurité des applications cloud Office 365](investigate-an-activity-in-office-365-cas.md) <br/> [Suspendre ou restaurer un compte d’utilisateur dans la sécurité des applications cloud Office 365](suspend-or-restore-an-account-in-ocas.md) <br/> |
+|Gérer les applications tierces dans Office 365  <br/> |[Gérer les applications OAuth à l’aide de la sécurité des applications cloud Office 365](manage-app-permissions-in-ocas.md) <br/> |
+|Créer et afficher les rapports de détection d’application  <br/> |[Historique de trafic web et sources de données pour la sécurité des applications cloud Office 365](web-traffic-logs-and-data-sources-for-ocas.md) <br/> [Créer des rapports de détection d’application dans Office 365 Cloud Application Security](create-app-discovery-reports-in-ocas.md) <br/> [Résultats de la découverte passer en revue les application dans Office 365 Cloud Application Security](review-app-discovery-findings-in-ocas.md) (nouvellement mis à jour !)  <br/> |
+|Rester dans la boucle sur les nouvelles fonctionnalités de sécurité d’application Office 365 dans le nuage  <br/> |[Nouveautés concernant la sécurité des applications cloud Office 365](new-in-office-365-cas.md) <br/> |
    
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Vue d’ensemble de la sécurité des applications cloud Office 365](office-365-cas-overview.md)
     
-- [Se préparer pour Office 365 Cloud App Security](get-ready-for-office-365-cas.md)
+- [Se préparer pour la sécurité des applications cloud Office 365](get-ready-for-office-365-cas.md)
     
 

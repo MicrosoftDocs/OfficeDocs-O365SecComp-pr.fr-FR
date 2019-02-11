@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: aac65513-e75e-4c82-a668-9a6604dd9f9d
 description: Consultation des rapports de détection d’application dans la gestion de la sécurité avancée peut vous aider à en savoir plus sur l’utilisation des applications dans le nuage par les personnes dans votre organisation. Une fois que vous avez créé des rapports de découverte d’application à l’aide de fichiers journaux à partir de votre pare-feu et des proxys, passez en revue les résultats du tableau de bord de détection d’application.
-ms.openlocfilehash: ddf3826f5aac9d3c837cf66f1b97b4650df70f32
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 6195c9aae7ae5e398ac555cc820de04dee05d4fd
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706258"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603745"
 ---
 # <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>Passer en revue les détections d'applications dans la sécurité des applications cloud Office 365
   
@@ -27,19 +27,15 @@ ms.locfileid: "26706258"
    
 Le tableau de bord dans le nuage découverte fonctionne avec les journaux de trafic web de votre organisation pour fournir des informations détaillées sur l’utilisation des applications dans le nuage. Si vous êtes un administrateur global, un administrateur de sécurité ou un lecteur de sécurité et que votre organisation a [créé des rapports de découverte d’application dans Office 365 Cloud application sécurité](create-app-discovery-reports-in-ocas.md), vous pouvez utiliser le tableau de bord de découverte dans le nuage pour bien comprendre comment les personnes figurant dans votre organisation utilisent Office 365 et autres applications dans le nuage. (Le tableau de bord de découverte dans le nuage est également appelé détection d’application de la productivité).
   
- **À compter de mars 2018, le tableau de bord de découverte dans le nuage offre de nouvelles fonctionnalités** qui vous permet d’afficher des informations détaillées sur comment personnes dans votre organisation sont l’utilisation d’Office 365 et autres applications. 
+ Le tableau de bord dans le nuage découverte permet de vous permet d’afficher des informations détaillées sur comment les personnes dans votre organisation utilisent Office 365 et autres applications. 
   
 ![Le tableau de bord dans le nuage découverte a été mis à jour.](media/12712681-c0b3-4cb3-b7fd-2cf2ad4e825f.png)
      
 ## <a name="go-to-the-cloud-discovery-dashboard"></a>Accédez au tableau de bord de découverte dans le nuage
 
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école pour Office 365. (Cela vous amène à la sécurité &amp; centre de conformité.) 
+1. Accédez au portail de sécurité des applications dans le nuage ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) et se connecter.
     
-2. Dans la sécurité &amp; centre de conformité, sélectionnez **alertes** \> **Gestion avancée des alertes**.<br/>(Si Office 365 Cloud application sécurité n’est pas encore activée, et vous êtes un administrateur global, [Activer la sécurité d’application Office 365 dans le nuage](turn-on-office-365-cas.md).)
-    
-3. Cliquez sur **Aller à la sécurité d’application Office 365 dans le nuage**.
-    
-4. Accédez à **découvrir** \> **tableau de bord de découverte dans le nuage**.
+2. Accédez à **découvrir** \> **tableau de bord de découverte dans le nuage**.
     
 ## <a name="see-your-top-users-ip-addresses-apps-and-risk-levels"></a>Voir vos utilisateurs les plus fréquents, IP les adresses, applications et des niveaux de risques
 

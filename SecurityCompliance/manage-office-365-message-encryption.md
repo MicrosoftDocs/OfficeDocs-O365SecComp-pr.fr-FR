@@ -3,7 +3,6 @@ title: Gérer le chiffrement de messages Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/13/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,24 +11,25 @@ search.appverid:
 - MET150
 ms.assetid: 09f6737e-f03f-4bc8-8281-e46d24ee2a74
 description: Une fois que vous avez terminé la configuration d’Office 365 Message Encryption (OME), vous pouvez personnaliser la configuration de votre déploiement de plusieurs façons. Par exemple, vous pouvez configurer s’il faut activer les codes secrets unique, afficher le bouton protéger dans Outlook sur le web et bien plus encore. Les tâches de cet article décrivent comment.
-ms.openlocfilehash: 460ac0bba4d10fe8bef896a23a20f74527f031b2
-ms.sourcegitcommit: bd1762ccf63c7d2ad8b49a936115171c72fb2c0f
+ms.openlocfilehash: 6a9eddae2d3d166d96979d88b15845c3b7379bd9
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27750053"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696228"
 ---
 # <a name="manage-office-365-message-encryption"></a>Gérer le chiffrement de messages Office 365
 
-Une fois que vous avez terminé la configuration d’Office 365 Message Encryption (OME), vous pouvez personnaliser la configuration de votre déploiement de plusieurs façons. Par exemple, vous pouvez configurer s’il faut activer les codes secrets unique, afficher le bouton **protéger** dans Outlook sur le web et bien plus encore. Les tâches de cet article décrivent comment. 
+Une fois que vous avez terminé la configuration d’Office 365 Message Encryption (OME), vous pouvez personnaliser la configuration de votre déploiement de plusieurs façons. Par exemple, vous pouvez configurer s’il faut activer les codes secrets unique, afficher le bouton **protéger** dans Outlook sur le web et bien plus encore. Les tâches de cet article décrivent comment.
   
 ||
 |:-----|
 |Cet article fait partie d’une plus grande série d’articles sur Office 365 Message Encryption. Cet article est destiné aux administrateurs et les professionnels de l’informatique. Si vous êtes simplement vous recherchez des informations sur l’envoi ou la réception d’un message chiffré, vous trouverez la liste des articles inclus dans [Office 365 Message Encryption (OME)](ome.md) et recherchez l’article qui vous convient le mieux à vos besoins. |
+||
 
 ## <a name="managing-whether-google-yahoo-and-microsoft-account-recipients-can-use-these-accounts-to-sign-in-to-the-office-365-message-encryption-portal"></a>Gestion des si les destinataires de Google, Yahoo et Account Microsoft peuvent utiliser ces comptes pour se connecter au portail Office 365 Message Encryption
 
-Par défaut, lorsque vous configurez les nouvelles fonctionnalités de chiffrement de messages Office 365, les utilisateurs de votre organisation peuvent envoyer des messages à des destinataires qui sont en dehors de votre organisation Office 365. Si le destinataire utilise un *ID de mise en réseau* comme un compte Google, Yahoo compte ou compte Microsoft, le destinataire peut se connecter au portail OME à l’aide de l’ID de mise en réseau. Si vous le souhaitez, vous pouvez choisir ne pas afin que les destinataires à utiliser des ID de mise en réseau pour se connecter au portail OME. 
+Par défaut, lorsque vous configurez les nouvelles fonctionnalités de chiffrement de messages Office 365, les utilisateurs de votre organisation peuvent envoyer des messages à des destinataires qui sont en dehors de votre organisation Office 365. Si le destinataire utilise un *ID de mise en réseau* comme un compte Google, Yahoo compte ou compte Microsoft, le destinataire peut se connecter au portail OME à l’aide de l’ID de mise en réseau. Si vous le souhaitez, vous pouvez choisir ne pas afin que les destinataires à utiliser des ID de mise en réseau pour se connecter au portail OME.
   
 ### <a name="to-manage-whether-or-not-to-allow-recipients-to-use-social-ids-to-sign-in-to-the-ome-portal"></a>Pour gérer ou non autoriser les destinataires à utiliser des ID de mise en réseau pour se connecter au portail OME
   
@@ -37,21 +37,21 @@ Par défaut, lorsque vous configurez les nouvelles fonctionnalités de chiffreme
 
 2. Exécutez l’applet de commande Set-OMEConfiguration avec le paramètre SocialIdSignIn comme suit :
 
-  ```
-  Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter "> -SocialIdSignIn <$true | $false>
-  ```
+   ```powershell
+   Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter "> -SocialIdSignIn <$true | $false>
+   ```
 
-  Par exemple, pour désactiver les codes de mise en réseau :
-  
-  ```
-  Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn $false
-  ```
+   Par exemple, pour désactiver les codes de mise en réseau :
 
-  Pour activer les codes de mise en réseau :
+   ```powershell
+   Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn $false
+   ```
 
-  ```
-  Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn $true
-  ```
+   Pour activer les codes de mise en réseau :
+
+   ```powershell
+   Set-OMEConfiguration -Identity "OME Configuration" -SocialIdSignIn $true
+   ```
 
 ## <a name="managing-the-use-of-one-time-pass-codes-for-signing-in-to-the-office-365-message-encryption-portal"></a>Gestion de l’utilisation des codes d’accès unique pour la connexion au portail Office 365 Message Encryption
 
@@ -63,19 +63,25 @@ Par défaut, si le destinataire d’un message chiffré par OME n’utilise pas 
 
 2. Exécutez l’applet de commande Set-OMEConfiguration avec le paramètre OTPEnabled :
 
-   ```Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter "> -OTPEnabled <$true|$false>```
+   ```powershell
+   Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter "> -OTPEnabled <$true|$false>
+   ```
 
    Par exemple, pour désactiver les codes secrets unique :
 
-   ```Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $false```
+   ```powershell
+   Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $false
+   ```
 
    Pour activer les codes secrets unique :
 
-   ```Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $true```
+   ```powershell
+   Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $true
+   ```
 
 ## <a name="managing-the-display-of-the-protect-button-in-outlook-on-the-web"></a>Gestion de l’affichage du bouton protection dans Outlook sur le web
 
-Par défaut, le bouton **protéger** dans Outlook sur le site web n’est pas activé lorsque vous configurez OME. En tant qu’administrateur, vous pouvez gérer s’il faut afficher ce bouton pour les utilisateurs finaux. 
+Par défaut, le bouton **protéger** dans Outlook sur le site web n’est pas activé lorsque vous configurez OME. En tant qu’administrateur, vous pouvez gérer s’il faut afficher ce bouton pour les utilisateurs finaux.
   
 ### <a name="to-manage-whether-or-not-the-protect-button-appears-in-outlook-on-the-web"></a>Pour gérer ou non le bouton protéger s’affiche dans Outlook sur le web
   
@@ -83,15 +89,21 @@ Par défaut, le bouton **protéger** dans Outlook sur le site web n’est pas ac
 
 2. Exécutez l’applet de commande Set-IRMConfiguration avec le paramètre - SimplifiedClientAccessEnabled :
 
-   ```Set-IRMConfiguration -SimplifiedClientAccessEnabled <$true|$false>```
+   ```powershell
+   Set-IRMConfiguration -SimplifiedClientAccessEnabled <$true|$false>
+   ```
 
    Par exemple, pour désactiver le bouton **protéger** :
 
-   ```Set-IRMConfiguration -SimplifiedClientAccessEnabled $false```
+   ```powershell
+   Set-IRMConfiguration -SimplifiedClientAccessEnabled $false
+   ```
 
    Pour activer le bouton **protéger** :
 
-   ```Set-IRMConfiguration -SimplifiedClientAccessEnabled $true```
+   ```powershell
+   Set-IRMConfiguration -SimplifiedClientAccessEnabled $true
+   ```
 
 ## <a name="enable-service-side-decryption-of-email-messages-for-ios-mail-app-users"></a>Activer le service côté le déchiffrement des messages électroniques pour les utilisateurs de l’application messagerie iOS
 
@@ -99,7 +111,7 @@ L’application de messagerie iOS ne peut pas déchiffrer les messages protégé
   
 Si vous choisissez de ne pas autoriser les messages déchiffrés soient envoyées aux utilisateurs de l’application de messagerie iOS, les utilisateurs reçoivent un message qui indique qu’ils ne possèdent les droits pour afficher le message. Par défaut, côté service déchiffrement des messages électroniques n’est pas activé.
   
-Pour plus d’informations et pour une vue de l’expérience du client, consultez la section «[Afficher les messages chiffrés sur votre iPhone ou l’iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf#iOSEncryptedMail)» dans [permet d’afficher des messages chiffrés sur votre iPhone ou l’iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf).
+Pour plus d’informations et pour une vue de l’expérience du client, voir [vue chiffrée des messages sur votre iPhone ou l’iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf).
   
 ### <a name="to-manage-whether-or-not-ios-mail-app-users-can-view-messages-protected-by-office-365-message-encryption"></a>Pour gérer les utilisateurs de l’application de messagerie iOS ou non peuvent afficher des messages protégés par le chiffrement de messages Office 365
   
@@ -107,19 +119,25 @@ Pour plus d’informations et pour une vue de l’expérience du client, consult
 
 2. Exécutez l’applet de commande Set-ActiveSyncOrganizations avec le paramètre AllowRMSSupportForUnenlightenedApps :
 
-   ```Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps <$true|$false>```
+   ```powershell
+   Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps <$true|$false>
+   ```
 
    Par exemple, pour configurer le service pour déchiffrer des messages avant de les envoyer aux applications unenlightened tels que les e/s application de messagerie :
 
-   ```Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $true```
+   ```powershell
+   Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $true
+   ```
 
    Ou, pour configurer le service ne pas pour envoyer des messages déchiffrés aux applications unenlightened :
 
-   ```Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $false```
+   ```powershell
+   Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $false
+   ```
 
 ## <a name="enable-service-side-decryption-of-email-attachments-for-web-browser-mail-clients"></a>Activer le déchiffrement côté service des pièces jointes de courrier électronique pour les clients de messagerie de navigateur web
 
-En règle générale, lorsque vous utilisez le chiffrement de messages Office 365, les pièces jointes sont automatiquement chiffrés. En tant qu’un administrateur Office 365, vous pouvez appliquer le déchiffrement côté service pour les pièces jointes que les utilisateurs téléchargent à partir d’un navigateur web. 
+En règle générale, lorsque vous utilisez le chiffrement de messages Office 365, les pièces jointes sont automatiquement chiffrés. En tant qu’un administrateur Office 365, vous pouvez appliquer le déchiffrement côté service pour les pièces jointes que les utilisateurs téléchargent à partir d’un navigateur web.
   
 Lorsque vous choisissez pour ce faire, le service envoie une copie du fichier déchiffrée à l’appareil. Le message est toujours chiffré. La pièce jointe conserve également des informations sur les droits d’utilisation du même si le navigateur ne s’applique pas les droits d’utilisation du côté client à l’utilisateur. Cela signifie que l’utilisateur peut copier ou imprimer la pièce jointe, même s’ils n’ont pas été les droits à le faire. Toutefois, si l’utilisateur tente d’effectuer une action qui requiert le serveur de messagerie Office 365, tels que le transfert de la pièce jointe, le serveur ne permettra pas l’action si l’utilisateur n’a pas été le droit d’utilisation à le faire.
   
@@ -135,15 +153,21 @@ Pour plus d’informations sur comment Office 365 implémente le chiffrement pou
 
 2. Exécutez l’applet de commande Set-IRMConfiguration avec le paramètre DecryptAttachmentFromPortal :
 
-   ```Set-IRMConfiguration -DecryptAttachmentFromPortal <$true|$false>```
+   ```powershell
+   Set-IRMConfiguration -DecryptAttachmentFromPortal <$true|$false>
+   ```
 
    Par exemple, pour configurer le service pour déchiffrer les pièces jointes lorsqu’un utilisateur télécharge les à partir d’un navigateur web :
 
-   ```Set-IRMConfiguration -DecryptAttachmentFromPortal $true```
+   ```powershell
+   Set-IRMConfiguration -DecryptAttachmentFromPortal $true
+   ```
 
    Pour configurer le service pour laisser les pièces jointes de courrier électronique chiffré en tant qu’ils reçoivent lors du téléchargement :
 
-   ```Set-IRMConfiguration -DecryptAttachmentFromPortal $false```
+   ```powershell
+   Set-IRMConfiguration -DecryptAttachmentFromPortal $false
+   ```
 
 ## <a name="customizing-the-appearance-of-email-messages-and-the-ome-portal"></a>Personnaliser l’apparence des messages électroniques et le portail OME
 
@@ -159,8 +183,12 @@ Nous espérons qu’il n’est pas fourni, mais si vous avez besoin, désactiver
 
 2. Si vous avez activé le bouton **protéger** dans Outlook sur le web, le désactiver en exécutant l’applet de commande Set-IRMConfiguration avec le paramètre SimplifiedClientAccessEnabled. Sinon, ignorez cette étape.
 
-   ```Set-IRMConfiguration -SimplifiedClientAccessEnabled $false```
+   ```powershell
+   Set-IRMConfiguration -SimplifiedClientAccessEnabled $false
+   ```
 
 3. Désactiver les nouvelles fonctionnalités pour OME en exécutant l’applet de commande Set-IRMConfiguration avec le paramètre AzureRMSLicensingEnabled défini sur false :
 
-   ```Set-IRMConfiguration -AzureRMSLicensingEnabled $false```
+   ```powershell
+   Set-IRMConfiguration -AzureRMSLicensingEnabled $false
+   ```

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 description: Lorsque Exchange Online Protection analyse un message entrant, il insère l'en-tête **X-Forefront-Antispam-Report** dans chaque message.
-ms.openlocfilehash: d887fea94bac6177dde69fac9586d7d562ef50de
-ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
+ms.openlocfilehash: 5632aa28a0d23186e6a36fdf63f7968322c93e39
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29614458"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686444"
 ---
 # <a name="anti-spam-message-headers"></a>En-têtes de messages anti-courrier indésirable
 
@@ -38,7 +38,7 @@ Après avoir accédé aux informations d'un en-tête de message, recherchez **X-
 |CTRY|Pays depuis lequel le message s’est connecté au service. Cette valeur est déterminée par l'adresse IP de connexion, qui peut ne pas être la même que l'adresse IP d'envoi de provenance.|
 |LANG|Langue dans laquelle le message a été rédigé, tel que spécifié par le code du pays (par exemple, ru_RU pour le russe).|
 |SCL|Valeur du seuil de probabilité de courrier indésirable (SCL) du message. Pour plus d'informations sur l'interprétation de ces valeurs, consultez la rubrique [Seuils de probabilité de courrier indésirable](spam-confidence-levels.md).  |
-|PCL|Valeur du seuil de probabilité de courrier d'hameçonnage (PCL) du message. Pour plus d'informations sur les valeurs PCL, voir [PCL](anti-spam-message-headers.md#PCL).  |
+|PCL|Valeur du seuil de probabilité de courrier d'hameçonnage (PCL) du message. |
 |SRV:BULK|Le message a été identifié comme un message électronique en masse. Si l' **option avancée de filtrage du courrier indésirable Bloquer tous les envois de messages électroniques en masse** est activée, le message sera marqué comme courrier indésirable. Si cette option est désactivée, le message sera uniquement marqué comme courrier indésirable si le reste des règles de filtrage déterminent que le message est un courrier indésirable.  |
 |SFV:SFE|Le filtrage a été ignoré et le message a été autorisé à passer car il a été envoyé à partir d'une adresse figurant sur la liste des expéditeurs autorisés d'un utilisateur.|
 |SFV:BLK|Le filtrage a été ignoré et le message a été bloqué car il a été envoyé à partir d'une adresse figurant sur la liste des expéditeurs bloqués d'un utilisateur.  <br/> **Conseil**: pour plus d’informations sur la façon dont les utilisateurs finaux peuvent créer des listes d’expéditeurs autorisés et bloqués, voir [bloquer ou autoriser (paramètres de courrier indésirable)](https://go.microsoft.com/fwlink/p/?LinkId=294862) (Outlook sur le web) et [vue d’ensemble du filtre de courrier indésirable](https://go.microsoft.com/fwlink/p/?LinkId=270065) (Outlook).|

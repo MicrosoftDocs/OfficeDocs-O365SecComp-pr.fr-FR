@@ -1,9 +1,9 @@
 ---
 title: Vue d'ensemble d'Exchange Online Protection
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyp
 manager: laurawi
-ms.date: 12/9/2016
+ms.date: 01/31/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) est un service de filtrage du courrier électronique dans le nuage, qui contribue à protéger votre organisation contre le courrier indésirable et les logiciels malveillants, ainsi que contre les violations de politique de messagerie.
-ms.openlocfilehash: 89852c7ba211ccb266c8b231b00d3d83987a5f20
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 16f2f423b6e517cf204e4b4f6a2949baebfd6223
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026691"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686363"
 ---
 # <a name="exchange-online-protection-overview"></a>Vue d'ensemble d'Exchange Online Protection
 
@@ -44,13 +44,18 @@ EOP s'exécute sur un réseau mondial de centres de données conçus pour offrir
   
 EOP effectue l'équilibrage de charge entre les centres de données, mais uniquement au sein d'une région. Si votre système est mis en service dans une région, tous vos messages seront traités sur la base du routage de courrier propre à cette région. La liste suivante présente le fonctionnement du routage de courrier régional pour les centres de données EOP :
   
-- Amérique du, tous les Exchange en ligne boîtes aux lettres sont trouvent dans des centres de données américain, à l’exception de l’Amérique du Sud où les centres de données au Brésil et Chili sont utilisées et au Canada, où les centres de données au Canada sont utilisés. Tous les messages électroniques, y compris les messages pour les clients en Amérique du Sud et au Canada, sont acheminés via des centres de données américains pour EOP filtrage ; Cependant électroniques placés en quarantaine est stocké dans le centre de données où se trouve le client...
     
 - En Europe, au Moyen-Orient et en Afrique (région EMEA), toutes les boîtes aux lettres Exchange Online sont situées dans des centres de données EMEA et tous les messages sont routés via des centres de données EMEA pour le filtrage EOP.
     
-- Dans la région Asie-Pacifique (APAC), toutes les boîtes aux lettres Exchange Online sont situées dans des centres de données APAC, mais les messages sont actuellement routés via des centres de données EMEA pour le filtrage EOP. Néanmoins, à partir du quatrième trimestre 2014, les messages devraient être routés via des centres de données APAC pour le filtrage EOP.
+- Dans Asie-Pacifique (centre de données), toutes les boîtes aux lettres Exchange Online sont trouvent dans des centres de données APAC, mais les messages sont acheminés actuellement par le biais de centres de données APAC pour le filtrage EOP.
+=======
+- En Amérique, toutes les boîtes aux lettres Exchange Online se trouvent dans des centres de données américain, à l’exception de l’Amérique du Sud où les centres de données au Brésil et Chili sont utilisés et au Canada, où les centres de données au Canada sont utilisés. Tous les messages électroniques, y compris les messages pour les clients en Amérique du Sud et au Canada, sont acheminés via des centres de données local pour le filtrage EOP ; courrier électronique placés en quarantaine est stocké dans le centre de données où se trouve le client.
     
-- En ce qui concerne le nuage communautaire propre aux gouvernements (CCG), toutes les boîtes aux lettres Exchange Online sont situées dans des centres de données américains et tous les messages sont routés via ces centres de données pour le filtrage EOP.
+- En Europe, au Moyen-Orient et en Afrique (région EMEA), toutes les boîtes aux lettres Exchange Online sont situées dans des centres de données EMEA et tous les messages sont routés via des centres de données EMEA pour le filtrage EOP.
+    
+- Dans Asie-Pacifique (centre de données), toutes les boîtes aux lettres Exchange Online sont trouvent dans des centres de données APAC et messages sont actuellement acheminés via APAC des centres de données pour le filtrage EOP.
+    
+- En ce qui concerne le nuage communautaire propre aux gouvernements (CCG), toutes les boîtes aux lettres Exchange Online sont situées dans des centres de données américains et tous les messages sont routés via ces centres de données pour le filtrage EOP.
     
 ## <a name="eop-plans-and-features"></a>Plans et fonctionnalités d'EOP
 
@@ -78,7 +83,7 @@ Si vous avez déjà acheté EOP, consultez la rubrique [Configurer votre service
   
 [Forum Aux Questions d'ordre général concernant Exchange Online Protection (EOP)](eop-general-faq.md)
   
-[Questions fréquemment posées sur les messages mis en file d'attente, différés et retournés dans EOP](eop-queued-deferred-and-bounced-messages-faq.md)
+Questions fréquemment posées sur les messages mis en file d’attente, différés et retournés dans EOP
   
 [FAQ sur l'administration déléguée](delegated-administration-faq.md)
   

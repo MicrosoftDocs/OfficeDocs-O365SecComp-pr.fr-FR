@@ -12,14 +12,17 @@ search.appverid:
 - MOE150
 ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 description: Obtenir une vue d’ensemble des pages d’avertissement que vous pouvez voir lorsque Office 365 avancée protection contre les menaces est au travail.
-ms.openlocfilehash: ac7fdcd17ad449afd9107ce67ecc89a107eb152b
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 422bdabf0593dd154461f973f86a4c1ca94e8651
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238266"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686353"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Pages d’avertissement Office 365 liens fiables DAV
+
+> [!IMPORTANT]
+> Cet article est destiné aux entreprises. Si vous êtes un utilisateur vous recherchez des informations sur les liens sécurisés dans Outlook, voir [sécurité Outlook.com avancés](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 [Protection de Microsoft Office 365 menace avancées](office-365-atp.md) (DAV) vous aide à protéger votre organisation contre les tentatives de hameçonnage et les programmes malveillants par le biais de fonctionnalités, telles que [Des liens fiables DAV](atp-safe-links.md), [DAV fiables](atp-safe-attachments.md)de [protection anti - hameçonnage](anti-phishing-protection.md). Lors de la protection est en place, des liens (URL) dans les messages électroniques et des documents Office sont vérifiés. Si une URL est identifiée comme suspect ou malveillant, vous pouvez ne pas ouvrir l’URL lorsque vous cliquez dessus. Au lieu de passer directement au site, vous pouvez voir une page d’avertissement à la place. 
   

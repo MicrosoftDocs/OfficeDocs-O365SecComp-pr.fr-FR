@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Stratégies de détection des anomalies dans Office 365 Cloud application sécurité utilisent algorithmes intégrés pour découvrir des problèmes potentiels. Vous devez disposer de stratégie de détection au moins une anomalie, vous pouvez régler (lors de sa création) à l’aide de filtres. '
-ms.openlocfilehash: 7a1cb795531df168f0a5c425e7555ae6b1412d2b
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 5a6cf05b90b69045540bb7913124fe0d9e32f9a1
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29604415"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29612707"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Stratégies de détection des anomalies dans la sécurité des applications cloud Office 365
 
@@ -28,7 +28,7 @@ Gestion de la sécurité Office 365 avancée est désormais sécurité d’appli
 |:-----|:-----|:-----|:-----|
 |[Commencer à évaluer](office-365-cas-overview.md) <br/> |[Commencer à planifier](get-ready-for-office-365-cas.md) <br/> |Vous êtes ici !  <br/> [Étape suivante](integrate-your-siem-server-with-office-365-cas.md) <br/> |[Commencer à utiliser](utilization-activities-for-ocas.md) <br/> |
    
-Commençant par [Microsoft Cloud Application Security version 116](new-in-office-365-cas-2018.md#office-365-cloud-app-security-release-116-3), Office 365 Cloud Application Security inclut plusieurs anomalies prédéfinis des stratégies de détection (« l’emploi ») qui incluent des utilisateurs analytique comportement entité (UEBA) et apprentissage (ML) de l’ordinateur.
+Commençant par [Microsoft Cloud Application Security version 116](new-in-office-365-cas-2018.md#office-365-cloud-app-security-release-116), Office 365 Cloud Application Security inclut plusieurs anomalies prédéfinis des stratégies de détection (« l’emploi ») qui incluent des utilisateurs analytique comportement entité (UEBA) et apprentissage (ML) de l’ordinateur.
   
 ![Pour afficher vos stratégies de détection des anomalies, choisissez contrôle \> stratégies.](media/9663baa5-98bf-45e0-9458-6e572b43ec72.png)
   

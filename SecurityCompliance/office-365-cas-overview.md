@@ -3,7 +3,7 @@ title: Vue d’ensemble de la sécurité des applications cloud Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 12/03/2018
+ms.date: 01/22/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: 'Sécurité d’application Office 365 Cloud vous donne des informations sur les activités suspectes dans Office 365 afin que vous pouvez examiner les situations qui sont susceptibles de poser problème et, si nécessaire, prennent des mesures pour résoudre les problèmes de sécurité. '
-ms.openlocfilehash: 62b1dc1d9285e60f30c1d5e541973640bb47ae35
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: edce16edca822bed30c78f34cf141b23f2b2fb8c
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014926"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29382547"
 ---
 # <a name="overview-of-office-365-cloud-app-security"></a>Vue d’ensemble de la sécurité des applications cloud Office 365
   
@@ -28,7 +28,7 @@ ms.locfileid: "28014926"
 |Vous êtes ici !  <br/> [Étape suivante](get-ready-for-office-365-cas.md) <br/> |[Commencer à planifier](get-ready-for-office-365-cas.md) <br/> |[Commencer à déployer](turn-on-office-365-cas.md) <br/> |[Commencer à utiliser](utilization-activities-for-ocas.md) <br/> |
    
 > [!NOTE]
-> Sécurité d’application Office 365 dans le nuage est disponible dans Office 365 entreprise E5. Si votre organisation utilise un autre abonnement Office 365 pour entreprises, Office 365 Cloud application sécurité peut être achetée comme module complémentaire. (En tant qu’administrateur global, dans le centre d’administration Office 365, choisissez **facturation** \> **abonnements Add**.) Pour plus d’informations, voir [Office 365 Platform Service Description : Office 365 sécurité &amp; centre de conformité](https://technet.microsoft.com/en-us/library/dn933793.aspx) et [acheter ou modifier un module complémentaire pour Office 365 pour entreprises](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
+> Sécurité d’application Office 365 dans le nuage est disponible dans Office 365 entreprise E5. Si votre organisation utilise un autre abonnement Office 365 pour entreprises, Office 365 Cloud application sécurité peut être achetée comme module complémentaire. (En tant qu’administrateur global, dans le centre d’administration Office 365, choisissez **facturation** \> **abonnements Add**.) Pour plus d’informations, voir [Office 365 Platform Service Description : Office 365 sécurité &amp; centre de conformité](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) et [acheter ou modifier un module complémentaire pour Office 365 pour entreprises](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on). 
   
 Sécurité d’application Office 365 dans le nuage donne un aperçu des activités suspectes dans Office 365 afin que vous pouvez examiner les situations qui sont susceptibles de poser problème et, si nécessaire, prennent des mesures pour résoudre les problèmes de sécurité. Avec Office 365 de sécurité App dans le nuage, vous pouvez recevoir des notifications d’alertes déclenchées pour les activités suspectes ou atypiques, voir comment les données de votre organisation dans Office 365 sont accessible et utilisées, suspendre des comptes d’utilisateur présentant une activité suspecte et nécessitent utilisateurs à se reconnecter pour les applications Office 365 après le déclenchement d’une alerte. Lisez cet article pour obtenir une vue d’ensemble des fonctionnalités de sécurité d’application Office 365 dans le nuage et des capacités.
   
@@ -36,13 +36,15 @@ Sécurité d’application Office 365 dans le nuage donne un aperçu des activit
 ## <a name="how-to-find-the-office-365-cloud-app-security-portal"></a>Comment trouver le portail Office 365 Cloud Application Security
 
 > [!NOTE]
-> Pour accéder au portail Office 365 Cloud application sécurité, vous devez être un administrateur global, un administrateur de sécurité ou un lecteur de sécurité. Pour plus d’informations, voir [des autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md). 
+> Pour accéder au portail Office 365 Cloud application sécurité, vous devez être un administrateur global d’Office 365, un administrateur de sécurité ou un lecteur de sécurité. Pour plus d’informations, voir [des autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md). 
   
-Vous pouvez obtenir au portail Office 365 Cloud application sécurité par le biais de la sécurité de 365 Office &amp; centre de conformité. Voici un excellent moyen de le faire :
+Vous pouvez obtenir au portail Office 365 Cloud application sécurité en accédant à [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com) et l’ouverture de session. 
+
+Vous pouvez également y accéder à partir de la sécurité de 365 Office &amp; centre de conformité. Voici un excellent moyen de le faire :
   
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école pour Office 365. (Cela vous amène à la sécurité &amp; centre de conformité.) 
+1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école pour Office 365. (Cela vous amène à la sécurité &amp; centre de conformité.)
     
-2. Dans la sécurité &amp; centre de conformité, sélectionnez **alertes** \> **Gestion avancée des alertes**. <br/>![Dans la sécurité &amp; centre de conformité, cliquez sur Gérer les alertes avancées pour accéder à la sécurité d’application dans le nuage Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>(Si Office 365 Cloud application sécurité n’est pas encore activée, et vous êtes un administrateur global, [Activer la sécurité d’application Office 365 dans le nuage](turn-on-office-365-cas.md).)
+2. Dans la sécurité &amp; centre de conformité, sélectionnez **alertes** \> **Gestion avancée des alertes**. <br/>![Cliquez sur Gérer les alertes avancées pour accéder à la sécurité d’application dans le nuage Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>(Si Office 365 Cloud application sécurité n’est pas encore activée, et vous êtes un administrateur global, [Activer la sécurité d’application Office 365 dans le nuage](turn-on-office-365-cas.md).)
     
 3. Cliquez sur **Aller à la sécurité d’application Office 365 dans le nuage**. 
     

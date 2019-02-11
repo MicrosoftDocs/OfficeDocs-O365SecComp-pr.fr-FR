@@ -3,7 +3,6 @@ title: Révoquer des e-mails chiffrés par le chiffrement de messages Office 36
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/29/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -11,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: En tant qu’un administrateur Office 365, vous pouvez retirer certains messages électroniques chiffrés avec Office 365 Message Encryption.
-ms.openlocfilehash: a3f5c08d2c8660e56c378fc5fa7a850ff2c12eb5
-ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
+ms.openlocfilehash: 018f12105e19382372a8a4b3a91248bb60b228be
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29614388"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696238"
 ---
 # <a name="office-365-message-encryption-email-revocation"></a>Révocation de courrier électronique de chiffrement de messages Office 365
 
@@ -59,22 +58,41 @@ Il existe plusieurs manières pour trouver l’ID de Message du courrier électr
 2. Choisissez la table **d’Afficher les détails** et d’identifier le message que vous souhaitez révoquer.
 3. Double-cliquez sur le message pour afficher les détails qui incluent l’ID de Message.
 
-### <a name="step-2-revoke-the-mail"></a>Étape 2. Révoquer le courrier  
+### <a name="step-2-verify-that-the-mail-is-revocable"></a>Étape 2. Vérifiez que le courrier est révocable
 
-Une fois que vous connaissez l’ID de Message du courrier électronique que vous souhaitez révoquer, vous pouvez annuler le courrier électronique à l’aide de l’applet de commande Set-OMEMessageRevocation.
+Pour vérifier si vous pouvez révoquer un message électronique particulier, procédez comme suit.
 
-1. [Se connecter à Exchange Online à l’aide de PowerShell à distance](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1. À l’aide d’un compte qui dispose des autorisations d’administrateur global dans votre organisation Office 365 Professionnel ou de l’école, démarrer une session Windows PowerShell et se connecter à Exchange Online. Pour plus d’informations, voir [se connecter à Exchange Online PowerShell](https://aka.ms/exopowershell).
+
+2. Exécutez l’applet de commande Set-OMEMessageStatus comme suit :
+     ```powershell
+     Get-OMEMessageStatus -MessageId "<messagieid>" | ft -a  Subject, IsRevocable
+     ```
+
+   Cette propriété renvoie l’objet du message et indique si le message est révocable. Par exemple,
+
+     ```text
+     Subject IsRevocable
+     ------- -----------
+     “Test message”  True
+     ```
+
+### <a name="step-3-revoke-the-mail"></a>Étape 3. Révoquer le courrier  
+
+Une fois que vous connaissez l’ID de Message du courrier électronique que vous souhaitez révoquer, et que vous avez vérifié que le message est révocable, vous pouvez annuler le courrier électronique à l’aide de l’applet de commande Set-OMEMessageRevocation.
+
+1. [Connectez-vous à Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Exécutez l’applet de commande Set-OMEMessageRevocation comme suit :
 
     ```powershell
     Set-OMEMessageRevocation -Revoke $true -MessageId "<messageId>"
-    ```  
+    ```
 
 3. Pour vérifier si le message électronique a été révoqué, exécutez l’applet de commande Get-OMEMessageStatus comme suit :
 
     ```powershell
-    Get-OMEMessageStatus -MessageId "<messageId>" | fl Revoked
+    Get-OMEMessageStatus -MessageId "<messageId>" | ft -a  Subject, Revoked
     ```  
     Si la révocation a réussi, l’applet de commande renvoie le résultat suivant :  
 

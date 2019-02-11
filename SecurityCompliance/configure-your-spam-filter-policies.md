@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 description: Paramètres du filtre de courrier indésirable de base sont sélection de l’action à effectuer sur les messages identifiés comme courrier indésirable et choisir de filtrer les messages qui sont enregistrés dans des langues spécifiques ou envoyés à partir de certains pays ou régions.
-ms.openlocfilehash: c425be1814f9f04329f30254763cbbb5bd8b861e
-ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
+ms.openlocfilehash: 64b66f53bb56c404acefebd4fa9d211f5458f29f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27180894"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29614478"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configuration de vos stratégies de filtrage du courrier indésirable
   
@@ -51,7 +51,7 @@ Pour des informations sur les raccourcis clavier applicables aux procédures de 
     
       - **Supprimer le message** Supprime le message entier, pièces jointes comprises. 
         
-      - **Mettre en quarantaine le message** Envoie le message en quarantaine au lieu de le remettre à ses destinataires. Si vous sélectionnez cette option, dans la zone d'entrée **Conserver les courriers indésirables pendant (jours)**, spécifiez le nombre de jours pendant lesquels le courrier indésirable restera en quarantaine. (Il sera automatiquement supprimé à l'issue de cette période. La valeur par défaut est 15 jours, ce qui est également la valeur maximale. La valeur minimale est 1 jour.)<br/><br/>Conseil : Pour plus d’informations sur la façon dont les administrateurs peuvent gérer les messages électroniques qui se trouvent dans la mise en quarantaine dans le CAE, voir [mise en quarantaine](quarantine.md) et [Rechercher et débloquer les messages mis en quarantaine en tant qu’administrateur](find-and-release-quarantined-messages-as-an-administrator.md). > Pour plus d’informations sur la configuration des notifications de courrier indésirable à envoyer aux utilisateurs, consultez [l’utilisateur final Configure dans EOP les notifications de courrier indésirable](configure-end-user-spam-notifications-in-eop.md) ou le [configurer pour l’utilisateur final de spam notifications dans Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
+      - **Mettre en quarantaine le message** Envoie le message en quarantaine au lieu de le remettre à ses destinataires. Si vous sélectionnez cette option, dans la zone d'entrée **Conserver les courriers indésirables pendant (jours)**, spécifiez le nombre de jours pendant lesquels le courrier indésirable restera en quarantaine. (Il sera automatiquement supprimé à l'issue de cette période. La valeur par défaut est 15 jours, ce qui est également la valeur maximale. La valeur minimale est 1 jour.)<br/><br/>Conseil : Pour plus d’informations sur la façon dont les administrateurs peuvent gérer les messages électroniques qui se trouvent dans la mise en quarantaine dans le CAE, voir [mise en quarantaine](quarantine.md) et [Rechercher et débloquer les messages mis en quarantaine en tant qu’administrateur](find-and-release-quarantined-messages-as-an-administrator.md). > pour plus d’informations sur la configuration de notification de courrier indésirable à envoyer aux utilisateurs, reportez-vous à [l’utilisateur final Configure dans EOP les notifications de courrier indésirable](configure-end-user-spam-notifications-in-eop.md) ou [configurer pour l’utilisateur final de spam notifications dans Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
   
       - **Déplacer le message dans le dossier Courrier indésirable** Envoie le message au dossier Courrier indésirable des destinataires spécifiés. Il s'agit de l'action par défaut pour les deux niveaux de seuil de confiance.<br/><br/>**IMPORTANT : Pour les clients Exchange Online Protection (EOP) : afin que cette action travailler avec des boîtes aux lettres locales, vous devez configurer deux règles de Transport Exchange sur vos serveurs sur site pour détecter les en-têtes de spam ajoutés par EOP. Pour plus d’informations, voir [vous assurer que le courrier indésirable est routé vers le dossier courrier indésirable de chaque utilisateur](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).**
   
@@ -62,6 +62,8 @@ Pour des informations sur les raccourcis clavier applicables aux procédures de 
       - Si vous incluez des espaces dans le texte d’en-tête personnalisé, ou si vous ajoutez le signe deux-points vous-même (tel que « X il s’agit de l’en-tête personnalisé » ou « X-This-is-my-custom-header : »), le texte d’en-tête X rétablit la valeur par défaut en tant que » X ce-est-courrier indésirable : ce message s’affiche comme courrier indésirable. »
     
       - Vous ne pouvez pas spécifier le texte d’en-tête au format \< *en-tête*  \>:\<  *valeur*  \>. Si vous procédez ainsi, les deux valeurs avant et après le signe deux-points sera ignoré et le texte d’en-tête X par défaut s’affiche à la place : « X ce-est-courrier indésirable : ce message s’affiche comme courrier indésirable. » 
+      
+      - N’oubliez pas que les messages électroniques avec cet en-tête X-peuvent être toujours déplacés vers dossier de courrier indésirable de boîte aux lettres en raison de la configuration indésirable des boîtes aux lettres. Vous pouvez le modifier en désactivant cette fonctionnalité avec Set-MailboxJunkEmailConfiguration.
         
       - **Ligne d’objet Prepend avec du texte** Envoie le message aux destinataires appropriés, mais ajoute la ligne d’objet avec le texte que vous spécifiez dans la zone d’entrée **du message avec le texte de préfixe** . À l’aide de ce texte en tant qu’identificateur, vous pouvez également créer des règles pour filtrer ou acheminer les messages que nécessaire. 
         
@@ -112,7 +114,7 @@ Pour des informations sur les raccourcis clavier applicables aux procédures de 
 16. Cliquez sur **Enregistrer**. Un résumé de vos paramètres de stratégie s'affiche dans le volet droit.
 
 > [!TIP]
->  Vous pouvez activez ou désactivez les cases à cocher dans la colonne **activé** pour activer ou désactiver vos stratégies personnalisées. Par défaut, toutes les stratégies sont activées. La stratégie par défaut ne peut pas être désactivée. > Pour supprimer une stratégie personnalisée, sélectionnez la stratégie, cliquez sur le ![icône de suppression](media/ITPro-EAC-DeleteIcon.gif) **Supprimer** l’icône, puis vérifiez que vous souhaitez supprimer la stratégie. Impossible de supprimer la stratégie par défaut. > Stratégies personnalisées sont toujours prioritaires sur la stratégie par défaut. Stratégies personnalisées s’exécutent dans l’ordre inverse dans lequel vous avez créé (de la plus ancienne à la plus récente), mais vous pouvez modifier la priorité (marche) de vos stratégies personnalisées en cliquant sur le ![d’icône de flèche](media/ITPro-EAC-UpArrowIcon.gif) flèche vers le haut et ![icône représentant une flèche vers le bas](media/ITPro-EAC-DownArrowIcon.gif) vers le bas flèche. La stratégie qui a une **priorité** **0** s’exécutera en premier, suivi par **1**, puis **2**et ainsi de suite. 
+>  Vous pouvez activez ou désactivez les cases à cocher dans la colonne **activé** pour activer ou désactiver vos stratégies personnalisées. Par défaut, toutes les stratégies sont activées. La stratégie par défaut ne peut pas être désactivée. > pour supprimer une stratégie personnalisée, sélectionnez la stratégie, cliquez sur le ![icône de suppression](media/ITPro-EAC-DeleteIcon.gif) **Supprimer** l’icône, puis vérifiez que vous souhaitez supprimer la stratégie. Impossible de supprimer la stratégie par défaut. les stratégies personnalisées > sont toujours prioritaires sur la stratégie par défaut. Stratégies personnalisées s’exécutent dans l’ordre inverse dans lequel vous avez créé (de la plus ancienne à la plus récente), mais vous pouvez modifier la priorité (marche) de vos stratégies personnalisées en cliquant sur le ![d’icône de flèche](media/ITPro-EAC-UpArrowIcon.gif) flèche vers le haut et ![icône représentant une flèche vers le bas](media/ITPro-EAC-DownArrowIcon.gif) vers le bas flèche. La stratégie qui a une **priorité** **0** s’exécutera en premier, suivi par **1**, puis **2**et ainsi de suite. 
   
 ## <a name="use-remote-powershell-to-configure-spam-filter-policies"></a>Utilisation de PowerShell à distance pour configurer les stratégies de filtrage du courrier indésirable
 

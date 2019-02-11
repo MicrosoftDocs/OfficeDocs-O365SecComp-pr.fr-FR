@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 87496bc5-9601-4473-8021-cb05c71369c1
 description: 'Un Conseil de stratégie est une notification ou avertissement qui s’affiche lorsqu’une personne fonctionne avec le contenu qui est en conflit avec une stratégie DLP. Vous pouvez utiliser les notifications par courrier électronique et les conseils de stratégie pour sensibiliser et aider à former les utilisateurs sur les stratégies de votre organisation. Vous pouvez également permettent d’être affichées aux personnes cette option pour remplacer la stratégie, afin qu’ils ne sont pas bloqués s’ils disposent d’une entreprise valide ou si la stratégie détecte un faux positif. '
-ms.openlocfilehash: f95e392cc6cced6da29d34abfcab0fa0c3add069
-ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
+ms.openlocfilehash: 78247a283b2a3b8d581a8b27fe0bf124ed46b222
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "25769913"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "25803995"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Envoyer des notifications par courrier électronique et afficher les conseils de stratégie pour les stratégies DLP
 
@@ -90,7 +90,7 @@ Pour chaque règle d’une stratégie DLP, vous pouvez :
 - Personnaliser le texte qui est inclus dans la notification à l’aide de code HTML ou les jetons. Voir la section ci-dessous pour plus d’informations.
     
 > [!NOTE]
->  Notifications par courrier électronique peuvent être envoyées uniquement à des destinataires — pas les groupes ou les listes de distribution. > Nouveau contenu ne déclenche une notification par courrier électronique. Modification de contenu existant déclenche les conseils de stratégie, mais pas une notification par courrier électronique. 
+>  Notifications par courrier électronique peuvent être envoyées uniquement à des destinataires — pas les groupes ou les listes de distribution. > seul le nouveau contenu déclenche une notification par courrier électronique. Modification de contenu existant déclenche les conseils de stratégie, mais pas une notification par courrier électronique. 
   
 ![Options de notification de messagerie](media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
   
@@ -101,8 +101,7 @@ Notifications ont une ligne d’objet commence par l’action effectuée, tel qu
 ![Message de notification](media/35813d40-5fd8-425f-9624-55655e74fa6b.png)
   
 Par défaut, les notifications affichent un texte semblable au suivant pour un élément sur un site. Le texte des notifications est configuré séparément pour chaque règle, afin que le texte qui s’affiche varie en fonction de la règle mise en correspondance.
-  
-| |
+
 |**Si la règle de stratégie DLP...**|**Puis la notification par défaut pour SharePoint ou OneDrive pour les documents d’entreprise indique ceci...**|**Puis la notification par défaut pour les messages Outlook indique que ceci...**|
 |:-----|:-----|:-----|
 |Envoie une notification, mais ne permet pas de substitution  <br/> |Cet élément est en conflit avec une stratégie de votre organisation.  <br/> |Votre courrier électronique message est en conflit avec une stratégie de votre organisation.  <br/> |
@@ -114,8 +113,7 @@ Par défaut, les notifications affichent un texte semblable au suivant pour un �
 Vous pouvez créer une notification de message électronique personnalisé au lieu d’envoyer la notification par courrier électronique par défaut pour vos utilisateurs finaux ou les administrateurs. La notification de message électronique personnalisé prend en charge HTML et a une limite de 5 000 caractères. Vous pouvez utiliser le HTML pour inclure des images, la mise en forme et les autres marques dans la notification.
   
 Vous pouvez également utiliser les jetons suivants vous aideront à personnaliser la notification par courrier électronique. Ces jetons sont des variables qui sont remplacés par des informations spécifiques dans la notification est envoyée.
-  
-| |
+
 |**Émission de jeton**|**Description**|
 |:-----|:-----|
 |%% AppliedActions %%  <br/> |Les actions appliquées au contenu.  <br/> |
@@ -177,8 +175,7 @@ Les stratégies DLP sont synchronisées avec les sites et le contenu est évalu�
 ### <a name="default-text-for-policy-tips-on-sites"></a>Texte par défaut pour les conseils de stratégie sur les sites
 
 Par défaut, les conseils de stratégie affichent un texte semblable à ce qui suit pour un élément sur un site. Le texte des notifications est configuré séparément pour chaque règle, afin que le texte qui s’affiche varie en fonction de la règle mise en correspondance.
-  
-| |
+
 |**Si la règle de stratégie DLP...**|**Le conseil de stratégie par défaut indique que...**|
 |:-----|:-----|
 |Envoie une notification, mais ne permet pas de substitution  <br/> |Cet élément est en conflit avec une stratégie de votre organisation.  <br/> |
@@ -288,7 +285,7 @@ Vous pouvez personnaliser le texte de conseils de stratégie séparément à par
 
 - [Vue d’ensemble des stratégies de protection contre la perte de données](data-loss-prevention-policies.md)
     
-- [Créer une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md)
+- [Création d’une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md)
     
 - [Créer une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés](protect-documents-that-have-fci-or-other-properties.md)
     

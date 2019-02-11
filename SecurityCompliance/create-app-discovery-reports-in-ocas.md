@@ -3,7 +3,7 @@ title: Créer des rapports de découverte d’application à l’aide de la séc
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 1/28/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3e68e691-1fc4-4d3e-a2c0-d3134eb64055
 description: Créer des rapports avec Office 365 Cloud App de sécurité qui vous permettent de comprendre comment les personnes dans votre organisation utilisent Office 365 et autres applications.
-ms.openlocfilehash: 6842912f42072e21608955bde5250f0774c7bba4
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 543a194ec9d441a4feea97b8ad49022094565d7a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014866"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603715"
 ---
 # <a name="create-app-discovery-reports-using-office-365-cloud-app-security"></a>Créer des rapports de découverte d’application à l’aide de la sécurité des applications cloud Office 365
 
@@ -44,28 +44,17 @@ Pour créer un rapport de détection d’application, vous identifiez la source 
   
 1. Collecter les [journaux de trafic web et des sources de données Office 365 nuage sécurité des applications](web-traffic-logs-and-data-sources-for-ocas.md).
     
-2. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école. 
-    
-3. Dans la sécurité &amp; centre de conformité, sélectionnez **alertes** \> **Gestion avancée des alertes**.
-    
-4. Cliquez sur **Aller à la sécurité d’application Office 365 dans le nuage**.
-    
-5. Choisissez **découvrir** \> **Création de rapports**.
-    
-    ![Dans le portail Office 365 autorités de certification, cliquez sur découvrir](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)
+2. Accédez au portail de sécurité des applications dans le nuage ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) et se connecter. 
+       
+3. Choisissez **découvrir** \> **Création de rapports**. <br>![Dans le portail Office 365 autorités de certification, cliquez sur découvrir](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)<br>
   
-6. Spécifiez un nom et une description pour votre rapport, puis sélectionnez la source de données pour les journaux de trafic web dans la liste **source de données** . 
-    
-    ![Dans les autorités de certification O365, choisissez découvrir \> créer le nouveau rapport](media/22e660f0-5eb2-49fa-9fea-f88a5809a07b.png)
+4. Spécifiez un nom et une description pour votre rapport, puis sélectionnez la source de données pour les journaux de trafic web dans la liste **source de données** . <br>![Dans les autorités de certification O365, choisissez découvrir \> créer le nouveau rapport](media/22e660f0-5eb2-49fa-9fea-f88a5809a07b.png)<br>Si une source de données que vous souhaitez utiliser n’est pas répertoriée, vous pouvez demander que, il doit être ajouté. Sélectionnez **autre** pour la **source de données**, puis tapez le nom de la source de données que vous essayez de télécharger. Nous allons consulter le journal et vous permettent de savoir si nous ajouter la prise en charge pour la source de données qui l’a généré. 
   
-    > [!NOTE]
-    > Si une source de données que vous souhaitez utiliser n’est pas répertoriée, vous pouvez demander que, il doit être ajouté. Sélectionnez **autre** pour la **source de données**, puis tapez le nom de la source de données que vous essayez de télécharger. Nous allons consulter le journal et vous permettent de savoir si nous ajouter la prise en charge pour la source de données qui l’a généré. 
-  
-7. Accédez à l’emplacement des fichiers journaux que vous avez collecté et sélectionnez les fichiers. Les fichiers journaux doivent avoir été générées par la source de données que vous avez choisi pour le rapport.
+5. Accédez à l’emplacement des fichiers journaux que vous avez collecté et sélectionnez les fichiers. Les fichiers journaux doivent avoir été générées par la source de données que vous avez choisi pour le rapport.
     
-8. Cliquez sur **créer** pour démarrer le processus de création de rapport. 
+6. Cliquez sur **créer** pour démarrer le processus de création de rapport. 
     
-9. Pour afficher le statut du rapport, cliquez sur **Gérer les rapports de capture instantanée**. Lorsqu’un état est prêt, vous verrez l’option **Afficher l’état** . 
+7. Pour afficher le statut du rapport, cliquez sur **Gérer les rapports de capture instantanée**. Lorsqu’un état est prêt, vous verrez l’option **Afficher l’état** . 
     
 ## <a name="next-steps"></a>Étapes suivantes
 

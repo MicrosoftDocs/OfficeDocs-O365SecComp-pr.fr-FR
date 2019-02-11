@@ -1,5 +1,5 @@
 ---
-title: Gestion des dépositaires dans un cas eDiscovery avancées (Preview)
+title: Gérer les dépositaires dans un cas eDiscovery avancées (Preview)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 742f6bc35b67071fba528e6a0ce543ecc6915762
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: cce823924502fa2617d7819dc0967733fbc072e0
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607717"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706095"
 ---
-# <a name="managing-custodians-in-an-advanced-ediscovery-preview-case"></a>Gestion des dépositaires dans un cas eDiscovery avancées (Preview)
+# <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a>Gérer les dépositaires dans un cas eDiscovery avancées (Preview)
 
 L’onglet dépositaires contient une liste triable de tous les dépositaires dans ce cas. Après avoir ajouté dépositaires à un cas, plus d’informations sur chaque dépositaire seront automatiquement collectées d’Azure Active Directory.
 
@@ -70,7 +70,7 @@ Pour mettre à jour un dépositaire et les sources de données sélectionnées 
   
 4. Mettre à jour les sélections pour Exchange et OneDrive les emplacements en cliquant sur **Choisir des sources de données**.
   
-5. Ajouter ou supprimer des équipes, SharePoint ou Exchange boîtes aux lettres mappées l’utilisateur en cliquant sur Sélectionner les **sources de données supplémentaires**. Pour plus d’informations sur la façon dont vous permettent de mapper les données sources pour un dépositaire, voir [Ajouter dépositaires à une découverte électronique avancée (Preview) cas](add-custodians-to-case.md).
+5. Ajouter ou supprimer des équipes, SharePoint ou Exchange boîtes aux lettres mappées l’utilisateur en cliquant sur Sélectionner les **sources de données supplémentaires**. Pour plus d’informations sur la façon dont vous permettent de mapper les données sources pour un dépositaire, voir [dépositaires ajouter à un cas](add-custodians-to-case.md).
   
 6. Pour mettre à jour l’état de conservation dépositaire, cliquez sur **garde archives permanentes**et activer ou désactiver la suspension pour dépositaires.
 
@@ -95,7 +95,7 @@ Pour déclencher un processus de renouvellement d’indexation adresse partielle
 
 5. L’état pour le processus de renouvellement d’indexation peut être suivi également dans l’onglet **tâches** .
 
-Pour plus d’informations sur les éléments indexés partiellement nouveau indexation et correction, voir [fixation de traitement des erreurs d’eDiscovery avancée (Preview)](processing-data-for-case.md).
+Pour plus d’informations sur les éléments indexés partiellement nouveau indexation et correction, voir [corriger les erreurs de traitement](processing-data-for-case.md).
 
 ## <a name="releasing-a-custodian-from-a-case"></a>Libération d’un dépositaire à partir d’un cas
 
@@ -118,6 +118,5 @@ Pour libérer un dépositaire :
 
 ## <a name="related-information"></a>Informations connexes
 
- - Attributs de l’utilisateur dans Active Directory 
  - [Correction d’erreur lors du traitement des données](error-remediation.md) 
- - [Utilisation des communications](managing-custodian-communications.md)
+- [Utiliser des communications](managing-custodian-communications.md)

@@ -1,5 +1,5 @@
 ---
-title: Gérer les communications
+title: Gérer les notifications de conservation
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7189680f1ec022ae76e8003c7e6660a8da7c5906
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 38db73000e84db0bbdcac7710ef71431666a5494
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607747"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706045"
 ---
-# <a name="manage-communications"></a>Gérer les communications
+# <a name="manage-hold-notifications"></a>Gérer les notifications de conservation
 
 Après avoir lancé votre juridique contenir des flux de travail de notification, vous pouvez tirer parti d’eDiscovery avancée (Preview) pour effectuer le suivi de l’état de vos communications. L’onglet Communications présentent toutes les notifications de suspension dans votre cas eDiscovery avancées (Preview). Ici, vous pouvez voir les détails, tels que le nombre de dépositaires qui ont été attribués ou ont reconnues l’avis.
 
@@ -71,6 +71,8 @@ Lorsque vous mettez à jour le contenu ou les paramètres de la notification d�
 
 ## <a name="related-information"></a>Informations connexes 
 
-    - [Création d’une Notification de conservation légale] (~ SecurityCompliance\compliance20\create-hold-notification.md)
-    - [Reconnaître une Notification de conservation légale] (~/acknowledge-hold-notification.md)
-    - [Dépositaires ajout à un cas]
+- [Créer une notification de conservation légale](create-hold-notification.md)
+    
+- [Reconnaitre une notification de conservation](acknowledge-hold-notification.md)
+    
+- [Ajouter des consignataires à un cas](add-custodians-to-case.md)

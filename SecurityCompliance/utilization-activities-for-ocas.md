@@ -1,9 +1,9 @@
 ---
-title: Activités de l’utilisation après le déploiement d’Office 365 Cloud Application Security
+title: Activités d’utilisation après avoir déployé la sécurité des applications cloud Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,21 +13,21 @@ search.appverid:
 - MOE150
 ms.assetid: 86f414ad-81de-4703-b40a-c6615bbe9108
 description: Une fois que vous avez configuré et déployé Office 365 Cloud application sécurité, vous souhaiterez effectuer certaines tâches pour vous assurer que votre configuration est correcte et que vous êtes prêt pour révision régulière.
-ms.openlocfilehash: bc8cfad8eb9d9444066c3193ec2978e9ffd9f56a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 71b6793f2e325fcba3431ba5157640b29814ad30
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527871"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603705"
 ---
-# <a name="utilization-activities-after-rolling-out-office-365-cloud-app-security"></a>Activités de l’utilisation après le déploiement d’Office 365 Cloud Application Security
+# <a name="utilization-activities-after-rolling-out-office-365-cloud-app-security"></a>Activités d’utilisation après avoir déployé la sécurité des applications cloud Office 365
   
 |Évaluation **\>**|Planification **\>**|Déploiement **\>**|Utilisation du ***|
 |:-----|:-----|:-----|:-----|
 |[Commencer à évaluer](office-365-cas-overview.md) <br/> |[Commencer à planifier](get-ready-for-office-365-cas.md) <br/> |[Commencer à déployer](turn-on-office-365-cas.md) <br/> |Vous êtes ici !  <br/> [Étape suivante](review-office-365-cas-alerts.md) <br/> |
    
 > [!NOTE]
-> Sécurité d’application Office 365 dans le nuage est disponible dans Office 365 entreprise E5. Si votre organisation utilise un autre abonnement Office 365 pour entreprises, Office 365 Cloud application sécurité peut être achetée comme module complémentaire. (En tant qu’administrateur global, dans le centre d’administration Office 365, choisissez **facturation** \> **abonnements Add**.) Pour plus d’informations, voir [Office 365 Platform Service Description : Office 365 sécurité &amp; centre de conformité](https://technet.microsoft.com/en-us/library/dn933793.aspx) et [acheter ou modifier un module complémentaire pour Office 365 pour entreprises](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
+> Sécurité d’application Office 365 dans le nuage est disponible dans Office 365 entreprise E5. Si votre organisation utilise un autre abonnement Office 365 pour entreprises, Office 365 Cloud application sécurité peut être achetée comme module complémentaire. (En tant qu’administrateur global, dans le centre d’administration Office 365, choisissez **facturation** \> **abonnements Add**.) Pour plus d’informations, voir [Office 365 Platform Service Description : Office 365 sécurité &amp; centre de conformité](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) et [acheter ou modifier un module complémentaire pour Office 365 pour entreprises](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
   
 Après avoir configuré et configuré la sécurité d’application Office 365 dans le nuage, vous souhaiterez effectuer certaines tâches de l’utilisation en tant qu’administrateur général Office 365 ou administrateur de sécurité de votre organisation. 
 
@@ -92,9 +92,9 @@ Si une durée prolongée s’est écoulé depuis vous initialement configuré ou
     
 - [Suspendre ou restaurer un compte d’utilisateur](suspend-or-restore-an-account-in-ocas.md)
     
-- [Gérer les autorisations d’application](manage-app-permissions-in-ocas.md)
+- [Gérer les applications OAuth](manage-app-permissions-in-ocas.md)
     
-- [Passez en revue les conclusions de découverte d’application dans Office 365 Cloud application sécurité](review-app-discovery-findings-in-ocas.md)
+- [Passer en revue les détections d'applications dans la sécurité des applications cloud Office 365](review-app-discovery-findings-in-ocas.md)
     
 - Afficher la liste des [sources de données et journaux de trafic Web](web-traffic-logs-and-data-sources-for-ocas.md) pris en charge
     

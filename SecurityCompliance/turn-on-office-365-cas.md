@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
 description: Lisez cet article pour savoir comment activer Office 365 sécurité Gestion avancée, fourni par le nuage Application Security in Microsoft Azure.
-ms.openlocfilehash: 8964a0b413b0350188c7f61638d04032534e5374
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 057a7b3311384901b4c3683c350d1f26c91bf60d
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014786"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603775"
 ---
 # <a name="turn-on-office-365-cloud-app-security"></a>Activer la sécurité des applications cloud Office 365
   
@@ -37,6 +37,8 @@ ms.locfileid: "28014786"
 3. Sélectionnez **Activer la sécurité d’application Office 365 dans le nuage**.
     
 4. Cliquez sur **Aller à la sécurité d’application Office 365 dans le nuage**.<br/>![Dans la sécurité &amp; centre de conformité, cliquez sur Gérer les alertes avancées pour accéder à la sécurité d’application dans le nuage Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>Vous accédez au portail Office 365 Cloud Application Security, où vous pouvez afficher les rapports et créer ou modifier vos stratégies.
+
+Une fois que vous avez activé la sécurité d’application Office 365 dans le nuage, vous pouvez passer au portail de sécurité des applications dans le nuage en visitant [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com) et l’ouverture de session.
     
 > [!NOTE]
 > Lorsque vous activez la sécurité d’application Office 365 dans le nuage, audit plus d’informations sur vos comptes d’utilisateurs Office 365 et les activités de l’utilisateur sont transférés à la [Sécurité d’application Cloud Microsoft](https://aka.ms/whatiscas). Cela permet à Office 365 fournir des alertes avancées, filtrage et autres fonctionnalités afin que vous pouvez obtenir des informations et effectuer une action sur les activités suspectes. 

@@ -1,9 +1,9 @@
 ---
-title: Groupe vos adresses IP pour simplifier la gestion de sécurité d’application Office 365 dans le nuage
+title: Grouper vos adresses IP pour simplifier la gestion dans la sécurité des applications cloud Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/22/2018
+ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.assetid: b5e1471c-1ad6-4bc5-9e75-ce791aee283c
 description: Pour facilement identifier les ensembles d’adresses IP que vous utiliserez dans Office 365 Cloud application sécurité, telles que vos adresses IP office physiques, vous pouvez définir des groupes de plages d’adresses IP.
-ms.openlocfilehash: 76cb9625a46d1f5eceaab696de5dcbb72f4d2b47
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 42a62d2dd9771fb7d3ac992f4e0f8b5f6826efe3
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527523"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603735"
 ---
-# <a name="group-your-ip-addresses-to-simplify-management-in-office-365-cloud-app-security"></a>Groupe vos adresses IP pour simplifier la gestion de sécurité d’application Office 365 dans le nuage
+# <a name="group-your-ip-addresses-to-simplify-management-in-office-365-cloud-app-security"></a>Grouper vos adresses IP pour simplifier la gestion dans la sécurité des applications cloud Office 365
   
 |Évaluation **\>**|Planification **\>**|Déploiement **\>**|Utilisation du ***|
 |:-----|:-----|:-----|:-----|
@@ -35,21 +35,13 @@ Chaque groupe de plages d’adresses IP permettre être marqué avec des noms de
   
 ## <a name="to-set-up-an-ip-address-range-in-office-365-cloud-app-security"></a>Pour configurer une plage d’adresses IP dans Office 365 Cloud Application Security
 
-1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école. (Cela vous amène à la sécurité &amp; centre de conformité.) 
+1. En tant qu’un administrateur global ou administrateur de sécurité, accédez au portail de sécurité des applications dans le nuage ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) et se connecter.
     
-2. Dans la sécurité &amp; centre de conformité, sélectionnez **alertes** \> **Gestion avancée des alertes**.
-    
-3. Cliquez sur **Aller à la sécurité d’application Office 365 dans le nuage**.
-    
-    ![Dans la sécurité &amp; centre de conformité, cliquez sur Gérer les alertes avancées pour accéder à la sécurité d’application dans le nuage Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+2. Dans l’angle supérieur droit de la page, cliquez sur **paramètres** \> **plages d’adresses IP**.<br>![Dans O365 Cloud application sécurité, choisissez Paramètres pour accéder à vos paramètres système et des données](media/f6c48ee3-39b4-4b5a-8252-b6493b7bcd3d.png)<br>
   
-4. Dans l’angle supérieur droit de la page, cliquez sur **paramètres** \> **plages d’adresses IP**.
+3. Cliquez sur le bouton Nouveau, ce qui ressemble à un signe plus ( **+**).
     
-    ![Dans O365 Cloud application sécurité, choisissez Paramètres pour accéder à vos paramètres système et des données](media/f6c48ee3-39b4-4b5a-8252-b6493b7bcd3d.png)
-  
-5. Cliquez sur le bouton Nouveau, ce qui ressemble à un signe plus ( **+**).
-    
-6. Dans la fenêtre de la **plage d’adresses IP nouveau** , spécifiez les valeurs suivantes : 
+4. Dans la fenêtre de la **plage d’adresses IP nouveau** , spécifiez les valeurs suivantes : 
     
 |**Champ ou une liste**|**Procédure**|
 |:-----|:-----|
@@ -59,7 +51,7 @@ Chaque groupe de plages d’adresses IP permettre être marqué avec des noms de
 |**Tags** <br/> |Utiliser des balises de nommer vos groupes d’adresses IP. (Contrairement au champ nom, vous verrez des balises aux journaux d’activité.) Tapez un mot ou expression que vous souhaitez utiliser pour une balise. Vous pouvez ajouter autant de balises que vous le souhaitez pour chaque plage d’adresses IP. Et si vous avez déjà configuré une balise et que vous souhaitez ajouter cette plage d’adresses IP, sélectionnez-le dans la liste des balises actives qui apparaissent lorsque vous commencez à taper.  <br/> |
 |**Catégorie** <br/> | Assigner des catégories à vos balises pour faciliter l’accès à reconnaître les activités qui proviennent des adresses IP. Choisissez parmi les options suivantes :<br/> **D’administration** Toutes les adresses IP de vos administrateurs.  <br/> **Fournisseur de nuage** L’adresse IP de votre serveur proxy dans le nuage.  <br/> **D’entreprise** Toutes l’adresses IP dans votre réseau interne, vos succursales et vos adresses itinérants Wi-Fi.  <br/> **Risquée** Toutes les adresses IP que vous considérez à présenter des risques, tels que des adresses IP suspecte que vous ont indiqué dans le passé, les adresses IP dans les réseaux de vos concurrents et ainsi de suite. Par défaut, les catégories risquées inclut deux balises IP : **proxy anonyme** et **Tor** <br/> **Réseau privé virtuel** Toutes les adresses IP qui utilisent votre travailleurs à distance.  <br/> |
    
-7. Sélectionnez **Enregistrer**.
+7. Sélectionnez **Save (Enregistrer)**.
     
 Après avoir configuré vos plages d’adresses IP, n’oubliez pas que les événements futurs uniquement sont affectés par ces modifications.
   
@@ -71,6 +63,6 @@ Après avoir configuré vos plages d’adresses IP, n’oubliez pas que les év�
     
 - [Intégrer votre serveur SIEM](integrate-your-siem-server-with-office-365-cas.md)
     
-- [Passez en revue et effectuer une action sur les alertes de sécurité pour application Cloud Microsoft Office 365](review-office-365-cas-alerts.md)
+- [Passer en revue et effectuer une action sur les alertes dans la sécurité des applications cloud Office 365](review-office-365-cas-alerts.md)
     
 

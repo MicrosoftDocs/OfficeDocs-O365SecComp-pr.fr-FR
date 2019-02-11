@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: Avec Office 365 Message Encryption, votre organisation peut envoyer et recevoir des messages électroniques chiffrés entre les personnes à l’intérieur et à l’extérieur de votre organisation. Chiffrement des messages électroniques contribue à garantie que destiné uniquement les destinataires permettre afficher le contenu du message.
-ms.openlocfilehash: ae66ca79b2b0464e11d27fef553faccfd4787d75
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 57b1d34902bb1522a7974e97f8cd90e9f19b76f5
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528001"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696258"
 ---
 # <a name="office-365-message-encryption"></a>Chiffrement de messages Office 365
 
@@ -35,14 +35,17 @@ Cet article fait partie d’une plus grande série d’articles sur Office 365 M
 |[Afficher les messages chiffrés sur votre appareil Android](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> |Un utilisateur final qui a reçu un message chiffré avec Office 365 Message Encryption sur votre appareil Android, vous pouvez utiliser l’application Observateur OME gratuite pour afficher le message et l’envoyer une réponse chiffrée. Cet article explique comment.  <br/> |
 |[Afficher les messages chiffrés sur votre iPhone ou l’iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |Un utilisateur final qui a reçu un message chiffré avec Office 365 Message Encryption sur votre iPhone ou l’iPad, vous pouvez utiliser l’application Observateur OME gratuite pour afficher le message et l’envoyer une réponse chiffrée. Cet article explique comment.  <br/> |
 |Office 365 Message Encryption (OME) (cet article)  <br/> |Un administrateur Office 365 ou Exchange Online Protection qui souhaite en savoir où vous pouvez trouver des ressources supplémentaires.  <br/> |
+|[Comparez les versions de OME](ome-version-comparison.md)  <br/> |Un administrateur Office 365 ou Exchange Online Protection qui souhaite Découvrez les différences entre le chiffrement des messages Office 365 hérités et les nouvelles fonctionnalités OME que la manière dont ils peuvent travailler ensemble.  <br/> |
 |[FAQ sur le chiffrement de messages Office 365](ome-faq.md) <br/> |Un administrateur Office 365 ou Exchange Online Protection désireux de réponses aux questions fréquemment posées, y compris la gestion des licences et une comparaison entre les nouvelles fonctions et OME hérité.  <br/> |
 |[Configurer les nouvelles fonctionnalités de chiffrement de messages Office 365](set-up-new-message-encryption-capabilities.md) <br/> |Un administrateur Office 365 ou Exchange Online Protection souhaitant apprendre à configurer les nouvelles fonctionnalités d’Office 365 Message Encryption pour votre organisation Office 365.  <br/> |
-|[Définir des règles de flux de messagerie pour chiffrer les messages électroniques dans Office 365](define-mail-flow-rules-to-encrypt-email.md) <br/> |Un administrateur Office 365 ou Exchange Online Protection qui a déjà créée Office 365 Message Encryption et que vous êtes prêt à définir des règles de flux de messagerie pour chiffrer automatiquement des messages électroniques envoyés à partir de votre organisation.  <br/> |
-|[Gérer le chiffrement de messages Office 365](manage-office-365-message-encryption.md) <br/> |Un administrateur Office 365 ou Exchange Online Protection qui a déjà installé Office 365 Message Encryption et souhaite configurer les paramètres facultatifs pour OME.  <br/> |
+|[Définir des règles de flux de courrier pour le chiffrement du courriers dans Office 365](define-mail-flow-rules-to-encrypt-email.md) <br/> |Un administrateur Office 365 ou Exchange Online Protection qui a déjà créée Office 365 Message Encryption et que vous êtes prêt à définir des règles de flux de messagerie pour chiffrer automatiquement des messages électroniques envoyés à partir de votre organisation.  <br/> |
+|[Gérer le chiffrement de messages Office 365](manage-office-365-message-encryption.md) <br/> |Un administrateur Office 365 ou Exchange Online Protection qui a déjà installé Office 365 Message Encryption et souhaite configurer les paramètres facultatifs pour OME.  <br/> |
 |[Ajouter la marque de votre organisation à vos messages chiffrés](add-your-organization-brand-to-encrypted-messages.md) <br/> |Un administrateur Office 365 ou Exchange Online Protection souhaitant s’appliquent à votre société pour personnaliser l’apparence des messages électroniques de chiffrement de messages Office 365 de votre organisation et le contenu du portail OME.  <br/> |
+|[Révocation de courrier électronique de chiffrement de messages Office 365](revoke-ome-encrypted-mail.md) <br/> |Un administrateur Office 365 ou Exchange Online Protection souhaitant révoquer un message électronique qui a été chiffré à l’aide d’Office 365 Message Encryption.  <br/> |
 |Chiffrement de messages Office 365 dans [stratégie de Message et la description du service de conformité](https://technet.microsoft.com/en-us/library/5c43c8eb-f8f7-4b5a-a743-b1dab7dc2fc8#bkmk_O365_MessageEncryption) <br/> |Vous recherchez une description détaillée de la fonctionnalité de chiffrement de messages Office 365, notamment SKU pris en charge, disponible à partir d’Office 365.  <br/> |
-|[Informations héritées pour le chiffrement de messages Office 365](legacy-information-for-message-encryption.md) <br/> |Un administrateur Office 365 ou Exchange Online Protection qui a déjà créée Office 365 Message Encryption et que vous souhaitez plus d’informations sur comment OME fonctionnait avant la publication des nouvelles fonctionnalités. Alors que vous ne pouvez pas configurer un nouveau déploiement à l’aide de OME sans les nouvelles fonctionnalités, Microsoft continue de prendre en charge les déploiements existants.  <br/> |
-   
+|[Informations héritées pour le chiffrement de messages Office 365](legacy-information-for-message-encryption.md) <br/> |Un administrateur Office 365 ou Exchange Online Protection qui a déjà créée Office 365 Message Encryption et que vous souhaitez plus d’informations sur comment OME fonctionnait avant la publication des nouvelles fonctionnalités. Alors que vous ne pouvez pas configurer un nouveau déploiement à l’aide de OME sans les nouvelles fonctionnalités, Microsoft continue de prendre en charge les déploiements existants.  <br/> |
+||
+
 Le reste de cet article s’applique aux nouvelles fonctionnalités OME.
   
 ## <a name="how-office-365-message-encryption-works"></a>Fonctionnement du chiffrement de messages Office 365
@@ -58,7 +61,6 @@ Les utilisateurs finaux qui lire des messages chiffrés ou protégés par des dr
 Nous avons augmenté les limites de taille pour les messages et pièces jointes qui vous pouvez chiffrer à l’aide d’Office 365 Message Encryption. Pour plus d’informations sur les limites, consultez la rubrique [limites d’Exchange Online.](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx)
   
 ## <a name="defining-rules-for-office-365-message-encryption"></a>Définir les règles pour le chiffrement de messages Office 365
-<a name="Rules"> </a>
 
 Il est possible d’activer les nouvelles fonctionnalités d’Office 365 Message Encryption pour les administrateurs Exchange Online et Exchange Online Protection définir des règles de flux de messagerie. Ces règles déterminent dans un message quelles conditions les messages doivent être chiffrées. Lorsqu’une action de chiffrement est définie pour une règle, tous les messages qui correspondent aux conditions de règle sont chiffrées avant qu’ils sont envoyés.
   
@@ -67,7 +69,6 @@ Règles de flux de messagerie sont flexibles, ce qui vous permet de combiner des
 Pour plus d’informations sur la façon de créer des règles de flux pour tirer parti des nouvelles fonctionnalités OME messages, voir [Définir des règles pour Office 365 Message Encryption](define-mail-flow-rules-to-encrypt-email.md).
   
 ## <a name="sending-viewing-and-replying-to-encrypted-email-messages"></a>Envoyer, consulter et répondre à des messages électroniques chiffrés
-<a name="SendRecip"> </a>
 
 Avec Office 365 Message Encryption, les utilisateurs peuvent envoyer courrier électronique chiffré à partir d’Outlook et Outlook sur le web. En outre, administrateurs peuvent définir des règles de flux de messagerie dans Office 365 pour chiffrer automatiquement les messages électroniques en fonction de mots clés correspondant ou d’autres conditions.
   
@@ -76,12 +77,9 @@ Destinataires des messages chiffrés qui sont dans les organisations Office 365 
 Pour obtenir des instructions détaillées sur la façon d’afficher des messages chiffrés, jetez un œil à ces articles :
   
 - [Comment ouvrir un message protégé ?](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx)
-    
+
 - [Envoyer, consulter et répondre aux messages chiffrés dans Outlook](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx)
-    
+
 ## <a name="get-started-with-the-new-ome-capabilities"></a>Commencer avec les nouvelles fonctionnalités OME
-<a name="SendRecip"> </a>
 
 Si vous êtes prêt à commencer à utiliser les nouvelles fonctionnalités OME au sein de votre organisation, consultez [configurer des nouvelles fonctionnalités d’Office 365 Message Encryption](set-up-new-message-encryption-capabilities.md).
-  
-

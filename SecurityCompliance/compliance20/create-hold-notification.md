@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 9949fcc5876e1d0fa2f877333c5a9e5abae8c2a7
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 8db5a21f60a1d73c11e28bc2765a95c23646115d
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607741"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706075"
 ---
 # <a name="create-a-legal-hold-notice"></a>Créer une notification de conservation légale
 
@@ -56,7 +56,7 @@ Pour créer le contenu du portail :
 3. Cliquez sur **Suivant**.
 
   >[!Tip]
-  >Pour en savoir que plus sur le peuvent personnaliser le contenu et le format du contenu du portail, voir [l’aide de l’éditeur de Communications](using-communications-editor.md).
+  >Pour en savoir que plus sur le peuvent personnaliser le contenu et le format du contenu du portail, voir [utilisation de l’éditeur de Communications](using-communications-editor.md).
 
 ## <a name="step-3-set-the-required-notifications"></a>Étape 3 : Définir les notifications requises
 

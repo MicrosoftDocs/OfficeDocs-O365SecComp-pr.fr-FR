@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 description: "Résumé : Cet article explique comment mettre à jour un enregistrement DNS (Domain Name Service) afin que vous puissiez utiliser le SPF (Sender Policy Framework) avec votre domaine personnalisé dans Office 365. L'utilisation de SPF permet de valider les messages sortants envoyés à partir de votre domaine personnalisé."
-ms.openlocfilehash: 9c03f69cfd0c962214a3adc722690a4288940541
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 09adea835b793c638f50421a8f3970faefc5307e
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002883"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "28326410"
 ---
 # <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>Configurer SPF dans Office 365 pour empêcher l’usurpation
 
@@ -39,7 +39,6 @@ Si vous avez déjà configuré les messages pour Office 365, vous avez déjà i
 - Vous avez l'intention de configurer DKIM et DMARC (recommandé).
     
 ## <a name="updating-your-spf-txt-record-for-office-365"></a>Mise à jour de votre enregistrement TXT SPF pour Office 365
-<a name="sectionSection0"> </a>
 
 Avant de mettre à jour l'enregistrement TXT dans le système DNS, vous devez rassembler quelques informations et déterminer le format de l'enregistrement. Cela vous permettra d'éviter de générer des erreurs DNS. Pour obtenir des exemples avancés et des informations plus détaillées sur la syntaxe SPF prise en charge, voir la section [Fonctionnement de SPF pour éviter l'usurpation et le hameçonnage dans Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
   
@@ -60,12 +59,12 @@ Collectez les informations ci-dessous :
 ||**Si vous utilisez...**|**Courant pour les utilisateurs d'Office 365 ?**|**Ajoutez l'élément suivant...**|
 |:-----|:-----|:-----|:-----|
 |1  <br/> |Un système de messagerie (obligatoire)  <br/> |Courant. Tous les enregistrements TXT SPF commencent avec cette valeur  <br/> |v=spf1  <br/> |
-|2  <br/> |Exchange Online  <br/> |Courant  <br/> |Include:SPF.protection.Outlook.com  <br/> |
-|3  <br/> |Exchange Online dédié uniquement  <br/> |Non courant  <br/> |IP4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com  <br/> |
-|4  <br/> |Office 365 Germany, Microsoft Cloud Germany uniquement  <br/> |Non courant  <br/> |Include:SPF.protection.Outlook.de  <br/> |
-|5  <br/> |Système de messagerie tiers  <br/> |Non courant  <br/> |include:\<nom du domaine\>  <br/> Où <nom du domaine> est le nom de domaine du système de messagerie tiers.  <br/> |
-|6  <br/> |Système de messagerie en local. Par exemple, Exchange Online Protection et un autre système de messagerie  <br/> |Non courant  <br/> | Utilisez l'un des éléments suivants pour chaque système de messagerie supplémentaire :  <br/>  ip4:\<  _IP address_\>  <br/>  ip6:\<  _IP address_\>  <br/>  include:\<  _domain name_\>  <br/>  Où la valeur de l'élément \<  _IP address_\> est l'adresse IP de l'autre système de messagerie et \< _domain name_\> correspond au nom de domaine de l'autre système de messagerie qui envoie un message au nom de votre domaine.  <br/> |
-|7  <br/> |Un système de messagerie (obligatoire)  <br/> |Courant. Tous les enregistrements TXT SPF se terminent par cette valeur  <br/> |\< _enforcement rule_\>  <br/> Il peut s'agir de plusieurs valeurs. Il est recommandé d'utiliser **-all**.  <br/> |
+|2   <br/> |Exchange Online  <br/> |Courant  <br/> |include:spf.protection.outlook.com  <br/> |
+|3   <br/> |Exchange Online dédié uniquement  <br/> |Non courant  <br/> |IP4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com  <br/> |
+|4   <br/> |Office 365 Germany, Microsoft Cloud Germany uniquement  <br/> |Non courant  <br/> |Include:SPF.protection.Outlook.de  <br/> |
+|5   <br/> |Système de messagerie tiers  <br/> |Non courant  <br/> |include:\<nom du domaine\>  <br/> Où <nom du domaine> est le nom de domaine du système de messagerie tiers.  <br/> |
+|6   <br/> |Système de messagerie en local. Par exemple, Exchange Online Protection et un autre système de messagerie  <br/> |Non courant  <br/> | Utilisez l'un des éléments suivants pour chaque système de messagerie supplémentaire :  <br/>  ip4:\<  _IP address_\>  <br/>  ip6:\<  _IP address_\>  <br/>  include:\<  _domain name_\>  <br/>  Où la valeur de l'élément \<  _IP address_\> est l'adresse IP de l'autre système de messagerie et \< _domain name_\> correspond au nom de domaine de l'autre système de messagerie qui envoie un message au nom de votre domaine.  <br/> |
+|7   <br/> |Un système de messagerie (obligatoire)  <br/> |Courant. Tous les enregistrements TXT SPF se terminent par cette valeur  <br/> |\< _enforcement rule_\>  <br/> Il peut s'agir de plusieurs valeurs. Il est recommandé d'utiliser **-all**.  <br/> |
    
 1.1 par exemple, si vous êtes entièrement hébergé dans Office 365, autrement dit, vous n’avez aucun serveur de messagerie local, votre TXT SPF enregistrement comprend des lignes 1, 2 et 7 et se présente comme suit :
     
@@ -81,19 +80,17 @@ Collectez les informations ci-dessous :
    v=spf1 include:spf.protection.outlook.de -all
   ```
 
-1.4 Si vous ont déjà été déployées dans Office 365 et que vous avez configuré vos enregistrements SPF TXT pour votre domaine personnalisé et que vous migrez vers Office 365 Allemagne, vous devez mettre à jour votre enregistrement SPF TXT. Pour ce faire, remplacez **include:spf.protection.outlook.com** **include.spf.protection.outlook.de**.
+1.4 Si vous ont déjà été déployées dans Office 365 et que vous avez configuré vos enregistrements SPF TXT pour votre domaine personnalisé et que vous migrez vers Office 365 Allemagne, vous devez mettre à jour votre enregistrement SPF TXT. Pour ce faire, remplacez **include:spf.protection.outlook.com** **include:spf.protection.outlook.de**.
     
-2. Une fois que vous avez formulé votre enregistrement TXT SPF, vous devez mettre à jour l'enregistrement dans le système DNS. Vous ne pouvez avoir qu'un seul enregistrement TXT SPF pour un domaine. Si un enregistrement TXT SPF existe, au lieu d'ajouter un nouvel enregistrement, vous devez mettre à jour l'enregistrement existant. Accédez à [Créer des enregistrements DNS pour Office 365](https://support.office.microsoft.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23), puis cliquez sur le lien correspondant à votre hôte DNS. (Si votre hôte DNS ne possède pas de lien sur la page, vous pouvez [suivre les instructions générales](https://support.office.microsoft.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166) pour ajouter des enregistrements ou contacter votre hôte DNS pour obtenir de l'aide.) 
+2. Une fois que vous avez créé votre enregistrement SPF TXT, vous devez mettre à jour l’enregistrement dans le système DNS. Vous ne pouvez avoir qu’un seul enregistrement SPF TXT pour un domaine. S’il existe un enregistrement SPF TXT, au lieu d’ajouter un nouvel enregistrement, vous devez mettre à jour l’enregistrement existant. Accédez à [créer des enregistrements DNS pour Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide), puis cliquez sur le lien correspondant à votre hôte DNS. 
     
 3. Tester votre enregistrement SPF TXT.
     
 ## <a name="more-information-about-spf"></a>En savoir plus sur SPF
-<a name="sectionSection1"> </a>
 
 Pour obtenir des exemples avancés, des informations plus détaillées sur la syntaxe SPF prise en charge, l'usurpation, la résolution des problèmes et la façon dont Office 365 prend en charge SPF, voir la section [Fonctionnement de SPF pour éviter l'usurpation et le hameçonnage dans Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
   
 ## <a name="next-steps-after-you-set-up-spf-for-office-365"></a>Étapes suivantes : après avoir configuré SPF pour Office 365
-<a name="sectionSection2"> </a>
 
 Vous rencontrez des problèmes avec votre enregistrement TXT SPF ? Lisez [Résolution des problèmes : Meilleures pratiques pour SPF dans Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
   

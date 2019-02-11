@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2062c312-b1e4-4ce7-8cb2-ea39bc0dfdad
 description: Applications OAuth dans Office 365 Cloud application sécurité vous aident à gérer les applications de que vos utilisateurs téléchargement pour une utilisation avec des données d’Office 365
-ms.openlocfilehash: 2e3c6d9d42b22aa8bb666211431197744471e84f
-ms.sourcegitcommit: 25f72d20e76463c2f0a075dfc0116f00c934bd77
+ms.openlocfilehash: ae32e3c6b15f4ad4794a3dd08c3992adaeba655c
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "27447042"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603685"
 ---
 # <a name="manage-oauth-apps-using-office-365-cloud-app-security"></a>Gérer les applications OAuth à l’aide de la sécurité des applications cloud Office 365
 
@@ -35,13 +35,9 @@ Cet article décrit comment créer une requête de l’application, où aller po
 > [!NOTE]
 > Applications OAuth sont gérées dans le portail Office 365 Cloud Application Security. Vous devez être un administrateur global ou un administrateur de sécurité pour effectuer la tâche suivante. Pour en savoir plus, consultez [les autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md). 
   
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école pour Office 365. (Cela vous amène à la sécurité &amp; centre de conformité.) 
-    
-2. Accédez à des **alertes** \> **Gestion avancée des alertes**.
-    
-3. Cliquez (ou appuyez) **accédez à la sécurité d’application Office 365 dans le nuage**.<br/>![Dans la sécurité &amp; centre de conformité, cliquez sur Gérer les alertes avancées pour accéder à la sécurité d’application dans le nuage Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>**Remarque**: Si Office 365 Cloud application sécurité n’est pas encore activée, vous pouvez le faire dans cette page. Consultez [préparer à Office 365 nuage sécurité des applications](get-ready-for-office-365-cas.md). 
+1. Accédez au portail de sécurité des applications dans le nuage ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) et se connecter.
   
-4. Choisissez **étudier** \> **applications OAuth**.<br/>![Dans le portail O365 autorités de certification, cliquez sur examiner.](media/OCAS-OAuthApps.png)<br/>
+2. Choisissez **étudier** \> **applications OAuth**.<br/>![Dans le portail O365 autorités de certification, cliquez sur examiner.](media/OCAS-OAuthApps.png)<br/>
   
 ## <a name="what-youll-see-on-the-manage-oauth-apps-page"></a>Vous verrez dans la page applications de gérer les OAuth
 

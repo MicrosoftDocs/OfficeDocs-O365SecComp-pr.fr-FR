@@ -3,7 +3,7 @@ title: Examiner une activité concernant la sécurité des applications cloud Of
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 1/28/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 15fa4545-28b4-4dd4-bf85-88e0926bd5fc
 description: 'Avec Office 365 de sécurité App dans le nuage, vous pouvez voir ce qui se passe dans votre environnement Office 365 en observant chargées activités et comptes. '
-ms.openlocfilehash: d988a86c5ceaa2ec46bc27f1aaff540fa3e0b3b4
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: e463323cf28738e1d54fcdb65ed0d15290c79994
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014896"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603655"
 ---
 # <a name="investigate-an-activity-in-office-365-cloud-app-security"></a>Examiner une activité concernant la sécurité des applications cloud Office 365
   
@@ -30,13 +30,9 @@ Office 365 Cloud application sécurité fonctionne avec [journal d’audit Offic
   
 ## <a name="how-to-get-to-the-activity-log-page"></a>Comment accéder à la page journal d’activité
 
-1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école. (Voir [les autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md).)
-    
-2. Dans la sécurité &amp; centre de conformité, sélectionnez **alertes** \> **Gestion avancée des alertes**.
-    
-3. Cliquez sur **Aller à la sécurité d’application Office 365 dans le nuage**.<br/>![Dans la sécurité &amp; centre de conformité, cliquez sur Gérer les alertes avancées pour accéder à la sécurité d’application dans le nuage Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+1. Accédez au portail de sécurité des applications dans le nuage ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) et se connecter.
   
-4. Dans la barre de navigation dans la partie supérieure de l’écran, choisissez **examiner** \> **le journal d’activité**.<br/>![Dans le portail O365 autorités de certification, cliquez sur examiner.](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
+2. Dans la barre de navigation dans la partie supérieure de l’écran, choisissez **examiner** \> **le journal d’activité**.<br/>![Dans le portail O365 autorités de certification, cliquez sur examiner.](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
   
 ## <a name="review-and-investigate-activities"></a>Passez en revue et examiner les activités
 

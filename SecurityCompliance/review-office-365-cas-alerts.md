@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: Utilisez la page alertes dans Office 365 Cloud application sécurité pour afficher les problèmes potentiels et effectuer une action. Vous pouvez faire disparaître ou résoudre les alertes et si nécessaire, suspendre un compte d’utilisateur.
-ms.openlocfilehash: 2665f4ebc9c5c24b95da64954a606dfc0df99082
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: ff20b913553414d796f9653108ac9b8a3d84cb74
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014826"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603675"
 ---
 # <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Passer en revue et effectuer une action sur les alertes dans la sécurité des applications cloud Office 365
   
@@ -32,13 +32,9 @@ Vous pouvez utiliser la page alertes de sécurité pour application Cloud Micros
   
 ## <a name="how-to-get-to-the-alerts-page"></a>Comment accéder à la page alertes
 
-1. En tant qu’un administrateur global ou administrateur de sécurité, accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école. 
-    
-2. Dans la sécurité &amp; centre de conformité, sélectionnez **alertes** \> **Gestion avancée des alertes**.
-    
-3. Cliquez sur **Aller à la sécurité d’application Office 365 dans le nuage**.<br/>![Dans la sécurité &amp; centre de conformité, cliquez sur Gérer les alertes avancées pour accéder à la sécurité d’application dans le nuage Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+1. Accédez au portail de sécurité des applications dans le nuage ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) et se connecter.
   
-4. Dans la barre de navigation dans la partie supérieure de l’écran, cliquez sur **alertes**.<br/>![Dans la page alertes, vous pouvez voir des alertes déclenchées et toutes les actions effectuées.](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
+2. Dans la barre de navigation dans la partie supérieure de l’écran, cliquez sur **alertes**.<br/>![Dans la page alertes, vous pouvez voir des alertes déclenchées et toutes les actions effectuées.](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
   
 ## <a name="review-and-handle-alerts"></a>Révision et gérer des alertes
 

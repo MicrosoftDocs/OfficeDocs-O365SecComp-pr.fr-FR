@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3ebb9a40d3fb055fbb88b32175a4a22df3da44af
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 773137cbfc73d449766e04bf7eccc77f8bdd0cca
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607719"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706135"
 ---
 # <a name="create-a-search-to-collect-data"></a>Créer une recherche pour collecter des données
 
@@ -31,11 +31,11 @@ Chaque recherche avec un incident doit avoir un nom unique. Vous pouvez éventue
 
 ## <a name="define-your-conditions"></a>Définir vos conditions de travail
 
-Vous pouvez définir les conditions de recherche à l’aide de cartes condition prédéfinis ou à l’aide du langage de requête de mot clé (KQL). Pour plus d’informations, voir [Création de requêtes de recherche](building-search-queries.md).
+Vous pouvez définir les conditions de recherche à l’aide de cartes condition prédéfinis ou à l’aide du langage de requête de mot clé (KQL). Pour plus d’informations, voir [créer des requêtes de recherche](building-search-queries.md).
 
 ## <a name="choose-the-custodians-to-search-from"></a>Choisissez les dépositaires pour la recherche à partir de
 
-Une fois que vous avez défini vos conditions, vous devez choisir les emplacements à rechercher. Une façon de procéder est en spécifiant les dépositaires que vous avez déjà ajouté à la casse que vous souhaitez rechercher. En sélectionnant un dépositaire, vous allez exécuter la recherche par rapport à toutes les sources de données mappées sur le dépositaire. Pour plus d’informations sur l’ajout de dépositaires à votre cas et gérer les sources de données, voir [utilisation des dépositaires](managing-custodians.md) .
+Une fois que vous avez défini vos conditions, vous devez choisir les emplacements à rechercher. Une façon de procéder est en spécifiant les dépositaires que vous avez déjà ajouté à la casse que vous souhaitez rechercher. En sélectionnant un dépositaire, vous allez exécuter la recherche par rapport à toutes les sources de données mappées sur le dépositaire. Pour plus d’informations sur l’ajout de dépositaires à votre cas et gérer les sources de données, voir [utiliser les dépositaires](managing-custodians.md) .
 
 ## <a name="choose-non-custodial-locations"></a>Choisir des emplacements non garde
 

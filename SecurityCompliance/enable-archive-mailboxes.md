@@ -3,7 +3,7 @@ title: Activer des boîtes aux lettres d’archive de sécurité Office 365 &amp
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Utilisez le Office 365 Security &amp; centre de conformité pour activer des boîtes aux lettres d’archive de prise en charge de la rétention des messages de votre organisation, eDiscovery, maintenir des exigences.
-ms.openlocfilehash: 5ba578ba611f619194ac4f475121bd485b75f9e0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 1c290cf19b396221dac702efd1395911e8a51631
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528193"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "28327096"
 ---
 # <a name="enable-archive-mailboxes-in-the-office-365-security-amp-compliance-center"></a>Activer des boîtes aux lettres d’archive de sécurité Office 365 &amp; centre de conformité
   
@@ -36,9 +36,9 @@ Vous devez être affecté le rôle destinataires de messagerie dans Exchange Onl
   
 ## <a name="enable-an-archive-mailbox"></a>Activation d'une boîte aux lettres d'archivage
   
-1. Accédez à [https://protection.office.com](https://protection.office.com).
+1. Accédez à la page [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à Office 365 à l’aide de votre compte professionnel ou de l’école.
+2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
 3. Dans le volet gauche de la sécurité &amp; centre de conformité, cliquez sur **la gouvernance des données** \> **Archive**.
     
@@ -67,9 +67,9 @@ Notez que la stratégie d’archivage par défaut attribué aux boîtes aux lett
   
 Pour désactiver une boîte aux lettres d’archivage :
   
-1. Accédez à [https://protection.office.com](https://protection.office.com).
+1. Accédez à la page [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à Office 365 à l’aide de votre compte professionnel ou de l’école.
+2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
 3. Dans le volet gauche de la sécurité &amp; centre de conformité, cliquez sur **la gouvernance des données** \> **Archive**.
     
@@ -88,7 +88,43 @@ Pour désactiver une boîte aux lettres d’archivage :
 > [!TIP]
 > Vous pouvez également désactiver des boîtes aux lettres d’archivage en bloc en sélectionnant plusieurs utilisateurs dont les boîtes aux lettres sont activées (à l’aide de la touche Maj ou Ctrl). Une fois les boîtes aux lettres sélectionnées, cliquez sur **Désactiver** dans le volet des détails.  
   
-## <a name="more-information"></a>Plus d'informations
+## <a name="use-exchange-online-powershell-to-enable-or-disable-archive-mailboxes"></a>Utiliser Exchange Online PowerShell pour activer ou désactiver des boîtes aux lettres d’archive
+
+Vous pouvez également utiliser Exchange Online PowerShell pour activer des boîtes aux lettres d’archive. La raison principale à utiliser PowerShell est que vous pouvez activer rapidement la boîte aux lettres d’archive pour tous les utilisateurs de votre organisation.
+
+La première étape consiste à se connecter à Exchange Online PowerShell. Pour plus d’informations, voir [se connecter à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+
+Une fois que vous êtes connecté à Exchange Online, vous pouvez exécuter les commandes dans les sections suivantes pour activer ou désactiver des boîtes aux lettres d’archive.
+
+### <a name="enable-archive-mailboxes"></a>Activation des boîtes aux lettres d’archivage
+
+Exécutez la commande suivante pour activer la boîte aux lettres d’archivage pour un seul utilisateur.
+    
+  ```
+  Enable-Mailbox -Identity <username> -Archive
+  ```
+
+Exécutez la commande suivante pour activer la boîte aux lettres d’archive pour tous les utilisateurs de votre organisation (boîte aux lettres d’archivage n’est actuellement pas activée).
+    
+  ```
+  Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
+  ```
+  
+### <a name="disable-archive-mailboxes"></a>Désactivation des boîtes aux lettres d’archivage
+
+Exécutez la commande suivante pour désactiver la boîte aux lettres d’archivage pour un seul utilisateur.
+    
+  ```
+  Disable-Mailbox -Identity <username> -Archive
+  ```
+
+Exécutez la commande suivante pour désactiver la boîte aux lettres d’archive pour tous les utilisateurs de votre organisation (boîte aux lettres d’archive est actuellement activé).
+    
+  ```
+  Get-Mailbox -Filter {ArchiveStatus -Eq "Active" -AND RecipientTypeDetails -eq "UserMailbox"} | Disable-Mailbox -Archive
+  ```
+
+## <a name="more-information"></a>Plus d’informations
   
 - Boîtes aux lettres d’archive aider à vous et vos utilisateurs pour répondre à la rétention de votre organisation, eDiscovery et maintenez la configuration requise. Par exemple, vous pouvez utiliser la stratégie de rétention de votre organisation Exchange pour déplacer le contenu de la boîte aux lettres boîte aux lettres d’archivage des utilisateurs. Lorsque vous utilisez l’outil de recherche de contenu dans la sécurité &amp; centre de conformité pour rechercher les boîtes aux lettres d’un utilisateur pour un contenu spécifique, boîte aux lettres de l’utilisateur archive sera également recherché. Et, lorsque vous placez un litige ou appliquez une stratégie de rétention Office 365 pour les boîtes aux lettres d’un utilisateur, les éléments dans la boîte aux lettres d’archivage sont également conservées.
   
@@ -102,7 +138,6 @@ Pour désactiver une boîte aux lettres d’archivage :
     
 - Pour plus d’informations sur les boîtes aux lettres d’archive et des stratégies de rétention d’Exchange, voir :
   
-  - [Boîtes aux lettres d'archivage dans Exchange Online](https://go.microsoft.com/fwlink/?LinkId=404421)
     
   - [Balises et stratégies de rétention](https://go.microsoft.com/fwlink/?LinkId=404424)
     

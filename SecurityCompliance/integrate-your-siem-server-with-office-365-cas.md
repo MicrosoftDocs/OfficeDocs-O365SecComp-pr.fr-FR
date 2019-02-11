@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: Vous pouvez intégrer votre serveur SIEM avec Office 365 Cloud Application Security. Lisez cet article pour obtenir une vue d’ensemble de son fonctionnement et comment la configurer.
-ms.openlocfilehash: 3cdae0389065b18da090139528eceefb007363fa
-ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
+ms.openlocfilehash: 8d231a16db1ef75993ffa484f3ac8717187fdef6
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723261"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603765"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>Intégrer votre serveur SIEM à la sécurité des applications cloud Office 365
   
@@ -67,29 +67,24 @@ Sécurité d’application Office 365 Cloud prend actuellement en charge les ser
  
 ## <a name="step-1-set-it-up-a-siem-agent-in-office-365-cloud-app-security"></a>Étape 1 : Configurer un agent SIEM dans Office 365 Cloud Application Security
 
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou de l’école pour Office 365. (Cela vous amène à la sécurité &amp; centre de conformité.) 
-    
-2. Accédez à des **alertes** \> **Gestion avancée des alertes**.
-    
-3. Cliquez sur **Aller à la sécurité d’application Office 365 dans le nuage**.<br/>
-    ![Dans la sécurité &amp; centre de conformité, cliquez sur Gérer les alertes avancées pour accéder à la sécurité d’application dans le nuage Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+1. Accédez au portail de sécurité des applications dans le nuage ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) et se connecter.
   
-4. Cliquez sur **paramètres** \> **extensions de sécurité**, puis cliquez sur agents SIEM.<br/>
+2. Cliquez sur **paramètres** \> **extensions de sécurité**, puis cliquez sur agents SIEM.<br/>
 ![Choisissez Paramètres > extensions de sécurité](media/Settings-SecurityExtensions.png)
 
-5. Choisissez **SIEM ajouter des agents**.<br/>![Choisissez agent SIEM ajouter.](media/SIEMAgents.png)
+3. Choisissez **SIEM ajouter des agents**.<br/>![Choisissez agent SIEM ajouter.](media/SIEMAgents.png)
     
-6. Cliquez sur **Démarrer l’Assistant**.<br/>![Obtenir de l’aide ou de démarrer l’Assistant](media/HelpOrWizard.png) 
+4. Cliquez sur **Démarrer l’Assistant**.<br/>![Obtenir de l’aide ou de démarrer l’Assistant](media/HelpOrWizard.png) 
     
-7. Dans l’étape **Général** , spécifiez un nom et **Sélectionnez votre format SIEM** et définir des **Paramètres avancés** qui sont pertinents pour ce format. Puis cliquez sur **suivant**.<br/>![Spécifiez le nom et type](media/ChooseAgentTypeAndName.png)
+5. Dans l’étape **Général** , spécifiez un nom et **Sélectionnez votre format SIEM** et définir des **Paramètres avancés** qui sont pertinents pour ce format. Puis cliquez sur **suivant**.<br/>![Spécifiez le nom et type](media/ChooseAgentTypeAndName.png)
     
-8. Dans l’étape de **Journal système distant** , spécifiez l’adresse IP ou le nom d’hôte de l' **hôte de journal système distant** et le **numéro de port de journal système**. Sélectionnez TCP ou UDP comme protocole de journal système distant. (Vous pouvez travailler avec votre administrateur réseau ou à un administrateur de sécurité pour obtenir ces informations si vous ne les avez). Puis cliquez sur **suivant**.<br/>![Spécifier les détails du journal système distant](media/ArcSightS1Syslog.png)
+6. Dans l’étape de **Journal système distant** , spécifiez l’adresse IP ou le nom d’hôte de l' **hôte de journal système distant** et le **numéro de port de journal système**. Sélectionnez TCP ou UDP comme protocole de journal système distant. (Vous pouvez travailler avec votre administrateur réseau ou à un administrateur de sécurité pour obtenir ces informations si vous ne les avez). Puis cliquez sur **suivant**.<br/>![Spécifier les détails du journal système distant](media/ArcSightS1Syslog.png)
   
-9. Dans l’étape de **Types de données** , effectuez l’une des opérations suivantes, puis cliquez sur **suivant**:
+7. Dans l’étape de **Types de données** , effectuez l’une des opérations suivantes, puis cliquez sur **suivant**:
     - Conservez la valeur par défaut de **Toutes les alertes**<br/>OU
     - Cliquez sur **toutes les alertes**, puis cliquez sur **filtres spécifiques**. Définir des filtres pour sélectionner les types d’alertes que vous voulez envoyer à votre serveur SIEM.<br/>![Étape de Types de données de l’Assistant](media/ArcSightS1ExportOptions.png)
   
-10. Dans l’écran Félicitations, copiez le jeton et enregistrer pour plus tard.<br/>![Écran de l’agent créé SIEM](media/SIEMAgentFinished.png) 
+8. Dans l’écran Félicitations, copiez le jeton et enregistrer pour plus tard.<br/>![Écran de l’agent créé SIEM](media/SIEMAgentFinished.png) 
 
 > [!IMPORTANT]
 > À ce stade, vous avez configuré un agent SIEM dans Office 365 Cloud application sécurité, mais votre intégration du serveur SIEM n’est pas encore terminée. Passez à l’étape suivante pour continuer votre intégration du serveur SIEM.
@@ -177,7 +172,7 @@ Une fois que vous avez configuré votre serveur SIEM et intègrent avec Office 3
 
 Si vous perdez votre jeton, vous pouvez régénérer un. 
 
-1. Dans le portail Office 365 Cloud application sécurité, choisissez **paramètres** > **extensions de sécurité**.
+1. Dans le portail Office 365 Cloud Application Security ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)), choisissez **paramètres** > **extensions de sécurité**.
 
 2. Dans le tableau, recherchez la ligne pour l’agent SIEM. 
 
@@ -185,7 +180,7 @@ Si vous perdez votre jeton, vous pouvez régénérer un.
   
 ### <a name="edit-a-siem-agent"></a>Modifier un agent SIEM
 
-1. Dans le portail Office 365 Cloud application sécurité, choisissez **paramètres** > **extensions de sécurité**.
+1. Dans le portail Office 365 Cloud Application Security ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)), choisissez **paramètres** > **extensions de sécurité**.
 
 2. Recherchez la ligne pour l’agent SIEM. 
 
@@ -193,7 +188,7 @@ Si vous perdez votre jeton, vous pouvez régénérer un.
   
 ### <a name="delete-a-siem-agent"></a>Supprimer un agent SIEM
 
-1. Dans le portail Office 365 Cloud application sécurité, choisissez **paramètres** > **extensions de sécurité**.
+1. Dans le portail Office 365 Cloud Application Security ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)), choisissez **paramètres** > **extensions de sécurité**.
 
 2. Recherchez la ligne pour l’agent SIEM. 
 

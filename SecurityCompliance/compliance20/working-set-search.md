@@ -1,5 +1,5 @@
 ---
-title: Interrogation des données dans un jeu de travail
+title: Interroger les données d’un ensemble de travail
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 03c82741b3a4433c43ef709701ab40330ac5fd1f
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 3a503dd825cf65bef0dde537862561887d908563
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607680"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29694990"
 ---
-# <a name="querying-data-in-a-working-set"></a>Interrogation des données dans un jeu de travail
+# <a name="query-the-data-in-a-working-set"></a>Interroger les données d’un ensemble de travail
 
 Dans la plupart des cas, il sera utile de pouvoir approfondir qu’il est dans un jeu de travail et organisez-les pour passer en revue plus efficacement. Requêtes au sein d’un jeu de travail vous permet de faire en vous permettant de vous concentrer sur un sous-ensemble des documents qui répondent aux critères que vous avez définis à la fois.
 

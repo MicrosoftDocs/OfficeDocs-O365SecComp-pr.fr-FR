@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Vous pouvez créer une boîte aux lettres inactive dans Office 365 par application d’une suspension ou une stratégie de rétention d’Office 365 à la boîte aux lettres et ensuite supprimer le compte d’utilisateur Office 365 correspondant. Éléments d’une boîte aux lettres inactive sont conservés pendant la durée de la stratégie de blocage ou de rétention qui a été appliquée avant qu’il a été inactif. Pour supprimer définitivement une boîte aux lettres inactive, simplement supprimer la stratégie de blocage ou de rétention.
-ms.openlocfilehash: ed0af9077222d9151dc41010bca10590769118b1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: de67068ded30f63e46a8a94c1030d45a12b56a2e
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527876"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29740836"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Créer et gérer des boîtes aux lettres inactives dans Office 365
 
@@ -122,8 +122,6 @@ Après une boîte aux lettres inactive, vous pouvez modifier la durée de la sus
 ## <a name="recover-an-inactive-mailbox"></a>Récupérer une boîte aux lettres inactive
 
 Si un ancien employé renvoie à votre organisation, ou si un nouvel employé à effectuer sur les responsabilités de l’employé quittée, vous pouvez récupérer le contenu de la boîte aux lettres inactive. Lorsque vous récupérez une boîte aux lettres inactive, la boîte aux lettres est converti en une nouvelle boîte aux lettres, le contenu et la structure de dossiers de la boîte aux lettres inactive sont conservés, et la boîte aux lettres est liée à un nouveau compte d’utilisateur. Une fois qu’il est récupéré, la boîte aux lettres inactive n’existe plus. Pour connaître les procédures et plus d’informations sur qui se produit lorsque vous récupérez une boîte aux lettres inactive, consultez la rubrique [récupérer une boîte aux lettres inactive dans Office 365](recover-an-inactive-mailbox.md).
-  
-[Gestion des boîtes aux lettres inactives](create-and-manage-inactive-mailboxes.md#manageinactivemailboxes)
   
 ## <a name="restore-the-contents-of-an-inactive-mailbox-to-another-mailbox"></a>Restaurer le contenu d'une boîte aux lettres inactive vers une autre boîte aux lettres
 

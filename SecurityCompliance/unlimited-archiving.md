@@ -3,7 +3,7 @@ title: Vue d’ensemble de l’archivage illimité dans Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: En savoir plus sur Développer automatiquement l’archivage dans Office 365, qui fournit un nombre illimité d’archivage pour les boîtes aux lettres Exchange Online.
-ms.openlocfilehash: a762a0fb8295a645957404c1c88881f40329f7a1
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: 83eb49b3f2a7da418b61e509f44023809ed396c3
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782121"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29740816"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Vue d’ensemble de l’archivage illimité dans Office 365
 
@@ -69,11 +69,11 @@ Les captures d’écran suivante affiche une liste de dossiers avant et après q
 
 Pour accéder aux messages qui sont stockés dans une archive développé automatique, les utilisateurs doivent employer un des clients Outlook suivants :
   
-- Outlook 2016 pour Windows
+- 2016 Outlook ou Outlook 2019 pour Windows
     
 - Outlook sur le web 
     
-- Outlook 2016 pour Mac 
+- Outlook 2016 ou 2019 Outlook pour Mac 
     
 > [!NOTE]
 > Les utilisateurs Outlook 2013 peuvent uniquement accéder aux éléments qui ont été stockés à l’origine dans leur boîte aux lettres d’archive. Ils ne pourront pour accéder aux éléments qui sont déplacés vers un stockage d’archives supplémentaires. 
@@ -96,12 +96,12 @@ Cette section décrit la relation entre développer automatiquement l’archivag
   
 - **découverte électronique** - lorsque vous utilisez un outil de découverte électronique Office 365, tels que de la recherche de contenu ou In-Place eDiscovery, les zones de stockage supplémentaire dans une archive développé automatique sont inclus dans la recherche.
     
-- **Rétention** - lorsque vous mettre en attente une boîte aux lettres dans Exchange Online à l’aide des outils tels que litige ou en cas de découverte électronique contient et stratégies de rétention de sécurité Office 365 &amp; centre de conformité, le contenu situé dans une archive développé automatique est également mis en attente.
+- Blocage de **rétention** - lorsque vous placez une boîte aux lettres dans Exchange à l’aide des outils tels que litige contient des cas en ligne ou de la découverte électronique et de stratégies de rétention dans le centre de conformité, contenu de & Office 365 sécurité situés dans une archive développé automatique est également mis en attente.
     
 - **Messagerie (MRM) de gestion des enregistrements** - si vous utilisez des stratégies de suppression de MRM dans Exchange Online pour supprimer définitivement les éléments de boîte aux lettres ayant expiré, éléments arrivés à expiration situés dans l’archive de développé automatique seront également supprimés.
     
 - **Importer le service** - vous pouvez utiliser le service Office 365 importer pour importer des fichiers PST vers l’archive de développé automatique d’un utilisateur. Vous pouvez importer jusqu'à 100 Go de données à partir des fichiers PST boîte aux lettres d’archive de l’utilisateur. 
 
-## <a name="more-information"></a>Plus d'informations
+## <a name="more-information"></a>Plus d’informations
 
 Pour obtenir des informations sur l’extension automatique d’archivage, consultez la rubrique [Office 365 : Forum aux questions des Archives développer automatiquement](https://blogs.technet.microsoft.com/exchange/2018/04/09/office-365-auto-expanding-archives-faq/).

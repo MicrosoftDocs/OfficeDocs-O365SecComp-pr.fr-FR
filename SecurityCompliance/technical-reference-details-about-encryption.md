@@ -3,7 +3,7 @@ title: Détails techniques de référence sur le chiffrement dans Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 4/12/2018
+ms.date: 1/15/2019
 ms.audience: ITPro
 ms.topic: reference
 ms.service: o365-administration
@@ -14,20 +14,20 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Afficher les informations techniques de chiffrement dans Office 365.
-ms.openlocfilehash: 69365b66479ab89a9c036fe489b4087d327460eb
-ms.sourcegitcommit: e4ebef6aaf756eefb86c9f3a602cf75f5d344271
+ms.openlocfilehash: bb4629d89d2ed625cc1b817c53d2355484bfdf6c
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26026521"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "28326935"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>Détails techniques de référence sur le chiffrement dans Office 365
 
 Reportez-vous à cet article pour en savoir plus sur les certificats, les technologies et TLS suites de chiffrement utilisées pour le [chiffrement dans Office 365](encryption.md). Cet article fournit également des détails sur planifiées à éviter.
   
 - Si vous recherchez des informations générales, voir [chiffrement dans Office 365](encryption.md).
-    
 - Si vous recherchez des informations de configuration, voir [configurer le chiffrement dans Office 365 pour entreprises](set-up-encryption.md).
+- Pour plus d’informations sur les suites de chiffrement pris en charge par certaines versions de Windows, voir [Suites de chiffrement TLS/SSL (Schannel SSP)](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel).
     
 ## <a name="microsoft-office-365-certificate-ownership-and-management"></a>Gestion et propriété de certificats Microsoft Office 365
 
@@ -35,7 +35,10 @@ Il est inutile d’acheter ou de mettre à jour les certificats pour Office 365
   
 ## <a name="current-encryption-standards-and-planned-deprecations"></a>Les normes de chiffrement en cours et planifiées à éviter
 
-Pour pouvoir continuer à fournir un chiffrement de pointe pour Office 365, Microsoft examine régulièrement les normes de chiffrement pris en charge. Parfois, il faut supprimer des normes anciens dès qu’elles sont obsolètes et par conséquent moins sécurisé. Cette rubrique décrit les suites de chiffrement pris en charge actuellement et autres normes ainsi que des détails sur planifiées à éviter.
+Pour pouvoir continuer à fournir un chiffrement de pointe pour Office 365, Microsoft examine régulièrement les normes de chiffrement pris en charge. Parfois, il faut supprimer des normes anciens dès qu’elles sont obsolètes et par conséquent moins sécurisé. Cette rubrique décrit les suites de chiffrement pris en charge actuellement et autres normes ainsi que des détails sur planifiées à éviter. 
+
+## <a name="fips-compliance-for-office-365"></a>Conformité FIPS pour Office 365
+Toutes les suites de chiffrement pris en charge par Office 365 utilisent des algorithmes acceptables sous FIPS 140-2. Office 365 hérite des validations FIPS de Windows (par le biais de Schannel). Pour plus d’informations sur Schannel, voir [Suites de chiffrement TLS/SSL (Schannel SSP)](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel).
   
 ## <a name="versions-of-tls-supported-by-office-365"></a>Versions de TLS prises en charge par Office 365
 
@@ -89,6 +92,8 @@ Une suite de chiffrement est un ensemble d’algorithmes de chiffrement utilisé
   
 |**Protocoles**|**Nom de suite de chiffrement**|**Algorithme d’échange de clés/Niveau**|**Prise en charge de PFS (Perfect Forward Secrecy)**|**Algorithme d’authentification/Niveau**|**Chiffrement/Niveau**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
+|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384  <br/> |ECDH/192  <br/> |Oui  <br/> |RSA/112  <br/> |AES/256  <br/> |
+|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256  <br/> |ECDH/128  <br/> |Oui  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384  <br/> |ECDH/192  <br/> |Oui  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256  <br/> |ECDH/128  <br/> |Oui  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384  <br/> |ECDH/192  <br/> |Oui  <br/> |RSA/112  <br/> |AES/256  <br/> |
@@ -97,10 +102,9 @@ Une suite de chiffrement est un ensemble d’algorithmes de chiffrement utilisé
 |TLS 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256  <br/> |RSA/112  <br/> |Non  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA  <br/> |RSA/112  <br/> |Non  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA  <br/> |RSA/112  <br/> |Non  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_3DES_EDE_CBC_SHA  <br/> |RSA/112  <br/> |Non  <br/> |RSA/112  <br/> |3DES/192  <br/> |
    
 ## <a name="related-topics"></a>Voir aussi
-<a name="TLSCipherSuites"> </a>
+[Suites de chiffrement TLS dans Windows 10 v1607](https://docs.microsoft.com/windows/desktop/SecAuthN/tls-cipher-suites-in-windows-10-v1607)
 
 [Chiffrement dans Office 365](encryption.md)
   

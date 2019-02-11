@@ -10,12 +10,12 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 8c00df57-9fb3-459c-ba87-40480c87bd55
 description: Cette rubrique illustre une stratégie de protection contre la perte données lorsqu’il détecte le type d’informations sensibles numéro de passeport l’Union européenne. Ce type d’informations sensibles définit différents motifs, mots clés et autres pour chaque pays.
-ms.openlocfilehash: 71acc39b885c057e1771ec13b2f3c25017ac1bb6
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 7a7fc1ff826aab4096c46535686eb0fd68173c6f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528186"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "25840323"
 ---
 # <a name="eu-passport-number"></a>Numéro de passeport UE
 
@@ -59,7 +59,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 | |
 |**Keywords_austria_eu_passport_number**|
@@ -98,7 +98,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 | |
 |**Keywords_belgium_eu_passport_number**|
@@ -137,7 +137,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 | |
 |**Keywords_bulgaria_eu_passport_number**|
@@ -176,7 +176,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 | |
 |**Keywords_croatia_eu_passport_number**|
@@ -215,7 +215,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 | |
 |**Keywords_cyprus_eu_passport_number**|
@@ -254,7 +254,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 | |
 |**Keywords_czech_republic_eu_passport_number**|
@@ -293,7 +293,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 | |
 |**Keywords_denmark_eu_passport_number**|
@@ -332,7 +332,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 | |
 |**Keywords_estonia_eu_passport_number**|
@@ -383,7 +383,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 | |
 |**Keywords_greece_eu_passport_number**|
@@ -422,7 +422,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 | |
 |**Keywords_hungary_eu_passport_number**|
@@ -465,7 +465,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 | |
 |**Keywords_ireland_eu_passport_number**|
@@ -508,7 +508,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 | |
 |**Keywords_italy_eu_passport_number**|
@@ -551,7 +551,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 | |
 |**Keywords_latvia_eu_passport_number**|
@@ -590,7 +590,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 | |
 |**Keywords_lithuania_eu_passport_number**|
@@ -629,7 +629,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 | |
 |**Keywords_nation_eu_passport_number**|
@@ -668,7 +668,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 | |
 |**Keywords_malta_eu_passport_number**|
@@ -707,7 +707,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 | |
 |**Keywords_netherlands_eu_passport_number**|
@@ -754,7 +754,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 | |
 |**Keywords_portugal_eu_passport_number**|
@@ -793,7 +793,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 | |
 |**Keywords_romania_eu_passport_number**|
@@ -832,7 +832,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 | |
 |**Keywords_slovakia_eu_passport_number**|
@@ -877,7 +877,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 | |
 |**Keywords_slovenia_eu_passport_number**|
@@ -922,7 +922,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 | |
 |**Keywords_spain_eu_passport_number**|
