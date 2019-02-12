@@ -3,7 +3,7 @@ title: Déployer des sites SharePoint Online pour trois niveaux de protection
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/05/2018
+ms.date: 12/14/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 'Résumé : Créez et configurez des sites d’équipe SharePoint Online avec différents niveaux de protection des informations.'
-ms.openlocfilehash: 54392194f7ac5ce90337df3f33e23db595b1aa5c
-ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
+ms.openlocfilehash: 69dc7395e8394694eab9eb6c27f229ea971516b0
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25345826"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "27281775"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Déployer des sites SharePoint Online pour trois niveaux de protection
 
@@ -264,13 +264,12 @@ Les membres du site, via l’appartenance à un des groupes d’accès, peuvent 
   
 ## <a name="next-step"></a>Étape suivante
 
-[Protéger les fichiers SharePoint Online avec des étiquettes Office 365 et la protection contre la perte de données](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
-    
+[Protéger les fichiers SharePoint Online avec Azure Information Protection](protect-sharepoint-online-files-with-azure-information-protection.md)
+
+
 ## <a name="see-also"></a>Voir aussi
 
 [Sécuriser les fichiers et sites SharePoint Online](secure-sharepoint-online-sites-and-files.md)
-  
-[Sécuriser les sites SharePoint Online dans un environnement de développement/test](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
   
 [Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   

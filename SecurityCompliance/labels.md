@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Dans Office 365, les étiquettes de rétention vous aident à entreprendre les bonnes actions sur le contenu approprié. Grâce aux étiquettes de rétention, vous pouvez classer les données au sein de votre organisation à des fins de gouvernance, et appliquer des règles de rétention basées sur cette classification. Vous pouvez également utiliser des étiquettes de rétention pour implémenter la gestion des enregistrements dans Office 365.
-ms.openlocfilehash: d957fc251aa4591d273a65d0a85ecde0df0845c9
-ms.sourcegitcommit: c7264f3a6a97f1ff544544e2c722e7825e265fa1
+ms.openlocfilehash: 7f8ab61a4d42f1a032f19110ccd1d12f833c0737
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "26299248"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29614498"
 ---
 # <a name="overview-of-retention-labels"></a>Vue d’ensemble des étiquettes de rétention
 
@@ -266,22 +266,34 @@ Après avoir sélectionné un modèle de stratégie, vous pouvez ajouter ou supp
     
 - Le type d’informations sensibles détecté a une précision de correspondance (ou niveau de confiance) minimale de 75. De nombreux types d’informations sensibles sont définis avec plusieurs modèles. Tandis qu’un modèle avec une précision de correspondance plus élevée nécessite un nombre de preuves plus important (par exemple, des mots clés, des dates ou des adresses), un modèle avec une précision de correspondance inférieure nécessite moins de preuves. En d’autres termes, plus la précision de correspondance **min** est faible, plus il est facile de faire correspondre le contenu à la condition. 
     
-    Si vous modifiez la précision de correspondance (ou niveau de confiance), vous devez utiliser l’un des niveaux de confiance utilisés dans un modèle pour ce type d’informations sensibles, comme défini dans [Éléments recherchés par les types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations relatives à ces options, voir[optimisation des règles afin de les rendre plus facile ou plus difficile à associer](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
     
 ![Options permettant d’identifier les types d’informations sensibles](media/de255881-f596-4c8d-8359-e974e3a0819a.png)
   
-### <a name="auto-apply-retention-labels-to-content-with-keywords"></a>Application automatique d’étiquettes de rétention à du contenu avec des mots clés
+### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>Application automatique d’étiquettes au contenu comprenant des mots clés ou des propriétés pouvant faire l’objet d’une recherche
 
-Vous pouvez appliquer automatiquement des étiquettes de rétention à du contenu remplissant certaines conditions. Les conditions actuellement disponibles prennent en charge l’application d’une étiquette de rétention au contenu comprenant des mots ou des expressions spécifiques. Vous pouvez affiner votre requête à l’aide d’opérateurs de recherche tels que AND, OR et NOT. 
+Vous pouvez appliquer automatiquement des étiquettes au contenu remplissant certaines conditions. Les conditions actuellement disponibles prennent en charge l’application d’une étiquette au contenu comprenant des mots, des phrases spécifiques ou des valeurs de propriété pouvant faire l’objet d’une recherche. Vous pouvez affiner votre requête à l’aide des opérateurs de recherche tels que AND, OR et NOT.
 
 Pour obtenir plus d’informations sur la syntaxe de requête, consultez l’article suivant :
 
-- [Référence de syntaxe de langage de requête de mot clé (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [Référence de syntaxe de langage de requête de mot clé (KQL)](https://docs.microsoft.com/fr-FR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-Les étiquettes de rétention basées sur une requête utilisent l’index de recherche pour identifier le contenu.
-  
+Les étiquettes basées sur une requête utilisent l’index de recherche pour identifier le contenu. Pour plus d’informations sur les propriétés valides utilisables dans une requête, consultez l’article suivant :
+
+- [Requêtes par mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md)
+- [Vue d’ensemble des propriétés analysées et gérées dans SharePoint Server](https://docs.microsoft.com/fr-FR/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+
+Exemples de requêtes :
+
+- Exchange
+    - subject:"Quarterly Financials"
+    - recipients:garthf<!--nolink-->@contoso.com
+- SharePoint et OneDrive Entreprise
+    - contenttype:contract
+    - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
+
 ![Éditeur de requête](media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
-  
+
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>Application d’une étiquette de rétention par défaut à tout le contenu dans une bibliothèque, un dossier ou un ensemble de documents SharePoint
 
 En plus de permettre aux utilisateurs d’appliquer une étiquette de rétention à des documents individuels, vous pouvez également appliquer une étiquette de rétention par défaut à une bibliothèque, à un dossier ou à un ensemble de documents SharePoint, afin que tous les documents dans cet emplacement héritent de cette étiquette de rétention par défaut.
@@ -346,7 +358,7 @@ Lorsqu’un élément est étiqueté en tant qu’enregistrement, quatre événe
     
 ### <a name="who-can-classify-content-as-a-record"></a>Utilisateur autorisé à classer du contenu en tant qu’enregistrement
 
-Pour le contenu SharePoint, tous les utilisateurs du groupe Membres par défaut (niveau d’autorisation Collaboration) peuvent appliquer une étiquette d’enregistrement au contenu. Seul l’administrateur de collection de sites peut supprimer ou modifier cette étiquette de rétention une fois qu’elle a été appliquée. Par ailleurs, une étiquette de rétention qui classe du contenu en tant qu’enregistrement doit être appliquée manuellement ; elle ne peut pas être appliquée automatiquement.
+Pour le contenu SharePoint, tous les utilisateurs du groupe Membres par défaut (niveau d’autorisation Collaboration) peuvent appliquer une étiquette d’enregistrement au contenu. Seul l’administrateur de collection de sites peut supprimer ou modifier cette étiquette de rétention une fois qu’elle a été appliquée. Par ailleurs, une étiquette de rétention qui classe du contenu en tant qu’enregistrement doit être [ peut être appliquée automatiquement](#auto-apply-retention-labels).
   
 ### <a name="records-and-folders"></a>Enregistrements et dossiers
 
