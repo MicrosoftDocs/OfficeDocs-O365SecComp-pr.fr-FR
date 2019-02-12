@@ -9,8 +9,7 @@
 ## [Utiliser votre abonnement Azure Active Directory gratuit](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Planifier la sécurité et la conformité dans Office 365](plan-for-security-and-compliance.md)
 # Protéger l’accès aux données et services
-## [Pour protéger l’accès aux données et aux services dans Office 365](protect-access-to-data-and-services.md)
-## [Choisir entre MDM et Intune](choose-between-mdm-and-intune.md)
+## [Protéger l’accès aux données et aux services dans Office 365](protect-access-to-data-and-services.md)
 
 # Protéger les informations
 ## [Étiquettes de niveau de confidentialité](sensitivity-labels.md)
