@@ -3,7 +3,7 @@ title: FAQ sur le chiffrement de messages Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/9/2018
+ms.date: 02/11/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Vous avez une question sur le fonctionnement des nouvelles fonctionnalités de protection de message dans Office 365 ? Recherchez une réponse ici.
-ms.openlocfilehash: e35495106b44ccb566f4da743264def8c7d4f96f
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 8774d5e11bbd5b240cb1984e6d8b67b98bfa856e
+ms.sourcegitcommit: d6b1632a44e40522a4a16e7cb05ba5189214baeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/11/2019
-ms.locfileid: "29696268"
+ms.locfileid: "29890035"
 ---
 # <a name="office-365-message-encryption-faq"></a>FAQ sur le chiffrement de messages Office 365
 
@@ -48,7 +48,7 @@ Vous pouvez utiliser les nouvelles fonctionnalités pour OME dans les conditions
 
 Pour utiliser les nouvelles fonctionnalités OME, vous devez parmi les plans suivants :
   
-- Office 365, le chiffrement de messages est proposé dans le cadre d’Office 365 E3 et E5, Microsoft E3 et E5, Office 365 A1, A3 et A5 et Office 365 G3 et G5. Clients n’avez pas besoin de licences supplémentaires afin de recevoir les nouvelles fonctionnalités de protection par la Protection des informations Azure. 
+- Office 365, le chiffrement de messages est proposé dans le cadre d’Office 365 entreprise E3 et E5, Microsoft Enterprise E3 et E5, Microsoft 365 Business, Office 365 A1, A3 et A5 et Office 365 pour le gouvernement G3 et G5. Clients n’avez pas besoin de licences supplémentaires afin de recevoir les nouvelles fonctionnalités de protection par la Protection des informations Azure. 
     
 - Vous pouvez également ajouter des plans recevoir les nouvelles fonctionnalités d’Office 365 Message Encryption Azure informations Protection Plan 1 à la suivante : Exchange Online Plan 1, Exchange Online Plan 2, Office 365 F1, Office 365 entreprise Essentials, Office 365 entreprise Premium, ou Office 365 entreprise E1.
     

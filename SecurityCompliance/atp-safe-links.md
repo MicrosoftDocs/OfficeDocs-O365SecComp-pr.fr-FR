@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
-ms.date: 02/05/2019
+ms.date: 02/11/2019
 ms.topic: overview
 f1_keywords:
 - "197503"
@@ -20,12 +20,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La fonctionnalité de liens fiables offre-heure des clics de vérification des liens hypertexte dans les documents Office et dans les messages électroniques. Utilisez les liens sécurisés pour protéger votre organisation contre les attaques par hameçonnage et les autres attaques.
-ms.openlocfilehash: 8c63de9e62e33dbca6dde5a5bb45a7f7875ab71f
-ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
+ms.openlocfilehash: 4d83aa65af47ea6723d6e2042c230fb2b07c174c
+ms.sourcegitcommit: 065f5e72676511b5ecf7f10a17685999780e92d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "29792239"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29888030"
 ---
 # <a name="office-365-atp-safe-links"></a>Liens fiables ATP Office 365
 
@@ -98,7 +98,7 @@ Ensuite, assurez-vous que vos stratégies de liens fiables DAV sont définis. (V
     
 - **Les utilisateurs ont connecté à Office 365** à l’aide de leur compte professionnel ou de l’école. (Voir [se connecter à Office ou Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426)).
     
-- **Courrier électronique de votre organisation est hébergée dans Office 365**. 
+- **Passe de messagerie de votre organisation via Exchange Online Protection**.  
 
 Pour définir (ou modifier) les stratégies de vente, vous devez posséder un des rôles décrits dans le tableau suivant :
 

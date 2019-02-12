@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Utilisez le & Office 365 sécurité Centre de conformité pour rechercher le journal d’audit unifiée pour afficher l’activité utilisateur et l’administrateur de votre organisation Office 365. '
-ms.openlocfilehash: 848dbbdeb8b7cd9abd664b5ac401f6afde31c1e1
-ms.sourcegitcommit: c40eee4ef3890056da58649e4617283b0b9d1673
+ms.openlocfilehash: 41f6f2c90a0171b52807cbf46f15eebb1f16cc9a
+ms.sourcegitcommit: d6b1632a44e40522a4a16e7cb05ba5189214baeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29735466"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29890055"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Recherche dans le journal d’audit dans le centre de conformité de & sécurité pour Microsoft Office 365
 
@@ -112,7 +112,7 @@ Veillez à lire le journal d’audit des éléments suivants avant de commencer 
     |Microsoft Forms  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Project  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Stream  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-    |Microsoft Teams  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Microsoft Teams  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Power BI  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Sécurité &amp; centre de conformité  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Sharepoint Online et OneDrive Entreprise  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
@@ -281,7 +281,7 @@ Vous pouvez exporter les résultats d’une recherche de journal d’audit pour 
 
 ## <a name="audited-activities"></a>Audit des activités
 
-Les tableaux de cette section décrivent les activités audités dans Office 365. Vous pouvez rechercher ces événements en recherchant l’audit journal de la sécurité &amp; centre de conformité. Cliquez sur l’onglet **recherche le journal d’audit** pour obtenir des instructions pas à pas. 
+Les tableaux de cette section décrivent les activités audités dans Office 365. Vous pouvez rechercher ces événements en recherchant le journal d’audit dans le centre de conformité de & sécurité.
   
 Ces tables groupe activités associées ou les activités d’un service spécifique d’Office 365. Les tableaux incluent le nom convivial qui s’affiche dans la liste déroulante des **activités** et le nom de l’opération correspondante qui s’affiche dans les informations détaillées d’un enregistrement d’audit, dans le fichier CSV lorsque vous exportez les résultats de recherche. Pour obtenir des descriptions des informations détaillées, consultez le [journal d’audit de propriétés détaillées dans Office 365](detailed-properties-in-the-office-365-audit-log.md).
   
@@ -293,9 +293,10 @@ Cliquez sur un des liens suivants pour accéder à une table spécifique.
 |[Activités de synchronisation](#synchronization-activities)<br/> |[Activités de l’administration de site](#site-administration-activities)<br/> |[Activités de boîte aux lettres Exchange](#exchange-mailbox-activities)<br/> |
 |[Balancement des activités](#sway-activities) <br/> |[Activités de l’administration des utilisateurs](#user-administration-activities) <br/> |[Activités de l’administration du groupe AD Azure](#azure-ad-group-administration-activities) <br/> |
 |[Activités de l’administration d’applications](#application-administration-activities) <br/> |[Activités de l’administration des rôles](#role-administration-activities) <br/> |[Opérations de l’administration d’annuaire](#directory-administration-activities) <br/> |
-|[activités de découverte électronique](#ediscovery-activities) <br/> |[Activités de Power BI](#power-bi-activities) <br/> |[Activités Microsoft Teams](#microsoft-teams-activities) <br/> |
-|[Activités de Yammer](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> |[Microsoft Stream](#microsoft-stream) <br/>|
-|[Journal d’audit de l’administrateur Exchange](#exchange-admin-audit-log) <br/> |
+|[activités de découverte électronique](#ediscovery-activities) <br/> |[Activités de Power BI](#power-bi-activities) <br/> |[Espace de travail Microsoft Analytique](#microsoft-workplace-analytics-activities)<br/>|
+[Activités Microsoft Teams](#microsoft-teams-activities) <br/> |[Activités de Yammer](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> 
+|[Microsoft Stream](#microsoft-stream) <br/>|[Activités d’administration Exchange](#exchange-admin-audit-log)<br/>
+||||
    
   
 ### <a name="file-and-page-activities"></a>Activités de fichier et de page
@@ -326,6 +327,7 @@ Le tableau suivant décrit les activités de fichier et de page dans SharePoint 
 |Fichier téléchargé  <br/> |FileUploaded  <br/> |Utilisateur télécharge un document dans un dossier sur un site.  <br/> |
 |Page affichée  <br/> |PageViewed  <br/> |Utilisateur visualise une page sur un site. Cela n’inclut pas à l’aide d’un navigateur Web pour afficher les fichiers situés dans une bibliothèque de documents.  <br/> |
 |(aucun)  <br/> |PageViewedExtended  <br/> |Ceci est lié à la page « Affichage » activité (PageViewed). Un événement PageViewedExtended est enregistré lors de la même personne affiche en permanence une page web pour une longue période de temps (jusqu'à 3 heures). L’objectif de la journalisation des événements PageViewedExtended consiste à réduire le nombre d’événements PageViewed qui sont enregistrés lorsqu’une page est affichée en permanence. Cela permet de réduire le bruit de plusieurs enregistrements PageViewed pour ce qui est identique à celui de l’activité des utilisateurs et vous pouvez vous concentrer sur l’événement PageViewed initiale (et plus important).  <br/> |
+||||
   
 ### <a name="folder-activities"></a>Activités de dossier
   
@@ -342,6 +344,7 @@ Le tableau suivant décrit les activités de dossier dans SharePoint Online et O
 |Dossier déplacé  <br/> |FolderMoved  <br/> |Utilisateur déplace un dossier à un autre emplacement sur un site.  <br/> |
 |Dossier renommé  <br/> |FolderRenamed  <br/> |Utilisateur renomme un dossier sur un site.  <br/> |
 |Dossier restauré  <br/> |FolderRestored  <br/> |Utilisateur restaure un dossier supprimé à partir de la Corbeille sur un site.  <br/> |
+||||
   
 ### <a name="sharing-and-access-request-activities"></a>Activités de demande de partage et d’accès
   
@@ -382,6 +385,7 @@ Le tableau suivant décrit les activités utilisateur de demande de partage et d
 |Utilisateur ajouté à un lien sécurisé  <br/> |AddedToSecureLink  <br/> |Un utilisateur a été ajouté à la liste des entités qui peuvent utiliser un lien de partage d’informations sécurisé.  <br/> |
 |Utilisateur supprimé de lien sécurisé  <br/> |RemovedFromSecureLink  <br/> |Un utilisateur a été supprimé de la liste des entités qui peuvent utiliser un lien de partage d’informations sécurisé.  <br/> |
 |Retirée d’invitation de partage  <br/> |SharingInvitationRevoked  <br/> |Utilisateur utilisés à une invitation de partage à une ressource.  <br/> |
+||||
   
 ### <a name="synchronization-activities"></a>Activités de synchronisation
   
@@ -395,6 +399,7 @@ Le tableau suivant répertorie les activités de la synchronisation de fichier d
 |Modifications du fichier téléchargé sur ordinateur  <br/> |FileSyncDownloadedPartial  <br/> |Utilisateur télécharge correctement les modifications aux fichiers à partir d’une bibliothèque de documents. Cette activité indique que les modifications qui ont été apportées aux fichiers dans la bibliothèque de documents ont été téléchargées vers l’ordinateur de l’utilisateur. Seules les modifications ont été téléchargées, car la bibliothèque de documents a été préalablement téléchargée par l’utilisateur (comme indiqué par l’activité **téléchargé les fichiers de l’ordinateur** ).<br/> |
 |Fichiers téléchargés vers la bibliothèque de documents  <br/> |FileSyncUploadedFull  <br/> |Utilisateur distant établit une relation de synchronisation et télécharge correctement les fichiers pour la première fois à partir de leur ordinateur à une bibliothèque de documents.  <br/> |
 |Modifications du fichier téléchargé vers la bibliothèque de documents  <br/> |FileSyncUploadedPartial  <br/> |Utilisateur télécharge correctement les modifications aux fichiers dans une bibliothèque de documents. Cet événement indique que les modifications apportées à la version locale d’un fichier à partir d’une bibliothèque de documents sont correctement téléchargées vers la bibliothèque de documents. Seules les modifications sont déchargées parce que ces fichiers ont été précédemment téléchargés par l’utilisateur (comme indiqué par le ** les fichiers téléchargés vers la bibliothèque de documents ** activité).  <br/> |
+||||
   
 ### <a name="site-administration-activities"></a>Activités de l’administration de site
   
@@ -432,6 +437,7 @@ Le tableau suivant répertorie les événements qui résultent de tâches d’ad
 |Déplacer de site planifiée localisés  <br/> |SiteGeoMoveScheduled  <br/> |Un administrateur global ou SharePoint avec succès planifie SharePoint ou déplacer OneDrive site géographique. La fonctionnalité Multi-Geo permet à une organisation Office 365 englober plusieurs régions de centre de données Office 365, qui sont appelées zones géographiques. Pour plus d’informations, voir [Fonctionnalités Multi-localisés dans OneDrive et SharePoint Online dans Office 365](https://go.microsoft.com/fwlink/?linkid=860840).<br/> |
 |Site hôte de jeu  <br/> |HostSiteSet  <br/> |Un administrateur global ou SharePoint modifie le site désigné pour héberger personnel ou OneDrive pour les sites.  <br/> |
 |Groupe mis à jour  <br/> |GroupUpdated  <br/> |Administrateur de site ou propriétaire modifie les paramètres d’un groupe pour un site. Cela peut inclure la modification du nom du groupe, qui peut afficher ou modifier l’appartenance au groupe et la gestion des demandes d’appartenance.  <br/> |
+||||
   
 ### <a name="exchange-mailbox-activities"></a>Activités de boîte aux lettres Exchange
   
@@ -454,6 +460,7 @@ Le tableau suivant répertorie les activités qui peuvent être enregistrées pa
 |Message mis à jour  <br/> |Update  <br/> |Un message ou ses propriétés ont été modifiés.  <br/> |
 |Utilisateur connecté à la boîte aux lettres  <br/> |MailboxLogin  <br/> |L'utilisateur s'est connecté à sa boîte aux lettres.  <br/> |
 |(aucun)  <br/> |UpdateInboxRules  <br/> |Une règle de boîte de réception a été ajoutée, supprimée ou modifiée. Règles de boîte de réception sont utilisés pour traiter les messages dans la boîte de réception en fonction de conditions spécifiées et prennent les mesures lorsque les conditions d’une règle sont remplies, telles que le déplacement d’un message dans un dossier spécifié ou suppression d’un message.<br/> Pour renvoyer les entrées pour les activités de règle de boîte de réception, vous devez sélectionner **Afficher les résultats pour toutes les activités** dans la liste des **activités** . Utilisez les zones plage de dates et la liste des **utilisateurs** pour affiner les résultats de recherche.<br/> |
+||||
   
 ### <a name="sway-activities"></a>Balancement des activités
   
@@ -475,6 +482,7 @@ Le tableau suivant répertorie les activités des utilisateurs et d’administra
 |Désactivé le service balancement  <br/> |SwayServiceOff  <br/> |Administrateur désactive balancement pour toute l’organisation à l’aide du centre d’administration Office 365.  <br/> |
 |Service balancement activée  <br/> |SwayServiceOn  <br/> |Administrateur Active balancement pour toute l’organisation en utilisant le centre d’administration Office 365 (balancement service est activé par défaut).  <br/> |
 |Balancement affichée  <br/> |SwayView  <br/> |Utilisateur visualise un balancement.  <br/> |
+||||
 
   
 ### <a name="user-administration-activities"></a>Activités de l’administration des utilisateurs
@@ -491,6 +499,7 @@ Le tableau suivant répertorie les activités de l’administration utilisateur 
 |Définir la propriété qui oblige l’utilisateur à modifier le mot de passe  <br/> |Jeu de force modification utilisateur mot de passe  <br/> |Administrateur de définie la propriété qui oblige un utilisateur à modifier leur mot de passe la prochaine fois que la connexion utilisateur vers Office 365.  <br/> |
 |Définition des propriétés de licence  <br/> |Définition des propriétés de licence  <br/> |Administrateur modifie les propriétés d’une licence attribuée à un utilisateur.  <br/> |
 |Utilisateur mis à jour  <br/> |Utilisateur de la mise à jour  <br/> |Administrateur modifie une ou plusieurs propriétés d’un compte d’utilisateur. Pour obtenir la liste des propriétés utilisateur pouvant être mis à jour, consultez la section « Mise à jour des attributs utilisateur » dans les [Événements du rapport d’Audit Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=616549).<br/> |
+||||
   
 ### <a name="azure-ad-group-administration-activities"></a>Activités de l’administration du groupe AD Azure
   
@@ -503,6 +512,7 @@ Le tableau suivant répertorie les activités de l’administration de groupe qu
 |Groupe supprimé  <br/> |Supprimer le groupe  <br/> |Un groupe a été supprimé.  <br/> |
 |Supprimé le membre du groupe  <br/> |Supprimer des membres du groupe  <br/> |Un membre a été supprimé d’un groupe.  <br/> |
 |Groupe mis à jour  <br/> |Groupe de mise à jour  <br/> |Une propriété d’un groupe a été modifiée.  <br/> |
+||||
    
 ### <a name="application-administration-activities"></a>Activités de l’administration d’applications
   
@@ -517,6 +527,7 @@ Le tableau suivant répertorie les activités d’administration d’application
 |Supprimer un principal de service à partir du répertoire  <br/> |Supprimer les principaux de service  <br/> |Une application a été supprimée / n’est pas inscrite dans Azure AD. Une application est représentée par un principal de service dans le répertoire.  <br/> |
 |Informations d’identification supprimées à partir d’un service principal  <br/> |Supprimer les informations d’identification principal de service  <br/> |Informations d’identification ont été supprimées à partir d’un service principal dans Azure AD. Un principe service représente une application dans le répertoire.  <br/> |
 |Entrée de délégation Set  <br/> |Entrée de délégation Set  <br/> |Une autorisation d’authentification a été mis à jour pour une application dans Azure AD.  <br/> |
+||||
 
 ### <a name="role-administration-activities"></a>Activités de l’administration des rôles
   
@@ -527,6 +538,7 @@ Le tableau suivant répertorie les activités de l’administration de rôle Azu
 |Ajouter des membres au rôle  <br/> |Ajouter un membre de rôle au rôle  <br/> |Ajouter un utilisateur à un rôle d’administrateur dans Office 365.  <br/> |
 |Supprimer un utilisateur d’un rôle de répertoire  <br/> |Supprimer des membres du rôle de rôle  <br/> |Supprimer un utilisateur à un rôle d’administration dans Office 365.  <br/> |
 |Définir les informations de contact d’entreprise  <br/> |Définir les informations de contact d’entreprise  <br/> |Mise à jour les préférences de contacts de votre organisation Office 365 au niveau de la société. Cela inclut les adresses de messagerie pour la messagerie associés aux abonnements envoyés par Office 365, ainsi que des notifications techniques sur les services Office 365.  <br/> |
+||||
    
 ### <a name="directory-administration-activities"></a>Opérations de l’administration d’annuaire
   
@@ -546,6 +558,7 @@ Le tableau suivant répertorie Azure AD directory et le domaine des activités q
 |Domaine mis à jour  <br/> |Domaine de mise à jour  <br/> |Mise à jour les paramètres d’un domaine dans votre organisation Office 365.  <br/> |
 |Domaine vérifié  <br/> |Vérifier le domaine  <br/> |Vérifiez que votre organisation est le propriétaire d’un domaine.  <br/> |
 |Domaine vérifié messagerie vérifié  <br/> |Vérifier le domaine vérifié de messagerie  <br/> |Vérification de messagerie permet de vérifier que votre organisation est le propriétaire d’un domaine.  <br/> |
+||||
    
 ### <a name="ediscovery-activities"></a>activités de découverte électronique
   
@@ -572,6 +585,24 @@ Vous pouvez rechercher le journal d’audit pour les activités dans Power BI. P
   
 Notez que l’enregistrement d’audit pour Power BI n’est pas activé par défaut. Pour rechercher des activités de Power BI dans le journal d’audit d’Office 365, vous devez activer l’audit dans le portail d’administration Power BI. Pour obtenir des instructions, consultez la section « Journaux d’Audit » dans le [portail d’administration Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
   
+### <a name="microsoft-workplace-analytics-activities"></a>Activités Analytique d’espace de travail Microsoft
+
+Le tableau suivant répertorie l’administrateur et journal d’audit des activités analyste Analytique d’espace de travail Microsoft qui sont consignés dans Office 365. Espace de travail Analytique offre une vision comment collaborent de groupes au sein de votre organisation Office 365. Pour plus d’informations, voir [Analytique d’espace de travail](https://docs.microsoft.com/en-us/workplace-analytics/index-orig).
+
+|**Nom convivial**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Accès lien OData <br/> |AccessedOdataLink <br/> |Analyste accessible le lien OData pour une requête.|
+|Annulation de la requête <br/> |CanceledQuery <br/> |Analyste d’annulation d’une requête en cours d’exécution.|
+|Exclusion de réunion créée <br/> |MeetingExclusionCreated <br/> |Analyste créé une nouvelle règle d’exclusion de la réunion.|
+|Résultat supprimée <br/> |DeletedResult <br/> |Analyste supprimé un résultat de requête.|
+|Rapport téléchargé <br/> |DownloadedReport <br/> |Analyste téléchargé un fichier de résultats de requête.|
+|Requête exécutée <br/> |ExecutedQuery <br/> |Analyste a exécuté une requête.|
+|Paramètre d’accès aux données mises à jour <br/> |UpdatedDataAccessSetting <br/> |Administrateur mis à jour les paramètres de données access.|
+|Paramètre de confidentialité mis à jour <br/> |UpdatedPrivacySetting <br/> |Administrateur mis à jour les paramètres de confidentialité ; par exemple, la taille minimale de groupe.|
+|Données d’entreprise téléchargé <br/> |UploadedOrgData <br/> |Admin téléchargé le fichier de données d’organisation.|
+|Affichés Explorer <br/> |ViewedExplore <br/> |Analyste consultés visualisations dans un ou plusieurs onglets Explorer.|
+||||
+
 ### <a name="microsoft-teams-activities"></a>Activités Microsoft Teams
   
 Le tableau suivant répertorie l’utilisateur et le journal d’audit des activités d’administration dans Microsoft Teams qui sont consignés dans Office 365. Microsoft Teams est un espace de travail centrée conversation dans Office 365. Il affiche les conversations, réunions, fichiers et notes d’une équipe en un seul emplacement. Pour plus d’informations et des liens vers les rubriques d’aide, voir :
@@ -601,6 +632,7 @@ Le tableau suivant répertorie l’utilisateur et le journal d’audit des activ
 |Connecteur mis à jour  <br/> |ConnectorUpdated  <br/> |Un utilisateur a modifié un connecteur dans un canal.  <br/> |
 |Onglet mis à jour  <br/> |TabUpdated  <br/> |Un utilisateur a modifié un onglet dans un canal.  <br/> |
 |Utilisateur connecté à des équipes  <br/> |TeamsSessionStarted  <br/> |Un utilisateur se connecte à un client Microsoft Teams.  <br/> |
+||||
 
 ### <a name="yammer-activities"></a>Activités de Yammer
   
@@ -625,6 +657,7 @@ Le tableau suivant répertorie l’utilisateur et le journal d’audit des activ
 |Description du fichier mis à jour  <br/> |FileUpdateDescription  <br/> |Utilisateur modifie la description d’un fichier.  <br/> |
 |Nom du fichier mis à jour  <br/> |FileUpdateName  <br/> |Utilisateur modifie le nom d’un fichier.  <br/> |
 |Fichier visualisé  <br/> |FileVisited  <br/> |Utilisateur visualise un fichier.  <br/> |
+||||
    
 ### <a name="microsoft-flow"></a>Microsoft Flow
 
@@ -688,7 +721,7 @@ Oui. L’API d’activité de gestion Office 365 est utilisé pour extraire les 
 
 **Existe-t-il d’autres façons d’obtenir l’audit des journaux qu’en utilisant le centre de conformité de sécurité pour Microsoft Office 365 & ou de l’API d’activité de gestion Office 365 ?**
 
-Non. Voici les uniquement deux façons d’obtenir des données à partir du service d’audit Office 365. 
+non. Voici les uniquement deux façons d’obtenir des données à partir du service d’audit Office 365. 
 
 **Dois-je individuellement activer l’audit dans chaque service à capturer des journaux d’audit pour ?**
 
@@ -696,11 +729,11 @@ Dans la plupart des services Office 365, l’audit est activé par défaut aprè
 
 **Supprime la prise en charge de service audit Office 365 les doublons d’enregistrements ?**
 
-Non. Le pipeline de service d’audit est quasiment en temps réel et par conséquent ne prennent en charge la déduplication.
+non. Le pipeline de service d’audit est quasiment en temps réel et par conséquent ne prennent en charge la déduplication.
  
 **Données d’audit Office 365 ne sont transmis dans le monde entier ?**
 
-Non. Nous disposons d’audit des déploiements de pipeline NA (Amérique du Nord), EMEA (Europe, Moyen-Orient et Afrique) et régions APAC (Asie-Pacifique). Toutefois, nous pouvons le débit entre ces régions pour l’équilibrage de charge et uniquement pendant les problèmes live. Lorsque nous effectuer ces activités, les données en transit sont chiffrées.   
+non. Nous disposons d’audit des déploiements de pipeline NA (Amérique du Nord), EMEA (Europe, Moyen-Orient et Afrique) et régions APAC (Asie-Pacifique). Toutefois, nous pouvons le débit entre ces régions pour l’équilibrage de charge et uniquement pendant les problèmes live. Lorsque nous effectuer ces activités, les données en transit sont chiffrées.   
  
 **Est l’audit des données chiffrées ?**
 
