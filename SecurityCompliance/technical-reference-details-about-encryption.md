@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Afficher les informations techniques de chiffrement dans Office 365.
-ms.openlocfilehash: bb4629d89d2ed625cc1b817c53d2355484bfdf6c
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: c11f152b18a15886fc8a5108e6df66dafe53a758
+ms.sourcegitcommit: 6bdba12c13c02f7d9a7297d3042933b100c4e481
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "28326935"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29966188"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>Détails techniques de référence sur le chiffrement dans Office 365
 
@@ -89,6 +89,9 @@ Démarrage 1 décembre 2014, Office 365 a commencé à la désactivation de la p
 <a name="TLSCipherSuites"> </a>
 
 Une suite de chiffrement est un ensemble d’algorithmes de chiffrement utilisés par TLS pour établir des connexions sécurisées. Les suites de chiffrement prises en charge par Office 365 sont répertoriées dans le tableau suivant par niveau décroissant. Quand Office 365 reçoit une demande de connexion, il tente tout d’abord de se connecter à l’aide de la première suite de chiffrement, puis en cas d’échec, il utilise la deuxième suite de chiffrement dans la liste, et ainsi de suite. Quand Office 365 envoie une demande de connexion à un autre serveur ou à un client, il incombe au client ou serveur de réception de choisir la suite de chiffrement ou de déterminer s’il convient d’utiliser TLS.
+
+> [!IMPORTANT]
+> Gardez à l’esprit que supprimer des versions TLS, et qui déconseillé versions *ne doit pas être utilisé* lorsque de nouvelles versions sont disponibles. En d’autres termes, n’importe où où elle est répertoriée que TLS 1.0, 1.1 et 1.2 sont prises en charge, choisissez la version la *plus récente* (TLS 1.2).
   
 |**Protocoles**|**Nom de suite de chiffrement**|**Algorithme d’échange de clés/Niveau**|**Prise en charge de PFS (Perfect Forward Secrecy)**|**Algorithme d’authentification/Niveau**|**Chiffrement/Niveau**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
