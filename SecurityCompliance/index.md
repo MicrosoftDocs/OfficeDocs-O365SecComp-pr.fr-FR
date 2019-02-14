@@ -6,17 +6,18 @@ author: robmazz
 manager: laurawi
 layout: LandingPage
 ms.service: office-365
+ms.collection: M365-security-compliance
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
 ms.date: 12/27/2018
 ms.author: robmazz
-ms.openlocfilehash: 255bde226f5a284f2ac20d65124d4722e2357385
-ms.sourcegitcommit: 55762890e5129a5240054990ce64e93007ed7a32
+ms.openlocfilehash: aa6224754830e99f43deb8da5326622a46ccad51
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "27449878"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995175"
 ---
 # <a name="office-365-security-and-compliance"></a>Conformité et sécurité d’office 365
 
@@ -51,7 +52,7 @@ Si votre organisation a besoin protéger vos données ou de se conformer aux nor
                     </div>
                     <div class="cardText">
                         <h3>Étapes suivantes dans les 90 jours</h3>
-                        <p>Ces tâches prennent un peu plus de temps pour planifier et implémenter mais augmentent sensiblement vos défenses : <br> - <a href="attack-simulator.md">Mener des simulations attaque</a> <br> - <a href="meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md">Gestionnaire de conformité de révision</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">Configurer la gestion des identités privilégié Azure</a> <br> - <a href="privileged-access-management-configuration.md">Configurer la gestion des accès privilégié</a>  <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">Activer l’authentification multifacteur</a> <br> - <a href="protect-against-threats.md">Révision et mise à jour des stratégies de protection</a> </p>
+                        <p>Ces tâches prennent un peu plus de temps pour planifier et implémenter mais augmentent sensiblement vos défenses : <br> - <a href="attack-simulator.md">Mener des simulations attaque</a> <br> - <a href="meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md">Gestionnaire de conformité de révision</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">Configurer la gestion des identités privilégié Azure</a> <br> - <a href="privileged-access-management-configuration.md">Configurer la gestion des accès privilégié</a>  <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">Activer l’authentification multifacteur</a> <br> - <a href="protect-against-threats.md">Passez en revue les stratégies de protection de mise à jour &</a> </p>
                     </div>
                 </div>
             </div>
@@ -115,7 +116,7 @@ Si votre organisation a besoin protéger vos données ou de se conformer aux nor
                     <div class="cardText">
                         <h3>Conformité</h3>
                         <p><a href="https://www.microsoft.com/trustcenter" target="_blank">Centre de gestion de la confidentialité Microsoft</a></p>
-                        <p><a href="https://servicetrust.microsoft.com" target="_blank">Portail de gestion de la confidentialité Microsoft Service</a></p>
+                        <p><a href="https://servicetrust.microsoft.com" target="_blank">Portail d’approbation de services Microsoft</a></p>
                     </div>
                 </div>
             </div>
