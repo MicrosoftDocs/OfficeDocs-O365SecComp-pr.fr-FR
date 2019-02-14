@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
+ms.collection: M365-security-compliance
 description: Découvrez comment trouver et utiliser les rapports de sécurité de messagerie pour votre organisation avec Office 365 pour entreprises. Rapports de sécurité de messagerie sont disponibles dans la sécurité &amp; centre de conformité.
-ms.openlocfilehash: 3fc6d3dd8468bc060efcaa7eadec2ff9257fe583
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 0c9b4c4c75f1e2996217bea600b9d36145b30339
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014986"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995295"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Afficher les rapports de sécurité de messagerie de la sécurité &amp; centre de conformité
 
@@ -176,14 +177,14 @@ Pour afficher ce rapport, dans le [sécurité &amp; centre de conformité](https
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Les autorisations requises pour afficher ces rapports ?
 
-Pour pouvoir afficher et utiliser les rapports décrits dans cet article, **vous devez disposer d’un rôle approprié est affecté de la sécurité &amp; centre de conformité et le centre d’administration Exchange**.
+Pour pouvoir afficher et utiliser les rapports décrits dans cet article, **vous devez disposer d’un rôle approprié attribué à la sécurité &amp; centre de conformité et le centre d’administration Exchange**.
 
 - Pour la sécurité &amp; centre de conformité, vous devez disposer d’un des rôles suivants est attribué :
     - Gestion de l’organisation
-    - Administrateur de sécurité
+    - Administrateur de la sécurité (il peut être assigné dans le centre d’administration Azure Active Directory ([https://aad.portal.azure.com](https://aad.portal.azure.com))
     - Lecteur de sécurité
 
-- Pour Exchange Online, vous devez disposer d’un des rôles suivants est attribué :
+- Pour Exchange Online, vous devez disposer d’un des rôles suivants est attribué centre d’administration Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) ou à l’aide des applets de commande PowerShell (voir [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) :
     - Gestion de l’organisation
     - Gestion de l’organisation en affichage seul
     - Rôle Destinataires en affichage uniquement

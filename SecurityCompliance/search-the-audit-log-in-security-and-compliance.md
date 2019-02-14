@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Utilisez le & Office 365 sécurité Centre de conformité pour rechercher le journal d’audit unifiée pour afficher l’activité utilisateur et l’administrateur de votre organisation Office 365. '
-ms.openlocfilehash: 41f6f2c90a0171b52807cbf46f15eebb1f16cc9a
-ms.sourcegitcommit: d6b1632a44e40522a4a16e7cb05ba5189214baeb
+ms.openlocfilehash: 55d45d55bb515307ed94853878b6e9ae1cef4ad8
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29890055"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995405"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Recherche dans le journal d’audit dans le centre de conformité de & sécurité pour Microsoft Office 365
 
@@ -53,6 +53,8 @@ Vous devez trouver si un utilisateur affiché d’un document spécifique ou pur
 - Activité utilisateur et d’administration dans Microsoft Flow
     
 - Activité utilisateur et d’administration dans Microsoft Stream
+
+- Analyste d’administration et de l’activité en Analytique d’espace de travail Microsoft
     
    
 ## <a name="before-you-begin"></a>Avant de commencer
@@ -107,7 +109,7 @@ Veillez à lire le journal d’audit des éléments suivants avant de commencer 
     |Prévention contre la perte de données  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Dynamics 365 CRM <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |eDiscovery  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-    |Exchange Online  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Exchange Online  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Microsoft Flow  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Forms  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Project  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
@@ -562,7 +564,7 @@ Le tableau suivant répertorie Azure AD directory et le domaine des activités q
    
 ### <a name="ediscovery-activities"></a>activités de découverte électronique
   
-Activités de découverte électronique qui sont effectuées lors de la sécurité Office 365 et recherche de contenu &amp; centre de conformité ou en exécutant Windows PowerShell correspondant applets de commande sont consignés dans le journal d’audit de Office 365. Cela inclut les activités suivantes :
+Recherche de contenu et des activités de découverte électronique sont effectuées dans Office 365 sécurité & centre de conformité ou en exécutant les applets de commande Windows PowerShell correspondant sont consignées dans le journal d’audit d’Office 365. Cela inclut les activités suivantes :
   
 - Créer et gérer des affaires eDiscovery
     
@@ -587,7 +589,7 @@ Notez que l’enregistrement d’audit pour Power BI n’est pas activé par dé
   
 ### <a name="microsoft-workplace-analytics-activities"></a>Activités Analytique d’espace de travail Microsoft
 
-Le tableau suivant répertorie l’administrateur et journal d’audit des activités analyste Analytique d’espace de travail Microsoft qui sont consignés dans Office 365. Espace de travail Analytique offre une vision comment collaborent de groupes au sein de votre organisation Office 365. Pour plus d’informations, voir [Analytique d’espace de travail](https://docs.microsoft.com/en-us/workplace-analytics/index-orig).
+Espace de travail Analytique offre une vision comment collaborent de groupes au sein de votre organisation Office 365. Le tableau suivant répertorie les opérations effectuées par les utilisateurs auxquels le rôle d’administrateur ou les rôles analyste dans l’espace de travail Analytique. Les utilisateurs affectés au rôle Analyste ont un accès total à toutes les fonctionnalités de service et utilisent le produit pour effectuer une analyse. Les utilisateurs du rôle d’administrateur peuvent configurer les paramètres de confidentialité et les valeurs par défaut du système, peuvent préparer, télécharger et vérifier les données d’espace de travail Analytique. Pour plus d’informations, voir [Analytique d’espace de travail](https://docs.microsoft.com/en-us/workplace-analytics/index-orig).
 
 |**Nom convivial**|**Operation**|**Description**|
 |:-----|:-----|:-----|

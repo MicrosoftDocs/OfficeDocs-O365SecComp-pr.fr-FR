@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
+ms.collection: M365-security-compliance
 description: Découvrez comment les fonctionnalités de protection contre les menaces avancées menace peuvent vous aider à rechercher les menaces de votre organisation, répondre à des programmes malveillants, les attaques par hameçonnage et les autres attaques Office 365 a détecté en votre nom et rechercher des indicateurs de menace.
-ms.openlocfilehash: 5dfd0377c4cafe89c5f69ea080f07d04d892329e
-ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
+ms.openlocfilehash: 632a2387e7cb5a30745459383e670d08c9b84aff
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "29792259"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995095"
 ---
 # <a name="office-365-threat-intelligence"></a>Intelligence des menaces d’Office 365
 

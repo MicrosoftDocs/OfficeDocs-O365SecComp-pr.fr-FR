@@ -11,17 +11,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
+ms.collection: M365-security-compliance
 description: Découvrez les suivis de menace, y compris les nouveaux dispositifs dignes d’intérêt, pour aider votre organisation à maîtriser les problèmes de sécurité.
-ms.openlocfilehash: 7729a78d0b18df7d73751f4480ef095bedc5965b
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 06fdd24e545a3ee04bccf177d777efea31fbe137
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014996"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995305"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Suivis contre les menaces - nouveaux et intéressants
 
 [Office 365 menaces](office-365-ti.md) permet à l’équipe de sécurité de votre organisation à découvrir et à effectuer une action contre les menaces de sécurité. À partir de fin mars 2018 et sur les semaines à venir, Office 365 menaces inclura nouvelles fonctionnalités de suivi de menace, notamment des dispositifs dignes d’intérêt. Lisez cet article pour obtenir une vue d’ensemble de ces nouvelles fonctionnalités et les étapes suivantes. 
+
+> [!IMPORTANT]
+> À partir de février 2019 et présentant plusieurs mois suivant, sur les menaces Office 365 est devenu Office 365 Advanced Threat Protection Plan 2, avec les fonctionnalités de protection contre les menaces supplémentaires. Pour plus d’informations, voir [plans Office 365 avancée protection contre les menaces et les prix](https://products.office.com/exchange/advance-threat-protection) et [Office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="what-are-threat-trackers"></a>Quelles sont les menaces suivis ?
 

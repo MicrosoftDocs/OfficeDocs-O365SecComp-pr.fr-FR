@@ -11,16 +11,17 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Recommandations de l’équipe de sécurité de Microsoft d’implémenter les fonctionnalités de sécurité pour protéger votre environnement Office 365. '
-ms.openlocfilehash: 58767ea9a2b825d1583d9135f9d8edcb0d20d7c2
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: ce7b4371a284763c506ea4e1a06a63dbf2968ae5
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "25450079"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995285"
 ---
 # <a name="office-365-security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Guide de sécurité Office 365 - priorités pour les 30 premiers jours, 90 jours et au-delà
 
@@ -57,7 +58,7 @@ Ces tâches peuvent être accomplies rapidement et ont un faible impact sur les 
   
 |||
 |:-----|:-----|
-|Domaine  <br/> |Tâches  <br/> |
+|Domaine  <br/> |Tasks  <br/> |
 |Gestion de la sécurité  <br/> |• Vérifier le Score d’informations sécurisé et prenez note de votre score actuel ( [https://securescore.office.com](https://securescore.office.com)).  <br/>  • Activer l’enregistrement d’audit pour Office 365. Voir [recherche dans le journal d’audit de sécurité Office 365 &amp; centre de conformité](search-the-audit-log-in-security-and-compliance.md).<br/> • [Configurer votre client Office 365 pour accroître la sécurité](tenant-wide-setup-for-increased-security.md) .  <br/>  • Vérifier régulièrement des tableaux de bord et des rapports dans le Office 365 sécurité et centre de conformité et nuage application.  <br/> |
 |Protection contre les menaces  <br/> |[Connecter Office 365 à la sécurité d’application Cloud Microsoft](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) pour démarrer l’analyse en utilisant les stratégies de détection de menace par défaut des comportements anormales. Elle prend sept jours pour créer une planification pour détecter une anomalie.<br><br/>  Implémenter la protection pour les comptes d’administration :  <br/> • Utiliser dédiée admin des comptes pour l’activité d’administration.  <br/>  • Mise en œuvre l’authentification multifacteur (MFA) pour les comptes d’administration.  <br/>  • Utiliser un [hautement sécurisés périphérique Windows 10](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-highly-secure) pour l’activité d’administration.  <br/> |
 |Gestion des identités et des accès  <br/> |• [Activer la Protection d’identité Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable).  <br/> • Pour les environnements d’identités fédérées, appliquer la sécurité de compte (longueur de mot de passe, âge, complexité, etc.).  <br/> |

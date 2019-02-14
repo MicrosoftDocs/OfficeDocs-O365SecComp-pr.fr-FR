@@ -3,7 +3,7 @@ title: Afficher les rapports de Protection de menace avancées d’Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/07/2019
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
+ms.collection: M365-security-compliance
 description: Découvrez comment trouver et utiliser les rapports pour Office 365 avancée contre les menaces de sécurité &amp; centre de conformité.
-ms.openlocfilehash: a17f182f5c8d79e7863b26324a3c073ef18f14c9
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: a27fdf6c7d04a2526873047d4e2a33bb283878b3
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014946"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995225"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Afficher les rapports de Protection de menace avancées d’Office 365
 
@@ -79,7 +80,6 @@ Lorsque vous placez sur une barre dans le graphique, vous pouvez voir les action
 
 Outre les rapports DAV décrites dans cet article, plusieurs autres rapports sont disponibles, comme décrit dans le tableau suivant :
 
-
 |Type de rapport  |En savoir plus  |
 |---------|---------|
 |**Rapports de sécurité de messagerie**, comme un principaux expéditeurs et destinataires rapport, un rapport de messagerie de l’usurpation d’identité et un rapport des détections de courrier indésirable. | [Afficher les rapports de sécurité de messagerie de la sécurité &amp; centre de conformité](view-email-security-reports.md)        |
@@ -90,14 +90,14 @@ Outre les rapports DAV décrites dans cet article, plusieurs autres rapports son
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>Les autorisations requises pour afficher les rapports DAV ?
 
-Pour pouvoir afficher et utiliser les rapports décrits dans cet article, **vous devez disposer d’un rôle approprié est affecté de la sécurité &amp; centre de conformité et le centre d’administration Exchange**.
+Pour pouvoir afficher et utiliser les rapports décrits dans cet article, **vous devez disposer d’un rôle approprié attribué à la sécurité &amp; centre de conformité et le centre d’administration Exchange**.
 
 - Pour la sécurité &amp; centre de conformité, vous devez disposer d’un des rôles suivants est attribué :
     - Gestion de l’organisation
-    - Administrateur de sécurité
+    - Administrateur de la sécurité (il peut être assigné dans le centre d’administration Azure Active Directory ([https://aad.portal.azure.com](https://aad.portal.azure.com))
     - Lecteur de sécurité
 
-- Pour Exchange Online, vous devez disposer d’un des rôles suivants est attribué :
+- Pour Exchange Online, vous devez disposer d’un des rôles suivants est attribué centre d’administration Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) ou à l’aide des applets de commande PowerShell (voir [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) :
     - Gestion de l’organisation
     - Gestion de l’organisation en affichage seul
     - Rôle Destinataires en affichage uniquement

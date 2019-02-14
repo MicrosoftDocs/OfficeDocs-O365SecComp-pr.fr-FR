@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
+ms.collection: M365-security-compliance
 description: Utilisez le nouveau tableau de bord de sécurité pour Office 365 Threat Protection état, de révision et d’afficher et agir sur les alertes de sécurité.
-ms.openlocfilehash: c393513d08762785eab44102fa83680531a49b53
-ms.sourcegitcommit: c2ec9a4b0279a248b85c2e4a4e91458214b5b31c
+ms.openlocfilehash: 403c47ed09e9652a66abeafb93be02589c9b1702
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "29770799"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995125"
 ---
 # <a name="security-dashboard"></a>Tableau de bord de sécurité
 

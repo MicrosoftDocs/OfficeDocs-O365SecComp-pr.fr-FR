@@ -12,15 +12,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
+ms.collection:
+- M365-security-compliance
 description: Protection contre les menaces avancées Office 365 inclut l’usurpation d’identité aide à la décision, liens fiables, pièces jointes fiables, des fonctionnalités anti-hameçonnage avancées et sur les menaces.
-ms.openlocfilehash: 213b262b0ecc821b8f139b1b63568b2b03e635c5
-ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
+ms.openlocfilehash: 4899073247f4b39e7cda39f8f35544c436c0b2d7
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "29792249"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995215"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 - Protection avancée contre les menaces
+
+> [!IMPORTANT]
+> Cet article est destiné aux entreprises. Si vous êtes un utilisateur vous recherchez des informations sur les liens sécurisés dans Outlook, voir [sécurité Outlook.com avancés](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 ## <a name="overview-of-office-365-advanced-threat-protection"></a>Vue d’ensemble de la Protection de Microsoft Office 365 menace avancées
 

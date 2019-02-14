@@ -3,7 +3,7 @@ title: Rechercher et vérifier le courrier électronique malveillant qui a été
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 8/6/2018
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,20 +12,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
+ms.collection: M365-security-compliance
 description: Apprenez à utiliser sur les menaces pour rechercher et vérifier la messagerie.
-ms.openlocfilehash: b6d4f8a5d1fcfce4461b91796b1264f94d1eb4d1
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: c7492ccf2a7fa5d67b256264c6ed6fbdb06bcbc8
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014916"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995185"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>Rechercher et vérifier le courrier électronique malveillant qui a été remis (Office 365 Threat Intelligence)
 
 [Menaces Office 365](office-365-ti.md) vous permet d’étudier la question activités placer vos utilisateurs à risques et prennent des mesures pour protéger votre organisation. Par exemple, si vous faites partie de l’équipe de sécurité de votre organisation, vous pouvez rechercher et examiner les messages suspects qui ont été remis à vos utilisateurs. Pour cela, à l’aide de [Menace Explorer](get-started-with-ti.md#threat-explorer).
   
-> [!NOTE]
-> Menaces d’Office 365 est disponible dans Office 365 entreprise E5. Si votre organisation utilise un autre abonnement Office 365 pour entreprises, les menaces Office 365 peut être acheté comme module complémentaire. (En tant qu’administrateur global, dans le centre d’administration Office 365, choisissez **facturation** \> **abonnements Add**.) Pour plus d’informations, voir [Office 365 Platform Service Description : Office 365 sécurité &amp; centre de conformité](https://technet.microsoft.com/en-us/library/dn933793.aspx) et [acheter ou modifier un module complémentaire pour Office 365 pour entreprises](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
+> [!IMPORTANT]
+> À partir de février 2019 et présentant plusieurs mois suivant, sur les menaces Office 365 est devenu Office 365 Advanced Threat Protection Plan 2, avec les fonctionnalités de protection contre les menaces supplémentaires. Pour plus d’informations, voir [plans Office 365 avancée protection contre les menaces et les prix](https://products.office.com/exchange/advance-threat-protection) et [Office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="before-you-begin"></a>Avant de commencer...
 

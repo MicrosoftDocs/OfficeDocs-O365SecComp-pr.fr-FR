@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 description: Avec Office 365, votre contenu est chiffré au repos et en transit, à l’aide du chiffrement, les protocoles et les technologies disponibles puissant. Obtenir une vue d’ensemble du chiffrement dans Office 365.
-ms.openlocfilehash: a9f37fddf28461ee4912e0b8a1f5b922c59c009f
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: 5f64d6e758818d410f54370adee549f565d4f042
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972286"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995105"
 ---
 # <a name="encryption-in-office-365"></a>Chiffrement dans Office 365
 
@@ -47,9 +47,9 @@ Avec Office 365, vous pouvez avoir plusieurs calques et les types de chiffrement
   
 |**Types de contenu**|**Technologies de chiffrement**|**Ressources pour en savoir plus**|
 |:-----|:-----|:-----|
-|Fichiers sur un appareil. Cela peut inclure des messages électroniques enregistrés dans un dossier, les documents Office enregistrés sur un ordinateur, une tablette ou un téléphone ou des données enregistrées dans le nuage de Microsoft.  <br/> |BitLocker dans les centres de données Microsoft. Vous pouvez également utiliser BitLocker sur les ordinateurs clients, tels que les ordinateurs Windows et tablettes  <br/> Gestionnaire de clé distribué (DKM) dans des centres de données Microsoft  <br/> Clé de client pour Office 365  <br/> |[Windows IT Center : BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) <br/> [Centre de gestion de la confidentialité Microsoft : le chiffrement](https://www.microsoft.com/en-us/TrustCenter/Security/Encryption) <br/> [Sécurité du nuage contrôle série : chiffrer les données au repos](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Procédure de sécurisation des informations confidentielles dans votre courrier électronique dans Exchange Online](exchange-online-secures-email-secrets.md) <br/> [Contrôler vos données dans Office 365 à l'aide de la clé client](controlling-your-data-using-customer-key.md) <br/> |
+|Fichiers sur un appareil. Cela peut inclure des messages électroniques enregistrés dans un dossier, les documents Office enregistrés sur un ordinateur, une tablette ou un téléphone ou des données enregistrées dans le nuage de Microsoft.  <br/> |BitLocker dans les centres de données Microsoft. Vous pouvez également utiliser BitLocker sur les ordinateurs clients, tels que les ordinateurs Windows et tablettes  <br/> Gestionnaire de clé distribué (DKM) dans des centres de données Microsoft  <br/> Clé de client pour Office 365  <br/> |[Windows IT Center : BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) <br/> [Centre de gestion de la confidentialité Microsoft : le chiffrement](https://www.microsoft.com/en-us/TrustCenter/Security/Encryption) <br/> [Sécurité du nuage contrôle série : chiffrer les données au repos](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Procédure de sécurisation des informations confidentielles dans votre courrier électronique dans Exchange Online](exchange-online-secures-email-secrets.md) <br/> [Contrôle de vos données dans Office 365 à l'aide de la Clé client](controlling-your-data-using-customer-key.md). <br/> |
 |Fichiers en transit entre les utilisateurs. Cela peut inclure des documents Office ou les éléments de liste SharePoint partagés entre les utilisateurs.  <br/> |TLS pour les fichiers en transit  <br/> |[Chiffrement de données dans OneDrive Entreprise et SharePoint Online](data-encryption-in-odb-and-spo.md) <br/> [Skype pour les entreprises en ligne : sécurité et archivage](https://technet.microsoft.com/library/skype-for-business-online-security-and-archiving.aspx) <br/> |
-|En transit entre les destinataires de messagerie. Cela inclut la messagerie hébergée par Exchange Online.  <br/> |Chiffrement de messages Office 365 avec Azure Rights Management, S/MIME et TLS pour le courrier électronique en transit  <br/> |[Chiffrement de messages Office 365 (OME)](ome.md) <br/> [Chiffrement du courrier dans Office 365](email-encryption.md) <br/> [Mode d’utilisation de TLS par Exchange Online pour sécuriser les connexions de messagerie dans Office 365](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
+|En transit entre les destinataires de messagerie. Cela inclut la messagerie hébergée par Exchange Online.  <br/> |Chiffrement de messages Office 365 avec Azure Rights Management, S/MIME et TLS pour le courrier électronique en transit  <br/> |[Chiffrement de messages Office 365 (OME)](ome.md) <br/> [Chiffrement du courrier électronique dans Office 365](email-encryption.md) <br/> [Mode d’utilisation de TLS par Exchange Online pour sécuriser les connexions de messagerie dans Office 365](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
    
 ## <a name="what-if-i-need-more-control-over-encryption-to-meet-security-and-compliance-requirements"></a>Que se passe-t-il si j’ai besoin davantage de contrôle sur le chiffrement pour répondre aux besoins de sécurité et de conformité ?
 
@@ -61,7 +61,7 @@ Voir les ressources suivantes pour en savoir plus :
     
 - [Azure Rights Management dans le Centre d’administration Office 365](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
     
-- [Définir des Information Rights Management (IRM) dans le centre d’administration SharePoint](set-up-irm-in-sp-admin-center.md)
+- [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
     
 ## <a name="how-do-i"></a>Comment faire ?
 

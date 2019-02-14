@@ -12,13 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
+ms.collection:
+- M365-security-compliance
 description: Lorsque vous configurez vos stratégies de pièces jointes sûres DAV, vous choisissez remise dynamique afin d’éviter les retards de message et permettent aux utilisateurs d’afficher un aperçu des pièces jointes qui sont analysés.
-ms.openlocfilehash: fe1b8fd2e26c683735f64de6b5b195e3bc351c8e
-ms.sourcegitcommit: b936a2fd4b7f7a7099b96cc29580ed55bdb8bf2b
+ms.openlocfilehash: ae027986cf5114bd024c679a59975d1e4be52d32
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "27789462"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995145"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Remise dynamique et l’aperçu avec Office 365 DAV approuvés en pièce jointe
 

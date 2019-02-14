@@ -3,7 +3,7 @@ title: Utiliser l’Explorateur de solutions de sécurité &amp; centre de confo
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/26/2018
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
+ms.collection: M365-security-compliance
 description: En savoir plus sur l’Explorateur de solutions (également appelé Threat Explorer) dans la sécurité &amp; centre de conformité.
-ms.openlocfilehash: c5b6273120c605cb4233f62b5c52c6a794e554eb
-ms.sourcegitcommit: 0cc6083bd8cb2f7bbf18847149c6d5239f2a6403
+ms.openlocfilehash: 16f5b15c6993301f4f324f4b84c3b6e61f255e0f
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26699927"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995115"
 ---
 # <a name="use-explorer-in-the-security-amp-compliance-center"></a>Utiliser l’Explorateur de solutions de sécurité &amp; centre de conformité
 
@@ -27,6 +28,9 @@ Si votre organisation dispose [d’Informations sur les menaces Office 365](offi
 ![Accédez à gestion de menace \> Explorer](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
 Pour utiliser l’Explorateur de solutions, dans la sécurité &amp; centre de conformité, accédez à la **Gestion des menaces** \> **Explorer**.
+
+> [!IMPORTANT]
+> À partir de février 2019 et présentant plusieurs mois suivant, sur les menaces Office 365 est devenu Office 365 Advanced Threat Protection Plan 2, avec les fonctionnalités de protection contre les menaces supplémentaires. Pour plus d’informations, voir [plans Office 365 avancée protection contre les menaces et les prix](https://products.office.com/exchange/advance-threat-protection) et [Office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
       
 ## <a name="explorer-overview"></a>Vue d’ensemble de l’Explorateur de solutions
 
