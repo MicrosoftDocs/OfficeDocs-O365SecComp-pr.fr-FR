@@ -1,5 +1,5 @@
 ---
-title: Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé dans Office 365
+title: Utiliser DKIM pour les courriers électroniques dans votre domaine personnalisé dans Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,18 +13,18 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 'Résumé : Cet article décrit comment utiliser DKIM (DomainKeys Identified Mail) avec Office 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.'
-ms.openlocfilehash: 080d873c91c2dfb5910588113f2a6709b3ee9ab4
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: a076e70b72711d1b812ffb0d30fba0ffb322d6b7
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29696331"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "29954257"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé dans Office 365
 
- **Résumé :** Cet article décrit comment utiliser DKIM (DomainKeys Identified Mail) avec Office 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé. 
+ **Résumé:** Cet article explique comment utiliser DomainKeys Identified (DKIM) avec Office 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé. 
   
-Vous devez utiliser DKIM en plus de SPF et DMARC pour empêcher les usurpateurs d'envoyer des messages qui semblent provenir de votre domaine. DKIM vous permet d'ajouter une signature numérique aux messages électroniques dans l'en-tête du message. Cela peut paraître compliqué, mais ce n'est vraiment pas le cas. Lorsque vous configurez DKIM, vous autorisez votre domaine à associer son nom à un message électronique ou à le signer à l'aide d'une authentification de chiffrement. Les systèmes de messagerie qui reçoivent des messages électroniques de votre domaine peuvent utiliser cette signature numérique pour déterminer si le courrier entrant est légitime.
+Vous devez utiliser DKIM en plus de SPF et DMARC pour empêcher les usurpateurs d’envoyer des messages qui semblent provenir de votre domaine. DKIM vous permet d’ajouter une signature numérique aux messages électroniques dans l’en-tête du message. Cela peut paraître compliqué, mais ce n’est vraiment pas le cas. Lorsque vous configurez DKIM, vous autorisez votre domaine à associer son nom à un message électronique ou à le signer à l’aide d’une authentification de chiffrement. Les systèmes de messagerie qui reçoivent des messages électroniques de votre domaine peuvent utiliser cette signature numérique pour déterminer si le courrier entrant est légitime.
   
 En bref, vous utilisez une clé privée pour chiffrer l’en-tête du message électronique sortant de votre domaine. Vous publiez une clé publique sur les enregistrements DNS de votre domaine que les serveurs de réception peuvent utiliser pour décoder la signature. Ils utilisent la clé publique pour vérifier que les messages sont réellement envoyés par vous et pas par une personne qui tente d’usurper votre domaine.
   
@@ -85,10 +85,10 @@ Pour chaque domaine auquel vous souhaitez ajouter une signature DKIM dans le sys
   
  Office 365 effectue une rotation automatique des clés à l'aide des deux enregistrements que vous établissez. Si vous avez configuré des domaines personnalisés en plus du domaine initial dans Office 365, vous devez publier deux enregistrements CNAME pour chaque domaine supplémentaire. Par conséquent, si vous avez deux domaines, vous devez publier deux enregistrements CNAME supplémentaires, et ainsi de suite.
   
-Utilisez le format suivant pour les enregistrements CNAME.
+Utilisez le format suivant pour les enregistrements CNAMe.
 
 > [!IMPORTANT]
-> Si vous êtes un de nos clients GCC élevé, nous calculer différemment _domainGuid_ ! Au lieu de la recherche de l’enregistrement MX pour votre _initialDomain_ calculer _domainGuid_, au lieu de cela nous calculer directement depuis le domaine personnalisé. Par exemple, si votre domaine personnalisé est « contoso.com » votre domainGuid devient « contoso-com », les périodes sont remplacés par un tiret. Par conséquent, quel que soit l’enregistrement MX vos points initialDomain, vous allez toujours utiliser la méthode ci-dessus pour calculer le domainGuid à utiliser dans vos enregistrements CNAME.
+> Si vous êtes l'un de nos clients très élevés, nous calculons _domainGuid_ différemment. Au lieu de consulter l'enregistrement MX de votre _initialDomain_ pour calculer _domainGuid_, nous le calculons directement à partir du domaine personnalisé. Par exemple, si votre domaine personnalisé est «contoso.com», votre domainGuid devient «contoso-com», les points sont remplacés par un tiret. Ainsi, quel que soit l'enregistrement MX vers lequel pointe votre initialDomain, vous utiliserez toujours la méthode ci-dessus pour calculer le domainGuid à utiliser dans vos enregistrements CNAMe.
 
   
 ```
@@ -105,13 +105,13 @@ Où :
   
 - Pour Office 365, les sélecteurs seront toujours « selector1 » ou « selector2 ». 
     
-- _domainGUID_ est identique à la _domainGUID_ dans l’enregistrement MX personnalisé pour votre domaine personnalisé qui s’affiche avant mail.protection.outlook.com. Par exemple, dans l’enregistrement MX suivant pour le domaine contoso.com, le _domainGUID_ est contoso-com : 
+- _domainGUID_ est le même que le _domainGUID_ dans l'enregistrement MX personnalisé pour votre domaine personnalisé qui apparaît avant mail.protection.Outlook.com. Par exemple, dans l'enregistrement MX suivant pour le domaine contoso.com, _domainGUID_ est contoso-com: 
     
     ```
     contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
     ```
 
-- _initialDomain_ est le domaine que vous avez utilisé lors de l’inscription à Office 365. Domaines initiales se terminent toujours par onmicrosoft.com. Pour plus d’informations sur la détermination de votre domaine initial, voir [Le Forum aux questions sur les domaines](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
+- _initialDomain_ est le domaine que vous avez utilisé lors de votre inscription à Office 365. Les domaines initiaux se terminent toujours par onmicrosoft.com. Pour plus d'informations sur la façon de déterminer votre domaine initial, consultez la rubrique [Domains Forum aux questions](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
     
 Par exemple, si vous avez un domaine initial cohovineyardandwinery.onmicrosoft.com, ainsi que deux domaines personnalisés cohovineyard.com et cohowinery.com, vous devez configurer deux enregistrements CNAME pour chaque domaine supplémentaire, soit un total de quatre enregistrements CNAME.
   
@@ -160,7 +160,7 @@ Une fois que vous avez publié les enregistrements CNAME dans le système DNS, v
     New-DkimSigningConfig -DomainName <domain> -Enabled $true
     ```
 
-   Où _domaine_ est le nom du domaine personnalisé que vous souhaitez activer la signature pour DKIM. 
+   Où _Domain_ est le nom du domaine personnalisé pour lequel vous souhaitez activer la signature DKIM. 
     
    Par exemple, pour le domaine contoso.com :
     
@@ -282,6 +282,6 @@ Dans cet exemple, pour obtenir ce résultat :
 ## <a name="next-steps-after-you-set-up-dkim-for-office-365"></a>Étapes suivantes : après avoir configuré DKIM pour Office 365
 <a name="DKIMNextSteps"> </a>
 
-Bien que DKIM est conçu pour empêcher l’usurpation d’identité, DKIM fonctionne mieux avec SPF et DMARC. Une fois que vous avez configuré DKIM, si vous n'avez pas déjà configuré SPF faire. Pour une présentation rapide pour SPF et pour obtenir une configuration rapidement, voir [Set up SPF dans Office 365 afin d’empêcher l’usurpation d’identité](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Pour une présentation plus approfondie de la façon dont Office 365 utilise SPF, ou pour les déploiements de résolution des problèmes ou non standard telles que les déploiements hybrides, démarrez avec la [façon dont Office 365 utilise Framework SPF (Sender Policy) pour empêcher l’usurpation d’identité](how-office-365-uses-spf-to-prevent-spoofing.md). Ensuite, voir [Utiliser DMARC pour valider le courrier dans Office 365](use-dmarc-to-validate-email.md). [En-têtes de message anti-courrier indésirable](anti-spam-message-headers.md) inclut les champs de la syntaxe et les en-tête utilisés par Office 365 pour les contrôles DKIM. 
+Bien que DKIM soit conçu pour éviter l'usurpation, DKIM est plus efficace avec SPF et DMARC. Une fois que vous avez configuré DKIM, si vous n'avez pas encore configuré SPF, vous devez le faire. Pour une présentation rapide de SPF et pour qu'il soit configuré rapidement, reportez-vous à la rubrique [set up SPF in Office 365 pour éviter l'usurpation](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Pour mieux comprendre comment Office 365 utilise SPF, ou pour résoudre des problèmes ou des déploiements non standard tels que des déploiements hybrides, commencez par [Comment office 365 utilise SPF (Sender Policy Framework) pour éviter l'usurpation](how-office-365-uses-spf-to-prevent-spoofing.md). Ensuite, voir [utiliser DMARC pour valider le courrier électronique dans Office 365](use-dmarc-to-validate-email.md). Les [en-têtes de message anti-courrier](anti-spam-message-headers.md) indésirable incluent la syntaxe et les champs d'en-tête utilisés par Office 365 pour les contrôles DKIM. 
   
 
