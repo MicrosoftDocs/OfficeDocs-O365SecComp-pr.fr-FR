@@ -11,84 +11,84 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: aac65513-e75e-4c82-a668-9a6604dd9f9d
-description: Consultation des rapports de détection d’application dans la gestion de la sécurité avancée peut vous aider à en savoir plus sur l’utilisation des applications dans le nuage par les personnes dans votre organisation. Une fois que vous avez créé des rapports de découverte d’application à l’aide de fichiers journaux à partir de votre pare-feu et des proxys, passez en revue les résultats du tableau de bord de détection d’application.
-ms.openlocfilehash: 6195c9aae7ae5e398ac555cc820de04dee05d4fd
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Examen des rapports de découverte d'application dans Office 365 Cloud App Security peut vous aider à en savoir plus sur la façon dont les employés de votre organisation utilisent des applications Cloud. Une fois que vous avez créé des rapports de découverte d'application à l'aide de fichiers journaux de vos pare-feu et de vos proxys, examinez les résultats dans le tableau de bord de découverte d'application.
+ms.openlocfilehash: fa5ab7c6cd734feb26878cf1a97f7ce708aa1478
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603745"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087333"
 ---
 # <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>Passer en revue les détections d'applications dans la sécurité des applications cloud Office 365
   
-|Évaluation **\>**|Planification **\>**|Déploiement **\>**|Utilisation du ***|
+|Évaluation * *\>**|Planification * *\>**|Déploiement * *\>**|Utilisation * * * *|
 |:-----|:-----|:-----|:-----|
-|[Commencer à évaluer](office-365-cas-overview.md) <br/> |[Commencer à planifier](get-ready-for-office-365-cas.md) <br/> |[Commencer à déployer](turn-on-office-365-cas.md) <br/> |Vous êtes ici !  <br/> [Étapes suivantes](#next-steps) <br/> |
+|[Commencer l'évaluation](office-365-cas-overview.md) <br/> |[Commencer la planification](get-ready-for-office-365-cas.md) <br/> |[Démarrer le déploiement](turn-on-office-365-cas.md) <br/> |Vous êtes là!  <br/> [Étapes suivantes](#next-steps) <br/> |
    
-Le tableau de bord dans le nuage découverte fonctionne avec les journaux de trafic web de votre organisation pour fournir des informations détaillées sur l’utilisation des applications dans le nuage. Si vous êtes un administrateur global, un administrateur de sécurité ou un lecteur de sécurité et que votre organisation a [créé des rapports de découverte d’application dans Office 365 Cloud application sécurité](create-app-discovery-reports-in-ocas.md), vous pouvez utiliser le tableau de bord de découverte dans le nuage pour bien comprendre comment les personnes figurant dans votre organisation utilisent Office 365 et autres applications dans le nuage. (Le tableau de bord de découverte dans le nuage est également appelé détection d’application de la productivité).
+Le tableau de bord de découverte du Cloud fonctionne avec les journaux de trafic Web de votre organisation pour fournir des informations détaillées sur l'utilisation des applications Cloud. Si vous êtes un administrateur général, un administrateur de sécurité ou un lecteur de sécurité, et que votre organisation a [créé des rapports de découverte d'application dans Office 365 Cloud App Security](create-app-discovery-reports-in-ocas.md), vous pouvez utiliser le tableau de bord de découverte de Cloud pour obtenir des informations sur la façon dont les personnes de votre Organisation utilisent Office 365 et d'autres applications Cloud. (Le tableau de bord de découverte du Cloud est également appelé découverte d'application de productivité.)
   
- Le tableau de bord dans le nuage découverte permet de vous permet d’afficher des informations détaillées sur comment les personnes dans votre organisation utilisent Office 365 et autres applications. 
+ Le tableau de bord de découverte du Cloud vous permet d'afficher des informations détaillées sur la façon dont les membres de votre organisation utilisent Office 365 et d'autres applications. 
   
-![Le tableau de bord dans le nuage découverte a été mis à jour.](media/12712681-c0b3-4cb3-b7fd-2cf2ad4e825f.png)
+![Le tableau de bord de découverte du Cloud a été mis à jour](media/12712681-c0b3-4cb3-b7fd-2cf2ad4e825f.png)
      
-## <a name="go-to-the-cloud-discovery-dashboard"></a>Accédez au tableau de bord de découverte dans le nuage
+## <a name="go-to-the-cloud-discovery-dashboard"></a>Accéder au tableau de bord de découverte Cloud
 
-1. Accédez au portail de sécurité des applications dans le nuage ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) et se connecter.
+1. Accédez au portail de sécurité des applications Cloud[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)() et connectez-vous.
     
-2. Accédez à **découvrir** \> **tableau de bord de découverte dans le nuage**.
+2. Accédez à **** \> la vue d' **exploration du tableau de bord de découverte Cloud**.
     
-## <a name="see-your-top-users-ip-addresses-apps-and-risk-levels"></a>Voir vos utilisateurs les plus fréquents, IP les adresses, applications et des niveaux de risques
+## <a name="see-your-top-users-ip-addresses-apps-and-risk-levels"></a>Afficher les principaux utilisateurs, adresses IP, applications et niveaux de risque
 
-Le tableau de bord de découverte dans le Cloud vous donne une vue d’ensemble d’un coup de œil des applications qui sont utilisés avec Office 365 dans votre organisation, les alertes actives, utilisateurs les plus fréquents et des niveaux de risques.
+Le tableau de bord de découverte du Cloud vous donne une vue d'ensemble des applications utilisées avec Office 365 dans votre organisation, des alertes ouvertes, des utilisateurs les plus fréquents et des niveaux de risque.
   
-![Dashboaard de découverte dans le nuage](media/06696946-fbdf-4781-b5b8-2ac074fcb2a1.png)
+![Recherche dans le Cloud dashboaard](media/06696946-fbdf-4781-b5b8-2ac074fcb2a1.png)
   
-1. Sous l’onglet **tableau de bord** , examinez l’utilisation d’application cloud globale de votre organisation dans la section vue d’ensemble dans la partie supérieure de l’écran. 
+1. Dans l'onglet **tableau de bord** , examinez l'ensemble de l'application Cloud dans votre organisation dans la section vue d'ensemble en haut de l'écran. 
     
-2. Afficher les **catégories d’Office 365** pour les applications qui sont utilisés dans votre organisation. 
+2. Voir les **catégories Office 365** pour les applications utilisées dans votre organisation. 
     
-3. Examinez le widget **découvert applications** pour voir l’utilisation d’Office 365 et d’autres applications dans cet affichage. 
+3. Consultez le widget **applications découvertes** pour consulter l'utilisation d'Office 365 et d'autres applications dans cet affichage. 
     
-4. Examinez le widget **d’utilisateurs les plus fréquents** et **adresses IP haut** pour identifier les personnes qui utilisent Office 365 et applications le plus dans votre organisation en nuage. 
+4. Examinez les **principaux utilisateurs** et les **principaux adresses IP** pour identifier les personnes qui utilisent Office 365 et les applications Cloud les plus utilisées dans votre organisation. 
     
-5. Voir où les applications à l’aide de personnes en emplacement géographique à l’aide de la carte **d’emplacements de sièges sociaux d’applications** . 
+5. Voir où les applications que les personnes utilisent sont par emplacement géographique à l'aide de la carte d' **emplacement de siège** de l'application. 
     
-6. Au-dessus de la zone cartes, jetez un œil à note des applications découvertes dans la vue d’ensemble **des niveaux de risques** . Vous pouvez examiner les risques des groupes et des catégories que vous avez utilisée dans la zone **applications découvert** . Par exemple, vous pouvez voir la quantité de trafic dans chaque regroupement est à partir d’applications risque élevé, moyen ou faible. 
+6. Au-dessus de la zone cartes, jetez un œil à la note de risque des applications découvertes dans la section vue d'ensemble des **niveaux de risque** . Vous pouvez examiner les risques en utilisant les mêmes groupes et catégories que ceux que vous avez utilisés dans la zone **applications découvertes** . Par exemple, vous pouvez voir la proportion de trafic dans chaque regroupement provenant d'applications à risque élevé, moyen ou faible. 
     
-## <a name="dive-deeper-into-the-information"></a>Les informations aller plus loin
+## <a name="dive-deeper-into-the-information"></a>Approfondir les informations
 
-Vous pouvez utiliser dans le nuage découverte pour jetez un œil plus approfondi à des applications, les sous-domaines, les adresses IP et les utilisateurs.
+Vous pouvez utiliser la découverte du Cloud pour avoir un aperçu approfondi des applications, des sous-domaines, des adresses IP et des utilisateurs.
   
-1. Dans le tableau de bord de découverte dans le nuage, choisissez l’onglet **applications découvert** . 
+1. Dans le tableau de bord de découverte du Cloud, sélectionnez l'onglet **applications découvertes** . 
     
-2. Utilisez la section filtres pour afficher les applications par nom, catégorie, au niveau de l’utilisation ou dernière date affichée.
+2. Utilisez la section filtres pour afficher les applications par nom, catégorie, niveau d'utilisation ou date de dernière vue.
     
-3. Dans la liste des résultats, placez le curseur par un nom d’application pour faire apparaître le lien **Afficher les sous-domaines** .<br/> ![En regard d’une application pour afficher un lien pour afficher les détails du sous-domaine de pointage](media/4a212215-8a2c-46fd-9ef9-89e4064658a6.png)<br/>Des informations détaillées sur l’application sélectionnée seront affiche.
+3. Dans la liste des résultats, placez le curseur sur le nom d'une application pour afficher le lien **afficher les sous-domaines** .<br/> ![Passer en regard d'une application pour révéler un lien permettant d'afficher les détails d'un sous-domaine](media/4a212215-8a2c-46fd-9ef9-89e4064658a6.png)<br/>Des informations détaillées sur l'application sélectionnée s'affichent.
     
-4. Pour afficher plus d’informations sur les adresses IP, sélectionnez l’onglet **adresses IP** .<br/>![Découverte de nuage affiche des informations détaillées sur les adresses IP](media/0c742bf6-da9e-4d22-8656-a27a5007d5d5.png)<br/>Dans la liste des résultats, sélectionnez une adresse IP pour afficher des informations plus détaillées.
+4. Pour afficher les détails des adresses IP, cliquez sur l'onglet **adresses IP** .<br/>![La découverte du Cloud affiche des informations détaillées sur les adresses IP](media/0c742bf6-da9e-4d22-8656-a27a5007d5d5.png)<br/>Dans la liste des résultats, sélectionnez une adresse IP individuelle pour afficher des informations plus détaillées.
     
-5. Pour afficher plus d’informations sur les utilisateurs d’Office 365 au sein de votre organisation, sélectionnez l’onglet **utilisateurs** .<br/>![Découverte de nuage - informations sur les utilisateurs](media/2d9c2d85-01e6-4057-8020-d9a68f26bbac.png)
+5. Pour afficher des détails sur les utilisateurs d'Office 365 au sein de votre organisation, cliquez sur l'onglet **utilisateurs** .<br/>![Découverte du Cloud: informations sur les utilisateurs](media/2d9c2d85-01e6-4057-8020-d9a68f26bbac.png)
   
-## <a name="exclude-entities"></a>Exclure les entités
+## <a name="exclude-entities"></a>Exclure des entités
 
-Vous pouvez exclure certains utilisateurs du système ou les adresses IP afin de se concentrer sur des informations plus spécifiques.
+Vous pouvez exclure certains utilisateurs ou adresses IP de votre système afin de vous concentrer sur des informations plus spécifiques.
   
-1. Choisir les **paramètres** \> **paramètres de découverte dans le nuage**.
+1. Choisissez **paramètres** \> de **découverte du Cloud**.
     
 2. Choisissez **exclure des entités**.
     
-3. Choisissez **exclu des utilisateurs** ou **des adresses IP exclus**.
+3. Choisissez **utilisateurs exclus** ou **adresses IP exclues**.
     
-4. Spécifier les utilisateurs ou les adresses IP et dans la zone **commentaires** , tapez les informations sur pourquoi de l’exclusion de ces utilisateurs ou des adresses IP. 
+4. Spécifiez les utilisateurs ou les adresses IP, puis dans la zone **Commentaires** , tapez des informations expliquant pourquoi vous excluez ces utilisateurs ou adresses IP. 
     
 5. Cliquez sur **Add (Ajouter)**.
     
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Passez en revue et effectuer une action sur les alertes](review-office-365-cas-alerts.md)
+- [Passer en revue et effectuer une action sur les alertes](review-office-365-cas-alerts.md)
     
-- [Créer des rapports de détection d’application](create-app-discovery-reports-in-ocas.md)
+- [Créer des rapports de découverte d'application](create-app-discovery-reports-in-ocas.md)
     
-- Passez en revue vos [activités utilisation Office 365 nuage sécurité des applications](utilization-activities-for-ocas.md)
+- Examiner vos [activités d'utilisation pour Office 365 Cloud App Security](utilization-activities-for-ocas.md)
     
 

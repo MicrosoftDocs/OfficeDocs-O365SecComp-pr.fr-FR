@@ -1,5 +1,5 @@
 ---
-title: Défense contre les attaques par déni de Service dans Office 365
+title: Défense contre les attaques par déni de service dans Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -10,36 +10,38 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: Vue d’ensemble des attaques par déni de Service (DoS).
-ms.openlocfilehash: b5a51ae332b32142d9ab993a29763b2160c3ce97
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: Vue d'ensemble des attaques par déni de service (DoS).
+ms.openlocfilehash: cd099bcb225cfa5dd1f44f14d4b7813bef8f7442
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527495"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30091017"
 ---
-# <a name="defending-against-denial-of-service-attacks-in-office-365"></a>Défense contre les attaques par déni de Service dans Office 365
+# <a name="defending-against-denial-of-service-attacks-in-office-365"></a>Défense contre les attaques par déni de service dans Office 365
 
-## <a name="introduction"></a>Présentation
-Microsoft fournit une infrastructure fiable pour plus de 200 services en nuage, y compris Microsoft Azure, Microsoft Bing, Microsoft Office 365, Microsoft Dynamics 365, Microsoft OneDrive, Skype et Xbox Live qui sont hébergées dans notre nuage global infrastructure de centres de données plus de 100.
+## <a name="introduction"></a>Introduction
+Microsoft propose une infrastructure de confiance pour plus de 200 services Cloud, notamment Microsoft Azure, Microsoft Bing, Microsoft Office 365, Microsoft Dynamics 365, Microsoft OneDrive, Skype et Xbox Live hébergés dans notre Cloud global infrastructure de plus de 100 centres de informations.
 
-En tant qu’une organisation globale avec une présence Internet significative et de nombreuses propriétés visibles Internet qui fournissent des services en nuage, Microsoft est une cible volumineux, courantes des pirates informatiques et d’autres personnes malveillantes. --Le réseau de la couche de communication entre les clients et le Cloud Microsoft--est un des objectifs principaux d’attaques malveillantes. En fait, de nombreuses années, Microsoft a été en continu et de façon permanente sous une forme d’opérations sur le réseau. Presque à tout moment, au moins une des propriétés de Internet de Microsoft rencontre une forme d’attaque. Sans systèmes atténuation fiable et permanente qui protège contre les attaques, les services en nuage de Microsoft serait en mode hors connexion et indisponible pour les clients.
+En tant qu'organisation mondiale avec une présence Internet importante et de nombreuses propriétés Internet importantes qui fournissent des services en nuage, Microsoft est une cible commune et commune aux pirates et autres personnes malveillantes. Le réseau, la couche communication entre les clients et le Cloud Microsoft, est l'une des principales cibles d'attaques malveillantes. En fait, depuis de nombreuses années, Microsoft a cessé de se conformer de façon continue et permanente sous certaines conditions de cyber basées sur le réseau. Presque toutes les fois, au moins une des propriétés Internet de Microsoft rencontre une attaque. Sans systèmes d'atténuation fiables et persistants capables de se défendre contre ces attaques, les services Cloud de Microsoft seraient hors ligne et indisponibles pour les clients.
 
-Microsoft utilise les principes de sécurité de défense en profondeur pour protéger ses services en nuage et les réseaux. 
+Microsoft utilise des principes de sécurité de défense en profondeur pour protéger ses services et réseaux Cloud. 
 
-## <a name="definition-and-symptoms-of-denial-of-service-attacks"></a>Définition et symptômes d’attaques par déni de Service
-Une manière d’attaques de services réseau consiste à créer de nombreuses demandes par rapport à des hôtes d’un service de provoquer une saturation du réseau et les serveurs refus de service pour les utilisateurs légitimes. Il est appelé une attaque de par déni de service (DoS). Lors de l’attaque par plusieurs acteurs, des points de terminaison et/ou des vecteurs, il est appelé une attaque de (par déni) distribuée par déni de service. Bien que les moyens, motifs et cibles varient, les attaques par déni de service et par déni se composent généralement des efforts d’une personne ou les personnes pour empêcher un site Internet ou le service de fonctionner correctement ou tout titre temporaire ou indéfiniment.
+## <a name="definition-and-symptoms-of-denial-of-service-attacks"></a>Définition et symptômes des attaques par déni de service
+Pour attaquer les services réseau, il est possible de créer plusieurs requêtes sur les hôtes d'un service afin de submerger le réseau et les serveurs afin de refuser les services aux utilisateurs légitimes. Il s'agit d'une attaque par déni de service (DoS). Lorsque l'attaque est effectuée par plusieurs acteurs, points de terminaison et/ou vecteurs, elle est considérée comme une attaque de déni de service distribuée. Bien que les moyens, les motivations et les cibles varient, les attaques DoS et DDoS consistent généralement en les efforts de la personne ou des personnes pour empêcher un site ou un service Internet de fonctionner correctement ou de façon temporaire ou indéfinie.
 
-Les [États-Unis Computer Emergency Readiness Team](https://www.us-cert.gov/) (US-CERT) définit les symptômes d’attaques DoS à inclure :
-- Anormalement ralentir les performances du réseau (lors de l’ouverture de fichiers ou d’accéder aux sites Internet)
-- Indisponibilité d’un site Web
-- Impossibilité d’accéder à un site Web
-- Augmentation considérable de courrier indésirable entrant
-- Déconnexion d’une connexion Internet sans fil ou câblée
-- Perte à long terme de l’accès sur le Web ou les services Internet
+L'équipe américaine de préparation de l' [urgence informatique](https://www.us-cert.gov/) (US-CERT) définit les symptômes des attaques par déni:
+- Ralentissement des performances réseau (lors de l'ouverture de fichiers ou accès aux sites Internet)
+- Indisponibilité d'un site Web
+- ImPossibilité d'accéder à un site Web
+- Augmentation spectaculaire du courrier indésirable reçu
+- Déconnexion d'une connexion Internet câblée ou sans fil
+- Perte d'accès à long terme pour le Web ou tout service Internet
 
 ## <a name="related-topics"></a>Voir aussi
-- [Principes fondamentaux de la défense contre les attaques par déni de Service](office-365-core-principles-of-defense-against-dos-attacks.md)
-- [Stratégie de défense par déni de Service de Microsoft](office-365-microsoft-dos-defense-strategy.md)
-- [Protection contre les attaques par déni de Service des Services de Cloud Microsoft](office-365-defending-cloud-services-against-dos-attacks.md)
+- [Principes fondamentaux de défense contre les attaques par déni de service](office-365-core-principles-of-defense-against-dos-attacks.md)
+- [Stratégie de défense contre les attaques par déni de service de Microsoft](office-365-microsoft-dos-defense-strategy.md)
+- [Protection des services de Cloud Computing Microsoft contre les attaques par déni de service](office-365-defending-cloud-services-against-dos-attacks.md)

@@ -5,94 +5,110 @@ author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: overview
+ms.date: 02/15/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d9ee4d67-f2b3-42b4-9c9e-c4529904990a
-description: Mise en route à l’aide de la sécurité d’application Office 365 dans le nuage
-ms.openlocfilehash: 1d1ae464278a5d9aafa5a176298f03174b6a37dc
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Prise en main de la sécurité des applications Cloud Office 365
+ms.openlocfilehash: eef1a4f0465b583bb0f0589d213f61c9a15fd152
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603695"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087433"
 ---
 # <a name="get-ready-for-office-365-cloud-app-security"></a>Se préparer pour la sécurité des applications cloud Office 365
   
-|Évaluation **\>**|Planification **\>**|Déploiement **\>**|Utilisation du ***|
+|Évaluation * *\>**|Planification * *\>**|Déploiement * *\>**|Utilisation * * * *|
 |:-----|:-----|:-----|:-----|
-|[Commencer à évaluer](office-365-cas-overview.md) <br/> |Vous êtes ici !  <br/> [Étape suivante](turn-on-office-365-cas.md) <br/> |[Commencer à déployer](turn-on-office-365-cas.md) <br/> |[Commencer à utiliser](utilization-activities-for-ocas.md) <br/> |
+|[Commencer l'évaluation](office-365-cas-overview.md) <br/> |Vous êtes là!  <br/> [Étape suivante](turn-on-office-365-cas.md) <br/> |[Démarrer le déploiement](turn-on-office-365-cas.md) <br/> |[Commencer à utiliser](utilization-activities-for-ocas.md) <br/> |
    
-Lorsque vous préparez à activer et à implémenter la sécurité d’application Office 365 dans le nuage (anciennement appelé gestion de la sécurité avancée) pour votre organisation, il existe quelques éléments à prendre en compte. Utilisez cet article comme un guide pour planifier la sécurité d’application Office 365 dans le nuage.
+Lors de la préparation de l'activation et de l'implémentation de la sécurité des applications Cloud Office 365 pour votre organisation, il existe quelques éléments à prendre en compte. Utilisez cet article pour planifier la sécurité des applications Cloud Office 365.
     
-## <a name="step-1-identify-and-protect-your-global-and-security-administrator-accounts"></a>Étape 1 : Identifier et protéger vos comptes d’administrateur globales et sécurité
+## <a name="step-1-identify-and-protect-your-global-and-security-administrator-accounts"></a>Étape 1: identifier et protéger vos comptes d'administrateur général et de sécurité
 
-Les administrateurs globaux, les administrateurs de sécurité et les lecteurs de sécurité peuvent accéder au portail de sécurité d’application Office 365 dans le nuage pour afficher les stratégies, passez en revue les alertes et utiliser les rapports. Les administrateurs globaux et les administrateurs de sécurité peuvent définir des stratégies et exécuter d’autres actions pour protéger votre organisation. (Pour plus d’informations, voir [des autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md).) Passez en revue les comptes d’utilisateurs de votre organisation qui ont des autorisations élevées par mesure de précaution. 
+Les administrateurs généraux, les administrateurs de la sécurité et les lecteurs de sécurité peuvent accéder au portail de sécurité des applications Cloud Office 365 pour afficher des stratégies, examiner les alertes et utiliser des rapports. Les administrateurs globaux et les administrateurs de sécurité peuvent définir des stratégies et prendre d'autres mesures pour protéger votre organisation. (Pour plus d'informations, consultez [la rubrique autorisations dans le &amp; Centre de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md).) Examinez les comptes d'utilisateur de votre organisation qui ont des autorisations élevées par mesure de précaution. 
   
- **[Comptes d’administrateur global Protect Office 365](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)**. 
+ **[Protégez vos comptes d'administrateur général Office 365](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)**. 
   
-## <a name="step-2-turn-on-audit-logging-for-your-organization"></a>Étape 2 : Activer l’enregistrement d’audit pour votre organisation
+## <a name="step-2-turn-on-audit-logging-for-your-organization"></a>Étape 2: activation de la journalisation d'audit pour votre organisation
 
-Dans l’ordre Office 365 nuage sécurité des applications fonctionnent correcte, l’enregistrement d’audit doit être activée. Cela est généralement effectuée par un administrateur Exchange Online ou un administrateur global.
+Pour que la sécurité des applications Cloud Office 365 fonctionne correctement, la journalisation d'audit doit être activée. Cette opération est généralement réalisée par un administrateur Exchange Online ou un administrateur général.
   
- **[Recherche des journaux d’audit d’activer Office 365 activé ou désactivé](turn-audit-log-search-on-or-off.md)**. 
+ **[Activer ou désactiver la recherche dans le journal d'audit Office 365](turn-audit-log-search-on-or-off.md)**. 
   
-## <a name="step-3-go-to-the-office-365-cloud-app-security-portal"></a>Étape 3 : Accéder au portail Office 365 Cloud Application Security
+## <a name="step-3-go-to-the-office-365-cloud-app-security-portal"></a>Étape 3: accéder au portail de sécurité des applications Cloud Office 365
 
-Vous pouvez obtenir au portail Office 365 Cloud application sécurité en accédant à [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com) et l’ouverture de session. 
+Vous pouvez accéder au portail de sécurité des applications Cloud Office 365 en accédant à [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com) et en vous connectant. 
 
-Vous pouvez également y accéder à partir de la sécurité de 365 Office &amp; centre de conformité. Voici un excellent moyen de le faire :
+Vous pouvez également y accéder à partir du centre de &amp; sécurité conformité Office 365. Voici une excellente façon de procéder:
 
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connexion inch (Cela vous amène à la sécurité &amp; centre de conformité.)
+1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous. (vous accédez au centre de &amp; sécurité conformité.)
     
-2. Accédez à des **alertes** \> **Gestion avancée des alertes**.
+2. Accédez à **alertes** \> : **gérer les alertes avancées**.
     
-3. Cliquez sur **Aller à la sécurité d’application Office 365 dans le nuage** pour accéder au portail Office 365 Cloud Application Security.<br> ![Cliquez sur Gérer les alertes avancées pour accéder à la sécurité d’application dans le nuage Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br>Lorsque vous accédez au portail Office 365 Cloud Application Security, la première page que vous voyez est la page de stratégies, qui ressemble à l’image suivante :<br>![Lorsque vous accédez au portail Office 365 Cloud Application Security, vous démarrez avec la page de stratégies](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)<br>
+3. Sélectionnez **accéder à la sécurité des applications Cloud office 365** pour accéder au portail de sécurité Office 365 Cloud App.<br> ![Choisissez gérer les alertes avancées pour accéder à la sécurité des applications Cloud Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br>Lorsque vous accédez au portail de sécurité des applications Cloud Office 365, la première page que vous voyez est la page stratégies, qui ressemble à l'image suivante:<br>![Lorsque vous accédez au portail de sécurité des applications Cloud Office 365, vous commencez par la page stratégies.](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)<br>
   
-## <a name="step-4-define-policies-and-set-up-alerts-amp-actions"></a>Étape 4 : Définir des stratégies et définir des alertes &amp; actions
+## <a name="step-4-define-policies-and-set-up-alerts-amp-actions"></a>Étape 4: définir des stratégies et configurer des &amp; actions d'alerte
 
-Les administrateurs globaux et les administrateurs de sécurité définissent des stratégies de sécurité d’application Office 365 dans le nuage. Au cours du processus de définition de stratégies, alertes et des actions sont également définies. Une alerte est une notification basée sur les critères qui s’affiche dans une vue ou est envoyée par courrier électronique. 
+Les administrateurs généraux et les administrateurs de sécurité définissent des stratégies dans Office 365 Cloud App Security. Lors du processus de définition des stratégies, les alertes et les actions sont également définies. Une alerte est une notification basée sur des critères qui apparaît dans un affichage ou qui est envoyée par courrier électronique. 
   
-Il existe deux types d’alertes de sécurité d’application Office 365 dans le nuage : les alertes de détection des anomalies que détectent les activités suspectes et alertes d’activité, qui sont définies pour les activités qui peuvent être atypiques pour votre organisation. Les alertes avertissent les administrateurs globaux et les administrateurs de sécurité lorsqu’il existe une activité dans votre environnement Office 365 est inhabituelle pour votre organisation.
+Il existe deux types d'alertes dans Office 365 Cloud App Security: alertes de détection d'anomalies détectant les activités suspectes, ainsi que les alertes d'activité, qui sont définies pour les activités susceptibles d'être atypiques pour votre organisation. Les alertes informent les administrateurs généraux et les administrateurs de la sécurité lorsqu'une activité de votre environnement Office 365 est inhabituelle pour votre organisation.
   
-Voir les ressources suivantes pour en savoir plus :
+Pour en savoir plus, consultez les ressources suivantes:
   
 - [Stratégies d’activité et alertes pour Office 365 Cloud App Security](activity-policies-and-alerts.md)
     
 - [Stratégies de détection des anomalies dans la sécurité des applications cloud Office 365](anomaly-detection-policies-in-ocas.md)
     
-- [Passez en revue et effectuer une action sur les alertes de sécurité pour application Cloud Microsoft Office 365](review-office-365-cas-alerts.md)
+- [Examiner et effectuer des actions sur les alertes de sécurité d'application Cloud Office 365](review-office-365-cas-alerts.md)
     
-## <a name="step-5-learn-about-your-organizations-cloud-usage"></a>Étape 5 : En savoir plus sur l’utilisation du cloud de votre organisation
 
-En tant qu’un administrateur global, un administrateur de sécurité ou un lecteur de sécurité, vous pouvez découvrir l’utilisation du cloud de votre organisation par le biais de rapports et un tableau de bord de découverte dans le nuage (également appelée détection d’application de la productivité). Ce tableau de bord présente des informations sur les utilisateurs, les applications, le trafic web et des niveaux de risques.
+## <a name="step-5-set-up-conditional-access-app-control"></a>Étape 5: configurer le contrôle d'application d'accès conditionnel
+
+ConFigurez et appliquez des contrôles aux applications de votre organisation, en fonction de certaines conditions, par exemple les utilisateurs qui peuvent utiliser quelles applications, et où. Définir les stratégies d'accès et de session de l'utilisateur pour déterminer si des documents sensibles peuvent être téléchargés et chiffrés, bloquer l'accès à certaines applications, configurer le mode lecture seule pour certaines applications et restreindre les sessions des utilisateurs de réseaux non professionnels.
+
+Pour en savoir plus, consultez les ressources suivantes:
+
+- [Protéger les applications avec Office 365 Cloud App Security App contrôle d'application d'accès conditionnel](ocas-conditional-access-app-control.md)
+
+- [Déployer le contrôle d'application d'accès conditionnel pour les applications Office 365](ocas-deploy-conditional-access-app-control.md)
+
+## <a name="step-6-learn-about-your-organizations-cloud-usage"></a>Étape 6: en savoir plus sur l'utilisation du Cloud de votre organisation
+
+En tant qu'administrateur général, administrateur de sécurité ou lecteur de sécurité, vous pouvez en savoir plus sur l'utilisation du Cloud de votre organisation via des rapports et un tableau de bord de découverte dans le Cloud (également appelé découverte d'application de productivité). Ce tableau de bord affiche des informations sur les utilisateurs, les applications, le trafic Web et les niveaux de risque.
   
-![Dans le portail Office 365 autorités de certification, cliquez sur découvrir \> tableau de bord de découverte dans le nuage](media/61269290-fd82-4d4b-8045-aea1ebc82287.png)
+![Dans le portail Office 365 CAS, sélectionnez découvrir \> le tableau de bord de découverte Cloud](media/61269290-fd82-4d4b-8045-aea1ebc82287.png)
   
-Pour accéder au tableau de bord de détection d’application de la productivité, dans le portail Office 365 Cloud application sécurité, choisissez **découvrir** \> **tableau de bord de découverte dans le nuage**.
+pour accéder au tableau de bord de découverte de l'application de productivité, dans le portail de sécurité des applications cloud Office 365, sélectionnez **découvrir** \> le **tableau de bord de découverte cloud**.
   
-![Dans le portail Office 365 autorités de certification, cliquez sur découvrir](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)
+![Dans le portail Office 365 CAS, sélectionnez découvrir](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)
   
-Pour remplir des rapports avec les informations que nécessaires, télécharger vos fichiers journaux de pare-feu et des proxys de votre organisation. Pour plus d’informations, voir les ressources suivantes :
+Pour remplir des rapports avec les informations dont vous avez besoin, téléchargez vos fichiers journaux à partir des proxys et pare-feu de votre organisation. Pour en savoir plus, consultez les ressources suivantes:
   
-- [Créer des rapports de détection d’application dans Office 365 Cloud Application Security](create-app-discovery-reports-in-ocas.md)
+- [Créer des rapports de découverte d'application dans Office 365 Cloud App Security](create-app-discovery-reports-in-ocas.md)
     
 - [Passer en revue les détections d'applications dans la sécurité des applications cloud Office 365](review-app-discovery-findings-in-ocas.md)
     
-## <a name="step-6-manage-apps-that-your-organization-is-using-to-access-office-365"></a>Étape 6 : Gérer les applications à l’aide de votre organisation à access Office 365
+## <a name="step-7-manage-apps-that-your-organization-is-using-to-access-office-365"></a>Étape 7: gérer les applications que votre organisation utilise pour accéder à Office 365
 
-En tant qu’un administrateur global ou administrateur de sécurité, vous pouvez gérer les applications, telles que les applications personnalisées ou les applications de tiers, utilisant des personnes dans votre organisation sur leurs appareils avec Office 365. Par exemple, supposons que quelqu'un a téléchargé une application personnalisée à utiliser avec Office 365. Vous pouvez consulter les applications à l’aide de personnes, interdire les applications non fiables ou marquer les applications approuvées à vos besoins de suivi. [OAuth gérer les applications à l’aide de la sécurité d’application Office 365 dans le nuage](manage-app-permissions-in-ocas.md).
+En tant qu'administrateur général ou administrateur de sécurité, vous pouvez gérer des applications, telles que des applications personnalisées ou des applications tierces, que les personnes de votre organisation utilisent sur leurs appareils avec Office 365. Par exemple, supposons qu'une personne a téléchargé une application personnalisée qu'elle souhaite utiliser avec Office 365. Vous pouvez passer en revue les applications que les utilisateurs utilisent, interdire les applications non approuvées ou marquer les applications comme étant approuvées à des fins de suivi. [Gérer les applications OAuth à l'aide de la sécurité des applications Cloud Office 365](manage-app-permissions-in-ocas.md).
   
-## <a name="step-7-use-your-siem-server-with-office-365-cloud-app-security"></a>Étape 7 : Utiliser votre serveur SIEM avec Office 365 Cloud application sécurité
+## <a name="step-8-create-a-maintenance-plan"></a>Étape 8: créer un plan de maintenance
 
-Votre organisation utilise un serveur de gestion (SIEM) des informations et des événements de sécurité ? Office 365 Cloud application sécurité peut maintenant intégrer à votre serveur SIEM pour activer la surveillance centralisée des alertes. Intégration avec un service SIEM vous permet de mieux protéger vos applications en nuage lors de la maintenance de votre flux de travail habituelles de sécurité, l’automatisation des procédures de sécurité et corrélation entre en nuage et événements locale. L’agent SIEM s’exécute sur votre serveur extrait les alertes de sécurité d’application Office 365 dans le nuage et transmet les alertes dans votre serveur SIEM. Consultez [l’intégration avec Office 365 Cloud application sécurité SIEM](integrate-your-siem-server-with-office-365-cas.md).
+Une fois que vous avez configuré et configuré Office 365 Cloud App Security, vous pouvez effectuer certaines tâches d'utilisation en tant qu'administrateur général ou administrateur de sécurité Office 365 pour votre organisation. En effectuant ces tâches, vous vous assurerez que la sécurité des applications Cloud d'Office 365 est correctement configurée, que vos stratégies sont à jour, et que votre organisation réalise la valeur à partir d'Office 365. Utilisez cet article pour vous aider à planifier ces tâches. Consultez la rubrique [utilisation des activités après le déploiement de la sécurité des applications Cloud Office 365](utilization-activities-for-ocas.md).
+
+## <a name="optional-step-9-use-your-siem-server-with-office-365-cloud-app-security"></a>Module Étape 9: utiliser votre serveur SIEM avec la sécurité des applications Cloud Office 365
+
+Votre organisation utilise-t-elle un serveur de gestion des événements et des informations de sécurité (SIEM)? Office 365 Cloud App Security peut désormais s'intégrer à votre serveur SIEM pour permettre une surveillance centralisée des alertes. L'intégration à un service SIEM vous permet de mieux protéger vos applications Cloud tout en conservant votre flux de travail de sécurité habituel, en automatisant les procédures de sécurité et en corréler les événements sur site et en nuage. L'agent SIEM s'exécute sur votre serveur, extrait les alertes de la sécurité des applications Cloud Office 365 et diffuse ces alertes sur votre serveur SIEM. Voir [intégration Siem avec Office 365 Cloud App Security](integrate-your-siem-server-with-office-365-cas.md).
   
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Activer la sécurité des applications cloud Office 365](turn-on-office-365-cas.md)
     
-- Essayez notre [Guide de laboratoire de Test](https://docs.microsoft.com/office365/enterprise/cloud-app-security-for-your-office-365-dev-test-environment) pour une expérience pratique qui illustrent les puissantes fonctionnalités de sécurité d’application Office 365 dans le nuage et créer une preuve de concept. 
+- Essayez notre [Guide de laboratoire de test](https://docs.microsoft.com/office365/enterprise/cloud-app-security-for-your-office-365-dev-test-environment) pour une expérience pratique où vous pouvez présenter les fonctionnalités puissantes d'Office 365 Cloud App Security et créer une preuve de concept. 
     
 

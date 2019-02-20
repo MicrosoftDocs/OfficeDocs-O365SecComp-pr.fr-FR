@@ -1,5 +1,5 @@
 ---
-title: Stratégie de défense DoS de Microsoft Office 365
+title: Stratégie DoS de Microsoft Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -10,23 +10,25 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: Vue d’ensemble de la stratégie de défense de Microsoft pour traiter les attaques par déni de service (DoS).
-ms.openlocfilehash: f172db5080ef73402c7e9bc61720eb0f87e844ac
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: Vue d'ensemble de la stratégie de défense de Microsoft concernant la gestion des attaques par déni de service (DoS).
+ms.openlocfilehash: 0b0cf20e6282c85ede05edda3979ae5a7295ac78
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527505"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090816"
 ---
-# <a name="microsofts-denial-of-service-defense-strategy"></a>Stratégie de défense par déni de Service de Microsoft
+# <a name="microsofts-denial-of-service-defense-strategy"></a>Stratégie de défense contre les attaques par déni de service de Microsoft
 
-La stratégie de protection contre les attaques réseau par déni de service (DoS) de Microsoft est relativement unique en raison de notre à l’échelle et l’empreinte globale. Cette échelle permet à Microsoft d’utiliser des stratégies et techniques que peu d’organisations (fournisseurs ou aux entreprises) peut correspondre. La pièce maîtresse de notre stratégie DoS exploite notre présence globale. Microsoft s’engage avec Internet, homologation fournisseurs (public et privé) et privées sociétés du monde entier, faites-nous part de présence Internet significative (qui, à ce jour, double autour de tous les 18 mois). Cette présence grandes permet de Microsoft d’absorber les attaques entre une très grande surface d’exposition.
+La stratégie de Microsoft pour la défense contre les attaques par déni de service sur le réseau (DoS) est quelque peu unique en raison de notre échelle et de votre empreinte internationale. Cette mise à l'ampleur permet à Microsoft d'utiliser des stratégies et des techniques que peu d'organisations (fournisseurs ou organisations client) peuvent faire correspondre. La pierre angulaire de notre stratégie DoS consiste à tirer parti de notre présence internationale. Microsoft s'engage à utiliser des fournisseurs Internet, des fournisseurs de pairs (publics et privés) et des sociétés privées dans le monde entier, ce qui nous donne une présence importante sur Internet (ce qui est le cas pour tous les 18 mois). Le fait de disposer d'une présence de grande taille permet à Microsoft d'absorber les attaques sur une très grande surface.
 
-Étant donné notre nature unique, Microsoft utilise des processus de détection et l’atténuation qui diffèrent de ceux utilisés par les grandes entreprises. Notre stratégie est basé sur une séparation de détection et atténuation, ainsi que d’atténuation internationale par le biais de nos nombreux bords. De nombreuses entreprises utilisent des solutions tierces qui détectent et atténuer les attaques sur le bord. Comme notre capacité edge est devenu, il est apparu que l’importance d’une attaque sur les bords individuels ou particuliers a été très faible. En raison de notre configuration unique, nous avons séparés par les composants de détection et l’atténuation. Nous avons déployé détection multiniveau qui permet de détecter les attaques de plus près à leur point de saturation tout en conservant atténuation globale sur le bord. Cette stratégie garantit que nous pouvons gérer plusieurs attaques simultanées.
+Étant donné notre nature unique, Microsoft utilise des processus de détection et de minimisation qui diffèrent de ceux utilisés par les grandes entreprises. Notre stratégie est basée sur une séparation de la détection et de l'atténuation, ainsi qu'une atténuation globale distribuée par le biais de notre grand nombre d'entre elles. De nombreuses entreprises utilisent des solutions tierces qui détectent et atténuent les attaques sur le serveur Edge. À mesure que notre capacité de périmètre a augmenté, il est devenu évident que l'importance de toute attaque contre des contours individuels ou spécifiques était très faible. En raison de notre configuration unique, nous avons séparé les composants de détection et de minimisation. Nous avons déployé la détection à plusieurs niveaux qui nous permet de détecter les attaques plus près de leurs points de saturation tout en conservant une atténuation globale au niveau du périmètre. Cette stratégie garantit que nous pouvons gérer plusieurs attaques simultanées.
 
-Parmi les défenses plus efficaces et économique employés par Microsoft contre les attaques de déni de service consiste à réduire la surface d’attaque. Cela permet de supprimer le trafic indésirable sur le bord, au lieu d’analyse, de traitement et de nettoyage des données inline.
+L'une des défenses les plus efficaces et les plus coûteuses employées par Microsoft contre les attaques DoS consiste à réduire notre surface d'attaque. Cela nous permettra de supprimer le trafic indésirable sur le serveur Edge, par opposition à l'analyse, le traitement et le nettoyage des données incorporées.
 
-Dans l’interface avec le réseau public, Microsoft utilise les dispositifs de sécurité spéciaux pour le pare-feu, traduction d’adresses réseau et les fonctions de filtrage IP. Nous utilisons également le routage global égal Coût multi-path (ECMP). Le routage ECMP globale est une infrastructure de réseau garantissant qu’il existe plusieurs chemins d’accès globales pour atteindre un service. Grâce à ces plusieurs chemins d’accès, une attaque contre le service doit être limitée à la région d'où provient l’attaque – autres régions doivent être affectées par cette attaque, comme les utilisateurs finaux utiliseriez autres chemins d’accès pour atteindre le service dans les régions. Nous avons également développé notre propre DoS corrélation et la détection de système interne qui utilise des données du flux, les mesures de performances et d’autres informations. Il s’agit d’un service en nuage hyperscale s’exécutant dans Microsoft Azure qui analyse les données collectées à partir de différents points sur les réseaux Microsoft et des services. Une équipe de réponse aux incidents de charges de travail DoS identifie les rôles et responsabilités entre les équipes, les critères d’escalade et les protocoles pour engager des différentes équipes et pour la gestion des incidents. Ces solutions permettent la protection du réseau contre les attaques de déni de service.
+Au niveau de l'interface avec le réseau public, Microsoft utilise des périphériques de sécurité à usage spécial pour le pare-feu, la traduction d'adresses réseau et les fonctions de filtrage IP. Nous utilisons également le routage de chemins d'accès multiples (ECMP) à coût égal global. Le routage ECMP global est une infrastructure réseau qui garantit qu'il existe plusieurs chemins globaux pour atteindre un service. Grâce à ces chemins multiples, une attaque contre le service doit être limitée à la région d'où provient l'attaque: d'autres régions ne doivent pas être affectées par cette attaque, car les utilisateurs finaux utiliseront d'autres chemins pour atteindre le service dans ces régions. Nous avons également développé notre propre système de corrélation et de détection de DoS interne qui utilise des données de flux, des mesures de performances et d'autres informations. Il s'agit d'un service Cloud de l'échelle hyperdimension exécuté dans Microsoft Azure qui analyse les données collectées à partir de différents points sur les réseaux et les services Microsoft. Une équipe de réponse aux incidents DoS entre plusieurs charges de travail identifie les rôles et les responsabilités entre les équipes, les critères de remontée des problèmes, ainsi que les protocoles permettant d'engager diverses équipes et de gérer les incidents. Ces solutions fournissent une protection réseau contre les attaques DoS.
 
-Enfin, des charges de travail basées sur le nuage sont configurées avec les seuils optimisées en fonction de leur protocole et l’utilisation de la bande passante doit protéger de manière unique cette charge de travail.
+Enfin, les charges de travail basées sur le Cloud sont configurées avec des seuils optimisés en fonction de leur protocole et de l'utilisation de la bande passante pour protéger de manière unique cette charge de travail.

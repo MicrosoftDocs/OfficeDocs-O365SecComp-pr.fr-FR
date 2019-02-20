@@ -1,5 +1,5 @@
 ---
-title: Office 365 surveillance et l’audit des contrôles d’accès
+title: Office 365 surveillance et audit des contrôles d'accès
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -10,24 +10,26 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: 'Résumé : Un résumé des différents surveillance et audit contrôles d’accès disponibles dans Office 365.'
-ms.openlocfilehash: 7ef25d62ce3c4fa320dd0b164183c6f67be7d76d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: "Résumé: Résumé des différents contrôles d'accès au contrôle et à l'audit disponibles dans Office 365."
+ms.openlocfilehash: 7a7023f61a72bd1368bb25754b33e40581a403b9
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528622"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090906"
 ---
-# <a name="monitoring-and-auditing-access-controls-in-office-365"></a>Surveillance et l’audit des contrôles d’accès dans Office 365
+# <a name="monitoring-and-auditing-access-controls-in-office-365"></a>Surveillance et audit des contrôles d'accès dans Office 365
 
-Microsoft effectue des étendues de surveillance et d’audit de toutes les opérations qui se produisent dans Office 365, l’utilisation de privilèges et la délégation tous les. Contrôle d’accès 365 Office est un processus automatisé reposant sur le principe des privilèges minimum et à intégrer les données des contrôles d’accès et des audits :
-- Tous les accès autorisés sont conforme à un utilisateur unique, pour les administrateurs responsables de leur traitement de contenu de client.
-- Demandes de contrôle d’accès, les approbations et les journaux d’opérations d’administration sont capturés pour l’analyse des perspectives sur la sécurité et les événements malveillants.
-- Niveaux d’accès sont examinées dans près de l’appartenance au groupe de sécurité en fonction d’en temps réel pour garantir que seuls les utilisateurs qui ont autorisé justification métier et de réunir les conditions préalables ont accès aux systèmes.
-- Office 365, ses contrôles d’accès et les services de prise en charge, y compris Azure Active Directory et nos centres de données physique, sont régulièrement audités par des tiers indépendants pour se conformer à la [spécification ISO/IEC 27001](https://www.microsoft.com/en-us/TrustCenter/Compliance/iso-iec-27001), [ISO/IEC 27018](https://www.microsoft.com/en-us/TrustCenter/Compliance/iso-iec-27018), [sociale](https://www.microsoft.com/en-us/TrustCenter/Compliance/SOC), [FedRAMP](https://www.microsoft.com/en-us/TrustCenter/Compliance/FedRAMP)et autres [normes](https://www.microsoft.com/en-us/TrustCenter/Compliance?service=Office#Icons).
-- Ingénieurs d’Office 365 sont nécessaires pour prendre annuel formation sécurité examen des risques et des méthodes conseillées avec élévation de privilèges d’accès et confirmer la sécurité et les stratégies de confidentialité pour continuer à gérer leurs droits d’accès au service de Microsoft.
+Microsoft effectue une surveillance et un audit détaillés de toutes les délégations, de toutes les opérations de privilèges et de toutes les opérations qui se produisent dans Office 365. Le contrôle d'accès Office 365 est un processus automatisé basé sur le principe des privilèges minimum et pour incorporer les contrôles d'accès aux données et les audits:
+- Tous les accès autorisés sont traçables vers un utilisateur unique, ce qui rend les administrateurs responsables de la gestion du contenu du client.
+- Les demandes de contrôle d'accès, les approbations et les journaux des opérations d'administration sont capturés pour analyser les informations de sécurité et les événements malveillants.
+- Les niveaux d'accès sont examinés en quasi-temps réel en fonction de l'appartenance au groupe de sécurité afin de s'assurer que seuls les utilisateurs qui ont autorisé les justifications professionnelles et satisfont aux exigences d'éligibilité ont accès aux systèmes.
+- Office 365, ses contrôles d'accès et ses services de prise en charge, y compris Azure Active Directory et nos centres de documents physiques, sont régulièrement contrôlés par des tiers indépendants pour la conformité à la [norme ISO/iec 27001](https://www.microsoft.com/en-us/TrustCenter/Compliance/iso-iec-27001), [iso/IEC 27018](https://www.microsoft.com/en-us/TrustCenter/Compliance/iso-iec-27018), [SOC](https://www.microsoft.com/en-us/TrustCenter/Compliance/SOC), [FedRAMP](https://www.microsoft.com/en-us/TrustCenter/Compliance/FedRAMP), ainsi que d'autres [normes](https://www.microsoft.com/en-us/TrustCenter/Compliance?service=Office#Icons).
+- Les ingénieurs Office 365 sont tenus de prendre des mesures de sécurité annuelles afin de vérifier les meilleures pratiques et les risques d'accès élevés et de faire en sorte que les stratégies de sécurité et de confidentialité de Microsoft continuent de maintenir leurs habilitations pour le service.
 
-Alertes automatiques sont déclenchées lorsqu’une activité suspecte est détectée, tels que plusieurs échecs de connexion au sein d’une courte période. L’équipe de réponse de sécurité Office 365 utilise apprentissage automatique et l’analyse des données big passer en revue et analyser l’activité des modèles d’accès irrégulier et répondre aux activités anormales et illicites de manière proactive. Microsoft utilise une équipe de testeurs d’intrusion spécialisés et effectue des équipes rouge périodiques et bleu exercices pour trouver la sécurité et d’accéder aux problèmes de contrôle dans le service. Les clients peuvent également vérifier l’efficacité des systèmes de contrôle d’accès à l’aide de rapports d’audit et l’activité de gestion des API fournie par Office 365. 
+Les alertes automatisées sont déclenchées lorsqu'une activité suspecte est détectée, par exemple, plusieurs échecs de connexion au cours d'une courte période. L'équipe de sécurité de la sécurité d'Office 365 utilise l'apprentissage automatique et l'analyse des données volumineuses pour examiner et analyser l'activité des modèles d'accès irréguliers et répondre de manière proactive aux activités anormales et illicites. Microsoft utilise également une équipe dédiée de testeurs de pénétration et s'engage dans les exercices de l'équipe rouge périodique et de l'équipe bleue pour rechercher les problèmes de sécurité et de contrôle d'accès dans le service. Les clients peuvent également vérifier l'efficacité des systèmes de contrôle d'accès à l'aide de rapports d'audit et de l'API activité de gestion fournies par Office 365. 
 
-Pour plus d’informations, voir [référence de l’API d’activité Office 365 gestion](https://msdn.microsoft.com/en-us/library/office/mt227394.aspx) et [l’audit et la création de rapports dans Office 365](office-365-auditing-and-reporting-overview.md).
+Pour plus d'informations, voir référence de l' [API activité de gestion office 365](https://msdn.microsoft.com/en-us/library/office/mt227394.aspx) et [audit et création de rapports dans Office 365](office-365-auditing-and-reporting-overview.md).

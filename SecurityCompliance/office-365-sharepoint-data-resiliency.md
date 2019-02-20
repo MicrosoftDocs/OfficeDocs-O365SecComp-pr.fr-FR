@@ -1,5 +1,5 @@
 ---
-title: Résistance des données SharePoint Office 365
+title: RéSilience de données SharePoint Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -10,22 +10,24 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: Vue d’ensemble de la résistance des données dans SharePoint Online dans Office 365.
-ms.openlocfilehash: ba6259e8e582a4abcf0f184b162177119a57718f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: Vue d'ensemble de la résilience des données dans SharePoint Online dans Office 365.
+ms.openlocfilehash: c550cb6572cb71b53cd544af64339129f72b888f
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528103"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090886"
 ---
-# <a name="sharepoint-online-data-resiliency"></a>Résistance des données en ligne SharePoint
-Un principe clé de SharePoint Online est de ne jamais avoir une seule copie de tout élément de données. SharePoint Online utilise la réplication de SQL Server, qui est un ensemble de technologies pour copier et distribuer des objets de données et la base de données à partir d’une base de données vers un autre et ensuite une synchronisation entre les bases de données pour assurer la cohérence. 
+# <a name="sharepoint-online-data-resiliency"></a>RéSilience des données SharePoint Online
+Un principe clé pour SharePoint Online consiste à ne jamais avoir une seule copie de tout élément de données. SharePoint Online utilise la réplication SQL Server, qui est un ensemble de technologies permettant de copier et de distribuer des données et des objets de base de données d'une base de données à une autre, puis de synchroniser les bases de données pour assurer la cohérence. 
 
-Par exemple, lorsqu’un utilisateur enregistre un fichier dans SharePoint Online, le fichier est mémorisé chiffré et stocké dans le stockage Blob Azure. Service d’objet Blob Azure fournit des mécanismes pour garantir l’intégrité des données à la fois au niveau des couches application et de transport. Cet article décrit en détail ces mécanismes du point de vue client et le service. Vérification MD5 est facultatif pour les opérations PUT et GET ; Toutefois, il fournit un procédé pratique pour garantir l’intégrité des données sur le réseau à l’aide de HTTP. En outre, étant donné que le protocole HTTPS assure le transport layer security supplémentaires MD5 de vérification n’est pas nécessaire lorsque vous vous connectez via HTTPS comme il le serait redondant. Service d’objet Blob Azure fournit un support de stockage durable et utilise sa propre vérifier l’intégrité des données stockées. Le MD5 qui sont utilisés lors de l’interaction avec une application sont fournies pour vérifier l’intégrité des données lors du transfert de données entre l’application et le service via HTTP. 
+Par exemple, lorsqu'un utilisateur enregistre un fichier dans SharePoint Online, le fichier est segmenté, chiffré et stocké dans Azure BLOB Storage. Le service BLOB Azure fournit des mécanismes pour garantir l'intégrité des données à la fois au niveau de l'application et de la couche de transport. Ce billet détaille ces mécanismes du point de vue du client et du service. La vérification MD5 est facultative sur les opérations PUT et GET; Toutefois, il fournit une fonctionnalité pratique pour garantir l'intégrité des données sur le réseau lors de l'utilisation du protocole HTTP. De plus, étant donné que le protocole HTTPs assure la sécurité de la couche de transport, la vérification MD5 supplémentaire n'est pas nécessaire lors de la connexion via HTTPs, car elle serait redondante. Le service BLOB Azure fournit un support de stockage durable et utilise sa propre vérification de l'intégrité pour les données stockées. Les MD5's utilisées lors de l'interaction avec une application sont fournies pour vérifier l'intégrité des données lors du transfert de ces données entre l'application et le service via HTTP. 
 
-Pour garantir l’intégrité des données de l’objet Blob Azure service utilise les hachages MD5 des données de deux manières différentes. Il est important de comprendre comment ces valeurs sont calculées, transmises, stockées et éventuellement appliqués pour concevoir votre application à utiliser pour l’intégrité des données de manière appropriée. Pour plus d’informations, voir [Vue d’ensemble de Windows Azure Blob MD5](http://blogs.msdn.com/b/windowsazurestorage/archive/2011/02/18/windows-azure-blob-md5-overview.aspx). 
+Pour garantir l'intégrité des données, le service d'objets BLOB Azure utilise des hachages MD5 des données de différentes manières. Il est important de comprendre comment ces valeurs sont calculées, transmises, stockées et éventuellement appliquées pour concevoir votre application de manière appropriée afin de les utiliser pour assurer l'intégrité des données. Pour plus d'informations, consultez la rubrique [Windows Azure BLOB MD5 Overview](http://blogs.msdn.com/b/windowsazurestorage/archive/2011/02/18/windows-azure-blob-md5-overview.aspx). 
 
-Métadonnées et des pointeurs vers le fichier sont stockés dans une base de données SQL Server (la base de données). Tous les segments – fichiers, fichiers et mise à jour delta – sont stockées en tant qu’objets BLOB dans le stockage Azure répartis de manière aléatoire entre plusieurs comptes de stockage Azure. La base de données SQL est hébergé sur une baie RAID 10 est en miroir synchrone à une autre baie de stockage RAID 10 en rack distinct dans le même centre de données. Envoi de journaux asynchrone est ensuite utilisée pour répliquer les données vers une autre baie de stockage RAID 10 dans un deuxième centre de données. En plus de la protection des données avec RAID 10 et réplication synchrone et asynchrone, sauvegardes planifiée des données sont extraites qui sont répliqué également de manière asynchrone pour le deuxième centre de données. 
+Les métadonnées et les pointeurs vers le fichier sont stockés dans une base de données SQL Server (la base de données de contenu). Tous les blocs (fichiers, fragments de fichiers et deltas de mise à jour) sont stockés en tant qu'objets BLOB dans le stockage Azure qui sont répartis de manière aléatoire entre plusieurs comptes de stockage Azure. La base de données SQL est hébergée sur une baie de stockage RAID 10 qui est mise en miroir de façon synchrone vers une autre baie de stockage RAID 10 dans un rack distinct au sein du même centre de données. La copie de journal asynchrone est ensuite utilisée pour répliquer les données vers une autre baie de stockage RAID 10 dans un deuxième centre de données. En plus de protéger les données avec RAID 10 et la réplication synchrone et asynchrone, des sauvegardes de données planifiées sont exécutées de manière asynchrone sur le deuxième centre de données. 
 
-Dans SharePoint Online, les sauvegardes de données sont effectuées toutes les 12 heures et conservés pendant 14 jours. SharePoint Online utilise également un système de secours à chaud qui inclut des centres de données géographiquement distincts associés au sein du même client emplacement région de données (par exemple, Chicago et San Antonio pour les clients qui ont mis en service leur client aux États-Unis) configuré comme actif/actif. Par exemple, il existe des utilisateurs live dont Chicago centre de données principal et San Antonio comme un centre de données de basculement et les utilisateurs qui ont San Antonio, ainsi que leur centre de données principal Chicago en tant que leurs centres de données de basculement live. 
+Dans SharePoint Online, les sauvegardes de données sont effectuées toutes les 12 heures et conservées pendant 14 jours. SharePoint Online utilise également un système de secours à chaud qui inclut des centres de données répartis géographiquement distincts au sein de la même région d'emplacement des données client (par exemple, Chicago et San Antonio pour les clients qui ont configuré leur client aux États-Unis). configuré comme actif/actif. Par exemple, il existe des utilisateurs en ligne qui ont Chicago comme Datacenter principal et San Antonio comme centre de ligne de basculement, et des utilisateurs Live qui ont San Antonio comme centre de contenu principal et Chicago comme centre de production de basculement. 

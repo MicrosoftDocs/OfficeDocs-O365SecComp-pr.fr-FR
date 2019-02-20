@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) est un service de filtrage du courrier électronique dans le nuage, qui contribue à protéger votre organisation contre le courrier indésirable et les logiciels malveillants, ainsi que contre les violations de politique de messagerie.
-ms.openlocfilehash: 16f2f423b6e517cf204e4b4f6a2949baebfd6223
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: baba6b56034ec5c3f2af1c291a7f8b5100f0f092
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29686363"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087343"
 ---
 # <a name="exchange-online-protection-overview"></a>Vue d'ensemble d'Exchange Online Protection
 
@@ -24,7 +24,7 @@ Microsoft Exchange Online Protection (EOP) est un service de filtrage du courrie
   
 Les principales manières d'utiliser EOP pour protéger la messagerie sont les suivantes :
   
-- **Dans un scénario autonome** EOP offre une protection de messagerie en nuage pour votre environnement Microsoft Exchange Server 2013 sur site, versions héritées d’Exchange Server, ou pour n’importe quel autre local solution de messagerie SMTP. 
+- **Dans un scénario autonome** EOP fournit une protection de messagerie en nuage pour votre environnement Microsoft Exchange Server 2013 local, les versions d'Exchange Server héritées ou pour toute autre solution de messagerie SMTP locale. 
     
 - **Dans le cadre d'une installation Microsoft Exchange Online** Par défaut, EOP protège les boîtes aux lettres Microsoft Exchange Online hébergées dans le nuage. 
     
@@ -34,9 +34,9 @@ Les principales manières d'utiliser EOP pour protéger la messagerie sont les s
 
 Pour comprendre le fonctionnement d'EOP, il est utile devoir comment le courrier entrant est traité :
   
-![Traitement de messagerie EOP](../media/EOP-email-processing.png)
+![EOP-traitement du courrier électronique](../media/EOP-email-processing.png)
   
-Un message entrant à l’origine traverse le filtrage des connexions, qui vérifie la réputation de l’expéditeur et examine le message pour les logiciels malveillants. La majorité du courrier indésirable est arrêtée à ce stade et supprimée par EOP. Continuent de messages par le biais de filtrage de stratégie, où les messages sont évaluées par rapport aux règles de transport personnalisé que vous créez ou appliquer à partir d’un modèle. Par exemple, vous pouvez avoir une règle qui envoie une notification à un responsable de l’arrivée de messagerie d’un expéditeur spécifique. (Contrôles de protection contre la perte de données également se produisent à ce stade, si vous disposez des fonctionnalités ; pour plus d’informations sur la disponibilité des fonctionnalités, voir la [Description du Service Exchange Online Protection](https://go.microsoft.com/fwlink/p/?LinkId=320619).) Ensuite, messages passent par le filtrage du contenu, où le contenu est activé pour la terminologie ou propriétés communes de courrier indésirable. Un message déterminé le courrier indésirable par le filtre de contenu peut être envoyé vers le dossier de courrier indésirable d’un utilisateur ou à la mise en quarantaine, entre autres options, en fonction de vos paramètres. Une fois un message est un succès de ces différentes couches de protection, il est remis au destinataire.
+Un message entrant passe initialement par le filtrage des connexions, qui vérifie la réputation de l'expéditeur et inspecte le message pour les programmes malveillants. La majorité du courrier indésirable est arrêtée à ce stade et supprimée par EOP. Les messages continuent via le filtrage des stratégies, où les messages sont évalués par rapport aux règles de transport personnalisées que vous créez ou appliquez à partir d'un modèle. Par exemple, vous pouvez avoir une règle qui envoie une notification à un responsable lorsque le courrier électronique est envoyé par un expéditeur spécifique. (Les vérifications de la protection contre la perte de données se produisent également à ce stade, si vous disposez de cette fonctionnalité; pour plus d'informations sur la disponibilité des fonctionnalités, consultez la rubrique [Description du service de protection Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=320619).) Ensuite, les messages passent par le filtrage du contenu, où le contenu est vérifié pour la terminologie ou les propriétés communes au courrier indésirable. Un message déterminé comme étant du courrier indésirable par le filtre de contenu peut être envoyé dans le dossier de courrier inDésirable d'un utilisateur ou en quarantaine, entre autres options, en fonction de vos paramètres. Une fois qu'un message a réussi à transmettre tous ces calques de protection, il est remis au destinataire.
   
 ### <a name="eop-datacenters"></a>Centres de données EOP
 
@@ -47,13 +47,13 @@ EOP effectue l'équilibrage de charge entre les centres de données, mais unique
     
 - En Europe, au Moyen-Orient et en Afrique (région EMEA), toutes les boîtes aux lettres Exchange Online sont situées dans des centres de données EMEA et tous les messages sont routés via des centres de données EMEA pour le filtrage EOP.
     
-- Dans Asie-Pacifique (centre de données), toutes les boîtes aux lettres Exchange Online sont trouvent dans des centres de données APAC, mais les messages sont acheminés actuellement par le biais de centres de données APAC pour le filtrage EOP.
-=======
-- En Amérique, toutes les boîtes aux lettres Exchange Online se trouvent dans des centres de données américain, à l’exception de l’Amérique du Sud où les centres de données au Brésil et Chili sont utilisés et au Canada, où les centres de données au Canada sont utilisés. Tous les messages électroniques, y compris les messages pour les clients en Amérique du Sud et au Canada, sont acheminés via des centres de données local pour le filtrage EOP ; courrier électronique placés en quarantaine est stocké dans le centre de données où se trouve le client.
+- Dans la région Asie Pacifique (APAC), toutes les boîtes aux lettres Exchange Online sont situées dans des centres de contenu APAC, mais les messages sont actuellement routés via des centres de contenu APAC pour le filtrage EOP.
+
+- Dans l'Amérique, toutes les boîtes aux lettres Exchange Online sont situées dans les centres de l'Europe, à l'exception de l'Amérique du Sud où sont utilisées les centres de contenu au Brésil et au Chili et au Canada, où sont utilisées les centres de contenu au Canada. Tous les messages électroniques, y compris les messages destinés aux clients en Amérique du Sud et au Canada, sont acheminés via des centres de centres locaux pour le filtrage EOP; quaratined le courrier électronique est stocké dans le centre de contenu où se trouve le client.
     
 - En Europe, au Moyen-Orient et en Afrique (région EMEA), toutes les boîtes aux lettres Exchange Online sont situées dans des centres de données EMEA et tous les messages sont routés via des centres de données EMEA pour le filtrage EOP.
     
-- Dans Asie-Pacifique (centre de données), toutes les boîtes aux lettres Exchange Online sont trouvent dans des centres de données APAC et messages sont actuellement acheminés via APAC des centres de données pour le filtrage EOP.
+- Dans la région Asie Pacifique (APAC), toutes les boîtes aux lettres Exchange Online sont situées dans des centres de contenu APAC, et les messages sont actuellement routés via des centres de contenu APAC pour le filtrage EOP.
     
 - En ce qui concerne le nuage communautaire propre aux gouvernements (CCG), toutes les boîtes aux lettres Exchange Online sont situées dans des centres de données américains et tous les messages sont routés via ces centres de données pour le filtrage EOP.
     

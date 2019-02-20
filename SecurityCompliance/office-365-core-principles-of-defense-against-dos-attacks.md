@@ -1,5 +1,5 @@
 ---
-title: Principes de base d’Office 365 de défense contre les attaques par déni de Service
+title: Principes de base de la protection Office 365 contre les attaques par déni de service
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -9,33 +9,35 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: Comment Microsoft utilise les principes fondamentaux d’absorber, la détection et atténuation dans sa défense contre les attaques de déni de service (DoS).
-ms.openlocfilehash: e313d5514e9bc493db78bebffca24a0fae4cbca7
-ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: Utilisation des principes de base de l'absorption, de la détection et de l'atténuation dans sa défense contre les attaques par déni de service (DoS).
+ms.openlocfilehash: 17dc583258cdb4781dbe2a715e1ce153ee769ed3
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29741097"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30091006"
 ---
 # <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>Principes fondamentaux de défense contre les attaques par déni de service
 
-Les trois principaux principes lors de la défense contre les attaques de déni de service sur le réseau est absorber, la détection et atténuation. Absorber se produit avant la détection et détection se produit avant l’atténuation. Absorber est la meilleure défense attaques de déni de service. Si l’attaque ne peut pas être détectée, il ne peut pas être atténué. Mais si même la plus petite attaques DOS ne peut pas être pris en charge, puis services ne sont pas survivre suffisamment longtemps pour que l’attaque être détecté.
+Les trois principes fondamentaux de la défense contre les attaques DoS sur le réseau sont l'absorption, la détection et l'atténuation. L'absorption se produit avant la détection et la détection a lieu avant l'atténuation. L'absorption est la meilleure défense contre les attaques DoS. Si l'attaque ne peut pas être détectée, elle ne peut pas être atténuée. Toutefois, si même la plus petite attaque de refus de service ne peut pas être absorbée, les services ne seront pas en mesure de survivre suffisamment longtemps pour que l'attaque soit détectée.
 
-Bien sûr, il n’est généralement pas rentables pour la plupart des organisations d’acquérir la capacité supplémentaire nécessaire pour absorber les attaques par déni de service, comme cela nécessite un investissement considérable dans les technologies et techniques. Cela met en évidence l’avantage de la sécurité de l’utilisation des services de cloud Microsoft. l’échelle de réception de nos services permet de nous permettent de protection réseau fort à nos clients de cloud de manière rentable. Mais même à notre à l’échelle, cependant, il doit toujours exister un équilibre entre absorber, la détection et atténuation. Pour que l’équilibre, nous étudier les taux de croissance d’une attaque pour évaluer combien il nous faut absorber.
+Bien évidemment, il n'est généralement pas raisonnable de faire en sorte que la plupart des organisations achètent les capacités excédentaires nécessaires pour absorber les attaques par déni de service, car cela nécessite un investissement considérable en matière de technologies et de compétences techniques. Cela met en évidence l'un des avantages en matière de sécurité liés à l'utilisation des services de Cloud Computing Microsoft; la grande ampleur de nos services nous permet de fournir une protection réseau solide à nos clients Cloud de façon rentable. Toutefois, même à notre montée en taille, il doit encore y avoir un équilibre entre l'absorption, la détection et l'atténuation. Pour trouver cet équilibre, nous évaluons le taux de croissance d'une attaque afin d'estimer le montant à absorber.
 
-Détection est un véritable jeu. Vous devez rechercher en permanence pour les nouveaux modes sont vous attaquer ou essaient de contrer vos systèmes. Détecter - > atténuer - > détecter - > atténuer, etc., est un état définitive, persistent continuera indéfiniment.
+La détection est un jeu de chat et de souris. Vous devez constamment Rechercher les nouvelles façons dont les personnes s'attaquent ou tentent de contrer vos systèmes. Detect-> mitigation-> Detect-> minimisation, etc., est un État perpétuel, persistant, qui se poursuivra indéfiniment.
 
-## <a name="defending-against-dos-attacks"></a>Défense contre les attaques de déni de service
+## <a name="defending-against-dos-attacks"></a>Défense contre les attaques DoS
 
-Pour protéger correctement une attaque par déni de service, au plus tôt détection est essentielle. En détectant les attaques avant que le système est surchargé, défenses peuvent exécuter un plan d’action.
+Pour être en mesure de vous défendre contre une attaque DoS, la détection précoce est essentielle. En détectant une attaque avant que le système ne soit submergé, les défenseurs peuvent exécuter un plan de réponse.
 
-La formule suivante vous aidera à élever à la durée de l’impact d’une attaque par déni de service :
+La formule suivante vous aidera à évaluer approximativement le temps nécessaire à l'impact d'une attaque DoS:
 
-   **Capacité maximale (en octets/s) / taux de croissance (en octets/s) = durée Impact (en octets/s)**
+   **Capacité maximale (en octets/s)/taux de croissance (en octets/s) = temps d'impact (en octets/s)**
 
-Si l’heure détection se produit après l’heure-impact, il est probable que l’attaque par déni de service sera réussi. Si l’heure détection se produit avant l’impact de l’heure, les services attaques doivent rester en ligne et accessible, si les stratégies d’atténuation sont utilisées. Par conséquent, il existe seulement deux choses qui peuvent être effectuées pour la défense contre les attaques de déni de service :
-- Augmenter la capacité pour augmenter la limite de capacité maximale (qui à son tour fournit davantage de temps pour détecter une attaque) ; ou
-- Réduire le temps de détecter.
+Si le délai de détection a lieu après l'impact, il est probable que l'attaque de refus de service se produise. Si le délai de détection a lieu avant l'impact, les services en cours d'attaque doivent rester en ligne et accessibles, si des stratégies de minimisation sont utilisées. Ainsi, il y a deux choses à faire pour vous défendre contre les attaques de refus de déni de compte:
+- Augmentation de la capacité pour augmenter le plafond de la capacité maximale (qui, à son tour, offre plus de temps pour détecter une attaque); des
+- Réduisez le temps de détection.
 
-Augmentation de la capacité a un impact direct fiscal. Microsoft recommande que les clients développent au moins base absorber la capacité, pour s’assurer qu’ils peuvent résister à un niveau de l’attaque par déni de service. La capacité d’absorber réel varie client, que chaque client a son propre seuils d’exposition, les risques et financier. Enfin, pour des raisons économiques, investissements en matière de recherche et l’heure de manière à réduire la détection de l’heure sont généralement la défense plus rentable.
+Une augmentation de la capacité a un impact fiscal direct. Microsoft recommande aux clients de développer au moins une capacité d'absorption de base pour s'assurer qu'ils peuvent survivre à un certain niveau d'attaques DoS. La capacité d'absorption réelle varie selon le client et le client, car chaque client a ses propres seuils d'exposition, de risque et de dépenses financières. Enfin, pour des raisons économiques, les investissements en matière de recherche et de temps pour réduire le temps de détection sont généralement la défense la plus économique.

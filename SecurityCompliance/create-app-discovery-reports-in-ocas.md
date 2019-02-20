@@ -12,56 +12,54 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3e68e691-1fc4-4d3e-a2c0-d3134eb64055
-description: Créer des rapports avec Office 365 Cloud App de sécurité qui vous permettent de comprendre comment les personnes dans votre organisation utilisent Office 365 et autres applications.
-ms.openlocfilehash: 543a194ec9d441a4feea97b8ad49022094565d7a
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Créer des rapports avec la sécurité des applications Cloud Office 365 qui vous permettent de comprendre comment les personnes de votre organisation utilisent Office 365 et d'autres applications.
+ms.openlocfilehash: e0d515ddd9b08aa4a70276177060f273cc89949e
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603715"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087293"
 ---
 # <a name="create-app-discovery-reports-using-office-365-cloud-app-security"></a>Créer des rapports de découverte d’application à l’aide de la sécurité des applications cloud Office 365
 
-Gestion de la sécurité Office 365 avancée est désormais sécurité d’application Office 365 dans le nuage.
-  
-|Évaluation **\>**|Planification **\>**|Déploiement **\>**|Utilisation du ***|
+|Évaluation * *\>**|Planification * *\>**|Déploiement * *\>**|Utilisation * * * *|
 |:-----|:-----|:-----|:-----|
-|[Commencer à évaluer](office-365-cas-overview.md) <br/> |[Commencer à planifier](get-ready-for-office-365-cas.md) <br/> |[Commencer à déployer](turn-on-office-365-cas.md) <br/> |Vous êtes ici !  <br/> [Étapes suivantes](#next-steps) <br/> |
+|[Commencer l'évaluation](office-365-cas-overview.md) <br/> |[Commencer la planification](get-ready-for-office-365-cas.md) <br/> |[Démarrer le déploiement](turn-on-office-365-cas.md) <br/> |Vous êtes là!  <br/> [Étapes suivantes](#next-steps) <br/> |
    
-Sécurité d’application Office 365 nuage permet les administrateurs globaux, les administrateurs de sécurité et les lecteurs de sécurité Familiarisez-vous avec les services en nuage à l’aide de personnes dans une organisation. Par exemple, vous pouvez voir où les utilisateurs sont le stockage et collaborer sur des documents et la quantité de données est en cours de téléchargement pour les applications ou services qui sont en dehors d’Office 365.
+Office 365 Cloud App Security aide les administrateurs généraux, les administrateurs de sécurité et les lecteurs de sécurité à obtenir des informations sur les services Cloud que les utilisateurs d'une organisation utilisent. Par exemple, vous pouvez voir où les utilisateurs stockent et collaborent sur des documents et la proportion de données téléchargées vers des applications ou des services qui se trouvent en dehors d'Office 365.
   
-Pour générer un rapport de détection d’application, vous téléchargez manuellement vos fichiers de journaux de trafic web à partir de votre pare-feu et des proxys et Office 365 Cloud Application Security analyse et analyse les fichiers pour votre rapport.
+Pour générer un rapport de découverte d'application, vous devez charger manuellement vos fichiers journaux de trafic Web à partir de vos pare-feu et de vos proxys, puis Office 365 Cloud App Security analyse et analyse ces fichiers pour votre rapport.
   
 > [!NOTE]
-> Vous devez être un administrateur global, un administrateur de sécurité ou un lecteur de sécurité pour effectuer les tâches décrites dans cet article. Pour plus d’informations, voir [des autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md). 
+> Vous devez être un administrateur général, un administrateur de sécurité ou un lecteur de sécurité pour effectuer les tâches décrites dans cet article. Pour en savoir plus, consultez [la rubrique autorisations dans le &amp; Centre de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md). 
   
-## <a name="create-a-report-with-app-discovery"></a>Créer un rapport avec la détection d’application
+## <a name="create-a-report-with-app-discovery"></a>Créer un rapport avec la découverte des applications
 
-Pour créer un rapport de détection d’application, vous identifiez la source de données de fournisseur pour les fichiers journaux que vous souhaitez avoir analysé, sélectionnez les fichiers journaux et puis demande le rapport.
+Pour créer un rapport de découverte d'application, identifiez la source de données du fournisseur pour les fichiers journaux que vous souhaitez analyser, sélectionnez les fichiers journaux, puis demandez le rapport.
   
 > [!NOTE]
-> Utilisez les fichiers journaux de trafic web qui incluent des périodes de trafic de pointe pour obtenir la meilleure représentation d’utilisation dans votre organisation. 
+> Utilisez les fichiers journaux du trafic Web qui incluent des périodes de trafic maximale pour obtenir la meilleure représentation de l'utilisation dans votre organisation. 
   
-1. Collecter les [journaux de trafic web et des sources de données Office 365 nuage sécurité des applications](web-traffic-logs-and-data-sources-for-ocas.md).
+1. Collectez vos [journaux de trafic Web et sources de données pour la sécurité des applications Cloud Office 365](web-traffic-logs-and-data-sources-for-ocas.md).
     
-2. Accédez au portail de sécurité des applications dans le nuage ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) et se connecter. 
+2. Accédez au portail de sécurité des applications Cloud[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)() et connectez-vous. 
        
-3. Choisissez **découvrir** \> **Création de rapports**. <br>![Dans le portail Office 365 autorités de certification, cliquez sur découvrir](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)<br>
+3. Sélectionnez **Discover** \> **créer un rapport**. <br>![Dans le portail Office 365 CAS, sélectionnez découvrir](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)<br>
   
-4. Spécifiez un nom et une description pour votre rapport, puis sélectionnez la source de données pour les journaux de trafic web dans la liste **source de données** . <br>![Dans les autorités de certification O365, choisissez découvrir \> créer le nouveau rapport](media/22e660f0-5eb2-49fa-9fea-f88a5809a07b.png)<br>Si une source de données que vous souhaitez utiliser n’est pas répertoriée, vous pouvez demander que, il doit être ajouté. Sélectionnez **autre** pour la **source de données**, puis tapez le nom de la source de données que vous essayez de télécharger. Nous allons consulter le journal et vous permettent de savoir si nous ajouter la prise en charge pour la source de données qui l’a généré. 
+4. Spécifiez un nom et une description pour votre rapport, puis sélectionnez la source de données pour vos journaux de trafic Web dans la liste **source de données** . <br>![Dans les autorités de certification O365 \> , choisissez découvrir créer un rapport](media/22e660f0-5eb2-49fa-9fea-f88a5809a07b.png)<br>Si une source de données que vous souhaitez utiliser n'est pas disponible, vous pouvez demander son ajout. Sélectionnez **autre** pour **source de données**, puis tapez le nom de la source de données que vous essayez de télécharger. Nous allons examiner le journal et vous indiquer si nous ajoutons la prise en charge de la source de données qui l'a générée. 
   
-5. Accédez à l’emplacement des fichiers journaux que vous avez collecté et sélectionnez les fichiers. Les fichiers journaux doivent avoir été générées par la source de données que vous avez choisi pour le rapport.
+5. Naviguez jusqu'à l'emplacement des fichiers journaux que vous avez collectés et sélectionnez les fichiers. Les fichiers journaux doivent avoir été générés par la source de données que vous avez choisie pour le rapport.
     
-6. Cliquez sur **créer** pour démarrer le processus de création de rapport. 
+6. Cliquez sur **créer** pour démarrer le processus de création de rapports. 
     
-7. Pour afficher le statut du rapport, cliquez sur **Gérer les rapports de capture instantanée**. Lorsqu’un état est prêt, vous verrez l’option **Afficher l’état** . 
+7. Pour afficher l'état du rapport, cliquez sur **gérer les rapports de capture instantanée**. Lorsqu'un État est prêt, l'option Afficher le **rapport** s'affiche. 
     
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Passez en revue et effectuer une action sur les alertes](review-office-365-cas-alerts.md)
+- [Passer en revue et effectuer une action sur les alertes](review-office-365-cas-alerts.md)
     
 - [Passer en revue les détections d'applications dans la sécurité des applications cloud Office 365](review-app-discovery-findings-in-ocas.md)
     
-- Passez en revue vos [activités utilisation Office 365 nuage sécurité des applications](utilization-activities-for-ocas.md)
+- Examiner vos [activités d'utilisation pour Office 365 Cloud App Security](utilization-activities-for-ocas.md)
     
 

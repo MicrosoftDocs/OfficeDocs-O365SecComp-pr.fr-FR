@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble des fonctionnalités de recherche et de découverte électronique Office 365
+title: Vue d'ensemble des fonctionnalités de recherche et de découverte Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -10,55 +10,57 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: Vue d’ensemble de la fonctionnalité de découverte et d’autres fonctionnalités de recherche dans Office 365 pour auditer l’utilisation et la transparence.
-ms.openlocfilehash: 2d5cc2533c195b51f685aebd8da4462518116905
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: Une vue d'ensemble de la fonctionnalité eDiscovery et d'autres fonctionnalités de recherche dans Office 365 pour l'utilisation et la transparence de l'audit.
+ms.openlocfilehash: 5bab284c5fb66e50c945091766a329de7628abed
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528134"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30091066"
 ---
-# <a name="ediscovery-and-search-features"></a>Fonctionnalités de recherche et de découverte électronique 
+# <a name="ediscovery-and-search-features"></a>eDiscovery et fonctionnalités de recherche 
 
 ## <a name="ediscovery"></a>eDiscovery
-La fonctionnalité de découverte électronique fournit un emplacement unique pour les administrateurs, les responsables de la conformité, et autres autorisés aux utilisateurs de réaliser une enquête complète sur l’activité utilisateur Office 365. Responsables de la sécurité avec les autorisations appropriées peuvent effectuer des recherches et archives permanentes sur le contenu. Les résultats de recherche sont les mêmes résultats que vous obtenez à partir d’une recherche de contenu, sauf qu’un cas eDiscovery est créé pour les suspensions appliquées. Les résultats de recherches de découverte électronique sont chiffrés de la sécurité et les données exportées peuvent être analysées à l’aide de la [découverte électronique avancée](https://support.office.com/article/office-365-advanced-ediscovery-fd53438a-a760-45f6-9df4-861b50161ae4).
+La fonctionnalité de découverte électronique offre un emplacement unique pour les administrateurs, les responsables de la mise en conformité et les autres utilisateurs autorisés à effectuer une enquête complète sur l'activité utilisateur d'Office 365. Les responsables de la sécurité disposant des autorisations appropriées peuvent effectuer des recherches et placer des conservations sur le contenu. Les résultats de la recherche sont les mêmes résultats que ceux obtenus lors d'une recherche de contenu, à la différence qu'un cas eDiscovery est créé pour les conservations appliquées. Les résultats des recherches de découverte électronique sont chiffrés pour la sécurité, et les données exportées peuvent être analysées à l'aide de [Advanced eDiscovery](https://support.office.com/article/office-365-advanced-ediscovery-fd53438a-a760-45f6-9df4-861b50161ae4).
 
 ## <a name="content-search"></a>Recherche de contenu
-[Recherche de contenu](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) est un nouvel outil de recherche de découverte électronique dans la sécurité et de centre de conformité qui fournit une montée en charge améliorée et de performances sur les outils de recherche eDiscovery précédents. Vous pouvez utiliser la recherche de contenu pour rechercher les boîtes aux lettres, les dossiers publics, les sites SharePoint Online et OneDrive pour des sites. Recherche de contenu est spécifiquement conçue pour les recherches de très grande taille. Il n’existe aucune limite sur le nombre de boîtes aux lettres et de sites que vous pouvez rechercher. Il n’existe également aucune limite sur le nombre de recherches autorisées à exécuter en même temps. Après avoir exécuté une recherche, le nombre de sources de contenu et un estimation du nombre de recherche résultats sont affichés dans le volet d’informations sur la page de recherche, dans laquelle vous pouvez afficher les résultats ou les exporter vers un ordinateur local. Si votre organisation a un abonnement à Office 365 entreprise E5, vous pouvez également [préparer les résultats](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a#prepare) d’analyse d’utilisation des fonctionnalités puissantes analytique de [eDiscovery Office 365 avancés](http://go.microsoft.com/fwlink/p/?LinkID=620116).
+La [recherche de contenu](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) est un nouvel outil de recherche de découverte électronique dans le centre de sécurité _AMP_ Compliance Center qui améliore la montée en charge et les performances par rapport aux précédents outils de recherche eDiscovery. Vous pouvez utiliser la recherche de contenu pour rechercher des boîtes aux lettres, des dossiers publics, des sites SharePoint Online et des emplacements OneDrive entreprise. La recherche de contenu est spécialement conçue pour les recherches très volumineuses. Il n'y a aucune limite quant au nombre de boîtes aux lettres et de sites que vous pouvez rechercher. Il n'existe aucune limite quant au nombre de recherches pouvant être exécutées en même temps. Après avoir exécuté une recherche, le nombre de sources de contenu et un nombre estimé de résultats de recherche sont affichés dans le volet d'informations de la page de recherche, dans lequel vous pouvez prévisualiser les résultats ou les exporter vers un ordinateur local. Si votre organisation dispose d'un abonnement Office 365 entreprise E5, vous pouvez également [préparer les résultats](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a#prepare) de l'analyse à l'aide des puissantes fonctionnalités d'analyse d' [Office 365 Advanced eDiscovery](http://go.microsoft.com/fwlink/p/?LinkID=620116).
 
-## <a name="audit-log-search"></a>Recherche des journaux d’audit
-Outre le suivi des modifications dans leur organisation Office 365, les clients peuvent également afficher les rapports d’audit et exporter des journaux d’audit. Une fois que l’audit est activé pour un client Office 365, utilisateur et l’activité d’administration pour ce client est enregistré dans les journaux des événements et objet d’une recherche. Par exemple, vous pouvez utiliser pour suivre les actions effectuées sur une boîte aux lettres par les utilisateurs autres que le propriétaire de la boîte aux lettres la journalisation d’audit. En outre, aux règlements pouvant utiliser les fonctionnalités de recherche et de filtrage pour voir si un utilisateur a affiché ou télécharger un document spécifique, ou si un administrateur a effectué les activités de gestion des utilisateurs ou apporté des modifications à la configuration du client au cours des 90 derniers jours. Résultats de recherche peuvent contenir des informations légales importantes sur les activités spécifiques qui ont été effectués par un utilisateur ou un administrateur. Pour obtenir une description de l’utilisateur et les activités administratives qui sont consignées dans Office 365, voir [les activités contrôlé dans Office 365](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c#auditlogevents) .
+## <a name="audit-log-search"></a>Recherche dans le journal d'audit
+Outre le suivi des modifications dans son organisation 365 Office, les clients peuvent également afficher des rapports d'audit et exporter des journaux d'audit. Une fois que l'audit est activé pour un client Office 365, l'activité de l'utilisateur et de l'administration de ce client est enregistrée dans les journaux d'événements et fait l'objet d'une recherche. Par exemple, vous pouvez utiliser l'enregistrement d'audit de boîte aux lettres pour suivre les actions exécutées sur une boîte aux lettres par des utilisateurs autres que le propriétaire de la boîte aux lettres. De plus, les responsables de la mise en conformité peuvent utiliser les fonctionnalités de recherche et de filtrage pour voir si un utilisateur a consulté ou téléchargé un document spécifique, ou si un administrateur a effectué des activités de gestion des utilisateurs ou a apporté des modifications à la configuration du client au cours des 90 derniers jours. Les résultats de la recherche peuvent contenir des informations légales précieuses sur des activités spécifiques effectuées par un utilisateur ou un administrateur. Consultez la rubrique [activités auditées dans office 365](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c#auditlogevents) pour obtenir une description des activités d'utilisateur et d'administration qui sont consignées dans Office 365.
 
-Événements liés à SharePoint Online et OneDrive entreprise sont affichés dans le journal de 30 minutes de leur occurrence. Événements à partir d’Exchange Online s’affichent dans les journaux d’audit dans les 24 heures d’occurrence. Événements de connexion d’Azure Active Directory sont disponibles dans les minutes d’occurrence et autres événements directory d’Azure Active Directory sont disponibles dans les 24 heures d’occurrence. Événements dans les résultats de recherche du journal d’audit peuvent également être exportés pour une analyse approfondie. (Un maximum de 50 000 entrées peut être exporté à partir d’une recherche de journal d’audit unique. Pour exporter des entrées plus cette limite, réduisez la plage de dates, ou exécuter plusieurs recherches de journal d’audit.)
+Les événements provenant de SharePoint Online et OneDrive entreprise s'affichent dans le journal dans les 30 minutes qui ont été survenues. Les événements provenant d'Exchange Online apparaissent dans les journaux d'audit dans les 24 heures qui suivent l'événement. Les événements de connexion à partir d'Azure AD sont disponibles dans les minutes qui suivent l'occurrence, et les autres événements d'annuaire provenant d'Azure AD sont disponibles dans les 24 heures qui suivent. Les événements des résultats de la recherche dans le journal d'audit peuvent également être exportés pour une analyse plus poussée. (Un maximum de 50 000 entrées peuvent être exportées à partir d'une seule recherche de journal d'audit. Pour exporter un nombre d'entrées supérieur à cette limite, réduisez la plage de dates ou exécutez plusieurs recherches de journaux d'audit.)
 
-Le tableau suivant détaille certaines des informations qui s’affiche dans les rapports d’activité. Consultez [journal d’audit de propriétés détaillées dans Office 365](https://support.office.com/article/detailed-properties-in-the-office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3
-) pour plus d’informations sur les propriétés sont collectées par chaque charge de travail d’Office 365.
+Le tableau suivant décrit en détail certaines des informations affichées dans les rapports d'activité. Pour plus d'informations sur les propriétés collectées par chaque charge de travail Office 365, voir les [Propriétés détaillées dans le journal d'audit office 365](https://support.office.com/article/detailed-properties-in-the-office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3
+) .
 
 | Propriété | Description |
 |----------------|----------------------------------------------------------------------------------------------------------------------|
-| Date | Date et heure de l’événement |
-| Utilisateur | Utilisateur qui a effectué l’action |
-| ClientIP | Adresse IPv4 ou IPv6 de l’appareil qui a été utilisé lors de l’activité a été enregistrée. |
-| CreationTime | Date et heure en temps universel coordonné (UTC) lorsque l’utilisateur a effectué l’activité. |
-| Source d’événement | Identifie qu’un événement s’est produite. Les valeurs possibles sont SharePoint et ObjectModel. |
-| ID | ID de l’entrée du rapport. L’ID identifie l’entrée du rapport. |
-| Opération | Nom de l’utilisateur ou d’une activité, qui correspond à la valeur sélectionnée dans les résultats d’affichage pour l’activité de l’utilisateur. |
-| OrganizationId | GUID Office 365 service de l’organisation où l’événement s’est produite. |
-| UserAgent | Informations sur le navigateur de l’utilisateur fourni par le navigateur. |
-| Nom d’utilisateur | Utilisateur qui a exécuté l’action (spécifiée dans la propriété Operation) qui a provoqué l’enregistrement en cours de journalisation. |
-| UserType | Type d’utilisateur qui a effectué l’opération. Les valeurs suivantes indiquent le type d’utilisateur. |
-|  | 0 indique qu’un utilisateur standard. |
+| Date | Date et heure de l'événement |
+| Utilisateur | Utilisateur ayant effectué l'action |
+| ClientIP | Adresse IPv4 ou IPv6 de l'appareil qui a été utilisé lors de l'enregistrement de l'activité. |
+| CreationTime | Date et heure au format UTC (temps universel coordonné) lorsque l'utilisateur a effectué l'activité. |
+| EventSource | Indique qu'un événement s'est produit. Les valeurs possibles sont SharePoint et ObjectModel. |
+| ID | ID de l'entrée de rapport. L'ID identifie de manière unique l'entrée de rapport. |
+| Opération | Nom de l'utilisateur ou de l'activité, qui correspond à la valeur sélectionnée dans l'écran afficher les résultats pour cette activité de l'utilisateur. |
+| N... | GUID pour le service Office 365 de l'organisation où l'événement s'est produit. |
+| UserAgent | Informations sur le navigateur de l'utilisateur, telles qu'elles sont fournies par le navigateur. |
+| Identifi | Utilisateur ayant effectué l'action (spécifié dans la propriété Operation) ayant provoqué l'enregistrement journalisé. |
+| UserType | Type d'utilisateur qui a effectué l'opération. Les valeurs suivantes indiquent le type d'utilisateur. |
+|  | 0 indique un utilisateur normal. |
 |  | 2 indique un administrateur de votre organisation Office 365. |
-|  | 3 indique un compte de système Microsoft datacenter administrateur ou centre de données. |
-| Charge de travail | Service Office 365 dans lequel l’activité s’est produite. Les valeurs possibles pour cette propriété sont : |
-|  | Exchange Online |
+|  | 3 indique un compte d'administrateur ou de système de centre de connaissances Microsoft. |
+| Charge de travail | Service Office 365 dans lequel l'activité s'est produite. Les valeurs possibles pour cette propriété sont les suivantes: |
+|  | Exchange Online |
 |  | SharePoint Online |
 |  | OneDrive Entreprise |
-|  | Rapports d’Azure Active Directory |
+|  | Rapports Azure Active Directory |
 
 
-Journaux d’audit pour obtenir la procédure détaillée pour la recherche Office 365, consultez les [journaux d’audit de recherche dans la sécurité pour Microsoft Office 365 et le centre de conformité](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
+Pour obtenir la procédure détaillée pour la recherche des journaux d'audit Office 365, consultez la rubrique Search [audit logs in the office 365 Security _AMP_ Compliance Center](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
 
-## <a name="search-unified-audit-log"></a>Recherche unifiée journal d’Audit
-La fonctionnalité de recherche des journaux d’Audit de la sécurité et le centre de conformité peut servir à rechercher dans le journal d’audit unifiée. Office 365 offre également la possibilité pour rechercher ce journal à l’aide de PowerShell à distance. Spécifiquement, l' [applet de commande Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/Search-UnifiedAuditLog?view=exchange-ps) dans Exchange Online PowerShell peut être utilisée pour rechercher le journal d’audit unifiée des événements liés aux opérations de l’utilisateur à partir d’Exchange Online, SharePoint Online, OneDrive pour les entreprises et Azure AD. Vous pouvez rechercher tous les événements dans une plage de dates spécifiée, ou vous pouvez filtrer les résultats en fonction des critères spécifiques, comme une action spécifique, l’utilisateur ayant exécuté l’action ou l’objet cible. Les administrateurs peuvent utiliser 3 jusqu'à l’exécution simultanée de sessions Exchange Online PowerShell pour diviser des recherches de plage de date de grande taille.
+## <a name="search-unified-audit-log"></a>Rechercher dans le journal d'audit unifié
+La fonctionnalité de recherche de journal d'audit dans le centre de sécurité & Compliance Center peut être utilisée pour rechercher dans le journal d'audit unifié. Office 365 offre également la possibilité d'effectuer des recherches dans ce journal à l'aide de PowerShell à distance. Plus précisément, la [cmdlet Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/Search-UnifiedAuditLog?view=exchange-ps) dans Exchange Online PowerShell peut être utilisée pour rechercher dans le journal d'audit unifié des événements relatifs aux opérations de l'utilisateur à partir d'Exchange Online, SharePoint Online, OneDrive entreprise et Azure ad. Vous pouvez rechercher tous les événements dans une plage de dates spécifique ou vous pouvez filtrer les résultats en fonction de critères spécifiques, tels qu'une action spécifique, l'utilisateur qui a effectué l'action ou l'objet cible. Les administrateurs peuvent utiliser jusqu'à 3 sessions PowerShell Exchange Online simultanément pour fractionner les recherches de plage de dates volumineuses.
