@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: 'Utilisez la recherche de contenu dans le centre &amp; de conformité de sécurité Office 365 pour rechercher des boîtes aux lettres, des sites SharePoint Online et des emplacements OneDrive entreprise. '
-ms.openlocfilehash: 82e8d2338fe003f2c37cd99994d8f71db2716da8
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 31db6f7b56e1866064e7a008ce4fd704b5333347
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219284"
+ms.locfileid: "30223733"
 ---
 # <a name="run-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Exécuter une recherche de contenu dans le centre de &amp; sécurité conformité Office 365
 

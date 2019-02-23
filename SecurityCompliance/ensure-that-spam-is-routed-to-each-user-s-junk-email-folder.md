@@ -15,12 +15,12 @@ ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
 description: L'action anti-courrier indésirable par défaut pour les clients EOP consiste à déplacer les messages identifiés comme tels vers le dossier Courrier indésirable des destinataires. Afin que cette action fonctionne sur des boîtes aux lettres locales, vous devez configurer des règles de transport Exchange sur vos serveurs Edge ou Hub locaux de manière à détecter les en-têtes de courrier indésirable ajoutés par EOP. Ces règles de transport définissent le seuil de probabilité de courrier indésirable (SCL) utilisé par la propriété SclJunkThreshold (de la cmdlet Set-OrganizationConfig) pour déplacer le courrier indésirable dans le dossier Courrier indésirable de chaque boîte aux lettres.
-ms.openlocfilehash: d0ae9637ce95a1a8f0d4d241b3aef928c84ba3fa
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f712e66934956bcf46215e4016501003ce9b1725
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221024"
+ms.locfileid: "30222883"
 ---
 # <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Vérification de l'acheminement du courrier indésirable vers le dossier Courrier indésirable de chaque utilisateur
 

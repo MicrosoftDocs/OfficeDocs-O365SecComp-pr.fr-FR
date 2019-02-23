@@ -8,19 +8,19 @@ ms.topic: article
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
 ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: Faire la démonstration des fonctionnalités du RGPD dans Office 365.
-ms.openlocfilehash: 2c5c64d14fdfe7d18c0cf07a01c52a5609f5ee9c
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: 0e4ca600410e1837df6317c7e19623b2a7760254
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272539"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217994"
 ---
 # <a name="gdpr-discovery-protection-and-reporting-in-the-office-365-devtest-environment"></a>Découverte, protection et création de rapports en vertu du RGPD dans l’environnement de développement/test Office 365
 

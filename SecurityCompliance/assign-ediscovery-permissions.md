@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Affecter les autorisations requises pour effectuer des tâches liées à la découverte électronique &amp; à l'aide du centre de sécurité conformité.
-ms.openlocfilehash: 44992697af8ba27f50566398c3f79095653ea4c0
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: c4dcbf51282aa2887fd7d5032eb8587b5e9d56d7
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219524"
+ms.locfileid: "30223273"
 ---
 # <a name="assign-ediscovery-permissions-in-the-office-365-security-amp-compliance-center"></a>Attribuer des autorisations eDiscovery dans le centre de &amp; sécurité conformité Office 365
 

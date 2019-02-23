@@ -11,28 +11,28 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: eb14f38b-7b55-4a47-84a0-4a56a59e4111
 description: Les adresses IP de centre de données Microsoft suivantes sont utilisées par Microsoft Exchange Online Protection (EOP) lors de l'envoi et de la réception d'e-mails, ou pour les services d'administration et de portail Exchange Online Protection. Pour envoyer et recevoir des messages à partir d'EOP ou utiliser les services d'administration, vérifiez que votre réseau autorise les connexions à partir de ces adresses IP.
-ms.openlocfilehash: 5ea1a3df2ba1ea6853e2e44983fa7a97877c0778
-ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
+ms.openlocfilehash: 6c7d8c78a012be3928317eac1e9b6fcdeab64a24
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "27240507"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222823"
 ---
 # <a name="exchange-online-protection-ip-addresses"></a>Adresses IP d'Exchange Online Protection
 
 Les adresses IP de centre de données Microsoft suivantes sont utilisées par Microsoft Exchange Online Protection (EOP) lors de l'envoi et de la réception d'e-mails, ou pour les services d'administration et de portail Exchange Online Protection. Pour envoyer et recevoir des messages à partir d'EOP ou utiliser les services d'administration, vérifiez que votre réseau autorise les connexions à partir de ces adresses IP.
  
 > [!NOTE]
-> Microsoft a développé un service web basée sur REST pour l’adresse IP et les entrées de nom de domaine complet de cette page. Ce nouveau service permet de configurer et mettre à jour des périphériques de périmètre de réseau tels que des pare-feu et des serveurs proxy. Vous pouvez télécharger la liste des points de terminaison, la version actuelle de la liste, ou les modifications spécifiques. Ce service remplace le document XML, flux RSS et l’adresse IP et les entrées de nom de domaine complet de cette page. Pour essayer ce nouveau service, accédez à [Office 365 adresse et le service Web de l’URL](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service). 
+> Microsoft a développé un service Web basé sur REST pour les entrées d'adresse IP et de nom de domaine complet sur cette page. Ce nouveau service vous permet de configurer et de mettre à jour les périphériques de périmètre réseau, tels que les pare-feu et les serveurs proxy. Vous pouvez télécharger la liste des points de terminaison, la version actuelle de la liste ou des modifications spécifiques. Ce service remplace le document XML, le flux RSS, ainsi que les entrées d'adresse IP et de nom de domaine complet (FQDN) sur cette page. Pour tester ce nouveau service, accédez à l' [adresse IP d'Office 365 et à l'URL du service Web](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service). 
  
 ## <a name="eop-ip-address-ranges"></a>Plages d'adresses IP EOP
 
 ||||
 |:-----|:-----|:-----|
-|**Plages d’adresses IPv4** <br/> |**Plages d’adresses IPv6** <br/> |
-| 23.103.132.0/22 | c 2a01:111:f400:7 00 :: / 54 |
-| 23.103.136.0/21 | 2a01:111:f400:fc00 :: / 54 |
-| 23.103.144.0/20 | 2a01:111:f403 :: / 48 |
+|**Plages d'adresses IPv4** <br/> |**Plages d'adresses IPv6** <br/> |
+| 23.103.132.0/22 | 2a01:111: F400:7c00::/54 |
+| devenue 23.103.136.0/21 | 2a01:111: F400: fc00::/54 |
+| 23.103.144.0/20 | 2a01:111: f403::/48 |
 | 23.103.198.0/23 |  |
 | 23.103.200.0/22 |  |
 | 40.92.0.0/14 |  |
@@ -54,7 +54,7 @@ Les adresses IP de centre de données Microsoft suivantes sont utilisées par Mi
 ||||
  
 > [!IMPORTANT]
-> Les plages d’adresses IP fournies ici sont uniquement utilisés pour le relais par le biais de connecteurs de client. Modifications apportées à la liste des adresses IP sont rares et sont communiquées à l’avance. Pour vous assurer que les messages que vous envoyez à vos partenaires commerciaux, un hôte actif ou une gamme d’environnement sur site par le biais du service publié plage d’adresses IP, vous devez configurer le connecteur correct pour le routage vers chaque destination. Pour plus d’informations sur les connecteurs, voir [Déterminer lequel connecteur à utiliser](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail). les adresses IP dans cette rubrique peuvent changer au fil du temps.  
+> Les plages d'adresses IP fournies ici ne sont utilisées que pour les relais via les connecteurs des clients. Les modifications apPortées à la liste des adresses IP sont rares et sont communiquées à l'avance. Pour vous assurer que les messages que vous envoyez à vos partenaires professionnels, un hôte actif ou un environnement local transitent par le biais de la plage d'adresses IP publiée du service, vous devez configurer le connecteur approprié pour le routage vers chaque destination. Pour plus d'informations sur les connecteurs, voir [choisir le connecteur à utiliser](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail). les adresses IP de cette rubrique peuvent changer au fil du temps.  
  
 Pour plus d'informations sur les adresses IP utilisées par Microsoft Office 365, consultez la rubrique [URL et plages d'adresses IP Office 365](https://go.microsoft.com/fwlink/p/?LinkId=324165).
 

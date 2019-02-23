@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: 'Découvrez les limites en vigueur pour la fonctionnalité de recherche de contenu dans le centre de &amp; sécurité conformité Office 365, comme le nombre maximal de recherches simultanées. '
-ms.openlocfilehash: 711aedf8df80bfe2c769721b8c16b01fb705c289
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 0d114db30e9c5b61477789f8a2b91b88c936b253
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213284"
+ms.locfileid: "30223113"
 ---
 # <a name="limits-for-content-search-in-the-office-365-security-amp-compliance-center"></a>Limites de recherche de contenu dans le centre de &amp; sécurité conformité Office 365
 

@@ -1,9 +1,26 @@
 ---
-title: "les fonctionnalités de protection dans Azure information protection s'apportant à des locataires Office 365 existants" ms. Author: krowley Author: kccross Manager: laurawi ms. Date: 6/29/2018 ms. audience: professionnel ms. topic: article ms. service: O365-seccomp localization_ Priority: normal Search. appverid:
-- MET150 ms. AssetID: 7ad6f58e-65d7-4c82-8e65-0b773666634d ms. collection:
-    - M365-Security-Description de la conformité: «pour vous aider à la première étape de la protection de vos informations, à partir du 1er juillet 2018 tous les clients éligibles Azure information protection auront les fonctionnalités de protection dans Azure information protection activées par défaut. Les fonctionnalités de protection d'Azure information protection étaient précédemment connues dans Office 365 en tant que gestion des droits ou Azure RMS. Si votre organisation dispose d'un plan de service Office E3 ou d'un plan de service plus élevé, vous recevrez désormais un responsable de la protection des informations via Azure information protection lors de la mise en route de ces fonctionnalités.
+title: Fonctionnalités de protection dans Azure information protection pour les clients Office 365 existants
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 6/29/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: 7ad6f58e-65d7-4c82-8e65-0b773666634d
+ms.collection:
+- M365-security-compliance
+description: Pour vous aider avec la première étape de la protection de vos informations, à partir du 1er juillet 2018, tous les clients éligibles Azure information protection disposent par défaut des fonctionnalités de protection d'Azure information protection. Les fonctionnalités de protection d'Azure information protection étaient précédemment connues dans Office 365 en tant que gestion des droits ou Azure RMS. Si votre organisation dispose d'un plan de service E3 Office ou d'un plan de service supérieur, vous recevrez maintenant une tête de protection des informations via Azure information protection lors de la mise en route de ces fonctionnalités.
+ms.openlocfilehash: 2484f9b335a6698894046aaf429fdad68d82491e
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223253"
 ---
-
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-office-365-tenants"></a>Fonctionnalités de protection dans Azure information protection pour les clients Office 365 existants
 
 Pour vous aider avec la première étape de la protection de vos informations, à partir du 1er juillet 2018, tous les clients éligibles Azure information protection disposent par défaut des fonctionnalités de protection d'Azure information protection. Les fonctionnalités de protection d'Azure information protection étaient précédemment connues dans Office 365 en tant que gestion des droits ou Azure RMS. Si votre organisation dispose d'un plan de service E3 Office ou d'un plan de service supérieur, vous recevrez maintenant une tête de protection des informations via Azure information protection lors de la mise en route de ces fonctionnalités.

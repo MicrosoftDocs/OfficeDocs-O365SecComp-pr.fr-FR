@@ -1,9 +1,26 @@
 ---
-title: "en-têtes de message anti-courrier indésirable" ms. Author: krowley Author: kccross Manager: laurawi ms. audience: professionnel ms. topic: article ms. service: O365-seccomp ms. Custom: TN2DMC localization_priority: normal Search. appverid:
-- MET150 ms. AssetID: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db ms. collection:
-    - M365-Security-Description de la conformité: "lorsque Exchange Online Protection analyse un message électronique entrant, il insère l'en-tête **X-Forefront-antispam-Report** dans chaque message."
+title: En-têtes de messages anti-courrier indésirable
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
+ms.collection:
+- M365-security-compliance
+description: Lorsque Exchange Online Protection analyse un message entrant, il insère l'en-tête **X-Forefront-Antispam-Report** dans chaque message.
+ms.openlocfilehash: 4851c05f4db8d120eb54b9c22025fe2972e1e515
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223583"
 ---
-
 # <a name="anti-spam-message-headers"></a>En-têtes de messages anti-courrier indésirable
 
 Lorsque Exchange Online Protection analyse un message entrant, il insère l'en-tête **X-Forefront-Antispam-Report** dans chaque message. Les champs de cet en-tête permettent de fournir des informations aux administrateurs en ce qui concerne le message et sur la manière dont ce dernier a été traité. Les champs de l'en-tête **X-Microsoft-Antispam** fournissent des informations supplémentaires sur le courrier en nombre et le hameçonnage. En plus de ces deux en-têtes, Exchange Online Protection insère également les résultats de l'authentification d'e-mail pour chaque message qu'il traite dans l'en-tête **Authentication-results** (résultats de l'authentification).

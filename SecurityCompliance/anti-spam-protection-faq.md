@@ -1,9 +1,27 @@
 ---
-title: "Forum aux questions sur la protection anti-courrier indésirable" ms. Author: krowley Author: kccross Manager: laurawi ms. Date: 12/9/2016 ms. audience: professionnel ms. topic: article ms. service: O365-seccomp ms. Custom: TN2DMC localization_priority: normal Search. appverid:
-- MET150 ms. AssetID: c534a35d-B121-45DA-9d0a-ce738ce51fce ms. collection:
-    - M365-Security-Description de la conformité: «cette rubrique fournit des questions fréquemment posées et des réponses sur la protection contre le courrier indésirable. Les réponses sont applicables pour les clients Microsoft Exchange Online et Exchange Online Protection (EOP). "
+title: Forum Aux Questions sur la protection anti-courrier indésirable
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 12/9/2016
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
+ms.collection:
+- M365-security-compliance
+description: Cette rubrique fournit des réponses aux questions fréquemment posées concernant la protection contre le courrier indésirable. Les réponses s'appliquent aux clients de Microsoft Exchange Online et Exchange Online Protection (EOP).
+ms.openlocfilehash: f41799a3870e899fd3601453aaa11f6f9c51c608
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223053"
 ---
-
 # <a name="anti-spam-protection-faq"></a>Forum Aux Questions sur la protection anti-courrier indésirable
 
 Cette rubrique fournit des réponses aux questions fréquemment posées concernant la protection contre le courrier indésirable. Les réponses s'appliquent aux clients de Microsoft Exchange Online et Exchange Online Protection (EOP). 

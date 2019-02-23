@@ -1,9 +1,26 @@
 ---
-title: "configurer les notifications de courrier indésirable de l'utilisateur final dans EOP" ms. Author: krowley Author: kccross Manager: laurawi ms. audience: professionnel ms. topic: article ms. service: O365-seccomp ms. Custom: TN2DMC localization_priority: normal Search. appverid:
-- MET150 ms. AssetID: e9947db5-1dd1-4493-872d-7362b24c7ba0 ms. collection:
-    - M365-Security-Description de la conformité: «vous pouvez configurer les notifications de courrier indésirable de l'utilisateur final pour la stratégie de filtrage de contenu par défaut à l'échelle de l'entreprise ou pour les stratégies de filtrage de contenu personnalisées appliquées aux domaines.»
+title: Configurer des notifications de courrier indésirable pour l’utilisateur final dans EOP
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
+ms.collection:
+- M365-security-compliance
+description: Vous pouvez configurer les notifications de courrier indésirable à l'utilisateur final pour la stratégie de filtrage de contenu par défaut à l'échelle de l'entreprise, ou pour les stratégies de filtrage de contenu personnalisées appliquées à des domaines.
+ms.openlocfilehash: 2cab65347c726cab482eb127f5068586f4f3afd3
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222973"
 ---
-
 # <a name="configure-end-user-spam-notifications-in-eop"></a>Configurer des notifications de courrier indésirable pour l’utilisateur final dans EOP
   
 > [!IMPORTANT]

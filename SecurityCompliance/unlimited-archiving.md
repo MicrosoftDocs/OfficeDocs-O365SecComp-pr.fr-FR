@@ -3,7 +3,6 @@ title: Vue d'ensemble d'un archivage illimité dans Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Découvrez la croissance automatique de l'archivage dans Office 365, qui offre un stockage d'archive illimité pour les boîtes aux lettres Exchange Online.
-ms.openlocfilehash: 15c46662df65914d53031cf073e05b137fa2612f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: fa1fc2a8b2de577232a50ecb1f89b53d52012096
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219214"
+ms.locfileid: "30223483"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Vue d'ensemble d'un archivage illimité dans Office 365
 

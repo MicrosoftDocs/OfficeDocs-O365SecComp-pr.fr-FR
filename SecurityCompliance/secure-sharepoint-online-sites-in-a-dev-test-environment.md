@@ -9,19 +9,19 @@ ms.topic: article
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
 ms.custom: ''
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Résumé : Créez des sites d’équipe SharePoint Online publics, privés, sensibles et hautement confidentiels dans un environnement de développement/test.'
-ms.openlocfilehash: e0f2d7e46133eee5e75a535f1416a385fa681d92
-ms.sourcegitcommit: 6ff0233b5a1a07595f8b4d55db6b1327bcaa174c
+ms.openlocfilehash: 8fd1877aa71a00db953dee6a232a00f634715ce3
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28023440"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213814"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Sécuriser des sites SharePoint Online dans un environnement de développement et de test
 

@@ -3,22 +3,21 @@ title: Rétentions basées sur des événements
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 description: Cette rubrique explique comment configurer votre flux de processus métier pour automatiser la rétention via des événements à l’aide de l’API REST de Microsoft 365.
-ms.openlocfilehash: 4b4f310950f25e2a72dffa83de39b13c0b34cd97
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 799f831e937d3f676bb05eb188b813b1ca23622c
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29740866"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223753"
 ---
 # <a name="automate-event-based-retention"></a>Rétentions basées sur des événements
 
@@ -486,4 +485,4 @@ Un système de planification (ERP) peut fonctionner avec Microsoft 365 et Micros
 
 Cette rubrique a été révisée par :
 
-Antonio Maio</br>MVP Services et applications Microsoft Office</br> Antonio.Maio@Protiviti.com
+Antonio Maio<br/>MVP Services et applications Microsoft Office<br/> Antonio.Maio@Protiviti.com

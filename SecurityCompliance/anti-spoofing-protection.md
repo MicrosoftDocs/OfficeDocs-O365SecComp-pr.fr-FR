@@ -1,9 +1,26 @@
 ---
-title: "protection contre l'usurpation d'identité dans Office 365" ms. Author: krowley Author: kccross Manager: laurawi ms. Date: 12/06/2018 ms. audience: professionnel ms. topic: article ms. service: O365-seccomp localization_priority: normal Search. appverid:
-- MET150 ms. AssetID: d24bb387-c65d-486e-93e7-06a4f1a436c0 ms. collection:
-    - M365-Security-Description de la conformité: «cet article explique comment Office 365 réduit les attaques par hameçonnage qui utilisent des domaines d'expéditeurs falsifiés, c'est-à-dire les domaines qui sont falsifiés. Pour ce faire, il analyse les messages et bloque ceux qui peuvent être authentifiés neithe à l'aide de méthodes d'authentification de messagerie standard ou d'autres techniques de réputation de l'expéditeur. Cette modification est implémentée afin de réduire le nombre d'attaques par hameçonnage dans Office 365 sont exposées à.
+title: Protection anti-usurpation dans Office 365
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 12/06/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
+ms.collection:
+- M365-security-compliance
+description: Cet article explique comment Office 365 atténue les attaques par hameçonnage qui utilisent des domaines d'expéditeurs falsifiés, c'est-à-dire des domaines falsifiés. Pour ce faire, il analyse les messages et bloque ceux qui peuvent être authentifiés neithe à l'aide de méthodes d'authentification de messagerie standard ou d'autres techniques de réputation de l'expéditeur. Cette modification est implémentée afin de réduire le nombre d'attaques par hameçonnage dans Office 365 sont exposées à.
+ms.openlocfilehash: 041d2ee2cbad1c051c0ca4724d42b189215f0e82
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223873"
 ---
-
 # <a name="anti-spoofing-protection-in-office-365"></a>Protection anti-usurpation dans Office 365
 
 Cet article explique comment Office 365 atténue les attaques par hameçonnage qui utilisent des domaines d'expéditeurs falsifiés, c'est-à-dire des domaines falsifiés. Pour ce faire, il analyse les messages et bloque ceux qui ne peuvent pas être authentifiés à l'aide de méthodes d'authentification de messagerie standard, ni d'autres techniques de réputation de l'expéditeur. Cette modification est implémentée pour réduire le nombre d'attaques de hameçonnage auxquelles les clients sont exposés.

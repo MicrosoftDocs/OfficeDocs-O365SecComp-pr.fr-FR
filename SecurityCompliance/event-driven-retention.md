@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 5/22/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: dd851332-747b-45b9-82de-e3cd7d01c8a7
 description: Dans Office 365, vous pouvez baser une période de rétention sur l’occurrence d’un type spécifique d’événement grâce aux étiquettes. L’événement déclenche le début de la période de rétention, et les actions de rétention d’une étiquette sont appliquées sur tout le contenu portant l’étiquette en question pour ce type d’événement. Les rétentions basées sur des événements sont généralement utilisées dans le cadre d’un processus de gestion des enregistrements.
-ms.openlocfilehash: fca335d8218c2c22335592fd71bffd00a805f6fb
-ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
+ms.openlocfilehash: a5433b0515a8c4cde8e5ebf187b1a658f7d43cb4
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25540410"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213634"
 ---
 # <a name="overview-of-event-driven-retention"></a>Vue d’ensemble des rétentions basées sur des événements
 
@@ -59,7 +59,7 @@ Pour utiliser correctement les rétentions basées sur des événements, il est 
     
   - Un ID d’élément (pour les documents SharePoint et OneDrive).
     
-  - Des mots clés (pour les éléments Exchange). Dans cet exemple, l’organisation utilise un code de produit dans les messages contenant les enregistrements de produit. Le mot clé pour les éléments Exchange est donc identique à l’ID d’élément pour les documents SharePoint et OneDrive.
+  - Des mots clés (pour les éléments Exchange) Dans cet exemple, l’organisation utilise un code de produit dans les messages contenant des enregistrements de produit. Le mot clé pour les éléments Exchange est donc identique à l’ID d’élément pour les documents SharePoint et OneDrive.
     
   - La date à laquelle l’événement est survenu. Cette date est utilisée comme point de départ de la période de rétention. Cette date ne peut être que la date actuelle ou une date future, pas une date passée.
     
@@ -85,7 +85,7 @@ Notez que les rétentions basées sur des événements sont généralement utili
   
 Notez également que les rétentions basées sur des événements requièrent des paramètres de rétention qui :
   
-- conservent le contenu ;
+- Conservent le contenu.
     
 - suppriment automatiquement le contenu ou déclenchent une révision de destruction à la fin de la période de rétention.
     
@@ -109,11 +109,11 @@ Comme pour toute étiquette, vous devez publier ou appliquer automatiquement une
   
 ### <a name="step-4-enter-an-asset-id"></a>Étape 4 : saisissez un ID d’élément
 
-Après avoir appliqué une étiquette basée sur un événement au contenu, vous pouvez saisir un ID d’élément pour chaque élément. Par exemple, votre organisation peut utiliser les éléments suivants :
+Une fois qu’une étiquette basée sur un événement a été appliquée au contenu, vous pouvez entrer un ID d’élément pour chaque élément. Par exemple, votre organisation peut utiliser :
   
-- Codes de produit à utiliser pour conserver uniquement le contenu d’un produit spécifique.
+- Des codes de produit que vous pouvez utiliser pour conserver le contenu relatif à un produit spécifique.
     
-- Codes de projet à utiliser pour conserver uniquement le contenu d’un projet spécifique.
+- Des codes de projet que vous pouvez utiliser pour conserver le contenu relatif à un projet spécifique.
     
 - ID d’employé à utiliser pour conserver uniquement le contenu d’une personne spécifique.
     

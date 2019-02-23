@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 5/9/2018
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: af341600-5f68-40b3-a73e-73562715acd1
 description: Avec l’Explorateur d’activité des étiquettes dans le Centre de sécurité &amp; conformité Office 365, vous pouvez rapidement rechercher et afficher l’activité des étiquettes pour tout le contenu au sein de SharePoint et OneDrive Entreprise au cours des 30 derniers jours. Il s’agit des données en temps réel qui vous offrent une bonne visibilité de ce qui se passe dans votre client.
-ms.openlocfilehash: 69e99ea7af683d7850cd56f356ad0ac99f8c084e
-ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
+ms.openlocfilehash: 7ef74e46465192e3d145d526ea9660d32409cedf
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25540390"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213324"
 ---
 # <a name="view-label-activity-for-documents"></a>Afficher l’activité des étiquettes pour les documents
 
@@ -26,13 +26,13 @@ Après avoir créé vos étiquettes, vérifiez qu’elles sont appliquées au co
   
 Par exemple, avec l’Explorateur d’activité des étiquettes, vous pouvez effectuer les actions suivantes :
   
-- Afficher le nombre d’applications de chaque étiquette chaque jour (jusqu’à 30 jours).
+- Afficher le nombre de fois où chaque étiquette a été appliquée chaque jour (jusqu’à 30 jours).
     
-- Afficher qui a étiqueté les fichiers et à quelle date, ainsi qu’un lien vers le site où se trouvent les fichiers en question.
+- Voir l’utilisateur qui a étiqueté un fichier spécifique et à quelle date, ainsi qu’un lien vers le site où se trouve ce fichier.
     
-- Afficher les fichiers dont les étiquettes ont été modifiées ou supprimées, les anciennes et les nouvelles étiquettes, et l’auteur des changements.
+- Afficher les fichiers dont les étiquettes ont été modifiées ou supprimées, les anciennes et nouvelles étiquettes, ainsi que la personne qui a effectué la modification.
     
-- Filtrer les données pour afficher toutes les activités des étiquettes pour une étiquette, un fichier ou un utilisateur en particulier. Vous pouvez également filtrer l’activité des étiquettes par emplacement (SharePoint ou OneDrive Entreprise) et selon si l’étiquette a été appliquée manuellement ou automatiquement.
+- Filtrer les données afin d’afficher toute l’activité liée à une étiquette, un fichier ou un utilisateur spécifique. Vous pouvez également filtrer l’activité liée aux étiquettes par emplacement (SharePoint ou OneDrive Entreprise) et voir si l’étiquette a été appliquée manuellement ou automatiquement.
     
 - Consulter l’activité des étiquettes pour des dossiers ainsi que des documents individuels. Vous pourrez bientôt afficher le nombre de fichiers de ce dossier ayant été étiquetés suite à l’étiquetage du dossier en question.
     

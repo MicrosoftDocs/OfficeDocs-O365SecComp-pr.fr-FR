@@ -3,7 +3,6 @@ title: Prise en charge de la validation des messages signés DKIM
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,13 +11,13 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: a4c95148-a00c-4d12-85ed-88520b547d97
-description: En savoir plus sur la validation du DKIM signé des messages dans Exchange Online Protection et Exchange Online
-ms.openlocfilehash: 22f0d1c4fdd6b1e159db732d6ef3d956efbf99c9
-ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
+description: En savoir plus sur la validation des messages signés DKIM dans Exchange Online Protection et Exchange Online
+ms.openlocfilehash: 7b40769e18c01199669043c42031987695bba639
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26255829"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223323"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>Prise en charge de la validation des messages signés DKIM
 
@@ -28,6 +27,6 @@ La technologie DKIM valide un message signé numériquement qui apparaît dans l
   
  `Authentication-Results: <contoso.com>; dkim=pass (signature was verified) header.d=example.com;`
   
-Administrateurs peuvent créer des Exchange [les règles de flux de messagerie](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) (également connu sous les règles de transport) sur les résultats d’une validation DKIM pour filtrer ou acheminer les messages en tant que nécessaire. 
+Les administrateurs peuvent créer des [règles de flux de messagerie](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) Exchange (également appelées règles de transport) sur les résultats d'une validation DKIM pour filtrer ou acheminer les messages selon vos besoins. 
   
 

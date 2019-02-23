@@ -3,7 +3,6 @@ title: Désactiver la création de rapports de courrier indésirable dans Outloo
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +10,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8d57fe9e-57b8-4884-9317-80b380804b4a
 description: En tant qu'administrateur Office 365, vous pouvez désactiver la possibilité pour les utilisateurs de signaler le courrier indésirable.
-ms.openlocfilehash: 4c84ae6b92658d045675fd8e8ffe6a6cff516886
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: efe898f57fdf322ce49edd9e2577daab46dd8d8f
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213914"
+ms.locfileid: "30223823"
 ---
 # <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>Désactiver la création de rapports de courrier indésirable dans Outlook sur le Web
 

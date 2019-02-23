@@ -5,16 +5,15 @@ author: MikePlumleyMSFT
 manager: pamgreen
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-ms.custom: ''
+ms.service: O365-seccomp
 localization_priority: Priority
 description: Découvrez comment satisfaire aux exigences du RGPD dans l’environnement Project Server local.
-ms.openlocfilehash: aa74f29e522f24f330db6e53c7c81bc5b708bcf0
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: 67097cdab4fdab31537cf4b6dd27ce17234c2bdc
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272149"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219014"
 ---
 # <a name="gdpr-for-project-server"></a>RGPD pour Project Server
 

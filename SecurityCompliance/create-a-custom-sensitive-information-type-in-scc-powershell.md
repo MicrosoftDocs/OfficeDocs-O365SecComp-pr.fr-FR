@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 82c382a5-b6db-44fd-995d-b333b3c7fc30
 description: Découvrez comment créer et importer un type d’informations sensibles personnalisé pour DLP dans le Centre de Conformité et Sécurité Office 365.
-ms.openlocfilehash: c1774b094163b5712519b3baeb5f0360d84896ea
-ms.sourcegitcommit: e044b4fd72e4151cd17bf2ad05acc057e0c0d45f
+ms.openlocfilehash: 8ac7a22a5b7ba8287add54f6b4cca52c00c3d619
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25895273"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215384"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-office-365-security--compliance-center-powershell"></a>Création d’un type personnalisé d’informations sensibles dans le Centre de Conformité et Sécurité Office 365 PowerShell
 

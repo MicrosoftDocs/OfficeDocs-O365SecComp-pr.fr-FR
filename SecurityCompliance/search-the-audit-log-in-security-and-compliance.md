@@ -3,7 +3,6 @@ title: Effectuer des recherches dans le journal d’audit dans le Centre de séc
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilisez le centre de sécurité & pour rechercher le journal d'audit unifié pour afficher l'activité des utilisateurs et des administrateurs dans votre organisation Office 365. "
-ms.openlocfilehash: 72b2c131c9bd146298b38159fb4c812f789258f1
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 5fe4eac59f3e60e75a7452b0dcc51b6b8ca88a5b
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217974"
+ms.locfileid: "30223763"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Effectuer des recherches dans le journal d'audit dans le centre de sécurité & Office 365 Security
 

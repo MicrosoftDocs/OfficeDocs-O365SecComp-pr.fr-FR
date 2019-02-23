@@ -3,7 +3,6 @@ title: Placer une conservation inaltérable dans une boîte aux lettres supprim�
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,21 +11,21 @@ localization_priority: Normal
 search.appverid: ''
 ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
 description: Découvrez comment créer une conservation inaltérable pour une boîte aux lettres supprimée (récupérable) pour la rendre inactive et conserver son contenu. Vous pouvez ensuite utiliser les outils de découverte électronique Microsoft pour rechercher la boîte aux lettres inactive.
-ms.openlocfilehash: e666ac608ec224bf97caa947be2cb42b742c6fa9
-ms.sourcegitcommit: ca97beff215d154b6ab006ce1222056434fde1a9
+ms.openlocfilehash: 70feb265e95741406dbf170c6be70bd83b2ec081
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29740796"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223523"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>Placer une conservation inaltérable dans une boîte aux lettres supprimée (récupérable) dans Exchange Online
 
 Découvrez comment créer une conservation inaltérable pour une boîte aux lettres supprimée (récupérable) pour la rendre inactive et conserver son contenu. Vous pouvez ensuite utiliser les outils de découverte électronique Microsoft pour rechercher la boîte aux lettres inactive.
   
 > [!NOTE]
-> Nous avons retardée de la date d’échéance pour créer de nouvelles archives permanentes dans Exchange Online (dans les plans autonomes Office 365 et Exchange Online). Mais cette année ou le début d’année, vous ne pourrez créer des archives permanentes dans Exchange Online. Comme alternative à l’utilisation d’archives permanentes, vous pouvez utiliser des [cas eDiscovery](https://go.microsoft.com/fwlink/?linkid=780738) ou [stratégies de rétention](https://go.microsoft.com/fwlink/?linkid=827811) de sécurité Office 365 &amp; centre de conformité. Une fois que nous mettre hors service new archives permanentes, vous pourrez toujours modifier existant archives permanentes et création archives permanentes dans Exchange Server 2013 et les déploiements Exchange hybride seront toujours être prise en charge. Et, vous pourrez toujours placer les boîtes aux lettres en conservation pour litige. 
+> Nous avons repoussé la date d'échéance pour la création de nouvelles conservations inaltérables dans Exchange Online (dans Office 365 et les offres Exchange Online autonomes). Mais plus tard cette année ou l'année prochaine, vous ne serez pas en mesure de créer de nouvelles conservations inaltérables dans Exchange Online. En guise d'alternative à l'utilisation des conservations inaltérables, vous pouvez utiliser des [cas eDiscovery](https://go.microsoft.com/fwlink/?linkid=780738) ou des [stratégies](https://go.microsoft.com/fwlink/?linkid=827811) de rétention dans le centre de sécurité &amp; conformité Office 365. Après avoir mis hors service les nouvelles conservations inaltérables, vous pourrez toujours modifier les conservations inaltérables existantes et créer de nouvelles conservations inaltérables dans Exchange Server 2013 et les déploiements hybrides Exchange seront toujours pris en charge. De plus, vous pourrez toujours placer des boîtes aux lettres en conservation pour litige. 
   
-Vous devrez peut-être une situation où une personne a quitté votre organisation et leur compte d’utilisateur correspondant et la boîte aux lettres ont été supprimées. Ensuite, vous constatez des informations dans la boîte aux lettres qui doive être conservés. Que pouvez-vous faire ? Si la période de rétention de boîte aux lettres supprimée n’a pas expiré, vous pouvez placer une conservation inaltérable dans la boîte aux lettres supprimée (appelé une boîte aux lettres supprimée) et rendre une boîte aux lettres inactive. Une *boîte aux lettres inactive* est utilisée pour conserver le courrier électronique d’un ancien employé une fois qu’il quitte l’organisation. Le contenu d’une boîte aux lettres inactive est conservé pour la durée de la conservation inaltérable qui était est placée sur la boîte aux lettres supprimée lorsqu’il a été effectué inactif. Une fois la boîte aux lettres inactive, vous pouvez rechercher la boîte aux lettres dans Exchange Online, recherche de contenu de sécurité Office 365 à l’aide de la découverte électronique locale &amp; centre de conformité, ou le centre eDiscovery dans SharePoint Online. 
+Vous avez peut-être une situation dans laquelle une personne a quitté votre organisation, et son compte d'utilisateur et sa boîte aux lettres correspondants ont été supprimés. Ensuite, vous réalisez des informations dans la boîte aux lettres qui doivent être conservées. Que pouvez-vous faire? Si la période de rétention de boîte aux lettres supprimée n'a pas expiré, vous pouvez placer une conservation inaltérable dans la boîte aux lettres supprimée (appelée boîte aux lettres supprimée (récupérable)) et la transformer en boîte aux lettres inactive. Une *boîte aux lettres inactive* est utilisée pour conserver le courrier d'un ancien employé une fois qu'il quitte votre organisation. Le contenu d'une boîte aux lettres inactive est conservé pendant la durée de la conservation inaltérable qui a été placée sur la boîte aux lettres supprimée (récupérable) lorsqu'elle est devenue inactive. Une fois la boîte aux lettres inactive, vous pouvez effectuer une recherche dans la boîte aux lettres en utilisant la découverte électronique inaltérable dans Exchange Online, la &amp; recherche de contenu dans le centre de sécurité conformité Office 365 ou le centre EDiscovery dans SharePoint Online. 
   
 > [!NOTE]
 > Dans Exchange Online, une boîte aux lettres supprimée (récupérable) est une boîte aux lettres qui a été supprimée mais qui peut être récupérée pendant une période de rétention spécifique. Le délai de rétention d'une boîte aux lettres supprimée (récupérable) dans Exchange Online est de 30 jours. Ainsi, la boîte aux lettres peut être récupérée (ou rendue inactive) dans les 30 jours qui suivent le moment où elle a été supprimée (récupérable). Après 30 jours, une boîte aux lettres supprimée (récupérable) est marquée pour suppression définitive et ne peut pas être récupérée ou rendue inactive. 
@@ -43,7 +42,7 @@ Vous devrez peut-être une situation où une personne a quitté votre organisati
   Get-Mailbox -SoftDeletedMailbox | FL Name,WhenSoftDeleted,DistinguishedName,ExchangeGuid,PrimarySmtpAddress
   ```
 
-- Pour plus d’informations sur les boîtes aux lettres inactives, voir [vue d’ensemble des boîtes aux lettres inactives dans Office 365](inactive-mailboxes-in-office-365.md).
+- Pour plus d'informations sur les boîtes aux lettres inactives, consultez la rubrique [vue d'ensemble des boîtes aux lettres inactives dans Office 365](inactive-mailboxes-in-office-365.md).
     
 ## <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-to-make-it-an-inactive-mailbox"></a>Placer une conservation inaltérable sur une boîte aux lettres supprimée (récupérable) pour rendre la boîte aux lettres inactive
 
@@ -91,4 +90,4 @@ Une fois la boîte aux lettres supprimée (récupérable) devenue inactive, il e
     
 - [Restaurer une boîte aux lettres inactive](restore-an-inactive-mailbox.md)
     
-- [Supprimer une boîte aux lettres inactive](delete-an-inactive-mailbox.md) (en supprimant la suspension)
+- [Supprimer une boîte aux lettres inactive](delete-an-inactive-mailbox.md) (en supprimant la conservation)

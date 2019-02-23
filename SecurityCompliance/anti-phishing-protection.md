@@ -1,9 +1,26 @@
 ---
-title: "protection anti-hameçonnage dans Office 365" ms. Author: krowley Author: kccross Manager: laurawi ms. Date: 10/11/2018 ms. audience: professionnel ms. topic: article ms. service: O365-seccomp localization_priority: normal Search. appverid:
-- MET150 ms. AssetID: 75af74b2-c7ea-4556-A912-8c48e07271d3 ms. collection:
-    - M365-Security-Description de la conformité: «Office 365 offre une large gamme de protection contre les attaques par hameçonnage par défaut, ainsi que par des offres supplémentaires telles que l'anti-hameçonnage ATP. Cette rubrique présente les ressources en ligne que vous pouvez utiliser pour découvrir et implémenter les stratégies et les options d'anti-hameçonnage dans Office 365. "
+title: Protection anti-hameçonnage dans Office 365
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 10/11/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
+ms.collection:
+- M365-security-compliance
+description: Office 365 offre une large gamme de protection contre les attaques par hameçonnage par défaut, ainsi que par des offres supplémentaires telles que l'anti-hameçonnage ATP. Cette rubrique présente les ressources en ligne que vous pouvez utiliser pour découvrir et implémenter les stratégies et les options d'anti-hameçonnage dans Office 365.
+ms.openlocfilehash: b930e4d41e96225e9b2685ebda02c74c5f8bb7d1
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222803"
 ---
-
 # <a name="anti-phishing-protection-in-office-365"></a>Protection anti-hameçonnage dans Office 365
 
 Office 365 offre une large gamme de protection contre les attaques par hameçonnage par défaut, ainsi que par des offres supplémentaires telles que l'anti-hameçonnage ATP. Cette rubrique présente les ressources en ligne que vous pouvez utiliser pour découvrir et implémenter les stratégies et les options d'anti-hameçonnage dans Office 365.

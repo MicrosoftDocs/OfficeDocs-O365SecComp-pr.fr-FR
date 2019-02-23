@@ -1,10 +1,27 @@
 ---
-title: "protection contre le courrier indésirable pour les courriers électroniques Office 365" ms. Author: krowley Author: kccross Manager: laurawi ms. Date: 6/29/2018 ms. audience: admin ms. topic: Overview ms. service: O365-seccomp localization_priority: normal Search. appverid:
+title: Protection contre le courrier indésirable pour les courriers électroniques Office 365
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 6/29/2018
+ms.audience: Admin
+ms.topic: overview
+ms.service: O365-seccomp
+localization_priority: Normal
+search.appverid:
 - MET150
-- MOE150 ms. AssetID: 6a601501-a6a8-4559-b2e7-56b59c96a586 ms. collection:
-    - M365-Security-Description de la conformité: «Découvrez les paramètres anti-courrier indésirable et les filtres qui vous permettront d'éviter le courrier indésirable dans Exchange Online et Office 365. Vous recevez trop de courrier indésirable dans Office 365? Vous pouvez personnaliser vos filtres de courrier indésirable et vos paramètres de stratégie anti-courrier indésirable. "
+- MOE150
+ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
+ms.collection:
+- M365-security-compliance
+description: Découvrez les paramètres de blocage du courrier indésirable et les filtres qui vous permettront d'éviter le courrier indésirable dans Exchange Online et Office 365. Vous recevez trop de courrier indésirable dans Office 365? Vous pouvez personnaliser vos filtres de courrier indésirable et votre stratégie de blocage du courrier indésirable.
+ms.openlocfilehash: 2d8f433cabda4408da2e29b7bc6570e09e6989dd
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223423"
 ---
-
 # <a name="office-365-email-anti-spam-protection"></a>Protection contre le courrier indésirable pour Office 365
 
 Vous vous inquiétez de trop de courrier indésirable dans Office 365? Nous avons créé plusieurs filtres de courrier indésirable dans votre service Office 365 ou Exchange Online Protection (EOP), afin que votre courrier électronique soit protégé dès que vous recevez votre premier message. Afin d'éviter le courrier indésirable dans Office 365, vous pouvez modifier un paramètre de protection pour résoudre un problème spécifique dans votre organisation (par exemple, vous recevez un grand nombre de courriers indésirables d'un expéditeur particulier, par exemple) ou pour affiner vos paramètres de sorte qu'ils soient adapté pour répondre au mieux aux besoins de votre organisation. Pour ce faire, vous pouvez modifier les paramètres de blocage du courrier indésirable &amp; dans le centre de sécurité conformité Office 365.

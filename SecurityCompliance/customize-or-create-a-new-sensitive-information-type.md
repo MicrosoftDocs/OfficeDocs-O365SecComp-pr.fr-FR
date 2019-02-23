@@ -10,19 +10,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - GDPR
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
 ms.custom: ''
 ms.assetid: ''
 description: Découvrez comment modifier ou créer des types d’informations sensibles Office 365 pour le RGPD.
-ms.openlocfilehash: ed1dca161b5580d67b5a9071ca1d5b32e8b23d80
-ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
+ms.openlocfilehash: 756c68c2270f010d229c65fe9f9829356b661972
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25857282"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220134"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Personnalisation ou création d’un type d’informations sensibles
 

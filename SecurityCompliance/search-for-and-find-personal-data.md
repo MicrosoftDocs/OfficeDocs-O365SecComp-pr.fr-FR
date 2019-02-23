@@ -10,19 +10,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - GDPR
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
 ms.custom: ''
 ms.assetid: ''
 description: Découvrez comment rechercher et localiser des données personnelles dans Office 365.
-ms.openlocfilehash: d83e37db57443580e74b42e7b9bc89d440bf5319
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: 52827b071f13b1add24ea30143fa4e9fefe0375a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272399"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219074"
 ---
 # <a name="search-for-and-find-personal-data"></a>Recherche et localisation des données personnelles
 
