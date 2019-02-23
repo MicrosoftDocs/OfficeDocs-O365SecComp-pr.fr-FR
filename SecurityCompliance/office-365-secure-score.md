@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 02/13/2019
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
 description: Vous avez jamais étonnant quelle est la sécurisation de votre organisation dans Office 365? Le score de sécurité est là pour vous aider. Le score sécurisé analyse la sécurité de votre organisation en fonction de vos activités normales et des paramètres de sécurité dans Office 365 et affecte un score.
-ms.openlocfilehash: cf272869981dd73e1ceb4bd7180cc16acaed0516
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: dd0dc87910853eba9f2ec3ec6752e857462b46e5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "29992358"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220354"
 ---
 # <a name="office-365-secure-score"></a>Secure Score Office 365
 

@@ -6,19 +6,19 @@ manager: laurawi
 ms.date: 02/15/2019
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: "Les stratégies de détection des anomalies dans Office 365 Cloud App Security utilisent des algorithmes intégrés pour vous aider à identifier les problèmes potentiels. Vous devez disposer d'au moins une stratégie de détection d'anomalies, que vous pouvez régler (lorsque vous la créez) à l'aide de filtres. "
-ms.openlocfilehash: a3c7fb16ab10b0bcfaca444093e4e1f52468f0c8
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: 5308af139a46dad0793ed7eedacab0aee62dcc6c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30087363"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220674"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Stratégies de détection des anomalies dans la sécurité des applications cloud Office 365
 
@@ -98,7 +98,7 @@ Une alerte sur plusieurs échecs de connexion peut être suspecte et peut indiqu
   
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Déployer le contrôle d'application d'accès conditionnel pour les applications Office 365](ocas-deploy-conditional-access-app-control.md)
+- [Déployer le contrôle d’accès conditionnel aux applications pour les applications Office 365](ocas-deploy-conditional-access-app-control.md)
 
 - [ReGroupez vos adresses IP pour simplifier la gestion](group-your-ip-addresses-in-ocas.md)
 

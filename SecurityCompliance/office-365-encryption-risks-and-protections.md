@@ -5,18 +5,18 @@ author: kccross
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Résumé: comprendre la résilience des données dans Microsoft Office 365.'
-ms.openlocfilehash: 78bf820c00de7781b62dc7c458f16811c184de0c
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: 650f6a915b2d35eddd30e25b9a45787591f783fa
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "29664160"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218904"
 ---
 # <a name="encryption-risks-and-protections"></a>Protections et les risques de chiffrement
 

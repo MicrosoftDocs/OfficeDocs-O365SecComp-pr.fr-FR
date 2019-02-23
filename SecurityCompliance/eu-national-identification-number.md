@@ -1,39 +1,39 @@
 ---
-title: Numéro d’Identification nationales de l’UE
+title: Numéro d'identification nationale de l'UE
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 2ea971bf-9434-4b61-b825-2bbd28ae6064
-description: Cette rubrique illustre une stratégie de protection contre la perte données lorsqu’il détecte le type d’informations sensibles numéro d’Identification de l’UE National. Ce type d’informations sensibles définit différents motifs, mots clés et autres pour chaque pays.
-ms.openlocfilehash: 29d2126b937ff46039284a74eb2a84f2ebbacb41
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Cette rubrique présente l'aspect d'une stratégie de protection contre la perte de données (DLP) lorsqu'elle détecte le type d'informations sensibles du numéro d'identification national de l'UE. Ce type d'informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
+ms.openlocfilehash: 9a85fd6954f39de348874e03268a2e19ae47366c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528043"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220634"
 ---
-# <a name="eu-national-identification-number"></a>Numéro d’Identification nationales de l’UE
+# <a name="eu-national-identification-number"></a>Numéro d'identification nationale de l'UE
 
-Cette rubrique illustre une stratégie de protection contre la perte données lorsqu’il détecte le type d’informations sensibles numéro d’Identification de l’UE National. Ce type d’informations sensibles définit différents motifs, mots clés et autres pour chaque pays.
+Cette rubrique présente l'aspect d'une stratégie de protection contre la perte de données (DLP) lorsqu'elle détecte le type d'informations sensibles du numéro d'identification national de l'UE. Ce type d'informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
   
 ## <a name="austria"></a>Autriche
 
 ### <a name="format"></a>Format
 
-Une combinaison de caractères 24 des lettres, chiffres et caractères spéciaux
+Combinaison de 24 caractères de lettres, de chiffres et de caractères spéciaux
   
 ### <a name="pattern"></a>Modèle
 
-24 caractères :
+24 caractères:
   
--  22 (pas la casse) lettres, chiffres, barres obliques inverses, barres obliques ou signes plus 
+-  22 lettres (ne respectent pas la casse), chiffres, barres obliques inverses, barres obliques ou signes plus 
     
-- (Pas la casse) de deux lettres, chiffres, barres obliques inverses, obliques, signes plus ou signe égal
+- Deux lettres (ne respectent pas la casse), des chiffres, des barres obliques inverses, des barres obliques, des signes plus ou des signes égal
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -43,9 +43,9 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_austria_eu_national_id_card` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_austria_eu_national_id_card` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_austria_eu_national_id_card` est trouvée. 
+- Un mot clé `Keywords_austria_eu_national_id_card` from est trouvé. 
     
 ```
  
@@ -57,42 +57,42 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsaustriaeunationalidcard"></a>Keywords_austria_eu_national_id_card
 
-numéro d’identification autrichien
+Numéro d'identité autrichien
   
-numéro d’identité national
+Numéro d'identité nationale
   
-numéro d’identité
+Numéro d'identité
   
 
 id national
   
-personalausweis Slovaquie österreich
+Personalausweis Republik Österreich
   
 ## <a name="belgium"></a>Belgique
 
-Pour plus d’informations, voir la section « Numéro National Belgique » dans [Rechercher quels types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d'informations, reportez-vous à la section «Belgique numéro national» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="bulgaria"></a>Bulgarie
 
 ### <a name="format"></a>Format
 
-Dix chiffres sans espaces et les séparateurs
+Dix chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Dix chiffres sans espaces et les séparateurs
+Dix chiffres sans espaces ni délimiteurs
   
--  Six chiffres qui correspondent à la date de naissance (AAMMJJ) 
+-  Six chiffres correspondant à la date de naissance (AAMMJJ) 
     
-- Deux chiffres qui correspondent à l’ordre de naissance
+- Deux chiffres correspondant à l'ordre de naissance
     
-- Un chiffre correspondant au sexe : un chiffre pair pour masculin et un chiffre impair pour femme
+- Un chiffre correspondant au sexe: un chiffre pair pour le mâle et un chiffre impair pour femelle.
     
-- Chiffre un contrôle
+- Un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -102,13 +102,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_bulgaria_national_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_bulgaria_national_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_bulgaria_national_number` est trouvée. 
+- Un mot clé `Keywords_bulgaria_national_number` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_bulgaria_national_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_bulgaria_national_number` trouve le contenu qui correspond au modèle. 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -122,15 +122,15 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsbulgarianationalnumber"></a>Keywords_bulgaria_national_number
 
-egn
+EGN
   
-egn #
+EGN #
   
-bulgare numéro national
+numéro national bulgare
   
 numéro national
   
@@ -139,37 +139,37 @@ numéro de sécurité sociale
   
 nationalnumber #
   
-ssn #
+SSN
   
-ssn
+SSN
   
 nationalnumber
   
-bnn #
+BNN #
   
-bnn
+BNN
   
-numéro d’identification personnelle
+Numéro d'identification personnel
   
 personalidnumber #
   
-ЕДИНЕН ГРАЖДАНСКИ НОМЕР
+единен граждански номер
   
-edinen grazhdanski nomer
+edinen grazhdanski Nomer
   
-ЕГН
+егн
   
-ЕГН #
+егн #
   
 ## <a name="croatia"></a>Croatie
 
-Pour plus d’informations, consultez la section « Croatie Identity Number » dans [Rechercher quels types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d'informations, reportez-vous à la section «Croatie Identity Number» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="cyprus"></a>Chypre
 
 ### <a name="format"></a>Format
 
-Dix chiffres sans espaces et les séparateurs
+Dix chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
@@ -183,9 +183,9 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_cyprus_eu_national_id_card` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_cyprus_eu_national_id_card` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_cyprus_eu_national_id_card` est trouvée. 
+- Un mot clé `Keywords_cyprus_eu_national_id_card` from est trouvé. 
     
 ```
  
@@ -197,45 +197,45 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordscypruseunationalidcard"></a>Keywords_cyprus_eu_national_id_card
 
-numéro de carte d’identité
+Numéro de carte d'identité
   
-numéro d’identification nationale
+Numéro d'identification nationale
   
-numéro d’identification personnelle
+Numéro d'identification personnel
   
-numéro de carte d’identité
+Numéro de carte d'identité
   
-ΤΑΥΤΟΤΗΤΑΣ
+ταυτοτητασ
   
 ## <a name="czech-republic"></a>République tchèque
 
-Pour plus d’informations, consultez la section « Numéro d’identité National tchèque » dans [Rechercher quels types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d'informations, consultez la section «numéro d'identité nationale tchèque» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="denmark"></a>Danemark
 
-Pour plus d’informations, consultez la section « Numéro d’Identification personnelle Danemark » dans [Rechercher quels types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d'informations, reportez-vous à la section «numéro d'identification personnel Danemark» dans [ce que recherche les types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="estonia"></a>Estonie
 
 ### <a name="format"></a>Format
 
-11 chiffres sans espaces et les séparateurs
+11 chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
 11 chiffres :
   
-- Un chiffre correspondant au sexe et century de naissance (masculin nombre impair, nombre pair féminin ; 1-2 : 19 century ; 3-4 : 20 century ; 5-6 : century 21)
+- Un chiffre correspondant au sexe et au siècle de naissance (nombre impair mâle, numéro pair femelle; 1-2:19 siècle; 3-4:20ème siècle; 5-6:21ème siècle)
     
-- Six chiffres qui correspondent à la date de naissance (AAMMJJ)
+- Six chiffres correspondant à la date de naissance (AAMMJJ)
     
-- Trois chiffres qui correspondent à un numéro de série en séparant les personnes naissance à la même date
+- Trois chiffres correspondant à un numéro de série séparant les personnes nés à la même date
     
-- Chiffre un contrôle
+- Un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -245,13 +245,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_estonia_eu_national_id_card` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_estonia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_estonia_eu_national_id_card` est trouvée. 
+- Un mot clé `Keywords_estonia_eu_national_id_card` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_estonia_eu_national_id_card` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_estonia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```
  
@@ -266,23 +266,23 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsestoniaeunationalidcard"></a>Keywords_estonia_eu_national_id_card
 
-code d’identification personnelle
+code d'identification personnel
   
-numéro d’identification personnel
+Numéro d'identification personnel
   
-numéro d’identification nationale
+Numéro d'identification nationale
   
 numéro national
   
-numéro d’identification personnelle
+Numéro d'identification personnel
   
 personalidnumber #
   
-IK
+inverse
   
 isikukood
   
@@ -290,19 +290,19 @@ ID-kaart
   
 ## <a name="finland"></a>Finlande
 
-Pour plus d’informations, voir la section « ID National Finlande » dans [Rechercher quels types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d'informations, reportez-vous à la section «ID national de Finlande» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="france"></a>France
 
-Pour plus d’informations, consultez la section « France National carte d’identité (CNI) » dans [Rechercher quels types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d'informations, reportez-vous à la section «carte d'identité nationale France (CNI)» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="germany"></a>Allemagne
 
-Pour plus d’informations, consultez la section « Numéro de carte d’identité Allemagne » dans [Rechercher quels types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d'informations, reportez-vous à la section «Germany Identity Card Number» dans les [types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="greece"></a>Grèce
 
-Pour plus d’informations, consultez la section « Grèce carte » dans [Rechercher quels types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d'informations, reportez-vous à la section «carte d'identité nationale Grèce» dans [ce que recherche les types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="hungary"></a>Hongrie
 
@@ -314,13 +314,13 @@ Pour plus d’informations, consultez la section « Grèce carte » dans [Rech
 
 11 chiffres :
   
--  Un chiffre correspondant au sexe (masculin-1, 2-femme, autres numéros sont également possibles pour les citoyens naissance 1900 ou aux citoyens citoyenneté double) 
+-  Un chiffre correspondant au sexe (1-mâle, 2 femelles), d'autres numéros sont également possibles pour les citoyens nés avant 1900 ou les citoyens ayant une double citoyenneté. 
     
-- Six chiffres qui correspondent à la date de naissance (AAMMJJ)
+- Six chiffres correspondant à la date de naissance (AAMMJJ)
     
-- Trois chiffres qui correspondent à un numéro de série
+- Trois chiffres correspondant à un numéro de série
     
-- Chiffre un contrôle
+- Un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -330,13 +330,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_hungary_eu_national_id_card` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_hungary_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_hungary_eu_national_id_card` est trouvée. 
+- Un mot clé `Keywords_hungary_eu_national_id_card` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_hungary_eu_national_id_card` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_hungary_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -350,44 +350,44 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordshungaryeunationalidcard"></a>Keywords_hungary_eu_national_id_card
 
-numéro d’identification personnel
+Numéro d'identification personnel
   
 numéro d’identification
 
   
-numéro d’identification personnelle
+Numéro d'identification personnel
   
-személyazonosító igazolvány
+személyazonosító Igazolvány
   
 ## <a name="ireland"></a>Irlande
 
 ### <a name="format"></a>Format
 
-Une combinaison de caractères neuf des lettres, chiffres et un espace dans le modèle spécifié
+Combinaison de neuf caractères de lettres, de chiffres et d'un espace dans le modèle spécifié
   
 ### <a name="pattern"></a>Modèle
 
-Une combinaison de caractères neuf des lettres, chiffres et un espace dans le modèle spécifié
+Combinaison de neuf caractères de lettres, de chiffres et d'un espace dans le modèle spécifié
   
-À partir du 01 janvier 2013 jusqu'à maintenant :
-  
--  Sept chiffres  
-    
-- Chiffre un contrôle
-    
-- Un espace ou la lettre « W » (respecte la casse)
-    
-Avant de janvier 2013 01 :
+Du 01 janvier 2013 au maintenant:
   
 -  Sept chiffres  
     
-- Chiffre un contrôle
+- Un chiffre de contrôle
     
-- Un espace ou une lettre majuscule (respecter la casse)
+- Un espace ou la lettre majuscule «W» (respecte la casse)
+    
+Avant le 1er janvier 2013:
+  
+-  Sept chiffres  
+    
+- Un chiffre de contrôle
+    
+- Un espace ou une lettre majuscule (respecte la casse)
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -397,13 +397,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction de recherche de contenu qui correspond au modèle.
+- La fonction trouve le contenu qui correspond au modèle.
     
-- Un mot clé à partir d’est trouvé.
+- Un mot clé from est trouvé.
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction de recherche de contenu qui correspond au modèle.
+- La fonction trouve le contenu qui correspond au modèle.
     
 ```
  
@@ -418,52 +418,52 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsirelandeunationalidcard"></a>Keywords_ireland_eu_national_id_card
 
-numéro personnel service public
+Numéro de service public
   
-PPS aucune
+n ° PPS
   
-numéro d’assurance sociale et de chiffre d’affaires
+Numéro de produit et d'assurance sociale
   
-RSI aucune
+RSI non
   
-numéro d’identification personnel
+Numéro d'identification personnel
   
 numéro d’identification
 
   
-numéro d’identification personnelle
+Numéro d'identification personnel
   
 uimhir phearsanta seirbhíse poiblí
   
-uimh. PSP
+uimh. toxine
   
 ## <a name="italy"></a>Italie
 
 ### <a name="format"></a>Format
 
-Une combinaison de 16 caractères de lettres et chiffres dans le modèle spécifié
+Combinaison de 16 caractères de lettres et de chiffres dans le modèle spécifié.
   
 ### <a name="pattern"></a>Modèle
 
-Une combinaison de 16 caractères de lettres et chiffres :
+Combinaison de lettres et de chiffres de 16 caractères:
   
-- Trois lettres qui correspondent aux trois premiers consonnes suivantes dans le nom de famille
+- Trois lettres qui correspondent aux trois premières consonnes du nom de la famille
     
-- Trois lettres qui correspondent à la première, troisième et quatrième consonnes dans le premier nom
+- Trois lettres qui correspondent à la première, troisième et quatrième consonnes du prénom
     
-- Deux chiffres qui correspondent à la dernière chiffres de l’année de naissance
+- Deux chiffres correspondant aux derniers chiffres de l'année de naissance
     
-- Une lettre qui correspond à la lettre pour le mois de naissance — lettres sont utilisés dans l’ordre alphabétique, mais que les lettres A à E, H, L, M, P, R t sont utilisés (par conséquent, janvier correspond à un et octobre est R)
+- Une lettre correspondant à la lettre du mois de naissance: les lettres sont utilisées dans l'ordre alphabétique, mais seules les lettres de A à E, H, L, M, P, R à T sont utilisées (par conséquent, le mois de janvier est A et le mois d'octobre est R).
     
-- Deux chiffres correspondant au jour du mois de naissance — afin de différencier sexe, 40 est ajouté à la journée de naissance pour femme
+- Deux chiffres correspondant au jour du mois de naissance — afin de différencier les hommes, 40 est ajouté au jour de naissance pour les femmes
     
-- Quatre chiffres qui correspond à l’indicatif régional spécifique à la commune où naissance de la personne (codes de pays échelle sont utilisés pour étranger)
+- Quatre chiffres correspondant à l'indicatif régional propre à la municipalité où la personne est né (des codes pays sont utilisés pour les pays étrangers)
     
-- Un chiffre parité
+- Un chiffre de parité
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -473,13 +473,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_italy_eu_national_id_card` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_italy_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_italy_eu_national_id_card` est trouvée. 
+- Un mot clé `Keywords_italy_eu_national_id_card` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_italy_eu_national_id_card` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_italy_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -493,53 +493,53 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsitalyeunationalidcard"></a>Keywords_italy_eu_national_id_card
 
 code personnel
   
-numéro de code personnel
+Numéro de code personnel
   
-nombre de certificats personnel
+Numéro de certificat personnel
   
 code fiscal
   
 personalcodeno #
   
-numéro d’identification personnelle
+Numéro d'identification personnel
   
-code d’identification personnelle
+code d'identification personnel
   
-numéro d’identification personale
+codice Personal
   
-NUMERO certificato personale
+numération Certificate-personnel
   
-NUMERO personale
+numération personnelle
   
-NUMERO id personale
+ID de numérotation personnelle
   
-numéro d’identification id personale
+codice ID personnel
   
-numéro d’identification fiscale
+Codice fiscale
   
 ## <a name="italy"></a>Italie
 
 ### <a name="format"></a>Format
 
-11 chiffres et un trait d’union dans le format spécifié
+11 chiffres et un trait d'Union dans le format spécifié
   
 ### <a name="pattern"></a>Modèle
 
-11 chiffres et un trait d’union :
+11 chiffres et un trait d'Union:
   
--  Six chiffres qui correspondent à la date de naissance (jjmmaa) 
+-  Six chiffres correspondant à la date de naissance (JJMMAA) 
     
 - Un trait d’union 
     
-- Un chiffre qui correspond à la century de naissance (« 0 » pour century 19, « 1 » pour le vingtième century et « 2 » pour century 21)
+- Un chiffre correspondant au siècle de naissance («0» pour le 19 siècle, «1» pour le vingtième siècle et «2» pour le 21ème siècle).
     
-- Quatre chiffres, générées de manière aléatoire
+- Quatre chiffres, généré de manière aléatoire
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -549,13 +549,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_latvia_eu_national_id_card` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_latvia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_latvia_eu_national_id_card` est trouvée. 
+- Un mot clé `Keywords_latvia_eu_national_id_card` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_latvia_eu_national_id_card` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_latvia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -569,41 +569,41 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordslatviaeunationalidcard"></a>Keywords_latvia_eu_national_id_card
 
 code personnel
   
-numéro de code personnel
+Numéro de code personnel
   
-nombre de certificats personnel
+Numéro de certificat personnel
   
 personalcodeno #
   
-numéro d’identification personnelle
+Numéro d'identification personnel
   
-code d’identification personnelle
+code d'identification personnel
   
-personnages kods
+Personas kods
   
 ## <a name="lithuania"></a>Lituanie
 
 ### <a name="format"></a>Format
 
-11 chiffres sans espaces et les séparateurs
+11 chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-11 chiffres sans espaces et les séparateurs :
+11 chiffres sans espaces ni délimiteurs:
   
-- Un chiffre qui correspond à la personne sexe et century de naissance
+- Un chiffre correspondant au sexe et au siècle de la personne
     
--  Six chiffres qui correspondent à la date de naissance (AAMMJJ) 
+-  Six chiffres correspondant à la date de naissance (AAMMJJ) 
     
 - Trois chiffres correspondant au numéro de série de la date de naissance
     
-- Chiffre un contrôle
+- Un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -613,13 +613,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_lithuania_eu_national_id_card` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_lithuania_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_lithuania_eu_national_id_card` est trouvée. 
+- Un mot clé `Keywords_lithuania_eu_national_id_card` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_lithuania_eu_national_id_card` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_lithuania_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```
  
@@ -634,49 +634,49 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordslithuaniaeunationalidcard"></a>Keywords_lithuania_eu_national_id_card
 
 code numérique personnel
   
-numéro d’identification unique
+Numéro d'identification unique
   
-numéro de service citoyens
+Numéro de service du citoyen
   
-numéro d’identification unique
+Numéro d'identité unique
   
 uniqueidentityno #
   
 code personnel.
   
-asmeninis skaitmeninis kodas
+Asmeninis skaitmeninis kodas
   
-unikalus identifikavimo numeris
+unikalus identifikavimo
   
-piliečio paslaugos numeris
+piliečio paslaugos
   
 unikalus identifikavimo kodas
   
 asmens kodas.
   
-## <a name="luxemburg"></a>Luxembourg
+## <a name="luxemburg"></a>Relatif
 
 ### <a name="format"></a>Format
 
-11 chiffres sans espaces et les séparateurs
+11 chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
 11 chiffres
   
-- Un chiffre qui correspond à la personne sexe et century de naissance
+- Un chiffre correspondant au sexe et au siècle de la personne
     
--  Six chiffres qui correspondent à la date de naissance (AAMMJJ) 
+-  Six chiffres correspondant à la date de naissance (AAMMJJ) 
     
 - Trois chiffres correspondant au numéro de série de la date de naissance
     
-- Chiffre un contrôle
+- Un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -686,9 +686,9 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_luxemburg_eu_national_id_card` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_luxemburg_eu_national_id_card` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_luxemburg_eu_national_id_card` est trouvée. 
+- Un mot clé `Keywords_luxemburg_eu_national_id_card` from est trouvé. 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -699,41 +699,41 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsluxemburgeunationalidcard"></a>Keywords_luxemburg_eu_national_id_card
 
-identifiant personnel
+ID personnel
   
-numéro d’identification personnelle
+Numéro d'identification personnel
   
 personalidno #
   
-numéro d’identification unique
+Numéro d'identification unique
   
 personalidnumber #
   
-clé de l’id unique
+clé d'ID unique
   
-code d’identification personnelle
+code d'identification personnel
   
 uniqueidkey #
   
-code individuels
+code individuel
   
-id individuel
+ID individuel
   
-id d’eindeutige-nummer
+ID eindeutige-Nummer
   
-id eindeutige
+ID eindeutige
   
 ID personnelle
   
-numéro d’identification personnel
+Numéro d'identification personnel
   
 idpersonnelle #
   
-persönliche identifikationsnummer
+persönliche Identifikationsnummer
   
 eindeutigeid #
   
@@ -741,11 +741,11 @@ eindeutigeid #
 
 ### <a name="format"></a>Format
 
-Sept chiffres suivies d’une lettre
+Sept chiffres suivis d'une lettre
   
 ### <a name="pattern"></a>Modèle
 
-Sept chiffres suivies d’une lettre :
+Sept chiffres suivis d'une lettre:
   
 -  Sept chiffres  
     
@@ -759,13 +759,13 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_malta_eu_national_id_card` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_malta_eu_national_id_card` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_malta_eu_national_id_card` est trouvée. 
+- Un mot clé `Keywords_malta_eu_national_id_card` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 65 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_malta_eu_national_id_card` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_malta_eu_national_id_card` régulière trouve le contenu qui correspond au modèle. 
     
 ```
  
@@ -780,27 +780,27 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsmaltaeunationalidcard"></a>Keywords_malta_eu_national_id_card
 
 code numérique personnel
   
-numéro d’identification unique
+Numéro d'identification unique
   
-numéro de service citoyens
+Numéro de service du citoyen
   
-numéro d’identification unique
+Numéro d'identité unique
   
 uniqueidentityno #
   
-kodiċi numerali personali
+Kodiċi numerali
   
-numru ta ' identifikazzjoni uniku
+numru ta'IDENTIFIKAZZJONI uniku
   
-numru tas-servizz taċ-ċittadin
+numru-Servizz taċ-ċittadin
   
-numru ta' identità uniku
+numru ta'identità uniku
   
 ## <a name="netherlands"></a>Pays-Bas
 
@@ -820,13 +820,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_netherlands_eu_national_id_card` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_netherlands_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir d’est trouvé.
+- Un mot clé from est trouvé.
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_netherlands_eu_national_id_card` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_netherlands_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```
  
@@ -841,45 +841,45 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsnetherlandseunationalidcard"></a>Keywords_netherlands_eu_national_id_card
 
 code numérique personnel
   
-numéro d’identification unique
+Numéro d'identification unique
   
-numéro de service citoyens
+Numéro de service du citoyen
   
-numéro d’identification unique
+Numéro d'identité unique
   
 uniqueidentityno #
   
-bsn
+BSN
   
-bsn #
+BSN
   
-code de numerieke persoonlijke
+persoonlijke Numerieke de code
   
-uniek identificatienummer
+Uniek identificatienummer
   
 burgerservicenummer
   
-uniek identiteitsnummer
+Uniek identiteitsnummer
   
 ## <a name="poland"></a>Pologne
 
-Pour plus d’informations, consultez la section « Pologne National ID (PESEL) » dans [Rechercher quels types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d'informations, reportez-vous à la section «Pologne national ID (PESEL)» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="portugal"></a>Portugal
 
-Pour plus d’informations, consultez la section « Portugal citoyens carte numéro » dans [Rechercher quels types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d'informations, reportez-vous à la section «numéro de carte de citoyen Portugal» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="romania"></a>Roumanie
 
 ### <a name="format"></a>Format
 
-13 chiffres sans espaces et les séparateurs
+13 chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
@@ -893,13 +893,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_romania_eu_national_id_card` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_romania_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_romania_eu_national_id_card` est trouvée. 
+- Un mot clé `Keywords_romania_eu_national_id_card` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_romania_eu_national_id_card` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_romania_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```
  
@@ -914,41 +914,41 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsromaniaeunationalidcard"></a>Keywords_romania_eu_national_id_card
 
 code numérique personnel
   
-numéro d’identification unique
+Numéro d'identification unique
   
-cnp
+CNP
   
-cnp #
+CNP #
   
 épingler
   
-code confidentiel #
+ancre
   
-numéro d’assurance
+Numéro d'assurance
   
 insurancenumber #
   
-numéro d’identification unique
+Numéro d'identité unique
   
 uniqueidentityno #
   
-remboursement numérique personnel
+COD numérique personnel
   
-cabillaud identificare personnel
+COD IDENTIFICARE personnel
   
-remboursement unic identificare
+COD UNIC IDENTIFICARE
   
-unic personnel număr
+UNIC personnel număr
   
 număr identitate
   
-identificare număr personnelle
+număr IDENTIFICARE personnel
   
 număridentitate #
   
@@ -964,7 +964,7 @@ Dix chiffres contenant une barre oblique inverse
   
 ### <a name="pattern"></a>Modèle
 
-Dix chiffres contenant une barre oblique inverse :
+Dix chiffres contenant une barre oblique inverse:
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -974,13 +974,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_slovakia_eu_national_id_card` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_slovakia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_slovakia_eu_national_id_card` est trouvée. 
+- Un mot clé `Keywords_slovakia_eu_national_id_card` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_slovakia_eu_national_id_card` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_slovakia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```
  
@@ -995,28 +995,28 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsslovakiaeunationalidcard"></a>Keywords_slovakia_eu_national_id_card
 
-nombre de naissance
+Numéro de naissance
   
-numéro d’identification nationale
+Numéro d'identification nationale
   
-numéro d’identification personnel
+Numéro d'identification personnel
   
 numéro de sécurité sociale
 
   
 nationalnumber #
   
-ssn #
+SSN
   
-ssn
+SSN
   
 numéro national
   
-numéro d’identification personnelle
+Numéro d'identification personnel
   
 personalidnumber #
   
@@ -1024,7 +1024,7 @@ rč
   
 rodné číslo
   
-rodne cislo
+Rodne Cislo
   
 ## <a name="slovenia"></a>Slovénie
 
@@ -1034,15 +1034,15 @@ rodne cislo
   
 ### <a name="pattern"></a>Modèle
 
-13 chiffres dans le modèle spécifié :
+13 chiffres dans le modèle spécifié:
   
--  Sept chiffres qui correspondent à la date de naissance (DDMMLLL) où « LLL » correspond à la dernière trois chiffres de l’année de naissance 
+-  Sept chiffres correspondant à la date de naissance (DDMMLLL) où «LLL» correspond aux trois derniers chiffres de l'année de naissance 
     
-- Deux chiffres qui correspondent à la zone de naissance
+- Deux chiffres correspondant à la zone de naissance
     
-- Trois chiffres qui correspondent à une combinaison de sexe et le numéro de série pour les personnes naissance le même jour (000-499 pour masculin) et 500-999 pour femme
+- Trois chiffres correspondant à une combinaison de sexe et de numéro de série pour les personnes nées le même jour (000-499 pour les mâles et les 500-999 pour les femelles)
     
-- Chiffre un contrôle
+- Un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1052,13 +1052,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_slovenia_eu_national_id_card` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_slovenia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_slovenia_eu_national_id_card` est trouvée. 
+- Un mot clé `Keywords_slovenia_eu_national_id_card` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_slovenia_eu_national_id_card` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_slovenia_eu_national_id_card` trouve le contenu qui correspond au modèle. 
     
 ```
  
@@ -1073,21 +1073,21 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordssloveniaeunationalidcard"></a>Keywords_slovenia_eu_national_id_card
 
 code numérique personnel
   
-numéro d’identification unique
+Numéro d'identification unique
   
-numéro d’enregistrement unique
+Numéro d'enregistrement unique
   
-numéro d’identification unique
+Numéro d'identité unique
   
 uniqueidentityno #
   
-numéro unique citoyens maître
+Numéro de citoyen principal unique
   
 edinstvena identifikacijska številka
   
@@ -1101,15 +1101,15 @@ emšo
 
 ### <a name="format"></a>Format
 
-Sept chiffres suivies d’un caractère
+Sept chiffres suivis d'un caractère
   
 ### <a name="pattern"></a>Modèle
 
-Sept chiffres suivies d’un caractère
+Sept chiffres suivis d'un caractère
   
 - Sept chiffres 
     
-- Un chiffre ou une lettre (pas la casse)
+- Un chiffre ou une lettre (ne respectant pas la casse)
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1119,9 +1119,9 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_spain_eu_national_id_card` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_spain_eu_national_id_card` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_spain_eu_national_id_card"` est trouvée. 
+- Un mot clé `Keywords_spain_eu_national_id_card"` from est trouvé. 
     
 ```
  
@@ -1133,49 +1133,49 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsspaineunationalidcard"></a>Keywords_spain_eu_national_id_card
 
 DNI
   
-numéro d’identification nationale
+Numéro d'identification nationale
   
-numéro d’identité national
+Numéro d'identité nationale
   
-numéro d’assurance
+Numéro d'assurance
   
-numéro d’identification personnel
+Numéro d'identification personnel
   
 identité nationale
   
-identité personnelle aucune
+n ° d'identité personnelle
   
-numéro d’identification unique
+Numéro d'identité unique
   
 nationalidno #
   
-UniqueID #
+quei
   
-DNI #
+DNI
   
-nationalid #
+nationalID #
   
-NIE #
+nie
   
-NIE
+nie
   
 nienúmero #
   
-NIE número
+nie número
   
-documento nacional de identidad
+Documento Nacional de identidad
   
-identidad único
+identidad Único
   
-Número nacional identidad
+número Nacional identidad
   
-número DNI
+DNI número
   
 dninúmero #
   
@@ -1183,7 +1183,7 @@ identidadúnico #
   
 ## <a name="sweden"></a>Suède
 
-Pour plus d’informations, voir la section « ID National Suède » dans [Rechercher quels types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d'informations, reportez-vous à la section «ID national Suède» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="see-also"></a>Voir aussi
 

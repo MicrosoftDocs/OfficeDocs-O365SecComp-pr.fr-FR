@@ -1,5 +1,5 @@
 ---
-title: Stratégies de session dans Office 365 Cloud App Security
+title: Stratégies de session dans la sécurité des applications cloud Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -7,17 +7,17 @@ ms.reviewer: alesibov
 ms.audience: Admin
 ms.topic: reference
 ms.date: 02/14/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 description: Les stratégies de session de sécurité d'application Cloud d'Office 365 permettent l'analyse au niveau de la session en temps réel, ce qui vous offre une visibilité granulaire sur les applications Office 365 et la possibilité d'effectuer différentes actions en fonction de la stratégie que vous avez définie pour une session utilisateur. Au lieu d'autoriser ou de bloquer entièrement l'accès, avec le contrôle de session, vous pouvez autoriser l'accès tout en surveillant la session et/ou limitez les activités de session spécifiques à l'aide des fonctionnalités de proxy inverse du contrôle d'application d'accès conditionnel.
-ms.openlocfilehash: 0dbfb3e5827fb76e52f0262333d372860f0cb58a
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: a57b62073e93c95217a829f8aa381f4a585dacc5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30103339"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218604"
 ---
-# <a name="session-policies-in-office-365-cloud-app-security"></a>Stratégies de session dans Office 365 Cloud App Security
+# <a name="session-policies-in-office-365-cloud-app-security"></a>Stratégies de session dans la sécurité des applications cloud Office 365
 
 |Évaluation * *\>**|Planification * *\>**|Déploiement * *\>**|Utilisation * * * *|
 |:-----|:-----|:-----|:-----|

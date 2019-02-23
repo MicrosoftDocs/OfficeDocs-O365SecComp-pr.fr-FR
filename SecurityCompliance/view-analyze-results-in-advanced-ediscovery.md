@@ -1,86 +1,86 @@
 ---
-title: Afficher les résultats d’analyse dans Office 365 avancée de découverte électronique
+title: Afficher les résultats d’analyse dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
-description: 'Comprendre où afficher les résultats du processus d’analyse dans Office 365 avancée eDiscovery, y compris les définitions des options de la tâche affichée.  '
-ms.openlocfilehash: 8f1de53e5548c8721f8fbfdb83374edb18379114
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: "Comprendre où afficher les résultats du processus d'analyse dans Office 365 Advanced eDiscovery, y compris les définitions des options de tâche affichées.  "
+ms.openlocfilehash: 990bcbb3c6626521d40f7ce057c764200d5047b5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528488"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218824"
 ---
-# <a name="view-analyze-results-in-office-365-advanced-ediscovery"></a>Afficher les résultats d’analyse dans Office 365 avancée de découverte électronique
+# <a name="view-analyze-results-in-office-365-advanced-ediscovery"></a>Afficher les résultats d’analyse dans Office 365 Advanced eDiscovery
 
 > [!NOTE]
-> Découverte avancée nécessite un Office 365 E3 avec le module complémentaire de conformité avancée ou un abonnement E5 pour votre organisation. Si vous n’avez qu’un plan d’et essayer eDiscovery avancé, vous pouvez [inscrire à une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-Dans découverte avancée, progression et les résultats pour le processus d’analyse peuvent être affichés dans une variété d’affiche comme indiqué ci-dessous.
+Dans Advanced eDiscovery, la progression et les résultats du processus d'analyse peuvent être affichés dans un grand nombre d'écrans, comme décrit ci-dessous.
   
-## <a name="view-analyze-task-status"></a>Afficher l’état de tâche d’analyse
+## <a name="view-analyze-task-status"></a>Afficher l'état de la tâche d'analyse
 
-Dans **Prepare \> analyse \> résultats \> état de la tâche**, l’état est affiché pendant et après l’exécution de processus d’analyse. 
+Dans **préparer \> l' \> analyse \> des résultats**de la tâche, l'État est affiché pendant et après l'exécution de l'analyse. 
   
 ![Analyser l’état des tâches](media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
   
-Les tâches affichées peuvent varier selon les options sélectionnées. 
+Les tâches affichées peuvent varier en fonction des options sélectionnées. 
   
-- **ND/ET : le programme d’installation**: prépare pour l’exécution, par exemple, définit les paramètres d’exécution et cas.
+- **ND/et: configuration**: prépare l'exécution, par exemple, définit les paramètres Run et case.
     
-- **ND/ET : calcul ND**: l’analyse des processus près de copie des fichiers.
+- **ND/tout: calcul de ND**: traite les analyses de fichiers presque en double.
     
-- **ND/ET : calcul ET**: analyse des effectue un Thread de messagerie sur l’ensemble de messagerie entière.
+- **ND/et: et calcul**: effectue une analyse des threads de messagerie sur l'ensemble du message.
     
-- **ND/ET : tableaux croisés dynamiques et similitudes**: effectue le tableau croisé dynamique et traitement des fichiers similarité.
+- **ND/et: tableaux croisés dynamiques et similitudes**: effectue un traitement de type tableau croisé dynamique et similarité des fichiers.
     
-- **ND/ET : mise à jour des métadonnées**: finalise les nouvelles données recueillies sur les fichiers dans la base de données.
+- **ND/et: mise à jour**des métadonnées: finalise les nouvelles données collectées sur les fichiers de la base de données.
     
-- **Thèmes : calcul des thèmes**: exécute l’analyse des thèmes. (Affiché uniquement si sélectionné).
+- **Themes: calculation des thèmes**: exécute l'analyse des thèmes. (Affiché uniquement s'il est sélectionné.)
     
-- **État de la tâche**: cette ligne est affichée après la fin d’une tâche. Lors de l’exécutant des tâches, la durée d’exécution s’affiche.
+- **État**de la tâche: cette ligne s'affiche une fois la tâche terminée. Pendant l'exécution des tâches, la durée de l'exécution s'affiche.
     
 > [!NOTE]
-> Les résultats d’analyse de proximité des doublons et les Threads de courrier électronique (ND et ED) s’applique au nombre de documents à traiter. Il n’inclut pas les fichiers en double exactes. 
+> Les résultats d'analyse des doublons et des threads de messagerie (ND et ED) s'appliquent au nombre de documents à traiter. Il n'inclut pas les fichiers en double exact. 
   
-## <a name="view-near-duplicates-and-email-threads-status"></a>Afficher l’état près de doublons et les Threads de courrier électronique
+## <a name="view-near-duplicates-and-email-threads-status"></a>Afficher l'état des doublons et des threads de messagerie
 
-Les résultats de la population **cible** affichent le nombre de documents, messages électroniques, pièces jointes et les erreurs dans la population cible. 
+Les résultats de la population **cible** affichent le nombre de documents, d'e-mails, de pièces jointes et d'erreurs dans la population cible. 
   
-Les résultats de **Documents** affichent le nombre de tableaux croisés dynamiques, près de doublons uniques et les fichiers en double exactes. 
+Les résultats des **documents** affichent le nombre de tableaux croisés dynamiques, de doublons uniques et de fichiers en double exact. 
   
-Les **messages électroniques** de résultats affichent le nombre d’inclus et inclusif moins uniques copies (inclus) et le reste des messages électroniques. Les différents types de résultats de la messagerie sont les suivants : 
+Les résultats des **courriers électroniques** affichent le nombre de copies inclusives, inclusives et non incluses, ainsi que le reste des messages électroniques. Les différents types de résultats de messagerie sont les suivants: 
   
-- **Comprises**: un message électronique (inclus) est le nœud de fin dans un thread de messagerie et contient tous les l’historique de ce thread. Par conséquent, le réviseur peut se concentrer en toute sécurité sur le courrier électronique (inclus), sans avoir besoin de lire les messages précédents dans le thread. 
+- **Inclus**: un message électronique Inclusive est le nœud de terminaison dans un fil de messagerie et contient l'historique précédent de ce thread. Par conséquent, le réviseur peut se concentrer en toute sécurité sur le courrier inclusif, sans avoir à lire les messages précédents dans le fil de discussion. 
     
-- **Comprises moins**: un message électronique inclus est désigné comme moins inclus s’il y a au moins une autre les pièces jointes associées parents du message (inclus). Dans ce contexte, le terme que parent est utilisé pour les messages vers le haut situés sur le thread de messagerie ou des conversations inclus dans l’e-mail spécifique (inclus). Un réviseur peut utiliser le moins indication comme un signal que bien qu’il ne soit pas nécessaire consulter le contenu des parents messagerie inclus, il peut être utile de consulter les pièces jointes associées les parents du chemin d’accès inclus inclus. 
+- **Moins inclusive**: un message électronique inclusif est désigné sous la forme non inclusive, moins s'il y a une ou plusieurs pièces jointes différentes associées aux parents du message inclusif. Dans ce contexte, le terme parent est utilisé pour les messages situés vers le haut sur le thread de courrier électronique ou les conversations incluses dans ce message électronique inclus spécifique. Un réviseur peut utiliser l'indication moins inclusive comme un signal qui, bien qu'il ne soit pas nécessaire de revoir le contenu des parents du courrier électronique inclus, il peut être utile de vérifier les pièces jointes associées aux parents de chemin d'accès inclusifs. 
     
-- **Copie (inclus)**: un message électronique (inclus) est désigné comme copie inclus s’il s’agit de la copie d’un autre message marqué comme inclus ou inclus moins. En d’autres termes, ce message a le même objet et corps en tant qu’un autre message inclus et, en tant que telles, CO-réside dans le même nœud. Inclus copier des messages contenant le même contenu, ils peuvent généralement être ignorés dans le processus de révision. 
+- **Copie inclusive**: un message électronique inclusif est désigné comme copie inclusive s'il s'agit de la copie d'un autre message marqué comme étant inclusive ou inclusive. En d'autres termes, ce message a le même objet et le même corps qu'un autre message inclusif et, en tant que tel, réside dans le même nœud. Étant donné que les messages de copie inclusive contiennent le même contenu, ils peuvent généralement être ignorés lors du processus de révision. 
     
-- **Le reste**: cela indique le courrier électronique qui ne contient pas de contenu unique et par conséquent, ne peuvent être classées dans une des trois catégories précédentes. Ces messages électroniques n’avez pas besoin être révisé. Si un message contient une pièce jointe qui ne figure pas dans un message électronique inclus ultérieurement, la pièce jointe devront être révisé. Cela est indiqué par l’existence d’un inclus moins de messagerie dans le thread.
+- **Le reste**: indique qu'il s'agit d'un courrier électronique qui ne contient pas de contenu unique et, par conséquent, qu'il n'est pas inclus dans les trois catégories précédentes. Ces messages électroniques n'ont pas besoin d'être vérifiés. Si un message contient une pièce jointe qui ne se trouve pas dans un message électronique plus inclusive, il se peut que la pièce jointe doive être révisée. Cela est indiqué par l'existence d'un courrier inclusif moins le message dans le fil de discussion.
     
-Les résultats de **pièces jointes** affichent le nombre de pièces jointes, en fonction de ce type de manière unique et les doublons. 
+Les résultats des **pièces jointes** affichent le nombre de pièces jointes, en fonction de ce type comme uniques et des doublons. 
   
 ![Doublons à proximité et Threads de messagerie](media/54491303-0ee3-4739-b42e-d1ee486842fd.png)
   
 ## <a name="see-also"></a>Voir aussi
 
-[eDiscovery avancée Office 365](office-365-advanced-ediscovery.md)
+[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Présentation de similarité de document](understand-document-similarity-in-advanced-ediscovery.md)
+[Présentation de la similarité des documents](understand-document-similarity-in-advanced-ediscovery.md)
   
-[Définition des options d’analyse](set-analyze-options-in-advanced-ediscovery.md)
+[Définition des options d'analyse](set-analyze-options-in-advanced-ediscovery.md)
   
-[Ignorer le texte du paramètre](set-ignore-text-in-advanced-ediscovery.md)
+[Définition d'un texte ignoré](set-ignore-text-in-advanced-ediscovery.md)
   
-[Analyse de la configuration des paramètres avancés](view-analyze-results-in-advanced-ediscovery.md)
+[Définition des paramètres avancés d'analyse](view-analyze-results-in-advanced-ediscovery.md)
 

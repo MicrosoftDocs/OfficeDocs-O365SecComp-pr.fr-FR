@@ -1,112 +1,112 @@
 ---
-title: Marquage et formation de la pertinence dans Office 365 avancée de découverte électronique
+title: Marquage et formation au module Pertinence dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
-description: 'Découvrez les étapes nécessaires à la balise, puis avec un échantillon de formation de 40 fichiers durant la phase de formation de la pertinence d’eDiscovery Office 365 avancée.  '
-ms.openlocfilehash: 90272452c8c1317957e542eba07bc43722f9c0e9
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: "Découvrez les étapes à suivre pour marquer, puis utiliser un exemple de formation de 40 fichiers pendant la phase de formation pertinence d'Office 365 Advanced eDiscovery.  "
+ms.openlocfilehash: e8c9c02d72a756565f6fe59011a6788f592463eb
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528137"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30221064"
 ---
-# <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Marquage et formation de la pertinence dans Office 365 avancée de découverte électronique
+# <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Marquage et formation au module Pertinence dans Office 365 Advanced eDiscovery
 
 > [!NOTE]
-> Découverte avancée nécessite un Office 365 E3 avec le module complémentaire de conformité avancée ou un abonnement E5 pour votre organisation. Si vous n’avez qu’un plan d’et essayer eDiscovery avancé, vous pouvez [inscrire à une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-Cette rubrique décrit la procédure de travail avec le module de formation de la pertinence de la découverte avancée. 
+Cette rubrique décrit la procédure à suivre pour utiliser le module de formation avancé de la pertinence eDiscovery. 
   
-Après évaluation est terminée en découverte avancée, et vous permet d’entrer la fenêtre de partage la pertinence de la formation, un exemple de formation de 40 fichiers est placé dans l’onglet de la balise pour le marquage. 
+Une fois l'évaluation terminée dans Advanced eDiscovery et que vous entrez l'étape de formation pertinente, un exemple de formation de 40 fichiers est placé dans l'onglet tag pour le marquage. 
   
-## <a name="performing-relevance-training"></a>Effectue la formation de pertinence
+## <a name="performing-relevance-training"></a>Formation à la pertinence
 
-1. Dans la **la pertinence \> balise** onglet, le volet de balisage s’affiche par défaut dans le volet de gauche et les fichiers sont affichés, une à la fois pour le marquage. 
+1. Dans l' **onglet \> balise de pertinence** , le volet de marquage est affiché par défaut dans le volet de gauche et les fichiers d'exemple sont affichés, un à la fois pour le marquage. 
     
     ![Volet Balise de pertinence](media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
   
-    Dans l’onglet **balise** , figure le nom du fichier complet. Cela peut être le chemin d’accès, l’objet de courrier électronique, titre ou nom défini par l’utilisateur. L’ID, le chemin d’accès de fichier ou le chemin d’accès de texte peut être copié en cliquant sur le chemin du fichier. 
+    Sous l' **** onglet balise, le nom complet du fichier est affiché. Il peut s'agir du chemin d'accès, de l'objet du courrier électronique, du titre ou du nom défini par l'utilisateur. Vous pouvez copier l'ID, le chemin d'accès ou le chemin d'accès au texte en cliquant avec le bouton droit sur le chemin d'accès du fichier. 
     
-    L’onglet **balise** balisage statistiques afficher le nombre d’exemple de fichier (en haut du volet de gauche), le numéro du fichier actuellement affiché en dehors du nombre total de fichiers dans l’échantillon (partie inférieure du volet de droite) et le nombre total en cours de fichiers balisés dans l’échantillon (bas de t Il volet gauche), les modifications que vous ajoutez une balise fichiers. Cela s’applique pour n’importe quel intérêt pour marquer terminé, que ce soit dans l’évaluation, formation, rattrapage ou de Test. 
+    Les **** statistiques de marquage des onglets de balise indiquent le numéro d'exemple de fichier (en haut du volet de gauche), le numéro du fichier actuellement affiché en dehors du total des fichiers dans l'exemple (volet inférieur du volet droit) et le nombre total actuel de fichiers balisés dans l'exemple (en bas de t dans le volet de gauche), qui change lorsque vous balisez des fichiers. Cela s'applique à toutes les balises de pertinence réalisées, qu'il s'agisse d'évaluation, de formation, de rattrapage ou de test. 
     
-    Icônes indiquant l’existence des fichiers de votre famille, les balises et les commentaires sont affichés dans l’affichage du fichier dans une barre au-dessus du fichier.
+    Les icônes indiquant l'existence de commentaires, de balises et de fichiers de famille sont affichés dans l'affichage des fichiers dans une barre située au-dessus du fichier.
     
-2. Déterminer la pertinence du fichier pour le problème d’incident et la balise le fichier en utilisant le balisage des cases d’option icône ou raccourcis clavier, comme indiqué dans le tableau suivant :
+2. Déterminez la pertinence du problème lié au fichier et marquez le fichier à l'aide des boutons d'option d'étiquetage ou des raccourcis clavier, comme indiqué dans le tableau suivant:
     
 | |
-|**Option de liaison**|**Description**|**Raccourci clavier**|**Pour les problèmes plusieurs - en bloc des raccourcis clavier de balise**|
+|**Option de marquage**|**Description**|**Raccourci clavier**|**Pour plusieurs problèmes-raccourci clavier pour les balises en bloc**|
 |:-----|:-----|:-----|:-----|
-|R  <br/> |Pertinents  <br/> |Z  <br/> |MAJ + Z  <br/> |
-|NR  <br/> |Non pertinents  <br/> |X  <br/> |MAJ + X  <br/> |
-|Ignorer  <br/> |Ignorer  <br/> |C  <br/> |MAJ + A  <br/> |
+|R  <br/> |Y  <br/> |Z  <br/> |Maj + Z  <br/> |
+|NR  <br/> |Non pertinent  <br/> |X  <br/> |Maj + X  <br/> |
+|Ignoré  <br/> |Ignoré  <br/> |C  <br/> |Maj + A  <br/> |
    
-  - Lorsqu’il existent des problèmes divers pour un fichier, après la liaison d’un problème, la sélection se déplace vers le prochain numéro (le cas échéant). 
+  - Lorsque plusieurs problèmes existent pour un fichier, après avoir balisé un problème, la sélection se déplace vers le prochain problème (le cas échéant). 
     
-  - Mots clés qui ont été définies par l’administrateur ou un gestionnaire d’incidents lors de la mise en surbrillance des mots clés (le programme d’installation de la pertinence \> mise en surbrillance des mots clés), s’affiche (dans les couleurs spécifiées) pour vous aider à identifier les fichiers appropriés lors de la liaison. Si un mot clé a un double souligné, il peut être sélectionné pour afficher une info-bulle avec la description du mot clé. 
+  - Mots clés définis par l'administrateur ou le gestionnaire de cas lors de la mise en surbrillance des mots-clés (mise \> en surbrillance des mots-clés), s'affiche (dans les couleurs spécifiées) pour vous aider à identifier les fichiers appropriés lors du marquage. Si un mot clé comporte un double trait de soulignement, vous pouvez cliquer dessus pour afficher une info-bulle avec la description du mot-clé. 
     
-    Si vous le souhaitez, dans l’onglet **balise** , cliquez sur **paramètres de balises** pour définir les options suivantes : 
+    Éventuellement, sous l'onglet **balise** , cliquez sur **paramètres** des balises pour définir les options suivantes: 
     
     ![Paramètres de balise de pertinence](media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
   
-  - **Balise en bloc**: utilisez cette option pour attribuer plusieurs problèmes pour un fichier en sélectionnant **tout** pour définir la balise pour le fichier sélectionné pour tous les problèmes (problèmes déjà balisé substitutions) ou en sélectionnant **le reste** pour appliquer la balise pour les problèmes restants non balisés. L’option sélectionnée est conservé pour tous les cas de cet utilisateur jusqu'à ce que modifié par l’utilisateur (paramètre est par utilisateur pour les cas de tous les utilisateur). 
+  - **BaliSe en bloc**: utilisez cette option pour affecter plusieurs problèmes pour un fichier en sélectionnant **tout** pour définir la balise du fichier sélectionné pour tous les problèmes (remplacement des problèmes déjà marqués) ou en sélectionnant **le reste** pour appliquer la balise aux problèmes non balisés restants. L'option sélectionnée reste en vigueur pour tous les cas de cet utilisateur jusqu'à ce qu'elle soit modifiée par cet utilisateur (le paramètre est défini par utilisateur pour tous les cas de l'utilisateur). 
     
-  - **Balise automatique**: Activez cette case à cocher pour définir les autres problèmes liés à un fichier en tant que non pertinent après un marquage pertinent unique.
+  - **BaliSe automatique**: activez cette case à cocher pour définir d'autres problèmes pour un fichier comme n'étant pas pertinents après une seule balise pertinente.
     
-  - **Avance automatique**: Activez cette case à cocher pour déplacer la sélection de fichiers affichés dans le fichier suivant pour marquer le dernier ou uniquement le problème non balisé. 
+  - **Avance automatique**: activez cette case à cocher pour déplacer la sélection du fichier affiché vers le fichier suivant lors du marquage du dernier problème non marqué ou non marqué. 
     
-    Les fichiers ignorés ne seront pas considérées pour la formation de la pertinence et à des fins de score de pertinence.
+    Les fichiers ignorés ne sont pas considérés comme des objectifs de formation et de notation de pertinence.
     
-3. Comments texte libre, associés à un fichier, peuvent être visualisés et modifiés par le biais de l’option de **commentaires** dans la liste déroulante de gauche. (facultatif) 
+3. Les commentaires en texte libre, associés à un fichier, peuvent être affichés et modifiés via l'option **Commentaire** dans la liste déroulante du volet de gauche. module 
     
-4. Instructions pour le balisage peuvent être affichées en sélectionnant l’option **instructions de balisage** dans la liste déroulante de gauche. 
+4. Vous pouvez afficher les instructions de marquage en sélectionnant l'option **indications de marquage** dans la liste déroulante volet de gauche. 
     
-5. Une fois que vous marquer tous les fichiers dans la liste est terminé et que vous êtes prêt à calculer les résultats, cliquez sur **Calculer**. L’onglet **suivi** s’affiche. 
+5. Une fois que vous avez terminé le marquage de tous les fichiers de la liste et que vous êtes prêt à calculer les résultats, cliquez sur **calculer**. L'onglet **suivi** est affiché. 
     
-## <a name="working-with-the-sample-files-list"></a>Utilisation de la liste de fichiers d’exemple
+## <a name="working-with-the-sample-files-list"></a>Utilisation de la liste des exemples de fichiers
 
-L’exemple de liste de fichiers permet d’afficher une liste des fichiers dans un exemple de formation et d’effectuer différentes actions sur un ou plusieurs fichiers. Dans la **pertinence** \> onglet **balise** , le volet gauche **d’exemples de fichiers** affiche la liste des exemples de fichiers pour le traitement à l’évaluation, de formation, rattrapage et incohérences de processus. 
+La liste exemple de fichiers vous permet d'afficher la liste des fichiers dans un exemple de formation et d'effectuer diverses actions sur un ou plusieurs fichiers. Dans l'onglet de la balise de **pertinence** \> **** , le volet de gauche **fichiers d'exemple** affiche une liste d'exemples de fichiers à traiter avec les processus d'évaluation, de formation, de rattrapage et d'incohérence. 
   
-1. Dans la **la pertinence \> balise** , sélectionnez les fichiers d’exemple dans la liste déroulante de gauche. Les exemples de fichiers sont répertoriés dans le volet gauche. 
+1. Dans l' **onglet \> balise de pertinence** , sélectionnez les fichiers de l'exemple dans la liste déroulante du volet de gauche. Les fichiers de l'exemple sont répertoriés dans le volet de gauche. 
     
     ![Liste d’exemples de fichiers de balise de pertinence](media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
   
-2. Sélectionnez un nombre spécifique de l’échantillon ou fichier en entrant ou en sélectionnant son numéro dans les zones **exemple** ou un **fichier** . 
+2. Sélectionnez un exemple ou un numéro de fichier spécifique en entrant ou en sélectionnant son numéro dans les zones **exemple** ou **fichier** . 
     
-  -   - Un numéro de séquence du fichier est répertorié dans la colonne de gauche de la liste des fichiers affichés sous l’onglet **balise** . En cliquant sur l’en-tête, la commande affichée d’origine des fichiers renvoie dans leur ordre d’origine. 
+  -   - Un numéro de séquence de fichier est répertorié dans la colonne de gauche de la liste des **** fichiers affichés sous l'onglet balise. En cliquant sur l'en-tête, l'ordre d'origine affiché des fichiers reprend son ordre d'origine. 
     
-  - Cliquez sur une ligne du fichier pour afficher son contenu dans le volet droit.
+  - Le simple clic sur une ligne de fichier affiche son contenu dans le volet de droite.
     
-  - Naviguer entre les fichiers dans l’exemple en cours en utilisant les options de barre de menus inférieures. En outre, les raccourcis clavier de navigation sont disponibles :
+  - Naviguer entre les fichiers dans l'exemple actuel à l'aide des options de la barre de menus inférieure. Les raccourcis clavier de navigation sont également disponibles:
     
-    Pour naviguer vers le premier fichier dans l’exemple : Maj + Ctrl +\<
+    Pour accéder au premier fichier de l'exemple: Maj + Ctrl +\<
     
-    Pour naviguer vers le fichier dans l’exemple précédent : MAJ +\<
+    Pour accéder au fichier précédent dans l'exemple: Maj +\<
     
-    Pour accéder au fichier dans l’exemple suivant : MAJ +\>
+    Pour accéder au fichier suivant dans l'exemple: Maj +\>
     
-    Pour accéder au dernier fichier dans l’exemple : Maj + Ctrl +\>
+    Pour accéder au dernier fichier de l'exemple: Maj + Ctrl +\>
     
 ## <a name="see-also"></a>Voir aussi
 
-[eDiscovery avancée Office 365](office-365-advanced-ediscovery.md)
+[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Évaluation de la présentation de la pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
+[Présentation de l'évaluation en matière de pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
   
-[Marquage et évaluation](tagging-and-assessment-in-advanced-ediscovery.md)
+[Balisage et évaluation](tagging-and-assessment-in-advanced-ediscovery.md)
   
-[Analyse de la pertinence de suivi](track-relevance-analysis-in-advanced-ediscovery.md)
+[Analyse de la pertinence](track-relevance-analysis-in-advanced-ediscovery.md)
   
-[Selon les résultats de la sélection du conteneur](decision-based-on-the-results-in-advanced-ediscovery.md)
+[Choix en fonction des résultats](decision-based-on-the-results-in-advanced-ediscovery.md)
   
-[Test d’analyse de la pertinence](test-relevance-analysis-in-advanced-ediscovery.md)
+[Évaluation de l'analyse de pertinence](test-relevance-analysis-in-advanced-ediscovery.md)
 

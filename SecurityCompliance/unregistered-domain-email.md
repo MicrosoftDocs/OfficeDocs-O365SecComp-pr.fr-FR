@@ -1,50 +1,50 @@
 ---
-title: Courrier électronique de domaine non inscrit
+title: Courrier électronique de domaine non enregistré
 ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 10/17/2018
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
-description: Si vous envoyez un volume élevé de messagerie du domaine ou non, vous courez le risque de votre courrier électronique bloqué. Lisez cet article pour en savoir plus.
-ms.openlocfilehash: f632c5f7ab94a200a364828408b13c0026335869
-ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
+description: Si vous envoyez un volume important de courrier non enregistré de domaine, vous risquez de bloquer le blocage de votre courrier. Lisez cet article pour en savoir plus.
+ms.openlocfilehash: bef39780438a6d9669354bddaed391b2364badf8
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27769781"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220774"
 ---
-# <a name="unregistered-domain-email-what-you-need-to-know"></a>Non domaine Email : Ce que vous devez connaître
+# <a name="unregistered-domain-email-what-you-need-to-know"></a>Courrier électronique de domaine non enregistré: ce que vous devez savoir
 
-Permet à Office 365 pour les clients afin de relayer des messages via Exchange Online Protection (EOP). Un exemple pris en charge serait lorsque les utilisateurs ont une boîte aux lettres Office 365 et une personne externe les envoie un courrier électronique mais transfert de messages est configuré afin qu’il repasse à la boîte aux lettres externe. Il s’agit généralement dans les environnements de formation où les participants à tirer parti de leur interface électronique mais toujours obtenir courriels relatifs à l’école. Un autre exemple est lorsque les clients se trouvent dans un scénario hybride et des serveurs locaux envoyer un message électronique s’en déconnecter EOP.
+Office 365 permet aux clients de relayer certains messages via Exchange Online Protection (EOP). Par exemple, lorsque les utilisateurs disposent d'une boîte aux lettres Office 365 et que quelqu'un les envoie à une boîte aux lettres externe, le transfert de courrier est configuré de manière à ce qu'il redevienne la boîte aux lettres externe de l'utilisateur. Il s'agit le plus souvent dans les environnements d'éducation où les étudiants veulent tirer parti de leur interface de messagerie personnelle mais recevoir des courriers électroniques liés à l'école. Un autre exemple est lorsque les clients sont dans un scénario hybride et disposent de serveurs sur site qui envoient des messages provenant d'EOP.
 
-## <a name="problems-with-unregistered-domains"></a>Problèmes liés à des domaines non enregistrés
+## <a name="problems-with-unregistered-domains"></a>Problèmes liés aux domaines non enregistrés
 
-Le problème est lorsque les serveurs locaux compromises et finissent par le relais d’un volume important de courrier indésirable en dehors d’EOP. Dans la plupart des cas, les connecteurs droite sont-ils mais courrier électronique est envoyé à partir de domaines non enregistrés, également appelé non. Office 365 autorise un montant raisonnable du courrier provenant de domaines ou non, mais un domaine accepté doit être configuré dans le centre d’administration pour chaque domaine que vous envisagez de l’envoi d’absence du bureau.
+Le problème est lié au fait que les serveurs sur site sont compromis et finissent par relayer un volume important de courrier indésirable de EOP. Dans presque tous les cas, les connecteurs corrects sont configurés, mais les courriers électroniques sont envoyés depuis les domaines non enregistrés, également appelés domaines. Office 365 autorise une quantité raisonnable de courrier provenant de domaines non enregistrés, mais un domaine accepté doit être configuré dans le centre d'administration pour chaque domaine que vous envisagez d'envoyer à.
 
-Une fois compromis, les clients n’est pas autorisées d’envoyer des messages sortants pour les domaines non enregistrés. Les utilisateurs recevront un rapport de remise (NDR) indique :
+Une fois compromis, les clients ne pourront pas envoyer de messages sortants pour les domaines non enregistrés. Les utilisateurs reçoivent une notification d'échec de remise qui indique:
 
-- 550 5.7.750 Service non disponible. Client bloqué à partir de l’envoi à partir de domaines non enregistrés
+- 550 5.7.750 service non disponible. Le client a bloqué l'envoi à partir de domaines non enregistrés
 
-## <a name="unblocking-tenant-in-order-to-send-again"></a>Déblocage client afin d’envoyer à nouveau
+## <a name="unblocking-tenant-in-order-to-send-again"></a>Déblocage du client afin de le renvoyer
 
-Il existe plusieurs choses que vous devez faire si vous êtes bloqué pour l’envoi à partir de domaines non enregistrés :
+Il y a plusieurs choses à faire si vous êtes bloqué pour l'envoi à partir de domaines non enregistrés:
 
-1. Assurez-vous que vous avez enregistré tous vos domaines dans le centre d’administration Office 365. Vous pouvez trouver plus d’informations [ici](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+1. Assurez-vous d'enregistrer tous vos domaines dans le centre d'administration Office 365. Vous trouverez plus d'informations [ici](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
-2. Recherchez les connecteurs inhabituels. Acteurs malveillants crée souvent nouveaux connecteurs entrants dans votre organisation cliente Office 365 pour envoyer du courrier indésirable. Vous pouvez trouver plus d’informations sur la vérification de vos connecteurs [ici](https://docs.microsoft.com/en-us/powershell/module/exchange/mail-flow/get-inboundconnector?view=exchange-ps). 
+2. Recherchez les connecteurs inhabituels. Les acteurs malveillants vont souvent créer de nouveaux connecteurs entrants dans votre client Office 365 pour envoyer du courrier indésirable. Vous trouverez plus d'informations sur la vérification de vos connecteurs [ici](https://docs.microsoft.com/en-us/powershell/module/exchange/mail-flow/get-inboundconnector?view=exchange-ps). 
 
-3. Verrouiller vos serveurs sur site et vous assurer qu’ils ne sont pas compromises.
+3. Verrouillez vos serveurs locaux et assurez-vous qu'ils ne sont pas compromis.
 
 > [!TIP]
-> Il existe de nombreux facteurs impliqués ici, particulièrement si ces serveurs tiers. Cependant, vous devez être en mesure de vérifier que tous les messages en laissant vos serveurs sont légitimes.
+> Il existe de nombreux facteurs impliqués, en particulier s'il s'agit de serveurs tiers. Quelle que soit la fonctionnalité, vous devez être en mesure de confirmer que tout le courrier sortant de vos serveurs est légitime.
 
-4. Une fois que vous avez terminé, vous devez appeler le Support de Microsoft et demander à obtenir votre client déblocage pour renvoyer à partir de domaines ou non.  Il est utile de fournir le code d’erreur, mais vous devez prouver que votre environnement est sécurisé et que le courrier indésirable n’est pas envoyé à nouveau. Vous pouvez trouver plus d’informations sur l’ouverture d’un cas de prise en charge [ici](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online).
+4. Une fois la procédure terminée, vous devez appeler le support Microsoft et demander à ce que votre locataire débloquée pour envoyer à nouveau des domaines non enregistrés.  Le fait de fournir le code d'erreur est utile, mais vous devrez prouver que votre environnement est sécurisé et que le courrier indésirable ne sera pas renvoyé. Vous trouverez plus d'informations sur l'ouverture d'un cas de support [ici](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online).
   
 ## <a name="for-more-information"></a>Pour plus d’informations
 

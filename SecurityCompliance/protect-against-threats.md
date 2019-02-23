@@ -5,28 +5,28 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection: M365-security-compliance
-description: Découvrez comment Office 365 pour entreprises peuvent aider à protéger votre organisation contre une variété de menaces, y compris l’usurpation d’identité, logiciels malveillants, du courrier indésirable, les tentatives de hameçonnage et contre les accès aux données.
-ms.openlocfilehash: 6caf891acb8c96d17a3aa1b4ffc222380ed9341b
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: Découvrez comment Office 365 Enterprise peut aider votre organisation à protéger votre organisation contre diverses menaces, notamment l'usurpation d'identité, les programmes malveillants, le courrier indésirable, les tentatives de hameçonnage et l'accès non autorisé aux données.
+ms.openlocfilehash: ca2bfda0403a1f482989977f7bc018bbd94afeb5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995135"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220484"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Se protéger contre les menaces dans Office 365
 
-Avec Office 365 pour entreprises, vous pouvez protéger votre organisation contre diverses menaces, y compris l’usurpation d’identité, logiciels malveillants, du courrier indésirable, les tentatives de hameçonnage et contre les accès aux données. Utilisez les ressources de cette page pour en savoir plus sur la protection contre les menaces et les actions à qu'entreprendre.
+Avec Office 365 Enterprise, vous pouvez protéger votre organisation contre diverses menaces, notamment l'usurpation d'identité, les programmes malveillants, le courrier indésirable, les tentatives de hameçonnage et l'accès non autorisé aux données. Utilisez les ressources de cette page pour en savoir plus sur la protection contre les menaces et les actions que vous pouvez effectuer.
   
-## <a name="anti-spoofing"></a>Anti-l’usurpation d’identité
+## <a name="anti-spoofing"></a>Protection contre l'usurpation d'identité
 
-Si vous utilisez un domaine personnalisé dans Office 365, aident à arrêter fraude expéditeur de votre organisation, améliorer la sécurité de messagerie électronique et protéger la réputation de votre domaine.
+Si vous utilisez un domaine personnalisé dans Office 365, aidez-vous à arrêter la fraude de l'expéditeur dans votre organisation, améliorer la sécurité de la messagerie et protéger la réputation de votre domaine.
   
 - [Configurer SPF dans Office 365 pour empêcher l’usurpation](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
     
@@ -34,11 +34,11 @@ Si vous utilisez un domaine personnalisé dans Office 365, aident à arrêter fr
     
 - [Utiliser DMARC pour valider les e-mails dans Office 365](use-dmarc-to-validate-email.md)
     
-## <a name="anti-spam-amp-anti-malware"></a>Anti-spam &amp; contre les programmes malveillants
+## <a name="anti-spam-amp-anti-malware"></a>Anti-programme &amp; malveillant de blocage du courrier indésirable
 
-Découvrez Office 365 score de blocage du courrier indésirable, le filtrage des connexions et capture de programmes malveillants, y compris les paramètres par défaut et signaler le courrier électronique malveillant.
+Découvrez le score de blocage du courrier indésirable, le filtrage des connexions et la capture de programmes malveillants Office 365, notamment les paramètres par défaut et la façon de signaler des messages malveillants.
   
-- [Anti-spam &amp; protection anti-programme malveillant](anti-spam-and-anti-malware-protection.md)
+- [Protection contre le &amp; courrier indésirable contre les programmes malveillants](anti-spam-and-anti-malware-protection.md)
     
 - [Activer l’audit de boîte aux lettres dans Office 365](enable-mailbox-auditing.md)
     
@@ -48,11 +48,11 @@ Découvrez Office 365 score de blocage du courrier indésirable, le filtrage des
     
 ## <a name="advanced-threat-protection"></a>Protection avancée contre les menaces
 
-Configurer des stratégies pour gérer l’usurpation d’identité, protection contre les attaques par hameçonnage et intercepter les URL malveillantes ou des fichiers dans les messages électroniques avec Advanced Threat Protection (DAV).
+ConFigurez des stratégies pour gérer l'usurpation d'identité, vous protéger contre les attaques par hameçonnage et intercepter les URL ou les fichiers malveillants dans les messages électroniques à l'aide de la protection avancée contre les menaces.
   
-- [En savoir plus sur Office 365 DAV](office-365-atp.md)
+- [En savoir plus sur la protection avancée contre les menaces Office 365](office-365-atp.md)
     
-- [En savoir plus sur l’aide à la décision usurpation d’identité](learn-about-spoof-intelligence.md)
+- [En savoir plus sur les informations d'usurpation d'identité](learn-about-spoof-intelligence.md)
     
 - [Configurer des stratégies anti-hameçonnage](set-up-anti-phishing-policies.md)
     
@@ -62,7 +62,7 @@ Configurer des stratégies pour gérer l’usurpation d’identité, protection 
     
 ## <a name="encryption"></a>Chiffrement
 
-Obtenir une vue d’ensemble de chiffrement, configurer les stratégies de gestion des droits et le chiffrement du courrier électronique et configurer les paramètres de chiffrement supplémentaires. Obtenir plus d’informations sur le certificat racine utilisé par les serveurs de messagerie électronique pour Office 365.
+Obtenez une introduction sur le chiffrement, configurez les stratégies de gestion des droits et le chiffrement du courrier électronique, et configurez les paramètres de chiffrement supplémentaires. Obtenir des détails sur le certificat racine utilisé par nos serveurs de messagerie pour Office 365.
   
 - [En savoir plus sur le chiffrement dans Office 365](encryption.md)
     
@@ -70,40 +70,40 @@ Obtenir une vue d’ensemble de chiffrement, configurer les stratégies de gesti
     
 - [Chiffrement de messages Office 365 (OME)](ome.md)
     
-- [Implémenter mettre votre propre clé (BYOK)](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault)
+- [Implémenter votre propre clé (BYOK)](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault)
     
-## <a name="managing-devices-amp-apps"></a>Gestion des appareils &amp; applications
+## <a name="managing-devices-amp-apps"></a>Gestion des &amp; applications de périphériques
 
-Surveiller et contrôler l’accès de périphériques mobiles vos données Office 365 et interdire ou approuver les applications mobiles utilisés dans votre organisation.
+Surveiller et contrôler la manière dont les appareils mobiles accèdent à vos données Office 365 et interdire ou approuver les applications mobiles utilisées dans votre organisation.
   
 - [Créer et déployer des stratégies de sécurité des appareils](https://support.office.com/article/d310f556-8bfb-497b-9bd7-fe3c36ea2fd6)
     
 - [Gérer les autorisations des applications à l’aide de la sécurité des applications cloud Office 365](manage-app-permissions-in-ocas.md)
     
-## <a name="threat-intelligence"></a>Informations sur les menaces
+## <a name="threat-intelligence"></a>Intelligence des menaces
 
-Identifier, analyser et comprendre les attaques et menaces rapidement en utilisant les analyses et la base de connaissances disponible pour empêcher les attaques.
+Identifier, surveiller et comprendre les attaques, et résoudre rapidement les menaces à l'aide des informations et des connaissances disponibles pour empêcher les attaques.
   
-- [Obtenir une vue d’ensemble des menaces Office 365](office-365-ti.md)
+- [Présentation de l'aide à la décision Office 365](office-365-ti.md)
     
 - [Prise en main d’Office 365 Threat Intelligence](get-started-with-ti.md)
     
 ## <a name="privileged-access-management"></a>Gestion des accès privilégiés
 
-Aider à protéger votre organisation contre les violations qui peuvent utiliser des comptes d’administration privilégié existants avec accès permanent à des données sensibles ou l’accès aux paramètres de configuration critique. Après avoir activé la gestion de l’accès privilégié, les utilisateurs devront demander l’accès juste-à-temps pour effectuer des tâches avec des privilèges élevés et privilégiés via un flux de travail d’approbation qui est hautement et de temps.
+Protégez votre organisation contre les violations pouvant utiliser des comptes d'administrateur privilégié existants avec un accès permanent aux données sensibles ou un accès aux paramètres de configuration critiques. Une fois que vous avez activé la gestion des accès privilégiés, les utilisateurs doivent demander un accès juste-à-temps pour effectuer des tâches élevées et privilégiées via un flux de travail d'approbation hautement étendu et lié au temps.
   
-- [Obtenir une vue d’ensemble des privilèges accéder à la gestion](privileged-access-management-overview.md)
+- [Obtenir une vue d'ensemble de la gestion des accès privilégiés](privileged-access-management-overview.md)
     
-- [Prendre en main privilégié accéder à la gestion](privileged-access-management-configuration.md)
+- [Prise en main de la gestion des accès privilégiés](privileged-access-management-configuration.md)
 
 ## <a name="additional-options"></a>Options supplémentaires
 
-Obtenir plus d’informations sur les technologies Microsoft associées et les processus permettant de sécurité Office 365 contre les menaces.
+Obtenez plus d'informations sur les technologies et les processus Microsoft associés qui permettent de sécuriser Office 365 contre les menaces.
   
 - [En savoir plus sur Azure Rights Management](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
     
-- [En savoir plus sur Azure coffre-fort clé](https://docs.microsoft.com/azure/key-vault/)
+- [En savoir plus sur le coffre de clés Azure](https://docs.microsoft.com/azure/key-vault/)
     
-- [En savoir plus sur l’isolation du locataire](http://download.microsoft.com/download/3/F/0/3F0420A2-657B-44B6-B21E-D7BD98A94390/Tenant%20Isolation%20in%20Office%20365.pdf)
+- [En savoir plus sur l'isolation du client](http://download.microsoft.com/download/3/F/0/3F0420A2-657B-44B6-B21E-D7BD98A94390/Tenant%20Isolation%20in%20Office%20365.pdf)
     
 
