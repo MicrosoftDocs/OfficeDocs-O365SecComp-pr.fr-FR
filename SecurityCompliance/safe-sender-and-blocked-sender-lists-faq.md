@@ -3,7 +3,7 @@ title: Listes des expéditeurs autorisés et des expéditeurs bloqués dans Exch
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 5/22/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
 description: En tant qu'administrateur Exchange Online ou Exchange Online Protection (EOP), vous pouvez faire en sorte qu'un message électronique circulant via le service ne soit pas marqué comme courrier indésirable. Une manière de procéder consiste à créer des listes d'expéditeurs approuvés et d'expéditeurs bloqués pour les membres de votre organisation.
-ms.openlocfilehash: cbf886bdcc40044a31b285b6806aecbc95f0f97c
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: d785f5f605dd9b8610eaed95f3f2783d04bcbc14
+ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003103"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30206347"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>Listes des expéditeurs autorisés et des expéditeurs bloqués dans Exchange Online
 
@@ -32,15 +32,15 @@ Si vous n'êtes pas administrateur et que vous souhaitez simplement gérer votre
 
 Les limites d'expéditeurs autorisés et d'expéditeurs bloqués dans Exchange Online diffèrent des limites d'Active Directory et d'Outlook. Ces limites sont :
   
-- Limite d’expéditeurs autorisés : 1 024
+- Limite d'expéditeurs autorisés: 1 024
     
-- Limite d’expéditeurs bloqués : 500
+- Limite des expéditeurs bloqués: 500
     
 Remarque :
   
-Vous pouvez rencontrer l’erreur qui est décrite dans KB 2590466 (« vous recevez l’erreur « Erreur de validation de courrier indésirable » dans Outlook Web App pour Exchange Server 2010 »). Pour résoudre ce problème, désactivez la case à cocher « Approuver les messages électroniques à partir de mes contacts ». Vous pouvez également réduire la quantité d’adresses de messagerie qui sont dans votre dossier de Contacts par défaut afin qu’elle le nombre maximal autorisé de limite de 1 024 dans Exchange Online est définie pour l’attribut « MaxSafeSenders ». Pour plus d’informations sur cet attribut et l’applet de commande Set-Mailbox, reportez-vous à la suite de rubrique :
+Vous pouvez observer l'erreur décrite dans [KB2590466](https://support.microsoft.com/help/2590466/you-receive-the-error-junk-e-mail-validation-error-in-outlook-web-app). Pour résoudre ce problème, désactivez la case à cocher «approuver les courriers électroniques en provenance de mes contacts». Vous pouvez également réduire le nombre d'adresses de messagerie figurant dans votre dossier de contacts par défaut afin de l'appliquer à la limite maximale autorisée de 1024 dans Exchange Online qui est définie pour l'attribut «Paramètres MaxSafeSenders». Pour plus d'informations sur cet attribut et sur la cmdlet Set-Mailbox, voirscript rubrique suivante:
   
-[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Set-Mailbox?view=exchange-ps)
+[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Set-Mailbox)
   
 ## <a name="see-also"></a>See also
 

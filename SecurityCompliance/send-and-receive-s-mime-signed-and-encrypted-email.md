@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: 1ce37ada-0a80-4b47-8611-d008979589ff
 description: L'envoi d'un message chiffré S/MIME ou la réponse à un tel message dans Microsoft Outlook est très proche de la procédure avec un message non chiffré.
-ms.openlocfilehash: d70625b2c65a021132cf251f35228d279cb4c44a
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 071b96452ed5668c4fcfb34c9c8fadcd6369ce84
+ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003183"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30206357"
 ---
 # <a name="send-and-receive-smime-signed-and-encrypted-email"></a>Envoi et réception de messages électroniques chiffrés et signés S/MIME
 
-L'envoi d'un message chiffré S/MIME ou la réponse à un tel message dans Microsoft Outlook est très proche de la procédure avec un message non chiffré. Pour plus d'informations sur la lecture ou l'envoi de messages chiffrés S/MIME à partir d'un programme de messagerie, tel qu'Outlook Web App, consultez la rubrique [Utiliser Outlook pour envoyer et répondre à des messages chiffrés S/MIME](https://go.microsoft.com/fwlink/p/?LinkId=392520) .
+L'envoi ou la réponse à un message chiffré S/MIME dans Microsoft Outlook est très similaire à celui d'un message non chiffré. Pour plus d'informations sur la lecture ou l'envoi de messages chiffrés S/MIME à partir d'un programme de messagerie tel qu'Outlook sur le Web (anciennement Outlook Web App), consultez la rubrique [utiliser Outlook pour envoyer des messages chiffrÉs s/MIME et y répondre](https://go.microsoft.com/fwlink/p/?LinkId=392520).
   
 ## <a name="for-more-information"></a>Pour plus d'informations
 

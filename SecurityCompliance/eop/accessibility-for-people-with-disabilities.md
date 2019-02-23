@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: Ent_O365_Hybrid
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
 description: Microsoft s'engage à faciliter l'utilisation de ses produits et services pour tous.
-ms.openlocfilehash: 1e59e995ffaa4b3324913d8e49a9c2ee00b142fb
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 2403ef4ec5a99202a45b40bf639193643b6ad02b
+ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026211"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30206377"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>Accessibilité pour les personnes présentant un handicap
 
@@ -25,11 +25,11 @@ ms.locfileid: "22026211"
 
 Les fonctionnalités suivantes visent à faciliter l’accès des personnes à mobilité réduite à Microsoft :
   
-- [Raccourcis clavier dans Exchange 2013 Preview](http://technet.microsoft.com/library/146b2b52-1ef8-4606-991a-4cf4da694970.aspx)
+- [Raccourcis clavier dans Exchange Server](http://technet.microsoft.com/library/146b2b52-1ef8-4606-991a-4cf4da694970.aspx)
     
-- [Raccourcis clavier dans Outlook Web App](https://go.microsoft.com/fwlink/p/?LinkId=268079)
+- [Raccourcis clavier dans Outlook sur le web](https://go.microsoft.com/fwlink/p/?LinkId=268079)
     
-En outre, certaines fonctionnalités d’accessibilité et les utilitaires de Windows peuvent bénéficier des utilisateurs Exchange présentant un handicap. En outre, les modifications de taille et la couleur de Windows PowerShell fournissent des options d’accessibilité lors de l’utilisation d’Exchange Management Shell. Pour plus d’informations sur les options d’accessibilité de Windows PowerShell, voir [accessibilité de Windows PowerShell 2.0 ISE](https://go.microsoft.com/fwlink/p/?LinkId=258240).
+De plus, certaines fonctionnalités d'accessibilité et certains utilitaires de Windows peuvent profiter aux utilisateurs d'Exchange présentant un handicap. En outre, les modifications de taille et de couleur Windows PowerShell fournissent des options d'accessibilité lors de l'utilisation de l'environnement de commande Exchange Management Shell. Pour plus d'informations sur les options d'accessibilité de Windows PowerShell, consultez la rubrique [Accessibility in Windows powershell 2,0 ISE](https://go.microsoft.com/fwlink/p/?LinkId=258240).
   
 ## <a name="accessibility-features-of-exchange-help"></a>Fonctionnalités d'accessibilité d'Aide de Microsoft Exchange
 
