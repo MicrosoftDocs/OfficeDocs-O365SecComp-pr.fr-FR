@@ -14,15 +14,13 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-ms.custom: ''
-ms.assetid: ''
 description: Découvrez trois outils qui permettent de surveiller les fuites de données personnelles.
-ms.openlocfilehash: 85c7eecddd1af9609ccd468551836339c1bb2a54
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: e86dc8fdfa8de600c6de4e4a28309862771c3cea
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217894"
+ms.locfileid: "30223573"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Surveillance des fuites de données personnelles
 
