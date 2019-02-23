@@ -6,30 +6,30 @@ manager: laurawi
 ms.date: 8/16/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 8c00df57-9fb3-459c-ba87-40480c87bd55
-description: Cette rubrique illustre une stratégie de protection contre la perte données lorsqu’il détecte le type d’informations sensibles numéro de passeport l’Union européenne. Ce type d’informations sensibles définit différents motifs, mots clés et autres pour chaque pays.
-ms.openlocfilehash: 7a7fc1ff826aab4096c46535686eb0fd68173c6f
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Cette rubrique présente ce qu'une stratégie de protection contre la perte de données (DLP) recherche lorsqu'elle détecte le type d'informations sensibles du numéro de passeport de l'UE. Ce type d'informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
+ms.openlocfilehash: c46f683bd1baf651bcf13c1766dfff3cb953b341
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "25840323"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218264"
 ---
 # <a name="eu-passport-number"></a>Numéro de passeport UE
 
-Cette rubrique illustre une stratégie de protection contre la perte données lorsqu’il détecte le type d’informations sensibles numéro de passeport l’Union européenne. Ce type d’informations sensibles définit différents motifs, mots clés et autres pour chaque pays.
+Cette rubrique présente ce qu'une stratégie de protection contre la perte de données (DLP) recherche lorsqu'elle détecte le type d'informations sensibles du numéro de passeport de l'UE. Ce type d'informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
   
 ## <a name="austria"></a>Autriche
 
 ### <a name="format"></a>Format
 
-Une lettre suivie d’un espace facultatif et sept chiffres
+Une lettre suivie d'un espace facultatif et de sept chiffres
   
 ### <a name="pattern"></a>Modèle
 
-Une combinaison d’une lettre, sept chiffres et un espace :
+Une combinaison d'une lettre, de sept chiffres et d'un espace:
   
 - Une lettre (ne respecte pas la casse)
     
@@ -45,9 +45,9 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_austria_eu_passport_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_austria_eu_passport_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_austria_eu_passport_number` est trouvée. 
+- Un mot clé `Keywords_austria_eu_passport_number` from est trouvé. 
     
 ```
  <!-- EU Passport Number -->
@@ -64,17 +64,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_austria_eu_passport_number**|
 |:-----|
-|numéro de passeport  <br/> numéro de passeport autrichien  <br/> passeport aucune  <br/> reisepass  <br/> österreichisch reisepass  <br/> |
+|Numéro de passeport  <br/> Numéro de passeport autrichien  <br/> Numéro de passeport  <br/> reisepass  <br/> österreichisch Reisepass  <br/> |
    
 ## <a name="belgium"></a>Belgique
 
 ### <a name="format"></a>Format
 
-Deux lettres suivies de six chiffres sans espaces ni les délimiteurs
+Deux lettres suivies de six chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Deux lettres et suivi de six chiffres
+Deux lettres et suivies de six chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -84,9 +84,9 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_belgium_eu_passport_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_belgium_eu_passport_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_belgium_eu_passport_number` est trouvée. 
+- Un mot clé `Keywords_belgium_eu_passport_number` from est trouvé. 
     
 ```
  <!-- EU Passport Number -->
@@ -103,13 +103,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_belgium_eu_passport_number**|
 |:-----|
-|numéro de passeport  <br/> numéro de passeport belge  <br/> passeport aucune  <br/> paspoort  <br/> paspoortnummer  <br/> reisepass kein  <br/> reisepass  <br/> |
+|Numéro de passeport  <br/> Numéro de passeport belge  <br/> Numéro de passeport  <br/> paspoort  <br/> paspoortnummer  <br/> Reisepass kein  <br/> reisepass  <br/> |
    
 ## <a name="bulgaria"></a>Bulgarie
 
 ### <a name="format"></a>Format
 
-Neuf chiffres sans espaces et les séparateurs
+Neuf chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
@@ -123,9 +123,9 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_bulgaria_eu_passport_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_bulgaria_eu_passport_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_bulgaria_eu_passport_number` est trouvée. 
+- Un mot clé `Keywords_bulgaria_eu_passport_number` from est trouvé. 
     
 ```
  <!-- EU Passport Number -->
@@ -142,13 +142,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_bulgaria_eu_passport_number**|
 |:-----|
-|numéro de passeport  <br/> numéro de passeport bulgare  <br/> passeport aucune  <br/> НОМЕР НА ПАСПОРТА  <br/> |
+|Numéro de passeport  <br/> Numéro de Passeport bulgare  <br/> Numéro de passeport  <br/> номер на паспорта  <br/> |
    
 ## <a name="croatia"></a>Croatie
 
 ### <a name="format"></a>Format
 
-Neuf chiffres sans espaces et les séparateurs
+Neuf chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
@@ -162,9 +162,9 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_croatia_eu_passport_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_croatia_eu_passport_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_croatia_eu_passport_number` est trouvée. 
+- Un mot clé `Keywords_croatia_eu_passport_number` from est trouvé. 
     
 ```
  <!-- EU Passport Number -->
@@ -181,17 +181,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_croatia_eu_passport_number**|
 |:-----|
-|numéro de passeport  <br/> numéro de passeport croate  <br/> passeport aucune  <br/> broj putovnice  <br/> |
+|Numéro de passeport  <br/> Numéro de passeport croate  <br/> Numéro de passeport  <br/> Broj putovnice  <br/> |
    
 ## <a name="cyprus"></a>Chypre
 
 ### <a name="format"></a>Format
 
-Une lettre de suivi de 6 à 8 chiffres sans espaces ni les délimiteurs
+Une lettre suivie de 6-8 chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Une lettre de suivi de 6 à 8 chiffres
+Une lettre suivie de six à huit chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -201,9 +201,9 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_cyprus_eu_passport_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_cyprus_eu_passport_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_cyprus_eu_passport_number` est trouvée. 
+- Un mot clé `Keywords_cyprus_eu_passport_number` from est trouvé. 
     
 ```
  <!-- EU Passport Number -->
@@ -220,7 +220,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_cyprus_eu_passport_number**|
 |:-----|
-|numéro de passeport  <br/> numéro de passeport Chypre  <br/> passeport aucune  <br/> ΑΡΙΘΜΌ ΔΙΑΒΑΤΗΡΊΟΥ  <br/> |
+|Numéro de passeport  <br/> Numéro de passeport de Chypre  <br/> Numéro de passeport  <br/> αριθμό διαβατηρίου  <br/> |
    
 ## <a name="czech-republic"></a>République tchèque
 
@@ -240,9 +240,9 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_czech_republic_eu_passport_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_czech_republic_eu_passport_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_czech_republic_eu_passport_number` est trouvée. 
+- Un mot clé `Keywords_czech_republic_eu_passport_number` from est trouvé. 
     
 ```
  <!-- EU Passport Number -->
@@ -259,13 +259,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_czech_republic_eu_passport_number**|
 |:-----|
-|numéro de passeport  <br/> numéro de passeport tchèque  <br/> passeport aucune  <br/> pas de cestovní  <br/> pas  <br/> |
+|Numéro de passeport  <br/> Numéro de passeport tchèque  <br/> Numéro de passeport  <br/> CESTOVNÍ pas  <br/> boîte  <br/> |
    
 ## <a name="denmark"></a>Danemark
 
 ### <a name="format"></a>Format
 
-Neuf chiffres sans espaces et les séparateurs
+Neuf chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
@@ -279,9 +279,9 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_denmark_eu_passport_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_denmark_eu_passport_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_denmark_eu_passport_number` est trouvée. 
+- Un mot clé `Keywords_denmark_eu_passport_number` from est trouvé. 
     
 ```
  <!-- EU Passport Number -->
@@ -298,17 +298,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_denmark_eu_passport_number**|
 |:-----|
-|numéro de passeport  <br/> numéro de passeport danois  <br/> passeport aucune  <br/> pas  <br/> pasnummer  <br/> |
+|Numéro de passeport  <br/> Numéro de passeport danois  <br/> Numéro de passeport  <br/> boîte  <br/> pasnummer  <br/> |
    
 ## <a name="estonia"></a>Estonie
 
 ### <a name="format"></a>Format
 
-Une lettre de suivi de sept chiffres sans espaces ni les délimiteurs
+Une lettre suivie de sept chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Une lettre de suivi de sept chiffres
+Une lettre suivie de sept chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -318,9 +318,9 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_estonia_eu_passport_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_estonia_eu_passport_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_estonia_eu_passport_number` est trouvée. 
+- Un mot clé `Keywords_estonia_eu_passport_number` from est trouvé. 
     
 ```
  <!-- EU Passport Number -->
@@ -337,25 +337,25 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_estonia_eu_passport_number**|
 |:-----|
-|numéro de passeport  <br/> numéro de passeport estonien  <br/> passeport aucune  <br/> eesti kodaniku passe  <br/> |
+|Numéro de passeport  <br/> Numéro de passeport estonien  <br/> Numéro de passeport  <br/> Eesti kodaniku  <br/> |
    
 ## <a name="finland"></a>Finlande
 
-Pour plus d’informations, consultez la section « Numéro de passeport Finlande » dans [Rechercher quels types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d'informations, consultez la section «numéro de passeport de Finlande» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="france"></a>France
 
-Pour plus d’informations, voir la section « Numéro de passeport France » dans [Rechercher quels types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d'informations, consultez la section «numéro de passeport français» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="germany"></a>Allemagne
 
-Pour plus d’informations, voir la section « Numéro de passeport Allemagne » dans [Rechercher quels types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d'informations, reportez-vous à la section «numéro de passeport allemand» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="greece"></a>Grèce
 
 ### <a name="format"></a>Format
 
-Deux lettres suivies à sept chiffres sans espaces ni les délimiteurs
+Deux lettres suivies de sept chiffres, sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
@@ -369,9 +369,9 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_greece_eu_passport_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_greece_eu_passport_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_greece_eu_passport_number` est trouvée. 
+- Un mot clé `Keywords_greece_eu_passport_number` from est trouvé. 
     
 ```
  <!-- EU Passport Number -->
@@ -388,13 +388,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_greece_eu_passport_number**|
 |:-----|
-|numéro de passeport  <br/> numéro de passeport grec  <br/> passeport aucune  <br/> ΔΙΑΒΑΤΗΡΙΟ  <br/> |
+|Numéro de passeport  <br/> Numéro de passeport grec  <br/> Numéro de passeport  <br/> διαβατηριο  <br/> |
    
 ## <a name="hungary"></a>Hongrie
 
 ### <a name="format"></a>Format
 
-Deux lettres suivies de six ou sept chiffres sans espaces ni les délimiteurs
+Deux lettres suivies de six ou sept chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
@@ -408,9 +408,9 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_hungary_eu_passport_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_hungary_eu_passport_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_hungary_eu_passport_number` est trouvée. 
+- Un mot clé `Keywords_hungary_eu_passport_number` from est trouvé. 
     
 ```
  <!-- EU Passport Number -->
@@ -427,17 +427,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_hungary_eu_passport_number**|
 |:-----|
-|numéro de passeport  <br/> numéro de passeport hongrois  <br/> passeport aucune  <br/> útlevél száma  <br/> |
+|Numéro de passeport  <br/> Numéro de passeport hongrois  <br/> Numéro de passeport  <br/> útlevél száma  <br/> |
    
 ## <a name="ireland"></a>Irlande
 
 ### <a name="format"></a>Format
 
-Deux lettres ou des chiffres suivis sept chiffres sans espaces ni les délimiteurs
+Deux lettres ou chiffres suivis de sept chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Deux lettres ou des chiffres suivis à sept chiffres :
+Deux lettres ou chiffres suivis de sept chiffres:
   
 - Deux chiffres ou lettres (ne respectent pas la casse)
     
@@ -451,9 +451,9 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_ireland_eu_passport_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_ireland_eu_passport_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_ireland_eu_passport_number` est trouvée. 
+- Un mot clé `Keywords_ireland_eu_passport_number` from est trouvé. 
     
 ```
  <!-- EU Passport Number -->
@@ -470,17 +470,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_ireland_eu_passport_number**|
 |:-----|
-|numéro de passeport  <br/> numéro de passeport irlandais  <br/> passeport aucune  <br/> pas  <br/> passeport  <br/> passeport  <br/> numero de passeport  <br/> |
+|Numéro de passeport  <br/> Numéro de passeport irlandais  <br/> Numéro de passeport  <br/> boîte  <br/> passeport  <br/> passeport  <br/> passeport numérique  <br/> |
    
 ## <a name="italy"></a>Italie
 
 ### <a name="format"></a>Format
 
-Deux lettres ou des chiffres suivis sept chiffres sans espaces ni les délimiteurs
+Deux lettres ou chiffres suivis de sept chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Deux lettres ou des chiffres suivis à sept chiffres :
+Deux lettres ou chiffres suivis de sept chiffres:
   
 - Deux chiffres ou lettres (ne respectent pas la casse)
     
@@ -494,9 +494,9 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_italy_eu_passport_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_italy_eu_passport_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_italy_eu_passport_number` est trouvée. 
+- Un mot clé `Keywords_italy_eu_passport_number` from est trouvé. 
     
 ```
  <!-- EU Passport Number -->
@@ -513,17 +513,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_italy_eu_passport_number**|
 |:-----|
-|numéro de passeport italien  <br/> Repubblica italiana passaporto  <br/> passaporto  <br/> passaporto italiana  <br/> numéro de passeport  <br/> Italiana passaporto numero  <br/> numero passaporto  <br/> numéro passeport italien  <br/> passeport numéro  <br/> |
+|Numéro de passeport italien  <br/> Repubblica Italiana passaporto  <br/> passaporto  <br/> passaporto Italiana  <br/> Numéro de passeport  <br/> Italiana passaporto numérique  <br/> passaporto numérique  <br/> numéro passeport italien  <br/> numéro passeport  <br/> |
    
 ## <a name="latvia"></a>Lettonie
 
 ### <a name="format"></a>Format
 
-Deux lettres ou des chiffres suivis sept chiffres sans espaces ni les délimiteurs
+Deux lettres ou chiffres suivis de sept chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Deux lettres ou des chiffres suivis à sept chiffres :
+Deux lettres ou chiffres suivis de sept chiffres:
   
 - Deux chiffres ou lettres (ne respectent pas la casse)
     
@@ -537,9 +537,9 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_latvia_eu_passport_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_latvia_eu_passport_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_latvia_eu_passport_number` est trouvée. 
+- Un mot clé `Keywords_latvia_eu_passport_number` from est trouvé. 
     
 ```
  <!-- EU Passport Number -->
@@ -556,17 +556,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_latvia_eu_passport_number**|
 |:-----|
-|numéro de passeport  <br/> numéro de passeport letton  <br/> passeport aucune  <br/> pase numurs  <br/> |
+|Numéro de passeport  <br/> Numéro de passeport letton  <br/> Numéro de passeport  <br/> pase numurs  <br/> |
    
 ## <a name="lithuania"></a>Lituanie
 
 ### <a name="format"></a>Format
 
-Huit des chiffres ou des lettres sans espaces ni les délimiteurs
+Huit chiffres ou lettres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Huit des chiffres ou des lettres (non sensible à la casse)
+Huit chiffres ou lettres (ne respectant pas la casse)
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -576,9 +576,9 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_lithuania_eu_passport_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_lithuania_eu_passport_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_lithuania_eu_passport_number` est trouvée. 
+- Un mot clé `Keywords_lithuania_eu_passport_number` from est trouvé. 
     
 ```
  <!-- EU Passport Number -->
@@ -595,17 +595,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_lithuania_eu_passport_number**|
 |:-----|
-|numéro de passeport  <br/> numéro de passeport lithunian  <br/> passeport aucune  <br/> Paso numeris  <br/> |
+|Numéro de passeport  <br/> Numéro de passeport lithunian  <br/> Numéro de passeport  <br/> Paso chiffres  <br/> |
    
-## <a name="luxemburg"></a>Luxembourg
+## <a name="luxemburg"></a>Relatif
 
 ### <a name="format"></a>Format
 
-Huit des chiffres ou des lettres sans espaces ni les délimiteurs
+Huit chiffres ou lettres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Huit des chiffres ou des lettres (non sensible à la casse)
+Huit chiffres ou lettres (ne respectant pas la casse)
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -615,9 +615,9 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_nation_eu_passport_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_nation_eu_passport_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_nation_eu_passport_number` est trouvée. 
+- Un mot clé `Keywords_nation_eu_passport_number` from est trouvé. 
     
 ```
  <!-- EU Passport Number -->
@@ -634,7 +634,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_nation_eu_passport_number**|
 |:-----|
-|numéro de passeport  <br/> numéro de passeport letton  <br/> passeport aucune  <br/> passnummer  <br/> |
+|Numéro de passeport  <br/> Numéro de passeport letton  <br/> Numéro de passeport  <br/> passnummer  <br/> |
    
 ## <a name="malta"></a>Malte
 
@@ -654,9 +654,9 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_malta_eu_passport_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_malta_eu_passport_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_malta_eu_passport_number` est trouvée. 
+- Un mot clé `Keywords_malta_eu_passport_number` from est trouvé. 
     
 ```
  <!-- EU Passport Number -->
@@ -673,17 +673,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_malta_eu_passport_number**|
 |:-----|
-|numéro de passeport  <br/> numéro de passeport maltais  <br/> passeport aucune  <br/> numérique un numru-passaport  <br/> |
+|Numéro de passeport  <br/> Numéro de passeport maltais  <br/> Numéro de passeport  <br/> numru Tal-Passaport  <br/> |
    
 ## <a name="netherlands"></a>Pays-Bas
 
 ### <a name="format"></a>Format
 
-Neuf des lettres ou des chiffres sans espaces ni les délimiteurs
+Neuf lettres ou chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Neuf des lettres ou des chiffres
+Neuf lettres ou chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -693,9 +693,9 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_netherlands_eu_passport_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_netherlands_eu_passport_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_netherlands_eu_passport_number` est trouvée. 
+- Un mot clé `Keywords_netherlands_eu_passport_number` from est trouvé. 
     
 ```
  <!-- EU Passport Number -->
@@ -712,21 +712,21 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_netherlands_eu_passport_number**|
 |:-----|
-|numéro de passeport néerlandais  <br/> numéro de passeport  <br/> numéro de passeport pays-bas  <br/> nederlanden paspoort nummer  <br/> paspoort  <br/> nederlanden paspoortnummer  <br/> paspoortnummer  <br/> |
+|Numéro de passeport néerlandais  <br/> Numéro de passeport  <br/> Numéro de passeport néerlandais  <br/> Nederlanden paspoort Nummer  <br/> paspoort  <br/> Nederlanden paspoortnummer  <br/> paspoortnummer  <br/> |
    
 ## <a name="poland"></a>Pologne
 
-Pour plus d’informations, voir la section « Numéro de passeport Pologne » dans [Rechercher quels types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d'informations, reportez-vous à la section «numéro de passeport polonais» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="portugal"></a>Portugal
 
 ### <a name="format"></a>Format
 
-Une lettre de suivi de six chiffres sans espaces ni les délimiteurs
+Une lettre suivie de six chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Une lettre de suivi de six chiffres :
+Une lettre suivie de six chiffres:
   
 - Une lettre (ne respecte pas la casse)
     
@@ -740,9 +740,9 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_portugal_eu_passport_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_portugal_eu_passport_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_portugal_eu_passport_number` est trouvée. 
+- Un mot clé `Keywords_portugal_eu_passport_number` from est trouvé. 
     
 ```
  <!-- EU Passport Number -->
@@ -759,13 +759,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_portugal_eu_passport_number**|
 |:-----|
-|numéro de passeport  <br/> numéro de passeport portugais  <br/> passeport aucune  <br/> Número passaporte  <br/> |
+|Numéro de passeport  <br/> Numéro de passeport Portugais  <br/> Numéro de passeport  <br/> número do Passaporte  <br/> |
    
 ## <a name="romania"></a>Roumanie
 
 ### <a name="format"></a>Format
 
-Huit ou neuf chiffres sans espaces et les séparateurs
+Huit ou neuf chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
@@ -779,9 +779,9 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_romania_eu_passport_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_romania_eu_passport_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_romania_eu_passport_number` est trouvée. 
+- Un mot clé `Keywords_romania_eu_passport_number` from est trouvé. 
     
 ```
  <!-- EU Passport Number -->
@@ -798,17 +798,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_romania_eu_passport_number**|
 |:-----|
-|numéro de passeport  <br/> numéro de passeport roumain  <br/> passeport aucune  <br/> numărul pașaportului  <br/> |
+|Numéro de passeport  <br/> Numéro de passeport roumain  <br/> Numéro de passeport  <br/> numărul pașaportului  <br/> |
    
 ## <a name="slovakia"></a>République de Slovaquie
 
 ### <a name="format"></a>Format
 
-Un chiffre ou une lettre suivi par sept chiffres sans espaces ni les délimiteurs
+Un chiffre ou une lettre suivi de sept chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Un chiffre ou une lettre (pas sensible à la casse) suivi de sept chiffres
+Un chiffre ou une lettre (ne respectant pas la casse) suivi de sept chiffres
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -818,9 +818,9 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_slovakia_eu_passport_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_slovakia_eu_passport_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_slovakia_eu_passport_number` est trouvée. 
+- Un mot clé `Keywords_slovakia_eu_passport_number` from est trouvé. 
     
 ```
  <!-- EU Passport Number -->
@@ -837,19 +837,19 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_slovakia_eu_passport_number**|
 |:-----|
-|numéro de passeport  <br/> numéro de passeport slovaque  <br/> passeport aucune  <br/> Číslo pasu  <br/> |
+|Numéro de passeport  <br/> Numéro de passeport slovaque  <br/> Numéro de passeport  <br/> číslo Pasu  <br/> |
    
 ## <a name="slovenia"></a>Slovénie
 
 ### <a name="format"></a>Format
 
-Deux lettres suivies à sept chiffres sans espaces ni les délimiteurs
+Deux lettres suivies de sept chiffres, sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Deux lettres suivies à sept chiffres :
+Deux lettres suivies de sept chiffres:
   
-- La lettre « P »
+- La lettre «P»
     
 - Une lettre majuscule
     
@@ -863,9 +863,9 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_slovenia_eu_passport_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_slovenia_eu_passport_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_slovenia_eu_passport_number` est trouvée. 
+- Un mot clé `Keywords_slovenia_eu_passport_number` from est trouvé. 
     
 ```
  <!-- EU Passport Number -->
@@ -882,19 +882,19 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_slovenia_eu_passport_number**|
 |:-----|
-|numéro de passeport  <br/> numéro de passeport slovène  <br/> passeport aucune  <br/> Številka potnega lista  <br/> |
+|Numéro de passeport  <br/> Numéro de passeport slovène  <br/> Numéro de passeport  <br/> številka potnega Lista  <br/> |
    
 ## <a name="spain"></a>Espagne
 
 ### <a name="format"></a>Format
 
-Une combinaison de huit ou neuf caractères de lettres et chiffres sans espaces ni les délimiteurs
+Combinaison de huit ou neuf caractères de lettres et de chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Une combinaison de huit ou neuf caractères de lettres et chiffres :
+Combinaison de huit ou neuf caractères de lettres et de chiffres:
   
--  Deux chiffres ou des lettres 
+-  Deux chiffres ou lettres 
     
 - Un chiffre ou une lettre (facultatif)
     
@@ -908,9 +908,9 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_spain_eu_passport_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_spain_eu_passport_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_spain_eu_passport_number` est trouvée. 
+- Un mot clé `Keywords_spain_eu_passport_number` from est trouvé. 
     
 ```
  <!-- EU Passport Number -->
@@ -927,15 +927,15 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_spain_eu_passport_number**|
 |:-----|
-|passeport  <br/> passeport Espagne  <br/> livre Passport  <br/> numéro de passeport  <br/> passeport aucune  <br/> libreta pasaporte  <br/> Número pasaporte  <br/> pasaporte España  <br/> pasaporte  <br/> |
+|passeport  <br/> Passport Espagne  <br/> livre de passeport  <br/> Numéro de passeport  <br/> Numéro de passeport  <br/> Libreta pasaporte  <br/> número pasaporte  <br/> España pasaporte  <br/> pasaporte  <br/> |
    
 ## <a name="sweden"></a>Suède
 
-Pour plus d’informations, voir la section « Numéro de passeport Suède » dans [Rechercher quels types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d'informations, reportez-vous à la section «numéro de passeport Suède» dans [ce que recherche les types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
-## <a name="uk"></a>ROYAUME-UNI
+## <a name="uk"></a>R.U.
 
-Pour plus d’informations, consultez la section « Numéro de passeport US / britannique » dans [Rechercher quels types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d'informations, reportez-vous à la section «US/numéro de passeport britannique» dans les [types d'informations sensibles que vous recherchez](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="see-also"></a>Voir aussi
 

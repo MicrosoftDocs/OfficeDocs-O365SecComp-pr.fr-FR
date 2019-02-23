@@ -1,12 +1,12 @@
 ---
-title: Analyser les données dans un jeu de travail d’eDiscovery avancée (Preview)
+title: Analyser les données d'une plage de travail dans Advanced eDiscovery (aperçu)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,46 +14,46 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 68a8b7586700a9bffe78f2b3a4ff419a1f85ba8a
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: ae024f423ac9b4ab9210ddfab519093a9fee3e42
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29695140"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216794"
 ---
-# <a name="analyze-data-in-a-working-set-in-advanced-ediscovery-preview"></a>Analyser les données dans un jeu de travail d’eDiscovery avancée (Preview)
+# <a name="analyze-data-in-a-working-set-in-advanced-ediscovery-preview"></a>Analyser les données d'une plage de travail dans Advanced eDiscovery (aperçu)
 
-Lorsque le nombre de documents collectées est important, il peut être très difficile passer en revue toutes les. Découverte avancée (Preview) fournit un certain nombre d’outils pour analyser les documents pour réduire le volume de documents à réviser sans perte d’informations et pour vous aider à organiser les documents de manière cohérente. Pour en savoir plus sur ces fonctionnalités, voir :
+Lorsque le nombre de documents collectés est important, il peut s'avérer difficile de les examiner tous. Advanced eDiscovery (aperçu) fournit un certain nombre d'outils pour analyser les documents afin de réduire le volume des documents à examiner sans perte d'informations et pour vous aider à organiser les documents de manière cohérente. Pour en savoir plus sur ces fonctionnalités, consultez les éléments suivants:
 
 - [Détecter des quasi-duplicatas](near-duplicates.md)
 - [Threading de messagerie](email-threading.md)
 - [Thèmes](themes.md)
 
-Pour analyser des données dans un jeu de travail :
+Pour analyser les données d'une plage de travail:
 
-1. Configurer les paramètres analytique pour votre cas. Pour plus d’informations, voir [configurer les paramètres de recherche et analytique](configure-search-analytics-settings.md).
+1. ConFigurez les paramètres d'analyse pour votre cas. Pour plus d'informations, consultez la rubrique [configurer les paramètres de recherche et d'analyse](configure-search-analytics-settings.md).
 2. Ouvrez le jeu de travail que vous souhaitez analyser.
-3. Accédez à « Gérer les jeu de travail ».
-4. Cliquez sur « Analyser ».
+3. Accédez à «gérer le jeu de travail».
+4. Cliquez sur «analyser».
 
-Vous pouvez vérifier la progression de l’analyse dans l’onglet tâches dans votre cas.
+Vous pouvez vérifier la progression de l'analyse dans l'onglet travaux de votre cas.
 
- Une fois l’analyse terminée, vous pouvez afficher le rapport analytique, les requêtes exécutées au sein de votre travail sur les sorties de l’analyse (pour plus d’informations, voir [requête au sein de votre travail définie](working-set-search.md)) et consultez les documents associés d’un document donné (pour plus d’informations, voir [ Examen des données dans le jeu de travail](reviewing-data-in-working-set.md)).
+ Une fois l'analyse terminée, vous pouvez afficher le rapport d'analyse, exécuter des requêtes dans votre jeu de travail sur les sorties de l'analyse (pour plus d'informations, consultez [la rubrique Query dans votre jeu de travail](working-set-search.md)) et afficher les documents connexes d'un document donné (pour plus d'informations, consultez la rubrique [ Examen des données dans le jeu de travail](reviewing-data-in-working-set.md)).
 
-## <a name="analytics-report"></a>Rapport Analytique
+## <a name="analytics-report"></a>Rapport d'analyse
 
-Pour afficher un rapport analytique pour votre jeu de travail :
+Pour afficher un rapport d'analyse pour votre jeu de travail:
 
 1. Ouvrez votre jeu de travail.
-2. Accédez à « Gérer les jeu de travail ».
-3. Cliquez sur « Report ».
+2. Accédez à «gérer le jeu de travail».
+3. Cliquez sur «État».
 
-Le rapport comporte quatre composants d’analyse :
+L'État comprend quatre composants de l'analyse:
 
-- **Répartition** - combien les messages électroniques, pièces jointes et des documents libres ont été trouvées dans le jeu de travail.
+- **Répartition** : le nombre de messages électroniques, de pièces jointes et de documents en vrac a été trouvé dans le jeu de travail.
 
-- **Documents (à l’exclusion des pièces jointes)** - nombre de documents libre ont été tableaux croisés dynamiques, uniques près de doublons du tableau croisé dynamique ou un doublon exact d’un autre document.
+- **Documents (à l'exception des pièces jointes)** : le nombre de documents en vrac était des tableaux croisés dynamiques, des doublons uniques proches d'un tableau croisé dynamique ou un doublon exact d'un autre document.
 
-- **Messages électroniques** - combien de messages ont été inclusives, copies inclus, des inconvénients inclus ou aucun d'entre eux.
+- **E-mails** : nombre de messages électroniques inclusifs, copies inclusives, déductions inclusives ou aucun des éléments ci-dessus.
 
-- **Pièces jointes** - nombre de pièces jointes ont été uniques ou d’une pièce jointe autre adresse e-mail dans le jeu de travail les doublons.
+- **Pièces jointes** : nombre de pièces jointes uniques ou en double d'une pièce jointe différente dans la plage de travail.

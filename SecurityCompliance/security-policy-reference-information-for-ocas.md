@@ -1,35 +1,35 @@
 ---
-title: Informations de référence de stratégie de sécurité Office 365 nuage sécurité des applications
+title: Informations de référence sur la stratégie de sécurité pour Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 2/26/2018
 ms.audience: ITPro
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: aef6c88f-7f47-40ef-9503-2b400e3bc6fd
-description: Obtenir de l’aide des stratégies d’activité de Office 365 et des stratégies de détection des anomalies.
-ms.openlocfilehash: bf93a66c72323539f036d3a9f8a446695dbc40c0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Obtenez de l'aide concernant les stratégies d'activité Office 365 et les stratégies de détection des anomalies.
+ms.openlocfilehash: db44b6cbf5b8c2783cba9862107120d2c33c1559
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528645"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215614"
 ---
-# <a name="security-policy-reference-information-for-office-365-cloud-app-security"></a>Informations de référence de stratégie de sécurité Office 365 nuage sécurité des applications
+# <a name="security-policy-reference-information-for-office-365-cloud-app-security"></a>Informations de référence sur la stratégie de sécurité pour Office 365 Cloud App Security
   
-|Évaluation **\>**|Planification **\>**|Déploiement **\>**|Utilisation du ***|
+|Évaluation * *\>**|Planification * *\>**|Déploiement * *\>**|Utilisation * * * *|
 |:-----|:-----|:-----|:-----|
-|[Commencer à évaluer](office-365-cas-overview.md) <br/> |[Commencer à planifier](get-ready-for-office-365-cas.md) <br/> |Vous êtes ici !  <br/> [Étape suivante](review-office-365-cas-alerts.md) <br/> |[Commencer à utiliser](utilization-activities-for-ocas.md) <br/> |
+|[Commencer l'évaluation](office-365-cas-overview.md) <br/> |[Commencer la planification](get-ready-for-office-365-cas.md) <br/> |Vous êtes là!  <br/> [Étape suivante](review-office-365-cas-alerts.md) <br/> |[Commencer à utiliser](utilization-activities-for-ocas.md) <br/> |
    
-Avec Office 365 de sécurité application Cloud, si vous êtes un administrateur global ou administrateur de la sécurité, vous pouvez définir ou modifier les deux types de stratégies de votre organisation :
+Avec la sécurité des applications Cloud d'Office 365, si vous êtes un administrateur général ou un administrateur de sécurité, vous pouvez définir ou modifier deux types de stratégies pour votre organisation:
   
-- **[Stratégies d’activité](activity-policies-and-alerts.md)** que vous définissez. Ces stratégies sont basées sur les activités que vous définissez comme suspects, tels que les utilisateurs essayant de se connecter avec des informations d’identification d’administration dans d’autres régions/pays en dehors de ce qui est normal pour votre organisation, ou un nombre de tentatives de connexion pour un utilisateur extrême au sein d’une heure . Pour plus d’informations, voir [stratégies de l’activité et les alertes dans Office 365 Cloud Application Security](activity-policies-and-alerts.md).
+- Les **[stratégies d'activité](activity-policies-and-alerts.md)** que vous définissez. Ces stratégies sont basées sur les activités que vous définissez comme suspectes, telles que les utilisateurs qui tentent de se connecter avec des informations d'identification d'administrateur dans d'autres régions/pays en dehors de ce qui est normal pour votre organisation, ou un nombre extrême de tentatives de connexion pour un utilisateur au cours d'une heure. . Pour en savoir plus, consultez la rubrique [stratégies d'activité et alertes dans Office 365 Cloud App Security](activity-policies-and-alerts.md).
     
-- **[Stratégies de détection des anomalies](anomaly-detection-policies-in-ocas.md)** qui sont disponibles « prêts à l’emploi » avec Office 365 Cloud Application Security. Ces stratégies sont basées sur les algorithmes automatiques détectent les activités suspectes. Ces stratégies par défaut regardez automatiquement pour déclencher les alertes et les anomalies. Pour plus d’informations, voir [stratégies de détection des anomalies dans Office 365 Cloud Application Security](anomaly-detection-policies-in-ocas.md).
+- Des **[stratégies de détection](anomaly-detection-policies-in-ocas.md)** des anomalies qui sont disponibles à l'aide de la sécurité des applications Cloud Office 365. Ces stratégies sont basées sur des algorithmes automatiques qui détectent les activités suspectes. Ces stratégies par défaut surveillent les anomalies et déclenchent automatiquement des alertes. Pour plus d'informations, consultez la rubrique relative aux [stratégies de détection des anomalies dans Office 365 Cloud App Security](anomaly-detection-policies-in-ocas.md).
     
 

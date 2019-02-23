@@ -6,15 +6,15 @@ manager: laurawi
 ms.audience: Admin
 ms.topic: reference
 ms.date: 01/25/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 description: Découvrez ce qui a été publié en 2017 pour Office 365 Cloud App Security
-ms.openlocfilehash: cfc5d9d06c1b2296b82c35fc5fdd6e4bc0deb42b
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: fdb245ce1f6f8c033244e498c16451ea865b61c6
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30087403"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218544"
 ---
 # <a name="office-365-cloud-app-security-updates-during-2017"></a>Mises à jour de sécurité des applications Cloud Office 365 pendant 2017
     

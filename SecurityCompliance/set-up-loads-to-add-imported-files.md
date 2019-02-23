@@ -1,143 +1,143 @@
 ---
-title: Définissez la charge pour ajouter les fichiers importés dans Office 365 avancée de découverte électronique
+title: Configurer des chargements pour ajouter des fichiers importés dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
-description: 'Passez en revue les étapes pour ajouter les fichiers importés au dernier chargement défini ou par lot, des fichiers avant d’effectuer la formation de la pertinence dans Office 365 avancée de découverte électronique.  '
-ms.openlocfilehash: 2c986578b969b671351930fd6939a90e3a821dc2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: "Passez en revue les étapes nécessaires pour ajouter des fichiers importés à la dernière charge ou un lot de fichiers défini avant d'effectuer une formation pertinente dans Office 365 Advanced eDiscovery.  "
+ms.openlocfilehash: 8c5101628b468719f8aa4f81a4c73cbbb226105f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528625"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215984"
 ---
-# <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Définissez la charge pour ajouter les fichiers importés dans Office 365 avancée de découverte électronique
+# <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Configurer des chargements pour ajouter des fichiers importés dans Office 365 Advanced eDiscovery
 
 > [!NOTE]
-> Découverte avancée nécessite un Office 365 E3 avec le module complémentaire de conformité avancée ou un abonnement E5 pour votre organisation. Si vous n’avez qu’un plan d’et essayer eDiscovery avancé, vous pouvez [inscrire à une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-Dans découverte avancée, une charge est un nouveau lot de fichiers ajoutés à un cas. Par défaut, une charge est définie et tous les fichiers importés sont ajoutés. Avant d’effectuer la formation de pertinence, les fichiers importés doivent être ajoutés à la charge. 
+Dans Advanced eDiscovery, une charge est un nouveau lot de fichiers ajouté à un cas. Par défaut, une charge est définie et tous les fichiers importés sont ajoutés à celle-ci. Avant d'effectuer une formation pertinente, les fichiers importés doivent être ajoutés au chargement. 
   
-Prenez en compte les scénarios suivants :
+Examinez les scénarios suivants:
   
-- Nouveaux fichiers connus pour être semblable aux fichiers précédentes chargés dans la base de données de dossier ou la charge précédente des fichiers a été un jeu aléatoire à partir de la collection de fichiers. Dans ce cas, ajoutez les fichiers importés pour le chargement du fichier en cours.
+- Les nouveaux fichiers sont semblables aux fichiers précédents chargés dans la base de données de cas, ou le chargement de fichiers précédent était un jeu aléatoire à partir de la collection de fichiers. Dans ce cas, ajoutez les fichiers importés au chargement du fichier en cours.
     
-- Nouveaux fichiers sont différents des précédents (par exemple, à partir d’une autre source), ou vous ne connaissez pas qu’ils sont similaires ou différentes charges précédente. Dans ce scénario, ajoutez les fichiers importés vers un nouveau fichier charger. Découverte avancée détecte un scénario de charge matériel, appelle un processus rattrapage, verrouille la formation de la pertinence et les calculs par lots jusqu'à ce que rattrapage terminée, la nouvelle charge est intégrée et formée. 
+- Les nouveaux fichiers sont différents des fichiers précédents (par exemple, à partir d'une autre source) ou vous n'avez pas connaissance préalable qu'ils sont similaires ou différents des charges précédentes. Dans ce scénario, ajoutez les fichiers importés à un nouveau chargement de fichier. Advanced eDiscovery reconnaît qu'il s'agit d'un scénario de charge propagée, appelle un processus de rattrapage, verrouille la formation à la pertinence et calcule les lots jusqu'à ce que la rattrapage soit terminée, et la nouvelle charge est intégrée et exercée. 
     
 ## <a name="adding-imported-files-to-the-current-load"></a>Ajout de fichiers importés à la charge actuelle
 
-Tous les fichiers importés doivent être ajoutés à une charge de traitement d’eDiscovery avancée. Les fichiers importés sont ajoutés à la dernière charge définie. Si vous importez des fichiers supplémentaires ultérieurement, ils doivent également être ajoutés à la charge.
+Tous les fichiers importés doivent être ajoutés à une charge pour être traités dans Advanced eDiscovery. Les fichiers imPortés sont ajoutés au dernier chargement défini. Si vous importez des fichiers supplémentaires ultérieurement, ceux-ci doivent également être ajoutés au chargement.
   
-1. Dans la **la pertinence \> le programme d’installation de la pertinence** , sélectionnez **la charge**.
+1. Dans l' ** \> onglet Configuration** de pertinence de pertinence, sélectionnez **charges**.
     
     ![Onglet Charges de configuration de pertinence](media/278aac7f-655f-462f-852a-6baa5d818768.png)
   
-2. **Fichiers Include**: sélectionnez une option pour les fichiers à inclure. Par défaut, ajout de fichiers à la charge actuelle est basé sur la population « Tous les fichiers ».
+2. **Fichiers include**: sélectionnez une option pour les fichiers à inclure. Par défaut, l'ajout de fichiers à la charge actuelle est basé sur le remplissage «tous les fichiers».
     
     > [!TIP]
-    > Chargez tous les fichiers réforme disponibles dans la pertinence. Si vous souhaitez charger uniquement un sous-ensemble des fichiers disponibles, voir tout d’abord cycle avec prise en charge, comme le chargement des sous-ensembles peut affecter la formation de pertinence. 
+    > Chargez tous les fichiers de Culling disponibles en toute pertinence. Si vous envisagez de ne charger qu'un sous-ensemble des fichiers disponibles, consultez d'abord la prise en charge, car le chargement de sous-ensembles peut affecter la formation à la pertinence. 
   
-3. Dans la **gestion de la charge**, sélectionnez une charge.
+3. Dans la gestion de la **charge**, sélectionnez un chargement.
     
-4. Cliquez sur **Ajouter des fichiers**. Les fichiers sont ajoutés à la charge et un message de confirmation s’affiche. 
+4. Cliquez sur **Ajouter des fichiers**. Les fichiers sont ajoutés au chargement et un message de confirmation s'affiche. 
     
 5. Cliquez sur **OK**.
     
-Les fichiers peuvent maintenant être traités d’eDiscovery avancée pertinence pour les fichiers de formation.
+Les fichiers peuvent désormais être traités dans l'intérêt de la découverte électronique avancée pour l'apprentissage des fichiers.
   
-## <a name="editing-a-load-name-within-a-case"></a>Modification d’un nom de la charge au sein d’un cas
+## <a name="editing-a-load-name-within-a-case"></a>Modification d'un nom de charge dans un cas
 
-Si vous modifiez le nom de la charge, il est recommandé d’utiliser un nom qui est important pour le cas.
+Si vous modifiez le nom de la charge, il est recommandé d'utiliser un nom qui est significatif pour le cas.
   
-1. Dans la **la pertinence \> le programme d’installation de la pertinence** , sélectionnez **la charge**.
+1. Dans l' ** \> onglet Configuration** de pertinence de pertinence, sélectionnez **charges**.
     
-2. Dans la liste de la **gestion de la charge** , sélectionnez une charge, cliquez sur l’icône **Modifier** . La fenêtre Modifier la charge est affichée. 
+2. Dans la liste **charges de gestion** , sélectionnez une charge, puis cliquez sur l'icône **modifier** . La fenêtre Modifier la charge s'affiche. 
     
 3. Entrez les modifications, puis cliquez sur **OK**.
     
-## <a name="adding-imported-files-to-a-new-load"></a>Ajout de fichiers importés dans un nouveau chargement
+## <a name="adding-imported-files-to-a-new-load"></a>Ajout de fichiers importés à une nouvelle charge
 
-Après avoir démarré la formation de pertinence ou par lot des calculs, vous souhaiterez peut-être importer et traiter un ensemble de fichiers supplémentaire. 
+Après avoir commencé la formation pertinente ou effectué un calcul par lot, vous souhaiterez peut-être importer et traiter un ensemble de fichiers supplémentaire. 
   
-Au cours de peut être réduite, vous pouvez créer, balise et analyser l’ensemble de rattrapage. Découverte avancée compare son évaluation des fichiers pertinents et Non-pertinents de la charge de nouveau à celles de chargements précédents. En fonction des résultats, vous êtes invité à prendre des décisions de rattrapage, si nécessaire et confirmé eDiscovery fournit des recommandations en fonction des informations à recevoir la pertinence. 
+Lors de l'interCeption, vous pouvez créer, marquer et analyser l'ensemble de rattrapage. Advanced eDiscovery compare son évaluation des fichiers pertinents et non pertinents dans le nouveau chargement à ceux des chargements précédents. En fonction des résultats, vous êtes invité à prendre des décisions de rattrapage, si nécessaire, et Advanced eDiscovery fournit des recommandations basées sur les informations de pertinence à recevoir. 
   
-Relatifs des charges et les fonctionnalités rattrapage varie comme suit : 
+Les charges de roulement et les fonctionnalités de rattrapage varient comme suit: 
   
-- Lorsque vous importez un nouveau fichier charger après le calcul de lot, eDiscovery avancée détermine dans quelle mesure les fichiers peuvent être classées dans une des catégories suivantes :
+- Lorsque vous importez une nouvelle charge de fichier après le calcul par lot, Advanced eDiscovery détermine dans quelle mesure les fichiers appartiennent à l'une des catégories suivantes:
     
-  - Similaire (homogène) : un arrondi nouvel, personnalisé de formation de la pertinence n’est pas obligatoire et la base de connaissances alloué à partir de la charge précédente peut être appliqué « comme est » à la charge de nouveau. 
+  - Semblable (homogène): une formation de type nouvelle de pertinence personnalisée n'est pas requise et les connaissances allouées à partir de la charge précédente peuvent être appliquées «en l'aspect» à la nouvelle charge. 
     
-  - Distinct (hétérogène) : un arrondi nouvel, personnalisé de formation de pertinence est nécessaire, et la base de connaissances alloué à partir de la charge précédente ne peut pas être appliqué. 
+  - Distinct (hétérogène): une formation de série de pertinence personnalisée est requise et les connaissances allouées à partir de la charge précédente ne peuvent pas être appliquées. 
     
-    Ces termes font référence au niveau de similarité de fichiers entre les charges et non au sein de la charge. 
+    Ces termes font référence au niveau de similarité des fichiers entre les charges et non dans les charges. 
     
-- Lorsque vous importez un nouveau fichier charger au cours de formation de pertinence (avant le calcul du lot), rattrapage vous permet de continuer formation pertinence sur l’ensemble de fichiers États-Unis. Découverte avancée ne pas estimer si la charge de nouveau est similaire à ou distinct de la charge précédente. Il simplement de collecte des informations sur la nouvelle charge et permet la pertinence de la formation continue sur les anciens et les nouveaux ensembles de fichiers. 
+- Lors de l'importation d'une nouvelle charge de fichier lors de l'apprentissage de pertinence (avant le calcul par lot), l'interCeption vous permet de continuer la formation pertinente sur le jeu de fichiers-Unis. Advanced eDiscovery n'évalue pas si la nouvelle charge est similaire ou différente de la charge précédente. Il collecte simplement des informations sur la nouvelle charge et active une formation pertinente pour continuer sur les nouveaux et les derniers ensembles de fichiers. 
     
-- Lorsqu’il existe plusieurs problèmes en formation pertinence ainsi que les problèmes après le calcul de lot, le processus de rattrapage est effectué une fois pour tous les problèmes et les résultats sont calculées et affichées pour chaque problème.
+- Lorsqu'il existe plusieurs problèmes de formation pertinente, ainsi que des problèmes après le calcul par lot, le processus de rattrapage est effectué une fois pour tous les problèmes, et les résultats sont calculés et affichés pour chaque problème.
     
 > [!NOTE]
-> La taille de l’échantillon rattrapage peut-être varier. Il dépend de la taille de la charge de nouveau par rapport à la charge précédente et le nombre d’échantillons effectué avant l’ajout de la charge de nouveau. L’exemple de rattrapage est généralement un ensemble de 200 à 2 000 fichiers à partir de la charge de nouveau. 
+> La taille de l'exemple de rattrapage peut varier. Cela dépend de la taille de la nouvelle charge par rapport aux charges précédentes et du nombre d'échantillons terminés avant l'ajout de la nouvelle charge. L'exemple de rattrapage est généralement un ensemble de 200 à 2 000 fichiers à partir de la nouvelle charge. 
   
 > [!TIP]
-> Rattrapage arrête toutes les autres tâches et requiert marquer le fichier individuel et révision. Par conséquent, vous pouvez réduire une surcharge lorsque vous ajoutez des fichiers volumineux par lots. 
+> Rattrapage arrête toutes les autres tâches et nécessite une balise et une révision de fichier individuelles. Par conséquent, vous pouvez réduire la charge liée à l'ajout de nouveaux fichiers dans des lots volumineux. 
   
-## <a name="adding-a-new-file-load-using-catch-up-and-rolling-loads"></a>Ajout d’un nouveau chargement de fichiers à l’aide de rattrapage et propagée charge
+## <a name="adding-a-new-file-load-using-catch-up-and-rolling-loads"></a>Ajout d'une nouvelle charge de fichier à l'aide de charges de rattrapage et de laminage
 
-1. Dans la **la pertinence \> le programme d’installation de la pertinence** , sélectionnez **la charge**.
+1. Dans l' ** \> onglet Configuration** de pertinence de pertinence, sélectionnez **charges**.
     
-2. Sous **Gestion des charges**, cliquez sur le **+** icône pour ajouter une charge. Un message de confirmation s’affiche. 
+2. Sous **chargez la gestion**, **+** cliquez sur l'icône pour ajouter une charge. Un message de confirmation s'affiche. 
     
-3. Cliquez sur **Oui** pour continuer. La boîte de dialogue **Nouveau charger** s’affiche. 
+3. Cliquez sur **Oui** pour continuer. La boîte de dialogue **Ajouter un nouveau chargement** s'affiche. 
     
     > [!NOTE]
-    > Vous ne pouvez ajouter un nouveau chargement que si les actions effectuées à la charge précédente. 
+    > Vous pouvez ajouter une nouvelle charge uniquement si les actions ont été effectuées au chargement précédent. 
   
-4. Dans la boîte de dialogue **nouveau de charge** , tapez les informations de **charger le nom** et la **Description** et puis cliquez sur **OK**. Découverte avancée ajoute un nouveau chargement.
+4. Dans la boîte de dialogue **Ajouter un nouveau chargement** , tapez les informations dans **charger le nom** et la **Description** , puis cliquez sur **OK**. Advanced eDiscovery ajoute une nouvelle charge.
     
-5. Pour importer le nouveau fichier de charge, cliquez sur **Ajouter des fichiers**. Tous les nouveaux fichiers sont ajoutés à cette charge. Une fois la découverte avancée importe les fichiers, il reconnaît le scénario de charge matériel et indique rattrapage en tant que l’étape suivante.
+5. Pour importer le nouveau fichier de chargement, cliquez sur **Ajouter des fichiers**. Tous les nouveaux fichiers sont ajoutés à cette charge. Une fois que Advanced eDiscovery importe les fichiers, il reconnaît le scénario de charge propagée et indique qu'il s'agit de l'étape suivante.
     
-6. Cliquez sur **rattrapage** au bas de la boîte de dialogue pour exécuter le scénario. 
+6. Cliquez **** sur rattraper en bas de la boîte de dialogue pour exécuter le scénario. 
     
-    Un seul ensemble de rattrapage, généralement contenant 200 à 2 000 fichiers à partir de la charge de nouveau, est créé pour tous les problèmes permettre de marquer le fichier simultané.
+    Un seul jeu de rattrapage, contenant généralement 200 à 2 000 fichiers à partir de la nouvelle charge, est créé pour tous les problèmes afin d'autoriser la balise de fichier simultanée.
     
-    Plus d’informations sont fournies sur si les charges sont similaires ou distinct, eDiscovery avancée fusionnées ou fractionnées automatiquement de la charge et informations relatives au traitement de l’étape suivante.
+    Des informations détaillées précisent si les charges sont similaires ou distinctes, si Advanced eDiscovery a fusionné ou fractionné le chargement automatique, ainsi que des informations sur le traitement à l'étape suivante.
     
-    Vous pouvez ensuite baliser des fichiers et exécuter une opération de calculer. Le balisage permet de pertinence déterminer si les charges sont similaires ou distinctes et vous permet de continuer à travailler sur le nouveau jeu de fichiers.
+    Vous pouvez ensuite baliser les fichiers et exécuter une opération Calculate. Le balisage permet de déterminer si les charges sont similaires ou distinctes et vous permet de continuer à travailler sur le nouveau jeu de fichiers.
     
-7. Une fois la révision, l’ensemble de rattrapage afficher **pertinence \> suivi** pour les résultats de rattrapage. 
+7. Une fois le jeu de rattrapage révisé, affichez le **suivi de pertinence \> ** pour les résultats de rattrapage. 
     
-1. Si le chargement du fichier a été ajouté au cours de formation de pertinence (ce qui signifie que le problème n’a pas encore été par le biais de calcul du lot), **la formation continuer** est l’étape suivante, quel que soit le résultat rattrapage. 
+1. Si le nouveau chargement de fichier a été ajouté au cours de la formation à la pertinence (ce qui signifie que le problème n'a pas encore été effectué par le calcul par lot), poursuivez la **formation** à l'étape suivante, quels que soient les résultats de rattrapage. 
     
-    Les charges précédents et nouveau sont traitées comme une charge et formation pertinence continue sur l’ensemble États-Unis. Vous sont maintenant terminées avec cette procédure et que vous pouvez continuer de formation de pertinence. 
+    Les charges nouvelles et précédentes sont traitées en une seule charge et une formation pertinente se poursuit sur l'ensemble américain. Vous avez maintenant terminé cette procédure et pouvez continuer la formation pertinente. 
     
-2. Si la nouvelle charge a été ajoutée après le calcul de lot, passez à la procédure suivante.
+2. Si le nouveau chargement a été ajouté après le calcul par lot, procédez comme suit.
     
-8. Pour les charges de nouveau ajoutés après le calcul de lot, eDiscovery avancé détermine si la nouvelle charge est similaire à ou différent du précédente se charge, comme suit :
+8. Pour les nouvelles charges ajoutées après le calcul par lot, Advanced eDiscovery détermine si la nouvelle charge est similaire ou différente des charges précédentes, comme suit:
     
-1. Si la charge a été trouvée pour être similaire : aucune formation pertinence supplémentaire n’est nécessaire. Le tableau de bord affiche l’étape suivante recommandée consiste à exécuter ** calcul du lot ** pour calculer des résultats de la pertinence de la charge de nouveau. Charge a été trouvée pour être similaire, afin que l’analyse de classifieur précédente peut être exécutée sur les nouveaux fichiers. 
+1. Si les charges étaient similaires: aucune formation sur la pertinence supplémentaire n'est nécessaire. Le tableau de bord affiche l'étape suivante recommandée: exécuter * * calcul de lot * * à nouveau pour calculer les scores de pertinence pour le nouveau chargement. Les charges ont été similaires, de sorte que l'analyse de classifieur précédente peut être exécutée sur les nouveaux fichiers. 
     
-2. Si la charge a été trouvée distincte : formation plus la pertinence est nécessaire et l’étape suivante consiste à la décision rattrapage. Sélectionnez une décision rattrapage comme suit :
+2. Si les charges ont été jugées distinctes: une formation plus pertinente est nécessaire et l'étape suivante est la décision de rattrapage. Sélectionnez une décision de rattrapage comme suit:
     
-    Si vous sélectionnez **charges de fusion**, avancée eDiscovery fusionne les charges précédents et nouveau pour le jeu de formation. Bien que le premier chargement est passé par le biais de calcul de lot, plus de formations est nécessaire. Continuer la formation charges précédents et nouveau ensemble. Calcul de lot puis réexécuter et les résultats de calcul de lot précédentes doivent être ignorées. Choisissez cette sélection lorsque des résultats de la pertinence de charges existantes peuvent être recalculées, par exemple, lors de la révision des charges de fichier existant n’a pas démarré.
+    Si vous sélectionnez **fusionner les charges**, Advanced eDiscovery fusions Previous et New loads pour le jeu de formation. Bien que la première charge passe par le calcul par lot, une formation supplémentaire est nécessaire. Poursuivez l'apprentissage des nouvelles et des versions précédentes. Le calcul du lot s'exécutera de nouveau et les notes de calcul du lot précédent doivent être ignorées. Choisissez cette sélection lorsque les scores de pertinence pour les charges existantes peuvent être recalculés, par exemple, lorsque la révision des chargements de fichiers existants n'a pas commencé.
     
-    Si vous sélectionnez **charge fractionné**, continuer formation pertinence uniquement sur la charge de nouveau. Dans ce cas, scores de calcul de lot précédentes reste inchangée. Choisissez cette option lorsque existants scores de pertinence pour charges existantes ne peuvent pas être recalculées, par exemple, passer en revue les charges existant a déjà démarré. Résultats de la pertinence sont gérés séparément à partir de ce point et ne peuvent pas être fusionnées.
+    Si vous sélectionnez **fractionner les charges**, ne poursuivez la formation à pertinence que sur le nouveau chargement. Dans ce cas, les scores de calcul du lot précédent resteront tels quels. Choisissez cette option lorsque les scores de pertinence existants pour les charges existantes ne peuvent pas être recalculés, par exemple, si la révision des charges existantes a déjà commencé. Les scores de pertinence sont gérés séparément à ce stade et ne peuvent pas être fusionnés.
     
-3. Cliquez sur **Continuer formation**.
+3. Cliquez sur **Continuer la formation**.
     
 ## <a name="see-also"></a>Voir aussi
 
-[eDiscovery avancée Office 365](office-365-advanced-ediscovery.md)
+[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Définition des problèmes et affectation des utilisateurs](define-issues-and-assign-users.md)
+[Définition des sujets et affectation des utilisateurs](define-issues-and-assign-users.md)
   
-[Définition de mise en surbrillance des mots clés et avancées options](define-highlighted-keywords-and-advanced-options.md)
+[Définition des mots clés surlignés et des options avancées](define-highlighted-keywords-and-advanced-options.md)
 

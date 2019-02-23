@@ -5,7 +5,7 @@ author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Explication du fonctionnement de la journalisation interne pour Office 365 Engineering Teams.
-ms.openlocfilehash: cf11a52541f6434a580435688db0f986f670bd31
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 68f8763b9a647de462f402e40a4c78749343dfd9
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090756"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216494"
 ---
 # <a name="internal-logging-for-office-365-engineering"></a>Journalisation interne pour Office 365 Engineering
 Outre les événements et les données de journalisation disponibles pour les clients, il existe également un système de collecte de données de journal interne disponible pour les ingénieurs Office 365. De nombreux types de données de journal sont téléchargés à partir des serveurs Office 365 vers un service informatique interne et de grande taille appelé Cosmos. Chaque équipe de service télécharge les journaux d'audit de leurs serveurs respectifs dans la base de données Cosmos pour l'agrégation et l'analyse. Ce transfert de données se produit sur une connexion TLS validée par FIPS 140-2 sur des ports et protocoles approuvés spécifiquement à l'aide d'un outil Automation propriétaire appelé le chargeur de données Office (ODL). Les outils utilisés dans Office 365 pour collecter et traiter des enregistrements d'audit n'autorisent pas les modifications permanentes ou irréversibles du contenu des enregistrements d'audit d'origine ou de l'ordre des heures.

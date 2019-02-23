@@ -7,7 +7,7 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: ConFigurez des stratégies de vérification de surveillance pour capturer les communications des employés à des fins de révision.
-ms.openlocfilehash: dee9f21d4b88338a092a64538cca33b41cc481c4
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: af317194fcf551acde8c53cdf6aa38bfb040dc84
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090956"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216734"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurer des stratégies de surveillance pour votre organisation
 
@@ -53,7 +53,7 @@ Procédez comme suit pour configurer et utiliser la surveillance dans votre orga
 
     Le test de votre stratégie de surveillance pour vous assurer qu'elle fonctionne comme vous le souhaitez est une partie importante de la façon de s'assurer que votre stratégie de conformité répond à vos normes.
 
-- **Étape 6-(facultatif)** [Configurer le complément Outlook pour les relecteurs qui ne souhaitent pas utiliser le tableau de bord de surveillance Office 365 ou OWA pour consulter les communications surveillées](configure-supervision-policies.md#UseOutlook)
+- **Étape 6-(facultatif)** [Configurer le complément Outlook pour les relecteurs qui ne souhaitent pas utiliser le tableau de bord de surveillance Office 365 ou Outlook sur le Web (ancienneMent Outlook Web App) pour consulter les communications contrôlées](configure-supervision-policies.md#UseOutlook)
 
     Le complément de supervision pour Outlook accorde aux réviseurs l'accès à la fonctionnalité de surveillance directement dans le client Outlook afin qu'ils puissent évaluer et catégoriser chaque élément.
 

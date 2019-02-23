@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Le mode de traitement des suppressions de données logicielles et logicielles dans Exchange Online.
-ms.openlocfilehash: 879d4a0351720780667333502c6caa30dffc8996
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 57b58be5c38e8ba6d0ea219087ccef75cc2c2fca
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090736"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216914"
 ---
 # <a name="exchange-online-data-deletion-in-office-365"></a>Suppression de données Exchange Online dans Office 365
 Dans Exchange Online, il existe deux types de suppressions: les suppressions douces et les suppressions matérielles. Cela s'applique aux boîtes aux lettres et aux éléments d'une boîte aux lettres.

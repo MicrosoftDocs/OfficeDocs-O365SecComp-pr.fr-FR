@@ -3,12 +3,11 @@ title: Exporter un rapport de recherche de contenu
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.CustomizeExportReport
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -17,31 +16,31 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
-description: Au lieu d’exporter les résultats d’une recherche de contenu de sécurité Office 365 réels &amp; centre de conformité, vous pouvez uniquement exporter un rapport de résultats de recherche. Le rapport contient un résumé des résultats de recherche et d’un document avec des informations détaillées sur chaque élément qui aurait à exporter.
-ms.openlocfilehash: db6ba2dd58befa782dc3a5968e0034bccfa46855
-ms.sourcegitcommit: ea625737c4be14927f69aa71d4fbd7d7d94d9334
+description: Au lieu d'exporter les résultats réels d'une recherche de contenu dans le centre &amp; de sécurité conformité Office 365, vous pouvez simplement exporter un rapport de résultats de recherche. Le rapport contient un résumé des résultats de la recherche et un document avec des informations détaillées sur chaque élément à exporter.
+ms.openlocfilehash: 12799474bfb099c521f72cd3902173d42b17d4dd
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "27544125"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216234"
 ---
 # <a name="export-a-content-search-report"></a>Exporter un rapport de recherche de contenu
 
-Au lieu de l’exportation de l’ensemble de la recherche des résultats à partir d’une recherche de contenu de sécurité Office 365 &amp; centre de conformité (et à partir d’une recherche de contenu qui est associé à un cas de découverte électronique), vous pouvez uniquement exporter les mêmes rapports qui sont générées lorsque vous Exporter les résultats de recherche.
+Au lieu d'exporter l'ensemble complet des résultats de recherche à partir d'une recherche de contenu &amp; dans le centre de sécurité conformité Office 365 (et à partir d'une recherche de contenu associée à un cas eDiscovery), vous pouvez simplement exporter les mêmes rapports générés lorsque vous exporter les résultats de la recherche.
   
-Lorsque vous exportez un état, il est téléchargé vers un dossier qui a le même nom que la recherche de contenu, mais qui est ajouté avec *_ReportsOnly* . Par exemple, si la recherche de contenu est nommée *ContosoCase0815* , le rapport est téléchargé vers un dossier nommé *ContosoCase0815_ReportsOnly* . Pour obtenir la liste de documents qui sont inclus dans le rapport, voir [ce qui est inclus dans le rapport](#whats-included-in-the-report).
+Lorsque vous exportez un État, il est téléchargé dans un dossier portant le même nom que la recherche de contenu, mais il est ajouté avec *_ReportsOnly* . Par exemple, si la recherche de contenu est nommée *ContosoCase0815* , le rapport est téléchargé dans un dossier nommé *ContosoCase0815_ReportsOnly* . Pour obtenir la liste des documents inclus dans le rapport, voir [ce qui est inclus dans le rapport](#whats-included-in-the-report).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Pour exporter un rapport de recherche de contenu, vous devez attribuer le rôle de gestion de recherche de la conformité de sécurité Office 365 &amp; centre de conformité. Ce rôle est attribué pour les groupes de rôles intégrés eDiscovery Manager et la gestion de l’organisation. Il n’est pas affecté par défaut au groupe de rôles de gestion de l’organisation. Pour plus d’informations, voir [attribuer des autorisations de sécurité Office 365 eDiscovery &amp; centre de conformité](assign-ediscovery-permissions.md).
+- Pour exporter un rapport de recherche de contenu, vous devez disposer du rôle de gestion de la recherche de conformité dans &amp; le centre de sécurité conformité Office 365. Ce rôle est affecté aux groupes de rôles du gestionnaire eDiscovery intégré et de la gestion de l'organisation. Il n'est pas affecté par défaut au groupe de rôles gestion de l'organisation. Pour plus d'informations, consultez [la rubrique attribution d'autorisations eDiscovery dans &amp; le centre de sécurité conformité Office 365](assign-ediscovery-permissions.md).
     
-- Lorsque vous exportez un état, les données sont stockées temporairement dans une zone de stockage unique Windows Azure dans le nuage Microsoft avant qu’il est téléchargé sur votre ordinateur local. Vérifiez que votre organisation peut se connecter au point de terminaison dans Azure, qui est ** \*. blob.core.windows.net** (le caractère générique représente un identificateur unique pour votre exportation). Les données de résultats de recherche sont supprimées de la zone de stockage Azure deux semaines après sa création. 
+- Lorsque vous exportez un État, les données sont stockées temporairement dans une zone de stockage Windows Azure unique dans le Cloud Microsoft avant d'être téléchargée sur votre ordinateur local. assurez-vous que votre organisation peut se connecter au point de terminaison dans Azure, c'est-à-dire ** \*. blob.core.windows.net** (le caractère générique représente un identificateur unique pour votre exportation). Les données de résultats de recherche sont supprimées de la zone de stockage Azure deux semaines après sa création. 
     
 - L’ordinateur que vous utilisez pour exporter les résultats de recherche doit répondre aux exigences système suivantes :
     
   - versions 32 ou 64 bits de Windows 7 et versions ultérieures
     
-  - Microsoft .NET Framework 4.7
+  - Microsoft .NET Framework 4,7
     
   - un navigateur pris en charge :
     
@@ -51,19 +50,19 @@ Lorsque vous exportez un état, il est téléchargé vers un dossier qui a le m�
     
     - Microsoft Internet Explorer 10 et versions ultérieures
     
-    **Remarque :** Microsoft ne fabrique extensions tierces ou les modules complémentaires pour les applications ClickOnce. Exportation des résultats de recherche à l’aide d’un navigateur non pris en charge avec des extensions tierces ou les modules complémentaires n’est pas pris en charge. 
+    **Remarque:** Microsoft ne fabrique pas d'extensions ou de modules complémentaires tiers pour les applications ClickOnce. L'exportation des résultats de recherche à l'aide d'un navigateur non pris en charge avec des extensions ou des modules complémentaires tiers n'est pas prise en charge. 
 
-- Si la taille estimée total des résultats renvoyés par la recherche de contenu dépasse 20&nbsp;to, exporter le rapport échoue. Pour exporter le rapport, essayez de limiter l’étendue et exécutez à nouveau la recherche afin que la taille estimée des résultats est inférieur à 20&nbsp;to.
+- Si la taille totale estimée des résultats renvoyés par une recherche de contenu&nbsp;dépasse 20 to, l'exportation du rapport échoue. Pour réussir l'exportation du rapport, essayez de limiter l'étendue et de réexécuter la recherche de sorte que la taille estimée des résultats soit&nbsp;inférieure à 20 to.
 
-- Exportation de recherche de contenu indique le nombre maximal d’exportation en cours d’exécution en même temps et le nombre maximal d’exporte un utilisateur unique peut exécuter des nombres. Pour plus d’informations sur les limites d’exportation, voir [les résultats de recherche de contenu exporter à partir de la sécurité pour Microsoft Office 365 & centre de conformité](export-search-results.md#export-limits).
+- L'exportation de rapports de recherche de contenu compte sur le nombre maximal d'exportations en cours d'exécution en même temps et le nombre maximal d'exportations qu'un utilisateur unique peut exécuter. Pour plus d'informations sur les limites d'exportation, voir [Export content Search Results from the Office 365 Security _AMP_ Compliance Center](export-search-results.md#export-limits).
 
 ## <a name="generate-and-download-a-content-search-report"></a>Générer et télécharger un rapport de recherche de contenu
 
-Les étapes pour générer et télécharger un rapport de recherche de contenu sont très similaires à effectuer l’exportation des résultats de recherche.
+Les étapes de génération et de téléchargement d'un rapport de recherche de contenu sont très similaires à l'exportation des résultats de la recherche.
   
-## <a name="step-1-generate-the-report-for-export"></a>Étape 1 : Générer le rapport pour l’exportation
+## <a name="step-1-generate-the-report-for-export"></a>Étape 1: générer le rapport pour l'exportation
 
-La première étape consiste à préparer l’état pour le téléchargement de l’exportation de votre ordinateur. Lorsque vous le rapport, le rapport de documents sont téléchargés vers une zone de stockage Azure dans Microsoft cloud.
+La première étape consiste à préparer le rapport en vue de son téléchargement sur votre ordinateur. Lorsque vous le rapport, les documents de rapport sont téléchargés vers une zone de stockage Azure dans le Cloud Microsoft.
   
 1. Accédez à la page [https://protection.office.com](https://protection.office.com).
     
@@ -71,14 +70,14 @@ La première étape consiste à préparer l’état pour le téléchargement de 
     
 3. Dans le volet gauche du Centre de sécurité et de conformité, cliquez sur **Recherches &amp; enquêtes** \> **Recherche de contenu**.
     
-4. Dans la page de **recherche de contenu** , sélectionnez une recherche. 
+4. Sur la page **recherche de contenu** , sélectionnez une recherche. 
     
-5. Dans le volet de détails, sous **Exporter le rapport à un ordinateur**, cliquez sur **Générer un rapport**.
+5. Dans le volet d'informations, sous **Exporter le rapport vers un ordinateur**, cliquez sur **générer un rapport**.
     
     > [!NOTE]
-    > Si les résultats d’une recherche datent de plus de 7 jours, vous êtes invité à mettre à jour les résultats de recherche. Dans ce cas, annuler l’exportation et cliquez sur **résultats de la recherche mise à jour** dans le volet de détails de la recherche sélectionnée, puis démarrer l’exportation de rapports une fois que les résultats sont mis à jour. 
+    > Si les résultats d'une recherche sont antérieurs à 7 jours, vous êtes invité à mettre à jour les résultats de la recherche. Dans ce cas, annulez l'exportation, cliquez sur **mettre à jour les résultats** de la recherche dans le volet d'informations de la recherche sélectionnée, puis redémarrez l'exportation des rapports une fois les résultats mis à jour. 
   
-6. Dans la page **Exporter un état** , sous **inclure ces éléments de la recherche**, choisissez une des options suivantes :
+6. Sur la page **exporter un rapport** , sous **inclure ces éléments de la recherche**, choisissez l'une des options suivantes:
     
     - exporter uniquement les éléments indexés ;
     
@@ -86,67 +85,67 @@ La première étape consiste à préparer l’état pour le téléchargement de 
     
     - exporter uniquement les éléments non indexés.
     
-    Pour plus d’informations sur les éléments non indexées, voir [partiellement indexé des éléments de recherche de contenu](partially-indexed-items-in-content-search.md).
+    Pour plus d'informations sur les éléments non indexés, voir [éléments partiellement indexés dans la recherche de contenu](partially-indexed-items-in-content-search.md).
     
-7. Choisir d’inclure les statistiques de recherche pour toutes les versions de documents SharePoint. Cette option apparaît uniquement si les sources de contenu de la recherche inclut les sites SharePoint ou OneDrive.
+7. Choisissez d'inclure les statistiques de recherche pour toutes les versions des documents SharePoint. Cette option n'est disponible que si les sources de contenu de la recherche incluent des sites SharePoint ou OneDrive entreprise.
     
-8. Cliquez sur **Générer un rapport**.
+8. Cliquez sur **générer un rapport**.
     
-    Le rapport de résultats de recherche est préparé pour le téléchargement, ce qui signifie que les documents de rapport seront téléchargés dans la zone de stockage Azure dans le nuage de Microsoft. Lorsque le rapport est prêt pour le téléchargement, le lien **Télécharger le rapport** s’affiche sous **Exporter le rapport à un ordinateur** dans le volet détails. 
+    Le rapport de résultats de recherche est préparé pour le téléchargement, ce qui signifie que les documents de rapport seront téléchargés vers la zone de stockage Azure du Cloud Microsoft. Lorsque le rapport est prêt à être téléchargé, le lien **Télécharger le rapport** est affiché sous **Exporter le rapport vers un ordinateur** dans le volet d'informations. 
     
 > [!NOTE]
-> Vous pouvez aussi exporter un état pour une recherche de contenu qui est associé à une affaire eDiscovery. Pour ce faire, accédez à **recherche &amp; enquête** \> **eDiscovery**, sélectionnez un dossier, puis cliquez sur **Modifier** ![icône Modifier](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). Dans la page de **recherche** , sélectionnez une recherche, puis cliquez sur **Exporter** ![icône de résultats de recherche d’exportation](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) \> **Exporter un état**. 
+> Vous pouvez également exporter un rapport pour une recherche de contenu associée à un cas de découverte électronique. Pour ce faire, accédez à **enquête &amp; ** \> de recherche **eDiscovery**, sélectionnez un cas, puis **** ![cliquez sur modifier](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)l'icône modifier. Sur la **** ![page](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) \> **recherches** , sélectionnez une recherche, puis cliquez sur Exporter les résultats de la recherche d'exportation **exporter un rapport**. 
   
-## <a name="step-2-download-the-report"></a>Étape 2 : Télécharger le rapport
+## <a name="step-2-download-the-report"></a>Étape 2: Télécharger le rapport
 
-L’étape suivante consiste à télécharger le rapport à partir de la zone de stockage Azure sur votre ordinateur local.
+L'étape suivante consiste à télécharger le rapport à partir de la zone de stockage Azure sur votre ordinateur local.
   
-1. Dans le volet de détails de la recherche que vous avez généré le rapport, sous **état sur un ordinateur de l’exportation**, cliquez sur **Télécharger le rapport**.
+1. Dans le volet d'informations de la recherche pour laquelle vous avez généré le rapport, sous exporter le rapport **vers un ordinateur**, cliquez sur **Télécharger le rapport**.
     
-    La page de **téléchargement du rapport** s’affiche et contient des informations à propos du rapport jusqu'à être téléchargé sur votre ordinateur. 
+    La page **Télécharger le rapport** s'affiche et contient les informations suivantes sur le rapport afin qu'il soit téléchargé sur votre ordinateur. 
     
     - Le nombre d’éléments à télécharger.
     
     - La taille totale estimée des éléments à télécharger.
     
-    - Si indexés ou non indexés seront exportés. Éléments non indexées sont des éléments qui ont un format reconnu, qui sont chiffrées ou n’ont pas été indexés pour d’autres raisons.
+    - Le fait que indexé ou non indexée sera exporté. Les éléments non indexés sont des éléments dont le format est reconnu, sont chiffrés ou n'ont pas été indexés pour d'autres raisons.
     
     - Si les versions des documents SharePoint seront téléchargés.
     
-    - L’état du processus d’exportation de rapport. Vous pouvez démarrer le téléchargement du rapport, même si la préparation de l’état n’est pas terminée.
+    - État du processus d'exportation des rapports. Vous pouvez commencer à télécharger le rapport même si la préparation du rapport n'est pas terminée.
     
-2. **Exporter la clé**, cliquez sur **Copier dans le Presse-papiers**. Vous allez utiliser cette clé à l’étape 5 pour télécharger le rapport.
+2. Sous **Exporter la clé**, cliquez sur **copier dans le presse-papiers**. Vous utiliserez cette clé à l'étape 5 pour télécharger le rapport.
     
     > [!IMPORTANT]
-    > Étant donné que tout le monde peut installer et démarrer l’outil d’exportation de découverte électronique et ensuite utiliser cette clé pour télécharger le rapport de recherche, veillez à prendre des précautions pour protéger cette clé comme vous le feriez protéger les mots de passe ou d’autres informations relatives à la sécurité. 
+    > Étant donné qu'une personne peut installer et démarrer l'outil d'exportation de découverte électronique, puis utiliser cette clé pour télécharger le rapport de recherche, veillez à protéger cette clé comme vous le feriez pour protéger les mots de passe ou d'autres informations relatives à la sécurité. 
   
 3. Cliquez sur **Télécharger le rapport**.
     
-4. Si vous êtes invité à installer **Microsoft Office 365 eDiscovery outil d’exportation**, cliquez sur **installer**.
+4. Si vous êtes invité à installer l' **outil d'exportation de découverte électronique MicrosoftOffice 365**, cliquez sur **installer**.
     
 5. Dans l’**outil d’exportation de découverte électronique**, collez la clé d’exportation que vous avez copiée à l’étape 2 dans la zone appropriée. 
     
-6. Cliquez sur **Parcourir** pour spécifier l’emplacement où vous souhaitez télécharger le rapport. 
+6. Cliquez sur **Parcourir** pour spécifier l'emplacement où vous souhaitez télécharger le rapport. 
     
 7. Cliquez sur **Démarrer** pour télécharger les résultats de recherche sur votre ordinateur. 
     
-    L' **outil d’exportation de découverte électronique** affiche les informations sur le processus d’exportation, y compris une estimation du nombre (et taille) des autres éléments à télécharger. Une fois le processus d’exportation terminée, vous pouvez accéder les fichiers à l’emplacement où ils ont été téléchargés. 
+    L' **outil d'exportation de découverte électronique** affiche des informations d'État sur le processus d'exportation, y compris une estimation du nombre (et de la taille) des éléments restants à télécharger. Une fois le processus d'exportation terminé, vous pouvez accéder aux fichiers à l'emplacement où ils ont été téléchargés. 
     
 > [!NOTE]
-> Vous pouvez télécharger le rapport pour une recherche de contenu qui est associé à une affaire eDiscovery. Pour ce faire, accédez à **recherche &amp; enquête** \> **eDiscovery**, sélectionnez un dossier, puis cliquez sur **Modifier** ![icône Modifier](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif). Dans la page **exportation** , sélectionnez une exportation de rapport, puis cliquez sur **Télécharger le rapport** dans le volet détails. 
+> Vous pouvez télécharger le rapport pour une recherche de contenu associée à un cas de découverte électronique. Pour ce faire, accédez à **enquête &amp; ** \> de recherche **eDiscovery**, sélectionnez un cas, puis **** ![cliquez sur modifier](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)l'icône modifier. Dans la page **exportations** , sélectionnez une exportation de rapport, puis cliquez sur **Télécharger le rapport** dans le volet d'informations. 
   
-## <a name="whats-included-in-the-report"></a>Ce qui est inclus dans le rapport
+## <a name="whats-included-in-the-report"></a>Éléments inclus dans le rapport
 
-Lorsque vous générez et exportez un rapport sur les résultats d’une recherche de contenu, les documents suivants sont téléchargés :
+Lorsque vous générez et exportez un rapport sur les résultats d'une recherche de contenu, les documents suivants sont téléchargés:
   
-- **Exporter la synthèse** - document Microsoft Excel contenant un résumé de l’exportation. Cela inclut des informations telles que le nombre de sources de contenu qui ont été exclus, le nombre de résultats de recherche à partir de chaque emplacement de contenu, l’estimation du nombre d’éléments, le nombre d’éléments doit être exportés et la taille estimée et réelle des éléments qui doit être exporté. 
+- **Exporter le résumé** : un document Excel qui contient un résumé de l'exportation. Cela inclut des informations telles que le nombre de sources de contenu qui ont été recherchées, le nombre de résultats de recherche à partir de chaque emplacement de contenu, le nombre estimé d'éléments, le nombre réel d'éléments qui seront exportés et la taille estimée et réelle des éléments qui seraient exportées. 
     
     > [!NOTE]
-    > Si vous incluez des éléments non indexés lors de l’exportation du rapport, le nombre d’éléments non indexés est inclus dans le nombre total de résultats de la recherche estimés et le nombre total de résultats de recherche téléchargé (si vous n’avez pour exporter les résultats de recherche) qui sont répertoriés dans le Exporter le rapport de synthèse. En d’autres termes, le nombre total d’éléments qui doit être téléchargé est égal au nombre total de résultats de l’estimation et le nombre total d’éléments non indexés. 
+    > Si vous incluez des éléments non indexés lors de l'exportation du rapport, le nombre total d'éléments non indexés est inclus dans le nombre total de résultats de recherche estimés et dans le nombre total de résultats de recherche téléchargés (si vous deviez exporter les résultats de la recherche) répertoriés dans le Exporter un rapport de synthèse. En d'autres termes, le nombre total d'éléments qui seront téléchargés est égal au nombre total de résultats estimés et au nombre total d'éléments non indexés. 
   
-- **Manifeste** - un fichier manifeste (au format XML) qui contient des informations sur chaque élément inclus dans les résultats de recherche. 
+- **Manifest** : fichier manifeste (au format XML) qui contient des informations sur chaque élément inclus dans les résultats de la recherche. 
     
-- **Résultats** - document Microsoft Excel qui contient une ligne avec des informations concernant chaque élément indexé qui doit être exporté avec les résultats de recherche. Pour le courrier électronique, le journal de résultat contient des informations sur chaque message, y compris : 
+- **Results** -un document Excel contenant une ligne avec des informations sur chaque élément indexé qui serait exporté avec les résultats de la recherche. Pour le courrier électronique, le journal des résultats contient des informations sur chaque message, notamment: 
     
   - l’emplacement du message dans la boîte aux lettres source (notamment si le message est dans la boîte aux lettres principale ou d’archivage) ;
     
@@ -156,7 +155,7 @@ Lorsque vous générez et exportez un rapport sur les résultats d’une recherc
     
   - l’expéditeur et les destinataires du message.
     
-    Pour les documents à partir de SharePoint et OneDrive pour les sites de l’entreprise, le journal de résultats contient des informations sur tous les documents, y compris :
+    Pour les documents provenant de sites SharePoint et OneDrive entreprise, le journal des résultats contient des informations sur chaque document, notamment:
     
   - l’URL du document ;
     
@@ -167,6 +166,6 @@ Lorsque vous générez et exportez un rapport sur les résultats d’une recherc
   - le nom du document (qui se trouve dans la colonne Objet du journal des résultats).
     
     > [!NOTE]
-    > Le nombre de lignes dans le rapport de **résultats** doit être égal au nombre total de résultats de recherche doit être téléchargée moins le nombre total d’éléments répertoriés dans le rapport **d’Éléments non indexés** . 
+    > Le nombre de lignes dans l'état des **résultats** doit être égal au nombre total de résultats de recherche qui seront téléchargés moins le nombre total d'éléments figurant dans le rapport des **éléments** non indexés. 
   
-- **Éléments non indexés** - document Microsoft Excel qui contient des informations sur tous les éléments non indexées doivent figurer dans les résultats de recherche. Si vous n’incluez pas les éléments non indexés lorsque vous générez le rapport de résultats de recherche, ce rapport est toujours téléchargé, mais sera vide.
+- **Éléments** non indexés: document Excel qui contient des informations sur les éléments non indexés qui seraient inclus dans les résultats de la recherche. Si vous n'incluez pas d'éléments non indexés lorsque vous générez le rapport des résultats de la recherche, ce rapport sera toujours téléchargé, mais il sera vide.

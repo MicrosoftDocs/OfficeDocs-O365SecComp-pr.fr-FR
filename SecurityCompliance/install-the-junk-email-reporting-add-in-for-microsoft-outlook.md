@@ -6,17 +6,17 @@ manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
-description: Dans cette articleSupported LanguagesInstall l’indésirable Email Reporting Add-inUninstall les informations ajouter Junk Email Reporting plus d’informations
-ms.openlocfilehash: 4204c80f298a0756f8e2fde2d0845d07570eaff9
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+description: Dans cette articleSupported LanguagesInstall le dossier Junk Email rePorting Add-unUninstall the Junk Email rePorting Add-inFor more information
+ms.openlocfilehash: 20fb879d3a965a973513a69cf8055f0d96507e9a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272319"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217024"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installation du complément de création de rapports de courrier indésirable pour Microsoft Outlook
   
@@ -66,7 +66,7 @@ Vous pouvez installer le complément de création de rapports de courrier indés
     
 - En exécutant une installation sans assistance, c'est-à-dire sans interface utilisateur d'installation. Au lieu d'utiliser cette dernière, vous spécifiez des options de ligne de commande qui exécutent un script d'installation. Lorsque vous installez le complément, vous disposez d'options de configuration supplémentaires qui sont indisponibles dans l'interface GUI. Pour plus d'informations, consultez la rubrique relative à [Installation du complément de création de rapports de courrier indésirable en mode sans assistance](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_InstalltheJunkEmailReportingAdd-IninSilentMode).
     
-### <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
+### <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 L'installation du complément de création de rapports de courrier indésirable Microsoft pour Microsoft Outlook requiert la configuration suivante :
   
@@ -187,7 +187,7 @@ Utilisez l'une des options suivantes pour désinstaller le complément de créat
     
 3. Suivez les invites pour désinstaller le complément.
     
-4. Redémarrez Outlook pour vérifier que le complément ne s'affiche plus dans le ruban Outlook.
+4. Redémarrez Outlook pour vérifier que le complément ne s’affiche plus dans le ruban Outlook.
     
 ### <a name="uninstall-the-junk-email-reporting-add-in-in-silent-mode"></a>Désinstallation du complément Junk Email Reporting en mode sans assistance
 <a name="MK_UninstalltheJunkEmailReportingAdd-ininSilentMode"> </a>
@@ -212,6 +212,6 @@ Utilisez l'une des options suivantes pour désinstaller le complément de créat
 
 [Signaler les messages de courrier indésirable à Microsoft](report-junk-email-messages-to-microsoft.md)
   
-[Informations de dépannage et prise en charge](troubleshooting-and-support-information.md)
+[Résolution des problèmes et informations de support technique](troubleshooting-and-support-information.md)
   
 

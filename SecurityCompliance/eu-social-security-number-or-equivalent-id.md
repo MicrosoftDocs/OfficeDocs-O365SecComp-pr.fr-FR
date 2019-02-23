@@ -1,41 +1,41 @@
 ---
-title: ID de numéro de sécurité sociale de l’Union européenne ou équivalent
+title: Numéro de sécurité sociale de l'UE ou ID équivalent
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1fabd341-e594-4bfe-961c-62aa82893f60
-description: Cette rubrique illustre une stratégie de protection contre la perte données lorsqu’il détecte le type d’informations sensibles numéro de sécurité sociale de l’Union européenne ou ID équivalente. Ce type d’informations sensibles définit différents motifs, mots clés et autres pour chaque pays.
-ms.openlocfilehash: 6f1027dcfb648ed937b8180d74d4bc6348dab650
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Cette rubrique indique ce qu'est une stratégie de protection contre la perte de données (DLP) lorsqu'elle détecte le type d'informations sensibles de l'UE ou d'un ID équivalent. Ce type d'informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
+ms.openlocfilehash: abcefb6930e9c02d2f32d84b65accfecf1e20d95
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527983"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216524"
 ---
-# <a name="eu-social-security-number-or-equivalent-id"></a>ID de numéro de sécurité sociale de l’Union européenne ou équivalent
+# <a name="eu-social-security-number-or-equivalent-id"></a>Numéro de sécurité sociale de l'UE ou ID équivalent
 
-Cette rubrique illustre une stratégie de protection contre la perte données lorsqu’il détecte le type d’informations sensibles UE numéro de sécurité sociale (SSN) ou ID équivalente. Ce type d’informations sensibles définit différents motifs, mots clés et autres pour chaque pays.
+Cette rubrique présente ce qu'une stratégie de protection contre la perte de données (DLP) recherche lorsqu'elle détecte le type d'informations sensibles de l'UE ou un ID équivalent. Ce type d'informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
   
 ## <a name="austria"></a>Autriche
 
 ### <a name="format"></a>Format
 
-10 chiffres dans le format spécifié
+10 chiffres au format spécifié
   
 ### <a name="pattern"></a>Modèle
 
 10 chiffres :
   
--  Trois chiffres qui correspondent à un numéro de série 
+-  Trois chiffres correspondant à un numéro de série 
     
-- Chiffre un contrôle
+- Un chiffre de contrôle
     
-- Six chiffres qui correspondent à la date de naissance (jjmmaa)
+- Six chiffres correspondant à la date de naissance (JJMMAA)
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -45,13 +45,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_austria_eu_ssn_or_equivalent` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_austria_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_austria_eu_ssn_or_equivalent` est trouvée. 
+- Un mot clé `Keywords_austria_eu_ssn_or_equivalent` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_austria_eu_ssn_or_equivalent` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_austria_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -66,11 +66,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsaustriaeussnorequivalent"></a>Keywords_austria_eu_ssn_or_equivalent
 
-sécurité sociale aucune
+Numéro de sécurité sociale
   
 numéro de sécurité sociale
 
@@ -78,23 +78,23 @@ numéro de sécurité sociale
 
 code de sécurité sociale
   
-numéro d’assurance
+Numéro d'assurance
   
-Schilling ssn
+Numéro de sécurité sociale autrichien
   
-ssn #
+SSN
   
-ssn
+SSN
   
-code d’assurance
+code d'assurance
   
-code d’assurance #
+n ° de code d'assurance
   
 socialsecurityno #
   
 sozialversicherungsnummer
   
-soziale sicherheit kein
+soziale Sicherheit kein
   
 versicherungsnummer
   
@@ -116,13 +116,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_belgium_eu_ssn_or_equivalent` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_belgium_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_belgium_eu_ssn_or_equivalent` est trouvée. 
+- Un mot clé `Keywords_belgium_eu_ssn_or_equivalent` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_belgium_eu_ssn_or_equivalent` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_belgium_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -137,7 +137,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsbelgiumeussnorequivalent"></a>Keywords_belgium_eu_ssn_or_equivalent
 
@@ -150,17 +150,17 @@ numéro de sécurité sociale
   
 nationalnumber #
   
-ssn #
+SSN
   
-ssn
+SSN
   
 nationalnumber
   
-bnn #
+BNN #
   
-bnn
+BNN
   
-numéro d’identification personnelle
+Numéro d'identification personnel
   
 personalidnumber #
   
@@ -171,7 +171,7 @@ numéro de sécurité
   
 numéro d'assuré
   
-Identifiant national
+identifiant national
   
 identifiantnational #
   
@@ -181,7 +181,7 @@ numéronational #
 
 ### <a name="format"></a>Format
 
-11 chiffres sans espaces et les séparateurs
+11 chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
@@ -189,7 +189,7 @@ numéronational #
   
 -  Dix chiffres 
     
-- Chiffre un contrôle
+- Un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -199,13 +199,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_croatia_eu_ssn_or_equivalent` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_croatia_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_croatia_eu_ssn_or_equivalent` est trouvée. 
+- Un mot clé `Keywords_croatia_eu_ssn_or_equivalent` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_croatia_eu_ssn_or_equivalent` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_croatia_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -220,56 +220,56 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordscroatiaeussnorequivalent"></a>Keywords_croatia_eu_ssn_or_equivalent
 
-numéro d’identification personnel
+Numéro d'identification personnel
   
-nombre de maîtres citoyens
+Numéro de citoyen principal
   
-numéro d’identification nationale
+Numéro d'identification nationale
   
 numéro de sécurité sociale
 
   
 nationalnumber #
   
-ssn #
+SSN
   
-ssn
+SSN
   
 nationalnumber
   
-bnn #
+BNN #
   
-bnn
+BNN
   
-numéro d’identification personnelle
+Numéro d'identification personnel
   
 personalidnumber #
   
-oib
+OIB
   
-osobni identifikacijski broj
+osobni identifikacijski Broj
   
 ## <a name="czech-republic"></a>République tchèque
 
 ### <a name="format"></a>Format
 
-Dix chiffres et une barre oblique inverse dans le modèle spécifié
+10 chiffres et une barre oblique inverse dans le modèle spécifié
   
 ### <a name="pattern"></a>Modèle
 
-Dix chiffres et une barre oblique inverse :
+Dix chiffres et une barre oblique inverse:
   
-- Six chiffres qui correspondent à la date de naissance (AAMMJJ) : 
+- Six chiffres correspondant à la date de naissance (AAMMJJ): 
     
 - Une barre oblique inverse
     
-- Trois chiffres qui correspondent à un numéro de série qui sépare les personnes naissance à la même date
+- Trois chiffres correspondant à un numéro de série qui sépare les personnes nés à la même date
     
-- Chiffre un contrôle
+- Un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -279,13 +279,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_czech_republic_eu_ssn_or_equivalent` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_czech_republic_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_czech_republic_eu_ssn_or_equivalent` est trouvée. 
+- Un mot clé `Keywords_czech_republic_eu_ssn_or_equivalent` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_czech_republic_eu_ssn_or_equivalent` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_czech_republic_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -300,28 +300,28 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsczechrepubliceussnorequivalent"></a>Keywords_czech_republic_eu_ssn_or_equivalent
 
-nombre de naissance
+Numéro de naissance
   
-numéro d’identification nationale
+Numéro d'identification nationale
   
-numéro d’identification personnel
+Numéro d'identification personnel
   
 numéro de sécurité sociale
 
   
 nationalnumber #
   
-ssn #
+SSN
   
-ssn
+SSN
   
 numéro national
   
-numéro d’identification personnelle
+Numéro d'identification personnel
   
 personalidnumber #
   
@@ -329,23 +329,23 @@ rč
   
 rodné číslo
   
-rodne cislo
+Rodne Cislo
   
 ## <a name="denmark"></a>Danemark
 
 ### <a name="format"></a>Format
 
-Dix chiffres et un trait d’union dans le modèle spécifié
+10 chiffres et un trait d'Union dans le modèle spécifié
   
 ### <a name="pattern"></a>Modèle
 
-Dix chiffres et un trait d’union :
+Dix chiffres et un trait d'Union:
   
-- Six chiffres qui correspondent à la date de naissance (jjmmaa) 
+- Six chiffres correspondant à la date de naissance (JJMMAA) 
     
 - Un trait d’union 
     
-- Quatre chiffres qui correspondent à un numéro de séquence
+- Quatre chiffres correspondant à un numéro de séquence
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -355,13 +355,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_denmark_eu_ssn_or_equivalent` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_denmark_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_denmark_eu_ssn_or_equivalent` est trouvée. 
+- Un mot clé `Keywords_denmark_eu_ssn_or_equivalent` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_denmark_eu_ssn_or_equivalent` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_denmark_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -376,26 +376,26 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsdenmarkeussnorequivalent"></a>Keywords_denmark_eu_ssn_or_equivalent
 
-numéro d’identification personnel
+Numéro d'identification personnel
   
-numéro d’identification nationale
+Numéro d'identification nationale
   
 numéro de sécurité sociale
 
   
 nationalnumber #
   
-ssn #
+SSN
   
-ssn
+SSN
   
 numéro national
   
-numéro d’identification personnelle
+Numéro d'identification personnel
   
 personalidnumber #
   
@@ -407,21 +407,21 @@ personnummer
 
 ### <a name="format"></a>Format
 
-Une combinaison de 11 caractères au format spécifié
+Combinaison de 11 caractères au format spécifié
   
 ### <a name="pattern"></a>Modèle
 
-Une combinaison de 11 caractères au format spécifié :
+Combinaison de 11 caractères au format spécifié:
   
 -  Six chiffres 
     
-- Une seule instance d’une des opérations suivantes :
+- Une instance de l'un des éléments suivants:
     
-  - Plus de symbole
+  - Symbole plus
     
-  - Moins de symbole
+  - Symbole moins
     
-  - La lettre « A » (pas la casse)
+  - La lettre «A» (ne respecte pas la casse)
     
 - Trois chiffres
     
@@ -435,13 +435,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_finland_eu_ssn_or_equivalent` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_finland_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_finland_eu_ssn_or_equivalent` est trouvée. 
+- Un mot clé `Keywords_finland_eu_ssn_or_equivalent` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_finland_eu_ssn_or_equivalent` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_finland_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -456,70 +456,70 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsfinlandeussnorequivalent"></a>Keywords_finland_eu_ssn_or_equivalent
 
 numéro d’identification
 
   
-identifiant personnel
+ID personnel
   
-numéro d’identité
+Numéro d'identité
   
-numéro d’id national Finlande
+Numéro d'identification national finnois
   
 personalidnumber #
   
-numéro d’identification nationale
+Numéro d'identification nationale
   
-numéro d’identification
+Numéro d'identification
   
-id national aucun.
+Numéro d'identification nationale
   
-numéro national
+Numéro d'identification national
   
-ID d’aucun
+n ° ID
   
 tunnistenumero
   
 henkilötunnus
   
-yksilöllinen henkilökohtainen tunnistenumero
+Yksilöllinen henkilökohtainen tunnistenumero
   
 ainutlaatuinen henkilökohtainen tunnus
   
-numero identiteetti
+identiteetti numérique
   
-Suomen kansallinen henkilötunnus
+Suomen Kansallinen henkilötunnus
   
 henkilötunnusnumero #
   
-kansallisen tunnistenumero
+Kansallisen tunnistenumero
   
 tunnusnumero
   
-kansallinen tunnus numero
+Kansallinen tunnus numérique
   
-hetu
+Hetu
   
 ## <a name="france"></a>France
 
-Pour plus d’informations, consultez la section « France numéro de sécurité sociale (INSEE) » dans [Rechercher quels types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d'informations, reportez-vous à la section «France-numéro de sécurité sociale (INSEE)» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="germany"></a>Allemagne
 
-Pour plus d’informations, consultez la section « Numéro de carte d’identité Allemagne » dans [Rechercher quels types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d'informations, reportez-vous à la section «Germany Identity Card Number» dans les [types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="greece"></a>Grèce
 
-Pour plus d’informations, consultez la section « Grèce carte » dans [Rechercher quels types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d'informations, reportez-vous à la section «carte d'identité nationale Grèce» dans [ce que recherche les types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="hungary"></a>Hongrie
 
 ### <a name="format"></a>Format
 
-Neuf chiffres sans espaces et les séparateurs
+Neuf chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
@@ -533,13 +533,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_hungary_eu_ssn_or_equivalent` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_hungary_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_hungary_eu_ssn_or_equivalent` est trouvée. 
+- Un mot clé `Keywords_hungary_eu_ssn_or_equivalent` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_hungary_eu_ssn_or_equivalent` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_hungary_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -554,11 +554,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordshungaryeussnorequivalent"></a>Keywords_hungary_eu_ssn_or_equivalent
 
-numéro de sécurité sociale hongrois
+Numéro de sécurité sociale hongrois
   
 numéro de sécurité sociale
 
@@ -571,55 +571,55 @@ socialsecuritynno
   
 hssn
   
-TAJ
+Taj
   
-TAJ #
+Taj #
   
-ssn
+SSN
   
-ssn #
+SSN
   
-sécurité sociale aucune
+Numéro de sécurité sociale
   
-áfa
+ÁFA
   
-közösségi adószám
+Közösségi adószám
   
-általános forgalmi adó szám
+Általános forgalmi adó szám
   
 hozzáadottérték adó
   
-áfa szám
+ÁFA szám
   
-áfa magyar szám
+Magyar ÁFA szám
   
 ## <a name="portugal"></a>Portugal
 
-Pour plus d’informations, consultez la section « Portugal citoyens carte numéro » dans [Rechercher quels types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d'informations, reportez-vous à la section «numéro de carte de citoyen Portugal» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="spain"></a>Espagne
 
-Pour plus d’informations, consultez la section « Espagne numéro de sécurité sociale (SSN) » dans [Rechercher quels types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d'informations, reportez-vous à la section «numéro de sécurité sociale Espagne» dans les [types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="sweden"></a>Suède
 
 ### <a name="format"></a>Format
 
-12 chiffres sans espaces et les séparateurs
+12 chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
 12 chiffres :
   
--  Huit chiffres qui correspondent à la date de naissance (AAAAMMJJ) 
+-  Huit chiffres correspondant à la date de naissance (AAAAMMJJ) 
     
-- Trois chiffres qui correspondent à un numéro de série où : 
+- Trois chiffres correspondant à un numéro de série où: 
     
-  - Le dernier chiffre du numéro de série indique le sexe par l’affectation d’un nombre impair de masculin et un nombre pair pour femme
+  - Le dernier chiffre du numéro de série indique sexe par l'affectation d'un nombre impair pour le mâle et d'un nombre pair pour femelle.
     
-  - Jusqu'à 1990, l’affectation de numéro de série correspondant à la région où le support du nombre de naissance ou (si naissance avant 1947) où il avait été courantes, en fonction des enregistrements de taxe sur 1 janvier 1947, avec un code spécial (généralement 9 en tant que le chiffre 7) pour immigrants 
+  - Jusqu'à 1990, l'affectation du numéro de série correspond au comté où le porteur du numéro est né ou (en naissance avant 1947) où il a été vivant, en fonction des enregistrements fiscaux, le 1er janvier 1947, avec un code spécial (généralement 9 comme le 7 chiffres) pour immigrants 
     
-- Chiffre un contrôle
+- Un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -629,13 +629,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_sweden_eu_ssn_or_equivalent` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_sweden_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_sweden_eu_ssn_or_equivalent` est trouvée. 
+- Un mot clé `Keywords_sweden_eu_ssn_or_equivalent` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_sweden_eu_ssn_or_equivalent` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_sweden_eu_ssn_or_equivalent` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU SSN or Equivalent Number -->
@@ -650,28 +650,28 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsswedeneussnorequivalent"></a>Keywords_sweden_eu_ssn_or_equivalent
 
-numéro d’identification personnelle
+Numéro d'identification personnel
   
 numéro d’identification
 
   
-identifiant personnel aucune
+Numéro d'identification personnel
   
-identité aucune
+n ° d'identité
   
-identification aucune
+Numéro d'identification
   
-identification personnel aucune
+Numéro d'identification personnel
   
-id personnummer
+ID personnummer
   
-id de personligt-nummer
+ID personligt-Nummer
   
-id d’unikt-nummer
+ID unikt-Nummer
   
 personnummer
   

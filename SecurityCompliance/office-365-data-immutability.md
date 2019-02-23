@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Définit et décrit l'immuabilité des données, ou les données qui doivent être détectables et qui ne peuvent pas être détruites ou modifiées.
-ms.openlocfilehash: ab7bfc3795da761eacc9e9aa7d41e69e482fc411
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 5d0deef04d879959238dbbcfe36bb98ed0159242
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090876"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215564"
 ---
 # <a name="immutability-in-office-365"></a>Immuabilité dans Office 365
 Pour certaines organisations, le respect de la réglementation, les exigences de gouvernance interne ou le risque de contentieux nécessitent la conservation de la messagerie et des données associées sous une forme découvrable. Toutes les données du système doivent être découvrables et aucune ne peut être détruite ou modifiée. Le terme standard du secteur est «immuabilité». 

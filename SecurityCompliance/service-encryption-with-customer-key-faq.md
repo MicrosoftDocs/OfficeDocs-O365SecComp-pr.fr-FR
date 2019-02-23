@@ -1,230 +1,230 @@
 ---
-title: Chiffrement de service avec une clé client pour Office 365 FAQ
+title: 'FAQ : chiffrement de service avec une clé client pour Office 365'
 ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 7/31/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
-description: Outre la planification, le chiffrement au niveau du volume qui est activé par le biais de BitLocker et distribué clé Manager (DKM), Office 365 offre un niveau supplémentaire de chiffrement au niveau des applications de contenu client dans Office 365, notamment les données à partir d’Exchange En ligne, Skype pour les entreprises, SharePoint Online et OneDrive for Business. Il s’agit de chiffrement du service.
-ms.openlocfilehash: ceba35233872bb65b7706ed4e11a263057adc6c1
-ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
+description: Outre le chiffrement de base, le chiffrement au niveau du volume qui est activé via BitLocker et le gestionnaire de clés distribuées (DKM), Office 365 offre une couche de chiffrement supplémentaire au niveau de l'application pour le contenu client dans Office 365, y compris les données d'Exchange En ligne, Skype entreprise, SharePoint Online et OneDrive entreprise. Il s'agit du chiffrement de service.
+ms.openlocfilehash: a9001db0f63183bf4694dfc880ab0940309d0375
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575328"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216504"
 ---
-# <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Chiffrement de service avec une clé client pour Office 365 FAQ
+# <a name="service-encryption-with-customer-key-for-office-365-faq"></a>FAQ : chiffrement de service avec une clé client pour Office 365
 
-Outre la planification, le chiffrement au niveau du volume qui est activé par le biais de BitLocker et distribué clé Manager (DKM), Office 365 offre un niveau supplémentaire de chiffrement au niveau des applications de contenu client dans Office 365, notamment les données à partir d’Exchange En ligne, Skype pour les entreprises, SharePoint Online et OneDrive for Business. Il s’agit de chiffrement du service.
+Outre le chiffrement de base, le chiffrement au niveau du volume qui est activé via BitLocker et le gestionnaire de clés distribuées (DKM), Office 365 offre une couche de chiffrement supplémentaire au niveau de l'application pour le contenu client dans Office 365, y compris les données d'Exchange En ligne, Skype entreprise, SharePoint Online et OneDrive entreprise. Il s'agit du chiffrement de service.
   
-Clé de client repose sur le chiffrement de service et permet de vous fournir et les clés de contrôle qui sont utilisés pour chiffrer vos données au repos dans Office 365, comme décrit dans les [Termes du contrat de Services en ligne (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx). Clé de client vous permet de répondre aux obligations de conformité car vous contrôler les clés de chiffrement Office 365 utilise pour déchiffrer les données.
+La clé client est basée sur le chiffrement de service et vous permet de fournir et de contrôler les clés utilisées pour chiffrer vos données au repos dans Office 365, comme décrit dans les [services en ligne (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx). La clé client vous permet de respecter les obligations de conformité, car vous contrôlez les clés de chiffrement utilisées par Office 365 pour déchiffrer les données.
   
-Pour fournir des commentaires sur la clé client, y compris la documentation, envoyez vos idées, les suggestions et les perspectives à customerkeyfeedback@microsoft.com.
+Pour fournir des commentaires sur la clé client, y compris la documentation, envoyez vos idées, suggestions et perspectives à customerkeyfeedback@microsoft.com.
   
-## <a name="what-is-service-encryption-with-customer-key"></a>Quel est le chiffrement de service avec la clé client ?
+## <a name="what-is-service-encryption-with-customer-key"></a>Qu'est-ce que le chiffrement de service avec la clé client?
 
-Clé de client améliore la capacité de votre organisation à répondre aux exigences de conformité qui spécifient les dispositions clées avec le fournisseur de services en nuage. Avec la clé client, que vous fournissez et contrôler les clés de chiffrement pour votre Office 365 données au repos au niveau de l’application. Par conséquent, vous pouvez contrôler et révoquer les clés de votre organisation, vous devez décider quitter le service. Par révoquer les clés, les données sont illisibles au service. Révocation de clé est la première étape dans le chemin d’accès vers la suppression des données.
+La clé client améliore la capacité de votre organisation à répondre aux exigences des exigences de conformité qui spécifient des dispositions clés avec le fournisseur de services Cloud. La clé client vous permet de fournir et de contrôler les clés de chiffrement pour vos données Office 365 au niveau de l'application. Par conséquent, vous pouvez tester et révoquer les clés de votre organisation, si vous décidez de quitter le service. En révoquant les clés, les données ne sont pas lisibles pour le service. La révocation de clé est la première étape sur le chemin d'accès à la suppression des données.
 
-## <a name="what-office-365-data-at-rest-is-covered-by-customer-key"></a>Les données d’Office 365 au repos sont couverts par la clé client ?
+## <a name="what-office-365-data-at-rest-is-covered-by-customer-key"></a>Quelles sont les données Office 365 de Rest couvertes par la clé client?
 <a name="WhatDataIsCoveredbyCustomerKey"> </a>
 
-Contenu du site SharePoint Online et les fichiers stockés sur ce site et les fichiers téléchargés vers OneDrive entreprise sont abordées. Contenu de boîte aux lettres Exchange Online (corps du message électronique, des entrées de calendrier et le contenu des pièces jointes de courrier électronique) est traité. Conversations du texte à partir de Skype pour les entreprises sont traitées, mais Skype réunion diffusion des enregistrements et les téléchargements de contenu de réunion Skype ne sont pas couvertes. Diffusion de réunion Skype et Skype réunion les téléchargements de contenu sont chiffrées ainsi que tout autre contenu dans Office 365, mais nous actuellement n’offre contrôle client des clés de chiffrement.
+Le contenu du site SharePoint Online et les fichiers stockés sur ce site, ainsi que les fichiers téléchargés sur OneDrive entreprise, sont couverts. Le contenu des boîtes aux lettres Exchange Online (corps de courrier électronique, entrées de calendrier et contenu de pièces jointes) est couvert. Les conversations textuelles de Skype entreprise sont couvertes, mais les enregistrements de diffusion de réunion Skype et les téléchargements de contenu de réunion Skype ne sont pas couverts. La diffusion de réunion Skype et le téléchargement de contenu de réunion Skype sont chiffrés avec tout autre contenu dans Office 365, mais nous ne proposons actuellement pas de contrôle par le client des clés de chiffrement.
   
-## <a name="what-is-the-difference-between-customer-key-and-bring-your-own-key-byok-with-azure-information-protection-for-exchange-online"></a>Quelle est la différence entre la clé client et mettre votre propre clé (BYOK) avec Azure Information Protection pour Exchange Online ?
+## <a name="what-is-the-difference-between-customer-key-and-bring-your-own-key-byok-with-azure-information-protection-for-exchange-online"></a>Quelle est la différence entre la clé client et votre propre clé (BYOK) avec Azure information protection pour Exchange Online?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Les deux options permettent de fournir et de contrôler vos propres clés de chiffrement ; Toutefois, le chiffrement service avec la clé client crypte vos données au repos, qui résident dans Office 365 serveurs au repos, tandis que BYOK avec Azure Information Protection pour Exchange Online crypte vos données de transit permanente en ligne et hors connexion protection des messages électroniques et des pièces jointes pour Office 365. Clé de client et BYOK avec Azure Information Protection pour Exchange Online sont complémentaires, et si vous choisissez d’utiliser les touches de service gérés de Microsoft ou votre propre, chiffrer les données au repos transit peut offrir une protection renforcée à partir de attaques malveillantes.
+Ces deux options vous permettent de fournir et de contrôler vos propres clés de chiffrement; Toutefois, le chiffrement de service avec clé client chiffre vos données sur REST, résidant dans les serveurs Office 365, tandis que BYOK with Azure information Protection for Exchange Online chiffre votre transit de données et fournit une protection en ligne et hors connexion permanente. protection des messages électroniques et des pièces jointes pour Office 365. La clé client et BYOK avec Azure information protection pour Exchange Online sont complémentaires, et si vous choisissez d'utiliser les clés gérées par le service de Microsoft ou vos propres clés, le chiffrement de vos données sur place et en transit peut apporter une protection supplémentaire à partir de attaques malveillantes.
   
-BYOK avec Azure Information Protection pour Exchange Online est proposé dans les fonctionnalités d’Office 365 Message Encryption.
+BYOK avec Azure information protection pour Exchange Online est proposé dans les fonctionnalités de chiffrement de messages Office 365.
   
-## <a name="does-office-365-message-encryption-and-bring-your-own-key-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>Chiffrement de messages Office 365 et mettre votre propre clé avec la Protection des informations Azure modifie-t-il l’approche de Microsoft aux demandes de données tiers tels que comparaître ?
+## <a name="does-office-365-message-encryption-and-bring-your-own-key-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>Est-ce que le chiffrement de messages Office 365 et apporter votre propre clé avec Azure information protection modifient l'approche de Microsoft pour les demandes de données tierces telles que les demandes?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Non. Chiffrement de messages Office 365 et l’option pour fournir et contrôler vos propres clés de chiffrement avec mettre votre propre clé (BYOK) pour Azure informations Protection (AIP) n’est pas conçu pour répondre à comparaître de l’application de la réglementation. Chiffrement de messages Office 365 avec BYOK pour le point d’installation administrative a été conçu pour la conformité destinées axée clients qui doivent satisfaire aux obligations de conformité internes ou externes. Microsoft prend très au sérieux tiers demandes de données du client. En tant qu’un fournisseur de services en nuage, nous toujours représenter la confidentialité des données du client. En cas de nous obtenons aux citations à comparaître, nous toujours tenter de rediriger le tiers au client afin d’obtenir les informations. (Veuillez lire le blog de Brad Smith : [protéger les données de clients de gouvernement snooping](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Nous publier régulièrement des informations détaillées de la demande de réception [ici](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
+Nbre. Le chiffrement de messages Office 365 et l'option permettant de fournir et de contrôler vos propres clés de chiffrement avec votre propre clé (BYOK) pour Azure information protection (AIP) n'a pas été conçu pour répondre aux apports à l'application de la Loi. Le chiffrement de messages Office 365 avec BYOK pour AIP a été conçu pour les clients ayant des objectifs de conformité qui doivent respecter leurs obligations de conformité internes ou externes. Microsoft prend des demandes tierces de données client très sérieusement. En tant que fournisseur de services Cloud, nous sommes toujours le partisan de la confidentialité des données client. Dans le cas où nous obtenons une demande, nous tentons toujours de rediriger la tierce partie vers le client pour obtenir les informations. (Lisez le blog de Brad Smith: [protection des données client de l'espionnage public](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Nous publions régulièrement des informations détaillées sur la demande que nous recevons [ici](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
   
-Voir le [Centre de gestion de la confidentialité de Microsoft](https://www.microsoft.com/en-us/trustcenter/default.aspx) concernant les demandes de données tiers et « Divulgation des données du client » dans les [Termes du contrat de Services en ligne (OST) ](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx)pour plus d’informations.
+Pour plus d'informations, consultez le centre de gestion de la [confidentialité](https://www.microsoft.com/en-us/trustcenter/default.aspx) relatif aux demandes de données tierces et à la «divulgation des données client» dans les [services en ligne (OST) ](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx).
   
-## <a name="does-service-encryption-with-customer-key-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>Chiffrement de service avec la clé client modifie-t-il l’approche de Microsoft aux demandes de données tiers tels que comparaître ?
+## <a name="does-service-encryption-with-customer-key-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>Est-ce que le chiffrement de service avec la clé client modifie l'approche de Microsoft pour les demandes de données tierces telles que les témoignages?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Non. Clé de client n’a pas été conçue pour répondre à comparaître de l’application de la réglementation. Il a été conçu pour les clients régulés répondre aux obligations de conformité internes ou externes. Microsoft prend très au sérieux tiers demandes de données du client. En tant qu’un fournisseur de services en nuage, nous toujours représenter la confidentialité des données du client. En cas de nous obtenons aux citations à comparaître, nous toujours tenter de rediriger le tiers au client afin d’obtenir les informations. (Veuillez lire le blog de Brad Smith : [protéger les données de clients de gouvernement snooping](http://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Nous publier régulièrement des informations détaillées de la demande de réception [ici](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
+Nbre. La clé client n'a pas été conçue pour répondre aux apports à l'application de la Loi. Elle a été conçue pour les clients réglementés afin de répondre à leurs obligations de conformité internes ou externes. Microsoft prend des demandes tierces de données client très sérieusement. En tant que fournisseur de services Cloud, nous sommes toujours le partisan de la confidentialité des données client. Dans le cas où nous obtenons une demande, nous tentons toujours de rediriger la tierce partie vers le client pour obtenir les informations. (Lisez le blog de Brad Smith: [protection des données client de l'espionnage public](http://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Nous publions régulièrement des informations détaillées sur la demande que nous recevons [ici](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
   
-Voir le [Centre de gestion de la confidentialité de Microsoft](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data) concernant les demandes de données tiers et « Divulgation des données du client » dans les [Termes du contrat de Services en ligne (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx) pour plus d’informations. 
+Pour plus d'informations, consultez le centre de gestion de la [confidentialité](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data) relatif aux demandes de données tierces et à la «divulgation des données client» dans les [services en ligne (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx) . 
   
-## <a name="is-fasttrack-support-available-for-implementing-customer-key"></a>Prise en charge FastTrack n’est disponible pour l’implémentation de clé de client ?
+## <a name="is-fasttrack-support-available-for-implementing-customer-key"></a>La prise en charge FastTrack est-elle disponible pour la mise en œuvre de la clé client?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Non. FastTrack est uniquement utilisée pour recueillir des informations de configuration de client et de service qui est requises pour s’inscrire pour la clé client. La clé client offre sont publiés par le biais de FastTrack afin qu’il soit pratique pour les clients et partenaires à envoyer ces informations nécessaires à l’aide de la même méthode et facilite l’archivage des données qui fournissent des clients de l’offre.
+Nbre. FastTrack est utilisé uniquement pour collecter les informations de configuration de client et de service nécessaires pour enregistrer la clé client. Les offres de clés de client sont publiées via FastTrack pour permettre aux clients et partenaires de soumettre ces informations requises à l'aide de la même méthode et de faciliter l'archivage des données fournies par les clients dans l'offre.
   
-Si vous avez besoin d’une assistance supplémentaire au-delà de la documentation, contactez Microsoft Consulting Services (MCS), Premier champ Engineering (PFE) ou un partenaire Microsoft.
+Si vous avez besoin d'une assistance supplémentaire au-delà de la documentation, contactez Microsoft Consulting Services (MCS), premier Field Engineering (PFE) ou un partenaire Microsoft pour obtenir de l'aide.
   
-## <a name="if-my-keys-are-destroyed-how-can-i-recover"></a>Si mes clés sont détruits, comment puis-je récupérer ?
+## <a name="if-my-keys-are-destroyed-how-can-i-recover"></a>Si mes clés sont détruites, comment puis-je récupérer?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-La clé de disponibilité vous offre la possibilité de récupérer à partir de la perte de clés racine que vous gérez inattendue. Si vous perdez vos clés racine, contacter le Support de Microsoft et Microsoft vous aideront dans le processus d’activation de la clé de disponibilité. Vous allez utiliser la clé de disponibilité pour migrer vers une nouvelle stratégie de chiffrement des données avec de nouvelles clés mis en service par vous. 
+La clé de disponibilité vous permet de récupérer à partir de la perte imprévisible de clés racines que vous gérez. Si vous perdez vos clés racines, contactez le support Microsoft et Microsoft vous aidera à effectuer le processus d'activation de la clé de disponibilité. Vous utiliserez la clé de disponibilité pour migrer vers une nouvelle stratégie de chiffrement de données avec de nouvelles clés que vous avez configurées. 
   
-## <a name="what-is-the-availability-key"></a>Quelle est la clé de disponibilité ?
+## <a name="what-is-the-availability-key"></a>Qu'est-ce que la clé de disponibilité?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-La clé de disponibilité est une clé racine qui est mis en service lorsque vous créez une stratégie de chiffrement des données. La clé de disponibilité est stockée et protégée dans Office 365 et est similaire aux clés deux racine qui sont fournis par vous pour une utilisation avec le chiffrement de service avec la clé client. Contrairement aux clés que vous fournissez et gérer dans Azure clé coffre-fort, vous ne pouvez pas accéder directement à la clé de disponibilité. Stockage et contrôle de la clé de disponibilité sont délibérément différents de clés Azure clé coffre-fort pour trois raisons : tout d’abord, la clé de disponibilité fournit une fonctionnalité de haute disponibilité dans le cas où des services Office 365 ne peuvent pas accéder clés hébergés dans Azure clé Coffre-fort ; Ensuite, la clé de disponibilité fournit une fonctionnalité « arrêt verre » dans le cas où les deux clés Azure clé coffre-fort sont perdues ; et enfin, la séparation des contrôles logiques fournit la défense en profondeur et protège contre la perte de toutes les clés à partir d’une seule attaque ou point de défaillance. Partage de la responsabilité pour protéger les clés, lors de l’utilisation des protections et des processus de gestion de clés, réduit finalement le risque que toutes les clés (et par conséquent vos données) seront perdues ou détruites. Microsoft offre seuls à pouvoir par la destruction de la clé de disponibilité. Par leur conception, personne chez Microsoft a accès à la clé de la disponibilité : elle est uniquement accessible par le code du service Office 365.
+La clé de disponibilité est une clé racine qui est configurée lorsque vous créez une stratégie de chiffrement de données. La clé de disponibilité est stockée et protégée dans Office 365 et fonctionne de la même manière que les deux clés racines fournies par vous pour une utilisation avec le chiffrement de service avec la clé client. Contrairement aux touches que vous fournissez et gérez dans le coffre de clés Azure, vous ne pouvez pas accéder directement à la clé de disponibilité. Le stockage et le contrôle de la clé de disponibilité sont délibérément différents des clés de coffre-fort de clés Azure pour trois raisons: Premièrement, la clé de disponibilité offre une fonctionnalité de haute disponibilité si les services Office 365 ne peuvent pas atteindre les clés hébergées dans la clé Azure Fortes Deuxièmement, la clé de disponibilité fournit une fonctionnalité de «coupure» dans le cas où les deux clés Azure Key Vault sont perdues; Enfin, la séparation des contrôles logiques assure une défense approfondie et protège contre la perte de toutes les clés d'une attaque ou d'un point de défaillance. Partager la responsabilité de protéger les clés, tout en utilisant une variété de protections et de processus pour la gestion des clés, réduit le risque que toutes les clés (et par conséquent, vos données) soient perdues ou détruites. Microsoft vous fournit une autorité exclusive sur la destruction de la clé de disponibilité. De par sa conception, personne de Microsoft n'a accès à la clé de disponibilité-elle est uniquement accessible par le code de service Office 365.
   
-## <a name="how-many-data-encryption-policies-deps-can-i-create"></a>Stratégies de chiffrement de données (Dép.) combien puis-je créer ?
+## <a name="how-many-data-encryption-policies-deps-can-i-create"></a>Combien de stratégies de chiffrement de données (DEPs) puis-je créer?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
- **Exchange Online et Skype pour les entreprises :** Vous pouvez créer jusqu'à 50 Dép.. 
+ **Exchange Online et Skype entreprise:** Vous pouvez créer jusqu'à 50 DEPs. 
   
- **SharePoint Online et OneDrive for Business :** Un PED s’applique aux données dans un emplacement géographique, également appelé une geo. Si vous utilisez la fonctionnalité multi-geo d’Office 365, vous pouvez créer un PED par localisés. Si vous n’utilisez pas multi-localisés, vous pouvez créer un dépôt
+ **SharePoint Online et OneDrive entreprise:** Une DEP s'applique aux données d'un emplacement géographique, également appelé géo. Si vous utilisez la fonctionnalité multigéographique d'Office 365, vous pouvez créer une DEP par zone géographique. Si vous n'utilisez pas de multi-géo, vous pouvez créer une DEP.
   
-## <a name="can-i-assign-a-data-encryption-policy-before-migrating-a-mailbox-to-the-cloud"></a>Puis-je affecter une stratégie de chiffrement des données avant de migrer une boîte aux lettres vers le nuage ?
+## <a name="can-i-assign-a-data-encryption-policy-before-migrating-a-mailbox-to-the-cloud"></a>Puis-je assigner une stratégie de chiffrement de données avant de migrer une boîte aux lettres vers le Cloud?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Oui. Vous pouvez utiliser l’applet de commande Windows PowerShell Set-MailUser pour attribuer une stratégie de chiffrement des données (PED) à l’utilisateur avant de migrer les boîtes aux lettres vers Office 365. Lorsque vous effectuez cette opération, le contenu de la boîte aux lettres est chiffré à l’aide de la prévention affectée comme le contenu est migré. Cela peut être plus efficace que l’attribution d’un PED après que la boîte aux lettres a déjà été migré et puis en attente pour le chiffrement ait lieu, ce qui peut prendre plusieurs jours heures ou éventuellement. 
+OK. Vous pouvez utiliser l'applet de commande Windows PowerShell Set-MailUser pour affecter une stratégie de chiffrement de données à l'utilisateur avant de migrer la boîte aux lettres vers Office 365. Dans ce cas, le contenu de la boîte aux lettres est chiffré à l'aide de la DEP attribuée lors de la migration du contenu. Cela peut être plus efficace que d'affecter une DEP une fois que la boîte aux lettres a déjà été migrée, puis d'attendre que le chiffrement ait lieu, ce qui peut prendre des heures voire des jours. 
   
-## <a name="how-do-i-verify-that-encryption-with-customer-key-is-activated-and-office-365-has-finished-encrypting-with-customer-key"></a>Comment vérifier que le chiffrement avec la clé client est activé et Office 365 a terminé, EFS avec la clé client ?
+## <a name="how-do-i-verify-that-encryption-with-customer-key-is-activated-and-office-365-has-finished-encrypting-with-customer-key"></a>Comment puis-je vérifier que le chiffrement avec la clé client est activé et qu'Office 365 a terminé le chiffrement avec la clé client?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
- **Exchange Online et Skype pour les entreprises :** Vous pouvez [vous connecter à Exchange Online PowerShell à distance](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx) , puis utilisez l’applet de commande **[Get-MailboxStatistics]** pour chaque boîte aux lettres que vous voulez vérifier. Dans la sortie de l’applet de commande Get-MailboxStatistics, la propriété _IsEncrypted_ renvoie la valeur **true** si la boîte aux lettres est chiffré et la valeur **false** si elle n’est pas. Si la boîte aux lettres est chiffré, la valeur renvoyée par la propriété _DataEncryptionPolicyID_ est le GUID de la prévention dont la boîte aux lettres est chiffré. Pour plus d’informations sur l’exécution de cette applet de commande, voir [Get-MailboxStatistics](https://technet.microsoft.com/en-us/library/bb124612%28v=exchg.160%29.aspx) et à l’aide de PowerShell avec Exchange Online. 
+ **Exchange Online et Skype entreprise:** Vous pouvez vous [connecter à Exchange Online à l'aide de Remote PowerShell](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx) , puis utiliser la cmdlet **[Get-MailboxStatistics]** pour chaque boîte aux lettres que vous souhaitez vérifier. Dans la sortie de la cmdlet Get-MailboxStatistics, la propriété _IsEncrypted_ renvoie la valeur **true** si la boîte aux lettres est chiffrée et la valeur **false** dans le cas contraire. Si la boîte aux lettres est chiffrée, la valeur renvoyée pour la propriété _DataEncryptionPolicyID_ est le GUID de la DEP avec laquelle la boîte aux lettres est chiffrée. Pour plus d'informations sur l'exécution de cette cmdlet, consultez la rubrique [Get-MailboxStatistics](https://technet.microsoft.com/en-us/library/bb124612%28v=exchg.160%29.aspx) et Using PowerShell with Exchange Online. 
   
-Si les boîtes aux lettres ne sont pas chiffrées après avoir attendu 72 heures depuis le moment où vous avez affecté la prévention, d’initier un déplacement de boîte aux lettres. Pour ce faire, [se connecter à Exchange Online à l’aide de PowerShell à distance](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx) et utilisez l’applet de commande New-MoveRequest et entrer l’alias de la boîte aux lettres comme suit : 
+Si les boîtes aux lettres ne sont pas chiffrées après avoir attendu 72 heures après l'heure à laquelle vous avez attribué la DEP, lancez un déplacement de boîte aux lettres. Pour ce faire, [Connectez-vous à Exchange Online à l'aide de Remote PowerShell](https://technet.microsoft.com/en-us/library/jj984289%28v=exchg.160%29.aspx) , puis utilisez la cmdlet New-MoveRequest et fournissez l'alias de la boîte aux lettres comme suit: 
   
 ```
 New-MoveRequest <alias>
 ```
 
- **SharePoint Online et OneDrive for Business :** Vous pouvez [vous connecter à SharePoint Online PowerShell](https://technet.microsoft.com/en-us/library/fp161372.aspx), puis utilisez l’applet de commande **[Get-SPODataEncryptionPolicy]** pour vérifier l’état de votre client. Le ** _état_** propriété renvoie la valeur **enregistré** si le chiffrement de la clé client est activé et tous les fichiers dans tous les sites ont été chiffrés. Si le chiffrement est en cours d’exécution, cette applet de commande fournit des informations sur le pourcentage de sites est terminé. 
+ **SharePoint Online et OneDrive entreprise:** Vous pouvez vous [connecter à SharePoint Online PowerShell](https://technet.microsoft.com/en-us/library/fp161372.aspx), puis utiliser la cmdlet **[Get-SPODataEncryptionPolicy]** pour vérifier l'état de votre client. La propriété * * _State_* * renvoie la valeur **Registered** si le chiffrement de clé du client est activé et si tous les fichiers de tous les sites ont été chiffrés. Si le chiffrement est toujours en cours, cette applet de commande fournit des informations sur le pourcentage de sites terminé. 
   
-## <a name="if-i-want-to-switch-to-a-different-set-of-keys-how-long-does-it-take-for-the-new-set-of-keys-to-protect-my-data"></a>Si je souhaite basculer vers un autre jeu de clés, combien de temps faut-il pour le nouveau jeu de clés pour protéger mes données ?
+## <a name="if-i-want-to-switch-to-a-different-set-of-keys-how-long-does-it-take-for-the-new-set-of-keys-to-protect-my-data"></a>Si je veux basculer vers un autre ensemble de clés, combien de temps faut-il pour que le nouveau jeu de clés protège mes données?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
- **Exchange Online et Skype pour les entreprises :** Cela peut prendre jusqu'à 72 heures pour protéger une boîte aux lettres selon une stratégie de chiffrement nouvelles données (PED) depuis le moment où que le nouveau PED est affectée à la boîte aux lettres. 
+ **Exchange Online et Skype entreprise:** La protection d'une boîte aux lettres en fonction d'une nouvelle stratégie de chiffrement de données (DEP) à partir du moment où la nouvelle DEP est attribuée à la boîte aux lettres peut prendre jusqu'à 72 heures. 
   
- **SharePoint Online et OneDrive for Business :** Cela peut prendre jusqu'à quatre heures pour chiffrer à nouveau votre ensemble client lorsqu’une nouvelle clé a été affectée. 
+ **SharePoint Online et OneDrive entreprise:** Une fois qu'une nouvelle clé a été affectée, le chiffrement de votre client complet peut prendre jusqu'à quatre heures. 
   
-## <a name="is-my-existing-data-stored-without-encryption-at-any-time-while-it-is-decrypted-or-encrypted-with-customer-key"></a>Mes données existantes stockées sans chiffrement à tout moment lorsqu’elle est déchiffré ou chiffré avec la clé client ?
+## <a name="is-my-existing-data-stored-without-encryption-at-any-time-while-it-is-decrypted-or-encrypted-with-customer-key"></a>Mes données existantes sont-elles stockées sans chiffrement à tout moment lorsqu'elles sont déchiffrées ou chiffrées avec la clé client?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Non. Vos données sont toujours chiffrées au repos dans le service Office 365 avec BitLocker et DKM. Pour plus d’informations, voir le « sécurité, de confidentialité et les informations de conformité pour Office 365 » et [comment Exchange Online protège les secrets de votre courrier électronique](https://support.office.com/article/989BA10C-F73F-4EFB-AD1B-AF3322E5F376).
+Nbre. Vos données sont toujours chiffrées au repos dans le service Office 365 avec BitLocker et DKM. Pour plus d'informations, consultez les informations relatives à la sécurité, à la confidentialité et à la conformité pour Office 365, ainsi qu'à la [manière dont Exchange Online sécurise vos secrets de messagerie](https://support.office.com/article/989BA10C-F73F-4EFB-AD1B-AF3322E5F376).
   
-## <a name="if-i-no-longer-want-to-use-customer-managed-encryption-keys-can-i-switch-to-microsoft-managed-keys"></a>Si je ne souhaitez plus utiliser des clés de chiffrement de client géré, puis-je basculer clés gérés par Microsoft ?
+## <a name="if-i-no-longer-want-to-use-customer-managed-encryption-keys-can-i-switch-to-microsoft-managed-keys"></a>Si je ne souhaite plus utiliser les clés de chiffrement gérées par le client, puis-je passer aux clés gérées par Microsoft?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
- **Exchange Online et Skype pour les entreprises :** Pas encore. Il sera prise en charge une fois que le chiffrement dans Office 365 service des clés gérés par Microsoft est déployée globalement. Nous pensons que ce déploiement soit effectué dans le service après que nous chiffrement du service de publication avec la clé client. 
+ **Exchange Online et Skype entreprise:** Pas encore. Cela sera pris en charge une fois le chiffrement de service dans Office 365 avec des clés gérées par Microsoft. Nous prévoyons de le faire dans le service une fois que nous aurons publié le chiffrement de service avec la clé client. 
   
- **SharePoint Online et OneDrive for Business :** Oui. Vous pouvez choisir de revenir à l’utilisation de clés gérés par Microsoft séparément pour chaque localisés (si vous utilisez la fonctionnalité multi-geo) ou pour toutes vos données si elle est dans un seul localisés. 
+ **SharePoint Online et OneDrive entreprise:** OK. Vous pouvez choisir de rétablir les clés gérées par Microsoft séparément pour chaque région (si vous utilisez la fonction multi-géo) ou pour toutes vos données si elles se trouvent dans une seule région. 
   
-## <a name="if-i-lose-my-keys-how-long-does-it-take-to-recover-service-availability-using-the-recovery-key"></a>Si j’ai perdent mes clés, combien de temps faut-il pour récupérer la disponibilité du service à l’aide de la clé de récupération ?
+## <a name="if-i-lose-my-keys-how-long-does-it-take-to-recover-service-availability-using-the-recovery-key"></a>Si je perd mes clés, combien de temps faut-il pour récupérer la disponibilité des services à l'aide de la clé de récupération?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
- **Exchange Online et Skype pour les entreprises :** Lorsque vous appelez utiliser la clé de la disponibilité, les boîtes aux lettres seront accessibles dans les minutes. 
+ **Exchange Online et Skype entreprise:** Une fois que vous avez appelé pour utiliser la clé de disponibilité, les boîtes aux lettres seront accessibles en quelques minutes. 
   
- **SharePoint Online et OneDrive for Business :** Cette opération est proportionnelle au nombre de sites que vous avez. Une fois que vous appelez Microsoft pour utiliser la clé de la disponibilité, vous serez entièrement en ligne au sein d’environ quatre heures. 
+ **SharePoint Online et OneDrive entreprise:** Cette opération est proportionnelle au nombre de sites dont vous disposez. Une fois que vous appelez Microsoft pour utiliser la clé de disponibilité, vous serez entièrement en ligne au cours des quatre heures. 
   
-## <a name="how-is-the-availability-key-used-with-exchange-online"></a>Comment la clé de disponibilité est utilisée avec Exchange Online ?
+## <a name="how-is-the-availability-key-used-with-exchange-online"></a>Comment la clé de disponibilité est-elle utilisée avec Exchange Online?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Il existe trois méthodes que la clé de disponibilité est utilisée avec Exchange Online :
+La clé de disponibilité est utilisée avec Exchange Online de trois façons:
   
-- Service de disponibilité - dans le cas où les clés Azure clé coffre-fort sont inaccessibles.
+- Disponibilité du service: dans le cas où les clés Azure Key Vault sont inaccessibles.
     
-- Actions initiées par le code du service Office 365 - telles que création d’index de recherche ou de déplace de boîte aux lettres.
+- Actions lancées par le code de service Office 365, telles que la création d'un index de recherche ou le déplacement de boîtes aux lettres.
     
-- Récupérer à partir de la perte de clés - tels que la perte de deux clés Azure clé coffre-fort associé à une seule prévention
+- Récupération suite à une perte de clé, telle que la perte de clés Azure Key Vault associées à une seule DEP.
     
- **À l’aide de la clé de disponibilité pour la disponibilité du service dans les événements clés Azure clé coffre-fort sont inaccessibles.**
+ **Utilisation de la clé de disponibilité pour la disponibilité du service dans le cas des clés Azure Key Vault sont inaccessibles.**
   
-Office 365 utilise la clé de la disponibilité à la fois pour la disponibilité du service et de récupération à partir d’un état défectueux de la clé client pour Exchange Online. Il existe une hiérarchie des clés utilisées par la clé client. Cette hiérarchie est illustrée dans la figure suivante.
+Office 365 utilise la clé de disponibilité à la fois pour la disponibilité et la récupération de service à partir d'un état de clé client présentant un manque d'intégrité pour Exchange Online. Il existe une hiérarchie de clés utilisée par la clé client. Cette hiérarchie est illustrée dans la figure suivante.
   
 ![](media/a760156b-737f-469a-80ab-c28b7a8b9160.png)
   
-Si les deux clés Azure clé coffre-fort d’une stratégie de chiffrement unique données (PED) ne sont pas disponibles, Office 365 peut utiliser la disponibilité clé pour passer à un nouvel Office 365 prévention détermine s’il faut utiliser la clé de disponibilité pour la disponibilité du service différemment selon qu’une activité initiées par l’utilisateur, par exemple, lorsqu’un utilisateur télécharge un courrier électronique pour le client Outlook, ou une activité exécutée par le système, telles que l’indexation du contenu des boîtes aux lettres, ou pour les recherches de découverte électronique, déclenche le processus.
+Si les deux clés Azure Key Vault d'une seule stratégie de chiffrement de données (DEP) ne sont pas disponibles, Office 365 peut utiliser la clé de disponibilité pour passer à une nouvelle DEP. Office 365 détermine s'il faut utiliser la clé de disponibilité pour la disponibilité du service différemment selon qu'un activité initiée par l'utilisateur, par exemple lorsqu'un utilisateur télécharge un courrier électronique vers le client Outlook, ou une activité générée par le système, telle que l'indexation du contenu de la boîte aux lettres ou pour des recherches de découverte électronique, a déclenché le processus.
   
-Office 365 suit ce processus en réponse aux actions d’initiées par l’utilisateur pour déterminer s’il faut utiliser la clé de la disponibilité des boîtes aux lettres :
+Office 365 suit ce processus en réponse aux actions initiées par l'utilisateur pour déterminer s'il faut utiliser la clé de disponibilité pour les boîtes aux lettres des utilisateurs:
   
-1. Office 365 lit la PED affectée de la boîte aux lettres afin de déterminer l’emplacement des clés deux client dans Azure clé coffre-fort.
+1. Office 365 lit la DEP à laquelle la boîte aux lettres est affectée afin de déterminer l'emplacement des deux clés de client dans le coffre-fort de clés Azure.
     
-2. Office 365 choisit une des deux clients clés à partir de la prévention et envoie une demande à Azure clé coffre-fort pour désencapsuler la clé de la fonctionnalité à l’aide de la clé client de manière aléatoire.
+2. Office 365 choisit de manière aléatoire l'une des deux clés de client de la DEP et envoie une demande au coffre-fort de clés Azure pour désencapsuler la clé DEP à l'aide de la clé client.
     
-3. Si la demande pour désencapsuler la prévention de clé à l’aide de la clé client échoue et renvoie une erreur, Office 365 demande un deuxième Azure clé coffre-fort, cette fois demander au programme d’utiliser l’autre clé de client (seconde).
+3. Si la demande d'empaquetage de la clé DEP à l'aide de la clé client échoue et renvoie une erreur, Office 365 envoie une deuxième demande à la chambre forte des clés Azure, ce qui lui demande d'utiliser l'autre clé (deuxième) client.
     
-4. Si la deuxième demande pour désencapsuler la clé de la fonctionnalité à l’aide de l’échec de clés client et renvoie une erreur, Office 365 examine les résultats de deux requêtes :
+4. Si la deuxième demande d'empaquetage de la clé DEP à l'aide de la clé client échoue et renvoie une erreur, Office 365 examine les résultats des deux requêtes:
     
-  - Si l’examen détermine que les erreurs ne sont pas reflètent une action explicite en une identité de client, Office 365 utilise la clé de disponibilité pour déchiffrer la clé de la fonctionnalité. La prévention clé est ensuite utilisée pour déchiffrer la clé de boîte aux lettres et de terminer la demande de l’utilisateur.
+  - Si l'examen détermine que les erreurs ne reflètent pas une action explicite de l'identité d'un client, Office 365 utilise la clé de disponibilité pour déchiffrer la clé DEP. La clé DEP est ensuite utilisée pour déchiffrer la clé de boîte aux lettres et terminer la demande de l'utilisateur.
     
-    Dans ce cas, Azure clé coffre-fort est incapable de répondre ou inaccessible pour une raison quelconque. Office 365 n’a aucun moyen pour déterminer si le client a révoqué intentionnellement accès aux clés.
+    Dans ce cas, le coffre-fort de clés Azure ne peut pas répondre ou être inaccessible pour une raison quelconque. Office 365 n'a aucun moyen de déterminer si le client a refusé intentionnellement l'accès aux clés.
     
-  - Si l’examen indique cette action délibérée ont été prise pour restituer les clés client non disponible, puis la clé de disponibilité ne sera pas utilisée, la demande de l’utilisateur échoue et l’utilisateur reçoit un message d’erreur, tels que des échecs de connexion.
+  - Si l'examen indique qu'une action délibérée a été effectuée pour rendre les clés du client indisponibles, la clé de disponibilité n'est pas utilisée, la demande de l'utilisateur échoue et l'utilisateur reçoit un message d'erreur, tel qu'un échec de connexion.
     
-    Dans ce cas, le client soit averti que service est affecté et la condition de la clé client est défectueux. Par exemple, si un client utilise un seul PED pour toutes les boîtes aux lettres dans l’organisation, le client peut rencontrer une défaillance plus répandue où les utilisateurs ne peuvent pas accéder à leurs boîtes aux lettres. Cela garantit que lorsque les deux clés client sont défectueux, le client est informé de la nécessité de corriger la situation et restaurer le service dans un état intègre.
+    Dans ce cas, le client est conscient que le service est concerné et la condition de la clé client est défectueuse. Par exemple, si un client utilise une seule DEP pour toutes les boîtes aux lettres de l'organisation, le client peut être confronté à un échec très répandu où les utilisateurs ne peuvent pas accéder à leur boîte aux lettres. Cela garantit que lorsque les deux clés client sont défectueuses, le client est informé de la nécessité de corriger la situation et de restaurer le service à un état sain.
     
- **À l’aide de la clé de disponibilité pour les actions initiées par le code du service Office 365.**
+ **Utilisation de la clé de disponibilité pour les actions lancées par le code de service Office 365.**
   
-Toujours, de code Office 365 service dispose d’un jeton de connexion valide et ne peuvent pas être bloqué. Par conséquent, jusqu'à ce que la clé de la disponibilité a été supprimée, il pouvant servir à actions initiative, ou internes de code du service Office 365, telles que création d’index de recherche ou le déplacement de boîtes aux lettres.
+Le code de service Office 365 a toujours un jeton de connexion valide et ne peut pas être bloqué. Par conséquent, tant que la clé de disponibilité n'a pas été supprimée, elle peut être utilisée pour les actions lancées par le code de service Office 365 par le biais de ou internes, comme la création d'index de recherche ou le transfert de boîtes aux lettres.
   
- **À l’aide de la clé de la disponibilité à récupérer à partir de la perte de clés.**
+ **Utilisation de la clé de disponibilité pour récupérer suite à une perte de clé.**
   
-Vous pouvez utiliser la clé de la disponibilité à récupérer à partir de la perte de deux clés Azure clé coffre-fort qui sont associés à la même PED, comme décrit dans la réponse à l’entrée du Forum aux questions » si mes clés sont détruits, comment puis-je récupérer ? ».
+Vous pouvez utiliser la clé de disponibilité pour récupérer à partir de la perte de clés Azure Key Vault associées à la même DEP, comme décrit dans la réponse à l'entrée FAQ «si mes clés sont détruites, comment puis-je récupérer?».
   
-## <a name="how-is-the-availability-key-used-with-sharepoint-online-and-onedrive-for-business"></a>Comment la clé de disponibilité est utilisée avec SharePoint Online et OneDrive entreprise ?
+## <a name="how-is-the-availability-key-used-with-sharepoint-online-and-onedrive-for-business"></a>Comment la clé de disponibilité est-elle utilisée avec SharePoint Online et OneDrive entreprise?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Et SharePoint Online OneDrive pour l’architecture métier et l’implémentation de la clé de la clé de client et de disponibilité sont différentes dans Exchange Online et Skype pour les entreprises.
+L'architecture et l'implémentation de SharePoint Online et OneDrive entreprise et de la clé de disponibilité client diffèrent d'Exchange Online et de Skype entreprise.
   
-Lorsqu’un client clés de client géré, Office 365 crée une clé de niveau intermédiaire client spécifique (TIK). Office 365 crypte la TIK à deux reprises, une fois avec chacune des clés de client et stocke les deux versions chiffrées de la TIK. Seules les versions chiffrées de la TIK sont stockées, et un TIK peut uniquement être déchiffré avec les clés de client. Le TIK est ensuite utilisée pour chiffrer les clés de site, qui sont ensuite utilisés pour chiffrer les clés de l’objet blob. Les objets BLOB eux-mêmes sont chiffrées et stockées dans le service de stockage Blob Azure de Microsoft.
+Lorsqu'un client passe à des clés gérées par le client, Office 365 crée une clé intermédiaire propre au client (TIK). Office 365 chiffre le TIK deux fois, une fois avec chacune des clés de client, et stocke les deux versions chiffrées du TIK. Seules les versions chiffrées de TIK sont stockées, et un TIK peut uniquement être déchiffré avec les clés client. Le TIK est ensuite utilisé pour chiffrer les clés de site, qui sont ensuite utilisées pour chiffrer les clés BLOB. Les objets BLOB eux-mêmes sont chiffrés et stockés dans le service de stockage BLOB Microsoft Azure.
   
-Office 365 suit ce processus pour accéder à un objet blob qui contient des données de fichier client :
+Office 365 suit ce processus pour accéder à un objet BLOB qui contient des données de fichier client:
   
-1. Déchiffrer le TIK à l’aide de la clé client.
+1. DéChiffrer le TIK à l'aide de la clé client.
     
-2. Utilisez le TIK déchiffré pour déchiffrer une clé de site.
+2. Utilisez la TIK déchiffrée pour déchiffrer une clé de site.
     
-3. Utilisez la clé site déchiffré pour déchiffrer une clé blob.
+3. Utilisez la clé de site déchiffrée pour déchiffrer une clé BLOB.
     
-4. Utilisez la clé blob déchiffré pour déchiffrer le blob.
+4. Utilisez la clé BLOB déchiffrée pour déchiffrer le BLOB.
     
-Lors du déchiffrement un TIK, Office 365 émet deux demandes de déchiffrement à Azure clé coffre-fort avec un décalage de légères. La première personne à fin fournit le résultat, l’annulation de la demande autres.
+Lors du déchiffrement d'un TIK, Office 365 émet deux demandes de déchiffrement vers Azure Key Vault avec un décalage léger. Le premier à terminer fournit le résultat, annulant l'autre requête.
   
-Au cas où le client perd l’accès à leurs clés client, Office 365 également crypte la TIK avec une clé de disponibilité et stocke ce ainsi que les TIKs chiffrés avec la clé de chaque client. Le TIK chiffrée avec la clé de disponibilité est utilisé uniquement lorsque le client appelle Microsoft pour inscrire le chemin d’accès de récupération lorsqu’ils ont perdu l’accès à leurs clés, par accident ou à des fins malveillantes.
+Si le client perd l'accès à ses clés client, Office 365 chiffre également le TIK avec une clé de disponibilité et le stocke avec le TIKs chiffré avec chaque clé client. La TIK chiffrée avec la clé de disponibilité est utilisée uniquement lorsque le client appelle Microsoft pour inscrire le chemin de récupération lorsqu'il perd l'accès à ses clés, de manière malveillante ou accidentelle.
   
-Pour la disponibilité et à l’échelle raisons, TIKs déchiffrés sont mis en cache dans un cache mémoire limitée dans le temps. Avant de définie un cache TIK à expiration, les deux heures tente de déchiffrer chaque TIK Office 365. Déchiffrement du TIKs étend la durée de vie du cache. Si le déchiffrement TIK échoue pour un temps considérable, Office 365 génère une alerte pour notifier ingénierie avant l’expiration du cache. Uniquement si le client appelle Microsoft Office 365 initier l’opération de récupération, ce qui implique de déchiffrer de que la TIK avec la clé de la disponibilité stockés dans Microsoft magasin secrète et intégration du client en utilisant le déchiffré TIK et un nouvel ensemble clés de Azure clé coffre-fort fourni par le client.
+Pour des raisons de disponibilité et d'envergure, les TIKs déchiffrées sont mises en cache dans un cache de mémoire à limite de temps. Deux heures avant la date d'expiration d'un cache TIK, Office 365 tente de déchiffrer chaque TIK. Le déChiffrement du TIKs prolonge la durée de vie du cache. Si le déchiffrement d'TIK échoue pendant une durée considérable, Office 365 génère une alerte pour notifier l'ingénierie avant l'expiration du cache. Uniquement si le client appelle Microsoft Office 365 lancer l'opération de récupération, ce qui implique le déchiffrement de l'TIK avec la clé de disponibilité stockée dans le magasin secret de Microsoft et l'intégration de nouveau au client à l'aide de l'TIK déchiffrée et d'un nouveau jeu de clés Azure Key Vault fournies par le client.
   
-À compter d’aujourd'hui, clé client impliquée dans la chaîne de chiffrement et au déchiffrement des données de fichier SharePoint Online stockées dans le magasin d’objets blob Azure, mais pas les éléments de liste SharePoint Online ou des métadonnées stockées dans la base de données SQL. Office 365 n’utilise pas la clé disponibilité, pour SharePoint Online ou OneDrive entreprise autre que le cas ci-dessus, qui est le client qui a initié. Accès utilisateur aux données client est protégé par la zone de sécurité client.
+À l'heure actuelle, la clé client est impliquée dans la chaîne de chiffrement et de déchiffrement des données de fichier SharePoint Online stockées dans le magasin d'objets BLOB Azure, mais pas dans les éléments de liste SharePoint Online ou les métadonnées stockées dans la base de données SQL. Office 365 n'utilise pas la clé de disponibilité pour SharePoint Online ou OneDrive entreprise autre que le cas décrit ci-dessus, qui est initié par le client. L'accès humain aux données client est protégé par le référentiel sécurisé du client.
   
-## <a name="how-is-customer-key-licensed"></a>La clé client possède une licence ?
+## <a name="how-is-customer-key-licensed"></a>Comment la clé client est-elle sous licence?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Clé de client est proposée dans la Suite de contenu d’entreprise Office 365, « E5 » et la référence de conformité avancées. En outre, les clients doivent également acheter la licence appropriée pour l’utilisation de coffre-fort de clé Azure.
+La clé client est proposée dans la suite Office 365 Enterprise, «E5» et la référence SKU de conformité avancée. En outre, les clients doivent également acheter la licence appropriée pour utiliser Azure Key Vault.
   
-Chaque utilisateur bénéficiant de clé de client doit s’ils souhaitent être couverts par la clé client de licence.
+Chaque utilisateur bénéficiant de la clé client doit être titulaire d'une licence s'il souhaite être couvert par la clé client.
   
-Pour SharePoint Online, l’administrateur Office 365 configure la clé client doit également être sous licence, pour effectuer les étapes de configuration. En outre, les utilisateurs qui bénéficient de la fonctionnalité doivent être sous licence : Cela inclut le propriétaire du site et tous les utilisateurs l’accès aux fichiers sur un ou plusieurs sites sont chiffrés à l’aide de la clé client. Des utilisateurs externes n’est pas obligé de licence lui permettant d’accéder aux fichiers sur un ou plusieurs sites sont chiffrés à l’aide de la clé client.
+Pour SharePoint Online, l'administrateur Office 365 qui configure la clé client doit également disposer d'une licence pour effectuer les étapes de configuration. En outre, les utilisateurs qui bénéficient de cette fonctionnalité doivent être titulaires d'une licence, notamment le propriétaire du site et les utilisateurs qui accèdent aux fichiers sur un ou plusieurs sites qui sont chiffrés à l'aide de la clé client. Les utilisateurs externes n'ont pas besoin d'être titulaires d'une licence pour accéder aux fichiers sur un ou plusieurs sites chiffrés à l'aide de la clé client.
   
-Pour Exchange Online, les boîtes aux lettres « utilisateur » et « messagerie « boîtes aux lettres doivent être une licence. Tous les autres, telles que les boîtes aux lettres partagées, ne sont pas nécessaire d’avoir une licence pour la clé client. Pour vérifier que votre boîte aux lettres Exchange Online est sous licence correctement, exécutez l’applet de commande suivante :
+Pour Exchange Online, les boîtes aux lettres «utilisateur» et «utilisateur de messagerie» doivent être sous licence. Toutes les autres, telles que les boîtes aux lettres partagées, ne doivent pas obligatoirement disposer d'une licence pour la clé client. Pour vérifier que votre boîte aux lettres Exchange Online dispose d'une licence correcte, exécutez l'applet de commande suivante:
   
 ```
 (Get-Mailbox <alias >).PersistedCapabilities
 ```
 
-Si la chaîne BPOS_S_EquivioAnalytics existe, puis la boîte aux lettres est sous licence. Si ce n’est pas le cas, vous devez appliquer la licence appropriée pour pouvoir utiliser la fonctionnalité de clé de client pour cette boîte aux lettres.
+Si la chaîne BPOS_S_EquivioAnalytics existe, la boîte aux lettres dispose d'une licence correcte. Si ce n'est pas le cas, vous devez appliquer la licence appropriée afin d'utiliser la fonctionnalité clé client pour cette boîte aux lettres.
   
-## <a name="can-i-enable-customer-key-for-a-trial-subscription"></a>Puis-je activer la clé client pour un abonnement d’évaluation ?
+## <a name="can-i-enable-customer-key-for-a-trial-subscription"></a>Puis-je activer la clé client pour un abonnement d'évaluation?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Non. Par définition, les abonnements d’évaluation ont une durée de vie limitée. Clés de chiffrement qui sont hébergées dans les abonnements d’évaluation peuvent être perdues à la fin de la durée de vie d’évaluation. Étant donné que Microsoft ne peut pas et n’empêche pas les clients de placer des données client importantes dans les abonnements d’évaluation, l’utilisation de la clé client avec abonnements d’évaluation est interdite.
+Nbre. Par définition, les abonnements d'essai ont une durée de vie limitée. Les clés de chiffrement hébergées dans les abonnements d'évaluation peuvent être perdues à la fin de la durée de vie de la version d'évaluation. Étant donné que Microsoft ne peut pas empêcher les clients de placer des données client importantes dans les abonnements à la version d'évaluation, l'utilisation d'une clé client avec des abonnements d'essai est interdite.
   
-## <a name="how-much-will-using-customer-key-cost"></a>Quelle sera à l’aide de la clé client coût ?
+## <a name="how-much-will-using-customer-key-cost"></a>Combien va utiliser le coût clé client?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Outre les licences requises pour la clé client, les clients verront un coût d’utilisation de clé coffre-fort. [Azure clé coffre-fort tarifs](https://azure.microsoft.com/en-us/pricing/details/key-vault/) décrit le modèle de coût et vous aide à l’estimation. Il n’existe aucun moyen de prévoir le coût exact qui prendra en charge les clients varier des modèles d’utilisation. L’expérience a montré que le coût est très faible et généralement se situe dans la plage de 0,002 $ à $0,005 par utilisateur et par mois ainsi que le coût des clés de secours HSM. Le coût varient également en fonction de la configuration de journalisation est choisie par le client et le volume de stockage Azure utilisé pour les journaux de coffre-fort de clé Azure. 
+En plus de la licence requise pour la clé client, les clients se verront attribuer un coût pour l'utilisation du coffre-fort. Les détails relatifs à la tarification de la [chambre forte des clés Azure](https://azure.microsoft.com/en-us/pricing/details/key-vault/) décrivent le modèle de coût et vous aideront à l'estimer. Il n'existe aucun moyen de prédire le coût exact qu'un client doit supporter car les modèles d'utilisation varient. L'expérience a démontré que le coût est très faible et qu'il tombe généralement entre $0,002 et $0,005 par utilisateur et par mois plus le coût des clés sauvegardées par HSM. Le coût varie également en fonction de la configuration de journalisation choisie par le client et de la quantité de stockage Azure utilisée pour les journaux de coffre-fort de clés Azure. 
   
 ## <a name="for-more-information"></a>Pour plus d'informations
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Pour vous familiariser avec la clé client, voir [contrôle de vos données dans Office 365 à l’aide de la clé client](controlling-your-data-using-customer-key.md).
+Pour commencer à utiliser la clé client, consultez [la rubrique contrôle de vos données dans Office 365 à l'aide de la clé client](controlling-your-data-using-customer-key.md).
   
 

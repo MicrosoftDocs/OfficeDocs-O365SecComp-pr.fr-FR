@@ -1,57 +1,57 @@
 ---
-title: Fonctionne de DLP entre la sécurité &amp; centre de conformité et le centre d’administration Exchange
+title: Fonctionnement de DLP entre le centre &amp; de sécurité et le centre d'administration Exchange
 ms.author: stephow
 author: stephow-msft
 manager: laurawi
 ms.date: 8/4/2017
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
-description: Découvrez comment DLP dans la sécurité &amp; centre de conformité fonctionne avec des règles DLP et de transport dans le centre d’administration Exchange.
-ms.openlocfilehash: bc7494f504c2c0ffa668562d6e64b9f29992e24f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Découvrez comment DLP dans le centre &amp; de sécurité conformité fonctionne avec DLP et les règles de transport dans le centre d'administration Exchange.
+ms.openlocfilehash: 531a45308594d03dc219f50d989a08236b8b5e20
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528379"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215644"
 ---
-# <a name="how-dlp-works-between-the-security-amp-compliance-center-and-exchange-admin-center"></a>Fonctionne de DLP entre la sécurité &amp; centre de conformité et le centre d’administration Exchange
+# <a name="how-dlp-works-between-the-security-amp-compliance-center-and-exchange-admin-center"></a>Fonctionnement de DLP entre le centre &amp; de sécurité et le centre d'administration Exchange
 
-Dans Office 365, vous pouvez créer une stratégie de protection contre la perte données dans deux centres d’administration différentes :
+Dans Office 365, vous pouvez créer une stratégie de protection contre la perte de données (DLP) dans deux centres d'administration différents:
   
-- Dans la **sécurité &amp; centre de conformité**, vous pouvez créer une seule stratégie DLP pour vous aider à protéger le contenu dans SharePoint, OneDrive et Exchange. Lorsque cela est possible, nous vous conseillons de créer une stratégie DLP ici. Pour plus d’informations, voir [DLP dans la sécurité &amp; centre de conformité](data-loss-prevention-policies.md).
+- Dans le **Centre &amp; de sécurité conformité**, vous pouvez créer une stratégie DLP unique pour protéger le contenu dans SharePoint, OneDrive et Exchange. Dans la mesure du possible, nous vous recommandons de créer une stratégie DLP ici. Pour plus d'informations, reportez-vous [à la rubrique DLP dans le centre de sécurité &amp; conformité](data-loss-prevention-policies.md).
     
-- Dans le **Centre d’administration Exchange**, vous pouvez créer une stratégie DLP pour vous aider à protéger le contenu uniquement dans Exchange. Cette stratégie permet de règles de transport Exchange, il n’a plus d’options spécifiques à la gestion du courrier électronique. Pour plus d’informations, voir [DLP dans le centre d’administration Exchange](https://go.microsoft.com/fwlink/?linkid=852311).
+- Dans le **Centre d'administration Exchange**, vous pouvez créer une stratégie DLP pour protéger le contenu uniquement dans Exchange. Cette stratégie peut utiliser des règles de transport Exchange, de sorte qu'elle dispose de plus d'options spécifiques pour gérer le courrier électronique. Pour plus d'informations, consultez [la rubrique DLP dans le centre d'administration Exchange](https://go.microsoft.com/fwlink/?linkid=852311).
     
-Les stratégies DLP créé dans l’administration ces centres de fonctionnent côte à côte - cette rubrique explique comment.
+Les stratégies DLP créées dans ces centres d'administration fonctionnent côte à côte-cette rubrique explique comment procéder.
   
-![Pages DLP de sécurité et de centre de conformité et de centre d’administration Exchange](media/d3eaa7e7-3b16-457b-bd9c-26707f7b584f.png)
+![Pages DLP dans le centre de sécurité et de conformité et centre d'administration Exchange](media/d3eaa7e7-3b16-457b-bd9c-26707f7b584f.png)
   
-## <a name="how-dlp-in-the-security-amp-compliance-center-works-with-dlp-and-transport-rules-in-the-exchange-admin-center"></a>Comment DLP dans la sécurité &amp; centre de conformité fonctionne avec des règles DLP et de transport dans le centre d’administration Exchange
+## <a name="how-dlp-in-the-security-amp-compliance-center-works-with-dlp-and-transport-rules-in-the-exchange-admin-center"></a>Fonctionnement de DLP dans le &amp; Centre de sécurité conformité avec DLP et les règles de transport dans le centre d'administration Exchange
 
-Après avoir créé une stratégie DLP dans la sécurité &amp; centre de conformité, la stratégie est déployée sur tous les sites inclus dans la stratégie. Si la stratégie inclut Exchange Online, de la stratégie synchronisé il et appliqués dans exactement comme une stratégie DLP créée dans le centre d’administration Exchange. 
+Une fois que vous avez créé une stratégie DLP &amp; dans le centre de sécurité conformité, la stratégie est déployée sur tous les emplacements inclus dans la stratégie. Si la stratégie inclut Exchange Online, la stratégie est synchronisée et appliquée exactement de la même manière qu'une stratégie DLP créée dans le centre d'administration Exchange. 
   
-Si vous avez créé des stratégies DLP dans le centre d’administration Exchange, les stratégies continueront de fonctionner côte à côte avec toutes les stratégies pour le courrier électronique que vous créez dans la sécurité &amp; centre de conformité. Mais, notez que les règles créées dans le centre d’administration Exchange sont prioritaires. Toutes les règles de transport Exchange sont traités en premier, puis le DLP à partir de la sécurité des règles &amp; centre de conformité sont traitées.
+Si vous avez créé des stratégies DLP dans le centre d'administration Exchange, ces stratégies continueront à fonctionner côte à côte avec n'importe quelle stratégie pour le courrier électronique &amp; que vous créez dans le centre de sécurité et de conformité. Toutefois, Notez que les règles créées dans le centre d'administration Exchange ont priorité. Toutes les règles de transport Exchange sont traitées en premier, puis les règles DLP du &amp; Centre de sécurité conformité sont traitées.
   
-Cela signifie que :
+Cela signifie que:
   
-- Messages bloqués par les règles de transport Exchange ne sont analysés par les règles DLP créées dans la sécurité &amp; centre de conformité.
+- Les messages bloqués par les règles de transport Exchange ne sont pas analysés par les règles DLP &amp; créées dans le centre de sécurité conformité.
     
-- Si une règle de transport Exchange modifie un message d’une manière qui entraîne sa correspondent à une stratégie DLP dans la sécurité &amp; centre de conformité - tels que l’ajout d’utilisateurs externes - puis les règles DLP détecte cela et appliquer la stratégie selon vos besoins.
+- Si une règle de transport Exchange modifie un message de manière à ce qu'elle corresponde à une stratégie DLP dans le &amp; Centre de sécurité conformité, comme l'ajout d'utilisateurs externes, les règles DLP le détectera et appliqueront la stratégie si nécessaire.
     
-Également note que le traitement de DLP n’affectent pas les règles de transport Exchange qui utilisent l’action « arrêter le traitement » règles de la sécurité &amp; centre de conformité - allez encore être traitées.
+Notez également que les règles de transport Exchange qui utilisent l'action «arrêter le traitement» n'affectent pas le traitement des règles &amp; DLP dans le centre de sécurité conformité.
   
-## <a name="policy-tips-in-the-security-amp-compliance-center-vs-the-exchange-admin-center"></a>Conseils de stratégie de sécurité &amp; centre de conformité et le centre d’administration Exchange
+## <a name="policy-tips-in-the-security-amp-compliance-center-vs-the-exchange-admin-center"></a>Conseils de stratégie dans le &amp; Centre de sécurité conformité et dans le centre d'administration Exchange
 
-Conseils de stratégie peuvent travailler avec les stratégies DLP et créés dans le centre d’administration Exchange, ou avec des stratégies DLP créées dans la sécurité des règles de flux de messagerie &amp; centre de conformité, mais pas les deux. Il s’agit, car ces stratégies sont stockées dans des emplacements différents, mais les conseils de stratégie peuvent tracer uniquement à partir d’un seul emplacement.
+Les conseils de stratégie peuvent fonctionner soit avec les stratégies DLP et les règles de flux de messagerie créées dans le centre d'administration Exchange, soit &amp; avec les stratégies DLP créées dans le centre de sécurité conformité, mais pas dans les deux. Cela est dû au fait que ces stratégies sont stockées à des emplacements différents, mais que les conseils de stratégie ne peuvent tirer qu'à partir d'un seul emplacement.
   
-Si vous avez configuré les conseils de stratégie dans le centre d’administration Exchange, les conseils de stratégie que vous configurez dans la sécurité &amp; centre de conformité n’apparaîtra pas aux utilisateurs dans Outlook sur le web et Outlook 2013 et versions ultérieures jusqu'à ce que vous désactiviez les conseils fournis dans le centre d’administration Exchange. Cela garantit que vos règles de transport Exchange en cours continue à fonctionner jusqu'à ce que vous choisissez de basculer vers la sécurité &amp; centre de conformité.
+Si vous avez configuré des conseils de stratégie dans le centre d'administration Exchange, tous les conseils de stratégie que &amp; vous configurez dans le centre de sécurité conformité ne s'afficheront pas aux utilisateurs dans Outlook sur le Web et Outlook 2013 et versions ultérieures jusqu'à ce que vous désactiviez les conseils dans le centre d'administration Exchange. Cela garantit que vos règles de transport Exchange actuelles continueront de fonctionner jusqu'à ce que vous choisissiez de &amp; basculer vers le centre de sécurité conformité.
   
-Notez que les notifications de messagerie pendant que les conseils de stratégie peuvent tracer uniquement à partir d’un seul emplacement, sont toujours envoyés, même si vous utilisez des stratégies DLP dans la sécurité &amp; centre de conformité et le centre d’administration Exchange.
+Notez que si les conseils de stratégie ne peuvent être tracés qu'à partir d'un seul emplacement, les notifications par courrier électronique sont toujours envoyées, &amp; même si vous utilisez des stratégies DLP dans le centre d'administration et Exchange.
   
 

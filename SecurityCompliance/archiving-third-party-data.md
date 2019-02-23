@@ -6,36 +6,36 @@ manager: laurawi
 ms.date: 9/5/2017
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
-description: Les administrateurs peuvent importer des données tierces à partir de plateformes de médias sociaux, plates-formes de messagerie instantanées et plates-formes de collaboration de documents aux boîtes aux lettres dans votre organisation Office 365. Cela vous permet d’archiver des données à partir de Facebook, Twitter et sources de données dans Office 365. Vous pouvez ensuite appply des fonctionnalités de conformité d’Office 365 (telles que la conservation légale, recherche de contenu et les stratégies de rétention) à des données tierces.
-ms.openlocfilehash: 5e8fe94e0c3e8b39aec479f4755a263438513d35
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: Les administrateurs peuvent importer des données tierces à partir de plateformes de réseaux sociaux, de plateformes de messagerie instantanée et de documents de collaboration vers des boîtes aux lettres de votre organisation Office 365. Cela vous permet d'archiver des données à partir de Facebook, de Twitter et des sources de données dans Office 365. Vous pouvez ensuite appply les fonctionnalités de conformité d'Office 365 (telles que la conservation légale, la recherche de contenu et les stratégies de rétention) aux données tierces.
+ms.openlocfilehash: 37811fdbee52cf956c6371deea53a242c2a3c550
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038107"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218494"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>Archivage de données tierces dans Office 365
 
-Permet d’Office 365 administrateurs importer et archiver des données tierces à partir de plateformes de médias sociaux, de messagerie instantanée plateformes et plates-formes de collaboration de documents, aux boîtes aux lettres dans votre organisation Office 365. Exemples de tiers de sources de données que vous pouvez importer dans Office 365 sont les suivantes : 
+Office 365 permet aux administrateurs d'importer et d'archiver des données tierces à partir de plateformes de médias sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration sur des documents, vers des boîtes aux lettres de votre organisation Office 365. Voici des exemples de sources de données tierces que vous pouvez importer dans Office 365: 
   
-- **Mise en réseau** - Twitter, Facebook, Yammer et LinkedIn 
+- **Social** -Twitter, Facebook, Yammer et LinkedIn 
     
-- **Messagerie instantanée** - Yahoo Messenger, GoogleTalk et Cisco Jabber 
+- **Messagerie instantanée** -Yahoo Messenger, GoogleTalk et Cisco Jabber 
     
-- **Collaboration sur des documents** - zone et échange 
+- **Collaboration** sur les documents-zone et boîte de dépôt 
     
-- **Secteurs verticaux** - Finance (comme Thomson Reuters et Bloomberg) et gestion des relations client (par exemple, brouillage force de vente) 
+- **Industries verticales** -gestion de la relation client (par exemple, Salesforce chatter) et finances (par exemple, Thomson Reuters et Bloomberg) 
     
-- **Messagerie texte/SMS** - BlackBerry 
+- **SMS/Text Messaging** -BlackBerry 
     
-Après l’importation des données tierces, vous pouvez appliquer des fonctionnalités de conformité d’Office 365, telles que les stratégies de rétention litige, recherche de contenu, d’archivage sur Place, audit et Office 365 — à ces données. Par exemple, lorsqu’une boîte aux lettres est mis en attente pour litige, des données tierces seront préservées. Vous pouvez rechercher des données tierces à l’aide de la recherche de contenu. Ou vous pouvez appliquer l’archivage et les stratégies de rétention pour des données tierces comme vous pouvez utiliser pour les données de Microsoft. En bref, l’archivage des données tierces dans Office 365 peut aider votre organisation respecter les administrations et réglementaires.
+Une fois les données tierces importées, vous pouvez appliquer les fonctionnalités de conformité d'Office 365, telles que la conservation pour litige, la recherche de contenu, l'archivage inaltérable, l'audit et les stratégies de rétention d'Office 365, à ces données. Par exemple, lorsqu'une boîte aux lettres est placée en conservation pour litige, les données tierces sont conservées. Vous pouvez rechercher des données tierces à l'aide de la recherche de contenu. Vous pouvez également appliquer des stratégies d'archivage et de rétention à des données tierces, comme vous pouvez le faire pour Microsoft Data. En bref, l'archivage des données tierces dans Office 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
   
-Voici une vue d’ensemble du processus et les étapes nécessaires pour importer des données de tiers pour Office 365.
+Voici une vue d'ensemble du processus et des étapes nécessaires à l'importation de données tierces dans Office 365.
 
 [Étape 1 : trouver un partenaire de données tierces](#step-1-find-a-third-party-data-partner)
 
@@ -45,31 +45,31 @@ Voici une vue d’ensemble du processus et les étapes nécessaires pour importe
 
 [Étape 4 : fournir des informations au partenaire](#step-4-provide-your-partner-with-information)
 
-[Étape 5 : Enregistrer le connecteur des données tierces dans Azure Active Directory](#step-5-register-the-third-party-data-connector-in-azure-active-directory)
+[Étape 5: enregistrer le connecteur de données tiers dans Azure Active Directory](#step-5-register-the-third-party-data-connector-in-azure-active-directory)
 
-## <a name="how-the-third-party-data-import-process-works"></a>Fonctionnement de la façon dont les données tiers processus d’importation >
+## <a name="how-the-third-party-data-import-process-works"></a>Works> du processus d'importation de données tierces
 
 L’illustration et la description suivantes expliquent le fonctionnement du processus d’importation de données tierces.
   
 ![Fonctionnement du processus d’importation de données tierces](media/5d4cf8e9-b4cc-4547-90c8-d12d04a9f0e7.png)
   
-1. Client fonctionne avec leur partenaire de choix pour configurer un connecteur d’extraire des éléments de la source de données tierce et puis importez ces éléments vers Office 365.
+1. Le client travaille avec son partenaire de choix pour configurer un connecteur qui extraira les éléments de la source de données tierce, puis importez ces éléments dans Office 365.
     
-2. Le connecteur de partenaire se connecte aux sources de données de tiers via une API de tiers (sur une base planifiée ou configuré en tant que) et extrait les éléments de la source de données. Le connecteur de partenaire convertit le contenu d’un élément dans un format de message électronique. Voir la section [plus d’informations](#more-information) pour une description du schéma de format de message. 
+2. Le connecteur partenaire se connecte à des sources de données tierces via une API tierce (sur la base planifiée ou configurée) et extrait des éléments de la source de données. Le connecteur partenaire convertit le contenu d'un élément au format d'un message électronique. Consultez la section [more information](#more-information) pour obtenir une description du schéma de format des messages. 
     
-3. Connecteur de partenaire se connecte au service Azure dans Office 365 à l’aide d’Exchange Web Services (EWS) par le biais d’un point de terminaison connu.
+3. Le connecteur partenaire se connecte au service Azure dans Office 365 à l'aide du service Web Exchange (EWS) via un point de terminaison connu.
     
 4. Les éléments sont importés dans la boîte aux lettres d’un utilisateur spécifique ou dans une boîte aux lettres « fourre-tout » destinée aux données tierces. L’importation d’un élément dans la boîte aux lettres d’un utilisateur spécifique ou dans la boîte aux lettres de données tierces repose sur les critères suivants :
     
-    **éléments qui ont un ID d’utilisateur qui correspond à un compte d’utilisateur Office 365** - si le connecteur de partenaire pouvez mapper l’ID utilisateur de l’élément dans la source de données tiers à un utilisateur spécifique ID dans Office 365, l’élément est copié dans le dossier de **purge** de l’utilisateur d’a. Dossier éléments récupérables. Les utilisateurs ne peuvent pas accéder aux éléments dans le dossier de purge. Toutefois, vous pouvez utiliser les outils de découverte électronique Office 365 pour rechercher des éléments dans le dossier de purge.
+    a. **items qui possèdent un ID d'utilisateur correspondant à un compte d'utilisateur Office 365** -si le connecteur partenaire peut mapper l'ID utilisateur de l'élément de la source de données tierce à un ID d'utilisateur spécifique dans Office 365, l'élément est copié **** dans le dossier purges de l'utilisateur. Dossier éléments récupérables. Les utilisateurs ne peuvent pas accéder aux éléments du dossier de purges. Toutefois, vous pouvez utiliser les outils eDiscovery d'Office 365 pour rechercher des éléments dans le dossier purges.
     
-    b. **les éléments qui n’ont pas un ID d’utilisateur qui correspond à un compte d’utilisateur Office 365** - si le connecteur de partenaire ne peut pas mapper l’ID utilisateur d’un élément à un utilisateur spécifique ID dans Office 365, l’élément est copié dans le dossier **boîte de réception** de la boîte aux lettres des données tierces. Importation d’éléments dans la boîte de réception permet de vous ou une personne de votre organisation à se connecter à la boîte aux lettres de tiers pour afficher et gérer ces éléments et voir si les modifications doivent être effectuées dans la configuration du connecteur partenaire.
+    b. **éléments qui n'ont pas d'identifiant utilisateur correspondant à un compte d'utilisateur office 365** -si le connecteur partenaire ne peut pas mapper l'ID utilisateur d'un élément sur un ID d'utilisateur spécifique dans Office 365, l'élément est copié dans le dossier boîte de **réception** de la boîte aux lettres de données tierce. L'importation d'éléments dans la boîte de réception vous permet, ou une personne de votre organisation, de se connecter à la boîte aux lettres tierce pour afficher et gérer ces éléments, et de voir si des ajustements doivent être effectués dans la configuration du connecteur partenaire.
  
 ## <a name="step-1-find-a-third-party-data-partner"></a>Étape 1 : trouver un partenaire de données tierces
 
-Un composant essentiel pour l’archivage des données tierces dans Office 365 est recherche et utilisation d’un partenaire Microsoft spécialisée dans la capture des données à partir d’une source de données de tiers et importées dans Office 365. Une fois que les données sont importées, il peut être archivée et conservé avec votre organisation d’autres données Microsoft, tels que le courrier électronique à partir d’Exchange et des documents dans SharePoint et OneDrive for Business. Un partenaire crée un connecteur qui extrait les données à partir de sources de données tierces de votre organisation (tels que BlackBerry, Facebook, Google +, Reuters Thomson, Twitter et YouTube) et transmet les données à une API Office 365 qui importe les éléments dans les boîtes aux lettres Exchange en tant que les messages électroniques. 
+Un composant clé pour l'archivage de données tierces dans Office 365 est de trouver et d'utiliser un partenaire Microsoft spécialisé dans la capture de données à partir d'une source de données tierce et l'importation dans Office 365. Une fois les données importées, elles peuvent être archivées et conservées avec les autres données Microsoft de votre organisation, telles que les messages électroniques provenant d'Exchange et de documents provenant de SharePoint et OneDrive entreprise. Un partenaire crée un connecteur qui extrait les données des sources de données tierces de votre organisation (par exemple, BlackBerry, Facebook, Google +, Thomson Reuters, Twitter et YouTube) et transmet ces données à une API Office 365 qui importe des éléments dans les boîtes aux lettres Exchange en tant que messages électroniques. 
   
-Les sections suivantes répertorient les partenaires Microsoft et les sources de données tierces elles prennent en charge, qui participent au programme pour l’archivage des données tierces dans Office 365.
+Les sections suivantes répertorient les partenaires Microsoft et les sources de données tierces qu'ils prennent en charge, qui participent au programme d'archivage de données tierces dans Office 365.
 
 [17a-4 LLC](#17a-4-llc)
   
@@ -137,7 +137,7 @@ Squawker
   
 ### <a name="actiance"></a>Actiance
 
-[Actiance](https://www.actiance.com) prend en charge les sources de données tierces suivantes : 
+[Actiance](https://www.actiance.com) prend en charge les sources de données tierces suivantes: 
   
 - AIM
     
@@ -179,7 +179,7 @@ AOL avec client Pivot
 - Chatter
 
     
-- Cisco par messagerie instantanée &amp; serveur de présence (v9.0.1, v9.1, v9.1.1 SU1, 10, v10.5.1 SU1)
+- Serveur de &amp; présence de messagerie instantanée Cisco (version 9.0.1, version 9.1, v 9.1.1 Su1, version 10, v 10.5.1 Su1)
     
 - Cisco Unified Presence Server (v8.6.3, v8.6.4, v8.6.5)
 
@@ -236,7 +236,7 @@ AOL avec client Pivot
 - IBM SameTime Meeting 8.5.2 IFR1
 
     
-- ICE/YellowJacket
+- GLACE/YellowJacket
     
 - IM Import
 
@@ -335,7 +335,7 @@ Microsoft Lync (2010, 2013)
   
 ### <a name="archivesocial"></a>ArchiveSocial
 
-[ArchiveSocial](https://www.archivesocial.com) prend en charge les sources de données tierces suivantes : 
+[ArchiveSocial](https://www.archivesocial.com) prend en charge les sources de données tierces suivantes: 
   
 - Facebook
     
@@ -357,7 +357,7 @@ Microsoft Lync (2010, 2013)
   
 ### <a name="globanet"></a>Globanet
 
-[Globanet](https://www.globanet.com) prend en charge les sources de données tierces suivantes : 
+[Globanet](https://www.globanet.com) prend en charge les sources de données tierces suivantes: 
   
 - AOL avec client Pivot  
     
@@ -376,15 +376,14 @@ Microsoft Lync (2010, 2013)
 
     
 - Box
-
     
 - CipherCloud for Salesforce Chatter
     
-- Messagerie instantanée de Cisco &amp; serveur de présence (10, v10.5.1 SU1, v11.0, v11.5 SU2)
+- Serveur de &amp; présence de messagerie instantanée Cisco (version 10, v 10.5.1 Su1, v 11.0, v 11.5 SU2)
 
-- Cisco Webex équipes
+- Teams de Cisco Webex
 
-- Espace de travail Citrix &amp; ShareFile
+- ShareFile de &amp; l'espace de travail de Citrix
 
 - CrowdCompass
 
@@ -394,7 +393,7 @@ Microsoft Lync (2010, 2013)
 - Fichiers XML personnalisés
 
     
-- Facebook (Pages)
+- Facebook (pages)
     
 - Factset
 
@@ -452,7 +451,7 @@ Microsoft Lync (2010, 2013)
   
 ### <a name="opentext"></a>OpenText
 
-[OpenText](https://www.opentext.com/what-we-do/products/opentext-product-offerings-catalog/rebranded-products/daegis) prend en charge les sources de données tierces suivantes : 
+[OpenText](https://www.opentext.com/what-we-do/products/opentext-product-offerings-catalog/rebranded-products/daegis) prend en charge les sources de données tierces suivantes: 
   
 - Axs Encrypted
     
@@ -470,7 +469,7 @@ Microsoft Lync (2010, 2013)
   
 ### <a name="verba"></a>Verba
 
-[Verba](https://www.verba.com) prend en charge les sources de données tierces suivantes : 
+[Verba](https://www.verba.com) prend en charge les sources de données tierces suivantes: 
   
 - Avaya Aura Video
 
@@ -504,7 +503,7 @@ Microsoft Lync (2010, 2013)
     
 - Cisco UCCX/UCCE vidéo
     
-- Cisco UCCX/UCCE vocale
+- Cisco UCCX/UCCE Voice
     
 - ESChat Radio
     
@@ -562,32 +561,32 @@ Microsoft Lync (2010, 2013)
   
 ## <a name="step-2-create-and-configure-a-third-party-data-mailbox-in-office-365"></a>Étape 2 : créer et configurer une boîte aux lettres pour les données tierces dans Office 365
 
-Voici les étapes pour créer et configurer une boîte aux lettres de données tiers pour l’importation de données dans Office 365. Précédente comme expliqué, les éléments sont importés à cette boîte aux lettres si le connecteur de partenaire ne peut pas mapper l’ID de l’élément à un compte d’utilisateur Office 365.
+Voici les étapes à suivre pour créer et configurer une boîte aux lettres de données tierce pour l'importation de données dans Office 365. Comme expliqué précédemment, les éléments sont importés dans cette boîte aux lettres si le connecteur partenaire ne peut pas mapper l'ID utilisateur de l'élément sur un compte d'utilisateur Office 365.
   
- **Effectuer ces tâches dans le centre d’administration d’Office 365**
+ **Effectuer ces tâches dans le centre d'administration Office 365**
   
-1. Créer un nouveau compte d’utilisateur dans Office 365 et l’attribuer une licence Exchange Online Plan 2 ; consultez la rubrique [Ajouter des utilisateurs à Office 365](https://go.microsoft.com/fwlink/p/?LinkId=692098). Une licence Plan 2 est requis pour placer la boîte aux lettres en conservation pour litige ou activer une boîte aux lettres d’archivage qui a un quota de stockage illimitée.
+1. Créez un compte d'utilisateur dans Office 365 et attribuez-lui une licence Exchange Online plan 2; Voir [Ajouter des utilisateurs à Office 365](https://go.microsoft.com/fwlink/p/?LinkId=692098). Une licence plan 2 est nécessaire pour placer la boîte aux lettres en conservation pour litige ou pour activer une boîte aux lettres d'archivage dont le quota de stockage est illimité.
     
-2. Ajoutez le compte d’utilisateur pour la boîte aux lettres des données tierces au rôle **administrateur Exchange** admin dans Office 365 ; consultez [assigner des rôles d’administrateur dans Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532393).
+2. Ajoutez le compte d'utilisateur pour la boîte aux lettres de données tierce au rôle d'administrateur d' **administrateur Exchange** dans Office 365; consultez la rubrique asSigner [des rôles d'administrateur dans Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532393).
     
     > [!TIP]
     > Notez les informations d’identification pour ce compte d’utilisateur. Vous devez les fournir à votre partenaire, comme décrit à l’étape 4. 
   
- **Effectuer ces tâches dans le centre d’administration Exchange**
+ **Effectuer ces tâches dans le centre d'administration Exchange**
   
-1. Masquer la boîte aux lettres de données tiers à partir du carnet d’adresses et d’autres listes d’adresses dans votre organisation ; voir [Gérer les boîtes aux lettres](https://go.microsoft.com/fwlink/p/?LinkId=616058). Vous pouvez également exécuter la commande PowerShell suivante :
+1. Masquer la boîte aux lettres de données tierce dans le carnet d'adresses et les autres listes d'adresses de votre organisation; consultez la rubrique [Manage User mailboxes](https://go.microsoft.com/fwlink/p/?LinkId=616058). Vous pouvez également exécuter la commande PowerShell suivante:
     
     ```
     Set-Mailbox -Identity <identity of third-party data mailbox> -HiddenFromAddressListsEnabled $true
     ```
 
-2. Attribuer l’autorisation **FullAccess** pour la boîte aux lettres des données tierces pour que les administrateurs ou aux règlements puissent ouvrir la boîte aux lettres des données tierces dans le client de bureau Outlook ; voir [Gérer les autorisations pour les destinataires](https://go.microsoft.com/fwlink/p/?LinkId=692104).
+2. Attribuer l'autorisation **FullAccess** à la boîte aux lettres de données tierce afin que les administrateurs ou les responsables de la mise en conformité puissent ouvrir la boîte aux lettres de données tierce dans le client de bureau Outlook; consultez la rubrique [Manage Permissions for Recipients](https://go.microsoft.com/fwlink/p/?LinkId=692104).
     
-3. Activer les fonctionnalités Office 365 suivantes relatives à la conformité pour la boîte aux lettres des données tierces :
+3. Activez les fonctionnalités suivantes d'Office 365 liées à la conformité pour la boîte aux lettres de données tierce:
     
-    - Activer la boîte aux lettres d’archivage ; voir [Activer les boîtes aux lettres archive de sécurité Office 365 &amp; centre de conformité](enable-archive-mailboxes.md) et [Activer l’archivage illimité dans Office 365](enable-unlimited-archiving.md). Vous pouvez libérer de l’espace dans la boîte aux lettres principal en configurant une stratégie d’archivage qui déplace les éléments de données tierces dans la boîte aux lettres d’archive. Cela vous fournira stockage illimité pour les données de tiers.
+    - Activer la boîte aux lettres d'archivage; consultez [la rubrique activation des boîtes aux lettres d'archivage dans le centre de sécurité &amp; conformité Office 365](enable-archive-mailboxes.md) et activez un archivage [illimité dans Office 365](enable-unlimited-archiving.md). Cela vous permettra de libérer de l'espace de stockage dans la boîte aux lettres principale en configurant une stratégie d'archivage qui déplace les éléments de données tiers vers la boîte aux lettres d'archivage. Vous bénéficierez ainsi d'un stockage illimité pour les données tierces.
     
-    - Placez la boîte aux lettres des données tierces litige. Vous pouvez également appliquer une stratégie de rétention Office 365 de sécurité Office 365 &amp; centre de conformité. Placer cette boîte aux lettres en attente pour conserver des éléments de données de tiers (indéfiniment ou pendant une durée spécifiée) et les empêcher d’être purgées de la boîte aux lettres. Consultez les rubriques suivantes :
+    - Placez la boîte aux lettres de données tierce en conservation pour litige. Vous pouvez également appliquer une stratégie de rétention Office 365 dans le &amp; Centre de sécurité conformité Office 365. La mise en attente de cette boîte aux lettres permet de conserver des éléments de données tiers (indéfiniment ou pour une durée spécifiée) et de les empêcher d'être purgés de la boîte aux lettres. Consultez l'une des rubriques suivantes:
     
       - [Place a mailbox on Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
@@ -595,15 +594,15 @@ Voici les étapes pour créer et configurer une boîte aux lettres de données t
     
        
     
-    - Activer la boîte aux lettres enregistrement d’audit pour un accès propriétaire, délégué et d’administration pour la boîte aux lettres des données tierces ; consultez la rubrique [Activer la boîte aux lettres de l’audit dans Office 365](enable-mailbox-auditing.md). Cela vous permettra d’auditer toutes les activités effectuées par les utilisateurs ayant accès à la boîte aux lettres des données tierces.
+    - Activez l'enregistrement d'audit des boîtes aux lettres pour l'accès des propriétaires, des délégués et des administrateurs à la boîte aux lettres de données tierce. consultez la rubrique [activer l'audit de boîte aux lettres dans Office 365](enable-mailbox-auditing.md). Cela vous permettra d'auditer toutes les activités effectuées par les utilisateurs ayant accès à la boîte aux lettres de données tierce.
 
 ## <a name="step-3-configure-user-mailboxes-for-third-party-data"></a>Étape 3 : configurer des boîtes aux lettres d’utilisateurs pour les données tierces
 
-L’étape suivante consiste à configurer les boîtes aux lettres pour prendre en charge des données tierces. Effectuer ces tâches à l’aide du centre d’administration Exchange ou à l’aide des applets de commande Windows PowerShell correspondant.
+L'étape suivante consiste à configurer des boîtes aux lettres d'utilisateurs pour prendre en charge des données tierces. Effectuez ces tâches à l'aide du centre d'administration Exchange ou à l'aide des applets de commande Windows PowerShell correspondantes.
   
-1. Activer la boîte aux lettres d’archive pour chaque utilisateur ; voir [Activer les boîtes aux lettres archive de sécurité Office 365 &amp; centre de conformité](enable-archive-mailboxes.md) et [Activer l’archivage illimité dans Office 365](enable-unlimited-archiving.md).
+1. Activez la boîte aux lettres d'archivage pour chaque utilisateur; consultez [la rubrique activation des boîtes aux lettres d'archivage dans le centre de sécurité &amp; conformité Office 365](enable-archive-mailboxes.md) et activez un archivage [illimité dans Office 365](enable-unlimited-archiving.md).
     
-2. Placer les boîtes aux lettres en conservation pour litige ou appliquer une stratégie de rétention Office 365 ; consultez les rubriques suivantes : 
+2. Placer les boîtes aux lettres utilisateur en conservation pour litige ou appliquer une stratégie de rétention Office 365; consultez l'une des rubriques suivantes: 
     
     - [Place a mailbox on Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
@@ -615,51 +614,51 @@ L’étape suivante consiste à configurer les boîtes aux lettres pour prendre 
 
 La dernière étape consiste à fournir à votre partenaire les informations suivantes pour lui permettre de configurer le connecteur afin qu’il se connecte à votre organisation Office 365 pour importer les données vers les boîtes aux lettres des utilisateurs et la boîte aux lettres de données tierces. 
   
-- Le point de terminaison utilisé pour se connecter au service Azure dans Office 365 :
+- Le point de terminaison utilisé pour se connecter au service Azure dans Office 365:
 
     ```
     https://office365ingestionsvc.gble1.protection.outlook.com/service/ThirdPartyIngestionService.svc
     ```
 
-- La connexion dans les informations d’identification (Office 365 ID d’utilisateur et mot de passe) de la boîte aux lettres des données tierces que vous avez créé à l’étape 2. Ces informations d’identification sont nécessaires pour que le connecteur de partenaires permettre accéder et importer des éléments à des boîtes aux lettres utilisateur et à la boîte aux lettres des données tierces.
+- Les informations d'identification de connexion (ID d'utilisateur et mot de passe Office 365) de la boîte aux lettres de données tierce que vous avez créée à l'étape 2. Ces informations d'identification sont requises pour que le connecteur partenaire puisse accéder à des éléments et les importer dans des boîtes aux lettres utilisateur et dans la boîte aux lettres de données tierce.
  
-## <a name="step-5-register-the-third-party-data-connector-in-azure-active-directory"></a>Étape 5 : Enregistrer le connecteur des données tierces dans Azure Active Directory
+## <a name="step-5-register-the-third-party-data-connector-in-azure-active-directory"></a>Étape 5: enregistrer le connecteur de données tiers dans Azure Active Directory
 
-Démarrage du 30 septembre 2018, le service Azure dans Office 365 commencera utilisant l’authentification moderne dans Exchange Online pour authentifier les connecteurs de données tierce qui tentent de se connecter à votre organisation Office 365 pour importer des données. Pour que cette modification parce que l’authentification moderne offre davantage de sécurité que la méthode actuelle, qui repose sur la création de listes autorisées les connecteurs tiers qui utilisent le point de terminaison décrit précédemment pour se connecter au service Azure.
+À partir du 30 septembre 2018, le service Azure d'Office 365 commencera à utiliser l'authentification moderne dans Exchange Online pour authentifier les connecteurs de données tiers qui tentent de se connecter à votre organisation Office 365 pour importer des données. La raison de cette modification est que l'authentification moderne offre davantage de sécurité que la méthode actuelle, basée sur des connecteurs tiers de liste d'accès aux utilisateurs qui utilisent le point de terminaison décrit précédemment pour se connecter au service Azure.
 
-Pour activer un connecteur tiers pour se connecter à Office 365 à l’aide de la nouvelle méthode d’authentification moderne, un administrateur de votre organisation Office 365 doit consentement pour inscrire le connecteur comme une application de service approuvé dans Azure Active Directory. Cela s’effectue par l’acceptation d’une demande d’autorisations pour autoriser le connecteur accéder aux données de votre organisation dans Azure Active Directory. Après avoir accepté cette demande, le connecteur de données tiers est ajouté en tant qu’une application d’entreprise pour Azure Active Directory et représenté sous la forme d’un principal de service. Pour plus d’informations le processus d’autorisation, voir [Consentement de client d’administration](https://docs.microsoft.com/en-us/skype-sdk/trusted-application-api/docs/tenantadminconsent).
+Pour permettre à un connecteur de données tiers de se connecter à Office 365 à l'aide de la nouvelle méthode d'authentification moderne, un administrateur de votre organisation Office 365 doit consentir à inscrire le connecteur en tant qu'application de service approuvée dans Azure Active Directory. Pour ce faire, vous devez accepter une demande d'autorisations pour permettre au connecteur d'accéder aux données de votre organisation dans Azure Active Directory. Une fois que vous avez accepté cette demande, le connecteur de données tiers est ajouté en tant qu'application d'entreprise à Azure Active Directory et représenté en tant que principal de service. Pour plus d'informations sur le processus de consentement, consultez la rubrique consentement de l' [administrateur client](https://docs.microsoft.com/en-us/skype-sdk/trusted-application-api/docs/tenantadminconsent).
 
-Voici les étapes pour accéder et accepter la demande pour inscrire le connecteur :
+Voici les étapes à suivre pour accéder à la demande et l'accepter pour enregistrer le connecteur:
 
-1. Accédez à [cette page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) et vous connecter en utilisant les informations d’identification d’un administrateur global d’Office 365.<br/><br/>La boîte de dialogue s’affiche. Vous pouvez développer les crochets pour passer en revue les autorisations qui seront affectées au connecteur.<br/><br/>![La boîte de dialogue de demande d’autorisations s’affiche.](media/O365_ThirdPartyDataConnector_OptIn1.png)
-2. Cliquez sur **Accepter**.
+1. Accédez à [cette page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) et connectez-vous à l'aide des informations d'identification d'un administrateur général Office 365.<br/><br/>La boîte de dialogue suivante s'affiche. Vous pouvez développer les signes pour vérifier les autorisations qui seront affectées au connecteur.<br/><br/>![La boîte de dialogue demande d'autorisations s'affiche.](media/O365_ThirdPartyDataConnector_OptIn1.png)
+2. Cliquez sur **accepter**.
 
-Après avoir accepté la demande, le [portail Azure](https://portal.azure.com) s’affiche. Pour afficher la liste des applications pour votre organisation, cliquez sur **Azure Active Directory** > **applications d’entreprise**. Le connecteur de données tierce Office 365 est répertorié sur la blade **d’applications d’entreprise** .
+Une fois que vous avez accepté la demande, le [portail Azure](https://portal.azure.com) s'affiche. Pour afficher la liste des applications pour votre organisation, cliquez sur**applications d'entreprise** **Azure Active Directory** > . Le connecteur de données tiers 365 Office est affiché dans le panneau **applications d'entreprise** .
 
 > [!IMPORTANT]
-> Après 30 septembre 2018, les données tiers ne seront n’est plus importées dans les boîtes aux lettres dans votre organisation si vous n’enregistrez un connecteur tiers dans Azure Active Directory. Remarque existants aux connecteurs de données de tiers (ceux créés avant le 30 septembre 2018) doit également être enregistré dans Azure Active Directory en suivant la procédure à l’étape 5.
+> Après le 30 septembre 2018, les données tierces ne seront plus importées dans les boîtes aux lettres de votre organisation si vous n'enregistrez pas un connecteur de données tiers dans Azure Active Directory. Remarque les connecteurs de données tiers existants (ceux créés avant le 30 septembre 2018) doivent également être enregistrés dans Azure Active Directory en suivant la procédure de l'étape 5.
 
-### <a name="revoking-consent-for-a-third-party-data-connector"></a>Révoquer le consentement de l’utilisateur pour un connecteur tiers
+### <a name="revoking-consent-for-a-third-party-data-connector"></a>Révocation du consentement pour un connecteur de données tiers
 
-Une fois que votre organisation consent à la demande d’autorisations pour inscrire un connecteur tiers dans Azure Active Directory, votre organisation peut révoquer cette autorisation à tout moment. Toutefois, révoquer l’autorisation d’un connecteur signifie que les données à partir de la source de données tierce ne seront importées dans Office 365.
+Une fois que votre organisation a accepté la demande d'autorisations pour enregistrer un connecteur de données tiers dans Azure Active Directory, votre organisation peut révoquer ce consentement à tout moment. Toutefois, la révocation de l'autorisation pour un connecteur signifie que les données de la source de données tierce ne seront plus importées dans Office 365.
 
-Pour révoquer l’autorisation pour un connecteur tiers, vous pouvez supprimer l’application (en supprimant le principal de service correspondant) d’Azure Active Directory à l’aide de la lame **d’applications d’entreprise** dans le portail Azure, ou à l’aide de la [ Remove-MsolServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/msonline/remove-msolserviceprincipal) dans Office 365 PowerShell. Vous pouvez également utiliser l’applet de commande [Remove-AzureADServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/azuread/remove-azureadserviceprincipal) dans Windows Azure Active Directory PowerShell.
+Pour révoquer le consentement d'un connecteur de données tiers, vous pouvez supprimer l'application (en supprimant l'entité de service correspondante) à partir d'Azure Active Directory à l'aide du panneau **applications d'entreprise** dans le portail Azure ou à l'aide de l' [ Remove-MsolServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/msonline/remove-msolserviceprincipal) dans Office 365 PowerShell. Vous pouvez également utiliser l'applet de commande [Remove-AzureADServicePrincipal](https://docs.microsoft.com/en-us/powershell/module/azuread/remove-azureadserviceprincipal) dans Azure Active Directory PowerShell.
   
 ## <a name="more-information"></a>Plus d’informations
 
-- Indiqué comme précédent, les éléments à partir des données tiers sources sont importées dans les boîtes aux lettres Exchange en tant que messages électroniques. Le connecteur de partenaire importe l’élément à l’aide d’un schéma requis par l’API d’Office 365. Le tableau suivant décrit les propriétés de message d’un élément à partir d’une source de données tierce après l’importation de boîte aux lettres Exchange en tant qu’un message électronique. Le tableau indique également si la propriété message est obligatoire. Les propriétés obligatoires doivent être remplies. Si un élément ne dispose pas d’une propriété obligatoire, il ne seront pas importée vers Office 365. Le processus d’importation renverra un message d’erreur expliquant pourquoi un élément n’a pas été importé et que la propriété est manquante.
+- Comme indiqué précédemment, les éléments provenant de sources de données tierces sont importés dans les boîtes aux lettres Exchange sous forme de messages électroniques. Le connecteur partenaire importe l'élément à l'aide d'un schéma requis par l'API Office 365. Le tableau suivant décrit les propriétés de message d'un élément provenant d'une source de données tierce après qu'il a été importé dans une boîte aux lettres Exchange sous la forme d'un message électronique. Le tableau indique également si la propriété message est obligatoire. Les propriétés obligatoires doivent être renseignées. Si une propriété obligatoire est manquante dans un élément, celui-ci ne sera pas importé dans Office 365. Le processus d'importation renvoie un message d'erreur expliquant pourquoi un élément n'a pas été importé et quelle est la propriété manquante.
     
-    |**Propriété de message**|**Obligatoire ?**|**Description**|**Exemple de valeur**|
+    |**Propriété de message**|**Compléter?**|**Description**|**Exemple de valeur**|
     |:-----|:-----|:-----|:-----|
-    |**FROM** <br/> |Oui  <br/> |L’utilisateur qui a créé à l’origine ou de l’élément envoyé dans la source de données tierce. Le connecteur de partenaire tente de mapper l’ID d’utilisateur de la source (par exemple une poignée Twitter) à un compte d’utilisateur Office 365 pour tous les participants (utilisateurs dans les champs FROM et TO). Une copie du message sera importée dans la boîte aux lettres de tous les participants. Si aucun des participants à partir de l’élément peut être mappé à un compte d’utilisateur Office 365, l’élément sera importé dans la boîte aux lettres d’archivage tiers dans Office 365.<br/> <br/> Le participant qui est identifié en tant que l’expéditeur de l’élément doit avoir une boîte aux lettres active dans l’organisation Office 365 qui l’élément en cours d’importation. Si l’expéditeur ne possède une boîte aux lettres active, le message d’erreur suivant est retourné :<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
+    |**FROM** <br/> |Oui  <br/> |Utilisateur qui a initialement créé ou envoyé l'élément dans la source de données tierce. Le connecteur partenaire tentera de mapper l'ID utilisateur à partir de l'élément source (par exemple, un handle Twitter) vers un compte d'utilisateur Office 365 pour tous les participants (les utilisateurs figurant dans les champs de et à). Une copie du message sera importée dans la boîte aux lettres de chaque participant. Si aucun des participants de l'élément ne peut être mappé à un compte d'utilisateur Office 365, l'élément sera importé dans la boîte aux lettres d'archivage tierce dans Office 365.<br/> <br/> Le participant identifié comme l'expéditeur de l'élément doit disposer d'une boîte aux lettres active dans l'organisation Office 365 pour laquelle l'élément est importé. Si l'expéditeur ne dispose pas d'une boîte aux lettres active, l'erreur suivante est renvoyée:<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
     |**TO** <br/> |Oui  <br/> |Utilisateur qui a reçu un élément, le cas échéant, pour un élément dans la source de données.  <br/> | `bob@contoso.com` <br/> |
     |**SUBJECT** <br/> |Non  <br/> |Objet de l’élément source.  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
-    |**DATE** <br/> |Oui  <br/> |Date à laquelle l’élément a été initialement créé ou publié dans la source de données du client, par exemple, date à laquelle un message Twitter a été publié.  <br/> | `01 NOV 2015` <br/> |
-    |**BODY** <br/> |Non  <br/> |Le contenu du message ou du billet. Pour des sources de données, le contenu de cette propriété peut être la même que le contenu de la propriété **SUBJECT** . Pendant le processus d’importation, le connecteur partenaire tente de mettre à jour de fidélité à partir de la source de contenu que possible. Dans la mesure du possible les fichiers, des graphiques ou tout autre contenu dans le corps de l’élément source est inclus dans cette propriété. Dans le cas contraire, le contenu de la source est inclus dans la propriété de **pièce jointe** . Le contenu de cette propriété dépendent sur le connecteur de partenaire et de la capacité de la plateforme de la source.<br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
-    |**ATTACHMENT** <br/> |Non  <br/> |Si un élément dans la source de données (par exemple, un tweet Twitter ou une conversation par messagerie instantanée) contient une pièce jointe ou inclure des images, le partenaire connecté sera première tentative à inclure des pièces jointes dans la propriété **BODY** . Si ce n’est pas possible, puis elle est ajoutée à la ** pièce jointe ** propriété. D’autres exemples de pièces jointes incluent j’aime dans Facebook, les métadonnées à partir de la source de contenu et les réponses à un message ou d’un billet.<br/> | `image.gif` <br/> |
-    |**MESSAGECLASS** <br/> |Oui  <br/> | Il s’agit d’une propriété à valeurs multiples, qui est créée et remplie par connecteur partenaire. Le format de cette propriété est `IPM.NOTE.Source.Event`. (Cette propriété doit commencer par `IPM.NOTE`; ce format est similaire à celui de la `IPM.NOTE.X` classe de message.) Cette propriété consacrée les informations suivantes :<br/><br/>`Source`-Indique la source de données tierce ; par exemple, Twitter, Facebook ou BlackBerry.  <br/> <br/>  `Event`-Indique le type d’activité qui a été effectuée dans la source de données tierce qui a produit les éléments ; par exemple, un tweet Twitter ou une publication dans Facebook. Les événements sont spécifiques à la source de données.<br/> <br/>  Un des objectifs de cette propriété sont de filtrer des éléments spécifiques en fonction de la source de données où un élément à l’origine ou en fonction du type d’événement. Par exemple, dans une recherche de découverte, vous pouvez créer une requête de recherche pour trouver tous les tweet qui ont été validées par un utilisateur spécifique.<br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
+    |**JOURS** <br/> |Oui  <br/> |Date à laquelle l’élément a été initialement créé ou publié dans la source de données du client, par exemple, date à laquelle un message Twitter a été publié.  <br/> | `01 NOV 2015` <br/> |
+    |**BODY** <br/> |Non  <br/> |Le contenu du message ou de la publication. Pour certaines sources de données, le contenu de cette propriété peut être le même que celui de la propriété **Subject** . Pendant le processus d'importation, le connecteur partenaire tentera de maintenir la fidélité complète de la source de contenu le cas échéant. Si des fichiers, des graphismes ou d'autres contenus possibles du corps de l'élément source sont inclus dans cette propriété. Dans le cas contraire, le contenu de l'élément source **** est inclus dans la propriété Attachment. Le contenu de cette propriété dépend du connecteur du partenaire et de la capacité de la plateforme source.<br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
+    |**ATTACHMENT** <br/> |Non  <br/> |Si un élément de la source de données (par exemple, un tweet dans Twitter ou une conversation de messagerie instantanée) a un fichier joint ou inclut des images, le partenaire Connect tente d'abord d'inclure les pièces jointes dans la propriété **Body** . Si cela n'est pas possible, il est ajouté à la propriété * * ATTACHment * *. Voici d'autres exemples de pièces jointes: J'aime dans Facebook, les métadonnées de la source de contenu et les réponses à un message ou une publication.<br/> | `image.gif` <br/> |
+    |**MESSAGECLASS** <br/> |Oui  <br/> | Il s'agit d'une propriété à valeurs multiples, qui est créée et remplie par le connecteur du partenaire. Le format de cette propriété est `IPM.NOTE.Source.Event`. (Cette propriété doit commencer par `IPM.NOTE`; ce format est similaire à celui de la `IPM.NOTE.X` classe de message.) Cette propriété inclut les informations suivantes:<br/><br/>`Source`-Indique la source de données tierce; par exemple, Twitter, Facebook ou BlackBerry.  <br/> <br/>  `Event`-Indique le type d'activité qui a été effectué dans la source de données tierce qui a produit les éléments; par exemple, un tweet dans Twitter ou un billet dans Facebook. Les événements sont spécifiques à la source de données.<br/> <br/>  L'un des objectifs de cette propriété est de filtrer des éléments spécifiques en fonction de la source de données à partir de laquelle un élément est issu ou sur la base du type d'événement. Par exemple, dans une recherche de découverte électronique, vous pouvez créer une requête de recherche pour rechercher tous les tweets publiés par un utilisateur spécifique.<br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
    
-- Lorsque les éléments sont importés correctement aux boîtes aux lettres dans Office 365, un identificateur unique est renvoyé à l’appelant dans le cadre de la réponse HTTP. Cet identificateur — appelé `x-IngestionCorrelationID`— peut être utilisé à des fins de résolution des problèmes suivants par les partenaires pour le suivi de bout en bout d’éléments. Il est recommandé de partenaires capturent ces informations et ouvrez une session en conséquence à leur fin. Voici un exemple d’une réponse HTTP avec cet identificateur :
+- Lorsque des éléments sont correctement importés dans des boîtes aux lettres dans Office 365, un identificateur unique est renvoyé à l'appelant dans le cadre de la réponse HTTP. Cet identificateur, appelé `x-IngestionCorrelationID`, peut être utilisé à des fins de dépannage ultérieure par les partenaires pour le suivi de bout en bout des éléments. Il est recommandé aux partenaires de capturer ces informations et de les enregistrer en conséquence à leur bout. Voici un exemple de réponse HTTP illustrant cet identificateur:
 
     ```
     HTTP/1.1 200 OK
@@ -671,13 +670,13 @@ Pour révoquer l’autorisation pour un connecteur tiers, vous pouvez supprimer 
     Date: Tue, 02 Feb 2016 22:55:33 GMT 
     ```
  
-- Vous pouvez utiliser l’outil de recherche de contenu de sécurité Office 365 &amp; centre de conformité pour rechercher des éléments qui ont été importés pour les boîtes aux lettres dans Office 365 à partir d’une source de données tierce. Pour rechercher spécifiquement ces éléments importés, vous pouvez utiliser les paires de valeur de la propriété message suivantes dans la zone mots clés pour une recherche de contenu. . 
+- Vous pouvez utiliser l'outil de recherche de contenu dans le centre &amp; de sécurité conformité Office 365 pour rechercher des éléments qui ont été importés dans des boîtes aux lettres dans Office 365 à partir d'une source de données tierce. Pour rechercher spécifiquement ces éléments importés, vous pouvez utiliser les paires de propriétés-valeur de message suivantes dans la zone de mot clé pour une recherche de contenu. . 
     
-  - **`kind:externaldata`**-Utilisez cette paire de valeur de la propriété pour rechercher tous les types de données de tiers. Par exemple, pour rechercher des éléments qui ont été importés à partir d’une source de données tierce et contenu dans le mot « contoso » dans la propriété Subject de l’élément importé, vous utiliseriez la requête de mot clé `kind:externaldata AND subject:contoso`.
+  - **`kind:externaldata`**-Utilisez cette paire de valeurs de propriété pour rechercher tous les types de données tiers. Par exemple, pour rechercher des éléments qui ont été importés à partir d'une source de données tierce et contenant le mot «Contoso» dans la propriété Subject de l'élément importé, vous devez `kind:externaldata AND subject:contoso`utiliser la requête par mot clé.
     
-  - **`itemclass:ipm.externaldata.<third-party data type>`**-Utilisez cette paire de valeur de la propriété pour rechercher un type de spécifier des données tiers uniquement. Par exemple, pour rechercher uniquement les données Facebook qui contient le mot « contoso » dans la propriété Subject, utiliser la requête de mot clé `itemclass:ipm.externaldata.Facebook* AND subject:contoso`. 
+  - **`itemclass:ipm.externaldata.<third-party data type>`**-Utilisez cette paire de valeur de propriété pour rechercher uniquement un type de données tierces. Par exemple, pour rechercher uniquement les données Facebook qui contiennent le mot «Contoso» dans la propriété Subject, vous devez utiliser la requête `itemclass:ipm.externaldata.Facebook* AND subject:contoso`par mot clé. 
 
-  Pour obtenir la liste complète des valeurs à utiliser pour les types de données de tiers pour la `itemclass` propriété, voir [Recherche de contenu utiliser pour rechercher des données tierces qui a été importées dans Office 365](use-content-search-to-search-third-party-data-that-was-imported.md)
+  Pour obtenir la liste complète des valeurs à utiliser pour les types de données tiers pour `itemclass` la propriété, reportez-vous à la rubrique [utiliser la recherche de contenu pour rechercher des données tierces importées dans Office 365](use-content-search-to-search-third-party-data-that-was-imported.md)
     
    Pour plus d’informations sur l’utilisation de la recherche de contenu et la création de requêtes de recherche de mots clés, voir :
     

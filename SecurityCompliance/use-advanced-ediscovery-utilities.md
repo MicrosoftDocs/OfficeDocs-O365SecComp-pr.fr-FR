@@ -1,112 +1,112 @@
 ---
-title: Utilisez les utilitaires de découverte électronique Office 365 avancée
+title: Utiliser les utilitaires Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
-description: 'En savoir plus sur les utilitaires d’Office 365 avancée eDiscovery, y compris le journal d’événements, effacer les données, traiter les erreurs, modifiez la pertinence et l’analyse de transparence.  '
-ms.openlocfilehash: a68c98dd353971fcaa13fdc6b8e12bcf00c2faf0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: "Découvrez les utilitaires d'Office 365 Advanced eDiscovery, notamment le journal des cas, les données claires, les erreurs de processus, la pertinence et l'analyse de la transparence.  "
+ms.openlocfilehash: bd100883804b300e77abcc8a2224cf1a59b53475
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527585"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218204"
 ---
-# <a name="use-office-365-advanced-ediscovery-utilities"></a>Utilisez les utilitaires de découverte électronique Office 365 avancée
+# <a name="use-office-365-advanced-ediscovery-utilities"></a>Utiliser les utilitaires Office 365 Advanced eDiscovery
 
 > [!NOTE]
-> Découverte avancée nécessite un Office 365 E3 avec le module complémentaire de conformité avancée ou un abonnement E5 pour votre organisation. Si vous n’avez qu’un plan d’et essayer eDiscovery avancé, vous pouvez [inscrire à une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-Les utilitaires sont affichés et disponibles dans eDiscovery avancée dépendent des rôles de contexte et d’utilisateur.
+Les utilitaires affichés et disponibles dans Advanced eDiscovery dépendent des rôles de contexte et d'utilisateur.
   
-## <a name="case-log"></a>Journal d’événements
+## <a name="case-log"></a>Journal des cas
 
-Le journal des cas fournit une liste détaillée des activités de traitement de l’application, qui peut être utilisé pour le suivi, résoudre les problèmes et pour le traitement des erreurs et avertissements. Le journal peut être généré et stocké localement sur l’hôte ou le serveur ou envoyé directement à une adresse de messagerie.
+Le journal des cas fournit une liste détaillée des activités de traitement des applications, qui peuvent être utilisées pour le suivi, la résolution des problèmes et la résolution des erreurs et des avertissements. Le journal peut être généré et stocké localement sur l'hôte ou le serveur, ou envoyé directement à une adresse de messagerie.
   
-Le fichier journal peut également être téléchargé à l’ordinateur client. L’option de téléchargement du client peut être activée ou désactivée en fonction du rôle d’utilisateur et de configuration.
+Le fichier journal peut également être téléchargé sur l'ordinateur du client. L'option de téléchargement de client peut être activée ou désactivée en fonction de la configuration et du rôle d'utilisateur.
   
-1. Dans la barre de menus, cliquez sur l’icône **pignon** . 
+1. Dans la barre de menus, cliquez sur l'icône **cogwheel** . 
     
-2. Dans la **utilitaires et les paramètres \> utilitaires** onglet, sélectionnez **journal des cas \> le programme d’installation**.
+2. Dans l'onglet **paramètres et \> ** utilitaires, sélectionnez **configuration du journal \> des incidents**.
     
-3. Sélectionnez le **niveau de journalisation** comme suit : 
+3. Sélectionnez le **niveau** de journalisation comme suit: 
     
-  - **Standard**: inclut les données du journal de base. Cette option n’est généralement nécessaire pour la surveillance et doit être utilisée à moins que recommandé dans le cas contraire.
+  - **Standard**: inclut les données de journal de base. Cette option est généralement nécessaire pour la surveillance et doit être utilisée sauf indication contraire.
     
-  - **Minimum**: utilisée dans le cas de très grande taille et renvoie uniquement les données les plus récentes.
+  - **Minimal**: utilisé pour les très grandes situations et renvoie uniquement les données les plus récentes.
     
-4. Cliquez sur **journal d’exécuter les cas**. Le journal est généré et le chemin d’accès est affiché. Les informations de l’avancement des tâches pour la tâche en cours et le dernier s’affiche dans le volet d’état.
+4. Cliquez sur **exécuter le journal des cas**. Le journal est généré et le chemin d'accès est affiché. Les informations d'avancement de la tâche pour les tâches en cours et dernière sont affichées dans le volet État de la tâche.
     
 ## <a name="clear-data"></a>Effacer les données
 
-S’il est nécessaire de supprimer ou réinitialiser les données de cas, l’instance de base de données doit être initialisé. L’utilitaire d’effacement des données supprime spécifiées toutes les entrées de la casse de la base de données, fichiers texte, dossier de cas et résultats cumulés. La fonction peut uniquement être effectuée par un administrateur.
+S'il est nécessaire de supprimer ou de réinitialiser les données de cas, l'instance de base de données doit être initialisée. L'utilitaire effacer les données supprime toutes les entrées spécifiées de la base de données de cas, des fichiers texte, du dossier case et des résultats accumulés. La fonction peut uniquement être effectuée par un administrateur.
   
 > [!IMPORTANT]
-> Cette action n’est pas réversible et efface toutes les marquer la pertinence et analyse effectuée par l’expert. Enregistrer une sauvegarde de données, si nécessaire. Utilisez cette option avec précaution. Suppression des fichiers balisés et classés peut avoir un impact sur les résultats de la pertinence. 
+> Cette action n'est pas réversible et efface toutes les balises et les analyses de pertinence effectuées par l'expert. Enregistrer une sauvegarde des données, si nécessaire. Utilisez cette option avec une extrême précaution. La suppression des fichiers balisés et classés peut avoir un impact sur les résultats de pertinence. 
   
-1. Dans la barre de menus, cliquez sur l’icône **pignon** . 
+1. Dans la barre de menus, cliquez sur l'icône **cogwheel** . 
     
-2. Dans la **utilitaires et les paramètres \> utilitaires** onglet, sélectionnez **Effacer les données \> le programme d’installation**.
+2. Dans l'onglet **paramètres et \> ** utilitaires, sélectionnez **effacer la configuration \> des données**.
     
-3. Sélectionnez une option pour obtenir les informations d’initialisation :
+3. Sélectionnez une option pour l'initialisation des informations:
     
-  - **Pertinence**: supprime tous les, dans la pertinence, y compris la définition de la charge et l’association de fichiers à des charges de travail. Il supprime tous les exemples et marquage.
+  - **Pertinence**: supprime tout le travail réalisé en matière de pertinence, y compris la définition des charges et des associations de fichiers à charger. Il supprime tous les exemples et balisage.
     
-  - **Près de doublons et les threads de messagerie**: supprime toutes les informations d’analyse de proximité des doublons et les threads de messagerie.
+  - **Near-Duplicates et threads de messagerie**: supprime toutes les informations d'analyse des liens de proximité et des fils de messagerie.
     
-  - **Thèmes**: supprime les données liées à des thèmes.
+  - **Themes**: supprime les données liées aux thèmes.
     
-  - **Exporter l’historique**: supprime les informations d’historique des lots de l’exportation.
+  - **Historique des exportations**: supprime les informations d'historique des lots d'exportation.
     
-4. Cliquez sur **Effacer les données**. Les données des dossiers sont désactivées. Les informations de progression de la tâche en cours et la dernière tâche sont affichées dans le volet **d’état de la tâche** . 
+4. Cliquez sur **effacer les données**. Les données de cas sont effacées. Les informations d'avancement de la tâche pour les tâches en cours et dernière sont affichées dans le volet État de la **tâche** . 
     
 ## <a name="modify-relevance"></a>Modifier la pertinence
 
-Cette section décrit comment ignorer ou annuler un exemple de la pertinence.
+Cette section décrit comment ignorer ou restaurer un exemple de pertinence.
   
-1. Dans la barre de menus, cliquez sur l’icône **pignon** . 
+1. Dans la barre de menus, cliquez sur l'icône **cogwheel** . 
     
-2. Dans la **utilitaires et les paramètres \> utilitaires** , sélectionnez **la pertinence de la modifier**.
+2. Dans l'onglet **paramètres et \> ** utilitaires, sélectionnez **modifier la pertinence**.
     
-3. Sélectionnez l’une des options : 
+3. Sélectionnez l'une des options suivantes: 
     
-  - **Exemple actuel ignorer - utilisateur actif**: Cela permet d’identifier, comme à **Ignorer**, tous les fichiers non balisés dans l’exemple de cas open de l’utilisateur qui exécute l’utilitaire. Traitement de la pertinence pas sera effectuée sur les fichiers marqués comme à **Ignorer**.
+  - **Ignorer l'exemple actuel: pour l'utilisateur actuel**: cette balise, sous la forme **Ignorer**, tous les fichiers non balisés dans l'exemple de cas d'ouverture de l'utilisateur qui exécute l'utilitaire. Le traitement de pertinence ne sera pas effectué sur les fichiers marqués comme **Skip**.
     
-  - **Exemple actuel ignorer - tous les exemples d’ouvrir**: Cela permet d’identifier, comme à **Ignorer**, tous les fichiers non balisés dans tous les exemples pour tous les utilisateurs. Cette option n’est pas recommandée si les utilisateurs sont balisage actuellement exemples.
+  - **Ignorer l'exemple actuel-tous les exemples ouverts**: cette balise, sous la forme **Ignorer**, tous les fichiers non balisés de tous les exemples ouverts pour tous les utilisateurs. Cette option n'est pas recommandée si les utilisateurs sont actuellement en train de baliser des exemples.
     
-  - **Annuler la dernière exemple**: le dernier réalisé la pertinence de la formation sera restaurée, qu’elle soit avant ou après le processus de « Calculer ». Restauration d’un exemple de rattrapage n’est pas autorisée.
+  - **Restaurer le dernier exemple**: le dernier exemple de formation à la pertinence terminé sera annulé, qu'il soit ou non avant ou après le processus de «calcul». La restauration d'un exemple de rattrapage n'est pas autorisée.
     
 4. Cliquez sur **exécuter** pour exécuter. 
     
-## <a name="transparency-analysis"></a>Analyse de transparence
+## <a name="transparency-analysis"></a>Analyse de la transparence
 
-L’utilitaire d’analyse de transparence permet une vue détaillée des fichiers et leurs score de pertinence affecté. Le rapport utilisable comme un contrôle de validité ou pour comparer la pertinence d’un fichier défini par un réviseur humain par rapport à la pertinence attribué par eDiscovery avancée. 
+L'utilitaire d'analyse de transparence active une vue détaillée des fichiers et le score de pertinence qui leur est attribué. Le rapport peut être utilisé en tant que contrôle de validité ou comparer la pertinence d'un fichier défini par un réviseur humain par rapport à la pertinence attribuée par Advanced eDiscovery. 
   
-En plus des résultats de la pertinence, découverte avancée calcule et affecte le poids de mot clé que prendre en compte le contexte du mot clé. Poids différents, selon le contexte et l’emplacement peut être affecté à la même mot dans un fichier. Chaque mot clé est marqué à l’aide d’une échelle augmentation de l’intensité de couleur allant de jaune à orange foncé et différentes nuances de gris. Codage en couleurs est utilisé pour indiquer visuellement la famille du mot contribution positive ou négative pour le score de pertinence. 
+Outre les scores de pertinence, la découverte électronique avancée calcule et affecte des pondérations de mots clés qui envisagent le contexte de mot clé. Le même mot dans un fichier peut se voir attribuer différents poids, selon le contexte et l'emplacement. Chaque mot clé est marqué à l'aide d'une échelle croissante d'intensité de couleur allant de jaune à orange foncé et de différentes nuances de gris. Le codage en couleurs permet d'indiquer visuellement la contribution positive ou négative du mot au score de pertinence. 
   
-Dans un scénario de plusieurs problèmes, un rapport d’analyse de transparence peut être généré pour chaque problème.
+Dans un scénario de cas à plusieurs problèmes, un rapport d'analyse de transparence peut être généré pour chaque problème.
   
-1. Dans la barre de menus, cliquez sur l’icône **pignon** . 
+1. Dans la barre de menus, cliquez sur l'icône **cogwheel** . 
     
-2. Dans la **utilitaires et les paramètres \> utilitaires** onglet, sélectionnez **analyse transparence \> le programme d’installation**.
+2. Dans l'onglet **paramètres et \> ** utilitaires, sélectionnez Configuration de l' **analyse \> de transparence**.
     
-3. Dans ** ID du fichier **, entrez l’ID de fichier du fichier à traiter.
+3. Dans * * ID de fichier * *, entrez l'ID de fichier du fichier à traiter.
     
-4. Dans la liste des **problèmes** , sélectionnez le problème pertinent. 
+4. Dans la liste **problème** , sélectionnez le problème pertinent. 
     
-5. Cliquez sur **analyse de transparence**. Une fois terminé, le rapport d’analyse de transparence pour le fichier s’affiche, qui indique la façon dont les couleurs de mot clé marqués correspondent au score de pertinence.
+5. Cliquez sur **analyse de transparence**. Une fois l'opération terminée, le rapport d'analyse de transparence du fichier s'affiche, qui montre comment les couleurs de mots clés marquées correspondent au score global de pertinence.
     
 ## <a name="see-also"></a>Voir aussi
 
-[eDiscovery avancée Office 365](office-365-advanced-ediscovery.md)
+[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Définir les paramètres de la casse et client](define-case-and-tenant-settings-in-advanced-ediscovery.md)
+[Définition des paramètres de cas et de client](define-case-and-tenant-settings-in-advanced-ediscovery.md)
 

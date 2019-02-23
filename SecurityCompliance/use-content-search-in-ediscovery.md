@@ -6,26 +6,26 @@ manager: laurawi
 ms.date: 12/30/2016
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 55f31488-288a-473a-9b9e-831a11e3711a
-description: 'Utiliser un script PowerShell pour créer une recherche de découverte électronique locale dans Exchange Online basée sur une recherche créée dans l’Office 365 Security &amp; centre de conformité. '
-ms.openlocfilehash: 42af94ce850736dede52e619c240bb9e0a6f7031
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: "Utilisez un script PowerShell pour créer une recherche de découverte électronique inaltérable dans Exchange Online, en fonction d'une recherche créée dans le centre &amp; de sécurité conformité Office 365. "
+ms.openlocfilehash: fff50b7dcd89790c84bb2911f560ce1b061b8f17
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038067"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216044"
 ---
 # <a name="use-content-search-in-your-ediscovery-workflow"></a>Utilisation de la recherche de contenu dans votre flux de travail de découverte électronique
 
-La fonctionnalité de recherche de contenu de sécurité Office 365 &amp; centre de conformité vous permet de rechercher toutes les boîtes aux lettres dans votre organisation. Contrairement à la découverte électronique locale dans Exchange Online (où vous pouvez rechercher jusqu'à 10 000 boîtes aux lettres), il n’existe aucune limite pour le nombre de boîtes aux lettres cible en une seule recherche. Pour les scénarios qui nécessitent que vous devez effectuer des recherches à l’échelle de l’organisation, vous pouvez utiliser la recherche de contenu pour rechercher toutes les boîtes aux lettres. Ensuite, vous pouvez utiliser les fonctionnalités de flux de travail de découverte électronique locale pour effectuer d’autres tâches liées à la découverte électronique, telles que le blocage de boîtes aux lettres mises sur et de résultats de recherche d’exportation. Par exemple, supposons que vous avez rechercher toutes les boîtes aux lettres pour identifier les dépositaires spécifiques qui réagissent à une affaire juridique. Vous pouvez utiliser la recherche de contenu de la sécurité &amp; centre de conformité pour rechercher toutes les boîtes aux lettres dans votre organisation pour identifier ceux qui sont sensible à la casse. Vous pouvez utiliser cette liste de boîtes aux lettres dépositaire en tant que les boîtes aux lettres source pour une recherche de découverte électronique locale dans Exchange Online. À l’aide de In-Place eDiscovery vous permet également à placer une suspension sur les boîtes aux lettres source, copier les résultats de recherche dans une boîte aux lettres de découverte et d’exporter les résultats de recherche.
+La fonctionnalité de recherche de contenu dans le centre &amp; de sécurité et conformité Office 365 vous permet d'effectuer des recherches dans toutes les boîtes aux lettres de votre organisation. Contrairement à la découverte électronique inaltérable dans Exchange Online (où vous pouvez effectuer des recherches dans des boîtes aux lettres de 10 000), il n'existe aucune limite au nombre de boîtes aux lettres cibles dans une seule recherche. Pour les scénarios qui nécessitent que vous effectuiez des recherches à l'échelle de l'organisation, vous pouvez utiliser la recherche de contenu pour rechercher toutes les boîtes aux lettres. Vous pouvez ensuite utiliser les fonctionnalités de flux de travail de découverte électronique inaltérable pour effectuer d'autres tâches liées à la découverte électronique, telles que le placement des boîtes aux lettres en conservation et l'exportation des résultats de la recherche. Par exemple, imaginons que vous devez rechercher toutes les boîtes aux lettres pour identifier des dépositaires spécifiques répondant à un cas juridique. Vous pouvez utiliser la recherche de contenu dans &amp; le centre de sécurité conformité pour rechercher toutes les boîtes aux lettres de votre organisation afin d'identifier celles qui répondent au cas. Vous pouvez ensuite utiliser cette liste de boîtes aux lettres de dépositaire comme boîtes aux lettres source pour une recherche de découverte électronique inaltérable dans Exchange Online. L'utilisation de la découverte électronique inaltérable vous permet également de mettre en attente ces boîtes aux lettres source, de copier les résultats de la recherche dans une boîte aux lettres de découverte et d'exporter les résultats de la recherche.
   
-Cette rubrique inclut un script que vous pouvez exécuter pour créer une recherche de découverte électronique locale dans Exchange Online à l’aide de la liste des boîtes aux lettres sources et de requête de recherche à partir d’une recherche créée dans la sécurité &amp; centre de conformité. Voici une vue d’ensemble du processus :
+Cette rubrique comprend un script que vous pouvez exécuter pour créer une recherche de découverte électronique inaltérable dans Exchange Online à l'aide de la liste des boîtes aux lettres source et de la requête de recherche à &amp; partir d'une recherche créée dans le centre de sécurité et de conformité. Voici une vue d'ensemble du processus:
   
 [Étape 1 : créer une recherche de contenu pour consulter toutes les boîtes aux lettres de votre organisation](#step-1-create-a-content-search-to-search-all-mailboxes-in-your-organization)
 
-[Étape 2 : Se connecter à la sécurité &amp; centre de conformité et Exchange Online dans une seule session PowerShell distante](#step-2-connect-to-the-security-amp-compliance-center-and-exchange-online-in-a-single-remote-powershell-session)
+[Étape 2: se connecter au centre &amp; de sécurité conformité et à Exchange Online en une seule session PowerShell à distance](#step-2-connect-to-the-security-amp-compliance-center-and-exchange-online-in-a-single-remote-powershell-session)
   
 [Étape 3 : exécuter le script pour créer une recherche de découverte électronique inaltérable à partir de la recherche de contenu](#step-3-run-the-script-to-create-an-in-place-ediscovery-search-from-the-content-search)
 
@@ -33,34 +33,34 @@ Cette rubrique inclut un script que vous pouvez exécuter pour créer une recher
 
 ## <a name="step-1-create-a-content-search-to-search-all-mailboxes-in-your-organization"></a>Étape 1 : créer une recherche de contenu pour consulter toutes les boîtes aux lettres de votre organisation
 
-La première étape consiste à utiliser la sécurité &amp; centre de conformité (ou sécurité & PowerShell du centre de conformité) pour créer une recherche de contenu qui recherche toutes les boîtes aux lettres dans votre organisation. Il n’existe aucune limite pour le nombre de boîtes aux lettres pour une recherche de contenu unique. Spécifiez une requête de mot clé approprié (ou une requête pour des types d’informations sensibles) afin que la recherche retourne uniquement les boîtes aux lettres sources qui sont pertinents pour votre investigation. Si nécessaire, affinez la requête de recherche pour limiter l’étendue des résultats de recherche et de boîtes aux lettres sources qui sont retournés.
+La première étape consiste à utiliser le centre &amp; de sécurité conformité (ou Security _AMP_ Compliance Center PowerShell) pour créer une recherche de contenu qui recherche toutes les boîtes aux lettres de votre organisation. Il n'y a pas de limite pour le nombre de boîtes aux lettres pour une recherche de contenu unique. Spécifiez une requête de mot-clé appropriée (ou une requête pour les types d'informations sensibles) afin que la recherche renvoie uniquement les boîtes aux lettres source pertinentes pour votre enquête. Si nécessaire, Affinez la requête de recherche pour limiter l'étendue des résultats de recherche et des boîtes aux lettres sources qui sont renvoyées.
   
 > [!NOTE]
 > Si la recherche de contenu source ne renvoie aucun résultat, aucune découverte électronique inaltérable n’est créée lorsque vous exécutez le script à l’étape 3. Il se peut que vous deviez modifier la requête de recherche, puis réexécuter la recherche de contenu pour renvoyer des résultats de recherche. 
   
-### <a name="use-the-security-amp-compliance-center-to-search-all-mailboxes"></a>Utilisez la sécurité &amp; centre de conformité pour rechercher toutes les boîtes aux lettres
+### <a name="use-the-security-amp-compliance-center-to-search-all-mailboxes"></a>Utiliser le centre &amp; de sécurité conformité pour rechercher toutes les boîtes aux lettres
 
-1. [De la sécurité Office 365 &amp; centre de conformité](go-to-the-securitycompliance-center.md). 
+1. [Accédez au centre de sécurité &amp; conformité d'Office 365](go-to-the-securitycompliance-center.md). 
     
-2. Cliquez sur **recherche &amp; enquête**et cliquez sur **recherche de contenu**, puis cliquez sur **Nouveau** ![icône Ajouter](media/O365-MDM-CreatePolicy-AddIcon.gif).
+2. Cliquez sur recherches de **recherche &amp; **, sur **recherche de contenu**, puis sur **nouvelle** ![icône](media/O365-MDM-CreatePolicy-AddIcon.gif)ajouter.
     
 3. Sur la page **Nouvelle recherche**, saisissez un nom pour la recherche de contenu. 
     
 4. Sous **Dans quels emplacements voulez-vous effectuer la recherche ?**, cliquez sur **Rechercher dans toutes les boîtes aux lettres**, puis sur **Suivant**.
     
-5. Dans la zone sous **que voulez-vous rechercher les ?**, tapez une requête de recherche dans la zone. Vous pouvez spécifier des mots clés, message propriétés telles qu’envoyés et reçus de dates, ou des propriétés de document telles que les noms de fichiers ou la date de dernière modification un document. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, tels que AND, OR pas ou de proximité, ou vous pouvez également rechercher des informations sensibles (telles que les numéros de sécurité sociale) dans les messages. Pour plus d’informations sur la création de requêtes de recherche, voir [requêtes de mot clé pour la recherche de contenu](keyword-queries-and-search-conditions.md).
+5. Dans la zone située sous **que souhaitez-vous?**, tapez une requête de recherche dans le champ. Vous pouvez spécifier des mots clés, des propriétés de message, telles que des dates d'envoi et de réception, ou des propriétés de document, telles que des noms de fichiers ou la date de la dernière modification d'un document. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, comme AND, OR, NOT ou NEAR, ou vous pouvez également rechercher des informations sensibles (telles que les numéros de sécurité sociale) dans les messages. Pour plus d'informations sur la création de requêtes de recherche, voir [Keyword Queries for Content Search](keyword-queries-and-search-conditions.md).
     
 6. Cliquez sur **Rechercher** pour enregistrer les paramètres de recherche et commencer la recherche. 
     
-    Après un certain temps, une estimation des résultats de recherche affichés dans le volet détails. L’estimation inclut la taille totale et le nombre d’éléments des résultats de recherche. Une fois que la recherche est terminée, vous pouvez afficher les résultats de recherche. Si nécessaire, cliquez sur **Actualiser**![icône Actualiser](media/O365-MDM-Policy-RefreshIcon.gif) pour mettre à jour les informations contenues dans le volet de détails. 
+    Après un certain temps, une estimation des résultats de la recherche affichés dans le volet d'informations. L'estimation inclut la taille totale et le nombre d'éléments pour les résultats de la recherche. Une fois la recherche terminée, vous pouvez afficher un aperçu des résultats de la recherche. Si nécessaire, cliquez ****![sur Actualiser](media/O365-MDM-Policy-RefreshIcon.gif) l'actualisation pour mettre à jour les informations dans le volet d'informations. 
     
 7.  Si nécessaire, affinez la requête de recherche pour limiter l’étendue des résultats de recherche, puis redémarrez la recherche. 
     
-### <a name="use-security--compliance-center-powershell-to-search-all-mailboxes"></a>Utiliser PowerShell du centre de conformité et sécurité pour rechercher toutes les boîtes aux lettres
+### <a name="use-security--compliance-center-powershell-to-search-all-mailboxes"></a>Utiliser le centre de sécurité & Compliance Center PowerShell pour rechercher toutes les boîtes aux lettres
 
-Vous pouvez également utiliser l’applet de commande **New-ComplianceSearch** pour rechercher toutes les boîtes aux lettres dans votre organisation. La première étape consiste à [se connecter à Office 365 sécurité &amp; PowerShell du centre de conformité](https://go.microsoft.com/fwlink/p/?LinkID=627084).
+Vous pouvez également utiliser la cmdlet **New-ComplianceSearch** pour effectuer une recherche dans toutes les boîtes aux lettres de votre organisation. La première étape consiste à [se connecter au centre de &amp; sécurité conformité Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=627084).
   
-Voici un exemple d’utilisation de PowerShell pour rechercher toutes les boîtes aux lettres dans votre organisation. La requête de recherche renvoie tous les messages envoyés entre le 1er janvier 2015 et le 30 juin 2015 et qui contiennent la phrase « rapports financiers » dans la ligne d’objet. La première commande crée la recherche, et la deuxième commande s’exécute à la recherche. 
+Voici un exemple d'utilisation de PowerShell pour effectuer une recherche dans toutes les boîtes aux lettres de votre organisation. La requête de recherche renvoie tous les messages envoyés entre le 1er janvier 2015 et le 30 juin 2015, qui contiennent l'expression «rapport financier» dans la ligne d'objet. La première commande crée la recherche et la deuxième commande exécute la recherche. 
   
 ```
 New-ComplianceSearch -Name "Search All-Financial Report" -ExchangeLocation all -ContentMatchQuery 'sent>=01/01/2015 AND sent<=06/30/2015 AND subject:"financial report"'
@@ -74,11 +74,11 @@ Pour plus d'informations, consultez la rubrique [New-ComplianceSearch](https://g
   
 ### <a name="verify-the-number-of-source-mailboxes-in-the-content-search"></a>Vérifier le nombre de boîtes aux lettres source dans la recherche de contenu
 
-Une recherche de contenu retourne un maximum de 1 000 boîtes aux lettres sources qui contiennent des résultats de la recherche. S’il n’y a plus de 1 000 boîtes aux lettres qui contiennent du contenu qui correspond à la requête de recherche, uniquement haut 1 000 boîtes aux lettres avec les résultats de recherche la plupart sont inclus dans la recherche de contenu que vous avez créé à l’étape précédente. Ainsi, si plus de 1 000 boîtes aux lettres contient les résultats de la recherche, certains de ces boîtes aux lettres ne sont pas inclus dans la liste des boîtes aux lettres sources copiés à la nouvelle recherche de découverte sur Place créée à l’étape 3. 
+Une recherche de contenu renvoie un maximum de 1 000 boîtes aux lettres source qui contiennent les résultats de la recherche. S'il y a plus de 1 000 boîtes aux lettres qui contiennent du contenu correspondant à la requête de recherche, seules les 1 000 premières boîtes aux lettres avec le plus de résultats de recherche sont incluses dans la recherche de contenu que vous avez créée à l'étape précédente. Par conséquent, si plus de 1 000 boîtes aux lettres contiennent des résultats de recherche, certaines de ces boîtes aux lettres ne seront pas incluses dans la liste des boîtes aux lettres source copiées dans la nouvelle recherche de découverte électronique inaltérable créée à l'étape 3. 
   
-Pour vous aider à créer une recherche de contenu avec pas plus de boîtes aux lettres sources 1 000, suivez ces étapes pour exécuter un script qui affiche le nombre de boîtes aux lettres source (qui contient les résultats de la recherche) renvoyé par la recherche de contenu que vous avez créé à l’étape 1. 
+Pour vous aider à créer une recherche de contenu ne comportant pas plus de 1 000 boîtes aux lettres source, procédez comme suit pour exécuter un script qui affiche le nombre de boîtes aux lettres sources (qui contiennent les résultats de la recherche) renvoyées par la recherche de contenu que vous avez créée à l'étape 1. 
   
-1. Enregistrez le texte suivant dans un fichier de script PowerShell à l’aide d’un suffixe de nom de fichier de .ps1. Par exemple, vous pourriez enregistrer dans un fichier nommé `SourceMailboxes.ps1`.
+1. Enregistrez le texte suivant dans un fichier de script PowerShell à l'aide du suffixe de nom de fichier. ps1. Par exemple, vous pouvez l'enregistrer dans un fichier nommé `SourceMailboxes.ps1`.
     
   ```
   [CmdletBinding()]
@@ -110,7 +110,7 @@ Pour vous aider à créer une recherche de contenu avec pas plus de boîtes aux 
   "Number of mailboxes that have search hits: " + $mailboxes.Count
   ```
 
-2. Dans PowerShell de centre de conformité et de sécurité, accédez au dossier où se trouve le script que vous avez créé à l’étape précédente, puis exécutez le script ; par exemple :
+2. Dans le centre de sécurité & Compliance Center PowerShell, accédez au dossier dans lequel se trouve le script que vous avez créé à l'étape précédente, puis exécutez le script. par exemple:
     
     ```
     .\SourceMailboxes.ps1
@@ -120,13 +120,13 @@ Pour vous aider à créer une recherche de contenu avec pas plus de boîtes aux 
     
     Le script affiche le nombre de boîtes aux lettres source contenant les résultats de la recherche.
     
-S’il n’y a plus de 1 000 boîtes aux lettres source, essayez de créer des recherches de contenu de deux (ou plus). Par exemple, la moitié des boîtes aux lettres de votre organisation de recherche dans une recherche de contenu et l’autre moitié dans une autre recherche de contenu. Vous pouvez également modifier les critères de recherche pour réduire le nombre de boîtes aux lettres qui contiennent des résultats de la recherche. Par exemple, vous pourriez inclure une plage de dates ou d’affiner la requête de mot clé.
+Si le nombre de boîtes aux lettres source est supérieur à 1 000, essayez de créer deux recherches de contenu (ou plus). Par exemple, recherchez la moitié des boîtes aux lettres de votre organisation dans une recherche de contenu et l'autre moitié dans une autre recherche de contenu. Vous pouvez également modifier les critères de recherche pour réduire le nombre de boîtes aux lettres qui contiennent des résultats de recherche. Par exemple, vous pouvez inclure une plage de dates ou affiner la requête de mot-clé.
   
-## <a name="step-2-connect-to-the-security-amp-compliance-center-and-exchange-online-in-a-single-remote-powershell-session"></a>Étape 2 : Se connecter à la sécurité &amp; centre de conformité et Exchange Online dans une seule session PowerShell distante
+## <a name="step-2-connect-to-the-security-amp-compliance-center-and-exchange-online-in-a-single-remote-powershell-session"></a>Étape 2: se connecter au centre &amp; de sécurité conformité et à Exchange Online en une seule session PowerShell à distance
 
-L’étape suivante consiste à connecter Windows PowerShell pour la sécurité &amp; centre de conformité et de votre organisation Exchange Online. Cela est nécessaire car le script que vous exécutez l’étape 3 nécessite un accès pour les applets de commande de recherche de contenu dans la sécurité &amp; centre de conformité et les applets de commande In-Place eDiscovery dans Exchange Online.
+L'étape suivante consiste à connecter Windows PowerShell au centre de sécurité &amp; conformité et à votre organisation Exchange Online. Cela est nécessaire, car le script que vous exécutez à l'étape 3 requiert l'accès aux cmdlets de recherche de &amp; contenu dans le centre de sécurité conformité et les cmdlets de découverte électronique inaltérable dans Exchange Online.
   
-1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier de .ps1. Par exemple, vous pourriez enregistrer dans un fichier nommé `ConnectEXO-CC.ps1`.
+1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l'aide d'un suffixe de nom de fichier. ps1. Par exemple, vous pouvez l'enregistrer dans un fichier nommé `ConnectEXO-CC.ps1`.
     
     ```
     $UserCredential = Get-Credential
@@ -137,17 +137,17 @@ L’étape suivante consiste à connecter Windows PowerShell pour la sécurité 
     $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Exchange Online + Compliance Center)"
     ```
 
-2. Sur votre ordinateur local, ouvrez Windows PowerShell, accédez au dossier où se trouve le script que vous avez créé à l’étape précédente, puis exécutez le script ; par exemple :
+2. Sur votre ordinateur local, ouvrez Windows PowerShell, accédez au dossier dans lequel se trouve le script que vous avez créé à l'étape précédente, puis exécutez le script; par exemple:
     
     ```
     .\ConnectEXO-CC.ps1
     ```
 
-Comment savoir si cela a fonctionné ? Après avoir exécuté le script, les applets de commande de la sécurité &amp; centre de conformité et Exchange Online sont importés dans votre session PowerShell locale. Si vous ne recevez des erreurs, vous connecté avec succès. Un test rapide consiste à exécuter une sécurité &amp; centre de conformité cmdlet — par exemple, **Install-UnifiedCompliancePrerequisite** et une applet de commande Exchange Online, telles que **Get-Mailbox**. 
+Comment savoir si cela a fonctionné? Après avoir exécuté le script, les cmdlets du centre &amp; de sécurité conformité et d'Exchange Online sont importées dans votre session PowerShell locale. Si vous ne recevez aucune erreur, vous vous êtes connecté avec succès. Un test rapide consiste à exécuter une cmdlet &amp; du centre de sécurité conformité (par exemple, **install-UnifiedCompliancePrerequisite** ) et une cmdlet Exchange Online, telle que **Get-Mailbox**. 
   
 ## <a name="step-3-run-the-script-to-create-an-in-place-ediscovery-search-from-the-content-search"></a>Étape 3 : exécuter le script pour créer une recherche de découverte électronique inaltérable à partir de la recherche de contenu
 
-Après avoir créé la session PowerShell double à l’étape 2, l’étape suivante consiste à exécuter un script qui convertit une recherche de contenu existante à une recherche de découverte électronique locale. Voici ce que fait le script :
+Une fois que vous avez créé la session PowerShell double à l'étape 2, l'étape suivante consiste à exécuter un script qui convertira une recherche de contenu existante en une recherche de découverte électronique inaltérable. Voici ce que fait le script:
   
 - Il vous invite à indiquer le nom de la recherche de contenu à convertir.
     
@@ -157,15 +157,15 @@ Après avoir créé la session PowerShell double à l’étape 2, l’étape sui
     
 - Il crée une recherche de découverte électronique inaltérable, avec les propriétés suivantes. Notez que la nouvelle recherche n’est pas démarrée. Vous le démarrerez à l’étape 4.
     
-  - **Nom** : le nom de la nouvelle recherche utilise ce format : \<nom de la recherche de contenu\>_MBSearch1. Si vous exécutez de nouveau le script et utilisez la même source de contenu de recherche, la recherche sera nommée \<nom de la recherche de contenu\>_MBSearch2.
+  - **Name** : le nom de la nouvelle recherche utilise ce format: \<nom de la recherche\>de contenu _MBSearch1. Si vous exécutez à nouveau le script et que vous utilisez la même recherche de contenu source, la \<recherche sera nommée nom\>de la recherche de contenu _MBSearch2.
     
-  - **Boîtes aux lettres sources** - toutes les boîtes aux lettres à partir de la recherche de contenu qui contiennent des résultats de la recherche. 
+  - **Boîtes aux lettres source** : toutes les boîtes aux lettres de la recherche de contenu qui contiennent les résultats de la recherche. 
     
-  - **Requête de recherche** - la nouvelle recherche utilise la requête de recherche à partir de la recherche de contenu. Si la recherche de contenu inclut tout le contenu (où la requête de recherche est vide) la nouvelle recherche aura également une requête de recherche vide et inclut tout le contenu trouvé dans les boîtes aux lettres source. 
+  - **Requête de recherche** : la nouvelle recherche utilise la requête de recherche de la recherche de contenu. Si la recherche de contenu inclut tout le contenu (où la requête de recherche est vide), la nouvelle recherche aura également une requête de recherche vide et inclura tout le contenu trouvé dans les boîtes aux lettres source. 
     
-  - **Estimer la recherche uniquement** - la nouvelle recherche est marqué comme une recherche estimate uniquement. Elle ne copie des résultats de la recherche à une boîte aux lettres de découverte après le démarrage. 
+  - **Estimer uniquement** la recherche: la nouvelle recherche est marquée comme une recherche d'estimation uniquement. Il ne copie pas les résultats de la recherche dans une boîte aux lettres de découverte après son démarrage. 
     
-1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier de ps1. Par exemple, vous pourriez enregistrer dans un fichier nommé `CreateMBSearchFromComplianceSearch.ps1`.
+1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l'aide d'un suffixe de nom de fichier ps1. Par exemple, vous pouvez l'enregistrer dans un fichier nommé `CreateMBSearchFromComplianceSearch.ps1`.
     
   ```
   [CmdletBinding()]
@@ -234,13 +234,13 @@ Après avoir créé la session PowerShell double à l’étape 2, l’étape sui
   
   ```
 
-2. Dans la session Windows PowerShell que vous avez créé à l’étape 2, accédez au dossier où se trouve le script que vous avez créé à l’étape précédente, puis exécutez le script ; par exemple :
+2. Dans la session Windows PowerShell que vous avez créée à l'étape 2, accédez au dossier dans lequel se trouve le script que vous avez créé à l'étape précédente, puis exécutez le script. par exemple:
     
     ```
     .\CreateMBSearchFromComplianceSearch.ps1
     ```
 
-3. Lorsque vous y êtes invité par le script, tapez le nom de la recherche de contenu que vous souhaitez convertir en une-recherche de découverte électronique (par exemple, la recherche que vous avez créé à l’étape 1), puis appuyez sur **entrée**.
+3. Lorsque vous y êtes invité par le script, tapez le nom de la recherche de contenu que vous souhaitez convertir dans une recherche de découverte électronique inaltérable (par exemple, la recherche que vous avez créée à l'étape 1), puis appuyez sur **entrée**.
     
     Si le script réussit, une recherche de découverte électronique inaltérable est créée avec l'état **NotStarted**. Exécutez la commande  `Get-MailboxSearch <Name of Content Search>_MBSearch1 | FL` pour afficher les propriétés de la nouvelle recherche. 
   
@@ -248,13 +248,13 @@ Après avoir créé la session PowerShell double à l’étape 2, l’étape sui
 
 Le script exécuté à l’étape 3 crée une recherche de découverte électronique inaltérable, mais ne la démarre pas. L’étape suivante consiste à démarrer la recherche afin d’obtenir une estimation des résultats de recherche.
   
-1. Dans le centre d’administration Exchange (CAE), accédez à **gestion de la conformité** \> **In-Place eDiscovery &amp; contenir**.
+1. Dans le centre d'administration Exchange, accédez à \> gestion de **la conformité** de la **découverte électronique &amp; **inaltérable.
     
 2. Dans l'affichage Liste, sélectionnez la recherche de découverte électronique inaltérable que vous avez créée à l'étape 3.
     
-3. Cliquez sur **recherche** ![icône de recherche](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif) \> **estimation des résultats de recherche** pour lancer la recherche et de renvoyer une estimation de la taille totale et le nombre d’éléments renvoyés par la recherche. 
+3. ![Cliquez **** sur l'icône](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif) \> recherche de recherche estimer les **résultats** de recherche pour lancer la recherche et obtenir une estimation de la taille totale et du nombre d'éléments renvoyés par la recherche. 
     
-    Les estimations sont affichées dans le volet détails. Cliquez sur **Actualiser** ![icône Actualiser](media/O365-MDM-Policy-RefreshIcon.gif) pour mettre à jour les informations affichées dans le volet de détails. 
+    Les estimations sont affichées dans le volet d'informations. Cliquez **** ![sur Actualiser](media/O365-MDM-Policy-RefreshIcon.gif) l'icône Actualiser pour mettre à jour les informations affichées dans le volet d'informations. 
     
 4. Pour prévisualiser les résultats une fois la recherche terminée, cliquez sur **Aperçu des résultats de recherche** dans le volet d'informations.
   
@@ -264,15 +264,15 @@ Après avoir créé et démarré la recherche de découverte électronique inalt
   
 ### <a name="create-an-in-place-hold"></a>Créer une conservation inaltérable
 
-1. Dans le CAE, accédez à **gestion de la conformité** \> **In-Place eDiscovery &amp; contenir**.
+1. Dans le centre d'administration Exchange, accédez à **gestion** \> de la conformité ** &amp; conservation inaltérable inaltérable**.
     
-2. Dans la liste affichée, sélectionnez la recherche de découverte électronique locale que vous avez créé à l’étape 3, puis cliquez sur **Modifier** ![icône Modifier](media/O365_MDM_CreatePolicy_EditIcon.gif).
+2. Dans l'affichage liste, sélectionnez la recherche de découverte électronique inaltérable que vous avez créée à l'étape 3, puis **** ![cliquez sur modifier](media/O365_MDM_CreatePolicy_EditIcon.gif)l'icône modifier.
     
 3. Dans la page **Conservation inaltérable**, cochez la case **Mettre en attente le contenu correspondant à la requête de recherche des boîtes aux lettres sélectionnées**, puis sélectionnez l'une des options suivantes : 
     
-  - **Maintenez la touche indéfiniment** - choisissez cette option pour placer les éléments renvoyés par la recherche sur une durée indéterminée. Éléments en attente seront conservés jusqu'à ce que vous supprimez la boîte aux lettres de la recherche ou le supprimez de la recherche. 
+  - **Bloquer** indéfiniment: choisissez cette option pour placer les éléments renvoyés par la recherche sur une conservation indéfinie. Les éléments en attente seront conservés jusqu'à ce que vous supprimiez la boîte aux lettres de la recherche ou que vous supprimiez la recherche. 
     
-  - **Spécifiez le numéro de jours pendant lesquels conserver les éléments par rapport à leur date de réception** : sélectionnez cette option pour contenir les éléments pour une période spécifique. La durée est calculée à partir de la date d’un élément de boîte aux lettres est reçu ou créé. 
+  - **Spécifier le nombre de jours de conservation des éléments par rapport à leur date de réception** : choisissez cette option pour conserver les éléments pour une période spécifique. La durée est calculée à partir de la date de réception ou de création d'un élément de boîte aux lettres. 
     
 4. Cliquez sur **Enregistrer** pour créer la conservation inaltérable et relancer la recherche. 
     
@@ -280,33 +280,33 @@ Après avoir créé et démarré la recherche de découverte électronique inalt
   
 ### <a name="copy-the-search-results"></a>Copier les résultats de recherche
 
-1. Dans le CAE, accédez à **gestion de la conformité** \> **In-Place eDiscovery &amp; contenir**.
+1. Dans le centre d'administration Exchange, accédez à **gestion** \> de la conformité ** &amp; conservation inaltérable inaltérable**.
     
 2. Dans la vue de liste, sélectionnez la recherche de découverte électronique inaltérable que vous avez créée à l'étape 3.
     
-3. Cliquez sur **recherche** ![icône de recherche](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif), puis cliquez sur **Copier les résultats de recherche** dans la liste déroulante. 
+3. Cliquez **** ![sur icône](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif)recherche de recherche, puis cliquez sur **copier les résultats** de la recherche dans la liste déroulante. 
     
 4. Dans **Copier les résultats de recherche**, sélectionnez l'une des options suivantes :
     
-    - **Inclure les éléments impossibles à rechercher** : Activez cette case à cocher pour inclure les éléments de boîte aux lettres qui n’ont pas pu être recherchés (par exemple, les messages avec pièces jointes des types de fichiers qui n’ont pas pu être indexés par la recherche Exchange). 
+    - **Inclure les éléments** impossibles à Rechercher: activez cette case à cocher pour inclure les éléments de boîte aux lettres qui n'ont pas pu être recherchés (par exemple, les messages avec des pièces jointes de types de fichiers qui n'ont pas pu être indexés par Exchange Search). 
     
-    - **Activer la déduplication** - Activez cette case à cocher pour exclure les messages en double. Une seule instance d’un message est copiée dans la boîte aux lettres de découverte. 
+    - **Activer** la déduplication: activez cette case à cocher pour exclure les messages en double. Une seule instance d'un message est copiée dans la boîte aux lettres de découverte. 
     
-    - **Activer la journalisation complète** - Activez cette case à cocher pour inclure un journal complet dans les résultats de recherche. 
+    - **Activer la journalisation complète** : activez cette case à cocher pour inclure un journal complet dans les résultats de la recherche. 
     
-    - **Envoyez-moi un courrier lorsque la copie est terminée** : Activez cette case à cocher pour obtenir une notification par courrier électronique lors de la recherche est terminée. 
+    - **M'envoyer un message une fois la copie terminée** : activez cette case à cocher pour recevoir une notification par courrier électronique lorsque la recherche est terminée. 
     
-    - **Copier les résultats de cette boîte aux lettres de découverte** - cliquez sur **Parcourir** pour sélectionner la boîte aux lettres de découverte où vous souhaitez que les résultats de recherche copiés dans. 
+    - **Copier les résultats vers cette boîte aux lettres de découverte** : cliquez sur **Parcourir** pour sélectionner la boîte aux lettres de découverte dans laquelle vous souhaitez copier les résultats de la recherche. 
     
 5. Cliquez sur **Copier** pour lancer le processus permettant de copier les résultats de la recherche vers la boîte aux lettres de découverte spécifiée. 
     
-6. Cliquez sur **Actualiser** ![icône Actualiser](media/O365-MDM-Policy-RefreshIcon.gif) pour mettre à jour les informations sur l’état de copie est affiché dans le volet détails. 
+6. Cliquez **** ![sur Actualiser](media/O365-MDM-Policy-RefreshIcon.gif) l'icône Actualiser pour mettre à jour les informations sur l'état de copie affiché dans le volet d'informations. 
     
 7. Lorsque la copie est terminée, cliquez sur **Ouvrir** pour ouvrir la boîte aux lettres et afficher les résultats de la recherche. 
   
 ### <a name="export-the-search-results"></a>Exporter les résultats de recherche
 
-1. Dans le CAE, accédez à **gestion de la conformité** \> **In-Place eDiscovery &amp; contenir**.
+1. Dans le centre d'administration Exchange, accédez à **gestion** \> de la conformité ** &amp; conservation inaltérable inaltérable**.
     
 2. Dans l'affichage Liste, sélectionnez la recherche de découverte électronique inaltérable que vous avez créée à l'étape 3, puis cliquez sur **Exporter vers un fichier PST**.
     

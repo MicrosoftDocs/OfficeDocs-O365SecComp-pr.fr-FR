@@ -1,214 +1,214 @@
 ---
-title: Afficher les rapports de sécurité de messagerie de la sécurité &amp; centre de conformité
+title: Afficher les rapports de sécurité de messagerie &amp; dans le centre de sécurité conformité
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 01/07/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection: M365-security-compliance
-description: Découvrez comment trouver et utiliser les rapports de sécurité de messagerie pour votre organisation avec Office 365 pour entreprises. Rapports de sécurité de messagerie sont disponibles dans la sécurité &amp; centre de conformité.
-ms.openlocfilehash: 0c9b4c4c75f1e2996217bea600b9d36145b30339
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation avec Office 365 Enterprise. Les rapports de sécurité de messagerie sont disponibles &amp; dans le centre de sécurité conformité.
+ms.openlocfilehash: 809bfbdfdda8bd1ed9b88c9bca7e9ce14d774868
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995295"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216414"
 ---
-# <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Afficher les rapports de sécurité de messagerie de la sécurité &amp; centre de conformité
+# <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Afficher les rapports de sécurité de messagerie &amp; dans le centre de sécurité conformité
 
-Une série de rapports de sécurité de messagerie sont disponibles dans le [sécurité &amp; centre de conformité](https://security.microsoft.com) pour vous aider à voir la façon dont des fonctionnalités anti-spam et contre les programmes malveillants dans Office 365 sont protège votre organisation. Si vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-these-reports), vous pouvez afficher ces rapports dans la sécurité &amp; centre de conformité en accédant aux **rapports** \> **tableau de bord**.
+Un grand nombre de rapports de sécurité de messagerie sont disponibles dans le [Centre de sécurité &amp; conformité](https://security.microsoft.com) pour vous aider à découvrir comment les fonctionnalités anti-courrier indésirable et anti-programme malveillant dans Office 365 protègent votre organisation. Si vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-these-reports), vous pouvez afficher ces rapports dans le centre &amp; de sécurité conformité en accédant au **tableau de bord** **rapports** \> .
   
-![La sécurité &amp; tableau de bord de centre de conformité peut vous aider à voir où travaille protection contre les menaces avancées](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![Le tableau &amp; de bord du centre de sécurité conformité peut vous aider à déterminer le fonctionnement de la protection avancée contre les menaces](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
-Vos rapports de sécurité de messagerie sont les suivantes :
+Vos rapports de sécurité de messagerie incluent les éléments suivants:
   
-- [Rapport d’état de Protection de menace](view-email-security-reports.md#tps) 
+- [Rapport d'état de protection contre les menaces](view-email-security-reports.md#tps) 
     
-- [Rapport des détections de programmes malveillants](view-email-security-reports.md#maldet)
+- [Rapport de détection des programmes malveillants](view-email-security-reports.md#maldet)
     
-- [Rapport de programmes malveillants supérieure](#top-malware-report)
+- [Premier rapport de programmes malveillants](#top-malware-report)
     
-- [État des expéditeurs et destinataires principaux](view-email-security-reports.md#topsenders)
+- [Rapport des expéditeurs et des destinataires principaux](view-email-security-reports.md#topsenders)
     
-- [Rapport de messagerie usurpation d’identité](#spoof-mail-report)
+- [Courrier inFalsifiable](#spoof-mail-report)
     
-- [Rapport des détections de courrier indésirable](#spam-detections-report)
+- [Rapport de détections de courrier inDésirable](#spam-detections-report)
     
-- [Rapport envoyés et reçus par courrier électronique](view-email-security-reports.md#sentreceivedemail)
+- [Rapport de courrier électronique envoyé et reçu](view-email-security-reports.md#sentreceivedemail)
     
-- [Rapport de messages signalés par les utilisateurs](view-email-security-reports.md#userreported) (nouveau) ! 
+- [Rapport sur les messages signalés par l'utilisateur](view-email-security-reports.md#userreported) (nouveau!) 
     
-## <a name="threat-protection-status-report"></a>Rapport d’état de Protection de menace
+## <a name="threat-protection-status-report"></a>Rapport d'état de protection contre les menaces
 
-Nouveau rapport **d’État de Protection de menace** est un rapport dynamique qui affiche la messagerie qui a été détecté et bloqué par Exchange Online Protection. Ce rapport affiche des informations sur le courrier identifié comme une tentative de hameçonnage ou de programmes malveillants. 
+Le nouveau rapport d' **État de protection contre les menaces** est un rapport intelligent qui affiche des messages malveillants détectés et bloqués par Exchange Online Protection. Ce rapport affiche des informations sur l'e-mail identifié sous forme de programme malveillant ou de tentative de hameçonnage. 
 
 > [!NOTE]
-> Un rapport d’état de Protection de menace est disponible pour les clients qui ont des [Office 365 DAV](office-365-atp.md) ou [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP) ; Toutefois, les informations qui s’affiche dans le rapport d’état de Protection des menaces pour les clients disposant contiendra probablement que les clients EOP peuvent afficher des données différentes. Par exemple, clients EOP peuvent afficher plus d’informations sur les logiciels malveillants détectés dans le courrier électronique, mais pas plus d’informations sur [les fichiers malveillants détecté dans SharePoint Online, OneDrive ou les équipes Microsoft](atp-for-spo-odb-and-teams.md), une fonctionnalité spécifique DAV. ([En savoir plus sur les rapports DAV](view-reports-for-atp.md)).
+> Un rapport d'état de protection contre les menaces est disponible pour les clients qui ont [Office 365 ATP](office-365-atp.md) ou [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EoP); Toutefois, les informations affichées dans le rapport d'état de protection contre les menaces pour les clients ATP contiennent probablement des données différentes de celles que peuvent afficher les clients EOP. Par exemple, les clients EOP peuvent afficher des informations sur les programmes malveillants détectés dans les messages électroniques, mais pas les informations sur les [fichiers malveillants détectés dans SharePoint Online, OneDrive ou Microsoft teams](atp-for-spo-odb-and-teams.md), une capacité spécifique à la protection avancée contre les menaces. ([En savoir plus sur les rapports ATP](view-reports-for-atp.md).)
   
-Pour afficher ce rapport, dans le [sécurité &amp; centre de conformité](https://protection.office.com), accédez aux **rapports** \> **tableau de bord** \> **État de Protection de menace**.
+Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez à **rapports** \> **tableau de bord** \> de **protection contre les menaces**.
   
-![Rapport d’état de Protection de menace](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
+![Rapport d'état de protection contre les menaces](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
-Lorsque vous ouvrez le rapport d’état de Protection de menace, le rapport montre les données pour les sept derniers jours par défaut ; Vous pouvez toutefois, cliquez sur **filtres** et modifier la plage de dates pendant 90 jours de détail. Ce rapport est utile pour l’affichage de l’efficacité et l’impact des fonctionnalités d’Exchange Online Protection de votre organisation et pour l’analyse des tendances à long terme. 
+Lorsque vous ouvrez pour la première fois le rapport d'état de protection contre les menaces, le rapport affiche les données des sept derniers jours par défaut; Toutefois, vous pouvez cliquer sur **filtres** et modifier la plage de dates pour un maximum de 90 jours de détail. Ce rapport est utile pour l'affichage de l'efficacité et de l'impact des fonctionnalités Exchange Online Protection de votre organisation et pour des tendances à long terme. 
   
-![Filtres du rapport d’état de la Protection des menaces](media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
+![Filtres de rapport d'état de protection contre les menaces](media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
   
-Vous pouvez également choisir si, pour afficher les données pour le courrier électronique identifié comme malveillants, e-mail identifié comme un hameçonnage tente ou courrier identifié comme contenant des programmes malveillants.
+Vous pouvez également choisir d'afficher les données pour les e-mails identifiés comme malveillants, les e-mails identifiés comme des tentatives de hameçonnage ou par e-mail identifiés comme contenant des programmes malveillants.
   
-![Options d’affichage du rapport état de la Protection des menaces](media/d429ecd7-cb7a-4c99-8d27-79a2832cf467.png)
+![Options d'affichage des rapports d'état de protection contre les menaces](media/d429ecd7-cb7a-4c99-8d27-79a2832cf467.png)
   
-## <a name="malware-detections-report"></a>Rapport des détections de programmes malveillants
+## <a name="malware-detections-report"></a>Rapport de détection des programmes malveillants
 
-Le rapport des **Détections de programmes malveillants** indique le nombre de messages entrant et sortant ont été détecté comme contenant des programmes malveillants de votre organisation. 
+Le rapport détections de **programmes malveillants** indique le nombre de messages entrants et sortants détectés comme contenant des programmes malveillants pour votre organisation. 
   
-Pour afficher ce rapport, dans le [sécurité &amp; centre de conformité](https://protection.office.com), accédez aux **rapports** \> **tableau de bord** \> **Détections de programmes malveillants**.
+Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez à **rapports** \> **tableau de bord** \> des **programmes malveillants**.
   
-![Exemple de rapport Détections de programmes malveillants](media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
+![Exemple de rapport de détection de programmes malveillants](media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
   
-Similaire à d’autres rapports, comme le rapport d’état de Protection de menace, le rapport affiche données pour les sept derniers jours par défaut. Toutefois, vous pouvez choisir de **filtres** pour modifier la plage de dates. 
+À l'inStar d'autres rapports, comme le rapport d'état de protection contre les menaces, le rapport affiche les données des sept derniers jours par défaut. Toutefois, vous pouvez choisir des **filtres** pour modifier la plage de dates. 
   
-## <a name="top-malware-report"></a>Rapport de programmes malveillants supérieure
+## <a name="top-malware-report"></a>Premier rapport de programmes malveillants
 
-Le rapport de **Programmes malveillants haut** montre les différents types de programme malveillant détecté par Exchange Online. 
+Le rapport des **principaux programmes malveillants** indique les différents types de programmes malveillants détectés par Exchange Online. 
   
-Pour afficher ce rapport, dans le [sécurité &amp; centre de conformité](https://protection.office.com), accédez aux **rapports** \> **tableau de bord** \> **Malveillant haut**.
+Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez à **rapports** \> **tableau de bord** \> des **principaux programmes malveillants**.
   
-![SCC - EOP principaux programmes malveillants](media/763330b3-f56e-4ba4-b0bb-051500ae950a.png)
+![Programmes malveillants SCC-EOP principaux](media/763330b3-f56e-4ba4-b0bb-051500ae950a.png)
   
-Lorsque vous placez sur un coin du graphique en secteurs, vous pouvez voir le nom d’un type de programmes malveillants et le nombre de messages a été détecté comme ayant que les logiciels malveillants.
+Lorsque vous placez le curseur de la souris sur un coin du graphique en secteurs, vous pouvez voir le nom d'un type de programme malveillant et le nombre de messages détectés comme présentant ce programme malveillant.
   
-Cliquez (ou appuyez) le rapport pour l’ouvrir dans une nouvelle fenêtre de navigateur, où vous pouvez obtenir une vue plus détaillée de l’état.
+Cliquez (ou appuyez) sur le rapport pour l'ouvrir dans une nouvelle fenêtre de navigateur, dans laquelle vous pouvez obtenir une vue plus détaillée du rapport.
   
-![Ce rapport présente les principaux programmes malveillants détectés pour votre organisation](media/3fded224-fb31-4713-86f2-8afce5ce2991.png)
+![Ce rapport présente les principaux programmes malveillants détectés pour votre organisation.](media/3fded224-fb31-4713-86f2-8afce5ce2991.png)
   
-Sous le graphique, vous verrez une liste de programmes malveillants détectés et le nombre de messages a été détecté comme ayant que les logiciels malveillants.
+Sous le graphique, vous verrez une liste de programmes malveillants détectés et le nombre de messages détectés comme présentant ce programme malveillant.
   
-## <a name="top-senders-and-recipients-report"></a>État des expéditeurs et destinataires principaux
+## <a name="top-senders-and-recipients-report"></a>Rapport des expéditeurs et des destinataires principaux
 
-Le rapport **principaux expéditeurs et destinataires** est un graphique en secteurs vos principaux expéditeurs d’e-mails. 
+Le rapport des **expéditeurs et des destinataires principaux** est un graphique en secteurs illustrant les principaux expéditeurs de vos courriers électroniques. 
   
-Pour afficher ce rapport, dans le [sécurité &amp; centre de conformité](https://protection.office.com), accédez aux **rapports** \> **tableau de bord** \> **principaux expéditeurs et destinataires**.
+Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez à **rapports** \> **tableau de bord** \> **des expéditeurs et destinataires principaux**.
   
-![Pour afficher ce rapport, de la sécurité &amp; centre de conformité, accédez aux rapports \> tableau de bord \> principaux expéditeurs et destinataires](media/b5506b5c-2420-4a5a-9ea3-d654294ac838.png)
+![Pour afficher ce rapport, dans le centre &amp; de sécurité conformité, accédez à \> rapports \> tableau de bord des expéditeurs et destinataires principaux](media/b5506b5c-2420-4a5a-9ea3-d654294ac838.png)
   
-Lorsque vous placez sur un coin du graphique en secteurs, vous pouvez voir un nombre de messages envoyés ou reçus.
+Lorsque vous placez le curseur de la souris sur un coin du graphique en secteurs, vous pouvez voir le nombre de messages envoyés ou reçus.
   
-Cliquez (ou appuyez) le rapport pour l’ouvrir dans une nouvelle fenêtre de navigateur, où vous pouvez obtenir une vue plus détaillée de l’état.
+Cliquez (ou appuyez) sur le rapport pour l'ouvrir dans une nouvelle fenêtre de navigateur, dans laquelle vous pouvez obtenir une vue plus détaillée du rapport.
   
-Utilisez la liste **Afficher les données de** choisir d’afficher les données pour émetteurs, destinataires, destinataires du courrier indésirable et destinataires des programmes malveillants. Vous pouvez également voir qui a reçu le programme malveillant détecté par la protection contre les menaces avancées. 
+Utilisez la liste **afficher les données pour** déterminer si vous souhaitez afficher les données des destinataires, des expéditeurs, des destinataires de courrier indésirable et des programmes malveillants les plus fréquents. Vous pouvez également consulter la personne qui a reçu un programme malveillant détecté par la protection avancée contre les menaces. 
   
-![Utilisez la liste Afficher les données pour afficher des informations spécifiques](media/bd91449f-7d42-4749-8666-7b44044049b8.png)
+![Utiliser la liste afficher les données pour afficher des informations spécifiques](media/bd91449f-7d42-4749-8666-7b44044049b8.png)
   
-Sous le graphique, vous verrez qui les expéditeurs de courriers supérieure ou destinataires ont été, ainsi que d’un nombre de messages envoyés ou reçus pour la période de temps donnée.
+Sous le graphique, vous verrez les expéditeurs et destinataires de courriers les plus fréquents, ainsi que le nombre de messages envoyés ou reçus pendant la période donnée.
   
-## <a name="spoof-mail-report"></a>Rapport de messagerie usurpation d’identité
+## <a name="spoof-mail-report"></a>Courrier inFalsifiable
 
-Le rapport de **Messagerie de l’usurpation d’identité** indique le nombre de messages messagerie usurpation d’identité ont été détecté et parmi ceux-ci, celles qui ont été considérés comme étant « bon » (mail usurpation d’identité pour des raisons professionnelles légitimes). 
+Le rapport de **courrier** infalsifiable indique le nombre de messages d'usurpation d'identité détectés, et ceux qui ont été considérés comme «corrects» (courrier infalsifiable pour des raisons professionnelles légitimes). 
   
-Pour afficher ce rapport, dans le [sécurité &amp; centre de conformité](https://protection.office.com), accédez aux **rapports** \> **tableau de bord** \> **Messagerie usurpation d’identité**.
+Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez à rapports **tableau de bord** \> **** des **rapports** \> .
   
-![Pour afficher ce rapport, de la sécurité &amp; centre de conformité, accédez aux rapports \> tableau de bord \> messagerie usurpation d’identité](media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
+![Pour afficher ce rapport, dans le centre &amp; de sécurité conformité, accédez à \> rapports \> tableau de bord d'usurpation de courrier](media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
   
-Lorsque vous placez sur un jour dans le graphique, vous pouvez voir le nombre de messages messagerie usurpation d’identité fournie par le biais de.
+Lorsque vous placez le curseur de la souris sur un jour dans le graphique, vous pouvez voir le nombre de messages d'usurpation d'adresse.
   
-Cliquez (ou appuyez) le rapport pour l’ouvrir dans une nouvelle fenêtre de navigateur, où vous pouvez obtenir une vue plus détaillée de l’état.
+Cliquez (ou appuyez) sur le rapport pour l'ouvrir dans une nouvelle fenêtre de navigateur, dans laquelle vous pouvez obtenir une vue plus détaillée du rapport.
   
-## <a name="spam-detections-report"></a>Rapport des détections de courrier indésirable
+## <a name="spam-detections-report"></a>Rapport de détections de courrier inDésirable
 
-Le rapport de **Détections de courrier indésirable** présente tout le contenu du courrier indésirable bloqué par Exchange Online. 
+Le rapport détections du **courrier** indésirable affiche tout le contenu du courrier indésirable bloqué par Exchange Online. 
   
-Pour afficher ce rapport, dans le [sécurité &amp; centre de conformité](https://protection.office.com), accédez aux **rapports** \> **tableau de bord** \> **Détections de courrier indésirable**.
+Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez à **rapports** \> **tableau de bord** \> de **courrier**indésirable.
   
-![Pour afficher ce rapport, de la sécurité &amp; centre de conformité, accédez aux rapports \> tableau de bord \> détections de courrier indésirable d’EOP](media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
+![Pour afficher ce rapport, dans le centre &amp; de sécurité conformité, accédez à \> rapports \> tableau de bord de courriers indésirables EOP](media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
   
-Lorsque vous placez sur un jour dans le graphique, vous pouvez voir le nombre d’éléments ont été bloqué dans la journée, ainsi que la manière dont les éléments sont classés. Par exemple, vous pouvez voir le nombre de messages de courrier indésirable ont été filtré, et le nombre d’éléments provenant d’une adresse IP (Internet Protocol) bloqués.
+Lorsque vous placez le curseur de la souris sur un jour du graphique, vous pouvez voir le nombre d'éléments qui ont été bloqués cette journée, ainsi que la catégorie de ces éléments. Par exemple, vous pouvez voir le nombre de messages indésirables filtrés et le nombre d'éléments provenant d'une adresse IP (Internet Protocol) bloquée.
   
-Cliquez (ou appuyez) le rapport pour l’ouvrir dans une nouvelle fenêtre de navigateur, où vous pouvez obtenir une vue plus détaillée de l’état.
+Cliquez (ou appuyez) sur le rapport pour l'ouvrir dans une nouvelle fenêtre de navigateur, dans laquelle vous pouvez obtenir une vue plus détaillée du rapport.
   
-![Le rapport des détections de courrier indésirable indique le nombre de messages de courrier indésirable ont été bloqué ou filtré](media/370ec67d-eb30-4863-bfcf-68a41be02295.png)
+![Le rapport des détections de courrier indésirable indique le nombre de messages indésirables bloqués ou filtrés](media/370ec67d-eb30-4863-bfcf-68a41be02295.png)
   
-Sous le graphique, vous verrez une liste d’éléments de courrier indésirable détectés. Sélectionnez un élément pour afficher des informations supplémentaires, telles que si l’élément de courrier indésirable a été entrants ou sortants, son ID de message et son destinataire.
+Sous le graphique, vous verrez une liste d'éléments de courrier indésirable détectés. Sélectionnez un élément pour afficher des informations supplémentaires, par exemple si l'élément de courrier indésirable a été entrant ou sortant, son ID de message et son destinataire.
   
-## <a name="sent-and-received-email-report"></a>Rapport envoyés et reçus par courrier électronique
+## <a name="sent-and-received-email-report"></a>Rapport de courrier électronique envoyé et reçu
 
-Le rapport **envoyé et le courrier entrant** est un rapport dynamique qui affiche des informations sur les e-mails entrants et sortants, y compris les détections de courrier indésirable, les logiciels malveillants et e-mail identifié comme « bon ». 
+Le rapport de **courrier électronique envoyé et reçu** est un rapport intelligent qui affiche des informations sur les messages entrants et sortants, notamment les détections de courrier indésirable, les programmes malveillants et la messagerie électronique identifiés comme étant «en qualité». 
   
-Pour afficher ce rapport, dans le [sécurité &amp; centre de conformité](https://protection.office.com), accédez aux **rapports** \> **tableau de bord** \> **envoyés et le courrier entrant**.
+Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez à **rapports** \> **tableau de bord** \> des **messages envoyés et reçus**.
   
-![Pour afficher ce rapport, de la sécurité &amp; centre de conformité, accédez aux rapports \> tableau de bord \> envoyés et le courrier entrant](media/0e710ed0-1b0e-4dac-8796-94a01a710f3a.png)
+![Pour afficher ce rapport, dans le centre &amp; de sécurité conformité, accédez à \> rapports \> tableau de bord des messages envoyés et reçus](media/0e710ed0-1b0e-4dac-8796-94a01a710f3a.png)
   
-Lorsque vous placez sur un jour dans le graphique, vous pouvez voir le nombre de messages est arrivé, et comment ces messages sont classés. Par exemple, vous pouvez voir le nombre de messages qui ont été détecté comme contenant des programmes malveillants, et combien ont été identifiés comme courrier indésirable.
+Lorsque vous placez le curseur de la souris sur un jour dans le graphique, vous pouvez voir le nombre de messages qui ont été reçus et la façon dont ces messages sont catégorisés. Par exemple, vous pouvez voir le nombre de messages détectés comme contenant des programmes malveillants et le nombre de messages identifiés comme courrier indésirable.
   
-Cliquez (ou appuyez) le rapport pour l’ouvrir dans une nouvelle fenêtre de navigateur, où vous pouvez obtenir une vue plus détaillée de l’état.
+Cliquez (ou appuyez) sur le rapport pour l'ouvrir dans une nouvelle fenêtre de navigateur, dans laquelle vous pouvez obtenir une vue plus détaillée du rapport.
   
-Vous pouvez utiliser la liste **décomposer par** pour afficher les informations par type ou par le sens (entrant et sortant). 
+Vous pouvez utiliser la liste **décomposer par** pour afficher les informations par type ou par direction (entrante et sortante). 
   
-![Utilisez la liste arrêt vers le bas par pour afficher les informations par type ou la direction](media/a5b30c94-d75f-4bfc-851a-cb155685b177.png)
+![Utiliser la liste déComposer par pour afficher les informations par type ou sens](media/a5b30c94-d75f-4bfc-851a-cb155685b177.png)
   
-Sous le graphique, vous verrez une liste de catégories de messagerie, tels que **GoodMail**, **SpamContentFiltered**et ainsi de suite. Sélectionnez une catégorie pour afficher des informations supplémentaires, telles que les actions qui ont été prises pour les logiciels malveillants et si la messagerie est entrant ou sortant.
+Sous le graphique, vous verrez une liste de catégories de courrier, telle que **GoodMail**, **SpamContentFiltered**, etc. Sélectionnez une catégorie pour afficher des informations supplémentaires, telles que des actions qui ont été effectuées pour les programmes malveillants, et si le courrier électronique a été entrant ou sortant.
   
-![Ce rapport vous informe des autres détections de message, anti-spam et contre les programmes malveillants](media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
+![Ce rapport vous indique le blocage des programmes malveillants, le courrier indésirable et les autres détections de messages.](media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
   
-## <a name="user-reported-messages-report-new"></a>Rapport de messages signalés par les utilisateurs (nouveau) !
+## <a name="user-reported-messages-report-new"></a>Rapport sur les messages signalés par l'utilisateur (New!)
 
-Le rapport **messages signalés par les utilisateurs** présente des informations sur les messages électroniques que les utilisateurs ont signalé comme indésirable, les tentatives de hameçonnage ou bon courrier électronique à l’aide [complément de Message de rapport](enable-the-report-message-add-in.md).
+Le rapport **messages signalés** par l'utilisateur affiche des informations sur les messages électroniques que les utilisateurs ont signalés comme courriers indésirables, tentatives de hameçonnage ou courrier électronique à l'aide du [complément de message de rapport](enable-the-report-message-add-in.md).
   
-Plus d’informations sont disponibles pour chaque message, y compris le motif de livraison, une telle exception de stratégie de courrier indésirable ou règle de flux de messagerie configurées pour votre organisation. Pour afficher plus d’informations, sélectionnez un élément dans la liste des rapports à l’utilisateur, puis afficher les informations sur les onglets **Résumé** et les **Détails** . 
+Des détails sont disponibles pour chaque message, notamment la raison de remise, une exception de stratégie de courrier indésirable ou une règle de flux de messagerie configurée pour votre organisation. Pour afficher les détails, sélectionnez un élément dans la liste rapports utilisateur, puis affichez les informations sous les onglets **Résumé** et **Détails** . 
   
-![Le rapport Messages User-Reported indique aux utilisateurs de messages marquées comme indésirable, pas indésirable ou hameçonnage tentatives.](media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
+![Le rapport messages signalés par l'utilisateur affiche les messages marqués comme courriers indésirables, non légitimes ou par tentatives de hameçonnage.](media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
   
-Pour afficher ce rapport, dans le [sécurité &amp; centre de conformité](https://protection.office.com), effectuez l’une des opérations suivantes :
+Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https://protection.office.com), effectuez l'une des opérations suivantes:
   
-- Accédez à **gestion de menace** \> **tableau de bord** \> **messages signalés par les utilisateurs**.
+- Accédez au **** \> **tableau de bord** \> gestion **des menaces-messages signalés par l'utilisateur**.
     
-- Accédez à **gestion de menace** \> **révision** \> **messages signalés par les utilisateurs**.
+- Accédez à **** \> **examen** \> **des menaces-messages signalés par l'utilisateur**.
     
-![Dans la sécurité &amp; centre de conformité, cliquez sur gestion des menaces \> révision \> messages indiqué par utilisateur](media/e372c57c-1414-4616-957b-bc933b8c8711.png)
+![Dans le centre &amp; de sécurité conformité, choisissez gestion \> des \> menaces-vérifier les messages signalés par l'utilisateur](media/e372c57c-1414-4616-957b-bc933b8c8711.png)
   
 > [!IMPORTANT]
-> Dans la commande pour le rapport messages signalés par les utilisateurs de fonctionner correctement, **l’enregistrement d’audit doit être activée** pour votre environnement Office 365. Cela s’effectue généralement par toute personne ayant le rôle journaux d’Audit affecté dans Exchange Online. Pour plus d’informations, voir [recherche des journaux d’audit d’activer Office 365 activé ou désactivé](turn-audit-log-search-on-or-off.md). 
+> Pour que le rapport des messages signalés par l'utilisateur fonctionne correctement, la **journalisation d'audit doit être activée** pour votre environnement Office 365. Cette opération est généralement réalisée par une personne disposant du rôle journaux d'audit dans Exchange Online. Pour plus d'informations, voir [activer ou désactiver la recherche dans le journal d'audit Office 365](turn-audit-log-search-on-or-off.md). 
   
-## <a name="what-permissions-are-needed-to-view-these-reports"></a>Les autorisations requises pour afficher ces rapports ?
+## <a name="what-permissions-are-needed-to-view-these-reports"></a>Quelles sont les autorisations nécessaires pour afficher ces rapports?
 
-Pour pouvoir afficher et utiliser les rapports décrits dans cet article, **vous devez disposer d’un rôle approprié attribué à la sécurité &amp; centre de conformité et le centre d’administration Exchange**.
+Pour afficher et utiliser les rapports décrits dans cet article, **vous devez disposer d'un rôle approprié pour le centre de sécurité &amp; et le centre d'administration Exchange**.
 
-- Pour la sécurité &amp; centre de conformité, vous devez disposer d’un des rôles suivants est attribué :
+- Pour le centre &amp; de sécurité conformité, vous devez disposer de l'un des rôles suivants:
     - Gestion de l’organisation
-    - Administrateur de la sécurité (il peut être assigné dans le centre d’administration Azure Active Directory ([https://aad.portal.azure.com](https://aad.portal.azure.com))
+    - Administrateur de la sécurité (qui peut être affecté dans le centre d'administration Azure[https://aad.portal.azure.com](https://aad.portal.azure.com)Active Directory ()
     - Lecteur de sécurité
 
-- Pour Exchange Online, vous devez disposer d’un des rôles suivants est attribué centre d’administration Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) ou à l’aide des applets de commande PowerShell (voir [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) :
+- Pour Exchange Online, vous devez disposer de l'un des rôles suivants, qui est affecté dans le centre[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)d'administration Exchange () ou avec des applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)):
     - Gestion de l’organisation
     - Gestion de l’organisation en affichage seul
     - Rôle Destinataires en affichage uniquement
     - Gestion de la conformité
 
-Pour plus d’informations, voir les ressources suivantes :
+Pour en savoir plus, consultez les ressources suivantes:
 
-- [Autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md)
+- [Autorisations dans le centre de sécurité &amp; conformité Office 365](permissions-in-the-security-and-compliance-center.md)
 
 - [Autorisations des fonctionnalités dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
    
    
-## <a name="what-if-the-reports-arent-showing-data"></a>Que se passe-t-il si les rapports ne sont pas affichant les données ?
+## <a name="what-if-the-reports-arent-showing-data"></a>Qu'en est-il si les rapports n'affichent pas de données?
 
-Si vous ne voyez pas les données dans vos rapports, vérifiez que vos stratégies sont correctement configurés. Pour plus d’informations, consultez la rubrique [protection contre le courrier indésirable et anti-programme malveillant dans Office 365](anti-spam-and-anti-malware-protection.md).
+Si vous ne voyez pas de données dans vos rapports, vérifiez que vos stratégies sont correctement configurées. Pour plus d'informations, consultez la rubrique protection contre le [courrier indésirable et les programmes malveillants dans Office 365](anti-spam-and-anti-malware-protection.md).
   
 ## <a name="related-topics"></a>Voir aussi
 
 [Protection contre le courrier indésirable pour Office 365](anti-spam-protection.md)
   
-[Rapports et vues d’ensemble de sécurité Office 365 &amp; centre de conformité](reports-and-insights-in-security-and-compliance.md)
+[Rapports et informations dans le centre de sécurité &amp; conformité Office 365](reports-and-insights-in-security-and-compliance.md)
   
-[Créer une planification pour un état de la sécurité &amp; centre de conformité](create-a-schedule-for-a-report.md)
+[Créer une planification pour un rapport dans le centre &amp; de sécurité conformité](create-a-schedule-for-a-report.md)
   
-[Configurer et télécharger un rapport personnalisé dans la sécurité &amp; centre de conformité](set-up-and-download-a-custom-report.md)
+[Configurer et télécharger un rapport personnalisé dans le centre de &amp; sécurité conformité](set-up-and-download-a-custom-report.md)
   
 
