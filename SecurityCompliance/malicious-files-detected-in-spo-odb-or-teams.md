@@ -1,63 +1,63 @@
 ---
-title: Afficher des informations sur les fichiers malveillants détecté dans SharePoint, OneDrive ou Microsoft Teams
+title: Afficher des informations sur les fichiers malveillants détectés dans SharePoint, OneDrive ou Microsoft teams
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
-description: Découvrez où aller pour afficher des informations sur les fichiers malveillants détecté dans SharePoint, OneDrive ou équipes et comment effectuer une action sur ces fichiers.
-ms.openlocfilehash: 435e1f449003f670f698c4e6813e18f5e83c498d
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: Découvrez où aller pour afficher des informations sur les fichiers malveillants détectés dans SharePoint, OneDrive ou teams et comment effectuer des actions sur ces fichiers.
+ms.openlocfilehash: 6f44cd82241b4cd883fbd80e1b1dc2ea115e10af
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014796"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219564"
 ---
-# <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a><span data-ttu-id="40dfa-103">Afficher des informations sur les fichiers malveillants détecté dans SharePoint, OneDrive ou Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="40dfa-103">View information about malicious files detected in SharePoint, OneDrive, or Microsoft Teams</span></span>
+# <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a><span data-ttu-id="3e34b-103">Afficher des informations sur les fichiers malveillants détectés dans SharePoint, OneDrive ou Microsoft teams</span><span class="sxs-lookup"><span data-stu-id="3e34b-103">View information about malicious files detected in SharePoint, OneDrive, or Microsoft Teams</span></span>
 
-<span data-ttu-id="40dfa-p101">[Office 365 DAV pour SharePoint, OneDrive et les équipes Microsoft](atp-for-spo-odb-and-teams.md) protège votre organisation à partir des fichiers malveillants dans les bibliothèques de documents et des sites d’équipe. Lorsqu’un fichier malveillant est détecté, ce fichier est bloqué afin qu’aucun participant ne peut ouvrir, copier, déplacer ou partager jusqu'à ce que les autres actions effectuées par l’équipe de sécurité de l’organisation. Lisez cet article pour savoir comment afficher des informations sur les fichiers détectés et les actions à effectuer.</span><span class="sxs-lookup"><span data-stu-id="40dfa-p101">[Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md) protects your organization from malicious files in document libraries and team sites. When a malicious file is detected, that file is blocked so that no one can open, copy, move, or share it until further actions are taken by the organization's security team. Read this article to learn how to view information about detected files and what actions to take.</span></span> 
+<span data-ttu-id="3e34b-p101">[Office 365 ATP pour SharePoint, OneDrive et Microsoft](atp-for-spo-odb-and-teams.md) teams protège votre organisation contre les fichiers malveillants dans les bibliothèques de documents et les sites d'équipe. Lorsqu'un fichier malveillant est détecté, ce fichier est bloqué afin que personne ne puisse l'ouvrir, le copier, le déplacer ou le partager tant que d'autres actions ne sont pas effectuées par l'équipe de sécurité de l'organisation. Lisez cet article pour savoir comment afficher des informations sur les fichiers détectés et connaître les actions à effectuer.</span><span class="sxs-lookup"><span data-stu-id="3e34b-p101">[Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md) protects your organization from malicious files in document libraries and team sites. When a malicious file is detected, that file is blocked so that no one can open, copy, move, or share it until further actions are taken by the organization's security team. Read this article to learn how to view information about detected files and what actions to take.</span></span> 
 
-<span data-ttu-id="40dfa-107">Afin d’effectuer les tâches décrites dans cet article, vous devez disposer nécessaires [les autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md).</span><span class="sxs-lookup"><span data-stu-id="40dfa-107">In order to perform the tasks described in this article, you must have the necessary [permissions for the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span> 
+<span data-ttu-id="3e34b-107">Pour effectuer les tâches décrites dans cet article, vous devez disposer des [autorisations nécessaires pour le centre de &amp; sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md).</span><span class="sxs-lookup"><span data-stu-id="3e34b-107">In order to perform the tasks described in this article, you must have the necessary [permissions for the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span> 
   
-## <a name="view-reports-with-information-about-detected-files"></a><span data-ttu-id="40dfa-108">Afficher les rapports avec des informations sur les fichiers détectés</span><span class="sxs-lookup"><span data-stu-id="40dfa-108">View reports with information about detected files</span></span>
+## <a name="view-reports-with-information-about-detected-files"></a><span data-ttu-id="3e34b-108">Affichage des rapports avec des informations sur les fichiers détectés</span><span class="sxs-lookup"><span data-stu-id="3e34b-108">View reports with information about detected files</span></span>
 
-<span data-ttu-id="40dfa-109">Pour afficher l’état et des informations détaillées sur les fichiers qui ont été détectés par Office 365 DAV, vous pouvez utiliser le rapport d’état de Protection de menace.</span><span class="sxs-lookup"><span data-stu-id="40dfa-109">To view status and detailed information about files that were detected by Office 365 ATP, you can use the Threat Protection Status report.</span></span>
+<span data-ttu-id="3e34b-109">Pour afficher l'État et des informations détaillées sur les fichiers qui ont été détectés par la protection avancée contre les menaces d'Office 365, vous pouvez utiliser le rapport d'état de protection contre les menaces.</span><span class="sxs-lookup"><span data-stu-id="3e34b-109">To view status and detailed information about files that were detected by Office 365 ATP, you can use the Threat Protection Status report.</span></span>
   
-1. <span data-ttu-id="40dfa-110">Dans la [Office 365 sécurité &amp; centre de conformité](https://protection.office.com), cliquez sur **rapports** \> **tableau de bord** \> **État de Protection de menace**.</span><span class="sxs-lookup"><span data-stu-id="40dfa-110">In the [Office 365 Security &amp; Compliance Center](https://protection.office.com), choose **Reports** \> **Dashboard** \> **Threat Protection Status**.</span></span>
+1. <span data-ttu-id="3e34b-110">dans le [centre de sécurité &amp; conformité Office 365](https://protection.office.com), choisissez **rapports** \> **tableau de bord** \> de **Protection contre les menaces**.</span><span class="sxs-lookup"><span data-stu-id="3e34b-110">In the [Office 365 Security &amp; Compliance Center](https://protection.office.com), choose **Reports** \> **Dashboard** \> **Threat Protection Status**.</span></span>
     
-2. <span data-ttu-id="40dfa-111">Dans le coin supérieur droit du rapport, cliquez sur **Afficher la table de détails**.</span><span class="sxs-lookup"><span data-stu-id="40dfa-111">In the upper right corner of the report, choose **View details table**.</span></span>
+2. <span data-ttu-id="3e34b-111">Dans le coin supérieur droit du rapport, choisissez **afficher le tableau des détails**.</span><span class="sxs-lookup"><span data-stu-id="3e34b-111">In the upper right corner of the report, choose **View details table**.</span></span>
     
-3. <span data-ttu-id="40dfa-112">Afficher la liste des fichiers qui ont été détectés dans le rapport.</span><span class="sxs-lookup"><span data-stu-id="40dfa-112">View the list of files that were detected in the report.</span></span>
+3. <span data-ttu-id="3e34b-112">Affichez la liste des fichiers détectés dans le rapport.</span><span class="sxs-lookup"><span data-stu-id="3e34b-112">View the list of files that were detected in the report.</span></span>
     
-4. <span data-ttu-id="40dfa-113">Sélectionnez un élément dans la liste pour afficher des informations détaillées, y compris les actions effectuées, le nom de fichier, le chemin d’accès du fichier et plus.</span><span class="sxs-lookup"><span data-stu-id="40dfa-113">Select an item in the list to view detailed information, including actions taken, the file name, the file path, and more.</span></span>
+4. <span data-ttu-id="3e34b-113">Sélectionnez un élément dans la liste pour afficher des informations détaillées, notamment les actions prises, le nom de fichier, le chemin d'accès au fichier, et bien plus encore.</span><span class="sxs-lookup"><span data-stu-id="3e34b-113">Select an item in the list to view detailed information, including actions taken, the file name, the file path, and more.</span></span>
     
-5. <span data-ttu-id="40dfa-114">Sélectionnez l’onglet **Analyse avancée** pour afficher des informations, telles qu’observée comportement et analyse les détails.</span><span class="sxs-lookup"><span data-stu-id="40dfa-114">Choose the **Advanced Analysis** tab to view information, such as observed behavior and analysis details.</span></span> 
+5. <span data-ttu-id="3e34b-114">Choisissez l'onglet **analyse avancée** pour afficher des informations, telles que le comportement observé et les détails de l'analyse.</span><span class="sxs-lookup"><span data-stu-id="3e34b-114">Choose the **Advanced Analysis** tab to view information, such as observed behavior and analysis details.</span></span> 
   
-## <a name="view-and-take-action-on-files-in-quarantine"></a><span data-ttu-id="40dfa-115">Afficher et agir sur les fichiers de mise en quarantaine</span><span class="sxs-lookup"><span data-stu-id="40dfa-115">View and take action on files in quarantine</span></span>
+## <a name="view-and-take-action-on-files-in-quarantine"></a><span data-ttu-id="3e34b-115">Afficher et effectuer des actions sur les fichiers en quarantaine</span><span class="sxs-lookup"><span data-stu-id="3e34b-115">View and take action on files in quarantine</span></span>
 
-1. <span data-ttu-id="40dfa-116">De sécurité Office 365 &amp; centre de conformité, cliquez sur **Gestion des menaces** \> **révision** \> **mise en quarantaine**.</span><span class="sxs-lookup"><span data-stu-id="40dfa-116">In the Office 365 Security &amp; Compliance Center, choose **Threat management** \> **Review** \> **Quarantine**.</span></span>
+1. <span data-ttu-id="3e34b-116">dans le centre de sécurité &amp; conformité d'Office 365, sélectionnez **gestion** \> des menaces- **vérification** \> de la **mise en quarantaine**.</span><span class="sxs-lookup"><span data-stu-id="3e34b-116">In the Office 365 Security &amp; Compliance Center, choose **Threat management** \> **Review** \> **Quarantine**.</span></span>
     
-2. <span data-ttu-id="40dfa-117">Dans le coin supérieur gauche, modifiez le filtre de **courrier électronique** au **contenu**.</span><span class="sxs-lookup"><span data-stu-id="40dfa-117">In the upper left corner, change the filter from **Email** to **Content**.</span></span>
+2. <span data-ttu-id="3e34b-117">Dans le coin supérieur gauche, modifiez le filtre de **courrier électronique** en **contenu**.</span><span class="sxs-lookup"><span data-stu-id="3e34b-117">In the upper left corner, change the filter from **Email** to **Content**.</span></span>
     
-3. <span data-ttu-id="40dfa-118">Sélectionnez un élément dans la liste pour afficher des informations détaillées, y compris l’URL du fichier.</span><span class="sxs-lookup"><span data-stu-id="40dfa-118">Select an item in the list to view detailed information, including the file's URL.</span></span>
+3. <span data-ttu-id="3e34b-118">Sélectionnez un élément dans la liste pour afficher des informations détaillées, y compris l'URL du fichier.</span><span class="sxs-lookup"><span data-stu-id="3e34b-118">Select an item in the list to view detailed information, including the file's URL.</span></span>
     
-4. <span data-ttu-id="40dfa-119">Choisissez une action disponible.</span><span class="sxs-lookup"><span data-stu-id="40dfa-119">Choose an available action.</span></span>
+4. <span data-ttu-id="3e34b-119">Choisissez une action disponible.</span><span class="sxs-lookup"><span data-stu-id="3e34b-119">Choose an available action.</span></span>
     
-  - <span data-ttu-id="40dfa-120">Choisissez **version &amp; rapport** à débloquer le fichier.</span><span class="sxs-lookup"><span data-stu-id="40dfa-120">Choose **Release &amp; report** to unblock the file.</span></span> 
+  - <span data-ttu-id="3e34b-120">Choisissez **Release &amp; Report** pour débloquer le fichier.</span><span class="sxs-lookup"><span data-stu-id="3e34b-120">Choose **Release &amp; report** to unblock the file.</span></span> 
     
-    <span data-ttu-id="40dfa-121">Sélectionnez **Envoyer le rapport à Microsoft** à enregistrer le fichier comme un faux positif dans Microsoft.</span><span class="sxs-lookup"><span data-stu-id="40dfa-121">Select **Send report to Microsoft** to report the file as a false positive to Microsoft.</span></span> 
+    <span data-ttu-id="3e34b-121">Sélectionnez **Envoyer le rapport à Microsoft** pour signaler le fichier comme faux positif à Microsoft.</span><span class="sxs-lookup"><span data-stu-id="3e34b-121">Select **Send report to Microsoft** to report the file as a false positive to Microsoft.</span></span> 
     
-  - <span data-ttu-id="40dfa-122">Cliquez sur **Télécharger le fichier** à étudier davantage le fichier.</span><span class="sxs-lookup"><span data-stu-id="40dfa-122">Choose **Download file** to investigate the file further.</span></span> 
+  - <span data-ttu-id="3e34b-122">Choisissez **Télécharger un fichier** pour rechercher plus d'renseignements sur le fichier.</span><span class="sxs-lookup"><span data-stu-id="3e34b-122">Choose **Download file** to investigate the file further.</span></span> 
     
-  - <span data-ttu-id="40dfa-p102">Cliquez sur **Supprimer** pour supprimer le fichier de la liste des éléments mis en quarantaine. Si vous choisissez cette option, vous devez également supprimer le fichier à partir de sa bibliothèque respectif dans SharePoint Online, OneDrive pour les professionnels ou Teams Microsoft. Cette option ne pas débloquer un fichier ouvert ou partagé.</span><span class="sxs-lookup"><span data-stu-id="40dfa-p102">Choose **Delete** to remove the file from the list of quarantined items. If you choose this option, you must also delete the file from its respective library in SharePoint Online, OneDrive for Business, or Microsoft Teams. This option does not unblock a file from being opened or shared.</span></span> 
+  - <span data-ttu-id="3e34b-p102">Choisissez **supprimer** pour supprimer le fichier de la liste des éléments mis en quarantaine. Si vous choisissez cette option, vous devez également supprimer le fichier de sa bibliothèque respective dans SharePoint Online, OneDrive entreprise ou Microsoft Teams. Cette option ne débloque pas l'ouverture ou le partage d'un fichier.</span><span class="sxs-lookup"><span data-stu-id="3e34b-p102">Choose **Delete** to remove the file from the list of quarantined items. If you choose this option, you must also delete the file from its respective library in SharePoint Online, OneDrive for Business, or Microsoft Teams. This option does not unblock a file from being opened or shared.</span></span> 
     
-5. <span data-ttu-id="40dfa-126">Cliquez sur **Fermer** pour fermer les détails d’un élément sélectionné.</span><span class="sxs-lookup"><span data-stu-id="40dfa-126">Choose **Close** to close the details for a selected item.</span></span> 
+5. <span data-ttu-id="3e34b-126">Cliquez sur **Fermer** pour fermer les détails d'un élément sélectionné.</span><span class="sxs-lookup"><span data-stu-id="3e34b-126">Choose **Close** to close the details for a selected item.</span></span> 
   
   
 

@@ -1,52 +1,52 @@
 ---
-title: Le journal d’audit pour l’activité utilisateur et d’administration de recherche dans Office 365
+title: Rechercher les activités des utilisateurs et des administrateurs dans le journal d’audit Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 5/18/2018
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
-description: 'Le journal d’audit de Office 365 est un journal d’audit unifiée. Pourquoi un audit unifié se connecter ? Étant donné que les événements à partir de la plupart des services Office 365 que vous êtes organisation s’abonne à sont enregistrées dans un journal d’audit unique que vous pouvez rechercher. Cela signifie que vous pouvez rechercher des utilisateurs et l’activité d’administration dans ces services :'
-ms.openlocfilehash: 230502f331babeef8f89eacce0d19a7756cb96fc
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: "Le journal d'audit Office 365 est un journal d'audit unifié. Pourquoi un journal d'audit unifié? Étant donné que les événements provenant de la plupart des services Office 365 auxquels vous êtes abonné, sont enregistrés dans un seul journal d'audit que vous pouvez rechercher. Cela signifie que vous pouvez rechercher l'activité de l'utilisateur et de l'administrateur dans les services suivants:"
+ms.openlocfilehash: ec67c63cff57f95bacabd120c466922870b595b4
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038027"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214084"
 ---
-# <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a><span data-ttu-id="dcf74-106">Le journal d’audit pour l’activité utilisateur et d’administration de recherche dans Office 365</span><span class="sxs-lookup"><span data-stu-id="dcf74-106">Search the audit log for user and admin activity in Office 365</span></span>
+# <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a><span data-ttu-id="1375a-106">Rechercher les activités des utilisateurs et des administrateurs dans le journal d’audit Office 365</span><span class="sxs-lookup"><span data-stu-id="1375a-106">Search the audit log for user and admin activity in Office 365</span></span>
 
-<span data-ttu-id="dcf74-p102">Le journal d’audit de Office 365 est un journal d’audit unifiée. Pourquoi un audit unifié se connecter ? Étant donné que les événements à partir de la plupart des services Office 365 que vous êtes organisation s’abonne à sont enregistrées dans un journal d’audit unique que vous pouvez rechercher. Cela signifie que vous pouvez rechercher des utilisateurs et l’activité d’administration dans ces services :</span><span class="sxs-lookup"><span data-stu-id="dcf74-p102">The Office 365 audit log is a unified audit log. Why a unified audit log? Because events from most Office 365 services that you're organization subscribes to are recorded in a single audit log that you can search. That means you can search for user and admin activity in these services:</span></span> 
+<span data-ttu-id="1375a-p102">Le journal d'audit Office 365 est un journal d'audit unifié. Pourquoi un journal d'audit unifié? Étant donné que les événements provenant de la plupart des services Office 365 auxquels vous êtes abonné, sont enregistrés dans un seul journal d'audit que vous pouvez rechercher. Cela signifie que vous pouvez rechercher l'activité de l'utilisateur et de l'administrateur dans les services suivants:</span><span class="sxs-lookup"><span data-stu-id="1375a-p102">The Office 365 audit log is a unified audit log. Why a unified audit log? Because events from most Office 365 services that you're organization subscribes to are recorded in a single audit log that you can search. That means you can search for user and admin activity in these services:</span></span> 
   
-- <span data-ttu-id="dcf74-111">SharePoint</span><span class="sxs-lookup"><span data-stu-id="dcf74-111">SharePoint</span></span>
-- <span data-ttu-id="dcf74-112">OneDrive</span><span class="sxs-lookup"><span data-stu-id="dcf74-112">OneDrive</span></span>
-- <span data-ttu-id="dcf74-113">Exchange</span><span class="sxs-lookup"><span data-stu-id="dcf74-113">Exchange</span></span>
-- <span data-ttu-id="dcf74-114">Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="dcf74-114">Azure Active Directory</span></span>
-- <span data-ttu-id="dcf74-115">Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="dcf74-115">Microsoft Teams</span></span>
-- <span data-ttu-id="dcf74-116">eDiscovery</span><span class="sxs-lookup"><span data-stu-id="dcf74-116">eDiscovery</span></span>
-- <span data-ttu-id="dcf74-117">Power BI</span><span class="sxs-lookup"><span data-stu-id="dcf74-117">Power BI</span></span>
-- <span data-ttu-id="dcf74-118">Yammer</span><span class="sxs-lookup"><span data-stu-id="dcf74-118">Yammer</span></span>
-- <span data-ttu-id="dcf74-119">Sway</span><span class="sxs-lookup"><span data-stu-id="dcf74-119">Sway</span></span>
-- <span data-ttu-id="dcf74-120">Microsoft Stream</span><span class="sxs-lookup"><span data-stu-id="dcf74-120">Microsoft Stream</span></span>
+- <span data-ttu-id="1375a-111">SharePoint</span><span class="sxs-lookup"><span data-stu-id="1375a-111">SharePoint</span></span>
+- <span data-ttu-id="1375a-112">OneDrive</span><span class="sxs-lookup"><span data-stu-id="1375a-112">OneDrive</span></span>
+- <span data-ttu-id="1375a-113">Exchange</span><span class="sxs-lookup"><span data-stu-id="1375a-113">Exchange</span></span>
+- <span data-ttu-id="1375a-114">Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="1375a-114">Azure Active Directory</span></span>
+- <span data-ttu-id="1375a-115">Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="1375a-115">Microsoft Teams</span></span>
+- <span data-ttu-id="1375a-116">eDiscovery</span><span class="sxs-lookup"><span data-stu-id="1375a-116">eDiscovery</span></span>
+- <span data-ttu-id="1375a-117">Power BI</span><span class="sxs-lookup"><span data-stu-id="1375a-117">Power BI</span></span>
+- <span data-ttu-id="1375a-118">Yammer</span><span class="sxs-lookup"><span data-stu-id="1375a-118">Yammer</span></span>
+- <span data-ttu-id="1375a-119">Sway</span><span class="sxs-lookup"><span data-stu-id="1375a-119">Sway</span></span>
+- <span data-ttu-id="1375a-120">Microsoft Stream</span><span class="sxs-lookup"><span data-stu-id="1375a-120">Microsoft Stream</span></span>
    
- ## <a name="set-up-auditing"></a><span data-ttu-id="dcf74-121">Configurer l’audit</span><span class="sxs-lookup"><span data-stu-id="dcf74-121">Set up auditing</span></span>
+ ## <a name="set-up-auditing"></a><span data-ttu-id="1375a-121">Configurer l'audit</span><span class="sxs-lookup"><span data-stu-id="1375a-121">Set up auditing</span></span>
   
-<span data-ttu-id="dcf74-122">Il existe quelques éléments à effectuer avant de rechercher le journal d’audit de Office 365.</span><span class="sxs-lookup"><span data-stu-id="dcf74-122">There's few things you have to do before you can search the Office 365 audit log.</span></span>
+<span data-ttu-id="1375a-122">Vous devez effectuer quelques opérations avant de pouvoir effectuer une recherche dans le journal d'audit Office 365.</span><span class="sxs-lookup"><span data-stu-id="1375a-122">There's few things you have to do before you can search the Office 365 audit log.</span></span>
   
-- <span data-ttu-id="dcf74-123">[Activer la recherche des journaux d’audit](turn-audit-log-search-on-or-off.md) pour démarrer l’enregistrement des événements que vous pouvez rechercher</span><span class="sxs-lookup"><span data-stu-id="dcf74-123">[Turn on audit log search](turn-audit-log-search-on-or-off.md) to start recording events that you can search for</span></span> 
+- <span data-ttu-id="1375a-123">[Activer la recherche du journal d'audit](turn-audit-log-search-on-or-off.md) pour commencer l'enregistrement des événements que vous pouvez rechercher</span><span class="sxs-lookup"><span data-stu-id="1375a-123">[Turn on audit log search](turn-audit-log-search-on-or-off.md) to start recording events that you can search for</span></span> 
     
-- <span data-ttu-id="dcf74-124">[Activer l’audit de boîte aux lettres](enable-mailbox-auditing.md) , vous pouvez rechercher les événements liés à la boîte aux lettres ; par exemple lorsqu’un utilisateur se connecte à leurs boîte aux lettres ou purge des éléments de leur dossier éléments récupérables</span><span class="sxs-lookup"><span data-stu-id="dcf74-124">[Enable mailbox auditing](enable-mailbox-auditing.md) so you can search for mailbox-related events; such as when a user signs in to their mailbox or purges items from their Recoverable Items folder</span></span> 
+- <span data-ttu-id="1375a-124">[Activer l'audit de boîte aux lettres](enable-mailbox-auditing.md) pour pouvoir Rechercher des événements liés à une boîte aux lettres; par exemple lorsqu'un utilisateur se connecte à sa boîte aux lettres ou purge des éléments de son dossier éléments récupérables</span><span class="sxs-lookup"><span data-stu-id="1375a-124">[Enable mailbox auditing](enable-mailbox-auditing.md) so you can search for mailbox-related events; such as when a user signs in to their mailbox or purges items from their Recoverable Items folder</span></span> 
     
- ## <a name="search-the-audit-log"></a><span data-ttu-id="dcf74-125">Rechercher le journal d’audit</span><span class="sxs-lookup"><span data-stu-id="dcf74-125">Search the audit log</span></span>
+ ## <a name="search-the-audit-log"></a><span data-ttu-id="1375a-125">Rechercher le journal d’audit</span><span class="sxs-lookup"><span data-stu-id="1375a-125">Search the audit log</span></span>
   
-<span data-ttu-id="dcf74-126">Après avoir activé l’audit, vous recherchez des centaines des différents types d’événements à partir de plusieurs services Office 365.</span><span class="sxs-lookup"><span data-stu-id="dcf74-126">After you turn on auditing, you search for hundreds of individual types of events from multiple Office 365 services.</span></span>
+<span data-ttu-id="1375a-126">Après avoir activé l'audit, vous recherchez des centaines de types d'événements individuels à partir de plusieurs services Office 365.</span><span class="sxs-lookup"><span data-stu-id="1375a-126">After you turn on auditing, you search for hundreds of individual types of events from multiple Office 365 services.</span></span>
   
-- <span data-ttu-id="dcf74-127">[Recherche le journal d’audit](search-the-audit-log-in-security-and-compliance.md) des activités d’utilisateur et d’administration</span><span class="sxs-lookup"><span data-stu-id="dcf74-127">[Search the audit log](search-the-audit-log-in-security-and-compliance.md) for user and admin activities</span></span> 
+- <span data-ttu-id="1375a-127">Rechercher les activités de l'utilisateur et de l'administrateur dans [le journal d'audit](search-the-audit-log-in-security-and-compliance.md)</span><span class="sxs-lookup"><span data-stu-id="1375a-127">[Search the audit log](search-the-audit-log-in-security-and-compliance.md) for user and admin activities</span></span> 
     
-- <span data-ttu-id="dcf74-128">[Comprendre les propriétés détaillées](detailed-properties-in-the-office-365-audit-log.md) de chaque enregistrement d’audit inclus dans les résultats de recherche</span><span class="sxs-lookup"><span data-stu-id="dcf74-128">[Understand the detailed properties](detailed-properties-in-the-office-365-audit-log.md) in each auditing record included in the search results</span></span> 
+- <span data-ttu-id="1375a-128">[Comprendre les propriétés détaillées](detailed-properties-in-the-office-365-audit-log.md) de chaque enregistrement d'audit inclus dans les résultats de la recherche</span><span class="sxs-lookup"><span data-stu-id="1375a-128">[Understand the detailed properties](detailed-properties-in-the-office-365-audit-log.md) in each auditing record included in the search results</span></span> 
     
-- <span data-ttu-id="dcf74-129">[Rechercher les activités liées à la découverte](search-for-ediscovery-activities-in-the-audit-log.md) effectuée par les responsables de la conformité et les administrateurs</span><span class="sxs-lookup"><span data-stu-id="dcf74-129">[Search for eDiscovery-related activities](search-for-ediscovery-activities-in-the-audit-log.md) performed by admins and compliance managers</span></span> 
+- <span data-ttu-id="1375a-129">[Rechercher les activités de découverte électronique](search-for-ediscovery-activities-in-the-audit-log.md) effectuées par les administrateurs et les responsables de la conformité</span><span class="sxs-lookup"><span data-stu-id="1375a-129">[Search for eDiscovery-related activities](search-for-ediscovery-activities-in-the-audit-log.md) performed by admins and compliance managers</span></span> 
