@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,29 +14,29 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 773137cbfc73d449766e04bf7eccc77f8bdd0cca
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 09af09c4a538bb43fed5fce044eb1be60c235aaa
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706135"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212644"
 ---
 # <a name="create-a-search-to-collect-data"></a>Créer une recherche pour collecter des données
 
-Sous l’onglet de **recherche** dans votre cas, vous pouvez créer une nouvelle recherche en cliquant sur **la recherche de nouveau** suivant de l’Assistant.
+Sous l'onglet **recherches** de votre cas, vous pouvez créer une nouvelle recherche en cliquant sur **nouvelle recherche** et en suivant l'Assistant.
 
-## <a name="name-your-search-and-give-description"></a>Donnez un nom votre recherche et description
+## <a name="name-your-search-and-give-description"></a>Nommer votre recherche et donner une description
 
-Chaque recherche avec un incident doit avoir un nom unique. Vous pouvez éventuellement fournir une description pour votre recherche. 
+Chaque recherche avec un cas doit avoir un nom unique. Vous pouvez éventuellement fournir une description pour votre recherche. 
 
-## <a name="define-your-conditions"></a>Définir vos conditions de travail
+## <a name="define-your-conditions"></a>Définir vos conditions
 
-Vous pouvez définir les conditions de recherche à l’aide de cartes condition prédéfinis ou à l’aide du langage de requête de mot clé (KQL). Pour plus d’informations, voir [créer des requêtes de recherche](building-search-queries.md).
+Vous pouvez définir les conditions de votre recherche à l'aide des cartes de condition prédéfinies ou du langage KQL (Keyword Query Language). Pour plus d'informations, consultez la rubrique [créer des requêtes de recherche](building-search-queries.md).
 
-## <a name="choose-the-custodians-to-search-from"></a>Choisissez les dépositaires pour la recherche à partir de
+## <a name="choose-the-custodians-to-search-from"></a>Choisir les dépositaires à rechercher
 
-Une fois que vous avez défini vos conditions, vous devez choisir les emplacements à rechercher. Une façon de procéder est en spécifiant les dépositaires que vous avez déjà ajouté à la casse que vous souhaitez rechercher. En sélectionnant un dépositaire, vous allez exécuter la recherche par rapport à toutes les sources de données mappées sur le dépositaire. Pour plus d’informations sur l’ajout de dépositaires à votre cas et gérer les sources de données, voir [utiliser les dépositaires](managing-custodians.md) .
+Une fois que vous avez défini vos conditions, vous devez choisir les emplacements sur lesquels vous souhaitez effectuer la recherche. Pour ce faire, vous pouvez spécifier les dépositaires que vous avez déjà ajoutés au cas dans lequel vous souhaitez effectuer une recherche. En sélectionnant un dépositaire, vous lancez la recherche par rapport à toutes les sources de données mappées au dépositaire. Pour plus d'informations sur l'ajout de dépositaires à votre cas et sur la gestion de leurs sources de données, voir [utiliser des dépositaires](managing-custodians.md) .
 
-## <a name="choose-non-custodial-locations"></a>Choisir des emplacements non garde
+## <a name="choose-non-custodial-locations"></a>Choisir les emplacements non privatives de cœur
 
-Dans certains cas, vous pouvez souhaiter rechercher des sources de données qui ne sont pas mappés à un dépositaire. Dans ce cas, vous pouvez spécifier les emplacements que vous souhaitez rechercher, ou choisissez de rechercher tous les emplacements de contenu d’un service Office 365 (par exemple, la recherche SharePoint et OneDrive de toutes les boîtes aux lettres Exchange ou de tous les sites de commerce).
+Dans certains cas, vous souhaiterez peut-être Rechercher des sources de données qui ne sont pas mappées à un dépositaire. Dans ce cas, vous pouvez spécifier les emplacements de recherche, ou choisir de rechercher tous les emplacements de contenu pour un service Office 365 spécifique (par exemple, rechercher toutes les boîtes aux lettres Exchange ou tous les sites SharePoint et OneDrive entreprise).

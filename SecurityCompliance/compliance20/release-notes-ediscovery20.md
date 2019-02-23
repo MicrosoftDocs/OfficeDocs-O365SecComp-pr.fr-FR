@@ -1,64 +1,64 @@
 ---
-title: Notes de publication pour la découverte avancée (Preview)
+title: Notes de publication pour Advanced eDiscovery (aperçu)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Cet article contient les notes de publication pour la découverte avancée (Preview).
-ms.openlocfilehash: 305d1da31c9628f4f87b7b50da0b48c64efb808d
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+description: Cet article contient les notes de publication pour Advanced eDiscovery (aperçu).
+ms.openlocfilehash: c717a07d75e84046de07203515fceaf26aab5a41
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607684"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212934"
 ---
-# <a name="release-notes-for-advanced-ediscovery-preview"></a>Notes de publication pour la découverte avancée (Preview)
+# <a name="release-notes-for-advanced-ediscovery-preview"></a>Notes de publication pour Advanced eDiscovery (aperçu)
 
-Le programme de version d’évaluation pour la découverte avancée est la façon d’obtenir Profitez d’un accès aux mises à jour et les fonctionnalités à venir. Pour accéder au plus tôt aux fonctionnalités plus récentes, juste de créer et utiliser un cas eDiscovery avancées (Preview) dans le centre de conformité de & Office 365 sécurité. Consultez la rubrique [créer un cas](create-new-ediscovery-case.md).
+Le programme de préversion public pour Advanced eDiscovery est le moyen d'accéder en avant-première aux fonctionnalités et mises à jour à venir. Pour accéder en avant-première aux fonctionnalités les plus récentes, il vous suffit de créer et d'utiliser un cas avancé eDiscovery (aperçu) dans le centre de sécurité & de la sécurité d'Office 365. Voir [Create a New case](create-new-ediscovery-case.md).
 
 ## <a name="issues-fixed-in-this-release"></a>Problèmes résolus dans cette version
 
-- DCR : Gestion des exceptions pour les éléments Unindexed et orphelines
-- DCR : Notifications de suspension
-- DCR : Dépositaires d’eDiscovery
+- DCR: gestion des exceptions pour les éléments orphelins et non indexés
+- DCR: notifications de blocage
+- DCR: dépositaires dans eDiscovery
 
 ## <a name="whats-new"></a>Nouveautés
 
-- **Navigation redessiné dans le centre de conformité de sécurité &** – eDiscovery avancée (Preview) a un aspect. Utiliser eDiscovery avancée (Preview) pour gérer plus de votre flux de travail de cas.
+- **Reconception de la navigation dans le centre de sécurité _AMP_ Compliance Center** – Advanced EDiscovery (Preview) a une nouvelle apparence. Utilisez Advanced eDiscovery (aperçu) pour gérer davantage votre flux de travail de cas.
 
-- **Gestion des cas** , il est prise en charge supplémentaire pour les nouveaux types de cas. Vous pouvez également sélectionner et enregistrer vos cas récents et Favoris. Le suivi et surveiller l’activité dans les cas à l’aide de nouveaux tableaux de bord.
+- **Gestion des cas** : il existe une prise en charge supplémentaire pour les nouveaux types de cas. Vous pouvez également sélectionner et enregistrer vos dossiers récents et favoris. Suivre et surveiller l'activité dans et dans les cas à l'aide de nouveaux tableaux de bord.
 
-- **Gestion de dépositaire** : ajouter et supprimer des utilisateurs en tant que dépositaires de données au sein d’un cas.
+- **Gestion** des dépositaires: ajoutez et supprimez des utilisateurs comme dépositaires de données dans un cas.
 
-- **Exchange, OneDrive et l’intégration des équipes** – ajouter automatiquement des lettres en cours d’un utilisateur, OneDrive compte professionnel et les sites Microsoft Teams à un cas. 
+- **Intégration d'Exchange, de onedrive et** de teams: ajoutez automatiquement la boîte aux lettres actuelle d'un utilisateur, le compte OneDrive entreprise et les sites Microsoft teams à un cas. 
 
-- **Communications dépositaire** – envoyer et gérer les notifications de conservation légale au nom de votre organisation.
+- **Communications** des dépositaires: envoyez et gérez les notifications de conservation légale au nom de votre organisation.
 
-- **Portail dépositaire** – nouveau portail pour dépositaires pour accéder à leur actif en attente de notifications.
+- **Portail dépositaire** : nouveau portail pour les dépositaires pour accéder à leurs notifications d'attente actives.
 
-- **L’indexation en profondeur** – réanalyse partiellement indexé des éléments à la demande.
+- **Indexation profonde** : ré-analyse des éléments partiellement indexés à la demande.
 
-- **Correction d’erreur** – appliquer des mesures correctives ou téléchargement de traitement des erreurs ; Cela inclut la prise en charge de conversion de types de fichiers de grande taille, les fichiers protégés par mot de passe, etc.. 
+- **Correction d'erreur** : correction ou téléchargement des erreurs de traitement; Il s'agit notamment de la prise en charge des types de fichiers volumineux, des fichiers protégés par mot de passe et bien plus encore. 
 
-- **Améliorations apportées à la recherche** – créer une recherche en identifiant les dépositaires et/ou des emplacements.
+- **Améliorations de la recherche** : permet de créer une recherche en identifiant des dépositaires et/ou des emplacements.
 
-- **Jeux de travail** – statique d’audit, le suivi et gérer les ensembles de documents.
+- **Jeux de travail** : Gérez, suivez et auditez des ensembles de documents statiques.
 
-- **Passez en revue** – utilisez un natif, texte et pratiquement natifs vue pour passer en revue les documents ajoutés à votre jeu de travail.
+- **Révision** : utilisez une vue native, texte et quasi native pour examiner les documents ajoutés à votre jeu de travail.
 
-- **Redact, ajoutez une balise et annoter** – procéder texte, appliquer des balises et effectuer des annotations lors de la révision de documents.
+- **Biffer, Baliser et** annoter: Biffer du texte, appliquer des balises et créer des annotations lors de la révision des documents.
   
-- **Passer en revue les voix Analytique**– analytique de découverte électronique exploiter à rechercher, recherche et éliminez les résultats au sein d’un jeu de travail.
+- **** Analyse assistée: exploitez l'analyse de découverte électronique pour rechercher, Rechercher et effectuer des recherches dans un jeu de travail.
 
-- **Travaux** – suivre l’état des processus de longue durée.
+- **Travaux** : suivre l'état des processus de longue durée.
 
-- **Activités d’audit de nouveau** – le suivi et la nouvelle vue Auditer l’activité pour la découverte avancée.
+- **Nouvelles activités d'audit** : suivez et affichez les nouvelles activités d'audit pour Advanced eDiscovery.

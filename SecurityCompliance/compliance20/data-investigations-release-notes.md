@@ -1,48 +1,48 @@
 ---
-title: Notes de publication de données enquêtes (Preview) dans Microsoft 365
+title: Notes de publication pour les enquêtes sur les données (aperçu) dans Microsoft 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Cet article décrit la nouvelle version de découverte avancée (Preview) dans Microsoft 365.
-ms.openlocfilehash: 90bcbd4cae1e410e1544352a776ba4cbbedfa429
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Cet article décrit la nouvelle version de Advanced eDiscovery (Preview) dans Microsoft 365.
+ms.openlocfilehash: 851712d6eae876f4c74c4d3322de487d3ff14858
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29695060"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212804"
 ---
-# <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Notes de publication de données enquêtes (Preview) dans Microsoft 365
+# <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Notes de publication pour les enquêtes sur les données (aperçu) dans Microsoft 365
 
-Vous pouvez utiliser le nouvel outil données enquêtes (Preview) dans Microsoft 365 triage, examiner et corriger les données liées incidents, par exemple un incident débordements de données ou une enquête interne. Les enquêtes de visualisation de données Public offre Profitez d’un accès aux mises à jour et les fonctionnalités à venir. Pour accéder au plus tôt aux fonctionnalités plus récentes, créez une nouvelle enquête dans les enquêtes de données (Preview) dans le centre de conformité de & Office 365 sécurité. Pour en savoir plus, consultez la rubrique [gérer un incident débordements de données dans Microsoft 365](manage-data-spillage-incidents.md).
+Vous pouvez utiliser l'outil nouvelles enquêtes de données (aperçu) dans Microsoft 365 pour trier, examiner et résoudre les problèmes liés aux données, tels qu'un incident de débordement de données ou une enquête interne. La préversion publique des analyses de données vous permet d'accéder en avant-première aux fonctionnalités et mises à jour à venir. Pour accéder en avant-première aux fonctionnalités les plus récentes, créez une nouvelle enquête sur les enquêtes de données (aperçu) dans le centre de sécurité & de la sécurité d'Office 365. Pour savoir comment procéder, voir [gérer un incident de fuite de données dans Microsoft 365](manage-data-spillage-incidents.md).
 
 ## <a name="whats-new"></a>Nouveautés 
 
-- **Enquêtes** - vous pouvez regrouper les recherches et les incidents en créant une enquête. Gérer les personnes autorisées à accéder en ajoutant ou supprimant des membres de l’enquête.  Vous pouvez également sélectionner et marquer vos examens favoris. Le suivi et surveiller l’activité dans les enquêtes à l’aide de nouveaux tableaux de bord. Une fois que vous avez terminé vos recherches, vous pouvez fermer ou le supprimer.
+- **Enquêtes** : vous pouvez regrouper les recherches et les incidents en créant une enquête. Gérer les personnes pouvant accéder à l'enquête en ajoutant ou en supprimant des membres.  Vous pouvez également sélectionner et marquer vos recherches favorites. Suivre et surveiller l'activité au sein et à travers des enquêtes à l'aide de nouveaux tableaux de bord. Une fois votre enquête terminée, vous pouvez la fermer ou la supprimer.
 
-- **Personnes dignes d’intérêt** – lorsque vous ajoutez des utilisateurs aux enquêtes en tant que personnes dignes d’intérêt, vous pouvez voir leur boîte aux lettres, OneDrive compte professionnel et les sites Microsoft Teams. Vous pouvez utiliser leur étendue de votre recherche de contenu investigation. Pour examiner une personne d’intérêt, vous pouvez également afficher auditer les enregistrements liés à leurs activités dans Office 365 et d’autres services Microsoft.
+- **Personnes intéressantes** : lorsque vous ajoutez des utilisateurs à des enquêtes en tant que personnes intéressantes, vous pouvez voir leur boîte aux lettres, le compte OneDrive entreprise et les sites Microsoft Teams. Vous pouvez les utiliser pour étendre vos recherches de contenu d'enquête. Pour approfondir votre attention sur une personne intéressante, vous pouvez également afficher les enregistrements d'audit relatifs à leurs activités dans Office 365 et d'autres services Microsoft.
 
-- **Recherche** – créer une recherche de l’entreprise en utilisant divers condition de recherche. Si vous connaissez les utilisateurs ou les sites que vous recherchez, vous pouvez le faire en ajoutant les utilisateurs en tant que personnes d’intérêt ou spécifier des emplacements de sites dans l’Assistant Création de recherche. 
+- **Recherches** : créez une recherche à l'échelle de l'organisation à l'aide de diverses conditions de recherche. Si vous savez des utilisateurs ou des sites à rechercher, vous pouvez le faire en ajoutant ces utilisateurs en tant que personnes intéressantes ou en spécifiant des emplacements de site dans l'Assistant de création de la recherche. 
 
-- **Incidents** – créer un nouvel incident et ajoutez des résultats de recherche que vous souhaitez consulter. Vous pouvez réviser des documents individuels, annoter pour laisser les notes de l’enquête et exporter des résultats à déplacer vers un autre environnement. 
+- **Incidents** : créez un nouvel incident et ajoutez les résultats de la recherche que vous souhaitez examiner. Vous pouvez passer en revue des documents individuels, les annoter pour laisser des notes d'enquête et exporter les résultats pour les déplacer vers un autre environnement. 
 
-- **Passez en revue** – utilisez un natif, texte et pratiquement natifs vue pour passer en revue les documents ajoutés à un incident. Vous pouvez également appliquer analytique à des documents pour regrouper les éléments en doublons, les threads de messagerie et les thèmes, qui peuvent aider votre révision de l’incident. 
+- **Révision** : utilisez une vue native, texte et presque native pour examiner les documents ajoutés à un incident. Vous pouvez également appliquer des analyses aux documents pour regrouper les éléments par doublons, les threads de messagerie et les thèmes, ce qui peut aider à examiner l'incident. 
 
-- **Redact, ajoutez une balise et annoter** – procéder texte, appliquer des balises et effectuer des annotations lors de la révision de documents.
+- **Biffer, Baliser et** annoter: Biffer du texte, appliquer des balises et créer des annotations lors de la révision des documents.
   
-- **L’indexation en profondeur** – s’il y a des éléments partiellement indexés, ils seront indexés de nouveau à la demande afin que toutes les données seront disponibles pour la recherche.
+- **Indexation profonde** : s'il existe des éléments partiellement indexés, ils seront réindexés à la demande afin que toutes les données soient disponibles pour la recherche.
 
-- **Correction d’erreur** – appliquer des mesures correctives ou téléchargement de traitement des erreurs. Cela inclut la prise en charge de la mise à jour pour les types de fichiers volumineux, le mot de passe protégé des fichiers et autres problèmes liés à l’indexation des erreurs. 
+- **Correction d'erreur** : correction ou téléchargement des erreurs de traitement. Cela inclut la prise en charge de la correction pour les types de fichiers volumineux, les fichiers protégés par mot de passe et d'autres problèmes liés aux erreurs d'indexation. 
 
-- **Travaux** – suivre l’état des processus de longue durée.
+- **Travaux** : suivre l'état des processus de longue durée.
 
-- **Dur-supprimer les éléments de boîte aux lettres** - dans les situations d’urgence, vous devrez peut-être supprimer définitivement les éléments mal placés. Pour ce faire, vous pouvez exécuter la **New-ComplianceSearchAction-purger - PurgeType HardDelete** commande sécurité & PowerShell du centre de conformité pour supprimer définitivement les éléments de boîtes aux lettres. Pour plus d’informations, voir [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction).
+- **Supprimer des éléments de boîte aux lettres** de manière irréversible: dans les situations urgentes, vous devrez peut-être supprimer définitivement les éléments mal placés. Pour ce faire, vous pouvez exécuter la commande **New-ComplianceSearchAction-purge-PurgeType permet HardDelete** dans Security _AMP_ Compliance Center PowerShell pour supprimer définitivement des éléments des boîtes aux lettres. Pour plus d'informations, consultez la rubrique [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction).

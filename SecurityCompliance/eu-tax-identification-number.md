@@ -1,35 +1,35 @@
 ---
-title: Numéro d’Identification de l’UE taxe
+title: Numéro d'identification fiscale de l'UE
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f04919c8-2356-4de2-bb2a-b9f67f339726
-description: Cette rubrique illustre une stratégie de protection contre la perte données lorsqu’il détecte le type d’informations sensibles numéro d’Identification de taxe de l’UE. Ce type d’informations sensibles définit différents motifs, mots clés et autres pour chaque pays.
-ms.openlocfilehash: 5192496b393d15fd6d063e09c9bfe1cb3dd7e2dd
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Cette rubrique montre ce qu'une stratégie de protection contre la perte de données (DLP) recherche lorsqu'il détecte le type d'informations sensibles du numéro d'identification fiscale de l'UE. Ce type d'informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
+ms.openlocfilehash: f851cce4be70fd41c24a7876d97c452f0a738eda
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528076"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213824"
 ---
-# <a name="eu-tax-identification-number"></a>Numéro d’Identification de l’UE taxe
+# <a name="eu-tax-identification-number"></a>Numéro d'identification fiscale de l'UE
 
-Cette rubrique illustre une stratégie de protection contre la perte données lorsqu’il détecte le type d’informations sensibles de numéro d’Identification de l’UE taxe (TIN). Ce type d’informations sensibles définit différents motifs, mots clés et autres pour chaque pays.
+Cette rubrique montre ce qu'une stratégie de protection contre la perte de données (DLP) recherche lorsqu'il détecte le type d'informations sensibles de l'ID taxe de l'UE (TIN). Ce type d'informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
   
 ## <a name="austria"></a>Autriche
 
 ### <a name="format"></a>Format
 
-Neuf chiffres avec trait d’union conditionnel et une barre oblique
+Neuf chiffres avec un trait d'union conditionnel et une barre oblique
   
 ### <a name="pattern"></a>Modèle
 
-Neuf chiffres avec trait d’union conditionnel et une barre oblique :
+Neuf chiffres avec un trait d'Union et une barre oblique facultatifs:
   
 -  Deux chiffres 
     
@@ -49,13 +49,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_austria_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_austria_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_austria_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_austria_eu_tax_file_number` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_austria_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_austria_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU Tax File Number -->
@@ -70,28 +70,28 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsaustriaeutaxfilenumber"></a>Keywords_austria_eu_tax_file_number
 
-numéro de taxe
+Numéro de taxe
   
-nombre
+valeur
   
-numéro d’enregistrement taxe
+Numéro d'enregistrement taxe
   
 id fiscal
 
   
-St.nr.
+St.Nr.
   
-steuernummer
+Steuernummer
   
 ## <a name="belgium"></a>Belgique
 
 ### <a name="format"></a>Format
 
-11 chiffres sans espaces et les séparateurs
+11 chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
@@ -99,11 +99,11 @@ steuernummer
   
 - Deux chiffres
     
-- Un « 0 » ou « 1 »
+- «0» ou «1»
     
 - Un chiffre
     
-- Un « 0 » ou « 1 » ou « 2 » ou « 3 » 
+- «0» ou «1» ou «2» ou «3» 
     
 - Six chiffres
     
@@ -115,9 +115,9 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_belgium_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_belgium_eu_tax_file_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_belgium_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_belgium_eu_tax_file_number` from est trouvé. 
     
 ```
  <!-- EU Tax File Number -->
@@ -129,32 +129,32 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsbelgiumeutaxfilenumber"></a>Keywords_belgium_eu_tax_file_number
 
-numéro de taxe
+Numéro de taxe
   
-numéro national d’enregistrement
+Numéro d'enregistrement national
   
-numéro d’enregistrement taxe
+Numéro d'enregistrement taxe
   
 id fiscal
 
   
-NIF
+nPour
   
-NIF #
+nPour
   
-numéro de registre national
+Numéro de registre national
   
-numéro d’identification fiscale
+Numéro d'identification fiscale
   
 ## <a name="bulgaria"></a>Bulgarie
 
 ### <a name="format"></a>Format
 
-Dix chiffres sans espaces et les séparateurs
+Dix chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
@@ -168,13 +168,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_bulgaria_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_bulgaria_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_bulgaria_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_bulgaria_eu_tax_file_number` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_bulgaria_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_bulgaria_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU Tax File Number -->
@@ -189,51 +189,51 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsbulgariaeutaxfilenumber"></a>Keywords_bulgaria_eu_tax_file_number
 
 bucn
   
-nombre civile uniforme
+numéro civil uniforme
   
 bucn #
   
 uniformcivilnumber #
   
-id civile uniforme
+ID civil uniforme
   
-no civile uniforme
+non civil uniforme
   
-egn
+EGN
   
-nombre de civile uniform bulgare
+numéro civil uniforme bulgare
   
 uniformcivilno #
   
-egn #
+EGN #
   
-УНИФОРМ ГРАЖДАНСКИ НОМЕР
+униформ граждански номер
   
-Id униформ
+ID униформ
   
-Id граждански униформ
+униформ граждански ID
   
-УНИФОРМ ГРАЖДАНСКИ НЕ
+униформ граждански не
   
 ## <a name="croatia"></a>Croatie
 
 ### <a name="format"></a>Format
 
-11 chiffres sans espaces ni les délimiteurs
+11 chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
 11 chiffres :
   
-- Dix chiffres, choisis au hasard
+- Dix chiffres, choisis de manière aléatoire
     
-- Chiffre un contrôle
+- Un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -243,13 +243,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_croatia_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_croatia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_croatia_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_croatia_eu_tax_file_number` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_croatia_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_croatia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU Tax File Number -->
@@ -264,22 +264,22 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordscroatiaeutaxfilenumber"></a>Keywords_croatia_eu_tax_file_number
 
-numéro de taxe
+Numéro de taxe
   
-taxe
+codes
   
 id fiscal
 
   
 OID
   
-OID #
+OID
   
-porezni broj
+porezni Broj
   
 ## <a name="cyprus"></a>Chypre
 
@@ -289,13 +289,13 @@ Huit chiffres et une lettre dans le modèle spécifié
   
 ### <a name="pattern"></a>Modèle
 
-Huit chiffres et une lettre :
+Huit chiffres et une lettre:
   
--  UN « 0 » 
+-  «0» 
     
 - Sept chiffres 
     
-- Une lettre (pas la casse)
+- Une lettre (ne respecte pas la casse)
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -305,13 +305,13 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_cyprus_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_cyprus_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_cyprus_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_cyprus_eu_tax_file_number` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_cyprus_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_cyprus_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU Tax File Number -->
@@ -326,28 +326,28 @@ Pattern confidenceLevel="75">
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordscypruseutaxfilenumber"></a>Keywords_cyprus_eu_tax_file_number
 
-numéro de taxe
+Numéro de taxe
   
-taxe
+codes
   
 id fiscal
 
   
-codes d’identification
+code d'identification fiscale
   
-TIC
+graduation
   
-TIC #
+graduation
   
-ΑΡΙΘΜΌΣ ΦΟΡΟΛΟΓΙΚΟΎ ΜΗΤΡΏΟΥ
+Αριθμός φορολογικού Μητρώου
   
-ΦΟΡΟΛΟΓΙΚΉ ΤΑΥΤΌΤΗΤΑ
+φορολογική ταυτότητα
   
-ΚΩΔΙΚΌΣ ΦΟΡΟΛΟΓΙΚΟΎ ΜΗΤΡΏΟΥ
+Κωδικός φορολογικού Μητρώου
   
 ## <a name="czech-republic"></a>République tchèque
 
@@ -357,13 +357,13 @@ Neuf ou dix chiffres avec une barre oblique inverse facultative
   
 ### <a name="pattern"></a>Modèle
 
-Neuf ou dix chiffres avec un backslashl facultatif :
+Neuf ou dix chiffres avec une barre oblique inverse facultative:
   
 - Six chiffres 
     
-- Une barre oblique inverse (facultative)
+- Une barre oblique inverse (facultatif)
     
-- Trois ou quatre chiffres
+- 3 ou 4 chiffres
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -373,9 +373,9 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_czech_republic_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_czech_republic_eu_tax_file_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_czech_republic_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_czech_republic_eu_tax_file_number` from est trouvé. 
     
 ```
  <!-- EU Tax File Number -->
@@ -387,18 +387,18 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsczechrepubliceutaxfilenumber"></a>Keywords_czech_republic_eu_tax_file_number
 
-numéro de taxe
+Numéro de taxe
   
-taxe
+codes
   
 id fiscal
 
   
-numéro de téléphone personnel
+numéro personnel
   
 daňové číslo
   
@@ -408,17 +408,17 @@ osobní číslo
 
 ### <a name="format"></a>Format
 
-Dix chiffres contenant un trait d’union
+Dix chiffres contenant un trait d'Union
   
 ### <a name="pattern"></a>Modèle
 
-Dix chiffres contenant un hyphenl :
+Dix chiffres contenant un trait d'Union:
   
--  Six chiffres qui correspondent à la date de naissance (jjmmaa) 
+-  Six chiffres correspondant à la date de naissance (JJMMAA) 
     
 - Un trait d’union 
     
-- Quatre chiffres qui correspondent à un numéro de séquence où le premier chiffre correspond à la century de naissance et le dernier chiffre correspond au sexe de la personne (impaire pour masculin et même femme)
+- Quatre chiffres correspondant à un numéro de séquence où le premier chiffre correspond au siècle de naissance et le dernier chiffre correspond au sexe de l'individu (impair pour les hommes et les femmes)
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -428,13 +428,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_denmark_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_denmark_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_denmark_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_denmark_eu_tax_file_number` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_denmark_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_denmark_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU Tax File Number -->
@@ -449,42 +449,42 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsdenmarkeutaxfilenumber"></a>Keywords_denmark_eu_tax_file_number
 
-numéro de taxe
+Numéro de taxe
   
-taxe
+codes
   
 id fiscal
 
   
-nombre de CPR
+numéro CPR
   
-CPR #
+cardio
   
-skat nummer
+Skat Nummer
   
-id skat
+ID Skat
   
 ## <a name="estonia"></a>Estonie
 
 ### <a name="format"></a>Format
 
-11 chiffres sans espaces ni les délimiteurs
+11 chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
 11 chiffres :
   
--  Un chiffre correspondant au sexe et century de naissance où un nombre impair indique masculin et le nombre pair femme comme suit : 1, 2 pour le 19 century ; 3, 4 pour le vingtième century ; 5 et 6 pour le century 21 
+-  Un chiffre correspondant au sexe et au siècle de naissance, où un nombre impair indique le mâle et le nombre pair, la femme comme suit: 1,2 pour le 19 siècle; 3, 4 pour le vingtième siècle; et 5, 6 pour le 21ème siècle 
     
-- Six chiffres qui correspondent à la date de naissance (AAMMJJ)
+- Six chiffres correspondant à la date de naissance (AAMMJJ)
     
-- Trois chiffres qui correspondent à un numéro de série en séparant les personnes naissance à la même date
+- Trois chiffres correspondant à un numéro de série séparant les personnes nés à la même date
     
-- Chiffre un contrôle
+- Un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -494,13 +494,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_estonia_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_estonia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_estonia_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_estonia_eu_tax_file_number` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_estonia_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_estonia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU Tax File Number -->
@@ -515,13 +515,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsestoniaeutaxfilenumber"></a>Keywords_estonia_eu_tax_file_number
 
-numéro de taxe
+Numéro de taxe
   
-taxe
+codes
   
 id fiscal
 
@@ -530,7 +530,7 @@ code personnel
   
 maksunumber
   
-id maksu
+ID maksu
   
 isikukood
   
@@ -538,19 +538,19 @@ isikukood
 
 ### <a name="format"></a>Format
 
-Une combinaison de caractères 11 chiffres, des lettres, et plus et moins
+Combinaison de 11 caractères chiffres, lettres, et signe plus et moins
   
 ### <a name="pattern"></a>Modèle
 
-Une combinaison de caractères 11 chiffres, des lettres, et plus et moins :
+Combinaison de 11 caractères chiffres, lettres, et signe plus et moins:
   
 - Six chiffres
     
-- Un des éléments suivants : un signe plus, un signe moins ou la lettre « A » (pas la casse) où le signe signifie naissance entre 1800-1899, le signe moins signer signifie naissance entre 1900 à 1999 et « A » signifie naissance 2000 et après
+- L'une des options suivantes: un signe plus, un signe moins ou la lettre «A» (ne respectant pas la casse), où le signe plus est né entre 1800-1899, le signe moins est né entre 1900-1999, et «A» désigne né 2000 et after
     
 - Trois chiffres
     
-- Une lettre ou un numéro
+- Une lettre ou un chiffre
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -560,13 +560,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_finland_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_finland_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_finland_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_finland_eu_tax_file_number` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_finland_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_finland_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU Tax File Number -->
@@ -581,62 +581,62 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsfinlandeutaxfilenumber"></a>Keywords_finland_eu_tax_file_number
 
 numéro d’identification
 
   
-identifiant personnel
+ID personnel
   
-numéro d’identité
+Numéro d'identité
   
-numéro d’id national Finlande
+Numéro d'identification national finnois
   
 personalidnumber #
   
-numéro d’identification nationale
+Numéro d'identification nationale
   
-numéro d’identification
+Numéro d'identification
   
-id national aucun.
+Numéro d'identification nationale
   
-numéro national
+Numéro d'identification national
   
-ID d’aucun
+n ° ID
   
 tunnistenumero
   
 henkilötunnus
   
-yksilöllinen henkilökohtainen tunnistenumero
+Yksilöllinen henkilökohtainen tunnistenumero
   
 ainutlaatuinen henkilökohtainen tunnus
   
-numero identiteetti
+identiteetti numérique
   
-Suomen kansallinen henkilötunnus
+Suomen Kansallinen henkilötunnus
   
 henkilötunnusnumero #
   
-kansallisen tunnistenumero
+Kansallisen tunnistenumero
   
 tunnusnumero
   
-kansallinen tunnus numero
+Kansallinen tunnus numérique
   
 ## <a name="france"></a>France
 
 ### <a name="format"></a>Format
 
-13 chiffres pour les particuliers et les neuf chiffres pour les entités
+13 chiffres pour les personnes et neuf chiffres pour les entités
   
 ### <a name="pattern"></a>Modèle
 
-13 chiffres pour les personnes :
+13 chiffres pour les personnes:
   
-- Un chiffre doit être 0, 1, 2 ou 3
+- Un chiffre qui doit être 0, 1, 2 ou 3
     
 - 12 chiffres
     
@@ -650,13 +650,13 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_france_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_france_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_france_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_france_eu_tax_file_number` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_france_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_france_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU Tax File Number -->
@@ -671,32 +671,32 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsfranceeutaxfilenumber"></a>Keywords_france_eu_tax_file_number
 
-numéro d’identification fiscale
+Numéro d'identification de taxe
   
-numéro de taxe
+Numéro de taxe
   
 id fiscal
 
   
-numéro d’identification fiscale
+Numéro d'identification fiscale
   
 ## <a name="germany"></a>Allemagne
 
 ### <a name="format"></a>Format
 
-11 chiffres sans espaces et les séparateurs
+11 chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-11 chiffres :
+11 chiffres:
   
 -  Dix chiffres 
     
-- Chiffre un contrôle
+- Un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -706,13 +706,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_germany_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_germany_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_germany_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_germany_eu_tax_file_number` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_germany_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_germany_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU Tax File Number -->
@@ -727,32 +727,32 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsgermanyeutaxfilenumber"></a>Keywords_germany_eu_tax_file_number
 
-numéro de taxe
+Numéro de taxe
   
-n° de taxe.
+n ° taxe
   
 taxno #
   
-Numéro taxe #
+taxnumber #
   
-Numéro taxe
+taxnumber
   
 id fiscal
 
   
-taxid #
+n ° de taxi
   
-numéro d’identification fiscale
+Numéro d'identification de taxe
   
-identification de taxe ne.
+n ° d'identification fiscale
   
-steuernummer
+Steuernummer
   
-id steuer
+ID Steuer
   
 steueridentifikationsnummer
   
@@ -760,7 +760,7 @@ steueridentifikationsnummer
 
 ### <a name="format"></a>Format
 
-Neuf chiffres sans espaces et les séparateurs
+Neuf chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
@@ -774,9 +774,9 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_greece_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_greece_eu_tax_file_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_greece_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_greece_eu_tax_file_number` from est trouvé. 
     
 ```
  <!-- EU Tax File Number -->
@@ -788,60 +788,60 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsgreeceeutaxfilenumber"></a>Keywords_greece_eu_tax_file_number
 
-AFM
+financement
   
 tin
 
   
-id de taxe ne.
+n ° ID taxe
   
-id de taxe ne
+n ° de taxe
   
-numéro d’identification fiscale
+Numéro d'identification de taxe
   
-numéro de Registre de taxe
+Numéro de registre des taxes
   
-taxe non dans le Registre.
+n ° de Registre taxe
   
-AFM #
+financement
   
-numéro d’identification #
+Etain
   
 taxidno #
   
 taxregistryno #
   
-ΑΡΙΘΜΌΣ ΦΟΡΟΛΟΓΙΚΟΎ ΜΗΤΡΏΟΥ
+Αριθμός φορολογικού Μητρώου
   
 aφμ
   
-aφμ αριθμός
+aφμ Αριθμός
   
-ΦΟΡΟΛΟΓΙΚΟΎ ΜΗΤΡΏΟΥ ΝΟ.
+φορολογικού Μητρώου νο.
   
-ΤΟΝ ΑΡΙΘΜΌ ΦΟΡΟΛΟΓΙΚΟΎ ΜΗΤΡΏΟΥ
+τον αριθμό φορολογικού Μητρώου
   
 ## <a name="hungary"></a>Hongrie
 
 ### <a name="format"></a>Format
 
-Dix chiffres sans espaces ni les délimiteurs
+Dix chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Dix chiffres :
+Dix chiffres:
   
--  Un chiffre doit être « 8 » 
+-  Un chiffre qui doit être «8» 
     
-- Cinq chiffres qui correspondent au nombre de jours entre la date 01/01/1867 et la date de naissance de la personne
+- Cinq chiffres correspondant au nombre de jours entre la date 01/01/1867 et la date de naissance de la personne
     
-- Trois chiffres correspondant au numéro généré par hasard pour différencier les personnes naissance le même jour
+- Trois chiffres correspondant au nombre généré par l'opportunité pour différencier les individus nés le même jour
     
-- Chiffre un contrôle
+- Un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -851,13 +851,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_hungary_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_hungary_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_hungary_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_hungary_eu_tax_file_number` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_hungary_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_hungary_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU Tax File Number -->
@@ -872,29 +872,29 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordshungaryeutaxfilenumber"></a>Keywords_hungary_eu_tax_file_number
 
-numéro d’identification fiscale hongrois
+Numéro d'identification de taxe hongrois
   
-numéro d’identification hongrois
+étain hongrois
   
-numéro d’identification de taxe
+Numéro d'identification de taxe
   
-numéro de TVA
+Numéro de TVA
   
-fiscale ne
+Numéro de l'autorité fiscale
   
-numéro d’identité Tax id taxe
+Numéro d'identité fiscale de l'ID taxe
   
 taxidnumber #
   
-numéro d’identification #
+Etain
   
 hungatiantin #
   
-identification de taxe ne
+n ° d'identification fiscale
   
 taxidno #
   
@@ -908,15 +908,15 @@ adóhatóság szám
 
 ### <a name="format"></a>Format
 
-Sept chiffres suivies d’une lettre sans espaces ni les délimiteurs
+Sept chiffres suivis d'une lettre sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Sept chiffres suivies d’une lettre :
+Sept chiffres suivis d'une lettre:
   
 -  Sept chiffres  
     
-- Une lettre (pas la casse)
+- Une lettre (ne respecte pas la casse)
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -926,13 +926,13 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_ireland_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_ireland_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_ireland_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_ireland_eu_tax_file_number` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_ireland_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_ireland_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU Tax File Number -->
@@ -947,31 +947,31 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsirelandeutaxfilenumber"></a>Keywords_ireland_eu_tax_file_number
 
-service public aucune
+Numéro de service public
   
-service public personnel aucune
+service public personnel
   
-PPS aucune
+n ° PPS
   
-personnel n° de service
+Numéro de service personnel
   
-n° du service PPS
+n ° de Service PPS
   
 ppsno #
   
-irlandais pps aucune
+n ° PPS irlandais
   
 publicserviceno #
   
-numéro personnel service public
+Numéro de service public
   
 uimhir phearsanta seirbhíse poiblí
   
-uimh PPS
+PPS uimh
   
 uimhir aitheantais phearsanta
   
@@ -983,21 +983,21 @@ uimhir aitheantais phearsanta
   
 ### <a name="pattern"></a>Modèle
 
-16 lettres et chiffres :
+16 lettres et chiffres:
   
--  Trois lettres qui correspondent aux trois premiers consonnes suivantes dans le nom de famille 
+-  Trois lettres qui correspondent aux trois premières consonnes du nom de la famille 
     
-- Trois lettres qui correspondent à la première, troisième et quatrième consonnes dans le premier nom
+- Trois lettres qui correspondent à la première, troisième et quatrième consonnes du prénom
     
-- Deux chiffres qui correspondent à la dernière chiffres de l’année de naissance
+- Deux chiffres correspondant aux derniers chiffres de l'année de naissance
     
-- Un chiffre qui correspond au mois de naissance — lettres sont utilisés dans l’ordre alphabétique, mais que les lettres A à E, H, L, M, P, R t sont utilisés (par conséquent, janvier correspond à un et octobre est R)
+- Un chiffre correspondant au mois de naissance: les lettres sont utilisées par ordre alphabétique, mais seules les lettres de A à E, H, L, M, P, R à T sont utilisées (en janvier, A et octobre est R).
     
-- Deux chiffres correspondant au jour du mois de naissance où 40 est ajouté à la journée de naissance pour femelles différencier les mâles
+- Deux chiffres correspondant au jour du mois de naissance où 40 est ajouté au jour de naissance pour que les femmes différencient les hommes
     
-- Quatre chiffres qui correspondent à un code de zone spécifique à la commune où naissance de la personne, les codes de pays échelle sont utilisés pour étranger
+- Quatre chiffres correspondant à un indicatif régional spécifique à la municipalité où la personne est né — des codes nationaux sont utilisés pour les pays étrangers
     
-- Chiffre un contrôle
+- Un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1007,13 +1007,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_italy_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_italy_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_italy_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_italy_eu_tax_file_number` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_italy_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_italy_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1028,42 +1028,42 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsitalyeutaxfilenumber"></a>Keywords_italy_eu_tax_file_number
 
-numéro de taxe
+Numéro de taxe
   
-n° de taxe.
+n ° taxe
   
 taxno #
   
-Numéro taxe #
+taxnumber #
   
-Numéro taxe
+taxnumber
   
 id fiscal
 
   
-taxid #
+n ° de taxi
   
 code fiscal
   
-numéro d’identification fiscale
+Codice fiscale
   
 ## <a name="latvia"></a>Lettonie
 
 ### <a name="format"></a>Format
 
-11 chiffres sans espaces ni les délimiteurs
+11 chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
 11 chiffres dans le modèle spécifié
   
--  Six chiffres qui correspondent à la date de naissance (jjmmaa) 
+-  Six chiffres correspondant à la date de naissance (JJMMAA) 
     
-- Un chiffre qui correspond à la century de naissance où « 0 » correspond à 19 century, « 1 » correspond à 20 century et « 2 » correspond à century 21
+- Un chiffre correspondant au siècle de naissance où «0» correspond à 19 siècle, «1» correspond au vingtième siècle et «2» au 21ème siècle.
     
 - Quatre chiffres
     
@@ -1075,13 +1075,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_latvia_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_latvia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_latvia_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_latvia_eu_tax_file_number` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_latvia_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_latvia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1096,32 +1096,32 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordslatviaeutaxfilenumber"></a>Keywords_latvia_eu_tax_file_number
 
-numéro de taxe
+Numéro de taxe
   
-n° de taxe.
+n ° taxe
   
 taxno #
   
-Numéro taxe #
+taxnumber #
   
-Numéro taxe
+taxnumber
   
 id fiscal
 
   
-taxid #
+n ° de taxi
   
-numéro d’identification fiscale
+Numéro d'identification de taxe
   
-identification de taxe ne.
+n ° d'identification fiscale
   
 nodokļa numurs
   
-nodokļu identifikācijas numurs
+nodokļu IDENTIFIKĀCIJAS numurs
   
 nodokļu identifikācija numurs
   
@@ -1143,13 +1143,13 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_lithuania_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_lithuania_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_lithuania_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_lithuania_eu_tax_file_number` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_lithuania_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_lithuania_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1164,40 +1164,40 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordslithuaniaeutaxfilenumber"></a>Keywords_lithuania_eu_tax_file_number
 
-numéro de taxe
+Numéro de taxe
   
-n° de taxe.
+n ° taxe
   
-fiscales no #
+n ° de taxe n °
   
-Numéro taxe #
+taxnumber #
   
-Numéro taxe
+taxnumber
   
 id fiscal
 
   
-taxid #
+n ° de taxi
   
-numéro d’identification fiscale
+Numéro d'identification de taxe
   
-identification de taxe ne.
+n ° d'identification fiscale
   
-id mokesčių
+ID mokesčių
   
-mokesčių numeris
+mokesčių chiffres
   
-mokesčių identifikavimas numeris
+mokesčių identifikavimas
   
-## <a name="luxemburg"></a>Luxembourg
+## <a name="luxemburg"></a>Relatif
 
 ### <a name="format"></a>Format
 
-13 chiffres sans espaces ni les délimiteurs
+13 chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
@@ -1215,13 +1215,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_luxemburg_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_luxemburg_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_luxemburg_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_luxemburg_eu_tax_file_number` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_luxemburg_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_luxemburg_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1236,32 +1236,32 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsluxemburgeutaxfilenumber"></a>Keywords_luxemburg_eu_tax_file_number
 
-numéro de taxe
+Numéro de taxe
   
-n° de taxe.
+n ° taxe
   
 taxno #
   
-Numéro taxe #
+taxnumber #
   
-Numéro taxe
+taxnumber
   
 id fiscal
 
   
-taxid #
+n ° de taxi
   
-numéro d’identification fiscale
+Numéro d'identification de taxe
   
-identification de taxe ne.
+n ° d'identification fiscale
   
-steuernummer
+Steuernummer
   
-id steuer
+ID Steuer
   
 steueridentifikationsnummer
   
@@ -1269,19 +1269,19 @@ steueridentifikationsnummer
 
 ### <a name="format"></a>Format
 
-Pour maltaise nationaux : 7 chiffres et une lettre dans le modèle spécifié
+Pour les ressortissants maltais: 7 chiffres et une lettre dans le modèle spécifié
   
-Non-maltaise nationaux et les entités maltaises : 9 chiffres
+Ressortissants non maltaises et entités maltaises: 9 chiffres
   
 ### <a name="pattern"></a>Modèle
 
-Maltais nationaux : 7 chiffres et une lettre
+Ressortissants maltaises: 7 chiffres et une lettre
   
 -  Sept chiffres  
     
-- Une lettre (pas la casse)
+- Une lettre (ne respecte pas la casse)
     
-Non-maltaise nationaux et les entités maltaises : 9 chiffres
+Ressortissants non maltaises et entités maltaises: 9 chiffres
   
 -  Neuf chiffres 
     
@@ -1293,13 +1293,13 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_malta_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_malta_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_malta_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_malta_eu_tax_file_number` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 65 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_malta_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_malta_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1314,34 +1314,34 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsmaltaeutaxfilenumber"></a>Keywords_malta_eu_tax_file_number
 
-numéro de taxe
+Numéro de taxe
   
-n° de taxe.
+n ° taxe
   
 taxno #
   
-Numéro taxe #
+taxnumber #
   
-Numéro taxe
+taxnumber
   
 id fiscal
 
   
-taxid #
+n ° de taxi
   
-numéro d’identification fiscale
+Numéro d'identification de taxe
   
-identification de taxe ne.
+n ° d'identification fiscale
   
-tat-taxxa numru
+numru tat-Taxxa
   
-ID tat-taxxa
+ID tat-Taxxa
   
-numru ta ' identifikazzjoni tat-taxxa
+numru ta'IDENTIFIKAZZJONI tat-Taxxa
   
 ## <a name="netherlands"></a>Pays-Bas
 
@@ -1361,13 +1361,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_netherlands_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_netherlands_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_netherlands_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_netherlands_eu_tax_file_number` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_netherlands_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_netherlands_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1382,65 +1382,65 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsnetherlandseutaxfilenumber"></a>Keywords_netherlands_eu_tax_file_number
 
-numéro d’identification fiscale pays-bas
+Numéro d'identification fiscale néerlandaise
   
-identification de taxe pays-bas
+identification fiscale néerlandaise
   
-numéro d’identification du Antilles taxe
+Numéro d'identification de taxe de Netherland
   
-identification de taxe du Antilles
+identification fiscale de Netherland
   
-numéro d’identification fiscale
+Numéro d'identification de taxe
   
-id de taxe néerlandais
+ID de taxe néerlandaise
   
-numéro d’identification fiscale néerlandais
+Numéro d'identification de taxe néerlandaise
   
 id fiscal
 
   
-n° de sécurité sociale
+n ° de taxe
   
-numéro de taxe
+Numéro de taxe
   
-fiscales no #
+n ° de taxe n °
   
-taxe #
+codes
   
 tin
 
   
-numéro d’identification #
+Etain
   
-numéro d’identification pays-bas
+étain (Pays-Bas)
   
-numéro d’identification du Antilles
+Netherland d'étain
   
-néerlandais Omzetbelasting identificatienummer
+néerlandais qui a identificatienummer
   
-identificatienummer van Omzetbelasting
+identificatienummer van à l'avant-dernière
   
-Omzetbelasting identificatienummer
+identificatienummer qui a été modifié
   
-néerlandais Omzetbelasting identificatie
+néerlandais qui a identificatie
   
-néerlandais Omzetbelasting id nummer
+néerlandais qui a pour ID Nummer
   
-néerlandais belastingnummer
+Néerlandais belastingnummer
   
-BTW nummer
+BTW Nummer
   
-Nederlandse Omzetbelasting identificatie
+Nederlandse qui a identificatie
   
 ## <a name="poland"></a>Pologne
 
 ### <a name="format"></a>Format
 
-Onze chiffres sans espaces ni les délimiteurs
+Onze chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
@@ -1454,13 +1454,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_poland_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_poland_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_poland_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_poland_eu_tax_file_number` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_poland_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_poland_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1475,50 +1475,50 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordspolandeutaxfilenumber"></a>Keywords_poland_eu_tax_file_number
 
-numéro de taxe
+Numéro de taxe
   
-n° de taxe.
+n ° taxe
   
 taxno #
   
-Numéro taxe #
+taxnumber #
   
-Numéro taxe
+taxnumber
   
-point de contact
+pince
   
-point de contact #
+pince
   
 id fiscal
 
   
-n° de sécurité sociale
+n ° de taxe
   
-id du point de contact
+ID du NIP
   
-numéro d’identification de point de contact
+n ° de NIP
   
-numéro d’identification fiscale
+Numéro d'identification de taxe
   
-identification de taxe ne.
+n ° d'identification fiscale
   
-numéro de TVA
+Numéro de TVA
   
-taxe non.
+n ° TVA
   
 vatno #
   
-code de taxes
+Numéro de TVA
   
-numéro d’identification de TVA
+n ° de TVA
   
-nombre identyfikacji podatkowej
+chiffre identyfikacji podatkowej
   
-polski nombre identyfikacji podatkowej
+Polski identyfikacji podatkowej
   
 numeridentyfikacjipodatkowej #
   
@@ -1526,7 +1526,7 @@ numeridentyfikacjipodatkowej #
 
 ### <a name="format"></a>Format
 
-Neuf chiffres sans espaces ni les délimiteurs
+Neuf chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
@@ -1540,13 +1540,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_portugal_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_portugal_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_portugal_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_portugal_eu_tax_file_number` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_portugal_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_portugal_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1561,33 +1561,33 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsportugaleutaxfilenumber"></a>Keywords_portugal_eu_tax_file_number
 
-numéro de taxe
+Numéro de taxe
   
-n° de taxe.
+n ° taxe
   
 taxno #
   
-Numéro taxe #
+taxnumber #
   
-Numéro taxe
+taxnumber
   
-NIF
+nPour
   
-NIF #
+nPour
   
-NUMERO fiscal
+chiffres fiscaux
   
-Número de identificação fiscale
+Número de identificação fiscal
   
 ## <a name="romania"></a>Roumanie
 
 ### <a name="format"></a>Format
 
-13 chiffres sans espaces ni les délimiteurs
+13 chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
@@ -1601,9 +1601,9 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_romania_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_romania_eu_tax_file_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_romania_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_romania_eu_tax_file_number` from est trouvé. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1615,38 +1615,38 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsromaniaeutaxfilenumber"></a>Keywords_romania_eu_tax_file_number
 
 id fiscal
 
   
-numéro d’identification de taxe
+Numéro d'identification de taxe
   
-Aucun fichier de taxe
+n ° fichier taxe
   
 
 
 numéro de dossier fiscal
   
-n° de taxe
+n ° taxe
   
-numéro de taxe
+Numéro de taxe
   
-taxid #
+n ° de taxi
   
 taxno #
   
-ID-ul taxei
+ID-UL taxei
   
-numărul de identificare fiscală
+numărul de IDENTIFICARE fiscală
   
 ## <a name="slovakia"></a>République de Slovaquie
 
 ### <a name="format"></a>Format
 
-10 chiffres sans espaces ni les délimiteurs
+10 chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
@@ -1660,9 +1660,9 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L’expression régulière `Regex_slovakia_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- L'expression `Regex_slovakia_eu_tax_file_number` régulière trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_slovakia_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_slovakia_eu_tax_file_number` from est trouvé. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1674,35 +1674,35 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsslovakiaeutaxfilenumber"></a>Keywords_slovakia_eu_tax_file_number
 
 id fiscal
 
   
-numéro d’identification de taxe
+Numéro d'identification de taxe
   
-id d’étain
+ID d'étain
   
-no étain
+n ° d'étain
   
-id d’étain slovaque
+ID d'étain slovaque
   
 tin
 
   
-Aucun fichier de taxe
+n ° fichier taxe
   
 
 
 numéro de dossier fiscal
   
-n° de taxe
+n ° taxe
   
-numéro de taxe
+Numéro de taxe
   
-taxid #
+n ° de taxi
   
 taxno #
   
@@ -1716,7 +1716,7 @@ daňové číslo súboru
 
 ### <a name="format"></a>Format
 
-Huit chiffres sans espaces ni les délimiteurs
+Huit chiffres sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
@@ -1730,13 +1730,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_slovenia_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_slovenia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_slovenia_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_slovenia_eu_tax_file_number` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_slovenia_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_slovenia_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1751,35 +1751,35 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordssloveniaeutaxfilenumber"></a>Keywords_slovenia_eu_tax_file_number
 
 id fiscal
 
   
-numéro d’identification de taxe
+Numéro d'identification de taxe
   
-id d’étain
+ID d'étain
   
-no étain
+n ° d'étain
   
-id d’étain slovène
+ID d'étain slovène
   
 tin
 
   
-Aucun fichier de taxe
+n ° fichier taxe
   
 
 
 numéro de dossier fiscal
   
-n° de taxe
+n ° taxe
   
-numéro de taxe
+Numéro de taxe
   
-taxid #
+n ° de taxi
   
 taxno #
   
@@ -1787,7 +1787,7 @@ identifikacijska številka davka
   
 davčna številka
   
-Številka davčne datoteke
+številka davčne datoteke
   
 ## <a name="spain"></a>Espagne
 
@@ -1797,39 +1797,39 @@ Sept ou huit chiffres et une ou deux lettres dans le modèle spécifié
   
 ### <a name="pattern"></a>Modèle
 
-Espagnols personnes physiques avec une carte d’identité National Espagne :
+Personnes physiques espagnoles avec une carte d'identité nationale d'Espagne:
   
 -  Huit chiffres 
     
 - Une lettre majuscule (respecte la casse) 
     
-Spaniards non résident sans une carte d’identité National Espagne
+Spaniards non résident sans carte d'identité nationale d'Espagne
   
-- Une lettre majuscule « L » (respecte la casse)
+- Une lettre majuscule «L» (respecte la casse)
     
 - Sept chiffres 
     
 - Une lettre majuscule (respecte la casse) 
     
-Spaniards résident sous l’âge de 14 ans sans un Espagne National carte d’identité :
+Spaniards résident de moins de 14 ans sans carte d'identité nationale (Espagne):
   
-- Une lettre majuscule « K » (respecte la casse)
+- Une lettre majuscule «K» (respecte la casse)
     
 -  Sept chiffres  
     
 - Une lettre majuscule (respecte la casse)
     
-Étrangers avec numéro d’Identification d’un étranger
+Foreigners avec le numéro d'identification d'un étranger
   
-- Majuscules une lettre qui est « X », « Y » ou « Z » (respecte la casse) 
+- Une lettre majuscule qui est «X», «Y» ou «Z» (respecte la casse) 
     
 - Sept chiffres 
     
 - Une lettre majuscule (respecte la casse) 
     
-Étrangers sans numéro d’Identification d’un étranger
+Foreigners sans numéro d'identification étranger
   
-- Une lettre est « M » (respecte la casse) 
+- Une lettre majuscule qui est «M» (respecte la casse) 
     
 - Sept chiffres 
     
@@ -1843,13 +1843,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_spain_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_spain_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_spain_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_spain_eu_tax_file_number` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_spain_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_spain_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1864,38 +1864,38 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsspaineutaxfilenumber"></a>Keywords_spain_eu_tax_file_number
 
 id fiscal
 
   
-numéro d’identification de taxe
+Numéro d'identification de taxe
   
-id CIF
+identifiant CAF
   
-CIF aucune
+CAF non
   
-id cif espagnol
+ID CAF espagnol
   
-CIF
+importation
   
-Aucun fichier de taxe
+n ° fichier taxe
   
-nombre cif espagnol
+numéro CAF espagnol
   
 
 
 numéro de dossier fiscal
   
-Espagnol cif aucune
+espagnol (CAF)
   
-n° de taxe
+n ° taxe
   
-numéro de taxe
+Numéro de taxe
   
-taxid #
+n ° de taxi
   
 taxno #
   
@@ -1907,9 +1907,9 @@ spanishcifno #
   
 Número de contribuyente
   
-Número de impuesto corporativo
+Número de Impuesto Corporativo
   
-Número de identificación fiscale
+Número de Identificación fiscal
   
 CIF número
   
@@ -1923,19 +1923,19 @@ Dix chiffres et un symbole dans le modèle spécifié
   
 ### <a name="pattern"></a>Modèle
 
-Dix chiffres et un symbole :
+Dix chiffres et un symbole:
   
--  Six chiffres qui correspondent à la date de naissance (AAMMJJ) 
+-  Six chiffres correspondant à la date de naissance (AAMMJJ) 
     
 - Un signe plus, un signe moins ou une barre oblique inverse
     
-- Trois chiffres qui permettent l’identification numéro unique emplacement : 
+- Trois chiffres qui permettent de définir le numéro d'identification unique: 
     
-  - Pour les numéros émis avant 1990, le chiffre septième et huitième identifier la région de naissance ou personnes foreign-born
+  - Pour les numéros émis avant le 1990, le septième et le huitième chiffre identifient le comté de naissance ou les personnes nées à l'étranger.
     
-  - Indique le chiffre en neuvième position sexe soit impair pour masculin ou même pour femme
+  - Le chiffre de la neuvième position indique le sexe soit impair, soit pair pour femme.
     
-- Chiffre un contrôle
+- Un chiffre de contrôle
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1945,13 +1945,13 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_sweden_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_sweden_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_sweden_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_sweden_eu_tax_file_number` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_sweden_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_sweden_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
 ```
  <!-- EU Tax File Number -->
@@ -1966,53 +1966,53 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsswedeneutaxfilenumber"></a>Keywords_sweden_eu_tax_file_number
 
 id fiscal
 
   
-id de taxe ne.
+n ° ID taxe
   
-numéro d’identification de taxe
+Numéro d'identification de taxe
   
 identification fiscale
 
   
-identification Tax #
+n ° d'identification fiscale
   
-n° de taxe.
+n ° taxe
   
-taxe #
+codes
   
-taxid #
+n ° de taxi
   
-fichier de taxe
+fichier taxe
   
-fiscales aucun fichier.
+n ° fichier taxe
   
-numéro d’identification personnelle
+Numéro d'identification personnel
   
-skatt id nummer
+skatt ID Nummer
   
-skatt identifikation
+skatt Identifikation
   
 personnummer
   
-## <a name="uk"></a>ROYAUME-UNI
+## <a name="uk"></a>R.U.
 
 ### <a name="format"></a>Format
 
-Référence de contribuable unique (UTR) : 10 chiffres sans espaces et les séparateurs
+Référence de conTribuable unique (UTR): 10 chiffres sans espaces ni délimiteurs
   
-Numéro de sécurité sociale (NINO) : Pour plus d’informations, voir la section « britannique assurance nationale nombre (NINO) » dans [Rechercher quels types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Numéro d'assurance nationale (NINO): pour plus d'informations, reportez-vous à la section «numéro d'assurance nationale britannique (NINO)» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ### <a name="pattern"></a>Modèle
 
-Référence de contribuable unique (UTR) : 10 chiffres
+Référence de conTribuable unique (UTR): 10 chiffres
   
-Numéro de sécurité sociale (NINO) : Pour plus d’informations, voir la section « britannique assurance nationale nombre (NINO) » dans [Rechercher quels types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Numéro d'assurance nationale (NINO): pour plus d'informations, reportez-vous à la section «numéro d'assurance nationale britannique (NINO)» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -2022,9 +2022,9 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- La fonction `Func_uk_eu_tax_file_number` recherche de contenu qui correspond au modèle. 
+- La fonction `Func_uk_eu_tax_file_number` trouve le contenu qui correspond au modèle. 
     
-- Un mot clé à partir de `Keywords_uk_eu_tax_file_number` est trouvée. 
+- Un mot clé `Keywords_uk_eu_tax_file_number` from est trouvé. 
     
 ```
  <!-- EU Tax File Number -->
@@ -2036,31 +2036,31 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsukeutaxfilenumber"></a>Keywords_uk_eu_tax_file_number
 
 id fiscal
 
   
-id de taxe ne.
+n ° ID taxe
   
-numéro d’identification de taxe
+Numéro d'identification de taxe
   
 identification fiscale
 
   
-identification Tax #
+n ° d'identification fiscale
   
-n° de taxe.
+n ° taxe
   
-taxe #
+codes
   
-taxid #
+n ° de taxi
   
-fichier de taxe
+fichier taxe
   
-fiscales aucun fichier.
+n ° fichier taxe
   
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,12 +1,12 @@
 ---
-title: Gérer les dépositaires dans un cas eDiscovery avancées (Preview)
+title: Gestion des dépositaires dans un cas avancé eDiscovery (aperçu)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,107 +14,107 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: cce823924502fa2617d7819dc0967733fbc072e0
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 0c33335ecc103a97090dacaa769315ad9413b3c6
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706095"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214974"
 ---
-# <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a>Gérer les dépositaires dans un cas eDiscovery avancées (Preview)
+# <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a>Gestion des dépositaires dans un cas avancé eDiscovery (aperçu)
 
-L’onglet dépositaires contient une liste triable de tous les dépositaires dans ce cas. Après avoir ajouté dépositaires à un cas, plus d’informations sur chaque dépositaire seront automatiquement collectées d’Azure Active Directory.
+L'onglet dépositaires contient une liste triable de tous les dépositaires dans le cas. Une fois que vous avez ajouté des dépositaires à un cas, les détails de chaque dépositaire seront automatiquement collectés à partir d'Azure Active Directory.
 
-## <a name="viewing-custodian-details"></a>Affichage des détails dépositaire
+## <a name="viewing-custodian-details"></a>Affichage des détails des dépositaires
 
-La page flottant qui contient des détails dépositaire s’affiche après avoir ajouté un dépositaire à un cas et que vous les sélectionnez dans la liste sous l’onglet **dépositaires** . À partir de là, vous pouvez afficher tous les détails associés à ce dépositaire. La page flottant contient les champs suivants :
+La page de menu volant contenant les détails des dépositaires s'affiche une fois que vous avez ajouté un dépositaire à une demande **** de devis et que vous l'avez sélectionné dans la liste de l'onglet dépositaires. À partir de là, vous pouvez afficher tous les détails relatifs à ce dépositaire. La page de menu volant contient les champs suivants:
 
 - Informations de contact
 
-  - **Nom complet**: le nom affiché dans le carnet d’adresses pour le dépositaire. Il s’agit généralement de la combinaison du prénom de le dépositaire, initiale et le nom du milieu.
-  - **/ SMTP Mail**: adresse SMTP le pour le dépositaire, par exemple, jeff@contoso.onmicrosoft.com.  
-  - **Titre**: la fonction du dépositaire.
-  - **Service**: le nom du service dans lequel fonctionne le dépositaire.
-  - **Responsable**: responsable du dépositaire. Le responsable désigné reçoit toutes les communications pour cet dépositaire escalade.
+  - **Nom d'affichage**: nom affiché dans le carnet d'adresses pour le dépositaire. Il s'agit généralement de la combinaison du prénom du dépositaire, de l'initiale du deuxième prénom et du nom de famille.
+  - **Mail/SMTP**: adresse SMTP du dépositaire, par exemple, Jeff@contoso.onmicrosoft.com.  
+  - **Titre**: fonction du dépositaire.
+  - **Department**: nom du service dans lequel le dépositaire travaille.
+  - **Responsable**: le responsable du dépositaire. Le responsable désigné recevra toutes les communications d'escalade de ce dépositaire.
   
 - Informations d’emplacement
 
-  - **Ville**: la ville dans laquelle se trouve le dépositaire.
-  - **State**: état ou province dans l’adresse du dépositaire.
-  - **Pays/région**: la pays/la région dans laquelle se trouve le dépositaire ; par exemple, « US » ou « Royaume-Uni ».
-  - **Office**: l’emplacement de bureau en place du dépositaire de l’entreprise.
+  - **Ville**: ville dans laquelle se trouve le dépositaire.
+  - **État**: État ou province dans l'adresse du dépositaire.
+  - **Pays/région**: pays/région où se trouve le dépositaire; par exemple, «US» ou «UK».
+  - **Office**: l'emplacement du bureau dans le lieu d'activité du dépositaire.
 
-- Informations d’un incident
+- Informations sur les cas
 
-  - **État de blocage**: indique si le dépositaire a été mis en attente. 
-  - **État de communication**: indique si le dépositaire a reçu un avis de suspension. Si le dépositaire a reçu un avis, ce sera marqué comme étant *publiée*. Si le dépositaire n’a pas été émis un avis, puis ce statut sera *non publié*. 
-  - **État**: l’état de la dépositaire dans le cas. Il s’agit *Active* si le dépositaire est toujours en attente pour le cas. Si un dépositaire est supprimé à partir d’un cas, leur statut devient *lancé*. 
+  - **État de suspension**: indique si le dépositaire a été mis en attente. 
+  - **Statut**de la communication: indique si un avis de mise en attente a été émis pour le dépositaire. Si le dépositaire a reçu une notification, celle-ci sera marquée comme étant *publiée*. Si le dépositaire n'a pas reçu de notification, ce statut est *annulé*. 
+  - **État**: état du dépositaire dans le cas. Cela sera *actif* si le dépositaire est toujours en conservation pour le cas. Si un dépositaire est supprimé d'un incident, son statut passe à *lancé*. 
 
-- Statut de traitement
+- État de traitement
 
-  - **État de l’indexation**: indique l’état de la tâche d’indexation en profondeur.  
-  - **Heure de mise à jour de la dernière indexation**: indique le datestamp de lorsque la tâche d’indexation approfondie a été déclenchée pour la dernière.
-  - **Sources de données**: indique le nombre de boîtes aux lettres, les sites et les équipes qui ont été sélectionnées pour le dépositaire.
+  - **État**de l'indexation: indique l'état de la tâche d'indexation approfondie.  
+  - **Indexation de la dernière heure de mise à jour**: indique l'datestamp de la dernière fois que le travail d'indexation profonde a été déclenché.
+  - **Sources de données**: affiche le nombre de boîtes aux lettres, de sites et d'équipes qui ont été sélectionnées pour le dépositaire.
 
-## <a name="updating-a-custodian"></a>Mise à jour un dépositaire
+## <a name="updating-a-custodian"></a>Mise à jour d'un dépositaire
 
-Fur et à votre cas, vous pouvez constater qu’il peuvent exister des sources de données supplémentaires pertinents pour un & spécifique dépositaire votre cas. Dans d’autres scénarios, vous souhaiterez peut-être supprimer certaines sources de données qui ont été révisées et considérés comme non pertinents.
+Lors de l'évolution de votre cas, vous pouvez découvrir qu'il peut y avoir des sources de données supplémentaires pertinentes pour un dépositaire spécifique & votre cas. Dans d'autres scénarios, vous souhaiterez peut-être supprimer certaines sources de données qui ont été vérifiées et considérées comme non pertinentes.
 
-Pour mettre à jour un dépositaire et les sources de données sélectionnées :
+Pour mettre à jour un dépositaire et les sources de données sélectionnées:
 
-1. Sélectionnez un incident existant à partir de **découverte électronique > eDiscovery avancées (Preview)**.
+1. Sélectionnez un incident existant dans la découverte **électronique avancée _GT_ Advanced eDiscovery (aperçu)**.
   
-2. Dans ce cas, cliquez sur l’onglet **dépositaires** .
+2. Dans le cas, cliquez sur **** l'onglet dépositaires.
   
-3. Sélectionnez le custodian(s) dans la liste, cliquez sur **Modifier les sources**.
+3. Sélectionnez le ou les dépositaires dans la liste, puis cliquez sur **modifier les sources**.
   
-4. Mettre à jour les sélections pour Exchange et OneDrive les emplacements en cliquant sur **Choisir des sources de données**.
+4. Mettez à jour les sélections pour les emplacements Exchange et OneDrive en cliquant sur **choisir les sources de données**.
   
-5. Ajouter ou supprimer des équipes, SharePoint ou Exchange boîtes aux lettres mappées l’utilisateur en cliquant sur Sélectionner les **sources de données supplémentaires**. Pour plus d’informations sur la façon dont vous permettent de mapper les données sources pour un dépositaire, voir [dépositaires ajouter à un cas](add-custodians-to-case.md).
+5. Ajouter ou supprimer des équipes, SharePoint ou des boîtes aux lettres Exchange mappées à l'utilisateur en cliquant pour **Sélectionner des sources de données supplémentaires**. Pour plus d'informations sur la façon de mapper des sources de données à un dépositaire, consultez la rubrique [Ajouter des dépositaires à un cas](add-custodians-to-case.md).
   
-6. Pour mettre à jour l’état de conservation dépositaire, cliquez sur **garde archives permanentes**et activer ou désactiver la suspension pour dépositaires.
+6. Pour mettre à jour l'état de conservation des dépositaires, cliquez sur **Placer**les conservations privatives de Troie et activez ou désactivez la suspension pour les dépositaires.
 
 > [!TIP]
-> Vous pouvez sélectionner plusieurs dépositaires pour effectuer les actions en bloc, telles que la réindexation, l’annulation ou modification d’un jeu de dépositaires.
+> Vous pouvez sélectionner plusieurs dépositaires pour effectuer des actions en bloc, comme la réindexation, le lancement ou la modification d'un ensemble de dépositaires.
 
-## <a name="resolving-custodian-processing-errors"></a>Résolution des erreurs de traitement dépositaire
+## <a name="resolving-custodian-processing-errors"></a>Résolution des erreurs de traitement des dépositaires
 
-Dans la plupart des flux de travail juridique, après que dépositaires sont ajoutés à une enquête spécifique, un sous-ensemble de données d’utilisateurs est recherché. En raison de fichiers volumineux ou l’endommagement possible, certains éléments dans des sources de données des dépositaires peuvent être partiellement indexées. À l’aide de la fonctionnalité d’indexation approfondie eDiscovery avancées (Preview), ces éléments indexés partiellement peuvent être automatiquement convertis en nouvelle analyse et une réindexation de ces éléments à la demande. 
+Dans la plupart des flux de travail légaux, après avoir ajouté des dépositaires à une enquête spécifique, un sous-ensemble des données des utilisateurs est recherché. En raison de la taille des fichiers volumineux ou d'une altération possible, certains éléments des sources de données des dépositaires peuvent être partiellement indexés. À l'aide de la fonctionnalité d'indexation approfondie avancée eDiscovery (aperçu), ces éléments partiellement indexés peuvent être automatiquement corrigés en réanalysant et en réindexant ces éléments à la demande. 
 
-Lorsqu’un dépositaire est ajouté à un cas, leurs données seront automatiquement « profondeur indexées », qui permet aux utilisateurs de laisser ces partiellement indexée éléments place au lieu de devoir télécharger, corriger et exécutez de nouveau les recherches en dehors d’Office 365. Pendant le cycle de vie d’un incident, un utilisateur peut résoudre les éléments ou ajouter de nouvelles sources de données pour un dépositaire donné. Cela peut nécessiter l’Index dépositaire à mettre à jour. 
+Lorsqu'un dépositaire est ajouté à un cas, ses données sont automatiquement «indexées en profondeur», ce qui permet aux utilisateurs de laisser ces éléments partiellement indexés au lieu de devoir télécharger, corriger et réexécuter les recherches en dehors d'Office 365. Pendant le cycle de vie d'un cas, un utilisateur peut corriger des éléments ou ajouter de nouvelles sources de données pour un dépositaire donné. Cela peut nécessiter la mise à jour de l'index des dépositaires. 
 
-Pour déclencher un processus de renouvellement d’indexation adresse partiellement des éléments indexés :
+Pour déclencher un processus de réindexation afin d'adresser des éléments partiellement indexés:
 
-1. Accédez à la **découverte électronique > avancée découverte électronique (Preview)** et sélectionnez un incident existant.
+1. Accédez à **eDiscovery _GT_ Advanced eDiscovery (Preview)** et sélectionnez un incident existant.
 
-2. Dans ce cas, cliquez sur à **onglet dépositaires**. 
+2. Dans le cas, cliquez sur l' **onglet dépositaires**. 
 
-3. Sélectionnez le custodian(s) devant réindexation, puis cliquez sur **index de la mise à jour** dans la page mobile.
+3. Sélectionnez le ou les dépositaires qui doivent être réindexés, puis cliquez sur **mettre à jour l'index** sur la page de menu volant.
 
-4. Vérifier l’état de l’index de dépositaire en cliquant sur le lien dans la colonne **travail indexation état** sous l’onglet **dépositaires** .  
+4. Vérifiez l'état de l'index dépositaire en cliquant sur le lien dans la colonne **État du travail d'indexation** sous l'onglet **dépositaires** .  
 
-5. L’état pour le processus de renouvellement d’indexation peut être suivi également dans l’onglet **tâches** .
+5. L'état du processus de réindexation peut également être suivi sous l'onglet **tâches** .
 
-Pour plus d’informations sur les éléments indexés partiellement nouveau indexation et correction, voir [corriger les erreurs de traitement](processing-data-for-case.md).
+Pour plus d'informations sur la réindexation et la correction des éléments partiellement indexés, voir [Fix Processing Errors](processing-data-for-case.md).
 
-## <a name="releasing-a-custodian-from-a-case"></a>Libération d’un dépositaire à partir d’un cas
+## <a name="releasing-a-custodian-from-a-case"></a>Libération d'un dépositaire à partir d'un cas
 
-Un dépositaire est publié dans les situations de cas où un incident est fermé, un dépositaire n’est plus tenu de conserver le contenu d’un cas ou lorsqu’un dépositaire est considéré comme pas plus être pertinentes à un emplacement donné. 
+Un dépositaire est publié dans les situations où un litige est clos, un dépositaire n'est plus tenu de conserver le contenu d'un cas ou lorsqu'un dépositaire est considéré comme n'étant plus pertinent à un cas particulier. 
 
-Si vous relâchez un dépositaire après qu’un avis de suspension a été publié, une note de version est envoyé vers le dépositaire. En outre, les suspensions garde attribuées aux version finale dépositaires seront également supprimées.
+Si vous libérez un dépositaire après la publication d'une notification de mise en attente, un avis de publication est envoyé au dépositaire. En outre, toutes les conservations privatives de Troie attribuées aux dépositaires libérés seront également supprimées.
 
-Si le dépositaire a été placé sur une suspension en mode silencieux, où ils ont été délivrés pas les notifications de conservation légale, alors les suspensions garde attribuées aux version finale dépositaires seront supprimées.  
+Si le dépositaire a été placé sur un blocage automatique, où il n'a pas reçu de notifications de conservation légale, toutes les conservations privatives attribuées aux dépositaires libérés seront supprimées.  
 
-Pour libérer un dépositaire : 
+Pour libérer un dépositaire: 
 
-1.  Accédez à l’onglet **dépositaires** .
+1.  Accédez à l' **** onglet dépositaires.
 
-2.  Sélectionnez le dépositaire dans la liste et cliquez sur **dépositaires version** dans la page mobile.
+2.  Sélectionnez le dépositaire dans la liste, puis cliquez sur **libérer** les dépositaires sur la page de menu volant.
 
-    L’état de la dépositaire sous l’onglet **dépositaires** est défini sur **lancé** et l' **état de blocage** sur la page flottant est modifiée à **inactif/Inactive**. 
+    Le statut du dépositaire sous l'onglet **dépositaires** est défini sur **Released** et le **statut de blocage** sur la page flyout est modifié sur inactive. **** 
 
 > [!TIP]
-> Un dépositaire peut être simultanément être impliqués dans plusieurs domaines de conservation légale. Lorsque l’utilisateur relâche un dépositaire à partir d’un cas, les suspensions et les notifications entre autres questions ne sont pas affectées.
+> Un dépositaire peut être impliqué simultanément dans plusieurs questions juridiques. Lorsqu'un dépositaire est émis à partir d'un cas, les conservations et notifications sur d'autres sujets ne seront pas affectées.
 
 ## <a name="related-information"></a>Informations connexes
 

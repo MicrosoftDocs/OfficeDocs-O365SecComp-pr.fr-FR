@@ -6,199 +6,199 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
-description: 'Découvrez comment définir les options d’exportation des résultats à partir d’Office 365 avancée eDiscovery, y compris la procédure permettant de spécifier des paramètres pour un lot d’exportation. '
-ms.openlocfilehash: 49dab9820735af3bf5c322fc531c78a6baab2f8e
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: "Découvrez comment définir des options pour l'exportation des résultats à partir d'Office 365 Advanced eDiscovery, notamment la procédure de spécification des paramètres pour un lot d'exportation. "
+ms.openlocfilehash: 02314b0848d8e7bb37a7cb96fa4a721cf2622712
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29559047"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218094"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>Exporter les résultats dans Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-Cette rubrique décrit les options de configuration d’exportation avancées eDiscovery.
+Cette rubrique décrit les options avancées de configuration de l'exportation eDiscovery.
   
  **Dans cette rubrique :**
   
-- [Définition des sessions et exporter les lots](export-results-in-advanced-ediscovery.md#BK_Define)
+- [Définition des lots d'exportation et des sessions](export-results-in-advanced-ediscovery.md#BK_Define)
     
 - [Exportations incrémentielles et supplémentaires](export-results-in-advanced-ediscovery.md#BK_IncrementalReports)
     
-- [Définir les paramètres d’exportation de lot](export-results-in-advanced-ediscovery.md#BK_SetUpExport)
+- [Configurer les paramètres d'exportation par lot](export-results-in-advanced-ediscovery.md#BK_SetUpExport)
     
-- [Exporter des fichiers de sortie de rapport](export-results-in-advanced-ediscovery.md#BK_ExportOutputFIles)
+- [Exporter les fichiers de sortie de rapport](export-results-in-advanced-ediscovery.md#BK_ExportOutputFIles)
     
-## <a name="defining-export-batches-and-sessions"></a>Définition des sessions et exporter les lots
+## <a name="defining-export-batches-and-sessions"></a>Définition des lots d'exportation et des sessions
 <a name="BK_Define"> </a>
 
-Un lot d’exportation permet de traitement de l’exportation à l’aide d’un ensemble de paramètres définis. EDiscovery avancée vous permet de vous permet de définir des lots pour personnaliser chaque exportation.
+Un lot d'exportation permet le traitement de l'exportation à l'aide d'un ensemble de paramètres définis. Advanced eDiscovery vous permet de définir des lots pour personnaliser chaque exportation.
   
-Les paramètres sont définis par lot d’exportation. Un lot appelé « Exporter par lots 01 » est créé par défaut pour le premier lot d’un cas. Vous pouvez également modifier le nom et la description.
+Les paramètres sont définis par lot d'exportation. Un lot nommé «export batch 01» est créé par défaut pour le premier lot d'un cas. Vous pouvez également modifier le nom et la description du lot.
   
-Une session de l’exportation est l’exécution de la découverte avancée exportation au sein d’un lot d’exportation.
+Une session d'exportation est une exécution d'une exportation eDiscovery avancée dans un lot d'exportation.
   
 ## <a name="incremental-and-additional-exports"></a>Exportations incrémentielles et supplémentaires
 <a name="BK_IncrementalReports"> </a>
 
-Vous pouvez exécuter plusieurs sessions d’exportation au sein d’un lot d’exportation, pour garantir des résultats cohérents selon le même modèle d’exportation et les paramètres. Pour chaque session au sein d’un lot, vous pouvez exporter analytique nouvellement traitement des données d’incidents et traiter chaque « incrémentielle ».
+Vous pouvez exécuter plusieurs sessions d'exportation dans un lot d'exportation afin de garantir des résultats cohérents en fonction des mêmes paramètres et modèle d'exportation. Pour chaque session au sein d'un lot, vous pouvez exporter Analytics pour les données de cas nouvellement traitées et traiter chaque «de manière incrémentielle».
   
-Afin d’exporter à l’aide d’un ensemble de paramètres différent, vous devez d’abord créer un nouveau lot. La première session dans le nouveau lot produira des résultats pour les fichiers traités jusque-là, dans le cas ou non ces fichiers ont été importés et traités sur une ou plusieurs importations. Chaque lot recalcule les tableaux croisés dynamiques, similarité, inclusives, etc.. Sessions utilisent les paramètres définis pour le lot et ne pas recalculer des tableaux croisés dynamiques, similarité, inclusives, etc., pour l’exécution de chaque session.
+Pour exporter à l'aide d'un autre ensemble de paramètres, vous devez d'abord créer un nouveau lot. La première session du nouveau lot génère des résultats pour les fichiers traités dans le cas où, si ces fichiers ont été importés et traités sur une ou plusieurs importations. Chaque lot recalcule les tableaux croisés dynamiques, similarités, inclusifs, etc. Les sessions utilisent les paramètres définis pour le lot et ne recalculent pas les tableaux croisés dynamiques, la similarité, les inclusives, etc. pour chaque exécution de session.
   
-Par exemple, supposons un cas a été importé et ses données analysées. Afin de récupérer la proximité des doublons et messagerie Threading des résultats pour les données incrémentielles, cliquez sur **créer exporter la session** dans le même lot qui a été utilisé précédemment pour exporter des données. 
+Par exemple, supposons qu'un cas a été importé et que ses données ont été analysées. Pour récupérer les résultats des threads de proximité et des doublons de données pour les données incrémentielles, cliquez sur **créer une session d'exportation** dans le même lot utilisé pour exporter les données. 
   
-## <a name="set-up-batch-export-parameters"></a>Définir les paramètres d’exportation de lot
+## <a name="set-up-batch-export-parameters"></a>Configurer les paramètres d'exportation par lot
 <a name="BK_SetUpExport"> </a>
 
-L’outil d’exportation eDiscovery est utilisée pour exporter les résultats de la recherche de découverte avancée sur votre ordinateur local. Pour augmenter le débit de transfert de données et accélérer le processus d’exportation, vous pouvez configurer un paramètre de Registre Windows sur l’ordinateur qui vous permet d’exporter les résultats de recherche. Si vous souhaitez augmenter la vitesse de téléchargement, configurer les paramètres de Registre avant de configurer les paramètres d’exportation. Pour plus d’informations, voir [augmenter la vitesse de téléchargement lors de l’exportation des résultats de recherche de découverte électronique à partir d’Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
+L'outil d'exportation de découverte électronique est utilisé pour exporter les résultats de recherche d'Advanced eDiscovery vers votre ordinateur local. Pour augmenter le débit de transfert de données et accélérer le processus d'exportation, vous pouvez configurer un paramètre de Registre Windows sur l'ordinateur que vous utilisez pour exporter les résultats de la recherche. Si vous souhaitez augmenter la vitesse de téléchargement, configurez le paramètre de Registre avant de configurer les paramètres d'exportation. Pour plus d'informations, consultez [la rubrique augmentation de la vitesse de téléchargement lors de l'exportation des résultats de recherche eDiscovery à partir d'Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
   
-1. Dans découverte avancée, sélectionnez un cas, cliquez sur **Exporter** \> **le programme d’installation**.
+1. Dans Advanced eDiscovery, sélectionnez un cas et cliquez sur **Exporter** \> la **configuration**.
     
-    - Dans la liste **Exporter le lot** , sélectionnez le nom ou exporter les résultats dans un lot d’exportation 01, (la feuille par défaut). 
+    - Dans la liste **Exporter le lot** , sélectionnez le nom du lot ou exportez les résultats vers l'export lot 01 (par défaut). 
     
-    - Pour exporter les résultats pour les nouveaux fichiers ajoutés à un cas existant, continuez avec votre lot en cours. Pour créer une session dans le lot, sélectionnez le même numéro de traitement par lots et cliquez sur **créer exporter la session** , vous pouvez utiliser cette option pour exporter les mêmes paramètres que le lot précédent, de manière incrémentielle. 
+    - Pour exporter les résultats pour les nouveaux fichiers que vous avez ajoutés à un cas existant, continuez avec votre lot actuel. Pour créer une session dans le lot, sélectionnez le même numéro de lot, puis cliquez sur **créer une session d'exportation** vous pouvez utiliser cette option pour exporter les mêmes paramètres que le lot précédent, de manière incrémentielle. 
     
-    - Pour exporter vers un nouveau lot, cliquez sur **Ajouter** ![icône Ajouter](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)et entrez un nouveau nom dans **nom de la feuille** (ou acceptez celui par défaut) et une description dans la **description de lot**. Cliquez sur **OK**.
+    - Pour exporter vers un nouveau lot, cliquez sur **Ajouter** ![une](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)icône Ajouter et entrez un nouveau nom dans le **champ nom du lot** (ou acceptez la valeur par défaut) et une description dans **Description du lot**. Cliquez sur **OK**.
     
-    - Pour modifier un nom ou une description, sélectionnez le nom de **l’exportation de lot**, cliquez sur **Modifier** ![icône Modifier](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png), puis modifiez les champs.
+    - Pour modifier un nom de lot ou une description, sélectionnez le nom dans **Exporter le lot**, cliquez](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)sur **modifier** ![l'icône d'édition, puis modifiez les champs.
     
       > [!NOTE]
-      > Après avoir exécuté les sessions pour un lot d’exportation, ils ne peuvent pas être supprimés. En outre, les seuls certains paramètres peuvent être modifiés une fois que la première session est exécutée. 
+      > Une fois que vous avez exécuté des sessions pour un lot d'exportation, il est impossible de les supprimer. De plus, seuls certains paramètres peuvent être modifiés une fois la première session exécutée. 
   
-    - Pour créer un lot d’exportation en double, choisissez le **lot d’exportation en double** ![créer une icône de lot d’exportation en double](media/3f6d5f59-e842-4946-a493-473528af0119.jpg) et entrez un nom et une description pour le lot en double dans le panneau de configuration. 
+    - Pour créer un lot d'exportation en double, sélectionnez dupliquer un **lot** ![d'exportation en](media/3f6d5f59-e842-4946-a493-473528af0119.jpg) double créez un lot d'exportation en double et entrez un nom et une description pour le lot dupliqué dans le panneau. 
     
-    - Pour supprimer un lot d’exportation, cliquez sur **Supprimer** ![supprimer une icône d’exportation de lot](media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg).
+    - Pour supprimer un lot d'exportation, sélectionnez **supprimer** ![supprimer une icône](media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)exporter un lot.
     
-    - Pour afficher l’historique d’un lot, cliquez sur **historique de lot** ![icône historique d’affichage](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg).
+    - Pour afficher l'historique d'un lot, sélectionnez **** ![l'icône](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)historique du lot-afficher l'historique.
     
-2. Sous **remplissage**, sélectionnez **inclure uniquement les fichiers au-dessus note coupure** et/ou de **lot d’exportation affiner** si vous souhaitez ajuster les paramètres de votre lot d’exportation. 
+2. Sous **remplissage**, sélectionnez **inclure uniquement les fichiers au-dessus du score** de découpage de pertinence et/ou affiner l' **exportation de lot** si vous souhaitez affiner les paramètres de votre lot d'exportation. 
     
-3. Si vous sélectionnez **inclure uniquement les fichiers au-dessus note coupure**, le **problème** est activé. Si le score de pertinence du fichier est supérieure au score de limite pour le problème sélectionné, le fichier sera exporté, sauf si elle est exclu par le filtre « pour révision ». 
+3. Si vous sélectionnez **inclure uniquement les fichiers au-dessus du score**de découpAge de pertinence, le **problème** est alors activé. Si le score de pertinence du fichier est supérieur au score de découpage du problème sélectionné, le fichier est exporté sauf s'il est exclu par le filtre «pour révision». 
   
-    Si vous sélectionnez **lot d’exportation affiner**, la **déduplication** et filtrer par « Pour révision » champ cases d’option sont activés. Si vous choisissez **la déduplication**, puis les fichiers en double seront filtrés en fonction de la stratégie définie [cas niveau (valeur par défaut) : à partir de chaque ensemble de fichiers en double dans le cas d’entier, un seul fichier sera déduplication duped. Niveau dépositaire : à partir de chaque ensemble de fichiers en double de la même dépositaire, un seul fichier sera déduplication duped.] La sortie d’exportation contient un enregistrement de tous les fichiers en double. Si vous choisissez champ **Filter by « pour passer en revue les'** , sélectionnez **Modifier sous métadonnées** pour entrer vos paramètres de champ **« pour révision »** . Sélectionnez **inclure les fichiers d’entrée** à inclure les fichiers sources dans le contenu du package. Vous pouvez désactiver ce paramètre pour accélérer le processus d’exportation. Notez que les fichiers natifs seront exportés dans tous les cas. 
+    Si vous sélectionnez **affiner l'exportation**, les cases d'option **de déDuplication** et de filtrage par «pour révision» sont activées. Si vous choisissez **** la déduplication, les fichiers dupliqués sont filtrés en fonction de la stratégie définie [niveau de cas (par défaut): à partir de chaque ensemble de fichiers en double dans le cas entier, tous les fichiers sauf un seront de duped. Niveau des dépositaires: à partir de chaque ensemble de fichiers en double du même dépositaire, tous les fichiers sauf un seront de duped.] La sortie d'exportation contient un enregistrement de tous les fichiers en double. Si vous choisissez **Filtrer par champ de révision** , sélectionnez **modifier sous métadonnées** pour entrer les paramètres de champ **«pour révision»** . Sélectionnez **inclure les fichiers d'entrée** pour inclure les fichiers sources dans le contenu du package. Vous pouvez désactiver ce paramètre pour accélérer le processus d'exportation. Notez que les fichiers natifs seront exportés dans tous les cas. 
     
-4. Sous **métadonnées**, sélectionnez parmi les options suivantes dans la liste **Exporter le modèle** (une seule fois par session). 
+4. Sous **métadonnées**, sélectionnez l'une des options suivantes dans la liste **Exporter le modèle** (une fois par session). 
     
-    - **Standard**: ensemble de base des éléments de données, les métadonnées et les propriétés. Utilisez cette option lorsque importer des données a déjà été traitées dans découverte avancée et d’exporter des données sont téléchargées vers un système qui contient déjà les fichiers. Par défaut, les colonnes de modèle d’exportation sont créés et remplis.
+    - **Standard**: ensemble de base des éléments de données, des métadonnées et des propriétés. Utilisez cette option lorsque les données d'importation ont déjà été traitées dans Advanced eDiscovery et que les données d'exportation sont téléchargées vers un système qui contient déjà les fichiers. Par défaut, les colonnes de modèle d'exportation sont créées et remplies.
     
-    - **Tous les**: ensemble de toutes les données de traitement, ainsi que les scores d’analyser et de la pertinence de métadonnées standard. Ce modèle est requis lors de la découverte électronique avancée effectue le traitement et des données de fichier sont téléchargées vers un système externe pour la première fois.
+    - **All**: ensemble complet de métadonnées standard incluant toutes les données de traitement, ainsi que les scores d'analyse et de pertinence. Ce modèle est requis lorsque Advanced eDiscovery effectue le traitement et que les données de fichier sont téléchargées sur un système externe pour la première fois.
     
-    - **Problèmes**: sélectionnez **Tous les problèmes** ou un problème spécifique que vous avez créé. 
+    - **Problèmes**: sélectionnez **tous les problèmes** ou sélectionnez un problème particulier que vous avez créé. 
     
-5. Sous **Destination**:
+5. Sous **destination**:
     
-    - **Télécharger sur l’ordinateur local**
+    - **Téléchargement sur l'ordinateur local**
     
-    - **Exporter vers définies par l’utilisateur de blob Azure**: Si cette option est activée, vous pouvez spécifier un jeton d’URL et les associations de conteneur.
+    - **Exportation vers l'objet BLOB Azure défini par l'utilisateur**: si cette option est activée, vous pouvez spécifier une URL de conteneur et un jeton SAS.
     
       > [!NOTE]
-      > Une fois qu’un package d’exportation est stocké dans blob Azure définis par l’utilisateur, les données ne sont plus gérées par eDiscovery avancée ; Il est géré par l’objet blob Azure. Cela signifie que si vous supprimez le cas, les fichiers exportés resteront toujours sur l’objet blob Azure. 
+      > Une fois qu'un package d'exportation est stocké dans l'objet BLOB Azure défini par l'utilisateur, les données ne sont plus gérées par Advanced eDiscovery; elle est gérée par l'objet BLOB Azure. Cela signifie que si vous supprimez le cas, les fichiers exportés resteront toujours sur le BLOB Azure. 
   
-    - **Jeton de session exportation futurs SAS enregistrer**: s’il est activé, le jeton SAS sera chiffré dans la base de données interne de découverte électronique avancées pour une utilisation future.
+    - **Enregistrer le jeton SAS pour une session d'exportation future**: si cette option est activée, le jeton SAS est chiffré dans la base de données interne avancée eDiscovery pour une utilisation ultérieure.
     
       > [!NOTE]
-      > Actuellement, le jeton SAS expire après un mois. Si vous essayez de télécharger après plus d’un mois, que vous devez annuler la dernière session, puis l’exporter à nouveau. 
+      > Actuellement, le jeton SAS expire au bout d'un mois. Si vous essayez d'effectuer un téléchargement après plus d'un mois, vous devez annuler la dernière session, puis effectuer une nouvelle exportation. 
   
-6. Cliquez sur **Modifier** pour définir les paramètres de champ « pour révision ». 
+6. Cliquez sur **modifier** pour définir les paramètres de champ «pour la révision». 
     
-    ![Configurer pour vérifier les paramètres de champ pour un lot d’exportation](media/39451aba-f6fe-4a01-8ed0-0be6a6ce889a.png)
+    ![Configurer les paramètres de champ de révision pour un lot d'exportation](media/39451aba-f6fe-4a01-8ed0-0be6a6ce889a.png)
   
-   - **Pour vérifier les paramètres de champ**, dans la liste de liste déroulante **Sélectionner le scénario** , cliquez sur le scénario et l’étendue de la révision. Les paramètres sont affichés en fonction de votre sélection.
+   - Sous **pour la révision des paramètres de champ**, dans la liste déRoulante **Sélectionner un scénario** , sélectionnez le scénario et l'étendue de la révision. Les paramètres sont affichés en fonction de votre sélection.
     
-      - **Passer en revue les tous les** (valeur par défaut) : tous les messages électroniques, pièces jointes et les documents sont sélectionnés par défaut. 
+      - **Vérifier tout** (valeur par défaut): tous les messages électroniques, pièces jointes et documents sont sélectionnés par défaut. 
     
-      - **Passez en revue tout le contenu d’un jeu unique**: Inclusives et uniques copies inclus, les pièces jointes uniques dans le message électronique régler, représentant à partir de chaque ensemble de doublons exactes.
+      - **Examinez tout le contenu unique d'un jeu**: inclusifs et copies inclusives uniques, pièces jointes uniques dans le niveau du jeu de courrier, représentatives de chaque ensemble de doublons exacts.
     
-      - **Passez en revue le contenu unique dans un jeu - aucune copie inclus**: Inclusives, les pièces jointes uniques dans le message électronique régler, représentant à partir de chaque ensemble de doublons exactes.
+      - **Examiner tout le contenu unique d'un ensemble-aucune copie inclusive**: inclus, pièces jointes uniques dans le niveau du jeu de messages, représentative de chaque ensemble de doublons exacts.
     
-      - **Passez en revue toutes les uniques contenus et connexes famille fichiers**: Inclusives, les pièces jointes uniques dans le message électronique au niveau, la valeur représentant de chaque ensemble de doublons exacts, développez pour inclure des fichiers de votre famille.
+      - **Examinez tous les fichiers de famille et de contenu uniques**: inclus, pièces jointes uniques dans le niveau du jeu de messages, représentatif de chaque ensemble de doublons exacts, puis développez pour inclure les fichiers de famille.
     
-      - **Personnalisé** (vous permet de définir les options dans la boîte de dialogue) : la valeur par défaut consiste à conserver les sélections en cours et activer toutes les options de la boîte de dialogue permettre leur sélection. Si vous sélectionnez cette option, vous pouvez ensuite personnaliser les paramètres pour les messages électroniques, des documents, des pièces jointes et divers.
+      - **Personnalisé** (vous permet de définir les options dans la boîte de dialogue): par défaut, les sélections actuelles sont conservées et toutes les options de boîte de dialogue sont activées, afin d'autoriser leur sélection. Si vous sélectionnez cette option, vous pouvez personnaliser les paramètres des e-mails, des documents, des pièces jointes et des fichiers divers.
     
-    - Sous **les messages électroniques**, sélectionnez les messages électroniques que vous souhaitez exporter.
+    - Sous **e-mails**, sélectionnez les courriers électroniques que vous souhaitez exporter.
     
       - **Tous les messages électroniques**: (par défaut) tous les messages électroniques sont sélectionnés.
     
-      - **Inclusives**: un message électronique (inclus) est un dernier message électronique d’un thread, et il contient tous les autres messages électroniques à partir du thread.
+      - **Inclusif**: un message électronique inclusif est le dernier courrier électronique d'un thread, qui contient tous les autres messages électroniques provenant du thread.
     
-      - **Inclusives et copies inclus uniques**: copies inclus et inclusives avec le même objet, corps et pièces jointes ; copies inclus uniques sont copies uniques de ces messages électroniques.
+      - **Inclusifs et copies inclusives uniques**: copies inclusives et inclusifs avec le même objet, le même corps et les mêmes pièces jointes; les copies inclusives uniques sont des copies uniques de ces messages électroniques.
     
-    - Sous **Documents**, sélectionnez les documents que vous souhaitez exporter. 
+    - Sous **documents**, sélectionnez les documents que vous souhaitez exporter. 
     
       - **Tous les documents**: (par défaut) tous les documents sont sélectionnés.
     
-      - **Tableaux croisés dynamiques**: un fichier choisi comme représentant près de doublons jeu de, qui est généralement utilisé comme base lors de la révision de l’ensemble.
+      - **Pivots**: fichier choisi comme représentative de l'ensemble des doublons, généralement utilisé comme ligne de base lors de l'examen de l'ensemble.
     
-      - **Représentation de chaque ensemble de doublons exacts**: les fichiers en double Unique (y compris le tableau croisé dynamique).
+      - **Représentatif de chaque ensemble de doublons exacts**: fichiers uniques de proximité (y compris le tableau croisé dynamique).
     
     - Sous **pièces jointes**, sélectionnez les pièces jointes que vous souhaitez exporter. 
     
-      - **Toutes les pièces jointes**: (par défaut) toutes les pièces jointes sont sélectionnés.
+      - **Toutes les pièces jointes**: (par défaut) toutes les pièces jointes sont sélectionnées.
     
-      - **Pièce jointe unique dans le niveau de cas**: fichiers de pièce jointe Unique dans le cas spécifié.
+      - **Pièce jointe unique au niveau du cas**: fichiers de pièces jointes uniques dans le cas spécifié.
     
-      - **Pièce jointe unique régler**: fichiers de pièce jointe Unique dans le cas de courrier électronique spécifiée.
+      - **Pièce jointe unique dans le niveau du jeu de courrier électronique**: fichiers de pièces jointes uniques dans le cas d'un message électronique spécifié.
     
-   - Sous**divers**, vous pouvez choisir pour **traiter les pièces jointes en tant que documents**, **traiter les messages électroniques en tant que documents**ou **développer pour inclure des fichiers de votre famille**. Lorsque vous choisissez **développer pour inclure des fichiers de votre famille**, pour chaque fichier est marqué pour révision, tous les fichiers de la même famille également signalées.
+   - Sous**Micellaneous**, vous pouvez choisir de **traiter les pièces jointes en tant que documents**, de **traiter les courriers électroniques comme des documents**ou **de développer pour inclure des fichiers de famille**. Lorsque vous choisissez **développer pour inclure des fichiers de famille**, pour chaque fichier marqué pour révision, tous les fichiers de la même famille seront également marqués.
     
-7. Cliquez sur **Enregistrer** pour enregistrer les paramètres. 
+7. Sélectionnez **Enregistrer** pour enregistrer les paramètres. 
     
-8. Une fois que vous spécifiez les paramètres d’exportation, pour démarrer le traitement d’exportation, cliquez sur **créer exporter la session**.
+8. Une fois que vous avez spécifié les paramètres d'exportation, cliquez sur **créer une session**d'exportation pour démarrer l'exportation de lot.
     
-    Pendant l’exportation, l’état est affiché dans **l’état de la tâche**. Les résultats sont affichés dans **l’exportation de synthèse**.
+    Lors de l'exportation, l'État est affiché dans l'état de la **tâche**. Les résultats sont affichés dans le résumé de l' **exportation**.
     
-9. Dans la fenêtre **téléchargement de fichiers** , cliquez sur **Copier dans le Presse-papiers** pour copier la clé d’exportation. 
+9. Dans la fenêtre **Télécharger les fichiers** , cliquez sur **copier dans le presse-papiers** pour copier la clé d'exportation. 
     
     ![Télécharger des fichiers](media/99cf2c13-4954-479f-9741-80d7458c1a15.png)
   
 10. Cliquez sur **Fermer**. 
     
-    L’outil d’exportation de découverte est démarré.
+    L'outil d'exportation de découverte électronique est démarré.
     
     ![Outil d’exportation de la découverte électronique](media/705756ca-ee97-4d24-b70f-8b23513f6d11.gif)
   
-11. Dans l' **outil d’exportation de découverte électronique**:
+11. Dans l' **outil d'exportation de découverte électronique**:
     
-    -  **Collez la Signature accès partagé qui sera utilisé pour se connecter à la source**, collez dans la clé d’exportation qui youcopied dans le Presse-papiers à l’étape 7.
+    -  Dans **coller la signature d'accès partagé qui sera utilisée pour se connecter à la source**, collez la clé d'exportation youcopied dans le presse-papiers à l'étape 7.
     
-    - Cliquez sur **Parcourir** pour sélectionner l’emplacement cible pour le stockage des fichiers d’exportation téléchargé sur l’ordinateur local. 
+    - Cliquez sur **Parcourir** pour sélectionner l'emplacement cible pour le stockage des fichiers d'exportation téléchargés sur l'ordinateur local. 
     
-    - Cliquez sur **Démarrer**. Les fichiers d’exportation sont téléchargés sur l’ordinateur local. Si vous avez choisi **d’Exporter vers blob Azure de défini par l’utilisateur** à l’étape 4, la session est exportée vers une destination d’URL de stockage Blob de votre choix.
+    - Cliquez sur **Démarrer**. Les fichiers d'exportation sont téléchargés sur l'ordinateur local. Si vous avez choisi **Exporter vers un objet BLOB Azure défini** par l'utilisateur à l'étape 4, la session est exportée vers une URL de stockage BLOB de votre choix.
     
-Pour une description complète des champs dans le rapport d’exportation, voir [exporter des champs du rapport](export-report-fields-in-advanced-ediscovery.md).
+Pour une description complète des champs figurant dans le rapport d'exportation, voir [Export report fields](export-report-fields-in-advanced-ediscovery.md).
   
-## <a name="export-report-output-files"></a>Exporter des fichiers de sortie de rapport
+## <a name="export-report-output-files"></a>Exporter les fichiers de sortie de rapport
 <a name="BK_ExportOutputFIles"> </a>
 
-Le tableau suivant répertorie les fichiers de sortie qui sont générées lorsque vous exécutez un lot d’exportation.
+Le tableau suivant répertorie les fichiers de sortie générés lors de l'exécution d'un lot d'exportation.
   
 |**Nom de fichier**|**Type de fichier**|**Description**|
 |:-----|:-----|:-----|
-|Résumé de l’exportation  <br/> |CSV  <br/> |Un fichier journal généré par l’outil d’exportation de découverte électronique.  <br/> |
-|Suivi  <br/> |txt  <br/> |Un fichier journal généré par l’outil d’exportation de découverte électronique.  <br/> |
-|Fichiers texte extrait  <br/> |Dossier de fichiers  <br/> |Dossier qui contient les fichiers texte extrait les fichiers exportés.  <br/> |
-|Entrée ou fichiers natifs  <br/> |Dossier de fichiers  <br/> |Dossier qui contient les fichiers natifs et d’entrée des fichiers exportés.  <br/> |
-|Exporter la liste  <br/> |xlsx  <br/> |Métadonnées de fichiers exportés au format xlsx. Champs dans les fichiers sont appliquent aux modèles utilisateur sélectionne à exporter. Si nécessaire, plusieurs fichiers sont créés, chacun contient des lignes de 100 à 150 Ko. Si une certaine valeur contient plus de caractères qu’une cellule Excel peut contenir (actuellement la limite est de 32 767 caractères), puis la valeur est supprimée à la longueur maximale autorisée. Si une valeur est tronquée, couleur d’arrière-plan de la cellule est rouge pour indiquer à l’utilisateur. » Participants e-mail » sont un exemple d’un champ qui dépasse la limite de longueur, si le message électronique a été envoyé à une distribution de grande taille. Pour plus d’informations sur les champs de sortie, voir [exporter des champs du rapport](export-report-fields-in-advanced-ediscovery.md) .<br/> |
-|Charger le fichier  <br/> |CSV  <br/> |Métadonnées de fichiers exportés au format csv pour le chargement dans une autre application. Champs dans les fichiers sont appliquent aux modèles utilisateur sélectionne à exporter.  <br/> |
-|Indicateur de réussite  <br/> |txt  <br/> |Ne créés lors de l’exportation pour un 3ème partie blob Azure. Si l’exportation a abouti, le fichier sera créé. En cas d’échec, complet ou partiel réussite le fichier ne sera pas créé. Fichier sera créé dans le dossier racine, permettant de suivi automatique sur les différents statuts de lots/sessions d’exportation. Il s’agit d’un fichier vide. Son nom est : TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime.txt.  <br/> |
+|Exporter le résumé  <br/> |value  <br/> |Un fichier journal généré par l'outil d'exportation de découverte électronique.  <br/> |
+|Oligo  <br/> |txt  <br/> |Un fichier journal généré par l'outil d'exportation de découverte électronique.  <br/> |
+|Fichiers texte extraits  <br/> |Dossier de fichiers  <br/> |Dossier qui contient les fichiers texte extraits des fichiers exportés.  <br/> |
+|Fichiers d'entrée ou natifs  <br/> |Dossier de fichiers  <br/> |Dossier qui contient les fichiers d'entrée et d'entrée natifs des fichiers exportés.  <br/> |
+|Exporter la liste  <br/> |xlsx  <br/> |Métadonnées de fichiers exPortées au format xlsx. Les champs de fichiers sont en fonction du modèle que l'utilisateur choisit d'exporter. Si nécessaire, plusieurs fichiers sont créés, chacun contenant 100 150K lignes. Si une certaine valeur contient plus de caractères qu'une cellule Excel ne peut contenir (actuellement la limite est de 32 767 caractères), la valeur sera réduite à la longueur maximale autorisée. Si une valeur est ajustée, la couleur d'arrière-plan de la cellule est rouge pour l'indiquer à l'utilisateur. " «Participants à la messagerie» est un exemple de champ qui peut dépasser la limite de longueur, si le courrier électronique a été envoyé à une grande distribution. Pour plus d'informations sur les champs de sortie, voir [Export report fields](export-report-fields-in-advanced-ediscovery.md) .<br/> |
+|Charger un fichier  <br/> |value  <br/> |Métadonnées de fichiers exPortées au format CSV pour chargement dans une autre application. Les champs de fichiers sont en fonction du modèle que l'utilisateur choisit d'exporter.  <br/> |
+|Indicateur de réussite  <br/> |txt  <br/> |Créé uniquement lors de l'exportation vers un objet BLOB Azure tiers. Si l'exportation réussit complètement, le fichier est créé. En cas de défaillance ou de la réussite partielle, le fichier ne sera pas créé. Le fichier est créé dans le dossier racine, ce qui permet le suivi automatique des différents statuts de lots/sessions d'exportation. Il s'agit d'un fichier vide. Son nom est: TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime. txt.  <br/> |
    
 ## <a name="see-also"></a>Voir aussi
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Affichage de l’historique des commandes et l’exportation des résultats antérieurs](view-batch-history-and-export-past-results.md)
+[Affichage de l'historique du lot et exportation des résultats passés](view-batch-history-and-export-past-results.md)
   
 [Configuration rapide pour Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
 
 [Exportation des champs d’un rapport](export-report-fields-in-advanced-ediscovery.md)
   
-[Augmenter la vitesse de téléchargement lors de l’exportation des résultats de recherche de découverte électronique à partir d’Office 365](increase-download-speeds-when-exporting-ediscovery-results.md)
+[Augmentation de la vitesse de téléchargement lors de l'exportation des résultats de recherche eDiscovery à partir d'Office 365](increase-download-speeds-when-exporting-ediscovery-results.md)
 

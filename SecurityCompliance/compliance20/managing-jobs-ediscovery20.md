@@ -1,12 +1,12 @@
 ---
-title: Gérer les travaux d’eDiscovery avancée (Preview)
+title: Gérer les travaux dans Advanced eDiscovery (aperçu)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,26 +14,26 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 493d1b6ec448f3de9b782028b903c7b290681e88
-ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
+ms.openlocfilehash: 03165ba64ed5b75fa2d327ee798dc6a8e43fe908
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694800"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214984"
 ---
-# <a name="manage-jobs-in-advanced-ediscovery-preview"></a>Gérer les travaux d’eDiscovery avancée (Preview)
+# <a name="manage-jobs-in-advanced-ediscovery-preview"></a>Gérer les travaux dans Advanced eDiscovery (aperçu)
 
-Voici une liste de tâches qui sont suivies dans l’onglet **tâches** d’un cas de découverte électronique avancée (Preview).
+Voici une liste des tâches qui sont suivies sous l'onglet **tâches** d'un cas dans Advanced EDiscovery (aperçu).
 
-- Données dépositaire la réindexation
-- Estimation des résultats de la recherche
-- Préparation de l’aperçu de la recherche
-- Ajout de données à un jeu de travail
+- Réindexation des données du dépositaire
+- Estimation des résultats de recherche
+- Préparation de l'aperçu de la recherche
+- Ajout de données à une plage de travail
 - Ajout de données à un autre jeu de travail
-- Ajout de données non - Office 365 pour un jeu de travail
-- Préparation pour la résolution des erreurs
-- Ajout de données à un jeu de travail corrigés
-- Jeux de charges de comparaison
-- Marquage de documents
-- Analytique en cours d’exécution
-- Préparation des données pour l’exportation
+- Ajout de données non Office 365 à un jeu de travail
+- Préparation de la résolution des erreurs
+- Ajout de données corrigées à une plage de travail
+- Comparaison des jeux de charges
+- Marquage des documents
+- Exécution de l'analyse
+- Préparation des données pour l'exportation

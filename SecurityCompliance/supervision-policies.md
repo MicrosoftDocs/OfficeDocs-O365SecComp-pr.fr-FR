@@ -7,7 +7,7 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Présentation des stratégies de surveillance dans Office 365
-ms.openlocfilehash: f715fdcd073f8d75f0046bb3ed5adb1987eec263
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 7a173809f37262f73671fe6ee96485cda97c1eb3
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090976"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214114"
 ---
 # <a name="supervision-policies-in-office-365"></a>Stratégies de surveillance dans Office 365
 
@@ -215,7 +215,7 @@ Utilisez les rapports de surveillance pour afficher l'activité de révision au 
   
 ### <a name="how-to-use-the-report"></a>Utilisation du rapport
 
-Lorsqu'une stratégie de surveillance identifie un message de communication à des fins de révision, le courrier électronique est remis au dossier de surveillance du réviseur dans Outlook et Outlook Web App. Ce rapport répertorie chaque nom de stratégie et le nombre de communications à chaque étape du processus de révision.
+Lorsqu'une stratégie de surveillance identifie un message de communication à des fins de révision, le courrier électronique est remis au dossier de surveillance du réviseur dans Outlook et Outlook sur le Web (anciennement Outlook Web App). Ce rapport répertorie chaque nom de stratégie et le nombre de communications à chaque étape du processus de révision.
   
 Utilisez le rapport pour:
   
@@ -228,7 +228,7 @@ Voici une répartition des valeurs que vous pouvez voir dans la colonne **type**
   
 |**Type de balise**|**Signification**|
 |:-----|:-----|
-| Non révisé | Nombre de messages électroniques qui n'ont pas encore été consultés. Ces messages sont en attente de révision dans le tableau de bord de supervision Office 365 ou dans le dossier de surveillance du réviseur dans Outlook/Outlook Web App.|
+| Non révisé | Nombre de messages électroniques qui n'ont pas encore été consultés. Ces messages sont en attente de vérification dans le tableau de bord de supervision Office 365 ou dans le dossier de surveillance du réviseur dans Outlook/Outlook sur le Web
 | Conformes | Le nombre de messages vérifiés et marqués comme étant conformes. Ces messages doivent toujours être résolus. |
 | Suspects | Le nombre de messages consultés et marqués comme suspects. Cela agit comme un indicateur; d'autres relecteurs peuvent vous aider à vérifier si un message électronique a besoin d'une enquête pour la conformité. Ces messages doivent toujours être résolus. |
 | Non conforme (actif) | Nombre de messages électroniques non conformes que les relecteurs examinent actuellement. |

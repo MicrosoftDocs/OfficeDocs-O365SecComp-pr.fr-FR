@@ -6,56 +6,56 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
-description: 'Découvrez comment configurer les rôles d’utilisateur, de créer des cas et affecter des utilisateurs au cas dans Office 365 avancée de découverte électronique.  '
-ms.openlocfilehash: 4c0043b7651cc82272492e19faf01041c6f67932
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: "Découvrez comment configurer des rôles d'utilisateur, créer des cas et affecter des utilisateurs à des cas dans Office 365 Advanced eDiscovery.  "
+ms.openlocfilehash: f393c59a9726baa6d7423eacb33543ae7adf5065
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29559057"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212986"
 ---
 # <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>Configurer des utilisateurs et des cas dans Office 365 Advanced eDiscovery
 
-Cette rubrique décrit comment configurer les utilisateurs et les cas eDiscovery Office 365 avancés.
+Cette rubrique décrit comment configurer des utilisateurs et des cas pour Office 365 Advanced eDiscovery.
   
 > [!NOTE]
 > Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="prerequisites"></a>Conditions préalables
 
-Avant de configurer les cas et les utilisateurs avancé eDiscovery, les éléments suivants est requis :
+Avant de configurer des cas et des utilisateurs dans Advanced eDiscovery, les éléments suivants sont requis:
   
-- Pour analyser les données d’un utilisateur à l’aide de la découverte électronique avancée, l’utilisateur (le dépositaire des données) doit être affecté à une licence Office 365 E5. Autrement, les utilisateurs possédant une licence Office 365 E1 ou E3 peuvent être affectés à une licence autonome de découverte avancée. Les administrateurs et des agents de conformité qui sont affectées à des cas et utilisent eDiscovery avancée pour analyser des données inutile d’une licence E5. 
+- Pour analyser les données d'un utilisateur à l'aide de Advanced eDiscovery, l'utilisateur (le dépositaire des données) doit disposer d'une licence Office 365 E5. Par ailleurs, les utilisateurs disposant d'une licence Office 365 E1 ou E3 peuvent se voir attribuer une licence avancée eDiscovery autonome. Les administrateurs et les responsables de la mise en conformité qui sont affectés à des cas et utilisent Advanced eDiscovery pour analyser les données n'ont pas besoin d'une licence E5. 
     
-- Vous devez être membre du groupe de rôles eDiscovery Gestionnaire de sécurité Office 365 &amp; centre de conformité pour créer un cas eDiscovery et ajouter des membres. Ajouter au groupe de rôles de gestionnaire de découverte de la sécurité &amp; centre de conformité, vous devez être un administrateur global dans votre organisation Office 365. Si vous n’êtes pas un administrateur global, vous devrez demander à un administrateur global pour vous ajouter au groupe de rôles gestionnaire eDiscovery. Pour plus d’informations, voir :
+- Vous devez être membre du groupe de rôles gestionnaire de découverte électronique dans le centre de sécurité &amp; conformité Office 365 pour créer un cas eDiscovery et y ajouter des membres. Pour vous ajouter au groupe de rôles gestionnaire de découverte électronique &amp; dans le centre de sécurité conformité, vous devez être un administrateur général dans votre organisation Office 365. Si vous n'êtes pas un administrateur général, vous devrez demander à un administrateur général de vous ajouter au groupe de rôles gestionnaire de découverte électronique. Pour plus d'informations, voir:
     
-  - [Autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md)
+  - [Autorisations dans le centre de sécurité &amp; conformité Office 365](permissions-in-the-security-and-compliance-center.md)
     
-  - [Attribuer des autorisations de sécurité Office 365 eDiscovery &amp; centre de conformité](assign-ediscovery-permissions.md)
+  - [Attribuer des autorisations eDiscovery dans le centre de &amp; sécurité conformité Office 365](assign-ediscovery-permissions.md)
     
-## <a name="step-1-assign-users-ediscovery-permissions"></a>Étape 1 : Attribuer aux utilisateurs les autorisations de découverte électronique
+## <a name="step-1-assign-users-ediscovery-permissions"></a>Étape 1: attribuer des autorisations eDiscovery aux utilisateurs
 
-La première étape consiste à attribuer aux utilisateurs les autorisations exigence de sécurité &amp; sorte qu’ils puissent m’ajouté en tant que membre d’un cas de découverte électronique du centre de conformité. Après l’ajout d’un utilisateur en tant que membre d’un cas de la sécurité &amp; centre de conformité, ils pourront accéder à la casse d’eDiscovery avancée.
+La première étape consiste à attribuer aux utilisateurs les autorisations requises dans le &amp; Centre de sécurité conformité afin qu'ils puissent m'ajouter en tant que membre d'un cas eDiscovery. Une fois qu'un utilisateur est ajouté en tant que membre d'un cas &amp; dans le centre de sécurité conformité, il pourra accéder à l'incident dans Advanced eDiscovery.
   
-Pour affecter un utilisateur les autorisations nécessaires pour pouvoir être ajoutés en tant que membre d’un cas eDiscovery, voir l’étape 1 dans [cas eDiscovery de sécurité Office 365 &amp; centre de conformité](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members).
+Pour attribuer aux utilisateurs les autorisations nécessaires afin qu'ils puissent être ajoutés en tant que membre d'un cas de découverte électronique, voir l'étape 1 dans [les cas &amp; de découverte électronique dans le centre de sécurité conformité Office 365](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members).
   
-## <a name="step-2-create-an-ediscovery-case-and-add-members"></a>Étape 2 : Créer un cas eDiscovery et ajouter des membres
+## <a name="step-2-create-an-ediscovery-case-and-add-members"></a>Étape 2: créer un cas eDiscovery et ajouter des membres
 
-L’étape suivante consiste à créer un nouveau cas eDiscovery dans la sécurité &amp; centre de conformité et ajouter des membres. Membres de l’incident seront en mesure d’accéder à la casse d’eDiscovery avancée.
+L'étape suivante consiste à créer un nouveau cas eDiscovery dans le centre &amp; de sécurité et à ajouter des membres. Les membres de ce cas seront alors en mesure d'accéder au cas dans Advanced eDiscovery.
   
-1. Pour créer un nouveau cas eDiscovery, voir l’étape 2 de [cas eDiscovery de sécurité Office 365 &amp; centre de conformité](ediscovery-cases.md#step-2-create-a-new-case).
+1. Pour créer un cas de découverte électronique, consultez l'étape 2 dans [cas de découverte électronique dans &amp; le centre de sécurité conformité Office 365](ediscovery-cases.md#step-2-create-a-new-case).
     
-2. Pour ajouter des membres à une affaire eDiscovery, consultez l’étape 3 dans [cas eDiscovery de sécurité Office 365 &amp; centre de conformité](ediscovery-cases.md#step-3-add-members-to-a-case)
+2. Pour ajouter des membres à un cas eDiscovery, reportez-vous à l'étape 3 dans [cas de découverte électronique dans le centre de sécurité &amp; conformité Office 365](ediscovery-cases.md#step-3-add-members-to-a-case)
     
-## <a name="step-3-go-a-case-in-advanced-ediscovery"></a>Étape 3 : Accéder à un cas de découverte électronique avancée
+## <a name="step-3-go-a-case-in-advanced-ediscovery"></a>Étape 3: passer un cas dans Advanced eDiscovery
 
-Une fois que vous créez un cas eDiscovery et ajoutez des membres, vous (ou un membre de la casse) peut accéder à la casse correspondante d’eDiscovery avancée. Pour accéder à un cas de découverte électronique avancée, voir l’étape 8 dans [cas eDiscovery de sécurité Office 365 &amp; centre de conformité](ediscovery-cases.md#step-8-go-to-the-case-in-advanced-ediscovery).
+Une fois que vous avez créé un cas eDiscovery et ajouté des membres, vous (ou tout membre du cas) pouvez accéder à la casse correspondante dans Advanced eDiscovery. Pour accéder à un cas dans Advanced eDiscovery, reportez-vous à l'étape 8 dans [les cas eDiscovery dans le centre de sécurité &amp; conformité Office 365](ediscovery-cases.md#step-8-go-to-the-case-in-advanced-ediscovery).
   
 ## <a name="see-also"></a>Voir aussi
 

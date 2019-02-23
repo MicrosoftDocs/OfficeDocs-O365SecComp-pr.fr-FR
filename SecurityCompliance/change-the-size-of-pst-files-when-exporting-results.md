@@ -1,37 +1,37 @@
 ---
-title: Modifier la taille des fichiers PST lors de l’exportation des résultats de recherche eDiscovery
+title: Modifier la taille des fichiers PST lors de l'exportation des résultats de recherche eDiscovery
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
-description: Vous pouvez modifier la taille par défaut des fichiers PST qui sont téléchargés sur votre ordinateur lorsque vous exportez des résultats de recherche eDiscovery.
-ms.openlocfilehash: c01f05a02fd94941eb2eb7a05b4c84ffecec9b39
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+description: Vous pouvez modifier la taille par défaut des fichiers PST téléchargés sur votre ordinateur lorsque vous exportez les résultats de recherche de découverte électronique.
+ms.openlocfilehash: 8a956091f29ec1b564d3194c7e3ca2680fdeb564
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522245"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214624"
 ---
-# <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Modifier la taille des fichiers PST lors de l’exportation des résultats de recherche eDiscovery
+# <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Modifier la taille des fichiers PST lors de l'exportation des résultats de recherche eDiscovery
 
-Lorsque vous utilisez l’outil d’exportation de découverte électronique Office 365 pour exporter les résultats de la messagerie d’une recherche de découverte électronique à partir de différents outils Microsoft eDiscovery, la taille par défaut d’un fichier PST qui peut être exporté est de 10 Go. Si vous souhaitez modifier cette taille par défaut, vous pouvez modifier le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de recherche. Une des raisons à cela étant un fichier PST tiennent sur un support amovible, tel un DVD, un CD-ROM ou une clé USB. 
+Lorsque vous utilisez l'outil d'exportation de découverte électronique Office 365 pour exporter les résultats du courrier électronique d'une recherche de découverte électronique à partir des différents outils eDiscovery de Microsoft, la taille par défaut d'un fichier PST pouvant être exporté est de 10 Go. Si vous souhaitez modifier cette taille par défaut, vous pouvez modifier le Registre Windows sur l'ordinateur que vous utilisez pour exporter les résultats de la recherche. L'une des raisons pour y parvenir est qu'un fichier PST peut tenir sur un support amovible, un DVD, un disque compact ou un lecteur USB. 
   
 > [!NOTE]
->  L’outil d’exportation de découverte électronique Office 365 est utilisée pour exporter les résultats de recherche lors de l’utilisation de la recherche de contenu de sécurité Office 365 &amp; centre de conformité, eDiscovery sur Place dans Exchange Online et le centre eDiscovery dans SharePoint Online. 
+>  L'outil d'exportation de découverte électronique Office 365 est utilisé pour exporter les résultats de la recherche lors de l'utilisation &amp; de la recherche de contenu dans le centre de sécurité conformité Office 365, la découverte électronique inaltérable dans Exchange Online et le centre EDiscovery dans SharePoint Online. 
   
-## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>Créer un paramètre de Registre pour modifier la taille des fichiers PST lors de l’exportation de résultats de recherche eDiscovery
+## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>Créer un paramètre de Registre pour modifier la taille des fichiers PST lors de l'exportation des résultats de recherche de découverte électronique
 
-Effectuez la procédure suivante sur l’ordinateur que vous allez utiliser pour exporter les résultats d’une recherche eDiscovery.
+Effectuez la procédure suivante sur l'ordinateur que vous allez utiliser pour exporter les résultats d'une recherche de découverte électronique.
   
-1. Fermez l’outil d’exportation de découverte électronique Office 365 si elle est ouverte. 
+1. Fermez l'outil d'exportation eDiscovery d'Office 365 s'il est ouvert. 
     
-2. Enregistrez le texte suivant dans un fichier de Registre de fenêtre à l’aide d’un suffixe de nom de fichier de .reg ; par exemple, PstExportSize.reg. 
+2. Enregistrez le texte suivant dans un fichier de Registre Windows à l'aide d'un suffixe de nom de fichier. reg; par exemple, PstExportSize. reg. 
     
     ```
     Windows Registry Editor Version 5.00
@@ -39,45 +39,45 @@ Effectuez la procédure suivante sur l’ordinateur que vous allez utiliser pour
     "PstSizeLimitInBytes"="1073741824"
     ```
 
-    Dans l’exemple ci-dessus, le `PstSizeLimitInBytes` valeur est définie sur 1 073 741 824 octets ou environ 1 Go. Voici quelques autres exemples de valeurs pour le `PstSizeLimitInBytes` paramètre. 
+    Dans l'exemple ci-dessus `PstSizeLimitInBytes` , la valeur est définie sur 1 073 741 824 octets ou environ 1 Go. Voici d'autres exemples de valeurs pour le `PstSizeLimitInBytes` paramètre. 
     
-    |**Taille en Go (environ)**|**Taille en octets**|
+    |**Taille en Go (env.)**|**Taille en octets**|
     |:-----|:-----|
     |.7 GO (700 MO)  <br/> |751619277  <br/> |
-    |2 Go  <br/> |2147483648  <br/> |
+    |2 Go  <br/> |2147483648  <br/> |
     |4 Go  <br/> |4294967296  <br/> |
     |8 Go  <br/> |8589934592  <br/> |
    
-3. Modifier la `PstSizeLimitInBytes` valeur à la taille maximale de votre choix d’un fichier PST lorsque vous exportez les résultats de recherche, puis enregistrez le fichier. 
+3. Remplacez la `PstSizeLimitInBytes` valeur par la taille maximale de fichier PST souhaitée lorsque vous exportez les résultats de la recherche, puis enregistrez le fichier. 
     
-4. Dans l’Explorateur Windows, cliquez sur ou double-cliquez sur le fichier .reg que vous avez créée lors des étapes précédentes.
+4. Dans l'Explorateur Windows, cliquez ou double-cliquez sur le fichier. reg que vous avez créé au cours des étapes précédentes.
     
-5. Dans la fenêtre de contrôle d’accès utilisateur, cliquez sur **Oui** pour laisser l’Éditeur du Registre que la modification. 
+5. Dans la fenêtre contrôle d'accès des utilisateurs, cliquez sur **Oui** pour permettre à l'éditeur du registre de procéder à la modification. 
     
-6. Lorsque vous y êtes invité à continuer, cliquez sur **Oui**.
+6. Lorsque vous êtes invité à continuer, cliquez sur **Oui**.
     
-    L’Éditeur du Registre affiche un message indiquant que le paramètre a été correctement ajouté au Registre.
+    L'éditeur du Registre affiche un message indiquant que le paramètre a été ajouté avec succès au registre.
     
-7. Vous pouvez répéter les étapes 3 à 6 pour modifier la valeur pour le `PstSizeLimitInBytes` paramètre de Registre. 
+7. Vous pouvez répéter les étapes 3-6 pour modifier la valeur du `PstSizeLimitInBytes` paramètre de registre. 
   
-## <a name="frequently-asked-questions-about-changing-the-default-size-of-pst-files-when-you-export-ediscovery-search-results"></a>Forum aux questions sur la modification de la taille par défaut des fichiers PST lors de l’exportation de résultats de recherche eDiscovery
+## <a name="frequently-asked-questions-about-changing-the-default-size-of-pst-files-when-you-export-ediscovery-search-results"></a>Forum aux questions sur la modification de la taille par défaut des fichiers PST lors de l'exportation des résultats de recherche de découverte électronique
 
- **Pourquoi est la valeur par défaut taille 10 Go ?**
+ **Pourquoi la taille par défaut est-elle de 10 Go?**
   
-La taille par défaut de 10 Go a été en fonction des commentaires des clients ; 10 Go est un bon équilibre entre la quantité de contenu dans un fichier PST unique et avec un risque de corruption de fichier minimal optimale.
+La taille par défaut de 10 Go était basée sur les commentaires des clients; 10 Go constitue un bon équilibre entre la quantité optimale de contenu dans un seul fichier PST et une probabilité minimale d'endommagement des fichiers.
   
- **Dois-je augmenter ou diminuer la taille par défaut des fichiers PST ?**
+ **Dois-je augmenter ou réduire la taille par défaut des fichiers PST?**
   
-Les clients ont tendance à diminuer la limite de taille afin que les résultats de recherche adapté sur un support amovible qu’ils peuvent physiquement expédier autres emplacements dans leur organisation. Nous ne recommandons pas augmenter la taille par défaut, car il est supérieure à 10 Go peut-être des problèmes de corruption des fichiers PST.
+Les clients ont tendance à réduire la limite de taille afin que les résultats de la recherche tiennent sur des supports amovibles qu'ils peuvent physiquement fournir à d'autres emplacements de leur organisation. Il n'est pas recommandé d'augmenter la taille par défaut, car les fichiers PST de plus de 10 Go peuvent présenter des problèmes d'endommagement.
   
- **Quel ordinateur dois-je faire ?**
+ **Sur quel ordinateur dois-je effectuer cette opération?**
   
-Vous devez modifier le paramètre de Registre sur un ordinateur local que vous exécutez l’outil d’exportation de découverte électronique Office 365 sur.
+Vous devez modifier le paramètre de Registre sur tout ordinateur local sur lequel vous exécutez l'outil d'exportation de découverte électronique Office 365.
   
- **Après modification de ce paramètre, dois-je redémarrer l’ordinateur ?**
+ **Après avoir modifié ce paramètre, dois-je redémarrer l'ordinateur?**
   
-Non, vous n’êtes pas obligé de redémarrer l’ordinateur. Mais, si l’outil d’exportation de découverte électronique Office 365 est en cours d’exécution, vous devrez fermer et le redémarrage après vous modifier ce paramètre.
+Non, vous n'avez pas besoin de redémarrer l'ordinateur. Toutefois, si l'outil d'exportation eDiscovery d'Office 365 est en cours d'exécution, vous devrez le fermer et le redémarrer une fois que vous aurez modifié ce paramètre.
   
- **Est une clé de Registre existante obtenir modifiée ou est une nouvelle clé sont créée ?**
+ **Une clé de Registre existante est-elle modifiée ou une nouvelle clé est-elle créée?**
   
-Une nouvelle clé de Registre est créée la première fois que vous exécutez le fichier .reg que vous avez créé dans cette procédure. Puis le paramètre est modifié à chaque fois que vous modifiez et réexécutez la modifier le fichier .reg.
+Une nouvelle clé de Registre est créée lors de la première exécution du fichier. reg que vous avez créé au cours de cette procédure. Le paramètre est ensuite modifié chaque fois que vous modifiez et réexécutez le fichier de modification. reg.

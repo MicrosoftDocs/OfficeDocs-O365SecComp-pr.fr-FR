@@ -1,87 +1,72 @@
 ---
-title: Protection anti-usurpation dans Office 365
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 12/06/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
-description: Cet article explique comment Office 365 atténue contre les attaques par hameçonnage qu’utilise falsifié expéditeur domaines, c'est-à-dire, qui sont usurpés. Pour ce faire, il analyse les messages et le blocage de celles qui peuvent être authentifiés neithe à l’aide des méthodes d’authentification standard de courrier électronique, ni les autres techniques de réputation de l’expéditeur. Cette modification est en cours implémentée pour réduire le nombre d’organisations dans Office 365 sont affichent dans les attaques par phishing.
-ms.openlocfilehash: 4ce195feae002e468d1b6ed61c6b186af7f8950d
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29614508"
+title: "protection contre l'usurpation d'identité dans Office 365" ms. Author: krowley Author: kccross Manager: laurawi ms. Date: 12/06/2018 ms. audience: professionnel ms. topic: article ms. service: O365-seccomp localization_priority: normal Search. appverid:
+- MET150 ms. AssetID: d24bb387-c65d-486e-93e7-06a4f1a436c0 ms. collection:
+    - M365-Security-Description de la conformité: «cet article explique comment Office 365 réduit les attaques par hameçonnage qui utilisent des domaines d'expéditeurs falsifiés, c'est-à-dire les domaines qui sont falsifiés. Pour ce faire, il analyse les messages et bloque ceux qui peuvent être authentifiés neithe à l'aide de méthodes d'authentification de messagerie standard ou d'autres techniques de réputation de l'expéditeur. Cette modification est implémentée afin de réduire le nombre d'attaques par hameçonnage dans Office 365 sont exposées à.
 ---
+
 # <a name="anti-spoofing-protection-in-office-365"></a>Protection anti-usurpation dans Office 365
 
-Cet article explique comment Office 365 atténue contre les attaques par hameçonnage qu’utilise falsifié expéditeur domaines, c'est-à-dire, qui sont usurpés. Il y parvient en analysant les messages et de blocage de ceux qui ne peuvent pas être authentifiés à l’aide des méthodes d’authentification standard de courrier électronique, ni les autres techniques de réputation de l’expéditeur. Cette modification est en cours implémentée pour réduire le nombre de clients sont exposés à des attaques de phishing.
+Cet article explique comment Office 365 atténue les attaques par hameçonnage qui utilisent des domaines d'expéditeurs falsifiés, c'est-à-dire des domaines falsifiés. Pour ce faire, il analyse les messages et bloque ceux qui ne peuvent pas être authentifiés à l'aide de méthodes d'authentification de messagerie standard, ni d'autres techniques de réputation de l'expéditeur. Cette modification est implémentée pour réduire le nombre d'attaques de hameçonnage auxquelles les clients sont exposés.
   
-Cet article décrit également pourquoi ce changement est effectué, comment les clients peuvent préparer à cette modification, comment afficher les messages qui seront affectés, comment créer des rapports sur les messages, comment limiter le nombre de faux positifs, ainsi que comment expéditeurs à Microsoft doivent préparer changement.
+Cet article décrit également la raison pour laquelle cette modification est effectuée, la façon dont les clients peuvent se préparer à ce changement, comment afficher les messages qui seront affectés, comment générer des rapports sur les messages, comment atténuer les faux positifs, ainsi que comment les expéditeurs à Microsoft doivent se préparer à ce problème. port.
   
-La technologie anti-usurpation de Microsoft a été initialement déployée à ses organisations qui avaient un abonnement à Office 365 entreprise E5 ou avaient acheté module complémentaire de leur abonnement Office 365 Advanced Threat Protection (DAV). À compter d’octobre, 2018, nous avons étendu la protection pour les organisations ayant ainsi que Exchange Online Protection (EOP). En outre, en raison de la manière que tous nos filtres Découvrez chacun des autres utilisateurs Outlook.com peuvent également être affectées.
+La technologie de détection d'usurpation de Microsoft a été déployée à l'origine dans ses organisations disposant d'un abonnement Office 365 entreprise E5 ou a acheté le complément Office 365 Advanced Threat Protection (ATP) pour leur abonnement. Depuis octobre 2018, nous avons étendu la protection aux organisations qui possèdent également Exchange Online Protection (EOP). En outre, en raison de la façon dont tous nos filtres apprennent les uns des autres, les utilisateurs de Outlook.com peuvent également être affectés.
   
-## <a name="how-spoofing-is-used-in-phishing-attacks"></a>Utilisation de l’usurpation d’identité dans les attaques par hameçonnage
+## <a name="how-spoofing-is-used-in-phishing-attacks"></a>Utilisation de l'usurpation dans les attaques par hameçonnage
 
-Lorsqu’il s’agit de protéger ses utilisateurs, Microsoft prend les menaces de phishing sérieusement. Une des techniques qui spam et phishing utilisent couramment usurpation, lorsque l’expéditeur est falsifié et un message s’affiche pour provenir d’une personne ou un endroit autre que la source réelle. Cette technique est souvent utilisée dans les campagnes de phishing conçus pour obtenir des informations d’identification de l’utilisateur. Technologie de blocage usurpation d’identité de Microsoft examine spécifiquement contrefaçon de la « à partir de : en-tête » qui est celui qui s’affiche dans le client de messagerie électronique comme Outlook. Lorsque Microsoft a le niveau de confiance élevé qui From : en-tête est faux, il identifie le message comme une usurpation d’identité.
+Lorsqu'il s'agit de protéger ses utilisateurs, Microsoft prend la menace de hameçonnage. L'une des techniques couramment utilisées par les spammeurs et les auteurs de phishing est l'usurpation, c'est-à-dire lorsque l'expéditeur est falsifié et qu'un message semble provenir de quelqu'un ou d'un autre emplacement que la source réelle. Cette technique est souvent utilisée dans les campagnes de hameçonnage conçues pour obtenir des informations d'identification utilisateur. La technologie anti-usurpation de Microsoft examine spécifiquement la contrefaçon de l'en-tête «From:» qui est celle qui s'affiche dans un client de messagerie tel qu'Outlook. Lorsque Microsoft a un niveau de confiance élevé que l'en-tête From: est usurpé, il identifie le message comme une usurpation.
   
-Messages d’usurpation des deux répercussions utilisateurs réels :
+Les messages d'usurpation ont deux conséquences négatives pour les utilisateurs réels:
   
-### <a name="1-spoofed-messages-deceive-users"></a>1. messages usurpés intercepter les utilisateurs
+### <a name="1-spoofed-messages-deceive-users"></a>1. les messages falsifiés tromper les utilisateurs
   
-Tout d’abord, un message usurpé peut-être amener un utilisateur en cliquant sur un lien et abandonner leurs informations d’identification, le téléchargement de logiciels malveillants ou répondre à un message avec contenu sensible (la dernière est appelée Business messagerie compromis). Par exemple, Voici un message de phishing avec un expéditeur usurpé de msoutlook94@service.outlook.com :
+Tout d'abord, un message usurpé peut inciter un utilisateur à cliquer sur un lien et à donner des informations d'identification, télécharger des programmes malveillants ou répondre à un message avec du contenu sensible (ce qui est connu sous le nom de compromission du courrier électronique professionnel). Par exemple, voici un message de hameçonnage avec un expéditeur usurpé d'msoutlook94@service.outlook.com:
   
-![Hameçonnage service.outlook.com à emprunt d’identité](media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
+![Message d'hameçonnage empruntant une identité service.outlook.com](media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
   
-La commande ci-dessus ne provient pas réellement de service.outlook.com, mais au lieu de cela, a été falsifiés par l’auteur du phishing à lui donner comme. Il tente d’amener un utilisateur en cliquant sur le lien dans le message.
+Les éléments ci-dessus ne proviennent pas réellement de service.outlook.com, mais ont été falsifiés par le hameçonnage pour lui donner l'apparence souhaitée. Elle tente de tromper un utilisateur en cliquant sur le lien dans le message.
   
-L’exemple suivant est l’usurpation d’identité contoso.com :
+L'exemple suivant est l'usurpation d'contoso.com:
   
-![Hameçonnage - business messagerie compromis](media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
+![Message de hameçonnage-compromission de la messagerie professionnelle](media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
   
-Le message semble fiable, mais est en fait une usurpation d’identité. Ce message d’hameçonnage est un type de compromission de messagerie entreprise qui est une sous-catégorie de hameçonnage.
+Le message semble légitime, mais en réalité il s'agit d'une usurpation. Ce message de hameçonnage est un type de compromission de la messagerie professionnelle qui est une sous-catégorie du hameçonnage.
     
-### <a name="2-users-confuse-real-messages-for-fake-ones"></a>2. messages réels pour ceux faux confondez pas utilisateurs
+### <a name="2-users-confuse-real-messages-for-fake-ones"></a>2. les utilisateurs confondent les messages réels pour les fausses
   
-Deuxième messages usurpés créer incertitude pour les utilisateurs qui savoir à propos de hameçonnage, mais ne peut pas faire la différence entre un message réel et usurpés. Par exemple, Voici un exemple d’un mot de passe réinitialisé à partir de l’adresse de messagerie du compte Microsoft Security :
+Deuxièmement, les messages usurpés créent une incertitude pour les utilisateurs qui connaissent les messages d'hameçonnage, mais ils ne peuvent pas distinguer la différence entre un message réel et un message falsifié. Par exemple, voici un exemple de réinitialisation effective du mot de passe à partir de l'adresse de messagerie du compte de sécurité Microsoft:
   
-![Réinitialisation du mot de passe légitimes Microsoft](media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
+![Réinitialisation de mot de passe légitime Microsoft](media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
   
-Le message ci-dessus provient de Microsoft, mais en même temps, les utilisateurs sont utilisés pour l’obtention de messages de phishing qui peut-être amener un utilisateur en cliquant sur un lien et abandonner leurs informations d’identification, le téléchargement de logiciels malveillants ou répondre à un message avec du contenu sensible. Comme il est difficile de déterminer la différence entre une réinitialisation du mot de passe réel et un substitut un grand nombre d’utilisateurs ignore ces messages, les signaler comme courrier indésirable ou inutilement compte-rendu les messages à Microsoft en tant que hameçonnage manqués.
+Le message ci-dessus provient de Microsoft, mais en même temps, les utilisateurs sont utilisés pour obtenir des messages de hameçonnage susceptibles de tromper un utilisateur en cliquant sur un lien et en donnant ses informations d'identification, en téléchargeant des programmes malveillants ou en répondant à un message avec du contenu sensible. Étant donné qu'il est difficile d'indiquer la différence entre une réinitialisation de mot de passe réelle et une fausse tentative, de nombreux utilisateurs ignorent ces messages, les signalent comme courrier indésirable ou signalent inutilement les messages à Microsoft comme étant des arnaques de hameçonnage manquées.
     
-Pour arrêter l’usurpation d’identité, le courrier électronique du secteur de filtrage a développé des protocoles d’authentification électronique comme [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)et [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email). DMARC empêche l’usurpation examinant l’expéditeur d’un message - celle que l’utilisateur voit dans leur client de messagerie (dans l’exemple ci-dessus, il s’agit service.outlook.com, outlook.com et accountprotection.microsoft.com) - avec le domaine transmis SPF ou DKIM. Autrement dit, le domaine que voit l’utilisateur a été authentifié et n’est donc pas usurpé. Pour une description plus complète, consultez la section «*comprendre pourquoi l’authentification du courrier électronique n’est pas toujours suffisant pour empêcher l’usurpation d’identité «* plus loin dans ce document. 
+Pour arrêter l'usurpation d'identité, l'industrie de filtrage du courrier électronique a développé des protocoles d'authentification de messagerie, tels que [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)et [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email). DMARC empêche l'usurpation d'identité de l'expéditeur d'un message, celle que l'utilisateur voit dans son client de messagerie (dans les exemples ci-dessus, il s'agit de service.outlook.com, outlook.com et accountprotection.microsoft.com)-avec le domaine qui a réussi ou DKIM. Autrement dit, le domaine que l'utilisateur voit a été authentifié et n'est donc pas usurpé. Pour une discussion plus complète, consultez la section «*comprendre pourquoi l'authentification de messagerie n'est pas toujours suffisante pour arrêter l'usurpation»* , plus loin dans ce document. 
   
-Toutefois, le problème est que l’authentification de courrier électronique enregistrements sont facultatives, non requis. Par conséquent, tandis que les domaines avec les stratégies de l’authentification forte comme microsoft.com et skype.com sont protégés contre l’usurpation d’identité, domaines que publier tout les stratégies d’authentification plus faibles ou aucune stratégie, sont les objectifs de l’usurpation. À compter de mars 2018, uniquement 9 % des domaines de sociétés dans le classement Fortune 500 publier des stratégies de messagerie fort d’authentification. Le 91 % restants peuvent être usurpés par un auteur de phishing, et à moins que le filtre de courrier détecte à l’aide d’une autre stratégie, peuvent être remis à un utilisateur final et les inciter :
+Toutefois, le problème est que les enregistrements d'authentification de messagerie sont facultatifs, et non pas obligatoires. Par conséquent, tandis que les domaines avec des stratégies d'authentification fortes telles que microsoft.com et skype.com sont protégés contre l'usurpation, les domaines qui publient des stratégies d'authentification plus faibles ou aucune stratégie ne sont des cibles à usurper. Depuis le 2018 mars, seuls 9% des domaines des sociétés du Fortune 500 publient des stratégies d'authentification de messagerie fiables. Les 91% restants peuvent être usurpés par un hameçonnage et, sauf si le filtre de courrier électronique les détecte à l'aide d'une autre stratégie, peut être remis à un utilisateur final et le tromper:
   
-![Stratégies DMARC des entreprises du classement Fortune 500](media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
+![Stratégies DMARC des sociétés Fortune 500](media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
   
-La proportion de petites et moyennes entreprises qui se trouvent pas dans le classement Fortune 500 qui publient des stratégies de messagerie fort d’authentification est, en toujours plus petits pour les domaines qui sont en dehors de l’Amérique du Nord et en Europe.
+La proportion des petites et moyennes entreprises qui ne figurent pas dans le Fortune 500 qui publient des stratégies d'authentification de messagerie forte est plus petite et encore plus petite pour les domaines situés en dehors de l'Amérique du Nord et de l'Europe occidentale.
   
-Il s’agit d’un problème très grand car alors que les entreprises ne connaissent pas forcément de fonctionnement de l’authentification du courrier électronique, phishing comprendre et tirer parti de l’absence de celle-ci.
+Il s'agit d'un problème majeur, car les entreprises n'ont peut-être pas conscience du fonctionnement de l'authentification de messagerie, les auteurs de phishing comprennent et tirent parti de l'absence de service.
   
-Pour plus d’informations sur la configuration de SPF, DKIM et DMARC, consultez la section «*clients d’Office 365"* plus loin dans ce document. 
+Pour plus d'informations sur la configuration de SPF, DKIM et DMARC, consultez la section «*clients d'Office 365»* plus loin dans ce document. 
   
-## <a name="stopping-spoofing-with-implicit-email-authentication"></a>Arrêt de l’usurpation d’identité avec l’authentification implicite de courrier électronique
+## <a name="stopping-spoofing-with-implicit-email-authentication"></a>Arrêt de l'usurpation avec l'authentification de messagerie implicite
 
-Hameçonnage phishing et sonde étant ce type de problème et en raison de l’adoption de stratégies d’authentification du courrier électronique fort limitée, Microsoft continue à investir dans des fonctionnalités pour protéger ses clients. Par conséquent, Microsoft avancer avec *authentification implicite de courrier électronique* - si un domaine n’authentifie, Microsoft traiter comme s’il a publié des enregistrements de messagerie d’authentification et traite en conséquence si elle ne passe pas. 
+Étant donné que le hameçonnage et le Spear Phishing sont un problème, et en raison de l'adoption limitée de stratégies d'authentification de messagerie fortes, Microsoft continue d'investir dans des fonctionnalités pour protéger ses clients. Par conséquent, Microsoft se déplace vers *l'avant avec l'authentification de messagerie implicite* : si un domaine n'est pas authentifié, Microsoft le traitera comme s'il avait publié des enregistrements d'authentification de messagerie et le traitera en conséquence s'il ne réussit pas. 
   
-Pour ce faire, Microsoft a créé de nombreuses extensions vers l’authentification régulièrement du courrier, y compris la réputation de l’expéditeur, l’historique des expéditeurs/destinataires, comportement et d’autres techniques avancées. Un message envoyé à partir d’un domaine qui ne publie pas l’authentification du courrier électronique sera marqué comme usurpation d’identité, sauf si elle contient d’autres signaux pour indiquer qu’il est légitime.
+Pour ce faire, Microsoft a créé de nombreuses extensions à l'authentification de messagerie normale, notamment la réputation de l'expéditeur, l'historique des expéditeurs/destinataires, l'analyse comportementale et d'autres techniques avancées. Un message envoyé à partir d'un domaine qui ne publie pas d'authentification de messagerie sera marqué comme falsifié, sauf s'il contient d'autres signaux pour indiquer qu'il est légitime.
   
-Ce faisant, fin, les utilisateurs peuvent avoir confiance qu’un message électronique envoyé n’a pas été falsifié, expéditeurs peuvent être sûres que personne emprunte l’identité de leur domaine, et les clients d’Office 365 offre une protection mieux encore telles que la protection de l’emprunt d’identité.
+En procédant ainsi, les utilisateurs finaux peuvent avoir la certitude qu'un courrier électronique qui leur est envoyé n'a pas été usurpé, mais les expéditeurs peuvent être assurés que personne n'emprunte l'identité de leur domaine, et les clients d'Office 365 peuvent offrir une meilleure protection, comme la protection contre l'emprunt d'identité.
   
-Pour voir le lancement de Microsoft, voir [A marin de hameçonnage partie 2 - Anti amélioré l’usurpation d’identité dans Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209).
+Pour consulter l'annonce générale de Microsoft, reportez-vous à [la section Sea of phishing part 2-Enhanced anti-spoofing in Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209).
   
-## <a name="identifying-that-a-message-is-classified-as-spoofed"></a>Identification qu’un message est classé comme étant usurpés
+## <a name="identifying-that-a-message-is-classified-as-spoofed"></a>Identification d'un message considéré comme falsifié
 
 ### <a name="composite-authentication"></a>Authentification composite
 
-Alors que SPF, DKIM et DMARC sont tous utiles par eux-mêmes, ils ne communiquent suffisamment l’état d’authentification dans les événements un message n’a aucun enregistrement explicite de l’authentification. Par conséquent, Microsoft a développé un algorithme qui combine les signaux multiples en une seule valeur appelée authentification Composite ou compauth pour short. Clients dans Office 365 ont des valeurs de compauth en l’en-tête des *Résultats de l’authentification* dans les en-têtes des messages. 
+Bien que SPF, DKIM et DMARC soient tout à fait utiles, ils ne communiquent pas suffisamment d'état d'authentification dans l'éventualité où un message n'a pas d'enregistrement d'authentification explicite. Par conséquent, Microsoft a développé un algorithme qui combine plusieurs signaux en une seule valeur appelée authentification composite ou compauth pour Short. Les clients dans Office 365 ont des valeurs compauth indiquées dans l'en-tête *Authentication-Results* dans les en-têtes de message. 
   
 ```
 Authentication-Results:
@@ -91,80 +76,80 @@ Authentication-Results:
 
 |**Résultat CompAuth**|**Description**|
 |:-----|:-----|
-|Échec|Message d’échec d’authentification explicites (domaine expéditeur paru enregistrements explicitement DNS) ou authentification implicite (envoi de domaine n’avez pas publié des enregistrements dans DNS, pour Office 365 interpolées le résultat comme s’il a publié des enregistrements).|
-|passer|Message transmis d’authentification explicites (message transmis DMARC ou [Meilleures DMARC transmis deviner](https://blogs.msdn.microsoft.com/tzink/2015/05/06/what-is-dmarc-bestguesspass-in-office-365)) ou l’authentification implicite avec un niveau de confiance élevé (envoi de domaine ne publie pas les enregistrements de messagerie d’authentification, mais Office 365 a fort principal des signaux indiquer le message est probablement légitimes).|
-|softpass|Message transmis authentification implicite en toute confiance faible à moyen (envoi de domaine ne publie pas l’authentification du courrier électronique, mais Office 365 a signaux principal pour indiquer le message est légitime, mais la puissance du signal est la plus faible).|
-|aucune|Message ne s’est pas authentifié (ou il s’est authentifié, mais ne pas aligner), mais l’authentification composite ne pas appliquée en raison de la réputation de l’expéditeur ou d’autres facteurs.|
+|fonctionner|Échec de l'authentification explicite du message (envoi explicite d'enregistrements publiés dans le DNS) ou authentification implicite (le domaine d'envoi n'a pas publié les enregistrements dans le système DNS, de sorte qu'Office 365 interpole le résultat comme s'il avait publié des enregistrements).|
+|acceptation|Message passé l'authentification explicite (message passé DMARC, ou [meilleure estimation passée DMARC](https://blogs.msdn.microsoft.com/tzink/2015/05/06/what-is-dmarc-bestguesspass-in-office-365)) ou authentification implicite avec un niveau de confiance élevé (le domaine d'envoi ne publie pas les enregistrements d'authentification de messagerie, mais Office 365 a des signaux principaux forts vers indiquer que le message est vraisemblablement légitime.|
+|softpass|Message passé authentification implicite avec un niveau de confiance faible à moyen (le domaine d'envoi ne publie pas l'authentification de messagerie, mais Office 365 a des signaux principaux pour indiquer que le message est légitime, mais que la force du signal est plus faible).|
+|aucune|Le message ne s'est pas authentifié (ou s'il s'est authentifié mais ne s'est pas aligné), mais l'authentification composite n'a pas été appliquée en raison de la réputation de l'expéditeur ou d'autres facteurs.|
    
 |||
 |:-----|:-----|
 |**Reason**|**Description**|
-|0XX|Message d’échec de l’authentification composite.<br/>**000** signifie que le message d’échec de DMARC avec une action de rejet ou mise en quarantaine.  <br/>**001** signifie que le message d’échec de l’authentification de courrier électronique implicite. Cela signifie que le domaine ne dispose pas d’enregistrements d’authentification e-mail publiés, ou si c’était le cas, il était une stratégie de défaillance plus faible (échec logicielle SPF ou neutre, stratégie DMARC de p = none).<br/>**002** signifie que de l’organisation dispose d’une stratégie pour la paire de l’expéditeur ou du domaine qui est interdite explicitement d’envoyer l’e-mail falsifié, ce paramètre est défini manuellement par un administrateur.  <br/>**010** signifie que le message a échoué DMARC avec une action de rejet ou mise en quarantaine, et le domaine est un des domaines acceptés de votre organisation (Cela fait partie de self-à-self ou interne à l’organisation, l’usurpation d’identité).  <br/>**011** signifie que le message d’échec de l’authentification de courrier électronique implicite et le domaine est un des domaines acceptés de votre organisation (Cela fait partie de self-à-self ou interne à l’organisation, l’usurpation d’identité).|
-|Tous les autres codes (1xx, 2xx, 3xx, 4xx, 5xx)|Correspond à différents codes internes pour la raison pour laquelle un message authentification implicite ou n’eu aucune authentification mais aucune action n’a été appliquée.|
+|0XX|Échec de l'authentification composite du message.<br/>**000** signifie que le message a échoué DMARC avec une action de refus ou de mise en quarantaine.  <br/>**001** signifie que le message a échoué à l'authentification de messagerie implicite. Cela signifie que le domaine d'envoi n'a pas publié des enregistrements d'authentification de messagerie électronique, ou si c'est le cas, ils avaient une stratégie d'échec plus faible (échec logiciel SPF ou stratégie neutre DMARC de p = None).<br/>**002** signifie que l'organisation a une stratégie pour la paire d'expéditeurs/domaines qui est explicitement interdite à l'envoi d'un message électronique falsifié, ce paramètre est défini manuellement par un administrateur.  <br/>**010** signifie que le message a échoué DMARC avec une action de refus ou de mise en quarantaine et que le domaine d'envoi est l'un des domaines acceptés de votre organisation (faisant partie de self-to-Self, ou intra-org, l'usurpation).  <br/>le **011** signifie que le message a échoué à l'authentification de messagerie implicite et que le domaine d'envoi est l'un des domaines acceptés de votre organisation (faisant partie de self-to-Self, ou intra-org, l'usurpation).|
+|Tous les autres codes (1xx, 2xx, 3xx, 4xx, 5xx)|Correspond à divers codes internes indiquant pourquoi un message a passé l'authentification implicite ou qu'aucune authentification n'a été appliquée.|
    
-En examinant les en-têtes d’un message, un administrateur ou même un utilisateur final peut déterminer comment Office 365 arrive à la conclusion que l’expéditeur peut être usurpé.
+En examinant les en-têtes d'un message, un administrateur ou un utilisateur final peut déterminer comment Office 365 arrive en conclusion que l'expéditeur peut être usurpé.
   
-### <a name="differentiating-between-different-types-of-spoofing"></a>Différencier les différents types de l’usurpation d’identité
+### <a name="differentiating-between-different-types-of-spoofing"></a>Différenciation entre différents types d'usurpation d'identité
 
-Microsoft fait la distinction entre les deux types de messages de l’usurpation d’identité :
+Microsoft différencie deux types différents de messages d'usurpation d'identité:
   
- **Interne à l’organisation l’usurpation d’identité**
+ **Usurpation inter-organisationnelle**
   
-Également appelé self-à-self l’usurpation d’identité, cela se produit lorsque le domaine dans le champ : adresse est identique ou s’aligne sur le domaine du destinataire (lorsque le domaine du destinataire est un des [Domaines acceptés](https://technet.microsoft.com/en-us/library/jj945194%28v=exchg.150%29.aspx)les de votre organisation) ; ou, si le domaine dans le champ : adresse fait partie de la même organisation.
+Également appelé «usurpation automatique», cela se produit lorsque le domaine de l'adresse de: est le même que le domaine du destinataire ou s'aligne avec celui-ci (lorsque le domaine du destinataire est l'un des [domaines acceptés](https://technet.microsoft.com/en-us/library/jj945194%28v=exchg.150%29.aspx)de votre organisation); ou, lorsque le domaine de l'adresse de: fait partie de la même organisation.
   
-Par exemple, les éléments suivants a expéditeur et destinataire du même domaine (contoso.com). Les espaces sont insérés dans l’adresse de messagerie pour empêcher spambot capture sur cette page) :
+Par exemple, l'expéditeur et le destinataire du même domaine (contoso.com) sont les suivants: Des espaces sont insérés dans l'adresse de messagerie pour empêcher spambots récolte sur cette page):
   
-De : expéditeur @ contoso.com
+From: sender @ contoso.com
   
-À : destinataire @ contoso.com
+À: destinataire @ contoso.com
   
-Les domaines de l’expéditeur et destinataire alignant sur le domaine d’organisation (fabrikam.com) comprend les suivantes :
+Les domaines de l'expéditeur et du destinataire sont alignés sur le domaine de l'organisation (fabrikam.com) de la façon suivante:
   
-De : expéditeur @ foo.fabrikam.com
+From: sender @ foo.fabrikam.com
   
-À : destinataire @ bar.fabrikam.com
+À: destinataire @ bar.fabrikam.com
   
-Les domaines suivants de l’expéditeur et destinataire sont différents (microsoft.com et bing.com), mais ils appartiennent à la même organisation (autrement dit, les deux font partie des domaines l’organisation acceptés) :
+Les domaines des expéditeurs et des destinataires suivants sont différents (microsoft.com et bing.com), mais ils appartiennent à la même organisation (c'est-à-dire, tous deux font partie des domaines acceptés de l'organisation):
   
-De : expéditeur @ microsoft.com
+From: sender @ microsoft.com
   
-À : destinataire @ bing.com
+À: destinataire @ bing.com
   
-Les messages qui échouent interne à l’organisation usurpation contient les valeurs suivantes dans les en-têtes :
+Les messages qui échouent à l'usurpation d'organisation interne contiennent les valeurs suivantes dans les en-têtes:
   
-X-Forefront-Antispam-Report :... CAT:SPM/HSPM/PHSH ;... SFTY:9.11
+X-Forefront-antispam-Report:... CAT: SPM/HSPM/PHSH;... SFTY: 9.11
   
-Le Chat est la catégorie du message et il est généralement marqué comme moniteur de port standard (spam), mais peuvent être HSPM (spam niveau de confiance élevé) ou hameçonnage (phishing), selon les autres types de modèles de se produire occasionnellement dans le message.
+Le Tao est la catégorie du message, et il est normalement marqué comme SPM (courrier indésirable), mais il peut parfois être HSPM (courrier indésirable à haute fiabilité) ou hameçon (phishing) en fonction des autres types de modèles qui se produisent dans le message.
   
-Le SFTY est le niveau de sécurité du message, le premier chiffre (9) signifie le message est hameçonnage et deuxième ensemble de chiffres après que le point (11) signifie qu’il est interne à l’organisation l’usurpation d’identité.
+Le SFTY est le niveau de sécurité du message, le premier chiffre (9) signifie que le message est un hameçonnage et un deuxième jeu de chiffres après le point (11) signifie qu'il s'agit d'une usurpation intra-organisation.
   
-Il n’existe aucun code raison spécifique pour l’authentification Composite pour interne à l’organisation l’usurpation d’identité, qui portent plus loin dans 2018 (chronologie n’est pas encore défini).
+Il n'existe pas de code de raison spécifique pour l'authentification composite pour l'usurpation intra-organisation, qui sera marqué ultérieurement dans 2018 (chronologie pas encore définie).
   
- **Usurpation d’autres domaines**
+ **Usurpation d'identité entre domaines**
   
-Cela se produit lorsque le domaine dans l’envoi : adresse est un domaine externe à l’organisation de réception. Les messages que l’authentification Composite a échoué en raison de l’usurpation d’identité inter-domaines contient les valeurs suivantes dans les en-têtes :
+Cela se produit lorsque le domaine d'envoi de l'adresse de: est un domaine externe pour l'organisation destinataire. Les messages dont l'authentification composite échoue en raison d'une usurpation entre domaines contiennent les valeurs suivantes dans les en-têtes:
   
-Résultats de l’authentification :... compauth = échec raison 001 de 000
+Authentication-Results:... compauth = cause de l'échec = 000/001
   
-X-Forefront-Antispam-Report :... CAT:SPOOF ;... SFTY:9.22
+X-Forefront-antispam-Report:... CAT: USURPATION;... SFTY: 9.22
   
-Dans les deux cas, l’info-bulle de sécurité rouge suivant est marqué dans le message ou un équivalent à la langue de la boîte aux lettres destinataire personnalisé :
+Dans les deux cas, le Conseil de sécurité rouge suivant est marqué dans le message ou un équivalent adapté à la langue de la boîte aux lettres du destinataire:
   
-![Conseil de sécurité rouge - détection de fraude](media/a366156a-14e8-4c14-bfe5-2031b21936f8.jpg)
+![Conseil de sécurité rouge-détection de fraude](media/a366156a-14e8-4c14-bfe5-2031b21936f8.jpg)
   
-Il est uniquement à partir de : adresse et savoir quel est votre messagerie du destinataire ou en examinant les en-têtes de courrier électronique, vous pouvez différencier interne à l’organisation et l’usurpation d’identité inter-domaines.
+Il s'agit uniquement de l'adresse de provenance et de la connaissance de l'adresse de messagerie du destinataire ou de l'examen des en-têtes des messages, que vous pouvez différencier de l'usurpation intra-org et inter-domaines.
   
-## <a name="how-customers-of-office-365-can-prepare-themselves-for-the-new-anti-spoofing-protection"></a>Comment les clients d’Office 365 peuvent se préparer pour la nouvelle protection anti-l’usurpation d’identité
+## <a name="how-customers-of-office-365-can-prepare-themselves-for-the-new-anti-spoofing-protection"></a>Comment les clients d'Office 365 peuvent se préparer à la nouvelle protection contre l'usurpation d'identité
 
 ### <a name="information-for-administrators"></a>Informations pour les administrateurs
 
-En tant qu’administrateur d’une organisation dans Office 365, il existe plusieurs éléments clés d’informations, que vous devez connaître.
+En tant qu'administrateur d'une organisation dans Office 365, il existe plusieurs informations clés que vous devez connaître.
   
-### <a name="understanding-why-email-authentication-is-not-always-enough-to-stop-spoofing"></a>Comprendre pourquoi l’authentification du courrier électronique n’est pas toujours suffisant pour empêcher l’usurpation d’identité
+### <a name="understanding-why-email-authentication-is-not-always-enough-to-stop-spoofing"></a>Comprendre pourquoi l'authentification de messagerie n'est pas toujours suffisante pour arrêter l'usurpation d'identité
 
-La nouvelle protection anti-usurpation repose sur l’authentification de courrier électronique (SPF, DKIM et DMARC) ne pas marquer un message comme l’usurpation d’identité. Un exemple courant est lorsqu’un domaine d’envoi a publié jamais les enregistrements SPF. Si aucun enregistrement SPF ou qu’ils sont correctement configurés, un message envoyé sera marqué comme étant usurpés, sauf si Microsoft a aide à la décision principale indiquant que le message est légitime.
+La nouvelle protection contre l'usurpation d'identité s'appuie sur l'authentification de messagerie (SPF, DKIM et DMARC) pour ne pas marquer un message comme falsifié. Un exemple courant est le fait lorsqu'un domaine d'envoi n'a jamais publié d'enregistrements SPF. S'il n'y a pas d'enregistrements SPF ou s'ils sont configurés de manière incorrecte, un message envoyé est marqué comme falsifié à moins que Microsoft n'ait une intelligence dorsale indiquant que le message est légitime.
   
-Par exemple, avant anti-usurpation déployé, un message peut pouvaient ressembler à ce qui suit avec aucun enregistrement SPF, aucun enregistrement DKIM et aucun enregistrement DMARC : 
+Par exemple, avant le déploiement de la fonction de détection d'usurpation d'identité, un message peut s'afficher comme suit sans enregistrement SPF, sans enregistrement DKIM et sans enregistrement DMARC: 
   
 ```
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
@@ -174,7 +159,7 @@ Authentication-Results: spf=none (sender IP is 1.2.3.4)
 From: sender @ example.com
 To: receiver @ contoso.com
 ```
-Après avoir anti-usurpation, si vous avez Office 365 entreprise E5, EOP ou DAV, la valeur compauth est marquée :
+Après la détection d'usurpation d'identité, si vous disposez d'Office 365 entreprise E5, EOP ou ATP, la valeur compauth est marquée:
   
 ```
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
@@ -186,7 +171,7 @@ To: receiver @ contoso.com
 
 ```
 
-Si example.com fixe cela en configurant un enregistrement SPF mais pas un enregistrement DKIM, afin de passer composite d’authentification car le domaine qui a passé SPF aligné sur le domaine dans le champ : adresse : 
+Si example.com le corrige en configurant un enregistrement SPF mais pas un enregistrement DKIM, l'authentification composite est transmise, car le domaine qui a passé SPF s'est aligné sur le domaine dans l'adresse de: 
   
 ```
 Authentication-Results: spf=pass (sender IP is 1.2.3.4)
@@ -197,7 +182,7 @@ From: sender @ example.com
 To: receiver @ contoso.com
 ```
 
-Ou, si elles configuré un enregistrement DKIM, mais pas un enregistrement SPF, également passer composite d’authentification car le domaine de la Signature DKIM transmis aligné sur le domaine dans le champ de : adresse : 
+Ou bien, s'ils configurent un enregistrement DKIM mais pas un enregistrement SPF, l'authentification composite est également transmise, car le domaine dans la signature DKIM qui s'est passé avec le domaine dans l'adresse de:: 
   
 ```
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
@@ -209,7 +194,7 @@ From: sender @ example.com
 To: receiver @ contoso.com
 ```
 
-Toutefois, un auteur de phishing peut également configurer SPF et DKIM et signer le message avec leur propre domaine, mais spécifier un domaine différent du : adresse. SPF ni DKIM nécessite aligner avec le domaine dans le domaine : adresse, sauf si example.com publié enregistrements DMARC, ce ne serait pas marquées comme une usurpation d’identité à l’aide de DMARC : 
+Toutefois, un hameçonnage peut également configurer SPF et DKIM et signer le message avec son propre domaine, mais spécifier un domaine différent dans l'adresse de:. Ni SPF, ni DKIM ne requièrent que le domaine s'aligne sur le domaine dans l'adresse de l'expéditeur, de sorte que, sauf si example.com a publié des enregistrements DMARC, il n'est pas marqué comme étant une usurpation à l'aide de DMARC: 
   
 ```
 Authentication-Results: spf=pass (sender IP is 5.6.7.8)
@@ -220,11 +205,11 @@ From: sender @ example.com
 To: receiver @ contoso.com
 ```
 
-Dans le client de messagerie (Outlook, Outlook sur le web, ou tout autre client de messagerie), d’uniquement : domaine est affiché, pas sur le domaine dans le SPF ou DKIM et qui peut croire l’utilisateur le message provenance example.com, mais c’est bien maliciousDomain.com .
+Dans le client de messagerie (Outlook, Outlook sur le Web ou tout autre client de messagerie), seul le domaine de: est affiché, et non le domaine dans SPF ou DKIM, et cela peut induire l'utilisateur à penser que le message provenait d'example.com, mais provient en réalité de maliciousDomain.com .
   
-![Message authentifié mais : domaine n’aligne pas avec ce que transmis SPF ou DKIM](media/a9b5ab2a-dfd3-47c6-8ee8-e3dab2fae528.jpg)
+![Message authentifié, mais de: le domaine ne s'aligne pas sur ce qui a réussi ou sur le DKIM](media/a9b5ab2a-dfd3-47c6-8ee8-e3dab2fae528.jpg)
   
-Pour cette raison, Office 365 requiert que le domaine du : adresse s’aligne sur le domaine dans la signature SPF ou DKIM, et si elle ne, contient certains autres signaux interne qui indique que le message est légitime. Dans le cas contraire, le message est un message d’échec compauth. 
+Pour cette raison, Office 365 nécessite que le domaine de l'adresse de: s'aligne sur le domaine dans la signature SPF ou DKIM et, si ce n'est pas le cas, contient d'autres signaux internes indiquant que le message est légitime. Dans le cas contraire, le message est un compauth Fail. 
   
 ```
 Authentication-Results: spf=none (sender IP is 5.6.7.8)
@@ -236,43 +221,43 @@ From: sender@contoso.com
 To: someone@example.com
 ```
 
-Par conséquent, Office 365 anti-l’usurpation d’identité protège contre les domaines sans authentification et les domaines qui a configuré l’authentification, mais incompatibilité par rapport au domaine dans la : adresse comme celle que l’utilisateur voit et considère sont l’expéditeur du message. Cela est vrai à la fois des domaines externes à votre organisation, ainsi que les domaines dans votre organisation.
+Par conséquent, l'usurpation d'identité Office 365 protège contre les domaines sans authentification et par les domaines qui configurent l'authentification mais qui ne correspondent pas au domaine de l'adresse de: comme celle que l'utilisateur voit et pense être l'expéditeur du message. Il s'agit des deux domaines à l'extérieur de votre organisation, ainsi que des domaines au sein de votre organisation.
   
-Par conséquent, si vous recevez toujours un message d’échec de l’authentification composite et est marqué comme étant usurpés, même si le message passé SPF et DKIM, il est, car le domaine qui a passé SPF et DKIM ne sont pas alignés avec le domaine du : adresse.
+Par conséquent, si vous recevez un message indiquant que l'authentification composite a échoué et qu'elle est usurpée, même si le message a passé SPF et DKIM, c'est que le domaine qui a passé SPF et DKIM n'est pas aligné sur le domaine dans l'adresse de:.
   
-### <a name="understanding-changes-in-how-spoofed-emails-are-treated"></a>Présentation des modifications dans les messages électroniques usurpés comment sont traitées.
+### <a name="understanding-changes-in-how-spoofed-emails-are-treated"></a>Présentation des modifications apportées au traitement des courriers falsifiés
 
-Actuellement, pour toutes les organisations dans Office 365 - DAV et non-DAV - messages échoue DMARC avec une stratégie de rejet ou mise en quarantaine sont marquées comme du courrier indésirable et prennent généralement l’action de courrier indésirable de niveau de confiance élevé, ou parfois l’action du courrier indésirable régulière (selon qu’autres du courrier indésirable règles d’abord identifient comme courrier indésirable). Détections d’usurpation d’identité interne à l’organisation effectuer l’action de courrier indésirable régulière. Ce problème n’a pas besoin d’être activé, ni peut être désactivée.
+Actuellement, pour toutes les organisations dans Office 365-ATP et les messages non ATP qui échouent DMARC avec une stratégie de rejet ou de mise en quarantaine sont marqués comme courrier indésirable et prennent généralement l'action de courrier indésirable à niveau de confiance élevé, ou parfois l'action de courrier indésirable normal (selon que d'autres courriers indésirants ou non). les règles les identifient en tant que courrier indésirable). Les détections d'usurpation intra-org prennent l'action de courrier indésirable normale. Il n'est pas nécessaire d'activer ce comportement, ni de le désactiver.
   
-Toutefois, pour les messages d’usurpation inter-domaines, avant cette modification elles, exécutez régulièrement des contrôles spam, hameçonnage et les logiciels malveillants et si d’autres composants du filtre identifiés comme suspects, seraient marquer comme courrier indésirable, hameçonnage ou un programme malveillant respectivement. Avec la nouvelle protection usurpation d’identité inter-domaines, tout message ne peut pas être authentifié, par défaut, exécute l’action définie dans le Anti-hameçonnage \> stratégie anti-usurpation d’identité. Si celle-ci n’est pas définie, il sera déplacé dans un dossier de courrier indésirable des utilisateurs. Dans certains cas, les messages plus suspects aura également ajouté au message info-bulle de sécurité rouge.
+Toutefois, pour les messages d'usurpation de domaine, avant que cette modification ne se produise, les vérifications de courrier indésirable, de hameçonnage et de programmes malveillants, et si d'autres parties du filtre les ont identifiées comme suspectes, les marquent comme courrier indésirable, hameçon ou programme malveillant. Avec la nouvelle protection contre l'usurpation d'identité d'un domaine, les messages qui ne peuvent pas être authentifiés effectuent, par défaut, l'action définie dans \> la stratégie anti-usurpation d'identité anti-hameçonnage. Si aucune n'est définie, elle est déplacée vers le dossier courrier inDésirable des utilisateurs. Dans certains cas, le Conseil de sécurité rouge est également ajouté aux messages plus suspects dans le message.
   
-Cela peut entraîner des messages qui ont été marqués comme courrier indésirable toujours marqués comme du courrier indésirable mais maintenant aussi une info-bulle rouge de sécurité ; dans les autres cas, les messages qui ont été marqués comme légitimes démarrera marqués comme courrier indésirable (CAT:SPOOF) avec une info-bulle de sécurité rouge est ajouté. Dans d’autres cas encore, les clients qui ont été déplacer tous les courriers indésirables et phishing à la mise en quarantaine maintenant verront les accédant au dossier courrier indésirable (ce comportement peut être modifié, voir [modification de vos paramètres anti-usurpation](#changing-your-anti-spoofing-settings)).
+Par conséquent, certains messages précédemment marqués comme courrier indésirable sont toujours marqués comme courrier indésirable, mais ils sont également dotés d'un Conseil de sécurité rouge. dans les autres cas, les messages précédemment marqués comme courrier non indésirable commencent à être marqués comme courrier indésirable (CAT: usurpation) avec un Conseil de sécurité rouge ajouté. Dans d'autres cas, les clients qui déplacent l'ensemble du courrier indésirable et du hameçonnage vers la mise en quarantaine verraient le dossier courrier inDésirable (ce comportement peut être modifié, voir [modification de vos paramètres anti-usurpation d'identité](#changing-your-anti-spoofing-settings)).
   
-Il existe plusieurs façons qu'un message peut être usurpé (voir [Differentiating entre les différents types de l’usurpation d’identité](#differentiating-between-different-types-of-spoofing) plus haut dans cet article), mais à compter de mars 2018 la façon dont Office 365 traite ces messages n’est pas encore unifiée. Le tableau suivant est un résumé rapide, avec protection usurpation d’identité inter-domaines est nouveau comportement : 
+Il existe plusieurs façons d'usurper un message (consultez la rubrique [différenciation entre différents types d'usurpations d'identité](#differentiating-between-different-types-of-spoofing) plus haut dans cet article) mais, depuis mars 2018, la façon dont Office 365 traite ces messages n'est pas encore unifié. Le tableau suivant est un résumé rapide: la protection contre l'usurpation d'identité de domaine est un nouveau comportement: 
   
-|**Type d’usurpation d’identité**|**Catégorie**|**Conseil de sécurité ajouté ?**|**S'applique à**|
+|**Type d'usurpation d'identité**|**Catégorie**|**Conseil de sécurité ajouté?**|**S'applique à**|
 |:-----|:-----|:-----|:-----|
-|Échec DMARC (mise en quarantaine ou rejeter)  <br/> |HSPM (valeur par défaut), peut également être Moniteur de port standard ou PHSH  <br/> |No (non)  <br/> |Tous les clients Office 365, Outlook.com  <br/> |
-|Self-à-self  <br/> |MONITEUR DE PORT STANDARD  <br/> |Oui  <br/> |Toutes les organisations Office 365, Outlook.com  <br/> |
-|Inter-domaines  <br/> |USURPATION D’IDENTITÉ  <br/> |Oui  <br/> |Protection contre les menaces avancées Office 365 et E5 clients  <br/> |
+|Échec de DMARC (mise en quarantaine ou rejet)  <br/> |HSPM (valeur par défaut) peut également être défini sur SPM ou PHSH  <br/> |Non (pas encore)  <br/> |Tous les clients Office 365, Outlook.com  <br/> |
+|Self-to-Self  <br/> |MONITEUR  <br/> |Oui  <br/> |Toutes les organisations Office 365, Outlook.com  <br/> |
+|Entre domaines  <br/> |Tromp  <br/> |Oui  <br/> |Clients Office 365 Advanced Threat Protection et E5  <br/> |
    
-### <a name="changing-your-anti-spoofing-settings"></a>Modification de vos paramètres anti-l’usurpation d’identité
+### <a name="changing-your-anti-spoofing-settings"></a>Modification de vos paramètres de détection d'usurpation d'identité
 
-Pour créer ou mettre à jour vos paramètres anti-usurpation (domaines), accédez à l’hameçonnage \> usurpation Anti paramètres de la gestion des menaces \> onglet Stratégie de la sécurité &amp; centre de conformité. Si vous n’avez jamais créé des paramètres anti-hameçonnage, vous devrez créer un :
+Pour créer ou mettre à jour vos paramètres de protection contre l'usurpation d'identité (entre domaines), accédez aux paramètres \> de détection d'usurpation d'identité sous l'onglet \> stratégie de gestion des menaces &amp; dans le centre de sécurité et de conformité. Si vous n'avez jamais créé de paramètres anti-hameçonnage, vous devrez en créer un:
   
-![Anti-hameçonnage - créer une nouvelle stratégie](media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
+![Antiphishing-créer une stratégie](media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
   
-Si vous avez déjà créé un, vous pouvez le sélectionner pour le modifier :
+Si vous en avez déjà créé un, vous pouvez le sélectionner pour le modifier:
   
-![Anti-hameçonnage - modifier une stratégie existante](media/75457a7c-882e-4984-80d1-21a12b42c53a.jpg)
+![Anti-hameçonnage-modifier la stratégie existante](media/75457a7c-882e-4984-80d1-21a12b42c53a.jpg)
   
-Sélectionnez la stratégie que vous venez de créer et passez en revue les étapes comme décrit dans [pour en savoir plus sur l’aide à la décision usurpation.](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf)
+Sélectionnez la stratégie que vous venez de créer et suivez les étapes décrites dans la section [en savoir plus sur les informations d'usurpation d'identité.](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf)
   
-![Activer ou désactiver antispoofing](media/c49e2147-c954-443c-9144-1cbd139e1166.jpg)
+![Activer ou désactiver l'espionnage](media/c49e2147-c954-443c-9144-1cbd139e1166.jpg)
   
-![Activer ou désactiver les conseils de sécurité antispoofing](media/eec7c407-31fc-4f73-8325-307d82d1fb53.jpg)
+![Activer ou désactiver les conseils de sécurité contre l'usurpation d'identité](media/eec7c407-31fc-4f73-8325-307d82d1fb53.jpg)
   
-Pour créer une nouvelle stratégie via PowerShell : 
+Pour créer une nouvelle stratégie via PowerShell, procédez comme suit: 
   
 ```
 $org = Get-OrganizationConfig
@@ -288,28 +273,28 @@ $domains = "domain1.com, domain2.com, domain3.com"
 New-AntiphishRule -Name $name -AntiphishPolicy $name -RecipientDomainIs $domains
 ```
 
-Vous pouvez modifier ensuite les paramètres de stratégie anti-hameçonnage à l’aide de PowerShell, [Set-AntiphishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Set-AntiPhishPolicy?view=exchange-ps)de la documentation. Vous pouvez spécifier le $name en tant que paramètre :
+Vous pouvez ensuite modifier les paramètres de la stratégie anti-hameçonnage à l'aide de PowerShell, en suivant la documentation sur [Set-antiphishpolicy permet](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Set-AntiPhishPolicy?view=exchange-ps). Vous pouvez spécifier le $name en tant que paramètre:
   
 ```
 Set-AntiphishPolicy -Identity $name <fill in rest of parameters>
 ```
 
-Plus loin dans 2018, au lieu d’avoir à créer une stratégie par défaut, un sera créé qui porte sur tous les destinataires de votre organisation afin que vous n’êtes pas obligé de spécifier manuellement (les captures d’écran ci-dessous sont sujettes à modification avant l’implémentation finale).
+Plus tard dans 2018, au lieu de créer une stratégie par défaut, il est créé pour vous, dont l'étendue est limitée à tous les destinataires de votre organisation, vous n'avez pas à le spécifier manuellement (les captures d'écran ci-dessous peuvent être modifiées avant la mise en œuvre finale).
   
-![Stratégie par défaut pour anti-hameçonnage](media/1f27a0bf-e202-4e12-bbac-24baf013c8f9.jpg)
+![Stratégie par défaut pour le hameçonnage](media/1f27a0bf-e202-4e12-bbac-24baf013c8f9.jpg)
   
-Contrairement à la stratégie que vous créez, vous ne peut pas supprimer la stratégie par défaut, modifier sa priorité ou choisissez quels utilisateurs, les domaines ou les groupes à étendue.
+Contrairement à une stratégie que vous créez, vous ne pouvez pas supprimer la stratégie par défaut, modifier sa priorité ou choisir les utilisateurs, domaines ou groupes auxquels elle doit s'étendre.
   
-![Détails de la stratégie par défaut anti-hameçonnage](media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
+![Détails de la stratégie anti-hameçonnage par défaut](media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
   
-Pour configurer votre protection par défaut via PowerShell :
+Pour configurer votre protection par défaut via PowerShell, procédez comme suit:
   
 ```
 $defaultAntiphishPolicy = Get-AntiphishPolicy | ? {$_.IsDefault -eq $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement <$true|$false>
 ```
 
-Ne désactivez protection anti-usurpation si vous disposez d’un autre serveur de messagerie ou serveurs devant Office 365 (voir scénarios légitimes pour désactiver contre l’usurpation d’identité pour plus d’informations). 
+Vous ne devez désactiver la protection contre l'usurpation d'identité que si vous disposez d'un ou de plusieurs serveurs de messagerie devant Office 365 (pour plus de détails, voir scénarios légitimes de désactivation de la détection d'usurpation d'identité). 
   
 ```
 $defaultAntiphishPolicy = Get-AntiphishiPolicy | ? {$_.IsDefault $true}
@@ -317,31 +302,31 @@ Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnfor
 
 ```
 > [!IMPORTANT]
-> Si le premier tronçon dans votre chemin d’accès du courrier électronique est Office 365, et vous obtenez un trop grand nombre de messages électroniques légitimes marqués comme usurpation d’identité, vous devez tout d’abord configurer votre expéditeurs autorisés à envoyer un courrier électronique usurpé à votre domaine (voir la section *« Gestion des expéditeurs légitimes qui envoient u messagerie nauthenticated »* ). Si vous obtenez toujours trop de faux positifs (par exemple, les messages marqués comme usurpation d’identité de légitimes), nous ne recommandons pas la désactivation de protection anti-usurpation entièrement. Au lieu de cela, nous vous recommandons de choisissant de base au lieu d’une protection élevée.                    Il est préférable de travailler par le biais de faux positifs qu’à exposer votre organisation pour les courriers électroniques usurpés qui pourrait finir imposant des coûts considérablement plus élevés à long terme.
+> Si le premier tronçon dans le chemin d'accès de votre courrier électronique est Office 365 et que vous recevez trop de courriers électroniques légitimes marqués comme falsifiés, vous devez d'abord configurer vos expéditeurs autorisés à envoyer des messages falsifiés à votre domaine (voir la section *«gestion des expéditeurs légitimes qui envoient des u nauthenticated email»* ). Si vous obtenez toujours trop de faux positifs (par exemple, des messages légitimes marqués comme frauduleux), nous vous déconseillons de désactiver totalement la protection contre l'usurpation d'identité. Au lieu de cela, nous vous recommandons de choisir de base au lieu de protection élevée.                    Il est préférable d'utiliser des faux positifs plutôt que d'exposer votre organisation à des e-mails usurpés, ce qui pourrait entraîner des coûts nettement plus élevés à long terme.
 
-### <a name="managing-legitimate-senders-who-are-sending-unauthenticated-email"></a>Gestion des expéditeurs légitimes qui sont envoyant du courrier non authentifié
+### <a name="managing-legitimate-senders-who-are-sending-unauthenticated-email"></a>Gestion des expéditeurs légitimes qui envoient des messages électroniques non authentifiés
 
-Office 365 effectue le suivi des personnes sont envoyant du courrier non authentifié à votre organisation. Si le service pense que l’expéditeur n’est pas légitime, il marque comme un échec *compauth* . Il sera classé comme usurpation d’identité bien que cela dépend de votre stratégie anti-l’usurpation d’identité qui a été appliquée au message. 
+Office 365 effectue le suivi des personnes qui envoient des messages électroniques non authentifiés à votre organisation. Si le service pense que l'expéditeur n'est pas légitime, il le marque comme une erreur *compauth* . Elle sera classée comme USURPée, même si elle dépend de votre stratégie d'usurpation d'identité appliquée au message. 
   
-Toutefois, en tant qu’administrateur, vous pouvez spécifier les expéditeurs autorisés à envoyer un message électronique usurpé, substitution de décision d’Office 365.
+Toutefois, en tant qu'administrateur, vous pouvez spécifier quels expéditeurs sont autorisés à envoyer des messages falsifiés, en remplaçant la décision d'Office 365.
   
-**Méthode 1 : Si votre organisation possède le domaine configuré l’authentification du courrier électronique**
+**Méthode 1: Si votre organisation est propriétaire du domaine, configurez l'authentification de messagerie.**
   
-Cette méthode peut être utilisée pour résoudre l’usurpation interne à l’organisation et l’usurpation d’autres domaines dans les cas où vous possédez ou interagissez avec plusieurs clients. Il permet également de résoudre l’usurpation d’identité de domaines où vous envoyez aux autres clients dans Office 365, ainsi que les tierces parties qui sont hébergées dans les autres fournisseurs.
+Cette méthode peut être utilisée pour résoudre l'usurpation d'identité intra-organisationnelle et l'usurpation inter-domaines dans les cas où vous êtes propriétaire ou interagissez avec plusieurs clients. Il permet également de résoudre l'usurpation d'identité entre les domaines lorsque vous envoyez des e-mails à d'autres clients dans Office 365, ainsi qu'à des tiers hébergés par d'autres fournisseurs.
   
-Pour plus d’informations, voir [clients d’Office 365](#customers-of-office-365). 
+Pour plus d'informations, consultez la rubrique [Customers of Office 365](#customers-of-office-365). 
  
-**Méthode 2 : aide à la décision usurpation d’identité utiliser pour configurer les expéditeurs autorisés de courriers électroniques non authentifiés**
+**Méthode 2-utiliser l'intelligence d'usurpation d'identité pour configurer les expéditeurs autorisés d'un message électronique non authentifié**
   
-Vous pouvez également utiliser [l’Usurpation d’identité aide à la décision](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) d’autoriser les expéditeurs pour transmettre des messages non authentifiés à votre organisation. 
+Vous pouvez également utiliser l' [intelligence usurpée](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) pour permettre aux expéditeurs de transmettre des messages non authentifiés à votre organisation. 
   
-Pour les domaines externes, l’utilisateur usurpé est le domaine de l’adresse de provenance, tandis que l’infrastructure d’envoi est l’adresse IP envoi (divisé en /24 plages CIDR), ou le domaine d’organisation de l’enregistrement PTR (dans la capture d’écran ci-dessous, l’envoi IP peut-être être 131.107.18.4 dont l’enregistrement PTR est outbound.mail.protection.outlook.com, et il doit s’afficher en tant que outlook.com pour l’infrastructure d’envoi).
+Pour les domaines externes, l'utilisateur usurpé est le domaine dans l'adresse de l'expéditeur, tandis que l'infrastructure d'envoi est l'adresse IP d'envoi (divisée au/24 plages CIDR) ou le domaine de l'organisation de l'enregistrement PTR (dans la capture d'écran ci-dessous, l'adresse IP d'envoi peut être 131.107.18.4 dont l'enregistrement PTR est outbound.mail.protection.outlook.com, et cela apparaîtra comme outlook.com pour l'infrastructure d'envoi).
   
-Pour permettre à cet expéditeur pour envoyer un message électronique non authentifié, remplacez le **No** **Oui**.
+Pour autoriser cet expéditeur à envoyer des messages électroniques non authentifiés, attribuez la **valeur Oui**à l'option **non** .
   
-![Configuration d’antispoofing expéditeurs autorisé](media/d4334921-d820-4334-8217-788279701e94.jpg)
+![Configuration des expéditeurs autorisés de l'antiusurpation d'identité](media/d4334921-d820-4334-8217-788279701e94.jpg)
   
-Vous pouvez également utiliser PowerShell pour autoriser l’expéditeur spécifique d’usurper votre domaine : 
+Vous pouvez également utiliser PowerShell pour permettre à un expéditeur spécifique d'usurper votre domaine: 
   
 ```
 $file = "C:\My Documents\Summary Spoofed Internal Domains and Senders.csv"
@@ -351,120 +336,120 @@ $file = "C:\My Documents\Summary Spoofed Internal Domains and Senders.csv"
 Get-PhishFilterPolicy -Detailed -SpoofAllowBlockList -SpoofType External | Export-CSV $file
 ```
 
-![Obtention des expéditeurs usurpés via Powershell](media/0e27ffcf-a5db-4c43-a19b-fa62326d5118.jpg)
+![Obtention d'expéditeurs usurpés via PowerShell](media/0e27ffcf-a5db-4c43-a19b-fa62326d5118.jpg)
   
-Dans l’image précédente, les sauts de ligne supplémentaires ont été ajoutées pour rendre cette capture d’écran présents, mais en réalité, toutes les valeurs apparaîtraient sur une seule ligne.
+Dans l'image précédente, des sauts de ligne supplémentaires ont été ajoutés pour que cette capture d'écran s'ajuste, mais en réalité, toutes les valeurs apparaissent sur une seule ligne.
   
-Modifier le fichier et recherchez la ligne qui correspond à outlook.com et bing.com et modifiez l’entrée AllowedToSpoof non Oui :
+Modifiez le fichier et recherchez la ligne correspondant à outlook.com et bing.com, et remplacez l'entrée AllowedToSpoof par oui:
   
-![Usurpation d’identité paramètre Autoriser Oui via Powershell](media/62340452-62d3-4958-9ce9-afe5275a870d.jpg)
+![Définition du paramètre autoriser la falsification sur Oui via PowerShell](media/62340452-62d3-4958-9ce9-afe5275a870d.jpg)
   
-Enregistrez le fichier, puis exécutez : 
+Enregistrez le fichier, puis exécutez: 
   
 ```
 $UpdateSpoofedSenders = Get-Content -Raw "C:\My Documents\Spoofed Senders.csv"
 Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSenders
 ```
 
-Cela permettra maintenant bing.com envoyer un message électronique non authentifié à partir de \*. outlook.com.
+Cela permettra à bing.com d'envoyer des messages électroniques non authentifiés \*à partir de. Outlook.com.
 
-**Méthode 3 : créer une entrée d’autoriser pour la paire de l’expéditeur/destinataire**
+**Méthode 3-créer une entrée d'autorisation pour la paire expéditeur/destinataire**
   
-Vous pouvez également choisir d’ignorer toutes les de filtrage pour un expéditeur particulier. Pour plus d’informations, voir [comment ajouter en toute sécurité un expéditeur à une liste verte dans Office 365](https://blogs.msdn.microsoft.com/tzink/2017/11/29/how-to-securely-add-a-sender-to-an-allow-list-in-office-365/).
+Vous pouvez également choisir de contourner tout le filtrage du courrier indésirable pour un expéditeur particulier. Pour plus d'informations, consultez la rubrique relative [à l'ajout sécurisé d'un expéditeur à une liste verte dans Office 365](https://blogs.msdn.microsoft.com/tzink/2017/11/29/how-to-securely-add-a-sender-to-an-allow-list-in-office-365/).
   
-Si vous utilisez cette méthode, elle ignore le courrier indésirable et le filtrage de hameçonnage, certains, mais pas le filtrage anti-programme malveillant.
+Si vous utilisez cette méthode, elle ignore le courrier indésirable et certains des filtrages de hameçonnage, mais pas le filtrage des programmes malveillants.
   
-**Méthode 4 - contactez l’expéditeur et demandez-lui de configurer l’authentification du courrier électronique**
+**Méthode 4: contactez l'expéditeur et demandez-lui de configurer l'authentification de messagerie**
   
-En raison de problème de courrier indésirable et l’hameçonnage, Microsoft vous recommande de configurer l’authentification du courrier électronique de tous les expéditeurs. Si vous connaissez un administrateur de domaine, contactez les et demande qu’ils enregistrent des enregistrements de messagerie d’authentification pour ne pas avoir à ajouter les substitutions. Pour plus d’informations, voir [les administrateurs des domaines qui ne sont pas des clients Office 365](#administrators-of-domains-that-are-not-office-365-customers)« plus loin dans cet article. 
+En raison du problème de courrier indésirable et de hameçonnage, Microsoft recommande à tous les expéditeurs de configurer l'authentification de messagerie. Si vous êtes un administrateur du domaine d'envoi, contactez-le et demandez-lui de configurer les enregistrements d'authentification de messagerie de sorte que vous n'ayez pas à ajouter de remplacements. Pour plus d'informations, consultez la section [administrateurs de domaines qui ne sont pas des clients Office 365](#administrators-of-domains-that-are-not-office-365-customers), plus loin dans cet article. 
   
-S’il peut être difficile à tout d’abord obtenir l’envoi des domaines d’authentification, au fil du temps, en plus des filtres de courrier électronique démarrer junking ou rejet même leur messagerie électronique, entraîne leur configurer les enregistrements appropriés afin d’améliorer la fourniture.
+Bien qu'il puisse s'avérer difficile d'obtenir des domaines d'envoi pour l'authentification, au fil du temps, lorsque de plus en plus de filtres de courrier indésirent ou refusent leur courrier, les enregistrements appropriés sont configurés pour garantir une meilleure remise.
   
-### <a name="viewing-reports-of-how-many-messages-were-marked-as-spoofed"></a>Affichage des rapports de nombre de messages marqué comme étant usurpés
+### <a name="viewing-reports-of-how-many-messages-were-marked-as-spoofed"></a>Affichage des rapports sur le nombre de messages marqués comme falsifiés
 
-Une fois votre stratégie anti-l’usurpation d’identité est activé, vous pouvez utiliser des menaces pour contourner le nombre de messages est marqué comme étant de hameçonnage les numéros. Pour ce faire, accédez à la sécurité &amp; centre de conformité (SCC) sous gestion des menaces \> Explorateur de solutions, affectez l’affichage hameçonnage et groupe par domaine de l’expéditeur ou l’état de Protection :
+Une fois que votre stratégie d'usurpation d'identité est activée, vous pouvez utiliser Threat Intelligence pour obtenir des chiffres indiquant le nombre de messages marqués comme hameçonnage. Pour ce faire, accédez au centre de &amp; sécurité conformité dans l'Explorateur de gestion \> des menaces, définissez l'affichage sur hameçonnage, et regroupez par domaine de l'expéditeur ou état de protection:
   
-![Afficher le nombre de messages est marqué comme étant de hameçonnage](media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
+![Affichage du nombre de messages marqués comme hameçonnage](media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
   
-Vous pouvez interagir avec les différents rapports combien ont été marqués en tant que l’hameçonnage, y compris les messages marqués comme usurpation d’identité. Pour plus d’informations, voir [en route avec Office 365 menaces](https://support.office.com/article/get-started-with-office-365-threat-intelligence-38e9b67f-d188-490f-bc91-a1ae4b270441).
+Vous pouvez interagir avec les différents rapports pour connaître le nombre d'hameçons marqués comme courriers inactifs, y compris les messages marqués comme frauduleux. Pour plus d'informations, reportez-vous à la rubrique [prise en main d'Office 365 Threat Intelligence](https://support.office.com/article/get-started-with-office-365-threat-intelligence-38e9b67f-d188-490f-bc91-a1ae4b270441).
   
-Vous ne pouvez pas encore répartir les messages marqués en raison de l’usurpation d’identité et d’autres types de hameçonnage (phishing général, l’emprunt d’identité de domaine ou un utilisateur et ainsi de suite). Toutefois, plus loin dans 2018, vous pourrez faire par le biais de la sécurité &amp; centre de conformité. Une fois que vous le faites, vous pouvez utiliser ce rapport comme point de départ pour identifier les domaines d’envoi peuvent être légitimes qui sont marqués comme usurpation d’identité en raison de l’échec d’authentification.
+Vous ne pouvez pas encore séparer les messages qui ont été marqués en raison d'une usurpation et d'autres types de phishing (hameçonnage général, emprunt d'identité de domaine ou d'utilisateur, etc.). Toutefois, plus loin dans le 2018, vous serez en mesure de le faire via &amp; le centre de sécurité conformité. Une fois que vous avez effectué cette opération, vous pouvez utiliser ce rapport comme emplacement de départ pour identifier les domaines qui peuvent être légitimes et marqués comme des falsifications en raison de l'échec de l'authentification.
   
-La capture d’écran suivante est une proposition de la façon dont ces données recherchera, mais peuvent modifier lorsque l’utilisateur relâche :
+La capture d'écran suivante est une proposition de l'apparence de ces données, mais peut changer lorsqu'elle est publiée:
   
-![Affichage des rapports d’hameçonnage par type de détection](media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
+![Affichage des rapports d'hameçonnage par type de détection](media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
   
-Pour obtenir et clients E5 non DAV, ces rapports seront disponibles plus tard 2018 dans les rapports d’état de Protection de menace (support), mais seront retardés d’au moins 24 heures. Cette page sera mise à jour comme elles sont intégrées à la sécurité &amp; centre de conformité.
+Pour les clients non-ATP et E5, ces rapports seront disponibles plus tard dans 2018 sous les rapports sur le statut de protection contre les menaces (TPS), mais seront retardés d'au moins 24 heures. Cette page sera mise à jour au fur et à mesure de &amp; son intégration dans le centre de sécurité conformité.
   
-### <a name="predicting-how-many-messages-will-be-marked-as-spoof"></a>Prévoir le nombre de messages sera signalée comme usurpation d’identité
+### <a name="predicting-how-many-messages-will-be-marked-as-spoof"></a>PréDiction du nombre de messages qui seront marqués comme frauduleux
 
-Plus loin dans 2018, une fois Office 365 met à jour ses paramètres qui vous permet de désactiver la mise en œuvre l’usurpation d’identité contre ou sur la mise en application Basic ou élevé, vous aurez la possibilité de quoi destruction message va changer les paramètres différents. Autrement dit, si l’usurpation d’identité anti est désactivée, vous serez en mesure de voir le nombre de messages sera détecté comme usurpation d’identité si vous activez Basic ; ou, si elle est Basic, vous serez en mesure de voir le nombre de messages plus sera détecté comme usurpation d’identité si vous l’activez à haut niveau.
+Plus tard dans 2018, une fois qu'Office 365 a mis à jour ses paramètres pour vous permettre de désactiver l'application d'usurpation d'identité ou en utilisant une application de base ou une contrainte élevée, vous aurez la possibilité de voir le mode de modification de la disposition des messages aux différents paramètres. Autrement dit, si l'anti-usurpation d'identité est désActivée, vous pouvez voir le nombre de messages qui seront détectés comme usurpés si vous activez la fonctionnalité de base; Si elle est de base, vous pourrez voir le nombre d'autres messages à détecter en tant qu'usurpateur si vous le transformez en haute.
   
-Cette fonctionnalité est actuellement en cours de développement. Lorsque plus de détails sont définis, cette page sera mise à jour avec captures d’écran de la sécurité et le centre de conformité et avec des exemples de PowerShell.
+Cette fonctionnalité est actuellement en cours de développement. À mesure que des détails supplémentaires sont définis, cette page sera mise à jour à la fois avec des captures d'écran du centre de sécurité et de conformité, et avec des exemples PowerShell.
   
-![« Que se passe-t-il si » état d’activation antispoofing](media/fdd085ae-02c1-4327-a063-bfe9a32ff1eb.jpg)
+![Rapport «What If» pour l'activation de l'antiusurpation](media/fdd085ae-02c1-4327-a063-bfe9a32ff1eb.jpg)
   
-![Expérience utilisateur possible pour permettre un expéditeur usurpé](media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
+![EXPÉRIENCE utilisateur possible pour autoriser un expéditeur usurpé](media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
   
-### <a name="understanding-how-spam-phishing-and-advanced-phishing-detections-are-combined"></a>Comprendre comment spam, hameçonnage et l’hameçonnage avancée détections sont combinées
+### <a name="understanding-how-spam-phishing-and-advanced-phishing-detections-are-combined"></a>Comprendre le mode de combinaison du courrier indésirable, du hameçonnage et des détections d'hameçonnage avancées
 
-Les organisations qui utilisent Exchange Online, avec ou sans DAV, pouvant spécifier les actions à entreprendre lorsque le service identifie les messages comme des programmes malveillants, le courrier indésirable, du courrier indésirable de niveau de confiance élevé, l’hameçonnage et en bloc. Avec les stratégies Anti-hameçonnage ATP pour les clients DAV et les stratégies Anti-hameçonnage pour les clients EOP et le fait qu’un message peut-être atteint plusieurs types de détection (par exemple, les logiciels malveillants, phishing et emprunt d’identité utilisateur), il peut y avoir une certaine confusion quant à laquelle stratégie s’applique. 
+Les organisations qui utilisent Exchange Online, avec ou sans la protection avancée contre les menaces, peuvent spécifier les actions à effectuer lorsque le service identifie les messages comme des programmes malveillants, du courrier indésirable, du courrier indésirable à fiabilité élevée, du hameçonnage et en bloc. Avec les stratégies anti-hameçonnage ATP pour les clients ATP, ainsi que les stratégies anti-hameçonnage pour les clients EOP, et le fait qu'un message peut atteindre plusieurs types de détection (par exemple, les programmes malveillants, le hameçonnage et l'emprunt d'identité de l'utilisateur), il peut y avoir une certaine confusion quant à ce qui la stratégie s'applique. 
   
-En règle générale, la stratégie appliquée à un message est identifiée dans l’en-tête X-Forefront-Antispam-Report dans la propriété CAT (catégorie). 
+En règle générale, la stratégie appliquée à un message est identifiée dans l'en-tête X-Forefront-antispam-report de la propriété CAT (Category). 
   
-|**Priority (Priorité)**|**Stratégie**|**Catégorie**|**Où gérée ?**|**S'applique à**|
+|**Priority (Priorité)**|**Renvoi**|**Catégorie**|**Où géré?**|**S'applique à**|
 |:-----|:-----|:-----|:-----|:-----|
-|1  <br/> |Malware :   <br/> |MALW  <br/> |[Stratégie de programmes malveillants](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
+|0,1  <br/> |Malware :   <br/> |MALW  <br/> |[Stratégie de programmes malveillants](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
 |2   <br/> |Hameçonnage  <br/> |PHSH  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
 |3   <br/> |Courrier indésirable à probabilité élevée  <br/> |HSPM  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
-|4   <br/> |L’usurpation d’identité  <br/> |USURPATION D’IDENTITÉ  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553), [aide à la décision usurpation d’identité](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Toutes les organisations  <br/> |
-|5   <br/> |Courrier indésirable  <br/> |MONITEUR DE PORT STANDARD  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
-|6   <br/> |En bloc  <br/> |EN BLOC  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
-|7   <br/> |Emprunt d’identité de domaine  <br/> |DIMP  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organisations avec DAV  <br/> |
-|8   <br/> |Emprunt d’identité de l’utilisateur  <br/> |UIMP  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organisations avec DAV <br/> |
+|4   <br/> |L'usurpation  <br/> |Tromp  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553), aide à l' [usurpation d'identité](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Toutes les organisations  <br/> |
+|5   <br/> |Courrier indésirable  <br/> |MONITEUR  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
+|6   <br/> |E-mails  <br/> |E-mails  <br/> |[Stratégie de filtrage de contenu hébergé](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Toutes les organisations  <br/> |
+|7   <br/> |Emprunt d'identité de domaine  <br/> |DIMP  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organisations avec ATP uniquement  <br/> |
+|8   <br/> |Emprunt d'identité de l'utilisateur  <br/> |UIMP  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organisations avec ATP uniquement <br/> |
    
-Si vous disposez de plusieurs stratégies Anti-hameçonnage différents, celui dont la priorité la plus élevée s’appliquera. Par exemple, supposons que vous avez deux stratégies :
+Si vous disposez de plusieurs stratégies de protection contre le hameçonnage, la priorité la plus élevée s'applique. Par exemple, supposons que vous avez deux stratégies:
   
-|**Stratégie**|**Priority (Priorité)**|**Emprunt d’identité de l’utilisateur ou du domaine**|**Anti-l’usurpation d’identité**|
+|**Renvoi**|**Priority (Priorité)**|**Emprunt d'identité d'utilisateur/domaine**|**Protection contre l'usurpation d'identité**|
 |:-----|:-----|:-----|:-----|
-|A  <br/> |1  <br/> |On  <br/> |Off  <br/> |
+|A  <br/> |0,1  <br/> |On  <br/> |Off  <br/> |
 |B  <br/> |2   <br/> |Off  <br/> |On  <br/> |
    
-Si un message est proposé sous et est identifié en tant que l’emprunt d’identité à la fois l’usurpation d’identité et l’utilisateur et le même ensemble d’utilisateurs porte sur la stratégie A et B de la stratégie, puis le message est traité comme une usurpation d’identité mais aucune action n’est appliquée depuis anti-usurpation d’identité est désactivé , et l’usurpation d’identité s’exécute à une priorité plus élevée (4) à l’utilisateur d’emprunt d’identité (8).
+Si un message arrive et est identifié comme une usurpation et l'emprunt d'identité de l'utilisateur, et que le même ensemble d'utilisateurs est inclus dans la stratégie A et la stratégie B, le message est traité comme une usurpation, mais aucune action n'est appliquée, étant donné que l'anti-usurpation d'identité est désactivée et l'usurpation s'exécute avec une priorité plus élevée (4) que l'emprunt d'identité d'utilisateur (8).
   
-Pour effectuer d’autres types de hameçonnage stratégie s’applique, vous devrez ajuster les paramètres de qui différentes stratégies sont appliquées.
+Pour appliquer d'autres types de stratégies de hameçonnage, vous devrez ajuster les paramètres d'application des différentes stratégies.
   
-### <a name="legitimate-scenarios-to-disable-anti-spoofing"></a>Scénarios légitimes pour désactiver l’usurpation d’identité contre
+### <a name="legitimate-scenarios-to-disable-anti-spoofing"></a>Scénarios légitimes pour désactiver la détection d'usurpation d'identité
 
-L’usurpation d’identité contre améliore la protection des clients contre les attaques par hameçonnage, et par conséquent, la désactivation de protection anti-usurpation est fortement déconseillée. En le désactivant, vous pouvez résoudre certains faux positifs à court terme, mais à long terme que vous seront exposés à plus de risques. Le coût de configuration de l’authentification sur le côté de l’expéditeur ou la réalisation d’ajustements dans les stratégies anti-hameçonnage, sont généralement uniques événements ou nécessitent une maintenance périodique minime. Toutefois, le coût de récupération à partir d’une attaque par hameçonnage où les données a été exposées ou d’éléments ont été compromise est beaucoup plus élevé.
+La protection contre l'usurpation d'identité protège les clients contre les attaques par hameçonnage et, par conséquent, la désactivation de la protection contre l'usurpation d'identité est fortement déconseillée. En le désactivant, vous pouvez résoudre certains faux positifs à court terme, mais à long terme, vous serez exposé à davantage de risques. Le coût de configuration de l'authentification côté expéditeur ou d'ajustements dans les stratégies de hameçonnage est généralement un événement unique ou nécessite uniquement une maintenance périodique minimale. Toutefois, le coût de récupération d'une attaque par hameçonnage dans laquelle les données ont été exposées ou les ressources ont été compromis est bien plus élevé.
   
-Pour cette raison, il est préférable de travailler par le biais de l’usurpation d’identité contre faux positifs que pour désactiver la protection anti-courrier usurpation d’identité.
+Pour cette raison, il est préférable d'utiliser des faux positifs d'usurpation d'identité plutôt que de désactiver la protection contre l'usurpation d'identité.
   
-Toutefois, il existe un scénario authentique où l’usurpation d’identité anti doit être désactivée et qui est quand il y a plus de filtrage de courrier produits dans le routage des messages et Office 365 n’est pas le premier tronçon dans le chemin d’accès du courrier électronique :
+Toutefois, il existe un scénario légitime où l'anti-usurpation d'identité doit être désactivée, et c'est le cas lorsqu'il y a des produits de filtrage du courrier supplémentaires dans le routage des messages, et Office 365 n'est pas le premier tronçon dans le chemin d'accès du courrier électronique:
   
-![Enregistrement MX ne pointe pas vers Office 365](media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
+![L'enregistrement MX du client ne pointe pas vers Office 365](media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
   
-L’autre serveur peut être un échange de serveur de messagerie, une dispositif tel que Ironport, de filtrage de messagerie sur site ou service hébergé de nuage d’une autre.
+L'autre serveur peut être un serveur de messagerie Exchange local, un périphérique de filtrage de messagerie tel qu'IronPort ou un autre service hébergé sur le Cloud.
   
-Si l’enregistrement MX du domaine destinataire ne pointe pas vers Office 365, il n’est pas nécessaire de désactiver l’usurpation d’identité contre, car Office 365 recherche un enregistrement MX de votre domaine de réception et supprime l’usurpation d’identité contre qu’il pointe vers un autre service. Si vous ignorez si votre domaine possède un autre serveur au premier plan, vous pouvez utiliser un site Web à la boîte à outils MX pour rechercher l’enregistrement MX. Elle peut indiquer ce qui suit :
+Si l'enregistrement MX du domaine du destinataire ne pointe pas vers Office 365, il n'est pas nécessaire de désactiver l'usurpation d'identité, car Office 365 recherche l'enregistrement MX de votre domaine de réception et supprime l'usurpation d'identité s'il pointe vers un autre service. Si vous ne le faites pas si votre domaine dispose d'un autre serveur, vous pouvez utiliser un site Web comme MX boîte à outils pour Rechercher l'enregistrement MX. Cela peut dire ce qui suit:
   
-![Enregistrement MX indique le domaine ne pointe pas vers Office 365](media/d868bb9f-3462-49aa-baea-9447a3ce4877.jpg)
+![L'enregistrement MX indique que le domaine ne pointe pas vers Office 365](media/d868bb9f-3462-49aa-baea-9447a3ce4877.jpg)
   
-Ce domaine a un enregistrement MX qui ne pointe pas vers Office 365, afin que Office 365 ne s’appliquent pas anti-l’usurpation d’identité de l’application.
+Ce domaine a un enregistrement MX qui ne pointe pas vers Office 365, de sorte qu'Office 365 n'applique pas l'application d'usurpation d'identité.
   
-Toutefois, si l’enregistrement MX du domaine du destinataire *est* pointe vers Office 365, même s’il existe un autre service devant Office 365, puis vous devez désactiver anti-l’usurpation d’identité. L’exemple le plus courant consiste à utiliser d’une réécriture de destinataire : 
+Toutefois, si l'enregistrement MX du domaine du destinataire ** pointe vers Office 365, même s'il existe un autre service devant Office 365, vous devez désactiver la détection d'usurpation d'identité. L'exemple le plus courant consiste à utiliser la réécriture d'un destinataire: 
   
-![Diagramme de routage pour la réécriture de destinataire](media/070d90d1-50a0-42e4-9fd3-920bc99a7cad.jpg)
+![Diagramme de routage pour la réécriture de destinataires](media/070d90d1-50a0-42e4-9fd3-920bc99a7cad.jpg)
   
-Un enregistrement MX du domaine contoso.com pointe vers le serveur local, tandis que l’enregistrement MX de domaine @office365.contoso .Web .UI pointe vers Office 365, car il contient \*. protection.outlook.com, ou \*. eo.outlook.com dans l’enregistrement MX :
+L'enregistrement MX du domaine contoso. com pointe vers le serveur local, tandis que l'enregistrement MX du domaine @office365. contoso. net pointe vers Office 365 car il contient \*. protection.Outlook.com ou \*. eo.Outlook.com dans l'enregistrement MX:
   
-![Points d’enregistrement MX vers Office 365, par conséquent probablement destinataire réécrire](media/4101ad51-ef92-4907-b466-b41d14d344ca.jpg)
+![L'enregistrement MX pointe vers Office 365, par conséquent probablement la réécriture des destinataires](media/4101ad51-ef92-4907-b466-b41d14d344ca.jpg)
   
-N’oubliez pas de différencier les lors de l’enregistrement MX de destinataire d’un domaine ne pointe pas vers Office 365 et lorsqu’il a subi une réécriture destinataire. Il est important de faire la différence entre ces deux cas.
+N'oubliez pas de distinguer lorsque l'enregistrement MX d'un domaine du destinataire ne pointe pas vers Office 365 et lorsqu'il a subi une réécriture de destinataire. Il est important de déterminer la différence entre ces deux cas.
   
-Si vous ne savez pas si votre domaine de réception ayant subi une réécriture de destinataire, vous pouvez parfois indiquer en examinant les en-têtes des messages.
+Si vous ne savez pas si votre domaine de réception a subi une réécriture de destinataire, vous pouvez parfois en examiner les en-têtes.
   
-un) tout d’abord, examinez les en-têtes dans le message pour le domaine du destinataire dans l’en-tête des résultats de l’authentification : 
+a) d'abord, examinez les en-têtes du message pour le domaine du destinataire dans l'en-tête Authentication-Results: 
   
 ```
 Authentication-Results: spf=fail (sender IP is 1.2.3.4)
@@ -474,33 +459,33 @@ Authentication-Results: spf=fail (sender IP is 1.2.3.4)
   header.from=example.com; compauth=fail reason=001
 ```
 
-Le domaine du destinataire se trouve dans le texte en gras en rouge ci-dessus, dans ce cas office365.contoso.net. Il peut être différent que le destinataire dans le champ à : en-tête :
+Le domaine du destinataire est indiqué en gras en gras au-dessus, dans ce cas office365.contoso.net. Cela peut être différent pour le destinataire de l'en-tête to::
   
-À : Exemple destinataire \<destinataire @ contoso.com\>
+Vers: exemple de \<destinataire de destinataire @ contoso.com\>
   
-Effectuer une recherche d’enregistrement MX du domaine destinataire réel. S’il contient \*. protection.outlook.com, mail.messaging.microsoft.com, \*. eo.outlook.com ou mail.global.frontbridge.com, ce qui signifie que la MX pointe vers Office 365.
+Effectuer une recherche de l'enregistrement MX du domaine du destinataire réel. S'il contient \*. protection.outlook.com, mail.Messaging.Microsoft.com, \*. eo.Outlook.com ou mail.global.FrontBridge.com, le MX pointe vers Office 365.
   
-Si elle ne contient pas ces valeurs, cela signifie que la MX ne pointe pas vers Office 365. Un outil que vous pouvez utiliser pour vérifier cela est boîte à outils MX.
+S'il ne contient pas ces valeurs, cela signifie que MX ne pointe pas vers Office 365. Vous pouvez utiliser un outil pour vérifier qu'il s'agit de la boîte à outils MX.
   
-Pour cet exemple, ce qui suit indique contoso.com, le domaine qui se présente comme le destinataire, car elle était à : en-tête, a des points d’enregistrement MX sur un serveur sur prem :
+Pour cet exemple particulier, le code suivant indique que contoso.com, le domaine qui ressemble au destinataire, étant donné qu'il s'agissait de l'en-tête to:, qu'il pointe vers un serveur sur local:
   
-![Enregistrement MX pointe vers le serveur sous prem](media/2444144a-9a90-4319-96b2-d115041f669f.jpg)
+![L'enregistrement MX pointe vers le serveur local](media/2444144a-9a90-4319-96b2-d115041f669f.jpg)
   
-Toutefois, le destinataire réel est office365.contoso.net dont l’enregistrement MX pointe vers Office 365 :
+Toutefois, le destinataire réel est office365.contoso.net dont l'enregistrement MX pointe vers Office 365:
   
-![MX pointe vers Office 365, doit être réécriture destinataire](media/10cf3245-9b50-475a-b655-d8a51f99d812.jpg)
+![MX pointe vers Office 365, doit être réécrite pour le destinataire](media/10cf3245-9b50-475a-b655-d8a51f99d812.jpg)
   
-Par conséquent, ce message a subi probablement une réécriture de destinataire.
+Par conséquent, ce message a probablement subi une réécriture de destinataire.
   
-b) en second lieu, n’oubliez pas de faire la distinction entre les cas d’utilisation courants de réécritures destinataires. Si vous souhaitez réécrire le domaine du destinataire à \*. onmicrosoft.com, au lieu de cela réécrire pour qu’il \*. mail.onmicrosoft.com.
+b) Deuxièmement, veillez à bien faire la distinction entre les cas d'utilisation courants des réécrits de destinataires. Si vous envisagez de réécrire le domaine du \*destinataire dans. onmicrosoft.com, vous devez le \*réécrire dans. mail.onmicrosoft.com.
   
-Une fois que vous avez identifié le domaine du destinataire final qui est routé derrière un autre serveur et un enregistrement MX du domaine destinataire réellement pointe vers Office 365 (tel qu’il est publié dans ses enregistrements DNS), vous pouvez continuer à désactiver anti-l’usurpation d’identité.
+Une fois que vous avez identifié le domaine de destinataire final qui est acheminé derrière un autre serveur et que l'enregistrement MX du domaine du destinataire pointe en fait vers Office 365 (tel que publié dans ses enregistrements DNS), vous pouvez désactiver la détection d'usurpation d'identité.
   
-N’oubliez pas, vous ne souhaitez pas désactiver anti-usurpation si tronçon premier du domaine dans le chemin de routage est Office 365, uniquement lorsqu’il est derrière un ou plusieurs services.
+N'oubliez pas de désactiver l'usurpation d'identité si le premier tronçon du domaine dans le chemin de routage est Office 365, uniquement lorsqu'il est derrière un ou plusieurs services.
   
-### <a name="how-to-disable-anti-spoofing"></a>Comment faire pour désactiver l’usurpation d’identité contre
+### <a name="how-to-disable-anti-spoofing"></a>Procédure de désactivation de l'usurpation d'identité
 
-Si vous avez déjà une stratégie Anti-hameçonnage créée, définissez le paramètre EnableAntispoofEnforcement sur $false : 
+Si vous avez déjà créé une stratégie anti-hameçonnage, définissez le paramètre EnableAntispoofEnforcement sur $false: 
   
 ```
 $name = "<name of policy>"
@@ -508,13 +493,13 @@ Set-AntiphishPolicy -Identity $name -EnableAntiSpoofEnforcement $false
 
 ```
 
-Si vous ne connaissez pas le nom de la stratégie (ou plusieurs) pour désactiver, vous pouvez afficher les : 
+Si vous ne connaissiez pas le nom de la ou des stratégies à désactiver, vous pouvez les afficher: 
   
 ```
 Get-AntiphishPolicy | fl Name
 ```
 
-Si vous ne disposez pas des stratégies anti-hameçonnage existantes, vous pouvez en créer un et ensuite la désactiver (même si vous n’avez pas une stratégie, l’usurpation d’identité contre est toujours appliqué ; ultérieurement dans 2018, une stratégie par défaut est créée pour vous et vous pouvez ensuite désactiver qui au lieu de créer un) . Vous devez procéder ainsi dans plusieurs étapes : 
+Si vous n'avez pas de stratégies anti-hameçonnage existantes, vous pouvez en créer une, puis la désactiver (même si vous n'avez pas de stratégie, la détection d'usurpation d'identité est toujours appliquée; ensuite, une stratégie par défaut sera créée pour vous, puis désactivez-la au lieu d'en créer une). . Vous devrez effectuer cette opération en plusieurs étapes: 
   
 ```
 $org = Get-OrganizationConfig
@@ -535,182 +520,182 @@ Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false
 
 ```
 
-Désactivation de l’usurpation d’identité contre est disponible uniquement via l’applet de commande (plus loin dans 2018 Q2, il sera disponible dans la sécurité &amp; centre de conformité). Si vous n’avez pas accès à PowerShell, créez un ticket de support.
+La désActivation de la détection d'usurpation d'identité est uniquement disponible via la cmdlet (plus loin dans le 2ème trimestre &amp; 2018, elle sera disponible dans le centre de sécurité conformité). Si vous n'avez pas accès à PowerShell, créez un ticket de support.
   
-N’oubliez pas, il doit être appliqué uniquement à des domaines qui subissent routage indirect lorsque envoyées à Office 365. Pour désactiver l’usurpation d’identité contre en raison de certains faux positifs tentant de réserve, il sera préférable à long terme de travailler à leur.
+N'oubliez pas que cette application doit être appliquée uniquement aux domaines qui subissent un routage indirect lors de l'envoi vers Office 365. Résistez à la tentation de désactiver la détection d'usurpation d'identité en raison de certains faux positifs, il sera préférable de le faire à long terme.
   
 ### <a name="information-for-individual-users"></a>Informations pour les utilisateurs individuels
 
-Les utilisateurs individuels sont limitées à comment ils peuvent interagir avec l’info-bulle de sécurité anti-l’usurpation d’identité. Toutefois, il existe plusieurs choses que vous pouvez faire pour résoudre des scénarios courants.
+Les utilisateurs individuels sont limités dans la façon dont ils peuvent interagir avec le Conseil de sécurité d'usurpation d'identité. Toutefois, il existe plusieurs choses que vous pouvez faire pour résoudre des scénarios courants.
   
-### <a name="common-scenario-1---mailbox-forwarding"></a>Scénario courant #1 - transfert de boîte aux lettres
+### <a name="common-scenario-1---mailbox-forwarding"></a>#1 de scénario courant-transfert de boîte aux lettres
 
-Si vous utilisez un autre service de messagerie et transférez votre courrier électronique vers Office 365 ou Outlook.com, votre courrier électronique peut être marqué comme l’usurpation d’identité et recevoir une info-bulle de sécurité rouge. Office 365 et Outlook.com planifier adresses automatiquement lorsque le redirecteur est un des Outlook.com, Office 365, Gmail ou tout autre service qui utilise le [protocole de l’ARC](https://arc-spec.org). Toutefois, jusqu'à ce que ce correctif est déployé, les utilisateurs doivent utiliser la fonctionnalité de comptes connectés à importer leurs messages directement, au lieu d’utiliser l’option de transfert.
+Si vous utilisez un autre service de messagerie et transférez votre courrier électronique vers Office 365 ou Outlook.com, votre courrier peut être marqué comme une usurpation d'identité et recevoir un Conseil de sécurité rouge. Office 365 et Outlook.com plan pour résoudre ce cas automatiquement lorsque le redirecteur est l'un des Outlook.com, Office 365, Gmail ou tout autre service qui utilise le [protocole arc](https://arc-spec.org). Toutefois, jusqu'à ce que ce correctif soit déployé, les utilisateurs doivent utiliser la fonctionnalité comptes connectés pour importer leurs messages directement au lieu d'utiliser l'option de transfert.
   
-Pour configurer les comptes connectés dans Office 365, sélectionnez l’icône représentant un engrenage dans le coin supérieur droit de l’interface web de Office 365 \> messagerie \> messagerie \> comptes \> comptes connectés.
+Pour configurer des comptes connectés dans Office 365, sélectionnez l'icône d'engrenage dans le coin supérieur droit \> des comptes de \> messagerie \> \> de messagerie de l'interface Web Office 365.
   
-![Option de comptes Office 365 - connecté](media/e8e841ca-8861-4d83-8506-2a0858c51010.jpg)
+![Office 365-option de comptes connectés](media/e8e841ca-8861-4d83-8506-2a0858c51010.jpg)
   
-Dans Outlook.com, le processus est l’icône d’engrenage \> Options \> messagerie \> comptes \> comptes connectés.
+Dans Outlook.com \> , le processus est l'icône d'engrenages comptes de \> messagerie \> \> connectés.
   
-### <a name="common-scenario-2---discussion-lists"></a>Listes de Discussion fréquent #2 :
+### <a name="common-scenario-2---discussion-lists"></a>#2 de scénario courants-listes de discussion
 
-Listes de discussion connus pour avoir des problèmes avec anti-usurpation en raison de la façon dont ils transférer le message et modifier son contenu encore conserver le d’origine à partir de : adresse.
+Les listes de discussion sont connues pour rencontrer des problèmes avec la détection d'usurpation d'identité en raison de la façon dont elles transfèrent le message et modifient son contenu mais conserve l'adresse de provenance:.
   
-Par exemple, supposons que votre adresse e-mail est utilisateur @ contoso.com, et que vous intéressez observation d’oiseaux et joindre les amoureux de la nature liste discussion @ exemple.com. Lorsque vous envoyez un message à la liste de discussion, vous pouvez l’envoyer ainsi :
+Par exemple, supposons que votre adresse e-mail est user @ contoso.com et que vous êtes intéressé par les oiseaux et que vous joignez la liste de discussion birdwatchers @ example.com. Lorsque vous envoyez un message à la liste de discussion, vous pouvez l'envoyer de la manière suivante:
   
-**à partir de :** John Doe \<utilisateur @ contoso.com\> 
+**À partir de:** John Doe \<user @ contoso.com\> 
   
-**À :** Liste de Discussion de birdwatcher \<amoureux de la nature @ exemple.com\> 
+**À:** Liste \<de discussion de Birdwatcher birdwatchers @ example.com\> 
   
-**Objet :** Une visualisation de jays bleu dans la partie supérieure de Rainier MT. cette semaine 
+**Objet:** Affichage parfait de Jays bleus en haut de Mt. Rainier cette semaine 
   
-Tout le monde souhaitez extraire l’affichage cette semaine de Rainier MT. ?
+Quiconque souhaite consulter cette semaine à partir de Mt. Rainier?
   
-Lorsque la liste de messagerie reçoit le message, ils mettre en forme le message, de modifier son contenu et relire au reste des membres dans la liste de discussion constituée de participants à partir de nombreux récepteurs de messagerie différents.
+Lorsque la liste de messages électroniques reçoit le message, il met en forme le message, modifie son contenu et le rejoue sur le reste des membres de la liste de discussion qui est composé de participants provenant de nombreux récepteurs de messagerie différents.
   
-**à partir de :** John Doe \<utilisateur @ contoso.com\> 
+**À partir de:** John Doe \<user @ contoso.com\> 
   
-**À :** Liste de Discussion de birdwatcher \<amoureux de la nature @ exemple.com\> 
+**À:** Liste \<de discussion de Birdwatcher birdwatchers @ example.com\> 
   
-**Objet :** [AMOUREUX DE LA NATURE] Une visualisation de jays bleu dans la partie supérieure de Rainier MT. cette semaine 
+**Objet:** [BIRDWATCHERS] Affichage parfait de Jays bleus en haut de Mt. Rainier cette semaine 
   
-Tout le monde souhaitez extraire l’affichage cette semaine de Rainier MT. ?
+Quiconque souhaite consulter cette semaine à partir de Mt. Rainier?
   
 ---
   
-Ce message a été envoyé à la liste de Discussion amoureux de la nature. Vous pouvez annuler l’abonnement à tout moment.
+Ce message a été envoyé à la liste de discussion birdwatchers. Vous pouvez annuler votre abonnement à tout moment.
   
-Dans l’exemple ci-dessus, le message relu possède la même : adresse (utilisateur @ contoso.com), mais le message d’origine a été modifié en ajoutant une balise à la ligne d’objet et un pied de page au bas du message. Ce type de modification du message est souvent dans des listes de distribution et risque de faux positifs.
+Dans ce qui précède, le message rediffusé a la même adresse que: Address (user @ contoso.com), mais le message d'origine a été modifié en ajoutant une balise à la ligne d'objet et un pied de page en bas du message. Ce type de modification de message est courant dans les listes de publipostage et peut entraîner des faux positifs.
   
-Si vous ou une personne de votre organisation est un administrateur de la liste de distribution, vous pourrez peut-être le configurer pour passer les vérifications de l’usurpation d’identité contre.
+Si vous ou une personne de votre organisation est un administrateur de la liste de distribution, vous pouvez peut-être la configurer pour qu'elle transmette des contrôles d'usurpation d'identité.
   
-- Consultez le Forum aux questions à DMARC.org : [puis-je utiliser une liste de publipostage et je souhaite interagir avec DMARC, que dois-je faire ?](https://dmarc.org/wiki/FAQ#I_operate_a_mailing_list_and_I_want_to_interoperate_with_DMARC.2C_what_should_I_do.3F)
+- Consultez le Forum aux questions sur DMARC.org: [j'utilise une liste de publipostage et je souhaite interagir avec DMARC, que dois-je faire?](https://dmarc.org/wiki/FAQ#I_operate_a_mailing_list_and_I_want_to_interoperate_with_DMARC.2C_what_should_I_do.3F)
     
-- Consulter les instructions à ce billet de blog : [une info-bulle pour les opérateurs de liste de distribution interagir avec DMARC pour éviter tout problème](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/)
+- Lisez les instructions de ce billet de blog: [Conseil pour les opérateurs de liste de publipostage pour interagir avec DMARC afin d'éviter les défaillances](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/)
     
-- Envisagez l’installation de mises à jour sur votre serveur de liste de distribution à prendre en charge d’ARC, voir[https://arc-spec.org](https://arc-spec.org/)
+- EnVisagez d'installer des mises à jour sur votre serveur de listes de distribution pour prendre en charge ARC, consultez[https://arc-spec.org](https://arc-spec.org/)
     
-Si vous n’avez pas de propriété de la liste de distribution :
+Si vous n'êtes pas propriétaire de la liste de publipostage:
   
-- Vous pouvez demander du chargé de maintenance de la liste de distribution pour implémenter une des options ci-dessus (ils doivent également avoir authentification électronique configuré pour le domaine de de que la liste de distribution est le relais à partir)
+- Vous pouvez demander au responsable de la liste de publipostage d'implémenter l'une des options ci-dessus (elles doivent également configurer l'authentification de messagerie pour le domaine à partir duquel la liste de publipostage rerelaie).
     
-- Vous pouvez créer des règles de boîte aux lettres dans votre client de messagerie pour déplacer des messages vers la boîte de réception. Vous pouvez également demander aux administrateurs de votre organisation pour configurer des règles d’autorisation ou substitutions comme indiqué dans la section Gestion des expéditeurs légitimes qui sont envoyant du courrier non authentifié
+- Vous pouvez créer des règles de boîte aux lettres dans votre client de messagerie pour déplacer des messages vers la boîte de réception. Vous pouvez également demander aux administrateurs de votre organisation de configurer des règles d'autorisation ou des remplacements comme décrit dans la section gestion des expéditeurs légitimes qui envoient des messages électroniques non authentifiés.
     
-- Vous pouvez créer un ticket d’assistance avec Office 365 pour créer une substitution pour la liste de distribution à traiter comme légitime
+- Vous pouvez créer un ticket de support avec Office 365 pour créer un remplacement pour la liste de publipostage afin de la traiter comme légitime
     
 ### <a name="other-scenarios"></a>Autres scénarios
 
-1. Si aucun des scénarios courants ci-dessus s’applique à votre situation, signaler le message comme faux positif arrière à Microsoft. Pour plus d’informations, consultez la section [comment signaler les messages de courrier indésirable ou non-spam retour à Microsoft ?](#how-can-i-report-spam-or-non-spam-messages-back-to-microsoft) plus loin dans cet article. 
+1. Si aucun des scénarios courants ci-dessus ne s'applique à votre situation, signalez le message comme faux positif à Microsoft. Pour plus d'informations, reportez-vous à la section Comment puis-je signaler des courriers indésirables [ou des messages non indésirables à Microsoft?](#how-can-i-report-spam-or-non-spam-messages-back-to-microsoft) plus loin dans cet article. 
     
-2. Vous pouvez également contacter votre administrateur, qui peut déclencher comme un ticket de support Microsoft. L’équipe d’ingénierie Microsoft va étudier la raison pour laquelle le message a été marqué comme une usurpation d’identité.
+2. Vous pouvez également contacter votre administrateur de messagerie qui peut le déclencher en tant que ticket de support avec Microsoft. L'équipe d'ingénierie Microsoft examinera pourquoi le message a été marqué comme falsifié.
     
-3. En outre, si vous connaissez l’expéditeur et êtes certain qu’ils ne sont pas à des fins malveillantes usurpés, vous pouvez répondre à l’expéditeur indiquant que leur envoyer des messages à partir d’un serveur de messagerie qui n’authentifie pas. Cela entraîne parfois l’expéditeur d’origine contacter leur administrateur informatique qui définira les enregistrements d’authentification requis de courrier électronique.
+3. De plus, si vous savez qui est l'expéditeur et qu'il est sûr qu'il n'est pas usurpé par malveillance, vous pouvez répondre à l'expéditeur indiquant qu'il envoie des messages à partir d'un serveur de messagerie qui ne s'authentifie pas. Il en résulte parfois que l'expéditeur d'origine contacte son administrateur informatique qui configurera les enregistrements d'authentification de messagerie requis.
   
-Lorsque suffisamment expéditeurs de répondre à des propriétaires de domaine qu’ils doivent configurer des enregistrements de messagerie d’authentification, il les incite à prendre d’action. Microsoft fonctionne également avec les propriétaires de domaine pour publier les enregistrements requis, mais elle permet encore plus lorsque des utilisateurs individuels demandent.
+Lorsque suffisamment d'expéditeurs répondent à des propriétaires de domaine pour configurer des enregistrements d'authentification de messagerie, il les Spurs en cours d'exécution. Bien que Microsoft travaille également avec les propriétaires de domaine pour publier les enregistrements requis, il est encore plus utile lorsque des utilisateurs individuels le demandent.
     
-4. Si vous le souhaitez, ajouter l’expéditeur à votre liste des expéditeurs approuvés. Cependant, gardez à l’esprit que si un auteur de phishing usurpe ce compte, il est remis à votre boîte aux lettres. Par conséquent, cette option doit être utilisée avec modération.
+4. Vous pouvez également ajouter l'expéditeur à votre liste des expéditeurs approuvés. Toutefois, sachez que si un hameçonnage usurpe ce compte, il sera remis à votre boîte aux lettres. Par conséquent, cette option doit être utilisée avec modération.
     
-## <a name="how-senders-to-microsoft-should-prepare-for-anti-spoofing-protection"></a>Comment les expéditeurs à Microsoft doivent préparer pour la protection anti-l’usurpation d’identité
+## <a name="how-senders-to-microsoft-should-prepare-for-anti-spoofing-protection"></a>Comment les expéditeurs de Microsoft doivent se préparer à la protection contre l'usurpation d'identité
 
-Si vous êtes un administrateur ayant actuellement envoie des messages à Microsoft Office 365 ou Outlook.com, vous devez vous assurer que votre courrier électronique est correctement authentifié sinon il peut être marqué comme du courrier indésirable ou hameçonnage. 
+Si vous êtes un administrateur qui envoie des messages à Microsoft, qu'il s'agisse d'Office 365 ou Outlook.com, vous devez vous assurer que votre courrier électronique est correctement authentifié, sinon il peut être marqué comme courrier indésirable ou hameçon. 
   
-### <a name="customers-of-office-365"></a>Clients d’Office 365
+### <a name="customers-of-office-365"></a>Clients d'Office 365
 
-Si vous êtes un client Office 365 et Office 365 vous permet d’envoyer des messages électroniques sortants :
+Si vous êtes un client Office 365 et que vous utilisez Office 365 pour envoyer des e-mails sortants:
   
-- Pour vos domaines, [configurer SPF dans Office 365 afin d’empêcher l’usurpation d’identité](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)
+- Pour vos domaines, [configurez SPF dans Office 365 pour éviter l'usurpation](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)
     
-- Pour vos domaines principaux, [DKIM utilisés pour valider le courrier sortant envoyé à partir de votre domaine personnalisé dans Office 365](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)
+- Pour vos domaines principaux, [Utilisez DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé dans Office 365](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)
     
-- [Envisager la création d’enregistrements DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email) pour votre domaine pour déterminer quels sont vos expéditeurs légitimes 
+- EnVisagez de [configurer des enregistrements DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email) pour votre domaine afin de déterminer les personnes qui sont vos expéditeurs légitimes 
     
-Microsoft ne fournit pas d’instructions d’implémentation détaillées pour chacune des SPF, DKIM et DMARC. Toutefois, il est beaucoup d’informations de publication en ligne. 3e entreprises tierces sont également dédié pour aider votre organisation à configurer des enregistrements de messagerie d’authentification.
+Microsoft ne fournit pas d'instructions d'implémentation détaillées pour chaque SPF, DKIM et DMARC. Toutefois, il existe un grand nombre d'informations publiées en ligne. Il existe également des sociétés tierces dédiées pour aider votre organisation à configurer les enregistrements d'authentification de messagerie.
   
 ### <a name="administrators-of-domains-that-are-not-office-365-customers"></a>Administrateurs de domaines qui ne sont pas des clients Office 365
 
-Si vous êtes un administrateur de domaine, mais ne sont pas un client Office 365 :
+Si vous êtes un administrateur de domaine, mais qu'il ne s'agit pas d'un client Office 365:
   
-- Vous devez configurer SPF pour publier les adresses IP d’envoi de votre domaine et également configurer DKIM (le cas échéant) pour signer numériquement les messages. Vous pouvez également envisager la configuration d’enregistrements DMARC.
+- Vous devez configurer SPF pour publier les adresses IP d'envoi de votre domaine et configurer DKIM (le cas échéant) pour signer numériquement les messages. Vous pouvez également configurer des enregistrements DMARC.
     
-- Si vous avez les expéditeurs qui transmettent courrier à votre place, vous devez travailler avec leur envoyer un message électronique d’une manière telle que dans le domaine : adresse (si elle appartient à vous) s’aligne sur le domaine qui transmet SPF ou DMARC.
+- Si vous avez des expéditeurs en bloc qui transmettent des courriers électroniques à votre place, vous devez les utiliser pour envoyer des courriers électroniques de sorte que le domaine d'envoi de l'adresse de: (s'il vous appartient) s'aligne sur le domaine qui transmet SPF ou DMARC.
     
-- Si vous avez localement, les serveurs de messagerie ou envoyer à partir d’un fournisseur de logiciel en tant que service, ou d’un service d’hébergement sur le nuage tels que Microsoft Azure, GoDaddy, rack, Amazon Web Services, ou similaire, vous devez vous assurer qu’ils sont ajoutés à votre enregistrement SPF.
+- Si vous avez des serveurs de messagerie locaux ou que vous envoyez des messages à partir d'un fournisseur de logiciels en tant que service ou d'un service d'hébergement de Cloud tel que Microsoft Azure, GoDaddy, Rackspace, Amazon Web services ou similaire, vous devez vous assurer qu'ils sont ajoutés à votre enregistrement SPF.
     
-- Si vous êtes un domaine de petite taille qui est hébergé par un fournisseur de services Internet, vous devez configurer votre enregistrement SPF conformément aux instructions qui est fournie par votre fournisseur de services Internet. La plupart des fournisseurs de services Internet fournissent ces types d’instructions et se trouvent sur des pages de prise en charge de l’entreprise.
+- Si vous êtes un petit domaine hébergé par un fournisseur de services Internet, vous devez configurer votre enregistrement SPF conformément aux instructions fournies par votre fournisseur de services Internet. La plupart des fournisseurs de service Internet fournissent ces types d'instructions et sont accessibles sur les pages de support de l'entreprise.
     
-- Même si vous n’avez pas à publier des enregistrements d’authentification e-mail avant, et il fonctionne correctement, vous devez toujours publier les enregistrements d’authentification de courrier électronique à envoyer à Microsoft. En procédant ainsi, vous êtes à vous aider dans la lutte contre le hameçonnage et réduire le risque que vous, ou organisations que vous envoyez, obtenez récoltées.
+- Même si vous n'avez pas dû publier des enregistrements d'authentification de courrier électronique avant et que cela fonctionnait correctement, vous devez toujours publier des enregistrements d'authentification de courrier électronique à envoyer à Microsoft. En procédant ainsi, vous participez à la lutte contre le hameçonnage et vous réduisez la possibilité que vous ou les organisations vers lesquelles vous envoyez des e-mails soient hameçons.
     
-### <a name="what-if-you-dont-know-who-sends-email-as-your-domain"></a>Que se passe-t-il si vous ne connaissez pas qui envoie un courrier électronique en tant que votre domaine ?
+### <a name="what-if-you-dont-know-who-sends-email-as-your-domain"></a>Que faire si vous ne connaissez pas les personnes qui envoient des messages électroniques en tant que votre domaine?
 
-Nombre de domaines ne pas publie les enregistrements SPF, car ils ne savent pas tous les expéditeurs sont. OK, vous n’avez pas besoin de savoir qui toutes ne soient. Au lieu de cela, doit commencer par la publication d’un enregistrement SPF pour celles que vous connaissez, en particulier où le trafic d’entreprise se trouve et publier une stratégie SPF neutre, ? tous les :
+De nombreux domaines ne publient pas d'enregistrements SPF, car ils ne connaissent pas tous leurs expéditeurs. C'est possible, vous n'avez pas besoin de vous en informer. Au lieu de cela, vous devez commencer par publier un enregistrement SPF pour ceux que vous savez, en particulier où se trouve votre trafic d'entreprise, et publier une stratégie SPF neutre? All:
   
-example.com TXT dans « v = spf1 include:spf.example.com ? tous les »
+example.com dans TXT "v = spf1 include include. example. com? All"
   
-La stratégie SPF neutre signifie que tous les messages envoyés fourni en dehors de votre infrastructure d’entreprise transmettra l’authentification du courrier électronique à tous les autres destinataires de courrier électronique. Courrier provenant d’expéditeurs que vous ne connaissez revient à neutre, qui est presque identique à celle aucun enregistrement SPF tout.
+La stratégie SPF neutre signifie que tout courrier électronique qui sort de votre infrastructure d'entreprise passera l'authentification de courrier électronique à tous les autres destinataires. Les messages électroniques provenant d'expéditeurs dont vous n'êtes pas informé seront redirigés vers le système de messagerie neutre, qui est quasiment identique à la publication d'aucun enregistrement SPF.
   
-Lors de l’envoi vers Office 365, courrier électronique provenant de votre entreprise trafic sera marqué comme authentifié, mais le courrier électronique provenant de sources que vous ne connaissez peut toujours être marqué comme étant usurpation d’identité (en fonction ou non Office 365 peut authentifier implicitement il). Toutefois, il s’agit toujours une amélioration à partir de tout le courrier est marqué comme usurpation d’identité par Office 365.
+Lors de l'envoi à Office 365, les messages électroniques provenant de votre trafic d'entreprise seront marqués comme étant authentifiés, mais les messages provenant de sources que vous ne connaissiez pas peuvent toujours être marqués comme frauduleux (selon que Office 365 peut ou non l'authentifier de manière implicite). Toutefois, il s'agit toujours d'une amélioration de tous les messages électroniques marqués comme usurpés par Office 365.
   
-Une fois que vous avez obtenu en route avec un enregistrement SPF avec une stratégie de secours ? tous, vous pouvez inclure progressivement infrastructure d’envoi plus et puis publier une stratégie plus stricte. 
+Une fois que vous avez commencé à utiliser un enregistrement SPF avec une stratégie de secours de? tout, vous pouvez inclure progressivement de plus en plus d'infrastructure d'envoi, puis publier une stratégie plus stricte. 
   
-### <a name="what-if-you-are-the-owner-of-a-mailing-list"></a>Que se passe-t-il si vous êtes le propriétaire d’une liste de distribution ?
+### <a name="what-if-you-are-the-owner-of-a-mailing-list"></a>Que faire si vous êtes le propriétaire d'une liste de publipostage?
 
-Voir la section [listes de scénario courant #2 - Discussion](#common-scenario-2---discussion-lists). 
+Consultez la section [scénario courant #2-listes de discussion](#common-scenario-2---discussion-lists). 
   
-### <a name="what-if-you-are-an-infrastructure-provider-such-as-an-internet-service-provider-isp-email-service-provider-esp-or-cloud-hosting-service"></a>Que se passe-t-il si vous êtes un fournisseur d’infrastructure comme un fournisseur de services (Internet), fournisseur de Service de messagerie (ESP) ou dans le cloud hébergeant le service ?
+### <a name="what-if-you-are-an-infrastructure-provider-such-as-an-internet-service-provider-isp-email-service-provider-esp-or-cloud-hosting-service"></a>Que se passe-t-il si vous êtes un fournisseur d'infrastructure tel qu'un fournisseur de services Internet, un fournisseur de services de messagerie (ESP) ou un service d'hébergement de Cloud?
 
-Si vous hébergez messagerie d’un domaine, et il envoie un courrier électronique, ou fournir une infrastructure d’hébergement qui permettre envoyer un message électronique, vous devez procédez comme suit :
+Si vous hébergez le courrier électronique d'un domaine, qu'il envoie des courriers électroniques ou une infrastructure d'hébergement pouvant envoyer des courriers électroniques, vous devez effectuer les opérations suivantes:
   
-- Vérifiez vos clients documentation décrivant comment publier dans leurs enregistrements SPF
+- Vérifier que vos clients disposent d'une documentation décrivant les éléments à publier dans leurs enregistrements SPF
     
-- Tenez compte des signatures DKIM de signature de courrier électronique sortant même si le client ne définie explicitement (connexion avec un domaine par défaut). Vous pouvez même double-signer le courrier électronique avec les signatures DKIM (une seule fois avec le domaine du client si elles ont le configurées et une deuxième fois avec la signature de votre société DKIM)
+- EnVisagez de signer les signatures DKIM sur les messages sortants même si le client ne le configure pas explicitement (signez-le à l'aide d'un domaine par défaut). Vous pouvez même signer le courrier électronique à l'aide de signatures DKIM (une seule fois avec le domaine du client s'il l'a configurée, puis une deuxième fois avec la signature DKIM de votre entreprise).
     
-Remise des messages à Microsoft ne sont pas garanti même si vous authentifier provenant de votre plateforme de messagerie, mais au moins garantit que Microsoft légitime votre courrier électronique, car il n’est pas authentifié. Pour plus de détails autour comment Outlook.com filtres de courrier électronique, consultez la [page administrateur Outlook.com](https://postmaster.live.com/pm/postmaster.aspx).
+La remise à Microsoft n'est pas garantie même si vous authentifiez le courrier électronique provenant de votre plateforme, mais qu'il garantit au moins que Microsoft ne peut pas légitimer votre courrier électronique, car il n'est pas authentifié. Pour plus d'informations sur la façon dont Outlook.com filtre les messages électroniques, consultez la [page Outlook.com postmaster](https://postmaster.live.com/pm/postmaster.aspx).
   
-Pour plus d’informations sur les recommandations de fournisseurs de service, voir [M3AAWG Mobile Messaging meilleures pratiques pour les fournisseurs de services](https://www.m3aawg.org/sites/default/files/M3AAWG-Mobile-Messaging-Best-Practices-Service-Providers-2015-08.pdf).
+Pour plus d'informations sur les meilleures pratiques en matière de fournisseurs de services, consultez la rubrique [M3AAWG mobile messagIng Best Practices for Service](https://www.m3aawg.org/sites/default/files/M3AAWG-Mobile-Messaging-Best-Practices-Service-Providers-2015-08.pdf)Providers.
   
 ## <a name="frequently-asked-questions"></a>Forum Aux Questions
 
-### <a name="why-is-microsoft-making-this-change"></a>Pourquoi est-ce que Microsoft effectuer cette modification ?
+### <a name="why-is-microsoft-making-this-change"></a>Pourquoi Microsoft apporte-t-il cette modification?
 
-En raison des attaques de l’impact de l’hameçonnage et étant donné que l’authentification du courrier électronique a été autour de plus de 15 ans, Microsoft estime que le risque de continue à autoriser la messagerie non authentifié est plus élevée que les risques de perte de courrier légitime.
+En raison de l'impact des attaques par hameçonnage et de l'authentification de messagerie depuis plus de 15 ans, Microsoft pense que le risque de continuer à autoriser le courrier non authentifié est plus élevé que le risque de perdre des messages légitimes.
   
-### <a name="will-this-change-cause-legitimate-email-to-be-marked-as-spam"></a>Cette modification entraînera électroniques légitimes doit être marqué comme courrier indésirable ?
+### <a name="will-this-change-cause-legitimate-email-to-be-marked-as-spam"></a>Cette modification entraîne-t-elle le marquage du courrier légitime comme courrier indésirable?
 
-Dans un premier temps, il y aura des messages qui sont marqués comme courrier indésirable. Toutefois, au fil du temps, ajustent expéditeurs et ensuite la quantité de messages mal étiquetées en tant qu’usurpés sera négligeable pour la plupart des chemins d’accès du courrier électronique.
+Dans un premier temps, certains messages seront marqués comme courrier indésirable. Toutefois, au fil du temps, les expéditeurs ajusteront, puis la quantité de messages ayant été labellisés comme falsifiés sera négligeable pour la plupart des chemins d'accès.
   
-Microsoft lui-même adopté tout d’abord cette fonctionnalité plusieurs semaines avant le déploiement sur le reste de ses clients. Alors que les interruptions en premier lieu, elle progressivement refusée.
+Microsoft a d'abord adopté cette fonctionnalité plusieurs semaines avant de la déployer sur le reste de ses clients. Bien qu'il y ait une interruption en premier, il a progressivement baissé.
   
-### <a name="will-microsoft-bring-this-feature-to-outlookcom-and-non-advanced-threat-protection-customers-of-office-365"></a>Microsoft apportera cette fonctionnalité pour les clients Outlook.com et non - avancée contre les menaces d’Office 365 ?
+### <a name="will-microsoft-bring-this-feature-to-outlookcom-and-non-advanced-threat-protection-customers-of-office-365"></a>Est-ce que Microsoft mettra cette fonctionnalité à Outlook.com et aux clients de protection contre les menaces de Microsoft Office 365?
 
-La technologie anti-usurpation de Microsoft a été initialement déployée à ses organisations qui avaient un abonnement à Office 365 entreprise E5 ou avaient acheté module complémentaire de leur abonnement Office 365 Advanced Threat Protection (DAV). À compter d’octobre, 2018, nous avons étendu la protection pour les organisations ayant ainsi que Exchange Online Protection (EOP). À l’avenir, nous pouvons diffuser Outlook.com. Toutefois, dans ce cas, il peut y avoir des fonctions qui ne sont pas appliquées telles que la création de rapports et des remplacements personnalisés.
+La technologie de détection d'usurpation de Microsoft a été déployée à l'origine dans ses organisations disposant d'un abonnement Office 365 entreprise E5 ou a acheté le complément Office 365 Advanced Threat Protection (ATP) pour leur abonnement. Depuis octobre 2018, nous avons étendu la protection aux organisations qui possèdent également Exchange Online Protection (EOP). À l'avenir, nous pouvons le publier pour Outlook.com. Toutefois, dans ce cas, certaines fonctionnalités ne sont pas appliquées, telles que la création de rapports et les substitutions personnalisées.
   
-### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Comment signaler les messages de courrier indésirable ou non-spam retour à Microsoft ?
+### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Comment puis-je signaler des courriers indésirables ou des messages non indésirables à Microsoft?
 
-Vous pouvez utiliser le [complément de Message de rapport pour Outlook](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2), ou si elle n’est pas installé, [Envoyer du courrier indésirable, non-, messages indésirables et phishing anti-spam à Microsoft pour analyse](https://technet.microsoft.com/en-us/library/jj200769%28v=exchg.150%29.aspx).
+Vous pouvez utiliser le [complément de message de rapport pour Outlook](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2), ou s'il n'est pas installé, soumettre des messages de courrier indésirable, de courrier [non indésirable et de hameçonnage à Microsoft pour analyse](https://technet.microsoft.com/en-us/library/jj200769%28v=exchg.150%29.aspx).
   
-### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>Je suis un administrateur de domaine ne sait pas qui sont tous les expéditeurs mon !
+### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>Je suis un administrateur de domaine qui ne connaît pas tous mes expéditeurs!
 
-Consultez [les administrateurs des domaines qui ne sont pas des clients Office 365](#administrators-of-domains-that-are-not-office-365-customers).
+Veuillez consulter [les administrateurs de domaines qui ne sont pas des clients Office 365](#administrators-of-domains-that-are-not-office-365-customers).
   
-### <a name="what-happens-if-i-disable-anti-spoofing-protection-for-my-organization-even-though-office-365-is-my-primary-filter"></a>Que se passe-t-il si je désactiver protection anti-l’usurpation d’identité pour mon organisation, même si Office 365 est mon filtre primaire ?
+### <a name="what-happens-if-i-disable-anti-spoofing-protection-for-my-organization-even-though-office-365-is-my-primary-filter"></a>Que se passe-t-il si je désactive la protection contre l'usurpation d'identité pour mon organisation, même si Office 365 est mon filtre principal?
 
-Nous ne recommandons pas cette opération, car vous disposerez plus manqué hameçonnage et les messages de courrier indésirable. Usurpation d’hameçonnage pas tous, et seront manquer falsifiés pas tous. Toutefois, les risques sera supérieure à un client qui permet l’usurpation d’identité contre.
+Nous vous déconseillons de le faire car vous serez exposé à d'autres messages de hameçonnage et de courrier indésirable. Tout le hameçonnage n'est pas usurpé, et toutes les usurpations ne seront pas manquées. Toutefois, votre risque est supérieur à celui d'un client qui active la détection d'usurpation d'identité.
   
-### <a name="does-enabling-anti-spoofing-protection-mean-i-will-be-protected-from-all-phishing"></a>Activation de la protection anti-usurpation signifie de que s’être protégé contre le hameçonnage tous les ?
+### <a name="does-enabling-anti-spoofing-protection-mean-i-will-be-protected-from-all-phishing"></a>Est-ce que l'activation de la protection contre l'usurpation d'identité signifie que je suis protégé contre tous les tentatives de hameçonnage?
 
-Malheureusement, non, étant donné que les auteurs de phishing s’adapte pour utiliser d’autres techniques telles que compromise des comptes ou des comptes de services gratuits. Toutefois, la protection anti-hameçonnage fonctionne mieux détecter ces autres types de méthodes de hameçonnage, car la protection d’Office 365 calques sont conçus travail ensemble et créer les uns sur les autres.
+Malheureusement, non, car les auteurs de phishing s'adaptent à d'autres techniques telles que les comptes compromis ou à la configuration des comptes de services gratuits. Toutefois, la protection anti-hameçonnage est bien plus efficace pour détecter ces autres types de méthodes de hameçonnage car les couches de protection d'Office 365 sont conçues conjointement et s'imbriquent les unes sur les autres.
   
-### <a name="do-other-large-email-receivers-block-unauthenticated-email"></a>Autres récepteurs de grande taille ne bloquent des courrier non authentifié ?
+### <a name="do-other-large-email-receivers-block-unauthenticated-email"></a>D'autres récepteurs de courrier volumineux bloquent-ils le courrier électronique non authentifié?
 
-Presque tous les récepteurs de grande taille implémentent traditionnel SPF DKIM et DMARC. Des récepteurs d’ont autres contrôles qui se trouvent plus stricts qu’uniquement les standards, mais peu accédez comme non authentifié Office 365 pour bloquer la messagerie et les traiter comme une usurpation d’identité. Toutefois, la plupart de l’industrie devient plus strict sur ce type particulier de courriers électroniques, notamment en raison du problème de hameçonnage.
+Presque tous les grands récepteurs de courrier électronique mettent en œuvre SPF, DKIM et DMARC. Certains récepteurs ont d'autres vérifications qui sont plus strictes que les seules normes, mais il n'est pas nécessaire d'utiliser Office 365 pour bloquer les messages électroniques non authentifiés et les traiter comme une usurpation. Toutefois, la plupart du secteur d'activité est de plus en plus strict sur ce type particulier de courrier électronique, en particulier en raison du problème de hameçonnage.
   
-### <a name="do-i-still-need-the-advanced-spam-filtering-option-enabled-for-spf-hard-fail-if-i-enable-anti-spoofing"></a>Dois-je toujours l’option Advanced Spam Filtering activée pour « Échec dur SPF » si l’usurpation d’identité anti activer ?
+### <a name="do-i-still-need-the-advanced-spam-filtering-option-enabled-for-spf-hard-fail-if-i-enable-anti-spoofing"></a>Est-ce que j'ai toujours besoin de l'option avancée de filtrage du courrier inDésirable pour «échec matériel SPF» si j'active la détection d'usurpation d'identité?
 
-Non, cette option n’est plus nécessaire, car la fonctionnalité anti-usurpation considère comme non seulement échoue dur SPF, mais un ensemble de critères beaucoup plus large. Si vous avez activé l’usurpation anti et l’option SPF dur échouent est activée, vous obtiendrez probablement plus de faux positifs. Nous vous recommandons de désactiver cette fonctionnalité, car il serait fournissent presque sans conditions supplémentaires pour le courrier indésirable ou hameçonnage et à la place générer principalement de faux positifs.
+Non, cette option n'est plus nécessaire, car la fonctionnalité de détection d'usurpation d'identité ne prend pas en compte le blocage de SPF, mais un ensemble plus large de critères. Si la détection d'usurpation d'identité est activée et que l'option SPF non activable est activée, vous obtiendrez probablement plus de faux positifs. Nous vous recommandons de désactiver cette fonctionnalité, car elle ne fournirait presque aucune capture supplémentaire pour le courrier indésirable ou le hameçonnage et générera plutôt des faux positifs.
   
-### <a name="does-sender-rewriting-scheme-srs-help-fix-forwarded-email"></a>Schéma de réécriture d’expéditeur (SRS) permet-elle de résoudre électroniques transférés ?
+### <a name="does-sender-rewriting-scheme-srs-help-fix-forwarded-email"></a>Est-ce que le modèle de réécriture d'expéditeur (SRS) permet de réparer le courrier transféré?
 
-SRS ne résout que partiellement le problème de courriers électroniques transférés. Par la réécriture le SMTP MAIL FROM, SRS peut faire en sorte que SPF passes message transféré à l’emplacement suivant. Toutefois, étant donné que l’usurpation d’identité anti est en fonction de : adresse en combinaison avec le domaine de la messagerie à partir d’ou signature DKIM (ou autres signaux), il n’est pas suffisant empêcher électroniques transférés d’être marqué comme étant usurpés.
+Le service SRS corrige partiellement le problème de la transmission du courrier électronique. En réécrivant le courrier SMTP à partir de, le service SRS peut s'assurer que le message transféré passe par SPF à la destination suivante. Toutefois, étant donné que la détection d'usurpation d'identité est basée sur l'adresse de l'expéditeur en combinaison avec le domaine de messagerie ou le domaine de signature DKIM (ou d'autres signaux), il n'est pas suffisant d'empêcher le marquage du courrier transféré comme falsifié.
   
 

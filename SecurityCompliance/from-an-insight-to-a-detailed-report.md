@@ -6,44 +6,44 @@ manager: laurawi
 ms.date: 6/4/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: f3724c6c-ec64-4a24-ba71-bfd68020d4d2
-description: Voir comment vous pouvez déplacer un aperçu à un rapport détaillé de la sécurité &amp; centre de conformité via un exemple de prévention de perte de données.
-ms.openlocfilehash: d8ef40b000f9e5fcf7ee1826b020efc95776709c
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: Découvrez comment vous pouvez vous déplacer d'un aperçu d'un rapport détaillé dans le &amp; Centre de conformité de la sécurité via un exemple de protection contre la perte de données.
+ms.openlocfilehash: 4b6fee45ebd48a0bd6d5c6c166fb200b28cb9442
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014856"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217324"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>Procédure pas à pas. D’un aperçu à un rapport détaillé
 
-Si vous utilisez pour [des rapports et des vues d’ensemble de sécurité Office 365 &amp; centre de conformité](reports-and-insights-in-security-and-compliance.md), il peut vous aider à voir comment vous pouvez accéder facilement à partir d’un aperçu à un rapport détaillé. 
+Si vous débutez avec des [rapports et des informations dans le centre de sécurité &amp; conformité Office 365](reports-and-insights-in-security-and-compliance.md), il peut vous aider à vous rendre compte d'un aperçu des rapports détaillés. 
   
-Il s’agit d’une des procédures pas à pas plusieurs pour la [sécurité &amp; centre de conformité](https://protection.office.com). Pour voir les procédures pas à pas supplémentaires, consultez la section [Rubriques connexes](#related-topics) . 
+Il s'agit de l'une des nombreuses procédures pas à pas pour le [Centre de sécurité &amp; conformité](https://protection.office.com). Pour voir des procédures pas à pas supplémentaires, consultez la section [Rubriques connexes](#related-topics) . 
   
-## <a name="from-an-insight-to-a-detailed-report"></a>À partir d’un aperçu à un rapport détaillé
+## <a name="from-an-insight-to-a-detailed-report"></a>D'un aperçu d'un rapport détaillé
 
-Examinons le flux du tableau de bord pour un aperçu à un rapport détaillé pour l’exploration de données. (Ceci est un exemple de brève [prévention des pertes de données](data-loss-prevention-policies.md) .) 
+Passons en revue le flux du tableau de bord à un aperçu des rapports détaillés sur l'exploration des données. (Il s'agit d'un bref exemple de [protection contre la perte de données](data-loss-prevention-policies.md) .) 
   
-1. Nous commençons par un tableau de bord dans le [sécurité &amp; centre de conformité](https://protection.office.com). (Accédez aux **rapports** \> **tableau de bord**.)<br/>![Dans la sécurité &amp; centre de conformité, cliquez sur rapports \> tableau de bord](media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
+1. Nous commençons par un tableau de bord dans le [Centre de sécurité &amp; conformité](https://protection.office.com). (Accédez au **** \> **tableau de bord**rapports.)<br/>![Dans le centre &amp; de sécurité conformité, sélectionnez \> tableau de bord rapports](media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
   
-2. Dans l’angle supérieur gauche coin du tableau de bord, à côté **Top insights &amp; recommandations**, nous disposons d’un lien. (Cliquez sur **Afficher tout**.)<br/>![Dans la sécurité &amp; centre de conformité, cliquez sur rapports \> tableau de bord pour voir vos idées principales](media/9bb64e11-494f-40a4-ab3d-8d3c7789f300.png)<br/>Nous mène à une liste d’idées de votre organisation.<br/>![Dans la sécurité &amp; centre de conformité, vous pouvez afficher tous les détails dans une liste](media/1289af77-bf5a-444a-97a1-03d8a83f75a9.png)
+2. Dans le coin supérieur gauche du tableau de bord, en regard des ** &amp; recommandations de première vue**, nous disposons d'un lien. (Cliquez sur **Afficher tout**.)<br/>![Dans le centre &amp; de sécurité conformité, cliquez \> sur tableau de bord de rapports pour afficher vos informations de premier plan.](media/9bb64e11-494f-40a4-ab3d-8d3c7789f300.png)<br/>Cela nous amène à une liste d'informations pour notre organisation.<br/>![Dans le centre &amp; de sécurité conformité, vous pouvez afficher toutes les informations d'une liste.](media/1289af77-bf5a-444a-97a1-03d8a83f75a9.png)
   
-3. Sélection d’un élément dans la liste s’ouvre un volet où nous pouvons afficher plus de détails sur cet élément. (Cliquez sur un élément.)<br/>![Plus d’informations pour un aperçu sélectionné](media/dcbb389f-23b0-4031-b789-4a49068af85a.png)<br/>Nous voir actions recommandées, nous devons prendre en compte, telles que la vérification des stratégies. ([En savoir plus sur les stratégies de protection contre la perte de données](data-loss-prevention-policies.md)).
+3. La sélection d'un élément dans la liste ouvre un volet dans lequel nous pouvons afficher plus de détails sur cet élément. (Cliquez sur un élément.)<br/>![Détails d'une vue sélectionnée](media/dcbb389f-23b0-4031-b789-4a49068af85a.png)<br/>Nous voyons les actions recommandées, telles que la révision des stratégies. ([En savoir plus sur les stratégies de protection contre la perte de données](data-loss-prevention-policies.md).)
     
-4. Nous avons également un lien pour afficher plus de détails. (Cliquez sur **Voir activité associée dans l’Explorateur de solutions**).<br/>Cela nous amène à un type de rapport appelée [Explorateur](use-explorer-in-security-and-compliance.md) (également appelé Explorateur Threat), où nous pouvons appliquer le filtre et examiner les détails spécifiques.<br/>![Mode Explorateur avec plus de détails sur une vision sélectionnée](media/3ad15b15-7158-44b7-beda-013351bd868e.png)
+4. Nous disposons également d'un lien pour afficher plus de détails. (Cliquez sur **consulter les activités associées dans l'Explorateur**.)<br/>Cela nous amène à un type de rapport appelé [Explorateur](use-explorer-in-security-and-compliance.md) (également appelé Explorateur de menaces), où nous pouvons appliquer des filtres et approfondir des détails spécifiques.<br/>![Affichage de l'Explorateur avec plus de détails sur un aperçu sélectionné](media/3ad15b15-7158-44b7-beda-013351bd868e.png)
   
-De cette façon, nous pouvons passer facilement d’un aperçu des ses détails sous-jacents et prendre des décisions éclairées sur la prévention des pertes de données pour une organisation.
+De cette façon, nous pouvons facilement passer d'un aperçu de ses détails sous-jacents et prendre des décisions plus éclairées quant à la protection contre la perte de données pour une organisation.
   
 ## <a name="related-topics"></a>Voir aussi
 
-[Procédure pas à pas : à partir d’un rapport détaillé d’une analyse](from-a-detailed-report-to-an-insight.md)
+[Procédure pas à pas: d'un rapport détaillé vers un aperçu](from-a-detailed-report-to-an-insight.md)
   
-[Procédure pas à pas : à partir d’un tableau de bord pour un aperçu](from-a-dashboard-to-an-insight.md)
+[Procédure pas à pas: d'un tableau de bord vers un aperçu](from-a-dashboard-to-an-insight.md)
   
 

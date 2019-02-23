@@ -1,31 +1,15 @@
 ---
-title: Forum Aux Questions sur la protection anti-courrier indésirable
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 12/9/2016
-ms.audience: ITPro
-ms.topic: article
-ms.service: O365-seccomp
-ms.custom: TN2DMC
-localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
-description: Cette rubrique fournit des réponses aux questions fréquemment posées concernant la protection contre le courrier indésirable. Les réponses s'appliquent aux clients de Microsoft Exchange Online et Exchange Online Protection (EOP).
-ms.openlocfilehash: 77b3dc26d55f75e7476a3b52a550174a3876c56f
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003073"
+title: "Forum aux questions sur la protection anti-courrier indésirable" ms. Author: krowley Author: kccross Manager: laurawi ms. Date: 12/9/2016 ms. audience: professionnel ms. topic: article ms. service: O365-seccomp ms. Custom: TN2DMC localization_priority: normal Search. appverid:
+- MET150 ms. AssetID: c534a35d-B121-45DA-9d0a-ce738ce51fce ms. collection:
+    - M365-Security-Description de la conformité: «cette rubrique fournit des questions fréquemment posées et des réponses sur la protection contre le courrier indésirable. Les réponses sont applicables pour les clients Microsoft Exchange Online et Exchange Online Protection (EOP). "
 ---
+
 # <a name="anti-spam-protection-faq"></a>Forum Aux Questions sur la protection anti-courrier indésirable
 
 Cette rubrique fournit des réponses aux questions fréquemment posées concernant la protection contre le courrier indésirable. Les réponses s'appliquent aux clients de Microsoft Exchange Online et Exchange Online Protection (EOP). 
   
 > [!TIP]
-> Pour les questions et réponses sur expéditeurs autorisés et les listes d’expéditeurs bloqués, voir [expéditeurs fiables et expéditeurs bloqués répertorie dans Exchange Online](safe-sender-and-blocked-sender-lists-faq.md). Pour des questions et réponses sur la mise en quarantaine, voir [FAQ mise en quarantaine](quarantine-faq.md). 
+> Pour obtenir des questions et des réponses sur les listes d'expéditeurs approuvés et d'expéditeurs bloqués, consultez la rubrique [Safe sender and blocked sender Lists in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md). Pour obtenir des questions et des réponses sur la mise en quarantaine, consultez la rubrique [mise en quarantaine](quarantine-faq.md). 
   
  **Q. Par défaut, qu'arrive-t-il à un message identifié comme courrier indésirable ?**
   
@@ -72,11 +56,11 @@ R. Les messages de courrier indésirable et de courrier non indésirable peuvent
   
 R. Oui. Par exemple, vous pouvez obtenir un rapport de détection de courrier indésirable dans le centre d'administration Office 365. Ce rapport indique le volume de courrier indésirable sous la forme d'un nombre de messages uniques. Pour plus d'informations sur les rapports, consultez les liens suivants :
   
-Les clients Exchange Online : [analyse, création de rapports et le Message de suivi dans Exchange Online](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
+Clients Exchange Online: [surveillance, création de rapports et suivi des messages dans Exchange Online](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   
-Les clients Exchange Online Protection : [Création de rapports et suivi des messages dans Exchange Online Protection](eop/reporting-and-message-trace-in-exchange-online-protection.md)
+Clients Exchange Online Protection: [création de rapports et suivi des messages dans Exchange Online Protection](eop/reporting-and-message-trace-in-exchange-online-protection.md)
   
- **Q. quelqu'un m’a envoyé un message et je ne parviens pas à trouver. Je pense qu’il a été détectée comme courrier indésirable. Existe-t-il un outil qui vous permettent de savoir ?**
+ **Q. quelqu'un m'a envoyé un message et je ne le trouve pas. Je pense qu'elle a peut-être été détectée comme courrier indésirable. Existe-t-il un outil permettant de découvrir?**
   
 R. Oui, l'outil de suivi des messages vous permet de suivre les messages électroniques quand ils sont acheminés via le service afin de déterminer ce qui leur est arrivé. Pour plus d'informations sur l'utilisation de l'outil de suivi des messages pour comprendre pourquoi un message a été détecté comme courrier indésirable, consultez la rubrique [Le message a-t-il été marqué comme courrier indésirable ?](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam)
   
@@ -108,7 +92,7 @@ R. Les instructions ci-dessous constituent les meilleures pratiques pour l'envoi
   
 1. **Le domaine d'envoi du message électronique doit se résoudre dans DNS.**
     
-    Par exemple, si l’expéditeur est user@example.com, le domaine example.com résout l’adresse IP 192.0.43.10. Si un domaine d’envoi n’a aucun enregistrement et aucun enregistrement MX dans DNS, le service ne route le message par le biais de son pool de remise risque plus élevé quel que soit ou non le contenu du message est du courrier indésirable. Pour plus d’informations sur le pool de remise à risque plus élevé, voir [pool de remise à haut risque pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md). 
+    Par exemple, si l'expéditeur est user@example.com, le domaine example.com est résolu en adresse IP 192.0.43.10. Si un domaine d'envoi n'a pas d'enregistrement A et aucun enregistrement MX dans le système DNS, le service achemine le message via le pool de remise à risque plus élevé que le contenu du message soit ou non du courrier indésirable. Pour plus d'informations sur le pool de remise à risque plus élevé, consultez la rubrique [pool de remise à haut risque pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md). 
     
 2. **L'adresse IP d'envoi du serveur de courrier sortant doit avoir une entrée DNS inversée (PTR).**
     
@@ -134,7 +118,7 @@ R. Les instructions ci-dessous constituent les meilleures pratiques pour l'envoi
     
     Ces informations identifient les propriétaires de domaine et indiquent comment les contacter en entrant la société mère stable, le point de contact et les serveurs de noms.
     
-7. **Pour les messages en bloc : nom doit refléter qui envoie le message, alors que la ligne objet du message doit être un résumé dans le message est sur.**
+7. **Pour les publipostages en bloc, le nom de: doit indiquer la personne qui envoie le message, tandis que la ligne d'objet du message doit être un bref résumé de la description du message.**
     
     Le corps du message doit contenir une indication claire concernant l'offre, le service ou le produit. Par exemple, si un expéditeur envoie un publipostage pour le compte de la société Contoso, voici à quoi doit ressembler le contenu des champs De et Objet du message électronique :
     

@@ -1,5 +1,5 @@
 ---
-title: Création d'une stratégie DLP à partir d'un modèle
+title: Création d’une stratégie DLP à partir d’un modèle
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
@@ -8,24 +8,24 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.NewPolicyFromTemplate
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
-description: 'La plus simple et la plus courante pour prendre en main les stratégies DLP consiste à utiliser un des modèles inclus dans Office 365. '
-ms.openlocfilehash: 4e3a5d731538e4998858b5f9f7a296c43e6774ac
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: "La méthode la plus simple et la plus courante pour commencer à utiliser les stratégies DLP consiste à utiliser l'un des modèles inclus dans Office 365. "
+ms.openlocfilehash: 32c16ca69e624e009591316cccc70a7faafb4bc6
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528156"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219434"
 ---
-# <a name="create-a-dlp-policy-from-a-template"></a>Création d'une stratégie DLP à partir d'un modèle
+# <a name="create-a-dlp-policy-from-a-template"></a>Création d’une stratégie DLP à partir d’un modèle
 
-La plus simple et la plus courante pour prendre en main les stratégies DLP consiste à utiliser un des modèles inclus dans Office 365. Vous pouvez utiliser une de ces modèles est, ou personnaliser les règles pour répondre aux exigences de conformité spécifiques de votre organisation.
+La méthode la plus simple et la plus courante pour commencer à utiliser les stratégies DLP consiste à utiliser l'un des modèles inclus dans Office 365. Vous pouvez utiliser l'un de ces modèles tel quel, ou personnaliser les règles pour répondre aux exigences de conformité spécifiques de votre organisation.
   
 Office 365 comprend plus de 40 modèles prêts à l’emploi qui peuvent vous aider à répondre à toute une variété de besoins réglementaires et professionnels courants en matière de stratégies. Par exemple, il existe des modèles de stratégie DLP pour :
   
@@ -41,123 +41,123 @@ Vous pouvez affiner un modèle en modifiant les règles existantes ou en ajoutan
   
 Vous pouvez également choisir le modèle personnalisé, sans règle par défaut, et configurer votre stratégie DLP de A à Z, pour répondre aux exigences de conformité spécifiques de votre organisation.
   
-## <a name="example-identify-sensitive-information-across-all-onedrive-for-business-sites-and-restrict-access-for-people-outside-your-organization"></a>Exemple : Identifier les informations sensibles sur OneDrive tous les sites de commerce et restreindre l’accès des personnes extérieures à votre organisation
+## <a name="example-identify-sensitive-information-across-all-onedrive-for-business-sites-and-restrict-access-for-people-outside-your-organization"></a>Exemple: identifier les informations sensibles sur tous les sites OneDrive entreprise et restreindre l'accès pour les personnes extérieures à votre organisation
 
-OneDrive entreprise comptes facilitent des personnes dans votre organisation de collaborer et de partager des documents. Mais un intérêt commun pour les responsables de la conformité est que les informations sensibles stockées dans OneDrive pour les comptes de l’entreprise peuvent être partagées par inadvertance avec des personnes extérieures à votre organisation. Une stratégie DLP permet de réduire le risque.
+Les comptes OneDrive entreprise permettent aux personnes de votre organisation de collaborer et de partager facilement des documents. Toutefois, une préoccupation commune pour les responsables de la mise en conformité est que les informations sensibles stockées dans des comptes OneDrive entreprise peuvent être partagées par inadvertance avec des personnes extérieures à votre organisation. Une stratégie DLP peut contribuer à atténuer ce risque.
   
-Dans cet exemple, vous allez créer une stratégie DLP qui identifie les données PII US, qui inclut les numéros de passeport individuels contribuable Identification numéros (ITIN), les numéros de sécurité sociale et US. Vous aidera à l’aide d’un modèle, puis vous allez modifier le modèle pour répondre aux exigences de conformité de votre organisation, en particulier, vous devez :
+Dans cet exemple, vous allez créer une stratégie DLP qui identifie les données personnelles américaines, notamment les numéros d'identification des conTribuables (ITIN), les numéros de sécurité sociale et les numéros de passeport des États-Unis. Vous commencerez par utiliser un modèle, puis vous modifierez le modèle pour répondre aux exigences de conformité de votre organisation, notamment:
   
-- Ajoutez deux types de numéros de compte bancaire sensibles information—U.S. et licence de permis de conduire américain, afin que la stratégie DLP protège davantage de vos données sensibles.
+- Ajoutez deux types d'informations sensibles, les numéros de compte bancaire U. S et les numéros de permis de conduire américains, de sorte que la stratégie DLP protège encore davantage vos données sensibles.
     
-- Rendre plus élevé, la stratégie de sorte qu’une seule occurrence d’informations sensibles soit suffisant pour restreindre l’accès des utilisateurs externes.
+- Rendez la stratégie plus sensible, afin qu'une seule occurrence d'informations sensibles soit suffisante pour limiter l'accès pour les utilisateurs externes.
     
-- Autoriser les utilisateurs à remplacer les actions en fournissant une justification ou un faux positif de création de rapports. De cette manière, votre stratégie DLP ne sont pas empêcher des personnes dans votre organisation d’accéder à leur travail, pourvu qu’ils disposent d’un motif valide pour le partage des informations sensibles.
+- Permettre aux utilisateurs de remplacer les actions en fournissant une justification professionnelle ou en signalant un faux positif. De cette manière, votre stratégie DLP n'empêchera pas les personnes de votre organisation de faire leur travail, à condition qu'elles aient une raison commerciale valide pour partager les informations sensibles.
     
-### <a name="create-a-dlp-policy-from-a-template"></a>Création d'une stratégie DLP à partir d'un modèle
+### <a name="create-a-dlp-policy-from-a-template"></a>Création d’une stratégie DLP à partir d’un modèle
 
 1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à Office 365 à l’aide de votre compte professionnel ou de l’école. Vous êtes maintenant dans la sécurité Office 365 &amp; centre de conformité.
+2. Connectez-vous à Office 365 à l'aide de votre compte professionnel ou scolaire. Vous êtes maintenant dans le centre de sécurité &amp; conformité Office 365.
     
-3. Dans la sécurité &amp; centre de conformité \> barre de navigation gauche \> **prévention des pertes de données** \> **stratégie** \> **+ créer une stratégie**.
+3. Dans le centre &amp; \> de sécurité conformité, \> **stratégie** \> de **protection contre** \> la perte de données gauche **+ créer une stratégie**.
     
-    ![Créer un bouton de la stratégie](media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
+    ![Bouton créer une stratégie](media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
   
-4. Choisissez le modèle de stratégie DLP qui protège les types d’informations sensibles que vous devez \> **suivant**.
+4. Choisissez le modèle de stratégie DLP qui protège les types d'informations sensibles dont vous \> **** avez besoin.
     
-    Dans cet exemple, vous devez sélectionner **confidentialité** \> **US personnellement identifiables informations personnelles données** parce qu’il inclut déjà la plupart des types d’informations sensibles que vous souhaitez protéger, vous ajouterez plus tard quelques. 
+    Dans cet exemple, vous sélectionnerez les données personnelles américaines de **confidentialité** \> **(PII)** car elle inclut déjà la plupart des types d'informations sensibles que vous souhaitez protéger; vous ajouterez un peu plus tard. 
     
-    Lorsque vous sélectionnez un modèle, vous pouvez lire la description sur la droite pour en savoir plus qui protège les types d’informations sensibles le modèle.
+    Lorsque vous sélectionnez un modèle, vous pouvez lire la description à droite pour savoir quels types d'informations sensibles le modèle protège.
     
-    ![Page choix d’un modèle de stratégie DLP](media/775266f6-ad87-4080-8d7c-97f2e7403b30.png)
+    ![Page permettant de choisir un modèle de stratégie DLP](media/775266f6-ad87-4080-8d7c-97f2e7403b30.png)
   
-5. Nom de la stratégie \> **suivant**.
+5. Nommez la \> stratégie **suivante**.
     
-6. Pour choisir les emplacements que vous voulez que la stratégie DLP protéger, effectuez l’une des opérations suivantes :
+6. Pour choisir les emplacements que la stratégie DLP doit protéger, effectuez l'une des opérations suivantes:
     
-  - Choisissez **tous les emplacements dans Office 365** \> **suivant**.
+  - choisissez **tous les emplacements dans Office 365** \> ****.
     
-  - Sélectionnez **me laisser choisir les emplacements spécifiques** \> **suivant**. Cet exemple, choisissez cette option.
+  - Choisissez **me laisser choisir des emplacements** \> **** spécifiques. Pour cet exemple, choisissez ceci.
     
-    Pour inclure ou exclure un emplacement complet tel que tout le courrier Exchange ou tous les comptes de OneDrive, activer ou désactiver la l' **état** de cet emplacement. 
+    Pour inclure ou exclure un emplacement entier, tel que tous les messages électroniques Exchange ou tous les comptes OneDrive, activez ou désactivez l' **État** de cet emplacement. 
     
-    Pour inclure uniquement certains sites SharePoint ou OneDrive pour les comptes d’entreprise, activer l' **état** , puis cliquez sur les liens sous **inclure** à choisir des comptes ou des sites spécifiques. Lorsque vous appliquez une stratégie à un site, les règles configurées dans cette stratégie sont automatiquement appliqués à tous les sous-sites de ce site. 
+    Pour inclure uniquement des sites SharePoint spécifiques ou des comptes OneDrive entreprise, changez l' **État** en activé, puis cliquez sur les liens sous **inclure** pour choisir des sites ou des comptes spécifiques. Lorsque vous appliquez une stratégie à un site, les règles configurées dans cette stratégie sont appliquées automatiquement à tous les sous-sites de ce site. 
     
     ![Options pour les emplacements dans lesquels une stratégie DLP peut être appliquée](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
-    Dans cet exemple, pour protéger les informations sensibles stockées dans tous les OneDrive for Business des comptes, désactiver l' **état** de **messagerie Exchange** et **les sites SharePoint**et conservez l' **état** sur pour les **comptes OneDrive**.
+    Dans cet exemple, pour protéger les informations sensibles stockées dans tous les comptes OneDrive entreprise, désactivez l' **État** de la **messagerie Exchange** et des **sites SharePoint**, et conservez l' **État** pour les **comptes onedrive**.
     
-7. Choisissez **d’utiliser les paramètres avancés** \> **suivant**.
+7. Sélectionnez **utiliser les paramètres** \> avancés **suivant**.
     
-8. Un modèle de stratégie DLP contient des règles prédéfinies avec des conditions et actions pour détecter et agissent sur des types spécifiques d’informations sensibles. Vous pouvez modifier, supprimer, ou désactiver les règles existantes ou ajouter de nouveaux. Lorsque vous avez terminé, cliquez sur **suivant**.
+8. Un modèle de stratégie DLP contient des règles prédéfinies avec des conditions et des actions qui détectent et agissent sur des types spécifiques d'informations sensibles. Vous pouvez modifier, supprimer ou désactiver les règles existantes, ou en ajouter de nouvelles. Lorsque vous avez fini, cliquez sur **suivant**.
     
-    ![Règles d’étendue dans le modèle de stratégie nous PII](media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
+    ![Règles développées dans le modèle de stratégie de données personnelles américaines](media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
   
-    Dans cet exemple, le modèle de données d’identification personnelle US comprend deux règles prédéfinies :
+    Dans cet exemple, le modèle de données PII américain comprend deux règles prédéfinies:
     
-  - **Faible volume de contenu détecté PII US** Cette règle recherche les fichiers contenant entre 1 et 10 occurrences de chacun des trois types d’informations sensibles (ITIN, SSN et US numéros de passeport), où les fichiers sont partagés avec des personnes en dehors de l’organisation. Si trouvée, la règle envoie une notification par courrier électronique à l’administrateur de collection de site principal, propriétaire du document, et la dernière personne à avoir modifié le document. 
+  - **Faible volume de contenu détecté par les données personnelles américaines** Cette règle recherche les fichiers qui contiennent entre 1 et 10 occurrences de chacun des trois types d'informations sensibles (ITIN, SSN et les numéros de passeport américain), où les fichiers sont partagés avec des personnes extérieures à l'organisation. Si elle est trouvée, la règle envoie une notification par courrier électronique à l'administrateur principal de la collection de sites, au propriétaire du document et à la personne qui a modifié le document pour la dernière fois. 
     
-  - **Un volume important de contenu détecté PII US** Cette règle recherche les fichiers contenant au moins 10 occurrences de chacun des mêmes trois types d’informations sensibles, où les fichiers sont partagés avec des personnes en dehors de l’organisation. Si trouvé, cette action envoie également une notification par courrier électronique, ainsi que sa limite l’accès au fichier. Pour le contenu dans un compte professionnel OneDrive, cela signifie que les autorisations pour le document sont réservées pour tout le monde sauf les administrateur de collection de sites principal, le propriétaire du document et la personne qui a modifié le document. 
+  - **Volume élevé de contenu détecté par les données personnelles américaines** Cette règle recherche des fichiers contenant 10 ou plusieurs occurrences de chacun des trois mêmes types d'informations sensibles, où les fichiers sont partagés avec des personnes extérieures à l'organisation. Si cette action est trouvée, elle envoie également une notification par courrier électronique, plus limite l'accès au fichier. Pour le contenu d'un compte OneDrive entreprise, cela signifie que les autorisations pour le document sont restreintes pour tout le monde sauf pour l'administrateur principal de la collection de sites, le propriétaire du document et la dernière personne qui a modifié le document. 
     
-    Pour répondre aux besoins spécifiques de votre organisation, vous souhaiterez peut-être faciliter les règles déclencheur, afin qu’une seule occurrence d’informations sensibles est suffisante pour bloquer l’accès des utilisateurs externes. Après avoir examiné ces règles, comprendre que vous n’avez pas besoin de règles du nombre élevé et faible, vous avez besoin qu’une seule règle qui bloque l’accès si toutes les occurrences d’informations sensibles sont trouvée.
+    Pour répondre aux besoins spécifiques de votre organisation, vous pouvez faire en sorte que les règles soient déclenchées de manière plus facile, afin qu'une seule occurrence d'informations sensibles soit suffisante pour bloquer l'accès pour les utilisateurs externes. Après avoir examiné ces règles, vous comprenez que vous n'avez pas besoin de règles de comptage faibles et élevés: vous n'avez besoin que d'une seule règle qui bloque l'accès si une occurrence d'informations sensibles est trouvée.
     
-    Afin que vous développez la règle nommée **faible volume de contenu détecté PII US** \> **Supprimer la règle**.
+    Vous développez la règle nommée **low volume of content detected U.S.** \> **delete rule**.
     
-    ![Supprimer une règle](media/bc36f7d2-0fae-4af1-92e8-95ba51077b12.png)
+    ![Bouton supprimer la règle](media/bc36f7d2-0fae-4af1-92e8-95ba51077b12.png)
   
-9. Maintenant, dans cet exemple, vous devez pour ajouter les deux types d’informations sensibles (numéros de compte bancaire US et les numéros de licence de permis de conduire américain), autoriser les utilisateurs de remplacer une règle et modifier le nombre de n’importe quelle occurrence. Vous pouvez faire tout cela de modifier une règle, sélectionnez **un volume important de contenu détecté PII US** \> **Modifier la règle**.
+9. À présent, dans cet exemple, vous devez ajouter deux types d'informations sensibles (numéros de compte bancaire américain et numéro de permis de conduire américain), autoriser les utilisateurs à remplacer une règle et modifier le compte par une occurrence quelconque. Pour ce faire, vous pouvez modifier une règle, ainsi, sélectionnez **volume élevé de contenu détecté** \> ****.
     
-    ![Modifier une règle](media/eaf54067-4945-4c98-8dd6-fb2c5d6de075.png)
+    ![Bouton modifier la règle](media/eaf54067-4945-4c98-8dd6-fb2c5d6de075.png)
   
-10. Pour ajouter un type d’informations sensibles, dans la section **Conditions** \> **Ajouter ou modifier des types**. Ensuite, sous **Ajouter ou modifier des types** \> , choisissez **Ajouter** \> sélectionner le **Numéro de compte bancaire US** et **Numéro de permis de conduire américain** \> **Ajouter** \> **terminé**.
+10. Pour ajouter un type d'informations sensibles, dans **** la section \> conditions, **ajoutez ou modifiez des types**. Ensuite, sous **Ajouter ou modifier des types** \> , choisissez **Ajouter** \> **** \> **** sélectionnez le **numéro de compte bancaire américain** et le **numéro** \> de permis de conduire du pilote américain.
     
-    ![Permet d’ajouter ou modifier des types](media/c6c3ae86-f7db-40a8-a6e4-db11692024be.png)
+    ![Option pour ajouter ou modifier des types](media/c6c3ae86-f7db-40a8-a6e4-db11692024be.png)
   
-    ![Ajouter ou modifier le volet types](media/fdbb96af-b914-4a6c-a97b-bbd014689965.png)
+    ![Volet ajouter ou modifier des types](media/fdbb96af-b914-4a6c-a97b-bbd014689965.png)
   
-11. Pour modifier le nombre (le nombre d’instances d’informations sensibles nécessaire pour déclencher la règle), sous le **nombre d’instances** \> choisir la valeur **minimale** pour chaque type de \> entrez 1. Le nombre minimal ne peut pas être vide. Le nombre maximal peut être vide ; une valeur vide **max** convertir **n’importe quel**.
+11. Pour modifier le nombre (le nombre d'instances d'informations sensibles requises pour déclencher la règle), sous **nombre** \> d'instances, choisissez la valeur **minimale** pour \> chaque type entrez 1. Le nombre minimal ne peut pas être vide. Le nombre maximal peut être vide; une valeur **maximale** vide est convertie en **any**.
     
-    Lorsque vous avez terminé, le nombre minimum de tous les types d’informations sensibles doit être **1** et le nombre maximal doit être **n’importe quel**. En d’autres termes, toutes les occurrences de ce type d’informations sensibles répondront à cette condition.
+    Lorsque vous avez terminé, le nombre minimal pour tous les types d'informations sensibles doit être **1** et le nombre maximal doit être **any**. En d'autres termes, toutes les occurrences de ce type d'informations sensibles satisfont à cette condition.
     
-    ![Compteurs d’instance pour les types d’informations sensibles](media/5c6e08cb-59a9-4558-b54b-d899836d4737.png)
+    ![Nombre d'instances pour les types d'informations sensibles](media/5c6e08cb-59a9-4558-b54b-d899836d4737.png)
   
-12. Pour la personnalisation finale, vous ne voulez pas que vos stratégies DLP pour empêcher les personnes de leur travail lorsqu’ils ont une justification valide ou que vous rencontrent un faux positif, afin que vous voulez la notification utilisateur incluent des options pour remplacer l’action de blocage.
+12. Pour la personnalisation finale, vous ne souhaitez pas que vos stratégies DLP empêchent les personnes d'effectuer leur travail lorsqu'elles ont une justification professionnelle valide ou rencontrent un faux positif, de sorte que vous souhaitez que la notification utilisateur inclue les options permettant de remplacer l'action de blocage.
     
-    Dans la section **notifications d’utilisateur** , vous pouvez voir que les notifications par courrier électronique et les conseils de stratégie sont allumés par défaut de cette règle dans le modèle. 
+    Dans la section notifications de l' **utilisateur** , vous pouvez voir que les notifications par courrier électronique et les conseils de stratégie sont activés par défaut pour cette règle dans le modèle. 
     
-    Dans la section **substitutions par l’utilisateur** , vous pouvez voir que substitutions pour justifier sont activées, mais substitutions à signaler faux positifs ne sont pas. Choisissez **Remplacer la règle automatiquement si elles signalement comme faux positif**.
+    Dans la section substitutions de l' **utilisateur** , vous pouvez voir que les substitutions pour une justification professionnelle sont activées, mais les remplacements pour signaler des faux positifs ne le sont pas. Choisissez **remplacer automatiquement la règle si elle la signale comme faux positif**.
     
-    ![Section de notifications par utilisateur et l’utilisateur remplace la section](media/62720e7a-a939-4c03-b414-67748f3d64a0.png)
+    ![Section notifications utilisateur et section substitutions de l'utilisateur](media/62720e7a-a939-4c03-b414-67748f3d64a0.png)
   
-13. En haut de l’éditeur de règle, modifiez le nom de cette règle par défaut **un volume important de contenu détecté US PII** à **n’importe quel contenu détecté avec US PII** car il est désormais déclenché par toutes les occurrences de types d’informations sensibles. 
+13. En haut de l'éditeur de règles, modifiez le nom de cette règle à partir du **volume élevé par défaut de contenu détecté** par les informations personnelles américaines vers le **contenu détecté avec les données personnelles américaines** , car il est désormais déclenché par une occurrence de ses types d'informations sensibles. 
     
-14. En bas de l’éditeur de règles \> **Enregistrer**.
+14. En bas de l'éditeur \> de règle, **Enregistrez**.
     
-15. Passez en revue les conditions et les actions de cette règle \> **suivant**.
+15. Passez en revue les conditions et les actions \> **** de cette règle.
     
-    Sur la droite, notez **l’état** basculer de la règle. Si vous désactivez une stratégie entière, toutes les règles contenues dans la stratégie sont également désactivés. Toutefois, ici vous pouvez désactiver une règle spécifique sans désactiver entièrement. Cela peut être utile lorsque vous avez besoin d’une règle qui génère un grand nombre de faux positifs étudier la question. 
+    À droite, notez le commutateur d' **État** de la règle. Si vous désactivez une stratégie entière, toutes les règles contenues dans la stratégie sont également désactivées. Toutefois, vous pouvez désactiver une règle spécifique sans désactiver toute la stratégie. Cela peut être utile si vous avez besoin d'examiner une règle qui génère un grand nombre de faux positifs. 
     
-16. Dans la page suivante, lire et comprendre les points suivants, puis choisissez s’il faut activer la règle ou tester extraire au préalable \> **suivant**.
+16. Sur la page suivante, lisez et comprenez les éléments suivants, puis choisissez s'il \> **** faut activer la règle ou la tester.
     
-     Avant de créer vos stratégies DLP, vous devez envisager de les déployer progressivement pour évaluer leur impact et tester leur efficacité avant de vous les appliquer pleinement. Par exemple, vous ne voulez pas qu’une nouvelle stratégie DLP involontairement bloquer l’accès à des milliers de documents qui nécessitent des personnes afin d’effectuer leur travail. 
+     Avant de créer vos stratégies DLP, vous devez envisager de les déployer graduellement pour évaluer leur impact et tester leur efficacité avant de les appliquer complètement. Par exemple, vous ne souhaitez pas qu'une nouvelle stratégie DLP bloque involontairement l'accès à des milliers de documents dont les utilisateurs ont besoin pour effectuer leur travail. 
     
-    Si vous créez des stratégies DLP ayant un impact potentiel volumineux, nous vous recommandons de cet ordre :
+    Si vous créez des stratégies DLP avec un impact potentiel important, nous vous recommandons de suivre cette séquence:
     
 17. Démarrez en mode test sans conseil de stratégie, puis utilisez les rapports DLP pour évaluer l’impact. Vous pouvez utiliser les rapports DLP pour connaître le nombre, l’emplacement, le type et la gravité des correspondances de stratégie. En fonction des résultats, vous pouvez affiner les règles, si nécessaire. En mode test, les stratégies DLP n’auront aucun impact sur la productivité des personnes qui travaillent dans votre organisation. 
     
 18. Passez en mode test avec notifications et conseils de stratégie pour commencer à faire découvrir vos stratégies de conformité aux utilisateurs et les préparer pour les règles qui vont être appliquées. À ce stade, vous pouvez également demander aux utilisateurs de signaler les faux positifs afin d’affiner les règles.
     
-19. Activer les stratégies afin que les règles sont appliquées et le contenu de le protégé. Continuez à surveiller les rapports DLP et tous les rapports d’incidents ou notifications pour vous assurer que les résultats sont ce que vous prévoyez. 
+19. Activez les stratégies de manière à ce que les règles soient appliquées et que le contenu soit protégé. Continuez à surveiller les rapports DLP, ainsi que les rapports d'incident ou les notifications pour vous assurer que les résultats sont bien ceux que vous souhaitez. 
     
     ![Options pour l’utilisation du mode de test et l’activation de la stratégie](media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
   
-20. Passez en revue vos paramètres de cette stratégie \> choisissez **créer**.
+20. Vérifiez vos paramètres pour cette stratégie \> choisissez **créer**.
     
-Après avoir créé et activer une stratégie DLP, il est déployé sur les sources de contenu qui inclut, tels que des sites SharePoint Online ou OneDrive pour les comptes de l’entreprise, dont la stratégie commence automatiquement appliquer ses règles sur ce contenu.
+Une fois que vous avez créé et activé une stratégie DLP, elle est déployée sur les sources de contenu qu'elle comprend, telles que les sites SharePoint Online ou OneDrive entreprise, où la stratégie commence à appliquer automatiquement ses règles sur ce contenu.
   
 ## <a name="view-the-status-of-a-dlp-policy"></a>Affichage de l’état d’une stratégie DLP
 
-À tout moment, vous pouvez afficher l’état de vos stratégies DLP dans la page de **stratégie** dans la section de **prévention des pertes de données** de la sécurité &amp; centre de conformité. Vous trouverez ici des informations importantes, telles que si une stratégie a été correctement activée ou désactivée, ou si la stratégie est en mode test. 
+À tout moment, vous pouvez afficher l'état de vos stratégies DLP dans la page **stratégie** de la section **protection contre la perte de données** du centre de sécurité &amp; et de conformité. Vous trouverez ici des informations importantes, par exemple si une stratégie a été activée ou désactivée avec succès, ou si la stratégie est en mode test. 
   
 Voici les différents états et leur signification.
   
@@ -173,23 +173,23 @@ Voici les différents états et leur signification.
    
 ## <a name="turn-off-a-dlp-policy"></a>Désactivation d’une stratégie DLP
 
-Vous pouvez modifier ou désactiver une stratégie DLP à tout moment. Désactivation d’une stratégie désactive toutes les règles dans la stratégie.
+Vous pouvez modifier ou désactiver une stratégie DLP à tout moment. La désactivation d'une stratégie désactive toutes les règles de la stratégie.
   
-Pour modifier ou désactiver une stratégie DLP, dans la page **stratégie** \> sélectionnez la stratégie \> **Modifier la stratégie**.
+Pour modifier ou désactiver une stratégie DLP, dans la page **** \> stratégie, sélectionnez la \> **stratégie modifier**la stratégie.
   
-![Modifier le bouton de la stratégie](media/ce319e92-0519-44fe-9507-45a409eaefe4.png)
+![Bouton modifier la stratégie](media/ce319e92-0519-44fe-9507-45a409eaefe4.png)
   
-En outre, vous pouvez désactiver chaque règle individuellement en modifiant la stratégie et en basculant sur Désactiver l' **état** de la règle, comme indiqué ci-dessus. 
+En outre, vous pouvez désactiver chaque règle individuellement en modifiant la stratégie, puis en désactivant l' **État** de cette règle, comme décrit ci-dessus. 
   
-## <a name="more-information"></a>Plus d'informations
+## <a name="more-information"></a>Plus d’informations
 
 - [Vue d’ensemble des stratégies de protection contre la perte de données](data-loss-prevention-policies.md)
     
 - [Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP](use-notifications-and-policy-tips.md)
     
-- [Création d’une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés](protect-documents-that-have-fci-or-other-properties.md)
+- [Créer une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés](protect-documents-that-have-fci-or-other-properties.md)
     
-- [Ce qu’incluent les modèles de stratégie DLP](what-the-dlp-policy-templates-include.md)
+- [Contenu des modèles de stratégie DLP](what-the-dlp-policy-templates-include.md)
     
 - [Inventaire des types d'informations sensibles](what-the-sensitive-information-types-look-for.md)
     

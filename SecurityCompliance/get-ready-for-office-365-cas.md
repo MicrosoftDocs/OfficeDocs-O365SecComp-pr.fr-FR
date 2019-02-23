@@ -6,19 +6,19 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: overview
 ms.date: 02/15/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d9ee4d67-f2b3-42b4-9c9e-c4529904990a
 description: Prise en main de la sécurité des applications Cloud Office 365
-ms.openlocfilehash: eef1a4f0465b583bb0f0589d213f61c9a15fd152
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: d6049bb1a36a078c6e5e33c60928bd3ae872c33f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30087433"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219894"
 ---
 # <a name="get-ready-for-office-365-cloud-app-security"></a>Se préparer pour la sécurité des applications cloud Office 365
   
@@ -73,9 +73,9 @@ ConFigurez et appliquez des contrôles aux applications de votre organisation, e
 
 Pour en savoir plus, consultez les ressources suivantes:
 
-- [Protéger les applications avec Office 365 Cloud App Security App contrôle d'application d'accès conditionnel](ocas-conditional-access-app-control.md)
+- [Protéger les applications avec le contrôle d’accès conditionnel aux applications d’Office 365 Cloud App Security](ocas-conditional-access-app-control.md)
 
-- [Déployer le contrôle d'application d'accès conditionnel pour les applications Office 365](ocas-deploy-conditional-access-app-control.md)
+- [Déployer le contrôle d’accès conditionnel aux applications pour les applications Office 365](ocas-deploy-conditional-access-app-control.md)
 
 ## <a name="step-6-learn-about-your-organizations-cloud-usage"></a>Étape 6: en savoir plus sur l'utilisation du Cloud de votre organisation
 

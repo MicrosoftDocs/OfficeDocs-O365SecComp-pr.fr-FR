@@ -1,89 +1,89 @@
 ---
-title: Recherche et marquage
+title: Recherche et balisage
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: ''
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
-description: Dans découverte avancée, le module de recherche et de balisage vous permet de recherche, à afficher et organiser les documents dans votre cas. Ce module est actuellement en version bêta.
-ms.openlocfilehash: 013e559ca55e9a877dfb2f8747c4696f81e1e095
-ms.sourcegitcommit: 25f1028643d8a20d17306e8b09cafea46eaf7a58
+description: Dans Advanced eDiscovery, le module de recherche et de marquage vous permet de rechercher, de prévisualiser et d'organiser les documents dans votre cas. Actuellement, ce module est en version bêta.
+ms.openlocfilehash: d5fdf12621bfb2064f3782b947fa4be386d544d1
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "29666144"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219204"
 ---
-# <a name="search-and-tagging"></a>Recherche et marquage
+# <a name="search-and-tagging"></a>Recherche et balisage
 
-Dans découverte avancée, le module de recherche et de balisage vous permet de recherche, à afficher et organiser les documents dans votre cas. Ce module est actuellement en version bêta. Pour une brève démonstration de recherche et de marquage, voir la vidéo de [gérer vos données avec eDiscovery avancée](https://www.youtube.com/watch?v=VaPYL3DHP6I) .
+Dans Advanced eDiscovery, le module de recherche et de marquage vous permet de rechercher, de prévisualiser et d'organiser les documents dans votre cas. Actuellement, ce module est en version bêta. Pour une brève démonstration de la recherche et du balisage, voir la vidéo [gérer vos données à l'aide de la vidéo Advanced eDiscovery](https://www.youtube.com/watch?v=VaPYL3DHP6I) .
 
 > [!NOTE]
 > Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-## <a name="search-the-documents-in-your-case"></a>Recherche les documents dans votre cas.
+## <a name="search-the-documents-in-your-case"></a>Rechercher les documents dans votre cas
 
-Après avoir traitement des documents dans un cas eDiscovery avancées (et éventuellement exécuter le module d’analyse ou la pertinence), vous pouvez utiliser la recherche et le balisage pour rechercher des documents et de les organiser en appliquant des balises spécifique (également appelées étiquettes). Vous pouvez définir une requête de recherche à l’aide de cartes de la condition fournie ou à l’aide d’un langage de requête KQL comparables dans les mots clés condition carte. La syntaxe de KQL courants, tels que AND, OR, NOT et NEAR(n) sont pris en charge, ainsi que des caractère multiples caractère générique (*). 
+Une fois que vous avez traité des documents dans un cas avancé eDiscovery (et si vous le souhaitez), vous pouvez utiliser la recherche et le balisage pour rechercher des documents, puis les organiser en appliquant des balises propres à la casse (également appelées étiquettes). Vous pouvez définir une requête de recherche à l'aide des cartes de condition fournies ou à l'aide d'un langage de requête KQL dans la carte de condition de mots-clés. La syntaxe KQL commune, telle que AND, OR, NOT et NEAR (n) sont prises en charge, ainsi que les caractères génériques à caractères multiples (*). 
 
-Le tableau suivant répertorie les propriétés que vous pouvez rechercher à l’aide d’une requête de mot clé KQL. Vous pouvez également utiliser une carte de condition pour dans l’outil de recherche de découverte électronique avancée pour ajouter une condition (pour les propriétés sélectionnées) à une requête de recherche.
+Le tableau suivant répertorie les propriétés que vous pouvez rechercher à l'aide d'une requête de mot clé KQL. Vous pouvez également utiliser une carte de condition dans l'outil de recherche avancée eDiscovery pour ajouter une condition (pour les propriétés sélectionnées) à une requête de recherche.
 
 |**Propriété**|**Description**|
 |:-----|:-----|
-|**caselabel** <br/> | Nom de la balise créé/appliquée lorsqu’un document est marqué. <br/> |
-|**dépositaire** <br/> | Le dépositaire associé à un document ; limitations de l’objet. <br/> |
-|**date** <br/> | Envoyé date pour le courrier électronique ; la date de modification de documents du site. <br/> |
-|**fileid** <br/> | L’ID du fichier dans le cas. <br/> |
-|**FileType** <br/> | L’extension de fichier natif. <br/> |
+|**caselabel** <br/> | Nom de la balise créée/appliquée lorsqu'un document est balisé. <br/> |
+|**gardien** <br/> | Dépositaire associé à un document; soumis à des limitations. <br/> |
+|**jours** <br/> | Date d'envoi du courrier électronique; Date de modification des documents de site. <br/> |
+|**combinaison** <br/> | ID de fichier dans le cas. <br/> |
+|**filetype** <br/> | Extension de fichier native. <br/> |
 |**fileclass** <br/> | Courrier électronique, document ou pièce jointe. <br/> |
-|**senderauthor** <br/> | L’expéditeur pour le courrier électronique ; l’auteur des documents du site. <br/> |
-|**taille** <br/> | La taille du fichier en Ko. <br/> |
-|**subjecttitle** <br/> | L’objet du courrier électronique ; titre de documents du site. <br/> |
-|**bcc** <br/> | Le champ Cci d’un message électronique. <br/> |
-|**cc** <br/> | Le champ Cc d’un message électronique. <br/> |
-|**participants** <br/> | L’adresse de messagerie de tous les participants dans un thread de messagerie, y compris les liens manquants. <br/> |
-|**reçus** <br/> | La date de que réception un message électronique. <br/> |
-|**destinataires** <br/> | Destinataires d’un message électronique, inclus sur l’à, Cc ou Cci champs. <br/> |
-|**expéditeur** <br/> | L’expéditeur d’un message électronique. <br/> |
-|**LastModifiedDate** <br/> | La dernière date de modification de document d’un site. <br/> |
-|**envoyé** <br/> | La date d’envoi d’un message électronique. <br/> |
-|**À** <br/> | Le destinataire est répertorié dans le champ d’un message électronique. <br/> |
-|**auteur** <br/> | L’auteur d’un document de site. <br/> |
-|**title** <br/> | Le titre d’un document de site. <br/> |
-|**dominanttheme**\* <br/> | Le thème principal d’un élément. <br/> |
-|**themeslist**\* <br/> | Thèmes qui sont associés à un élément. <br/> |
-|**readpercentile_ [issuenum]**\*\* <br/> | Le centile de lecture d’un élément, sur le problème défini par [issuenum]. <br/> |
-|**relevancescore_ [issuenum]**\*\* <br/> | Le score de pertinence d’un élément, sur le problème défini par [issuenum]. <br/> |
-|**relevancetag_ [tagname]**\*\* <br/> | Si un élément a été balisée manuellement pour la pertinence, la balise définie par [tagname]. <br/> |
+|**senderauthor** <br/> | Expéditeur du courrier électronique; auteur des documents de site. <br/> |
+|**longueur** <br/> | Taille du fichier en Ko. <br/> |
+|**subjecttitle** <br/> | L'objet de la messagerie; titre des documents de site. <br/> |
+|**bcc** <br/> | Champ CCI d'un message électronique. <br/> |
+|**cc** <br/> | Champ CC d'un message électronique. <br/> |
+|**auront** <br/> | Adresse de messagerie de tous les participants d'un thread de messagerie, y compris pour les liens manquants. <br/> |
+|**ont** <br/> | Date à laquelle un message électronique a été reçu. <br/> |
+|**destinataires** <br/> | Destinataires d'un e-mail, inclus dans les champs à, CC ou CCI. <br/> |
+|**expéditeur** <br/> | Expéditeur d'un message électronique. <br/> |
+|**LastModifiedDate** <br/> | Date de la dernière modification d'un document de site. <br/> |
+|**envoyés** <br/> | Date d'envoi d'un message électronique. <br/> |
+|**À** <br/> | Destinataire figurant dans le champ à d'un message électronique. <br/> |
+|**créés** <br/> | Auteur d'un document de site. <br/> |
+|**title** <br/> | Titre d'un document de site. <br/> |
+|**dominanttheme**\* <br/> | Thème dominant d'un élément. <br/> |
+|**themeslist**\* <br/> | Thèmes associés à un élément. <br/> |
+|**readpercentile_ [issuenum]**\*\* <br/> | Centile de lecture d'un élément pour le problème défini par [issuenum]. <br/> |
+|**relevancescore_ [issuenum]**\*\* <br/> | Score de pertinence d'un élément pour le problème défini par [issuenum]. <br/> |
+|**relevancetag_ [TagName]**\*\* <br/> | Si un élément a été marqué manuellement pour des éléments de pertinence, la balise définie par [TagName]. <br/> |
 |||
 
-\*Disponible uniquement si le module de thèmes a été exécuté.
+\*Disponible uniquement si le module thèmes a été exécuté.
 
-\*\*Disponible uniquement si le module de la pertinence a été exécuté.
+\*\*Disponible uniquement si le module de pertinence a été exécuté.
 
-Vous pouvez également utiliser une carte de condition dans l’outil de recherche de découverte électronique avancée pour ajouter une condition (pour les propriétés sélectionnées) à une requête de recherche. La capture d’écran suivante montre les conditions pouvant être ajoutée à une requête. La colonne **groupe** indique si la propriété s’applique à la messagerie, les documents du site ou les deux (indiquée par la valeur *commune*). Cette colonne identifie également les propriétés utilisables dans une requête qui sont disponibles après avoir exécuté le module de la pertinence.
+Vous pouvez également utiliser une carte de condition dans l'outil de recherche avancée eDiscovery pour ajouter une condition (pour les propriétés sélectionnées) à une requête de recherche. La capture d'écran suivante montre les conditions qui peuvent être ajoutées à une requête. La colonne **Group** indique si la propriété s'applique aux messages électroniques, aux documents de site ou aux deux (indiqué par la valeur *Common*). Cette colonne identifie également les propriétés pouvant faire l'objet d'une recherche après l'exécution du module de pertinence.
 
-![Conditions de recherche dans l’outil de recherche avancée eDiscovery](media/AeDSearchConditions.png)
+![Conditions de recherche dans l'outil de recherche avancée eDiscovery](media/AeDSearchConditions.png)
 
-Pour plus d’informations sur les propriétés de recherche, voir [requêtes de mot clé et les conditions de recherche](keyword-queries-and-search-conditions.md).
+Pour plus d'informations sur les propriétés pouvant faire l'objet d'une recherche, consultez la rubrique [requêtes de mots clés et conditions de recherche](keyword-queries-and-search-conditions.md).
   
 ## <a name="see-also"></a>Voir aussi
 
 [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Évaluation de la présentation de la pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
+[Présentation de l'évaluation en matière de pertinence](assessment-in-relevance-in-advanced-ediscovery.md)
   
-[Marquage et évaluation](tagging-and-assessment-in-advanced-ediscovery.md)
+[Balisage et évaluation](tagging-and-assessment-in-advanced-ediscovery.md)
   
-[Marquage et formation de pertinence](tagging-and-relevance-training-in-advanced-ediscovery.md)
+[Étiquetage et formation à la pertinence](tagging-and-relevance-training-in-advanced-ediscovery.md)
   
-[Analyse de la pertinence de suivi](track-relevance-analysis-in-advanced-ediscovery.md)
+[Analyse de la pertinence](track-relevance-analysis-in-advanced-ediscovery.md)
   
-[Selon les résultats de la sélection du conteneur](decision-based-on-the-results-in-advanced-ediscovery.md)
+[Choix en fonction des résultats](decision-based-on-the-results-in-advanced-ediscovery.md)
   
-[Test d’analyse de la pertinence](test-relevance-analysis-in-advanced-ediscovery.md)
+[Évaluation de l'analyse de pertinence](test-relevance-analysis-in-advanced-ediscovery.md)
 

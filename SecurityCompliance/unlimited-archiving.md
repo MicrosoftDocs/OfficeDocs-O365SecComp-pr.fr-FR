@@ -1,107 +1,107 @@
 ---
-title: Vue d’ensemble de l’archivage illimité dans Office 365
+title: Vue d'ensemble d'un archivage illimité dans Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
-description: En savoir plus sur Développer automatiquement l’archivage dans Office 365, qui fournit un nombre illimité d’archivage pour les boîtes aux lettres Exchange Online.
-ms.openlocfilehash: 83eb49b3f2a7da418b61e509f44023809ed396c3
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Découvrez la croissance automatique de l'archivage dans Office 365, qui offre un stockage d'archive illimité pour les boîtes aux lettres Exchange Online.
+ms.openlocfilehash: 15c46662df65914d53031cf073e05b137fa2612f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29740816"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219214"
 ---
-# <a name="overview-of-unlimited-archiving-in-office-365"></a>Vue d’ensemble de l’archivage illimité dans Office 365
+# <a name="overview-of-unlimited-archiving-in-office-365"></a>Vue d'ensemble d'un archivage illimité dans Office 365
 
-Dans Office 365, les boîtes aux lettres d’archive fournissent aux utilisateurs d’espace de stockage des boîtes aux lettres supplémentaires. Une fois que la boîte aux lettres de l’utilisateur archive est activé, jusqu'à 100 Go de stockage supplémentaire est disponible. Lorsque le quota de stockage de 100 Go est atteinte, les organisations devaient contacter Microsoft pour une demande d’espace de stockage supplémentaire pour une boîte aux lettres d’archive. Qui n’est plus le cas. La nouvelle fonctionnalité d’archivage illimitée dans Office 365 (appelée *Développer automatiquement l’archivage*) fournit un nombre illimité de stockage de boîtes aux lettres d’archive. Désormais, lorsque le quota de stockage dans la boîte aux lettres d’archive est atteinte, Office 365 augmente automatiquement la taille de l’archive, ce qui signifie que les utilisateurs ne seront pas exécutés en dehors de l’espace de stockage de boîtes aux lettres et les administrateurs ne doivent demander un stockage supplémentaire pour les boîtes aux lettres d’archive .
+Dans Office 365, les boîtes aux lettres d'archivage fournissent aux utilisateurs un espace de stockage de boîte aux lettres supplémentaire. Une fois la boîte aux lettres d'archivage d'un utilisateur activée, jusqu'à 100 Go d'espace de stockage supplémentaire est disponible. Lorsque le quota de stockage de 100 Go est atteint, les organisations devaient contacter Microsoft pour demander un espace de stockage supplémentaire pour une boîte aux lettres d'archivage. Cela n'est plus le cas. La nouvelle fonctionnalité d'archivage illimitée dans Office 365 (appelée *archivage à extension automatique*) offre une quantité illimitée de stockage dans les boîtes aux lettres d'archivage. À présent, lorsque le quota de stockage dans la boîte aux lettres d'archivage est atteint, Office 365 augmente automatiquement la taille de l'archive, ce qui signifie que les utilisateurs ne peuvent pas manquer d'espace de stockage de boîte aux lettres et que les administrateurs n'ont pas à demander un stockage supplémentaire pour les boîtes aux lettres d'archivage. .
   
-Pour obtenir des instructions pas à pas pour activer la développer automatiquement l’archivage, voir [Activer l’archivage illimité dans Office 365](enable-unlimited-archiving.md).
+Pour obtenir des instructions détaillées sur l'activation de l'archivage à extension automatique, consultez la rubrique [activation de l'archivage illimité dans Office 365](enable-unlimited-archiving.md).
   
 > [!NOTE]
-> Développer automatiquement l’archivage également prend en charge les boîtes aux lettres partagées. Pour activer l’archivage pour une boîte aux lettres partagée, une licence Exchange Online Plan 2 ou une licence Exchange Online Plan 1 avec une licence de l’archivage Exchange Online est nécessaire. 
+> L'archivage à extension automatique prend également en charge les boîtes aux lettres partagées. Pour activer l'archivage pour une boîte aux lettres partagée, une licence Exchange Online plan 2 ou une licence Exchange Online plan 1 avec une licence d'archivage Exchange Online est requise. 
   
-## <a name="how-auto-expanding-archiving-works"></a>Fonctionnement de l’archivage comment développer automatiquement
+## <a name="how-auto-expanding-archiving-works"></a>Fonctionnement de l'archivage en développement automatique
 
-Comme expliqué précédemment, d’autres boîtes aux lettres d’espace de stockage est créé lors de la boîte aux lettres de l’utilisateur archive est activé. Lors de l’extension automatique d’archivage est activé, Office 365 vérifie périodiquement la taille de la boîte aux lettres d’archive. Lorsqu’une boîte aux lettres d’archive obtient a presque atteint sa limite de stockage, Office 365 crée automatiquement espace de stockage supplémentaire pour l’archive. Si l’utilisateur s’exécute en dehors de cet espace de stockage supplémentaire, Office 365 ajoute davantage d’espace de stockage pour l’archivage de l’utilisateur. Ce processus se produit automatiquement, ce qui signifie que les administrateurs ne peuvent pas demander d’archivage supplémentaires ou gérer développer automatiquement l’archivage. 
+Comme expliqué précédemment, un espace de stockage de boîte aux lettres supplémentaire est créé lorsque la boîte aux lettres d'archivage d'un utilisateur est activée. Lorsque l'archivage à extension automatique est activé, Office 365 vérifie régulièrement la taille de la boîte aux lettres d'archivage. Lorsqu'une boîte aux lettres d'archivage est proche de sa limite de stockage, Office 365 crée automatiquement un espace de stockage supplémentaire pour l'archive. Si l'utilisateur manque d'espace de stockage supplémentaire, Office 365 ajoute davantage d'espace de stockage à l'archive de l'utilisateur. Ce processus se produit automatiquement, ce qui signifie que les administrateurs n'ont pas besoin de demander un stockage d'archivage supplémentaire ou de gérer l'archivage à extension automatique. 
   
-Voici une vue d’ensemble rapide du processus.
+Voici une présentation rapide du processus.
   
-![Vue d’ensemble du processus d’archivage automatique-développement](media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
+![Vue d'ensemble du processus d'archivage à extension automatique](media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
   
-1. L’archivage est activé pour une boîte aux lettres utilisateur ou d’une boîte aux lettres partagée. Une boîte aux lettres d’archive avec 100 Go d’espace de stockage est créé, et le quota d’avertissement pour la boîte aux lettres d’archive est défini sur 90 Go.
+1. L'archivage est activé pour une boîte aux lettres d'utilisateur ou une boîte aux lettres partagée. Une boîte aux lettres d'archivage de 100 Go d'espace de stockage est créée et le quota d'avertissement pour la boîte aux lettres d'archivage est défini sur 90 Go.
     
-2. Un administrateur permet de développer automatiquement l’archivage pour la boîte aux lettres. Puis, lorsque la boîte aux lettres d’archivage (y compris le dossier éléments récupérables) atteint 90 Go, il est converti en une archive développer automatiquement et Office 365 ajoute l’espace de stockage dans l’archive. Notez qu’il peut prendre jusqu'à 30 jours pour l’espace de stockage supplémentaire être mis en service.
+2. Un administrateur permet l'archivage à extension automatique pour la boîte aux lettres. Ensuite, lorsque la boîte aux lettres d'archivage (y compris le dossier éléments récupérables) atteint 90 Go, elle est convertie en une archive à extension automatique et Office 365 ajoute de l'espace de stockage à l'archive. Notez que le temps de mise en service de l'espace de stockage supplémentaire peut prendre jusqu'à 30 jours.
     
-3. Office 365 ajoute automatiquement l’espace de stockage dans l’archive lorsque cela est nécessaire.
+3. Office 365 ajoute automatiquement davantage d'espace de stockage à l'archive lorsque cela est nécessaire.
   
 > [!IMPORTANT]
-> Si une boîte aux lettres est mis en attente ou affecté à une stratégie de rétention d’Office 365, le quota de stockage pour les boîtes aux lettres d’archive est augmenté à 110 Go lorsque développer automatiquement l’archivage est activé. De même, le quota d’avertissement d’archivage est augmenté à 100 Go.
+> Si une boîte aux lettres est placée en conservation ou affectée à une stratégie de rétention Office 365, le quota de stockage du maibox d'archivage est augmenté de 110 Go lorsque l'archivage à extension automatique est activé. De même, le quota d'avertissement d'archivage est porté à 100 Go.
 
-## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>Quel est déplacé vers l’espace de stockage d’archive supplémentaires ?
+## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>Qu'est-ce qui est déplacé vers l'espace de stockage d'archive supplémentaire?
 
-Pour optimiser l’utilisation du stockage d’archives développer automatiquement, les dossiers peuvent obtenir déplacés. Office 365 détermine quels dossiers sont déplacées lorsque stockage supplémentaire est ajouté à l’archive. Lorsqu’un dossier est déplacé, un sous-dossier est créé sous le dossier d’origine dans la partie de l’archive de la liste des dossiers dans Outlook. Ce nouveau sous-dossier pointe vers les éléments qui ont été déplacés. La convention d’affectation de noms par Office 365 pour nommer ce dossier est ** \<nom du dossier\>_yyyy (imposée mmm jj, aaaa h_mm)**, où : 
+Pour utiliser efficacement le stockage d'archives à extension automatique, les dossiers peuvent être déplacés. Office 365 détermine quels dossiers sont déplacés lorsque du stockage supplémentaire est ajouté à l'archive. Lorsqu'un dossier est déplacé, un sous-dossier est automatiquement créé sous le dossier d'origine dans la partie Archive de la liste des dossiers dans Outlook. Ce nouveau sous-dossier pointe vers les éléments qui ont été déplacés. la convention d'affectation de noms utilisée par Office 365 pour nommer ce dossier est ** \<le nom\>de dossier _yyyy (créé sur mmm dd, yyyy h_mm)**, où: 
   
-- **aaaa** est l’année que les messages dans le dossier ont été reçus. 
+- **yyyy** est l'année de réception des messages dans le dossier. 
     
-- **mmm jj, aaaa h_m** est la date et l’heure auxquelles le sous-dossier a été créé par Office 365, au format UTC, en fonction du fuseau horaire de l’utilisateur et les paramètres régionaux dans Outlook. 
+- **MMM DD, yyyy h_m** est la date et l'heure auxquelles le sous-dossier a été créé par Office 365, au format UTC, basé sur le fuseau horaire et les paramètres régionaux de l'utilisateur dans Outlook. 
     
-Les captures d’écran suivante affiche une liste de dossiers avant et après que les messages sont déplacés dans une archive développé automatique.
+Les captures d'écran suivantes montrent une liste des dossiers avant et après le déplacement des messages dans une archive étendue automatiquement.
   
- **Avant de stockage supplémentaire est ajouté.**
+ **Avant l'ajout d'un espace de stockage supplémentaire**
   
-![Liste des dossiers de boîte aux lettres de l’archivage avant de développer automatiquement une archive est mis en service](media/5d6d6420-e562-4912-aaab-1c111762b3f6.png)
+![Liste des dossiers de la boîte aux lettres d'archivage avant la mise en service de l'archive à extension automatique](media/5d6d6420-e562-4912-aaab-1c111762b3f6.png)
   
- **Après l’ajout d’espace de stockage supplémentaire**
+ **Après l'ajout d'un espace de stockage supplémentaire**
   
-![Liste des dossiers de boîte aux lettres de l’archive après que développer automatiquement une archive est mis en service](media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
+![Liste des dossiers de la boîte aux lettres d'archivage après mise en service de l'archive à extension automatique](media/c03c5f51-23fa-4fc2-b887-7e7e5cce30da.png)
   
-## <a name="outlook-requirements-for-accessing-items-in-an-auto-expanded-archive"></a>Conditions requises pour Outlook pour accéder aux éléments dans une archive développé automatique
+## <a name="outlook-requirements-for-accessing-items-in-an-auto-expanded-archive"></a>Conditions requises par Outlook pour accéder aux éléments dans une archive étendue automatiquement
 
-Pour accéder aux messages qui sont stockés dans une archive développé automatique, les utilisateurs doivent employer un des clients Outlook suivants :
+Pour accéder aux messages stockés dans une archive étendue automatiquement, les utilisateurs doivent utiliser l'un des clients Outlook suivants:
   
-- 2016 Outlook ou Outlook 2019 pour Windows
+- Outlook 2016 ou Outlook 2019 pour Windows
     
 - Outlook sur le web 
     
-- Outlook 2016 ou 2019 Outlook pour Mac 
+- Outlook 2016 ou Outlook 2019 pour Mac 
     
 > [!NOTE]
-> Les utilisateurs Outlook 2013 peuvent uniquement accéder aux éléments qui ont été stockés à l’origine dans leur boîte aux lettres d’archive. Ils ne pourront pour accéder aux éléments qui sont déplacés vers un stockage d’archives supplémentaires. 
+> Les utilisateurs d'Outlook 2013 peuvent uniquement accéder aux éléments qui étaient initialement stockés dans leur boîte aux lettres d'archivage. Ils ne pourront pas accéder aux éléments déplacés vers un stockage d'archivage supplémentaire. 
   
-Voici quelques éléments à prendre en compte lors de l’utilisation d’Outlook ou Outlook sur le web pour accéder aux messages stockés dans une archive développé automatique.
+Voici quelques éléments à prendre en compte lors de l'utilisation d'Outlook ou d'Outlook sur le Web pour accéder aux messages stockés dans un archivage développé automatiquement.
   
-- Vous pouvez accéder de n’importe quel dossier dans votre boîte aux lettres archive, y compris celles qui ont été déplacés vers la zone de stockage étendu automatique.
+- Vous pouvez accéder à n'importe quel dossier de votre boîte aux lettres d'archivage, y compris ceux qui ont été déplacés vers la zone de stockage étendu automatiquement.
     
-- Vous pouvez rechercher des éléments qui ont été déplacés vers une zone de stockage supplémentaire qu’en recherchant le dossier lui-même. Cela signifie que vous devez sélectionner le dossier d’archivage dans la liste des dossiers pour sélectionner l’option de **Dossier actif** en tant que l’étendue de recherche. De même, si un dossier dans une zone de stockage étendu automatique contient des sous-dossiers, vous devez rechercher chaque sous-dossier séparément. 
+- Vous pouvez rechercher des éléments qui ont été déplacés vers une zone de stockage supplémentaire uniquement en effectuant une recherche dans le dossier proprement dit. Cela signifie que vous devez sélectionner le dossier d'archivage dans la liste des dossiers pour sélectionner l'option **dossier actif** comme étendue de recherche. De même, si un dossier d'une zone de stockage à extension automatique contient des sous-dossiers, vous devez effectuer une recherche dans chaque sous-dossier séparément. 
     
-- Élément de compte dans Outlook et lu/des nombres (dans Outlook et Outlook sur le web) dans une archive développé automatique peuvent ne pas être précis.
+- Le nombre d'éléments dans Outlook et le nombre de lectures/non de lectures (dans Outlook et Outlook sur le Web) dans une archive étendue automatiquement peuvent ne pas être précis.
     
-- Vous pouvez supprimer des éléments dans un sous-dossier qui pointe vers une zone de stockage étendu automatique, mais le dossier lui-même ne peut pas être supprimé.
+- Vous pouvez supprimer des éléments dans un sous-dossier qui pointe vers une zone de stockage à extension automatique, mais le dossier proprement dit ne peut pas être supprimé.
     
-- Vous ne pouvez pas utiliser la fonctionnalité récupérer les éléments supprimés pour récupérer un élément a été supprimé d’une zone de stockage étendu automatique.
+- Vous ne pouvez pas utiliser la fonctionnalité récupérer les éléments supprimés pour récupérer un élément qui a été supprimé d'une zone de stockage à extension automatique.
   
-## <a name="auto-expanding-archiving-and-other-office-365-compliance-features"></a>Développer automatiquement l’archivage et autres fonctionnalités de conformité d’Office 365
+## <a name="auto-expanding-archiving-and-other-office-365-compliance-features"></a>Extension de l'archivage et autres fonctionnalités de conformité Office 365
 
-Cette section décrit la relation entre développer automatiquement l’archivage conformité Office 365 et autres fonctionnalités de gouvernance des données.
+Cette section décrit la fonctionnalité entre l'archivage et les autres fonctionnalités de conformité et de gouvernance des données Office 365.
   
-- **découverte électronique** - lorsque vous utilisez un outil de découverte électronique Office 365, tels que de la recherche de contenu ou In-Place eDiscovery, les zones de stockage supplémentaire dans une archive développé automatique sont inclus dans la recherche.
+- **découverte électronique** : lorsque vous utilisez un outil ediscovery Office 365, tel que la recherche de contenu ou la découverte électronique inaltérable, les zones de stockage supplémentaires dans une archive étendue automatiquement sont également recherchées.
     
-- Blocage de **rétention** - lorsque vous placez une boîte aux lettres dans Exchange à l’aide des outils tels que litige contient des cas en ligne ou de la découverte électronique et de stratégies de rétention dans le centre de conformité, contenu de & Office 365 sécurité situés dans une archive développé automatique est également mis en attente.
+- **** Rétention: lorsque vous placez une boîte aux lettres en conservation à l'aide d'outils comme la conservation pour litige dans Exchange Online ou de stratégies de rétention de cas eDiscovery dans le centre de sécurité &, le contenu situé dans un archivage développé automatiquement est également mis en attente.
     
-- **Messagerie (MRM) de gestion des enregistrements** - si vous utilisez des stratégies de suppression de MRM dans Exchange Online pour supprimer définitivement les éléments de boîte aux lettres ayant expiré, éléments arrivés à expiration situés dans l’archive de développé automatique seront également supprimés.
+- **Gestion des enregistrements de messagerie (MRM)** : Si vous utilisez des stratégies de suppression MRM dans Exchange Online pour supprimer définitivement des éléments de boîte aux lettres expirés, les éléments expirés situés dans l'archive étendue automatiquement seront également supprimés.
     
-- **Importer le service** - vous pouvez utiliser le service Office 365 importer pour importer des fichiers PST vers l’archive de développé automatique d’un utilisateur. Vous pouvez importer jusqu'à 100 Go de données à partir des fichiers PST boîte aux lettres d’archive de l’utilisateur. 
+- **Import service** : vous pouvez utiliser le service d'importation Office 365 pour importer des fichiers PST dans l'archive étendue automatiquement. Vous pouvez importer jusqu'à 100 Go de données à partir de fichiers PST vers la boîte aux lettres d'archivage de l'utilisateur. 
 
 ## <a name="more-information"></a>Plus d’informations
 
-Pour obtenir des informations sur l’extension automatique d’archivage, consultez la rubrique [Office 365 : Forum aux questions des Archives développer automatiquement](https://blogs.technet.microsoft.com/exchange/2018/04/09/office-365-auto-expanding-archives-faq/).
+Pour plus d'informations techniques sur l'archivage à extension automatique, consultez la rubrique [Office 365: Forum aux questions](https://blogs.technet.microsoft.com/exchange/2018/04/09/office-365-auto-expanding-archives-faq/)sur les archives.

@@ -1,32 +1,14 @@
 ---
-title: Configurer les paramètres S/MIME pour Outlook Web App
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 4/8/2015
-ms.audience: ITPro
-ms.topic: article
-ms.service: O365-seccomp
-ms.custom: TN2DMC
-localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid: c7dee22c-9b5b-425c-91a9-d093204ff84e
-description: En tant qu’administrateur d’organisation pour Exchange 2013 et Exchange Online, vous pouvez configurer Outlook Web App pour autoriser l’envoi et réception de messages S/MIME-protégé. Utilisez l’applet de commande SMIMEConfig pour gérer cette fonctionnalité par le biais de l’interface Exchange Management Shell.
-ms.openlocfilehash: e4bbf6cb8b0e2976b856045fc8a474bc2aa2a55a
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002505"
+title: "configurer les paramètres S/MIME pour Outlook sur le Web" ms. Author: krowley Author: kccross Manager: laurawi ms. audience: professionnel ms. topic: article ms. service: O365-seccomp ms. Custom: TN2DMC localization_priority: normal Search. appverid:
+- MET150 ms. AssetID: c7dee22c-9b5b-425c-91A9-d093204ff84e ms. collection:
+    - M365-Security-Description de la conformité: «description succincte de ce que doivent faire les administrateurs Exchange Online pour afficher et configurer les paramètres S/MIME dans Outlook sur le Web dans Exchange Online».
 ---
-# <a name="configure-smime-settings-for-outlook-web-app"></a>Configurer les paramètres S/MIME pour Outlook Web App
 
-En tant qu'administrateur d'organisation pour Exchange 2013 et Exchange Online, vous pouvez configurer Outlook Web App pour autoriser l'envoi et la réception de messages protégés par S/MIME. Utilisez la cmdlet  `SMIMEConfig` pour gérer cette fonctionnalité via l'interface de l'environnement de ligne de commande Exchange Management Shell. 
+# <a name="configure-smime-settings-for-outlook-on-the-web"></a>Configure S/MIME settings for Outlook on the web
+
+En tant qu'administrateur d'Exchange Online, vous pouvez configurer Outlook sur le Web (anciennement Outlook Web App) pour permettre l'envoi et la réception de messages protégés par S/MIME. Utilisez les cmdlets **Get-SmimeConfig** et **Set-SmimeConfig** pour afficher et gérer cette fonctionnalité dans Exchange Online PowerShell. Pour vous connecter à Exchange Online PowerShell, consultez la rubrique [connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
   
-Pour plus d'informations, comme une description détaillée des paramètres et des exemples pour  `get-SMIMEConfig` et  `set-SMIMEConfig`, voir la documentation relative à [Get-SmimeConfig](http://technet.microsoft.com/library/4b29fa89-0840-4fe9-8885-019fcef2e02b.aspx) et [Set-SmimeConfig](http://technet.microsoft.com/library/de357ce0-8143-4c36-8032-026292fc63f0.aspx). 
-  
-Vous pouvez uniquement utiliser l'environnement de ligne de commande Exchange Management Shell pour effectuer cette tâche. Pour apprendre à ouvrir l'environnement de ligne de commande Environnement de ligne de commande Exchange Management Shell dans votre organisation Exchange locale, reportez-vous à **Open the Shell**. Pour apprendre à utiliser Windows PowerShell afin de vous connecter à Exchange Online, consultez la rubrique [Connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-SmimeConfig](http://technet.microsoft.com/library/4b29fa89-0840-4fe9-8885-019fcef2e02b.aspx) et [Set-SmimeConfig](http://technet.microsoft.com/library/de357ce0-8143-4c36-8032-026292fc63f0.aspx). 
   
 ## <a name="for-more-information"></a>Pour plus d'informations
 

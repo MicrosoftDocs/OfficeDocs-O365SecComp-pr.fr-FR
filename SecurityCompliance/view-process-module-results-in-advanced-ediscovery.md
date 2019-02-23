@@ -1,113 +1,113 @@
 ---
-title: Afficher les résultats du module dans Office 365 avancée de découverte électronique
+title: Afficher les résultats du module Processus dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
-description: 'Découvrez comment trouver les résultats d’un Module de processus s’exécutent dans Office 365 avancée eDiscovery, y compris l’état de tâche et processus de synthèse.  '
-ms.openlocfilehash: 01093b0230aaf78ab7ccf1235f0874a0b69aa1bd
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: "Découvrez comment trouver les résultats d'un module de processus exécuté dans Office 365 Advanced eDiscovery, y compris l'état de la tâche et le résumé des processus.  "
+ms.openlocfilehash: 0393cde78e559036d92b9ac48245afafc974a8b2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527517"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218054"
 ---
-# <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>Afficher les résultats du module dans Office 365 avancée de découverte électronique
+# <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>Afficher les résultats du module Processus dans Office 365 Advanced eDiscovery
 
-Après la **préparation** \> **processus** est lancé, vous pouvez afficher la progression et les résultats. 
+Une fois le **processus** de **préparation** \> initié, vous pouvez afficher l'avancement et les résultats. 
   
 > [!NOTE]
-> Découverte avancée nécessite un Office 365 E3 avec le module complémentaire de conformité avancée ou un abonnement E5 pour votre organisation. Si vous n’avez qu’un plan d’et essayer eDiscovery avancé, vous pouvez [inscrire à une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-## <a name="process-task-status"></a>État de la tâche de processus
+## <a name="process-task-status"></a>État de tâche de processus
 
-Dans **Prepare** \> **processus** \> de **résultats**, la page affiche l’état actuel (si le processus est en cours d’exécution) ou le dernier état de tâche de statut de processus comme indiqué dans l’exemple suivant.
+Dans **préparer** \> les **résultats**du **processus** \> , la page affiche l'état actuel (si le processus est en cours d'exécution) ou l'état de la dernière tâche d'État du processus, comme illustré dans l'exemple suivant.
   
 ![État de tâche du module de processus](media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
   
 Les tâches affichées peuvent varier en fonction des options de processus sélectionnées. 
   
-- **Inventaire**: découverte avancée parcourt tous les fichiers sélectionnés pour le processus et effectue la collecte de données de base.
+- **Inventory**: Advanced eDiscovery effectue une itération dans tous les fichiers sélectionnés pour le processus et effectue une collecte de données de base.
     
 - **Calculer les signatures**: calcule les signatures numériques MD5.
     
-- **Extraction de composés**: extraits internes ou qu’il contient des fichiers de manière récursive à partir des fichiers composés (par exemple, PST, ZIP, MSG). Fichiers extraits sont stockés dans le dossier de cas de la casse.
+- **Extraction de composés**: extrait les fichiers internes ou contenus de manière récursive des fichiers composés (par exemple, PST, zip, MSG). Les fichiers extraits sont stockés dans le dossier case du cas.
     
-- **Base de données de synchronisation**: processus de base de données interne.
+- **Synchronisation de la base de données**: processus de base de données interne.
     
-- **Copie du fichier**: fichiers de processus de copie. Cette tâche est toujours affichée, même si l’option de fichiers copie avancée est sélectionnée.
+- **Copie**de fichiers: copie les fichiers du processus. Cette tâche est toujours affichée, même lorsque l'option copie avancée des fichiers est sélectionnée.
     
-- **Extraction de texte**: lorsque des fichiers natives, eDiscovery avancée extrait le texte de ces fichiers à l’aide de DTSearch. Le texte extrait de ces fichiers est stocké en tant que fichiers texte dans le dossier de cas.
+- **Extraction de texte**: lorsqu'il existe des fichiers natifs, Advanced eDiscovery extrait le texte de ces fichiers à l'aide de DTSearch. Le texte extrait de ces fichiers est stocké sous forme de fichiers texte dans le dossier case.
     
-- **Mise à jour des métadonnées**: traite des métadonnées chargées. 
+- **Mise à jour**des métadonnées: traite les métadonnées chargées. 
     
-- **Finalizing**: traitement interne qui finalise les données de chargée de dossiers (par exemple, identifier les fichiers d’erreur et la réussite). 
+- **Finalisation**: traitement interne qui finalise les données des fichiers de casse chargés (par exemple, identifier les fichiers d'erreur et de réussite). 
     
-État de la tâche : affiché après la fin d’une tâche. Lors de l’exécutant des tâches, la durée d’exécution s’affiche.
+État de la tâche: affiché une fois la tâche terminée. Pendant l'exécution des tâches, la durée de l'exécution s'affiche.
   
 > [!NOTE]
-> Les tâches achevées peuvent également inclure les totaux des terminé le traitement des fichiers ou avec des erreurs. 
+> Les tâches achevées peuvent également inclure des totaux pour les fichiers ayant terminé le traitement ou des fichiers contenant des erreurs. 
   
 > [!TIP]
-> « Annuler » fournit une option de restauration pour arrêter l’exécution des processus et puis restaurer le remplissage de données précédent ou l’enregistrée des données traitées. Restauration efface les données traitées. Si vous ne souhaitez pas les données traitées perte option Sélectionner la « Annuler » dans cette fenêtre pour choisir de ne pas annuler (par exemple, vous souhaitez recharger ces fichiers). 
+> «Annuler» fournit une option de restauration pour arrêter l'exécution du processus, puis restaurer le remplissage de données précédent ou les données traitées enregistrées. La restauration efface toutes les données traitées. Si vous ne souhaitez pas que les données traitées soient perdues (par exemple, si vous envisagez de recharger ces fichiers), sélectionnez l'option «Annuler» dans cette fenêtre pour choisir de ne pas restaurer. 
   
 ## <a name="process-summary"></a>Résumé du processus
 
-Dans Prepare \> processus \> résultats \> processus synthèse, une répartition des résultats fichier chargé est affichée en fonction des résultats de traitement et des erreurs de fichier réussie.
+Dans la \> synthèse \> du \> processus de préparation des résultats du processus, une répartition des résultats des fichiers chargés est affichée en fonction du traitement réussi des fichiers et des résultats de l'erreur.
   
-Les volets de présentent un affichage graphique des statistiques du fichier importé, comme suit :
+Les volets présentent un affichage graphique des statistiques sur les fichiers importés, comme suit:
   
-- **Processus de synthèse s’accumulent**d : tous les fichiers dans ce cas.
+- Le **Résumé des processus accumule**d: tous les fichiers dans le cas.
     
-- **Procédure de résumé**: les fichiers chargement à partir de la dernière session ou action. 
+- **Dernier processus-Résumé**: fichiers chargés à partir de la dernière session ou action. 
     
-- **Dernière familles**: informations dans le cas (le cas échéant).
+- **** Famille: informations sur la famille dans le cas (le cas échéant).
     
-- Si les fichiers **d’amorçage** ont été ajoutés, le nombre de fichiers d’amorçage est répertorié par le problème a été définie pour les fichiers. 
+- Si des fichiers de **départ** ont été ajoutés, le nombre de fichiers de départ est indiqué par problème qui a été défini pour les fichiers. 
     
-    Si le marquage des fichiers **d’amorçage** a échoué, qui est également observé. 
+    Si le marquage des fichiers de **départ** a échoué, cela est également indiqué. 
     
-- Si les fichiers **balisés préalables** ont été ajoutés, le nombre de fichiers avec des balises est répertorié par problème qui a été défini pour les fichiers. 
+- Si des fichiers **pré-balisés** ont été ajoutés, le nombre de fichiers pré-balisés est indiqué par problème qui a été défini pour les fichiers. 
     
-    Si le marquage des fichiers **balisés préalable** a échoué, qui est également observé. 
+    Si le marquage des fichiers **pré-balisés** a échoué, cela est également indiqué. 
     
 ![Résumé de module de processus](media/2086a691-9e3d-4117-beb2-a5c3a9a4cc94.png)
   
-## <a name="process-summary-accumulated-and-last-charts"></a>Résumé du processus cumulés et dernière graphiques
+## <a name="process-summary-accumulated-and-last-charts"></a>Processus récapitulatif de processus accumulés et derniers graphiques
 
-La barre de gauche inclut Source + fichiers extraits : c'est-à-dire tous les fichiers trouvés. 
+La barre de gauche inclut les fichiers sources et extraits: tous les fichiers trouvés. 
   
-Le droit de la barre, traitées, inclut :
+La barre de droite, traitée, inclut les éléments suivants:
   
 - Fichiers avec des erreurs de chargement
     
-- Fichiers chargés avec succès, qui peuvent inclure : 
+- Fichiers correctement chargés, qui peuvent inclure les éléments suivants: 
     
-  - **Existant**: les fichiers qui ont été chargés avant et sont désormais chargés (notamment les doublons).
+  - **Existant**: les fichiers qui ont été chargés précédemment et sont à nouveau chargés (y compris les doublons).
     
-  - **Texte**: fichiers uniques avec du texte.
+  - **Text**: fichiers uniques avec texte.
     
-  - **Texte non**: vider les fichiers texte, des fichiers texte native vide, des fichiers non texte natives. 
+  - **Non-texte**: fichiers texte vides, fichiers texte natif vides, fichiers non-texte natifs. 
     
-  - **Dupliquer**s: fichiers en double avec du texte.
+  - **Duplicate**s: fichiers en double avec texte.
     
-## <a name="last-process-errors"></a>Dernière traiter les erreurs
+## <a name="last-process-errors"></a>Erreurs du dernier processus
 
-Dans Prepare \> processus \> résultats \> dernier processus, les détails des erreurs dans la dernière session ou action effectuée s’affichent.
+Dans \> prepare \> process \> Results Last process Errors, les détails des erreurs de la dernière session ou action effectuée sont affichés.
   
 ![Erreurs de module de processus](media/4771d0f4-4217-445a-9ba4-8b6541c5ad09.png)
   
 ## <a name="see-also"></a>Voir aussi
 
-[eDiscovery avancée Office 365](office-365-advanced-ediscovery.md)
+[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Le module de processus en cours d’exécution et de chargement des données](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
+[Exécution du module de processus et chargement des données](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
 

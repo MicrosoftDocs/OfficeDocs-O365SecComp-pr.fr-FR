@@ -1,12 +1,12 @@
 ---
-title: Collecter des données pour un cas de découverte électronique avancée (Preview)
+title: Collecter des données pour un cas dans Advanced eDiscovery (aperçu)
 ms.author: esclee
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,39 +14,39 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 11e2c336512c91d65bd046c3022d5375ebecde4a
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 2e9e7836a2dc777410b88ffac1aea0c5137b7b89
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29695050"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218994"
 ---
-# <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>Collecter des données pour un cas de découverte électronique avancée (Preview)
+# <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>Collecter des données pour un cas dans Advanced eDiscovery (aperçu)
 
-Une fois que vous avez identifié dépositaires et sources de données qui présentent un intérêt pour votre cas, il est temps pour identifier l’ensemble de documents pour approfondir. Vous pouvez utiliser l’outil de recherche de découverte électronique avancée (Preview) pour identifier des emplacements garde et non garde dans Office 365.
+Une fois que vous avez identifié les dépositaires et les sources de données intéressantes pour votre cas, il est temps d'identifier l'ensemble des documents dans lesquels vous souhaitez approfondir votre attention. Vous pouvez utiliser l'outil de recherche dans Advanced eDiscovery (préversion) pour identifier ces derniers dans Office 365.
 
-Après avoir exécuté une recherche, vous serez en mesure d’afficher des statistiques sur les éléments récupérés telles que les emplacements qui avait la plupart des éléments qui correspondent à la requête de recherche. Vous pouvez également afficher un aperçu un sous-ensemble des résultats. Lorsque vous avez identifié l’ensemble de documents que vous souhaitez examiner, vous pouvez ajouter les résultats de recherche à une plage de travail pour collecter et traiter.
+Une fois que vous avez exécuté une recherche, vous pouvez afficher des statistiques sur les éléments récupérés, tels que les emplacements qui avaient le plus d'éléments correspondant à la requête de recherche. Vous pouvez également afficher un aperçu d'un sous-ensemble des résultats. Une fois que vous avez identifié l'ensemble des documents que vous souhaitez examiner, vous pouvez ajouter les résultats de la recherche à un jeu de travail à collecter et traiter.
 
 ## <a name="create-a-search"></a>Créer une recherche
 
-Cliquez sur l’onglet **recherches** **nouvelle recherche** démarre un Assistant qui vous guide à travers la création d’une recherche. Pour plus d’informations sur la création d’une recherche, voir [créer une recherche pour recueillir des données](create-search-to-collect-data.md).
+Cliquez sur **nouvelle recherche** sous l'onglet **recherches** pour démarrer un assistant qui vous guide tout au long de la procédure de création d'une recherche. Pour plus d'informations sur la création d'une recherche, voir [Create a Search to Collect Data](create-search-to-collect-data.md).
 
-Après la création d’une recherche, une page mobile avec des détails s’affiche. Notez que les boutons de **statistiques** et **Aperçu** initialement grisés, car la recherche n’est pas encore terminée. Vous pouvez conserver le suivi de la progression de la recherche sous l’onglet de **recherche** .
+Après la création d'une recherche, une page de menu volant contenant des informations s'affiche. Notez que les **statistiques** et les boutons d' **Aperçu** sont initialement estompés, car la recherche n'est pas encore terminée. Vous pouvez suivre la progression de la recherche dans l'onglet **recherches** .
 
-## <a name="view-search-results-and-statistics"></a>Afficher les résultats de recherche et des statistiques
-Il existe deux composants d’une recherche de contenu : aperçu et statistiques (estimations). En tant que chacun de ces composants terminées, vous verrez l’état affiché dans les colonnes correspondantes dans l’onglet **recherches** changer de **soumis** **en cours** sur **terminée**.
+## <a name="view-search-results-and-statistics"></a>Afficher les statistiques et les résultats de la recherche
+Il existe deux composants d'une recherche de contenu: statistiques (estimations) et aperçu. À mesure que chacun de ces composants est complet, l'état affiché dans les colonnes correspondantes de l'onglet **recherches** passe de **** de à à **en cours** à **terminé**.
 
-Une fois l’estimation de la recherche est terminée, cliquez sur la recherche pour afficher la page flottant, qui affiche des statistiques de haut niveau sur les résultats de la recherche. À ce stade, le bouton **statistiques** sera actif. Vous pouvez cliquer dessus pour afficher les statistiques de la recherche, tels que :
+Une fois l'estimation de la recherche terminée, cliquez sur la recherche pour afficher la page de menu volant, qui affiche certaines statistiques de haut niveau sur les résultats de la recherche. À ce stade, le bouton **statistiques** est actif. Vous pouvez cliquer dessus pour afficher les statistiques de recherche, telles que:
 
 - Résumé
-- Emplacements supérieurs
+- Emplacements les plus fréquents
 - Requêtes
 - Affinements
 
-Pour plus d’informations sur les statistiques de recherche, voir [les statistiques de recherche](search-statistics.md).
+Pour plus d'informations sur les statistiques de recherche, voir statistiques de la [recherche](search-statistics.md).
 
-Une fois que l’aperçu est terminé, le bouton **Aperçu** sera actif. Cliquez dessus pour afficher un aperçu d’un sous-ensemble des résultats de l’échantillon.
+Une fois l'aperçu terminé, le bouton **Aperçu** est actif. Cliquez dessus pour afficher un aperçu d'un sous-ensemble de résultats.
 
-## <a name="adding-search-results-to-a-working-set"></a>Ajout des résultats de recherche à une plage de travail
+## <a name="adding-search-results-to-a-working-set"></a>Ajout de résultats de recherche à un jeu de travail
 
-Lorsque vous êtes prêt à collecter et à traiter tous les résultats d’une recherche, vous pouvez le faire en l’ajoutant à un jeu de travail. Pour plus d’informations, voir [Ajouter des données à un jeu de travail](add-data-to-working-set.md). 
+Lorsque vous êtes prêt à collecter et à traiter tous les résultats d'une recherche, vous pouvez le faire en l'ajoutant à un jeu de travail. Pour plus d'informations, consultez [la rubrique ajouter des données à un jeu de travail](add-data-to-working-set.md). 

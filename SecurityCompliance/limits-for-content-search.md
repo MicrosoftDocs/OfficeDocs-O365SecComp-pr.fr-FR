@@ -1,78 +1,77 @@
 ---
-title: Limites pour la recherche de contenu dans la sécurité Office 365 &amp; centre de conformité
+title: Limites de recherche de contenu dans le centre de &amp; sécurité conformité Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
-description: 'En savoir plus sur les limites en vigueur pour la fonctionnalité de recherche de contenu de sécurité Office 365 &amp; centre de conformité, telles que le nombre maximal de recherches simultanées. '
-ms.openlocfilehash: 79142edf2e80378bf6f22474fca55c54fe5cc776
-ms.sourcegitcommit: ea625737c4be14927f69aa71d4fbd7d7d94d9334
+description: 'Découvrez les limites en vigueur pour la fonctionnalité de recherche de contenu dans le centre de &amp; sécurité conformité Office 365, comme le nombre maximal de recherches simultanées. '
+ms.openlocfilehash: 711aedf8df80bfe2c769721b8c16b01fb705c289
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "27544105"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213284"
 ---
-# <a name="limits-for-content-search-in-the-office-365-security-amp-compliance-center"></a>Limites pour la recherche de contenu dans la sécurité Office 365 &amp; centre de conformité
+# <a name="limits-for-content-search-in-the-office-365-security-amp-compliance-center"></a>Limites de recherche de contenu dans le centre de &amp; sécurité conformité Office 365
 
 > [!NOTE]
-> Les limites de cette rubrique sont différentes des limites en cours pour la découverte électronique inaltérable dans Exchange Online et pour le centre eDiscovery dans SharePoint Online. 
+> Les limites de cette rubrique sont différentes des limites actuelles de la découverte électronique inaltérable dans Exchange Online et pour le centre eDiscovery dans SharePoint Online. 
   
-Différentes limites s’appliquent à la fonctionnalité de recherche de contenu de sécurité Office 365 &amp; centre de conformité. Cette recherche include exécuté sur la page de **recherche de contenu** et de la recherche qui sont associés à une affaire eDiscovery. Ces limites permettant d’assurer l’intégrité et la qualité des services fournis aux organisations Office 365. Il existe également des limites liées à l’indexation des messages électroniques dans Exchange Online pour la recherche. Vous ne pouvez pas modifier la recherche de contenu ou l’indexation des limites de messagerie, mais vous devez connaître les afin que ces limites peut prendre en considération lors de la planification, en cours d’exécution et le dépannage des recherches de contenu. 
+Différentes limites sont appliquées à la fonctionnalité de recherche de contenu dans le centre &amp; de sécurité conformité Office 365. Cela inclut les recherches exécutées sur la page de **recherche de contenu** et les recherches associées à un cas de découverte électronique. Ces limites contribuent à maintenir l'intégrité et la qualité des services fournis aux organisations Office 365. Il existe également des limites liées à l'indexation des messages électroniques dans Exchange Online pour la recherche. Vous ne pouvez pas modifier la recherche de contenu ou les limites d'indexation de messagerie, mais vous devez en tenir compte pour pouvoir prendre ces limites en considération lors de la planification, de l'exécution et du dépannage des recherches de contenu. 
   
 ## <a name="content-search-limits"></a>Limites de la recherche de contenu
 
-Le tableau suivant répertorie les limites de recherche dans la sécurité &amp; centre de conformité.
+Le tableau suivant répertorie les limites de recherche dans &amp; le centre de sécurité et de conformité.
   
 |**Description de la limite**|**Limite**|
 |:-----|:-----|
-|Le nombre maximal de boîtes aux lettres ou des sites qui peuvent être recherchées dans une seule recherche de contenu  <br/> |Sans limite  <br/> |
-|Le nombre maximal de recherches de contenu qui peut être exécuté en même temps dans votre organisation.  <br/> |Sans limite  <br/> |
-|Le nombre maximal de recherches de contenu qu’un utilisateur unique peut lancer en même temps. Notez que cette limite est atteinte plus probablement lorsque l’utilisateur tente de démarrer plusieurs recherches à l’aide de la **Get-ComplianceSearch \| ComplianceSearch-démarrer** commande PowerShell de centre de conformité et de sécurité.<br/> |10   <br/> |
-|Le nombre maximal d’éléments par boîte aux lettres de l’utilisateur qui s’affichent sur la page d’aperçu lors de l’aperçu des résultats de la recherche de contenu.  <br/> |100  <br/> |
-|Le nombre maximal d’éléments trouvés dans toutes les boîtes aux lettres utilisateur sont affichés dans la page Aperçu lors de l’aperçu des résultats de la recherche de contenu. Les éléments les plus récents sont affichés.  <br/> |1,000  <br/> |
-|Le nombre maximal de boîtes aux lettres d’utilisateur qui peuvent être affichés pour les résultats de la recherche. S’il n’y a plus de 1 000 boîtes aux lettres qui contiennent du contenu qui correspond à la requête de recherche, uniquement les principaux 1000 boîtes aux lettres avec les résultats de recherche plus sera disponibles pour l’aperçu.  <br/> |1,000  <br/> |
-|Le nombre maximal d’éléments trouvés dans SharePoint et OneDrive pour les sites entreprise qui sont affichés sur la page d’aperçu lors de l’aperçu des résultats de la recherche de contenu. Les éléments les plus récents sont affichés.  <br/> |200  <br/> |
-|Le nombre maximal de sites qui peuvent être affichés pour les résultats de la recherche (dans SharePoint et OneDrive entreprise). S’il y a plus de 200 sites total qui contiennent du contenu qui correspond à la requête de recherche, uniquement les sites récurrents 200 avec les résultats de recherche plus sera disponibles pour l’aperçu.  <br/> |200  <br/> |
-|Le nombre maximal d’éléments par boîte aux lettres de dossiers publics qui sont affichés sur la page d’aperçu lors de l’aperçu des résultats de la recherche de contenu.  <br/> |100  <br/> |
-|Le nombre maximal d’éléments trouvés dans toutes les boîtes aux lettres de dossiers publics qui sont affichés sur la page d’aperçu lors de l’aperçu des résultats de la recherche de contenu.  <br/> |200  <br/> |
-|Le nombre maximal de boîtes aux lettres publiques qui peuvent être affichés pour les résultats de la recherche. S’il n’y a plus de 500 boîtes aux lettres de dossiers publics qui contiennent du contenu qui correspond à la requête de recherche, uniquement les principaux 500 dossiers publics boîtes aux lettres avec les résultats de recherche plus sera disponibles pour l’aperçu.  <br/> |500  <br/> |
-|Le nombre maximal de caractères de la requête de recherche (y compris les opérateurs et conditions) pour une recherche de contenu.  <br/><br/> **Remarque :** Cette limite prend effet une fois que la requête est développée, ce qui signifie que la requête sera obtenir développée par rapport à chacun des mots clés. Par exemple, si une requête de recherche a 15 mots clés et des paramètres supplémentaires et conditions, la requête est développée 15 heures, chacun avec les paramètres et les conditions dans la requête. Même si le nombre de caractères dans la requête de recherche peut-être être inférieures à la limite, il est donc la requête étendue qui peut-être contribuer à le dépassement de cette limite.<br/> |**Boîtes aux lettres :** 10 000  <br/> **Sites :** lors de la recherche de tous les sites ou 2 000 lors de la recherche de sites jusqu'à 20 <sup>1</sup> à 4 000 <br/> |
-|Nombre maximal de variantes renvoyé lors de l’utilisation d’un caractère générique préfixe pour rechercher une phrase exacte dans une requête de recherche ou lors de l’utilisation d’un caractère générique préfixe et l’opérateur booléen **NEAR** ou **ONEAR** .  <br/> |10 000 <sup>2</sup> <br/> |
-|Le nombre minimal de caractères alpha pour des caractères génériques de préfixe ; par exemple, `time*`, `one*`, ou `set*`.  <br/> |3  <br/> |
-|Le nombre maximal de boîtes aux lettres dans une recherche de contenu que vous pouvez supprimer les éléments dans en effectuant une action « recherche et purge » (à l’aide de la **ComplianceSearchAction-New-purger** commande). Si la recherche de contenu que vous effectuez une action de vidage pour possède plusieurs boîtes aux lettres source à cette limite, l’action de purge échouera. Pour plus d’informations sur la recherche et la purge, voir [Rechercher et supprimer des messages électroniques dans votre organisation Office 365](search-for-and-delete-messages-in-your-organization.md).<br/> |50 000  <br/> |
+|Nombre maximal de boîtes aux lettres ou de sites qui peuvent être recherchées dans une recherche de contenu unique  <br/> |Sans limite  <br/> |
+|Nombre maximal de recherches de contenu pouvant être exécutées en même temps dans votre organisation.  <br/> |Sans limite  <br/> |
+|Nombre maximal de recherches de contenu qu'un utilisateur peut démarrer simultanément. Notez que cette limite est probablement atteinte lorsque l'utilisateur tente de démarrer plusieurs recherches à l'aide de la commande **get \| -ComplianceSearch Start-ComplianceSearch** dans le centre de sécurité & Compliance Center PowerShell.<br/> |10   <br/> |
+|Nombre maximal d'éléments par boîte aux lettres utilisateur qui s'affichent dans la page d'aperçu lors de la prévisualisation des résultats de la recherche de contenu.  <br/> |100  <br/> |
+|Nombre maximal d'éléments trouvés dans toutes les boîtes aux lettres utilisateur qui s'affichent dans la page d'aperçu lors de la prévisualisation des résultats de la recherche de contenu. Les éléments les plus récents sont affichés.  <br/> |1,000  <br/> |
+|Nombre maximal de boîtes aux lettres utilisateur pouvant être prévisualisées pour les résultats de la recherche. S'il y a plus de 1000 boîtes aux lettres qui contiennent du contenu correspondant à la requête de recherche, seules les 1000 premières boîtes aux lettres avec le plus de résultats de recherche seront disponibles pour l'aperçu.  <br/> |1,000  <br/> |
+|Nombre maximal d'éléments trouvés dans SharePoint et de sites OneDrive entreprise affichés dans la page d'aperçu lors de la prévisualisation des résultats de la recherche de contenu. Les éléments les plus récents sont affichés.  <br/> |200  <br/> |
+|Nombre maximal de sites (dans SharePoint et OneDrive entreprise) pouvant être prévisualisés pour les résultats de la recherche. S'il existe plus de 200 total de sites qui contiennent du contenu correspondant à la requête de recherche, seuls les premiers sites 200 avec le plus de résultats de recherche seront disponibles pour l'aperçu.  <br/> |200  <br/> |
+|Nombre maximal d'éléments par boîte aux lettres de dossiers publics affichés dans la page d'aperçu lors de la prévisualisation des résultats de la recherche de contenu.  <br/> |100  <br/> |
+|Nombre maximal d'éléments trouvés dans toutes les boîtes aux lettres de dossiers publics qui s'affichent dans la page d'aperçu lors de la prévisualisation des résultats de la recherche de contenu.  <br/> |200  <br/> |
+|Nombre maximal de boîtes aux lettres publiques pouvant être prévisualisées pour les résultats de la recherche. S'il y a plus de 500 boîtes aux lettres de dossiers publics qui contiennent du contenu correspondant à la requête de recherche, seules les 500 premières boîtes aux lettres de dossiers publics avec le plus de résultats de recherche seront disponibles pour l'aperçu.  <br/> |500  <br/> |
+|Nombre maximal de caractères pour la requête de recherche (y compris les opérateurs et les conditions) pour une recherche de contenu.  <br/><br/> **Remarque:** Cette limite prend effet après l'extension de la requête, ce qui signifie que la requête est développée par rapport à chacun des mots clés. Par exemple, si une requête de recherche comporte 15 Mots clés et des paramètres et conditions supplémentaires, la requête est développée 15 fois, chacune avec les autres paramètres et conditions de la requête. Par conséquent, même si le nombre de caractères dans la requête de recherche est inférieur à la limite, il s'agit de la requête étendue susceptible de contribuer au dépassement de cette limite.<br/> |**Boîtes aux lettres:** 10 000  <br/> **Sites:** 4 000 lors de la recherche sur tous les sites ou 2 000 lors de la recherche sur 20 sites <sup>1</sup> <br/> |
+|Nombre maximal de variantes renvoyées lors de l'utilisation d'un caractère générique de préfixe pour rechercher une expression exacte dans une requête de recherche ou lorsque vous utilisez un caractère générique de préfixe et l'opérateur booléen **near** ou **ONEAR** .  <br/> |10 000 <sup>2</sup> <br/> |
+|Nombre minimal de caractères alpha pour les caractères génériques de préfixe; par exemple, `time*` `one*`, ou `set*`.  <br/> |3   <br/> |
+|Nombre maximal de boîtes aux lettres dans une recherche de contenu que vous pouvez supprimer des éléments à l'aide d'une action de recherche et de purge (à l'aide de la commande **New-ComplianceSearchAction-purge** ). Si la recherche de contenu pour laquelle vous effectuez une action de vidage pour a plus de boîtes aux lettres source que cette limite, l'action de vidage échouera. Pour plus d'informations sur la recherche et le vidage, voir [Rechercher et supprimer des messages électroniques dans votre organisation Office 365](search-for-and-delete-messages-in-your-organization.md).<br/> |50 000  <br/> |
    
 > [!NOTE]
-> <sup>1</sup> lors de la recherche SharePoint et OneDrive pour des sites, les caractères dans les URL des sites recherchés sont comptés par rapport à cette limite.<br/> <sup>2</sup> pour les requêtes non phrase (une valeur de mot clé qui n’utilise pas de doubles guillemets) nous utilisons un index préfixe spécial. Nous indique qu’un mot se produit dans un document, mais pas où il se trouve dans le document. Pour faire une requête d’expression (une valeur de mot clé entre guillemets doubles), nous devons comparer la position dans le document pour les mots dans la phrase. Cela signifie que nous ne pouvons pas utiliser l’index de préfixe pour les requêtes d’une expression. Dans ce cas, nous allons élargir en interne la requête avec tous les mots possibles qui développe le préfixe ; par exemple, `"time*"` peut se développer pour `"time OR timer OR times OR timex OR timeboxed OR …"`. 10 000 est le nombre maximal de variantes que peut en modifier le mot pas le nombre de documents correspondant à la requête. Il n’existe aucune limite supérieure pour les termes non phrase. 
+> <sup>1</sup> lors de la recherche de sites SharePoint et OneDrive entreprise, les caractères des URL des sites en cours de recherche sont comptabilisés par rapport à cette limite.<br/> <sup>2</sup> pour les requêtes sans expression (valeur de mot clé qui n'utilise pas de guillemets doubles), nous utilisons un index de préfixe spécial. Cela indique qu'un mot a lieu dans un document, mais pas à son emplacement dans le document. Pour effectuer une requête d'expression (valeur de mot clé avec des guillemets doubles), nous devons comparer la position dans le document pour les mots de l'expression. Cela signifie que nous ne pouvons pas utiliser l'index de préfixe pour les requêtes d'expression. Dans ce cas, nous développons la requête en interne avec tous les mots que le préfixe développe; par exemple, `"time*"` peut se développer `"time OR timer OR times OR timex OR timeboxed OR …"`sur. 10 000 est le nombre maximal de variantes que le mot peut développer, pas le nombre de documents correspondant à la requête. Il n'existe pas de limite supérieure pour les termes autres que les expressions. 
   
-## <a name="indexing-limits-for-email-messages"></a>L’indexation des limites pour les messages électroniques
+## <a name="indexing-limits-for-email-messages"></a>Limites d'indexation pour les messages électroniques
 
-Le tableau suivant décrit les limites d’indexation pouvant entraîner un message électronique est renvoyé comme un élément non indexé ou d’un élément partiellement indexé dans les résultats d’une recherche de contenu.
+Le tableau suivant décrit les limites d'indexation qui peuvent entraîner le renvoi d'un message électronique sous la forme d'un élément non indexé ou partiellement indexé dans les résultats d'une recherche de contenu.
   
-|**Limite d’indexation**|**Commentaires**|**Description**|
+|**Limite d'indexation**|**Commentaires**|**Description**|
 |:-----|:-----|:-----|
-|Taille maximale des pièces jointes (à l’exclusion de fichiers Excel)  <br/> |150 Mo  <br/> |La taille maximale d’une pièce jointe qui analysera pour l’indexation. Toutes les pièces jointes sont supérieure à cette limite ne sont pas être analysée pour l’indexation et le message avec la pièce jointe est marqué comme partiellement indexé.<br/> <br/>**Remarque :** L’analyse est le processus où le service d’indexation extrait le texte de la pièce jointe, supprime les caractères tels que des signes de ponctuation et les espaces inutiles et divise le texte en mots (dans un processus appelé création de jetons), qui sont stockés dans l’index.           |
-|Taille maximale des fichiers Excel  <br/> |4 MO  <br/> |La taille maximale d’un fichier Excel située sur un site ou attaché à un message électronique qui sera analysé pour l’indexation. N’importe quel fichier Excel supérieur à cette limite ne sont pas être analysée, et le fichier ou le courrier électronique le message avec la pièce jointe est marqué comme non indexés.  <br/> |
-|Nombre maximal de pièces jointes  <br/> |250  <br/> |Le nombre maximal de fichiers joints à un message électronique qui sera analysé pour l’indexation. Si un message contient plus de 250 pièces jointes, les pièces 250 premiers jointes sont analysés et indexés, et le message est marqué comme partiellement indexé parce qu’il avait des pièces jointes supplémentaires qui n’ont pas été analysés.  <br/> |
-|Profondeur maximale des pièces jointes  <br/> |30  <br/> |Le nombre maximal de pièces jointes imbriquées qui sont analysés. Par exemple, si un message électronique est un autre message attaché et le message joint est un document Word joint, le document Word et le message joint seront indexés. Ce comportement continuera de pièces jointes imbriquées jusqu'à 30.  <br/> |
-|Nombre maximal d’images attachés  <br/> |0  <br/> |Une image qui est attachée à un message électronique est ignorée par l’analyseur et n’est pas indexée.  <br/> |
-|Durée maximale passé à l’analyse d’un élément  <br/> |30 secondes  <br/> |Un maximum de 30 secondes est passé à l’analyse d’un élément pour l’indexation. Si la durée d’analyse dépasse 30 secondes, l’élément est marqué comme étant partiellement indexé.  <br/> |
-|Sortie de l’analyseur maximale  <br/> |2 millions de caractères  <br/> |La quantité maximale de sortie de texte de l’analyseur qui est indexée. Par exemple, si l’analyseur extrait 8 millions de caractères à partir d’un document, uniquement les premiers 2 millions de caractères sont indexées.  <br/> |
-|Jetons d’annotation maximale  <br/> |2 millions  <br/> |Lorsqu’un message électronique est indexé, chaque mot est annoté avec des instructions de traitement qui spécifient comment que word doit être indexée. Chaque jeu d’instructions de traitement est appelé un jeton d’annotation. Pour maintenir la qualité de service dans Office 365, il existe une limite de jetons d’annotation 2 millions d’un message électronique.  <br/> |
-|Taille maximale du corps de l’index  <br/> |67 millions de caractères  <br/> |Nombre total de caractères dans le corps d’un message électronique et ses pièces jointes. Lorsqu’un message électronique est indexé, tout le texte dans le corps du message et dans toutes les pièces jointes est concaténé dans une chaîne unique. La taille maximale de cette chaîne qui est indexée est 67 millions de caractères.  <br/> |
-|Jetons uniques maximales dans le corps  <br/> |1 million  <br/> |Expliqué précédemment, les jetons sont le résultat de l’extraction du contenu de texte, la suppression des signes de ponctuation et les espaces et divisant en mots (appelées jetons) qui sont stockés dans l’index. Par exemple, l’expression `"cat, mouse, bird, dog, dog"` contient des 5 jetons. Mais uniquement 4 de ces jetons uniques. Il existe une limite de 1 million de jetons unique par message électronique, ce qui permet d’empêcher l’index devient trop importante avec des jetons aléatoires.<br/> |
+|Taille maximale des pièces jointes (à l'exception des fichiers Excel)  <br/> |150 Mo  <br/> |Taille maximale d'une pièce jointe de courrier électronique qui analysera l'indexation. Toute pièce jointe dont la taille est supérieure à cette limite n'est pas analysée pour l'indexation et le message avec la pièce jointe est marqué comme partiellement indexé.<br/> <br/>**Remarque:** L'analyse est le processus dans lequel le service d'indexation extrait le texte de la pièce jointe, supprime les caractères superflus, tels que la ponctuation et les espaces, puis divise le texte en mots (dans un processus appelé «tokening»), qui sont ensuite stockés dans l'index.           |
+|Taille maximale des fichiers Excel  <br/> |4 MO  <br/> |Taille maximale d'un fichier Excel situé sur un site ou jointe à un message électronique qui sera analysé pour l'indexation. Tout fichier Excel dont la taille est supérieure à cette limite n'est pas analysé, et le fichier ou le message électronique avec le fichier joint est marqué comme non indexée.  <br/> |
+|Nombre maximal de pièces jointes  <br/> |250  <br/> |Nombre maximal de fichiers joints à un message électronique qui seront analysés pour l'indexation. Si un message contient plus de 250 pièces jointes, les 250 premières pièces jointes sont analysées et indexées, et le message est marqué comme partiellement indexé car il contient des pièces jointes supplémentaires qui n'ont pas été analysées.  <br/> |
+|Profondeur maximale des pièces jointes  <br/> |0,30  <br/> |Nombre maximal de pièces jointes imbriquées qui sont analysées. Par exemple, si un message électronique est associé à un autre message et que le message joint contient un document Word joint, le document Word et le message joint sont indexés. Ce comportement se poursuivra pendant jusqu'à 30 pièces jointes imbriquées.  <br/> |
+|Nombre maximal d'images attachées  <br/> |0  <br/> |Une image jointe à un message électronique est ignorée par l'analyseur et n'est pas indexée.  <br/> |
+|Temps maximal passé à analyser un élément  <br/> |30 secondes  <br/> |Un maximum de 30 secondes est passé à analyser un élément pour l'indexation. Si la durée d'analyse est supérieure à 30 secondes, l'élément est marqué comme partiellement indexé.  <br/> |
+|Sortie maximale de l'analyseur  <br/> |2 millions de caractères  <br/> |Quantité maximale de sortie de texte de l'analyseur qui est indexée. Par exemple, si l'analyseur a extrait 8 millions caractères d'un document, seuls les 2 premiers caractères sont indexés.  <br/> |
+|Nombre maximal de jetons d'annotation  <br/> |2 millions  <br/> |Lorsqu'un message électronique est indexé, chaque mot est annoté avec des instructions de traitement différentes qui définissent le mode d'indexation de Word. Chaque ensemble d'instructions de traitement est appelé un jeton d'annotation. Pour maintenir la qualité de service dans Office 365, il existe une limite de 2 millions jetons d'annotation pour un message électronique.  <br/> |
+|Taille maximale du corps dans l'index  <br/> |67 millions caractères  <br/> |Nombre total de caractères dans le corps d'un message électronique et toutes ses pièces jointes. Lorsqu'un message électronique est indexé, tout le texte dans le corps du message et dans toutes les pièces jointes est concaténé dans une chaîne unique. La taille maximale de cette chaîne indexée est de 67 millions caractères.  <br/> |
+|Nombre maximal de jetons uniques dans le corps  <br/> |1 million  <br/> |Comme expliqué précédemment, les jetons sont le résultat de l'extraction de texte du contenu, la suppression de la ponctuation et des espaces, puis sa division en mots (appelés jetons) stockés dans l'index. Par exemple, l'expression `"cat, mouse, bird, dog, dog"` contient 5 jetons. Mais seulement 4 sont des jetons uniques. Il existe une limite de 1 million jetons uniques par message électronique, ce qui permet d'éviter que l'index soit trop volumineux avec des jetons aléatoires.<br/> |
   
 ## <a name="more-information"></a>Plus d’informations
 
-Il existe des aspects liés aux différentes limites supplémentaires de la recherche de contenu, tels que l’exportation des résultats de la recherche et l’indexation de contenu. Pour obtenir une description de ces limites, consultez les rubriques suivantes :
+Il existe des limites supplémentaires liées à différents aspects de la recherche de contenu, telles que l'exportation des résultats de recherche et l'indexation du contenu. Pour obtenir une description de ces limites, consultez les rubriques suivantes:
   
 - [Exporter les résultats de la recherche de contenu](export-search-results.md#export-limits)
     
@@ -80,9 +79,9 @@ Il existe des aspects liés aux différentes limites supplémentaires de la rech
     
 - [Examen d’éléments partiellement indexés dans eDiscovery Office 365](investigating-partially-indexed-items-in-ediscovery.md)
     
-- [Limites de la recherche de SharePoint Online](https://support.office.com/article/7c06e9ed-98b6-4304-a900-14773a8fa32f)
+- [Limites de recherche pour SharePoint Online](https://support.office.com/article/7c06e9ed-98b6-4304-a900-14773a8fa32f)
     
-Pour plus d’informations sur les recherches de contenu, voir :
+Pour plus d'informations sur les recherches de contenu, voir:
   
 - [Recherche de contenu dans Office 365](content-search.md)
     

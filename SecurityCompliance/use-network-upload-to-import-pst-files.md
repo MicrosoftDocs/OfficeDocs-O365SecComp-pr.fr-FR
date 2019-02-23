@@ -1,12 +1,12 @@
 ---
-title: Téléchargement du réseau permet d’importer des fichiers de votre organisation PST vers Office 365
+title: Utiliser le chargement réseau pour importer les fichiers PST de votre organisation vers Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -14,115 +14,115 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
-description: 'Pour les administrateurs : Découvrez comment utiliser le téléchargement de réseau à plusieurs fichiers PST aux boîtes aux lettres utilisateur dans Office 365-importation en bloc.'
-ms.openlocfilehash: 81c799a8c820e9d9287f4792fe463d6a99b90e36
-ms.sourcegitcommit: 25f1028643d8a20d17306e8b09cafea46eaf7a58
+description: 'Pour les administrateurs: Découvrez comment utiliser le chargement réseau pour importer en bloc plusieurs fichiers PST dans des boîtes aux lettres utilisateur dans Office 365.'
+ms.openlocfilehash: 04beb021b34a7357556e4d6e4d26d43de6a85c5d
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "29666154"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217354"
 ---
-# <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>Téléchargement du réseau permet d’importer des fichiers de votre organisation PST vers Office 365
+# <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>Utiliser le chargement réseau pour importer les fichiers PST de votre organisation vers Office 365
 
 > [!NOTE]
-> Cet article est destiné aux administrateurs. Vous essayez d’importer des fichiers PST à votre propre boîte aux lettres ? Voir [messagerie importation, contacts et calendrier à partir d’un fichier Outlook .pst](https://go.microsoft.com/fwlink/p/?LinkID=785075)
+> Cet article est destiné aux administrateurs. Essayez-vous d'importer des fichiers PST dans votre propre boîte aux lettres? Voir [importer le courrier, les contacts et le calendrier à partir d'un fichier. pst Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)
   
-Voici les instructions pas à pas requises pour utiliser le téléchargement de réseau à plusieurs fichiers PST aux boîtes aux lettres Office 365-importation en bloc. Pour des questions fréquemment posées sur l’utilisation de téléchargement du réseau pour l’importation en bloc des fichiers PST aux boîtes aux lettres Office 365, consultez le [FAQ pour l’utilisation de téléchargement réseau pour importer des fichiers PST](faqimporting-pst-files-to-office-365.md#using-network-upload-to-import-pst-files).
+Voici les instructions pas à pas pour utiliser le chargement réseau pour importer en bloc plusieurs fichiers PST vers des boîtes aux lettres Office 365. Pour obtenir des questions fréquemment posées sur l'utilisation du chargement réseau pour importer des fichiers PST vers des boîtes aux lettres Office 365, consultez la rubrique [FAQ sur l'utilisation du chargement réseau pour importer des fichiers PST](faqimporting-pst-files-to-office-365.md#using-network-upload-to-import-pst-files).
   
-[Étape 1 : Copiez l’URL SAS et installer AzCopy Azure](#step-1-copy-the-sas-url-and-install-azure-azcopy)
+[Étape 1: Copiez l'URL SAS et installez Azure AzCopy](#step-1-copy-the-sas-url-and-install-azure-azcopy)
 
-[Étape 2 : Télécharger vos fichiers PST vers Office 365](#step-2-upload-your-pst-files-to-office-365)
+[Étape 2: chargement de vos fichiers PST dans Office 365](#step-2-upload-your-pst-files-to-office-365)
 
-[(Facultatif) Étape 3 : Afficher une liste des fichiers PST téléchargé vers Office 365](#optional-step-3-view-a-list-of-the-pst-files-uploaded-to-office-365)
+[Module Étape 3: afficher la liste des fichiers PST téléchargés vers Office 365](#optional-step-3-view-a-list-of-the-pst-files-uploaded-to-office-365)
 
-[Étape 4 : Créer le fichier de mappage d’importation PST](#step-4-create-the-pst-import-mapping-file)
+[Étape 4: créer le fichier de mappage d'importation PST](#step-4-create-the-pst-import-mapping-file)
 
 [Étape 5 : Créer une tâche d’importation PST dans Office 365](#step-5-create-a-pst-import-job-in-office-365)
 
-[Étape 6 : Filtrer les données et démarrer le travail d’importation PST](#step-6-filter-data-and-start-the-pst-import-job)
+[Étape 6: filtrer les données et démarrer le travail d'importation PST](#step-6-filter-data-and-start-the-pst-import-job)
 
-Notez que vous devez effectuer l’étape 1 qu’une seule fois pour importer des fichiers PST aux boîtes aux lettres Office 365. Après avoir effectué ces étapes, suivez étape 2 à 6 à chaque fois que vous souhaitez télécharger et importer un lot de fichiers PST.
+Notez que vous devez effectuer l'étape 1 une seule fois pour importer des fichiers PST dans des boîtes aux lettres Office 365. Après avoir effectué ces étapes, suivez les étapes 2 à 6 chaque fois que vous souhaitez télécharger et importer un lot de fichiers PST.
 
 ## <a name="before-you-begin"></a>Avant de commencer
   
-- Vous devez être le rôle importer exporter des boîtes aux lettres dans Exchange Online pour importer des fichiers PST aux boîtes aux lettres Office 365. Par défaut, ce rôle n’est pas affecté à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle de boîte aux lettres importer exporter au groupe de rôles de gestion de l’organisation. Ou vous pouvez créer un nouveau groupe de rôles, attribuer le rôle de boîte aux lettres importer exporter et puis ajoutez-vous en tant que membre. Pour plus d’informations, voir le « ajouter un rôle à un groupe de rôles » ou les sections de la « créer un groupe de rôles » dans [Gérer les groupes de rôles](https://go.microsoft.com/fwlink/p/?LinkId=730688).
+- Vous devez disposer du rôle d'exportation d'importation de boîte aux lettres dans Exchange Online pour importer des fichiers PST dans des boîtes aux lettres Office 365. Par défaut, ce rôle n'est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle exportation d'importation de boîte aux lettres au groupe de rôles gestion de l'organisation. Vous pouvez aussi créer un groupe de rôles, attribuer le rôle d'exportation d'importation de boîte aux lettres, puis vous ajouter comme membre. Pour plus d'informations, consultez les sections «ajouter un rôle à un groupe de rôles» ou «créer un groupe de rôles» dans [gérer des groupes de rôles](https://go.microsoft.com/fwlink/p/?LinkId=730688).
     
-    En outre, pour créer l’importation des travaux de sécurité Office 365 &amp; centre de conformité, une des opérations suivantes doivent être remplie :
+    De plus, pour créer des travaux d'importation dans le centre &amp; de sécurité conformité Office 365, l'une des conditions suivantes doit être vraie:
     
-  - Vous devez être affecté le rôle destinataires de messagerie dans Exchange Online. Par défaut, ce rôle est attribué aux groupes de rôles de gestion de l’organisation et la gestion des destinataires.
+  - Vous devez disposer du rôle destinataires de messagerie dans Exchange Online. Par défaut, ce rôle est affecté aux groupes gestion de l'organisation et rôles de gestion des destinataires.
     
     Ou
     
-  - Vous devez être un administrateur global dans votre organisation Office 365.
+  - Vous devez être un administrateur général dans votre organisation Office 365.
     
   > [!TIP]
-    > Envisagez de créer un nouveau groupe de rôles dans Exchange Online est spécifiquement conçu pour l’importation des fichiers PST vers Office 365. Pour le niveau minimal de privilèges nécessaires pour importer des fichiers PST, attribuer les rôles destinataires de messagerie et de boîte aux lettres importer exporter vers le nouveau groupe de rôles et ajouter des membres. 
+    > EnVisagez de créer un nouveau groupe de rôles dans Exchange Online spécialement destiné à l'importation de fichiers PST dans Office 365. Pour le niveau minimal de privilèges requis pour importer des fichiers PST, attribuez les rôles importation de boîte aux lettres et destinataires des messages au nouveau groupe de rôles, puis ajoutez des membres. 
   
-- La seule méthode prise en charge pour l’importation des fichiers PST vers Office 365 consiste à utiliser l’outil AzCopy Azure, comme décrit dans cette rubrique. Vous ne pouvez pas utiliser l’Explorateur de solutions de stockage Azure pour télécharger les fichiers PST directement à la zone de stockage Azure.
+- La seule méthode prise en charge pour l'importation de fichiers PST dans Office 365 consiste à utiliser l'outil AzCopy d'Azure, comme décrit dans cette rubrique. Vous ne pouvez pas utiliser l'Explorateur de stockage Azure pour télécharger des fichiers PST directement dans la zone de stockage Azure.
     
-- Vous devez stocker les fichiers PST que vous souhaitez importer vers Office 365 sur un serveur de fichiers ou un dossier partagé dans votre organisation. À l’étape 2, vous allez exécuter l’outil de AzCopy Azure qui télécharge les fichiers PST qui sont stockées sur ce serveur de fichiers ou dossier à Office 365 partagé.
+- Vous devez stocker les fichiers PST que vous souhaitez importer vers Office 365 sur un serveur de fichiers ou un dossier partagé de votre organisation. À l'étape 2, vous allez exécuter l'outil Azure AzCopy qui télécharge les fichiers PST stockés sur ce serveur de fichiers ou dossier partagé vers Office 365.
     
-- Cette procédure consiste à copier et enregistrer une copie d’une URL qui contient une touche d’accès. Ces informations sont utilisées à l’étape 2 pour télécharger vos fichiers PST et à l’étape 3 Si vous souhaitez afficher la liste des fichiers PST téléchargé vers Office 365. N’oubliez pas de prendre des précautions pour protéger cette URL comme vous le feriez protéger les mots de passe ou d’autres informations relatives à la sécurité. Par exemple vous pourrez l’enregistrer à un document Microsoft Word protégés par mot de passe ou sur un lecteur USB chiffré. Voir que la section [plus d’informations](#more-information) pour obtenir un exemple de ce combinés URL et la clé. 
+- Cette procédure implique la copie et l'enregistrement d'une copie d'une URL qui contient une touche d'accès. Ces informations seront utilisées à l'étape 2 pour télécharger vos fichiers PST, et à l'étape 3 Si vous souhaitez afficher la liste des fichiers PST téléchargés vers Office 365. Veillez à prendre des précautions pour protéger cette URL, comme vous le feriez pour protéger les mots de passe ou d'autres informations relatives à la sécurité. Par exemple, vous pouvez l'enregistrer dans un document Microsoft Word protégé par mot de passe ou sur un lecteur USB chiffré. Consultez la section [more information](#more-information) pour obtenir un exemple de cette combinaison d'URL et de clé. 
     
-- Vous pouvez importer des fichiers PST à une boîte aux lettres inactive dans Office 365. Cela en spécifiant le GUID de la boîte aux lettres inactive dans le `Mailbox` paramètre dans le fichier de mappage d’importation PST. Sous l’onglet **Instructions** de cette rubrique pour plus d’informations, voir l’étape 4. 
+- Vous pouvez importer des fichiers PST dans une boîte aux lettres inactive dans Office 365. Pour ce faire, spécifiez le GUID de la boîte aux lettres inactive dans le `Mailbox` paramètre dans le fichier de mappage d'importation PST. Pour plus d'informations, rePortez-vous à l'étape 4 de l'onglet **instructions** de cette rubrique. 
     
-- Dans un déploiement Exchange hybride, vous pouvez importer des fichiers PST à une boîte aux lettres d’archive en nuage pour un utilisateur de boîte aux lettres principale est local. Pour cela, procédez comme suit dans le fichier de mappage d’importation PST :
+- Dans un déploiement hybride Exchange, vous pouvez importer des fichiers PST dans une boîte aux lettres d'archivage informatique pour un utilisateur dont la boîte aux lettres principale est locale. Pour ce faire, procédez comme suit dans le fichier de mappage d'importation PST:
     
-  - Spécifiez l’adresse de messagerie pour la boîte aux lettres locale de l’utilisateur dans le `Mailbox` paramètre. 
+  - Spécifiez l'adresse de messagerie de la boîte aux lettres locale de l' `Mailbox` utilisateur dans le paramètre. 
     
-  - Spécifiez la valeur **TRUE** dans le `IsArchive` paramètre. 
+  - Spécifiez la valeur **true** dans `IsArchive` le paramètre. 
     
-    Pour plus d’informations, voir [l’étape 4](#step-4-create-the-pst-import-mapping-file) . 
+    Pour plus d'informations, consultez l' [étape 4](#step-4-create-the-pst-import-mapping-file) . 
     
-- Une fois les fichiers PST sont importées dans une boîte aux lettres Office 365, le blocage de rétention définition pour la boîte aux lettres est activé pour une durée indéterminée. Cela signifie que la stratégie de rétention attribuée à la boîte aux lettres ne sera pas traitée jusqu'à ce que vous désactivez le blocage de rétention ou définissez une date pour désactiver le blocage. Pourquoi nous réalisons cela ? Si les messages importés dans une boîte aux lettres sont anciennes, ils peuvent définitivement supprimés (définitivement) parce que leur période de rétention a expiré en fonction des paramètres de rétention configurées pour la boîte aux lettres. Placer la boîte aux lettres sur le blocage de rétention vous donne le temps de propriétaire de boîte aux lettres de gérer ces messages nouvellement importées ou le permettent de modifier les paramètres de rétention pour la boîte aux lettres du temps. Consultez l’onglet **informations supplémentaires** dans cette rubrique pour obtenir des suggestions sur la gestion de la période de rétention. 
+- Une fois que les fichiers PST sont importés dans une boîte aux lettres Office 365, le paramètre de blocage de rétention de la boîte aux lettres est activé pour une durée indéterminée. Cela signifie que la stratégie de rétention attribuée à la boîte aux lettres ne sera pas traitée tant que vous n'aurez pas désactivé le blocage de rétention ou défini une date pour désactiver la conservation. Pourquoi effectuer cette opération? Si les messages importés dans une boîte aux lettres sont obsolètes, ils peuvent être supprimés définitivement (purgés) car leur période de rétention a expiré en fonction des paramètres de rétention configurés pour la boîte aux lettres. Lorsque la boîte aux lettres est mise en attente de rétention, le propriétaire de la boîte aux lettres peut gérer ces messages nouvellement importés ou modifier les paramètres de rétention pour la boîte aux lettres. Pour obtenir des suggestions sur la gestion du blocage de rétention, voir l'onglet **More info** dans cette rubrique. 
     
-- Par défaut, la taille maximale des messages pouvant être reçus par une boîte aux lettres Office 365 est 35 Mo. C’est parce que la valeur par défaut de la propriété *MaxReceiveSize* pour une boîte aux lettres est définie à 35 Mo. Toutefois, la limite de taille maximale de message de réception dans Office 365 est de 150 Mo. Par conséquent, si vous importez un fichier PST contenant un élément plu de 35 Mo, le service Office 365 importer, nous allons modifier automatiquement la valeur de la propriété *MaxReceiveSize* sur la boîte aux lettres cible à 150 Mo. Cela permet aux messages de 150 Mo pour être importés dans les boîtes aux lettres utilisateur. 
+- Par défaut, la taille maximale des messages pouvant être reçus par une boîte aux lettres Office 365 est de 35 Mo. Cela est dû au fait que la valeur par défaut de la propriété *MaxReceiveSize* pour une boîte aux lettres est définie sur 35 Mo. Toutefois, la limite de la taille maximale des messages dans Office 365 est de 150 Mo. Par conséquent, si vous importez un fichier PST contenant un élément dont la taille est supérieure à 35 Mo, le service d'importation Office 365 modifiera automatiquement la valeur de la propriété *MaxReceiveSize* de la boîte aux lettres cible sur 150 Mo. Cela permet l'importation de messages allant jusqu'à 150 Mo dans les boîtes aux lettres utilisateur. 
     
     > [!TIP]
-    > Pour identifier le message reçoit la taille d’une boîte aux lettres, vous pouvez exécuter cette commande dans Exchange Online PowerShell : `Get-Mailbox <user mailbox> | FL MaxReceiveSize`. 
+    > Pour identifier la taille de réception des messages pour une boîte aux lettres, vous pouvez exécuter cette commande dans `Get-Mailbox <user mailbox> | FL MaxReceiveSize`Exchange Online PowerShell:. 
 
-## <a name="step-1-copy-the-sas-url-and-install-azure-azcopy"></a>Étape 1 : Copiez l’URL SAS et installer AzCopy Azure
+## <a name="step-1-copy-the-sas-url-and-install-azure-azcopy"></a>Étape 1: Copiez l'URL SAS et installez Azure AzCopy
 
-La première étape consiste à télécharger et installer l’outil AzCopy Azure, qui est un outil qui vous allez exécuter à l’étape 2 pour télécharger des fichiers PST dans Office 365. Vous allez également copier l’URL SAS pour votre organisation. Cette URL est une combinaison de l’URL de réseau pour l’emplacement de stockage Azure dans le nuage Microsoft pour votre organisation et une clé de Signature de l’accès partagé (sa). Cette clé fournit des autorisations nécessaires pour télécharger des fichiers PST vers votre emplacement de stockage Azure. N’oubliez pas de prendre des précautions pour protéger l’URL SAS. Il est propre à votre organisation et sera utilisé à l’étape 2.
+La première étape consiste à télécharger et à installer l'outil AzCopy d'Azure, qui est l'outil que vous exécuterez à l'étape 2 pour télécharger des fichiers PST vers Office 365. Vous copierez également l'URL SAS de votre organisation. Cette URL est une combinaison de l'URL réseau de l'emplacement de stockage Azure dans le Cloud Microsoft pour votre organisation et d'une clé SAS (Shared Access signature). Cette clé vous fournit les autorisations nécessaires pour télécharger des fichiers PST vers votre emplacement de stockage Azure. Veillez à prendre des précautions pour protéger l'URL SAS. Elle est propre à votre organisation et sera utilisée à l'étape 2.
 
 > [!IMPORTANT]
-> Pour importer des fichiers PST, méthode de téléchargement de fichiers à l’aide du réseau, nous vous conseillons d’utiliser la version de AzCopy Azure qui peuvent être téléchargés dans l’étape 6 b dans la procédure suivante.
+> Pour importer des fichiers PST à l'aide de la méthode de chargement réseau, nous vous recommandons d'utiliser la version d'Azure AzCopy qui peut être téléchargée à l'étape 6B de la procédure suivante.
   
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous en utilisant les informations d’identification pour un compte d’administrateur de votre organisation Office 365. 
+1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l'aide des informations d'identification d'un compte administrateur de votre organisation Office 365. 
     
-2. Dans le volet gauche de la sécurité &amp; centre de conformité, cliquez sur **la gouvernance des données** \> **Import**.
+2. Dans le volet gauche du centre de &amp; sécurité conformité, cliquez sur **importation**de la **gouvernance** \> de données.
     
     > [!NOTE]
-    > Vous devez disposer des autorisations appropriées pour accéder à la page **d’importation** de la sécurité &amp; centre de conformité. Consultez la section **avant de commencer** , pour plus d’informations. 
+    > Vous devez disposer des autorisations appropriées pour accéder à la page d' **importation** dans le centre &amp; de sécurité et de conformité. Pour plus d'informations, rePortez-vous à la section **avant de commencer** . 
     
-3. Dans la page **Importer** , cliquez sur ![ajouter une icône](media/ITPro-EAC-AddIcon.gif) **nouvelle tâche d’importation**.
+3. Sur la page **Importer** , cliquez ![sur Ajouter](media/ITPro-EAC-AddIcon.gif) une icône **nouveau travail d'importation**.
     
-    L’Assistant Importation de travail s’affiche.
+    L'Assistant importation de tâche s'affiche.
     
-4. Tapez un nom pour la tâche d’importation PST, puis cliquez sur **suivant**. Utilisez les lettres minuscules, chiffres, des traits d’union et des traits de soulignement. Impossible d’utiliser des lettres majuscules ou inclure des espaces dans le nom.
+4. Tapez un nom pour le travail d'importation PST, puis cliquez sur **suivant**. Utilisez des lettres minuscules, des chiffres, des tirets et des traits de soulignement. Vous ne pouvez pas utiliser des lettres majuscules ou inclure des espaces dans le nom.
     
-5. Sur le **vous souhaitez télécharger ou envoyer des données ?** de page, cliquez sur **télécharger vos données** , puis sur **suivant**.
+5. Sur la page **voulez-vous télécharger ou expédier les données?** , cliquez sur **télécharger vos données** , puis sur **suivant**.
     
-    ![Cliquez sur Télécharger vos données pour créer un téléchargement réseau tâche d’importation](media/e59f9dc3-ccde-44ff-ac38-c4e39d76ae85.png)
+    ![Cliquez sur charger vos données pour créer un travail d'importation de chargement réseau.](media/e59f9dc3-ccde-44ff-ac38-c4e39d76ae85.png)
   
-6. Dans la page **Importer des données** , effectuez le des deux opérations suivantes : 
+6. Sur la page **Importer les données** , procédez comme suit: 
     
-    ![Copiez l’URL SAS et télécharger l’outil AzCopy Azure sur la page Importer des données](media/74411014-ec4b-4e25-9065-404c934cce17.png)
+    ![Copiez l'URL SAS et téléchargez l'outil AzCopy Azure sur la page importer les données.](media/74411014-ec4b-4e25-9065-404c934cce17.png)
   
-    a à l’étape 2, cliquez sur **Afficher les URL SAS de téléchargement réseau**. Une fois que l’URL SAS s’affiche, cliquez sur **Copier dans le Presse-papiers** et collez-le et enregistrez-le dans un fichier afin que vous pouvez y accéder ultérieurement.
+    a. à l'étape 2, cliquez sur **afficher l'URL SAS de chargement réseau**. Une fois l'URL de la version SAS affichée, cliquez sur **copier dans le presse-papiers** , puis collez-la dans un fichier pour pouvoir y accéder ultérieurement.
     
-    b à l’étape 3, cliquez sur **Télécharger un AzCopy Azure** pour télécharger et installer l’outil AzCopy Azure. Dans la fenêtre contextuelle, cliquez sur **exécuter** pour installer AzCopy. 
+    b. à l'étape 3, cliquez sur **Télécharger Azure AzCopy** pour télécharger et installer l'outil AzCopy Azure. Dans la fenêtre contextuelle, cliquez sur **exécuter** pour installer AzCopy. 
     
 > [!NOTE]
-> Vous pouvez laisser la page **Importer des données** open (au cas où vous devez copier de nouveau l’URL SAS) ou cliquez sur **Annuler** pour la fermer. 
+> Vous pouvez laisser la page **Importer les données** ouverte (pour le cas où vous devriez recopier l'URL SAS) ou cliquer sur **Annuler** pour la fermer. 
  
-## <a name="step-2-upload-your-pst-files-to-office-365"></a>Étape 2 : Télécharger vos fichiers PST vers Office 365
+## <a name="step-2-upload-your-pst-files-to-office-365"></a>Étape 2: chargement de vos fichiers PST dans Office 365
 
-Vous êtes maintenant prêt à utiliser l’outil AzCopy.exe pour télécharger des fichiers PST vers Office 365. Cet outil télécharge et les stocke dans un emplacement de stockage Azure dans le nuage de Microsoft. Comme expliqué précédemment, l’emplacement de stockage Azure que vous téléchargez vos fichiers PST réside dans le même Microsoft Centre de données régional où se trouve votre organisation Office 365. Pour effectuer cette étape, les fichiers PST doivent se trouver dans un partage de fichiers ou un serveur de fichiers dans votre organisation. Il s’agit du répertoire source de la procédure suivante. Chaque fois que vous exécutez l’outil AzCopy, vous pouvez spécifier un répertoire source différents. 
+Vous êtes maintenant prêt à utiliser l'outil AzCopy. exe pour télécharger des fichiers PST dans Office 365. Cet outil les télécharge et les stocke dans un emplacement de stockage Azure dans le Cloud de Microsoft. Comme expliqué précédemment, l'emplacement de stockage Azure sur lequel vous chargez vos fichiers PST réside dans le même centre de Microsoft local que celui où se trouve votre organisation Office 365. Pour effectuer cette étape, les fichiers PST doivent être situés dans un partage de fichiers ou un serveur de fichiers de votre organisation. Il s'agit du répertoire source dans la procédure suivante. Chaque fois que vous exécutez l'outil AzCopy, vous pouvez spécifier un autre répertoire source. 
   
 1. Ouvrez une invite de commandes sur votre ordinateur local.
     
-2. Accédez au répertoire où vous avez installé l’outil AzCopy.exe à l’étape 1. Si vous avez installé l’outil à l’emplacement par défaut, accédez à `%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy`.
+2. Accédez au répertoire dans lequel vous avez installé l'outil AzCopy. exe à l'étape 1. Si vous avez installé l'outil à l'emplacement par défaut, `%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy`accédez à.
     
 3. Exécutez la commande suivante pour télécharger les fichiers PST vers Office 365.
 
@@ -131,15 +131,15 @@ Vous êtes maintenant prêt à utiliser l’outil AzCopy.exe pour télécharger 
   
     ```
  
-    Le tableau suivant décrit les paramètres et leurs valeurs requises. Notez que les informations que vous avez obtenu à l’étape précédente sont utilisées dans les valeurs de ces paramètres.
+    Le tableau suivant décrit les paramètres et leurs valeurs requises. Notez que les informations que vous avez obtenues à l'étape précédente sont utilisées dans les valeurs de ces paramètres.
     
     |**Paramètre**|**Description**|**Exemple**|
     |:-----|:-----|:-----|
-    | `/Source:` <br/> |Spécifie le répertoire source de votre organisation qui contient les fichiers PST qui seront téléchargés vers Office 365.  <br/> N’oubliez pas de placer la valeur de ce paramètre entre guillemets doubles (" ").  <br/> | `/Source:"\\FILESERVER01\PSTs"` <br/> |
-    | `/Dest:` <br/> |Spécifie l’URL d’associations de sécurité que vous avez obtenu à l’étape 1.  <br/> N’oubliez pas de placer la valeur de ce paramètre entre guillemets doubles (" ").  <br/> **Conseil :** (Facultatif) Vous pouvez spécifier un sous-dossier à l’emplacement de stockage Azure pour télécharger les fichiers PST. Pour cela, en ajoutant un emplacement sous-dossier (après « ingestiondata ») dans l’URL SAS. Le premier exemple ne spécifie pas un sous-dossier ; Cela signifie que les fichiers PST sera téléchargé à la racine (appelée *ingestiondata* ) de l’emplacement de stockage Azure. Le deuxième exemple télécharge les fichiers PST dans un sous-dossier (nommé *PSTFiles* ) à la racine de l’emplacement de stockage Azure.<br/> | `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> Ou  <br/>  `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
+    | `/Source:` <br/> |Spécifie le répertoire source de votre organisation qui contient les fichiers PST qui seront chargés vers Office 365.  <br/> N’oubliez pas de placer la valeur de ce paramètre entre guillemets doubles (" ").  <br/> | `/Source:"\\FILESERVER01\PSTs"` <br/> |
+    | `/Dest:` <br/> |Spécifie l'URL SAS que vous avez obtenue à l'étape 1.  <br/> N’oubliez pas de placer la valeur de ce paramètre entre guillemets doubles (" ").  <br/> **Conseil:** Module Vous pouvez spécifier un sous-dossier dans l'emplacement de stockage Azure dans lequel télécharger les fichiers PST. Pour ce faire, vous devez ajouter un emplacement de sous-dossier (après «ingestiondata») dans l'URL SAS. Le premier exemple ne spécifie pas un sous-dossier; Cela signifie que les fichiers PST seront téléchargés vers la racine (nommé *ingestiondata* ) de l'emplacement de stockage Azure. Le deuxième exemple télécharge les fichiers PST dans un sous-dossier (nommé *PSTFiles* ) à la racine de l'emplacement de stockage Azure.<br/> | `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> Ou  <br/>  `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
     | `/V:` <br/> |Inscrit les messages de statut détaillés dans un fichier journal. Par défaut, le fichier journal détaillé est nommé AzCopyVerbose.log dans %LocalAppData%\Microsoft\Azure\AzCopy. Si vous spécifiez un emplacement de fichier existant pour cette option, le journal détaillé est ajouté au fichier.  <br/> N’oubliez pas de placer la valeur de ce paramètre entre guillemets doubles (" ").  <br/> | `/V:"c:\Users\Admin\Desktop\Uploadlog.log"` <br/> |
-    | `/S` <br/> |Ce commutateur facultatif spécifie le mode récursive afin que l’outil AzCopy copie les fichiers pst qui se trouvent dans des sous-dossiers dans le répertoire source spécifié par le `/Source:` paramètre.  <br/> **Remarque :** Si vous incluez ce commutateur, des fichiers PST dans les sous-dossiers a un chemin d’accès de fichier différent dans l’emplacement de stockage Azure après leur téléchargement. Vous devrez spécifier le chemin d’accès exact du fichier dans le fichier CSV que vous créez à l’étape 4.<br/> | `/S` <br/> |
-    | `/Y` <br/> |Ce commutateur requis autorise l’utilisation de jetons SAS écriture seule lorsque vous téléchargez les fichiers PST à l’emplacement de stockage Azure. L’URL SAS obtenu à l’étape 1 (et spécifié dans `/Dest:` paramètre) est une URL SAS écriture seule, c’est pourquoi vous devez inclure ce commutateur. Notez qu’une URL SAS écriture seule n’empêche pas vous permet d’afficher une liste des fichiers PST téléchargés vers l’emplacement de stockage Azure à l’aide de l’Explorateur de solutions de stockage Azure.<br/> | `/Y` <br/> |
+    | `/S` <br/> |Ce commutateur facultatif spécifie le mode récursif de sorte que l'outil AzCopy copie les fichiers PST situés dans des sous-dossiers du répertoire source spécifié par le `/Source:` paramètre.  <br/> **Remarque:** Si vous incluez ce commutateur, les fichiers PST dans les sous-dossiers auront un nom de chemin d'accès de fichier différent dans l'emplacement de stockage Azure après leur téléchargement. Vous devrez spécifier le chemin d'accès exact du fichier dans le fichier CSV que vous créez à l'étape 4.<br/> | `/S` <br/> |
+    | `/Y` <br/> |Ce commutateur obligatoire permet l'utilisation de jetons SAS en écriture seule lorsque vous téléchargez les fichiers PST vers l'emplacement de stockage Azure. L'URL SAS que vous avez obtenue à l'étape 1 ( `/Dest:` et spécifiée dans le paramètre) est une URL SAS en écriture seule, c'est pourquoi vous devez inclure ce commutateur. Notez qu'une URL SAS en écriture seule ne vous empêchera pas d'utiliser l'Explorateur de stockage Azure pour afficher la liste des fichiers PST téléchargés vers l'emplacement de stockage Azure.<br/> | `/Y` <br/> |
    
 Voici un exemple de la syntaxe de l’outil AzCopy.exe qui reprend les valeurs réelles de chaque paramètre :
     
@@ -151,48 +151,48 @@ Voici un exemple de la syntaxe de l’outil AzCopy.exe qui reprend les valeurs r
 Une fois la commande exécutée, les messages d’état affichent la progression du processus de chargement des fichiers PST. Un message d’état final affiche le nombre total de fichiers qui ont été téléchargés. 
 
 > [!TIP]
-> Une fois que vous exécutez la commande AzCopy.exe de correctement et vérifiez que tous les paramètres sont corrects, enregistrer une copie de la syntaxe de ligne de commande pour le même fichier (sécurisée) où vous avez copié les informations obtenues à l’étape 1. Ensuite, vous pouvez copier et coller cette commande dans une invite de commandes chaque fois que vous souhaitez exécuter l’outil AzCopy.exe pour télécharger des fichiers PST vers Office 365. La seule valeur, vous devrez peut-être modifier sont ceux de la `/Source:` paramètre. Cela dépend du répertoire source où se trouvent les fichiers PST.
+> Une fois que vous avez exécuté la commande AzCopy. exe et vérifié que tous les paramètres sont corrects, enregistrez une copie de la syntaxe de la ligne de commande dans le même fichier (sécurisé) où vous avez copié les informations obtenues à l'étape 1. Ensuite, vous pouvez copier et coller cette commande dans une invite de commandes chaque fois que vous souhaitez exécuter l'outil AzCopy. exe pour télécharger des fichiers PST vers Office 365. La seule valeur que vous devrez peut-être modifier sont celles du `/Source:` paramètre. Cela dépend du répertoire source où se trouvent les fichiers PST.
 
-## <a name="optional-step-3-view-a-list-of-the-pst-files-uploaded-to-office-365"></a>(Facultatif) Étape 3 : Afficher une liste des fichiers PST téléchargé vers Office 365
+## <a name="optional-step-3-view-a-list-of-the-pst-files-uploaded-to-office-365"></a>Module Étape 3: afficher la liste des fichiers PST téléchargés vers Office 365
 
-Comme une étape facultative, vous pouvez installer et utiliser Microsoft Azure stockage Explorer (qui est un outil gratuit, open source) pour afficher la liste des fichiers PST que vous avez téléchargée à l’objet blob Azure. Il existe deux raisons à cela :
+Au cours d'une étape facultative, vous pouvez installer et utiliser l'Explorateur de stockage Microsoft Azure (il s'agit d'un outil gratuit open source) pour afficher la liste des fichiers PST que vous avez téléchargés vers le BLOB Azure. Il existe deux bonnes raisons pour cela:
   
-- Vérifiez que les fichiers PST à partir du dossier partagé ou le serveur de fichiers dans votre organisation ont été correctement téléchargés vers l’objet blob Azure.
+- Vérifiez que les fichiers PST du dossier partagé ou du serveur de fichiers de votre organisation ont bien été téléchargés vers le BLOB Azure.
     
-- Vérifiez le nom de fichier (et le chemin d’accès sous-dossier si vous avez inclus un) pour chaque fichier PST téléchargé vers l’objet blob Azure. Il s’agit très utile lorsque vous créez le fichier PST mappage du fichier à l’étape suivante, car vous devez spécifier le chemin d’accès du dossier et le nom de fichier pour chaque fichier PST. Vérification de ces noms permettent de réduire les erreurs dans votre fichier de mappage PST.
+- Vérifiez le nom de fichier (et le chemin d'accès du sous-dossier si vous en avez inclus un) pour chaque fichier PST téléchargé vers le BLOB Azure. Cette opération est très utile lorsque vous créez le fichier de mappage PST à l'étape suivante, car vous devez indiquer le chemin d'accès et le nom de fichier du dossier pour chaque fichier PST. La vérification de ces noms permet de réduire les erreurs potentielles dans votre fichier de mappage PST.
     
-Microsoft Azure stockage Explorer est en mode Aperçu.
+L'Explorateur de stockage Microsoft Azure est en mode aperçu.
   
 > [!IMPORTANT]
-> Vous ne pouvez pas utiliser l’Explorateur de solutions de stockage Azure pour télécharger ou modifier des fichiers PST. La seule méthode prise en charge pour l’importation des fichiers PST vers Office 365 consiste à utiliser AzCopy. En outre, vous ne pouvez supprimer les fichiers PST que vous avez téléchargée à l’objet blob Azure. Si vous essayez de supprimer un fichier PST, vous recevrez une erreur n’ayant ne pas les autorisations requises. Notez que tous les fichiers PST sont automatiquement supprimés de votre zone de stockage Azure. S’il y a aucune tâche d’importation en cours, puis tous les fichiers PST dans le conteneur **ingestiondata** n’est supprimés de 30 jours après que la dernière tâche d’importation a été créée.
+> Vous ne pouvez pas utiliser l'Explorateur de stockage Azure pour télécharger ou modifier des fichiers PST. La seule méthode prise en charge pour l'importation de fichiers PST dans Office 365 consiste à utiliser AzCopy. De plus, vous ne pouvez pas supprimer les fichiers PST que vous avez téléchargés vers le BLOB Azure. Si vous essayez de supprimer un fichier PST, vous recevrez un message d'erreur indiquant que les autorisations requises ne sont pas nécessaires. Notez que tous les fichiers PST sont automatiquement supprimés de votre zone de stockage Azure. S'il n'y a pas de tâches d'importation en cours, tous les fichiers PST du conteneur **ingestiondata** sont supprimés 30 jours après la création de la tâche d'importation la plus récente.
   
-Pour installer l’Explorateur de solutions de stockage Azure et se connecter à votre zone de stockage Azure :
+Pour installer Azure Storage Explorer et vous connecter à votre zone de stockage Azure:
   
 1. Téléchargez et installez l' [outil Microsoft Azure Storage Explorer](https://go.microsoft.com/fwlink/p/?LinkId=544842).
     
-2. Démarrez l’Explorateur de stockage Microsoft Azure, cliquez sur **Comptes de stockage** dans le volet gauche, puis cliquez sur **se connecter au stockage Azure**.
+2. Démarrez l'Explorateur de stockage Microsoft Azure, cliquez avec le bouton droit sur **comptes de stockage** dans le volet de gauche, puis cliquez sur **se connecter à Azure Storage**.
     
-    ![Comptes de stockage d’avec le bouton droit, puis cliquez sur se connecter au stockage Azure](media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
+    ![Cliquez avec le bouton droit sur comptes de stockage, puis cliquez sur se connecter à Azure Storage](media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
   
-3. Cliquez sur **utiliser une chaîne de connexion ou URI de signature (sa) accès partagé** , cliquez sur **suivant**.
+3. Cliquez sur **utiliser une chaîne de connexion ou un URI SAS (Shared Access signature)** , puis cliquez sur **suivant**.
     
-4. Cliquez sur **utiliser un URI SAS**, collez l’URL SAS que vous avez obtenu à l’étape 1 dans la zone sous **URI**, puis cliquez sur **suivant**.
+4. Cliquez sur **utiliser un URI SAS**, collez l'URL SAS que vous avez obtenue à l'étape 1 dans la zone sous **URI**, puis cliquez sur **suivant**.
     
-5. Dans la page **Résumé de connexion** , vous pouvez passez en revue les informations de connexion, puis cliquez sur **se connecter**.
+5. Sur la page **Résumé de connexion** , vous pouvez passer en revue les informations de connexion, puis cliquer sur **se connecter**.
     
-    Le conteneur **ingestiondata** est ouvert ; Il contient les fichiers PST que vous avez téléchargé à l’étape 2. Le conteneur **ingestiondata** se trouve sous les **Comptes de stockage** \> **(Services SAS-Attached)** \> **Conteneurs Blob**. 
+    Le conteneur **ingestiondata** est ouvert; Il contient les fichiers PST que vous avez téléchargés à l'étape 2. Le **conteneur ingestiondata** se trouve sous les **conteneurs BLOB** **de comptes** \> \> de **stockage** (services SAS). 
     
     ![L’explorateur de stockage Azure affiche la liste des fichiers PST que vous avez téléchargés](media/12376fed-13a5-4a09-8fe6-e819e011b334.png)
   
-6. Lorsque vous avez terminé à l’aide de l’Explorateur de stockage Microsoft Azure, avec le bouton droit **ingestiondata**, puis cliquez sur **Détacher** de se déconnecter de votre zone de stockage Azure. Sinon, vous recevrez une erreur la prochaine fois que vous essayez de joindre. 
+6. Lorsque vous avez terminé d'utiliser l'Explorateur de stockage Microsoft Azure, cliquez avec le bouton droit sur **ingestiondata**, puis cliquez sur détacher pour vous déconnecter de votre zone de stockage Azure. **** Dans le cas contraire, vous recevrez une erreur lors de la prochaine tentative de rattachement. 
     
     ![Cliquez avec le bouton droit de la souris sur ingestion, puis cliquez sur Détacher pour vous déconnecter de votre zone de stockage Azure](media/1e8e5e95-4215-4ce4-a13d-ab5f826a0510.png)
   
-## <a name="step-4-create-the-pst-import-mapping-file"></a>Étape 4 : Créer le fichier de mappage d’importation PST
+## <a name="step-4-create-the-pst-import-mapping-file"></a>Étape 4: créer le fichier de mappage d'importation PST
 
-Une fois que les fichiers PST ont été téléchargés à l’emplacement de stockage Azure pour votre organisation Office 365, l’étape suivante consiste à créer une virgule séparés fichier CSV (valeurs) qui spécifie les boîtes aux lettres utilisateur les fichiers PST sera importés à. Vous allez envoyer ce fichier CSV dans l’étape suivante lorsque vous créez une tâche d’importation PST.
+Une fois les fichiers PST téléchargés vers l'emplacement de stockage Azure de votre organisation Office 365, l'étape suivante consiste à créer un fichier de valeurs séparées par des virgules (CSV) qui spécifie les boîtes aux lettres utilisateur dans lesquelles les fichiers PST seront importés. Vous allez envoyer ce fichier CSV à l'étape suivante lors de la création d'une tâche d'importation PST.
   
-1. [Téléchargez une copie du fichier de mappage importation PST](https://go.microsoft.com/fwlink/p/?LinkId=544717).
+1. [Téléchargez une copie du fichier de mappage d'importation PST](https://go.microsoft.com/fwlink/p/?LinkId=544717).
     
 2. Ouvrez ou enregistrez le fichier CSV sur votre ordinateur local. L’exemple suivant montre le contenu d’un fichier de mappage d’importation PST (ouvert dans le Bloc-notes). Utilisez plutôt Microsoft Excel pour modifier le fichier CSV.
 
@@ -210,145 +210,145 @@ Une fois que les fichiers PST ont été téléchargés à l’emplacement de sto
     Exchange,PSTFiles,zrinkam.pst,zrinkam@contoso.onmicrosoft.com,FALSE,,,,,
     Exchange,PSTFiles,zrinkam_archive.pst,zrinkam@contoso.onmicrosoft.com,TRUE,/ImportedPst,,,,
     ```
-    La première ligne, ou ligne d’en-tête du fichier CSV répertorie les paramètres qui servira par le service d’importation PST pour importer les fichiers PST vers les boîtes aux lettres. Nom de chaque paramètre est séparée par une virgule. Chaque ligne sous la ligne d’en-tête représente les valeurs des paramètres d’importation d’un fichier PST dans une boîte aux lettres spécifique. Vous aurez besoin une ligne pour chaque fichier PST que vous souhaitez importer dans une boîte aux lettres de l’utilisateur. Veillez à remplacer les données d’espace réservé dans le fichier de mappage de vos données réelles.
+    La première ligne, ou ligne d'en-tête, du fichier CSV répertorie les paramètres qui seront utilisés par le service d'importation PST pour importer les fichiers PST dans les boîtes aux lettres utilisateur. Chaque nom de paramètre est séparé par une virgule. Chaque ligne sous la ligne d'en-tête représente les valeurs de paramètre pour l'importation d'un fichier PST dans une boîte aux lettres spécifique. Vous aurez besoin d'une ligne pour chaque fichier PST que vous souhaitez importer dans une boîte aux lettres utilisateur. Veillez à remplacer les données d'espace réservé dans le fichier de mappage par vos données réelles.
 
-   **Remarque :** Ne modifiez rien dans la ligne d’en-tête, y compris les paramètres de SharePoint ; elles seront ignorées pendant le processus d’importation PST. 
+   **Remarque:** Ne modifiez rien dans la ligne d'en-tête, y compris les paramètres SharePoint; ils seront ignorés pendant le processus d'importation PST. 
 
  3. Utilisez les informations du tableau suivant pour remplir le fichier CSV avec les informations requises.
 
 
     |**Paramètre**|**Description**|**Exemple**|
     |:-----|:-----|:-----|
-    | `Workload` <br/> |Spécifie le service Office 365 pour les données seront importées. Pour importer des fichiers PST aux boîtes aux lettres de l’utilisateur, utilisez `Exchange`.<br/> | `Exchange` <br/> |
-    | `FilePath` <br/> |Spécifie l’emplacement du dossier à l’emplacement de stockage Azure que que vous avez téléchargé les fichiers PST à l’étape 2.  <br/> Si vous n’avez pas inclure un nom facultatif sous-dossier dans l’URL SAS dans le `/Dest:` paramètre à l’étape 2, laissez ce paramètre vide dans le fichier CSV. Si vous avez inclus un nom du sous-dossier, spécifier dans ce paramètre (voir le deuxième exemple). La valeur pour ce paramètre respecte la casse.<br/> Les deux cas, ** n’incluez pas « ingestiondata » dans la valeur de la `FilePath` paramètre.  <br/><br/> **Important :** Le cas pour le nom de chemin d’accès du fichier doit être identique à la casse utilisé si vous avez inclus un nom facultatif sous-dossier dans l’URL SAS dans le `/Dest:` paramètre à l’étape 2. Par exemple, si vous avez utilisé `PSTFiles` pour le sous-dossier de nom à l’étape 2 et ensuite utiliser `pstfiles` dans les `FilePath` paramètre dans le fichier CSV, l’importation du fichier PST échouera. Veillez à utiliser la même casse dans les deux instances.<br/> |(Laisser vide)  <br/> Ou  <br/>  `PSTFiles` <br/> |
-    | `Name` <br/> |Spécifie le nom du fichier qui sera importé dans la boîte aux lettres de l’utilisateur. La valeur pour ce paramètre respecte la casse.<br/> <br/>**Important :** Le cas pour le nom de fichier PST dans le fichier CSV doit être la même que le fichier .pst qui a été téléchargé vers l’emplacement de stockage Azure à l’étape 2. Par exemple, si vous utilisez `annb.pst` dans les `Name` paramètre dans le fichier CSV, mais le nom du fichier PST réel est `AnnB.pst`, l’importation de ce fichier PST échouera. N’oubliez pas que le nom du fichier .pst dans le fichier CSV utilise la même casse que le fichier PST.<br/> | `annb.pst` <br/> |
-    | `Mailbox` <br/> |Spécifie l’adresse de messagerie de la boîte aux lettres qui est importé dans le fichier PST. Notez que vous ne pouvez pas spécifier un dossier public, car le Service d’importation PST ne prend pas en charge l’importation de fichiers PST aux dossiers publics.<br/> Pour importer un fichier PST dans une boîte aux lettres inactive, vous devez spécifier la boîte aux lettres GUID pour ce paramètre. Pour obtenir ce GUID, exécutez la commande PowerShell suivante dans Exchange Online : « Get-Mailbox <identity of inactive mailbox> - InactiveMailboxOnly | Guid FL` <br/> <br/>**Note:** In some cases, you might have multiple mailboxes with the same email address, where one mailbox is an active mailbox and the other mailbox is in a soft-deleted (or inactive) state. In these situations, you have to specify the mailbox GUID to uniquely identify the mailbox to import the PST file to. To obtain this GUID for active mailboxes, run the following PowerShell command:  `Get-Mailbox<identity of active mailbox> | Guid FL`. To obtain the GUID for soft-deleted (or inactive) mailboxes, run this command  `Get-Mailbox <identity of soft-deleted or inactive mailbox> - SoftDeletedMailbox | Guid FL ».  <br/> | `annb@contoso.onmicrosoft.com` <br/> Ou  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
-    | `IsArchive` <br/> | Indique si le fichier PST doit être importé dans la boîte aux lettres d’archivage de l’utilisateur. Il existe deux options :<br/><br/>**FALSE** - importe le fichier PST à la boîte aux lettres principale de l’utilisateur.  <br/> **TRUE** - importe le fichier PST boîte aux lettres d’archive de l’utilisateur. Cela suppose que [boîte aux lettres de l’utilisateur archive est activé](enable-archive-mailboxes.md).<br/><br/>Si vous définissez ce paramètre sur `TRUE` et boîte aux lettres de l’utilisateur archive n’est pas activé, l’importation de cet utilisateur échouera. Notez que si une importation échoue pour un utilisateur (étant donné que leur archivage n’est pas activé et que cette propriété est définie sur `TRUE`), les autres utilisateurs de la tâche d’importation ne sont pas affectées.<br/>  Si vous laissez ce paramètre vide, le fichier est importé dans la boîte aux lettres principale de l’utilisateur.  <br/> <br/>**Remarque :** Pour importer un fichier PST dans une boîte aux lettres d’archive en nuage pour un utilisateur de boîte aux lettres principale est locale, il suffit de spécifier `TRUE` pour ce paramètre et spécifiez l’adresse de messagerie pour la boîte aux lettres locale de l’utilisateur pour le `Mailbox` paramètre.  <br/> | `FALSE` <br/> Ou  <br/>  `TRUE` <br/> |
-    | `TargetRootFolder` <br/> | Spécifie le dossier de boîte aux lettres importé dans le fichier PST.  <br/>  Si vous laissez ce paramètre vide, le fichier PST est importé dans un nouveau dossier nommé **importés** situé à la racine de la boîte aux lettres (le même niveau que le dossier boîte de réception et les autres dossiers de boîte aux lettres par défaut).  <br/>  Si vous spécifiez `/`, éléments dans le fichier PST seront importées directement dans le dossier boîte de réception de l’utilisateur.  <br/><br/>  Si vous spécifiez `/<foldername>`, éléments dans le fichier PST seront importées dans un dossier nommé * \<foldername\> * . Par exemple, si vous utilisez `/ImportedPst`, éléments est importées dans un dossier nommé **ImportedPst**. Ce dossier sera situé dans la boîte aux lettres de l’utilisateur au même niveau que le dossier boîte de réception.<br/><br/> **Conseil :** Pensez à exécuter plusieurs lots de test pour tester ce paramètre afin de déterminer le meilleur emplacement de dossier pour importer des fichiers pst.  <br/> |(Laisser vide)  <br/> Ou  <br/>  `/` <br/> Ou  <br/>  `/ImportedPst` <br/> |
-    | `ContentCodePage` <br/> |Ce paramètre facultatif spécifie une valeur numérique pour la page de codes à utiliser pour l’importation des fichiers PST dans le format de fichier ANSI. Ce paramètre est utilisé pour l’importation des fichiers PST d’organisations chinois, japonais et coréen (CJC), car ces langues utilisent généralement un jeu de caractères codés sur deux octets (DBCS) pour le codage de caractères. Si ce paramètre n’est pas utilisé pour importer des fichiers PST pour les langues qui utilisent DBCS pour les noms de dossier de boîte aux lettres, les noms de dossiers sont souvent tronqués après leur importation.<br/><br/> Pour obtenir la liste de valeurs prises en charge à utiliser pour ce paramètre, voir [Identificateurs de Page de Code](https://go.microsoft.com/fwlink/p/?LinkId=328514).  <br/> <br/>**Remarque :** Comme indiqué, ce paramètre est facultatif et n’avez pas à inclure dans le fichier CSV. Ou vous pouvez inclure et laissez la valeur vide pour une ou plusieurs lignes.<br/> |(Laisser vide)  <br/> Ou  <br/>  `932`(qui est l’identificateur de page de codes pour le japonais ANSI/OEM)  <br/> |
+    | `Workload` <br/> |Spécifie le service Office 365 vers lequel les données seront importées. Pour importer des fichiers PST dans des boîtes aux lettres `Exchange`utilisateur, utilisez.<br/> | `Exchange` <br/> |
+    | `FilePath` <br/> |Spécifie l'emplacement du dossier dans l'emplacement de stockage Azure dans lequel vous avez téléchargé les fichiers PST à l'étape 2.  <br/> Si vous n'avez pas inclus de nom de sous-dossier facultatif dans l' `/Dest:` URL SAS dans le paramètre à l'étape 2, laissez ce paramètre vide dans le fichier CSV. Si vous avez inclus un nom de sous-dossier, spécifiez-le dans ce paramètre (voir le deuxième exemple). La valeur de ce paramètre est sensible à la casse.<br/> Dans les deux cas, n'incluez *pas* «ingestiondata» dans `FilePath` la valeur du paramètre.  <br/><br/> **Important:** Le nom du chemin d'accès du fichier doit être identique à celui que vous avez utilisé si vous avez inclus un nom de sous-dossier facultatif dans l' `/Dest:` URL SAS dans le paramètre de l'étape 2. Par exemple, si vous avez `PSTFiles` utilisé pour le nom du sous-dossier à l'étape `pstfiles` 2, `FilePath` puis que vous utilisez dans le paramètre du fichier CSV, l'importation du fichier PST échouera. Veillez à utiliser la même casse dans les deux instances.<br/> |(Laisser vide)  <br/> Ou  <br/>  `PSTFiles` <br/> |
+    | `Name` <br/> |Spécifie le nom du fichier PST qui sera importé dans la boîte aux lettres de l'utilisateur. La valeur de ce paramètre est sensible à la casse.<br/> <br/>**Important:** Le nom du fichier PST dans le fichier CSV doit être le même que celui du fichier PST qui a été téléchargé vers l'emplacement de stockage Azure à l'étape 2. Par exemple, si vous utilisez `annb.pst` le `Name` paramètre dans le fichier CSV, mais que le nom du fichier PST réel est `AnnB.pst`, l'importation de ce fichier PST échoue. Assurez-vous que le nom du fichier PST dans le fichier CSV utilise la même casse que le fichier PST réel.<br/> | `annb.pst` <br/> |
+    | `Mailbox` <br/> |Spécifie l'adresse de messagerie de la boîte aux lettres dans laquelle le fichier PST sera importé. Notez que vous ne pouvez pas spécifier un dossier public, car le service d'importation PST ne prend pas en charge l'importation de fichiers PST dans des dossiers publics.<br/> Pour importer un fichier PST dans une boîte aux lettres inactive, vous devez spécifier le GUID de la boîte aux lettres de ce paramètre. Pour obtenir ce GUID, exécutez la commande PowerShell suivante dans Exchange Online:`Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> <br/>**Remarque:** Dans certains cas, vous pouvez avoir plusieurs boîtes aux lettres avec la même adresse de messagerie, où une boîte aux lettres est une boîte aux lettres active et l'autre est dans un état supprimé (ou inactif). Dans ce cas, vous devez spécifier le GUID de boîte aux lettres pour identifier de manière unique la boîte aux lettres dans laquelle importer le fichier PST. Pour obtenir ce GUID pour les boîtes aux lettres actives, exécutez la commande PowerShell `Get-Mailbox <identity of active mailbox> | FL Guid`suivante:. Pour obtenir le GUID des boîtes aux lettres supprimées (ou inactives), exécutez cette `Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`commande.<br/> | `annb@contoso.onmicrosoft.com` <br/> Ou  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
+    | `IsArchive` <br/> | Indique si le fichier PST doit être importé dans la boîte aux lettres d’archivage de l’utilisateur. Il existe deux options :<br/><br/>**False** -importe le fichier PST dans la boîte aux lettres principale de l'utilisateur.  <br/> **True** : importe le fichier PST dans la boîte aux lettres d'archivage de l'utilisateur. Cela suppose que la [boîte aux lettres d'archivage de l'utilisateur est activée](enable-archive-mailboxes.md).<br/><br/>Si vous définissez ce paramètre sur `TRUE` et que la boîte aux lettres d'archivage de l'utilisateur n'est pas activée, l'importation de cet utilisateur échoue. Notez que si une importation échoue pour un utilisateur (car son archive n'est pas activée et que cette propriété `TRUE`est définie sur), les autres utilisateurs de la tâche d'importation ne seront pas affectés.<br/>  Si vous laissez ce paramètre vide, le fichier PST est importé dans la boîte aux lettres principale de l'utilisateur.  <br/> <br/>**Remarque:** Pour importer un fichier PST dans une boîte aux lettres d'archivage informatique pour un utilisateur dont la boîte aux lettres principale est locale `TRUE` , spécifiez simplement pour ce paramètre et spécifiez l'adresse de messagerie de la boîte aux `Mailbox` lettres locale de l'utilisateur pour le paramètre.  <br/> | `FALSE` <br/> Ou  <br/>  `TRUE` <br/> |
+    | `TargetRootFolder` <br/> | Spécifie le dossier de boîte aux lettres dans lequel le fichier PST est importé.  <br/>  Si vous laissez ce paramètre vide, le fichier PST sera importé dans un nouveau dossier nommé **** importés au niveau racine de la boîte aux lettres (le même niveau que le dossier boîte de réception et les autres dossiers de boîte aux lettres par défaut).  <br/>  Si vous spécifiez `/`, les éléments du fichier PST seront importés directement dans le dossier boîte de réception de l'utilisateur.  <br/><br/>  Si vous spécifiez `/<foldername>`, les éléments du fichier PST seront importés dans un dossier nommé * \<NomDossier\> * . Par exemple, si vous utilisez `/ImportedPst`, les éléments seraient importés dans un dossier nommé **ImportedPst**. Ce dossier sera situé dans la boîte aux lettres de l'utilisateur au même niveau que le dossier boîte de réception.<br/><br/> **Conseil:** EnVisagez d'exécuter quelques lots de test pour tester ce paramètre afin de déterminer le meilleur emplacement de dossier dans lequel importer les fichiers PST.  <br/> |(Laisser vide)  <br/> Ou  <br/>  `/` <br/> Ou  <br/>  `/ImportedPst` <br/> |
+    | `ContentCodePage` <br/> |Ce paramètre facultatif spécifie une valeur numérique pour la page de codes à utiliser pour l'importation des fichiers PST au format de fichier ANSI. Ce paramètre est utilisé pour l'importation de fichiers PST à partir d'organisations chinoises, japonaises et coréennes, car ces langues utilisent généralement un jeu de caractères DBCS (Double Byte Character Set) pour le codage des caractères. Si ce paramètre n'est pas utilisé pour importer des fichiers PST pour les langues qui utilisent des caractères DBCS pour les noms de dossier de boîte aux lettres, les noms de dossier sont souvent tronqués après leur importation.<br/><br/> Pour obtenir la liste des valeurs prises en charge à utiliser pour ce paramètre, consultez la rubrique identificateurs de la [page de code](https://go.microsoft.com/fwlink/p/?LinkId=328514).  <br/> <br/>**Remarque:** Comme indiqué précédemment, il s'agit d'un paramètre facultatif et vous n'avez pas besoin de l'inclure dans le fichier CSV. Vous pouvez également l'inclure et laisser la valeur vide pour une ou plusieurs lignes.<br/> |(Laisser vide)  <br/> Ou  <br/>  `932`(il s'agit de l'identificateur de page de code pour le japonais ANSI/OEM)  <br/> |
     | `SPFileContainer` <br/> |Pour l’importation PST, laissez ce paramètre vide.   <br/> |Non applicable  <br/> |
     | `SPManifestContainer` <br/> |Pour l’importation PST, laissez ce paramètre vide.   <br/> |Non applicable  <br/> |
     | `SPSiteUrl` <br/> |Pour l’importation PST, laissez ce paramètre vide.   <br/> |Non applicable  <br/> |
 
 ## <a name="step-5-create-a-pst-import-job-in-office-365"></a>Étape 5 : Créer une tâche d’importation PST dans Office 365
 
-L’étape suivante consiste à créer le travail d’importation PST dans le service d’importation dans Office 365. Comme expliqué précédemment, vous envoyez le fichier de mappage d’importation PST que vous avez créé à l’étape 4. Après avoir créé le nouveau projet, Office 365 analyse les données dans les fichiers PST et vous donne la possibilité de filtrer les données qui obtient effectivement importées pour les boîtes aux lettres spécifiés dans le fichier de mappage d’importation PST (voir [l’étape 6](#step-6-filter-data-and-start-the-pst-import-job)).
+L'étape suivante consiste à créer le travail d'importation PST dans le service d'importation dans Office 365. Comme expliqué précédemment, vous allez envoyer le fichier de mappage d'importation PST que vous avez créé à l'étape 4. Une fois le nouveau travail créé, Office 365 analyse les données des fichiers PST, puis vous donne la possibilité de filtrer les données importées dans les boîtes aux lettres spécifiées dans le fichier de mappage d'importation PST (Voir l' [étape 6](#step-6-filter-data-and-start-the-pst-import-job)).
   
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous en utilisant les informations d’identification pour un compte d’administrateur de votre organisation Office 365. 
+1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l'aide des informations d'identification d'un compte administrateur de votre organisation Office 365. 
     
-2. Dans le volet gauche de la sécurité &amp; centre de conformité, cliquez sur **la gouvernance des données** , puis cliquez sur **Importer**.
+2. Dans le volet gauche du centre de &amp; sécurité conformité, cliquez sur **gouvernance des données** , puis sur **Importer**.
     
-3. Dans la page **Importer** , cliquez sur ![ajouter une icône](media/ITPro-EAC-AddIcon.gif) **nouvelle tâche d’importation**.
+3. Sur la page **Importer** , cliquez ![sur Ajouter](media/ITPro-EAC-AddIcon.gif) une icône **nouveau travail d'importation**.
     
-    **Remarque :** Vous devez disposer des autorisations appropriées pour accéder à la page **Importer** dans la sécurité &amp; centre de conformité pour créer une nouvelle tâche d’importation. Consultez la section **avant de commencer** , pour plus d’informations. 
+    **Remarque:** Vous devez disposer des autorisations appropriées pour accéder à la page d' **importation** dans le centre &amp; de sécurité conformité afin de créer une nouvelle tâche d'importation. Pour plus d'informations, rePortez-vous à la section **avant de commencer** . 
     
-4. Tapez un nom pour la tâche d’importation PST, puis cliquez sur **suivant**. Utilisez les lettres minuscules, chiffres, des traits d’union et des traits de soulignement. Impossible d’utiliser des lettres majuscules ou inclure des espaces dans le nom.
+4. Tapez un nom pour le travail d'importation PST, puis cliquez sur **suivant**. Utilisez des lettres minuscules, des chiffres, des tirets et des traits de soulignement. Vous ne pouvez pas utiliser des lettres majuscules ou inclure des espaces dans le nom.
     
-5. Sur le **vous souhaitez télécharger ou envoyer des données ?** de page, cliquez sur **télécharger vos données** , puis sur **suivant**.
+5. Sur la page **voulez-vous télécharger ou expédier les données?** , cliquez sur **télécharger vos données** , puis sur **suivant**.
     
-    ![Cliquez sur Télécharger vos données pour créer un téléchargement réseau tâche d’importation](media/e59f9dc3-ccde-44ff-ac38-c4e39d76ae85.png)
+    ![Cliquez sur charger vos données pour créer un travail d'importation de chargement réseau.](media/e59f9dc3-ccde-44ff-ac38-c4e39d76ae85.png)
   
-6. À l’étape 4 dans la page **Importer des données** , cliquez sur le **terminé téléchargement mes fichiers** et **je ont accès au fichier de mappage** de cases à cocher, puis cliquez sur **suivant**.
+6. À l'étape 4 de la page **importer des données** , cliquez sur les cases à cocher j'ai effectué le **téléchargement des fichiers** et j'ai **accès au fichier de mappage** , puis cliquez sur **suivant**.
     
-    ![Cliquez sur les deux cases à cocher à l’étape 4](media/9f2427e8-3af2-4e27-95e6-a9f08430d3d8.png)
+    ![Cliquez sur les deux cases à cocher à l'étape 4](media/9f2427e8-3af2-4e27-95e6-a9f08430d3d8.png)
   
-7. Dans la page **Sélectionner le fichier de mappage** , cliquez sur **Sélectionner le fichier de mappage** pour envoyer le fichier de mappage d’importation PST que vous avez créé à l’étape 4. 
+7. Dans la page **Sélectionner le fichier de mappage** , cliquez sur **Sélectionner un fichier de mappage** pour soumettre le fichier de mappage d'importation PST que vous avez créé à l'étape 4. 
     
-    ![Cliquez sur Sélectionnez un mappage un fichier pour envoyer le fichier CSV que vous avez créé pour la tâche d’importation](media/d30b1d73-80bb-491e-a642-a21673d06889.png)
+    ![Cliquez sur Sélectionner le fichier de mappage pour envoyer le fichier CSV que vous avez créé pour le travail d'importation.](media/d30b1d73-80bb-491e-a642-a21673d06889.png)
   
-8. Après le nom de la CSV fichier s’affiche sous le **nom de fichier de mappage**, cliquez sur **Valider** pour vérifier votre fichier CSV pour les erreurs. 
+8. Une fois le nom du fichier CSV affiché sous **nom du fichier de mappage**, cliquez sur **valider** pour vérifier que votre fichier CSV contient des erreurs. 
     
-    ![Cliquez sur Valider pour vérifier le fichier CSV pour les erreurs](media/4680999d-5538-4059-b878-2736a5445037.png)
+    ![Cliquez sur valider pour vérifier que le fichier CSV contient des erreurs.](media/4680999d-5538-4059-b878-2736a5445037.png)
   
-    Le fichier CSV doit être validés pour créer une tâche d’importation PST. Notez que le nom de fichier est devenu vert après sa validation avec succès. Si la validation échoue, cliquez sur le lien **Afficher le journal** . Un rapport d’erreurs de validation est ouvert, un message d’erreur pour chaque ligne dans le fichier qui a échoué. 
+    Le fichier CSV doit être validé correctement pour créer une tâche d'importation PST. Remarque le nom de fichier est changé en vert une fois qu'il a été validé. Si la validation échoue, cliquez sur le lien **afficher le journal** . Un rapport d'erreur de validation est ouvert, avec un message d'erreur pour chaque ligne du fichier ayant échoué. 
     
-9. Une fois le fichier de mappage PST est validé avec succès, lire les termes et conditions, puis cliquez sur la case à cocher.
+9. Une fois le fichier de mappage PST correctement validé, lisez le document conditions générales, puis cliquez sur la case à cocher.
     
-10. Cliquez sur **Enregistrer** pour soumettre le travail, puis cliquez sur **Fermer** une fois que le travail est créé avec succès. 
+10. Cliquez sur **Enregistrer** pour soumettre le travail, puis cliquez sur **Fermer** une fois le travail créé. 
     
-    Une page d’état flottant s’affiche, avec un état **d’analyse en cours** et la nouvelle tâche d’importation est affichée dans la liste dans la page **Importer** . 
+    Une page de menu volant d'État s'affiche avec l'état **analyse en cours** et la nouvelle tâche d'importation s'affiche dans la liste sur la page d' **importation** . 
     
-11. Cliquez sur **Actualiser** ![icône Actualiser](media/O365-MDM-Policy-RefreshIcon.gif) pour mettre à jour les informations d’état qui s’affiche dans la colonne **état** . Lorsque l’analyse est terminée et les données sont prêtes à importer, l’état est modifiée pour **l’analyse terminée**.
+11. Cliquez **** ![sur Actualiser](media/O365-MDM-Policy-RefreshIcon.gif) l'icône Actualiser pour mettre à jour les informations d'État affichées dans la colonne **État** . Lorsque l'analyse est terminée et que les données sont prêtes à être importées, l'État devient **analyse terminée**.
     
-    Vous pouvez cliquer sur la tâche pour afficher la page état flottant, qui contient des informations plus détaillées sur la tâche d’importation telles que l’état de chaque fichier PST répertorié dans le fichier de mappage d’importation.
+    Vous pouvez cliquer sur le travail d'importation pour afficher la page de menu volant d'État, qui contient des informations plus détaillées sur la tâche d'importation, telles que l'état de chaque fichier PST figurant dans le fichier de mappage.
  
-## <a name="step-6-filter-data-and-start-the-pst-import-job"></a>Étape 6 : Filtrer les données et démarrer le travail d’importation PST
+## <a name="step-6-filter-data-and-start-the-pst-import-job"></a>Étape 6: filtrer les données et démarrer le travail d'importation PST
 
-Après avoir créé la tâche d’importation à l’étape 5, Office 365 analyse les données dans les fichiers PST (de façon sécurisée) en identifiant l’âge des éléments et les différents types de messages inclus dans les fichiers PST. Lorsque l’analyse est terminée et que les données sont prêtes à importer, vous avez la possibilité d’importer toutes les données contenues dans les fichiers PST, ou vous pouvez ajuster les données importées en définissant des filtres qui déterminent quelles données obtient importées.
+Après avoir créé le travail d'importation à l'étape 5, Office 365 analyse les données dans les fichiers PST (de manière sûre et sécurisée) en identifiant l'âge des éléments et les différents types de messages inclus dans les fichiers PST. Lorsque l'analyse est terminée et que les données sont prêtes à être importées, vous avez la possibilité d'importer toutes les données contenues dans les fichiers PST ou vous pouvez réduire les données importées en définissant des filtres qui contrôlent les données à importer.
   
-1. Dans la page **Importer** dans la sécurité &amp; centre de conformité, cliquez sur **prêt à importer dans Office 365** pour le travail d’importation que vous avez créé à l’étape 5. 
+1. Sur la page d' **importation** dans le &amp; Centre de sécurité conformité, cliquez sur **prêt pour importer vers Office 365** pour le travail d'importation que vous avez créé à l'étape 5. 
     
-    ![Cliquez sur prêt à importer dans Office 365 en regard de la tâche d’importation que vous avez créé](media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
+    ![Cliquez sur prêt pour importer vers Office 365 en regard de la tâche d'importation que vous avez créée.](media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
   
-    Une page brusque s’affiche avec des informations sur les fichiers PST et autres informations sur la tâche d’importation.
+    Une page de survol s'affiche avec des informations sur les fichiers PST et d'autres informations sur la tâche d'importation.
     
-2. Dans la page mobile, cliquez sur **Importer à Office 365**.
+2. Sur la page de menu volant, cliquez sur **importer vers Office 365**.
     
-    La page **Filtrer vos données** s’affiche. Il contient les détails de données résultant de l’analyse effectuée sur les fichiers PST par Office 365, notamment des informations sur l’âge des données. À ce stade, vous avez la possibilité pour filtrer les données qui seront importées ou importer toutes les données étant. 
+    La page **filtrer vos données** s'affiche. Elle contient les données fournies par l'analyse effectuée sur les fichiers PST par Office 365, y compris des informations sur l'ancienneté des données. À ce stade, vous avez la possibilité de filtrer les données qui seront importées ou d'importer toutes les données telles quelles. 
     
-    ![Vous pouvez ajuster les données dans les fichiers PST ou importer des](media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
+    ![Vous pouvez découper les données dans les fichiers PST ou les importer tout](media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
   
 3. Effectuez l'une des opérations suivantes :
     
-    r. pour découper les données que vous importez, cliquez sur **Oui, je veux filtrer avant l’importation**.
+    a. pour découper les données que vous importez, cliquez sur **Oui, je veux les filtrer avant l'importation**.
     
-    Pour des instructions détaillées sur le filtrage des données dans les fichiers PST et avant de démarrer la tâche d’importation, voir [filtrer les données lors de l’importation des fichiers PST vers Office 365](filter-data-when-importing-pst-files.md).
+    Pour obtenir des instructions détaillées détaillées sur le filtrage des données dans les fichiers PST et sur le démarrage de la tâche d'importation, voir [filtrer des données lors de l'importation de fichiers PST dans Office 365](filter-data-when-importing-pst-files.md).
     
     Ou
     
-    b. pour importer toutes les données dans les fichiers PST, cliquez sur **non, je veux tout, importer** et cliquez sur **suivant**.
+    b. pour importer toutes les données des fichiers PST, cliquez sur **non, je veux tout importer,** puis cliquez sur **suivant**.
     
-4. Si vous choisissez d’importer toutes les données, cliquez sur **Importer des données** pour démarrer la tâche d’importation. 
+4. Si vous avez choisi d'importer toutes les données, cliquez sur **importer des données** pour démarrer le travail d'importation. 
     
-    L’état de la tâche d’importation est un affichage dans la page **Importer** . Cliquez sur ![icône Actualiser](media/O365-MDM-Policy-RefreshIcon.gif) **Actualiser** pour mettre à jour les informations d’état qui s’affiche dans la colonne **état** . Cliquez sur la tâche d’importation pour afficher la page état flottant, qui affiche les informations d’état sur chaque fichier PST à importer. 
+    L'état de la tâche d'importation est affiché sur la page d' **importation** . Cliquez ![sur Actualiser l'icône](media/O365-MDM-Policy-RefreshIcon.gif) **Actualiser** pour mettre à jour les informations d'État affichées dans la colonne **État** . Cliquez sur le travail d'importation pour afficher la page de menu volant d'État, qui affiche des informations sur l'état de chaque fichier PST importé. 
 
-## <a name="how-the-import-process-works"></a>Comment fonctionne le processus d’importation
+## <a name="how-the-import-process-works"></a>Fonctionnement du processus d'importation
   
-Vous pouvez utiliser l’option de téléchargement de réseau et le service Office 365 importer pour l’importation en bloc des fichiers PST aux boîtes aux lettres de l’utilisateur. Téléchargement du réseau signifie que vous téléchargez les fichiers PST une zone de stockage temporaire dans le nuage de Microsoft. Le service Office 365 importation copie ensuite les fichiers PST à partir de la zone de stockage pour les boîtes aux lettres cible.
+Vous pouvez utiliser l'option de chargement réseau et le service d'importation Office 365 pour importer en bloc des fichiers PST dans des boîtes aux lettres utilisateur. Le chargement réseau signifie que vous téléchargez les fichiers PST dans une zone de stockage temporaire dans le Cloud de Microsoft. Le service d'importation Office 365 copie les fichiers PST de la zone de stockage vers les boîtes aux lettres des utilisateurs cibles.
   
-Voici une illustration et une description du processus de téléchargement de réseau pour importer des fichiers PST aux boîtes aux lettres dans Office 365.
+Voici une illustration et une description du processus de chargement réseau pour importer des fichiers PST dans des boîtes aux lettres dans Office 365.
   
-![Télécharger des flux de travail du réseau de processus pour importer des fichiers PST vers Office 365](media/9e05a19e-1e7a-4f1f-82df-9118f51588c4.png)
+![Flux de travail du processus de chargement réseau pour importer des fichiers PST vers Office 365](media/9e05a19e-1e7a-4f1f-82df-9118f51588c4.png)
   
-1. **Télécharger le fichier PST importer outil et l’emplacement de stockage Azure clé Private** - la première étape consiste à télécharger l’outil de ligne de commande AzCopy Azure et une touche d’accès utilisé pour télécharger les fichiers PST vers un emplacement de stockage Azure dans le nuage de Microsoft. Vous obtenez à partir de la page **Importer** de sécurité Office 365 &amp; centre de conformité. La clé (appelé une clé de signature (sa) d’un accès sécurisé, vous donne les autorisations nécessaires pour télécharger des fichiers PST à privé et sécuriser l’emplacement de stockage Azure. Cette clé d’accès est unique à votre organisation et permet d’empêcher tout accès non autorisé à vos fichiers PST après leur téléchargement vers le nuage Microsoft. Notez que l’importation de fichiers PST vers Office 365 ne nécessite pas votre organisation à un abonnement Azure distinct. 
+1. **Téléchargez l'outil d'importation PST et la clé vers l'emplacement de stockage privé Azure** : la première étape consiste à télécharger l'outil de ligne de commande Azure AzCopy et à utiliser une clé d'accès pour télécharger les fichiers PST vers un emplacement de stockage Azure dans le Cloud Microsoft. Vous les obtenez à partir de la page d' **importation** dans le &amp; Centre de sécurité conformité Office 365. La clé (appelée clé de signature d'accès sécurisé (SAS) vous fournit les autorisations nécessaires pour télécharger des fichiers PST vers un emplacement de stockage Azure sécurisé et privé. Cette clé d'accès est propre à votre organisation et empêche tout accès non autorisé à vos fichiers PST une fois qu'ils sont téléchargés vers le Cloud Microsoft. Notez que l'importation de fichiers PST dans Office 365 ne nécessite pas que votre organisation dispose d'un abonnement Azure distinct. 
     
-2. **Télécharger les fichiers PST à l’emplacement de stockage Azure** - l’étape suivante consiste à utiliser l’outil AzCopy.exe (téléchargé à l’étape 1) pour télécharger et stocker vos fichiers PST dans un emplacement de stockage Azure qui réside dans le même centre de données Microsoft régional où Office 365 organisation se trouve. Pour les télécharger, les fichiers PST que vous souhaitez importer vers Office 365 doivent se trouver dans un partage de fichiers ou un serveur de fichiers dans votre organisation.
+2. **Chargement des fichiers PST dans l'emplacement de stockage Azure** : l'étape suivante consiste à utiliser l'outil AzCopy. exe (téléchargé à l'étape 1) pour télécharger et stocker vos fichiers PST dans un emplacement de stockage Azure qui réside dans le même centre de Microsoft régional où votre Office 365 Organisation. Pour les télécharger, les fichiers PST que vous souhaitez importer vers Office 365 doivent être situés dans un partage de fichiers ou un serveur de fichiers de votre organisation.
     
-    Notez qu’il existe une étape facultative que vous pouvez effectuer pour afficher la liste des fichiers PST après leur téléchargement à l’emplacement de stockage Azure.
+    Notez qu'il existe une étape facultative que vous pouvez effectuer pour afficher la liste des fichiers PST une fois qu'ils sont téléchargés vers l'emplacement de stockage Azure.
     
-3. **Créer un fichier de mappage d’importation PST** - une fois les fichiers PST ont été téléchargés à l’emplacement de stockage Azure, l’étape suivante consiste à créer un fichier (CSV) de valeurs séparées par des virgules qui spécifie les boîtes aux lettres utilisateur les fichiers PST sera importées dans un fichier PST peut être  importées dans la boîte aux lettres principale d’un utilisateur ou de leur boîte aux lettres d’archive. Le service Office 365 importer utilisera les informations dans le fichier CSV pour importer les fichiers PST.
+3. **Créer un fichier de mappage d'importation PST** -une fois que les fichiers PST ont été téléchargés vers l'emplacement de stockage Azure, l'étape suivante consiste à créer un fichier de valeurs séparées par des virgules (CSV) qui spécifie les boîtes aux lettres d'utilisateur dans lesquelles les fichiers PST seront importés, Notez qu'un fichier PST peut être  importé dans la boîte aux lettres principale d'un utilisateur ou dans sa boîte aux lettres d'archivage. Le service d'importation Office 365 utilisera les informations du fichier CSV pour importer les fichiers PST.
     
-4. **Tâche d’importation de créer un fichier PST** - l’étape suivante consiste à créer une tâche d’importation PST dans la page **Importer** dans la sécurité &amp; centre de conformité et soumettre le fichier de mappage d’importation PST créé à l’étape précédente. Après avoir créé la tâche d’importation, Office 365 analyse les données dans les fichiers PST et vous donne la possibilité de définir des filtres qui déterminent quelles données obtient réellement importées pour les boîtes aux lettres spécifiés dans le fichier de mappage d’importation PST. 
+4. **Créer une tâche d'importation PST** : l'étape suivante consiste à créer une tâche d'importation PST **** sur la page d'importation &amp; dans le centre de sécurité et d'envoyer le fichier de mappage d'importation PST créé à l'étape précédente. Après avoir créé la tâche d'importation, Office 365 analyse les données dans les fichiers PST, puis vous offre la possibilité de définir des filtres qui contrôlent les données importées dans les boîtes aux lettres spécifiées dans le fichier de mappage d'importation PST. 
     
-5. **Filtre les données PST qui seront importées dans des boîtes aux lettres** - une fois la tâche d’importation est créée et lancée, Office 365 analyse les données dans les fichiers PST (en toute sécurité) en identifiant l’âge des éléments et les différents types de messages inclus dans les fichiers PST . Lorsque l’analyse est terminée et que les données sont prêtes à importer, vous avez la possibilité d’importer toutes les données contenues dans les fichiers PST, ou vous pouvez ajuster les données importées en définissant des filtres qui déterminent quelles données obtient importées.
+5. **Filtrer les données PST qui seront importées dans des boîtes aux lettres** -après la création et le démarrage de la tâche d'importation, Office 365 analyse les données dans les fichiers PST (en toute sécurité et en toute sécurité) en identifiant l'âge des éléments et les différents types de messages inclus dans les fichiers PST. . Lorsque l'analyse est terminée et que les données sont prêtes à être importées, vous avez la possibilité d'importer toutes les données contenues dans les fichiers PST ou vous pouvez réduire les données importées en définissant des filtres qui contrôlent les données à importer.
     
-6. **Démarrer le travail d’importation PST** - après le démarrage de la tâche d’importation, Office 365 utilise les informations dans le fichier de mappage d’importation PST pour importer les fichiers PST à partir de l’emplacement de stockage Azure annuel aux boîtes aux lettres de l’utilisateur. Informations de statut de la tâche d’importation (y compris les informations sur chaque fichier PST à importer) s’affiche dans la page **Importer** dans la sécurité &amp; centre de conformité. Lorsque la tâche d’importation est terminée, le statut de la tâche est défini sur **terminé**.
+6. **Démarrer le travail d'importation PST** : une fois la tâche d'importation démarrée, Office 365 utilise les informations du fichier de mappage d'importation PST pour importer les fichiers PST à partir de l'emplacement de stockage Azure vers les boîtes aux lettres utilisateur. Les informations d'État relatives à la tâche d'importation (y compris les informations relatives à chaque fichier PST **** importé) sont affichées dans &amp; la page d'importation dans le centre de sécurité et de conformité. Une fois le travail d'importation terminé, l'état du travail est défini sur **terminé**.
   
 ## <a name="more-information"></a>Plus d’informations
 
-- Pourquoi importer des fichiers PST vers Office 365 ?
+- Pourquoi importer des fichiers PST vers Office 365?
     
-  - C’est un bon moyen pour importer les données de messagerie archivage de votre organisation vers Office 365.
+  - Il s'agit d'un moyen efficace pour importer les données de messagerie d'archivage de votre organisation vers Office 365.
     
   - L’utilisateur peut accéder aux données à partir de n’importe quel périphérique, car elles sont stockées dans le cloud.
     
-  - Il permet de gérer les besoins de conformité de votre organisation en vous permettant d’appliquer des fonctionnalités de conformité d’Office 365 pour les données à partir des fichiers PST que vous avez importé. Cela inclut :
+  - Elle permet de répondre aux besoins de conformité de votre organisation en vous permettant d'appliquer les fonctionnalités de conformité d'Office 365 aux données des fichiers PST que vous avez importés. Cela inclut:
     
-  - Activation des [boîtes aux lettres d’archive](enable-archive-mailboxes.md) et [Développer automatiquement l’archivage](enable-unlimited-archiving.md) pour permettre aux utilisateurs d’espace de stockage de boîte aux lettres supplémentaire pour les données que vous avez importé. 
+  - Activation des [boîtes aux lettres](enable-archive-mailboxes.md) d'archivage et de [l'archivage à extension automatique](enable-unlimited-archiving.md) pour fournir aux utilisateurs un espace de stockage supplémentaire pour les boîtes aux lettres pour stocker les données que vous avez importées. 
     
-  - Placer les boîtes aux lettres en [Litige](https://go.microsoft.com/fwlink/?linkid=856286) pour conserver les données que vous avez importé. 
+  - Placer des boîtes aux lettres en [conservation pour litige](https://go.microsoft.com/fwlink/?linkid=856286) afin de conserver les données que vous avez importées. 
     
-  - À l’aide Microsoft [eDiscovery outils](search-for-content.md) pour rechercher les données que vous avez importé. 
+  - Utilisation des [Outils eDiscovery](search-for-content.md) de Microsoft pour rechercher les données que vous avez importées. 
     
-  - À l’aide de [stratégies de rétention Office 365](retention-policies.md) pour contrôler la durée de conservation des données que vous avez importé et l’action à entreprendre après expiration de la période de rétention. 
+  - Utilisation des stratégies de rétention d' [Office 365](retention-policies.md) pour contrôler la durée pendant laquelle les données que vous avez importées seront conservées, ainsi que les mesures à prendre après l'expiration de la période de rétention. 
     
-  - Recherche dans [journal d’audit Office 365](search-the-audit-log-in-security-and-compliance.md) pour les événements liés à la boîte aux lettres qui affectent les données que vous avez importé. 
+  - Recherche dans le [Journal d'audit Office 365](search-the-audit-log-in-security-and-compliance.md) pour les événements liés aux boîtes aux lettres qui affectent les données que vous avez importées. 
     
-  - Importation de données de [boîtes aux lettres inactives](create-and-manage-inactive-mailboxes.md) pour archiver des données à des fins de conformité aux. 
+  - Importation de données dans des [boîtes aux lettres](create-and-manage-inactive-mailboxes.md) inactives pour archiver des données à des fins de conformité. 
     
-  - À l’aide de [stratégies de protection contre la perte de données](data-loss-prevention-policies.md) pour empêcher les données sensibles d’une fuite en dehors de votre organisation. 
+  - Utilisation des stratégies de protection contre la [perte de données](data-loss-prevention-policies.md) pour empêcher les données sensibles de fuir en dehors de votre organisation. 
   
-- Voici un exemple de l’URL de Signature de l’accès partagé (sa) est obtenue à l’étape 1. Cet exemple montre comment contient également la syntaxe de la commande que vous exécutez dans l’outil AzCopy.exe pour télécharger des fichiers PST dans Office 365. N’oubliez pas de prendre des précautions pour protéger l’URL SAS comme vous le feriez protéger les mots de passe ou d’autres informations relatives à la sécurité.
+- Voici un exemple de l'URL de signature d'accès partagé (SAS) obtenue à l'étape 1. Cet exemple contient également la syntaxe de la commande exécutée dans l'outil AzCopy. exe pour charger des fichiers PST dans Office 365. Veillez à prendre des précautions pour protéger l'URL SAS de la même manière que vous protégeriez les mots de passe ou d'autres informations relatives à la sécurité.
 
     ```
     SAS URL: https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D

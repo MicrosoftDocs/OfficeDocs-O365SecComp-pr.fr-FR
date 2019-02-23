@@ -1,7 +1,7 @@
 ---
 title: Rechercher et débloquer les messages mis en quarantaine en tant qu'administrateur
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 6/16/2017
 ms.audience: ITPro
@@ -12,19 +12,21 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
+ms.collection:
+- M365-security-compliance
 description: Cette rubrique explique comment les administrateurs Exchange Online et Exchange Online Protection (EOP) peuvent rechercher, récupérer et signaler les messages mis en quarantaine dans le Centre d'administration Exchange (CAE).
-ms.openlocfilehash: a8c450471d2fe627346b5bea8db50b91d67ffd3f
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 9c3501b79c6a733fd7b6239a26b7e7cfa69f3edc
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003273"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219034"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Rechercher et débloquer les messages mis en quarantaine en tant qu'administrateur
 
 Cette rubrique explique comment les administrateurs Exchange Online et Exchange Online Protection (EOP) peuvent rechercher, récupérer et signaler les messages mis en quarantaine dans le Centre d'administration Exchange (CAE). Office 365 envoie les messages en quarantaine soit parce qu'ils ont été identifiés comme courrier indésirable, soit parce qu'ils tombaient sous le coup d'une règle de transport. 
   
-Utilisez la sécurité &amp; centre de conformité au lieu du CAE pour effectuer l’une de ces tâches, ainsi qu’afficher et travailler avec des messages qui ont été mis en quarantaine parce qu’ils contiennent des programmes malveillants. Pour plus d’informations, voir les [messages électroniques de mise en quarantaine dans Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
+Utilisez le centre &amp; de sécurité conformité au lieu du centre d'administration Exchange pour effectuer l'une de ces tâches, ainsi que pour afficher et utiliser les messages qui ont été envoyés en quarantaine, car ils contiennent des programmes malveillants. Pour plus d'informations, consultez la rubrique [mise en quarantaine des messages électroniques dans Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
   
 Les messages mis en quarantaine sont répertoriés sur la page de **mise en quarantaine** dans le CAE. Par défaut, les messages sont triés du plus récent au plus ancien sur la base du champ **REÇU**. Les valeurs **EXPÉDITEUR**, **OBJET** et **EXPIRE** sont également indiquées pour chaque message. Vous pouvez ordonner les messages en fonction des valeurs de l'un ou l'autre de ces champs en cliquant sur leur en-tête. Pour inverser l'ordre, cliquez sur l'en-tête de colonne une seconde fois. La page de **mise en quarantaine** affiche un maximum de 500 messages. 
   
@@ -37,7 +39,7 @@ Vous pouvez consulter la liste de tous les messages mis en quarantaine, ou reche
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 <a name="sectionSection0"> </a>
 
-- Vous devez avoir les autorisations avant de pouvoir effectuer cette procédure, ou procédures. Pour voir les autorisations dont vous avez besoin, consultez l’entrée « Quarantaine » dans la rubrique [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
+- Des autorisations doivent vous être attribuées avant de pouvoir effectuer cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée «quarantaine» dans la rubrique [autorisations des fonctionnalités dans Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
     
 - Vous pouvez diffuser ou signaler plusieurs messages à la fois sur la page de **mise en quarantaine**. Vous pouvez également créer un script Windows PowerShell à distance pour accomplir cette tâche. Utilisez la cmdlet [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) pour rechercher des messages et la cmdlet [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) pour les diffuser. 
     

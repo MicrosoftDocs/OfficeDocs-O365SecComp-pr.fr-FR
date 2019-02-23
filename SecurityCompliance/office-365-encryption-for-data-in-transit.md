@@ -5,18 +5,18 @@ author: kccross
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Résumé: explique brièvement comment Microsoft chiffre les données en transit.'
-ms.openlocfilehash: fcb93bdda792a174c00bc5b2fc2153faeb049465
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: 987e923e242b47b07ad1ef65e5c7ce791c27d5bd
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "29664150"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217504"
 ---
 # <a name="office-365-encryption-for-data-in-transit"></a>Chiffrement Office 365 pour les données en transit
 
@@ -34,7 +34,7 @@ Les certificats publics sont émis par Microsoft IT SSL à l'aide de SSLAdmin, u
 Tous les détails de l'implémentation, tels que la version de TLS utilisée, si le protocole FS (Forward Secrecy) est activé, l'ordre des suites de chiffrement, etc., sont disponibles publiquement. Pour en savoir plus, vous pouvez utiliser un site Web tiers, tel que Qualys (www.ssllabs.com). Vous trouverez ci-dessous les liens vers les pages de test automatisées de Qualys qui affichent des informations sur les services suivants:
 - [Portail Office 365](https://www.ssllabs.com/ssltest/analyze.html?d=portal.office.com&hideResults=on)
 - [Exchange Online](https://www.ssllabs.com/ssltest/analyze.html?d=outlook.office365.com&hideResults=on)
-- [SharePoint Online](https://www.ssllabs.com/ssltest/analyze.html?d=microsoft-my.sharepoint.com&hideResults=on)
+- [SharePoint Online](https://www.ssllabs.com/ssltest/analyze.html?d=microsoft-my.sharepoint.com&hideResults=on)
 - [Skype entreprise (SIP)](https://www.ssllabs.com/ssltest/analyze.html?d=sipdir.online.lync.com)
 - [Skype entreprise (Web)](https://www.ssllabs.com/ssltest/analyze.html?d=webdir.online.lync.com&hideResults=on)
 - [Exchange Online Protection](https://ssl-tools.net/mailservers/microsoft-com.mail.protection.outlook.com)

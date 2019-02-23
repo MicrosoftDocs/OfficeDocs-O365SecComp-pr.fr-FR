@@ -6,28 +6,28 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
-description: 'Résumé : Configurer un site d’équipe SharePoint Online isolé du reste de l’organisation dans votre environnement de développement/test Office 365.'
-ms.openlocfilehash: 0aa5e6e47344134b1e103fb287f627afd2808af6
-ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
+description: "Résumé: conFigurez un site d'équipe SharePoint Online isolé du reste de l'organisation dans votre environnement de développement/test Office 365."
+ms.openlocfilehash: a8a02c10f799b136b299801a3636820e4f64e087
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25345816"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217134"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Site d’équipe SharePoint Online isolé dans votre environnement de développement/test
 
- **Résumé :** Configurer un site d’équipe SharePoint Online isolé du reste de l’organisation dans votre environnement de développement/test Office 365.
+ **Résumé:** ConFigurez un site d'équipe SharePoint Online isolé du reste de l'organisation dans votre environnement de développement/test Office 365.
   
-Sites d’équipe SharePoint Online dans Office 365 sont des emplacements pour la collaboration à l’aide d’une bibliothèque de documents commune, un bloc-notes OneNote et d’autres services. Dans de nombreux cas, vous souhaitez accéder à l’échelle et collaboration entre les départements ou organisations. Toutefois, dans certains cas, vous souhaitez contrôler étroitement les accès et les autorisations pour la collaboration entre un petit groupe de personnes.
+Les sites d'équipe SharePoint Online dans Office 365 sont des emplacements de collaboration à l'aide d'une bibliothèque de documents commune, d'un bloc-notes OneNote et d'autres services. Dans de nombreux cas, vous avez besoin d'un accès étendu et de la collaboration entre les services ou les organisations. Toutefois, dans certains cas, vous souhaitez contrôler étroitement l'accès et les autorisations de collaboration entre un petit groupe de personnes.
   
-Accès aux sites d’équipe SharePoint Online et les utilisateurs peuvent faire est contrôlé par les groupes SharePoint et les niveaux d’autorisation. Par défaut, les sites SharePoint Online disposent des trois niveaux d’accès :
+L'accès aux sites d'équipe SharePoint Online et ce que les utilisateurs peuvent faire sont contrôlés par les groupes SharePoint et les niveaux d'autorisation. Par défaut, les sites SharePoint Online disposent de trois niveaux d'accès:
   
 - Les **membres** peuvent afficher, créer et modifier des ressources sur le site.
     
@@ -35,41 +35,41 @@ Accès aux sites d’équipe SharePoint Online et les utilisateurs peuvent faire
     
 - Les **Visiteurs** peuvent uniquement afficher les ressources du site.
     
-Étapes de cet article vous aide à la configuration d’un site d’équipe SharePoint Online isolé pour un projet de recherche secrète nommé ProjectX. Les exigences d’accès sont les suivants :
+Cet article décrit la configuration d'un site d'équipe SharePoint Online isolé pour un projet de recherche secrète nommé ProjectX. Les conditions d'accès sont les suivantes:
   
 - Seuls les membres du projet peuvent accéder au site et à son contenu (documents, bloc-notes OneNote, pages), avec des niveaux d’autorisation SharePoint pour éditer et afficher contrôlés via l’appartenance au groupe.
     
 - Seuls le créateur du site et les membres d’un groupe d’administrateurs du site peuvent effectuer l’administration du site, y compris la modification des autorisations au niveau du site.
     
-Il existe trois phases de configuration d’un site d’équipe SharePoint Online isolé dans votre environnement de développement/test Office 365 :
+Il existe trois phases de configuration d'un site d'équipe SharePoint Online isolé dans votre environnement de développement/test Office 365:
   
 1. Créez l’environnement de développement/test Office 365.
     
 2. Créez les utilisateurs et groupes pour ProjectX.
     
-3. Créer un nouveau site d’équipe ProjectX SharePoint Online et isoler.
+3. Créez un site d'équipe SharePoint Online ProjectX et isolez-le.
     
 > [!TIP]
 > Cliquez [ici](http://aka.ms/catlgstack) pour afficher le plan de tous les articles de l’ensemble de guides de laboratoire de test de Microsoft Cloud.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Phase 1 : Créer votre environnement de développement/test Office 365 en mode léger ou pour entreprise simulée
 
-Si vous souhaitez simplement créer un site d’équipe SharePoint Online isolé dans une solution légère avec la configuration minimale requise, suivez les instructions en phases 2 et 3 de [l’environnement de développement/test Office 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
+Si vous souhaitez simplement créer un site d'équipe SharePoint Online isolé avec la configuration minimale requise, suivez les instructions des phases 2 et 3 de l'environnement de [développement/test Office 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
   
-Si vous souhaitez créer un site d’équipe SharePoint Online isolé dans une configuration enterprise simulé, suivez les instructions de [synchronisation d’annuaire pour votre environnement de développement/test Office 365](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment).
+Si vous souhaitez créer un site d'équipe SharePoint Online isolé dans une configuration d'entreprise simulée, suivez les instructions de [DirSync pour votre environnement de développement/test Office 365](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment).
   
 > [!NOTE]
 > La création d’un site SharePoint Online isolé ne requiert pas l’environnement de développement/test en entreprise simulée, qui utilise un intranet simulé connecté à Internet et la synchronisation d’annuaire pour une forêt Windows Server AD. Il est proposé comme option dans cet article afin que vous puissiez tester un site SharePoint Online isolé et faire des essais dans un environnement qui représente une organisation classique. 
   
-## <a name="phase-2-create-user-accounts-and-access-groups"></a>Phase 2 : Créer des comptes d’utilisateurs et groupes d’accès
+## <a name="phase-2-create-user-accounts-and-access-groups"></a>Phase 2: créer des comptes d'utilisateurs et des groupes d'accès
 
-Utilisez les instructions de [se connecter à Office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx) pour se connecter à votre abonnement à Office 365 piste avec votre compte d’administrateur global à partir de :
+Utilisez les instructions de [connexion à office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx) pour vous connecter à votre abonnement final Office 365 avec votre compte d'administrateur général à partir de:
   
 - Votre ordinateur (pour l’environnement de développement/test Office 365 léger).
     
 - La machine virtuelle CLIENT1 (pour l’environnement de développement/test Office 365 d’entreprise simulé).
     
-Pour créer les nouveaux groupes d’accès pour le site d’équipe ProjectX SharePoint Online, exécutez les commandes suivantes depuis l’invite de Windows Azure Active Directory Module pour Windows PowerShell :
+Pour créer les nouveaux groupes d'accès pour le site d'équipe SharePoint Online ProjectX, exécutez les commandes suivantes à partir de l'invite du module Windows Azure Active Directory pour Windows PowerShell:
   
 ```
 $groupName="ProjectX-Members"
@@ -84,7 +84,7 @@ New-MsolGroup -DisplayName $groupName -Description $groupDesc
 ```
 
 > [!TIP]
-> Cliquez [ici](https://gallery.technet.microsoft.com/PowerShell-commands-for-an-b2608df1) pour un fichier texte qui contient toutes les commandes PowerShell dans cet article.
+> Cliquez [ici](https://gallery.technet.microsoft.com/PowerShell-commands-for-an-b2608df1) pour obtenir un fichier texte qui contient toutes les commandes PowerShell de cet article.
   
 Entrez le nom de votre organisation (exemple : contosotoycompany) et le code de pays à deux caractères pour indiquer votre emplacement, puis exécutez les commandes suivantes à partir de l’invite Module Windows Azure Active Directory pour Windows PowerShell :
   
@@ -116,7 +116,7 @@ New-MsolUser -DisplayName "Development VP" -FirstName Development -LastName VP -
 
 À partir de la zone de la commande **New-MsolUser**, notez le mot de passe généré pour le compte VP du développement et enregistrez-le dans un emplacement sécurisé.
   
-Ensuite, pour ajouter les nouveaux comptes pour les nouveaux groupes d’accès, exécutez ces commandes PowerShell depuis l’invite de Windows Azure Active Directory Module pour Windows PowerShell :
+Ensuite, pour ajouter les nouveaux comptes aux nouveaux groupes d'accès, exécutez les commandes PowerShell suivantes à partir de l'invite du module Windows Azure Active Directory pour Windows PowerShell:
   
 ```
 $grpName="ProjectX-Members"
@@ -133,33 +133,33 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 Résultats :
   
-- Le groupe d’accès ProjectX : les membres contenant les comptes Designer conduire et enquêteur prospect
+- Le groupe d'accès ProjectX-membres contient les comptes d'utilisateur concepteur de prospects et chercheur de prospect
     
-- Le groupe d’accès ProjectX-Admins contient le compte d’administrateur global de votre abonnement d’évaluation
+- Le groupe d'accès ProjectX-administrateurs contient le compte d'administrateur général pour votre abonnement à la version d'évaluation
     
-- Le groupe d’accès ProjectX-visionneuses contient le compte d’utilisateur relatives au vice-président de développement
+- Le groupe d'accès ProjectX-visualisers contient le compte d'utilisateur VP du développement.
     
-La figure 1 montre les groupes d’accès et de leur appartenance.
+La figure 1 présente les groupes d'accès et leur appartenance.
   
 **Figure 1**
 
 ![Groupes Office 365 et leur appartenance pour un site de groupe SharePoint Online isolé](media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
   
-## <a name="phase-3-create-a-new-projectx-sharepoint-online-team-site-and-isolate-it"></a>Phase 3 : Créer un nouveau site d’équipe ProjectX SharePoint Online et isoler
+## <a name="phase-3-create-a-new-projectx-sharepoint-online-team-site-and-isolate-it"></a>Phase 3: créer un nouveau site d'équipe ProjectX SharePoint Online et l'isoler
 
-Pour créer un site d’équipe SharePoint Online pour ProjectX, procédez comme suit :
+Pour créer un site d'équipe SharePoint Online pour ProjectX, procédez comme suit:
   
-1. Via un navigateur soit sur votre ordinateur local (configuration léger) ou sur CLIENT1 (configuration entreprise simulé), connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) à l’aide de votre compte d’administrateur global.
+1. À l'aide d'un navigateur sur votre ordinateur local (configuration légère) ou sur CLIENT1 (configuration d'entreprise simulée), connectez-vous au portail[https://portal.office.com](https://portal.office.com)Office 365 () à l'aide de votre compte d'administrateur général.
     
 2. Dans la liste des vignettes, cliquez sur **SharePoint**.
     
 3. Sous le nouvel onglet SharePoint de votre navigateur, cliquez sur **+ Créer un site**.
     
-4. Dans **nom du site d’équipe**, tapez **ProjectX**. Dans **les paramètres de confidentialité**, sélectionnez **privé - uniquement les membres peuvent accéder à ce site**.
+4. Dans **nom du site d'équipe**, tapez **ProjectX**. Dans **paramètres de confidentialité**, sélectionnez **privé-seuls les membres peuvent accéder à ce site**.
     
 5. Dans **Description du site d’équipe**, saisissez **Site SharePoint pour ProjectX**, puis cliquez sur **Suivant**.
     
-6. **Qui vous voulez ajouter**? volet, cliquez sur **Terminer**.
+6. Sur le **qui voulez-vous ajouter**? , cliquez sur **Terminer**.
     
 7. Dans le nouvel onglet **ProjectX-Accueil** de votre navigateur, dans la barre d’outils, cliquez sur l’icône des paramètres, puis sur **Autorisations du site**.
     
@@ -196,11 +196,11 @@ Pour créer un site d’équipe SharePoint Online pour ProjectX, procédez comme
     
 Voici les résultats de la configuration des autorisations :
   
-- Le groupe SharePoint des membres ProjectX contient uniquement le groupe d’accès ProjectX-membres (qui contienne uniquement les comptes d’utilisateur Designer conduire et enquêteur conduire) et le groupe ProjectX (qui contient le compte d’utilisateur administrateur global uniquement).
+- Le groupe SharePoint membres de ProjectX contient uniquement le groupe d'accès ProjectX membres (qui contient uniquement les comptes d'utilisateur de concepteur de prospect et de chercheur de Prospect) et le groupe ProjectX (qui contient uniquement le compte d'utilisateur d'administrateur général).
     
-- Groupe SharePoint propriétaires de ProjectX contient uniquement le groupe d’accès Admins-ProjectX (qui contient le compte d’utilisateur administrateur global uniquement).
+- Le groupe SharePoint propriétaires ProjectX contient uniquement le groupe d'accès ProjectX-administrateurs (qui contient uniquement le compte d'utilisateur de l'administrateur général).
     
-- Le groupe SharePoint des visiteurs ProjectX contient uniquement le groupe d’accès-visionneuses ProjectX (qui contient le compte d’utilisateur relatives au vice-président développement uniquement).
+- Le groupe SharePoint visiteurs ProjectX contient uniquement le groupe d'accès ProjectX-affiche (qui contient uniquement le compte d'utilisateur VP du développement).
     
 - Les membres ne peuvent pas modifier les autorisations au niveau du site (cette opération peut être uniquement effectuée par les membres du groupe ProjectX-Administrateurs).
     
@@ -212,23 +212,23 @@ La figure 2 présente les groupes SharePoint et leur appartenance.
 
 ![Groupes SharePoint Online et leur appartenance pour un site de groupe SharePoint Online isolé](media/595abff4-64f9-49de-a37a-c70c6856936b.png)
   
-Maintenant nous allons démontrer access en utilisant le compte d’utilisateur Designer conduire :
+Nous allons maintenant illustrer l'accès à l'aide du compte d'utilisateur du Concepteur sénior:
   
 1. Fermez l’onglet **ProjectX-Accueil** dans votre navigateur, puis cliquez sur l’onglet **Accueil Microsoft Office** du navigateur.
     
 2. Cliquez sur le nom de votre administrateur général, puis cliquez sur **Déconnexion**.
     
-3. Connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) en utilisant le nom du compte Designer conduire et son mot de passe.
+3. Connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) à l'aide du nom de compte du concepteur de prospect et de son mot de passe.
     
 4. Dans la liste des vignettes, cliquez sur **SharePoint**.
     
-5. Dans l’onglet nouveau **SharePoint** dans votre navigateur, tapez **ProjectX** dans la zone Rechercher, activer la recherche, puis cliquez sur le site d’équipe **ProjectX** . Vous devriez voir un nouvel onglet dans votre navigateur pour le site d’équipe ProjectX.
+5. Dans le nouvel onglet **SharePoint** de votre navigateur, tapez **ProjectX** dans la zone de recherche, activez la recherche, puis cliquez sur le site d'équipe **ProjectX** . Un nouvel onglet doit apparaître dans votre navigateur pour le site d'équipe ProjectX.
     
 6. Cliquez sur l’icône des paramètres. Notez qu’il n’existe pas d’option pour **Autorisations du site**. Cela est correct puisque seuls les membres du groupe ProjectX-Administrateurs peuvent modifier les autorisations sur le site
     
 7. Ouvrez le bloc-notes ou un éditeur de texte de votre choix.
     
-8. Copiez l’URL du site d’équipe ProjectX et le coller dans une nouvelle ligne dans le bloc-notes ou votre éditeur de texte.
+8. Copiez l'URL du site d'équipe ProjectX et collez-la dans une nouvelle ligne dans le bloc-notes ou dans votre éditeur de texte.
     
 9. Dans le nouvel onglet **ProjectX-Accueil** de votre navigateur, cliquez sur **Documents**.
     
@@ -240,20 +240,20 @@ Maintenant nous allons démontrer access en utilisant le compte d’utilisateur 
     
 13. Cliquez sur les points de suspension du document **Document.docx**, puis sur **Obtenir un lien**.
     
-14. Copiez l’URL dans la boîte de dialogue **partager 'Document.docx'** et coller dans une nouvelle ligne dans le bloc-notes ou votre éditeur de texte, puis fermez la boîte de dialogue **partager « Document.docx »** .
+14. Copiez l'URL dans la boîte de dialogue **partager «document. docx»** et collez-la dans une nouvelle ligne dans le bloc-notes ou dans votre éditeur de texte, puis fermez la boîte de dialogue **«document. docx» de partage** .
     
 15. Fermez les onglets **ProjectX-Documents** et **SharePoint** dans votre navigateur, puis cliquez sur l’onglet **Accueil Microsoft Office**.
     
 16. Cliquez sur le nom **Responsable de la conception**, puis cliquez sur **Déconnexion**.
 
     
-Maintenant nous allons démontrer access à l’aide du compte d’utilisateur relatives au vice-président de développement :
+Nous allons maintenant illustrer l'accès à l'aide du compte d'utilisateur VP du développement:
   
-1. Connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) en utilisant le nom du compte VP de développement et son mot de passe.
+1. Connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) à l'aide du nom de compte VP du développement et de son mot de passe.
     
 2. Dans la liste des vignettes, cliquez sur **SharePoint**.
     
-3. Dans l’onglet nouveau **SharePoint** dans votre navigateur, tapez **ProjectX** dans la zone Rechercher, activer la recherche, puis cliquez sur le site d’équipe **ProjectX** . Vous devriez voir un nouvel onglet dans votre navigateur pour le site d’équipe ProjectX.
+3. Dans le nouvel onglet **SharePoint** de votre navigateur, tapez **ProjectX** dans la zone de recherche, activez la recherche, puis cliquez sur le site d'équipe **ProjectX** . Un nouvel onglet doit apparaître dans votre navigateur pour le site d'équipe ProjectX.
     
 4. Cliquez sur **Documents**, puis sur le fichier **Document.docx**.
     
@@ -264,9 +264,9 @@ Maintenant nous allons démontrer access à l’aide du compte d’utilisateur r
 7. Cliquez sur l’onglet **Accueil Microsoft Office**, sur le nom **VP du développement**, puis sur **Déconnexion**.
 
     
-Maintenant nous allons démontrer access avec un compte d’utilisateur qui n’a aucune autorisation :
+À présent, nous allons illustrer l'accès à un compte d'utilisateur qui n'a pas d'autorisations:
   
-1. Connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) en utilisant le nom du compte utilisateur 3 et son mot de passe.
+1. Connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) à l'aide du nom de compte utilisateur 3 et de son mot de passe.
     
 2. Dans la liste des vignettes, cliquez sur **SharePoint**.
     
@@ -281,7 +281,7 @@ Maintenant nous allons démontrer access avec un compte d’utilisateur qui n’
 7. Fermez l’onglet **SharePoint** de votre navigateur, cliquez sur l’onglet **Accueil Microsoft Office**, sur le nom **Utilisateur 3**, puis sur **Déconnexion**.
 
     
-Votre site SharePoint Online isolé est maintenant prête pour votre expérimentation supplémentaire.
+Votre site SharePoint Online isolé est maintenant prêt pour votre expérience supplémentaire.
   
 ## <a name="next-step"></a>Étape suivante
 

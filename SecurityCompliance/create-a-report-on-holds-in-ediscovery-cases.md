@@ -1,42 +1,42 @@
 ---
-title: Créer un rapport sur les suspensions dans les cas eDiscovery dans Office 365
+title: Création d'un rapport sur les suspensions dans les cas de découverte électronique dans Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 9/11/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
-description: Utilisez le script dans cet article pour générer un rapport qui contient des informations sur toutes les suspensions qui sont associés à des cas de découverte de sécurité Office 365 &amp; centre de conformité.
-ms.openlocfilehash: b6cef2824002d7e45e4f500bc6c1e9bc880cbd41
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: Utilisez le script de cet article pour générer un rapport qui contient des informations sur toutes les conservations associées à des cas eDiscovery dans le centre de &amp; sécurité conformité Office 365.
+ms.openlocfilehash: cf547ff7c76ba6e16a3bde18465ae0aef9ab4075
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038207"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217435"
 ---
-# <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>Créer un rapport sur les suspensions dans les cas eDiscovery dans Office 365
+# <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>Création d'un rapport sur les suspensions dans les cas de découverte électronique dans Office 365
   
-Le script dans cet article permet aux administrateurs de découverte électronique et gestionnaires de découverte électronique génèrent un rapport qui contient des informations sur toutes les suspensions qui sont associés à des cas de découverte de sécurité Office 365 &amp; centre de conformité. Le rapport contient des informations telles que le nom du cas une suspension est associé avec les emplacements de contenu qui sont mis en attente et si la suspension est basée sur une requête. S’il existe des cas qui n’ont pas les suspensions, le script crée un rapport supplémentaire avec une liste des cas sans suspensions.
+Le script de cet article permet aux administrateurs eDiscovery et aux gestionnaires eDiscovery de générer un rapport contenant des informations sur toutes les suspensions associées à des cas eDiscovery dans &amp; le centre de sécurité conformité Office 365. Le rapport contient des informations telles que le nom du cas dans lequel une conservation est associée, les emplacements de contenu placés en conservation et si la suspension est basée sur une requête. S'il existe des cas qui n'ont aucune conservation, le script crée un rapport supplémentaire avec une liste de cas sans conservation.
 
-Voir la section [plus d’informations](#more-information) pour une description détaillée des informations incluses dans le rapport. 
+Consultez la section [plus d'informations](#more-information) pour obtenir une description détaillée des informations incluses dans le rapport. 
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Pour générer un rapport sur tous les cas de découverte électronique dans votre organisation, vous devez être une administrateur de découverte électronique dans votre organisation. Si vous êtes un gestionnaire eDiscovery, le rapport inclut uniquement des informations sur les cas auquel vous pouvez accéder. Pour plus d’informations sur les autorisations de découverte électronique, consultez la rubrique [attribuer des autorisations de sécurité Office 365 eDiscovery &amp; centre de conformité](assign-ediscovery-permissions.md).
+- Pour générer un rapport sur tous les cas de découverte électronique dans votre organisation, vous devez être un administrateur de découverte électronique dans votre organisation. Si vous êtes un gestionnaire eDiscovery, le rapport n'inclut que les informations sur les cas accessibles. Pour plus d'informations sur les autorisations de découverte électronique, consultez [la rubrique attribution d' &amp; autorisations eDiscovery dans le centre de sécurité conformité Office 365](assign-ediscovery-permissions.md).
     
-- Le script dans cet article présente un traitement minimale des erreurs. Le principal objectif consiste à créer rapidement des rapports sur les blocages qui sont associées dans les cas eDiscovery dans votre organisation.
+- Le script de cet article a une gestion des erreurs minimale. L'objectif principal est de créer rapidement un rapport sur les conservations associées aux cas eDiscovery dans votre organisation.
     
 - Les exemples de script fournis dans cette rubrique ne sont pris en charge dans aucun programme de support ou service standard de Microsoft. Les exemples de scripts sont fournis en l’état, sans garantie d’aucune sorte. Microsoft exclut toute garantie implicite, y compris, sans limitation, les garanties implicites de qualité marchande ou d’adéquation à un usage particulier. Vous assumez tous les risques liés à l’utilisation ou à l’exécution des exemples de scripts et de la documentation. En aucun cas, Microsoft, ses auteurs ou toute personne impliquée dans la création, la production ou la livraison des scripts ne sont responsables de dommages quelconques (y compris, sans limitation, pertes de bénéfices, interruption d’activité, perte d’informations commerciales ou toute autre perte pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
     
-## <a name="step-1-connect-to-the-security-amp-compliance-center-using-remote-powershell"></a>Étape 1 : Connectez-vous à la sécurité &amp; centre de conformité à l’aide de PowerShell à distance
+## <a name="step-1-connect-to-the-security-amp-compliance-center-using-remote-powershell"></a>Étape 1: Connectez-vous au &amp; Centre de sécurité conformité à l'aide de PowerShell à distance
 
-La première étape consiste à connecter Windows PowerShell pour la sécurité &amp; centre de conformité pour votre organisation.
+La première étape consiste à connecter Windows PowerShell au centre de &amp; sécurité conformité pour votre organisation.
   
-1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier de .ps1 ; par exemple, `ConnectSCC.ps1`. 
+1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l'aide d'un suffixe de nom de fichier. ps1; par exemple, `ConnectSCC.ps1`. 
     
       ```
       # Get login credentials 
@@ -48,19 +48,19 @@ La première étape consiste à connecter Windows PowerShell pour la sécurité 
 
 2. Sur votre ordinateur local, ouvrez Windows PowerShell et accédez au dossier où vous avez enregistré le script. 
     
-3. Exécuter le script ; par exemple :
+3. Exécutez le script; par exemple:
 
     ```
     .\ConnectSCC.ps1
     ```
    
-4. Lorsque vous y êtes invité vos informations d’identification, entrez votre adresse de messagerie et votre mot de passe, puis cliquez sur **OK**. 
+4. Lorsque vous êtes invité à entrer vos informations d'identification, entrez votre adresse de messagerie et votre mot de passe, puis cliquez sur **OK**. 
   
-## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Étape 2 : Exécuter le script pour créer des rapports sur conserve associé au cas eDiscovery
+## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Étape 2: exécuter le script pour signaler les suspensions associées à des cas de découverte électronique
 
-Une fois que vous avez connecté à la sécurité &amp; centre de conformité avec PowerShell à distance, l’étape suivante consiste à créer et exécuter le script qui rassemble des informations sur les cas eDiscovery dans votre organisation. 
+Une fois que vous êtes connecté au &amp; Centre de sécurité conformité avec PowerShell à distance, l'étape suivante consiste à créer et exécuter le script qui collecte des informations sur les cas de découverte électronique dans votre organisation. 
   
-1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier de .ps1 ; par exemple, CaseHoldsReport.ps1. 
+1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l'aide d'un suffixe de nom de fichier. ps1; par exemple, CaseHoldsReport. ps1. 
     
   ```
 #script begin
@@ -150,49 +150,49 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
 #script end
   ```
 
-2. Dans la session Windows PowerShell qui ouvert à l’étape 1, accédez au dossier où vous avez enregistré le script. 
+2. Dans la session Windows PowerShell qui s'est ouverte à l'étape 1, accédez au dossier où vous avez enregistré le script. 
     
-3. Exécuter le script ; par exemple :
+3. Exécutez le script; par exemple:
 
     ```
     .\CaseHoldsReport.ps1
     ```
 
-    Le script vous invite à un dossier cible enregistrer l’état. 
+    Le script vous invite à entrer un dossier cible dans lequel enregistrer le rapport. 
     
-4. Tapez le nom de chemin d’accès complet du dossier à l’enregistrement de l’état, puis appuyez sur **entrée**.
+4. Tapez le chemin d'accès complet du dossier dans lequel le rapport doit être enregistré, puis appuyez sur **entrée**.
     
     > [!TIP]
-    > Pour enregistrer le rapport dans le même dossier que le script se trouve dans, tapez un point («. ») lorsque vous y êtes invité pour un dossier cible. Pour enregistrer le rapport dans un sous-dossier dans le dossier où se trouve le script, il suffit de taper le nom du sous-dossier. 
+    > Pour enregistrer le rapport dans le dossier dans lequel se trouve le script, tapez un point («.») lorsque vous êtes invité à indiquer un dossier cible. Pour enregistrer le rapport dans un sous-dossier du dossier où se trouve le script, tapez simplement le nom du sous-dossier. 
   
-    Le script commence à collecter des informations sur tous les cas de découverte électronique dans votre organisation. N’accédez pas au fichier de rapport pendant l’exécution du script. Une fois le script est terminé, un message de confirmation s’affiche dans la session Windows PowerShell. Une fois que ce message s’affiche, vous pouvez accéder au rapport dans le dossier que vous avez spécifié à l’étape 4. Est le nom de fichier pour le rapport `CaseHoldsReport<DateTimeStamp>.csv`.
+    Le script commence à collecter des informations sur tous les cas de découverte électronique dans votre organisation. N'accédez pas au fichier de rapport pendant l'exécution du script. Une fois le script terminé, un message de confirmation s'affiche dans la session Windows PowerShell. Une fois ce message affiché, vous pouvez accéder au rapport dans le dossier que vous avez spécifié à l'étape 4. Le nom de fichier du rapport est `CaseHoldsReport<DateTimeStamp>.csv`.
 
-    Plus, le script crée également un rapport avec une liste des cas qui n’ont pas les suspensions. Est le nom de fichier pour ce rapport `CaseswithNoHolds<DateTimeStamp>.csv`.
+    Plus, le script crée également un rapport avec une liste de cas qui n'ont aucune conservation. Le nom de fichier de ce rapport `CaseswithNoHolds<DateTimeStamp>.csv`est.
     
-    Voici un exemple d’exécution du script CaseHoldsReport.ps1. 
+    Voici un exemple d'exécution du script CaseHoldsReport. ps1. 
     
-    ![La sortie après avoir exécuté le script CaseHoldsReport.ps1](media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+    ![Sortie après l'exécution du script CaseHoldsReport. ps1](media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
 ## <a name="more-information"></a>Plus d’informations
 
-Le cas contient l’état qui est créé lorsque vous exécutez le script dans cet article contient les informations suivantes sur chaque suspension. Comme expliqué précédemment, vous devez être une administrateur pour renvoyer des informations pour toutes les suspensions placées dans votre organisation eDiscovery. Pour plus d’informations sur le cas des blocages, voir [cas eDiscovery de sécurité Office 365 &amp; centre de conformité](ediscovery-cases.md).
+Le rapport de suspension de cas qui est créé lorsque vous exécutez le script dans cet article contient les informations suivantes sur chaque blocage. Comme expliqué précédemment, vous devez être un administrateur eDiscovery pour renvoyer des informations pour toutes les suspensions de votre organisation. Pour plus d'informations sur les conservations d'incidents, consultez [la rubrique cas &amp; EDiscovery dans le centre de sécurité conformité Office 365](ediscovery-cases.md).
   
-  - Nom de la suspension et le nom de la casse de découverte électronique qui est associée à la suspension.
+  - Nom de la conservation et nom du cas eDiscovery auquel la conservation est associée.
     
-  - Si le cas de découverte électronique est actif ou fermé.
+  - Indique si le cas de découverte électronique est actif ou fermé.
     
-  - La suspension est ou non activée ou désactivée.
+  - Indique si la conservation est activée ou désactivée.
     
-  - Les membres de le cas de découverte électronique qui est associée à la suspension. Membres de l’incidents pour afficher ou gérer des cas, en fonction des autorisations eDiscovery qu'ils ont été attribué.
+  - Membres du cas eDiscovery auquel est associée la conservation. Les membres de cas peuvent afficher ou gérer un cas, en fonction des autorisations eDiscovery auxquelles ils ont été affectés.
     
-  - L’heure et la date de que création de la casse.
+  - Date et heure de création de la demande de devis.
     
-  - Si un cas est fermé, la personne qui a fermé il et l’heure et date a été fermée.
+  - Si une demande de devis est fermée, la personne qui l'a fermée et l'heure et la date de clôture.
     
-  - Les boîtes aux lettres Exchange et SharePoint sites emplacements qui sont en attente.
+  - Les emplacements des boîtes aux lettres Exchange et des sites SharePoint en conservation.
     
-  - Si la suspension est basée sur les requêtes, la syntaxe de requête.
+  - Si la suspension est basée sur une requête, la syntaxe de requête.
     
-  - L’heure et date de que création de la suspension et la personne qui l’a créé.
+  - L'heure et la date de création de la conservation et la personne qui l'a créée.
     
-  - L’heure et date de que dernière modification de la suspension et la personne qui a changé.
+  - Date et heure de la dernière modification de la conservation et de la personne qui l'a modifiée.

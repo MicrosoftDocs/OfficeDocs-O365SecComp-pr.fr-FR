@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,33 +14,33 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b148ff1a77cd9225a26f98e7612e9fb5b57331e3
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 967320aeb960258d77d90cca4e3b681849f9952e
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706055"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215804"
 ---
 # <a name="use-the-communications-editor"></a>Utiliser l’éditeur de communications
 
-Lorsque vous définissez le contenu de votre contenu du portail, juridique maintenez notifications et rappels/escalades associés, vous pouvez tirer parti de l’éditeur de Communications pour mettre en forme et personnaliser votre contenu de manière dynamique.
+Lorsque vous définissez le contenu de votre contenu de portail, des notifications de conservation légale et des rappels associés, vous pouvez utiliser l'éditeur de communications pour formater et personnaliser dynamiquement votre contenu.
 
 ## <a name="rich-text-editor"></a>Éditeur de texte enrichi 
 
-L’éditeur de Communications permet à utilisateur de personnaliser le texte en utilisant les options de l’éditeur. Par exemple, les utilisateurs peuvent modifier les types de polices, créer des listes à puces et le contenu en surbrillance. 
+L'éditeur de communications permet à l'utilisateur de personnaliser le texte à l'aide des options de l'éditeur. Par exemple, les utilisateurs peuvent modifier les types de police, créer des listes à puces, mettre en surbrillance le contenu, etc. 
 
-## <a name="merge-field-variables"></a>Variables de champs de fusion
+## <a name="merge-field-variables"></a>Fusionner des variables de champ
 
-Vous pouvez tirer parti des variables de fusion e-mail à incorporer des attributs dépositaire personnalisé dans le corps du texte d’une communication à partir de l’éditeur de Communications. Lorsque envoyé vers le dépositaire, le champ de fusion est rempli avec le champ correspondant. Par exemple, lorsque envoyé au dépositaire John Smith, le champ de fusion [nom dépositaire] est traduit portant le nom correspondant. 
+Vous pouvez utiliser des variables de fusion et publipostage à partir de l'éditeur de communications pour incorporer des attributs de dépositaire personnalisés dans le corps d'une communication. Lors de l'envoi au dépositaire, le champ de fusion est renseigné avec le champ correspondant. Par exemple, lorsqu'il est envoyé au dépositaire John Smith, le champ de fusion [nom du dépositaire] est traduit par le nom correspondant. 
 
-Vous pouvez utiliser des champs de fusion de messagerie en sélectionnant les icônes de **champ de fusion** en haut du contrôle d’éditeur de texte enrichi. L’espace réservé sera ajoutée en fonction de désactiver l’emplacement du curseur de l’utilisateur. 
+Vous pouvez utiliser les champs de fusion de messagerie en sélectionnant les icônes de **champ de fusion** en haut du contrôle d'éditeur de texte enrichi. L'espace réservé est ajouté en fonction de l'emplacement du curseur de l'utilisateur. 
 
-### <a name="list-of-merge-field-variables"></a>Liste de variables de champ de fusion
+### <a name="list-of-merge-field-variables"></a>Liste des variables de champ de fusion
 
 | Nom du champ                  | Détails du champ | 
 | :------------------- | :------------------- |
-| Nom d'affichage  | Le dépositaire prénom et nom. | 
-| Lien d’un accusé de réception | Lien personnalisé pour enregistrer un accusé de réception de chaque dépositaire.|                 |
-| Lien de portail     | Lien personnalisé pour le portail de conformité de la dépositaire.|                |
-| Responsable de délivrance                   | L’adresse de messagerie de l’agent de délivrance spécifié.|                   |
-| Date d’émission                   | La date à laquelle l’opération a été émise (UTC).              |
+| Nom d'affichage  | Prénom et nom du dépositaire. | 
+| Lien d'accusé de réception | Lien personnalisé permettant d'enregistrer l'accusé de réception de chaque dépositaire.|                 |
+| Lien du portail     | Un lien personnalisé pour le portail de conformité du dépositaire.|                |
+| Officier émetteur                   | Adresse de messagerie du responsable émetteur spécifié.|                   |
+| Date d'émission                   | Date à laquelle l'avis a été émis (UTC).              |

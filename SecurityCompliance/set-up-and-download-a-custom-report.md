@@ -1,53 +1,53 @@
 ---
-title: Configurer et télécharger un rapport personnalisé dans la sécurité &amp; centre de conformité
+title: Configurer et télécharger un rapport personnalisé dans le centre de &amp; sécurité conformité
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
-description: Découvrez comment configurer et télécharger un rapport avec une plage de dates personnalisée et des filtres de sécurité &amp; centre de conformité.
-ms.openlocfilehash: 313caf1e6d7a4cdca74979c3a5ccdbc413c6c7db
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: Découvrez comment configurer et télécharger un rapport avec une plage de dates et des filtres personnalisés dans le centre &amp; de sécurité et de conformité.
+ms.openlocfilehash: 7e4d152509a6e904c7df5ea7c8ccddf9503a35da
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014746"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219704"
 ---
-# <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>Configurer et télécharger un rapport personnalisé dans la sécurité &amp; centre de conformité
+# <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>Configurer et télécharger un rapport personnalisé dans le centre de &amp; sécurité conformité
 
-Dans la [sécurité &amp; centre de conformité](https://protection.office.com), plusieurs [rapports et vues d’ensemble](reports-and-insights-in-security-and-compliance.md) sont disponibles pour aider à l’équipe de sécurité de votre organisation atténuer et adresses contre les menaces envers votre organisation. Si vous êtes un membre de l’équipe de sécurité de votre organisation, vous pouvez configurer un rapport avec des filtres et des plages de dates personnalisée et puis téléchargez votre rapport personnalisé. 
+Dans le [Centre &amp; de sécurité conformité](https://protection.office.com), plusieurs [rapports et](reports-and-insights-in-security-and-compliance.md) informations sont disponibles pour aider l'équipe de sécurité de votre organisation à réduire et à résoudre les menaces pesant sur votre organisation. Si vous êtes membre de l'équipe de sécurité de votre organisation, vous pouvez configurer un rapport avec des plages de dates et des filtres personnalisés, puis télécharger votre rapport personnalisé. 
   
 ## <a name="download-a-custom-report"></a>Télécharger un rapport personnalisé
 
 > [!IMPORTANT]
-> Assurez-vous que vous avez nécessaires [les autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md). En règle générale, les administrateurs globaux d’Office 365, les administrateurs de sécurité et les lecteurs de sécurité peuvent accéder aux rapports de sécurité &amp; centre de conformité. 
+> Assurez-vous que vous disposez des [autorisations nécessaires pour le centre &amp; de sécurité conformité d'Office 365](permissions-in-the-security-and-compliance-center.md). En règle générale, les administrateurs globaux Office 365, les administrateurs de la sécurité et les lecteurs de &amp; sécurité peuvent accéder aux rapports dans le centre de sécurité conformité. 
   
-1. Dans la [sécurité &amp; centre de conformité](https://protection.office.com), accédez aux **rapports** \> **tableau de bord**.
+1. Dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez à **rapports** \> de **tableau de bord**.
     
-2. Choisissez un rapport. (Dans cet exemple, nous allons utiliser le rapport de Disposition de Message).<br/>![Cliquez sur Demander un rapport pour télécharger un rapport](media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
+2. Choisissez un rapport. (Pour cet exemple, nous allons utiliser le rapport de disposition du message.)<br/>![Choisir un rapport de demande pour télécharger un rapport](media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
   
-3. Dans le coin supérieur gauche du rapport, sélectionnez **rapport de requête**.
+3. Dans le coin supérieur gauche du rapport, sélectionnez **demander un rapport**.
     
-4. Dans la boîte de dialogue **demande de rapport** , spécifiez un nom, date de début et date de fin de l’état. Puis cliquez sur **suivant**.<br/>![Dans la sécurité &amp; centre de conformité, cliquez sur rapports \> pour le téléchargement des rapports](media/65e625f5-c98c-49fc-9c1f-8c80ec8308fd.png)
+4. Dans la boîte de dialogue **rapport de demande** , spécifiez un nom, une date de début et une date de fin pour le rapport. Ensuite, cliquez sur **suivant**.<br/>![Dans le centre &amp; de sécurité conformité, sélectionnez \> rapports de rapports à télécharger.](media/65e625f5-c98c-49fc-9c1f-8c80ec8308fd.png)
   
-5. Spécification des filtres que vous souhaitez utiliser pour le rapport. (Par exemple, vous pouvez spécifier une adresse IP du client pour le rapport de destruction du Message.) Puis cliquez sur **suivant**.
+5. Spécifiez les filtres que vous souhaitez utiliser pour le rapport. (Par exemple, vous pouvez spécifier une adresse IP de client pour le rapport de disposition de message.) Ensuite, cliquez sur **suivant**.
     
-6. Spécifier les destinataires de courriers électroniques pour le rapport, puis cliquez sur **Enregistrer**.
+6. Spécifiez les destinataires du rapport, puis cliquez sur **Enregistrer**.
     
 ## <a name="related-topics"></a>Voir aussi
 
-[Rapports et vues d’ensemble de sécurité Office 365 &amp; centre de conformité](reports-and-insights-in-security-and-compliance.md)
+[Rapports et informations dans le centre de sécurité &amp; conformité Office 365](reports-and-insights-in-security-and-compliance.md)
   
-[Créer une planification pour un état de la sécurité &amp; centre de conformité](create-a-schedule-for-a-report.md)
+[Créer une planification pour un rapport dans le centre &amp; de sécurité conformité](create-a-schedule-for-a-report.md)
   
-[Gérer les planifications pour les rapports de sécurité &amp; centre de conformité](manage-schedules-for-multiple-reports.md)
+[Gérer les planifications des rapports dans &amp; le centre de sécurité conformité](manage-schedules-for-multiple-reports.md)
   
-[Télécharger des rapports existants dans la sécurité &amp; centre de conformité](download-existing-reports.md)
+[Télécharger des rapports existants dans le &amp; Centre de sécurité conformité](download-existing-reports.md)
   
 

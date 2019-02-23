@@ -1,26 +1,26 @@
 ---
-title: Le journal d’audit pour l’activité utilisateur et d’administration de recherche dans Office 365
+title: Rechercher les activités des utilisateurs et des administrateurs dans le journal d’audit Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 5/18/2018
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
-description: 'Le journal d’audit de Office 365 est un journal d’audit unifiée. Pourquoi un audit unifié se connecter ? Étant donné que les événements à partir de la plupart des services Office 365 que vous êtes organisation s’abonne à sont enregistrées dans un journal d’audit unique que vous pouvez rechercher. Cela signifie que vous pouvez rechercher des utilisateurs et l’activité d’administration dans ces services :'
-ms.openlocfilehash: 230502f331babeef8f89eacce0d19a7756cb96fc
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: "Le journal d'audit Office 365 est un journal d'audit unifié. Pourquoi un journal d'audit unifié? Étant donné que les événements provenant de la plupart des services Office 365 auxquels vous êtes abonné, sont enregistrés dans un seul journal d'audit que vous pouvez rechercher. Cela signifie que vous pouvez rechercher l'activité de l'utilisateur et de l'administrateur dans les services suivants:"
+ms.openlocfilehash: ec67c63cff57f95bacabd120c466922870b595b4
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038027"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214084"
 ---
-# <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>Le journal d’audit pour l’activité utilisateur et d’administration de recherche dans Office 365
+# <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>Rechercher les activités des utilisateurs et des administrateurs dans le journal d’audit Office 365
 
-Le journal d’audit de Office 365 est un journal d’audit unifiée. Pourquoi un audit unifié se connecter ? Étant donné que les événements à partir de la plupart des services Office 365 que vous êtes organisation s’abonne à sont enregistrées dans un journal d’audit unique que vous pouvez rechercher. Cela signifie que vous pouvez rechercher des utilisateurs et l’activité d’administration dans ces services : 
+Le journal d'audit Office 365 est un journal d'audit unifié. Pourquoi un journal d'audit unifié? Étant donné que les événements provenant de la plupart des services Office 365 auxquels vous êtes abonné, sont enregistrés dans un seul journal d'audit que vous pouvez rechercher. Cela signifie que vous pouvez rechercher l'activité de l'utilisateur et de l'administrateur dans les services suivants: 
   
 - SharePoint
 - OneDrive
@@ -33,20 +33,20 @@ Le journal d’audit de Office 365 est un journal d’audit unifiée. Pourquoi u
 - Sway
 - Microsoft Stream
    
- ## <a name="set-up-auditing"></a>Configurer l’audit
+ ## <a name="set-up-auditing"></a>Configurer l'audit
   
-Il existe quelques éléments à effectuer avant de rechercher le journal d’audit de Office 365.
+Vous devez effectuer quelques opérations avant de pouvoir effectuer une recherche dans le journal d'audit Office 365.
   
-- [Activer la recherche des journaux d’audit](turn-audit-log-search-on-or-off.md) pour démarrer l’enregistrement des événements que vous pouvez rechercher 
+- [Activer la recherche du journal d'audit](turn-audit-log-search-on-or-off.md) pour commencer l'enregistrement des événements que vous pouvez rechercher 
     
-- [Activer l’audit de boîte aux lettres](enable-mailbox-auditing.md) , vous pouvez rechercher les événements liés à la boîte aux lettres ; par exemple lorsqu’un utilisateur se connecte à leurs boîte aux lettres ou purge des éléments de leur dossier éléments récupérables 
+- [Activer l'audit de boîte aux lettres](enable-mailbox-auditing.md) pour pouvoir Rechercher des événements liés à une boîte aux lettres; par exemple lorsqu'un utilisateur se connecte à sa boîte aux lettres ou purge des éléments de son dossier éléments récupérables 
     
  ## <a name="search-the-audit-log"></a>Rechercher le journal d’audit
   
-Après avoir activé l’audit, vous recherchez des centaines des différents types d’événements à partir de plusieurs services Office 365.
+Après avoir activé l'audit, vous recherchez des centaines de types d'événements individuels à partir de plusieurs services Office 365.
   
-- [Recherche le journal d’audit](search-the-audit-log-in-security-and-compliance.md) des activités d’utilisateur et d’administration 
+- Rechercher les activités de l'utilisateur et de l'administrateur dans [le journal d'audit](search-the-audit-log-in-security-and-compliance.md) 
     
-- [Comprendre les propriétés détaillées](detailed-properties-in-the-office-365-audit-log.md) de chaque enregistrement d’audit inclus dans les résultats de recherche 
+- [Comprendre les propriétés détaillées](detailed-properties-in-the-office-365-audit-log.md) de chaque enregistrement d'audit inclus dans les résultats de la recherche 
     
-- [Rechercher les activités liées à la découverte](search-for-ediscovery-activities-in-the-audit-log.md) effectuée par les responsables de la conformité et les administrateurs 
+- [Rechercher les activités de découverte électronique](search-for-ediscovery-activities-in-the-audit-log.md) effectuées par les administrateurs et les responsables de la conformité 

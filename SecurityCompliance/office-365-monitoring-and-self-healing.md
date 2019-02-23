@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Informations sur les fonctionnalités de surveillance et d'autoréparation d'Office 365.
-ms.openlocfilehash: 799c4dc97e9cc88dcc77f17b0f11ab76525012d9
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 4878ca5889c9b893154e0e7b910cb17c4b36402c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090516"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217544"
 ---
 # <a name="office-365-monitoring-and-self-healing"></a>Surveillance et autoRéparation d'Office 365
 Étant donné l'ampleur d'Office 365, il serait impossible de maintenir les données client résistantes et sûres des programmes malveillants sans surveillance intégrée complète, alerte intelligente et auto-réparation rapide et fiable. La surveillance d'un ensemble de services à l'étendue d'Office 365 est très complexe. De nouvelles mentalités et méthodologies devaient être introduites, ainsi que de nouveaux ensembles de technologies qui devaient être créés pour fonctionner et gérer le service dans un environnement global connecté. Nous avons quitté l'approche de surveillance traditionnelle de la collecte de données et du filtrage pour créer des alertes à une approche basée sur l'analyse des données; prendre des signaux et renforcer la confiance de ces données, puis utiliser l'automatisation pour récupérer ou résoudre le problème. Cette approche permet de tirer le meilleur parti de l'équation de récupération, qui, à son tour, rend les opérations moins onéreuses, plus rapides et moins sujettes aux erreurs. 

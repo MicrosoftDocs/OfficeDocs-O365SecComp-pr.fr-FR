@@ -1,74 +1,74 @@
 ---
-title: Rapports intelligents et vues d’ensemble dans le centre de conformité de & sécurité pour Microsoft Office 365
+title: Rapports intelligents et Insights dans le centre de sécurité & Office 365 Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 7/19/2018
 ms.audience: ITPro
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection: M365-security-compliance
-description: Obtenir une vue d’ensemble des rapports et analyses disponibles dans la sécurité &amp; centre de conformité.
-ms.openlocfilehash: 30c6dcd324770a519f1501c6e7bfa85b28aa6969
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: Obtenez une vue d'ensemble des rapports et des Insights avialable dans le &amp; Centre de sécurité conformité.
+ms.openlocfilehash: 194a7198e05e6d13cada9712f884f232abe2a8d1
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995275"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217214"
 ---
-# <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>Active les rapports et les vues d’ensemble de sécurité Office 365 &amp; centre de conformité
+# <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>Rapports intelligents et Insights dans le centre de sécurité &amp; conformité Office 365
 
-Si vous ne font partie de l’équipe de sécurité de votre organisation Office 365 et nécessaires [autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md), vous pouvez accéder à une série de rapports, y compris les rapports intelligents et vues d’ensemble. Lisez cet article pour obtenir une vue d’ensemble des rapports et des idées et où aller pour en savoir plus sur les rapports spécifiques.
+Si vous êtes membre de l'équipe de sécurité Office 365 de votre organisation et que vous disposez des [autorisations nécessaires dans le &amp; Centre de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md), vous pouvez accéder à un grand nombre de rapports, notamment des rapports intelligents et des informations. Lisez cet article pour obtenir une vue d'ensemble de ces rapports et de ces informations, ainsi que pour en savoir plus sur des rapports spécifiques.
       
-## <a name="smart-reports-and-insights-overview"></a>Vue d’ensemble des rapports et analyses Active
+## <a name="smart-reports-and-insights-overview"></a>Vue d'ensemble des rapports intelligents et des informations
 
-Surveillance des fonctionnalités disponibles dans le cadre sécurité Office 365 &amp; centre de conformité inclure des rapports intelligents et vues d’ensemble qui permettent de sécurité et conformité aux administrateurs de se concentrer sur les problèmes de haute priorité, tels que les attaques de sécurité ou augmentent activités suspectes. Dans un tableau de bord, analyses et rapports intelligents ressembler à l’image suivante :
+Les fonctionnalités de surveillance disponibles dans le centre &amp; de sécurité conformité Office 365 incluent des rapports intelligents et des informations qui permettent aux administrateurs de la sécurité et de la conformité de se concentrer sur des problèmes à haute priorité, tels que les attaques de sécurité ou l'augmentation activité suspecte. Dans un tableau de bord, les rapports et les aperçus intelligents ressemblent à l'image suivante:
   
-![Dans la sécurité &amp; centre de conformité, cliquez sur rapports \> tableau de bord](media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
+![Dans le centre &amp; de sécurité conformité, sélectionnez \> tableau de bord rapports](media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
   
-Met en évidence les zones à problème, analyses et des rapports intelligents incluent des liens pour afficher et Explorer les données et également effectuer les actions rapides et des recommandations. Par exemple, si votre organisation a soudainement un grand nombre de messages électroniques est marqué comme courrier indésirable par les utilisateurs finaux, il peut conseillé de revoir vos stratégies de blocage du courrier indésirable pour vérifier que le niveau de protection est en place.
+En plus de mettre en surbrillance les zones problématiques, les rapports intelligents et les idées contiennent des recommandations et des liens permettant d'afficher et d'explorer les données et d'effectuer des actions rapides. Par exemple, si votre organisation dispose d'un nombre élevé de messages électroniques marqués comme courrier indésirable par les utilisateurs finaux, il se peut que vous soyez invité à réutiliser vos stratégies anti-courrier indésirable pour vous assurer que le niveau de protection approprié est mis en place.
   
-Les procédures suivantes illustrent comment vous pouvez naviguer entre les tableaux de bord dans la sécurité, des rapports détaillés et insights &amp; centre de conformité :
+Les procédures pas à pas suivantes montrent comment naviguer entre les aperçus, les rapports détaillés et les tableaux de bord &amp; dans le centre de sécurité conformité:
   
-- [Procédure pas à pas : à partir d’un tableau de bord pour un aperçu](from-a-dashboard-to-an-insight.md)
+- [Procédure pas à pas: d'un tableau de bord vers un aperçu](from-a-dashboard-to-an-insight.md)
     
-- [Procédure pas à pas : à partir d’un rapport détaillé d’une analyse](from-a-detailed-report-to-an-insight.md)
+- [Procédure pas à pas: d'un rapport détaillé vers un aperçu](from-a-detailed-report-to-an-insight.md)
     
-- [Procédure pas à pas : à partir d’un aperçu à un rapport détaillé](from-an-insight-to-a-detailed-report.md)
+- [Procédure pas à pas: d'un aperçu d'un rapport détaillé](from-an-insight-to-a-detailed-report.md)
     
-## <a name="types-of-reports-in-the-security-amp-compliance-center"></a>Types de rapports dans la sécurité &amp; centre de conformité
+## <a name="types-of-reports-in-the-security-amp-compliance-center"></a>Types de rapports dans le centre &amp; de sécurité conformité
 
-Une grande variété de rapports sont disponibles dans la sécurité &amp; centre de conformité. (Accédez aux **rapports** \> **tableau de bord** pour obtenir une vue de toutes les.) Le tableau suivant répertorie les rapports disponibles avec des liens pour en savoir plus : 
+Un grand nombre de rapports sont disponibles dans le centre &amp; de sécurité et de conformité. (Accédez à **** \> **tableau de bord** rapports pour obtenir une vue d'ensemble.) Le tableau suivant répertorie les rapports disponibles avec des liens pour en savoir plus: 
   
 |**Type d'information**|**Comment y accéder**|**Où aller pour en savoir plus**|
 |:-----|:-----|:-----|
-|**Sécurité &amp; rapports du centre de conformité** (tous les)  <br/> Principaux insights et des recommandations et des liens à la sécurité &amp; des rapports de conformité, y compris les rapports de protection contre la perte de données, étiquettes, rapports de sécurité de messagerie, les rapports de protection contre les menaces avancées, etc.  <br/> |Dans la sécurité &amp; centre de conformité, accédez aux **rapports** \> **tableau de bord** <br/> |[Analyser la sécurité et la conformité dans Office 365](monitor-security-and-compliance.md) <br/> |
-|**Protection contre la perte de données** <br/> Stratégie de protection contre la perte de données établit une correspondance avec faux positifs et les remplacements et fournit des liens pour créer ou modifier des stratégies  <br/> |Dans la sécurité &amp; centre de conformité, accédez à la **protection contre la perte de données** \> **stratégie** <br/> |[Affichage des rapports de protection contre la perte de données](view-the-dlp-reports.md) <br/> |
-|**Gouvernance des données** <br/> Informations sur la façon dont les étiquettes sont appliquées, étiquettes classés en tant qu’enregistrements et les tendances d’étiquette  <br/> |Dans la sécurité &amp; centre de conformité, accédez à **la gouvernance des données** \> **tableau de bord** <br/> |[Afficher les rapports de gouvernance des données](view-the-data-governance-reports.md) <br/> |
-|**Tableau de bord de gestion des menaces** (il est également appelé le tableau de bord de sécurité et le tableau de bord d’aide à la décision de menace)  <br/> Détections de menace, les tendances des programmes malveillants, principaux utilisateurs ciblés, plus d’informations sur les messages électroniques envoyés et reçus, etc.  <br/> |Dans la sécurité &amp; centre de conformité, accédez à la **Gestion des menaces** \> **tableau de bord** <br/> |[Vue d’ensemble du tableau de bord de sécurité](security-dashboard.md) <br/> |
-|**Explorer des menaces** (également appelé Explorateur de solutions)  <br/> Suspects malveillant détecté dans le courrier électronique et des fichiers dans Office 365  <br/> |Dans la sécurité &amp; centre de conformité, accédez à la **Gestion des menaces** \> **Explorer** <br/> |[Utiliser l’Explorateur de solutions de sécurité &amp; centre de conformité](use-explorer-in-security-and-compliance.md) <br/> |
-|**Protection contre les menaces et les rapports de sécurité de messagerie avancées** <br/> Rapports de messagerie sécurité et protection (y compris les logiciels malveillants, le courrier indésirable, l’hameçonnage et l’usurpation d’identité de rapports)  <br/> |Dans la sécurité &amp; centre de conformité, accédez aux **rapports** \> **tableau de bord** <br/> |[Afficher les rapports de Protection de menace avancées d’Office 365](view-reports-for-atp.md) <br/><br/> [Afficher les rapports de sécurité de messagerie de la sécurité &amp; centre de conformité](view-email-security-reports.md) <br/> |
-|**Flux de messagerie** <br/> Plus d’informations sur envoi et la réception de messages électroniques, alertes récentes, principaux expéditeurs et destinataires, rapports de transfert de messages et plus  <br/> |Dans la sécurité &amp; centre de conformité, accédez à **flux de messagerie** \> **tableau de bord** <br/> |[Détails de flux de sécurité Office 365 de messagerie &amp; centre de conformité](https://support.office.com/article/beb6acaa-6016-4d54-ba7e-3d6d035e2b46.aspx) <br/> |
-|**Mise en conformité GDPR** <br/> Informations sur la conformité PIBR, notamment des liens vers les personnes concernées, les tendances d’étiquette et actif &amp; cas fermés  <br/> |Dans la sécurité &amp; centre de conformité, accédez à la **confidentialité des données** \> **tableau de bord PIBR** <br/> |[Protection des informations Office 365 pour le RGPD](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) <br/> |
-|**Journal d’audit** <br/> Informations sur Office 365 activités, les utilisateurs, les fichiers ou dossiers, etc.  <br/> |Dans la sécurité &amp; centre de conformité, accédez à **recherche &amp; enquête** \> **recherche des journaux d’Audit** <br/> |[Effectuer des recherches dans le journal d’audit dans le Centre de sécurité et de conformité Office 365](search-the-audit-log-in-security-and-compliance.md) <br/> |
-|**Rapports de conformité** <br/> Rapports FedRAMP, la gouvernance, les risques et des rapports de conformité, ISO informations sécurité Gestion des rapports et rapports d’audit et d’évaluation de contrôles d’organisation de Service  <br/> |Dans la sécurité &amp; centre de conformité, accédez à **l’assurance de Service** \> **des rapports de conformité** <br/> |[Planification de la sécurité &amp; conformité dans Office 365](plan-for-security-and-compliance.md) <br/> |
+|**Rapports &amp; du centre de sécurité conformité** (tout le haut)  <br/> Premières informations et recommandations, ainsi que des liens vers des &amp; rapports de conformité de la sécurité, notamment des rapports de protection contre la perte de données, des étiquettes, des rapports de sécurité de messagerie électronique, des rapports de protection avancée contre les menaces, etc.  <br/> |Dans le centre &amp; de sécurité conformité, accédez à **rapports** \> de **tableau de bord** <br/> |[Analyser la sécurité et la conformité dans Office 365](monitor-security-and-compliance.md) <br/> |
+|**Protection contre la perte de données** <br/> Correspondances de stratégie de protection contre la perte de données, faux positifs et remplacements, et liens pour créer ou modifier des stratégies  <br/> |Dans le centre &amp; de sécurité conformité, accédez à **stratégie** de **protection contre** \> la perte de données <br/> |[Affichage des rapports de protection contre la perte de données](view-the-dlp-reports.md) <br/> |
+|**Gouvernance des données** <br/> Informations sur l'application des étiquettes, les étiquettes classées comme enregistrements, les tendances des étiquettes, etc.  <br/> |Dans le centre &amp; de sécurité conformité, accédez au **tableau de bord** de **gouvernance** \> des données <br/> |[Afficher les rapports de gouvernance des données](view-the-data-governance-reports.md) <br/> |
+|**Tableau de bord de gestion des menaces** (cela est également appelé tableau de bord de sécurité et tableau de bord de protection contre les menaces)  <br/> Détections de menaces, tendances des programmes malveillants, utilisateurs les plus ciblés, détails sur les messages électroniques envoyés et reçus, etc.  <br/> |Dans le centre &amp; de sécurité conformité, accédez au **tableau de bord** de **gestion** \> des menaces <br/> |[Vue d'ensemble du tableau de bord de sécurité](security-dashboard.md) <br/> |
+|**Explorateur de menaces** (également appelé Explorateur)  <br/> Programmes malveillants suspects détectés dans les messages électroniques et les fichiers dans Office 365  <br/> |Dans le centre &amp; de sécurité conformité, accédez à l' **Explorateur** de **gestion** \> des menaces <br/> |[Utiliser l'Explorateur dans le &amp; Centre de sécurité conformité](use-explorer-in-security-and-compliance.md) <br/> |
+|**Rapports de sécurité avancée contre les menaces et de messagerie** <br/> Rapports sur la sécurité et la protection contre les menaces (y compris les programmes malveillants, le courrier indésirable, le hameçonnage et l'usurpation d'identité)  <br/> |Dans le centre &amp; de sécurité conformité, accédez à **rapports** \> de **tableau de bord** <br/> |[Afficher les rapports pour Office 365 protection avancée contre les menaces](view-reports-for-atp.md) <br/><br/> [Afficher les rapports de sécurité de messagerie &amp; dans le centre de sécurité conformité](view-email-security-reports.md) <br/> |
+|**Flux de messagerie** <br/> Informations sur les messages électroniques envoyés et reçus, les alertes récentes, les expéditeurs et destinataires principaux, les rapports de transfert de courrier électronique, etc.  <br/> |Dans le centre &amp; de sécurité conformité, accédez à **tableau de bord** de **flux** \> de messagerie. <br/> |[Informations sur le flux de messagerie dans le centre de &amp; sécurité conformité Office 365](https://support.office.com/article/beb6acaa-6016-4d54-ba7e-3d6d035e2b46.aspx) <br/> |
+|**Mise en conformité GDPR** <br/> Informations sur la conformité RGPD, y compris les liens vers les personnes concernées, les &amp; tendances des étiquettes et les dossiers fermés actifs  <br/> |Dans le centre &amp; de sécurité conformité, accédez au **tableau de bord** de **confidentialité** \> des données RGPD <br/> |[Protection des informations Office 365 pour le RGPD](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) <br/> |
+|**Journal d'audit** <br/> Informations sur les activités, les utilisateurs, les fichiers ou les dossiers Office 365, et bien plus encore  <br/> |Dans le centre &amp; de sécurité conformité, accédez à recherche dans le \> **Journal d'audit** de **recherche &amp; ** <br/> |[Effectuer des recherches dans le journal d’audit dans le Centre de sécurité et de conformité Office 365](search-the-audit-log-in-security-and-compliance.md) <br/> |
+|**Rapports de conformité** <br/> Rapports FedRAMP, gouvernance, rapports de risques et de conformité, rapports de gestion de la sécurité des informations ISO et Organisation des services-rapports d'audit et d'évaluation  <br/> |Dans le centre &amp; de sécurité conformité, accédez à **rapports de conformité** de la **garantie** \> de service. <br/> |[Planifier la conformité &amp; de la sécurité dans Office 365](plan-for-security-and-compliance.md) <br/> |
   
 ## <a name="next-steps"></a>Étapes suivantes
 
-Maintenant que vous disposez d’une vue d’ensemble des rapports et analyses, l’étape suivante consiste à apprendre à personnaliser, gérer et télécharger des rapports. Voir les articles suivants :
+À présent que vous disposez d'une vue d'ensemble des rapports et des informations, l'étape suivante consiste à apprendre à personnaliser, gérer et télécharger des rapports. Consultez les articles suivants:
   
-- [Créer une planification pour un état de la sécurité &amp; centre de conformité](create-a-schedule-for-a-report.md)
+- [Créer une planification pour un rapport dans le centre &amp; de sécurité conformité](create-a-schedule-for-a-report.md)
     
-- [Gérer les planifications de plusieurs rapports de sécurité &amp; centre de conformité](manage-schedules-for-multiple-reports.md)
+- [Gérer les planifications pour plusieurs rapports dans &amp; le centre de sécurité conformité](manage-schedules-for-multiple-reports.md)
     
-- [Télécharger un rapport personnalisé dans la sécurité &amp; centre de conformité](set-up-and-download-a-custom-report.md)
+- [Télécharger un rapport personnalisé dans le centre &amp; de sécurité conformité](set-up-and-download-a-custom-report.md)
     
-- [Télécharger des rapports existants dans la sécurité &amp; centre de conformité](download-existing-reports.md)
+- [Télécharger des rapports existants dans le &amp; Centre de sécurité conformité](download-existing-reports.md)
     
 ## <a name="related-topics"></a>Voir aussi
 

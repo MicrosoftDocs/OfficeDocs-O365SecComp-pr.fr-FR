@@ -1,12 +1,12 @@
 ---
-title: Configurer les paramètres de recherche et analytique
+title: Configurer les paramètres de recherche et d’analyse
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,41 +14,41 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d9528a4bcfaa77f2e232b25d03eda46cce42ebb9
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 253650bb9916da8260491870d1a0bc899d6245c8
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607673"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217104"
 ---
-# <a name="configure-search-and-analytics-settings"></a>Configurer les paramètres de recherche et analytique
+# <a name="configure-search-and-analytics-settings"></a>Configurer les paramètres de recherche et d’analyse
 
 
-## <a name="near-duplicates-and-email-threading"></a>Proximité des doublons et messagerie threading
+## <a name="near-duplicates-and-email-threading"></a>Quasi-doublons et Threading de courrier électronique
 
-Dans cette section, vous pouvez définir des paramètres pour la détection des doublons, près de la détection des doublons et des threads de messagerie.
+Dans cette section, vous pouvez définir des paramètres pour la détection des doublons, la détection des doublons et le Threading de messagerie.
 
-- Activer/désactiver : inclure la détection des doublons, près de la détection des doublons et messagerie threading dans le cadre du flux analytique si activé. Car ils reposent sur l’autre, vous devez tous les activer ou désactiver tous les.
+- Activer/désactiver: inclut la détection des doublons, la détection à proximité des doublons et le Threading du courrier électronique dans le cadre du flux d'analyse s'il est activé. Étant donné qu'ils sont générés les uns sur les autres, vous devez tous les activer ou les désactiver tous.
 
-- Seuil : si le niveau de similarité de deux documents est dépasse le seuil, ils seront placés dans le même près de jeu en double.
+- Seuil: si le niveau de similarité de deux documents est supérieur au seuil, ils seront placés dans le même ensemble presque en double.
 
-- Masquer les doublons par défaut : Si ce paramètre est activé, un filtre pour masquer les documents en double sera appliqué dans le jeu par défaut de travail. Le filtre peut être supprimé manuellement dans le jeu si nécessaire de travail.
+- Masquer les doublons par défaut: si ce paramètre est activé, un filtre permettant de masquer les doublons de documents est appliqué par défaut dans le jeu de travail. Si nécessaire, le filtre peut être supprimé manuellement dans le jeu de travail.
 
-- Nombre minimum/maximum de mots : près de messagerie et les doublons threading s’exécute uniquement sur les documents qui ont au moins le nombre minimal de mots et au plus le nombre maximal de mots. Pour plus d’informations, voir [près de détection des doublons](near-duplicates.md) et les [threads de courrier électronique](email-threading.md).
+- Nombre minimal/maximum de mots: les doublons et les threads de courrier électronique s'exécutent uniquement sur les documents qui contiennent au moins le nombre minimal de mots et le nombre maximal de mots. Pour plus d'informations, consultez la rubrique [near Detection Detection](near-duplicates.md) and [email Threading](email-threading.md).
 
 ## <a name="themes"></a>Thèmes
 
-Dans cette section, vous pouvez définir les paramètres des thèmes.
+Dans cette section, vous pouvez définir des paramètres pour les thèmes.
 
-- Activer/désactiver : inclure des thèmes clusters dans le cadre du flux analytique si activé.
-- Ajuster le nombre maximal de thèmes dynamiquement dynamiquement : dans certains cas, il n’existe pas suffisamment de documents pour générer le nombre de thèmes souhaité. Si ce paramètre est activé, puis plutôt que vous essayez de forcer le nombre maximal de votre choix de thèmes, le système ajuste nombre maximal de thèmes dynamique.
-- Nombre maximal de thèmes : nombre souhaité de thèmes
-- Inclure les numéros de thèmes : lorsqu’il est activé, il inclut les numéros dans lors de la génération des thèmes.  
+- Activer/désactiver: inclut le clustering thèmes dans le cadre du flux d'analyse s'il est activé.
+- Ajustez dynamiquement le nombre maximal de thèmes de façon dynamique: dans certains cas, il n'y a pas assez de documents pour produire le nombre souhaité de thèmes. Si ce paramètre est activé, au lieu d'essayer de forcer le nombre maximal de thèmes souhaités, le système ajuste le nombre maximal de thèmes de manière dynamique.
+- Nombre maximal de thèmes: nombre souhaité de thèmes
+- Inclure les numéros dans les thèmes: lorsque ce dernier est activé, il inclut des numéros dans lors de la génération de thèmes.  
 
 ## <a name="optical-character-recognition-ocr"></a>Reconnaissance optique de caractères (OCR)
 
-Lorsque ce paramètre est activé, OCR doit s’exécuter sur les images qui sont ingérés dans des groupes de travail afin qu’elles puissent être utilisables dans une requête.
+Lorsque ce paramètre est activé, la reconnaissance optique de caractères est exécutée sur les images qui sont ingérées dans les jeux de travail afin qu'ils puissent être recherchés.
 
 ## <a name="ignore-text"></a>Ignorer le texte
 
-Il existe des instances où certains textes peuvent diminuer la qualité d’analytique, tels que des exclusions longues qui sont ajoutées à certains messages électroniques indépendamment du contenu du courrier électronique. Si vous avez pris connaissance de ces cas, vous pouvez exclure ce texte analytique en spécifiant le texte (RegEx est pris en charge) et qui doit être exclu de texte pour les modules.
+Il existe des situations dans lesquelles certains textes réduisent la qualité de l'analyse, tels que des clauses de responsabilité longues qui sont ajoutées à certains courriers électroniques indépendamment du contenu du message. Si vous avez conscience de ces cas, vous pouvez exclure ce texte de l'analyse en spécifiant le texte (RegEx est pris en charge) et les modules pour lesquels le texte doit être exclu.

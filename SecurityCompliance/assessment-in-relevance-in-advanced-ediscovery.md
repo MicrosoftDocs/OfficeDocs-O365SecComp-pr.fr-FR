@@ -1,66 +1,66 @@
 ---
-title: Comprendre l’évaluation dans la pertinence dans Office 365 avancée de découverte électronique
+title: Comprendre l’Évaluation dans le module Pertinence dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
-description: 'Obtenir une vue d’ensemble de la phase d’évaluation et de son rôle dans la détermination de la plus grande richesse des problèmes au cours de formation de la pertinence dans Office 365 avancée de découverte électronique.  '
-ms.openlocfilehash: a54a4134609b16568586f3cb6b60ebdeba860bac
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Obtenez une vue d'ensemble de la phase d'évaluation et de son rôle dans la détermination de la richesse des problèmes lors de la formation à la pertinence dans Office 365 Advanced eDiscovery.
+ms.openlocfilehash: 1ddaa7ef37f762d7b63bb6c0c51193ff382b8d6b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528112"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212974"
 ---
-# <a name="understand-assessment-in-relevance-in-office-365-advanced-ediscovery"></a>Comprendre l’évaluation dans la pertinence dans Office 365 avancée de découverte électronique
+# <a name="understand-assessment-in-relevance-in-office-365-advanced-ediscovery"></a>Comprendre l’Évaluation dans le module Pertinence dans Office 365 Advanced eDiscovery
 
 > [!NOTE]
-> Découverte avancée nécessite un Office 365 E3 avec le module complémentaire de conformité avancée ou un abonnement E5 pour votre organisation. Si vous n’avez qu’un plan d’et essayer eDiscovery avancé, vous pouvez [inscrire à une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-EDiscovery avancé permet d’évaluation au plus tôt, par exemple, pour les problèmes définis et les données importées pour un cas. Découverte avancée permet l’expert pour prendre des décisions relatives à une approche à adopter et de les appliquer au projet de révision de document.
+Advanced eDiscovery permet une évaluation anticipée, par exemple, pour les problèmes définis et les données importées pour un cas. Advanced eDiscovery permet à l'expert de prendre des décisions concernant une approche adoptée et de l'appliquer au projet de révision de document.
   
-## <a name="understanding-assessment"></a>Évaluation de la présentation
+## <a name="understanding-assessment"></a>Présentation de l'évaluation
 
-Évaluation, l’expert examine un ensemble aléatoire de fichiers au moins 500, qui sont utilisées pour déterminer la plus grande richesse des problèmes et pour produire des statistiques qui reflètent les résultats de la formation. Évaluation réussit cas assez de fichiers pertinents pour atteindre un niveau statistique qui aide eDiscovery avancé pour fournir des statistiques exactes et déterminer efficacement la stabilisation point dans le processus de formation de pertinence. 
+Dans l'évaluation, l'expert examine un ensemble aléatoire d'au moins 500 fichiers, qui permettent de déterminer la richesse des problèmes et de produire des statistiques reflétant les résultats de la formation. L'évaluation réussit lorsqu'un nombre suffisant de fichiers pertinents est trouvé pour atteindre un niveau statistique qui aidera à améliorer la pertinence eDiscovery afin de fournir des statistiques précises et de déterminer efficacement le point de stabilisation dans le processus de formation. 
   
-Plus que le nombre de pertinents fichiers dans le jeu d’évaluation, plus précis les statistiques et l’efficacité de l’algorithme de la stabilité. Le nombre de fichiers appropriées dans les fichiers d’évaluation dépend du problème. Plus grande richesse est le pourcentage estimé de fichiers appropriés dans le jeu de pertinent pour un problème. Problèmes avec une plus grande richesse atteindra un nombre de fichiers concernés plus rapidement que les problèmes avec la plus grande richesse inférieur. Problèmes avec la plus grande richesse très faible (par exemple, 2 % ou moins) nécessite une évaluation de très grande taille définie pour atteindre un nombre important de fichiers concernés.
+Plus le nombre de fichiers appropriés est élevé dans l'ensemble d'évaluation, plus les statistiques et l'efficacité de l'algorithme de stabilité sont précises. Le nombre de fichiers appropriés dans les fichiers d'évaluation dépend de la richesse du problème. Richesse est le pourcentage estimé de fichiers pertinents dans le jeu correspondant à un problème. Les problèmes avec une richesse plus élevée atteindront un nombre plus élevé de fichiers pertinents plus rapidement que les problèmes avec une richesse plus faible. Les problèmes avec une richesse extrêmement faible (par exemple, 2% ou moins) nécessitent un ensemble d'évaluation très important pour atteindre un nombre significatif de fichiers pertinents.
   
-Statistiques, qui sont présentées dans les onglets de suivi et de décider au cours de formation et après le calcul de lot, incluent les estimations de rappel pour passer en revue les différents ensembles. Statistiques, estimations sont basées sur un échantillon définir (dans ce cas, les fichiers d’évaluation) incluent la marge d’erreur et le niveau de confiance de cette marge d’erreur. Par exemple, rappel estimée à 80 % peut-être une marge d’erreur de plus ou moins de 5 % avec un niveau de confiance de 95 %. Cela signifie que le rappel estimé est réellement 75-85 % et cette estimation a 95 % de confiance. Plus le jeu d’évaluation, la marge d’erreur devient plus petite et les statistiques sont plus précis. 
+Les statistiques, présentées dans les onglets suivi et décision lors de la formation et après le calcul par lots, incluent les estimations de rappel pour différents ensembles de révision. Dans statistiques, les estimations basées sur un échantillon défini (dans ce cas, les fichiers d'évaluation) incluent la marge d'erreur et le niveau de confiance de cette marge d'erreur. Par exemple, le rappel estimé de 80% peut avoir une marge d'erreur de plus ou moins 5% avec un niveau de confiance de 95%. Cela signifie que le rappel estimé est en fait de 75% 85% et que cette estimation a une confiance de 95%. Plus l'ensemble d'évaluation est grand, plus la marge d'erreur est faible et plus les statistiques sont précises. 
   
-Une fois l’expert examine un ensemble d’évaluation initiale de 500 fichiers, la pertinence est en mesure de déterminer la marge d’erreur des valeurs de rappel en cours. La pertinence définit également une marge par défaut d’erreur indiquant qu’il est recommandé d’atteindre pour optimiser l’ensemble de l’évaluation. Voici quelques exemples :
+Une fois que l'expert a examiné un ensemble d'évaluation initiale de 500 fichiers, la pertinence est en mesure de déterminer la marge d'erreur actuelle des valeurs de rappel. La pertinence définit également une marge d'erreur par défaut qu'elle recommande d'atteindre pour optimiser l'ensemble d'évaluation. Voici quelques exemples:
   
-- Si l’évaluation déjà définie a engendré une marge d’erreur de plus ou moins 10 %, la pertinence recommande à passer à la formation (aucune évaluation supplémentaire n’est nécessaire). 
+- Si l'ensemble d'évaluation a déjà généré une marge d'erreur de plus ou moins 10%, la pertinence recommande de passer à la formation (aucune révision d'évaluation supplémentaire n'est nécessaire). 
     
-- Si le jeu d’évaluation a engendré une marge d’erreur de plus ou moins 13 %, la pertinence peut vous recommandons de la révision d’un autre ensemble de fichiers d’évaluation pour atteindre une marge inférieure. 
+- Si l'ensemble d'évaluation a généré une marge d'erreur de plus ou moins 13%, la pertinence peut recommander la révision d'un autre ensemble de fichiers d'évaluation pour atteindre une marge plus petite. 
     
-- Si plus grande richesse est très faible, la pertinence est recommandé d’arrêt évaluation même si la marge d’erreur est importante (sans statistiques difficile), car l’ensemble de l’évaluation nécessaire atteindre une marge d’erreur utile est trop importante.
+- Si la richesse est extrêmement faible, la pertinence peut recommander d'arrêter l'évaluation même si la marge d'erreur est importante (rendant les statistiques incommodes), car l'ensemble d'évaluation nécessaire pour atteindre une marge d'erreur utile est trop important.
     
-Chaque problème a son propre richesse, la marge actuelle d’erreur et par conséquent, une estimation du nombre de fichiers d’évaluation supplémentaires. L’ensemble suivant d’évaluation est créée en fonction du nombre maximal de fichiers (jusqu'à 1 000 dans un jeu unique).
+Chaque problème a sa propre richesse, sa marge d'erreur actuelle et, par conséquent, le nombre estimé de fichiers d'évaluation supplémentaires. Le prochain ensemble d'évaluation est créé en fonction du nombre maximal de fichiers (jusqu'à 1 000 dans un seul ensemble).
   
-Vous pouvez accepter les recommandations de la pertinence ou la marge d’erreur actuelle en fonction de vos besoins. La marge actuelle par défaut d’erreur est déterminée pour le rappel à égale ou supérieure à 75 %.
+Vous pouvez accepter les recommandations de pertinence ou ajuster la marge actuelle d'erreur en fonction de vos besoins. La marge d'erreur actuelle par défaut est déterminée pour rappel à une valeur égale ou supérieure à 75%.
   
 > [!NOTE]
-> La phase d’évaluation peut être ignorée, dans le **la pertinence \> suivi** onglet dans l’affichage pour un problème, en désactivant la case à cocher **évaluation** par le problème, puis pour « tous les problèmes ». Toutefois, par conséquent, il n’y aura aucuns statistiques pour ce problème. > Si vous décochez la case à cocher **évaluation** uniquement peut être effectuée avant l’évaluation est effectuée. Il existe plusieurs problèmes dans un cas, évaluation est contournée uniquement si la case à cocher est désactivée pour chaque problème 
+> La phase d'évaluation peut être ignorée, sous l'onglet de **suivi de pertinence \> ** de l'affichage développé d'un problème, en désactivant la case à cocher **évaluation** par problème, puis «tous les problèmes». Toutefois, il n'y aura pas de statistiques pour ce problème. > la désActivation de la case à cocher **évaluation** ne peut être effectuée qu'avant l'évaluation. Dans le cas où plusieurs problèmes existent, l'évaluation est ignorée uniquement si la case à cocher est désactivée pour chaque problème. 
   
 ## <a name="see-also"></a>Voir aussi
 
-[eDiscovery avancée Office 365](office-365-advanced-ediscovery.md)
+[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Marquage et évaluation](tagging-and-assessment-in-advanced-ediscovery.md)
+[Balisage et évaluation](tagging-and-assessment-in-advanced-ediscovery.md)
   
-[Marquage et formation de pertinence](tagging-and-relevance-training-in-advanced-ediscovery.md)
+[Étiquetage et formation à la pertinence](tagging-and-relevance-training-in-advanced-ediscovery.md)
   
-[Analyse de la pertinence de suivi](track-relevance-analysis-in-advanced-ediscovery.md)
+[Analyse de la pertinence](track-relevance-analysis-in-advanced-ediscovery.md)
   
-[Selon les résultats de la sélection du conteneur](decision-based-on-the-results-in-advanced-ediscovery.md)
+[Choix en fonction des résultats](decision-based-on-the-results-in-advanced-ediscovery.md)
   
-[Test d’analyse de la pertinence](test-relevance-analysis-in-advanced-ediscovery.md)
+[Évaluation de l'analyse de pertinence](test-relevance-analysis-in-advanced-ediscovery.md)
 

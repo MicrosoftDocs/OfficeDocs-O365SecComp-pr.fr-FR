@@ -1,87 +1,87 @@
 ---
-title: Définir les options d’analyse dans Office 365 avancée de découverte électronique
+title: Définir les options d’analyse dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
-description: 'Passez en revue les étapes pour configurer les options pour le processus d’analyse d’Office 365 avancée eDiscovery, y compris près de doublons, les threads de messagerie et des thèmes.  '
-ms.openlocfilehash: a0ebbadb180321a3094cb1056ed8e0e6500ee66a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Passez en revue les étapes de configuration des options pour le processus Analyze dans Office 365 Advanced eDiscovery, y compris les thèmes de quasi-duplication, les threads de messagerie et les thèmes.  '
+ms.openlocfilehash: 12bbe4043803c165a58adac80b72d03afd48adc7
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22528093"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218224"
 ---
-# <a name="set-analyze-options-in-office-365-advanced-ediscovery"></a>Définir les options d’analyse dans Office 365 avancée de découverte électronique
+# <a name="set-analyze-options-in-office-365-advanced-ediscovery"></a>Définir les options d’analyse dans Office 365 Advanced eDiscovery
 
 > [!NOTE]
-> Découverte avancée nécessite un Office 365 E3 avec le module complémentaire de conformité avancée ou un abonnement E5 pour votre organisation. Si vous n’avez qu’un plan d’et essayer eDiscovery avancé, vous pouvez [inscrire à une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-Dans Paramètres avancés eDiscovery, définissez les options d’analyse avant d’exécuter l’analyse.
+Dans Advanced eDiscovery, définissez les options d'analyse avant d'exécuter Analyze.
   
-## <a name="set-analyze-options"></a>Définir les options d’analyse
+## <a name="set-analyze-options"></a>Définir les options d'analyse
 
-Open **préparer \> analyser** \> **le programme d’installation**. La fenêtre suivante s’affiche.
+Ouvrez **Prepare prepare \> prepare** **** \> Setup. La fenêtre suivante s'affiche.
   
 ![Options Définir l’analyse](media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
   
- **Près de doublons et les threads de messagerie** Cette case à cocher si vous souhaitez exécuter l’analyse. Il est sélectionné par défaut. 
+ **Quasi-doublons et threads de messagerie** Activez cette case à coCher si vous souhaitez exécuter l'analyse. Elle est sélectionnée par défaut. 
   
- **Similarité de document** Entrez la valeur de seuil des doublons Near ou acceptez la valeur par défaut de 65 %. 
+ **Similarité des documents** Entrez la valeur de seuil des quasi-doublons ou acceptez la valeur par défaut de 65%. 
   
- **Thèmes** Cochez cette case pour traiter tous les fichiers et leur attribuer des thèmes. Par défaut, cette case à cocher n’est pas sélectionnée. Entrez les options suivantes si vous souhaitez effectuer des thèmes de traitement.
+ **Thèmes** Activez cette case à coCher pour traiter tous les fichiers et leur affecter des thèmes. Par défaut, cette case à cocher n'est pas activée. Entrez les options suivantes si vous souhaitez effectuer le traitement des thèmes.
   
 - **Nombre maximal de thèmes** Entrez ou sélectionnez une valeur pour le nombre de thèmes à créer. La valeur par défaut est 200. 
     
     > [!NOTE]
-    > Augmentation du nombre de thèmes affecte les performances, ainsi que la capacité d’un thème pour généraliser. Plus le nombre de thèmes, le plus granulaires, ils se trouvent. Par exemple, si un ensemble de 50 thèmes include un thème tels que « Basketball, rapide, pince, Lakers » ; 300 thèmes peuvent inclure des thèmes distincts : « Incite », « TONDEUSE », « Lakers ». Si vous n’avez aucune prise de conscience du thème « Basketball » et que vous utilisez cette fonctionnalité pour ECA, voir le thème « Basketball » peut être utile. Mais, si le traitement a un trop grand nombre de thèmes, vous visualiserez jamais le mot « Basketball » et peut ne pas savez que rapide et tondeuse est bonnes thèmes Basketball pour passer en revue, au lieu d’articles qui passent sur démarre et utilisés pour cheveux. 
+    > L'augmentation du nombre de thèmes a une incidence sur les performances, ainsi que sur la capacité d'un thème à généraliser. Plus le nombre de thèmes est élevé, plus il est granulaire. Par exemple, si un jeu de thèmes 50 inclut un thème tel que «basket-ball, Spurs, déToureurs, Lakers»; 300 les thèmes peuvent inclure des thèmes distincts: «Spurs», «Clipper», «Lakers». Si vous n'avez pas conscience du thème «basket» et si vous utilisez cette fonctionnalité pour ECA, voir le thème «basket» peut être utile. Toutefois, si le traitement avait trop de thèmes, il se peut que vous ne trouviez jamais le mot «basket-ball» et que des Spurs et des déCoupages soient des thèmes de basket-ball intéressants à consulter, plutôt que des éléments qui se trouvent sur les bottes et utilisés pour les cheveux. 
   
-- **Thèmes suggérés** Vous pouvez proposer des mots de thème pour contrôler le traitement des thèmes. Découverte avancée sera se concentrer sur ces mots suggérés et essayez de créer un ou plusieurs thèmes pertinents, en fonction des paramètres « Max nombre de thèmes ». 
+- **Thèmes suggérés** Vous pouvez suggérer des mots de thème pour contrôler le traitement des thèmes. Advanced eDiscovery se concentrera sur ces suggestions de mots et tentera de créer un ou plusieurs thèmes pertinents, en fonction des paramètres «nombre maximal de thèmes». 
     
-    Par exemple, si le mot suggéré est « computer », et vous avez spécifié « 2 » comme « nombre maximal de thèmes », eDiscovery avancée essaiera générer des thèmes de deux qui sont associées au mot « computer ». Les deux thèmes est « logiciel » et « matériel informatique », par exemple. 
+    Par exemple, si le mot suggéré est «ordinateur» et que vous avez spécifié «2» comme «nombre maximal de thèmes», Advanced eDiscovery essaiera de générer deux thèmes liés au mot «ordinateur». Les deux thèmes peuvent être «logiciels informatiques» et «matériel informatique», par exemple. 
     
     ![Ajouter une suggestion de thème](media/06e9ffd3-a76c-423b-b450-9e465eb9a02f.png)
   
-1. Pour afficher, ajouter ou modifier des thèmes suggérées, cliquez sur **Modifier**.
+1. Pour afficher, ajouter ou modifier des thèmes suggérés, cliquez sur **modifier**.
     
-2. Dans le panneau de configuration **des thèmes suggérés** , cliquez sur **Ajouter**![icône Ajouter](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) icône pour ajouter un thème. Dans le volet **Ajouter suggérée thème** , ajoutez les mots, séparés par des virgules. 
+2. Dans le panneau **thèmes suggérés** , cliquez sur l'icône](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) **Ajouter**![une icône Ajouter pour ajouter un thème. Dans le panneau **Ajouter un thème suggéré** , ajoutez les mots, séparés par des virgules. 
     
-3. Dans **nombre de thèmes**, sélectionnez une valeur pour déterminer le nombre de thèmes eDiscovery avancée essaieront de générer ces termes (valeur par défaut est 1 thème).
+3. Dans **nombre de thèmes**, sélectionnez une valeur pour déterminer le nombre de thèmes que la fonctionnalité eDiscovery avancée essaiera de générer pour ces mots (la valeur par défaut est 1 thème).
     
 4. Cliquez sur **Enregistrer** , puis fermez la boîte de dialogue. 
     
     > [!NOTE]
-    > Le nombre total de thèmes inclut des thèmes suggéré. Les thèmes suggérés total ne peut pas dépasser les thèmes total. S’il existe de nombreux thèmes suggérée par rapport aux thèmes total, uniquement quelques thèmes de « nouveau » seront détectés par le système, car la plupart des thèmes sera consacrée aux thèmes suggéré. 
+    > Le nombre total de thèmes inclut les thèmes suggérés. Le total des thèmes suggérés ne peut pas dépasser le nombre total de thèmes. S'il existe de nombreux thèmes suggérés par rapport au nombre total de thèmes, seuls quelques «nouveaux» thèmes seront détectés par le système, car la plupart des thèmes seront dédiés aux thèmes suggérés. 
   
 - **Mode** Dans la liste déroulante, sélectionnez une option de **thèmes** : 
     
-  - **Créer et appliquer le modèle**: calcule des thèmes par les modèles d’un segment des fichiers et puis distribue les fichiers entre eux.
+  - **Créer et appliquer un modèle**: calcule les thèmes par modèles à partir d'un segment des fichiers, puis distribue les fichiers entre eux.
     
-  - **Créer un modèle**: calcule un modèle de thèmes à partir d’un segment des fichiers. Le processus d’appliquer de la division de fichiers s’effectue séparément à un autre moment.
+  - **Créer un modèle**: calcule un modèle de thèmes à partir d'un segment des fichiers. Le processus d'application de la Division des fichiers est réalisé séparément à un autre moment.
     
-  - **Appliquer modèle**: cette option ne s’affiche que si un modèle a été créé précédemment et n’est pas encore appliqué. Il divise les fichiers selon les thèmes.
+  - **Appliquer le modèle**: cette option n'est visible que si un modèle a été créé précédemment et n'a pas encore été appliqué. Cela permet de diviser les fichiers en fonction des thèmes.
     
-Vous pouvez également [définir ignorer le texte](set-ignore-text-in-advanced-ediscovery.md) et [définir Analyze paramètres avancé](set-analyze-advanced-settings-in-advanced-ediscovery.md) pour l’analyse. 
+Vous pouvez également [définir ignorer le texte](set-ignore-text-in-advanced-ediscovery.md) et [définir les paramètres avancés](set-analyze-advanced-settings-in-advanced-ediscovery.md) d'analyse pour l'analyse. 
   
-Une fois que vous avez défini ces options, cliquez sur **analyse** à exécuter. [Affichage analyser les résultats](view-analyze-results-in-advanced-ediscovery.md) sont affichés. 
+Après avoir défini ces options, cliquez sur **analyser** pour exécuter. [Afficher les résultats](view-analyze-results-in-advanced-ediscovery.md) de l'analyse sont affichés. 
   
 ## <a name="see-also"></a>Voir aussi
 
-[eDiscovery avancée Office 365](office-365-advanced-ediscovery.md)
+[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
   
-[Présentation de similarité de document](understand-document-similarity-in-advanced-ediscovery.md)
+[Présentation de la similarité des documents](understand-document-similarity-in-advanced-ediscovery.md)
   
-[Définir le texte de la case à cocher Ignorer](set-ignore-text-in-advanced-ediscovery.md)
+[Définir le texte ignoré](set-ignore-text-in-advanced-ediscovery.md)
   
 [Paramètres avancés Définir l’analyse](set-analyze-advanced-settings-in-advanced-ediscovery.md)
   
-[Afficher les résultats d’analyse](view-analyze-results-in-advanced-ediscovery.md)
+[Afficher les résultats de l'analyse](view-analyze-results-in-advanced-ediscovery.md)
 

@@ -6,16 +6,16 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.date: 02/06/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: La protection anti-hameçonnage, avec une protection complète dans le cadre d'Office 365 protection avancée contre les menaces et de la protection de base dans Office 365 Exchange Online Protection, peut vous aider à protéger votre organisation contre les attaques de hameçonnage malveillant basées sur l'emprunt d'identité. et d'autres attaques par hameçonnage.
-ms.openlocfilehash: 94aa4ca6339ee0e0c250e96b9d8a499c83e964f7
-ms.sourcegitcommit: 32cb896aef370764ec6e8f8278ebaf16f1c5ff37
+ms.openlocfilehash: da18fdb3592d4d0dbe3d62c11627a7057fec5ed6
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30123965"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213704"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Configurer des stratégies anti-hameçonnage et anti-hameçonnage Office 365 ATP
 

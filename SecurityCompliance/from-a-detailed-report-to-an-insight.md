@@ -6,44 +6,44 @@ manager: laurawi
 ms.date: 6/4/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
-description: Découvrez comment vous pouvez déplacer un rapport détaillé pour un aperçu des actions recommandées dans la sécurité &amp; centre de conformité.
-ms.openlocfilehash: 48c7283723a75685e16e1f7ddbe34bc3779819cf
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: Découvrez comment passer d'un rapport détaillé à un aperçu des actions recommandées dans le centre de &amp; sécurité conformité.
+ms.openlocfilehash: b0fdb3a75db8e3b18813193a5fa7c5523de16fe8
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014976"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219084"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>Procédure pas à pas. D’un rapport détaillé à un aperçu
 
-Si vous utilisez pour [des rapports et des vues d’ensemble de sécurité Office 365 &amp; centre de conformité](reports-and-insights-in-security-and-compliance.md), il peut vous aider à voir comment vous pouvez accéder facilement à partir d’un rapport détaillé à un aperçu et les actions recommandées. 
+Si vous débutez avec des [rapports et des informations dans le centre de sécurité &amp; conformité Office 365](reports-and-insights-in-security-and-compliance.md), il peut vous aider à naviguer dans un rapport détaillé vers une vue d'analyse et des actions recommandées. 
   
-Il s’agit d’une des procédures pas à pas plusieurs pour la sécurité &amp; centre de conformité. Pour voir les procédures pas à pas supplémentaires, consultez la section [Rubriques connexes](#related-topics) . 
+Il s'agit de l'une des nombreuses procédures pas &amp; à pas pour le centre de sécurité conformité. Pour voir des procédures pas à pas supplémentaires, consultez la section [Rubriques connexes](#related-topics) . 
   
-## <a name="walkthrough-from-a-detailed-report-to-an-insight"></a>Procédure pas à pas : à partir d’un rapport détaillé d’une analyse
+## <a name="walkthrough-from-a-detailed-report-to-an-insight"></a>Procédure pas à pas: d'un rapport détaillé vers un aperçu
 
-Examinons le flux à partir d’un rapport détaillé pour un aperçu et actions. (Ceci est un exemple de brèves [anti-spam et contre les programmes malveillants](anti-spam-and-anti-malware-protection.md) .) 
+Passons en revue le flux d'un rapport détaillé vers une vue et des actions. (Il s'agit d'un bref exemple de [blocage du courrier indésirable et de programmes malveillants](anti-spam-and-anti-malware-protection.md) .) 
   
-1. Nous commençons par [sécurité &amp; centre de conformité](https://protection.office.com) rapports. (Accédez aux **rapports** \> **tableau de bord**.)<br/>![Dans la sécurité &amp; centre de conformité, accédez aux rapports \> tableau de bord](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
+1. Nous commençons par les rapports du [Centre de sécurité &amp; conformité](https://protection.office.com) . (Accédez au **** \> **tableau de bord**rapports.)<br/>![Dans le centre &amp; de sécurité conformité, accédez à \> rapports de tableau de bord](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
   
-2. Nous choisir un rapport pour obtenir une vue plus détaillée. (Choisir un rapport, telles que le rapport **d’État de Protection de menace** ).<br/>![Rapport d’état de Protection de menace affichant les détails](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
+2. Nous allons choisir un rapport pour obtenir une vue plus détaillée. (Choisissez un rapport, tel que le rapport d' **État de protection contre les menaces** .)<br/>![Rapport d'état de protection contre les menaces affichant des informations](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   
-3. Nous constatons un indicateur insights dans le graphique et le rapport. Positionnement du pointeur de la souris sur le marqueur insights donne des informations supplémentaires. (Pointez sur le marqueur de détails pour afficher des détails supplémentaires).
+3. Nous constatons un indicateur Insights dans le graphique, ainsi que sous le rapport. Le positionnement du pointeur de la souris sur le marqueur Insights donne des détails supplémentaires. (Pointez sur le marqueur Insights pour afficher des détails supplémentaires.)
     
-4. Cliquez sur l’indicateur insights dans le graphique ou le widget d’informations sur les programmes malveillants sous le graphique pour ouvrir un volet de détails. (Sous le graphique, sélectionnez le widget insights.)<br/>![Détails d’informations sur les programmes malveillants](media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)<br/>Le volet de détails fournit des informations et des recommandations à prendre en compte, y compris l’examen des stratégies, mener davantage l’exploration et modification de l’état. ([En savoir plus sur la protection contre le courrier indésirable et anti-programme malveillant dans Office 365](anti-spam-and-anti-malware-protection.md)).
+4. Si vous cliquez sur le marqueur Insights dans le graphique ou sur le widget Insights sur les programmes malveillants sous le graphique, un volet de détails s'ouvre. (Sous le graphique, sélectionnez le widget Insights.)<br/>![Détails des informations sur les programmes malveillants](media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)<br/>Le volet d'informations fournit des informations et des recommandations à prendre en compte, notamment la révision des stratégies, l'exploration et l'état de modification. ([En savoir plus sur la protection contre le courrier indésirable et les programmes malveillants dans Office 365](anti-spam-and-anti-malware-protection.md).)
     
-De cette façon, nous pouvez passer d’un rapport détaillé à un aperçu et actions recommandées. 
+De cette façon, nous pouvons passer d'un rapport détaillé à une vue et aux actions recommandées. 
   
 ## <a name="related-topics"></a>Voir aussi
 
-[Procédure pas à pas : à partir d’un aperçu à un rapport détaillé](from-an-insight-to-a-detailed-report.md)
+[Procédure pas à pas: d'un aperçu d'un rapport détaillé](from-an-insight-to-a-detailed-report.md)
   
-[Procédure pas à pas : à partir d’un tableau de bord pour un aperçu](from-a-dashboard-to-an-insight.md)
+[Procédure pas à pas: d'un tableau de bord vers un aperçu](from-a-dashboard-to-an-insight.md)
   
 

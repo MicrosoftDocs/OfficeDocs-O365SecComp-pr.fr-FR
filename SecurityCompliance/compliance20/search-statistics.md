@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,57 +14,53 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 0cfc1e5f04887cbdbcc0be8854fc50d6f9b5f1f2
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 98999d3d82efaace7673d70b0334cb0efb80fc08
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706005"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215204"
 ---
 # <a name="search-statistics"></a>Statistiques de recherche
 
-Une manière, vous pouvez valider vos résultats de recherche consiste à consulter les statistiques sur les résultats pour vous assurer qu’ils s’alignent à vos attentes. Lorsqu’une recherche est terminée, les statistiques de haut niveau sont affichés dans la fenêtre Détails de recherche mobile :
-- Nombre et le volume des éléments récupérés par la recherche
-- Nombre et le volume des partiellement indexé/non indexés les éléments qui ont été détectés dans les emplacements de recherche
-- Nombre de boîtes aux lettres et les emplacements de recherche. Afin d’afficher des statistiques plus détaillées, cliquez sur « Statistiques » à partir de la fenêtre Détails de recherche mobile.
+Vous pouvez valider vos résultats de recherche en examinant les statistiques de vos résultats afin de vous assurer qu'ils correspondent à vos attentes. Une fois la recherche terminée, les statistiques de haut niveau apparaissent dans la fenêtre d'affichage des détails de la recherche:
+- Nombre et volume d'éléments récupérés par la recherche
+- Nombre et volume d'éléments partiellement indexés/non indexés qui ont été trouvés dans les emplacements de recherche
+- Nombre de boîtes aux lettres et d'emplacements recherchés. Pour afficher des statistiques plus détaillées, cliquez sur «statistiques» dans la fenêtre mobile des détails de recherche.
 
 ## <a name="summary"></a>Résumé
 
-Dans l’affichage de synthèse, vous pouvez voir les résultats de recherche par type d’emplacement (par exemple, Exchange). Pour chaque type d’emplacement, vous pouvez voir :
-- Nombre d’emplacements dont les éléments qui remplissent les conditions de recherche
-- Nombre d’éléments à partir de ces emplacements qui remplissent les conditions de recherche
-- Volume total des éléments répondant aux conditions de la recherche.
+En mode Résumé, vous pouvez voir les résultats de la recherche décomposés par type d'emplacement (par exemple, Exchange). Pour chaque type d'emplacement, vous pouvez voir:
+- Nombre d'emplacements qui ont des éléments correspondant aux conditions de recherche
+- Nombre d'éléments à partir de ces emplacements qui correspondent aux conditions de recherche
+- Volume total des éléments qui correspondent aux conditions de recherche.
 
-## <a name="top-locations"></a>Emplacements supérieurs
+## <a name="top-locations"></a>Emplacements les plus fréquents
 
-Dans la vue des emplacements supérieure, vous voyez les emplacements individuels avec le plus de correspondances. Pour chaque emplacement, vous voyez s’afficher :
-- Nom de l’emplacement (par exemple, les URL SharePoint)
+Dans la vue des emplacements principaux, vous voyez les différents emplacements avec le plus de correspondances. Pour chaque emplacement, vous verrez:
+- Nom de l'emplacement (par exemple, URL SharePoint)
 - Type d'emplacement
-- Nombre d’éléments qui remplissent les conditions de recherche
-- Volume total des éléments répondant aux conditions de la recherche.
+- Nombre d'éléments correspondant aux conditions de recherche
+- Volume total des éléments qui correspondent aux conditions de recherche.
 
 ## <a name="queries"></a>Requêtes
 
-Si vous avez utilisé le mot clé (c:s) ou des lignes de mots clés dans votre requête, vous pouvez voir la répartition de votre requête en mode de requêtes par type d’emplacement. Pour chaque type d’emplacement, vous voyez s’afficher :
+Si vous avez utilisé (c:s) des lignes de mots clés ou de mots clés dans votre requête, vous pouvez voir la répartition de votre requête en mode requêtes par type d'emplacement. Pour chaque type d'emplacement, vous verrez:
 
-- Partie : cette colonne aura soit le mot « Principal » ou « Mots clés ». « Principal » signifie que la ligne affiche les statistiques sur l’intégralité de la requête, tandis que « Mots clés » signifie qu’un des composants de requête.
+- Part: cette colonne aura le mot «Primary» ou «Keyword». «Primary» signifie que la ligne présente des statistiques sur l'ensemble de la requête, tandis que «Keyword» désigne l'un des composants de la requête.
 
-- Requête : le composant de requête fait référence la ligne. Si la partie est « Principal », il s’agit de l’intégralité de la requête ; Si le composant a été « Mots clés », vous verrez un des composants de requête ici.
+- Requête: le composant de requête réel auquel la ligne fait référence. Si la partie est «principale», il s'agit de la requête entière; Si la partie était «mot clé», vous verrez l'un des composants de requête ici.
   
-  - Lorsque vous recherchez toutes les boîtes aux lettres contenuédition (en spécifiant ne pas les mots clés), la requête réelle est (taille > = 0) afin que tous les éléments sont retournés.
+  - Lorsque vous effectuez une recherche dans toutes les boîtes aux lettres de contenu (en ne spécifiant aucun mot-clé), la requête réelle est (dimensionner > = 0) de sorte que tous les éléments soient renvoyés.
   
-  - Lors de la recherche OneDrive et SharePoint Online pour les sites, les deux composants suivants sont ajoutés :
+  - Lorsque vous effectuez des recherches dans des sites SharePoint Online et OneDrive entreprise, les deux composants suivants sont ajoutés:
     
-    - PAS IsExternalContent:1 - exclut tout le contenu d’une organisation de SharePoint sur site
+    - NON IsExternalContent: 1-exclut le contenu d'une organisation SharePoint locale
     
-    - PAS isOneNotePage : 1 - exclut tous les fichiers OneNote, car il s’agit des doublons de n’importe quel document qui correspond à la requête de recherche.
+    - NON isOneNotePage: 1-exclut tous les fichiers OneNote, car il s'agit de doublons de tous les documents qui correspondent à la requête de recherche.
 
-- Nombre d’emplacements dont les éléments qui remplissent les conditions de recherche.
+- Nombre d'emplacements qui ont des éléments correspondant aux conditions de recherche.
 
-- Nombre d’éléments à partir de ces emplacements qui remplissent les conditions de recherche.
+- Nombre d'éléments à partir de ces emplacements qui correspondent aux conditions de recherche.
 
-- Volume total des éléments répondant aux conditions de la recherche.
-
-## <a name="refiners"></a>Affinements
-
-Pour les boîtes aux lettres Exchange, le mode affinements offre des répartitions supplémentaires par ItemClass, l’expéditeur et destinataire. Pour chaque emplacement et affinement de la valeur, vous pouvez voir le nombre de documents qui ont été renvoyé par la recherche.
+- Volume total des éléments qui correspondent aux conditions de recherche.

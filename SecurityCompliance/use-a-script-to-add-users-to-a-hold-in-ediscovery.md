@@ -1,91 +1,91 @@
 ---
-title: Utiliser un script pour ajouter des utilisateurs à une suspension dans un cas de découverte électronique de sécurité Office 365 &amp; centre de conformité
+title: Utiliser un script pour ajouter des utilisateurs à une conservation dans un cas eDiscovery dans le centre de &amp; sécurité conformité Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 1/23/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MED150
 - MBS150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
-description: Exécuter un script afin d’ajouter rapidement des boîtes aux lettres et de OneDrive entreprise des sites à une suspension nouveau associé à un cas de découverte électronique de sécurité Office 365 &amp; centre de conformité.
-ms.openlocfilehash: 2c93deb14bc8c1f89dab7bb054d2e94db06cfbd5
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: Exécutez un script pour ajouter rapidement des boîtes aux lettres et des sites OneDrive entreprise à un nouveau blocage associé à un cas eDiscovery dans le centre de sécurité &amp; conformité Office 365.
+ms.openlocfilehash: b9d34f4576299dccf0f751c7f204639b5a770b32
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038257"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214284"
 ---
-# <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-office-365-security-amp-compliance-center"></a>Utiliser un script pour ajouter des utilisateurs à une suspension dans un cas de découverte électronique de sécurité Office 365 &amp; centre de conformité
+# <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-office-365-security-amp-compliance-center"></a>Utiliser un script pour ajouter des utilisateurs à une conservation dans un cas eDiscovery dans le centre de &amp; sécurité conformité Office 365
 
-L’Office 365 Security &amp; centre de conformité fournit beaucoup des applets de commande Windows PowerShell qui vous permettent d’automatiser les tâches longues liées à la création et la gestion des cas eDiscovery. Actuellement, à l’aide de l’outil cas eDiscovery dans la sécurité &amp; centre de conformité pour placer un grand nombre d’emplacements de contenu dépositaire en attente prend la préparation et du temps. Par exemple, avant de créer une suspension, vous devez recueillir l’URL pour chaque site d’entreprise que vous souhaitez mettre en attente OneDrive. Puis pour chaque utilisateur que vous souhaitez mettre en attente, vous devez ajouter leur boîte aux lettres et leur site Business OneDrive à la suspension. Dans les futures versions de la sécurité &amp; centre de conformité, cela obtiendra plus facile à faire. En attendant, vous pouvez utiliser le script dans cet article pour automatiser ce processus.
+Le centre de sécurité &amp; conformité Office 365 fournit un grand nombre d'applets de commande Windows PowerShell qui vous permettent d'automatiser les tâches fastidieuses liées à la création et à la gestion des cas eDiscovery. Actuellement, l'utilisation de l'outil de cas eDiscovery &amp; dans le centre de conformité et de sécurité pour mettre en attente un grand nombre d'emplacements de contenu de dépositaire prend du temps et une préparation. Par exemple, avant de créer une conservation, vous devez collecter l'URL de chaque site OneDrive entreprise que vous souhaitez mettre en attente. Ensuite, pour chaque utilisateur que vous souhaitez mettre en attente, vous devez ajouter sa boîte aux lettres et son site OneDrive entreprise à la suspension. Dans les versions ultérieures du &amp; Centre de sécurité conformité, cela sera plus facile à réaliser. En attendant, vous pouvez utiliser le script de cet article pour automatiser ce processus.
   
-Le script vous invite à fournir le nom de domaine du site Mon site dans votre organisation (par exemple, **contoso** dans l’URL https://contoso-my.sharepoint.com), le nom d’un cas de découverte électronique existant, le nom de la nouvelle mise en attente qui associés au cas, une liste d’adresses de messagerie des utilisateurs que vous souhaitez Pour mettre en attente et une requête de recherche à utiliser si vous souhaitez créer une suspension basée sur une requête. Le script obtient ensuite l’URL pour le site de l’entreprise pour chaque utilisateur dans la liste OneDrive, crée la suspension de nouveau, puis ajoute la boîte aux lettres et OneDrive pour le site de l’entreprise pour chaque utilisateur dans la liste à la suspension. Le script génère également des fichiers journaux qui contiennent des informations sur la mise en attente. 
+Le script vous invite à indiquer le nom du domaine mon site de votre organisation (par exemple, **contoso** dans l' https://contoso-my.sharepoint.com)URL, le nom d'un cas eDiscovery existant, le nom du nouveau blocage associé au cas, une liste des adresses de messagerie des utilisateurs de votre choix à mettre en attente et une requête de recherche à utiliser si vous souhaitez créer une conservation basée sur une requête. Le script obtient ensuite l'URL du site OneDrive entreprise pour chaque utilisateur de la liste, crée la nouvelle conservation, puis ajoute la boîte aux lettres et le site OneDrive entreprise pour chaque utilisateur de la liste à la suspension. Le script génère également des fichiers journaux qui contiennent des informations sur la nouvelle conservation. 
   
-Voici comment procéder :
+Voici la procédure à suivre:
   
 [Étape 1 : installer SharePoint Online Management Shell](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step1)
   
-[Étape 2 : Générer une liste d’utilisateurs](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step2)
+[Étape 2: générer une liste d'utilisateurs](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step2)
   
-[Étape 3 : Exécuter le script pour créer une suspension et ajouter des utilisateurs](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step3)
+[Étape 3: exécuter le script pour créer une conservation et ajouter des utilisateurs](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step3)
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Vous devez être membre du groupe de rôles eDiscovery responsable de la sécurité &amp; centre de conformité et un administrateur global de SharePoint Online pour exécuter le script à l’étape 3. Pour plus d’informations, voir [attribuer des autorisations de sécurité Office 365 eDiscovery &amp; centre de conformité](assign-ediscovery-permissions.md).
+- Vous devez être membre du groupe de rôles gestionnaire eDiscovery dans le centre de sécurité &amp; conformité et d'un administrateur global SharePoint Online pour exécuter le script à l'étape 3. Pour plus d'informations, consultez [la rubrique attribution d'autorisations eDiscovery dans &amp; le centre de sécurité conformité Office 365](assign-ediscovery-permissions.md).
     
-- Un maximum de 1 000 boîtes aux lettres et 100 sites peut être ajouté à une suspension associé à un cas de découverte électronique dans la sécurité &amp; centre de conformité. En supposant que tous les utilisateurs que vous souhaitez mettre en attente a un OneDrive pour le site de l’entreprise, vous pouvez ajouter un maximum de 100 utilisateurs à une suspension à l’aide du script dans cet article. 
+- Un maximum de 1 000 boîtes aux lettres et de 100 sites peuvent être ajoutés à une conservation qui est associée à un cas de découverte &amp; électronique dans le centre de sécurité conformité. En supposant que chaque utilisateur que vous souhaitez mettre en attente dispose d'un site OneDrive entreprise, vous pouvez ajouter un maximum de 100 utilisateurs à une conservation à l'aide du script de cet article. 
     
-- Veillez à enregistrer la liste des utilisateurs que vous créez dans l’étape 2 et le script à l’étape 3 dans le même dossier. Qui facilitera exécuter le script.
+- Veillez à enregistrer la liste des utilisateurs que vous créez à l'étape 2 et le script de l'étape 3 dans le même dossier. Cela facilitera l'exécution du script.
     
-- Le script ajoute la liste des utilisateurs à une suspension nouveau qui est associée à un cas existant. N’oubliez pas que vous souhaitez associer la suspension avec création avant d’exécuter le script.
+- Le script ajoute la liste des utilisateurs à une nouvelle conservation associée à un cas existant. Assurez-vous que le cas où vous souhaitez associer le blocage est créé avant d'exécuter le script.
     
-- Le script inclut la gestion des erreurs minimale. Son objectif principal est rapidement et facilement placer la boîte aux lettres et OneDrive pour le site d’entreprise de chaque utilisateur de blocage.
+- Le script inclut une gestion des erreurs minimale. Son objectif principal est de placer rapidement et facilement la boîte aux lettres et le site OneDrive entreprise de chaque utilisateur en conservation.
     
 - Les exemples de script fournis dans cette rubrique ne sont pris en charge dans aucun programme de support ou service standard de Microsoft. Les exemples de scripts sont fournis en l’état, sans garantie d’aucune sorte. Microsoft exclut toute garantie implicite, y compris, sans limitation, les garanties implicites de qualité marchande ou d’adéquation à un usage particulier. Vous assumez tous les risques liés à l’utilisation ou à l’exécution des exemples de scripts et de la documentation. En aucun cas, Microsoft, ses auteurs ou toute personne impliquée dans la création, la production ou la livraison des scripts ne sont responsables de dommages quelconques (y compris, sans limitation, pertes de bénéfices, interruption d’activité, perte d’informations commerciales ou toute autre perte pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
 
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>Étape 1 : installer SharePoint Online Management Shell
 
-La première étape consiste à installer SharePoint Online Management Shell s’il n’est pas déjà installé sur votre ordinateur local. Vous n’êtes pas obligé d’utiliser le shell de cette procédure, mais vous devez l’installer, car il contient les conditions préalables requises par le script que vous exécutez l’étape 3. Ces conditions préalables autoriser le script communiquer avec SharePoint Online pour obtenir l’URL pour OneDrive pour les sites.
+La première étape consiste à installer SharePoint Online Management Shell s'il n'est pas déjà installé sur votre ordinateur local. Vous n'avez pas besoin d'utiliser l'environnement de commande Exchange Management Shell dans cette procédure, mais vous devez l'installer car il contient les conditions préalables requises par le script exécuté à l'étape 3. Ces conditions préalables permettent au script de communiquer avec SharePoint Online pour obtenir les URL des sites OneDrive entreprise.
   
-Accédez à [configurer l’environnement SharePoint Online Management Shell Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=286318) et effectuer l’étape 1 et l’étape 2 pour installer SharePoint Online Management Shell sur votre ordinateur local. 
+Accédez à [la configuration de l'environnement Windows PowerShell de SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkID=286318) et effectuez les étapes 1 et 2 pour installer SharePoint Online Management Shell sur votre ordinateur local. 
 
-## <a name="step-2-generate-a-list-of-users"></a>Étape 2 : Générer une liste d’utilisateurs
+## <a name="step-2-generate-a-list-of-users"></a>Étape 2: générer une liste d'utilisateurs
 <a name="step2"> </a>
 
-Le script à l’étape 3 crée une suspension associé à un cas eDiscovery et ajoutez les boîtes aux lettres et OneDrive pour les sites d’entreprise d’une liste d’utilisateurs à la suspension. Vous pouvez taper les adresses de messagerie dans un fichier texte, ou vous pouvez exécuter une commande de Windows PowerShell pour obtenir une liste des adresses de messagerie et les enregistrer dans un fichier (situé dans le même dossier que vous allez enregistrer le script à l’étape 3).
+Le script de l'étape 3 crée une conservation associée à un cas de découverte électronique, ainsi que les sites ajouter les boîtes aux lettres et OneDrive entreprise d'une liste d'utilisateurs à la suspension. Vous pouvez simplement taper les adresses de messagerie dans un fichier texte ou exécuter une commande dans Windows PowerShell pour obtenir la liste des adresses de messagerie et les enregistrer dans un fichier (situé dans le même dossier dans lequel vous enregistrerez le script à l'étape 3).
   
-Voici une commande PowerShell (que vous exécutez à l’aide de PowerShell à distance connecté à votre organisation Exchange Online) pour obtenir une liste des adresses de messagerie pour tous les utilisateurs de votre organisation et enregistrez-le dans un fichier texte nommé HoldUsers.txt.
+Voici une commande PowerShell (que vous exécutez à l'aide de PowerShell distant connecté à votre organisation Exchange Online) pour obtenir une liste d'adresses de messagerie pour tous les utilisateurs de votre organisation et l'enregistrer dans un fichier texte nommé HoldUsers. txt.
   
 ```
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > HoldUsers.txt
 ```
 
-Une fois que vous exécutez cette commande, ouvrez le fichier texte et supprimez l’en-tête qui contient le nom de la propriété `PrimarySmtpAddress`. Supprimez toutes les adresses de messagerie à l’exception de celles pour les utilisateurs que vous souhaitez ajouter à la suspension que vous créerez à l’étape 3. Assurez-vous qu’il n’y aucune ligne vide avant ou après la liste des adresses de messagerie.
+Après avoir exécuté cette commande, ouvrez le fichier texte et supprimez l'en-tête qui contient le `PrimarySmtpAddress`nom de la propriété,. Ensuite, supprimez toutes les adresses de messagerie sauf celles des utilisateurs que vous souhaitez ajouter à la suspension que vous allez créer à l'étape 3. Assurez-vous qu'il n'y a pas de ligne vide avant ou après la liste des adresses de messagerie.
   
 
   
-## <a name="step-3-run-the-script-to-create-a-hold-and-add-users"></a>Étape 3 : Exécuter le script pour créer une suspension et ajouter des utilisateurs
+## <a name="step-3-run-the-script-to-create-a-hold-and-add-users"></a>Étape 3: exécuter le script pour créer une conservation et ajouter des utilisateurs
 <a name="step3"> </a>
 
-Lorsque vous exécutez le script dans cette étape, il vous invite à vous pour obtenir les informations suivantes. Veillez à préparer les informations suivantes avant d’exécuter le script.
+Lorsque vous exécutez le script dans cette étape, il vous invite à fournir les informations suivantes. Assurez-vous que vous disposez de ces informations avant d'exécuter le script.
   
-- **Vos informations d’identification utilisateur** - le script utiliseront vos informations d’identification pour se connecter à la sécurité &amp; centre de conformité avec PowerShell à distance. Il utilise également ces informations d’identification pour accéder à SharePoint Online pour obtenir le OneDrive pour les URL de l’entreprise pour la liste des utilisateurs.
+- **Vos informations d'identification utilisateur** : le script utilisera vos informations d'identification pour se connecter &amp; au centre de sécurité conformité avec PowerShell à distance. Il utilisera également ces informations d'identification pour accéder à SharePoint Online afin d'obtenir les URL OneDrive entreprise pour la liste des utilisateurs.
     
-- **Nom de votre domaine monsite** - monsite le domaine est le domaine qui contient tous les OneDrive pour les sites d’entreprise dans votre organisation. Par exemple, si l’URL de votre domaine monsite est **https://contoso-my.sharepoint.com**, puis entrez `contoso` lorsque le script vous demande le nom de votre domaine monsite. 
+- **Nom de votre domaine mon** site: le domaine mon site est celui qui contient tous les sites OneDrive entreprise de votre organisation. Par exemple, si l'URL de votre domaine mon site **https://contoso-my.sharepoint.com**mon site est, entrez `contoso` alors lorsque le script vous invite à indiquer le nom de votre domaine mon site. 
     
-- **Nom du dossier** - le nom d’un cas existant. Le script crée une nouvelle suspension qui est associée à ce cas.
+- **Nom de la casse** : nom d'un incident existant. Le script crée une nouvelle conservation qui est associée à ce cas.
     
-- **Nom de la suspension** - le nom de la suspension, le script crée et associer la casse spécifiée.
+- **Nom du blocage** : nom du blocage que le script crée et associe à la casse spécifiée.
     
-- **Blocage de requête de recherche pour basée sur une requête** - vous pouvez créer une suspension basée sur une requête afin qu’uniquement le contenu qui répond aux critères de recherche est mis en attente. Pour placer tous les contenus en attente, appuyez sur **entrée** lorsque vous êtes invité à une requête de recherche. 
+- **Requête de recherche pour une conservation basée sur une requête** : vous pouvez créer une conservation basée sur une requête de sorte que seul le contenu correspondant aux critères de recherche spécifiés soit placé en conservation. Pour placer tout le contenu en conservation, appuyez simplement sur **entrée** lorsque vous êtes invité à entrer une requête de recherche. 
     
-- **S’il faut activer la suspension** - le script peut être activer la suspension après sa création ou le script peut être créer la suspension sans l’activer. Si vous n’avez pas le script activer la mise en attente, vous pouvez l’activer ultérieurement dans la sécurité &amp; centre de conformité ou en exécutant les commandes PowerShell suivantes : 
+- **Indique si le blocage doit** être activé: vous pouvez faire en sorte que le script désactive le blocage une fois qu'il a été créé ou que le script peut créer la conservation sans l'activer. Si le script n'est pas activé, vous pouvez l'activer ultérieurement dans le centre de sécurité &amp; conformité ou en exécutant les commandes PowerShell suivantes: 
     
   ```
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true
@@ -95,11 +95,11 @@ Lorsque vous exécutez le script dans cette étape, il vous invite à vous pour 
   Set-CaseHoldRule -Identity <name of the hold> -Disabled $false
   ```
 
-- **Nom du fichier texte avec la liste des utilisateurs** : le nom du fichier texte à l’étape 2 qui contient la liste des utilisateurs à ajouter à la suspension. Si ce fichier se trouve dans le même dossier que le script, il suffit de taper le nom du fichier (par exemple, HoldUsers.txt). Si le fichier texte est dans un autre dossier, tapez le chemin d’accès complet du fichier.
+- **Nom du fichier texte avec la liste d'utilisateurs** : le nom du fichier texte de l'étape 2 qui contient la liste des utilisateurs à ajouter à la suspension. Si ce fichier se trouve dans le même dossier que le script, il vous suffit de taper le nom du fichier (par exemple, HoldUsers. txt). Si le fichier texte se trouve dans un autre dossier, tapez le chemin d'accès complet du fichier.
     
-Une fois que vous avez collecté les informations qui vous invite à vous pour le script, l’étape finale consiste à exécuter le script pour créer la nouvelle suspension et ajouter des utilisateurs.
+Une fois que vous avez collecté les informations que le script vous demande, la dernière étape consiste à exécuter le script pour créer la nouvelle conservation et y ajouter des utilisateurs.
   
-1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide d’un suffixe de nom de fichier de .ps1 ; par exemple, `AddUsersToHold.ps1`.
+1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l'aide d'un suffixe de nom de fichier. ps1; par exemple, `AddUsersToHold.ps1`.
     
   ```
   #script begin
@@ -276,22 +276,22 @@ Une fois que vous avez collecté les informations qui vous invite à vous pour l
 
 2. Sur votre ordinateur local, ouvrez Windows PowerShell et accédez au dossier où vous avez enregistré le script.
     
-3. Exécuter le script ; par exemple :
+3. Exécutez le script; par exemple:
     
       ```
     .\AddUsersToHold.ps1
       ```
 
-4. Entrez les informations qui vous demande le script.
+4. Entrez les informations que le script vous demande.
     
-    Le script se connecte à la sécurité et conformité centre PowerShell, puis crée la suspension de nouveau dans le cas de découverte électronique et ajoute les boîtes aux lettres et OneDrive entreprise pour les utilisateurs de la liste. Vous pouvez accéder à la casse dans la page de **découverte électronique** dans la sécurité &amp; centre de conformité pour afficher la mise en attente. 
+    Le script se connecte au centre de sécurité & Compliance Center PowerShell, puis crée la nouvelle conservation dans le cas de découverte électronique et ajoute les boîtes aux lettres et OneDrive entreprise pour les utilisateurs de la liste. Vous pouvez accéder à l'incident sur la page **eDiscovery** dans le centre &amp; de sécurité conformité pour afficher la nouvelle conservation. 
     
-Une fois que le script est terminé en cours d’exécution, il crée les fichiers journaux suivants et les enregistre dans le dossier où se trouve le script.
+Une fois l'exécution du script terminée, les fichiers journaux suivants sont créés et enregistrés dans le dossier où se trouve le script.
   
-- **LocationsOnHold.txt** - contient une liste des boîtes aux lettres et OneDrive pour les sites entreprise le script correctement mis en attente.
+- **LocationsOnHold. txt** : contient la liste des boîtes aux lettres et des sites OneDrive entreprise que le script a mis en attente.
     
-- **LocationsNotOnHold.txt** - contient une liste des boîtes aux lettres et OneDrive pour les sites d’entreprise qui le script ne pas mettre en attente. Si l’utilisateur a une boîte aux lettres, mais pas OneDrive site de l’entreprise, l’utilisateur doit être inclus dans la liste de OneDrive pour les sites d’entreprise qui n’ont pas été mis en attente.
+- **LocationsNotOnHold. txt** : contient la liste des boîtes aux lettres et des sites OneDrive entreprise que le script n'a pas suspendu. Si un utilisateur dispose d'une boîte aux lettres, mais pas d'un site OneDrive entreprise, l'utilisateur est inclus dans la liste des sites OneDrive entreprise qui n'ont pas été mis en attente.
     
-- **GetCaseHoldPolicy.txt** - contient le résultat de l’applet de commande **Get-CaseHoldPolicy** pour la nouvelle suspension, le script s’est exécuté après la création de la nouvelle mise en attente. Les informations renvoyées par cette applet de commande comprend une liste d’utilisateurs dont les boîtes aux lettres et OneDrive pour les sites ont été mis en attente et si la suspension est activée ou désactivée. 
+- **GetCaseHoldPolicy. txt** -contient la sortie de la cmdlet **Get-CaseHoldPolicy** pour le nouveau blocage, que le script a exécuté après avoir créé la nouvelle conservation. Les informations renvoyées par cette cmdlet incluent une liste d'utilisateurs dont les boîtes aux lettres et les sites OneDrive entreprise ont été mis en attente et indique si la conservation est activée ou désactivée. 
     
-- **GetCaseHoldRule.txt** - contient le résultat de l’applet de commande **Get-CaseHoldRule** pour la nouvelle suspension, le script s’est exécuté après la création de la nouvelle mise en attente. Les informations renvoyées par cette applet de commande incluent la requête de recherche si vous avez utilisé le script pour créer une suspension basée sur une requête. 
+- **GetCaseHoldRule. txt** -contient la sortie de la cmdlet **Get-CaseHoldRule** pour le nouveau blocage, que le script a exécuté après avoir créé la nouvelle conservation. Les informations renvoyées par cette cmdlet incluent la requête de recherche si vous avez utilisé le script pour créer une conservation basée sur une requête. 

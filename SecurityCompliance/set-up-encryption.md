@@ -1,45 +1,45 @@
 ---
-title: Configurez le chiffrement dans Office 365 pour entreprises
+title: Configurer le chiffrement dans Office 365 Entreprise
 ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 4/2/2018
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: e86fc991-0161-4f01-9c1c-d25e87733d06
-description: Avec Office 365, certaines fonctionnalités de chiffrement sont activées par défaut ; autres fonctionnalités peuvent être configurées pour répondre à certaines exigences légales ou conformité.
-ms.openlocfilehash: 80deced80283ac36d82ac15cee9af6d390c4749a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Avec Office 365, certaines fonctionnalités de chiffrement sont activées par défaut; d'autres fonctionnalités peuvent être configurées pour répondre à certaines exigences légales ou de conformité.
+ms.openlocfilehash: 5447f8c9a2074ce586ad38b0c1881afa6d948ad1
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22527851"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213454"
 ---
-# <a name="set-up-encryption-in-office-365-enterprise"></a>Configurez le chiffrement dans Office 365 pour entreprises
+# <a name="set-up-encryption-in-office-365-enterprise"></a>Configurer le chiffrement dans Office 365 Entreprise
 
-Chiffrement peut protéger votre contenu à partir de la lecture par des utilisateurs non autorisés. Étant donné que [le chiffrement dans Office 365](encryption.md) peut être effectué à l’aide de diverses technologies et les méthodes, il n’existe pas un seul emplacement où vous activer ou configurez le chiffrement. Cet article fournit des informations sur les différentes manières, vous pouvez configurer ou configurer le chiffrement dans le cadre de votre stratégie de protection des informations. 
+Le chiffrement peut empêcher la lecture de votre contenu par des utilisateurs non autorisés. Étant donné que le [chiffrement dans Office 365](encryption.md) peut être réalisé à l'aide de différentes technologies et méthodes, il n'y a pas un seul emplacement où vous activez ou configurez le chiffrement. Cet article fournit des informations sur les différentes façons de configurer ou de configurer le chiffrement dans le cadre de votre stratégie de protection des informations. 
   
 > [!TIP]
-> Si vous recherchez des informations plus techniques de chiffrement, voir [informations de référence technique de chiffrement dans Office 365](technical-reference-details-about-encryption.md). 
+> Si vous recherchez des détails techniques supplémentaires sur le chiffrement, voir [informations de référence technique sur le chiffrement dans Office 365](technical-reference-details-about-encryption.md). 
   
-Avec Office 365, plusieurs fonctionnalités de chiffrement sont disponibles par défaut. Les fonctionnalités de chiffrement supplémentaires peuvent être configurées pour répondre à certaines exigences légales ou conformité. Le tableau suivant décrit plusieurs méthodes de chiffrement pour les différents scénarios.
+Avec Office 365, plusieurs fonctionnalités de chiffrement sont disponibles par défaut. Des fonctionnalités de chiffrement supplémentaires peuvent être configurées pour répondre à certaines exigences légales ou de conformité. Le tableau suivant décrit plusieurs méthodes de chiffrement pour différents scénarios.
   
 |**Scénario**|**Méthodes de chiffrement**|
 |:-----|:-----|
-|Les fichiers sont enregistrés sur les ordinateurs Windows  <br/> |Le chiffrement au niveau de l’ordinateur peut être effectué à l’aide de BitLocker sur les périphériques Windows. En tant qu’administrateur d’entreprise ou professionnels de l’informatique, vous pouvez définir à l’aide de Microsoft Deployment Toolkit (MDT). Consultez la rubrique [Set up MDT pour BitLocker](https://go.microsoft.com/fwlink/?linkid=849282).<br/> |
-|Les fichiers sont enregistrés sur les appareils mobiles  <br/> |Certains types d’appareils mobiles chiffrer les fichiers qui sont enregistrés dans ces périphériques par défaut. Avec les [fonctionnalités de gestion des périphériques mobiles intégrées à Office 365](https://support.office.com/article/a1da44e5-7475-4992-be91-9ccec25905b0), vous pouvez définir des stratégies qui déterminent s’il faut autoriser les périphériques mobiles accéder aux données dans Office 365. Par exemple, vous pouvez définir une stratégie qui autorise uniquement les périphériques qui chiffrer le contenu pour accéder aux données d’Office 365. Voir [créer et déployer des stratégies de sécurité des périphériques](https://support.office.com/article/d310f556-8bfb-497b-9bd7-fe3c36ea2fd6).<br/> Pour un contrôle supplémentaire sur les appareils mobiles comment interagir avec Office 365, vous pouvez envisager d’ajouter [Intune Microsoft](https://aka.ms/qzln04). Voir [choisir entre Mobile Device Manager pour Office 365 et Microsoft Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22).<br/> |
-|Vous devez contrôler les clés de chiffrement utilisés pour chiffrer les données dans les centres de données de Microsoft  <br/> | En tant qu’un administrateur Office 365, vous pouvez contrôler les clés de chiffrement de votre organisation, puis configurez Office 365 pour les utiliser pour chiffrer vos données au repos dans les centres de données de Microsoft.  <br/> [Contrôle de vos données dans Office 365 à l’aide de la clé de client](controlling-your-data-using-customer-key.md) <br/> [Clé de client pour le Forum aux questions Office 365](service-encryption-with-customer-key-faq.md) <br/> |
-|Communiquent personnes par courrier électronique (Exchange Online)  <br/> | En tant qu’un administrateur Exchange Online, vous disposez de plusieurs options de configuration du chiffrement de courrier électronique. Cela inclut :<br/>  À l’aide du [chiffrement de messages Office 365 (OME)](set-up-new-message-encryption-capabilities.md) avec Azure Rights Management (Services RMS Azure) pour permettre aux utilisateurs d’envoyer des messages chiffrés à l’intérieur ou à l’extérieur de votre organisation  <br/>  À l’aide de [S/MIME pour la signature et le chiffrement](https://aka.ms/c6dozg) pour chiffrer et signer numériquement les messages électroniques  <br/>  [Configurer les connecteurs pour le flux de messagerie sécurisée avec une autre organisation](https://aka.ms/hs809p) utilisant le protocole TLS <br/>  Consultez la rubrique [chiffrement de messagerie dans Office 365](https://aka.ms/hic3f7).  <br/> |
-|Les fichiers sont accessibles à partir des sites d’équipe ou des bibliothèques de documents (OneDrive for Business ou SharePoint Online)  <br/> |Lorsque vous travaillez avec des fichiers enregistrés dans OneDrive pour les professionnels ou SharePoint Online personnes, les connexions TLS sont utilisées. Il est intégré à Office 365 automatiquement. Voir [chiffrement des données dans OneDrive for Business et SharePoint Online](https://go.microsoft.com/fwlink/?linkid=526379).<br/> |
-|Les fichiers sont partagés dans les réunions en ligne et des conversations par messagerie instantanée (Skype pour Business Online)  <br/> |Lorsque vous travaillez avec des fichiers à l’aide de Skype pour Business Online personnes, TLS est utilisé pour la connexion. Il est intégré à Office 365 automatiquement. Voir [sécurité et archivage (Skype pour les entreprises en ligne)](https://aka.ms/nuq4ws).<br/> |
+|Les fichiers sont enregistrés sur les ordinateurs Windows  <br/> |Le chiffrement au niveau de l'ordinateur peut être réalisé à l'aide de BitLocker sur les appareils Windows. En tant qu'administrateur d'entreprise ou professionnel de l'informatique, vous pouvez le configurer à l'aide de Microsoft Deployment Toolkit (MDT). Consultez la rubrique [set up MDT for BitLocker](https://go.microsoft.com/fwlink/?linkid=849282).<br/> |
+|Les fichiers sont enregistrés sur des appareils mobiles  <br/> |Certains types d'appareils mobiles chiffrent les fichiers qui sont enregistrés par défaut sur ces appareils. Grâce aux [fonctionnalités de gestion des appareils mobiles intégrée pour office 365](https://support.office.com/article/a1da44e5-7475-4992-be91-9ccec25905b0), vous pouvez définir des stratégies qui déterminent si les appareils mobiles doivent être autorisés à accéder aux données dans Office 365. Par exemple, vous pouvez définir une stratégie qui autorise uniquement les appareils qui chiffrent du contenu pour accéder aux données Office 365. Voir [créer et déployer des stratégies de sécurité des appareils](https://support.office.com/article/d310f556-8bfb-497b-9bd7-fe3c36ea2fd6).<br/> Pour un contrôle supplémentaire sur la façon dont les appareils mobiles interagissent avec Office 365, vous pouvez envisager d'ajouter [Microsoft Intune](https://aka.ms/qzln04). Voir [choisir entre MDM pour Office 365 et Microsoft Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22).<br/> |
+|Vous avez besoin de contrôler les clés de chiffrement utilisées pour chiffrer vos données dans les centres de données de Microsoft  <br/> | En tant qu'administrateur Office 365, vous pouvez contrôler les clés de chiffrement de votre organisation, puis configurer Office 365 pour les utiliser afin de chiffrer vos données au repos dans les centres de données de Microsoft.  <br/> [Contrôle de vos données dans Office 365 à l'aide de la Clé client](controlling-your-data-using-customer-key.md). <br/> [Clé client pour le Forum aux questions Office 365](service-encryption-with-customer-key-faq.md) <br/> |
+|Les personnes communiquent par courrier électronique (Exchange Online)  <br/> | En tant qu'administrateur Exchange Online, vous disposez de plusieurs options pour configurer le chiffrement du courrier électronique. Ces éléments sont les suivants:<br/>  Utilisation du chiffrement de [messages Office 365 (OME)](set-up-new-message-encryption-capabilities.md) avec Azure Rights Management (Azure RMS) pour permettre aux utilisateurs d'envoyer des messages chiffrés à l'intérieur ou à l'extérieur de votre organisation  <br/>  Utilisation [de S/MIME pour la signature et](https://aka.ms/c6dozg) le chiffrement des messages pour chiffrer et signer numériquement les messages électroniques  <br/>  Utilisation de TLS pour [configurer des connecteurs pour un flux de messagerie sécurisé avec une autre organisation](https://aka.ms/hs809p) <br/>  Voir [chiffrement des messages électroniques dans Office 365](https://aka.ms/hic3f7).  <br/> |
+|Les fichiers sont accessibles à partir de sites d'équipe ou de bibliothèques de documents (OneDrive entreprise ou SharePoint Online)  <br/> |Lorsque des utilisateurs travaillent sur des fichiers enregistrés dans OneDrive entreprise ou SharePoint Online, les connexions TLS sont utilisées. Cette intégration est automatiquement intégrée à Office 365. Voir [chiffrement des données dans OneDrive entreprise et SharePoint Online](https://go.microsoft.com/fwlink/?linkid=526379).<br/> |
+|Les fichiers sont partagés dans les réunions en ligne et les conversations par messagerie instantanée (Skype entreprise Online)  <br/> |Lorsque des utilisateurs travaillent sur des fichiers à l'aide de Skype entreprise Online, TLS est utilisé pour la connexion. Cette intégration est automatiquement intégrée à Office 365. Voir [sécurité et archivage (Skype entreprise Online)](https://aka.ms/nuq4ws).<br/> |
    
 ## <a name="additional-information"></a>Informations supplémentaires
 
-Pour en savoir plus sur les solutions de protection de fichiers qui incluent des options de chiffrement, voir [Solutions de Protection des fichiers dans Office 365](https://www.microsoft.com/en-us/download/details.aspx?id=55523).
+Pour en savoir plus sur les solutions de protection des fichiers qui incluent des options de chiffrement, consultez la rubrique [File Protection Solutions in Office 365](https://www.microsoft.com/en-us/download/details.aspx?id=55523).
   
 

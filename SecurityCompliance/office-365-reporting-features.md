@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-analytics
 description: Explication des fonctionnalités de création de rapports dans Office 365.
-ms.openlocfilehash: f750ac6647199ef14bd6605535797e00c1cab961
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: e38be005c31f6c96c603d5efbbe690ec42a9a25f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090896"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219854"
 ---
 # <a name="office-365-reporting-features"></a>Fonctionnalités de création de rapports Office 365 
 

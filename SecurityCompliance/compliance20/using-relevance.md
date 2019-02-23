@@ -1,12 +1,12 @@
 ---
-title: Utilisez le module de pertinence pour analyser des données d’eDiscovery avancée (Preview)
+title: Utiliser le module de pertinence pour analyser les données dans Advanced eDiscovery (aperçu)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,130 +14,130 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 56e83a1f8a951fd6e14172122a5e86447c6f2ccf
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 53f1906b28c6c6b467e147951e7c55aa7358a4a7
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29695170"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215434"
 ---
-# <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery-preview"></a>Utilisez le module de pertinence pour analyser des données d’eDiscovery avancée (Preview)
+# <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery-preview"></a>Utiliser le module de pertinence pour analyser les données dans Advanced eDiscovery (aperçu)
 
-Dans découverte avancée (Preview), le module de la pertinence inclut la formation de la pertinence et la vérification des fichiers associés à un cas. Le flux de travail de pertinence est affichée et décrite comme suit :
+Dans Advanced eDiscovery (aperçu), le module de pertinence inclut la formation pertinente et la révision des fichiers associés à un cas. Le flux de travail de pertinence est illustré et décrit comme suit:
   
 ![Flux de travail de pertinence](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
-- **Cycles d’évaluation et de suivi**:
+- **Cycles d'évaluation et de suivi**:
     
-  - **Évaluation**: permet au plus tôt évaluation basée sur un échantillon aléatoire des fichiers et utilise cette évaluation pour appliquer les décisions pour déterminer les performances du processus de codage prédictif. 
+  - **Évaluation**: permet une évaluation précoce basée sur un échantillon aléatoire de fichiers et utilise cette évaluation pour appliquer des décisions afin de déterminer les performances du processus de codage prédictif. 
     
-  - **Suivi**: calculer et afficher les résultats intermédiaires de l’évaluation lors de l’analyse statistique validité du processus. 
+  - **Track**: calculer et afficher les résultats intermédiaires de l'évaluation tout en surveillant la validité statistique du processus. 
     
 - **Cycles de formation et de suivi**
     
-  - **Balise**: eDiscovery avancée (Preview) prend connaissance des critères de pertinence spécifiques à chaque problème basée sur l’expert itératif et liaison de fichiers individuels.
+  - **Tag**: Advanced EDiscovery (Preview) apprend les critères de pertinence propres à chaque problème en fonction de la révision itérative et du marquage itératif des fichiers individuels.
     
-  - **Suivi**: calculer et afficher les résultats intermédiaires de la formation de pertinence lors de l’analyse statistique validité du processus. 
+  - **Track**: calculer et afficher les résultats intermédiaires de la formation à la pertinence tout en surveillant la validité statistique du processus. 
     
-- **Calcul de lot**: le critère de pertinence cumulé et appris est appliqué à la collection de l’intégralité du fichier et un score de pertinence est généré pour chaque fichier.
+- **Calcul par lots**: les critères de pertinence accumulés et appris sont appliqués à l'ensemble de la collection de fichiers et un score de pertinence est généré pour chaque fichier.
     
-- **Décider**: les résultats de l’analyse appliquée au cas entière s’affiche après le calcul de lot, et permet de prendre des décisions de passer en revue les documents sont affichés.
+- **Décider**: les résultats de l'analyse appliquée à l'ensemble de la casse sont affichés après le calcul du lot, et les données utilisées pour prendre des décisions de révision de document sont affichées.
     
-- **Test**: résultats peuvent être testées pour vérifier la validité et l’efficacité du traitement eDiscovery avancées (Preview).
+- **Test**: les résultats peuvent être testés pour vérifier la validité et l'efficacité du traitement EDiscovery (aperçu) avancé.
 
-- **Recherche**: une fois que le flux de travail de pertinence est terminée, vous pouvez utiliser la sortie de centile de lecture d’un document pour votre problème lorsque vous exécutez une requête au sein de votre jeu de travail.
+- **Recherche**: une fois le flux de travail de pertinence terminé, vous pouvez utiliser la sortie telle que le centile de lecture d'un document pour votre problème lors de l'exécution d'une requête dans votre plage de travail.
     
-## <a name="guidelines-for-relevance-training-and-review"></a>Recommandations pour la formation de la pertinence et passer en revue les
+## <a name="guidelines-for-relevance-training-and-review"></a>Instructions pour la formation et la révision de pertinence
 
-Voici une vue d’ensemble d’instructions pour la formation de la pertinence et passer en revue les :
+Vous trouverez ci-dessous une vue d'ensemble des directives de formation et de révision:
   
-- **Erreurs et les incohérences**: si des erreurs de liaison sont effectuées au cours de formation, revenir aux exemples de fichier précédente pour y remédier. S’il y trop grand nombre d’erreurs à corriger ou il existe un nouveau point de vue de l’incident ou un problème, les critères de la pertinence doivent être redéfinis par l’administrateur et redémarré la formation de pertinence.
+- **Erreurs et**incohérences: si des erreurs de marquage sont effectuées pendant l'apprentissage, revenez aux exemples de fichiers précédents pour les corriger. S'il y a trop d'erreurs à corriger ou qu'il existe une nouvelle perspective ou un problème, les critères de pertinence doivent être redéfinis par l'administrateur et l'apprentissage de pertinence doit être redémarré.
     
 - **Balisage et formation**: 
     
-  - Les fichiers doivent être référencées en fonction du contenu uniquement. Ne pas tenir compte des métadonnées, telles que les dépositaires, la date ou chemin d’accès du fichier. 
+  - Les fichiers doivent être balisés en fonction du contenu uniquement. Ne considérez pas les métadonnées, telles que le dépositaire, la date ou le chemin d'accès au fichier. 
     
-  - Considérez date indications plage du texte pour marquer les fichiers.
+  - Ne pas tenir compte des indications de plage de dates dans le texte lors du marquage des fichiers.
     
-  - Considérez les images graphiques incorporés pour marquer les fichiers.
+  - Ne considérez pas les images graphiques incorporées lors du balisage des fichiers.
      
-  - Ignorer la texte appliqué à la pertinence sera supprimé dans le contenu du fichier affiché dans l’affichage de texte dans la pertinence. Si les valeurs de texte de la case à cocher Ignorer ont été définies après la pertinence de la formation déjà démarré, le nouveau texte ignoré sera appliqué à des exemples de fichiers créés à partir du point dans lequel il a été défini. La fonctionnalité d’ignorer le texte doit être utilisée avec précaution, comme son utilisation peut réduire les performances de l’analyse des fichiers
+  - Ignorer le texte appliqué à la pertinence sera supprimé dans le contenu du fichier affiché dans l'affichage de texte en pertinence. Si les valeurs pour ignorer le texte ont été définies après l'apprentissage de pertinence déjà démarré, le nouveau texte ignoré est appliqué aux fichiers d'exemple créés à partir du point dans lequel ils ont été définis. La fonctionnalité ignorer le texte doit être utilisée avec précaution, car son utilisation peut réduire les performances de l'analyse des fichiers.
     
-  - Utilisez l’option **Ignorer le balisage** uniquement lorsque cela est nécessaire. EDiscovery avancée (Preview) ne pas former basé sur les fichiers ignorés. Évaluation, s’il est difficile de déterminer si un fichier est pertinent, il est préférable de balise en tant que Relevant (R) ou non pertinent (NR) chaque fois que possible au lieu de sélectionner **Ignorer**. Lors de la découverte avancée (Preview) évalue la formation, il sera visible bien ces types de fichiers ont été traités.
+  - Utilisez l'option **Ignorer** le balisage uniquement lorsque cela est nécessaire. Advanced eDiscovery (aperçu) ne formation pas en fonction des fichiers ignorés. Dans l'évaluation, s'il est difficile de déterminer si un fichier est pertinent, il est préférable de baliser comme pertinentes (R) ou non pertinente (NR) autant que possible, au lieu de sélectionner **Ignorer**. Lorsque Advanced eDiscovery (Preview) évalue la formation, il peut se voir sur le traitement de ces types de fichiers.
     
-  - Même avec une petite quantité de texte extrait les fichiers doit être référencées en formation R/NR, plutôt que « Ignorer », lorsque cela est possible. 
+  - Même les fichiers avec une très petite quantité de texte extrait doivent être balisés en formation sous la forme R/NR, plutôt qu'en tant que «Skip», lorsque cela est possible. 
     
-  - Marquage peut avoir un impact sur le classifieur tant que le fichier est accessible en lecture et peut être marqué comme R/NR.
+  - Le marquage peut avoir un impact sur le classifieur tant que le fichier est lisible et peut être marqué comme R/NR.
     
-  - Le numéro de séquence de fichier dans la liste de fichiers exemple affichée sous l’onglet **balise** permet à l’utilisateur revenir à la commande affichée d’origine des fichiers. 
+  - Le numéro de séquence de fichier de la liste des fichiers d' **** exemple affichés sous l'onglet balise permet à l'utilisateur de revenir à l'ordre d'affichage d'origine des fichiers. 
     
-  - Vous pouvez revenir en arrière à n’importe quel échantillon et modifier le balisage de l’évaluation et de formation définie des fichiers. Les modifications seront appliquées lors de la création de l’exemple suivant.
+  - Vous pouvez revenir à n'importe quel exemple et modifier le balisage des fichiers d'évaluation et de jeu de formation. Les modifications seront appliquées lors de la création de l'exemple suivant.
     
-  - Excel analysé les fichiers au format PDF doivent être traitées comme des fichiers Excel natifs pour marquer les fichiers.
+  - Les fichiers Excel numérisés au format PDF doivent être traités de la même manière que les fichiers Excel natifs lors du balisage des fichiers.
     
-  - En cas de doute concernant le balisage de la pertinence d’un fichier, contactez un expert. Liaison incorrecte au cours de la formation de pertinence peut entraîner la perte de temps plus loin dans le processus et peut également avoir un impact négatif sur la qualité globales des résultats de la.
+  - En cas de doute sur le balisage de pertinence d'un fichier, consultez un expert. Un balisage inCorrect lors de la formation sur la pertinence peut entraîner un manque de temps dans le processus et peut également avoir un impact négatif sur la qualité des résultats globaux.
     
-  - Mots clés qui ont été définis dans le mot clé listes seront affichera dans les couleurs pour aider l’utilisateur à identifier les fichiers appropriés lors de la liaison.
+  - Les mots clés définis dans les listes de mots clés s'affichent dans des couleurs pour aider l'utilisateur à identifier les fichiers appropriés lors du marquage.
     
-- **Calcul du lot**: les fichiers qui ont été marquées comme R/NR par l’expert reçoit un score de 0 ou 100. Cela s’applique au balisage avant le calcul de lot. Si l’expert basculer le problème inactif après le calcul du lot et suite marquage ce problème, les notes nouvellement balisés ne sera pas 100/0, mais plutôt le score d’origine.
+- **Calcul par lots**: les fichiers marqués comme R/NR par l'expert recevront un score de 0 ou de 100. Cela s'applique au marquage effectué avant le calcul du lot. Si l'expert a activé le problème sur inActif après le calcul par lot et a continué à marquer ce problème, les scores nouvellement marqués ne seront pas 100/0 mais plutôt le score d'origine.
     
-- **Problèmes et échantillonnage mode**: problèmes sont généralement désactivées lors de leur travail est terminé (la stabilisation de formation de la pertinence et calcul de lot a été effectuée), lorsque les problèmes sont annulées, ou lorsqu’un autre utilisateur travaille sur les problèmes.
+- **Problèmes et mode d'échantillonnage**: les problèmes sont généralement désactivés lorsqu'ils sont terminés (la formation à la pertinence est stabilisée et le calcul par lot a été effectué), lors de l'annulation des problèmes ou lorsqu'un autre utilisateur travaille sur les problèmes.
     
-## <a name="steps-in-relevance-training"></a>Étapes de la formation de pertinence
+## <a name="steps-in-relevance-training"></a>Étapes de la formation pertinente
 
-Dans la **la pertinence \> suivi** onglet, eDiscovery avancée fournit des recommandations sur la façon de procéder de la transformation, avec les étapes suivantes. Les implications sont décrits ci-dessous lors de chacune des étapes suivantes est recommandé dans le processus de formation de pertinence. 
+Dans l' **onglet \> suivi de pertinence** , Advanced eDiscovery fournit des recommandations sur la façon de procéder au traitement, avec les étapes suivantes. Les implications sont décrites ci-dessous quand chacune des étapes suivantes est recommandée dans le processus de formation à la pertinence. 
   
-- Marquer / continuer balisage : passer en revue les fichiers et la pertinence de la liaison effectuée par un expert pour chaque fichier et émettre au sein d’un échantillon.
+- Balisage/continuer le balisage: révision de fichier et balisage de pertinence effectuée par un expert pour chaque fichier et problème au sein d'un exemple.
     
-  - Implication : Un exemple existant doit être marqué.
+  - Implication: un échantillon existant doit être balisé.
     
-- Évaluation / continuer d’évaluation : permet de validation au plus tôt de la pertinence des cas de problème et un aperçu de la pertinence de la population fichier importée pour le dossier actif.
+- Évaluation/continue Assessment: permet une validation précoce de la pertinence du problème et une vue préliminaire de la pertinence du remplissage du fichier importés pour le cas en cours.
     
-  - Implication : Plus d’évaluation est requis ou recommandée.
+  - Implication: une évaluation plus grande est requise ou recommandée.
     
-- Formation / continuer de formation : processus pendant les options avancées eDiscovery étudient l’expert qui est marquer les fichiers exemples et acquiert la possibilité d’identifier les critères de la pertinence pertinentes pour chaque problème dans le contexte de chaque cas.
+- Formation/poursuivez la formation: processus au cours duquel eDiscovery avancé apprend à l'expert qui balise les échantillons de fichiers et vous permet d'identifier les critères de pertinence pertinents pour chaque problème dans le contexte de chaque cas.
     
-  - Implication : Le problème a besoin de plus de formations ; l’exemple suivant doit être créé et avec balise. 
+  - Implication: le problème nécessite une formation supplémentaire; l'exemple suivant doit être créé et balisé. 
     
-- Calcul du lot : processus de pertinence dans les paramètres avancés eDiscovery prend les connaissances acquises au cours de la phase de formation et s’applique à la population entière de fichier. Tous les fichiers dans le groupe de fichiers pertinentes sont évalués pour la pertinence et reçoivent un score de pertinence.
+- Calcul par lot: processus de pertinence dans lequel Advanced eDiscovery prend les connaissances acquises au cours de l'étape de formation et l'applique à l'ensemble du remplissage du fichier. Tous les fichiers du groupe de fichiers pertinent sont évalués à des fins de pertinence et reçoivent un score de pertinence.
     
-  - Implication : Le problème a stabilisation et calcul de lot peut être effectuée.
+  - Implication: le problème est stabilisé et le calcul par lot peut être effectué.
     
-- Rattrapage : Pertinence indique quand un expert passe en revue et balises d’un échantillon de fichiers sélectionnés à partir d’une charge de fichiers supplémentaires pendant un scénario de déploiement charge.
+- Rattrapage: pertinence indique quand un expert examine et marque un échantillon de fichiers sélectionnés à partir d'une charge de fichier supplémentaire lors d'un scénario de charge en continu.
     
-  - Implication : Un nouveau chargement a été ajouté et rattrapage est nécessaire pour continuer à travailler.
+  - Implication: une nouvelle charge a été ajoutée et l'interCeption est nécessaire pour continuer à travailler.
     
-- Ajouter une balise à des incohérences : processus identifie via un algorithme de découverte électronique avancées, des incohérences dans le fichier de balisage processus ayant un impact négatif sur l’analyse.
+- Incohérences de balise: le processus identifie, via un algorithme eDiscovery avancé, des incohérences dans le processus de marquage de fichier susceptibles d'avoir un impact négatif sur l'analyse.
     
-  - Implication : L’exemple suivant inclut les fichiers qui ont été marquées dans les exemples précédents, et leur marquage doit être rétablie.
+  - Implication: l'exemple suivant inclut des fichiers qui ont été balisés dans les exemples précédents, et leur balisage doit être rétablie.
     
-- Mettre à jour de classifieur : permet à l’utilisateur à appliquer le marquage ou de l’amorçage des modifications.
+- Mettre à jour le classifieur: permet à l'utilisateur d'appliquer des balises ou des modifications.
     
-  - Implication : Liaison et l’amorçage des modifications peuvent être appliquées sans avoir à exécuter manuellement un autre exemple de la pertinence.
+  - Implication: les modifications de marquage et d'amorçage peuvent être appliquées sans avoir à exécuter manuellement un autre exemple de pertinence.
     
-- En attente : la pertinence de la formation processus est terminée.
+- En attente: le processus d'apprentissage de pertinence est terminé.
     
-  - Implication : Aucune formation de pertinence n’est requise à ce stade.
+  - Implication: aucune formation pertinente n'est requise à ce stade.
     
-Bien qu’eDiscovery avancée vous guide à travers le processus, avec recommandé de suivre les étapes ci-après à différents stades, il vous permet également de naviguer entre les onglets et les pages et faites des choix de répondre à des situations qui peuvent être pertinentes à votre cas, le problème, ou processus de révision de documents. 
+Bien qu'Advanced eDiscovery vous guide tout au long du processus, avec les étapes suivantes recommandées à différentes étapes, il vous permet également de naviguer entre les onglets et les pages, et de faire des choix pour répondre aux situations susceptibles de concerner votre cas, problème ou processus de révision de documents. 
   
-Il est possible d’accepter ou de remplacer l’étape suivante eDiscovery avancées choix de traitement. Si vous souhaitez effectuer une étape de l’étape suivante recommandée, cliquez sur l' **étape suivante** répertoriées dans l’affichage de l’étendue de problème dans la boîte de dialogue et cliquez sur le bouton **Modifier** en regard de l’étape suivante, sélectionnez une autre option étape suivante. 
+Il est possible d'accepter ou de remplacer les choix avancés de traitement de l'étape suivante de eDiscovery. Si vous souhaitez effectuer une étape différente de l'étape suivante recommandée, cliquez sur l' **étape suivante** figurant dans la boîte de dialogue Affichage du problème développé dans la boîte de dialogue, cliquez sur le bouton **modifier** en regard de l'étape suivante, puis sélectionnez une autre étape suivante. 
   
 > [!NOTE]
-> Certaines options peuvent rester désactivées après déverrouillage comme ils ne sont pas pris en charge pour une utilisation à ce stade du processus. 
+> Certaines options peuvent rester désactivées après un déverrouillage, car elles ne sont pas prises en charge à ce stade du processus. 
   
 ## <a name="more-information"></a>Plus d’informations
 
-[Évaluation de la présentation de la pertinence](../assessment-in-relevance-in-advanced-ediscovery.md)
+[Présentation de l'évaluation en matière de pertinence](../assessment-in-relevance-in-advanced-ediscovery.md)
   
-[Marquage et évaluation](../tagging-and-assessment-in-advanced-ediscovery.md)
+[Balisage et évaluation](../tagging-and-assessment-in-advanced-ediscovery.md)
   
-[Marquage et formation de pertinence](../tagging-and-relevance-training-in-advanced-ediscovery.md)
+[Étiquetage et formation à la pertinence](../tagging-and-relevance-training-in-advanced-ediscovery.md)
   
-[Analyse de la pertinence de suivi](../track-relevance-analysis-in-advanced-ediscovery.md)
+[Analyse de la pertinence](../track-relevance-analysis-in-advanced-ediscovery.md)
   
-[Selon les résultats de la sélection du conteneur](../decision-based-on-the-results-in-advanced-ediscovery.md)
+[Choix en fonction des résultats](../decision-based-on-the-results-in-advanced-ediscovery.md)
   
-[Test d’analyse de la pertinence](../test-relevance-analysis-in-advanced-ediscovery.md)
+[Évaluation de l'analyse de pertinence](../test-relevance-analysis-in-advanced-ediscovery.md)
 
-[Effectuer des requêtes dans le jeu de travail](working-set-search.md)
+[Requête dans la plage de travail](working-set-search.md)

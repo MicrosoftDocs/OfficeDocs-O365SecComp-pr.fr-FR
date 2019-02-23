@@ -1,48 +1,33 @@
 ---
-title: Configurer des notifications de courrier indésirable pour l’utilisateur final dans EOP
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.audience: ITPro
-ms.topic: article
-ms.service: O365-seccomp
-ms.custom: TN2DMC
-localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
-description: Vous pouvez configurer les notifications de courrier indésirable à l'utilisateur final pour la stratégie de filtrage de contenu par défaut à l'échelle de l'entreprise, ou pour les stratégies de filtrage de contenu personnalisées appliquées à des domaines.
-ms.openlocfilehash: 3acb825a0b9e15c01c8b1c3266289c273b323d88
-ms.sourcegitcommit: 234a22c61859133ed5e7988a9551a569781518a4
-ms.translationtype: MT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "23875796"
+title: "configurer les notifications de courrier indésirable de l'utilisateur final dans EOP" ms. Author: krowley Author: kccross Manager: laurawi ms. audience: professionnel ms. topic: article ms. service: O365-seccomp ms. Custom: TN2DMC localization_priority: normal Search. appverid:
+- MET150 ms. AssetID: e9947db5-1dd1-4493-872d-7362b24c7ba0 ms. collection:
+    - M365-Security-Description de la conformité: «vous pouvez configurer les notifications de courrier indésirable de l'utilisateur final pour la stratégie de filtrage de contenu par défaut à l'échelle de l'entreprise ou pour les stratégies de filtrage de contenu personnalisées appliquées aux domaines.»
 ---
+
 # <a name="configure-end-user-spam-notifications-in-eop"></a>Configurer des notifications de courrier indésirable pour l’utilisateur final dans EOP
   
 > [!IMPORTANT]
-> Cette rubrique est pour les clients autonomes Exchange Online Protection (EOP) protégeant les boîtes aux lettres locales. Les clients Exchange Online qui protègent les boîtes aux lettres hébergées sur le cloud doivent lire la rubrique suivante au lieu de cela : [configurer pour l’utilisateur final de spam notifications dans Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
+> Cette rubrique est destinée aux clients autonomes Exchange Online Protection (EOP) qui protègent les boîtes aux lettres locales. Les clients Exchange Online qui protègent les boîtes aux lettres hébergées dans le Cloud doivent plutôt lire la rubrique suivante: [configure end-user spam notifications in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
   
 Vous pouvez configurer les notifications de courrier indésirable pour l’utilisateur final pour la stratégie de filtrage de contenu par défaut à l’échelle de l’entreprise, ou pour les stratégies de filtrage de contenu personnalisées appliquées à des domaines. L’activation des notifications de courrier indésirable à l’utilisateur final permet à vos utilisateurs de gérer eux-mêmes leurs propres messages de courrier indésirable mis en quarantaine. La fonctionnalité ne peut pas être utilisée avec les stratégies appliquées à des utilisateurs ou des groupes, ou à une stratégie comportant des exceptions.
   
 Les notifications de courrier indésirable à l’utilisateur final contiennent la liste de tous les messages de courrier indésirable mis en quarantaine reçus par l’utilisateur final au cours d’une période que vous configurez (vous pouvez spécifier une valeur comprise entre 1 et 15 jours). Vous pouvez également configurer la langue dans laquelle est écrit le message de notification.
   
-Après avoir reçu un message de notification, les utilisateurs finaux peuvent choisir parmi les options suivantes :
+Après la réception d'un message de notification, les utilisateurs finaux peuvent choisir l'une des options suivantes:
 
-**Aperçu** du message si vous souhaitez afficher un aperçu de l’en-tête avant d’effectuer action ou le contenu.
+**Affichez un aperçu** du message si vous souhaitez afficher un aperçu du contenu ou de l'en-tête avant de prendre une mesure.
 
-**Télécharger** le message que vous souhaitez passer en revue les messages et les pièces jointes (le cas échéant) sur votre appareil avant d’effectuer action.
+**Téléchargez** le message si vous souhaitez consulter le message et les pièces jointes (le cas échéant) sur votre appareil avant de prendre une mesure.
 
-**Version** si le message n’est pas du courrier indésirable et que vous souhaitez qu’Office 365 pour envoyer le message vers votre boîte aux lettres.
+**Release** si le message n'est pas un courrier indésirable et que vous souhaitez qu'Office 365 envoie le message à votre boîte aux lettres.
 
-**Version & expéditeur autoriser** si le message n’est pas du courrier indésirable et que vous souhaitez qu’Office 365 pour ajouter l’expéditeur à votre expéditeurs fiables et la liste des destinataires pour les courriers électroniques futurs. N’oubliez pas que votre administrateur peut avoir autres configurations d’autoriser/bloquer large organisation qui remplacent votre liste des expéditeurs approuvés.
+**Release _AMP_ autoriser l'expéditeur** si le message n'est pas un courrier indésirable et que vous voulez qu'Office 365 ajoute l'expéditeur à votre liste des expéditeurs et destinataires approuvés pour les futurs courriers électroniques. Gardez à l'esprit que votre administrateur peut avoir d'autres configurations autoriser/bloquer des organisations qui remplacent votre liste d'expéditeurs autorisés.
 
-**Version & rapport**, si le message n’est pas du courrier indésirable et que vous souhaitez envoyer le message vers votre boîte aux lettres et de signaler à Microsoft pour analyse.
+**Release _AMP_ Report**, si le message n'est pas indésirable et que vous voulez envoyer le message à votre boîte aux lettres et le signaler à Microsoft pour analyse.
 
-**Bloc** de si vous souhaitez que Office 365 pour ajouter l’expéditeur à votre liste des expéditeurs bloqués.
+**Bloquer** si vous souhaitez qu'Office 365 ajoute l'expéditeur à votre liste des expéditeurs bloqués.
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 <a name="sectionSection0"> </a>
 
 Durée d'exécution estimée : 5 minutes

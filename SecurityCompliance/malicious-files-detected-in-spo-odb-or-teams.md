@@ -1,63 +1,63 @@
 ---
-title: Afficher des informations sur les fichiers malveillants détecté dans SharePoint, OneDrive ou Microsoft Teams
+title: Afficher des informations sur les fichiers malveillants détectés dans SharePoint, OneDrive ou Microsoft teams
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
-description: Découvrez où aller pour afficher des informations sur les fichiers malveillants détecté dans SharePoint, OneDrive ou équipes et comment effectuer une action sur ces fichiers.
-ms.openlocfilehash: 435e1f449003f670f698c4e6813e18f5e83c498d
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: Découvrez où aller pour afficher des informations sur les fichiers malveillants détectés dans SharePoint, OneDrive ou teams et comment effectuer des actions sur ces fichiers.
+ms.openlocfilehash: 6f44cd82241b4cd883fbd80e1b1dc2ea115e10af
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014796"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219564"
 ---
-# <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>Afficher des informations sur les fichiers malveillants détecté dans SharePoint, OneDrive ou Microsoft Teams
+# <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>Afficher des informations sur les fichiers malveillants détectés dans SharePoint, OneDrive ou Microsoft teams
 
-[Office 365 DAV pour SharePoint, OneDrive et les équipes Microsoft](atp-for-spo-odb-and-teams.md) protège votre organisation à partir des fichiers malveillants dans les bibliothèques de documents et des sites d’équipe. Lorsqu’un fichier malveillant est détecté, ce fichier est bloqué afin qu’aucun participant ne peut ouvrir, copier, déplacer ou partager jusqu'à ce que les autres actions effectuées par l’équipe de sécurité de l’organisation. Lisez cet article pour savoir comment afficher des informations sur les fichiers détectés et les actions à effectuer. 
+[Office 365 ATP pour SharePoint, OneDrive et Microsoft](atp-for-spo-odb-and-teams.md) teams protège votre organisation contre les fichiers malveillants dans les bibliothèques de documents et les sites d'équipe. Lorsqu'un fichier malveillant est détecté, ce fichier est bloqué afin que personne ne puisse l'ouvrir, le copier, le déplacer ou le partager tant que d'autres actions ne sont pas effectuées par l'équipe de sécurité de l'organisation. Lisez cet article pour savoir comment afficher des informations sur les fichiers détectés et connaître les actions à effectuer. 
 
-Afin d’effectuer les tâches décrites dans cet article, vous devez disposer nécessaires [les autorisations de sécurité Office 365 &amp; centre de conformité](permissions-in-the-security-and-compliance-center.md). 
+Pour effectuer les tâches décrites dans cet article, vous devez disposer des [autorisations nécessaires pour le centre de &amp; sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md). 
   
-## <a name="view-reports-with-information-about-detected-files"></a>Afficher les rapports avec des informations sur les fichiers détectés
+## <a name="view-reports-with-information-about-detected-files"></a>Affichage des rapports avec des informations sur les fichiers détectés
 
-Pour afficher l’état et des informations détaillées sur les fichiers qui ont été détectés par Office 365 DAV, vous pouvez utiliser le rapport d’état de Protection de menace.
+Pour afficher l'État et des informations détaillées sur les fichiers qui ont été détectés par la protection avancée contre les menaces d'Office 365, vous pouvez utiliser le rapport d'état de protection contre les menaces.
   
-1. Dans la [Office 365 sécurité &amp; centre de conformité](https://protection.office.com), cliquez sur **rapports** \> **tableau de bord** \> **État de Protection de menace**.
+1. dans le [centre de sécurité &amp; conformité Office 365](https://protection.office.com), choisissez **rapports** \> **tableau de bord** \> de **Protection contre les menaces**.
     
-2. Dans le coin supérieur droit du rapport, cliquez sur **Afficher la table de détails**.
+2. Dans le coin supérieur droit du rapport, choisissez **afficher le tableau des détails**.
     
-3. Afficher la liste des fichiers qui ont été détectés dans le rapport.
+3. Affichez la liste des fichiers détectés dans le rapport.
     
-4. Sélectionnez un élément dans la liste pour afficher des informations détaillées, y compris les actions effectuées, le nom de fichier, le chemin d’accès du fichier et plus.
+4. Sélectionnez un élément dans la liste pour afficher des informations détaillées, notamment les actions prises, le nom de fichier, le chemin d'accès au fichier, et bien plus encore.
     
-5. Sélectionnez l’onglet **Analyse avancée** pour afficher des informations, telles qu’observée comportement et analyse les détails. 
+5. Choisissez l'onglet **analyse avancée** pour afficher des informations, telles que le comportement observé et les détails de l'analyse. 
   
-## <a name="view-and-take-action-on-files-in-quarantine"></a>Afficher et agir sur les fichiers de mise en quarantaine
+## <a name="view-and-take-action-on-files-in-quarantine"></a>Afficher et effectuer des actions sur les fichiers en quarantaine
 
-1. De sécurité Office 365 &amp; centre de conformité, cliquez sur **Gestion des menaces** \> **révision** \> **mise en quarantaine**.
+1. dans le centre de sécurité &amp; conformité d'Office 365, sélectionnez **gestion** \> des menaces- **vérification** \> de la **mise en quarantaine**.
     
-2. Dans le coin supérieur gauche, modifiez le filtre de **courrier électronique** au **contenu**.
+2. Dans le coin supérieur gauche, modifiez le filtre de **courrier électronique** en **contenu**.
     
-3. Sélectionnez un élément dans la liste pour afficher des informations détaillées, y compris l’URL du fichier.
+3. Sélectionnez un élément dans la liste pour afficher des informations détaillées, y compris l'URL du fichier.
     
 4. Choisissez une action disponible.
     
-  - Choisissez **version &amp; rapport** à débloquer le fichier. 
+  - Choisissez **Release &amp; Report** pour débloquer le fichier. 
     
-    Sélectionnez **Envoyer le rapport à Microsoft** à enregistrer le fichier comme un faux positif dans Microsoft. 
+    Sélectionnez **Envoyer le rapport à Microsoft** pour signaler le fichier comme faux positif à Microsoft. 
     
-  - Cliquez sur **Télécharger le fichier** à étudier davantage le fichier. 
+  - Choisissez **Télécharger un fichier** pour rechercher plus d'renseignements sur le fichier. 
     
-  - Cliquez sur **Supprimer** pour supprimer le fichier de la liste des éléments mis en quarantaine. Si vous choisissez cette option, vous devez également supprimer le fichier à partir de sa bibliothèque respectif dans SharePoint Online, OneDrive pour les professionnels ou Teams Microsoft. Cette option ne pas débloquer un fichier ouvert ou partagé. 
+  - Choisissez **supprimer** pour supprimer le fichier de la liste des éléments mis en quarantaine. Si vous choisissez cette option, vous devez également supprimer le fichier de sa bibliothèque respective dans SharePoint Online, OneDrive entreprise ou Microsoft Teams. Cette option ne débloque pas l'ouverture ou le partage d'un fichier. 
     
-5. Cliquez sur **Fermer** pour fermer les détails d’un élément sélectionné. 
+5. Cliquez sur **Fermer** pour fermer les détails d'un élément sélectionné. 
   
   
 

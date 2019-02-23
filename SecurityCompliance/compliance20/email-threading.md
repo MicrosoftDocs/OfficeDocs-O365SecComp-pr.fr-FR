@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,31 +14,31 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d4328971a6b13c60c4d8b9f5b6db310d72a5b215
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: a3c4f940c34a9c51bf58107d10e04d0ed60f28a8
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29705995"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213424"
 ---
 # <a name="email-threading"></a>Threading de messagerie
 
-Envisagez une conversation électronique qui a été passer un certain temps. Dans la plupart des cas, le dernier e-mail sur le thread inclut le contenu de tous les messages ci-dessus. consulter le dernier e-mail donnera un contexte complet de la conversation qui s’est produite dans le thread. Messagerie threading identifie ces e-mails afin que les réviseurs peuvent consulter une fraction des documents collectées sans perdre le contexte de le.
+Considérez une conversation par courrier électronique qui s'est en cours pendant un certain temps. Dans la plupart des cas, le dernier courrier électronique sur le thread inclura le contenu de tous les messages électroniques précédents; en examinant le dernier courrier électronique, vous obtiendrez un contexte complet de la conversation qui s'est produite dans le fil de discussion. Le Threading de messagerie identifie ces messages afin que les réviseurs puissent examiner une partie des documents collectés sans perdre de contexte.
 
-## <a name="what-does-email-threading-do"></a>À quoi threading du courrier électronique ?
+## <a name="what-does-email-threading-do"></a>Qu'est-ce que le Threading du courrier électronique?
 
-Messagerie threading analyse chaque desconstructs et messagerie pour des messages individuels ; chaque e-mail est une chaîne de messages individuels. Ensuite, il analyse tous les messages électroniques dans le jeu de travail pour déterminer si un message électronique comporte un contenu unique ou si la chaîne est entièrement contenue dans une autre adresse e-mail. À la fin des messages électroniques sont divisées en quatre catégories :
+Le Threading de messagerie analyse chaque message électronique et les desconstructs à des messages individuels; chaque message électronique est une chaîne de messages individuels. Ensuite, il analyse tous les messages électroniques du jeu de travail afin de déterminer si un e-mail a un contenu unique ou si la chaîne est entièrement contenue dans un autre message électronique. Dans les messages électroniques finaux se répartissent en quatre catégories:
 
-- **Comprises**: le dernier message dans le courrier électronique comporte un contenu unique et le courrier électronique a toutes les pièces jointes qui ont été inclus dans les autres messages électroniques dont le contenu est entièrement contenu dans ce message électronique.
+- **Inclus**: le dernier message de l'e-mail a un contenu unique, et le courrier électronique contient toutes les pièces jointes incluses dans d'autres messages électroniques dont le contenu est entièrement contenu dans cet e-mail.
 
 
-- **Comprises moins**: le dernier message dans le courrier électronique comporte un contenu unique, mais le courrier électronique ne contient-elle pas certaines pièces jointes qui ont été inclus dans les autres messages électroniques dont le contenu est entièrement contenu dans ce message électronique.
+- **Inclusif**: le dernier message de l'e-mail a un contenu unique, mais le courrier électronique ne contient pas certaines pièces jointes incluses dans d'autres messages électroniques dont le contenu est entièrement contenu dans ce message électronique.
 
-- **Copie inclus**: une copie exacte d’un inclus/inclus moins de courrier électronique
+- **Copie inclusive**: une copie exacte d'un message électronique inclusif/inclusif
 
-- **Aucun**: le contenu de ce message est entièrement contenu dans au moins un message électronique qui est marquée comme étant moins (inclus) / (inclus).
+- **None**: le contenu de ce message électronique est entièrement contenu dans au moins un e-mail marqué comme inclusif/inclusif.
 
-## <a name="how-is-it-different-from-conversations-in-outlook"></a>Quelle est la différence des conversations dans Outlook ?
-En un coup de œil, cela similaire aux groupes de conversation dans Outlook. Toutefois, il existe certaines différences importantes. Prendre en compte une conversation électronique qui a été répliquée dans les deux conversation ; par exemple, une personne a répondu à un message électronique qui n’est pas la plus récente de la conversation donc les deux dernières courriers électroniques dans la conversation à la fois un contenu unique.
+## <a name="how-is-it-different-from-conversations-in-outlook"></a>Quelle est la différence entre les conversations dans Outlook?
+En un clin d'œil, cela semble très semblable aux groupements de conversation dans Outlook. Toutefois, il existe des distinctions importantes. Considérez une conversation par courrier électronique qui a été divisée en deux conversations; par exemple, quelqu'un a répondu à un message électronique qui n'est pas le dernier de la conversation, les deux derniers messages de la conversation ont un contenu unique.
 
-Outlook regroupera toujours les courriers électroniques dans une même conversation ; lecture uniquement le dernier e-mail signifie pas le contexte du message de la dernière seconde, qui contient également un contenu unique. Messagerie threading analyse chaque e-mail dans des composants individuels et les compare, messagerie threading serait marquer les deux de ces deux dernières e-mails comme inclusives, en vous assurant que vous ne manquez pas le contexte de le tant que lire tous les messages marqués comme inclus.
+Outlook regroupera les messages électroniques en une seule conversation; la lecture du dernier courrier électronique ne signifie pas qu'il manque le contexte de l'avant-dernier e-mail, qui contient également du contenu unique. Étant donné que le Threading de messagerie analyse chaque courrier électronique dans des composants individuels et les compare, le Threading de courrier électronique marque les deux derniers courriers électroniques comme étant inclusifs, ce qui vous permettra de ne pas manquer de contexte tant que vous lisez tous les messages électroniques marqués comme inclus.
