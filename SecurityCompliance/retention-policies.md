@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à seulement quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou seulement au contenu remplissant certaines conditions
-ms.openlocfilehash: 328d63265fdaa311b94c25902e7f380c9b0be89c
-ms.sourcegitcommit: c2ec9a4b0279a248b85c2e4a4e91458214b5b31c
+ms.openlocfilehash: e76ec96b83dd5870416d864cf9f3b0b5f43cb9b2
+ms.sourcegitcommit: 942726b33ba67f2b89b5c593ccd534af6715c8b9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "29770819"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30202755"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -224,7 +224,13 @@ Lorsque vous choisissez des utilisateurs de Skype Entreprise, vous pouvez rapide
   
 ![Page Sélection des utilisateurs Skype](media/f1742493-741a-4142-a564-d7d41ab0236a.png)
   
-Notez que **Historique des conversations**, un dossier dans Outlook, est une fonctionnalité qui n’a rien à voir avec l’archivage Skype. La fonctionnalité **Historique des conversations** peut être désactivée par l’utilisateur final, mais l’archivage pour Skype s’effectue en stockant une copie des conversations Skype dans un dossier masqué inaccessible à l’utilisateur, mais disponible pour eDiscovery. 
+Notez que **Historique des conversations**, un dossier dans Outlook, est une fonctionnalité qui n’a rien à voir avec l’archivage Skype. La fonctionnalité **Historique des conversations** peut être désactivée par l’utilisateur final, mais l’archivage pour Skype s’effectue en stockant une copie des conversations Skype dans un dossier masqué inaccessible à l’utilisateur, mais disponible pour eDiscovery.
+
+### <a name="office-365-groups-locations"></a>Emplacements de groupes Office 365
+
+Pour conserver le contenu pour un groupe Office 365, vous devez utiliser l’emplacement de groupes Office 365. Même si un groupe Office 365 a une boîte aux lettres Exchange, une stratégie de rétention qui inclut l’emplacement Exchange entier n’inclut pas du contenu dans les boîtes aux lettres de groupe Office 365. Une stratégie de rétention appliquée à un groupe Office 365 inclut la boîte aux lettres de groupe et le site.
+
+Par ailleurs, il n’est pas possible d’utiliser l’emplacement Exchange pour inclure ou exclure une boîte aux lettres de groupe spécifique. Bien que l’emplacement Exchange permet au départ d’une boîte aux lettres de groupe impérativement être sélectionnées, lorsque vous essayez d’enregistrer la stratégie de rétention, vous recevrez une erreur « RemoteGroupMailbox » n’est pas une sélection valide pour l’emplacement Exchange. 
   
 ### <a name="teams-locations"></a>Emplacements Teams
 

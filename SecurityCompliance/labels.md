@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Dans Office 365, les étiquettes de rétention vous aident à entreprendre les bonnes actions sur le contenu approprié. Grâce aux étiquettes de rétention, vous pouvez classer les données au sein de votre organisation à des fins de gouvernance, et appliquer des règles de rétention basées sur cette classification. Vous pouvez également utiliser des étiquettes de rétention pour implémenter la gestion des enregistrements dans Office 365.
-ms.openlocfilehash: 7f8ab61a4d42f1a032f19110ccd1d12f833c0737
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 6599c9daf3cd2dc7c7c22179c132e58ba28aa487
+ms.sourcegitcommit: 942726b33ba67f2b89b5c593ccd534af6715c8b9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29614498"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30202765"
 ---
 # <a name="overview-of-retention-labels"></a>Vue d’ensemble des étiquettes de rétention
 
@@ -229,6 +229,10 @@ Vous pouvez également créer un affichage de la bibliothèque qui contient la c
 ### <a name="office-365-groups"></a>Groupes Office 365
 
 Lorsque vous publiez des étiquettes de rétention dans un groupe Office 365, celles-ci apparaissent dans le site de groupe et la boîte aux lettres de groupe dans Outlook sur le web. L’expérience d’application d’une étiquette de rétention au contenu est identique à celle illustrée ci-dessus pour les e-mails et les documents.
+
+Pour conserver le contenu pour un groupe Office 365, vous devez utiliser l’emplacement de groupes Office 365. Même si un groupe Office 365 a une boîte aux lettres Exchange, une stratégie de rétention qui inclut l’emplacement Exchange entier n’inclut pas du contenu dans les boîtes aux lettres de groupe Office 365. 
+
+Par ailleurs, il n’est pas possible d’utiliser l’emplacement Exchange pour inclure ou exclure une boîte aux lettres de groupe spécifique. Bien que l’emplacement Exchange permet au départ d’une boîte aux lettres de groupe impérativement être sélectionnées, lorsque vous essayez d’enregistrer la stratégie de rétention, vous recevrez une erreur « RemoteGroupMailbox » n’est pas une sélection valide pour l’emplacement Exchange.
   
 ## <a name="applying-a-retention-label-automatically-based-on-conditions"></a>Application automatique d’une étiquette de rétention en fonction de conditions
 
