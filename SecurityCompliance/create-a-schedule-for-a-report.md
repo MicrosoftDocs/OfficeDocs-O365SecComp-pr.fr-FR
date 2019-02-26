@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 description: Découvrez comment configurer une planification pour un rapport dans le centre de sécurité &amp; conformité.
-ms.openlocfilehash: 25e8ee175314c5447da95d3636236d1682479c70
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f3730c6f2bd6a7c307cd17c0894116b1e8328dc9
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216754"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30241866"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Créer une planification pour un rapport dans le centre &amp; de sécurité conformité
 
@@ -45,9 +45,9 @@ Dans le centre &amp; de sécurité conformité, plusieurs [rapports et](reports-
   
     Si vous choisissez de personnaliser votre planification de rapport, vous pouvez spécifier la fréquence du rapport, l'adresse de messagerie de l'expéditeur et l'adresse de messagerie d'un destinataire. 
     
-Une fois que vous avez créé une planification pour un rapport, ce rapport est remis automatiquement par courrier électronique aux adresses Emali des destinataires. 
+Une fois que vous avez créé une planification pour un rapport, ce rapport est remis automatiquement par courrier électronique aux adresses de messagerie des destinataires. 
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Rapports et informations dans le centre de sécurité &amp; conformité Office 365](reports-and-insights-in-security-and-compliance.md)
   

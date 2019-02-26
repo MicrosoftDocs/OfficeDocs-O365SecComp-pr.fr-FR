@@ -12,14 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 description: Découvrez comment utiliser l'intelligence des menaces pour rechercher et identifier des messages malveillants.
-ms.openlocfilehash: adf4066b5119f131b90dc88b99be4011582931c2
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d5b08338bc0a3a6a88ea498861ab9e27522b759d
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215494"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30241906"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>Rechercher et identifier les messages électroniques malveillants qui ont été remis (Office 365 Threat Intelligence)
 
@@ -67,7 +68,7 @@ Les utilisateurs malveillants peuvent envoyer des courriers électroniques à vo
     
 9. Utilisez la liste **+ actions** pour appliquer une action, telle que **déplacer vers** les éléments supprimés. Cette opération supprime les messages sélectionnés des boîtes aux lettres des destinataires.<br/>![Lorsque vous sélectionnez un ou plusieurs messages électroniques, vous pouvez choisir parmi plusieurs actions disponibles.](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Intelligence des menaces d’Office 365](office-365-ti.md)
   
