@@ -7,18 +7,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: Dans Office 365, vous pouvez activer la journalisation d'audit des boîtes aux lettres pour enregistrer l'accès aux boîtes aux lettres par les propriétaires des boîtes aux lettres, les délégués et les administrateurs. Par défaut, l'audit des boîtes aux lettres dans Office 365 n'est pas activé. Une fois que vous avez activé l'enregistrement d'audit de boîte aux lettres pour une boîte aux lettres, vous pouvez rechercher dans le journal d'audit Office 365 les activités réalisées sur la boîte aux lettres.
-ms.openlocfilehash: bb110e95d27feb8ae82b62803d218a2b38528692
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a9bc84bad8532dd546d5ce3e2f149151967050d6
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214604"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295917"
 ---
 # <a name="enable-mailbox-auditing-in-office-365"></a>Activer l’audit de boîte aux lettres dans Office 365
   

@@ -7,18 +7,19 @@ ms.date: 12/20/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: Les administrateurs peuvent utiliser la cmdlet Search-Mailbox pour faire une recherche dans des boîtes aux lettres utilisateur, puis supprimer des messages d'une boîte aux lettres.
-ms.openlocfilehash: c5f727d7772e23cc8723eee6a45e51e3ac074648
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 718a23f649843420ccfd924be72752a99278da4c
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002823"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30297127"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>Recherche et suppression de messages - Aide de l’administrateur
   
@@ -36,19 +37,19 @@ Pour plus de sécurité, vous pouvez d'abord copier les messages vers une autre 
     
 - Vous devez disposer des deux rôles de gestion suivants pour rechercher et supprimer des messages dans les boîtes aux lettres des utilisateurs :
     
-  - **Recherche de boîte aux lettres**- ce rôle vous permet de rechercher des messages entre plusieurs boîtes aux lettres dans votre organisation. Les administrateurs ne sont pas affectés à ce rôle par défaut. Pour affecter vous-même ce rôle afin que vous pouvez rechercher les boîtes aux lettres, ajoutez-vous en tant que membre du groupe de rôles de gestion de la découverte. Consultez la rubrique [Ajouter un utilisateur au groupe de rôles de gestion de découverte](http://technet.microsoft.com/library/729e09d8-614b-431f-ae04-ae41fb4c628e.aspx).
+  - **Recherche de boîte aux lettres**-ce rôle vous permet de rechercher des messages dans plusieurs boîtes aux lettres de votre organisation. Ce rôle n'est pas attribué par défaut aux administrateurs. Pour vous attribuer ce rôle afin de pouvoir Rechercher des boîtes aux lettres, ajoutez-vous en tant que membre du groupe de rôles gestion de la découverte. Voir [Ajouter un utilisateur au groupe de rôles gestion de la découverte](http://technet.microsoft.com/library/729e09d8-614b-431f-ae04-ae41fb4c628e.aspx).
     
-  - **Boîte aux lettres importer exporter** : ce rôle permet de supprimer des messages de boîte aux lettres d’un utilisateur. Par défaut, ce rôle n’est pas affecté à un groupe de rôles. Pour supprimer les messages des boîtes aux lettres des utilisateurs, vous pouvez ajouter le rôle de boîte aux lettres importer exporter au groupe de rôles de gestion de l’organisation. Pour plus d’informations, voir la section « Ajouter un rôle à un groupe de rôles » dans [Gérer les groupes de rôles](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx) . 
+  - **Importation de boîte aux lettres** -ce rôle vous permet de supprimer des messages de la boîte aux lettres d'un utilisateur. Par défaut, ce rôle n'est affecté à aucun groupe de rôles. Pour supprimer des messages des boîtes aux lettres des utilisateurs, vous pouvez ajouter le rôle exportation d'importation de boîte aux lettres au groupe de rôles gestion de l'organisation. Pour plus d'informations, consultez la section «Ajouter un rôle à un groupe de rôles» dans [gérer des groupes de rôles](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx) . 
     
 - Si la fonctionnalité de récupération d'élément unique est activée pour la boîte aux lettres dont vous souhaitez supprimer des messages, vous devez d'abord la désactiver. Pour plus d'informations, voir [Activation de la récupération d'élément unique pour une boîte aux lettres](http://technet.microsoft.com/library/2e7f1bcd-8395-45ad-86ce-22868bd46af0.aspx).
     
-- Si la boîte aux lettres à partir de laquelle vous souhaitez supprimer des messages est mis en attente, il est recommandé que vous vérifiez avec votre département juridique avant la suppression de la suspension et supprimer du contenu de la boîte aux lettres ou de gestion des enregistrements. Après avoir obtenu d’approbation, suivez les étapes répertoriées dans la rubrique [Clean Up le dossier éléments récupérables](http://technet.microsoft.com/library/82c310f8-de2f-46f2-8e1a-edb6055d6e69.aspx).
+- Si la boîte aux lettres à partir de laquelle vous souhaitez supprimer les messages est placée en conservation, nous vous recommandons de consulter la gestion des enregistrements ou le service juridique avant de supprimer le blocage et de supprimer le contenu de la boîte aux lettres. Une fois l'approbation obtenue, suivez les étapes décrites dans la rubrique [nettoyer le dossier éléments récupérables](http://technet.microsoft.com/library/82c310f8-de2f-46f2-8e1a-edb6055d6e69.aspx).
     
 - Vous pouvez faire une recherche dans 10 000 boîtes aux lettres au maximum à l'aide de la cmdlet **Search-Mailbox**. Si vous êtes une organisation Exchange Online et que vous disposez de plus de 10 000 boîtes aux lettres, vous pouvez utiliser la fonctionnalité de recherche de conformité (ou la cmdlet **New-ComplianceSearch** correspondante) pour réaliser une recherche dans un nombre illimité de boîtes aux lettres. Vous pouvez ensuite utiliser la cmdlet **New-ComplianceSearchAction** pour supprimer les messages renvoyés par la recherche de conformité. Pour plus d'informations, reportez-vous à la rubrique [Recherche et suppression de messages électroniques dans votre organisation Office 365](https://go.microsoft.com/fwlink/p/?LinkId=786856).
     
 - Si vous incluez une requête de recherche (à l'aide du paramètre  *SearchQuery*  ), la cmdlet **Search-Mailbox** renverra au maximum 10 000 éléments dans les résultats de recherche. Ainsi, si vous incluez une requête de recherche, vous devrez peut-être exécuter la commande **Search-Mailbox** plusieurs fois pour supprimer plus de 10 000 éléments. 
     
-- Pour rechercher des boîtes aux lettres de l’utilisateur archive également lorsque vous exécutez l’applet de commande **Search-Mailbox** . De même, les éléments dans la boîte aux lettres d’archivage principal seront supprimés lorsque vous utilisez l’applet de commande **Search-Mailbox** avec le commutateur _DeleteContent_ . Pour éviter ce problème, vous pouvez inclure le commutateur *DoNotIncludeArchive* . En outre, nous vous recommandons de ne pas utiliser le commutateur _DeleteContent_ pour supprimer des messages dans Exchange Online boîtes aux lettres dont l’extension automatique d’archivage activé parce que la perte de données inattendue. 
+- La boîte aux lettres d'archivage de l'utilisateur est également recherchée lorsque vous exécutez la cmdlet **Search-Mailbox** . De même, les éléments de la boîte aux lettres d'archivage principale sont supprimés lorsque vous utilisez la cmdlet **Search-Mailbox** avec le commutateur _DeleteContent_ . Pour éviter cela, vous pouvez inclure le commutateur *DoNotIncludeArchive* . Par ailleurs, nous vous recommandons de ne pas utiliser le commutateur _DeleteContent_ pour supprimer les messages dans les boîtes aux lettres Exchange Online dont l'archivage est automatiquement étendu, car une perte de données inattendue peut se produire. 
     
 ## <a name="search-messages-and-log-the-search-results"></a>Rechercher des messages et enregistrer les résultats de la recherche
 

@@ -1,7 +1,7 @@
 ---
 title: Messages de rétrodiffusion et EOP
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -15,12 +15,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Les messages rétrodiffusion sont les messages de retour automatique envoyés par les serveurs de messagerie, généralement à la suite de courrier indésirable entrant. Le BACKSCATTERER est une liste d'adresses IP qui envoient des messages rétrodiffusion. Il ne s'agit pas d'une liste de spammeurs, et nous n'essayons pas de supprimer nos serveurs du BACKSCATTERER.
-ms.openlocfilehash: 075200ff85762056290690f40d6047ea25a1dbde
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 73f8631c50bcfb8a023b2b6007b7ccf48038e16e
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30222773"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275294"
 ---
 # <a name="backscatter-messages-and-eop"></a>Messages de rétrodiffusion et EOP
 

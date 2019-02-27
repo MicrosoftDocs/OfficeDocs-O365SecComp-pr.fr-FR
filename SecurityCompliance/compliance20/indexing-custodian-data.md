@@ -8,22 +8,29 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f8f1a92f001bf8f9e23f54bbb05fbbcf443bf4b9
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1521aadca42c8119ae341065865b227fb16ffcf3
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218664"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295027"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Indexation avancée des données des consignataires
 
-Lorsqu'un dépositaire est ajouté à un cas avancé eDiscovery (aperçu), tout contenu dans Office 365 considéré comme partiellement indexé est retraité afin de le faire entièrement chercher.  Ce processus est appelé *indexation avancée*. Le contenu peut être partiellement indexé pour plusieurs raisons, notamment l'existence d'images, de types de fichiers non pris en charge ou lorsque des limites de taille de fichier d'indexation sont rencontrées.  Pour en savoir plus sur les éléments partiellement indexés, consultez la rubrique [éléments partiellement indexés dans la recherche de contenu dans Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/partially-indexed-items-in-content-search).
+Lorsqu'un dépositaire est ajouté à un cas avancé eDiscovery (aperçu), tout contenu dans Office 365 considéré comme partiellement indexé est retraité afin de le faire entièrement chercher.  Ce processus est appelé *indexation avancée*. Le contenu peut être partiellement indexé pour plusieurs raisons, notamment l'existence d'images, de types de fichiers non pris en charge ou lorsque des limites de taille de fichier d'indexation sont rencontrées.
+
+Pour en savoir plus sur le traitement de la prise en charge dans Office 365 et les éléments partiellement indexés, voir:
+
+- [Types de fichiers pris en charge dans Advanced eDiscovery](supported-filetypes-ediscovery20.md)
+- [Éléments partiellement indexés dans la recherche de contenu dans Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/partially-indexed-items-in-content-search)
+- [Formats de fichier indexés par le service de recherche Exchange](https://docs.microsoft.com/en-us/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
+- [Extensions de nom de fichier et types de fichier analysés par défaut dans SharePoint Server](https://docs.microsoft.com/en-us/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
 
 ## <a name="viewing-advanced-indexing-results"></a>Affichage des résultats de l'indexation avancée
 

@@ -1,7 +1,7 @@
 ---
 title: Utilisation des notifications de courrier indésirable pour l'utilisateur final et signalement des messages de courrier indésirable mis en quarantaine
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -10,13 +10,15 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4b250bc9-0056-4426-8397-7b4398f1b026
-description: ''
-ms.openlocfilehash: 314c8ae028a24370c9c47fb3f005f18f9881e9e9
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.collection:
+- M365-security-compliance
+description: "Les utilisateurs qui voient un message de notification de courrier indésirable à l'utilisateur final de leur administrateur sur le courrier en quarantaine peuvent effectuer ces actions sur les messages. "
+ms.openlocfilehash: fac960a8eb090248988bd5a0072f659f04e852b9
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215904"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275214"
 ---
 # <a name="use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages"></a>Utilisation des notifications de courrier indésirable pour l'utilisateur final et signalement des messages de courrier indésirable mis en quarantaine
 

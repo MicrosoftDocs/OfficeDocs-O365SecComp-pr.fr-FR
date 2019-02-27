@@ -1,7 +1,7 @@
 ---
 title: Introduction aux stratégies de gestion des informations
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 5/16/2014
 ms.audience: Admin
@@ -14,13 +14,15 @@ search.appverid:
 - OSU150
 - MET150
 ms.assetid: 63a0b501-ba59-44b7-a35c-999f3be057b2
+ms.collection:
+- M365-security-compliance
 description: Une stratégie de gestion des informations est un ensemble de règles pour un type de contenu. Les stratégies de gestion des informations permettent aux organisations de contrôler et de suivre des éléments tels que la durée de conservation du contenu ou les actions que les utilisateurs peuvent effectuer avec ce contenu. Les stratégies de gestion des informations peuvent aider les organisations à se conformer aux réglementations juridiques ou gouvernementales, ou elles peuvent simplement appliquer les processus d'entreprise internes.
-ms.openlocfilehash: 0ac273a62464e8a02668396dbeabb6bbd473dc0d
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 23662c555dfc19b2fc83b0364d93724e922c7c97
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218354"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275754"
 ---
 # <a name="introduction-to-information-management-policies"></a>Introduction aux stratégies de gestion des informations
 

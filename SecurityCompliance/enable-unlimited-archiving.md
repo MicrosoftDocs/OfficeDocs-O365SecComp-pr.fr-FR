@@ -8,18 +8,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: "Pour les administrateurs: Découvrez comment activer l'archivage à extension automatique dans Office 365, qui permet à vos utilisateurs de disposer d'un espace de stockage illimité pour leurs boîtes aux lettres Exchange Online. Vous pouvez activer l'archivage à extension automatique pour l'ensemble de votre organisation ou uniquement pour des utilisateurs spécifiques."
-ms.openlocfilehash: 39098ffc78d0379436cafb20e5a484ec0e7aa283
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 96e9fdd4b645df9e52cf9e11c3a43a80ef029ffa
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215394"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296027"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>Activer l'archivage illimité dans Office 365-aide de l'administrateur
 

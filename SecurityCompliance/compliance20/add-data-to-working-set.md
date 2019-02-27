@@ -8,19 +8,29 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f2dce10c6edd4d2eeed1e19acd92e44936fd3a85
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d053d236faed0ff35504207d6dd1beb33928acd3
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218524"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295077"
 ---
 # <a name="add-search-results-to-a-working-set"></a>Ajouter des résultats de recherche à un ensemble de travail
 
-Contenu à paraître prochainement.
+Une fois que vous avez identifié et sélectionné des recherches sur Exchange, SharePoint et OneDrive entreprise, vous pouvez ajouter les résultats à un jeu de travail. Les jeux de travail représentent un ensemble statique de documents que nous allons indexer pour les résultats de la recherche rapide Lightning, analyser pour l'identification des threads de messagerie, à proximité de la détection et des thèmes en double.  Vous pouvez également ajouter des données provenant de sources de données autres que Office 365 à Live en parallèle avec les données que vous collectez à partir d'Office 365.
+
+Pour ajouter des données à une plage de travail, commencez par sélectionner une recherche, dans les résultats de la recherche, cliquez sur le bouton *+ Ajouter les résultats au jeu de travail* .
+
+![Ajout de données à une plage de travail](../media/c1b4fc00-7a15-4587-b9b0-ce594bb02e4d.png)
+
+Vous pouvez ensuite choisir de l'ajouter à un jeu de travail existant ou à un *nouveau jeu de travail*.  Si vous ajoutez à un nouveau jeu de travail, spécifiez le nom, puis cliquez sur le bouton *Ajouter* .
+
+![Sélectionner une plage de travail](../media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
+
+L'ajout de données à un jeu de travail est un processus long, vous pouvez suivre l'avancement sous l'onglet travaux ou dans la colonne État de la plage de *travail* de l'onglet *recherches* .  Le processus inclut la collecte d'éléments à partir d'Office 365 et l'indexation & de l'ingestion.  Une fois le traitement des jeux de travail terminé, vous pouvez accéder à la plage de travail en cliquant sur l'onglet *jeux de travail* , puis sur le jeu de travail.  Vous pouvez ensuite passer à la recherche, à la révision, au balisage et à l'exportation de toutes les données pertinentes.

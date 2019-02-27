@@ -8,15 +8,16 @@ ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
+mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Pour les rapports de conformité réglementaire en ligne pour Office 365, Azure et Dynamics 365 Online, Découvrez comment Microsoft conserve les données client sûres et comment vous pouvez vous conformer aux normes ISO, HIPAA, NIST, FINRA, RGPD et FedRAMP lorsque vous utilisez ces services en ligne.
-ms.openlocfilehash: 6a34fd325934d76271f5ce3a4d760580de830457
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: e4b3d1497b2dcf3a079dbe60f742e902ab45544c
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220254"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296687"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Prise en main du portail d’approbation de services Microsoft
 
@@ -117,7 +118,7 @@ Fonctions administratives uniquement disponibles pour le compte d'administrateur
   
  La page **paramètres** vous permet d'attribuer un accès basé sur les rôles au gestionnaire de conformité. Pour plus d'informations, reportez-vous à la section «autorisations et contrôle d'accès basé sur un rôle» dans [utiliser le gestionnaire de conformité pour répondre aux exigences réglementaires et de protection des données lors de l'utilisation des services Cloud de Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control).
   
-### <a name="search"></a>Rechercher
+### <a name="search"></a>Recherche
 
 Cliquez sur la loupe dans le coin supérieur droit de la page du portail d'approbation de service pour développer la zone, entrez vos termes de recherche, puis appuyez sur **entrée**.
 

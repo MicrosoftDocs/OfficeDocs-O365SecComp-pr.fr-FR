@@ -1,7 +1,7 @@
 ---
 title: En savoir plus sur l’usurpation d’identité
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 10/22/2018
 ms.audience: Admin
@@ -12,13 +12,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
+ms.collection:
+- M365-security-compliance
 description: Utilisez l'Assistant usurpation d'identité &amp; dans le centre de sécurité conformité de la page Paramètres anti-courrier indésirable pour examiner tous les expéditeurs qui usurpent l'identité des domaines qui font partie de votre organisation ou qui usurpent des domaines externes. L'intelligence d'usurpation d'identité est disponible dans le cadre d'Office 365 entreprise E5 ou séparément dans le cadre de la protection avancée contre les menaces et d'Exchange Online Protection.
-ms.openlocfilehash: b8c791dc47198fa0da08dec1de6fdab8ebfbdb32
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: fe963371326628e44593cc3f586c744de91e5e4d
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214822"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276164"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>En savoir plus sur l’usurpation d’identité
 

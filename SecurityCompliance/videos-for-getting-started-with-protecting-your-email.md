@@ -1,7 +1,7 @@
 ---
 title: Vidéos pour commencer à protéger votre courrier électronique
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
+ms.collection:
+- M365-security-compliance
 description: La série suivante de vidéos d'introduction vous aidera à utiliser Exchange Online Protection (EOP) pour protéger vos boîtes aux lettres. Ces vidéos concernent les clients EOP autonomes qui protègent des boîtes aux lettres locales, tels qu'Exchange Server 2013, ainsi que les clients Exchange Online dont les boîtes aux lettres par défaut sont protégées par EOP.
-ms.openlocfilehash: 42d92b36cbfcf3261e391c8b3d74f44050f2881a
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: b590ac9bdd12c49a644977573048edac22de21f1
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002913"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275874"
 ---
 # <a name="videos-for-getting-started-with-protecting-your-email"></a>Vidéos pour commencer à protéger votre courrier électronique
 
@@ -53,13 +55,13 @@ Il existe également des paramètres relatifs à la manière de gérer les logic
 - Configurer la stratégie anti-programme malveillant
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/12517702-ab48-4df8-a7ff-8eb02aa31724?autoplay=false]
   
-    Pour plus d’informations, voir la rubrique [Configure anti-malware policies](configure-anti-malware-policies.md) . 
+    Pour plus d'informations, consultez la rubrique [configure anti-malware Policies](configure-anti-malware-policies.md) . 
     
 Pour filtrer et acheminer des messages en fonction de conditions spécifiques définies, sur la base de la stratégie ou de la réglementation de l'entreprise, vous souhaiterez regarder la vidéo traitant de la création des règles de transport.
   
 - Configurer les règles de Transport Exchange dans EOP
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
   
-    Pour plus d’informations, consultez la rubrique [Mail flow règles (transport) dans Exchange Online Protection](eop/mail-flow-rules-transport-rules-0.md) si vous utilisez EOP autonome, ou consultez la rubrique [règles de Transport](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) si vous utilisez Exchange Online. 
+    Pour plus d'informations, consultez la rubrique [mail Flow Rules (transport Rules) in Exchange Online Protection](eop/mail-flow-rules-transport-rules-0.md) si vous utilisez EOP standalone ou la rubrique [transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) si vous utilisez Exchange Online. 
     
 

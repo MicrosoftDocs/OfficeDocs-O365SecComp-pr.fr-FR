@@ -1,7 +1,7 @@
 ---
 title: Résolution des problèmes de messages envoyés à Office 365
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 5/2/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
+ms.collection:
+- M365-security-compliance
 description: Cet article fournit des informations de dépannage pour les expéditeurs qui rencontrent des problèmes lors de l'envoi d'e-mail à des boîtes de réception dans Office 365 et les meilleures pratiques pour l'envoi de courrier en nombre à des clients Office 365.
-ms.openlocfilehash: 3d90da9ac239971fd888ed3b8637ba9941628fc2
-ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
+ms.openlocfilehash: cfb3901b930b63ef8a33391c673a32a73eaa1b07
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "27240557"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276294"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Résolution des problèmes de messages envoyés à Office 365
 
@@ -115,7 +117,7 @@ Vous avez reçu une notification d'échec de remise car une activité suspecte a
 ### <a name="i-cant-receive-email-from-senders-in-office-365"></a>Je ne reçois pas les e-mails provenant d'expéditeurs dans Office 365
 <a name="AllowEOPIPs"> </a>
 
- Afin de recevoir des messages à partir de nos utilisateurs, assurez-vous que votre réseau autorise les connexions à partir des adresses IP qui utilise des EOP dans nos centres de données. Pour plus d’informations, voir [adresses IP de Protection Exchange Online](eop/exchange-online-protection-ip-addresses.md). 
+ Pour recevoir des messages de nos utilisateurs, assurez-vous que votre réseau autorise les connexions à partir des adresses IP utilisées par EOP dans nos centres de donnees. Pour plus d'informations, consultez la rubrique [Exchange Online Protection IP](eop/exchange-online-protection-ip-addresses.md)Addresses. 
   
 ## <a name="best-practices-for-bulk-emailing-to-office-365-users"></a>Meilleures pratiques pour l'envoi en bloc d'e-mails aux utilisateurs d'Office 365
 <a name="BulkMailer"> </a>

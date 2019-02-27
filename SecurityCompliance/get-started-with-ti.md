@@ -15,12 +15,12 @@ ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
 description: Découvrez Office 365 Threat Intelligence et découvrez comment commencer.
-ms.openlocfilehash: f116b7a01ab3b27760b597527cc1e5a4440a6586
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 3587e3f7799714e79708ede36782484cb5a76f60
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217854"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296627"
 ---
 # <a name="get-started-with-threat-intelligence"></a>Prise en main de Threat Intelligence
 
@@ -73,29 +73,38 @@ Dans le cadre de l'offre Office 365 Advanced Threat Protection Plan 2, les analy
   
 ## <a name="how-do-we-get-threat-intelligence"></a>Comment puis-je obtenir des informations sur les menaces?
 
-**Threat Intelligence fait désormais partie d'Office 365 Advanced Threat Protection Plan 2**, inclus dans certains abonnements, tels que [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), office 365 entreprise E5, Office 365 Éducation a5, etc. Si votre organisation dispose d'un abonnement qui n'inclut pas la protection avancée contre les menaces pour Office 365, vous pouvez acheter l'ATP en tant que module complémentaire. Pour plus d'informations, consultez la rubrique [offres et tarifs de protection avancée contre les menaces office 365](https://products.office.com/exchange/advance-threat-protection) , ainsi que la [Description du service Office 365 Advanced Threat Protection](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp).
+<<<<<<< HEADing Office 365 Threat Intelligence est inclus dans Office 365 entreprise E5. 
+
+> [!TIP]
+> Si votre organisation dispose d'un abonnement Office 365 qui n'inclut pas Office 365 Threat Intelligence, vous pouvez potentiellement acheter Threat Intelligence sous forme de module complémentaire. Pour plus d'informations sur les options de plan, voir [Description du service de plateforme office &amp; 365: Centre de sécurité conformité Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) et [acheter ou modifier un composant additionnel pour Office 365 pour les entreprises](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on). = = = = = = = **Threat Intelligence fait désormais partie de la protection avancée contre les menaces office 365**, qui est incluse dans certains abonnements, tels que [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), office 365 entreprise E5, Office 365 Éducation a5, etc. Si votre organisation dispose d'un abonnement qui n'inclut pas la protection avancée contre les menaces pour Office 365, vous pouvez acheter l'ATP en tant que module complémentaire. Pour plus d'informations, consultez la rubrique [offres et tarifs de protection avancée contre les menaces office 365](https://products.office.com/exchange/advance-threat-protection) , ainsi que la [Description du service Office 365 Advanced Threat Protection](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp).
+>>>>>>> amont/compliance20
   
 1. En tant qu'administrateur général Office 365, accédez [https://portal.office.com](https://portal.office.com) à et connectez-vous à l'aide de votre compte professionnel ou scolaire pour Office 365. 
     
 2. Choisissez **** \> **facturation** de l'administrateur pour voir le contenu de votre abonnement actuel. 
 
+<<<<<<< HEAD
+    - Si vous voyez **office 365 entreprise E5**, votre organisation dispose d'Office 365 Threat Intelligence. 
+    - Si vous voyez un autre abonnement, tel qu' **office 365 entreprise E3** ou **Office 365 entreprise E1**, envisagez d'ajouter des renseignements sur les menaces. (Pour ce faire, choisissez **+ Ajouter un abonnement**.)
+    
+3. Dans le Centre d'administration Office 365, sélectionnez **Utilisateurs** \> **Utilisateurs actifs**.
+    
+5. Affectez des licences Office 365 Threat Intelligence à tous les utilisateurs actifs. (Seuls les utilisateurs disposant d'une licence pour l'intelligence des menaces s'afficheront dans des rapports, comme Explorer.) =======
     - Si vous voyez **office 365 entreprise E5**, votre organisation dispose d'Office 365 Advanced Threat Protection Plan 2, qui inclut l'intelligence des menaces. 
     - Si vous voyez un autre abonnement, tel qu' **office 365 entreprise E3** ou **Office 365 entreprise E1**, songez à ajouter le plan de protection avancée contre les menaces 2. (Pour ce faire, choisissez **+ Ajouter un abonnement**.)
     
 3. Dans le Centre d'administration Office 365, sélectionnez **Utilisateurs** \> **Utilisateurs actifs**.
     
 5. Affectez des licences Office 365 Advanced Threat Protection à tous les utilisateurs actifs. (Seuls les utilisateurs disposant d'une licence pour les fonctionnalités d'aide à la décision s'afficheront dans des rapports, comme Explorer.)
+>>>>>>> amont/compliance20
     
 6. Attribuer des rôles à des personnes de votre organisation qui travailleront avec la protection avancée contre les menaces d'Office 365. Consultez la rubrique [accorder aux utilisateurs l'accès au &amp; Centre de sécurité conformité Office 365](grant-access-to-the-security-and-compliance-center.md)et consulter le tableau suivant:
     
 |||
 |:-----|:-----|
 |**Pour effectuer cette activité...** <br/> |**Vous devez disposer de l'un de ces rôles.** <br/> |
-|Utiliser le tableau de bord de menace (ou le nouveau [tableau de bord de sécurité](security-dashboard.md))  <br/> Afficher les informations sur les menaces récentes ou actuelles  <br/> |Administrateur général Office 365  <br/> Administrateur de sécurité (affecté dans le centre d'administration Azure Active Directory)  <br/> Lecteur de sécurité (affecté dans le centre d'administration Azure Active Directory)  <br/> |
-|Utiliser l'Explorateur de menaces (également appelé Explorateur)  <br/> Analyser les menaces  <br/> |Administrateur général Office 365  <br/> Administrateur de sécurité (affecté dans le &amp; Centre de sécurité conformité)  <br/> Lecteur de sécurité (affecté dans le &amp; Centre de sécurité conformité)  <br/> |
-|Afficher les incidents (également appelés enquêtes) <br/> Ajouter des messages électroniques à un incident  <br/> |Administrateur général Office 365  <br/> Administrateur de sécurité (affecté dans le &amp; Centre de sécurité conformité)  <br/> Lecteur de sécurité (affecté dans le &amp; Centre de sécurité conformité)  <br/> |
-|Déclencher les actions de messagerie dans un incident  <br/> Rechercher et supprimer des messages électroniques suspects  <br/> |Administrateur général Office 365 ou administrateur de sécurité  <br/> L'un des rôles ci-dessus et la recherche et la purge (affectés &amp; dans le centre de sécurité conformité)  <br/> |
-|Intégrer Office 365 Threat Intelligence à Windows Defender - Protection avancée contre les menaces  <br/> Intégrer Office 365 Threat Intelligence à un serveur SIEM  <br/> |Administrateur général Office 365  <br/> Administrateur de sécurité (affecté dans le &amp; Centre de sécurité conformité)  <br/> Rôle approprié attribué dans des applications supplémentaires (par exemple, le portail de protection avancée contre les menaces Windows Defender ou un serveur SIEM)  <br/> |
+<<<<<<< HEAD | Utiliser le tableau de bord de menace (ou le nouveau [tableau de bord de sécurité](security-dashboard.md))  <br/> Afficher les informations sur les menaces récentes ou actuelles  <br/> | Administrateur général Office 365  <br/> Administrateur de sécurité (affecté dans le &amp; Centre de sécurité conformité)  <br/> Lecteur de sécurité (affecté dans le &amp; Centre de sécurité conformité)  <br/> | ======= | Utiliser le tableau de bord de menace (ou le nouveau [tableau de bord de sécurité](security-dashboard.md))  <br/> Afficher les informations sur les menaces récentes ou actuelles  <br/> | Administrateur général Office 365  <br/> Administrateur de sécurité (affecté dans le centre d'administration Azure Active Directory)  <br/> Lecteur de sécurité (affecté dans le centre d'administration Azure Active Directory)  <br/> |
+>>>>>>> amont/compliance20 | Utiliser l'Explorateur de menaces (également appelé Explorateur)  <br/> Analyser les menaces  <br/> | Administrateur général Office 365  <br/> Administrateur de sécurité (affecté dans le &amp; Centre de sécurité conformité)  <br/> Lecteur de sécurité (affecté dans le &amp; Centre de sécurité conformité)  <br/> | | Afficher les incidents (également appelés enquêtes) <br/> Ajouter des messages électroniques à un incident  <br/> | Administrateur général Office 365  <br/> Administrateur de sécurité (affecté dans le &amp; Centre de sécurité conformité)  <br/> Lecteur de sécurité (affecté dans le &amp; Centre de sécurité conformité)  <br/> | | Déclencher les actions de messagerie dans un incident  <br/> Rechercher et supprimer des messages électroniques suspects  <br/> | Administrateur général Office 365 ou administrateur de sécurité  <br/> L'un des rôles ci-dessus et la recherche et la purge (affectés &amp; dans le centre de sécurité conformité)  <br/> | | Intégrer Office 365 Threat Intelligence avec Windows Defender protection avancée contre les menaces  <br/> Intégrer Office 365 Threat Intelligence à un serveur SIEM  <br/> | Administrateur général Office 365  <br/> Administrateur de sécurité (affecté dans le &amp; Centre de sécurité conformité)  <br/> Rôle approprié attribué dans des applications supplémentaires (par exemple, le portail de protection avancée contre les menaces Windows Defender ou un serveur SIEM)  <br/> |
    
 Pour plus d'informations sur les rôles, les groupes de rôles et les autorisations, consultez [la &amp; rubrique autorisations dans le centre de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md).
     

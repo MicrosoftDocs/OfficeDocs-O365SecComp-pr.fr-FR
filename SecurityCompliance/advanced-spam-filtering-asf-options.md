@@ -1,7 +1,7 @@
 ---
 title: Options de filtrage avancé du courrier indésirable
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 6/26/2015
 ms.audience: ITPro
@@ -15,12 +15,12 @@ ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
 description: Les options de filtrage avancé du courrier indésirable permettent aux administrateurs d'inspecter les différents attributs de contenu d'un message. La présence de ces attributs dans un message augmente le score de courrier indésirable du message (augmentant ainsi le potentiel pour qu'il soit identifié comme du courrier indésirable) ou marque le message comme courrier indésirable. Les options ASF visent des propriétés de message spécifiques, telles que les balises HTML et la redirection d'URL, qui sont généralement présentes dans les messages de courrier indésirable.
-ms.openlocfilehash: d9333fd4f5c8937e440efb15e1a04db787b39b78
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: dd782c4e1e95865651df7e9e14b72a920c8efd6f
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218674"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275964"
 ---
 # <a name="advanced-spam-filtering-options"></a>Options de filtrage avancé du courrier indésirable
 

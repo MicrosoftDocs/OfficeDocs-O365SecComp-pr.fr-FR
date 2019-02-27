@@ -1,7 +1,7 @@
 ---
 title: Exemple de notification lorsqu'un expéditeur est bloqué en raison de l'envoi de courrier indésirable sortant
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/2/2017
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: c33fd406-a4c8-4ac8-ad85-123996c5cded
+ms.collection:
+- M365-security-compliance
 description: "Lorsqu'un expéditeur est bloqué du service en raison de l'envoi de courrier indésirable sortant, l'administrateur de domaine spécifié dans Configurer la stratégie anti-courrier indésirable sortant reçoit un courrier électronique de notification semblable à celui-ci :"
-ms.openlocfilehash: b9fcdf9c2f44a4446a678ca4b22a0a12b24b6fd4
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 94af965505f7541600a6cd7937ae881226a2ac79
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003243"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275474"
 ---
 # <a name="sample-notification-when-a-sender-is-blocked-sending-outbound-spam"></a>Exemple de notification lorsqu'un expéditeur est bloqué en raison de l'envoi de courrier indésirable sortant
 
@@ -61,6 +63,6 @@ Exchange Online Protection.
 \*\*REMARQUE : ne répondez pas à ce courrier électronique car il est envoyé à partir d'une adresse non contrôlée\*\*
   
 > [!TIP]
-> Vous pouvez également contacter le support technique via les options décrite à [l’aide et support pour EOP](eop/help-and-support-for-eop.md). 
+> Vous pouvez également contacter le support via les options documentées dans [Help and support for EOP](eop/help-and-support-for-eop.md). 
   
 

@@ -1,7 +1,7 @@
 ---
 title: Signaler les messages de courrier indésirable à Microsoft
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
+ms.collection:
+- M365-security-compliance
 description: 'Le complément de signalement de courrier indésirable de Microsoft pour Microsoft Office Outlook vous offre plusieurs méthodes pour signaler des messages en tant que courriers indésirables :'
-ms.openlocfilehash: c32f66aee48eea6f7536680ba4e165776685f7ae
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 90687c90c7594163d48dfb9bd329e7c94c25935f
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002299"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275594"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>Signaler les messages de courrier indésirable à Microsoft
 
@@ -33,19 +35,19 @@ Le complément de signalement de courrier indésirable de Microsoft pour Microso
 Le complément de signalement de courrier indésirable vous permet de soumettre des rapports au service Microsoft Exchange Online Protection (EOP). Si votre boîte aux lettres n'est pas protégée par le service, la soumission de rapports de courrier indésirable n'affecte pas vos filtres de courrier indésirable. Les administrateurs peuvent en savoir plus sur d'autres paramètres de courrier indésirable qui s'appliquent à une organisation entière en consultant les rubriques [Comment s'assurer qu'un message n'est pas marqué comme du courrier indésirable](https://go.microsoft.com/fwlink/p/?LinkId=534224) ou [Bloquer le courrier indésirable avec le filtre de courrier indésirable Office 365 pour éviter les faux négatifs](https://go.microsoft.com/fwlink/p/?LinkId=534225). Ils sont utiles si vous avez un contrôle de niveau administrateur et que vous souhaitez éviter les faux positifs ou les faux négatifs.
   
 > [!TIP]
-> Vous pouvez également envoyer des messages de courrier indésirable directement à Microsoft à l’aide de l’adresse de messagerie [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) et faux positifs (non spam) à l’aide de l’adresse de messagerie [not_junk@office365.microsoft.com](mailto: not_junk@office365.microsoft.com) . Pour plus d’informations, voir [envoi spam, légitimes et des hameçonnage anti-spam à Microsoft pour analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). 
+> Vous pouvez également envoyer des messages de courrier indésirable directement à Microsoft à l'aide de l'adresse de messagerie [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) et de messages faux positifs (autres que des courriers indésirables) à l'aide de l'adresse de messagerie [not_junk@office365.microsoft.com](mailto: not_junk@office365.microsoft.com) . Pour plus d'informations, consultez la rubrique soumettre des courriers indésirables, des courriers indésirables [et des tentatives de hameçonnage à Microsoft pour analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). 
   
-### <a name="to-report-junk-email-messages-from-outlook"></a>Pour signaler les messages de courrier indésirable à partir d’Outlook
+### <a name="to-report-junk-email-messages-from-outlook"></a>Pour signaler des messages électroniques indésirables à partir d'Outlook
 
-[Utiliser le complément de Message de rapport](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) 
+[Utiliser le complément de message de rapport](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) 
   
 ### <a name="to-report-junk-email-messages-from-your-inbox"></a>Pour signaler un message en tant que courrier indésirable à partir de votre boîte de réception
 
 1. Sélectionnez les messages à signaler comme courrier indésirable.
     
-2. Sélectionnez **courrier indésirable** , puis cliquez sur **Signaler le courrier indésirable**.  ![Signaler le courrier indésirable à partir de votre boîte de réception](media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)
+2. Sélectionnez **courrier** indésirable, puis cliquez sur **signaler le courrier**indésirable.  ![Signaler les messages indésirables de votre boîte de réception](media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)
   
-3. **Rapport de courrier indésirable Microsoft Add-dans** la boîte de dialogue s’ouvre. Si vous êtes sûr de vouloir envoyer les messages que vous avez sélectionné comme courrier indésirable, cliquez sur **Oui**.  ![Confirmer signaler comme courriers indésirables](media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
+3. La boîte **de dialogue complément de création de rapports de courrier indésirable de Microsoft** s'ouvre. Si vous êtes sûr de vouloir envoyer les messages que vous avez sélectionnés comme courrier indésirable, cliquez sur **Oui**.  ![Confirmer le signalement comme courrier indésirable](media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
   
     > [!NOTE]
     > Si vous ne souhaitez pas recevoir ce message de confirmation lors de l'envoi de courriers indésirables, cochez la case **Ne plus afficher ce message**. 
@@ -54,9 +56,9 @@ Les messages sélectionnés sont envoyés à Microsoft pour analyse et déplacé
   
 ### <a name="to-report-a-junk-email-message-from-within-an-opened-message"></a>Pour signaler un message en tant que courrier indésirable à partir d'un message électronique ouvert
 
-1. À partir d’un message ouvert, cliquez sur le bouton de **Signaler le courrier indésirable** dans le ruban du message. Par exemple, cliquez sur **courrier indésirable** \> **Indésirable rapport** ![signaler un courrier indésirable à partir d’un message](media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)
+1. À partir d'un message ouvert, cliquez sur le bouton **signaler le courrier** indésirable dans le ruban message. Par exemple, cliquez **** \> **** ![sur rapport de courrier indésirable pour le courrier indésirable à partir d'un message](media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)
   
-2. **Rapport de courrier indésirable Microsoft Add-dans** la boîte de dialogue s’ouvre. Si vous êtes sûr de vouloir envoyer le message que vous avez sélectionné comme courrier indésirable, cliquez sur **Oui**.  ![Confirmer signaler comme courriers indésirables](media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
+2. La boîte **de dialogue complément de création de rapports de courrier indésirable de Microsoft** s'ouvre. Si vous êtes sûr de vouloir envoyer le message que vous avez sélectionné comme courrier indésirable, cliquez sur **Oui**.  ![Confirmer le signalement comme courrier indésirable](media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
   
     > [!NOTE]
     > Si vous ne souhaitez pas recevoir ce message de confirmation lors de l'envoi de courriers indésirables, cochez la case **Ne plus afficher ce message**. 
@@ -65,9 +67,9 @@ Le message sélectionné est envoyé à Microsoft pour analyse et déplacé dans
   
 ## <a name="for-more-information"></a>Pour plus d’informations
 
-[Activer le complément de Message de rapport](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
+[Activer le complément Signaler le message](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
   
-[Informations de dépannage et prise en charge](troubleshooting-and-support-information.md)
+[Résolution des problèmes et informations de support technique](troubleshooting-and-support-information.md)
   
 [Comment s'assurer qu'un message n'est pas marqué comme du courrier indésirable](https://go.microsoft.com/fwlink/p/?LinkId=534224)
   

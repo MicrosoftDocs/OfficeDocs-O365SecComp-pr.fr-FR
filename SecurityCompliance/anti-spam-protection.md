@@ -15,12 +15,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Découvrez les paramètres de blocage du courrier indésirable et les filtres qui vous permettront d'éviter le courrier indésirable dans Exchange Online et Office 365. Vous recevez trop de courrier indésirable dans Office 365? Vous pouvez personnaliser vos filtres de courrier indésirable et votre stratégie de blocage du courrier indésirable.
-ms.openlocfilehash: 2d8f433cabda4408da2e29b7bc6570e09e6989dd
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: f4d32bb0efae0a38fdc6789feef73bd5014eb75b
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223423"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296317"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Protection contre le courrier indésirable pour Office 365
 
@@ -75,7 +75,7 @@ Si vous êtes préoccupé par le courrier indésirable, le hameçonnage et l'usu
   
 [Empêcher le marquage des faux positifs comme courrier indésirable à l’aide d’une liste fiable ou d’autres techniques](prevent-email-from-being-marked-as-spam-0.md)
   
-[Procédure de configuration du filtrage du courrier indésirable Office 365 pour bloquer les messages indésirables](block-email-spam-to-prevent-false-negatives.md)
+[Procédure de configuration du filtrage du courrier indésirable Office 365 pour bloquer les messages indésirables](reduce-spam-email.md)
   
 [Quelle est la différence entre courrier inDésirable et courrier électronique en masse?](https://technet.microsoft.com/library/dn720441%28v=exchg.150%29.aspx)
   

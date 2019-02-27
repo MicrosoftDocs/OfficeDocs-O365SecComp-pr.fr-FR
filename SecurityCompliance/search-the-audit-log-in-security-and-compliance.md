@@ -7,18 +7,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilisez le centre de sécurité & pour rechercher le journal d'audit unifié pour afficher l'activité des utilisateurs et des administrateurs dans votre organisation Office 365. "
-ms.openlocfilehash: 5fe4eac59f3e60e75a7452b0dcc51b6b8ca88a5b
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 6cab2a0495b4c4b1976a5c45b898603653568599
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223763"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296607"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Effectuer des recherches dans le journal d'audit dans le centre de sécurité & Office 365 Security
 
@@ -54,6 +56,8 @@ Vous avez besoin de savoir si un utilisateur a affiché un document spécifique 
 - Activité de l'utilisateur et de l'administrateur dans Microsoft Stream
 
 - Activité des analystes et des administrateurs dans Microsoft Workplace Analytics
+
+- Activité des utilisateurs et des administrateurs dans les PowerApp
     
    
 ## <a name="before-you-begin"></a>Avant de commencer
@@ -295,8 +299,8 @@ Cliquez sur l'un des liens suivants pour accéder à une table spécifique.
 |[Activités d'administration des applications](#application-administration-activities) <br/> |[Activités d'administration des rôles](#role-administration-activities) <br/> |[Activités d'administration d'annuaire](#directory-administration-activities) <br/> |
 |[activités eDiscovery](#ediscovery-activities) <br/> |[Activités Power BI](#power-bi-activities) <br/> |[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|
 [Activités de Microsoft teams](#microsoft-teams-activities) <br/> |[Activités Yammer](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> 
-|[Microsoft Stream](#microsoft-stream) <br/>|[Activités d'administration d'Exchange](#exchange-admin-audit-log)<br/>
-||||
+|[Microsoft PowerApps](#microsoft-powerapps)<br/>|[Microsoft Stream](#microsoft-stream) <br/>|[Activités d'administration d'Exchange](#exchange-admin-audit-log)<br/>|
+|||
    
   
 ### <a name="file-and-page-activities"></a>Activités de fichier et de page
@@ -663,6 +667,9 @@ Le tableau suivant répertorie les activités de l'utilisateur et de l'administr
 
 Vous pouvez rechercher des activités dans le journal d'audit dans Microsoft Flow. Ces activités incluent la création, la modification et la suppression de flux, ainsi que la modification des autorisations de flux. Pour plus d'informations sur l'audit des activités de flux, voir le blog « [événements d'audit de flux Microsoft» désormais disponible dans le centre de sécurité _AMP_ conformité Office 365](https://flow.microsoft.com/blog/security-and-compliance-center).
 
+### <a name="microsoft-powerapps"></a>Microsoft PowerApps
+
+Vous pouvez rechercher dans le journal d'audit les activités liées à l'application dans les PowerApp. Ces activités incluent la création, le lancement et la publication d'une application. l'attribution d'autorisations aux applications est également auditée. Pour obtenir une description de toutes les activités PowerApp, consultez la rubrique [journalisation des activités pour les PowerApp](https://docs.microsoft.com/en-us/power-platform/admin/logging-powerapps#what-events-are-audited).
 
 ### <a name="microsoft-stream"></a>Microsoft Stream
   

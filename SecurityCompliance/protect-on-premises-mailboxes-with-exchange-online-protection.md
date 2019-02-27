@@ -1,7 +1,7 @@
 ---
 title: Protéger les boîtes aux lettres locales à l'aide d'Exchange Online Protection
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 6/1/2017
 ms.audience: ITPro
@@ -14,13 +14,15 @@ search.appverid:
 - GPA150
 - MET150
 ms.assetid: c5e95951-da67-4ec7-92c5-982abd477e69
+ms.collection:
+- M365-security-compliance
 description: Même si vous envisagez d'héberger une partie ou l'ensemble de vos boîtes aux lettres en local, vous pouvez toujours protéger les boîtes aux lettres à l'aide d'Exchange Online Protection (EOP). Pour configurer des connecteurs, votre compte doit être un administrateur général Office 365 ou un administrateur d'entreprise Exchange (le groupe de rôles gestion de l'organisation). Pour plus d'informations sur la relation entre les autorisations Office 365 et les autorisations Exchange, consultez la rubrique attribution de rôles d'administrateur dans Office 365 géré par 21Vianet. Si toutes vos boîtes aux lettres Exchange sont en local, procédez comme suit pour configurer votre service EOP.
-ms.openlocfilehash: 01a364accd40bfd5889e7b0203cfaa7e156d0997
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 40fb5471a084cf245d9aef7f7b2b88effb5c4a83
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216629"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276034"
 ---
 # <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>Protéger les boîtes aux lettres locales à l'aide d'Exchange Online Protection
 

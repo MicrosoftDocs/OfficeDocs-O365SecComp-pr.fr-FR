@@ -8,18 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: Cet article décrit l'utilisation de l'outil nouvelles enquêtes de données (aperçu) dans le centre de sécurité & de la sécurité d'Office 365 pour gérer un incident de fuite de données.
-ms.openlocfilehash: 93cbbed8763f0af31ab8d4e32348f01bfda17a2a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d130983bc87ae5cbb962f9271d8b4b505db0e6f1
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218124"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295807"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Gérer un incident de fuite de données dans Microsoft 365 
 

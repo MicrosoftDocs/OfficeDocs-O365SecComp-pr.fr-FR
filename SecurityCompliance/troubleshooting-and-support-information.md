@@ -1,7 +1,7 @@
 ---
 title: Dépannage et informations relatives au support
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
+ms.collection:
+- M365-security-compliance
 description: Cette rubrique décrit les étapes de résolution des problèmes pour les utilisateurs finaux et les administrateurs, et fournit des informations sur la manière de contacter le support technique pour obtenir de l'aide.
-ms.openlocfilehash: 249f6fabf0ae7037ef905c455cfb45582be0e40b
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: d9ff55350487b21325d9a95491fa6861fcc441fd
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003123"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275994"
 ---
 # <a name="troubleshooting-and-support-information"></a>Dépannage et informations relatives au support
 
@@ -85,11 +87,11 @@ En tant qu'administrateur, vous pouvez rencontrer des problèmes avec des utilis
     
 ## <a name="support-information"></a>Informations concernant le support
 
-Si vous avez besoin d’aide sur l’installation, configuration ou la désinstallation de la macro complémentaire, veuillez contacter support technique à l’aide du nouveau lien de demande de service dans la page prise en charge dans le centre d’administration d’Office 365. Pour plus d’options, y compris la soumission d’une demande de service via les options de téléphone et d’auto-assistance, voir [aide et support pour EOP](eop/help-and-support-for-eop.md).
+Si vous avez besoin d'aide pour l'installation, la configuration ou la désinstallation du complément, veuillez contacter le support technique à l'aide du lien nouvelle demande de service sur la page support dans le centre d'administration Office 365. Pour obtenir des options supplémentaires, notamment la soumission d'une demande de service via les options de téléphone et d'auto-assistance, consultez [l'aide et le support pour EOP](eop/help-and-support-for-eop.md).
   
 ## <a name="for-more-information"></a>Pour plus d’informations
 
-[Activer le complément de Message de rapport](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
+[Activer le complément Signaler le message](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
   
 [Signaler les messages de courrier indésirable à Microsoft](report-junk-email-messages-to-microsoft.md)
   

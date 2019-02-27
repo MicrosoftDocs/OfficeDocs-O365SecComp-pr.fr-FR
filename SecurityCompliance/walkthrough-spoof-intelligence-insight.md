@@ -1,7 +1,7 @@
 ---
 title: Présentation des usurpations d'identité
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 ms.date: 7/30/2018
 ms.audience: ITPro
 ms.topic: overview
@@ -11,13 +11,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
+ms.collection:
+- M365-security-compliance
 description: Découvrez comment fonctionne la nouvelle usurpation d'aide à la décision.
-ms.openlocfilehash: 83fa1580a0e7c4717581cc5f23b8f525d6b918e0
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 4303b8f2524e6722e7febbbd06ab9daa853ed802
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220324"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275914"
 ---
 # <a name="walkthrough-spoof-intelligence-insight"></a>Procédure pas à pas: usurpation d'aide
 
@@ -85,7 +87,7 @@ Vous ajoutez ou supprimez un domaine de la liste des expéditeurs approuvés All
   
 Cela modifie la combinaison de paires de domaines unique du domaine usurpé et de l'infrastructure d'envoi et ne fournit pas de couverture pour l'ensemble du domaine usurpé ou l'infrastructure d'envoi isolée. Par exemple, si vous ajoutez la paire de domaines suivante à la liste verte de l'expéditeur «AllowedToSpoof»: *domaine usurpé* «gmail.com» et l' *infrastructure d'envoi* «TMS *. mx.com»,* seul le courrier de cette paire de domaines sera autorisé à usurper. Les autres expéditeurs qui tentent d'usurper «gmail.com» et d'autres domaines que «tms.mx.com» tentent d'usurper continueront à être protégés par l'intelligence des usurpations d'identité. 
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [En savoir plus sur la veille contre l’usurpation d’identité](learn-about-spoof-intelligence.md)
   

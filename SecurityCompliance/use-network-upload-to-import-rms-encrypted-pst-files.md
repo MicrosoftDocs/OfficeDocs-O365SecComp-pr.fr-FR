@@ -7,6 +7,7 @@ ms.date: 5/29/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -14,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 84a595b8-cd77-4f66-ac52-57a33ddd4773
 description: Découvrez comment utiliser le chargement réseau pour importer des fichiers PST chiffrés RMS dans des boîtes aux lettres utilisateur dans Office 365.
-ms.openlocfilehash: c552e8a4d1ddc4163fefaeff18b75a4dbd5ee4cb
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 8f08b17b5b975316afaf9545d5ba42057f35deca
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223643"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296577"
 ---
 # <a name="use-network-upload-to-import-rms-encrypted-pst-files-to-office-365"></a>Utiliser le chargement réseau pour importer des fichiers PST chiffrés via RMS dans Office 365
 

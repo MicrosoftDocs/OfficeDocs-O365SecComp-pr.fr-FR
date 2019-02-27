@@ -1,7 +1,7 @@
 ---
 title: Installation du complément de création de rapports de courrier indésirable pour Microsoft Outlook
-ms.author: krowley
-author: kccross
+ms.author: MSFTTracyP
+author: tracyp
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -10,13 +10,15 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
+ms.collection:
+- M365-security-compliance
 description: Dans cette articleSupported LanguagesInstall le dossier Junk Email rePorting Add-unUninstall the Junk Email rePorting Add-inFor more information
-ms.openlocfilehash: 20fb879d3a965a973513a69cf8055f0d96507e9a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: b29bd367ca168ff45d983796b8ae6e68ee9df297
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217024"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276304"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installation du complément de création de rapports de courrier indésirable pour Microsoft Outlook
   
@@ -66,7 +68,7 @@ Vous pouvez installer le complément de création de rapports de courrier indés
     
 - En exécutant une installation sans assistance, c'est-à-dire sans interface utilisateur d'installation. Au lieu d'utiliser cette dernière, vous spécifiez des options de ligne de commande qui exécutent un script d'installation. Lorsque vous installez le complément, vous disposez d'options de configuration supplémentaires qui sont indisponibles dans l'interface GUI. Pour plus d'informations, consultez la rubrique relative à [Installation du complément de création de rapports de courrier indésirable en mode sans assistance](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_InstalltheJunkEmailReportingAdd-IninSilentMode).
     
-### <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
+### <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
 
 L'installation du complément de création de rapports de courrier indésirable Microsoft pour Microsoft Outlook requiert la configuration suivante :
   

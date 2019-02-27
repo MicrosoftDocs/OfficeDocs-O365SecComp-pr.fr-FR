@@ -7,18 +7,19 @@ ms.date: 1/30/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: Utilisez la fonctionnalité statistiques de recherche pour afficher et comparer les statistiques de plusieurs recherches de contenu dans &amp; le centre de sécurité conformité Office 365. Vous pouvez également configurer la liste de mots clés lors de la création ou de la modification d'une requête de recherche pour obtenir des statistiques améliorées qui indiquent le nombre d'éléments correspondant à chaque expression de mot clé ou mot clé.
-ms.openlocfilehash: c62f04e690661a5a7022fa00f727d1be39e74f12
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 614f832ec737850986af334a390ffc0c4e88122d
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214824"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295727"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Afficher les statistiques de mot clé pour les résultats de recherche de contenu
 

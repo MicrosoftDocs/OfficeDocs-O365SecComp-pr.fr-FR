@@ -1,7 +1,7 @@
 ---
 title: Courrier électronique de domaine non enregistré
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 10/17/2018
 ms.audience: Admin
@@ -11,13 +11,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
+ms.collection:
+- M365-security-compliance
 description: Si vous envoyez un volume important de courrier non enregistré de domaine, vous risquez de bloquer le blocage de votre courrier. Lisez cet article pour en savoir plus.
-ms.openlocfilehash: bef39780438a6d9669354bddaed391b2364badf8
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 8120bd147da2a7aab41ae14c444d2fe57242199e
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220774"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276224"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>Courrier électronique de domaine non enregistré: ce que vous devez savoir
 

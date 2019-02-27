@@ -8,18 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c36e0a2228db042d50361460e2e22f13556e8715
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 730e1fe40756bcb38f3b071137828072f4e2dcb5
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218214"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296717"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>Ajouter des dépositaires à un cas avancé eDiscovery (aperçu)
 
@@ -27,9 +27,14 @@ Advanced eDiscovery (aperçu) vous permet d'utiliser l'outil de gestion des dép
 
 Utilisez le flux de travail suivant pour ajouter et gérer des dépositaires dans les cas avancés de découverte électronique (préversion) dans le centre de sécurité & Compliance Center. 
 
+![Onglet gestion des dépositaires](../media/CustodianMgtPage.png)
+
+
 ## <a name="step-1-identify-potential-custodians"></a>Étape 1: identifier les dépositaires potentiels
 
 La première étape consiste à identifier les dépositaires appropriés pour votre question. Pour ajouter des dépositaires à un cas, vous devez être membre du groupe de rôles gestionnaires eDiscovery ou administrateurs eDiscovery.   
+
+![Identifier les dépositaires potentiels](../media/AddCustodianStep1.png)
 
 Pour ajouter des dépositaires à une sacoche eDiscovery (préversion) avancée existante:
 
@@ -40,10 +45,12 @@ Pour ajouter des dépositaires à une sacoche eDiscovery (préversion) avancée 
 3. Choisissez les dépositaires que vous souhaitez ajouter à l'incident. Vous pouvez commencer par taper pour rechercher et sélectionner les utilisateurs dans Azure Active Directory de votre organisation.
  
 4. Après avoir finalisé la liste des dépositaires, cliquez sur **suivant** pour commencer à identifier les sources de données potentielles. 
-   
+  
 ## <a name="optional-step-2-select-custodian-data-sources"></a>Module Étape 2: sélection des sources de données du dépositaire
 
 Une fois que vous avez ajouté des dépositaires à un cas, vous pouvez tirer parti d'Office 365 pour vous aider à identifier et à conserver les sources de données des dépositaires principaux. L'étape suivante de ce flux de travail consiste à sélectionner les sources de données appartenant aux dépositaires spécifiées à l'étape 1. 
+
+![Sélectionner des sources de données privatives de Troie](../media/AddCustodianStep2.png)
 
 Pour identifier les sources de données des dépositaires: 
 
@@ -59,19 +66,21 @@ Pour identifier les sources de données des dépositaires:
 
 En fonction de votre cas, vous pouvez également ajouter des boîtes aux lettres qu'un dépositaire donné a peut-être utilisé dans le passé, des groupes pour lesquels un dépositaire est actuellement membre ou des sites auxquels un dépositaire a accès dans le passé. En plus des sources de données des dépositaires principaux, vous pouvez ajouter des sources de données Office 365 supplémentaires à un dépositaire ou utiliser Office 365 pour vous aider à identifier également les sources de données pertinentes. 
 
+![Mapper des sources de données supplémentaires](../media/AddCustodianStep3.PNG)
+
 Pour mapper des boîtes aux lettres, des sites ou des équipes à un dépositaire spécifique:
 
 1. Sélectionnez **mettre à jour** pour affecter des emplacements de contenu, comme des boîtes aux lettres, des sites et des équipes à un dépositaire spécifique. 
 
 2. Dans le menu volant, spécifiez les éléments suivants:
    
-  -  **Boîtes aux lettres Exchange** : cliquez sur **choisir les utilisateurs, les groupes ou les équipes** , puis cliquez à nouveau sur **choisir les utilisateurs, les groupes ou les équipes** . Pour spécifier les boîtes aux lettres à affecter au dépositaire sélectionné, utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution. Vous pouvez également affecter la boîte aux lettres associée pour un groupe Office 365 ou une équipe Microsoft. Activez la case à cocher utilisateur, groupe, équipe, cliquez sur **choisir**, puis sur **Terminer**.
+    -  **Boîtes aux lettres Exchange** : cliquez sur **choisir les utilisateurs, les groupes ou les équipes** , puis cliquez à nouveau sur **choisir les utilisateurs, les groupes ou les équipes** . Pour spécifier les boîtes aux lettres à affecter au dépositaire sélectionné, utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution. Vous pouvez également affecter la boîte aux lettres associée pour un groupe Office 365 ou une équipe Microsoft. Activez la case à cocher utilisateur, groupe, équipe, cliquez sur **choisir**, puis sur **Terminer**.
 
-      > [!NOTE]
-      > Lorsque vous cliquez sur choisir les utilisateurs, les groupes ou les équipes pour spécifier des boîtes aux lettres, le sélecteur de boîtes aux lettres affiché est vide. Il s'agit d'une conception qui améliore les performances. Pour ajouter des personnes à cette liste, tapez un nom (un minimum de 3 caractères) dans la zone de recherche.
+        > [!NOTE]
+        > Lorsque vous cliquez sur choisir les utilisateurs, les groupes ou les équipes pour spécifier des boîtes aux lettres, le sélecteur de boîtes aux lettres affiché est vide. Il s'agit d'une conception qui améliore les performances. Pour ajouter des personnes à cette liste, tapez un nom (un minimum de 3 caractères) dans la zone de recherche.
      
-   - **Sites SharePoint** : cliquez sur **choisir des sites** , puis cliquez sur choisir de nouveau les **sites** pour spécifier d'autres sites SharePoint et OneDrive entreprise que vous souhaitez affecter au dépositaire sélectionné. Vous pouvez également ajouter l'URL du site SharePoint pour un groupe Office 365 ou une équipe Microsoft. Tapez l'URL de chaque site que vous souhaitez attribuer. Cliquez sur **choisir**, puis sur **Terminer**.
-   - **Microsoft** teams – cliquez sur **choisir teams** , puis cliquez sur **choisir les équipes** pour afficher la liste des groupes d'équipes Microsoft dont le dépositaire est membre. Sélectionnez les équipes que vous souhaitez ajouter à votre dépositaire. Une fois sélectionné, le système identifie automatiquement & sélectionnez le site SharePoint et la boîte aux lettres de groupe associés associés à cette équipe Microsoft. Cliquez sur **choisir**, puis sur **Terminer**.
+     - **Sites SharePoint** : cliquez sur **choisir des sites** , puis cliquez sur choisir de nouveau les **sites** pour spécifier d'autres sites SharePoint et OneDrive entreprise que vous souhaitez affecter au dépositaire sélectionné. Vous pouvez également ajouter l'URL du site SharePoint pour un groupe Office 365 ou une équipe Microsoft. Tapez l'URL de chaque site que vous souhaitez attribuer. Cliquez sur **choisir**, puis sur **Terminer**.
+     - **Microsoft** teams – cliquez sur **choisir teams** , puis cliquez sur **choisir les équipes** pour afficher la liste des groupes d'équipes Microsoft dont le dépositaire est membre. Sélectionnez les équipes que vous souhaitez ajouter à votre dépositaire. Une fois sélectionné, le système identifie automatiquement & sélectionnez le site SharePoint et la boîte aux lettres de groupe associés associés à cette équipe Microsoft. Cliquez sur **choisir**, puis sur **Terminer**.
         
       > [!NOTE]
       > Pour ajouter des Microsoft teams supplémentaires, vous devez ajouter séparément la boîte aux lettres et le site SharePoint, comme indiqué ci-dessus.
@@ -80,12 +89,14 @@ Une fois que vous avez terminé le mappage de vos sources, vous pouvez afficher 
 
 ## <a name="optional-step-4-place-custodians-on-hold"></a>Module Étape 4: placer des dépositaires en conservation
 
- Une fois que vous avez finalisé les dépositaires et les sources de données que vous souhaitez ajouter à votre cas, vous pouvez éventuellement placer une partie ou la totalité de vos dépositaires en conservation. Lorsque vous mettez un dépositaire en conservation, le contenu mappé sur cet utilisateur est conservé jusqu'à ce que vous relâchiez le déblocage du dépositaire ou jusqu'à ce que vous supprimiez le blocage. Dans certains cas, vous souhaiterez peut-être ajouter des dépositaires à un cas sans les mettre en attente. 
+Une fois que vous avez finalisé les dépositaires et les sources de données que vous souhaitez ajouter à votre cas, vous pouvez éventuellement placer une partie ou la totalité de vos dépositaires en conservation. Lorsque vous mettez un dépositaire en conservation, le contenu mappé sur cet utilisateur est conservé jusqu'à ce que vous relâchiez le déblocage du dépositaire ou jusqu'à ce que vous supprimiez le blocage. Dans certains cas, vous souhaiterez peut-être ajouter des dépositaires à un cas sans les mettre en attente. 
 
 Pour placer les dépositaires et les sources de données sélectionnés en conservation:
 
-1. Vérifiez vos sélections de dépositaire et activez la case à cocher pour placer chaque dépositaire en conservation. Une fois qu'un dépositaire est mis en attente, une stratégie de blocage des dépositaires contenant toutes les sources privatives de temps est automatiquement créée. Si cette option n'est pas cochée, le dépositaire & les sources de données sélectionnées seront ajoutées à la casse, mais le contenu ne sera pas préservé.
+1. Vérifiez vos sélections de dépositaire et activez la case à cocher pour placer chaque dépositaire en conservation. Une fois qu'un dépositaire est mis en attente, une stratégie de blocage des dépositaires contenant toutes les sources privatives de place est automatiquement créée. Si cette option n'est pas cochée, le dépositaire et les sources de données sélectionnées seront ajoutés, mais le contenu ne sera pas préservé.
 
 2. Accédez à l' **** onglet suspensions et sélectionnez la **stratégie de blocage**des dépositaires. 
 
 3. Cliquez sur **modifier** pour afficher toutes les sources de données de dépositaire sélectionnées.
+
+    ![Placer des suspensions](../media/AddCustodianStep4.PNG)

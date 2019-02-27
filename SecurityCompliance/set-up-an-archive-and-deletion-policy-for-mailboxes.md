@@ -7,7 +7,9 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MED150
@@ -15,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Créer une stratégie d'archivage et de suppression dans Office 365 qui déplace automatiquement les éléments vers la boîte aux lettres d'archivage d'un utilisateur.
-ms.openlocfilehash: 09fef681884dd12b76bf0e30aa757d6e656f99a7
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: a32c6607ec43634e317ee92b8fed6698e3a5c3b9
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223513"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30297007"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Configurer une stratégie d'archivage et de suppression pour les boîtes aux lettres de votre organisation Office 365
 

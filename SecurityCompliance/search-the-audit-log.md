@@ -8,15 +8,16 @@ ms.audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
 search.appverid: MOE150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
 description: "Le journal d'audit Office 365 est un journal d'audit unifié. Pourquoi un journal d'audit unifié? Étant donné que les événements provenant de la plupart des services Office 365 auxquels vous êtes abonné, sont enregistrés dans un seul journal d'audit que vous pouvez rechercher. Cela signifie que vous pouvez rechercher l'activité de l'utilisateur et de l'administrateur dans les services suivants:"
-ms.openlocfilehash: ec67c63cff57f95bacabd120c466922870b595b4
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d964a1404dd022ba9b56e5d86766c5fc6eabf10a
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214084"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296517"
 ---
 # <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>Rechercher les activités des utilisateurs et des administrateurs dans le journal d’audit Office 365
 

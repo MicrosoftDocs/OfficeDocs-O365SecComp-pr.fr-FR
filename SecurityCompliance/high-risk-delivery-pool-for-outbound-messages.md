@@ -1,7 +1,7 @@
 ---
 title: Pool de remise à risque élevé pour les messages sortants
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 8/24/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
-description: Lorsque le système de messagerie d’un client a été compromis par programme malveillant ou une attaque de courrier indésirable malveillant, et il envoie le courrier indésirable sortant via le service de filtrage hébergé, cela peut entraîner les adresses IP des serveurs de centre de données Office 365 en cours répertoriés dans le bloc de tiers listes.
-ms.openlocfilehash: 69548488f70944a319a449bfc4ac1cb1bffd7b1c
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.collection:
+- M365-security-compliance
+description: Lorsque le système de courrier d'un client a été compromis par un programme malveillant ou une attaque de courrier indésirable malveillant, et qu'il envoie du courrier indésirable sortant via le service de filtrage hébergé, les adresses IP des serveurs du centre de données Office 365 sont peut-être référencées dans un bloc tiers. établit.
+ms.openlocfilehash: 604fdf2df11b6dff493444fe9dbcc6f95ced6a7d
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003133"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275544"
 ---
 # <a name="high-risk-delivery-pool-for-outbound-messages"></a>Pool de remise à risque élevé pour les messages sortants
 
@@ -48,6 +50,6 @@ Tous ces problèmes peuvent entraîner une augmentation subite du nombre de mess
 
 [Configurer la stratégie anti-courrier indésirable sortant](configure-the-outbound-spam-policy.md)
   
-[Forum aux questions sur la protection anti-courrier indésirable](anti-spam-protection-faq.md)
+[FAQ sur la protection contre le courrier indésirable](anti-spam-protection-faq.md)
   
 

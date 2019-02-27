@@ -1,7 +1,7 @@
 ---
 title: Utilisation du portail Supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués Office 365
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 4/18/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
+ms.collection:
+- M365-security-compliance
 description: Obtenez-vous un message d'erreur lorsque vous tentez d'envoyer un courrier électronique à un destinataire dont l'adresse de messagerie est dans Office 365 ? Si vous pensez que vous ne devriez pas recevoir de message d'erreur, vous pouvez utiliser le portail Supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués Office 365.
-ms.openlocfilehash: 4964429f4d3aa1a585b1b543929f83c2cebfb9a4
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 9b4834ae474d781497043bd8800879c57f36d785
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003253"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276180"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>Utilisation du portail Supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués Office 365
 
@@ -30,7 +32,7 @@ Microsoft utilise la liste des expéditeurs bloqués pour protéger ses clients 
   
 Vous savez que vous avez été ajouté à la liste si vous recevez une réponse à un courrier électronique incluant une erreur ressemblant à ce qui suit :
   
-550 5.7.606-649 accès refusé, interdit l’envoi IP [_adresse IP_] ; Pour demander la suppression de cette liste, consultez https://sender.office.com/ et suivez les instructions affichées. Pour plus d’informations, voir [les rapports de non-remise messagerie dans Office 365](http://go.microsoft.com/fwlink/?LinkID=526653).
+550 5.7.606-649 accès refusé, IP d'envoi interdit [_adresse IP_]; Pour demander la suppression de cette liste, https://sender.office.com/ visitez le site et suivez les instructions. Pour plus d'informations, consultez la rubrique notifications de [non-remise aux courriers électroniques dans Office 365](http://go.microsoft.com/fwlink/?LinkID=526653).
   
 où  _IP address_ est l'adresse IP de l'ordinateur sur lequel s'exécute le serveur de messagerie. 
   
@@ -42,7 +44,7 @@ où  _IP address_ est l'adresse IP de l'ordinateur sur lequel s'exécute le serv
     
 3. Cliquez sur **Envoyer**.
     
-    Le portail envoie un courrier électronique à l’adresse de messagerie que vous fournissez. Le courrier électronique doit ressembler à ce qui suit : ![capture d’écran de courrier électronique reçu lorsque vous soumettez une demande via le portail delist](media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+    Le portail envoie un courrier électronique à l'adresse de messagerie que vous indiquez. Le message électronique se présente comme suit: ![capture d'écran du courrier électronique reçu lorsque vous envoyez une demande via le portail supprimer de la liste](media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
   
 4. Cliquez sur le lien de confirmation dans le courrier électronique envoyé par le portail de suppression de la liste.
     
