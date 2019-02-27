@@ -8,19 +8,19 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f8c2ab0ea0f01f436bb1d365e3b7bd87affcef5f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 3f273152d4242e8ce3f9990dc01927edf105f3dc
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220574"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296287"
 ---
-# <a name="export-limits-in-advanced-ediscovery-preview"></a><span data-ttu-id="62855-102">Limites d'exportation dans Advanced eDiscovery (aperçu)</span><span class="sxs-lookup"><span data-stu-id="62855-102">Export limits in Advanced eDiscovery (Preview)</span></span>
+# <a name="export-limits-in-advanced-ediscovery-preview"></a><span data-ttu-id="54956-102">Limites d'exportation dans Advanced eDiscovery (aperçu)</span><span class="sxs-lookup"><span data-stu-id="54956-102">Export limits in Advanced eDiscovery (Preview)</span></span>
 
-<span data-ttu-id="62855-103">Contenu à paraître prochainement.</span><span class="sxs-lookup"><span data-stu-id="62855-103">Content coming soon.</span></span>
+<span data-ttu-id="54956-103">Contenu à paraître prochainement.</span><span class="sxs-lookup"><span data-stu-id="54956-103">Content coming soon.</span></span>
