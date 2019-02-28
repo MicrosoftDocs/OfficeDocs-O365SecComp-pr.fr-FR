@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: ConFigurez des stratégies de vérification de surveillance pour capturer les communications des employés à des fins de révision.
-ms.openlocfilehash: af317194fcf551acde8c53cdf6aa38bfb040dc84
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: bb84520fed1eb5015d46c2c35931f786d29855e7
+ms.sourcegitcommit: 13c601ea11ce6a3c71036fdafda059061c6998d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216734"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30313170"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurer des stratégies de surveillance pour votre organisation
 
@@ -53,9 +53,9 @@ Procédez comme suit pour configurer et utiliser la surveillance dans votre orga
 
     Le test de votre stratégie de surveillance pour vous assurer qu'elle fonctionne comme vous le souhaitez est une partie importante de la façon de s'assurer que votre stratégie de conformité répond à vos normes.
 
-- **Étape 6-(facultatif)** [Configurer le complément Outlook pour les relecteurs qui ne souhaitent pas utiliser le tableau de bord de surveillance Office 365 ou Outlook sur le Web (ancienneMent Outlook Web App) pour consulter les communications contrôlées](configure-supervision-policies.md#UseOutlook)
+- **Étape 6-(facultatif)** [Configurer Outlook pour les relecteurs qui ne souhaitent pas utiliser le tableau de bord de surveillance Office 365 ou Outlook sur le Web (ancienneMent Outlook Web App) pour consulter les communications contrôlées](configure-supervision-policies.md#UseOutlook)
 
-    Le complément de supervision pour Outlook accorde aux réviseurs l'accès à la fonctionnalité de surveillance directement dans le client Outlook afin qu'ils puissent évaluer et catégoriser chaque élément.
+    Outlook peut être configuré pour donner aux réviseurs l'accès à la fonctionnalité de supervision dans le client Outlook afin qu'ils puissent évaluer et catégoriser chaque élément.
 
 <a name="exampledist"> </a>
 
@@ -189,13 +189,13 @@ Une fois que vous avez créé une stratégie de surveillance, il est recommandé
 
 <a name="UseOutlook"> </a>
 
-## <a name="step-6---set-up-outlook-add-in-for-reviewers-optional"></a>Étape 6: configurer le complément Outlook pour les relecteurs (facultatif)
+## <a name="step-6---configure-outlook-for-reviewers-optional"></a>Étape 6-configurer Outlook pour les réviseurs (facultatif)
 
-Les relecteurs qui souhaitent utiliser Outlook au lieu d'utiliser le tableau de bord de supervision dans Office 365 ou Outlook sur le Web pour examiner les communications doivent installer le complément de supervision pour leur client Outlook.
+Les relecteurs qui souhaitent utiliser Outlook au lieu d'utiliser le tableau de bord de surveillance dans Office 365 pour passer en revue les communications doivent configurer leur client Outlook.
 
 ### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>Étape 1: Copiez l'adresse de la boîte aux lettres de supervision
 
-Pour installer le complément pour le bureau Outlook, vous aurez besoin de l'adresse de la boîte aux lettres de surveillance créée dans le cadre de la configuration de la stratégie de supervision.
+Pour configurer la révision pour le bureau Outlook ou pour Outlook pour le Web, vous aurez besoin de l'adresse de la boîte aux lettres de surveillance créée dans le cadre de la configuration de la stratégie de supervision.
   
 > [!NOTE]
 > Si une autre personne a créé la stratégie, vous devez obtenir cette adresse auprès de celle-ci pour installer le complément.
@@ -210,7 +210,7 @@ Pour installer le complément pour le bureau Outlook, vous aurez besoin de l'adr
 
 4. Dans la fenêtre mobile détails de la stratégie, sous **boîte aux lettres de supervision**, copiez l'adresse.<br/>![La section «boîte aux lettres de surveillance» d'une fenêtre de détails de la stratégie de supervision indiquant l'adresse de la supervision sélectionnée](media/71779d0e-4f01-4dd3-8234-5f9c30eeb067.jpg)
   
-### <a name="step-2-configure-the-supervision-mailbox-for-outlook-desktop-access"></a>Étape 2: configuration de la boîte aux lettres de supervision pour l'accès Bureau à Outlook
+### <a name="step-2-configure-the-supervision-mailbox-for-outlook-access"></a>Étape 2: configuration de la boîte aux lettres de supervision pour l'accès à Outlook
 
 Ensuite, les relecteurs doivent exécuter des commandes PowerShell Exchange Online pour pouvoir connecter Outlook à la boîte aux lettres de supervision.
   
