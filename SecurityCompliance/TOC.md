@@ -95,7 +95,7 @@
 ### [Comment réduire le courrier indésirable dans Office 365](reduce-spam-email.md)
 ### [Éviter que le courrier ne soit marqué comme courrier indésirable dans EOP et Office 365](prevent-email-from-being-marked-as-spam-0.md)
 ### [Contrôle du courrier indésirable sortant dans Office 365](outbound-spam-controls.md)
-### [Bloquer le courrier indésirable à l’aide du filtre d’Office 365 afin d’éviter les problèmes de faux négatifs](block-email-spam-to-prevent-false-negatives.md)
+### [Bloquer le courrier indésirable à l’aide du filtre d’Office 365 afin d’éviter les problèmes de faux négatifs](reduce-spam-email.md)
 ### [Purge automatique zéro heure - protection contre le courrier indésirable et les programmes malveillants](zero-hour-auto-purge.md)
 ### [Vérification de l’acheminement du courrier indésirable vers le dossier Courrier indésirable de chaque utilisateur](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)
 ### [Signaler les messages de courrier indésirable à Microsoft](report-junk-email-messages-to-microsoft.md)
@@ -146,7 +146,7 @@
 #### [Configuration de la gestion des droits relatifs à l’information pour utiliser un serveur AD RMS local](configure-irm-to-use-an-on-premises-ad-rms-server.md)
 ### [S/MIME](s-mime-for-message-signing-and-encryption.md)
 #### [S/MIME pour la signature et le chiffrement des messages](s-mime-for-message-signing-and-encryption.md)
-#### [Configurer des paramètres S/MIME pour Outlook Web App](configure-s-mime-settings-for-outlook-web-app.md)
+#### [Configurer des paramètres S/MIME pour Outlook sur le web](configure-s-mime-settings-for-outlook-web-app.md)
 #### [Envoi et réception de messages électroniques chiffrés et signés S/MIME](send-and-receive-s-mime-signed-and-encrypted-email.md)
 #### [Synchronisation des certificats utilisateur vers Office 365 pour S/MIME](sync-user-certificates-to-office-365-for-s-mime.md)
 #### [Configuration d’une collection de certificats virtuelle pour la validation des certificats S/MIME](set-up-virtual-certificate-collection-to-validate-s-mime.md)
@@ -282,7 +282,7 @@
 
 ### [Gérer les suspensions](compliance20/managing-holds.md)
 
-### [Corriger des erreurs de traitement](compliance20/processing-data-for-case.md)
+### [Utiliser les erreurs de traitement](compliance20/processing-data-for-case.md)
 #### [Indexation avancée des données des consignataires](compliance20/indexing-custodian-data.md)
 #### [Correction d’erreur lors du traitement des données](compliance20/error-remediation.md)
 
@@ -297,7 +297,7 @@
 #### [Gérer les ensembles de charge](compliance20/manage-load-sets.md)
 #### [Charger les données ne provenant pas d’Office 365 dans un ensemble de travail](compliance20/load-non-office365-data.md)
 #### [Interroger les données d’un ensemble de travail](compliance20/working-set-search.md)
-#### [Afficher des documents dans un ensemble de travail](compliance20/annotating-and-redacting-documents.md)
+#### [Afficher des documents dans un ensemble de travail](compliance20/view-documents-in-working-set.md)
 #### [Baliser des documents dans un ensemble de travail](compliance20/tagging-documents.md)
 
 ### [Analyser les données de cas](compliance20/analyzing-data-in-working-set.md)
@@ -318,10 +318,7 @@
 #### [Configurer les paramètres de recherche et d’analyse](compliance20/configure-search-analytics-settings.md)
 
 ### Référence pour Advanced eDiscovery (préversion)
-#### [Limites de la recherche](compliance20/search-limits-ediscovery20.md)
-#### [Limites d’indexation](compliance20/indexing-limits-ediscovery20.md)
-#### [Exporter des limites](compliance20/export-limits-ediscovery20.md)
-#### [Télécharger des limites](compliance20/download-limits-ediscovery20.md)
+#### [Limites dans Advanced eDiscovery (préversion)](compliance20/limits-ediscovery20.md)
 #### [Types de fichiers pris en charge](compliance20/supported-filetypes-ediscovery20.md)
 #### [Champs de métadonnées de document](compliance20/document-metadata-fields.md)
 
@@ -474,7 +471,7 @@
 ### [Contrôles de technologie Office 365](office-365-technology-controls.md)
 ### [Contrôles d’accès Yammer Entreprise](office-365-yammer-enterprise-access-controls.md)
 ## [Protection contre les attaques par déni de service dans Office 365](office-365-defending-against-denial-of-service-attacks-overview.md)
-### [Stratégie de défense de Microsoft contre les attaques par déni de service ](office-365-microsoft-dos-defense-strategy.md)
+### [Stratégie de défense par déni de service de Microsoft](office-365-microsoft-dos-defense-strategy.md)
 ### [Principes fondamentaux de défense contre les attaques par déni de service](office-365-core-principles-of-defense-against-dos-attacks.md)
 ## [Audit et création de rapports dans Office 365](office-365-auditing-and-reporting-overview.md)
 ### [Fonctionnalités de création de rapports Office 365](office-365-reporting-features.md)
