@@ -15,12 +15,12 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: Cette rubrique présente les questions fréquemment posées ainsi que les réponses au sujet de la mise en quarantaine hébergée.
-ms.openlocfilehash: 381eb0aba25d7149c2f164f9e0173034568d5eff
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 9f9b16a92b8ef8105a9439972ebed54111b227c6
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276024"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341175"
 ---
 # <a name="quarantine-faq"></a>FAQ sur la mise en quarantaine
 
@@ -48,11 +48,11 @@ A. pour accéder à la mise en quarantaine du courrier indésirable de l'utilisa
   
  **Q. Est-ce que du courrier autre que du courrier indésirable peut être envoyé en quarantaine ?**
   
-R. Les messages concernés par une règle de transport peuvent également être envoyés dans la boîte de quarantaine de l'administrateur, si cette action est celle qui a été configurée. La boîte de mise en quarantaine de l'utilisateur final est uniquement réservée au courrier indésirable.
+Un. les messages qui correspondent à une règle de flux de messagerie (également appelée règle de transport) peuvent également être envoyés à la mise en quarantaine de l'administrateur, si c'est l'action configurée. La mise en quarantaine de l'utilisateur final est pour le courrier indésirable uniquement.
   
  **Q. Pendant combien de temps les messages sont-ils mis en quarantaine ?**
   
-A. par défaut, les messages de courrier indésirable mis en quarantaine sont conservés en quarantaine pendant 30 jours, tandis que les messages mis en quarantaine qui correspondent à une règle de transport sont maintenus en quarantaine pendant 7 jours. Après cette période de temps, les messages sont supprimés et ne peuvent pas être récupérés. La période de rétention pour les messages en quarantaine qui correspondent à une règle de transport ne peut pas être configurée. Toutefois, la période de rétention des messages indésirables mis en quarantaine peut être abaissée via le paramètre **conserver le courrier indésirable pendant (jours)** dans vos stratégies de filtrage de contenu. Pour plus d'informations, consultez [la rubrique Configuration de vos stratégies de filtrage du courrier](configure-your-spam-filter-policies.md)indésirable.
+A. par défaut, les messages de courrier indésirable mis en quarantaine sont conservés en quarantaine pendant 30 jours, tandis que les messages mis en quarantaine qui correspondent à une règle de flux de messagerie sont conservés en quarantaine pendant 7 jours. Après cette période de temps, les messages sont supprimés et ne peuvent pas être récupérés. La période de rétention des messages mis en quarantaine qui correspondent à une règle de flux de messagerie n'est pas configurable. Toutefois, la période de rétention des messages indésirables mis en quarantaine peut être abaissée via le paramètre **conserver le courrier indésirable pendant (jours)** dans vos stratégies de filtrage de contenu. Pour plus d'informations, consultez [la rubrique Configuration de vos stratégies de filtrage du courrier](configure-your-spam-filter-policies.md)indésirable.
   
  **Q. Est-ce que je peux libérer ou signaler plusieurs messages mis en quarantaine à la fois ?**
   

@@ -15,12 +15,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: Cette rubrique fournit des réponses aux questions fréquemment posées concernant la protection contre le courrier indésirable. Les réponses s'appliquent aux clients de Microsoft Exchange Online et Exchange Online Protection (EOP).
-ms.openlocfilehash: f41799a3870e899fd3601453aaa11f6f9c51c608
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 47ab5202e4f20bbb8cdcf1d83987b0c0c20e8f29
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223053"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341675"
 ---
 # <a name="anti-spam-protection-faq"></a>Forum Aux Questions sur la protection anti-courrier indésirable
 
@@ -34,7 +34,7 @@ Cette rubrique fournit des réponses aux questions fréquemment posées concerna
 R. **Pour les messages entrants :** L'essentiel du courrier indésirable est supprimé par filtrage des connexions, sur la base de l'adresse IP de l'expéditeur. Le service inspecte ensuite le contenu du message. Par défaut, le courrier indésirable filtré sur le contenu est envoyé au dossier Courrier indésirable du destinataire. Vous pouvez modifier ce comportement. Par exemple, vous pouvez mettre les messages de courrier indésirable en quarantaine en configurant la stratégie de filtrage de contenu. 
   
 > [!IMPORTANT]
-> Pour les clients autonomes EOP : Afin que l'action **Déplacer le message dans le dossier Courrier indésirable** fonctionne avec des boîtes aux lettres locales, vous devez configurer deux règles de transport Exchange sur vos serveurs locaux de manière à détecter les en-têtes de courrier indésirable ajoutés par EOP. Pour plus d'informations, consultez la rubrique [Vérification de l'acheminement du courrier indésirable vers le dossier Courrier indésirable de chaque utilisateur](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
+> Pour les clients autonomes EOP: afin de s'assurer que l'action **déplacer le message vers le dossier** courrier indésirable fonctionnera avec des boîtes aux lettres locales, vous devez configurer deux règles de flux de messagerie Exchange (également appelées règles de transport) sur vos serveurs locaux pour détecter en-têtes de courrier indésirable ajoutés par EOP. Pour plus d'informations, consultez [la rubrique s'assurer que le courrier indésirable est acheminé vers le dossier de courrier indésirable de chaque utilisateur](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
  **Pour les messages sortants :** le message est routé par le pool de remise à risque plus élevé ou est retourné et non remis. Dans ce cas, l'expéditeur doit recevoir un message de notification d'état de remise (DSN) indiquant que le message n'a pas pu être remis. 
   

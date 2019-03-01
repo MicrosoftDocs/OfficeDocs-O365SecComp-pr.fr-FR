@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) est un service de filtrage du courrier électronique dans le nuage, qui contribue à protéger votre organisation contre le courrier indésirable et les logiciels malveillants, ainsi que contre les violations de politique de messagerie.
-ms.openlocfilehash: baba6b56034ec5c3f2af1c291a7f8b5100f0f092
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: 3f00cc07058bd2399732299b3221ebd4258dc5ff
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30087343"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341625"
 ---
 # <a name="exchange-online-protection-overview"></a>Vue d'ensemble d'Exchange Online Protection
 
@@ -36,7 +36,7 @@ Pour comprendre le fonctionnement d'EOP, il est utile devoir comment le courrier
   
 ![EOP-traitement du courrier électronique](../media/EOP-email-processing.png)
   
-Un message entrant passe initialement par le filtrage des connexions, qui vérifie la réputation de l'expéditeur et inspecte le message pour les programmes malveillants. La majorité du courrier indésirable est arrêtée à ce stade et supprimée par EOP. Les messages continuent via le filtrage des stratégies, où les messages sont évalués par rapport aux règles de transport personnalisées que vous créez ou appliquez à partir d'un modèle. Par exemple, vous pouvez avoir une règle qui envoie une notification à un responsable lorsque le courrier électronique est envoyé par un expéditeur spécifique. (Les vérifications de la protection contre la perte de données se produisent également à ce stade, si vous disposez de cette fonctionnalité; pour plus d'informations sur la disponibilité des fonctionnalités, consultez la rubrique [Description du service de protection Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=320619).) Ensuite, les messages passent par le filtrage du contenu, où le contenu est vérifié pour la terminologie ou les propriétés communes au courrier indésirable. Un message déterminé comme étant du courrier indésirable par le filtre de contenu peut être envoyé dans le dossier de courrier inDésirable d'un utilisateur ou en quarantaine, entre autres options, en fonction de vos paramètres. Une fois qu'un message a réussi à transmettre tous ces calques de protection, il est remis au destinataire.
+Un message entrant passe initialement par le filtrage des connexions, qui vérifie la réputation de l'expéditeur et inspecte le message pour les programmes malveillants. La majorité du courrier indésirable est arrêtée à ce stade et supprimée par EOP. Les messages se poursuivent via le filtrage des stratégies, dans lequel les messages sont évalués par rapport aux règles de flux de messagerie personnalisées (également appelées règles de transport) que vous créez ou appliquez à partir d'un modèle. Par exemple, vous pouvez avoir une règle qui envoie une notification à un responsable lorsque le courrier électronique est envoyé par un expéditeur spécifique. (Les vérifications de la protection contre la perte de données se produisent également à ce stade, si vous disposez de cette fonctionnalité; pour plus d'informations sur la disponibilité des fonctionnalités, consultez la rubrique [Description du service de protection Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=320619).) Ensuite, les messages passent par le filtrage du contenu, où le contenu est vérifié pour la terminologie ou les propriétés communes au courrier indésirable. Un message déterminé comme étant du courrier indésirable par le filtre de contenu peut être envoyé dans le dossier de courrier inDésirable d'un utilisateur ou en quarantaine, entre autres options, en fonction de vos paramètres. Une fois qu'un message a réussi à transmettre tous ces calques de protection, il est remis au destinataire.
   
 ### <a name="eop-datacenters"></a>Centres de données EOP
 

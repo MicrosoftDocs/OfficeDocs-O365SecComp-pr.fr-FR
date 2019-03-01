@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Explique les différences entre les fonctionnalités fournies avec les différentes versions d'Office 365 le chiffrement de messages, ainsi que la façon dont les deux continuent de fonctionner ensemble.
-ms.openlocfilehash: 477fbe8f9d71bd92225a7ba5043576f164933b4e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 47632d7e960e2dee2b068baaf46b98716fc8d4d0
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216674"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341435"
 ---
 # <a name="compare-versions-of-ome"></a>Comparez les versions de OME
 
@@ -31,7 +31,7 @@ Cet article compare le chiffrement de messages Office 365 hérité aux nouvelles
 |                                   |Anciennes fonctionnalités       |                   |Fonctionnalités nouvelles              |
 |-----------------------------------|-------------------|-------------------|--------------------------|
 |**Fonctionnalité**                     | **OME hérité**    | **IRM**           | **Nouvelles fonctionnalités OME** |
-|*Envoi d'un message chiffré*        |À l'aide des règles de flux de messagerie Exchange|L'utilisateur final a initié à partir d'Outlook Desktop ou Outlook sur le Web; ou via les règles de flux de messagerie Exchange|L'utilisateur final a initié à partir d'Outlook Desktop, Outlook pour Mac ou Outlook sur le Web; par le biais des règles de transport Exchange et d'Office 365 protection contre la perte de données (DLP)|
+|*Envoi d'un message chiffré*        |À l'aide des règles de flux de messagerie Exchange|L'utilisateur final a initié à partir d'Outlook Desktop ou Outlook sur le Web; ou via les règles de flux de messagerie Exchange|L'utilisateur final a initié à partir d'Outlook Desktop, Outlook pour Mac ou Outlook sur le Web; via les règles de flux de messagerie Exchange (également appelées règles de transport) et la protection contre la perte de données (DLP) d'Office 365|
 |*Modèle de gestion des droits*       |   S/O      |Option ne pas transférer et modèles personnalisés|Option ne pas transférer, option de chiffrement uniquement et modèles personnalisés|
 |*Type de destinataire*                   |Destinataires internes et externes|Destinataires internes uniquement         |Destinataires internes et externes|
 |*Expérience pour les destinataires internes*|Les destinataires reçoivent un message HTML, qu'ils téléchargent et ouvrent dans un navigateur Web ou une application mobile|Expérience incorporée native dans les clients Outlook|Expérience incorporée native pour les destinataires Office 365. Tous les autres destinataires peuvent lire le message à partir du portail OME (pas de téléchargement ou d'application requis).|

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 87496bc5-9601-4473-8021-cb05c71369c1
 description: "Un Conseil de stratégie est une notification ou un avertissement qui s'affiche lorsqu'un utilisateur travaille avec du contenu qui entre en conflit avec une stratégie DLP. Vous pouvez utiliser des notifications par courrier électronique et des conseils de stratégie pour sensibiliser les utilisateurs aux stratégies de votre organisation. Vous pouvez également donner aux utilisateurs la possibilité de remplacer la stratégie, afin qu'ils ne soient pas bloqués s'ils ont un besoin opérationnel valide ou si la stratégie détecte un faux positif. "
-ms.openlocfilehash: 1e161aa1b8de48cea32718f2c04b05436b25c0ff
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 77bf9947356a4c8986e8b8cca7544350fa300c01
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216444"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341695"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Envoyer des notifications par courrier électronique et afficher des conseils de stratégie pour les stratégies DLP
 
@@ -227,7 +227,7 @@ Notez que toutes ces conditions fonctionnent dans Outlook, où elles corresponde
 
 Les conseils de stratégie peuvent fonctionner soit avec les stratégies DLP et les règles de flux de messagerie créées dans le centre d'administration Exchange, soit avec les &amp; stratégies DLP créées dans le centre de sécurité conformité Office 365, mais pas dans les deux. Cela est dû au fait que ces stratégies sont stockées à des emplacements différents, mais que les conseils de stratégie ne peuvent tirer qu'à partir d'un seul emplacement.
   
-Si vous avez configuré des conseils de stratégie dans le centre d'administration Exchange, tous les conseils de stratégie que vous configurez dans le centre de sécurité &amp; conformité d'Office 365 n'apparaîtront pas pour les utilisateurs dans Outlook sur le Web et Outlook 2013 et les versions ultérieures jusqu'à ce que vous désactiviez les conseils dans l'Exchange Centre d'administration. Cela permet de s'assurer que vos règles de transport Exchange actuelles continueront de fonctionner jusqu'à ce que vous choisissiez &amp; de basculer vers le centre de sécurité conformité Office 365.
+Si vous avez configuré des conseils de stratégie dans le centre d'administration Exchange, tous les conseils de stratégie que vous configurez dans le centre de sécurité &amp; conformité d'Office 365 n'apparaîtront pas pour les utilisateurs dans Outlook sur le Web et Outlook 2013 et les versions ultérieures jusqu'à ce que vous désactiviez les conseils dans l'Exchange Centre d'administration. Cela permet de s'assurer que vos règles de flux de messagerie Exchange actuelles (également appelées règles de transport) continueront de fonctionner jusqu'à ce que vous &amp; choisissiez de basculer vers le centre de sécurité conformité Office 365.
   
 Notez que si les conseils de stratégie ne peuvent tirer qu'à partir d'un seul emplacement, les notifications par courrier électronique sont toujours envoyées, même si vous utilisez &amp; les stratégies DLP dans le centre de sécurité et le centre d'administration Exchange.
   

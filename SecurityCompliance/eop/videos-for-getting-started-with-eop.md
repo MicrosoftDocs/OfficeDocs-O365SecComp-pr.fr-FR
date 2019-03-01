@@ -13,12 +13,12 @@ ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
 ms.collection:
 - M365-security-compliance
 description: La série de vidéos suivante vous aidera à configurer et utiliser le service de filtrage du courrier électronique hébergé d'Exchange Online Protection (EOP).
-ms.openlocfilehash: 524eb25a3564a844d5cdd147a1101af87ddfc393
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 65568d21f6b4cb718526a9c9dcddfef2f58b1ca1
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276004"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341185"
 ---
 # <a name="videos-for-getting-started-with-eop"></a>Vidéos pour démarrer avec EOP
 
@@ -27,7 +27,7 @@ La série de vidéos suivante vous aidera à configurer et utiliser le service d
 > [!NOTE]
 > Avant de commencer les tâches décrites dans les vidéos, nous vous recommandons de configurer le flux de messagerie. Pour plus d'informations, consultez la rubrique [Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx). 
   
-Ces vidéos portent sur l'adaptation de vos paramètres anti-courrier indésirable pour répondre aux besoins de votre organisation. Pour le courrier entrant qui passe par le service pour atteindre votre organisation, cela comprend la création de listes d'expéditeurs autorisés et d'expéditeurs bloqués en fonction des adresses IP, mais aussi la configuration des paramètres de filtre de contenu. Une vidéo montre également comment les administrateurs peuvent trouver et libérer des messages indésirables filtrés par le contenu ou des messages correspondant à une règle de transport qui ont été envoyés en quarantaine, mais également comment signaler des messages indésirables afin de nous aider à améliorer le service.
+Ces vidéos concernent l'adaptation de vos paramètres de blocage du courrier indésirable pour répondre aux besoins de votre organisation. Pour les messages entrants transitant par le service dans votre organisation, cela inclut la création de listes d'expéditeurs autorisés et bloqués en fonction des adresses IP, ainsi que la configuration des paramètres de filtrage du contenu. Il existe également une vidéo montrant comment les administrateurs peuvent trouver et publier des messages de courrier indésirable filtrés sur le contenu ou des messages qui correspondent à une règle de flux de messagerie (également appelée règle de transport) qui ont été envoyés en quarantaine, et Comment signaler les messages de courrier indésirable pour nous aider à améliorer le service.
   
 - Configurer les listes d'adresses IP autorisées et bloquées dans EOP
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]
@@ -58,12 +58,12 @@ EOP dispose également de paramètres relatifs à la manière de gérer les logi
   
     Pour plus d'informations, consultez la rubrique [configure anti-malware Policies](../configure-anti-malware-policies.md) . 
     
-Pour filtrer et acheminer des messages en fonction de conditions spécifiques définies, sur la base de la stratégie ou de la réglementation de l'entreprise, vous souhaiterez regarder la vidéo traitant de la création des règles de transport.
+Pour filtrer et acheminer les messages en fonction de conditions spécifiques définies, en fonction de la stratégie ou de la réglementation de l'entreprise, vous souhaiterez regarder la vidéo sur la création de règles de flux de messagerie.
   
-- Configurer les règles de Transport Exchange dans EOP
+- Configurer les règles de flux de messagerie Exchange dans EOP
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
   
-    Pour plus d'informations, consultez la rubrique [mail Flow Rules (transport Rules) in Exchange Online Protection](mail-flow-rules-transport-rules-0.md) si vous utilisez EOP standalone ou la rubrique [transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) si vous utilisez Exchange Online. 
+    Pour plus d'informations, consultez la rubrique [mail Flow Rules (transport Rules) in Exchange Online Protection](mail-flow-rules-transport-rules-0.md) si vous utilisez EOP standalone ou la rubrique [mail Flow Rules (transport Rules) in Exchange Online](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) , si vous utilisez Exchange Online.
     
 Si la configuration du service grâce à l'exécution de scripts à partir de la ligne de commande vous intéresse, la vidéo PowerShell à distance peut vous aider à débuter.
   

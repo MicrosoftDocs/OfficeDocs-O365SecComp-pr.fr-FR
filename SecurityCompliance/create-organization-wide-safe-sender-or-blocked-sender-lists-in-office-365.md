@@ -12,24 +12,24 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
-description: Si vous souhaitez pour vous assurer que vous recevez des messages d’un expéditeur particulier, étant donné que vous faites confiance à leur et leurs messages, vous pouvez ajuster votre liste verte dans une stratégie de filtrage du courrier indésirable dans le centre d’administration Exchange.
-ms.openlocfilehash: a90679fc900ca5695904898af3627fc1900a8545
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+description: Si vous souhaitez être sûr de recevoir des messages d'un expéditeur particulier, étant donné que vous les approuvez et leurs messages, vous pouvez ajuster votre liste verte dans une stratégie de filtrage du courrier indésirable dans le centre d'administration Exchange.
+ms.openlocfilehash: 0759d054f270cae03b98d9da7e2e2dcfe442d68f
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003163"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341595"
 ---
 # <a name="create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365"></a>Création de listes d’expéditeurs bloqués et autorisés à l’échelle de l’organisation dans Office 365
   
-Si vous voulez être sûr de bien recevoir les e-mails provenant d'un expéditeur précis, car vous faites confiance à cet expéditeur et à ses messages, vous pouvez ajuster votre liste verte dans une stratégie de filtrage du courrier indésirable dans le Centre d'administration Exchange (CAE) : **Protection** \> **Filtre anti-spam**. Pour en savoir plus, consultez la rubrique [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md). Vous pouvez également créer une règle de transport Exchange qui fonctionne comme la liste verte fondée sur un domaine ou un utilisateur dans le filtre anti-spam. Vous pouvez bloquer les messages envoyés par un domaine ou un utilisateur particulier de la même manière.
+Si vous souhaitez être sûr de recevoir des messages d'un expéditeur particulier, étant donné que vous les approuvez et leurs messages, vous pouvez ajuster votre liste verte dans une stratégie de filtrage du courrier indésirable dans le centre d'administration Exchange au niveau du filtre anti- **spam**de **protection** \> . Pour en savoir plus, consultez [la rubrique Configuration de vos stratégies de filtrage du courrier](configure-your-spam-filter-policies.md)indésirable. Une autre option consisterait à créer une règle de flux de messagerie Exchange (également appelée règle de transport) qui fonctionne comme la liste d'autorisation basée sur le domaine ou l'utilisateur dans le filtre de courrier indésirable. Vous pouvez bloquer les messages envoyés à partir d'un domaine ou d'un utilisateur particulier de la même manière.
   
-Une règle de transport serait utile dans ce cas si vous devez filtrer selon des critères complexes, tels que les en-têtes de message ou les noms des pièces jointes, ou si vous voulez ajouter des actions complexes, comme l'ajout d'une clause d'exclusion de responsabilité au message ou l'application d'un délai d'activation de la règle. Cependant, pour vous assurer que les e-mails d'un expéditeur spécifique ou d'un domaine contournent votre filtre anti-spam, nous vous recommandons de les ajouter à votre stratégie de filtrage du courrier indésirable. Pour cela, accédez au CAE dans **Protection** \> **Filtre anti-spam**. Pour plus d'informations, consultez la rubrique [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md).
+Une règle de flux de messagerie est utile dans ce cas si vous devez filtrer des critères complexes, tels que la vérification des en-têtes de message ou les noms de pièces jointes, ou si vous souhaitez ajouter des actions complexes telles que l'ajout d'une clause d'exclusion de responsabilité au message ou l'application d'une période de temps pendant laquelle le RUL e est actif. Toutefois, il est préférable de les ajouter à votre stratégie de filtrage du courrier indésirable pour s'assurer que les messages provenant d'un expéditeur ou d'un domaine spécifique contournent votre filtre de courrier indésirable. Pour commencer, accédez au centre d'administration Exchange en accédant à **protection** \> **courrier**indésirable. Pour plus d'informations, consultez [la rubrique configurer vos stratégies de filtrage du courrier](configure-your-spam-filter-policies.md)indésirable.
   
 > [!TIP]
-> Dans une règle de transport, une liste fondée sur un domaine n'est pas aussi sécurisée qu'une liste fondée sur l'adresse IP, car les domaines peuvent être falsifiés. En outre, si l'adresse IP d'envoi est sur une liste rouge, elle sera toujours bloquée, même si le filtrage pour le domaine ou l'utilisateur est ignoré. En effet, une règle de transport sur un domaine ou un utilisateur ne peut pas remplacer la liste globale d'adresses IP bloquées. Nous vous recommandons d'utiliser une liste fondée sur l'adresse IP autant que possible. Pour créer une liste fondée sur l'adresse IP, vous pouvez utiliser la liste verte IP ou la liste rouge IP dans le filtre des connexions. Aucun des messages envoyés à partir de ces adresses IP n'est vérifié par le filtre de contenu. Pour savoir comment configurer la stratégie du filtre de connexion en ajoutant des adresses IP à la liste verte IP ou à la liste rouge IP, consultez la rubrique [Configuration de la stratégie de filtrage des connexions](configure-the-connection-filter-policy.md). 
+> Une liste basée sur un domaine dans une règle de flux de messagerie n'est pas aussi sécurisée qu'une liste basée sur l'adresse IP, car les domaines peuvent être falsifiés. De plus, si l'adresse IP d'envoi figure sur une liste rouge, elle sera toujours bloquée même si le filtrage du domaine ou de l'utilisateur est contourné. Cela est dû au fait qu'une règle de flux de messagerie sur un domaine ou un utilisateur ne remplace pas la liste d'adresses IP bloquées. Dans la plupart des cas, nous vous recommandons d'utiliser une liste basée sur l'adresse IP. Pour créer une liste basée sur l'adresse IP, vous pouvez utiliser la liste d'adresses IP autorisées ou les listes d'adresses IP bloquées dans le filtre de connexion. Les messages envoyés à partir de ces adresses IP ne sont pas vérifiés par le filtre de contenu. Pour obtenir des instructions sur la configuration de la stratégie de filtrage des connexions en ajoutant des adresses IP à la liste d'adresses IP autorisées ou d'adresses IP bloquées, consultez [la rubrique Configure the connection filter Policy](configure-the-connection-filter-policy.md). 
   
-Pour découvrir d'autres tâches de gestion relatives aux règles de transport, consultez la rubrique [Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx).
+Pour les autres tâches de gestion relatives aux règles de flux de messagerie, consultez la rubrique [mail Flow Rules (transport Rules) in Exchange Online](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx).
   
 ## <a name="use-the-eac-to-customize-a-block-or-allow-list-to-prevent-or-receive-email-from-a-domain-or-user"></a>Personnaliser un bloc ou une liste verte pour bloquer ou recevoir des e-mails provenant d'un domaine ou d'un utilisateur avec le CAE
 
@@ -59,24 +59,24 @@ Pour découvrir d'autres tâches de gestion relatives aux règles de transport, 
     > [!CAUTION]
     > Si vous bloquez des domaines de niveau supérieur, il est probable que le courrier électronique que vous souhaitez recevoir soit marqué comme courrier indésirable. 
   
-## <a name="what-do-you-need-to-know-before-you-begin-creating-a-transport-rule"></a>Ce qu'il faut savoir avant de créer une règle de transport
+## <a name="what-do-you-need-to-know-before-you-begin-creating-a-mail-flow-rule"></a>Que devez-vous savoir avant de commencer à créer une règle de flux de messagerie?
     
-- Vous n'avez pas besoin de créer une règle de transport pour contourner le filtre anti-spam ou marquer un e-mail comme courrier indésirable pour un expéditeur ou un domaine. Utilisez le bloc et les listes vertes Exchange Online Protection dans une stratégie anti-courrier indésirable à la place de cette règle de transport si vous voulez simplement bloquer ou autoriser un expéditeur ou un domaine spécifique sans y adjoindre des conditions supplémentaires. Pour en savoir plus, consultez la rubrique [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md).
+- Vous n'avez pas besoin de créer une règle de flux de messagerie pour contourner le filtrage du courrier indésirable ou marquer le courrier comme courrier indésirable pour un expéditeur ou un domaine. Utilisez les listes bloquer Exchange Online Protection et autoriser dans une stratégie de courrier indésirable au lieu de cette règle de flux de messagerie si vous voulez simplement bloquer ou autoriser un expéditeur ou un domaine spécifique et ne pas joindre de conditions supplémentaires. Pour en savoir plus, consultez [la rubrique Configuration de vos stratégies de filtrage du courrier](configure-your-spam-filter-policies.md)indésirable.
     
-- Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée « Règles de transport » dans la rubrique [Messaging policy and compliance permissions](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx). 
+- Des autorisations doivent vous être attribuées avant de pouvoir effectuer cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée «règles de flux de messagerie» dans la rubrique [stratégie de messagerie et autorisations de conformité](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) . 
     
-- Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013**Raccourcis clavier dans le Centre d'administration Exchange**.
+- Pour obtenir des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, reportez-vous à l’article **Raccourcis clavier dans le Centre d’administration Exchange**.
     
 > [!TIP]
-> Des problèmes ? Demander une assistance dans les forums Exchange. Consultez les forums [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)ou [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> Vous rencontrez des problèmes? Demandez de l'aide dans les forums Exchange. Visitez les forums sur [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)ou [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## <a name="use-the-eac-to-create-a-transport-rule-to-bypass-spam-filtering-for-a-domain-or-user"></a>Créer une règle de transport pour contourner le filtre anti-spam pour un domaine ou un utilisateur avec le CAE
+## <a name="use-the-eac-to-create-a-mail-flow-rule-to-bypass-spam-filtering-for-a-domain-or-user"></a>Utiliser le centre d'administration Exchange pour créer une règle de flux de messagerie pour contourner le filtrage du courrier indésirable pour un domaine ou un utilisateur
 
-1. Dans le CAE, accédez à **flux de messagerie** \> **règles**. Choisissez **Ajouter** ![ajouter une icône](media/ITPro-EAC-AddIcon.gif) , puis choisissez le **contournement de filtrage du courrier indésirable**.
+1. Dans le centre d'administration Exchange, accédez à **règles**de **flux** \> de messagerie. Choisissez **Ajouter** ![une icône](media/ITPro-EAC-AddIcon.gif) ajouter, puis **ignorer le filtrage du courrier**indésirable.
     
 2. Attribuez un nom à la règle. Sous **Appliquer cette règle si**, choisissez **L'expéditauer**, puis sélectionnez l'une des conditions suivantes : 
     
-  - Si vous souhaitez spécifier un domaine, choisissez le **domaine est**. Dans la boîte de dialogue **spécifier le domaine** , entrez le domaine de l’expéditeur que vous souhaitez désigner comme sûrs, par exemple contoso.com. **Ajouter** ![Ajouter une icône](media/ITPro-EAC-AddIcon.gif) pour la déplacer vers la liste des expressions. Répétez cette étape si vous souhaitez ajouter d’autres domaines, puis cliquez sur **OK** lorsque vous avez terminé. 
+  - Si vous souhaitez spécifier un domaine, choisissez **domaine**. Dans la boîte de dialogue **spécifier un domaine** , entrez le domaine de l'expéditeur que vous voulez désigner comme étant sûr, tel que contoso.com. **Ajouter** ![Icône](media/ITPro-EAC-AddIcon.gif) ajouter pour le déplacer vers la liste des expressions. Répétez cette étape pour ajouter d'autres domaines, puis cliquez sur **OK** lorsque vous avez terminé. 
     
   - Si vous voulez spécifier un utilisateur, choisissez **est cette personne**. Dans la boîte de dialogue **Sélectionner les membres**, ajoutez l'utilisateur à partir de la liste ou saisissez son nom et cliquez sur **Vérifier les noms**. Répétez cette étape pour ajouter d'autres utilisateurs, puis cliquez sur **OK** lorsque vous avez terminé. 
     
@@ -84,21 +84,21 @@ Pour découvrir d'autres tâches de gestion relatives aux règles de transport, 
     
 4. Pour l'option **Correspondance avec l'adresse de l'expéditeur dans le message**, sélectionnez **En-tête ou enveloppe**.
     
-5. Si vous le souhaitez, vous pouvez effectuer des sélections pour auditer, tester et activer la règle sur une période spécifique, etc. Nous vous recommandons de tester la règle pendant un certain temps avant de l'appliquer dans votre organisation. Pour plus d'informations sur ces sélections, consultez la rubrique [Manage Transport Rules](http://technet.microsoft.com/library/e7a81372-b6d7-4d1f-bc9e-a845a7facac2.aspx).
+5. Si vous le souhaitez, vous pouvez effectuer des sélections pour auditer, tester et activer la règle sur une période spécifique, etc.
     
 6. Cliquez sur **Enregistrer** pour enregistrer la règle. 
     
 Une fois la règle créée et appliquée, le filtrage du courrier indésirable est contourné pour le domaine ou l'utilisateur spécifié.
   
-## <a name="use-the-eac-to-create-a-transport-rule-that-blocks-messages-sent-from-a-domain-or-user"></a>Créer une règle de transport qui bloque les messages provenant d'un domaine ou d'un utilisateur avec le CAE
+## <a name="use-the-eac-to-create-a-mail-flow-rule-that-blocks-messages-sent-from-a-domain-or-user"></a>Utiliser le centre d'administration Exchange pour créer une règle de flux de messagerie qui bloque les messages envoyés par un domaine ou un utilisateur
 
-1. Dans le CAE, accédez à **flux de messagerie** \> **règles**. Choisissez **Ajouter** ![ajouter une icône](media/ITPro-EAC-AddIcon.gif) , puis choisissez **créer une nouvelle règle**.
+1. Dans le centre d'administration Exchange, accédez à **règles**de **flux** \> de messagerie. Sélectionnez **Ajouter** ![une icône](media/ITPro-EAC-AddIcon.gif) ajouter, puis **créer une nouvelle règle**.
     
 2. Nommez la règle, puis cliquez sur **Autres options**. 
     
 3. Sous **Appliquer cette règle si**, choisissez **L'expéditauer**, puis sélectionnez l'une des conditions suivantes : 
     
-  - Si vous souhaitez spécifier un domaine, choisissez le **domaine est**. Dans la boîte de dialogue spécifier domaine, entrez le domaine de l’expéditeur à partir de laquelle vous souhaitez bloquer les messages, tels que contoso.com. Cliquez sur **Ajouter** ![ajouter une icône](media/ITPro-EAC-AddIcon.gif) pour la déplacer vers la liste des expressions. Répétez cette étape si vous souhaitez ajouter d’autres domaines, puis cliquez sur **OK** lorsque vous avez terminé. 
+  - Si vous souhaitez spécifier un domaine, choisissez **domaine**. Dans la boîte de dialogue spécifier un domaine, entrez le domaine de l'expéditeur à partir duquel vous souhaitez bloquer les messages, par exemple contoso.com. Cliquez sur **Ajouter** ![une](media/ITPro-EAC-AddIcon.gif) icône pour le déplacer vers la liste des expressions. Répétez cette étape pour ajouter d'autres domaines, puis cliquez sur **OK** lorsque vous avez terminé. 
     
   - Si vous voulez spécifier un utilisateur, choisissez **est cette personne**. Dans la boîte de dialogue **Sélectionner les membres**, ajoutez l'utilisateur à partir de la liste ou saisissez son nom et cliquez sur **Vérifier les noms**. Répétez cette étape pour ajouter d'autres utilisateurs, puis cliquez sur **OK** lorsque vous avez terminé. 
     
@@ -106,7 +106,7 @@ Une fois la règle créée et appliquée, le filtrage du courrier indésirable e
     
 5. Cliquez sur **Plus d'options**, puis, pour l'option **Correspondance avec l'adresse de l'expéditeur dans le message**, sélectionnez **En-tête ou enveloppe**.
     
-6. Si vous le souhaitez, vous pouvez effectuer des sélections pour auditer, tester et activer la règle sur une période spécifique, etc. Nous vous recommandons de tester la règle pendant un certain temps avant de l'appliquer dans votre organisation. Pour plus d'informations sur ces sélections, consultez la rubrique [Manage Transport Rules](http://technet.microsoft.com/library/e7a81372-b6d7-4d1f-bc9e-a845a7facac2.aspx).
+6. Si vous le souhaitez, vous pouvez effectuer des sélections pour auditer la règle, tester la règle, activer la règle pendant une période spécifique, ainsi que d'autres sélections. Nous vous recommandons de tester la règle pendant un certain temps avant de l'appliquer dans votre organisation.
     
 7. Cliquez sur **Enregistrer** pour enregistrer la règle. 
     
@@ -116,5 +116,5 @@ Une fois la règle créée et appliquée, tous les messages envoyés à partir d
 
 [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md)
   
-[Utiliser les règles de transport pour configurer le filtrage de courrier électronique en bloc](use-transport-rules-to-configure-bulk-email-filtering.md)
+[Utiliser des règles de flux de messagerie pour configurer le filtrage du courrier en nombre](use-transport-rules-to-configure-bulk-email-filtering.md)
 

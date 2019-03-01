@@ -14,22 +14,22 @@ search.appverid:
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
-description: L'action anti-courrier indésirable par défaut pour les clients EOP consiste à déplacer les messages identifiés comme tels vers le dossier Courrier indésirable des destinataires. Afin que cette action fonctionne sur des boîtes aux lettres locales, vous devez configurer des règles de transport Exchange sur vos serveurs Edge ou Hub locaux de manière à détecter les en-têtes de courrier indésirable ajoutés par EOP. Ces règles de transport définissent le seuil de probabilité de courrier indésirable (SCL) utilisé par la propriété SclJunkThreshold (de la cmdlet Set-OrganizationConfig) pour déplacer le courrier indésirable dans le dossier Courrier indésirable de chaque boîte aux lettres.
-ms.openlocfilehash: f712e66934956bcf46215e4016501003ce9b1725
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+description: Les administrateurs peuvent apprendre à acheminer le courrier indésirable vers les dossiers de courrier inDésirable de l'utilisateur dans Exchange Online Protection.
+ms.openlocfilehash: 80c3e3cab1bdaf85e815ab1acc790cc907ebbb91
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30222883"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341375"
 ---
 # <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Vérification de l'acheminement du courrier indésirable vers le dossier Courrier indésirable de chaque utilisateur
 
 > [!IMPORTANT]
 > Cette rubrique s'applique uniquement aux clients Exchange Online Protection (EOP) qui hébergent des boîtes aux lettres localement dans un déploiement hybride. Les clients Exchange Online dont les boîtes aux lettres sont entièrement hébergées dans Office 365 n'ont pas besoin d'exécuter ces commandes. 
   
-L'action anti-courrier indésirable par défaut pour les clients EOP consiste à déplacer les messages identifiés comme tels vers le dossier Courrier indésirable des destinataires. Afin que cette action fonctionne sur des boîtes aux lettres locales, vous devez configurer des règles de transport Exchange sur vos serveurs Edge ou Hub locaux de manière à détecter les en-têtes de courrier indésirable ajoutés par EOP. Ces règles de transport définissent le seuil de probabilité de courrier indésirable (SCL) utilisé par la propriété SclJunkThreshold (de la cmdlet Set-OrganizationConfig) pour déplacer le courrier indésirable dans le dossier Courrier indésirable de chaque boîte aux lettres. 
+L'action de blocage du courrier indésirable par défaut pour les clients EOP consiste à déplacer les messages de courrier indésirable vers le dossier courrier inDésirable des destinataires. Pour que cette action fonctionne avec les boîtes aux lettres locales, vous devez configurer des règles de flux de messagerie Exchange (également appelées règles de transport) sur vos serveurs Edge ou Hub sur site afin de détecter les en-têtes de courrier indésirable ajoutés par EOP. Ces règles de flux de messagerie définissent le seuil de probabilité de courrier indésirable (SCL) utilisé par la propriété SclJunkThreshold de l'applet de commande Set-OrganizationConfig pour déplacer le courrier indésirable dans le dossier courrier inDésirable de chaque boîte aux lettres. 
   
-### <a name="to-add-transport-rules-to-ensure-spam-is-moved-to-the-junk-email-folder-by-using-windows-powershell"></a>Pour ajouter des règles de transport afin d'assurer le déplacement du courrier indésirable vers le dossier Courrier indésirable à l'aide de Windows PowerShell, procédez comme suit :
+### <a name="to-add-mail-flow-rules-to-ensure-spam-is-moved-to-the-junk-email-folder-by-using-windows-powershell"></a>Pour ajouter des règles de flux de messagerie afin de vous assurer que le courrier inDésirable est déplacé vers le dossier courrier inDésirable à l'aide de Windows PowerShell
 
 1. Accédez au Environnement de ligne de commande Exchange Management Shell de votre serveur Exchange local. Pour apprendre à ouvrir l'environnement de ligne de commande Environnement de ligne de commande Exchange Management Shell dans votre organisation Exchange locale, reportez-vous à **Open the Shell**.
     

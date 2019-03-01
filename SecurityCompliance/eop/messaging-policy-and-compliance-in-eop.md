@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 206e6311-f96d-4c81-8ef2-171bcad4caa5
 description: Les fonctionnalités suivantes qui s'appliquent à la stratégie et à la conformité de messagerie dans Microsoft Exchange Online Protection vous permettent de gérer vos données de messagerie.
-ms.openlocfilehash: 1072656ee34b2745c86ec55353278ef878e0f0eb
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 1a084418cc6d66cd1ad8280b510bde5e630c7298
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026181"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341715"
 ---
 # <a name="messaging-policy-and-compliance-in-eop"></a>Stratégie et conformité de la messagerie dans EOP
 
@@ -26,7 +26,5 @@ Les fonctionnalités suivantes qui s'appliquent à la stratégie et à la confor
 
 |**Rubrique**|**Description**|
 |:-----|:-----|
-|[Rapports d'audit dans EOP](auditing-reports-in-eop.md) <br/> |Les rapports d'audit fournissent des informations sur l'exécution du rapport sur les groupes de rôles d'administrateur, qui indique les modifications apportées aux groupes de rôles de gestion de votre organisation pendant une période donnée. Ils fournissent également des informations sur le journal d'audit de l'administrateur, qui consigne toutes les modifications apportées à la configuration de votre organisation.  <br/> |
-|[Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) <br/> |Fournit des informations sur les règles de transport, lesquelles vous offrent la flexibilité nécessaire pour appliquer au courrier électronique les stratégies propres à votre organisation.  <br/> |
-   
-
+|[Rapports d'audit dans EOP](auditing-reports-in-eop.md)|Les rapports d'audit fournissent des informations sur l'exécution du rapport sur les groupes de rôles d'administrateur, qui indique les modifications apportées aux groupes de rôles de gestion de votre organisation pendant une période donnée. Ils fournissent également des informations sur le journal d'audit de l'administrateur, qui consigne toutes les modifications apportées à la configuration de votre organisation.|
+|[Règles de flux de messagerie (règles de transport) dans Exchange Online Protection](mail-flow-rules-transport-rules-0.md)|Fournit des informations sur les règles de flux de messagerie (également appelées règles de transport), qui vous offrent la flexibilité nécessaire pour appliquer vos propres stratégies propres à votre entreprise à la messagerie.|

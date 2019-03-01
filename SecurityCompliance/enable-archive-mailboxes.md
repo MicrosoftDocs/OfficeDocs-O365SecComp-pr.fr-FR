@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Utilisez le centre de sécurité &amp; conformité d'Office 365 pour activer les boîtes aux lettres d'archivage afin de prendre en charge les exigences de rétention, eDiscovery et de conservation des messages de votre organisation.
-ms.openlocfilehash: 763097925ed0910fe9a66e5c556b8a2995df74e6
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 39cd5fd8d7991b787d95e39e4994dc9b0786522c
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296057"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341795"
 ---
 # <a name="enable-archive-mailboxes-in-the-office-365-security-amp-compliance-center"></a>Activer les boîtes aux lettres d'archivage dans &amp; le centre de sécurité conformité Office 365
   
@@ -138,7 +138,6 @@ Exécutez la commande suivante pour désactiver la boîte aux lettres d'archivag
     - Elle déplace les éléments datant de 14 jours ou plus du dossier Éléments récupérables dans la boîte aux lettres principale de l'utilisateur vers le dossier Éléments récupérables dans la boîte aux lettres d'archivage.
     
 - Pour plus d'informations sur les boîtes aux lettres d'archivage et les stratégies de rétention Exchange, voir:
-  
     
   - [Balises et stratégies de rétention](https://go.microsoft.com/fwlink/?LinkId=404424)
     

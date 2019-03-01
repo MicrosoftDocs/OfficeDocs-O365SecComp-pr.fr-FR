@@ -13,23 +13,23 @@ search.appverid:
 ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 ms.collection:
 - M365-security-compliance
-description: Vous pouvez créer une règle de transport Exchange pour empêcher vos utilisateurs d'envoyer des messages électroniques à Microsoft à des fins d'analyse et de les utiliser dans vos propres processus de sécurité.
-ms.openlocfilehash: 5838b05327858cbad3c530674153989c173f4048
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+description: Vous pouvez créer une règle de flux de messagerie Exchange pour empêcher vos utilisateurs d'envoyer des messages électroniques à Microsoft à des fins d'analyse et de les utiliser dans vos propres processus de sécurité.
+ms.openlocfilehash: e93c90074ad2d143a964b928d8e868bee24acba2
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275984"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341165"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>Utiliser des règles de transport pour bloquer le signalement des courriers indésirables à Microsoft
 
-Il existe plusieurs façons d'envoyer des messages faux positifs et faux négatifs à Microsoft pour analyse. En tant qu'administrateur, vous pouvez utiliser des règles de flux de messagerie pour voir ce que vos utilisateurs signalent à Microsoft comme courrier indésirable, non-courrier indésirable et hameçonnage. Pour plus d'informations, consultez la rubrique soumettre des courriers indésirables, des courriers indésirables [et des tentatives de hameçonnage à Microsoft pour analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). À l'inverse, vous pouvez créer une règle de transport Exchange pour empêcher vos utilisateurs d'envoyer des messages électroniques à Microsoft à des fins d'analyse et de les utiliser dans vos propres processus de sécurité.
+Il existe plusieurs façons d'envoyer des messages faux positifs et faux négatifs à Microsoft pour analyse. En tant qu'administrateur, vous pouvez utiliser des règles de flux de messagerie pour voir ce que vos utilisateurs signalent à Microsoft comme courrier indésirable, non-courrier indésirable et hameçonnage. Pour plus d'informations, consultez la rubrique soumettre des courriers indésirables, des courriers indésirables [et des tentatives de hameçonnage à Microsoft pour analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). À l'inverse, vous pouvez créer une règle de flux de messagerie Exchange (également appelée règle de transport) pour empêcher vos utilisateurs d'envoyer des messages électroniques à Microsoft à des fins d'analyse et de les utiliser dans vos propres processus de sécurité.
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 Durée d'exécution estimée : 5 minutes
   
-Des autorisations doivent vous être attribuées avant de pouvoir effectuer cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée «règles de transport» dans la rubrique [stratégie de messagerie et autorisations de conformité](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) , ainsi que l'entrée «stratégies de boîte aux lettres Outlook sur le Web» dans la rubrique [clients and Mobile](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx) Devices Permissions. 
+Des autorisations doivent vous être attribuées avant de pouvoir effectuer cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée «règles de flux de messagerie» dans la rubrique [stratégie de messagerie et autorisations de conformité](http://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) et l'entrée «stratégies de boîte aux lettres Outlook sur le Web» dans la rubrique [clients and Mobile](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx) Devices Permissions. 
   
 Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013 **Keyboard shortcuts in Exchange 2013**.
   

@@ -14,12 +14,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer l'authentification de message basée sur un domaine, la création de rapports et la conformité (DMARC) pour valider les messages envoyés à partir de votre organisation Office 365.
-ms.openlocfilehash: 178eb9658f1cfe298d3b5600ecdc524d7bd66a72
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: d224acaf6b1d53cdf9ababca87c5880a5499c613
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276176"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341575"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Utiliser DMARC pour valider les e-mails dans Office 365
 
@@ -209,7 +209,7 @@ Office 365 est configuré de cette façon, car certains messages légitimes peuv
   
 - Les utilisateurs ajoutent individuellement des expéditeurs approuvés à l'aide de leur client de messagerie
     
-- Les administrateurs créent une règle de transport Exchange pour tous les utilisateurs qui autorise la transmission des messages de ces expéditeurs particuliers. 
+- Les administrateurs créent une règle de flux de messagerie Exchange (également appelée règle de transport) pour tous les utilisateurs qui autorisent les messages pour ces expéditeurs particuliers. 
     
 ## <a name="troubleshooting-your-dmarc-implementation"></a>Résolution des problèmes d'implémentation de DMARC
 <a name="dmarctroubleshoot"> </a>

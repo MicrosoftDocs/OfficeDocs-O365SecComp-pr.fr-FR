@@ -13,12 +13,12 @@ ms.assetid: 4b250bc9-0056-4426-8397-7b4398f1b026
 ms.collection:
 - M365-security-compliance
 description: "Les utilisateurs qui voient un message de notification de courrier indésirable à l'utilisateur final de leur administrateur sur le courrier en quarantaine peuvent effectuer ces actions sur les messages. "
-ms.openlocfilehash: fac960a8eb090248988bd5a0072f659f04e852b9
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: adddd5032e6254b6084a7f6e714859b713815ed2
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275214"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341235"
 ---
 # <a name="use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages"></a>Utilisation des notifications de courrier indésirable pour l'utilisateur final et signalement des messages de courrier indésirable mis en quarantaine
 
@@ -41,6 +41,6 @@ Vous pouvez effectuer les actions suivantes sur chaque message :
 - **Signaler comme légitime** Cliquez sur ce lien pour envoyer une copie du message à Microsoft pour analyse. L'équipe du courrier indésirable évalue et analyse le message, puis, selon les résultats de l'analyse, adapte les règles de filtre de courrier indésirable pour autoriser le message. 
     
 > [!NOTE]
->  Les messages mis en quarantaine en raison d'une correspondance de règle de transport ne sont pas inclus dans les messages de courrier indésirable mis en quarantaine de l'utilisateur final. Seuls les messages mis en quarantaine car identifiés comme courrier indésirable sont répertoriés. >  Vous ne pouvez libérer un message et le signaler comme faux positif (légitime) qu'une fois. 
+>  Les messages mis en quarantaine en raison d'une règle de flux de messagerie (également appelée a) ne sont pas inclus dans les messages de mise en quarantaine du courrier indésirable de l'utilisateur final. Seuls les messages de courrier indésirable mis en quarantaine sont répertoriés. > vous pouvez uniquement libérer un message et le signaler une seule fois comme faux positif (légitime). 
   
 

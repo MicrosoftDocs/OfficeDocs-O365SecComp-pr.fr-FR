@@ -14,12 +14,12 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: Vous pouvez configurer les notifications de courrier indésirable de l'utilisateur final pour la stratégie de filtrage du courrier indésirable par défaut à l'échelle de l'entreprise ou pour les stratégies de filtrage du courrier indésirable personnalisées appliquées
-ms.openlocfilehash: ea2994a3f772b407a35be2d64e8afcc639d24f31
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: e3e5ce044879318dab55f5d08ec2ee0e3379dfb2
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214494"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341365"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Configurer des notifications de courrier indésirable pour l’utilisateur final dans Exchange Online
 
@@ -73,7 +73,7 @@ Pour des informations sur les raccourcis clavier applicables aux procédures de 
 > [!NOTE]
 >  Les notifications de courrier indésirable de l'utilisateur final ne seront fonctionnelles que pour les stratégies de filtrage du courrier indésirable activées. > les notifications de courrier indésirable de l'utilisateur final sont envoyées uniquement une fois par jour. Le délai de remise de la notification ne peut pas être garanti pour un client spécifique et n'est pas configurable. 
   
- **Conseil:** Si vous souhaitez tester les notifications de courrier indésirable de l'utilisateur final en les envoyant à un ensemble limité d'utilisateurs avant de les implémenter complètement, créez une stratégie de filtrage du courrier indésirable personnalisée qui active les notifications de courrier indésirable à l'utilisateur final pour les domaines dans lesquels les utilisateurs résident. Ensuite, dans le centre d'administration Exchange, sous **règles de flux \> de messagerie**, créez une règle de transport pour bloquer les messages de Quarantine@messaging.microsoft.com (l'adresse de messagerie qui envoie les notifications) avec des exceptions pour les utilisateurs qui doivent recevoir les notifications. L'image suivante est un exemple de création d'une exception pour deux utilisateurs (Sarad et alexd) du domaine Contoso.com: 
+ **Conseil:** Si vous souhaitez tester les notifications de courrier indésirable de l'utilisateur final en les envoyant à un ensemble limité d'utilisateurs avant de les implémenter complètement, créez une stratégie de filtrage du courrier indésirable personnalisée qui active les notifications de courrier indésirable à l'utilisateur final pour les domaines dans lesquels les utilisateurs résident. Ensuite, dans le centre d'administration Exchange, sous **règles de flux \> de messagerie**, créez une règle de flux de messagerie (également appelée règle de transport) pour bloquer les messages de Quarantine@messaging.microsoft.com (adresse de messagerie qui envoie des notifications) avec des exceptions pour les utilisateurs de votre choix. pour recevoir les notifications. L'image suivante est un exemple de création d'une exception pour deux utilisateurs (Sarad et alexd) du domaine Contoso.com: 
   
 ![Règle de transport pour tester les notifications de courrier indésirable de l'utilisateur final](media/EOP-ESN-testspecificusers.jpg)
   

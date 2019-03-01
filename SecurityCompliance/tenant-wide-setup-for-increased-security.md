@@ -1,6 +1,6 @@
 ---
 title: Configurer votre client Office 365 pour une sécurité accrue
-ms.author: tracyp
+ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
 ms.date: 10/11/2018
@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Vous guide tout au long de la configuration recommandée pour les paramètres à l'échelle du client qui affectent la sécurité de votre environnement Office 365. Vos besoins en matière de sécurité peuvent nécessiter plus ou moins de sécurité. Utilisez ces recommandations comme point de départ.
-ms.openlocfilehash: 982e9b73821553ae1f666cf54e143d4a806e3cb3
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: b94d894770462adc317f3307bfb16d5f643dfa14
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223163"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341505"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Configurer votre client Office 365 pour une sécurité accrue
 
@@ -61,8 +61,8 @@ De nombreux contrôles de sécurité et de protection dans le centre d'administr
   
 |Zone * * * *|Inclut une stratégie par défaut * * * *|Recommandation * * *|
 |:-----|:-----|:-----|
-|**Flux de messagerie** (Règles de transport)  <br/> |Non  <br/> | Ajoutez une règle de flux de messagerie pour vous protéger contre les ransomware. Voir «comment utiliser les règles de transport Exchange pour suivre ou bloquer les courriers électroniques avec des extensions de fichiers utilisées par des ransomware» dans cet article de blog: [Comment traiter les ransomware](https://blogs.technet.microsoft.com/office365security/how-to-deal-with-ransomware/).<br><br/> Créer une règle de transport pour empêcher le transfert automatique des courriers électroniques vers les domaines externes. Pour plus d'informations, consultez la rubrique [minimisation des règles de transfert externe des clients avec le score sécurisé](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).<br/> <br>Plus d'informations: [règles de flux de messagerie (règles de transport) dans Exchange Online](https://technet.microsoft.com/en-us/library/jj919238%28v=exchg.150%29.aspx) <br/> |
-|**Activer l'authentification moderne** <br/> |Non  <br/> | L'authentification moderne dans Office 365 est une condition préalable à l'utilisation de l'authentification multifacteur (MFA). L'authentification multiFACTEUR est recommandée pour sécuriser l'accès aux ressources Cloud, y compris la messagerie électronique.<br/>  <br>Consultez les rubriques suivantes:  <br/> • [Activer ou désactiver l'authentification moderne dans Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) <br/> • [Skype entreprise Online: activation de votre client pour l'authentification moderne](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/>  <br>L'authentification moderne est activée par défaut pour les clients Office 2016, SharePoint Online et OneDrive entreprise.  <br/>  <br>Plus d'informations: [utilisation de l'authentification moderne office 365 avec les clients Office](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a) <br/> |
+|**Flux de messagerie** (règles de flux de messagerie, également appelées règles de transport)|Non|Ajoutez une règle de flux de messagerie pour vous protéger contre les ransomware. Voir «comment utiliser les règles de transport Exchange pour suivre ou bloquer les courriers électroniques avec des extensions de fichiers utilisées par des ransomware» dans cet article de blog: [Comment traiter les ransomware](https://blogs.technet.microsoft.com/office365security/how-to-deal-with-ransomware/).<br><br/> Créez une règle de flux de messagerie pour empêcher le transfert automatique des messages vers des domaines externes. Pour plus d'informations, consultez la rubrique [minimisation des règles de transfert externe des clients avec le score sécurisé](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).<br/><br/> Plus d'informations: [règles de flux de messagerie (règles de transport) dans Exchange Online](https://technet.microsoft.com/en-us/library/jj919238%28v=exchg.150%29.aspx)|
+|**Activer l'authentification moderne**|Non|L'authentification moderne dans Office 365 est une condition préalable à l'utilisation de l'authentification multifacteur (MFA). L'authentification multiFACTEUR est recommandée pour sécuriser l'accès aux ressources Cloud, y compris la messagerie électronique.<br/><br/> Consultez les rubriques suivantes:  <br/>• [Activer ou désactiver l'authentification moderne dans Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) <br/>• [Skype entreprise Online: activation de votre client pour l'authentification moderne](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> L'authentification moderne est activée par défaut pour les clients Office 2016, SharePoint Online et OneDrive entreprise. <br/><br/> Plus d'informations: [utilisation de l'authentification moderne office 365 avec les clients Office](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a)|
    
 ## <a name="configure-tenant-wide-sharing-policies-in-sharepoint-admin-center"></a>Configurer des stratégies de partage à l'échelle du client dans le centre d'administration SharePoint
 
@@ -74,7 +74,7 @@ Pour prendre en charge les objectifs de la protection de base, configurez les st
   
 |Zone * * * *|Inclut une stratégie par défaut * * * *|Recommandation * * *|
 |:-----|:-----|:-----|
-|**Partage** (SharePoint Online et OneDrive entreprise)  <br/> |Oui  <br/> | Le partage externe est activé par défaut. Ces paramètres sont recommandés:<br/>  • Autorisez le partage vers les utilisateurs externes authentifiés et l'utilisation des liens d'accès anonyme (paramètre par défaut).  <br/>  • Les liens d'accès anonyme expirent dans ce nombre de jours. Entrez un nombre, si vous le souhaitez, par exemple 30 jours.<br/>  • Type de lien par défaut — sélectionnez interne (personnes de l'organisation uniquement). Les utilisateurs qui souhaitent partager à l'aide de liens anonymes doivent choisir cette option dans le menu partage.<br/>  <br>Plus d'informations: [vue d'ensemble du partage externe](https://support.office.com/article/c8a462eb-0723-4b0b-8d0a-70feafe4be85) <br/> |
+|**Partage** (SharePoint Online et OneDrive entreprise)|Oui|Le partage externe est activé par défaut. Ces paramètres sont recommandés:<br/>• Autorisez le partage vers les utilisateurs externes authentifiés et l'utilisation des liens d'accès anonyme (paramètre par défaut). <br/>  • Les liens d'accès anonyme expirent dans ce nombre de jours. Entrez un nombre, si vous le souhaitez, par exemple 30 jours.<br/>• Type de lien par défaut — sélectionnez interne (personnes de l'organisation uniquement). Les utilisateurs qui souhaitent partager à l'aide de liens anonymes doivent choisir cette option dans le menu partage.<br/><br/> Plus d'informations: [vue d'ensemble du partage externe](https://support.office.com/article/c8a462eb-0723-4b0b-8d0a-70feafe4be85)|
    
 Le centre d'administration SharePoint et le centre d'administration OneDrive entreprise incluent les mêmes paramètres. Les paramètres dans le centre d'administration s'appliquent aux deux.
   

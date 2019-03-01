@@ -15,16 +15,16 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: Cette rubrique explique comment les administrateurs Exchange Online et Exchange Online Protection (EOP) peuvent rechercher, récupérer et signaler les messages mis en quarantaine dans le Centre d'administration Exchange (CAE).
-ms.openlocfilehash: 9c3501b79c6a733fd7b6239a26b7e7cfa69f3edc
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: aec067169b343ed186d506ed33c29385a7dc6450
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219034"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341785"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Rechercher et débloquer les messages mis en quarantaine en tant qu'administrateur
 
-Cette rubrique explique comment les administrateurs Exchange Online et Exchange Online Protection (EOP) peuvent rechercher, récupérer et signaler les messages mis en quarantaine dans le Centre d'administration Exchange (CAE). Office 365 envoie les messages en quarantaine soit parce qu'ils ont été identifiés comme courrier indésirable, soit parce qu'ils tombaient sous le coup d'une règle de transport. 
+Cette rubrique décrit comment les administrateurs Exchange Online et Exchange Online Protection (EOP) peuvent rechercher, publier et signaler les messages mis en quarantaine dans le centre d'administration Exchange. Office 365 dirige les messages en quarantaine soit parce qu'ils ont été identifiés comme courrier indésirable, soit qu'ils correspondent à une règle de flux de messagerie (également appelée règle de transport). 
   
 Utilisez le centre &amp; de sécurité conformité au lieu du centre d'administration Exchange pour effectuer l'une de ces tâches, ainsi que pour afficher et utiliser les messages qui ont été envoyés en quarantaine, car ils contiennent des programmes malveillants. Pour plus d'informations, consultez la rubrique [mise en quarantaine des messages électroniques dans Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
   
@@ -70,9 +70,9 @@ Dans le centre d'administration Exchange, une recherche avancée vous permet de 
 6. **Expire** Vous pouvez indiquer que le message sera supprimé de la quarantaine au cours des prochaines 24 heures ( **Aujourd'hui**), au cours des prochaines 48 heures ( **2 prochains jours**), au cours de la semaine à venir ( **7 prochains jours**) ou vous pouvez sélectionner un intervalle de temps personnalisé au cours duquel le message sera supprimé de la quarantaine.
     
     > [!IMPORTANT]
-    > Par défaut, les messages de courrier indésirable mis en quarantaine sont conservés en quarantaine pendant 15 jours, tandis que les messages mis en quarantaine qui correspondent à une règle de transport sont maintenus en quarantaine pendant 7 jours. Une fois cette période écoulée, Office 365 supprime les messages qui ne peuvent ensuite plus être récupérés. La période de conservation des messages mis en quarantaine qui correspondent à une règle de transport n'est pas configurable. Vous pouvez raccourcir la période de rétention à l'aide du paramètre **Conserver les courriers indésirables pendant (jours)** dans vos stratégies de filtrage du contenu. Pour plus d'informations, consultez la rubrique [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md). 
+    > Par défaut, les messages de courrier indésirable mis en quarantaine sont conservés en quarantaine pendant 15 jours, tandis que les messages mis en quarantaine qui correspondent à une règle de flux de messagerie sont conservés en quarantaine pendant 7 jours. Après cette période de temps, Office 365 supprime les messages et ils ne peuvent pas être récupérés. La période de rétention des messages mis en quarantaine qui correspondent à une règle de flux de messagerie n'est pas configurable. Toutefois, la période de rétention des messages indésirables mis en quarantaine peut être abaissée via le paramètre **conserver le courrier indésirable pendant (jours)** dans vos stratégies de filtrage de contenu. Pour plus d'informations, consultez [la rubrique Configuration de vos stratégies de filtrage du courrier](configure-your-spam-filter-policies.md)indésirable. 
   
-7. **Type** Vous pouvez spécifier si le message recherché a été mis en quarantaine parce qu'il a été identifié comme **Courrier indésirable** ou parce qu'il correspondait à une **Règle de transport**.
+7. **Type (type** ) Vous pouvez spécifier s'il faut rechercher les messages mis en quarantaine identifiés comme **courrier**indésirable ou rechercher les messages qui correspondent à une règle de flux de messagerie (**règle de transport**).
     
 3. Pour lancer la recherche avancée, cliquez sur **OK**. 
     
@@ -90,7 +90,7 @@ Après avoir localisé un message spécifique sur la page de **mise en quarantai
     
     Les valeurs d' **État du message** sont les suivantes : 
     
-  - **Type** Indique si le message a été identifié comme **Courrier indésirable** ou correspondait à une **Règle de transport**.
+  - **Type (type** ) Indique si le message a été identifié comme **courrier** indésirable ou s'il correspond à une règle de flux de messagerie (**règle de transport**).
     
   - **Expire** Date à laquelle le message sera supprimé de la quarantaine. 
     
@@ -145,7 +145,7 @@ Si vous souhaitez diffuser des messages à des destinataires, vos options sont l
   
 Cliquez sur **Diffuser le message sélectionné et autoriser l'expéditeur** dans la liste déroulante. 
     
-3. La boîte de dialogue **Diffuser le message et autoriser l'expéditeur** s'ouvre. Si vous voulez signaler le message à Microsoft, cliquez sur **Diffuser et autoriser**. Le message est diffusé à tous les destinataires auxquels il est adressé et tous les futurs messages provenant de cet expéditeur sont autorisés. Toutefois, si ce message a été mis en quarantaine en raison d'une règle de transport ou de son envoi par un expéditeur bloqué, les futurs messages de cet expéditeur continueront à être bloqués. 
+3. La boîte de dialogue **libérer le message et autoriser l'expéditeur** s'ouvre. Si vous le souhaitez, vous pouvez choisir de signaler le message à Microsoft, puis de cliquer sur **publier et autoriser**. Le message est envoyé à tous les destinataires auxquels il est adressé et tous les futurs messages provenant de cet expéditeur seront autorisés. Toutefois, si ce message a été mis en quarantaine en raison d'une règle de flux de messagerie ou d'un expéditeur bloqué, l'expéditeur continuera à être bloqué pour les futurs messages. 
     
 ### <a name="release-a-quarantined-message-to-specific-recipients-without-reporting-it-as-a-false-positive"></a>Diffuser un message en quarantaine à des destinataires spécifiques sans le signaler comme faux positif
 <a name="Releasequarantinedmessagetospecificrecipientswithoutreportingasfalsepositive"> </a>

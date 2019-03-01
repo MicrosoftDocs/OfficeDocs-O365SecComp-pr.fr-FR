@@ -15,12 +15,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Vous et vos utilisateurs pouvez soumettre des messages indésirables faux positifs et faux positifs à Microsoft pour analyse. '
-ms.openlocfilehash: 553f73ffc82dc6f7091b81171213f95f7a092674
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: af11c7ab8e6d80737d2b25ca2b37c3bf7da9fe07
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276094"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341525"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Soumission des messages indésirables, légitimes ou des tentatives de hameçonnage à Microsoft pour analyse
 
@@ -79,7 +79,7 @@ Vous pouvez envoyer des messages de courrier non indésirable de la manière sui
     
 - Si vous utilisez l'action **mettre en quarantaine** au lieu de l'action déplacer le **message vers le dossier** courrier indésirable lorsque vous configurez vos filtres de contenu: 
     
-  - Les administrateurs peuvent libérer les messages de courrier indésirable mis en quarantaine et les signaler comme faux positifs dans le centre d'administration Exchange. Pour plus d'informations, consultez la rubrique [Rechercher et débloquer les messages mis en quarantaine en tant qu'administrateur](find-and-release-quarantined-messages-as-an-administrator.md).
+  - Les administrateurs peuvent libérer des messages de courrier indésirable mis en quarantaine et les signaler comme faux positifs à partir du Centre d'administration Exchange. Pour plus d'informations, voir [Rechercher et débloquer les messages mis en quarantaine en tant qu'administrateur](find-and-release-quarantined-messages-as-an-administrator.md).
     
   - Les utilisateurs peuvent publier leurs propres messages indésirables mis en quarantaine et les signaler comme faux positifs par le biais des canaux suivants: 
     

@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: "En tant qu'administrateur, vous pouvez afficher, publier et signaler des messages en quarantaine faux positifs dans Office 365. Vous pouvez configurer des stratégies pour qu'Office 365 filtre les messages et les envoie à la mise en quarantaine pour plusieurs raisons: ils ont été identifiés comme courrier indésirable, en bloc, par hameçonnage, par programme malveillant ou parce qu'ils correspondent à une règle de flux de messagerie. "
-ms.openlocfilehash: 797a2e54d6f0a0b1f0d06bd287dd636988f078b5
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: c2a6fff9f6b4d93900174426e2230284695ff3bf
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276264"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341725"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gestion des messages et des fichiers mis en quarantaine en tant qu'administrateur dans Office 365
 
@@ -87,7 +87,7 @@ En fonction de vos paramètres, il peut y avoir un grand nombre de messages et d
       - Pour rechercher des fichiers, définissez les filtres sur Afficher les **fichiers** mis en quarantaine en raison d'un **programme malveillant**.<br/>
     Pour les fichiers mis en quarantaine, la page affiche tous les fichiers mis en quarantaine, et pas seulement le vôtre, indépendamment de ce que vous lui indiquez.
     
-      - Pour rechercher des messages mis en quarantaine, définissez des filtres sur afficher **tout** ou **seulement mon** **courrier électronique**. Pour le dernier filtre, choisissez le type de message en quarantaine que vous recherchez. Vous pouvez rechercher les messages mis en quarantaine identifiés comme courriers indésirables, pour les messages qui correspondent à une **règle**de transport **** ou de flux de messagerie, à un courrier de **hameçonnage** ou à un courrier électronique contenant des **programmes malveillants**. ****
+      - Pour rechercher des messages mis en quarantaine, définissez des filtres sur afficher **tout** ou **seulement mon** **courrier électronique**. Pour le dernier filtre, choisissez le type de message en quarantaine que vous recherchez. Vous pouvez rechercher les messages mis en quarantaine identifiés comme **courrier**indésirable, les messages qui correspondent à une règle de flux de messagerie (**règle de transport**), le courrier **en nombre** , le courrier de **hameçonnage** ou le courrier contenant des **programmes malveillants**.
     
 2. Sous **Trier les résultats par**, sélectionnez le filtre ou les filtres que vous souhaitez utiliser pour la recherche dans les listes déroulantes. Les options varient selon que vous recherchez des fichiers ou des messages. Les caractères génériques ne sont pas pris en charge dans les champs de recherche pour le moment.<br/><br/>Pour les fichiers et les messages, vous pouvez choisir de filtrer selon la date à laquelle le message ou le fichier a été envoyé en quarantaine. Vous pouvez spécifier la date ou une plage de dates, y compris l'heure. Vous pouvez également filtrer vos résultats de recherche en fonction de la date d'expiration à laquelle le fichier ou le message sera supprimé de la quarantaine, ou vous pouvez utiliser une combinaison de filtres. Pour effectuer une recherche par date d'expiration, choisissez **filtre avancé**. Sous **expire**, vous pouvez sélectionner les messages qui seront supprimés de la quarantaine au cours des prochaines 24 heures ( **aujourd'hui**), au cours des prochaines 48 heures ( **2 prochains jours**), au cours de la semaine suivante (7 prochains **jours**) ou vous pouvez sélectionner un intervalle de temps personnalisé.<br/><br/>Pour les messages, vous disposez des options supplémentaires suivantes:
     
@@ -114,7 +114,7 @@ Lorsque vous sélectionnez un élément affiché dans la liste de mise en quaran
     
 - **Objet**. Texte de la ligne d'objet du message. 
     
-- **Type**. Indique si un message a été identifié comme **courrier**indésirable, **Bulk**, **hameçon**, correspond à une règle de flux de messagerie ( **règle de transport**) ou a été identifié comme contenant un **programme malveillant**.
+- **Type**. Indique si un message a été identifié comme **courrier**indésirable, **Bulk**, **hameçon**, correspond à une règle de flux de messagerie (**règle de transport**) ou a été identifié comme contenant un **programme malveillant**.
     
 - **Expire**. Date et heure auxquelles le message est automatiquement supprimé de la mise en quarantaine. 
     

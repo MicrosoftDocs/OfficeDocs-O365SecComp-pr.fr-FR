@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: Le but de cette rubrique est de vous aider à comprendre le processus de passage d'un équipement de protection de messagerie électronique local ou d'un service de protection dans le nuage à Exchange Online Protection (EOP), puis de vous fournir les ressources d'aide nécessaires pour commencer à l'utiliser.
-ms.openlocfilehash: d1dc75e8d020f865e4f358899802d0da320deeb5
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: a1fa7b63dfc1e6eb193d458545722c4b5331bc48
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026401"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30340755"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Basculement vers EOP à partir de Google Postini, Barracuda Spam and Virus Firewall, ou Cisco IronPort
 
@@ -56,9 +56,9 @@ Si vous envisagez un déploiement hybride, nous vous recommandons de commencer p
 
 Si vous décidez de passer à EOP, soyez particulièrement attentif aux aspects suivants :
   
-- **Règles de filtrage personnalisées** Si vous disposez d'un filtrage personnalisé ou de règles de stratégie d'entreprise visant à intercepter du courrier indésirable spécifique, nous vous recommandons d'utiliser EOP avec les paramètres par défaut pendant un certain temps avant de migrer vos règles. EOP offre une protection contre le courrier indésirable au niveau entreprise avec les paramètres par défaut. Il se peut que vous ne deviez pas migrer certaines de vos règles vers EOP. Bien entendu, si vous avez établi des règles qui appliquent des stratégies d'entreprise personnalisées spécifiques, vous pouvez les créer. La rubrique [Transport Rules](http://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx) fournit des instructions détaillées sur la création de règles de transport dans EOP. 
+- **Règles de filtrage personnalisées** Si vous avez des règles de filtrage ou de stratégie d'entreprise personnalisées pour intercepter des courriers indésirables spécifiques, nous vous recommandons d'essayer EOP avec les paramètres par défaut pour une période, avant de migrer vos règles. EOP offre une protection contre le courrier indésirable au niveau de l'entreprise avec les paramètres par défaut, il se peut que vous n'ayez pas besoin de migrer certaines de vos règles vers EOP. Bien entendu, si vous avez des règles en place qui appliquent des stratégies d'entreprise personnalisées spécifiques, vous pouvez les créer. Les [règles de flux de messagerie (règles de transport) dans Exchange Online Protection](mail-flow-rules-transport-rules-0.md) fournissent des instructions détaillées sur la création de règles de flux de messagerie dans EOP. 
     
-- **Adresses IP autorisées listes et des listes des adresses IP bloquées** Si vous avez par utilisateur Autoriser les listes et bloquer, autoriser peu de temps copier les listes dans EOP dans le cadre de votre processus d’installation. Pour plus d’informations sur IP Autoriser les listes et les listes des adresses IP bloquées, voir [configurer la stratégie de filtrage de connexion](../configure-the-connection-filter-policy.md).
+- Listes d'adresses **IP autorisées et listes d'adresses IP bloquées** Si vous avez des listes d'autorisation par utilisateur et des listes rouges, prévoyez un certain temps pour copier les listes vers EOP dans le cadre de votre processus de configuration. Pour plus d'informations sur les listes d'adresses IP autorisées et les listes d'adresses IP bloquées, consultez [la rubrique Configure the connection filter Policy](../configure-the-connection-filter-policy.md).
     
 - **Communication sécurisée** Si vous avez un partenaire exigeant une messagerie chiffrée, nous vous recommandons de configurer la communication sécurisée dans le Centre d'administration Exchange. Pour configurer ce scénario, consultez la rubrique [Create connectors for a secure mail channel using transport layer security (TLS)](http://technet.microsoft.com/library/1ce4d6a4-41ba-4d1e-9ca9-e826252c1041.aspx).
     

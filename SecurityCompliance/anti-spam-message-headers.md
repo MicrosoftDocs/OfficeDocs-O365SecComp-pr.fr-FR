@@ -14,12 +14,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Lorsque Exchange Online Protection analyse un message entrant, il insère l'en-tête **X-Forefront-Antispam-Report** dans chaque message.
-ms.openlocfilehash: 13bcb3598552bbb63bd50b50963b9806c3f34844
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: fa14d32f06d07bf7c5131e9c417e9baa0720fcdd
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276194"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341735"
 ---
 # <a name="anti-spam-message-headers"></a>En-têtes de messages anti-courrier indésirable
 
@@ -46,10 +46,10 @@ Après avoir accédé aux informations d'un en-tête de message, recherchez **X-
 |IPV:CAL|Le message n'a pas été bloqué par les filtres anti-spam car l'adresse IP se trouve dans une liste d'adresses IP autorisées du filtre des connexions.|
 |IPV:NLI|L'adresse IP n'était répertoriée sur aucune liste de réputation d'adresses IP.|
 |SFV:SPM|Le message a été marqué comme courrier indésirable par le filtre de contenu.|
-|SFV:SKS|Le message a été marqué comme courrier indésirable avant d’être traité par le filtre de contenu. Cela inclut les messages pour lesquels une règle de transport les a marqués automatiquement comme étant des courriers indésirables et où toutes les étapes de filtrage supplémentaires ont été contournées.|
+|SFV:SKS|Le message a été marqué comme courrier indésirable avant d'être traité par le filtre de contenu. Cela inclut les messages dans lesquels le message a correspondu à une règle de flux de messagerie (également appelée règle de transport) pour le marquer automatiquement comme courrier indésirable et ignorer tout filtrage supplémentaire.|
 |SFV:SKA|Le message a ignoré le filtrage et a été remis à la boîte de réception, car il correspond à une liste verte dans la stratégie de filtrage du courrier indésirable, telle que la **liste d'expéditeurs autorisés**.|
 |SFV:SKB|Le message a été marqué comme courrier indésirable, car il correspond à une liste rouge dans la stratégie de filtrage du courrier indésirable, telle que la **liste d'expéditeurs bloqués**.|
-|SFV:SKN|Le message a été marqué comme courrier non indésirable avant d’être traité par le filtre de contenu. Il s’agit des messages qui ont été marqués automatiquement par une règle de transport comme étant des courriers non indésirables et pour lesquels toutes les étapes de filtrage supplémentaires ont été contournées.|
+|SFV:SKN|Le message a été marqué comme n'étant pas un courrier indésirable avant d'être traité par le filtre de contenu. Cela inclut les messages dans lesquels le message a correspondu à une règle de flux de messagerie pour le marquer automatiquement comme non-courrier indésirable et ignorer tout filtrage supplémentaire.|
 |SFV:SKI|Semblable à SFV:SKN. Le message a ignoré le filtrage pour une autre raison, par exemple, il s'agissait d'un message électronique intra-organisationnel au sein d'un client.|
 |SFV:SKQ|Le message a été libéré de la quarantaine et a été envoyé aux destinataires appropriés.|
 |SFV:NSPM|Le message a été marqué comme n'étant pas un courrier indésirable et a été envoyé aux destinataires appropriés.|

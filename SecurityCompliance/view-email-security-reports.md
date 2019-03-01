@@ -3,7 +3,7 @@ title: Afficher les rapports de sécurité de messagerie &amp; dans le centre de
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/07/2019
+ms.date: 02/21/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,20 +15,22 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation avec Office 365 Enterprise. Les rapports de sécurité de messagerie sont disponibles &amp; dans le centre de sécurité conformité.
-ms.openlocfilehash: fb9f8234f1febf98daf0382f2ad8ece3e3ecbbfe
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.openlocfilehash: 833cb4e0b90375179a4ce2097cb986926a9856d0
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241996"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341445"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Afficher les rapports de sécurité de messagerie &amp; dans le centre de sécurité conformité
 
-Un grand nombre de rapports de sécurité de messagerie sont disponibles dans le [Centre de sécurité &amp; conformité](https://security.microsoft.com) pour vous aider à découvrir comment les fonctionnalités anti-courrier indésirable et anti-programme malveillant dans Office 365 protègent votre organisation. Si vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-these-reports), vous pouvez afficher ces rapports dans le centre &amp; de sécurité conformité en accédant au **tableau de bord** **rapports** \> .
+Un grand nombre de rapports sont disponibles dans [le &amp; Centre de sécurité conformité](https://protection.office.com) pour vous aider à découvrir comment les fonctionnalités de sécurité de messagerie, telles que les fonctionnalités de blocage du courrier indésirable, de programmes malveillants et de chiffrement dans Office 365 protègent votre organisation. Si vous disposez des [autorisations nécessaires](#what-permissions-are-needed-to-view-these-reports), vous pouvez afficher ces rapports dans le centre &amp; de sécurité conformité en accédant au **tableau de bord** **rapports** \> .
   
-![Le tableau &amp; de bord du centre de sécurité conformité peut vous aider à déterminer le fonctionnement de la protection avancée contre les menaces](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![Tableau de bord où se trouve le fonctionnement de la protection avancée contre les menaces](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 Vos rapports de sécurité de messagerie incluent les éléments suivants:
+
+- [Rapport](#encryption-report) de chiffrement (Nouveau!)
   
 - [Rapport d'état de protection contre les menaces](view-email-security-reports.md#tps) 
     
@@ -43,12 +45,36 @@ Vos rapports de sécurité de messagerie incluent les éléments suivants:
 - [Rapport de détections de courrier inDésirable](#spam-detections-report)
     
 - [Rapport de courrier électronique envoyé et reçu](view-email-security-reports.md#sentreceivedemail)
+
+- [Rapport sur les messages signalés par l'utilisateur](view-email-security-reports.md#userreported)
     
-- [Rapport sur les messages signalés par l'utilisateur](view-email-security-reports.md#userreported) (nouveau!) 
-    
+## <a name="encryption-report"></a>Rapport de chiffrement
+
+(**Nouveau!**) Le **rapport** de chiffrement affiche des informations sur les messages électroniques qui ont été chiffrés par le biais de stratégies ou de contrôles utilisateur final. L'équipe de sécurité de votre organisation peut utiliser ces informations pour identifier des modèles et appliquer ou ajuster de façon proactive des stratégies pour les messages électroniques sensibles.
+
+Pour afficher ce rapport, dans le centre de sécurité & conformité, accédez à **rapports** \> **tableau de bord de tableau de bord** \> ****.
+
+![Rapport de chiffrement](media/encryptionreport-defaultview.png) 
+
+Lors de la première ouverture du rapport, vous verrez des données sur les méthodes de chiffrement utilisées sur les messages électroniques pour les sept (7) derniers jours. Vous pouvez modifier la plage de dates et les détails dans le rapport en cliquant sur filtres dans le coin supérieur droit de l'écran.
+
+![Filtres du rapport de chiffrement](media/encryptionreport-filters.png)   
+
+Vous pouvez également utiliser le menu déPanner par pour afficher les données en utilisant un modèle de chiffrement (ou une méthode).
+
+![Méthode de chiffrement ou modèle](media/encryptionreport-breakdownby.png)
+
+De plus, vous pouvez utiliser le menu Afficher les données par pour afficher le nombre de messages chiffrés sur les cinq domaines destinataires.
+
+![Affichage du rapport de chiffrement des données par menu](media/encryptionreport-viewdataby.png)
+
+Avec la flexibilité du nouveau rapport de chiffrement, vous pouvez afficher les tendances et prendre les mesures appropriées. Par exemple, si vous voyez un grand nombre de messages électroniques chiffrés par les utilisateurs, vous souhaiterez peut-être ajouter une stratégie de chiffrement pour automatiser le chiffrement pour certains cas d'utilisation. Et, si un certain nombre de modèles de chiffrement sont disponibles mais que personne ne les utilise, vous pouvez découvrir si les utilisateurs ont besoin d'une formation pour cette fonctionnalité. 
+
+Ce rapport permet à l'équipe de sécurité et de conformité de votre organisation de surveiller le mode d'utilisation du chiffrement des messages et de déterminer si d'autres actions sont nécessaires.
+
 ## <a name="threat-protection-status-report"></a>Rapport d'état de protection contre les menaces
 
-Le nouveau rapport d' **État de protection contre les menaces** est un rapport intelligent qui affiche des messages malveillants détectés et bloqués par Exchange Online Protection. Ce rapport affiche des informations sur l'e-mail identifié sous forme de programme malveillant ou de tentative de hameçonnage. 
+Le rapport d' **État de protection contre les menaces** est un rapport intelligent qui affiche des messages malveillants détectés et bloqués par Exchange Online Protection. Ce rapport affiche des informations sur l'e-mail identifié sous forme de programme malveillant ou de tentative de hameçonnage. 
 
 > [!NOTE]
 > Un rapport d'état de protection contre les menaces est disponible pour les clients qui ont [Office 365 ATP](office-365-atp.md) ou [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EoP); Toutefois, les informations affichées dans le rapport d'état de protection contre les menaces pour les clients ATP contiennent probablement des données différentes de celles que peuvent afficher les clients EOP. Par exemple, les clients EOP peuvent afficher des informations sur les programmes malveillants détectés dans les messages électroniques, mais pas les informations sur les [fichiers malveillants détectés dans SharePoint Online, OneDrive ou Microsoft teams](atp-for-spo-odb-and-teams.md), une capacité spécifique à la protection avancée contre les menaces. ([En savoir plus sur les rapports ATP](view-reports-for-atp.md).)
@@ -109,13 +135,13 @@ Utilisez la liste **afficher les données pour** déterminer si vous souhaitez a
   
 Sous le graphique, vous verrez les expéditeurs et destinataires de courriers les plus fréquents, ainsi que le nombre de messages envoyés ou reçus pendant la période donnée.
   
-## <a name="spoof-mail-report"></a>Courrier inFalsifiable
+## <a name="spoof-detections-report"></a>Rapport des détections d'usurpation
 
-Le rapport de **courrier** infalsifiable indique le nombre de messages d'usurpation d'identité détectés, et ceux qui ont été considérés comme «corrects» (courrier infalsifiable pour des raisons professionnelles légitimes). 
+Le rapport des détections d' **usurpation** indique le nombre de messages d'usurpation d'identité détectés et ceux qui ont été considérés comme «corrects» (courrier infalsifiable pour des raisons professionnelles légitimes). 
   
 Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez à rapports **tableau de bord** \> **** des **rapports** \> .
   
-![Pour afficher ce rapport, dans le centre &amp; de sécurité conformité, accédez à \> rapports \> tableau de bord d'usurpation de courrier](media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
+![Dans le centre &amp; de sécurité conformité, accédez à \> rapports \> tableau de bord de courrier frauduleux](media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
   
 Lorsque vous placez le curseur de la souris sur un jour dans le graphique, vous pouvez voir le nombre de messages d'usurpation d'adresse.
   
@@ -157,7 +183,7 @@ Sous le graphique, vous verrez une liste de catégories de courrier, telle que *
   
 ![Ce rapport vous indique le blocage des programmes malveillants, le courrier indésirable et les autres détections de messages.](media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
   
-## <a name="user-reported-messages-report-new"></a>Rapport sur les messages signalés par l'utilisateur (New!)
+## <a name="user-reported-messages-report"></a>Rapport sur les messages signalés par l'utilisateur
 
 Le rapport **messages signalés** par l'utilisateur affiche des informations sur les messages électroniques que les utilisateurs ont signalés comme courriers indésirables, tentatives de hameçonnage ou courrier électronique à l'aide du [complément de message de rapport](enable-the-report-message-add-in.md).
   
@@ -202,7 +228,7 @@ Pour en savoir plus, consultez les ressources suivantes:
 
 Si vous ne voyez pas de données dans vos rapports, vérifiez que vos stratégies sont correctement configurées. Pour plus d'informations, consultez la rubrique protection contre le [courrier indésirable et les programmes malveillants dans Office 365](anti-spam-and-anti-malware-protection.md).
   
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Protection contre le courrier indésirable pour Office 365](anti-spam-protection.md)
   

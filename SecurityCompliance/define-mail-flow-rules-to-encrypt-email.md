@@ -13,13 +13,13 @@ search.appverid:
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
-description: Les administrateurs peuvent apprendre à créer des règles de flux de messagerie (également appelées règles de transport) pour chiffrer et déchiffrer les messages à l'aide du chiffrement de messages Office 365 (OME).
-ms.openlocfilehash: f76abe2d341b9e3677a90d447e70f6091e3a91cc
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+description: Les administrateurs peuvent apprendre à créer des règles de flux de messagerie (règles de transport) pour chiffrer et déchiffrer des messages à l'aide du chiffrement de messages Office 365 (OME).
+ms.openlocfilehash: 29199856600b05cf45e3e9b23c943c87867d169d
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276204"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341535"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Définir des règles de flux de courrier pour le chiffrement du courriers dans Office 365
 

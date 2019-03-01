@@ -14,12 +14,12 @@ ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
 description: Si vous n'avez pas encore déplacé votre organisation Office 365 vers les nouvelles fonctionnalités OME, mais que vous avez déjà déployé OME, les informations contenues dans cet article s'appliquent à votre organisation. Microsoft vous recommande de planifier la migration vers les nouvelles fonctionnalités de OME dès que cela est raisonnable pour votre organisation. Pour obtenir des instructions, consultez la rubrique Set up New Office 365 message enCryption Capabilities Built-Top of Azure information protection. Si vous souhaitez en savoir plus sur la façon dont les nouvelles fonctionnalités fonctionnent en premier, consultez la rubrique Office 365 message enCryption. Le reste de cet article fait référence au comportement d'OME avant la publication des nouvelles fonctionnalités OME.
-ms.openlocfilehash: f6e407208735a53b98033e58a6f7b36fe9a37f62
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 03e2cb9c1f7d447f2fcf222382fcc2366faf0658
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276064"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341495"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Informations héritées pour le chiffrement de messages Office 365
 
@@ -167,7 +167,7 @@ RMS fournit des fonctionnalités de protection des droits relatifs à l'informat
   
  **Q. Comment le chiffrement de messages Office 365 est-il différent de S/MIME?**
   
-S/MIME est essentiellement une technologie de chiffrement côté client et exige une gestion de certificats et une infrastructure de publication complexes. Le chiffrement de messages Office 365 utilise des règles de transport et ne dépend pas de la publication de certificats.
+S/MIME est essentiellement une technologie de chiffrement côté client et nécessite une infrastructure de publication et de gestion de certificats compliquée. Le chiffrement de messages Office 365 utilise des règles de flux de messagerie (également appelées règles de transport) et ne dépend pas de la publication de certificats.
   
  **Q. Puis-je lire les messages chiffrés sur des appareils mobiles ?**
   
@@ -213,7 +213,7 @@ Nbre. Vous ne pouvez pas révoquer un message à une personne particulière une 
   
  **Q : Puis-je afficher un rapport des messages chiffrés qui ont été reçus et lus ?**
   
-Il n'existe pas de rapport qui indique si un message chiffré a été affiché, mais il existe des rapports Office 365 que vous pouvez utiliser pour déterminer le nombre de messages qui correspondent à une règle de transport spécifique, par exemple.
+Il n'existe pas de rapport qui indique si un message chiffré a été affiché, mais il existe des rapports Office 365 que vous pouvez utiliser pour déterminer le nombre de messages qui correspondent à une règle de flux de messagerie spécifique (également appelée règle de transport), par exemple.
   
  **Q. Que fait Microsoft des informations que je fournis par le biais du portail OME et de l’application Visionneuse OME ?**
   

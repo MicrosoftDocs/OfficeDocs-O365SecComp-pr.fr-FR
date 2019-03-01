@@ -15,12 +15,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Pour vous assurer que le courrier électronique envoyé à partir de personnes que vous approuvez n'est pas bloqué, vous pouvez utiliser la stratégie de filtrage des connexions pour créer une liste verte, également appelée liste d'expéditeurs approuvés, des adresses IP que vous approuvez. Vous pouvez également créer une liste des expéditeurs bloqués.
-ms.openlocfilehash: d7c99f8fb6b9b05efb800804927ccb26f7dd9f40
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 2b6cbb709eec6911e8aa83d560d5c00ad2a6e344
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216904"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341605"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configuration de la stratégie de filtrage des connexions
  
@@ -98,9 +98,9 @@ Une fois que vous avez créé et appliqué la règle, le service contourne le fi
   
 ### <a name="scoping-an-ip-allow-list-exception-for-a-specific-domain"></a>Définition de l'étendue d'une exception de liste verte IP pour un domaine spécifique
 
-En règle générale, nous vous recommandons d'ajouter les adresses IP (ou plages d'adresses IP) pour tous les domaines que vous jugez fiables à la liste verte IP. Toutefois, si vous ne voulez pas que votre liste verte IP s'applique à tous vos domaines, vous pouvez créer une règle de transport qui exclut des domaines spécifiques. 
+En général, nous vous recommandons d'ajouter les adresses IP (ou plages d'adresses IP) pour tous les domaines que vous considérez comme sûrs pour la liste d'adresses IP autorisées. Toutefois, si vous ne voulez pas que votre entrée de liste d'adresses IP autorisées s'applique à tous vos domaines, vous pouvez créer une règle de flux de messagerie (également appelée règle de transport), à l'exception de domaines spécifiques. 
   
-Par exemple, supposons que vous disposez de trois domaines : ContosoA.com, ContosoB.com et ContosoC.com, et que vous souhaitez ajouter l'adresse IP (pour des raisons de simplicité, nous allons utiliser 1.2.3.4) et ignorer le filtrage uniquement pour le domaine ContosoB.com. Vous allez créer une liste verte IP pour 1.2.3.4, qui définit le seuil de probabilité de courrier indésirable (SCL) sur -1 (ce qui signifie qu'il est classé comme courrier non indésirable) pour tous les domaines. Vous pouvez ensuite créer une règle de transport qui définit le SCL pour tous les domaines sauf ContosoB.com sur 0. Le message est alors réanalysé pour tous les domaines associés à l'adresse IP, à l'exception de ContosoB.com qui est le domaine répertorié comme l'exception à la règle. Le SCL de ContosoB.com est toujours de -1, ce qui signifie que le filtrage est ignoré, tandis que celui de ContosoA.com et ContosoC.com est de 0, ce qui signifie qu'ils seront réanalysés par le filtre de contenu.
+Par exemple, imaginons que vous avez trois domaines: ContosoA.com, ContosoB.com et ContosoC.com, et que vous voulez ajouter l'adresse IP (pour des raisons de simplicité, nous utilisons 1.2.3.4) et ignorez le filtrage uniquement pour les ContosoB.com de domaine. Vous devez créer une liste d'adresses IP autorisées pour 1.2.3.4, qui définit le seuil de probabilité de courrier indésirable (SCL) sur-1 (ce qui signifie qu'il est classé comme courrier non indésirable) pour tous les domaines. Vous pouvez ensuite créer une règle de flux de messagerie qui définit le SCL de tous les domaines à l'exception de ContosoB.com sur 0. Cela entraîne la réanalyse du message pour tous les domaines associés à l'adresse IP à l'exception de ContosoB.com, qui est le domaine mentionné comme l'exception dans la règle. ContosoB.com possède toujours une valeur SCL égale à-1, ce qui signifie ignorer le filtrage, tandis que ContosoA.com et ContosoC.com ont SCLs de 0, ce qui signifie qu'ils seront réanalysés par le filtre de contenu.
   
 Pour ce faire, procédez comme suit :
   

@@ -10,21 +10,21 @@ search.appverid: MET150
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: 1e0c579c-26e0-462a-a1b0-d7506dfe05fa
-description: Travailleurs de l’information dans votre organisation gérer toutes sortes d’informations sensibles pendant une journée normale. Création d’empreintes de document facilite la protection de ces informations en identifiant les formulaires standard qui sont utilisés au sein de votre organisation. Cette rubrique décrit les concepts empreinte numérique de Document et comment en créer un à l’aide de PowerShell.
-ms.openlocfilehash: c33d7412fe4774b74efcd0928df4c99c7bcbb626
-ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
+description: Les travailleurs de l'information de votre organisation gèrent de nombreux types d'informations sensibles pendant une journée normale. La création d'une empreinte numérique de document facilite la protection de ces informations en identifiant les formulaires standard utilisés dans votre organisation. Cette rubrique décrit les concepts sous-jacents à la création d'une empreinte numérique de document et la manière d'en créer une à l'aide de PowerShell.
+ms.openlocfilehash: 20b9f59902c52d347e7c439cb6f380ee9fd4a30e
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25002647"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341285"
 ---
-# <a name="document-fingerprinting"></a>Création d'une empreinte numérique de document
+# <a name="document-fingerprinting"></a>Création d’une empreinte numérique de document
 
-Travailleurs de l’information dans votre organisation gérer toutes sortes d’informations sensibles pendant une journée normale. Dans la sécurité &amp; centre de conformité, l’empreinte numérique de Document facilite pour vous permet de protéger ces informations en identifiant les formulaires standard qui sont utilisés au sein de votre organisation. Cette rubrique décrit les concepts empreinte numérique de Document et comment en créer un à l’aide de PowerShell.
+Les travailleurs de l'information de votre organisation gèrent de nombreux types d'informations sensibles pendant une journée normale. Dans le centre &amp; de sécurité conformité, la création d'une empreinte numérique de document facilite la protection de ces informations en identifiant les formulaires standard utilisés dans votre organisation. Cette rubrique décrit les concepts sous-jacents à la création d'une empreinte numérique de document et la manière d'en créer une à l'aide de PowerShell.
   
 ## <a name="basic-scenario-for-document-fingerprinting"></a>Scénario de base de création d'une empreinte numérique de document
 
-Création d’empreintes de document est une fonctionnalité de prévention de perte de données (DLP) qui convertit un formulaire standard en un type d’informations sensibles, vous pouvez utiliser dans les règles de vos stratégies DLP. Par exemple, vous pouvez créer une empreinte numérique de document basée sur un modèle de brevet vide et ensuite créer une stratégie DLP qui détecte et bloque tous les modèles de brevets sortants avec contenu sensible renseignés. Si vous le souhaitez, vous pouvez configurer [les conseils de stratégie](use-notifications-and-policy-tips.md) pour informer les expéditeurs qu’ils peuvent envoyer des informations sensibles, et l’expéditeur doit vérifier que les destinataires sont autorisés à recevoir les brevets. Ce processus fonctionne avec les formulaires basés sur texte utilisés dans votre organisation. Voici des exemples de formulaires que vous pouvez télécharger supplémentaires : 
+La création d'une empreinte numérique de document est une fonctionnalité de protection contre la perte de données (DLP) qui permet de convertir un formulaire standard en un type d'informations sensibles que vous pouvez utiliser dans les règles de vos stratégies DLP. Par exemple, vous pouvez créer une empreinte numérique de document basée sur un modèle de brevet vierge, puis créer une stratégie DLP qui détecte et bloque tous les modèles de brevet sortants dont le contenu sensible est rempli. Si vous le souhaitez, vous pouvez configurer des [conseils de stratégie](use-notifications-and-policy-tips.md) pour informer les expéditeurs qu'ils peuvent envoyer des informations sensibles et que l'expéditeur doit vérifier que les destinataires sont qualifiés pour recevoir les brevets. Ce processus fonctionne avec tous les formulaires texte utilisés dans votre organisation. Voici quelques exemples de formulaires pouvant être téléchargés: 
   
 - Formulaires officiels
     
@@ -34,29 +34,29 @@ Création d’empreintes de document est une fonctionnalité de prévention de p
     
 - Formulaires personnalisés créés spécialement pour votre organisation
     
-Dans l’idéal, votre organisation possède déjà une pratique établie de l’utilisation de certaines formes pour transmettre des informations sensibles. Après avoir téléchargé un formulaire vide pour être converti en une empreinte numérique de document et définir une stratégie correspondante, le DLP détecte tous les documents dans les messages sortants qui correspondent à cette empreinte.
+Idéalement, votre organisation a déjà établi une pratique commerciale de l'utilisation de certains formulaires pour transmettre des informations sensibles. Une fois que vous avez téléchargé un formulaire vide à convertir en empreinte numérique de document et configuré une stratégie correspondante, le DLP détecte tous les documents dans les messages sortants qui correspondent à cette empreinte digitale.
   
 ## <a name="how-document-fingerprinting-works"></a>Fonctionnement de l'empreinte numérique de document
 
-Vous avez probablement déjà deviner que les documents n’ont empreintes digitales réels, mais le nom explique la fonctionnalité. De la même manière que les empreintes digitales d’une personne possèdent des modèles uniques, les documents ont des modèles mot unique. Lorsque vous téléchargez un fichier, DLP identifie le modèle word unique dans le document, crée une empreinte numérique de document basée sur ce modèle et utilise cette empreinte numérique de document pour détecter les documents sortants contenant le même modèle. C’est pourquoi le téléchargement d’un formulaire ou modèle crée le type de l’empreinte numérique de document plus efficace. Toute personne qui remplit un formulaire utilise le même ensemble d’origine de mots et ajoute ensuite des mots son propre au document. Tant que le document sortant n’est pas protégé par mot de passe et contient tout le texte à partir du formulaire d’origine, DLP peut déterminer si le document correspond à l’empreinte numérique de document.
+Vous avez probablement déjà deviné que les documents n'ont pas d'empreintes digitales réelles, mais le nom vous permet d'expliquer la fonctionnalité. De la même manière que les empreintes digitales d'une personne ont des modèles uniques, les documents ont des modèles de mots uniques. Lorsque vous chargez un fichier, DLP identifie le modèle de mot unique dans le document, crée une empreinte numérique de document basée sur ce modèle et utilise cette empreinte numérique de document pour détecter les documents sortants contenant le même modèle. C'est pourquoi le téléchargement d'un formulaire ou d'un modèle crée le type d'empreinte numérique de document le plus efficace. Toute personne qui remplit un formulaire utilise le même ensemble d'origine de mots, puis ajoute ses propres mots au document. Tant que le document sortant n'est pas protégé par mot de passe et qu'il contient tout le texte du formulaire d'origine, DLP peut déterminer si le document correspond à l'empreinte numérique de document.
   
 L'exemple suivant montre ce qui se passe si vous créez une empreinte numérique de document basée sur un modèle de brevet, mais vous pouvez utiliser n'importe quel formulaire comme base pour la création d'une empreinte numérique de document.
   
 **Exemple d'un document de brevet correspondant à l'empreinte numérique de document d'un modèle de brevet**
 
-![Document_Fingerprinting_diagram.png](media/Document_Fingerprinting_diagram.png)
+![Document_Fingerprinting_diagram. png](media/Document_Fingerprinting_diagram.png)
   
-Le modèle de brevet contient les champs vides « Title brevet », « Inventeurs, » et « Description » et des descriptions pour chacun de ces champs, qui est le modèle word. Lorsque vous téléchargez le modèle de brevet d’origine, il est dans un des types de fichiers pris en charge et en texte brut. Convertit DLP ce modèle word dans une empreinte numérique de document, qui est une petite XML Unicode contenant une valeur de hachage unique représentant le texte d’origine et l’empreinte numérique du fichier est enregistré en tant qu’une classification des données dans Active Directory. (Comme mesure de sécurité, le document d’origine n’est pas stocké sur le service ; uniquement la valeur de hachage est stockée et le document d’origine ne peuvent pas être reconstruit à partir de la valeur de hachage.) L’empreinte numérique de brevet devient alors un type d’informations sensibles que vous pouvez associer à une stratégie DLP. Une fois que vous associez l’empreinte numérique à une stratégie DLP, DLP détecte les messages électroniques sortants contenant des documents qui correspondent à l’empreinte numérique de brevet et traite en fonction de la stratégie de votre organisation. 
+Le modèle brevet contient les champs vides «titre du brevet», «stocks» et «description», ainsi que les descriptions pour chacun de ces champs, c'est-à-dire le modèle Word. Lorsque vous téléchargez le modèle de brevet d'origine, il se trouve dans l'un des types de fichier pris en charge et en texte brut. DLP convertit ce modèle Word en empreinte digitale de document, qui est un petit fichier XML Unicode contenant une valeur de hachage unique représentant le texte d'origine, et l'empreinte digitale est enregistrée en tant que classification des données dans Active Directory. (Par mesure de sécurité, le document d'origine n'est pas stocké sur le service; seule la valeur de hachage est stockée et le document d'origine ne peut pas être reconstruit à partir de la valeur de hachage.) L'empreinte de brevet devient alors un type d'informations sensibles que vous pouvez associer à une stratégie DLP. Une fois que vous avez associé l'empreinte digitale à une stratégie DLP, DLP détecte tous les messages électroniques sortants contenant des documents qui correspondent à l'empreinte digitale du brevet et les traite en fonction de la stratégie de votre organisation. 
 
-Par exemple, vous pouvez souhaiter définir une stratégie DLP qui empêche les employés d’envoyer des messages sortants contenant des brevets. DLP utilisera l’empreinte numérique de brevet pour détecter des brevets et bloquer les messages électroniques. Autrement, vous souhaiterez laisser votre service juridique pour être en mesure d’envoyer des brevets à d’autres organisations, car il a une entreprise besoin pour cela. Vous pouvez autoriser des services spécifiques envoyer des informations sensibles en créant des exceptions de ces services dans votre stratégie DLP, ou vous pouvez les autoriser à remplacer un Conseil de stratégie avec une justification.
+Par exemple, vous pouvez configurer une stratégie DLP qui empêche les employés normaux d'envoyer des messages sortants contenant des brevets. DLP utilise l'empreinte digitale brevet pour détecter les brevets et bloquer ces e-mails. Vous pouvez également permettre à votre service juridique d'envoyer des brevets à d'autres organisations, car ils ont besoin d'une activité professionnelle. Vous pouvez autoriser des services spécifiques à envoyer des informations sensibles en créant des exceptions pour ces services dans votre stratégie DLP, ou vous pouvez leur permettre de remplacer un Conseil de stratégie par une justification professionnelle.
   
 ### <a name="supported-file-types"></a>Types de fichiers pris en charge
 
-Création d’empreintes de document prend en charge les mêmes types de fichier pris en charge dans les règles de transport. Pour obtenir la liste des types de fichiers pris en charge, voir [types de fichiers pris en charge pour l’analyse du contenu mail flow règle](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection). Une note rapide sur les types de fichier : règles de transport ni empreinte numérique de Document prend en charge le type de fichier .dotx, qui peut être source de confusion car il s’agit d’un fichier de modèle dans Word. Lorsque vous voyez le mot « modèle » dans cet article et autres rubriques empreinte numérique de Document, il fait référence à un document que vous avez établi comme un formulaire standard, pas le type de fichier de modèle.
+La création d'une empreinte numérique de document prend en charge les mêmes types de fichiers que ceux pris en charge dans les règles de flux de messagerie (également appelées règles de transport). Pour obtenir la liste des types de fichiers pris en charge, consultez la rubrique [types de fichiers pris en charge pour l'inspection du contenu des règles de flux de messagerie](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection). Une note rapide sur les types de fichiers: ni les règles de flux de messagerie, ni l'empreinte numérique de document ne prennent en charge le type de fichier. dotx, ce qui peut prêter à confusion car il s'agit d'un fichier de modèle dans Word. Lorsque le mot «modèle» apparaît dans cette rubrique et dans d'autres rubriques relatives à l'empreinte numérique de document, il fait référence à un document que vous avez établi en tant que formulaire standard, et non au type de fichier de modèle.
   
 #### <a name="limitations-of-document-fingerprinting"></a>Limites de l'empreinte numérique de document
 
-Création d’empreintes de document ne détectera pas d’informations sensibles dans les cas suivants :
+L'empreinte numérique de document ne détecte pas les informations sensibles dans les cas suivants:
   
 - Si les fichiers sont protégés par mot de passe
     
@@ -64,11 +64,11 @@ Création d’empreintes de document ne détectera pas d’informations sensible
     
 - Si les documents ne contiennent pas l'intégralité du texte du formulaire d'origine utilisé pour créer l'empreinte numérique de document
     
-## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>Utilisation de PowerShell pour créer un package de règles de classification basé sur l’empreinte numérique de document
+## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>Utiliser PowerShell pour créer un package de règles de classification basé sur l'empreinte numérique de document
 
-Notez que vous pouvez en créer une empreinte numérique de document uniquement à l’aide de PowerShell dans la sécurité &amp; centre de conformité. Pour vous connecter, voir [se connecter à Office 365 sécurité & PowerShell du centre de conformité](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Notez que vous pouvez créer une empreinte numérique de document uniquement à l'aide de PowerShell &amp; dans le centre de sécurité conformité. Pour vous connecter, voir [Connect to Office 365 Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-DLP utilise les packages de règles de classification pour détecter les contenus sensibles. Pour créer un package de règles de classification basé sur une empreinte numérique de document, utilisez les applets de commande **New-DlpFingerprint** et **New-DlpSensitiveInformationType** . Étant donné que les résultats de **New-DlpFingerprint** ne sont pas stockés en dehors de la règle de classification des données, vous toujours exécuter **New-DlpFingerprint** et **New-DlpSensitiveInformationType** ou **Set-DlpSensitiveInformationType** dans le même Session PowerShell. L’exemple suivant crée une nouvelle empreinte numérique de document basée sur le fichier C:\My Documents\Contoso Employee Template.docx. Vous stockez la nouvelle empreinte en tant que variable afin que vous pouvez l’utiliser avec l’applet de commande **New-DlpSensitiveInformationType** dans la même session PowerShell. 
+DLP utilise les packages de règles de classification pour détecter le contenu sensible. Pour créer un package de règles de classification basé sur une empreinte numérique de document, utilisez les cmdlets **New-DlpFingerprint** et **New-DlpSensitiveInformationType** . Étant donné que les résultats de **New-DlpFingerprint** ne sont pas stockés en dehors de la règle de classification des données, vous devez toujours exécuter **New-DlpFingerprint** et **New-DlpSensitiveInformationType** ou **Set-DlpSensitiveInformationType** dans le même Session PowerShell. L'exemple suivant crée une empreinte numérique de document basée sur le fichier C:\My Documents\Contoso Employee template. docx. Vous stockez la nouvelle empreinte en tant que variable afin de pouvoir l'utiliser avec la cmdlet **New-DlpSensitiveInformationType** dans la même session PowerShell. 
   
 ```
 $Employee_Template = Get-Content "C:\My Documents\Contoso Employee Template.docx" -Encoding byte -ReadCount 0
@@ -83,27 +83,27 @@ $Customer_Fingerprint = New-DlpFingerprint -FileData $Customer_Form -Description
 New-DlpSensitiveInformationType -Name "Contoso Customer Confidential" -Fingerprints $Customer_Fingerprint -Description "Message contains Contoso customer information." 
 ```
 
-Vous pouvez désormais utiliser l’applet de commande **Get-DlpSensitiveInformationType** pour rechercher tous les packages de règles de classification des données DLP et, dans cet exemple, « Contoso Customer Confidential » fait partie de la liste de packages de règles de classification des données. 
+Vous pouvez désormais utiliser l'applet de commande **Get-DlpSensitiveInformationType** pour rechercher tous les packages de règles de classification des données DLP et, dans cet exemple, «contoso Customer Confidential» fait partie de la liste des packages de règles de classification des données. 
   
-Enfin, ajoutez le package de règles de classification des données « Contoso Customer Confidential » à une stratégie DLP dans la sécurité &amp; centre de conformité. Cet exemple ajoute une règle à une stratégie DLP existante nommée « ConfidentialPolicy ».
+Enfin, ajoutez le package de règles de classification des données «Contoso Customer Confidential» à une stratégie &amp; DLP dans le centre de sécurité conformité. Cet exemple ajoute une règle à une stratégie DLP existante nommée «ConfidentialPolicy».
 
 ```
 New-DlpComplianceRule -Name "ContosoConfidentialRule" -Policy "ConfidentialPolicy" -ContentContainsSensitiveInformation @{Name="Contoso Customer Confidential"} -BlockAccess $True
 ```
 
-Vous pouvez également utiliser le package de règles de classification des données dans les règles de transport dans Exchange Online, comme illustré dans l’exemple suivant. Pour exécuter cette commande, vous devez d’abord [se connecter à Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Notez également que le temps requis pour le package de règles de synchronisation de la sécurité &amp; centre de conformité pour le centre d’administration Exchange.
+Vous pouvez également utiliser le package de règles de classification des données dans les règles de flux de messagerie dans Exchange Online, comme illustré dans l'exemple suivant. Pour exécuter cette commande, vous devez tout d'abord vous [connecter à Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Notez également que le package de règles doit être synchronisé entre le centre de sécurité &amp; et le centre d'administration Exchange.
   
 ```
 New-TransportRule -Name "Notify :External Recipient Contoso confidential" -NotifySender NotifyOnly -Mode Enforce -SentToScope NotInOrganization -MessageContainsDataClassification @{Name=" Contoso Customer Confidential"}
 
 ```
 
-DLP détecte désormais les documents qui correspondent à l’empreinte numérique de document Contoso Customer Form.docx.
+DLP détecte désormais les documents qui correspondent à l'empreinte numérique de document Customer Form. docx.
   
-Pour plus d’informations sur la syntaxe et les paramètres, voir :
+Pour obtenir des informations sur la syntaxe et les paramètres, voir:
 
-- [Nouvelle DlpFingerprint](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/New-DlpFingerprint)
-- [Nouvelle DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/New-DlpSensitiveInformationType)
+- [New-DlpFingerprint](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/New-DlpFingerprint)
+- [New-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/New-DlpSensitiveInformationType)
 - [Remove-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Remove-DlpSensitiveInformationType)
 - [Set-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Set-DlpSensitiveInformationType)
 - [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpSensitiveInformationType)

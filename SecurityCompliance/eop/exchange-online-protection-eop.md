@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: Voici quelques éléments que vous devez connaître avant de commencer à utiliser EOP.
-ms.openlocfilehash: 2535a796a0ac1548160545226586233af7b50080
-ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
+ms.openlocfilehash: fc5ea726de190395407952ceac69c4c682ac8f67
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "30206557"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341745"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection 
 
@@ -50,7 +50,7 @@ Le contenu de l'aide pour les administrateurs d'EOP se compose des catégories d
     
 - [Meilleures pratiques de configuration d'EOP](best-practices-for-configuring-eop.md) Décrit les paramètres de configuration recommandés et les éléments à prendre en compte une fois le service configuré et mis en service. 
     
-- [Stratégie et conformité de la messagerie dans EOP](messaging-policy-and-compliance-in-eop.md) Décrit la procédure d'utilisation des règles de transport Exchange (règles de filtrage personnalisées) pour appliquer la réglementation et les stratégies propres à l'organisation, ainsi que la procédure d'utilisation des rapports d'audit pour suivre les modifications de configuration apportées au service. 
+- [Stratégie et conformité de la messagerie dans EOP](messaging-policy-and-compliance-in-eop.md) Décrit comment utiliser des règles de flux de messagerie Exchange (également appelées règles de transport) pour appliquer des stratégies et des réglementations d'entreprise spécifiques, et comment utiliser les rapports d'audit pour suivre les modifications apportées à la configuration du service. 
     
 - [Anti-Spam and Anti-Malware Protection](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx) Décrit la filtrage du courrier indésirable et des programmes malveillants et ainsi que la procédure de personnalisation du filtrage afin de répondre aux besoins de votre organisation. Décrit également les tâches que les administrateurs et les utilisateurs finaux peuvent effectuer sur les messages en quarantaine. 
     

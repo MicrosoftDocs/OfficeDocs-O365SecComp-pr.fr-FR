@@ -14,27 +14,27 @@ search.appverid:
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
-description: Vous pouvez créer une règle de transport qui définit le seuil de probabilité de courrier indésirable (SCL) d'un message électronique. Le SCL mesure la probabilité qu'un message soit un courrier indésirable. Le courrier indésirable représente les messages électroniques non sollicités (et généralement indésirables). Le service prend différentes mesures en ce qui concerne le message en fonction de la notation SCL. Par exemple, vous pouvez contourner le filtrage de contenu de courrier indésirable pour les messages envoyés par des membres de votre organisation, car vous pensez qu'un message envoyé en interne par un collègue n'est pas un courrier indésirable. L'utilisation des règles de transport pour définir la valeur SCL d'un message vous offre un contrôle accru en matière de gestion du courrier indésirable.
-ms.openlocfilehash: dfce98aa9d4fec25a06674eb68d6e00ae2964e87
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+description: Les administrateurs peuvent apprendre à définir la valeur SCL des messages dans Exchange Online Protection.
+ms.openlocfilehash: 48569087fe8455dbb5500add435430ec8e78ea30
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275624"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341345"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Utilisation des règles de flux de courrier pour définir le seuil de probabilité de courrier indésirable (SCL) dans les messages
 
-Vous pouvez créer une règle de transport qui définit le seuil de probabilité de courrier indésirable (SCL) d'un message électronique. Le SCL mesure la probabilité qu'un message soit un courrier indésirable. Le courrier indésirable représente les messages électroniques non sollicités (et généralement indésirables). Le service prend différentes mesures en ce qui concerne le message en fonction de la notation SCL. Par exemple, vous pouvez contourner le filtrage de contenu de courrier indésirable pour les messages envoyés par des membres de votre organisation, car vous pensez qu'un message envoyé en interne par un collègue n'est pas un courrier indésirable. L'utilisation des règles de transport pour définir la valeur SCL d'un message vous offre un contrôle accru en matière de gestion du courrier indésirable. 
+Vous pouvez créer une règle de flux de messagerie (également appelée règle de transport) qui définit le seuil de probabilité de courrier indésirable (SCL) d'un message électronique. Le SCL est une mesure de la probabilité qu'un message soit du courrier indésirable. Le courrier inDésirable est des messages électroniques non sollicités (et généralement indésirables). Le service effectue une action différente sur un message en fonction de sa valeur SCL. Par exemple, vous pouvez ignorer le filtrage du contenu du courrier indésirable pour les messages envoyés par des personnes au sein de votre organisation, car vous faites confiance à un message envoyé en interne par un collègue n'est pas du courrier indésirable. La définition de la valeur SCL d'un message à l'aide de règles de flux de messagerie vous permet de contrôler le traitement du courrier indésirable. 
   
  **Ce qu'il faut savoir avant de commencer**
   
 - Durée estimée de la procédure : 10 minutes.
     
-- Des autorisations doivent vous être attribuées avant de pouvoir effectuer cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée «règles de transport» dans Feature perMissions [in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) ou permissions [in EOP](eop/feature-permissions-in-eop.md). 
+- Des autorisations doivent vous être attribuées avant de pouvoir effectuer cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée «règles de flux de messagerie» dans [autorisations des fonctionnalités dans Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) ou [autorisations des fonctionnalités dans EOP](eop/feature-permissions-in-eop.md). 
     
-- Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013 **Keyboard shortcuts in Exchange 2013**.
+- Pour obtenir des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, reportez-vous à l’article **Raccourcis clavier dans le Centre d’administration Exchange**.
     
-### <a name="to-create-a-transport-rule-that-sets-the-scl-of-a-message"></a>Pour créer une règle de transport définissant la valeur SCL d'un message
+### <a name="to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>Pour créer une règle de flux de messagerie qui définit la valeur SCL d'un message
 
 1. Dans le Centre d'administration Exchange (CAE), choisissez **Flux de messagerie** \> **Règles**.
     
@@ -64,7 +64,7 @@ Vous pouvez créer une règle de transport qui définit le seuil de probabilité
 7. Spécifiez des propriétés supplémentaires pour la règle, puis choisissez **enregistrer**.
     
     > [!TIP]
-    > Pour plus d'informations sur les propriétés supplémentaires que vous pouvez sélectionner ou spécifier pour cette règle, voir [Use the EAC to create a transport rule](http://technet.microsoft.com/library/e7a81372-b6d7-4d1f-bc9e-a845a7facac2.aspx#CreateEAC). 
+    > Pour plus d'informations sur les propriétés supplémentaires que vous pouvez sélectionner ou spécifier pour cette règle, reportez-vous [à la rubrique utiliser le centre d'administration Exchange pour créer des règles de flux de messagerie](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures#use-the-eac-to-create-mail-flow-rules). 
   
 ## <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 

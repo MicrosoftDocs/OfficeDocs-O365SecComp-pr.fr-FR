@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: Avec une stratégie de protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365, vous pouvez identifier, surveiller et protéger automatiquement les informations sensibles dans Office 365.
-ms.openlocfilehash: bf30e7de625903c3cce53407901f627ef1345d66
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6f96d7150047190e3fec2894383cd56312cfd872
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218974"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341765"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Vue d’ensemble des stratégies de protection contre la perte de données
 
@@ -456,7 +456,7 @@ DLP évalue tout contenu pouvant être indexé. Pour plus d'informations sur les
 
 Lorsque vous créez une stratégie DLP qui inclut Exchange Online en tant qu'emplacement, la stratégie est synchronisée à partir du centre &amp; de sécurité conformité d'Office 365 vers Exchange Online, puis d'Exchange Online vers Outlook sur le Web et Outlook 2013 et versions ultérieures.
   
-Lorsqu'un message est composé dans Outlook, l'utilisateur peut voir les conseils de stratégie pendant que le contenu créé est évalué par rapport aux stratégies DLP. Et après l'envoi d'un message, il est évalué par rapport aux stratégies DLP dans le cadre d'un flux de messagerie, ainsi qu'avec les règles de transport et les stratégies DLP créées dans le centre d'administration Exchange (voir la section suivante pour plus d'informations). Les stratégies DLP analysent à la fois le message et les pièces jointes.
+Lorsqu'un message est composé dans Outlook, l'utilisateur peut voir les conseils de stratégie pendant que le contenu créé est évalué par rapport aux stratégies DLP. Et après l'envoi d'un message, il est évalué par rapport aux stratégies DLP dans le flux de messagerie, ainsi qu'avec les règles de flux de messagerie Exchange (également appelées règles de transport) et les stratégies DLP créées dans le centre d'administration Exchange (voir la section suivante pour plus d'informations). Les stratégies DLP analysent à la fois le message et les pièces jointes.
   
 ### <a name="policy-evaluation-in-the-office-2016-desktop-programs"></a>Évaluation des stratégies dans les programmes de bureau Office 2016
 

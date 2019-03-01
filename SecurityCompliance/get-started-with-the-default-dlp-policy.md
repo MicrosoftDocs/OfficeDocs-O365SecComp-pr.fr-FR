@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 description: Avant de créer votre première stratégie de protection contre la perte de données (DLP), DLP contribue à protéger vos informations sensibles à l'aide d'une stratégie par défaut. Cette stratégie par défaut et ses recommandations (illustrées ci-dessous) vous permettent de sécuriser votre contenu sensible en vous avertissant que des messages ou des documents contenant un numéro de carte de crédit ont été partagés avec une personne extérieure à votre organisation.
-ms.openlocfilehash: 25d42a7c7598a82fcf153ce05b64ee990e104b40
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 3182abcc825c8e27da83ebfb64ed8b2cba6ebcb3
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216584"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341315"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Prise en main de la stratégie DLP par défaut
 

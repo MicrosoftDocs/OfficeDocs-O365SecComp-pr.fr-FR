@@ -15,16 +15,16 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment activer le complément de message de rapport pour Outlook et Outlook sur le Web, pour des utilisateurs individuels ou l'ensemble de votre organisation.
-ms.openlocfilehash: 48bd8937622588bbf5a1e07b9d4341e937c5cf7f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: c184b7ac1baef297d65e6e93e4e7a085920d87b0
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217384"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341425"
 ---
 # <a name="enable-the-report-message-add-in"></a>Activer le complément Signaler le message
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Le complément de message de rapport pour Outlook et Outlook sur le Web permet aux utilisateurs de signaler facilement les messages électroniques, qu'ils soient fiables ou malveillants, à Microsoft et à ses filiales pour analyse. Microsoft utilise ces soumissions pour améliorer l'efficacité des technologies de protection de la messagerie. En outre, si votre organisation utilise [office 365 Advanced Threat Protection](office-365-atp.md) ou [Office 365 Threat Intelligence](office-365-ti.md), le complément Report message fournit à l'équipe de sécurité de votre organisation des informations utiles qu'elle peut utiliser pour examiner et mettre à jour stratégies de sécurité. 
 
