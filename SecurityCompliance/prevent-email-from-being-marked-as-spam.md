@@ -14,24 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
 description: Apprenez comment prévenir les faux positifs et éviter les courriels indésirables dans Office 365.
-ms.openlocfilehash: be6e534608544c8db7a33ae6ed6492d4f730a2a0
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 7d64beb5070b62640ce0af2e7f18ed8ea4199dda
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219414"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296887"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Empêcher le courrier d’être marqué comme courrier indésirable dans Office 365
 
  **Votre courrier est marqué comme courrier indésirable dans Office 365 ? Suivez ces conseils.**
   
-Exchange Online Protection (EOP) est un service cloud de filtrage des e-mails qui vous permet de protéger votre organisation contre le courrier indésirable et les programmes malveillants. Si vous avez des boîtes aux lettres dans Office 365, elles sont protégées automatiquement avec EOP, car cela fait partie des services inclus.
-
-EOP tente de filtrer les courriers indésirables pour débarrasser votre boîte de réception du contenu que vous ne voulez pas voir. Mais il arrive qu’EOP filtre des messages que vous voulez voir. Lorsqu'un message est incorrectement marqué comme courrier indésirable par le filtre anti-courrier indésirable, il s'agit d'un faux positif.
-
 Si vous obtenez un faux positif, merci de signaler le message à Microsoft à l’aide du [complément Utiliser la fonctionnalité de rapport d’un message](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). En outre, vous pouvez transférer le message *en tant que pièce jointe* à not_junk@office365.microsoft.com.
 
-    **Important** If you do not forward the messages as attachments, then the headers will be missing and we will be unable to improve the junk mail filtering in Office 365.
+**Important** Si vous ne pouvez pas transférer les messages en tant que pièces jointes, les en-têtes seront manquants et nous ne serons pas en mesure d’améliorer le filtrage du courrier indésirable dans Office 365.
     
 ## <a name="determine-the-reason-why-the-message-was-marked-as-spam"></a>Identifier pourquoi le message a été marqué comme courrier indésirable
 

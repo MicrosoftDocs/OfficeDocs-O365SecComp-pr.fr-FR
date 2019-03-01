@@ -1,39 +1,40 @@
 ---
 title: Réduire le courrier indésirable dans Office 365
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 6/7/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: Strat_O365_IP
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 07824c51-2c45-4005-8596-03c0d7c4ff2a
 description: Découvrez les méthodes fréquemment utilisées pour réduire le courrier indésirable dans Office 365.
-ms.openlocfilehash: fc7181333b9914673c9919d7132af99fec294773
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 0cc07d543618b154570231dcf1d45b39cfe20fec
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219924"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295507"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Réduire le courrier indésirable dans Office 365
 
  **Vous recevez trop de courrier indésirable dans Office 365 ? Suivez ces conseils.**
   
-De nombreux problèmes liés aux courriers indésirables dans Office 365 peuvent être résolus en [affichant les en-têtes de messages électroniques](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c) et en déterminant la cause du problème. Vous devez rechercher un en-tête nommé X-Forefront-Antispam-Report.
+Nous vous recommandons vivement de signaler les messages de faux négatifs en [à l’aide du complément Message rapport](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) Aidez-nous à améliorer notre filtres. En outre, vous pouvez transférer le message *tant que pièce jointe* junk@office365.microsoft.com ou phish@office365.microsoft.com (s’il s’agit hameçon).
 
-  S’il contient la chaîne SFV:NSPM, cela signifie qu’Exchange Online Protection (EOP) a analysé le message et ne l’a pas considéré comme un courrier indésirable. Si vous n’êtes pas d’accord, il s’agit d’un faux négatif. Nous vous recommandons vivement d’[utiliser le complément Signaler le message](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) afin de nous aider à améliorer nos filtres.
+>[Avertissement] Si vous pensez que le message est indésirable, il est dans le dossier courrier indésirable, qui ne doit pas être un problème. Si vous souhaitez ne figure pas dans la boîte aux lettres, vous devez modifier la stratégie anti-courrier indésirable pour mettre en quarantaine le message. Plus d’informations sur la mise en quarantaine un message est accessible dans [mise en quarantaine courriers électroniques dans Office 365](quarantine-email-messages.md).
 
-  Si cette valeur ne figure pas dans les en-têtes, cela peut signifier que le message n’a pas été soumis à l’analyse du courrier indésirable ou que le message a été ignoré en raison d’un problème de configuration. Dans ce cas, consultez les informations ci-dessous. 
-  
-Pour en savoir plus, consultez l’article relatif aux [en-têtes de messages anti-courrier indésirable](https://technet.microsoft.com/library/dn205071%28v=exchg.150%29.aspx).
+## <a name="fixing-allowed-spam"></a>Résolution du courrier indésirable autorisé
 
-## <a name="solutions-to-common-causes-of-getting-too-much-spam"></a>Solutions à appliquer en cas de courrier indésirable excessif
+Souvent, nous voyons que les clients obtiennent un courrier indésirable dans leur boîte de réception en raison de configurations incorrectes. Le plus courant consiste à configurer vos domaines dans une règle de transport à contourner les filtres ou répertoriant vos domaines dans la liste des expéditeurs/safe autorisés. Ce n’est pas bon, car ces messages ignorent le filtrage du courrier indésirable et pourraient sinon être capturés.  
+
+## <a name="solutions-to-other-common-causes-of-getting-too-much-spam"></a>Solutions à appliquer en cas de courrier indésirable excessif
 
 Pour éviter que vous receviez trop de courrier indésirable, Exchange Online Protection (EOP) exige que les administrateurs effectuent certaines tâches. Si vous n’êtes pas l’administrateur de votre client Office 365 et que vous recevez trop de courrier indésirable, nous vous recommandons de travailler avec votre administrateur sur ces tâches. Dans le cas contraire, vous pouvez passer directement à la section dédiée aux utilisateurs.
   
@@ -45,13 +46,11 @@ Pour éviter que vous receviez trop de courrier indésirable, Exchange Online Pr
     
     Quand le résultat s’affiche, la propriété Enable doit être définie sur True. Si elle est définie sur False, vous pouvez exécuter la commande Set-MailboxJunkEmailConfiguration pour la définir sur True.
     
-- **Vérifiez vos règles de flux de messagerie et vos listes d’expéditeurs autorisés** Vérifiez l’en-tête d’un message qui aurait dû être marqué comme courrier indésirable. Repérez la propriété SCL dans l’en-tête X-Forefront-Antispam-Report. Si la valeur SCL est égale à -1, cela signifie que le message a été autorisé et a contourné le filtre anti-courrier indésirable d’EOP. Examinez les règles de flux de messagerie, les listes vertes et la liste d’expéditeurs autorisés du destinataire. Consultez également l’article [Détecter et résoudre les problèmes de remise des messages en tant qu’administrateur d’Office 365 pour les entreprises](https://support.office.com/article/e7758b99-1896-41db-bf39-51e2dba21de6) pour savoir pourquoi un message a reçu une valeur SCL de -1. 
-    
-- **Créez des règles de flux de messagerie dans Exchange Server local** Si vous utilisez Exchange Online Protection, mais que vos boîtes aux lettres se trouvent dans l’environnement Exchange Server local, créez des règles de flux de messagerie dans l’environnement Exchange Server local. Consultez les [instructions relatives à EOP](https://technet.microsoft.com/library/ms.exch.eac.EditAntispamPolicy_SpamAction%28EXCHG.150%29.aspx?v=15.20.548.14&amp;l=1&amp;s=BPOS_S_E15_0).
+- **Créez des règles de flux de messagerie dans Exchange Server local** Si vous utilisez Exchange Online Protection, mais que vos boîtes aux lettres se trouvent dans l’environnement Exchange Server local, créez des règles de flux de messagerie dans l’environnement Exchange Server local. Consultez les [instructions relatives à EOP](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj900470(v=exchg.150)).
     
 - **Marquez le courrier en nombre comme courrier indésirable** Le courrier en nombre désigne le courrier auquel les utilisateurs peuvent être abonnés mais qui est considéré comme indésirable. Dans l’en-tête de messages X-Microsoft-Antispam, recherchez la propriété BCL (seuil de probabilité de courrier en nombre). Si cette valeur est inférieure au seuil défini dans le filtre anti-courrier indésirable, nous vous recommandons d’ajuster ce seuil pour que ces messages en nombre soient marqués comme courrier indésirable. Les utilisateurs tolèrent différemment le courrier en nombre et ont différentes préférences concernant son [traitement](https://docs.microsoft.com/fr-FR/office365/SecurityCompliance/bulk-complaint-level-values). Vous pouvez créer des stratégies ou des règles différentes selon les préférences des utilisateurs. 
     
-- **Bloquez immédiatement un expéditeur** Si vous devez immédiatement bloquer un expéditeur, vous pouvez bloquer son adresse e-mail, son domaine ou son adresse IP. Consultez l’article sur le [blocage du courrier indésirable avec le filtre Office 365 pour éviter les faux négatifs](block-email-spam-to-prevent-false-negatives.md). Une entrée dans la liste verte d’un utilisateur final peut remplacer un blocage défini par l’administrateur.
+- **Bloquez immédiatement un expéditeur** Si vous devez immédiatement bloquer un expéditeur, vous pouvez bloquer son adresse e-mail, son domaine ou son adresse IP. Consultez l’article sur le [blocage du courrier indésirable avec le filtre Office 365 pour éviter les faux négatifs](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-transport-rule-that-blocks-messages-sent-from-a-domain-or-user). Une entrée dans la liste verte d’un utilisateur final peut remplacer un blocage défini par l’administrateur.
     
 - **Activez le complément Message de notification pour les utilisateurs** Nous vous recommandons vivement d’[activer le complément Message de notification pour vos utilisateurs](enable-the-report-message-add-in.md). En tant qu’administrateur, vous pouvez également consulter les commentaires envoyés par vos utilisateurs et utiliser des modèles pour ajuster les paramètres qui peuvent être à l’origine des problèmes.
     
