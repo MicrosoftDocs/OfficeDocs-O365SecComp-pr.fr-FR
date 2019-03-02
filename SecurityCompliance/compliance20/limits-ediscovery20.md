@@ -3,25 +3,23 @@ title: Limites avancées eDiscovery (aperçu)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: ''
-ms.openlocfilehash: db8972ef227fdd51248c36ca2c03c8ccfc7e05ea
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 2611205a41b9113c0ca30f787c119806d75f35c8
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30306553"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357355"
 ---
-# <a name="limits-in-advanced-ediscovery-preview"></a>Limites dans Advanced eDiscovery (aperçu)
+# <a name="limits-in-advanced-ediscovery-preview"></a>Limites dans Advanced eDiscovery (préversion)
 
 Cet article décrit les limites dans Advanced eDiscovery (Preview).
 

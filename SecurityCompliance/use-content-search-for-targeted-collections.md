@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Utilisez la recherche de contenu dans le centre &amp; de sécurité conformité Office 365 pour effectuer des collections ciblées. Une collection ciblée signifie que vous êtes sûr que les éléments réactifs à un cas ou des éléments privilégiés se trouvent dans une boîte aux lettres ou un dossier de site spécifique. Utilisez le script de cet article pour obtenir l'ID de dossier ou le chemin d'accès de la boîte aux lettres ou des dossiers de site spécifiques sur lesquels vous souhaitez effectuer une recherche.
-ms.openlocfilehash: c6e837e2f95b4f2ae3e32344f966f096407e360e
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 6c41069a268991553f03763ae80dea032d5db202
+ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296927"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30354686"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Utiliser la recherche de contenu dans Office 365 pour les collections ciblées
 
@@ -55,7 +55,7 @@ Le script que vous exécutez dans cette première étape renverra une liste de d
     
 - **Vos informations d'identification utilisateur** : le script utilisera vos informations d'identification pour se connecter à Exchange Online &amp; et au centre de sécurité conformité avec PowerShell à distance. Comme expliqué précédemment, vous devez disposer des autorisations appropriées pour exécuter ce script.
     
-Pour afficher la liste des dossiers de boîte aux lettres ou des noms de chemin d'accès aux sites:
+Pour afficher la liste des dossiers de boîte aux lettres ou documentlink de site (chemin d'accès), procédez comme suit:
   
 1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l'aide d'un suffixe de nom de fichier. ps1; par exemple, `GetFolderSearchParameters.ps1`.
     
@@ -66,9 +66,10 @@ Pour afficher la liste des dossiers de boîte aux lettres ou des noms de chemin 
   #      Online and who is an eDiscovery Manager in the Security &amp; Compliance Center.           #
   # The script will then:                                           #
   #    * If an email address is supplied: list the folders for the target mailbox.          #
-  #    * If a SharePoint or OneDrive for Business site is supplied: list the folder paths for the site. #
-  #    * In both cases, the script supplies the correct search properties (folderid: or path:)      #
-  #      appended to the folder ID or path ID to use in a Content Search.               #
+  #    * If a SharePoint or OneDrive for Business site is supplied: list the documentlinks (folder paths) #
+  #    * for the site.                                                                                  #
+  #    * In both cases, the script supplies the correct search properties (folderid: or documentlink:)  #
+  #      appended to the folder ID or documentlink to use in a Content Search.              #
   # Notes:                                              #
   #    * For SharePoint and OneDrive for Business, the paths are searched recursively; this means the   #
   #      the current folder and all sub-folders are searched.                       #
@@ -154,7 +155,7 @@ Pour afficher la liste des dossiers de boîte aux lettres ou des noms de chemin 
           {
               $rawUrl = $match.Value
               $rawUrl = $rawUrl -replace "Data Link: " -replace "," -replace "}"
-              Write-Host "path:""$rawUrl"""
+              Write-Host "DocumentLink:""$rawUrl"""
           }
       }
       else
@@ -196,18 +197,15 @@ L'exemple de l'étape 2 montre la requête utilisée pour rechercher le sous-dos
   
 ### <a name="script-output-for-site-folders"></a>Sortie du script pour les dossiers de site
 
-Si vous obtenez des chemins d'accès à partir de sites SharePoint ou OneDrive entreprise, le script se &amp; connecte au centre de sécurité conformité à l'aide de PowerShell à distance, crée une recherche de contenu qui recherche les dossiers sur le site, puis affiche une liste des dossiers. situé dans le site spécifié. Le script affiche le nom de chaque dossier et ajoute le préfixe du **chemin d'accès** (qui est le nom de la propriété de site) à l'URL du dossier. Étant donné que la propriété **path** est une propriété pouvant faire l'objet `path:<path>` d'une recherche, vous utiliserez dans une requête de recherche à l'étape 2 pour rechercher ce dossier. 
+Si vous obtenez documentlinks à partir de sites SharePoint ou OneDrive entreprise, le script se connecte au &amp; Centre de sécurité conformité à l'aide de PowerShell à distance, crée une recherche de contenu qui recherche les dossiers sur le site, puis affiche la liste des dossiers situés dans le site spécifié. Le script affiche le nom de chaque dossier et ajoute le préfixe du **chemin d'accès** (qui est le nom de la propriété de site) à l'URL du dossier. Étant donné que la propriété **path** est une propriété pouvant faire l'objet `path:<path>` d'une recherche, vous utiliserez dans une requête de recherche à l'étape 2 pour rechercher ce dossier. 
   
 Voici un exemple de la sortie renvoyée par le script pour les dossiers de site.
   
-![Exemple de la liste des noms de chemin d'accès pour les dossiers de site renvoyés par le script](media/519e8347-7365-4067-af78-96c465dc3d15.png)
+![Exemple de liste de noms documentlink pour les dossiers de site renvoyés par le script](media/519e8347-7365-4067-af78-96c465dc3d15.png)
   
-## <a name="step-2-use-a-folder-id-or-path-to-perform-a-targeted-collection"></a>Étape 2: utiliser un ID de dossier ou un chemin d'accès pour effectuer une collection ciblée
+## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>Étape 2: utiliser un ID de dossier ou documentlink pour effectuer une collection ciblée
 
-Une fois que vous avez exécuté le script pour collecter une liste des ID de dossiers ou des chemins d'accès pour un utilisateur spécifique, l'étape &amp; suivante consiste à accéder au centre de sécurité conformité et à créer une recherche de contenu pour rechercher un dossier spécifique. Vous utiliserez la `folderid:<folderid>` propriété `path:<path>` ou dans la requête de recherche que vous configurez dans la zone de mot clé de recherche de contenu (ou en tant que valeur du paramètre *ContentMatchQuery* si vous utilisez la cmdlet **New-ComplianceSearch** ). Vous pouvez combiner la `folderid` propriété `path` ou avec d'autres paramètres de recherche ou conditions de recherche. Si vous incluez uniquement `folderid` la `path` propriété ou dans la requête, la recherche renverra tous les éléments situés dans le dossier spécifié. 
-  
-> [!NOTE]
-> L'utilisation `path` de la propriété pour rechercher des emplacements OneDrive ne renverra pas les fichiers multimédias, tels que les fichiers. png,. TIFF ou. wav, dans les résultats de la recherche. 
+Une fois que vous avez exécuté le script pour collecter une liste d'ID de dossiers ou de documentlinks pour un utilisateur spécifique, l'étape suivante consiste &amp; à accéder au centre de sécurité conformité et à créer une recherche de contenu pour rechercher un dossier spécifique. Vous utiliserez la `folderid:<folderid>` propriété `documentlink:<path>` ou dans la requête de recherche que vous configurez dans la zone de mot clé de recherche de contenu (ou en tant que valeur du paramètre *ContentMatchQuery* si vous utilisez la cmdlet **New-ComplianceSearch** ). Vous pouvez combiner la `folderid` propriété `documentlink` ou avec d'autres paramètres de recherche ou conditions de recherche. Si vous incluez uniquement `folderid` la `documentlink` propriété ou dans la requête, la recherche renverra tous les éléments situés dans le dossier spécifié. 
   
 1. Accédez à [https://protection.office.com](https://protection.office.com).
     
@@ -227,17 +225,17 @@ Une fois que vous avez exécuté le script pour collecter une liste des ID de do
     
 6. Cliquez sur **Suivant**.
     
-7. Dans la zone mot clé de la page **que souhaitez-vous Rechercher** , collez la `folderid:<folderid>` valeur ou `path:<path>` qui a été renvoyée par le script à l'étape 1. 
+7. Dans la zone mot clé de la page **que souhaitez-vous Rechercher** , collez la `folderid:<folderid>` valeur ou `documentlink:<path>` qui a été renvoyée par le script à l'étape 1. 
     
     Par exemple, la requête de la capture d'écran suivante recherche tout élément dans le sous-dossier purges du dossier éléments récupérables de l'utilisateur (la valeur `folderid` de la propriété pour le sous-dossier purges est illustrée dans la capture d'écran de l'étape 1):
     
-    ![Collez la FolderId ou le chemin d'accès dans la zone mot clé de la requête de recherche.](media/84057516-b663-48a4-a78f-8032a8f8da80.png)
+    ![Coller le FolderId ou documentlink dans la zone mot clé de la requête de recherche](media/84057516-b663-48a4-a78f-8032a8f8da80.png)
   
 8. Cliquez sur **Rechercher** pour lancer la recherche cible de la collection. 
   
 ### <a name="examples-of-search-queries-for-targeted-collections"></a>Exemples de requêtes de recherche pour des collections ciblées
 
-Voici quelques exemples d'utilisation des propriétés `folderid` et `path` dans une requête de recherche pour effectuer une collection ciblée. Notez que les espaces réservés sont utilisés `folderid:<folderid>` pour `path:<path>` économiser de l'espace. 
+Voici quelques exemples d'utilisation des propriétés `folderid` et `documentlink` dans une requête de recherche pour effectuer une collection ciblée. Notez que les espaces réservés sont utilisés `folderid:<folderid>` pour `documentlink:<path>` économiser de l'espace. 
   
 - Cet exemple montre comment rechercher trois dossiers de boîte aux lettres différents. Vous pouvez utiliser une syntaxe de requête similaire pour effectuer une recherche dans les dossiers cachés dans le dossier éléments récupérables d'un utilisateur.
     
@@ -254,13 +252,13 @@ Voici quelques exemples d'utilisation des propriétés `folderid` et `path` dans
 - Cet exemple montre comment rechercher dans un dossier de site (et tous les sous-dossiers) les documents qui contiennent les lettres «NDA» dans le titre.
     
   ```
-  path:<path> AND filename:nda
+  documentlink:<path> AND filename:nda
   ```
 
 - Cet exemple recherche dans un dossier de site (et dans un sous-dossier) les documents qui ont été modifiés au cours d'une plage de dates.
     
   ```
-  path:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
+  documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
   
 ## <a name="more-information"></a>Plus d’informations
@@ -273,8 +271,6 @@ Lors de l'utilisation du script de cet article, vous devez tenir compte des poin
     
 - Lors de la recherche de dossiers de boîte aux lettres, seul le `folderid` dossier spécifié (identifié par sa propriété) est recherché. Les sous-dossiers ne feront pas l'objet d'une recherche. Pour rechercher des sous-dossiers, vous devez utiliser l'ID de dossier pour le sous-dossier dans lequel vous souhaitez effectuer la recherche. 
     
-- Lors de la recherche de dossiers de site, le dossier `path` (identifié par sa propriété) et tous les sous-dossiers feront l'objet d'une recherche. 
+- Lors de la recherche de dossiers de site, le dossier `documentlink` (identifié par sa propriété) et tous les sous-dossiers feront l'objet d'une recherche. 
     
-- Comme indiqué précédemment, vous ne pouvez `path` pas utiliser la propriété pour rechercher des fichiers multimédias, tels que des fichiers. png,. TIFF ou. wav, situés dans des emplacements OneDrive. Utilisez une autre [propriété de site](keyword-queries-and-search-conditions.md#searchable-site-properties) pour rechercher des fichiers multimédias dans les dossiers OneDrive. 
-
 - Lorsque vous exportez les résultats d'une recherche dans laquelle vous `folderid` avez spécifié la propriété uniquement dans la requête de recherche, vous pouvez choisir la première option d'exportation, «tous les éléments, sauf ceux dont le format n'est pas reconnu, sont chiffrés ou n'ont pas été indexés pour d'autres raisons». Tous les éléments du dossier sont toujours exportés, quel que soit leur état d'indexation, car l'ID de dossier est toujours indexé.

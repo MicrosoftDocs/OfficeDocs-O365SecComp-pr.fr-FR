@@ -12,13 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
+ms.collection:
+- M365-security-compliance
 description: Découvrez comment passer d'un rapport détaillé à un aperçu des actions recommandées dans le centre de &amp; sécurité conformité.
-ms.openlocfilehash: b0fdb3a75db8e3b18813193a5fa7c5523de16fe8
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 062ae0931e78b01e26fc0d723e6d6d2ad1c04095
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219084"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357585"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>Procédure pas à pas. D’un rapport détaillé à un aperçu
 

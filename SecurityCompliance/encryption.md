@@ -8,28 +8,30 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection:
-- M365-security-compliance
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+- Strat_O365_IP
 description: Avec Office 365, votre contenu est chiffré au repos et en transit, en utilisant le chiffrement, les protocoles et les technologies les plus puissants disponibles. Obtenez une vue d'ensemble du chiffrement dans Office 365.
-ms.openlocfilehash: 6371bc7fabfccfca30d1e8fec94d4f22c1c6f492
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 7099609ca142f6ed094ccafc95aab48059a1aa36
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223663"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357505"
 ---
 # <a name="encryption-in-office-365"></a>Chiffrement dans Office 365
 
 Le chiffrement est une partie importante de vos stratégies de protection des informations et de protection des informations. Lisez cet article pour obtenir une vue d'ensemble du chiffrement utilisé pour toutes les versions d'Office 365 et obtenir de l'aide sur les tâches de chiffrement, de la configuration du chiffrement de votre organisation à la protection par mot de passe des documents Office.
   
 - Si vous recherchez des informations sur les certificats et les technologies telles que TLS, consultez les [Détails de référence technique sur le chiffrement dans Office 365](technical-reference-details-about-encryption.md).
-    
+
 - Si vous recherchez des informations sur la façon de configurer ou de configurer le chiffrement pour votre organisation, consultez la rubrique [configurer le chiffrement dans Office 365 Enterprise](set-up-encryption.md).
-    
+
 ## <a name="what-is-encryption-and-how-does-it-work-in-office-365"></a>Qu'est-ce que le chiffrement et comment fonctionne-t-il dans Office 365?
 
 À un niveau élevé, le chiffrement est le processus de codage de vos données (appelé texte brut) en texte chiffré qui ne peut pas être utilisé par des personnes ou des ordinateurs sauf et jusqu'à ce que le texte chiffré soit déchiffré. Le déChiffrement nécessite une clé de chiffrement dont les utilisateurs autorisés disposent uniquement. Le chiffrement permet de garantir que seuls les destinataires autorisés peuvent déchiffrer votre contenu, comme les messages électroniques et les fichiers.
@@ -51,7 +53,7 @@ Avec Office 365, vous pouvez utiliser plusieurs couches et types de chiffrement 
 |Fichiers sur un appareil. Cela peut inclure les messages électroniques enregistrés dans un dossier, les documents Office enregistrés sur un ordinateur, une tablette ou un téléphone, ou les données enregistrées dans le Cloud Microsoft.  <br/> |BitLocker dans les centres de connaissances Microsoft. BitLocker peut également être utilisé sur les ordinateurs clients, tels que les ordinateurs Windows et les tablettes  <br/> Gestionnaire de clés distribuées (DKM) dans les centres de distribution Microsoft  <br/> Clé client pour Office 365  <br/> |[Centre informatique Windows: BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) <br/> [Centre de gestion de la confidentialité Microsoft: chiffrement](https://www.microsoft.com/en-us/TrustCenter/Security/Encryption) <br/> [Série de contrôles de sécurité du Cloud: chiffrement des données au repos](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Procédure de sécurisation des informations confidentielles dans votre courrier électronique dans Exchange Online](exchange-online-secures-email-secrets.md) <br/> [Contrôle de vos données dans Office 365 à l'aide de la Clé client](controlling-your-data-using-customer-key.md). <br/> |
 |Fichiers en transit entre les utilisateurs. Cela peut inclure des documents Office ou des éléments de liste SharePoint partagés entre les utilisateurs.  <br/> |TLS pour les fichiers en transit  <br/> |[Chiffrement de données dans OneDrive Entreprise et SharePoint Online](data-encryption-in-odb-and-spo.md) <br/> [Skype entreprise Online: sécurité et archivage](https://technet.microsoft.com/library/skype-for-business-online-security-and-archiving.aspx) <br/> |
 |Courrier électronique en transit entre les destinataires. Cela inclut le courrier électronique hébergé par Exchange Online.  <br/> |Chiffrement de messages Office 365 avec Azure Rights Management, S/MIME et TLS pour le courrier électronique en transit  <br/> |[Chiffrement de messages Office 365 (OME)](ome.md) <br/> [Chiffrement du courrier électronique dans Office 365](email-encryption.md) <br/> [Mode d’utilisation de TLS par Exchange Online pour sécuriser les connexions de messagerie dans Office 365](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
-   
+
 ## <a name="what-if-i-need-more-control-over-encryption-to-meet-security-and-compliance-requirements"></a>Qu'en est-il si j'ai besoin de plus de contrôle sur le chiffrement pour répondre aux exigences de sécurité et de conformité?
 
 Outre les solutions gérées par Microsoft de chiffrement de volume, de chiffrement de fichiers et de chiffrement de boîtes aux lettres dans Office 365, les options gérées par le client peuvent être utilisées pour répondre aux exigences de conformité et de sécurité plus strictes. De telles solutions utilisent Azure Rights Management (Azure RMS) avec Office 365.
@@ -59,11 +61,11 @@ Outre les solutions gérées par Microsoft de chiffrement de volume, de chiffrem
 Pour en savoir plus, consultez les ressources suivantes:
   
 - [Qu'est-ce que Azure Rights Management?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
-    
+
 - [Azure Rights Management dans le Centre d’administration Office 365](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
-    
+
 - [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
-    
+
 ## <a name="how-do-i"></a>Comment faire...
 
 |**Pour effectuer cette tâche**|**Voir les ressources suivantes**|
@@ -73,7 +75,7 @@ Pour en savoir plus, consultez les ressources suivantes:
 |Utiliser des messages chiffrés sur un appareil mobile  <br/> |[Afficher des messages chiffrés sur votre appareil Android](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [Afficher des messages chiffrés sur votre iPhone ou iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
 |Chiffrer un document à l'aide de la protection par mot de passe  <br/><br/>  Actuellement, la protection par mot de passe n'est pas prise en charge dans Office Online. Utiliser les versions de bureau de Word, Excel et PowerPoint pour la protection par mot de passe.           |[Ajouter ou supprimer la protection dans votre document, classeur ou présentation](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) (Choisissez une section **Ajouter une protection** , puis reportez-vous **à chiffrer avec mot de passe** )  <br/> |
 |Supprimer le chiffrement d'un document  <br/> |[Ajouter ou supprimer la protection dans votre document, classeur ou présentation](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) (Choisissez une section **protection contre la suppression** , puis voir supprimer le chiffrement du **mot de passe** )  <br/> |
-   
+
 ## <a name="related-topics"></a>Voir aussi
 
 [Planifier les fonctionnalités de protection des informations et de sécurité d'Office 365](https://support.office.com/article/3d4ac4a1-3920-4ff9-918f-011f3ce60408)

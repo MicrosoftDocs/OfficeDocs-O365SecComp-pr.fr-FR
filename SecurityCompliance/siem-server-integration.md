@@ -8,21 +8,22 @@ ms.topic: article
 ms.date: 10/29/2018
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- M365-security-compliance
 ms.custom:
 - Ent_Solutions
 - SIEM
 description: "Résumé: consultez cet article pour obtenir une vue d'ensemble de l'intégration de serveur SIEM à Microsoft 365."
-ms.openlocfilehash: 4b9b631ab27d777be610ed3b954acc7b2c3bdf50
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.openlocfilehash: 3f906fb082ec2c1a026940d2b5701a3d1fbec393
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241876"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357495"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>Intégration de serveur SIEM aux services et applications Microsoft 365
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Si votre organisation utilise un serveur de gestion des événements et des informations de sécurité (SIEM), ou si vous envisagez d'obtenir rapidement un serveur SIEM, vous vous demandez peut-être comment l'intégrer à votre Microsoft 365, y compris Office 365 Enterprise. La nécessité d'un serveur SIEM dépend de nombreux facteurs, tels que les exigences de sécurité de votre organisation. Microsoft 365 offre plusieurs fonctionnalités de sécurité; Toutefois, si votre organisation dispose de contenu et d'applications sur site et dans le Cloud (comme dans le cas d'un déploiement de Cloud hybride), vous pouvez envisager d'ajouter un serveur SIEM pour une protection supplémentaire. Ou, si votre organisation a des exigences de sécurité particulièrement rigoureuses que vous devez respecter, vous pouvez envisager d'ajouter un serveur SIEM à votre environnement.
 

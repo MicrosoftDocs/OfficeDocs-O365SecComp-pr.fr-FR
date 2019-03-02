@@ -7,14 +7,16 @@ ms.date: 01/23/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection:
+- M365-security-compliance
 localization_priority: Normal
 description: Préparez-vous pour le nouveau centre de sécurité Microsoft 365 et le centre de conformité
-ms.openlocfilehash: 6eb30c8439424a60b5cf02d55d771e11cf24ad10
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 662f953b9c9e60d2ce59fbde9de03cf973fa0b99
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214964"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357595"
 ---
 # <a name="get-ready-for-the-new-microsoft-365-security-center-and-microsoft-365-compliance-center"></a>Se préparer pour le nouveau Centre de sécurité Microsoft 365 et Centre de conformité Microsoft 365
 

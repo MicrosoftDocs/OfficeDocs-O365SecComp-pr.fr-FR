@@ -12,13 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f3724c6c-ec64-4a24-ba71-bfd68020d4d2
+ms.collection:
+- M365-security-compliance
 description: Découvrez comment vous pouvez vous déplacer d'un aperçu d'un rapport détaillé dans le &amp; Centre de conformité de la sécurité via un exemple de protection contre la perte de données.
-ms.openlocfilehash: 4b6fee45ebd48a0bd6d5c6c166fb200b28cb9442
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 101aeec71e724204018dee8d12d6c74a120578bf
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217324"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357415"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>Procédure pas à pas. D’un aperçu à un rapport détaillé
 

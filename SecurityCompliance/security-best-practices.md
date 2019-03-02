@@ -8,8 +8,6 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection:
-- M365-security-compliance
 search.appverid:
 - MOE150
 - MED150
@@ -17,13 +15,17 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 9295e396-e53d-49b9-ae9b-0b5828cdedc3
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+- Strat_O365_IP
 description: Réduisez le potentiel d'une violation de données ou d'un compte compromis en suivant ces meilleures pratiques recommandées.
-ms.openlocfilehash: ff91721569aae5a4982e3f1dd054575d00c278d8
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 97dffe6e0cf4551c9addc1ba53c4f95c7d88b3f3
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276124"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357525"
 ---
 # <a name="security-best-practices-for-office-365"></a>Meilleures pratiques de sécurité pour Office 365
 
@@ -46,37 +48,37 @@ Accès sécurisé à [https://SecureScore.office.com](https://SecureScore.office
 MFA ajoute une couche de protection supplémentaire à une stratégie de mot de passe fort en demandant aux utilisateurs d'accuser réception d'un appel téléphonique, d'un message texte ou d'une notification d'application sur leur téléphone intelligent après avoir entré correctement leur mot de passe. Avec l'authentification multiFACTEUR en place, les comptes d'utilisateur Office 365 sont toujours protégés contre les accès non autorisés même si le mot de passe d'un utilisateur est compromis. Les comptes sont protégés car l'accès n'est accordé à un compte qu'une fois que la demande supplémentaire a été satisfaite. Un mot de passe compromis ou volé n'est pas suffisant.
   
 - [Offre pour l'authentification multifacteur des déploiements Office 365](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
-    
+
 - [Configurer l’authentification multifacteur pour les utilisateurs d’Office 365](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
-    
+
 ## <a name="use-office-365-cloud-app-security"></a>Utilisation de la sécurité des applications Cloud Office 365
 
 ConFigurez des stratégies basées sur les besoins de votre entreprise pour suivre les activités anormales et agir sur celle-ci. ConFigurez les alertes avec la sécurité des applications Cloud Office 365 afin que les administrateurs puissent consulter les activités utilisateur inhabituelles ou risquées, telles que le téléchargement de grandes quantités de données, l'échec des tentatives de connexion multiples ou les connexions à partir d'une adresse IP inconnue ou dangereuse. Pour les organisations disposant d'un plan Office 365 Enterprise E5, vous pouvez commencer à utiliser Office 365 Cloud App Security immédiatement. Si vous avez un autre plan d'entreprise, vous pouvez acheter la sécurité des applications Cloud d'Office 365 en tant que module complémentaire.
   
 - [Vue d'ensemble de la sécurité des applications Cloud Office 365](office-365-cas-overview.md)
-    
+
 - [Activer la sécurité des applications cloud Office 365](turn-on-office-365-cas.md)
-    
+
 ## <a name="secure-mail-flow"></a>Flux de messagerie sécurisé
 
 Implémentez l'ensemble riche des fonctionnalités dans Exchange Online Protection et bénéficiez d'une plus grande fiabilité de l'identité de l'expéditeur de chaque message électronique, ainsi que de la protection contre les programmes malveillants inconnus, les virus et les URL malveillantes transmises par courrier électronique.
   
-- ConFigurez les stratégies de protection contre le courrier inDésirable pour votre organisation dans [Office 365](anti-spam-protection.md) . 
-    
+- ConFigurez les stratégies de protection contre le courrier inDésirable pour votre organisation dans [Office 365](anti-spam-protection.md) .
+
 - Découvrez, puis utilisez la [protection avancée contre les menaces pour les pièces jointes et les liens fiables](https://technet.microsoft.com/library/mt148491.aspx).
-    
+
 - [Ajoutez une protection contre les programmes malveillants à votre organisation](https://technet.microsoft.com/en-us/library/jj200669%28v=exchg.150%29.aspx).
-    
-- Découvrez et activez les [conseils de sécurité dans les messages électroniques dans Office 365](safety-tips-in-office-365.md) pour vos utilisateurs. 
-    
+
+- Découvrez et activez les [conseils de sécurité dans les messages électroniques dans Office 365](safety-tips-in-office-365.md) pour vos utilisateurs.
+
 - Si vous utilisez un domaine personnalisé pour votre organisation dans Office 365, configurez SPF, DKIM, puis DMARC pour valider le courrier électronique envoyé par votre organisation et empêcher l'usurpation:
-    
+
   - [Configurez SPF dans Office 365 pour éviter l'usurpation](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing).
-    
+
   - [Utilisez DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé dans Office 365](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing).
-    
+
   - [Utiliser DMARC pour valider les messages électroniques dans Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
-    
+
 ## <a name="enable-mailbox-audit-logging"></a>Activer l'enregistrement d'audit de boîte aux lettres
 
 Certains enregistrements d'audit sont automatiquement activés dans Office 365; Toutefois, l'enregistrement d'audit de boîte aux lettres n'est pas activé par défaut. Vous activez la journalisation d'audit pour toutes les boîtes aux lettres utilisateur dans Office 365 à l'aide d'Exchange Online PowerShell. Pour plus d'informations, consultez la rubrique [activation de l'audit des boîtes aux lettres dans Office 365](https://go.microsoft.com/fwlink/p/?LinkID=626109).
@@ -99,13 +101,11 @@ En tant qu'administrateur Office 365, vous pouvez utiliser le référentiel séc
 Consultez ces fonctionnalités de sécurité dans un abonnement d'évaluation Office 365 avant de les adopter en production.
   
 - [Création d'un abonnement d'évaluation Office 365](https://technet.microsoft.com/library/mt736406.aspx)
-    
-- [Configurer et tester l'authentification multiFACTEUR pour un compte d'utilisateur](https://technet.microsoft.com/library/mt492459.aspx)
-    
-- [Configurer et tester la sécurité des applications Cloud Office 365 pour vous informer de l'activité d'administration globale](https://technet.microsoft.com/library/mt757250.aspx)
-    
-- [Configurer et tester la protection avancée contre les menaces pour le courrier suspect](https://technet.microsoft.com/library/mt490479.aspx)
-    
-- Vérifiez le [score de sécurité Office 365](https://securescore.office.com/) pour votre abonnement à la version d'évaluation pour chacune des étapes ci-dessus. 
-    
 
+- [Configurer et tester l'authentification multiFACTEUR pour un compte d'utilisateur](https://technet.microsoft.com/library/mt492459.aspx)
+
+- [Configurer et tester la sécurité des applications Cloud Office 365 pour vous informer de l'activité d'administration globale](https://technet.microsoft.com/library/mt757250.aspx)
+
+- [Configurer et tester la protection avancée contre les menaces pour le courrier suspect](https://technet.microsoft.com/library/mt490479.aspx)
+
+- Vérifiez le [score de sécurité Office 365](https://securescore.office.com/) pour votre abonnement à la version d'évaluation pour chacune des étapes ci-dessus.

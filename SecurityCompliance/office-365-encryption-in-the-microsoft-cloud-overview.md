@@ -10,14 +10,16 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection:
+- Strat_O365_Enterprise
 - M365-security-compliance
+- Strat_O365_Enterprise
 description: Vue d'ensemble du chiffrement dans Microsoft Cloud.
-ms.openlocfilehash: 8d4b94908e9847062ff5f4612b8726b44a36a59f
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 36bb50cda5f39461401b14ca3e7ada77a6e2cc0d
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275944"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357515"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Chiffrement dans Microsoft Cloud
 
@@ -36,6 +38,7 @@ Conformément à la norme de sécurité opérationnelle de l'infrastructure à c
 FIPS 140-2 est une norme conçue spécifiquement pour la validation des modules de produit qui implémentent le chiffrement plutôt que les produits qui les utilisent. Les modules de chiffrement qui sont mis en œuvre au sein d'un service peuvent être certifiés conformes à la configuration requise pour la force de hachage, la gestion des clés et les autres. Toutes les fonctionnalités de chiffrement de temps sont utilisées pour protéger la confidentialité, l'intégrité ou la disponibilité des données dans les services Cloud de Microsoft, les modules et les chiffrements utilisés correspondent à la norme FIPS 140-2.
 
 Microsoft certifie les modules de chiffrement sous-jacents utilisés dans nos services Cloud avec chaque nouvelle version du système d'exploitation Windows:
+
 - Azure et le gouvernement des États-Unis Azure
 - Dynamics 365 et Dynamics 365 gouvernement américain
 - Office 365, Office 365 gouvernement américain et Office 365-défense du gouvernement américain
