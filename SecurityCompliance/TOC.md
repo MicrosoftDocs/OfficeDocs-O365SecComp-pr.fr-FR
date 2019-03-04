@@ -29,7 +29,7 @@
 ### [Créer une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés](protect-documents-that-have-fci-or-other-properties.md)
 ### [Afficher les rapports DLP](view-the-dlp-reports.md)
 ### [Créer une requête pour trouver des données sensibles stockées sur des sites](form-a-query-to-find-sensitive-data-stored-on-sites.md)
-### [Fonctionnement du DLP entre le Centre de sécurité et conformité et le Centre d’administration Exchange](how-dlp-works-between-admin-centers.md)
+### [Fonctionnement du DLP entre le Centre de sécurité et conformité et le Centre d’administration Exchange](how-dlp-works-between-admin-centers.md)
 ## Utiliser les types d’informations sensibles
 ### [Éléments recherchés par les types d’informations sensibles](what-the-sensitive-information-types-look-for.md)
 ### [Éléments recherchés par les fonctions DLP](what-the-dlp-functions-look-for.md)
@@ -89,7 +89,7 @@
 
 # [Se protéger contre les menaces](protect-against-threats.md)
 ## [Protection contre le courrier indésirable et les programmes malveillants](anti-spam-and-anti-malware-protection.md)
-### [Vidéos pour la prise en main de la protection de votre courrier électronique](videos-for-getting-started-with-protecting-your-email.md)
+### [Présentation d’Exchange Online Protection](videos-for-getting-started-with-protecting-your-email.md)
 ### [Protection contre le courrier indésirable pour Office 365](anti-spam-protection.md)
 ### [Éviter que le courrier ne soit marqué comme courrier indésirable dans Office 365](prevent-email-from-being-marked-as-spam.md)
 ### [Comment réduire le courrier indésirable dans Office 365](reduce-spam-email.md)
@@ -501,8 +501,8 @@
 ## [Flux de messagerie dans EOP](eop/mail-flow-in-eop.md)
 ### [Comment s’assurer qu’un message n’est pas marqué comme courrier indésirable](how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md)
 ### [Règles de flux de messagerie (règles de transport)](eop/mail-flow-rules-transport-rules-0.md)
-### [Utiliser les règles de transport pour configurer le filtrage du courrier en nombre](use-transport-rules-to-configure-bulk-email-filtering.md)
-### [Utiliser des règles de flux de courrier pour voir ce que vos utilisateurs ont signalé à Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)
+### [Utiliser les règles de flux de messagerie pour configurer le filtrage du courrier en nombre](use-transport-rules-to-configure-bulk-email-filtering.md)
+### [Utiliser des règles de flux de messagerie pour voir ce que vos utilisateurs ont signalé à Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)
 ### [Réduction des menaces de programmes malveillants par le biais du blocage des pièces jointes](eop/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 ### [Création de rapports et suivi des messages](eop/reporting-and-message-trace-in-exchange-online-protection.md)
 ### [Rechercher et supprimer des messages](search-for-and-delete-messagesadmin-help.md)
