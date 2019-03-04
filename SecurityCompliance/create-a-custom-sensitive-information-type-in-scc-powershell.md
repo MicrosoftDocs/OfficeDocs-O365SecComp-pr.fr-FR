@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 82c382a5-b6db-44fd-995d-b333b3c7fc30
 description: Découvrez comment créer et importer un type d’informations sensibles personnalisé pour DLP dans le Centre de Conformité et Sécurité Office 365.
-ms.openlocfilehash: 1f94da09bd455a82c9b9d7c5cf12e91de3a1ad29
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: b6289b962211bbe1764e2b6e3b4f08900cb6abd8
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223303"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341515"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-office-365-security--compliance-center-powershell"></a>Création d’un type personnalisé d’informations sensibles dans le Centre de Conformité et Sécurité Office 365 PowerShell
 
@@ -319,9 +319,9 @@ Lorsque vous avez terminé, votre élément RulePack doit ressembler à ce qui s
   
 ## <a name="changes-for-exchange-online"></a>Modifications pour Exchange Online
 
-Auparavant, vous utilisiez peut-être Exchange Online PowerShell pour importer vos types d’informations sensibles personnalisés pour DLP. Désormais, vos types d’informations sensibles personnalisés peuvent être utilisés dans le Centre d’administration Exchange et le Centre de sécurité &amp; conformité. Dans le cadre de cette amélioration, vous devez utiliser le Centre de sécurité &amp; conformité PowerShell pour importer vos types d’informations sensibles personnalisés (vous ne pouvez plus les importer à partir d’Exchange PowerShell). Vos types d’informations sensibles personnalisés continueront de fonctionner comme avant ; cependant, l’affichage des modifications apportées aux types d’informations sensibles personnalisés dans le Centre de sécurité &amp; conformité dans le Centre d’administration Exchange peut prendre jusqu’à une heure.
+Auparavant, vous utilisiez peut-être Exchange Online PowerShell pour importer vos types d’informations sensibles personnalisés pour DLP. Désormais, vos types d’informations sensibles personnalisés peuvent être utilisés dans le Centre d’administration Exchange et le Centre de sécurité et de conformité. Dans le cadre de cette amélioration, vous devez utiliser le Centre de sécurité et de conformité PowerShell pour importer vos types d’informations sensibles personnalisés (vous ne pouvez plus les importer à partir d’Exchange PowerShell). Vos types d’informations sensibles personnalisés continueront de fonctionner comme avant. Cependant, l’affichage des modifications apportées aux types d’informations sensibles personnalisés dans le Centre de sécurité et de conformité dans le Centre d’administration Exchange peut prendre jusqu’à une heure.
   
-Notez que dans le Centre de sécurité &amp; conformité, vous utilisez la cmdlet `DlpSensitiveInformationTypeRulePackage` pour charger un package de règles. Auparavant, dans le Centre d’administration Exchange, vous utilisiez la cmdlet `ClassificationRuleCollection`. 
+Dans le Centre de sécurité et de conformité, vous pouvez utiliser la cmdlet `DlpSensitiveInformationTypeRulePackage` pour charger un package de règles. Auparavant, dans le Centre d’administration Exchange, vous utilisiez la cmdlet `ClassificationRuleCollection`. 
   
 ## <a name="upload-your-rule-package"></a>Télécharger votre package de règles
 

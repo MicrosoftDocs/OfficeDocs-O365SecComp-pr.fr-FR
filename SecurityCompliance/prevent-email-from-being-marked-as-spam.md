@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
 description: Apprenez comment prévenir les faux positifs et éviter les courriels indésirables dans Office 365.
-ms.openlocfilehash: 7d64beb5070b62640ce0af2e7f18ed8ea4199dda
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 10d71519da1639073122b0a89652753f466f6dbe
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296887"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341475"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Empêcher le courrier d’être marqué comme courrier indésirable dans Office 365
 
@@ -41,7 +41,7 @@ Dans l’en-tête, repérez les titres et les valeurs suivantes.
 
 - **SFV:BLK** Indique que le message a été marqué comme courrier indésirable, car l’adresse d’envoi figure dans la liste des expéditeurs bloqués du destinataire. 
     
-- **SFV:SKS** Indique que le message a été marqué comme courrier indésirable avant le filtrage du contenu. Cela peut signifier qu’une règle de transport a marqué le message comme courrier indésirable. Exécutez un suivi des messages pour vérifier si une règle de transport s’est déclenchée et aurait pu configurer un seuil de probabilité de courrier indésirable élevé (SCL). 
+- **SFV:SKS** Indique que le message a été marqué comme courrier indésirable avant le filtrage du contenu. Cela peut signifier qu’une règle de flux de messagerie (également appelée règle de transport) a marqué le message comme courrier indésirable. Exécutez un suivi des messages pour vérifier si une règle de transport s’est déclenchée et aurait pu configurer un seuil de probabilité de courrier indésirable élevé (SCL). 
     
 - **SFV:SKB** Indique que le message a été marqué comme courrier indésirable, car il correspond à une liste d’expéditeurs bloqués dans la stratégie de filtrage du courrier indésirable. 
     
@@ -59,7 +59,7 @@ Pour travailler efficacement, Exchange Online Protection (EOP) exige que les adm
   
 ### <a name="for-admins"></a>Pour les administrateurs
 
-- **Pointez vos enregistrements DNS vers Office 365** Pour qu’EOP vous protège efficacement du courrier indésirable, les enregistrements DNS de votre serveur de messagerie (MX) pour tous les domaines doivent pointer vers Office 365 uniquement. Si votre MX ne pointe pas vers Office 365, EOP ne filtre pas le courrier indésirable pour vos utilisateurs. Si vous voulez utiliser un autre service ou dispositif pour filtrer le courrier indésirable dans votre domaine, pensez à désactiver la protection contre le courrier indésirable dans EOP. Pour cela, vous pouvez créer une règle de transport qui définit la valeur SCL sur -1. Si, plus tard, vous décidez d’utiliser EOP, pensez à supprimer cette règle de transport. 
+- **Pointez vos enregistrements DNS vers Office 365** Afin qu’EOP vous protège efficacement du courrier indésirable, les enregistrements DNS de votre serveur de messagerie (MX) pour tous les domaines doivent pointer vers Office 365 uniquement. Si votre MX ne pointe pas vers Office 365, EOP ne filtre pas le courrier indésirable pour vos utilisateurs. Si vous voulez utiliser un autre service ou dispositif pour filtrer le courrier indésirable dans votre domaine, pensez à désactiver la protection contre le courrier indésirable dans EOP. Pour cela, vous pouvez créer une règle de flux de messagerie qui définit la valeur SCL sur -1. Si vous décidez ultérieurement d’utiliser EOP, pensez à supprimer cette règle de flux de messagerie. 
     
 - **Activez le complément Message de notification pour les utilisateurs** Nous vous recommandons vivement d’[activer le complément Message de notification pour vos utilisateurs](enable-the-report-message-add-in.md). En tant qu’administrateur, vous pouvez également consulter les commentaires envoyés par vos utilisateurs et utiliser des modèles pour ajuster les paramètres qui peuvent être à l’origine des problèmes.
     

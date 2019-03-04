@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 07824c51-2c45-4005-8596-03c0d7c4ff2a
 description: Découvrez les méthodes fréquemment utilisées pour réduire le courrier indésirable dans Office 365.
-ms.openlocfilehash: 0cc07d543618b154570231dcf1d45b39cfe20fec
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: e1915bd51fcda8b587f3a7f248dc54fa18941c7d
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295507"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30340885"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Réduire le courrier indésirable dans Office 365
 
@@ -28,11 +28,12 @@ ms.locfileid: "30295507"
   
 Nous vous recommandons vivement de signaler les messages de faux négatifs en [à l’aide du complément Message rapport](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) Aidez-nous à améliorer notre filtres. En outre, vous pouvez transférer le message *tant que pièce jointe* junk@office365.microsoft.com ou phish@office365.microsoft.com (s’il s’agit hameçon).
 
->[Avertissement] Si vous pensez que le message est indésirable, il est dans le dossier courrier indésirable, qui ne doit pas être un problème. Si vous souhaitez ne figure pas dans la boîte aux lettres, vous devez modifier la stratégie anti-courrier indésirable pour mettre en quarantaine le message. Plus d’informations sur la mise en quarantaine un message est accessible dans [mise en quarantaine courriers électroniques dans Office 365](quarantine-email-messages.md).
+> [!TIP]
+> Si vous pensez qu’il s’agit d’un message indésirable et qu’il se trouve dans le dossier Courrier indésirable, cela ne devrait pas poser de problème. Si vous ne voulez pas le voir dans la boîte de réception, vous devez modifier la stratégie anti-courrier indésirable pour mettre le message en quarantaine. Pour plus d’informations sur la mise en quarantaine d’un message, consultez l’article relatif à la [mise en quarantaine des courriers électroniques dans Office 365](quarantine-email-messages.md).
 
 ## <a name="fixing-allowed-spam"></a>Résolution du courrier indésirable autorisé
 
-Souvent, nous voyons que les clients obtiennent un courrier indésirable dans leur boîte de réception en raison de configurations incorrectes. Le plus courant consiste à configurer vos domaines dans une règle de transport à contourner les filtres ou répertoriant vos domaines dans la liste des expéditeurs/safe autorisés. Ce n’est pas bon, car ces messages ignorent le filtrage du courrier indésirable et pourraient sinon être capturés.  
+Souvent, les clients reçoivent des courriers indésirables dans leur boîte de réception en raison de configurations incorrectes. Le plus souvent, les domaines sont configurés dans une règle de flux de messagerie (également connue sous le nom de règle de transport) de sorte à contourner des filtres ou ils sont ajoutés à la liste des expéditeurs autorisés/approuvés. Cette configuration est incorrecte, car les messages ne sont pas filtrés par le filtre anti-courrier indésirable, alors qu’ils auraient pu être détectés par ailleurs.  
 
 ## <a name="solutions-to-other-common-causes-of-getting-too-much-spam"></a>Solutions à appliquer en cas de courrier indésirable excessif
 
@@ -50,7 +51,7 @@ Pour éviter que vous receviez trop de courrier indésirable, Exchange Online Pr
     
 - **Marquez le courrier en nombre comme courrier indésirable** Le courrier en nombre désigne le courrier auquel les utilisateurs peuvent être abonnés mais qui est considéré comme indésirable. Dans l’en-tête de messages X-Microsoft-Antispam, recherchez la propriété BCL (seuil de probabilité de courrier en nombre). Si cette valeur est inférieure au seuil défini dans le filtre anti-courrier indésirable, nous vous recommandons d’ajuster ce seuil pour que ces messages en nombre soient marqués comme courrier indésirable. Les utilisateurs tolèrent différemment le courrier en nombre et ont différentes préférences concernant son [traitement](https://docs.microsoft.com/fr-FR/office365/SecurityCompliance/bulk-complaint-level-values). Vous pouvez créer des stratégies ou des règles différentes selon les préférences des utilisateurs. 
     
-- **Bloquez immédiatement un expéditeur** Si vous devez immédiatement bloquer un expéditeur, vous pouvez bloquer son adresse e-mail, son domaine ou son adresse IP. Consultez l’article sur le [blocage du courrier indésirable avec le filtre Office 365 pour éviter les faux négatifs](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-transport-rule-that-blocks-messages-sent-from-a-domain-or-user). Une entrée dans la liste verte d’un utilisateur final peut remplacer un blocage défini par l’administrateur.
+- **Bloquez immédiatement l’expéditeur** Si vous devez bloquer immédiatement un expéditeur, vous pouvez le faire en fonction de son adresse e-mail, domaine ou adresse IP. Reportez-vous à la section [Utilisation du Centre d’administration Exchange pour créer une règle de flux de messagerie qui bloque les messages envoyés par un domaine ou un utilisateur](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-mail-flow-rule-that-blocks-messages-sent-from-a-domain-or-user). Une entrée de la liste verte d’un utilisateur final peut annuler un blocage défini par l’administrateur.
     
 - **Activez le complément Message de notification pour les utilisateurs** Nous vous recommandons vivement d’[activer le complément Message de notification pour vos utilisateurs](enable-the-report-message-add-in.md). En tant qu’administrateur, vous pouvez également consulter les commentaires envoyés par vos utilisateurs et utiliser des modèles pour ajuster les paramètres qui peuvent être à l’origine des problèmes.
     

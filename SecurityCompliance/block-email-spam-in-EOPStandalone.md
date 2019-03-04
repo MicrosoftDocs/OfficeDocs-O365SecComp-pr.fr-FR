@@ -16,12 +16,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: Document pour les administrateurs autonomes d’EOP afin d’éviter le courrier indésirable faux négatifs
-ms.openlocfilehash: c9b17704c514fd83f8c00a51fad76cddb26e378c
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 598f63bba4be32c6c664db83126b40c5fae159a0
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30306543"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341815"
 ---
 ## <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>Paramètres pour personnaliser le filtre anti-courrier indésirable Office 365
 
@@ -37,9 +37,9 @@ Personnalisez votre filtre anti-courrier indésirable Office 365 en ajoutant l�
     
 3. Ajoutez l’adresse IP à la liste d’adresses IP bloquées en suivant les étapes décrites dans la section « Utilisation du Centre d’administration Exchange (CAE) pour modifier la stratégie par défaut de filtrage des connexions », dans l’article [Configuration de la stratégie de filtrage des connexions](https://technet.microsoft.com/fr-FR/library/jj200718%28v=exchg.150%29.aspx).
     
-### <a name="block-bulk-mail-with-transport-rules-or-the-spam-filter"></a>Blocage du courrier en nombre à l’aide des règles de transport ou du filtre anti-courrier indésirable
+### <a name="block-bulk-mail-with-mail-flow-rules-transport-rules-or-the-spam-filter"></a>Blocage du courrier en nombre à l’aide des règles de flux de messagerie (règles de transport) ou du filtre anti-courrier indésirable
 
-Le courrier indésirable que vous recevez comprend essentiellement du courrier en nombre, par exemple des bulletins d’informations ou des promotions ? Vous pouvez personnaliser le filtre anti-courrier indésirable dans Office 365 si vous [utilisez les règles de transport pour filtrer le courrier en nombre de façon restrictive](https://technet.microsoft.com/fr-FR/library/dn720438%28v=exchg.150%29.aspx) ou activez le paramètre **Courrier en nombre** dans les [options de filtrage avancé du courrier indésirable](https://technet.microsoft.com/fr-FR/library/jj200750%28v=exchg.150%29.aspx) de votre filtre anti-courrier indésirable. Dans le Centre d’administration Exchange, cliquez sur **Protection** \> **Filtrage du contenu**, puis double-cliquez sur la stratégie de filtrage à ajuster. Cliquez sur **Actions du courrier indésirable** pour ajuster les paramètres, comme illustré ci-dessous. 
+Le courrier indésirable que vous recevez comprend essentiellement du courrier en nombre, par exemple des bulletins d’informations ou des promotions ? Vous pouvez personnaliser le filtre anti-courrier indésirable dans Office 365 si vous [utilisez les règles de flux de messagerie pour configurer le filtrage du courrier en nombre](use-transport-rules-to-configure-bulk-email-filtering.md) ou activez le paramètre **Courrier en nombre** dans les [options de filtrage avancé du courrier indésirable](advanced-spam-filtering-asf-options.md) de votre filtre anti-courrier indésirable. Dans le Centre d’administration Exchange, cliquez sur **Protection** \> **Filtrage du contenu**, puis double-cliquez sur la stratégie de filtrage à ajuster. Cliquez sur **Actions du courrier indésirable** pour ajuster les paramètres, comme illustré ci-dessous. 
   
 ![Définition du filtre de courrier en nombre dans Exchange Online](media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
   
