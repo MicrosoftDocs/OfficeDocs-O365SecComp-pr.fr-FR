@@ -8,15 +8,19 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.collection:
+- Ent_O365
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Vous guide tout au long de la configuration recommandée pour les paramètres à l'échelle du client qui affectent la sécurité de votre environnement Office 365. Vos besoins en matière de sécurité peuvent nécessiter plus ou moins de sécurité. Utilisez ces recommandations comme point de départ.
-ms.openlocfilehash: b94d894770462adc317f3307bfb16d5f643dfa14
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 249ccda6bdd474c853dc5e1941d49ea182e2dad1
+ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341505"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30373925"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Configurer votre client Office 365 pour une sécurité accrue
 
