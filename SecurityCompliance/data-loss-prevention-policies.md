@@ -5,26 +5,25 @@ author: stephow-MSFT
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MET150
-ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: Avec une stratégie de protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365, vous pouvez identifier, surveiller et protéger automatiquement les informations sensibles dans Office 365.
-ms.openlocfilehash: 6f96d7150047190e3fec2894383cd56312cfd872
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 53f9e3b4fca296c35d4c07b912a9bd1d41e62fc8
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341765"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410869"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Vue d’ensemble des stratégies de protection contre la perte de données
 
-Pour se conformer aux normes et aux réglementations sectorielles, les organisations doivent protéger les informations sensibles et empêcher toute divulgation involontaire. Des exemples d'informations sensibles dont vous pouvez empêcher la fuite en dehors de votre organisation incluent des données financières ou des informations d'identification personnelle, telles que des numéros de carte de crédit, des numéros de sécurité sociale ou des enregistrements d'intégrité. Avec une stratégie de protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365, vous pouvez identifier, surveiller et protéger automatiquement les informations sensibles dans Office 365.
+Pour respecter les normes de l'entreprise et les réglementations du secteur, les organisations doivent protéger les informations sensibles et empêcher leur divulgation accidentelle. Voici quelques exemples d’informations sensibles dont la communication à l’extérieur de votre organisation devrait être évitée : données financières, informations d’identification personnelle (PII) telles que les numéros de carte de crédit, les numéros de sécurité sociale ou les dossiers médicaux. Avec une stratégie de protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365, vous pouvez identifier, surveiller et protéger automatiquement les informations sensibles dans Office 365.
   
 Avec une stratégie DLP, vous pouvez :
   
@@ -38,15 +37,15 @@ Avec une stratégie DLP, vous pouvez :
     
 - **Surveiller et protéger les informations sensibles dans les versions de bureau d’Excel 2016, de PowerPoint 2016 et de Word 2016**
     
-    Tout comme dans Exchange Online, SharePoint Online et OneDrive entreprise, ces programmes de bureau Office 2016 incluent les mêmes fonctionnalités pour identifier les informations sensibles et appliquer des stratégies DLP. DLP assure une surveillance continue lorsque des personnes partagent du contenu dans ces programmes Office 2016.
+    Tout comme dans Exchange Online, SharePoint Online et OneDrive entreprise, ces programmes de bureau Office 2016 incluent les mêmes fonctionnalités pour identifier les informations sensibles et appliquer des stratégies DLP. DLP assure une surveillance continue en cas de partage de contenu dans ces programmes Office 2016.
     
-- **aider les utilisateurs à respecter les règles de conformité sans interrompre leur flux de travail ; et**
+- **Aider les utilisateurs à découvrir comment assurer la conformité sans interrompre leur flux de travail**
     
-    Vous pouvez informer vos utilisateurs des stratégies DLP et les aider à rester conformes sans bloquer leur travail. Par exemple, si un utilisateur tente de partager un document contenant des informations sensibles, une stratégie DLP peut à la fois envoyer une notification par courrier électronique et lui montrer un Conseil de stratégie dans le contexte de la bibliothèque de documents qui lui permet de remplacer la stratégie si elle a une entreprise justifié. Les mêmes conseils de stratégie s'affichent également dans Outlook sur le Web, Outlook 2013 et versions ultérieures, Excel 2016, PowerPoint 2016 et Word 2016.
+    Vous pouvez informer vos utilisateurs sur les stratégies DLP et les aider à maintenir la conformité sans bloquer leur travail. Par exemple, si un utilisateur tente de partager un document contenant des informations sensibles, une stratégie DLP peut lui envoyer une notification par courrier électronique et afficher un conseil de stratégie dans le contexte de la bibliothèque de documents, qui lui permet de remplacer la stratégie s’il a une raison professionnelle de le faire. Les mêmes conseils de stratégie s'affichent également dans Outlook sur le Web, Outlook 2013 et versions ultérieures, Excel 2016, PowerPoint 2016 et Word 2016.
     
 - **Afficher les rapports DLP présentant le contenu qui correspond aux stratégies DLP de votre organisation.**
     
-    Pour évaluer la conformité de votre organisation à une stratégie DLP, vous pouvez voir le nombre de correspondances de chaque stratégie et règle dans le temps. Si une stratégie DLP permet aux utilisateurs de remplacer un Conseil de stratégie et de signaler un faux positif, vous pouvez également consulter ce que les utilisateurs ont signalés.
+    Pour évaluer dans quelle mesure votre organisation se conforme à une stratégie DLP, vous pouvez savoir le nombre de correspondances à chaque stratégie et chaque règle au fil du temps. Si une stratégie DLP permet aux utilisateurs de remplacer un Conseil de stratégie et de signaler un faux positif, vous pouvez également consulter ce que les utilisateurs ont signalés.
     
 Vous créez et gérez des stratégies DLP sur la page protection contre la perte de données dans &amp; le centre de sécurité conformité Office 365.
   
@@ -64,9 +63,9 @@ Une stratégie DLP contient quelques éléments de base :
     
   - **Actions** que vous voulez que la règle exécute automatiquement lorsque du contenu répondant aux conditions est trouvé, par exemple, bloquer l’accès au document et envoyer à l’utilisateur et au responsable de la mise en conformité une notification par courrier électronique. 
     
-Vous pouvez utiliser une règle pour répondre à une exigence de protection spécifique, puis utiliser une stratégie DLP pour regrouper des exigences courantes en matière de protection, telles que toutes les règles nécessaires pour se conformer à un règlement spécifique.
+Vous pouvez utiliser une règle pour satisfaire une exigence de protection spécifique, puis une stratégie DLP pour regrouper les exigences de protection courantes, comme l’ensemble des règles nécessaires pour se conformer à une réglementation donnée.
   
-Par exemple, vous pouvez avoir une stratégie DLP qui vous permet de détecter la présence d'informations couvertes par la loi HIPAA (Health Insurance Portability and Accountability Act). Cette stratégie DLP pourrait aider à protéger les données HIPAA (ce que) sur tous les sites SharePoint Online et tous les sites OneDrive entreprise (le cas échéant) en recherchant tout document contenant ces informations sensibles qui est partagé avec des personnes extérieures à votre organisation (le conditions), puis bloque l'accès au document et l'envoi d'une notification (actions). Ces exigences sont stockées sous forme de règles individuelles et regroupées en tant que stratégie DLP pour simplifier la gestion et la création de rapports.
+Par exemple, vous pouvez disposer d’une stratégie DLP qui vous permet de détecter la présence d’informations protégées par la loi Health Insurance Portability and Accountability Act (HIPAA). Cette stratégie DLP pourrait aider à protéger les données HIPAA (ce que) sur tous les sites SharePoint Online et tous les sites OneDrive entreprise (le cas échéant) en recherchant tout document contenant ces informations sensibles qui est partagé avec des personnes extérieures à votre organisation (le conditions), puis bloque l'accès au document et l'envoi d'une notification (actions). Ces exigences sont stockées sous forme de règles individuelles et regroupées dans une stratégie DLP pour simplifier la gestion et la création de rapports.
   
 ![Diagramme affichant la stratégie DLP contenant les règles et les emplacements](media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
   
@@ -80,7 +79,7 @@ Notez que si vous choisissez d'inclure ou d'exclure des sites SharePoint spécif
   
 ### <a name="rules"></a>Règles
 
-Les règles mettent en œuvre les exigences de votre entreprise sur le contenu de votre organisation. Une stratégie contient une ou plusieurs règles et chaque règle est constituée de conditions et d'actions. Pour chaque règle, lorsque les conditions sont remplies, les actions sont effectuées automatiquement. Les règles sont exécutées de manière séquentielle, en commençant par la règle de priorité la plus élevée de chaque stratégie.
+Les règles mettent en œuvre les exigences de votre entreprise sur le contenu de votre organisation. Une stratégie contient une ou plusieurs règles, et chaque règle se compose de conditions et d’actions. Pour chaque règle, lorsque les conditions sont remplies, les actions sont effectuées automatiquement. Les règles sont exécutées de manière séquentielle, en commençant par la règle de priorité la plus élevée de chaque stratégie.
   
 Une règle fournit également des options pour informer les utilisateurs (avec les conseils de stratégie et les notifications par courrier électronique) et les administrateurs (avec les rapports d'incident de messagerie) que le contenu correspond à la règle.
   
@@ -106,13 +105,13 @@ Les conditions actuellement disponibles peuvent déterminer si :
     
 #### <a name="types-of-sensitive-information"></a>Types d’informations sensibles
 
-Une stratégie DLP peut aider à protéger les informations sensibles, qui est définie comme un **type d'informations sensibles**. Office 365 inclut des définitions pour de nombreux types d'informations sensibles courants dans différentes régions qui sont prêtes à l'emploi, telles que le numéro de carte de crédit, les numéros de compte bancaire, les numéros d'identification nationaux et les numéros de passeport. 
+Une stratégie DLP peut aider à protéger les informations sensibles, qui est définie comme un **type d'informations sensibles**. Office 365 inclut les définitions de nombreux types d’informations sensibles courants dans diverses régions, prêtes pour utilisation, comme les numéros de carte de crédit, numéros de compte bancaire, numéros de carte d’identité et numéros de passeport. 
   
 ![Liste des types d’informations sensibles disponibles](media/3eaa9911-bc94-44be-902f-363dbf3b07fe.png)
   
-Lorsqu'une stratégie DLP recherche un type d'informations sensibles comme un numéro de carte de crédit, il ne recherche pas simplement un nombre à 16 chiffres. Chaque type d'informations sensibles est défini et détecté à l'aide d'une combinaison des éléments suivants:
+Lorsqu'une stratégie DLP recherche un type d'informations sensibles comme un numéro de carte de crédit, il ne recherche pas simplement un nombre à 16 chiffres. Chaque type d’informations sensibles est défini et détecté en utilisant une combinaison des éléments suivants :
   
-- Mots clés
+- Mots-clés
     
 - Fonctions internes pour valider les sommes de contrôle ou la composition
     
@@ -130,7 +129,7 @@ Lorsque le contenu correspond à une condition dans une règle, vous pouvez appl
   
 Une fois les actions désormais disponibles, vous pouvez:
   
-- **Restreindre l'accès au contenu** Pour le contenu de site, cela signifie que les autorisations du document sont restreintes pour tout le monde sauf pour l'administrateur principal de la collection de sites, le propriétaire du document et la personne qui a modifié le document pour la dernière fois. Ces personnes peuvent supprimer les informations sensibles du document ou prendre d'autres mesures correctives. Lorsque le document est en conformité, les autorisations d'origine sont automatiquement restaurées. Lorsque l'accès à un document est bloqué, le document apparaît avec une icône de Conseil de stratégie spéciale dans la bibliothèque sur le site. 
+- **Restreindre l'accès au contenu** Pour le contenu de site, cela signifie que les autorisations du document sont restreintes pour tout le monde sauf pour l'administrateur principal de la collection de sites, le propriétaire du document et la personne qui a modifié le document pour la dernière fois. Ces personnes peuvent supprimer les informations sensibles du document ou effectuer d’autres actions correctives. Lorsque le document est conforme, les autorisations d’origine sont automatiquement restaurées. Lorsque l’accès à un document est bloqué, le document apparaît avec une icône de conseil de stratégie spécifique dans la bibliothèque sur le site. 
     
     ![Conseil de stratégie montrant que l’accès au document est bloqué](media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
   
@@ -140,7 +139,7 @@ Une fois les actions désormais disponibles, vous pouvez:
   
 #### <a name="user-notifications-and-user-overrides"></a>Notifications utilisateur et substitutions utilisateur
 
-Vous pouvez utiliser des notifications et des remplacements pour informer vos utilisateurs des stratégies DLP et les aider à rester conformes sans bloquer leur travail. Par exemple, si un utilisateur tente de partager un document contenant des informations sensibles, une stratégie DLP peut à la fois envoyer une notification par courrier électronique et lui montrer un Conseil de stratégie dans le contexte de la bibliothèque de documents qui lui permet de remplacer la stratégie si elle a une entreprise justifié.
+Vous pouvez utiliser des notifications et des remplacements pour informer vos utilisateurs des stratégies DLP et les aider à rester conformes sans bloquer leur travail. Par exemple, si un utilisateur tente de partager un document contenant des informations sensibles, une stratégie DLP peut lui envoyer une notification par courrier électronique et afficher un conseil de stratégie dans le contexte de la bibliothèque de documents, qui lui permet de remplacer la stratégie s’il a une raison professionnelle de le faire.
   
 ![Notifications utilisateur et remplacements utilisateur sections de l'éditeur de règles DLP](media/37b560d4-6e4e-489e-9134-d4b9daf60296.png)
   
@@ -154,7 +153,7 @@ En plus d'envoyer une notification par courrier électronique, une notification 
     
 - Dans Excel 2016, PowerPoint 2016 et Word 2016, lorsque le document est stocké sur un site inclus dans une stratégie DLP.
     
-Les notifications par courrier électronique et le Conseil de stratégie expliquent pourquoi le contenu est en conflit avec une stratégie DLP. Si vous le souhaitez, les notifications par courrier électronique et le Conseil de stratégie peuvent permettre aux utilisateurs de remplacer une règle en signalant un faux positif ou en fournissant une justification professionnelle. Cela vous permet d'informer les utilisateurs de vos stratégies DLP et de les appliquer sans empêcher les utilisateurs d'effectuer leur travail. Les informations sur les remplacements et les faux positifs sont également consignés pour la création de rapports (voir ci-dessous sur les rapports DLP) et inclus dans la section rapports d'incident (section suivante), afin que l'officier de conformité puisse consulter régulièrement ces informations.
+Les notifications par courrier électronique et le Conseil de stratégie expliquent pourquoi le contenu est en conflit avec une stratégie DLP. Si vous le choisissez, la notification par courrier électronique et le conseil de stratégie peuvent permettre aux utilisateurs de remplacer une règle en signalant un faux positif ou en fournissant une justification professionnelle. Cela peut vous aider à informer les utilisateurs de vos stratégies DLP et à les appliquer sans interrompre le travail. Les informations sur les remplacements et les faux positifs sont également enregistrées pour la création de rapports (consultez la rubrique ci-dessous sur les rapports DLP) et incluses dans les rapports d’incident (section suivante), afin que le responsable de la mise en conformité puisse les consulter régulièrement.
   
 Voici à quoi ressemble un Conseil de stratégie dans un compte OneDrive entreprise.
   
@@ -204,7 +203,7 @@ Par exemple, la stratégie intégrée **HIPAA des États-Unis** a une règle qui
   
 - à partir des **identificateurs PII** du groupe (au moins un numéro SSN ou un numéro **de** DEA) 
     
-    **LES**
+    **AND**
     
 - à partir du groupe **conditions médicales** (au moins un mot clé ICD-9-cm **ou** un mot clé ICD-10-cm) 
     
@@ -236,7 +235,7 @@ En ce qui concerne les conseils de stratégie, notez les éléments suivants:
   
 - Uniquement le Conseil de stratégie de la priorité la plus élevée, la règle la plus restrictive s'affiche. Par exemple, un Conseil de stratégie provenant d'une règle qui bloque l'accès au contenu sera affiché sur un Conseil de stratégie à partir d'une règle qui envoie simplement une notification. Cela empêche les personnes de voir une cascade de conseils de stratégie.
     
-- Si les conseils de stratégie de la règle la plus restrictive autorisent les utilisateurs à remplacer la règle, toute autre règle également mise en correspondance avec le contenu est aussi remplacée.
+- Si les conseils de stratégie de la règle la plus restrictive permettent aux utilisateurs de remplacer la règle, la substitution de cette règle remplace également toutes les autres règles que le contenu correspond.
     
 ## <a name="tuning-rules-to-make-them-easier-or-harder-to-match"></a>Règles de réglage pour les rendre plus faciles ou plus difficiles à mettre en correspondance
 
@@ -250,7 +249,7 @@ Pour résoudre ces problèmes, vous pouvez régler vos règles en ajustant le no
   
 ### <a name="instance-count"></a>Nombre d'instances
 
-Le nombre d'instances signifie simplement le nombre d'occurrences d'un type spécifique d'informations sensibles qui doivent être présentes pour que le contenu corresponde à la règle. Par exemple, le contenu correspondra à la règle indiquée ci-dessous si entre 1 et 9 numéros de passeport uniques aux États-Unis ou au Royaume-Uni sont identifiés.
+Le nombre d'instances signifie simplement le nombre d'occurrences d'un type spécifique d'informations sensibles qui doivent être présentes pour que le contenu corresponde à la règle. Par exemple, le contenu correspond à la règle ci-dessous si elle est comprise entre 1 et 9 (États-Unis ou Royaume-Uni). les numéros de passeport sont identifiés.
   
 Notez que le nombre d'instances inclut uniquement des correspondances **uniques** pour les mots clés et les types d'informations sensibles. Par exemple, si un message électronique contient 10 occurrences du même numéro de carte de crédit, ces 10 occurrences comptent comme une seule instance d'un numéro de carte de crédit. 
   
@@ -304,7 +303,7 @@ Pour ces raisons, les instructions de création de règles avec des précisions 
     
 - Tous les niveaux de confiance entre le niveau de confiance est inférieur ou égal à juste au-dessous du seuil de confiance le plus élevé.
     
-## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>Utilisation d’une étiquette comme condition dans une stratégie DLP
+## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>Utilisation d'une étiquette comme condition dans une stratégie DLP
 
 Vous pouvez créer une étiquette, puis:
   
@@ -376,11 +375,11 @@ Pour accéder rapidement à une section, cliquez sur un élément dans la barre 
   
 ![Menu de navigation supérieure de l'éditeur de règles DLP](media/c527b97f-ca53-4c79-ad19-1a63be8a8ecc.png)
   
-## <a name="dlp-policy-templates"></a>Modèles de stratégie de protection contre la perte de données (DLP)
+## <a name="dlp-policy-templates"></a>Modèles de stratégies de protection contre la perte de données (DLP)
 
 La première étape de la création d'une stratégie DLP consiste à choisir les informations à protéger. En commençant par un modèle DLP, vous enregistrez le travail de création d'un nouvel ensemble de règles à partir de zéro, et vous déterminez les types d'informations qui doivent être inclus par défaut. Vous pouvez ensuite ajouter ou modifier ces exigences pour affiner la règle afin de répondre aux besoins spécifiques de votre organisation.
   
-Un modèle de stratégie DLP préconfiguré peut vous aider à détecter des types spécifiques d'informations sensibles, telles que les données HIPAA, les données PCI-DSS, les données Act-Leach-Bliley Act ou même des informations d'identification personnelle spécifiques aux paramètres régionaux (P.I.). Pour faciliter la recherche et la protection des types courants d'informations sensibles, les modèles de stratégie inclus dans Office 365 contiennent déjà les types d'informations sensibles les plus courants dont vous avez besoin pour commencer.
+Un modèle de stratégie DLP préconfiguré peut vous aider à détecter des types spécifiques d'informations sensibles, telles que les données HIPAA, les données PCI-DSS, les données Act-Leach-Bliley Act ou même des informations d'identification personnelle spécifiques aux paramètres régionaux (P.I.). Pour faciliter la recherche et la protection des types d’informations sensibles courants, les modèles de stratégie inclus dans Office 365 contiennent déjà les types d’informations sensibles les plus courants, nécessaires pour commencer.
   
 ![Liste des modèles de stratégies de protection contre la perte de données avec focus sur le modèle pour le Patriot Act des États-Unis](media/791b2403-430b-4987-8643-cc20abbd8148.png)
   
@@ -388,25 +387,25 @@ Votre organisation peut également avoir ses propres exigences spécifiques, auq
   
 ## <a name="roll-out-dlp-policies-gradually-with-test-mode"></a>Déployer progressivement des stratégies DLP avec le mode test
 
-Lorsque vous créez vos stratégies DLP, vous devez envisager de les déployer graduellement pour évaluer leur impact et tester leur efficacité avant de les appliquer complètement. Par exemple, vous ne voulez pas qu'une nouvelle stratégie DLP bloque involontairement l'accès à des milliers de documents auxquels les utilisateurs ont besoin d'accéder pour effectuer leur travail.
+Lorsque vous créez vos stratégies DLP, vous devez envisager de les déployer progressivement pour évaluer leur impact et tester leur efficacité avant de les appliquer pleinement. Par exemple, vous ne voulez pas qu'une nouvelle stratégie DLP bloque involontairement l'accès à des milliers de documents auxquels les utilisateurs ont besoin d'accéder pour effectuer leur travail.
   
 Si vous créez des stratégies DLP avec un impact potentiel important, nous vous recommandons de suivre cette séquence:
   
-1. **Commencez en mode test sans conseils de stratégie** , puis utilisez les rapports DLP et tous les rapports d'incident pour évaluer l'impact. Vous pouvez utiliser les rapports DLP pour afficher le nombre, l'emplacement, le type et la gravité des correspondances de stratégie. En fonction des résultats, vous pouvez affiner les règles selon vos besoins. En mode test, les stratégies DLP n'ont pas d'impact sur la productivité des personnes travaillant dans votre organisation. 
+1. **Commencez en mode test sans conseils de stratégie** , puis utilisez les rapports DLP et tous les rapports d'incident pour évaluer l'impact. Vous pouvez utiliser les rapports DLP pour connaître le nombre, l’emplacement, le type et la gravité des correspondances de stratégie. En fonction des résultats, vous pouvez affiner les règles, si nécessaire. En mode test, les stratégies DLP n’auront aucun impact sur la productivité des personnes qui travaillent dans votre organisation. 
     
-2. **Passez en mode test avec les notifications et les conseils de stratégie** pour pouvoir commencer à enseigner aux utilisateurs les stratégies de conformité et à les préparer pour les règles à appliquer. À ce stade, vous pouvez également demander aux utilisateurs de signaler les faux positifs afin que vous puissiez affiner les règles. 
+2. **Passez en mode test avec notifications et conseils de stratégie** pour commencer à faire découvrir vos stratégies de conformité aux utilisateurs et les préparer pour les règles qui vont être appliquées. À ce stade, vous pouvez également demander aux utilisateurs de signaler les faux positifs afin d’affiner les règles. 
     
-3. **Démarrez la mise en œuvre complète sur les stratégies** afin que les actions des règles soient appliquées et que le contenu soit protégé. Continuez à surveiller les rapports DLP, ainsi que les rapports d'incident ou les notifications pour vous assurer que les résultats sont bien ceux que vous souhaitez. 
+3. **Démarrez la mise en œuvre complète sur les stratégies** afin que les actions des règles soient appliquées et que le contenu soit protégé. Continuez à surveiller les rapports DLP et tous les rapports d’incident ou notifications pour vous assurer que les résultats correspondent à vos attentes. 
     
 ![Options pour l’utilisation du mode de test et l’activation de la stratégie](media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
   
-Vous pouvez désactiver une stratégie DLP à tout moment, ce qui affecte toutes les règles de la stratégie. Toutefois, chaque règle peut également être désactivée individuellement en basculant sur son état dans l'éditeur de règles.
+Vous pouvez désactiver une stratégie DLP à tout moment, ce qui a un impact sur toutes les règles de la stratégie. Toutefois, chaque règle peut également être désactivée individuellement en basculant sur son état dans l'éditeur de règles.
   
 ![Options de désactivation d’une règle dans une stratégie](media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
   
 ## <a name="dlp-reports"></a>Rapports DLP
 
-Une fois que vous avez créé et activé vos stratégies DLP, vous devez vérifier qu'elles fonctionnent comme vous le souhaitez et vous aider à respecter les exigences de conformité. Avec les rapports DLP, vous pouvez rapidement afficher le nombre de correspondances de stratégie et de règle DLP dans le temps, ainsi que le nombre de faux positifs et de remplacements. Pour chaque rapport, vous pouvez filtrer ces correspondances par emplacement, période et même réduire à une stratégie, une règle ou une action spécifique.
+Une fois que vous avez créé et activé vos stratégies DLP, vous devez vérifier qu'elles fonctionnent comme vous le souhaitez et vous aider à respecter les exigences de conformité. Avec les rapports DLP, vous pouvez rapidement consulter le nombre de correspondances de stratégie DLP et de règle dans le temps, ainsi que le nombre de faux positifs et de remplacements. Pour chaque rapport, vous pouvez filtrer ces correspondances par emplacement, par période et même affiner le filtrage sur une stratégie, règle ou action spécifique.
   
 Grâce aux rapports DLP, vous pouvez obtenir une vue d’ensemble des activités et :
   
@@ -444,13 +443,13 @@ Sur tous vos sites SharePoint Online et OneDrive entreprise, les documents chang
   
 Pour cette raison, les stratégies DLP vérifient les correspondances de stratégie fréquemment dans les documents en arrière-plan. Vous pouvez considérer ceci comme une évaluation asynchrone des stratégies.
   
-Voici comment cela fonctionne. Lorsque les utilisateurs ajoutent ou modifient des documents dans leurs sites, le moteur de recherche analyse le contenu, afin que vous puissiez le Rechercher plus tard. Pendant ce temps, le contenu analyse également les informations sensibles afin de vérifier s'il est partagé. Toutes les informations sensibles trouvées sont stockées de manière sécurisée dans l'index de recherche, afin que seule l'équipe de conformité puisse y accéder, mais pas les utilisateurs classiques. Chaque stratégie DLP que vous avez activée s'exécute en arrière-plan (de façon asynchrone), en vérifiant fréquemment la recherche de contenu correspondant à une stratégie et en appliquant des actions pour la protéger contre des fuites involontaires.
+Voici comment cela fonctionne. Au fur et à mesure que les utilisateurs ajoutent ou modifient des documents dans leurs sites, le moteur de recherche analyse le contenu, afin que vous puissiez le rechercher ultérieurement. Pendant ce temps, le contenu analyse également les informations sensibles afin de vérifier s'il est partagé. Toutes les informations sensibles trouvées sont stockées de manière sécurisée dans l'index de recherche, afin que seule l'équipe de conformité puisse y accéder, mais pas les utilisateurs classiques. Chaque stratégie DLP que vous avez activée s'exécute en arrière-plan (de façon asynchrone), en vérifiant fréquemment la recherche de contenu correspondant à une stratégie et en appliquant des actions pour la protéger contre des fuites involontaires.
   
 ![Diagramme illustrant la façon dont la stratégie DLP évalue le contenu de manière asynchrone](media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
   
 Enfin, les documents peuvent entrer en conflit avec une stratégie DLP, mais ils peuvent également y devenir conformes. Par exemple, si une personne ajoute des numéros de carte de crédit à un document, une stratégie DLP peut alors bloquer l’accès au document automatiquement. Toutefois, si cette personne supprime ensuite les informations sensibles, l’action (dans ce cas, le blocage) est annulée automatiquement à la prochaine évaluation du document par rapport à la stratégie.
   
-DLP évalue tout contenu pouvant être indexé. Pour plus d'informations sur les types de fichiers analysés par défaut, reportez-vous aux [extensions de nom de fichier et aux types de fichiers analysés par défaut dans SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkID=627430).
+DLP évalue le contenu pouvant être indexé. Pour plus d'informations sur les types de fichiers analysés par défaut, reportez-vous aux [extensions de nom de fichier et aux types de fichiers analysés par défaut dans SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkID=627430).
   
 ### <a name="policy-evaluation-in-exchange-online-outlook-2013-and-later-and-outlook-on-the-web"></a>Évaluation de stratégie dans Exchange Online, Outlook 2013 et versions ultérieures, et Outlook sur le Web
 
@@ -460,9 +459,9 @@ Lorsqu'un message est composé dans Outlook, l'utilisateur peut voir les conseil
   
 ### <a name="policy-evaluation-in-the-office-2016-desktop-programs"></a>Évaluation des stratégies dans les programmes de bureau Office 2016
 
-Excel 2016, PowerPoint 2016 et Word 2016 permettent d'identifier les informations sensibles et d'appliquer des stratégies DLP en tant que SharePoint Online et OneDrive entreprise. Ces programmes Office 2016 synchronisent leurs stratégies DLP directement à partir du magasin de stratégies central, puis évaluent continuellement le contenu par rapport aux stratégies DLP lorsque les utilisateurs travaillent avec des documents ouverts à partir d'un site inclus dans une stratégie DLP.
+Excel 2016, PowerPoint 2016 et Word 2016 incluent la même capacité à identifier les informations sensibles et à appliquer les stratégies DLP que SharePoint Online et OneDrive Entreprise. Ces programmes Office 2016 synchronisent leurs stratégies DLP directement à partir du magasin de stratégies central, puis évaluent continuellement le contenu par rapport aux stratégies DLP lorsque les utilisateurs travaillent avec des documents ouverts à partir d'un site inclus dans une stratégie DLP.
   
-L'évaluation de la stratégie DLP dans Office 2016 est conçue pour ne pas affecter les performances des programmes ou la productivité des personnes travaillant sur le contenu. S'ils travaillent sur un document volumineux ou si l'ordinateur de l'utilisateur est occupé, un Conseil de stratégie peut prendre quelques secondes.
+L’évaluation des stratégies DLP dans Office 2016 est conçue pour ne pas avoir d’incidence sur les performances des programmes ou la productivité des personnes qui travaillent sur le contenu. S'ils travaillent sur un document volumineux ou si l'ordinateur de l'utilisateur est occupé, un Conseil de stratégie peut prendre quelques secondes.
   
 ## <a name="permissions"></a>Autorisations
 
@@ -488,7 +487,7 @@ Pour utiliser la plupart des applets de commande pour &amp; le centre de sécuri
     
 Toutefois, les rapports DLP doivent extraire des données d'Office 365, y compris Exchange Online. Pour cette raison, les applets de commande pour les rapports DLP sont disponibles dans Exchange Online PowerShell--pas &amp; dans le centre de sécurité conformité PowerShell. Par conséquent, pour utiliser les applets de commande pour les rapports DLP, vous devez:
   
-1. [Connexion à Exchange Online à l'aide de Remote PowerShell](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [Connect to Exchange Online using remote PowerShell](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
     
 2. Utilisez l'une de ces applets de commande pour les rapports DLP:
     

@@ -1,27 +1,26 @@
 ---
-title: Vue d’ensemble des révisions avant destruction
+title: Vue d'ensemble des révisions de destruction
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: d0c6095b-bfee-4906-a2c7-89c2d7f411c1
 description: Lorsque vous créez une étiquette qui conserve du contenu dans Office 365, vous pouvez choisir de déclencher une révision de disposition à la fin de la période de rétention.
-ms.openlocfilehash: 0948d61131595d4111f656c385c58258c5cce99c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a3125ee3f0ae388fce71968f25a68d5ccf3fc652
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215004"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410759"
 ---
-# <a name="overview-of-disposition-reviews"></a>Vue d’ensemble des révisions avant destruction
+# <a name="overview-of-disposition-reviews"></a>Vue d'ensemble des révisions de destruction
 
 Lorsque le contenu atteint la fin de sa période de rétention, il existe plusieurs raisons pour lesquelles vous pouvez souhaiter examiner ce contenu pour décider s'il peut être supprimé en toute sécurité («supprimé»). Par exemple, vous devrez peut-être:
   

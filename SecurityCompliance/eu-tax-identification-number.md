@@ -7,15 +7,15 @@ ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: f04919c8-2356-4de2-bb2a-b9f67f339726
 description: Cette rubrique montre ce qu'une stratégie de protection contre la perte de données (DLP) recherche lorsqu'il détecte le type d'informations sensibles du numéro d'identification fiscale de l'UE. Ce type d'informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
-ms.openlocfilehash: f851cce4be70fd41c24a7876d97c452f0a738eda
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 4914ff078695519c2a298190d82c86a6abebceb9
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213824"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410909"
 ---
 # <a name="eu-tax-identification-number"></a>Numéro d'identification fiscale de l'UE
 
@@ -76,12 +76,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 Numéro de taxe
   
-valeur
+number
   
 Numéro d'enregistrement taxe
   
 id fiscal
-
   
 St.Nr.
   
@@ -140,7 +139,6 @@ Numéro d'enregistrement national
 Numéro d'enregistrement taxe
   
 id fiscal
-
   
 nPour
   
@@ -273,9 +271,8 @@ Numéro de taxe
 codes
   
 id fiscal
-
   
-OID
+oid
   
 OID
   
@@ -335,7 +332,6 @@ Numéro de taxe
 codes
   
 id fiscal
-
   
 code d'identification fiscale
   
@@ -396,7 +392,6 @@ Numéro de taxe
 codes
   
 id fiscal
-
   
 numéro personnel
   
@@ -458,7 +453,6 @@ Numéro de taxe
 codes
   
 id fiscal
-
   
 numéro CPR
   
@@ -524,7 +518,6 @@ Numéro de taxe
 codes
   
 id fiscal
-
   
 code personnel
   
@@ -586,7 +579,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywordsfinlandeutaxfilenumber"></a>Keywords_finland_eu_tax_file_number
 
 numéro d’identification
-
   
 ID personnel
   
@@ -596,7 +588,7 @@ Numéro d'identification national finnois
   
 personalidnumber #
   
-Numéro d'identification nationale
+numéro d’identification nationale
   
 Numéro d'identification
   
@@ -680,7 +672,6 @@ Numéro d'identification de taxe
 Numéro de taxe
   
 id fiscal
-
   
 Numéro d'identification fiscale
   
@@ -742,7 +733,6 @@ taxnumber #
 taxnumber
   
 id fiscal
-
   
 n ° de taxi
   
@@ -794,8 +784,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 financement
   
-tin
-
+Etain
   
 n ° ID taxe
   
@@ -1043,7 +1032,6 @@ taxnumber #
 taxnumber
   
 id fiscal
-
   
 n ° de taxi
   
@@ -1111,7 +1099,6 @@ taxnumber #
 taxnumber
   
 id fiscal
-
   
 n ° de taxi
   
@@ -1179,7 +1166,6 @@ taxnumber #
 taxnumber
   
 id fiscal
-
   
 n ° de taxi
   
@@ -1251,7 +1237,6 @@ taxnumber #
 taxnumber
   
 id fiscal
-
   
 n ° de taxi
   
@@ -1329,7 +1314,6 @@ taxnumber #
 taxnumber
   
 id fiscal
-
   
 n ° de taxi
   
@@ -1401,7 +1385,6 @@ ID de taxe néerlandaise
 Numéro d'identification de taxe néerlandaise
   
 id fiscal
-
   
 n ° de taxe
   
@@ -1411,8 +1394,7 @@ n ° de taxe n °
   
 codes
   
-tin
-
+Etain
   
 Etain
   
@@ -1494,7 +1476,6 @@ pince
 pince
   
 id fiscal
-
   
 n ° de taxe
   
@@ -1620,14 +1601,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywordsromaniaeutaxfilenumber"></a>Keywords_romania_eu_tax_file_number
 
 id fiscal
-
   
 Numéro d'identification de taxe
   
 n ° fichier taxe
   
-
-
 numéro de dossier fiscal
   
 n ° taxe
@@ -1679,7 +1657,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywordsslovakiaeutaxfilenumber"></a>Keywords_slovakia_eu_tax_file_number
 
 id fiscal
-
   
 Numéro d'identification de taxe
   
@@ -1689,13 +1666,10 @@ n ° d'étain
   
 ID d'étain slovaque
   
-tin
-
+Etain
   
 n ° fichier taxe
   
-
-
 numéro de dossier fiscal
   
 n ° taxe
@@ -1756,7 +1730,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywordssloveniaeutaxfilenumber"></a>Keywords_slovenia_eu_tax_file_number
 
 id fiscal
-
   
 Numéro d'identification de taxe
   
@@ -1766,13 +1739,10 @@ n ° d'étain
   
 ID d'étain slovène
   
-tin
-
+Etain
   
 n ° fichier taxe
   
-
-
 numéro de dossier fiscal
   
 n ° taxe
@@ -1869,7 +1839,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywordsspaineutaxfilenumber"></a>Keywords_spain_eu_tax_file_number
 
 id fiscal
-
   
 Numéro d'identification de taxe
   
@@ -1885,8 +1854,6 @@ n ° fichier taxe
   
 numéro CAF espagnol
   
-
-
 numéro de dossier fiscal
   
 espagnol (CAF)
@@ -1971,14 +1938,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywordsswedeneutaxfilenumber"></a>Keywords_sweden_eu_tax_file_number
 
 id fiscal
-
   
 n ° ID taxe
   
 Numéro d'identification de taxe
   
 identification fiscale
-
   
 n ° d'identification fiscale
   
@@ -2006,13 +1971,13 @@ personnummer
 
 Référence de conTribuable unique (UTR): 10 chiffres sans espaces ni délimiteurs
   
-Numéro d'assurance nationale (NINO): pour plus d'informations, reportez-vous à la section «numéro d'assurance nationale britannique (NINO)» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
+Numéro d'assurance nationale (NINO): pour plus d'informations, reportez-vous à la section «Royaume-Uni National Insurance Number (NINO)» dans [ce que recherche les types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ### <a name="pattern"></a>Modèle
 
 Référence de conTribuable unique (UTR): 10 chiffres
   
-Numéro d'assurance nationale (NINO): pour plus d'informations, reportez-vous à la section «numéro d'assurance nationale britannique (NINO)» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
+Numéro d'assurance nationale (NINO): pour plus d'informations, reportez-vous à la section «Royaume-Uni National Insurance Number (NINO)» dans [ce que recherche les types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -2041,14 +2006,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywordsukeutaxfilenumber"></a>Keywords_uk_eu_tax_file_number
 
 id fiscal
-
   
 n ° ID taxe
   
 Numéro d'identification de taxe
   
 identification fiscale
-
   
 n ° d'identification fiscale
   

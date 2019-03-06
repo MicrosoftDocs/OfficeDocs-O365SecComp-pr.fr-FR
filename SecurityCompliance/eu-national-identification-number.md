@@ -7,15 +7,15 @@ ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: 2ea971bf-9434-4b61-b825-2bbd28ae6064
 description: Cette rubrique présente l'aspect d'une stratégie de protection contre la perte de données (DLP) lorsqu'elle détecte le type d'informations sensibles du numéro d'identification national de l'UE. Ce type d'informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
-ms.openlocfilehash: 9a85fd6954f39de348874e03268a2e19ae47366c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: afae2c3fa54fe5fcd93990cdf5797f5517c46202
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220634"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410969"
 ---
 # <a name="eu-national-identification-number"></a>Numéro d'identification nationale de l'UE
 
@@ -67,7 +67,6 @@ Numéro d'identité nationale
   
 Numéro d'identité
   
-
 id national
   
 Personalausweis Republik Österreich
@@ -135,7 +134,6 @@ numéro national bulgare
 numéro national
   
 numéro de sécurité sociale
-
   
 nationalnumber #
   
@@ -203,7 +201,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 Numéro de carte d'identité
   
-Numéro d'identification nationale
+numéro d’identification nationale
   
 Numéro d'identification personnel
   
@@ -274,7 +272,7 @@ code d'identification personnel
   
 Numéro d'identification personnel
   
-Numéro d'identification nationale
+numéro d’identification nationale
   
 numéro national
   
@@ -357,7 +355,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 Numéro d'identification personnel
   
 numéro d’identification
-
   
 Numéro d'identification personnel
   
@@ -433,7 +430,6 @@ RSI non
 Numéro d'identification personnel
   
 numéro d’identification
-
   
 Numéro d'identification personnel
   
@@ -926,7 +922,7 @@ CNP
   
 CNP #
   
-épingler
+ancre
   
 ancre
   
@@ -1001,12 +997,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 Numéro de naissance
   
-Numéro d'identification nationale
+numéro d’identification nationale
   
 Numéro d'identification personnel
   
 numéro de sécurité sociale
-
   
 nationalnumber #
   
@@ -1139,7 +1134,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 DNI
   
-Numéro d'identification nationale
+numéro d’identification nationale
   
 Numéro d'identité nationale
   

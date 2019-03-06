@@ -7,15 +7,15 @@ ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: 1fabd341-e594-4bfe-961c-62aa82893f60
 description: Cette rubrique indique ce qu'est une stratégie de protection contre la perte de données (DLP) lorsqu'elle détecte le type d'informations sensibles de l'UE ou d'un ID équivalent. Ce type d'informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
-ms.openlocfilehash: abcefb6930e9c02d2f32d84b65accfecf1e20d95
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: c0c808eafa52209c79f3b4e8a2113f587fd8a771
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216524"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410799"
 ---
 # <a name="eu-social-security-number-or-equivalent-id"></a>Numéro de sécurité sociale de l'UE ou ID équivalent
 
@@ -73,9 +73,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 Numéro de sécurité sociale
   
 numéro de sécurité sociale
-
   
-
 code de sécurité sociale
   
 Numéro d'assurance
@@ -146,7 +144,6 @@ numéro national belge
 numéro national
   
 numéro de sécurité sociale
-
   
 nationalnumber #
   
@@ -167,7 +164,6 @@ personalidnumber #
 numéro national
   
 numéro de sécurité
-
   
 numéro d'assuré
   
@@ -228,10 +224,9 @@ Numéro d'identification personnel
   
 Numéro de citoyen principal
   
-Numéro d'identification nationale
+numéro d’identification nationale
   
 numéro de sécurité sociale
-
   
 nationalnumber #
   
@@ -306,12 +301,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 Numéro de naissance
   
-Numéro d'identification nationale
+numéro d’identification nationale
   
 Numéro d'identification personnel
   
 numéro de sécurité sociale
-
   
 nationalnumber #
   
@@ -382,10 +376,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 Numéro d'identification personnel
   
-Numéro d'identification nationale
+numéro d’identification nationale
   
 numéro de sécurité sociale
-
   
 nationalnumber #
   
@@ -461,7 +454,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywordsfinlandeussnorequivalent"></a>Keywords_finland_eu_ssn_or_equivalent
 
 numéro d’identification
-
   
 ID personnel
   
@@ -471,7 +463,7 @@ Numéro d'identification national finnois
   
 personalidnumber #
   
-Numéro d'identification nationale
+numéro d’identification nationale
   
 Numéro d'identification
   
@@ -561,7 +553,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 Numéro de sécurité sociale hongrois
   
 numéro de sécurité sociale
-
   
 socialsecuritynumber #
   
@@ -657,7 +648,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 Numéro d'identification personnel
   
 numéro d’identification
-
   
 Numéro d'identification personnel
   

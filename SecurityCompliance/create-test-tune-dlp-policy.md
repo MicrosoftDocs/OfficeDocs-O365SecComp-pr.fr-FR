@@ -9,18 +9,17 @@ f1_keywords:
 - ms.o365.cc.NewPolicyFromTemplate
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection:
-- Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MET150
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
-description: "La méthode la plus simple et la plus courante pour commencer à utiliser les stratégies DLP consiste à utiliser l'un des modèles inclus dans Office 365. "
-ms.openlocfilehash: 14582a6507d271bc569aeb0c5456a662962d20a9
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+description: 'La façon la plus simple et la plus courante de démarrer avec les stratégies DLP consiste à utiliser l’un des modèles inclus dans Office 365. '
+ms.openlocfilehash: 250f3ec1cfa68d7980f3b4a01076f4c4d0b53a01
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223743"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410979"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Création, test et réglage d’une stratégie DLP
 

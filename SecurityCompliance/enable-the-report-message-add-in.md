@@ -3,7 +3,7 @@ title: Activer le complément Signaler le message
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/18/2019
+ms.date: 03/05/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,14 +15,17 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment activer le complément de message de rapport pour Outlook et Outlook sur le Web, pour des utilisateurs individuels ou l'ensemble de votre organisation.
-ms.openlocfilehash: c184b7ac1baef297d65e6e93e4e7a085920d87b0
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: aba02855b514f0d631d332623d840f9c65911bd1
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341425"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410899"
 ---
 # <a name="enable-the-report-message-add-in"></a>Activer le complément Signaler le message
+
+> [!NOTE]
+> Le complément de message de rapport pour Outlook et Outlook sur le Web n'est pas exactement identique au filtre de courrier inDésirable [Outlook](https://support.office.com/article/Overview-of-the-Junk-Email-Filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089), bien que ces deux types permettent de marquer le courrier comme légitime, non légitime ou une tentative de hameçonnage. La différence réside dans le fait que le complément de message de rapport pour Outlook et Outlook sur le Web avertit Microsoft du courrier inDésirable, tandis que le filtre de courrier inDésirable d'Outlook est utilisé pour organiser les messages électroniques dans la boîte aux lettres d'un utilisateur. 
 
 ## <a name="overview"></a>Vue d’ensemble
 
@@ -37,8 +40,7 @@ Le complément de message de rapport fonctionne avec votre abonnement Office 365
  - Outlook 2016 pour Mac
  - Outlook inclus avec Office 365 proPlus
 
-> [!NOTE]
-> Le complément de message de rapport pour Outlook et Outlook sur le Web n'est pas exactement identique au filtre de courrier inDésirable [Outlook](https://support.office.com/article/Overview-of-the-Junk-Email-Filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089), bien que ces deux types permettent de marquer le courrier comme légitime, non légitime ou une tentative de hameçonnage. Le complément de message de rapport pour Outlook et Outlook sur le Web avertit Microsoft du courrier inDésirable, tandis que le filtre de courrier inDésirable d'Outlook est utilisé pour organiser les messages électroniques dans la boîte aux lettres d'un utilisateur. 
+Votre navigateur Web existant doit être suffisant pour que le complément de message de rapport fonctionne; Toutefois, si vous remarquez que le complément n'est pas disponible ou ne fonctionne pas comme prévu, essayez un autre navigateur.
   
 Si vous êtes un utilisateur individuel, vous pouvez [activer le complément de rapport de message pour vous-même](#get-the-report-message-add-in-for-yourself). 
   
@@ -50,7 +52,7 @@ Si vous êtes un administrateur général Office 365 ou un administrateur Exchan
     
 2. Choisissez **obtenir maintenant**.<br/>![Message de rapport-Get it](media/ReportMessageGETITNOW.png)<br/> 
     
-3. Passez en revue les conditions d'utilisation et la politique de confidentialité. Ensuite, cliquez sur **Continuer**. 
+3. Passez en revue les conditions d'utilisation et la politique de confidentialité. Sélectionnez **Continue (Continuer)**. 
     
 4. Connectez-vous à Office 365 à l'aide de votre compte professionnel ou scolaire (pour une utilisation professionnelle) ou de votre compte Microsoft (pour une utilisation personnelle).
     
@@ -119,7 +121,7 @@ Vous pouvez configurer une règle pour obtenir une copie des messages électroni
     
 9. Sous **choisir un mode pour cette règle**, choisissez **appliquer**.<br/>![Configurer une règle pour obtenir une copie de chaque message signalé](media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)<br/>
   
-10. Sélectionnez **Save (Enregistrer)**. 
+10. Sélectionnez **Enregistrer**. 
     
 Avec cette règle en place, chaque fois que quelqu'un de votre organisation signale un message électronique à l'aide du complément de message de rapport, votre administrateur général, votre administrateur de sécurité et/ou votre lecteur de sécurité recevront une copie de ce message. Ces informations vous permettent de configurer ou d'ajuster des stratégies, telles que [des stratégies de liens approuvés Office 365 ATP](atp-safe-links.md) ou vos paramètres de [blocage du courrier](anti-spam-protection.md) indésirable. 
 
@@ -139,7 +141,7 @@ Vous pouvez consulter et modifier les paramètres par défaut du complément de 
 2. Recherchez et sélectionnez le complément Report message.<br/>![Rechercher et sélectionner le complément de message de rapport](media/FindReportMessageAddIn.png)<br/> 
     
 3. Dans l'écran signaler un message, vérifiez et modifiez les paramètres en fonction de votre organisation.<br/>![Paramètres du complément de message de rapport](media/EditReportMessageAddIn.png)<br/> 
-  
+
 ## <a name="related-topics"></a>Voir aussi
 
 [Utiliser le complément de message de rapport](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)

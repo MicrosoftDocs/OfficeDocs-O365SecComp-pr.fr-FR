@@ -1,5 +1,5 @@
 ---
-title: Création d’une stratégie DLP à partir d’un modèle
+title: Création d'une stratégie DLP à partir d'un modèle
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
@@ -10,22 +10,20 @@ f1_keywords:
 - ms.o365.cc.NewPolicyFromTemplate
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection:
-- Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MET150
-ms.assetid: 59414438-99f5-488b-975c-5023f2254369
-description: "La méthode la plus simple et la plus courante pour commencer à utiliser les stratégies DLP consiste à utiliser l'un des modèles inclus dans Office 365. "
-ms.openlocfilehash: 32c16ca69e624e009591316cccc70a7faafb4bc6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 'La façon la plus simple et la plus courante de démarrer avec les stratégies DLP consiste à utiliser l’un des modèles inclus dans Office 365. '
+ms.openlocfilehash: 2a1802592edbc3cfbcc05f5db979a0b4c3988e0d
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219434"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410949"
 ---
-# <a name="create-a-dlp-policy-from-a-template"></a>Création d’une stratégie DLP à partir d’un modèle
+# <a name="create-a-dlp-policy-from-a-template"></a>Création d'une stratégie DLP à partir d'un modèle
 
-La méthode la plus simple et la plus courante pour commencer à utiliser les stratégies DLP consiste à utiliser l'un des modèles inclus dans Office 365. Vous pouvez utiliser l'un de ces modèles tel quel, ou personnaliser les règles pour répondre aux exigences de conformité spécifiques de votre organisation.
+La façon la plus simple et la plus courante de démarrer avec les stratégies DLP consiste à utiliser l’un des modèles inclus dans Office 365. Vous pouvez utiliser l'un de ces modèles tel quel, ou personnaliser les règles pour répondre aux exigences de conformité spécifiques de votre organisation.
   
 Office 365 comprend plus de 40 modèles prêts à l’emploi qui peuvent vous aider à répondre à toute une variété de besoins réglementaires et professionnels courants en matière de stratégies. Par exemple, il existe des modèles de stratégie DLP pour :
   
@@ -43,7 +41,7 @@ Vous pouvez également choisir le modèle personnalisé, sans règle par défaut
   
 ## <a name="example-identify-sensitive-information-across-all-onedrive-for-business-sites-and-restrict-access-for-people-outside-your-organization"></a>Exemple: identifier les informations sensibles sur tous les sites OneDrive entreprise et restreindre l'accès pour les personnes extérieures à votre organisation
 
-Les comptes OneDrive entreprise permettent aux personnes de votre organisation de collaborer et de partager facilement des documents. Toutefois, une préoccupation commune pour les responsables de la mise en conformité est que les informations sensibles stockées dans des comptes OneDrive entreprise peuvent être partagées par inadvertance avec des personnes extérieures à votre organisation. Une stratégie DLP peut contribuer à atténuer ce risque.
+Les comptes OneDrive entreprise permettent aux personnes de votre organisation de collaborer et de partager facilement des documents. Toutefois, une préoccupation commune pour les responsables de la mise en conformité est que les informations sensibles stockées dans des comptes OneDrive entreprise peuvent être partagées par inadvertance avec des personnes extérieures à votre organisation. Une stratégie DLP peut aider à réduire ce risque.
   
 Dans cet exemple, vous allez créer une stratégie DLP qui identifie les données personnelles américaines, notamment les numéros d'identification des conTribuables (ITIN), les numéros de sécurité sociale et les numéros de passeport des États-Unis. Vous commencerez par utiliser un modèle, puis vous modifierez le modèle pour répondre aux exigences de conformité de votre organisation, notamment:
   
@@ -51,13 +49,13 @@ Dans cet exemple, vous allez créer une stratégie DLP qui identifie les donnée
     
 - Rendez la stratégie plus sensible, afin qu'une seule occurrence d'informations sensibles soit suffisante pour limiter l'accès pour les utilisateurs externes.
     
-- Permettre aux utilisateurs de remplacer les actions en fournissant une justification professionnelle ou en signalant un faux positif. De cette manière, votre stratégie DLP n'empêchera pas les personnes de votre organisation de faire leur travail, à condition qu'elles aient une raison commerciale valide pour partager les informations sensibles.
+- Autorisez les utilisateurs à remplacer les actions en fournissant une justification professionnelle ou en signalant un faux positif. De cette manière, votre stratégie DLP n'empêchera pas les personnes de votre organisation de faire leur travail, à condition qu'elles aient une raison commerciale valide pour partager les informations sensibles.
     
-### <a name="create-a-dlp-policy-from-a-template"></a>Création d’une stratégie DLP à partir d’un modèle
+### <a name="create-a-dlp-policy-from-a-template"></a>Création d'une stratégie DLP à partir d'un modèle
 
-1. Accédez à [https://protection.office.com](https://protection.office.com).
+1. Accédez à la page [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à Office 365 à l'aide de votre compte professionnel ou scolaire. Vous êtes maintenant dans le centre de sécurité &amp; conformité Office 365.
+2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel. Vous êtes maintenant dans le centre de sécurité &amp; conformité Office 365.
     
 3. Dans le centre &amp; \> de sécurité conformité, \> **stratégie** \> de **protection contre** \> la perte de données gauche **+ créer une stratégie**.
     
@@ -81,7 +79,7 @@ Dans cet exemple, vous allez créer une stratégie DLP qui identifie les donnée
     
     Pour inclure ou exclure un emplacement entier, tel que tous les messages électroniques Exchange ou tous les comptes OneDrive, activez ou désactivez l' **État** de cet emplacement. 
     
-    Pour inclure uniquement des sites SharePoint spécifiques ou des comptes OneDrive entreprise, changez l' **État** en activé, puis cliquez sur les liens sous **inclure** pour choisir des sites ou des comptes spécifiques. Lorsque vous appliquez une stratégie à un site, les règles configurées dans cette stratégie sont appliquées automatiquement à tous les sous-sites de ce site. 
+    Pour inclure uniquement des sites SharePoint spécifiques ou des comptes OneDrive entreprise, changez l' **État** en activé, puis cliquez sur les liens sous **inclure** pour choisir des sites ou des comptes spécifiques. Lorsque vous appliquez une stratégie à un site, les règles configurées dans cette stratégie sont automatiquement appliquées à tous les sous-sites de ce site. 
     
     ![Options pour les emplacements dans lesquels une stratégie DLP peut être appliquée](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
@@ -89,7 +87,7 @@ Dans cet exemple, vous allez créer une stratégie DLP qui identifie les donnée
     
 7. Sélectionnez **utiliser les paramètres** \> avancés **suivant**.
     
-8. Un modèle de stratégie DLP contient des règles prédéfinies avec des conditions et des actions qui détectent et agissent sur des types spécifiques d'informations sensibles. Vous pouvez modifier, supprimer ou désactiver les règles existantes, ou en ajouter de nouvelles. Lorsque vous avez fini, cliquez sur **suivant**.
+8. Un modèle de stratégie DLP contient des règles prédéfinies avec les conditions et actions qui détectent et agissent sur des types spécifiques d’informations sensibles. Vous pouvez modifier, supprimer ou désactiver les règles existantes, ou en ajouter de nouvelles. Lorsque vous avez fini, cliquez sur **suivant**.
     
     ![Règles développées dans le modèle de stratégie de données personnelles américaines](media/3bc9f1b6-f8ad-4334-863a-24448bb87687.png)
   
@@ -135,11 +133,11 @@ Dans cet exemple, vous allez créer une stratégie DLP qui identifie les donnée
     
 15. Passez en revue les conditions et les actions \> **** de cette règle.
     
-    À droite, notez le commutateur d' **État** de la règle. Si vous désactivez une stratégie entière, toutes les règles contenues dans la stratégie sont également désactivées. Toutefois, vous pouvez désactiver une règle spécifique sans désactiver toute la stratégie. Cela peut être utile si vous avez besoin d'examiner une règle qui génère un grand nombre de faux positifs. 
+    À droite, notez le commutateur d' **État** de la règle. Si vous désactivez une stratégie entière, toutes les règles contenues dans la stratégie sont également désactivées. Toutefois, vous pouvez désactiver une règle spécifique sans désactiver toute la stratégie. Cela peut être utile lorsque vous avez besoin d’examiner une règle qui génère un grand nombre de faux positifs. 
     
 16. Sur la page suivante, lisez et comprenez les éléments suivants, puis choisissez s'il \> **** faut activer la règle ou la tester.
     
-     Avant de créer vos stratégies DLP, vous devez envisager de les déployer graduellement pour évaluer leur impact et tester leur efficacité avant de les appliquer complètement. Par exemple, vous ne souhaitez pas qu'une nouvelle stratégie DLP bloque involontairement l'accès à des milliers de documents dont les utilisateurs ont besoin pour effectuer leur travail. 
+     Avant de créer vos stratégies DLP, vous devez envisager de les déployer progressivement pour évaluer leur impact et tester leur efficacité avant de les appliquer pleinement. Par exemple, vous ne souhaitez pas qu'une nouvelle stratégie DLP bloque involontairement l'accès à des milliers de documents dont les utilisateurs ont besoin pour effectuer leur travail. 
     
     Si vous créez des stratégies DLP avec un impact potentiel important, nous vous recommandons de suivre cette séquence:
     
@@ -147,7 +145,7 @@ Dans cet exemple, vous allez créer une stratégie DLP qui identifie les donnée
     
 18. Passez en mode test avec notifications et conseils de stratégie pour commencer à faire découvrir vos stratégies de conformité aux utilisateurs et les préparer pour les règles qui vont être appliquées. À ce stade, vous pouvez également demander aux utilisateurs de signaler les faux positifs afin d’affiner les règles.
     
-19. Activez les stratégies de manière à ce que les règles soient appliquées et que le contenu soit protégé. Continuez à surveiller les rapports DLP, ainsi que les rapports d'incident ou les notifications pour vous assurer que les résultats sont bien ceux que vous souhaitez. 
+19. Activez les stratégies de manière à ce que les règles soient appliquées et que le contenu soit protégé. Continuez à surveiller les rapports DLP et tous les rapports d’incident ou notifications pour vous assurer que les résultats correspondent à vos attentes. 
     
     ![Options pour l’utilisation du mode de test et l’activation de la stratégie](media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
   
@@ -157,7 +155,7 @@ Une fois que vous avez créé et activé une stratégie DLP, elle est déployée
   
 ## <a name="view-the-status-of-a-dlp-policy"></a>Affichage de l’état d’une stratégie DLP
 
-À tout moment, vous pouvez afficher l'état de vos stratégies DLP dans la page **stratégie** de la section **protection contre la perte de données** du centre de sécurité &amp; et de conformité. Vous trouverez ici des informations importantes, par exemple si une stratégie a été activée ou désactivée avec succès, ou si la stratégie est en mode test. 
+À tout moment, vous pouvez afficher l'état de vos stratégies DLP dans la page **stratégie** de la section **protection contre la perte de données** du centre de sécurité &amp; et de conformité. Vous y trouverez des informations importantes vous indiquant, par exemple, si une stratégie a bien été activée ou désactivée, et si elle est en mode test. 
   
 Voici les différents états et leur signification.
   
@@ -166,10 +164,10 @@ Voici les différents états et leur signification.
 |**Activation en cours...** <br/> |La stratégie est déployée pour les sources de contenu qu’elle contient. La stratégie n’est pas encore appliquée sur toutes les sources.  <br/> |
 |**Test en cours, avec notifications** <br/> |La stratégie est en mode test. Les actions dans une règle ne sont pas appliquées, mais les correspondances de stratégie sont collectées et peuvent être consultées à l’aide des rapports DLP. Les notifications sur les correspondances de stratégie sont envoyées aux destinataires spécifiés.  <br/> |
 |**Test en cours, sans notifications** <br/> |La stratégie est en mode test. Les actions dans une règle ne sont pas appliquées, mais les correspondances de stratégie sont collectées et peuvent être consultées à l’aide des rapports DLP. Les notifications sur les correspondances de stratégie ne sont pas envoyées aux destinataires spécifiés.  <br/> |
-|**Activé** <br/> |La stratégie est appliquée et active. La stratégie a été correctement déployée sur toutes ses sources de contenu.  <br/> |
+|**On** <br/> |La stratégie est appliquée et active. La stratégie a été correctement déployée sur toutes ses sources de contenu.  <br/> |
 |**Désactivation en cours...** <br/> |La stratégie est supprimée des sources de contenu qu’elle contient. La stratégie peut être toujours active et appliquée sur certaines sources. La désactivation d’une stratégie peut prendre jusqu’à 45 minutes.  <br/> |
-|**Désactivé** <br/> |La stratégie n’est pas active et n’est pas appliquée. Les paramètres de la stratégie (sources, mots clés, durée, etc.) sont enregistrés.  <br/> |
-|**Suppression…** <br/> |La stratégie est en cours de suppression. La stratégie n’est pas active et n’est pas appliquée.  <br/> |
+|**Off** <br/> |La stratégie n’est pas active et n’est pas appliquée. Les paramètres de la stratégie (sources, mots clés, durée, etc.) sont enregistrés.  <br/> |
+|**Suppression...** <br/> |La stratégie est en cours de suppression. La stratégie n’est pas active et n’est pas appliquée.  <br/> |
    
 ## <a name="turn-off-a-dlp-policy"></a>Désactivation d’une stratégie DLP
 

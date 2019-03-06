@@ -8,18 +8,17 @@ ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 94349ed4-5351-4ee2-bbda-70813c9ed693
-description: Les types d'informations sensibles recherchent un modèle spécifique et le corroborent en garantissant une mise en forme appropriée, en appliquant des checksums et en recherchant des mots clés pertinents ou d'autres informations. Certaines de ces fonctionnalités sont effectuées par des fonctions internes. Cette rubrique décrit ce que ces fonctions recherchent, pour vous aider à comprendre le fonctionnement des types d'informations sensibles prédéfinis.
-ms.openlocfilehash: 55c740e892e92902b368b2dcf7b0999cbc60f3ed
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: Les types d'informations sensibles recherchent un modèle spécifique et le corroborent en garantissant une mise en forme appropriée, en appliquant des checksums et en recherchant des mots clés pertinents ou d'autres informations. Certaines de ces fonctionnalités sont effectuées par des fonctions internes. Cette rubrique explique ce que ces fonctions recherchent, pour vous aider à comprendre le fonctionnement des types d’informations sensibles prédéfinis.
+ms.openlocfilehash: 4cc6f4d27e106aeedb2fa8cae0f3634b9e3d6319
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219354"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410549"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>Éléments recherchés par les fonctions DLP
 
@@ -29,7 +28,7 @@ Cette rubrique explique ce que ces fonctions recherchent, pour vous aider à com
   
 ## <a name="funcusdate"></a>Func_us_date
 
-Cette fonction recherche une date au format couramment utilisé aux États-Unis. Cela inclut les formats «mois/jour/année», «mois-jour-année» et «mois de jour du mois». Les noms ou abréviations des mois ne sont pas sensibles à la casse. 
+Cette fonction recherche une date au format couramment utilisé aux États-Unis. Cela inclut les formats «mois/jour/année», «mois-jour-année» et «mois de jour du mois». Les noms ou les abréviations des mois ne respectent pas la casse. 
   
 Exemples :
   
@@ -93,7 +92,7 @@ Noms de mois acceptés :
     
   - janvier, février, mars, avril, mai, juin juillet, août, septembre, octobre, novembre, décembre
     
-  - janv. févr. mars avril Maï juin juil. août sept. oct. nov. déc.
+  - janv. févr. mars avril Maï juin juil. août sept. OPO. novembre. déc.
     
 - Allemand
     
@@ -117,14 +116,14 @@ Noms de mois acceptés :
     
   - Enero, febrero, marzo, Abril, Mayo, junio, Julio, Agosto, septiembre, octubre, noviembre, diciembre
     
-  - enero fév. marzo abr. Mayo Jun. Jul. agosto sept./Set. oct. nov. DIC.
+  - enero fév. marzo abr. Mayo Jun. juil. agosto sept./Set. OPO. novembre. DIC.
     
 ## <a name="funceudate1-deprecated"></a>Func_eu_date1 (déconseillée)
 
 > [!NOTE]
 > Cette fonction est déconseillée, car elle prend en charge uniquement les noms de mois portugais, `Func_eu_date` qui sont désormais inclus dans la fonction ci-dessus. 
   
-Cette fonction recherche une date dans le format couramment utilisé en Portugais. Le format de cette fonction est le même que `Func_eu_date`, qui diffère uniquement dans la langue utilisée.
+Cette fonction recherche une date au format couramment utilisé en portugais. Le format de cette fonction est le même que `Func_eu_date`, qui diffère uniquement dans la langue utilisée.
   
 Exemples :
   
@@ -155,7 +154,7 @@ Noms de mois acceptés :
 > [!NOTE]
 > Cette fonction est déconseillée, car elle prend en charge uniquement les noms de mois néerlandais, `Func_eu_date` qui sont désormais inclus dans la fonction ci-dessus. 
   
-Cette fonction recherche une date dans le format couramment utilisé en Néerlandais. Le format de cette fonction est le même que `Func_eu_date`, qui diffère uniquement dans la langue utilisée.
+Cette fonction recherche une date au format couramment utilisé en néerlandais. Le format de cette fonction est le même que `Func_eu_date`, qui diffère uniquement dans la langue utilisée.
   
 Exemples :
   
@@ -183,9 +182,9 @@ Noms de mois acceptés :
     
 ## <a name="funcexpirationdate"></a>Func_expiration_date
 
-Cette fonction recherche une date dans les formats couramment utilisés par les cartes de crédit et de débit, ce qui exclut les jours en faveur des mois. Cette fonction correspond aux dates au format «mois/année», «mois-année», «[nom du mois] année» et «[abréviation mois-année]». Les noms ou abréviations des mois ne sont pas sensibles à la casse.
+Cette fonction recherche une date dans les formats couramment utilisés par les cartes de crédit et de débit, qui excluent les jours au profit des mois. Cette fonction correspond aux dates au format «mois/année», «mois-année», «[nom du mois] année» et «[abréviation mois-année]». Les noms ou les abréviations des mois ne respectent pas la casse.
   
-Exemples
+Exemples :
   
 - MM/AA, par exemple, 01/11 ou 1/11
     

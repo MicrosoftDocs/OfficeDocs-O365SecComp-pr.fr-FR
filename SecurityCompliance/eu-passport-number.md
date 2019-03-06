@@ -7,15 +7,15 @@ ms.date: 8/16/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: 8c00df57-9fb3-459c-ba87-40480c87bd55
 description: Cette rubrique présente ce qu'une stratégie de protection contre la perte de données (DLP) recherche lorsqu'elle détecte le type d'informations sensibles du numéro de passeport de l'UE. Ce type d'informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
-ms.openlocfilehash: c46f683bd1baf651bcf13c1766dfff3cb953b341
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 3ab92e87607f41cffa8c15f1179a4eef5369cb29
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218264"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410929"
 ---
 # <a name="eu-passport-number"></a>Numéro de passeport UE
 
@@ -64,7 +64,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_austria_eu_passport_number**|
 |:-----|
-|Numéro de passeport  <br/> Numéro de passeport autrichien  <br/> Numéro de passeport  <br/> reisepass  <br/> österreichisch Reisepass  <br/> |
+|numéro de passeport  <br/> Numéro de passeport autrichien  <br/> Numéro de passeport  <br/> Reisepass  <br/> österreichisch Reisepass  <br/> |
    
 ## <a name="belgium"></a>Belgique
 
@@ -103,7 +103,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_belgium_eu_passport_number**|
 |:-----|
-|Numéro de passeport  <br/> Numéro de passeport belge  <br/> Numéro de passeport  <br/> paspoort  <br/> paspoortnummer  <br/> Reisepass kein  <br/> reisepass  <br/> |
+|numéro de passeport  <br/> Numéro de passeport belge  <br/> Numéro de passeport  <br/> paspoort  <br/> paspoortnummer  <br/> Reisepass kein  <br/> Reisepass  <br/> |
    
 ## <a name="bulgaria"></a>Bulgarie
 
@@ -142,7 +142,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_bulgaria_eu_passport_number**|
 |:-----|
-|Numéro de passeport  <br/> Numéro de Passeport bulgare  <br/> Numéro de passeport  <br/> номер на паспорта  <br/> |
+|numéro de passeport  <br/> Numéro de Passeport bulgare  <br/> Numéro de passeport  <br/> номер на паспорта  <br/> |
    
 ## <a name="croatia"></a>Croatie
 
@@ -181,7 +181,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_croatia_eu_passport_number**|
 |:-----|
-|Numéro de passeport  <br/> Numéro de passeport croate  <br/> Numéro de passeport  <br/> Broj putovnice  <br/> |
+|numéro de passeport  <br/> Numéro de passeport croate  <br/> Numéro de passeport  <br/> Broj putovnice  <br/> |
    
 ## <a name="cyprus"></a>Chypre
 
@@ -220,7 +220,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_cyprus_eu_passport_number**|
 |:-----|
-|Numéro de passeport  <br/> Numéro de passeport de Chypre  <br/> Numéro de passeport  <br/> αριθμό διαβατηρίου  <br/> |
+|numéro de passeport  <br/> Numéro de passeport de Chypre  <br/> Numéro de passeport  <br/> αριθμό διαβατηρίου  <br/> |
    
 ## <a name="czech-republic"></a>République tchèque
 
@@ -259,7 +259,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_czech_republic_eu_passport_number**|
 |:-----|
-|Numéro de passeport  <br/> Numéro de passeport tchèque  <br/> Numéro de passeport  <br/> CESTOVNÍ pas  <br/> boîte  <br/> |
+|numéro de passeport  <br/> Numéro de passeport tchèque  <br/> Numéro de passeport  <br/> CESTOVNÍ pas  <br/> boîte  <br/> |
    
 ## <a name="denmark"></a>Danemark
 
@@ -298,7 +298,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_denmark_eu_passport_number**|
 |:-----|
-|Numéro de passeport  <br/> Numéro de passeport danois  <br/> Numéro de passeport  <br/> boîte  <br/> pasnummer  <br/> |
+|numéro de passeport  <br/> Numéro de passeport danois  <br/> Numéro de passeport  <br/> boîte  <br/> pasnummer  <br/> |
    
 ## <a name="estonia"></a>Estonie
 
@@ -337,7 +337,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_estonia_eu_passport_number**|
 |:-----|
-|Numéro de passeport  <br/> Numéro de passeport estonien  <br/> Numéro de passeport  <br/> Eesti kodaniku  <br/> |
+|numéro de passeport  <br/> Numéro de passeport estonien  <br/> Numéro de passeport  <br/> Eesti kodaniku  <br/> |
    
 ## <a name="finland"></a>Finlande
 
@@ -388,7 +388,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_greece_eu_passport_number**|
 |:-----|
-|Numéro de passeport  <br/> Numéro de passeport grec  <br/> Numéro de passeport  <br/> διαβατηριο  <br/> |
+|numéro de passeport  <br/> Numéro de passeport grec  <br/> Numéro de passeport  <br/> διαβατηριο  <br/> |
    
 ## <a name="hungary"></a>Hongrie
 
@@ -427,7 +427,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_hungary_eu_passport_number**|
 |:-----|
-|Numéro de passeport  <br/> Numéro de passeport hongrois  <br/> Numéro de passeport  <br/> útlevél száma  <br/> |
+|numéro de passeport  <br/> Numéro de passeport hongrois  <br/> Numéro de passeport  <br/> útlevél száma  <br/> |
    
 ## <a name="ireland"></a>Irlande
 
@@ -470,7 +470,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_ireland_eu_passport_number**|
 |:-----|
-|Numéro de passeport  <br/> Numéro de passeport irlandais  <br/> Numéro de passeport  <br/> boîte  <br/> passeport  <br/> passeport  <br/> passeport numérique  <br/> |
+|numéro de passeport  <br/> Numéro de passeport irlandais  <br/> Numéro de passeport  <br/> boîte  <br/> tel  <br/> passeport  <br/> passeport numérique  <br/> |
    
 ## <a name="italy"></a>Italie
 
@@ -513,7 +513,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_italy_eu_passport_number**|
 |:-----|
-|Numéro de passeport italien  <br/> Repubblica Italiana passaporto  <br/> passaporto  <br/> passaporto Italiana  <br/> Numéro de passeport  <br/> Italiana passaporto numérique  <br/> passaporto numérique  <br/> numéro passeport italien  <br/> numéro passeport  <br/> |
+|Numéro de passeport italien  <br/> Repubblica Italiana passaporto  <br/> passaporto  <br/> passaporto Italiana  <br/> numéro de passeport  <br/> Italiana passaporto numérique  <br/> passaporto numérique  <br/> numéro passeport italien  <br/> numéro passeport  <br/> |
    
 ## <a name="latvia"></a>Lettonie
 
@@ -556,7 +556,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_latvia_eu_passport_number**|
 |:-----|
-|Numéro de passeport  <br/> Numéro de passeport letton  <br/> Numéro de passeport  <br/> pase numurs  <br/> |
+|numéro de passeport  <br/> Numéro de passeport letton  <br/> Numéro de passeport  <br/> pase numurs  <br/> |
    
 ## <a name="lithuania"></a>Lituanie
 
@@ -595,7 +595,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_lithuania_eu_passport_number**|
 |:-----|
-|Numéro de passeport  <br/> Numéro de passeport lithunian  <br/> Numéro de passeport  <br/> Paso chiffres  <br/> |
+|numéro de passeport  <br/> Numéro de passeport lithunian  <br/> Numéro de passeport  <br/> Paso chiffres  <br/> |
    
 ## <a name="luxemburg"></a>Relatif
 
@@ -634,7 +634,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_nation_eu_passport_number**|
 |:-----|
-|Numéro de passeport  <br/> Numéro de passeport letton  <br/> Numéro de passeport  <br/> passnummer  <br/> |
+|numéro de passeport  <br/> Numéro de passeport letton  <br/> Numéro de passeport  <br/> passnummer  <br/> |
    
 ## <a name="malta"></a>Malte
 
@@ -673,7 +673,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_malta_eu_passport_number**|
 |:-----|
-|Numéro de passeport  <br/> Numéro de passeport maltais  <br/> Numéro de passeport  <br/> numru Tal-Passaport  <br/> |
+|numéro de passeport  <br/> Numéro de passeport maltais  <br/> Numéro de passeport  <br/> numru Tal-Passaport  <br/> |
    
 ## <a name="netherlands"></a>Pays-Bas
 
@@ -712,7 +712,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_netherlands_eu_passport_number**|
 |:-----|
-|Numéro de passeport néerlandais  <br/> Numéro de passeport  <br/> Numéro de passeport néerlandais  <br/> Nederlanden paspoort Nummer  <br/> paspoort  <br/> Nederlanden paspoortnummer  <br/> paspoortnummer  <br/> |
+|Numéro de passeport néerlandais  <br/> numéro de passeport  <br/> Numéro de passeport néerlandais  <br/> Nederlanden paspoort Nummer  <br/> paspoort  <br/> Nederlanden paspoortnummer  <br/> paspoortnummer  <br/> |
    
 ## <a name="poland"></a>Pologne
 
@@ -759,7 +759,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_portugal_eu_passport_number**|
 |:-----|
-|Numéro de passeport  <br/> Numéro de passeport Portugais  <br/> Numéro de passeport  <br/> número do Passaporte  <br/> |
+|numéro de passeport  <br/> Numéro de passeport Portugais  <br/> Numéro de passeport  <br/> número do Passaporte  <br/> |
    
 ## <a name="romania"></a>Roumanie
 
@@ -798,7 +798,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_romania_eu_passport_number**|
 |:-----|
-|Numéro de passeport  <br/> Numéro de passeport roumain  <br/> Numéro de passeport  <br/> numărul pașaportului  <br/> |
+|numéro de passeport  <br/> Numéro de passeport roumain  <br/> Numéro de passeport  <br/> numărul pașaportului  <br/> |
    
 ## <a name="slovakia"></a>République de Slovaquie
 
@@ -837,7 +837,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_slovakia_eu_passport_number**|
 |:-----|
-|Numéro de passeport  <br/> Numéro de passeport slovaque  <br/> Numéro de passeport  <br/> číslo Pasu  <br/> |
+|numéro de passeport  <br/> Numéro de passeport slovaque  <br/> Numéro de passeport  <br/> číslo Pasu  <br/> |
    
 ## <a name="slovenia"></a>Slovénie
 
@@ -882,7 +882,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_slovenia_eu_passport_number**|
 |:-----|
-|Numéro de passeport  <br/> Numéro de passeport slovène  <br/> Numéro de passeport  <br/> številka potnega Lista  <br/> |
+|numéro de passeport  <br/> Numéro de passeport slovène  <br/> Numéro de passeport  <br/> številka potnega Lista  <br/> |
    
 ## <a name="spain"></a>Espagne
 
@@ -927,7 +927,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_spain_eu_passport_number**|
 |:-----|
-|passeport  <br/> Passport Espagne  <br/> livre de passeport  <br/> Numéro de passeport  <br/> Numéro de passeport  <br/> Libreta pasaporte  <br/> número pasaporte  <br/> España pasaporte  <br/> pasaporte  <br/> |
+|tel  <br/> Passport Espagne  <br/> livre de passeport  <br/> numéro de passeport  <br/> Numéro de passeport  <br/> Libreta pasaporte  <br/> número pasaporte  <br/> España pasaporte  <br/> pasaporte  <br/> |
    
 ## <a name="sweden"></a>Suède
 
@@ -935,7 +935,7 @@ Pour plus d'informations, reportez-vous à la section «numéro de passeport Su�
   
 ## <a name="uk"></a>R.U.
 
-Pour plus d'informations, reportez-vous à la section «US/numéro de passeport britannique» dans les [types d'informations sensibles que vous recherchez](what-the-sensitive-information-types-look-for.md).
+Pour plus d'informations, reportez-vous à la section «U.S./R.U. Numéro de passeport» dans [ce que recherche les types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="see-also"></a>Voir aussi
 

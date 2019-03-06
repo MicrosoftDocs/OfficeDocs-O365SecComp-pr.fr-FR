@@ -9,23 +9,24 @@ ms.collection:
 - o365_security_incident_response
 - Strat_O365_IP
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez comment reconnaître et répondre à un compte de messagerie compromis dans Office 365
-ms.openlocfilehash: 326ec01c570ad97b5f1eaf06dcfe1ad4e6ad76f4
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 3f64cd249a425cc098fc49f6e9bbbe1901c734de
+ms.sourcegitcommit: 0a1ce1ac45672d1d98eb7dbcfd4f0179d9eb4509
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341095"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30412942"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Réponse à un compte de messagerie compromis dans Office 365
 
 **Résumé** Découvrez comment reconnaître et répondre à un compte de messagerie compromis dans Office 365.
 
 ## <a name="what-is-a-compromised-email-account-in-office-365"></a>Qu'est-ce qu'un compte de courrier compromis dans Office 365?
-L'accès aux boîtes aux lettres, aux données et aux autres services Office 365 est contrôlé par le biais d'informations d'identification, par exemple, un nom d'utilisateur et un mot de passe ou un code confidentiel. Quand une personne autre que l'utilisateur concerné vole ces informations d'identification, les informations d'identification dérobées sont considérées comme compromises. Ils peuvent ainsi se connecter en tant qu'utilisateur d'origine et effectuer des actions illicites. À l'aide des informations d'identification dérobées, l'agresseur peut accéder à la boîte aux lettres Office 365 de l'utilisateur, à des dossiers SharePoint ou à des fichiers dans le OneDrive de l'utilisateur. L'agresseur envoie des courriers électroniques en tant qu'utilisateur d'origine à des destinataires à l'intérieur et à l'extérieur de l'organisation. Lorsque l'agresseur envoie des données à des destinataires externes, il s'agit de l'exfiltration des données.
+L'accès aux boîtes aux lettres, aux données et aux autres services Office 365 est contrôlé par le biais d'informations d'identification, par exemple, un nom d'utilisateur et un mot de passe ou un code confidentiel. Quand une personne autre que l'utilisateur concerné vole ces informations d'identification, les informations d'identification dérobées sont considérées comme compromises. Ils peuvent ainsi se connecter en tant qu'utilisateur d'origine et effectuer des actions illicites.
+À l'aide des informations d'identification dérobées, l'agresseur peut accéder à la boîte aux lettres Office 365 de l'utilisateur, à des dossiers SharePoint ou à des fichiers dans le OneDrive de l'utilisateur. L'agresseur envoie des courriers électroniques en tant qu'utilisateur d'origine à des destinataires à l'intérieur et à l'extérieur de l'organisation. Lorsque l'agresseur envoie des données à des destinataires externes, il s'agit de l'exfiltration des données.
 
 ## <a name="symptoms-of-a-compromised-office-365-email-account"></a>Symptômes d'un compte de messagerie Office 365 compromis
 Les utilisateurs peuvent remarquer et signaler une activité inhabituelle dans leurs boîtes aux lettres Office 365. Voici quelques symptômes courants:
@@ -62,7 +63,7 @@ Vous devez effectuer toutes les étapes suivantes pour accéder à nouveau à vo
 
 1. Suivez les procédures de réInitialisation d'un mot de passe Office 365 Business pour quelqu'un d'autre dans [administrateurs: Reset office 365 Business passwords](https://support.office.com/article/admins-reset-office-365-business-passwords-7a5d073b-7fae-4aa5-8f96-9ecd041aba9c)
 
-**Remarques :**
+**Remarques :**
 - Assurez-vous que le mot de passe est fort et qu'il contient des lettres majuscules et minuscules, au moins un chiffre et au moins un caractère spécial. 
 - Ne réutilisez pas vos cinq derniers mots de passe. Même si l'utilisation de l'historique des mots de passe vous permet de réutiliser un mot de passe plus récent, vous devez sélectionner un élément que l'agresseur ne peut pas deviner.
 - Si votre identité sur site est fédérée avec Office 365, vous devez modifier votre mot de passe local, puis informer votre administrateur du compromis.
@@ -90,7 +91,7 @@ Si la boîte aux lettres compromise suspecte a été utilisée de façon illicit
 > [!IMPORTANT]
 > Vous pouvez bloquer la connexion à un compte compromis jusqu'à ce qu'il soit sûr de pouvoir réactiver l'accès.
 
-1. Accédez au Centre d’administration Office 365.
+1. Go to the Office 365 admin center.
 2. Dans le Centre d'administration Office 365, sélectionnez **Utilisateurs**.
 3. Sélectionnez l'employé que vous voulez bloquer, puis cliquez sur **modifier** en regard de l' **État de connexion** dans le volet utilisateur.
 4. Dans le volet **État de la connexion**, choisissez **Connexion bloquée**, puis **Enregistrer**. 
@@ -106,11 +107,13 @@ Si la boîte aux lettres compromise suspecte a été utilisée de façon illicit
 1. Connectez-vous au centre d'administration Office 365 avec un compte d'administrateur général et ouvrez **utilisateurs actifs**.
 2. Recherchez le compte compromis suspect et vérifiez manuellement s'il existe des rôles d'administration attribués au compte.
 3. Ouvrez le **Centre de sécurité _AMP_ Compliance Center**.
-4. Cliquez sur **autorisations**.
-5. Passez en revue manuellement les groupes de rôles pour voir si le compte suspect compromis est membre de l'un d'entre eux.  S'il s'agit de: a. cliquez sur le groupe de rôles, puis cliquez sur **modifier le groupe de rôles**.  b. cliquez sur **choisir les membres** et sur **modifier** pour supprimer l'utilisateur du groupe de rôles.
+4. Cliquez sur **Autorisations**.
+5. Passez en revue manuellement les groupes de rôles pour voir si le compte suspect compromis est membre de l'un d'entre eux.  S'il s'agit de: a. Cliquez sur le groupe de rôles, puis sur **modifier le groupe de rôles**.
+    b. Cliquez sur **choisir les membres** , puis sur **modifier** pour supprimer l'utilisateur du groupe de rôles.
 6. Ouvrir le **Centre d'administration Exchange**
-7. Cliquez sur **autorisations**.
-8. Passez en revue manuellement les groupes de rôles pour voir si le compte suspect compromis est membre de l'un d'entre eux. S'il s'agit de: a. cliquez sur le groupe de rôles, puis cliquez sur **modifier**.  b. Utilisez la section **membres** pour supprimer l'utilisateur du groupe de rôles.
+7. Cliquez sur **Autorisations**.
+8. Passez en revue manuellement les groupes de rôles pour voir si le compte suspect compromis est membre de l'un d'entre eux. S'il s'agit de: a. Cliquez sur le groupe de rôles, puis cliquez sur **modifier**.
+    b. Utilisez la section **membres** pour supprimer l'utilisateur du groupe de rôles.
 
 ### <a name="step-7-optional-additional-precautionary-steps"></a>Étape 7 facultative: étapes de précaution supplémentaires
 1. Vérifiez que vous avez bien vérifié vos éléments envoyés. Vous devrez peut-être informer les personnes de votre liste de contacts que votre compte a été compromis. L'agresseur peut être invité à le faire, par exemple, une usurpation d'identité, par exemple, que vous étiez bloqué dans un autre pays et que vous avez besoin d'argent, ou que l'agresseur puisse lui envoyer un virus pour détourner les ordinateurs.
@@ -123,8 +126,8 @@ Votre abonnement Office 365 est fourni avec un ensemble de fonctionnalités de s
 - Tâches à effectuer dans les 90 jours. La planification et l'implémentation de ces deux éléments prennent un peu plus de temps, mais améliorent grandement votre position de sécurité.
 - Au-delà de 90 jours. Ces améliorations s'appuient sur vos premiers 90 jours de travail.
 
-## <a name="see-also"></a>Voir aussi:
-- [Meilleures pratiques de sécurité pour Office 365](https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3)
+## <a name="see-also"></a>Voir aussi :
+- [Meilleures pratiques en matière de sécurité pour Office 365](https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3)
 - [Détecter et résoudre les attaques par injections sur les règles d’Outlook et les formulaires personnalisés dans Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 - [Internet Crime Complaint Center](http://www.ic3.gov/preventiontips.aspx)
 - [Securities and Exchange Commission-fraude de hameçonnage](http://www.sec.gov/investor/pubs/phishing.htm)

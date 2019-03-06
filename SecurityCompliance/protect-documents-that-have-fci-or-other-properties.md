@@ -12,15 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection: Strat_O365_IP
-ms.assetid: 1b9e3c6c-4308-4a20-b11e-c37b8013e177
-description: De nombreuses organisations disposent déjà d'un processus permettant d'identifier et de classer les informations sensibles à l'aide des propriétés de classification dans Windows Server file classification infrastructure (ICF), des propriétés de document dans SharePoint ou des propriétés de document appliqué par un système tiers. Si cela décrit votre organisation, vous pouvez créer une stratégie DLP dans Office 365 qui reconnaît les propriétés qui ont été appliquées aux documents par Windows Server ICF ou un autre système, afin que la stratégie DLP puisse être appliquée aux documents Office avec des ICF spécifiques ou d'autres valeurs de propriété.
-ms.openlocfilehash: 71f37d616c6bb6c3e63bad8707b650b36f66fa62
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.collection: M365-security-compliance
+description: De nombreuses organisations appliquent déjà un processus permettant d’identifier et de classer les informations sensibles à l’aide des propriétés de classification dans l’infrastructure de classification des fichiers (ICF) Windows Server, des propriétés de document dans SharePoint ou des propriétés de document appliquées par un système tiers. Si vous reconnaissez votre organisation, vous pouvez créer une stratégie DLP dans Office 365 qui reconnaît les propriétés qui ont été appliquées aux documents par l’ICF Windows Server ou un autre système, afin que la stratégie DLP puisse être activée sur les documents Office avec une ICF ou d’autres valeurs de propriété spécifiques.
+ms.openlocfilehash: d4468859781703012438a06ec782b75d1acce963
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214364"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410529"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Création d’une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés
 
@@ -28,7 +27,7 @@ Dans Office 365, vous pouvez utiliser une stratégie de protection contre la pe
   
 ![Diagramme illustrant Office 365 et le système de classement externe](media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
   
-Par exemple, votre organisation peut utiliser Windows Server ICF pour identifier des documents avec des informations d'identification personnelle (PII) telles que des numéros de sécurité sociale, puis classer le document en définissant les **informations d'identification personnelle** . propriété à **élevée**, **modérée**, **faible**, **public**ou **non PII** selon le type et le nombre d'occurrences de données personnelles trouvées dans le document. Dans Office 365, vous pouvez créer une stratégie DLP qui identifie les documents dont la propriété est définie sur des valeurs spécifiques, telles que **High** et **Medium**, puis effectue une action telle que le blocage de l'accès à ces fichiers. La même stratégie peut avoir une autre règle qui prend une autre action si la propriété est définie sur **Low**, comme l'envoi d'une notification par courrier électronique. De cette manière, DLP dans Office 365 s'intègre à Windows Server ICF et peut aider à protéger les documents Office chargés ou partagés vers Office 365 à partir de serveurs de fichiers Windows Server.
+Par exemple, votre organisation peut utiliser l’ICF Windows Server pour identifier les documents avec des informations d’identification personnelle (PII) telles que des numéros de sécurité sociale, puis classer le document en définissant la propriété **Informations d’identification personnelle** sur **Haut**, **Modéré**, **Faible**, **Public** ou **Non PII** selon le type et le nombre d’occurrences de PII trouvées dans le document. Dans Office 365, vous pouvez créer une stratégie DLP qui identifie les documents pour lesquels cette propriété est définie sur des valeurs spécifiques, telles que **Haut** et **Moyen**, puis exécute une action telle que le blocage de l’accès à ces fichiers. La même stratégie peut disposer d’une autre règle qui exécute une action différente si la propriété est définie sur **Faible**, telle que l’envoi d’une notification par courrier électronique. De cette manière, DLP dans Office 365 s'intègre à Windows Server ICF et peut aider à protéger les documents Office chargés ou partagés vers Office 365 à partir de serveurs de fichiers Windows Server.
   
 Une stratégie DLP recherche simplement une paire nom/valeur de propriété spécifique. N’importe quelle propriété de document peut être utilisée, tant que la propriété possède une propriété gérée correspondante pour la recherche SharePoint. Par exemple, une collection de sites SharePoint peut utiliser un type de contenu nommé **Relevé de voyage** avec un champ obligatoire nommé **Client**. Lorsqu’une personne crée un relevé de voyage, elle doit entrer le nom du client. Cette paire nom/valeur de propriété peut également être utilisée dans une stratégie DLP, par exemple, si vous voulez une règle qui bloque l’accès au document pour les utilisateurs externes lorsque le champ **Client** contient **Contoso**.
   
@@ -36,7 +35,7 @@ Notez que si vous souhaitez appliquer votre stratégie DLP au contenu avec des �
   
 ## <a name="before-you-create-the-dlp-policy"></a>Avant de créer la stratégie DLP
 
-Avant de pouvoir utiliser une propriété ICF de Windows Server ou une autre propriété dans une stratégie DLP, vous devez créer une propriété gérée dans le centre d'administration SharePoint. Voici pourquoi.
+Avant de pouvoir utiliser une propriété ICF Windows Server ou une autre propriété dans une stratégie DLP, vous devez créer une propriété gérée dans le Centre d’administration SharePoint. Voici pourquoi.
   
 Exemples
   
@@ -46,13 +45,13 @@ Pour plus d'informations sur la recherche et les propriétés gérées, consulte
   
 ### <a name="step-1-upload-a-document-with-the-needed-property-to-office-365"></a>Étape 1 : chargement d’un document avec la propriété nécessaire vers Office 365
 
-Vous devez d'abord télécharger un document avec la propriété que vous souhaitez référencer dans votre stratégie DLP. Office 365 détectera la propriété et créera automatiquement une propriété analysée à partir de celle-ci. Dans l'étape suivante, vous allez créer une propriété gérée, puis mapper la propriété gérée sur cette propriété analysée.
+Vous devez d’abord charger un document avec la propriété que vous souhaitez référencer dans votre stratégie DLP. Office 365 détecte la propriété et crée automatiquement une propriété analysée à partir de celle-ci. Dans l'étape suivante, vous allez créer une propriété gérée, puis mapper la propriété gérée sur cette propriété analysée.
   
 ### <a name="step-2-create-a-managed-property"></a>Étape 2 : création d’une propriété gérée
 
 1. Connectez-vous au centre d’administration Office 365.
     
-2. Dans le volet de navigation de gauche, sélectionnez **centres** \> d'administration **SharePoint**. Vous êtes maintenant dans le centre d'administration SharePoint.
+2. Dans le volet de navigation de gauche, sélectionnez **centres** \> d'administration **SharePoint**. Vous vous trouvez maintenant dans le Centre d’administration SharePoint.
     
 3. Dans le volet de navigation de gauche, sélectionnez **recherche** \> dans la \> **** page Administration de la **recherche** .
     
@@ -116,7 +115,7 @@ Pour plus d'informations sur ces cmdlets, consultez [la rubrique &amp; Office 36
     
 Lorsque vous avez terminé, votre stratégie doit avoir deux nouvelles règles qui utilisent les **Propriétés du document contiennent l'une de ces valeurs** . Notez que cette condition n'apparaît pas dans l'interface utilisateur, bien que les autres conditions, actions et paramètres apparaissent. 
   
-Une règle bloque l'accès au contenu dans lequel la propriété d' **informations d'identification personnelle** est **élevée** ou **modérée**. Une seconde règle envoie une notification sur le contenu dont la propriété **information d'identification personnelle** est **faible**.
+Une règle bloque l’accès au contenu pour lequel la propriété **Informations d’identification personnelle** est définie sur **Haut** ou **Modéré**. Une deuxième règle envoie une notification sur le contenu pour lequel la propriété **Informations d’identification personnelle** est définie sur **Faible**.
   
 ![Nouvelle boîte de dialogue de stratégie DLP montrant les deux règles venant d’être créées](media/5c56c13b-62a5-4f25-8eb7-ce83a844bb12.png)
   
@@ -127,7 +126,7 @@ L'exécution des étapes décrites dans les sections précédentes crée une str
 Pour détecter tout le contenu avec cette propriété, vous voudrez peut-être demander manuellement la réindexation de votre bibliothèque, site ou collection de sites, afin que la stratégie DLP connaisse tout le contenu avec cette propriété. Dans SharePoint Online, le contenu est automatiquement analysé selon une planification d’analyse définie. Le robot récupère le contenu qui a été modifié depuis la dernière analyse et met à jour l’index. Si vous avez besoin que votre stratégie DLP protège le contenu avant la prochaine analyse planifiée, vous pouvez suivre cette procédure.
   
 > [!CAUTION]
-> La réindexation d'un site peut entraîner une charge massive sur le système de recherche. Ne réindexez pas votre site, sauf si votre scénario l'exige. 
+> La réindexation d’un site peut entraîner une charge importante sur le système de recherche. Ne réindexez pas votre site, sauf si votre scénario l'exige. 
   
 Pour plus d'informations, reportez-vous à [demander l'analyse et la réindexAtion manuelle d'un site, d'une bibliothèque ou d'une liste](http://go.microsoft.com/fwlink/p/?LinkID=627457).
   

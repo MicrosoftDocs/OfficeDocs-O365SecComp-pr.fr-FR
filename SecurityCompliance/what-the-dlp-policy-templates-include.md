@@ -9,22 +9,22 @@ ms.topic: reference
 f1_keywords:
 - ms.o365.cc.DLPNewPolicyFromTemplate
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: c2e588d3-8f4f-4937-a286-8c399f28953a
 description: La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365 inclut des modèles de stratégie prêts à l'emploi qui répondent à des exigences de conformité communes, telles que la protection des informations sensibles soumises à la loi américaine Health Insurance Act ( HIPAA), U.S. Gramm-Leach-Bliley Act (GLBA) ou U.S. Patriot Act. Cette rubrique répertorie tous les modèles de stratégie, les types d'informations sensibles qu'ils recherchent, ainsi que les conditions et les actions par défaut.
-ms.openlocfilehash: a8c39d2ee3f8bf2097c07386bc1f775d947950c3
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 74c575df18c7e75eba9f01c7864b7fe8502ccde9
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213834"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30411009"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>Ce qu’incluent les modèles de stratégie DLP
 
-La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365 inclut des modèles de stratégie prêts à l'emploi qui répondent à des exigences de conformité communes, telles que la protection des informations sensibles soumises à la loi américaine Health Insurance Act ( HIPAA), U.S. Gramm-Leach-Bliley Act (GLBA) ou U.S. Patriot Act. Cette rubrique répertorie tous les modèles de stratégie, les types d'informations sensibles qu'ils recherchent, ainsi que les conditions et les actions par défaut. Cette rubrique n'inclut pas tous les détails de la configuration de chaque modèle de stratégie; au lieu de cela, la rubrique contient suffisamment d'informations pour vous aider à déterminer quel modèle est le meilleur point de départ pour votre scénario. N'oubliez pas que vous pouvez personnaliser ces modèles de stratégie pour répondre à vos besoins spécifiques.
+La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365 inclut des modèles de stratégie prêts à l'emploi qui répondent à des exigences de conformité communes, telles que la protection des informations sensibles soumises à la loi américaine Health Insurance Act ( HIPAA), U.S. Gramm-Leach-Bliley Act (GLBA) ou U.S. Patriot Act. Cette rubrique répertorie tous les modèles de stratégie, les types d'informations sensibles qu'ils recherchent, ainsi que les conditions et les actions par défaut. Elle ne comprend pas tous les détails de configuration de chaque modèle de stratégie, mais présente suffisamment d’informations pour vous aider à déterminer quel modèle est le meilleur point de départ pour votre cas. N’oubliez pas que vous pouvez personnaliser ces modèles de stratégie pour répondre à vos besoins spécifiques.
   
 ## <a name="australia-financial-data"></a>Données financières en Australie
 
@@ -219,15 +219,15 @@ La protection contre la perte de données (DLP) dans &amp; le centre de sécurit
 
 |**Nom de la règle**|**Conditions <br/> (y compris les types d'informations sensibles)**|**Actions**|
 |:-----|:-----|:-----|
-|Loi AMRA pour le Royaume-Uni : analyser le contenu partagé hors de l’organisation - faible nombre  <br/> | Le contenu contient des informations sensibles :  <br/>  Numéro du service de santé national (NHS) du Royaume-Uni — Nombre minimal 1, nombre maximal 9  <br/>  Numéro d’assurance national (NINO) du Royaume-Uni — Nombre minimal 1, nombre maximal 9  <br/>  Le contenu est partagé avec :  <br/>  Des personnes extérieures à mon organisation  <br/> |Envoyer une notification  <br/> |
-|Loi AMRA pour le Royaume-Uni : analyser le contenu partagé hors de l’organisation - nombre élevé  <br/> | Le contenu contient des informations sensibles :  <br/>  Numéro du service de santé national (NHS) du Royaume-Uni — Nombre minimal 10, nombre maximal « tout »  <br/>  Numéro d’assurance national (NINO) du Royaume-Uni — Nombre minimal 10, nombre maximal « tout »  <br/>  Le contenu est partagé avec :  <br/>  Des personnes extérieures à mon organisation  <br/> | Bloquer l’accès au contenu  <br/>  Envoyer une notification  <br/>  Autoriser le remplacement  <br/>  Exiger une justification professionnelle  <br/>  Envoyer un rapport d’incident  <br/> |
+|Loi AMRA pour le Royaume-Uni : analyser le contenu partagé hors de l’organisation - faible nombre  <br/> | Le contenu contient des informations sensibles :  <br/>  Impérial Numéro de service de santé national — nombre minimal 1, nombre maximal 9  <br/>  Impérial Numéro d'assurance nationale (NINO) — nombre minimal 1, nombre maximal 9  <br/>  Le contenu est partagé avec :  <br/>  Des personnes extérieures à mon organisation  <br/> |Envoyer une notification  <br/> |
+|Loi AMRA pour le Royaume-Uni : analyser le contenu partagé hors de l’organisation - nombre élevé  <br/> | Le contenu contient des informations sensibles :  <br/>  Impérial Numéro de service de santé national — nombre minimal 10, nombre maximal «tout»  <br/>  Impérial Numéro d'assurance nationale (NINO) — nombre minimal 10, nombre maximal «tout»  <br/>  Le contenu est partagé avec :  <br/>  Des personnes extérieures à mon organisation  <br/> | Bloquer l’accès au contenu  <br/>  Envoyer une notification  <br/>  Autoriser le remplacement  <br/>  Exiger une justification professionnelle  <br/>  Envoyer un rapport d’incident  <br/> |
    
 ## <a name="uk-data-protection-act"></a>U.K. Data Protection Act
 
 |**Nom de la règle**|**Conditions <br/> (y compris les types d'informations sensibles)**|**Actions**|
 |:-----|:-----|:-----|
-|DPA pour le Royaume-Uni : analyser le contenu partagé hors de l’organisation - faible nombre  <br/> | Le contenu contient des informations sensibles :  <br/>  Numéro d’assurance national (NINO) du Royaume-Uni — Nombre minimal 1, nombre maximal 9  <br/>  Numéro de passeport des États-Unis/du Royaume-Uni — Nombre minimal 1, nombre maximal 9  <br/>  Code SWIFT — Nombre minimal 1, nombre maximal 9  <br/>  Le contenu est partagé avec :  <br/>  Des personnes extérieures à mon organisation  <br/> |Envoyer une notification  <br/> |
-|DPA pour le Royaume-Uni : analyser le contenu partagé hors de l’organisation - nombre élevé  <br/> | Le contenu contient des informations sensibles :  <br/>  Numéro d’assurance national (NINO) du Royaume-Uni — Nombre minimal 10, nombre maximal « tout »  <br/>  Numéro de passeport des États-Unis/du Royaume-Uni — Nombre minimal 10, nombre maximal « tout »  <br/>  Code SWIFT — Nombre minimal 10, nombre maximal « tout »  <br/>  Le contenu est partagé avec :  <br/>  Des personnes extérieures à mon organisation  <br/> | Bloquer l’accès au contenu  <br/>  Envoyer une notification  <br/>  Autoriser le remplacement  <br/>  Exiger une justification professionnelle  <br/>  Envoyer un rapport d’incident  <br/> |
+|DPA pour le Royaume-Uni : analyser le contenu partagé hors de l’organisation - faible nombre  <br/> | Le contenu contient des informations sensibles :  <br/>  Numéro d’assurance national (NINO) du Royaume-Uni — Nombre minimal 1, nombre maximal 9  <br/>  ANGLAIS (ÉTATS-UNIS) Numéro de passeport — nombre minimal 1, nombre maximal 9  <br/>  Code SWIFT — Nombre minimal 1, nombre maximal 9  <br/>  Le contenu est partagé avec :  <br/>  Des personnes extérieures à mon organisation  <br/> |Envoyer une notification  <br/> |
+|DPA pour le Royaume-Uni : analyser le contenu partagé hors de l’organisation - nombre élevé  <br/> | Le contenu contient des informations sensibles :  <br/>  Numéro d’assurance national (NINO) du Royaume-Uni — Nombre minimal 10, nombre maximal « tout »  <br/>  ANGLAIS (ÉTATS-UNIS) Numéro de passeport — nombre minimal 10, nombre maximal «tout»  <br/>  Code SWIFT — Nombre minimal 10, nombre maximal « tout »  <br/>  Le contenu est partagé avec :  <br/>  Des personnes extérieures à mon organisation  <br/> | Bloquer l’accès au contenu  <br/>  Envoyer une notification  <br/>  Autoriser le remplacement  <br/>  Exiger une justification professionnelle  <br/>  Envoyer un rapport d’incident  <br/> |
    
 ## <a name="uk-financial-data"></a>Données financières R.U.
 
@@ -282,7 +282,7 @@ La protection contre la perte de données (DLP) dans &amp; le centre de sécurit
 
 |**Nom de la règle**|**Conditions <br/> (y compris les types d'informations sensibles)**|**Actions**|
 |:-----|:-----|:-----|
-|Le contenu correspond à la loi américaine HIPAA  <br/> | Contient les informations sensibles suivantes:  <br/>  Numéro de sécurité sociale américain (SSN) — nombre minimal 1, nombre maximal «tout»  <br/>  Numéro de l'Agence de l'application du médicament (DEA) — nombre minimal 1, nombre maximal «tout»  <br/> **LES** <br/>  Le contenu contient l'un des termes suivants:  <br/>  Classification internationale des maladies (ICD-9-CM) — nombre minimal 1, nombre maximal «tout»  <br/>  Classification internationale des maladies (ICD-10-CM) — nombre minimal 1, nombre maximal «tout»  <br/>  Le contenu est partagé avec :  <br/>  Des personnes extérieures à mon organisation  <br/> |Envoyer une notification  <br/> |
+|Le contenu correspond à la loi américaine HIPAA  <br/> | Contient les informations sensibles suivantes:  <br/>  Numéro de sécurité sociale américain (SSN) — nombre minimal 1, nombre maximal «tout»  <br/>  Numéro de l'Agence de l'application du médicament (DEA) — nombre minimal 1, nombre maximal «tout»  <br/> **AND** <br/>  Le contenu contient l'un des termes suivants:  <br/>  Classification internationale des maladies (ICD-9-CM) — nombre minimal 1, nombre maximal «tout»  <br/>  Classification internationale des maladies (ICD-10-CM) — nombre minimal 1, nombre maximal «tout»  <br/>  Le contenu est partagé avec :  <br/>  Des personnes extérieures à mon organisation  <br/> |Envoyer une notification  <br/> |
    
 ## <a name="us-patriot-act"></a>U.S. Patriot Act
 
