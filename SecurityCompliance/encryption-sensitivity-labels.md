@@ -8,17 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de sensibilité, vous pouvez restreindre l’accès au contenu auquel l’étiquette sera appliquée. Les étiquettes de sensibilité peuvent utiliser le chiffrement pour protéger le contenu.
-ms.openlocfilehash: aed8f46303d72d47f5810f1ca5612540007c52f0
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: c76fb44fa00edc141e5037b99258a9501e722d86
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410789"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455336"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Restriction de l’accès au contenu à l’aide du chiffrement dans les étiquettes de sensibilité
 

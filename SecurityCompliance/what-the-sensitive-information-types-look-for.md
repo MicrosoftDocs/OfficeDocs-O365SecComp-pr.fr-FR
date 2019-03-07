@@ -11,19 +11,19 @@ f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
-ms.assetid: fd505979-76be-4d9f-b459-abef3fc9e86b
-description: La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité d'Office 365 inclut 80 types d'informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP doit rechercher lorsqu'elle détecte chaque type.
-ms.openlocfilehash: 17fb0b8d745168f8000fba9e6fc42f3c255a1937
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.collection:
+- M365-security-compliance
+description: La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité d'Office 365 inclut 80 types d'informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP recherche pour chaque type.
+ms.openlocfilehash: 55fa8b6855a9a5bf2c84f6555dd8c8227a2ad9cf
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216354"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455266"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Éléments recherchés par les types d’informations sensibles
 
-La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365 inclut de nombreux types d'informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP doit rechercher lorsqu'elle détecte chaque type. Un type d'informations sensibles est défini par un modèle qui peut être identifié par une expression régulière ou une fonction. En outre, des preuves corroborées telles que des mots clés et des checksum peuvent être utilisées pour identifier un type d'informations sensibles. Le niveau de confiance et la proximité sont également utilisés dans le processus d'évaluation.
+La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365 inclut de nombreux types d'informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP recherche pour chaque type. Un type d'informations sensibles est défini par un modèle qui peut être identifié par une fonction ou une expression régulière. En outre, des preuves corroborantes comme les mots clés et les sommes de contrôle peuvent être utilisées pour identifier un type d'informations sensibles. Le niveau de confiance et la proximité sont également utilisés dans le processus d’évaluation.
   
 ## <a name="aba-routing-number"></a>Numéro de routage ABA
 
@@ -33,7 +33,7 @@ La protection contre la perte de données (DLP) dans &amp; le centre de sécurit
 
 ### <a name="pattern"></a>Modèle
 
-Mis en forme :
+Avec
 - Quatre chiffres commençant par 0, 1, 2, 3, 6, 7 ou 8
 - Un trait d’union 
 - Quatre chiffres
@@ -67,39 +67,23 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywordabarouting"></a>Keyword_ABA_Routing
 
-- aba
-- 
-# aba
-- 
-# routage aba
-- Numéro d'acheminement ABA
-- 
-#aba
-- 
-#routageaba
-- 
-numéro aba
-- 
-numéroroutageaba
-- 
-# routage american bank association
-- 
-numéro de routage american bank association
-- 
-#routageamericanbankassociation
-- 
-numéroderoutageamericanbankassociation
-- 
-numéro de routage bancaire
-- 
-#routagebancaire
-- 
-numéroderoutagebancaire
-- 
-numéro de routage
-- 
-RTN
- 
+- ABA
+- # aba
+- # routage aba
+- numéro de routage aba
+- ABA
+- abarouting #
+- numéro aba
+- abaroutingnumber
+- # routage american bank association
+- numéro de routage american bank association
+- americanbankassociationrouting #
+- americanbankassociationroutingnumber
+- numéro de routage bancaire
+- bankrouting #
+- bankroutingnumber
+- numéro de routage
+- RTN 
    
 ## <a name="argentina-national-identity-dni-number"></a>Numéro d’identité nationale (DNI) pour l’Argentine
 
@@ -136,25 +120,19 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordargentinanationalid"></a>Keyword_argentina_national_id
 
-- Argentina National Identity number
- 
+- Argentina National Identity number 
 - Identité 
 - Identification de la carte d'identité nationale 
-- DNI
- 
+- DNI 
 - CARTE d'interface réseau nationale du registre des personnes 
-- Documento Nacional de Identidad
- 
-- Registro Nacional de las Personas
- 
-- Identidad
- 
-- Identificación
- 
+- Documento Nacional de Identidad 
+- Registro Nacional de las Personas 
+- Identidad 
+- Identificación 
    
 ## <a name="australia-bank-account-number"></a>Numéro de compte bancaire Australie
 
@@ -164,7 +142,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="pattern"></a>Modèle
 
-Le numéro de compte est de 6-10 chiffres. Numéro de succursale de l'état bancaire Australie:
+Le numéro de compte est composé de 6 à 10 chiffres.
+Numéro de succursale bancaire en Australie :
 - Trois chiffres 
 - Un trait d’union 
 - Trois chiffres
@@ -204,31 +183,18 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywordaustraliabankaccountnumber"></a>Keyword_australia_bank_account_number
 
 - code swift banque
-- 
-banque correspondante
-- 
-devise de base
-- 
-compte aux États-Unis
-- 
-adresse du titulaire
-- 
-adresse de la banque
-- 
-informations du compte
-- 
-transferts de fonds
-- 
-frais bancaires
-- 
-informations sur la banque
-- 
-informations bancaires
-- 
-noms complets
-- 
-
-iaea
+- banque correspondante
+- devise de base
+- compte aux États-Unis
+- adresse du titulaire
+- adresse de la banque
+- informations du compte
+- transferts de fonds
+- frais bancaires
+- informations sur la banque
+- informations bancaires
+- noms complets
+- auront
 
    
 ## <a name="australia-drivers-license-number"></a>Numéro de permis de conduire Australie
@@ -278,101 +244,85 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordaustraliadriverslicensenumber"></a>Keyword_australia_drivers_license_number
 
 - permis de conduite internationaux
-- 
-australian automobile association
-- 
-permis de conduite international
+- australian automobile association
+- permis de conduite international
 - DriverLicence
 - DriverLicences
-- Gestionnaire de la LIC
+- Permis conduire
 - Permis de conduire
-
 - Permis de conduire
-
 - DriversLic
 - DriversLicence
 - DriversLicences
-- Pilotes Lic
-- Pilotes conduire
+- Permis conduire
+- Permis conduire
 - Permis de conduire
 - Permis de conduire
 - Driver'Lic
 - Driver'Lics
 - Driver'Licence
 - Driver'Licences
-- Driver'Lic
-- Pilote'conduire
+- Permis conduire
+- Permis conduire
 - Permis de conduire
 - Permis de conduire
 - Driver'sLic
 - Driver'sLics
 - Driver'sLicence
 - Driver'sLicences
-- Gestionnaire de la LIC
-- Conduire du pilote
 - Permis de conduire
-
 - Permis de conduire
-
+- Permis de conduire
+- Permis de conduire
 - DriverLic #
 - DriverLics #
 - DriverLicence #
 - DriverLicences #
 - #Permis conduire
-- 
-#Permis conduire
-
-- # Permis de conduire
-- N ° permis de conduire
+- #Permis conduire
+- #Permis de conduire
+- #Permis de conduire
 - DriversLic #
 - DriversLics #
 - DriversLicence #
 - DriversLicences #
-- Drivers Lic #
-- Nombre de pilotes conduire
-- # Permis de conduire
-- N ° permis de conduire
-- #Permisconduire
-
-- #Permisconduire
-
-- #Permisdeconduire
-
-- #Permisdeconduire
-
 - #Permis conduire
-
 - #Permis conduire
-
-- Numéro de permis de conduire
-- Numéro de permis de conduire
+- #Permis de conduire
+- #Permis de conduire
+- Driver'Lic #
+- Driver'Lics #
+- Driver'Licence #
+- Driver'Licences #
+- #Permis conduire
+- #Permis conduire
+- #Permis de conduire
+- #Permis de conduire
 - Driver'sLic #
 - Driver'sLics #
 - Driver'sLicence #
 - Driver'sLicences #
 - #Permisconduire
-
 - #Permisconduire
-
-- Numéro de permis de conduire
-- Numéro de permis de conduire 
+- #Permis de conduire
+- #Permis de conduire 
 
 #### <a name="keywordaustraliadriverslicensenumberexclusions"></a>Keyword_australia_drivers_license_number_exclusions
 
-- aaa
+- AAA
 - DriverLicense
 - DriverLicenses
 - Permis de conduire
-- Licences de pilotes
+- Permis de conduire
 - DriversLicense
 - DriversLicenses
 - Permis de conduire
-- Licences de pilotes
+- Permis de conduire
 - Driver'License
 - Driver'Licenses
 - Permis de conduire
@@ -380,30 +330,23 @@ permis de conduite international
 - Driver'sLicense
 - Driver'sLicenses
 - Permis de conduire
-- Permis de conduire
+- Driver’s Licenses
 - DriverLicense #
 - DriverLicenses #
-- # Permis de conduire
-- # Permis de conduire
+- #Permis de conduire
+- #Permis de conduire
 - DriversLicense #
 - DriversLicenses #
-- # Permis de conduire
-- Nombre de licences de pilotes
-- #Permisdeconduire
-
-- #Permisdeconduire
-
 - #Permis de conduire
-
 - #Permis de conduire
-
+- Driver'License #
+- Driver'Licenses #
+- #Permis de conduire
+- #Permis de conduire
 - Driver'sLicense #
 - Driver'sLicenses #
 - #Permis de conduire
-
-- 
-
-#Permis de conduire
+- #Permis de conduire
    
 ## <a name="australia-medical-account-number"></a>Numéro de dossier médical Australie
 
@@ -452,27 +395,19 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordaustraliamedicalaccountnumber"></a>Keyword_Australia_Medical_Account_Number
 
 - informations sur le compte bancaire
-- 
-remboursements d’assurance maladie
-- 
-compte de prêts immobiliers
-- 
-paiements bancaires
-- 
-direction de l’information
-- 
-prêt sur carte de crédit
-- 
-département des services sociaux
+- remboursements d’assurance maladie
+- compte de prêts immobiliers
+- paiements bancaires
+- direction de l’information
+- prêt sur carte de crédit
+- département des services sociaux
 - service local
-- 
-
-medicare
+- médicaux
 
    
 ## <a name="australia-passport-number"></a>Numéro de passeport Australie
@@ -508,68 +443,43 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>   
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordpassport"></a>Keyword_passport
 
 - Numéro de passeport
-- 
-N° de passeport
+- N° de passeport
 - # Passeport
-
-- #Passeport
-
+- Tel
 - PassportID
-- n° passeport
-
-- numéropasseport
-
+- N ° passeport
+- passportnumber
 - パスポート
 - パスポート番号
-
 - パスポートのNum
-
-- 
-パスポート＃
- 
+- パスポート＃ 
 - Numéro de passeport
-- 
-Passeport n°
+- Passeport n°
 - Passeport numéro
-
 - # Passeport
-
-- Passeport#
-
+- Passeport
 - PasseportNon
 - Passeportn °
 
-
 #### <a name="keywordaustraliapassportnumber"></a>Keyword_australia_passport_number
 
-- passeport
-- 
-informations sur le passeport
-- 
-immigration et citoyenneté
-- 
-Australie
-- 
-service de l’immigration
-- 
-adresse de résidence
-- 
-service de l’immigration et de la citoyenneté
-- visa
-
-- 
-Carte nationale d’identité
-- Numéro de passeport
-- 
-document de voyage
-- 
-
-autorité émettrice
+- tel
+- informations sur le passeport
+- immigration et citoyenneté
+- Australie
+- service de l’immigration
+- adresse de résidence
+- service de l’immigration et de la citoyenneté
+- délivrance
+- Carte nationale d’identité
+- numéro de passeport
+- document de voyage
+- autorité émettrice
    
 ## <a name="australia-tax-file-number"></a>Numéro de dossier fiscal Australie
 
@@ -611,26 +521,18 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordaustraliataxfilenumber"></a>Keyword_Australia_Tax_File_Number
 
 - numéro d’entreprise australien
-- 
-taux d’imposition marginale
-- 
-prélèvement d’assurance maladie
-- 
-numéro de portefeuille
-- 
-service des vétérans
-- 
-retenue à la source
-- 
-déclaration d’impôts individuels
-- 
-
-numéro de dossier fiscal
+- taux d’imposition marginale
+- prélèvement d’assurance maladie
+- numéro de portefeuille
+- service des vétérans
+- retenue à la source
+- déclaration d’impôts individuels
+- numéro de dossier fiscal
 
 #### <a name="keywordnumberexclusions"></a>Keyword_number_exclusions
 
@@ -677,7 +579,7 @@ numéro de dossier fiscal
 - Six chiffres et deux points au format AA.MM.JJ pour la date de naissance  
 - Un trait d’union  
 - Trois chiffres séquentiels (impairs pour les hommes, pairs pour les femmes)  
-- Un point 
+- Un point  
 - Deux chiffres de contrôle
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -701,33 +603,25 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordbelgiumnationalnumber"></a>Keyword_belgium_national_number
 
 - Identité
-- Registration
-- Identification 
+- Son
+- Identificateur 
 - ID 
 - Identiteitskaart
 - Registratie nummer 
- 
-- Identificatie nummer
- 
+- Identificatie nummer 
 - Identiteit
 - Registratie
-- Identificatie
-
- 
-- Carte d’identité
- 
+- Identificatie 
+- Carte d’identité 
 - numéro d’immatriculation
 - numéro d’identification
-- 
-identité
- 
-- inscription
- 
+- identité 
+- inscriptions 
 - Identifikation
 - Identifizierung
 - Identifikationsnummer
@@ -744,16 +638,16 @@ identité
 
 ### <a name="pattern"></a>Modèle
 
-Mis en forme :
-- Trois chiffres  
-- Un point  
-- Trois chiffres  
+Avec
+- Trois chiffres 
 - Un point  
 - Trois chiffres 
-- Un trait d’union 
+- Un point  
+- Trois chiffres 
+- Un trait d’union  
 - Deux chiffres de contrôle
 
-Non mis en forme :
+Non
 - 11 chiffres où les deux derniers sont des chiffres de contrôle
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -784,25 +678,19 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordbrazilcpf"></a>Keyword_brazil_cpf
 
 - CPF
-- Identification
-- Registration
-- Revenue
-- Cadastro de Pessoas Físicas
- 
-- Imposto
- 
-- Identificação
- 
-- Inscrição
- 
-- Receita
-
- 
+- Identificateur
+- Son
+- Parts
+- Cadastro de Pessoas Físicas 
+- Imposto 
+- Identificação 
+- Inscrição 
+- Receita 
    
 ## <a name="brazil-legal-entity-number-cnpj"></a>Numéro d’entité juridique (CNPJ) Brésil
 
@@ -813,8 +701,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="pattern"></a>Modèle
 14 chiffres plus des délimiteurs :
 - Deux chiffres 
-- Un point 
-- Trois chiffres  
+- Un point  
+- Trois chiffres 
 - Un point  
 - Trois chiffres (ces huit premiers chiffres composent le numéro d’enregistrement)  
 - Une barre oblique  
@@ -850,46 +738,29 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordbrazilcnpj"></a>Keyword_brazil_cnpj
 
-- CNPJ
- 
+- CNPJ 
 - CNPJ/MF 
-- CNPJ-MF
- 
-- National Registry of Legal Entities
- 
-- Taxpayers Registry
- 
-- Legal entity
- 
-- Legal entities
- 
-- Registration Status
- 
-- Business
- 
+- CNPJ-MF 
+- National Registry of Legal Entities 
+- Taxpayers Registry 
+- Legal entity 
+- Legal entities 
+- Registration Status 
+- Business 
 - Company
-- CNPJ
- 
-- Cadastro Nacional da Pessoa Jurídica
- 
-- Cadastro Geral de Contribuintes
- 
-- CGC
- 
-- Pessoa jurídica
- 
-- Pessoas jurídicas
- 
-- Situação cadastral
- 
-- Inscrição
- 
-- Empresa
- 
+- CNPJ 
+- Cadastro Nacional da Pessoa Jurídica 
+- Cadastro Geral de Contribuintes 
+- CGC 
+- Pessoa jurídica 
+- Pessoas jurídicas 
+- Situação cadastral 
+- Inscrição 
+- Empresa 
    
 ## <a name="brazil-national-id-card-rg"></a>	Brazil National ID Card (RG)
 
@@ -903,15 +774,15 @@ Registro de identidade (RIC) (nouveau format): 11 chiffres
 
 Registro Geral (ancien format) :
 - Deux chiffres 
-- Un point 
-- Trois chiffres  
-- Un point 
+- Un point  
+- Trois chiffres 
+- Un point  
 - Trois chiffres 
 - Un trait d’union  
 - Un chiffre de contrôle
 
 Registro de identidade (RIC) (nouveau format):
-- 10 chiffres  
+- 10 chiffres 
 - Un trait d’union  
 - Un chiffre de contrôle
 
@@ -943,7 +814,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordbrazilrg"></a>Keyword_brazil_rg
 
@@ -961,7 +832,7 @@ Un numéro de compte bancaire au Canada est composé de sept ou douze chiffres.
 
 Un numéro de transit de compte bancaire du Canada est indiqué au format suivant :
 - Cinq chiffres 
-- Un trait d’union  
+- Un trait d’union 
 - Trois chiffres ou
 - Un zéro « 0 »  
 - Huit chiffres
@@ -1001,46 +872,26 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywordcanadabankaccountnumber"></a>Keyword_canada_bank_account_number
 
 - obligations d’épargne du Canada
-- 
-agence du revenu du Canada
-- 
-institution financière du Canada
-- 
-formulaire de dépôt direct
-- 
-citoyen canadien
-- 
-représentant légal
-- 
-notaire
-- 
-commissaire à l’assermentation
-- 
-prestation pour la garde d’enfants
-- 
-prestation universelle pour la garde d’enfants
-- 
-prestation fiscale canadienne pour enfants
-- 
-prestation fiscale pour le revenu gagné
-- 
-taxe de vente harmonisée
+- agence du revenu du Canada
+- institution financière du Canada
+- formulaire de dépôt direct
+- citoyen canadien
+- représentant légal
+- notaire
+- commissaire à l’assermentation
+- prestation pour la garde d’enfants
+- prestation universelle pour la garde d’enfants
+- prestation fiscale canadienne pour enfants
+- prestation fiscale pour le revenu gagné
+- taxe de vente harmonisée
 - numéro d’assurance sociale
-- 
-remboursement d’impôt
-- 
-prestation fiscale pour enfants
-- 
-paiements aux territoires
-- 
-numéro d’institution
-- 
-demande de dépôt
-- 
-informations bancaires
-- 
-
-dépôt direct
+- remboursement d’impôt
+- prestation fiscale pour enfants
+- paiements aux territoires
+- numéro d’institution
+- demande de dépôt
+- informations bancaires
+- dépôt direct
    
 ## <a name="canada-drivers-license-number"></a>Numéro de permis de conduire Canada
 
@@ -1119,18 +970,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
-#### <a name="keywordprovincenamedriverslicensename"></a>Keyword_[province_name]_drivers_license_name
+#### <a name="keywordprovincenamedriverslicensename"></a>Keyword_ [province_name] _drivers_license_name
 
 - L’abréviation de la province, par exemple AB
-- 
-Le nom de la province, par exemple Alberta
+- Le nom de la province, par exemple Alberta
 
 #### <a name="keywordcanadadriverslicense"></a>Keyword_canada_drivers_license
 
-- PC
-- PC
+- LD
+- DISTRIBUTION
 - CÈDE
 - CDLS
 - DriverLic
@@ -1139,24 +989,22 @@ Le nom de la province, par exemple Alberta
 - DriverLicenses
 - DriverLicence
 - DriverLicences
-- Gestionnaire de la LIC
-- Pilote conduire
+- Permis conduire
+- Permis conduire
 - Permis de conduire
-- Licences de pilotes
 - Permis de conduire
-
 - Permis de conduire
-
+- Permis de conduire
 - DriversLic
 - DriversLics
 - DriversLicence
 - DriversLicences
 - DriversLicense
 - DriversLicenses
-- Pilotes Lic
-- Pilotes conduire
+- Permis conduire
+- Permis conduire
 - Permis de conduire
-- Licences de pilotes
+- Permis de conduire
 - Permis de conduire
 - Permis de conduire
 - Driver'Lic
@@ -1165,8 +1013,8 @@ Le nom de la province, par exemple Alberta
 - Driver'Licenses
 - Driver'Licence
 - Driver'Licences
-- Driver'Lic
-- Pilote'conduire
+- Permis conduire
+- Permis conduire
 - Permis de conduire
 - Permis de conduire
 - Permis de conduire
@@ -1177,49 +1025,33 @@ Le nom de la province, par exemple Alberta
 - Driver'sLicenses
 - Driver'sLicence
 - Driver'sLicences
-- Gestionnaire de la LIC
-- Conduire du pilote
 - Permis de conduire
 - Permis de conduire
 - Permis de conduire
-
 - Permis de conduire
-
+- Permis de conduire
+- Permis de conduire
 - Permis de conduire
 - id
-- codes
-- 
-numéro carte d’identification
-- 
-numéros carte d’identification
-- 
-# carte d’identification
-- 
-# carte d’identification
-- carte carte d'identification
-- cartes carte d'identification
+- Ids
+- numéro carte d’identification
+- numéros carte d’identification
+- # carte d’identification
+- # carte d’identification
+- carte d’identification
+- cartes d’identification
 - carte d'identification
 - numéro d’identification
-
 - numéros d’identification
-
 - # identification
-
-- 
-# identification
-- carte d'identification
-- cartes d'identification
-- 
-identification
- 
-- # PC
-- 
-# PC
- 
-- # PCD
- 
-- # PCD
- 
+- # identification
+- carte d’identification
+- cartes d’identification
+- identificateur 
+- LD
+- DISTRIBUTION 
+- CÈDE 
+- CDLS # 
 - DriverLic # 
 - DriverLics # 
 - DriverLicense # 
@@ -1227,78 +1059,56 @@ identification
 - DriverLicence # 
 - DriverLicences # 
 - #Permis conduire
-- 
-#Permis conduire
- 
-- # Permis de conduire 
-- # Permis de conduire 
-- # Permis de conduire 
-- N ° permis de conduire 
+- #Permis conduire 
+- #Permis de conduire 
+- #Permis de conduire 
+- #Permis de conduire 
+- #Permis de conduire 
 - DriversLic # 
 - DriversLics # 
 - DriversLicense # 
 - DriversLicenses # 
 - DriversLicence # 
 - DriversLicences # 
-- Drivers Lic # 
-- Nombre de pilotes conduire 
-- # Permis de conduire 
-- Nombre de licences de pilotes 
-- # Permis de conduire 
-- N ° permis de conduire 
-- #Permisconduire
- 
-- #Permisconduire
- 
-- #Permisdeconduire
- 
-- #Permisdeconduire
- 
-- #Permisdeconduire
- 
-- #Permisdeconduire
- 
-- #Permis conduire
- 
-- #Permis conduire
- 
-- #Permis de conduire
- 
-- #Permis de conduire
- 
-- Numéro de permis de conduire 
-- Numéro de permis de conduire 
+- #Permis conduire 
+- #Permis conduire 
+- #Permis de conduire 
+- #Permis de conduire 
+- #Permis de conduire 
+- #Permis de conduire 
+- Driver'Lic # 
+- Driver'Lics # 
+- Driver'License # 
+- Driver'Licenses # 
+- Driver'Licence # 
+- Driver'Licences # 
+- #Permis conduire 
+- #Permis conduire 
+- #Permis de conduire 
+- #Permis de conduire 
+- #Permis de conduire 
+- #Permis de conduire 
 - Driver'sLic # 
 - Driver'sLics # 
 - Driver'sLicense # 
 - Driver'sLicenses # 
 - Driver'sLicence # 
 - Driver'sLicences # 
-- #Permisconduire
- 
-- #Permisconduire
- 
-- #Permis de conduire
- 
-- #Permis de conduire
- 
-- Numéro de permis de conduire 
-- Numéro de permis de conduire 
+- #Permisconduire 
+- #Permisconduire 
+- #Permis de conduire 
+- #Permis de conduire 
+- #Permis de conduire 
+- #Permis de conduire 
 - Permis de conduire # 
 - Réf 
 - codes 
-- #carte carte d’identification
- 
-- #cartes carte d’identification
- 
-- #carte d’identification
- 
-- #carte d’identification
- 
-- #cartes d’identification
- 
-- #identification
- 
+- #carte carte d’identification 
+- #cartes carte d’identification 
+- carte d'identification 
+- #carte d’identification 
+- #cartes d’identification 
+- identificateur 
    
 ## <a name="canada-health-service-number"></a>Numéro de service de santé Canada
 
@@ -1337,21 +1147,14 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywordcanadahealthservicenumber"></a>Keyword_canada_health_service_number
 
 - numéro d’assurance-maladie
-- 
-informations sur le patient
+- informations sur le patient
 - services de santé
-- 
-services spécialisés
-- 
-accident automobile
-- 
-hôpital pour malades
-- 
-psychiatre
-- 
-indemnisation des salariés
-- 
-handicap
+- services spécialisés
+- accident automobile
+- hôpital pour malades
+- Psychiatrist
+- indemnisation des salariés
+- incapacité
       
 ## <a name="canada-passport-number"></a>Numéro de passeport Canada
 
@@ -1391,58 +1194,36 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywordcanadapassportnumber"></a>Keyword_canada_passport_number
 
 - citoyenneté canadienne
-- 
-passeport canadien
-- 
-demande de passeport
-- 
-photos pour passeport
-- 
-traducteur agréé
-- 
-citoyens canadiens
-- 
-temps de traitement
-- 
-
-demande de renouvellement
+- passeport canadien
+- demande de passeport
+- photos pour passeport
+- traducteur agréé
+- citoyens canadiens
+- temps de traitement
+- demande de renouvellement
 
 #### <a name="keywordpassport"></a>Keyword_passport
 
 - Numéro de passeport
-- 
-N° de passeport
+- N° de passeport
 - # Passeport
-
-- #Passeport
-
+- Tel
 - PassportID
-- n° passeport
-
-- numéropasseport
-
+- N ° passeport
+- passportnumber
 - パスポート
 - パスポート番号
-
 - パスポートのNum
-
-- パスポート＃
-
+- パスポート #
 - Numéro de passeport
-- 
-Passeport n°
+- Passeport n°
 - Passeport numéro
-
 - # Passeport
-
-- Passeport#
-
+- Passeport
 - PasseportNon
-- 
-
-Passeportn °
+- Passeportn °
    
-## <a name="canada-personal-health-identification-number-phin"></a>NIMP (numéro d'identification médicale personnel) Canada
+## <a name="canada-personal-health-identification-number-phin"></a>NIMP (numéro d’identification médicale personnel) Canada
 
 ### <a name="format"></a>Format
 
@@ -1458,7 +1239,8 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP est sûre à 75% d'avoir détecté ce type d'informations sensibles si, dans une proximité de 300 caractères: l'expression régulière Regex_canada_phin trouve le contenu qui correspond au modèle. Au moins deux mots clés de Keyword_canada_phin ou Keyword_canada_provinces sont trouvés..
+Une stratégie DLP est sûre à 75% d'avoir détecté ce type d'informations sensibles si, dans une proximité de 300 caractères: l'expression régulière Regex_canada_phin trouve le contenu qui correspond au modèle.
+Au moins deux mots clés de Keyword_canada_phin ou Keyword_canada_provinces sont trouvés..
 
 ```
 <!-- Canada PHIN -->
@@ -1473,67 +1255,41 @@ Une stratégie DLP est sûre à 75% d'avoir détecté ce type d'informations sen
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordcanadaphin"></a>Keyword_canada_phin
 
 - numéro d’assurance sociale
-- 
-loi sur les renseignements médicaux
-- 
-renseignements relatifs à l’impôt sur le revenu
-- 
-santé Manitoba
-- 
-enregistrement aux services de santé
-- 
-achats de médicaments sur ordonnance
-- 
-admissibilité aux prestations
-- 
-santé personnelle
-- 
-procuration
-- 
-numéro d’enregistrement
+- loi sur les renseignements médicaux
+- renseignements relatifs à l’impôt sur le revenu
+- santé Manitoba
+- enregistrement aux services de santé
+- achats de médicaments sur ordonnance
+- admissibilité aux prestations
+- santé personnelle
+- procuration
+- numéro d’enregistrement
 - numéro d’assurance-maladie
-- 
-recommandation par le médecin
-- 
-professionnel de bien-être
-- 
-orientation d’un patient
-- 
-
-santé et bien-être
+- recommandation par le médecin
+- professionnel de bien-être
+- orientation d’un patient
+- santé et bien-être
 
 #### <a name="keywordcanadaprovinces"></a>Keyword_canada_provinces
 
 - Nunavut
-- 
-Québec
-- 
-Territoires du Nord-Ouest
-- 
-Ontario
-- 
-Colombie-britannique
-- 
-Alberta
-- 
-Saskatchewan
-- 
-Manitoba
-- 
-Yukon
-- 
-Terre-Neuve-et-Labrador
-- 
-Nouveau-Brunswick
-- 
-Nouvelle-Écosse
-- 
-Île-du-Prince-Édouard
+- Régime
+- Territoires du Nord-Ouest
+- Brand
+- Colombie-britannique
+- Alberta
+- En-dessus
+- Manitoba
+- Yukon
+- Terre-Neuve-et-Labrador
+- Nouveau-Brunswick
+- Nouvelle-Écosse
+- Île-du-Prince-Édouard
 - Canada
    
 ## <a name="canada-social-insurance-number"></a>Numéro d'assurance sociale Canada
@@ -1544,11 +1300,11 @@ Neuf chiffres avec éventuellement des traits d’union ou des espaces
 
 ### <a name="pattern"></a>Modèle
 
-Mis en forme :
+Avec
+- Trois chiffres  
+- Un trait d’union ou un espace 
 - Trois chiffres 
-- Un trait d’union ou un espace  
-- Trois chiffres 
-- Un trait d’union ou un espace  
+- Un trait d’union ou un espace 
 - Trois chiffres
 
 Non mis en forme: neuf chiffres
@@ -1590,44 +1346,34 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsin"></a>Keyword_sin
 
-- sine 
-- assurance sociale
- 
-- numéro d’assurance sociale
- 
-- assoc
- 
+- assoc 
+- assurance sociale 
+- numéro d’assurance sociale 
+- péchés 
 - SSN 
 - numéros 
 - sécurité sociale 
-- numéro d’assurance sociale
- 
-- Numéro d'identification nationale 
-- 
-id national 
-- # assoc
- 
-- ass soc
- 
-- ass sociale
- 
+- numéro d’assurance sociale 
+- numéro d’identification nationale 
+- id national 
+- sine 
+- ass soc 
+- ass sociale 
 
 #### <a name="keywordsincollaborative"></a>Keyword_sin_collaborative
 
-- driver’s license 
-- drivers license 
 - permis de conduire 
 - permis de conduire 
-- DDN
- 
+- permis de conduire 
+- permis de conduire 
+- DOB 
 - Birthdate 
-- Anniversaire  
-- Date of Birth
- 
+- Anniversaire 
+- Date of Birth 
    
 ## <a name="chile-identity-card-number"></a>	Numéro de carte d’identité Chili
 
@@ -1641,7 +1387,7 @@ id national
 - 1 ou 2 chiffres  
 - Un point  
 - Trois chiffres 
-- Un point 
+- Un point  
 - Trois chiffres 
 - Un tiret 
 - Un chiffre ou une lettre (ne respectant pas la casse) de contrôle
@@ -1674,30 +1420,22 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordchileidcard"></a>Keyword_chile_id_card
 
-- National Identification Number
- 
+- National Identification Number 
 - Identity card 
 - ID 
-- Identification 
-- Rol Único Nacional
- 
+- Identificateur 
+- Rol Único Nacional 
 - GÉNÉRER 
-- Rol Único Tributario
- 
-- RUT
- 
-- Cédula de Identidad
- 
-- Número De Identificación Nacional
- 
-- Tarjeta de identificación
- 
-- Identificación
- 
+- Rol Único Tributario 
+- ROUTINE 
+- Cédula de Identidad 
+- Número De Identificación Nacional 
+- Tarjeta de identificación 
+- Identificación 
    
 ## <a name="china-resident-identity-card-prc-number"></a>	Numéro de carte d’identité de résident Chine (RPC)
 
@@ -1741,25 +1479,20 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 ### <a name="keywordchinaresidentid"></a>Keyword_china_resident_id
 
-- Resident Identity Card
- 
+- Resident Identity Card 
 - FIGURANT 
-- National Identification Card
- 
-- 身份证  
-- 居民 身份证  
-- 居民身份证
- 
-- 鉴定
-
- 
-- 身分證  
+- National Identification Card 
+- 身份证 
+- 居民 身份证 
+- 居民身份证 
+- 鉴定 
+- 身分證 
 - 居民 身份證
-- 鑑定  
+- 鑑定 
    
 ## <a name="credit-card-number"></a>Numéro de carte de crédit
 
@@ -1806,370 +1539,206 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordccverification"></a>Keyword_cc_verification
 
 - vérification de la carte
 - numéro d’identification de la carte
-- nvc
-
+- cryptogramme
 - nic
-
 - CVC2
 - CVV2
 - pin block
-
 - code de sécurité
-
 - numéro de sécurité
-
 - n° de sécurité
-
 - numéro d’émission
-
 - n° d’émission
-
 - cryptogramme
-
 - numéro de sécurité
-
 - numéro de sécurité
-
 - kreditkartenprüfnummer
-
 - kreditkartenprufnummer
-
-- prüfziffer
-
+- Prüfziffer
 - prufziffer
-
-- Sicherheits kode
-- sicherheitscode
-
+- sicherheits Kode
+- Sicherheitscode
 - sicherheitsnummer
-
 - verfalldatum
-
 - codice di verifica
-
-- cod. sicurezza
-
-- COD sicurezza
-- 
-n autorizzazione
-- código
-
-- codigo
-
-- cod. seg
-
-- segmentation COD
+- contre. sicurezza
+- cod sicurezza
+- n autorizzazione
+- Código
+- Codigo
+- contre. SEG
+- cod seg
 - código de segurança
-
 - codigo de seguranca
-
 - codigo de segurança
-
 - código de seguranca
-
-- cód. Segurança
-
+- Cód. Segurança
 - contre. Seguranca COD. Segurança
-- cód. seguranca
-
-- Cód Segurança
+- Cód. Seguranca
+- cód segurança
 - COD Seguranca COD Segurança
-- Cód Seguranca
+- cód seguranca
 - número de verificação
-
 - numero de verificacao
-
-- ablauf
-
+- Ablauf
 - gültig bis
-
 - gültigkeitsdatum
-
 - gultig bis
-
 - gultigkeitsdatum
-
 - scadenza
-
 - data scad
-
 - fecha de expiracion
-
 - fecha de venc
-
 - vencimiento
-
 - válido hasta
-
 - valido hasta
-
 - vto
-
 - data de expiração
-
 - data de expiracao
-
 - data em que expira
-
-- validade
-
-- valor
-
+- Validade
+- valorisation
 - vencimento
-
 - Venc 
 
 #### <a name="keywordccname"></a>Keyword_cc_name
 
-- amex
-- 
-american express
-- americanexpress
-
+- American
+- american express
+- AmericanExpress
 - Délivrance
-- mastercard
-
+- MasterCard
 - master card
-
-- 
-mc
- 
-- mastercards
-- 
-master cards
-- Club de dîner
+- McDonald 
+- MasterCard
+- master cards
+- diner’s Club
 - diners club
-
-- dinersclub
-
+- DinersClub
 - discover card
-
 - discovercard
-
 - discover cards
-
 - JCB
 - japanese card bureau
-
 - carte blanche
-
 - carteblanche
-
 - carte de crédit
-
 - CC
 - n ° de CC:
-- 
-date d’expiration
+- date d’expiration
 - date d’exp
-
-- 
-date d’expiration
-- 
-date d’expiration
-- 
-date d’exp
-- 
-date expiration
+- date d’expiration
+- date d’expiration
+- date d’exp
+- date expiration
 - carte bancaire
-
-- 
-carte bancaire
+- BankCard
 - numéro de carte
-
 - num de carte
-
-- numéro de carte
-
+- carte
+- carte
 - numéros de carte
-
-- numéros de carte
-
-- carte de crédit
-
+- CreditCard
 - cartes de crédit
-
-- cartes de crédit
-
-- ncc
-
+- crédit
+- CCN
 - titulaire de la carte
-
-- titulaire de la carte
-
+- titulaires
 - titulaires de la carte
-
-- titulaires de la carte
-
+- titulaires
 - carte de vérification
-
-- carte de vérification
-
+- carte
 - cartes de vérification
-
-- cartes de vérification
-
+- cartes
 - carte de débit
-
-- carte de débit
-
+- débit
 - cartes de débit
-
-- cartes de débit
-
+- débit
 - carte de retrait
-
-- carte de retrait
-
+- retrait
 - cartes de retrait
-
-- cartes de retrait
-
-- 
-enroute
-- 
-en route
+- retrait
+- envoier
+- en route
 - type de carte
-
 - carte bancaire
-
 - carte de crédit
-
 - carte de credit
-
 - numéro de carte
-
 - numero de carte
-
 - nº de la carte
-
 - nº de carte
-
-- kreditkarte
-
-- karte
-
+- Kreditkarte
+- Karte
 - karteninhaber
-
 - karteninhabers
 - kreditkarteninhaber
-
 - kreditkarteninstitut
-
 - kreditkartentyp
-
 - eigentümername
-
-- 
-kartennr
- 
+- kartennr 
 - kartennummer
-- 
-kreditkartennummer
+- Kreditkartennummer
 - Kreditkarten-Nummer
 - Carta di credito
-
 - Carta credito
-
 - Carta
-- n Carta
-- nr. carta
-
-- Nr Carta
+- n carta
+- Nr. Carta
+- nr carta
 - numero carta
-
 - numero della carta
-
 - numero di carta
-
 - tarjeta credito
-
 - tarjeta de credito
-
-- 
-tarjeta crédito
-- 
-tarjeta de crédito
+- tarjeta crédito
+- tarjeta de crédito
 - tarjeta de atm
-
 - tarjeta atm
-
 - tarjeta debito
-
 - tarjeta de debito
-
-- 
-tarjeta débito
-- 
-tarjeta de débito
+- tarjeta débito
+- tarjeta de débito
 - nº de tarjeta
-
-- no. de tarjeta
-
-- non de Tarjeta
+- Nbre. de tarjeta
+- no de tarjeta
 - numero de tarjeta
-
 - número de tarjeta
-
 - tarjeta no
-
 - tarjetahabiente
-
 - cartão de crédito
-
 - cartão de credito
-
 - cartao de crédito
-
 - cartao de credito
-
 - cartão de débito
-
 - cartao de débito
-
 - cartão de debito
-
 - cartao de debito
-
 - débito automático
 - debito automatico
-
-- 
-número do cartão
-- 
-numero do cartão
- 
+- número do cartão
+- numero do cartão 
 - número do cartao
-- 
-numero do cartao
+- numero do cartao
 - número de cartão
-
 - numero de cartão
-
 - número de cartao
-
 - numero de cartao
-
-- n º do cartão
+- nº do cartão
 - nº do cartao
-
-- nº. do cartão
-
-- non cartão
-- non cartao
-- no. do cartão
-
-- 
-no. do cartao
- 
+- n º. do cartão
+- no do cartão
+- no do cartao
+- Nbre. do cartão
+- Nbre. do cartao 
    
-## <a name="croatia-identity-card-number"></a>Numéro de carte d’identité croate
+## <a name="croatia-identity-card-number"></a>	Numéro de carte d’identité Croatie
 
 ### <a name="format"></a>Format
 
@@ -2247,15 +1816,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordcroatiaoibnumber"></a>Keyword_croatia_oib_number
 
 - Personal Identification Number
-- Osobni identifikacijski broj
- 
-- OIB
- 
+- Osobni identifikacijski broj 
+- OIB 
 
    
 ## <a name="czech-personal-identity-number"></a>Numéro d'identité personnelle tchèque
@@ -2290,7 +1857,9 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP est sûre à 85% d'avoir détecté ce type d'informations sensibles si, dans une proximité de 300 caractères: la fonction Func_czech_id_card trouve un contenu qui correspond au modèle. Un mot clé depuis Keyword_czech_id_card est trouvé. Le checksum réussit.
+Une stratégie DLP est sûre à 85% d'avoir détecté ce type d'informations sensibles si, dans une proximité de 300 caractères: la fonction Func_czech_id_card trouve un contenu qui correspond au modèle.
+Un mot clé figurant dans la liste Keyword_czech_id_card est trouvé.
+La somme de contrôle est correcte.
 
 ```
 <!-- Czech Personal Identity Number -->
@@ -2325,7 +1894,9 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP est sûre à 75% d'avoir détecté ce type d'informations sensibles si, dans une proximité de 300 caractères: l'expression régulière Regex_denmark_id trouve le contenu qui correspond au modèle. Un mot clé depuis Keyword_denmark_id est trouvé. Le checksum réussit.
+Une stratégie DLP est sûre à 75% d'avoir détecté ce type d'informations sensibles si, dans une proximité de 300 caractères: l'expression régulière Regex_denmark_id trouve le contenu qui correspond au modèle.
+Un mot clé figurant dans la liste Keyword_denmark_id est trouvé.
+La somme de contrôle est correcte.
 
 ```
 <!-- Denmark Personal Identification Number -->
@@ -2337,12 +1908,12 @@ Une stratégie DLP est sûre à 75% d'avoir détecté ce type d'informations sen
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyworddenmarkid"></a>Keyword_denmark_id
 
 - Personal Identification Number
-- CPR
+- CARDIO
 - Det Centrale Personregister
 - Personnummer
    
@@ -2378,9 +1949,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
-Aucune
+Aucun
 
    
 ## <a name="eu-debit-card-number"></a>Numéro de carte de débit Union européenne
@@ -2425,573 +1996,312 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordeudebitcard"></a>Keyword_eu_debit_card
 
-- Numéro de compte 
-- numéro de carte
- 
-- n° carte
- 
-- numéro de sécurité
- 
+- numéro de compte 
+- numéro de carte 
+- n° carte 
+- numéro de sécurité 
 - CC 
 
 #### <a name="keywordcardtermsdict"></a>Keyword_card_terms_dict
 
-- num de compte
- 
-- num de compte
- 
-- n° compte
- 
-- american express
- 
-- americanexpress
- 
-- americano espresso
- 
-- amex 
-- carte de retrait
- 
-- cartes de retrait
- 
-- atm kaart
- 
-- carte de retrait
- 
-- cartes de retrait
- 
-- atmkaart
- 
-- atmkaarten
- 
-- bancontact
- 
-- carte bancaire
- 
-- bankkaart
- 
-- titulaire de la carte
- 
-- titulaires de la carte
- 
-- num de carte
- 
-- numéro de carte
- 
-- numéros de carte
- 
-- type de carte
- 
-- cardano numerico
- 
-- titulaire de la carte
- 
-- titulaires de la carte
- 
-- numéro de carte
- 
-- numéros de carte
- 
-- carta bianca
- 
-- Carta credito
- 
-- Carta di credito
- 
-- cartao de credito
- 
-- cartao de crédito
- 
-- cartao de debito
- 
-- cartao de débito
- 
-- carte bancaire
- 
-- carte blanche
- 
-- carte bleue
- 
-- carte de credit
- 
-- carte de crédit
- 
-- carte di credito
- 
-- carteblanche
- 
-- cartão de credito
- 
-- cartão de crédito
- 
-- cartão de debito
- 
-- cartão de débito
- 
-- cb
- 
-- ncc
- 
-- carte de vérification
- 
-- cartes de vérification
- 
-- carte de vérification
-
-- cartes de vérification
- 
-- chequekaart
- 
-- cirrus
- 
-- cirrus-edc-maestro
- 
-- controlekaart
- 
-- controlekaarten
- 
-- carte de crédit
- 
-- cartes de crédit
- 
-- carte de crédit
- 
-- cartes de crédit
- 
-- debetkaart
- 
-- debetkaarten
- 
-- carte de débit
- 
-- cartes de débit
- 
-- carte de débit
- 
-- cartes de débit
- 
-- debito automatico
- 
-- diners club
- 
-- dinersclub
- 
+- num de compte 
+- num de compte 
+- n° compte 
+- american express 
+- AmericanExpress 
+- americano espresso 
+- American 
+- carte de retrait 
+- cartes de retrait 
+- atm kaart 
+- retrait 
+- retrait 
+- atmkaart 
+- atmkaarten 
+- Bancontact 
+- carte bancaire 
+- bankkaart 
+- titulaire de la carte 
+- titulaires de la carte 
+- num de carte 
+- numéro de carte 
+- numéros de carte 
+- type de carte 
+- cardano numerico 
+- titulaires 
+- titulaires 
+- carte 
+- carte 
+- carta bianca 
+- Carta credito 
+- Carta di credito 
+- cartao de credito 
+- cartao de crédito 
+- cartao de debito 
+- cartao de débito 
+- carte bancaire 
+- carte blanche 
+- carte bleue 
+- carte de credit 
+- carte de crédit 
+- carte di credito 
+- carteblanche 
+- cartão de credito 
+- cartão de crédito 
+- cartão de debito 
+- cartão de débito 
+- cb 
+- CCN 
+- carte de vérification 
+- cartes de vérification 
+- carte
+- cartes 
+- chequekaart 
+- Cirrus 
+- Cirrus-EDC-Maestro 
+- controlekaart 
+- controlekaarten 
+- carte de crédit 
+- cartes de crédit 
+- CreditCard 
+- crédit 
+- debetkaart 
+- debetkaarten 
+- carte de débit 
+- cartes de débit 
+- débit 
+- débit 
+- debito automatico 
+- diners club 
+- DinersClub 
 - connaissance 
-- discover card
- 
-- discover cards
- 
-- discovercard
- 
-- discovercards
- 
+- discover card 
+- discover cards 
+- discovercard 
+- discovercards 
 - débito automático
-- 
-edc
- 
-- eigentümername
- 
-- carte de crédit européenne
- 
-- hoofdkaart
- 
-- hoofdkaarten
- 
-- in viaggio
- 
-- japanese card bureau
- 
-- japanse kaartdienst
- 
-- jcb
- 
-- kaart
- 
-- kaart num
- 
-- kaartaantal
- 
-- kaartaantallen
- 
-- kaarthouder
- 
-- kaarthouders
- 
-- karte
-  
-- karteninhaber
- 
+- EDC 
+- eigentümername 
+- carte de crédit européenne 
+- hoofdkaart 
+- hoofdkaarten 
+- in viaggio 
+- japanese card bureau 
+- japanse kaartdienst 
+- JCB 
+- Kaart 
+- kaart num 
+- kaartaantal 
+- kaartaantallen 
+- kaarthouder 
+- kaarthouders 
+- Karte  
+- karteninhaber 
 - karteninhabers
-- 
-kartennr
- 
+- kartennr 
 - kartennummer 
-- kreditkarte
- 
+- Kreditkarte 
 - Kreditkarten-Nummer 
-- kreditkarteninhaber
- 
-- kreditkarteninstitut
- 
-- kreditkartennummer
- 
-- kreditkartentyp
- 
-- maestro
- 
-- master card
- 
-- master cards
- 
-- mastercard
- 
-- mastercards 
+- kreditkarteninhaber 
+- kreditkarteninstitut 
+- Kreditkartennummer 
+- kreditkartentyp 
+- sonne 
+- master card 
+- master cards 
+- MasterCard 
+- MasterCard 
 - McDonald 
-- mister cash
- 
-- n Carta 
+- mister cash 
+- n carta 
 - Carta 
-- non de Tarjeta 
-- non cartao 
-- non cartão 
-- no. de tarjeta
- 
-- no. do cartao
- 
-- no. do cartão
- 
-- Nr Carta 
-- nr. carta
- 
-- numeri di scheda
- 
-- numero carta
- 
-- numero de cartao
- 
-- numero de carte
- 
-- numero de cartão
- 
+- no de tarjeta 
+- no do cartao 
+- no do cartão 
+- Nbre. de tarjeta 
+- Nbre. do cartao 
+- Nbre. do cartão 
+- nr carta 
+- Nr. Carta 
+- numeri di scheda 
+- numero carta 
+- numero de cartao 
+- numero de carte 
+- numero de cartão 
 - numero de tarjeta
-
-- numero della carta
- 
-- numero di carta
- 
-- numero di scheda
- 
-- numero do cartao
- 
-- numero do cartão
- 
-- numéro de carte
- 
-- nº carta
- 
-- nº de carte
- 
-- nº de la carte
- 
-- nº de tarjeta
- 
-- nº do cartao
- 
-- n º do cartão 
-- nº. do cartão
- 
-- número de cartao
- 
-- número de cartão
- 
-- número de tarjeta
- 
+- numero della carta 
+- numero di carta 
+- numero di scheda 
+- numero do cartao 
+- numero do cartão 
+- numéro de carte 
+- nº carta 
+- nº de carte 
+- nº de la carte 
+- nº de tarjeta 
+- nº do cartao 
+- nº do cartão 
+- n º. do cartão 
+- número de cartao 
+- número de cartão 
+- número de tarjeta 
 - número do cartao 
-- scheda dell’assegno
- 
-- scheda dell’atmosfera
- 
-- scheda dell’atmosfera
- 
-- scheda della banca
- 
-- scheda di controllo
- 
-- scheda di debito
- 
-- scheda matrice
- 
-- schede dell’atmosfera
- 
-- schede di controllo
- 
-- schede di debito
- 
-- schede matrici
- 
-- scoprono la scheda
- 
-- scoprono le schede
- 
-- solo
- 
-- supporti di scheda
- 
-- supporto di scheda
- 
-- commutateur 
-- tarjeta atm
- 
-- tarjeta credito
- 
-- tarjeta de atm
- 
-- tarjeta de credito
- 
-- tarjeta de debito
- 
-- tarjeta debito
- 
+- scheda dell’assegno 
+- scheda dell’atmosfera 
+- scheda dell’atmosfera 
+- scheda della banca 
+- scheda di controllo 
+- scheda di debito 
+- scheda matrice 
+- schede dell’atmosfera 
+- schede di controllo 
+- schede di debito 
+- schede matrici 
+- scoprono la scheda 
+- scoprono le schede 
+- tracteur 
+- supporti di scheda 
+- supporto di scheda 
+- accéder 
+- tarjeta atm 
+- tarjeta credito 
+- tarjeta de atm 
+- tarjeta de credito 
+- tarjeta de debito 
+- tarjeta debito 
 - tarjeta no
-
-- tarjetahabiente
- 
-- tipo della scheda
- 
+- tarjetahabiente 
+- tipo della scheda 
 - ufficio giapponese della 
-- scheda
- 
-- v pay
- 
+- scheda 
+- v pay 
 - v-Pay 
-- visa
- 
-- visa plus
- 
-- visa electron
- 
-- visto
- 
-- visum
- 
-- vpay
-   
+- délivrance 
+- visa plus 
+- visa electron 
+- visto 
+- visum 
+- vpay   
 
 #### <a name="keywordcardsecuritytermsdict"></a>Keyword_card_security_terms_dict
 
 - numéro d’identification de la carte
 - vérification de la carte 
-- cardi la verifica
- 
-- nic
- 
-- segmentation COD 
-- COD Seguranca 
-- COD Segurança 
-- COD sicurezza 
-- cod. seg
- 
-- cod. seguranca
- 
-- cod. segurança
- 
-- cod. sicurezza
- 
-- codice di sicurezza
- 
-- codice di verifica
- 
-- codigo
- 
-- codigo de seguranca
- 
-- codigo de segurança
- 
-- crittogramma
- 
-- cryptogramme
- 
-- cryptogramme
- 
+- cardi la verifica 
+- nic 
+- cod seg 
+- cod seguranca 
+- cod segurança 
+- cod sicurezza 
+- contre. SEG 
+- contre. Seguranca 
+- contre. Segurança 
+- contre. sicurezza 
+- codice di sicurezza 
+- codice di verifica 
+- Codigo 
+- codigo de seguranca 
+- codigo de segurança 
+- crittogramma 
+- Cryptogram 
+- cryptogramme 
 - CV2 
-- cvc
- 
+- lâche 
 - CVC2 
-- nvc
- 
-- cvv
- 
+- cryptogramme 
+- CVV 
 - CVV2 
-- Cód Seguranca 
-- Cód Segurança 
-- cód. seguranca
- 
-- cód. Segurança
- 
-- código
- 
-- código de seguranca
- 
-- código de segurança
- 
-- de kaart controle
- 
-- geeft nr suit
- 
-- n° d’émission
- 
-- numéro d’émission
- 
-- kaartidentificatienummer
- 
-- kreditkartenprufnummer
- 
-- kreditkartenprüfnummer
- 
-- kwestieaantal
- 
-- no. dell’edizione
- 
-- no. di sicurezza
- 
-- numéro de sécurité
- 
-- numero de verificacao
- 
-- numero dell’edizione
- 
+- cód seguranca 
+- cód segurança 
+- Cód. Seguranca 
+- Cód. Segurança 
+- Código 
+- código de seguranca 
+- código de segurança 
+- de kaart controle 
+- geeft nr suit 
+- n° d’émission 
+- numéro d’émission 
+- kaartidentificatienummer 
+- kreditkartenprufnummer 
+- kreditkartenprüfnummer 
+- kwestieaantal 
+- Nbre. dell'edizione 
+- Nbre. di sicurezza 
+- numéro de sécurité 
+- numero de verificacao 
+- numero dell’edizione 
 - numero di identificazione della 
-- scheda
- 
-- numero di sicurezza
- 
-- numero van veiligheid
- 
-- numéro de sécurité
- 
-- nº autorizzazione
- 
-- número de verificação
- 
-- perno il blocco
- 
-- pin block
- 
-- prufziffer
- 
-- prüfziffer
- 
-- code de sécurité
- 
-- n° de sécurité
- 
-- numéro de sécurité
- 
-- sicherheits kode
- 
-- sicherheitscode
- 
-- sicherheitsnummer
- 
-- speldblok
- 
-- veiligheid nr
- 
-- veiligheidsaantal
- 
-- veiligheidscode
- 
-- veiligheidsnummer
- 
-- verfalldatum
- 
+- scheda 
+- numero di sicurezza 
+- numero van veiligheid 
+- numéro de sécurité 
+- nº autorizzazione 
+- número de verificação 
+- perno il blocco 
+- pin block 
+- prufziffer 
+- Prüfziffer 
+- code de sécurité 
+- n° de sécurité 
+- numéro de sécurité 
+- sicherheits kode 
+- Sicherheitscode 
+- sicherheitsnummer 
+- speldblok 
+- veiligheid nr 
+- veiligheidsaantal 
+- veiligheidscode 
+- veiligheidsnummer 
+- verfalldatum 
 
 #### <a name="keywordcardexpirationtermsdict"></a>Keyword_card_expiration_terms_dict
 
-- ablauf
- 
-- data de expiracao
- 
-- data de expiração
- 
-- data del exp
- 
-- data di exp
- 
-- data di scadenza
- 
-- data em que expira
- 
-- data scad
- 
-- data scadenza
- 
-- date de validité
- 
-- datum afloop
- 
-- datum van exp
- 
-- de afloop
- 
-- espira
- 
-- espira
- 
-- date d’exp
- 
-- exp datum
- 
+- Ablauf 
+- data de expiracao 
+- data de expiração 
+- data del exp 
+- data di exp 
+- data di scadenza 
+- data em que expira 
+- data scad 
+- data scadenza 
+- date de validité 
+- datum afloop 
+- datum van exp 
+- de afloop 
+- Espira 
+- Espira 
+- date d’exp 
+- exp datum 
 - pire 
-- expire
- 
-- expire
- 
-- expiration
- 
-- fecha de expiracion
- 
-- fecha de venc
- 
-- gultig bis
- 
-- gultigkeitsdatum
- 
-- gültig bis
- 
-- gültigkeitsdatum
- 
-- la scadenza
- 
-- scadenza
- 
-- valable
- 
-- validade
- 
-- valido hasta
- 
-- valor
- 
-- venc
- 
-- vencimento
- 
-- vencimiento
- 
-- verloopt
- 
-- vervaldag
- 
-- vervaldatum
- 
-- vto
- 
-- válido hasta
- 
+- expiration 
+- expire 
+- expiration 
+- fecha de expiracion 
+- fecha de venc 
+- gultig bis 
+- gultigkeitsdatum 
+- gültig bis 
+- gültigkeitsdatum 
+- la scadenza 
+- scadenza 
+- valable 
+- Validade 
+- valido hasta 
+- valorisation 
+- venc 
+- vencimento 
+- vencimiento 
+- verloopt 
+- vervaldag 
+- vervaldatum 
+- vto 
+- válido hasta 
    
 ## <a name="eu-drivers-license-number"></a>Numéro de permis de conduire de l'UE
 
@@ -3048,21 +2358,22 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 - Keyword_finnish_national_id
-- 
-
-Sosiaaliturvatunnus
+- Sosiaaliturvatunnus
 - SOTU Henkilötunnus HETU
 - Personbeteckning
 - Personnummer
    
-## <a name="finland-passport-number"></a>Numéro de passeport finlandais
+## <a name="finland-passport-number"></a>Numéro de passeport Finlande
 
-Combinaison de format de neuf lettres et chiffres combinaison de neuf lettres et chiffres: deux lettres (ne respectant pas la casse) sept chiffres somme de contrôle no la stratégie DLP est de 75% en certitude qu'elle a détecté ce type d'informations sensibles si, dans un proximité de 300 caractères: l'expression régulière Regex_finland_passport_number trouve le contenu qui correspond au modèle. Un mot clé depuis Keyword_finland_passport_number est trouvé. Mots clés <!-- Finland Passport Number --> 
- <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> 
- passes <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern> </Entity>
+Combinaison de format de neuf lettres et chiffres combinaison de neuf lettres et chiffres: deux lettres (ne respectant pas la casse) sept chiffres somme de contrôle no la stratégie DLP est de 75% en certitude qu'elle a détecté ce type d'informations sensibles si, dans un proximité de 300 caractères: l'expression régulière Regex_finland_passport_number trouve le contenu qui correspond au modèle.
+Un mot clé figurant dans la liste Keyword_finland_passport_number est trouvé.
+<!-- Finland Passport Number -->
+<Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern>
+</Entity>
+Mots clés Keyword_finland_passport_number Passport passes
    
 ## <a name="france-drivers-license-number"></a>Numéro de permis de conduire France
 
@@ -3099,28 +2410,21 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordfrenchdriverslicense"></a>Keyword_french_drivers_license
 
 - permis de conduire
-- drivers license
 - permis de conduire
-
 - permis de conduire
-- 
-permis de conduire
-- 
-numéro de permis
-- 
-numéro de permis
-- 
-numéros de permis
-- 
+- permis de conduire
+- permis de conduire
+- numéro de permis
+- numéro de permis
+- numéros de permis
+- numéros de permis
 
-numéros de permis
-
-## <a name="france-national-id-card-cni"></a>Carte nationale d'identité (CNI) France
+## <a name="france-national-id-card-cni"></a>Carte nationale d’identité (CNI) France
 
 ### <a name="format"></a>Format
 
@@ -3150,7 +2454,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots-clés
 
-Aucune
+Aucun
    
 ## <a name="france-passport-number"></a>Numéro de passeport France
 
@@ -3162,7 +2466,7 @@ Neuf chiffres et lettres
 
 Neuf chiffres et lettres :
 - Deux chiffres 
-- Deux lettres (ne respectant pas la casse)  
+- Deux lettres (ne respectent pas la casse) 
 - Cinq chiffres
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -3190,38 +2494,23 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywordpassport"></a>Keyword_passport
 
 - Numéro de passeport
-- 
-N° de passeport
+- N° de passeport
 - # Passeport
-
-- #Passeport
-
+- Tel
 - PassportID
-- n° passeport
-
-- numéropasseport
-
+- N ° passeport
+- passportnumber
 - パスポート
 - パスポート番号
-
 - パスポートのNum
-
-- 
-パスポート＃
- 
+- パスポート＃ 
 - Numéro de passeport
-- 
-Passeport n°
+- Passeport n°
 - Passeport numéro
-
 - # Passeport
-
-- Passeport#
-
+- Passeport
 - PasseportNon
-- 
-
-Passeportn °
+- Passeportn °
 
       
 ## <a name="france-social-security-number-insee"></a>Numéro de sécurité sociale (INSEE) France
@@ -3273,49 +2562,31 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordfrinsee"></a>Keyword_fr_insee
 
-- insee
-- 
-securité sociale
-- 
-securite sociale
-- 
-id national
-- 
-numéro d’identification nationale
-- 
-numéro d’identité
-- aucune identité
-- 
-n° d’identité
-- 
-numéro d’identité
-- aucune d'identite
-- 
-n° d’identité
+- INSEE
+- securité sociale
+- securite sociale
+- id national
+- numéro d’identification nationale
+- numéro d’identité
+- n° d’identité
+- Nbre. d'identité
+- numéro d’identité
+- n° d’identité
+- Nbre. d'identite
 - numéro de sécurité sociale
-
-- 
-code de sécurité sociale
+- code de sécurité sociale
 - numéro d’assurance sociale
-- 
-le numéro d’identification nationale
-- 
-d’identité nationale
-- 
-numéro de sécurité sociale
-- 
-le code de la sécurité sociale
-- 
-numéro d’assurance sociale
-- 
-numéro de sécu
-- 
-code sécu
- 
+- le numéro d’identification nationale
+- d’identité nationale
+- numéro de sécurité sociale
+- le code de la sécurité sociale
+- numéro d’assurance sociale
+- numéro de sécu
+- code sécu 
    
 ## <a name="german-drivers-license-number"></a>Numéro de permis de conduire Allemagne
 
@@ -3360,27 +2631,19 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordgermandriverslicensenumber"></a>Keyword_german_drivers_license_number
 
 - Führerschein
-- 
-Fuhrerschein
+- Fuhrerschein
 - Fuehrerschein
-- 
-Führerscheinnummer
-- 
-Fuhrerscheinnummer
-- 
-Fuehrerscheinnummer
-- 
-Führerschein-
- 
-- Fuhrerschein-
- 
-- Fuehrerschein-
- 
+- Führerscheinnummer
+- Fuhrerscheinnummer
+- Fuehrerscheinnummer
+- Führerschein 
+- Fuhrerschein 
+- Fuehrerschein 
 - FührerscheinnummerNr
 - FuhrerscheinnummerNr
 - FuehrerscheinnummerNr
@@ -3388,15 +2651,10 @@ Führerschein-
 - FuhrerscheinnummerKlasse
 - FuehrerscheinnummerKlasse
 - Führerschein - Nr
-
 - Fuhrerschein - Nr
-
-- Fuehrerschein - Nr
- 
-- Führerschein - Klasse
- 
-- Fuhrerschein - Klasse
- 
+- Fuehrerschein - Nr 
+- Führerschein - Klasse 
+- Fuhrerschein - Klasse 
 - Fuehrerschein - Klasse
 - FührerscheinnummerNr 
 - FuhrerscheinnummerNr 
@@ -3404,121 +2662,73 @@ Führerschein-
 - FührerscheinnummerKlasse 
 - FuhrerscheinnummerKlasse 
 - FuehrerscheinnummerKlasse 
-- Führerschein - Nr
- 
-- Fuhrerschein - Nr
- 
-- Fuehrerschein - Nr
- 
-- Führerschein - Klasse
- 
-- Fuhrerschein - Klasse
- 
+- Führerschein - Nr 
+- Fuhrerschein - Nr 
+- Fuehrerschein - Nr 
+- Führerschein - Klasse 
+- Fuhrerschein - Klasse 
 - Fuehrerschein - Klasse 
-- PC 
-- PC
-- 
-Permis conduire
- 
-- Permis conduire
- 
+- LD 
+- DISTRIBUTION
+- Permis conduire 
+- Permis conduire 
 - Permis de conduire
-- 
-Permis de conduire
- 
-- Permis de conduire
- 
-- Permis de conduire
- 
-- Permis conduire
- 
-- Permis conduire
- 
-- Permis de conduire 
-- Licences de pilotes 
-- Permis de conduire
- 
-- Permis de conduire
- 
-- Pilotes Lic 
-- Pilotes conduire 
-- Permis de conduire 
-- Licences de pilotes 
 - Permis de conduire 
 - Permis de conduire 
-- Gestionnaire de la LIC 
-- Permis de conduire
- 
+- Permis de conduire 
+- Permis conduire 
+- Permis conduire 
 - Permis de conduire 
 - Permis de conduire 
-- Permis de conduire
- 
-- Permis de conduire
- 
-- Permis conduire
- 
-- Permis conduire
- 
-- Permis de conduire
- 
-- Permis de conduire
- 
-- Permis de conduire
-
- 
+- Permis de conduire 
+- Permis de conduire 
+- Permis conduire 
+- Permis conduire 
+- Permis de conduire 
+- Permis de conduire 
+- Permis de conduire 
+- Permis de conduire 
+- Permis de conduire 
+- Permis de conduire 
+- Permis de conduire 
+- Permis de conduire 
+- Permis de conduire 
+- Permis de conduire 
+- Permis conduire 
+- Permis conduire 
+- Permis de conduire 
+- Permis de conduire 
+- Permis de conduire 
 - Permis de conduire
 
 #### <a name="keywordgermandriverslicensecollaborative"></a>Keyword_german_drivers_license_collaborative
 
-- 
-Nr-Führerschein
- 
-- Nr-Fuhrerschein
- 
-- Nr-Fuehrerschein
- 
-- No-Führerschein
- 
-- No-Fuhrerschein
- 
-- No-Fuehrerschein
- 
-- N-Führerschein
- 
-- N-Fuhrerschein
- 
+- Nr-Führerschein 
+- Nr-Fuhrerschein 
+- Nr-Fuehrerschein 
+- Non-Führerschein 
+- Non-Fuhrerschein 
+- Non-Fuehrerschein 
+- N-Führerschein 
+- N-Fuhrerschein 
 - N-Fuehrerschein
-- 
-Nr-Führerschein
- 
-- Nr-Fuhrerschein
- 
-- Nr-Fuehrerschein
- 
-- No-Führerschein
- 
-- No-Fuhrerschein
- 
-- No-Fuehrerschein
- 
-- N-Führerschein
- 
-- N-Fuhrerschein
- 
+- Nr-Führerschein 
+- Nr-Fuhrerschein 
+- Nr-Fuehrerschein 
+- Non-Führerschein 
+- Non-Fuhrerschein 
+- Non-Fuehrerschein 
+- N-Führerschein 
+- N-Fuhrerschein 
 - N-Fuehrerschein 
 
 #### <a name="keywordgermandriverslicense"></a>Keyword_german_drivers_license
 
 - ausstellungsdatum
-- 
-ausstellungsort
-- 
-ausstellende behöde
-- 
-ausstellende behorde
-- 
-
-ausstellende behoerde
+- ausstellungsort
+- ausstellende behöde
+- ausstellende behorde
+- ausstellende behoerde
    
 ## <a name="german-passport-number"></a>Numéro de passeport Allemagne
 
@@ -3576,26 +2786,21 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordgermanpassport"></a>Keyword_german_passport
 
-- reisepass
-- 
-reisepasse
-- 
-reisepassnummer
-- passeport
-- 
-
-passports
+- Reisepass
+- reisepasse
+- reisepassnummer
+- tel
+- passeports
 
 #### <a name="keywordgermanpassportcollaborative"></a>Keyword_german_passport_collaborative
 
 - geburtsdatum
 - ausstellungsdatum
-- 
-ausstellungsort
+- ausstellungsort
 
 #### <a name="keywordgermanpassportnumber"></a>Keyword_german_passport_number
 
@@ -3604,7 +2809,6 @@ No-Reisepass Nr-Reisepass
 #### <a name="keywordgermanpassport1"></a>Keyword_german_passport1
 
 Reisepass-Nr
-
 
 #### <a name="keywordgermanpassport2"></a>Keyword_german_passport2
 
@@ -3621,7 +2825,7 @@ Du 1er avril 1987 au 31 octobre 2010:10 chiffres
 ### <a name="pattern"></a>Modèle
 
 Depuis le 1er novembre 2010 :
-- Une lettre (ne respecte pas la casse) 
+- Une lettre (ne respectant pas la casse)  
 - Huit chiffres
 
 Du 1er avril 1987 au 31 octobre 2010:
@@ -3653,7 +2857,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 - Identity Card
 - ID
-- Identification
+- Identificateur
 - Personalausweis
 - Identifizierungsnummer
 - Ausweis
@@ -3747,30 +2951,26 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordhongkongidcard"></a>Keyword_hong_kong_id_card
 
 - carte d'identité de Hong Kong
 - HKIDC
-- carte d'identité
+- carte d’identité
 - Carte d’identité
 - carte d'identité HK
 - ID Hong Kong
 - 香港身份證
-
 - 香港永久性居民身份證
-
 - 身份證
-
 - 身份証
-- 身分證 
+- 身分證
 - 身分証
 - 香港身份証
 - 香港身分證
 - 香港身分証
 - 香港身份證
-
 - 香港居民身份證
 - 香港居民身份証
 - 香港居民身分證
@@ -3779,7 +2979,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - 香港永久性居民身分證
 - 香港永久性居民身分証
 - 香港永久性居民身份證
-
 - 香港非永久性居民身份證
 - 香港非永久性居民身份証
 - 香港非永久性居民身分證
@@ -3827,14 +3026,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordindiapermanentaccountnumber"></a>Keyword_india_permanent_account_number
 
-- Permanent Account Number
- 
-- PAN
- 
+- Permanent Account Number 
+- PANEUROPÉENNES 
    
 ## <a name="india-unique-identification-aadhaar-number"></a>Numéro d’identification unique (Aadhaar) Inde
 
@@ -3845,9 +3042,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="pattern"></a>Modèle
 
 12 chiffres :
-- Quatre chiffres  
+- Quatre chiffres 
 - Éventuellement un tiret ou un espace  
-- Quatre chiffres  
+- Quatre chiffres 
 - Éventuellement un tiret ou un espace  
 - Le chiffre final, qui est le chiffre de contrôle
 
@@ -3857,7 +3054,12 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP est sûre à 85% d'avoir détecté ce type d'informations sensibles si, dans une proximité de 300 caractères: la fonction Func_india_aadhaar trouve un contenu qui correspond au modèle. Un mot clé depuis Keyword_india_aadhar est trouvé. Le checksum réussit. Une stratégie DLP est sûre à 75% d'avoir détecté ce type d'informations sensibles si, dans une proximité de 300 caractères: la fonction Func_india_aadhaar trouve un contenu qui correspond au modèle. Le checksum réussit. <!-- India Unique Identification (Aadhaar) number -->
+Une stratégie DLP est sûre à 85% d'avoir détecté ce type d'informations sensibles si, dans une proximité de 300 caractères: la fonction Func_india_aadhaar trouve un contenu qui correspond au modèle.
+Un mot clé figurant dans la liste Keyword_india_aadhar est trouvé.
+La somme de contrôle est correcte.
+Une stratégie DLP est sûre à 75% d'avoir détecté ce type d'informations sensibles si, dans une proximité de 300 caractères: la fonction Func_india_aadhaar trouve un contenu qui correspond au modèle.
+La somme de contrôle est correcte.
+<!-- India Unique Identification (Aadhaar) number -->
 <Entity id="1ca46b29-76f5-4f46-9383-cfa15e91048f" recommendedConfidence="85" patternsProximity="300"> <Pattern confidenceLevel="85"> <IdMatch idRef="Func_india_aadhaar"/> <Match idRef="Keyword_india_aadhar"/> </Pattern> <Pattern confidenceLevel="75"> <IdMatch idRef="Func_india_aadhaar"/> </Pattern>
 </Entity>
 
@@ -3913,15 +3115,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
    
 #### <a name="keywordindonesiaidcard"></a>Keyword_indonesia_id_card
 
 - KTP
-- Kartu Tanda Penduduk
- 
-- Nomor Induk Kependudukan
- 
+- Kartu Tanda Penduduk 
+- Nomor Induk Kependudukan 
    
 ## <a name="international-banking-account-number-iban"></a>Numéro de compte bancaire international (IBAN)
 
@@ -3960,24 +3160,24 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
-Aucune
+Aucun
 
    
 ## <a name="ip-address"></a>Adresse IP
 
 ### <a name="format"></a>Format
 
-#### <a name="ipv4"></a>IPv4 :
+#### <a name="ipv4"></a>IPv6
 Modèle complexe qui tient compte des versions mises en forme (points) et non mises en forme (sans points) des adresses IPv4
 
-#### <a name="ipv6"></a>IPv6 :
+#### <a name="ipv6"></a>IPv4/IPv6
  Modèle complexe qui tient compte des numéros IPv6 mis en forme (qui incluent les signes deux-points)
 
 ### <a name="pattern"></a>Modèle
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Somme de contrôle
 
 Non
 
@@ -3993,7 +3193,7 @@ Pour IPv4, le pourcentage de confiance d’une stratégie DLP ayant détecté c
 
 Pour IPv6, le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 95 % si, dans une proximité de 300 caractères :
 - L’expression régulière Regex_ipv6_address trouve un contenu qui correspond au modèle.
-- Aucun mot clé depuis Keyword_ipaddress n’est trouvé.
+- Aucun mot clé figurant dans la liste Keyword_ipaddress n’est trouvé.
 
 ```
     <!-- IP Address -->
@@ -4024,23 +3224,20 @@ Pour IPv6, le pourcentage de confiance d’une stratégie DLP ayant détecté c
 #### <a name="keywordipaddress"></a>Keyword_ipaddress
 
 - IP (ce mot clé respecte la casse)
-- ip address
- 
+- ip address 
 - adresses IP
 - protocole internet
-- 
-IP-כתובת ה
- 
+- IP-כתובת ה 
    
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>Classification internationale des maladies (ICD-10-CM)
 
 ### <a name="format"></a>Format
 
-Dictionnaire
+Dictionary
 
 ### <a name="pattern"></a>Modèle
 
-Clé
+Mot clé
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -4069,11 +3266,11 @@ Tout terme du dictionnaire de mots clés Dictionary_icd_10_cm, qui est basé sur
 
 ### <a name="format"></a>Format
 
-Dictionnaire
+Dictionary
 
 ### <a name="pattern"></a>Modèle
 
-Clé
+Mot clé
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -4150,31 +3347,21 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordirelandpps"></a>Keyword_ireland_pps
 
 - Personal Public Service Number 
- 
-- PPS Number
- 
-- PPS Num
- 
-- PPS No.
- 
-- PPS #
- 
+- PPS Number 
+- PPS Num 
+- PPS No. 
+- PPS # 
 - Spa 
-- PPSN
- 
-- Public Services Card
- 
-- Uimhir Phearsanta Seirbhíse Poiblí
- 
-- Uimh. PSP
- 
-- PSP
- 
+- PPSN 
+- Public Services Card 
+- Uimhir Phearsanta Seirbhíse Poiblí 
+- Uimh. TOXINE 
+- TOXINE 
    
 ## <a name="israel-bank-account-number"></a>Numéro de compte bancaire Israël
 
@@ -4184,14 +3371,14 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="pattern"></a>Modèle
 
-Mis en forme :
+Avec
 - Deux chiffres 
 - Un tiret 
 - Trois chiffres 
 - Un tiret 
 - Huit chiffres
 
-Non mis en forme :
+Non
 - 	13 chiffres consécutifs
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -4220,16 +3407,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywordisraelbankaccountnumber"></a>Keyword_israel_bank_account_number
 
-- Numéro de compte bancaire
- 
-- Compte bancaire
- 
-- Numéro de compte
- 
-- מספר חשבון בנק
- 
+- Bank Account Number 
+- Bank Account 
+- Numéro de compte 
+- מספר חשבון בנק 
    
-## <a name="israel-national-id"></a>Carte nationale d'identité Israël
+## <a name="israel-national-id"></a>Carte nationale d’identité Israël
 
 ### <a name="format"></a>Format
 
@@ -4262,12 +3445,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordisraelnationalid"></a>Keyword_Israel_National_ID
 
-- מספר זהות
- 
+- מספר זהות 
 - Numéro d’identification nationale
    
 ## <a name="italy-drivers-license-number"></a>Numéro de permis de conduire Italie
@@ -4279,7 +3461,7 @@ Une combinaison de 10 lettres et chiffres
 ### <a name="pattern"></a>Modèle
 
 - Une combinaison de 10 lettres et chiffres :
-- Une lettre (ne respectant pas la casse)  
+- Une lettre (ne respecte pas la casse) 
 - La lettre « A » ou « V » (ne respecte pas la casse) 
 - Sept lettres (ne respectent pas la casse), des chiffres ou le trait de soulignement 
 - Une lettre (ne respecte pas la casse)
@@ -4310,10 +3492,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keyworditalydriverslicensenumber"></a>Keyword_italy_drivers_license_number
 
-- numero di patente di guida
- 
-- patente di guida
- 
+- numero di patente di guida 
+- patente di guida 
    
 ## <a name="japan-bank-account-number"></a>Numéro de compte bancaire Japon
 
@@ -4367,114 +3547,64 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordjpbankaccount"></a>Keyword_jp_bank_account
 
-- Numéro de compte courant
- 
-- Compte courant
- 
-- # compte courant
- 
-- Numéro compte courant
- 
-- # compte courant
- 
-- N° de compte courant
- 
-- N° de compte courant
- 
-- Numéro de compte bancaire
- 
-- Compte bancaire
- 
-- # Compte bancaire
- 
-- Numéro de compte bancaire
- 
-- # Compte bancaire
- 
-- N° de compte bancaire
- 
-- N° de compte bancaire
- 
-- Numéro de compte d’épargne
- 
-- Compte d'épargne 
-- N° de compte d’épargne
- 
-- Numéro de compte d’épargne
- 
-- # compte d’épargne
- 
-- N° de compte d’épargne
- 
-- N° de compte d’épargne
- 
-- Numéro de compte de débit
- 
-- Compte de débit
- 
-- # Compte de débit
- 
-- Numéro de compte de débit
- 
-- # Compte de débit
- 
-- N° de compte de débit
- 
-- N° de compte de débit
- 
-- 口座番号を当座預金口座の確認
- 
-- ＃アカウントの確認、勘定番号の確認
- 
-- ＃勘定の確認
- 
-- 勘定番号の確認
- 
-- 口座番号の確認
- 
+- Numéro de compte courant 
+- Compte courant 
+- # compte courant 
+- Numéro compte courant 
+- # compte courant 
+- N° de compte courant 
+- N° de compte courant 
+- Numéro de compte bancaire 
+- Compte bancaire 
+- # Compte bancaire 
+- Numéro de compte bancaire 
+- # Compte bancaire 
+- N° de compte bancaire 
+- N° de compte bancaire 
+- Numéro de compte d’épargne 
+- Compte d’épargne 
+- N° de compte d’épargne 
+- Numéro de compte d’épargne 
+- # compte d’épargne 
+- N° de compte d’épargne 
+- N° de compte d’épargne 
+- Numéro de compte de débit 
+- Compte de débit 
+- # Compte de débit 
+- Numéro de compte de débit 
+- # Compte de débit 
+- N° de compte de débit 
+- N° de compte de débit 
+- 口座番号を当座預金口座の確認 
+- #アカウントの確認 、 勘定番号の確認 
+- #勘定の確認 
+- 勘定番号の確認 
+- 口座番号の確認 
 - 銀行口座番号 
 - 銀行口座 
-- 銀行口座＃
- 
-- 銀行の勘定番号
- 
-- 銀行のacct＃
- 
-- 銀行の勘定いいえ
- 
+- 銀行口座 # 
+- 銀行の勘定番号 
+- 銀行のacct # 
+- 銀行の勘定いいえ 
 - 銀行口座番号
-- 
-普通預金口座番号
- 
-- 預金口座
- 
-- 貯蓄口座＃
- 
-- 貯蓄勘定の数
- 
-- 貯蓄勘定＃
- 
-- 貯蓄勘定番号
- 
-- 普通預金口座番号
- 
-- 引き落とし口座番号
- 
+- 普通預金口座番号 
+- 預金口座 
+- 貯蓄口座 # 
+- 貯蓄勘定の数 
+- 貯蓄勘定 # 
+- 貯蓄勘定番号 
+- 普通預金口座番号 
+- 引き落とし口座番号 
 - 口座番号 
-- 口座番号 #
- 
-- デビットのacct番号
- 
-- デビット勘定＃
- 
-- デビットACCTの番号
- 
-- デビット口座番号
- 
+- 口座番号 # 
+- デビットのacct番号 
+- デビット勘定 # 
+- デビットACCTの番号 
+- デビット口座番号 
 
 #### <a name="keywordjpbankbranchcode"></a>Keyword_jp_bank_branch_code
 
@@ -4514,35 +3644,28 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywordjpdriverslicensenumber"></a>Keyword_jp_drivers_license_number
 
-- dl# 
 - LD 
-- dls# 
+- LD 
+- distribution 
 - DISTRIBUTION 
-- driver license 
-- driver licenses 
-- drivers license 
-- driver’s license 
-- drivers licenses 
-- driver’s licenses 
-- permis de conduire
- 
-- lic# 
+- Permis de conduire 
+- Permis de conduire 
+- permis de conduire 
+- permis de conduire 
+- Permis de conduire 
+- Permis de conduire 
+- permis de conduire 
 - Profil 
-- #permis 
-- ID d'État 
-- identification d’état
- 
-- numéro d’identification d’état
- 
-- 低所得国＃
- 
+- Profil 
+- conduire 
+- id d’état 
+- identification d’état 
+- numéro d’identification d’état 
+- 低所得国 # 
 - 免許証 
 - 状態ID
-- 
-状態の識別
- 
-- 状態の識別番号
- 
+- 状態の識別 
+- 状態の識別番号 
 - 運転免許 
 - 運転免許証 
 - 運転免許証番号 
@@ -4577,18 +3700,14 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordjppassport"></a>Keyword_jp_passport
 
-- パスポート
- 
-- パスポート番号
- 
-- パスポートのNum
- 
-- パスポート＃
- 
+- パスポート 
+- パスポート番号 
+- パスポートのNum 
+- パスポート # 
    
 ## <a name="japan-resident-registration-number"></a>Matricule de résident Japon
 
@@ -4625,29 +3744,19 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywordjpresidentregistrationnumber"></a>Keyword_jp_resident_registration_number
 
 - Numéro d’enregistrement du résident
-- Numéro d’enregistrement du résident
- 
-- Numéro de base d’enregistrement des résidents
- 
-- N° d’enregistrement du résident
- 
-- N° d’enregistrement du résident
- 
-- N° de base d’enregistrement des résidents
- 
-- N° d’enregistrement du résident de base
- 
-- 住民登録番号、登録番号をレジデント
- 
-- 住民基本登録番号、登録番号
- 
-- 住民基本レジストリ番号を常駐
- 
-- 登録番号を常駐住民基本台帳登録番号
- 
+- Numéro d’enregistrement du résident 
+- Numéro de base d’enregistrement des résidents 
+- N° d’enregistrement du résident 
+- N° d’enregistrement du résident 
+- N° de base d’enregistrement des résidents 
+- N° d’enregistrement du résident de base 
+- 住民登録番号 、 登録番号をレジデント 
+- 住民基本登録番号 、 登録番号 
+- 住民基本レジストリ番号を常駐 
+- 登録番号を常駐住民基本台帳登録番号 
 
    
-## <a name="japan-social-insurance-number-sin"></a>Numéro d'assurance sociale Japon
+## <a name="japan-social-insurance-number-sin"></a>Numéro d’assurance sociale Japon
 
 ### <a name="format"></a>Format
 
@@ -4693,16 +3802,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywordjpsin"></a>Keyword_jp_sin
 
-- N° d’assurance sociale
- 
-- Numéro d’assurance sociale
- 
-- Numéro d’assurance sociale
- 
-- 社会保険のテンキー
- 
-- 社会保険番号
- 
+- N° d’assurance sociale 
+- Numéro d’assurance sociale 
+- Numéro d’assurance sociale 
+- 社会保険のテンキー 
+- 社会保険番号 
 
 ## <a name="japanese-residence-card-number"></a>Numéro de carte de séjour japonaise
 
@@ -4783,7 +3887,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
    
 #### <a name="keywordmalaysiaidcardnumber"></a>Keyword_malaysia_id_card_number
 
@@ -4792,7 +3896,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - n ° i/c non
 - combustion
 - n ° IC
-- carte d'identité
+- carte d’identité
 - Carte d'identification
 - Carte d’identité
 - k/p
@@ -4850,23 +3954,16 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordnetherlandsbsn"></a>Keyword_netherlands_bsn
 
-- Citizen service number
- 
-- BSN
-
- 
-- Burgerservicenummer
- 
-- Sofinummer
- 
-- Persoonsgebonden nummer
- 
-- Persoonsnummer
-    
+- Citizen service number 
+- BSN 
+- Burgerservicenummer 
+- Sofinummer 
+- Persoonsgebonden nummer 
+- Persoonsnummer    
 
    
 ## <a name="new-zealand-ministry-of-health-number"></a>Numéro du Ministère de la santé Nouvelle-Zélande
@@ -4902,16 +3999,14 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-Mots clés
+Mots-clés
 
 Keyword_nz_terms
 
-- NHI
- 
+- NHI 
 - Nouvelle-Zélande 
 - Intégrité 
-- treatment
- 
+- destinations 
    
 ## <a name="norway-identification-number"></a>Numéro d’identification Norvège
 
@@ -4953,14 +4048,14 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordnorwayidnumber"></a>Keyword_norway_id_number
 
 - Personal identification number
 - Norwegian ID Number
 - ID Number
-- Identification
+- Identificateur
 - Personnummer
 - Fødselsnummer
 
@@ -4975,7 +4070,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 12 chiffres :
 - Quatre chiffres 
-- Un trait d’union 
+- Un trait d’union  
 - Sept chiffres  
 - Un trait d’union  
 - Un chiffre
@@ -5000,14 +4095,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
    
 #### <a name="keywordphilippinesid"></a>Keyword_philippines_id
 
-- Unified Multi-Purpose ID
- 
-- UMID
- 
+- Unified Multi-Purpose ID 
+- UMID 
 - Identity Card 
 - Pinag-isang Multi-Layunin ID
    
@@ -5027,7 +4120,9 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP est sûre à 75% d'avoir détecté ce type d'informations sensibles si, dans une proximité de 300 caractères: la fonction Func_polish_national_id trouve un contenu qui correspond au modèle. Un mot clé depuis Keyword_polish_national_id_passport_number est trouvé. Le checksum réussit.
+Une stratégie DLP est sûre à 75% d'avoir détecté ce type d'informations sensibles si, dans une proximité de 300 caractères: la fonction Func_polish_national_id trouve un contenu qui correspond au modèle.
+Un mot clé figurant dans la liste Keyword_polish_national_id_passport_number est trouvé.
+La somme de contrôle est correcte.
 
 ```
 <!-- Poland Identity Card-->
@@ -5048,11 +4143,8 @@ Une stratégie DLP est sûre à 75% d'avoir détecté ce type d'informations sen
 - Nazwa i dowodu osobistego
 - Nazwa i Nr dowodu osobistego
 - Nazwa je nr dowodu tożsamości
-
 - Dowód Tożsamości
-
-- dow. os.
-
+- Dow. OS.
 
    
 ## <a name="poland-national-id-pesel"></a>ID national polonais (PESEL)
@@ -5086,7 +4178,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordpeselidentificationnumber"></a>Keyword_pesel_identification_number
 
@@ -5126,7 +4218,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Version>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
@@ -5135,7 +4227,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Paszport
 
    
-## <a name="portugal-citizen-card-number"></a>Numéro de carte de citoyen portugais
+## <a name="portugal-citizen-card-number"></a>Numéro de carte de citoyen Portugal
 
 ### <a name="format"></a>Format
 
@@ -5171,7 +4263,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 - Citizen Card
 - National ID Card
-- CC
+- Cc
 - Cartão de Cidadão
 - Bilhete de Identidade
    
@@ -5207,17 +4299,14 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordsaudiarabianationalid"></a>Keyword_saudi_arabia_national_id
 
-- Carte d’identification
- 
-- numéro de carte d’identité
- 
-- numéro d’identification 
-- الوطنية الهوية بطاقة رقم
- 
+- Carte d’identification 
+- numéro de carte d’identité 
+- Numéro d’identification 
+- الوطنية الهوية بطاقة رقم 
 
    
 ## <a name="singapore-national-registration-identity-card-nric-number"></a>Numéro de carte d’identité d’enregistrement national (NRIC) Singapour
@@ -5261,25 +4350,18 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
    
 #### <a name="keywordsingaporenric"></a>Keyword_singapore_nric
 
-- National Registration Identity Card
- 
-- Identity Card Number
- 
-- NRIC
- 
-- IC
- 
-- Foreign Identification Number
- 
-- FIN
- 
-- 身份证  
-- 身份證
- 
+- National Registration Identity Card 
+- Identity Card Number 
+- NRIC 
+- COMBUSTION 
+- Foreign Identification Number 
+- ECHERCHER 
+- 身份证 
+- 身份證 
    
 ## <a name="south-africa-identification-number"></a>Numéro d’identification Afrique du Sud
 
@@ -5291,7 +4373,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 13 chiffres :
 - Six chiffres au format AAMMJJ correspondant à la date de naissance  
-- Quatre chiffres  
+- Quatre chiffres 
 - Un indicateur de citoyenneté à un chiffre  
 - Le chiffre « 8 » ou « 9 »  
 - Un chiffre pour la somme de contrôle
@@ -5317,13 +4399,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
    
 #### <a name="keywordsouthafricaidentificationnumber"></a>Keyword_south_africa_identification_number
 
 - Identity card
 - ID
-- Identification 
+- Identificateur 
    
 ## <a name="south-korea-resident-registration-number"></a>Matricule de résident Corée du Sud
 
@@ -5369,18 +4451,14 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
    
 #### <a name="keywordsouthkorearesidentnumber"></a>Keyword_south_korea_resident_number
 
-- National ID card
- 
-- Citizen’s Registration Number
- 
-- Jumin deungnok beonho
- 
-- RRN
- 
+- National ID card 
+- Citizen’s Registration Number 
+- Jumin deungnok beonho 
+- RRN 
 - 주민등록번호
    
 ## <a name="spain-social-security-number-ssn"></a>Numéro de sécurité sociale Espagne
@@ -5417,9 +4495,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
-Aucune
+Aucun
    
 ## <a name="sweden-national-id"></a>ID national Suède
 
@@ -5454,7 +4532,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 Non
    
@@ -5497,59 +4575,36 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
    
 #### <a name="keywordswedenpassport"></a>Keyword_sweden_passport
 
-- exigences en matière de visa
- 
-- Carte d’enregistrement d’une personne étrangère
- 
-- Visas Schengen
- 
-- Visa Schengen
- 
-- Traitement du visa
- 
-- Type de visa
- 
-- Entrée unique
- 
-- Entrée multiple
- 
-- Frais de traitement G3
-
- 
+- exigences en matière de visa 
+- Carte d’enregistrement d’une personne étrangère 
+- Visas Schengen 
+- Visa Schengen 
+- Traitement du visa 
+- Type de visa 
+- Entrée unique 
+- Entrée multiple 
+- Frais de traitement G3 
 
 #### <a name="keywordpassport"></a>Keyword_passport
 
 - Numéro de passeport 
-- 
-N° de passeport 
-- # Passeport
- 
-- #Passeport
- 
+- N° de passeport 
+- # Passeport 
+- Tel 
 - PassportID 
-- n° passeport
- 
-- numéropasseport
- 
+- N ° passeport 
+- passportnumber 
 - パスポート 
-- パスポート番号
- 
-- パスポートのNum
- 
-- パスポート＃
- 
+- パスポート番号 
+- パスポートのNum 
+- パスポート # 
 - Numéro de passeport 
-- 
-Passeport n° 
-- Passeport numéro
- 
-- # Passeport
- 
-- Passeport#
- 
+- Passeport n° 
+- Passeport numéro 
+- # Passeport 
+- Passeport 
 - PasseportNon 
-- Passeportn °
- 
+- Passeportn ° 
    
 ## <a name="swift-code"></a>Code SWIFT
 
@@ -5585,64 +4640,41 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
    
 #### <a name="keywordswift"></a>Keyword_swift
 
-- organisation internationale de normalisation 9362
- 
-- ISO 9362
- 
+- organisation internationale de normalisation 9362 
+- ISO 9362 
 - ISO9362 
 - rapide\# 
-- codeswift
- 
-- numéroswift
- 
-- numéroroutageswift
- 
-- code SWIFT 
-- # numéro swift
- 
-- numéro d’acheminement swift
- 
-- numéro BIC
- 
-- code BIC
- 
+- Swiftcode 
+- swiftnumber 
+- swiftroutingnumber 
+- code swift 
+- # numéro swift 
+- numéro d’acheminement swift 
+- numéro BIC 
+- code BIC 
 - BIC\# 
 - BIC\# 
-- code d’identification bancaire
- 
+- code d’identification bancaire 
 - 標準化 9362 
-- 迅速＃
- 
-- SWIFTコード
- 
-- SWIFT番号
- 
-- 迅速なルーティング番号
- 
-- BIC番号
- 
-- BICコード
- 
-- 銀行識別コードのための国際組織
- 
-- Organisation internationale de normalisation 9362
- 
+- 迅速 # 
+- SWIFTコード 
+- SWIFT番号 
+- 迅速なルーティング番号 
+- BIC番号 
+- BICコード 
+- 銀行識別コードのための国際組織 
+- Organisation internationale de normalisation 9362 
 - rapide\# 
-- code SWIFT
- 
-- le numéro de swift
- 
-- swift numéro d’acheminement
- 
-- le numéro BIC
- 
+- code SWIFT 
+- le numéro de swift 
+- swift numéro d’acheminement 
+- le numéro BIC 
 - \#BIC 
-- code identificateur de banque
- 
+- code identificateur de banque 
    
 ## <a name="taiwan-national-id"></a>ID national à Taïwan
 
@@ -5678,39 +4710,26 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordtaiwanesenationalid"></a>Keyword_taiwanese_national_id
 
-- 身份證字號
- 
-- 身份證
- 
-- 身份證號碼
- 
-- 身份證號
- 
-- 身分證字號
- 
-- 身分證  
-- 身分證號碼
- 
-- 身份證號
- 
-- 身分證統一編號
- 
-- 國民身分證統一編號
- 
-- 簽名
- 
-- 蓋章
- 
-- 簽名或蓋章
-
- 
+- 身份證字號 
+- 身份證 
+- 身份證號碼 
+- 身份證號 
+- 身分證字號 
+- 身分證 
+- 身分證號碼 
+- 身份證號 
+- 身分證統一編號 
+- 國民身分證統一編號 
+- 簽名 
+- 蓋章 
+- 簽名或蓋章 
 - 簽章   
    
-## <a name="taiwan-passport-number"></a>Numéro de passeport Taïwan
+## <a name="taiwan-passport-number"></a>	Numéro de passeport Taïwan
 
 ### <a name="format"></a>Format
 
@@ -5749,18 +4768,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywordtaiwanpassport"></a>Keyword_taiwan_passport
 
-- ROC passport number
- 
-- Numéro de passeport 
-- Numéro de passeport 
-- Passport Num
- 
-- # Passeport
- 
-- 护照
- 
-- 中華民國護照
- 
+- ROC passport number 
+- Passport number 
+- Passport no 
+- Passport Num 
+- Passport # 
+- 护照 
+- 中華民國護照 
 - Zhōnghuá Mínguó hùzhào
    
 ## <a name="taiwan-resident-certificate-arctarc-number"></a>Numéro de certificat de résident (ARC/TARC) Taïwan
@@ -5795,29 +4809,21 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordtaiwanresidentcertificate"></a>Keyword_taiwan_resident_certificate
 
-- Resident Certificate
- 
-- CERT résident 
-- Resident Cert.
- 
-- Carte d'identification 
-- Alien Resident Certificate
- 
+- Resident Certificate 
+- Resident Cert 
+- Resident Cert. 
+- Identification card 
+- Alien Resident Certificate 
 - ARC 
-- Taiwan Area Resident Certificate
- 
-- TARC
- 
-- 居留證
- 
-- 外僑居留證
- 
-- 台灣地區居留證
- 
+- Taiwan Area Resident Certificate 
+- TARC 
+- 居留證 
+- 外僑居留證 
+- 台灣地區居留證 
 
 ## <a name="thai-population-identification-code"></a>Code d'identification du remplissage thaï
 
@@ -5949,39 +4955,25 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordukdriverslicense"></a>Keyword_uk_drivers_license
 
-- DVLA
- 
-- véhicule utilitaire léger
- 
-- quad
- 
-- automobiles
- 
+- DVLA 
+- véhicule utilitaire léger 
+- Quadbikes 
+- automobiles 
 - 125cc 
-- sidecar
- 
-- tricycles
- 
-- motocycles
- 
-- permis de conduire plastifié
- 
-- apprentis conducteurs
- 
-- titulaire du permis
- 
-- titulaires du permis
- 
-- permis de conduire
- 
-- permis de conduire
- 
-- voiture à double commande
- 
+- annexes 
+- tricycles 
+- Side 
+- permis de conduire plastifié 
+- apprentis conducteurs 
+- titulaire du permis 
+- titulaires du permis 
+- permis de conduire 
+- permis de conduire 
+- voiture à double commande 
    
 ## <a name="uk-electoral-roll-number"></a>Numéro de liste électorale Royaume-Uni
 
@@ -6019,13 +5011,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywordukelectoral"></a>Keyword_uk_electoral
 
-- nomination au conseil
- 
-- formulaire de nomination
- 
-- registre électoral
-
- 
+- nomination au conseil 
+- formulaire de nomination 
+- registre électoral 
 - liste électorale
 
    
@@ -6072,40 +5060,29 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
    
 #### <a name="keyworduknhsnumber"></a>Keyword_uk_nhs_number
 
-- service national de santé
- 
-- NHS
- 
-- administration des services de santé
-
- 
+- service national de santé 
+- NHS 
+- administration des services de santé 
 - administration de la santé
 
 #### <a name="keyworduknhsnumber1"></a>Keyword_uk_nhs_number1
 
-- id du patient
- 
-- identification du patient
- 
-- n° patient
-
- 
+- id du patient 
+- identification du patient 
+- n° patient 
 - numéro de patient
 
 #### <a name="keyworduknhsnumberdob"></a>Keyword_uk_nhs_number_dob
 
-- Stratégie de groupe 
-- DDN
- 
+- GP 
+- DOB 
 - D. O. B 
-- Date of Birth
- 
-- Birth Date
- 
+- Date of Birth 
+- Birth Date 
    
 ## <a name="uk-national-insurance-number-nino"></a>Numéro d'assurance nationale (NINO) Royaume-Uni
 
@@ -6169,29 +5146,18 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keyworduknino"></a>Keyword_uk_nino
 
-- numéro d’assurance nationale
- 
-- cotisations sociales
- 
-- loi sur la protection
- 
-- assurance
- 
-- numéro de sécurité sociale
- 
-- demande d’assurance
- 
-- demande de soins médicaux
- 
-- assurance sociale
- 
-- soins médicaux
- 
+- numéro d’assurance nationale 
+- cotisations sociales 
+- loi sur la protection 
+- cotisations 
+- numéro de sécurité sociale 
+- demande d’assurance 
+- demande de soins médicaux 
+- assurance sociale 
+- soins médicaux 
 - sécurité sociale 
-- grande-bretagne
- 
-- assurance
-    
+- grande-bretagne 
+- cotisations    
    
 ## <a name="us--uk-passport-number"></a>Numéro de passeport États-Unis/Royaume-Uni
 
@@ -6227,36 +5193,23 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywordpassport"></a>Keyword_passport
 
 - Numéro de passeport 
-- 
-N° de passeport 
-- # Passeport
- 
-- #Passeport
- 
+- N° de passeport 
+- # Passeport 
+- Tel 
 - PassportID 
-- n° passeport
- 
-- numéropasseport
- 
+- N ° passeport 
+- passportnumber 
 - パスポート 
-- パスポート番号
- 
-- パスポートのNum
- 
-- パスポート＃
- 
+- パスポート番号 
+- パスポートのNum 
+- パスポート # 
 - Numéro de passeport 
-- 
-Passeport n° 
-- Passeport numéro
- 
-- # Passeport
- 
-- Passeport#
- 
+- Passeport n° 
+- Passeport numéro 
+- # Passeport 
+- Passeport 
 - PasseportNon 
-- Passeportn °
- 
+- Passeportn ° 
    
 ## <a name="us-bank-account-number"></a>Numéro de compte bancaire États-Unis
 
@@ -6288,64 +5241,37 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordusabankaccount"></a>Keyword_usa_Bank_Account
 
-- Numéro de compte courant
- 
-- Compte courant
- 
-- # compte courant
- 
-- Numéro compte courant
- 
-- # compte courant
- 
-- N° de compte courant
- 
-- N° de compte courant
- 
-- Numéro de compte bancaire
- 
-- # Compte bancaire
- 
-- Numéro de compte bancaire
- 
-- # Compte bancaire
- 
-- N° de compte bancaire
- 
-- N° de compte bancaire
- 
-- Numéro de compte d’épargne
- 
-- Compte d’épargne.
- 
-- N° de compte d’épargne
- 
-- Numéro de compte d’épargne
- 
-- # compte d’épargne
- 
-- N° de compte d’épargne
- 
-- N° de compte d’épargne
- 
-- Numéro de compte de débit
- 
-- Compte de débit
- 
-- # Compte de débit
- 
-- Numéro de compte de débit
- 
-- # Compte de débit
- 
-- N° de compte de débit
- 
-- N° de compte de débit
- 
+- Numéro de compte courant 
+- Compte courant 
+- # compte courant 
+- Numéro compte courant 
+- # compte courant 
+- N° de compte courant 
+- N° de compte courant 
+- Numéro de compte bancaire 
+- # Compte bancaire 
+- Numéro de compte bancaire 
+- # Compte bancaire 
+- N° de compte bancaire 
+- N° de compte bancaire 
+- Numéro de compte d’épargne 
+- Compte d’épargne. 
+- N° de compte d’épargne 
+- Numéro de compte d’épargne 
+- # compte d’épargne 
+- N° de compte d’épargne 
+- N° de compte d’épargne 
+- Numéro de compte de débit 
+- Compte de débit 
+- # Compte de débit 
+- Numéro de compte de débit 
+- # Compte de débit 
+- N° de compte de débit 
+- N° de compte de débit 
    
 ## <a name="us-drivers-license-number"></a>Numéro de permis de conduire États-Unis
 
@@ -6356,7 +5282,7 @@ Dépend de l’État
 ### <a name="pattern"></a>Modèle
 
 Dépend de l’État, par exemple, New York :
-- Neuf chiffres au format ddd ddd ddd correspondront.
+- Neuf chiffres au format DDD DDD DDD correspondront.
 - Neuf chiffres au format ddddddddd ne correspondront pas.
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -6392,34 +5318,26 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
     </Pattern>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordusdriverslicenseabbreviations"></a>Keyword_us_drivers_license_abbreviations
 
-- PC 
-- PC 
+- LD 
+- DISTRIBUTION 
 - CÈDE 
 - CDLS 
 - ID 
 - Codes 
-- # PC 
-- 
-# PC
- 
-- # PCD
- 
-- # PCD
- 
-- #ID
-- 
-#IDs
- 
-- numéro d’identification 
-- Numéros d’identification
- 
+- LD 
+- DISTRIBUTION 
+- CÈDE 
+- CDLS # 
+- Réf
+- Codes 
+- Numéro d’identification 
+- Numéros d’identification 
 - Profil 
-- # PERMIS
- 
+- Profil 
 
 #### <a name="keywordusdriverslicense"></a>Keyword_us_drivers_license
 
@@ -6427,107 +5345,85 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - DriverLics 
 - DriverLicense 
 - DriverLicenses 
-- Gestionnaire de la LIC 
-- Pilote conduire 
+- Permis conduire 
+- Permis conduire 
 - Permis de conduire 
-- Licences de pilotes 
+- Permis de conduire 
 - DriversLic 
 - DriversLics 
 - DriversLicense 
 - DriversLicenses 
-- Pilotes Lic 
-- Pilotes conduire 
+- Permis conduire 
+- Permis conduire 
 - Permis de conduire 
-- Licences de pilotes 
+- Permis de conduire 
 - Driver'Lic 
 - Driver'Lics 
 - Driver'License 
 - Driver'Licenses 
-- Driver'Lic 
-- Pilote'conduire 
+- Permis conduire 
+- Permis conduire 
 - Permis de conduire 
 - Permis de conduire
 - Driver'sLic 
 - Driver'sLics 
 - Driver'sLicense 
 - Driver'sLicenses 
-- Gestionnaire de la LIC 
-- Conduire du pilote 
 - Permis de conduire 
 - Permis de conduire 
-- numéro d’identification
- 
-- numéros d’identification
- 
-- # identification
- 
-- carte d'identité 
-- cartes d'identité 
-- carte d'identification 
-- cartes d'identification 
+- Permis de conduire 
+- Driver’s Licenses 
+- numéro d’identification 
+- numéros d’identification 
+- # identification 
+- carte d’identité 
+- cartes d’identité 
+- carte d’identification 
+- cartes d’identification 
 - DriverLic # 
 - DriverLics # 
 - DriverLicense # 
 - DriverLicenses # 
 - #Permis conduire 
-- 
-#Permis conduire
- 
-- # Permis de conduire 
-- # Permis de conduire 
+- #Permis conduire 
+- #Permis de conduire 
+- #Permis de conduire 
 - DriversLic # 
 - DriversLics # 
 - DriversLicense # 
 - DriversLicenses # 
-- Drivers Lic # 
-- Nombre de pilotes conduire 
-- # Permis de conduire 
-- Nombre de licences de pilotes 
-- #Permisconduire
- 
-- #Permisconduire
- 
-- #Permisdeconduire
- 
-- #Permisdeconduire
- 
-- #Permis conduire
- 
-- #Permis conduire
- 
-- #Permis de conduire
- 
-- #Permis de conduire
- 
+- #Permis conduire 
+- #Permis conduire 
+- #Permis de conduire 
+- #Permis de conduire 
+- Driver'Lic # 
+- Driver'Lics # 
+- Driver'License # 
+- Driver'Licenses # 
+- #Permis conduire 
+- #Permis conduire 
+- #Permis de conduire 
+- #Permis de conduire 
 - Driver'sLic # 
 - Driver'sLics # 
 - Driver'sLicense # 
 - Driver'sLicenses # 
-- #Permisconduire
- 
-- #Permisconduire
- 
-- #Permis de conduire
- 
-- #Permis de conduire
- 
-- n ° carte 
-- # cartes d’identité
- 
-- #carte d’identification
- 
-- #cartes d’identification
- 
+- #Permisconduire 
+- #Permisconduire 
+- #Permis de conduire 
+- #Permis de conduire 
+- # carte d’identité 
+- # cartes d’identité 
+- #carte d’identification 
+- #cartes d’identification 
 
 
-#### <a name="keywordstatenamedriverslicensename"></a>Keyword_[state_name]_drivers_license_name
+#### <a name="keywordstatenamedriverslicensename"></a>Keyword_ [state_name] _drivers_license_name
 
-- Abréviation de l’État (par exemple, « NY »)
- 
-- Nom de l’État (par exemple, « New York »)
-    
+- Abréviation de l’État (par exemple, « NY ») 
+- Nom de l’État (par exemple, « New York »)    
    
-## <a name="us-individual-taxpayer-identification-number-itin"></a>Numéro d'identification fiscale individuel (ITIN) États-Unis
+## <a name="us-individual-taxpayer-identification-number-itin"></a>Numéro d’identification fiscale individuel (ITIN) États-Unis
 
 ### <a name="format"></a>Format
 
@@ -6535,7 +5431,7 @@ Neuf chiffres, le premier étant le « 9 », le quatrième le « 7 » ou le 
 
 ### <a name="pattern"></a>Modèle
 
-Mis en forme :
+Avec
 - Le chiffre « 9 » 
 - Deux chiffres 
 - Un espace ou un tiret 
@@ -6544,7 +5440,7 @@ Mis en forme :
 - Un espace ou tiret 
 - Quatre chiffres
 
-Non mis en forme :
+Non
 - Le chiffre « 9 » 
 - Deux chiffres 
 - Un « 7 » ou un « 8 » 
@@ -6595,42 +5491,30 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyworditin"></a>Keyword_itin
 
-- contribuable
- 
-- id fiscal
- 
-- identification fiscale
- 
-- itin
- 
+- redevable 
+- id fiscal 
+- identification fiscale 
+- ITIN 
 - SSN 
-- tin
- 
+- Etain 
 - sécurité sociale 
-- contribuable
- 
-- itins
- 
-- id fiscal
-
- 
-- contribuable individuel
- 
+- contribuable 
+- itins 
+- taxi 
+- contribuable individuel 
 
 #### <a name="keyworditincollaborative"></a>Keyword_itin_collaborative
 
 - License 
-- PC 
-- DDN
- 
+- LD 
+- DOB 
 - Birthdate 
-- Anniversaire  
-- Date of Birth
- 
+- Anniversaire 
+- Date of Birth 
    
 ## <a name="us-social-security-number-ssn"></a>Numéro de sécurité sociale (SSN) États-Unis
 
@@ -6702,24 +5586,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keywordssn"></a>Keyword_ssn
 
-- Sécurité sociale
- 
-- # sécurité sociale
- 
-- Sécu sociale
- 
+- Sécurité sociale 
+- # sécurité sociale 
+- Sécu sociale 
 - SSN 
-- NSS
- 
-- #NSS
- 
-- # SS
- 
-- IDSS
- 
+- NUMÉROS 
+- SSN 
+- SOCIALE 
+- IDENTIFIant SSID 
    
 

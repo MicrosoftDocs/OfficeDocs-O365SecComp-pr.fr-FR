@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 730e1fe40756bcb38f3b071137828072f4e2dcb5
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: fe208f4a9f7927d8481d5c6ec8b901baafb98626
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296717"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455296"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>Ajouter des dépositaires à un cas avancé eDiscovery (aperçu)
 
@@ -69,12 +69,10 @@ En fonction de votre cas, vous pouvez également ajouter des boîtes aux lettres
 ![Mapper des sources de données supplémentaires](../media/AddCustodianStep3.PNG)
 
 Pour mapper des boîtes aux lettres, des sites ou des équipes à un dépositaire spécifique:
+1. Sélectionnez **Ajouter** pour affecter des emplacements de contenu, tels que des boîtes aux lettres, des sites et des équipes, à un dépositaire spécifique. 
 
-1. Sélectionnez **mettre à jour** pour affecter des emplacements de contenu, comme des boîtes aux lettres, des sites et des équipes à un dépositaire spécifique. 
-
-2. Dans le menu volant, spécifiez les éléments suivants:
-   
-    -  **Boîtes aux lettres Exchange** : cliquez sur **choisir les utilisateurs, les groupes ou les équipes** , puis cliquez à nouveau sur **choisir les utilisateurs, les groupes ou les équipes** . Pour spécifier les boîtes aux lettres à affecter au dépositaire sélectionné, utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution. Vous pouvez également affecter la boîte aux lettres associée pour un groupe Office 365 ou une équipe Microsoft. Activez la case à cocher utilisateur, groupe, équipe, cliquez sur **choisir**, puis sur **Terminer**.
+2. Dans le menu volant, spécifiez les ![éléments suivants: mapper des sources de données](../media/AddCustodianStep4.PNG)
+  -  **Boîtes aux lettres Exchange** : cliquez sur **choisir les utilisateurs, les groupes ou les équipes** , puis cliquez à nouveau sur **choisir les utilisateurs, les groupes ou les équipes** . Pour spécifier les boîtes aux lettres à affecter au dépositaire sélectionné, utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution. Vous pouvez également affecter la boîte aux lettres associée pour un groupe Office 365 ou une équipe Microsoft. Activez la case à cocher utilisateur, groupe, équipe, cliquez sur **choisir**, puis sur **Terminer**.
 
         > [!NOTE]
         > Lorsque vous cliquez sur choisir les utilisateurs, les groupes ou les équipes pour spécifier des boîtes aux lettres, le sélecteur de boîtes aux lettres affiché est vide. Il s'agit d'une conception qui améliore les performances. Pour ajouter des personnes à cette liste, tapez un nom (un minimum de 3 caractères) dans la zone de recherche.
@@ -89,6 +87,8 @@ Une fois que vous avez terminé le mappage de vos sources, vous pouvez afficher 
 
 ## <a name="optional-step-4-place-custodians-on-hold"></a>Module Étape 4: placer des dépositaires en conservation
 
+![Placer des suspensions](../media/AddCustodianStep5.PNG)
+
 Une fois que vous avez finalisé les dépositaires et les sources de données que vous souhaitez ajouter à votre cas, vous pouvez éventuellement placer une partie ou la totalité de vos dépositaires en conservation. Lorsque vous mettez un dépositaire en conservation, le contenu mappé sur cet utilisateur est conservé jusqu'à ce que vous relâchiez le déblocage du dépositaire ou jusqu'à ce que vous supprimiez le blocage. Dans certains cas, vous souhaiterez peut-être ajouter des dépositaires à un cas sans les mettre en attente. 
 
 Pour placer les dépositaires et les sources de données sélectionnés en conservation:
@@ -99,4 +99,4 @@ Pour placer les dépositaires et les sources de données sélectionnés en conse
 
 3. Cliquez sur **modifier** pour afficher toutes les sources de données de dépositaire sélectionnées.
 
-    ![Placer des suspensions](../media/AddCustodianStep4.PNG)
+   

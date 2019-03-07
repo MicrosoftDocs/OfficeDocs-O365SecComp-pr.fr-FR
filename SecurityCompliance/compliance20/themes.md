@@ -14,16 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1983fbcc16469e5ed533fcb6bd5ee01ce7182163
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 7c9d1a52acef48d96816fefbb1c836032d262b93
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296277"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454676"
 ---
 # <a name="themes"></a>Thèmes
+Comment une personne écrit-t-elle un document? Elles commencent généralement par une ou plusieurs idées qu'elles souhaitent transférer dans le document, et composent des mots qui s'alignent sur les idées. Plus l'idée est fréquente, plus le nombre de mots liés à cette idée est important. Cela indique le mode d'utilisation des documents par les utilisateurs; l'essentiel de la lecture d'un document est l'idée des idées que le document tente de transmettre, et les idées qui apparaissent où et les relations entre les idées.
 
-Lorsqu'un utilisateur compose un document, il ne choisit pas les mots de manière aléatoire; elles essaient de communiquer des idées ou des concepts, et les mots sont choisis en conséquence. Les modules thèmes mettent en clusters des documents qui traitent des questions similaires afin que les réviseurs puissent être plus efficaces dans les documents.
+Cela peut être étendu à la manière dont une personne souhaite utiliser un ensemble de documents. Ils veulent voir quelles idées sont présentes dans les ensembles et quels documents parlent de ces idées. En outre, si elle trouve un document d'intérêt particulier, elle souhaite pouvoir consulter des documents qui abordent des idées similaires.
+
+Le module themes tente de reproduire la raison pour les êtres humains des documents en analysant les «thèmes» présentés dans un jeu de travail et en les affectant à des documents. Les thèmes se déplacent d'une étape et identifient par document le «thème dominant»; autrement dit, le thème qui apparaît le plus.
 
 ## <a name="how-does-themes-work"></a>Comment fonctionne le thème?
 Themes analyse les documents avec du texte dans une plage de travail pour analyser les thèmes communs qui apparaissent dans les documents. Ensuite, il affecte ces thèmes aux documents dans lesquels ils apparaissent. Il s'étiquette également avec des mots utilisés dans les documents représentatifs du thème. Dans la mesure où un document peut être associé à plusieurs sujets, dans de nombreux cas, un document comporte plusieurs thèmes. Le thème qui apparaît le plus en évidence dans un document est désigné comme son thème dominant.

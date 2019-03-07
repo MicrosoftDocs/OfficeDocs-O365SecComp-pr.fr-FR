@@ -10,17 +10,18 @@ f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleNotifyUser
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: "Un Conseil de stratégie est une notification ou un avertissement qui s'affiche lorsqu'un utilisateur travaille avec du contenu qui entre en conflit avec une stratégie DLP. Vous pouvez utiliser des notifications par courrier électronique et des conseils de stratégie pour sensibiliser les utilisateurs aux stratégies de votre organisation. Vous pouvez également donner aux utilisateurs la possibilité de remplacer la stratégie, afin qu'ils ne soient pas bloqués s'ils ont un besoin opérationnel valide ou si la stratégie détecte un faux positif. "
-ms.openlocfilehash: fbaabd674de97ffce32b8caae8e2b41471e52569
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: ad351a4f24ce566a47692c190b455e9e680882ca
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410919"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455186"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Envoyer des notifications par courrier électronique et afficher des conseils de stratégie pour les stratégies DLP
 

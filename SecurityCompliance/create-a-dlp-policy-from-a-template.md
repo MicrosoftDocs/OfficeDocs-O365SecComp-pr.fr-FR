@@ -10,16 +10,17 @@ f1_keywords:
 - ms.o365.cc.NewPolicyFromTemplate
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MET150
 description: 'La façon la plus simple et la plus courante de démarrer avec les stratégies DLP consiste à utiliser l’un des modèles inclus dans Office 365. '
-ms.openlocfilehash: 2a1802592edbc3cfbcc05f5db979a0b4c3988e0d
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 7e07c79df8ff9b65e2b213b180c607008007550e
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410949"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455256"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Création d'une stratégie DLP à partir d'un modèle
 
@@ -159,7 +160,7 @@ Une fois que vous avez créé et activé une stratégie DLP, elle est déployée
   
 Voici les différents états et leur signification.
   
-|**État**|**Explication**|
+|**Status**|**Explication**|
 |:-----|:-----|
 |**Activation en cours...** <br/> |La stratégie est déployée pour les sources de contenu qu’elle contient. La stratégie n’est pas encore appliquée sur toutes les sources.  <br/> |
 |**Test en cours, avec notifications** <br/> |La stratégie est en mode test. Les actions dans une règle ne sont pas appliquées, mais les correspondances de stratégie sont collectées et peuvent être consultées à l’aide des rapports DLP. Les notifications sur les correspondances de stratégie sont envoyées aux destinataires spécifiés.  <br/> |

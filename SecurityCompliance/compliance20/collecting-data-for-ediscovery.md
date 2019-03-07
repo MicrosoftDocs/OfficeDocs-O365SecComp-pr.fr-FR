@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bcc307cc08954dd3cc69e8905747393d79f97b04
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: fb4b36841394576c44667f9677507c5655179e45
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30297097"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455416"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>Collecter des données pour un cas dans Advanced eDiscovery (aperçu)
 
@@ -27,7 +27,7 @@ Une fois que vous avez identifié les dépositaires et les sources de données i
 
 Une fois que vous avez exécuté une recherche, vous pouvez afficher des statistiques sur les éléments récupérés, tels que les emplacements qui avaient le plus d'éléments correspondant à la requête de recherche. Vous pouvez également afficher un aperçu d'un sous-ensemble des résultats. Une fois que vous avez identifié l'ensemble des documents que vous souhaitez examiner, vous pouvez ajouter les résultats de la recherche à un jeu de travail à collecter et traiter.
 
-## <a name="create-a-search"></a>Créer une recherche
+## <a name="create-a-search"></a>Create a search
 
 Cliquez sur **nouvelle recherche** sous l'onglet **recherches** pour démarrer un assistant qui vous guide tout au long de la procédure de création d'une recherche. Pour plus d'informations sur la création d'une recherche, voir [Create a Search to Collect Data](create-search-to-collect-data.md).
 
@@ -41,7 +41,6 @@ Une fois l'estimation de la recherche terminée, cliquez sur la recherche pour a
 - Résumé
 - Emplacements les plus fréquents
 - Requêtes
-- Affinements
 
 Pour plus d'informations sur les statistiques de recherche, voir statistiques de la [recherche](search-statistics.md).
 

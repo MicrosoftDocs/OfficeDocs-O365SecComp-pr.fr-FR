@@ -12,14 +12,15 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 description: De nombreuses organisations appliquent déjà un processus permettant d’identifier et de classer les informations sensibles à l’aide des propriétés de classification dans l’infrastructure de classification des fichiers (ICF) Windows Server, des propriétés de document dans SharePoint ou des propriétés de document appliquées par un système tiers. Si vous reconnaissez votre organisation, vous pouvez créer une stratégie DLP dans Office 365 qui reconnaît les propriétés qui ont été appliquées aux documents par l’ICF Windows Server ou un autre système, afin que la stratégie DLP puisse être activée sur les documents Office avec une ICF ou d’autres valeurs de propriété spécifiques.
-ms.openlocfilehash: d4468859781703012438a06ec782b75d1acce963
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: fc1d38f1bf648e02f0e86f7cc11e6dca9f88b540
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410529"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455176"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Création d’une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés
 

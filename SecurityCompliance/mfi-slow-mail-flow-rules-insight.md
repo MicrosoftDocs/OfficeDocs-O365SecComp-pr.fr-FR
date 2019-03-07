@@ -1,36 +1,36 @@
 ---
-title: Présente les règles flux lent
+title: Informations sur les règles de flux de messagerie lent
 ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.date: 5/3/2018
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
-description: Administrateurs peuvent prendre connaissance du présente les règles lent flux dans le tableau de bord du flux de messagerie dans le centre de conformité de & Office 365 sécurité.
-ms.openlocfilehash: 930ea7c57d896c75c6af1333f2bf202b56270199
-ms.sourcegitcommit: 25fb33a1f8b2844fde15f6c03db2936c610824e0
+description: Les administrateurs peuvent en savoir plus sur les règles de flux de messagerie lentes dans le tableau de bord de flux de messagerie dans le centre de sécurité & de sécurité Office 365.
+ms.openlocfilehash: 8188ee0da15ac337499866783ca4f2d893062d5b
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28685419"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454876"
 ---
-# <a name="slow-mail-flow-rules-insight"></a>Présente les règles flux lent
+# <a name="slow-mail-flow-rules-insight"></a>Informations sur les règles de flux de messagerie lent
 
-Règles de flux de messagerie inefficace (également connu sous les règles de transport) pouvant conduire à des retards de flux de messagerie pour votre organisation. Cet aperçu signale les règles de flux de messagerie qui ont un impact sur le flux de messagerie de votre organisation. Exemples de ces types de règles sont les suivants :
+Des règles inefficaces de flux de messagerie (également appelées règles de transport) peuvent entraîner des retards de flux de messagerie pour votre organisation. Cette vue d'État indique les règles de flux de messagerie qui ont un impact sur le flux de messagerie de votre organisation. Voici des exemples de ces types de règles:
 
-- Conditions qui utilisent **est membre** des groupes de grande taille.
+- Conditions utilisées par **est membre de** pour les grands groupes.
 
-- Conditions complexe expression régulière (regex) de critères spéciaux.
+- Conditions qui utilisent des critères de correspondance des expressions régulières complexes (Regex).
 
-- Conditions qui utilisent le contrôle de contenu dans les pièces jointes.
+- Conditions d'utilisation de l'archivage de contenu dans les pièces jointes.
 
-L’aperçu vous aidera à identifier et à affiner les règles de flux de messagerie pour vous aider à réduire les délais de flux de messagerie.
+Le centre d'analyse vous aidera à identifier et à ajuster les règles de flux de messagerie afin de réduire les délais de flux de messagerie.
 
-![Un flux de messagerie est lent des règles de détail dans le tableau de bord du flux de messagerie dans le centre de conformité de & Office 365 sécurité](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
+![Des règles de flux de messagerie lentes dans le tableau de bord de flux de messagerie dans le centre de sécurité & de sécurité Office 365](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
 
-Lorsque vous cliquez sur **Afficher les détails**, un volet flottant s’affiche dans laquelle vous pouvez consulter la règle. Dans le volet flottant, peut également cliquer sur **Afficher les messages exemple** pour voir quels messages sont affectées par la règle.
+Lorsque vous cliquez sur **afficher les détails**, un volet flyout apparaît dans lequel vous pouvez examiner la règle. Dans le volet flyout, peut également cliquer sur **afficher les exemples de messages** pour voir les types de messages concernés par la règle.
 
-![Volet flottant après avoir cliqué sur Afficher les détails dans un aperçu de règles de flux de messagerie est lent dans le tableau de bord de flux de messagerie](media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
+![Volet flyout après avoir cliqué sur Afficher les détails dans une règle de flux de messagerie lente vue d'ensemble du tableau de bord de flux de messagerie](media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)

@@ -8,17 +8,18 @@ ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Les types d'informations sensibles recherchent un modèle spécifique et le corroborent en garantissant une mise en forme appropriée, en appliquant des checksums et en recherchant des mots clés pertinents ou d'autres informations. Certaines de ces fonctionnalités sont effectuées par des fonctions internes. Cette rubrique explique ce que ces fonctions recherchent, pour vous aider à comprendre le fonctionnement des types d’informations sensibles prédéfinis.
-ms.openlocfilehash: 4cc6f4d27e106aeedb2fa8cae0f3634b9e3d6319
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: f64a4f174483b2aa57520991dcf85d13515074fb
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410549"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454966"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>Éléments recherchés par les fonctions DLP
 

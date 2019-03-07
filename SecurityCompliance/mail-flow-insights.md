@@ -5,16 +5,16 @@ author: chrisda
 manager: serdars
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Les administrateurs peuvent en savoir plus sur le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance Center.
-ms.openlocfilehash: 1312e7362cd7765a3fbf3df9410e2e777682ece0
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1e18bcb381a6b557d3141c0c17b8433cfcd00049
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215584"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455146"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informations sur le flux de messagerie dans le centre de sécurité & conformité
 

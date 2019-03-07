@@ -5,16 +5,16 @@ author: chrisda
 manager: serdars
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Les administrateurs peuvent en savoir plus sur le rapport de messages transférés automatiquement dans le tableau de bord de flux de messagerie dans le centre de sécurité & de la sécurité d'Office 365.
-ms.openlocfilehash: 5097a2842eeae56e1eb51b9fae4c0caf5263ad80
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: acfc1996a630cb6ff9a12a1e2953c93ba9862ffd
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219304"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454926"
 ---
 # <a name="auto-forwarded-messages-report"></a>Rapport des messages transférés automatiquement
 

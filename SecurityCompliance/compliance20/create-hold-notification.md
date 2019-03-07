@@ -14,22 +14,26 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c7fa8c7229ebb6b5304b80e15fba604c139076cd
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: acfa0c635b361426542e91a55c8d75c315bfb831
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296137"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455196"
 ---
 # <a name="create-a-legal-hold-notice"></a>Créer une notice de suspension légale
 
 À l'aide des communications des dépositaires avancés (aperçu), les organisations peuvent gérer leur flux de travail pour communiquer avec des dépositaires. Grâce à l'outil de communication, les équipes juridiques peuvent envoyer, collecter et suivre systématiquement les notifications de conservation légale. Le processus de création flexible permet également à teams de personnaliser le flux de travail de notification de blocage et le contenu des notifications envoyées aux dépositaires. 
+
+![Page Communications](../media/CommunicationPage.PNG)
 
 L'article décrit les étapes du flux de travail de notification de blocage.
 
 ## <a name="step-1-specify-communication-details"></a>Étape 1: spécifier les détails de communication
 
 La première étape consiste à spécifier les détails appropriés pour les notifications de suspension légale ou autres communications de dépositaire. 
+
+![Page communication de nom](../media/NameCommunication.PNG)
 
 1. Dans le centre de sécurité & Compliance Center, accédez à **eDiscovery _GT_ Advanced eDiscovery (Preview)** pour afficher la liste des incidents de votre organisation.
    
@@ -47,9 +51,11 @@ La première étape consiste à spécifier les détails appropriés pour les not
 
 Ensuite, vous pouvez créer et ajouter le contenu de la notification de suspension. Dans la page **définir le contenu du portail** , dans l'assistant créer une **communication** , spécifiez le contenu de la notification de suspension. Ce contenu sera automatiquement ajouté aux notifications d'émission, de réÉmission, de rappel et de signalisation. De plus, ce contenu s'affichera dans le portail de conformité du dépositaire. 
 
+![Page contenu du portail](../media/PortalContent.PNG)
+
 Pour créer le contenu du portail:
 
-1. Tapez (ou coupez-coller dans un autre document) votre notification de blocage dans la zone de texte du contenu du portail. 
+1. Tapez (ou coupez et collez à partir d'un autre document) votre notification de blocage dans la zone de texte du contenu du portail. 
 
 2. Insérez des variables de fusion dans votre notification pour personnaliser l'avis et partager le portail de conformité des dépositaires.
 
@@ -78,7 +84,7 @@ Pour créer une notification d'émission:
    
 4. Spécifiez le contenu ou les instructions supplémentaires que vous souhaitez fournir au dépositaire (obligatoire). Notez que le contenu du portail que vous avez défini à l'étape 2 est ajouté à la fin de l'avis d'émission. 
    
-5. Cliquez sur **Enregistrer**. 
+5. Cliquez sur **Enregistrer** 
 
 ### <a name="re-issuance-notification"></a>Notification de nouvelle émission 
 
@@ -119,7 +125,9 @@ Pour créer une notification de publication:
 
 Si vous le souhaitez, vous pouvez simplifier le flux de travail pour le suivi des dépositaires qui ne répondent pas en créant et en planifiant des notifications automatiques de rappel et de remontée.
 
-### <a name="reminders"></a>Rappels
+![Page rappel/escalade](../media/ReminderEscalations.PNG)
+
+### <a name="reminders"></a>Reminders
 
 Une fois que vous avez envoyé une notification de mise en attente, vous pouvez suivre l'absence de remise des dépositaires en définissant un flux de travail de rappel. 
 
@@ -161,7 +169,9 @@ Pour planifier les escalades:
    
 ## <a name="step-5-assign-custodians"></a>Étape 5: affecter des dépositaires 
 
-Une fois que vous avez finalisé le contenu des notifications, sélectionnez les dépositaires auxquels les notifications doivent être envoyées. 
+Une fois que vous avez finalisé le contenu des notifications, sélectionnez les dépositaires que vous souhaitez envoyer. 
+
+![Sélectionner la page des dépositaires](../media/SelectCustodians.PNG)
 
 Pour ajouter des dépositaires:
 

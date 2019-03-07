@@ -7,18 +7,19 @@ ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 description: Avec la protection contre la perte de données (DLP) dans SharePoint Online, vous pouvez découvrir des documents qui contiennent des données sensibles sur l'ensemble de votre client. Après avoir découvert les documents, vous pouvez travailler avec leurs propriétaires pour protéger les données. Cette rubrique peut vous aider à créer une requête pour rechercher des données sensibles.
-ms.openlocfilehash: 74914ec934ece773e7a9748dfc821cea7c84963c
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 8ea9622242775e7d411280707a61ba10aa02f4f2
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410709"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455066"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Créer une requête pour trouver des données sensibles stockées sur des sites
 

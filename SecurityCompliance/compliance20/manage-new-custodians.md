@@ -14,16 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 95a1bcbbc279ad4e476fc479e701b0f8a921c83b
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 6a21240f71c64f244ee42c3d3a2ed9d75381edaa
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295677"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454936"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a>Gestion des dépositaires dans un cas avancé eDiscovery (aperçu)
 
 L'onglet dépositaires contient une liste triable de tous les dépositaires dans le cas. Une fois que vous avez ajouté des dépositaires à un cas, les détails de chaque dépositaire seront automatiquement collectés à partir d'Azure Active Directory.
+
+![Gestion des dépositaires](../media/CustodianDetails.PNG)
 
 ## <a name="viewing-custodian-details"></a>Affichage des détails des dépositaires
 
@@ -37,7 +39,7 @@ La page de menu volant contenant les détails des dépositaires s'affiche une fo
   - **Department**: nom du service dans lequel le dépositaire travaille.
   - **Responsable**: le responsable du dépositaire. Le responsable désigné recevra toutes les communications d'escalade de ce dépositaire.
   
-- Informations d’emplacement
+- Informations d'emplacement
 
   - **Ville**: ville dans laquelle se trouve le dépositaire.
   - **État**: État ou province dans l'adresse du dépositaire.
@@ -56,7 +58,7 @@ La page de menu volant contenant les détails des dépositaires s'affiche une fo
   - **Indexation de la dernière heure de mise à jour**: indique l'datestamp de la dernière fois que le travail d'indexation profonde a été déclenché.
   - **Sources de données**: affiche le nombre de boîtes aux lettres, de sites et d'équipes qui ont été sélectionnées pour le dépositaire.
 
-## <a name="updating-a-custodian"></a>Mise à jour d'un dépositaire
+## <a name="editing-a-custodian"></a>Modification d'un dépositaire
 
 Lors de l'évolution de votre cas, vous pouvez découvrir qu'il peut y avoir des sources de données supplémentaires pertinentes pour un dépositaire spécifique & votre cas. Dans d'autres scénarios, vous souhaiterez peut-être supprimer certaines sources de données qui ont été vérifiées et considérées comme non pertinentes.
 
@@ -67,6 +69,8 @@ Pour mettre à jour un dépositaire et les sources de données sélectionnées:
 2. Dans le cas, cliquez sur **** l'onglet dépositaires.
   
 3. Sélectionnez le ou les dépositaires dans la liste, puis cliquez sur **modifier les sources**.
+
+    ![Modifier des sources de données](../media/EditCustodianDataSource.PNG)
   
 4. Mettez à jour les sélections pour les emplacements Exchange et OneDrive en cliquant sur **choisir les sources de données**.
   
@@ -89,7 +93,7 @@ Pour déclencher un processus de réindexation afin d'adresser des éléments pa
 
 2. Dans le cas, cliquez sur l' **onglet dépositaires**. 
 
-3. Sélectionnez le ou les dépositaires qui doivent être réindexés, puis cliquez sur **mettre à jour l'index** sur la page de menu volant.
+3. Sélectionnez le ou les dépositaires qui doivent être réindexés, puis cliquez sur ![Mettre à jour l'index](../media/UpdateIndex.PNG) sur la page de menu volant.
 
 4. Vérifiez l'état de l'index dépositaire en cliquant sur le lien dans la colonne **État du travail d'indexation** sous l'onglet **dépositaires** .  
 
@@ -109,7 +113,7 @@ Pour libérer un dépositaire:
 
 1.  Accédez à l' **** onglet dépositaires.
 
-2.  Sélectionnez le dépositaire dans la liste, puis cliquez sur **libérer** les dépositaires sur la page de menu volant.
+2.  Sélectionnez le dépositaire dans la liste, puis cliquez sur ![DéBloquer le dépositaire](../media/ReleaseCustodian.PNG) sur la page de menu volant.
 
     Le statut du dépositaire sous l'onglet **dépositaires** est défini sur **Released** et le **statut de blocage** sur la page flyout est modifié sur inactive. **** 
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1f5f463bcda5c33df890547f7113a032ae935dbe
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: defc89f1d54238e62f947fd197e7a866380ee601
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295527"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455166"
 ---
 # <a name="view-custodian-audit-activity"></a>Afficher l'activité d'audit du dépositaire
 
@@ -38,17 +38,19 @@ Vous devez disposer du rôle journaux d'audit en affichage seul ou journaux d'au
    
    2. Accédez à l' **** onglet dépositaires et sélectionnez un dépositaire.
    
-   3. Une fois que vous avez sélectionné un dépositaire, cliquez sur **afficher l'activité du dépositaire** dans le panneau de détails.
+   3. Une fois que vous avez sélectionné un dépositaire, cliquez sur  ![Afficher l'activité du dépositaire](../media/ViewCustodianActivity.PNG)  dans le panneau de détails.
    
    4. ConFigurez les critères de recherche suivants:
       
-      a. **Activities** : cliquez sur la liste déroulante pour afficher les activités que vous pouvez rechercher. Après l'exécution de la recherche, seuls les enregistrements d'audit des activités sélectionnées sont affichés. Sélectionnez **afficher les résultats pour toutes les activités** pour afficher les résultats de toutes les activités qui répondent aux autres critères de recherche.
+      a. **Activités** : cliquez sur la liste déroulante pour afficher les activités que vous pouvez rechercher. Après l'exécution de la recherche, seuls les enregistrements d'audit des activités sélectionnées sont affichés. Sélectionnez **afficher les résultats pour toutes les activités** pour afficher les résultats de toutes les activités qui répondent aux autres critères de recherche.
+
+      ![Liste des activités](../media/CustodianActivityAudit.PNG)
       
       b. **Date de début et date de fin** : sélectionnez une date et une plage horaire pour afficher les événements qui se sont produits au cours de cette période. Les sept derniers jours sont sélectionnés par défaut. La date et l'heure sont présentées au format UTC (Coordinated Universal Time). La plage de dates maximale que vous pouvez spécifier est d'un an.
       
-      c. **dépositaires** : cliquez dans cette zone, puis sélectionnez un dépositaire spécifique pour lequel afficher les résultats de la recherche. Les enregistrements d'audit de l'activité sélectionnée effectuée par les utilisateurs que vous sélectionnez dans cette zone sont affichés dans la liste des résultats.
-    
-    1. Cliquez sur **Rechercher** pour exécuter la recherche à l'aide de vos critères de recherche. Les résultats de la recherche sont chargés et, après quelques instants, s'affichent sous résultats dans la page recherche des activités du dépositaire. 
+      c. **Dépositaires** : cliquez dans cette zone, puis sélectionnez un dépositaire spécifique pour lequel afficher les résultats de la recherche. Les enregistrements d'audit de l'activité sélectionnée effectuée par les utilisateurs que vous sélectionnez dans cette zone sont affichés dans la liste des résultats.
+      
+   5. Cliquez sur   ![Bouton Rechercher](../media/SearchButton.PNG)  pour exécuter la recherche à l'aide de vos critères de recherche. Les résultats de la recherche sont chargés et, après quelques instants, s'affichent sous résultats dans la page recherche des activités du dépositaire. 
 
 ## <a name="step-2-view-the-audit-log-search-results"></a>Étape 2: afficher les résultats de la recherche du journal d'audit
 
@@ -57,7 +59,7 @@ Les résultats d'une recherche dans le journal d'audit sont affichés sous résu
 Les résultats contiennent les informations suivantes sur chaque événement renvoyé par la recherche.
 - **Date**: date et heure (au format UTC) lorsque l'événement s'est produit.
 
-- **Adresse IP**: adresse IP du périphérique qui a été utilisé lors de l'enregistrement de l'activité. L'adresse IP est affichée dans un format d'adresse IPv4 ou IPv6.
+- **Adresse IP**: adresse IP du périphérique qui a été utilisé lors de l'enregistrement de l'activité. L’adresse IP apparaît au format d’adresse IPv4 ou IPv6.
 
 - **User**: l'utilisateur (ou le compte de service) qui a effectué l'action qui a déclenché l'événement.
 

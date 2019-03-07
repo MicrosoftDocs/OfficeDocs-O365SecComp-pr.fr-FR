@@ -12,13 +12,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
+ms.collection:
+- M365-security-compliance
 description: Avant de créer votre première stratégie de protection contre la perte de données (DLP), DLP contribue à protéger vos informations sensibles à l'aide d'une stratégie par défaut. Cette stratégie par défaut et ses recommandations (illustrées ci-dessous) vous permettent de sécuriser votre contenu sensible en vous avertissant que des messages ou des documents contenant un numéro de carte de crédit ont été partagés avec une personne extérieure à votre organisation.
-ms.openlocfilehash: 3182abcc825c8e27da83ebfb64ed8b2cba6ebcb3
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: d965288a1ea44b1d0cb3d41e24611897a043f535
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341315"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455366"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Prise en main de la stratégie DLP par défaut
 

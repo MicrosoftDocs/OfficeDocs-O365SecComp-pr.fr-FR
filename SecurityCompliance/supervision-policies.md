@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Présentation des stratégies de surveillance dans Office 365
-ms.openlocfilehash: 7a173809f37262f73671fe6ee96485cda97c1eb3
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f4eae6aebde130bdacdc45b419becc32953bffd2
+ms.sourcegitcommit: 5d6be2b208dbe28d5d5da057c60cf97729799c1b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214114"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30465471"
 ---
 # <a name="supervision-policies-in-office-365"></a>Stratégies de surveillance dans Office 365
 
@@ -59,7 +59,7 @@ Avant de commencer à utiliser la surveillance, vous devez déterminer les perso
 > [!IMPORTANT]
 > Tous les utilisateurs surveillés par les stratégies de surveillance doivent disposer d'une licence Office 365 entreprise E3 avec le complément de conformité avancé ou être inclus dans un abonnement Office 365 entreprise E5. Si vous ne disposez pas d'un plan entreprise E5 existant et que vous souhaitez essayer de contrôler, vous pouvez vous [inscrire pour obtenir une version d'évaluation d'Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
-### <a name="reviewers"></a>Relecteurs
+### <a name="reviewers"></a>Reviewers
 
 Lorsque vous créez une stratégie de surveillance, vous déterminez également qui effectuera les révisions des messages des utilisateurs supervisés. Dans la stratégie, vous utiliserez les adresses de messagerie des utilisateurs pour identifier des individus ou des groupes de personnes afin d'examiner les communications surveillées.
 
@@ -77,7 +77,7 @@ Avec les stratégies de surveillance, vous pouvez choisir de surveiller les mess
 
 ### <a name="policy-settings"></a>Paramètres de stratégie
 
-#### <a name="direction"></a>Direction
+#### <a name="direction"></a>Direction (Sens)
 
 Par défaut, la **direction est** la condition est affichée et ne peut pas être supprimée. Les paramètres de direction de communication d'une stratégie peuvent être choisis individuellement ou ensemble:
 
@@ -89,7 +89,7 @@ Par défaut, la **direction est** la condition est affichée et ne peut pas êtr
 
 Vous pouvez inclure des types d'informations sensibles dans le cadre de votre stratégie de supervision. Les types d'informations sensibles sont des types de données prédéfinis ou personnalisés qui peuvent vous aider à identifier et à protéger les numéros de carte de crédit, les numéros de compte bancaire, les numéros de passeport, et bien plus encore. Dans le cadre de la [protection contre la perte de données (DLP)](data-loss-prevention-policies.md)d'Office 365, la configuration des informations sensibles peut tirer parti des modèles, de la proximité des caractères, des niveaux de confiance et même des types de données personnalisés pour identifier et marquer le contenu susceptible d'être sensible. Les types d'informations sensibles par défaut sont les suivants:
 
-- Financial
+- Finances
 - Médecine et santé
 - Politique de confidentialité
 - Type d'informations personnalisées
@@ -111,20 +111,20 @@ Le tableau suivant décrit plus en plus de chaque condition.
 |Un message est reçu à partir de l'un de ces domaines  <br><br> Le message n'est reçu à partir d'aucun de ces domaines | Pour appliquer la stratégie lorsque certains domaines sont inclus ou exclus d'un message reçu, entrez chaque domaine et plusieurs domaines séparés par une virgule. Chaque domaine que vous entrez sera appliqué séparément (un seul de ces domaines doit s'appliquer à la stratégie à appliquer au message). |
 |Un message est envoyé à l'un de ces domaines  <br><br> Le message n'est pas envoyé à l'un de ces domaines | Pour appliquer la stratégie lorsque certains domaines sont inclus ou exclus d'un message envoyé, entrez chaque domaine et plusieurs domaines séparés par une virgule. Chaque domaine que vous entrez sera appliqué séparément (un seul de ces domaines doit s'appliquer à la stratégie à appliquer au message). |
 |Le message est classé avec l'une de ces étiquettes  <br><br> Le message n'est classé avec aucune de ces étiquettes | Pour appliquer la stratégie lorsque certaines étiquettes de rétention sont incluses ou exclues dans un message. Les étiquettes de réTention doivent être configurées séparément et les étiquettes configurées peuvent être sélectionnées dans le cadre de cette condition. Chaque étiquette que vous choisissez sera appliquée séparément (une seule de ces étiquettes doit s'appliquer pour la stratégie à appliquer au message). Pour plus d'informations sur la configuration des étiquettes de rétention, consultez la rubrique [vue d'ensemble des étiquettes de](https://docs.microsoft.com/office365/securitycompliance/labels)rétention.|
-|Le message contient l'un de ces mots  <br><br> Le message ne contient aucun de ces mots | Pour appliquer la stratégie lorsque certains mots ou expressions sont inclus ou exclus dans un message, entrez chaque mot ou expression sur une ligne distincte. Chaque ligne de mots que vous entrez sera appliquée séparément (une seule de ces lignes doit s'appliquer pour la stratégie à appliquer au message). Pour plus d'informations sur la saisie de mots ou d'expressions, reportez-vous à la section suivante, [mots et expressions, à des e-mails ou des pièces jointes](supervision-policies.md#Matchwords).|
-|La pièce jointe contient l'un de ces mots  <br><br> La pièce jointe ne contient aucun de ces mots | Pour appliquer la stratégie lorsque certains mots ou expressions sont inclus ou exclus dans une pièce jointe (par exemple, un document Word), entrez chaque mot ou expression sur une ligne distincte. Chaque ligne de mots que vous entrez sera appliquée séparément (une seule ligne doit s'appliquer à la stratégie à appliquer à la pièce jointe). Pour plus d'informations sur la saisie de mots ou d'expressions, reportez-vous à la section suivante, [mots et expressions, à des e-mails ou des pièces jointes](supervision-policies.md#Matchwords).|
-|La pièce jointe est l'un de ces types de fichiers  <br><br> Aucune de ces types de fichiers n'est associée à la pièce jointe | Pour superviser les communications qui incluent ou excluent des types spécifiques de pièces jointes, entrez les extensions de fichiers (par exemple,. exe ou. pdf). Si vous souhaitez inclure ou exclure plusieurs extensions de fichiers, entrez-les sur des lignes distinctes. Une seule extension de pièce jointe doit correspondre pour que la stratégie s'applique.|
-|La taille du message est supérieure à  <br><br> La taille du message n'est pas supérieure à | Pour examiner les messages en fonction d'une certaine taille, utilisez les conditions suivantes pour spécifier la taille maximale ou minimale qu'un message peut contenir avant d'être soumis à révision. par exemple, si vous spécifiez une **taille de Message supérieure à** \> **1,0 mo**, tous les messages qui sont 1,01 mo et plus volumineux feront l'objet d'une vérification. Vous pouvez choisir des octets, des kilo-octets, des méga-octets ou des gigaoctets pour cette condition.|
-|La taille de la pièce jointe est supérieure à  <br><br> La pièce jointe n'est pas supérieure à | Pour examiner les messages en fonction de la taille de leurs pièces jointes, spécifiez la taille maximale ou minimale qu'une pièce jointe peut contenir avant que le message et ses pièces jointes soient soumis à révision. par exemple, si vous spécifiez une **taille de pièce jointe supérieure à** \> **2,0 mo**, tous les messages avec des pièces jointes 2,01 mo et supérieures feront l'objet d'une vérification. Vous pouvez choisir des octets, des kilo-octets, des méga-octets ou des gigaoctets pour cette condition.|
+|Le message contient l'un de ces mots  <br><br> Le message ne contient aucun de ces mots | Pour appliquer la stratégie lorsque certains mots ou expressions sont inclus ou exclus dans un message, entrez chaque mot ou expression sur une ligne distincte. Chaque ligne de mots que vous entrez sera appliquée séparément (une seule de ces lignes doit s'appliquer pour la stratégie à appliquer au message). Pour plus d’informations sur la saisie des mots ou des expressions, voir la section suivante [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
+|La pièce jointe contient l'un de ces mots  <br><br> La pièce jointe ne contient aucun de ces mots | Pour appliquer la stratégie lorsque certains mots ou expressions sont inclus ou exclus dans une pièce jointe (par exemple, un document Word), entrez chaque mot ou expression sur une ligne distincte. Chaque ligne de mots que vous entrez sera appliquée séparément (une seule ligne doit s’appliquer pour que la stratégie s’applique à la pièce jointe). Pour plus d’informations sur la saisie des mots ou des expressions, voir la section suivante [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
+|La pièce jointe est l'un de ces types de fichiers  <br><br> Aucune de ces types de fichiers n'est associée à la pièce jointe | Pour superviser les communications qui incluent ou excluent des types spécifiques de pièces jointes, entrez les extensions de fichiers (par exemple,. exe ou. pdf). Si vous souhaitez inclure ou exclure plusieurs extensions de fichiers, entrez-les sur des lignes distinctes. Il suffit que l’extension d’une seule pièce jointe corresponde pour que la stratégie s’applique.|
+|La taille du message est supérieure à  <br><br> La taille du message n'est pas supérieure à | Pour examiner les messages en fonction d'une certaine taille, utilisez les conditions suivantes pour spécifier la taille maximale ou minimale qu'un message peut contenir avant d'être soumis à révision. par exemple, si vous spécifiez une **taille de Message supérieure à** \> **1,0 mo**, tous les messages qui sont 1,01 mo et plus volumineux feront l'objet d'une vérification. Vous pouvez choisir des octets, kilo-octets, mégaoctets ou gigaoctets pour cette condition.|
+|La taille de la pièce jointe est supérieure à  <br><br> La pièce jointe n'est pas supérieure à | Pour examiner les messages en fonction de la taille de leurs pièces jointes, spécifiez la taille maximale ou minimale qu'une pièce jointe peut contenir avant que le message et ses pièces jointes soient soumis à révision. par exemple, si vous spécifiez une **taille de pièce jointe supérieure à** \> **2,0 mo**, tous les messages avec des pièces jointes 2,01 mo et supérieures feront l'objet d'une vérification. Vous pouvez choisir des octets, kilo-octets, mégaoctets ou gigaoctets pour cette condition.|
    
 ##### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Correspondance de mots et expressions avec des courriers électroniques ou des pièces jointes
 <a name="Matchwords"> </a>
 
-Chaque ligne de mots que vous entrez sera appliquée séparément (une seule ligne doit s'appliquer à la condition de stratégie à appliquer à la messagerie ou à la pièce jointe). Par exemple, nous utilisons la condition, le **message contient l'un de ces mots**, avec les mots-clés «Banker» et «negociing Insider» sur des lignes distinctes. La stratégie s'applique aux messages incluant le mot «Banker» ou l'expression «negociation Insiders». Un seul de ces mots ou expressions doit se produire pour que cette condition de stratégie s'applique. Les mots contenus dans le message ou dans la pièce jointe doivent correspondre exactement à ce que vous entrez.
+Chaque ligne de mots que vous entrez sera appliquée séparément (une seule ligne doit s’appliquer pour que la condition de la stratégie s’applique à la pièce jointe ou au courrier électronique). Par exemple, nous utilisons la condition, le **message contient l'un de ces mots**, avec les mots-clés «Banker» et «negociing Insider» sur des lignes distinctes. La stratégie s'applique aux messages incluant le mot «Banker» ou l'expression «negociation Insiders». Un seul de ces mots ou expression doit être présent pour que cette condition de stratégie s’applique. Les mots contenus dans le message ou dans la pièce jointe doivent correspondre exactement à ce que vous entrez.
   
 ##### <a name="entering-multiple-conditions"></a>Saisie de plusieurs conditions
 
-Si vous entrez plusieurs conditions, Office 365 utilise toutes les conditions ensemble pour déterminer le moment auquel appliquer la stratégie aux éléments de communication. Lorsque vous configurez plusieurs conditions, celles-ci doivent être remplies pour que la stratégie s'applique, sauf si vous entrez une exception. Par exemple, imaginons que vous devez créer une stratégie qui doit s'appliquer si un message contient le mot «commercial» et qu'il est supérieur à 2 Mo. Toutefois, si le message contient également les mots «approuvé par Contoso Financial», la stratégie ne doit pas s'appliquer. Ainsi, dans ce cas, les trois conditions suivantes sont les suivantes:
+Si vous entrez plusieurs conditions, Office 365 utilise toutes les conditions ensemble pour déterminer le moment auquel appliquer la stratégie aux éléments de communication. Lorsque vous configurez plusieurs conditions, elles doivent toutes être remplies pour que la stratégie s’applique, sauf si vous entrez une exception. Par exemple, imaginons que vous devez créer une stratégie qui doit s'appliquer si un message contient le mot «commercial» et qu'il est supérieur à 2 Mo. Toutefois, si le message contient également les mots «approuvé par Contoso Financial», la stratégie ne doit pas s'appliquer. Ainsi, dans ce cas, les trois conditions suivantes sont les suivantes:
   
 - Le **message contient l'un de ces mots**, avec les mots clés «Trade»
 
@@ -196,7 +196,7 @@ Pour passer en revue les communications identifiées par une stratégie de surve
 - Afficher l'historique du balisage d'un élément unique, y compris la personne qui a résolu l'élément, la date et l'heure de l'action, la balise de résolution et tous les commentaires inclus.
 - Reclassez les éléments consultés précédemment comme conformes, non conformes ou douteux. Vous pouvez également enregistrer un commentaire avec des éléments uniques pour clarifier l'action de reclassification effectuée.
 
-## <a name="reporting"></a>Création de rapports
+## <a name="reporting"></a>Reporting
 
 Utilisez les rapports de surveillance pour afficher l'activité de révision au niveau de la stratégie et du réviseur. Pour chaque stratégie, vous pouvez également afficher des statistiques réelles sur l'état actuel de l'activité de révision. Vous pouvez utiliser les rapports de surveillance pour:
   
@@ -229,13 +229,13 @@ Voici une répartition des valeurs que vous pouvez voir dans la colonne **type**
 |**Type de balise**|**Signification**|
 |:-----|:-----|
 | Non révisé | Nombre de messages électroniques qui n'ont pas encore été consultés. Ces messages sont en attente de vérification dans le tableau de bord de supervision Office 365 ou dans le dossier de surveillance du réviseur dans Outlook/Outlook sur le Web
-| Conformes | Le nombre de messages vérifiés et marqués comme étant conformes. Ces messages doivent toujours être résolus. |
+| Compliant | Le nombre de messages vérifiés et marqués comme étant conformes. Ces messages doivent toujours être résolus. |
 | Suspects | Le nombre de messages consultés et marqués comme suspects. Cela agit comme un indicateur; d'autres relecteurs peuvent vous aider à vérifier si un message électronique a besoin d'une enquête pour la conformité. Ces messages doivent toujours être résolus. |
 | Non conforme (actif) | Nombre de messages électroniques non conformes que les relecteurs examinent actuellement. |
 | Non conforme (résolu) | Nombre de messages électroniques non conformes que les relecteurs ont examinés et résolus. |
 | Stratégie de correspondance | Nombre total de messages provenant d'Exchange, de teams et de sources de données tierces qui correspondent à une ou plusieurs conditions définies dans une stratégie de surveillance |
 | Dans PurVIEW | Nombre total de messages provenant d'Exchange, de teams et de sources de données tierce analysés par une stratégie de surveillance |
-| Évaluation | Nombre total de messages provenant d'Exchange, de teams et de sources de données tierces qui ont été **** classés comme résolus|
+| Résolu | Nombre total de messages provenant d'Exchange, de teams et de sources de données tierces qui ont été **** classés comme résolus|
 
 > [!NOTE]
 > Les stratégies de surveillance doivent d'abord être mises en service pour qu'elles apparaissent dans ce rapport. En outre, si des stratégies sont supprimées, les données historiques continuent d'apparaître. Toutefois, elles sont indiquées en tant que «stratégie inexistante» et la fonction d' **exportation** n'est pas disponible.
@@ -260,8 +260,8 @@ Par exemple, l'exemple suivant montre comment renvoyer les activités de toutes 
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"} | fl CreationDate,Operations,UserIds,AuditData 
 ```
 
-Outre les informations fournies dans les journaux et les rapports de surveillance, vous pouvez également utiliser l'applet de commande PowerShell [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewactivity?view=exchange-ps) pour renvoyer une liste complète et détaillée de toutes les activités de stratégie de surveillance.
+Outre les informations fournies dans les journaux et les rapports de surveillance, vous pouvez également utiliser l'applet de commande PowerShell [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewactivity?view=exchange-ps) pour renvoyer une liste complète et détaillée de toutes les activités de stratégie de surveillance.
 
-## <a name="ready-to-get-started"></a>Prêt à commencer?
+## <a name="ready-to-get-started"></a>Vous êtes prêt ?
 
 Pour commencer à configurer les stratégies de surveillance pour votre organisation, consultez la rubrique [configurer les stratégies de surveillance](configure-supervision-policies.md).

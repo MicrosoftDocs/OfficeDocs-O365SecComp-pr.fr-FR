@@ -14,16 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f08fe644bfd4eaae27e1ef8718c54166417e53ae
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 6e94adc6e6b7fb7d8757b161ffdf01066cadac7a
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295827"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454946"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery-preview"></a>Utiliser le module de pertinence pour analyser les données dans Advanced eDiscovery (aperçu)
 
-Dans Advanced eDiscovery (aperçu), le module de pertinence inclut la formation pertinente et la révision des fichiers associés à un cas. Le flux de travail de pertinence est illustré et décrit comme suit:
+Dans Advanced eDiscovery (aperçu), le module de pertinence inclut la formation pertinente et la révision des fichiers associés à un cas. Pour utiliser le flux de travail de pertinence, accédez à gérer l'ensemble de travail dans une plage de travail et cliquez sur Afficher la pertinence. Pour pouvoir démarrer le flux de travail, vous devez effectuer les deux étapes suivantes:
+- Processus: chaque jeu de charges ajouté à la plage de travail s'affiche en tant que «conteneur» ici. Vous devez traiter ces documents avant de pouvoir les ajouter au module de pertinence; Il s'agit également de l'endroit où vous pouvez les marquer comme étant des semences ou des balises préalables pour un problème spécifique.
+- Ajouter à la pertinence: sous \> charges de pertinence, vous pouvez ajouter des documents qui ont été traités comme pertinents afin de les rendre disponibles pour la formation.
+
+Le flux de travail de pertinence est illustré et décrit comme suit:
   
 ![Flux de travail de pertinence](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   

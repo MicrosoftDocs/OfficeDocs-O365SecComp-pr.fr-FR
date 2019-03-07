@@ -5,16 +5,16 @@ author: chrisda
 manager: serdars
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Les administrateurs peuvent en savoir plus sur les alertes de files d'attente et les files d'attente dans le tableau de bord de flux de messagerie dans le centre de sécurité & Office 365 Security.
-ms.openlocfilehash: 45c03ae8d5f646c4514b19669ca83b3eac561f68
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6abfe9e8b3edfc6b0ca02e11a9713dcdb5c19b7c
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220794"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454866"
 ---
 # <a name="queue-alerts-and-queues"></a>Alertes de files d’attente et files d’attente
 
@@ -60,7 +60,7 @@ Vous pouvez cliquer sur **afficher la file d'attente** dans les détails de l'al
 
 ![Afficher la file d'attente dans les détails de l'alerte](media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
 
-## <a name="queues"></a>Files d’attente
+## <a name="queues"></a>Files d'attente
 
 Même si le volume des messages mis en file d'attente n'a pas dépassé le seuil, vous pouvez toujours utiliser la zone **files d'attente** du tableau de bord du flux de messagerie pour afficher les messages qui ont été mis en file d'attente pendant plus d'une heure. Vous pouvez utiliser la zone **files d'attente** pour surveiller le nombre de messages en file d'attente (la valeur 0 indique que le flux de messagerie est correct) et prendre des mesures avant que le nombre de messages en file d'attente devienne trop important.
 
