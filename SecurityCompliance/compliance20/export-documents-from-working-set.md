@@ -14,13 +14,69 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4d6851b0f4b86c8fa37e71db1e070d05f4aeb081
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 815b92b13ed09d8aec64f5207f1c82d910e2dce0
+ms.sourcegitcommit: 9f38ba72eba0b656e507860ca228726e4199f7ec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296237"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30475704"
 ---
 # <a name="export-documents-from-a-working-set"></a>Exporter des documents à partir d’un ensemble de travail
 
-Contenu à paraître prochainement.
+L'exportation de contenu à partir d'un jeu de travail peut être effectuée à l'aide de trois méthodes différentes:
+
+## <a name="download"></a>Télécharger
+
+Le téléchargement offre un moyen simple de télécharger du contenu à partir d'un jeu de travail au format natif. Il exploite les fonctionnalités de transfert de données du navigateur, de sorte qu'une invite de navigateur s'affiche une fois que le téléchargement est prêt. Les fichiers téléchargés à l'aide de cette méthode seront Zippés dans un fichier conteneur et seront des fichiers au niveau de l'élément. Cela signifie que si vous sélectionnez une pièce jointe, vous recevrez automatiquement le courrier électronique avec la pièce jointe incluse. De même, si vous sélectionnez une feuille de calcul Excel incorporée dans un document Word, vous recevrez le document Word avec la feuille de calcul Excel incorporée. Les éléments téléchargés conservent la dernière date de modification pouvant être affichée en tant que propriété de fichier.
+
+Pour télécharger du contenu à partir d'une plage de travail, commencez par sélectionner les fichiers que vous souhaitez télécharger, puis sélectionnez «Télécharger» sous le menu actions.
+
+![Capture d'écran d'une description d'ordinateur générée automatiquement](../media/eDiscoDownload.png)
+
+## <a name="export"></a>Exporter
+
+Exporter permet aux utilisateurs de personnaliser le contenu qui est inclus dans le package de téléchargement. Il fournit une page de configuration avec les paramètres suivants:
+
+### <a name="metadata-file"></a>Fichier de métadonnées
+
+> Cela peut être considéré comme votre «fichier de chargement» qui contient les métadonnées associées aux fichiers que vous avez exportés. Pour obtenir la liste des champs disponibles dans le fichier de métadonnées, consultez la rubrique \[Link\]. Ce fichier peut généralement être ingéré par 3<sup></sup> outils tiers en aval.
+
+### <a name="tag-data"></a>Données de balise
+
+> Ce contenu est ajouté en tant que champs dans le fichier de métadonnées. Elle contient toutes les informations de balise appliquées dans les jeux de travail.
+
+### <a name="text-files"></a>Fichiers texte
+
+> Des fichiers texte peuvent être générés pour chaque fichier exporté à partir d'une plage de travail. Ces fichiers sont souvent requis par les partenaires de services dans le cadre de l'ingestion<sup></sup> de données dans 3 outils tiers en aval.
+
+### <a name="redacted-files"></a>Fichiers biffés
+
+> Si des fichiers PDF biffés sont générés lors de la révision, ces fichiers sont disponibles lors de l'exportation. Les utilisateurs peuvent décider s'il convient d'exporter les fichiers natifs uniquement ou de remplacer les fichiers natifs dont le Redactions avec le fichier PDF est gravé.
+
+### <a name="export-location"></a>Emplacement de l’exportation
+
+> Le contenu exporté est remis à un objet BLOB Azure fourni par Microsoft ou le BLOB d'un client peut être utilisé si les détails sont fournis lors de l'exportation.
+
+## <a name="export-structure"></a>Structure d'exportation
+
+Lorsque le contenu est exporté à partir d'un jeu de travail, le contenu est organisé dans la structure suivante.
+
+  - Dossier racine – ID de téléchargement
+    
+      - Export\_load\_file. csv = fichier de métadonnées
+    
+      - Summary. txt = un fichier résumé avec les statistiques d'exportation
+    
+      - Fichiers\_d'entrée\_ou natifs = contient tous les fichiers natifs
+    
+      - Fichiers\_d'erreur = contient les fichiers d'erreur inclus dans l'exportation.
+        
+          - ExtractionError: CSV qui contient les métadonnées de fichiers disponibles qui n'ont pas été correctement extraites des fichiers parents
+        
+          - ProcessingError – contenu avec des erreurs de traitement. Ce contenu est de niveau élément: si une pièce jointe a rencontré une erreur de traitement, le courrier électronique qui contient la pièce jointe est inclus dans ce dossier.
+    
+      - Fichiers\_texte\_extraits = contient tous les fichiers texte extraits générés lors du traitement.
+
+## <a name="working-set"></a>Jeu de travail
+
+Le contenu peut être ajouté à une autre plage de travail.

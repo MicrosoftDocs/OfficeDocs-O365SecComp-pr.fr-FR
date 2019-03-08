@@ -14,13 +14,39 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 972c6c6e8cd6ebe3a4f078b02f238642509b752a
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 904bc5f8a6d6cef937d55336e8f383957713769a
+ms.sourcegitcommit: 9f38ba72eba0b656e507860ca228726e4199f7ec
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295017"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30475694"
 ---
 # <a name="download-export-jobs"></a>Télécharger l’exportation des travaux
 
-Contenu à paraître prochainement.
+Toutes les données exportées sont ajoutées à un objet BLOB Microsoft Azure. Cela fournit plusieurs options pour gérer les données en aval. Il existe plusieurs façons d'accéder à un objet BLOB Azure. L'une des méthodes consiste à utiliser l'Explorateur de stockage Azure. Cette méthode prend en charge la connexion, la navigation et le téléchargement simples. Pour plus d'informations, reportez-vous à<https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-storage-explorer>
+
+1.  Pour télécharger du contenu à la fin d'une opération d'exportation, accédez à l'onglet exportations et sélectionnez un travail d'exportation.
+
+2.  Copiez le texte dans la section «emplacements» de la fenêtre mobile.
+
+![](../media/eDiscoExportJob.png)
+
+3.  Ouvrez l'Explorateur de stockage Azure et cliquez sur le bouton «se connecter»
+
+![](../media/AzureStorageConnect.png)
+
+4.  Sélectionnez «utiliser un URI de signature d'accès partagé», puis cliquez sur suivant.
+
+![](../media/AzureStorageConnect2.png)
+
+5.  Collez le texte de l'emplacement dans la zone de texte URI, puis cliquez sur suivant.
+
+![](../media/AzureStorageConnect3.png)
+
+6.  Cliquez sur se connecter.
+
+![](../media/AzureStorageConnect4.png)
+
+Cette opération ajoute l'exportation en tant qu'objet dans les comptes de stockage/services SAS/conteneurs d'objets BLOB. Vous serez en mesure d'explorer l'exportation et de télécharger l'ensemble ou des parties de l'exportation.
+
+![](../media/AzureStorageConnect5.png)
