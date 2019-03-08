@@ -5,21 +5,20 @@ author: stephow-MSFT
 manager: laurawi
 ms.date: 10/22/2018
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Avec les étiquettes de niveau de confidentialité dans Office 365, vous pouvez classer et protéger le contenu sensible, tout en vous assurant que la productivité et la possibilité de collaboration des membres de votre organisation ne sont pas altérées. Vous pouvez utiliser les étiquettes de niveau de confidentialité afin d’appliquer des paramètres de protection, comme le chiffrement ou les filigranes, sur le contenu étiqueté.
-ms.openlocfilehash: 449b2567366bb262d469d78d3de447cccf04389b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 05f53c508126962d36be3e131413d5a4314875a9
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220944"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455026"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Vue d’ensemble des étiquettes de niveau de confidentialité
 
@@ -97,9 +96,11 @@ Une seule étiquette de niveau de confidentialité peut être appliquée à un d
 
 ### <a name="sublabels-grouping-labels"></a>Sous-étiquettes (regroupement d’étiquettes)
 
-Avec les sous-étiquettes, vous pouvez regrouper plusieurs étiquettes sous un en-tête visible par l’utilisateur dans une application Office. Par exemple, sous Confidentiel, votre organisation peut utiliser différentes étiquettes pour des types spécifiques de cette classification. Dans cet exemple, comme l’étiquette Confidentiel est simplement une étiquette de texte sans paramètre de protection et comme elle a des sous-étiquettes, elle ne peut pas être appliquée au contenu. Dans ce cas, les utilisateurs doivent sélectionner Confidentiel pour afficher les sous-étiquettes, puis choisir une sous-étiquette à appliquer au contenu.
+Avec les sous-étiquettes, vous pouvez regrouper une ou plusieurs étiquettes sous une étiquette parent que les utilisateurs pourront voir dans une application Office. Par exemple, sous Confidentiel, votre organisation peut utiliser plusieurs étiquettes différentes pour certains types de cette classification. Dans cet exemple, l’étiquette parent Confidentiel est tout simplement une étiquette de texte sans aucun paramètre de protection. Comme elle comporte des sous-étiquettes, elle ne peut pas être appliquée au contenu. Les utilisateurs doivent d’abord choisir Confidentiel pour afficher les sous-étiquettes, puis choisir une sous-étiquette à appliquer au contenu.
 
-Les sous-étiquettes sont simplement un moyen de présenter les étiquettes aux utilisateurs par groupes logiques. Les sous-étiquettes n’héritent d’aucun paramètre de leur étiquette parent.
+Les sous-étiquettes sont simplement un moyen de présenter des étiquettes à des utilisateurs dans des groupes logiques. Les sous-étiquettes n’héritent pas des paramètres de leur étiquette parent. Les sous-étiquettes peuvent être appliquées au contenu, pas les étiquettes parents.
+
+(De même, ne choisissez pas une étiquette parent comme étiquette par défaut [voir la section suivante], ne configurez pas non plus une étiquette parent pour l’appliquer automatiquement ou la recommander, car elle ne sera pas appliquée au contenu des applications Office qui utilisent le client d’étiquetage unifié Azure Information Protection.)
 
 ![Sous-étiquettes regroupées dans le ruban](media/Sensitivity_label_grouped_labels.png)
 
@@ -117,7 +118,7 @@ Avec une stratégie d’étiquette, vous pouvez effectuer les actions suivantes�
 
 - **Sélectionner les utilisateurs et les groupes qui voient les étiquettes.** Les étiquettes peuvent être publiées dans n’importe quel groupe de sécurité à extension messagerie, groupe de distribution, groupe Office 365 ou groupe de distribution dynamique.
 
-- **Appliquer une étiquette par défaut** à tous les nouveaux documents et e-mails créés par les utilisateurs et les groupes inclus dans la stratégie d’étiquette. Cette étiquette par défaut définit un niveau de base des paramètres de protection à appliquer à l’ensemble de votre contenu.
+- **Appliquer une étiquette par défaut** à tous les nouveaux documents et e-mails créés par les utilisateurs et groupes inclus dans la stratégie d’étiquette. Cette étiquette par défaut permet de définir des paramètres de protection de base à appliquer à votre contenu. (Notez qu’un)
 
 - **Demander une justification en cas de modification d’une étiquette.** Si le contenu est marqué comme Confidentiel et si un utilisateur souhaite supprimer cette étiquette ou la remplacer par une classification de niveau inférieur, comme Public, vous pouvez exiger que l’utilisateur fournisse une justification lors de l’exécution de cette action. Ces justifications seront disponibles pour révision de l’administrateur. Nous travaillons actuellement sur un rapport où les administrateurs peuvent consulter les justifications des utilisateurs.
 
