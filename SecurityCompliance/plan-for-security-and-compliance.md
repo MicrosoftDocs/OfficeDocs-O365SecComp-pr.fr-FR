@@ -13,12 +13,13 @@ search.appverid:
 - MET150
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Page d'accueil pour la planification de la sécurité et de la conformité
-ms.openlocfilehash: 71d814fbbc946fddbc57d4528f43b83589454e31
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 4c653e20fbab8f93897b00589a00cb53b1e36963
+ms.sourcegitcommit: 07a4f9a8888756e05cd67ca24f6121b2a4e9f464
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218464"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "30512649"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>Planifier la conformité &amp; de la sécurité dans Office 365
 
@@ -34,11 +35,11 @@ Familiarisez-vous avec les fonctionnalités de protection des informations de l'
 
 Après avoir configuré votre abonnement Office 365, Notez votre score de départ. Le score de sécurité fournit des suggestions de configuration Office 365 que vous pouvez suivre pour augmenter votre score. L'objectif est de connaître les opportunités que vous pouvez prendre pour protéger votre environnement, ce qui n'affecte pas la productivité de vos utilisateurs.
   
-- [Présentation du degré de sécurisation Office 365](office-365-secure-score.md)
+- [Présentation du score de sécurité Office 365](office-365-secure-score.md)
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>Étape 3: planifier la protection de l'identité et des périphériques
 
-Il est essentiel de protéger l’accès à vos données et services Office 365 pour vous protéger des cyberattaques et des pertes de données.
+La protection de l'accès à vos données et services Office 365 est cruciale pour la défense contre les attaques informatiques et la protection contre la perte de données.
   
 - [Protéger l’accès aux données et aux services dans Office 365](protect-access-to-data-and-services.md)
     
@@ -58,7 +59,7 @@ Le centre &amp; de sécurité conformité offre une vue unique des contrôles qu
   
 - [Accédez au centre de sécurité &amp; conformité d'Office 365](go-to-the-securitycompliance-center.md)
     
-- [Autorisations dans le centre de sécurité &amp; conformité Office 365](permissions-in-the-security-and-compliance-center.md)
+- [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
     
 - [Donner aux utilisateurs l'accès au centre de &amp; sécurité conformité Office 365](grant-access-to-the-security-and-compliance-center.md)
     
@@ -68,7 +69,7 @@ Utilisez ces configurations recommandées comme point de départ pour les scéna
   
 - [Stratégies et configurations de messagerie sécurisées](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
     
-- [Contoso dans Microsoft Cloud](http://aka.ms/cloudarchcontoso)
+- [Contoso dans le cloud de Microsoft](http://aka.ms/cloudarchcontoso)
     
 ## <a name="office-365-admin-centers-and-dashboards"></a>Tableaux de bord et centres d'administration Office 365
 
@@ -76,7 +77,7 @@ Configurer vos paramètres de sécurité et de conformité dans ces centres d'ad
   
 |**Abonnement**|**URL de gestion**|**Tableaux de bord et centres d'administration**|
 |:-----|:-----|:-----|
-|Office 365  <br/> |`https://portal.office.com`  <br/> | Centre d’administration Office 365  <br/>  Centre &amp; de sécurité conformité  <br/>  Centre d’administration Exchange  <br/>  Centre d'administration SharePoint et centre d'administration OneDrive entreprise  <br/> |
+|Office 365  <br/> |`https://portal.office.com`  <br/> | Centre d’administration Office 365  <br/>  Security &amp; Compliance Center  <br/>  Centre d’administration Exchange  <br/>  Centre d'administration SharePoint et centre d'administration OneDrive entreprise  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Gestion des applications mobiles Microsoft  <br/>  Microsoft Intune  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Cloud App Security  <br/> |
    

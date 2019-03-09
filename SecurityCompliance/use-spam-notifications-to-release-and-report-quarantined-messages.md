@@ -1,7 +1,7 @@
 ---
 title: Utilisation des notifications de courrier indésirable de l’utilisateur pour le déblocage et le signalement des messages de courrier indésirable mis en quarantaine dans Office 365
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 5/12/2018
 ms.audience: Admin
@@ -13,13 +13,15 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
+ms.collection:
+- M365-security-compliance
 description: Si votre administrateur Active les notifications pour les utilisateurs, vous recevrez un message de notification répertoriant les messages envoyés à votre boîte aux lettres identifiés comme courriers indésirables, en masse ou par hameçonnage. Vous pouvez publier ou signaler des messages après leur notification.
-ms.openlocfilehash: eb51d8f73ff00781b74cfba4e580668710ce7a76
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 7f68b70298fca7d8ed5f5e5b8dc9c727c3a6a6c1
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216394"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492723"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>Utilisation des notifications de courrier indésirable de l’utilisateur pour le déblocage et le signalement des messages de courrier indésirable mis en quarantaine dans Office 365
 
@@ -42,11 +44,11 @@ Actuellement, il existe deux actions que vous pouvez effectuer avec un message e
   
 - **Publier dans la boîte de réception** Choisissez cette adresse pour envoyer le message vers votre boîte de réception, où vous pouvez l'afficher. 
     
-- **Signaler comme légitime** Choisissez cette adresse pour envoyer une copie du message à Microsoft pour analyse. L'équipe de courrier indésirable évalue et analyse le message, et, en fonction des résultats de l'analyse, ajuste les règles de filtrage anti-courrier indésirable pour autoriser le message. 
+- **Signaler comme légitime** Choisissez cette adresse pour envoyer une copie du message à Microsoft pour analyse. L'équipe du courrier indésirable évalue et analyse le message, puis, selon les résultats de l'analyse, adapte les règles de filtre de courrier indésirable pour autoriser le message. 
     
-Tenez compte des éléments suivants:
+Prenez en considération ce qui suit :
   
-- Les messages mis en quarantaine, car ils correspondent à une règle de flux de messagerie, ne sont pas inclus dans les messages mis en quarantaine par l'utilisateur. Seuls les messages de courrier indésirable mis en quarantaine sont répertoriés.
+- Les messages mis en quarantaine, car ils correspondent à une règle de flux de messagerie, ne sont pas inclus dans les messages mis en quarantaine par l'utilisateur. Seuls les messages mis en quarantaine car identifiés comme courrier indésirable sont répertoriés.
     
 - Vous ne pouvez libérer un message et le signaler comme faux positif (légitime) qu'une fois.
     

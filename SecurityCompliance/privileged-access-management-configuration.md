@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilisez cette rubrique pour en savoir plus sur la configuration de la gestion des accès privilégiés dans Office 365
-ms.openlocfilehash: af8058ff852bbf290084e42d1f4c72d6fcee0e27
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 3d186998006dd3cc59877b1571f50314af5bbce8
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221084"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492823"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Configuration de la gestion des accès privilégiés dans Office 365
 
@@ -120,7 +120,7 @@ Vous pouvez créer et configurer jusqu'à 30 stratégies d'accès privilégié p
     
     **Type de stratégie**: tâche, rôle ou groupe de rôles
 
-    **Étendue de stratégie**: Exchange ou Office 365
+    **Étendue de stratégie**: Exchange
 
     **Nom**de la stratégie: sélectionnez parmi les stratégies disponibles.
 

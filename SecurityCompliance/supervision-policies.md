@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Présentation des stratégies de surveillance dans Office 365
-ms.openlocfilehash: f4eae6aebde130bdacdc45b419becc32953bffd2
-ms.sourcegitcommit: 5d6be2b208dbe28d5d5da057c60cf97729799c1b
+ms.openlocfilehash: 99957accb6a1f52f0e0a895fc96ef2b6ac0ac757
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30465471"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492853"
 ---
 # <a name="supervision-policies-in-office-365"></a>Stratégies de surveillance dans Office 365
 
@@ -57,7 +57,8 @@ Vous allez créer des stratégies de surveillance dans le centre de sécurité &
 Avant de commencer à utiliser la surveillance, vous devez déterminer les personnes à l'aide desquelles les communications seront revues. Dans la stratégie, vous utiliserez les adresses de messagerie des utilisateurs pour identifier des individus ou des groupes de personnes à superviser. Les groupes Office 365, les listes de distribution Exchange et les canaux Microsoft teams sont des exemples de ces groupes. Vous pouvez également exclure des utilisateurs ou des groupes spécifiques de la surveillance incluse dans un groupe supervisé ou une liste de groupes.
 
 > [!IMPORTANT]
-> Tous les utilisateurs surveillés par les stratégies de surveillance doivent disposer d'une licence Office 365 entreprise E3 avec le complément de conformité avancé ou être inclus dans un abonnement Office 365 entreprise E5. Si vous ne disposez pas d'un plan entreprise E5 existant et que vous souhaitez essayer de contrôler, vous pouvez vous [inscrire pour obtenir une version d'évaluation d'Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+> Les utilisateurs surveillés par des stratégies de surveillance doivent disposer d'une licence de conformité Microsoft 365 E5, d'une licence Office 365 entreprise E3 avec le complément de conformité avancé ou être inclus dans un abonnement Office 365 entreprise E5.
+Si vous ne disposez pas d'un plan entreprise E5 existant et que vous souhaitez essayer de contrôler, vous pouvez vous [inscrire pour obtenir une version d'évaluation d'Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ### <a name="reviewers"></a>Reviewers
 
@@ -153,9 +154,9 @@ La page d' **Accueil** du tableau de bord comporte plusieurs sections qui vous p
 - Afficher une liste des relecteurs et vérifier les équipes pour la stratégie sélectionnée
 - Voir les plateformes de communication dont le contenu est sous surveillance pour la stratégie.
 
-#### <a name="supervise-tab"></a>Onglet superViser
+#### <a name="review-tab"></a>Onglet révision
 
-L' **** onglet superviser permet aux réviseurs de prendre des mesures et de résoudre les éléments identifiés par la stratégie sélectionnée. Ici, vous pouvez:
+L'onglet **révision** permet aux réviseurs de prendre des mesures et de résoudre les éléments identifiés par la stratégie sélectionnée. Ici, vous pouvez:
 
 - Filtrer les éléments en attente, conformes, non conformes et douteux
 - Baliser un élément unique comme étant conforme, non conforme ou douteable. Vous pouvez également enregistrer un commentaire avec l'élément pour clarifier l'action de marquage effectuée.
