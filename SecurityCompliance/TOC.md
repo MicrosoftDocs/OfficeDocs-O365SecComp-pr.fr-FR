@@ -166,7 +166,7 @@
 #### [Chiffrement dans Microsoft Dynamics 365](office-365-encryption-in-microsoft-dynamics-365.md)
 #### [Chiffrement dans Azure](office-365-azure-encryption.md)
 
-## [Liens fiables, pièces jointes fiables et Protection avancée contre les menaces](office-365-atp.md)
+## [Advanced Threat Protection (Liens et pièces jointes fiables)](office-365-atp.md)
 ### [Liens fiables ATP](atp-safe-links.md)
 #### [Configuration des stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md)
 #### [Configurer une liste d’URL personnalisée « ne pas réécrire »](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
@@ -178,7 +178,6 @@
 ### [ATP pour SharePoint, OneDrive et Microsoft Teams](atp-for-spo-odb-and-teams.md).
 #### [Activer la protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 #### [Afficher des informations sur les fichiers malveillants](malicious-files-detected-in-spo-odb-or-teams.md)
-### [Afficher les rapports ATP](view-reports-for-atp.md)
 
 ## [Fonctionnalités de décisionnel contre les menaces Threat Intelligence](office-365-ti.md)
 ### [Prise en main de Threat Intelligence](get-started-with-ti.md)
@@ -186,10 +185,8 @@
 ### [Simulateur d’attaques dans Office 365](attack-simulator.md)
 ### [Intégration de SIEM à Threat Intelligence](siem-integration-with-office-365-ti.md)
 ### [Protégez vos utilisateurs avec Threat Intelligence](keep-users-safe-with-office-365-ti.md)
-### [Suivi des menaces](threat-trackers.md)
-### [Utiliser l’explorateur dans le Centre de conformité et de sécurité](use-explorer-in-security-and-compliance.md)
 
-## [Surveiller et gérer l’accès aux données Office 365 avec Cloud App Security](office-365-cas-overview.md)
+## [Contrôle et gestion de l’accès aux données via le service Sécurité des applications cloud Office 365](office-365-cas-overview.md)
 ### [Voir les nouveautés concernant la sécurité des applications cloud](new-in-office-365-cas.md)
 #### [Mises à jour en 2018](new-in-office-365-cas-2018.md)
 #### [Mises à jour en 2017](new-in-office-365-cas-2017.md)
@@ -380,18 +377,21 @@
 # Surveiller la sécurité et la conformité
 ## [Stratégies d’alerte](alert-policies.md)
 ## [Rapports intelligents et aperçus dans le centre de sécurité et conformité](reports-and-insights-in-security-and-compliance.md)
+### [Suivi des menaces](threat-trackers.md)
+### [Utiliser l’explorateur dans le Centre de conformité et de sécurité](use-explorer-in-security-and-compliance.md)
+### [Afficher les rapports ATP](view-reports-for-atp.md)
 ### [Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité](view-email-security-reports.md)
-#### [Procédure pas à pas. D’un rapport détaillé à un aperçu](from-a-detailed-report-to-an-insight.md)
-#### [Procédure pas à pas. D’un aperçu à un rapport détaillé](from-an-insight-to-a-detailed-report.md)
-#### [Procédure pas à pas. D’un tableau de bord à un aperçu](from-a-dashboard-to-an-insight.md)
-#### [Créer une planification pour un rapport](create-a-schedule-for-a-report.md)
-#### [Gérer les planifications pour plusieurs rapports](manage-schedules-for-multiple-reports.md)
-#### [Configurer et télécharger un rapport personnalisé](set-up-and-download-a-custom-report.md)
-#### [Télécharger des rapports existants](download-existing-reports.md)
+### [Procédure pas à pas. D’un rapport détaillé à un aperçu](from-a-detailed-report-to-an-insight.md)
+### [Procédure pas à pas. D’un aperçu à un rapport détaillé](from-an-insight-to-a-detailed-report.md)
+### [Procédure pas à pas. D’un tableau de bord à un aperçu](from-a-dashboard-to-an-insight.md)
+### [Créer une planification pour un rapport](create-a-schedule-for-a-report.md)
+### [Gérer les planifications pour plusieurs rapports](manage-schedules-for-multiple-reports.md)
+### [Configurer et télécharger un rapport personnalisé](set-up-and-download-a-custom-report.md)
+### [Télécharger des rapports existants](download-existing-reports.md)
 ## [Activer ou désactiver les conseils de sécurité dans Office 365](enable-or-disable-safety-tips.md)
-## [Activer le complément Signaler le message](enable-the-report-message-add-in.md)
 
 # Flux de messagerie
+## [Activer le complément Signaler le message](enable-the-report-message-add-in.md)
 ## [Suivi des messages dans le centre de conformité et de sécurité](message-trace-scc.md)
 ## [Informations sur le flux de messagerie dans le centre de sécurité et conformité](mail-flow-insights.md)
 ### [Rapport des messages transférés automatiquement](mfi-auto-forwarded-messages-report.md)
