@@ -1,5 +1,5 @@
 ---
-title: Protégez vos utilisateurs Office 365 avec Office 365 Threat Intelligence
+title: Assurer la sécurité de vos utilisateurs Office 365 avec les fonctionnalités d'enquête et de réponse aux menaces Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -14,26 +14,26 @@ search.appverid:
 ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
-description: Découvrez comment Office 365 Threat Intelligence peut aider votre organisation à détecter les intrusions et les menaces, ainsi qu'à réduire et à résoudre rapidement les menaces.
-ms.openlocfilehash: 40b39cc7f388152bd95000e2653ef94b970a6fa3
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+description: Découvrez comment les fonctionnalités d'enquête et de réponse aux menaces Office 365 peuvent aider votre organisation à détecter les intrusions et les menaces, ainsi qu'à limiter et récupérer rapidement les menaces.
+ms.openlocfilehash: 4cb1355e841ee4b416bf5471872421b4c05433c5
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241956"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30524028"
 ---
-# <a name="keep-your-office-365-users-safe-with-office-365-threat-intelligence"></a>Protégez vos utilisateurs Office 365 avec Office 365 Threat Intelligence
+# <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Assurer la sécurité de vos utilisateurs Office 365 avec les fonctionnalités d'enquête et de réponse aux menaces Office 365
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Savez-vous quels sont les utilisateurs de vos utilisateurs d'Office 365 qui sont attaqués ou qui sont pirement compromis? Comment limiter et récupérer des attaques ciblant vos utilisateurs? Saviez-vous que vous pouvez faire exactement cela avec des fonctionnalités de sécurité qui sont déjà disponibles dans Office 365? 
   
-[Office 365 Threat Intelligence](office-365-ti.md) est une suite de fonctionnalités incluses dans votre abonnement Office 365 E5. L'aide à la décision d'Office 365 a aidé Microsoft IT à réduire le temps moyen de résolution des incidents de génie social par 80% et à augmenter le débit de l'incident de 37% par mois par rapport aux 2 trimestres précédents. 
+[Office 365 Threat Investigation and Response](office-365-ti.md) est une suite de fonctionnalités incluses dans votre abonnement Office 365 E5. Les fonctionnalités d'enquête et de réponse aux menaces Office 365 ont aidé Microsoft IT à réduire le temps moyen de résolution des incidents de génie social de 80%, et à augmenter le débit de l'incident de 37% par mois par rapport aux 2 derniers trimestres. 
 
 > [!IMPORTANT]
-> Depuis le mois de février 2019 et le déploiement sur les prochains mois, Office 365 Threat Intelligence est devenu Office 365 Advanced Threat Protection Plan 2, avec des fonctionnalités supplémentaires de protection contre les menaces. Pour en savoir plus, consultez les [offres et tarifs office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) et la [Description du service Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Advanced Threat Protection and Threat Intelligence fait désormais partie d'Office 365 Advanced Threat Protection Plan 2, avec des fonctionnalités de protection contre les menaces supplémentaires. Pour en savoir plus, consultez les [offres et tarifs office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) et la [Description du service Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
-Nous avons récemment ajouté de nouvelles fonctionnalités pour vous aider à améliorer la détection et la récupération des menaces. Voici un aperçu rapide de la façon dont le service de mise à jour de menace peut vous faire une plus grande efficacité.
+Nous avons récemment ajouté de nouvelles fonctionnalités pour vous aider à améliorer la détection et la récupération des menaces. Voici un aperçu rapide de la façon dont les fonctionnalités d'enquête et de réponse aux menaces mises à jour peuvent vous aider à améliorer votre efficacité.
   
 ## <a name="detect-intrusions-and-threats"></a>Détecter les intrusions et les menaces
 
@@ -41,7 +41,7 @@ Nous avons récemment ajouté de nouvelles fonctionnalités pour vous aider à a
   
 L'Explorateur aide également les administrateurs à parcourir les relations entre les utilisateurs et le courrier électronique. Connaissance d'un message particulier qui était incorrect? Recherchez-le pour savoir quels utilisateurs ont reçu le courrier, puis suivez la série d'événements et observez ce qu'ils ont fait.
 
-Si vous ne disposez pas encore de l'intelligence des menaces, [essayez-le maintenant](https://aka.ms/tryo365threatintel3)! [Pour en savoir plus sur Office 365 Threat Intelligence](https://aka.ms/readmoreabouto365threatintel).
+Si vous ne disposez pas encore de ces capabilties, [essayez-le maintenant](https://aka.ms/tryo365threatintel3)! [Pour en savoir plus, consultez la rubrique Office 365 Threat Investigation and Response](https://aka.ms/readmoreabouto365threatintel).
   
 ![Capture d'écran de l'Explorateur de menaces dans Office 365, codée en couleur par une famille de programmes malveillants](media/591338dd-252a-437d-b5f2-87aa42e74b0c.png)
   
@@ -49,34 +49,25 @@ Si vous ne disposez pas encore de l'intelligence des menaces, [essayez-le mainte
 
 Une fois que les administrateurs de la sécurité ont identifié un événement suspect ou malveillant dans leur client, ils peuvent rapidement contenir et répondre à cette menace à l'aide de l' **infrastructure d'incident**. ReGroupez les messages indésirables en un seul clic et supprimez rapidement les messages électroniques des boîtes aux lettres de vos utilisateurs. 
   
- **Mise à jour:** Nous avons récemment ajouté la possibilité de supprimer des courriers électroniques directement à partir de l'infrastructure de l'incident. Auparavant, les administrateurs pouvaient uniquement déplacer des messages vers le dossier de courrier indésirable d'un utilisateur, où les utilisateurs pouvaient récupérer l'élément. À l'aide des nouvelles fonctionnalités de suppression, vous pouvez désormais vous assurer qu'un courrier malveillant ou indésirable est supprimé définitivement. 
+ **Mise à jour:** Nous avons ajouté la possibilité de supprimer des courriers électroniques directement à partir de l'infrastructure de l'incident. Auparavant, les administrateurs pouvaient uniquement déplacer des messages vers le dossier de courrier indésirable d'un utilisateur, où les utilisateurs pouvaient récupérer l'élément. À l'aide des nouvelles fonctionnalités de suppression, vous pouvez désormais vous assurer qu'un courrier malveillant ou indésirable est supprimé définitivement. 
   
-Si vous ne disposez pas encore de l'intelligence des menaces, [essayez-le maintenant](https://aka.ms/tryo365threatintel3)! [Pour en savoir plus sur Office 365 Threat Intelligence](https://aka.ms/readmoreabouto365threatintel).
+Si vous ne disposez pas déjà de ces fonctionnalités d'enquête et de réponse pour les menaces Office 365, [essayez-le maintenant](https://aka.ms/tryo365threatintel3)! [Pour en savoir plus sur les fonctionnalités d'enquête et de réponse aux menaces Office 365](https://aka.ms/readmoreabouto365threatintel).
   
 ![Capture d'écran de la liste des messages de correction d'incidents](media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
   
 ## <a name="leverage-the-threat-telemetry-of-microsoft"></a>Tirer parti de la fonctionnalité de télémétrie des menaces de Microsoft
 
-Office 365 Threat Intelligence est doté de données provenant du graphique de sécurité intelligent de Microsoft. Le graphique obtient le signal de menace le plus récent de plus de 1 milliard appareils Windows, 450 milliards de connexions Azure mensuelles et de 400 milliards messages électroniques dans Office 365. Ce signal de menace inégal est ce qui donne la grande visibilité à un client client, ce qui est crucial pour les administrateurs et les analystes de sécurité afin de disposer d'une vue complète des menaces ayant un impact sur leur organisation. 
+Les fonctionnalités d'enquête et de réponse aux menaces Office 365 sont basées sur les données du graphique de sécurité intelligent de Microsoft. Le graphique obtient le signal de menace le plus récent de plus de 1 milliard appareils Windows, 450 milliards de connexions Azure mensuelles et de 400 milliards messages électroniques dans Office 365. Ce signal de menace inégal est ce qui donne la grande visibilité à un client client, ce qui est crucial pour les administrateurs et les analystes de sécurité afin de disposer d'une vue complète des menaces ayant un impact sur leur organisation. 
   
-## <a name="more-to-come"></a>Plus de venu
-
-Voici quelques exemples illustrant la façon dont Office 365 Threat Intelligence vous aide à sécuriser votre entreprise. Dans les semaines à venir, nous ajoutons des améliorations significatives au produit, notamment:
-  
-- Présentation des actions potentiellement dangereuses prises sur les messages électroniques Exchange Online et SharePoint Online
-    
-- Présentation des messages électroniques de hameçonnage malveillants envoyés aux utilisateurs, dont certains ont pu être reçus et lus par les utilisateurs avant qu'ils aient été armes
-    
-- Augmentation de l'ensemble des actions que les administrateurs peuvent entreprendre pour répondre aux incidents
-    
+   
 ## <a name="why-threat-intelligence"></a>Pourquoi les renseignements sur les menaces?
 
-Gartner estime que, dans 2017 seul sur $90B, il a été passé sur Cybersecurity. Le SID Deshpande, principal Research Analyst chez Gartner, est indiqué comme disant «le secteur passe à la détection et à la réponse... envoie un message clair indiquant que la prévention est futile, sauf si elle est liée à une fonctionnalité de détection et de réponse. L'intelligence des menaces est une partie essentielle du portefeuille de services de chaque entreprise, et peut être utilisée en tant que service autonome ou en tant que partie d'Office 365 E5.
+Gartner estime que, dans 2017 seul sur $90B, il a été passé sur Cybersecurity. Le SID Deshpande, principal Research Analyst chez Gartner, est indiqué comme disant «le secteur passe à la détection et à la réponse... envoie un message clair indiquant que la prévention est futile, sauf si elle est liée à une fonctionnalité de détection et de réponse. La investigtion et la réponse aux menaces constituent un élément essentiel du portefeuille de services de chaque entreprise, et peuvent être utilisés en tant que service autonome ou en tant que partie intégrante d'Office 365 E5.
   
 ## <a name="whats-next"></a>Tâches suivantes
 
-- En savoir plus sur Office 365 Threat Intelligence dans cette session enregistrée: [Restez informé des cyberattaques avec office 365 Threat Intelligence](https://myignite.microsoft.com/videos/53723)
+- En savoir plus sur les fonctionnalités d'enquête et de réponse aux menaces Office 365 dans cette session enregistrée: [Restez informé des cyberattaques avec office 365 Threat Intelligence](https://myignite.microsoft.com/videos/53723)
     
-- [Essayez office 365 Threat Intelligence maintenant](https://aka.ms/tryo365threatintel3) ou commencez votre version d'évaluation d'Office E5 dès aujourd'hui! 
+- [Essayez les fonctionnalités d'enquête et de réponse aux menaces office 365 maintenant](https://aka.ms/tryo365threatintel3) ou commencez votre version d'évaluation d'Office E5 dès aujourd'hui! 
     
 

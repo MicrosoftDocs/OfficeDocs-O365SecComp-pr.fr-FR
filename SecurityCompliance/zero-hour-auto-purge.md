@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: La suppression automatique de zéro heure (ZAP) est une fonctionnalité de protection de la messagerie qui détecte les messages contenant du courrier indésirable ou des programmes malveillants qui ont déjà été remis dans la boîte de réception de vos utilisateurs, puis rend le contenu malveillant inoffensif. Le mode de fonctionnement de ZAP dépend du type de contenu malveillant détecté.
-ms.openlocfilehash: 84d9c1dc12c3caf0630d25a3980cdaea1830a4c0
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: b28de1b05843e3f5b0f6e7fc905c96f094c277f9
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295637"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30524018"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Purge automatique zéro heure - protection contre le courrier indésirable et les programmes malveillants
 
@@ -44,7 +44,7 @@ Office 365 met à jour quotidiennement les signatures du moteur de blocage du co
 
 - Pour les messages identifiés comme courrier indésirable, la méthode ZAP déplace les messages non lus dans le dossier courrier inDésirable des utilisateurs. 
 
-- Pour les messages identifiés comme courrier indésirable, la méthode ZAP déplace les messages vers le dossier courrier inDésirable des utilisateurs, que l'e-mail ait été lu ou non.
+- Pour les messages identifiés comme hameçonnage, la méthode ZAP déplace les messages vers le dossier courrier inDésirable des utilisateurs, que l'e-mail ait été lu ou non.
 
 - Pour les programmes malveillants nouvellement détectés, ZAP supprime les pièces jointes des messages électroniques, que l'e-mail ait été lu ou non. 
   
@@ -90,7 +90,7 @@ ZAP ne déplace pas les messages en quarantaine dans la boîte de réception pou
   
 Les règles créées par les administrateurs (règles de flux de messagerie) ou les règles de blocage et d'autorisation sont prioritaires. Ces messages sont exclus des critères de fonctionnalité.
   
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 
 [Protection contre le courrier indésirable pour Office 365](anti-spam-protection.md)
   

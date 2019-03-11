@@ -1,9 +1,9 @@
 ---
-title: Utiliser l'Explorateur dans le &amp; Centre de sécurité conformité
+title: Utiliser Threat Explorer dans le centre &amp; de sécurité conformité
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/13/2019
+ms.date: 03/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,27 +15,27 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Découvrez l'Explorateur (également appelé Explorateur de menaces) dans le &amp; Centre de sécurité conformité.
-ms.openlocfilehash: 4a28626d0e643d7a7b96a34656e7678c71a86c66
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.openlocfilehash: 626d827712760aa0b7b6faf75d94f525cfe38dc2
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241966"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30524008"
 ---
-# <a name="use-explorer-in-the-security-amp-compliance-center"></a>Utiliser l'Explorateur dans le &amp; Centre de sécurité conformité
+# <a name="use-threat-explorer-in-the-security-amp-compliance-center"></a>Utiliser Threat Explorer dans le centre &amp; de sécurité conformité
 
-Si votre organisation dispose d' [Office 365 Threat Intelligence](office-365-ti.md)et que vous disposez des autorisations nécessaires, vous pouvez utiliser l'Explorateur pour identifier et analyser les menaces. Par exemple, vous pouvez identifier et supprimer un courrier électronique malveillant qui a été remis, ou consulter un programme malveillant qui a été intercepté par les fonctionnalités de sécurité d'Office 365. L'Explorateur (également appelé «Explorateur de menaces») est un très puissant rapport en temps réel dans &amp; le centre de sécurité conformité.
+Si votre organisation dispose d' [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)et que vous disposez des autorisations nécessaires, vous pouvez utiliser l'Explorateur de menaces pour identifier et analyser les menaces. Par exemple, vous pouvez identifier et supprimer un courrier électronique malveillant qui a été remis, ou consulter un programme malveillant qui a été intercepté par les fonctionnalités de sécurité d'Office 365. L'Explorateur de menaces (également appelé Explorateur) est un outil puissant quasiment en temps réel pour aider les équipes des opérations de sécurité à examiner et à répondre &amp; aux menaces dans le centre de sécurité conformité.
   
 ![Accéder à l'Explorateur \> de gestion des menaces](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
 Pour utiliser l'Explorateur, dans le &amp; Centre de sécurité conformité, accédez à l' **Explorateur**de **gestion** \> des menaces.
 
 > [!IMPORTANT]
-> Depuis le mois de février 2019 et le déploiement sur les prochains mois, Office 365 Threat Intelligence est devenu Office 365 Advanced Threat Protection Plan 2, avec des fonctionnalités supplémentaires de protection contre les menaces. Pour en savoir plus, consultez les [offres et tarifs office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) et la [Description du service Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Threat Intelligence fait désormais partie d'Office 365 Advanced Threat Protection Plan 2, avec des fonctionnalités de protection contre les menaces supplémentaires. Pour en savoir plus, consultez les [offres et tarifs office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) et la [Description du service Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
       
 ## <a name="explorer-overview"></a>Vue d'ensemble de l'Explorateur
 
-L'Explorateur affiche des informations sur les programmes malveillants suspects dans les messages électroniques et les fichiers dans Office 365, ainsi que d'autres menaces et risques de sécurité pour votre organisation. Lorsque vous ouvrez l'Explorateur pour la première fois, la vue par défaut affiche des détections de programmes malveillants depuis les 7 derniers jours. Explorer peut également afficher les fonctionnalités de protection de la sécurité dans Office 365, notamment les [liens fiables](atp-safe-links.md) et [les pièces jointes fiables](atp-safe-attachments.md) , et peut être modifié pour afficher les données des 30 derniers jours.
+L'Explorateur affiche des informations sur les programmes malveillants suspects et les messages hameçons dans Office 365, ainsi que d'autres menaces et risques de sécurité pour votre organisation. Lorsque vous ouvrez l'Explorateur pour la première fois, l'affichage par défaut affiche les détections de programmes malveillants par courrier électronique pour les 7 derniers jours. Explorer peut également afficher les fonctionnalités de protection de la sécurité dans Office 365, notamment les [liens fiables](atp-safe-links.md) et [les pièces jointes fiables](atp-safe-attachments.md) , et peut être modifié pour afficher les données des 30 derniers jours. Si vous disposez d'une version d'évaluation de commun pour Office 365 Advanced Threat Protection Plan 2 ou Office 365 E5, vous ne verrez que les détections et les données de messagerie des 7 derniers jours.
   
 ![L'Explorateur affiche des informations sur les programmes malveillants principaux et les utilisateurs ciblés](media/8e8c1582-d6f4-4521-8591-686a1cb01f7e.png)
   
@@ -43,7 +43,7 @@ Utilisez le menu Affichage pour modifier les informations affichées.
   
 ![Menu Affichage de l'Explorateur](media/2bb34f58-555f-4967-ba55-740334ef1f8e.png)
   
-L'Explorateur dispose de plusieurs fonctionnalités de filtrage et d'interrogation qui vous permettent d'explorer les détails, tels que les principaux utilisateurs ciblés, les principales familles de programmes malveillants et bien plus encore. Chaque type de rapport offre plusieurs façons d'afficher et d'explorer les données.
+L'Explorateur dispose de plusieurs fonctionnalités de filtrage et d'interrogation qui vous permettent d'explorer les détails, tels que les principaux utilisateurs ciblés, les principales familles de programmes malveillants, la technologie de détection et bien plus encore. Chaque type de rapport offre plusieurs façons d'afficher et d'explorer les données.
 
 > [!IMPORTANT]
 > N'utilisez pas de caractères génériques, tels qu'un astérisque (*) ou un point d'interrogation (?), avec l'Explorateur. Lorsque vous effectuez une recherche dans le champ Subject pour les messages électroniques, l'Explorateur effectue une correspondance partielle et génère des résultats similaires à une recherche par caractères génériques.
@@ -93,7 +93,7 @@ Sous le graphique, affichez plus de détails sur des messages électroniques sp�
 
 ## <a name="content--malware"></a>Programme \> malveillant de contenu
 
-Cet affichage montre les fichiers identifiés comme étant malveillants dans SharePoint Online, OneDrive entreprise et Microsoft Teams.
+Cet affichage montre les fichiers identifiés comme étant malveillants par Office 365 protection avancée contre les menaces dans SharePoint Online, OneDrive entreprise et Microsoft Teams.
 
 Afficher des informations par famille de programmes malveillants, technologie de détection (comment le programme malveillant a été détecté) et charge de travail (OneDrive, SharePoint ou Teams). 
 
@@ -103,7 +103,7 @@ Sous le graphique, affichez plus de détails sur des fichiers spécifiques, tels
   
 ## <a name="new-click-to-filter-capabilities"></a>(Nouveau!) Fonctionnalités de cliquer-filtrer
 
-La nouveauté d'Explorer est la possibilité de cliquer pour filtrer. À compter du 2018 mai, lorsque vous cliquez sur un élément dans la légende, cet élément devient un filtre pour le rapport. Par exemple, supposons que nous examinons l'affichage programmes malveillants dans l'Explorateur:
+La nouveauté d'Explorer est la possibilité de cliquer pour filtrer. Lorsque vous cliquez sur un élément dans la légende, cet élément devient un filtre pour le rapport. Par exemple, supposons que nous examinons l'affichage programmes malveillants dans l'Explorateur:
   
 ![Accéder à l'Explorateur \> de gestion des menaces](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
@@ -123,15 +123,15 @@ La possibilité de filtrer un clic et d'accéder à des détails spécifiques pe
   
 ## <a name="how-do-i-get-explorer"></a>Comment puis-je obtenir Explorer?
 
-L'Explorateur est inclus dans [Office 365 Threat Intelligence](office-365-ti.md). 
+L'Explorateur est inclus dans [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md). 
 
 Vous devez disposer des autorisations appropriées, telles que celles accordées à un administrateur de sécurité ou à un lecteur de sécurité, afin d'afficher et d'utiliser l'Explorateur. Pour en savoir plus, consultez [la rubrique autorisations dans le &amp; Centre de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md).
   
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Rapports et informations dans le centre de sécurité &amp; conformité Office 365](reports-and-insights-in-security-and-compliance.md)
   
-[Rechercher et identifier les messages électroniques malveillants qui ont été remis (Office 365 Threat Intelligence)](investigate-malicious-email-that-was-delivered.md)
+[Rechercher et identifier les messages électroniques malveillants qui ont été remis (Office 365 Threat Invesitgation and Response)](investigate-malicious-email-that-was-delivered.md)
   
 [Protection contre le courrier indésirable et les programmes malveillants dans Office 365](anti-spam-and-anti-malware-protection.md)
   

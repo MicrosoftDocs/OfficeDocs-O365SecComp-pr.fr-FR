@@ -1,9 +1,9 @@
 ---
-title: Prise en main d’Office 365 Threat Intelligence
+title: Prise en main de l'enquête et de la réponse aux menaces Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/13/2019
+ms.date: 03/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,36 +14,36 @@ search.appverid:
 ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
-description: Découvrez Office 365 Threat Intelligence et découvrez comment commencer.
-ms.openlocfilehash: 3587e3f7799714e79708ede36782484cb5a76f60
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: Découvrez l'enquête et la réponse aux menaces Office 365 et comment commencer.
+ms.openlocfilehash: 826c4c1a8c06efbc287b21723758dc5d5087e1ef
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296627"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30524068"
 ---
-# <a name="get-started-with-threat-intelligence"></a>Prise en main de Threat Intelligence
+# <a name="get-started-with-threat-investigation-and-response"></a>Prise en main de l'enquête et de la réponse aux menaces 
 
-Si vous faites partie de l'équipe de sécurité de votre organisation, vous pouvez utiliser les fonctionnalités d'aide à la décision pour protéger vos utilisateurs contre les attaques. Office 365 Advanced Threat Protection Plan 2 (anciennement Office 365 Threat Intelligence) permet aux analystes de sécurité et aux administrateurs de maintenir les utilisateurs en toute sécurité en se prosant sur les informations et l'identification en fonction de ce qui se passe dans leur environnement Office 365. Ces informations sont basées sur un référentiel complet de données et de systèmes d'aide à la menace pour détecter les modèles qui correspondent aux comportements d'attaque et aux activités suspectes.
+Si vous faites partie de l'équipe de sécurité de votre organisation, vous pouvez utiliser les fonctionnalités d'enquête et de réponse aux menaces d'Office 365 pour protéger vos utilisateurs contre les attaques. Office 365 Advanced Threat Protection Plan 2 (anciennement Office 365 Threat Intelligence) permet aux analystes de sécurité et aux administrateurs de maintenir les utilisateurs en toute sécurité en se prosant sur les informations et l'identification en fonction de ce qui se passe dans leur environnement Office 365. Ces informations sont basées sur un référentiel complet de données et de systèmes d'aide à la menace pour détecter les modèles qui correspondent aux comportements d'attaque et aux activités suspectes.
   
 Lisez cet article pour en savoir plus sur l'intelligence des menaces et la prise en main.
   
-## <a name="what-is-threat-intelligence"></a>Qu'est-ce que l'intelligence des menaces?
+## <a name="what-are-the-threat-investigation-and-response-capabilities-included-in-office-365"></a>Quelles sont les fonctionnalités d'enquête et de réponse de menace incluses dans Office 365?
 
-Threat Intelligence est une collection d'informations et d'informations disponibles dans le centre de sécurité &amp; conformité Office 365. Ces informations peuvent aider l'équipe de sécurité de votre organisation à protéger les utilisateurs d'Office 365 contre les attaques. Threat Intelligence analyse les signaux et recueille des données à partir de plusieurs sources, telles que l'activité de l'utilisateur, l'authentification, le courrier électronique, les PC compromis et les incidents de sécurité. Les décideurs d'entreprise et les administrateurs généraux d'Office 365, les administrateurs de la sécurité et les analystes de la sécurité peuvent tous utiliser les informations Office 365 Threat Intelligence permet de comprendre et de répondre aux menaces contre les utilisateurs d'Office 365 et intellectuel inspecteur.
+La rubrique Threat Investigation and Response fournit une collection d'outils qui permettent d'accéder à des menaces et des actions de réponse associées et est disponible dans &amp; le centre de sécurité conformité Office 365. Ces informations peuvent aider l'équipe de sécurité de votre organisation à protéger les utilisateurs d'Office 365 des attaques par courrier électronique ou par fichiers. Les fonctionnalités permettent de surveiller les signaux et de collecter des données à partir de plusieurs sources, telles que l'activité des utilisateurs, l'authentification, le courrier électronique, les PC compromis et les incidents de sécurité. Les décideurs d'entreprise et les administrateurs généraux d'Office 365, les administrateurs de la sécurité et les analystes de la sécurité peuvent tous utiliser ces informations pour comprendre et répondre aux menaces contre les utilisateurs d'Office 365 et protéger leur propriété intellectuelle.
 
 > [!IMPORTANT]
-> Depuis le mois de février 2019 et le déploiement sur les prochains mois, Office 365 Threat Intelligence est devenu Office 365 Advanced Threat Protection Plan 2, avec des fonctionnalités supplémentaires de protection contre les menaces. Pour en savoir plus, consultez les [offres et tarifs office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) et la [Description du service Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Threat Intelligence est désormais Office 365 Advanced Threat Protection Plan 2, avec des fonctionnalités de protection contre les menaces supplémentaires. Pour en savoir plus, consultez les [offres et tarifs office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) et la [Description du service Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="get-acquainted-with-the-threat-dashboard-explorer-and-incidents"></a>Se familiariser avec le tableau de bord, l'Explorateur et les incidents des menaces
 
-Surfaces d'intelligence des menaces dans &amp; le centre de sécurité conformité, sous la forme d'un ensemble d'outils et de rapports, dont le [tableau de bord des menaces](get-started-with-ti.md#dashboard), l'Explorateur de [menaces](get-started-with-ti.md#explorer)et les [incidents](get-started-with-ti.md#incidents).
+Cette surface d'enquête et de réponse capabiltiies dans le &amp; Centre de sécurité conformité, comme un ensemble d'outils et de flux de travail de réponse, y compris le [tableau de bord des menaces](get-started-with-ti.md#dashboard), l'Explorateur de [menaces](get-started-with-ti.md#explorer), les [incidents](get-started-with-ti.md#incidents), les [attaques Simulator](attack-simulator.md)et des enquêtes automatiques _AMP_ réponse.
   
 ### <a name="threat-dashboard"></a>Tableau de bord des menaces
 
 Utilisez le tableau de bord des menaces (également appelé tableau de [bord de sécurité](security-dashboard.md)) pour voir rapidement les menaces qui ont été résolues et pour signaler aux décideurs d'entreprise comment les services Office 365 sécurisent votre entreprise.
   
-![Tableau de bord de l'intelligence contre les menaces](media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
+![Tableau de bord des menaces](media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
   
 Pour afficher et utiliser ce tableau de bord, dans &amp; le centre de sécurité conformité, accédez au **tableau de bord** **gestion** \> des menaces.
   
@@ -59,7 +59,7 @@ Pour afficher et utiliser ce rapport, dans le centre &amp; de sécurité conform
 
 Utilisez la liste des incidents (qui est également appelée «enquêtes») pour afficher la liste des incidents de sécurité du vol. Les incidents sont utilisés pour suivre les menaces telles que les messages électroniques suspects, ainsi que pour effectuer des recherches et des corrections supplémentaires.
   
-![Liste des incidents en cours dans Office 365 Threat Intelligence](media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
+![Liste des incidents de menace actuels dans Office 365](media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
   
 Pour afficher la liste des incidents en cours pour votre organisation, dans le &amp; Centre de sécurité conformité, accédez à **incidents**de **vérification** \> de la **gestion** \> des menaces.
   
@@ -71,19 +71,21 @@ Dans le cadre de l'offre Office 365 Advanced Threat Protection Plan 2, les analy
   
 ![Tendances de sécurité illustrant des informations sur les menaces récentes](media/11e7d40d-139b-4c56-8d52-c091c8654151.png) 
   
-## <a name="how-do-we-get-threat-intelligence"></a>Comment puis-je obtenir des informations sur les menaces?
+## <a name="how-do-we-get-these-threat-investigation-and-response-capabilities"></a>Comment obtenir ces fonctionnalités d'enquête sur les menaces et de réponse?
 
-<<<<<<< HEADing Office 365 Threat Intelligence est inclus dans Office 365 entreprise E5. 
+<<<<<<< HEADing Office 365 Threat invesigation and Response Capabilities est inclus dans Office 365 Advanced Threat Protection Plan 2 et Enterprise E5. 
 
 > [!TIP]
-> Si votre organisation dispose d'un abonnement Office 365 qui n'inclut pas Office 365 Threat Intelligence, vous pouvez potentiellement acheter Threat Intelligence sous forme de module complémentaire. Pour plus d'informations sur les options de plan, voir [Description du service de plateforme office &amp; 365: Centre de sécurité conformité Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) et [acheter ou modifier un composant additionnel pour Office 365 pour les entreprises](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on). = = = = = = = **Threat Intelligence fait désormais partie de la protection avancée contre les menaces office 365**, qui est incluse dans certains abonnements, tels que [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), office 365 entreprise E5, Office 365 Éducation a5, etc. Si votre organisation dispose d'un abonnement qui n'inclut pas la protection avancée contre les menaces pour Office 365, vous pouvez acheter l'ATP en tant que module complémentaire. Pour plus d'informations, consultez la rubrique [offres et tarifs de protection avancée contre les menaces office 365](https://products.office.com/exchange/advance-threat-protection) , ainsi que la [Description du service Office 365 Advanced Threat Protection](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp).
+> Si votre organisation a un abonnement Office 365 qui n'inclut pas ces fonctionnalités d'enquête et de réponse aux menaces, vous pouvez l'acheter en tant que module complémentaire avec Office 365 Advanced Threat Protection. Pour plus d'informations sur les options de plan, voir [Description du service de plateforme office &amp; 365: Centre de sécurité conformité Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) et [acheter ou modifier un composant additionnel pour Office 365 pour les entreprises](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on).
+=======
+La **protection avancée contre les menaces et l'intelligence des menaces font désormais partie du plan 2 de protection avancée contre les menaces office 365**, qui est inclus dans certains abonnements, tels que [Microsoft 365 entreprise](https://www.microsoft.com/microsoft-365/enterprise/home), [microsoft 365 entreprise](https://www.microsoft.com/microsoft-365/business), Office 365 Entreprise E5, Office 365 éducation a5, etc. Si votre organisation dispose d'un abonnement qui n'inclut pas la protection avancée contre les menaces pour Office 365, vous pouvez acheter l'ATP en tant que module complémentaire. Pour plus d'informations, consultez la rubrique [offres et tarifs de protection avancée contre les menaces office 365](https://products.office.com/exchange/advance-threat-protection) , ainsi que la [Description du service Office 365 Advanced Threat Protection](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp).
 >>>>>>> amont/compliance20
   
 1. En tant qu'administrateur général Office 365, accédez [https://portal.office.com](https://portal.office.com) à et connectez-vous à l'aide de votre compte professionnel ou scolaire pour Office 365. 
     
 2. Choisissez **** \> **facturation** de l'administrateur pour voir le contenu de votre abonnement actuel. 
 
-<<<<<<< HEAD
+<<<<<<< EN-TÊTE
     - Si vous voyez **office 365 entreprise E5**, votre organisation dispose d'Office 365 Threat Intelligence. 
     - Si vous voyez un autre abonnement, tel qu' **office 365 entreprise E3** ou **Office 365 entreprise E1**, envisagez d'ajouter des renseignements sur les menaces. (Pour ce faire, choisissez **+ Ajouter un abonnement**.)
     
@@ -112,9 +114,9 @@ Pour plus d'informations sur les rôles, les groupes de rôles et les autorisati
 
 - [En savoir plus sur les suivis de menace-nouveau et notable](threat-trackers.md)
     
-- [Rechercher et identifier les messages électroniques malveillants qui ont été remis (Office 365 Threat Intelligence)](investigate-malicious-email-that-was-delivered.md)
+- [Rechercher et identifier les courriers électroniques malveillants remis (Office 365 Threat Investigation and Response)](investigate-malicious-email-that-was-delivered.md)
     
-- [Intégrer Office 365 Threat Intelligence à Windows Defender - Protection avancée contre les menaces](integrate-office-365-ti-with-wdatp.md)
+- [Intégrer l'enquête de menace Office 365 et répondre à la protection avancée contre les menaces Windows Defender](integrate-office-365-ti-with-wdatp.md)
     
 - [En savoir plus sur les simulateurs d'attaques](attack-simulator.md)
   

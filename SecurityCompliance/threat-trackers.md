@@ -1,5 +1,5 @@
 ---
-title: Suivis contre les menaces - nouveaux et intéressants
+title: Suivi des menaces-nouveautés et remarquables
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -14,19 +14,19 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur les suivis de menace, y compris les nouveaux suivis, pour aider votre organisation à répondre aux préoccupations de sécurité.
-ms.openlocfilehash: 072d64a056d88000ad615a896328b0144aef3d0f
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.openlocfilehash: 4cf3e13b7379e26deec90bbae2c4f9cf42fa91b7
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241986"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30524048"
 ---
-# <a name="threat-trackers---new-and-noteworthy"></a>Suivis contre les menaces - nouveaux et intéressants
+# <a name="threat-trackers---new-and-noteworthy"></a>Suivi des menaces-nouveautés et remarquables
 
-[Office 365 Threat Intelligence](office-365-ti.md) permet à l'équipe de sécurité de votre organisation de découvrir et de prendre des mesures contre les menaces Cybersecurity. À compter du 1er mars 2018 et au cours des prochaines semaines, Office 365 Threat Intelligence inclut de nouvelles fonctionnalités de suivi des menaces, y compris des suivis nocelles. Lisez cet article pour obtenir une vue d'ensemble de ces nouvelles fonctionnalités et des étapes suivantes. 
+Les fonctionnalités d' [enquête et de réponse aux menaces Office 365](office-365-ti.md) permettent à l'équipe de sécurité de votre organisation de découvrir et de prendre des mesures contre les menaces Cybersecurity. Les fonctionnalités d'enquête et de réponse aux menaces Office 365 incluent des fonctionnalités de suivi des menaces, notamment des suivis nocelles. Lisez cet article pour obtenir une vue d'ensemble de ces nouvelles fonctionnalités et des étapes suivantes. 
 
 > [!IMPORTANT]
-> Depuis le mois de février 2019 et le déploiement sur les prochains mois, Office 365 Threat Intelligence est devenu Office 365 Advanced Threat Protection Plan 2, avec des fonctionnalités supplémentaires de protection contre les menaces. Pour en savoir plus, consultez les [offres et tarifs office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) et la [Description du service Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Threat Intelligence fait désormais partie d'Office 365 Advanced Threat Protection Plan 2, avec des fonctionnalités de protection contre les menaces supplémentaires. Pour en savoir plus, consultez les [offres et tarifs office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) et la [Description du service Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="what-are-threat-trackers"></a>Qu'est-ce qu'un suivi des menaces?
 
@@ -38,9 +38,9 @@ La plupart des pages de suivi incluent des numéros de tendance mis à jour rég
   
 ![Exemple d'informations sur la campagne dans l'Explorateur](media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
-Les suivis ne sont que quelques-unes des nombreuses fonctionnalités que vous obtenez avec [Office 365 Threat Intelligence](office-365-ti.md). Lorsque cela est possible, vos nouveaux suivis de [](threat-trackers.md#notey)menace incluent des suivis dignes, des suivis des [tendances](threat-trackers.md#trending), des [requêtes suivies](threat-trackers.md#trackedq)et des [requêtes enregistrées](threat-trackers.md#savedq).
+Les suivis ne sont que quelques-unes des nombreuses fonctionnalités que vous obtenez avec [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md). Les analyseurs de [](threat-trackers.md#notey)menace incluent des suivis remarquables, des suivis des [tendances](threat-trackers.md#trending), des [requêtes suivies](threat-trackers.md#trackedq)et des [requêtes enregistrées](threat-trackers.md#savedq).
   
-Pour afficher et utiliser vos suivis de menace lorsqu'ils sont disponibles pour votre organisation, accédez au centre &amp; de sécurité conformité[https://protection.office.com](https://protection.office.com)() et sélectionnez **Threat Management** \> **Threat Tracker**.
+Pour afficher et utiliser vos suivis de menace pour votre organisation, accédez au centre &amp; de sécurité conformité[https://protection.office.com](https://protection.office.com)() et sélectionnez **Threat Management** \> **Threat Tracker**.
   
 > [!NOTE]
 > Pour utiliser les suivis de menace, vous devez être un administrateur général Office 365, un administrateur de sécurité ou un lecteur de sécurité. Consultez [la rubrique autorisations dans le centre &amp; de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md). 
@@ -77,9 +77,9 @@ Vous pouvez toujours enregistrer une requête de suivi remarquable ou l'une de v
 
 Que vous examiniez le courrier, le contenu ou les activités Office (bientôt disponible), l'Explorateur et les suivis collaborent pour vous aider à examiner et à suivre les risques et les menaces de sécurité. Ensemble, les suivis fournissent des informations pour vous aider à protéger vos utilisateurs Office 365 en mettant en surbrillance les problèmes nouveaux, notables et fréquemment recherchés, ce qui garantit une meilleure protection de votre entreprise lors de son déplacement dans le Cloud.
   
-Lorsque des suivis de menace sont disponibles, essayez-les et n'oubliez pas que vous pouvez toujours nous faire part de vos commentaires sur cette fonctionnalité ou d'autres fonctionnalités de sécurité Office 365 en cliquant sur le bouton **Commentaires** situé dans le coin inférieur droit de la [vue d'ensemble d'Office 365 Centre &amp; de sécurité conformité](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
+N'oubliez pas que vous pouvez toujours nous faire part de vos commentaires sur cette fonctionnalité ou d'autres fonctionnalités de sécurité Office 365 en cliquant sur le bouton **Commentaires** situé dans le coin inférieur droit de la [vue d'ensemble du centre de sécurité &amp; conformité Office 365](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
   
-![Centre de sécurité et conformité Office 365](media/86c330db-8132-4150-8475-220258fe04fb.png)
+![Office 365 Security &amp; Compliance Center](media/86c330db-8132-4150-8475-220258fe04fb.png)
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>Suivis et protection avancée contre les menaces Office 365
 
@@ -93,7 +93,7 @@ Le nouveau filtre de menace présentant en surbrillance les éléments récemmen
   
 ## <a name="next-steps"></a>Étapes suivantes
 
-- Si votre organisation ne dispose pas déjà d'Office 365 Threat Intelligence, voir [Comment obtenir office 365 Threat Intelligence?](get-started-with-ti.md).
+- Si votre organisation ne dispose pas déjà de ces fonctionnalités d'enquête et de réponse pour les menaces Office 365, consultez [Comment obtenir les fonctionnalités d'enquête et de réponse aux menaces pour office 365?](get-started-with-ti.md).
     
 - Assurez-vous que les rôles et les autorisations appropriés sont attribués à votre équipe de sécurité. Vous devez être un administrateur général Office 365 ou avoir l'administrateur de sécurité ou le rôle de recherche et de purge affecté dans &amp; le centre de sécurité conformité. Consultez [la rubrique autorisations dans le centre &amp; de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md).
     
