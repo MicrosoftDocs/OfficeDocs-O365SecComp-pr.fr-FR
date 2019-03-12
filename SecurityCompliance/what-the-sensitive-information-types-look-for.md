@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité d'Office 365 inclut 80 types d'informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP recherche pour chaque type.
-ms.openlocfilehash: 55fa8b6855a9a5bf2c84f6555dd8c8227a2ad9cf
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: e9811b285e98a791570dc91e275cb5cead4f8bc9
+ms.sourcegitcommit: 6e8e2b43a4bea31c1e835c5b050824651c6a0094
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455266"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30537641"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Éléments recherchés par les types d’informations sensibles
 
@@ -566,7 +566,476 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - 7777777777
 - 8888888888
 - 9999999999
-   
+
+## <a name="azure-documentdb-auth-key"></a>Clé d'authentification Azure DocumentDB
+
+### <a name="format"></a>Format
+
+La chaîne «DocumentDb» suivie des caractères et des chaînes présentés dans le modèle ci-dessous.
+
+### <a name="pattern"></a>Modèle
+
+- La chaîne «DocumentDb»
+- N'importe quelle combinaison entre 3-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- Symbole supérieur à (>), signe égal (=), guillemet (") ou apostrophe (')
+- Toute combinaison de 86 lettres majuscules ou minuscules, des chiffres, une barre oblique (/) ou un signe plus (+)
+- Deux signes égal (=)
+
+### <a name="checksum"></a>Somme de contrôle
+
+Non
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L'expression régulière CEP_Regex_AzureDocumentDBAuthKey trouve le contenu qui correspond au modèle.
+- L'expression régulière CEP_CommonExampleKeywords ne trouve **pas** le contenu qui correspond au modèle.
+
+```
+<!-- Azure Document DB Auth Key -->
+<Entity id="0f587d92-eb28-44a9-bd1c-90f2892b47aa" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureDocumentDBAuthKey" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+          </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(Notez que techniquement, ce type d'informations sensibles identifie ces mots clés à l'aide d'une expression régulière, et non d'une liste de mots clés.)
+
+- contoso
+- société
+- Northwind
+- immédiatement
+- OneBox
+- hôte
+- bouclage
+- TESTACS. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Chaîne de connexion à la base de données IAAS Azure et chaîne de connexion Azure SQL
+
+### <a name="format"></a>Format
+
+La chaîne «Server», «Server» ou «Data source» suivie des caractères et des chaînes décrits dans le modèle ci-dessous, y compris la chaîne «cloudapp. Azure. <!--no-hyperlink-->com» ou «cloudapp. Azure. <!--no-hyperlink-->net "ou" Database. Windows. <!--no-hyperlink-->net ", et la chaîne" password "ou" password "ou" PWD ".
+
+### <a name="pattern"></a>Modèle
+
+- Chaîne «serveur», «serveur» ou «source de données»
+- 0-2 espaces blancs
+- Signe égal (=)
+- 0-2 espaces blancs
+- N'importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- La chaîne «cloudapp. Azure. <!--no-hyperlink-->com "," cloudapp. Azure. <!--no-hyperlink-->net "ou" Database. Windows. <!--no-hyperlink-->net "
+- N'importe quelle combinaison entre 1-300 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- La chaîne "password", "password" ou "PWD"
+- 0-2 espaces blancs
+- Signe égal (=)
+- 0-2 espaces blancs
+- Un ou plusieurs caractères qui ne sont pas des points-virgules (;), guillemets (") ou apostrophe (')
+- Un point-virgule (;), guillemet (") ou apostrophe (')
+
+### <a name="checksum"></a>Somme de contrôle
+
+Non
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L'expression régulière CEP_Regex_AzureConnectionString trouve le contenu qui correspond au modèle.
+- L'expression régulière CEP_CommonExampleKeywords ne trouve **pas** le contenu qui correspond au modèle.
+
+```
+<!--Azure IAAS Database Connection String and Azure SQL Connection String-->
+<Entity id="ce1a126d-186f-4700-8c0c-486157b953fd" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(Notez que techniquement, ce type d'informations sensibles identifie ces mots clés à l'aide d'une expression régulière, et non d'une liste de mots clés.)
+
+- contoso
+- société
+- Northwind
+- immédiatement
+- OneBox
+- hôte
+- bouclage
+- TESTACS. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-iot-connection-string"></a>Chaîne de connexion Azure IoT
+
+### <a name="format"></a>Format
+
+La chaîne «nomhôte» suivie des caractères et des chaînes décrits dans le modèle ci-dessous, y compris les chaînes «Azure-appareils. <!--no-hyperlink-->net "et" SharedAccessKey ".
+
+### <a name="pattern"></a>Modèle
+
+- La chaîne «nomhôte»
+- 0-2 espaces blancs
+- Signe égal (=)
+- 0-2 espaces blancs
+- N'importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- La chaîne «Azure-appareils. <!--no-hyperlink-->net "
+- N'importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- La chaîne «SharedAccessKey»
+- 0-2 espaces blancs
+- Signe égal (=)
+- 0-2 espaces blancs
+- Toute combinaison de 43 lettres majuscules ou minuscules, des chiffres, une barre oblique (/) ou un signe plus (+)
+- Signe égal (=)
+
+### <a name="checksum"></a>Somme de contrôle
+
+Non
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L'expression régulière CEP_Regex_AzureIoTConnectionString trouve le contenu qui correspond au modèle.
+- L'expression régulière CEP_CommonExampleKeywords ne trouve **pas** le contenu qui correspond au modèle.
+
+```
+<!--Azure IoT Connection String-->
+<Entity id="0b34bec3-d5d6-4974-b7b0-dcdb5c90c29d" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureIoTConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(Notez que techniquement, ce type d'informations sensibles identifie ces mots clés à l'aide d'une expression régulière, et non d'une liste de mots clés.)
+
+- contoso
+- société
+- Northwind
+- immédiatement
+- OneBox
+- hôte
+- bouclage
+- TESTACS. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-publish-setting-password"></a>Mot de passe de paramètre de publication Azure
+
+### <a name="format"></a>Format
+
+La chaîne «userpwd =» suivie d'une chaîne alphanumérique.
+
+### <a name="pattern"></a>Modèle
+
+- La chaîne «userpwd =»
+- N'importe quelle combinaison de 60 lettres minuscules ou chiffres
+- Guillemet (")
+
+### <a name="checksum"></a>Somme de contrôle
+
+Non
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L'expression régulière CEP_Regex_AzurePublishSettingPasswords trouve le contenu qui correspond au modèle.
+- L'expression régulière CEP_CommonExampleKeywords ne trouve **pas** le contenu qui correspond au modèle.
+
+
+```
+<!--Azure Publish Setting Password-->
+<Entity id="75f4cc8a-a68e-49e5-89ce-fa8f03d286a5" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+       <IdMatch idRef="CEP_Regex_AzurePublishSettingPasswords" />
+       <Any minMatches="0" maxMatches="0">
+           <Match idRef="CEP_CommonExampleKeywords" />
+       </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(Notez que techniquement, ce type d'informations sensibles identifie ces mots clés à l'aide d'une expression régulière, et non d'une liste de mots clés.)
+
+- contoso
+- société
+- Northwind
+- immédiatement
+- OneBox
+- hôte
+- bouclage
+- TESTACS. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-redis-cache-connection-string"></a>Chaîne de connexion au cache des inversions Azure
+
+### <a name="format"></a>Format
+
+La chaîne «ReDim. cache. Windows. <!--no-hyperlink-->net "suivi des caractères et des chaînes décrits dans le modèle ci-dessous, y compris la chaîne" password "ou" PWD ".
+
+### <a name="pattern"></a>Modèle
+
+- La chaîne «ReDim. cache. Windows. <!--no-hyperlink-->net "
+- N'importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- La chaîne «password» ou «pwd»
+- 0-2 espaces blancs
+- Signe égal (=)
+- 0-2 espaces blancs
+- Toute combinaison de 43 caractères majuscules ou minuscules, des chiffres, une barre oblique (/) ou un signe plus (+)
+- Signe égal (=)
+
+### <a name="checksum"></a>Somme de contrôle
+
+Non
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L'expression régulière CEP_Regex_AzureRedisCacheConnectionString trouve le contenu qui correspond au modèle..
+- L'expression régulière CEP_CommonExampleKeywords ne trouve **pas** le contenu qui correspond au modèle.
+
+```
+<!--Azure Redis Cache Connection String-->
+<Entity id="095a7e6c-efd8-46d5-af7b-5298d53a49fc" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureRedisCacheConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(Notez que techniquement, ce type d'informations sensibles identifie ces mots clés à l'aide d'une expression régulière, et non d'une liste de mots clés.)
+
+- contoso
+- société
+- Northwind
+- immédiatement
+- OneBox
+- hôte
+- bouclage
+- TESTACS. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-sas"></a>SAS Azure
+
+### <a name="format"></a>Format
+
+La chaîne «SIG» suivie des caractères et des chaînes présentés dans le modèle ci-dessous.
+
+### <a name="pattern"></a>Modèle
+
+- La chaîne «SIG»
+- 0-2 espaces blancs
+- Signe égal (=)
+- 0-2 espaces blancs
+- Toute combinaison comprise entre 43-53 caractères majuscules ou minuscules, des chiffres ou le signe pourcentage (%)
+- La chaîne «% 3D»
+- Tout caractère qui n'est pas une lettre majuscule, un chiffre ou un signe de pourcentage (%)
+
+### <a name="checksum"></a>Somme de contrôle
+
+Non
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L'expression régulière CEP_Regex_AzureSAS trouve le contenu qui correspond au modèle.
+
+```
+<!--Azure SAS-->
+<Entity id="4d235014-e564-47f4-a6fb-6ebb4a826834" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureSAS" />
+  </Pattern>
+</Entity>
+```
+
+## <a name="azure-service-bus-connection-string"></a>Chaîne de connexion au bus des services Azure
+
+### <a name="format"></a>Format
+
+La chaîne «point de terminaison» suivie des caractères et des chaînes décrits dans le modèle ci-dessous, y compris les chaînes «ServiceBus. Windows. <!--no-hyperlink-->net "et" SharedAccesKey ".
+
+### <a name="pattern"></a>Modèle
+
+- Chaîne «point de terminaison»
+- 0-2 espaces blancs
+- Signe égal (=)
+- 0-2 espaces blancs
+- N'importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- La chaîne «ServiceBus. Windows. <!--no-hyperlink-->net "
+- N'importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- La chaîne «SharedAccessKey»
+- 0-2 espaces blancs
+- Signe égal (=)
+- 0-2 espaces blancs
+- Toute combinaison de 43 caractères majuscules ou minuscules, des chiffres, une barre oblique (/) ou un signe plus (+)
+- Signe égal (=)
+
+### <a name="checksum"></a>Somme de contrôle
+
+Non
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L'expression régulière CEP_Regex_AzureServiceBusConnectionString trouve le contenu qui correspond au modèle..
+- L'expression régulière CEP_CommonExampleKeywords ne trouve **pas** le contenu qui correspond au modèle.
+
+```
+<!--Azure Service Bus Connection String-->
+<Entity id="b9a6578f-a83f-4fcd-bf44-2130bae49a6f" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureServiceBusConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(Notez que techniquement, ce type d'informations sensibles identifie ces mots clés à l'aide d'une expression régulière, et non d'une liste de mots clés.)
+
+- contoso
+- société
+- Northwind
+- immédiatement
+- OneBox
+- hôte
+- bouclage
+- TESTACS. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-storage-account-key"></a>Clé de compte de stockage Azure
+
+### <a name="format"></a>Format
+
+La chaîne «DefaultEndpointsProtocol» suivie des caractères et des chaînes décrits dans le modèle ci-dessous, y compris la chaîne «AccountKey».
+
+### <a name="pattern"></a>Modèle
+
+- La chaîne «DefaultEndpointsProtocol»
+- 0-2 espaces blancs
+- Signe égal (=)
+- 0-2 espaces blancs
+- N'importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- La chaîne «AccountKey»
+- 0-2 espaces blancs
+- Signe égal (=)
+- 0-2 espaces blancs
+- Toute combinaison de 86 caractères majuscules ou minuscules, des chiffres, une barre oblique (/) ou un signe plus (+)
+- Deux signes égal (=)
+
+### <a name="checksum"></a>Somme de contrôle
+
+Non
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L'expression régulière CEP_Regex_AzureStorageAccountKey trouve le contenu qui correspond au modèle.
+- L'expression régulière CEP_AzureEmulatorStorageAccountFilter ne trouve **pas** le contenu qui correspond au modèle.
+- L'expression régulière CEP_CommonExampleKeywords ne trouve **pas** le contenu qui correspond au modèle.
+
+```
+<!--Azure Storage Account Key-->
+<Entity id="c7bc98e8-551a-4c35-a92d-d2c8cda714a7" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureStorageAccountKey" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_AzureEmulatorStorageAccountFilter" />
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="cepazureemulatorstorageaccountfilter"></a>CEP_AzureEmulatorStorageAccountFilter
+
+(Notez que techniquement, ce type d'informations sensibles identifie ces mots clés à l'aide d'une expression régulière, et non d'une liste de mots clés.)
+
+- Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw = =
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(Notez que techniquement, ce type d'informations sensibles identifie ces mots clés à l'aide d'une expression régulière, et non d'une liste de mots clés.)
+
+- contoso
+- société
+- Northwind
+- immédiatement
+- OneBox
+- hôte
+- bouclage
+- TESTACS. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-storage-account-key-generic"></a>Clé de compte de stockage Azure (Générique)
+
+### <a name="format"></a>Format
+
+Toute combinaison de 86 lettres majuscules ou minuscules, des chiffres, la barre oblique (/) ou le signe plus (+), précédée ou suivie des caractères décrits dans le modèle ci-dessous.
+
+### <a name="pattern"></a>Modèle
+
+- 0-1 du symbole supérieur à (>), apostrophe ('), signe égal (=), guillemet (") ou dièse (#)
+- Toute combinaison de 86 caractères majuscules ou minuscules, des chiffres, la barre oblique (/) ou le signe plus (+)
+- Deux signes égal (=)
+
+
+### <a name="checksum"></a>Somme de contrôle
+
+Non
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L'expression régulière CEP_Regex_AzureStorageAccountKeyGeneric trouve le contenu qui correspond au modèle.
+
+```
+<!--Azure Storage Account Key (Generic)-->
+<Entity id="7ff41bd0-5419-4523-91d6-383b3a37f084" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureStorageAccountKeyGeneric" />
+  </Pattern>
+</Entity>
+```
+
 ## <a name="belgium-national-number"></a>Numéro national Belgique
 
 ### <a name="format"></a>Format
@@ -579,7 +1048,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Six chiffres et deux points au format AA.MM.JJ pour la date de naissance  
 - Un trait d’union  
 - Trois chiffres séquentiels (impairs pour les hommes, pairs pour les femmes)  
-- Un point  
+- Un point 
 - Deux chiffres de contrôle
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -707,7 +1176,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Trois chiffres (ces huit premiers chiffres composent le numéro d’enregistrement)  
 - Une barre oblique  
 - Le numéro de succursale à quatre chiffres  
-- Un trait d’union  
+- Un trait d’union 
 - Deux chiffres de contrôle
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -832,7 +1301,7 @@ Un numéro de compte bancaire au Canada est composé de sept ou douze chiffres.
 
 Un numéro de transit de compte bancaire du Canada est indiqué au format suivant :
 - Cinq chiffres 
-- Un trait d’union 
+- Un trait d’union  
 - Trois chiffres ou
 - Un zéro « 0 »  
 - Huit chiffres
@@ -1301,7 +1770,7 @@ Neuf chiffres avec éventuellement des traits d’union ou des espaces
 ### <a name="pattern"></a>Modèle
 
 Avec
-- Trois chiffres  
+- Trois chiffres 
 - Un trait d’union ou un espace 
 - Trois chiffres 
 - Un trait d’union ou un espace 
@@ -3042,9 +3511,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="pattern"></a>Modèle
 
 12 chiffres :
-- Quatre chiffres 
+- Quatre chiffres  
 - Éventuellement un tiret ou un espace  
-- Quatre chiffres 
+- Quatre chiffres  
 - Éventuellement un tiret ou un espace  
 - Le chiffre final, qui est le chiffre de contrôle
 
@@ -4498,7 +4967,83 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="keywords"></a>Mots-clés
 
 Aucun
-   
+
+## <a name="sql-server-connection-string"></a>Chaîne de connexion SQL Server
+
+### <a name="format"></a>Format
+
+La chaîne «User ID», «User ID», «UID» ou «UserId» suivi des caractères et des chaînes décrits dans le modèle ci-dessous.
+
+### <a name="pattern"></a>Modèle
+
+- La chaîne «User ID», «User ID», «UID» ou «UserId»
+- N'importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- La chaîne "password" ou "PWD" où "PWD" n'est pas précédé d'une lettre minuscule
+- Signe égal (=)
+- Tout caractère qui n'est pas un signe dollar ($), un symbole de pourcentage (%), un symbole supérieur à (>), un symbole (@), un guillemet ("), un point-virgule (;), une accolade ouvrante ([) ou un crochet gauche ({)
+- N'importe quelle combinaison de 7-128 caractères qui ne sont pas des points-virgules (;), barre oblique (/) ou guillemets (")
+- Un point-virgule (;) ou guillemets (")
+
+### <a name="checksum"></a>Somme de contrôle
+
+Non
+
+### <a name="definition"></a>Définition
+
+Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
+- L'expression régulière CEP_Regex_SQLServerConnectionString trouve le contenu qui correspond au modèle.
+- Un mot clé depuis CEP_GlobalFilter **** est introuvable.
+- L'expression régulière CEP_PasswordPlaceHolder ne trouve **pas** le contenu qui correspond au modèle.
+- L'expression régulière CEP_CommonExampleKeywords ne trouve **pas** le contenu qui correspond au modèle.
+
+```
+<!---SQL Server Connection String>
+<Entity id="e76b6205-d3cb-46f2-bd63-c90153f2f97d" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_SQLServerConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_GlobalFilter" />
+            <Match idRef="CEP_PasswordPlaceHolder" />
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Mots-clés
+
+#### <a name="cepglobalfilter"></a>CEP_GlobalFilter
+
+- some-password
+- somepassword
+- secretPassword
+- échantillonnage
+
+#### <a name="ceppasswordplaceholder"></a>CEP_PasswordPlaceHolder
+
+(Notez que techniquement, ce type d'informations sensibles identifie ces mots clés à l'aide d'une expression régulière, et non d'une liste de mots clés.)
+
+- Mot de passe ou mot de passe suivi par 0-2 espaces, un signe égal (=), 0-2 espaces et un astérisque (*)--ou--
+- Mot de passe ou mot de passe suivi par:
+    - Signe égal (=)
+    - Symbole inférieur à (<)
+    - Toute combinaison de 1-200 caractères qui sont des lettres majuscules ou minuscules, des chiffres, un astérisque (*), un tiret (-), un trait de soulignement (_) ou un espace blanc
+    - Symbole supérieur à (>)
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(Notez que techniquement, ce type d'informations sensibles identifie ces mots clés à l'aide d'une expression régulière, et non d'une liste de mots clés.)
+
+- contoso
+- société
+- Northwind
+- immédiatement
+- OneBox
+- hôte
+- bouclage
+- TESTACS. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
 ## <a name="sweden-national-id"></a>ID national Suède
 
 ### <a name="format"></a>Format
