@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: Vous pouvez intégrer votre serveur SIEM à la sécurité des applications Cloud Office 365. Lisez cet article pour obtenir une vue d'ensemble du fonctionnement et de la configuration.
-ms.openlocfilehash: b4baeda3cb836c0b1aa528d29176bbf4321d1fe2
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 82b5e0e6467bd42acba3c40d67e4e0363a7e0f72
+ms.sourcegitcommit: 4abcc03497478abf1ae7fc84792f44360d8e59c1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215874"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "30548584"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>Intégrer votre serveur SIEM à la sécurité des applications cloud Office 365
   
@@ -27,7 +27,7 @@ ms.locfileid: "30215874"
    
 ## <a name="overview-and-prerequisites"></a>Vue d'ensemble et conditions préalables
 
-Vous pouvez intégrer la [sécurité des applications Cloud Office 365](get-ready-for-office-365-cas.md) avec votre serveur de gestion des événements et des informations de sécurité (Siem) pour permettre une surveillance centralisée des alertes. Cela est particulièrement utile pour les organisations qui utilisent les services Cloud et les applications serveur locales. L'intégration à un serveur SIEM permet à votre équipe de sécurité de mieux protéger vos applications Office 365 tout en conservant votre flux de travail de sécurité habituel, en automatisant certaines procédures de sécurité et en corrélées entre les événements sur site et en nuage.  
+Vous pouvez intégrer la [sécurité des applications Cloud Office 365](get-ready-for-office-365-cas.md) avec votre serveur de gestion des événements et des informations de sécurité (Siem) pour permettre une surveillance centralisée des alertes. Cela est particulièrement utile pour les organisations qui utilisent les services Cloud et les applications serveur locales. Vous pouvez intégrer votre serveur SIEM pour extraire des alertes et des activités de la sécurité des applications Cloud Office 365 vers votre serveur SIEM. L'intégration à un serveur SIEM permet à votre équipe de sécurité de mieux protéger vos applications Office 365 tout en conservant votre flux de travail de sécurité habituel, en automatisant certaines procédures de sécurité et en corrélées entre les événements sur site et en nuage.  
   
 Lorsque vous intégrez votre serveur SIEM à la sécurité des applications Cloud Office 365, les alertes des deux derniers jours sont transmises au serveur SIEM, ainsi qu'à toutes les alertes en provenance de ces deux jours (en fonction de tous les filtres que vous sélectionnez). En outre, si vous désactivez cette fonctionnalité pendant une période prolongée, lorsque vous la réactivez, elle transférera les deux jours précédents d'alertes, puis toutes les alertes à partir de ce moment.
 
@@ -45,7 +45,7 @@ La sécurité des applications Cloud Office 365 prend actuellement en charge les
 - Micro focus ArcSight
 - CEF générique
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Conditions requises
 
 - Vous devez être un administrateur général ou un administrateur de sécurité pour effectuer les tâches décrites dans cet article. Consultez [la rubrique autorisations dans le centre &amp; de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md)
 
@@ -81,8 +81,9 @@ La sécurité des applications Cloud Office 365 prend actuellement en charge les
 6. Dans l'étape de **Journal système distant** , spécifiez l'adresse IP ou le nom d'hôte de l' **hôte syslog distant** et le **numéro de port syslog**. Sélectionnez TCP ou UDP comme protocole syslog distant. (Vous pouvez collaborer avec votre administrateur réseau ou administrateur de sécurité pour obtenir ces informations si vous ne les avez pas.) Ensuite, cliquez sur **suivant**.<br/>![Spécifier les détails du journal des accès à distance](media/ArcSightS1Syslog.png)
   
 7. Dans l'étape **types de données** , effectuez l'une des opérations suivantes, puis cliquez sur **suivant**:
-    - Conserver le paramètre par défaut de **toutes les alertes**<br/>OU
-    - Cliquez sur **toutes les alertes**, puis choisissez **filtres spécifiques**. Définissez des filtres pour sélectionner les types d'alertes que vous souhaitez envoyer à votre serveur SIEM.<br/>![Étape types de données de l'Assistant](media/ArcSightS1ExportOptions.png)
+    - Conserver le paramètre par défaut de **toutes les alertes**<br/>OR
+    - Cliquez sur **toutes les alertes**, puis choisissez **filtres spécifiques**. Définissez des filtres pour sélectionner les types d'alertes que vous souhaitez envoyer à votre serveur SIEM.
+<br/>![Étape types de données de l'Assistant](media/ArcSightS1ExportOptions.png)
   
 8. Dans l'écran Félicitations, copiez le jeton et enregistrez-le pour une version ultérieure.<br/>![Écran créé par l'agent SIEM](media/SIEMAgentFinished.png) 
 
@@ -155,10 +156,10 @@ Et voici un autre exemple, cette fois au format CEF:
 
 |Nom de champ CEF  | Description  |
 |---------|---------|
-|Démarrer     | horodatage de l'alerte        |
-|fin     | horodatage de l'alerte        |
+|start     | horodatage de l'alerte        |
+|end     | horodatage de l'alerte        |
 |transcriptase     | horodatage de l'alerte        |
-|msg     | Description de l'alerte, comme illustré dans le portail de sécurité des applications Cloud Office 365        |
+|traiter     | Description de l'alerte, comme illustré dans le portail de sécurité des applications Cloud Office 365        |
 |suser     | utilisateur de l'objet d'alerte        |
 |destinationServiceName     | alerte: application d'origine, telle qu'Office 365, SharePoint ou OneDrive        |
 |csLabel     | Varie (les étiquettes ont des significations différentes). En règle générale, les étiquettes sont explicites, comme targetObjects.        |
@@ -184,7 +185,7 @@ Si vous perdez votre jeton, vous pouvez en régénérer un.
 
 2. Localisez la ligne pour l'agent SIEM. 
 
-3. Cliquez sur les ellipses, puis choisissez **modifier**. (Si vous modifiez l'agent SIEM, vous n'avez pas besoin de réexécuter le fichier. jar; il est mis à jour automatiquement.)<br/>![Pour modifier votre agent SIEM, sélectionnez les ellipses, puis cliquez sur modifier.](media/96d0b362-3e0c-4dff-b2b4-d7af5b1bfb91.png)
+3. Cliquez sur les ellipses, puis choisissez **modifier**. (Si vous modifiez l'agent SIEM, vous n'avez pas besoin de réexécuter le fichier. jar; il est mis à jour automatiquement.) <br/>![Pour modifier votre agent SIEM, sélectionnez les ellipses, puis cliquez sur modifier.](media/96d0b362-3e0c-4dff-b2b4-d7af5b1bfb91.png)
   
 ### <a name="delete-a-siem-agent"></a>Supprimer un agent SIEM
 

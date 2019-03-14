@@ -15,12 +15,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment les fonctionnalités d'enquête et de réponse aux menaces Office 365 peuvent aider votre organisation à détecter les intrusions et les menaces, ainsi qu'à limiter et récupérer rapidement les menaces.
-ms.openlocfilehash: 4cb1355e841ee4b416bf5471872421b4c05433c5
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 924ec3522b056b267f5e8af394f380aaff8392a2
+ms.sourcegitcommit: f25a667e4c7d11c43c87604d576f1e6d6155b14f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524028"
+ms.locfileid: "30536134"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Assurer la sécurité de vos utilisateurs Office 365 avec les fonctionnalités d'enquête et de réponse aux menaces Office 365
 
@@ -31,7 +31,7 @@ Savez-vous quels sont les utilisateurs de vos utilisateurs d'Office 365 qui sont
 [Office 365 Threat Investigation and Response](office-365-ti.md) est une suite de fonctionnalités incluses dans votre abonnement Office 365 E5. Les fonctionnalités d'enquête et de réponse aux menaces Office 365 ont aidé Microsoft IT à réduire le temps moyen de résolution des incidents de génie social de 80%, et à augmenter le débit de l'incident de 37% par mois par rapport aux 2 derniers trimestres. 
 
 > [!IMPORTANT]
-> Office 365 Advanced Threat Protection and Threat Intelligence fait désormais partie d'Office 365 Advanced Threat Protection Plan 2, avec des fonctionnalités de protection contre les menaces supplémentaires. Pour en savoir plus, consultez les [offres et tarifs office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) et la [Description du service Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Advanced Threat Protection and Threat Response and Response (anciennement appelé Office 365 Threat Intelligence) font désormais partie d'Office 365 Advanced Threat Protection Plan 2, avec des fonctionnalités de protection contre les menaces supplémentaires. Pour en savoir plus, consultez les [offres et tarifs office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) et la [Description du service Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 Nous avons récemment ajouté de nouvelles fonctionnalités pour vous aider à améliorer la détection et la récupération des menaces. Voici un aperçu rapide de la façon dont les fonctionnalités d'enquête et de réponse aux menaces mises à jour peuvent vous aider à améliorer votre efficacité.
   
@@ -60,7 +60,7 @@ Si vous ne disposez pas déjà de ces fonctionnalités d'enquête et de réponse
 Les fonctionnalités d'enquête et de réponse aux menaces Office 365 sont basées sur les données du graphique de sécurité intelligent de Microsoft. Le graphique obtient le signal de menace le plus récent de plus de 1 milliard appareils Windows, 450 milliards de connexions Azure mensuelles et de 400 milliards messages électroniques dans Office 365. Ce signal de menace inégal est ce qui donne la grande visibilité à un client client, ce qui est crucial pour les administrateurs et les analystes de sécurité afin de disposer d'une vue complète des menaces ayant un impact sur leur organisation. 
   
    
-## <a name="why-threat-intelligence"></a>Pourquoi les renseignements sur les menaces?
+## <a name="why-use-office-365-threat-investigation-and-response-capabilities"></a>Pourquoi utiliser les fonctionnalités d'enquête et de réponse aux menaces Office 365?
 
 Gartner estime que, dans 2017 seul sur $90B, il a été passé sur Cybersecurity. Le SID Deshpande, principal Research Analyst chez Gartner, est indiqué comme disant «le secteur passe à la détection et à la réponse... envoie un message clair indiquant que la prévention est futile, sauf si elle est liée à une fonctionnalité de détection et de réponse. La investigtion et la réponse aux menaces constituent un élément essentiel du portefeuille de services de chaque entreprise, et peuvent être utilisés en tant que service autonome ou en tant que partie intégrante d'Office 365 E5.
   

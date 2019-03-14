@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Cet article explique comment Office 365 réduit les attaques par hameçonnage qui utilisent des domaines d'expéditeurs falsifiés, c'est-à-dire des domaines falsifiés. Pour ce faire, il analyse les messages et bloque ceux qui ne peuvent pas être authentifiés à l'aide de méthodes d'authentification de messagerie standard, ni d'autres techniques de réputation de l'expéditeur. Cette modification a été implémentée afin de réduire le nombre d'attaques par hameçonnage auxquelles les organisations dans Office 365 sont exposées.
-ms.openlocfilehash: 422bac2ad5fd0c58928d79467721204b20583fd7
-ms.sourcegitcommit: 5d6be2b208dbe28d5d5da057c60cf97729799c1b
+ms.openlocfilehash: 377bc75e7538dacab1180045ddfdeb1a2ac32a65
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30465481"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492873"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protection anti-usurpation dans Office 365
 

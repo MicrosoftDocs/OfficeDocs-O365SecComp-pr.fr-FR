@@ -6,16 +6,16 @@ manager: laurawi
 ms.reviewer: alesibov
 ms.audience: Admin
 ms.topic: reference
-ms.date: 02/14/2019
+ms.date: 02/27/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 description: Office 365 Cloud App les stratégies d'accès de sécurité activent la surveillance en temps réel et le contrôle de l'accès aux applications Cloud en fonction de l'utilisateur, de l'emplacement, du périphérique et de l'application. Vous pouvez créer des stratégies d'accès pour n'importe quel appareil, y compris des appareils qui ne sont pas joints à un domaine, et qui ne sont pas gérés par Windows Intune en déployant des certificats clients sur des appareils gérés ou à l'aide de certificats existants, tels que des certificats MDM tiers. Par exemple, vous pouvez déployer des certificats clients sur des appareils gérés, puis bloquer l'accès à partir d'appareils sans certificat.
-ms.openlocfilehash: a8651cb51419c93998f2ce6e176fab7c1651b6ea
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 5e8b8fa293420bc9ff3616daf288b8e02a2eb768
+ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219774"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30312081"
 ---
 # <a name="access-policies-in-office-365-cloud-app-security"></a>Stratégies d’accès dans la sécurité des applications cloud Office 365
 

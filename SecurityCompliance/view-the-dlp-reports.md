@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec les rapports DLP dans Office 365, vous pouvez rapidement afficher le nombre de correspondances de stratégies DLP, de remplacements ou de faux positifs; voir si elles sont recherchées dans le temps; filtrer le rapport de différentes manières; et affichez des détails supplémentaires en sélectionnant un point sur une ligne sur le graphique.
-ms.openlocfilehash: 6f97a29b5a80eeff60b13ba4467d44e3ef87b028
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: bd2bc63fa3e2ea08f44ddb3923786010c59e829f
+ms.sourcegitcommit: 173936324ea015d788703440924ec8a9fb0db88b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454846"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30510221"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Affichage des rapports de protection contre la perte de données
 
@@ -71,6 +71,16 @@ Les rapports peuvent indiquer des informations et des recommandations où vous p
   
 ![Cliquer sur une icône Insights pour afficher les détails et les actions à effectuer](media/51782036-7299-4960-8175-75c2b1637159.png)
   
+## <a name="permissions-for-dlp-reports"></a>Autorisations pour les rapports DLP
+
+Pour afficher les rapports DLP dans le centre de sécurité & conformité, vous devez disposer des éléments suivants:
+
+- Rôle **lecteur de sécurité** dans le centre d'administration Exchange. Par défaut, ce rôle est affecté aux groupes de rôles gestion de l'organisation et lecteur de sécurité dans le centre d'administration Exchange.
+
+- Rôle de **gestion de conformité DLP en lecture seule** dans le centre de sécurité _AMP_ Compliance Center. Par défaut, ce rôle est affecté aux groupes de rôles Administrateur de conformité, gestion de l'organisation, administrateur de sécurité et lecteur de sécurité dans le centre de sécurité & Compliance Center.
+
+- Rôle destinataires en **Affichage seul** dans le centre d'administration Exchange. Par défaut, ce rôle est affecté aux groupes de rôles gestion de la conformité, gestion de l'organisation et gestion de l'organisation en affichage seul dans le centre d'administration Exchange.
+
 ## <a name="find-the-cmdlets-for-the-dlp-reports"></a>Rechercher les applets de commande pour les rapports DLP
 
 Pour utiliser la plupart des applets de commande pour &amp; le centre de sécurité conformité, vous devez:

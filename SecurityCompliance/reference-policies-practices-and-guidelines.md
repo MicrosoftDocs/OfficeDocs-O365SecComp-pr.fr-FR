@@ -1,7 +1,7 @@
 ---
 title: Référence  Stratégies, pratiques et conseils
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -12,15 +12,17 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
-description: Microsoft a développé diverses stratégies, procédures et adopté plusieurs meilleures pratiques du secteur pour aider à protéger nos utilisateurs contre les messages électroniques choquant, indésirables ou malveillants.
-ms.openlocfilehash: e552128a06ce942383e7c5410508df61331fb874
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.collection:
+- M365-security-compliance
+description: Microsoft a développé diverses stratégies, procédures et a adopté plusieurs meilleures pratiques du secteur afin de protéger les utilisateurs contre des courriers indésirables, indésirables ou malveillants.
+ms.openlocfilehash: a7f29ed77b373ee2b66831e074fda16fcda30508
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003083"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276364"
 ---
-# <a name="reference-policies-practices-and-guidelines"></a>Référence : Stratégies, pratiques et conseils
+# <a name="reference-policies-practices-and-guidelines"></a>Référence : Stratégies, pratiques et conseils
   
 Microsoft s'engage à vous fournir l'expérience utilisateur la plus fiable sur le web. Par conséquent, Microsoft a développé diverses stratégies, procédures et adopté plusieurs meilleures pratiques du secteur pour aider à protéger ses utilisateurs contre les messages abusifs, indésirables ou malveillants. Les expéditeurs qui tentent d'envoyer des messages à des utilisateurs d'Office 365 doivent s'assurer qu'ils ont pris entièrement connaissance des conseils de cet article et qu'ils les suivent afin de poursuivre ces efforts et éviter d'éventuels problèmes de remise.
   
@@ -74,7 +76,7 @@ En outre, les serveurs de messagerie qui se connectent à Office 365 doivent res
 
 Les expéditeurs, les fournisseurs de services Internet et autres fournisseurs de services doivent gérer activement la réputation de vos adresses IP sortantes.
   
-## <a name="office-365-limits"></a>Limites d'Office 365
+## <a name="office-365-limits"></a>Limites d’Office 365
 <a name="sectionSection4"> </a>
 
 Les expéditeurs doivent adhérer aux limites d'Office 365 répertoriées dans [Limites d'Exchange Online Protection](https://technet.microsoft.com/library/exchange-online-protection-limits.aspx).
@@ -86,14 +88,14 @@ Microsoft collabore activement avec des organismes et fournisseurs de services d
   
 - [Messaging Malware Mobile Anti-Abuse Working Group](https://www.m3aawg.org/)
     
-- [Alliance de la gestion de la confidentialité en ligne](https://www.otalliance.org/resources)
+- [Alliance d'approbation en ligne](https://www.otalliance.org/resources)
     
 - [Email Sender &amp; Provider Coalition](http://www.espcoalition.org/)
     
 ## <a name="abuse-and-spam-reporting"></a>Création de rapport de courrier indésirable et de mauvaise utilisation
 <a name="AbuseSpamReports"> </a>
 
-Pour signaler un e-mail illicite, choquant, indésirable ou malveillant, veuillez [rapport indésirable escroqueries par hameçonnage et de messagerie dans Outlook sur le web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). Envoyer ces types de communications constitue une violation de la stratégie de Microsoft et l’action appropriée sera appliquée sur les rapports confirmées.
+Pour signaler un courrier électronique illégal, abusif, indésirable ou malveillant, signalez le courrier indésirable [et les escroqueries par hameçonnage dans Outlook sur le Web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). L’envoi de ces types de communications est une violation de la stratégie de Microsoft et des mesures appropriées seront prises sur des rapports confirmés.
   
 ## <a name="law-enforcement"></a>Application des lois
 <a name="sectionSection7"> </a>

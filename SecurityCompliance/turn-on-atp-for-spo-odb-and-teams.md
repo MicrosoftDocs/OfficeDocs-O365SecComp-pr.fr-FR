@@ -12,14 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 description: Découvrez comment activer la protection avancée contre les menaces pour SharePoint, OneDrive et Teams, y compris comment définir des alertes pour les fichiers détectés.
-ms.openlocfilehash: 88eae37b0da3df75807436d66a5c80e0c40f82d8
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 30eb28bfc5156664656ca1c200f9e999661b3b0c
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220394"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30242146"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Activer la protection avancée contre les menaces Office 365 pour SharePoint, OneDrive et Microsoft teams
 
@@ -73,9 +74,9 @@ Pour recevoir une notification lorsqu'un fichier dans SharePoint Online, OneDriv
     
 5. Dans la section **Envoyer cette alerte quand...** , procédez comme suit: 
     
-    a. dans la liste **activités** , sélectionnez **programmes malveillants détectés dans le fichier**.
+    a. Dans la liste **activités** , sélectionnez **programmes malveillants détectés dans le fichier**.
     
-    b. laissez le champ **utilisateurs** vide. 
+    b. Laissez le champ **utilisateurs** vide. 
     
 6. Dans la section **Envoyer cette alerte à...** , sélectionnez un ou plusieurs administrateurs globaux, administrateurs de sécurité ou lecteurs de sécurité qui doivent recevoir une notification lorsqu'un fichier malveillant est détecté. 
     

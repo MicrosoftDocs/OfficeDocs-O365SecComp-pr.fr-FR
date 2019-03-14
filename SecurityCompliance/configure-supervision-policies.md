@@ -17,19 +17,20 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: ConFigurez des stratégies de vérification de surveillance pour capturer les communications des employés à des fins de révision.
-ms.openlocfilehash: bb84520fed1eb5015d46c2c35931f786d29855e7
-ms.sourcegitcommit: 13c601ea11ce6a3c71036fdafda059061c6998d0
+ms.openlocfilehash: 2e321989934402b833d6190f65d696f4eb7919ca
+ms.sourcegitcommit: 547a05da067a8f66fdaccf1cc399afcf863f5a87
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30313170"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30474155"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurer des stratégies de surveillance pour votre organisation
 
 Utilisez des stratégies de surveillance pour capturer les communications des employés à des fins d'examen par des relecteurs internes ou externes. Pour plus d'informations sur la façon dont les stratégies de surveillance peuvent vous aider à surveiller les communications au sein de votre organisation, consultez la rubrique [surveillance des stratégies dans Office 365](supervision-policies.md).
 
 > [!NOTE]
-> Les utilisateurs surveillés par des stratégies de surveillance doivent disposer d'une licence Office 365 entreprise E3 avec le complément de conformité avancé ou être inclus dans un abonnement Office 365 entreprise E5. Si vous ne disposez pas d'un plan entreprise E5 existant et que vous souhaitez essayer de contrôler, vous pouvez vous [inscrire pour obtenir une version d'évaluation d'Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+> Les utilisateurs surveillés par des stratégies de surveillance doivent disposer d'une licence de conformité Microsoft 365 E5, d'une licence Office 365 entreprise E3 avec le complément de conformité avancé ou être inclus dans un abonnement Office 365 entreprise E5.
+Si vous ne disposez pas d'un plan entreprise E5 existant et que vous souhaitez essayer de contrôler, vous pouvez vous [inscrire pour obtenir une version d'évaluation d'Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
 Procédez comme suit pour configurer et utiliser la surveillance dans votre organisation Office 365:
   
@@ -79,7 +80,7 @@ Chez Contoso Financial International, un échantillonnage des communications e
 |**Configuration de ce groupe de distribution**|**Adresse de groupe (alias)**|**Description**|
 |:-----|:-----|:-----|
 |Tous les courtiers des États-Unis | US_Brokers@Contoso.com | Ce groupe contient les adresses de messagerie de tous les courtiers basés aux États-Unis qui travaillent pour Contoso. |
-| Tous les responsables de la mise en conformité des États-Unis | US_Compliance@Contoso.com  | Ce groupe inclut des adresses de messagerie pour tous les responsables de la mise en conformité américains qui travaillent pour contoso. Étant donné que ce groupe est un sous-ensemble de tous les courtiers basés aux États-Unis, vous pouvez utiliser cet alias pour exempter les responsables de la conformité d'une stratégie de surveillance. |
+| Tous les responsables de la mise en conformité des États-Unis | US_Compliance@Contoso.com  | Ce groupe contient les adresses de messagerie de tous les responsables de la mise en conformité basés aux États-Unis qui travaillent pour Contoso. Étant donné que ce groupe est un sous-ensemble de tous les courtiers basés aux États-Unis, vous pouvez utiliser cet alias pour exempter les responsables de la conformité d'une stratégie de surveillance. |
   
 <a name="MakeAvailable"> </a>
 
@@ -214,7 +215,7 @@ Pour configurer la révision pour le bureau Outlook ou pour Outlook pour le Web,
 
 Ensuite, les relecteurs doivent exécuter des commandes PowerShell Exchange Online pour pouvoir connecter Outlook à la boîte aux lettres de supervision.
   
-1. Connectez-vous à Exchange Online PowerShell. [Comment procéder?](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
+1. Connectez-vous à Exchange Online PowerShell. [Comment procéder ?](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
 
 2. Exécutez les commandes suivantes, où *SupervisoryReview {GUID} @domain. onmicrosoft.com* est l'adresse que vous avez copiée à l'étape 1 ci-dessus, et *utilisateur* est le nom du réviseur qui se connectera à la boîte aux lettres de supervision à l'étape 3.
 
