@@ -1,9 +1,26 @@
 ---
-title: "activer ou désactiver les conseils de sécurité dans Office 365" ms. Author: krowley Author: kccross Manager: laurawi ms. Date: 12/05/2018 ms. audience: admin ms. topic: article ms. service: o365-administration localization_priority: normal Search. appverid: 
-- MET150 ms. AssetID: f09668bd-fe1a-4C01-89e3-e88c370e66c7 ms. collection:
-    - M365-Security-Description de la conformité: "indique à Office 365 et aux administrateurs EOP comment activer et désactiver les conseils de sécurité dans les messages électroniques."
+title: Activer ou désactiver les conseils de sécurité dans Office 365
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 12/05/2018
+ms.audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
+ms.collection:
+- M365-security-compliance
+description: Indique à Office 365 et aux administrateurs EOP comment activer et désactiver les conseils de sécurité dans les messages électroniques.
+ms.openlocfilehash: 020ee15676cc2d4dd6156db9e4d50558ff7793f0
+ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573528"
 ---
-
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>Activer ou désactiver les conseils de sécurité dans Office 365
 
 Exchange Online Protection (EOP) ajoute ou horodate un Conseil de sécurité pour les messages électroniques qu'il remet. Ces conseils de sécurité fournissent aux destinataires un moyen rapide de déterminer si un message provient d'un expéditeur sécurisé et vérifié, si le message a été marqué comme courrier indésirable par Office 365, si le message contient un message suspect, tel qu'une escroquerie de type hameçonnage, ou si des images externes ont été bloquée. Les administrateurs d'Office 365 et d'EOP peuvent modifier un paramètre de stratégie de courrier indésirable pour activer ou désactiver l'affichage des conseils de sécurité dans les messages électroniques dans Outlook et d'autres clients de messagerie de bureau. 
@@ -45,7 +62,7 @@ Dans cet article :
     
 9. Pour activer les conseils de sécurité, sous **conseils de sécurité**, activez la case à cocher **activé** . Pour désactiver les conseils de sécurité, désactivez la case à cocher **activé** . 
     
-10. Sélectionnez **Enregistrer**.
+10. Cliquez sur **Enregistrer**.
     
 ## <a name="to-enable-or-disable-safety-tips-by-using-powershell"></a>Pour activer ou désactiver les conseils de sécurité à l'aide de PowerShell
 <a name="pshellsafetytip"> </a>

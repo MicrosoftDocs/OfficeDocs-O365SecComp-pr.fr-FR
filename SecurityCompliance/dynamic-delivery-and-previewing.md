@@ -3,7 +3,7 @@ title: Remise et aperçu dynamiques avec les pièces jointes sécurisées ATP Of
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/08/2019
+ms.date: 03/12/2019
 ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,16 +15,18 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: Lorsque vous configurez vos stratégies de pièces jointes approuvées ATP, vous choisissez la remise dynamique pour éviter les retards de message et permettre aux utilisateurs de prévisualiser les pièces jointes en cours d'analyse.
-ms.openlocfilehash: 1fb221d28a4089db8a4278903107c610d6825f5e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d27fa16f8d1d117aa56a2080eb020ab3638ca6fe
+ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218394"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573508"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Remise et aperçu dynamiques avec les pièces jointes sécurisées ATP Office 365
 
-**Résumé**: la remise dynamique est une option qui peut être sélectionnée pour [les pièces jointes fiables ATP](atp-safe-attachments.md). Lisez cet article pour en savoir plus sur la remise dynamique et les fonctionnalités d'aperçu des pièces jointes dans [les pièces jointEs approuvéEs ATP dans Office 365](atp-safe-attachments.md).
+## <a name="overview"></a>Vue d’ensemble
+
+La remise dynamique est une option qui peut être sélectionnée pour [les pièces jointEs sûres ATP](atp-safe-attachments.md). Lisez cet article pour en savoir plus sur la remise dynamique et les fonctionnalités d'aperçu des pièces jointes dans [les pièces jointEs approuvéEs ATP dans Office 365](atp-safe-attachments.md).
 
 Lorsque des [stratégies de pièces jointEs approuvéEs ATP sont configurées](set-up-atp-safe-attachments-policies.md) pour votre organisation, il existe plusieurs options pour la gestion des pièces jointes. Ces éléments incluent le **blocage**, le **remplacement**et la **remise dynamique**. En fonction de la configuration des stratégies de pièces jointes approuvées ATP, les destinataires peuvent observer un retard mineur lors de la remise du courrier électronique pendant l'analyse de leurs pièces jointes. Pour éviter les retards de message, choisissez **remise dynamique**.
   
@@ -51,7 +53,7 @@ Supposons qu'une organisation utilise une remise dynamique pour sa [stratégie d
   
 - Si un destinataire est couvert par une stratégie de pièces jointes approuvées ATP à l'aide de l'option de remise dynamique, le destinataire voit alors l'espace réservé, avec la possibilité de prévisualiser les fichiers compatibles.
     
-- Si un destinataire n'est pas couvert par une stratégie de pièces jointes approuvées pour la protection avancée contre les menaces, les messages électroniques et les pièces jointes sont transmis, sans analyse des pièces jointes fiables ATP ou espaces réservés aux pièces jointes.
+- Si un destinataire n'est pas couvert par une stratégie de pièces jointes approuvées pour la protection avancée contre les menaces, le courrier électronique et la pièce jointe sont transmis, sans aucune analyse des pièces jointes et espaces réservés de pièces jointes ATP.
     
 ## <a name="whats-required-for-dynamic-delivery-to-work"></a>Qu'est-ce qui est requis pour que la remise dynamique fonctionne?
 
@@ -59,11 +61,11 @@ Supposons qu'une organisation utilise une remise dynamique pour sa [stratégie d
     
 - Les stratégies doivent être définies pour les pièces jointes de niveau de sécurité ATP à l'aide de l'option de remise dynamique (voir [configurer des stratégies de pièces jointes de sécurité ATP dans Office 365](set-up-atp-safe-attachments-policies.md))
     
-- L'adresse de messagerie de votre organisation doit être hébergée dans Office 365
+- Les messages électroniques de votre organisation doivent être hébergés dans Office 365. Bien que la [protection avancée contre les menaces Office 365 puisse être utilisée avec n'importe quel agent de transfert de courrier SMTP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#requirements-for-office-365-advanced-threat-protection-atp) (par exemple, Exchange Server), l'option de remise dynamique des pièces jointes approuvées à l'aide de la protection avancée requiert que le courrier électronique de votre organisation soit hébergé dans Office 365. Si votre courrier électronique n'est pas hébergé dans Office 365, choisissez une autre [option de stratégie de pièces jointEs approuvéEs ATP](set-up-atp-safe-attachments-policies.md#step-3-learn-about-atp-safe-attachments-policy-options), telle que **bloquer**.
     
-## <a name="are-there-scenarios-for-which-dynamic-delivery-is-not-available"></a>Existe-t-il des scénarios pour lesquels la remise dynamique n'est pas disponible?
+## <a name="additional-considerations"></a>Considérations supplémentaires
 
-Il existe certains scénarios dans lesquels la remise dynamique n'est pas prise en charge. Ces éléments sont les suivants:
+Il existe certains scénarios dans lesquels la remise dynamique n'est pas prise en charge. Elles incluent notamment les éléments suivants :
   
 - Messages électroniques figurant dans des dossiers publics
     
@@ -79,3 +81,4 @@ Il existe certains scénarios dans lesquels la remise dynamique n'est pas prise 
 
 - Messages chiffrés à l'aide de [S/MIME (Secure/Multipurpose Internet Mail Extensions)](s-mime-for-message-signing-and-encryption.md))
 
+Dans les cas où la remise dynamique n'est pas prise en charge, les pièces jointes fiables ATP n'analysent pas les messages électroniques. Toutefois, en fonction de la configuration de vos [stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md) , les URL dans les messages électroniques (et les fichiers Office) sont vérifiées.

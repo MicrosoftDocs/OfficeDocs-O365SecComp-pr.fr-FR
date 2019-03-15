@@ -1,13 +1,13 @@
 ---
-title: Suppression d’un utilisateur, d’un domaine ou d’une adresse IP d’une liste rouge après l’envoi de courrier indésirable
+title: Suppression d'un utilisateur du portail utilisateurs restreints après l'envoi du courrier indésirable
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 11/01/2018
+ms.date: 03/12/2019
 ms.audience: ITPro
 ms.topic: article
 f1_keywords:
-- ms.exch.eac.ActionCenter
+- ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
@@ -16,30 +16,28 @@ search.appverid:
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
-description: 'Si un utilisateur envoie en continu des messages électroniques classés comme courriers indésirables depuis Office 365, ses envois seront bloqués. '
-ms.openlocfilehash: 870e5eabca9e799dfca1e99846a5bfe845f65df4
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+description: Si un utilisateur envoie continuellement des courriers électroniques à partir d'Office 365 classés comme courrier indésirable, il ne pourra pas envoyer d'autres messages.
+ms.openlocfilehash: c775887ecfa136bd638d0b76050c7882a6219ae4
+ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275934"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573518"
 ---
-# <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>Suppression d’un utilisateur, d’un domaine ou d’une adresse IP d’une liste rouge après l’envoi de courrier indésirable
+# <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Suppression d'un utilisateur du portail utilisateurs restreints après l'envoi du courrier indésirable
 
-Si un utilisateur envoie continuellement des messages électroniques à partir d'Office 365 classé comme courrier indésirable, ils ne pourront plus envoyer d'autres messages. L'utilisateur est mentionné dans le service en tant qu'expéditeur sortant incorrect et reçoit une notification d'échec de remise qui indique:
+Si un utilisateur envoie continuellement des courriers électroniques à partir d'Office 365 classés comme courrier indésirable, il ne sera pas autorisé à envoyer d'autres messages sortants. L'utilisateur est mentionné dans le service en tant qu'expéditeur sortant incorrect et reçoit une notification d'échec de remise qui indique:
 
-- Votre message n'a pas pu être remis car vous n'avez pas été reconnu comme un expéditeur valide. La raison la plus fréquente de ce message est que votre adresse de courrier est suspecte d'envoyer du courrier indésirable et qu'elle n'est plus autorisée à envoyer des messages en dehors de votre organisation. Contactez votre administrateur de courrier électronique pour obtenir de l'aide.  Le serveur distant a renvoyé' 550 5.1.8 accès refusé, expéditeur sortant incorrect "
+- Votre message n'a pas pu être remis car vous n'avez pas été reconnu comme un expéditeur valide. La raison la plus fréquente de ce message est que votre adresse de courrier est suspecte d'envoyer du courrier indésirable et qu'elle n'est plus autorisée à envoyer des messages en dehors de votre organisation. Contactez votre administrateur de courrier électronique pour obtenir de l'aide. Le serveur distant a renvoyé' 550 5.1.8 accès refusé, expéditeur sortant incorrect "
 
-Les administrateurs de client reçoivent également une alerte indiquant que l'utilisateur n'a pas été autorisé à envoyer des messages sortants supplémentaires.
-
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 <a name="sectionSection0"> </a>
 
-Durée d’exécution estimée : 5 minutes
+Durée d'exécution estimée : 5 minutes
   
-Des autorisations doivent vous être attribuées avant de pouvoir effectuer cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez la rubrique «entrée anti-courrier indésirable dans la rubrique [autorisations des fonctionnalités dans Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) .
+Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez la rubrique «entrée anti-courrier indésirable dans la rubrique [autorisations des fonctionnalités dans Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) .
 
-La procédure suivante peut également être effectuée via PowerShell à distance. Utilisez la cmdlet Get-BlockedSenderAddress pour obtenir la liste des utilisateurs avec accès restreint et Remove-BlockedSenderAddress pour supprimer la restriction. Pour savoir comment utiliser Windows PowerShell pour se connecter à Exchange Online, consultez la rubrique [connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+La procédure suivante peut également être exécutée par le biais du service PowerShell à distance. Utilisez la cmdlet Get-BlockedSenderAddress pour obtenir la liste des utilisateurs avec accès restreint et Remove-BlockedSenderAddress pour supprimer la restriction. Pour apprendre à utiliser Windows PowerShell afin de vous connecter à Exchange Online, consultez la rubrique [Connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
 
 ## <a name="remove-restrictions-for-a-blocked-office-365-email-account"></a>Supprimer les restrictions pour un compte de messagerie Office 365 bloqué
 
@@ -48,31 +46,29 @@ Vous effectuez cette tâche dans le centre de sécurité & conformité Office 36
 1. À l'aide d'un compte professionnel ou scolaire disposant de privilèges d'administrateur général Office 365, connectez-vous au centre de sécurité et conformité Office 365 et, dans la liste de gauche, développez **gestion des menaces**, choisissez **examiner**, puis choisissez **restreint. Les utilisateurs**.
     
     > [!TIP]
-    > Pour accéder directement à la page **utilisateurs restreints** (anciennement appelé centre de maintenance) dans le &amp; Centre de sécurité conformité, utilisez l'URL suivante: >[https://protection.office.com/?hash=/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
+    > Pour accéder directement à la page **utilisateurs restreints** (anciennement appelé centre de maintenance) dans le &amp; Centre de sécurité conformité, utilisez l'URL suivante: >[https://protection.office.com/#/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
 
 2. Cette page contient la liste des utilisateurs qui ont été bloqués pour l'envoi de messages à l'extérieur de votre organisation.  Recherchez l'utilisateur pour lequel vous souhaitez supprimer les restrictions, puis cliquez **** sur débloquer.
 
-3. Cliquez sur **Oui** pour confirmer la modification. 
-    
-> [!NOTE]
-> Le nombre de fois qu'un compte peut être débloqué par l'administrateur client est limité. Si la limite pour un utilisateur a été dépassée, un message d'erreur s'affiche. Vous devrez ensuite contacter le support technique pour débloquer l'utilisateur.<br/><br/> La déblocage de l'utilisateur peut prendre jusqu'à 1 heure.
-  
-## <a name="third-party-block-lists"></a>Listes rouges tierces
+3. Un passage vers l'extérieur indiquera les détails du compte dont l'envoi est restreint. Vous devez passer en revue les recommandations pour vous assurer que vous prenez les mesures appropriées au cas où le compte est réellement compromis. Cliquez sur **suivant** lorsque vous avez fini.
 
-Exchange Online Protection utilise également des listes rouges tierces pour vous aider à prendre des décisions en matière de filtrage du courrier indésirable. Les utilisateurs, les sites Web, les domaines et les adresses IP peuvent être ajoutés aux listes bloquées uniquement pour apparaître dans un message de courrier indésirable. En tant qu'administrateur Office 365, vous devez essayer d'obtenir ces objets supprimés des fournisseurs de liste tiers s'ils vous appartiennent.
+4. L'écran suivant contient des recommandations pour vous aider à éviter toute compromission ultérieure. L'activation de l'authentification multifacteur (MFA) et la modification des mots de passe constituent une excellente défense. Cliquez sur déBloquer l' **utilisateur** lorsque vous avez fini.
 
-> [!NOTE]
-> Si une personne extérieure à Office 365 ne peut pas envoyer de messages à votre compte Office 365, il se peut que son compte figure dans la liste des expéditeurs bloqués externes. Les utilisateurs externes à Office 365 peuvent essayer de se supprimer eux-mêmes à l'aide du portail de retrait [libre-service](https://docs.microsoft.com/en-us/office365/SecurityCompliance/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis). 
+5. Cliquez sur **Oui** pour confirmer la modification.
 
-## <a name="for-more-information"></a>Pour plus d’informations
+    > [!NOTE]
+    > La suppression des restrictions peut prendre jusqu'à 30 minutes. 
+
+## <a name="making-sure-admins-are-alerted-when-this-happens"></a>S'assurer que les administrateurs sont alertés lorsque cela se produit
+
+Les administrateurs de client reçoivent également une alerte indiquant que l'utilisateur n'a pas été autorisé à envoyer des messages sortants supplémentaires. Il s'agit d'une alerte par défaut fournie pour tous les clients et est indiquée dans la page stratégies d'alerte SCC, intitulée «utilisateur restreint de l'envoi de courrier électronique». Pour plus d'informations sur l'alerte, accédez à [stratégies d'alerte dans le centre de sécurité _AMP_ Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies) .
+
+## <a name="for-more-information"></a>Pour plus d'informations
 
 [Réponse à un compte de messagerie compromis](responding-to-a-compromised-email-account.md)
 
-[Configurer la stratégie anti-courrier indésirable sortant](configure-the-outbound-spam-policy.md)
-  
+[Présentation de l'alerte utilisateur restreinte de l'envoi de messages électroniques](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies)
+
 [Pool de remise à risque élevé pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md)
 
 [Autorisations dans le centre de sécurité & de sécurité Office 365](permissions-in-the-security-and-compliance-center.md)
-
-  
-

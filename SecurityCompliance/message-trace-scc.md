@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Les administrateurs peuvent utiliser le suivi des messages dans le centre de sécurité & Compliance Center pour déterminer ce qui s'est passé aux messages.
-ms.openlocfilehash: 73d4aa6f9a12b8e1bf955dad09e4c4ca7290dae8
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: ebfc8d5e19bbc45c32ad65451f3f850662f358b4
+ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524088"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573548"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Suivi des messages dans le centre de sécurité & conformité
 
@@ -56,8 +56,8 @@ Les valeurs par défaut sont **tous les expéditeurs** et **tous les destinatair
 
 - **Pour les personnes**suivantes: cliquez dans ce champ pour sélectionner un ou plusieurs destinataires dans votre organisation.
 
-> [!NOTE]Vous pouvez également taper les adresses de messagerie des expéditeurs et des destinataires externes. Les caractères génériques sont pris`*@contoso.com` en `scot?@contoso.com`charge (ou), mais vous ne pouvez pas utiliser plusieurs entrées génériques dans le même champ simultanément.
-> [!NOTE]Vous pouvez coller plusieurs expéditeurs ou listes de destinataires séparés par`;`des points-virgules (). Les espaces`\s`(), les retours chariot (`\r`) ou`\n`les lignes () sont autorisés.
+> [!NOTE]
+> Vous pouvez également taper les adresses de messagerie des expéditeurs et des destinataires externes. Les caractères génériques sont pris`*@contoso.com` en `scot?@contoso.com`charge (ou), mais vous ne pouvez pas utiliser plusieurs entrées génériques dans le même champ simultanément.<br/>Vous pouvez coller plusieurs expéditeurs ou listes de destinataires séparés par`;`des points-virgules (). Les espaces`\s`(), les retours chariot (`\r`) ou`\n`les lignes () sont autorisés.
 
 ### <a name="time-range"></a>Plage horaire
 
@@ -339,7 +339,7 @@ Une valeur **custom_data** qui commence par `S:SFA` est l'agent de filtrage du c
 |`DI=SJ`|Le message a été mis dans le dossier Courrier indésirable du destinataire.|
 |`DI=SN`|Le message a été routé via le pool de remises à haut risque. Pour plus d'informations, consultez la rubrique [pool de remise à haut risque pour les messages sortants](https://technet.microsoft.com/library/jj200746.aspx).|
 |`DI=SO`|Le message a été routé via le pool de remises normal pour les messages sortants.|
-|«SFS = [a]|SFS = [b] '|Cela indique que des règles anti-spam ont été associées.|
+|`SFS=[a]|SFS=[b]`|Cela indique que des règles anti-spam ont été associées.|
 |`IPV=CAL`|Le message n'a pas été bloqué par les filtres anti-spam car l'adresse IP se trouve dans une liste d'adresses IP autorisées du filtrage des connexions.|
 |`H=<EHLOstring>`|La chaîne HELO ou EHLO du serveur de messagerie de connexion.|
 |`PTR=<ReverseDNS>`|Enregistrement PTR de l'adresse IP d'envoi, également appelé adresse DNS inverse.|
@@ -354,7 +354,7 @@ Une valeur **custom_data** qui commence par `S:AMA` provient de l'agent de filtr
 
 |**Valeur**|**Description**|
 |:-----|:-----|
-|'AMA = SUM|v=1|` or `AMA=EV|v = 1 '|Un programme malveillant a été détecté dans le message. `SUM`indique que le programme malveillant a pu être détecté par n'importe quel nombre de moteurs. `EV`indique que le programme malveillant a été détecté par un moteur spécifique. Lorsqu'un programme malveillant est détecté par un moteur, les actions suivantes se produisent.|
+|`AMA=SUM|v=1|` ou `AMA=EV|v=1`|Un programme malveillant a été détecté dans le message. `SUM`indique que le programme malveillant a pu être détecté par n'importe quel nombre de moteurs. `EV`indique que le programme malveillant a été détecté par un moteur spécifique. Lorsqu'un programme malveillant est détecté par un moteur, les actions suivantes se produisent.|
 |`Action=r`|Le message a été remplacé.|
 |`Action=p`|Le message a été ignoré.|
 |`Action=d`|Le message a été différé.|
@@ -377,7 +377,7 @@ Une valeur **custom_data** qui commence par`S:TRA` provient de l'agent de règle
 
 |**Valeur**|**Description**|
 |:-----|:-----|
-|'ETR|ruleId =<guid>`|ID de la règle qui s'applique.|
+|`ETR|ruleId=<guid>`|ID de la règle qui s'applique.|
 |`St=<datetime>`|Date et heure UTC de la correspondance de la règle.|
 |`Action=<ActionDefinition>`|Action appliquée. Pour obtenir la liste des actions disponibles, consultez la rubrique [mail Flow Rule actions in Exchange Online](https://technet.microsoft.com/library/jj919237.aspx).|
 |`Mode=<Mode>`|Mode de la règle. UserMailbox <br/>• **Appliquer**: toutes les actions de la règle seront appliquées. <br/>• **Test avec conseils de stratégie:**: toutes les actions de Conseil de stratégie seront envoyées, mais les autres actions d'application ne seront pas traitées. <br/>• **Test sans conseils de stratégie**: les actions seront consignées dans un fichier journal, mais les expéditeurs ne recevront aucune notification et les actions d'application ne seront pas effectuées.|
