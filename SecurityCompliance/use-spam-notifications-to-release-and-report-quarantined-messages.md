@@ -3,7 +3,7 @@ title: Utilisation des notifications de courrier indésirable de l’utilisateur
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 5/12/2018
+ms.date: 03/14/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
 description: Si votre administrateur Active les notifications pour les utilisateurs, vous recevrez un message de notification répertoriant les messages envoyés à votre boîte aux lettres identifiés comme courriers indésirables, en masse ou par hameçonnage. Vous pouvez publier ou signaler des messages après leur notification.
-ms.openlocfilehash: 7f68b70298fca7d8ed5f5e5b8dc9c727c3a6a6c1
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: de67987b0028102bdf61889ce54ca4215182e279
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492723"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30638971"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>Utilisation des notifications de courrier indésirable de l’utilisateur pour le déblocage et le signalement des messages de courrier indésirable mis en quarantaine dans Office 365
 
@@ -40,12 +40,20 @@ Le message que vous recevez inclut le nombre de messages indésirables mis en qu
     
 - **Taille** Taille du message, en kilo-octets (Ko). 
     
-Actuellement, il existe deux actions que vous pouvez effectuer avec un message en quarantaine:
-  
-- **Publier dans la boîte de réception** Choisissez cette adresse pour envoyer le message vers votre boîte de réception, où vous pouvez l'afficher. 
-    
-- **Signaler comme légitime** Choisissez cette adresse pour envoyer une copie du message à Microsoft pour analyse. L'équipe du courrier indésirable évalue et analyse le message, puis, selon les résultats de l'analyse, adapte les règles de filtre de courrier indésirable pour autoriser le message. 
-    
+Voici les actions que vous pouvez effectuer avec un message en quarantaine:
+
+- **Affichez un aperçu** du message si vous souhaitez afficher un aperçu du contenu ou de l'en-tête avant de prendre une mesure.
+
+- **Téléchargez** le message si vous souhaitez consulter le message et les pièces jointes (le cas échéant) sur votre appareil avant de prendre une mesure.
+
+- **Release** si le message n'est pas un courrier indésirable et que vous souhaitez qu'Office 365 envoie le message à votre boîte aux lettres.
+
+- **Release _AMP_ autoriser l'expéditeur** si le message n'est pas un courrier indésirable et que vous voulez qu'Office 365 ajoute l'expéditeur à votre liste des expéditeurs et destinataires approuvés pour les futurs courriers électroniques. Gardez à l'esprit que votre administrateur peut avoir d'autres configurations autoriser/bloquer des organisations qui remplacent votre liste d'expéditeurs autorisés.
+
+- **Release _AMP_ Report**, si le message n'est pas indésirable et que vous voulez envoyer le message à votre boîte aux lettres et le signaler à Microsoft pour analyse.
+
+- **Bloquer** si vous souhaitez qu'Office 365 ajoute l'expéditeur à votre liste des expéditeurs bloqués.
+
 Prenez en considération ce qui suit :
   
 - Les messages mis en quarantaine, car ils correspondent à une règle de flux de messagerie, ne sont pas inclus dans les messages mis en quarantaine par l'utilisateur. Seuls les messages mis en quarantaine car identifiés comme courrier indésirable sont répertoriés.

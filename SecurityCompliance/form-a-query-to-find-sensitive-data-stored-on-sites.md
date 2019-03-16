@@ -1,7 +1,7 @@
 ---
 title: Créer une requête pour trouver des données sensibles stockées sur des sites
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec la protection contre la perte de données (DLP) dans SharePoint Online, vous pouvez découvrir des documents qui contiennent des données sensibles sur l'ensemble de votre client. Après avoir découvert les documents, vous pouvez travailler avec leurs propriétaires pour protéger les données. Cette rubrique peut vous aider à créer une requête pour rechercher des données sensibles.
-ms.openlocfilehash: 8ea9622242775e7d411280707a61ba10aa02f4f2
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 91ef057170ef10614d3888e128769129e4c33fb9
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455066"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639131"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Créer une requête pour trouver des données sensibles stockées sur des sites
 
@@ -64,9 +64,9 @@ Les exemples suivants utilisent différents types, propriétés et opérateurs s
 |**Query**|**Explication**|
 |:-----|:-----|
 | `SensitiveType:"International Banking Account Number (IBAN)"` <br/> |Le nom peut sembler étrange, car il est tellement long, mais il s'agit du nom correct pour ce type sensible. Veillez à utiliser des noms exacts à partir de l' [inventaire des types d'informations sensibles](https://go.microsoft.com/fwlink/?LinkID=509999). Vous pouvez également utiliser le nom d'un [type d'informations sensibles personnalisé](create-a-custom-sensitive-information-type.md) que vous avez créé pour votre organisation.  <br/> |
-| 'SensitiveType: "numéro de carte de crédit|1.. 4294967295|1.. 100 "' <br/> |Renvoie les documents avec au moins une correspondance au type sensible «numéro de carte de crédit». Les valeurs de chaque plage sont les valeurs minimales et maximales respectives. Un moyen plus simple d'écrire cette requête est `SensitiveType:"Credit Card Number"`, mais où se trouve le plaisir?  <br/> |
-| 'SensitiveType: "numéro de carte de crédit| 5.. 25 "et LastSensitiveContentScan:" 8/11/2018.. 8/13/2018 "' <br/> |Cette fonction renvoie des documents avec 5-25 numéros de carte de crédit qui ont été analysés le 11 août, 2018 et 13 août 2018.  <br/> |
-| 'SensitiveType: "numéro de carte de crédit| 5.. 25 "et LastSensitiveContentScan:" 8/11/2018.. 8/13/2018 "NOT FileExtension: XLSX' <br/> |Cette fonction renvoie des documents avec 5-25 numéros de carte de crédit qui ont été analysés le 11 août, 2018 et 13 août 2018. Les fichiers avec une extension XLSX ne sont pas inclus dans les résultats de la requête.  `FileExtension`est l'une des nombreuses propriétés que vous pouvez inclure dans une requête. Pour plus d'informations, voir [utilisation des propriétés de recherche et des opérateurs avec eDiscovery](https://go.microsoft.com/fwlink/?LinkId=510093).  <br/> |
+| `SensitiveType:"Credit Card Number|1..4294967295|1..100"` <br/> |Renvoie les documents avec au moins une correspondance au type sensible «numéro de carte de crédit». Les valeurs de chaque plage sont les valeurs minimales et maximales respectives. Un moyen plus simple d'écrire cette requête est `SensitiveType:"Credit Card Number"`, mais où se trouve le plaisir?  <br/> |
+| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018"` <br/> |Cette fonction renvoie des documents avec 5-25 numéros de carte de crédit qui ont été analysés le 11 août, 2018 et 13 août 2018.  <br/> |
+| `SensitiveType:"Credit Card Number| 5..25" AND LastSensitiveContentScan:"8/11/2018..8/13/2018" NOT FileExtension:XLSX` <br/> |Cette fonction renvoie des documents avec 5-25 numéros de carte de crédit qui ont été analysés le 11 août, 2018 et 13 août 2018. Les fichiers avec une extension XLSX ne sont pas inclus dans les résultats de la requête.  `FileExtension`est l'une des nombreuses propriétés que vous pouvez inclure dans une requête. Pour plus d'informations, voir [utilisation des propriétés de recherche et des opérateurs avec eDiscovery](https://go.microsoft.com/fwlink/?LinkId=510093).  <br/> |
 | `SensitiveType:"Credit Card Number" OR SensitiveType:"U.S. Social Security Number (SSN)"` <br/> |Cela renvoie les documents contenant un numéro de carte de crédit ou un numéro de sécurité sociale.  <br/> |
    
 ## <a name="examples-of-queries-to-avoid"></a>Exemples
@@ -75,15 +75,15 @@ Toutes les requêtes ne sont pas égales. Le tableau suivant donne des exemples 
   
 |**Requête non prise en charge**|**Raison**|
 |:-----|:-----|
-| 'SensitiveType: "numéro de carte de crédit|.."` <br/> |Vous devez ajouter au moins un nombre.  <br/> |
+| `SensitiveType:"Credit Card Number|.."` <br/> |Vous devez ajouter au moins un nombre.  <br/> |
 | `SensitiveType:"NotARule"` <br/> |«NotARule» n'est pas un nom de type sensible valide. Seuls les noms des [types d'informations sensibles stockent](https://go.microsoft.com/fwlink/?LinkID=509999) le travail dans les requêtes DLP.  <br/> |
-| 'SensitiveType: "numéro de carte de crédit|0 "' <br/> |Zéro n'est pas valide comme valeur minimale ou valeur maximale dans une plage.  <br/> |
+| `SensitiveType:"Credit Card Number|0"` <br/> |Zéro n'est pas valide comme valeur minimale ou valeur maximale dans une plage.  <br/> |
 | `SensitiveType:"Credit Card Number"` <br/> |Il peut être difficile de voir, mais il y a un espace supplémentaire entre «crédit» et «carte» qui rend la requête incorrecte. Utilisez des noms de types sensibles exactes à partir de l' [inventaire des types d'informations sensibles](https://go.microsoft.com/fwlink/?LinkID=509999).  <br/> |
-| 'SensitiveType: "numéro de carte de crédit|1.. 3 "' <br/> |La partie deux périodes ne doit pas être séparée par un espace.  <br/> |
-| 'SensitiveType: "numéro de carte de crédit| |1..|80.. "' <br/> |Il y a trop de délimiteurs de canaux (|). Utilisez plutôt ce format: 'SensitiveType: 'numéro de carte de crédit|1..|80.. "' <br/> |
-| 'SensitiveType: "numéro de carte de crédit|1..|80.. 101 "' <br/> |Étant donné que les valeurs de confiance représentent un pourcentage, elles ne peuvent pas dépasser 100. Choisissez plutôt un nombre compris entre 1 et 100.  <br/> |
+| `SensitiveType:"Credit Card Number|1. .3"` <br/> |La partie deux périodes ne doit pas être séparée par un espace.  <br/> |
+| `SensitiveType:"Credit Card Number| |1..|80.."` <br/> |Il y a trop de délimiteurs de canaux (|). Suivez ce format à la place:`SensitiveType: "Credit Card Number|1..|80.."` <br/> |
+| `SensitiveType:"Credit Card Number|1..|80..101"` <br/> |Étant donné que les valeurs de confiance représentent un pourcentage, elles ne peuvent pas dépasser 100. Choisissez plutôt un nombre compris entre 1 et 100.  <br/> |
    
-## <a name="for-more-information"></a>Pour plus d’informations
+## <a name="for-more-information"></a>Pour plus d'informations
 
 [Éléments recherchés par les types d’informations sensibles](what-the-sensitive-information-types-look-for.md)
   

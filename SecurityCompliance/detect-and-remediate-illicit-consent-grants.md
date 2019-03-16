@@ -8,18 +8,18 @@ ms.audience: ITPro
 ms.topic: article
 ms.collection:
 - o365_security_incident_response
-- Strat_O365_IP
+- M365-security-compliance
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 description: Découvrez comment reconnaître et corriger le consentement illicite accorde une attaque dans Office 365.
-ms.openlocfilehash: 1d8df4db94129bcdcb6ecf4859f9f89a1974edbe
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 454b1b0dcf7a6182895dcc97889286f3000c9626
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223353"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30656070"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Détecter et résoudre les problèmes d’octroi illégal de consentement dans Office 365
 
@@ -109,7 +109,7 @@ Votre abonnement Office 365 est fourni avec un ensemble de fonctionnalités de s
 - Tâches à effectuer dans les 90 jours. La planification et l'implémentation de ces deux éléments prennent un peu plus de temps, mais améliorent grandement votre position de sécurité.
 - Au-delà de 90 jours. Ces améliorations s'appuient sur vos premiers 90 jours de travail.
 
-## <a name="see-also"></a>Voir aussi:
+## <a name="see-also"></a>Voir aussi :
 - [Application inattendue dans ma liste d'applications](https://docs.microsoft.com/azure/active-directory/application-access-unexpected-application) guide les administrateurs à travers les diverses actions qu'il peut vouloir effectuer après avoir réalisé qu'il existe des applications inattendues ayant accès aux données.
 - [Intégration d'applications avec Azure Active Directory]  (https://docs.microsoft.com/azure/active-directory/active-directory-apps-permissions-consent) est une vue d'ensemble de haut niveau du consentement et des autorisations.  Prêtez une attention particulière à la section [vue d'ensemble de la structure de consentement](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#overview-of-the-consent-framework) .
 - [Problèmes de développement de mon application](https://docs.microsoft.com/azure/active-directory/active-directory-application-dev-development-content-map) fournit des liens vers différents Articles liés au consentement.

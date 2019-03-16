@@ -8,24 +8,24 @@ ms.audience: ITPro
 ms.topic: overview
 ms.collection:
 - o365_security_incident_response
-- Strat_O365_IP
+- M365-security-compliance
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 description: Cette solution vous indique les attaques informatiques les plus courantes pouvant ressembler à Office 365 et comment y répondre.
-ms.openlocfilehash: ac0a61e31f50846547517d721456a5229a7fb64c
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 13e57d914138edc44d0001781459852fba994f61
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223283"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30656020"
 ---
 # <a name="office-365-security-incident-response"></a>Réponse aux incidents de sécurité Office 365
 
  **Résumé:** Cette solution vous indique les indicateurs pour les attaques de Cyber-sécurité les plus courantes dans Office 365, la confirmation positive d'une attaque donnée et la façon de y répondre.
   
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 Toutes les attaques informatiques ne peuvent pas être contrecarrées. Les agresseurs cherchent constamment de nouvelles faiblesses dans votre stratégie défensive ou ils exploitent les anciens. Savoir comment reconnaître une attaque vous permet de y répondre plus rapidement, ce qui réduit la durée de l'incident de sécurité.
 
 Cette série d'articles vous aide à comprendre ce qu'un type d'attaque particulier peut ressembler dans Office 365 et vous indique les étapes que vous pouvez suivre pour répondre. Il s'agit de points d'entrée rapides à comprendre:

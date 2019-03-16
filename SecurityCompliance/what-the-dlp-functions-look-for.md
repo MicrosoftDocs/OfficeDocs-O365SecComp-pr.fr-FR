@@ -1,7 +1,7 @@
 ---
 title: Éléments recherchés par les fonctions DLP
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/18/2016
 ms.audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Les types d'informations sensibles recherchent un modèle spécifique et le corroborent en garantissant une mise en forme appropriée, en appliquant des checksums et en recherchant des mots clés pertinents ou d'autres informations. Certaines de ces fonctionnalités sont effectuées par des fonctions internes. Cette rubrique explique ce que ces fonctions recherchent, pour vous aider à comprendre le fonctionnement des types d’informations sensibles prédéfinis.
-ms.openlocfilehash: f64a4f174483b2aa57520991dcf85d13515074fb
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: d0aeb38001f42d9db2b124466b02746ee106b078
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454966"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30638931"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>Éléments recherchés par les fonctions DLP
 

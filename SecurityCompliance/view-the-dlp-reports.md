@@ -1,7 +1,7 @@
 ---
 title: Affichage des rapports de protection contre la perte de données
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/7/2018
 ms.audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec les rapports DLP dans Office 365, vous pouvez rapidement afficher le nombre de correspondances de stratégies DLP, de remplacements ou de faux positifs; voir si elles sont recherchées dans le temps; filtrer le rapport de différentes manières; et affichez des détails supplémentaires en sélectionnant un point sur une ligne sur le graphique.
-ms.openlocfilehash: bd2bc63fa3e2ea08f44ddb3923786010c59e829f
-ms.sourcegitcommit: 173936324ea015d788703440924ec8a9fb0db88b
+ms.openlocfilehash: 447245f945bd777f56cca71320a72a9d9dd8720e
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30510221"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639021"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Affichage des rapports de protection contre la perte de données
 

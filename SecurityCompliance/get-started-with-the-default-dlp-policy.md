@@ -1,7 +1,7 @@
 ---
 title: Prise en main de la stratégie DLP par défaut
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 8/10/2017
 ms.audience: Admin
@@ -15,12 +15,12 @@ ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 ms.collection:
 - M365-security-compliance
 description: Avant de créer votre première stratégie de protection contre la perte de données (DLP), DLP contribue à protéger vos informations sensibles à l'aide d'une stratégie par défaut. Cette stratégie par défaut et ses recommandations (illustrées ci-dessous) vous permettent de sécuriser votre contenu sensible en vous avertissant que des messages ou des documents contenant un numéro de carte de crédit ont été partagés avec une personne extérieure à votre organisation.
-ms.openlocfilehash: d965288a1ea44b1d0cb3d41e24611897a043f535
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: fa48025a7b979ad69c600b21a10fbb62567234c3
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455366"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30638941"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Prise en main de la stratégie DLP par défaut
 

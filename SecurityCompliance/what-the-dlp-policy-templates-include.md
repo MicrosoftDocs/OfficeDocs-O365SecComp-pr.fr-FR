@@ -1,7 +1,7 @@
 ---
 title: Ce qu’incluent les modèles de stratégie DLP
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365 inclut des modèles de stratégie prêts à l'emploi qui répondent à des exigences de conformité communes, telles que la protection des informations sensibles soumises à la loi américaine Health Insurance Act ( HIPAA), U.S. Gramm-Leach-Bliley Act (GLBA) ou U.S. Patriot Act. Cette rubrique répertorie tous les modèles de stratégie, les types d'informations sensibles qu'ils recherchent, ainsi que les conditions et les actions par défaut.
-ms.openlocfilehash: 00e2c4ff42df039804b1b8a3962be7e3c3798022
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 0031b5415db2f1c4a9497bcfbc5226da250b01b6
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455206"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639171"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>Ce qu’incluent les modèles de stratégie DLP
 

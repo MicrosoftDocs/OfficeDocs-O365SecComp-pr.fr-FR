@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble des stratégies de protection contre la perte de données
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Avec une stratégie de protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365, vous pouvez identifier, surveiller et protéger automatiquement les informations sensibles dans Office 365.
-ms.openlocfilehash: 80416ba0a402e33ed8af6390d261d3224fa0be2f
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 69ec5b2925d70c503655837af600f106379e1485
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455046"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639141"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Vue d’ensemble des stratégies de protection contre la perte de données
 

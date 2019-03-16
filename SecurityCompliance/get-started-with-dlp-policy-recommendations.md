@@ -1,7 +1,7 @@
 ---
 title: Prise en main des recommandations en matière de stratégie DLP
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 8/7/2017
 ms.audience: Admin
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Cette recommandation orientée analyse permet à votre organisation de maintenir le contenu sensible sécurisé lorsqu'il est stocké et partagé dans Office 365 en vous informant lorsqu'il existe un manque d'espace dans votre couverture de stratégie DLP. Cette recommandation s'affiche sur la page d'accueil du centre de &amp; sécurité conformité, si vos documents contiennent l'un des cinq types d'informations sensibles les plus courants, mais ne sont pas protégés par une stratégie DLP.
-ms.openlocfilehash: aabd1e6b3ce8ea4754192bd7b6f80262d9e83cf7
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 6edb6a28182cb72e66a649ac5eb0c1561c596091
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455116"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30638881"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>Prise en main des recommandations en matière de stratégie DLP
 

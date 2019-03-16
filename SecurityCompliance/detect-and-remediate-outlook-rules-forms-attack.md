@@ -8,25 +8,26 @@ ms.audience: ITPro
 ms.topic: article
 ms.collection:
 - o365_security_incident_response
-- Strat_O365_IP
+- M365-security-compliance
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 description: Découvrez comment reconnaître et corriger les attaques d'injections de formulaires personnalisés et de règles Outlook dans Office 365
-ms.openlocfilehash: 214be3e8492c2896d2a4010c30768e41bc149078
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 59d45e50e15e3709c8a041ead59b8cc6e2a38306
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215234"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30656060"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Détecter et résoudre les attaques par injections sur les règles d’Outlook et les formulaires personnalisés dans Office 365
 
 **Résumé** Découvrez comment reconnaître et corriger les attaques d'injections de formulaires personnalisés et de règles Outlook dans Office 365.
 
 ## <a name="what-is-the-outlook-rules-and-custom-forms-injection-attack"></a>Qu'est-ce que les règles Outlook et les attaques par injection de formulaires personnalisés?
-Une fois qu'un agresseur a enfreint un compte de votre location et que vous vous trouvez dans, il y a un moyen d'essayer de revenir sur ou de revenir une fois qu'il a été découvert et supprimé. Il s'agit de l'établissement d'un mécanisme de persistance. Il existe deux façons de le faire en exploitant les règles Outlook ou en injectant des formulaires personnalisés dans Outlook. Dans les deux cas, la règle ou le formulaire est synchronisé à partir du service Cloud vers le client de bureau, de sorte qu'un format complet et une réinstallation du logiciel client n'éliminent pas le mécanisme d'injection. Cela est dû au fait que lorsque le logiciel client Outlook se reconnecte à la boîte aux lettres dans le Cloud, il télécharge de nouveau les règles et les formulaires à partir du Cloud. Une fois que les règles et les formulaires sont en place, l'agresseur les utilise pour exécuter du code distant ou personnalisé, généralement pour installer des programmes malveillants sur l'ordinateur local. Le programme malveillant revole ensuite les informations d'identification ou effectue une autre activité illicite. La bonne nouvelle est que si vous maintenez vos clients patchés vers la dernière version, vous n'êtes pas vulnérable à la menace comme les valeurs par défaut du client Outlook bloquent les deux mécanismes. 
+Une fois qu'un agresseur a enfreint un compte de votre location et que vous vous trouvez dans, il y a un moyen d'essayer de revenir sur ou de revenir une fois qu'il a été découvert et supprimé. Il s'agit de l'établissement d'un mécanisme de persistance. Il existe deux façons de le faire en exploitant les règles Outlook ou en injectant des formulaires personnalisés dans Outlook.
+Dans les deux cas, la règle ou le formulaire est synchronisé à partir du service Cloud vers le client de bureau, de sorte qu'un format complet et une réinstallation du logiciel client n'éliminent pas le mécanisme d'injection. Cela est dû au fait que lorsque le logiciel client Outlook se reconnecte à la boîte aux lettres dans le Cloud, il télécharge de nouveau les règles et les formulaires à partir du Cloud. Une fois que les règles et les formulaires sont en place, l'agresseur les utilise pour exécuter du code distant ou personnalisé, généralement pour installer des programmes malveillants sur l'ordinateur local. Le programme malveillant revole ensuite les informations d'identification ou effectue une autre activité illicite. La bonne nouvelle est que si vous maintenez vos clients patchés vers la dernière version, vous n'êtes pas vulnérable à la menace comme les valeurs par défaut du client Outlook bloquent les deux mécanismes. 
 
 Les attaques suivent généralement ces modèles:
 
@@ -116,7 +117,7 @@ Si vous trouvez des preuves de l'une de ces attaques, la correction est simple, 
 4. Installez les versions les plus à jour d'Outlook.  N'oubliez pas que la version actuelle d'Outlook bloque les deux types de cette attaque par défaut.
 5. Une fois que toutes les copies hors connexion de la boîte aux lettres ont été supprimées, réinitialisez le mot de passe de l'utilisateur (utilisez une qualité élevée) et suivez les étapes décrites dans [setup multi-Factor Authentication for Office 365 Users](https://support.office.com/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6) si MFA n'a pas encore été activé. Cela permet de s'assurer que les informations d'identification de l'utilisateur ne sont pas exposées par d'autres moyens (par exemple, le hameçonnage ou la réutilisation du mot de passe).
 
-### <a name="using-powershell"></a>Utilisation de PowerShell
+### <a name="using-powershell"></a>Utiliser PowerShell
 Il existe deux cmdlets PowerShell à distance que vous pouvez utiliser pour supprimer ou désactiver les règles dangereuses. Suivez simplement les étapes.
  
 Étapes pour les boîtes aux lettres qui se trouvent sur un serveur Exchange
@@ -140,7 +141,8 @@ Les attaques de formulaires et de règles sont utilisées uniquement par un agre
 
 La meilleure façon de protéger vos comptes d'utilisateur, et en particulier vos comptes administrateur, est de [configurer l'authentification multifacteur pour les utilisateurs d'Office 365](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).  Vous devez également:
 <ol>
-    <li>SurVeillez le mode d' <a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">accès et d'utilisation</a>de vos comptes d'utilisateur. Vous n'êtes pas autorisé à empêcher la violation initiale, mais vous réduisez la durée et l'impact de la violation en la détectant plus tôt. Vous pouvez utiliser les <a href="https://support.office.com/article/overview-of-office-365-cloud-app-security-81f0ee9a-9645-45ab-ba56-de9cbccab475">stratégies de sécurité d'application Cloud d'Office 365</a> pour surveiller les comptes et alerter les activités inhabituelles.<ol type="a">
+    <li>SurVeillez le mode d' <a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">accès et d'utilisation</a>de vos comptes d'utilisateur. Vous n'êtes pas autorisé à empêcher la violation initiale, mais vous réduisez la durée et l'impact de la violation en la détectant plus tôt. Vous pouvez utiliser les <a href="https://support.office.com/article/overview-of-office-365-cloud-app-security-81f0ee9a-9645-45ab-ba56-de9cbccab475">stratégies de sécurité d'application Cloud d'Office 365</a> pour surveiller les comptes et alerter les activités inhabituelles. 
+        <ol type="a">
             <li><b>Plusieurs tentatives de connexion ayant échoué</b> Cette stratégie Profile votre environnement et déclenche des alertes lorsque les utilisateurs effectuent plusieurs activités de connexion ayant échoué au cours d'une session unique en ce qui concerne la planification d'expérience utilisateur, ce qui peut indiquer une tentative de violation.</li>
             <li><b>Déplacement impossible</b> - Cette stratégie Profile votre environnement et déclenche des alertes lorsque des activités sont détectées à partir du même utilisateur dans des emplacements différents pendant une période de temps qui est plus courte que le temps de trajet prévu entre les deux emplacements. Cela peut indiquer qu'un autre utilisateur utilise les mêmes informations d'identification. La détection de ce comportement anormal nécessite une période d'apprentissage initiale de sept jours pendant laquelle il apprend le modèle d'activité d'un nouvel utilisateur.</li>
             <li><b>Activité usurpée inhabituelle (par utilisateur)</b> - Cette stratégie Profile votre environnement et déclenche des alertes lorsque les utilisateurs effectuent plusieurs activités empruntées dans une session unique en ce qui concerne la base de référence apprise, ce qui peut indiquer une tentative de violation.</li>
@@ -179,7 +181,7 @@ Votre abonnement Office 365 est fourni avec un ensemble de fonctionnalités de s
 - Tâches à effectuer dans les 90 jours. La planification et l'implémentation de ces deux éléments prennent un peu plus de temps, mais améliorent grandement votre position de sécurité.
 - Au-delà de 90 jours. Ces améliorations s'appuient sur vos premiers 90 jours de travail.
 
-## <a name="see-also"></a>Voir aussi:
+## <a name="see-also"></a>Voir aussi :
 - [Règles Outlook malveillantes](https://silentbreaksecurity.com/malicious-outlook-rules/) par SilentBreak Security post à propos des règles le vecteur fournit une analyse détaillée de la façon dont les règles Outlook sont définies. 
 - [MAPI sur http et Mailrule Pwnage](https://sensepost.com/blog/2016/mapi-over-http-and-mailrule-pwnage/) sur le blog Sensepost sur Mailrule Pwnage aborde un outil appelé Ruler qui vous permet d'exploiter les boîtes aux lettres par le biais de règles Outlook.
 - [Formulaires et coques Outlook](https://sensepost.com/blog/2017/outlook-forms-and-shells/) sur le blog Sensepost sur le vecteur de menace de formulaires. 

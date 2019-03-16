@@ -1,7 +1,7 @@
 ---
 title: Envoyer des notifications par courrier électronique et afficher des conseils de stratégie pour les stratégies DLP
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 3/21/2018
 ms.audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: "Un Conseil de stratégie est une notification ou un avertissement qui s'affiche lorsqu'un utilisateur travaille avec du contenu qui entre en conflit avec une stratégie DLP. Vous pouvez utiliser des notifications par courrier électronique et des conseils de stratégie pour sensibiliser les utilisateurs aux stratégies de votre organisation. Vous pouvez également donner aux utilisateurs la possibilité de remplacer la stratégie, afin qu'ils ne soient pas bloqués s'ils ont un besoin opérationnel valide ou si la stratégie détecte un faux positif. "
-ms.openlocfilehash: ad351a4f24ce566a47692c190b455e9e680882ca
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: b598b665de3d45846e221ea4c1b5c2f49a659c6b
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455186"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639151"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Envoyer des notifications par courrier électronique et afficher des conseils de stratégie pour les stratégies DLP
 
@@ -90,7 +90,7 @@ Pour chaque règle d'une stratégie DLP, vous pouvez:
 - Personnaliser le texte inclus dans la notification à l'aide de code HTML ou de jetons. Pour plus d'informations, consultez la section ci-dessous.
     
 > [!NOTE]
->  Les notifications par courrier électronique ne peuvent être envoyées qu'à des destinataires individuels, et non à des groupes ou à des listes de distribution. > seul le nouveau contenu déclenchera une notification par courrier électronique. La modification d'un contenu existant déclenche des conseils de stratégie, mais pas de notification par courrier électronique. 
+>  Les notifications par courrier électronique ne peuvent être envoyées qu'à des destinataires individuels, et non à des groupes ou à des listes de distribution. Seul le nouveau contenu déclenchera une notification par courrier électronique. La modification d'un contenu existant déclenche des conseils de stratégie, mais pas de notification par courrier électronique. 
   
 ![Options de notification par courrier électronique](media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
   

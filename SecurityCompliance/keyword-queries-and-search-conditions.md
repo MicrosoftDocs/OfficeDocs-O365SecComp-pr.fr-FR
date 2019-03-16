@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: "Découvrez les propriétés de messagerie et de fichier que vous pouvez rechercher dans les boîtes aux lettres Exchange Online et dans SharePoint ou OneDrive entreprise à l'aide de l'outil de recherche &amp; de contenu dans le centre de sécurité conformité Office 365.  "
-ms.openlocfilehash: 49236223392af94a5641a9b319d2168f53bbcc06
-ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
+ms.openlocfilehash: 478f0f7089046cea9a1650fc090e59fc056db8a9
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30354756"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639161"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Requêtes par mots clés et conditions de recherche pour la recherche de contenu
 
@@ -123,11 +123,14 @@ Le tableau suivant répertorie les propriétés de contact qui sont indexées et
 
 ## <a name="searchable-sensitive-data-types"></a>Types de données sensibles utilisables dans une requête
 
-Vous pouvez utiliser la fonctionnalité de recherche de contenu dans &amp; le centre de sécurité conformité pour rechercher des données sensibles, telles que des numéros de carte de crédit ou des numéros de sécurité sociale, qui sont stockées dans des documents sur des sites SharePoint et OneDrive entreprise. Pour ce faire, vous pouvez utiliser `SensitiveType` la propriété et le nom d'un type d'informations sensibles dans une requête de mot clé. Par exemple, la requête `SensitiveType:"Credit Card Number"` renvoie des documents qui contiennent un numéro de carte de crédit. La requête `SensitiveType:"U.S. Social Security Number (SSN)"` renvoie des documents qui contiennent un numéro de sécurité sociale américain. Pour afficher la liste des types de données sensibles que vous pouvez rechercher, accédez à **classifications** \> **types d'informations sensibles** dans le centre &amp; de sécurité et de conformité. Vous pouvez utiliser la cmdlet **Get-DlpSensitiveInformationType** dans le centre de &amp; sécurité conformité PowerShell pour afficher la liste des types d'informations sensibles. 
+Vous pouvez utiliser la fonctionnalité de recherche de contenu dans le centre de sécurité & Compliance Center pour rechercher des données sensibles, telles que des numéros de carte de crédit ou des numéros de sécurité sociale, qui sont stockées dans des documents sur des sites SharePoint et OneDrive entreprise. Pour ce faire, vous pouvez utiliser `SensitiveType` la propriété et le nom d'un type d'informations sensibles dans une requête de mot clé. Par exemple, la requête `SensitiveType:"Credit Card Number"` renvoie des documents qui contiennent un numéro de carte de crédit. La requête `SensitiveType:"U.S. Social Security Number (SSN)"` renvoie des documents qui contiennent un numéro de sécurité sociale américain. Pour afficher la liste des types de données sensibles que vous pouvez rechercher, accédez à **classifications** \> **types d'informations sensibles** dans le centre &amp; de sécurité et de conformité. Vous pouvez utiliser la cmdlet **Get-DlpSensitiveInformationType** dans le centre de &amp; sécurité conformité PowerShell pour afficher la liste des types d'informations sensibles. 
   
 Vous pouvez également utiliser la `SensitiveType` propriété pour rechercher le nom d'un type d'informations sensibles personnalisé créé par vous (ou un autre administrateur) pour votre organisation. Notez que vous pouvez utiliser la colonne **éditeur** de la page **types d'informations sensibles** dans le &amp; Centre de sécurité conformité ( **** ou la propriété Publisher dans PowerShell) pour différencier les données sensibles intégrées et personnalisées types d'informations. Pour plus d'informations, consultez [la rubrique créer un type d'informations sensibles personnalisé](create-a-custom-sensitive-information-type.md).
   
 Pour plus d'informations sur la création de `SensitiveType` requêtes à l'aide de la propriété, voir créer [une requête pour trouver des données sensibles stockées sur des sites](form-a-query-to-find-sensitive-data-stored-on-sites.md).
+
+> [!NOTE]
+> Vous ne pouvez pas utiliser les types de `SensitiveType` données sensibles et la propriété Search pour rechercher des données sensibles dans les boîtes aux lettres Exchange Online. Toutefois, vous pouvez utiliser des stratégies de protection contre la perte de données (DLP) pour protéger les données e-mail sensibles en transit. Pour plus d'informations, consultez la rubrique [vue d'ensemble des stratégies de protection contre la perte de données](data-loss-prevention-policies.md) et [recherche et recherche de données personnelles](search-for-and-find-personal-data.md).
   
 ## <a name="search-operators"></a>Opérateurs de recherche
 
@@ -143,7 +146,7 @@ Les opérateurs de recherche booléens, tels que **and**, **or**et **not**, perm
 |NEAR|keyword1 NEAR(n) keyword2|Renvoie les éléments qui incluent des mots proches les uns des autres, n étant égal au nombre de mots. Par exemple, `best NEAR(5) worst` renvoie tout élément dont le mot «pire» se trouve à moins de cinq mots de «meilleur». Si aucun nombre n'est spécifié, la distance par défaut est de huit mots. <sup>n°2</sup>|
 |ONEAR|keyword1 ONEAR(n) keyword2|Similaire à **near**, mais retourne des éléments avec des mots proches l'un de l'autre dans l'ordre spécifié. Par exemple, `best ONEAR(5) worst` renvoie tout élément où le mot «Best» se produit avant le mot «pires» et les deux mots se situent entre cinq mots. Si aucun nombre n'est spécifié, la distance par défaut est de huit mots. <sup>n°2</sup> <br/> > [!NOTE]> l'opérateur **ONEAR** n'est pas pris en charge lors de la recherche de boîtes aux lettres; elle fonctionne uniquement lors de la recherche de sites SharePoint et OneDrive entreprise. Si vous recherchez des boîtes aux lettres et des sites dans la même recherche et que la requête inclut l'opérateur **ONEAR** , la recherche renverra des éléments de boîte aux lettres comme si vous utilisiez l'opérateur **near** . En d'autres termes, la recherche renvoie les éléments dans lesquels les mots spécifiés sont proches les uns des autres, quel que soit l'ordre dans lequel ils se produisent.|
 |:|property:value|Le signe deux-points (:) dans la `property:value` syntaxe, indique que la valeur de la propriété recherchée contient la valeur spécifiée. Par exemple,  `recipients:garthf@contoso.com` renvoie les messages envoyés à garthf@contoso.com.|
-|=|property=value|Identique à l'opérateur **:** .|
+|=|propriété = valeur|Identique à l'opérateur **:** .|
 |\<|property\<value|Indique que la propriété recherchée est inférieure à la valeur spécifiée.<sup>1</sup>|
 |\>|property\>value|Indique que la propriété recherchée est supérieure à la valeur spécifiée.<sup>1</sup>|
 |\<=|property\<=value|Indique que la propriété recherchée est inférieure ou égale à la valeur spécifiée.<sup>1</sup>|

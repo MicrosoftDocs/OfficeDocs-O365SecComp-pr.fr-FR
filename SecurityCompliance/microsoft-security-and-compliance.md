@@ -3,7 +3,7 @@ title: Préparez-vous à la sécurité et à la conformité de Microsoft 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/23/2019
+ms.date: 03/14/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,16 +11,16 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Préparez-vous pour le nouveau centre de sécurité Microsoft 365 et le centre de conformité
-ms.openlocfilehash: 662f953b9c9e60d2ce59fbde9de03cf973fa0b99
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: cdea0aabec39082ce9da0001cb148fe14454e5b7
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357595"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639051"
 ---
 # <a name="get-ready-for-the-new-microsoft-365-security-center-and-microsoft-365-compliance-center"></a>Se préparer pour le nouveau Centre de sécurité Microsoft 365 et Centre de conformité Microsoft 365
 
-**Nous avons le plaisir d'annoncer le nouveau centre de [sécurité microsoft 365](#microsoft-365-security-center) et le [Centre de conformité Microsoft 365](#microsoft-365-compliance-center), en commençant à la fin du 1er janvier 2019 et au 2019**. Lisez cet article pour obtenir une vue d'ensemble des nouveautés, des [éléments à prévoir](#what-to-expect), des [licences et des autorisations](#required-licenses-and-permissions)nécessaires.
+**Nous avons le plaisir d'annoncer le nouveau centre de [sécurité Microsoft 365](#microsoft-365-security-center) et le [centre de conformité Microsoft 365](#microsoft-365-compliance-center), en commençant à la fin du 1er janvier 2019 et au 2019**. Lisez cet article pour obtenir une vue d'ensemble des nouveautés, des [éléments à prévoir](#what-to-expect), des [licences et des autorisations](#required-licenses-and-permissions)nécessaires.
 
 ## <a name="microsoft-365-security-center"></a>Centre de sécurité Microsoft 365
 
@@ -50,7 +50,7 @@ Une fois que le centre de conformité Microsoft 365 est activé pour votre clien
 
 ## <a name="what-to-expect"></a>À quoi s'attendre
 
-### <a name="coming-soon"></a>À venir!
+### <a name="coming-soon"></a>Bientôt disponible !
 
 Le nouveau centre de sécurité Microsoft 365 et le nouveau centre de conformité Microsoft 365 sont déployés en fin de janvier et jusqu'en mars 2019. Vous devez avoir accès au nouveau centre de sécurité Microsoft 365 et au centre de conformité Microsoft 365 dans ce délai.
 
@@ -72,7 +72,11 @@ Une fois que cette mise à jour est déployée, si votre organisation a Microsof
 
 ## <a name="required-licenses-and-permissions"></a>Licences et autorisations requises
 
-Pour obtenir le nouveau centre de sécurité Microsoft 365 et le centre de conformité Microsoft 365, votre organisation doit disposer d'un abonnement à Microsoft 365 E3 ou E5, ou un équivalent de licence en volume (qui se compose d'Office 365 entreprise E3 ou E5, Enterprise Mobility + Security E3 ou E5, et Windows 10 entreprise E3/E5).
+### <a name="licenses"></a>Licences
+
+Pour obtenir le nouveau centre de sécurité Microsoft 365 et le centre de conformité Microsoft 365, votre organisation doit disposer d'un abonnement à Microsoft 365 E3 ou E5, ou un équivalent de licence en volume (qui se compose d'Office 365 entreprise E3 ou E5, Enterprise Mobility + Security E3 ou E5, et Windows 10 entreprise E3/E5). Pour en savoir plus sur ces offres, consultez [la rubrique Découvrez la solution Microsoft 365 Enterprise qui vous convient](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
+
+### <a name="roles-and-permissions"></a>Rôles et autorisations
 
 Les utilisateurs doivent se voir attribuer le rôle d'administrateur général, d'administrateur de conformité, d'administrateur de sécurité ou de lecteur de sécurité dans Azure Active Directory pour accéder au nouveau centre de sécurité Microsoft 365 ou au centre de conformité Microsoft 365.
 
@@ -87,21 +91,21 @@ Les utilisateurs doivent se voir attribuer le rôle d'administrateur général, 
 
 Le tableau suivant résume qui peut accéder à différents portails dans Azure, Office 365 et Windows:
 
-|Portal  |Global<br/>Administrateur  |Sécurité <br/>Administrateur<br>ou<br>Sécurité<br>Lecteur |Conformité<br/>Administrateur  |
+|Portail  |Global<br/>Administrateur  |Sécurité <br/>Administrateur<br>ou<br>Sécurité<br>Lecteur |Conformité<br/>Administrateur  |
 |---------|---------|---------|---------|
-|[Centre de sécurité et conformité Office 365](https://protection.office.com) |Oui |Oui   |Non |
-|[Centre de sécurité Microsoft 365](https://security.microsoft.com) |Oui  | Non  | Non        |
+|[Centre de sécurité & de sécurité Office 365](https://protection.office.com) |Oui |Oui  |Oui |
+|[Centre de sécurité Microsoft 365](https://security.microsoft.com) |Oui  | Oui  | Non        |
 |[Centre de conformité Microsoft 365](https://compliance.microsoft.com) | Oui | Non | Oui |
-|[Gestionnaire de conformité](https://aka.ms/compliancemanager) |Oui | Oui  |Non  |
-|[Azure Information Protection](https://docs.microsoft.com/azure/information-protection) |Oui |Non |Non |
-|[Azure Security Center](https://docs.microsoft.com/azure/security-center/)  |Oui |Non |Non |
-|[Azure protection avancée contre les menaces](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)  |Oui |Non |Non |
-|[Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection?ocid=tia-260153000#windows-defender-atp) et [détection et réponse du point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)     |Oui |Non |Non |
-|[Protection des identités](https://docs.microsoft.com/azure/active-directory/identity-protection)     |Oui |Non |Non |
-|[Gestion des identités avec privilèges](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |Oui |Non |Non |
-|[Intune](https://docs.microsoft.com/intune)     |Oui |Oui  |Non |
-|[Cloud App Security](https://docs.microsoft.com/cloud-app-security/)     |Oui |Oui  |Non |
-|[Score de sécurité](https://docs.microsoft.com/office365/securitycompliance/office-365-secure-score)     |Oui |Non |Non |
+|[Gestionnaire de conformité](https://aka.ms/compliancemanager) |Oui | Oui |Oui  |
+|[Azure Information Protection](https://docs.microsoft.com/azure/information-protection) |Oui |Oui |Non |
+|[Azure Security Center](https://docs.microsoft.com/azure/security-center/)  |Oui |Oui |Non |
+|[Protection avancée contre les menaces](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)  |Oui |Oui |Non |
+|[Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection?ocid=tia-260153000#windows-defender-atp) |Oui |Oui |Non |
+|[Protection des identités](https://docs.microsoft.com/azure/active-directory/identity-protection)     |Oui |Oui |Non |
+|[Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |Oui |Oui |Non |
+|[Intune](https://docs.microsoft.com/intune)     |Oui |Oui |Oui |
+|[Cloud App Security](https://docs.microsoft.com/cloud-app-security/)     |Oui |Oui |Oui |
+|[Secure Score](https://docs.microsoft.com/office365/securitycompliance/office-365-secure-score)     |Oui |Oui |Non |
 |[Exchange](https://docs.microsoft.com/exchange/)     |Oui |Oui |Oui |
 
 ## <a name="additional-resources"></a>Ressources supplémentaires

@@ -15,28 +15,28 @@ ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
 description: Obtenez-vous un message d'erreur lorsque vous tentez d'envoyer un courrier électronique à un destinataire dont l'adresse de messagerie est dans Office 365 ? Si vous pensez que vous ne devriez pas recevoir de message d'erreur, vous pouvez utiliser le portail Supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués Office 365.
-ms.openlocfilehash: 9b4834ae474d781497043bd8800879c57f36d785
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 2d01d1637ddf1a4666d580b09e59fc6baa12784e
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276180"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30647304"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>Utilisation du portail Supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués Office 365
 
 Obtenez-vous un message d'erreur lorsque vous tentez d'envoyer un courrier électronique à un destinataire dont l'adresse de messagerie est dans Office 365 ? Si vous pensez que vous ne devriez pas recevoir de message d'erreur, vous pouvez utiliser le portail Supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués Office 365.
   
-## <a name="what-is-the-office-365-blocked-senders-list"></a>Qu'est-ce que la liste des expéditeurs bloqués Office 365 ?
+## <a name="what-is-the-office-365-blocked-senders-list"></a>Qu’est-ce que la liste des expéditeurs bloqués Office 365 ?
 
 Microsoft utilise la liste des expéditeurs bloqués pour protéger ses clients contre le courrier indésirable, l'usurpation d'identité et les attaques par hameçonnage. L'adresse IP de votre serveur messagerie, c'est-à-dire l'adresse que votre serveur de messagerie utilise pour s'identifier sur Internet, a été identifiée comme une menace potentielle envers Office 365 pour une raison quelconque. Quand Office 365 ajoute l'adresse IP à la liste, cela empêche toute autre communication entre l'adresse IP et l'un de nos clients par le biais de nos centres de données.
   
 Vous savez que vous avez été ajouté à la liste si vous recevez une réponse à un courrier électronique incluant une erreur ressemblant à ce qui suit :
   
-550 5.7.606-649 accès refusé, IP d'envoi interdit [_adresse IP_]; Pour demander la suppression de cette liste, https://sender.office.com/ visitez le site et suivez les instructions. Pour plus d'informations, consultez la rubrique notifications de [non-remise aux courriers électroniques dans Office 365](http://go.microsoft.com/fwlink/?LinkID=526653).
+> 550 5.7.606-649 accès refusé, IP d'envoi interdit [_adresse IP_]; Pour demander la suppression de cette liste, https://sender.office.com/ visitez le site et suivez les instructions. Pour plus d'informations, consultez la rubrique notifications de [non-remise aux courriers électroniques dans Office 365](http://go.microsoft.com/fwlink/?LinkID=526653).
   
 où  _IP address_ est l'adresse IP de l'ordinateur sur lequel s'exécute le serveur de messagerie. 
   
-### <a name="to-use-the-office-365-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Utilisation du portail Supprimer de la liste Office 365 pour vous supprimer de la liste des expéditeurs bloqués
+### <a name="to-use-the-office-365-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Utilisation du portail Supprimer de la liste Office 365 pour vous supprimer de la liste des expéditeurs bloqués
 
 1. Dans un navigateur web, accédez à [https://sender.office.com](https://sender.office.com).
     
@@ -54,4 +54,5 @@ où  _IP address_ est l'adresse IP de l'ordinateur sur lequel s'exécute le serv
     
     Une fois que l'adresse IP est supprimée de la liste des expéditeurs bloqués, les messages électroniques provenant de cette adresse IP seront remis aux destinataires utilisant Office 365. Par conséquent, assurez-vous que les messages envoyés à partir de cette adresse IP ne sont pas abusifs ou malveillants. Dans le cas contraire, il est possible que l'adresse IP soit bloquée à nouveau.
     
-
+    > [!NOTE]
+    > La suppression des restrictions peut prendre jusqu'à 1 heure.

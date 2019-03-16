@@ -14,19 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7559653c5c92b26535fb3a16ae7dbb442dc0ba97
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: ed252eca2b05f3d44e0c69e5b9649a4d7819e92c
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455406"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639111"
 ---
 # <a name="document-metadata-fields"></a>Champs de métadonnées de document
 
 
 |**Nom de champ** </br>|**Pouvant faire l'objet d'une recherche et d'une visualisation dans un jeu de travail** |**Panneau métadonnées de fichier** |**—** |
 |:-------------------------- |:---------------------------------------- |:------------------------|:------------------|
-|Balises case                  | Oui                                             |                         | Oui         |
+|Balises case                  | Oui (balises)                                      |                         | Oui         |
 |Étiquettes de conformité          |                                                 |                         | Oui         |
 |Tracé transparent              |                                                 |                         | Oui         |
 |ID de conteneur               |                                                 |                         | Oui         |
@@ -37,11 +37,11 @@ ms.locfileid: "30455406"
 |Chemin d'accès composé Deduped      |                                                 |                         | Oui         |
 |Dépositaires Deduped         |                                                 |                         | Oui         |
 |ID de fichiers Deduped           |                                                 |                         | Oui         |
-|Auteurs de documents                |                                                 |                         | Oui         |
+|Auteurs de documents                | Oui (auteur) *                                   |                         | Oui         |
 |Commentaires sur le document               |                                                 |                         | Oui         |
 |Société doc                |                                                 |                         | Oui         |
-|Date de création du document           |                                                 |                         | Oui         |
-|Date de modification du document          |                                                 |                         | Oui         |
+|Date de création du document           | Oui (createdTime) *                              |                         | Oui         |
+|Date de modification du document          | Oui (lastModifiedDate) *                         |                         | Oui         |
 |Mots clés doc               |                                                 |                         | Oui         |
 |Dernier enregistrement du document par          |                                                 |                         | Oui         |
 |Document modifié par            |                                                 |                         | Oui         |
@@ -103,10 +103,10 @@ ms.locfileid: "30455406"
 |ND ET tri, liaison excl     |                                                 |                         | Oui         |
 |ND ET Trier avec liaison incluse     |                                                 |                         | Oui         |
 |ND défini                     |                                                 |                         | Oui         |
-|Auteurs O365               |                                                 |                         | Oui         |
+|Auteurs O365               | Oui (auteur) *                                   |                         | Oui         |
 |O365 créé par            |                                                 |                         | Oui         |
-|Date de création d'O365          |                                                 |                         | Oui         |
-|Date d'Office 365 modifiée         |                                                 |                         | Oui         |
+|Date de création d'O365          | Oui (createdTime) *                              |                         | Oui         |
+|Date d'Office 365 modifiée         | Oui (lastModifiedDate) *                         |                         | Oui         |
 |O365 modifié par           |                                                 |                         | Oui         |
 |Nœud parent                |                                                 |                         | Oui         |
 |ID de tableau croisé dynamique                   | Oui (pivotId)                                   |                         | Oui         |
@@ -117,3 +117,8 @@ ms.locfileid: "30455406"
 |Pourcentage de similarité         |                                                 |                         | Oui         |
 |Liste des thèmes                | Oui (themesList)                                |                         | Oui         |
 |Word count                 | Oui (wordCount)                                 |                         | Oui         |
+|Score de pertinence (problème)    | Oui (relevanceScore_issueNum)                   |                         |             |
+|Centile en lecture (émission)    | Oui (readPercentile_issueNum)                   |                         |             |
+|Balise de pertinence (problème)      | Oui (relevanceTag_issueNum)                     |                         |             |
+
+  \*Pour ces champs, si des valeurs sont incorporées dans les documents, la recherche les affectera en priorité; dans le cas contraire, il essaiera de surfacer les valeurs d'O365.
