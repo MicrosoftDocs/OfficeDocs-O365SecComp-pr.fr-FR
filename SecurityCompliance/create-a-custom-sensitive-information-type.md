@@ -1,7 +1,7 @@
 ---
 title: Créer un type d’informations sensibles personnalisé
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment créer, modifier, supprimer et tester des types d’informations sensibles personnalisés pour DLP dans l’interface utilisateur graphique dans le Centre de sécurité et conformité Office 365.
-ms.openlocfilehash: 5e20fac290a7d06c843a0043d95669d9c7f7cd05
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: afc5479f08909020d04768c9ca9c20438472b92d
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455136"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639061"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>Créer un type d’informations sensibles personnalisé
 

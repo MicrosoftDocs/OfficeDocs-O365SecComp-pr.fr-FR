@@ -1,7 +1,7 @@
 ---
 title: Personnaliser un type d’informations sensibles intégré
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/25/2018
 ms.audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous recherchez des informations sensibles dans du contenu, vous devez décrire ces informations dans ce que l’on appelle une règle. La protection contre la perte de données (DLP) comprend des règles pour les types d’informations sensibles les plus courants que vous pouvez utiliser immédiatement. Pour utiliser ces règles, vous devez les inclure dans une stratégie. Vous voudrez peut-être ajuster ces règles intégrées pour répondre aux besoins spécifiques de votre organisation, et vous pouvez le faire en créant un type d’informations sensibles personnalisé. Cette rubrique vous montre comment personnaliser le fichier XML qui contient la collection de règles existante pour détecter un plus large éventail d’informations potentielles relatives aux cartes de crédit.
-ms.openlocfilehash: 9596fe6aac92dca4d2dd66b5eff13005c5c6724b
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: c0a3fcb86acf1eaa5df72e385b21e8dba9b0d668
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455426"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639071"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personnaliser un type d’informations sensibles intégré
 
@@ -44,7 +44,7 @@ Pour exporter le fichier XML, vous devez vous [connecter au Centre de sécurit�
      `Set-Content -path "C:\custompath\exportedRules.xml" -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection`
     
     > [!IMPORTANT]
-    > Assurez-vous que vous utilisez l’emplacement de fichier dans lequel votre pack de règles est effectivement stocké.  `C:\custompath\` est un espace réservé. 
+    > Assurez-vous que vous utilisez l’emplacement de fichier dans lequel votre pack de règles est effectivement stocké. `C:\custompath\` est un espace réservé. 
   
 ## <a name="find-the-rule-that-you-want-to-modify-in-the-xml"></a>Rechercher la règle à modifier dans le fichier XML
 
