@@ -106,7 +106,7 @@
 ### [Configurer vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md)
 ### [Configurer la stratégie de filtrage des connexions](configure-the-connection-filter-policy.md)
 ### [Configurer la stratégie anti-courrier indésirable sortant](configure-the-outbound-spam-policy.md)
-### [Supprimer un utilisateur, un domaine ou une adresse IP d’une liste rouge](removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email.md)
+### [Suppression d’un utilisateur du portail Utilisateurs restreints après l’envoi d’un courrier indésirable](removing-user-from-restricted-users-portal-after-spam.md)
 ### [Seuils de probabilité de courrier indésirable](spam-confidence-levels.md)
 #### [Utilisation des règles de flux de courrier pour définir le seuil de probabilité de courrier indésirable (SCL) dans les messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 #### [Envoi des courriers indésirables, non-courrier indésirable ou des messages d’hameçonnage à Microsoft pour analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)
