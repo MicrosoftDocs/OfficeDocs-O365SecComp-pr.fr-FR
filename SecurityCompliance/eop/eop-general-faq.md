@@ -11,28 +11,28 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: "Cette rubrique présente les réponses aux questions générales les plus fréquentes concernant le service de filtrage du courrier électronique hébergé dans le nuage Microsoft Exchange Online Protection (EOP). Pour d'autres rubriques du Forum Aux Questions (FAQ), suivez les liens suivants :"
-ms.openlocfilehash: 9a8ac96678e33623803e95998780b4544dec5a78
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 888cf338a3f1767ddd6ba01a2f0f60f2f8794e3e
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027381"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670449"
 ---
 # <a name="eop-general-faq"></a>Forum Aux Questions d'ordre général concernant Exchange Online Protection (EOP)
 
 Cette rubrique présente les réponses aux questions générales les plus fréquentes concernant le service de filtrage du courrier électronique hébergé dans le nuage Microsoft Exchange Online Protection (EOP). Pour d'autres rubriques du Forum Aux Questions (FAQ), suivez les liens suivants :
   
-- [Questions fréquemment posées sur les messages mis en file d'attente, différés et retournés dans EOP](eop-queued-deferred-and-bounced-messages-faq.md)
+- Questions fréquemment posées sur les messages mis en file d’attente, différés et retournés dans EOP
     
-- [FAQ sur l'administration déléguée](delegated-administration-faq.md)
+- [FAQ sur l’administration déléguée](delegated-administration-faq.md)
     
-- [Forum aux questions sur la protection anti-courrier indésirable](../anti-spam-protection-faq.md)
+- [FAQ sur la protection contre le courrier indésirable](../anti-spam-protection-faq.md)
     
 - [Listes des expéditeurs autorisés et des expéditeurs bloqués dans Exchange Online](../safe-sender-and-blocked-sender-lists-faq.md)
     
 - [FAQ sur la mise en quarantaine](../quarantine-faq.md)
     
-- [Forum aux questions sur la protection anti-programme malveillant](../anti-malware-protection-faq-eop.md)
+- [FAQ sur la protection anti-programme malveillant](../anti-malware-protection-faq-eop.md)
     
 - [Message Trace FAQ](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx)
     
@@ -54,7 +54,7 @@ R. EOP fait l'objet d'une licence par utilisateur. Pour obtenir les derniers tar
   
 R. Le filtrage commence dès que vous modifiez votre enregistrement MX, conformément aux étapes décrites dans la rubrique [Configurer votre service EOP](set-up-your-eop-service.md), et que votre courrier électronique circule dans EOP. La propagation de l'enregistrement MX via DNS peut prendre entre 24 et 48 heures. Vous pouvez affiner vos paramètres de protection dans le Centre d'administration Exchange (CAE) à tout moment au cours de ce processus.
   
- **Q : dois-je utiliser toutes les fonctionnalités de Microsoft Office 365 pour utiliser EOP ? Que se passe-t-il si je veux protection EOP et c’est tout ?**
+ **Q. Do I have to use all features of Microsoft Office 365 to use EOP? What if I just want EOP protection and that's all?**
   
 R. Vous pouvez utiliser EOP pour protéger vos boîtes aux lettres locales sans utiliser aucune autre fonctionnalité d'Office 365. C'est ce qu'on appelle un abonnement autonome. Une liste des fonctionnalités d'EOP est disponible dans la rubrique [Description du service de protection Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=320619).
   
@@ -62,9 +62,9 @@ R. Vous pouvez utiliser EOP pour protéger vos boîtes aux lettres locales sans 
   
 R. Office 365 est le nom donné à un ensemble de produits et de services qui sont accessibles via un client Office 365. Envisagez le client Office 365 comme le point de départ auquel vous pouvez ajouter des licences pour le filtrage des messages électroniques.
   
- **Q : EOP a-t-il un portail de communication où puis-je savoir à propos des problèmes connus et les résolutions attendues Qu’advient-il des nouvelles fonctionnalités ?**
+ **Q. Does EOP have a communication portal where I can find out about known issues and expected resolutions? What about new features?**
   
-R. Le Centre d'administration Office 365 disposera de certaines de ces informations. Si vous êtes concerné par un événement de niveau de service, vous devriez voir une alerte de communication (généralement accompagnée d'une icône en forme de cloche) lorsque vous vous connectez au Centre d'administration Office 365. Nous vous recommandons de lire ces informations et d'effectuer les actions appropriées.
+R. Le centre d'administration Microsoft 365 dispose de certaines de ces informations. Si vous êtes concerné par un événement de niveau de service, vous devriez voir une alerte de communication (généralement accompagnée d'une icône en cloche) après vous être connecté au centre d'administration de Microsoft 365. Nous vous recommandons de lire ces informations et d'effectuer les actions appropriées.
   
 Pour les nouvelles fonctionnalités EOP, la [feuille de route d'Office 365 pour les entreprises](https://office.microsoft.com/en-us/products/office-365-roadmap-FX104343353.aspx) est une excellente ressource pour trouver des informations sur les nouvelles fonctionnalités à venir. Nous publierons également des articles de blog concernant les nouvelles fonctionnalités sur le site des [blogs Office](https://go.microsoft.com/fwlink/p/?LinkId=392724). 
   

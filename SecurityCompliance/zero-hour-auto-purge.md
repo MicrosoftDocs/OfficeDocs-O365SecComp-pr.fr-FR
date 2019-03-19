@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: La suppression automatique de zéro heure (ZAP) est une fonctionnalité de protection de la messagerie qui détecte les messages contenant du courrier indésirable ou des programmes malveillants qui ont déjà été remis dans la boîte de réception de vos utilisateurs, puis rend le contenu malveillant inoffensif. Le mode de fonctionnement de ZAP dépend du type de contenu malveillant détecté.
-ms.openlocfilehash: b28de1b05843e3f5b0f6e7fc905c96f094c277f9
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: b49f7e3b5effec7b67daf6ab8acbf049705a4841
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524018"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670579"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Purge automatique zéro heure - protection contre le courrier indésirable et les programmes malveillants
 
@@ -72,7 +72,7 @@ Si vous souhaitez désactiver ZAP pour votre client 365 Office ou un ensemble d'
     
 Dans l'exemple suivant, ZAP est désactivé pour une stratégie de filtrage de contenu nommée «test».
     
-```
+```Powershell
   Set-HostedContentFilterPolicy -Identity Test -ZapEnabled $false
 ```
 
@@ -80,7 +80,7 @@ Dans l'exemple suivant, ZAP est désactivé pour une stratégie de filtrage de c
 
 ### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-mail-folder"></a>Que se passe-t-il si un message légitime est déplacé vers le dossier courrier indésirable?
   
-Vous devez suivre le processus de création de rapports normal pour les faux positifs. La seule raison pour laquelle le message est déplacé de la boîte de réception vers le dossier de courrier indésirable est que le service a déterminé que le message était du courrier indésirable ou malveillant.
+Vous devez suivre le processus de création de rapports normal pour les [faux positifs](prevent-email-from-being-marked-as-spam.md). La seule raison pour laquelle le message est déplacé de la boîte de réception vers le dossier de courrier indésirable est que le service a déterminé que le message était du courrier indésirable ou malveillant.
   
 ### <a name="what-if-i-use-the-office-365-quarantine-instead-of-the-junk-mail-folder"></a>Que faire en cas d'utilisation de la mise en quarantaine Office 365 au lieu du dossier courrier indésirable?
   
@@ -88,9 +88,9 @@ ZAP ne déplace pas les messages en quarantaine dans la boîte de réception pou
   
 ### <a name="what-if-i-have-a-custom-mail-flow-rule-block-allow-rule"></a>Que se passe-t-il si j'utilise une règle de flux de messagerie personnalisée (règle bloquer/autoriser)?
   
-Les règles créées par les administrateurs (règles de flux de messagerie) ou les règles de blocage et d'autorisation sont prioritaires. Ces messages sont exclus des critères de fonctionnalité.
+Les règles créées par les administrateurs (règles de flux de messagerie) ou les règles de blocage et d'autorisation sont prioritaires. Ces messages sont exclus des critères de fonctionnalité de sorte que le flux de messagerie suit l'action de la règle (règle bloquer/autoriser).
   
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Protection contre le courrier indésirable pour Office 365](anti-spam-protection.md)
   

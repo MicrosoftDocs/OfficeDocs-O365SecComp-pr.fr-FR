@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Si vous envoyez un volume important de courrier non enregistré de domaine, vous risquez de bloquer le blocage de votre courrier. Lisez cet article pour en savoir plus.
-ms.openlocfilehash: 8120bd147da2a7aab41ae14c444d2fe57242199e
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 21c403c8072902565f63048782b06c531cdbceb0
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276224"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670539"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>Courrier électronique de domaine non enregistré: ce que vous devez savoir
 
@@ -37,7 +37,7 @@ Une fois compromis, les clients ne pourront pas envoyer de messages sortants pou
 
 Il y a plusieurs choses à faire si vous êtes bloqué pour l'envoi à partir de domaines non enregistrés:
 
-1. Assurez-vous d'enregistrer tous vos domaines dans le centre d'administration Office 365. Vous trouverez plus d'informations [ici](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+1. Assurez-vous d'enregistrer tous vos domaines dans le centre d'administration Microsoft 365. Vous trouverez plus d'informations [ici](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
 2. Recherchez les connecteurs inhabituels. Les acteurs malveillants vont souvent créer de nouveaux connecteurs entrants dans votre client Office 365 pour envoyer du courrier indésirable. Vous trouverez plus d'informations sur la vérification de vos connecteurs [ici](https://docs.microsoft.com/en-us/powershell/module/exchange/mail-flow/get-inboundconnector?view=exchange-ps). 
 
@@ -48,7 +48,7 @@ Il y a plusieurs choses à faire si vous êtes bloqué pour l'envoi à partir de
 
 4. Une fois la procédure terminée, vous devez appeler le support Microsoft et demander à ce que votre locataire débloquée pour envoyer à nouveau des domaines non enregistrés.  Le fait de fournir le code d'erreur est utile, mais vous devrez prouver que votre environnement est sécurisé et que le courrier indésirable ne sera pas renvoyé. Vous trouverez plus d'informations sur l'ouverture d'un cas de support [ici](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online).
   
-## <a name="for-more-information"></a>Pour plus d’informations
+## <a name="for-more-information"></a>Pour plus d'informations
 
 [Protection contre le courrier indésirable pour Office 365](anti-spam-protection.md)
 

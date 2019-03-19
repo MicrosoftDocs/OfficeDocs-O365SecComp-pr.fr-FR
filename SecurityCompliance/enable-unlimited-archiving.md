@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: "Pour les administrateurs: Découvrez comment activer l'archivage à extension automatique dans Office 365, qui permet à vos utilisateurs de disposer d'un espace de stockage illimité pour leurs boîtes aux lettres Exchange Online. Vous pouvez activer l'archivage à extension automatique pour l'ensemble de votre organisation ou uniquement pour des utilisateurs spécifiques."
-ms.openlocfilehash: 96e9fdd4b645df9e52cf9e11c3a43a80ef029ffa
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 634807a687a8ccbb764a54300f338263f876b604
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296027"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670619"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>Activer l'archivage illimité dans Office 365-aide de l'administrateur
 
@@ -35,7 +35,7 @@ Vous pouvez utiliser la fonctionnalité d'archivage Exchange Online avec extensi
     
 - Vous pouvez également utiliser PowerShell pour activer les boîtes aux lettres d'archivage. Consultez la section [plus d'informations](#more-information) pour obtenir un exemple de la commande PowerShell que vous pouvez utiliser pour activer des boîtes aux lettres d'archivage pour tous les utilisateurs de votre organisation. 
     
-- L'archivage à extension automatique prend également en charge les boîtes aux lettres partagées. Pour activer l'archivage pour une boîte aux lettres partagée, une licence Exchange Online plan 2 ou une licence Exchange Online plan 1 avec une licence d'archivage Exchange Online est requise.
+- L’archivage à extension automatique prend aussi en charge les boîtes aux lettres partagées. Pour activer l'archivage pour une boîte aux lettres partagée, une licence Exchange Online plan 2 ou une licence Exchange Online plan 1 avec une licence d'archivage Exchange Online est requise.
     
 - Vous ne pouvez pas utiliser le centre d'administration Exchange &amp; ou le centre de sécurité conformité pour activer l'archivage à extension automatique. Vous devez utiliser Exchange Online PowerShell. Pour vous connecter à votre organisation Exchange Online à l'aide de Remote PowerShell, consultez la rubrique [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
     
@@ -114,8 +114,13 @@ Gardez les points suivants à l'esprit après avoir activé l'archivage à exten
     
 - Une fois l'archivage à extension automatique activé, il est impossible de l'activer.
     
-- L'archivage à extension automatique est pris en charge pour les boîtes aux lettres d'archivage en nuage dans un déploiement hybride Exchange pour les utilisateurs disposant d'une boîte aux lettres principale locale. Toutefois, une fois que l'archivage en développement automatique est activé pour une boîte aux lettres d'archivage informatique, vous ne pouvez pas désactiver l'archivage de la boîte aux lettres dans l'organisation Exchange locale.
+- L'archivage à extension automatique est pris en charge pour les boîtes aux lettres d'archivage en nuage dans un déploiement hybride Exchange pour les utilisateurs disposant d'une boîte aux lettres principale locale. Toutefois, une fois que l'archivage en développement automatique est activé pour une boîte aux lettres d'archivage informatique, vous ne pouvez pas désactiver l'archivage de la boîte aux lettres dans l'organisation Exchange locale. Notez que l'archivage à extension automatique n'est pas pris en charge pour les boîtes aux lettres locales dans Exchange Server 2010.
     
 - Pour obtenir la liste des clients Outlook que les utilisateurs peuvent utiliser pour accéder aux éléments de la zone de stockage supplémentaire dans leur boîte aux lettres d'archivage, consultez la section «Configuration requise par Outlook pour accéder aux éléments dans une archive étendue automatiquement» dans [vue d'ensemble d'un archivage illimité dans Office 365](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive) .
     
 - Comme indiqué précédemment, 10 Go est ajouté au quota de stockage de la boîte aux lettres d'archivage principale de l'utilisateur (et au dossier éléments récupérables si la boîte aux lettres est en conservation) lorsque vous exécutez la commande **Enable-Mailbox-AutoExpandingArchive** . Cela permet un stockage supplémentaire jusqu'à ce que l'espace de stockage étendu automatiquement soit mis en service (ce qui peut prendre jusqu'à 30 jours). Cet espace de stockage supplémentaire n'est pas ajouté lorsque vous exécutez le **Set-OrganizationConfig-AutoExpandingArchive** pour activer l'archivage à extension automatique pour toutes les boîtes aux lettres de votre organisation. Si vous avez activé l'archivage à extension automatique pour l'ensemble de l'organisation, mais que vous avez besoin d'ajouter 10 Go d'espace de stockage supplémentaire pour un utilisateur spécifique, vous pouvez exécuter la commande **Enable-Mailbox-AutoExpandingArchive** sur cette boîte aux lettres. Notez que vous recevrez une erreur indiquant que l'archivage à extension automatique a déjà été activé, mais que l'espace de stockage supplémentaire sera ajouté à la boîte aux lettres. 
+
+- Les administrateurs ne peuvent pas ajuster le quota de stockage.
+
+> [!IMPORTANT]
+> L'archivage à extension automatique est uniquement pris en charge pour les boîtes aux lettres utilisées pour des utilisateurs individuels ou des boîtes aux lettres partagées dont le taux de croissance ne dépasse pas 1 Go par jour. L'utilisation de la journalisation, des règles de transport ou des règles de transfert automatique pour copier des messages vers une boîte aux lettres d'archivage à des fins d'archivage n'est pas autorisée. La boîte aux lettres d'archivage d'un utilisateur est destinée uniquement à cet utilisateur. Microsoft se réserve le droit de refuser l'archivage illimité dans les cas où la boîte aux lettres d'archivage d'un utilisateur sert à stocker les données d'archivage d'autres utilisateurs.

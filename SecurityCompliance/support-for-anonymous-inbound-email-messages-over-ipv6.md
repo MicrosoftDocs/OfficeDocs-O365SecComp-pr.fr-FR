@@ -15,16 +15,16 @@ ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer la prise en charge des messages anonymes provenant de sources IPv6 pour Exchange Online Protection et Exchange Online.
-ms.openlocfilehash: 229ee045d03b3fa4ccb7b4d5e59e1b2b7df6a7d7
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 328cef29b7f8b9637ece7aca729ad1d706351667
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276354"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670519"
 ---
 # <a name="support-for-anonymous-inbound-email-messages-over-ipv6"></a>Prise en charge des messages entrants anonymes sur IPv6
 
-Exchange Online Protection (EOP) et Exchange Online prennent en charge la réception de messages électroniques entrants anonymes dans le cadre de communications IPv6 provenant d'expéditeurs qui n'envoient pas de messages via le protocole TLS (Transport Layer Security). Vous pouvez vous abonner pour recevoir des messages via IPv6 en demandant cette fonctionnalité au support Microsoft en ouvrant le centre d'administration Office [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home)365 à l'adresse, en cliquant sur **support**, puis en cliquant sur **nouvelle demande de service**. Si vous refusez les communications IPv6, vous continuerez à recevoir vos messages via le protocole IPv4.
+Exchange Online Protection (EOP) et Exchange Online prennent en charge la réception de messages électroniques entrants anonymes dans le cadre de communications IPv6 provenant d'expéditeurs qui n'envoient pas de messages via le protocole TLS (Transport Layer Security). Vous pouvez vous abonner pour recevoir des messages via IPv6 en demandant cette fonctionnalité au support Microsoft en ouvrant le centre d'administration Microsoft [https://admin.microsoft.com/adminportal/home](https://admin.microsoft.com/adminportal/home)365 à l'adresse, en cliquant sur **support**, puis en cliquant sur **nouvelle demande de service**). Si vous refusez les communications IPv6, vous continuerez à recevoir vos messages via le protocole IPv4.
   
 Les expéditeurs qui transmettent des messages au service sur IPv6 doivent respecter les deux conditions suivantes :
   
@@ -42,7 +42,7 @@ Si vous n'avez pas accepté de recevoir des messages sur IPv6 et que l'expédite
   
  `550 5.2.1 Service unavailable, [contoso.com] does not accept email over IPv6.`
   
-## <a name="for-more-information"></a>Pour plus d’informations
+## <a name="for-more-information"></a>Pour plus d'informations
 
 [Prise en charge de la validation des messages signés DKIM](support-for-validation-of-dkim-signed-messages.md)
   

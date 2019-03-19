@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft offre une assistance pour EOP à divers emplacements et via plusieurs méthodes, y compris via des options de support autonome et de support assisté.
-ms.openlocfilehash: af99b029fec25368cafcacef7558eda0dc94af25
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 7321b93f8391a3238535c905b1f9c916278843a9
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027551"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670529"
 ---
 # <a name="help-and-support-for-eop"></a>Aide et support pour EOP
 
@@ -38,9 +38,9 @@ Page relative à la [procédure pas à pas relative au flux de messagerie Office
   
 ## <a name="assisted-support-from-microsoft"></a>Support assisté de Microsoft
 
-Vous pouvez obtenir une assistance de la part de Microsoft en créant une demande de service dans le Centre d'administration Office 365 ou par téléphone. Les abonnés au support Premier bénéficient d'une assistance supplémentaire.
+Vous pouvez obtenir de l'aide auprès de Microsoft en lançant une nouvelle demande de service dans le centre d'administration 365 de Microsoft ou en appelant le téléphone. Les abonnés au support Premier bénéficient d’une assistance supplémentaire.
   
-### <a name="support-for-microsoft-premier-support-subscribers"></a>Assistance pour les abonnés au support Microsoft Premier
+### <a name="support-for-microsoft-premier-support-subscribers"></a>Assistance pour les abonnés au support Microsoft Premier
 
 Si vous êtes client EOP et que vous disposez d'un contrat de support Microsoft Premier, vous pouvez obtenir une assistance via les canaux normaux du support Microsoft Premier. Vous pouvez ainsi bénéficier de l'accès à tous les processus et à toutes les ressources disponibles pour les clients du support Premier, comme un responsable technique de compte et la soumission de requête. Le support Premier pour Microsoft Online Services dépasse le cadre du support Premier des produits sur site et l'étend aux services en ligne, en vous offrant un support unifié pour tous les produits et services. Il permet de s'assurer que les clients peuvent résoudre rapidement leurs problèmes et simplifie la gestion du support pour les différents composants d'une infrastructure informatique.
   
@@ -48,7 +48,7 @@ Pour plus d'informations sur la façon dont le support Premier peut aider votre 
   
 ### <a name="ask-for-help-on-the-web"></a>Demander une assistance sur le web
 
-1. Connectez-vous au Centre d'administration Office 365.
+1. Connectez-vous au centre d'administration Microsoft 365.
     
 2. Accédez à **Support** \> **Demander une assistance clientèle** \> **Nouvelle demande de service**.
     
@@ -56,7 +56,7 @@ Pour plus d'informations sur la façon dont le support Premier peut aider votre 
     
 ### <a name="ask-for-help-on-the-telephone"></a>Demander une assistance téléphonique
 
-1. Connectez-vous au Centre d'administration Office 365.
+1. Connectez-vous au centre d'administration Microsoft 365.
     
 2. Pour des problèmes d'ordre général concernant le produit, accédez à **Support** \> **Demander une assistance clientèle** \> **Appeler le support technique**.
     
@@ -77,12 +77,12 @@ Microsoft met à disposition des numéros de téléphone locaux ou gratuits pour
 |Corée  <br/> |Numéro gratuit : 080-495-0880          Local : 234831937  <br/> |Identique  <br/> |
 |Espagne  <br/> |Numéro gratuit : 900 814 197          Local : 912 718 160  <br/> |Identique  <br/> |
 |Royaume-Uni  <br/> |Numéro gratuit : 0800 032 6417          Local : 0203 450 6455  <br/> |Identique  <br/> |
-|États-Unis  <br/> |Numéro gratuit : 1-877-913-2707  <br/> |Numéro gratuit : 1-800-865-9408  <br/> |
+|États-Unis  <br/> |Numéro gratuit : 1-877-913-2707  <br/> |Numéro gratuit : 1-800-865-9408  <br/> |
    
 ## <a name="for-more-information-about-eop-documentation"></a>Pour plus d'informations sur la documentation relative à EOP
 
-[Coyright tiers](third-party-copyright-notices.md)
+[Mentions de droits d'auteur tierces](third-party-copyright-notices.md)
   
-[Accessibilité des personnes présentant un handicap](accessibility-for-people-with-disabilities.md)
+[Accessibilité pour les personnes présentant un handicap](accessibility-for-people-with-disabilities.md)
   
 

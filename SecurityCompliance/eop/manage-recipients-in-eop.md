@@ -10,17 +10,17 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 2921f544-8257-4bae-8e3a-ce9250e9f162
-description: Microsoft Exchange Online Protection (EOP) vous propose plusieurs façons de gérer vos destinataires de message. En tant qu'administrateur, vous pouvez réaliser certaines tâches de gestion dans le Centre d'administration Exchange (CAE) ou utiliser Windows PowerShell, et vous pouvez vérifier d'autres tâches de gestion réalisées dans le Centre d'administration Office 365 de Microsoft.
-ms.openlocfilehash: 55b28dcb107df85052ff623f653eecaaf88c7bda
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+description: Microsoft Exchange Online Protection (EOP) vous propose plusieurs façons de gérer vos destinataires de message. En tant qu'administrateur, vous pouvez effectuer certaines tâches de gestion dans le centre d'administration Exchange ou à l'aide de Windows PowerShell à distance et vérifier les autres tâches de gestion effectuées dans le centre d'administration 365 de Microsoft.
+ms.openlocfilehash: 52d423960444605382bd0314a5c12114fad755a2
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341655"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670399"
 ---
 # <a name="manage-recipients-in-eop"></a>Gestion des destinataires dans Exchange Online Protection (EOP)
 
-Microsoft Exchange Online Protection (EOP) vous propose plusieurs façons de gérer vos destinataires de message. En tant qu'administrateur, vous pouvez réaliser certaines tâches de gestion dans le Centre d'administration Exchange (CAE) ou utiliser Windows PowerShell, et vous pouvez vérifier d'autres tâches de gestion réalisées dans le Centre d'administration Office 365 de Microsoft.
+Microsoft Exchange Online Protection (EOP) vous propose plusieurs façons de gérer vos destinataires de message. En tant qu'administrateur, vous pouvez effectuer certaines tâches de gestion dans le centre d'administration Exchange ou à l'aide de Windows PowerShell à distance et vérifier les autres tâches de gestion effectuées dans le centre d'administration 365 de Microsoft.
   
 EOP prend en charge les types de destinataires suivants :
   

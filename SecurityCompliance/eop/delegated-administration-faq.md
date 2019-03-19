@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 description: Cette rubrique contient des questions fréquemment posées et la réponse à ces questions pour les partenaires et les revendeurs Microsoft qui veulent effectuer des tâches d'administration Office 365 déléguée, y compris la capacité à gérer Exchange Online Protection (EOP) pour d'autres locataires (entreprises).
-ms.openlocfilehash: b6096e835f90a0d5f22a39a5df76e52f1a25a79d
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 61f939932ab221343b67f87dd5c63f6697e70026
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027491"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670439"
 ---
 # <a name="delegated-administration-faq"></a>FAQ sur l'administration déléguée
 
@@ -24,7 +24,7 @@ Cette rubrique contient des questions fréquemment posées et la réponse à ces
   
  **Q. Je suis revendeur et je dois gérer les locataires de mon client. Comment cela fonctionne-t-il ?**
   
-R. Si vous êtes un partenaire ou un revendeur Microsoft et que vous vous êtes inscrit pour devenir gestionnaire Microsoft, vous pouvez demander l'autorisation d'administrer ses locataires dans le Centre d'administration Office 365. C'est ce qu'on appelle l'administration déléguée. Elle vous permet de gérer son locataire Office 365 (notamment les paramètres EOP) comme si vous étiez administrateur au sein de son organisation Les étapes permettant d'effectuer une administration déléguée sont les suivantes :
+A. Si vous êtes un partenaire ou un revendeur Microsoft et que vous êtes inscrit en tant que conseiller Microsoft, vous pouvez demander l'autorisation d'administrer son client au sein du centre d'administration. C'est ce qu'on appelle l'administration déléguée. Elle vous permet de gérer son locataire Office 365 (notamment les paramètres EOP) comme si vous étiez administrateur au sein de son organisation Les étapes permettant d'effectuer une administration déléguée sont les suivantes :
   
 1. Inscrivez-vous pour devenir [partenaire Microsoft Office 365](https://aka.ms/cloudbenefits).
     
@@ -44,6 +44,6 @@ R. Office 365 ne dispose actuellement pas de cette fonctionnalité.
   
  **Q. Puis-je disposer de la création de rapports consolidés dans l'ensemble de mes sous-locataires ?**
   
-R. La création de rapports consolidés dans l'ensemble des entreprises que vous gérez n'est pas disponible pour les rapports du Centre d'administration Office 365 pour le moment. Cependant, vous pouvez créer des rapports via Windows PowerShell distant ou le [service web de création de rapports Office 365](https://go.microsoft.com/fwlink/?LinkId=279926). 
+R. La création de rapports conSolidés dans les sociétés que vous gérez n'est pas disponible pour les rapports du centre d'administration de Microsoft 365 pour le moment. Cependant, vous pouvez créer des rapports via Windows PowerShell distant ou le [service web de création de rapports Office 365](https://go.microsoft.com/fwlink/?LinkId=279926). 
   
 

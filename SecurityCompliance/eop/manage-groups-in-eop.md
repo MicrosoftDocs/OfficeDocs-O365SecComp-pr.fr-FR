@@ -10,13 +10,13 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
-description: Vous pouvez utiliser Exchange Online Protection (EOP) pour créer des groupes à extension messagerie pour une organisation Exchange. Vous pouvez également utiliser EOP pour définir ou mettre à jour les propriétés du groupe qui spécifient l’appartenance, les adresses de messagerie et les autres aspects des groupes.
-ms.openlocfilehash: 1af39e3a55864a9a87f90e0a00957ebf1631bb45
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+description: Vous pouvez utiliser Exchange Online Protection (EOP) pour créer des groupes à extension messagerie pour une organisation Exchange. Vous pouvez également utiliser EOP pour définir ou mettre à jour les propriétés de groupe qui indiquent l'appartenance, les adresses électroniques et d'autres aspects des groupes.
+ms.openlocfilehash: 2e747dc9a26cbbc1ce214107235ccea62f175dd0
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003173"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670459"
 ---
 # <a name="manage-groups-in-eop"></a>Gestion des groupes dans Exchange Online Protection (EOP)
 
@@ -79,13 +79,13 @@ Vous pouvez créer deux types de groupes pour votre organisation Exchange :
     
 2. Effectuez l'une des opérations suivantes :
     
-  - Pour modifier un groupe : dans la liste des groupes, cliquez sur la distribution ou un groupe de sécurité que vous souhaitez afficher ou modifier, puis cliquez sur **Modifier** ![icône Modifier](../media/ITPro-EAC-EditIcon.gif). Vous pouvez mettre à jour les paramètres généraux, ajouter ou supprimer du groupe propriétaires et ajouter ou supprimer des membres du groupe, selon vos besoins.
+  - Pour modifier un groupe: dans la liste des groupes, cliquez sur le groupe de distribution ou de sécurité que vous souhaitez afficher ou modifier, puis **** ![cliquez sur modifier](../media/ITPro-EAC-EditIcon.gif)l'icône de modification. Vous pouvez mettre à jour les paramètres généraux, ajouter ou supprimer des propriétaires du groupe, et ajouter ou supprimer des membres du groupe, selon vos besoins.
     
   - Pour supprimer un groupe : Sélectionnez le groupe et cliquez sur **Supprimer**![Icône Suppression](../media/ITPro-EAC-RemoveIcon.gif).
     
 3. Après avoir effectué toutes les modifications voulues, cliquez sur **Enregistrer**.
     
-## <a name="create-edit-or-remove-a-group-using-remote-windows-powershell"></a>Créer, modifier ou supprimer un groupe à l'aide de Windows PowerShell à distance
+## <a name="create-edit-or-remove-a-group-using-remote-windows-powershell"></a>Créer, modifier ou supprimer un groupe à l’aide de Windows PowerShell à distance
 
 Cette section fournit des informations sur la création de groupes et la modification de leurs propriétés à l’aide de Windows PowerShell à distance. Elle explique également comment supprimer un groupe existant. 
   
@@ -93,7 +93,7 @@ Cette section fournit des informations sur la création de groupes et la modific
   
 Cet exemple utilise la cmdlet [New-EOPDistributionGroup](http://technet.microsoft.com/library/4610dfe5-fca8-4ba8-be3c-535d1753e0f4.aspx) pour créer un groupe de distribution avec l'alias itadmin et le nom IT Administrators. Il ajoute également des utilisateurs en tant que membres du groupe. 
   
-```
+```Powershell
 New-EOPDistributionGroup -Type "Distribution" -Name "IT Administrators" -Alias itadmin -Members @("Member1","Member2","Member3") -ManagedBy "Member1"
 
 ```
@@ -102,21 +102,21 @@ Pour créer un groupe de sécurité et non un groupe de distribution, spécifiez
   
 Pour vérifier que vous avez créé avec succès le groupe IT Administrators, exécutez la cmdlet [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx) pour afficher les informations sur le nouveau groupe : 
   
-```
+```Powershell
 Get-Recipient "IT Administrators" | Format-List
 
 ```
 
 Pour obtenir la liste des membres du groupe, exécutez la cmdlet [Get-DistributionGroupMember](http://technet.microsoft.com/library/15c71bc5-4246-44ac-8b34-8ccd585294b5.aspx) comme suit : 
   
-```
+```Powershell
 Get-DistributionGroupMember "IT Administrators"
 
 ```
 
 Pour obtenir la liste complète de tous vos groupes, exécutez la cmdlet [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx) comme suit : 
   
-```
+```Powershell
 Get-Recipient -RecipientType "MailUniversalDistributionGroup" | FT | more
 
 ```
@@ -129,28 +129,28 @@ Voici quelques exemples d'utilisation de Windows PowerShell à distance pour mod
   
 Cet exemple utilise la cmdlet [Set-EOPDistributionGroup](http://technet.microsoft.com/library/689a66c5-a524-4870-88f3-091fd6eae3b7.aspx) pour modifier l'adresse SMTP principale (également appelée l'adresse de réponse) pour le groupe Seattle Employees en sea.employees@contoso.com. 
   
-```
+```Powershell
 Set-EOPDistributionGroup "Seattle Employees" -PrimarysmptAddress "sea.employees@contoso.com"
 
 ```
 
 Pour vérifier que vous avez modifié avec succès les propriétés d'un groupe, utilisez la cmdlet [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx) pour contrôler les modifications. L'utilisation de PowerShell à distance présente l'avantage de pouvoir afficher plusieurs propriétés de plusieurs groupes. Dans l'exemple ci-dessus, où le groupe d'adresses SMTP principal a été modifié, exécutez la commande suivante pour vérifier la nouvelle valeur : 
   
-```
+```Powershell
 Get-Recipient "Seattle Employees" | FL "PrimarySmtpAddress"
 
 ```
 
 Cet exemple utilise la cmdlet [Update-EOPDistributionGroupMember](http://technet.microsoft.com/library/a6d4f790-1b94-42f8-af6f-fa79c504d8ec.aspx) pour mettre à jour tous les membres du groupe Seattle Employees. Utilisez des virgules pour séparer tous les membres. 
   
-```
+```Powershell
 Update-EOPDistributionGroupMember -Identity "Seattle Employees" -Members @("Member1","Member2","Member3","Member4","Member5")
 
 ```
 
 Pour obtenir la liste de tous les membres du groupe Seattle Employees, utilisez la cmdlet [Get-DistributionGroupMember](http://technet.microsoft.com/library/15c71bc5-4246-44ac-8b34-8ccd585294b5.aspx) comme suit : 
   
-```
+```Powershell
 Get-DistributionGroupMember "Seattle Employees"
 
 ```
@@ -159,14 +159,14 @@ Get-DistributionGroupMember "Seattle Employees"
   
 Cet exemple utilise la cmdlet [Remove-EOPDistributionGroup](http://technet.microsoft.com/library/a17b1307-3187-40b0-a438-c7b35a34c002.aspx) pour supprimer un groupe de distribution nommé IT Administrators. 
   
-```
+```Powershell
 Remove-EOPDistributionGroup -Identity "IT Administrators" 
 
 ```
 
 Pour vérifier que le groupe a été supprimé, exécutez la cmdlet [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx) comme suit, et confirmez que le groupe (dans ce cas, IT Administrators) a été supprimé. 
   
-```
+```Powershell
 Get-Recipient -RecipientType "MailUniversalDistributionGroup"
 
 ```

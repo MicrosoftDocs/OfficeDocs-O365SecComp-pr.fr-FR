@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Cette rubrique explique comment configurer Microsoft Exchange Online Protection (EOP). Si vous avez été redirigé depuis l'Assistant Domaines Office 365, revenez à l'Assistant Domaines Office 365 si vous ne souhaitez pas utiliser Exchange Online Protection. Si vous recherchez plus d'informations sur la configuration des connecteurs, consultez la rubrique Configure mail flow using connectors in Office 365.
-ms.openlocfilehash: 6c9e3becf0f86deeee92ec7cf336bdbd950ac5e2
-ms.sourcegitcommit: f49ab866e21da83a0be6cb23ab7b6b4366a6a7ee
+ms.openlocfilehash: 96751f1f68e0b73c1d92b6868e99f4eb1c2739bf
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "25715900"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670609"
 ---
 # <a name="set-up-your-eop-service"></a>Configurer votre service EOP
 
@@ -38,32 +38,32 @@ Cette rubrique explique comment configurer Microsoft Exchange Online Protection 
 > [!TIP]
 > Vous rencontrez des difficultés ? Demandez de l'aide en participant aux forums Exchange. Visitez les forums sur les pages [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), et [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## <a name="how-do-you-do-this"></a>Comment procéder ?
+## <a name="how-do-you-do-this"></a>Comment procéder ?
 
-### <a name="step-1-use-the-office-365-admin-center-to-add-and-verify-your-domain"></a>Étape 1 : utiliser le Centre d'administration Office 365 pour ajouter et vérifier votre domaine
+### <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>Étape 1: utiliser le centre d'administration Microsoft 365 pour ajouter et vérifier votre domaine
 
-1. Dans le Centre d'administration Office 365, accédez à **Installation** pour ajouter votre domaine au service. 
+1. Dans le centre d'administration Microsoft 365, accédez à **configuration** pour ajouter votre domaine au service. 
     
-    Vous ne savez pas où se trouve le Centre d'administration Office 365 ? Apprenez-en plus sur la page [À propos de l'ancien Centre d'administration Office 365](https://go.microsoft.com/fwlink/p/?LinkId=521888).
+    Vous ne savez pas où trouver le centre d'administration Microsoft 365? Pour plus d'informations, consultez la rubrique à [propos du centre d'administration Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=521888).
     
 2. Suivez les étapes pour ajouter les enregistrements DNS applicables à votre fournisseur d'hébergement DNS afin de vérifier l'appartenance du domaine.
     
 > [!TIP]
 > Les rubriques [Ajouter votre domain à Office 365](https://support.office.com/en-us/article/add-a-domain-to-office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611) et [Créer des enregistrements DNS pour Office 365 lorsque vous gérez vos enregistrements DNS](https://support.office.com/en-us/article/create-dns-records-at-any-dns-hosting-provider-for-office-365-7b7b075d-79f9-4e37-8a9e-fb60c1d95166) constituent des ressources utiles à consulter lors de l'ajout de votre domaine au service et de la configuration de DNS. 
   
-### <a name="step-2-add-recipients-and-optionally-enable-dbeb"></a>Étape 2 : Ajouter des destinataires et éventuellement activer DBEB
+### <a name="step-2-add-recipients-and-optionally-enable-dbeb"></a>Étape 2 : Ajouter des destinataires et éventuellement activer DBEB
 
 Avant de configurer votre flux de messagerie vers et depuis le service EOP, nous vous recommandons d'ajouter vos destinataires au service. Il existe plusieurs méthodes pour mener à bien cette opération, comme indiqué dans [Gestion des utilisateurs de messagerie dans EOP](manage-mail-users-in-eop.md). Aussi, si vous souhaitez activer le blocage du périmètre basé sur l'annuaire (DBEB) afin d'appliquer la vérification du destinataire dans le service après avoir ajouté vos destinataires, vous devez définir votre type de domaine sur Faisant autorité. Pour plus d'informations sur le DBEB, consultez la rubrique [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx).
   
-### <a name="step-3-use-the-eac-to-set-up-mail-flow"></a>Étape 3 : Utiliser le CAE pour configurer le flux de messagerie
+### <a name="step-3-use-the-eac-to-set-up-mail-flow"></a>Étape 3 : Utiliser le CAE pour configurer le flux de messagerie
 
 Créez des connecteurs dans le Centre d'administration Exchange (CAE) qui activent le flux de messagerie entre EOP et vos serveurs de messagerie locaux. Pour plus d'informations, consultez la rubrique [Set up connectors to route mail between Office 365 and your own email servers](http://technet.microsoft.com/library/2e93fd60-a5ef-4e64-8e62-2b862b2d1033.aspx).
   
-#### <a name="how-do-you-know-this-task-worked"></a>Comment savoir si cette tâche a fonctionné ?
+#### <a name="how-do-you-know-this-task-worked"></a>Comment savoir si cette tâche a fonctionné ?
 
 Utilisez l'Analyseur de connectivité à distance pour exécuter un test qui vérifie le flux de messages entre le service et votre environnement. Pour plus d'informations, consultez la section « Utiliser l'Analyseur de connectivité à distance pour tester la remise du courrier électronique » de la rubrique [Testing Mail Flow with the Remote Connectivity Analyzer](http://technet.microsoft.com/library/6c8c2964-d553-4329-8166-6e508dd63fa0.aspx).
   
-### <a name="step-4-allow-inbound-port-25-smtp-access"></a>Étape 4 : Autoriser l'accès SMTP entrant sur le port 25
+### <a name="step-4-allow-inbound-port-25-smtp-access"></a>Étape 4 : Autoriser l’accès SMTP entrant sur le port 25
 
 Après avoir configuré les connecteurs, attendez 72 heures avant d'autoriser la propagation de vos mises à jour d'enregistrement DNS. Ensuite, limitez le trafic SMTP entrant sur le port 25 au niveau du pare-feu ou des serveurs de messagerie de façon à accepter uniquement le courrier électronique en provenance des centres de données EOP, en particulier des adresses IP répertoriées dans [Adresses IP d'Exchange Online Protection](exchange-online-protection-ip-addresses.md). Cela protège votre environnement local en limitant l'étendue des messages entrants. Si des paramètres définis sur votre serveur de messagerie contrôlent les adresses IP autorisées à se connecter pour le relais de messagerie, mettez-les à jour également.
   
@@ -72,15 +72,15 @@ Après avoir configuré les connecteurs, attendez 72 heures avant d'autoriser la
   
 ### <a name="step-5-use-the-shell-to-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Étape 5 : Utiliser l'environnement de ligne de commande Exchange Management Shell pour vérifier que le courrier indésirable est routé vers le dossier Courrier indésirable de chaque utilisateur
 
-Pour vous assurer que courrier non sollicité (indésirable) est correctement routé vers le dossier courrier indésirable de chaque utilisateur, vous devez effectuer quelques étapes de configuration. Les étapes sont fournies dans [vous assurer que le courrier indésirable est routé vers le dossier courrier indésirable de chaque utilisateur](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+Pour vous assurer que le courrier indésirable est correctement routé vers le dossier Courrier indésirable de chaque utilisateur, vous pouvez effectuer quelques opérations de configuration. Les étapes sont fournies dans la procédure [vous assurer que le courrier indésirable est acheminé vers le dossier de courrier indésirable de chaque utilisateur](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
   
-Si vous ne souhaitez pas déplacer les messages vers le dossier courrier indésirable de chaque utilisateur, vous pouvez choisir une autre action en modifiant vos stratégies de filtrage de contenu dans le centre d’administration Exchange. Pour plus d’informations, voir [configurer vos stratégies de filtrage du courrier indésirable](../configure-your-spam-filter-policies.md).
+Si vous ne souhaitez pas déplacer les messages vers le dossier Courrier indésirable de chaque utilisateur, vous pouvez choisir une autre action en modifiant vos stratégies de filtrage de contenu dans le Centre d'administration Exchange. Pour plus d'informations, consultez la rubrique [Configuration de vos stratégies de filtrage du courrier indésirable](../configure-your-spam-filter-policies.md).
   
-### <a name="step-6-use-the-office-365-admin-center-to-point-your-mx-record-to-eop"></a>Étape 6 : utiliser le Centre d'administration Office 365 pour faire pointer votre enregistrement MX vers EOP
+### <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Étape 6: utiliser le centre d'administration Microsoft 365 pour faire pointer votre enregistrement MX vers EOP
 
 Suivez les étapes de configuration de domaine Office 365 pour mettre à jour votre enregistrement MX pour votre domaine, de sorte que votre courrier entrant circule dans EOP. Veillez à pointer directement votre enregistrement MX vers EOP plutôt que de faire relayer votre courrier électronique vers EOP par un service de filtrage tiers. Pour plus d'informations, vous pouvez de nouveau vous reporter à la rubrique [Créer des enregistrements DNS pour Office 365 lorsque vous gérez vos enregistrements DNS](https://go.microsoft.com/fwlink/p/?LinkId=304219).
   
-#### <a name="how-do-you-know-this-task-worked"></a>Comment savoir si cette tâche a fonctionné ?
+#### <a name="how-do-you-know-this-task-worked"></a>Comment savoir si cette tâche a fonctionné ?
 
 Utilisez l'Analyseur de connectivité à distance pour exécuter un test qui vérifie votre enregistrement MX. Pour plus d'informations, consultez la section « Utiliser l'Analyseur de connectivité à distance pour tester votre enregistrement MX et le connecteur sortant » de la rubrique [Testing Mail Flow with the Remote Connectivity Analyzer](http://technet.microsoft.com/library/6c8c2964-d553-4329-8166-6e508dd63fa0.aspx). 
   

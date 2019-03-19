@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Utilisez la recherche de contenu dans le centre &amp; de sécurité conformité Office 365 pour rechercher du contenu dans des boîtes aux lettres, des sites SharePoint Online, des comptes OneDrive, des groupes Microsoft Teams, des groupes Office 365 et des conversations Skype entreprise. Vous pouvez utiliser des requêtes de recherche par mot clé et des conditions de recherche pour affiner les résultats de la recherche. Vous pouvez ensuite afficher un aperçu et exporter les résultats de la recherche. La recherche de contenu est également un outil efficace pour rechercher du contenu susceptible d'être lié à une demande d'objet de données RGPD.
-ms.openlocfilehash: b7ecfc68c143225f097508e2cca0e87b7ce250d6
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 22792e9513d0e9a7be468bb13db2e4286f9f140c
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296357"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670719"
 ---
 # <a name="content-search-in-office-365"></a>Recherche de contenu dans Office 365
 
@@ -33,9 +33,9 @@ Vous pouvez utiliser l'outil eDiscovery de recherche de contenu dans le centre &
     
 - Conversations Skype entreprise
     
-- Microsoft Teams 
+- Microsoft Teams 
     
-- Groupes Office 365
+- Groupes Office 365
     
 Une fois que vous avez exécuté une recherche de contenu, le nombre d'emplacements de contenu et un nombre estimé de résultats de recherche sont affichés dans le profil de recherche. Vous pouvez également afficher rapidement des statistiques, telles que les emplacements de contenu qui contiennent le plus d'éléments qui correspondent à la requête de recherche. Après avoir exécuté une recherche, vous pouvez prévisualiser les résultats ou les exporter vers un ordinateur local.
 
@@ -54,7 +54,7 @@ Pour accéder à la page de **recherche de contenu** afin d'exécuter des recher
     
     ![Nouvelle liste déroulante de recherche](media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
   
-    Vous pouvez choisir l’une des options suivantes :
+    L’onglet Recherches DNS internes permet de spécifier si vous souhaitez utiliser les serveurs DNS configurés sur une carte réseau installée sur ce serveur ou des serveurs DNS spécifiques lors de la résolution des adresses de serveurs de messagerie électronique pour la remise des messages internes. Les serveurs DNS internes sont utilisés pour résoudre les adresses IP pour des serveurs à l’intérieur de l’organisation.
     
   - **Recherche guidée** -cette option démarre un assistant qui vous guide tout au long de la procédure de création de la recherche. L'interface utilisateur permettant de sélectionner des emplacements de contenu et de créer la requête de recherche est identique à la nouvelle option de **recherche** . 
     
@@ -70,7 +70,7 @@ Pour accéder à la page de **recherche de contenu** afin d'exécuter des recher
     
     ![Spécifier des mots clés, des conditions et des emplacements à rechercher](media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
   
-- **Mots clés de recherche** : tapez une requête de recherche dans la zone **Mots clés** . Vous pouvez spécifier des mots clés, des propriétés de message, telles que des dates d'envoi et de réception, ou des propriétés de document, telles que des noms de fichiers ou la date de la dernière modification d'un document. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, comme **and**, **or**, **not**et **near**. Vous pouvez également rechercher des informations sensibles (telles que des numéros de sécurité sociale) dans des documents ou Rechercher des documents qui ont été partagés en externe. Si vous laissez la zone mot clé vide, tout le contenu situé dans les emplacements de contenu spécifiés sera inclus dans les résultats de la recherche.
+- **Mots clés de recherche** : tapez une requête de recherche dans la zone **Mots clés** . Vous pouvez spécifier des mots clés, des propriétés de message telles que les dates d’envoi et de réception, ou des propriétés de document telles que les noms de fichier ou la date de dernière modification d’un document. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, comme **and**, **or**, **not**et **near**. Vous pouvez également rechercher des informations sensibles (telles que des numéros de sécurité sociale) dans des documents ou Rechercher des documents qui ont été partagés en externe. Si vous laissez la zone mot clé vide, tout le contenu situé dans les emplacements de contenu spécifiés sera inclus dans les résultats de la recherche.
     
     Vous pouvez également cliquer sur la case à cocher **afficher la liste de mots clés** et sur tapez un mot clé dans chaque ligne. Dans ce cas, les mots clés de chaque ligne sont connectés par un opérateur logique ( **c:s**) qui est similaire à la fonctionnalité de l'opérateur **or** de la requête de recherche créée. 
     
@@ -78,7 +78,7 @@ Pour accéder à la page de **recherche de contenu** afin d'exécuter des recher
 
     [!NOTE] Pour réduire les problèmes causés par des listes de mots clés volumineuses, vous êtes désormais limité à un maximum de 20 lignes dans la liste de mots clés.
     
-- **Conditions** : vous pouvez ajouter des conditions de recherche pour affiner une recherche et renvoyer un ensemble de résultats plus raffiné. Chaque condition ajoute une clause à la requête de recherche créée et exécutée lors du démarrage de la recherche. Une condition est logiquement liée à la requête de mot-clé (spécifiée dans la zone de mot clé) par un opérateur logique ( **c:c**) qui est similaire à la fonctionnalité de l'opérateur **and** . Cela signifie que les éléments doivent répondre à la fois à la requête de mot clé et à une ou plusieurs conditions à inclure dans les résultats. Voici comment les conditions vous aident à affiner vos résultats. Pour obtenir la liste et la description des conditions que vous pouvez utiliser dans une requête de recherche, consultez la section «conditions de recherche» dans [requêtes de mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md#search-conditions).
+- **Conditions** : vous pouvez ajouter des conditions de recherche pour affiner une recherche et renvoyer un ensemble de résultats plus raffiné. Chaque condition ajoute une clause à la requête de recherche créée et exécutée lors du démarrage de la recherche. Une condition est logiquement liée à la requête de mot-clé (spécifiée dans la zone de mot clé) par un opérateur logique ( **c:c**) qui est similaire à la fonctionnalité de l'opérateur **and** . Cela signifie que les éléments doivent répondre à la fois à la requête de mot clé et à une ou plusieurs conditions à inclure dans les résultats. C’est ainsi que les conditions contribuent à affiner vos résultats. Pour obtenir la liste et la description des conditions que vous pouvez utiliser dans une requête de recherche, consultez la section «conditions de recherche» dans [requêtes de mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md#search-conditions).
     
 - **Locations** : choisissez les emplacements de contenu à rechercher.
     
@@ -98,7 +98,7 @@ Pour accéder à la page de **recherche de contenu** afin d'exécuter des recher
     
 9. Cliquez sur **Enregistrer** pour démarrer la recherche. 
     
-    Une fois que vous avez enregistré et exécuté la recherche, tous les résultats renvoyés par la recherche sont affichés dans le volet résultats. En fonction de la configuration du paramètre aperçu configuré, les résultats de la recherche sont affichés ou vous devez cliquer sur afficher **un aperçu des résultats** pour les afficher. Pour plus d'informations, consultez la section suivante. 
+    Une fois que vous avez enregistré et exécuté la recherche, tous les résultats renvoyés par la recherche sont affichés dans le volet résultats. En fonction de la configuration du paramètre aperçu configuré, les résultats de la recherche sont affichés ou vous devez cliquer sur afficher **un aperçu des résultats** pour les afficher. Pour plus d’informations, voir la section suivante. 
     
 Pour accéder à de nouveau à cette recherche de contenu ou accéder aux autres recherches de contenu indiquées dans la page **recherche de contenu** , sélectionnez la recherche, puis cliquez sur **ouvrir**. 
   
@@ -148,15 +148,15 @@ Pour plus d'informations sur les statistiques de recherche, voir [View Keyword S
   
 ## <a name="export-search-results"></a>Exporter les résultats de la recherche
 
-Une fois que la recherche est exécutée correctement, vous pouvez exporter les résultats de la recherche vers un ordinateur local. Lorsque vous exportez les résultats de la messagerie, ceux-ci peuvent être téléchargés sur votre ordinateur en tant que fichiers PST ou en tant que messages individuels (fichiers. MSG). Lorsque vous exportez du contenu à partir de sites SharePoint et OneDrive, les copies des documents Office natifs sont exportées. Des documents et des rapports supplémentaires sont également inclus dans les résultats de recherche exportés. Vous pouvez également exporter simplement le rapport des résultats de la recherche et non les éléments réels.
+Une fois que la recherche est exécutée correctement, vous pouvez exporter les résultats de la recherche vers un ordinateur local. Lorsque vous exportez les résultats de la messagerie, ceux-ci peuvent être téléchargés sur votre ordinateur en tant que fichiers PST ou en tant que messages individuels (fichiers. MSG). Lorsque vous exportez du contenu à partir de sites SharePoint et OneDrive, les copies des documents Office natifs sont exportées. D’autres documents et rapports sont également inclus dans les résultats de recherche exportés. Vous pouvez également exporter simplement le rapport des résultats de la recherche et non les éléments réels.
   
 Pour exporter les résultats de la recherche:
   
-1. Sur la page **recherche de contenu** dans le &amp; Centre de sécurité conformité, cliquez sur **ouvrir** , puis sur la recherche pour laquelle vous souhaitez exporter les résultats de la recherche. 
+1. Sur la page **recherche de contenu** dans le &amp; Centre de sécurité conformité, cliquez sur la recherche pour laquelle vous souhaitez exporter les résultats de la recherche. 
     
 2. Sur la page vers la sortie, ![cliquez sur Exporter les](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) résultats de recherche **plus en plus**, puis cliquez sur **Exporter les résultats**. Notez que vous pouvez également exporter un rapport de résultats de recherche.
     
-3. Complétez les sections sur la page volante **Exporter les résultats**. Veillez à utiliser la barre de défilement pour afficher toutes les options d’exportation. 
+3. Complétez les sections sur la page de survol des **résultats d'exportation** . Veillez à utiliser la barre de défilement pour afficher toutes les options d'exportation. 
     
 Pour obtenir des instructions et des conseils de dépannage plus détaillés, voir:
   
@@ -196,8 +196,8 @@ Consultez les sections suivantes pour plus d'informations sur les recherches de 
 |:-----|:-----|
 |100  <br/> |30 secondes  <br/> |
 |1,000  <br/> |45 secondes  <br/> |
-|10 000  <br/> |4 minutes  <br/> |
-|25 000  <br/> |10 minutes  <br/> |
+|10 000  <br/> |4 minutes  <br/> |
+|25 000  <br/> |10 minutes  <br/> |
 |50 000  <br/> |20 minutes  <br/> |
 |100 000  <br/> |25 minutes  <br/> |
   
@@ -209,17 +209,17 @@ Gardez les points suivants à l'esprit lors de l'utilisation de la liste de mots
   
 - Vous devez activer la case à cocher **afficher la liste des mots** clés, puis taper chaque mot clé dans une ligne distincte pour créer une requête de recherche où les mots clés (ou les expressions de mots clés) de chaque ligne sont reliés par l'opérateur **ou** . Si vous collez simplement une liste de mots clés dans la zone de mot clé ou si vous appuyez sur la touche **entrée** après avoir tapé un mot clé, ils ne seront pas reliés par l'opérateur **or** . Voici un exemple incorrect et approprié pour l'ajout d'une liste de mots clés. 
     
-    **Inapproprié**
+    **Incorrect**
     
     ![Méthode incorrecte pour mettre en forme une liste de mots clés (en collant la liste dans la zone de mot clé)](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   
-    **Rectification**
+    **Correct**
     
     ![La méthode correcte pour mettre en forme une liste de mots clés (en sélectionnant case à cocher et en collant la liste)](media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
   
 - Vous pouvez également préparer une liste de mots clés ou d'expressions de mots clés dans un fichier Excel ou un fichier de texte brut, puis copier et coller votre liste dans la liste des mots clés. Pour ce faire, vous devez activer la case à cocher **afficher la liste de mots clés** . Ensuite, cliquez sur la première ligne de la liste de mots clés et collez votre liste. Chaque ligne du fichier Excel ou texte est collée sur une ligne distincte dans la liste de mots clés. 
     
-- Une fois que vous avez créé une requête à l'aide de la liste de mots clés, il est judicieux de vérifier la syntaxe de requête de recherche pour faire en sorte que la requête de recherche soit celle que vous souhaitiez. Dans la requête de recherche affichée sous **requête** dans le volet d'informations, les mots clés sont séparés par du texte **(c:s)**. cela indique que les mots-clés sont connectés par un opérateur logique semblable à la fonctionnalité à l'opérateur **or** . De même, si votre requête de recherche inclut des conditions, les mots clés et les conditions sont séparés par le texte **(c:c)**. cela indique que les mots clés sont connectés aux conditions avec un opérateur logique similaire à la fonctionnalité de **et** is. Voici un exemple de la requête de recherche (affichée dans le volet d'informations) résultant de l'utilisation de la liste de mots clés et d'une condition. 
+- Une fois que vous avez créé une requête à l'aide de la liste de mots clés, il est judicieux de vérifier la syntaxe de requête de recherche pour faire en sorte que la requête de recherche soit celle que vous souhaitiez. Dans la requête de recherche affichée sous **requête** dans le volet d'informations, les mots clés sont séparés par du texte **(c:s)**. Cela indique que les mots clés sont connectés par un opérateur logique semblable à la fonctionnalité à l'opérateur **or** . De même, si votre requête de recherche inclut des conditions, les mots clés et les conditions sont séparés par le texte **(c:c)**. Cela indique que les mots clés sont connectés aux conditions avec un opérateur logique semblable dans la fonctionnalité à l'opérateur **and** . Voici un exemple de la requête de recherche (affichée dans le volet d'informations) résultant de l'utilisation de la liste de mots clés et d'une condition. 
     
     ![Exemple de requête créée lors de l'utilisation de la liste de mots clés et d'une condition](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
@@ -342,7 +342,7 @@ Vous pouvez afficher un aperçu des types de fichiers pris en charge dans le vol
     
 En outre, les types de conteneurs de fichiers suivants sont pris en charge. Vous pouvez afficher la liste des fichiers dans le conteneur dans le volet de visualisation.
   
-- .zip
+- . zip
     
 - . gzip
     
