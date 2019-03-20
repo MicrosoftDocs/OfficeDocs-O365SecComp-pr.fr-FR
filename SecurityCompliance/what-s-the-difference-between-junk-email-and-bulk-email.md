@@ -7,7 +7,6 @@ ms.date: 1/7/2015
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
 description: Les clients askwhat parfois la différence entre le courrier indésirable et les messages électroniques en masse? L'objectif de cette rubrique est d'expliquer la différence et de fournir des informations sur les différentes options disponibles dans Exchange Online et Exchange Online Protection (EOP).
-ms.openlocfilehash: 877912c94af5d4b399769759189d091c62d50075
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 146cc5654e39441be3544f7ac24bd1300811936f
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275714"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693213"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>Quelle est la différence entre courrier indésirable et message électronique en masse ?
 
@@ -43,6 +42,6 @@ La gestion des messages électroniques en masse n'est pas facile, car s'ils sont
   
 ### <a name="enable-bulk-mail-sensitivity-control-in-the-content-filter-policy"></a>Activer le contrôle de sensibilité des messages électroniques en masse dans la stratégie de filtrage de contenu
 
-En fonction de la stratégie de votre entreprise en matière de messages électroniques en nombre, les administrateurs peuvent sélectionner un seuil pour affecter le courrier en masse. Le paramètre est configurable via stratégies de filtrage de contenu dans le centre d'administration Exchange. Consultez la [configuration de vos stratégies de filtrage du courrier](configure-your-spam-filter-policies.md) indésirable pour les étapes. Vous pouvez choisir un paramètre de seuil de 1-9, où 1 marque la plupart des messages électroniques en masse comme courrier indésirable, et 9 la plupart des messages électroniques en nombre à être remis. Le service effectue ensuite l'action configurée, telle que l'envoi du message au dossier de courrier inDésirable du destinataire. 
+En fonction de la stratégie de votre entreprise en matière de messages électroniques en nombre, les administrateurs peuvent sélectionner un seuil à attribuer aux messages électroniques en nombre. Le paramètre est configurable via stratégies de filtrage de contenu dans le centre d'administration Exchange. Consultez la [configuration de vos stratégies de filtrage du courrier](configure-your-spam-filter-policies.md) indésirable pour les étapes. Vous pouvez choisir un paramètre de seuil de 1-9, où 1 marque la plupart des messages électroniques en masse comme courrier indésirable, et 9 la plupart des messages électroniques en nombre à être remis. Le service effectue ensuite l'action configurée, comme par exemple l'envoi du message dans le dossier Courrier indésirable du destinataire. 
   
 

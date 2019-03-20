@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Découvrez l'Explorateur (également appelé Explorateur de menaces) dans le &amp; Centre de sécurité conformité.
-ms.openlocfilehash: 626d827712760aa0b7b6faf75d94f525cfe38dc2
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 0c86792d8ed84b43b28bde31004dc95d2fa2b547
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524008"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693613"
 ---
 # <a name="use-threat-explorer-in-the-security-amp-compliance-center"></a>Utiliser Threat Explorer dans le centre &amp; de sécurité conformité
 
@@ -31,7 +31,7 @@ Si votre organisation dispose d' [Office 365 Advanced Threat Protection Plan 2](
 Pour utiliser l'Explorateur, dans le &amp; Centre de sécurité conformité, accédez à l' **Explorateur**de **gestion** \> des menaces.
 
 > [!IMPORTANT]
-> Office 365 Threat Intelligence fait désormais partie d'Office 365 Advanced Threat Protection Plan 2, avec des fonctionnalités de protection contre les menaces supplémentaires. Pour en savoir plus, consultez les [offres et tarifs office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) et la [Description du service Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Threat Intelligence est désormais Office 365 Advanced Threat Protection Plan 2, ainsi que d'autres fonctionnalités de protection contre les menaces. Pour en savoir plus, consultez les [offres et tarifs office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) et la [Description du service Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
       
 ## <a name="explorer-overview"></a>Vue d'ensemble de l'Explorateur
 

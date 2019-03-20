@@ -7,16 +7,15 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: Voici quelques éléments que vous devez connaître avant de commencer à utiliser EOP.
-ms.openlocfilehash: fc5ea726de190395407952ceac69c4c682ac8f67
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 878380adb039961334413019551847717ace0cc7
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341745"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692323"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection 
 
@@ -28,11 +27,11 @@ Bienvenue dans le service de filtrage du courrier électronique hébergé sur Mi
     
 - Si vous avez besoin d'aide supplémentaire ou si vous souhaitez partager des idées, le [forum EOP](https://go.microsoft.com/fwlink/?LinkId=285351) constitue une excellent point de départ. 
     
-- Vous pouvez utiliser le bouton Exporter situé dans le coin supérieur droit de n'importe quelle page TechNet afin d'ajouter des rubriques et de les exporter dans un fichier PDF. 
+- Vous pouvez utiliser le bouton Exporter situé dans le coin supérieur droit de n’importe quelle page TechNet afin d’ajouter des rubriques et de les exporter dans un fichier PDF. 
     
-## <a name="eop-help-for-administrators"></a>Aide EOP pour les administrateurs
+## <a name="eop-help-for-administrators"></a>Aide EOP pour les administrateurs
 
-Le contenu de l'aide pour les administrateurs d'EOP se compose des catégories de niveau supérieur suivantes :
+Le contenu de l’aide pour les administrateurs d’EOP se compose des catégories de niveau supérieur suivantes :
   
 - [Vue d'ensemble d'Exchange Online Protection](exchange-online-protection-overview.md) Présente le fonctionnement d'EOP et fournit des liens vers des informations supplémentaires. 
     
@@ -62,7 +61,7 @@ Le contenu de l'aide pour les administrateurs d'EOP se compose des catégories d
     
 - [Aide et support pour EOP](help-and-support-for-eop.md) Fournit des informations sur la manière d'obtenir de l'aide et un support technique. 
     
-## <a name="eop-help-for-end-users"></a>Aide EOP pour les utilisateurs finaux
+## <a name="eop-help-for-end-users"></a>Aide EOP pour les utilisateurs finaux
 <a name="sectionSection1"> </a>
 
 Le contenu de l'aide permettant de guider les utilisateurs finaux d'EOP dans la gestion du courrier indésirable contient les rubriques suivantes :

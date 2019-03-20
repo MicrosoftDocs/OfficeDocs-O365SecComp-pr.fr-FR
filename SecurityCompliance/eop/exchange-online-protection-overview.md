@@ -7,20 +7,19 @@ ms.date: 01/31/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) est un service de filtrage du courrier électronique dans le nuage, qui contribue à protéger votre organisation contre le courrier indésirable et les logiciels malveillants, ainsi que contre les violations de politique de messagerie.
-ms.openlocfilehash: 3f00cc07058bd2399732299b3221ebd4258dc5ff
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: e639b1185d75959061163b5391cf046bc789e3c4
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341625"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693523"
 ---
 # <a name="exchange-online-protection-overview"></a>Vue d'ensemble d'Exchange Online Protection
 
-Microsoft Exchange Online Protection (EOP) est un service de filtrage du courrier électronique dans le nuage, qui contribue à protéger votre organisation contre le courrier indésirable et les logiciels malveillants, ainsi que contre les violations de stratégie de messagerie. EOP peut simplifier la gestion de votre environnement de messagerie et alléger bon nombre des tâches liées à la maintenance du matériel et des logiciels locaux.
+Microsoft Exchange Online Protection (EOP) est un service de filtrage du courrier électronique dans le nuage, qui contribue à protéger votre organisation contre le courrier indésirable et les logiciels malveillants, ainsi que contre les violations de politique de messagerie. EOP peut simplifier la gestion de votre environnement de messagerie et alléger bon nombre des tâches liées à la maintenance du matériel et des logiciels locaux.
   
 Les principales manières d'utiliser EOP pour protéger la messagerie sont les suivantes :
   
@@ -32,13 +31,13 @@ Les principales manières d'utiliser EOP pour protéger la messagerie sont les s
     
 ## <a name="how-eop-works"></a>Fonctionnement d'EOP
 
-Pour comprendre le fonctionnement d'EOP, il est utile devoir comment le courrier entrant est traité :
+Pour comprendre le fonctionnement d'EOP, il est utile devoir comment le courrier entrant est traité :
   
 ![EOP-traitement du courrier électronique](../media/EOP-email-processing.png)
   
 Un message entrant passe initialement par le filtrage des connexions, qui vérifie la réputation de l'expéditeur et inspecte le message pour les programmes malveillants. La majorité du courrier indésirable est arrêtée à ce stade et supprimée par EOP. Les messages se poursuivent via le filtrage des stratégies, dans lequel les messages sont évalués par rapport aux règles de flux de messagerie personnalisées (également appelées règles de transport) que vous créez ou appliquez à partir d'un modèle. Par exemple, vous pouvez avoir une règle qui envoie une notification à un responsable lorsque le courrier électronique est envoyé par un expéditeur spécifique. (Les vérifications de la protection contre la perte de données se produisent également à ce stade, si vous disposez de cette fonctionnalité; pour plus d'informations sur la disponibilité des fonctionnalités, consultez la rubrique [Description du service de protection Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=320619).) Ensuite, les messages passent par le filtrage du contenu, où le contenu est vérifié pour la terminologie ou les propriétés communes au courrier indésirable. Un message déterminé comme étant du courrier indésirable par le filtre de contenu peut être envoyé dans le dossier de courrier inDésirable d'un utilisateur ou en quarantaine, entre autres options, en fonction de vos paramètres. Une fois qu'un message a réussi à transmettre tous ces calques de protection, il est remis au destinataire.
   
-### <a name="eop-datacenters"></a>Centres de données EOP
+### <a name="eop-datacenters"></a>Centres de données EOP
 
 EOP s'exécute sur un réseau mondial de centres de données conçus pour offrir une disponibilité optimale. Par exemple, si un centre de données devient indisponible, les courriers électroniques sont automatiquement routés vers un autre centre de données sans interruption du service. Les serveurs de chaque centre de données acceptent les messages à votre place, en créant une couche de séparation entre votre organisation et Internet, réduisant ainsi la charge pesant sur vos serveurs. Grâce à ce réseau à haut niveau de disponibilité, Microsoft peut garantir que le courrier atteint votre organisation en temps opportun. 
   
@@ -55,9 +54,9 @@ EOP effectue l'équilibrage de charge entre les centres de données, mais unique
     
 - Dans la région Asie Pacifique (APAC), toutes les boîtes aux lettres Exchange Online sont situées dans des centres de contenu APAC, et les messages sont actuellement routés via des centres de contenu APAC pour le filtrage EOP.
     
-- En ce qui concerne le nuage communautaire propre aux gouvernements (CCG), toutes les boîtes aux lettres Exchange Online sont situées dans des centres de données américains et tous les messages sont routés via ces centres de données pour le filtrage EOP.
+- En ce qui concerne le nuage communautaire propre aux gouvernements (CCG), toutes les boîtes aux lettres Exchange Online sont situées dans des centres de données américains et tous les messages sont routés via ces centres de données pour le filtrage EOP.
     
-## <a name="eop-plans-and-features"></a>Plans et fonctionnalités d'EOP
+## <a name="eop-plans-and-features"></a>Plans et fonctionnalités d’EOP
 
 Les plans d'abonnement EOP disponibles sont les suivants :
   
@@ -81,11 +80,11 @@ Si vous avez déjà acheté EOP, consultez la rubrique [Configurer votre service
   
 [Vidéos pour démarrer avec EOP](videos-for-getting-started-with-eop.md)
   
-[Forum Aux Questions d'ordre général concernant Exchange Online Protection (EOP)](eop-general-faq.md)
+[FAQ d’ordre général concernant EOP](eop-general-faq.md)
   
 Questions fréquemment posées sur les messages mis en file d’attente, différés et retournés dans EOP
   
-[FAQ sur l'administration déléguée](delegated-administration-faq.md)
+[FAQ sur l’administration déléguée](delegated-administration-faq.md)
   
 [Déplacement de domaines et de paramètres d'une organisation EOP vers une autre organisation EOP](move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md)
   

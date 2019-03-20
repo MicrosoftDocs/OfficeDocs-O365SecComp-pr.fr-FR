@@ -7,7 +7,6 @@ ms.date: 8/24/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
 description: Lorsque le système de courrier d'un client a été compromis par un programme malveillant ou une attaque de courrier indésirable malveillant, et qu'il envoie du courrier indésirable sortant via le service de filtrage hébergé, les adresses IP des serveurs du centre de données Office 365 sont peut-être référencées dans un bloc tiers. établit.
-ms.openlocfilehash: 604fdf2df11b6dff493444fe9dbcc6f95ced6a7d
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: b3c0aecd45dd01d407712af2e3945e1cff521710
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275544"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692083"
 ---
 # <a name="high-risk-delivery-pool-for-outbound-messages"></a>Pool de remise à risque élevé pour les messages sortants
 

@@ -14,19 +14,19 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur les suivis de menace, y compris les nouveaux suivis, pour aider votre organisation à répondre aux préoccupations de sécurité.
-ms.openlocfilehash: 4cf3e13b7379e26deec90bbae2c4f9cf42fa91b7
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 6870e8d613dbd5d72f20e96be9615712bac711a9
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524048"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693073"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Suivi des menaces-nouveautés et remarquables
 
 Les fonctionnalités d' [enquête et de réponse aux menaces Office 365](office-365-ti.md) permettent à l'équipe de sécurité de votre organisation de découvrir et de prendre des mesures contre les menaces Cybersecurity. Les fonctionnalités d'enquête et de réponse aux menaces Office 365 incluent des fonctionnalités de suivi des menaces, notamment des suivis nocelles. Lisez cet article pour obtenir une vue d'ensemble de ces nouvelles fonctionnalités et des étapes suivantes. 
 
 > [!IMPORTANT]
-> Office 365 Threat Intelligence fait désormais partie d'Office 365 Advanced Threat Protection Plan 2, avec des fonctionnalités de protection contre les menaces supplémentaires. Pour en savoir plus, consultez les [offres et tarifs office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) et la [Description du service Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Threat Intelligence est désormais Office 365 Advanced Threat Protection Plan 2, ainsi que d'autres fonctionnalités de protection contre les menaces. Pour en savoir plus, consultez les [offres et tarifs office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) et la [Description du service Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="what-are-threat-trackers"></a>Qu'est-ce qu'un suivi des menaces?
 

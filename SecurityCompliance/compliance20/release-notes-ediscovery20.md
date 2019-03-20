@@ -14,20 +14,32 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article contient les notes de publication pour Advanced eDiscovery (aperçu).
-ms.openlocfilehash: d3ea9a8e6b7c0adac32d342d3504eba0e54bd66f
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 32a02c16fd30e740fcc6e1c99b46775b97590a28
+ms.sourcegitcommit: 15202bba32313534da2478b0cd215f32a10c9ef4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295007"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30684353"
 ---
 # <a name="release-notes-for-advanced-ediscovery-preview"></a>Notes de publication pour Advanced eDiscovery (aperçu)
 
 Le programme de préversion public pour Advanced eDiscovery est le moyen d'accéder en avant-première aux fonctionnalités et mises à jour à venir. Pour accéder en avant-première aux fonctionnalités les plus récentes, il vous suffit de créer et d'utiliser un cas avancé eDiscovery (aperçu) dans le centre de sécurité & de la sécurité d'Office 365. Voir [Create a New case](create-new-ediscovery-case.md).
 
+## <a name="known-issues"></a>Problèmes connus
+
+**Microsoft Forms**
+
+- Les données correspondant à un formulaire créé avant le 31 janvier 2019 ne pourront pas être recherchées lors de l'utilisation de l'outil de recherche dans Advanced eDiscovery (Preview) pour rechercher des boîtes aux lettres de dépositaire. Les formulaires créés après cette date seront disponibles pour la recherche.
+
+- Un formulaire créé par un utilisateur peut toujours recevoir des réponses même après la suppression de l'utilisateur qui a créé le formulaire. Toutefois, les données correspondantes de ces réponses (qui ont eu lieu après la suppression de la boîte aux lettres de dépositaire) ne peuvent pas être recherchées lors de l'utilisation de l'outil de recherche dans Advanced eDiscovery (Preview) pour rechercher des boîtes aux lettres de dépositaire.
+ 
+**Microsoft Sway**
+
+- Si un utilisateur modifie un Sway juste avant la suppression du compte d'utilisateur pour le propriétaire de ce Sway, il se peut que ces modifications ne puissent pas être recherchées lors de l'utilisation de l'outil de recherche dans Advanced eDiscovery (Preview) pour rechercher des boîtes aux lettres de dépositaire. Sway bloque les modifications apportées à un Sway dès qu'il reçoit un signal indiquant que le compte a été supprimé. Toutefois, il existe une petite chance qu'un Sway puisse être modifié avant la réception de ce signal.
+
 ## <a name="issues-fixed-in-this-release"></a>Problèmes résolus dans cette version
 
-- DCR: gestion des exceptions pour les éléments orphelins et non indexés
+- DCR: gestion des exceptions pour les éléments non indexés et les éléments orphelins
 - DCR: notifications de blocage
 - DCR: dépositaires dans eDiscovery
 

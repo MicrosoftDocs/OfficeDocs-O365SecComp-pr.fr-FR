@@ -7,7 +7,6 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: 5fd7d05b-96db-456f-81d6-1ac0e5bff530
 ms.collection:
 - M365-security-compliance
 description: La feuille de route sécurité de messagerie de Microsoft implique une approche inter-produits sans correspondance. La technologie de filtrage anti-spam et anti-hameçonnage d'Exchange Online Protection (EOP) est appliquée sur les plateformes de messagerie de Microsoft pour fournir aux utilisateurs les innovations et les outils anti-spam et anti-hameçonnage les plus récents dans tout le réseau. L'objectif d'EOP est de proposer un service de messagerie complet et utilisable qui vous aide à détecter le courrier indésirable, les menaces d'e-mails frauduleux (hameçonnage) et les logiciels malveillants, et de protéger les utilisateurs.
-ms.openlocfilehash: b4a7f581792922abdf92d37558ebbbbb8947a978
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 510b04d3f111c269d5f8579abcc809ddc283636b
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216564"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692853"
 ---
 # <a name="fighting-junk-email-sent-to-office-365"></a>Lutter contre le courrier indésirable envoyé à Office 365
 
@@ -32,13 +31,13 @@ La messagerie électronique est devenue un outil de communication important non 
   
 ## <a name="our-efforts"></a>Nos efforts
 
-EOP offre une procédure permettant de réduire l'impact négatif du courrier indésirable sur l'expérience de messagerie des utilisateurs.
+EOP offre une procédure permettant de réduire l’impact négatif du courrier indésirable sur l’expérience de messagerie des utilisateurs.
   
-### <a name="exchange-online-protection-technology"></a>Technologie d'Exchange Online Protection
+### <a name="exchange-online-protection-technology"></a>Technologie d’Exchange Online Protection
 
 Pour réduire le courrier indésirable, EOP inclut une protection contre le courrier indésirable à l’aide de technologies de filtrage EOP propriétaires qui identifient et distinguent le courrier indésirable du courrier légitime. Le filtrage de contenu EOP tire ses leçons des menaces de courrier indésirable et de hameçonnage connues et des commentaires des utilisateurs de notre plateforme consommateur, Outlook.com. Ces types de données permettent aux technologies EOP de s’entraîner à reconnaître le courrier légitime et le courrier indésirable. Ils sont cruciaux pour la réputation de l’expéditeur. Les commentaires continus des utilisateurs d’EOP du programme de classification du courrier indésirable garantissent que les technologies EOP sont constamment formées et améliorées.
   
-#### <a name="how-does-eop-work"></a>Comment fonctionne EOP ?
+#### <a name="how-does-eop-work"></a>Comment fonctionne EOP ?
 
 Lorsqu'un utilisateur externe envoie un courrier électronique à un utilisateur EOP, les technologies de filtrage EOP évaluent le contenu du message et attribuent une valeur au message selon la probabilité qu'il s'agisse de courrier indésirable. Cette valeur est stockée en tant que propriété de message appelée Seuil de probabilité de courrier indésirable (SCL - Spam Confidence Level ) avec le message lui-même. La valeur SCL reste avec le message lors de son envoi à d'autres couches de protection anti-spam dans EOP. 
   
@@ -46,13 +45,13 @@ Les règles dans EOP sont définies pour traiter les messages électroniques ave
   
 #### <a name="eop-filters"></a>Filtres EOP
 
-Outre les technologies de filtrage anti-courrier indésirable, EOP offre également à l'administrateur système la possibilité de définir des niveaux de filtrage pour personnaliser davantage la remise des messages électroniques à leurs comptes d'utilisateur. Les administrateurs peuvent facilement ajouter un nom d'expéditeur ou de domaine à la liste des expéditeurs approuvés et des domaines afin que les messages provenant de cet expéditeur ou domaine ne soient jamais traités comme des courriers indésirables, quel que soit le contenu du message. Pour plus d'informations, consultez la rubrique liste des expéditeurs autorisés [et des expéditeurs bloqués dans Exchange Online](safe-sender-and-blocked-sender-lists-faq.md).
+Outre les technologies de filtrage anti-spam, EOP offre également à l’administrateur système la possibilité de définir des niveaux de filtre pour personnaliser davantage la remise des messages à ses comptes d’utilisateurs. Les administrateurs peuvent facilement ajouter un nom d'expéditeur ou de domaine à la liste des domaines et des expéditeurs autorisés afin que les e-mails provenant de cet expéditeur ou domaine ne soient jamais traités comme du courrier indésirable, quel que soit le contenu du message. Pour plus d'informations, consultez la rubrique liste des expéditeurs autorisés [et des expéditeurs bloqués dans Exchange Online](safe-sender-and-blocked-sender-lists-faq.md).
   
 ### <a name="phishing-protection"></a>Protection contre le hameçonnage
 
 Le hameçonnage est une forme d’usurpation d’identité. Il représente l’une des menaces qui évolue le plus vite sur Internet. Vous pouvez souvent identifier un message de hameçonnage lorsqu’il demande des informations personnelles ou financières ou inclut un lien vers un site web qui demande de telles informations. EOP offre une protection contre le hameçonnage dans le cadre des technologies de filtrage EOP propriétaires. Les technologies de filtrage EOP analysent les e-mails pour tenter de détecter les liens frauduleux ou les domaines usurpés afin de protéger les utilisateurs contre ces types d’escroqueries en ligne.
   
-#### <a name="how-does-phishing-protection-work"></a>Comment fonctionne la protection contre le hameçonnage ?
+#### <a name="how-does-phishing-protection-work"></a>Comment fonctionne la protection contre le hameçonnage ?
 
 Souvent, un e-mail de hameçonnage est envoyé avec un lien qui, une fois que l'utilisateur clique dessus, le redirige vers un site web frauduleux qui semble valide (par exemple, votre établissement financier ou service en ligne). Généralement, ce site de hameçonnage invite l'utilisateur à saisir des informations personnelles telles que les noms d'utilisateur, les mots de passe et les numéros de sécurité sociale. Toutes les informations saisies sur le site de hameçonnage aident son auteur à voler votre identité. En utilisant des logos et des noms de marque approuvés connus, les auteurs de hameçonnage peuvent sembler légitimes. La technologie de filtrage de hameçonnage proposée dans EOP recherche des caractéristiques de hameçonnage potentielles dans les e-mails. Si elle en trouve, l'e-mail est déplacé vers le dossier de courrier indésirable.
   

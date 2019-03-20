@@ -7,17 +7,16 @@ ms.date: 12/15/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.collection: Ent_O365_Hybrid
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
 description: Microsoft s'engage à faciliter l'utilisation de ses produits et services pour tous.
-ms.openlocfilehash: 2403ef4ec5a99202a45b40bf639193643b6ad02b
-ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
+ms.openlocfilehash: 271383361ee99f6959e81a1f38dea4b200c54fb5
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "30206377"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693103"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>Accessibilité pour les personnes présentant un handicap
 
@@ -29,7 +28,7 @@ Les fonctionnalités suivantes visent à faciliter l’accès des personnes à m
     
 - [Raccourcis clavier dans Outlook sur le web](https://go.microsoft.com/fwlink/p/?LinkId=268079)
     
-De plus, certaines fonctionnalités d'accessibilité et certains utilitaires de Windows peuvent profiter aux utilisateurs d'Exchange présentant un handicap. En outre, les modifications de taille et de couleur Windows PowerShell fournissent des options d'accessibilité lors de l'utilisation de l'environnement de commande Exchange Management Shell. Pour plus d'informations sur les options d'accessibilité de Windows PowerShell, consultez la rubrique [Accessibility in Windows powershell 2,0 ISE](https://go.microsoft.com/fwlink/p/?LinkId=258240).
+En outre, certaines fonctionnalités et utilitaires d'accessibilité de Windows peuvent également constituer une aide pour les utilisateurs d'Exchange présentant un handicap. Les modifications des tailles et couleurs Windows PowerShell offrent également des options d'accessibilité dans le cadre de l'utilisation de l'environnement de ligne de commande Exchange Management Shell. Pour plus d'informations sur les options d'accessibilité de Windows PowerShell, consultez la rubrique [Accessibility in Windows powershell 2,0 ISE](https://go.microsoft.com/fwlink/p/?LinkId=258240).
   
 ## <a name="accessibility-features-of-exchange-help"></a>Fonctionnalités d'accessibilité d'Aide de Microsoft Exchange
 
@@ -42,7 +41,7 @@ Les sections suivantes fournissent des informations sur les fonctionnalités, pr
 > [!NOTE]
 > Les informations de cette section concernent uniquement les utilisateurs détenteurs d'une licence pour les produits Microsoft aux États-Unis. Si vous avez obtenu ce produit en dehors des États-Unis, visitez le [site web Microsoft Accessibility](https://www.microsoft.com/enable) pour obtenir la liste des numéros de téléphone et adresses des services de support technique de Microsoft. Vous pouvez contacter votre filiale pour savoir si le type de produits et services décrit dans cette section est disponible dans votre pays. Pour plus d'informations sur les fonctionnalités d'accessibilité incluses dans les produits Microsoft, consultez le site web sur l'accessibilité des produits Microsoft. 
   
-### <a name="accessibility-features-of-windows"></a>Fonctionnalités d'accessibilité de Windows
+### <a name="accessibility-features-of-windows"></a>Fonctionnalités d’accessibilité de Windows
 
 Le système d'exploitation Windows inclut de nombreuses fonctionnalités d'accessibilité intégrées utiles pour les personnes pour lesquelles l'utilisation d'un clavier ou d'une souris présente une difficulté, les personnes aveugles et à acuité visuelle réduite, et les personnes sourdes et malentendantes. Les fonctionnalités sont installées dans le cadre de l'installation. Pour plus d'informations sur ces fonctionnalités, voir l'Aide dans Windows et la page sur l'[accessibilité de Microsoft](https://go.microsoft.com/fwlink/p/?linkId=18139).
   
@@ -54,11 +53,11 @@ Le système d'exploitation Windows inclut de nombreuses fonctionnalités d'acces
     
     Si vous utilisez une technologie d'assistance, contactez votre fournisseur spécialisé dans les technologies d'assistance avant de procéder à une mise à niveau logicielle ou matérielle afin de détecter les problèmes de compatibilité éventuels. 
     
-### <a name="documentation-in-alternative-formats"></a>Documentation dans d'autres formats
+### <a name="documentation-in-alternative-formats"></a>Autres formats de documentation
 
 Si vous rencontrez des difficultés pour consulter les supports imprimés, vous pouvez obtenir de la documentation pour de nombreux produits Microsoft dans des formats plus accessibles. La documentation produit accessible est indiquée à la page sur l'[accessibilité de Microsoft](https://go.microsoft.com/fwlink/p/?linkId=18139). 
   
-En outre, vous pouvez obtenir des publications Microsoft supplémentaires auprès de Learning Ally. Learning Ally distribue ces documents aux membres inscrits et éligibles de leur service de distribution. Pour plus d’informations sur la disponibilité de la documentation produit Microsoft et des livres de Microsoft Press, contactez Learning Ally. 
+En outre, vous pouvez obtenir des publications Microsoft supplémentaires auprès de Learning Ally. Learning Ally distribue ces documents aux membres inscrits et éligibles de leur service de distribution. Pour plus d'informations sur la disponibilité de la documentation produit Microsoft et des livres de Microsoft Press, contactez Learning Ally. 
   
 ||
 |:-----|
@@ -66,15 +65,15 @@ En outre, vous pouvez obtenir des publications Microsoft supplémentaires auprè
    
 ### <a name="customer-service-for-people-with-hearing-impairments"></a>Service clientèle pour les personnes malentendantes
 
-Si vous êtes sourd ou malentendant, les services clientèle et produits Microsoft sont accessibles via un service téléphonique texte (TTY/TDD) :
+Si vous êtes sourd ou malentendant, un accès complet au service des produits Microsoft et au service clientèle est disponible via un service de téléscripteur (TTY/ATS) :
   
-- Pour le service clientèle, contactez le Microsoft Sales Information Center au (800) 892 5234 entre 06h30 et 17h30 (heure du Pacifique), du lundi au vendredi, en dehors des jours fériés. 
+- Pour le service clientèle, contactez le Microsoft Sales Information Center au (800) 892 5234 entre 06h30 et 17h30 (heure du Pacifique), du lundi au vendredi, en dehors des jours fériés. 
     
-- Pour l’assistance technique aux États-Unis, contactez le Microsoft Sales Information Center au (800) 892 5234 entre 06h00 et 17h30 (heure du Pacifique), du lundi au vendredi, en dehors des jours fériés. Au Canada, composez le (905) 568 9641 entre 8h00 et 20h00 (heure de l’Est), du lundi au vendredi, en dehors des jours fériés. 
+- Pour l'assistance technique aux États-Unis, contactez le Microsoft Sales Information Center au (800) 892 5234 entre 06h00 et 17h30 (heure du Pacifique), du lundi au vendredi, en dehors des jours fériés. Au Canada, composez le (905) 568 9641 entre 8h00 et 20h00 (heure de l'Est), du lundi au vendredi, en dehors des jours fériés. 
     
 Les services de support technique Microsoft sont soumis aux tarifs, termes et conditions valables au moment de leur utilisation. Pour plus d'informations, voir [Support technique de Microsoft](https://go.microsoft.com/fwlink/p/?linkId=18142).
   
-## <a name="for-more-information"></a>Pour plus d’informations
+## <a name="for-more-information"></a>Pour plus d'informations
 
 Pour plus d'informations sur la manière dont la technologie d'accessibilité pour les ordinateurs contribue à faciliter la vie des personnes à mobilité réduite, consultez la page sur l'[accessibilité de Microsoft](http://go.microsoft.com/fwlink/p/?linkId=18139). 
   

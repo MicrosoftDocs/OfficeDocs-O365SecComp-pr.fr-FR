@@ -7,16 +7,15 @@ ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 description: Vous pouvez utiliser Exchange Online Protection (EOP) pour créer des groupes à extension messagerie pour une organisation Exchange. Vous pouvez également utiliser EOP pour définir ou mettre à jour les propriétés de groupe qui indiquent l'appartenance, les adresses électroniques et d'autres aspects des groupes.
-ms.openlocfilehash: 2e747dc9a26cbbc1ce214107235ccea62f175dd0
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: db649e4fd955d13e50e96007e8e38fe2c1de5b4d
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670459"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693299"
 ---
 # <a name="manage-groups-in-eop"></a>Gestion des groupes dans Exchange Online Protection (EOP)
 

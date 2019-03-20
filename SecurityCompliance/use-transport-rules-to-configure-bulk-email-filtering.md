@@ -6,7 +6,6 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,18 +13,18 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à utiliser des règles de flux de messagerie dans Exchange Online Protection pour le filtrage de courrier en nombre.
-ms.openlocfilehash: b7144f16df3e7b9f90a24f1ac224ccb20287d918
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 43f0af6fe41bc7f8f4a62d0d87dbd825fb868f7b
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275684"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693283"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>Utiliser des règles de flux de messagerie pour configurer le filtrage du courrier en nombre dans Exchange Online Protection
 
 Vous pouvez définir des filtres de contenu à l'échelle de l'entreprise pour le courrier indésirable et le courrier en masse à l'aide des stratégies de filtrage de contenu du courrier indésirable par défaut. Consultez la rubrique [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md) et [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy?view=exchange-ps) sur la façon de définir les stratégies de filtrage de contenu. 
   
-Si vous souhaitez utiliser davantage d'options pour filtrer les messages en masse, vous pouvez créer des règles de flux de messagerie (également appelées règles de transport) pour rechercher des modèles de texte ou des expressions fréquemment trouvées dans les messages électroniques en masse. Tout message contenant ces caractéristiques est marqué comme courrier indésirable. L'utilisation de ces règles permet de réduire la quantité de courrier en masse indésirable que reçoit votre organisation.
+Si vous souhaitez utiliser davantage d'options pour filtrer les messages en masse, vous pouvez créer des règles de flux de messagerie (également appelées règles de transport) pour rechercher des modèles de texte ou des expressions fréquemment trouvées dans les messages électroniques en masse. Tout message contenant ces caractéristiques sera marqué comme courrier indésirable. L'utilisation de ces règles peut aider à réduire la quantité de messages électroniques indésirables que reçoit votre organisation.
 
 > [!IMPORTANT]
 > Avant de créer les règles de flux de messagerie décrites dans cette rubrique, nous vous recommandons de lire [d'abord la différence entre le courrier indésirable et le courrier électronique en](what-s-the-difference-between-junk-email-and-bulk-email.md) masse, ainsi que les [valeurs de niveau de réclamation en bloc](bulk-complaint-level-values.md).<br>Les procédures suivantes permettent de marquer un message comme indésirable à l'échelle de votre organisation toute entière. Toutefois, vous pouvez ajouter une condition afin de n'appliquer ces règles qu'à des destinataires spécifiques de votre organisation. De cette façon, les paramètres de filtrage restrictif des messages électroniques ne s'appliqueront qu'à quelques utilisateurs particulièrement ciblés et le reste de vos utilisateurs (qui reçoivent en général les messages électroniques en masse auxquels ils se sont inscrits) ne seront pas concernés. 
@@ -66,7 +65,7 @@ Si vous souhaitez utiliser davantage d'options pour filtrer les messages en mass
     
    - `click (here to|the) unsubscribe`
     
-   La liste ci-dessus n'est pas un ensemble exhaustif d'expressions régulières trouvées dans les messages électroniques en masse; vous pouvez en ajouter ou en supprimer autant que nécessaire. Toutefois, il s'agit d'un point de départ approprié.<br>La recherche de mots ou de modèles de texte dans l'objet ou les autres champs d'en-tête du message se produit *après* que le message a été décodé à partir de la méthode de codage de transfert de contenu MIME qui a été utilisée pour transmettre le message binaire entre les serveurs SMTP dans le texte ASCII. Vous ne pouvez pas utiliser des conditions ou des exceptions pour rechercher les valeurs encodées brutes (généralement en base64) de l'objet ou d'autres champs d'en-tête dans les messages. 
+   La liste ci-dessus n'est pas un ensemble exhaustif d'expressions régulières trouvées dans les messages électroniques en masse; vous pouvez en ajouter ou en supprimer autant que nécessaire. Toutefois, ils constituent un bon point de départ.<br>La recherche de mots ou de modèles de texte dans l'objet ou les autres champs d'en-tête du message se produit *après* que le message a été décodé à partir de la méthode de codage de transfert de contenu MIME qui a été utilisée pour transmettre le message binaire entre les serveurs SMTP dans le texte ASCII. Vous ne pouvez pas utiliser de conditions ou d’exceptions pour rechercher les valeurs codées brutes (en règle générale, en base 64) dans l’objet ou d’autres champs d’en-tête des messages. 
     
 6. Sous **Effectuer les opérations suivantes**, sélectionnez **Modifier les propriétés des messages** \> **Définir le seuil de probabilité de courrier indésirable (SCL)**.
     
@@ -118,7 +117,7 @@ Si vous souhaitez utiliser davantage d'options pour filtrer les messages en mass
     
    - `You are receiving this email because you are subscribed`
     
-   Cette liste n'est pas un ensemble exhaustif d'expressions trouvées dans les messages électroniques en masse; vous pouvez en ajouter ou en supprimer autant que nécessaire. Toutefois, il s'agit d'un point de départ approprié.
+   Cette liste n'est pas un ensemble exhaustif d'expressions trouvées dans les messages électroniques en masse; vous pouvez en ajouter ou en supprimer autant que nécessaire. Toutefois, ils constituent un bon point de départ.
     
 6. Sous **Effectuer les opérations suivantes**, sélectionnez **Modifier les propriétés des messages** \> **Définir le seuil de probabilité de courrier indésirable (SCL)**.
     

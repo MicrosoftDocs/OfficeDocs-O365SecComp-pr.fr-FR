@@ -3,7 +3,7 @@ title: Vue d'ensemble du tableau de bord de sécurité
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/07/2019
+ms.date: 03/19/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,16 +15,16 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Utilisez le nouveau tableau de bord de sécurité pour consulter l'état de protection contre les menaces d'Office 365, et afficher et agir sur les alertes de sécurité.
-ms.openlocfilehash: 7a4535a0cc02a6ad046cadb99b8ebb94df5fd9fe
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.openlocfilehash: 83e75f1a38038f1c95697f4db3e7b1134d03779d
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241886"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692753"
 ---
 # <a name="security-dashboard"></a>Tableau de bord de sécurité
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Le [Centre &amp; de sécurité conformité](go-to-the-securitycompliance-center.md) permet à votre organisation de gérer la protection et la conformité des données. En supposant que vous disposez des autorisations nécessaires, le tableau de bord de sécurité vous permet d'examiner votre statut de protection contre les menaces, ainsi que d'afficher et d'agir sur les alertes de sécurité. 
   
@@ -78,14 +78,14 @@ Le widget détections de menaces globales hebdomadaires indique le nombre de men
 
 Les mesures sont calculées de la manière décrite dans le tableau suivant:
 
-|Métrique  |Mode de calcul  |
+|Liées  |Mode de calcul  |
 |---------|---------|
 |Messages analysés |Nombre de messages électroniques analysés multiplié par le nombre de destinataires |
 |Menaces arrêtées  |Nombre de messages électroniques identifiés comme contenant des programmes malveillants multiplié par le nombre de destinataires |
 |Bloqué par [](office-365-atp.md) la protection avancée contre les menaces |Nombre de messages électroniques bloqués par la protection avancée contre les menaces multiplié par le nombre de destinataires |
 |Supprimés après la remise |Nombre de messages supprimés par [purge automatique 0 heure](zero-hour-auto-purge.md) multiplié par le nombre de destinataires |
 
-## <a name="malware"></a>Malware : 
+## <a name="malware"></a>Programmes malveillants
 
 Les widgets de programmes malveillants affichent des informations sur les tendances des programmes malveillants et les types de familles de programmes malveillants au cours des sept derniers jours.
 
@@ -99,9 +99,9 @@ Insights non seulement les problèmes de clés de surface que vous devez examine
 
 Par exemple, vous pouvez constater que les messages électroniques de hameçonnage sont remis car certains utilisateurs ont désactivé leurs options de courrier indésirable. Pour en savoir plus sur le fonctionnement des informations, voir [rapports et Insights dans le centre de sécurité &amp; conformité Office 365](reports-and-insights-in-security-and-compliance.md).
   
-## <a name="threat-intelligence"></a>Intelligence des menaces
+## <a name="threat-investigation-and-response"></a>Examen et réponse contre les menaces
 
-Si l'abonnement de votre organisation inclut des fonctionnalités d'aide à la [décision](office-365-ti.md), votre tableau de bord de sécurité dispose d'une section **Threat Intelligence** qui inclut des outils avancés. L'équipe de sécurité de votre organisation peut utiliser les informations de cette section pour comprendre les nouvelles campagnes, examiner les menaces et gérer les incidents. 
+Si l'abonnement de votre organisation comprend [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), votre tableau de bord de sécurité comporte une section qui inclut des outils d'enquête et de réponse de menace avancés. L'équipe de sécurité de votre organisation peut utiliser les informations de cette section pour comprendre les nouvelles campagnes, examiner les menaces et gérer les incidents. 
   
 ![Threat Intelligence vous permet de comprendre les attaques ciblées au sein de votre organisation](media/threatintelwidget.png)
   
@@ -112,20 +112,20 @@ Dans la partie inférieure du tableau de bord de sécurité se trouve une sectio
   
 ![La section tendances récapitule les tendances de flux de messagerie de l'organisation.](media/trends.png)
   
-De plus, si l'abonnement Office 365 de votre organisation inclut des fonctionnalités d'aide à la [décision](office-365-ti.md), vous aurez également un rapport **alertes de gestion des menaces récentes** dans cette section qui permet à votre équipe de sécurité d'afficher et de prendre des mesures sur alertes de sécurité à priorité élevée. 
+De plus, si l'abonnement Office 365 de votre organisation inclut [office 365 Advanced Threat Protection Plan 2](office-365-ti.md), vous aurez également un rapport **alertes de gestion des menaces récentes** dans cette section qui permet à votre équipe de sécurité d'afficher et de prendre des mesures sur alertes de sécurité à priorité élevée. 
 
 Pour afficher ou accéder au widget courrier électronique envoyé et reçu, vous devez disposer des autorisations permettant d'afficher les rapports de protection avancée contre les menaces. Pour en savoir plus, consultez [la rubrique Quelles autorisations sont requises pour afficher les rapports ATP?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports). 
 
 Pour afficher ou accéder au widget alertes de gestion des menaces récentes, vous devez disposer des autorisations pour afficher les alertes. Pour en savoir plus, consultez la rubrique [autorisations RBAC requises pour afficher les alertes](alert-policies.md#rbac-permissions-required-to-view-alerts).
   
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Afficher les rapports de sécurité de messagerie &amp; dans le centre de sécurité conformité](view-email-security-reports.md)
   
 [Afficher les rapports pour Office 365 protection avancée contre les menaces](view-reports-for-atp.md)
   
-[Protection avancée contre les menaces dans Office 365](office-365-atp.md)
+[Office 365 - Protection avancée contre les menaces](office-365-atp.md)
   
-[Intelligence des menaces d’Office 365](office-365-ti.md)
+[Enquête et réponse aux menaces Office 365](office-365-ti.md)
   
 

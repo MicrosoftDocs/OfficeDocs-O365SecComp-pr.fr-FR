@@ -3,7 +3,7 @@ title: Office 365 - Protection avancée contre les menaces
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/20/2019
+ms.date: 03/19/2019
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -15,19 +15,19 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection inclut des pièces jointes sûres, des liens fiables, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités d'aide à la décision.
-ms.openlocfilehash: 33a98781c29a6ab8a44a69922afd976ce044c09d
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: ce4652e19f97cda6dbbea7df8083531ee0a0a1fc
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220004"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693053"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 - Protection avancée contre les menaces
 
 > [!IMPORTANT]
 > Cet article est destiné aux clients Office 365 entreprise. Si vous utilisez Outlook.com, Office 365 Home ou Office 365 Personal, et que vous recherchez des informations sur les liens fiables dans Outlook, consultez [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Office 365 Advanced Threat Protection (ATP) protège votre organisation contre les menaces malveillantes posées par les messages électroniques, les liens (URL) et les outils de collaboration. La protection avancée contre les menaces inclut:
 
@@ -35,7 +35,7 @@ Office 365 Advanced Threat Protection (ATP) protège votre organisation contre l
 
 - [Rapports](#view-atp-reports): afficher des rapports en temps réel pour surveiller les performances ATP de votre organisation. 
 
-- [Fonctionnalités](#utilize-threat-intelligence-capabilities)d'aide à la décision: utiliser des outils de pointe pour examiner, comprendre, simuler et prévenir les menaces. 
+- [Fonctionnalités d'enquête et de réponse aux menaces](#use-threat-investigation-and-response-capabilities): utilisez des outils de pointe pour examiner, comprendre, simuler et prévenir les menaces. 
  
 
 ## <a name="configure-atp-policies"></a>Configurer des stratégies ATP
@@ -60,9 +60,9 @@ La protection avancée contre les menaces Office 365 inclut un [tableau de bord 
 
 La mise à jour des rapports en temps réel vous fournit les dernières informations. Ces rapports fournissent également des recommandations et vous signalent les menaces imminentes. Les rapports prédéfinis incluent le rapport d' [État de protection contre les menaces](view-reports-for-atp.md#threat-protection-status-report), le [rapport de types de fichiers ATP](view-reports-for-atp.md#atp-file-types-report), le [rapport de disposition de messages ATP](view-reports-for-atp.md#atp-message-disposition-report) , etc. 
 
-## <a name="utilize-threat-intelligence-capabilities"></a>Utiliser les fonctionnalités d'aide à la décision
+## <a name="use-threat-investigation-and-response-capabilities"></a>Utiliser les fonctionnalités d'analyse et de réponse aux menaces
 
-Office 365 ATP inclut des outils d'aide à la [décision](office-365-ti.md) qui permettent à l'équipe de sécurité de votre organisation d'anticiper, de comprendre et de prévenir les attaques malveillantes. 
+Office 365 ATP plan 2 inclut des [Outils d'enquête et de réponse de menace](office-365-ti.md) de plus haut niveau qui permettent à l'équipe de sécurité de votre organisation d'anticiper, de comprendre et de prévenir les attaques malveillantes. 
 
 - Les analyseurs de [menace](threat-trackers.md) fournissent la dernière intelligence sur les problèmes Cybersecurity en vigueur. Par exemple, vous pouvez afficher des informations sur le dernier programme malveillant et prendre des contre-mesures avant qu'il ne devienne une véritable menace pour votre organisation. Les suivis disponibles [](threat-trackers.md#noteworthy-trackers)incluent les suivis remarquables, les suivis des [tendances](threat-trackers.md#trending-trackers), les [requêtes suivies](threat-trackers.md#tracked-queries)et les [requêtes enregistrées](threat-trackers.md#saved-queries).
 
@@ -78,9 +78,10 @@ Pour accéder aux fonctionnalités ATP dans le centre de sécurité & conformit�
 |---------|---------|
 |Administrateur général Office 365 |[À propos des rôles d'administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
 |Administrateur de sécurité |[Autorisations de rôle d'administrateur dans Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Gestion de l'organisation Exchange Online |[Autorisations dans Exchange Online](https://docs.microsoft.com/en-us/exchange/permissions-exo/permissions-exo) <br>et<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
+|Gestion de l'organisation Exchange Online |[Autorisations dans Exchange Online](https://docs.microsoft.com/en-us/exchange/permissions-exo/permissions-exo) <br>et<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
 
-Voir aussi:
+Pour plus d'informations, consultez les rubriques suivantes :
+
 - [Autorisations dans le centre de sécurité & de sécurité Office 365](permissions-in-the-security-and-compliance-center.md) 
 
 - [Donner aux utilisateurs l'accès au centre de sécurité & de sécurité Office 365](grant-access-to-the-security-and-compliance-center.md)

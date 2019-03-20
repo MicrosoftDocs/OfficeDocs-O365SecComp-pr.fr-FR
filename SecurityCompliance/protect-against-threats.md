@@ -1,5 +1,5 @@
 ---
-title: Se protéger contre les menaces dans Office 365
+title: Se protéger contre les menaces dans Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -14,18 +14,18 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment Office 365 Enterprise peut aider votre organisation à protéger votre organisation contre diverses menaces, notamment l'usurpation d'identité, les programmes malveillants, le courrier indésirable, les tentatives de hameçonnage et l'accès non autorisé aux données.
-ms.openlocfilehash: da39421184deacdc19adf073f086a3d8a2021acd
-ms.sourcegitcommit: 5b5bbced1577701bdb6befc8ed252e9d9e776529
+ms.openlocfilehash: 1d6abe6bd9347a625c6e533737ffe4bb3b7cee7a
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30245580"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693243"
 ---
-# <a name="protect-against-threats-in-office-365"></a>Se protéger contre les menaces dans Office 365
+# <a name="protect-against-threats-in-office-365"></a>Se protéger contre les menaces dans Office 365
 
 Avec Office 365 Enterprise, vous pouvez protéger votre organisation contre diverses menaces, notamment l'usurpation d'identité, les programmes malveillants, le courrier indésirable, les tentatives de hameçonnage et l'accès non autorisé aux données. Utilisez les ressources de cette page pour en savoir plus sur les options de protection contre les menaces et les actions que vous pouvez effectuer.
 
-## <a name="malware"></a>Malware : 
+## <a name="malware"></a>Programmes malveillants
 
 - [Protection contre le &amp; courrier indésirable contre les programmes malveillants](anti-spam-and-anti-malware-protection.md)
     
@@ -39,7 +39,7 @@ Avec Office 365 Enterprise, vous pouvez protéger votre organisation contre dive
 
 - [Pièces jointes sécurisées ATP Office 365](atp-safe-attachments.md)
 
-- [Liens fiables ATP Office 365](atp-safe-links.md)
+- [Liens fiables Office 365 ATP](atp-safe-links.md)
 
 ## <a name="anti-phishing"></a>Anti-hameçonnage
 
@@ -55,7 +55,7 @@ Si vous utilisez un domaine personnalisé dans Office 365, aidez-vous à arrête
     
 - [Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé dans Office 365](use-dkim-to-validate-outbound-email.md)
     
-- [Utiliser DMARC pour valider les e-mails dans Office 365](use-dmarc-to-validate-email.md)
+- [Utiliser DMARC pour valider les messages électroniques dans Office 365](use-dmarc-to-validate-email.md)
 
 ## <a name="anti-spam"></a>Blocage du courrier inDésirable
 
@@ -72,7 +72,7 @@ ConFigurez des stratégies pour gérer l'usurpation d'identité, vous protéger 
   
 - [En savoir plus sur la protection avancée contre les menaces Office 365](office-365-atp.md)
 
-- [Présentation de l'aide à la décision Office 365](office-365-ti.md)
+- [Obtenir une vue d'ensemble d'Office 365 DAV plan 2](office-365-ti.md)
     
 - [Configurer des stratégies anti-hameçonnage](set-up-anti-phishing-policies.md)
     

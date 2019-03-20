@@ -7,18 +7,17 @@ ms.date: 3/13/2015
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
 ms.collection:
 - M365-security-compliance
 description: La série de vidéos suivante vous aidera à configurer et utiliser le service de filtrage du courrier électronique hébergé d'Exchange Online Protection (EOP).
-ms.openlocfilehash: 65568d21f6b4cb718526a9c9dcddfef2f58b1ca1
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 1e8aadd173f4e30c528679347171230e83752af0
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341185"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693563"
 ---
 # <a name="videos-for-getting-started-with-eop"></a>Vidéos pour démarrer avec EOP
 
@@ -27,7 +26,7 @@ La série de vidéos suivante vous aidera à configurer et utiliser le service d
 > [!NOTE]
 > Avant de commencer les tâches décrites dans les vidéos, nous vous recommandons de configurer le flux de messagerie. Pour plus d'informations, consultez la rubrique [Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx). 
   
-Ces vidéos concernent l'adaptation de vos paramètres de blocage du courrier indésirable pour répondre aux besoins de votre organisation. Pour les messages entrants transitant par le service dans votre organisation, cela inclut la création de listes d'expéditeurs autorisés et bloqués en fonction des adresses IP, ainsi que la configuration des paramètres de filtrage du contenu. Il existe également une vidéo montrant comment les administrateurs peuvent trouver et publier des messages de courrier indésirable filtrés sur le contenu ou des messages qui correspondent à une règle de flux de messagerie (également appelée règle de transport) qui ont été envoyés en quarantaine, et Comment signaler les messages de courrier indésirable pour nous aider à améliorer le service.
+Ces vidéos portent sur l'adaptation de vos paramètres anti-courrier indésirable pour répondre aux besoins de votre organisation. Pour le courrier entrant qui passe par le service pour atteindre votre organisation, cela comprend la création de listes d'expéditeurs autorisés et d'expéditeurs bloqués en fonction des adresses IP, mais aussi la configuration des paramètres de filtre de contenu. Il existe également une vidéo montrant comment les administrateurs peuvent trouver et publier des messages de courrier indésirable filtrés sur le contenu ou des messages qui correspondent à une règle de flux de messagerie (également appelée règle de transport) qui ont été envoyés en quarantaine, et Comment signaler les messages de courrier indésirable pour nous aider à améliorer le service.
   
 - Configurer les listes d'adresses IP autorisées et bloquées dans EOP
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]

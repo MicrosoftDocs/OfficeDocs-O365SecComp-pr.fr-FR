@@ -3,7 +3,7 @@ title: Afficher les rapports de sécurité de messagerie &amp; dans le centre de
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/21/2019
+ms.date: 03/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation avec Office 365 Enterprise. Les rapports de sécurité de messagerie sont disponibles &amp; dans le centre de sécurité conformité.
-ms.openlocfilehash: 833cb4e0b90375179a4ce2097cb986926a9856d0
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: bfd84948624beaa8ea9d2a37da2ecd186b5bd717
+ms.sourcegitcommit: 15202bba32313534da2478b0cd215f32a10c9ef4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341445"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30684363"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Afficher les rapports de sécurité de messagerie &amp; dans le centre de sécurité conformité
 
@@ -68,9 +68,9 @@ De plus, vous pouvez utiliser le menu Afficher les données par pour afficher le
 
 ![Affichage du rapport de chiffrement des données par menu](media/encryptionreport-viewdataby.png)
 
-Avec la flexibilité du nouveau rapport de chiffrement, vous pouvez afficher les tendances et prendre les mesures appropriées. Par exemple, si vous voyez un grand nombre de messages électroniques chiffrés par les utilisateurs, vous souhaiterez peut-être ajouter une stratégie de chiffrement pour automatiser le chiffrement pour certains cas d'utilisation. Et, si un certain nombre de modèles de chiffrement sont disponibles mais que personne ne les utilise, vous pouvez découvrir si les utilisateurs ont besoin d'une formation pour cette fonctionnalité. 
+Avec la flexibilité du nouveau rapport de chiffrement, vous pouvez afficher les tendances et prendre les mesures appropriées. Par exemple, si vous voyez un grand nombre de messages électroniques chiffrés par les utilisateurs, vous souhaiterez peut-être ajouter une stratégie de chiffrement pour automatiser le chiffrement pour certains cas d'utilisation. (Pour obtenir de l'aide, reportez-vous à la rubrique [définition de règles de flux de messagerie pour chiffrer les messages électroniques dans Office 365](define-mail-flow-rules-to-encrypt-email.md).) En guise d'exemple, si un certain nombre de modèles de chiffrement sont disponibles mais que personne ne les utilise, vous pouvez découvrir si les utilisateurs ont besoin d'une formation pour cette fonctionnalité. 
 
-Ce rapport permet à l'équipe de sécurité et de conformité de votre organisation de surveiller le mode d'utilisation du chiffrement des messages et de déterminer si d'autres actions sont nécessaires.
+Ce rapport permet à l'équipe de sécurité et de conformité de votre organisation de surveiller le mode d'utilisation du chiffrement des messages et d'indiquer si d'autres actions sont nécessaires.
 
 ## <a name="threat-protection-status-report"></a>Rapport d'état de protection contre les menaces
 
@@ -219,7 +219,7 @@ Pour afficher et utiliser les rapports décrits dans cet article, **vous devez d
 
 Pour en savoir plus, consultez les ressources suivantes:
 
-- [Autorisations dans le centre de sécurité &amp; conformité Office 365](permissions-in-the-security-and-compliance-center.md)
+- [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 
 - [Autorisations des fonctionnalités dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
    

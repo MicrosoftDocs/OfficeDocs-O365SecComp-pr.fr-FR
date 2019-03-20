@@ -7,16 +7,15 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: Le but de cette rubrique est de vous aider à comprendre le processus de passage d'un équipement de protection de messagerie électronique local ou d'un service de protection dans le nuage à Exchange Online Protection (EOP), puis de vous fournir les ressources d'aide nécessaires pour commencer à l'utiliser.
-ms.openlocfilehash: a1fa7b63dfc1e6eb193d458545722c4b5331bc48
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 0923bf0060891536ac11c5f9fa773f74aed1463f
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30340755"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693413"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Basculement vers EOP à partir de Google Postini, Barracuda Spam and Virus Firewall, ou Cisco IronPort
 
@@ -58,7 +57,7 @@ Si vous décidez de passer à EOP, soyez particulièrement attentif aux aspects 
   
 - **Règles de filtrage personnalisées** Si vous avez des règles de filtrage ou de stratégie d'entreprise personnalisées pour intercepter des courriers indésirables spécifiques, nous vous recommandons d'essayer EOP avec les paramètres par défaut pour une période, avant de migrer vos règles. EOP offre une protection contre le courrier indésirable au niveau de l'entreprise avec les paramètres par défaut, il se peut que vous n'ayez pas besoin de migrer certaines de vos règles vers EOP. Bien entendu, si vous avez des règles en place qui appliquent des stratégies d'entreprise personnalisées spécifiques, vous pouvez les créer. Les [règles de flux de messagerie (règles de transport) dans Exchange Online Protection](mail-flow-rules-transport-rules-0.md) fournissent des instructions détaillées sur la création de règles de flux de messagerie dans EOP. 
     
-- Listes d'adresses **IP autorisées et listes d'adresses IP bloquées** Si vous avez des listes d'autorisation par utilisateur et des listes rouges, prévoyez un certain temps pour copier les listes vers EOP dans le cadre de votre processus de configuration. Pour plus d'informations sur les listes d'adresses IP autorisées et les listes d'adresses IP bloquées, consultez [la rubrique Configure the connection filter Policy](../configure-the-connection-filter-policy.md).
+- **Listes vertes IP et listes rouges IP** Si vous avez des listes vertes et rouges basées sur les utilisateurs, dans le cadre du processus de configuration, prévoyez un peu de temps pour la copie de ces dernières vers EOP. Pour plus d'informations sur les listes d'adresses IP autorisées et les listes d'adresses IP bloquées, consultez [la rubrique Configure the connection filter Policy](../configure-the-connection-filter-policy.md).
     
 - **Communication sécurisée** Si vous avez un partenaire exigeant une messagerie chiffrée, nous vous recommandons de configurer la communication sécurisée dans le Centre d'administration Exchange. Pour configurer ce scénario, consultez la rubrique [Create connectors for a secure mail channel using transport layer security (TLS)](http://technet.microsoft.com/library/1ce4d6a4-41ba-4d1e-9ca9-e826252c1041.aspx).
     

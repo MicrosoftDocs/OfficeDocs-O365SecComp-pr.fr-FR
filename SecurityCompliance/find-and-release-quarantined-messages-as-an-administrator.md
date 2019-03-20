@@ -7,7 +7,6 @@ ms.date: 6/16/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,16 +14,16 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: Cette rubrique explique comment les administrateurs Exchange Online et Exchange Online Protection (EOP) peuvent rechercher, récupérer et signaler les messages mis en quarantaine dans le Centre d'administration Exchange (CAE).
-ms.openlocfilehash: aec067169b343ed186d506ed33c29385a7dc6450
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: a973d3a3b1875ed1ba691f91c1c23373ac8d6694
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341785"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693223"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Rechercher et débloquer les messages mis en quarantaine en tant qu'administrateur
 
-Cette rubrique décrit comment les administrateurs Exchange Online et Exchange Online Protection (EOP) peuvent rechercher, publier et signaler les messages mis en quarantaine dans le centre d'administration Exchange. Office 365 dirige les messages en quarantaine soit parce qu'ils ont été identifiés comme courrier indésirable, soit qu'ils correspondent à une règle de flux de messagerie (également appelée règle de transport). 
+Cette rubrique explique comment les administrateurs Exchange Online et Exchange Online Protection (EOP) peuvent rechercher, récupérer et signaler les messages mis en quarantaine dans le Centre d'administration Exchange (CAE). Office 365 dirige les messages en quarantaine soit parce qu'ils ont été identifiés comme courrier indésirable, soit qu'ils correspondent à une règle de flux de messagerie (également appelée règle de transport). 
   
 Utilisez le centre &amp; de sécurité conformité au lieu du centre d'administration Exchange pour effectuer l'une de ces tâches, ainsi que pour afficher et utiliser les messages qui ont été envoyés en quarantaine, car ils contiennent des programmes malveillants. Pour plus d'informations, consultez la rubrique [mise en quarantaine des messages électroniques dans Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
   
@@ -39,11 +38,11 @@ Vous pouvez consulter la liste de tous les messages mis en quarantaine, ou reche
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 <a name="sectionSection0"> </a>
 
-- Des autorisations doivent vous être attribuées avant de pouvoir effectuer cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée «quarantaine» dans la rubrique [autorisations des fonctionnalités dans Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
+- Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée «quarantaine» dans la rubrique [autorisations des fonctionnalités dans Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
     
 - Vous pouvez diffuser ou signaler plusieurs messages à la fois sur la page de **mise en quarantaine**. Vous pouvez également créer un script Windows PowerShell à distance pour accomplir cette tâche. Utilisez la cmdlet [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) pour rechercher des messages et la cmdlet [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) pour les diffuser. 
     
-- Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013**Raccourcis clavier dans le Centre d'administration Exchange**.
+- Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013 **Keyboard shortcuts in Exchange 2013**.
     
 > [!TIP]
 > Vous rencontrez des difficultés ? Demandez de l'aide en participant aux forums Exchange. Visitez les forums sur les pages [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), et [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
@@ -70,7 +69,7 @@ Dans le centre d'administration Exchange, une recherche avancée vous permet de 
 6. **Expire** Vous pouvez indiquer que le message sera supprimé de la quarantaine au cours des prochaines 24 heures ( **Aujourd'hui**), au cours des prochaines 48 heures ( **2 prochains jours**), au cours de la semaine à venir ( **7 prochains jours**) ou vous pouvez sélectionner un intervalle de temps personnalisé au cours duquel le message sera supprimé de la quarantaine.
     
     > [!IMPORTANT]
-    > Par défaut, les messages de courrier indésirable mis en quarantaine sont conservés en quarantaine pendant 15 jours, tandis que les messages mis en quarantaine qui correspondent à une règle de flux de messagerie sont conservés en quarantaine pendant 7 jours. Après cette période de temps, Office 365 supprime les messages et ils ne peuvent pas être récupérés. La période de rétention des messages mis en quarantaine qui correspondent à une règle de flux de messagerie n'est pas configurable. Toutefois, la période de rétention des messages indésirables mis en quarantaine peut être abaissée via le paramètre **conserver le courrier indésirable pendant (jours)** dans vos stratégies de filtrage de contenu. Pour plus d'informations, consultez [la rubrique Configuration de vos stratégies de filtrage du courrier](configure-your-spam-filter-policies.md)indésirable. 
+    > Par défaut, les messages de courrier indésirable mis en quarantaine sont conservés en quarantaine pendant 15 jours, tandis que les messages mis en quarantaine qui correspondent à une règle de flux de messagerie sont conservés en quarantaine pendant 7 jours. Une fois cette période écoulée, Office 365 supprime les messages qui ne peuvent ensuite plus être récupérés. La période de rétention des messages mis en quarantaine qui correspondent à une règle de flux de messagerie n'est pas configurable. Vous pouvez raccourcir la période de rétention à l'aide du paramètre **Conserver les courriers indésirables pendant (jours)** dans vos stratégies de filtrage du contenu. Pour plus d'informations, consultez la rubrique [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md). 
   
 7. **Type (type** ) Vous pouvez spécifier s'il faut rechercher les messages mis en quarantaine identifiés comme **courrier**indésirable ou rechercher les messages qui correspondent à une règle de flux de messagerie (**règle de transport**).
     
@@ -134,7 +133,7 @@ Si vous souhaitez diffuser des messages à des destinataires, vos options sont l
     
 - [Diffuser un ou plusieurs messages en quarantaine à tous les destinataires et signaler les faux positifs](find-and-release-quarantined-messages-as-an-administrator.md#Releaseoneormorequarantinedmessagestoallrecipientsandreportfalsepositives)
     
-### <a name="release-a-quarantined-message-and-allow-future-messages-from-the-sender"></a>Diffuser un message en quarantaine et autoriser les futurs messages provenant de l'expéditeur
+### <a name="release-a-quarantined-message-and-allow-future-messages-from-the-sender"></a>Diffuser un message en quarantaine et autoriser les futurs messages provenant de l’expéditeur
 <a name="Releasequarantinedmessageallowfuturemessagesfromsender"> </a>
 
 1. Dans le CAE, accédez à **Protection** \> **Quarantaine**.
@@ -145,7 +144,7 @@ Si vous souhaitez diffuser des messages à des destinataires, vos options sont l
   
 Cliquez sur **Diffuser le message sélectionné et autoriser l'expéditeur** dans la liste déroulante. 
     
-3. La boîte de dialogue **libérer le message et autoriser l'expéditeur** s'ouvre. Si vous le souhaitez, vous pouvez choisir de signaler le message à Microsoft, puis de cliquer sur **publier et autoriser**. Le message est envoyé à tous les destinataires auxquels il est adressé et tous les futurs messages provenant de cet expéditeur seront autorisés. Toutefois, si ce message a été mis en quarantaine en raison d'une règle de flux de messagerie ou d'un expéditeur bloqué, l'expéditeur continuera à être bloqué pour les futurs messages. 
+3. La boîte de dialogue **Diffuser le message et autoriser l'expéditeur** s'ouvre. Si vous voulez signaler le message à Microsoft, cliquez sur **Diffuser et autoriser**. Le message est diffusé à tous les destinataires auxquels il est adressé et tous les futurs messages provenant de cet expéditeur sont autorisés. Toutefois, si ce message a été mis en quarantaine en raison d'une règle de flux de messagerie ou d'un expéditeur bloqué, l'expéditeur continuera à être bloqué pour les futurs messages. 
     
 ### <a name="release-a-quarantined-message-to-specific-recipients-without-reporting-it-as-a-false-positive"></a>Diffuser un message en quarantaine à des destinataires spécifiques sans le signaler comme faux positif
 <a name="Releasequarantinedmessagetospecificrecipientswithoutreportingasfalsepositive"> </a>
@@ -173,7 +172,7 @@ Si vous cliquez sur l'icône **Actualiser**![Icône Actualiser](media/ITPro-EAC-
     
 3. Cliquez sur **Diffuser les messages sélectionnés à TOUS les destinataires** dans la liste déroulante. 
     
-4. La boîte de dialogue d'avertissement s'ouvre. Lisez l'avertissement et sélectionnez **Oui**si vous souhaitez continuer. Si vous sélectionnez cette option, sachez qu'il n'est pas possible d'envoyer un message plus d'une fois au même destinataire. Si un destinataire a déjà reçu le message, ce dernier ne lui sera plus envoyé. 
+4. La boîte de dialogue d’avertissement s’ouvre. Lisez l’avertissement et sélectionnez **Oui**si vous souhaitez continuer. Si vous sélectionnez cette option, sachez qu’il n’est pas possible d’envoyer un message plus d’une fois au même destinataire. Si un destinataire a déjà reçu le message, ce dernier ne lui sera plus envoyé. 
     
 ### <a name="release-one-or-more-quarantined-messages-to-all-recipients-and-report-false-positives"></a>Diffuser un ou plusieurs messages en quarantaine à tous les destinataires et signaler les faux positifs
 <a name="Releaseoneormorequarantinedmessagestoallrecipientsandreportfalsepositives"> </a>

@@ -6,7 +6,6 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,12 +13,12 @@ ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
 ms.collection:
 - M365-security-compliance
 description: En tant qu'administrateur Exchange Online ou Exchange Online Protection (EOP), vous pouvez faire en sorte qu'un message électronique circulant via le service ne soit pas marqué comme courrier indésirable. Une manière de procéder consiste à créer des listes d'expéditeurs approuvés et d'expéditeurs bloqués pour les membres de votre organisation.
-ms.openlocfilehash: 390b414c44da6b30193bcb6b9db0b8162aafffb7
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 11ae38733418bb0842732978512698ca6a6274fd
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275654"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692223"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>Listes des expéditeurs autorisés et des expéditeurs bloqués dans Exchange Online
 
@@ -29,9 +28,9 @@ En tant qu'administrateur Exchange Online ou Exchange Online Protection (EOP), v
   
 Si vous n'êtes pas administrateur et que vous souhaitez simplement gérer votre propre courrier indésirable dans Outlook en utilisant une liste d'expéditeurs approuvés, consultez les étapes décrites dans cette présentation du [filtre de courrier indésirable](https://go.microsoft.com/fwlink/?LinkId=817222). 
   
-## <a name="what-is-the-safe-and-blocked-sender-limits-in-exchange-online"></a>Quelles sont les limites d'expéditeurs autorisés et d'expéditeurs bloqués dans Exchange Online ?
+## <a name="what-is-the-safe-and-blocked-sender-limits-in-exchange-online"></a>Quelles sont les limites d’expéditeurs autorisés et d’expéditeurs bloqués dans Exchange Online ?
 
-Les limites d'expéditeurs autorisés et d'expéditeurs bloqués dans Exchange Online diffèrent des limites d'Active Directory et d'Outlook. Ces limites sont :
+Les limites d’expéditeurs autorisés et d’expéditeurs bloqués dans Exchange Online diffèrent des limites d’Active Directory et d’Outlook. Ces limites sont :
   
 - Limite d'expéditeurs autorisés: 1 024
     
@@ -43,7 +42,7 @@ Vous pouvez observer l'erreur décrite dans [KB2590466](https://support.microsof
   
 [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Set-Mailbox)
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Voir aussi
 
 [Sender filtering in Exchange 2016](http://technet.microsoft.com/library/b833f864-ff10-46a0-a653-28fb9ba30896.aspx)
 

@@ -7,20 +7,19 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
-description: Les messages rétrodiffusion sont les messages de retour automatique envoyés par les serveurs de messagerie, généralement à la suite de courrier indésirable entrant. Le BACKSCATTERER est une liste d'adresses IP qui envoient des messages rétrodiffusion. Il ne s'agit pas d'une liste de spammeurs, et nous n'essayons pas de supprimer nos serveurs du BACKSCATTERER.
-ms.openlocfilehash: 73f8631c50bcfb8a023b2b6007b7ccf48038e16e
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+description: La rétrodiffusion désigne l’envoi automatisé de messages non remis par des serveurs de messagerie, généralement à la suite de la détection d’un courrier indésirable entrant. La liste rouge DNS Backscatterer est une liste d'adresses IP qui envoient des messages de rétrodiffusion. Il ne s'agit pas d'une liste d'expéditeurs de courriers indésirables et nous n'essayons pas de retirer nos serveurs de la liste rouge DNS Backscatterer.
+ms.openlocfilehash: 7581255ce4e68f6eb661df280ecb0cb94b7515ef
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275294"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693363"
 ---
 # <a name="backscatter-messages-and-eop"></a>Messages de rétrodiffusion et EOP
 

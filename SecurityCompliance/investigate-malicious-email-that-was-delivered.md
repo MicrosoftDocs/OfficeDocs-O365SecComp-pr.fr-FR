@@ -3,7 +3,7 @@ title: Rechercher et identifier les messages électroniques malveillants qui ont
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/13/2019
+ms.date: 03/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,26 +14,26 @@ search.appverid:
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
-description: Découvrez comment utiliser l'intelligence des menaces pour rechercher et identifier des messages malveillants.
-ms.openlocfilehash: d5b08338bc0a3a6a88ea498861ab9e27522b759d
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+description: Découvrez comment utiliser les fonctionnalités d'analyse et de réponse aux menaces pour rechercher et examiner des courriers électroniques malveillants.
+ms.openlocfilehash: 167a587e16b464bcc7b45bca25e9f3adceda758c
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241906"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692453"
 ---
-# <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>Rechercher et identifier les messages électroniques malveillants qui ont été remis (Office 365 Threat Intelligence)
+# <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>Rechercher et identifier les messages électroniques malveillants qui ont été remis (Office 365 Advanced Threat Protection Plan 2)
 
-[Office 365 Threat Intelligence](office-365-ti.md) vous permet d'examiner les activités qui permettent aux utilisateurs de protéger votre organisation. Par exemple, si vous participez à l'équipe de sécurité de votre organisation, vous pouvez rechercher et enquêter sur les messages électroniques suspects qui ont été remis à vos utilisateurs. Vous pouvez le faire à l'aide de l' [Explorateur de menaces](get-started-with-ti.md#threat-explorer).
+[Office 365 Advanced Threat Protection Plan 2](office-365-ti.md) vous permet d'examiner les activités qui permettent à vos utilisateurs de prendre des risques et de protéger votre organisation. Par exemple, si vous participez à l'équipe de sécurité de votre organisation, vous pouvez rechercher et enquêter sur les messages électroniques suspects qui ont été remis à vos utilisateurs. Vous pouvez le faire à l'aide de l' [Explorateur de menaces](get-started-with-ti.md#threat-explorer).
   
 > [!IMPORTANT]
-> Depuis le mois de février 2019 et le déploiement sur les prochains mois, Office 365 Threat Intelligence est devenu Office 365 Advanced Threat Protection Plan 2, avec des fonctionnalités supplémentaires de protection contre les menaces. Pour en savoir plus, consultez les [offres et tarifs office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) et la [Description du service Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Threat Intelligence est désormais Office 365 Advanced Threat Protection Plan 2, ainsi que d'autres fonctionnalités de protection contre les menaces. Pour en savoir plus, consultez les [offres et tarifs office 365 Advanced Threat Protection](https://products.office.com/exchange/advance-threat-protection) et la [Description du service Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="before-you-begin"></a>Avant de commencer...
 
 Assurez-vous que les conditions suivantes sont remplies :
   
-- Votre organisation dispose d' [office 365 Threat Intelligence](office-365-ti.md) et [attribue des licences aux utilisateurs dans Office 365 pour les entreprises](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
+- Votre organisation a [office 365 Advanced Threat Protection Plan 2](office-365-ti.md) et [attribuez des licences aux utilisateurs dans Office 365 pour les entreprises](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
     
 - La [journalisation d'audit Office 365](turn-audit-log-search-on-or-off.md) est activée pour votre organisation. 
     
@@ -68,11 +68,11 @@ Les utilisateurs malveillants peuvent envoyer des courriers électroniques à vo
     
 9. Utilisez la liste **+ actions** pour appliquer une action, telle que **déplacer vers** les éléments supprimés. Cette opération supprime les messages sélectionnés des boîtes aux lettres des destinataires.<br/>![Lorsque vous sélectionnez un ou plusieurs messages électroniques, vous pouvez choisir parmi plusieurs actions disponibles.](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
   
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
-[Intelligence des menaces d’Office 365](office-365-ti.md)
+[Plan 2 de protection avancée contre les menaces Office 365](office-365-ti.md)
   
-[Se protéger contre les menaces dans Office 365](protect-against-threats.md)
+[Se protéger contre les menaces dans Office 365](protect-against-threats.md)
   
 [Afficher les rapports pour Office 365 protection avancée contre les menaces](view-reports-for-atp.md)
   

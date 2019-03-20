@@ -7,26 +7,25 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
 ms.collection:
 - M365-security-compliance
 description: Dans cette articleSupported LanguagesInstall le dossier Junk Email rePorting Add-unUninstall the Junk Email rePorting Add-inFor more information
-ms.openlocfilehash: b29bd367ca168ff45d983796b8ae6e68ee9df297
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: ee7d1ef3f906c7c03433140c50c5c975f456cb08
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276304"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693013"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installation du complément de création de rapports de courrier indésirable pour Microsoft Outlook
   
 Cette rubrique explique comment installer (et désinstaller) le complément Microsoft de création de rapports de courrier indésirable pour Outlook sur des ordinateurs clients au sein de votre organisation. La version actuelle du complément (janvier 2016) inclut la prise en charge pour Outlook 2016, Outlook 2013, Outlook 2010 et Outlook 2007. 
   
-Le complément (pour toutes les langues prises en charge) vous permet de signaler du courrier indésirable directement à partir du ruban Outlook. La version anglaise du complément inclut des options supplémentaires pour signaler des problèmes liés à la messagerie à Microsoft directement à partir du ruban :
+Le complément (pour toutes les langues prises en charge) vous permet de signaler du courrier indésirable directement à partir du ruban Outlook. La version anglaise du complément inclut des options supplémentaires pour signaler des problèmes liés à la messagerie à Microsoft directement à partir du ruban :
   
--   Signaler les messages électroniques de hameçonnage que vous recevez 
+-  Signaler les messages électroniques de hameçonnage que vous recevez 
     
 - Signalez les messages électroniques identifiés à tort comme du courrier indésirable.
     
@@ -189,7 +188,7 @@ Utilisez l'une des options suivantes pour désinstaller le complément de créat
     
 3. Suivez les invites pour désinstaller le complément.
     
-4. Redémarrez Outlook pour vérifier que le complément ne s’affiche plus dans le ruban Outlook.
+4. Redémarrez Outlook pour vérifier que le complément ne s'affiche plus dans le ruban Outlook.
     
 ### <a name="uninstall-the-junk-email-reporting-add-in-in-silent-mode"></a>Désinstallation du complément Junk Email Reporting en mode sans assistance
 <a name="MK_UninstalltheJunkEmailReportingAdd-ininSilentMode"> </a>

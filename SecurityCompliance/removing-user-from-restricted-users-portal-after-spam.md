@@ -1,5 +1,5 @@
 ---
-title: Suppression d'un utilisateur du portail utilisateurs restreints après l'envoi du courrier indésirable
+title: Suppression d’un utilisateur du portail Utilisateurs restreints après l’envoi d’un courrier indésirable
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -9,7 +9,6 @@ ms.topic: article
 f1_keywords:
 - ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,20 +16,20 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: Si un utilisateur envoie continuellement des courriers électroniques à partir d'Office 365 classés comme courrier indésirable, il ne pourra pas envoyer d'autres messages.
-ms.openlocfilehash: 61d52ad1f25dc3767ad51da5b3a217ace59303ce
-ms.sourcegitcommit: 9918411c01e962d5c67d53dd30a8a9c28c547397
+ms.openlocfilehash: 9370df691bfe30498e32115d7c77dd5cf02556f1
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30654551"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692013"
 ---
-# <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Suppression d'un utilisateur du portail utilisateurs restreints après l'envoi du courrier indésirable
+# <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Suppression d’un utilisateur du portail Utilisateurs restreints après l’envoi d’un courrier indésirable
 
 Si un utilisateur envoie continuellement des courriers électroniques à partir d'Office 365 classés comme courrier indésirable, il ne sera pas autorisé à envoyer d'autres messages sortants. L'utilisateur est mentionné dans le service en tant qu'expéditeur sortant incorrect et reçoit une notification d'échec de remise qui indique:
 
 - Votre message n'a pas pu être remis car vous n'avez pas été reconnu comme un expéditeur valide. La raison la plus fréquente de ce message est que votre adresse de courrier est suspecte d'envoyer du courrier indésirable et qu'elle n'est plus autorisée à envoyer des messages en dehors de votre organisation. Contactez votre administrateur de courrier électronique pour obtenir de l'aide. Le serveur distant a renvoyé' 550 5.1.8 accès refusé, expéditeur sortant incorrect "
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
 <a name="sectionSection0"> </a>
 
 Durée d'exécution estimée : 5 minutes

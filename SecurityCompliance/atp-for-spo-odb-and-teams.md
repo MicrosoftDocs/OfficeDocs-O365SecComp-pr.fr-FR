@@ -1,10 +1,10 @@
 ---
-title: Office 365 - Protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft Teams.
+title: Office 365 ATP pour SharePoint, OneDrive et Microsoft teams
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
-ms.date: 11/08/2018
+ms.date: 03/19/2019
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,14 +15,14 @@ ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 ms.collection:
 - M365-security-compliance
 description: Étendez la protection avancée contre les menaces Office 365 aux fichiers dans SharePoint Online, OneDrive entreprise et Microsoft teams pour activer la collaboration en toute sécurité pour votre organisation.
-ms.openlocfilehash: d9d99041d002a6c43d7b6918f53aabb93f82339a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 55bd613cd89819906773d663deb6278f804cb9de
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220604"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692443"
 ---
-# <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 - Protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft Teams.
+# <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP pour SharePoint, OneDrive et Microsoft teams
 
 ## <a name="overview-of-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Vue d'ensemble de la protection avancée contre les menaces Office 365 pour SharePoint, OneDrive et Microsoft teams
 
@@ -46,11 +46,11 @@ Pour plus d'informations, reportez-vous à [activer l'ATP Office 365 pour ShareP
   
 ## <a name="keep-these-points-in-mind"></a>Gardez les points suivants à l'esprit
 
-- La protection avancée contre les menaces n'analysera pas chaque fichier unique dans SharePoint Online, OneDrive entreprise ou Microsoft Teams. C'est par conception. Les fichiers sont analysés de manière asynchrone, par le biais d'un processus qui utilise des événements d'activité de partage et d'invité, ainsi que des signaux de menace et heuristiques pour identifier les fichiers malveillants.
+- La protection avancée contre les menaces n'analysera pas chaque fichier unique dans SharePoint Online, OneDrive entreprise ou Microsoft Teams. Il s'agit du comportement par défaut. Les fichiers sont analysés de manière asynchrone, par le biais d'un processus qui utilise des événements d'activité de partage et d'invité, ainsi que des signaux de menace et heuristiques pour identifier les fichiers malveillants.
 
 - Assurez-vous que vos sites SharePoint sont configurés pour utiliser l' [expérience moderne](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience). Lorsqu'un fichier est identifié comme malveillant et bloqué, les utilisateurs peuvent voir qu'il s'est produit dans l'expérience moderne, mais pas dans l'affichage classique. La protection contre l'ATP s'applique si l'expérience moderne ou la vue standard est utilisée; Toutefois, les indicateurs visuels signalant qu'un fichier est bloqué sont présents uniquement dans l'expérience moderne.
     
-- Les fichiers identifiés comme étant malveillants dans SharePoint Online, OneDrive entreprise ou Microsoft teams s'afficheront dans des [rapports pour office 365 protection avancée contre les menaces](view-reports-for-atp.md) et dans l'Explorateur de menaces (partie d' [Office 365 Threat Intelligence](office-365-ti.md)).
+- Les fichiers identifiés comme étant malveillants dans SharePoint Online, OneDrive entreprise ou Microsoft teams s'afficheront dans des [rapports pour office 365 Advanced Threat Protection](view-reports-for-atp.md) et dans Threat Explorer (partie d' [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md) ).
     
 - La fonctionnalité ATP fait partie de la stratégie globale de protection contre les menaces de votre organisation, qui inclut la protection contre le courrier indésirable et les programmes malveillants, ainsi que des liens fiables et des pièces jointes fiables. Pour en savoir plus, consultez la rubrique Protégez-vous [contre les menaces dans Office 365](protect-against-threats.md).
     

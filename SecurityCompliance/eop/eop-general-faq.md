@@ -7,16 +7,15 @@ ms.date: 1/2/2018
 ms.audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: "Cette rubrique présente les réponses aux questions générales les plus fréquentes concernant le service de filtrage du courrier électronique hébergé dans le nuage Microsoft Exchange Online Protection (EOP). Pour d'autres rubriques du Forum Aux Questions (FAQ), suivez les liens suivants :"
-ms.openlocfilehash: 888cf338a3f1767ddd6ba01a2f0f60f2f8794e3e
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: 00618618d251e1478cb0dc0a0fbb116db2565fad
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670449"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693193"
 ---
 # <a name="eop-general-faq"></a>Forum Aux Questions d'ordre général concernant Exchange Online Protection (EOP)
 

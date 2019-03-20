@@ -7,7 +7,6 @@ ms.date: 11/10/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: Le filtrage du courrier indésirable sortant est toujours activé si vous utilisez le service pour l'envoi de messages sortants, ce qui permet de protéger les organisations utilisant le service ainsi que leurs destinataires.
-ms.openlocfilehash: 095098c058a5ca5165e0ad24ef48296c980eadcf
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: af48962879dd4ee1e5bbbe832f221e88900faa75
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214524"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692803"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>Configurer la stratégie anti-courrier indésirable sortant
 
@@ -30,21 +29,21 @@ La vidéo suivante illustre la configuration de la stratégie de courrier indés
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/1f20d655-0d3d-4141-9cae-e57f5a6cffe8?autoplay=false]
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
 <a name="sectionSection0"> </a>
 
-Durée d’exécution estimée : 5 minutes
+Durée d'exécution estimée : 5 minutes
   
-Des autorisations doivent vous être attribuées avant de pouvoir effectuer cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez la rubrique «entrée anti-courrier indésirable dans la rubrique [autorisations des fonctionnalités dans Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
+Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez la rubrique «entrée anti-courrier indésirable dans la rubrique [autorisations des fonctionnalités dans Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
   
-Pour obtenir des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, reportez-vous à l’article **Raccourcis clavier dans le Centre d’administration Exchange**.
+Pour des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir Raccourcis clavier dans Exchange 2013 **Keyboard shortcuts in Exchange 2013**.
   
-La procédure suivante peut également être effectuée via PowerShell à distance. Utilisez la cmdlet [Get-HostedOutboundSpamFilterPolicy](http://technet.microsoft.com/library/8f15c83c-c10a-4d9d-b135-35321430bdc2.aspx) pour vérifier vos paramètres, et [Set-HostedOutboundSpamFilterPolicy](http://technet.microsoft.com/library/665d1b04-d4b5-4a0e-811a-4e37096ccbfd.aspx) pour modifier vos paramètres de stratégie de courrier indésirable sortant. Pour savoir comment utiliser Windows PowerShell pour se connecter à Exchange Online Protection, consultez la rubrique [Connect to Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290). Pour savoir comment utiliser Windows PowerShell pour se connecter à Exchange Online, consultez la rubrique [connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+La procédure suivante peut également être exécutée par le biais du service PowerShell à distance. Utilisez la cmdlet [Get-HostedOutboundSpamFilterPolicy](http://technet.microsoft.com/library/8f15c83c-c10a-4d9d-b135-35321430bdc2.aspx) pour vérifier vos paramètres et la cmdlet [Set-HostedOutboundSpamFilterPolicy](http://technet.microsoft.com/library/665d1b04-d4b5-4a0e-811a-4e37096ccbfd.aspx) pour modifier les paramètres de votre stratégie anti-courrier indésirable sortant. Pour apprendre à utiliser Windows PowerShell afin de vous connecter à Exchange Online Protection, consultez la rubrique [Connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290). Pour apprendre à utiliser Windows PowerShell afin de vous connecter à Exchange Online, consultez la rubrique [Connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
   
 ## <a name="use-the-eac-to-edit-the-default-outbound-spam-policy"></a>Utiliser le Centre d'administration Exchange (CAE) pour modifier la stratégie de courrier indésirable sortant par défaut
 <a name="sectionSection1"> </a>
 
-La procédure suivante vous permet de modifier la stratégie de courrier indésirable sortant par défaut :
+La procédure suivante vous permet de modifier la stratégie de courrier indésirable sortant par défaut :
   
 ### <a name="to-configure-the-default-outbound-spam-policy"></a>Pour configurer la stratégie de courrier indésirable sortant par défaut
 

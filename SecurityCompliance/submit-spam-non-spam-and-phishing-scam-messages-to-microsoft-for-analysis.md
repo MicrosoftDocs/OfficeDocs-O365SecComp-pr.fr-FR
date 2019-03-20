@@ -7,7 +7,6 @@ ms.date: 6/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Vous et vos utilisateurs pouvez soumettre des messages indésirables faux positifs et faux positifs à Microsoft pour analyse. '
-ms.openlocfilehash: af11c7ab8e6d80737d2b25ca2b37c3bf7da9fe07
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 471d497a952345da673ce6b3a6f7e9e78bf9b94d
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341525"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693623"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Soumission des messages indésirables, légitimes ou des tentatives de hameçonnage à Microsoft pour analyse
 
@@ -42,7 +41,7 @@ Vous pouvez soumettre des courriers indésirables en procédant comme suit :
         
 - Vous pouvez également utiliser la messagerie électronique pour soumettre des messages à Microsoft qui doivent être classés comme courriers indésirables ou frauduleux, comme décrit dans la procédure suivante.
     
-### <a name="use-email-to-submit-junk-spam-or-phishing-scam-messages-to-microsoft"></a>Utilisation de la messagerie pour soumettre des courriers indésirables (spam) ou des tentatives de hameçonnage à Microsoft
+### <a name="use-email-to-submit-junk-spam-or-phishing-scam-messages-to-microsoft"></a>Utilisation de la messagerie pour soumettre des courriers indésirables (spam) ou des tentatives de hameçonnage à Microsoft 
 <a name="Useemailtosubmitjunkspamorphishingscammessages"> </a>
 
 Pour soumettre un courrier indésirable ou une tentative de hameçonnage à Microsoft, procédez comme suit :
@@ -58,16 +57,16 @@ Pour soumettre un courrier indésirable ou une tentative de hameçonnage à Micr
 3. Copiez et collez le message d'hameçonnage ou de courrier indésirable dans le nouveau message en tant que pièce jointe. 
     
     > [!NOTE]
-    > Vous pouvez joindre plusieurs messages au nouveau message. Assurez-vous que tous les messages sont du même type, à savoir les messages de hameçonnage ou les messages de courrier indésirable. > laissez le corps du nouveau message vide. 
+    > Vous pouvez joindre plusieurs messages au nouveau message. Assurez-vous que tous les messages sont du même type, à savoir les messages de hameçonnage ou les messages de courrier indésirable. > Laissez le corps du message vide. 
   
 4. Cliquez sur **Envoyer**.
     
-## <a name="submit-messages-that-were-tagged-as-junk-but-should-have-been-allowed-through"></a>Soumission de messages marqués comme courrier indésirable mais qui auraient dû être transmis
+## <a name="submit-messages-that-were-tagged-as-junk-but-should-have-been-allowed-through"></a>Soumission de messages marqués comme courrier indésirable mais qui auraient dû être transmis 
 <a name="sectionSection1"> </a>
 
-Si un message a été identifié de manière incorrecte comme courrier indésirable, vous pouvez envoyer le message «faux positif» à l'équipe d'analyse du courrier indésirable de Microsoft. Les analystes vont évaluer et analyser le message. En fonction des résultats de l'analyse, les règles de filtrage de contenu de courrier indésirable à l'échelle du service peuvent être ajustées pour autoriser le message.
+Si un message a été identifié de manière incorrecte comme courrier indésirable, vous pouvez envoyer le message «faux positif» à l'équipe d'analyse du courrier indésirable de Microsoft. Les analystes vont évaluer et analyser le message. Selon les résultats de l'analyse, les règles de filtrage de contenu du courrier indésirable du service peuvent être ajustées pour autoriser le message.
   
-Les administrateurs peuvent examiner davantage d'informations sur les paramètres du courrier indésirable qui s'appliquent à une organisation entière. Découvrez [Comment vous assurer qu'un message n'est pas marqué comme courrier](https://go.microsoft.com/fwlink/p/?LinkId=534224)indésirable. Ces informations sont utiles si vous disposez d'un contrôle de niveau administrateur et que vous souhaitez éviter les faux positifs.
+Les administrateurs peuvent examiner davantage d'informations sur les paramètres du courrier indésirable qui s'appliquent à une organisation entière. Découvrez [Comment vous assurer qu'un message n'est pas marqué comme courrier](https://go.microsoft.com/fwlink/p/?LinkId=534224)indésirable. Ces informations sont utiles si vous disposez d'un contrôle de niveau administrateur et si vous souhaitez éviter les faux positifs ou les faux négatifs.
   
 Vous pouvez envoyer des messages de courrier non indésirable de la manière suivante :
   
@@ -83,11 +82,11 @@ Vous pouvez envoyer des messages de courrier non indésirable de la manière sui
     
   - Les utilisateurs peuvent publier leurs propres messages indésirables mis en quarantaine et les signaler comme faux positifs par le biais des canaux suivants: 
     
-  - L’interface utilisateur du centre d’administration Exchange (EAC). Pour plus d’informations, voir [Find and Release Quarantined Messages (End Users)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx).
+  - L'interface utilisateur du centre d'administration Exchange (EAC). Pour plus d’informations, voir [Find and Release Quarantined Messages (End Users)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx).
     
   - Les messages de notification de courrier indésirable pour les utilisateurs finaux (s'ils sont activés par votre administrateur). 
     
-- Vous pouvez également utiliser la messagerie électronique pour envoyer à Microsoft des messages qui ne doivent pas être classés comme courrier indésirable. Lorsque vous procédez ainsi, veillez à suivre les étapes de la procédure ci-dessous.
+- Vous pouvez également utiliser la messagerie pour envoyer à Microsoft des messages qui ne devraient pas être classés comme courrier indésirable. Lorsque vous procédez ainsi, veillez à suivre les étapes de la procédure ci-dessous.
     
 ### <a name="use-email-to-submit-false-positive-messages"></a>Utilisation du courrier électronique pour soumettre des messages faux positifs
 
@@ -96,7 +95,7 @@ Utilisez la même procédure que celle décrite dans la section «[utiliser le c
 ## <a name="spam-evaluation-and-rules-deployment"></a>Évaluation du courrier inDésirable et déploiement des règles
 <a name="sectionSection2"> </a>
 
-L'équipe analyse du courrier indésirable examine les messages que vous envoyez et ajuste les filtres de courrier indésirable pour éviter les futurs courriers indésirables. Par conséquent, les filtres de courrier indésirable d'Office 365 areconstantly perfectionnés. Tous les éléments soumis sont évalués au niveau de l'ensemble du réseau. Les soumissions de faux positifs sont examinées et évaluées pour les éventuels ajustements de règle afin d'autoriser les messages futurs via les filtres de courrier indésirable. Par conséquent, vous et tous les clients qui utilisent le réseau global sont des avantages pour le service de faux positifs, ainsi que des faux négatifs (courrier indésirable non filtré). L'équipe de courrier indésirable examine les indicateurs dans chaque message envoyé, par exemple:
+L'équipe analyse du courrier indésirable examine les messages que vous envoyez et ajuste les filtres de courrier indésirable pour éviter les futurs courriers indésirables. Par conséquent, les filtres de courrier indésirable d'Office 365 areconstantly perfectionnés. Les éléments soumis sont évalués au niveau réseau. Les soumissions de faux positifs sont examinées et évaluées pour les éventuels ajustements de règle afin d'autoriser les messages futurs via les filtres de courrier indésirable. Par conséquent, vous et tous les clients qui utilisent le réseau global sont des avantages pour le service de faux positifs, ainsi que des faux négatifs (courrier indésirable non filtré). L'équipe de courrier indésirable examine les indicateurs dans chaque message envoyé, par exemple:
   
 - Adresse de l'expéditeur
     

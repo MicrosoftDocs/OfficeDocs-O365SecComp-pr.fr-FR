@@ -7,7 +7,6 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,26 +14,26 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: Cette rubrique fournit des réponses aux questions fréquemment posées concernant la protection contre le courrier indésirable. Les réponses s'appliquent aux clients de Microsoft Exchange Online et Exchange Online Protection (EOP).
-ms.openlocfilehash: 47ab5202e4f20bbb8cdcf1d83987b0c0c20e8f29
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 8ac5fff97828764524c8bfa1510549396d509866
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341675"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692233"
 ---
 # <a name="anti-spam-protection-faq"></a>Forum Aux Questions sur la protection anti-courrier indésirable
 
 Cette rubrique fournit des réponses aux questions fréquemment posées concernant la protection contre le courrier indésirable. Les réponses s'appliquent aux clients de Microsoft Exchange Online et Exchange Online Protection (EOP). 
   
 > [!TIP]
-> Pour obtenir des questions et des réponses sur les listes d'expéditeurs approuvés et d'expéditeurs bloqués, consultez la rubrique [Safe sender and blocked sender Lists in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md). Pour obtenir des questions et des réponses sur la mise en quarantaine, consultez la rubrique [mise en quarantaine](quarantine-faq.md). 
+> Pour obtenir des questions et des réponses sur les listes d'expéditeurs approuvés et d'expéditeurs bloqués, consultez la rubrique [Safe sender and blocked sender Lists in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md). Pour accéder à des questions et des réponses sur la mise en quarantaine, voir [FAQ sur la mise en quarantaine](quarantine-faq.md). 
   
  **Q. Par défaut, qu'arrive-t-il à un message identifié comme courrier indésirable ?**
   
 R. **Pour les messages entrants :** L'essentiel du courrier indésirable est supprimé par filtrage des connexions, sur la base de l'adresse IP de l'expéditeur. Le service inspecte ensuite le contenu du message. Par défaut, le courrier indésirable filtré sur le contenu est envoyé au dossier Courrier indésirable du destinataire. Vous pouvez modifier ce comportement. Par exemple, vous pouvez mettre les messages de courrier indésirable en quarantaine en configurant la stratégie de filtrage de contenu. 
   
 > [!IMPORTANT]
-> Pour les clients autonomes EOP: afin de s'assurer que l'action **déplacer le message vers le dossier** courrier indésirable fonctionnera avec des boîtes aux lettres locales, vous devez configurer deux règles de flux de messagerie Exchange (également appelées règles de transport) sur vos serveurs locaux pour détecter en-têtes de courrier indésirable ajoutés par EOP. Pour plus d'informations, consultez [la rubrique s'assurer que le courrier indésirable est acheminé vers le dossier de courrier indésirable de chaque utilisateur](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
+> Pour les clients autonomes EOP: afin de s'assurer que l'action **déplacer le message vers le dossier** courrier indésirable fonctionnera avec des boîtes aux lettres locales, vous devez configurer deux règles de flux de messagerie Exchange (également appelées règles de transport) sur vos serveurs locaux pour détecter en-têtes de courrier indésirable ajoutés par EOP. Pour plus d'informations, consultez la rubrique [Vérification de l'acheminement du courrier indésirable vers le dossier Courrier indésirable de chaque utilisateur](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
  **Pour les messages sortants :** le message est routé par le pool de remise à risque plus élevé ou est retourné et non remis. Dans ce cas, l'expéditeur doit recevoir un message de notification d'état de remise (DSN) indiquant que le message n'a pas pu être remis. 
   
@@ -44,9 +43,9 @@ R. Une variante « zero-day » est une variante de courrier indésirable de prem
   
  **Q. Dois-je configurer le service pour bénéficier d'une protection anti-courrier indésirable ?**
   
-R. Après vous être inscrit au service et avoir ajouté votre domaine, le filtrage du courrier indésirable est automatiquement activé pour l'ensemble de l'organisation via les stratégies anti-courrier indésirable par défaut. Les stratégies par défaut sont réglées pour vous protéger sans avoir à effectuer de configuration supplémentaire (sauf l'exception indiquée ci-dessus pour les clients autonomes EOP). En qualité d'administrateur, vous pouvez modifier les stratégies anti-courrier indésirable par défaut pour les adapter au mieux aux besoins de votre organisation. Pour une précision accrue, vous pouvez également créer des stratégies de filtrage de contenu personnalisées et les appliquer à des utilisateurs, à des groupes ou à des domaines spécifiés dans votre organisation. Les stratégies personnalisées priment toujours sur la stratégie par défaut. Vous pouvez cependant modifier la priorité (l'ordre d'exécution) de vos stratégies personnalisées.
+R. Après vous être inscrit au service et avoir ajouté votre domaine, le filtrage du courrier indésirable est automatiquement activé pour l'ensemble de l'organisation via les stratégies anti-courrier indésirable par défaut. Les stratégies par défaut sont réglées pour vous protéger sans avoir à effectuer de configuration supplémentaire (sauf l’exception indiquée ci-dessus pour les clients autonomes EOP). En qualité d’administrateur, vous pouvez modifier les stratégies anti-courrier indésirable par défaut pour les adapter au mieux aux besoins de votre organisation. Pour une précision accrue, vous pouvez également créer des stratégies de filtrage de contenu personnalisées et les appliquer à des utilisateurs, à des groupes ou à des domaines spécifiés dans votre organisation. Les stratégies personnalisées priment toujours sur la stratégie par défaut. Vous pouvez cependant modifier la priorité (l’ordre d’exécution) de vos stratégies personnalisées.
   
-Pour plus d'informations sur la configuration de vos stratégies anti-spam, consultez les rubriques suivantes :
+Pour plus d'informations sur la configuration de vos stratégies anti-courrier indésirable, consultez les rubriques suivantes :
   
 [Configuration de la stratégie de filtrage des connexions](configure-the-connection-filter-policy.md)
   
@@ -56,7 +55,7 @@ Pour plus d'informations sur la configuration de vos stratégies anti-spam, cons
   
  **Q. Si je modifie une stratégie anti-courrier indésirable, combien de temps après l'enregistrement de mes changements ces derniers prennent-ils effet ?**
   
-R. Les changements devraient prendre effet au bout d'une heure maximum.
+R. Les changements devraient prendre effet au bout d’une heure maximum.
   
  **Q. Le filtrage des messages électroniques en bloc est-il automatiquement activé ?**
   
@@ -64,7 +63,7 @@ R. Par défaut, l'option avancée de filtrage du courrier indésirable **Courrie
   
  **Q. Le service fournit-il le filtrage d'URL ?**
   
-R. Oui, le service a un filtre d'URL qui vérifie les URL contenues dans les messages. Si des URL associées à du contenu indésirable ou malveillant connu sont détectées, le message est marqué comme courrier indésirable.
+R. Oui, le service a un filtre d’URL qui vérifie les URL contenues dans les messages. Si des URL associées à du contenu indésirable ou malveillant connu sont détectées, le message est marqué comme courrier indésirable.
   
  **Q. Comment les clients utilisant le service peuvent-ils signaler des faux négatifs (courrier indésirable) et des faux positifs (messages légitimes) à Microsoft ?**
   
@@ -72,17 +71,17 @@ R. Les messages de courrier indésirable et de courrier non indésirable peuvent
   
  **Q. Puis-je obtenir des rapports sur le courrier indésirable ?**
   
-R. Oui. Par exemple, vous pouvez obtenir un rapport de détection de courrier indésirable dans le centre d'administration Office 365. Ce rapport indique le volume de courrier indésirable sous la forme d'un nombre de messages uniques. Pour plus d'informations sur les rapports, consultez les liens suivants :
+R. Oui. Par exemple, vous pouvez obtenir un rapport de détection de courrier indésirable dans le centre d’administration Office 365. Ce rapport indique le volume de courrier indésirable sous la forme d’un nombre de messages uniques. Pour plus d'informations sur les rapports, consultez les liens suivants :
   
 Clients Exchange Online: [surveillance, création de rapports et suivi des messages dans Exchange Online](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   
 Clients Exchange Online Protection: [création de rapports et suivi des messages dans Exchange Online Protection](eop/reporting-and-message-trace-in-exchange-online-protection.md)
   
- **Q. quelqu'un m'a envoyé un message et je ne le trouve pas. Je pense qu'elle a peut-être été détectée comme courrier indésirable. Existe-t-il un outil permettant de découvrir?**
+ **Q. Someone sent me a message and I can't find it. I suspect that it may have been detected as spam. Is there a tool that I can use to find out?**
   
 R. Oui, l'outil de suivi des messages vous permet de suivre les messages électroniques quand ils sont acheminés via le service afin de déterminer ce qui leur est arrivé. Pour plus d'informations sur l'utilisation de l'outil de suivi des messages pour comprendre pourquoi un message a été détecté comme courrier indésirable, consultez la rubrique [Le message a-t-il été marqué comme courrier indésirable ?](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx#BKMB_Whywasamessagemarkedasspam)
   
- **Q. Le service limite-t-il (limite de débit) ma messagerie si mes utilisateurs envoient du courrier indésirable sortant ?**
+ **Q. Le service limite-t-il (limite de débit) ma messagerie si mes utilisateurs envoient du courrier indésirable sortant ?**
   
 R. Si plus de la moitié du courrier envoyé via le service par un même utilisateur au cours d'une certain laps de temps (par exemple, par heure) est considéré comme indésirable par Office 365, l'utilisateur ne peut plus envoyer de messages. Dans la plupart des cas, si un message sortant est déterminé comme étant du courrier indésirable, il est routé via le pool de remises à haut risque, ce qui réduit la probabilité d'ajout du pool d'IP sortantes normales à une liste rouge.
   
@@ -110,7 +109,7 @@ R. Les instructions ci-dessous constituent les meilleures pratiques pour l'envoi
   
 1. **Le domaine d'envoi du message électronique doit se résoudre dans DNS.**
     
-    Par exemple, si l'expéditeur est user@example.com, le domaine example.com est résolu en adresse IP 192.0.43.10. Si un domaine d'envoi n'a pas d'enregistrement A et aucun enregistrement MX dans le système DNS, le service achemine le message via le pool de remise à risque plus élevé que le contenu du message soit ou non du courrier indésirable. Pour plus d'informations sur le pool de remise à risque plus élevé, consultez la rubrique [pool de remise à haut risque pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md). 
+    Par exemple, si l'expéditeur est utilisateur@example.com, la résolution du domaine example.com est l'adresse IP 192.0.43.10. Si aucun enregistrement A ou enregistrement MX ne correspond au domaine d’envoi dans DNS, le service route le message via son pool de remise à risque plus élevé, que le contenu du message soit du courrier indésirable ou non. Pour plus d'informations sur le pool de remise à risque plus élevé, consultez la rubrique [pool de remise à haut risque pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md). 
     
 2. **L'adresse IP d'envoi du serveur de courrier sortant doit avoir une entrée DNS inversée (PTR).**
     
@@ -122,7 +121,7 @@ R. Les instructions ci-dessous constituent les meilleures pratiques pour l'envoi
     
 4. **Veillez à ce que les enregistrements SPF appropriés soient configurés dans DNS.**
     
-    Les enregistrements SPF constituent un mécanisme permettant de valider le fait que du courrier électronique envoyé par un domaine provient réellement de ce dernier et n'est pas falsifié. Pour plus d'informations sur les enregistrements SPF, consultez les liens suivants :
+    Les enregistrements SPF constituent un mécanisme permettant de valider le fait que du courrier électronique envoyé par un domaine provient réellement de ce dernier et n'est pas falsifié. Pour plus d'informations sur les enregistrements SPF, consultez les liens suivants :
     
     [Configurer SPF dans Office 365 pour empêcher l’usurpation](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
     
@@ -136,19 +135,19 @@ R. Les instructions ci-dessous constituent les meilleures pratiques pour l'envoi
     
     Ces informations identifient les propriétaires de domaine et indiquent comment les contacter en entrant la société mère stable, le point de contact et les serveurs de noms.
     
-7. **Pour les publipostages en bloc, le nom de: doit indiquer la personne qui envoie le message, tandis que la ligne d'objet du message doit être un bref résumé de la description du message.**
+7. **For bulk mailers, the From: name should reflect who is sending the message, while the subject line of the message should be a brief summary on what the message is about.**
     
     Le corps du message doit contenir une indication claire concernant l'offre, le service ou le produit. Par exemple, si un expéditeur envoie un publipostage pour le compte de la société Contoso, voici à quoi doit ressembler le contenu des champs De et Objet du message électronique :
     
     De : marketing@contoso.com
     
-    Objet : Nouveau catalogue à jour pour la période de Noël 
+    Objet : Nouveau catalogue à jour pour la période de Noël 
     
-    Voici un exemple de ce qu'il ne faut pas faire parce que ce n'est pas assez descriptif :
+    Voici un exemple de ce qu'il ne faut pas faire parce que ce n'est pas assez descriptif :
     
-    De : utilisateur@hotmail.com
+    De : utilisateur@hotmail.com
     
-    Objet : Catalogues
+    Objet : Catalogues
     
 8. **Si vous envoyez un publipostage à un grand nombre de destinataires et que le message présente le format d'un bulletin d'informations, il doit contenir un lien de désabonnement au bas du texte de contenu.**
     
@@ -158,7 +157,7 @@ R. Les instructions ci-dessous constituent les meilleures pratiques pour l'envoi
     
 9. **En cas d'envoi d'un publipostage, l'acquisition de liste doit être effectuée à l'aide d'un contrôle de consentement double (double opt-in). Si vous êtes un expéditeur de publipostage, cette pratique est recommandée par le secteur.**
     
-    La pratique de contrôle de consentement double consiste à demander à un utilisateur d'effectuer deux actions pour confirmer son abonnement à un courrier électronique marketing :
+    La pratique de contrôle de consentement double consiste à demander à un utilisateur d'effectuer deux actions pour confirmer son abonnement à un courrier électronique marketing :
     
 1. une première fois en cliquant sur une case à cocher non encore activée pour indiquer qu'il consent à recevoir d'autres offres ou messages électroniques du mercaticien ;
     
@@ -166,7 +165,7 @@ R. Les instructions ci-dessous constituent les meilleures pratiques pour l'envoi
     
     Pour les expéditeurs de publipostages, le recours au contrôle de consentement double a pour effet de leur forger une bonne réputation.
     
-10. **Les expéditeurs de publipostage doivent proposer un contenu transparent dont ils peuvent être jugés responsables :**
+10. **Les expéditeurs de publipostage doivent proposer un contenu transparent dont ils peuvent être jugés responsables :**
     
 1. Tout texte demandant au destinataire d'ajouter l'expéditeur à son carnet d'adresses devrait clairement indiquer qu'une telle action ne constitue par une garantie de remise.
     

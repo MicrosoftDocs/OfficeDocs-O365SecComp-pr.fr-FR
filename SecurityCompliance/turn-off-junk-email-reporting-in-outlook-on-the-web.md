@@ -6,18 +6,17 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8d57fe9e-57b8-4884-9317-80b380804b4a
 ms.collection:
 - M365-security-compliance
 description: En tant qu'administrateur Office 365, vous pouvez désactiver la possibilité pour les utilisateurs de signaler le courrier indésirable.
-ms.openlocfilehash: 1e45f258bea2ea75d9b4cabcacc43b54c44f83c3
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: f3e8a8cf837e7923d3c7241852ab2acd375492b8
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275584"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692553"
 ---
 # <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>Désactiver la création de rapports de courrier indésirable dans Outlook sur le Web
 
@@ -26,9 +25,9 @@ Vous pouvez envoyer des messages indésirables, de hameçonnage et non de courri
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
 <a name="sectionSection0"> </a>
 
-- Durée d’exécution estimée : 5 minutes
+- Durée d'exécution estimée : 5 minutes
     
-- Des autorisations doivent vous être attribuées avant de pouvoir effectuer cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez entrée «stratégies de boîte aux lettres Outlook sur le Web» dans la rubrique [autorisations Outlook sur le Web](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx#OutlookWebApp) . 
+- Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez entrée «stratégies de boîte aux lettres Outlook sur le Web» dans la rubrique [autorisations Outlook sur le Web](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx#OutlookWebApp) . 
 
 - Pour vous connecter à Exchange Online PowerShell, consultez la rubrique [connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 

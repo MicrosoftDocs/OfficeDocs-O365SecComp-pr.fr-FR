@@ -15,12 +15,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment activer le complément de message de rapport pour Outlook et Outlook sur le Web, pour des utilisateurs individuels ou l'ensemble de votre organisation.
-ms.openlocfilehash: aba02855b514f0d631d332623d840f9c65911bd1
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: f2bb79c4c613fdb804d19226fb359124387a678f
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410899"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693383"
 ---
 # <a name="enable-the-report-message-add-in"></a>Activer le complément Signaler le message
 
@@ -29,7 +29,7 @@ ms.locfileid: "30410899"
 
 ## <a name="overview"></a>Vue d’ensemble
 
-Le complément de message de rapport pour Outlook et Outlook sur le Web permet aux utilisateurs de signaler facilement les messages électroniques, qu'ils soient fiables ou malveillants, à Microsoft et à ses filiales pour analyse. Microsoft utilise ces soumissions pour améliorer l'efficacité des technologies de protection de la messagerie. En outre, si votre organisation utilise [office 365 Advanced Threat Protection](office-365-atp.md) ou [Office 365 Threat Intelligence](office-365-ti.md), le complément Report message fournit à l'équipe de sécurité de votre organisation des informations utiles qu'elle peut utiliser pour examiner et mettre à jour stratégies de sécurité. 
+Le complément de message de rapport pour Outlook et Outlook sur le Web permet aux utilisateurs de signaler facilement les messages électroniques, qu'ils soient fiables ou malveillants, à Microsoft et à ses filiales pour analyse. Microsoft utilise ces soumissions pour améliorer l'efficacité des technologies de protection de la messagerie. En outre, si votre organisation utilise [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) ou [plan 2](office-365-ti.md), le complément Report message fournit à l'équipe de sécurité de votre organisation des informations utiles qu'il peut utiliser pour examiner et mettre à jour les stratégies de sécurité. 
 
 Par exemple, supposons que des personnes signalent un grand nombre de messages comme hameçonnage. Ces informations sont rePrésentées dans le [tableau de bord de sécurité](security-dashboard.md) et d'autres rapports. L'équipe de sécurité de votre organisation peut utiliser ces informations pour indiquer que les stratégies de détection d'hameçonnage doivent être mises à jour. Ou bien, si des personnes signalent un grand nombre de messages marqués comme légitimes comme légitimes à l'aide du complément de message de rapport, il se peut que l'équipe de sécurité de votre organisation doive ajuster les [stratégies de blocage du courrier](configure-the-anti-spam-policies.md)indésirable. 
 
@@ -121,7 +121,7 @@ Vous pouvez configurer une règle pour obtenir une copie des messages électroni
     
 9. Sous **choisir un mode pour cette règle**, choisissez **appliquer**.<br/>![Configurer une règle pour obtenir une copie de chaque message signalé](media/f1cd95ce-e40d-4a8a-8f48-893469eba691.png)<br/>
   
-10. Sélectionnez **Enregistrer**. 
+10. Cliquez sur **Enregistrer**. 
     
 Avec cette règle en place, chaque fois que quelqu'un de votre organisation signale un message électronique à l'aide du complément de message de rapport, votre administrateur général, votre administrateur de sécurité et/ou votre lecteur de sécurité recevront une copie de ce message. Ces informations vous permettent de configurer ou d'ajuster des stratégies, telles que [des stratégies de liens approuvés Office 365 ATP](atp-safe-links.md) ou vos paramètres de [blocage du courrier](anti-spam-protection.md) indésirable. 
 

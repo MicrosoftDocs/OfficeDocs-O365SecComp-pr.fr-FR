@@ -6,7 +6,6 @@ manager: serdars
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,12 +13,12 @@ ms.assetid: c7dee22c-9b5b-425c-91a9-d093204ff84e
 ms.collection:
 - M365-security-compliance
 description: Brève description des administrateurs Exchange Online à faire pour afficher et configurer les paramètres S/MIME dans Outlook sur le Web dans Exchange Online.
-ms.openlocfilehash: 005c3075ec8fe6255231ba7358e5b4cc22b92f1d
-ms.sourcegitcommit: 8b36bf7949f1769f1418d740293637d60e403f87
+ms.openlocfilehash: d890b7f39d16d8c0f3866d5ff0024fe31160af6b
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30339442"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693333"
 ---
 # <a name="configure-smime-settings-in-exchange-online-for-outlook-on-the-web"></a>Configurer les paramètres S/MIME dans Exchange Online pour Outlook sur le Web
 
@@ -33,6 +32,6 @@ Pour utiliser S/MIME dans Outlook sur le Web dans le navigateur Web Google Chrom
 
 Cette étape est requise pour utiliser Chrome; il ne remplace pas le contrôle S/MIME qui est installé par les utilisateurs. Pour plus d'informations sur la stratégie **ExtensionInstallForcelist** , voir [ExtensionInstallForcelist](http://dev.chromium.org/administrators/policy-list-3#ExtensionInstallForcelist).
 
-## <a name="for-more-information"></a>Pour plus d’informations
+## <a name="for-more-information"></a>Pour plus d'informations
 
 [S/MIME pour la signature et le chiffrement des messages](s-mime-for-message-signing-and-encryption.md)

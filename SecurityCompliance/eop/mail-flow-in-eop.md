@@ -7,22 +7,21 @@ ms.date: 3/13/2015
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 description: Étant donné que vous êtes client Exchange Online Protection (EOP), tous les messages envoyés à votre organisation transitent par EOP avant que vos collaborateurs ne les voient. Que vous hébergiez l'ensemble de vos boîtes aux lettres dans le nuage avec Exchange Online ou localement (scénario dit autonome) pour éventuellement continuer à tirer parti de votre infrastructure existante, vous avez plusieurs possibilités de router les messages qui transiteront par EOP dans le cadre de leur traitement avant qu'ils ne soient acheminés vers les boîtes de réception de vos collaborateurs.
-ms.openlocfilehash: ff5284eafe01a3887fa69fde2b5bcd023ee391db
-ms.sourcegitcommit: 285c58a371e6ab82c40fac3f24530cf3b09d0175
+ms.openlocfilehash: b223efc62ff875ed345ce27a17263b3876829999
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "23002138"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30691713"
 ---
 # <a name="mail-flow-in-eop"></a>Flux de messagerie dans EOP
 
 Étant donné que vous êtes client Exchange Online Protection (EOP), tous les messages envoyés à votre organisation transitent par EOP avant que vos collaborateurs ne les voient. Que vous hébergiez l'ensemble de vos boîtes aux lettres dans le nuage avec Exchange Online ou localement (scénario dit autonome) pour éventuellement continuer à tirer parti de votre infrastructure existante, vous avez plusieurs possibilités de router les messages qui transiteront par EOP dans le cadre de leur traitement avant qu'ils ne soient acheminés vers les boîtes de réception de vos collaborateurs.
   
-Vous pouvez personnaliser le routage des messages pour que votre messagerie réponde à vos besoins métiers. Par exemple, vous avez la possibilité d’utiliser un équipement de filtrage de stratégie pour tous vos messages sortants. 
+Vous pouvez personnaliser le routage des messages pour que votre messagerie réponde à vos besoins métiers. Par exemple, vous avez la possibilité d'utiliser un équipement de filtrage de stratégie pour tous vos messages sortants. 
   
 ## <a name="working-with-messages-and-message-access-options"></a>Utilisation des messages et des options d’accès aux messages
 
@@ -36,7 +35,7 @@ Si vous ajoutez des sous-domaines dans votre organisation, votre service EOP peu
   
 La rubrique [Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx) présente les connecteurs et explique comment vous pouvez les utiliser pour personnaliser le routage des messages. Les scénarios décrivent la procédure pour assurer une communication sécurisée avec une organisation partenaire et configurer un hôte actif. 
   
-Pour vous assurer que le courrier indésirable est routé correctement au dossier de courrier électronique indésirable de chaque utilisateur, vous devez effectuer quelques étapes de configuration. Celles-ci sont détaillées dans [vous assurer que le courrier indésirable est routé vers le dossier courrier indésirable de chaque utilisateur](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). Si vous ne souhaitez pas déplacer les messages vers le dossier de courrier électronique indésirable de chaque utilisateur, vous pouvez choisir une autre action en modifiant vos stratégies de filtrage de contenu dans le centre d’administration Exchange. Pour plus d’informations, voir [configurer vos stratégies de filtrage du courrier indésirable](../configure-your-spam-filter-policies.md).
+Vous pouvez vous assurer que le courrier indésirable est correctement routé vers le dossier Courrier indésirable de chaque utilisateur en effectuant quelques opérations de configuration. Ces éléments sont détaillés dans la vérification que le courrier indésirable [est acheminé vers le dossier de courrier indésirable de chaque utilisateur](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). Si vous ne souhaitez pas déplacer les messages vers le dossier Courrier indésirable de chaque utilisateur, vous pouvez choisir une autre action en modifiant vos stratégies de filtrage de contenu dans le Centre d'administration Exchange. Pour plus d'informations, consultez la rubrique [Configuration de vos stratégies de filtrage du courrier indésirable](../configure-your-spam-filter-policies.md).
   
 ## <a name="verify-mail-flow"></a>Vérifier le flux de messagerie
 
