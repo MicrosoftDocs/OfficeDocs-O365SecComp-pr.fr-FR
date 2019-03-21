@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Présentation des stratégies de surveillance dans Office 365
-ms.openlocfilehash: 99957accb6a1f52f0e0a895fc96ef2b6ac0ac757
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: c22abdf315b2301ae9c63b26f548eff302df8e2a
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492853"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720274"
 ---
 # <a name="supervision-policies-in-office-365"></a>Stratégies de surveillance dans Office 365
 
@@ -99,7 +99,7 @@ Pour en savoir plus sur les détails des informations sensibles et les modèles 
 
 #### <a name="custom-keyword-dictionaries"></a>Dictionnaires de mots clés personnalisés
 
-La configuration de dictionnaires de mots clés personnalisés (ou de lexiques) peut fournir une gestion simple des mots clés propres à votre organisation ou votre secteur d'activité et peut prendre en charge jusqu'à 100 000 termes par dictionnaire. Si nécessaire, vous pouvez appliquer plusieurs dictionnaires de mots clés personnalisés à une seule stratégie ou disposer d'un dictionnaire à Mots clés unique par stratégie. Ces dictionnaires sont affectés dans une stratégie de surveillance et peuvent être issus d'un fichier (par exemple, une liste. csv ou. txt) ou d'une liste que vous pouvez [entrer directement dans une cmdlet PowerShell](create-a-keyword-dictionary.md).
+La configuration de dictionnaires de mots clés personnalisés (ou de lexiques) peut fournir une gestion simple des mots clés propres à votre organisation ou votre secteur d'activité et peut prendre en charge jusqu'à 100 000 termes par dictionnaire. Si nécessaire, vous pouvez appliquer plusieurs dictionnaires de mots clés personnalisés à une seule stratégie ou disposer d'un dictionnaire à Mots clés unique par stratégie. Ces dictionnaires sont affectés dans une stratégie de surveillance et peuvent être issus d'un fichier (par exemple, une liste. csv ou. txt) ou d'une liste que vous pouvez [importer dans le centre de conformité](create-a-keyword-dictionary.md).
 
 #### <a name="conditional-settings"></a>Paramètres conditionnels
 
@@ -249,16 +249,17 @@ Les activités de stratégie de surveillance suivantes sont vérifiées et peuve
 
 |**Activité**|**Commandes associées**|
 |:-----|:-----|
-| Création d'une stratégie | New-SupervisoryReviewPolicy <br> New-SupervisoryReviewRule |
-| Modification d'une stratégie | Set-SupervisoryReviewPolicy <br> Set-SupervisoryReviewRule |
-| Suppression d'une stratégie| Remove-SupervisoryReviewPolicy |
+| Création d'une stratégie | [New-Supervisoryreviewpolicyv2 permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2) <br> [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule) |
+| Modification d'une stratégie | [Set-Supervisoryreviewpolicyv2 permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2) <br> [Set-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule) |
+| Suppression d'une stratégie| [Remove-Supervisoryreviewpolicyv2 permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
+| Affichage d'une stratégie | [Get-Supervisoryreviewpolicyv2 permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2) |
 
 Les audits peuvent être récupérés à l'aide de la fonction de recherche de journal d'audit unifiée ou à l'aide de l'applet de commande PowerShell [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) .
 
 Par exemple, l'exemple suivant montre comment renvoyer les activités de toutes les activités de vérification de surveillance (stratégies et règles) et répertorier les informations détaillées pour chacune d'elles:
 
 ```
-Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"} | fl CreationDate,Operations,UserIds,AuditData 
+Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"}  | fl CreationDate,Operations,UserIds,AuditData
 ```
 
 Outre les informations fournies dans les journaux et les rapports de surveillance, vous pouvez également utiliser l'applet de commande PowerShell [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewactivity?view=exchange-ps) pour renvoyer une liste complète et détaillée de toutes les activités de stratégie de surveillance.

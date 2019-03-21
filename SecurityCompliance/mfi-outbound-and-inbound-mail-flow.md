@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Les administrateurs peuvent en savoir plus sur le widget flux de messagerie sortant et entrant dans le tableau de bord de flux de messagerie dans le centre de sécurité & de la sécurité d'Office 365.
-ms.openlocfilehash: 98806a699909056b4295911a031bb7b14233ede5
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: b3e92228506267e674f2f428fab1ef54d5aee38e
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454886"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720284"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>Flux de courrier entrant et sortant
 
@@ -48,3 +48,7 @@ L'affichage **flux de messagerie** indique le volume de messages par le biais du
 Vous pouvez sélectionner l'affichage **utilisation de TLS** dans la liste déroulante pour afficher la répartition de la protection TLS pour les messages via le connecteur. Comme avec le rapport de **rapport de vue d'ensemble TLS** , cette vue indique le pourcentage des différentes versions de TLS. Pour les connexions 1,0 TLS, vous devez vraiment obtenir votre serveur de messagerie ou le serveur de votre partenaire mis à niveau ou résolu afin d'éviter tout problème lorsque la prise en charge de TLS 1,0 est finalement déconseillée dans Office 365. Pour plus d'informations, voir informations de [référence technique sur le chiffrement dans Office 365](https://support.office.com/article/862cbe93-4268-4ef9-ba79-277545ecf221).
 
 Insights pointent vers des connecteurs pour attirer votre attention sur les éventuels problèmes de chiffrement TLS pour le connecteur. Les informations sont les suivantes: le chiffrement **TLS est supérieur à 25%** ou **TLS 1,0 est supérieur à 50%**. Si vous voyez ces informations, vous devez examiner vos serveurs de messagerie qui sont associés au connecteur ou contacter votre organisation partenaire.
+
+## <a name="see-also"></a>Voir aussi
+
+Pour plus d'informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security _AMP_ Compliance Center](mail-flow-insights.md).

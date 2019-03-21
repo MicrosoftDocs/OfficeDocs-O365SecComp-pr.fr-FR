@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: ConFigurez des stratégies de vérification de surveillance pour capturer les communications des employés à des fins de révision.
-ms.openlocfilehash: 2e321989934402b833d6190f65d696f4eb7919ca
-ms.sourcegitcommit: 547a05da067a8f66fdaccf1cc399afcf863f5a87
+ms.openlocfilehash: 76a5e7152b609944eeb2fe1390e204e1463a673b
+ms.sourcegitcommit: 9a69ea604b415af4fef4964a19a09f3cead5a2ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30474155"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30701289"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurer des stratégies de surveillance pour votre organisation
 
@@ -62,26 +62,20 @@ Procédez comme suit pour configurer et utiliser la surveillance dans votre orga
 
 ## <a name="step-1---set-up-groups-for-supervision-optional"></a>Étape 1: configurer des groupes pour la surveillance (facultatif)
 
- Lorsque vous créez une stratégie de surveillance, vous déterminez les personnes auxquelles les communications seront vérifiées et qui effectueront ces révisions. Dans la stratégie, vous utiliserez des adresses de messagerie pour identifier des individus ou des groupes de personnes. Pour simplifier votre configuration, créez des groupes pour les personnes dont la communication est vérifiée et les groupes pour les personnes qui examineront ces communications. Si vous utilisez des groupes, vous aurez peut-être besoin de plusieurs, par exemple, si vous souhaitez surveiller les communications entre deux groupes distincts de personnes ou si vous souhaitez spécifier un groupe qui n'est pas supervisé. Pour plus d'informations sur le fonctionnement, consultez l' [exemple de groupes de distribution](configure-supervision-policies.md#GroupExample) .
-  
-Pour superviser les communications entre les groupes de votre organisation ou au sein de celle-ci, configurez **** \> des groupes de distribution dans le centre d'administration Exchange (accédez à **groupes**de destinataires). Pour plus d'informations sur la configuration des groupes de distribution, consultez la rubrique [Manage distribution Groups](http://go.microsoft.com/fwlink/?LinkId=613635) .
-  
-> [!NOTE]
-> Vous pouvez également utiliser des groupes de distribution dynamique ou des groupes de sécurité pour la supervision si vous le souhaitez. Pour vous aider à déterminer si cela correspond mieux aux besoins de votre organisation, consultez la rubrique [gérer les groupes de sécurité à extension messagerie](http://go.microsoft.com/fwlink/?LinkId=627033)et [gérer les groupes de distribution dynamique](http://go.microsoft.com/fwlink/?LinkId=627058).
-  
-<a name="GroupExample"> </a>
+ Lorsque vous créez une stratégie de surveillance, vous déterminez les personnes auxquelles les communications seront vérifiées et qui effectueront ces révisions. Dans la stratégie, vous utiliserez des adresses de messagerie pour identifier des individus ou des groupes de personnes. Pour simplifier votre configuration, vous pouvez créer des groupes pour les personnes dont la communication est vérifiée et les groupes pour les personnes qui feront passer ces communications. Si vous utilisez des groupes, vous aurez peut-être besoin de plusieurs, par exemple, si vous souhaitez surveiller les communications entre deux groupes distincts de personnes ou si vous souhaitez spécifier un groupe qui n'est pas supervisé.
 
-### <a name="example-distribution-groups"></a>Exemple de groupes de distribution
+Utilisez le tableau suivant pour vous aider à configurer les groupes de votre organisation pour les stratégies de surveillance:
 
-Cet exemple inclut un groupe de distribution qui a été configuré pour une organisation financière appelée Contoso Financial international.
-  
-Chez Contoso Financial International, un échantillonnage des communications entre les courtiers aux États-Unis doit être effectué. Toutefois, les responsables de la mise en conformité au sein de ce groupe ne doivent pas être surveillés. Dans cet exemple, nous pouvons créer les groupes suivants :
-  
-|**Configuration de ce groupe de distribution**|**Adresse de groupe (alias)**|**Description**|
+| **Membre de la stratégie** | **Groupes pris en charge** | **Groupes non pris en charge** |
 |:-----|:-----|:-----|
-|Tous les courtiers des États-Unis | US_Brokers@Contoso.com | Ce groupe contient les adresses de messagerie de tous les courtiers basés aux États-Unis qui travaillent pour Contoso. |
-| Tous les responsables de la mise en conformité des États-Unis | US_Compliance@Contoso.com  | Ce groupe contient les adresses de messagerie de tous les responsables de la mise en conformité basés aux États-Unis qui travaillent pour Contoso. Étant donné que ce groupe est un sous-ensemble de tous les courtiers basés aux États-Unis, vous pouvez utiliser cet alias pour exempter les responsables de la conformité d'une stratégie de surveillance. |
+|Utilisateurs superVisés | Groupes de distribution <br> Groupes Office 365 | Groupes de distribution dynamique |
+| Reviewers | Groupes de sécurité à extension messagerie  | Groupes de distribution <br> groupes de distribution dynamiques |
   
+Pour plus d'informations sur la configuration des groupes, voir:
+- [Création et gestion de groupes de distribution](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
+- [Gérer les groupes de sécurité à extension de messagerie](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
+- [Vue d'ensemble des groupes Office 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
+
 <a name="MakeAvailable"> </a>
 
 ## <a name="step-2---make-supervision-available-in-your-organization-required"></a>Étape 2-faire en sorte que la supervision soit disponible dans votre organisation (obligatoire)
@@ -118,43 +112,26 @@ Pour plus d'informations sur les groupes de rôles et les autorisations, consult
 
 <a name="sensitiveinfo"> </a>
   
-## <a name="step-3---create-custom-sensitive-information-types-or-custom-keyword-dictionaries-optional"></a>Étape 3-créer des types d'informations sensibles personnalisés ou des dictionnaires personnels de mots clés personnalisés (facultatif)
+## <a name="step-3---create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional"></a>Étape 3-créer des types d'informations sensibles personnalisés et des dictionnaires personnels de mots clés personnalisés (facultatif)
 
 Pour sélectionner des types d'informations sensibles personnalisés ou des dictionnaires personnels de mots clés personnalisés dans l'Assistant stratégie de surveillance, vous devez d'abord créer ces éléments si nécessaire.
 
+### <a name="create-custom-keyword-dictionarylexicon-optional"></a>Créer un dictionnaire/Lexique de mots clés personnalisé (facultatif)
+
+À l'aide d'un éditeur de texte (comme le bloc-notes), créez un nouveau fichier incluant les termes de mots clés que vous souhaitez surveiller dans une stratégie de surveillance. Assurez-vous que chaque terme se trouve sur une ligne distincte et enregistrez le fichier au format **Unicode/UTF-16 (Little endian)** .
+
 ### <a name="create-custom-sensitive-information-types"></a>Créer des types d'informations sensibles personnalisés
 
-1. Créez un nouveau type d'informations sensibles dans le centre de sécurité & de la sécurité d'Office 365. Naviguez **** \> jusqu'à types d' **informations sensibles** sur les classifications et suivez les étapes de l' **Assistant Nouveau type d'informations sensibles**. Ici, vous allez:
+1. Créez un nouveau type d'informations sensibles et ajoutez votre dictionnaire personnalisé dans le centre de sécurité & de la sécurité d'Office 365. Naviguez **** \> jusqu'à types d' **informations sensibles** sur les classifications et suivez les étapes de l' **Assistant Nouveau type d'informations sensibles**. Ici, vous allez:
 
     - Définir un nom et une description pour le type d'informations sensibles
     - Définir les éléments de proximité, de niveau de confiance et de modèle principal
+    - Importer votre dictionnaire personnalisé en tant que condition requise pour l'élément correspondant
     - Vérifier vos sélections et créer le type d'informations sensibles
 
-    Pour plus d'informations, consultez [la rubrique créer un type d'informations sensibles personnalisé](create-a-custom-sensitive-information-type.md).
-
-### <a name="create-custom-keyword-dictionarylexicon"></a>Créer un dictionnaire/Lexique de mots clés personnalisé
-
-1. À l'aide d'un éditeur de texte (comme le bloc-notes), créez un nouveau fichier incluant les termes de mots clés que vous souhaitez surveiller dans une stratégie de surveillance. Assurez-vous que chaque terme se trouve sur une ligne distincte et enregistrez le fichier au format **Unicode/UTF-16 (Little endian)** .
-2. ImPortez le fichier de mots clés dans votre client Office 365 à l'aide de PowerShell. Pour vous connecter à Office 365 avec PowerShell, consultez [la rubrique Connect to office 365 Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
-
-    Une fois que vous êtes connecté à Office 365 avec PowerShell, exécutez les commandes suivantes pour importer votre dictionnaire de mots clés:
-
-    ```
-    $fileData = Get-Content "your keyword path and file name" -Encoding Byte -ReadCount 0
-
-    New-DlpKeywordDictionary -Name "Name for your keyword dictionary" -Description "optional description for your keyword dictionary" -FileData $fileData
-    ```
-    Pour plus d'informations, consultez [la rubrique créer un dictionnaire de mots clés](create-a-keyword-dictionary.md).
-
-3. Créez un nouveau type d'informations sensibles dans le centre de sécurité & de la sécurité d'Office 365. Naviguez **** \> jusqu'à types d' **informations sensibles** sur les classifications et suivez les étapes de l' **Assistant Nouveau type d'informations sensibles**. Ici, vous allez:
-
-    - Définir un nom et une description pour le type d'informations sensibles
-    - Ajouter votre dictionnaire personnalisé comme condition requise pour l'élément correspondant
-    - Vérifier vos sélections et créer le type d'informations sensibles
+    Pour plus d'informations, consultez [la rubrique créer un type d'informations sensibles personnalisé](create-a-custom-sensitive-information-type.md) et [créer un dictionnaire de mots clés](create-a-keyword-dictionary.md)
 
     Une fois le dictionnaire/lexique personnalisé créé, vous pouvez afficher les mots clés configurés à l'aide de la cmdlet [Get-dlpkeyworddictionary permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary) ou ajouter et supprimer des termes à l'aide de la cmdlet [Set-dlpkeyworddictionary permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary) .
-
-    Pour plus d'informations, consultez [la rubrique créer un type d'informations sensibles personnalisé](create-a-custom-sensitive-information-type.md).
 
 <a name="setupsuper"> </a>
 

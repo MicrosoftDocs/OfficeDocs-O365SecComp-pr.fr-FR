@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Les administrateurs peuvent en savoir plus sur les alertes de files d'attente et les files d'attente dans le tableau de bord de flux de messagerie dans le centre de sécurité & Office 365 Security.
-ms.openlocfilehash: 6abfe9e8b3edfc6b0ca02e11a9713dcdb5c19b7c
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 642aa672cda124873eb0b2ca8e9294e64325f55d
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454866"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720304"
 ---
 # <a name="queue-alerts-and-queues"></a>Alertes de files d’attente et files d’attente
 
@@ -60,7 +60,7 @@ Vous pouvez cliquer sur **afficher la file d'attente** dans les détails de l'al
 
 ![Afficher la file d'attente dans les détails de l'alerte](media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
 
-## <a name="queues"></a>Files d'attente
+## <a name="queues"></a>Files d’attente
 
 Même si le volume des messages mis en file d'attente n'a pas dépassé le seuil, vous pouvez toujours utiliser la zone **files d'attente** du tableau de bord du flux de messagerie pour afficher les messages qui ont été mis en file d'attente pendant plus d'une heure. Vous pouvez utiliser la zone **files d'attente** pour surveiller le nombre de messages en file d'attente (la valeur 0 indique que le flux de messagerie est correct) et prendre des mesures avant que le nombre de messages en file d'attente devienne trop important.
 
@@ -69,3 +69,7 @@ Même si le volume des messages mis en file d'attente n'a pas dépassé le seuil
 Lorsque vous cliquez sur le nombre de messages en file d'attente dans les **files d'attente**, les détails de la file d'attente et des instructions sur la résolution du problème apparaissent dans un volet flyout (le même menu volant qui s'affiche une fois que vous avez cliqué sur **afficher la file d'attente** dans les détails d'une alerte de file d'attente).
 
 ![Détails de la file d'attente](media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
+
+## <a name="see-also"></a>Voir aussi
+
+Pour plus d'informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security _AMP_ Compliance Center](mail-flow-insights.md).

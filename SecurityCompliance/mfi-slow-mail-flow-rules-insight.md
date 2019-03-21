@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 description: Les administrateurs peuvent en savoir plus sur les règles de flux de messagerie lentes dans le tableau de bord de flux de messagerie dans le centre de sécurité & de sécurité Office 365.
-ms.openlocfilehash: 8188ee0da15ac337499866783ca4f2d893062d5b
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: e1ce23c94cd5260d8a7a7ebd99521a4a6f5c7b0a
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454876"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720254"
 ---
 # <a name="slow-mail-flow-rules-insight"></a>Informations sur les règles de flux de messagerie lent
 
@@ -34,3 +34,7 @@ Le centre d'analyse vous aidera à identifier et à ajuster les règles de flux 
 Lorsque vous cliquez sur **afficher les détails**, un volet flyout apparaît dans lequel vous pouvez examiner la règle. Dans le volet flyout, peut également cliquer sur **afficher les exemples de messages** pour voir les types de messages concernés par la règle.
 
 ![Volet flyout après avoir cliqué sur Afficher les détails dans une règle de flux de messagerie lente vue d'ensemble du tableau de bord de flux de messagerie](media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
+
+## <a name="see-also"></a>Voir aussi
+
+Pour plus d'informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security _AMP_ Compliance Center](mail-flow-insights.md).
