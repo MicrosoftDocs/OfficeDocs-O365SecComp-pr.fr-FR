@@ -88,12 +88,12 @@
 ### [Regarder des vidéos de l’équipe de gouvernance des données Microsoft](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # [Se protéger contre les menaces](protect-against-threats.md)
+## [Guide de démarrage rapide : configurer Office 365 - Protection avancée contre les menaces](checklist-atp-setup.md)
 ## [Protection contre le courrier indésirable et les programmes malveillants](anti-spam-and-anti-malware-protection.md)
 ### [Présentation d’Exchange Online Protection](videos-for-getting-started-with-protecting-your-email.md)
 ### [Protection contre le courrier indésirable pour Office 365](anti-spam-protection.md)
 ### [Éviter que le courrier ne soit marqué comme courrier indésirable dans Office 365](prevent-email-from-being-marked-as-spam.md)
 ### [Comment réduire le courrier indésirable dans Office 365](reduce-spam-email.md)
-### [Éviter que le courrier ne soit marqué comme courrier indésirable dans EOP et Office 365](prevent-email-from-being-marked-as-spam-0.md)
 ### [Contrôle du courrier indésirable sortant dans Office 365](outbound-spam-controls.md)
 ### [Bloquer le courrier indésirable à l’aide du filtre d’Office 365 afin d’éviter les problèmes de faux négatifs](reduce-spam-email.md)
 ### [Purge automatique zéro heure - protection contre le courrier indésirable et les programmes malveillants](zero-hour-auto-purge.md)
@@ -369,7 +369,7 @@
 
 # [Rechercher le journal d’audit](search-the-audit-log-in-security-and-compliance.md)
 ## [Activer ou désactiver la recherche dans le journal d’audit](turn-audit-log-search-on-or-off.md)
-## [Activer l’audit de boîte aux lettres](enable-mailbox-auditing.md)
+## [Gérer l’audit de boîte aux lettres](enable-mailbox-auditing.md)
 ## [Propriétés détaillées dans le journal d’audit](detailed-properties-in-the-office-365-audit-log.md)
 ## [Dépanner des scénarios courants à l’aide du journal d’audit](auditing-troubleshooting-scenarios.md)
 ## [Utiliser le partage d’audit dans le journal d’audit](use-sharing-auditing.md)
