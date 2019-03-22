@@ -14,19 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b177fc292c748f21907621196dc28d6b8fe17959
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 7a27da4b8932d9bef268de897d9a992d8b87bdef
+ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296787"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30737664"
 ---
 # <a name="load-non-office-365-data-into-a-working-set"></a>Charger les données ne provenant pas d’Office 365 dans un ensemble de travail
 
 Tous les documents que vous devrez peut-être analyser avec Office 365 Advanced eDiscovery seront inactifs dans Office 365. Avec la fonctionnalité d'importation de contenu autre que Office 365 dans Advanced eDiscovery, vous pouvez télécharger des documents qui ne résident pas dans Office 365 dans un jeu de travail afin de les analyser avec Advanced eDiscovery. Cette procédure vous montre comment mettre vos documents autres que Office 365 dans Advanced eDiscovery pour analyse.
 
 >[!Note]
->Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5.
+>Advanced eDiscovery nécessite un abonnement Office 365 E3 avec le complément de conformité avancé ou un abonnement E5 pour votre organisation. Si vous ne disposez pas de ce plan et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous inscrire pour obtenir une version d'évaluation d'Office 365 entreprise E5.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 L'utilisation de la fonctionnalité Télécharger non-Office 365 comme décrit dans cette procédure nécessite que vous ayez les éléments suivants:
@@ -38,6 +38,14 @@ L'utilisation de la fonctionnalité Télécharger non-Office 365 comme décrit d
 - Un cas eDiscovery existant.
 
 - Tous les fichiers de téléchargement rassemblé dans des dossiers contenant un dossier par dépositaire et le nom de ces dossiers se présente à l'alias de format *@ nomdomaine* . L' *alias @ NomDomaine* doit être l'alias et le domaine Office 365 des utilisateurs. Vous pouvez collecter tous les dossiers *alias @ NomDomaine* dans un dossier racine. Le dossier racine ne peut contenir que les dossiers *alias @ NomDomaine* , il ne doit pas y avoir de fichiers libres dans le dossier racine.
+
+   La structure de dossiers pour les données non Office 365 que vous prévoyez de télécharger doit ressembler à ce qui suit:
+
+   - c:\nonO365\abraham.mcmahon@contoso.com
+   - c:\nonO365\jewell.gordon@contoso.com
+   - c:\nonO365\staci.gonzalez@contoso.com
+
+   Où abraham.mcmahon@contoso.com, jewell.gordon@contoso.com et staci.gonzalez@contoso.com sont des adresses SMTP des dépositaires dans le cas.
 
 - Un compte qui est un gestionnaire eDiscovery ou un administrateur eDiscovery outils de stockage Microsoft Azure installé sur un ordinateur ayant accès à la structure de dossiers de contenu non Office 365.
 
@@ -65,6 +73,9 @@ L'utilisation de la fonctionnalité Télécharger non-Office 365 comme décrit d
 ![Fichiers d'importation/exportation non Office 365](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
 ![Importation AzCopy non-Office 365](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
+
+> [!NOTE]
+> Si la commande AzCopy fournie échoue, reportez-vous à la rubrique [Troubleshoot AzCopy in Advanced eDiscovery (Preview)](troubleshooting-azcopy.md)
 
 6. Enfin, revenez à la sécurité & conformité et cliquez sur le bouton **suivant: traiter les fichiers** .  Cela démarrera le traitement, l'extraction de texte et l'indexation des fichiers téléchargés.  Vous pouvez suivre la progression du traitement ou dans l'onglet **travaux** .  Une fois terminé, les nouveaux fichiers seront disponibles dans le jeu de travail.  Une fois le traitement terminé, vous pouvez faire disparaître l'Assistant.
 

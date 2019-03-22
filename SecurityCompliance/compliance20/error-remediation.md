@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bf48e605dc321da4b7a9d5343d18f90fbb179073
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: f6db3c178e584c45cf282158c58fb5125dc41f3f
+ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296727"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30737674"
 ---
 # <a name="error-remediation-when-processing-data"></a>Correction d’erreur lors du traitement des données
 
@@ -62,8 +62,8 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
     ![Préparation de la correction des erreurs](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
-     > [!NOTE]
-     > Si vous rencontrez des problèmes lors de l'exécution https://go.microsoft.com/fwlink/?linkid=2038117 de cette commande, voir pour obtenir des conseils de dépannage.
+    > [!NOTE]
+    > Si la commande AzCopy fournie échoue, consultez la rubrique pour [résoudre les problèmes de AzCopy dans Advanced eDiscovery (aperçu)](troubleshooting-azcopy.md)
 
 7. Après avoir téléchargé les fichiers, vous pouvez les corriger à l'aide d'un outil approprié. Pour les fichiers protégés par mot de passe, il existe un certain nombre d'outils de craquage de mot de passe que vous pouvez utiliser. Si vous connaissiez les mots de passe des fichiers, vous pouvez les ouvrir et supprimer la protection par mot de passe.
     > [!NOTE]
@@ -89,7 +89,7 @@ Lorsque les fichiers résolus sont téléchargés, les métadonnées d'origine s
 
 - DocumentExtractedUrl
 - ExtractedTextSize
-- Telle
+- HasText
 - IsErrorRemediate
 - IsParentExtractedUrl
 - ItemExtractedUrl
