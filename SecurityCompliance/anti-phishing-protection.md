@@ -11,15 +11,16 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
+ms.custom: TopSMBIssues
 ms.collection:
 - M365-security-compliance
 description: Office 365 offre une large gamme de protection contre les attaques par hameçonnage par défaut, ainsi que par des offres supplémentaires telles que l'anti-hameçonnage ATP. Cette rubrique présente les ressources en ligne que vous pouvez utiliser pour découvrir et implémenter les stratégies et les options d'anti-hameçonnage dans Office 365.
-ms.openlocfilehash: 8248c90db6158cf6fc5f30871fc3bd7c5096d077
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: cceae7d316d89325fa37688995555c9e449ac422
+ms.sourcegitcommit: f6073deec39a18581ed12abef18728417a52cdf4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276054"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "30747570"
 ---
 # <a name="anti-phishing-protection-in-office-365"></a>Protection anti-hameçonnage dans Office 365
 
@@ -37,13 +38,13 @@ Pour les organisations Office 365 avec Office entreprise E5, vous pouvez utilise
   
 Pour plus d'informations sur la configuration par défaut d'Office 365 pour vous protéger contre les attaques par hameçonnage, voir [How office 365 valide l'adresse from: pour empêcher le hameçonnage](how-office-365-validates-the-from-address.md).
   
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
 [Comment Office 365 valide l’adresse De : pour empêcher des attaques par hameçonnage](how-office-365-validates-the-from-address.md)
   
 [Vous protéger contre les schémas de hameçonnage et les autres formes de fraude en ligne](https://support.office.com/article/f84750b4-2f2c-46c3-89f6-e65f7f8c3546)
   
-[Protection avancée contre les menaces dans Office 365](office-365-atp.md)
+[Office 365 - Protection avancée contre les menaces](office-365-atp.md)
   
 [Fonctionnalités anti-hameçonnage ATP dans Office 365](atp-anti-phishing.md)
   
