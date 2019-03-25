@@ -3,7 +3,7 @@ title: Création d’un schéma de classification pour les données personnelles
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 2/7/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: overview
 ms.collection:
@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Déterminez si votre organisation implémentera des étiquettes dans le cadre de votre plan RGPD.
-ms.openlocfilehash: be700d0b055346822ddd63c3c250fad048a7fce8
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: 79c68b8340209c3cc3e3a7081a4075c31a112e80
+ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373865"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789439"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>Création d’un schéma de classification pour les données personnelles
 
@@ -45,13 +45,13 @@ Choisissez l'une des options suivantes.
 
 -   À l’avenir, ils fonctionneront avec Cloud App Security et vous pourrez détecter les informations sensibles dans d’autres applications SaaS.
 
-### <a name="option-2-use-sensitive-information-types--office-labels"></a>Option 2 : utiliser des types d’informations sensibles + des étiquettes Office
+### <a name="option-2-use-sensitive-information-types--retention-labels"></a>Option 2 : utiliser des types d’informations sensibles + des étiquettes de rétention
 
 -   Vous aurez besoin de types d’informations sensibles pour appliquer automatiquement des étiquettes à des données personnelles qui sont soumises au RGPD, donc ceci est une condition préalable.
 
 -   L’utilisation d’étiquettes Office vous permet d’inclure des données personnelles qui sont soumises au RGPD dans un plan de gouvernance des données plus large pour votre organisation.
 
--   Plus tard, les étiquettes Office convergeront avec les étiquettes Azure Information Protection dans une classification unifiée et un moteur de création d’étiquettes.
+
 
 ## <a name="develop-a-label-schema-that-includes-personal-data"></a>Développement d’un schéma d’étiquettes qui comprend des données personnelles
 
