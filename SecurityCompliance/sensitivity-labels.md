@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec les étiquettes de niveau de confidentialité dans Office 365, vous pouvez classer et protéger le contenu sensible, tout en vous assurant que la productivité et la possibilité de collaboration des membres de votre organisation ne sont pas altérées. Vous pouvez utiliser les étiquettes de niveau de confidentialité afin d’appliquer des paramètres de protection, comme le chiffrement ou les filigranes, sur le contenu étiqueté.
-ms.openlocfilehash: 05f53c508126962d36be3e131413d5a4314875a9
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: ceb3373f6de24d52f8e65c322a9e7eca4fe92618
+ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455026"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30737684"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Vue d’ensemble des étiquettes de niveau de confidentialité
 
@@ -35,6 +35,8 @@ Vous pouvez utiliser les étiquettes de niveau de confidentialité aux fins suiv
 - **Protéger le contenu dans les applications Office sur vos différents appareils et plateformes.** Les étiquettes de niveau de confidentialité fonctionnent dans les applications Office sur Windows, Mac, iOS et Android. La prise en charge pour les applications web Office sera bientôt disponible.
     
 - **Empêcher le contenu sensible de sortir de votre organisation sur des appareils exécutant Windows**, à l’aide de la protection de point de terminaison (Endpoint Protection) dans Microsoft Intune. Après l’application d’une étiquette de niveau de confidentialité à du contenu qui se trouve sur un appareil Windows, Endpoint Protection peut empêcher de copier le contenu vers une application tierce, comme Twitter ou Gmail, ou de le copier sur un périphérique de stockage amovible, comme un lecteur USB.
+
+- **Protéger le contenu dans les services tiers et les applications tierces** à l’aide de Microsoft Cloud App Security. Avec Cloud App Security (CAS), vous pouvez détecter, classer, étiqueter et protéger le contenu dans les services tiers et applications tierces, comme SalesForce, Box ou Dropbox, même si l’application tierce ou le service tiers ne lit pas ou ne prend pas en charge les étiquettes de niveau de confidentialité.
 
 - **Étendre les étiquettes de niveau de confidentialité à des applications et services tiers.** Avec le kit de développement logiciel (SDK) Microsoft Information Protection, les applications tierces sur Windows, Mac et Linux peuvent lire les étiquettes de niveau de confidentialité et appliquer les paramètres de protection. La prise en charge pour les applications sur iOS et Android sera bientôt disponible.
 
@@ -222,6 +224,19 @@ Avant que les étiquettes de niveau de confidentialité puissent utiliser la pro
 - Créez une stratégie de Protection des informations Windows (WIP) qui s’applique aux appareils de point de terminaison. Vous pouvez effectuer cette opération à partir de l’un des emplacements suivants :
     - [Créer une stratégie de Protection des informations Windows (WIP) avec GPM à l’aide du portail Azure pour Microsoft Intune](https://docs.microsoft.com/fr-FR/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
     - [Créer et déployer une stratégie de Protection des informations Windows (WIP) à l’aide de System Center Configuration Manager](https://docs.microsoft.com/fr-FR/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
+
+## <a name="protect-content-in-third-party-apps-and-services-by-using-microsoft-cloud-app-security"></a>Protéger le contenu dans les services tiers et les applications tierces à l’aide de Microsoft Cloud App Security
+
+Protéger le contenu dans les services tiers et les applications tierces à l’aide de Cloud App Security (CAS). Avec CAS, vous pouvez détecter, classer, étiqueter et protéger le contenu dans des services tiers et applications tierces, telles que SalesForce, Box ou Dropbox. Par exemple, Dropbox peut-être ne pas comprendre une étiquette de critère de diffusion, mais CAS peut adresser et protéger le contenu étiqueté dans cet emplacement.
+
+Pour plus d’informations, reportez-vous à l’article [Appliquer automatiquement des étiquettes de classification Azure Information Protection](https://docs.microsoft.com/fr-FR/cloud-app-security/use-case-information-protection).
+
+### <a name="important-prerequisites"></a>Conditions préalables importantes
+
+Avant que vos étiquettes de niveau de confidentialité puissent utiliser CAS, vous devez d’abord remplir les conditions préalables décrites ici : [Appliquer automatiquement des étiquettes de classification Azure Information Protection](https://docs.microsoft.com/fr-FR/cloud-app-security/use-case-information-protection). Cette rubrique décrit les conditions préalables suivantes :
+
+- [Activez Cloud App Security et Azure Information Protection](https://docs.microsoft.com/fr-FR/cloud-app-security/azip-integration) pour votre client.
+- [Connectez l’application](https://docs.microsoft.com/fr-FR/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) à Cloud App Security.
 
 ## <a name="extend-sensitivity-labels-to-third-party-apps-and-services-by-using-the-microsoft-information-protection-sdk"></a>Étendre les étiquettes de niveau de confidentialité à des services tiers et applications tierces à l’aide du SDK Microsoft Information Protection
 
