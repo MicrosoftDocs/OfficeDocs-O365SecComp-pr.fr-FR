@@ -3,7 +3,7 @@ title: Utiliser Threat Explorer dans le centre &amp; de sécurité conformité
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/10/2019
+ms.date: 03/21/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Découvrez l'Explorateur (également appelé Explorateur de menaces) dans le &amp; Centre de sécurité conformité.
-ms.openlocfilehash: 0c86792d8ed84b43b28bde31004dc95d2fa2b547
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 202898873bb9611c747aed335d295c749c7cd0fa
+ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693613"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30732257"
 ---
 # <a name="use-threat-explorer-in-the-security-amp-compliance-center"></a>Utiliser Threat Explorer dans le centre &amp; de sécurité conformité
 
@@ -35,104 +35,92 @@ Pour utiliser l'Explorateur, dans le &amp; Centre de sécurité conformité, acc
       
 ## <a name="explorer-overview"></a>Vue d'ensemble de l'Explorateur
 
-L'Explorateur affiche des informations sur les programmes malveillants suspects et les messages hameçons dans Office 365, ainsi que d'autres menaces et risques de sécurité pour votre organisation. Lorsque vous ouvrez l'Explorateur pour la première fois, l'affichage par défaut affiche les détections de programmes malveillants par courrier électronique pour les 7 derniers jours. Explorer peut également afficher les fonctionnalités de protection de la sécurité dans Office 365, notamment les [liens fiables](atp-safe-links.md) et [les pièces jointes fiables](atp-safe-attachments.md) , et peut être modifié pour afficher les données des 30 derniers jours. Si vous disposez d'une version d'évaluation de commun pour Office 365 Advanced Threat Protection Plan 2 ou Office 365 E5, vous ne verrez que les détections et les données de messagerie des 7 derniers jours.
-  
-![L'Explorateur affiche des informations sur les programmes malveillants principaux et les utilisateurs ciblés](media/8e8c1582-d6f4-4521-8591-686a1cb01f7e.png)
-  
-Utilisez le menu Affichage pour modifier les informations affichées.
-  
-![Menu Affichage de l'Explorateur](media/2bb34f58-555f-4967-ba55-740334ef1f8e.png)
-  
-L'Explorateur dispose de plusieurs fonctionnalités de filtrage et d'interrogation qui vous permettent d'explorer les détails, tels que les principaux utilisateurs ciblés, les principales familles de programmes malveillants, la technologie de détection et bien plus encore. Chaque type de rapport offre plusieurs façons d'afficher et d'explorer les données.
+Si votre organisation a des [fonctionnalités d'enquête et de réponse aux menaces Office 365](office-365-ti.md) (incluse dans le plan de disponibilité 2) et que vous disposez des autorisations nécessaires, vous pouvez utiliser l'Explorateur de menaces (également appelé Explorateur) pour identifier et analyser les menaces. (Dans le centre &amp; de sécurité conformité, accédez à l' **Explorateur**de **gestion** \> des menaces.)
 
-> [!IMPORTANT]
-> N'utilisez pas de caractères génériques, tels qu'un astérisque (*) ou un point d'interrogation (?), avec l'Explorateur. Lorsque vous effectuez une recherche dans le champ Subject pour les messages électroniques, l'Explorateur effectue une correspondance partielle et génère des résultats similaires à une recherche par caractères génériques.
-
-## <a name="email--malware"></a>Courrier \> malveillant de messagerie
-
-Cet affichage montre les messages électroniques identifiés comme contenant des programmes malveillants.  
-
-Afficher les informations dans le graphique par famille de programmes malveillants, domaine de l'expéditeur, adresse IP de l'expéditeur, état de protection (actions prises par les fonctionnalités et stratégies de protection contre les menaces dans Office 365) et technologie de détection (comment le programme malveillant a été détecté).  
-
-![Afficher les données sur les programmes malveillants détectés](media/d11dc568-b091-4159-b261-df13d76b520b.png)         
-
-Sous le graphique, affichez les détails des principales familles de programmes malveillants, des utilisateurs ciblés le plus ciblés et d'autres détails sur des messages spécifiques. 
-
-## <a name="email--phish"></a>Courrier \> hameçon
-
-Cet affichage montre les messages électroniques identifiés comme des tentatives de hameçonnage.  
-
-Afficher les informations par domaine de l'expéditeur, adresse IP de l'expéditeur et état de protection (actions prises par vos stratégies et fonctionnalités de protection contre les menaces dans Office 365). 
-
-![Afficher les données sur l'e-mail identifiées comme tentatives de hameçonnage](media/2e3f97fa-2b99-47f9-afd6-216d10633c50.png) 
-
-Sous le graphique, affichez plus de détails sur des messages spécifiques. 
-
-## <a name="email--user-reported"></a>E-mail \> signalé par l'utilisateur
-
-Cet affichage montre le courrier électronique que les utilisateurs ont signalés comme courrier indésirable, non légitime ou courrier électronique de hameçonnage.  
-
-Afficher les informations par type de rapport (indique que l'utilisateur a déterminé qu'il s'agit d'un courrier indésirable, n'est pas un courrier indésirable ou un hameçonnage), et par raison du motif de remise (pourquoi les messages ont été envoyés à un emplacement spécifique, comme une stratégie de filtrage du courrier indésirable, une règle de flux de messagerie, une liste d'expéditeurs etc.).  
-
-![Afficher des données sur les utilisateurs de messagerie signalés comme indésirables, non légitimes ou par hameçonnage](media/255acd04-0d07-4b29-82af-5060a60c20ab.png)  
-
-Sous le graphique, affichez plus de détails sur des messages électroniques spécifiques, tels que la ligne d'objet, l'adresse IP de l'expéditeur, l'utilisateur qui a signalé le message comme courrier indésirable, légitime, ou hameçon, et bien plus encore. 
-
-## <a name="email--all-mail"></a>Courrier \> électronique de tous les messages
-
-Cette vue affiche une vue d'ensemble de l'activité de messagerie, y compris le courrier électronique identifié comme malveillant en raison d'un hameçonnage ou d'un programme malveillant, ainsi que tous les messages non malveillants (e-mail normal, courrier indésirable et courrier en nombre). 
-
-> [!NOTE]
-> Si vous obtenez une erreur indiquant un **trop grand nombre de données à afficher**, ajoutez un filtre et, si nécessaire, Affinez la plage de dates que vous visualisez. 
-
-Pour appliquer un filtre, choisissez **expéditeur**, sélectionnez un élément dans la liste, puis cliquez sur le bouton Actualiser. Dans notre exemple, nous avons utilisé la **technologie de détection** en tant que filtre (plusieurs options sont disponibles). Afficher les informations de l'expéditeur, du domaine de l'expéditeur, des destinataires, de l'objet, du nom de fichier de la pièce jointe, de la famille de programmes malveillants, du statut de protection (actions effectuées par vos stratégies et fonctionnalités de protection contre les menaces dans Office 365), de la technologie de détection (comment le programme malveillant a été détecté) et plus d'. 
-
-![Afficher les données sur les messages détectés par la technologie de détection](media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png) 
-
-Sous le graphique, affichez plus de détails sur des messages électroniques spécifiques, tels que la ligne d'objet, le destinataire, l'expéditeur, l'État, etc. 
-
-## <a name="content--malware"></a>Programme \> malveillant de contenu
-
-Cet affichage montre les fichiers identifiés comme étant malveillants par Office 365 protection avancée contre les menaces dans SharePoint Online, OneDrive entreprise et Microsoft Teams.
-
-Afficher des informations par famille de programmes malveillants, technologie de détection (comment le programme malveillant a été détecté) et charge de travail (OneDrive, SharePoint ou Teams). 
-
-![Afficher les données sur les programmes malveillants détectés](media/d11dc568-b091-4159-b261-df13d76b520b.png)  
-
-Sous le graphique, affichez plus de détails sur des fichiers spécifiques, tels que le nom de fichier de la pièce jointe, la charge de travail, la taille du fichier, la dernière personne qui a modifié le fichier, etc. 
-  
-## <a name="new-click-to-filter-capabilities"></a>(Nouveau!) Fonctionnalités de cliquer-filtrer
-
-La nouveauté d'Explorer est la possibilité de cliquer pour filtrer. Lorsque vous cliquez sur un élément dans la légende, cet élément devient un filtre pour le rapport. Par exemple, supposons que nous examinons l'affichage programmes malveillants dans l'Explorateur:
-  
 ![Accéder à l'Explorateur \> de gestion des menaces](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
-  
-Si **** vous cliquez sur détonation de la protection avancée contre les menaces dans ce graphique, les résultats sont les suivants: 
-  
-![Explorateur filtré pour afficher uniquement les résultats de la déTonation ATO](media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
-  
-Dans cet affichage, nous examinons à présent les données des fichiers qui ont été détonants par [les pièces jointEs approuvées par Office 365 ATP](atp-safe-attachments.md). Sous le graphique, nous pouvons voir des détails sur des messages électroniques spécifiques qui avaient des pièces jointes détectées par des pièces jointes sûres ATP.
-  
-![Détails spécifiques sur les messages électroniques avec des pièces jointes détectées](media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
-  
-La sélection d'un ou de plusieurs éléments active le menu **actions** , qui offre plusieurs choix parmi lesquels choisir pour les éléments sélectionnés. 
-  
-![La sélection d'un élément active le menu actions](media/95f127a4-1b2a-4a76-88b9-096e3ba27d1b.png)
-  
-La possibilité de filtrer un clic et d'accéder à des détails spécifiques peut vous faire gagner du temps lors de l'enquête sur les menaces.
-  
-## <a name="how-do-i-get-explorer"></a>Comment puis-je obtenir Explorer?
+
+Cet article décrit quelques opérations que vous pouvez effectuer avec Explorer (il existe bien plus de possibilités):
+
+- [Découvrez les types de programmes malveillants détectés dans le courrier électronique](#see-malware-detected-in-email-by-technology), et par la technologie de protection contre les menaces (protection contre les programmes malveillants, pièces jointes sûres ATP, etc.).
+
+- [Afficher les données sur les liens de hameçonnage (URL)](#view-data-about-phishing-urls-and-click-verdict), ainsi que sur les verdicts de clic (URL bloquées, autorisées ou visitées malgré les avertissements)
+
+- [Examiner les messages électroniques signalés comme indésirables, non légitimes, ou hameçonnage](#review-email-messages-reported-by-users), et identifier les éventuelles tendances (par exemple, un nombre plus important que le nombre de messages générés comme hameçonnage) 
+
+## <a name="see-malware-detected-in-email-by-technology"></a>Voir programmes malveillants détectés dans le courrier électronique par technologie
+
+Supposons que vous vouliez voir les programmes malveillants détectés dans les messages électroniques et la technologie dans Office 365. Pour ce faire, utilisez la vue [programmes malveillants de messagerie >](threat-explorer-views.md#email--malware) de l'Explorateur.
+
+1. dans le centre de sécurité & conformité Office 365[https://protection.office.com](https://protection.office.com)(), sélectionnez**explorateur**de **gestion** > des menaces.
+2. Dans le menu **affichage** , choisissez **** > **programmes malveillants**de messagerie.<br/>![Menu Affichage de l'Explorateur](media/ExplorerViewEmailMalwareMenu.png)<br/>
+3. Cliquez sur **expéditeur**, puis choisissez**technologie de détection**de **base** > .<br/>Vos technologies de détection sont désormais disponibles en tant que filtres pour le rapport.<br/>![Technologies de détection des programmes malveillants](media/ExplorerEmailMalwareDetectionTech.png)<br/> 
+4. Sélectionnez une option, puis cliquez sur le bouton Actualiser pour appliquer ce filtre.<br/>![Technologie de détection sélectionnée](media/ExplorerEmailMalwareDetectionTechATP.png)<br/> 
+
+Le rapport est actualisé pour afficher les résultats de programmes malveillants détectés par courrier électronique, à l'aide de l'option de technologie que vous avez sélectionnée. À partir de là, vous pouvez effectuer une analyse plus poussée.
+
+## <a name="view-data-about-phishing-urls-and-click-verdict"></a>Afficher les données sur les URL d'hameçonnage et cliquez sur verdict
+
+Supposons que vous vouliez voir les tentatives de hameçonnage via des URL dans des courriers électroniques, y compris une liste des URL qui ont été autorisées, bloquées et remplacées. Pour ce faire, utilisez la vue [E-mail _GT_ hameçonnage](threat-explorer-views.md#email--phish) de l'Explorateur.
+
+1. dans le centre de sécurité & conformité Office 365[https://protection.office.com](https://protection.office.com)(), sélectionnez**explorateur**de **gestion** > des menaces.
+2. Dans le menu **affichage** , choisissez **courrier** > **hameçon**.<br/>![Menu Affichage de l'Explorateur](media/ExplorerViewEmailPhishMenu.png)<br/>
+3. Cliquez sur **expéditeur**, puis sur **URL** > , puis**cliquez sur verdict**.
+4. Sélectionnez une ou plusieurs options, telles que **bloquée** et **bloquer le remplacement**, puis cliquez sur le bouton **Actualiser** pour appliquer ce filtre.<br/>![URL et cliquez sur verdicts](media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
+
+Le rapport est actualisé pour afficher les URL de hameçonnage détectées dans les messages bloqués (ou visités malgré un avertissement), ainsi que l'état de remise du courrier électronique. À partir de là, vous pouvez effectuer une analyse plus poussée. Par exemple, sous le graphique, vous pouvez voir les URL principales qui ont été bloquées dans le message électronique de votre organisation. 
+
+![URL de l'Explorateur bloquées](media/ExplorerPhishClickVerdictURLs.png) 
+
+Sélectionnez une URL pour afficher des informations plus détaillées.
+
+## <a name="review-email-messages-reported-by-users"></a>Examiner les messages électroniques signalés par les utilisateurs
+
+Supposons que vous voulez voir les messages électroniques que les utilisateurs de votre organisation ont signalés comme courriers indésirables, non légitimes ou le hameçonnage à l'aide du [complément de message de rapport pour Outlook et Outlook sur le Web](enable-the-report-message-add-in.md). Pour ce faire, utilisez la vue de [messagerie >](threat-explorer-views.md#email--user-reported) de l'Explorateur signalée par l'utilisateur.
+
+1. dans le centre de sécurité & conformité Office 365[https://protection.office.com](https://protection.office.com)(), sélectionnez**explorateur**de **gestion** > des menaces.
+2. Dans le menu **affichage** , choisissez **e-mail** > **-signalé**par l'utilisateur.<br/>![Menu Affichage de l'Explorateur](media/ExplorerViewMenuEmailUserReported.png)<br/>
+3. Cliquez sur **expéditeur**, puis sur**type de rapport**de **base** > .
+4. Sélectionnez une option, par exemple **hameçonnage**, puis cliquez sur le **** bouton Actualiser. <br/>![Hameçonnage signalé par l'utilisateur](media/EmailUserReportedReportType.png)<br/> 
+
+Le rapport est actualisé pour afficher les données relatives aux messages électroniques que les personnes de votre organisation ont signalées comme tentatives de hameçonnage. Vous pouvez utiliser ces informations pour effectuer une analyse plus poussée et, si nécessaire, ajuster vos [stratégies anti-hameçonnage ATP](set-up-anti-phishing-policies.md).
+
+## <a name="theres-more"></a>Il y a plus!
+
+Outre les trois scénarios décrits dans cet article, un grand nombre de scénarios de création de rapports sont disponibles avec l'Explorateur. Voici quelques exemples supplémentaires:
+
+- [Rechercher et d’examiner le courrier électronique malveillant qui a été distribué](investigate-malicious-email-that-was-delivered.md)
+
+- [Affichage de fichiers malveillants détectés dans SharePoint Online, OneDrive et Microsoft teams](malicious-files-detected-in-spo-odb-or-teams.md)
+
+- [Obtenir une vue d'ensemble des affichages dans l'Explorateur de menaces](threat-explorer-views.md)
+
+## <a name="how-to-get-explorer"></a>Procédure d'obtention de l'Explorateur
 
 L'Explorateur est inclus dans [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md). 
 
-Vous devez disposer des autorisations appropriées, telles que celles accordées à un administrateur de sécurité ou à un lecteur de sécurité, afin d'afficher et d'utiliser l'Explorateur. Pour en savoir plus, consultez [la rubrique autorisations dans le &amp; Centre de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md).
+Pour afficher et utiliser l'Explorateur, vous devez disposer des autorisations appropriées, telles que celles accordées à un administrateur de sécurité ou à un lecteur de sécurité. 
+
+- Pour le centre &amp; de sécurité conformité, vous devez disposer de l'un des rôles suivants:
+    - Gestion de l’organisation
+    - Administrateur de la sécurité (qui peut être affecté dans le centre d'administration Azure[https://aad.portal.azure.com](https://aad.portal.azure.com)Active Directory ())
+    - Lecteur de sécurité
+
+- Pour Exchange Online, vous devez disposer de l'un des rôles suivants, qui est affecté dans le centre[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)d'administration Exchange () ou avec des applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)):
+    - Gestion de l’organisation
+    - Gestion de l’organisation en affichage seul
+    - Rôle Destinataires en affichage uniquement
+    - Gestion de la conformité
+
+Pour en savoir plus, consultez les ressources suivantes:
+
+- [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+
+- [Autorisations des fonctionnalités dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
   
 ## <a name="related-topics"></a>Voir aussi
 
-[Rapports et informations dans le centre de sécurité &amp; conformité Office 365](reports-and-insights-in-security-and-compliance.md)
-  
-[Rechercher et identifier les messages électroniques malveillants qui ont été remis (Office 365 Threat Invesitgation and Response)](investigate-malicious-email-that-was-delivered.md)
-  
-[Protection contre le courrier indésirable et les programmes malveillants dans Office 365](anti-spam-and-anti-malware-protection.md)
-  
+- [Examen et réponse automatisés (AIR)](automated-investigation-response-office.md)
 
+- [Affichages Threat Explorer](threat-explorer-views.md)
+
+- [Afficher les rapports pour Office 365 protection avancée contre les menaces](view-reports-for-atp.md)

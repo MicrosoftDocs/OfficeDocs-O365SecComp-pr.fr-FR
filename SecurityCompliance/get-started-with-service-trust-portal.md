@@ -1,5 +1,5 @@
 ---
-title: Prise en main du portail d’approbation de services Microsoft
+title: Prise en main du portail d'approbation de service Microsoft
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,14 +12,14 @@ mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Pour les rapports de conformité réglementaire en ligne pour Office 365, Azure et Dynamics 365 Online, Découvrez comment Microsoft conserve les données client sûres et comment vous pouvez vous conformer aux normes ISO, HIPAA, NIST, FINRA, RGPD et FedRAMP lorsque vous utilisez ces services en ligne.
-ms.openlocfilehash: e4b3d1497b2dcf3a079dbe60f742e902ab45544c
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: ff14f1b88dbde06dbfd17a87bb94c3f32ddff81b
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296687"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30647334"
 ---
-# <a name="get-started-with-the-microsoft-service-trust-portal"></a>Prise en main du portail d’approbation de services Microsoft
+# <a name="get-started-with-the-microsoft-service-trust-portal"></a>Prise en main du portail d'approbation de service Microsoft
 
 Le portail d'approbation de services Microsoft propose un large éventail de contenus, d'outils et d'autres ressources sur les pratiques en matière de sécurité, de confidentialité et de conformité de Microsoft.
   
@@ -29,11 +29,11 @@ Le portail d'approbation de services contient des détails sur l'implémentation
   
 Les **clients existants peuvent accéder au portail d'approbation de service** à [https://aka.ms/STP](https://aka.ms/STP) l'aide de l'un des abonnements en ligne suivants (version d'évaluation ou payante): 
   
-- Office 365
+- Office 365
 
 - Dynamics 365
 
-- Azure
+- Azur
     
  > [!NOTE]
  > Les comptes Azure Active Directory associés aux organisations ont accès à l'ensemble des documents et des fonctionnalités, comme le gestionnaire de conformité. Les comptes Microsoft créés pour une utilisation personnelle ont un accès limité au contenu du portail d'approbation de services. 
@@ -100,7 +100,7 @@ Fournit un grand nombre d'informations sur la mise en œuvre et la conception de
 - Livres blancs, FAQ et Articles de procédure
 - Guides de conformité
 - Tests de stylet et évaluations de la sécurité
-- Score de sécurité
+- Secure Score
 - Modèles de sécurité et de conformité Azure
 - Contrôles audités
   
@@ -139,7 +139,7 @@ Pour répertorier les contrôles des évaluations dans le gestionnaire de confor
   
 ## <a name="my-library"></a>Ma bibliothèque
 
-Utilisez la fonctionnalité ma bibliothèque pour ajouter des documents et des ressources sur le portail d'approbation de service à votre page ma bibliothèque. Cela vous permet d'accéder aux documents qui vous concernent dans un seul et même emplacement.  Pour ajouter un document à votre bibliothèque, cliquez sur le menu **...** à droite d'un document, puis sélectionnez **Ajouter à la bibliothèque**. Vous pouvez ajouter plusieurs documents à votre bibliothèque mon bibliothèque en cliquant sur la case à cocher en regard d'un ou de plusieurs documents, puis en cliquant sur **enregistrer dans la bibliothèque** en haut de la page.
+Utilisez la fonctionnalité ma bibliothèque pour ajouter des documents et des ressources sur le portail d'approbation de service à votre page ma bibliothèque. Cela vous permet d'accéder aux documents qui vous concernent dans un seul et même emplacement.  Pour ajouter un document à votre bibliothèque, cliquez sur le menu **...** à droite d'un document, puis sélectionnez **enregistrer dans la bibliothèque**. Vous pouvez ajouter plusieurs documents à votre bibliothèque mon bibliothèque en cliquant sur la case à cocher en regard d'un ou de plusieurs documents, puis en cliquant sur **enregistrer dans la bibliothèque** en haut de la page.
 
 En outre, la fonctionnalité de notifications vous permet de configurer votre bibliothèque de manière à ce qu'un message électronique vous soit envoyé chaque fois que Microsoft met à jour un document que vous avez ajouté à votre bibliothèque. Pour configurer les notifications, accédez à votre bibliothèque et cliquez sur **paramètres de notification**. Vous pouvez choisir la fréquence des notifications et spécifier une adresse de messagerie dans votre organisation pour envoyer des notifications. Les notifications par courrier électronique incluent des liens vers les documents qui ont été mis à jour et une brève description de la mise à jour.
 

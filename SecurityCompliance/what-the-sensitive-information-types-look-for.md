@@ -1,7 +1,7 @@
 ---
 title: Éléments recherchés par les types d’informations sensibles
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité d'Office 365 inclut 80 types d'informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP recherche pour chaque type.
-ms.openlocfilehash: e9811b285e98a791570dc91e275cb5cead4f8bc9
-ms.sourcegitcommit: 6e8e2b43a4bea31c1e835c5b050824651c6a0094
+ms.openlocfilehash: d161435c75149183289cfbfd6abe79d55e371e31
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30537641"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30639191"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Éléments recherchés par les types d’informations sensibles
 
@@ -211,12 +211,12 @@ Neuf lettres et chiffres :
 - Deux chiffres 
 - Cinq chiffres ou lettres (ne respectent pas la casse)
 
-OU
+OR
 
 - 1 ou 2 lettres facultatives (ne respectant pas la casse)  
 - 4 à 9 chiffres
 
-OU
+OR
 
 - Neuf chiffres ou lettres (ne respectant pas la casse)
 
@@ -616,14 +616,14 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - OneBox
 - hôte
 - bouclage
-- TESTACS. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- TESTACS.<!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Chaîne de connexion à la base de données IAAS Azure et chaîne de connexion Azure SQL
 
 ### <a name="format"></a>Format
 
-La chaîne «Server», «Server» ou «Data source» suivie des caractères et des chaînes décrits dans le modèle ci-dessous, y compris la chaîne «cloudapp. Azure. <!--no-hyperlink-->com» ou «cloudapp. Azure. <!--no-hyperlink-->net "ou" Database. Windows. <!--no-hyperlink-->net ", et la chaîne" password "ou" password "ou" PWD ".
+La chaîne «Server», «Server» ou «Data source» suivie des caractères et des chaînes décrits dans le modèle ci-dessous, y compris la chaîne «cloudapp. Azure.<!--no-hyperlink-->com» ou «cloudapp. Azure.<!--no-hyperlink-->NET "ou" Database. Windows.<!--no-hyperlink-->NET ", et la chaîne" password "ou" password "ou" PWD ".
 
 ### <a name="pattern"></a>Modèle
 
@@ -632,7 +632,7 @@ La chaîne «Server», «Server» ou «Data source» suivie des caractères et d
 - Signe égal (=)
 - 0-2 espaces blancs
 - N'importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
-- La chaîne «cloudapp. Azure. <!--no-hyperlink-->com "," cloudapp. Azure. <!--no-hyperlink-->net "ou" Database. Windows. <!--no-hyperlink-->net "
+- La chaîne «cloudapp. Azure.<!--no-hyperlink-->com "," cloudapp. Azure.<!--no-hyperlink-->NET "ou" Database. Windows.<!--no-hyperlink-->NET
 - N'importe quelle combinaison entre 1-300 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
 - La chaîne "password", "password" ou "PWD"
 - 0-2 espaces blancs
@@ -676,14 +676,14 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - OneBox
 - hôte
 - bouclage
-- TESTACS. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- TESTACS.<!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-iot-connection-string"></a>Chaîne de connexion Azure IoT
 
 ### <a name="format"></a>Format
 
-La chaîne «nomhôte» suivie des caractères et des chaînes décrits dans le modèle ci-dessous, y compris les chaînes «Azure-appareils. <!--no-hyperlink-->net "et" SharedAccessKey ".
+La chaîne «nomhôte» suivie des caractères et des chaînes décrits dans le modèle ci-dessous, y compris les chaînes «Azure-appareils.<!--no-hyperlink-->NET "et" SharedAccessKey ".
 
 ### <a name="pattern"></a>Modèle
 
@@ -692,7 +692,7 @@ La chaîne «nomhôte» suivie des caractères et des chaînes décrits dans le 
 - Signe égal (=)
 - 0-2 espaces blancs
 - N'importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
-- La chaîne «Azure-appareils. <!--no-hyperlink-->net "
+- La chaîne «Azure-appareils.<!--no-hyperlink-->NET
 - N'importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
 - La chaîne «SharedAccessKey»
 - 0-2 espaces blancs
@@ -736,8 +736,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - OneBox
 - hôte
 - bouclage
-- TESTACS. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- TESTACS.<!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-publish-setting-password"></a>Mot de passe de paramètre de publication Azure
 
@@ -787,18 +787,18 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - OneBox
 - hôte
 - bouclage
-- TESTACS. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- TESTACS.<!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-redis-cache-connection-string"></a>Chaîne de connexion au cache des inversions Azure
 
 ### <a name="format"></a>Format
 
-La chaîne «ReDim. cache. Windows. <!--no-hyperlink-->net "suivi des caractères et des chaînes décrits dans le modèle ci-dessous, y compris la chaîne" password "ou" PWD ".
+La chaîne «ReDim. cache. Windows.<!--no-hyperlink-->NET "suivi des caractères et des chaînes décrits dans le modèle ci-dessous, y compris la chaîne" password "ou" PWD ".
 
 ### <a name="pattern"></a>Modèle
 
-- La chaîne «ReDim. cache. Windows. <!--no-hyperlink-->net "
+- La chaîne «ReDim. cache. Windows.<!--no-hyperlink-->NET
 - N'importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
 - La chaîne «password» ou «pwd»
 - 0-2 espaces blancs
@@ -842,8 +842,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - OneBox
 - hôte
 - bouclage
-- TESTACS. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- TESTACS.<!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-sas"></a>SAS Azure
 
@@ -883,7 +883,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="format"></a>Format
 
-La chaîne «point de terminaison» suivie des caractères et des chaînes décrits dans le modèle ci-dessous, y compris les chaînes «ServiceBus. Windows. <!--no-hyperlink-->net "et" SharedAccesKey ".
+La chaîne «point de terminaison» suivie des caractères et des chaînes décrits dans le modèle ci-dessous, y compris les chaînes «ServiceBus. Windows.<!--no-hyperlink-->NET "et" SharedAccesKey ".
 
 ### <a name="pattern"></a>Modèle
 
@@ -892,7 +892,7 @@ La chaîne «point de terminaison» suivie des caractères et des chaînes décr
 - Signe égal (=)
 - 0-2 espaces blancs
 - N'importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
-- La chaîne «ServiceBus. Windows. <!--no-hyperlink-->net "
+- La chaîne «ServiceBus. Windows.<!--no-hyperlink-->NET
 - N'importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
 - La chaîne «SharedAccessKey»
 - 0-2 espaces blancs
@@ -936,8 +936,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - OneBox
 - hôte
 - bouclage
-- TESTACS. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- TESTACS.<!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-storage-account-key"></a>Clé de compte de stockage Azure
 
@@ -1002,8 +1002,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - OneBox
 - hôte
 - bouclage
-- TESTACS. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- TESTACS.<!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-storage-account-key-generic"></a>Clé de compte de stockage Azure (Générique)
 
@@ -1046,7 +1046,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 11 chiffres plus des délimiteurs :
 - Six chiffres et deux points au format AA.MM.JJ pour la date de naissance  
-- Un trait d’union  
+- Un trait d’union 
 - Trois chiffres séquentiels (impairs pour les hommes, pairs pour les femmes)  
 - Un point 
 - Deux chiffres de contrôle
@@ -1176,7 +1176,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Trois chiffres (ces huit premiers chiffres composent le numéro d’enregistrement)  
 - Une barre oblique  
 - Le numéro de succursale à quatre chiffres  
-- Un trait d’union 
+- Un trait d’union  
 - Deux chiffres de contrôle
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -2305,7 +2305,7 @@ Neuf chiffres avec une barre oblique inverse facultative (ancien format) 10 chif
 Neuf chiffres (ancien format):
 - Neuf chiffres
 
-OU
+OR
 
 - Six chiffres qui représentent la date de naissance
 - Une barre oblique 
@@ -2314,7 +2314,7 @@ OU
 10 chiffres (nouveau format):
 - 10 chiffres
 
-OU
+OR
 
 - Six chiffres qui représentent la date de naissance
 - Une barre oblique  
@@ -3511,9 +3511,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="pattern"></a>Modèle
 
 12 chiffres :
-- Quatre chiffres  
+- Quatre chiffres 
 - Éventuellement un tiret ou un espace  
-- Quatre chiffres  
+- Quatre chiffres 
 - Éventuellement un tiret ou un espace  
 - Le chiffre final, qui est le chiffre de contrôle
 
@@ -5041,8 +5041,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - OneBox
 - hôte
 - bouclage
-- TESTACS. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- TESTACS.<!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->NET
 
 ## <a name="sweden-national-id"></a>ID national Suède
 
@@ -5643,7 +5643,7 @@ Deux modèles possibles:
 - Six chiffres
 - «A», «B», «C» ou «d» (comme le préfixe, seuls certains caractères sont autorisés dans le suffixe; ne respectent pas la casse)
 
-OU
+OR
 
 - Deux lettres
 - Un espace ou un tiret

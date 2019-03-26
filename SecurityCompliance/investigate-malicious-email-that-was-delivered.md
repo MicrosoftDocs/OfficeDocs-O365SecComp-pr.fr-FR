@@ -1,5 +1,5 @@
 ---
-title: Rechercher et identifier les messages électroniques malveillants qui ont été remis (Office 365 Threat Intelligence)
+title: Rechercher et identifier les courriers électroniques malveillants remis (Office 365 Threat Investigation and Response
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment utiliser les fonctionnalités d'analyse et de réponse aux menaces pour rechercher et examiner des courriers électroniques malveillants.
-ms.openlocfilehash: 167a587e16b464bcc7b45bca25e9f3adceda758c
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: d19833a5d2acf69b79cca7e58c5796d967337c9f
+ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692453"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30732247"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>Rechercher et identifier les messages électroniques malveillants qui ont été remis (Office 365 Advanced Threat Protection Plan 2)
 
@@ -37,7 +37,7 @@ Assurez-vous que les conditions suivantes sont remplies :
     
 - La [journalisation d'audit Office 365](turn-audit-log-search-on-or-off.md) est activée pour votre organisation. 
     
-- Votre organisation a défini des stratégies pour le blocage du courrier indésirable, anti-programme malveillant, anti-hameçonnage, etc. Consultez [la rubrique gestion des menaces dans le &amp; Centre de sécurité conformité Office 365](threat-management.md).
+- Votre organisation a défini des stratégies pour le blocage du courrier indésirable, anti-programme malveillant, anti-hameçonnage, etc. Consultez la rubrique [Office 365 Advanced Threat Protection](office-365-atp.md).
     
 - Vous êtes un administrateur général Office 365 ou vous avez l'administrateur de sécurité ou le rôle de recherche et de purge affecté dans le centre &amp; de sécurité et de conformité. Consultez [la rubrique autorisations dans le centre &amp; de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md).
     
