@@ -3,13 +3,15 @@
 ## [Configurer votre client Office 365 pour une sécurité accrue](tenant-wide-setup-for-increased-security.md)
 ## [Accéder au centre de conformité et de sécurité](go-to-the-securitycompliance-center.md)
 ## [Se préparer pour le nouveau Centre de sécurité Microsoft 365 et Centre de conformité Microsoft 365](microsoft-security-and-compliance.md)
+## [Centre de sécurité Microsoft 365](overview-security-center.md)
+### [Degré de sécurisation Microsoft](microsoft-secure-score.md)
 ## [Degré de sécurisation Office 365](office-365-secure-score.md)
-## [Degré de sécurisation Microsoft](microsoft-secure-score.md)
 ## [Autorisations dans le centre de conformité et de sécurité](permissions-in-the-security-and-compliance-center.md)
 ## [Octroi de l’accès au Centre de conformité et de sécurité aux utilisateurs](grant-access-to-the-security-and-compliance-center.md)
 ## [Vue d’ensemble du tableau de bord de sécurité](security-dashboard.md)
 ## [Utiliser votre abonnement Azure Active Directory gratuit](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Planifier la sécurité et la conformité dans Office 365](plan-for-security-and-compliance.md)
+
 # Protéger l’accès aux données et services
 ## [Protéger l’accès aux données et aux services dans Office 365](protect-access-to-data-and-services.md)
 
@@ -88,6 +90,8 @@
 ### [Regarder des vidéos de l’équipe de gouvernance des données Microsoft](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # [Se protéger contre les menaces](protect-against-threats.md)
+## [Rechercher dans Microsoft 365](hunting.md)
+## [Comprendre les dernières campagnes d’attaque grâce aux statistiques de menaces](latest-attack-campaigns.md)
 ## [Guide de démarrage rapide : configurer Office 365 - Protection avancée contre les menaces](checklist-atp-setup.md)
 ## [Protection contre le courrier indésirable et les programmes malveillants](anti-spam-and-anti-malware-protection.md)
 ### [Présentation d’Exchange Online Protection](videos-for-getting-started-with-protecting-your-email.md)
@@ -380,6 +384,11 @@
 ## [Rechercher des activités eDiscovery dans le journal d’audit](search-for-ediscovery-activities-in-the-audit-log.md)
 
 # Surveiller la sécurité et la conformité
+## [Surveillance et rapports du Centre de sécurité Microsoft 365](monitoring-and-reporting.md)
+### [Surveillance des identités dans Sécurité Microsoft 365 et rapports à ce sujet](monitor-and-report-identities.md)
+### [Surveillance des données dans Sécurité de Microsoft 365](monitor-data.md)
+### [Surveillance des appareils dans Sécurité Microsoft 365](monitor-devices.md)
+### [Surveillance des applications dans Sécurité Microsoft 365](monitor-apps.md)
 ## [Stratégies d’alerte](alert-policies.md)
 ## [Rapports intelligents et aperçus dans le centre de sécurité et conformité](reports-and-insights-in-security-and-compliance.md)
 ### [Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité](view-email-security-reports.md)
