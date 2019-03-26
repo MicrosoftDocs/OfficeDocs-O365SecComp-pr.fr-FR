@@ -3,7 +3,7 @@ title: Application d’étiquettes à des données personnelles dans Office 365
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 2/7/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: overview
 ms.collection:
@@ -16,36 +16,40 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez comment utiliser des étiquettes Office dans le cadre de votre plan de protection RGPD.
-ms.openlocfilehash: 9474d4b911936bca2c06c9660578790578fba4a2
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: e31cd420fe476ace8031fc2c6e52158762814c7a
+ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373895"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789429"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Application d’étiquettes à des données personnelles dans Office 365
 
- Consultez cette rubrique si vous utilisez des étiquettes Office dans le cadre de votre plan de protection RGPD. Les étiquettes peuvent être actuellement créées dans le Centre de sécurité et de conformité Office 365 et dans Azure Information Protection. À l’avenir, ces technologies convergeront vers une expérience unifiée d’étiquetage et de classification, vous donnant encore plus de possibilités.
+ Utilisez cette rubrique si vous utilisez des étiquettes de classification dans le cadre de votre plan de protection RGPD. 
 
-Si vous utilisez des étiquettes pour la protection des données personnelles dans Office 365, Microsoft vous recommande de commencer par les étiquettes Office. Vous pouvez utiliser la gouvernance des données avancée pour appliquer automatiquement des étiquettes en fonction de types d’informations sensibles ou d’autres critères. Vous pouvez utiliser des étiquettes Office avec la protection contre la perte de données pour appliquer la protection. Vous pouvez également avoir recours à des étiquettes avec eDiscovery et la recherche de contenu. Vous serez bientôt en mesure d’employer des étiquettes et des types d’informations sensibles avec Cloud App Security pour surveiller les données personnelles qui se trouvent dans d’autres applications SaaS.
+Si vous utilisez des étiquettes pour la protection des données personnelles dans Office 365, Microsoft recommande que vous commenciez avec des[étiquettes de rétention](labels.md). Avec les étiquettes de rétention, vous pouvez effectuer les actions suivantes :
+- La gouvernance des données avancée permet d’appliquer automatiquement des étiquettes basées sur les types d’informations sensibles ou d’autres critères.
+-  Utilisez des étiquettes de rétention avec la protection contre la perte de données pour appliquer la protection. 
+- Utiliser des étiquettes avec eDiscovery et recherche de contenu. 
+- Utiliser des étiquettes et types d’informations sensibles avec Cloud App Security pour surveiller des données personnelles qui se trouvent dans d’autres applications SaaS.
 
-Les étiquettes Azure Information Protection sont actuellement recommandées pour l’application d’étiquettes à des fichiers en local ainsi que dans d’autres fournisseurs et services cloud. Elles sont également recommandées pour les fichiers dans Office 365 nécessitant le chiffrement Azure Rights Management (Azure RMS) pour la protection des données, tels que les fichiers contenant des secrets commerciaux.
+Les [Étiquettes de sensibilité](sensitivity-labels.md) sont actuellement recommandées pour appliquer des étiquettes à des fichiers en local et dans d’autres services cloud et fournisseurs. Ceux-ci sont également recommandées pour les fichiers dans Office 365 nécessitant le chiffrement (point d’installation Azure Information Protection administrative) pour la protection des données, tels que les fichiers secrets commerciaux.
 
-À ce stade, il n’est pas recommandé d’avoir recours à Azure Information Protection afin d’appliquer le chiffrement Azure RMS à des fichiers dans Office 365 contenant des données soumises au RGPD. Les services Office 365 ne peuvent pas être actuellement lus dans des fichiers chiffrés via RMS. Par conséquent, le service ne peut pas trouver de données sensibles dans ces fichiers.
+À ce stade, à l’aide d’Azure Information Protection pour appliquer le chiffrement n’est pas recommandée pour les fichiers dans Office 365 avec des données qui est soumis à la RGPD. Les services Office 365 ne peuvent pas lire actuellement dans les fichiers d’installation administrative chiffrés. Par conséquent, le service ne peut pas trouver des données sensibles dans ces fichiers.
 
-Les étiquettes Azure Information Protection peuvent être appliquées aux e-mails dans Exchange Online. Ces étiquettes sont compatibles avec la protection contre la perte de données Office 365. Grâce à la classification unifiée et au moteur de création d’étiquettes bientôt disponibles, vous serez en mesure d’utiliser les mêmes étiquettes pour les e-mails et les fichiers, y compris l’étiquetage et la protection automatiques des e-mails en transit.
+Les étiquettes de sensibilité peuvent être appliquées à l’application courrier dans Exchange Online et ces étiquettes fonctionnent avec la prévention de perte de données Office 365. 
 
 ![Étiquettes Office 365 et étiquettes Azure Information Protection](Media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
+
 Dans cette illustration :
 
--   Utilisez les étiquettes Office 365 pour les données personnelles ou pour les fichiers contenant des données hautement réglementées et des secrets commerciaux dans SharePoint Online et OneDrive Entreprise.
+-   Utilisez les étiquettes de rétention pour les données personnelles ou pour les fichiers contenant des données hautement réglementées et des secrets commerciaux dans SharePoint Online et OneDrive Entreprise.
 
--   Utilisez les étiquettes Azure Information Protection (AIP) pour les fichiers contenant des données hautement réglementées et des secrets commerciaux, les e-mails Exchange Online, les fichiers dans d’autres services SaaS, les fichiers dans des centres de données en local et les fichiers dans d’autres fournisseurs cloud.
+-   Utilisez les étiquettes de sensibilité pour les fichiers contenant des données hautement réglementées et des secrets commerciaux, les e-mails Exchange Online, les fichiers dans d’autres services SaaS, les fichiers dans des centres de données en local et les fichiers dans d’autres fournisseurs cloud.
 
--   Bientôt disponible : les deux types d’étiquettes vont converger vers une expérience unifiée de classification et d’étiquetage.
 
-## <a name="use-office-labels-and-sensitive-information-types-across-microsoft-365-for-information-protection"></a>Utilisation des étiquettes Office et des types d’informations sensibles au sein de Microsoft 365 pour la protection des informations
+## <a name="use-retention-labels-and-sensitive-information-types-across-microsoft-365-for-information-protection"></a>Utilisation des étiquettes Office et des types d’informations sensibles au sein de Microsoft 365 pour la protection des informations
 
 L’image suivante montre comment les étiquettes Office et les types d’informations sensibles peuvent être utilisés dans les stratégies d’étiquetage, les stratégies de protection contre la perte de données et les stratégies Cloud App Security.
 
@@ -64,7 +68,7 @@ Concernant l’accessibilité, le tableau suivant fournit les mêmes exemples da
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Étiquettes Office. Exemples : Personnel, Public, Données client, Données RH, Confidentiel, Hautement confidentiel</td>
+<td align="left">Étiquettes de rétention. Exemples : Personnel, Public, Données client, Données RH, Confidentiel, Hautement confidentiel</td>
 <td align="left"><p>Appliquer automatiquement l’étiquette...</p>
 <p>Données client</p>
 <p>... aux documents qui correspondent aux types d’informations sensibles...</p>
@@ -178,7 +182,7 @@ Créez des étiquettes et des stratégies dans le Centre de sécurité et de con
 <p>Reportez-vous à la rubrique <a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">Octroi de l’accès au Centre de sécurité &amp; de conformité Office 365 aux utilisateurs</a>.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Créez des étiquettes d’Office.</p></td>
+<td align="left"><p>Créer des étiquettes de rétention.</p></td>
 <td align="left">Accédez à Classifications dans le Centre de sécurité et de conformité, sélectionnez Étiquettes, puis créez des étiquettes pour votre environnement.</td>
 </tr>
 <tr class="odd">
