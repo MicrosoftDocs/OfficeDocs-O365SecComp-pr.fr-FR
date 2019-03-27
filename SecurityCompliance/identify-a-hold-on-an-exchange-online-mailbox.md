@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Découvrez comment identifier les différents types de conservation pouvant être placés sur une boîte aux lettres Office 365. Ces types de conservation incluent les conservations pour litige, la découverte électronique et les stratégies de rétention d'Office 365. Vous pouvez également déterminer si un utilisateur a été exclu d'une stratégie de rétention à l'échelle de l'organisation.
-ms.openlocfilehash: 5b9e8437b688a5c1b35726834c3d80d07cc4ba50
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: fa037e4e4f6a0c4b419645bdc3242fdc3d6db7db
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296807"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900153"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online
 
@@ -38,9 +38,10 @@ Office 365 offre plusieurs méthodes permettant à votre organisation d'empêche
 
     - Stratégies de rétention d' **emplacement spécifiques** : il s'agit de stratégies affectées aux emplacements de contenu d'utilisateurs spécifiques. Vous utilisez la cmdlet **Get-Mailbox** dans Exchange Online PowerShell pour obtenir des informations sur les stratégies de rétention affectées à des boîtes aux lettres spécifiques.
 
-    - **Stratégies** de rétention à l'échelle de l'Organisation: ce sont des stratégies qui sont affectées à tous les emplacements de contenu de votre organisation. Vous utilisez la cmdlet **Get-OrganizationConfig** dans Exchange Online PowerShell pour obtenir des informations sur les stratégies de rétention à l'échelle de l'organisation. Pour plus d'informations, consultez la section «application d'une stratégie de rétention à une organisation ou des emplacements spécifiques» dans [vue d'ensemble des stratégies de rétentIon Office 365](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
+    - **Stratégies** de rétention à l'échelle de l'Organisation: ce sont des stratégies qui sont affectées à tous les emplacements de contenu de votre organisation. Vous utilisez la cmdlet **Get-OrganizationConfig** dans Exchange Online PowerShell pour obtenir des informations sur les stratégies de rétention à l'échelle de l'organisation.
+  Pour plus d'informations, consultez la section «application d'une stratégie de rétention à une organisation ou des emplacements spécifiques» dans [vue d'ensemble des stratégies de rétentIon Office 365](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
 
-- **Étiquettes de rétentIon office 365** : si un utilisateur applique une étiquette de rétention Office 365 (une étiquette configurée pour conserver le contenu ou conserver et supprimer du contenu) pour *un* dossier ou un élément de sa boîte aux lettres, une conservation est placée sur la boîte aux lettres comme si elle était mise en attente pour litige ou affectation à une stratégie de rétention Office 365. Pour plus d'informations, consultez la section [identification des boîtes aux lettres en attente, car une étiquette de rétention a été appliquée à un dossier ou à une](#identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item) section d'élément de cet article.
+- **Étiquettes de rétentIon office 365** : si un utilisateur applique une étiquette de rétention Office 365 (une étiquette configurée pour conserver le contenu ou conserver et supprimer du contenu) pour *un* dossier ou un élément de sa boîte aux lettres, une conservation est placée sur la boîte aux lettres comme si elle était mise en attente pour litige ou affectation à une stratégie de rétention Office 365. Pour plus d'informations, consultez la section [identification des boîtes aux lettres en attente, car une étiquette de rétention a été appliquée à un dossier ou à une](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) section d'élément de cet article.
 
 Pour gérer les boîtes aux lettres en conservation, il se peut que vous deviez identifier le type de blocage placé sur une boîte aux lettres afin de pouvoir effectuer des tâches telles que la modification de la durée de la conservation, la suppression temporaire ou définitive de la conservation ou l'exclusion d'une boîte aux lettres d'une stratégie de rétention Office 365. Dans ce cas, la première étape consiste à identifier le type de conservation placé sur la boîte aux lettres. Étant donné que plusieurs conservations (et différents types de suspensions) peuvent être placées sur une seule boîte aux lettres, vous devez identifier toutes les suspensions placées sur une boîte aux lettres si vous voulez les supprimer ou les modifier.
 
@@ -138,7 +139,7 @@ $CaseHold | FL Name,ExchangeLocation
 
 Pour vous connecter au centre de sécurité & Compliance Center PowerShell, consultez [la rubrique Connect to Office 365 Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
-### <a name="in-place-holds"></a>Archives permanentes
+### <a name="in-place-holds"></a>Conservations inaltérables
 
 Exécutez la commande suivante dans Exchange Online PowerShell pour identifier la conservation inaltérable qui est appliquée à la boîte aux lettres. Utilisez le GUID pour le blocage sur place que vous avez identifié à l'étape 1. La commande affiche le nom de la conservation et la liste des boîtes aux lettres auxquelles la conservation s'applique.
 
@@ -195,7 +196,7 @@ Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 
 > [!TIP]
-> La meilleure façon de spécifier une boîte aux lettres inactive dans la commande précédente consiste à utiliser son nom unique ou sa valeur de GUID Exchange. L'utilisation de l'une de ces valeurs permet d'éviter de spécifier accidentellement une boîte aux lettres incorrecte. 
+> La meilleure façon de spécifier une boîte aux lettres inactive dans la commande précédente consiste à utiliser son nom unique ou sa valeur de GUID Exchange. L'une de ces valeurs permet d'empêcher de spécifier par inadvertance la mauvaise boîte aux lettres. 
 
 ## <a name="next-steps"></a>Étapes suivantes
 

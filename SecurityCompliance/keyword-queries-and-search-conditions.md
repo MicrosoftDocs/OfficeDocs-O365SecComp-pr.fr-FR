@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: "Découvrez les propriétés de messagerie et de fichier que vous pouvez rechercher dans les boîtes aux lettres Exchange Online et dans SharePoint ou OneDrive entreprise à l'aide de l'outil de recherche &amp; de contenu dans le centre de sécurité conformité Office 365.  "
-ms.openlocfilehash: 478f0f7089046cea9a1650fc090e59fc056db8a9
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: ec8f5c049fbaaa6cc17049154774faa128d2f18d
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639161"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900203"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Requêtes par mots clés et conditions de recherche pour la recherche de contenu
 
@@ -87,7 +87,7 @@ Pour obtenir la liste complète des propriétés SharePoint pouvant faire l'obje
 |LastModifiedTime|Date à laquelle un élément a été modifié pour la dernière fois.|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|Le premier exemple renvoie les éléments qui ont été modifiés à ou après le 1er mai 2016. Le deuxième exemple renvoie les éléments modifiés entre le 1er mai 2016 et le 1er juin 2016.|
 |ModifiedBy|Personne qui a apporté les dernières modifications. Veillez à utiliser le nom complet de l'utilisateur pour cette propriété.|`modifiedby:"Garth Fort"`|Tous les éléments qui ont été modifiés en dernier par Garth Fort.|
 |Path|Chemin d'accès (URL) d'un site spécifique dans un site SharePoint ou OneDrive entreprise.  <br/> Pour renvoyer des éléments situés dans des dossiers du site que vous spécifiez pour la propriété Path, vous devez ajouter\* /à l'URL du site spécifié; par exemple,`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **Remarque:** L'utilisation `Path` de la propriété pour rechercher des emplacements OneDrive ne renverra pas les fichiers multimédias, tels que les fichiers. png,. TIFF ou. wav, dans les résultats de la recherche. Utilisez une autre propriété de site dans votre requête de recherche pour rechercher des fichiers multimédias dans les dossiers OneDrive. <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|Le premier exemple renvoie tous les éléments du site OneDrive entreprise spécifié. Le deuxième exemple renvoie des documents dans le site spécifié (et les dossiers du site) qui contiennent le mot «Confidential» dans le nom de fichier.|
-|SharedWithUsersOWSUser|Documents qui ont été partagés avec l'utilisateur spécifié et qui s'affichent dans la page **partagé avec moi** du site OneDrive entreprise de l'utilisateur. Il s'agit de documents qui ont été explicitement partagés avec l'utilisateur spécifié par d'autres personnes de votre organisation. Lorsque vous exportez des documents qui correspondent à une requête de recherche qui utilise la propriété SharedWithUsersOWSUser, les documents sont exportés à partir de l'emplacement de contenu d'origine de la personne qui a partagé le document avec l'utilisateur spécifié. Pour plus d'informations, consultez [la rubrique recherche de contenu de site partagé au sein de votre organisation](keyword-queries-and-search-conditions.md#internal).|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|Ces deux exemples renvoient tous les documents internes qui ont été explicitement partagés avec Garth fort et qui apparaissent sur la page **partagé avec moi** du compte OneDrive entreprise de Garth.|
+|SharedWithUsersOWSUser|Documents qui ont été partagés avec l'utilisateur spécifié et qui s'affichent dans la page **partagé avec moi** du site OneDrive entreprise de l'utilisateur. Il s'agit de documents qui ont été explicitement partagés avec l'utilisateur spécifié par d'autres personnes de votre organisation. Lorsque vous exportez des documents qui correspondent à une requête de recherche qui utilise la propriété SharedWithUsersOWSUser, les documents sont exportés à partir de l'emplacement de contenu d'origine de la personne qui a partagé le document avec l'utilisateur spécifié. Pour plus d'informations, consultez [la rubrique recherche de contenu de site partagé au sein de votre organisation](#searching-for-site-content-shared-within-your-organization).|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|Ces deux exemples renvoient tous les documents internes qui ont été explicitement partagés avec Garth fort et qui apparaissent sur la page **partagé avec moi** du compte OneDrive entreprise de Garth.|
 |Site|URL d’un site ou d’un groupe de sites de votre organisation.|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|Le premier exemple renvoie des éléments à partir des sites OneDrive entreprise pour tous les utilisateurs de l'organisation. Le second exemple renvoie les éléments de tous les sites d’équipe.|
 |Size|Taille d'un élément, en octets.|`size>=1`  <br/> `size:1..10000`|Le premier exemple renvoie les éléments dont la taille est supérieure à 1 octet. Le deuxième exemple renvoie les éléments dont la taille est comprise entre 1 et 10 000 octets.|
 |Titre|Titre du document. La propriété Title est une métadonnée qui est spécifiée dans des documents Microsoft Office. Il est différent du nom de fichier du document.|`title:"communication plan"`|Tout document qui contient l’expression « communication plan » (plan de communication) dans la propriété de métadonnées du titre d’un document Office.|
@@ -197,11 +197,11 @@ Créez une condition à l’aide des propriétés de messagerie lorsque vous rec
 |Participants|Tous les champs de contacts compris dans un message électronique ; De, À, Cc et Cci.|
 |Type|Propriété de classe de message pour un élément de courrier électronique. Il s'agit de la même propriété que la propriété de messagerie ItemClass. Il s'agit également d'une condition à valeurs multiples. Pour sélectionner plusieurs classes de message, maintenez la touche **CTRL** enfoncée, puis cliquez sur au moins deux classes de messages dans la liste déroulante que vous souhaitez ajouter à la condition. Chaque classe de message que vous sélectionnez dans la liste est logiquement connectée par l'opérateur **or** dans la requête de recherche correspondante.  <br/> Pour obtenir la liste des classes de message (et de leur ID de classe de message correspondant) utilisées par Exchange et que vous pouvez sélectionner dans la liste de **classes de message** , voir [types d'éléments et classes de messages](https://go.microsoft.com/fwlink/?linkid=848143).|
 |Received|Date à laquelle un message électronique a été reçu par un destinataire. Il s’agit de la même propriété que la propriété de messagerie Received.|
-|Destinataires|Personne à laquelle un message électronique a été envoyé. Il s’agit de la même propriété que la propriété de messagerie To.|
+|Recipients|Personne à laquelle un message électronique a été envoyé. Il s’agit de la même propriété que la propriété de messagerie To.|
 |Expéditeur|Expéditeur d’un message électronique.|
 |Sent|Date à laquelle un message électronique a été envoyé par l’expéditeur. Il s’agit de la même propriété que la propriété de messagerie Sent.|
 |Subject|Texte de la ligne d'objet d'un message électronique.|
-|À|Destinataire d'un message électronique.|
+|To|Destinataire d'un message électronique.|
   
 ### <a name="conditions-for-document-properties"></a>Conditions des propriétés de document
 
