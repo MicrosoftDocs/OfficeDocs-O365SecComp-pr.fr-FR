@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec la protection contre la perte de données (DLP) dans SharePoint Online, vous pouvez découvrir des documents qui contiennent des données sensibles sur l'ensemble de votre client. Après avoir découvert les documents, vous pouvez travailler avec leurs propriétaires pour protéger les données. Cette rubrique peut vous aider à créer une requête pour rechercher des données sensibles.
-ms.openlocfilehash: 91ef057170ef10614d3888e128769129e4c33fb9
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 8ecce920810d52fadb311c6c4925c9fa4b6fb2b1
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639131"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900053"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Créer une requête pour trouver des données sensibles stockées sur des sites
 
@@ -53,7 +53,7 @@ Enfin, la plage de confiance est le niveau de confiance auquel le type d'informa
   
 ### <a name="additional-query-properties-and-search-operators-available-in-the-ediscovery-center"></a>Propriétés de requête supplémentaires et opérateurs de recherche disponibles dans le centre eDiscovery
 
-DLP dans SharePoint introduit également la propriété LastSensitiveContentScan, qui peut vous aider à rechercher des fichiers analysés dans une période spécifique. Pour obtenir des exemples de `LastSensitiveContentScan` requête avec la propriété, consultez les [exemples de requêtes complexes](form-a-query-to-find-sensitive-data-stored-on-sites.md#BKMK_ExamplesOfComplexQueries) dans la section suivante. 
+DLP dans SharePoint introduit également la propriété LastSensitiveContentScan, qui peut vous aider à rechercher des fichiers analysés dans une période spécifique. Pour obtenir des exemples de `LastSensitiveContentScan` requête avec la propriété, consultez les [exemples de requêtes complexes](#examples-of-complex-queries) dans la section suivante. 
   
 Vous pouvez utiliser non seulement des propriétés spécifiques à DLP pour créer une requête, mais aussi des propriétés de recherche de découverte `Author` électronique `FileExtension`SharePoint standard, telles que ou. Vous pouvez utiliser des opérateurs pour créer des requêtes complexes. Pour obtenir la liste des propriétés et des opérateurs disponibles, consultez la rubrique [utilisation des propriétés et des opérateurs de recherche avec](https://go.microsoft.com/fwlink/?LinkId=510093) le billet de blog eDiscovery. 
   

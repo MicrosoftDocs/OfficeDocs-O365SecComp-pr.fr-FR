@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Le Gestionnaire de conformité, disponible dans le Portail d’approbation de services de Microsoft, propose des outils pour suivre, implémenter et gérer les contrôles permettant à votre organisation de se conformer aux normes du secteur en matière de sécurité et de protection des données (par exemple, le RGPD, les normes ISO 27001 et 27018, la loi américaine HIPAA), quand elle utilise les services de cloud computing Microsoft, tels qu’Office 365 et Microsoft Azure. Le Gestionnaire de conformité permet à la personne responsable de la stratégie de protection des données et de la vie privée de votre organisation de gérer vos processus d’évaluation des risques et de conformité.
-ms.openlocfilehash: cb12299dee5392cb75d41156a834a7190b8ade1b
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: bd61920967cfeacbefc09d1347203565617af5a1
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296837"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900173"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Répondre aux exigences sur la protection des données et aux réglementations pendant l’utilisation des services de cloud computing Microsoft à l’aide du Gestionnaire de conformité
 
@@ -385,7 +385,7 @@ Certaines réglementations exigent que les organisations soient en mesure de sup
   
 - [Rechercher un utilisateur](#search-for-a-user)
 
-- [Exporter le rapport de l’historique des données d’un compte](#export-report-of-account-data-history)
+- [Exporter le rapport de l’historique des données d’un compte](#export-a-report-of-account-data-history)
 
 - [Réaffecter des éléments d’action](#reassign-action-items)
 
@@ -511,9 +511,9 @@ Pour ajouter une évaluation au Gestionnaire de conformité :
   
 1. Dans le tableau de bord du Gestionnaire de conformité, cliquez sur ![l’icône Ajouter](media/ITPro-EAC-AddIcon.gif) **Ajouter une évaluation**. 
     
-2. Dans la fenêtre **Ajouter une évaluation**, vous pouvez créer un groupe auquel ajouter l’évaluation ou vous pouvez l’ajouter à un groupe existant (le groupe intégré est intitulé « Groupe initial »). Selon l’option choisie, soit vous tapez le nom d’un nouveau groupe, soit vous sélectionnez un groupe existant dans la liste déroulante. Pour en savoir plus, consultez la section [Regroupement des évaluations](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#grouping).
+2. Dans la fenêtre **Ajouter une évaluation**, vous pouvez créer un groupe auquel ajouter l’évaluation ou vous pouvez l’ajouter à un groupe existant (le groupe intégré est intitulé « Groupe initial »). Selon l’option choisie, soit vous tapez le nom d’un nouveau groupe, soit vous sélectionnez un groupe existant dans la liste déroulante. Pour en savoir plus, consultez la section [Regroupement des évaluations](#grouping-assessments).
     
-    Si vous créez un groupe, vous pouvez également copier les informations d’un groupe existant dans la nouvelle évaluation. Ainsi, toutes les informations ajoutées aux champs Détails de l’implémentation, Plan de test et Réponse de la direction des contrôles gérés par le client des évaluations du groupe copié sont copiés dans les contrôles gérés par le client identiques (ou associés) de la nouvelle évaluation. Si vous ajoutez une nouvelle évaluation à un groupe existant, les informations communes des évaluations de ce groupe sont copiées dans la nouvelle évaluation. Pour en savoir plus, consultez la section [Copie des informations des évaluations existantes](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#copying).
+    Si vous créez un groupe, vous pouvez également copier les informations d’un groupe existant dans la nouvelle évaluation. Ainsi, toutes les informations ajoutées aux champs Détails de l’implémentation, Plan de test et Réponse de la direction des contrôles gérés par le client des évaluations du groupe copié sont copiés dans les contrôles gérés par le client identiques (ou associés) de la nouvelle évaluation. Si vous ajoutez une nouvelle évaluation à un groupe existant, les informations communes des évaluations de ce groupe sont copiées dans la nouvelle évaluation. Pour en savoir plus, consultez la section [Copie des informations des évaluations existantes](#copying-information-from-existing-assessments).
     
 3. Cliquez sur **Suivant**, puis :
     
@@ -553,7 +553,7 @@ De même, les informations des contrôles gérés par le client partagés au sei
   
 1. Cette section présente les informations récapitulatives de l’évaluation, notamment le nom du regroupement d’évaluations, le produit, le nom de l’évaluation et le nombre de contrôles évalués.
     
-2. Cette section affiche les contrôles de filtre de l’évaluation. Pour savoir comment utiliser ces contrôles, consultez la section [Gestion du processus d’évaluation](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#managecomplianceprocess_1). 
+2. Cette section affiche les contrôles de filtre de l’évaluation. Pour savoir comment utiliser ces contrôles, consultez la section [Gestion du processus d’évaluation](#managing-the-assessment-process). 
     
 3. Cette section affiche les services cloud inclus dans l’évaluation.
     
@@ -561,7 +561,7 @@ De même, les informations des contrôles gérés par le client partagés au sei
     
 5. Cette section contient les contrôles gérés par le client. Ils sont eux aussi organisés en familles de contrôles. Cliquez sur une famille de contrôles pour la développer et afficher les contrôles individuels.
     
-6. Affiche le nombre total de contrôles dans la famille de contrôles et le nombre de contrôles évalués dans cette famille. Dans le Gestionnaire de conformité, vous pouvez suivre la progression des évaluations des contrôles gérés par le client réalisées par votre organisation. Pour en savoir plus, consultez la section [Présentation du Score de conformité](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#compliancescore). 
+6. Affiche le nombre total de contrôles dans la famille de contrôles et le nombre de contrôles évalués dans cette famille. Dans le Gestionnaire de conformité, vous pouvez suivre la progression des évaluations des contrôles gérés par le client réalisées par votre organisation. Pour en savoir plus, consultez la section [Présentation du Score de conformité](#understanding-the-compliance-score). 
 
 ## <a name="managing-the-assessment-process"></a>Gestion du processus d’évaluation
 

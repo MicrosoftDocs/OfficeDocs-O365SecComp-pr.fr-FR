@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: Voici quelques éléments que vous devez connaître avant de commencer à utiliser EOP.
-ms.openlocfilehash: 878380adb039961334413019551847717ace0cc7
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: fdaeba4f38d2e7676b336519f6d04649ee9d8137
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692323"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900123"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection 
 
@@ -23,7 +23,7 @@ Bienvenue dans le service de filtrage du courrier électronique hébergé sur Mi
   
 - Pour en savoir plus sur EOP, consultez la rubrique [Description du service de protection Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=320619). Autres ressources utiles : [Vue d'ensemble d'Exchange Online Protection](exchange-online-protection-overview.md), [Forum Aux Questions d'ordre général concernant Exchange Online Protection (EOP)](eop-general-faq.md) et [Fonctionnalités EOP](eop-features.md), ainsi que la [page d'accueil Exchange Online Protection](https://go.microsoft.com/fwlink/?LinkId=279912).
     
-- Pour démarrer avec EOP, les nouveaux clients doivent consulter la rubrique [Configurer votre service EOP](set-up-your-eop-service.md). Vous y trouverez les étapes qui vous permettront de rendre EOP opérationnel. Vous pouvez également consulter la série de vidéos de présentation figurant dans la rubrique [Vidéos pour démarrer avec EOP](videos-for-getting-started-with-eop.md).
+- Pour démarrer avec EOP, les nouveaux clients doivent consulter la rubrique [Configurer votre service EOP](set-up-your-eop-service.md). Vous y trouverez les étapes qui vous permettront de rendre EOP opérationnel. 
     
 - Si vous avez besoin d'aide supplémentaire ou si vous souhaitez partager des idées, le [forum EOP](https://go.microsoft.com/fwlink/?LinkId=285351) constitue une excellent point de départ. 
     
@@ -36,8 +36,6 @@ Le contenu de l’aide pour les administrateurs d’EOP se compose des catégori
 - [Vue d'ensemble d'Exchange Online Protection](exchange-online-protection-overview.md) Présente le fonctionnement d'EOP et fournit des liens vers des informations supplémentaires. 
     
 - [Fonctionnalités EOP](eop-features.md) Fournit la liste des fonctionnalités disponibles dans EOP. 
-    
-- [Vidéos pour démarrer avec EOP](videos-for-getting-started-with-eop.md) Présente EOP à l'aide d'une série de vidéos qui détaillent les tâches de configuration courantes. 
     
 - [Configurer votre service EOP](set-up-your-eop-service.md) Fournit les étapes de configuration de votre service EOP, ainsi que des liens vers des informations supplémentaires. 
     

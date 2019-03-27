@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: Découvrez comment configurer le Registre Windows pour augmenter le débit des données lors du téléchargement des résultats de recherche et des données de recherche &amp; à partir du centre de sécurité et de la sécurité Office 365, ainsi que d'Office 365 Advanced eDiscovery.
-ms.openlocfilehash: a23525ada1ef5f36bc7df4fc738c712e22243bc0
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: ddeb247be6981dbfdb874e270a123e4465914d86
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295427"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30899923"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>Augmentation de la vitesse de téléchargement lors de l'exportation des résultats de recherche eDiscovery à partir d'Office 365
 
@@ -52,7 +52,7 @@ Effectuez la procédure suivante sur l'ordinateur que vous allez utiliser pour t
 6. Vous pouvez répéter les étapes 2-5 pour modifier la valeur du `DownloadConcurrency` paramètre de registre. 
     
     > [!IMPORTANT]
-    > Une fois que vous avez créé `DownloadConcurrency` ou modifié le paramètre de Registre, veillez à créer une nouvelle tâche d'exportation ou à redémarrer une tâche d'exportation existante pour les résultats de recherche ou les données que vous souhaitez télécharger. Pour plus d'informations, rePortez-vous à la section [more information](increase-download-speeds-when-exporting-ediscovery-results.md#moreinfo) . 
+    > Une fois que vous avez créé `DownloadConcurrency` ou modifié le paramètre de Registre, veillez à créer une nouvelle tâche d'exportation ou à redémarrer une tâche d'exportation existante pour les résultats de recherche ou les données que vous souhaitez télécharger. Pour plus d'informations, rePortez-vous à la section [more information](#more-information) . 
   
 ## <a name="more-information"></a>Plus d’informations
 

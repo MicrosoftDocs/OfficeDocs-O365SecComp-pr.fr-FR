@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: Le but de cette rubrique est de vous aider à comprendre le processus de passage d'un équipement de protection de messagerie électronique local ou d'un service de protection dans le nuage à Exchange Online Protection (EOP), puis de vous fournir les ressources d'aide nécessaires pour commencer à l'utiliser.
-ms.openlocfilehash: 0923bf0060891536ac11c5f9fa773f74aed1463f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 0c33d89be5cb4ebf7719e6742532ebfc7a2e5c20
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693413"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30899953"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Basculement vers EOP à partir de Google Postini, Barracuda Spam and Virus Firewall, ou Cisco IronPort
 
@@ -25,14 +25,13 @@ Si vous découvrez EOP et souhaitez avoir un aperçu de ses fonctionnalités ava
   
 Avant de passer à EOP, il est important que vous déterminiez si vous voulez héberger vos boîtes aux lettres protégées par EOP dans le nuage avec Exchange Online, localement ou dans un scénario hybride (hybride signifie que certaines boîtes aux lettres sont hébergées localement, et d'autres avec Exchange Online). Chacun de ces scénarios d'hébergement (en nuage, local et hybride) est possible, mais les étapes de configuration peuvent varier. Voici quelques considérations pour vous aider à choisir le déploiement approprié :
   
-- **Protection EOP avec boîtes aux lettres locales** Ce scénario est approprié si vous disposez d'une infrastructure d'hébergement de messagerie que vous souhaitez utiliser, ou si votre organisation exige la conservation des boîtes aux lettres localement, et si vous souhaitez bénéficier de la protection du courrier électronique en nuage offerte par EOP. Pour plus d'informations sur ce scénario, consultez la rubrique [Passage à EOP autonome](#BKMK_SwitchStandalone.md). 
+- **Protection EOP avec boîtes aux lettres locales** Ce scénario est approprié si vous disposez d'une infrastructure d'hébergement de messagerie que vous souhaitez utiliser, ou si votre organisation exige la conservation des boîtes aux lettres localement, et si vous souhaitez bénéficier de la protection du courrier électronique en nuage offerte par EOP. Pour plus d'informations sur ce scénario, consultez la rubrique [Passage à EOP autonome](#switch-to-eop-standalone). 
     
 - **Protection EOP avec boîtes aux lettres Exchange Online** Ce scénario est approprié si vous voulez une protection EOP avec hébergement de toutes vos boîtes aux lettres dans le nuage. Il peut s'avérer plus simple, car il ne nécessite pas le maintien de serveurs de messagerie locaux. La rubrique [Passage à Exchange Online](switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md#BKMK_SwitchEXO) décrit ce scénario. 
     
-- **Protection EOP avec boîtes aux lettres hybride** Vous voulez des boîtes aux lettres en nuage, mais vous devez conserver des boîtes aux lettres locales pour certains utilisateurs. Ce scénario est approprié si vous voulez conserver certaines boîtes aux lettres localement, et héberger les autres avec Exchange Online. [Passage à une solution hybride](#BKMK_SwitchHybrid.md) décrit ce scénario. 
+- **Protection EOP avec boîtes aux lettres hybride** Vous voulez des boîtes aux lettres en nuage, mais vous devez conserver des boîtes aux lettres locales pour certains utilisateurs. Ce scénario est approprié si vous voulez conserver certaines boîtes aux lettres localement, et héberger les autres avec Exchange Online. [Passage à une solution hybride](#switch-to-a-hybrid-solution) décrit ce scénario. 
     
 ## <a name="switch-to-eop-standalone"></a>Passage à EOP autonome
-<a name="BKMK_SwitchStandalone"> </a>
 
 Si vous hébergez actuellement vos boîtes aux lettres localement et utilisez un équipement de protection local ou un service de protection de messagerie dans le nuage, vous pouvez passer à EOP pour bénéficier de ses fonctionnalités de protection et sa disponibilité. Pour configurer EOP dans un scénario autonome, c'est-à-dire consistant à héberger vos boîtes aux lettres localement et à utiliser EOP pour assurer la protection du courrier électronique, vous pouvez procéder de la manière décrite dans la rubrique [Configurer votre service EOP](set-up-your-eop-service.md). Cette rubrique décrit les étapes de configuration de la protection EOP, qui incluent l'inscription, l'ajout de votre domaine et la configuration de votre flux de messagerie avec des connecteurs.
   

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Utilisez la recherche de contenu dans le centre &amp; de sécurité conformité Office 365 pour rechercher du contenu dans des boîtes aux lettres, des sites SharePoint Online, des comptes OneDrive, des groupes Microsoft Teams, des groupes Office 365 et des conversations Skype entreprise. Vous pouvez utiliser des requêtes de recherche par mot clé et des conditions de recherche pour affiner les résultats de la recherche. Vous pouvez ensuite afficher un aperçu et exporter les résultats de la recherche. La recherche de contenu est également un outil efficace pour rechercher du contenu susceptible d'être lié à une demande d'objet de données RGPD.
-ms.openlocfilehash: 22792e9513d0e9a7be468bb13db2e4286f9f140c
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: 93bac47c4d83aa75e0581dbba0b40386a451fe3d
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670719"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900103"
 ---
 # <a name="content-search-in-office-365"></a>Recherche de contenu dans Office 365
 
@@ -76,7 +76,8 @@ Pour accéder à la page de **recherche de contenu** afin d'exécuter des recher
     
     Pourquoi utiliser la liste de mots clés? Vous pouvez obtenir des statistiques qui indiquent le nombre d'éléments qui correspondent à chaque mot clé. Cela peut vous aider à identifier rapidement les mots clés les plus efficaces (et les moins). Vous pouvez également utiliser une phrase de mots clés (entourée de parenthèses) dans une ligne. Pour plus d'informations sur les statistiques de recherche, voir [afficher les statistiques sur les mots clés pour les résultats de la recherche de contenu](view-keyword-statistics-for-content-search.md).
 
-    [!NOTE] Pour réduire les problèmes causés par des listes de mots clés volumineuses, vous êtes désormais limité à un maximum de 20 lignes dans la liste de mots clés.
+    > [!NOTE]
+    > Pour réduire les problèmes causés par des listes de mots clés volumineuses, vous êtes désormais limité à un maximum de 20 lignes dans la liste de mots clés.
     
 - **Conditions** : vous pouvez ajouter des conditions de recherche pour affiner une recherche et renvoyer un ensemble de résultats plus raffiné. Chaque condition ajoute une clause à la requête de recherche créée et exécutée lors du démarrage de la recherche. Une condition est logiquement liée à la requête de mot-clé (spécifiée dans la zone de mot clé) par un opérateur logique ( **c:c**) qui est similaire à la fonctionnalité de l'opérateur **and** . Cela signifie que les éléments doivent répondre à la fois à la requête de mot clé et à une ou plusieurs conditions à inclure dans les résultats. C’est ainsi que les conditions contribuent à affiner vos résultats. Pour obtenir la liste et la description des conditions que vous pouvez utiliser dans une requête de recherche, consultez la section «conditions de recherche» dans [requêtes de mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md#search-conditions).
     

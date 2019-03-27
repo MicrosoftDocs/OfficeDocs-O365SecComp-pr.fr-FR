@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Présentation des stratégies de surveillance dans Office 365
-ms.openlocfilehash: c22abdf315b2301ae9c63b26f548eff302df8e2a
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: db0dedbbb41eef334165a4bde65c45a52d14299a
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720274"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900093"
 ---
 # <a name="supervision-policies-in-office-365"></a>Stratégies de surveillance dans Office 365
 
@@ -73,7 +73,11 @@ Pour simplifier votre configuration, créez des groupes pour les personnes dont 
 Avec les stratégies de surveillance, vous pouvez choisir de surveiller les messages dans une ou plusieurs des plateformes de communication suivantes:
 
 - **Courrier électronique Exchange:** Les boîtes aux lettres hébergées sur Exchange Online dans le cadre de votre abonnement Office 365 sont toutes éligibles pour la supervision des messages. Les E-mails et les pièces jointes correspondant aux conditions de stratégie de surveillance sont immédiatement disponibles pour la surveillance et les rapports de surveillance. Les types de pièces jointes prises en charge pour la surveillance sont les mêmes que pour les [types de fichiers pris en charge pour les inspections de contenu des règles de flux de messagerie](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)
-- **Microsoft teams:** Les communications de conversation et les pièces jointes associées dans les canaux Microsoft teams publics et privés, ainsi que dans les conversations individuelles, peuvent être surveillées. Les conversations teams correspondant aux conditions de stratégie de contrôle sont traitées une fois toutes les 24 heures, puis disponibles pour la surveillance et les rapports de surveillance.
+- **Microsoft teams:** Les communications de conversation et les pièces jointes associées dans les canaux Microsoft teams publics et privés, ainsi que dans les conversations individuelles, peuvent être surveillées. Les conversations teams correspondant aux conditions de stratégie de contrôle sont traitées une fois toutes les 24 heures, puis disponibles pour la surveillance et les rapports de surveillance. Utilisez les configurations de gestion de groupe suivantes pour superviser efficacement les conversations des utilisateurs individuels et les communications de canal dans teams:
+
+    - **Pour la supervision des conversations de teams:** vous devrez affecter des utilisateurs individuels ou affecter un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de surveillance. Il s'agit des relations utilisateur/conversation 1-à-1 ou 1-n.
+    - **Pour teams Channel Communications:** vous devez affecter chaque canal Microsoft Team ou groupe Office 365 que vous souhaitez surveiller, qui contient un utilisateur spécifique à la stratégie de surveillance. Si vous ajoutez le même utilisateur à d'autres canaux Microsoft teams ou à des groupes Office 365, veillez à ajouter ces nouveaux canaux et groupes à la stratégie de surveillance.
+
 - **Sources** tierces: Vous pouvez superviser les communications provenant de sources tierces (par exemple, Facebook ou DropBox) si vous avez importé ces données dans des boîtes aux lettres Office 365 de votre organisation. [Découvrez comment importer des données tierces dans Office 365](https://docs.microsoft.com/office365/securitycompliance/archiving-third-party-data).
 
 ### <a name="policy-settings"></a>Paramètres de stratégie

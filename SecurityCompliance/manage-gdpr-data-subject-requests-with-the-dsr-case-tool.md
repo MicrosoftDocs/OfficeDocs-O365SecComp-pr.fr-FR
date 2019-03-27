@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: Le RGPD donne aux citoyens de l'Union européenne (appelés «personnes des données») des droits spécifiques sur leurs données personnelles; ces droits incluent l'obtention de copies de celle-ci, la demande de modifications, la limitation du traitement de celle-ci, sa suppression ou sa réception dans un format électronique. Une demande officielle d'un objet de données qui doit agir sur ses données personnelles est appelée demande de l'objet de données ou DSR. Vous pouvez utiliser les dossiers DSR dans le centre de &amp; sécurité conformité Office 365 pour gérer les investigations DSR de votre organisation.
-ms.openlocfilehash: fe702ab9050e76b6b8f00fbc8d2670505a030756
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: ae41daba4d11645848f8b2923eb3cbbaac2e65a4
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296587"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900143"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-amp-compliance-center"></a>Gérer les demandes des personnes associées aux données RGPD avec l'outil de cas DSR &amp; dans le centre de sécurité conformité Office 365
 
@@ -56,7 +56,7 @@ Pour gérer les enquêtes en réponse à un DSR envoyé par une personne de votr
     
 Voici le processus de haut niveau pour l'utilisation de l'outil de cas DSR afin de gérer les investigations DSR:
   
-[Étape 1 : attribuer des autorisations de découverte électronique aux membres potentiels de cas](#step-1-assign-ediscovery-permissions-to-potential-case-members)
+[Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
 [Étape 2: créer un cas DSR et ajouter des membres](#step-2-create-a-dsr-case-and-add-members)
 
@@ -103,9 +103,9 @@ L'étape suivante consiste à créer un boîtier DSR. Lorsque vous créez un cas
   
     À ce stade, vous pouvez effectuer l'une des deux opérations suivantes:
     
-    a. le fait de cliquer sur **afficher les résultats** de la recherche démarre la recherche. Il s'agit de la sélection par défaut. La recherche intégrée exécutée lorsque vous sélectionnez cette option et les résultats renvoyés sont abordés à l'étape 3.
+    a. Le fait de cliquer sur **afficher les résultats** de la recherche démarre la recherche. Il s’agit de la sélection par défaut. La recherche intégrée exécutée lorsque vous sélectionnez cette option et les résultats renvoyés sont abordés à l'étape 3.
     
-    b. le bouton **Terminer** ferme le nouveau boîtier DSR sans lancer la recherche intégrée. Lorsque vous sélectionnez cette option, le nouvel incident DSR s'affiche sur la page demandes des personnes **concernées** .
+    b. Si vous cliquez sur **Terminer** , le nouvel incident DSR se ferme sans démarrer la recherche intégrée. Lorsque vous sélectionnez cette option, le nouvel incident DSR s'affiche sur la page demandes des personnes **concernées** .
     
 6. Cliquez sur **Terminer** pour pouvoir accéder au nouveau boîtier DSR et y ajouter des membres. 
     
@@ -171,11 +171,11 @@ Lorsque vous exportez des résultats de recherche, les éléments de boîte aux 
   
 L'ordinateur que vous utilisez pour exporter des données doit répondre aux exigences système suivantes:
   
-- versions 32 ou 64 bits de Windows 7 et versions ultérieures
+- versions 32 ou 64 bits de Windows 7 et versions ultérieures
     
 - Microsoft .NET Framework 4,7
     
-- un navigateur pris en charge :
+- un navigateur pris en charge :
     
   - Microsoft Edge
     
@@ -198,11 +198,11 @@ L'ordinateur que vous utilisez pour exporter des données doit répondre aux exi
     
     ![Configurer les paramètres d'exportation](media/25416b79-57da-46a1-ae07-e640602a8fa4.png)
   
-    a. sous **options de sortie**, sélectionnez la première option ( **tous les éléments, sauf ceux dont le format n'est pas reconnu, sont chiffrés ou n'ont pas été indexés pour d'autres raisons**) pour exporter uniquement les éléments indexés. La raison pour laquelle vous ne voulez pas exporter des éléments partiellement indexés à partir de la recherche intégrée est que les éléments partiellement indexés provenant d'autres utilisateurs seront exportés. Pour exporter uniquement les éléments partiellement indexés de la personne concernée, nous vous recommandons de créer une recherche distincte. Pour plus d'informations, reportez-vous à la rubrique [exportation d'éléments partiellement indexés](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#exportunindexeditems) dans la section «plus d'informations sur l'utilisation de l'outil de cas DSR».
+    a. Sous **options de sortie**, sélectionnez la première option ( **tous les éléments, sauf ceux dont le format n'est pas reconnu, sont chiffrés ou n'ont pas été indexés pour d'autres raisons**) pour exporter uniquement les éléments indexés. La raison pour laquelle vous ne voulez pas exporter des éléments partiellement indexés à partir de la recherche intégrée est que les éléments partiellement indexés provenant d'autres utilisateurs seront exportés. Pour exporter uniquement les éléments partiellement indexés de la personne concernée, nous vous recommandons de créer une recherche distincte. Pour plus d'informations, reportez-vous à la rubrique [exportation d'éléments partiellement indexés](#exporting-partially-indexed-items) dans la section «plus d'informations sur l'utilisation de l'outil de cas DSR».
     
-    b. sous **exporter du contenu Exchange en tant que**, sélectionnez la troisième option, **un fichier PST contenant tous les messages dans un seul dossier**. Étant donné que certains résultats peuvent concerner des éléments provenant de la boîte aux lettres d'un autre utilisateur, cette option répertorie uniquement l'élément dans un seul dossier sans indiquer la boîte aux lettres réelle et est la meilleure option à utiliser lorsque vous Dédupliquez les résultats comme recommandé dans l'élément suivant. . Cette option permet également à la personne concernée de consulter les éléments dans l'ordre chronologique (les éléments sont triés par date d'envoi) sans avoir à naviguer dans la structure de dossiers d'origine de chaque élément.
+    b. Sous **Exporter le contenu Exchange en tant que**, sélectionnez la troisième option, **un fichier PST contenant tous les messages dans un dossier unique**. Étant donné que certains résultats peuvent concerner des éléments provenant de la boîte aux lettres d'un autre utilisateur, cette option répertorie uniquement l'élément dans un seul dossier sans indiquer la boîte aux lettres réelle et est la meilleure option à utiliser lorsque vous Dédupliquez les résultats comme recommandé dans l'élément suivant. . Cette option permet également à la personne concernée de consulter les éléments dans l'ordre chronologique (les éléments sont triés par date d'envoi) sans avoir à naviguer dans la structure de dossiers d'origine de chaque élément.
     
-    c. Sélectionnez **activer** l'option de déduplication pour exclure les messages électroniques en double. Cette option est recommandée, car la recherche intégrée effectue une recherche dans toutes les boîtes aux lettres de votre organisation. Par conséquent, si plusieurs copies du même message sont trouvées dans les boîtes aux lettres qui ont été recherchées, cette option signifie qu'une seule copie d'un message sera exportée. Cette option permet d'exporter des messages dans un fichier PST dans un dossier unique, ce qui permet aux utilisateurs les plus sollicités pour les demandes d'exportation DSR. Notez que le rapport d'exportation results. csv répertorie tous les emplacements où des messages en double ont été trouvés.
+    c. Sélectionnez **activer** la déduplication pour exclure les messages électroniques en double. Cette option est recommandée, car la recherche intégrée effectue une recherche dans toutes les boîtes aux lettres de votre organisation. Par conséquent, si plusieurs copies du même message sont trouvées dans les boîtes aux lettres qui ont été recherchées, cette option signifie qu'une seule copie d'un message sera exportée. Cette option permet d'exporter des messages dans un fichier PST dans un dossier unique, ce qui permet aux utilisateurs les plus sollicités pour les demandes d'exportation DSR. Notez que le rapport d'exportation results. csv répertorie tous les emplacements où des messages en double ont été trouvés.
     
     Vous pouvez également sélectionner l'option **inclure des versions pour les documents SharePoint** pour exporter toutes les versions des documents SharePoint et OneDrive. Cette opération exige que le contrôle de version soit activé pour les bibliothèques de documents. Cette option permet de s'assurer que toutes les données pertinentes sont exportées.
     
@@ -214,7 +214,7 @@ L'ordinateur que vous utilisez pour exporter des données doit répondre aux exi
     
 7. Cliquez sur le travail d'exportation que vous venez de créer pour afficher la page de menu volant d'exportation. Cette page affiche des informations sur la recherche, telles que la taille et le nombre total d'éléments à exporter, ainsi que le pourcentage des éléments qui ont été transférés vers une zone de stockage Azure. Cliquez **** sur Actualiser pour mettre à jour les informations d'état de téléchargement. 
     
-8. Sous **Exporter la clé**, cliquez sur **copier dans le presse-papiers**. Vous utiliserez cette clé à l'étape 11 pour télécharger les résultats de la recherche.
+8. Sous **Clé d’exportation**, cliquez sur **Copier dans le Presse-papiers**. Vous utiliserez cette clé à l'étape 11 pour télécharger les résultats de la recherche.
     
 9. Cliquez ![sur Exporter les résultats](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) de la recherche **Télécharger les résultats** en haut de la page de menu volant d'exportation. 
     
@@ -229,13 +229,13 @@ L'ordinateur que vous utilisez pour exporter des données doit répondre aux exi
   
 13. Cliquez sur **Démarrer** pour télécharger les résultats de recherche sur votre ordinateur. 
     
-    L' **outil d'exportation de découverte électronique** affiche des informations d'État sur le processus d'exportation, y compris une estimation du nombre (et de la taille) des éléments restants à télécharger. Une fois le processus d'exportation terminé, vous pouvez accéder aux fichiers à l'emplacement où ils ont été téléchargés. Pour plus d'informations sur les rapports inclus lorsque vous téléchargez des résultats de la recherche de contenu, voir la section [plus d'informations](export-search-results.md#more-information) dans «exporter les résultats de &amp; la recherche de contenu du centre de sécurité conformité Office 365». 
+    L’**outil d’exportation de découverte électronique** affiche l’état du processus d’exportation, ainsi qu’une estimation du nombre (et de la taille) d’éléments qui doivent encore être téléchargés. Une fois le processus d'exportation terminé, vous pouvez accéder aux fichiers à l'emplacement où ils ont été téléchargés. Pour plus d'informations sur les rapports inclus lorsque vous téléchargez des résultats de la recherche de contenu, voir la section [plus d'informations](export-search-results.md#more-information) dans «exporter les résultats de &amp; la recherche de contenu du centre de sécurité conformité Office 365». 
     
 Une fois les données exportées, les résultats de recherche et les rapports d'exportation se trouvent dans un dossier portant le même nom que le boîtier DSR. Les fichiers PST qui contiennent des éléments de boîte aux lettres se trouvent dans un sous-dossier nommé **Exchange**. Les documents et autres éléments provenant de sites se trouvent dans un sous-dossier nommé **SharePoint**. 
   
 ## <a name="optional-step-5-revise-the-built-in-search-query"></a>Module Étape 5: réViser la requête de recherche intégrée
 
-Après avoir exécuté la recherche intégrée, vous pouvez la modifier pour affiner l'étendue afin de renvoyer moins de résultats. Pour ce faire, vous pouvez ajouter des conditions à la requête. Une condition est logiquement connectée à la requête de mot-clé par l'opérateur **and** . Cela signifie qu'elle doit être renvoyée dans les résultats de la recherche, les éléments doivent répondre à la fois à la requête par mot clé et aux conditions que vous ajoutez. Voici comment les conditions permettent de limiter les résultats. Si vous ajoutez deux ou plusieurs conditions uniques à une requête de recherche (conditions qui spécifient différentes propriétés), ces conditions sont logiquement liées par l'opérateur **and** . Cela signifie que seuls les éléments qui satisfont à toutes les conditions (en plus de la requête de mot clé) sont renvoyés. Si vous ajoutez plusieurs valeurs (séparées par des virgules ou des points-virgules) à une seule condition, ces valeurs sont reliées par l'opérateur **ou** . Cela signifie que les éléments sont retournés s'ils contiennent l'une des valeurs spécifiées pour la propriété dans la condition. 
+Après avoir exécuté la recherche intégrée, vous pouvez la modifier pour affiner l'étendue afin de renvoyer moins de résultats. Pour ce faire, vous pouvez ajouter des conditions à la requête. Une condition est logiquement connectée à la requête de mot-clé par l'opérateur **and** . Cela signifie qu'elle doit être renvoyée dans les résultats de la recherche, les éléments doivent répondre à la fois à la requête par mot clé et aux conditions que vous ajoutez. Voici comment les conditions permettent de limiter les résultats. Si vous ajoutez deux ou plusieurs conditions uniques à une requête de recherche (conditions qui spécifient différentes propriétés), ces conditions sont logiquement liées par l'opérateur **and** . Cela signifie que seuls les éléments qui satisfont à toutes les conditions (en plus de la requête de mot clé) sont renvoyés. Si vous ajoutez plusieurs valeurs (séparées par des virgules ou des points-virgules) à une seule condition, ces valeurs sont reliées par l'opérateur **ou** . Les éléments renvoyés sont ceux qui contiennent l’une des valeurs spécifiées pour la propriété dans la condition. 
   
 Voici quelques exemples des conditions que vous pouvez ajouter à la requête de recherche intégrée d'un boîtier DSR. Le nom de la propriété réelle utilisée dans une requête de recherche est indiqué entre parenthèses.
   
@@ -263,11 +263,11 @@ Pour modifier les emplacements de contenu à Rechercher:
     
     ![Page de menu de modification des emplacements](media/56c033f6-6735-46ba-abb2-a263a2b79836.png)
   
-    a. le bouton bascule sous **Sélectionner tout** dans la boîte aux lettres en haut de la page de menu volant est sélectionné, ce qui indique que toutes les boîtes aux lettres sont recherchées. Pour affiner l'étendue de la recherche, cliquez sur le bouton bascule pour la désélectionner, puis cliquez sur **choisir les utilisateurs, les groupes ou les équipes** , puis choisissez des boîtes aux lettres spécifiques à rechercher.
+    a. Le bouton bascule sous **Sélectionner tout** dans la boîte aux lettres en haut de la page de menu volant est sélectionné, ce qui indique que toutes les boîtes aux lettres sont recherchées. Pour affiner l'étendue de la recherche, cliquez sur le bouton bascule pour la désélectionner, puis cliquez sur **choisir les utilisateurs, les groupes ou les équipes** , puis choisissez des boîtes aux lettres spécifiques à rechercher.
     
-    b. le bouton bascule sous **Sélectionner tout** dans la section sites au milieu de la page de menu volant est sélectionné, ce qui indique que tous les sites font l'objet d'une recherche. Pour limiter la recherche aux sites sélectionnés, désélectionnez le bouton bascule, puis cliquez sur **choisir les sites**. Vous devrez ajouter chaque site spécifique que vous souhaitez rechercher, y compris le compte OneDrive de l'objet de données.
+    b. Le bouton bascule sous **Sélectionner tout** dans la section sites au milieu de la page de lanceur est sélectionné, ce qui indique que tous les sites font l'objet d'une recherche. Pour limiter la recherche aux sites sélectionnés, désélectionnez le bouton bascule, puis cliquez sur **choisir les sites**. Vous devrez ajouter chaque site spécifique que vous souhaitez rechercher, y compris le compte OneDrive de l'objet de données.
     
-    c. le bouton bascule de la section dossiers publics Exchange est sélectionné, ce qui signifie que tous les dossiers publics Exchange font l'objet d'une recherche. Notez que vous ne pouvez rechercher que tous les dossiers publics Exchange ou aucun d'entre eux. Vous ne pouvez pas choisir des critères de recherche spécifiques.
+    c. Le bouton bascule dans la section dossiers publics Exchange est sélectionné, ce qui signifie que tous les dossiers publics Exchange font l'objet d'une recherche. Notez que vous ne pouvez rechercher que tous les dossiers publics Exchange ou aucun d'entre eux. Vous ne pouvez pas choisir des critères de recherche spécifiques.
     
 3. Si vous modifiez les emplacements de contenu dans la recherche intégrée, cliquez sur **Enregistrer &amp; exécuter** pour relancer la recherche. 
   
@@ -300,7 +300,7 @@ Lorsque vous exportez des données à partir de MyAnalytics et du service d'itin
 |**Application**|**GUID/nom du dossier**|
 |:-----|:-----|
 |MyAnalytics  <br/> |3c896ded-22c5-450F-91F6-3d1ef0848f6e  <br/> |
-|Service d’itinérance Office  <br/> |1caee58f-EB14-4a6b-9339-1fe2ddf6692b  <br/> |
+|Service d'itinérance Office  <br/> |1caee58f-EB14-4a6b-9339-1fe2ddf6692b  <br/> |
    
  **Pour rechercher et exporter des données du service d'itinérance MyAnalytics et Office:**
   
@@ -324,7 +324,7 @@ Lorsque vous exportez des données à partir de MyAnalytics et du service d'itin
     
 8. Cliquez **sur &amp; enregistrer**, puis nommez la recherche et enregistrez-la.
     
-    La recherche est démarrée.
+    La recherche démarre.
     
  **Pour exporter les données du service d'itinérance MyAnalytics et Office:**
   
@@ -336,11 +336,11 @@ Lorsque vous exportez des données à partir de MyAnalytics et du service d'itin
     
     ![Options d'exportation lors de l'exportation des données d'utilisation de MyAnalytics et du service d'itinérance Office](media/470a7d1e-eeae-4b42-95aa-15cb82ce2f68.png)
   
-    a. sous **options de sortie**, sélectionnez la première option ( **tous les éléments, sauf ceux dont le format n'est pas reconnu, sont chiffrés ou n'ont pas été indexés pour d'autres raisons**) pour exporter uniquement les éléments indexés.
+    a. Sous **options de sortie**, sélectionnez la première option ( **tous les éléments, sauf ceux dont le format n'est pas reconnu, sont chiffrés ou n'ont pas été indexés pour d'autres raisons**) pour exporter uniquement les éléments indexés.
     
-    b. sous **Exporter le contenu Exchange en tant que**, sélectionnez la deuxième option, **un fichier PST contenant tous les messages**.
+    b. Sous **Exporter le contenu Exchange en tant que**, sélectionnez la deuxième option, **un fichier PST contenant tous les messages**.
     
-    c. laissez les options d'exportation restantes non sélectionnées.
+    c. Laissez les options d'exportation restantes non sélectionnées.
     
 4. Une fois que vous avez choisi les paramètres d'exportation, cliquez sur **Exporter**.
     
@@ -350,7 +350,7 @@ Lorsque vous exportez des données à partir de MyAnalytics et du service d'itin
     
 6. Cliquez sur le travail d'exportation que vous venez de créer pour afficher la page de menu volant d'exportation. 
     
-7. Sous **Exporter la clé**, cliquez sur **copier dans le presse-papiers**. Vous utiliserez cette clé à l'étape 10 pour télécharger les résultats de la recherche.
+7. Sous **Clé d’exportation**, cliquez sur **Copier dans le Presse-papiers**. Vous utiliserez cette clé à l'étape 10 pour télécharger les résultats de la recherche.
     
 8. Cliquez ![sur Exporter les résultats](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) de la recherche **Télécharger les résultats** en haut de la page de menu volant d'exportation. 
     
@@ -365,7 +365,7 @@ Lorsque vous exportez des données à partir de MyAnalytics et du service d'itin
   
 12. Cliquez sur **Démarrer** pour télécharger les résultats de recherche sur votre ordinateur. 
     
-    L' **outil d'exportation de découverte électronique** affiche des informations d'État sur le processus d'exportation, y compris une estimation du nombre (et de la taille) des éléments restants à télécharger. Une fois le processus d'exportation terminé, ouvrez le fichier PST Exchange dans Outlook, puis accédez au dossier **ApplicationDataRoot** pour accéder aux sous-dossiers à MyAnalytics et au service d'itinérance. 
+    L’**outil d’exportation de découverte électronique** affiche l’état du processus d’exportation, ainsi qu’une estimation du nombre (et de la taille) d’éléments qui doivent encore être téléchargés. Une fois le processus d'exportation terminé, ouvrez le fichier PST Exchange dans Outlook, puis accédez au dossier **ApplicationDataRoot** pour accéder aux sous-dossiers à MyAnalytics et au service d'itinérance. 
     
     Comme expliqué précédemment, les fichiers JSON qui contiennent les données d'utilisation sont joints aux messages. Pour afficher un fichier JSON, cliquez sur un message, puis ouvrez le fichier JSON joint. 
   
@@ -425,4 +425,4 @@ Voici un processus de haut niveau permettant de rechercher des éléments que l'
 
   - Rechercher tous les dossiers publics Exchange
     
-  - Après avoir exécuté la recherche et terminé, vous pouvez exporter et télécharger les résultats de la recherche (comme décrit à l' [étape 4](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#step4)). Utilisez les paramètres suivants pour exporter des éléments partiellement indexés. 
+  - Après avoir exécuté la recherche et terminé, vous pouvez exporter et télécharger les résultats de la recherche (comme décrit à l' [étape 4](#step-4-export-the-data)). Utilisez les paramètres suivants pour exporter des éléments partiellement indexés. 
