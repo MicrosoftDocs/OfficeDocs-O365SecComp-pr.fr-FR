@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Déterminez si votre organisation implémentera des étiquettes dans le cadre de votre plan RGPD.
-ms.openlocfilehash: 79c68b8340209c3cc3e3a7081a4075c31a112e80
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 6886adaa09599b32eb2f3084efdea06fd5794af0
+ms.sourcegitcommit: ae7ebae8801a69a825a363443e2676379197de19
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789439"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30800296"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>Création d’un schéma de classification pour les données personnelles
 
@@ -41,9 +41,9 @@ Choisissez l'une des options suivantes.
 
 -   Ils sont plus simples à utiliser si votre organisation n’a pas encore (ou n’envisage pas d’implémenter) de plan de gouvernance de données plus large qui utilise des étiquettes.
 
--   Ils fonctionnent avec des règles de protection contre la perte de données (à l’instar des étiquettes Office).
+-   Fonctionne avec les règles DLP (comme les étiquettes de rétention).
 
--   À l’avenir, ils fonctionneront avec Cloud App Security et vous pourrez détecter les informations sensibles dans d’autres applications SaaS.
+-   Les types d’informations sensibles sont compatibles à Cloud App Security pour détecter les informations sensibles dans d’autres applications SaaS.
 
 ### <a name="option-2-use-sensitive-information-types--retention-labels"></a>Option 2 : utiliser des types d’informations sensibles + des étiquettes de rétention
 
