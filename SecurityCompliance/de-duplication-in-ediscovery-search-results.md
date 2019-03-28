@@ -14,18 +14,18 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: Vous avez la possibilité de dédupliquer les résultats de recherche de découverte électronique exportés de sorte qu'une seule copie d'un message électronique soit exportée même si plusieurs instances du même message ont pu être trouvées dans des boîtes aux lettres différentes.
-ms.openlocfilehash: f61c9e3caf7de3560a03f2b720822162ea98486d
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 7a4f156a68cafbffbb416c625e1e3ba432e6b069
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296657"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936724"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Déduplication dans les résultats de recherche eDiscovery
 
 Cet article décrit le fonctionnement de la déduplication des résultats de recherche de découverte électronique et explique les limites de l'algorithme de déduplication.
   
-Lorsque vous utilisez les outils eDiscovery d'Office 365 pour exporter les résultats d'une recherche de découverte électronique, vous avez la possibilité de dédupliquer les résultats qui sont exportés. Qu'est-ce que cela signifie? Lorsque vous activez la déduplication (par défaut, la déduplication n'est pas activée), une seule copie d'un message électronique est exportée même si plusieurs instances du même message ont pu être trouvées dans les boîtes aux lettres qui ont été recherchées. La déduplication vous permet de gagner du temps en réduisant le nombre d'éléments que vous devez examiner et analyser après l'exportation des résultats de la recherche. Toutefois, il est important de comprendre le fonctionnement de la déduplication et de savoir qu'il existe des limitations à l'algorithme susceptibles de provoquer la marque d'un élément unique en tant que doublon pendant le processus d'exportation.
+Lorsque vous utilisez les outils eDiscovery d'Office 365 pour exporter les résultats d'une recherche de découverte électronique, vous avez la possibilité de dédupliquer les résultats qui sont exportés. Scénario Lorsque vous activez la déduplication (par défaut, la déduplication n'est pas activée), une seule copie d'un message électronique est exportée même si plusieurs instances du même message ont pu être trouvées dans les boîtes aux lettres qui ont été recherchées. La déduplication vous permet de gagner du temps en réduisant le nombre d'éléments que vous devez examiner et analyser après l'exportation des résultats de la recherche. Toutefois, il est important de comprendre le fonctionnement de la déduplication et de savoir qu'il existe des limitations à l'algorithme susceptibles de provoquer la marque d'un élément unique en tant que doublon pendant le processus d'exportation.
   
 ## <a name="how-duplicate-messages-are-identified"></a>Identification des doublons de messages
 

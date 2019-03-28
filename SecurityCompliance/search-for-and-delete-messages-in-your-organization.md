@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Utilisez la fonctionnalité de recherche et de purge dans le centre de &amp; sécurité conformité Office 365 pour rechercher et supprimer un message électronique de toutes les boîtes aux lettres de votre organisation.
-ms.openlocfilehash: 15d67e42e4bdc63838f7ec1701d643391fa5c552
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 4c98e73f74867b933560f163e80e74fd7bbd2bc5
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296857"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935159"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>Rechercher et supprimer des messages électroniques dans votre organisation Office 365-aide de l'administrateur
 
 **Cet article est destiné aux administrateurs. Essayez-vous de trouver des éléments dans votre boîte aux lettres que vous souhaitez supprimer? Voir [Rechercher un message ou un élément avec recherche instantanée](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**|
    
-Vous pouvez utiliser la fonctionnalité de recherche de contenu dans Office 365 pour rechercher et supprimer un message électronique de toutes les boîtes aux lettres de votre organisation. Cela peut vous aider à détecter et supprimer les messages potentiellement dangereux ou à haut risque, tels que:
+Vous pouvez utiliser la fonctionnalité de recherche de contenu dans Office 365 pour rechercher et supprimer un message électronique de toutes les boîtes aux lettres de votre organisation. Cela peut vous aider à trouver et supprimer des messages électroniques potentiellement dangereux ou à haut risque, tels que les suivants :
   
 - Messages contenant des pièces jointes ou des virus dangereux
     
@@ -41,9 +41,9 @@ Vous pouvez utiliser la fonctionnalité de recherche de contenu dans Office 365 
 
 - Pour créer et exécuter une recherche de contenu, vous devez être membre du groupe de rôles **Gestionnaire eDiscovery** ou être doté du rôle de gestion de la **recherche de conformité** . Pour supprimer des messages, vous devez être membre du groupe de rôles gestion de l' **organisation** ou disposer du rôle de gestion de la **recherche et de la purge** . Pour plus d'informations sur l'ajout d'utilisateurs à un groupe de rôles, consultez [la rubrique accorder aux utilisateurs l'accès au centre de sécurité & de sécurité Office 365](grant-access-to-the-security-and-compliance-center.md).
     
-- Vous devez utiliser le centre de sécurité & Compliance Center PowerShell pour supprimer des messages. RePortez-vous à l' [étape 2](#step-2-connect-to-security-amp-compliance-center-powershell) pour obtenir des instructions sur la connexion.
+- Vous devez utiliser le centre de sécurité & Compliance Center PowerShell pour supprimer des messages. RePortez-vous à l' [étape 2](#step-2-connect-to-security--compliance-center-powershell) pour obtenir des instructions sur la connexion.
     
-- Vous pouvez supprimer un maximum de 10 éléments par boîte aux lettres à la fois. Étant donné que la fonctionnalité de recherche et de suppression des messages est conçue comme un outil de réponse aux incidents, cette limite permet de s'assurer que les messages sont rapidement supprimés des boîtes aux lettres. Cette fonctionnalité n'est pas destinée à nettoyer les boîtes aux lettres utilisateur. Pour supprimer plus de 10 éléments, vous pouvez utiliser la commande **Search-Mailbox-DeleteContent** dans Exchange Online PowerShell. Consultez la rubrique [Rechercher et supprimer des messages-aide de l'administrateur](search-for-and-delete-messagesadmin-help.md).
+- Vous pouvez supprimer un maximum de 10 éléments par boîte aux lettres à la fois. Sachant que la fonction de recherche et de suppression de messages est censée être un outil de réponse aux incidents, cette limite permet de s’assurer que les messages sont rapidement supprimés des boîtes aux lettres. Cette fonctionnalité n’est pas conçue pour nettoyer les boîtes aux lettres des utilisateurs. Pour supprimer plus de 10 éléments, vous pouvez utiliser la commande **Search-Mailbox-DeleteContent** dans Exchange Online PowerShell. Consultez la rubrique [Rechercher et supprimer des messages-aide de l'administrateur](search-for-and-delete-messagesadmin-help.md).
     
 - Le nombre maximal de boîtes aux lettres dans une recherche de contenu que vous pouvez supprimer des éléments dans en effectuant une opération de recherche et de purge est 50 000. Si la recherche de contenu (que vous créez à l' [étape 1](#step-1-create-a-content-search-to-find-the-message-to-delete)) comporte plus de 50 000 boîtes aux lettres source, l'action de vidage (que vous créez à l'étape 3) échouera. Consultez la section [plus d'informations](#more-information) pour obtenir une astuce sur l'exécution d'une opération de recherche et de purge sur plus de 50 000 boîtes aux lettres. 
     
@@ -51,7 +51,7 @@ Vous pouvez utiliser la fonctionnalité de recherche de contenu dans Office 365 
     
 ## <a name="step-1-create-a-content-search-to-find-the-message-to-delete"></a>Étape 1 : créer une recherche de contenu pour rechercher les messages à supprimer
 
-La première étape consiste à créer et exécuter une recherche de contenu pour rechercher le message que vous souhaitez supprimer des boîtes aux lettres de votre organisation. Vous pouvez créer la recherche à l'aide du &amp; Centre de sécurité conformité ou en exécutant les cmdlets **New-ComplianceSearch** et **Start-ComplianceSearch** . Les messages qui correspondent à la requête pour cette recherche sont supprimés en exécutant la commande **New-ComplianceSearchAction-purger** à l' [étape 3](#step-3-delete-the-message). Pour plus d'informations sur la création d'une recherche de contenu et sur la configuration de requêtes de recherche, consultez les rubriques suivantes: 
+La première étape consiste à créer et exécuter une recherche de contenu pour rechercher le message à supprimer des boîtes aux lettres de votre organisation. Vous pouvez créer la recherche à l'aide du &amp; Centre de sécurité conformité ou en exécutant les cmdlets **New-ComplianceSearch** et **Start-ComplianceSearch** . Les messages qui correspondent à la requête pour cette recherche sont supprimés en exécutant la commande **New-ComplianceSearchAction-purger** à l' [étape 3](#step-3-delete-the-message). Pour plus d’informations sur la création d’une recherche de contenu et la configuration des requêtes de recherche, consultez les rubriques suivantes : 
   
 - [Recherche de contenu dans Office 365](content-search.md)
     
@@ -122,13 +122,13 @@ Pour plus d'informations, consultez la rubrique [New-ComplianceSearchAction](htt
 
 - **Comment obtenir l'état de l'opération de recherche et de suppression?**
 
-    Exécutez la commande **Get-ComplianceSearchAction** pour obtenir l'état de l'opération de suppression. Notez que l'objet qui est créé lors de l'exécution de la cmdlet **New-ComplianceSearchAction** est nommé à l' `<name of Content Search>_Purge`aide de ce format:. 
+    Exécutez **Get-ComplianceSearchAction** pour obtenir l’état de l’opération de suppression. Notez que l'objet qui est créé lors de l'exécution de la cmdlet **New-ComplianceSearchAction** est nommé à l' `<name of Content Search>_Purge`aide de ce format:. 
     
-- **Que se passe-t-il une fois que vous avez supprimé un message?**
+- **Que se passe-t-il après la suppression d’un message ?**
 
    Un message qui a été supprimé avec `New-ComplianceSearchAction -Purge -PurgeType HardDelete` la commande est déplacé vers le dossier purges et n'est pas accessible par l'utilisateur. Une fois le message déplacé dans le dossier purges, le message est conservé pendant la durée de la période de rétention des éléments supprimés si la récupération d'élément unique est activée pour la boîte aux lettres. (Dans Office 365, la récupération d'élément unique est activée par défaut lors de la création d'une nouvelle boîte aux lettres.) Une fois la période de rétention des éléments supprimés expirée, le message est marqué pour suppression définitive et sera purgé à partir d'Office 365 la prochaine fois que la boîte aux lettres sera traitée par l'Assistant dossier géré. 
 
-   Si vous utilisez la `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` commande, les messages sont déplacés vers le dossier des suppressions dans le dossier éléments récupérables de l'utilisateur. Il n'est pas supprimé immédiatement d'Office 365. L'utilisateur peut récupérer les messages dans le dossier éléments supprimés pendant la durée en fonction de la période de rétention des éléments supprimés configurée pour la boîte aux lettres. Une fois cette période de rétention expirée (ou si l'utilisateur purge le message avant son expiration), le message est déplacé vers le dossier purges et l'utilisateur ne peut plus y accéder. Une fois dans le dossier purges, le message est conservé pendant la durée en fonction de la période de rétention des éléments supprimés configurée pour la boîte aux lettres si la récupération d'éléments uniques est activée pour la boîte aux lettres. (Dans Office 365, la récupération d'élément unique est activée par défaut lors de la création d'une nouvelle boîte aux lettres.) Une fois la période de rétention des éléments supprimés expirée, le message est marqué pour suppression définitive et sera vidé de Office 365 la prochaine fois que la boîte aux lettres sera traitée par l'Assistant dossier géré. 
+   Si vous utilisez la `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` commande, les messages sont déplacés vers le dossier des suppressions dans le dossier éléments récupérables de l'utilisateur. Il n'est pas supprimé immédiatement d'Office 365. L’utilisateur peut récupérer les messages dans le dossier Éléments supprimés pendant une durée basée sur la période de rétention des éléments supprimés configurée pour la boîte aux lettres. Après expiration de cette période de rétention (ou si l’utilisateur purge le message avant son expiration), le message est déplacé vers le dossier Purges et n’est plus accessible par l’utilisateur. Une fois dans le dossier purges, le message est conservé pendant la durée en fonction de la période de rétention des éléments supprimés configurée pour la boîte aux lettres si la récupération d'éléments uniques est activée pour la boîte aux lettres. (Dans Office 365, la récupération d'élément unique est activée par défaut lors de la création d'une nouvelle boîte aux lettres.) Une fois la période de rétention des éléments supprimés expirée, le message est marqué pour suppression définitive et sera vidé de Office 365 la prochaine fois que la boîte aux lettres sera traitée par l'Assistant dossier géré. 
     
 - **Que se passe-t-il si vous devez supprimer un message de plus de 50 000 boîtes aux lettres?**
 
@@ -140,8 +140,8 @@ Pour plus d'informations, consultez la rubrique [New-ComplianceSearchAction](htt
     
 - **Que se passe-t-il si un message est supprimé d'une boîte aux lettres qui a été placée en conservation inaltérable ou en conservation pour litige ou est affecté à une stratégie de rétention Office 365?**
 
-    Une fois que le message a été purgé et déplacé vers le dossier purges, le message est conservé jusqu'à l'expiration de la durée de la conservation. Si la durée de la conservation est illimitée, les éléments sont conservés jusqu'à ce que la conservation soit supprimée ou que la durée de la conservation soit modifiée.
+    Une fois que le message a été purgé et déplacé vers le dossier purges, le message est conservé jusqu'à l'expiration de la durée de la conservation. Si la durée de la conservation est illimitée, les éléments sont conservés jusqu'à la suppression de la conservation ou la modification de la durée de la conservation.
     
 - **Pourquoi les flux de travail de recherche et de suppression sont-ils divisés en différents groupes de rôles de centre de sécurité & de conformité?**
 
-    Comme expliqué précédemment, une personne doit être membre du groupe de rôles gestionnaire eDiscovery ou se voir attribuer le rôle de gestion de la recherche de conformité pour effectuer des recherches dans des boîtes aux lettres. Pour supprimer des messages, une personne doit être membre du groupe de rôles gestion de l'organisation ou se voir attribuer le rôle de gestion recherche et purge. Cela permet de contrôler qui peut effectuer des recherches dans les boîtes aux lettres de l'organisation et qui peut supprimer des messages. 
+    Comme indiqué précédemment, un utilisateur doit être membre du groupe de rôles de gestionnaire de découverte électronique ou disposer du rôle de gestion de recherche de conformité pour effectuer des recherches dans des boîtes aux lettres. Pour supprimer des messages, un utilisateur doit être membre du groupe de rôles de gestion de l’organisation ou disposer du rôle de gestion de recherche et de purge. Il est ainsi possible de déterminer qui peut consulter des boîtes aux lettres dans l’organisation et qui peut supprimer des messages. 

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilisez l'outil de recherche de contenu dans le centre &amp; de sécurité conformité Office 365 pour rechercher et exporter des données de conversation MicrosoftTeams (appelées conversations 1xN) pour les utilisateurs locaux dans un déploiement hybride Exchange.
-ms.openlocfilehash: 148a5766342fcdd52e0505a59729cad3d2993908
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: b277557285df6944217b493bf0c5a11759f9d76b
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296697"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935229"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Recherche de boîtes aux lettres en nuage pour les utilisateurs locaux dans Office 365
 
@@ -32,7 +32,7 @@ Voici les conditions requises et la limitation pour la configuration et la reche
     
 - La boîte aux lettres en nuage pour les utilisateurs locaux est utilisée uniquement aux données de conversation des équipes de magasin. Un utilisateur local ne peut pas se connecter à la boîte aux lettres en nuage ou accéder de quelque manière que ce soit. Il ne peut pas être utilisé pour envoyer ou recevoir des messages électroniques. 
     
-- Vous devez soumettre une demande au support Microsoft pour permettre à votre organisation de rechercher des données de conversation teams dans les boîtes aux lettres en nuage pour les utilisateurs locaux. RePortez-vous [à la rubrique classement d'une demande auprès du &amp; support Microsoft pour activer cette fonctionnalité dans le centre de sécurité conformité](#filing-a-request-with-microsoft-support-to-enable-this-feature-in-the-security-amp-compliance-center) dans cet article. 
+- Vous devez soumettre une demande au support Microsoft pour permettre à votre organisation de rechercher des données de conversation teams dans les boîtes aux lettres en nuage pour les utilisateurs locaux. Consultez la rubrique [classement d'une demande auprès du support Microsoft pour activer cette fonctionnalité](#filing-a-request-with-microsoft-support-to-enable-this-feature) dans cet article. 
     
  **Remarque:** Les conversations de canal teams sont toujours stockées dans la boîte aux lettres en nuage qui est associée à l'équipe. Cela signifie que vous pouvez utiliser la recherche de contenu pour rechercher des conversations de canal sans avoir besoin de classer une demande de support. Pour plus d'informations sur la recherche de conversations de canal dans Teams, consultez la rubrique [recherche de groupes Microsoft teams et Office 365](content-search.md#searching-microsoft-teams-and-office-365-groups).
   
@@ -46,7 +46,7 @@ Le graphique suivant illustre le flux de travail de la façon dont les données 
   
 En plus de cette nouvelle fonctionnalité, vous pouvez toujours utiliser la recherche de contenu pour rechercher, prévisualiser et exporter du contenu de teams dans le site SharePoint en nuage et la boîte aux lettres Exchange associée à chaque équipe Microsoft Team et 1xN teams données de conversation dans la boîte aux lettres Exchange Online pour utilisateurs en nuage.
 
-## <a name="filing-a-request-with-microsoft-support-to-enable-this-feature-in-the-security-amp-compliance-center"></a>Classement d'une demande auprès du support Microsoft pour activer cette fonctionnalité dans &amp; le centre de sécurité conformité
+## <a name="filing-a-request-with-microsoft-support-to-enable-this-feature"></a>Classement d'une demande auprès du support Microsoft pour activer cette fonctionnalité
 
 Vous devez classer une demande auprès du support Microsoft pour permettre à votre organisation d'utiliser l'interface utilisateur graphique dans &amp; le centre de sécurité conformité pour rechercher des données de conversation teams dans les boîtes aux lettres en nuage pour les utilisateurs locaux. Notez que cette fonctionnalité est disponible dans le centre de &amp; sécurité conformité d'Office 365 PowerShell. Vous n'êtes pas obligé de soumettre une demande de support pour utiliser PowerShell pour rechercher des données de conversation teams pour les utilisateurs locaux. 
   
@@ -94,7 +94,7 @@ Une fois que la fonctionnalité est activée, vous pouvez utiliser la recherche 
     
     - **Emplacements spécifiques** : sélectionnez cette option, puis cliquez sur **modifier** \> : choisir un utilisateur, des groupes ou des équipes pour effectuer des recherches dans des boîtes aux lettres spécifiques. Comme expliqué précédemment, le sélecteur d'emplacements vous permet de rechercher des utilisateurs locaux. 
     
-5. Enregistrez et exécutez la recherche. Tous les résultats de recherche provenant des boîtes aux lettres en nuage pour les utilisateurs locaux peuvent être prévisualisés comme n'importe quel autre résultat de recherche. En outre, vous pouvez exporter les résultats de la recherche (y compris les données de conversation de Teams) vers un fichier PST. Pour plus d'informations, voir: 
+5. Enregistrez et exécutez la recherche. Tous les résultats de recherche provenant des boîtes aux lettres en nuage pour les utilisateurs locaux peuvent être prévisualisés comme n'importe quel autre résultat de recherche. En outre, vous pouvez exporter les résultats de la recherche (y compris les données de conversation de Teams) vers un fichier PST. Pour plus d'informations, consultez les rubriques suivantes : 
     
     - [Créer une recherche](content-search.md#create-a-new-search)
     
@@ -151,7 +151,7 @@ Les boîtes aux lettres en nuage sont créées et stockées dans le même centre
   
  **Y a-t-il un risque de perdre les données de conversation de teams si la boîte aux lettres locale de l'utilisateur est migrée vers le nuage?**
   
-Nbre. Lorsque vous migrez la boîte aux lettres principale d'un utilisateur local vers le Cloud, les données de conversation de teams pour cet utilisateur seront migrées vers leur nouvelle boîte aux lettres principale en nuage.
+Non. Lorsque vous migrez la boîte aux lettres principale d'un utilisateur local vers le Cloud, les données de conversation de teams pour cet utilisateur seront migrées vers leur nouvelle boîte aux lettres principale en nuage.
   
  **Puis-je Appliquer une conservation eDiscovery ou des stratégies de rétention Office 365 à des utilisateurs locaux?**
   

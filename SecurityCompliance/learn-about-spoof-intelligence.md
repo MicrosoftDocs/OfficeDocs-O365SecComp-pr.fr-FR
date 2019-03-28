@@ -15,12 +15,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: Utilisez l'Assistant usurpation d'identité &amp; dans le centre de sécurité conformité de la page Paramètres anti-courrier indésirable pour examiner tous les expéditeurs qui usurpent l'identité des domaines qui font partie de votre organisation ou qui usurpent des domaines externes. L'intelligence d'usurpation d'identité est disponible dans le cadre d'Office 365 entreprise E5 ou séparément dans le cadre de la protection avancée contre les menaces et d'Exchange Online Protection.
-ms.openlocfilehash: fe963371326628e44593cc3f586c744de91e5e4d
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 0d18b5f011597266a3a975d49722e88b411c52d8
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276164"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936734"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>En savoir plus sur l’usurpation d’identité
 
@@ -60,20 +60,20 @@ Vous pouvez vérifier les expéditeurs qui usurpent votre domaine, ou des domain
 |**Paramètre**|**Description**|
 |:-----|:-----|
 |Expéditeur  <br/> |Également appelé véritable expéditeur. Il s'agit généralement du domaine à l'origine de l'usurpation du courrier électronique. Office 365 détermine le domaine de l'enregistrement DNS du pointeur (PTR) de l'adresse IP d'envoi qui usurpe l'identité de votre organisation. Si aucun domaine n'est trouvé, le rapport affiche à la place l'adresse IP de l'expéditeur.  <br/> |
-|Utilisateur usurpé  <br/> |Le compte d'utilisateur qui est usurpé par l'expéditeur.  <br/> Onglet **interne** uniquement. Ce champ contient une adresse de messagerie unique, ou si l'expéditeur usurpe plusieurs comptes d'utilisateur, il en contient **plusieurs**.<br/> Onglet **externe** uniquement. Les domaines externes contiennent uniquement un domaine d'envoi et ne contiennent pas d'adresse de messagerie complète.<br/> **Conseil! Pour les administrateurs avancés.** L'utilisateur usurpé est l'adresse de (5322. from) qui est également l'adresse de l'expéditeur par le client de messagerie. Il s'agit parfois de l'adresse d'en-tête. from. La validité de cette adresse n'est pas vérifiée par SPF.           |
+|Utilisateur usurpé  <br/> |Le compte d'utilisateur qui est usurpé par l'expéditeur.  <br/> Onglet **interne** uniquement. Ce champ contient une adresse de messagerie unique, ou si l'expéditeur usurpe plusieurs comptes d'utilisateur, il en contient **plusieurs**.  <br/> Onglet **externe** uniquement. Les domaines externes contiennent uniquement un domaine d'envoi et ne contiennent pas d'adresse de messagerie complète.  <br/> **TETE! Pour les administrateurs avancés.** L'utilisateur usurpé est l'adresse de (5322. from) qui est également l'adresse de l'expéditeur par le client de messagerie. Il s'agit parfois de l'adresse d'en-tête. from. La validité de cette adresse n'est pas vérifiée par SPF.           |
 |Nombre de messages  <br/> |Nombre de messages électroniques envoyés par l'expéditeur à votre organisation pour le compte de l'expéditeur ou des expéditeurs usurpés identifiés au cours des 30 derniers jours.  <br/> |
 |Nombre de plaintes de l'utilisateur  <br/> |Plaintes envoyées par des utilisateurs à l'expéditeur par vos utilisateurs au cours des 30 derniers jours. Les plaintes se présentent généralement sous la forme d'envois de courrier indésirable à Microsoft.  <br/> |
 |Résultat de l'authentification  <br/> |Cette valeur est **transmise** si les vérifications d'authentification d'expéditeurs Exchange Online Protection (EoP) transmises par l'expéditeur, comme SPF ou DKIM, **ont échoué** si l'expéditeur a échoué à la vérification de l'authentification de l'expéditeur EOP, ou Unknown si le résultat de ces contrôles n'est pas **** connus.  <br/> |
 |Décision définie par  <br/> |Indique si l'administrateur d'Office 365 ou la stratégie d'aide à la décision a déterminé si l'expéditeur est autorisé ou non à usurper l'identité de l'utilisateur.  <br/> |
 |Dernière vue  <br/> |Dernière date à laquelle un message a été reçu par cet expéditeur au nom de cet utilisateur usurpé.  <br/> |
-|Autorisé à usurper?  <br/> | Indique si cet expéditeur est autorisé à envoyer des courriers électroniques au nom de l'utilisateur usurpé. Les valeurs possibles sont les suivantes:<br/> **Valeur Oui** Toutes les adresses usurpées de cet expéditeur d'usurpation d'identité seront autorisées à usurper votre organisation.  <br/> **Non** Les adresses usurpées de cet expéditeur d'usurpation d'identité ne seront pas autorisées à usurper votre organisation. Au lieu de cela, les messages provenant de cet expéditeur seront marqués comme courrier indésirable par Office 365.<br/> **Certains utilisateurs** Si un expéditeur usurpe l'identité de plusieurs utilisateurs, certaines adresses usurpées de cet expéditeur seront autorisées à usurper votre organisation, le reste sera marqué comme courrier indésirable. Utilisez l'onglet **détaillé** pour afficher les adresses spécifiques.<br/> |
+|Autorisé à usurper?  <br/> | Indique si cet expéditeur est autorisé à envoyer des courriers électroniques au nom de l'utilisateur usurpé. Les valeurs admises sont les suivantes :  <br/> **Valeur Oui** Toutes les adresses usurpées de cet expéditeur d'usurpation d'identité seront autorisées à usurper votre organisation.  <br/> **Non** Les adresses usurpées de cet expéditeur d'usurpation d'identité ne seront pas autorisées à usurper votre organisation. Au lieu de cela, les messages provenant de cet expéditeur seront marqués comme courrier indésirable par Office 365.  <br/> **Certains utilisateurs** Si un expéditeur usurpe l'identité de plusieurs utilisateurs, certaines adresses usurpées de cet expéditeur seront autorisées à usurper votre organisation, le reste sera marqué comme courrier indésirable. Utilisez l'onglet **détaillé** pour afficher les adresses spécifiques.  <br/> |
 |Type d'usurpation  <br/> |Cette valeur est **interne** si le domaine est l'un des domaines configurés de votre organisation, sinon la valeur est **externe**.  <br/> |
    
  **Pour gérer les expéditeurs qui usurpent votre domaine à l'aide du &amp; Centre de sécurité conformité**
   
 1. Accédez au [Centre de &amp; sécurité conformité](https://protection.office.com).
     
-2. Connectez-vous à Office 365 avec votre compte professionnel ou scolaire. Votre compte doit disposer d'informations d'identification d'administrateur dans votre organisation Office 365.
+2. Connectez-vous à Office 365 avec votre compte professionnel ou scolaire. Votre compte doit disposer d'informations d'identification d'administrateur dans votre organisation Office 365.
     
 3. Dans le centre &amp; de sécurité conformité, développez **protection contre le courrier**indésirable de la **stratégie** \> de **gestion** \> des menaces.  
   
@@ -116,7 +116,7 @@ Même si la stratégie d'usurpation d'identité apparaît sous la stratégie ant
   
 1. Accédez au [Centre de &amp; sécurité conformité](https://protection.office.com).
     
-2. Connectez-vous à Office 365 avec votre compte professionnel ou scolaire. Votre compte doit disposer d'informations d'identification d'administrateur dans votre organisation Office 365.
+2. Connectez-vous à Office 365 avec votre compte professionnel ou scolaire. Votre compte doit disposer d'informations d'identification d'administrateur dans votre organisation Office 365.
     
 3. Dans le centre &amp; de sécurité conformité, développez **protection contre le hameçonnage**de la **stratégie** \> de **gestion** \> des menaces. 
     
@@ -140,11 +140,11 @@ Soyez très à la protection contre l'usurpation d'identité et la protection an
 Pour les administrateurs Office 365 plus avancés, vous pouvez également effectuer les vérifications suivantes:
     
     
-- Passez en revue votre configuration SPF (Sender Policy Framework). Pour une présentation rapide de SPF et pour qu'il soit configuré rapidement, reportez-vous à la rubrique [set up SPF in Office 365 pour éviter l'usurpation](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx). Pour mieux comprendre comment Office 365 utilise SPF, ou pour résoudre des problèmes ou des déploiements non standard tels que des déploiements hybrides, commencez par [Comment office 365 utilise SPF (Sender Policy Framework) pour éviter l'usurpation](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx).
+- Passez en revue votre configuration SPF (Sender Policy Framework). Pour obtenir une brève présentation de SPF et réussir à le configurer rapidement, voir [Set up SPF in Office 365 to help prevent spoofing](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx). Pour comprendre comment Office 365 utilise SPF ou pour résoudre des problèmes relatifs à des déploiements non standard, tels que des déploiements hybrides, commencez par [How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx).
     
-- Passez en revue votre configuration DKIM (DomainKeys Identified Identified Mail). Vous devez utiliser DKIM en plus de SPF et de DMARC pour empêcher les usurpateurs d'envoyer des messages qui semblent provenir de votre domaine. DKIM vous permet d'ajouter une signature numérique aux messages électroniques dans l'en-tête du message. Pour plus d'informations, consultez [la rubrique use DKIM pour valider les messages sortants envoyés à partir de votre domaine dans Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx).
+- Passez en revue votre configuration DKIM (DomainKeys Identified Identified Mail). Vous devez utiliser DKIM en plus de SPF et DMARC pour empêcher les usurpateurs d'envoyer des messages qui semblent provenir de votre domaine. DKIM vous permet d'ajouter une signature numérique aux messages électroniques dans l'en-tête du message. Pour plus d'informations, consultez [la rubrique use DKIM pour valider les messages sortants envoyés à partir de votre domaine dans Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx).
     
-- Passez en revue votre configuration d'authentification de message basée sur un domaine, de création de rapports et de conformité (DMARC). L'implémentation de DMARC avec SPF et DKIM offre une protection supplémentaire contre l'usurpation et le courrier électronique de hameçonnage. DMARC permet de recevoir des systèmes de messagerie qui déterminent la marche à suivre pour les messages envoyés à partir de votre domaine et qui échouent aux contrôles SPF ou DKIM. Pour plus d'informations, consultez la rubrique [utiliser DMARC pour valider le courrier électronique dans Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
+- Passez en revue votre configuration d'authentification de message basée sur un domaine, de création de rapports et de conformité (DMARC). L'implémentation de DMARC avec SPF et DKIM fournit une protection supplémentaire contre l'usurpation et les courriers de hameçonnage. DMARC permet aux systèmes de messagerie de réception de déterminer ce qu'ils doivent faire des messages envoyés à partir de votre domaine qui sont rejetés par les contrôles de SPF ou de DKIM. Pour plus d'informations, consultez la rubrique [utiliser DMARC pour valider le courrier électronique dans Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
     
 - Utilisez l'applet de commande Windows PowerShell [Get-PhishFilterPolicy](https://technet.microsoft.com/en-us/library/mt735158%28v=exchg.160%29.aspx) pour collecter des données détaillées sur des expéditeurs usurpés, générer des listes verte et rouge et vous aider à déterminer comment générer des enregistrements DNS SPF, DKIM et DMARC plus complets sans avoir besoin de votre courrier légitime les filtres de courrier indésirable externes sont détectés. Pour plus d'informations, consultez la rubrique fonctionnement [de la protection contre l'usurpation d'identité dans Office 365](https://blogs.msdn.microsoft.com/tzink/2016/02/23/how-antispoofing-protection-works-in-office-365/).
     

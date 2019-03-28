@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Vous avez une question sur la façon dont les nouvelles fonctionnalités de protection des messages dans Office 365 fonctionnent? Recherchez une réponse ici.
-ms.openlocfilehash: 651d3f5953f0a6864259ed3a0c8ecde79f40d631
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 2c140ef476b5fe19ef3655b062a3f197d36222e7
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217114"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936784"
 ---
 # <a name="office-365-message-encryption-faq"></a>FAQ sur le chiffrement de messages Office 365
 
@@ -64,7 +64,7 @@ Pour plus d'informations sur BYOK, consultez [la rubrique planification et impl�
   
 ## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>OME et BYOK avec Azure information protection modifient l'approche de Microsoft pour les demandes de données tierces telles que les demandes?
 
-Nbre. OME et l'option permettant de fournir et de contrôler vos propres clés de chiffrement, appelées BYOK, à partir d'Azure information protection n'ont pas été conçues pour répondre aux apports à l'application de la Loi. OME, avec BYOK pour Azure information protection, a été conçu pour les clients orientés sur la conformité. Microsoft prend des demandes tierces de données client très sérieusement. En tant que fournisseur de services Cloud, nous sommes toujours le partisan de la confidentialité des données client. Dans le cas où nous obtenons une demande, nous tentons toujours de rediriger la tierce partie vers le client pour obtenir les informations. (Lisez le blog de Brad Smith: [protection des données client de l'espionnage public](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Nous publions régulièrement des informations détaillées sur la demande que nous recevons. Pour plus d'informations sur les demandes de données tierces, consultez la rubrique relative à la [réponse aux demandes d'autorisation du gouvernement et de la loi pour accéder aux données client](https://www.microsoft.com/en-us/trustcenter/privacy/govt-requests-for-data) dans le centre de gestion de la confidentialité Microsoft. Consultez également la section «Divulgation des données client» dans les [services en ligne (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx).
+Non. OME et l'option permettant de fournir et de contrôler vos propres clés de chiffrement, appelées BYOK, à partir d'Azure information protection n'ont pas été conçues pour répondre aux apports à l'application de la Loi. OME, avec BYOK pour Azure information protection, a été conçu pour les clients orientés sur la conformité. Microsoft prend des demandes tierces de données client très sérieusement. En tant que fournisseur de services Cloud, nous sommes toujours le partisan de la confidentialité des données client. Dans le cas où nous obtenons une demande, nous tentons toujours de rediriger la tierce partie vers le client pour obtenir les informations. (Lisez le blog de Brad Smith: [protection des données client de l'espionnage public](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Nous publions régulièrement des informations détaillées sur la demande que nous recevons. Pour plus d'informations sur les demandes de données tierces, consultez la rubrique relative à la [réponse aux demandes d'autorisation du gouvernement et de la loi pour accéder aux données client](https://www.microsoft.com/en-us/trustcenter/privacy/govt-requests-for-data) dans le centre de gestion de la confidentialité Microsoft. Consultez également la section «Divulgation des données client» dans les [services en ligne (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx).
   
 ## <a name="how-is-this-feature-related-to-legacy-office-365-message-encryption-ome-and-information-rights-management-irm-features"></a>En quoi cette fonctionnalité est-elle associée aux fonctionnalités de chiffrement de messages Office 365 (OME) et de gestion des droits relatifs à l'information (IRM) héritées?
 
@@ -90,7 +90,7 @@ Vous pouvez toujours utiliser la version précédente de OME, elle ne sera pas d
   
 ## <a name="my-organization-uses-active-directory-rights-management-can-i-use-this-functionality"></a>Mon organisation utilise Active Directory Rights Management, puis-je utiliser cette fonctionnalité?
 
-Nbre. Si vous utilisez Exchange Online avec Active Directory Rights Management Services (AD RMS), vous ne pouvez pas activer immédiatement ces nouvelles fonctionnalités. Au lieu de cela, vous devez d'abord [migrER AD RMS vers Azure information protection](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) . 
+Non. Si vous utilisez Exchange Online avec Active Directory Rights Management Services (AD RMS), vous ne pouvez pas activer immédiatement ces nouvelles fonctionnalités. Au lieu de cela, vous devez d'abord [migrER AD RMS vers Azure information protection](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) . 
   
 ## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>Mon organisation a un déploiement hybride Exchange. Puis-je utiliser cette fonctionnalité?
 
@@ -116,11 +116,11 @@ Si vous joignez un fichier PDF à un message protégé, le message lui-même est
   
 ## <a name="are-onedrive-for-business-attachments-supported"></a>Les pièces jointes OneDrive entreprise sont-elles prises en charge?
 
-Pas encore. Les pièces jointes OneDrive entreprise ne sont pas prises en charge et les utilisateurs finaux ne peuvent pas chiffrer un message qui contient une pièce jointe de OneDrive entreprise sur le Cloud.
+Not yet. Les pièces jointes OneDrive entreprise ne sont pas prises en charge et les utilisateurs finaux ne peuvent pas chiffrer un message qui contient une pièce jointe de OneDrive entreprise sur le Cloud.
   
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>Puis-je chiffrer automatiquement les messages en configurant des stratégies?
 
-OK. Utilisez des règles de flux de messagerie dans Exchange Online pour chiffrer automatiquement un message en fonction de certaines conditions. Par exemple, vous pouvez créer des stratégies basées sur l'ID de destinataire, le domaine du destinataire ou le contenu dans le corps ou l'objet du message. Consultez la rubrique [définir des règles de flux de messagerie pour chiffrer les messages électroniques dans Office 365.](define-mail-flow-rules-to-encrypt-email.md)
+Oui. Utilisez des règles de flux de messagerie dans Exchange Online pour chiffrer automatiquement un message en fonction de certaines conditions. Par exemple, vous pouvez créer des stratégies basées sur l'ID de destinataire, le domaine du destinataire ou le contenu dans le corps ou l'objet du message. Consultez la rubrique [définir des règles de flux de messagerie pour chiffrer les messages électroniques dans Office 365.](define-mail-flow-rules-to-encrypt-email.md)
   
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>Puis-je chiffrer automatiquement les messages en configurant des stratégies de protection contre la perte de &amp; données (DLP) via le centre de sécurité conformité?
 
@@ -140,6 +140,6 @@ Pas pour le moment, mais bientôt disponible.
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>Puis-je utiliser le chiffrement de messages avec des fonctionnalités de conformité telles que eDiscovery?
 
-OK. Tous les messages électroniques chiffrés sont détectables par les fonctionnalités de conformité d'Office 365.
+Oui. Tous les messages électroniques chiffrés sont détectables par les fonctionnalités de conformité d'Office 365.
   
 

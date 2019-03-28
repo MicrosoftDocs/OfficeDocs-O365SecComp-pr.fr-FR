@@ -5,16 +5,16 @@ author: robmazz
 manager: laurawi
 ms.audience: Admin
 ms.topic: tutorial
-ms.service: o365-administration
+ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 description: En savoir plus sur les principes de sécurité, les meilleures pratiques et les meilleures pratiques pour la modernisation de votre organisation.
-ms.openlocfilehash: 98aa7b6d66e7c14cf9f855c2c133244fd732488b
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: cdf194e6d04a8085ada6d9d7571a95b77a79a1ee
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/27/2019
-ms.locfileid: "30926724"
+ms.locfileid: "30935189"
 ---
 # <a name="chief-information-security-officer-ciso-workshop"></a>Atelier de directeur de la sécurité des informations (CISO)
 

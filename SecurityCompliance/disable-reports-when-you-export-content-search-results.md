@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 description: Modifiez le Registre Windows sur votre ordinateur local pour désactiver les rapports lorsque vous exportez les résultats d'une recherche de contenu à &amp; partir du centre de Comliance de sécurité Office 365. La désActivation de ces rapports permet d'accélérer le temps de téléchargement et d'économiser de l'espace disque.
-ms.openlocfilehash: 0be2be18eaccb618a49e1b58a5c0e53d0a339d1e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f08f5e7143022591d38bda787301e71ae80fb3d3
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213474"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936714"
 ---
 # <a name="disable-reports-when-you-export-content-search-results-in-the-office-365-security-amp-compliance-center"></a>Désactiver les rapports lorsque vous exportez des résultats de recherche de &amp; contenu dans le centre de sécurité conformité Office 365
 
@@ -97,7 +97,7 @@ Si vous avez désactivé les rapports results. csv et manifest. XML en créant l
   
 Les fichiers Results. csv et manifest. XML contiennent des informations supplémentaires sur le contenu qui a été exporté.
   
-- **Results. csv** document Excel qui contient des informations sur chaque élément téléchargé en tant que résultat de la recherche. Pour le courrier électronique, le journal des résultats contient des informations sur chaque message, notamment: 
+- **Results. csv** document Excel qui contient des informations sur chaque élément téléchargé en tant que résultat de la recherche. Pour le courrier électronique, le journal des résultats contient des informations sur chaque message, y compris : 
     
   - l’emplacement du message dans la boîte aux lettres source (notamment si le message est dans la boîte aux lettres principale ou d’archivage) ;
     
