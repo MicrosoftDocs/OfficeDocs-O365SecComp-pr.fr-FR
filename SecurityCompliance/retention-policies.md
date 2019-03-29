@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à seulement quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou seulement au contenu remplissant certaines conditions
-ms.openlocfilehash: 82125d13adfb42706a44feeaca3dfb85e06163f6
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: b07adf61f63e683de4f5868c227741dc957ffd68
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455446"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935299"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -244,7 +244,7 @@ Nous continuons de travailler sur la rétention dans Teams, et des fonctionnalit
     
 - **Teams n’est pas inclus dans une stratégie mise en place à l’échelle de l’organisation** Si vous créez une stratégie mise en place à l’échelle de l’organisation, Teams n’est pas inclus, car il nécessite une stratégie de rétention distincte. 
     
-- **Teams ne prend pas en charge la rétention avancée** Lorsque vous créez une stratégie de rétention, si vous choisissez les [paramètres avancés qui appliquent une stratégie uniquement au contenu qui répond à certaines conditions](retention-policies.md#advanced), l’emplacement Teams n’est pas disponible. À ce stade, la rétention dans Teams s’applique à tout le contenu de la conversation et du message de canal.
+- **Teams ne prend pas en charge la rétention avancée** Lorsque vous créez une stratégie de rétention, si vous choisissez les [paramètres avancés qui appliquent une stratégie uniquement au contenu qui répond à certaines conditions](#advanced-settings-that-apply-a-policy-only-to-content-that-meets-certain-conditions), l’emplacement Teams n’est pas disponible. À ce stade, la rétention dans Teams s’applique à tout le contenu de la conversation et du message de canal.
     
 - **Le contenu Teams doit avoir été créé il y a 30 jours ou plus pour pouvoir être supprimé** À ce stade, la création d’une stratégie pour supprimer le contenu Teams de moins de 30 jours n’est pas prise en charge. Si vous souhaitez que cette stratégie soit appliquée au contenu Teams, indiquez une période de rétention égale ou supérieure à 30 jours. 
     
@@ -252,7 +252,7 @@ Nous continuons de travailler sur la rétention dans Teams, et des fonctionnalit
     
 Dans une équipe, les fichiers partagés dans une conversation sont stockés dans le compte OneDrive de l’utilisateur qui a partagé le fichier. Les fichiers chargés sur des canaux sont stockés dans le site SharePoint pour l’équipe en question. Par conséquent, pour conserver ou supprimer des fichiers dans une équipe, vous devez créer une stratégie de rétention qui s’applique aux emplacements SharePoint et OneDrive. Si vous voulez appliquer une stratégie aux fichiers d’une équipe spécifique, vous pouvez choisir le site SharePoint de l’équipe et les comptes OneDrive des utilisateurs au sein de l’équipe.
   
-Une stratégie de rétention qui s’applique à Teams peut utiliser le [Verrouillage de conservation](retention-policies.md#locking).
+Une stratégie de rétention qui s’applique à Teams peut utiliser le [Verrouillage de conservation](#locking-a-retention-policy).
   
 ![Emplacements Teams pour les conversations et les messages de canal](media/127345da-e802-4b3a-afc7-6e354dc3f409.png)
   

@@ -3,7 +3,7 @@ title: Vue d’ensemble des rétentions basées sur des événements
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 5/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dans Office 365, vous pouvez baser une période de rétention sur l’occurrence d’un type spécifique d’événement grâce aux étiquettes. L’événement déclenche le début de la période de rétention, et les actions de rétention d’une étiquette sont appliquées sur tout le contenu portant l’étiquette en question pour ce type d’événement. Les rétentions basées sur des événements sont généralement utilisées dans le cadre d’un processus de gestion des enregistrements.
-ms.openlocfilehash: 129f957585e9df5a959e34187a0edc384c68c448
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: ceb4b2fde10e43235d8d310243fe56cce1a2b240
+ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455106"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30866360"
 ---
 # <a name="overview-of-event-driven-retention"></a>Vue d’ensemble des rétentions basées sur des événements
 
