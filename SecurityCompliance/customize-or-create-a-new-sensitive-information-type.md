@@ -18,12 +18,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Découvrez comment modifier ou créer des types d’informations sensibles Office 365 pour le RGPD.
-ms.openlocfilehash: c55828572760485eb1d197178d918aee7acaa0b6
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: 6810a6b6d9b0ea34ab11cc778c32a76d556d7a17
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373935"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955217"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Personnalisation ou création d’un type d’informations sensibles
 
@@ -37,7 +37,7 @@ Cet article fournit trois exemples qui décrivent comment modifier ou créer de 
 
 Voir également :
 
-- [Créer un type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité Office 365 PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Créer un type d’informations sensibles personnalisé à l’aide de PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 
 - [Personnaliser un type d’informations sensibles intégré](customize-a-built-in-sensitive-information-type.md)
 
@@ -143,7 +143,7 @@ Utilisez ces ressources pour formuler et optimiser des requêtes à l’aide de 
 
 -   [Référence de syntaxe de langage de requête de mot-clé (KQL) (DMC)](https://docs.microsoft.com/fr-FR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
--   [Exécuter une recherche de contenu dans le Centre de sécurité et de conformité Office 365](https://support.office.com/fr-FR/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
+-   [Exécuter une Recherche de Contenu](https://support.office.com/fr-FR/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
 
 La recherche de contenu fournit une autre ressource pour vous aider à développer des requêtes KQL appropriées et des types d’informations sensibles : les mots-clés. Pourquoi utiliser la liste de mots-clés ? Vous pouvez obtenir des statistiques indiquant le nombre d’éléments qui correspondent à chaque mot-clé. Cela peut vous aider à identifier rapidement les mots-clés les plus (et les moins) efficaces. Pour plus d’informations sur les statistiques de recherche, reportez-vous à la rubrique relative à l’[affichage des statistiques de mots-clés pour les résultats de la recherche de contenu](https://support.office.com/fr-FR/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
 

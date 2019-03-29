@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez comment rechercher et localiser des données personnelles dans Office 365.
-ms.openlocfilehash: 3fa35b168d9a7e89ead437cba33637b478bb34c7
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: 3c2981116e2abb3518a132084a697618ef3261cc
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373875"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955177"
 ---
 # <a name="search-for-and-find-personal-data"></a>Recherche et localisation des données personnelles
 
@@ -72,13 +72,12 @@ Si nécessaire, ajoutez des paramètres à la requête afin de réduire les faux
 </tbody>
 </table>
 
-Prochainement : vous pourrez créer et modifier des types d’informations sensibles dans une nouvelle interface utilisateur dans le Centre de sécurité et de conformité. Vous pouvez voir les résultats correspondants de façon dynamique et optimiser les types d’informations sensibles pour répondre à vos besoins.
 
 ## <a name="search-for-sensitive-information-types-using-content-search"></a>Recherche des types d’informations sensibles à l’aide de la recherche de contenu
 
-Commencez la recherche de données personnelles en utilisant les types d’informations sensibles inclus dans Office 365. Ils sont répertoriés dans le Centre de sécurité et de conformité sous Classification.
+Commencer la recherche en utilisant les types d’informations sensibles incluses dans Office 365 pour les données personnelles. Celles-ci sont répertoriées sous Classification dans le centre de sécurité et le centre de conformité.
 
-Cette rubrique inclut la liste des types d’informations sensibles actuels qui s’appliquent aux citoyens de l’Union européenne. Utilisez-les comme point de départ. Vérifiez fréquemment le Centre de sécurité et de conformité pour savoir s’il existe de nouveaux ajouts relatifs à la conformité au RGPD.
+Cette rubrique inclut une liste de certains types d’informations sensibles qui s’appliquent aux citoyens dans l’Union européenne. Vérifiez le centre de sécurité ou le centre de conformité pour les nouveaux ajouts qui peuvent vous aider avec la mise en conformité RGPD.
 
 Consultez également l’article relatif à la [liste des types d’informations sensibles et à ce qu’ils recherchent](https://support.office.com/fr-FR/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b).
 
