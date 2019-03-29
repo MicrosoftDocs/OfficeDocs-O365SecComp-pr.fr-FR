@@ -13,18 +13,18 @@ search.appverid:
 - MOE150
 ms.assetid: 5f02d20f-b9aa-4b2f-ad2d-506a4a3c4540
 description: "Avec la sécurité des applications Cloud d'Office 365, les actions de gouvernance que vous pouvez effectuer sont la suspension ou l'annulation de l'interruption d'un compte d'utilisateur. "
-ms.openlocfilehash: 3650a5304af0440dc537610994c4bd827f599989
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 10da1385f850fadf077b4e3f9e3a00e9e4629fdd
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215094"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862446"
 ---
 # <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>Suspendre ou restaurer un compte d’utilisateur dans la sécurité des applications cloud Office 365
 
 |Évaluation * *\>**|Planification * *\>**|Déploiement * *\>**|Utilisation * * * *|
 |:-----|:-----|:-----|:-----|
-|[Commencer l'évaluation](office-365-cas-overview.md) <br/> |[Commencer la planification](get-ready-for-office-365-cas.md) <br/> |[Démarrer le déploiement](turn-on-office-365-cas.md) <br/> |Vous êtes là!  <br/> [Étapes suivantes](suspend-or-restore-an-account-in-ocas.md#nextsteps) <br/> |
+|[Commencer l'évaluation](office-365-cas-overview.md) <br/> |[Commencer la planification](get-ready-for-office-365-cas.md) <br/> |[Démarrer le déploiement](turn-on-office-365-cas.md) <br/> |Vous êtes là!  <br/> [Étapes suivantes](#next-steps)<br/> |
    
 Supposons que vous recevez une alerte indiquant qu'un des comptes d'utilisateur de votre organisation pour Office 365 a été compromis. Supposons que vous ayez reçu une alerte indiquant un problème lié à un compte d'utilisateur. Avec la sécurité des applications Cloud d'Office 365, vous pouvez suspendre un compte d'utilisateur et le restaurer ultérieurement après avoir étudié les alertes que vous recevez.
   

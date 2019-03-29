@@ -14,12 +14,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur les suivis de menace, y compris les nouveaux suivis, pour aider votre organisation à répondre aux préoccupations de sécurité.
-ms.openlocfilehash: 6870e8d613dbd5d72f20e96be9615712bac711a9
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 4a12a1cfe68f8ebcfae640a65d0eca68e36fb04c
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693073"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862526"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Suivi des menaces-nouveautés et remarquables
 
@@ -38,7 +38,7 @@ La plupart des pages de suivi incluent des numéros de tendance mis à jour rég
   
 ![Exemple d'informations sur la campagne dans l'Explorateur](media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
-Les suivis ne sont que quelques-unes des nombreuses fonctionnalités que vous obtenez avec [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md). Les analyseurs de [](threat-trackers.md#notey)menace incluent des suivis remarquables, des suivis des [tendances](threat-trackers.md#trending), des [requêtes suivies](threat-trackers.md#trackedq)et des [requêtes enregistrées](threat-trackers.md#savedq).
+Les suivis ne sont que quelques-unes des nombreuses fonctionnalités que vous obtenez avec [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md). Les analyseurs de menace incluent les [suivis Noteworth](#noteworthy-trackers), les suivis des [tendances](#trending-trackers), les [requêtes suivies](#tracked-queries)et les [requêtes enregistrées](#saved-queries).
   
 Pour afficher et utiliser vos suivis de menace pour votre organisation, accédez au centre &amp; de sécurité conformité[https://protection.office.com](https://protection.office.com)() et sélectionnez **Threat Management** \> **Threat Tracker**.
   

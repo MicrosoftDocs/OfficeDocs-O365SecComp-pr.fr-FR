@@ -15,12 +15,12 @@ ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
 description: Découvrez l'enquête et la réponse aux menaces Office 365 et comment commencer.
-ms.openlocfilehash: f30a3c8007d2643a67f59d9421496e9ae0bc6e8c
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: a04b39ecb11c33baa647bb9716af9ff12aed755e
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693133"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862518"
 ---
 # <a name="get-started-with-threat-investigation-and-response-office-365-advanced-threat-protection-plan-2"></a>Prise en main de l'enquête et de la réponse aux menaces (plan Office 365 Advanced Threat Protection Plan 2)
 
@@ -37,7 +37,7 @@ Les fonctionnalités d'enquête et de réponse aux menaces aident à fournir des
   
 ## <a name="get-acquainted-with-the-threat-dashboard-explorer-and-incidents"></a>Se familiariser avec le tableau de bord, l'Explorateur et les incidents des menaces
 
-Ces fonctionnalités d'enquête et de réponse aux menaces figurent &amp; dans le centre de sécurité conformité, sous la forme d'un ensemble d'outils et de flux de travail de réponse, dont le [tableau de bord des menaces](get-started-with-ti.md#dashboard), l'Explorateur de [menaces](get-started-with-ti.md#explorer), les [incidents](get-started-with-ti.md#incidents), les [attaques Simulator](attack-simulator.md)et des enquêtes automatiques _AMP_ réponse.
+Ces fonctionnalités d'enquête et de réponse aux menaces figurent &amp; dans le centre de sécurité conformité, sous la forme d'un ensemble d'outils et de flux de travail de réponse, dont le [tableau de bord des menaces](#threat-dashboard), l'Explorateur de [menaces](#threat-explorer), les [incidents](get-started-with-ti.md#incidents), les [attaques Simulator](attack-simulator.md)et des enquêtes automatiques _AMP_ réponse.
   
 ### <a name="threat-dashboard"></a>Tableau de bord des menaces
 
@@ -47,7 +47,7 @@ Utilisez le tableau de bord des menaces (également appelé tableau de [bord de 
   
 Pour afficher et utiliser ce tableau de bord, dans &amp; le centre de sécurité conformité, accédez au **tableau de bord** **gestion** \> des menaces.
   
-### <a name="threat-explorer"></a>Explorateur de menaces
+### <a name="threat-explorer"></a>Threat Explorer
 
 Utilisez l'Explorateur de menaces (il s'agit également de l'Explorateur) pour analyser les menaces, voir le volume des attaques au fil du temps et analyser les données par familles de menaces, infrastructure d'agresseur, et bien plus encore. L'Explorateur de menaces est le point de départ du flux de travail d'enquête d'un analyste de la sécurité.
   

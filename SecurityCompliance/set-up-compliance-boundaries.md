@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Utilisez des limites de conformité pour créer des limites logiques au sein d'une organisation Office 365 qui contrôlent les emplacements de contenu utilisateur qu'un gestionnaire eDiscovery peut rechercher. Les limites de conformité utilisent le filtrage des autorisations de recherche (également appelé filtres de sécurité de conformité) pour contrôler les boîtes aux lettres, les sites SharePoint et les comptes OneDrive pouvant être recherchés par des utilisateurs spécifiques.
-ms.openlocfilehash: 2671711d5b37f9f0f8793bb528741dc7b6d05680
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: ea3c289c63d2ee777e88166a94bd9ed92abcbb26
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296427"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862436"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurer les limites de conformité pour les enquêtes eDiscovery dans Office 365
 
@@ -101,7 +101,6 @@ Pour créer les groupes de rôles, accédez à la page **autorisations** dans le
 
   
 ## <a name="step-4-create-a-search-permissions-filter-to-enforce-the-compliance-boundary"></a>Étape 4: créer un filtre d'autorisations de recherche pour appliquer la limite de conformité
-<a name="step4"> </a>
 
 Une fois que vous avez créé des groupes de rôles pour chaque agence, l'étape suivante consiste à créer les filtres d'autorisations de recherche qui associent chaque groupe de rôles à son agence spécifique et définit la limite de conformité proprement dite. Vous devez créer un filtre d'autorisations de recherche pour chaque agence. Pour plus d'informations sur la création de filtres d'autorisations de sécurité, consultez la rubrique [configurer le filtrage des autorisations pour la recherche de contenu](permissions-filtering-for-content-search.md).
   
@@ -180,39 +179,40 @@ Gardez les limites suivantes à l'esprit lors de la gestion des cas eDiscovery e
 
 ## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>Recherche et exportation de contenu dans des environnements multiGéographiques
 
-Les filtres d'autorisations de recherche vous permettent également de contrôler où le contenu est acheminé pour l'exportation et sur lequel le centre de données peut être recherché lors de la recherche de sites SharePoint et de comptes OneDrive dans un [environnement multi-géo SharePoint](https://go.microsoft.com/fwlink/?linkid=860840):
+Les filtres d'autorisations de recherche vous permettent également de contrôler où le contenu est acheminé pour l'exportation et sur lequel le centre de données peut être recherché lors de la recherche d'emplacements de contenu dans un [environnement multi-géo SharePoint](https://go.microsoft.com/fwlink/?linkid=860840).
   
-- Exporter les résultats de la recherche à partir d'un centre de données spécifique. Cela signifie que vous pouvez spécifier l'emplacement du centre de données à partir duquel les résultats de recherche seront exportés.
+- **Exporter les résultats** de la recherche: vous pouvez exporter les résultats de la recherche à partir de boîtes aux lettres Exchange, de sites SharePoint et de comptes OneDrive à partir d'un centre de donnée spécifique. Cela signifie que vous pouvez spécifier l'emplacement de centre de contenu à partir duquel les résultats de la recherche seront exportés.
+
+    Utilisez le paramètre **Region** pour les cmdlets **New-ComplianceSecurityFilter** ou **Set-ComplianceSecurityFilter** pour créer ou modifier le centre de réacheminement de l'exportation.
+  
+    |**Valeur du paramètre**|**Emplacement du centre de**|
+    |:-----|:-----|
+    |NAM  <br/> |Amérique du Nord (les centres de centres réels sont aux États-Unis)  <br/> |
+    |EUR  <br/> |Européen  <br/> |
+    |APC  <br/> |Asie-Pacifique  <br/> |
+    |CAN <br/> |Canada
     
-- Acheminer les recherches de sites SharePoint et de comptes OneDrive vers un centre de données satellite. Cela signifie que vous pouvez spécifier l'emplacement du centre de données où les recherches seront exécutées.
+- **Recherches de contenu de routage** : vous pouvez acheminer les recherches de contenu de sites SharePoint et de comptes OneDrive vers un centre de données satellite. Cela signifie que vous pouvez spécifier l'emplacement du centre de recherche dans lequel les recherches seront exécutées.
     
-Utilisez le paramètre **Region** pour les cmdlets **New-ComplianceSecurityFilter** ou **Set-ComplianceSecurityFilter** pour créer ou modifier le centre de réacheminement de l'exportation.
+    Utilisez les valeurs suivantes pour les valeurs du paramètre **Region** afin de contrôler le centre de données dans lequel les recherches de contenu s'exécuteront lors de la recherche de sites SharePoint et d'emplacements OneDrive. Notez que le tableau suivant indique également les exportations de centre de de contenu à acheminer. 
   
-|**Valeur du paramètre**|**Emplacement du centre de données**|
-|:-----|:-----|
-|NAM  <br/> |Amérique du Nord (les centres de données réels sont aux États-Unis)  <br/> |
-|EUR  <br/> |Europe  <br/> |
-|APC  <br/> |Asie-Pacifique  <br/> |
-|CAN <br/> |Canada
+    |**Valeur du paramètre**|**Emplacements de routage de centre de ressources pour l'exportation**|
+    |:-----|:-----|
+    |NAM  <br/> |Contacter  <br/> |
+    |EUR  <br/> |Européen  <br/> |
+    |APC  <br/> |Asie-Pacifique  <br/> |
+    |CAN  <br/> |Contacter  <br/> |
+    |AUS  <br/> |Asie-Pacifique  <br/> |
+    |KOR  <br/> |Centre de données par défaut de l'Organisation  <br/> |
+    |GBR  <br/> |Européen  <br/> |
+    |JPN  <br/> |Asie-Pacifique  <br/> |
+    |IND  <br/> |Asie-Pacifique  <br/> |
+    |BARRÉ  <br/> |Contacter  <br/> |
    
-De même, vous pouvez utiliser les valeurs suivantes pour les valeurs du paramètre **Region** pour contrôler le centre de données dans lequel les recherches de contenu s'exécuteront lors de la recherche dans SharePoint et dans les emplacements OneDrive. Notez que le tableau suivant indique également les exportations du centre de données à acheminer. 
+> [!NOTE]
+> Si vous ne spécifiez pas le paramètre **Region** pour un filtre d'autorisations de recherche, la région SharePoint par défaut de l'organisation sera recherchée, puis les résultats de la recherche sont exportés vers le centre de contenu le plus proche. 
   
-|**Valeur du paramètre**|**Emplacements de routage des centres de données pour l'exportation**|
-|:-----|:-----|
-|NAM  <br/> |US  <br/> |
-|EUR  <br/> |Europe  <br/> |
-|APC  <br/> |Asie-Pacifique  <br/> |
-|CAN  <br/> |US  <br/> |
-|AUS  <br/> |Asie-Pacifique  <br/> |
-|KOR  <br/> |Centre de données par défaut de l'Organisation  <br/> |
-|GBR  <br/> |Europe  <br/> |
-|JPN  <br/> |Asie-Pacifique  <br/> |
-|IND  <br/> |Asie-Pacifique  <br/> |
-|BARRÉ  <br/> |US  <br/> |
-   
- **Remarque:** Si vous ne spécifiez pas le paramètre region pour un filtre d'autorisations de recherche, la région SharePoint par défaut de l'organisation sera recherchée, puis les résultats de la recherche sont exportés dans le centre de données le plus proche. 
-  
-Voici des exemples d'utilisation du paramètre **-Region** lors de la création de filtres d'autorisation de recherche pour les limites de conformité. Cela suppose que la filiale Fourth Coffee soit située en Amérique du Nord et que Coho Winery se trouve en Europe. 
+Voici des exemples d'utilisation du paramètre **Region** lors de la création de filtres d'autorisation de recherche pour les limites de conformité. Cela suppose que la filiale Fourth Coffee soit située en Amérique du Nord et que Coho Winery se trouve en Europe. 
   
 ```
 New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_Department -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL -Region NAM
@@ -254,7 +254,7 @@ Un filtre des autorisations de recherche peut prendre jusqu'à 3 jours pour appl
   
  **Un gestionnaire eDiscovery peut-il voir le contenu de deux limites de conformité distinctes?**
   
-OK. Pour ce faire, vous pouvez ajouter l'utilisateur à des groupes de rôles disposant d'une visibilité aux deux agences.
+Oui. Pour ce faire, vous pouvez ajouter l'utilisateur à des groupes de rôles disposant d'une visibilité aux deux agences.
   
  **Les filtres d'autorisations de recherche fonctionnent-ils pour les conservations de cas eDiscovery, les stratégies de rétention Office 365 ou DLP?**
   

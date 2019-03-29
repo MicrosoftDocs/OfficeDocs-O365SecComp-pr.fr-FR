@@ -9,14 +9,14 @@ ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 description: En savoir plus sur les principes de sécurité, les meilleures pratiques et les meilleures pratiques pour la modernisation de votre organisation.
-ms.openlocfilehash: cdf194e6d04a8085ada6d9d7571a95b77a79a1ee
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+ms.openlocfilehash: c98944b746fb564f946440408f0be87425237232
+ms.sourcegitcommit: e89c21d569b96f34e5d4d4074ae25d8eec9aeacf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935189"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30948515"
 ---
-# <a name="chief-information-security-officer-ciso-workshop"></a>Atelier de directeur de la sécurité des informations (CISO)
+# <a name="chief-information-security-officer-ciso-workshop-training"></a>Formation pour les ateliers de directeur CISO (Information Security officier)
 
 Cet atelier CISO (Information Security Office) contient un ensemble d'apprentissages de sécurité, de principes, de meilleures pratiques établies et de meilleures pratiques pour la modernisation de la sécurité dans votre organisation pour l'âge du Cloud. Cet atelier est basé sur une combinaison d'expériences des équipes de sécurité de Microsoft et des enseignements de nos clients.
 
@@ -25,13 +25,14 @@ L'atelier CISO peut aider votre organisation à répondre aux deux défis de la 
 - Attaques de plus en plus sophistiquées
 - Protection des biens d'une entreprise hybride qui inclut désormais les plateformes Cloud
 
-Le contenu vidéo et PowerPoint de l'atelier de CISO est conçu pour être modulaire afin que vous puissiez accéder à n'importe quelle section d'intérêt ou simplement commencer au début et passer tout au long de la procédure. Les diapositives sont disponibles ici avec une licence Creative de présentation (avec attribution) afin qu'elles puissent être réutilisées pour aider votre organisation à créer des stratégies de sécurité efficaces.
+Les vidéos d'atelier CISO et le contenu de téléchargement PDF/PowerPoint sont conçus pour être modulaires afin que vous puissiez accéder à n'importe quelle section d'intérêt ou simplement commencer au début et passer tout au long de la procédure. Les diapositives sont disponibles ici avec une licence Creative de présentation (avec attribution) afin qu'elles puissent être réutilisées pour aider votre organisation à créer des stratégies de sécurité efficaces.
 
 ## <a name="module-1--microsoft-cybersecurity-briefing"></a>Module 1 – Briefing de Microsoft Cybersecurity
 
 Ce module décrit les vues d'ensemble de l'hygiène de sécurité critique, de l'architecture de référence Microsoft Cybersecurity, de la résilience Cybersecurity, de l'Internet des choses et de la technique opérationnelle.
 
-Télécharger le module PDF: [module 1 – Briefing de Microsoft Cybersecurity](media/ciso-workshop-1-cybersecurity-briefing.pdf)
+- Télécharger le Résumé PDF: [module 1 – Briefing de Microsoft Cybersecurity](media/ciso-workshop-1-cybersecurity-briefing.pdf)
+- Télécharger le résumé PowerPoint: [module 1 – Briefing de Microsoft Cybersecurity](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-1-cybersecurity-briefing.pptx)
 
 ### <a name="part-1--course-introduction-and-overview"></a>Partie 1 – présentation et présentation du cours
 
@@ -89,7 +90,8 @@ Télécharger le module PDF: [module 1 – Briefing de Microsoft Cybersecurity](
 
 Découvrez comment augmenter la visibilité et le contrôle de votre parc hybride grâce à des conseils intégrés, à l'application de stratégie automatisée et à la surveillance de cette série de sept composants.
 
-Télécharger le fichier PDF: [module 2 – gestion](media/ciso-workshop-2-security-management.pdf) de la sécurité
+- Télécharger le Résumé PDF: [module 2 – gestion](media/ciso-workshop-2-security-management.pdf) de la sécurité
+- Télécharger le résumé PowerPoint: [module 2 – gestion](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-2-security-management.pptx) de la sécurité
 
 ### <a name="introduction---security-management"></a>Introduction-gestion de la sécurité
 
@@ -127,7 +129,8 @@ Télécharger le fichier PDF: [module 2 – gestion](media/ciso-workshop-2-secur
 
 Dans la mesure où la plupart des attaques modernes impliquent la compromission des identités des utilisateurs, Découvrez comment créer un nouveau périmètre de sécurité des identités pour protéger les ressources en dehors de votre réseau d'entreprise.
 
-Télécharger le fichier PDF: [module 3 – gestion des identités et des accès](media/ciso-workshop-3-identity-protection.pdf)
+- Télécharger le Résumé PDF: [module 3 – gestion des identités et des accès](media/ciso-workshop-3-identity-protection.pdf)
+- Télécharger le résumé PowerPoint: [module 3 – gestion des identités et des accès](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-3-identity-protection.pptx)
 
 ### <a name="introduction--identity-and-access-management"></a>Introduction: gestion des identités et des accès
 
@@ -157,7 +160,8 @@ Télécharger le fichier PDF: [module 3 – gestion des identités et des accès
 
 Explorez nos principaux apprentissages concernant la protection contre les menaces, l'évolution de la sécurité, les stratégies et les plans de sécurité.
 
-Télécharger le module PDF: [module 4a – stratégie de protection contre les menaces](media/ciso-workshop-4a-threat-protection.pdf)
+- Télécharger le Résumé PDF: [module 4a – stratégie de protection contre les menaces](media/ciso-workshop-4a-threat-protection.pdf)
+- Télécharger le résumé PowerPoint: [module 4a – stratégie de protection contre les menaces](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4a-threat-protection.pptx)
 
 ### <a name="introduction--threat-protection-strategy-identify-protect"></a>Introduction – stratégie de protection contre les menaces (identifier-protéger)
 
@@ -215,7 +219,8 @@ Télécharger le module PDF: [module 4a – stratégie de protection contre les 
 
 Ce module passe en revue l'évolution et la trajectoire de nos centres d'opérations de sécurité (SOC), gérées par les milliards de signaux de notre graphique de sécurité intelligent.
 
-Télécharger le fichier PDF: [module 4b – stratégie de protection contre les menaces](media/ciso-workshop-4b-threat-protection-strategy.pdf)
+- Télécharger le Résumé PDF: [module 4b – stratégie de protection contre les menaces](media/ciso-workshop-4b-threat-protection-strategy.pdf)
+- Télécharger le résumé PowerPoint: [module 4b – stratégie de protection contre les menaces](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4b-threat-protection-strategy.pptx)
 
 ### <a name="introduction--threat-protection-strategy-detect-respond-recover"></a>Introduction – stratégie de protection contre les menaces (Detect-respond-reCover)
 
@@ -265,7 +270,8 @@ Télécharger le fichier PDF: [module 4b – stratégie de protection contre les
 
 Découvrez comment protéger les informations sensibles partout où elles sont placées avec une classification automatique, un chiffrement persistant entre les appareils et une surveillance continue des données sur des appareils mobiles, des services Cloud et d'autres ressources d'entreprise.
 
-Télécharger le fichier PDF: [module 5 – protection des informations](media/ciso-workshop-5-information-protection-strategy.pdf)
+- Télécharger le Résumé PDF: [module 5 – protection des informations](media/ciso-workshop-5-information-protection-strategy.pdf)
+- Télécharger la synthèse PowerPoint: [module 5 – protection des informations](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-5-information-protection-strategy.pptx)
 
 ### <a name="introduction--information-protection"></a>Introduction: protection des informations
 

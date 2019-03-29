@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 description: 'Pour les administrateurs: Découvrez comment importer en bloc les fichiers PST de votre organisation vers des boîtes aux lettres Office 365 en copiant des fichiers PST sur un disque dur, puis en les expédiant à Microsoft. '
-ms.openlocfilehash: 9c1cbe17fd1c6e20b0df3bc295da527fa6af6c42
-ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
+ms.openlocfilehash: e6623e4b5a66b9c2e8eeb2cfe6c978115b6fdc9f
+ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30354746"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30950471"
 ---
 # <a name="use-drive-shipping-to-import-your-organization-pst-files-to-office-365"></a>Utiliser l'expédition de disque pour importer les fichiers PST de votre organisation vers Office 365
 
@@ -86,16 +86,16 @@ Pour consulter les questions fréquemment posées sur l'utilisation de l'expédi
     
 - Il est possible que le disque dur que vous expédiez à Microsoft doive franchir des frontières internationales. Dans ce cas, vous devez vous assurer que le disque dur et les données qu’il contient sont importées et/ou exportées en conformité avec les lois applicables. Avant d’envoyer un disque dur, vérifiez auprès de vos conseillers juridiques que votre disque et vos données peuvent être légalement expédiés au centre de données Microsoft concerné. Cela permettra de garantir un délai de livraison raisonnable chez Microsoft.
     
-- Cette procédure nécessite la copie et l’enregistrement d’une clé de stockage sécurisé et d’une clé de chiffrement BitLocker. Veillez à prendre toutes les précautions nécessaires pour protéger ces clés, comme vous le feriez avec vos mots de passe ou d’autres informations de sécurité. Par exemple, vous pouvez les enregistrer dans un document Microsoft Word protégé par mot de passe ou dans un lecteur USB chiffré. Consultez la section [plus d'informations](use-drive-shipping-to-import-pst-files-to-office-365.md#moreinfo) pour obtenir un exemple de ces clés. 
+- Cette procédure nécessite la copie et l’enregistrement d’une clé de stockage sécurisé et d’une clé de chiffrement BitLocker. Veillez à prendre toutes les précautions nécessaires pour protéger ces clés, comme vous le feriez avec vos mots de passe ou d’autres informations de sécurité. Par exemple, vous pouvez les enregistrer dans un document Microsoft Word protégé par mot de passe ou dans un lecteur USB chiffré. Consultez la section [plus d'informations](#more-information) pour obtenir un exemple de ces clés. 
     
-- Une fois que les fichiers PST sont importés dans une boîte aux lettres Office 365, le paramètre de blocage de rétention de la boîte aux lettres est activé pour une durée indéterminée. Cela signifie que la stratégie de rétention attribuée à la boîte aux lettres ne sera pas traitée tant que vous n'aurez pas désactivé le blocage de rétention ou défini une date pour désactiver la conservation. Pourquoi effectuer cette opération? Si les messages importés dans une boîte aux lettres sont obsolètes, ils peuvent être supprimés définitivement (purgés) car leur période de rétention a expiré en fonction des paramètres de rétention configurés pour la boîte aux lettres. Lorsque la boîte aux lettres est mise en attente de rétention, le propriétaire de la boîte aux lettres peut gérer ces messages nouvellement importés ou modifier les paramètres de rétention pour la boîte aux lettres. Consultez la section [plus d'informations](use-drive-shipping-to-import-pst-files-to-office-365.md#moreinfo) pour obtenir des suggestions sur la gestion du blocage de rétention. 
+- Une fois que les fichiers PST sont importés dans une boîte aux lettres Office 365, le paramètre de blocage de rétention de la boîte aux lettres est activé pour une durée indéterminée. Cela signifie que la stratégie de rétention attribuée à la boîte aux lettres ne sera pas traitée tant que vous n'aurez pas désactivé le blocage de rétention ou défini une date pour désactiver la conservation. Pourquoi effectuer cette opération? Si les messages importés dans une boîte aux lettres sont obsolètes, ils peuvent être supprimés définitivement (purgés) car leur période de rétention a expiré en fonction des paramètres de rétention configurés pour la boîte aux lettres. Lorsque la boîte aux lettres est mise en attente de rétention, le propriétaire de la boîte aux lettres peut gérer ces messages nouvellement importés ou modifier les paramètres de rétention pour la boîte aux lettres. Consultez la section [plus d'informations](#more-information) pour obtenir des suggestions sur la gestion du blocage de rétention. 
     
 - Par défaut, la taille maximale des messages pouvant être reçus par une boîte aux lettres Office 365 est de 35 Mo. Cela est dû au fait que la valeur par défaut de la propriété *MaxReceiveSize* pour une boîte aux lettres est définie sur 35 Mo. Toutefois, la limite de la taille maximale des messages dans Office 365 est de 150 Mo. Par conséquent, si vous importez un fichier PST contenant un élément dont la taille est supérieure à 35 Mo, le service d'importation Office 365 modifiera automatiquement la valeur de la propriété *MaxReceiveSize* de la boîte aux lettres cible sur 150 Mo. Cela permet l'importation de messages allant jusqu'à 150 Mo dans les boîtes aux lettres utilisateur. 
     
     > [!TIP]
     > Pour identifier la taille de réception des messages pour une boîte aux lettres, vous pouvez exécuter cette commande dans `Get-Mailbox <user mailbox> | FL MaxReceiveSize`Exchange Online PowerShell:. 
   
-- Vous pouvez importer des fichiers PST dans une boîte aux lettres inactive dans Office 365. Pour ce faire, spécifiez le GUID de la boîte aux lettres inactive dans le `Mailbox` paramètre dans le fichier de mappage d'importation PST. Pour plus d'informations, voir [étape 3: créer le fichier de mappage d'importation PST](use-drive-shipping-to-import-pst-files-to-office-365.md#step3) . 
+- Vous pouvez importer des fichiers PST dans une boîte aux lettres inactive dans Office 365. Pour ce faire, spécifiez le GUID de la boîte aux lettres inactive dans le `Mailbox` paramètre dans le fichier de mappage d'importation PST. Pour plus d'informations, voir [étape 3: créer le fichier de mappage d'importation PST](#step-3-create-the-pst-import-mapping-file) . 
     
 - Dans un déploiement hybride Exchange, vous pouvez importer des fichiers PST dans une boîte aux lettres d'archivage informatique pour un utilisateur dont la boîte aux lettres principale est locale. Pour ce faire, procédez comme suit dans le fichier de mappage d'importation PST:
     
@@ -103,7 +103,7 @@ Pour consulter les questions fréquemment posées sur l'utilisation de l'expédi
     
   - Spécifiez la valeur **true** dans `IsArchive` le paramètre. 
     
-    Pour plus d'informations, voir [étape 3: créer le fichier de mappage d'importation PST](use-drive-shipping-to-import-pst-files-to-office-365.md#step3) . 
+    Pour plus d'informations, voir [étape 3: créer le fichier de mappage d'importation PST](#step-3-create-the-pst-import-mapping-file) . 
 
 ## <a name="step-1-download-the-secure-storage-key-and-pst-import-tool"></a>Étape 1: Télécharger la clé de stockage sécurisée et l'outil d'importation PST
 
@@ -308,7 +308,7 @@ L'étape suivante consiste à créer le travail d'importation PST dans le servic
 L'étape suivante consiste à expédier le disque dur à Microsoft, puis à fournir le numéro de suivi pour les informations de livraison et de retour pour le travail d'expédition de disque. Une fois que Microsoft a reçu le lecteur, il faut entre 7 et 10 jours ouvrés pour que le personnel du centre de données télécharge vos fichiers PST vers la zone de stockage Azure de votre organisation.
   
 > [!NOTE]
-> Si vous ne fournissez pas les informations de numéro de suivi et d'expédition de retour dans les 14 jours suivant la création de la tâche d'importation, la tâche d'importation expirera. Dans ce cas, vous devrez créer une tâche d'importation de lecteur de disque (voir [étape 4: créer une tâche d'importation PST dans Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step4)) et soumettre de nouveau le fichier de lecteur et le fichier de mappage d'importation PST. 
+> Si vous ne fournissez pas les informations de numéro de suivi et d'expédition de retour dans les 14 jours suivant la création de la tâche d'importation, la tâche d'importation expirera. Dans ce cas, vous devrez créer une tâche d'importation de lecteur de disque (voir [étape 4: créer une tâche d'importation PST dans Office 365](#step-4-create-a-pst-import-job-in-office-365)) et soumettre de nouveau le fichier de lecteur et le fichier de mappage d'importation PST. 
   
 ### <a name="ship-the-hard-drive"></a>Envoyer le disque dur
 
@@ -502,7 +502,7 @@ Pour installer Azure Storage Explorer et vous connecter à votre zone de stockag
     
   - Au bout d'un certain temps, vous pouvez désactiver le blocage de rétention en `Set-Mailbox -RetentionHoldEnabled $false` exécutant la commande. Pour obtenir des instructions, consultez [la rubrique placer une boîte aux lettres en blocage de](https://go.microsoft.com/fwlink/p/?LinkId=544749)rétention.
     
-  - Vous pouvez configurer le blocage de rétention de sorte qu'il soit désactivé à une date ultérieure. Pour ce faire, exécutez la `Set-Mailbox -EndDateForRetentionHold <date>` commande. Par exemple, en supposant que la date du jour est le 1er juillet 2016 et que vous voulez désactiver le blocage de rétention dans 30 jours, exécutez la `Set-Mailbox -EndDateForRetentionHold 8/1/2016`commande suivante:. Dans ce scénario, vous laisserez la propriété *RentionHoldEnabled* définie sur *true* . Pour plus d'informations, consultez la rubrique [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
+  - Vous pouvez configurer le blocage de rétention de sorte qu'il soit désactivé à une date ultérieure. Pour ce faire, exécutez la `Set-Mailbox -EndDateForRetentionHold <date>` commande. Par exemple, en supposant que la date du jour est le 1er juin 2016 et que vous voulez désactiver le blocage de rétention dans 30 jours, exécutez la `Set-Mailbox -EndDateForRetentionHold 7/1/2016`commande suivante:. Dans ce scénario, vous laisserez la propriété *RentionHoldEnabled* définie sur *true*. Pour plus d'informations, consultez la rubrique [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
     
   - Vous pouvez modifier les paramètres de la stratégie de rétention attribuée à la boîte aux lettres de sorte que les éléments plus anciens qui ont été importés ne soient pas immédiatement supprimés ou déplacés vers la boîte aux lettres d'archivage de l'utilisateur. Par exemple, vous pouvez rallonger l'âge de rétention d'une stratégie de suppression ou d'archivage affectée à la boîte aux lettres. Dans ce scénario, vous devez désactiver le blocage de rétention sur la boîte aux lettres après avoir modifié les paramètres de la stratégie de rétention. Pour plus d'informations, consultez [la rubrique Configurer une stratégie d'archivage et de suppression pour les boîtes aux lettres dans votre organisation Office 365](set-up-an-archive-and-deletion-policy-for-mailboxes.md).
     

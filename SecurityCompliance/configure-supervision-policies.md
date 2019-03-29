@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: ConFigurez des stratégies de vérification de surveillance pour capturer les communications des employés à des fins de révision.
-ms.openlocfilehash: 76a5e7152b609944eeb2fe1390e204e1463a673b
-ms.sourcegitcommit: 9a69ea604b415af4fef4964a19a09f3cead5a2ce
+ms.openlocfilehash: ce032a96131fdfb6f226dd25dfbb8e2de41c9931
+ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30701289"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30866390"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurer des stratégies de surveillance pour votre organisation
 
@@ -71,6 +71,34 @@ Utilisez le tableau suivant pour vous aider à configurer les groupes de votre o
 |Utilisateurs superVisés | Groupes de distribution <br> Groupes Office 365 | Groupes de distribution dynamique |
 | Reviewers | Groupes de sécurité à extension messagerie  | Groupes de distribution <br> groupes de distribution dynamiques |
   
+Pour gérer les utilisateurs supervisés dans les grandes organisations d'entreprise, il se peut que vous deviez surveiller tous les utilisateurs dans un très grand groupe. Vous pouvez utiliser PowerShell pour configurer un groupe de distribution pour une stratégie de surveillance globale pour le groupe affecté. Cela peut vous aider à surveiller des milliers d'utilisateurs à l'aide d'une seule stratégie et à mettre à jour la stratégie de supervision lorsque de nouveaux employés rejoignent votre organisation.
+
+1. Créez un [groupe de distribution](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps) dédié pour votre stratégie de surveillance globale avec les propriétés suivantes. Assurez-vous que ce groupe de distribution n'est pas utilisé à d'autres fins ou d'autres services Office 365.
+
+    - **MemberDepartRestriction = fermé**. Cela garantit que les utilisateurs ne peuvent pas se supprimer eux-mêmes du groupe de distribution.
+    - **MemberJoinRestriction = fermé**. Cela garantit que les utilisateurs ne peuvent pas s'ajouter eux-mêmes au groupe de distribution.
+    - **ModerationEnabled = true**. Cela permet de s'assurer que tous les messages envoyés à ce groupe doivent être approuvés et que le groupe n'est pas utilisé pour communiquer en dehors de la configuration de la stratégie de supervision.
+
+    ```
+    New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
+    ```
+2. Sélectionnez un [attribut personnalisé Exchange](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes?view=exchserver-2019&viewFallbackFrom=exchonline-ww) inutilisé à utiliser pour le suivi des utilisateurs qui ont été ajoutés à la stratégie de surveillance dans votre organisation.
+
+3. Exécutez le script PowerShell suivant sur une planification périodique pour ajouter des utilisateurs à la stratégie de surveillance:
+
+    ```
+    $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
+    $i = 0
+    ForEach ($M in $Mbx) 
+    {
+      Write-Host "Adding" $M.DisplayName
+      Add-DistributionGroupMember -Identity <your group name> -Member $M.DistinguishedName -ErrorAction SilentlyContinue
+      Set-Mailbox -Identity $M.Alias -<your custom attribute name> SRAdded 
+      $i++
+    }
+    Write-Host $i "Mailboxes added to supervisory review distribution group."
+    ```
+
 Pour plus d'informations sur la configuration des groupes, voir:
 - [Création et gestion de groupes de distribution](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [Gérer les groupes de sécurité à extension de messagerie](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)

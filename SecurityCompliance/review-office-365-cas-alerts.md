@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: Utilisez la page des alertes dans Office 365 Cloud App Security pour afficher les problèmes potentiels et prendre des mesures. Vous pouvez ignorer ou résoudre les alertes et, si nécessaire, suspendre un compte d'utilisateur.
-ms.openlocfilehash: 6c2f9788cb238e86abc347a3a118eb08fa84e971
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 701d80c3f890115c6c403fff21d2d0444d71c95a
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213164"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862466"
 ---
 # <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Passer en revue et effectuer une action sur les alertes dans la sécurité des applications cloud Office 365
   
@@ -35,7 +35,10 @@ Vous pouvez utiliser la page des alertes dans Office 365 Cloud App Security pour
 1. Accédez au portail de sécurité des applications Cloud[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)() et connectez-vous.
   
 2. Dans la barre de navigation en haut de l'écran, sélectionnez **alertes**.<br/>![Sur la page alertes, vous pouvez voir les alertes déclenchées et toutes les actions entreprises.](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
-  
+ 
+> [!NOTE]
+> les alertes de sécurité de l'application Cloud sont également visibles dans le centre de sécurité & de **** > la sécurité d'Office 365 (accédez à alertes**afficher**les alertes. Toutefois, actuellement, vous devez résoudre ces alertes dans le centre de sécurité des applications Cloud et dans le centre de sécurité & de sécurité d'Office 365. Pour plus d'informations, consultez la rubrique [affichage des alertes de sécurité des applications Cloud](alert-policies.md#viewing-cloud-app-security-alerts). 
+ 
 ## <a name="review-and-handle-alerts"></a>Examiner et gérer les alertes
 
 Les alertes vous aident à identifier les activités dans votre environnement Cloud Office 365 que vous souhaiterez peut-être approfondir. Vous pouvez également décider de créer de nouvelles stratégies ou de modifier des stratégies existantes en fonction des alertes que vous voyez. Par exemple, si vous voyez un administrateur qui se connecte à partir d'un emplacement étrange, vous pouvez décider de configurer une stratégie qui empêche les administrateurs de se connecter à Office 365 à partir de certains emplacements.

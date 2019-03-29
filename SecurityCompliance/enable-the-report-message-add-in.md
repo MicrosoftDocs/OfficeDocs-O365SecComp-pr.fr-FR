@@ -3,7 +3,7 @@ title: Activer le complément Signaler le message
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/05/2019
+ms.date: 03/26/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,19 +15,19 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment activer le complément de message de rapport pour Outlook et Outlook sur le Web, pour des utilisateurs individuels ou l'ensemble de votre organisation.
-ms.openlocfilehash: f2bb79c4c613fdb804d19226fb359124387a678f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 3c476a6e097307b1aabc3580b598bb91a4407731
+ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693383"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30866340"
 ---
 # <a name="enable-the-report-message-add-in"></a>Activer le complément Signaler le message
 
 > [!NOTE]
 > Le complément de message de rapport pour Outlook et Outlook sur le Web n'est pas exactement identique au filtre de courrier inDésirable [Outlook](https://support.office.com/article/Overview-of-the-Junk-Email-Filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089), bien que ces deux types permettent de marquer le courrier comme légitime, non légitime ou une tentative de hameçonnage. La différence réside dans le fait que le complément de message de rapport pour Outlook et Outlook sur le Web avertit Microsoft du courrier inDésirable, tandis que le filtre de courrier inDésirable d'Outlook est utilisé pour organiser les messages électroniques dans la boîte aux lettres d'un utilisateur. 
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Vue d'ensemble
 
 Le complément de message de rapport pour Outlook et Outlook sur le Web permet aux utilisateurs de signaler facilement les messages électroniques, qu'ils soient fiables ou malveillants, à Microsoft et à ses filiales pour analyse. Microsoft utilise ces soumissions pour améliorer l'efficacité des technologies de protection de la messagerie. En outre, si votre organisation utilise [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) ou [plan 2](office-365-ti.md), le complément Report message fournit à l'équipe de sécurité de votre organisation des informations utiles qu'il peut utiliser pour examiner et mettre à jour les stratégies de sécurité. 
 
@@ -67,7 +67,7 @@ Une fois le complément installé et activé, les icônes suivantes s'affichent:
 ## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>Obtenir et activer le complément de message de rapport pour votre organisation
 
 > [!IMPORTANT]
-> Vous devez être un administrateur général Office 365 ou un administrateur Exchange Online pour effectuer cette tâche. De plus, Exchange doit être configuré pour utiliser l'authentification OAuth pour en savoir plus, consultez la rubrique [Exchange Requirements (déploiement centralisé des compléments)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins&view=o365-worldwide#exchange-requirements). 
+> Vous devez être un administrateur général Office 365 ou un administrateur Exchange Online pour effectuer cette tâche. De plus, Exchange doit être configuré pour utiliser l'authentification OAuth pour en savoir plus, consultez la rubrique [Exchange Requirements (déploiement centralisé des compléments)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins). 
 
 1. Accédez à la [page des compléments & de services](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) dans le centre d'administration Microsoft 365.<br/>![Page services et compléments dans le nouveau centre d'administration Microsoft 365](media/ServicesAddInsPageNewM365AdminCenter.png)<br/> 
     

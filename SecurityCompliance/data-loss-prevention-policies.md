@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Avec une stratégie de protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365, vous pouvez identifier, surveiller et protéger automatiquement les informations sensibles dans Office 365.
-ms.openlocfilehash: 69ec5b2925d70c503655837af600f106379e1485
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 7c776b3fd703ddb24d9d8195609384771858c7f5
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639141"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862536"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Vue d’ensemble des stratégies de protection contre la perte de données
 
@@ -100,7 +100,7 @@ Les conditions actuellement disponibles peuvent déterminer si :
   
 - Le contenu contient un type d'informations sensibles.
     
-- Le contenu contient une étiquette. Pour plus d'informations, consultez la section ci-dessous en [utilisant une étiquette comme condition dans une stratégie DLP](data-loss-prevention-policies.md#label).
+- Le contenu contient une étiquette. Pour plus d'informations, consultez la section ci-dessous en [utilisant une étiquette comme condition dans une stratégie DLP](#using-a-label-as-a-condition-in-a-dlp-policy).
     
 - Le contenu est partagé avec des personnes extérieures ou internes à votre organisation.
     
@@ -112,7 +112,7 @@ Une stratégie DLP peut aider à protéger les informations sensibles, qui est d
   
 Lorsqu'une stratégie DLP recherche un type d'informations sensibles comme un numéro de carte de crédit, il ne recherche pas simplement un nombre à 16 chiffres. Chaque type d’informations sensibles est défini et détecté en utilisant une combinaison des éléments suivants :
   
-- Mots-clés
+- Mots clés
     
 - Fonctions internes pour valider les sommes de contrôle ou la composition
     
@@ -376,7 +376,7 @@ Pour accéder rapidement à une section, cliquez sur un élément dans la barre 
   
 ![Menu de navigation supérieure de l'éditeur de règles DLP](media/c527b97f-ca53-4c79-ad19-1a63be8a8ecc.png)
   
-## <a name="dlp-policy-templates"></a>Modèles de stratégies de protection contre la perte de données (DLP)
+## <a name="dlp-policy-templates"></a>Modèles de stratégie de protection contre la perte de données (DLP)
 
 La première étape de la création d'une stratégie DLP consiste à choisir les informations à protéger. En commençant par un modèle DLP, vous enregistrez le travail de création d'un nouvel ensemble de règles à partir de zéro, et vous déterminez les types d'informations qui doivent être inclus par défaut. Vous pouvez ensuite ajouter ou modifier ces exigences pour affiner la règle afin de répondre aux besoins spécifiques de votre organisation.
   

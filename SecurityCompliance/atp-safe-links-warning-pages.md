@@ -14,12 +14,12 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: Obtenez une vue d'ensemble des pages d'avertissement qui peuvent s'afficher lorsque la protection avancée contre les menaces d'Office 365 est au travail.
-ms.openlocfilehash: 5bf6d436e319127fdd5aecd5c58e168a59333d25
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: e90951a010ff5de4d3b292259e9c4596b6cc8e89
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357445"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862576"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Pages d'avertissement des liens approuvés Office 365 ATP
 
@@ -28,7 +28,7 @@ ms.locfileid: "30357445"
 
 [Office 365 protection avancée contre les menaces](office-365-atp.md) (ATP) permet de protéger votre organisation contre les tentatives de hameçonnage et les programmes malveillants par le biais de fonctionnalités, telles que les [liens de sécurité ATP](atp-safe-links.md), [les pièces jointes fiables ATP](atp-safe-attachments.md)et la [protection anti-hameçonnage](anti-phishing-protection.md). Lorsque la protection est en place, les liens (URL) dans les messages électroniques et les documents Office sont vérifiés. Si une URL est identifiée comme suspecte ou malveillante, il se peut que vous ne soyez pas en mesure d'ouvrir l'URL lorsque vous cliquez dessus. Au lieu d'accéder directement au site, il se peut qu'une page d'avertissement s'affiche à la place. 
   
-Lisez cet article pour voir [des exemples de pages d'avertissement susceptibles d'](atp-safe-links-warning-pages.md#examples) apparaître, ainsi que des [mises à jour récentes des pages d'avertissement](atp-safe-links-warning-pages.md#updates).
+Lisez cet article pour voir des exemples de pages d'avertissement susceptibles d'apparaître, ainsi que des mises à jour récentes des pages d'avertissement.
   
 ## <a name="examples-of-warning-pages"></a>Exemples de pages d'avertissement
 

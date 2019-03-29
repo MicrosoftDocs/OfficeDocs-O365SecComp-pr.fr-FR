@@ -17,12 +17,12 @@ ms.assetid: 8ccac9e4-3a50-49fa-a95b-d186032a6ee3
 ms.collection:
 - M365-security-compliance
 description: Les stratégies de gestion des informations permettent à votre organisation de contrôler la durée de conservation du contenu, d'auditer les opérations effectuées par les utilisateurs et d'ajouter des codes-barres ou des étiquettes aux documents. Une stratégie peut contribuer à renforcer la conformité aux réglementations juridiques et gouvernementales ou aux processus d'entreprise internes. En tant qu'administrateur, vous pouvez configurer une stratégie pour contrôler le suivi des documents et la durée de conservation des documents.
-ms.openlocfilehash: d4161ad3684a006f0e4b2b9e0e856ea0a8aa67fc
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1d17dd8cadb721478831ab8fe77413c08f959f29
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214694"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862566"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Créer et appliquer des stratégies de gestion des informations
 
@@ -43,7 +43,7 @@ Pour plus d'informations, consultez la rubrique [Présentation des stratégies d
 
 Pour vous assurer qu'une stratégie d'informations est appliquée à tous les documents d'un certain type au sein d'une collection de sites, envisagez de créer la stratégie au niveau de la collection de sites, puis appliquez la stratégie aux types de contenu. Il s'agit des stratégies de collection de sites. 
   
-1. dans le bouton paramètres de la \> ****![page d'accueil de la collection de sites SharePoint 2016 paramètres de la barre de titre. ](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) **site.** \>
+1. dans le bouton paramètres de la \> ****![page d'accueil de la collection de sites SharePoint 2016 paramètres de la barre de titre.](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \>**Paramètres de site**.
     
     Dans un site connecté à un groupe SharePoint, cliquez sur **paramètres**, sur **contenu du site**, puis sur **paramètres du site**. 
     
@@ -57,7 +57,7 @@ Pour vous assurer qu'une stratégie d'informations est appliquée à tous les do
     
 5. Consultez la section suivante sur la création de stratégies pour un type de contenu de site pour découvrir comment configurer les fonctionnalités que vous souhaitez associer à la stratégie. 
     
-6. Cliquez sur **OK**.
+6. Sélectionnez **OK**.
     
 ## <a name="create-a-policy-for-a-site-content-type"></a>Créer une stratégie pour un type de contenu de site
 <a name="__create_a_policy"> </a>
@@ -66,7 +66,7 @@ L'ajout d'une stratégie de gestion des informations à un type de contenu facil
   
  Vous pouvez également ajouter une stratégie de gestion des informations à un type de contenu spécifique à des listes. Cela a pour effet d'appliquer la stratégie uniquement aux éléments de cette liste qui utilisent le type de contenu. 
   
-1. dans le bouton paramètres de la \> ****![page d'accueil de la collection de sites SharePoint 2016 paramètres de la barre de titre. ](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) **site.** \>
+1. dans le bouton paramètres de la \> ****![page d'accueil de la collection de sites SharePoint 2016 paramètres de la barre de titre.](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \>**Paramètres de site**.
     
     Dans un site connecté à un groupe SharePoint, cliquez sur **paramètres**, sur **contenu du site**, puis sur **paramètres du site**. 
     
@@ -90,8 +90,8 @@ L'ajout d'une stratégie de gestion des informations à un type de contenu facil
     
 ||||||**1.**|* * Sélectionnez * * Ajouter une étape de rétention pour les enregistrements... * * * *|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-||||||2.  <br/> | Sélectionnez une option de période de rétention pour spécifier quand des documents ou des éléments sont configurés pour expirer. Effectuez l'une des opérations suivantes:<br/>  Pour définir la date d'expiration sur la base d'une propriété de date, sous **événement** \> **cette étape est basée sur une propriété de date sur l'élément**, puis sélectionnez l'action de document ou d'élément (par exemple, créé ou modifié) et l'incrément du temps après cette action ( par exemple, le nombre de jours, de mois ou d'années, lorsque vous souhaitez que l'élément expire.  <br/>  Pour utiliser une formule de rétention personnalisée afin de déterminer l'expiration, choisissez **définir par une formule de rétention personnalisée installée sur ce serveur**.  <br/> > [!NOTE]> cette option n'est disponible que si une formule personnalisée a été configurée par votre administrateur.           |
-||||||3.  <br/> |L'option **Démarrer un flux de travail** est disponible uniquement si vous définissez une stratégie pour une liste, une bibliothèque ou un type de contenu auquel un flux de travail est déjà associé. Vous aurez alors un choix de flux de travail parmi lesquels choisir.<br/> |
+||||||2.  <br/> | Sélectionnez une option de période de rétention pour spécifier quand des documents ou des éléments sont configurés pour expirer. Effectuez l’une des opérations suivantes :  <br/>  Pour définir la date d'expiration sur la base d'une propriété de date, sous **événement** \> **cette étape est basée sur une propriété de date sur l'élément**, puis sélectionnez l'action de document ou d'élément (par exemple, créé ou modifié) et l'incrément du temps après cette action ( par exemple, le nombre de jours, de mois ou d'années, lorsque vous souhaitez que l'élément expire.  <br/>  Pour utiliser une formule de rétention personnalisée afin de déterminer l'expiration, choisissez **définir par une formule de rétention personnalisée installée sur ce serveur**.  <br/> > [!NOTE]> cette option n'est disponible que si une formule personnalisée a été configurée par votre administrateur.           |
+||||||3.  <br/> |L'option **Démarrer un flux de travail** est disponible uniquement si vous définissez une stratégie pour une liste, une bibliothèque ou un type de contenu auquel un flux de travail est déjà associé. Vous aurez alors un choix de flux de travail parmi lesquels choisir.  <br/> |
 ||||||4.  <br/> |Dans la section **périodicité** , sélectionnez **répéter l'action de cette étape...** et entrez la fréquence à laquelle vous souhaitez que l'action se produise.  <br/> > [!NOTE]> cette option n'est disponible que si l'action que vous avez sélectionnée peut être répétée. Par exemple, vous ne pouvez pas définir la récurrence de l'action **Supprimer définitivement**.           |
 ||||||5.  <br/> |Choisissez **OK**.  <br/> |
    
@@ -104,8 +104,8 @@ L'ajout d'une stratégie de gestion des informations à un type de contenu facil
 ||||||**2.** <br/> |**Pour inviter les utilisateurs à insérer ces codes-barres dans des documents,** **Sélectionnez** **Inviter les utilisateurs à insérer un code-barres avant l'enregistrement ou l'impression** **.** <br/> |
 ||||||**3.** <br/> |**Sélectionnez** **OK** * * pour appliquer la fonctionnalité d'audit à la stratégie. ** <br/> |
 |||||||La fonctionnalité de stratégie d'audit permet aux organisations de créer et d'analyser des suivis d'audit pour des documents et de répertorier des éléments tels que des listes de tâches, des listes de problèmes, des groupes de discussion et des calendriers. Cette fonctionnalité de stratégie fournit un journal d'audit qui enregistre les événements, par exemple lors de l'affichage, de la modification ou de la suppression du contenu.  <br/> |
-|||||||Lorsque l'audit est activé dans le cadre d'une stratégie de gestion des informations, les administrateurs peuvent afficher les données d'audit dans des rapports d'utilisation des stratégies basés dans Microsoft Excel et qui résument l'utilisation actuelle. Les administrateurs peuvent utiliser ces rapports pour déterminer la façon dont les informations sont utilisées au sein de l'organisation. Ces rapports peuvent également aider les organisations à vérifier et à documenter leur conformité réglementaire ou à étudier les préoccupations potentielles.  <br/> |
-|||||||Le journal d'audit consigne les informations suivantes : nom de l'événement, date et heure de l'événement et nom système de l'utilisateur ayant exécuté l'action.  <br/> |
+|||||||Lorsque l'audit est activé dans le cadre d'une stratégie de gestion des informations, les administrateurs peuvent afficher les données d'audit dans des rapports d'utilisation des stratégies basés dans Microsoft Excel et qui résument l'utilisation actuelle. Les administrateurs peuvent se servir de ces rapports pour déterminer comment l'information est utilisée dans l'organisation. Ces rapports peuvent également aider les organisations à vérifier et à documenter leur conformité réglementaire ou à étudier les préoccupations potentielles.  <br/> |
+|||||||Le journal d'audit enregistre les informations suivantes: nom de l'événement, date et heure de l'événement et nom du système de l'utilisateur qui a effectué l'action.  <br/> |
    
 1. Lorsque des codes-barres sont activés dans le cadre d'une stratégie, ils sont ajoutés aux propriétés du document et s'affichent dans la zone d'en-tête du document auquel le code-barres est appliqué. Comme les étiquettes, les codes-barres peuvent également être supprimés manuellement d'un document. Vous pouvez spécifier si les utilisateurs doivent être invités à inclure le code-barres lors de l'impression ou de l'enregistrement d'un élément ou si le code-barres doit être inséré manuellement à l'aide de l'onglet **Insérer** dans les programmes de version Office 2010. 
     
@@ -124,14 +124,14 @@ L'ajout d'une stratégie de gestion des informations à un type de contenu facil
     
 ||||||**1.**|* * Pour obliger les utilisateurs à ajouter une étiquette à un document, choisissez **inviter les utilisateurs à insérer une étiquette avant l'enregistrement ou l'impression**.  <br/> > [!NOTE]> si vous souhaitez que les étiquettes soient facultatives, n'activez pas cette case à cocher.        **|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-||||||2.  <br/> |Pour verrouiller une étiquette de sorte qu'elle ne puisse pas être modifiée une fois qu'elle a été insérée, choisissez **empêcher les modifications apportées aux étiquettes une fois qu'elles**ont été ajoutées.  <br/>  Ce paramètre empêche la mise à jour du texte de l'étiquette une fois que l'étiquette a été insérée dans un élément au sein d'une application cliente telle que Word, Excel ou PowerPoint. Si vous souhaitez que l'étiquette soit mise à jour lorsque les propriétés de ce document ou de cet élément sont mises à jour, n'activez pas cette case à cocher.<br/> |
+||||||2.  <br/> |Pour verrouiller une étiquette de sorte qu'elle ne puisse pas être modifiée une fois qu'elle a été insérée, choisissez **empêcher les modifications apportées aux étiquettes une fois qu'elles**ont été ajoutées.  <br/>  Ce paramètre empêche la mise à jour du texte de l'étiquette une fois que l'étiquette a été insérée dans un élément au sein d'une application cliente telle que Word, Excel ou PowerPoint. Si vous souhaitez que l'étiquette soit mise à jour lorsque les propriétés de ce document ou de cet élément sont mises à jour, n'activez pas cette case à cocher.  <br/> |
 ||||||3.  <br/> |Dans la zone format d'étiquette, entrez le texte de l'étiquette tel qu'il doit s'afficher. Les étiquettes peuvent contenir jusqu'à 10 références de colonnes, chacune pouvant comporter jusqu'à 255 caractères. Pour créer le format de votre étiquette, procédez comme suit:  <br/> Tapez les noms des colonnes que vous souhaitez inclure dans l'étiquette dans l'ordre dans lequel vous souhaitez les voir apparaître. Placez les noms de colonne entre accolades ({}), comme indiqué dans l'exemple de la page modifier la stratégie.  <br/> Tapez des mots pour identifier les colonnes en dehors des crochets, comme indiqué dans l'exemple de la page modifier la stratégie.  <br/> |
 ||||||4.  <br/> |Pour ajouter un saut de ligne, entrez **\n** à l'endroit où vous souhaitez que le saut de ligne apparaisse.  <br/> |
 ||||||5.  <br/> |Sélectionnez la taille et le style de police de votre choix, puis indiquez si vous souhaitez que l'étiquette se trouve à gauche, au centre ou à droite dans le document.  <br/>  Sélectionnez une police et un style qui sont disponibles sur les ordinateurs des utilisateurs. La taille de la police influe sur l'affichage du texte sur l'étiquette.  <br/> |
 ||||||6.  <br/> |Entrez la hauteur et la largeur de l'étiquette. La hauteur de l'étiquette peut être comprise entre 0,25 pouce et 20 pouces, et la largeur de l'étiquette peut être comprise entre 0,25 pouce et 20 pouces. Le texte de l'étiquette est toujours centré verticalement dans l'image de l'étiquette.  <br/> |
 ||||||7.  <br/> |Choisissez **Actualiser** pour afficher un aperçu du contenu de l'étiquette.  <br/> |
    
-1. Cliquez sur **OK**.
+1. Sélectionnez **OK**.
     
 ## <a name="create-a-policy-for-a-list-library-or-folder-location-based-retention-policy"></a>Créer une stratégie pour une liste, une bibliothèque ou un dossier (stratégie de rétention basée sur l’emplacement)
 <a name="__create_a_policy"> </a>
@@ -162,7 +162,7 @@ Vous avez besoin au minimum de l'autorisation gérer les listes pour modifier le
   
 4. Sur la page Paramètres de la stratégie de gestion des informations, vérifiez que la source de rétention de la liste ou de la bibliothèque est définie sur Bibliothèque et dossiers. 
   
-Si le **type de contenu** apparaît en tant que source, cliquez sur modifier la **source**, puis sur **bibliothèque et dossiers**. Vous êtes alerté que les stratégies de rétention de type de contenu seront ignorées. Choisissez **OK**. 
+Si le **type de contenu** apparaît en tant que source, cliquez sur modifier la **source**, puis sur **bibliothèque et dossiers**. Vous êtes alerté que les stratégies de rétention de type de contenu seront ignorées. Sélectionnez **OK**. 
     
 5. Sur la page modifier la stratégie, sous planification de la réTention **basée sur une bibliothèque**, entrez une brève description de la stratégie que vous créez. 
     
@@ -170,7 +170,7 @@ Si le **type de contenu** apparaît en tant que source, cliquez sur modifier la 
     
      Notez que sous enregistrements, vous pouvez choisir de définir différentes stratégies de rétention pour les enregistrements en sélectionnant l'option définir différentes étapes de rétention pour les enregistrements. 
     
-7. Dans la boîte de dialogue Propriétés de la scène, sélectionnez une option de période de rétention pour spécifier la date d'expiration des documents ou des éléments. Effectuez l'une des opérations suivantes:
+7. Dans la boîte de dialogue Propriétés de la scène, sélectionnez une option de période de rétention pour spécifier la date d'expiration des documents ou des éléments. Effectuez l’une des opérations suivantes :
     
   - Pour définir la date d'expiration sur la base d'une propriété de date, sous **événement** \> **cette étape est basée sur une propriété de date sur l'élément**, puis sélectionnez l'action de document ou d'élément (par exemple, créé ou modifié) et l'incrément du temps après cette action ( par exemple, le nombre de jours, de mois ou d'années, lorsque vous souhaitez que l'élément expire. 
     
@@ -188,14 +188,14 @@ Si le **type de contenu** apparaît en tant que source, cliquez sur modifier la 
     > [!NOTE]
     >  Cette option n'est disponible que si l'action que vous avez sélectionnée peut être répétée. Par exemple, vous ne pouvez pas définir la récurrence de l'action **Supprimer définitivement**. 
   
-10. Cliquez sur **OK**.
+10. Sélectionnez **OK**.
     
 ## <a name="apply-a-site-collection-policy-to-a-content-type"></a>Appliquer une stratégie de collection de sites à un type de contenu
 <a name="__apply_a_site"> </a>
 
 Si des stratégies de gestion des informations ont déjà été créées pour votre site en tant que stratégies de collection de sites, vous pouvez appliquer l'une des stratégies à un type de contenu. En procédant ainsi, vous pouvez appliquer la même stratégie à plusieurs types de contenu dans une collection de sites qui ne partagent pas le même type de contenu parent.
   
- Si vous souhaitez appliquer des stratégies à plusieurs types de contenu dans une collection de sites et que vous disposez d'un service de métadonnées gérées configuré, vous pouvez utiliser la publication de type de contenu pour publier des stratégies de gestion des informations sur plusieurs collections de sites. Pour plus d'informations, consultez la section [appliquer une stratégie à des types de contenu dans les collections de sites](create-info-mgmt-policies.md#__apply_a_policy) . 
+ Si vous souhaitez appliquer des stratégies à plusieurs types de contenu dans une collection de sites et que vous disposez d'un service de métadonnées gérées configuré, vous pouvez utiliser la publication de type de contenu pour publier des stratégies de gestion des informations sur plusieurs collections de sites. Pour plus d'informations, consultez la section [appliquer une stratégie sur plusieurs collections de sites](#apply-a-policy-across-site-collections) . 
   
 1. Accédez à la liste ou à la bibliothèque qui contient le type de contenu auquel vous souhaitez appliquer une stratégie.
     
@@ -214,7 +214,7 @@ Si des stratégies de gestion des informations ont déjà été créées pour vo
     > [!NOTE]
     >  Si l'option **utiliser une stratégie de collection de sites** n'est pas disponible, aucune stratégie de collection de sites n'a été définie pour la collection de sites. 
   
-6. Cliquez sur **OK**.
+6. Sélectionnez **OK**.
     
      Si la liste ou la bibliothèque que vous utilisez prend en charge la gestion de plusieurs types de contenu, sous **types de contenu** , vous pouvez choisir le type de contenu pour lequel vous souhaitez spécifier une stratégie de gestion des informations. Cela vous fera passer directement à l'étape 5 ci-dessus. 
     
@@ -267,6 +267,13 @@ L'importation d'une stratégie de gestion des informations vous permet de l'appl
     
 Votre stratégie importée peut désormais être appliquée à un ou plusieurs types de contenu au niveau du site ou de la liste. 
   
-[Les stratégies de gestion des informations permettent à votre organisation de contrôler la durée de conservation du contenu, d'auditer les opérations effectuées par les utilisateurs et d'ajouter des codes-barres ou des étiquettes aux documents. Une stratégie peut contribuer à renforcer la conformité aux réglementations juridiques et gouvernementales ou aux processus d'entreprise internes. En tant qu'administrateur, vous pouvez configurer une stratégie pour contrôler le suivi des documents et la durée de conservation des documents. Vous pouvez créer une stratégie de gestion des informations sur trois emplacements différents dans la hiérarchie du site, du plus large au plus étroit: créer une stratégie à utiliser sur plusieurs types de contenu au sein d'une collection de sites. Créer une stratégie pour un type de contenu de site. Créer une stratégie pour une liste ou une bibliothèque. Pour plus d'informations, consultez la rubrique Présentation des stratégies de gestion des informations.](create-info-mgmt-policies.md#__top)
+Les stratégies de gestion des informations permettent à votre organisation de contrôler la durée de conservation du contenu, d'auditer les opérations effectuées par les utilisateurs et d'ajouter des codes-barres ou des étiquettes aux documents. Une stratégie peut contribuer à renforcer la conformité aux réglementations juridiques et gouvernementales ou aux processus d'entreprise internes. En tant qu'administrateur, vous pouvez configurer une stratégie pour contrôler le suivi des documents et la durée de conservation des documents.
+
+Vous pouvez créer une stratégie de gestion des informations sur trois emplacements différents dans la hiérarchie du site, du plus large au plus étroit:
+- Créer une stratégie à utiliser sur plusieurs types de contenu au sein d'une collection de sites.
+- Créer une stratégie pour un type de contenu de site.
+- Créer une stratégie pour une liste ou une bibliothèque.
+
+Pour plus d'informations, consultez la rubrique [Présentation des stratégies de gestion des informations](intro-to-info-mgmt-policies.md).
   
 

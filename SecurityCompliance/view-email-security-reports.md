@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation avec Office 365 Enterprise. Les rapports de sécurité de messagerie sont disponibles &amp; dans le centre de sécurité conformité.
-ms.openlocfilehash: bfd84948624beaa8ea9d2a37da2ecd186b5bd717
-ms.sourcegitcommit: 15202bba32313534da2478b0cd215f32a10c9ef4
+ms.openlocfilehash: 1a885661f5bf020c325ee2d9f084473ecb27c53a
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30684363"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862506"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Afficher les rapports de sécurité de messagerie &amp; dans le centre de sécurité conformité
 
@@ -29,24 +29,15 @@ Un grand nombre de rapports sont disponibles dans [le &amp; Centre de sécurité
 ![Tableau de bord où se trouve le fonctionnement de la protection avancée contre les menaces](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 Vos rapports de sécurité de messagerie incluent les éléments suivants:
-
 - [Rapport](#encryption-report) de chiffrement (Nouveau!)
-  
-- [Rapport d'état de protection contre les menaces](view-email-security-reports.md#tps) 
-    
-- [Rapport de détection des programmes malveillants](view-email-security-reports.md#maldet)
-    
+- [Rapport d'état de protection contre les menaces](#threat-protection-status-report) 
+- [Rapport de détection des programmes malveillants](#malware-detections-report)    
 - [Premier rapport de programmes malveillants](#top-malware-report)
-    
-- [Rapport des expéditeurs et des destinataires principaux](view-email-security-reports.md#topsenders)
-    
-- [Courrier inFalsifiable](#spoof-mail-report)
-    
+- [Rapport des expéditeurs et des destinataires principaux](#top-senders-and-recipients-report)
+- [Rapport des détections d'usurpation](#spoof-detections-report)
 - [Rapport de détections de courrier inDésirable](#spam-detections-report)
-    
-- [Rapport de courrier électronique envoyé et reçu](view-email-security-reports.md#sentreceivedemail)
-
-- [Rapport sur les messages signalés par l'utilisateur](view-email-security-reports.md#userreported)
+- [Rapport de courrier électronique envoyé et reçu](#sent-and-received-email-report)
+- [Rapport sur les messages signalés par l'utilisateur](#user-reported-messages-report)
     
 ## <a name="encryption-report"></a>Rapport de chiffrement
 

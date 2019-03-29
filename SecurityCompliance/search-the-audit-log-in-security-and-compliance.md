@@ -15,14 +15,16 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilisez le centre de sécurité & pour rechercher le journal d'audit unifié pour afficher l'activité des utilisateurs et des administrateurs dans votre organisation Office 365. "
-ms.openlocfilehash: d9a0b009a47a00b3d7242b54b14286609ece6886
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 8cb8650315c19714960aba7551902780e38a554b
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30411019"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935349"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Effectuer des recherches dans le journal d'audit dans le centre de sécurité & Office 365 Security
+
+## <a name="introduction"></a>Introduction
 
 Vous avez besoin de savoir si un utilisateur a affiché un document spécifique ou s'il a purgé un élément de sa boîte aux lettres? Si c'est le cas, vous pouvez utiliser le &amp; Centre de sécurité conformité d'Office 365 pour rechercher le journal d'audit unifié afin d'afficher l'activité des utilisateurs et des administrateurs dans votre organisation Office 365. Pourquoi un journal d'audit unifié? Étant donné que vous pouvez rechercher les types d'activité d'utilisateur et d'administrateur suivants dans Office 365:
   
@@ -57,7 +59,7 @@ Vous avez besoin de savoir si un utilisateur a affiché un document spécifique 
 
 - Activité des analystes et des administrateurs dans Microsoft Workplace Analytics
 
-- Activité des utilisateurs et des administrateurs dans les PowerApp
+- Activité des utilisateurs et des administrateurs dans les Microsoft PowerApp
     
    
 ## <a name="before-you-begin"></a>Avant de commencer
@@ -111,7 +113,7 @@ Veillez à lire les éléments suivants avant de commencer à rechercher dans le
     |Prévention contre la perte de données  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)       <br/>| |
     |Dynamics 365 CRM <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |eDiscovery  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-    |Exchange Online  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Exchange Online  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Microsoft Flow  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Forms  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Project  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
@@ -211,7 +213,7 @@ Les résultats contiennent les informations suivantes sur chaque événement ren
   
 - **Date:** La date et l'heure (au format UTC) lorsque l'événement s'est produit. 
     
-- **Adresse IP:** Adresse IP du périphérique qui a été utilisé lors de l'enregistrement de l'activité. L’adresse IP apparaît au format IPv4 ou IPv6. 
+- **Adresse IP:** Adresse IP du périphérique qui a été utilisé lors de l'enregistrement de l'activité. L’adresse IP apparaît au format d’adresse IPv4 ou IPv6. 
     
 - **Utilisateur:** Utilisateur (ou compte de service) ayant effectué l'action qui a déclenché l'événement. 
     
@@ -296,12 +298,11 @@ Cliquez sur l'un des liens suivants pour accéder à une table spécifique.
 |:-----|:-----|:-----|
 |[Activités de fichier et de page](#file-and-page-activities)<br/> |[Activités de dossier](#folder-activities)<br/> |[Activités de partage et d'accès aux demandes](#sharing-and-access-request-activities)<br/> |
 |[Activités de synchronisation](#synchronization-activities)<br/> |[Activités d'administration de site](#site-administration-activities)<br/> |[Activités de boîte aux lettres Exchange](#exchange-mailbox-activities)<br/> |
-|[Stratégie de réTention et activités d'étiquette](#retention-policy-and-label-activities) <br/>|[Activités Sway](#sway-activities) <br/> |[Activités d'administration des utilisateurs](#user-administration-activities) <br/> 
-|[Activités d'administration du groupe Azure AD](#azure-ad-group-administration-activities) <br/> |[Activités d'administration des applications](#application-administration-activities) <br/> |[Activités d'administration des rôles](#role-administration-activities) <br/> |
-|[Activités d'administration d'annuaire](#directory-administration-activities) <br/> |[activités eDiscovery](#ediscovery-activities) <br/> |[Activités Power BI](#power-bi-activities) <br/> |
-|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|[Activités de Microsoft teams](#microsoft-teams-activities) <br/> |[Activités Yammer](#yammer-activities) <br/> |
-[Microsoft Flow](#microsoft-flow) <br/> |[Microsoft PowerApps](#microsoft-powerapps)<br/>|[Microsoft Stream](#microsoft-stream) <br/>|
-|[Activités d'administration d'Exchange](#exchange-admin-audit-log)<br/>
+|[Activités Sway](#sway-activities) <br/> |[Activités d'administration des utilisateurs](#user-administration-activities) <br/> |[Activités d'administration du groupe Azure AD](#azure-ad-group-administration-activities) <br/> 
+|[Activités d'administration des applications](#application-administration-activities) <br/> |[Activités d'administration des rôles](#role-administration-activities) <br/> |[Activités d'administration d'annuaire](#directory-administration-activities) <br/>| 
+|[activités eDiscovery](#ediscovery-activities) <br/> |[Activités Power BI](#power-bi-activities) <br/> |[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|
+|[Activités de Microsoft teams](#microsoft-teams-activities) <br/> |[Activités Yammer](#yammer-activities) <br/> |[Activités de flux Microsoft](#microsoft-flow-activities) <br/>|
+|[Activités Microsoft PowerApp](#microsoft-powerapps)<br/>|[Activités de Microsoft Stream](#microsoft-stream-activities) <br/>|[Activités d'administration d'Exchange](#exchange-admin-audit-log)<br/>|
 ||||
    
   
@@ -320,7 +321,7 @@ Le tableau suivant décrit les activités de fichier et de page dans SharePoint 
 |Fichier supprimé de la corbeille  <br/> |FileDeletedFirstStageRecycleBin  <br/> |Un utilisateur supprime un fichier de la corbeille d'un site.  <br/> |
 |Fichier supprimé de la Corbeille secondaire  <br/> |FileDeletedSecondStageRecycleBin  <br/> |Un utilisateur supprime un fichier de la Corbeille secondaire d'un site.  <br/> |
 |Programmes malveillants détectés dans le fichier  <br/> |FileMalwareDetected  <br/> |Le moteur de protection antivirus SharePoint détecte un programme malveillant dans un fichier.  <br/> |
-|Extraction des fichiers ignorés  <br/> |FileCheckOutDiscarded  <br/> |L’utilisateur ignore (ou annule) un fichier extrait. Cela signifie que toutes les modifications apportées au fichier alors qu’il était extrait sont ignorées et ne sont pas enregistrées dans la version du document qui se trouve dans la bibliothèque de documents.  <br/> |
+|Extraction des fichiers ignorés  <br/> |FileCheckOutDiscarded  <br/> |Un utilisateur ignore (ou annule) un fichier extrait. Les modifications qu’il a apportées au fichier le temps de son extraction sont ignorées et ne sont pas enregistrées dans la version du document dans la bibliothèque de documents.  <br/> |
 |Fichier téléchargé  <br/> |FileDownloaded  <br/> |Un utilisateur télécharge un document à partir d'un site.  <br/> |
 |Fichier modifié  <br/> |FileModified  <br/> |Le compte d'utilisateur ou système modifie le contenu ou les propriétés d'un document situé sur un site.  <br/> |
 |(aucun)  <br/> |FileModifiedExtended  <br/> |Cela est lié à l'activité «fichier modifié» (FileModified). Un événement FileModifiedExtended est enregistré lorsque la même personne modifie continuellement un fichier pendant une période prolongée (jusqu'à 3 heures). L'objectif de la journalisation des événements FileModifiedExtended est de réduire le nombre d'événements FileModified enregistrés quand un fichier est continuellement modifié. Cela permet de réduire le bruit de plusieurs enregistrements FileModified pour ce qui est essentiellement la même activité utilisateur et vous permet de vous concentrer sur l'événement initial (et plus important) FileModified.  <br/> |
@@ -420,7 +421,7 @@ Le tableau suivant répertorie les événements qui résultent de tâches d'admi
 |Utilisateur autorisé à créer des groupes  <br/> |AllowGroupCreationSet  <br/> |L'administrateur de site ou le propriétaire ajoute un niveau d'autorisation à un site qui lui permet de créer un groupe pour ce site.  <br/> |
 |Déplacement géographique de site annulé  <br/> |SiteGeoMoveCancelled  <br/> |Un administrateur SharePoint ou global annule un déplacement géographique de site SharePoint ou OneDrive. La capacité multi-géo permet à une organisation Office 365 d'occuper plusieurs zones géographiques de centre de régions centres Office 365, appelées. Pour plus d'informations, reportez-vous à [capacités Multigéographiques dans OneDrive et SharePoint Online dans Office 365](https://go.microsoft.com/fwlink/?linkid=860840).  <br/> |
 |Modification d'une stratégie de partage  <br/> |SharingPolicyChanged  <br/> |Un administrateur SharePoint ou global a modifié une stratégie de partage SharePoint à l'aide du portail d'administration d'Office 365, du portail d'administration SharePoint ou de SharePoint Online Management Shell. Toutes les modifications apportées aux paramètres de la stratégie de partage dans votre organisation seront consignées. La stratégie qui a été modifiée est identifiée dans le champ **ModifiedProperties** dans les propriétés détaillées de l'enregistrement d'événement.  <br/> |
-|Stratégie d'accès aux appareils modifiée  <br/> |DeviceAccessPolicyChanged  <br/> |Un administrateur SharePoint ou global a modifié la stratégie périphériques non gérés pour votre organisation. Cette stratégie contrôle l'accès à SharePoint, OneDrive et Office 365 à partir d'appareils qui ne sont pas joints à votre organisation. La configuration de cette stratégie nécessite un abonnement Enterprise Mobility + Security. Pour plus d'informations, consultez la rubrique [contrôler l'accès à partir d'appareils non gérés](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622).  <br/> |
+|Stratégie d'accès aux appareils modifiée  <br/> |DeviceAccessPolicyChanged  <br/> |Un administrateur SharePoint ou global a modifié la stratégie périphériques non gérés pour votre organisation. Cette stratégie contrôle l'accès à SharePoint, OneDrive et Office 365 à partir d'appareils qui ne sont pas joints à votre organisation. La configuration de cette stratégie nécessite un abonnement Enterprise Mobility + Security. Pour plus d’informations, voir [Contrôler l’accès à partir des appareils non gérés](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622).  <br/> |
 |Agents utilisateurs exemptés modifiés  <br/> |CustomizeExemptUsers  <br/> |Un administrateur SharePoint ou global A personnalisé la liste des agents utilisateurs exemptés dans le centre d'administration SharePoint. Vous pouvez spécifier les agents utilisateurs à exempter de la réception d’une page web entière à indexer. Cela signifie qu'un agent utilisateur que vous avez spécifié comme étant exempté rencontre un formulaire InfoPath, le formulaire est renvoyé sous la forme d'un fichier XML au lieu d'une page Web entière. Cela permet d’accélérer l’indexation des formulaires InfoPath.  <br/> |
 |Stratégie d'accès réseau modifiée  <br/> |NetworkAccessPolicyChanged  <br/> |Un administrateur SharePoint ou global a modifié la stratégie d'accès basé sur l'emplacement (également appelée limite de réseau approuvée) dans le centre d'administration SharePoint ou à l'aide de SharePoint Online PowerShell. Ce type de stratégie permet aux utilisateurs d'accéder aux ressources SharePoint et OneDrive de votre organisation en fonction des plages d'adresses IP autorisées que vous spécifiez. Pour plus d'informations, reportez-vous à la rubrique [contrôler l'accès à SharePoint Online et aux données OneDrive en fonction de l'emplacement réseau](https://support.office.com/article/b5a5f1f1-1174-4c6b-91d0-9273a6b6971f).  <br/> |
 |Déplacement géographique de site terminé  <br/> |SiteGeoMoveCompleted  <br/> |Un déplacement géographique de site qui a été planifié par un administrateur global dans votre organisation a été correctement effectué. La capacité multi-géo permet à une organisation Office 365 d'occuper plusieurs zones géographiques de centre de régions centres Office 365, appelées. Pour plus d'informations, reportez-vous à [capacités Multigéographiques dans OneDrive et SharePoint Online dans Office 365](https://go.microsoft.com/fwlink/?linkid=860840).  <br/> |
@@ -468,28 +469,6 @@ Le tableau suivant répertorie les activités qui peuvent être consignées par 
 |Message mis à jour  <br/> |Mettre à jour  <br/> |Un message ou ses propriétés ont été modifiés.  <br/> |
 |L'utilisateur s'est connecté à la boîte aux lettres  <br/> |MailboxLogin  <br/> |L'utilisateur s'est connecté à sa boîte aux lettres.  <br/> |
 |(aucun)  <br/> |UpdateInboxRules  <br/> |Une règle de boîte de réception a été ajoutée, supprimée ou modifiée. Les règles de boîte de réception sont utilisées pour traiter les messages dans la boîte de réception de l'utilisateur en fonction des conditions spécifiées et prendre des mesures lorsque les conditions d'une règle sont remplies, telles que le transfert d'un message vers un dossier spécifié ou la suppression d'un message.  <br/> Pour renvoyer des entrées pour les activités de règle de boîte de réception, vous devez sélectionner **afficher les résultats pour toutes les activités** dans la liste **activités** . Utilisez les zones plage de dates et la liste **utilisateurs** pour affiner les résultats de la recherche.  <br/> |
-||||
-  
-### <a name="retention-policy-and-label-activities"></a>Stratégie de réTention et activités d'étiquette
-
-Le tableau suivant décrit les activités liées aux stratégies de rétention et aux étiquettes de rétention dans le centre de sécurité & Compliance Center. Pour plus d'informations, consultez les rubriques suivantes :
-
-- [Vue d’ensemble des stratégies de rétention](retention-policies.md)
-- [Vue d’ensemble des étiquettes de rétention](labels.md)
-<br/>
-
-|**Activité**|**Opération**|**Description**|
-|:-----|:-----|:-----|
-| Configuration de rétention créée pour une stratégie de rétention<br/> |NewRetentionComplianceRule<br/> |L'administrateur configure les paramètres de rétention pour une nouvelle stratégie de rétention. Les paramètres de réTention incluent la durée de conservation des éléments, ainsi que les éléments au moment de l'expiration de la période de rétention (par exemple, la suppression des éléments, la conservation des éléments ou la conservation et la suppression des éléments). Cette activité correspond également à l'exécution de la cmdlet [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) .<br/>|
-| Étiquette de rétention créée <br/> |NewComplianceTag<br/>  |L'administrateur crée une étiquette de rétention.<br/> |
-| Stratégie de rétention créée<br/> |NewRetentionCompliancePolicy<br/> |L'administrateur crée une stratégie de rétention.<br/>  |
-| Suppression de la configuration de rétention pour une stratégie de rétention<br/> | RemoveRetentionComplianceRule<br/>| L'administrateur supprime les paramètres de configuration d'une stratégie de rétention. Cette activité est très probablement enregistrée lorsqu'un administrateur supprime une stratégie de rétention ou exécute la cmdlet **Remove-RetentionComplianceRule** .<br/> |
-| Étiquette de rétention supprimée <br/> |RemoveComplianceTag<br/>  | L'administrateur supprime une étiquette de rétention.<br/>|
-| Stratégie de rétention supprimée<br/> |RemoveRetentionCompliancePolicy<br/> |L'administrateur supprime une stratégie de rétention. <br/>  |
-| Activer les fonctionnalités de conformité réglementaire<br/> |SetRestrictiveRetentionUI<br/> |L'administrateur Active les fonctionnalités de conformité réglementaire en exécutant la cmdlet **Set-RegulatoryComplianceUI** . Une fois cette cmdlet exécutée, les administrateurs peuvent verrouiller une stratégie de rétention et spécifier une étiquette de rétention en tant qu'enregistrement réglementaire à l'aide de l'interface utilisateur du centre de sécurité & conformité. Jusqu'à ce qu'une organisation utilise l'applet de commande **Set-RegulatoryComplianceUI** pour activer ces fonctionnalités, le verrouillage d'une stratégie de rétention et la création d'une étiquette de rétention réglementaire ne peuvent être accomplies qu'à l'aide de PowerShell. <br/>|
-| Configuration de la rétention mise à jour pour une stratégie de rétention<br/> | SetRetentionComplianceRule<br/>| L'administrateur modifie les paramètres de rétention d'une stratégie de rétention existante. Les paramètres de réTention incluent la durée de conservation des éléments, ainsi que les éléments au moment de l'expiration de la période de rétention (par exemple, la suppression des éléments, la conservation des éléments ou la conservation et la suppression des éléments). Cette activité correspond également à l'exécution de la cmdlet [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule) . <br/>|
-| Étiquette de rétention mise à jour <br/> |SetComplianceTag<br/>  | L'administrateur met à jour une étiquette de rétention existante.<br/>|
-| Stratégie de rétention mise à jour<br/> |SetRetentionCompliancePolicy <br/>|L'administrateur met à jour une stratégie de rétention existante. Les mises à jour qui déclenchent cet événement incluent l'ajout ou l'exclusion d'emplacements de contenu auxquels la stratégie de rétention est appliquée.<br/>|
 ||||
 
 ### <a name="sway-activities"></a>Activités Sway
@@ -725,7 +704,7 @@ Pour plus d'informations sur les fonctionnalités d'audit et de création de rap
 
 **Quels sont les différents services Office 365 actuellement audités?**
 
-Les services Office 365 les plus utilisés comme Exchange Online, SharePoint, OneDrive, Azure Active Directory, Microsoft Teams, CRM, la protection avancée contre les menaces et la protection contre la perte de données sont audités. Consultez la section [Introduction](#search-the-audit-log-in-the-office-365-security-amp-compliance-center) de cet article pour obtenir une liste complète.
+Les services Office 365 les plus utilisés tels qu'Exchange Online, SharePoint Online, OneDrive entreprise, Azure Active Directory, Microsoft Teams, Dynamics 365, Advanced Threat Protection et Power BI sont audités. Consultez le [début de cet article](search-the-audit-log-in-security-and-compliance.md) pour obtenir la liste des services qui sont audités.
 
 **Quelles sont les activités auditées par le service d'audit dans Office 365?**
 
@@ -771,15 +750,3 @@ Non. Nous disposons actuellement de déploiements de pipeline d'audit dans les r
 **Les données d'audit sont-elles chiffrées?**
 
 Les données d'audit sont stockées dans les boîtes aux lettres Exchange (données au repos) dans la région où le pipeline d'audit est déployé. Ces données ne sont pas chiffrées. Toutefois, les données en transit sont toujours chiffrées. 
-
-
-
-
-
-
-
-
-
-
-
-

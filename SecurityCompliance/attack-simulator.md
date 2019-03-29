@@ -15,12 +15,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: En tant qu'administrateur général Office 365, vous pouvez utiliser un simulateur d'attaque pour exécuter des scénarios d'attaque réaliste dans votre organisation. Cela peut vous aider à identifier et à trouver des utilisateurs vulnérables avant qu'une attaque réelle ne touche votre entreprise.
-ms.openlocfilehash: e372fe3c4cc10c4f96836db394fbccd2f180145a
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 88e71fe2db0ed9149ab84bb99e8b04910afdc265
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693663"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862456"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulateur d’attaques dans Office 365
 
@@ -33,11 +33,9 @@ ms.locfileid: "30693663"
 
 Trois types de simulations d'attaques sont actuellement disponibles:
   
-- [Nom d'affichage-attaque de Spear Phishing](attack-simulator.md#spearphish)
-    
-- [Attaque par pulvérisation de mot de passe](attack-simulator.md#passwordspray)
-    
-- [Attaque de mot de passe en force brute](attack-simulator.md#bruteforce)
+- [Nom d'affichage-attaque de Spear Phishing](#display-name-spear-phishing-attack)
+- [Attaque par pulvérisation de mot de passe](#password-spray-attack)
+- [Attaque de mot de passe en force brute](#brute-force-password-attack)
     
 Pour qu'une attaque réussisse, vous utilisez l'authentification multifacteur sur le compte que vous utilisez pour exécuter des attaques simulées. En outre, vous devez être un administrateur général Office 365.
   

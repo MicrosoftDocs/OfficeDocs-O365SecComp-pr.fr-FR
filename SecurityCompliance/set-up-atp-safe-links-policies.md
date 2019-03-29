@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: ConFigurez des stratégies de liens fiables pour protéger votre organisation contre les liens malveillants dans les fichiers Word, Excel, PowerPoint et Visio, ainsi que dans les messages électroniques.
-ms.openlocfilehash: e9ab086454703113bca6e8b260ba898a5e36ef9b
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: d02866b7ab9a4da30a14aa0c55a42935926e99e3
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296827"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862476"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configuration des stratégies de liens approuvés Office 365 ATP
 
@@ -33,13 +33,13 @@ De [nouvelles fonctionnalités sont continuellement ajoutées à](office-365-atp
 
 ## <a name="what-to-do"></a>Procédure 
   
-1. [Passez en revue les conditions préalables](#review-the-prerequisites).
+1. Passez en revue les conditions préalables.
     
-2. [Passez en revue et modifiez la stratégie de liens approuvés par défaut ATP qui s'applique à tout le monde](#define-an-atp-safe-links-policy-that-applies-to-everyone). Par exemple, vous pouvez [configurer votre liste d'URL bloquées personnalisées pour les liens fiables ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md).
+2. Passez en revue et modifiez la stratégie de liens approuvés par défaut ATP qui s'applique à tout le monde. Par exemple, vous pouvez [configurer votre liste d'URL bloquées personnalisées pour les liens fiables ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md).
     
-3. [Ajouter ou modifier des stratégies pour des destinataires de messagerie spécifiques](#add-a-policy-for-specific-email-recipients), y compris [la configuration de votre liste d'URL «ne pas réécrire» personnalisée pour les liens fiables ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
+3. Ajouter ou modifier des stratégies pour des destinataires de messagerie spécifiques, y compris [la configuration de votre liste d'URL «ne pas réécrire» personnalisée pour les liens fiables ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
     
-4. [En savoir plus sur les options de stratégie de liens fiables ATP](#learn-about-atp-safe-links-policy-options) (dans cet article), y compris les paramètres pour les modifications récentes.
+4. Découvrez les options de stratégie de liens approuvés ATP (dans cet article), y compris les paramètres pour les modifications récentes.
     
 ## <a name="step-1-review-the-prerequisites"></a>Étape 1: vérifier les conditions préalables
 
@@ -47,7 +47,7 @@ De [nouvelles fonctionnalités sont continuellement ajoutées à](office-365-atp
     
 - Assurez-vous que vous disposez des autorisations nécessaires. Pour définir (ou modifier) des stratégies ATP, vous devez disposer d'un rôle approprié. Certains exemples sont décrits dans le tableau suivant: <br>
 
-    |Rôle  |WHERE/How Assigned  |
+    |Role  |WHERE/How Assigned  |
     |---------|---------|
     |Administrateur général Office 365 |La personne qui s'inscrit pour acheter Office 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d'administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
     |Administrateur de sécurité |Centre d'administration Azure Active Directory[https://aad.portal.azure.com](https://aad.portal.azure.com)()|
@@ -57,7 +57,7 @@ De [nouvelles fonctionnalités sont continuellement ajoutées à](office-365-atp
 
 - Assurez-vous que les clients Office sont configurés pour utiliser [l'authentification moderne](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) (il s'agit de la protection des liens fiables ATP dans les documents Office).
     
-- [En savoir plus sur les options de stratégie de liens fiables ATP](#learn-about-atp-safe-links-policy-options) (dans cet article). 
+- [En savoir plus sur les options de stratégie de liens fiables ATP](#step-4-learn-about-atp-safe-links-policy-options) (dans cet article). 
 
 - Attendez jusqu'à 30 minutes que votre stratégie nouvelle ou mise à jour se propage à tous les centres de mises à jour Office 365.
     
@@ -75,7 +75,7 @@ Lorsque vous disposez de la [protection avancée contre les menaces Office 365](
     
 5. Dans la section **paramètres qui s'appliquent au contenu à l'exception de la messagerie** , activez (ou désactivez) les options que vous souhaitez utiliser. (Nous vous recommandons de sélectionner toutes les options.) 
     
-6. Sélectionnez **Save (Enregistrer)**.
+6. Cliquez sur **Enregistrer**.
     
 ## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>Étape 3: ajouter (ou modifier) des stratégies de liens fiables ATP qui s'appliquent à des destinataires de messagerie spécifiques
 
@@ -107,7 +107,7 @@ Une fois que vous avez révisé (ou modifié) la stratégie de liens approuvés 
     
   - Dans la section **appliqué à** , choisissez **le destinataire est membre de**, puis choisissez le ou les groupes que vous souhaitez inclure dans votre stratégie. Choisissez **Ajouter**, puis choisissez **OK**.
     
-6. Sélectionnez **Save (Enregistrer)**.
+6. Cliquez sur **Enregistrer**.
     
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>Étape 4: en savoir plus sur les options de stratégie de liens approuvés ATP
 
@@ -130,13 +130,13 @@ Les options de stratégie par défaut s'appliquent à tous les membres de votre 
 
 |Cette option  |Effectue cette action  |
 |---------|---------|
-|**Off** <br/> |N'analyse pas les URL dans les messages électroniques.  <br/> Vous permet de définir une règle d'exception, telle qu'une règle qui n'analyse pas les URL dans les messages électroniques pour un groupe spécifique de destinataires.  <br/> |
-|**Pour** <br/> |Réécrit les URL pour acheminer les utilisateurs via la protection de liens fiables ATP lorsque les utilisateurs cliquent sur les URL dans les messages électroniques.  <br/> Vérifie une URL lorsque vous cliquez sur une liste d'URL bloquées ou malveillantes.  <br/> |
+|**Désactivé** <br/> |N'analyse pas les URL dans les messages électroniques.  <br/> Vous permet de définir une règle d'exception, telle qu'une règle qui n'analyse pas les URL dans les messages électroniques pour un groupe spécifique de destinataires.  <br/> |
+|**On** <br/> |Réécrit les URL pour acheminer les utilisateurs via la protection de liens fiables ATP lorsque les utilisateurs cliquent sur les URL dans les messages électroniques.  <br/> Vérifie une URL lorsque vous cliquez sur une liste d'URL bloquées ou malveillantes.  <br/> |
 |**Utiliser les pièces jointes fiables pour analyser le contenu téléchargeable** <br/> |Lorsque cette option est sélectionnée, les URL qui pointent vers du contenu téléchargeable sont analysées.  <br/> |
 |**Appliquer des liens fiables aux messages envoyés au sein de l'Organisation** <br/> | Lorsque cette option est disponible et sélectionnée, la protection des liens fiables ATP est appliquée aux messages électroniques envoyés entre les personnes de votre organisation, à condition que les comptes de messagerie soient hébergés dans Office 365.  <br/> |
 |**Ne pas suivre les clics des utilisateurs** <br/> |Lorsque cette option est sélectionnée, les données des URL des expéditeurs externes ne sont pas stockées. URL le suivi des liens dans les messages électroniques envoyés au sein de l'organisation n'est pas pris en charge actuellement.  <br/> |
 |**Ne pas autoriser les utilisateurs à cliquer vers l'URL d'origine** <br/> |Lorsque cette option est sélectionnée, les utilisateurs ne peuvent pas passer une [page d'avertissement](atp-safe-links-warning-pages.md) à une URL qui est considérée comme malveillante.  <br/> |
-|**Ne pas réécrire les URL suivantes** <br/> |Laisse les URL telles quelles. Conserve une liste personnalisée d'URL sûres qui n'ont pas besoin d'être analysées pour un groupe spécifique de destinataires de messagerie dans votre organisation.  Pour plus d'informations, rePortez-vous à [la rubrique Configurer une liste d'URL «ne pas réécrire» personnalisée à l'aide de liens fiables ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) , y compris les modifications récentes de la prise en charge des astérisques génériques (\*).<br/> |
+|**Ne pas réécrire les URL suivantes** <br/> |Laisse les URL telles quelles. Conserve une liste personnalisée d'URL sûres qui n'ont pas besoin d'être analysées pour un groupe spécifique de destinataires de messagerie dans votre organisation.  Pour plus d'informations, rePortez-vous à [la rubrique Configurer une liste d'URL «ne pas réécrire» personnalisée à l'aide de liens fiables ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) , y compris les modifications récentes de la prise en charge des astérisques génériques (\*).  <br/> |
    
 ## <a name="next-steps"></a>Étapes suivantes
 

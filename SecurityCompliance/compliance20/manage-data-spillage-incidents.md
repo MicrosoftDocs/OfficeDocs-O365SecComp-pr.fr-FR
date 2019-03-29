@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article décrit l'utilisation de l'outil nouvelles enquêtes de données (aperçu) dans le centre de sécurité & de la sécurité d'Office 365 pour gérer un incident de fuite de données.
-ms.openlocfilehash: d130983bc87ae5cbb962f9271d8b4b505db0e6f1
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 33943ee4367e01f413cfa7840c796d5197323185
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295807"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862556"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Gérer un incident de fuite de données dans Microsoft 365 
 
@@ -96,20 +96,20 @@ Pour créer une enquête sur les données:
  
 Si vous identifiez les utilisateurs pour lesquels vous souhaitez rechercher des données déduites, vous pouvez les ajouter en tant que personnes intéressantes pour mapper leurs sources de données à l'enquête et effectuer rapidement des recherches dans leurs comptes de boîte aux lettres et OneDrive. Pour ajouter des personnes intéressantes pour l'enquête, cliquez sur **personnes intéressantes**, puis sur **Ajouter des personnes intéressantes**. 
 
-Dans l'onglet **recherches** , vous pouvez créer des recherches pour trouver les données déversées. Vous allez utiliser la même requête de recherche que celle que vous avez utilisée pour trouver les données déversées afin de supprimer ces mêmes messages à l' [étape 4](##step-4:-permanently-delete-the-spilled-data). Pour plus d'informations sur la création de recherches, voir [créer une recherche pour collecter des données](create-search-to-collect-data.md).
+Dans l'onglet **recherches** , vous pouvez créer des recherches pour trouver les données déversées. Vous allez utiliser la même requête de recherche que celle que vous avez utilisée pour trouver les données déversées afin de supprimer ces mêmes messages à l' [étape 4](#step-4-permanently-delete-the-spilled-data). Pour plus d'informations sur la création de recherches, voir [créer une recherche pour collecter des données](create-search-to-collect-data.md).
 
 Après avoir exécuté la recherche, vous pouvez prévisualiser des exemples de résultats de recherche et afficher des statistiques de recherche pour évaluer l'efficacité de votre requête de recherche. Une fois que vous avez identifié les éléments que vous souhaitez supprimer d'Office 365, vous pouvez cliquer sur l'onglet **incidents** , puis créer un incident et ajouter des résultats de recherche qui contiennent ces éléments. 
 
-Pour ce faire, cliquez sur la recherche que vous souhaitez examiner. Sur la page de la fenêtre volante, cliquez sur **Ajouter les résultats à l'incident** et suivez les instructions. Ensuite, dans l'incident, vous pouvez passer en revue des documents individuels, examiner qui a eu accès aux documents et exporter les documents. Pour supprimer simplement les documents au lieu de les passer en revue, passez à l' [étape 4](##step-4:-permanently-delete-the-spilled-data). 
+Pour ce faire, cliquez sur la recherche que vous souhaitez examiner. Sur la page de la fenêtre volante, cliquez sur **Ajouter les résultats à l'incident** et suivez les instructions. Ensuite, dans l'incident, vous pouvez passer en revue des documents individuels, examiner qui a eu accès aux documents et exporter les documents. Pour supprimer simplement les documents au lieu de les passer en revue, passez à l' [étape 4](#step-4-permanently-delete-the-spilled-data). 
 
 > [!IMPORTANT]
-> Les mots clés que vous utilisez dans la requête de recherche peuvent contenir les données propagées réelles que vous recherchez. Par exemple, si vous recherchez des documents contenant un numéro de sécurité sociale et que vous l'utilisez comme mot clé dans la requête de recherche, vous devez supprimer la requête par la suite afin d'éviter toute aggravation. Vous pouvez supprimer la recherche ou supprimer l'intégralité de l'analyse à l' [étape 5](##step-5:-close-or-delete-investigation). 
+> Les mots clés que vous utilisez dans la requête de recherche peuvent contenir les données propagées réelles que vous recherchez. Par exemple, si vous recherchez des documents contenant un numéro de sécurité sociale et que vous l'utilisez comme mot clé dans la requête de recherche, vous devez supprimer la requête par la suite afin d'éviter toute aggravation. Vous pouvez supprimer la recherche ou supprimer l'intégralité de l'analyse à l' [étape 5](#step-5-close-or-delete-the-investigation). 
 
 ## <a name="step-3-review-and-investigate"></a>Étape 3: vérifier et examiner 
 
 Dans l'enquête, accédez à l'onglet **incidents** et cliquez sur l'incident que vous avez créé à l'étape précédente. Une fois le travail de traitement terminé et les résultats de la recherche ajoutés à l'incident, vous pouvez passer en revue les différents documents dans leur format natif, format texte ou quasi-natif. Vous pouvez créer des requêtes supplémentaires pour affiner la liste des documents et marquer des documents pour indiquer les conclusions de votre enquête.
 
-Pour regrouper des documents et obtenir de l'aide supplémentaire pour votre révision, cliquez sur **gérer l'incident**. Dans la vignette **analyse** , cliquez sur **analyser**. Cette opération exécute des analyses avancées, telles que la détection des doublons, le Threading de messagerie électronique et l'analyse de thème. Pour plus d'informations, voir:
+Pour regrouper des documents et obtenir de l'aide supplémentaire pour votre révision, cliquez sur **gérer l'incident**. Dans la vignette **analyse** , cliquez sur **analyser**. Cette opération exécute des analyses avancées, telles que la détection des doublons, le Threading de messagerie électronique et l'analyse de thème. Pour plus d'informations, consultez les rubriques suivantes :
 
 - [Détecter des quasi-duplicatas](near-duplicates.md)
 - [Threading de messagerie](email-threading.md)
