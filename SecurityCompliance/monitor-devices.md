@@ -1,5 +1,5 @@
 ---
-title: Surveiller les appareils dans la sécurité Microsoft 365
+title: Surveillance des appareils dans Sécurité Microsoft 365
 description: Décrit comment maintenir vos appareils sécurisés, mis à jour et détecter les menaces potentielles au sein de votre organisation
 keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, moniteur, rapport, appareils
 ms.prod: w10
@@ -11,16 +11,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 43d074a9d42703b60b7b8eb17bdaf83a9360ce2d
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: fea3f35e0fca3ccc8148d93b7a535c98dd2d32b9
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30791678"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000527"
 ---
-# <a name="monitor-devices-in-microsoft-365-security"></a>Surveiller les appareils dans la sécurité Microsoft 365
-
-[!include[Prerelease�information](prerelease.md)]
+# <a name="monitor-devices-in-microsoft-365-security"></a>Surveillance des appareils dans Sécurité Microsoft 365
 
 Maintenez vos appareils sécurisés, mis à jour, et présentez les menaces potentielles dans le centre de sécurité Microsoft 365.
 

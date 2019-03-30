@@ -7,19 +7,19 @@ ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Définit et décrit l'immuabilité des données, ou les données qui doivent être détectables et qui ne peuvent pas être détruites ou modifiées.
-ms.openlocfilehash: 5d0deef04d879959238dbbcfe36bb98ed0159242
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d3f02a088ede557a1e7308182b2ec6e378cd418e
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215564"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004151"
 ---
 # <a name="immutability-in-office-365"></a>Immuabilité dans Office 365
 Pour certaines organisations, le respect de la réglementation, les exigences de gouvernance interne ou le risque de contentieux nécessitent la conservation de la messagerie et des données associées sous une forme découvrable. Toutes les données du système doivent être découvrables et aucune ne peut être détruite ou modifiée. Le terme standard du secteur est «immuabilité». 
@@ -35,9 +35,9 @@ Grâce à la configuration des fonctionnalités de stratégie de rétention et d
 - Documents partagés pendant les réunions en ligne
 - Messages vocaux
 
-De plus, Microsoft a développé des fonctionnalités complémentaires pour permettre [l'archivage des données](https://support.office.com/article/Archiving-third-party-data-in-Office-365-0ce338d5-3666-4a18-86ab-c6910ff408cc) provenant d'autres sources via l'intégration de solutions de capture et de gestion de données tierces. Une fois les données tierces importées, vous pouvez appliquer les fonctionnalités de conformité d'Office 365 aux données, notamment la mise en attente pour litige, la découverte électronique et la conservation inaltérable, la recherche de conformité, l'archivage inaltérable, l'audit et les stratégies de réTention. Par exemple, lorsqu'une boîte aux lettres est placée en conservation pour litige, les données tierces sont conservées. Vous pouvez rechercher des données tierces à l'aide de la découverte électronique inaltérable ou de la recherche de conformité. Vous pouvez également appliquer des stratégies d'archivage et de rétention à des données tierces, comme vous pouvez le faire pour Microsoft Data. En bref, l'archivage des données tierces dans Office 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
+De plus, Microsoft a développé des fonctionnalités complémentaires pour permettre [l'archivage des données](https://support.office.com/article/Archiving-third-party-data-in-Office-365-0ce338d5-3666-4a18-86ab-c6910ff408cc) provenant d'autres sources via l'intégration de solutions de capture et de gestion de données tierces. Une fois les données tierces importées, vous pouvez appliquer les fonctionnalités de conformité d'Office 365 aux données, notamment la mise en attente pour litige, la découverte électronique et la conservation inaltérable, la recherche de conformité, l'archivage inaltérable, l'audit et les stratégies de réTention. Par exemple, lorsqu’une boîte aux lettres est placée en conservation pour litige, les données tierces sont conservées. Vous pouvez rechercher des données tierces à l’aide de la découverte électronique inaltérable ou de la recherche de conformité. Vous pouvez également appliquer des stratégies d’archivage et de rétention aux données tierces, de la même manière que pour les données Microsoft. En bref, l'archivage des données tierces dans Office 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
-L'archivage dans Office 365 fournit des valeurs mobilières et des commissions Exchange (SEC) pour la règle de stockage conforme à la norme 17A -4, et conserve les fichiers permanents de toutes les données collectées dans un format non réinscriptible et non effaçable à l'aide de stratégies de rétention sur place et de stratégies de conservation. , y compris le verrouillage de conservation. Été
+L'archivage dans Office 365 fournit des valeurs mobilières et des commissions Exchange (SEC) pour la règle de stockage conforme à la norme 17A -4, et conserve les fichiers permanents de toutes les données collectées dans un format non réinscriptible et non effaçable à l'aide de stratégies de rétention sur place et de stratégies de conservation. , y compris le verrouillage de conservation. Notamment :
 - Tous les enregistrements stockés à l'aide des stratégies de rétention indiquées ci-dessus sont conservés dans une zone de stockage dédiée à partir de l'PurVIEW de l'utilisateur ordinaire. De plus, seuls les utilisateurs autorisés peuvent accéder à ces enregistrements et les Rechercher, mais ils ne peuvent pas les modifier ou les supprimer.
 - Les métadonnées de chaque élément incluent un horodatage utilisé dans le calcul de la durée de rétention. Les horodatages sont appliqués lorsqu'un nouvel élément est reçu ou créé et qu'il ne peut pas être modifié ou supprimé par la suite des métadonnées.
 - L'archivage dans Office 365 permet aux utilisateurs de combiner différentes stratégies de rétention et actions de conservation pour créer des stratégies de rétention granulaires afin de définir le type ou l'emplacement des éléments à immuablement conserver, ainsi que la durée de cette conservation.

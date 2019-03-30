@@ -3,30 +3,29 @@ title: RéSilience de données Exchange 365 Office
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Explication des différents aspects de la résilience des données dans Exchange Online et Office 365.
-ms.openlocfilehash: 02395c9d87f9f75b260bac88e97db3df7d23e532
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 9e61efaf95d466fcb268e12317c7feab0701c062
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220404"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004231"
 ---
 # <a name="exchange-online-data-resiliency-in-office-365"></a>RéSilience des données Exchange Online dans Office 365
 
 ## <a name="introduction"></a>Introduction
 Il existe deux types d'endommagement pouvant avoir une incidence sur une base de données Exchange: la corruption physique, généralement causée par du matériel (en particulier, des problèmes de matériel de stockage) et une altération logique, qui se produit en raison d'autres facteurs. En règle générale, il existe deux types de corruption logique pouvant se produire dans une base de données Exchange: 
-- **Corruption logique de la base** de données: le checksum de la page de base de données correspond, mais les données de la page sont incorrectes logiquement. Cela peut se produire lorsque le moteur de base de données (moteur de stockage extensible) tente d'écrire une page de base de données et même si le système d'exploitation renvoie un message de réussite, si les données ne sont pas écrites sur le disque ou si elles sont écrites au mauvais endroit. Il s'agit d'un *vidage perdu*. Le moteur ESE inclut de nombreuses fonctionnalités et protections qui sont conçues pour empêcher la corruption physique d'une base de données et d'autres scénarios de perte de données. Pour éviter la perte de données par des vidages perdus, le moteur ESE inclut un mécanisme de détection de vidage perdu dans la base de données, ainsi qu'une fonctionnalité de restauration d'une seule page. 
-- **Corruption logique de magasin** : des données sont ajoutées, supprimées ou manipulées de telle sorte que l'utilisateur ne s'attend pas. Ces cas sont généralement causés par des applications tierces. En règle générale, il s'agit uniquement d'une altération du sens que l'utilisateur affiche comme endommagé. La Banque d'Exchange considère la transaction qui a produit l'altération logique comme une série d'opérations MAPI valides. Les fonctionnalités de [conservation](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) inaltérable d'Exchange Online procurent une protection contre l'altération logique du magasin (car elle empêche la suppression définitive du contenu par un utilisateur ou une application). 
+- **Corruption logique de la base** de données: le checksum de la page de base de données correspond, mais les données de la page sont incorrectes logiquement. Cela peut se produire lorsque le moteur de base de données (moteur de stockage extensible) tente d'écrire une page de base de données et même si le système d'exploitation renvoie un message de réussite, si les données ne sont pas écrites sur le disque ou si elles sont écrites au mauvais endroit. Il s’agit d’un *vidage perdu*. Le moteur ESE inclut de nombreuses fonctionnalités et protections qui sont conçues pour empêcher la corruption physique d'une base de données et d'autres scénarios de perte de données. Pour éviter la perte de données par des vidages perdus, le moteur ESE inclut un mécanisme de détection de vidage perdu dans la base de données, ainsi qu'une fonctionnalité de restauration d'une seule page. 
+- **Corruption logique de magasin** : des données sont ajoutées, supprimées ou manipulées de telle sorte que l'utilisateur ne s'attend pas. Ces cas sont généralement provoqués par des applications tierces. Ce n'est généralement de la corruption que dans le sens où l'utilisateur voit cela comme une altération. La banque d'informations Exchange considère la transaction qui est à l'origine de l'altération logique comme une série d'opérations MAPI valides. Les fonctionnalités de [conservation](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) inaltérable d'Exchange Online procurent une protection contre l'altération logique du magasin (car elle empêche la suppression définitive du contenu par un utilisateur ou une application). 
 
 Exchange Online effectue plusieurs contrôles de cohérence sur les fichiers journaux répliqués lors de l'inspection et de la relecture des journaux. Ces vérifications de cohérence empêchent la réplication physique du système. Par exemple, lors de l'inspection du journal, il existe une vérification de l'intégrité physique qui vérifie le fichier journal et vérifie que le checksum enregistré dans le fichier journal correspond à la somme de contrôle générée en mémoire. En outre, l'en-tête du fichier journal est examiné pour s'assurer que la signature du fichier journal enregistré dans l'en-tête du journal correspond à celle du fichier journal. Lors de la relecture du journal, le fichier journal est en cours d'examen. Par exemple, l'en-tête de base de données contient également la signature de journal qui est comparée à la signature du fichier journal pour s'assurer qu'elles correspondent. 
 
@@ -58,7 +57,7 @@ Exchange Online inclut deux fonctionnalités principales de résilience de trans
 
 Avec la redondance des clichés instantanés, chaque serveur de transport Exchange Online effectue une copie de chaque message qu'il reçoit avant de reconnaître le message au serveur d'envoi. Cela rend tous les messages dans le pipeline de transport redondants pendant le transit. Si Exchange Online détermine que le message d'origine a été perdu en transit, une copie redondante du message est redistribuée. 
 
-Safety net est une file d'attente de transport qui est associée au service de transport sur un serveur de boîtes aux lettres. Cette file d'attente stocke des copies des messages traités avec succès par le serveur. Lorsqu'une défaillance de serveur ou de base de données de boîte aux lettres nécessite l'activation d'une copie obsolète de la base de données de boîtes aux lettres, les messages de la file d'attente de sécurité sont automatiquement renvoyés à la nouvelle copie active de la base de données de boîtes aux lettres. Safety net est également redondant, ce qui élimine le transport en tant que point de défaillance unique. Il utilise le concept de dispositif de sécurité principal et de dispositif de sécurité de secours où, si le filet de sécurité principal n'est pas disponible pendant plus de 12 heures, les demandes de nouveau renvoi deviennent des demandes de retransmission de clichés instantanés et les messages sont remis à partir du dispositif de sécurité de secours.
+Safety net est une file d'attente de transport qui est associée au service de transport sur un serveur de boîtes aux lettres. Cette file d'attente stocke des copies des messages qui ont été correctement traités par le serveur. Lorsqu'une défaillance de serveur ou de base de données de boîte aux lettres nécessite l'activation d'une copie obsolète de la base de données de boîtes aux lettres, les messages de la file d'attente de sécurité sont automatiquement renvoyés à la nouvelle copie active de la base de données de boîtes aux lettres. Safety net est également redondant, ce qui élimine le transport en tant que point de défaillance unique. Il utilise le concept de dispositif de sécurité principal et de dispositif de sécurité de secours où, si le filet de sécurité principal n'est pas disponible pendant plus de 12 heures, les demandes de nouveau renvoi deviennent des demandes de retransmission de clichés instantanés et les messages sont remis à partir du dispositif de sécurité de secours.
 
 Les retransmissions de messages à partir de Safety Net sont automatiquement initiées par le composant Gestionnaire Active Manager du service de réPlication Microsoft Exchange qui gère les copies des bases de données de Dag et de boîtes aux lettres. Aucune action manuelle n'est requise pour resoumettre des messages à partir de Safety Net. 
 

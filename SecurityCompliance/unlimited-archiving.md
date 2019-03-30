@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Découvrez la croissance automatique de l'archivage dans Office 365, qui offre un stockage d'archive illimité pour les boîtes aux lettres Exchange Online.
-ms.openlocfilehash: 4ed1260cdf348d0bd29d88952ab69d234f044c26
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 38fab68ee8e5c2bdd38bc60b08929bd6f6025e1b
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296647"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000787"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Vue d'ensemble d'un archivage illimité dans Office 365
 
@@ -29,7 +29,7 @@ Dans Office 365, les boîtes aux lettres d'archivage fournissent aux utilisateur
 Pour obtenir des instructions détaillées sur l'activation de l'archivage à extension automatique, consultez la rubrique [activation de l'archivage illimité dans Office 365](enable-unlimited-archiving.md).
   
 > [!NOTE]
-> L'archivage à extension automatique prend également en charge les boîtes aux lettres partagées. Pour activer l'archivage pour une boîte aux lettres partagée, une licence Exchange Online plan 2 ou une licence Exchange Online plan 1 avec une licence d'archivage Exchange Online est requise. 
+> L’archivage à extension automatique prend aussi en charge les boîtes aux lettres partagées. Pour activer l'archivage pour une boîte aux lettres partagée, une licence Exchange Online plan 2 ou une licence Exchange Online plan 1 avec une licence d'archivage Exchange Online est requise. 
   
 ## <a name="how-auto-expanding-archiving-works"></a>Fonctionnement de l'archivage en développement automatique
 
@@ -97,7 +97,7 @@ Cette section décrit la fonctionnalité entre l'archivage et les autres fonctio
   
 - **découverte électronique** : lorsque vous utilisez un outil ediscovery Office 365, tel que la recherche de contenu ou la découverte électronique inaltérable, les zones de stockage supplémentaires dans une archive étendue automatiquement sont également recherchées.
     
-- **** Rétention: lorsque vous placez une boîte aux lettres en conservation à l'aide d'outils comme la conservation pour litige dans Exchange Online ou de stratégies de rétention de cas eDiscovery dans le centre de sécurité &, le contenu situé dans un archivage développé automatiquement est également mis en attente.
+- **** Rétention: lorsque vous placez une boîte aux lettres en conservation à l'aide d'outils comme la conservation pour litige dans Exchange Online ou la stratégie de rétention et les stratégies de rétention dans le centre de sécurité et de conformité, le contenu situé dans un archivage développé automatiquement est également placé en conservation.
     
 - **Gestion des enregistrements de messagerie (MRM)** : Si vous utilisez des stratégies de suppression MRM dans Exchange Online pour supprimer définitivement des éléments de boîte aux lettres expirés, les éléments expirés situés dans l'archive étendue automatiquement seront également supprimés.
     

@@ -1,5 +1,5 @@
 ---
-title: Gérer les enquêtes judiciaires dans Office 365
+title: Gérer les enquêtes juridiques dans Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,17 +12,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
-description: Utilisez des cas eDiscovery dans le centre de &amp; sécurité conformité Office 365 pour gérer l'enquête légale de votre organisation. Si vous disposez d'un abonnement E5, vous pouvez analyser les données de cas en utilisant les fonctionnalités d'analyse de texte, d'apprentissage automatique et de codage prédictif de Advanced eDiscovery.
-ms.openlocfilehash: b97bd99740e2db090df70af0c76070186f5b8ccf
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: Utilisez des cas eDiscovery dans le centre de sécurité & Compliance dans Office 365 pour gérer l'enquête légale de votre organisation. Si vous disposez d'un abonnement E5, vous pouvez analyser les données de cas en utilisant les fonctionnalités d'analyse de texte, d'apprentissage automatique et de codage prédictif de Advanced eDiscovery.
+ms.openlocfilehash: 5bfa4719f2bb065a7064e7dc9d02778a4d032da8
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296897"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999917"
 ---
-# <a name="manage-legal-investigations-in-office-365"></a>Gérer les enquêtes judiciaires dans Office 365
+# <a name="manage-legal-investigations-in-office-365"></a>Gérer les enquêtes juridiques dans Office 365
 
-Les organisations ont de nombreuses raisons de répondre à un cas juridique impliquant certains cadres ou d'autres employés de votre organisation. Il peut être nécessaire de trouver et de contourner rapidement des informations spécifiques dans des e-mails, des documents, des conversations de messagerie instantanée et dans d'autres emplacements de contenu de contenu, utilisés par les employés dans leurs tâches quotidiennes. Vous pouvez effectuer ces opérations et de nombreuses autres activités similaires à l'aide des outils de cas eDiscovery dans &amp; le centre de sécurité conformité Office 365.
+Les organisations ont de nombreuses raisons de répondre à un cas juridique impliquant certains cadres ou d'autres employés de votre organisation. Il peut être nécessaire de trouver et de contourner rapidement des informations spécifiques dans des e-mails, des documents, des conversations de messagerie instantanée et dans d'autres emplacements de contenu de contenu, utilisés par les employés dans leurs tâches quotidiennes. Vous pouvez effectuer ces opérations et de nombreuses autres activités similaires à l'aide des outils de cas eDiscovery dans le centre de sécurité & Compliance Center.
   
 [Gérer les enquêtes juridiques avec des cas eDiscovery](#manage-legal-investigations-with-ediscovery-cases)
   
@@ -46,7 +46,7 @@ les cas eDiscovery vous permettent de contrôler qui peut créer, consulter et g
     
 ### <a name="use-scripts-for-advanced-scenarios"></a>Utiliser des scripts pour les scénarios avancés
 
-Comme dans la section précédente qui répertoriait les scripts pour les scénarios de recherche de contenu, &amp; nous avons également créé certains scripts PowerShell du centre de sécurité pour vous aider à gérer les cas de découverte électronique.
+Comme dans la section précédente qui répertoriait les scripts pour les scénarios de recherche de contenu, nous avons également créé des scripts PowerShell du centre de sécurité & pour vous aider à gérer les cas de découverte électronique.
   
 - [Créer un rapport de conservation de découverte électronique](create-a-report-on-holds-in-ediscovery-cases.md) contenant des informations sur toutes les suspensions associées aux cas de découverte électronique dans votre organisation 
     
@@ -54,18 +54,18 @@ Comme dans la section précédente qui répertoriait les scripts pour les scéna
   
 ## <a name="analyze-case-data-using-office-365-advanced-ediscovery"></a>Analyser les données de cas à l'aide d'Office 365 Advanced eDiscovery
 
-Office 365 Advanced eDiscovery repose sur les fonctionnalités de recherche de contenu et eDiscovery décrites dans les sections précédentes. Après avoir créé un cas de découverte électronique, placez les emplacements des dépositaires en conservation et collectez des données susceptibles de répondre à l'incident, vous pouvez ensuite analyser les données à l'aide de l'analyse de texte, de l'apprentissage automatique et des fonctionnalités de codage prédictive d'Advanced découverte. Cela peut aider votre organisation à traiter rapidement des milliers de messages électroniques, de documents et d'autres types de données pour trouver les éléments les plus pertinents pour un cas spécifique. De plus, nous avons unifié la gestion des cas et Advanced eDiscovery afin de pouvoir gérer de façon transparente le même cas &amp; dans le centre de sécurité conformité.
+Office 365 Advanced eDiscovery repose sur les fonctionnalités de recherche de contenu et eDiscovery décrites dans les sections précédentes. Après avoir créé un cas de découverte électronique, placez les emplacements des dépositaires en conservation et collectez des données susceptibles de répondre à l'incident, vous pouvez ensuite analyser les données à l'aide de l'analyse de texte, de l'apprentissage automatique et des fonctionnalités de codage prédictive d'Advanced découverte. Cela peut aider votre organisation à traiter rapidement des milliers de messages électroniques, de documents et d'autres types de données pour trouver les éléments les plus pertinents pour un cas spécifique. De plus, nous avons unifié la gestion des cas et Advanced eDiscovery afin de pouvoir gérer de façon transparente le même cas dans le centre de sécurité & Compliance Center.
   
 > [!NOTE]
 > Pour analyser les données d'un utilisateur à l'aide de Advanced eDiscovery, l'utilisateur (le dépositaire des données) doit disposer d'une licence Office 365 E5. Par ailleurs, les utilisateurs disposant d'une licence Office 365 E1 ou E3 peuvent se voir attribuer une licence avancée eDiscovery autonome. Les administrateurs et les responsables de la mise en conformité qui sont affectés à des cas et utilisent Advanced eDiscovery pour analyser les données n'ont pas besoin d'une licence E5. 
   
 ### <a name="get-started"></a>Prise en main
 
-Le moyen le plus rapide de commencer à utiliser Advanced eDiscovery est de créer un cas et de préparer les résultats &amp; de recherche dans le centre de sécurité conformité, de charger ces résultats dans Advanced eDiscovery, puis d'exécuter l'analyse rapide pour analyser les données de cas, puis d'exporter le résultats de la révision externe.
+Le moyen le plus rapide de commencer à utiliser Advanced eDiscovery est de créer un incident et de préparer les résultats de la recherche dans le centre de sécurité & Compliance Center, de charger ces résultats dans Advanced eDiscovery, puis d'exécuter l'analyse rapide pour analyser les données de cas, puis d'exporter les résultats. à des fins de révision externe.
   
 - [Obtenir une vue d'ensemble rapide](quick-setup-for-advanced-ediscovery.md) du flux de travail eDiscovery avancé 
     
-- [Configurer des utilisateurs et des cas](set-up-users-and-cases-in-advanced-ediscovery.md) pour Advanced eDiscovery en créant un cas, en attribuant des autorisations eDiscovery et en ajoutant des membres de cas, &amp; tout en utilisant le centre de sécurité conformité 
+- [Configurer des utilisateurs et des cas](set-up-users-and-cases-in-advanced-ediscovery.md) pour Advanced eDiscovery en créant un cas, en attribuant des autorisations eDiscovery et en ajoutant des membres de cas, tout en utilisant le centre de sécurité _AMP_ Compliance Center 
     
 - [Préparer et charger les données de recherche](prepare-data-for-advanced-ediscovery.md) dans le cas d'Advanced eDiscovery 
     

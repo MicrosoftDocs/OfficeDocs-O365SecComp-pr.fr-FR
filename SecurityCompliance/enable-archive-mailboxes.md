@@ -1,5 +1,5 @@
 ---
-title: Activer les boîtes aux lettres d'archivage dans &amp; le centre de sécurité conformité Office 365
+title: Activer les boîtes aux lettres d'archivage dans le centre de sécurité & conformité
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,32 +16,32 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
-description: Utilisez le centre de sécurité &amp; conformité d'Office 365 pour activer les boîtes aux lettres d'archivage afin de prendre en charge les exigences de rétention, eDiscovery et de conservation des messages de votre organisation.
-ms.openlocfilehash: 39cd5fd8d7991b787d95e39e4994dc9b0786522c
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+description: Utilisez le centre de sécurité & conformité dans Office 365 pour activer les boîtes aux lettres d'archivage afin de prendre en charge les exigences de rétention, eDiscovery et de conservation des messages de votre organisation.
+ms.openlocfilehash: 334af008f6eb8baedff1239ed1692a0ad73acdb6
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341795"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000257"
 ---
-# <a name="enable-archive-mailboxes-in-the-office-365-security-amp-compliance-center"></a>Activer les boîtes aux lettres d'archivage dans &amp; le centre de sécurité conformité Office 365
+# <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Activer les boîtes aux lettres d'archivage dans le centre de sécurité & conformité
   
 L'archivage dans Office 365 (également appelé archivage inaltérable) fournit aux utilisateurs un espace de stockage de boîte aux lettres supplémentaire. Une fois que vous avez activé les boîtes aux lettres d'archivage, les utilisateurs peuvent accéder aux messages et les stocker dans leurs boîtes aux lettres d'archivage à l'aide de Microsoft Outlook et Outlook sur le Web (anciennement Outlook Web App). Les utilisateurs peuvent également déplacer ou copier des messages entre leur boîte aux lettres principale et leur boîte aux lettres d'archivage. Ils peuvent également récupérer des éléments supprimés du dossier éléments récupérables dans leur boîte aux lettres d'archivage à l'aide de l'outil récupérer les éléments supprimés. 
   
 > [!TIP]
-> Office 365 offre une quantité illimitée de stockage d'archives grâce à la fonctionnalité d'archivage à extension automatique. Lorsque l'archivage à extension automatique est activé, puis que le quota de stockage initial dans la boîte aux lettres d'archivage d'un utilisateur est atteint, Office 365 ajoute automatiquement de l'espace de stockage supplémentaire. Cela signifie que les utilisateurs ne manqueront pas d'espace de stockage de boîte aux lettres et que vous n'aurez pas à gérer les éléments après l'activation initiale de la boîte aux lettres d'archivage et activez l'archivage à extension automatique pour votre organisation. Pour plus d'informations, reportez-vous à la rubrique [Overview of Unlimited Archiving in Office 365](unlimited-archiving.md). 
+> Office 365 offre une quantité illimitée de stockage d'archives grâce à la fonctionnalité d'archivage à extension automatique. Lorsque l'archivage à extension automatique est activé, puis que le quota de stockage initial dans la boîte aux lettres d'archivage d'un utilisateur est atteint, Office 365 ajoute automatiquement de l'espace de stockage supplémentaire. Cela signifie que les utilisateurs ne manqueront pas d'espace de stockage de boîte aux lettres et que vous n'aurez pas à gérer les éléments après l'activation initiale de la boîte aux lettres d'archivage et activez l'archivage à extension automatique pour votre organisation. Pour plus d'informations, reportez-vous à la rubrique relative à la [présentation de l'archivage illimité dans Office 365](unlimited-archiving.md). 
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez disposer du rôle destinataires de messagerie dans Exchange Online pour activer ou désactiver les boîtes aux lettres d'archivage. Par défaut, ce rôle est affecté aux groupes de rôles Gestion des destinataires et gestion de l'organisation dans la page **autorisations** du centre d'administration Exchange. Si vous ne voyez pas la page d' **Archive** dans &amp; le centre de sécurité conformité, demandez à votre administrateur de vous accorder les autorisations nécessaires. 
+Vous devez disposer du rôle destinataires de messagerie dans Exchange Online pour activer ou désactiver les boîtes aux lettres d'archivage. Par défaut, ce rôle est affecté aux groupes de rôles Gestion des destinataires et gestion de l'organisation dans la page **autorisations** du centre d'administration Exchange. Si vous ne voyez pas la page d' **Archive** dans le centre de sécurité _AMP_ Compliance Center, demandez à votre administrateur de vous accorder les autorisations nécessaires. 
   
-## <a name="enable-an-archive-mailbox"></a>Activation d'une boîte aux lettres d'archivage
+## <a name="enable-an-archive-mailbox"></a>Activation d’une boîte aux lettres d’archivage
   
-1. Accédez à la page [https://protection.office.com](https://protection.office.com).
+1. Accédez à la page [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
-3. Dans le volet gauche du centre de &amp; sécurité conformité, cliquez sur **Archives**de **gouvernance** \> des données.
+3. Dans le volet gauche du centre de sécurité & conformité, cliquez sur **Archives**de **gouvernance** \> des données.
     
     La page **Archive** s’affiche. La colonne **Boîte aux lettres d’archivage** indique si une boîte aux lettres d’archivage est activée ou désactivée pour chaque utilisateur. 
     
@@ -55,24 +55,24 @@ Vous devez disposer du rôle destinataires de messagerie dans Exchange Online po
     
 6. Cliquez sur **Oui** pour activer la boîte aux lettres d’archivage. 
     
-    La création de la boîte aux lettres d'archivage peut prendre quelques instants. Lors de sa création, la **boîte aux lettres d'archivage: activée** s'affiche dans le volet d'informations de l'utilisateur sélectionné. Vous devrez peut-être **** ![cliquer sur Actualiser l'icône](media/O365-MDM-Policy-RefreshIcon.gif) actualiser pour mettre à jour les informations dans le volet d'informations. 
+    La création de la boîte aux lettres d’archivage peut prendre un certain temps. Lors de sa création, la **boîte aux lettres d'archivage: activée** s'affiche dans le volet d'informations de l'utilisateur sélectionné. Vous devrez peut-être **** ![cliquer sur Actualiser l'icône](media/O365-MDM-Policy-RefreshIcon.gif) actualiser pour mettre à jour les informations dans le volet d'informations. 
     
 > [!TIP]
 > Vous pouvez également activer des boîtes aux lettres d’archivage en bloc en sélectionnant plusieurs utilisateurs dont les boîtes aux lettres sont désactivées (à l’aide de la touche Maj ou Ctrl). Une fois les boîtes aux lettres sélectionnées, cliquez sur **Activer** dans le volet des détails.  
   
-## <a name="disable-an-archive-mailbox"></a>Désactiver une boîte aux lettres d'archivage
+## <a name="disable-an-archive-mailbox"></a>Désactiver une boîte aux lettres d’archivage
   
-Vous pouvez également utiliser la page **Archive** du centre de &amp; sécurité conformité pour désactiver la boîte aux lettres d'archivage d'un utilisateur. Une fois que vous avez désactivé une boîte aux lettres d'archivage, vous pouvez la reconnecter à la boîte aux lettres principale de l'utilisateur dans les 30 jours qui suivent sa désactivation. Dans ce cas, le contenu d'origine de la boîte aux lettres d'archivage est restauré. Après 30 jours, le contenu de la boîte aux lettres d'archivage d'origine est supprimé définitivement et ne peut pas être récupéré. Par conséquent, si vous réactivez l'archive plus de 30 jours après l'avoir désactivée, une nouvelle boîte aux lettres d'archivage est créée. 
+Vous pouvez également utiliser la page d' **Archive** dans le centre de sécurité _AMP_ Compliance Center pour désactiver la boîte aux lettres d'archivage d'un utilisateur. Après avoir désactivé une boîte aux lettres d’archivage, vous pouvez la reconnecter à la boîte aux lettres principale de l’utilisateur dans les 30 jours qui suivent sa désactivation. Dans ce cas, le contenu d’origine de la boîte aux lettres d’archivage est restauré. Au bout de 30 jours, le contenu de la boîte aux lettres d’archivage d’origine est définitivement supprimé et ne peut pas être récupéré. Par conséquent, si vous réactivez l’archive plus de 30 jours après l’avoir désactivée, une nouvelle boîte aux lettres d’archivage est créée. 
   
 Notez que la stratégie d'archivage par défaut affectée aux boîtes aux lettres des utilisateurs déplace les éléments vers la boîte aux lettres d'archivage deux ans après la date de remise de l'élément. Si vous désactivez la boîte aux lettres d'archivage d'un utilisateur, aucune action n'est effectuée sur les éléments de boîte aux lettres et ils resteront dans la boîte aux lettres principale de l'utilisateur.
   
 Pour désactiver une boîte aux lettres d'archivage:
   
-1. Accédez à la page [https://protection.office.com](https://protection.office.com).
+1. Accédez à la page [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
-3. Dans le volet gauche du centre de &amp; sécurité conformité, cliquez sur **Archives**de **gouvernance** \> des données.
+3. Dans le volet gauche du centre de sécurité & conformité, cliquez sur **Archives**de **gouvernance** \> des données.
     
     La page **Archive** s’affiche. La colonne **Boîte aux lettres d’archivage** indique si une boîte aux lettres d’archivage est activée ou désactivée pour chaque utilisateur. 
     
@@ -84,7 +84,7 @@ Pour désactiver une boîte aux lettres d'archivage:
     
 6. Cliquez sur **Oui** pour désactiver la boîte aux lettres d’archivage. 
     
-    La désactivation de la boîte aux lettres d'archivage peut prendre quelques instants. Lorsqu'elle est désactivée, la **boîte aux lettres** d'archivage est affichée dans le volet d'informations de l'utilisateur sélectionné. Vous devrez peut-être **** ![cliquer sur Actualiser l'icône](media/O365-MDM-Policy-RefreshIcon.gif) actualiser pour mettre à jour les informations dans le volet d'informations. 
+    La désactivation de la boîte aux lettres d’archivage peut prendre un certain temps. Lorsqu'elle est désactivée, la **boîte aux lettres** d'archivage est affichée dans le volet d'informations de l'utilisateur sélectionné. Vous devrez peut-être **** ![cliquer sur Actualiser l'icône](media/O365-MDM-Policy-RefreshIcon.gif) actualiser pour mettre à jour les informations dans le volet d'informations. 
     
 > [!TIP]
 > Vous pouvez également désactiver des boîtes aux lettres d’archivage en bloc en sélectionnant plusieurs utilisateurs dont les boîtes aux lettres sont activées (à l’aide de la touche Maj ou Ctrl). Une fois les boîtes aux lettres sélectionnées, cliquez sur **Désactiver** dans le volet des détails.  
@@ -97,7 +97,7 @@ La première étape consiste à vous connecter à Exchange Online PowerShell. Po
 
 Une fois que vous êtes connecté à Exchange Online, vous pouvez exécuter les commandes des sections suivantes pour activer ou désactiver les boîtes aux lettres d'archivage.
 
-### <a name="enable-archive-mailboxes"></a>Activation des boîtes aux lettres d’archivage
+### <a name="enable-archive-mailboxes"></a>Activer des boîtes aux lettres d’archivage
 
 Exécutez la commande suivante pour activer la boîte aux lettres d'archivage pour un seul utilisateur.
     
@@ -111,7 +111,7 @@ Exécutez la commande suivante pour activer la boîte aux lettres d'archivage po
   Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
   ```
   
-### <a name="disable-archive-mailboxes"></a>Désactivation des boîtes aux lettres d’archivage
+### <a name="disable-archive-mailboxes"></a>Désactiver les boîtes aux lettres d'archivage
 
 Exécutez la commande suivante pour désactiver la boîte aux lettres d'archivage pour un seul utilisateur.
     
@@ -127,9 +127,9 @@ Exécutez la commande suivante pour désactiver la boîte aux lettres d'archivag
 
 ## <a name="more-information"></a>Plus d’informations
   
-- Les boîtes aux lettres d'archivage vous permettent, ainsi qu'à vos utilisateurs, de répondre aux exigences de rétention, de découverte électronique et de conservation de votre organisation. Par exemple, vous pouvez utiliser la stratégie de rétention Exchange de votre organisation pour déplacer le contenu de boîte aux lettres vers la boîte aux lettres d'archivage des utilisateurs. Lorsque vous utilisez l'outil de recherche de contenu dans &amp; le centre de sécurité conformité pour rechercher du contenu spécifique dans la boîte aux lettres d'un utilisateur, la boîte aux lettres d'archivage de l'utilisateur est également recherchée. En outre, lorsque vous placez une conservation pour litige ou que vous appliquez une stratégie de rétention Office 365 à la boîte aux lettres d'un utilisateur, les éléments de la boîte aux lettres d'archivage sont également conservés.
+- Les boîtes aux lettres d'archivage vous permettent, ainsi qu'à vos utilisateurs, de répondre aux exigences de rétention, de découverte électronique et de conservation de votre organisation. Par exemple, vous pouvez utiliser la stratégie de rétention Exchange de votre organisation pour déplacer le contenu de boîte aux lettres vers la boîte aux lettres d'archivage des utilisateurs. Lorsque vous utilisez l'outil de recherche de contenu dans le centre de sécurité & Compliance Center pour rechercher du contenu spécifique dans la boîte aux lettres d'un utilisateur, la boîte aux lettres d'archivage de l'utilisateur est également recherchée. En outre, lorsque vous placez une conservation pour litige ou que vous appliquez une stratégie de rétention Office 365 à la boîte aux lettres d'un utilisateur, les éléments de la boîte aux lettres d'archivage sont également conservés.
   
-- Lorsqu'une boîte aux lettres d'archivage est activée, les utilisateurs peuvent stocker des messages dans leur boîte aux lettres d'archivage. Les utilisateurs peuvent accéder à leurs boîtes aux lettres d'archivage à l'aide de Microsoft Outlook et d'Outlook sur le Web. À l'aide de l'une de ces applications clientes, les utilisateurs peuvent afficher les messages dans leur boîte aux lettres d'archivage et déplacer ou copier des messages entre leur boîte aux lettres principale et leur boîte aux lettres d'archivage. Les utilisateurs peuvent également récupérer des éléments supprimés du dossier éléments récupérables dans leur boîte aux lettres d'archivage à l'aide de l'outil récupérer les éléments supprimés. 
+- Lorsqu'une boîte aux lettres d'archivage est activée, les utilisateurs peuvent stocker des messages dans leur boîte aux lettres d'archivage. Les utilisateurs peuvent accéder à leurs boîtes aux lettres d'archivage à l'aide de Microsoft Outlook et d'Outlook sur le Web. À l’aide de l’une de ces applications clientes, les utilisateurs peuvent afficher les messages dans leur boîte aux lettres d’archivage et déplacer ou copier des messages entre leur boîte aux lettres principale et la boîte aux lettres d’archivage. Les utilisateurs peuvent également récupérer les éléments supprimés du dossier Éléments récupérables dans leur boîte aux lettres d’archivage à l’aide de l’outil de récupération des éléments supprimés. 
   
 - Une fois les boîtes aux lettres d'archivage activées, votre organisation peut tirer parti de la stratégie de rétention Exchange par défaut (également appelée gestion des enregistrements de messagerie ou stratégie MRM) qui est automatiquement affectée à chaque boîte aux lettres. Lorsqu'une boîte aux lettres d'archivage est activée, la stratégie de rétention Exchange par défaut effectue automatiquement les opérations suivantes: 
   

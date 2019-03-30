@@ -3,30 +3,29 @@ title: Contrôles d’accès des administrateurs dans Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: "Résumé: vue d'ensemble des contrôles d'accès administratif et de la catégorisation des données d'Office 365."
-ms.openlocfilehash: b23fcdcb6c790b3860a24a555424beb3bb99e4f4
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 90dd00049e7e3a9b9548530c42b1c21534cfd7fd
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216024"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004131"
 ---
 # <a name="administrative-access-controls-in-office-365"></a>Contrôles d’accès des administrateurs dans Office 365 
 
 ## <a name="introduction"></a>Introduction
 Microsoft a investi largement et en conséquence sur les systèmes et les contrôles qui automatisent la plupart des opérations Office 365 tout en limitant intentionnellement l'accès de Microsoft au contenu client. Les êtres humains gouvernent le service et le logiciel fonctionne avec le service. Cela permet à Microsoft de gérer Office 365 à l'horizontale, ainsi que de gérer les risques de menaces internes pour le contenu du client, comme les acteurs malveillants, le Spear Phishing d'un ingénieur Microsoft, et ainsi de suite.
 
-Par défaut, les ingénieurs Microsoft disposent de zéro privilège administratif permanent et d'un accès permanent au contenu client dans Office 365. Un ingénieur Microsoft peut disposer d'un accès limité, audité et sécurisé au contenu d'un client pendant une durée limitée, mais uniquement en cas de nécessité pour les opérations de service, et uniquement lorsqu'il est approuvé par un membre de la gestion des cadres dirigeants de Microsoft (et pour les clients qui sont licence pour la fonctionnalité de référentiel sécurisé du client, le client).
+Par défaut, les ingénieurs Microsoft ne disposent d'aucun privilège administratif permanent et d'aucun accès permanent au contenu du client dans Office 365. Un ingénieur Microsoft peut disposer d'un accès limité, audité et sécurisé au contenu d'un client pendant une durée limitée, mais uniquement en cas de nécessité pour les opérations de service, et uniquement lorsqu'il est approuvé par un membre de la gestion des cadres dirigeants de Microsoft (et pour les clients qui sont licence pour la fonctionnalité de référentiel sécurisé du client, le client).
 
 Microsoft fournit des services en ligne, y compris Office 365, à l'aide de plusieurs formes de remise en nuage:
 

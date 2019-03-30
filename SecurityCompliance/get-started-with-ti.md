@@ -15,12 +15,12 @@ ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
 description: Découvrez l'enquête et la réponse aux menaces Office 365 et comment commencer.
-ms.openlocfilehash: a04b39ecb11c33baa647bb9716af9ff12aed755e
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: fd038f706ccb3df68b98f02593e43091484ec0c6
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862518"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998877"
 ---
 # <a name="get-started-with-threat-investigation-and-response-office-365-advanced-threat-protection-plan-2"></a>Prise en main de l'enquête et de la réponse aux menaces (plan Office 365 Advanced Threat Protection Plan 2)
 
@@ -78,13 +78,13 @@ Office 365 Threat invesigation and Response Capabilities sont inclus dans Office
 > [!TIP]
 > Si votre organisation a un abonnement Office 365 qui n'inclut pas ces fonctionnalités d'enquête et de réponse aux menaces, vous pouvez l'acheter en tant que module complémentaire avec Office 365 Advanced Threat Protection. Pour plus d'informations sur les options de plan, voir [Description du service de plateforme office &amp; 365: Centre de sécurité conformité Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) et [acheter ou modifier un composant additionnel pour Office 365 pour les entreprises](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on).
   
-1. En tant qu'administrateur général Office 365, accédez [https://portal.office.com](https://portal.office.com) à et connectez-vous à l'aide de votre compte professionnel ou scolaire pour Office 365. 
+1. En tant qu'administrateur général Office 365, accédez [https://admin.microsoft.com](https://admin.microsoft.com) à et connectez-vous à l'aide de votre compte professionnel ou scolaire pour Office 365. 
     
 2. Choisissez **** \> **facturation** de l'administrateur pour voir le contenu de votre abonnement actuel. 
     - Si vous voyez **office 365 entreprise E5**, votre organisation dispose d'Office 365 Advanced Threat Protection Plan 2 (qui inclut des fonctionnalités d'enquête et de réponse aux menaces). 
     - Si vous voyez un autre abonnement, tel qu' **office 365 entreprise E3** ou **Office 365 Enterprise E1**, envisagez d'ajouter Office 365 Advanced Threat Protection Plan 2. (Pour ce faire, choisissez **+ Ajouter un abonnement**.)
     
-3. Dans le Centre d'administration Office 365, sélectionnez **Utilisateurs** \> **Utilisateurs actifs**.
+3. dans le centre d'administration Microsoft 365, **** \> choisissez utilisateurs **actifs**.
     
 5. Affectez les licences plan 2 de Office 365 Advanced Threat Protection à tous les utilisateurs actifs. (Seuls les utilisateurs disposant d'une licence pour cela s'afficheront dans des rapports, tels que Explorer.)
     

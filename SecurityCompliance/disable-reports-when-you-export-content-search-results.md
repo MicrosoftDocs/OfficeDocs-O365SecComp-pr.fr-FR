@@ -1,5 +1,5 @@
 ---
-title: Désactiver les rapports lorsque vous exportez des résultats de recherche de &amp; contenu dans le centre de sécurité conformité Office 365
+title: Désactiver les rapports lorsque vous exportez les résultats de recherche de contenu
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,17 +10,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
-description: Modifiez le Registre Windows sur votre ordinateur local pour désactiver les rapports lorsque vous exportez les résultats d'une recherche de contenu à &amp; partir du centre de Comliance de sécurité Office 365. La désActivation de ces rapports permet d'accélérer le temps de téléchargement et d'économiser de l'espace disque.
-ms.openlocfilehash: f08f5e7143022591d38bda787301e71ae80fb3d3
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+description: Modifiez le Registre Windows sur votre ordinateur local pour désactiver les rapports lorsque vous exportez les résultats d'une recherche de contenu à partir du centre de sécurité & conformité dans Office 365. La désActivation de ces rapports permet d'accélérer le temps de téléchargement et d'économiser de l'espace disque.
+ms.openlocfilehash: 19d97bbc95be5db6540e6822721752ca62adebfc
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936714"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998764"
 ---
-# <a name="disable-reports-when-you-export-content-search-results-in-the-office-365-security-amp-compliance-center"></a>Désactiver les rapports lorsque vous exportez des résultats de recherche de &amp; contenu dans le centre de sécurité conformité Office 365
+# <a name="disable-reports-when-you-export-content-search-results"></a>Désactiver les rapports lorsque vous exportez les résultats de recherche de contenu
 
-Lorsque vous utilisez l'outil d'exportation de découverte électronique Office 365 pour exporter les résultats d'une recherche de &amp; contenu dans le centre de sécurité conformité, l'outil crée et exporte automatiquement deux rapports contenant des informations supplémentaires sur le contenu exporté. Ces rapports sont les fichiers Results. csv et manifest. XML (voir la section Forum [aux questions sur](#frequently-asked-questions-about-disabling-export-reports) la désactivation des rapports d'exportation de cette rubrique pour obtenir des descriptions détaillées de ces rapports). Étant donné que ces fichiers peuvent être très volumineux, vous pouvez accélérer le temps de téléchargement et économiser de l'espace disque en empêchant l'exportation de ces fichiers. Pour ce faire, vous pouvez modifier le Registre Windows sur l'ordinateur que vous utilisez pour exporter les résultats de la recherche. Si vous souhaitez inclure les rapports ultérieurement, vous pouvez modifier le paramètre de registre. 
+Lorsque vous utilisez l'outil d'exportation de découverte électronique Office 365 pour exporter les résultats d'une recherche de contenu dans le centre de sécurité & Compliance Center, l'outil crée et exporte automatiquement deux rapports contenant des informations supplémentaires sur le contenu exporté. Ces rapports sont les fichiers Results. csv et manifest. XML (voir la section Forum [aux questions sur](#frequently-asked-questions-about-disabling-export-reports) la désactivation des rapports d'exportation de cette rubrique pour obtenir des descriptions détaillées de ces rapports). Étant donné que ces fichiers peuvent être très volumineux, vous pouvez accélérer le temps de téléchargement et économiser de l'espace disque en empêchant l'exportation de ces fichiers. Pour ce faire, vous pouvez modifier le Registre Windows sur l'ordinateur que vous utilisez pour exporter les résultats de la recherche. Si vous souhaitez inclure les rapports ultérieurement, vous pouvez modifier le paramètre de registre. 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>Créer des paramètres de Registre pour désactiver les rapports d'exportation
 

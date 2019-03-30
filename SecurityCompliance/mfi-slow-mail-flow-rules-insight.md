@@ -9,13 +9,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
-description: Les administrateurs peuvent en savoir plus sur les règles de flux de messagerie lentes dans le tableau de bord de flux de messagerie dans le centre de sécurité & de sécurité Office 365.
-ms.openlocfilehash: e1ce23c94cd5260d8a7a7ebd99521a4a6f5c7b0a
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+description: Les administrateurs peuvent en savoir plus sur les règles de flux de messagerie lentes dans le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance Center.
+ms.openlocfilehash: ede12e14f287599cab0e5f39aaf71c38ed519276
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720254"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999777"
 ---
 # <a name="slow-mail-flow-rules-insight"></a>Informations sur les règles de flux de messagerie lent
 
@@ -29,7 +29,7 @@ Des règles inefficaces de flux de messagerie (également appelées règles de t
 
 Le centre d'analyse vous aidera à identifier et à ajuster les règles de flux de messagerie afin de réduire les délais de flux de messagerie.
 
-![Des règles de flux de messagerie lentes dans le tableau de bord de flux de messagerie dans le centre de sécurité & de sécurité Office 365](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
+![Des règles de flux de messagerie lentes dans le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance Center](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
 
 Lorsque vous cliquez sur **afficher les détails**, un volet flyout apparaît dans lequel vous pouvez examiner la règle. Dans le volet flyout, peut également cliquer sur **afficher les exemples de messages** pour voir les types de messages concernés par la règle.
 

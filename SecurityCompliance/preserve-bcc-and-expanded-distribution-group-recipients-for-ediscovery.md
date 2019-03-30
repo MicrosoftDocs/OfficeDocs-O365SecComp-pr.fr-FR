@@ -10,22 +10,22 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: La conservation inaltérable, la conservation pour litige et les stratégies de rétention d'Office 365 vous permettent de conserver le contenu de la boîte aux lettres pour répondre aux exigences de conformité réglementaire et de découverte électronique.
-ms.openlocfilehash: 21f6d4520f41710e89e0a7ce1fc491aa03ea44b0
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: fcf5567bc50f25ce51d8d569d772559a376703d0
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693233"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999517"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Conserver les destinataires Cci et les destinataires de groupe de distribution étendu pour la découverte électronique
   
-La conservation inaltérable, la conservation pour litige et les stratégies de rétention [office 365](http://go.microsoft.com/fwlink/?LinkID=827811) (créées dans &amp; le centre de sécurité conformité Office 365) vous permettent de conserver le contenu de la boîte aux lettres pour respecter les exigences de conformité réglementaire et de découverte électronique. Les informations sur les destinataires directement indiqués dans les champs À et Cc d'un message sont incluses dans tous les messages par défaut, mais votre organisation peut exiger la capacité de rechercher et de reproduire des détails sur tous les destinataires d'un message. Celles-ci incluent les valeurs suivantes : 
+La conservation inaltérable, la conservation pour litige et les stratégies de rétention d' [Office 365](http://go.microsoft.com/fwlink/?LinkID=827811) (créées dans le centre de sécurité _AMP_ Compliance Center) vous permettent de conserver le contenu de la boîte aux lettres conformément aux exigences de conformité réglementaire et de découverte électronique. Les informations sur les destinataires directement indiqués dans les champs À et Cc d'un message sont incluses dans tous les messages par défaut, mais votre organisation peut exiger la capacité de rechercher et de reproduire des détails sur tous les destinataires d'un message. Celles-ci incluent les valeurs suivantes : 
   
 - **Les destinataires spécifiés dans le champ Cci d'un message :** les destinataires en copie carbone invisible sont stockés dans le message qui se trouve dans la boîte aux lettres de l'expéditeur, mais ne figurent pas dans les en-têtes du message remis aux destinataires. 
     
 - **Les destinataires de groupe de distribution étendu :** les destinataires qui reçoivent le message car ils sont membres d'un groupe de distribution auquel le message a été adressé, figurent dans le champ À, Cc ou Cci. 
     
-Exchange Online et Exchange Server 2013 (mise à jour cumulative 7 et versions ultérieures) conservent des informations sur le champ CCI et les destinataires de groupe de distribution étendus. Vous pouvez rechercher ces informations à l'aide d'une recherche de découverte électronique inaltérable dans le centre d'administration Exchange ou une recherche de contenu dans le centre &amp; de sécurité conformité. 
+Exchange Online et Exchange Server 2013 (mise à jour cumulative 7 et versions ultérieures) conservent des informations sur le champ CCI et les destinataires de groupe de distribution étendus. Vous pouvez rechercher ces informations à l'aide d'une recherche de découverte électronique inaltérable dans le centre d'administration Exchange ou une recherche de contenu dans le centre de sécurité & Compliance Center. 
   
 ## <a name="how-bcc-recipients-and-expanded-distribution-group-recipients-are-preserved"></a>Conservation des destinataires en copie carbone invisible et des destinataires de groupe de distribution étendu
 <a name="sectionSection0"> </a>

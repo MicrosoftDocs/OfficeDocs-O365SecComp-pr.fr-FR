@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vous pouvez utiliser l'outil de recherche de journal d'audit Office 365 pour vous aider à résoudre les problèmes courants, tels que l'étude d'un compte compromis ou la définition du transfert de courrier pour une boîte aux lettres.
-ms.openlocfilehash: bf07df7ef0767e525ca3e6ff7f5ce4c637880b80
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 506a7c05c8fb88be00e52421341148699d2a74b0
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296767"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999627"
 ---
 # <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>Effectuer des recherches dans le journal d'audit Office 365 pour résoudre les scénarios courants
 
@@ -32,7 +32,7 @@ Cet article explique comment utiliser l'outil de recherche de journal d'audit Of
 
 ## <a name="using-the-office-365-audit-log-search-tool"></a>Utilisation de l'outil de recherche de journal d'audit Office 365
 
-Chacun des scénarios de dépannage décrits dans cet article est basé sur l'utilisation de l'outil de recherche de journal d'audit dans le centre de sécurité & conformité Office 365. Cette section répertorie les autorisations requises pour effectuer des recherches dans le journal d'audit et décrit les étapes permettant d'accéder aux recherches dans le journal d'audit et de les exécuter. Chaque section de scénario fournit des instructions spécifiques sur la configuration d'une requête de recherche de journal d'audit et sur ce qu'il faut rechercher dans les informations détaillées des enregistrements d'audit qui correspondent aux critères de recherche.
+Chacun des scénarios de dépannage décrits dans cet article est basé sur l'utilisation de l'outil de recherche de journal d'audit dans le centre de sécurité et conformité Office 365. Cette section répertorie les autorisations requises pour effectuer des recherches dans le journal d'audit et décrit les étapes permettant d'accéder aux recherches dans le journal d'audit et de les exécuter. Chaque section de scénario fournit des instructions spécifiques sur la configuration d'une requête de recherche de journal d'audit et sur ce qu'il faut rechercher dans les informations détaillées des enregistrements d'audit qui correspondent aux critères de recherche.
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Autorisations requises pour utiliser l'outil de recherche de journal d'audit
 
@@ -40,13 +40,13 @@ Vous devez disposer du rôle journaux d'audit en affichage seul ou journaux d'au
 
 ### <a name="running-audit-log-searches"></a>Exécution de recherches dans le journal d'audit
 
-Cette section décrit les notions de base pour la création et l'exécution de recherches dans le journal d'audit. Utilisez ces instructions comme point de départ pour chaque scénario de dépannage dans cet article. Pour obtenir des instructions détaillées détaillées, consultez [la rubrique Search the Audit Log in the Office 365 Security _AMP_ Compliance Center ](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search).
+Cette section décrit les notions de base pour la création et l'exécution de recherches dans le journal d'audit. Utilisez ces instructions comme point de départ pour chaque scénario de dépannage dans cet article. Pour obtenir des instructions détaillées détaillées, consultez [la rubrique Search the audit log](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search).
 
-1. Accédez à la page [https://protection.office.com](https://protection.office.com).
+1. Accédez à la page [https://compliance.microsoft.com](https://compliance.microsoft.com).
   
 2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
 
-3. Dans le volet gauche du centre de sécurité & Compliance Center, cliquez sur Search **& enquête** > **audit log Search**.
+3. Dans le volet gauche du centre de sécurité et conformité, cliquez **** > sur Rechercher dans le**Journal d'audit**.
     
     La page **recherche du journal d'audit** s'affiche. 
     
@@ -54,13 +54,13 @@ Cette section décrit les notions de base pour la création et l'exécution de r
   
 4. Vous pouvez configurer les critères de recherche suivants. Notez que chaque scénario de dépannage dans cet article recommande des instructions spécifiques pour la configuration de ces champs.
     
-    a. **Activities** : cliquez sur la liste déroulante pour afficher les activités que vous pouvez rechercher. Après l'exécution de la recherche, seuls les enregistrements d'audit des activités sélectionnées sont affichés. Sélectionnez **afficher les résultats pour toutes les activités** pour afficher les résultats de toutes les activités qui répondent aux autres critères de recherche. Vous devrez également laisser ce champ vide dans certains scénarios de dépannage.
+    a. **Activités** : cliquez sur la liste déroulante pour afficher les activités que vous pouvez rechercher. Après l'exécution de la recherche, seuls les enregistrements d'audit des activités sélectionnées sont affichés. Sélectionnez **afficher les résultats pour toutes les activités** pour afficher les résultats de toutes les activités qui répondent aux autres critères de recherche. Vous devrez également laisser ce champ vide dans certains scénarios de dépannage.
     
     b. **Date de début** et **Date de fin** : sélectionnez une date et une plage horaire pour afficher les événements qui se sont produits au cours de cette période. Les sept derniers jours sont sélectionnés par défaut. La date et l'heure sont présentées au format UTC (Coordinated Universal Time). La plage de dates maximale que vous pouvez spécifier est de 90 jours.
 
-    c. **Users** -cliquez dans cette zone, puis sélectionnez un ou plusieurs utilisateurs pour lesquels afficher les résultats de la recherche. Les enregistrements d'audit de l'activité sélectionnée effectuée par les utilisateurs que vous sélectionnez dans cette zone sont affichés dans la liste des résultats. Laissez cette zone vide pour renvoyer les entrées de tous les utilisateurs (et comptes de service) de votre organisation.
+    c. **Utilisateurs** : cliquez dans cette zone, puis sélectionnez un ou plusieurs utilisateurs pour lesquels afficher les résultats de la recherche. Les enregistrements d'audit de l'activité sélectionnée effectuée par les utilisateurs que vous sélectionnez dans cette zone sont affichés dans la liste des résultats. Laissez cette zone vide pour renvoyer les entrées de tous les utilisateurs (et comptes de service) de votre organisation.
     
-    d. **fichier, dossier ou site** -tapez tout ou partie d'un nom de fichier ou de dossier pour Rechercher l'activité liée au fichier de dossier qui contient le mot clé spécifié. Vous pouvez également spécifier l'URL d'un fichier ou d'un dossier. Si vous utilisez une URL, vérifiez que vous tapez le chemin d'URL complet ou si vous tapez simplement une partie de l'URL, n'incluez pas de caractères spéciaux ou d'espaces. Laissez cette zone vide pour renvoyer les entrées de tous les fichiers et dossiers de votre organisation. Notez que ce champ est vide dans tous les scénarios de dépannage décrits dans cet article.
+    d. **Fichier, dossier ou site** : entrez une partie ou la totalité d'un nom de fichier ou de dossier pour Rechercher l'activité liée au fichier de dossier qui contient le mot clé spécifié. Vous pouvez également spécifier l'URL d'un fichier ou d'un dossier. Si vous utilisez une URL, vérifiez que vous tapez le chemin d'URL complet ou si vous tapez simplement une partie de l'URL, n'incluez pas de caractères spéciaux ou d'espaces. Laissez cette zone vide pour renvoyer les entrées de tous les fichiers et dossiers de votre organisation. Notez que ce champ est vide dans tous les scénarios de dépannage décrits dans cet article.
     
 5. Cliquez sur **Rechercher** pour exécuter la recherche à l'aide de vos critères de recherche. 
     
@@ -113,13 +113,13 @@ Après avoir exécuté la recherche, cliquez sur **Filtrer les résultats** sur 
 
 ![Informations détaillées à partir de l'enregistrement d'audit](media/emailforwarding2.png)
 
-a. dans le champ **ObjectID** , l'alias de la boîte aux lettres sur laquelle le transfert de courrier a été défini est affiché. Cette boîte aux lettres est également affichée dans la colonne **élément** de la page des résultats de la recherche.
+a. Dans le champ **ObjectID** , l'alias de la boîte aux lettres sur lequel le transfert de courrier a été activé est affiché. Cette boîte aux lettres est également affichée dans la colonne **élément** de la page des résultats de la recherche.
 
-b. dans le **** champ Parameters, la valeur *ForwardingSmtpAddress* indique que le transfert des messages a été défini sur la boîte aux lettres. Dans cet exemple, le courrier est transmis à l'adresse de messagerie mike@contoso.com, qui se trouve en dehors de l'organisation alpinehouse.onmicrosoft.com.
+b. Dans le **** champ Parameters, la valeur *ForwardingSmtpAddress* indique que le transfert de messages a été défini sur la boîte aux lettres. Dans cet exemple, le courrier est transmis à l'adresse de messagerie mike@contoso.com, qui se trouve en dehors de l'organisation alpinehouse.onmicrosoft.com.
 
-c. la valeur *true* pour le paramètre *DeliverToMailboxAndForward* indique qu'une copie du message remis à Sarad@alpinehouse.onmicrosoft.com ** est transférée à l'adresse de messagerie spécifiée par l' *ForwardingSmtpAddress *, qui dans cet exemple est Mike@contoso.com. Si la valeur du paramètre *DeliverToMailboxAndForward* est définie sur *false*, le courrier électronique est uniquement transféré à l'adresse spécifiée par le paramètre *ForwardingSmtpAddress* . Il n'est pas remis à la boîte aux lettres spécifiée dans le champ **ObjectID** .
+c. La valeur *true* pour le paramètre *DeliverToMailboxAndForward* indique qu'une copie du message remis à Sarad@alpinehouse.onmicrosoft.com ** est transférée à l'adresse de messagerie spécifiée par l' *ForwardingSmtpAddress *, qui dans cet exemple est Mike@contoso.com. Si la valeur du paramètre *DeliverToMailboxAndForward* est définie sur *false*, le courrier électronique est uniquement transféré à l'adresse spécifiée par le paramètre *ForwardingSmtpAddress* . Il n'est pas remis à la boîte aux lettres spécifiée dans le champ **ObjectID** .
 
-d. le champ **userid** indique l'utilisateur qui définit le transfert du courrier électronique sur la boîte aux lettres spécifiée dans le champ du champ **ObjectID** . Cet utilisateur est également affiché dans la colonne **utilisateur** de la page des résultats de la recherche. Dans ce cas, il semble que le propriétaire de la boîte aux lettres définisse le transfert du courrier sur sa boîte aux lettres.
+d. Le champ **userid** indique l'utilisateur qui définit le transfert du courrier électronique sur la boîte aux lettres spécifiée dans le champ de champ **ObjectID** . Cet utilisateur est également affiché dans la colonne **utilisateur** de la page des résultats de la recherche. Dans ce cas, il semble que le propriétaire de la boîte aux lettres définisse le transfert du courrier sur sa boîte aux lettres.
 
 Si vous déterminez que le transfert du courrier ne doit pas être défini sur la boîte aux lettres, vous pouvez le supprimer en exécutant la commande suivante dans Exchange Online PowerShell:
 
@@ -131,7 +131,9 @@ Pour plus d'informations sur les paramètres liés au transfert de messages, voi
 
 ## <a name="determining-if-a-user-deleted-email-items"></a>Déterminer si un utilisateur a supprimé des éléments de courrier électronique
 
-Avant que les enregistrements du journal d'audit concernant les éléments de courrier supprimés soient enregistrés dans le journal d'audit Office 365, l'audit des boîtes aux lettres doit être activé pour chaque boîte aux lettres utilisateur de votre organisation. En outre, les actions de boîte aux lettres SoftDelete et HardDelete doivent être activées pour l'audit. Pour obtenir des instructions, consultez la rubrique [activation de l'audit des boîtes aux lettres dans Office 365](enable-mailbox-auditing.md). Si l'audit des boîtes aux lettres est déjà activé pour les utilisateurs, procédez comme suit pour rechercher des événements liés aux éléments de courrier supprimés dans le journal d'audit.
+À compter du 1er janvier 2019, Microsoft Active la journalisation d'audit des boîtes aux lettres par défaut pour toutes les organisations Office 365 et Microsoft. Cela signifie que certaines actions effectuées par les propriétaires de boîtes aux lettres sont automatiquement journalisées et que les enregistrements d'audit de boîte aux lettres correspondants sont disponibles lorsque vous les recherchez dans le journal d'audit de boîte aux lettres. Avant que l'audit des boîtes aux lettres ait été activé par défaut, vous devez l'activer manuellement pour chaque boîte aux lettres d'utilisateur de votre organisation. 
+
+Les actions de boîte aux lettres enregistrées par défaut incluent les actions de boîte aux lettres SoftDelete et HardDelete effectuées par les propriétaires de boîtes aux lettres. Cela signifie que vous pouvez utiliser la procédure suivante pour rechercher dans le journal d'audit des événements liés aux éléments de messagerie supprimés. Pour plus d'informations sur l'audit des boîtes aux lettres par défaut, consultez la rubrique [Manage Mailbox Auditing](enable-mailbox-auditing.md).
 
 Voici comment configurer une requête de recherche de journal d'audit pour ce scénario:
 
@@ -139,7 +141,7 @@ Voici comment configurer une requête de recherche de journal d'audit pour ce sc
 
 - **Messages supprimés du dossier éléments supprimés** : cette activité correspond à l'action d'audit de boîte aux lettres **SoftDelete** . Cette activité est également consignée lorsqu'un utilisateur supprime définitivement un élément en le sélectionnant et en appuyant sur **MAJ + SUPPR**. Une fois qu'un élément est supprimé définitivement, l'utilisateur peut le récupérer jusqu'à ce que la période de rétention des éléments supprimés expire.
 
-- **Messages purgés de la boîte aux lettres** : cette activité correspond à l'action d'audit de boîte aux lettres **HardDelete** . Cette option est enregistrée lorsqu'un utilisateur supprime un élément du dossier éléments récupérables. Les administrateurs peuvent utiliser l'outil de recherche de contenu dans le centre de sécurité & de la sécurité d'Office 365 pour rechercher et récupérer les éléments purgés jusqu'à ce que la période de rétention des éléments supprimés expire ou plus si la boîte aux lettres de l'utilisateur est en conservation.
+- **Messages purgés de la boîte aux lettres** : cette activité correspond à l'action d'audit de boîte aux lettres **HardDelete** . Cette option est enregistrée lorsqu'un utilisateur supprime un élément du dossier éléments récupérables. Les administrateurs peuvent utiliser l'outil de recherche de contenu dans le centre de sécurité et de conformité pour rechercher et récupérer les éléments purgés jusqu'à ce que la période de rétention des éléments supprimés expire ou plus si la boîte aux lettres de l'utilisateur est en conservation.
 
 **Date de début** et **Date de fin** : sélectionnez une plage de dates applicable à votre enquête.
 
@@ -187,10 +189,10 @@ Après avoir exécuté la recherche, tous les enregistrements d'audit de cette a
 
 ![Enregistrement d'audit pour la nouvelle règle de boîte de réception](media/NewInboxRuleRecord.png)
 
-a. dans le champ **ObjectID** , le nom complet de la règle de boîte de réception est affiché. Ce nom inclut l'alias de la boîte aux lettres de l'utilisateur (par exemple, Sarad) et le nom de la règle de boîte de réception (par exemple, «Move messages from admin»).
+a. Dans le champ **ObjectID** , le nom complet de la règle de boîte de réception est affiché. Ce nom inclut l'alias de la boîte aux lettres de l'utilisateur (par exemple, Sarad) et le nom de la règle de boîte de réception (par exemple, «Move messages from admin»).
 
-b. dans le **** champ Parameters, la condition de la règle de boîte de réception est affichée. Dans cet exemple, la condition est spécifiée par le paramètre *from* . La valeur définie pour le paramètre *from* indique que la règle de boîte de réception agit sur les messages envoyés par admin@alpinehouse.onmicrosoft.com. Pour obtenir la liste complète des paramètres qui peuvent être utilisés pour définir les conditions des règles de boîte de réception, consultez l'article [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
+b. Dans le champ **paramètres** , la condition de la règle de boîte de réception est affichée. Dans cet exemple, la condition est spécifiée par le paramètre *from* . La valeur définie pour le paramètre *from* indique que la règle de boîte de réception agit sur les messages envoyés par admin@alpinehouse.onmicrosoft.com. Pour obtenir la liste complète des paramètres qui peuvent être utilisés pour définir les conditions des règles de boîte de réception, consultez l'article [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
 
-c. le paramètre *MoveToFolder* spécifie l'action pour la règle de boîte de réception; dans cet exemple, les messages reçus à partir de admin@alpinehouse.onmicrosoft.com sont déplacés vers le dossier nommé *AdminSearch*. Consultez également l'article [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) pour obtenir la liste complète des paramètres permettant de définir l'action d'une règle de boîte de réception.
+c. Le paramètre *MoveToFolder* spécifie l'action pour la règle de boîte de réception; dans cet exemple, les messages reçus à partir de admin@alpinehouse.onmicrosoft.com sont déplacés vers le dossier nommé *AdminSearch*. Consultez également l'article [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) pour obtenir la liste complète des paramètres permettant de définir l'action d'une règle de boîte de réception.
 
-d. le champ **userid** indique l'utilisateur qui a créé la règle de boîte de réception spécifiée dans le champ **ObjectID** . Cet utilisateur est également affiché dans la colonne **utilisateur** de la page des résultats de la recherche.
+d. Le champ **userid** indique l'utilisateur qui a créé la règle de boîte de réception spécifiée dans le champ **ObjectID** . Cet utilisateur est également affiché dans la colonne **utilisateur** de la page des résultats de la recherche.

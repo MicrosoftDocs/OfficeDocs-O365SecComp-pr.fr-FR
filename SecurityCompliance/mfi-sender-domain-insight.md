@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: Les administrateurs peuvent en savoir plus sur la rubrique Fix sender Domain Insight dans le tableau de bord du flux de messagerie dans le centre de sécurité & de la sécurité d'Office 365.
+description: Les administrateurs peuvent en savoir plus sur la rubrique Fix sender Domain Insight dans le tableau de bord du flux de messagerie dans le centre de sécurité & Compliance Center.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6d98d2a2660c24a77db58215faa0de1a4a18ea1a
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: bd62d6d0b42edfd1eedf543d7d8bb68903c7c608
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722845"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000307"
 ---
 # <a name="fix-sender-domain-insight"></a>Corriger l'adresse de domaine de l'expéditeur
 
@@ -38,7 +38,7 @@ Les messages qui ne répondent pas aux critères ne sont pas attribués à l'org
 
 La fonction **Fix sender Domain** Insight affiche les messages électroniques provenant de votre environnement local qui ne répondent pas aux critères, vous permet d'identifier les ordinateurs et les comptes d'utilisateur potentiellement compromis dans votre environnement de messagerie local et vous aide à prendre actions de correction.
 
-![La fonction Fix sender Domain Insight dans le tableau de bord du flux de messagerie dans le centre de sécurité & conformité Office 365](media/sender-domain-insight-selected.png)
+![La fonction Fix sender Domain Insight dans le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance Center](media/sender-domain-insight-selected.png)
 
 Lorsque vous cliquez sur **afficher les détails**, vous êtes dirigé vers un autre widget avec plus de détails, comme illustré dans le diagramme suivant:
 

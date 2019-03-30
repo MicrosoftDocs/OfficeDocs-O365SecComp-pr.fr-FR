@@ -12,16 +12,16 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: Les éléments partiellement indexés (également appelés éléments non indexés) sont des éléments de boîte aux lettres Exchange et des documents sur les sites SharePoint et OneDrive qui n'ont pas été complètement indexés pour la recherche de contenu. Dans cet article, vous pouvez découvrir pourquoi les éléments ne peuvent pas être indexés pour la recherche et sont renvoyés en tant qu'éléments partiellement indexés, identifier les erreurs de recherche pour les éléments partiellement indexés et utiliser un script PowerShell pour déterminer l'exposition de votre organisation à l'e-mail partiellement indexé. sous.
-ms.openlocfilehash: d8fec240964ad84b811221754060af3e342af01f
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: d6b1326498780a5d40e49ff22aa1ac7d16bee8e4
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295627"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000887"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Examen d’éléments partiellement indexés dans eDiscovery Office 365
 
-Une recherche de contenu exécutée à partir du centre de &amp; sécurité conformité Office 365 inclut automatiquement les éléments partiellement indexés dans les résultats de recherche estimés lorsque vous exécutez une recherche. Les éléments partiellement indexés sont des éléments de boîte aux lettres Exchange et des documents sur SharePoint et des sites OneDrive entreprise qui n'ont pas été complètement indexés pour la recherche. La plupart des messages électroniques et des documents de site sont indexés, car ils sont inclus dans les [limites d'indexation pour les messages électroniques](limits-for-content-search.md#indexing-limits-for-email-messages). Toutefois, certains éléments peuvent dépasser ces limites d'indexation et seront partiellement indexés. Voici d'autres raisons pour lesquelles les éléments ne peuvent pas être indexés pour la recherche et sont renvoyés en tant qu'éléments partiellement indexés lors de l'exécution d'une recherche de contenu:
+Une recherche de contenu exécutée à partir du centre de sécurité & conformité inclut automatiquement les éléments partiellement indexés dans les résultats de recherche estimés lors de l'exécution d'une recherche. Les éléments partiellement indexés sont des éléments de boîte aux lettres Exchange et des documents sur SharePoint et des sites OneDrive entreprise qui n'ont pas été complètement indexés pour la recherche. La plupart des messages électroniques et des documents de site sont indexés, car ils sont inclus dans les [limites d'indexation pour les messages électroniques](limits-for-content-search.md#indexing-limits-for-email-messages). Toutefois, certains éléments peuvent dépasser ces limites d'indexation et seront partiellement indexés. Voici d'autres raisons pour lesquelles les éléments ne peuvent pas être indexés pour la recherche et sont renvoyés en tant qu'éléments partiellement indexés lors de l'exécution d'une recherche de contenu:
   
 - Les messages électroniques contiennent un fichier joint d'un type de fichier qui ne peut pas être indexé; dans la plupart des cas, le type de fichier n'est [pas reconnu ou n'est pas pris en charge pour l'indexation](partially-indexed-items-in-content-search.md#file-types-not-indexed-for-search) .
     
@@ -37,7 +37,7 @@ Bien qu'elle varie, la plupart des entreprises Office 365 les clients disposent 
   
 ## <a name="why-does-the-partially-indexed-item-count-change-for-a-search"></a>Pourquoi le nombre d'éléments partiellement indexés change pour une recherche?
 
-Une fois que vous avez exécuté une recherche de contenu dans &amp; le centre de sécurité conformité Office 365, le nombre total et la taille des éléments partiellement indexés des emplacements qui ont été recherchés sont répertoriés dans les statistiques de résultats de recherche qui s'affichent dans les statistiques détaillées pour la recherche. Remarque ces éléments sont appelés *éléments* non indexés dans les statistiques de la recherche. Voici quelques éléments qui affecteront le nombre d'éléments partiellement indexés renvoyés dans les résultats de la recherche: 
+Une fois que vous avez exécuté une recherche de contenu dans le centre de sécurité & Compliance Center, le nombre total et la taille des éléments partiellement indexés des emplacements qui ont été recherchés sont répertoriés dans les statistiques de résultats de recherche qui s'affichent dans les statistiques détaillées de la recherche. Remarque ces éléments sont appelés *éléments* non indexés dans les statistiques de la recherche. Voici quelques éléments qui affecteront le nombre d'éléments partiellement indexés renvoyés dans les résultats de la recherche: 
   
 - Si un élément est partiellement indexé et correspond à la requête de recherche, il est inclus dans le nombre (et la taille) des éléments de résultat de recherche et des éléments partiellement indexés. Toutefois, lorsque les résultats de cette même recherche sont exportés, l'élément est inclus uniquement avec le jeu de résultats de recherche; elle n'est pas incluse en tant qu'élément partiellement indexé.
     
@@ -122,7 +122,7 @@ Les étapes suivantes montrent comment exécuter un script PowerShell qui recher
 
 ```
   write-host "**************************************************"
-  write-host "     Office 365 Security &amp; Compliance Center      " -foregroundColor yellow -backgroundcolor darkgreen
+  write-host "     Security & Compliance Center      " -foregroundColor yellow -backgroundcolor darkgreen
   write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
   write-host "**************************************************"
   " " 
@@ -164,9 +164,9 @@ Les étapes suivantes montrent comment exécuter un script PowerShell qui recher
   
 ```
    
-2. [Connectez-vous au centre &amp; de sécurité conformité Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627084).
+2. [Connectez-vous au centre de sécurité _AMP_ Compliance Center PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627084).
     
-3. Dans le &amp; Centre de sécurité conformité PowerShell, accédez au dossier dans lequel vous avez enregistré le script à l'étape 1, puis exécutez le script; par exemple:
+3. Dans Security & Compliance Center PowerShell, accédez au dossier dans lequel vous avez enregistré le script à l'étape 1, puis exécutez le script. par exemple:
 
     ```
     .\PartiallyIndexedItems.ps1
@@ -176,7 +176,7 @@ Voici un exemple de la sortie renvoyée par le script.
   
 ![Exemple de sortie d'un script qui génère un rapport sur l'exposition de votre organisation à des éléments de courrier électronique partiellement indexés](media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
   
-Notez les points suivants :
+Remarques :
   
 1. Le nombre total et la taille des éléments de courrier électronique, et le ratio de votre organisation pour les éléments de courrier électronique partiellement indexés (par nombre et par taille)
     

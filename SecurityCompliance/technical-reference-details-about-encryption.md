@@ -3,7 +3,7 @@ title: Détails techniques de référence sur le chiffrement dans Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/15/2019
+ms.date: 03/29/2019
 ms.audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Affichez les détails techniques sur ENCYPTION dans Office 365.
-ms.openlocfilehash: 77e12d0d4872d29e9cc33571b2cd5040d8d45677
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: afe077fdedb3e01e5658d27a13e17ae3a3ab5929
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213624"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004251"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>Détails techniques de référence sur le chiffrement dans Office 365
 
@@ -55,7 +55,7 @@ Les protocoles TLS (Transport Layer Security) et SSL (antérieur au protocole 
 ## <a name="deprecating-support-for-tls-10-and-11-and-what-this-means-for-you"></a>DéPréciation de la prise en charge de TLS 1,0 et 1,1 et ce que cela signifie pour vous
 <a name="TLS11and12deprecation"> </a>
 
-Depuis le 31 octobre 2018, Office 365 ne prend plus en charge les protocoles TLS 1,0 et 1,1. Cela signifie que Microsoft ne corrigera pas les nouveaux problèmes détectés dans les clients, les appareils ou les services qui se connectent à Office 365 à l'aide de TLS 1,0 et 1,1.
+Depuis le 31 octobre 2018, Office 365 ne prend plus en charge TLS 1,0 et 1,1. Cela signifie que Microsoft ne corrigera pas les nouveaux problèmes détectés dans les clients, les appareils ou les services qui se connectent à Office 365 à l'aide de TLS 1,0 et 1,1.
 
 Remarque cela ne signifie pas que Office 365 bloquera les connexions TLS 1,0 et 1,1. Il n'existe pas de date officielle pour la désactivation ou la suppression des protocoles TLS 1,0 et 1,1 dans le service TLS pour les connexions client. La date de dépréciation finale est déterminée par la fonctionnalité de télémétrie client et n'est pas encore connue. Une fois qu'une décision est prise, il y aura six mois à l'avance, sauf si nous rencontrons un compromis connu, auquel cas nous pouvons avoir besoin d'agir en moins de six mois pour protéger les clients qui utilisent les services.
 
@@ -64,45 +64,31 @@ Assurez-vous que toutes les combinaisons client-serveur et navigateur-serveur ut
 ## <a name="deprecating-support-for-3des"></a>DéPréciation de la prise en charge 3DES
 <a name="TLS11and12deprecation"> </a>
 
-Depuis le 31 octobre 2018, Office 365 ne prend plus en charge l'utilisation de suites de chiffrement 3DES pour communiquer avec Office 365. Plus spécifiquement, Office 365 ne prend plus en charge la suite de chiffrement TLS_RSA_WITH_3DES_EDE_CBC_SHA. Les clients et les serveurs communiquant avec O365 après cette date doivent prendre en charge au moins l'un des chiffrements les plus sécurisés figurant dans cette rubrique (voir les [suites de chiffreMent TLS prises en charge par Office 365](technical-reference-details-about-encryption.md#TLSCipherSuites)).
+Depuis le 31 octobre 2018, Office 365 ne prend plus en charge l'utilisation de suites de chiffrement 3DES pour communiquer avec Office 365. Plus spécifiquement, Office 365 ne prend plus en charge la suite de chiffrement TLS_RSA_WITH_3DES_EDE_CBC_SHA. Depuis le 28 février 2019, cette suite de chiffrement est désactivée dans Office 365. Les clients et les serveurs communiquant avec O365 après cette date doivent prendre en charge au moins l'un des chiffrements les plus sécurisés figurant dans cette rubrique (voir les [suites de chiffreMent TLS prises en charge par Office 365](technical-reference-details-about-encryption.md#TLSCipherSuites)).
   
 ## <a name="deprecating-sha-1-certificate-support-in-office-365"></a>Arrêt de la prise en charge du certificat SHA-1 dans Office 365
 <a name="TLS11and12deprecation"> </a>
 
 Depuis juin 2016, Office 365 n'accepte plus de certificat SHA-1 pour les connexions entrantes ou sortantes. Si vous utilisez actuellement un certificat avec l'algorithme SHA-1 dans la chaîne de certificats, vous devrez mettre à jour la chaîne pour utiliser SHA-2 (Secure Hash Algorithm 2) ou un algorithme de hachage plus puissant.
   
-## <a name="deprecating-rc4-support-in-office-365"></a>Arrêt de la prise en charge de RC4 dans Office 365
-<a name="TLS11and12deprecation"> </a>
-
-Depuis juillet 2015, les suites de chiffrement RC4 suivantes ne sont plus prises en charge :
-  
-- TLS_RSA_WITH_RC4_128_SHA
-    
-- TLS_RSA_WITH_RC4_128_MD5
-    
-## <a name="deprecating-secure-sockets-layer-ssl-30-support-in-office-365"></a>Suppression de la prise en charge du protocole SSL (Secure Sockets Layer) 3,0 dans Office 365
-<a name="TLS11and12deprecation"> </a>
-
-À partir du 1er décembre 2014, Office 365 a commencé à désactiver la prise en charge de SSL (Secure Sockets Layer) 3,0, le prédécesseur de TLS. Pour plus d'informations, consultez la rubrique [Security advisory 3009008](https://technet.microsoft.com/library/security/3009008.aspx). Pour obtenir des instructions sur la façon de s'assurer que les clients utilisent TLS 1,0 ou une version ultérieure et désactiver SSL 3,0, consultez la rubrique [protection de ssl 3,0 Vulnerability](http://blogs.office.com/2014/10/29/protecting-ssl-3-0-vulnerability/).
-  
 ## <a name="tls-cipher-suites-supported-by-office-365"></a>Suites de chiffrement TLS prises en charge par Office 365
 <a name="TLSCipherSuites"> </a>
 
-Une suite de chiffrement est un ensemble d’algorithmes de chiffrement utilisés par TLS pour établir des connexions sécurisées. Les suites de chiffrement prises en charge par Office 365 sont répertoriées dans le tableau suivant par niveau décroissant. Quand Office 365 reçoit une demande de connexion, il tente tout d’abord de se connecter à l’aide de la première suite de chiffrement, puis en cas d’échec, il utilise la deuxième suite de chiffrement dans la liste, et ainsi de suite. Quand Office 365 envoie une demande de connexion à un autre serveur ou à un client, il incombe au client ou serveur de réception de choisir la suite de chiffrement ou de déterminer s’il convient d’utiliser TLS.
+Une suite de chiffrement est un ensemble d’algorithmes de chiffrement utilisés par le protocole TLS pour établir des connexions sécurisées. Les suites de chiffrement prises en charge par Office 365 sont répertoriées dans le tableau suivant, par ordre de force, avec la suite de chiffrement la plus forte répertoriée en premier. Quand Office 365 reçoit une demande de connexion, il tente tout d’abord de se connecter à l’aide de la première suite de chiffrement, puis en cas d’échec, il utilise la deuxième suite de chiffrement dans la liste, et ainsi de suite. Quand Office 365 envoie une demande de connexion à un autre serveur ou à un client, il incombe au client ou au serveur de réception de choisir la suite de chiffrement ou de déterminer s’il convient d’utiliser le protocole TLS.
 
 > [!IMPORTANT]
 > N'oubliez pas que les versions de TLS sont déconseillées et que les versions déconseillées ne *doivent pas être utilisées* lorsque des versions plus récentes sont disponibles. En d'autres termes, où qu'ils soient répertoriés, les protocoles TLS 1,0, 1,1 et 1,2 sont pris en charge, choisissez la version la *plus récente* (TLS 1,2).
   
-|**Protocoles**|**Nom de suite de chiffrement**|**Algorithme d’échange de clés/Niveau**|**Prise en charge de PFS (Perfect Forward Secrecy)**|**Algorithme d’authentification/Niveau**|**Chiffrement/Niveau**|
+|**Protocoles**|**Nom de suite de chiffrement**|**Algorithme/force d'échange de clés**|**Prise en charge du secret de transfert parfait**|**Algorithme/force d'authentification**|**Chiffrement/force**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384  <br/> |ECDH/192  <br/> |Oui  <br/> |RSA/112  <br/> |AES/256  <br/> |
+|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384  <br/> |ECDH/192  <br/> |Oui  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256  <br/> |ECDH/128  <br/> |Oui  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384  <br/> |ECDH/192  <br/> |Oui  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256  <br/> |ECDH/128  <br/> |Oui  <br/> |RSA/112  <br/> |AES/128  <br/> |
+|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256  <br/> |ECDH/128  <br/> |Oui  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384  <br/> |ECDH/192  <br/> |Oui  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P256  <br/> |ECDH/128  <br/> |Oui  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA256  <br/> |RSA/112  <br/> |Non  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256  <br/> |RSA/112  <br/> |Non  <br/> |RSA/112  <br/> |AES/128  <br/> |
+|TLS 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256  <br/> |RSA/112  <br/> |Non  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA  <br/> |RSA/112  <br/> |Non  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA  <br/> |RSA/112  <br/> |Non  <br/> |RSA/112  <br/> |AES/128  <br/> |
    

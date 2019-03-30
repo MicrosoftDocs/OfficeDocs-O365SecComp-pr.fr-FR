@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: Découvrez le nouveau centre de conformité Microsoft 365, y compris ce qu'il contient, comment l'obtenir et les étapes suivantes.
-ms.openlocfilehash: 00c9325b35c2dca5b474964e47683e94a77c97fe
-ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
+ms.openlocfilehash: 76ddc27ad616f2cbf4ec3a97892e3baea92469ec
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30950441"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001037"
 ---
 # <a name="welcome-to-your-all-new-microsoft-365-compliance-center"></a>Bienvenue dans votre nouveau centre de conformité Microsoft 365
 
@@ -83,7 +83,7 @@ Outre les liens des cartes sur la page d'accueil, vous trouverez un volet de nav
 
 ### <a name="why-am-i-taken-to-the-office-365-security--compliance-center-to-perform-some-tasks-such-as-defining-certain-policies"></a>Pourquoi est-ce que j'ai adopté le centre de sécurité & Office 365 pour effectuer certaines tâches, telles que la définition de certaines stratégies?
 
-Nous développons toujours le centre de conformité Microsoft 365 et nous ajoutons davantage de fonctionnalités et de solutions au cours des prochains mois. En attendant, certaines tâches doivent être effectuées dans le centre de sécurité & de la sécurité d'Office 365. Dans ce cas, vous serez dirigé automatiquement vers l'emplacement où vous pouvez effectuer la tâche, telle que la création ou la modification d'une stratégie de surveillance.
+Nous développons toujours le centre de conformité Microsoft 365 et nous ajoutons davantage de fonctionnalités et de solutions au cours des prochains mois. En attendant, certaines tâches doivent être effectuées dans le centre de sécurité & Compliance Center. Dans ce cas, vous serez dirigé automatiquement vers l'emplacement où vous pouvez effectuer la tâche, telle que la création ou la modification d'une stratégie de surveillance.
 
 ### <a name="why-dont-i-see-the-new-microsoft-365-compliance-center-yet"></a>Pourquoi ne puis-je pas encore voir le nouveau centre de conformité Microsoft 365?
 

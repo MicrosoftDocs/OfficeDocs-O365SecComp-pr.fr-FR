@@ -16,21 +16,22 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 'Comprendre pourquoi les résultats de recherche estimés et réels peuvent varier en fonction des recherches exécutées avec les outils eDiscovery dans Office 365. '
-ms.openlocfilehash: d3edc73d94d51c2582b6ef2077c5e4c834d1ff82
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: d3a34a58f9bd8213922824e34a77742f5cd4c36b
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296117"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001047"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Différences entre les résultats de recherche de découverte électronique estimée et réelle dans Office 365
 
-Cette rubrique s'applique aux recherches que vous pouvez exécuter à l'aide de l'un des outils Microsoft eDiscovery suivants:  <br/>  
-- Recherche de contenu dans le centre de &amp; sécurité conformité Office 365  <br/>  
+Cette rubrique s'applique aux recherches que vous pouvez exécuter à l'aide de l'un des outils Microsoft eDiscovery suivants: 
+
+- Recherche de contenu dans le centre de sécurité & conformité  <br/>  
 - Découverte électronique inaltérable dans le centre d'administration Exchange  <br/>  
 - Le centre eDiscovery dans SharePoint Online  <br/> 
    
-Lorsque vous exécutez une recherche de découverte électronique, l'outil que vous utilisez renvoie une estimation du nombre d'éléments (et leur taille totale) correspondant aux critères de recherche. Par exemple, lorsque vous effectuez une recherche dans le centre &amp; de sécurité conformité, les résultats de recherche estimés s'affichent dans le volet d'informations de la recherche sélectionnée.
+Lorsque vous exécutez une recherche de découverte électronique, l'outil que vous utilisez renvoie une estimation du nombre d'éléments (et leur taille totale) correspondant aux critères de recherche. Par exemple, lorsque vous effectuez une recherche dans le centre de sécurité & Compliance Center, les résultats de recherche estimés s'affichent dans le volet d'informations de la recherche sélectionnée.
   
 ![Estimation des résultats affichés dans le volet de détails de la recherche sélectionnée](media/74e4ce83-40be-41a9-b60f-5ad447e79fe4.png)
   
@@ -56,9 +57,9 @@ Voici les raisons de ces différences:
     
 - **Éléments** non indexés: les éléments non indexés pour la recherche peuvent entraîner des différences entre les résultats de recherche estimés et les résultats de recherche réels. Par exemple, la découverte électronique inaltérable dans Exchange et le centre eDiscovery dans SharePoint n'incluent pas les éléments non indexés (qui ne répondent pas aux critères de recherche) lorsque vous exécutez une recherche pour estimer les résultats de la recherche. Toutefois, vous pouvez inclure des éléments non indexés lorsque vous exportez les résultats de la recherche. Si vous incluez des éléments non indexés lors de l'exportation des résultats de la recherche, d'autres éléments sont peut-être exportés. Cela entraîne une différence entre les résultats de recherche estimés et exportés. 
     
-    Lorsque vous utilisez l'outil de recherche de contenu &amp; dans le centre de sécurité conformité, vous avez la possibilité d'inclure des éléments non indexés dans l'estimation de la recherche. Le nombre d'éléments non indexés renvoyés par la recherche est affiché dans le volet d'informations avec les autres résultats estimés de la recherche. Tous les éléments non indexés seraient également inclus dans la taille totale des résultats de recherche estimés. Lorsque vous exportez des résultats de recherche, vous avez la possibilité d'inclure ou de ne pas inclure les éléments non indexés. La manière dont vous configurez ces options peut entraîner des différences entre les résultats de recherche estimés et ceux qui sont téléchargés. 
+    Lorsque vous utilisez l'outil de recherche de contenu dans le centre de sécurité & Compliance Center, vous avez la possibilité d'inclure des éléments non indexés dans l'estimation de la recherche. Le nombre d'éléments non indexés renvoyés par la recherche est affiché dans le volet d'informations avec les autres résultats estimés de la recherche. Tous les éléments non indexés seraient également inclus dans la taille totale des résultats de recherche estimés. Lorsque vous exportez des résultats de recherche, vous avez la possibilité d'inclure ou de ne pas inclure les éléments non indexés. La manière dont vous configurez ces options peut entraîner des différences entre les résultats de recherche estimés et ceux qui sont téléchargés. 
     
-- **Exportation des résultats d'une recherche de contenu incluant tous les emplacements de contenu** : si la recherche à partir de laquelle vous exportez les résultats provient de la recherche de tous les emplacements de contenu de votre organisation, seuls les éléments de contenu non indexés contenant les éléments qui correspondent aux critères de recherche seront exportés. En d'autres termes, si aucun résultat de recherche n'est trouvé dans une boîte aux lettres ou un site, tous les éléments non indexés de cette boîte aux lettres ou de ce site ne seront pas exportés. Toutefois, les éléments non indexés de tous les emplacements de contenu (même ceux qui ne contiennent pas d'éléments qui correspondent à la requête de recherche) sont inclus dans les résultats de recherche estimés. 
+- **Exportation des résultats d'une recherche de contenu incluant tous les emplacements de contenu** : si la recherche à partir de laquelle vous exportez les résultats provient de la recherche de tous les emplacements de contenu de votre organisation, seuls les éléments de contenu non indexés contenant les éléments qui correspondent aux critères de recherche seront exportés. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. Toutefois, les éléments non indexés de tous les emplacements de contenu (même ceux qui ne contiennent pas d'éléments qui correspondent à la requête de recherche) sont inclus dans les résultats de recherche estimés. 
     
     Par ailleurs, si la recherche dont vous exportez les résultats à partir d'emplacements de contenu spécifiques inclus, les éléments non indexés (qui ne sont pas exclus par les critères de recherche) de tous les emplacements de contenu spécifiés dans la recherche seront exportés. Dans ce cas, le nombre estimé d'éléments non indexés et le nombre d'éléments non indexés réellement exportés doivent être identiques.
     

@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Découvrez comment reconnaître et corriger le consentement illicite accorde une attaque dans Office 365.
-ms.openlocfilehash: 454b1b0dcf7a6182895dcc97889286f3000c9626
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 32fa8fedd0cac0ba1a6193b7b107492efb136838
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30656070"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999937"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Détecter et résoudre les problèmes d’octroi illégal de consentement dans Office 365
 
@@ -86,7 +86,7 @@ Le script génère un fichier nommé perMissions. csv. Procédez comme suit pour
 4.  Dans la colonne ClientDisplayName (colonne C), recherchez les applications qui semblent suspectes. Les applications dont les noms sont mal orthographiés, les noms de Super Bland ou les noms de pirate doivent être soigneusement revues.
 
 ## <a name="determine-the-scope-of-the-attack"></a>Déterminer l'étendue de l'attaque
-Après avoir terminé l'inventaire de l'accès aux applications, consultez le **Journal d'audit** Office 365 pour déterminer l'étendue complète de la violation.  Rechercher sur les utilisateurs concernés, les périodes auxquelles l'application illicite a eu accès à votre organisation, ainsi que les autorisations de l'application. Vous pouvez effectuer une recherche dans le **Journal d'audit** dans le [Centre de sécurité et de conformité Office 365](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c). 
+Après avoir terminé l'inventaire de l'accès aux applications, consultez le **Journal d'audit** Office 365 pour déterminer l'étendue complète de la violation.  Rechercher sur les utilisateurs concernés, les périodes auxquelles l'application illicite a eu accès à votre organisation, ainsi que les autorisations de l'application. Vous pouvez effectuer une recherche dans le **Journal d'audit** dans le [Centre de sécurité et de conformité Microsoft 365](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c). 
 
 > [!IMPORTANT]
 > L'audit des [boîtes aux lettres](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918) et l' [audit des activités pour les administrateurs et les utilisateurs](https://support.office.com/article/turn-office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014) doivent avoir été activés avant l'attaque pour obtenir ces informations.

@@ -3,23 +3,22 @@ title: Défense contre les attaques par déni de service dans Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Vue d'ensemble des attaques par déni de service (DoS).
-ms.openlocfilehash: 246704bff18c07d9b76281ae3c7071cd0d747630
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a7e67fcc87867190f345c5dad14e38a473420eab
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220504"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004071"
 ---
 # <a name="defending-against-denial-of-service-attacks-in-office-365"></a>Défense contre les attaques par déni de service dans Office 365
 
@@ -41,7 +40,7 @@ L'équipe américaine de préparation de l' [urgence informatique](https://www.u
 - Déconnexion d'une connexion Internet câblée ou sans fil
 - Perte d'accès à long terme pour le Web ou tout service Internet
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques connexes
 - [Principes fondamentaux de défense contre les attaques par déni de service](office-365-core-principles-of-defense-against-dos-attacks.md)
 - [Stratégie de défense contre les attaques par déni de service de Microsoft](office-365-microsoft-dos-defense-strategy.md)
 - [Protection des services de Cloud Computing Microsoft contre les attaques par déni de service](office-365-defending-cloud-services-against-dos-attacks.md)

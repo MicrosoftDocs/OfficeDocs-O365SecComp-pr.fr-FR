@@ -1,9 +1,8 @@
 ---
-title: Importer du contenu non-Office 365 pour une analyse Advanced eDiscovery
+title: Importer du contenu non-Office 365 pour l'analyse eDiscovery avancée
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 5/25/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: Procédure d'importation de contenu qui n'est pas stocké dans O365 dans un objet BLOB Azure afin qu'il puisse être analysé avec AeD
-ms.openlocfilehash: 1019fa2e2429aeff8bd20bc3dfb266ab5fb25eaf
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 7b7694754b26951aa02930fd101631ba9060bc17
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217064"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001167"
 ---
-# <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>Importer du contenu non-Office 365 pour une analyse Advanced eDiscovery
+# <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>Importer du contenu non-Office 365 pour l'analyse eDiscovery avancée
 
 Tous les documents que vous devrez peut-être analyser avec Office 365 Advanced eDiscovery seront inactifs dans Office 365. Avec la fonctionnalité d'importation de contenu non-Office 365 dans Advanced eDiscovery, vous pouvez télécharger des documents qui ne sont pas en ligne dans Office 365 (à l'exception des fichiers PST) dans un blob de stockage associé à une casse, et les analyser avec Advanced eDiscovery. Cette procédure vous montre comment mettre vos documents autres que Office 365 dans Advanced eDiscovery pour analyse.
   
@@ -62,7 +61,7 @@ L'utilisation de la fonctionnalité Télécharger non-Office 365 comme décrit d
     
 7. Construisez la ligne de commande AzCopy pour télécharger les fichiers comme suit:
     
-    AzCopy/source: " *chemin d'accès complet au dossier racine sur l'ordinateur local* "/dest: " *URL de conteneur jusqu'au* "/DestSAS: ", qui inclut le *reste de l'URL du conteneur à partir du? jusqu'à la fin* «/S. 
+    AzCopy/source: " *chemin d'accès complet au dossier racine sur l'ordinateur local* "/dest: " *URL de conteneur jusqu'à et n'incluant pas l'?*  «/DestSAS:» *reste de l'URL du conteneur à partir du? jusqu'à la fin* «/S. 
     
     Par exemple, à l'aide des valeurs suivantes: 
     

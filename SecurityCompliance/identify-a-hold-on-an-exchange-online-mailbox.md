@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Découvrez comment identifier les différents types de conservation pouvant être placés sur une boîte aux lettres Office 365. Ces types de conservation incluent les conservations pour litige, la découverte électronique et les stratégies de rétention d'Office 365. Vous pouvez également déterminer si un utilisateur a été exclu d'une stratégie de rétention à l'échelle de l'organisation.
-ms.openlocfilehash: fa037e4e4f6a0c4b419645bdc3242fdc3d6db7db
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: e0c1c54cedfc7494233f12f043bb6d033576eca8
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900153"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001217"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online
 
@@ -28,7 +28,7 @@ Office 365 offre plusieurs méthodes permettant à votre organisation d'empêche
 
 - **Conservation pour litige** -conservations appliquées aux boîtes aux lettres utilisateur dans Exchange Online.
 
-- **conservations de découverte électronique** qui sont associées à un cas de découverte électronique dans le centre de sécurité _AMP_ Compliance Center. les conservations eDiscovery peuvent être appliquées aux boîtes aux lettres des utilisateurs et dans la boîte aux lettres correspondante pour les groupes Office 365 et Microsoft Teams.
+- **conservations de découverte électronique** qui sont associées à un cas eDiscovery dans le centre de sécurité et de conformité. les conservations eDiscovery peuvent être appliquées aux boîtes aux lettres des utilisateurs et dans la boîte aux lettres correspondante pour les groupes Office 365 et Microsoft Teams.
 
 - **Conservation** inaltérable appliquées aux boîtes aux lettres des utilisateurs à l'aide de l'outil de blocage de découverte électronique & dans le centre d'administration Exchange dans Exchange Online.
 
@@ -72,7 +72,7 @@ Le tableau suivant décrit comment identifier différents types de suspensions e
 |Type de conservation  |Exemple de valeur  |Comment identifier la conservation  |
 |---------|---------|---------|
 |Conservation pour litige     |    `True`     |     La conservation pour litige est activée pour une boîte ** aux lettres si la propriété `True`LitigationHoldEnabled est définie sur.    |
-|conservation eDiscovery     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   La *propriété InPlaceHolds* contient le GUID de n'importe quelle conservation associée à un cas de découverte électronique dans le centre de sécurité _AMP_ Compliance Center. Vous pouvez indiquer qu'il s'agit d'une conservation eDiscovery, car le `UniH` GUID commence par le préfixe (qui désigne une conservation unifiée).      |
+|conservation eDiscovery     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   La *propriété InPlaceHolds* contient le GUID de n'importe quelle conservation associée à un cas eDiscovery dans le centre de sécurité et de conformité. Vous pouvez indiquer qu'il s'agit d'une conservation eDiscovery, car le `UniH` GUID commence par le préfixe (qui désigne une conservation unifiée).      |
 |Blocage local     |     `c0ba3ce811b6432a8751430937152491` <br/> ou <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     La propriété *InPlaceHolds* contient le GUID de la conservation inaltérable qui est placée sur la boîte aux lettres. Vous pouvez indiquer qu'il s'agit d'une conservation inaltérable, car le GUID ne commence pas par un préfixe ou il `cld` commence par le préfixe.     |
 |Stratégie de rétention Office 365 spécifiquement appliquée à la boîte aux lettres     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> ou <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     La propriété InPlaceHolds contient les GUID de n'importe quelle stratégie de rétention d'emplacement spécifique qui est appliquée à la boîte aux lettres. Vous pouvez identifier les stratégies de rétention, car `mbx` le GUID `skp` commence par le ou le préfixe. Le `skp` préfixe indique que la stratégie de rétention est appliquée aux conversations Skype entreprise dans la boîte aux lettres de l'utilisateur.    |
 |Exclu d'une stratégie de rétention Office 365 à l'échelle de l'Organisation     |   `-mbxe9b52bf7ab3b46a286308ecb29624696`      |     Si une boîte aux lettres est exclue d'une stratégie de rétention Office 365 à l'échelle de l'organisation, le GUID de la stratégie de rétention à laquelle la boîte `-mbx` aux lettres est exclue s'affiche dans la propriété InPlaceHolds et est identifié par le préfixe.    |
@@ -137,7 +137,7 @@ Get-ComplianceCase $CaseHold.CaseId | FL Name
 $CaseHold | FL Name,ExchangeLocation
 ```
 
-Pour vous connecter au centre de sécurité & Compliance Center PowerShell, consultez [la rubrique Connect to Office 365 Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+Pour vous connecter au centre de sécurité & Compliance Center PowerShell, consultez [la rubrique Connect to Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 ### <a name="in-place-holds"></a>Conservations inaltérables
 

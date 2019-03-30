@@ -1,5 +1,5 @@
 ---
-title: Utiliser les résultats de l’Analyse rapide dans Office 365 Advanced eDiscovery
+title: Utiliser l'analyse exPresse dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
 description: Découvrez comment exécuter le mode d'analyse rapide d'Office 365 Advanced eDiscovery
-ms.openlocfilehash: e306aa03962c646ce4083b7385e527b523e86fd6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d8457587c9c1a1237ddc076ce803a46382a04ed8
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217624"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000957"
 ---
-# <a name="use-express-analysis-in-office-365-advanced-ediscovery"></a>Utiliser les résultats de l’Analyse rapide dans Office 365 Advanced eDiscovery
+# <a name="use-express-analysis-in-office-365-advanced-ediscovery"></a>Utiliser l'analyse exPresse dans Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -101,18 +101,18 @@ Vous pouvez éventuellement définir des **Paramètres avancés** pour modifier 
     
   - Pour exporter les résultats pour les nouveaux fichiers que vous avez ajoutés à un cas existant, continuez avec votre lot actuel. Pour créer une session dans le lot, sélectionnez le même numéro de lot, puis cliquez sur **créer une session d'exportation** vous pouvez utiliser cette option pour exporter les mêmes paramètres que le lot précédent, de manière incrémentielle. 
     
-  - Pour exporter vers un nouveau lot, cliquez sur **Ajouter**![une](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) icône Ajouter et entrez un nouveau nom dans le **champ nom du lot** (ou acceptez la valeur par défaut) et une description dans **Description du lot**. Cliquez sur **OK**.
+  - Pour exporter vers un nouveau lot, cliquez sur **Ajouter** ![une](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) icône Ajouter et entrez un nouveau nom dans le **champ nom du lot** (ou acceptez la valeur par défaut) et une description dans **Description du lot**. Cliquez sur **OK**.
     
   - Pour modifier un nom de lot ou une description, sélectionnez le nom dans **Exporter le lot**, cliquez](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)sur **modifier** ![l'icône d'édition, puis modifiez les champs.
     
     > [!NOTE]
     > Une fois que vous avez exécuté des sessions pour un lot d'exportation, il est impossible de les supprimer. De plus, seuls certains paramètres peuvent être modifiés une fois la première session exécutée. 
   
-  - Pour créer un lot d'exportation en double, sélectionnez dupliquer un **lot**![d'exportation en](media/3f6d5f59-e842-4946-a493-473528af0119.jpg) double créez un lot d'exportation en double et entrez un nom et une description pour le lot dupliqué dans le panneau. 
+  - Pour créer un lot d'exportation en double, sélectionnez dupliquer un **lot** ![d'exportation en](media/3f6d5f59-e842-4946-a493-473528af0119.jpg) double créez un lot d'exportation en double et entrez un nom et une description pour le lot dupliqué dans le panneau. 
     
-  - Pour supprimer un lot d'exportation, sélectionnez **supprimer**![supprimer une icône](media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)exporter un lot.
+  - Pour supprimer un lot d'exportation, sélectionnez **supprimer** ![supprimer une icône](media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)exporter un lot.
     
-  - Pour afficher l'historique d'un lot, sélectionnez ****![l'icône](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)historique du lot-afficher l'historique.
+  - Pour afficher l'historique d'un lot, sélectionnez **** ![l'icône](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)historique du lot-afficher l'historique.
     
 2. Sous define p **opulation:** sélectionnez **inclure uniquement les fichiers au-dessus du score** de découpage de pertinence et/ou affiner l' **exportation** pour affiner les paramètres de votre lot d'exportation. Si vous sélectionnez **inclure uniquement les fichiers au-dessus du score**de découpAge de pertinence, si le **problème** est activé et si le score de pertinence du fichier est supérieur au score de découpage du problème sélectionné, le fichier est exporté. Le fichier est exporté sauf s'il est exclu par le filtre « **pour révision** ». Si vous sélectionnez **affiner l'exportation**, les cases d'option **de déDuplication** et de **filtrage par «pour révision»** sont activées. Si vous choisissez **** la déduplication, les fichiers dupliqués sont filtrés en fonction de la stratégie définie: [level case (Default): à partir de chaque ensemble de fichiers en double dans le cas entier, tous les fichiers sauf un seront de duped. Niveau des dépositaires: à partir de chaque ensemble de fichiers en double du même dépositaire, tous les fichiers sauf un seront de duped. Un enregistrement de tous les fichiers en double est disponible lors de l'exportation de la sortie. Si vous choisissez **Filtrer par champ de révision** , sélectionnez **modifier sous métadonnées** pour entrer les paramètres de champ **«pour révision»**. Sélectionnez **inclure les fichiers d'entrée**pour inclure les fichiers sources dans le contenu du package. Vous pouvez désactiver cette option pour accélérer le processus d'exportation. Notez que les fichiers natifs seront exportés dans tous les cas.
     

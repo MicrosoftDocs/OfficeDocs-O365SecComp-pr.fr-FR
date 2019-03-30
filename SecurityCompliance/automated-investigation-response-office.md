@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Découvrez les fonctionnalités d'analyse et de réponse automatisées dans Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 9c01121ed6389f4a9014fe1ee1298b0e840f06ab
-ms.sourcegitcommit: 1706b618c9ec63ed05aebb5f84a77b5bfb50734a
+ms.openlocfilehash: 223a28a7f63f101dd5644e433d72a3ddf6e5dc23
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "30792508"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000437"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>Recherche et réponse automatisées (AIR) avec Office 365
 
@@ -39,9 +39,9 @@ Dans la version initiale d'AIR en avril 2019, les alertes générées à partir 
 
 ***Remarque**: ces alertes ont reçu une sévérité «informatif» dans les stratégies d'alerte respectives dans le centre de sécurité _AMP_ Compliance Center avec notifications par courrier électronique désactivées. Ces éléments peuvent être activés par le biais de la configuration de la stratégie d'alerte.
 
-pour afficher les alertes, dans le centre de sécurité & de sécurité Office 365, sélectionnez **alertes** > **afficher les alertes**. Sélectionnez une alerte pour afficher ses détails, puis, à partir de là, utilisez le lien **consulter l'enquête** pour accéder à l' [enquête](#investigation-graph)correspondante. Notez que les alertes d'information sont masquées par défaut dans l'affichage des alertes. Pour les afficher, vous devez modifier le filtrage des alertes de manière à inclure des alertes d'information.
+Pour afficher les alertes, dans le centre de sécurité & Compliance Center, sélectionnez **Alerts** > **View Alerts**. Sélectionnez une alerte pour afficher ses détails, puis, à partir de là, utilisez le lien **consulter l'enquête** pour accéder à l' [enquête](#investigation-graph)correspondante. Notez que les alertes d'information sont masquées par défaut dans l'affichage des alertes. Pour les afficher, vous devez modifier le filtrage des alertes de manière à inclure des alertes d'information.
 
-Si votre organisation gère vos alertes de sécurité par le biais d'un système de gestion des alertes, d'un système de gestion des services ou d'un système de gestion des événements et des informations de sécurité (SIEM), vous pouvez envoyer des alertes Office 365 à ce système via une notification par courrier électronique ou via le [ API d'activité de gestion d'Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Les notifications d'alerte d'enquête via le courrier électronique ou l'API incluent des liens permettant d'accéder aux alertes dans le centre de sécurité Office 365 Security &, ce qui permet à l'administrateur de sécurité affecté de naviguer rapidement dans l'enquête.
+Si votre organisation gère vos alertes de sécurité par le biais d'un système de gestion des alertes, d'un système de gestion des services ou d'un système de gestion des événements et des informations de sécurité (SIEM), vous pouvez envoyer des alertes Office 365 à ce système via une notification par courrier électronique ou via le [ API d'activité de gestion d'Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Les notifications d'alerte d'enquête via le courrier électronique ou l'API incluent des liens permettant d'accéder aux alertes dans le centre de sécurité Security &, ce qui permet à l'administrateur de sécurité affecté de naviguer rapidement dans l'enquête.
 
 ![Alertes liées à des enquêtes](media/air-alerts-page-details.png) 
 
@@ -121,7 +121,7 @@ Autre exemple: Supposons que vous affichiez des données sur les messages élect
 
 ## <a name="get-started"></a>Prise en main
 
-Pour accéder à vos enquêtes, en tant qu'administrateur général Office 365, administrateur de sécurité ou lecteur de sécurité, accédez au centre de sécurité & conformité[https://protection.office.com](https://protection.office.com)Office 365 () et connectez-vous. Effectuez ensuite l’une des opérations suivantes :
+Pour accéder à vos enquêtes, en tant qu'administrateur général Office 365, administrateur de sécurité ou lecteur de sécurité, accédez au centre de sécurité[https://protection.office.com](https://protection.office.com)_AMP_ Compliance Center () et connectez-vous. Effectuez ensuite l’une des opérations suivantes :
 
 - Dans le volet de navigation de gauche, accédez à alertes d'**affichage**des **alertes** > , ouvrez l'une des alertes liées à l'enquête, puis cliquez sur le lien **afficher l'enquête** au bas de la fenêtre d'alerte. 
 

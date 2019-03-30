@@ -6,23 +6,24 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Utilisation des principes de base de l'absorption, de la détection et de l'atténuation dans sa défense contre les attaques par déni de service (DoS).
-ms.openlocfilehash: dfe179924f7414b0120697023f3daf7e6b6661b6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: bbfffeaeb66fc83e80c274be9550a95dc8bd3f0d
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216004"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004101"
 ---
 # <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>Principes fondamentaux de défense contre les attaques par déni de service
 
-Les trois principes fondamentaux de la défense contre les attaques DoS sur le réseau sont l'absorption, la détection et l'atténuation. L'absorption se produit avant la détection et la détection a lieu avant l'atténuation. L'absorption est la meilleure défense contre les attaques DoS. Si l'attaque ne peut pas être détectée, elle ne peut pas être atténuée. Toutefois, si même la plus petite attaque de refus de service ne peut pas être absorbée, les services ne seront pas en mesure de survivre suffisamment longtemps pour que l'attaque soit détectée.
+Les trois principes fondamentaux de la défense contre les attaques DoS sur le réseau sont l'absorption, la détection et l'atténuation.
+L'absorption se produit avant la détection et la détection a lieu avant l'atténuation. L'absorption est la meilleure défense contre les attaques DoS. Si l'attaque ne peut pas être détectée, elle ne peut pas être atténuée. Toutefois, si même la plus petite attaque de refus de service ne peut pas être absorbée, les services ne seront pas en mesure de survivre suffisamment longtemps pour que l'attaque soit détectée.
 
 Bien évidemment, il n'est généralement pas raisonnable de faire en sorte que la plupart des organisations achètent les capacités excédentaires nécessaires pour absorber les attaques par déni de service, car cela nécessite un investissement considérable en matière de technologies et de compétences techniques. Cela met en évidence l'un des avantages en matière de sécurité liés à l'utilisation des services de Cloud Computing Microsoft; la grande ampleur de nos services nous permet de fournir une protection réseau solide à nos clients Cloud de façon rentable. Toutefois, même à notre montée en taille, il doit encore y avoir un équilibre entre l'absorption, la détection et l'atténuation. Pour trouver cet équilibre, nous évaluons le taux de croissance d'une attaque afin d'estimer le montant à absorber.
 

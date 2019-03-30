@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilisez les outils de découverte électronique et de recherche Office 365 pour gérer et répondre à un incident de débordement de données dans votre organisation.
-ms.openlocfilehash: 50fab420ae0769e4675c5b6ff31307fa195d3950
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 50078e3f22ede8a1af2a252a7a6f75710534c062
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296597"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000147"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>série de solutions eDiscovery: scénario de fuite de données-recherche et purge
 
@@ -60,7 +60,7 @@ Voici comment gérer un incident de fuite de données:
     
 ## <a name="optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries"></a>Module Étape 1: gérer les personnes pouvant accéder à la demande de devis et définir les limites de conformité
 
-En fonction de votre pratique de l'organisation, vous devez contrôler qui peut accéder au cas eDiscovery utilisé pour examiner un incident de débordement de données et définir des limites de conformité. Pour ce faire, la méthode la plus simple consiste à ajouter des enquêteurs en tant que membres d'un groupe de rôles existant dans le centre de sécurité & de sécurité Office 365, puis à ajouter le groupe de rôles en tant que membre du cas de découverte électronique. Pour plus d'informations sur les groupes de rôles eDiscovery intégrés et sur la façon d'ajouter des membres à un cas de découverte électronique, consultez [la rubrique &amp; attribution d'autorisations eDiscovery dans le centre de sécurité conformité Office 365](assign-ediscovery-permissions.md).
+En fonction de votre pratique de l'organisation, vous devez contrôler qui peut accéder au cas eDiscovery utilisé pour examiner un incident de débordement de données et définir des limites de conformité. Pour ce faire, la méthode la plus simple consiste à ajouter des enquêteurs en tant que membres d'un groupe de rôles existant dans le centre de sécurité & Compliance Center, puis à ajouter le groupe de rôles en tant que membre du cas de découverte électronique. Pour plus d'informations sur les groupes de rôles eDiscovery intégrés et sur la façon d'ajouter des membres à un cas de découverte électronique, consultez la rubrique [attribution d'autorisations eDiscovery](assign-ediscovery-permissions.md).
   
 Vous pouvez également créer un nouveau groupe de rôles qui s'aligne sur les besoins de votre organisation. Par exemple, vous souhaiterez peut-être un groupe d'investigateurs de débordement de données dans l'Organisation pour accéder à tous les cas de débordement de données et collaborer dessus. Pour ce faire, vous pouvez créer un groupe de rôles «enquêteur de fuite de données», attribuer les rôles appropriés (exportation, déChiffrement RMS, révision, aperçu, recherche de conformité et gestion des cas), en ajoutant les investigations de débordement de données au groupe de rôles, puis en ajoutant le Groupe de rôles en tant que membre du cas de découverte électronique de fuite de données. Pour obtenir des instructions détaillées sur la façon de procéder, voir [configurer les limites de conformité pour les enquêtes de découverte électronique dans Office 365](set-up-compliance-boundaries.md) . 
   
@@ -68,19 +68,19 @@ Vous pouvez également créer un nouveau groupe de rôles qui s'aligne sur les b
 
 Un cas de découverte électronique offre un moyen efficace de gérer votre enquête sur la fuite de données. Vous pouvez ajouter des membres au groupe de rôles que vous avez créé à l'étape 1, ajouter le groupe de rôles en tant que membre d'un nouveau cas eDiscovery, effectuer des recherches itératives pour trouver les données déplacées, exporter un rapport pour partager, suivre l'état de la demande de devis, puis renvoyer aux détails du c ASE si nécessaire. EnVisagez d'établir une convention d'affectation de noms pour les cas eDiscovery utilisés pour les incidents de déversement de données, et fournissez autant d'informations que possible dans le nom et la description de l'incident, de sorte que vous puissiez trouver et consulter à l'avenir, si nécessaire.
   
-Pour créer un nouvel incident, vous pouvez utiliser eDiscovery dans le centre &amp; de sécurité conformité. Voir «créer un nouveau cas» dans [les cas de découverte électronique dans le centre de sécurité & de la sécurité d'Office 365](ediscovery-cases.md#step-2-create-a-new-case).
+Pour créer un nouveau cas, vous pouvez utiliser eDiscovery dans le centre de sécurité et de conformité. Voir «créer un nouveau cas» dans les [cas de découverte électronique](ediscovery-cases.md#step-2-create-a-new-case).
   
 ## <a name="step-3-search-for-the-spilled-data"></a>Étape 3: Rechercher les données déversées
 
 À présent que vous avez créé un cas et un accès géré, vous pouvez utiliser le cas pour effectuer une recherche itérative afin de trouver les données déduites et identifier les boîtes aux lettres qui contiennent les données déduites. Vous allez utiliser la même requête de recherche que celle que vous avez utilisée pour rechercher les messages électroniques afin de supprimer ces mêmes messages à l' [étape 7](#step-7-permanently-delete-the-spilled-data).
   
-Pour créer une recherche de contenu associée à un cas de découverte électronique, voir «Création et exécution d'une recherche de contenu associée à un cas» dans [cas de découverte électronique dans le centre de sécurité & de la sécurité d'Office 365](ediscovery-cases.md#step-5-create-and-run-a-content-search-associated-with-a-case).
+Pour créer une recherche de contenu associée à un cas de découverte électronique, voir «Création et exécution d'une recherche de contenu associée à un cas» dans [cas de découverte électronique](ediscovery-cases.md#step-5-create-and-run-a-content-search-associated-with-a-case).
   
  **Important:** Les mots clés que vous utilisez dans la requête de recherche peuvent contenir les données propagées réelles que vous recherchez. Par exemple, si vous recherchez des documents contenant un numéro de sécurité sociale et que vous utilisez le mot clé de recherche en tant que, vous devez supprimer la requête par la suite afin d'éviter toute aggravation. Consultez [la rubrique Suppression de la requête de recherche](#deleting-the-search-query) à l'étape 8. 
   
 ## <a name="step-4-review-and-validate-case-findings"></a>Étape 4: vérifier et valider les résultats de la demande de devis
 
-Après avoir créé une recherche de contenu, vous devez vérifier et valider les résultats de la recherche et vérifier qu'ils consistent uniquement sur les messages électroniques qui doivent être supprimés. Dans une recherche de contenu, vous pouvez prévisualiser un échantillon aléatoire de 1 000 messages électroniques sans exporter les résultats de la recherche pour éviter d'autres dépassements de données. Pour en savoir plus sur les limitations d'aperçu, consultez la rubrique [limites de recherche de contenu &amp; dans le centre de sécurité conformité Office 365](limits-for-content-search.md).
+Après avoir créé une recherche de contenu, vous devez vérifier et valider les résultats de la recherche et vérifier qu'ils consistent uniquement sur les messages électroniques qui doivent être supprimés. Dans une recherche de contenu, vous pouvez prévisualiser un échantillon aléatoire de 1 000 messages électroniques sans exporter les résultats de la recherche pour éviter d'autres dépassements de données. Vous pouvez en savoir plus sur les limitations d'aperçu à [des limites pour la recherche de contenu](limits-for-content-search.md).
   
 Si vous avez plus de 1 000 boîtes aux lettres ou plus de 100 messages électroniques par boîte aux lettres à réviser, vous pouvez diviser la recherche initiale en plusieurs recherches à l'aide de mots clés ou de conditions supplémentaires, tels que la plage de dates ou l'expéditeur/destinataire et consulter les résultats de chaque recherche. restaur. Notez toutes les requêtes de recherche à utiliser lors de la suppression des messages à l' [étape 7](#step-7-permanently-delete-the-spilled-data).
 
@@ -116,11 +116,11 @@ Pour plus d'informations sur l'exportation des rapports, voir [exporter un rappo
 
 Pour plus d'informations sur le partage de messages avec des données mises en page, vous pouvez éventuellement interroger les journaux de suivi des messages avec les informations relatives à l'expéditeur et la plage de dates que vous avez collectées à l'étape 4. Notez que la période de rétention pour le suivi des messages est de 30 jours pour les données en temps réel et de 90 jours pour les données historiques.
   
-Vous pouvez utiliser le suivi des messages dans le centre de sécurité & Compliance Center ou utiliser les cmdlets correspondantes dans Exchange Online PowerShell. Il est important de noter que le suivi des messages ne propose pas de garanties complètes quant à l'intégralité des données renvoyées. Pour plus d'informations sur l'utilisation du suivi des messages, voir: 
+Vous pouvez utiliser le suivi des messages dans le centre de sécurité et de conformité ou utiliser les applets de commande correspondantes dans Exchange Online PowerShell. Il est important de noter que le suivi des messages ne propose pas de garanties complètes quant à l'intégralité des données renvoyées. Pour plus d'informations sur l'utilisation du suivi des messages, voir: 
   
-- [Suivi des messages dans le centre de &amp; sécurité conformité Office 365](https://support.office.com/article/3e64f99d-ac33-4aba-91c5-9cb4ca476803.aspx)
+- [Suivi des messages dans le centre de conformité et de sécurité](https://support.office.com/article/3e64f99d-ac33-4aba-91c5-9cb4ca476803.aspx)
     
-- [Nouveau suivi des messages dans le centre &amp; de sécurité conformité Office 365](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
+- [Nouveau suivi des messages dans le centre de sécurité & conformité](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
     
 ## <a name="step-6-prepare-the-mailboxes"></a>Étape 6: préparer les boîtes aux lettres
 
@@ -206,7 +206,7 @@ Si vous avez modifié une configuration de boîte aux lettres à l'étape 6 afin
 
 Si les mots clés de la requête de recherche que vous avez créée et utilisée à l'étape 3 contiennent certaines de ces données, vous devez supprimer la requête de recherche pour éviter toute dépassements de données.
   
-1. Dans le centre de sécurité & Compliance Center, ouvrez le cas eDiscovery, accédez à la page de **recherche** et sélectionnez la recherche de contenu appropriée.
+1. Dans le centre de sécurité et de conformité, ouvrez le cas eDiscovery, accédez à la page de **recherche** et sélectionnez la recherche de contenu appropriée.
     
 2. Sur la page de la fenêtre volante, cliquez sur **supprimer**.
 
@@ -214,12 +214,12 @@ Si les mots clés de la requête de recherche que vous avez créée et utilisée
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Audit du processus d'enquête de fuite de données
 
-Vous pouvez rechercher dans le journal d'audit Office 365 des activités eDiscovery effectuées pendant l'enquête. Vous pouvez également effectuer des recherches dans le journal d'audit pour renvoyer les enregistrements d'audit créés lors de l'exécution de la commande **Search-Mailbox-DeleteContent** pour supprimer les données déplacées. Pour plus d'informations, voir:
+Vous pouvez rechercher dans le journal d'audit Office 365 des activités eDiscovery effectuées pendant l'enquête. Vous pouvez également effectuer des recherches dans le journal d'audit pour renvoyer les enregistrements d'audit créés lors de l'exécution de la commande **Search-Mailbox-DeleteContent** pour supprimer les données déplacées. Pour plus d'informations, consultez les rubriques suivantes :
 
-- [Effectuer des recherches dans le journal d’audit dans le Centre de sécurité et de conformité Office 365](search-the-audit-log-in-security-and-compliance.md)
+- [Rechercher le journal d’audit](search-the-audit-log-in-security-and-compliance.md)
 
-- [Rechercher des activités eDiscovery dans le journal d'audit Office 365](search-for-ediscovery-activities-in-the-audit-log.md)
+- [Rechercher des activités eDiscovery dans le journal d’audit](search-for-ediscovery-activities-in-the-audit-log.md)
 
-- Consultez la section «activités auditées-journal d'audit de l'administrateur Exchange» dans [Search the Audit Log in the Office 365 Security _AMP_ Compliance Center](search-the-audit-log-in-security-and-compliance.md#audited-activities) pour obtenir des instructions sur la recherche d'enregistrements d'audit liés à l'exécution des cmdlets dans Exchange Online.
+- Consultez la section «activités auditées-journal d'audit de l'administrateur Exchange» dans [Rechercher le journal d'audit](search-the-audit-log-in-security-and-compliance.md#audited-activities) pour obtenir des instructions sur la façon de rechercher des enregistrements d'audit liés à des applets de commande en cours d'exécution dans Exchange Online.
   
 

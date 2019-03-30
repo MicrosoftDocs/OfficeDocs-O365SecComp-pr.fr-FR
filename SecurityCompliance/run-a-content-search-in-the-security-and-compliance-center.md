@@ -1,5 +1,5 @@
 ---
-title: 'Run a Content Search in the Office 365 Security &amp; Compliance Center '
+title: Exécuter une recherche de contenu dans le Centre de conformité et sécurité
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,17 +11,17 @@ f1_keywords:
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
-description: 'Utilisez la recherche de contenu dans le centre &amp; de conformité de sécurité Office 365 pour rechercher des boîtes aux lettres, des sites SharePoint Online et des emplacements OneDrive entreprise. '
-ms.openlocfilehash: 255d53240d360557dc6ff1370c8112ceea676622
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: 'Utilisez la recherche de contenu dans le centre de sécurité & Compliance Center pour rechercher des boîtes aux lettres, des sites SharePoint Online et des emplacements OneDrive entreprise. '
+ms.openlocfilehash: 780a9eacc94985cf1f59993a1d5c2816474b8cb5
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935319"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000277"
 ---
-# <a name="run-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Run a Content Search in the Office 365 Security &amp; Compliance Center 
+# <a name="run-a-content-search-in-the-security--compliance-center"></a>Exécuter une recherche de contenu dans le Centre de conformité et sécurité
 
-Vous pouvez utiliser l'outil eDiscovery de recherche de contenu dans le centre &amp; de sécurité conformité Office 365 pour rechercher des éléments tels que des courriers électroniques, des documents et des conversations de messagerie instantanée dans votre organisation Office 365. Utilisez cet outil pour rechercher des éléments dans ces services Office 365:
+Vous pouvez utiliser l'outil eDiscovery de recherche de contenu dans le centre de sécurité & Compliance Center pour rechercher des éléments tels que des courriers électroniques, des documents et des conversations de messagerie instantanée dans votre organisation Office 365. Utilisez cet outil pour rechercher des éléments dans ces services Office 365:
   
 - Boîtes aux lettres et dossiers publics Exchange Online
     
@@ -55,9 +55,9 @@ La recherche de contenu est un nouvel outil de recherche de découverte électro
 
 - Pour obtenir des informations et des instructions sur la création de requêtes de recherche et l'utilisation d'opérateurs de recherche booléens, consultez la rubrique [requêtes de mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md) Cet article contient également des informations sur la recherche de types d'informations sensibles et la recherche de contenu partagé avec des personnes à l'intérieur et à l'extérieur de votre organisation.
     
-- Pour accéder à la page de **recherche de contenu** afin d'effectuer des recherches et d'afficher un aperçu et d'exporter les résultats de la recherche, un administrateur, un responsable de la mise en conformité ou un &amp; gestionnaire eDiscovery doit être membre du groupe de rôles gestionnaire eDiscovery dans la conformité de la sécurité. Interactif. Vous n'êtes pas obligé d'attribuer des autorisations de recherche supplémentaires dans Exchange Online, SharePoint Online ou pour les sites OneDrive entreprise. Pour plus d'informations, consultez [la rubrique attribution d'autorisations eDiscovery dans &amp; le centre de sécurité conformité Office 365](assign-ediscovery-permissions.md).
+- Pour accéder à la page de **recherche de contenu** afin d'effectuer des recherches et d'afficher un aperçu et d'exporter les résultats de la recherche, un administrateur, un responsable de la mise en conformité ou un gestionnaire eDiscovery doit être membre du groupe de rôles gestionnaire eDiscovery dans le centre de sécurité _AMP_ Compliance Center. Vous n'êtes pas obligé d'attribuer des autorisations de recherche supplémentaires dans Exchange Online, SharePoint Online ou pour les sites OneDrive entreprise. Pour plus d'informations, consultez [la rubrique Assign eDiscovery Permissions in the Office 365 Security _AMP_ Compliance Center](assign-ediscovery-permissions.md).
     
-- Des limites sont appliquées à la recherche de contenu pour maintenir l'intégrité et la qualité des services fournis aux organisations Office 365. Dans la plupart des cas, vous ne pouvez pas modifier ces limites, mais vous devez en avoir connaissance pour pouvoir en tenir compte lors de la planification, de l’exécution et du dépannage des recherches. Pour plus d'informations, consultez [la rubrique Limits for Search in &amp; the Office 365 Security Compliance Center](limits-for-content-search.md).
+- Des limites sont appliquées à la recherche de contenu pour maintenir l'intégrité et la qualité des services fournis aux organisations Office 365. Dans la plupart des cas, vous ne pouvez pas modifier ces limites, mais vous devez en avoir connaissance pour pouvoir en tenir compte lors de la planification, de l’exécution et du dépannage des recherches. Pour plus d'informations, consultez [la rubrique Limits for Search in the Security _AMP_ Compliance Center](limits-for-content-search.md).
     
 - Consultez la section relative aux durées de recherche estimées en fonction du nombre de boîtes aux lettres recherchées dans une recherche de contenu unique. 
     
@@ -74,11 +74,11 @@ La recherche de contenu est un nouvel outil de recherche de découverte électro
 ## <a name="create-a-search"></a>Create a search
 <a name="create"> </a>
 
-1. Accédez à la page [https://protection.office.com](https://protection.office.com).
+1. Accédez à la page [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
-3. Dans le volet gauche du Centre de sécurité et de conformité, cliquez sur **Recherches &amp; enquêtes** \> **Recherche de contenu**.
+3. Dans le volet gauche du centre de sécurité & conformité, cliquez sur recherche de **contenu**de **recherche** \> .
     
 4. Cliquez sur **Nouveau**![Icône Ajouter](media/O365-MDM-CreatePolicy-AddIcon.gif).
     
@@ -102,7 +102,7 @@ La recherche de contenu est un nouvel outil de recherche de découverte électro
     
   - Vous pouvez ajouter des boîtes aux lettres et des groupes de distribution inactifs à la liste des boîtes aux lettres à rechercher. Pour les groupes de distribution, les boîtes aux lettres des membres du groupe sont recherchées. Notez que les groupes de distribution dynamique ne sont pas pris en charge.
     
-  - Pour obtenir la liste des boîtes aux lettres inactives dans votre organisation, exécutez la `Get-Mailbox -InactiveMailboxOnly` commande dans Exchange Online PowerShell. Vous pouvez également accéder à la rétention de **gouvernance** \> **** des données &amp; dans le centre de sécurité conformité, puis cliquer sur **autres**![ellipses](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> de barre de navigation pour les **boîtes aux lettres**inactives.
+  - Pour obtenir la liste des boîtes aux lettres inactives dans votre organisation, exécutez la `Get-Mailbox -InactiveMailboxOnly` commande dans Exchange Online PowerShell. Vous pouvez également accéder à la rétention de **gouvernance** \> **** des données dans le centre de sécurité & conformité, puis cliquer sur **autres**![ellipses](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> de la barre de navigation pour les **boîtes aux lettres**inactives.
     
   - Vous pouvez également ajouter la boîte aux lettres associée à un groupe Office 365 ou une équipe Microsoft. Dans ce cas, seule la boîte aux lettres de groupe ou d'équipe est recherchée; les boîtes aux lettres du groupe ou des membres de l'équipe ne sont pas recherchées. Pour les Rechercher, vous devez les ajouter spécifiquement à la recherche.
     
@@ -167,12 +167,12 @@ La recherche de contenu est un nouvel outil de recherche de découverte électro
 ## <a name="export-search-results"></a>Exporter les résultats de la recherche
 <a name="export"> </a>
 
-Une fois que la recherche est exécutée correctement, vous pouvez exporter les résultats de la recherche vers un ordinateur local. Lorsque vous exportez des résultats du courrier électronique, ils sont téléchargés sur votre ordinateur dans des fichiers PST. Lorsque vous exportez du contenu à partir de sites SharePoint et OneDrive entreprise, des copies des documents Office natifs sont exportées. D’autres documents et rapports sont également inclus dans les résultats de recherche exportés. Pour plus d'informations, consultez la rubrique relative [à l'exportation des &amp; résultats de recherche à partir du centre de sécurité conformité Office 365](export-search-results.md).
+Une fois que la recherche est exécutée correctement, vous pouvez exporter les résultats de la recherche vers un ordinateur local. Lorsque vous exportez des résultats du courrier électronique, ils sont téléchargés sur votre ordinateur dans des fichiers PST. Lorsque vous exportez du contenu à partir de sites SharePoint et OneDrive entreprise, des copies des documents Office natifs sont exportées. D’autres documents et rapports sont également inclus dans les résultats de recherche exportés. Pour plus d'informations, voir [Export Search Results from the Security _AMP_ Compliance Center](export-search-results.md).
   
 ## <a name="preview-search-results"></a>Aperçu des résultats de la recherche
 <a name="preview"> </a>
 
-Lorsqu’une recherche est terminée, vous pouvez prévisualiser les résultats. Un certain nombre de règles limitent la prévisualisation des résultats de recherche de contenu. Pour plus d'informations, consultez [la rubrique Limits for Search in &amp; the Office 365 Security Compliance Center](limits-for-content-search.md). Notez que les éléments non indexés ne sont pas disponibles pour l'aperçu.
+Lorsqu’une recherche est terminée, vous pouvez prévisualiser les résultats. Un certain nombre de règles limitent la prévisualisation des résultats de recherche de contenu. Pour plus d'informations, consultez [la rubrique Limits for Search in the Security _AMP_ Compliance Center](limits-for-content-search.md). Notez que les éléments non indexés ne sont pas disponibles pour l'aperçu.
   
 1. Sur la page **recherche de contenu** , sélectionnez une recherche. 
     
@@ -277,7 +277,7 @@ Voici plus d'informations sur les recherches de contenu.
   
 ### <a name="limits-and-performance"></a>Limites et performances
   
-- Pour obtenir une description des limites appliquées à la fonctionnalité de recherche de contenu, reportez-vous à la rubrique [Limits for Search in the Office 365 Security &amp; Compliance Center](limits-for-content-search.md).
+- Pour obtenir une description des limites appliquées à la fonctionnalité de recherche de contenu, voir [Limits for Search in the Security _AMP_ Compliance Center](limits-for-content-search.md).
     
 - Microsoft collecte des informations sur les performances des recherches de contenu exécutées par toutes les organisations Office 365. Bien que la complexité de la requête de recherche puisse avoir un impact sur les temps de recherche, le facteur le plus important qui affecte la durée de recherche est le nombre de boîtes aux lettres recherchées. Bien que Microsoft ne fournisse pas de contrat de niveau de service pour les temps de recherche, le tableau suivant répertorie les temps de recherche moyens pour une recherche de contenu sur la base du nombre de boîtes aux lettres incluses dans la recherche.
     
@@ -319,7 +319,7 @@ Voici plus d'informations sur les recherches de contenu.
   
   - Lors de la recherche dans la boîte aux lettres d'un utilisateur, un groupe Microsoft Team ou Office 365 dont l'utilisateur est membre ne sera pas recherché. De même, lorsque vous effectuez une recherche dans une équipe Microsoft ou un groupe Office 365, seule la boîte aux lettres de groupe et le site de groupe que vous spécifiez sont recherchés; les boîtes aux lettres et les comptes OneDrive entreprise des membres du groupe ne sont pas recherchés sauf si vous les ajoutez explicitement à la recherche.
     
-  - Pour obtenir la liste des membres d'une équipe Microsoft ou d'un groupe Office 365, vous pouvez afficher les propriétés sur la **page \> groupes d'accueil** dans le centre d'administration Office 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell: 
+  - Pour obtenir la liste des membres d'une équipe Microsoft ou d'un groupe Office 365, vous pouvez afficher les propriétés sur la **page \> groupes d'accueil** dans le centre d'administration Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell: 
     
   ```
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
@@ -367,11 +367,11 @@ Voici plus d'informations sur les recherches de contenu.
     
     ![Exemple de requête créée lors de l'utilisation de la liste de mots clés et d'une condition](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
-  - Si vous avez une requête de recherche qui contient des mots clés pour des caractères non anglais (tels que des caractères chinois), vous devrez peut-être utiliser l'applet de commande **Set-ComplianceSearch** pour configurer la propriété de langue pour la recherche de contenu. Lorsque vous créez une recherche de contenu à l'aide de l' &amp; interface utilisateur graphique dans le centre de sécurité conformité, la langue par défaut est neutre. 
+  - Si vous avez une requête de recherche qui contient des mots clés pour des caractères non anglais (tels que des caractères chinois), vous devrez peut-être utiliser l'applet de commande **Set-ComplianceSearch** pour configurer la propriété de langue pour la recherche de contenu. Lorsque vous créez une recherche de contenu à l'aide de l'interface utilisateur graphique dans le centre de sécurité & Compliance Center, la langue par défaut est neutre. 
     
     Comment savoir si vous devez modifier le paramètre de langue pour une recherche de contenu? Si vous êtes certain que des emplacements de contenu contiennent des caractères non anglais que vous recherchez, mais que la recherche ne renvoie aucun résultat, le paramètre de langue peut en être la cause.
     
-    Pour modifier le paramètre de langue d'une recherche de contenu existante, exécutez la commande suivante &amp; dans le centre de sécurité conformité PowerShell:
+    Pour modifier le paramètre de langue d'une recherche de contenu existante, exécutez la commande suivante dans Security & Compliance Center PowerShell:
     
   ```
   Set-ComplianceSearch <name of content search> -Language <culture code value>
@@ -398,9 +398,9 @@ Comme indiqué précédemment, vous pouvez rechercher des boîtes aux lettres in
     
 ### <a name="miscellaneous"></a>Divers
   
-- Les recherches de contenu créées sur la page **recherche** de contenu &amp; dans le centre de sécurité et de conformité ne sont pas affichées dans la page ** &amp; conservation** inaltérable dans le centre d'administration Exchange. Cela est dû au fait que l'architecture de recherche de contenu et les objets &amp; de recherche créés dans le centre de sécurité conformité sont totalement différents de la fonctionnalité de découverte électronique inaltérable dans Exchange Online. 
+- Les recherches de contenu créées sur la page **recherche de contenu** dans le centre de sécurité _AMP_ Compliance Center ne sont pas affichées sur la page de blocage de la **découverte électronique &amp; inaltérable** dans le centre d'administration Exchange. Cela est dû au fait que l'architecture de recherche de contenu et les objets de recherche créés dans le centre de sécurité & Compliance Center sont totalement différents de la fonctionnalité de découverte électronique inaltérable dans Exchange Online. 
     
-    Pour la même raison, les recherches créées sur la page de **recherche de contenu** ne s'affichent pas sur la page **recherches** d' &amp; un cas de découverte électronique dans le centre de sécurité conformité. 
+    Pour la même raison, les recherches créées sur la page de **recherche de contenu** ne s'affichent pas sur la page **recherches** d'un cas de découverte électronique dans le centre de sécurité & Compliance Center. 
     
 - Quelle est la différence entre le redémarrage d’une recherche et l’exécution d’une nouvelle tentative ? Lorsque vous redémarrez une recherche, tous les emplacements de contenu spécifiés dans la recherche sont recherchés dans une nouvelle version de la recherche. Toutefois, lorsque vous relancez une recherche, seuls les emplacements de contenu ayant échoué lors de la dernière exécution de la recherche sont recherchés.
    

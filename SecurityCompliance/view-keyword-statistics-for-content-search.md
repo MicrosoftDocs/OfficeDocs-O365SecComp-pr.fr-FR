@@ -13,13 +13,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
-description: Utilisez la fonctionnalité statistiques de recherche pour afficher et comparer les statistiques de plusieurs recherches de contenu dans &amp; le centre de sécurité conformité Office 365. Vous pouvez également configurer la liste de mots clés lors de la création ou de la modification d'une requête de recherche pour obtenir des statistiques améliorées qui indiquent le nombre d'éléments correspondant à chaque expression de mot clé ou mot clé.
-ms.openlocfilehash: 614f832ec737850986af334a390ffc0c4e88122d
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: Utilisez la fonctionnalité statistiques de recherche pour afficher et comparer les statistiques de plusieurs recherches de contenu dans le centre de sécurité & Compliance Center. Vous pouvez également configurer la liste de mots clés lors de la création ou de la modification d'une requête de recherche pour obtenir des statistiques améliorées qui indiquent le nombre d'éléments correspondant à chaque expression de mot clé ou mot clé.
+ms.openlocfilehash: 5e4cca18f6a50f2647265f02dab7ab3f20f513fc
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295727"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001127"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Afficher les statistiques de mot clé pour les résultats de recherche de contenu
 
@@ -33,7 +33,7 @@ Vous pouvez également télécharger les statistiques de recherche et les statis
 
 Pour afficher les statistiques des recherches de contenu:
   
-1. dans le centre de sécurité &amp; conformité Office 365, accédez à recherche de \> **contenu**d' **enquête de recherche &amp; ** .
+1. Dans le centre de sécurité & conformité, accédez à recherche de **contenu**de **recherche** \> .
     
 2. Dans la liste des recherches, sélectionnez une ou plusieurs recherches, puis cliquez sur ****![le bouton](media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)statistiques de recherche de statistiques de recherche.
     
@@ -47,29 +47,29 @@ Pour afficher les statistiques des recherches de contenu:
     
     ![Résumé des statistiques pour les recherches sélectionnées](media/abb663eb-b3d6-4f4c-a99f-55d20b0848af.png)
   
-    a. nom de la recherche de contenu. Comme indiqué précédemment, vous pouvez afficher et comparer les statistiques de plusieurs recherches.
+    a.  Nom de la recherche de contenu. Comme indiqué précédemment, vous pouvez afficher et comparer les statistiques de plusieurs recherches.
     
-    b. type d'emplacement de contenu dans lequel la recherche a été effectuée. Chaque ligne affiche des statistiques pour les boîtes aux lettres, les sites et les dossiers publics à partir de la recherche spécifiée.
+    b. Type d'emplacement de contenu dans lequel la recherche a été effectuée. Chaque ligne affiche des statistiques pour les boîtes aux lettres, les sites et les dossiers publics à partir de la recherche spécifiée.
     
-    c. le nombre d'emplacements de contenu contenant des éléments qui correspondent à la requête de recherche. Pour les boîtes aux lettres, cette statistique inclut également le nombre de boîtes aux lettres d'archivage qui contiennent des éléments qui correspondent à la requête de recherche.
+    c. Nombre d'emplacements de contenu contenant des éléments qui correspondent à la requête de recherche. Pour les boîtes aux lettres, cette statistique inclut également le nombre de boîtes aux lettres d'archivage qui contiennent des éléments qui correspondent à la requête de recherche.
     
-    d. nombre total d'éléments de tous les emplacements de contenu spécifiés qui correspondent à la requête de recherche. Les messages électroniques, les éléments de calendrier et les documents sont des exemples de types d'éléments. Si un élément contient plusieurs instances d'un mot clé recherché, il n'est compté qu'une seule fois dans le nombre total d'éléments. Par exemple, si vous recherchez des mots «stock» ou «fraude» et qu'un message électronique contient trois occurrences du mot «stock», il n'est compté qu'une seule fois dans la colonne **éléments** . 
+    d. Nombre total d'éléments de tous les emplacements de contenu spécifiés qui correspondent à la requête de recherche. Les messages électroniques, les éléments de calendrier et les documents sont des exemples de types d'éléments. Si un élément contient plusieurs instances d'un mot clé recherché, il n'est compté qu'une seule fois dans le nombre total d'éléments. Par exemple, si vous recherchez des mots «stock» ou «fraude» et qu'un message électronique contient trois occurrences du mot «stock», il n'est compté qu'une seule fois dans la colonne **éléments** . 
     
-    e. taille totale de tous les éléments trouvés dans l'emplacement de contenu spécifié qui correspondent à la requête de recherche. 
+    e. Taille totale de tous les éléments trouvés dans l'emplacement de contenu spécifié qui correspondent à la requête de recherche. 
     
-    **Requêtes**
+    **Queries**
     
     Cette page affiche des statistiques sur la requête de recherche.
     
     ![Statistiques de requête de recherche pour les recherches sélectionnées](media/dc817526-dfb9-43d3-a14c-4c58077eb7bb.png)
   
-    a. nom de la recherche de contenu pour laquelle la ligne contient des statistiques de requête.
+    a. Nom de la recherche de contenu pour laquelle la ligne contient des statistiques de requête.
     
-    b. le type d'emplacement de contenu auquel s'appliquent les statistiques de requête.
+    b. Type d'emplacement de contenu auquel s'appliquent les statistiques de requête.
     
-    c. cette colonne indique la partie de la requête de recherche à laquelle les statistiques sont applicables. **Primary** indique l'ensemble de la requête de recherche. Si vous utilisez une liste de mots clés lors de la création ou de la modification d'une requête de recherche, les statistiques de chaque composant de la requête sont incluses dans ce tableau. Pour plus d'informations, rePortez-vous à la section [obtenir des statistiques sur les mots clés pour les recherches de contenu](#get-keyword-statistics-for-content-searches) de cet article. 
+    c. Cette colonne indique la partie de la requête de recherche à laquelle les statistiques sont applicables. **Primary** indique l'ensemble de la requête de recherche. Si vous utilisez une liste de mots clés lors de la création ou de la modification d'une requête de recherche, les statistiques de chaque composant de la requête sont incluses dans ce tableau. Pour plus d'informations, rePortez-vous à la section [obtenir des statistiques sur les mots clés pour les recherches de contenu](#get-keyword-statistics-for-content-searches) de cet article. 
     
-    d. cette colonne contient la requête de recherche en cours qui est exécutée par l'outil de recherche de contenu. Notez que l'outil ajoute automatiquement quelques composants supplémentaires à la requête que vous créez. 
+    d. Cette colonne contient la requête de recherche en cours qui est exécutée par l'outil de recherche de contenu. Notez que l'outil ajoute automatiquement quelques composants supplémentaires à la requête que vous créez. 
 
     - Lorsque vous recherchez tout le contenu dans des boîtes aux lettres (en ne spécifiant pas de mots clés), la `size>=0` requête mot clé réelle est de sorte que tous les éléments soient renvoyés. 
     
@@ -80,11 +80,11 @@ Pour afficher les statistiques des recherches de contenu:
           **Non IsOneNotePage: 1** -exclut tous les fichiers OneNote, car il s'agit de doublons de tous les documents qui correspondent à la requête de recherche. 
 
     
-    e. nombre d'emplacements de contenu (spécifiés par la colonne * * type d'emplacement * *) qui contiennent des éléments correspondant à la requête de recherche indiquée dans la colonne **requête** . 
+    e. Le nombre d'emplacements de contenu (spécifiés par la colonne * * type d'emplacement * *) qui contiennent des éléments qui correspondent à la requête de recherche indiquée dans la colonne **requête** . 
     
-    f. nombre d'éléments (à partir de l'emplacement de contenu spécifié) qui correspondent à la requête de recherche indiquée dans la colonne **requête** . Comme expliqué précédemment, si un élément contient plusieurs instances d'un mot clé recherché, il n'est compté qu'une seule fois dans cette colonne. 
+    f. Nombre d'éléments (à partir de l'emplacement de contenu spécifié) qui correspondent à la requête de recherche indiquée dans la colonne **requête** . Comme expliqué précédemment, si un élément contient plusieurs instances d'un mot clé recherché, il n'est compté qu'une seule fois dans cette colonne. 
     
-    g. taille totale de tous les éléments trouvés (dans l'emplacement de contenu spécifié) qui correspondent à la requête de recherche dans la colonne **requête** . 
+    exemple. Taille totale de tous les éléments trouvés (dans l'emplacement de contenu spécifié) qui correspondent à la requête de recherche dans la colonne de **requête** . 
     
     **Emplacements les plus fréquents**
     
@@ -92,23 +92,20 @@ Pour afficher les statistiques des recherches de contenu:
     
     ![Statistiques sur le nombre d'éléments trouvés dans les emplacements de contenu ayant fait l'objet d'une recherche](media/35a820b0-85d9-45d1-9a0c-c74bec803e67.png)
   
-    a. nom de l'emplacement de contenu.
+    a. Nom de l'emplacement de contenu.
     
-    b. le type d'emplacement de contenu auquel les statistiques d'emplacement sont applicables.
+    b. Type d'emplacement de contenu auquel s'appliquent les statistiques d'emplacement.
     
-    c. il existe des colonnes pour chaque recherche dont vous affichez les statistiques. Cette colonne indique le nombre (et la taille totale) des éléments qui correspondent à la requête de recherche dans chaque emplacement de contenu. Notez que lorsque vous affichez des statistiques pour plusieurs recherches, la mention «NA» dans cette colonne indique que l'emplacement de contenu n'a pas été inclus dans cette recherche. 
+    c. Il existe des colonnes pour chaque recherche dont vous affichez les statistiques. Cette colonne indique le nombre (et la taille totale) des éléments qui correspondent à la requête de recherche dans chaque emplacement de contenu. Notez que lorsque vous affichez des statistiques pour plusieurs recherches, la mention «NA» dans cette colonne indique que l'emplacement de contenu n'a pas été inclus dans cette recherche. 
 
 ## <a name="get-keyword-statistics-for-content-searches"></a>Obtenir des statistiques sur les mots clés pour les recherches de contenu
 
 Comme expliqué précédemment, la page **requêtes** affiche la requête de recherche et le nombre (et la taille) des éléments qui correspondent à la requête. Si vous utilisez une liste de mots clés lors de la création ou de la modification d'une requête de recherche, vous pouvez obtenir des statistiques améliorées qui indiquent le nombre d'éléments correspondant à chaque mot clé ou phrase de mots-clés. Cela peut vous aider à identifier rapidement les parties de la requête qui sont les plus efficaces (et les moins). Par exemple, si un mot clé renvoie un grand nombre d'éléments, vous pouvez choisir d'affiner la requête de mot clé pour affiner les résultats de la recherche. Vous pouvez configurer une liste de mots clés lors de la création ou de la modification d'une recherche de contenu. 
 
 
-
-
-  
 Pour créer une liste de mots clés et afficher les statistiques de mots clés pour une recherche de contenu:
   
-1. dans le centre de sécurité &amp; conformité Office 365, accédez à recherche de \> **contenu**d' **enquête de recherche &amp; ** .
+1. Dans le centre de sécurité & conformité, accédez à recherche de **contenu**de **recherche** \> .
     
 2. Dans la liste des recherches de contenu, cliquez sur et sur une recherche, **** ![puis sur modifier](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)l'icône modifier.
     
@@ -116,9 +113,9 @@ Pour créer une liste de mots clés et afficher les statistiques de mots clés p
     
     ![Cliquez sur la case à cocher Afficher la liste de mots clés et tapez un mot clé dans chaque ligne.](media/73ef46dd-3d5c-415d-b5e7-c3559caaafe2.png)
   
-    a. cliquez sur la case à cocher **afficher la liste de mots clés** . 
+    a. Activez la case à cocher **afficher la liste de mots clés** . 
     
-    b. tapez un mot clé ou une phase de mot clé dans une ligne dans le tableau des mots-clés. Par exemple, tapez **budget** dans la première ligne, puis tapez **sécurité** dans la deuxième ligne. 
+    b. Tapez un mot clé ou une phase de mot-clé dans une ligne du tableau Mots-clés. Par exemple, tapez **budget** dans la première ligne, puis tapez **sécurité** dans la deuxième ligne. 
     
 4. Après avoir ajouté les mots clés pour lesquels vous souhaitez effectuer une recherche et obtenir des statistiques, cliquez sur **Rechercher** pour exécuter la recherche révisée. 
     

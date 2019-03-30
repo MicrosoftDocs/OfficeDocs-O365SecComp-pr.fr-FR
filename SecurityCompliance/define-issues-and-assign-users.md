@@ -1,9 +1,8 @@
 ---
-title: Définir des problèmes et affecter des utilisateurs dans Office 365 Advanced eDiscovery
+title: Définition des problèmes et affectation des utilisateurs dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
 description: Découvrez comment ajouter ou modifier un problème, y compris lui affecter des utilisateurs ou supprimer un problème pour un cas de découverte électronique dans Office 365 Advanced eDiscovery.
-ms.openlocfilehash: b8ed024983c527246236b355c81ef226c98f404b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 80ea6e2579b8bc68b70e2181d9c986c91c890836
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218234"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000637"
 ---
-# <a name="define-issues-and-assign-users-in-office-365-advanced-ediscovery"></a>Définir des problèmes et affecter des utilisateurs dans Office 365 Advanced eDiscovery
+# <a name="define-issues-and-assign-users-in-office-365-advanced-ediscovery"></a>Définition des problèmes et affectation des utilisateurs dans Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -68,7 +67,7 @@ Des problèmes peuvent être supprimés (c'est-à-dire supprimés de la base de 
     
 2. Sélectionnez le problème à supprimer de la base de données, puis cliquez sur **supprimer**.
     
-3. Un message de confirmation s'affiche. Cliquez sur **Oui** pour confirmer. 
+3. Un message de confirmation s'affiche. Cliquez sur **Oui** pour confirmer l'opération. 
     
 4. Cliquez sur **OK**.
     

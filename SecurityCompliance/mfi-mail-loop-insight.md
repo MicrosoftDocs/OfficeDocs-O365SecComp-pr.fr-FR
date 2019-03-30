@@ -8,19 +8,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
-description: Les administrateurs peuvent en savoir plus sur la vue de boucle de courrier dans le tableau de bord de flux de messagerie dans le centre de sécurité & de sécurité Office 365.
-ms.openlocfilehash: 5fa7267d68183ea9f8117e420a769a2beaafdac1
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+description: Les administrateurs peuvent en savoir plus sur la vue de boucle de courrier dans le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance Center.
+ms.openlocfilehash: 7229f8ebfc9ca1a46d91acc210199a3a6002c01e
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720294"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000317"
 ---
 # <a name="mail-loop-insight"></a>Informations sur les boucles de courrier
 
 Une boucle de courrier est incorrecte car elle gaspille des ressources système, consomme le quota de volume de courrier de votre organisation et envoie des notifications d'échec de remise confuses (également appelées notifications de non-remise) aux expéditeurs d'origine. Cet aperçu indique quand une boucle de courrier est trouvée dans votre organisation, les domaines de messagerie impliqués dans la boucle et le nombre de messages de la journée précédente qui se trouvaient dans la boucle.
 
-![Vue de boucle de courrier dans le tableau de bord de flux de messagerie dans le centre de sécurité & de sécurité Office 365](media/c3f707cb-4c89-4e88-989c-81ce1d1d6b99.png)
+![Vue de boucle de courrier dans le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance Center](media/c3f707cb-4c89-4e88-989c-81ce1d1d6b99.png)
 
 Vous pouvez cliquer sur **afficher les détails** pour afficher les détails dans un volet flyout. Nous allons également identifier les scénarios de boucle les plus courants et fournir les actions recommandées (le cas échéant) pour corriger la boucle.
 

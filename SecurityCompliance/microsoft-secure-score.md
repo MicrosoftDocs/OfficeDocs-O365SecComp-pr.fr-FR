@@ -11,16 +11,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 369d3edf02b26be466a6dc8eea3d872030bbbcd2
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 981cb2e6820cb349ff1e2d101bf21d592c2191c6
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789409"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001157"
 ---
 # <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
-
-[!include[Prerelease�information](prerelease.md)]
 
 Avec le score de sécurité Microsoft dans le centre de sécurité Microsoft 365, vous pouvez augmenter la visibilité et contrôler la position de sécurité de votre organisation. À partir d'un tableau de bord centralisé, vous pouvez surveiller et améliorer la sécurité pour vos identités, données, applications, périphériques et infrastructure Microsoft 365.
 

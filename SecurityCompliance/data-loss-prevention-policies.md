@@ -3,8 +3,8 @@ title: Vue d’ensemble des stratégies de protection contre la perte de donnée
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/29/2018
-ms.audience: Admin
+ms.date: 3/29/2019
+ms.audience: ITPro
 ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Avec une stratégie de protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365, vous pouvez identifier, surveiller et protéger automatiquement les informations sensibles dans Office 365.
-ms.openlocfilehash: 7c776b3fd703ddb24d9d8195609384771858c7f5
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: 4117a99afc804fd397deb45087c5058077f9ff60
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862536"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000017"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Vue d’ensemble des stratégies de protection contre la perte de données
 
@@ -28,7 +28,7 @@ Pour respecter les normes de l'entreprise et les réglementations du secteur, le
   
 Avec une stratégie DLP, vous pouvez :
   
-- **Identifier les informations sensibles dans de nombreux emplacements, comme Exchange Online, SharePoint Online et OneDrive entreprise.**
+- **Identifier les informations sensibles dans de nombreux emplacements, comme Exchange Online, SharePoint Online, OneDrive entreprise et Microsoft Teams.**
     
     Par exemple, vous pouvez identifier tout document contenant un numéro de carte de crédit stocké dans un site OneDrive entreprise, ou vous pouvez surveiller uniquement les sites OneDrive de personnes spécifiques.
     
@@ -36,13 +36,13 @@ Avec une stratégie DLP, vous pouvez :
     
     Par exemple, vous pouvez identifier tout document ou courrier électronique contenant un enregistrement d'intégrité partagé avec des personnes extérieures à votre organisation, puis bloquer automatiquement l'accès à ce document ou empêcher l'envoi du courrier électronique.
     
-- **Surveiller et protéger les informations sensibles dans les versions de bureau d’Excel 2016, de PowerPoint 2016 et de Word 2016**
+- **Surveiller et protéger les informations sensibles dans les versions de bureau d'Excel, PowerPoint et Word.**
     
-    Tout comme dans Exchange Online, SharePoint Online et OneDrive entreprise, ces programmes de bureau Office 2016 incluent les mêmes fonctionnalités pour identifier les informations sensibles et appliquer des stratégies DLP. DLP assure une surveillance continue en cas de partage de contenu dans ces programmes Office 2016.
+    Tout comme dans Exchange Online, SharePoint Online et OneDrive entreprise, ces programmes de bureau Office incluent les mêmes fonctionnalités pour identifier les informations sensibles et appliquer des stratégies DLP. DLP assure une surveillance continue lorsque des personnes partagent du contenu dans ces programmes Office.
     
 - **Aider les utilisateurs à découvrir comment assurer la conformité sans interrompre leur flux de travail**
     
-    Vous pouvez informer vos utilisateurs sur les stratégies DLP et les aider à maintenir la conformité sans bloquer leur travail. Par exemple, si un utilisateur tente de partager un document contenant des informations sensibles, une stratégie DLP peut lui envoyer une notification par courrier électronique et afficher un conseil de stratégie dans le contexte de la bibliothèque de documents, qui lui permet de remplacer la stratégie s’il a une raison professionnelle de le faire. Les mêmes conseils de stratégie s'affichent également dans Outlook sur le Web, Outlook 2013 et versions ultérieures, Excel 2016, PowerPoint 2016 et Word 2016.
+    Vous pouvez informer vos utilisateurs sur les stratégies DLP et les aider à maintenir la conformité sans bloquer leur travail. Par exemple, si un utilisateur tente de partager un document contenant des informations sensibles, une stratégie DLP peut lui envoyer une notification par courrier électronique et afficher un conseil de stratégie dans le contexte de la bibliothèque de documents, qui lui permet de remplacer la stratégie s’il a une raison professionnelle de le faire. Les mêmes conseils de stratégie s'affichent également dans Outlook sur le Web, Outlook, Excel, PowerPoint et Word.
     
 - **Afficher les rapports DLP présentant le contenu qui correspond aux stratégies DLP de votre organisation.**
     
@@ -56,7 +56,7 @@ Vous créez et gérez des stratégies DLP sur la page protection contre la perte
 
 Une stratégie DLP contient quelques éléments de base :
   
-- Emplacement de protection des **emplacements** de contenu, tels que les sites Exchange Online, SharePoint Online et OneDrive entreprise. 
+- Emplacement de protection des **emplacements** de contenu, tels que les sites Exchange Online, SharePoint Online et OneDrive entreprise, ainsi que les conversations et canaux Microsoft Teams. 
     
 - Circonstances de protection du contenu en appliquant des **règles** comprenant les éléments suivants : 
     
@@ -72,7 +72,7 @@ Par exemple, vous pouvez disposer d’une stratégie DLP qui vous permet de dét
   
 ### <a name="locations"></a>Emplacements
 
-Une stratégie DLP peut trouver et protéger des informations sensibles dans Office 365, que ces informations se trouvent dans Exchange Online, SharePoint Online ou OneDrive entreprise. Vous pouvez facilement choisir de protéger tous les sites SharePoint ou tous les comptes OneDrive, uniquement des sites ou des comptes spécifiques, ou toutes les boîtes aux lettres. Notez qu'il n'est pas encore possible de sélectionner uniquement les boîtes aux lettres d'utilisateurs spécifiques.
+Une stratégie DLP peut trouver et protéger des informations sensibles dans Office 365, que ces informations se trouvent dans Exchange Online, SharePoint Online, OneDrive entreprise ou Microsoft Teams. Vous pouvez choisir de protéger le contenu dans les courriers électroniques Exchange, les conversations et les canaux de Microsoft Teams, ainsi que toutes les bibliothèques SharePoint ou OneDrive, ou sélectionner des emplacements spécifiques pour une stratégie.
   
 ![Options pour les emplacements dans lesquels une stratégie DLP peut être appliquée](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
@@ -112,7 +112,7 @@ Une stratégie DLP peut aider à protéger les informations sensibles, qui est d
   
 Lorsqu'une stratégie DLP recherche un type d'informations sensibles comme un numéro de carte de crédit, il ne recherche pas simplement un nombre à 16 chiffres. Chaque type d’informations sensibles est défini et détecté en utilisant une combinaison des éléments suivants :
   
-- Mots clés
+- Mots-clés
     
 - Fonctions internes pour valider les sommes de contrôle ou la composition
     
@@ -148,11 +148,11 @@ Le courrier électronique peut informer la personne qui a envoyé, partagé ou m
   
 En plus d'envoyer une notification par courrier électronique, une notification de l'utilisateur affiche un Conseil de stratégie:
   
-- Dans Outlook 2013 et versions ultérieures et Outlook sur le Web.
+- Dans Outlook et Outlook sur le Web.
     
 - Pour le document sur un site SharePoint Online ou OneDrive entreprise.
     
-- Dans Excel 2016, PowerPoint 2016 et Word 2016, lorsque le document est stocké sur un site inclus dans une stratégie DLP.
+- Dans Excel, PowerPoint et Word, lorsque le document est stocké sur un site inclus dans une stratégie DLP.
     
 Les notifications par courrier électronique et le Conseil de stratégie expliquent pourquoi le contenu est en conflit avec une stratégie DLP. Si vous le choisissez, la notification par courrier électronique et le conseil de stratégie peuvent permettre aux utilisateurs de remplacer une règle en signalant un faux positif ou en fournissant une justification professionnelle. Cela peut vous aider à informer les utilisateurs de vos stratégies DLP et à les appliquer sans interrompre le travail. Les informations sur les remplacements et les faux positifs sont également enregistrées pour la création de rapports (consultez la rubrique ci-dessous sur les rapports DLP) et incluses dans les rapports d’incident (section suivante), afin que le responsable de la mise en conformité puisse les consulter régulièrement.
   
@@ -428,13 +428,15 @@ DLP détecte les informations sensibles à l’aide d’une analyse approfondie 
 
 Une fois que vous avez créé une stratégie DLP &amp; dans le centre de sécurité conformité, elle est stockée dans un magasin de stratégies central, puis synchronisée avec les différentes sources de contenu, notamment:
   
-- Exchange Online et à partir de là, Outlook sur le Web et Outlook 2013 et versions ultérieures
+- Exchange Online et à partir de là, Outlook sur le Web et Outlook
     
 - Sites OneDrive Entreprise
     
 - Sites SharePoint Online
     
-- Programmes de bureau Office 2016 (Excel 2016, PowerPoint 2016 et Word 2016)
+- Programmes de bureau Office (Excel, PowerPoint et Word)
+
+- Canaux et conversations Microsoft Teams
     
 Une fois que la stratégie a été synchronisée aux emplacements corrects, elle commence à évaluer le contenu et à appliquer les actions.
   
@@ -444,26 +446,36 @@ Sur tous vos sites SharePoint Online et OneDrive entreprise, les documents chang
   
 Pour cette raison, les stratégies DLP vérifient les correspondances de stratégie fréquemment dans les documents en arrière-plan. Vous pouvez considérer ceci comme une évaluation asynchrone des stratégies.
   
-Voici comment cela fonctionne. Au fur et à mesure que les utilisateurs ajoutent ou modifient des documents dans leurs sites, le moteur de recherche analyse le contenu, afin que vous puissiez le rechercher ultérieurement. Pendant ce temps, le contenu analyse également les informations sensibles afin de vérifier s'il est partagé. Toutes les informations sensibles trouvées sont stockées de manière sécurisée dans l'index de recherche, afin que seule l'équipe de conformité puisse y accéder, mais pas les utilisateurs classiques. Chaque stratégie DLP que vous avez activée s'exécute en arrière-plan (de façon asynchrone), en vérifiant fréquemment la recherche de contenu correspondant à une stratégie et en appliquant des actions pour la protéger contre des fuites involontaires.
+#### <a name="how-it-works"></a>Fonctionnement
+ 
+Au fur et à mesure que les utilisateurs ajoutent ou modifient des documents dans leurs sites, le moteur de recherche analyse le contenu, afin que vous puissiez le rechercher ultérieurement. Pendant ce temps, le contenu analyse également les informations sensibles afin de vérifier s'il est partagé. Toutes les informations sensibles trouvées sont stockées de manière sécurisée dans l'index de recherche, afin que seule l'équipe de conformité puisse y accéder, mais pas les utilisateurs classiques. Chaque stratégie DLP que vous avez activée s'exécute en arrière-plan (de façon asynchrone), en vérifiant fréquemment la recherche de contenu correspondant à une stratégie et en appliquant des actions pour la protéger contre des fuites involontaires.
   
 ![Diagramme illustrant la façon dont la stratégie DLP évalue le contenu de manière asynchrone](media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
   
 Enfin, les documents peuvent entrer en conflit avec une stratégie DLP, mais ils peuvent également y devenir conformes. Par exemple, si une personne ajoute des numéros de carte de crédit à un document, une stratégie DLP peut alors bloquer l’accès au document automatiquement. Toutefois, si cette personne supprime ensuite les informations sensibles, l’action (dans ce cas, le blocage) est annulée automatiquement à la prochaine évaluation du document par rapport à la stratégie.
   
-DLP évalue le contenu pouvant être indexé. Pour plus d'informations sur les types de fichiers analysés par défaut, reportez-vous aux [extensions de nom de fichier et aux types de fichiers analysés par défaut dans SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkID=627430).
+DLP évalue le contenu pouvant être indexé. Pour plus d'informations sur les types de fichiers analysés par défaut, reportez-vous aux [extensions de nom de fichier et aux types de fichiers analysés par défaut dans SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
   
-### <a name="policy-evaluation-in-exchange-online-outlook-2013-and-later-and-outlook-on-the-web"></a>Évaluation de stratégie dans Exchange Online, Outlook 2013 et versions ultérieures, et Outlook sur le Web
+### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Évaluation de stratégie dans Exchange Online, Outlook et Outlook sur le Web
 
-Lorsque vous créez une stratégie DLP qui inclut Exchange Online en tant qu'emplacement, la stratégie est synchronisée à partir du centre &amp; de sécurité conformité d'Office 365 vers Exchange Online, puis d'Exchange Online vers Outlook sur le Web et Outlook 2013 et versions ultérieures.
+Lorsque vous créez une stratégie DLP qui inclut Exchange Online en tant qu'emplacement, la stratégie est synchronisée à partir du centre &amp; de sécurité conformité d'Office 365 vers Exchange Online, puis d'Exchange Online vers Outlook sur le Web et Outlook.
   
-Lorsqu'un message est composé dans Outlook, l'utilisateur peut voir les conseils de stratégie pendant que le contenu créé est évalué par rapport aux stratégies DLP. Et après l'envoi d'un message, il est évalué par rapport aux stratégies DLP dans le flux de messagerie, ainsi qu'avec les règles de flux de messagerie Exchange (également appelées règles de transport) et les stratégies DLP créées dans le centre d'administration Exchange (voir la section suivante pour plus d'informations). Les stratégies DLP analysent à la fois le message et les pièces jointes.
+Lorsqu'un message est composé dans Outlook, l'utilisateur peut voir les conseils de stratégie pendant que le contenu créé est évalué par rapport aux stratégies DLP. Et après l'envoi d'un message, il est évalué par rapport aux stratégies DLP dans le flux de messagerie, ainsi qu'avec les règles de flux de messagerie Exchange (également appelées règles de transport) et les stratégies DLP créées dans le centre d'administration Exchange. Les stratégies DLP analysent à la fois le message et les pièces jointes.
   
-### <a name="policy-evaluation-in-the-office-2016-desktop-programs"></a>Évaluation des stratégies dans les programmes de bureau Office 2016
+### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Évaluation de stratégie dans les programmes de bureau Office
 
-Excel 2016, PowerPoint 2016 et Word 2016 incluent la même capacité à identifier les informations sensibles et à appliquer les stratégies DLP que SharePoint Online et OneDrive Entreprise. Ces programmes Office 2016 synchronisent leurs stratégies DLP directement à partir du magasin de stratégies central, puis évaluent continuellement le contenu par rapport aux stratégies DLP lorsque les utilisateurs travaillent avec des documents ouverts à partir d'un site inclus dans une stratégie DLP.
+Excel, PowerPoint et Word incluent la même capacité pour identifier les informations sensibles et appliquer des stratégies DLP en tant que SharePoint Online et OneDrive entreprise. Ces programmes Office synchronisent leurs stratégies DLP directement à partir du magasin de stratégies central, puis évaluent continuellement le contenu par rapport aux stratégies DLP lorsque les utilisateurs travaillent avec des documents ouverts à partir d'un site inclus dans une stratégie DLP.
   
-L’évaluation des stratégies DLP dans Office 2016 est conçue pour ne pas avoir d’incidence sur les performances des programmes ou la productivité des personnes qui travaillent sur le contenu. S'ils travaillent sur un document volumineux ou si l'ordinateur de l'utilisateur est occupé, un Conseil de stratégie peut prendre quelques secondes.
-  
+L'évaluation de la stratégie DLP dans Office est conçue pour ne pas affecter les performances des programmes ou la productivité des personnes travaillant sur le contenu. S'ils travaillent sur un document volumineux ou si l'ordinateur de l'utilisateur est occupé, un Conseil de stratégie peut prendre quelques secondes.
+
+### <a name="policy-evaluation-in-microsoft-teams"></a>Évaluation de stratégie dans Microsoft teams
+ 
+Lorsque vous créez une stratégie DLP qui inclut Microsoft teams en tant qu'emplacement, la stratégie est synchronisée à partir du &amp; Centre de sécurité conformité Office 365 avec les comptes d'utilisateur et les canaux et conversations de Microsoft Teams. En fonction de la configuration des stratégies DLP, lorsque quelqu'un tente de partager des informations sensibles dans une conversation ou un canal Microsoft Teams, le message peut être bloqué ou révoqué. Les documents qui contiennent des informations sensibles et qui sont partagés avec des invités (utilisateurs externes) ne s'ouvrent pas pour ces utilisateurs.
+
+Par exemple, supposons qu'une personne tente de partager des informations sensibles dans une conversation ou un canal de teams avec des utilisateurs externes. Supposons qu'une stratégie DLP est définie pour éviter cela. Avec la protection en place, les messages contenant des informations sensibles envoyées à des utilisateurs externes sont supprimés. Cela se produit en quelques secondes et est exécuté automatiquement, en fonction de la configuration de la stratégie DLP.
+
+Les conseils de stratégie informent les expéditeurs de la raison pour laquelle leurs messages ont été bloqués ou révoqués. Par exemple, un expéditeur peut indiquer que son message contient des informations d'identification personnelle qui ne sont pas autorisées à être partagé avec quiconque, ou qu'un document qui contient des données personnelles ne peut pas être partagé avec des personnes en dehors de son organisation. L'expéditeur peut ensuite modifier son message afin qu'il soit conforme aux stratégies DLP.
+ 
 ## <a name="permissions"></a>Autorisations
 
 Les membres de votre équipe de conformité qui créeront des stratégies DLP doivent disposer &amp; d'autorisations sur le centre de sécurité conformité. Par défaut, votre administrateur client aura accès à cet emplacement et pourra donner aux responsables de la mise en conformité et d'autres &amp; personnes l'accès au centre de sécurité conformité, sans leur accorder toutes les autorisations d'un administrateur client. Pour ce faire, nous vous recommandons d'effectuer les opérations suivantes:
@@ -482,19 +494,19 @@ Ces autorisations sont requises uniquement pour créer et appliquer une stratég
 
 Pour utiliser la plupart des applets de commande pour &amp; le centre de sécurité conformité, vous devez:
   
-1. [Se connecter au Centre de sécurité &amp; conformité Office 365 à l’aide de PowerShell à distance](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Se connecter au Centre de sécurité &amp; conformité Office 365 à l’aide de PowerShell à distance](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     
-2. Utiliser l'une des applets de commande du [Centre de sécurité &amp; conformité Office 365](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
+2. Utiliser l'une des applets de commande [Policy-and-Compliance-DLP](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/export-dlppolicycollection?view=exchange-ps)
     
-Toutefois, les rapports DLP doivent extraire des données d'Office 365, y compris Exchange Online. Pour cette raison, les applets de commande pour les rapports DLP sont disponibles dans Exchange Online PowerShell--pas &amp; dans le centre de sécurité conformité PowerShell. Par conséquent, pour utiliser les applets de commande pour les rapports DLP, vous devez:
+Toutefois, les rapports DLP doivent extraire des données d'Office 365, y compris Exchange Online. Pour cette raison, **les applets de commande pour les rapports DLP sont disponibles dans Exchange Online PowerShell--pas &amp; dans le centre de sécurité conformité PowerShell**. Par conséquent, pour utiliser les applets de commande pour les rapports DLP, vous devez:
   
-1. [Connect to Exchange Online using remote PowerShell](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [Connect to Exchange Online using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
 2. Utilisez l'une de ces applets de commande pour les rapports DLP:
     
-  - [Get-DlpDetectionsReport](http://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
+  - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetectionsReport?view=exchange-ps)
     
-  - [Get-DlpDetailReport](http://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
+  - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
     
 ## <a name="more-information"></a>Plus d’informations
 

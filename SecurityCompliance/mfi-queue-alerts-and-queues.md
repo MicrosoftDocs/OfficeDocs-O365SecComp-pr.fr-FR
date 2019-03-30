@@ -8,13 +8,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
-description: Les administrateurs peuvent en savoir plus sur les alertes de files d'attente et les files d'attente dans le tableau de bord de flux de messagerie dans le centre de sécurité & Office 365 Security.
-ms.openlocfilehash: 642aa672cda124873eb0b2ca8e9294e64325f55d
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+description: Les administrateurs peuvent en savoir plus sur les alertes de files d'attente et les files d'attente dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
+ms.openlocfilehash: 490665bb6b062c5a0b93c988adea9eeb9827cb86
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720304"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998607"
 ---
 # <a name="queue-alerts-and-queues"></a>Alertes de files d’attente et files d’attente
 
@@ -30,7 +30,7 @@ Office 365 continuera à nouvelle tentative de remise pendant 48 heures. Après 
 
 Si le volume de messagerie en file d'attente dépasse le seuil prédéfini (la valeur par défaut est 2000 messages), les alertes seront disponibles dans le tableau de bord du flux de messagerie dans les **alertes récentes**, et les administrateurs recevront une notification par courrier électronique (à leur adresse de messagerie alternative). . Pour configurer le seuil d'alerte, la limite de notification quotidienne et/ou les destinataires de l'alerte, consultez la section **personnaliser les alertes de file d'attente** ci-dessous.
 
-![Mise en file d'attente des alertes dans la zone alertes récentes du tableau de bord de flux de messagerie dans le centre de sécurité & de sécurité Office 365](media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
+![Alertes de file d'attente dans la zone alertes récentes du tableau de bord de flux de messagerie dans le centre de sécurité & conformité](media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
 
 ## <a name="customize-queue-alerts"></a>Personnaliser les alertes de file d'attente
 
@@ -50,13 +50,13 @@ Le panneau d'informations passe à la **stratégie de modification**. Vous pouve
 
 Lorsque vous cliquez sur l'alerte, les détails de l'alerte s'affichent dans un volet flyout.
 
-![Sélectionnez une alerte de file d'attente dans la zone alertes récentes du tableau de bord de flux de messagerie dans le centre de sécurité & de sécurité Office 365](media/1f6b0e96-5b2c-41ef-9684-9d813b3fabe6.png)
+![Sélectionnez une alerte de file d'attente dans la zone alertes récentes du tableau de bord de flux de messagerie dans le centre de sécurité & conformité](media/1f6b0e96-5b2c-41ef-9684-9d813b3fabe6.png)
 
-![Fenêtre mobile des détails des alertes en file d'attente dans le centre de sécurité & de sécurité Office 365](media/105c8fff-912f-4763-8806-2740ebdecd4b.png)
+![Fenêtre mobile des détails des alertes de la file d'attente dans le centre de sécurité & conformité](media/105c8fff-912f-4763-8806-2740ebdecd4b.png)
 
 Vous pouvez cliquer sur **afficher la file d'attente** dans les détails de l'alerte pour voir les détails de la file d'attente, les problèmes et les liens vers les correctifs disponibles dans un nouveau volet flyout.
 
-![Fenêtre mobile des détails des alertes en file d'attente dans le centre de sécurité & de sécurité Office 365](media/8ff60955-55ef-4f32-a966-85e02cb608d1.png)
+![Fenêtre mobile des détails des alertes de la file d'attente dans le centre de sécurité & conformité](media/8ff60955-55ef-4f32-a966-85e02cb608d1.png)
 
 ![Afficher la file d'attente dans les détails de l'alerte](media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
 
@@ -64,7 +64,7 @@ Vous pouvez cliquer sur **afficher la file d'attente** dans les détails de l'al
 
 Même si le volume des messages mis en file d'attente n'a pas dépassé le seuil, vous pouvez toujours utiliser la zone **files d'attente** du tableau de bord du flux de messagerie pour afficher les messages qui ont été mis en file d'attente pendant plus d'une heure. Vous pouvez utiliser la zone **files d'attente** pour surveiller le nombre de messages en file d'attente (la valeur 0 indique que le flux de messagerie est correct) et prendre des mesures avant que le nombre de messages en file d'attente devienne trop important.
 
-![Files d'attente dans le tableau de bord de flux de messagerie dans le centre de sécurité & de sécurité Office 365](media/0ef6e2ef-dd22-4363-9d4a-b20a00babc9f.png)
+![Files d'attente dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité](media/0ef6e2ef-dd22-4363-9d4a-b20a00babc9f.png)
 
 Lorsque vous cliquez sur le nombre de messages en file d'attente dans les **files d'attente**, les détails de la file d'attente et des instructions sur la résolution du problème apparaissent dans un volet flyout (le même menu volant qui s'affiche une fois que vous avez cliqué sur **afficher la file d'attente** dans les détails d'une alerte de file d'attente).
 

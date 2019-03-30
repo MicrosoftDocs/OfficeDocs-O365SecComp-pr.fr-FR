@@ -3,7 +3,7 @@ title: Donner aux utilisateurs l'accès au centre de &amp; sécurité conformit�
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 8/18/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,20 +16,20 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Les utilisateurs doivent disposer d'autorisations dans le centre de sécurité &amp; conformité Office 365 avant de pouvoir gérer les fonctionnalités de sécurité ou de conformité.
-ms.openlocfilehash: 0a3f0d1ddde7d269a0f8f9596c5c3de14e94429d
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 08b3781ceb48b9a8d5933a075106d7bd3b9ab17d
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216304"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997233"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>Donner aux utilisateurs l'accès au centre de &amp; sécurité conformité Office 365
 
-Les utilisateurs doivent disposer d'autorisations dans le centre de sécurité &amp; conformité Office 365 avant de pouvoir gérer les fonctionnalités de sécurité ou de conformité. En tant qu'administrateur général Office 365 ou membre du groupe de rôles OrganizationManagement dans le &amp; Centre de sécurité conformité, vous pouvez accorder ces autorisations aux utilisateurs. Les utilisateurs pourront uniquement gérer les fonctionnalités de sécurité ou de conformité auxquelles vous leur accordez accès. 
+Les utilisateurs doivent disposer d'autorisations dans le centre de sécurité &amp; conformité Office 365 avant de pouvoir gérer les fonctionnalités de sécurité ou de conformité. En tant qu'administrateur général Office 365 ou membre du groupe de rôles OrganizationManagement dans le &amp; Centre de sécurité conformité, vous pouvez accorder ces autorisations aux utilisateurs. Ceux-ci pourront uniquement gérer les fonctionnalités de sécurité ou de conformité auxquelles vous leur donnez accès. 
   
 Pour plus d'informations sur les différentes autorisations que vous pouvez accorder aux utilisateurs dans &amp; le centre de sécurité conformité, consultez [la rubrique autorisations dans &amp; le centre de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md).
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
 
 - Vous devez être un administrateur général Office 365 ou un membre du groupe de rôles OrganizationManagement dans le centre de sécurité &amp; conformité pour effectuer les étapes décrites dans cet article.
     
@@ -76,7 +76,7 @@ Pour plus d'informations sur les différentes autorisations que vous pouvez acco
   
 - _-Identity_ est le groupe de rôles auquel ajouter un membre. 
     
-- _Membre_ est la boîte aux lettres, le groupe de sécurité universel ou l'ordinateur à ajouter au groupe de rôles. Vous ne pouvez spécifier qu'un seul membre à la fois. 
+- _Membre_ est la boîte aux lettres, le groupe de sécurité universel ou l'ordinateur à ajouter au groupe de rôles. Vous ne pouvez spécifier qu’un membre à la fois. 
     
 Pour plus d'informations sur la syntaxe et les paramètres, voir [Add-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510859).
   

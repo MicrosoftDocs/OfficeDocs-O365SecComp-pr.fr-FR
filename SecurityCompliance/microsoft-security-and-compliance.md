@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Préparez-vous pour le nouveau centre de sécurité Microsoft 365 et le centre de conformité
-ms.openlocfilehash: e67c3f61898187d87aa638cf2dab871a7b694c18
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+ms.openlocfilehash: 15e67b5bdd6aca8c5447abe2e4cd12fb15e36760
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935199"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000687"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>Le nouveau centre de sécurité Microsoft 365 et le centre de conformité Microsoft 365 sont désormais généralement disponibles
 
@@ -70,7 +70,7 @@ Une fois que cette mise à jour est déployée, si votre organisation a Microsof
 - Accédez au centre d'administration Microsoft 365, puis accédez au nouveau centre de sécurité Microsoft 365 et au centre de conformité Microsoft 365 (les liens se trouvent sous centres d'administration dans le volet de navigation de gauche).
 
 > [!TIP]
-> Si vous utilisez le centre de sécurité & conformité Office 365 ([https://protection.office.com](http://protection.office.com)), vous pourrez toujours configurer et gérer vos paramètres Office 365 dans votre centre de sécurité & Office 365 existant. Les configurations seront conservées dans le centre de sécurité & Office 365, ainsi que dans le nouveau centre de sécurité Microsoft 365 et le centre de conformité Microsoft 365.  
+> Si vous utilisez le centre de sécurité & conformité d'Office 365[https://protection.office.com](http://protection.office.com)(), vous pourrez toujours configurer et gérer vos paramètres Office 365 dans votre centre de sécurité & conformité existant. Les configurations seront conservées dans le centre de sécurité &, ainsi que dans le nouveau centre de sécurité Microsoft 365 et le centre de conformité Microsoft 365.  
 
 ## <a name="required-licenses-and-permissions"></a>Licences et autorisations requises
 
@@ -92,7 +92,7 @@ Le tableau suivant résume qui peut accéder à différents portails dans Azure,
 
 |Portail |Administrateur général |Administrateur de sécurité, opérateur de sécurité ou lecteur de sécurité|Administrateur de conformité ou administrateur de données de conformité |
 |---------|---------|---------|---------|
-|[Centre de sécurité et conformité Office 365](https://protection.office.com) |Oui |Oui  |Oui |
+|[Centre de sécurité & conformité](https://protection.office.com) |Oui |Oui  |Oui |
 |[Centre de sécurité Microsoft 365](https://security.microsoft.com) |Oui  | Oui  | Non        |
 |[Centre de conformité Microsoft 365](https://compliance.microsoft.com) | Oui | Non | Oui |
 |[Gestionnaire de conformité](https://aka.ms/compliancemanager) |Oui | Oui |Oui  |

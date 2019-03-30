@@ -1,5 +1,5 @@
 ---
-title: cas de découverte électronique dans le centre &amp; de sécurité conformité Office 365
+title: cas de découverte électronique dans le centre de sécurité & conformité
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,21 +14,21 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
-description: Utilisez le centre de sécurité &amp; conformité d'Office 365 pour créer et gérer des cas eDiscovery dans votre organisation. Vous pouvez affecter des membres au cas, placer des emplacements de contenu en conservation, exécuter des recherches de contenu associées à l'incident et exporter les résultats de la recherche. Vous pouvez également préparer des données de cas pour une analyse approfondie dans Advanced eDiscovery.
-ms.openlocfilehash: 52ebc7f06bf9d60450d56b8591f7cfc184b4dbf6
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+description: Utilisez le centre de sécurité & Compliance Center pour créer et gérer des cas eDiscovery dans votre organisation. Vous pouvez affecter des membres au cas, placer des emplacements de contenu en conservation, exécuter des recherches de contenu associées à l'incident et exporter les résultats de la recherche. Vous pouvez également préparer des données de cas pour une analyse approfondie dans Advanced eDiscovery.
+ms.openlocfilehash: 3c3d3fb6d4e2244554059e731b4585dd546ff52b
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900193"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000727"
 ---
-# <a name="ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>cas de découverte électronique dans le centre &amp; de sécurité conformité Office 365
+# <a name="ediscovery-cases-in-the-security--compliance-center"></a>cas de découverte électronique dans le centre de sécurité & conformité
 
-Vous pouvez utiliser des cas eDiscovery dans le centre de &amp; sécurité conformité d'Office 365 pour contrôler qui peut créer, consulter et gérer des cas eDiscovery dans votre organisation. Si votre organisation a un abonnement Office 365 E5, vous pouvez également utiliser des cas eDiscovery pour analyser les résultats de la recherche à l'aide d'Office 365 Advanced eDiscovery.
+Vous pouvez utiliser des cas eDiscovery dans le centre de conformité dans Office 365 et Microsoft 365 pour contrôler qui peut créer, consulter et gérer les cas eDiscovery dans votre organisation. Si votre organisation a un abonnement Office 365 E5, vous pouvez également utiliser des cas eDiscovery pour analyser les résultats de la recherche à l'aide d'Office 365 Advanced eDiscovery.
   
 Un cas de découverte électronique permet d’ajouter des membres à un cas, de contrôler les types d’actions que les membres de cas spécifiques peuvent effectuer, de placer des emplacements de contenu associés à un dossier juridique en conservation, et d’associer plusieurs recherches de contenu à un seul cas. Vous pouvez également exporter les résultats d'une recherche de contenu associée à un cas ou préparer les résultats de recherche pour analyse dans Advanced eDiscovery. Les cas de découverte électronique constituent un bon moyen de limiter les personnes ayant accès aux recherches de contenu et aux résultats de recherche pour un dossier juridique spécifique dans votre organisation.
   
-Utilisez le flux de travail suivant pour configurer et utiliser des cas eDiscovery dans &amp; le centre de sécurité conformité et dans Advanced eDiscovery.
+Utilisez le flux de travail suivant pour configurer et utiliser des cas eDiscovery dans le centre de sécurité & Compliance Center et Advanced eDiscovery.
 
 [Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
@@ -54,13 +54,13 @@ Utilisez le flux de travail suivant pour configurer et utiliser des cas eDiscove
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>Étape 1 : attribuer des autorisations de découverte électronique aux membres potentiels de cas
 
-La première étape consiste à attribuer des autorisations liées à la découverte électronique appropriées à des personnes afin de les ajouter à un cas eDiscovery à l'étape 2. Vous devez être membre du groupe de rôles gestion de l'organisation (ou disposer du rôle de gestion des rôles) dans le centre de &amp; sécurité conformité Office 365 pour attribuer des autorisations eDiscovery. La liste suivante décrit les groupes de rôles liés à la découverte électronique &amp; dans le centre de sécurité conformité. 
+La première étape consiste à attribuer des autorisations liées à la découverte électronique appropriées à des personnes afin de les ajouter à un cas eDiscovery à l'étape 2. Vous devez être membre du groupe de rôles gestion de l'organisation (ou disposer du rôle de gestion des rôles) dans le centre de sécurité & Compliance Center pour attribuer des autorisations eDiscovery. La liste suivante décrit les groupes de rôles liés à la découverte électronique dans le centre de sécurité & Compliance Center. 
   
-- **** Reviewer: ce groupe de rôles dispose des autorisations les plus restrictives liées à la découverte électronique. Le principal objectif de ce groupe de rôles est de permettre aux membres d'afficher et d'accéder aux données de cas dans Office 365 Advanced eDiscovery. Les membres de ce groupe ne peuvent voir et ouvrir que la liste des incidents figurant sur la page de **découverte électronique** dans le centre de sécurité &amp; conformité dont ils sont membres. Une fois que l'utilisateur accède à un cas dans le centre de sécurité & Compliance Center, il peut cliquer sur **basculer vers Advanced eDiscovery** pour accéder aux données de cas et les analyser dans Advanced eDiscovery. Ils ne peuvent pas créer de cas, ajouter des membres à un cas, créer des suspensions, créer des recherches, afficher un aperçu des résultats de la recherche, exporter des résultats de recherche ou préparer des résultats pour Advanced eDiscovery. 
+- **** Reviewer: ce groupe de rôles dispose des autorisations les plus restrictives liées à la découverte électronique. Le principal objectif de ce groupe de rôles est de permettre aux membres d'afficher et d'accéder aux données de cas dans Office 365 Advanced eDiscovery. Les membres de ce groupe ne peuvent voir et ouvrir que la liste des incidents figurant dans la page de **découverte électronique** dans le centre de sécurité _AMP_ Compliance Center dont ils sont membres. Une fois que l'utilisateur accède à un cas dans le centre de sécurité et de conformité, il peut cliquer sur **basculer vers Advanced eDiscovery** pour accéder aux données de cas et les analyser dans Advanced eDiscovery. Ils ne peuvent pas créer de cas, ajouter des membres à un cas, créer des suspensions, créer des recherches, afficher un aperçu des résultats de la recherche, exporter des résultats de recherche ou préparer des résultats pour Advanced eDiscovery. 
     
 - **Gestionnaire eDiscovery** : les membres de ce groupe de rôles peuvent créer et gérer des cas eDiscovery. Ils peuvent ajouter et supprimer des membres, placer des emplacements de contenu en conservation, créer et modifier des recherches de contenu associées à un cas, exporter les résultats d'une recherche de contenu et préparer des résultats de recherche pour analyse dans Advanced eDiscovery. Il existe deux sous-groupes dans ce groupe de rôles. Ces sous-groupes ont différents rôles.
     
-  - **Gestionnaire eDiscovery** : permet d'afficher et de gérer les cas eDiscovery qu'ils créent ou dont ils sont membres. Si un autre gestionnaire eDiscovery crée un cas mais n'ajoute pas de deuxième gestionnaire eDiscovery en tant que membre de ce dernier, le deuxième gestionnaire eDiscovery ne pourra pas afficher ou ouvrir le cas sur la page **eDiscovery** dans &amp; le centre de sécurité conformité. les gestionnaires eDiscovery peuvent également accéder à leurs incidents dans Advanced eDiscovery pour effectuer des tâches d'analyse. 
+  - **Gestionnaire eDiscovery** : permet d'afficher et de gérer les cas eDiscovery qu'ils créent ou dont ils sont membres. Si un autre gestionnaire eDiscovery crée un cas mais n'ajoute pas de deuxième gestionnaire eDiscovery en tant que membre de ce dernier, le deuxième gestionnaire eDiscovery ne pourra pas afficher ou ouvrir le cas sur la page **eDiscovery** dans le centre de sécurité _AMP_ Compliance Center. les gestionnaires eDiscovery peuvent également accéder à leurs incidents dans Advanced eDiscovery pour effectuer des tâches d'analyse. 
     
   - **administrateur eDiscovery** : peut effectuer toutes les tâches de gestion des dossiers qu'un gestionnaire eDiscovery peut effectuer. De plus, un administrateur de découverte électronique peut :
     
@@ -75,15 +75,15 @@ La première étape consiste à attribuer des autorisations liées à la découv
 > [!IMPORTANT]
 > Si une personne n'est pas membre de l'un de ces groupes de rôles liés à la découverte électronique, ou n'est pas membre d'un groupe de rôles auquel est attribué le rôle de réviseur, vous ne pouvez pas l'ajouter en tant que membre d'un cas de découverte électronique. 
 
-Pour plus d'informations sur les autorisations de découverte électronique, consultez [la rubrique attribution d' &amp; autorisations eDiscovery dans le centre de sécurité conformité Office 365](assign-ediscovery-permissions.md).
+Pour plus d'informations sur les autorisations de découverte électronique, consultez la rubrique [attribution d'autorisations eDiscovery](assign-ediscovery-permissions.md).
   
  **Pour attribuer des autorisations de découverte électronique, procédez comme suit :**
   
-1. Accédez à la page [https://protection.office.com](https://protection.office.com).
+1. Accédez à la page [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
-3. Dans le centre &amp; de sécurité conformité, cliquez sur **autorisations**, puis effectuez l'une des opérations suivantes en fonction des autorisations de découverte électronique que vous souhaitez attribuer.
+3. Dans le centre de sécurité & conformité, cliquez sur **autorisations**, puis effectuez l'une des opérations suivantes en fonction des autorisations de découverte électronique que vous souhaitez attribuer.
     
     - Pour attribuer des autorisations de relecteur, sélectionnez **** le groupe de rôles réviseur, puis en regard de **membres**, cliquez sur **modifier**. Cliquez sur **choisir les membres**, sur **modifier**, ![sur](media/ITPro-EAC-AddIcon.gif) ajouter une icône **Ajouter**, sélectionnez l'utilisateur que vous souhaitez ajouter au groupe de rôles réviseur, puis cliquez sur **Ajouter**.
     
@@ -95,13 +95,13 @@ Pour plus d'informations sur les autorisations de découverte électronique, con
 
 ## <a name="step-2-create-a-new-case"></a>Étape 2: créer un nouveau dossier
 
-L'étape suivante consiste à créer un cas de découverte électronique. Vous devez être membre du groupe de rôles Gestionnaire de découverte électronique pour créer des cas de découverte électronique. Comme expliqué précédemment, une fois que vous avez créé un nouveau cas &amp; dans le centre de sécurité conformité, vous (et d'autres membres de cas) pourrez accéder à cette même demande dans Advanced eDiscovery si votre organisation dispose d'un abonnement Office 365 E5.
+L'étape suivante consiste à créer un cas de découverte électronique. Vous devez être membre du groupe de rôles Gestionnaire de découverte électronique pour créer des cas de découverte électronique. Comme expliqué précédemment, une fois que vous avez créé un nouveau cas dans le centre de sécurité et de conformité Security &, vous (et les autres membres du cas) pourrez accéder à cette même demande dans Advanced eDiscovery si votre organisation dispose d'un abonnement Office 365 E5.
   
-1. Accédez à la page [https://protection.office.com](https://protection.office.com).
+1. Accédez à la page [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
-3. Dans le centre &amp; de sécurité conformité, cliquez sur \> **découverte électronique**de l'enquête ![de](media/ITPro-EAC-AddIcon.gif) **recherche &amp; ** , puis cliquez sur Ajouter une icône pour **créer un cas**.
+3. Dans le centre de sécurité & Compliance Center **** \> , cliquez sur eDiscovery **eDiscovery**, ![puis sur](media/ITPro-EAC-AddIcon.gif) Add Icon **Create a case**.
     
 4. Sur la page **New case** , attribuez un nom à la demande, tapez une description facultative, puis cliquez sur **Enregistrer**. Notez que le nom du cas doit être unique dans votre organisation.
     
@@ -116,7 +116,7 @@ L'étape suivante consiste à créer un cas de découverte électronique. Vous d
 
 Une fois que vous avez créé un nouveau cas, l'étape suivante consiste à ajouter des membres au cas. Comme expliqué précédemment, seuls les utilisateurs membres des groupes de rôles Reviewer ou gestionnaire de découverte électronique peuvent être ajoutés en tant que membres du cas. Notez que le gestionnaire eDiscovery qui a créé le cas est automatiquement ajouté en tant que membre.
   
-1. Dans le Centre de sécurité &amp; conformité, cliquez sur **Recherches &amp; enquêtes** \> **eDiscovery** pour afficher la liste des cas de votre organisation. 
+1. Dans le centre de sécurité & Compliance Center **** \> **** , cliquez sur eDiscovery eDiscovery pour afficher la liste des incidents de votre organisation. 
     
 2. Cliquez sur le nom de l'incident auquel vous souhaitez ajouter des membres.
     
@@ -160,7 +160,7 @@ Lorsque vous créez une suspension, vous disposez des options suivantes pour dé
   
 Pour créer une suspension pour un cas eDiscovery:
   
-1. Dans le Centre de sécurité &amp; conformité, cliquez sur **Recherches &amp; enquêtes** \> **eDiscovery** pour afficher la liste des cas de votre organisation. 
+1. Dans le centre de sécurité & Compliance Center **** \> **** , cliquez sur eDiscovery eDiscovery pour afficher la liste des incidents de votre organisation. 
     
 2. Cliquez sur **ouvrir** en regard du cas dans lequel vous souhaitez créer les suspensions. 
     
@@ -234,9 +234,9 @@ Gardez les points suivants à l'esprit concernant les statistiques de conservati
   
 ## <a name="step-5-create-and-run-a-content-search-associated-with-a-case"></a>Étape 5: créer et exécuter une recherche de contenu associée à un cas
 
-Une fois le cas de découverte électronique créé et les dépositaires associés au cas placés en conservation, vous pouvez créer et exécuter des recherches de contenu associées au cas. Les recherches de contenu associées à un cas ne sont **** pas indiquées sur la page &amp; de recherche dans le centre de sécurité et de conformité. Elles sont uniquement accessibles pour les membres du cas qui sont également membres du groupe de rôles Gestionnaire de découverte électronique. 
+Une fois le cas de découverte électronique créé et les dépositaires associés au cas placés en conservation, vous pouvez créer et exécuter des recherches de contenu associées au cas. Les recherches de contenu associées à un cas ne sont pas indiquées sur la page de **recherche** dans le centre de sécurité _AMP_ Compliance Center. Elles sont uniquement accessibles pour les membres du cas qui sont également membres du groupe de rôles Gestionnaire de découverte électronique. 
   
-1. Dans le Centre de sécurité &amp; conformité, cliquez sur **Recherches &amp; enquêtes** \> **eDiscovery** pour afficher la liste des cas de votre organisation. 
+1. Dans le centre de sécurité & Compliance Center **** \> **** , cliquez sur eDiscovery eDiscovery pour afficher la liste des incidents de votre organisation. 
     
 2. Cliquez sur **ouvrir** en regard du cas dans lequel vous souhaitez créer une recherche de contenu. 
     
@@ -308,7 +308,7 @@ Vous pouvez exporter les résultats d'une [seule recherche associée à un cas](
   
 ### <a name="export-the-results-of-a-single-search-associated-with-a-case"></a>Exporter les résultats d'une recherche unique associée à un cas
 
-1. Dans le Centre de sécurité &amp; conformité, cliquez sur **Recherches &amp; enquêtes** \> **eDiscovery** pour afficher la liste des cas de votre organisation. 
+1. Dans le centre de sécurité & Compliance Center **** \> **** , cliquez sur eDiscovery eDiscovery pour afficher la liste des incidents de votre organisation. 
     
 2. Cliquez sur **ouvrir** en regard du cas à partir duquel vous souhaitez exporter la recherche. 
     
@@ -320,7 +320,7 @@ Vous pouvez exporter les résultats d'une [seule recherche associée à un cas](
     
     ![Page exporter les résultats](media/ab0bb46d-310b-4374-8644-717146df6676.png)
   
-    Le flux de travail pour exporter les résultats d’une recherche de contenu associée à un cas est le même flux qui sert à exporter les résultats pour une recherche effectuée sur la page **Recherche de contenu**. Pour obtenir des instructions pas à pas, voir [Export content Search Results from the Office 365 &amp; Security Compliance Center](export-search-results.md).
+    Le flux de travail pour exporter les résultats d’une recherche de contenu associée à un cas est le même flux qui sert à exporter les résultats pour une recherche effectuée sur la page **Recherche de contenu**. Pour obtenir des instructions détaillées, voir [Export content Search Results](export-search-results.md).
     
     > [!NOTE]
     > Lorsque vous exportez des résultats de recherche, vous avez la possibilité d'activer la déduplication de sorte qu'une seule copie d'un message électronique soit exportée même si plusieurs instances du même message ont pu être trouvées dans les boîtes aux lettres qui ont été recherchées. Pour plus d'informations sur la déduplication et sur l'identification des éléments dupliqués, voir [déduplication dans les résultats de recherche de découverte électronique](de-duplication-in-ediscovery-search-results.md). 
@@ -333,16 +333,16 @@ Vous pouvez exporter les résultats d'une [seule recherche associée à un cas](
     
 6. Cliquez sur le travail d'exportation que vous venez de créer pour afficher les informations d'État dans le volet d'informations. Ces informations incluent le pourcentage d'éléments qui ont été transférés vers une zone de stockage Azure dans le Cloud Microsoft.
     
-    Une fois que tous les éléments ont été transférés, cliquez sur **Télécharger les résultats** pour télécharger les résultats de la recherche sur votre ordinateur local. Pour plus d'informations, reportez-vous à l'étape 2 dans [Exporter les &amp; résultats de la recherche de contenu du centre de sécurité conformité Office 365](export-search-results.md)
+    Une fois que tous les éléments ont été transférés, cliquez sur **Télécharger les résultats** pour télécharger les résultats de la recherche sur votre ordinateur local. Pour plus d'informations, reportez-vous à l'étape 2 dans [exporter des résultats de recherche de contenu](export-search-results.md)
     
 ### <a name="export-the-results-of-multiple-searches-associated-with-a-case"></a>Exporter les résultats de plusieurs recherches associées à un cas
 
 En guise d'alternative à l'exportation des résultats d'une recherche de contenu unique associée à un cas, vous pouvez exporter les résultats de plusieurs recherches à partir de la même casse dans une seule exportation. L'exportation des résultats de plusieurs recherches est plus rapide et plus facile que l'exportation des résultats d'une recherche à la fois.
   
 > [!NOTE]
-> Vous ne pouvez pas exporter les résultats de plusieurs recherches si l'une de ces recherches a été configurée pour effectuer une recherche dans le contenu de tous les cas. exportez uniquement les résultats de plusieurs recherches de recherches associées à un cas de découverte électronique. Vous ne pouvez pas exporter les résultats de plusieurs recherches figurant dans la page **recherche** de contenu &amp; du centre de sécurité et de conformité. 
+> Vous ne pouvez pas exporter les résultats de plusieurs recherches si l'une de ces recherches a été configurée pour effectuer une recherche dans le contenu de tous les cas. exportez uniquement les résultats de plusieurs recherches de recherches associées à un cas de découverte électronique. Vous ne pouvez pas exporter les résultats de plusieurs recherches figurant sur la page **recherche de contenu** dans le centre de sécurité _AMP_ Compliance Center. 
   
-1. Dans le Centre de sécurité &amp; conformité, cliquez sur **Recherches &amp; enquêtes** \> **eDiscovery** pour afficher la liste des cas de votre organisation. 
+1. Dans le centre de sécurité & Compliance Center **** \> **** , cliquez sur eDiscovery eDiscovery pour afficher la liste des incidents de votre organisation. 
     
 2. Cliquez sur **ouvrir** en regard du cas à partir duquel vous souhaitez exporter les résultats de la recherche. 
     
@@ -362,7 +362,7 @@ En guise d'alternative à l'exportation des résultats d'une recherche de conten
 
 7. Sur la page **Exporter les résultats** , attribuez un nom unique à l'exportation, sélectionnez les options de sortie, puis choisissez comment votre contenu sera exporté. Cliquez sur **Exporter**.
     
-    Le flux de travail d'exportation des résultats à partir de plusieurs recherches de contenu associées à un cas revient à exporter les résultats de la recherche pour une seule recherche. Pour obtenir des instructions pas à pas, voir [Export content Search Results from the Office 365 &amp; Security Compliance Center](export-search-results.md).
+    Le flux de travail d'exportation des résultats à partir de plusieurs recherches de contenu associées à un cas revient à exporter les résultats de la recherche pour une seule recherche. Pour obtenir des instructions détaillées, voir [Export content Search Results](export-search-results.md).
     
     > [!NOTE]
     > Lorsque vous exportez des résultats de recherche à partir de plusieurs recherches associées à un cas, vous avez également la possibilité d'activer la déduplication de sorte qu'une seule copie d'un message électronique soit exportée même si plusieurs instances du même message ont pu être trouvées dans le boîtes aux lettres ayant fait l'objet d'une recherche dans une ou plusieurs recherches. Pour plus d'informations sur la déduplication et sur l'identification des éléments dupliqués, voir [déduplication dans les résultats de recherche de découverte électronique](de-duplication-in-ediscovery-search-results.md). 
@@ -375,7 +375,7 @@ En guise d'alternative à l'exportation des résultats d'une recherche de conten
     
 8. Cliquez sur le travail d'exportation que vous venez de créer pour afficher les informations d'État dans le volet d'informations. Ces informations incluent le pourcentage d'éléments qui ont été transférés vers une zone de stockage Azure dans le Cloud Microsoft.
     
-9. Une fois que tous les éléments ont été transférés, cliquez sur **Télécharger les résultats** pour télécharger les résultats de la recherche sur votre ordinateur local. Pour plus d'informations, reportez-vous à l'étape 2 dans [Exporter &amp; les résultats de recherche à partir du centre de sécurité conformité Office 365](export-search-results.md)
+9. Une fois que tous les éléments ont été transférés, cliquez sur **Télécharger les résultats** pour télécharger les résultats de la recherche sur votre ordinateur local. Pour plus d'informations, reportez-vous à l'étape 2 dans exporter les résultats de la [recherche de contenu](export-search-results.md).
     
 #### <a name="more-information-about-exporting-the-results-of-multiple-searches"></a>Plus d'informations sur l'exportation des résultats de plusieurs recherches
 
@@ -404,7 +404,7 @@ Lorsque vous préparez des résultats de recherche pour Advanced eDiscovery, la 
 > [!NOTE]
 > Pour analyser les données d'un utilisateur à l'aide de Advanced eDiscovery, l'utilisateur (le dépositaire des données) doit disposer d'une licence Office 365 E5. Par ailleurs, les utilisateurs disposant d'une licence Office 365 E1 ou E3 peuvent se voir attribuer une licence avancée eDiscovery autonome. Les administrateurs et les responsables de la mise en conformité qui sont affectés à des cas et utilisent Advanced eDiscovery pour analyser les données n'ont pas besoin d'une licence E5. 
   
-1. Dans le Centre de sécurité &amp; conformité, cliquez sur **Recherches &amp; enquêtes** \> **eDiscovery** pour afficher la liste des cas de votre organisation. 
+1. Dans le centre de sécurité & Compliance Center **** \> **** , cliquez sur eDiscovery eDiscovery pour afficher la liste des incidents de votre organisation. 
     
 2. Cliquez sur **ouvrir** en regard du cas pour lequel vous souhaitez préparer les résultats de recherche pour l'analyse dans Advanced eDiscovery. 
     
@@ -432,11 +432,11 @@ Lorsque vous préparez des résultats de recherche pour Advanced eDiscovery, la 
     
 ## <a name="step-8-go-to-the-case-in-advanced-ediscovery"></a>Étape 8: atteindre le cas dans Advanced eDiscovery
 
-Après avoir créé un cas dans le centre &amp; de sécurité conformité, vous pouvez accéder à la même affaire dans Advanced eDiscovery.
+Une fois que vous avez créé un cas dans le centre de sécurité & Compliance Center, vous pouvez accéder à la même affaire dans Advanced eDiscovery.
   
 Pour accéder à un cas dans Advanced eDiscovery :
   
-1. Dans le Centre de sécurité &amp; conformité, cliquez sur **Recherches &amp; enquêtes** \> **eDiscovery** pour afficher la liste des cas de votre organisation. 
+1. Dans le centre de sécurité & Compliance Center **** \> **** , cliquez sur eDiscovery eDiscovery pour afficher la liste des incidents de votre organisation. 
     
 2. Cliquez sur **ouvrir** en regard du cas que vous souhaitez atteindre dans Advanced eDiscovery. 
     
@@ -448,14 +448,14 @@ Pour accéder à un cas dans Advanced eDiscovery :
     
     ![Barre de progression avancée de eDiscorvery](media/4a84273d-765b-44b8-9006-c20e810ea393.png)
   
-    Ces conteneurs représentent les résultats de recherche que vous avez préparés pour l'analyse dans Advanced eDiscovery à l'étape 7. Notez que le nom du conteneur a le même nom que la recherche de contenu dans le cas dans le &amp; Centre de sécurité et de conformité. Les conteneurs de la liste sont ceux que vous avez préparés. Si un autre utilisateur a préparé des résultats de recherche pour Advanced eDiscovery, les conteneurs correspondants ne seront pas inclus dans la liste.
+    Ces conteneurs représentent les résultats de recherche que vous avez préparés pour l'analyse dans Advanced eDiscovery à l'étape 7. Notez que le nom du conteneur porte le même nom que la recherche de contenu dans le centre de sécurité & Compliance Center. Les conteneurs de la liste sont ceux que vous avez préparés. Si un autre utilisateur a préparé des résultats de recherche pour Advanced eDiscovery, les conteneurs correspondants ne seront pas inclus dans la liste.
     
 4. Pour charger les données de résultats de recherche d'un conteneur vers le cas dans Advanced eDiscovery, sélectionnez un conteneur et cliquez sur **traiter**.
     
     Pour plus d'informations sur la façon de traiter des conteneurs, voir [exécuter le module de processus et charger des données dans Office 365 Advanced eDiscovery](run-the-process-module-and-load-data-in-advanced-ediscovery.md).
     
 > [!TIP]
-> Cliquez sur **basculer vers eDiscovery** pour revenir au même cas dans le centre &amp; de sécurité conformité. 
+> Cliquez sur **basculer vers eDiscovery** pour revenir au même cas dans le centre de sécurité _AMP_ Compliance Center. 
   
 ## <a name="optional-step-9-close-a-case"></a>Module Étape 9: fermer un incident
 
@@ -465,13 +465,13 @@ Lorsque le cas juridique ou l'enquête pris en charge par un cas de découverte 
     
 - La fermeture d'un incident ne désactive que les blocages associés à ce cas. Si d'autres suspensions sont placées sur un emplacement de contenu (comme une conservation pour litige). une stratégie de conservation, ou une suspension d'un autre cas de découverte électronique (eDiscovery), ces conservations seront toujours conservées.
     
-- Le cas est toujours affiché sur la page eDiscovery dans le centre &amp; de sécurité et de conformité. Les détails, les conservations, les recherches et les membres d'un cas fermé sont conservés.
+- Le cas est toujours mentionné sur la page eDiscovery dans le centre de sécurité & Compliance Center. Les détails, les conservations, les recherches et les membres d'un cas fermé sont conservés.
     
 - Vous pouvez modifier un cas après sa fermeture. Par exemple, vous pouvez ajouter ou supprimer des membres, créer des recherches, exporter des résultats de recherche et préparer des résultats de recherche pour analyse dans Advanced eDiscovery. La principale différence entre les cas actifs et fermés est que les conservations sont désactivées lors de la fermeture d'un cas.
     
 Pour fermer un incident:
   
-1. Dans le Centre de sécurité &amp; conformité, cliquez sur **Recherches &amp; enquêtes** \> **eDiscovery** pour afficher la liste des cas de votre organisation. 
+1. Dans le centre de sécurité & Compliance Center **** \> **** , cliquez sur eDiscovery eDiscovery pour afficher la liste des incidents de votre organisation. 
     
 2. Cliquez sur le nom de l'incident que vous souhaitez fermer.
     
@@ -495,7 +495,7 @@ Pour fermer un incident:
 
 Lorsque vous rouvrez un cas, les conservations qui étaient en place lors de la fermeture de l'incident ne sont pas automatiquement rétablis. Une fois le cas rouvert, vous devez accéder à la page de **blocage** et activer les suspensions précédentes. Pour activer une suspension, sélectionnez-la et cliquez sur **activer** dans le volet d'informations. 
   
-1. Dans le Centre de sécurité &amp; conformité, cliquez sur **Recherches &amp; enquêtes** \> **eDiscovery** pour afficher la liste des cas de votre organisation. 
+1. Dans le centre de sécurité & Compliance Center **** \> **** , cliquez sur eDiscovery eDiscovery pour afficher la liste des incidents de votre organisation. 
     
 2. Cliquez sur le nom de l'incident à rouvrir.
     
@@ -522,19 +522,19 @@ Lorsque vous rouvrez un cas, les conservations qui étaient en place lors de la 
   |**Description de la limite**|**Limite**|
   |:-----|:-----|
   |Nombre maximal de cas pour une organisation  <br/> |Sans limite  <br/> |
-  |Nombre maximal de blocages pour une organisation  <br/> |10 000  <br/> |
-  |Nombre maximal de boîtes aux lettres en une seule suspension de cas  <br/> |1,000  <br/> |
+  |Nombre maximal de blocages pour une organisation  <br/> |10 000  <br/> |
+  |Nombre maximal de boîtes aux lettres en une seule suspension de cas  <br/> |1 000  <br/> |
   |Nombre maximal de sites SharePoint et OneDrive entreprise en une seule suspension de cas  <br/> |100  <br/> |
    
-- **Qu'en est-il des cas qui ont été créés sur la page de gestion des dossiers dans Advanced eDiscovery?** Vous pouvez accéder à une liste d'anciens cas de découverte électronique avancée en cliquant sur le lien situé en bas de la page &amp; **découverte électronique** dans le centre de sécurité et de conformité. Toutefois, pour effectuer un travail dans un cas plus ancien, vous devez contacter le support Office 365 et demander que le cas soit déplacé vers un nouveau cas eDiscovery dans le &amp; Centre de sécurité conformité. 
+- **Qu'en est-il des cas qui ont été créés sur la page de gestion des dossiers dans Advanced eDiscovery?** Vous pouvez accéder à la liste des anciens cas de découverte électronique avancée en cliquant sur le lien situé en bas de la page **eDiscovery** dans le centre de sécurité _AMP_ Compliance Center. Toutefois, pour effectuer un travail dans un cas plus ancien, vous devez contacter le support Office 365 et demander que le cas soit déplacé vers un nouveau cas eDiscovery dans le centre de sécurité & Compliance Center. 
     
 - **Pourquoi créer un administrateur de découverte électronique ?** Comme indiqué précédemment, un administrateur de découverte électronique est membre du groupe de rôles de gestionnaire de découverte électronique, qui peut afficher tous les cas de découverte électronique, et y accéder, de votre organisation. Cette capacité d’accès à tous les cas de découverte électronique a deux objectifs importants :
     
-  - Si une personne qui est le seul membre d’un cas de découverte électronique quitte votre organisation, personne (y compris les membres du groupe de rôles de gestion de l’organisation ou un autre membre du groupe de rôles de gestionnaire de découverte électronique) ne peut accéder à ce cas, car personne n’en est alors membre. Dans ce cas, il n’y aurait aucun moyen d’accéder aux données dans le cas. Toutefois, étant donné qu'un administrateur de découverte électronique peut accéder à tous les cas eDiscovery au sein de l'organisation &amp; , il peut afficher le cas dans le centre de sécurité et l'ajouter à lui-même ou à un autre gestionnaire eDiscovery en tant que membre du cas.
+  - Si une personne qui est le seul membre d’un cas de découverte électronique quitte votre organisation, personne (y compris les membres du groupe de rôles de gestion de l’organisation ou un autre membre du groupe de rôles de gestionnaire de découverte électronique) ne peut accéder à ce cas, car personne n’en est alors membre. Dans ce cas, il n’y aurait aucun moyen d’accéder aux données dans le cas. Toutefois, étant donné qu'un administrateur de découverte électronique peut accéder à tous les cas eDiscovery au sein de l'organisation, il peut afficher le cas dans le centre de sécurité & Compliance Center et s'ajouter eux-mêmes ou un autre gestionnaire eDiscovery en tant que membre du cas.
     
   - Étant donné qu'un administrateur de découverte électronique peut afficher et accéder à tous les cas eDiscovery, ils peuvent auditer et superviser tous les cas et les recherches de contenu associées. Cela contribue à empêcher toute utilisation abusive des recherches de contenu ou des cas de découverte électronique. Néanmoins, sachant que les administrateurs de découverte électronique peuvent accéder à des informations potentiellement sensibles dans les résultats d’une recherche de contenu, vous devez limiter le nombre d’administrateurs de découverte électronique.
     
-    Enfin, comme expliqué précédemment, les administrateurs eDiscovery dans le &amp; Centre de sécurité conformité sont automatiquement ajoutés en tant qu'administrateurs dans Advanced eDiscovery. Cela signifie qu'une personne qui est un administrateur de découverte électronique peut effectuer des tâches administratives dans Advanced eDiscovery, telles que la configuration des utilisateurs, la création de cas et l'ajout de données à des cas.
+    Enfin, comme expliqué précédemment, les administrateurs eDiscovery dans le centre de sécurité & Compliance Center sont automatiquement ajoutés en tant qu'administrateurs dans Advanced eDiscovery. Cela signifie qu'une personne qui est un administrateur de découverte électronique peut effectuer des tâches administratives dans Advanced eDiscovery, telles que la configuration des utilisateurs, la création de cas et l'ajout de données à des cas.
     
 - **Quelles sont les exigences en matière de licences pour placer des emplacements de contenu en conservation?** En règle générale, les organisations nécessitent un abonnement Office 365 E3 ou une version ultérieure pour placer les emplacements de contenu en conservation. Pour placer des boîtes aux lettres en conservation, une licence Exchange Online plan 2 est requise pour la boîte aux lettres que vous souhaitez mettre en attente.
     
@@ -574,7 +574,7 @@ Lorsque vous rouvrez un cas, les conservations qui étaient en place lors de la 
   
   - Lors de la recherche dans la boîte aux lettres d'un utilisateur, le groupe Office 365 ou l'équipe Microsoft dont l'utilisateur est membre ne feront pas l'objet d'une recherche. De même, lorsque vous placez un groupe Office 365 ou un blocage d'équipe Microsoft, seule la boîte aux lettres de groupe et le site de groupe sont mis en attente; les boîtes aux lettres et les sites OneDrive entreprise des membres du groupe ne sont pas mis en attente, sauf si vous les ajoutez explicitement à la suspension. Par conséquent, si vous devez placer un groupe Office 365 ou Microsoft Team en attente pour des raisons juridiques, songez à ajouter les boîtes aux lettres et les sites OneDrive entreprise pour les membres d'équipe et de groupe sur le même blocage.
     
-  - Pour obtenir la liste des membres d'un groupe ou d'une équipe Microsoft Office 365, vous pouvez afficher les propriétés sur la page **groupes d'accueil \> ** dans le centre d'administration Office 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell: 
+  - Pour obtenir la liste des membres d'un groupe ou d'une équipe Microsoft Office 365, vous pouvez afficher les propriétés sur la page **groupes d'accueil \> ** dans le centre d'administration Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell: 
     
       ```
       Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 

@@ -1,5 +1,5 @@
 ---
-title: Utiliser un script pour ajouter des utilisateurs à une conservation dans un cas eDiscovery dans le centre de &amp; sécurité conformité Office 365
+title: Utiliser un script pour ajouter des utilisateurs à une conservation dans un cas eDiscovery dans le centre de sécurité & Compliance Center
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,17 +13,17 @@ search.appverid:
 - MED150
 - MBS150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
-description: Exécutez un script pour ajouter rapidement des boîtes aux lettres et des sites OneDrive entreprise à un nouveau blocage associé à un cas eDiscovery dans le centre de sécurité &amp; conformité Office 365.
-ms.openlocfilehash: f71c82a830f029f8137a60d8329e30be0e7eeb46
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: Exécutez un script pour ajouter rapidement des boîtes aux lettres et des sites OneDrive entreprise à un nouveau blocage associé à un cas de découverte électronique dans le centre de sécurité & Compliance Center.
+ms.openlocfilehash: 992fddad3bfbc9f08855bd85d87b0edf92b3cdbe
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935239"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001187"
 ---
-# <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-office-365-security-amp-compliance-center"></a>Utiliser un script pour ajouter des utilisateurs à une conservation dans un cas eDiscovery dans le centre de &amp; sécurité conformité Office 365
+# <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-security--compliance-center"></a>Utiliser un script pour ajouter des utilisateurs à une conservation dans un cas eDiscovery dans le centre de sécurité & Compliance Center
 
-Le centre de sécurité &amp; conformité Office 365 fournit un grand nombre d'applets de commande Windows PowerShell qui vous permettent d'automatiser les tâches fastidieuses liées à la création et à la gestion des cas eDiscovery. Actuellement, l'utilisation de l'outil de cas eDiscovery &amp; dans le centre de conformité et de sécurité pour mettre en attente un grand nombre d'emplacements de contenu de dépositaire prend du temps et une préparation. Par exemple, avant de créer une conservation, vous devez collecter l'URL de chaque site OneDrive entreprise que vous souhaitez mettre en attente. Ensuite, pour chaque utilisateur que vous souhaitez mettre en attente, vous devez ajouter sa boîte aux lettres et son site OneDrive entreprise à la suspension. Dans les versions ultérieures du &amp; Centre de sécurité conformité, cela sera plus facile à réaliser. En attendant, vous pouvez utiliser le script de cet article pour automatiser ce processus.
+Le centre de sécurité & Compliance Center fournit un grand nombre d'applets de commande Windows PowerShell qui vous permettent d'automatiser des tâches de longue durée liées à la création et à la gestion des cas eDiscovery. Actuellement, l'utilisation de l'outil de cas eDiscovery dans le centre de conformité & Security Center pour mettre en attente un grand nombre d'emplacements de contenu de dépositaire prend du temps et une préparation. Par exemple, avant de créer une conservation, vous devez collecter l'URL de chaque site OneDrive entreprise que vous souhaitez mettre en attente. Ensuite, pour chaque utilisateur que vous souhaitez mettre en attente, vous devez ajouter sa boîte aux lettres et son site OneDrive entreprise à la suspension. Dans les prochaines versions du centre de sécurité & Compliance Center, cela sera plus facile à réaliser. En attendant, vous pouvez utiliser le script de cet article pour automatiser ce processus.
   
 Le script vous invite à indiquer le nom du domaine mon site de votre organisation (par exemple, **contoso** dans l' https://contoso-my.sharepoint.com)URL, le nom d'un cas eDiscovery existant, le nom du nouveau blocage associé au cas, une liste des adresses de messagerie des utilisateurs de votre choix à mettre en attente et une requête de recherche à utiliser si vous souhaitez créer une conservation basée sur une requête. Le script obtient ensuite l'URL du site OneDrive entreprise pour chaque utilisateur de la liste, crée la nouvelle conservation, puis ajoute la boîte aux lettres et le site OneDrive entreprise pour chaque utilisateur de la liste à la suspension. Le script génère également des fichiers journaux qui contiennent des informations sur la nouvelle conservation. 
   
@@ -37,9 +37,9 @@ Voici la procédure à suivre:
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Vous devez être membre du groupe de rôles gestionnaire eDiscovery dans le centre de sécurité &amp; conformité et d'un administrateur global SharePoint Online pour exécuter le script à l'étape 3. Pour plus d'informations, consultez [la rubrique attribution d'autorisations eDiscovery dans &amp; le centre de sécurité conformité Office 365](assign-ediscovery-permissions.md).
+- Vous devez être membre du groupe de rôles gestionnaire eDiscovery dans le centre de sécurité & Compliance Center et d'un administrateur global SharePoint Online pour exécuter le script à l'étape 3. Pour plus d'informations, consultez [la rubrique Assign eDiscovery Permissions in the Office 365 Security _AMP_ Compliance Center](assign-ediscovery-permissions.md).
     
-- Un maximum de 1 000 boîtes aux lettres et de 100 sites peuvent être ajoutés à une conservation qui est associée à un cas de découverte &amp; électronique dans le centre de sécurité conformité. En supposant que chaque utilisateur que vous souhaitez mettre en attente dispose d'un site OneDrive entreprise, vous pouvez ajouter un maximum de 100 utilisateurs à une conservation à l'aide du script de cet article. 
+- Un maximum de 1 000 boîtes aux lettres et de 100 sites peuvent être ajoutés à une conservation qui est associée à un cas de découverte électronique dans le centre de sécurité & Compliance Center. En supposant que chaque utilisateur que vous souhaitez mettre en attente dispose d'un site OneDrive entreprise, vous pouvez ajouter un maximum de 100 utilisateurs à une conservation à l'aide du script de cet article. 
     
 - Veillez à enregistrer la liste des utilisateurs que vous créez à l'étape 2 et le script de l'étape 3 dans le même dossier. Cela facilitera l'exécution du script.
     
@@ -75,7 +75,7 @@ Après avoir exécuté cette commande, ouvrez le fichier texte et supprimez l'en
 
 Lorsque vous exécutez le script dans cette étape, il vous invite à fournir les informations suivantes. Assurez-vous que vous disposez de ces informations avant d'exécuter le script.
   
-- **Vos informations d'identification utilisateur** : le script utilisera vos informations d'identification pour se connecter &amp; au centre de sécurité conformité avec PowerShell à distance. Il utilisera également ces informations d'identification pour accéder à SharePoint Online afin d'obtenir les URL OneDrive entreprise pour la liste des utilisateurs.
+- **Vos informations d'identification utilisateur** : le script utilisera vos informations d'identification pour se connecter au centre de sécurité _AMP_ Compliance Center avec PowerShell à distance. Il utilisera également ces informations d'identification pour accéder à SharePoint Online afin d'obtenir les URL OneDrive entreprise pour la liste des utilisateurs.
     
 - **Nom de votre domaine mon** site: le domaine mon site est celui qui contient tous les sites OneDrive entreprise de votre organisation. Par exemple, si l'URL de votre domaine mon site **https://contoso-my.sharepoint.com**mon site est, entrez `contoso` alors lorsque le script vous invite à indiquer le nom de votre domaine mon site. 
     
@@ -85,7 +85,7 @@ Lorsque vous exécutez le script dans cette étape, il vous invite à fournir le
     
 - **Requête de recherche pour une conservation basée sur une requête** : vous pouvez créer une conservation basée sur une requête de sorte que seul le contenu correspondant aux critères de recherche spécifiés soit placé en conservation. Pour placer tout le contenu en conservation, appuyez simplement sur **entrée** lorsque vous êtes invité à entrer une requête de recherche. 
     
-- **Indique si le blocage doit** être activé: vous pouvez faire en sorte que le script désactive le blocage une fois qu'il a été créé ou que le script peut créer la conservation sans l'activer. Si le script n'est pas activé, vous pouvez l'activer ultérieurement dans le centre de sécurité &amp; conformité ou en exécutant les commandes PowerShell suivantes: 
+- **Indique si le blocage doit** être activé: vous pouvez faire en sorte que le script désactive le blocage une fois qu'il a été créé ou que le script peut créer la conservation sans l'activer. Si le script n'est pas activé, vous pouvez l'activer ultérieurement dans le centre de sécurité & Compliance Center ou en exécutant les commandes PowerShell suivantes: 
     
   ```
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true
@@ -105,12 +105,12 @@ Une fois que vous avez collecté les informations que le script vous demande, la
   #script begin
   " " 
   write-host "***********************************************"
-  write-host "   Office 365 Security &amp; Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
+  write-host "   Security & Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
   write-host "   eDiscovery cases - Add users to a hold   " -foregroundColor yellow -backgroundcolor darkgreen 
   write-host "***********************************************"
   " " 
   # Get user credentials &amp; Connect to Office 365 SCC, SPO
-  $credentials = Get-Credential -Message "Specify your credentials to connect to the Office 365 Security &amp; Compliance Center and SharePoint Online"
+  $credentials = Get-Credential -Message "Specify your credentials to connect to the Security & Compliance Center and SharePoint Online"
   $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://ps.compliance.protection.outlook.com/powershell-liveid" -Credential $credentials -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
   $a = Import-PSSession $s -AllowClobber
       if (!$s)
@@ -284,7 +284,7 @@ Une fois que vous avez collecté les informations que le script vous demande, la
 
 4. Entrez les informations que le script vous demande.
     
-    Le script se connecte au centre de sécurité & Compliance Center PowerShell, puis crée la nouvelle conservation dans le cas de découverte électronique et ajoute les boîtes aux lettres et OneDrive entreprise pour les utilisateurs de la liste. Vous pouvez accéder à l'incident sur la page **eDiscovery** dans le centre &amp; de sécurité conformité pour afficher la nouvelle conservation. 
+    Le script se connecte au centre de sécurité & Compliance Center PowerShell, puis crée la nouvelle conservation dans le cas de découverte électronique et ajoute les boîtes aux lettres et OneDrive entreprise pour les utilisateurs de la liste. Vous pouvez accéder à la page de **découverte électronique** dans le centre de sécurité _AMP_ Compliance Center pour afficher la nouvelle conservation. 
     
 Une fois l'exécution du script terminée, les fichiers journaux suivants sont créés et enregistrés dans le dossier où se trouve le script.
   

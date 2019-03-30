@@ -14,20 +14,20 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: "Résumé: conFigurez un site d'équipe SharePoint Online isolé du reste de l'organisation dans votre environnement de développement/test Office 365."
-ms.openlocfilehash: a8a02c10f799b136b299801a3636820e4f64e087
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 56c10b1a3871014f26a4d2fd98d9b4139d19ac47
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217134"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000227"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Site d’équipe SharePoint Online isolé dans votre environnement de développement/test
 
  **Résumé:** ConFigurez un site d'équipe SharePoint Online isolé du reste de l'organisation dans votre environnement de développement/test Office 365.
   
-Les sites d'équipe SharePoint Online dans Office 365 sont des emplacements de collaboration à l'aide d'une bibliothèque de documents commune, d'un bloc-notes OneNote et d'autres services. Dans de nombreux cas, vous avez besoin d'un accès étendu et de la collaboration entre les services ou les organisations. Toutefois, dans certains cas, vous souhaitez contrôler étroitement l'accès et les autorisations de collaboration entre un petit groupe de personnes.
+Les sites d'équipe SharePoint Online dans Office 365 sont des emplacements de collaboration à l'aide d'une bibliothèque de documents commune, d'un bloc-notes OneNote et d'autres services. Dans de nombreux cas, vous souhaitez bénéficier d’un large accès et d’une collaboration entre les départements ou organisations. Toutefois, dans certains cas, vous souhaitez contrôler étroitement l'accès et les autorisations de collaboration entre un petit groupe de personnes.
   
-L'accès aux sites d'équipe SharePoint Online et ce que les utilisateurs peuvent faire sont contrôlés par les groupes SharePoint et les niveaux d'autorisation. Par défaut, les sites SharePoint Online disposent de trois niveaux d'accès:
+L'accès aux sites d'équipe SharePoint Online et ce que les utilisateurs peuvent faire sont contrôlés par les groupes SharePoint et les niveaux d'autorisation. Par défaut, les sites SharePoint Online comportent trois niveaux d’accès :
   
 - Les **membres** peuvent afficher, créer et modifier des ressources sur le site.
     
@@ -131,7 +131,7 @@ $userUPN="devvp@" + $orgName + ".onmicrosoft.com"
 Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $grpName }).ObjectID -GroupMemberObjectId (Get-MsolUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -GroupMemberType "User"
 ```
 
-Résultats :
+Résultats
   
 - Le groupe d'accès ProjectX-membres contient les comptes d'utilisateur concepteur de prospects et chercheur de prospect
     
@@ -143,23 +143,23 @@ La figure 1 présente les groupes d'accès et leur appartenance.
   
 **Figure 1**
 
-![Groupes Office 365 et leur appartenance pour un site de groupe SharePoint Online isolé](media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
+![Les groupes Office 365 et leur appartenance pour un site de groupe SharePoint Online isolé](media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
   
 ## <a name="phase-3-create-a-new-projectx-sharepoint-online-team-site-and-isolate-it"></a>Phase 3: créer un nouveau site d'équipe ProjectX SharePoint Online et l'isoler
 
 Pour créer un site d'équipe SharePoint Online pour ProjectX, procédez comme suit:
   
-1. À l'aide d'un navigateur sur votre ordinateur local (configuration légère) ou sur CLIENT1 (configuration d'entreprise simulée), connectez-vous au portail[https://portal.office.com](https://portal.office.com)Office 365 () à l'aide de votre compte d'administrateur général.
+1. À l'aide d'un navigateur sur votre ordinateur local (configuration légère) ou sur CLIENT1 (configuration d'entreprise simulée), connectez-vous au portail[https://admin.microsoft.com](https://admin.microsoft.com)Office 365 () à l'aide de votre compte d'administrateur général.
     
 2. Dans la liste des vignettes, cliquez sur **SharePoint**.
     
-3. Sous le nouvel onglet SharePoint de votre navigateur, cliquez sur **+ Créer un site**.
+3. Dans le nouvel onglet SharePoint de votre navigateur, cliquez sur **+ Créer un site**.
     
-4. Dans **nom du site d'équipe**, tapez **ProjectX**. Dans **paramètres de confidentialité**, sélectionnez **privé-seuls les membres peuvent accéder à ce site**.
+4. Dans **Nom du site d’équipe**, saisissez **ProjectX**. Dans **paramètres de confidentialité**, sélectionnez **privé-seuls les membres peuvent accéder à ce site**.
     
 5. Dans **Description du site d’équipe**, saisissez **Site SharePoint pour ProjectX**, puis cliquez sur **Suivant**.
     
-6. Sur le **qui voulez-vous ajouter**? , cliquez sur **Terminer**.
+6. Dans le volet **Qui voulez-vous ajouter ?**, cliquez sur **Terminer**.
     
 7. Dans le nouvel onglet **ProjectX-Accueil** de votre navigateur, dans la barre d’outils, cliquez sur l’icône des paramètres, puis sur **Autorisations du site**.
     
@@ -192,9 +192,8 @@ Pour créer un site d'équipe SharePoint Online pour ProjectX, procédez comme s
 21. Dans la boîte de dialogue **Partager**, saisissez **ProjectX-Utilisateurs**, sélectionnez-le, puis cliquez sur **Partager**.
     
 22. Fermez l’onglet **Personnes et groupes** de votre navigateur, cliquez sur l’onglet **ProjectX-Accueil** de votre navigateur, puis fermez le volet **Autorisations du site**.
-
     
-Voici les résultats de la configuration des autorisations :
+Voici les résultats de la configuration des autorisations :
   
 - Le groupe SharePoint membres de ProjectX contient uniquement le groupe d'accès ProjectX membres (qui contient uniquement les comptes d'utilisateur de concepteur de prospect et de chercheur de Prospect) et le groupe ProjectX (qui contient uniquement le compte d'utilisateur d'administrateur général).
     
@@ -218,7 +217,7 @@ Nous allons maintenant illustrer l'accès à l'aide du compte d'utilisateur du C
     
 2. Cliquez sur le nom de votre administrateur général, puis cliquez sur **Déconnexion**.
     
-3. Connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) à l'aide du nom de compte du concepteur de prospect et de son mot de passe.
+3. Connectez-vous au portail Office 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) à l'aide du nom de compte du concepteur de prospect et de son mot de passe.
     
 4. Dans la liste des vignettes, cliquez sur **SharePoint**.
     
@@ -245,11 +244,10 @@ Nous allons maintenant illustrer l'accès à l'aide du compte d'utilisateur du C
 15. Fermez les onglets **ProjectX-Documents** et **SharePoint** dans votre navigateur, puis cliquez sur l’onglet **Accueil Microsoft Office**.
     
 16. Cliquez sur le nom **Responsable de la conception**, puis cliquez sur **Déconnexion**.
-
     
 Nous allons maintenant illustrer l'accès à l'aide du compte d'utilisateur VP du développement:
   
-1. Connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) à l'aide du nom de compte VP du développement et de son mot de passe.
+1. Connectez-vous au portail Office 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) à l'aide du nom de compte VP du développement et de son mot de passe.
     
 2. Dans la liste des vignettes, cliquez sur **SharePoint**.
     
@@ -262,13 +260,12 @@ Nous allons maintenant illustrer l'accès à l'aide du compte d'utilisateur VP d
 6. Fermer les onglets **Document.docx**, **ProjectX-Documents** et **SharePoint** de votre navigateur.
     
 7. Cliquez sur l’onglet **Accueil Microsoft Office**, sur le nom **VP du développement**, puis sur **Déconnexion**.
-
     
 À présent, nous allons illustrer l'accès à un compte d'utilisateur qui n'a pas d'autorisations:
   
-1. Connectez-vous au portail Office 365 ([https://portal.office.com](https://portal.office.com)) à l'aide du nom de compte utilisateur 3 et de son mot de passe.
+1. Connectez-vous au portail Office 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) à l'aide du nom de compte utilisateur 3 et de son mot de passe.
     
-2. Dans la liste des vignettes, cliquez sur **SharePoint**.
+2. Dans la liste des mosaïques, cliquez sur **SharePoint**.
     
 3. 	Dans le nouvel onglet **SharePoint** de votre navigateur, saisissez **ProjectX** dans la zone de recherche, puis activez la recherche. Vous devriez voir le message **Aucun résultat ne correspond à votre recherche.**
     
@@ -279,7 +276,6 @@ Nous allons maintenant illustrer l'accès à l'aide du compte d'utilisateur VP d
 6. À partir du bloc-notes ou votre éditeur de texte, copiez l’URL du fichier Documents.docx dans la barre d’adresses de votre navigateur, puis appuyez sur **Entrée**. Vous devriez voir une page **Accès refusé**.
     
 7. Fermez l’onglet **SharePoint** de votre navigateur, cliquez sur l’onglet **Accueil Microsoft Office**, sur le nom **Utilisateur 3**, puis sur **Déconnexion**.
-
     
 Votre site SharePoint Online isolé est maintenant prêt pour votre expérience supplémentaire.
   

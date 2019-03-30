@@ -1,5 +1,5 @@
 ---
-title: Rechercher du contenu dans Office 365
+title: Rechercher du contenu dans Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,19 +10,19 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
-description: Utilisez l'outil eDiscovery de la recherche de contenu dans le &amp; Centre de sécurité conformité Office 365 pour trouver rapidement des messages électroniques dans des boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, et des conversations de messagerie instantanée dans Skype entreprise.
-ms.openlocfilehash: 255ddbde4488ab5e7d13872cea95398ed5fd4d75
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: Utilisez l'outil eDiscovery de la recherche de contenu dans le centre de sécurité & Compliance Center pour trouver rapidement des messages électroniques dans des boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, et des conversations de messagerie instantanée dans Skype entreprise.
+ms.openlocfilehash: fc0bea90ce9cbfc27f894985c7d3083756ab108a
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214534"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000967"
 ---
-# <a name="search-for-content-in-office-365"></a>Rechercher du contenu dans Office 365
+# <a name="search-for-content-in-office-365"></a>Rechercher du contenu dans Office 365
 
-Utilisez l'outil de recherche de contenu dans &amp; le centre de sécurité conformité pour trouver rapidement le courrier électronique dans les boîtes aux lettres Exchange, les documents dans les sites SharePoint et les emplacements OneDrive, ainsi que les conversations de messagerie instantanée dans Skype entreprise. Vous pouvez utiliser l'outil de recherche de contenu pour rechercher des courriers électroniques, des documents et des conversations de messagerie instantanée dans les outils de collaboration Office 365 tels que les groupes Microsoft teams et Office 365.
+Utilisez l'outil de recherche de contenu dans le centre de sécurité & Compliance Center pour rechercher rapidement le courrier électronique dans les boîtes aux lettres Exchange, les documents dans les sites SharePoint et les emplacements OneDrive, ainsi que les conversations de messagerie instantanée dans Skype entreprise. Vous pouvez utiliser l'outil de recherche de contenu pour rechercher des courriers électroniques, des documents et des conversations de messagerie instantanée dans les outils de collaboration Office 365 tels que les groupes Microsoft teams et Office 365.
   
-## <a name="search-for-content"></a>Recherche de contenu
+## <a name="search-for-content"></a>Rechercher du contenu
 
 La première étape consiste à utiliser l'outil de recherche de contenu pour choisir les emplacements de contenu à rechercher et configurer une requête de mot clé afin de rechercher des éléments spécifiques. Vous pouvez également laisser la requête vide et renvoyer tous les éléments dans les emplacements cibles.
   
@@ -58,7 +58,7 @@ Après avoir exécuté une recherche et l'avoir affinée si nécessaire, l'étap
     
 ## <a name="learn-more-about-content-search"></a>En savoir plus sur la recherche de contenu
 
-La recherche de contenu est facile à utiliser, mais elle est également un outil puissant. En arrière-plan, il y a beaucoup de choses. Plus vous en saurez plus sur le service informatique et vous comprenez son comportement et ses limitations, plus vous l'utiliserez pour répondre aux besoins de recherche et d'enquête de votre organisation. En savoir plus sur:
+La recherche de contenu est facile à utiliser, mais elle est également un outil puissant. En arrière-plan, il y a beaucoup de choses. Plus vous en saurez plus sur le service informatique et vous comprenez son comportement et ses limitations, plus vous l'utiliserez pour répondre aux besoins de recherche et d'enquête de votre organisation. Pour en savoir plus, approfondissez les sujets suivants :
   
 - [Éléments partiellement indexés dans Exchange et SharePoint](partially-indexed-items-in-content-search.md) , et comment les inclure ou les exclure lorsque vous exportez et téléchargez des résultats de recherche 
     
@@ -72,7 +72,7 @@ La recherche de contenu est facile à utiliser, mais elle est également un outi
     
 ## <a name="use-scripts-for-advanced-scenarios"></a>Utiliser des scripts pour les scénarios avancés
 
-Parfois, vous devez effectuer des tâches de recherche de contenu plus complexes, complexes et répétitives. Dans ce cas, il est plus facile et plus rapide d'utiliser des commandes PowerShell &amp; dans le centre de sécurité conformité. Pour faciliter cette opération, nous avons créé un certain nombre de scripts &amp; PowerShell du centre de sécurité de conformité pour vous aider à effectuer des tâches complexes liées à la recherche de contenu.
+Parfois, vous devez effectuer des tâches de recherche de contenu plus complexes, complexes et répétitives. Dans ce cas, il est plus facile et rapide d'utiliser des commandes PowerShell dans le centre de sécurité & Compliance Center. Pour faciliter cette opération, nous avons créé un certain nombre de scripts PowerShell du centre de sécurité & pour vous aider à effectuer des tâches complexes liées à la recherche de contenu.
   
 - [Recherche de dossiers de site et de boîte aux lettres spécifiques](use-content-search-for-targeted-collections.md) (appelé une *collection ciblée* ) lorsque vous êtes certain que les éléments réactifs à un cas se trouvent dans ce dossier 
     

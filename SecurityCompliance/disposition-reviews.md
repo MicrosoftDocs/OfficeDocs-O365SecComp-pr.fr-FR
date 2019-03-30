@@ -13,13 +13,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Lorsque vous créez une étiquette de rétention qui conserve le contenu dans Office 365, vous pouvez choisir de déclencher une révision de disposition à la fin de la période de rétention.
-ms.openlocfilehash: 5c55b842045eefd42745486c603e34f6498b3bac
-ms.sourcegitcommit: 07a4f9a8888756e05cd67ca24f6121b2a4e9f464
+description: Lorsque vous créez une étiquette de rétention qui conserve le contenu dans Microsoft 365, vous pouvez choisir de déclencher une révision de disposition à la fin de la période de rétention.
+ms.openlocfilehash: 1828f4055e9048260db7d16df8ad87db36438211
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "30512659"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997260"
 ---
 # <a name="overview-of-disposition-reviews"></a>Vue d'ensemble des révisions de destruction
 
@@ -33,7 +33,7 @@ Lorsque le contenu atteint la fin de sa période de rétention, il existe plusie
     
 - Renvoyer le contenu aux clients ou le transférer vers une autre organisation.
     
-Lorsque vous créez une étiquette de rétention dans Office 365, vous pouvez choisir de déclencher une révision de disposition à la fin de la période de rétention. Dans une révision de disposition:
+Lorsque vous créez une étiquette de rétention dans le centre de conformité Microsoft 365, le centre de sécurité Microsoft 365 ou le centre de sécurité &, vous pouvez choisir de déclencher une révision de destruction à la fin de la période de rétention. Dans une révision de disposition:
   
 - Les personnes que vous choisissez reçoivent une notification par courrier électronique dont le contenu doit être révisé. Ces relecteurs peuvent être des utilisateurs individuels, des groupes de distribution ou des groupes de sécurité ou des groupes Office 365. Notez que les notifications sont envoyées chaque semaine.
     

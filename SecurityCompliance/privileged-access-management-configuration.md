@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilisez cette rubrique pour en savoir plus sur la configuration de la gestion des accès privilégiés dans Office 365
-ms.openlocfilehash: 3d186998006dd3cc59877b1571f50314af5bbce8
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: 9d0f5955eb2fd67d245bad3e7a9b1b89769bd947
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492823"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001147"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Configuration de la gestion des accès privilégiés dans Office 365
 
@@ -58,13 +58,13 @@ Une fois que l'approbation est accordée, l'utilisateur qui a effectué la deman
 
 ## <a name="step-1---create-an-approvers-group"></a>Étape 1: créer un groupe d'approbateurs
 
-1. Connectez-vous au [Centre d'administration Microsoft 365](https://portal.office.com) à l'aide des informations d'identification d'un compte d'administrateur de votre organisation.
+1. Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) à l'aide des informations d'identification d'un compte d'administrateur de votre organisation.
 
 2. Dans le centre d'administration, accédez à **groupes** > **Ajouter un groupe**.
 
 3. Sélectionnez le groupe Groupe de **sécurité à extension messagerie** , puis renseignez les champs **nom**, **adresse de messagerie du groupe**et **Description** pour le nouveau groupe.
 
-4. Enregistrez le groupe. La configuration complète du groupe peut prendre quelques minutes et s'afficher dans le centre d'administration Office 365.
+4. Enregistrez le groupe. La configuration complète du groupe peut prendre quelques minutes et s'afficher dans le centre d'administration Microsoft 365.
 
 5. Sélectionnez le nouveau groupe approbateur et sélectionnez **modifier** pour ajouter des utilisateurs au groupe.
 
@@ -76,7 +76,7 @@ Une fois que l'approbation est accordée, l'utilisateur qui a effectué la deman
 
 ### <a name="using-the-microsoft-365-admin-center"></a>Utilisation du centre d'administration Microsoft 365
 
-1. Connectez-vous au [Centre d'administration Microsoft 365](https://portal.office.com) à l'aide des informations d'identification d'un compte d'administrateur de votre organisation.
+1. Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) à l'aide des informations d'identification d'un compte d'administrateur de votre organisation.
 
 2. Dans le centre d'administration, accédez à **paramètres > sécurité & confidentialité** > **accès aux privilèges**.
 
@@ -108,7 +108,7 @@ Vous pouvez créer et configurer jusqu'à 30 stratégies d'accès privilégié p
 
 ### <a name="using-the-microsoft-365-admin-center"></a>Utilisation du centre d'administration Microsoft 365
 
-1. Connectez-vous au [Centre d'administration Microsoft 365](https://portal.office.com) à l'aide des informations d'identification d'un compte d'administrateur de votre organisation.
+1. Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) à l'aide des informations d'identification d'un compte d'administrateur de votre organisation.
 
 2. Dans le centre d'administration, accédez à **paramètres** > de**sécurité & confidentialité** > des**accès privilégiés**.
 
@@ -152,7 +152,7 @@ Les demandes d'accès privilégié sont valides jusqu'à 24 heures après l'envo
 
 #### <a name="using-the-microsoft-365-admin-center"></a>Utilisation du centre d'administration Microsoft 365
 
-1. Connectez-vous au [Centre d'administration Microsoft 365](https://portal.office.com) à l'aide de vos informations d'identification.
+1. Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) à l'aide de vos informations d'identification.
 
 2. Dans le centre d'administration, accédez à **paramètres** > de**sécurité & confidentialité** > des**accès privilégiés**.
 
@@ -187,7 +187,7 @@ Après la création d'une demande d'approbation, l'état de la demande d'éléva
 
 #### <a name="using-the-microsoft-365-admin-center"></a>Utilisation du centre d'administration Microsoft 365
 
-1. Connectez-vous au [Centre d'administration Microsoft 365](https://portal.office.com) à l'aide de vos informations d'identification.
+1. Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) à l'aide de vos informations d'identification.
 
 2. Dans le centre d'administration, accédez à **paramètres** > de**sécurité & confidentialité** > des**accès privilégiés**.
 
@@ -211,7 +211,7 @@ Lorsqu'une demande d'approbation est créée, les membres du groupe d'approbateu
 
 #### <a name="using-the-microsoft-365-admin-center"></a>Utilisation du centre d'administration Microsoft 365
 
-1. Connectez-vous au [Centre d'administration Microsoft 365](https://portal.office.com) à l'aide de vos informations d'identification.
+1. Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) à l'aide de vos informations d'identification.
 
 2. Dans le centre d'administration, accédez à **paramètres** > de**sécurité & confidentialité** > des**accès privilégiés**.
 
@@ -248,7 +248,7 @@ Vous pouvez supprimer une stratégie d'accès privilégié si elle n'est plus n�
 
 ### <a name="using-the-microsoft-365-admin-center"></a>Utilisation du centre d'administration Microsoft 365
 
-1. Connectez-vous au [Centre d'administration Microsoft 365](https://portal.office.com) à l'aide des informations d'identification d'un compte d'administrateur de votre organisation.
+1. Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) à l'aide des informations d'identification d'un compte d'administrateur de votre organisation.
 
 2. Dans le centre d'administration, accédez à **paramètres** > de**sécurité & confidentialité** > des**accès privilégiés**.
 
@@ -274,7 +274,7 @@ Si nécessaire, vous pouvez désactiver la gestion des accès privilégiés pour
 
 ### <a name="using-the-microsoft-365-admin-center"></a>Utilisation du centre d'administration Microsoft 365
 
-1. Connectez-vous au [Centre d'administration Microsoft 365](https://portal.office.com) à l'aide des informations d'identification d'un compte d'administrateur de votre organisation.
+1. Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) à l'aide des informations d'identification d'un compte d'administrateur de votre organisation.
 
 2. Dans le centre d'administration, accédez à **paramètres** > de**sécurité & confidentialité** > des**accès privilégiés**.
 

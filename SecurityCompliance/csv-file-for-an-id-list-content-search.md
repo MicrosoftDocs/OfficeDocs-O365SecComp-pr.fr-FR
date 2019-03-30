@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: Utilisez le fichier results. csv ou unindexed Items. csv à partir d'une recherche de contenu existante pour créer une recherche de liste d'ID qui renvoie un message électronique spécifique. Les recherches de liste d'ID sont généralement utilisées pour renvoyer des éléments de boîte aux lettres partiellement indexés.
-ms.openlocfilehash: 558a8512ed133995b2cc1d0d8b78fd7f08d11168
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: fc26f8dab11f1121deb11dd93b2cd0c70a1d629c
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296737"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999677"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>Préparer un fichier CSV pour une recherche de contenu de liste d'ID dans Office 365
 
@@ -25,11 +25,11 @@ Vous pouvez rechercher des messages électroniques de boîte aux lettres spécif
   
 Voici une présentation rapide du processus de création d'une recherche de liste d'ID.
   
-1. Créez et exécutez une recherche de contenu, nouvelle ou guidée, &amp; dans le centre de sécurité conformité.
+1. Créez et exécutez une recherche de contenu sur une nouvelle ou guidée dans le centre de sécurité & Compliance Center.
     
-2. ExPortez les résultats de la recherche de contenu ou exportez le rapport de recherche de contenu. Pour plus d'informations, voir:
+2. ExPortez les résultats de la recherche de contenu ou exportez le rapport de recherche de contenu. Pour plus d'informations, consultez les rubriques suivantes :
     
-    - [Exporter les résultats de la recherche de contenu du &amp; Centre de sécurité conformité Office 365](export-search-results.md)
+    - [Exporter les résultats de la recherche de contenu](export-search-results.md)
     
     - [Exporter un rapport de recherche de contenu](export-a-content-search-report.md)
     
@@ -76,7 +76,7 @@ L'étape suivante consiste à créer une nouvelle recherche de contenu de liste 
 > [!IMPORTANT]
 > Vous devez créer une recherche de liste d'ID au plus 2 jours après avoir exporté les résultats ou le rapport à partir d'une recherche de contenu. Si les résultats de la recherche ou le rapport exportés depuis plus de 2 jours, vous devez réexporter les résultats de la recherche ou le rapport pour générer des fichiers CSV mis à jour. Vous pouvez ensuite préparer l'un des fichiers CSV mis à jour et l'utiliser pour créer une recherche de liste d'ID. 
   
-1. Dans le centre &amp; de sécurité conformité, accédez à recherche de \> **contenu**d' **enquête de recherche &amp; ** .
+1. Dans le centre de sécurité & conformité, accédez à recherche de **contenu**de **recherche** \> .
     
 2. Sur la **page recherche** , cliquez sur la flèche en ![regard de](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) ajouter une icône **nouvelle recherche**, puis cliquez sur **Rechercher par ID**.
     

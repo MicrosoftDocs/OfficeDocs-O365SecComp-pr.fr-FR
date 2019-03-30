@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: "Pour les administrateurs: Découvrez comment activer l'archivage à extension automatique dans Office 365, qui permet à vos utilisateurs de disposer d'un espace de stockage illimité pour leurs boîtes aux lettres Exchange Online. Vous pouvez activer l'archivage à extension automatique pour l'ensemble de votre organisation ou uniquement pour des utilisateurs spécifiques."
-ms.openlocfilehash: 634807a687a8ccbb764a54300f338263f876b604
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: e41ebc0605b7e6ce2178791de27421a82e2b6cf6
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670619"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000847"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>Activer l'archivage illimité dans Office 365-aide de l'administrateur
 
@@ -31,13 +31,13 @@ Vous pouvez utiliser la fonctionnalité d'archivage Exchange Online avec extensi
 
 - Vous devez être un administrateur général dans votre organisation Office 365 ou membre du groupe de rôles gestion de l'organisation dans votre organisation Exchange Online pour activer l'archivage à extension automatique pour l'ensemble de votre organisation ou pour des utilisateurs spécifiques. Vous pouvez également être membre d'un groupe de rôles auquel est affecté le rôle destinataires de messagerie pour activer l'archivage à extension automatique pour des utilisateurs spécifiques.
     
-- La boîte aux lettres d'archivage d'un utilisateur doit être activée pour pouvoir activer l'archivage à extension automatique. Un utilisateur doit disposer d'une licence Exchange Online plan 2 pour activer la boîte aux lettres d'archivage. Si un utilisateur se voit attribuer une licence Exchange Online plan 1, vous devez lui attribuer une licence d'archivage Exchange Online distincte pour activer sa boîte aux lettres d'archivage. Consultez [la rubrique activation des boîtes aux lettres d'archivage dans le centre de sécurité &amp; conformité Office 365](enable-archive-mailboxes.md).
+- La boîte aux lettres d'archivage d'un utilisateur doit être activée pour pouvoir activer l'archivage à extension automatique. Un utilisateur doit disposer d'une licence Exchange Online plan 2 pour activer la boîte aux lettres d'archivage. Si un utilisateur se voit attribuer une licence Exchange Online plan 1, vous devez lui attribuer une licence d'archivage Exchange Online distincte pour activer sa boîte aux lettres d'archivage. Consultez [la rubrique activation des boîtes aux lettres d'archivage dans le centre de sécurité _AMP_ conformité](enable-archive-mailboxes.md).
     
 - Vous pouvez également utiliser PowerShell pour activer les boîtes aux lettres d'archivage. Consultez la section [plus d'informations](#more-information) pour obtenir un exemple de la commande PowerShell que vous pouvez utiliser pour activer des boîtes aux lettres d'archivage pour tous les utilisateurs de votre organisation. 
     
 - L’archivage à extension automatique prend aussi en charge les boîtes aux lettres partagées. Pour activer l'archivage pour une boîte aux lettres partagée, une licence Exchange Online plan 2 ou une licence Exchange Online plan 1 avec une licence d'archivage Exchange Online est requise.
     
-- Vous ne pouvez pas utiliser le centre d'administration Exchange &amp; ou le centre de sécurité conformité pour activer l'archivage à extension automatique. Vous devez utiliser Exchange Online PowerShell. Pour vous connecter à votre organisation Exchange Online à l'aide de Remote PowerShell, consultez la rubrique [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- Vous ne pouvez pas utiliser le centre d'administration Exchange ou le centre de sécurité & Compliance Center pour activer l'archivage à extension automatique. Vous devez utiliser Exchange Online PowerShell. Pour vous connecter à votre organisation Exchange Online à l'aide de Remote PowerShell, consultez la rubrique [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
     
   
 ## <a name="enable-auto-expanding-archiving-for-your-entire-organization"></a>Activer l'archivage à extension automatique pour l'ensemble de votre organisation

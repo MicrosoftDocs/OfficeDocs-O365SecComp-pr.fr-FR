@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: Si un utilisateur envoie continuellement des courriers électroniques à partir d'Office 365 classés comme courrier indésirable, il ne pourra pas envoyer d'autres messages.
-ms.openlocfilehash: 9370df691bfe30498e32115d7c77dd5cf02556f1
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: a4f22b4d5192df202c1caa19714e8b5476dd8205
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692013"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998497"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Suppression d’un utilisateur du portail Utilisateurs restreints après l’envoi d’un courrier indésirable
 
@@ -40,7 +40,7 @@ La procédure suivante peut également être exécutée par le biais du service 
 
 ## <a name="remove-restrictions-for-a-blocked-office-365-email-account"></a>Supprimer les restrictions pour un compte de messagerie Office 365 bloqué
 
-Vous effectuez cette tâche dans le centre de sécurité & conformité Office 365 (SCC). [Accédez au centre de sécurité & de sécurité Office 365](go-to-the-securitycompliance-center.md) pour plus d'informations sur SCC. Vous devez être dans le groupe de rôles gestion de l' **organisation** ou **administrateur de sécurité** pour effectuer ces fonctions. [Accédez à autorisations dans le centre de sécurité & de la sécurité Office 365](permissions-in-the-security-and-compliance-center.md) pour plus d'informations sur les groupes de rôles SCC.
+Vous effectuez cette tâche dans le centre de sécurité & Compliance Center (SCC). Pour plus d'informations sur SCC, [accédez au centre de sécurité _AMP_ Compliance Center](go-to-the-securitycompliance-center.md) . Vous devez être dans le groupe de rôles gestion de l' **organisation** ou **administrateur de sécurité** pour effectuer ces fonctions. [Accédez à autorisations dans le centre de sécurité _AMP_ conformité](permissions-in-the-security-and-compliance-center.md) pour plus d'informations sur les groupes de rôles SCC.
 
 1. À l'aide d'un compte professionnel ou scolaire disposant de privilèges d'administrateur général Office 365, connectez-vous au centre de sécurité et conformité Office 365 et, dans la liste de gauche, développez **gestion des menaces**, choisissez **examiner**, puis choisissez **restreint. Les utilisateurs**.
     
@@ -60,7 +60,7 @@ Vous effectuez cette tâche dans le centre de sécurité & conformité Office 36
 
 ## <a name="making-sure-admins-are-alerted-when-this-happens"></a>S'assurer que les administrateurs sont alertés lorsque cela se produit
 
-Les administrateurs de client reçoivent également une alerte indiquant que l'utilisateur n'a pas été autorisé à envoyer des messages sortants supplémentaires. Il s'agit d'une alerte par défaut fournie pour tous les clients et est indiquée dans la page stratégies d'alerte SCC, intitulée «utilisateur restreint de l'envoi de courrier électronique». Pour plus d'informations sur l'alerte, accédez à [stratégies d'alerte dans le centre de sécurité _AMP_ Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies) .
+Les administrateurs de client reçoivent également une alerte indiquant que l'utilisateur n'a pas été autorisé à envoyer des messages sortants supplémentaires. Il s'agit d'une alerte par défaut fournie pour tous les clients et est indiquée dans la page stratégies d'alerte SCC, intitulée «utilisateur restreint de l'envoi de courrier électronique». Pour plus d'informations sur l'alerte, accédez à [stratégies d'alerte dans le centre de sécurité _AMP_ Compliance Center](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies) .
 
 ## <a name="for-more-information"></a>Pour plus d'informations
 
@@ -70,4 +70,4 @@ Les administrateurs de client reçoivent également une alerte indiquant que l'u
 
 [Pool de remise à risque élevé pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md)
 
-[Autorisations dans le centre de sécurité & de sécurité Office 365](permissions-in-the-security-and-compliance-center.md)
+[Autorisations dans le centre de conformité et de sécurité](permissions-in-the-security-and-compliance-center.md)

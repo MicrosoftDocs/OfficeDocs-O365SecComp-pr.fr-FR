@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: Les administrateurs peuvent en savoir plus sur l'état du flux de messagerie de domaine supérieur dans le tableau de bord de flux de messagerie dans le centre de sécurité & de la sécurité d'Office 365.
+description: Les administrateurs peuvent en savoir plus sur l'état du flux de messagerie du domaine le plus approfondi dans le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance Center.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 04aa986982465a4c66fbf99f517fb34622d65e19
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: baa69c3373623d4742d6d957a5022012fb60f7e7
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722848"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000667"
 ---
 # <a name="top-domain-mail-flow-status-insight"></a>Aperçu de l'état du flux de messagerie de domaine supérieur
 
@@ -24,7 +24,7 @@ ms.locfileid: "30722848"
 
 La vue d' **État du flux de messagerie de domaine supérieur** vous permet d'obtenir l'état actuel des domaines de votre organisation en termes de flux de messagerie. Cette vue vous permet d'identifier et de résoudre les problèmes de ***flux de messagerie*** (par exemple, impossible de recevoir des messages électroniques externes), notamment les expirations de domaine ou les domaines avec des enregistrements MX incorrects.
 
-![Vue d'État du flux de domaine supérieur dans le tableau de bord de flux de messagerie dans le centre de sécurité & de sécurité Office 365](media/domain-mail-flow-status-selected.png)
+![Vue d'État du flux de domaine supérieur dans le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance Center](media/domain-mail-flow-status-selected.png)
 
 Lorsque vous cliquez sur **afficher les détails** dans le volet de visualisation, une fenêtre mobile s'affiche pour vous donner des détails supplémentaires sur l'état de chaque domaine.
 

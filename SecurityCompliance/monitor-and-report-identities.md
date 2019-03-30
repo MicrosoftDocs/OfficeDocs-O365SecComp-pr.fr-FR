@@ -1,5 +1,5 @@
 ---
-title: Surveillance et signalement des identités dans la sécurité Microsoft 365
+title: Surveillance des identités dans Sécurité Microsoft 365 et rapports à ce sujet
 description: Explique comment vous pouvez surveiller les identités de votre organisation et effectuer le suivi des comportements suspects ou risqués.
 keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, moniteur, rapport, identité
 ms.prod: w10
@@ -11,16 +11,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4b2dfec483f4365c7eff132e2a2401734358ad7a
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 285bc5af108de8a59a65a088ec4e33ae27bff3c1
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30791657"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998887"
 ---
-# <a name="monitor-and-report-identities-in-microsoft-365-security"></a>Surveillance et signalement des identités dans la sécurité Microsoft 365
-
-[!include[Prerelease�information](prerelease.md)]
+# <a name="monitor-and-report-identities-in-microsoft-365-security"></a>Surveillance des identités dans Sécurité Microsoft 365 et rapports à ce sujet
 
 Vous pouvez surveiller les identités de votre organisation et effectuer le suivi des comportements suspects ou risqués. Dans la **** catégorie des identités de **surveillance des rapports &**, vous pouvez effectuer le suivi des éléments suivants:
 

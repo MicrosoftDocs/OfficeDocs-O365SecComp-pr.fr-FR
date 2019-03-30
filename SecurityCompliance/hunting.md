@@ -11,16 +11,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f11abff72ef144b44ce99ca83aadbf5d65bdb273
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: a1a6970e81f3c6ce3f768958333f3a692b05346c
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30791681"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999997"
 ---
 # <a name="hunt-for-malware-and-other-threats-in-microsoft-365"></a>Recherche de programmes malveillants et autres menaces dans Microsoft 365
 
-[!include[Prerelease�information](prerelease.md)]
 
 La chasse offre aux équipes de sécurité un aperçu des menaces possibles au sein de votre organisation pour la messagerie électronique, les données, les appareils et les identités. Dans Windows Defender ATP, la protection avancée contre les menaces Office 365 et les portails Azure ATP, vous pouvez rechercher les comptes compromis, le fichier moins les programmes malveillants, les e-mails suspects et bien plus encore.
 

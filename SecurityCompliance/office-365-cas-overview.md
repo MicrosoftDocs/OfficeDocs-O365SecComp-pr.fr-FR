@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble de la sécurité des applications cloud Office 365
+title: Overview of Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -14,21 +14,21 @@ search.appverid:
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: "Office 365 Cloud App Security vous donne des informations sur les activités suspectes dans Office 365 pour vous permettre d'analyser les situations susceptibles de poser problème et, si nécessaire, de prendre des mesures pour résoudre les problèmes de sécurité. "
-ms.openlocfilehash: 974858a547d9af2db600f9856efbce619a3b38e4
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 960e4c75a4da13e1a0365f75d290cd18587abd58
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220174"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001207"
 ---
-# <a name="overview-of-office-365-cloud-app-security"></a>Vue d’ensemble de la sécurité des applications cloud Office 365
+# <a name="overview-of-office-365-cloud-app-security"></a>Overview of Office 365 Cloud App Security
   
 |Évaluation * *\>**|Planification * *\>**|Déploiement * *\>**|Utilisation * * * *|
 |:-----|:-----|:-----|:-----|
 |Vous êtes là!  <br/> [Étape suivante](get-ready-for-office-365-cas.md) <br/> |[Commencer la planification](get-ready-for-office-365-cas.md) <br/> |[Démarrer le déploiement](turn-on-office-365-cas.md) <br/> |[Commencer à utiliser](utilization-activities-for-ocas.md) <br/> |
    
 > [!NOTE]
-> Office 365 Cloud App Security est disponible dans Office 365 entreprise E5. Si votre organisation utilise un autre abonnement entreprise 365 Enterprise, Office 365 Cloud App Security peut être acheté en tant que module complémentaire. (en tant qu'administrateur général, dans le centre d'administration Office 365, sélectionnez **facturation** \> : **ajouter**des abonnements.) Pour plus d'informations, reportez-vous à [la rubrique office &amp; 365 Platform Service Description: Office 365 Security Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) et [acheter ou modifier un composant additionnel pour Office 365 pour les entreprises](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on). 
+> Office 365 Cloud App Security est disponible dans Office 365 entreprise E5. Si votre organisation utilise un autre abonnement entreprise 365 Enterprise, Office 365 Cloud App Security peut être acheté en tant que module complémentaire. (en tant qu'administrateur général, dans le centre d'administration Microsoft 365, sélectionnez **facturation** \> : **ajouter**des abonnements.) Pour plus d'informations, reportez-vous à [la rubrique office &amp; 365 Platform Service Description: Office 365 Security Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) et [acheter ou modifier un composant additionnel pour Office 365 pour les entreprises](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on). 
   
 Office 365 Cloud App Security vous donne un aperçu de l'activité suspecte dans Office 365 pour vous permettre d'analyser les situations susceptibles de poser problème et, si nécessaire, de prendre des mesures pour résoudre les problèmes de sécurité. Avec la sécurité des applications Cloud d'Office 365, vous pouvez recevoir des notifications d'alertes déclenchées pour des activités atypiques ou suspectes, voir la façon dont les données de votre organisation dans Office 365 sont consultées et utilisées, suspendre les comptes d'utilisateur présentant une activité suspecte et exiger aux utilisateurs de se reconnecter aux applications Office 365 une fois qu'une alerte a été déclenchée. Lisez cet article pour obtenir une vue d'ensemble des fonctionnalités et fonctionnalités de sécurité de l'application Cloud Office 365.
   
@@ -48,7 +48,7 @@ Vous pouvez également y accéder à partir du centre de &amp; sécurité confor
     
 3. Sélectionnez **accéder à la sécurité des applications Cloud Office 365**. 
     
-## <a name="policies"></a>Policies
+## <a name="policies"></a>Stratégies
 
 La sécurité des applications Cloud Office 365 fonctionne avec les stratégies définies pour votre organisation. Avec la sécurité des applications Cloud d'Office 365, votre organisation obtient de nombreuses stratégies de détection d'anomalies prédéfinies et plusieurs modèles pour les stratégies d'activité. Ces stratégies sont conçues pour détecter les anomalies générales, identifier les utilisateurs qui se connectent à partir d'une adresse IP à risque, détecter les activités de ransomware, détecter les activités de l'administrateur à partir d'adresses IP non professionnelles, et bien plus encore.
   

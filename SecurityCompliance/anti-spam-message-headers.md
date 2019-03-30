@@ -13,19 +13,21 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Lorsque Exchange Online Protection analyse un message entrant, il insère l'en-tête **X-Forefront-Antispam-Report** dans chaque message.
-ms.openlocfilehash: 92614b8cb6e1571c3d5438206f9dcd106579669a
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 70322d49defe49517a75658b1e2084d520fd7ae8
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936744"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004241"
 ---
 # <a name="anti-spam-message-headers"></a>En-têtes de messages anti-courrier indésirable
 
 Lorsque Exchange Online Protection analyse un message entrant, il insère l'en-tête **X-Forefront-Antispam-Report** dans chaque message. Les champs de cet en-tête permettent de fournir des informations aux administrateurs en ce qui concerne le message et sur la manière dont ce dernier a été traité. Les champs de l'en-tête **X-Microsoft-Antispam** fournissent des informations supplémentaires sur le courrier en nombre et le hameçonnage. En plus de ces deux en-têtes, Exchange Online Protection insère également les résultats de l'authentification d'e-mail pour chaque message qu'il traite dans l'en-tête **Authentication-results** (résultats de l'authentification).
+
+Pour plus d'informations sur le mode d'affichage de l'en-tête d'un message électronique dans divers clients de messagerie, voir [Analyseur d'en-têtes de message](https://go.microsoft.com/fwlink/p/?LinkId=306583). 
   
 > [!TIP]
-> Pour plus d'informations sur le mode d'affichage de l'en-tête d'un message électronique dans divers clients de messagerie, voir [Analyseur d'en-têtes de message](https://go.microsoft.com/fwlink/p/?LinkId=306583). Vous pouvez copier et coller le contenu de l'en-tête du message dans l'[analyseur d'en-têtes de message](https://testconnectivity.microsoft.com/?tabid=mha). Lorsque vous sélectionnez un message dans la zone de quarantaine du centre d'administration Exchange, le lien **Afficher l'en-tête du message** vous permet également de copier le texte de l'en-tête en toute simplicité et de le coller dans l'outil. Une fois dans l'outil Analyseur d'en-tête de message, cliquez sur **Analyser les en-têtes** afin d'obtenir des informations sur l'en-tête.
+>  Vous pouvez copier et coller le contenu de l'en-tête du message dans l'outil Analyseur de [messages](https://testconnectivity.microsoft.com/?tabid=mha) . Cet outil permet d'analyser les en-têtes et de les placer dans un format plus readible.
   
 ## <a name="x-forefront-antispam-report-message-header-fields"></a>Champs d’en-tête de message X-Forefront-Antispam-Report
 

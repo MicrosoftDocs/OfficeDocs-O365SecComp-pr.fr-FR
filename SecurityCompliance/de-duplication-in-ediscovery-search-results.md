@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: Vous avez la possibilité de dédupliquer les résultats de recherche de découverte électronique exportés de sorte qu'une seule copie d'un message électronique soit exportée même si plusieurs instances du même message ont pu être trouvées dans des boîtes aux lettres différentes.
-ms.openlocfilehash: 7a4f156a68cafbffbb416c625e1e3ba432e6b069
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: b3810e3568bd2c7aa1628bcfcebbad5a87468ff8
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936724"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999297"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Déduplication dans les résultats de recherche eDiscovery
 
@@ -66,7 +66,7 @@ Notez que les messages uniques peuvent également être marqués comme étant de
 
 - Les informations contenues dans cet article s'appliquent lors de l'exportation des résultats de recherche à l'aide de l'un des outils eDiscovery suivants:
     
-  - Recherche de contenu dans le centre de &amp; sécurité conformité Office 365
+  - Recherche de contenu dans le centre de conformité dans Office 365
     
   - Découverte électronique inaltérable dans Exchange Online
     
@@ -74,9 +74,9 @@ Notez que les messages uniques peuvent également être marqués comme étant de
     
 - Pour plus d'informations sur l'exportation des résultats de la recherche, voir:
     
-  - [Exporter les résultats de la recherche à partir &amp; du centre de sécurité conformité Office 365](export-search-results.md)
+  - [Exporter la recherche de contenu](export-search-results.md)
     
-  - [Exporter un rapport de recherche de contenu à partir du &amp; Centre de sécurité conformité Office 365](export-a-content-search-report.md)
+  - [Exporter un rapport de recherche de contenu](export-a-content-search-report.md)
     
   - [Exporter les résultats de recherche de découverte électronique inaltérable vers un fichier PST](https://go.microsoft.com/fwlink/p/?linkid=832671)
     

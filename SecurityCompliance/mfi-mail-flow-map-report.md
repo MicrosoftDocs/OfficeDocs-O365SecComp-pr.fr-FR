@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: Les administrateurs peuvent en savoir plus sur le rapport de carte de flux de messagerie dans le tableau de bord de flux de messagerie dans le centre de sécurité & de sécurité Office 365.
+description: Les administrateurs peuvent en savoir plus sur le rapport de carte de flux de messagerie dans le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance Center.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 14a98b57c277238d4f603b56386bf51ac310f7ef
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: bd05ff5cb78adb9dd89dbe3f69c2c3a78d2b1df9
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30722842"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001137"
 ---
 # <a name="mail-flow-map-report"></a>Rapport de carte de flux de messagerie
 
@@ -24,7 +24,7 @@ ms.locfileid: "30722842"
 
 Ce rapport fournit des informations sur la façon dont les messages circulent dans votre organisation Office 365. Vous pouvez utiliser ces informations pour apprendre des modèles, identifier des anomalies et corriger les problèmes au fur et à mesure qu'ils se produisent.
 
-![Rapport de carte de flux de messagerie dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité Office 365](media/mail-flow-map-selected.png)
+![Rapport de carte de flux de messagerie dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité](media/mail-flow-map-selected.png)
 
 ## <a name="mail-flow-map-widget"></a>Widget carte de flux de messagerie
 
@@ -32,7 +32,7 @@ Par défaut, la carte de flux de messagerie indique le modèle de flux de messag
 
 ![Flèches gauche et droite dans le widget carte de flux de messagerie](media/mail-flow-map-widget.png)
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Vue d'ensemble
 
 Cliquez sur le widget **carte de flux de messagerie** pour accéder au rapport de carte de flux de **messagerie** . Vous trouverez ici un niveau plus granulaire du rapport, vous pouvez cliquer sur Afficher les détails de la table pour afficher des données détaillées. Vous pouvez également télécharger le rapport détaillé en cliquant sur rapport de demande.
 

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: Microsoft Exchange Online Protection (EOP) offre un grand nombre de rapports qui peuvent vous aider à déterminer l'état général de votre organisation. Il existe également des outils vous permettant de résoudre des problèmes liés à des événements spécifiques (comme un message n'arrivant pas aux destinataires appropriés) et des rapports d'audit pour vous aider à respecter les exigences de conformité. Le tableau suivant décrit les rapports et les outils de dépannage disponibles pour les administrateurs EOP.
-ms.openlocfilehash: c26f3e88edb378f2eb9ae5967e96fadbce69110e
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: fcefa14991d074f1f4459007c16dd7f4df1cedd1
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693163"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000947"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Création de rapports et suivi des messages dans Exchange Online Protection
 
@@ -38,7 +38,7 @@ Pour plus d'informations, voir les ressources suivantes :
 - [Rapports Office 365 dans le Centre d'administration - Utilisation des applications de messagerie](https://go.microsoft.com/fwlink/p/?linkid=859707)
 - [Rapports Office 365 dans le Centre d'administration - Utilisation des boîtes aux lettres](https://go.microsoft.com/fwlink/p/?linkid=859708)
 
-## <a name="security-amp-compliance-reports-in-the-office-365-admin-center"></a>Rapports &amp; de conformité de sécurité dans le centre d'administration Office 365
+## <a name="security-amp-compliance-reports-in-the-microsoft-365-admin-center"></a>Rapports &amp; de conformité de sécurité dans le centre d'administration Microsoft 365
 
 Ces rapports améliorés fournissent une expérience de création de rapports interactive pour les administrateurs EOP, qui inclut des informations récapitulatives et la possibilité d'approfondir plus en détail.  
 
@@ -50,7 +50,7 @@ Ces rapports améliorés fournissent une expérience de création de rapports in
 
 ##<a name="custom-reports-using-microsoft-graph"></a>Rapports personnalisés à l'aide de Microsoft Graph
 
-Créer par programme des rapports disponibles dans le centre d'administration Office 365 à l'aide de Microsoft Graph consultez les sous-rubriques de la rubrique utilisation [des rapports d'utilisation d'office 365 dans Microsoft Graph](https://go.microsoft.com/fwlink/p/?linkid=865135) . 
+Créer par programme des rapports qui sont disponibles dans le centre d'administration Microsoft 365 à l'aide de Microsoft Graph, consultez les sous-rubriques relatives à l'utilisation des [rapports d'utilisation d'Office 365 dans Microsoft Graph](https://go.microsoft.com/fwlink/p/?linkid=865135) 
 
 ##<a name="custom-reports-using-reporting-web-services"></a>Rapports personnalisés à l’aide des services web de rapport
 
@@ -83,6 +83,6 @@ Le tableau suivant présente la disponibilité des rapports et des données de s
 |Données de suivi des messages  <br/> |90 jours  <br/> |Lorsque vous effectuez un suivi de messages remontant à moins de 7 jours, ces derniers apparaissent normalement dans les 5 à 30 minutes.  <br/> Lorsque vous effectuez un suivi de messages remontant à plus de 7 jours, la génération des résultats peut prendre plusieurs heures.  <br/> |
    
 > [!NOTE]
-> La disponibilité et la latence des données sont les mêmes, qu'elles soient demandées par Centre d'administration Office 365 ou Remote PowerShell. 
+> La disponibilité et la latence des données sont les mêmes, qu'elles soient demandées via le centre d'administration Microsoft 365 ou PowerShell à distance. 
   
 

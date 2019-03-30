@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5f02d20f-b9aa-4b2f-ad2d-506a4a3c4540
 description: "Avec la sécurité des applications Cloud d'Office 365, les actions de gouvernance que vous pouvez effectuer sont la suspension ou l'annulation de l'interruption d'un compte d'utilisateur. "
-ms.openlocfilehash: 10da1385f850fadf077b4e3f9e3a00e9e4629fdd
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: d162be9d4e5382c6c03c63ae1b30043edbf0295b
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862446"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998867"
 ---
 # <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>Suspendre ou restaurer un compte d’utilisateur dans la sécurité des applications cloud Office 365
 
@@ -29,7 +29,7 @@ ms.locfileid: "30862446"
 Supposons que vous recevez une alerte indiquant qu'un des comptes d'utilisateur de votre organisation pour Office 365 a été compromis. Supposons que vous ayez reçu une alerte indiquant un problème lié à un compte d'utilisateur. Avec la sécurité des applications Cloud d'Office 365, vous pouvez suspendre un compte d'utilisateur et le restaurer ultérieurement après avoir étudié les alertes que vous recevez.
   
 > [!NOTE]
-> Office 365 Cloud App Security est disponible dans Office 365 entreprise E5. Si votre organisation utilise un autre abonnement entreprise 365 Enterprise, Office 365 Cloud App Security peut être acheté en tant que module complémentaire. (en tant qu'administrateur général, dans le centre d'administration Office 365, sélectionnez **facturation** \> : **ajouter**des abonnements.) Pour plus d'informations, reportez-vous à [la rubrique office &amp; 365 Platform Service Description: Office 365 Security Compliance Center](https://technet.microsoft.com/en-us/library/dn933793.aspx) et [acheter ou modifier un composant additionnel pour Office 365 pour les entreprises](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
+> Office 365 Cloud App Security est disponible dans Office 365 entreprise E5. Si votre organisation utilise un autre abonnement entreprise 365 Enterprise, Office 365 Cloud App Security peut être acheté en tant que module complémentaire. (en tant qu'administrateur général, dans le centre d'administration Microsoft 365, sélectionnez **facturation** \> : **ajouter**des abonnements.) Pour plus d'informations, reportez-vous à [la rubrique office &amp; 365 Platform Service Description: Office 365 Security Compliance Center](https://technet.microsoft.com/en-us/library/dn933793.aspx) et [acheter ou modifier un composant additionnel pour Office 365 pour les entreprises](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
   
 ## <a name="to-suspend-a-user-account-in-office-365-cloud-app-security"></a>Pour suspendre un compte d'utilisateur dans Office 365 Cloud App Security
 

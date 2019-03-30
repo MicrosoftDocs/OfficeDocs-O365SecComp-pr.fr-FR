@@ -3,7 +3,6 @@ title: Exporter les résultats dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: "Découvrez comment définir des options pour l'exportation des résultats à partir d'Office 365 Advanced eDiscovery, notamment la procédure de spécification des paramètres pour un lot d'exportation. "
-ms.openlocfilehash: 02314b0848d8e7bb37a7cb96fa4a721cf2622712
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a2528c3eab0bc9c06a592b972a3bc602174458d3
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218094"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000907"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>Exporter les résultats dans Office 365 Advanced eDiscovery
 
@@ -27,7 +26,7 @@ ms.locfileid: "30218094"
   
 Cette rubrique décrit les options avancées de configuration de l'exportation eDiscovery.
   
- **Dans cette rubrique :**
+ **Dans cette rubrique:**
   
 - [Définition des lots d'exportation et des sessions](export-results-in-advanced-ediscovery.md#BK_Define)
     
@@ -183,10 +182,10 @@ Le tableau suivant répertorie les fichiers de sortie générés lors de l'exéc
 |**Nom de fichier**|**Type de fichier**|**Description**|
 |:-----|:-----|:-----|
 |Exporter le résumé  <br/> |value  <br/> |Un fichier journal généré par l'outil d'exportation de découverte électronique.  <br/> |
-|Oligo  <br/> |txt  <br/> |Un fichier journal généré par l'outil d'exportation de découverte électronique.  <br/> |
+|Suivi  <br/> |txt  <br/> |Un fichier journal généré par l'outil d'exportation de découverte électronique.  <br/> |
 |Fichiers texte extraits  <br/> |Dossier de fichiers  <br/> |Dossier qui contient les fichiers texte extraits des fichiers exportés.  <br/> |
 |Fichiers d'entrée ou natifs  <br/> |Dossier de fichiers  <br/> |Dossier qui contient les fichiers d'entrée et d'entrée natifs des fichiers exportés.  <br/> |
-|Exporter la liste  <br/> |xlsx  <br/> |Métadonnées de fichiers exPortées au format xlsx. Les champs de fichiers sont en fonction du modèle que l'utilisateur choisit d'exporter. Si nécessaire, plusieurs fichiers sont créés, chacun contenant 100 150K lignes. Si une certaine valeur contient plus de caractères qu'une cellule Excel ne peut contenir (actuellement la limite est de 32 767 caractères), la valeur sera réduite à la longueur maximale autorisée. Si une valeur est ajustée, la couleur d'arrière-plan de la cellule est rouge pour l'indiquer à l'utilisateur. " «Participants à la messagerie» est un exemple de champ qui peut dépasser la limite de longueur, si le courrier électronique a été envoyé à une grande distribution. Pour plus d'informations sur les champs de sortie, voir [Export report fields](export-report-fields-in-advanced-ediscovery.md) .<br/> |
+|Exporter la liste  <br/> |xlsx  <br/> |Métadonnées de fichiers exPortées au format xlsx. Les champs de fichiers sont en fonction du modèle que l'utilisateur choisit d'exporter. Si nécessaire, plusieurs fichiers sont créés, chacun contenant 100 150K lignes. Si une certaine valeur contient plus de caractères qu'une cellule Excel ne peut contenir (actuellement la limite est de 32 767 caractères), la valeur sera réduite à la longueur maximale autorisée. Si une valeur est ajustée, la couleur d'arrière-plan de la cellule est rouge pour l'indiquer à l'utilisateur. " «Participants à la messagerie» est un exemple de champ qui peut dépasser la limite de longueur, si le courrier électronique a été envoyé à une grande distribution. Pour plus d'informations sur les champs de sortie, voir [Export report fields](export-report-fields-in-advanced-ediscovery.md) .  <br/> |
 |Charger un fichier  <br/> |value  <br/> |Métadonnées de fichiers exPortées au format CSV pour chargement dans une autre application. Les champs de fichiers sont en fonction du modèle que l'utilisateur choisit d'exporter.  <br/> |
 |Indicateur de réussite  <br/> |txt  <br/> |Créé uniquement lors de l'exportation vers un objet BLOB Azure tiers. Si l'exportation réussit complètement, le fichier est créé. En cas de défaillance ou de la réussite partielle, le fichier ne sera pas créé. Le fichier est créé dans le dossier racine, ce qui permet le suivi automatique des différents statuts de lots/sessions d'exportation. Il s'agit d'un fichier vide. Son nom est: TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime. txt.  <br/> |
    
@@ -196,7 +195,7 @@ Le tableau suivant répertorie les fichiers de sortie générés lors de l'exéc
   
 [Affichage de l'historique du lot et exportation des résultats passés](view-batch-history-and-export-past-results.md)
   
-[Configuration rapide pour Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
+[Configuration rapide d’Office 365 Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md)
 
 [Exportation des champs d’un rapport](export-report-fields-in-advanced-ediscovery.md)
   

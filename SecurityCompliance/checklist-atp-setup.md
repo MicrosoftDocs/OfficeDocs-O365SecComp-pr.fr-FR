@@ -14,14 +14,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Voici un guide de démarrage rapide que vous pouvez utiliser pour vous assurer que la protection avancée contre les menaces Office 365 (ATP) est configurée et configurée pour votre organisation.
-ms.openlocfilehash: 5aecbdb63f30a620812de44907b29dcae838ba36
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: a071c626327aa7d0055df522e8fec5ebe41d6a83
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693295"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999397"
 ---
-# <a name="quick-start-guide-set-up-office-365-advanced-threat-protection"></a>Guide de démarrage rapide: configurer Office 365 protection avancée contre les menaces
+# <a name="quick-start-guide-set-up-office-365-advanced-threat-protection"></a>Guide de démarrage rapide : configurer Office 365 - Protection avancée contre les menaces
 
 Voici un guide de démarrage rapide que vous pouvez utiliser comme liste de vérification pour vous assurer que la protection avancée contre les menaces Office 365 est configurée pour votre organisation. Si vous ne connaissez pas la protection contre les menaces dans Office 365, ou si vous n'êtes pas sûr de savoir où commencer, utilisez les instructions suivantes comme point de départ. 
 
@@ -44,7 +44,7 @@ Voici un guide de démarrage rapide que vous pouvez utiliser comme liste de vér
 
 ## <a name="part-1---anti-malware"></a>Partie 1: anti-programme malveillant
 
-1. dans le [centre de sécurité & de la sécurité d'Office 365](https://protection.office.com), choisissez**protection contre les programmes malveillants**pour la**stratégie** > de **gestion** > des menaces.
+1. Dans le [Centre de sécurité & conformité](https://protection.office.com), choisissez**protection contre les programmes malveillants**pour la**stratégie** > de **gestion** > des menaces.
 2. Double-cliquez sur la stratégie **par défaut** , puis sélectionnez **paramètres**.
 3. Spécifiez les paramètres suivants:
     - Dans la section réponse à la **détection de programmes malveillants** , conservez le paramètre par défaut **non**.
@@ -59,7 +59,7 @@ La protection «Zero-Day» est configurée par le biais de stratégies, telles q
 
 ### <a name="atp-safe-attachments-policies"></a>Stratégies de pièces jointes approuvées ATP
 
-1. dans**** > le [centre de sécurité & de la sécurité Office 365](https://protection.office.com), sélectionnez **gestion** > des menaces-**pièces jointes ATP**.
+1. Dans le [Centre de sécurité & Compliance Center](https://protection.office.com), choisissez protection**** > **contre les** **menaces** > pièces jointes ATP.
 2. Sélectionnez l'option Activer la protection avancée contre **les menaces pour SharePoint, OneDrive et Microsoft teams**.
 3. Dans la section **protéger les pièces jointes** , cliquez sur le**+** signe plus ().
 4. Spécifiez les paramètres suivants:
@@ -76,7 +76,7 @@ Pour en savoir plus, consultez la rubrique [configurer des stratégies de pièce
 
 Pour configurer des liens approuvés ATP, vérifiez votre stratégie par défaut et ajoutez une stratégie.
 
-1. dans le [centre de sécurité & de sécurité Office 365](https://protection.office.com)**** > , sélectionnez **gestion** > des menaces-**liens fiables ATP**.
+1. Dans le [Centre de sécurité & conformité](https://protection.office.com), **sélectionnez gestion** > **** > **des menaces-liens fiables ATP**.
 2. Double-cliquez sur la stratégie **par défaut** .
 3. Dans la section **utiliser les liens approuvés dans** , sélectionnez l'option **Office 365 ProPlus, Office pour iOS et Android**, puis cliquez sur **Enregistrer**.
 4. Dans la section **stratégies qui s'appliquent à des destinataires spécifiques** , cliquez**+** sur le signe plus ().
@@ -94,7 +94,7 @@ Pour plus d'informations, reportez-vous à la rubrique [set up Office 365 ATP Sa
 
 ## <a name="part-3---anti-phishing"></a>Partie 3: anti-hameçonnage 
 
-1. dans le [centre de sécurité & de la sécurité d'Office 365](https://protection.office.com), choisissez**** > **protection contre les** **menaces** > pour le hameçonnage.
+1. Dans le [Centre de sécurité & Compliance Center](https://protection.office.com), sélectionnez **Threat Management** > **Policy** > **protection contre le hameçonnage**.
 2. Cliquez sur **stratégie par défaut**.
 3. Dans la section **emprunt d'identité** , cliquez sur **modifier**, puis spécifiez les paramètres suivants:
     -  Sous l'onglet **Ajouter des utilisateurs à protéger** , activez la protection. Ajoutez ensuite des utilisateurs, tels que les membres du tableau de bord de votre organisation, votre directeur général, votre directeur financier et d'autres dirigeants. (Vous pouvez taper une adresse de messagerie individuelle ou cliquer pour afficher une liste.)
@@ -112,7 +112,7 @@ Pour en savoir plus sur les options de stratégie anti-hameçonnage, consultez l
 
 ## <a name="part-4---anti-spam"></a>Partie 4: blocage du courrier indésirable
 
-1. dans le [centre de sécurité & de la sécurité d'Office 365](https://protection.office.com), sélectionnez**** > **protection contre les** **menaces** > pour le courrier indésirable.
+1. Dans le [Centre de sécurité & conformité](https://protection.office.com), choisissez**protection contre le courrier**indésirable pour la**stratégie** > de **gestion** > des menaces.
 2. Sous l'onglet **personnalisé** , activez les **paramètres personnalisés** .
 3. Développez **stratégie de filtrage du courrier indésirAble par défaut**, cliquez sur **modifier la stratégie**, puis spécifiez les paramètres suivants:
     - Dans la section **actions de courrier indésirable et en bloc** , définissez le seuil sur une valeur de 5 ou 6.
