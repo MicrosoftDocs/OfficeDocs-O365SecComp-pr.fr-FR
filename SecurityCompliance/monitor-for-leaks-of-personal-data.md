@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez trois outils qui permettent de surveiller les fuites de données personnelles.
-ms.openlocfilehash: 1923aa00f4ababb66ff8c915a8c3d7a99ff1cd04
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: d9b48589ace06186d5f177d1b90f02f8657637bd
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373885"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955207"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Surveillance des fuites de données personnelles
 
@@ -57,7 +57,7 @@ Vous pouvez utiliser les rapports DLP pour :
 
 En outre, vous pouvez utiliser les rapports DLP pour affiner vos stratégies DLP lorsque vous les exécutez en mode test.
 
-Les rapports DLP se trouvent dans le Centre de sécurité et de conformité. Accédez à Rapports \> Afficher les rapports. Sous Protection contre la perte de données (DLP), choisissez Correspondances avec les règles et les stratégies DLP ou Remplacements et faux positifs DLP.
+Les rapports DLP sont dans le centre de sécurité et le centre de conformité. Accéder aux rapports \>Afficher des rapports. Sous Protection contre la perte de données (DLP), choisissez soit Correspondances avec les règles et les stratégies DLP ou Remplacements et faux positifs DLP.
 
 Pour plus d’informations, consultez la rubrique [Affichage des rapports de protection contre la perte de données](https://support.office.com/fr-FR/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b).
 
@@ -67,9 +67,9 @@ Pour plus d’informations, consultez la rubrique [Affichage des rapports de pro
 
 Le journal d’audit Office 365 contient les événements Exchange Online, SharePoint Online, OneDrive Entreprise, Azure Active Directory, Microsoft Teams, Power BI, Sway et d’autres services Office 365.
 
-Le Centre de sécurité et de conformité Office 365 propose deux méthodes pour surveiller et générer des rapports sur la base du journal d’audit Office 365 :
+Le Centre de sécurité et de conformité propose deux méthodes pour surveiller et générer des rapports sur la base du journal d’audit Office 365 :
 
--   Configurer des stratégies d’alerte, afficher des alertes et surveiller les tendances : utilisez les nouveaux outils de tableau de bord d’alertes et de stratégie d’alerte dans le Centre de sécurité et de conformité Office 365.
+-   Configurer des stratégies d’alerte, afficher des alertes et surveiller les tendances : utilisez les nouveaux outils de tableau de bord d’alertes et de stratégie d’alerte dans le Centre de sécurité et de conformité.
 
 -   Effectuer des recherches directement dans le journal d’audit : vous pouvez rechercher tous les événements dans une plage de dates spécifiée ou filtrer les résultats en fonction de critères spécifiques, tels que l’utilisateur ayant effectué l’action, l’action ou l’objet cible.
 
@@ -81,14 +81,14 @@ Il existe des solutions qui s’abonnent aux journaux d’audit unifiés via l�
 
 Plus d’informations sur les stratégies d’alerte et l’exécution d’une recherche dans le journal d’audit :
 
--   Rubrique relative aux [stratégies d’alerte dans le Centre de sécurité et de conformité Office 365](https://support.office.com/fr-FR/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
+-   [Stratégies d’alerte dans le Centre de sécurité et de conformité Microsoft 365](https://support.office.com/fr-FR/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
 
 -   [Effectuer des recherches dans le journal d’audit dans le Centre de sécurité et de conformité Office 365](https://support.office.com/fr-FR/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (introduction)
 
 -   [Activer ou désactiver la recherche dans un journal d’audit Office 365](https://support.office.com/fr-FR/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
 
 -   
-  [Effectuer des recherches dans le journal d’audit dans le Centre de sécurité et de conformité Office 365](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+  [Rechercher le journal d’audit](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
 -   
   [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (cmdlet) 
