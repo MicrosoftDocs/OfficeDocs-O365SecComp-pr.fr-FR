@@ -90,8 +90,8 @@ Si votre organisation a besoin de protéger vos données ou de respecter des nor
                     <div class="cardText">
                         <h3>Restez sûr</h3>
                         <p><a href="security-roadmap.md">Feuille de route de sécurité Office 365</a></p>
-                        <p><a href="office-365-secure-score.md" target="_blank">Score de sécurité Microsoft</a></p>
-                        <p><a href="https://protection.office.com" target="_blank">Centre de sécurité et conformité Office 365</a></p>
+                        <p><a href="office-365-secure-score.md" target="_blank">Degré de sécurisation Microsoft</a></p>
+                        <p><a href="https://protection.office.com" target="_blank">Centre de sécurité & conformité</a></p>
                     </div>
                 </div>
             </div>
