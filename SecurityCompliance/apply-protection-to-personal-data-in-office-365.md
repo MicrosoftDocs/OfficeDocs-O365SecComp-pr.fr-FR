@@ -16,16 +16,16 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez comment utiliser les stratégies de protection contre la perte de données (DLP) pour protéger les données personnelles dans Office 365.
-ms.openlocfilehash: c0b78611a81452ecd8cb8993842c26f6012bb736
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: af4af4fd8a80b1f1ad34919ed1380f4fed7d9461
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373945"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955247"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>Application d’une protection aux données personnelles dans Office 365
 
-La protection des informations personnelles dans Office 365 inclut l’utilisation de fonctionnalités de protection contre la perte de données. Avec les stratégies DLP dans le centre de sécurité et conformité Office 365, vous pouvez identifier, surveiller et protéger automatiquement les informations sensibles dans Office 365.
+La protection des informations personnelles dans Office 365 inclut l’utilisation des fonctionnalités de protection contre la perte de données. Les stratégies de protection contre la perte de données (DLP) disponibles dans le Centre de sécurité et conformité vous permettent d’identifier, de surveiller et de protéger automatiquement des informations sensibles dans Office 365.
 
 Cette rubrique décrit comment utiliser la protection contre la perte de données pour protéger les données personnelles. Elle répertorie également les autres fonctionnalités de protection qui peuvent être utilisées pour se conformer au règlement général sur la protection des données (RGPD), notamment en définissant des autorisations dans les bibliothèques SharePoint et en utilisant des stratégies d’accès aux appareils.
 
