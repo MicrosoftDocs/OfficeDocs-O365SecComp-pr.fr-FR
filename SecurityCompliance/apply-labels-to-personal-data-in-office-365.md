@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez comment utiliser des étiquettes Office dans le cadre de votre plan de protection RGPD.
-ms.openlocfilehash: 4167ace41c5d7534b7e90130c189e3c04e5c5100
-ms.sourcegitcommit: ae7ebae8801a69a825a363443e2676379197de19
+ms.openlocfilehash: 32f94e02dac81abaef46ef5495701e5037ff8c6b
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800286"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955197"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Application d’étiquettes à des données personnelles dans Office 365
 
@@ -167,7 +167,7 @@ Assurez-vous que le plan d’implémentation des étiquettes inclut :
 
 ## <a name="create-labels-and-auto-apply-label-policies"></a>Création d’étiquettes et de stratégies d’étiquetage à application automatique
 
-Créez des étiquettes et des stratégies dans le Centre de sécurité et de conformité.
+Créez des étiquettes et des stratégies dans le Centre de sécurité ou de conformité.
 
 <table>
 <thead>
@@ -179,16 +179,16 @@ Créez des étiquettes et des stratégies dans le Centre de sécurité et de con
 <tbody>
 <tr class="odd">
 <td align="left"><p>Accordez des autorisations aux membres de votre équipe de conformité.</p></td>
-<td align="left"><p>Les membres de votre équipe de conformité qui créent des étiquettes ont besoin d’autorisations pour utiliser le Centre de sécurité &amp; de conformité. Accédez à des Autorisations dans le Centre de sécurité et de conformité et modifiez les membres du groupe Administrateur de conformité.</p>
-<p>Reportez-vous à la rubrique <a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">Octroi de l’accès au Centre de sécurité &amp; de conformité Office 365 aux utilisateurs</a>.</p></td>
+<td align="left"><p>Les membres de votre équipe de conformité qui créent des étiquettes ont besoin d’autorisations pour utiliser le Centre de sécurité et/ou de conformité. Accédez à des Autorisations dans le Centre de sécurité ou de conformité et modifiez les membres du groupe Administrateur de conformité.</p>
+<p>Pour plus d’informations, voir<a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">Autoriser l’accès aux utilisateurs au Centre de sécurité et/ou de conformité</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Créer des étiquettes de rétention.</p></td>
-<td align="left">Accédez à Classifications dans le Centre de sécurité et de conformité, sélectionnez Étiquettes, puis créez des étiquettes pour votre environnement.</td>
+<td align="left">Accédez à Classifications dans le Centre de sécurité ou de conformité, sélectionnez les étiquettes de rétention, puis créez des étiquettes pour votre environnement.</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Créez des stratégies d’application automatique pour les étiquettes.</p></td>
-<td align="left">Accédez à Classification dans le Centre de sécurité et de conformité, sélectionnez les stratégies d’étiquetage et créez les stratégies d’application automatique des étiquettes. Veillez à créer ces stratégies par ordre de priorité.</td>
+<td align="left">Accédez à Classification dans le Centre de sécurité ou de conformité, sélectionnez les stratégies d’étiquetage et créez les stratégies d’application automatique des étiquettes. Veillez à créer ces stratégies par ordre de priorité.</td>
 </tr>
 </tbody>
 </table>
