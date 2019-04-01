@@ -21,6 +21,7 @@
 ## [Étiquettes de niveau de confidentialité](sensitivity-labels.md)
 ### [Restreindre l’accès au contenu à l’aide du chiffrement dans les étiquettes de niveau de confidentialité](encryption-sensitivity-labels.md)
 ### [Appliquer automatiquement une étiquette de confidentialité au contenu](apply_sensitivity_label_automatically.md)
+### [Afficher l’utilisation d’étiquette avec les analytiques d’étiquette](label-analytics.md)
 ## [Éviter les pertes de données (DLP)](data-loss-prevention-policies.md)
 ### [Visionner une présentation étendue de la DLP](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## Configurer le DLP
@@ -86,16 +87,46 @@
 ### [Restaurer une boîte aux lettres inactive](restore-an-inactive-mailbox.md)
 ### [Supprimer une boîte aux lettres inactive](delete-an-inactive-mailbox.md)
 ## Surveiller la gouvernance des données
-### [Afficher les rapports de gouvernance des données](view-the-data-governance-reports.md)
 ### [Afficher l’activité des étiquettes pour les documents](view-label-activity-for-documents.md)
+### [Afficher l’utilisation d’étiquette avec les analytiques d’étiquette](label-analytics.md)
+### [Afficher les rapports de gouvernance des données](view-the-data-governance-reports.md)
 ## Plus d’informations sur la gouvernance des données
 ### [Regarder des vidéos de l’équipe de gouvernance des données Microsoft](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # [Se protéger contre les menaces](protect-against-threats.md)
+
 ## [Rechercher dans Microsoft 365](hunting.md)
+
 ## [Comprendre les dernières campagnes d’attaque grâce aux statistiques de menaces](latest-attack-campaigns.md)
-## [Guide de démarrage rapide : configurer Office 365 - Protection avancée contre les menaces](checklist-atp-setup.md)
+
+## [Protection avancée contre les menaces ](office-365-atp.md)
+### [Guide de démarrage rapide : Configurer le système d’Office 365 ATP](checklist-atp-setup.md)
+#### [Intégrer Office 365 ATP à Windows Defender - Protection avancée contre les menaces](integrate-office-365-ti-with-wdatp.md)
+#### [Intégration SIEM avec Office 365 ATP](siem-integration-with-office-365-ti.md)
+### [Liens fiables ATP](atp-safe-links.md)
+#### [Configuration des stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md)
+#### [Configurer une liste d’URL personnalisée « ne pas réécrire »](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
+#### [Configurer une liste d’URL bloquée personnalisée](set-up-a-custom-blocked-urls-list-wtih-atp.md)
+#### [Pages d’avertissement de liens fiables ATP](atp-safe-links-warning-pages.md)
+### [Pièces jointes fiables ATP](atp-safe-attachments.md)
+#### [Définir des stratégies de pièces jointes fiables ATP](set-up-atp-safe-attachments-policies.md)
+#### [Livraison et aperçu dynamique](dynamic-delivery-and-previewing.md)
+### [ATP pour SharePoint, OneDrive et Microsoft Teams](atp-for-spo-odb-and-teams.md).
+#### [Activer la protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
+#### [Afficher des informations sur les fichiers malveillants](malicious-files-detected-in-spo-odb-or-teams.md)
+### [Afficher les rapports ATP](view-reports-for-atp.md)
+### [Examen et réponse contre les menaces](office-365-ti.md)
+#### [Prise en main](get-started-with-ti.md)
+#### [Protégez vos utilisateurs grâce à l’examen et aux réponses contre les menaces](keep-users-safe-with-office-365-ti.md)
+#### [Rechercher et d’examiner le courrier électronique malveillant qui a été distribué](investigate-malicious-email-that-was-delivered.md)
+### [Examen et réponse automatisés](automated-investigation-response-office.md)
+### [Threat Explorer](use-explorer-in-security-and-compliance.md)
+#### [Affichages Threat Explorer](threat-explorer-views.md)
+### [Suivi des menaces](threat-trackers.md)
+### [Simulateur d’attaques dans Office 365](attack-simulator.md)
+
 ## [Protection anti-hameçonnage](tuning-anti-phishing.md)
+
 ## [Protection contre le courrier indésirable et les programmes malveillants](anti-spam-and-anti-malware-protection.md)
 ### [Q. Qu'est-ce que l’EOP ?](eop/what-is-eop.md)
 ### [Protection contre le courrier indésirable pour Office 365](anti-spam-protection.md)
@@ -173,30 +204,8 @@
 #### [Chiffrement dans Microsoft Dynamics 365](office-365-encryption-in-microsoft-dynamics-365.md)
 #### [Chiffrement dans Azure](office-365-azure-encryption.md)
 
-## [Protection avancée contre les menaces ](office-365-atp.md)
-### [Liens fiables ATP](atp-safe-links.md)
-#### [Configuration des stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md)
-#### [Configurer une liste d’URL personnalisée « ne pas réécrire »](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
-#### [Configurer une liste d’URL bloquée personnalisée](set-up-a-custom-blocked-urls-list-wtih-atp.md)
-#### [Pages d’avertissement de liens fiables ATP](atp-safe-links-warning-pages.md)
-### [Pièces jointes fiables ATP](atp-safe-attachments.md)
-#### [Définir des stratégies de pièces jointes fiables ATP](set-up-atp-safe-attachments-policies.md)
-#### [Livraison et aperçu dynamique](dynamic-delivery-and-previewing.md)
-### [ATP pour SharePoint, OneDrive et Microsoft Teams](atp-for-spo-odb-and-teams.md).
-#### [Activer la protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
-#### [Afficher des informations sur les fichiers malveillants](malicious-files-detected-in-spo-odb-or-teams.md)
-### [Intégrer Office 365 ATP à Windows Defender - Protection avancée contre les menaces](integrate-office-365-ti-with-wdatp.md)
-### [Intégration SIEM avec Office 365 ATP](siem-integration-with-office-365-ti.md)
-## [Examen et réponse contre les menaces](office-365-ti.md)
-### [Prise en main](get-started-with-ti.md)
-### [Suivi des menaces](threat-trackers.md)
-### [Threat Explorer](use-explorer-in-security-and-compliance.md)
-#### [Affichages Threat Explorer](threat-explorer-views.md)
-#### [Rechercher et d’examiner le courrier électronique malveillant qui a été distribué](investigate-malicious-email-that-was-delivered.md)
-### [Examen et réponse automatisés](automated-investigation-response-office.md)
-### [Afficher les rapports ATP](view-reports-for-atp.md)
-### [Simulateur d’attaques dans Office 365](attack-simulator.md)
-### [Protégez vos utilisateurs grâce à l’examen et aux réponses contre les menaces](keep-users-safe-with-office-365-ti.md)
+
+
 ## [Contrôle et gestion de l’accès aux données via le service Sécurité des applications cloud Office 365](office-365-cas-overview.md)
 ### [Voir les nouveautés concernant la sécurité des applications cloud](new-in-office-365-cas.md)
 #### [Mises à jour en 2018](new-in-office-365-cas-2018.md)
