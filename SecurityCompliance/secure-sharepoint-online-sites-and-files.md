@@ -18,12 +18,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Résumé : Recommandations de configuration pour la protection des fichiers dans SharePoint Online et Office 365.'
-ms.openlocfilehash: 3e41a46d244f88110b87426fe975b3f72e376984
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: cc31d6633b41fe8bcec57794247718c44c0fc555
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955227"
+ms.locfileid: "30999377"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Sécuriser des sites et des fichiers SharePoint Online
 
@@ -125,7 +125,7 @@ Le tableau suivant récapitule la configuration pour chacun des sites d’équip
 |Stratégies de protection contre la perte de données  <br/> |||Avertissez les utilisateurs lors de l’envoi des fichiers qui sont étiquetés comme sensibles à l’extérieur de l’organisation.  <br/> Pour bloquer le partage externe de types de données sensibles, telles que les numéros de carte de crédit ou d’autres données personnelles, vous pouvez configurer des stratégies de protection contre la perte de données supplémentaires pour ces types de données (y compris les types de données personnalisés que vous configurez).  <br/> |Empêchent les utilisateurs d’envoyer des fichiers portant l’étiquette Hautement confidentiel en dehors de l’organisation. Autorisent les utilisateurs à passer outre ce paramètre en fournissant une justification, notamment en indiquant la personne avec laquelle ils partagent le fichier.  <br/> |
 |Étiquettes de niveau de confidentialité  <br/> ||||Utilisez Azure Information Protection pour chiffrer automatiquement les fichiers et accorder des autorisations sur ceux-ci. Les étiquettes de sensibilité utilisent la Protection d’informations Azure pour chiffrer les fichiers. Cette protection reste associée aux fichiers dans le cas où ils sont divulgués.  <br/> Office 365 ne peut pas lire les fichiers chiffrés avec Azure Information Protection. En outre, les stratégies de protection contre la perte de données (DLP) peuvent fonctionner uniquement avec les métadonnées (y compris les étiquettes), et pas avec le contenu de ces fichiers (par exemple, des numéros de cartes de crédit au sein des fichiers).  <br/> |
    
-Pour connaître les étapes de déploiement des quatre différents types de sites d’équipe SharePoint Online dans cette solution, consultez l’article relatif au [déploiement de sites SharePoint Online pour trois niveaux de protection](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md). Pour connaître la procédure de création d’un environnement de développement/test, reportez-vous à l’article relatif à la [sécurisation des sites SharePoint Online dans un environnement de développement/test](secure-sharepoint-online-sites-in-a-dev-test-environment.md). 
+Pour savoir comment déployer les quatre différents types de sites d’équipe SharePoint Online dans cette solution, voir [Déployer des sites SharePoint Online pour les trois niveaux de protection](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md). 
   
 ## <a name="office-365-retention-labels"></a>Étiquettes de rétention Office 365
 
@@ -186,7 +186,3 @@ Pour connaître les étapes de configuration d’Azure Information Protection da
   
 [Adoption du cloud et solutions hybrides](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
   
-[Sécuriser les sites SharePoint Online dans un environnement de développement/test](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
-
-
-
