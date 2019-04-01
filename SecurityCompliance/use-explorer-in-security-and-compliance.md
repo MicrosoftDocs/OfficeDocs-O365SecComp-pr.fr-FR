@@ -3,7 +3,7 @@ title: Utiliser Threat Explorer dans le centre &amp; de sécurité conformité
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/28/2019
+ms.date: 03/31/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Découvrez l'Explorateur (également appelé Explorateur de menaces) dans le &amp; Centre de sécurité conformité.
-ms.openlocfilehash: e6177970edc67c8b9e1c0ae6144f4c37f116012f
-ms.sourcegitcommit: 787a0fef671e5dc6f5e805b580321b2edbfad8e9
+ms.openlocfilehash: c782e5962164b7d35947befe526c20f7dc0943d5
+ms.sourcegitcommit: 691370682825a7601bd4b77d0a8c4b51ed15682f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989609"
+ms.lasthandoff: 03/31/2019
+ms.locfileid: "31014013"
 ---
 # <a name="use-threat-explorer-in-the-security-amp-compliance-center"></a>Utiliser Threat Explorer dans le centre &amp; de sécurité conformité
 
@@ -47,18 +47,22 @@ Le rapport est actualisé pour afficher les résultats de programmes malveillant
 
 ## <a name="view-data-about-phishing-urls-and-click-verdict"></a>Afficher les données sur les URL d'hameçonnage et cliquez sur verdict
 
-Supposons que vous vouliez voir les tentatives de hameçonnage via des URL dans des courriers électroniques, y compris une liste des URL qui ont été autorisées, bloquées et remplacées. Pour ce faire, utilisez la vue [E-mail _GT_ hameçonnage](threat-explorer-views.md#email--phish) de l'Explorateur.
+Supposons que vous vouliez voir les tentatives de hameçonnage via des URL dans des courriers électroniques, y compris une liste des URL qui ont été autorisées, bloquées et remplacées.  L'identification des URL sur lesquelles l'utilisateur a cliqué requiert [des liens fiables ATP](atp-safe-links.md). (Assurez-vous que vous avez configuré et appliqué des [stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md) à vos utilisateurs pour la protection de la période de clic et la journalisation des verdicts de clic par des liens fiables ATP.) Pour consulter les URL de hameçonnage dans les messages et les clics sur les URL dans les messages hameçons, utilisez la vue [E-mail _GT_ hameçonnage](threat-explorer-views.md#email--phish) de l'Explorateur.
 
 1. Dans le centre de sécurité & Compliance[https://protection.office.com](https://protection.office.com)Center (), sélectionnez **Threat Management** > **Explorer**.
 2. Dans le menu **affichage** , choisissez **courrier** > **hameçon**.<br/>![Menu Affichage de l'Explorateur](media/ExplorerViewEmailPhishMenu.png)<br/>
 3. Cliquez sur **expéditeur**, puis sur **URL** > , puis**cliquez sur verdict**.
 4. Sélectionnez une ou plusieurs options, telles que **bloquée** et **bloquer le remplacement**, puis cliquez sur le bouton **Actualiser** pour appliquer ce filtre.<br/>![URL et cliquez sur verdicts](media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
 
-Le rapport est actualisé pour afficher les URL de hameçonnage détectées dans les messages bloqués (ou visités malgré un avertissement), ainsi que l'état de remise du courrier électronique. À partir de là, vous pouvez effectuer une analyse plus poussée. Par exemple, sous le graphique, vous pouvez voir les URL principales qui ont été bloquées dans le message électronique de votre organisation. 
+Le rapport est actualisé pour afficher deux tables d'URL différentes sous l'onglet URL ci-dessous:
+1. Les **URL principales** sont les URL contenues dans les messages que vous avez filtrés vers et l'action de remise de courrier électronique compte pour chaque URL. Dans l'affichage e-mail de hameçonnage, cette liste contient généralement des URL légitimes. Les agresseurs incluent un mélange d'URL correctes et incorrectes dans leurs messages pour essayer de les remettre, mais ils rendent les liens malveillants plus intéressants pour l'utilisateur. Le tableau des URL est trié par nombre total d'e-mails (Remarque: cette colonne n'est pas affichée pour simplifier l'affichage).
+2. Les **clics en haut** sont les liens fiables les URL sur lesquelles l'utilisateur a cliqué, triées par nombre total de clics (cette colonne ne montre pas non plus comment simplifier l'affichage). Nombre total par colonne indique le nombre de liens approuvés cliquez sur nombre de verdicts pour chaque URL sur laquelle vous avez cliqué. Dans la vue e-mail de hameçonnage, il s'agit plus souvent de liens suspects ou malveillants, mais peut inclure des URL propres qui se trouvent dans des messages hameçons. Les clics d'URL sur les liens non justifiés ne s'afficheront pas ici.
+
+Les deux tableaux d'URL affichent les URL les plus populaires dans les messages d'hameçonnage par État de remise et ils affichent des clics d'URL bloqués (ou visités malgré un avertissement) afin que vous puissiez comprendre quels liens incorrects potentiels ont été reçus par les utilisateurs et interagis avec les utilisateurs. À partir de là, vous pouvez effectuer une analyse plus poussée. Par exemple, sous le graphique, vous pouvez voir les URL principales dans les messages électroniques qui ont été bloqués dans l'environnement de votre organisation. 
 
 ![URL de l'Explorateur bloquées](media/ExplorerPhishClickVerdictURLs.png) 
 
-Sélectionnez une URL pour afficher des informations plus détaillées.
+Sélectionnez une URL pour afficher des informations plus détaillées. Notez que dans la boîte de dialogue de menu volant d'URL, le filtrage des courriers électroniques est supprimé afin de vous montrer l'affichage complet de l'exposition de l'URL dans votre environnement. Cela vous permet de filtrer les e-mails de l'Explorateur vers ceux qui vous intéressent, de rechercher des URL spécifiques qui constituent des menaces potentielles, puis de mieux comprendre l'exposition de l'URL dans votre environnement (via la boîte de dialogue détails de l'URL) sans avoir à ajouter de filtres d'URL au Affichage de l'Explorateur lui-même.
 
 ## <a name="review-email-messages-reported-by-users"></a>Examiner les messages électroniques signalés par les utilisateurs
 

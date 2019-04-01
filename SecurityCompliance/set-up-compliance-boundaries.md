@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Utilisez des limites de conformité pour créer des limites logiques au sein d'une organisation Office 365 qui contrôlent les emplacements de contenu utilisateur qu'un gestionnaire eDiscovery peut rechercher. Les limites de conformité utilisent le filtrage des autorisations de recherche (également appelé filtres de sécurité de conformité) pour contrôler les boîtes aux lettres, les sites SharePoint et les comptes OneDrive pouvant être recherchés par des utilisateurs spécifiques.
-ms.openlocfilehash: dc1cf770ab015ece5212d5257f1807596e0e36c7
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: b23c6d0c96874fb7e6205de6bf8a7f4eb00e4254
+ms.sourcegitcommit: 691370682825a7601bd4b77d0a8c4b51ed15682f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001087"
+ms.lasthandoff: 03/31/2019
+ms.locfileid: "31014023"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurer les limites de conformité pour les enquêtes eDiscovery dans Office 365
 
@@ -63,6 +63,8 @@ Voici une liste d'attributs d'utilisateur Azure Active Directory que vous pouvez
 - Service
     
 - Bureau
+
+- C (code du pays à deux lettres)
     
 Bien que d'autres attributs utilisateur soient disponibles, en particulier pour les boîtes aux lettres Exchange, les attributs répertoriés ci-dessus sont les seuls ceux actuellement pris en charge par OneDrive.
   
