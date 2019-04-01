@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: Faire la démonstration des fonctionnalités du RGPD dans Office 365.
-ms.openlocfilehash: d4d4113f6d78069a150e13c32ab192571671d986
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: aea1fec29da352285a59ac9286fc053ca10ec746
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955277"
+ms.locfileid: "31001257"
 ---
 # <a name="gdpr-discovery-protection-and-reporting-in-the-office-365-devtest-environment"></a>Découverte, protection et création de rapports en vertu du RGPD dans l’environnement de développement/test Office 365
 
@@ -98,7 +98,7 @@ Dans cette phase, vous créez un type d’informations sensibles personnalisé p
 
 Contoso fait toujours référence aux clients en utilisant un CCN dans la correspondance interne, la correspondance externe, les documents, et tout autre formulaire. Contoso a besoin d’un type d’élément sensible personnalisé pour détecter l’utilisation de CCN dans le contenu Office 365 afin d’appliquer la protection à l’utilisation de ce formulaire d’informations d’identification personnelle.
 
-1. Suivez les instructions indiquées dans [Se connecter au Centre de sécurité et conformité Office 365 PowerShell à l’aide de l’authentification multifacteur](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps) et connectez-vous au Centre de sécurité et conformité avec le nom d’utilisateur principal de votre compte d’administrateur général.
+1. Suivez les instructions de la section [Connexion au PowerShell du Centre de sécurité et conformité à l'aide de l'authentification multifactorielle](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps) et connectez-vous au Centre de sécurité et conformité avec l’UPN de votre compte administrateur global.
 2. Exécutez les commandes PowerShell suivantes :
 
      ```
