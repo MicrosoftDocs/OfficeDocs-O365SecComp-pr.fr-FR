@@ -387,6 +387,47 @@
 #### [Utilisation des utilitaires Advanced eDiscovery](use-advanced-ediscovery-utilities.md)
 #### [Exécution des rapports](run-reports-in-advanced-ediscovery.md)
 
+# [Gestion des investigations de données](datainvestigations/overview-data-investigations.md)
+## [Notes de publication](datainvestigations/data-investigations-release-notes.md)
+## [Gérer un incident d’écoulement de données](datainvestigations/manage-data-spillage-incidents.md)
+## [Créer une nouvelle investigation](datainvestigations/create-new-investigation.md)
+ 
+## [Rechercher des données dans une investigation](datainvestigations/search-for-data.md)
+### [Créer des requêtes de recherche](datainvestigations/build-search-queries.md)
+### [Statistiques de recherche](datainvestigations/search-statistics.md)
+
+## [Consulter les données dans des preuves](datainvestigations/review-data-in-evidence.md)
+### [Envoyer une requête](datainvestigations/evidence-query.md)
+### [Baliser des documents](datainvestigations/tag-documents.md)
+### [Annoter et préparer des documents pour la publication](datainvestigations/annotate-and-redact-documents.md)
+### [Charger des données n’appartenant pas à Office 365](datainvestigations/load-non-office365-data.md)
+### [Correction d’erreur lors du traitement des données](datainvestigations/error-remediation.md)
+
+## [Exécuter les données d’analyse pour investiguer plus rapidement](datainvestigations/run-analytics-to-investigate-faster.md)
+### [Threading de messagerie](datainvestigations/email-threading.md)
+### [Détection des quasi-duplicatas](datainvestigations/near-duplicates.md)
+### [Thèmes](datainvestigations/themes.md)
+### [Utiliser le module de pertinence](datainvestigations/use-relevance-module.md)
+
+## [Gérer les personnes d’intérêt dans une investigation](datainvestigations/manage-people-of-interest.md)
+### [Indexer les données de personnes dans une investigation](datainvestigations/index-data-people-of-interest.md)
+### [Afficher l’activité d’audit de personnes dans une investigation](datainvestigations/view-people-of-interest-activity.md)
+
+## [Exporter des données à partir d’une investigation](datainvestigations/export-data.md)
+### [Exporter des documents à partir de preuves](datainvestigations/export-documents-from-incident.md)
+### [Télécharger l’exportation des travaux](datainvestigations/download-export-jobs.md)
+
+## [Configurer les paramètres d’investigation de données](datainvestigations/configure-settings-datainvestigations.md)
+### [Ajouter ou supprimer des membres à partir d’une investigation](datainvestigations/add-remove-members.md)
+### [Configurer les paramètres de recherche et d’analyse](datainvestigations/configure-search-analytics-settings.md)
+### [Fermer ou supprimer une investigation](datainvestigations/close-or-delete-investigation.md)
+
+## Référence des investigations de données
+### [Limites des investigations de données](datainvestigations/limits-datainvestigations.md)
+### [Types de fichiers pris en charge](datainvestigations/supported-filetypes-datainvestigations.md)
+### [Champs de métadonnées de document](datainvestigations/document-metadata-fields.md)
+### [Gérer les tâches](datainvestigations/manage-jobs.md)
+
 # [Rechercher le journal d’audit](search-the-audit-log-in-security-and-compliance.md)
 ## [Activer ou désactiver la recherche dans le journal d’audit](turn-audit-log-search-on-or-off.md)
 ## [Gérer l’audit de boîte aux lettres](enable-mailbox-auditing.md)
