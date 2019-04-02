@@ -16,16 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: 9295e396-e53d-49b9-ae9b-0b5828cdedc3
 ms.collection:
-- Strat_O365_IP
 - M365-security-compliance
 - Strat_O365_IP
 description: Réduisez le potentiel d'une violation de données ou d'un compte compromis en suivant ces meilleures pratiques recommandées.
-ms.openlocfilehash: 97dffe6e0cf4551c9addc1ba53c4f95c7d88b3f3
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: bd4b911cd5972b7d6dc9b55c17e375d326b1d571
+ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357525"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31026335"
 ---
 # <a name="security-best-practices-for-office-365"></a>Meilleures pratiques de sécurité pour Office 365
 
@@ -47,7 +46,7 @@ Accès sécurisé à [https://SecureScore.office.com](https://SecureScore.office
 
 MFA ajoute une couche de protection supplémentaire à une stratégie de mot de passe fort en demandant aux utilisateurs d'accuser réception d'un appel téléphonique, d'un message texte ou d'une notification d'application sur leur téléphone intelligent après avoir entré correctement leur mot de passe. Avec l'authentification multiFACTEUR en place, les comptes d'utilisateur Office 365 sont toujours protégés contre les accès non autorisés même si le mot de passe d'un utilisateur est compromis. Les comptes sont protégés car l'accès n'est accordé à un compte qu'une fois que la demande supplémentaire a été satisfaite. Un mot de passe compromis ou volé n'est pas suffisant.
   
-- [Offre pour l'authentification multifacteur des déploiements Office 365](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+- [Planifier l'authentification multifacteur pour les déploiements d'Office 365](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 
 - [Configurer l’authentification multifacteur pour les utilisateurs d’Office 365](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
 
@@ -57,7 +56,7 @@ ConFigurez des stratégies basées sur les besoins de votre entreprise pour suiv
   
 - [Vue d'ensemble de la sécurité des applications Cloud Office 365](office-365-cas-overview.md)
 
-- [Activer la sécurité des applications cloud Office 365](turn-on-office-365-cas.md)
+- [Activer la sécurité des applications Cloud Office 365](turn-on-office-365-cas.md)
 
 ## <a name="secure-mail-flow"></a>Flux de messagerie sécurisé
 
@@ -79,7 +78,7 @@ Implémentez l'ensemble riche des fonctionnalités dans Exchange Online Protecti
 
   - [Utiliser DMARC pour valider les messages électroniques dans Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
 
-## <a name="enable-mailbox-audit-logging"></a>Activer l'enregistrement d'audit de boîte aux lettres
+## <a name="enable-mailbox-audit-logging"></a>Activer l’enregistrement d’audit de boîte aux lettres
 
 Certains enregistrements d'audit sont automatiquement activés dans Office 365; Toutefois, l'enregistrement d'audit de boîte aux lettres n'est pas activé par défaut. Vous activez la journalisation d'audit pour toutes les boîtes aux lettres utilisateur dans Office 365 à l'aide d'Exchange Online PowerShell. Pour plus d'informations, consultez la rubrique [activation de l'audit des boîtes aux lettres dans Office 365](https://go.microsoft.com/fwlink/p/?LinkID=626109).
   
@@ -89,11 +88,11 @@ Pour plus d'informations sur les autres actions que vous pouvez effectuer avec l
   
 ## <a name="configure-data-loss-prevention-dlp"></a>Configurer la protection contre la perte de données (DLP)
 
-DLP vous permet d'identifier les données sensibles et de créer des stratégies qui permettent d'empêcher les utilisateurs de partager accidentellement ou intentionnellement les données. DLP fonctionne dans Office 365, y compris Exchange Online, SharePoint Online et OneDrive, afin que vos utilisateurs puissent rester conformes sans interrompre leur flux de travail. Pour plus d'informations, consultez la rubrique [vue d'ensemble des stratégies de protection contre la perte de données](data-loss-prevention-policies.md).
+DLP vous permet d'identifier les données sensibles et de créer des stratégies qui permettent d'empêcher les utilisateurs de partager accidentellement ou intentionnellement les données. DLP fonctionne dans Office 365, y compris Exchange Online, SharePoint Online et OneDrive, afin que vos utilisateurs puissent rester conformes sans interrompre leur flux de travail. Pour plus d’informations, reportez-vous à [Vue d’ensemble des stratégies de protection contre la perte de données](data-loss-prevention-policies.md).
   
 ## <a name="use-customer-lockbox"></a>Utiliser le référentiel sécurisé du client
 
-En tant qu'administrateur Office 365, vous pouvez utiliser le référentiel sécurisé du client pour contrôler la manière dont un ingénieur du support technique Microsoft accède à vos données au cours d'une session d'aide. Dans les cas où l'ingénieur a besoin d'accéder à vos données pour dépanner et résoudre un problème, le référentiel sécurisé du client vous permet d'approuver ou de refuser la demande d'accès. Si vous l'approuvez, l'ingénieur peut accéder aux données. Chaque demande a un délai d'expiration et une fois que le problème est résolu, la demande est fermée et l'accès est révoqué. Le référentiel sécurisé du client est inclus dans le plan Office 365 entreprise E5 ou vous pouvez acheter un abonnement distinct avec tout autre plan d'entreprise Office 365. Pour plus d'informations, reportez-vous à la rubrique [Office 365 customEr Lockbox demandes](https://support.office.com/article/36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
+En tant qu'administrateur Office 365, vous pouvez utiliser le référentiel sécurisé du client pour contrôler la manière dont un technicien du support technique Microsoft accède à vos données pendant une session d'aide. Dans le cas où l'ingénieur requiert l'accès à vos données pour résoudre un problème, le référentiel sécurisé vous permet d'approuver ou de rejeter la demande d'accès. Si vous l'approuvez, l'ingénieur peut accéder aux données. Chaque demande a un délai d'expiration, et une fois que le problème est résolu, la demande est fermée et l'accès révoqué. Le référentiel sécurisé du client est inclus dans le plan Office 365 entreprise E5 ou vous pouvez acheter un abonnement distinct avec tout autre plan d'entreprise Office 365. Pour plus d'informations, reportez-vous à la rubrique [Office 365 customEr Lockbox demandes](https://support.office.com/article/36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
   
 ## <a name="try-it-yourself"></a>Essayez-le
 <a name="SecureScore"> </a>
