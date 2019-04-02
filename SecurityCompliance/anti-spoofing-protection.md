@@ -3,7 +3,7 @@ title: Protection contre l’usurpation d’identité dans Office 365
 ms.author: tracyp
 author: MSFTtracyp
 manager: laurawi
-ms.date: 3/6/2019
+ms.date: 03/29/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Cet article explique comment Office 365 prévient les attaques par hameçonnage utilisant des domaines d’expéditeur falsifiés, ou usurpés. Pour ce faire, Microsoft analyse les messages et bloque ceux qui ne peuvent être authentifiés ni à l’aide de méthodes d’authentification standard du courrier, ni à l’aide d’autres techniques basées sur la réputation des expéditeurs. Cette modification a été apportée afin de réduire le nombre d’attaques par hameçonnage auxquelles sont exposées les organisations utilisant Office 365.
-ms.openlocfilehash: 00cf4d6ba0fe7bc9bc081466d7b23a8a9b75631e
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 533444d323728d2f238da409256f6547a5c8d209
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936794"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004261"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protection contre l’usurpation d’identité dans Office 365
 
@@ -410,34 +410,6 @@ Cette fonctionnalité est en cours de développement. À mesure que davantage de
   
 ![Expérience utilisateur possible pour autoriser un expéditeur usurpé](media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
   
-### <a name="understanding-how-spam-phishing-and-advanced-phishing-detections-are-combined"></a>Compréhension de la manière dont les détections de courrier indésirable, de hameçonnage et de hameçonnage avancé sont combinées
-
-Les organisations qui utilisent Exchange Online, avec ou sans Advanced Threat Protection, peuvent spécifier les actions à exécuter quand le service identifie des messages contenant des programmes malveillants, du courrier indésirable, du courrier fortement suspecté d’être indésirable, du hameçonnage et du courrier en nombre. Avec les stratégies anti-hameçonnage d’Advanced Threat Protection pour les clients d’Advanced Threat Protection, et le fait qu’un message puisse toucher plusieurs types de détections (par exemple de programmes malveillants, de hameçonnage et d’emprunt d’identité d’utilisateur), il peut y avoir de la confusion quant à la stratégie applicable.
-  
-En règle générale, la stratégie appliquée à un message est identifiée dans l’en-tête X-Forefront-Antispam-Report de la propriété CAT (Category).
-  
-|**Priorité**|**Stratégie**|**Catégorie**|**Où s’informer ?**|**S’applique à**|
-|:-----|:-----|:-----|:-----|:-----|
-|1  <br/> |Programme malveillant  <br/> |MALW  <br/> |[Stratégie anti-programme malveillant](configure-anti-malware-policies.md) <br/> |Toutes les organisations  <br/> |
-|2  <br/> |Hameçonnage  <br/> |PHSH  <br/> |[Configurer vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md) <br/> |Toutes les organisations  <br/> |
-|3  <br/> |Courrier fortement suspecté d’être indésirable  <br/> |HSPM  <br/> |[Configurer vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md) <br/> |Toutes les organisations  <br/> |
-|4  <br/> |Usurpation  <br/> |SPOOF  <br/> |[Stratégie anti-hameçonnage](https://go.microsoft.com/fwlink/?linkid=864553), [Veille contre l’usurpation d’identité](learn-about-spoof-intelligence.md) <br/> |Toutes les organisations  <br/> |
-|5  <br/> |Courrier indésirable  <br/> |SPM  <br/> |[Configurer vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md) <br/> |Toutes les organisations  <br/> |
-|6  <br/> |Courrier en nombre  <br/> |BULK  <br/> |[Configurer vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md) <br/> |Toutes les organisations  <br/> |
-|7  <br/> |Emprunt d’identité de domaine  <br/> |DIMP  <br/> |[Configuration de l’anti-hameçonnage d’Office 365 – Protection avancée contre les menaces et des stratégies anti-hameçonnage](set-up-anti-phishing-policies.md) <br/> |Organisations avec Advanced Threat Protection uniquement  <br/> |
-|8  <br/> |Emprunt d’identité d’utilisateur  <br/> |UIMP  <br/> |[Configuration de l’anti-hameçonnage d’Office 365 – Protection avancée contre les menaces et des stratégies anti-hameçonnage](set-up-anti-phishing-policies.md) <br/> |Organisations avec Advanced Threat Protection uniquement <br/> |
-
-Si vous avez plusieurs stratégies anti-hameçonnage différentes, celle qui a la priorité la plus élevée s’applique. Par exemple, supposons que vous ayez deux stratégies :
-
-|**Stratégie**|**Priorité**|**Emprunt d’identité d’utilisateur/de domaine**|**Détection d’usurpation d’identité**|
-|:-----|:-----|:-----|:-----|
-|A  <br/> |1  <br/> |Activé  <br/> |Désactivé  <br/> |
-|B  <br/> |2  <br/> |Désactivé  <br/> |Activé  <br/> |
-
-Si un message qui arrive est identifié à la fois comme usurpation d’identité et emprunt d’identité d’utilisateur, et si le même ensemble d’utilisateurs est étendu à la Stratégie A et à la Stratégie B, le message est traité comme une usurpation d’identité, mais aucune action n’est appliquée car la détection d’usurpation d’identité est désactivée et l’usurpation a une priorité plus élevée (4) que l’emprunt d’identité d’utilisateur (8).
-  
-Pour appliquer d’autres types de stratégies anti-hameçonnage, vous devez ajuster les paramètres définissant à qui les différentes stratégies s’appliquent.
-  
 ### <a name="legitimate-scenarios-to-disable-anti-spoofing"></a>Scénarios légitimes pour désactiver la détection d’usurpation d’identité
 
 La détection d’usurpation d’identité protégeant mieux les clients contre les attaques par hameçonnage, il est fortement déconseillé de la désactiver. Sa désactivation peut résoudre certains faux positifs à court terme, mais à long terme, vous serez exposé à davantage de risques. Le coût de la configuration de l’authentification côté expéditeur, ou de l’apport d’ajustements aux stratégies anti-hameçonnage, est généralement de quelques événements ponctuels ou ne requiert qu’une maintenance périodique minimale. Par contre, le coût de récupération après une attaque par hameçonnage dans le cadre de laquelle des données ont été exposées ou des ressources compromises est beaucoup plus élevé.
@@ -546,18 +518,8 @@ N’oubliez pas que cela ne doit s’appliquer qu’à des domaines soumis à un
 ### <a name="information-for-individual-users"></a>Informations pour les utilisateurs individuels
 
 Les utilisateurs individuels sont limités dans leurs modes d’interaction avec le conseil de sécurité de détection d’usurpation d’identité. Toutefois, vous disposez de plusieurs options pour résoudre les problèmes rencontrés dans les scénarios courants.
-  
-### <a name="common-scenario-1---mailbox-forwarding"></a>Scénario courant n°1 – Transfert de boîte aux lettres
-
-Si vous utilisez un autre service de courrier et transférez votre courrier vers Office 365 ou Outlook.com, il se peut que votre courrier soit marqué comme usurpant une identité et reçoive un conseil de sécurité rouge. Office 365 et Outlook.com prévoient de résoudre ce problème automatiquement lorsque le redirecteur est Outlook.com, Office 365, Gmail ou tout autre service utilisant le [protocole ARC](https://arc-spec.org). Cependant, en attendant le déploiement de ce correctif, les utilisateurs doivent utiliser la fonctionnalité Comptes connectés plutôt que l’option de transfert pour importer leurs messages directement.
-  
-Pour configurer des comptes connectés dans Office 365, sélectionnez l’icône d’engrenage dans l’angle supérieur droit de l’interface web d’Office 365 \> Courrier \> Courrier \> Comptes \> Comptes connectés.
-  
-![Office 365 – Option Comptes connectés](media/e8e841ca-8861-4d83-8506-2a0858c51010.jpg)
-  
-Dans Outlook.com, le processus est icône Engrenage \> Options \> Messagerie \> Comptes \> Comptes connectés.
-  
-### <a name="common-scenario-2---discussion-lists"></a>Scénario courant n°2 – Listes de discussion
+ 
+### <a name="common-scenario-1---discussion-lists"></a>Scénario courant n°1 - Listes de discussion
 
 Les listes de discussion présentent des problèmes de détection d’usurpation d’identité en raison de la manière dont elles transmettent le message et en modifient le contenu tout en conservant l’adresse De : d’origine.
   
@@ -659,7 +621,7 @@ Une fois que vous avez démarré avec un enregistrement SPF comprenant une strat
   
 ### <a name="what-if-you-are-the-owner-of-a-mailing-list"></a>Que se passe-t-il si vous êtes le propriétaire d’une liste de diffusion ?
 
-Voir la section [Scénario courant n°2 – Listes de discussion](#common-scenario-2---discussion-lists).
+Voir la section [Scénario courant n°1 - Listes de discussion](#common-scenario-1---discussion-lists).
   
 ### <a name="what-if-you-are-an-infrastructure-provider-such-as-an-internet-service-provider-isp-email-service-provider-esp-or-cloud-hosting-service"></a>Que se passe-t-il si vous êtes un fournisseur d’infrastructure tel qu’un fournisseur de services Internet (ISP), un fournisseur de services de courrier (ESP) ou un service d’hébergement dans le cloud ?
 

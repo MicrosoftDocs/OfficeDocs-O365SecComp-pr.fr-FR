@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous recherchez des informations sensibles dans du contenu, vous devez décrire ces informations dans ce que l’on appelle une règle. La protection contre la perte de données (DLP) comprend des règles pour les types d’informations sensibles les plus courants que vous pouvez utiliser immédiatement. Pour utiliser ces règles, vous devez les inclure dans une stratégie. Vous voudrez peut-être ajuster ces règles intégrées pour répondre aux besoins spécifiques de votre organisation, et vous pouvez le faire en créant un type d’informations sensibles personnalisé. Cette rubrique vous montre comment personnaliser le fichier XML qui contient la collection de règles existante pour détecter un plus large éventail d’informations potentielles relatives aux cartes de crédit.
-ms.openlocfilehash: c0a3fcb86acf1eaa5df72e385b21e8dba9b0d668
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 0acf10e52707c164c93fe442de287b08b3cf6804
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639071"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999607"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personnaliser un type d’informations sensibles intégré
 
@@ -74,7 +74,7 @@ Maintenant que vous avez localisé la définition de règle de numéro de carte 
   
 ## <a name="modify-the-xml-and-create-a-new-sensitive-information-type"></a>Modifier le XML et créer un type d’informations sensibles
 
-Tout d’abord, vous devez créer un type d’informations sensibles, car vous ne pouvez pas modifier directement les règles par défaut. Vous pouvez effectuer de nombreuses actions avec les types d’informations sensibles personnalisés, comme l’illustre la section [Créer un type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité Office 365 PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md). Pour cet exemple, nous allons rester simples et nous contenter de supprimer les preuves crédibles et d’ajouter des mots clés à la règle de numéro de carte de crédit.
+Tout d’abord, vous devez créer un type d’informations sensibles, car vous ne pouvez pas modifier directement les règles par défaut. Vous pouvez effectuer de nombreuses actions avec les types d’informations sensibles personnalisés, comme l’illustre la section [Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité](create-a-custom-sensitive-information-type-in-scc-powershell.md). Pour cet exemple, nous allons faire simple en nous contentant de supprimer les preuves corroborantes et d’ajouter des mots clés à la règle de numéro de carte de crédit.
   
 Toutes les définitions de règle XML sont construites sur le modèle général suivant. Vous devez copier et coller le XML de définition de numéro de carte de crédit dans le modèle, modifier certaines valeurs (remarquez les espaces réservés « . . ." dans l'exemple suivant), puis télécharger le XML modifié en tant que nouvelle règle pouvant être utilisée dans des stratégies.
   
