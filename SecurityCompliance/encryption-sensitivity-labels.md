@@ -3,7 +3,7 @@ title: Restriction de l’accès au contenu à l’aide du chiffrement dans les 
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 10/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de sensibilité, vous pouvez restreindre l’accès au contenu auquel l’étiquette sera appliquée. Les étiquettes de sensibilité peuvent utiliser le chiffrement pour protéger le contenu.
-ms.openlocfilehash: 6f8100ea0196cd1637bbad69757c9cc6e98f5bac
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+ms.openlocfilehash: 69deeed69a5b2970d387c30b01a062c6c068c567
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737694"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997040"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Restriction de l’accès au contenu à l’aide du chiffrement dans les étiquettes de sensibilité
 
@@ -36,7 +36,7 @@ Lorsqu’un document ou un e-mail est chiffré, l’accès à son contenu est re
 - Il reste chiffré quel que soit son emplacement, interne ou externe à votre organisation, même si le fichier est renommé.
 - Il est chiffré lorsqu’il est inactif (par exemple dans un compte OneDrive) et en transit (par exemple, un e-mail envoyé).
 
-Les paramètres de chiffrement sont disponibles dans le centre de conformité et sécurité Office 365 > page **Étiquettes** > onglet **Critère de diffusion** > **Créer une étiquette**.
+Les paramètres de chiffrement sont disponibles lorsque vous créez une étiquette de sensibilité dans le Centre de conformité Microsoft 365, dans le Centre de sécurité Microsoft 365 ou dans le Centre de sécurité et conformité Office 365.
 
 ## <a name="how-encryption-works"></a>Fonctionnement du chiffrement
 

@@ -429,7 +429,7 @@
 ### [Création de sites d’équipe dans un environnement de développement/test dans le cadre d’une campagne électorale](create-team-sites-in-a-political-campaign-dev-test-environment.md)
 ## [Sécuriser les fichiers et sites SharePoint Online](secure-sharepoint-online-sites-and-files.md)
 ### [Déployer des sites SharePoint Online pour trois niveaux de protection](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md)
-### [Protéger les fichiers SharePoint Online avec des étiquettes Office 365 et la protection contre la perte de données](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
+### [Protéger les fichiers SharePoint Online avec des étiquettes de rétention et la protection contre la perte de données (DLP)](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
 ### [Protéger les fichiers SharePoint Online avec Azure Information Protection](protect-sharepoint-online-files-with-azure-information-protection.md)
 ## [Sites d’équipe SharePoint Online isolés](isolated-sharepoint-online-team-sites.md)
 ### [Conception d’un site d’équipe SharePoint Online isolé](design-an-isolated-sharepoint-online-team-site.md)

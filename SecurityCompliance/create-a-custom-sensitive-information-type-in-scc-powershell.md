@@ -1,5 +1,5 @@
 ---
-title: Créer un type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité Office 365 PowerShell
+title: Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -12,15 +12,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez comment créer et importer un type d’informations sensibles personnalisé pour DLP dans le Centre de Conformité et Sécurité Office 365.
-ms.openlocfilehash: bf917ac40f98ec19332aac90f2d954d44b9a834d
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+description: Apprenez à créer et importer un type d’informations sensibles personnalisé pour la protection contre la perte de données dans le Centre de sécurité et conformité.
+ms.openlocfilehash: 7a21b62ddaf4d24793d4479d0d6270a18cc50532
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639121"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999837"
 ---
-# <a name="create-a-custom-sensitive-information-type-in-office-365-security--compliance-center-powershell"></a>Création d’un type personnalisé d’informations sensibles dans le Centre de Conformité et Sécurité Office 365 PowerShell
+# <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité
 
 La protection contre la perte de données (DLP) dans Office 365 inclut de nombreux [types d’informations sensibles](what-the-sensitive-information-types-look-for.md) intégrés qui sont prêts à l’emploi dans vos stratégies DLP. Ces types intégrés permettent d’identifier et de protéger les numéros de carte de crédit, les numéros de compte bancaire, les numéros de passeport, et bien plus encore. 
   
@@ -329,7 +329,7 @@ Pour télécharger votre package de règles, procédez comme suit :
   
 1. Enregistrez-le en tant que fichier .xml avec le codage Unicode.
     
-2. [Connexion au Centre de Conformité et Sécurité Office 365 PowerShell ](http://go.microsoft.com/fwlink/p/?LinkID=799771)
+2. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](http://go.microsoft.com/fwlink/p/?LinkID=799771)
     
 3. Utilisez la syntaxe suivante :
 
@@ -419,7 +419,7 @@ Dans le Centre de Conformité et de sécurité PowerShell, il existe deux métho
 
 - **Supprimer un package de règles personnalisé et tous les types d’informations sensibles personnalisés qu’il contient**: cette méthode est présentée dans cette section.
 
-1. [Connexion au Centre de Conformité et Sécurité Office 365 PowerShell ](http://go.microsoft.com/fwlink/p/?LinkID=799771)
+1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](http://go.microsoft.com/fwlink/p/?LinkID=799771)
 
 2. Pour supprimer un package de règles personnalisé, utilisez la syntaxe suivante :
 
@@ -469,7 +469,7 @@ Dans le Centre de Conformité et sécurité PowerShell ,modifier un type d’inf
 
 3. Importer le fichier XML mis à jour vers le package de règles existant.
 
-Afin de vous connecter au Centre  de Conformité et de Sécurité PowerShell, voir[Se connecter au Centre de Conformité et de Sécurité Office 365 PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771).
+Pour vous connecter à l’interface PowerShell du Centre de sécurité et conformité, consultez [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](http://go.microsoft.com/fwlink/p/?LinkID=799771).
 
 #### <a name="step-1-export-the-existing-rule-package-to-an-xml-file"></a>Étape 1 : Exporter le package de règles existant vers un fichier XML
 

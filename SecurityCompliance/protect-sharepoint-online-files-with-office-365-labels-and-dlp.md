@@ -1,9 +1,9 @@
 ---
-title: Protéger les fichiers SharePoint Online avec des étiquettes Office 365 et la protection contre la perte de données
+title: Protéger les fichiers SharePoint Online avec des étiquettes de rétention et la protection contre la perte de données (DLP)
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/12/2018
+ms.date: 03/29/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,34 +16,34 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
-description: 'Résumé : Appliquez des étiquettes Office 365 et des stratégies de protection contre la perte de données pour des sites d’équipe SharePoint Online, avec différents niveaux de protection des informations.'
-ms.openlocfilehash: 759722e7e3ba7c07b869d56a271af7d40692d39e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 'Résumé : appliquez des étiquettes de rétention et des stratégies DLP à des sites d’équipe SharePoint Online, avec différents niveaux de protection des informations.'
+ms.openlocfilehash: be9fe776353af4c420a93e38a0906eeb674ef8a7
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214435"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999157"
 ---
-# <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Protéger les fichiers SharePoint Online avec des étiquettes Office 365 et la protection contre la perte de données
+# <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Protéger les fichiers SharePoint Online avec des étiquettes de rétention et la protection contre la perte de données (DLP)
 
- **Résumé :** Appliquez des étiquettes Office 365 et des stratégies de protection contre la perte de données pour des sites d’équipe SharePoint Online, avec différents niveaux de protection des informations.
+ **Résumé :** appliquez des étiquettes de rétention et des stratégies DLP à des sites d’équipe SharePoint Online, avec différents niveaux de protection des informations.
   
-Suivez les étapes décrites dans cet article pour créer et déployer des étiquettes Office 365 et des stratégies DLP pour des sites d’équipe SharePoint Online de référence, sensibles et hautement confidentiels. Pour en savoir plus sur ces trois niveaux de protection, consultez la rubrique [Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md).
+Suivez les étapes décrites dans cet article afin de créer et de déployer des étiquettes de rétention et des stratégies DLP pour des sites d’équipe SharePoint Online de base, sensibles et hautement confidentiels. Pour plus d’informations sur ces trois niveaux de protection, consultez [Sécuriser des sites et des fichiers SharePoint Online](secure-sharepoint-online-sites-and-files.md).
   
 ## <a name="how-this-works"></a>Procédure
-1. Créez les étiquettes de votre choix et publiez-les. La publication de ces étiquettes peut prendre jusqu’à 12 heures.
-2. Pour les sites SharePoint souhaités, modifiez les paramètres de bibliothèque de documents pour appliquer une étiquette à des éléments dans la bibliothèque.
-3. Créez des stratégies DLP pour exécuter des actions en fonction des étiquettes.
+1. Créez les étiquettes de rétention de votre choix et publiez-les. La publication peut prendre jusqu’à 12 heures.
+2. Pour les sites SharePoint souhaités, modifiez les paramètres de la bibliothèque de documents afin d’appliquer les étiquettes de rétention de votre choix aux éléments de la bibliothèque.
+3. Créez des stratégies DLP pour prendre des mesures en fonction des étiquettes de rétention.
 
-Lorsque les utilisateurs ajoutent un document à la bibliothèque, le document reçoit l’étiquette affectée par défaut. Les utilisateurs peuvent modifier l’étiquette si nécessaire. Lorsqu’un utilisateur partage un document en dehors de l’organisation, DLP vérifie si une étiquette est affectée et exécute l’action appropriée si une stratégie DLP correspond à l’étiquette. DLP vérifie l’existence d’autres correspondances de stratégie, comme la protection des fichiers avec des numéros de carte bancaire si ce type de stratégie est configuré. 
+Lorsque des utilisateurs ajoutent un document à la bibliothèque, celui-ci reçoit par défaut l’étiquette de rétention attribuée. Si nécessaire, les utilisateurs peuvent changer l’étiquette. Lorsqu’un utilisateur partage un document en dehors de l’organisation, DLP vérifie si une étiquette est attribuée et prend les mesures qui s’imposent si une stratégie DLP correspond à l’étiquette. DLP recherche également les correspondances liées à d’autres stratégies, comme la protection des fichiers avec des numéros de carte de crédit si ce type de stratégie est configuré. 
 
-## <a name="office-365-labels-for-your-sharepoint-online-sites"></a>Étiquettes Office 365 pour vos sites SharePoint Online
+## <a name="retention-labels-for-your-sharepoint-online-sites"></a>Étiquettes de rétention pour vos sites SharePoint Online
 
-Il existe trois phases pour créer et attribuer des étiquettes Office 365 à des sites d’équipe SharePoint Online.
+La création, puis l’attribution d’étiquettes de rétention à des sites d’équipe SharePoint Online se déroulent en trois phases.
   
-### <a name="phase-1-determine-the-office-365-label-names"></a>Phase 1 : Déterminer les noms des étiquettes Office 365
+### <a name="phase-1-determine-the-retention-label-names"></a>Phase 1 : Déterminer les noms des étiquettes de rétention
 
-Dans cette phase, vous déterminez les noms de vos étiquettes Office 365 pour les quatre niveaux de protection des informations appliqués aux sites d’équipe SharePoint Online. Le tableau suivant répertorie les noms recommandés pour chaque niveau.
+Au cours de cette phase, vous déterminez les noms de vos étiquettes de rétention pour les quatre niveaux de protection des informations appliqués aux sites d’équipe SharePoint Online. Le tableau suivant répertorie les noms recommandés pour chaque niveau.
   
 |**Niveau de protection du site d’équipe SharePoint Online**|**Nom de l’étiquette**|
 |:-----|:-----|
@@ -52,52 +52,36 @@ Dans cette phase, vous déterminez les noms de vos étiquettes Office 365 pour l
 |Sensible  <br/> |Sensible  <br/> |
 |Hautement confidentiel  <br/> |Hautement confidentiel  <br/> |
    
-### <a name="phase-2-create-the-office-365-labels"></a>Phase 2 : Créer les étiquettes Office 365
+### <a name="phase-2-create-the-retention-labels"></a>Phase 2 : Créer les étiquettes de rétention
 
-Dans cette phase, vous créez puis vous publiez vos étiquettes déterminées pour les différents niveaux de protection des informations.
+Au cours de cette phase, vous créez puis vous publiez les étiquettes que vous avez déterminées pour les différents niveaux de protection des informations.
   
-Pour créer les étiquettes, vous pouvez utiliser le Centre d’administration Office 365 ou Microsoft PowerShell.
-  
-### <a name="create-office-365-labels-with-the-office-365-admin-center"></a>Créer des étiquettes Office 365 avec le Centre d’administration Office 365
+1. Connectez-vous au [Centre de sécurité Microsoft 365](https://security.microsoft.com) avec un compte disposant du rôle Administrateur de la sécurité ou Administrateur de la société.
+    
+2. Sous l’onglet **Accueil - Sécurité Microsoft 365** de votre navigateur, cliquez sur **Classifications > Étiquettes**.
+    
+3. Cliquez sur **Étiquettes de rétention > Créer une étiquette**.
+    
+4. Dans le volet **Nommer l’étiquette**, entrez le nom de l’étiquette ainsi qu’une description destinée aux administrateurs et aux utilisateurs, puis cliquez sur **Suivant**.
 
-1. Connectez-vous au portail Office 365 avec un compte disposant du rôle Administrateur de sécurité ou Administrateur d’entreprise. Pour obtenir de l’aide, consultez la rubrique [Se connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+5. Dans le volet **Descripteurs de plan de gestion de fichiers**, complétez les champs requis, puis cliquez sur **Suivant**.
     
-2. Sous l’onglet **Accueil Microsoft Office**, cliquez sur la vignette **Administration**.
+6. Dans le volet **Paramètres d’étiquette**, si nécessaire, définissez **Rétention** sur **Activé** et configurez les paramètres de rétention. Cliquez sur **Suivant**.
     
-3. Sous le nouvel onglet **Centre d’administration Office** de votre navigateur, cliquez sur **Centres d’administration > Sécurité &amp; conformité**.
+7. Dans le volet **Vérifier vos paramètres**, cliquez sur **Créer l’étiquette**.
     
-4. Sous le nouvel onglet **Accueil - Sécurité &amp; conformité de votre navigateur**, cliquez sur **Classifications > Étiquettes**.
+8. Pour vos autres étiquettes, cliquez sur **Créer une étiquette**, puis répétez les étapes 4 à 7.
     
-5. Depuis le volet Office **Accueil > Étiquettes**, cliquez sur l’onglet **Rétention**, puis cliquez sur **Créer une étiquette**.
-    
-6. Dans le volet Office **Nom de l’étiquette**, entrez le nom de l’étiquette ainsi qu’une description pour les administrateurs et les utilisateurs, puis cliquez sur **Suivant**.
-
-7. Dans le volet **Paramètres de l’étiquette**, cliquez sur **Suivant**.
-    
-8. Dans le volet Office **Vérifier vos paramètres**, cliquez sur **Créer**, puis sur **Fermer**.
-    
-9. Répétez les étapes 5 à 8 pour les autres étiquettes.
-    
-### <a name="create-office-365-labels-with-powershell"></a>Créer des étiquettes Office 365 avec PowerShell
-
-1. [Connectez-vous au Centre Sécurité &amp; conformité d’Office 365 en utilisant PowerShell](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409) à distance, et spécifiez les informations d’identification d’un compte disposant du rôle Administrateur de la sécurité ou Administrateur de la société.
-    
-2. Complétez la liste des noms d’étiquette, puis exécutez ces commandes à l’invite de commandes PowerShell :
-    
-  ```
-  $labelNames=@(<list of label names, each enclosed in quotes and separated by commas>)
-ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
-  ```
 
 ### <a name="publish-your-new-labels"></a>Publier vos nouvelles étiquettes
 
-Ensuite, procédez comme suit pour publier les nouvelles étiquettes Office 365.
+Procédez comme suit pour publier les nouvelles étiquettes de rétention.
   
-1. Dans le volet Office **Accueil > Étiquettes** du Centre de sécurité et conformité, cliquez sur l’onglet **Rétention**, puis sur &amp;**Publier les étiquettes**.
+1. Depuis le volet **Étiquettes**, cliquez sur l’onglet **Étiquettes de rétention**, puis sur **Publier les étiquettes**.
     
 2. Dans le volet **Choisir les étiquettes à publier**, cliquez sur **Choisir les étiquettes à publier**.
     
-3. Dans le volet **Choisir des étiquettes**, cliquez sur **Ajouter** et sélectionnez les quatre étiquettes.
+3. Dans le volet **Choisir des étiquettes**, cliquez sur **Ajouter**, sélectionnez les quatre étiquettes, puis cliquez à nouveau sur **Ajouter**.
     
 4. Cliquez sur **Terminé**.
     
@@ -110,13 +94,13 @@ Ensuite, procédez comme suit pour publier les nouvelles étiquettes Office 365.
 8. Dans le volet **Vérifier vos paramètres**, cliquez sur **Publier les étiquettes**, puis sur **Fermer**.
 
     
-### <a name="phase-3-apply-the-office-365-labels-to-your-sharepoint-online-sites"></a>Phase 3 : Appliquer les étiquettes Office 365 à vos sites SharePoint Online
+### <a name="phase-3-apply-the-retention-labels-to-your-sharepoint-online-sites"></a>Phase 3 : Appliquer les étiquettes de rétention à vos sites SharePoint Online
 
-Utilisez ces étapes pour appliquer les étiquettes Office 365 aux dossiers de documents de vos sites d’équipe SharePoint Online.
+Procédez comme suit pour appliquer les étiquettes de rétention aux dossiers de documents de vos sites d’équipe SharePoint Online.
   
-1. Sous l’onglet **Accueil Microsoft Office** de votre navigateur, cliquez sur la vignette **SharePoint**.
+1. Connectez-vous au [portail Office 365](https://www.office.com) et cliquez sur l’application **SharePoint**.
     
-2. Sous le nouvel onglet **SharePoint** de votre navigateur, cliquez sur un site auquel vous devez affecter une étiquette Office 365.
+2. Sous le nouvel onglet **SharePoint** de votre navigateur, cliquez sur un site auquel vous devez attribuer une étiquette de rétention.
     
 3. Sous le nouvel onglet du Site SharePoint de votre navigateur, cliquez sur **Documents**.
     
@@ -124,43 +108,41 @@ Utilisez ces étapes pour appliquer les étiquettes Office 365 aux dossiers de d
     
 5. Sous **Autorisations et gestion**, cliquez sur **Appliquer l’étiquette aux éléments de cette bibliothèque**.
     
-6. Dans **Paramètres-Appliquer une étiquette**, sélectionnez l’étiquette de votre choix, puis cliquez sur **Enregistrer**.
+6. Dans **Paramètres-Appliquer une étiquette**, sélectionnez l’étiquette de rétention qui convient, puis cliquez sur **Enregistrer**.
     
 7. Fermez l’onglet du site SharePoint Online.
     
-8. Répétez les étapes 3 à 8 pour affecter des étiquettes Office 365 à vos autres sites SharePoint Online.
+8. Répétez les étapes 2 à 8 pour attribuer des étiquettes de rétention à vos autres sites SharePoint Online.
     
 Voici la configuration finale.
   
-![Étiquettes Office 365 pour les quatre types de sites d’équipe SharePoint Online.](media/e0a4fdd2-1c30-4d93-8af4-a6f0c6c29966.png)
+![Étiquettes de rétention des quatre types de sites d’équipe SharePoint Online.](media/e0a4fdd2-1c30-4d93-8af4-a6f0c6c29966.png)
   
 ## <a name="dlp-policies-for-your-sharepoint-online-sites"></a>Stratégies de protection contre la perte de données pour vos sites SharePoint Online
 
 Suivez ces étapes pour configurer une stratégie DLP qui avertit les utilisateurs lorsqu’ils partagent un document sur un site d’équipe sensible SharePoint Online externe à l’organisation.
 
-1. Sous l’onglet **Accueil Microsoft Office**, cliquez sur la vignette **Administration**.
+1. Connectez-vous au [portail de conformité Microsoft 365](https://compliance.microsoft.com/) avec un compte disposant du rôle Administrateur de la sécurité ou Administrateur de la société.
     
-2. Sous le nouvel onglet **Centre d’administration Office** de votre navigateur, cliquez sur **Centres d’administration > Sécurité &amp; conformité**.
+2. Sous le nouvel onglet **Conformité Microsoft 365** de votre navigateur, cliquez sur **Stratégie > Protection contre la perte de données**.
     
-3. Sous le nouvel onglet **Sécurité &amp; conformité** de votre navigateur, cliquez sur **Protection contre la perte de données > Stratégie**.
+3. Dans le volet **Accueil > Protection contre la perte de données**, cliquez sur **Créer une stratégie**.
     
-4. Dans le volet **Protection contre la perte de données**, cliquez sur **+ Créer une stratégie**.
-    
-5. Dans le volet **Utiliser un modèle ou créer une stratégie personnalisée**, cliquez sur **Personnalisé**, puis sur **Suivant**.
+4. Dans le volet **Commencez en utilisant un modèle ou créez une stratégie personnalisée**, cliquez sur **Personnalisé**, puis sur **Suivant**.
     
 5. Dans le volet **Nom de votre stratégie**, entrez le nom de la stratégie DLP sensible dans **Nom**, puis cliquez sur **Suivant**.
     
-6. Dans le volet **Choisir des emplacements**, cliquez sur **Me laisser choisir des emplacements spécifiques**, puis cliquez sur **Suivant**.
+6. Dans le volet **Choisir les emplacements**, cliquez sur **Me laisser choisir des emplacements spécifiques**, puis sur **Suivant**.
     
-7. Dans la liste des emplacements, désactivez les emplacements **Messagerie Exchange** et **Comptes OneDrive**, puis cliquez sur **Suivant**.
+7. Dans la liste des emplacements, désactivez les emplacements **Courrier Exchange**, **Comptes OneDrive** et **Messages de conversations et de canaux Teams**, puis cliquez sur **Suivant**.
     
-8. Dans le volet **Personnaliser les types d’informations sensibles que vous voulez protéger**, cliquez sur **Modifier**.
+8. Dans le volet **Personnalisez le type de contenu que vous voulez protéger**, cliquez sur **Modifier**.
     
-9. Dans le volet**Choisir les types de contenu à protéger**, cliquez sur **Ajouter** dans la zone de liste déroulante, puis cliquez sur **Étiquettes**.
+9. Dans le volet **Choisissez les types de contenu à protéger**, cliquez sur **Ajouter** dans la zone déroulante, puis sélectionnez **Étiquettes de rétention**.
     
-10. Dans le volet **Étiquettes**, cliquez sur **+ Ajouter**, sélectionnez l’étiquette **Sensible**, cliquez sur **Ajouter**, puis sur **Terminé**.
+10. Dans le volet **Étiquettes de rétention**, cliquez sur **Ajouter**, sélectionnez l’étiquette **Sensible**, puis cliquez sur **Ajouter** et sur **Terminé**.
     
-11. Dans le volet**Choisir les types de contenu à protéger**, cliquez sur **Enregistrer**.
+11. Dans le volet **Choisir les types de contenu à protéger**, cliquez sur **Enregistrer**.
     
 12. Dans le volet **Personnaliser les types d’informations sensibles que vous souhaitez protéger**, cliquez sur **Suivant**.
 
@@ -185,31 +167,29 @@ Suivez ces étapes pour configurer une stratégie DLP qui avertit les utilisate
     
 Voici le résultat de votre configuration pour les sites d’équipe SharePoint Online sensibles.
   
-![Stratégie DLP pour un site d’équipe SharePoint Online isolé utilisant l’étiquette Office 365 Données sensibles.](media/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
+![Stratégie DLP pour un site d’équipe SharePoint Online isolé utilisant l’étiquette de rétention Sensible.](media/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
   
 Utilisez ces étapes pour configurer une stratégie de protection contre la perte de données qui bloque les utilisateurs quand ils partagent un document sur un site d’équipe SharePoint Online hautement confidentiel à l’extérieur de l’organisation.
   
-1. Sous l’onglet **Accueil Microsoft Office** de votre navigateur, cliquez sur la vignette **Sécurité &amp; conformité**.
+1. Sous le nouvel onglet **Conformité Microsoft 365** de votre navigateur, cliquez sur **Stratégie > Protection contre la perte de données**.
     
-2. Sous le nouvel onglet **Sécurité &amp; conformité** de votre navigateur, cliquez sur **Protection contre la perte de données > Stratégie**.
+2. Dans le volet **Protection contre la perte de données**, cliquez sur **Créer une stratégie**.
     
-3. Dans le volet **Protection contre la perte de données**, cliquez sur **+ Créer une stratégie**.
+3. Dans le volet **Utiliser un modèle ou créer une stratégie personnalisée**, cliquez sur **Personnalisé**, puis sur **Suivant**.
     
-4. Dans le volet **Utiliser un modèle ou créer une stratégie personnalisée**, cliquez sur **Personnalisé**, puis sur **Suivant**.
+4. Dans le volet **Nom de votre stratégie**, entrez le nom de la stratégie DLP hautement sensible dans **Nom**, puis cliquez sur **Suivant**.
     
-5. Dans le volet **Nom de votre stratégie**, entrez le nom de la stratégie DLP hautement sensible dans **Nom**, puis cliquez sur **Suivant**.
+5. Dans le volet **Choisir des emplacements**, cliquez sur **Me laisser choisir des emplacements spécifiques**, puis cliquez sur **Suivant**.
     
-6. Dans le volet **Choisir des emplacements**, cliquez sur **Me laisser choisir des emplacements spécifiques**, puis cliquez sur **Suivant**.
+6. Dans la liste des emplacements, désactivez les emplacements **Courrier Exchange**, **Comptes OneDrive** et **Messages de conversations et de canaux Teams**, puis cliquez sur **Suivant**.
     
-7. Dans la liste des emplacements, désactivez les emplacements **Messagerie Exchange** et **Comptes OneDrive**, puis cliquez sur **Suivant**.
+7. Dans le volet **Personnalisez les types d’informations sensibles que vous voulez protéger**, cliquez sur **Modifier**.
     
-8. Dans le volet **Personnaliser les types d’informations sensibles que vous voulez protéger**, cliquez sur **Modifier**.
+8. Dans le volet **Choisissez les types de contenu à protéger**, cliquez sur **Ajouter** dans la zone déroulante, puis sélectionnez **Étiquettes de rétention**.
     
-9. Dans le volet **Choisir les types de contenu à protéger**, cliquez sur **Ajouter** dans la zone de liste déroulante, puis cliquez sur **Étiquettes**.
+9. Dans le volet **Étiquettes de rétention**, cliquez sur **Ajouter**, sélectionnez l’étiquette **Hautement confidentiel**, puis cliquez sur **Ajouter** et sur **Terminé**.
     
-10. Dans le volet **Étiquettes**, cliquez sur **+ Ajouter**, sélectionnez l’étiquette **Hautement confidentiel**, cliquez sur **Ajouter**, puis sur **Terminé**.
-    
-11. Dans le volet **Choisir les types de contenu à protéger**, cliquez sur **Enregistrer**.
+10. Dans le volet **Choisir les types de contenu à protéger**, cliquez sur **Enregistrer**.
     
 12. Dans le volet **Personnaliser les types d’informations sensibles que vous voulez protéger**, cliquez sur **Suivant**.
     
@@ -233,7 +213,7 @@ Utilisez ces étapes pour configurer une stratégie de protection contre la pert
     
 Voici le résultat de votre configuration pour les sites d’équipe SharePoint Online hautement confidentiels.
   
-![Stratégie DLP pour un site d’équipe SharePoint Online isolé utilisant l’étiquette Office 365 Hautement confidentiel.](media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
+![Stratégie DLP pour un site d’équipe SharePoint Online isolé utilisant l’étiquette de rétention Hautement confidentiel.](media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
   
 ## <a name="next-step"></a>Étape suivante
 
@@ -242,8 +222,6 @@ Voici le résultat de votre configuration pour les sites d’équipe SharePoint 
 ## <a name="see-also"></a>Voir aussi
 
 [Sécuriser les fichiers et sites SharePoint Online](secure-sharepoint-online-sites-and-files.md)
-  
-[Sécuriser les sites SharePoint Online dans un environnement de développement/test](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
   
 [Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   

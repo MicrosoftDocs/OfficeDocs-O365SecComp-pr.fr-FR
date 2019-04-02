@@ -12,13 +12,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez comment créer, modifier, supprimer et tester des types d’informations sensibles personnalisés pour DLP dans l’interface utilisateur graphique dans le Centre de sécurité et conformité Office 365.
-ms.openlocfilehash: afc5479f08909020d04768c9ca9c20438472b92d
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+description: Apprenez à créer, modifier, supprimer et tester des types d’informations sensibles personnalisés pour la protection contre la perte de données dans l’interface utilisateur graphique du Centre de sécurité et conformité.
+ms.openlocfilehash: de7bbc8ee624fe9468dc64a9811db31d529984bf
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639061"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999087"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>Créer un type d’informations sensibles personnalisé
 
@@ -40,13 +40,13 @@ Les éléments fondamentaux d’un type d’informations sensibles personnalisé
 
   Lorsqu’il est satisfait, un modèle renvoie un nombre et un niveau de confiance, que vous pouvez utiliser dans les conditions dans votre stratégie DLP. Lorsque vous ajoutez une condition de détection d’un type d’informations sensibles à une stratégie DLP, vous pouvez modifier le nombre et le niveau de confiance comme illustré dans le diagramme suivant :
 
-    ![Nombre d’instances et options de précision des résultats](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+    ![Nombre d’instances et options de précision de correspondance](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 
-Vous disposez des options suivantes pour créer des types d’informations sensibles personnalisés dans le Centre de Conformité et Sécurité Office 365 :
+Pour créer des types d’informations sensibles personnalisés dans le Centre de sécurité et conformité, vous disposez des options suivantes :
 
 - **Utiliser l’interface utilisateur** : cette méthode est plus facile et plus rapide, mais vous disposez de moins d’options de configuration que PowerShell. Le reste de cette rubrique décrit ces procédures.
 
-- **Utiliser PowerShell** : cette méthode exige que vous commenciez par créer un fichier XML (appelé _package de règles_) contenant un ou plusieurs types d’informations sensibles, puis que vous utilisiez PowerShell pour importer le package de règles (l’importation du package de règles est simple par rapport à la création du package de règles). Cette méthode est beaucoup plus complexe que l’interface utilisateur, mais vous disposez de davantage d’options de configuration. Pour obtenir des instructions, consultez la rubrique [Créer un type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité Office 365 PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
+- **Utiliser PowerShell** : pour utiliser cette méthode, vous devez commencer par créer un fichier XML (appelé _package de règles_) contenant un ou plusieurs types d’informations sensibles, puis utiliser PowerShell pour importer le package de règles (l’importation de celui-ci est simple par rapport à la création d’un nouveau package de règles). Cette méthode est beaucoup plus complexe que l’utilisation de l’interface utilisateur, mais vous disposez d’un plus grand nombre d’options de configuration. Pour obtenir des instructions, consultez la rubrique [Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 
 Les différences clés sont décrites dans le tableau suivant :
 
@@ -58,9 +58,9 @@ Les différences clés sont décrites dans le tableau suivant :
 |Types d’informations sensibles personnalisés ajoutées au package de règles nommé Microsoft.SCCManaged.CustomRulePack|Vous pouvez créer jusqu'à 10 packages de règles contenant des types d’informations sensibles personnalisés.|
 |La recherche par modèle exige la détection du modèle principal et de toutes les preuves justificatives (l’opérateur implicite AND est utilisé).|La recherche par modèle exige la détection du modèle principal et d’un nombre configurable de preuves justificatives (les opérateurs implicites AND et OR sont utilisés).|
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Pour ouvrir le Centre de conformité et sécurité, consultez la rubrique [Accéder au centre de conformité et sécurité d’Office 365](go-to-the-securitycompliance-center.md).
+- Pour ouvrir le Centre de sécurité et conformité, consultez la rubrique [Accéder au Centre de sécurité et conformité](go-to-the-securitycompliance-center.md).
 
 - Les types d’informations sensibles personnalisés exigent des connaissances relatives aux expressions régulières (RegEx). Pour plus d’informations sur le moteur Boost.RegEx (anciennement appelé RegEx++) utilisé pour le traitement du texte, consultez l’article [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
 

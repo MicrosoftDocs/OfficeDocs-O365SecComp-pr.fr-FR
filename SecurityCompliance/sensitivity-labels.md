@@ -3,7 +3,7 @@ title: Vue d’ensemble des étiquettes de niveau de confidentialité
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 10/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -12,19 +12,19 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Avec les étiquettes de niveau de confidentialité dans Office 365, vous pouvez classer et protéger le contenu sensible, tout en vous assurant que la productivité et la possibilité de collaboration des membres de votre organisation ne sont pas altérées. Vous pouvez utiliser les étiquettes de niveau de confidentialité afin d’appliquer des paramètres de protection, comme le chiffrement ou les filigranes, sur le contenu étiqueté.
-ms.openlocfilehash: ceb3373f6de24d52f8e65c322a9e7eca4fe92618
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+description: Avec les étiquettes de sensibilité, vous pouvez classer et protéger le contenu sensible, tout en vous assurant que la productivité et la possibilité de collaboration des membres de votre organisation ne sont pas altérées. Vous pouvez utiliser les étiquettes de sensibilité afin d’appliquer des paramètres de protection, comme le chiffrement ou les filigranes, sur le contenu étiqueté.
+ms.openlocfilehash: f8442bc9fbeb32cb71fb46c4e5a54c9e1f0dce4b
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737684"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999737"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Vue d’ensemble des étiquettes de niveau de confidentialité
 
 Pour mener à bien leur travail, les membres de votre organisation doivent collaborer avec d’autres personnes au sein de l’organisation et en dehors de celle-ci. Cela signifie que le contenu n’est plus protégé par un pare-feu : il est en itinérance partout, sur les appareils, applications et services. Dans ce cas, vous devez sécuriser et protéger l’itinérance, tout en respectant les stratégies métier et de conformité de votre organisation.
 
-Avec les étiquettes de niveau de confidentialité dans Office 365, vous pouvez classer et protéger le contenu sensible, tout en vous assurant que la productivité et la possibilité de collaboration des membres de votre organisation ne sont pas altérées.
+Avec les étiquettes de sensibilité, vous pouvez classer et protéger le contenu sensible, tout en vous assurant que la productivité et la possibilité de collaboration des membres de votre organisation ne sont pas altérées.
 
 ![Étiquette de niveau de confidentialité dans le ruban Excel et sur la barre d’état](media/Sensitivity_label_in_Excel.png)
 
@@ -44,11 +44,9 @@ Vous pouvez utiliser les étiquettes de niveau de confidentialité aux fins suiv
     
 Dans tous ces cas, les étiquettes de niveau de confidentialité dans Office 365 vous aident à entreprendre les bonnes actions sur le contenu approprié. Grâce aux étiquettes de niveau de confidentialité, vous pouvez classer les données au sein de votre organisation et appliquer des paramètres de protection en fonction de cette classification.
   
-Vous créez les étiquettes de niveau de confidentialité dans le Centre de sécurité et conformité d’Office 365. Le Centre de sécurité et conformité est désormais le seul endroit dédié à la configuration des stratégies et des étiquettes de niveau de confidentialité dans Azure Information Protection et Office 365. Ces étiquettes de niveau de confidentialité peuvent être utilisées par Azure Information Protection, par les applications Office et par les services Office 365.
+Pour créer des étiquettes de sensibilité, vous devez accéder au Centre de conformité Microsoft 365, au Centre de sécurité Microsoft 365 ou au Centre de sécurité et conformité Office 365. Ces étiquettes peuvent être utilisées par Azure Information Protection, les applications Office et les services Office 365.
 
-Pour les clients Azure Information Protection, vous pouvez utiliser vos étiquettes Azure Information Protection dans le Centre de sécurité et conformité. Les étiquettes sont synchronisées avec le portail Azure au cas où vous choisissiez d’effectuer une configuration supplémentaire ou avancée. **Les étiquettes Azure Information Protection et les étiquettes de niveau de confidentialité Office 365 sont entièrement compatibles.** Cela signifie, par exemple, que si vous avez du contenu étiqueté par Azure Information Protection, vous n’avez pas besoin de reclasser ou réétiqueter le contenu.
-
-![Onglet Niveau de confidentialité sur la page Étiquettes du Centre de sécurité et conformité](media/Sensitivity_label_tab_on_Labels_page.png)
+Si vous êtes client d’Azure Information Protection, vous pouvez utiliser vos étiquettes Azure Information Protection dans les autres centres d’administration. Celles-ci seront synchronisées avec le portail Azure si vous choisissez d’effectuer une configuration supplémentaire ou avancée. **Les étiquettes Azure Information Protection et les étiquettes de sensibilité Office 365 sont entièrement compatibles entre elles.** Cela signifie, par exemple, que si vous avez du contenu étiqueté par Azure Information Protection, vous n’avez pas besoin de reclassifier ou de ré-étiqueter votre contenu.
 
 ## <a name="what-a-sensitivity-label-is"></a>Qu’est-ce qu’une étiquette de niveau de confidentialité ?
 
@@ -84,13 +82,13 @@ Une fois qu’une étiquette de niveau de confidentialité est appliquée à un 
     ![Invitation de mise à attribuer une étiquette requise](media/Sensitivity_label_Prompt_for_required_label.png)
 
 
-Toutes ces options sont disponibles lorsque vous créez une étiquette dans le Centre de sécurité et conformité.
+Toutes ces options sont disponibles lorsque vous créez une étiquette de sensibilité.
 
 ![Options de création d’une étiquette de niveau de confidentialité](media/Sensitivity_label_create_options.png)
 
 ### <a name="label-priority-order-matters"></a>Priorité des étiquettes (l’ordre est important)
 
-Lorsque vous créez des étiquettes de niveau de confidentialité dans le Centre de sécurité et conformité, elles apparaissent sous forme de liste sur l’onglet **Niveau de confidentialité** de la page **Étiquettes**. Dans cette liste, l’ordre des étiquettes est important, car il reflète leur priorité. Il est préférable que l’étiquette de niveau de confidentialité la plus restrictive, telle que Hautement confidentiel, s’affiche en **bas** de la liste, et la moins restrictive, par exemple Public, s’affiche en **haut**.
+Lorsque vous créez vos étiquettes de sensibilité, elles apparaissent dans une liste située sous l’onglet **Sensibilité** de la page **Étiquettes**. Dans cette liste, l’ordre des étiquettes est important car il reflète leur priorité. Vous souhaitez que votre étiquette de sensibilité la plus restrictive, comme l’étiquette Hautement confidentiel, apparaisse en **bas** de la liste, et que la moins restrictive, telle que l’étiquette Public, apparaisse en **haut**.
 
 Une seule étiquette de niveau de confidentialité peut être appliquée à un document ou un e-mail. Si vos utilisateurs doivent fournir une justification pour modifier le niveau de classification d’une étiquette, l’ordre de cette liste détermine quelle est la classification de niveau inférieur.
 
@@ -108,9 +106,9 @@ Les sous-étiquettes sont simplement un moyen de présenter des étiquettes à d
 
 ### <a name="editing-or-deleting-a-sensitivity-label"></a>Modification ou suppression d’une étiquette de niveau de confidentialité
 
-Si vous supprimez une étiquette de niveau de confidentialité dans le Centre de sécurité et conformité, celle-ci n’est pas supprimée du contenu et les paramètres de protection restent appliqués au contenu, le cas échéant.
+Si vous supprimez une étiquette de sensibilité, celle-ci n’est pas supprimée du contenu et les paramètres de protection restent appliqués au contenu.
 
-Si vous modifiez une étiquette de niveau de confidentialité dans le Centre de sécurité et conformité, la version de l’étiquette qui était appliquée au contenu reste appliquée.
+Si vous modifiez une étiquette de sensibilité, la version de celle-ci qui était appliquée au contenu reste appliquée.
 
 ## <a name="what-label-policies-can-do"></a>Fonction des stratégies d’étiquette
 
@@ -120,7 +118,7 @@ Avec une stratégie d’étiquette, vous pouvez effectuer les actions suivantes�
 
 - **Sélectionner les utilisateurs et les groupes qui voient les étiquettes.** Les étiquettes peuvent être publiées dans n’importe quel groupe de sécurité à extension messagerie, groupe de distribution, groupe Office 365 ou groupe de distribution dynamique.
 
-- **Appliquer une étiquette par défaut** à tous les nouveaux documents et e-mails créés par les utilisateurs et groupes inclus dans la stratégie d’étiquette. Cette étiquette par défaut permet de définir des paramètres de protection de base à appliquer à votre contenu. (Notez qu’un)
+- **Appliquer une étiquette par défaut** à tous les nouveaux documents et e-mails créés par les utilisateurs et les groupes inclus dans la stratégie d’étiquette. Cette étiquette par défaut définit un niveau de base des paramètres de protection à appliquer à l’ensemble de votre contenu.
 
 - **Demander une justification en cas de modification d’une étiquette.** Si le contenu est marqué comme Confidentiel et si un utilisateur souhaite supprimer cette étiquette ou la remplacer par une classification de niveau inférieur, comme Public, vous pouvez exiger que l’utilisateur fournisse une justification lors de l’exécution de cette action. Ces justifications seront disponibles pour révision de l’administrateur. Nous travaillons actuellement sur un rapport où les administrateurs peuvent consulter les justifications des utilisateurs.
 
@@ -197,7 +195,7 @@ Les utilisateurs Azure Information Protection peuvent actuellement classer et é
 - Conserver vos étiquettes Azure Information Protection existantes sur les documents et les e-mails.
 - Conserver la configuration d’étiquettes Azure Information Protection existante.
 
-Si vous utilisez des étiquettes Azure Information Protection, pour l’instant, nous vous recommandons d’éviter de créer de nouvelles étiquettes dans le Centre de sécurité et conformité avant d’avoir terminé la migration. La [rubrique relative à la migration Azure Information Protection](https://docs.microsoft.com/fr-FR/azure/information-protection/configure-policy-migrate-labels) contient des informations importantes et des avertissements spécifiques. Si vous n’êtes pas encore prêt à migrer vos clients de production vers les étiquettes de niveau de confidentialité, ne vous inquiétez pas : pour le moment, vos utilisateurs peuvent continuer à utiliser le client Azure Information Protection et les administrateurs peuvent continuer à utiliser le portail Azure pour la gestion.
+Si vous utilisez des étiquettes Azure Information Protection, nous vous recommandons d’éviter de créer de nouvelles étiquettes par l’intermédiaire d’autres centres d’administration avant d’avoir terminé votre migration. La [rubrique Migration d’Azure Information Protection](https://docs.microsoft.com/fr-FR/azure/information-protection/configure-policy-migrate-labels) contient des informations importantes et des mises en garde spécifiques. Si vous n’êtes pas encore prêt à migrer vos locataires de production vers des étiquettes de sensibilité, il n’y a pas lieu de s’inquiéter : pour le moment, vos utilisateurs peuvent continuer à utiliser le client Azure Information Protection tandis que les administrateurs peuvent continuer à utiliser le portail Azure pour la gestion.
 
 ## <a name="protect-content-on-windows-devices-by-using-endpoint-protection-in-microsoft-intune"></a>Protéger le contenu sur les appareils Windows à l’aide de la protection de point de terminaison dans Microsoft Intune
 
@@ -252,6 +250,6 @@ Pour en savoir plus sur le SDK Microsoft Information Protection, consultez l’[
 
 Les membres de votre équipe de conformité appelés à créer des étiquettes de niveau de confidentialité nécessitent des autorisations relatives au Centre de sécurité et conformité. Par défaut, votre administrateur client a accès à cet emplacement et peut accorder l’accès aux responsables de la mise en conformité et à d’autres personnes au Centre de sécurité et conformité, sans leur donner toutes les autorisations d’un administrateur client. Pour ce faire, nous vous recommandons d’accéder à la page **Autorisations** du Centre de sécurité et conformité, de modifier le groupe de rôles **Administrateur de conformité** et d’ajouter des membres à ce groupe de rôles.
 
-Pour obtenir plus d’informations, consultez l’article Octroi de l’accès au Centre de sécurité et conformité Office 365 aux utilisateurs.
+Pour plus d’informations, voir [Autoriser des utilisateurs à accéder au Centre de sécurité et conformité Office 365](grant-access-to-the-security-and-compliance-center.md).
 
 Ces autorisations sont requises uniquement pour créer et appliquer des étiquettes et une stratégie d’étiquette. L’application d’une stratégie ne nécessite pas d’accès au contenu.

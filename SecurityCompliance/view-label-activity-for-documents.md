@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec l’Explorateur d’activité des étiquettes dans le Centre de sécurité &amp; conformité Office 365, vous pouvez rapidement rechercher et afficher l’activité des étiquettes pour tout le contenu au sein de SharePoint et OneDrive Entreprise au cours des 30 derniers jours. Il s’agit des données en temps réel qui vous offrent une bonne visibilité de ce qui se passe dans votre client.
-ms.openlocfilehash: 8401e612a117700c0c8338860555c4d52dc4346c
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 55888ff2ef8118389a88955a8f4e047170606524
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410469"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997110"
 ---
 # <a name="view-label-activity-for-documents"></a>Afficher l’activité des étiquettes pour les documents
 
@@ -36,7 +36,7 @@ Par exemple, avec l’Explorateur d’activité des étiquettes, vous pouvez eff
     
 - Consulter l’activité des étiquettes pour des dossiers ainsi que des documents individuels. Vous pourrez bientôt afficher le nombre de fichiers de ce dossier ayant été étiquetés suite à l’étiquetage du dossier en question.
     
-Vous trouverez l’Explorateur d’activité des étiquettes dans le Centre de sécurité &amp; conformité \> **Gouvernance des données** \> **Explorateur d’activité des étiquettes**.
+Vous trouverez l’Explorateur d’activité des étiquettes dans le Centre de sécurité &amp; conformité > **Gouvernance des données** > **Explorateur d’activité des étiquettes**.
   
 Notez que l’Explorateur d’activité des étiquettes requiert un abonnement Office 365 Entreprise E5.
   

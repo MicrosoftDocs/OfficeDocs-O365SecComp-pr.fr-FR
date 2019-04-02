@@ -3,7 +3,7 @@ title: Protéger les fichiers SharePoint Online avec Azure Information Protec
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/08/2018
+ms.date: 03/29/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Résumé : Découvrez comment appliquer la protection Azure Information Protection pour protéger les fichiers d’un site d’équipe SharePoint Online hautement confidentiel.'
-ms.openlocfilehash: 8876de7133721fb1768752fa6482e34f9451c116
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 4be30059192bb954a1c2d07d34ece76bb339d7dc
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220984"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999117"
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Protéger les fichiers SharePoint Online avec Azure Information Protection
 
@@ -36,14 +36,15 @@ L’utilisation d’Azure Information Protection pour les fichiers dans SharePoi
 
 Voici quelques remarques importantes concernant cette solution :
 - Lorsque le chiffrement Azure Information Protection est appliqué aux fichiers stockés dans Office 365, le service ne peut pas traiter le contenu de ces fichiers. La co-création, eDiscovery, la recherche, Delve et d’autres fonctionnalités de collaboration ne fonctionnent pas. Les stratégies de protection contre la perte de données peuvent uniquement fonctionner avec les métadonnées (y compris les étiquettes Office 365), mais pas le contenu de ces fichiers (par exemple, des numéros de cartes de crédit au sein des fichiers).
+
 - Cette solution implique qu’un utilisateur doit sélectionner une étiquette qui applique la protection à partir d’Azure Information Protection. Si vous avez besoin du chiffrement automatique et si vous souhaitez que SharePoint puisse indexer et inspecter les fichiers, pensez à utiliser les services RMS dans SharePoint Online. Lorsque vous configurez une bibliothèque SharePoint pour les services RMS, les fichiers sont chiffrés automatiquement lorsqu’ils sont téléchargés pour modification. Les services RMS SharePoint comportent des limites pouvant influencer votre décision. Pour plus d’informations, reportez-vous à l’article [Configurer la Gestion des droits relatifs à l’information (Information Rights Management, IRM) dans le Centre d’administration SharePoint](https://support.office.com/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239CE6EB-4E81-42DB-BF86-A01362FED65C).
 
 ## <a name="admin-setup"></a>Configuration de l’administrateur
-Tout d’abord, suivez les instructions contenues dans [Activer Azure RMS avec le centre d’administration Office 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365) pour votre abonnement Office 365.
+Tout d’abord, suivez les instructions contenues dans [Activer Azure RMS avec le Centre d’administration Microsoft 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365) pour votre abonnement Office 365.
   
 Ensuite, configurez Azure Information Protection avec une nouvelle sous-étiquette et une nouvelle stratégie étendue pour la protection et les autorisations de votre site d’équipe SharePoint Online hautement confidentiel.
   
-1. Connectez-vous au portail Office 365 avec un compte disposant du rôle Administrateur de sécurité ou Administrateur d’entreprise. Pour obtenir de l’aide, consultez la rubrique [Se connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Connectez-vous au centre d’administration avec un compte disposant du rôle Administrateur de la sécurité ou Administrateur de la société. Pour obtenir de l’aide, consultez [Où se connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Dans un nouvel onglet de votre navigateur, accédez au portail Azure ([https://portal.azure.com](https://portal.azure.com)).
     
@@ -104,19 +105,13 @@ Une fois l’installation effectuée, vos utilisateurs exécutent une applicatio
 ## <a name="adding-permissions-for-external-users"></a>Ajout d’autorisations pour les utilisateurs externes
 Il existe deux façons d’accorder à des utilisateurs externes un accès à des fichiers protégés par le service Azure Information Protection. Dans les deux cas, les utilisateurs externes doivent disposer d’un compte Azure AD. Si les utilisateurs externes ne sont pas membres d’une organisation qui utilise Azure AD, ils peuvent obtenir un compte Azure AD individuel via cette page d’inscription : [https://aka.ms/aip-signup](https://aka.ms/aip-signup).
 
- - Ajouter des utilisateurs externes à un groupe Azure AD qui est utilisé pour configurer la protection d’une étiquette. Vous devez tout d’abord ajouter le compte en tant qu’utilisateur B2B dans votre répertoire. La [mise en cache de l’appartenance au groupe par Azure Rights Management](https://docs.microsoft.com/azure/information-protection/plan-design/prepare#group-membership-caching-by-azure-information-protection) peut prendre quelques heures.  
+ - Ajoutez des utilisateurs externes à un groupe Azure AD utilisé pour configurer la protection d’une étiquette. Vous devez d’abord ajouter le compte à votre annuaire en tant qu’utilisateur B2B. La [mise en cache de l’appartenance à un groupe par Azure Rights Management](https://docs.microsoft.com/azure/information-protection/plan-design/prepare#group-membership-caching-by-azure-information-protection) peut prendre quelques heures.  
  - Ajouter des utilisateurs externes directement à la protection d’étiquette. Vous pouvez ajouter tous les utilisateurs d’une organisation (par exemple, Fabrikam.com), un groupe Azure AD (par exemple, un groupe financier au sein d’une organisation) ou un utilisateur individuel. Par exemple, vous pouvez ajouter une équipe externe de régulateurs à la protection d’une étiquette.
 
 ## <a name="see-also"></a>Voir aussi
 
 [Sécuriser les fichiers et sites SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   
-[Sécuriser les sites SharePoint Online dans un environnement de développement/test](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
-  
 [Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Adoption du cloud et solutions hybrides](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
-
-
-
-

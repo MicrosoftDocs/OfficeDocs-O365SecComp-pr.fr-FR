@@ -3,7 +3,7 @@ title: Vue d’ensemble des stratégies de rétention
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 11/16/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -13,13 +13,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à seulement quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou seulement au contenu remplissant certaines conditions
-ms.openlocfilehash: b07adf61f63e683de4f5868c227741dc957ffd68
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à seulement quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou seulement au contenu remplissant certaines conditions.
+ms.openlocfilehash: 55680f16e92d33c2cbf612b6aabae1f51778f93a
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935299"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997140"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -31,7 +31,7 @@ Le volume et la complexité des données (e-mails, documents, messages instantan
     
 - **aider votre organisation à partager efficacement les connaissances et à être plus agile** en vérifiant que vos utilisateurs traitent uniquement le contenu actuel et pertinent pour eux. 
     
-Une stratégie de rétention dans Office 365 peut vous aider à atteindre ces objectifs. La gestion du contenu nécessite généralement les deux actions suivantes :
+Une stratégie de rétention peut vous aider à atteindre ces objectifs. La gestion du contenu nécessite généralement les deux actions suivantes :
   
 - **Conservation** du contenu afin que celui-ci ne puisse pas être supprimé définitivement avant la fin de la période de rétention. 
     
@@ -49,10 +49,10 @@ Lorsque le contenu est soumis à une stratégie de rétention, les utilisateurs 
   
 Enfin, certaines organisations doivent respecter des réglementations telles que la règle 17a-4 de la SEC (Securities and Exchange Commission), stipulant qu’après l’activation d’une stratégie de rétention, celle-ci ne peut pas être désactivée ni rendue moins restrictive. Pour remplir cette obligation, vous pouvez utiliser le verrouillage de conservation. Une fois la stratégie verrouillée, personne ne peut la désactiver ni la rendre moins restrictive, pas même l’administrateur.
   
-Vous créez et gérez des stratégies de rétention sur la page **Rétention** dans le Centre de sécurité &amp; conformité d’Office 365. 
-  
-![Page Rétention dans le Centre de sécurité et conformité](media/107fc33a-6a29-44d1-85e4-0efef0544147.png)
-  
+La création et la gestion des stratégies de rétention s’effectuent sur :
+
+- la page **Stratégies** du Centre de conformité Microsoft 365 ;
+- la page **Rétention** (sous **Gouvernance des données**) du Centre de sécurité &amp; conformité Office 365.
   
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>Fonctionnement d’une stratégie de rétention avec du contenu sur place
 
@@ -322,9 +322,9 @@ Enfin, une stratégie de rétention ou une étiquette ne peut pas supprimer déf
 
 Vous pouvez facilement appliquer une stratégie de rétention unique à l’ensemble de l’organisation et des emplacements sur Office 365, notamment Exchange Online, SharePoint Online, OneDrive Entreprise et les groupes Office 365. Si vous avez besoin de conserver ou supprimer du contenu dans Office 365, nous vous recommandons d’utiliser une stratégie de rétention (vous pouvez également utiliser des étiquettes avec des paramètres de rétention ; pour obtenir plus d’informations, consultez l’article [Vue d’ensemble des étiquettes](labels.md)).
   
-Il existe plusieurs autres fonctionnalités utilisées auparavant pour conserver ou supprimer du contenu dans Office 365. Celles-ci sont répertoriées ci-dessous. Ces fonctionnalités continuent de fonctionner parallèlement aux stratégies de rétention et aux étiquettes créées dans le Centre de sécurité &amp; conformité. Cependant, pour la gouvernance des données, nous vous recommandons d’utiliser une stratégie de rétention ou des étiquettes au lieu de ces fonctionnalités. Une stratégie de rétention est la seule fonctionnalité qui permet de conserver et de supprimer du contenu dans Office 365.
+Plusieurs autres fonctionnalités étaient auparavant utilisées pour conserver ou supprimer du contenu dans Office 365. Celles-ci sont répertoriées ci-dessous. Ces fonctionnalités continueront de fonctionner parallèlement aux stratégies et étiquettes de rétention. Toutefois, pour la gouvernance des données, nous vous recommandons d’utiliser une stratégie ou des étiquettes de rétention plutôt que ces fonctionnalités. Une stratégie de rétention est la seule fonctionnalité qui permet de conserver et de supprimer du contenu dans Office 365.
   
-### <a name="exchange-online"></a>Exchange Online
+### <a name="exchange-online"></a>Exchange Online
 
 - [Gestion des cas eDiscovery dans le Centre de sécurité &amp; conformité Office 365](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (conservation eDiscovery) 
     
@@ -346,15 +346,15 @@ Il existe plusieurs autres fonctionnalités utilisées auparavant pour conserver
     
 - [Stratégies de gestion des informations](intro-to-info-mgmt-policies.md) (suppression uniquement) 
     
-Notez que si vous avez déjà utilisé des conservations eDiscovery aux fins de gouvernance des données, vous devez utiliser à la place une stratégie de rétention pour assurer une conformité proactive. Vous devez utiliser une conservation créée dans le Centre de sécurité &amp; conformité uniquement pour eDiscovery.
+Notez que si vous avez déjà utilisé des conservations eDiscovery à des fins de gouvernance des données, il est préférable d’utiliser une stratégie de rétention pour assurer une conformité proactive. Les conservations doivent uniquement être utilisées à des fins d’eDiscovery.
   
 ### <a name="retention-policies-override-information-management-policies"></a>Les stratégies de rétention remplacent les stratégies de gestion des informations
 
-Dans les sites SharePoint, vous utilisez peut-être des [stratégies de gestion des informations](intro-to-info-mgmt-policies.md) pour conserver du contenu. Si vous appliquez une stratégie de rétention créée dans le Centre de sécurité et conformité à un site qui utilise déjà des stratégies de type de contenu ou des stratégies de gestion des informations pour une liste ou une bibliothèque, ces stratégies sont ignorées lorsque la stratégie de rétention est en vigueur. 
+Sur les sites SharePoint, vous utilisez peut-être des [stratégies de gestion des informations](intro-to-info-mgmt-policies.md) pour conserver le contenu. Si vous appliquez une stratégie de rétention à un site qui utilise déjà des stratégies de type de contenu ou des stratégies de gestion des informations pour une liste ou une bibliothèque, ces stratégies sont ignorées tant que la stratégie de rétention est en vigueur. 
   
 ## <a name="what-happened-to-preservation-policies"></a>Qu’est-il advenu des stratégies de conservation ?
 
-Si vous utilisiez une stratégie de conservation, cette stratégie a été automatiquement convertie en stratégie de rétention qui utilise uniquement l’action de conservation : la stratégie ne va pas supprimer le contenu. La stratégie de conservation continuera de fonctionner et de conserver votre contenu sans exiger de modifications. Ces stratégies sont disponibles sur la page **Rétention** dans le Centre de sécurité &amp; conformité. Vous pouvez modifier une stratégie de conservation pour modifier la période de rétention, mais vous ne pouvez pas apporter d’autres modifications, par exemple, ajouter ou supprimer des emplacements. 
+Si vous utilisiez une stratégie de conservation, celle-ci a été automatiquement convertie en stratégie de rétention qui utilise uniquement l’action de conservation : la stratégie ne supprimera pas le contenu. La stratégie de conservation continuera de fonctionner et de conserver votre contenu sans que vous ayez à apporter la moindre modification. Vous trouverez ces stratégies sur la page **Stratégies** du Centre de conformité Microsoft 365 ou sur la page **Rétention** (sous **Gouvernance des données**) du Centre de sécurité &amp; conformité. Vous pouvez modifier une stratégie de conservation afin de changer la période de rétention, mais vous ne pouvez pas apporter d’autres modifications ; par exemple, vous ne pouvez pas ajouter ou supprimer des emplacements. 
   
 ## <a name="permissions"></a>Autorisations
 
