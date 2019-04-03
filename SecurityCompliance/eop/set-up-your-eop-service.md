@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Cette rubrique explique comment configurer Microsoft Exchange Online Protection (EOP). Si vous avez été redirigé depuis l'Assistant Domaines Office 365, revenez à l'Assistant Domaines Office 365 si vous ne souhaitez pas utiliser Exchange Online Protection. Si vous recherchez plus d'informations sur la configuration des connecteurs, consultez la rubrique Configure mail flow using connectors in Office 365.
-ms.openlocfilehash: 7c5b80ffa103f3ec9b554f69e4bc8ceeccaa6c22
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 496a249f1dc269151dad4b93d2b5cf30fa6ec91b
+ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692703"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31043235"
 ---
 # <a name="set-up-your-eop-service"></a>Configurer votre service EOP
 
@@ -77,7 +77,7 @@ Si vous ne souhaitez pas déplacer les messages vers le dossier Courrier indési
   
 ### <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Étape 6: utiliser le centre d'administration Microsoft 365 pour faire pointer votre enregistrement MX vers EOP
 
-Suivez les étapes de configuration de domaine Office 365 pour mettre à jour votre enregistrement MX pour votre domaine, de sorte que votre courrier entrant circule dans EOP. Veillez à pointer directement votre enregistrement MX vers EOP plutôt que de faire relayer votre courrier électronique vers EOP par un service de filtrage tiers. Pour plus d'informations, vous pouvez de nouveau vous reporter à la rubrique [Créer des enregistrements DNS pour Office 365 lorsque vous gérez vos enregistrements DNS](https://go.microsoft.com/fwlink/p/?LinkId=304219).
+Suivez les étapes de configuration de domaine Office 365 pour mettre à jour votre enregistrement MX pour votre domaine, de sorte que votre courrier entrant circule dans EOP. Veillez à pointer directement votre enregistrement MX vers EOP plutôt que de faire relayer votre courrier électronique vers EOP par un service de filtrage tiers. Pour plus d'informations, vous pouvez de nouveau vous reporter à la rubrique [Créer des enregistrements DNS pour Office 365 lorsque vous gérez vos enregistrements DNS](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
   
 #### <a name="how-do-you-know-this-task-worked"></a>Comment savoir si cette tâche a fonctionné ?
 

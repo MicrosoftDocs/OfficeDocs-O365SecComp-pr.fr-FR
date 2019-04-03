@@ -11,12 +11,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 40afc6fb999b5bf55262d4020ffc68c815dff3ae
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+search.appverid: met150
+ms.openlocfilehash: 0a0bcbde7daa79aabda30013fca2560384545feb
+ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998907"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31043215"
 ---
 # <a name="monitor-and-report-security-status-in-microsoft-365-security-center"></a>Surveillance et signalement de l'état de la sécurité dans le centre de sécurité Microsoft 365
 
