@@ -3,7 +3,7 @@ title: Activer ou désactiver la recherche dans un journal d’audit Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 10/18/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: Vous pouvez activer la fonctionnalité de recherche de journal d'audit dans le centre de sécurité & Compliance Center. Si vous changez d'avis, vous pouvez le désactiver à tout moment. Lorsque le paramètre de recherche du journal d'audit est désactivé, les administrateurs ne peuvent pas rechercher dans le journal d'audit Office 365 des activités de l'utilisateur et de l'administrateur dans votre organisation.
-ms.openlocfilehash: a77114ac9b5de18d4718a543983f7a1f94ebc41f
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 0619b19f9dc6e8bdc21e26275f02a81948b40bf4
+ms.sourcegitcommit: 69d0c739a2f3b4a335b42182a2c7267ef554eb76
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000927"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31389708"
 ---
 # <a name="turn-office-365-audit-log-search-on-or-off"></a>Activer ou désactiver la recherche dans un journal d’audit Office 365
 
@@ -35,7 +35,7 @@ Vous (ou un autre administrateur) devez activer la journalisation d'audit pour p
     > [!IMPORTANT]
     > Les utilisateurs doivent disposer d'autorisations dans Exchange Online pour activer ou désactiver la recherche dans le journal d'audit. Si vous affectez des utilisateurs au rôle journaux d'audit sur la page **autorisations** dans le centre de sécurité _AMP_ Compliance Center, ils ne pourront pas activer ou désactiver la recherche dans le journal d'audit. Cela est dû au fait que la cmdlet sous-jacente est une applet de commande Exchange Online. 
   
-- Si vous désactivez la recherche dans le journal d'audit dans Office 365, vous pouvez toujours utiliser l'API activité de gestion d'Office 365 pour accéder aux données d'audit de votre organisation. La désActivation de la recherche du journal d'audit en suivant les étapes décrites dans cet article signifie qu'aucun résultat n'est renvoyé lorsque vous effectuez une recherche dans le journal d'audit à l'aide du centre de sécurité & Compliance Center ou lorsque vous exécutez la cmdlet **Search-UnifiedAuditLog** dans Exchange Online. PowerShell. Toutefois, si vous avez autorisé une application à accéder aux données d'audit de votre organisation via l'API activité de gestion d'Office 365, ces applications continueront à fonctionner. 
+- Si vous désactivez la recherche dans le journal d'audit dans Office 365, vous ne pourrez pas utiliser l'API activité de gestion d'Office 365 pour accéder aux données d'audit de votre organisation. La désActivation de la recherche du journal d'audit en suivant les étapes décrites dans cet article signifie qu'aucun résultat n'est renvoyé lorsque vous effectuez une recherche dans le journal d'audit à l'aide du centre de sécurité & Compliance Center ou lorsque vous exécutez la cmdlet **Search-UnifiedAuditLog** dans Exchange Online. PowerShell. Cela signifie également que vos journaux d'audit ne seront pas disponibles via l'API activité de gestion d'Office 365.  
     
 - Pour obtenir des instructions détaillées sur la recherche dans le journal d'audit Office 365, voir [Search the audit log dans le centre de sécurité _AMP_ Compliance Center](search-the-audit-log-in-security-and-compliance.md).
     
