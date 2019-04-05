@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
-ms.date: 02/08/2019
+ms.date: 04/04/2019
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
 description: La fonctionnalité pièces jointes fiables permet de vérifier le temps de cliquer sur les pièces jointes des messages électroniques. Utilisez des pièces jointes fiables pour protéger votre organisation des fichiers malveillants envoyés ou reçus par courrier électronique.
-ms.openlocfilehash: 25fbfba104694f7f7418fadb88d60b17ea3d1ae6
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: 933a533a6deb52a41d1412e319c6fb6840046390
+ms.sourcegitcommit: 77e45ce4c9b992ec64420f90946bec6077fc73ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357485"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "31476822"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Pièces jointes sécurisées ATP Office 365
 
@@ -40,9 +40,11 @@ Voici deux exemples de pièces jointes approuvées ATP au travail.
 
 - **Exemple 2: fichier dans SharePoint Online** Supposons que Jean a reçu un fichier et l'a téléchargé dans une bibliothèque dans SharePoint Online. Jean partage le lien vers le fichier avec le reste de l'équipe, sans savoir que le fichier est réellement malveillant. Heureusement, la protection avancée contre les menaces [pour SharePoint, OneDrive et Microsoft teams](atp-for-spo-odb-and-teams.md) détecte le fichier malveillant et le bloque. Quelques jours plus tard, Chris ouvre le document. Bien que Chris puisse voir le fichier, Chris ne peut pas l'ouvrir ou le partager, ce qui empêche l'ordinateur de Chris et d'autres personnes du fichier malveillant.
 
-L'analyse des pièces jointes approuvées ATP a lieu dans la région où se trouvent vos données Office 365. Pour plus d'informations sur la géographie du centre de données, voir [où se trouvent vos données?](https://products.office.com/where-is-your-data-located?geo=All) 
-
 Les stratégies de pièces jointes approuvées ATP peuvent être appliquées à des personnes ou des groupes spécifiques de votre organisation ou à votre domaine entier. En outre, les stratégies de pièces jointes approuvées ATP peuvent être configurées pour utiliser les pièces jointes des espaces réservés pendant l'analyse des pièces jointes réelles. Pour en savoir plus, consultez la rubrique **[configurer des stratégies de pièces jointEs approuvéES ATP dans Office 365](set-up-atp-safe-attachments-policies.md)**.
+
+> [!NOTE]
+> L'analyse des pièces jointes approuvées ATP a lieu dans la région où se trouvent vos données Office 365. Pour plus d'informations sur la géographie du centre de données, voir [où se trouvent vos données?](https://products.office.com/where-is-your-data-located?geo=All) 
+
   
 ## <a name="how-to-get-atp-safe-attachments"></a>Comment obtenir des pièces jointes sûres ATP
 
@@ -56,7 +58,7 @@ Ensuite, assurez-vous que vos stratégies de pièces jointes approuvées ATP son
 
 Pour définir (ou modifier) des stratégies ATP, vous devez disposer d'un rôle approprié. Certains exemples sont décrits dans le tableau suivant:
 
-|Rôle  |WHERE/How Assigned  |
+|Role  |WHERE/How Assigned  |
 |---------|---------|
 |Administrateur général Office 365 |La personne qui s'inscrit pour acheter Office 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d'administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
 |Administrateur de sécurité |Centre d'administration Azure Active Directory[https://aad.portal.azure.com](https://aad.portal.azure.com)()|
@@ -70,11 +72,11 @@ Le tableau suivant décrit certains exemples de scénarios. Dans tous ces cas, n
   
 |**Exemple de scénario**|**Est-ce que la protection des pièces jointes fiables ATP s'applique dans ce cas?**|
 |:-----|:-----|
-|L'organisation de Pat a Office 365 entreprise E5, mais personne n'a défini de stratégie pour les pièces jointes approuvées à l'ATP pour le moment.  <br/> |Nbre. Bien que la fonctionnalité soit disponible, au moins une stratégie de pièces jointes fiables ATP doit être définie pour que la protection des pièces jointes ATP soit mise en place.  <br/> |
-|Lee est un employé du service des ventes de contoso. L'organisation de Lee a une stratégie de pièces jointes approuvées ATP en place qui s'applique uniquement aux employés financiers.  <br/> |Nbre. Dans ce cas, les employés du service financier doivent disposer de la protection contre les pièces jointes approuvées ATP, mais les autres employés, y compris le département des ventes, ne devaient pas attendre que les stratégies incluant ces groupes soient définies.  <br/> |
-|Hier, un administrateur Office 365 de la société Jean a configuré une stratégie de pièces jointes approuvées ATP qui s'applique à tous les employés. Plus tôt aujourd'hui, Jean a reçu un message électronique incluant une pièce jointe.  <br/> |OK. Dans cet exemple, Jean a une licence pour la protection avancée contre les menaces et une stratégie de pièces jointes approuvées ATP qui inclut Jean a été défini. Il faut environ 30 minutes pour qu'une nouvelle stratégie prenne effet sur l'ensemble des centres de communication; étant donné qu'un jour a passé dans ce cas, la stratégie doit être en vigueur.  <br/> |
+|L'organisation de Pat a Office 365 entreprise E5, mais personne n'a défini de stratégie pour les pièces jointes approuvées à l'ATP pour le moment.  <br/> |Non. Bien que la fonctionnalité soit disponible, au moins une stratégie de pièces jointes fiables ATP doit être définie pour que la protection des pièces jointes ATP soit mise en place.  <br/> |
+|Lee est un employé du service des ventes de contoso. L'organisation de Lee a une stratégie de pièces jointes approuvées ATP en place qui s'applique uniquement aux employés financiers.  <br/> |Non. Dans ce cas, les employés du service financier doivent disposer de la protection contre les pièces jointes approuvées ATP, mais les autres employés, y compris le département des ventes, ne devaient pas attendre que les stratégies incluant ces groupes soient définies.  <br/> |
+|Hier, un administrateur Office 365 de la société Jean a configuré une stratégie de pièces jointes approuvées ATP qui s'applique à tous les employés. Plus tôt aujourd'hui, Jean a reçu un message électronique incluant une pièce jointe.  <br/> |Oui. Dans cet exemple, Jean a une licence pour la protection avancée contre les menaces et une stratégie de pièces jointes approuvées ATP qui inclut Jean a été défini. Il faut environ 30 minutes pour qu'une nouvelle stratégie prenne effet sur l'ensemble des centres de communication; étant donné qu'un jour a passé dans ce cas, la stratégie doit être en vigueur.  <br/> |
 |L'organisation de Chris dispose d'Office 365 entreprise E5 avec des stratégies de pièces jointes approuvées pour tous les membres de l'organisation. Chris reçoit un courrier électronique qui contient une pièce jointe et le transfère à d'autres personnes qui se trouvent à l'extérieur de l'organisation.  <br/> |La protection des pièces jointes fiables ATP est mise en place pour les messages que Chris reçoit. Si les organisations de destinataires ont également des stratégies de pièces jointes approuvées ATP en place, le message que Chris Forward est soumis à ces stratégies lors de l'arrivée du message transféré.  <br/> |
-|L'organisation de Marie a mis en place des stratégies de pièces jointes approuvées ATP, et la protection avancée contre les menaces [pour SharePoint, OneDrive et Microsoft teams](atp-for-spo-odb-and-teams.md) a été activée. Marie part du principe que chaque fichier de SharePoint Online a été analysé et qu'il est sûr de l'ouvrir ou de le télécharger.<br/> |La protection des pièces jointes fiables ATP est mise en place en fonction des stratégies définies; Toutefois, cela ne signifie pas que tous les fichiers dans SharePoint Online, OneDrive entreprise ou Microsoft teams sont analysés. (Pour en savoir plus, consultez la rubrique [ATP pour SharePoint, OneDrive et Microsoft teams](atp-for-spo-odb-and-teams.md).)<br/> |
+|L'organisation de Marie a mis en place des stratégies de pièces jointes approuvées ATP, et la protection avancée contre les menaces [pour SharePoint, OneDrive et Microsoft teams](atp-for-spo-odb-and-teams.md) a été activée. Marie part du principe que chaque fichier de SharePoint Online a été analysé et qu'il est sûr de l'ouvrir ou de le télécharger.  <br/> |La protection des pièces jointes fiables ATP est mise en place en fonction des stratégies définies; Toutefois, cela ne signifie pas que tous les fichiers dans SharePoint Online, OneDrive entreprise ou Microsoft teams sont analysés. (Pour en savoir plus, consultez la rubrique [ATP pour SharePoint, OneDrive et Microsoft teams](atp-for-spo-odb-and-teams.md).)  <br/> |
 
 ## <a name="submitting-files-for-malware-analysis"></a>Envoi de fichiers pour l'analyse contre les programmes malveillants
 
