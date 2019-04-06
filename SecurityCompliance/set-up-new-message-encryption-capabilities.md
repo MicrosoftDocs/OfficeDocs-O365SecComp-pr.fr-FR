@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 description: Les nouvelles fonctionnalités de chiffrement de messages Office 365 basées sur Azure information protection, votre organisation peut utiliser la communication de messagerie protégée avec des personnes à l'intérieur et à l'extérieur de votre organisation. Les nouvelles fonctionnalités de OME fonctionnent avec d'autres organisations Office 365, Outlook.com, Gmail et d'autres services de messagerie.
-ms.openlocfilehash: 90247a7e3cd7e5978eb144a2b6f66a9de21a8f96
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: fd237e537aa1ff961d2d975b3b30f4a51744ba7c
+ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296187"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "31479650"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>Configurer les nouvelles fonctionnalités de chiffrement de messages Office 365
 
@@ -26,14 +26,14 @@ Les nouvelles fonctionnalités de chiffrement de messages Office 365 (OME) perme
 >[!NOTE]
 >Cet article est destiné aux administrateurs et aux professionnels de l'informatique. Si vous êtes un utilisateur final, reportez-vous à la liste des articles dans [Office 365 message Encryption (OME)](ome.md) pour obtenir des solutions appropriées.
 
-Suivez les étapes ci-dessous pour vous assurer que les nouvelles fonctionnalités de OME sont disponibles dans votre client Office 365. 
+Suivez les étapes ci-dessous pour vous assurer que les nouvelles fonctionnalités de OME sont disponibles dans votre client Office 365.
 
 ## <a name="verify-azure-rights-management-arm-is-active"></a>Vérifier que la gestion des droits Azure (ARM) est active
 
 >[!NOTE]
 >Les nouvelles fonctionnalités OME tirent parti des fonctionnalités de protection d' [Azure information protection](https://docs.microsoft.com/en-us/azure/information-protection/what-is-information-protection), la technologie utilisée par [Azure Rights Management (ARM)](https://docs.microsoft.com/en-us/azure/information-protection/what-is-azure-rms).
 
-La seule condition requise pour l'utilisation des nouvelles fonctionnalités OME est que [Azure Rights Management (ARM)](https://docs.microsoft.com/en-us/azure/information-protection/what-is-azure-rms) doit être activé dans votre client Office 365. Si c'est le cas, Office 365 active automatiquement les nouvelles fonctionnalités OME et vous n'avez rien à faire. 
+La seule condition requise pour l'utilisation des nouvelles fonctionnalités OME est que [Azure Rights Management (ARM)](https://docs.microsoft.com/en-us/azure/information-protection/what-is-azure-rms) doit être activé dans votre client Office 365. Si c'est le cas, Office 365 active automatiquement les nouvelles fonctionnalités OME et vous n'avez rien à faire.
 
 ARM est également activé automatiquement pour la plupart des plans éligibles, de sorte que vous n'avez probablement pas à faire quoi que ce soit. Pour plus d'informations, consultez la rubrique [activation d'Azure Rights Management](https://docs.microsoft.com/en-gb/azure/information-protection/activate-service) .
 
@@ -42,23 +42,21 @@ ARM est également activé automatiquement pour la plupart des plans éligibles,
 
 Pour plus d'informations, consultez la rubrique suivante:
 
-- [Quels sont les abonnements nécessaires pour utiliser les nouvelles fonctionnalités d'ome?](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities) pour vérifier si votre plan d'abonnement inclut Azure information protection (qui inclut ARM).   
--  [Azure information protection](https://azure.microsoft.com/en-us/services/information-protection/) pour plus d'informations sur l'achat d'un abonnement éligible.  
+- [Quels sont les abonnements nécessaires pour utiliser les nouvelles fonctionnalités d'ome?](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities) pour vérifier si votre plan d'abonnement inclut Azure information protection (qui inclut ARM).
+- [Azure information protection](https://azure.microsoft.com/en-us/services/information-protection/) pour plus d'informations sur l'achat d'un abonnement éligible.  
 
 ### <a name="manually-activating-arm"></a>Activation manuelle du bras
 
 Si vous avez désactivé ARM ou s'il n'a pas été activé automatiquement pour une raison quelconque, vous pouvez l'activer manuellement dans:
 
 - **Centre d'administration office 365**: Découvrez [Comment activer Azure Rights Management à partir du centre d'administration Office 365](https://docs.microsoft.com/en-us/azure/information-protection/activate-office365) pour obtenir des instructions.
-- **Portail Azure**: Découvrez [Comment activer Azure Rights Management à partir du portail Azure](https://docs.microsoft.com/en-gb/azure/information-protection/activate-azure) pour obtenir des instructions. 
-
+- **Portail Azure**: Découvrez [Comment activer Azure Rights Management à partir du portail Azure](https://docs.microsoft.com/en-gb/azure/information-protection/activate-azure) pour obtenir des instructions.
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>Configurer la gestion de votre clé de client Azure information protection
 
-Il s'agit d'une étape facultative. Autoriser Microsoft à gérer la clé racine pour Azure information protection est le paramètre par défaut et meilleure pratique recommandée pour la plupart des clients Office 365. Si c'est le cas, aucune action n'est nécessaire. 
+Cette étape est facultative. Autoriser Microsoft à gérer la clé racine pour Azure information protection est le paramètre par défaut et meilleure pratique recommandée pour la plupart des clients Office 365. Si c'est le cas, aucune action n'est nécessaire.
 
-Il existe de nombreuses raisons, telles que les exigences de conformité, qui peuvent nécessiter la génération et la gestion de votre propre clé racine (également appelée créer votre propre clé (BYOK)). Dans ce cas, nous vous recommandons d'effectuer les étapes requises avant de configurer les nouvelles fonctionnalités de OME. Pour plus d'informations, consultez [la rubrique planification et implémentation de votre clé de client Azure information protection](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key) . 
-
+Il existe de nombreuses raisons, telles que les exigences de conformité, qui peuvent nécessiter la génération et la gestion de votre propre clé racine (également appelée créer votre propre clé (BYOK)). Dans ce cas, nous vous recommandons d'effectuer les étapes requises avant de configurer les nouvelles fonctionnalités de OME. Pour plus d'informations, consultez [la rubrique planification et implémentation de votre clé de client Azure information protection](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key) .
 
 ## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a>Vérifier la nouvelle configuration de OME dans Exchange Online PowerShell
 
@@ -72,15 +70,15 @@ Vous pouvez vérifier que votre client Office 365 est correctement configuré po
      Test-IRMConfiguration [-Sender <email address >]
      ```  
 
-   **Exemple**: 
-   
+   **Exemple**:
+
      ```powershell
      Test-IRMConfiguration -Sender securityadmin@contoso.com
      ```
-     
+
      - L'envoi d'un message électronique est facultatif, mais force le système à effectuer des vérifications supplémentaires. Utilisez l'adresse de messagerie de n'importe quel utilisateur de votre client Office 365. 
-     
-    Vos résultats doivent ressembler à ce qui suit:
+
+     Vos résultats doivent ressembler à ce qui suit:
 
      ```text
     Results : Acquiring RMS Templates ...
@@ -101,7 +99,7 @@ Vous pouvez vérifier que votre client Office 365 est correctement configuré po
    - Les noms de modèle par défaut peuvent être différents de ceux affichés ci-dessus. Pour plus d'informations, rePortez-vous à la rubrique [Configuring and Managing Templates for Azure information protection](https://docs.microsoft.com/en-us/azure/information-protection/configure-policy-templates) .
 
 3. Exécutez la cmdlet Remove-PSSession pour vous déconnecter du service gestion des droits.
-    
+
      ```powershell
      Remove-PSSession $session
      ```

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vous pouvez utiliser l'outil de recherche de journal d'audit Office 365 pour vous aider à résoudre les problèmes courants, tels que l'étude d'un compte compromis ou la définition du transfert de courrier pour une boîte aux lettres.
-ms.openlocfilehash: 506a7c05c8fb88be00e52421341148699d2a74b0
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: bd0483f2b2e209dc0cbd2b03eda928fd8d44d7b0
+ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999627"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "31479660"
 ---
 # <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>Effectuer des recherches dans le journal d'audit Office 365 pour résoudre les scénarios courants
 
@@ -36,17 +36,13 @@ Chacun des scénarios de dépannage décrits dans cet article est basé sur l'ut
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Autorisations requises pour utiliser l'outil de recherche de journal d'audit
 
-Vous devez disposer du rôle journaux d'audit en affichage seul ou journaux d'audit dans Exchange Online pour effectuer des recherches dans le journal d'audit Office 365. Par défaut, ces rôles sont attribués aux groupes de rôles gestion de la conformité et gestion de l'organisation dans la page **autorisations** du centre d'administration Exchange. Pour plus d'informations, consultez la rubrique [gérer des groupes de rôles dans Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
+Vous devez disposer du rôle journaux d'audit en affichage seul ou journaux d'audit dans Exchange Online pour effectuer des recherches dans le journal d'audit Office 365. Par défaut, ces rôles sont attribués aux groupes de rôles gestion de la conformité et gestion de l'organisation dans la page **autorisations** du centre d'administration Exchange. Notez que les administrateurs globaux dans Office 365 et Microsoft 365 sont automatiquement ajoutés en tant que membres du groupe de rôles gestion de l'organisation dans Exchange Online. Pour plus d'informations, consultez la rubrique [gérer des groupes de rôles dans Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
 
 ### <a name="running-audit-log-searches"></a>Exécution de recherches dans le journal d'audit
 
 Cette section décrit les notions de base pour la création et l'exécution de recherches dans le journal d'audit. Utilisez ces instructions comme point de départ pour chaque scénario de dépannage dans cet article. Pour obtenir des instructions détaillées détaillées, consultez [la rubrique Search the audit log](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search).
 
-1. Accédez à la page [https://compliance.microsoft.com](https://compliance.microsoft.com).
-  
-2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
-
-3. Dans le volet gauche du centre de sécurité et conformité, cliquez **** > sur Rechercher dans le**Journal d'audit**.
+1. Accédez à [https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog) et connectez-vous à l'aide de votre compte professionnel ou scolaire.
     
     La page **recherche du journal d'audit** s'affiche. 
     
@@ -115,9 +111,9 @@ Après avoir exécuté la recherche, cliquez sur **Filtrer les résultats** sur 
 
 a. Dans le champ **ObjectID** , l'alias de la boîte aux lettres sur lequel le transfert de courrier a été activé est affiché. Cette boîte aux lettres est également affichée dans la colonne **élément** de la page des résultats de la recherche.
 
-b. Dans le **** champ Parameters, la valeur *ForwardingSmtpAddress* indique que le transfert de messages a été défini sur la boîte aux lettres. Dans cet exemple, le courrier est transmis à l'adresse de messagerie mike@contoso.com, qui se trouve en dehors de l'organisation alpinehouse.onmicrosoft.com.
+b. Dans le **** champ Parameters, la valeur *ForwardingSmtpAddress* indique que le transfert de messages a été défini sur la boîte aux lettres. Dans cet exemple, le courrier est transmis à l'adresse mike@contoso.comde messagerie, qui se trouve en dehors de l'organisation alpinehouse.onmicrosoft.com.
 
-c. La valeur *true* pour le paramètre *DeliverToMailboxAndForward* indique qu'une copie du message remis à Sarad@alpinehouse.onmicrosoft.com ** est transférée à l'adresse de messagerie spécifiée par l' *ForwardingSmtpAddress *, qui dans cet exemple est Mike@contoso.com. Si la valeur du paramètre *DeliverToMailboxAndForward* est définie sur *false*, le courrier électronique est uniquement transféré à l'adresse spécifiée par le paramètre *ForwardingSmtpAddress* . Il n'est pas remis à la boîte aux lettres spécifiée dans le champ **ObjectID** .
+c. La *valeur true* pour le paramètre *DeliverToMailboxAndForward* indique qu'une copie du message remis à sarad@alpinehouse.onmicrosoft.com ** l'adresse de messagerie spécifiée par le paramètre *ForwardingSmtpAddress* , qui dans ce exemple mike@contoso.com. Si la valeur du paramètre *DeliverToMailboxAndForward* est définie sur *false*, le courrier électronique est uniquement transféré à l'adresse spécifiée par le paramètre *ForwardingSmtpAddress* . Il n'est pas remis à la boîte aux lettres spécifiée dans le champ **ObjectID** .
 
 d. Le champ **userid** indique l'utilisateur qui définit le transfert du courrier électronique sur la boîte aux lettres spécifiée dans le champ de champ **ObjectID** . Cet utilisateur est également affiché dans la colonne **utilisateur** de la page des résultats de la recherche. Dans ce cas, il semble que le propriétaire de la boîte aux lettres définisse le transfert du courrier sur sa boîte aux lettres.
 
@@ -191,8 +187,8 @@ Après avoir exécuté la recherche, tous les enregistrements d'audit de cette a
 
 a. Dans le champ **ObjectID** , le nom complet de la règle de boîte de réception est affiché. Ce nom inclut l'alias de la boîte aux lettres de l'utilisateur (par exemple, Sarad) et le nom de la règle de boîte de réception (par exemple, «Move messages from admin»).
 
-b. Dans le champ **paramètres** , la condition de la règle de boîte de réception est affichée. Dans cet exemple, la condition est spécifiée par le paramètre *from* . La valeur définie pour le paramètre *from* indique que la règle de boîte de réception agit sur les messages envoyés par admin@alpinehouse.onmicrosoft.com. Pour obtenir la liste complète des paramètres qui peuvent être utilisés pour définir les conditions des règles de boîte de réception, consultez l'article [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
+b. Dans le champ **paramètres** , la condition de la règle de boîte de réception est affichée. Dans cet exemple, la condition est spécifiée par le paramètre *from* . La valeur définie pour le paramètre *from* indique que la règle de boîte de réception agit sur admin@alpinehouse.onmicrosoft.comles messages envoyés par. Pour obtenir la liste complète des paramètres qui peuvent être utilisés pour définir les conditions des règles de boîte de réception, consultez l'article [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
 
-c. Le paramètre *MoveToFolder* spécifie l'action pour la règle de boîte de réception; dans cet exemple, les messages reçus à partir de admin@alpinehouse.onmicrosoft.com sont déplacés vers le dossier nommé *AdminSearch*. Consultez également l'article [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) pour obtenir la liste complète des paramètres permettant de définir l'action d'une règle de boîte de réception.
+c. Le paramètre *MoveToFolder* spécifie l'action pour la règle de boîte de réception; dans cet exemple, les messages reçus admin@alpinehouse.onmicrosoft.com à partir de sont déplacés vers le dossier nommé *AdminSearch*. Consultez également l'article [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) pour obtenir la liste complète des paramètres permettant de définir l'action d'une règle de boîte de réception.
 
 d. Le champ **userid** indique l'utilisateur qui a créé la règle de boîte de réception spécifiée dans le champ **ObjectID** . Cet utilisateur est également affiché dans la colonne **utilisateur** de la page des résultats de la recherche.

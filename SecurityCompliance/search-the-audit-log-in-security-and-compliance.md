@@ -1,5 +1,5 @@
 ---
-title: Effectuer des recherches dans le journal d’audit dans le Centre de sécurité et de conformité Office 365
+title: Rechercher dans le journal d'audit dans le centre de sécurité & Compliance Center
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: "Utilisez le centre de sécurité & pour rechercher le journal d'audit unifié pour afficher l'activité des utilisateurs et des administrateurs dans votre organisation Office 365. "
-ms.openlocfilehash: 8cb8650315c19714960aba7551902780e38a554b
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: "Utilisez le centre de sécurité & Compliance Center pour rechercher le journal d'audit unifié afin d'afficher l'activité des utilisateurs et des administrateurs dans votre organisation Office 365. "
+ms.openlocfilehash: d593c7d5403f658175850a66a55603dab2b60d42
+ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935349"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "31479680"
 ---
-# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Effectuer des recherches dans le journal d'audit dans le centre de sécurité & Office 365 Security
+# <a name="search-the-audit-log-in-the-security--compliance-center"></a>Rechercher dans le journal d'audit dans le centre de sécurité & Compliance Center
 
 ## <a name="introduction"></a>Introduction
 
@@ -43,7 +43,7 @@ Vous avez besoin de savoir si un utilisateur a affiché un document spécifique 
     
 - Activité de l'utilisateur et de l'administrateur dans Sway
     
-- activités eDiscovery dans le centre de sécurité & de sécurité Office 365
+- activités eDiscovery dans le centre de sécurité et conformité
     
 - Activité de l'utilisateur et de l'administrateur dans Power BI
     
@@ -66,15 +66,15 @@ Vous avez besoin de savoir si un utilisateur a affiché un document spécifique 
 
 Veillez à lire les éléments suivants avant de commencer à rechercher dans le journal d'audit Office 365.
   
-- Vous (ou un autre administrateur) devez d'abord activer la journalisation d'audit avant de pouvoir commencer à rechercher dans le journal d'audit Office 365. Pour l'activer, cliquez simplement sur **commencer l'enregistrement de l'activité utilisateur et administrateur** dans la page de recherche du &amp; **Journal d'audit** du centre de sécurité et de conformité. (Si vous ne voyez pas ce lien, l'audit a déjà été activé pour votre organisation.) Une fois que vous l'activez, un message s'affiche indiquant que le journal d'audit est prêt et que vous pouvez exécuter une recherche dans quelques heures après la fin de la préparation. Vous ne devez effectuer cette opération qu'une seule fois. 
+- Vous (ou un autre administrateur) devez d'abord activer la journalisation d'audit avant de pouvoir commencer à rechercher dans le journal d'audit Office 365. Pour l'activer, il vous suffit de cliquer sur commencer l'enregistrement de l' **activité utilisateur et administrateur** dans la page de **recherche du journal d'audit** du centre de sécurité & conformité. (Si vous ne voyez pas ce lien, l'audit a déjà été activé pour votre organisation.) Une fois que vous l'activez, un message s'affiche indiquant que le journal d'audit est prêt et que vous pouvez exécuter une recherche dans quelques heures après la fin de la préparation. Vous ne devez effectuer cette opération qu'une seule fois. 
     
     > [!NOTE]
     > Nous allons activer l'audit par défaut. En attendant, vous pouvez l'activer comme décrit précédemment. 
   
-- Vous devez disposer du rôle journaux d'audit en affichage seul ou journaux d'audit dans Exchange Online pour effectuer des recherches dans le journal d'audit Office 365. Par défaut, ces rôles sont attribués aux groupes de rôles gestion de la conformité et gestion de l'organisation dans la page **autorisations** du centre d'administration Exchange. Pour permettre à un utilisateur d'effectuer des recherches dans le journal d'audit Office 365 avec le niveau de privilèges minimum, vous pouvez créer un groupe de rôles personnalisé dans Exchange Online, ajouter les journaux d'audit en affichage seul ou les journaux d'audit, puis ajouter l'utilisateur en tant que membre du nouveau groupe de rôles. Pour plus d'informations, consultez la rubrique [gérer des groupes de rôles dans Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
+- Vous devez disposer du rôle journaux d'audit en affichage seul ou journaux d'audit dans Exchange Online pour effectuer des recherches dans le journal d'audit Office 365. Par défaut, ces rôles sont attribués aux groupes de rôles gestion de la conformité et gestion de l'organisation dans la page **autorisations** du centre d'administration Exchange. Notez que les administrateurs globaux dans Office 365 et Microsoft 365 sont automatiquement ajoutés en tant que membres du groupe de rôles gestion de l'organisation dans Exchange Online. Pour permettre à un utilisateur d'effectuer des recherches dans le journal d'audit Office 365 avec le niveau de privilèges minimum, vous pouvez créer un groupe de rôles personnalisé dans Exchange Online, ajouter les journaux d'audit en affichage seul ou les journaux d'audit, puis ajouter l'utilisateur en tant que membre du nouveau groupe de rôles. Pour plus d'informations, consultez la rubrique [gérer des groupes de rôles dans Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
     
     > [!IMPORTANT]
-    > Si vous affectez à un utilisateur le rôle journaux d'audit en affichage seul ou journaux **** d'audit sur la page &amp; autorisations dans le centre de sécurité conformité, il ne pourra pas effectuer de recherche dans le journal d'audit Office 365. Vous devez attribuer les autorisations dans Exchange Online. Cela est dû au fait que la cmdlet sous-jacente utilisée pour effectuer des recherches dans le journal d'audit est une applet de commande Exchange Online. 
+    > Si vous attribuez à un utilisateur le rôle journaux d'audit en affichage seul ou journaux d'audit sur la page des **autorisations** dans le centre de sécurité _AMP_ Compliance Center, il ne pourra pas effectuer de recherche dans le journal d'audit Office 365. Vous devez attribuer les autorisations dans Exchange Online. Cela est dû au fait que la cmdlet sous-jacente utilisée pour effectuer des recherches dans le journal d'audit est une applet de commande Exchange Online. 
   
 - Lorsqu'une activité auditée est effectuée par un utilisateur ou un administrateur, un enregistrement d'audit est généré et stocké dans le journal d'audit Office 365 de votre organisation. La durée pendant laquelle un enregistrement d'audit est conservé (et pouvant faire l'objet d'une recherche dans le journal d'audit) dépend de votre abonnement Office 365, ainsi que du type de licence affecté à un utilisateur spécifique.
 
@@ -99,13 +99,13 @@ Veillez à lire les éléments suivants avant de commencer à rechercher dans le
 
     Pour plus d'informations, consultez la rubrique [désactiver la recherche de journal d'audit dans Office 365](turn-audit-log-search-on-or-off.md).
     
-- Comme indiqué précédemment, la cmdlet sous-jacente utilisée pour effectuer des recherches dans le journal d'audit est une applet de commande Exchange Online, qui est **Search-UnifiedAuditLog**. Cela signifie que vous pouvez utiliser cette applet de commande pour rechercher dans le journal d'audit Office 365 au lieu d'utiliser la page &amp; de **recherche de journal d'audit** dans le centre de sécurité et de conformité. Vous devez exécuter cette applet de commande dans PowerShell à distance connecté à votre organisation Exchange Online. Pour plus d'informations, consultez la rubrique [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
+- Comme indiqué précédemment, la cmdlet sous-jacente utilisée pour effectuer des recherches dans le journal d'audit est une applet de commande Exchange Online, qui est **Search-UnifiedAuditLog**. Cela signifie que vous pouvez utiliser cette applet de commande pour effectuer une recherche dans le journal d'audit Office 365 au lieu d'utiliser la page de **recherche de journal d'audit** dans le centre de sécurité _AMP_ Compliance Center. Vous devez exécuter cette applet de commande dans PowerShell à distance connecté à votre organisation Exchange Online. Pour plus d'informations, consultez la rubrique [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
     
 - Si vous souhaitez télécharger par programme des données à partir du journal d'audit Office 365, nous vous recommandons d'utiliser l'API d'activité de gestion d'Office 365 au lieu d'utiliser un script PowerShell. L'API d'activité de gestion Office 365 est un service REST qui vous permet de développer des solutions d'opérations, de sécurité et de surveillance de la conformité pour votre organisation. Pour plus d'informations, voir référence de l' [API activité de gestion Office 365](https://go.microsoft.com/fwlink/?linkid=852309).
     
 - L'affichage de l'entrée de journal d'audit correspondante dans les résultats de la recherche peut prendre jusqu'à 30 minutes ou jusqu'à 24 heures. Le tableau suivant indique le temps nécessaire pour les différents services dans Office 365.
     
-    |**Service Office 365**|**30 minutes**|**24 heures**|
+    |**Service Office 365**|**30 minutes**|**24 heures**|
     |:-----|:-----|:-----|
     |Protection avancée contre les menaces et intelligence des menaces  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
     |Azure Active Directory (événements de connexion de l'utilisateur)  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
@@ -118,22 +118,22 @@ Veillez à lire les éléments suivants avant de commencer à rechercher dans le
     |Microsoft Forms  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Project  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Stream  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-    |Microsoft Teams  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Microsoft Teams  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Power BI  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-    |Security &amp; Compliance Center  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Centre de conformité et sécurité  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Sharepoint Online et OneDrive Entreprise  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Sway  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
     |Workplace Analytics<br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> || 
     |Yammer  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
-- Azure Active Directory (Azure AD) est le service d'annuaire pour Office 365. Le journal d'audit unifié contient les activités des utilisateurs, des groupes, des applications, des domaines et des annuaires effectuées dans le centre d'administration Office 365 ou dans le portail de gestion Azure. Pour obtenir la liste complète des événements Azure AD, reportez-vous à [Azure Active Directory audit report Events](https://go.microsoft.com/fwlink/p/?LinkID=616549).
+- Azure Active Directory (Azure AD) est le service d'annuaire pour Office 365. Le journal d'audit unifié contient les activités des utilisateurs, des groupes, des applications, des domaines et des annuaires effectuées dans le centre d'administration 365 de Microsoft ou dans le portail de gestion Azure. Pour obtenir la liste complète des événements Azure AD, reportez-vous à [Azure Active Directory audit report Events](https://go.microsoft.com/fwlink/p/?LinkID=616549).
     
 - Les journaux d'audit Exchange Online consistent en deux types d'événements: les événements d'administration Exchange (actions effectuées par les administrateurs) et les événements de boîte aux lettres (actions effectuées par les utilisateurs sur les boîtes aux lettres). Notez que l'audit des boîtes aux lettres n'est pas activé par défaut. Il doit être activé pour chaque boîte aux lettres d'utilisateur avant que des événements de boîte aux lettres puissent être recherchés dans le journal d'audit Office 365. Pour plus d'informations sur l'audit des boîtes aux lettres et les actions d'audit de boîte aux lettres qui sont consignées, consultez la rubrique [activer l'audit de boîte aux lettres dans Office 365](enable-mailbox-auditing.md).
     
 - L'enregistrement d'audit pour Power BI n'est pas activé par défaut. Pour rechercher des activités Power BI dans le journal d'audit Office 365, vous devez activer l'audit dans le portail d'administration de Power BI. Pour obtenir des instructions, consultez la section «journaux d'audit» dans le [portail d'administration Power bi](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
     
     
-## <a name="search-the-audit-log"></a>Rechercher le journal d’audit
+## <a name="search-the-audit-log"></a>Effectuer une recherche dans le journal d’audit
 
 Voici le processus de recherche dans le journal d'audit dans Office 365.
   
@@ -147,14 +147,14 @@ Voici le processus de recherche dans le journal d'audit dans Office 365.
   
 ### <a name="step-1-run-an-audit-log-search"></a>Étape 1: exécuter une recherche de journal d'audit
 
-1. Accédez à [https://protection.office.com](https://protection.office.com).
+1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
     > [!TIP]
-    > Utilisez une session de navigation privée (pas une session normale) pour accéder au centre de &amp; sécurité conformité Office 365 car cela empêchera les informations d'identification avec lesquelles vous avez ouvert une session. Pour ouvrir une session de navigation InPrivate dans Internet Explorer ou Microsoft Edge, appuyez simplement sur CTRL + MAJ + P. Pour ouvrir une session de navigation privée dans Google Chrome (appelée fenêtre Incognito), appuyez sur CTRL + MAJ + N. 
+    > Utilisez une session de navigation privée (pas une session normale) pour accéder au centre de sécurité & Compliance, car cela empêchera les informations d'identification avec lesquelles vous avez ouvert une session. Pour ouvrir une session de navigation InPrivate dans Internet Explorer ou Microsoft Edge, appuyez simplement sur CTRL + MAJ + P. Pour ouvrir une session de navigation privée dans Google Chrome (appelée fenêtre Incognito), appuyez sur CTRL + MAJ + N. 
   
 2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
-3. Dans le volet gauche du centre de &amp; sécurité conformité, cliquez sur recherches de **recherche &amp; **, puis sur **recherche de journal d'audit**.
+3. Dans le volet gauche du centre de sécurité & conformité, cliquez sur **Rechercher**, puis sur **recherche de journal d'audit**.
     
     La page **recherche du journal d'audit** s'affiche. 
     
@@ -288,7 +288,7 @@ Vous pouvez exporter les résultats d'une recherche de journal d'audit dans un f
 
 ## <a name="audited-activities"></a>Activités vérifiées
 
-Les tableaux de cette section décrivent les activités auditées dans Office 365. Vous pouvez rechercher ces événements en effectuant une recherche dans le journal d'audit dans le centre de sécurité & Compliance Center.
+Les tableaux de cette section décrivent les activités auditées dans Office 365. Vous pouvez rechercher ces événements en effectuant une recherche dans le journal d'audit dans le centre de sécurité et de conformité.
   
 Ces tableaux regroupent les activités associées ou les activités d'un service Office 365 spécifique. Les tables incluent le nom convivial qui s'affiche dans la liste déroulante **activités** et le nom de l'opération correspondante qui apparaît dans les informations détaillées d'un enregistrement d'audit et dans le fichier CSV lorsque vous exportez les résultats de la recherche. Pour obtenir des descriptions des informations détaillées, consultez [la rubrique Propriétés détaillées dans le journal d'audit Office 365](detailed-properties-in-the-office-365-audit-log.md).
   
@@ -415,7 +415,7 @@ Le tableau suivant répertorie les événements qui résultent de tâches d'admi
 |**Nom convivial**|**Opération**|**Description**|
 |:-----|:-----|:-----|
 |Agent utilisateur exempté ajouté  <br/> |ExemptUserAgentSet  <br/> |Un administrateur SharePoint ou global ajoute un agent utilisateur à la liste des agents utilisateurs exemptés dans le centre d'administration SharePoint.  <br/> |
-|Ajout de l'administrateur de collection de sites  <br/> |SiteCollectionAdminAdded  <br/> |L'administrateur ou le propriétaire de la collection de sites ajoute une personne en tant qu'administrateur de collection de sites pour un site. Les administrateurs de collection de sites disposent du niveau d’autorisation Contrôle total sur la collection de sites et tous les sous-sites. Cette activité est également consignée lorsqu'un administrateur a lui-même accès au compte OneDrive d'un utilisateur (en modifiant le profil utilisateur dans le centre d'administration SharePoint ou à [l'aide du centre d'administration Office 365](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)). <br/> |
+|Ajout de l'administrateur de collection de sites  <br/> |SiteCollectionAdminAdded  <br/> |L'administrateur ou le propriétaire de la collection de sites ajoute une personne en tant qu'administrateur de collection de sites pour un site. Les administrateurs de collection de sites disposent du niveau d’autorisation Contrôle total sur la collection de sites et tous les sous-sites. Cette activité est également consignée lorsqu'un administrateur a lui-même accès au compte OneDrive d'un utilisateur (en modifiant le profil utilisateur dans le centre d'administration SharePoint ou [en utilisant le centre d'administration Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)). <br/> |
 |(aucun)  <br/> |SiteCollectionAdminRemoved <br/> |Le propriétaire ou l'administrateur de la collection de sites supprime une personne en tant qu'administrateur de collection de sites pour un site. Cette activité est également consignée lorsqu'un administrateur se retire de la liste des administrateurs de collection de sites pour le compte OneDrive d'un utilisateur (en modifiant le profil utilisateur dans le centre d'administration SharePoint).  Notez que pour renvoyer cette activité dans les résultats de la recherche du journal d'audit, vous devez rechercher toutes les activités. <br/> |
 |Ajout d'un utilisateur ou d'un groupe à un groupe SharePoint  <br/> |AddedToGroup  <br/> |Un utilisateur a ajouté un membre ou un invité à un groupe SharePoint. Il peut s'agir d'une action intentionnelle ou du résultat d'une autre activité, telle qu'un événement de partage.  <br/> |
 |Utilisateur autorisé à créer des groupes  <br/> |AllowGroupCreationSet  <br/> |L'administrateur de site ou le propriétaire ajoute un niveau d'autorisation à un site qui lui permet de créer un groupe pour ce site.  <br/> |
@@ -458,7 +458,7 @@ Le tableau suivant répertorie les activités qui peuvent être consignées par 
 |Élément de boîte aux lettres créé  <br/> |Create  <br/> |Un élément est créé dans le dossier calendrier, contacts, notes ou tâches de la boîte aux lettres; par exemple, une nouvelle demande de réunion est créée. Notez que la création, l'envoi ou la réception d'un message n'est pas audité. En outre, la création d'un dossier de boîte aux lettres n'est pas auditée.  <br/> |
 |Création d'une nouvelle règle de boîte de réception dans Outlook Web App  <br/> |NewInboxRule<br/> |<br/> |
 |Messages supprimés du dossier éléments supprimés  <br/> |SoftDelete  <br/> |Un message a été définitivement supprimé ou supprimé (récupérable) du dossier Éléments supprimés. Ces éléments sont déplacés vers le dossier éléments récupérables. Les messages sont également déplacés vers le dossier éléments récupérables lorsqu'un utilisateur le sélectionne et appuie sur **MAJ + SUPPR**.  <br/> |
-|Messages déPlacés dans un autre dossier  <br/> |Déplacer  <br/> |Un message a été déplacé vers un autre dossier.  <br/> |
+|Messages déPlacés dans un autre dossier  <br/> |Move  <br/> |Un message a été déplacé vers un autre dossier.  <br/> |
 |Messages déPlacés vers le dossier éléments supprimés  <br/> |MoveToDeletedItems  <br/> |Un message a été supprimé et déplacé vers le dossier Éléments supprimés.  <br/> |
 |Autorisation de dossier modifiée  <br/> |UpdateFolderPermissions  <br/> |Une autorisation de dossier a été modifiée. Les autorisations de dossier contrôlent les utilisateurs de votre organisation qui peuvent accéder aux dossiers de boîte aux lettres et aux messages dans le dossier.  <br/> |
 |Messages purgés de la boîte aux lettres  <br/> |HardDelete  <br/> |Un message a été purgé du dossier éléments récupérables (supprimé définitivement de la boîte aux lettres).  <br/> |
@@ -486,17 +486,17 @@ Le tableau suivant répertorie les activités de l'utilisateur et de l'administr
 |Duplication Sway activée  <br/> |EnableDuplication  <br/> |L'utilisateur active la duplication d'un Sway; la capacité d'un utilisateur à activer la duplication d'un Sway est activée par défaut.  <br/> |
 |Partage Sway révoqué  <br/> |SwayRevokeShare  <br/> |Un utilisateur cesse de partager un Sway en révoquant l'accès à celui-ci. Révoquer l’accès modifie les liens associés à une instance Sway.  <br/> |
 |Sway partagé  <br/> |SwayShare  <br/> |L'utilisateur a l'intention de partager un Sway. Cet événement capture l'action de l'utilisateur en cliquant sur une destination de partage spécifique dans le menu du partage Sway. L'événement n'indique pas si l'utilisateur a effectué l'action de partage.  <br/> |
-|Désactivation du partage externe de Sway  <br/> |SwayExternalSharingOff  <br/> |L'administrateur désactive le partage d'Sway externe pour l'ensemble de l'organisation à l'aide du centre d'administration Office 365.  <br/> |
-|Partage externe de Sway activé  <br/> |SwayExternalSharingOn  <br/> |L'administrateur Active le partage d'Sway externe pour l'ensemble de l'organisation à l'aide du centre d'administration Office 365.  <br/> |
-|Service Sway désactivé  <br/> |SwayServiceOff  <br/> |L'administrateur désactive Sway pour l'ensemble de l'organisation à l'aide du centre d'administration Office 365.  <br/> |
-|Activé le service Sway  <br/> |SwayServiceOn  <br/> |L'administrateur Active Sway pour l'ensemble de l'organisation à l'aide du centre d'administration Office 365 (le service Sway est activé par défaut).  <br/> |
+|Désactivation du partage externe de Sway  <br/> |SwayExternalSharingOff  <br/> |L'administrateur désactive le partage d'Sway externe pour l'ensemble de l'organisation à l'aide du centre d'administration Microsoft 365.  <br/> |
+|Partage externe de Sway activé  <br/> |SwayExternalSharingOn  <br/> |L'administrateur Active le partage d'Sway externe pour l'ensemble de l'organisation à l'aide du centre d'administration Microsoft 365.  <br/> |
+|Service Sway désactivé  <br/> |SwayServiceOff  <br/> |L'administrateur désactive Sway pour l'ensemble de l'organisation à l'aide du centre d'administration Microsoft 365.  <br/> |
+|Activé le service Sway  <br/> |SwayServiceOn  <br/> |L'administrateur Active Sway pour l'ensemble de l'organisation à l'aide du centre d'administration Microsoft 365 (le service Sway est activé par défaut).  <br/> |
 |Sway visionné  <br/> |SwayView  <br/> |Un utilisateur visualise un Sway.  <br/> |
 ||||
 
   
 ### <a name="user-administration-activities"></a>Activités d'administration des utilisateurs
   
-Le tableau suivant répertorie les activités d'administration des utilisateurs qui sont consignées lorsqu'un administrateur ajoute ou modifie un compte d'utilisateur à l'aide du centre d'administration Office 365 ou du portail de gestion Azure.
+Le tableau suivant répertorie les activités d'administration des utilisateurs qui sont consignées lorsqu'un administrateur ajoute ou modifie un compte d'utilisateur à l'aide du centre d'administration Microsoft 365 ou du portail de gestion Azure.
   
 |**Activité**|**Opération**|**Description**|
 |:-----|:-----|:-----|
@@ -512,7 +512,7 @@ Le tableau suivant répertorie les activités d'administration des utilisateurs 
   
 ### <a name="azure-ad-group-administration-activities"></a>Activités d'administration du groupe Azure AD
   
-Le tableau suivant répertorie les activités d'administration de groupe enregistrées lorsqu'un administrateur ou un utilisateur crée ou modifie un groupe Office 365 ou lorsqu'un administrateur crée un groupe de sécurité à l'aide du centre d'administration Office 365 ou du portail de gestion Azure. Pour plus d'informations sur les groupes dans Office 365, reportez-vous à [la rubrique afficher, créer et supprimer des groupes dans le centre d'administration office 365](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7).
+Le tableau suivant répertorie les activités d'administration de groupe enregistrées lorsqu'un administrateur ou un utilisateur crée ou modifie un groupe Office 365 ou lorsqu'un administrateur crée un groupe de sécurité à l'aide du centre d'administration Microsoft 365 ou du portail de gestion Azure. Pour plus d'informations sur les groupes dans Office 365, reportez-vous à [la rubrique afficher, créer et supprimer des groupes dans le centre d'administration Microsoft 365](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7).
   
 |**Nom convivial**|**Opération**|**Description**|
 |:-----|:-----|:-----|
@@ -540,7 +540,7 @@ Le tableau suivant répertorie les activités d'administration des applications 
 
 ### <a name="role-administration-activities"></a>Activités d'administration des rôles
   
-Le tableau suivant répertorie les activités d'administration des rôles Azure AD qui sont consignées lorsqu'un administrateur gère les rôles d'administrateur dans le centre d'administration Office 365 ou dans le portail de gestion Azure.
+Le tableau suivant répertorie les activités d'administration des rôles Azure AD qui sont consignées lorsqu'un administrateur gère les rôles d'administrateur dans le centre d'administration 365 de Microsoft ou dans le portail de gestion Azure.
   
 |**Nom convivial**|**Opération**|**Description**|
 |:-----|:-----|:-----|
@@ -551,7 +551,7 @@ Le tableau suivant répertorie les activités d'administration des rôles Azure 
    
 ### <a name="directory-administration-activities"></a>Activités d'administration d'annuaire
   
-Le tableau suivant répertorie les activités de domaine et d'annuaire Azure AD qui sont consignées lorsqu'un administrateur gère son organisation Office 365 dans le centre d'administration Office 365 ou dans le portail de gestion Azure.
+Le tableau suivant répertorie les activités de domaine et d'annuaire Azure AD qui sont consignées lorsqu'un administrateur gère son organisation Office 365 dans le centre d'administration Microsoft 365 ou dans le portail de gestion Azure.
   
 |**Nom convivial**|**Opération**|**Description**|
 |:-----|:-----|:-----|
@@ -571,7 +571,7 @@ Le tableau suivant répertorie les activités de domaine et d'annuaire Azure AD 
    
 ### <a name="ediscovery-activities"></a>activités eDiscovery
   
-La recherche de contenu et les activités liées à la découverte électronique effectuées dans le centre de sécurité & de sécurité ou en exécutant les applets de commande Windows PowerShell correspondantes sont consignées dans le journal d'audit Office 365. Cela inclut les activités suivantes:
+La recherche de contenu et les activités de découverte électronique effectuées dans le centre de sécurité et de conformité ou en exécutant les cmdlets PowerShell correspondantes sont consignées dans le journal d'audit. Cela inclut les activités suivantes:
   
 - Création et gestion de cas eDiscovery
     
@@ -628,7 +628,7 @@ Le tableau suivant répertorie les activités de l'utilisateur et de l'administr
 |Ajouté des membres à l'équipe  <br/> |MemberAdded  <br/> |Un propriétaire d'équipe ajoute des membres à une équipe.  <br/> |
 |Onglet ajouté  <br/> |TabAdded  <br/> |Un utilisateur ajoute un onglet à un canal.  <br/> |
 |Paramètre de canal modifié  <br/> |ChannelSettingChanged  <br/> | L'opération ChannelSettingChanged est enregistrée lorsque les activités suivantes sont effectuées par un membre de l'équipe. Pour chacune de ces activités, une description du paramètre modifié (indiqué entre parenthèses ci-dessous) s'affiche dans la colonne **élément** des résultats de la recherche du journal d'audit.  <br/> <br/>-Modifie le nom d'un canal d'équipe ( **nom de canal**).  <br/>  <br/>-Modifie la description d'un canal d'équipe ( **Description de canal**).  <br/> |
-|Paramètres de l'organisation modifiés  <br/> |TeamsTenantSettingChanged  <br/> | L'opération TeamsTenantSettingChanged est enregistrée lorsque les activités suivantes sont effectuées par un administrateur global (à l'aide du centre d'administration Office 365); Notez que ces activités affectent les paramètres de Microsoft teams à l'échelle de l'organisation. Pour plus d'informations, consultez la rubrique [paramètres d'administration de Microsoft teams](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2).  <br/>  Pour chacune de ces activités, une description du paramètre modifié (indiqué entre parenthèses ci-dessous) s'affiche dans la colonne **élément** des résultats de la recherche du journal d'audit.  <br/><br/>-Active ou désactive Microsoft teams pour l'organisation ( **Microsoft teams**).  <br/><br/>-Active ou désactive l'interopérabilité entre Microsoft teams et Skype entreprise pour l'organisation (interopérabilité de **Skype entreprise**).<br/><br/>-Active ou désactive l'affichage graphique de l'organisation dans les clients Microsoft Teams ( **affichage Organigramme hiérarchique**).  <br/><br/>-Active ou désactive la possibilité pour les membres de l'équipe de planifier des réunions privées (planification des réunions **privées**).  <br/><br/>-Active ou désactive la possibilité pour les membres de l'équipe de planifier des réunions de canal (planification des réunions de **canal**).  <br/><br/>-Active ou désactive les appels vidéo dans les réunions Teams ( **vidéo pour les réunions Skype**).  <br/><br/>-Active ou désactive le partage d'écran dans Microsoft teams meetups pour l'organisation ( **partage d'écran pour les réunions Skype**).  <br/><br/>-Active ou désactive la possibilité d'ajouter des images animées (appelées images giphy) aux conversations en équipe ( **images animées**).  <br/><br/>-Modifie le paramètre de contrôle d'accès au contenu de l'organisation ( **contrôle d'accès au contenu**). La notation de contenu limite le type d'image animée qui peut être affichée dans les conversations.  <br/><br/>-Active ou désactive la possibilité pour les membres de l'équipe d'ajouter des images personnalisables (appelées mèmes pour personnalisées) à partir d'Internet vers des conversations d'équipe ( **images personnalisables à partir d'Internet**).  <br/><br/>-Active ou désactive la possibilité pour les membres de l'équipe d'ajouter des images modifiables (appelées autocollants) à des conversations d'équipe ( **images modifiables**).<br/><br/>-Active ou désactive la possibilité pour les membres de l'équipe d'utiliser des robots dans les conversations et les canaux de Microsoft Teams (bots à l'échelle de l' **organisation**).<br/><br/>-Active les robots spécifiques pour Microsoft teams; Cela n'inclut pas le T-bot, qui est le robot d'aide de teams, disponible lorsque les robots sont activés pour l'organisation ( **robots individuels**).  <br/><br/>-Active ou désactive la possibilité pour les membres de l'équipe d'ajouter des extensions ou des onglets ( **extensions ou tabulations**).  <br/><br/>-Active ou désactive le chargement de partie des robots propriétaires pour Microsoft Teams ( **chargement latéral des robots**).  <br/><br/>-Active ou désactive la possibilité pour les utilisateurs d'envoyer des messages électroniques à un canal Microsoft Teams ( **courrier électronique de canal**).  <br/> |
+|Paramètres de l'organisation modifiés  <br/> |TeamsTenantSettingChanged  <br/> | L'opération TeamsTenantSettingChanged est enregistrée lorsque les activités suivantes sont effectuées par un administrateur global (à l'aide du centre d'administration Microsoft 365); Notez que ces activités affectent les paramètres de Microsoft teams à l'échelle de l'organisation. Pour plus d'informations, consultez la rubrique [paramètres d'administration de Microsoft teams](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2).  <br/>  Pour chacune de ces activités, une description du paramètre modifié (indiqué entre parenthèses ci-dessous) s'affiche dans la colonne **élément** des résultats de la recherche du journal d'audit.  <br/><br/>-Active ou désactive Microsoft teams pour l'organisation ( **Microsoft teams**).  <br/><br/>-Active ou désactive l'interopérabilité entre Microsoft teams et Skype entreprise pour l'organisation (interopérabilité de **Skype entreprise**).<br/><br/>-Active ou désactive l'affichage graphique de l'organisation dans les clients Microsoft Teams ( **affichage Organigramme hiérarchique**).  <br/><br/>-Active ou désactive la possibilité pour les membres de l'équipe de planifier des réunions privées (planification des réunions **privées**).  <br/><br/>-Active ou désactive la possibilité pour les membres de l'équipe de planifier des réunions de canal (planification des réunions de **canal**).  <br/><br/>-Active ou désactive les appels vidéo dans les réunions Teams ( **vidéo pour les réunions Skype**).  <br/><br/>-Active ou désactive le partage d'écran dans Microsoft teams meetups pour l'organisation ( **partage d'écran pour les réunions Skype**).  <br/><br/>-Active ou désactive la possibilité d'ajouter des images animées (appelées images giphy) aux conversations en équipe ( **images animées**).  <br/><br/>-Modifie le paramètre de contrôle d'accès au contenu de l'organisation ( **contrôle d'accès au contenu**). La notation de contenu limite le type d'image animée qui peut être affichée dans les conversations.  <br/><br/>-Active ou désactive la possibilité pour les membres de l'équipe d'ajouter des images personnalisables (appelées mèmes pour personnalisées) à partir d'Internet vers des conversations d'équipe ( **images personnalisables à partir d'Internet**).  <br/><br/>-Active ou désactive la possibilité pour les membres de l'équipe d'ajouter des images modifiables (appelées autocollants) à des conversations d'équipe ( **images modifiables**).<br/><br/>-Active ou désactive la possibilité pour les membres de l'équipe d'utiliser des robots dans les conversations et les canaux de Microsoft Teams (bots à l'échelle de l' **organisation**).<br/><br/>-Active les robots spécifiques pour Microsoft teams; Cela n'inclut pas le T-bot, qui est le robot d'aide de teams, disponible lorsque les robots sont activés pour l'organisation ( **robots individuels**).  <br/><br/>-Active ou désactive la possibilité pour les membres de l'équipe d'ajouter des extensions ou des onglets ( **extensions ou tabulations**).  <br/><br/>-Active ou désactive le chargement de partie des robots propriétaires pour Microsoft Teams ( **chargement latéral des robots**).  <br/><br/>-Active ou désactive la possibilité pour les utilisateurs d'envoyer des messages électroniques à un canal Microsoft Teams ( **courrier électronique de canal**).  <br/> |
 |Modification du rôle des membres dans l'équipe  <br/> |MemberRoleChanged  <br/> |Un propriétaire d'équipe modifie le rôle des membres d'une équipe. Les valeurs suivantes indiquent le type de rôle affecté à l'utilisateur.  <br/><br/><br/> **1** -indique le rôle de propriétaire.<br/>**2** -indique le rôle de membre. <br/>**3** -indique le rôle invité. <br/>La propriété Members inclut également le nom de votre organisation et l'adresse de messagerie du membre.  <br/> |
 |Modification du paramètre d'équipe  <br/> |TeamSettingChanged  <br/> | L'opération TeamSettingChanged est enregistrée lorsque les activités suivantes sont effectuées par un propriétaire d'équipe. Pour chacune de ces activités, une description du paramètre modifié (indiqué entre parenthèses ci-dessous) s'affiche dans la colonne **élément** des résultats de la recherche du journal d'audit.  <br/><br/>-Modifie le type d'accès d'une équipe. Les équipes peuvent être définies comme étant privées ou publiques ( **type d'accès à l'équipe**). Lorsqu'une équipe est privée (paramètre par défaut), les utilisateurs peuvent accéder à l'équipe uniquement par invitation. Lorsqu'une équipe est publique, elle est découvrable par tout le monde.  <br/><br/>-Modifie la classification des informations d'une équipe ( **classification d'équipe**).  <br/>  Par exemple, les données d'équipe peuvent être classées comme un impact élevé sur l'entreprise, une incidence moyenne entreprise ou un faible impact sur l'activité.<br/><br/>-Modifie le nom d'une équipe ( **nom**de l'équipe).  <br/><br/>-Modifie la description de l'équipe (description de l' **équipe**). <br/><br/>-Modifications apportées à l'un des paramètres d'équipe. Un propriétaire d'équipe peut accéder à ces paramètres dans un client teams en cliquant avec le bouton droit sur une équipe, en cliquant sur **gérer l'équipe**, puis en cliquant sur l'onglet **paramètres** . Pour ces activités, le nom du paramètre modifié est affiché dans la colonne **élément** dans les résultats de la recherche du journal d'audit.  <br/> |
 |Équipe créée  <br/> |TeamCreated  <br/> |Un utilisateur crée une nouvelle équipe.  <br/> |
@@ -670,7 +670,7 @@ Le tableau suivant répertorie les activités de l'utilisateur et de l'administr
    
 ### <a name="microsoft-flow-activities"></a>Activités de flux Microsoft
 
-Vous pouvez rechercher des activités dans le journal d'audit dans Microsoft Flow. Ces activités incluent la création, la modification et la suppression de flux, ainsi que la modification des autorisations de flux. Pour plus d'informations sur l'audit des activités de flux, voir le blog « [événements d'audit de flux Microsoft» désormais disponible dans le centre de sécurité _AMP_ conformité Office 365](https://flow.microsoft.com/blog/security-and-compliance-center).
+Vous pouvez rechercher des activités dans le journal d'audit dans Microsoft Flow. Ces activités incluent la création, la modification et la suppression de flux, ainsi que la modification des autorisations de flux. Pour plus d'informations sur l'audit des activités de flux, reportez-vous au blog [Microsoft Flow audit Events now available in Security _AMP_ Compliance Center](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 ### <a name="microsoft-powerapps"></a>Microsoft PowerApps
 
@@ -731,7 +731,7 @@ Notez également que la durée de la période de rétention des enregistrements 
 
 Oui. L'API activité de gestion d'Office 365 est utilisée pour extraire les journaux d'audit par programme.  Pour commencer, consultez la rubrique [prise en main des API de gestion d'Office 365](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis).
 
-**Existe-t-il d'autres méthodes pour obtenir des journaux d'audit autres que l'utilisation du centre de sécurité & ou de l'API d'activité de gestion d'Office 365?**
+**Existe-t-il d'autres méthodes pour obtenir des journaux d'audit autres que l'utilisation du centre de sécurité et de conformité ou l'API activité de gestion d'Office 365?**
 
 Non. Il s'agit des deux méthodes permettant d'obtenir des données à partir du service d'audit Office 365. 
 
