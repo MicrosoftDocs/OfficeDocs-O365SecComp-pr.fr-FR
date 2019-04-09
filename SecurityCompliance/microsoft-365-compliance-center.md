@@ -1,22 +1,22 @@
 ---
-title: Bienvenue dans votre nouveau centre de conformité Microsoft 365
+title: Vue d'ensemble du nouveau centre de conformité Microsoft 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/28/2019
+ms.date: 04/09/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: Découvrez le nouveau centre de conformité Microsoft 365, y compris ce qu'il contient, comment l'obtenir et les étapes suivantes.
-ms.openlocfilehash: d627174fce26be9f200f9fdc4f48f0946a8caf69
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: ae608d1aafb803fabe6ed1eba3804b9921bac7b2
+ms.sourcegitcommit: 48b77ec6fb499175507fc08f11dc9f5efe6c4858
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31026315"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518384"
 ---
-# <a name="welcome-to-your-all-new-microsoft-365-compliance-center"></a>Bienvenue dans votre nouveau centre de conformité Microsoft 365
+# <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>Vue d'ensemble du nouveau centre de conformité Microsoft 365
 
 ## <a name="overview"></a>Vue d’ensemble
 
@@ -24,7 +24,7 @@ Si vous êtes intéressé par la position de conformité de votre organisation, 
 
 Lisez cet article pour découvrir le centre de conformité Microsoft 365, comment l' [obtenir](#how-do-i-get-this), les [questions fréquemment posées](#frequently-asked-questions)et les [étapes suivantes](#next-steps).
 
-[![Centre de conformité Microsoft 365](media/m365-compliance-center.png)](https://compliance.microsoft.com)
+[![MCentre de conformité objet Microsoft 365](media/m365-compliance-center.png)](https://compliance.microsoft.com)
 
 ## <a name="welcome-to-microsoft-365-compliance"></a>Bienvenue dans la conformité Microsoft 365
 
@@ -83,11 +83,15 @@ Outre les liens des cartes sur la page d'accueil, vous trouverez un volet de nav
 
 ### <a name="why-am-i-taken-to-the-office-365-security--compliance-center-to-perform-some-tasks-such-as-defining-certain-policies"></a>Pourquoi est-ce que j'ai adopté le centre de sécurité & Office 365 pour effectuer certaines tâches, telles que la définition de certaines stratégies?
 
-Nous développons toujours le centre de conformité Microsoft 365 et nous ajoutons davantage de fonctionnalités et de solutions au cours des prochains mois. En attendant, certaines tâches doivent être effectuées dans le centre de sécurité & Compliance Center. Dans ce cas, vous serez dirigé automatiquement vers l'emplacement où vous pouvez effectuer la tâche, telle que la création ou la modification d'une stratégie de surveillance.
+Nous développons toujours le centre de conformité Microsoft 365 et nous ajoutons davantage de fonctionnalités et de solutions au cours des prochains mois. En attendant, certaines tâches doivent être effectuées dans le centre de sécurité & de la sécurité d'Office 365 ([https://protection.office.com](https://protection.office.com)). Dans ce cas, vous serez dirigé automatiquement vers l'emplacement où vous pouvez effectuer la tâche, telle que la création ou la modification d'une stratégie de surveillance.
 
 ### <a name="why-dont-i-see-the-new-microsoft-365-compliance-center-yet"></a>Pourquoi ne puis-je pas encore voir le nouveau centre de conformité Microsoft 365?
 
-Tout d'abord, vérifiez que vous disposez des [autorisations et des licences](microsoft-security-and-compliance.md#required-licenses-and-permissions)appropriées. Ensuite, connectez-vous [https://compliance.microsoft.com](https://compliance.microsoft.com)à l'adresse. Si vous ne voyez pas encore le nouveau centre de conformité, vous en aurez très bientôt.
+Tout d'abord, vérifiez que vous disposez des [autorisations et des licences](microsoft-security-and-compliance.md#required-licenses-and-permissions)appropriées. Ensuite, connectez-vous [https://compliance.microsoft.com](https://compliance.microsoft.com)à l'adresse. Si vous ne voyez pas le nouveau centre de conformité, vous en aurez bientôt terminé.
+
+### <a name="i-cant-find-some-of-my-compliance-settings-what-do-i-do"></a>Je ne parviens pas à trouver certains de mes paramètres de conformité. What do I do?
+
+Nous ajoutons toujours des fonctionnalités au centre de conformité Microsoft 365. Si vous ne trouvez pas de contenu, tel que la recherche de journal d'audit, essayez d'accéder au centre de sécurité[https://protection.office.com](https://protection.office.com)_AMP_ de sécurité Office 365 (). Vos configurations seront enregistrées dans le centre de sécurité & Office 365 et dans le nouveau centre de conformité Microsoft 365 automatiquement.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
