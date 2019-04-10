@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 6779b9eaf5cd07dbc88f400542b6016e91ec9f4c
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: 28577d45c44eabcffcff2d98bc89a664f3fba6f5
+ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030079"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31745296"
 ---
 # <a name="manage-jobs-in-data-investigations-preview"></a>Gérer les travaux dans les enquêtes de données (aperçu)
 
@@ -34,7 +34,7 @@ Voici une liste des travaux (qui sont généralement des processus de longue dur
 |Comparaison des jeux de charges | Un utilisateur examine les différences entre les différents jeux de charges dans un jeu de preuves. Un jeu de charges est une instance de l'ajout de données à un jeu de preuves. Par exemple, si vous ajoutez les résultats de deux recherches différentes dans le même jeu de preuves, chacun d'entre eux représenterait un jeu de charges. Pour plus d'informations, consultez la rubrique [Manage Load Sets](manage-load-sets.md). |
 |Conversion de documents biffés au format PDF|Une fois qu'un utilisateur a annoté un document dans un jeu de preuves et rédige une partie de celui-ci, il peut choisir de convertir le document rédigé en fichier PDF. Cela permet de s'assurer que la partie biffée n'est pas visible whenf le document est exporté pour présentation. Pour plus d'informations, voir [examiner les données dans les preuves](review-data-in-evidence.md). |
 |Estimation des résultats de recherche | Après qu'un utilisateur a créé et exécuté une nouvelle recherche (ou ré-exécute une recherche existante), l'outil de recherche recherche dans l'index les éléments qui correspondent à la requête de recherche et prépare une estimation qui inclut le nombre et la taille totale de tous les éléments par la recherche, et le nombre de sources de données Sea rched.  Pour plus d'informations, consultez la rubrique [Rechercher des données dans une enquête](search-for-data.md). | 
-|Préparation des données pour l'exportation | Un utilisateur exporte des documents à partir d'un à partir d'un ensemble de preuves. Une fois le processus d'exportation terminé, les utilisateurs peuvent télécharger les données exportées sur un ordinateur local. Pour plus d'informations, consultez la rubrique [exporter des données à partir d'une enquête](export-data.md). | 
+|Préparation des données pour l'exportation | Un utilisateur exporte des documents à partir d'un ensemble de preuves. Une fois le processus d'exportation terminé, les utilisateurs peuvent télécharger les données exportées sur un ordinateur local. Pour plus d'informations, consultez la rubrique [exporter des données à partir d'une enquête](export-data.md). | 
 |Préparation de la résolution des erreurs |Lorsqu'un utilisateur sélectionne un fichier et crée une nouvelle correction d'erreur dans la vue d'erreur sous l'onglet **traitement** d'une enquête, la première étape du processus consiste à télécharger le fichier contenant l'erreur de traitement vers un emplacement de stockage Azure dans le Cloud Microsoft. Ce travail effectue le suivi de la progression du processus de chargement. Pour plus d'informations sur le flux de travail de correction des erreurs, voir [Error inmédiation lors du traitement des données pour une enquête](error-remediation.md).| 
 |Préparation de l'aperçu de la recherche | Après qu'un utilisateur a créé et exécuté une nouvelle recherche (ou ré-exécute une recherche existante), l'outil de recherche prépare un exemple de sous-ensemble d'éléments (correspondant à la requête de recherche) qui peut être affiché en aperçu. L'aperçu des résultats de la recherche peut vous aider à déterminer l'efficacité de la recherche.  Pour plus d'informations, consultez la rubrique [Rechercher des données dans une enquête](search-for-data.md). | 
 |Réindexation des données des personnes concernées | Lorsque vous ajoutez une personne intéressante à une enquête, tous les éléments partiellement indexés dans les sources de données sélectionnées de la personne concernée sont réindexés par un processus appelé *indexation avancée*. Cette tâche est également déclenchée lorsque vous cliquez sur **mettre à jour l'index** dans la vue d'index sous l'onglet **traitement** d'une enquête. Pour plus d'informations, reportez-vous à [indexation avancée des données pour une enquête](index-data-people-of-interest.md).

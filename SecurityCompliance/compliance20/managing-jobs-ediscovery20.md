@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: a5b9975803e0243f873bdd5f538dbc5e62907327
-ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
+ms.openlocfilehash: e5f7c6d0f0932041ef92591afcb59ad836cae0e4
+ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30997050"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31745286"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery-preview"></a>Gérer les travaux dans Advanced eDiscovery (aperçu)
 
@@ -34,7 +34,7 @@ Voici une liste des travaux (qui sont généralement des processus de longue dur
 |Comparaison des jeux de charges | Un utilisateur examine les différences entre les différents jeux de charges dans un jeu de travail. Un jeu de charges est une instance de l'ajout de données à une plage de travail. Par exemple, si vous ajoutez les résultats de deux recherches différentes au même jeu de travail, chacune d'elles représenterait un jeu de charges. Pour plus d'informations, consultez la rubrique [Manage Load Sets](manage-load-sets.md). |
 |Conversion de documents biffés au format PDF|Une fois qu'un utilisateur a annoté un document dans une plage de travail et rédige une partie de celui-ci, il peut choisir de convertir le document rédigé en fichier PDF. Cela permet de s'assurer que la partie biffée n'est pas visible si le document est exporté pour présentation. Pour plus d'informations, consultez [la rubrique afficher des documents dans un jeu de travail](annotating-and-redacting-documents.md). |
 |Estimation des résultats de recherche | Après qu'un utilisateur a créé et exécuté une nouvelle recherche (ou ré-exécute une recherche existante), l'outil de recherche recherche dans l'index les éléments qui correspondent à la requête de recherche et prépare une estimation qui inclut le nombre et la taille totale de tous les éléments par la recherche, et le nombre de sources de données Sear CHED.  Pour plus d'informations, reportez-vous [à la rubrique Collect Data for a case](collecting-data-for-ediscovery.md). | 
-|Préparation des données pour l'exportation | Un utilisateur exporte des documents FEOM à partir d'une plage de travail. Une fois le processus d'exportation terminé, les utilisateurs peuvent télécharger les données exportées sur un ordinateur local. Pour plus d'informations, consultez la rubrique [Export case Data](exporting-data-ediscover20.md). | 
+|Préparation des données pour l'exportation | Un utilisateur exporte des documents à partir d'un à partir d'une plage de travail. Une fois le processus d'exportation terminé, les utilisateurs peuvent télécharger les données exportées sur un ordinateur local. Pour plus d'informations, consultez la rubrique [Export case Data](exporting-data-ediscover20.md). | 
 |Préparation de la résolution des erreurs |Lorsqu'un utilisateur sélectionne un fichier et crée une nouvelle correction d'erreur dans la vue d'erreur sous l'onglet **traitement** d'un cas, la première étape du processus consiste à télécharger le fichier contenant l'erreur de traitement vers un emplacement de stockage Azure dans le Cloud Microsoft. Ce travail effectue le suivi de la progression du processus de chargement. Pour plus d'informations sur le flux de travail de correction des erreurs, consultez la rubrique [erreur de correction lors du traitement des données](error-remediation.md). | 
 |Préparation de l'aperçu de la recherche | Après qu'un utilisateur a créé et exécuté une nouvelle recherche (ou ré-exécute une recherche existante), l'outil de recherche prépare un exemple de sous-ensemble d'éléments (correspondant à la requête de recherche) qui peut être affiché en aperçu. L'aperçu des résultats de la recherche vous permet de déterminer l'efficacité de la recherche.  Pour plus d'informations, reportez-vous [à la rubrique Collect Data for a case](collecting-data-for-ediscovery.md#view-search-results-and-statistics). | 
 |Réindexation des données du dépositaire | Lorsque vous ajoutez un dépositaire à un cas, tous les éléments partiellement indexés des sources de données sélectionnées du dépositaire sont réindexés par un processus appelé *indexation avancée*. Cette tâche est également déclenchée lorsque vous cliquez sur **mettre à jour l'index** dans la vue index sous l'onglet **traitement** d'un cas. Pour plus d'informations, consultez la rubrique [Advanced Indexing of dépositaire Data](indexing-custodian-data.md).
