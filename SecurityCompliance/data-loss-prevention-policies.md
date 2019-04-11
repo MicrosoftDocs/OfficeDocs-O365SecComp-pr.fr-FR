@@ -3,7 +3,7 @@ title: Vue d’ensemble des stratégies de protection contre la perte de donnée
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/29/2019
+ms.date: 04/11/2019
 ms.audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Avec une stratégie de protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365, vous pouvez identifier, surveiller et protéger automatiquement les informations sensibles dans Office 365.
-ms.openlocfilehash: 4117a99afc804fd397deb45087c5058077f9ff60
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: da8acd8904ac6a9b1945c8f794bad84a0adc64fb
+ms.sourcegitcommit: 94e9eeab8134a9c4d9004cc16de7da227a0e5cc0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000017"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784105"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Vue d’ensemble des stratégies de protection contre la perte de données
 
@@ -56,13 +56,13 @@ Vous créez et gérez des stratégies DLP sur la page protection contre la perte
 
 Une stratégie DLP contient quelques éléments de base :
   
-- Emplacement de protection des **emplacements** de contenu, tels que les sites Exchange Online, SharePoint Online et OneDrive entreprise, ainsi que les conversations et canaux Microsoft Teams. 
+- Emplacement de protection du contenu: des **emplacements** comme Exchange Online, SharePoint Online et OneDrive entreprise, ainsi que des conversations et canaux Microsoft Teams. 
     
 - Circonstances de protection du contenu en appliquant des **règles** comprenant les éléments suivants : 
     
-  - **Conditions auxquelles** le contenu doit répondre avant l'application de la règle, par exemple, recherchez uniquement le contenu contenant des numéros de sécurité sociale qui a été partagé avec des personnes extérieures à votre organisation. 
+  - **Conditions auxquelles** le contenu doit répondre avant l'application de la règle. Par exemple, une règle peut être configurée pour rechercher uniquement le contenu contenant des numéros de sécurité sociale qui a été partagé avec des personnes extérieures à votre organisation. 
     
-  - **Actions** que vous voulez que la règle exécute automatiquement lorsque du contenu répondant aux conditions est trouvé, par exemple, bloquer l’accès au document et envoyer à l’utilisateur et au responsable de la mise en conformité une notification par courrier électronique. 
+  - **Actions** que vous souhaitez que la règle effectue automatiquement lorsque le contenu correspondant aux conditions est trouvé. Par exemple, une règle peut être configurée pour bloquer l'accès à un document et envoyer à l'utilisateur et au responsable de la mise en conformité une notification par courrier électronique. 
     
 Vous pouvez utiliser une règle pour satisfaire une exigence de protection spécifique, puis une stratégie DLP pour regrouper les exigences de protection courantes, comme l’ensemble des règles nécessaires pour se conformer à une réglementation donnée.
   
@@ -112,7 +112,7 @@ Une stratégie DLP peut aider à protéger les informations sensibles, qui est d
   
 Lorsqu'une stratégie DLP recherche un type d'informations sensibles comme un numéro de carte de crédit, il ne recherche pas simplement un nombre à 16 chiffres. Chaque type d’informations sensibles est défini et détecté en utilisant une combinaison des éléments suivants :
   
-- Mots-clés
+- Mots clés
     
 - Fonctions internes pour valider les sommes de contrôle ou la composition
     
@@ -212,10 +212,14 @@ Par exemple, la stratégie intégrée **HIPAA des États-Unis** a une règle qui
   
 ## <a name="the-priority-by-which-rules-are-processed"></a>Priorité par laquelle les règles sont traitées
 
-Lorsque vous créez des règles dans une stratégie, une priorité est attribuée à chaque règle dans l'ordre dans lequel elles sont créées, c'est-à-dire que la règle créée en premier a la priorité, la règle créée en second a une deuxième priorité, et ainsi de suite. Une fois que vous avez créé une règle, sa priorité ne peut pas être modifiée, sauf si vous la supprimez et la recréez.
+Lorsque vous créez des règles dans une stratégie, une priorité est attribuée à chaque règle dans l'ordre dans lequel elles sont créées, c'est-à-dire que la règle créée en premier a la priorité, la règle créée en second a une deuxième priorité, et ainsi de suite. 
   
 ![Règles par ordre de priorité](media/f7dc06bf-bc6f-485c-bcdb-606edbcf6565.png)
   
+Une fois que vous avez configuré plusieurs stratégies DLP, vous pouvez modifier la priorité d'une ou de plusieurs stratégies. Pour ce faire, sélectionnez une stratégie, choisissez **modifier la stratégie**, puis utilisez la liste **priorité** pour spécifier sa priorité.
+
+![Définir la priorité d'une stratégie](media/dlp-set-policy-priority.png)
+
 Lorsque le contenu est évalué par rapport à des règles, les règles sont traitées par ordre de priorité. Si le contenu correspond à plusieurs règles, les règles sont traitées par ordre de priorité et l'action la plus restrictive est appliquée. Par exemple, si le contenu correspond à toutes les règles suivantes, la règle 3 est appliquée car il s'agit de la plus haute priorité, règle la plus restrictive:
   
 - Règle 1: ne notifie que les utilisateurs
@@ -244,7 +248,7 @@ Une fois que les utilisateurs ont créé et activé leurs stratégies DLP, ils p
   
 - Trop de contenu qui **ne contient pas** d'informations sensibles correspond aux règles-en d'autres termes, un trop grand nombre de faux positifs. 
     
-- Trop peu de contenu **** , car les informations sensibles correspondent aux règles-en d'autres termes, les actions de protection ne sont pas appliquées aux informations sensibles. 
+- Trop peu de contenu **** , les informations sensibles correspondent aux règles. En d'autres termes, les actions de protection ne sont pas appliquées aux informations sensibles. 
     
 Pour résoudre ces problèmes, vous pouvez régler vos règles en ajustant le nombre d'instances et en fonction de la précision afin de rendre le contenu plus difficile ou plus facile à respecter aux règles. Chaque type d'informations sensibles utilisé dans une règle a un nombre d'instances et correspond à la précision.
   
@@ -403,6 +407,10 @@ Si vous créez des stratégies DLP avec un impact potentiel important, nous vous
 Vous pouvez désactiver une stratégie DLP à tout moment, ce qui a un impact sur toutes les règles de la stratégie. Toutefois, chaque règle peut également être désactivée individuellement en basculant sur son état dans l'éditeur de règles.
   
 ![Options de désactivation d’une règle dans une stratégie](media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+
+Vous pouvez également modifier la priorité de plusieurs règles dans une stratégie. Pour ce faire, ouvrez une stratégie de modification. Dans une ligne de règle, sélectionnez les points de suspension (**...**), puis choisissez une option, telle que **déplacer vers le bas** ou **mettre au dernier**.
+
+![Définir la priorité de la règle](media/dlp-set-rule-priority.png)
   
 ## <a name="dlp-reports"></a>Rapports DLP
 
@@ -514,9 +522,9 @@ Toutefois, les rapports DLP doivent extraire des données d'Office 365, y compri
     
 - [Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP](use-notifications-and-policy-tips.md)
     
-- [Créer une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés](protect-documents-that-have-fci-or-other-properties.md)
+- [Création d’une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés](protect-documents-that-have-fci-or-other-properties.md)
     
-- [Contenu des modèles de stratégie DLP](what-the-dlp-policy-templates-include.md)
+- [Ce qu’incluent les modèles de stratégie DLP](what-the-dlp-policy-templates-include.md)
     
 - [Éléments recherchés par les types d’informations sensibles](what-the-sensitive-information-types-look-for.md)
     
