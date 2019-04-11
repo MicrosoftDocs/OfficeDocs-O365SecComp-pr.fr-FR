@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Résumé : appliquez des étiquettes de rétention et des stratégies DLP à des sites d’équipe SharePoint Online, avec différents niveaux de protection des informations.'
-ms.openlocfilehash: be9fe776353af4c420a93e38a0906eeb674ef8a7
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 81173e96ce6e67ee3b513abce4424686abe79e02
+ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999157"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31745256"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Protéger les fichiers SharePoint Online avec des étiquettes de rétention et la protection contre la perte de données (DLP)
 
@@ -45,9 +45,9 @@ La création, puis l’attribution d’étiquettes de rétention à des sites d�
 
 Au cours de cette phase, vous déterminez les noms de vos étiquettes de rétention pour les quatre niveaux de protection des informations appliqués aux sites d’équipe SharePoint Online. Le tableau suivant répertorie les noms recommandés pour chaque niveau.
   
-|**Niveau de protection du site d’équipe SharePoint Online**|**Nom de l’étiquette**|
+|**Niveau de protection d’un site d’équipe SharePoint Online**|**Nom de l’étiquette**|
 |:-----|:-----|
-|Base de référence - Public  <br/> |Public interne  <br/> |
+|Référence-Public  <br/> |Public interne  <br/> |
 |Base de référence - Privé  <br/> |Private  <br/> |
 |Sensible  <br/> |Sensible  <br/> |
 |Hautement confidentiel  <br/> |Hautement confidentiel  <br/> |
@@ -56,9 +56,9 @@ Au cours de cette phase, vous déterminez les noms de vos étiquettes de rétent
 
 Au cours de cette phase, vous créez puis vous publiez les étiquettes que vous avez déterminées pour les différents niveaux de protection des informations.
   
-1. Connectez-vous au [Centre de sécurité Microsoft 365](https://security.microsoft.com) avec un compte disposant du rôle Administrateur de la sécurité ou Administrateur de la société.
+1. Connectez-vous au [portail de conformité Microsoft 365](https://compliance.microsoft.com) avec un compte disposant du rôle Administrateur de la sécurité ou Administrateur de la société.
     
-2. Sous l’onglet **Accueil - Sécurité Microsoft 365** de votre navigateur, cliquez sur **Classifications > Étiquettes**.
+2. Sous l’onglet **Accueil - Conformité Microsoft 365** de votre navigateur, cliquez sur **Classifications > Étiquettes**.
     
 3. Cliquez sur **Étiquettes de rétention > Créer une étiquette**.
     
@@ -70,7 +70,7 @@ Au cours de cette phase, vous créez puis vous publiez les étiquettes que vous 
     
 7. Dans le volet **Vérifier vos paramètres**, cliquez sur **Créer l’étiquette**.
     
-8. Pour vos autres étiquettes, cliquez sur **Créer une étiquette**, puis répétez les étapes 4 à 7.
+8. Pour vos autres étiquettes, cliquez sur **Créer une étiquette** puis, si nécessaire, répétez les étapes 3 à 7.
     
 
 ### <a name="publish-your-new-labels"></a>Publier vos nouvelles étiquettes
@@ -221,7 +221,7 @@ Voici le résultat de votre configuration pour les sites d’équipe SharePoint 
     
 ## <a name="see-also"></a>Voir aussi
 
-[Sécuriser les fichiers et sites SharePoint Online](secure-sharepoint-online-sites-and-files.md)
+[Sécuriser des sites et des fichiers SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   
 [Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
