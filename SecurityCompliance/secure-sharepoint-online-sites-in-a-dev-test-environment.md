@@ -3,7 +3,7 @@ title: Sécuriser des sites SharePoint Online dans un environnement de développ
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/12/2018
+ms.date: 04/09/2019
 ms.audience: ITPro
 ms.topic: article
 ms.collection:
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Résumé : Créez des sites d’équipe SharePoint Online publics, privés, sensibles et hautement confidentiels dans un environnement de développement/test.'
-ms.openlocfilehash: 902582e198cb24ed4cce9b8b1e73dfbf3ae9dd52
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: e1d5e6f98679e2efb4d5048009971d88f90181e8
+ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999977"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31745306"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Sécuriser des sites SharePoint Online dans un environnement de développement et de test
 
@@ -34,23 +34,21 @@ Utilisez cet environnement de développement/test pour expérimenter les comport
   
 ## <a name="phase-1-create-your-devtest-environment"></a>Phase 1 : Créer votre environnement de développement et de test
 
-Dans cette phase, vous obtenez des abonnements d’essai pour Office 365 et Enterprise Mobility + Security pour une entreprise fictive.
+Dans cette phase, vous obtenez des abonnements d’évaluation pour Office 365 et Enterprise Mobility + Security (EMS) pour une organisation fictive.
   
 Suivez d’abord les instructions de la **Phase 2** de l’[environnement de développement/test Office 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
   
 Ensuite, inscrivez-vous à l’abonnement d’évaluation EMS et ajoutez-le à la même organisation que votre abonnement d’évaluation Office 365.
   
-1. Si nécessaire, connectez-vous au centre d’administration avec les identifiants du compte d’administrateur général de votre abonnement d’essai. Pour obtenir de l’aide, consultez [Où se connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Si nécessaire, connectez-vous au[Centre d’administration Microsoft 365](https://admin.microsoft.com) avec les identifiants du compte d’administrateur général de votre abonnement d’essai.
     
-2. Cliquez sur la vignette **Administration**.
+2. Dans le volet de navigation de gauche, cliquez sur **Facturation > Acheter des services**.
     
-3. Sous l’onglet **Centre d’administration Office** de votre navigateur, dans le volet de navigation gauche, cliquez sur **Facturation > Acheter des services**.
+3. Dans la page **Acheter des services**, recherchez l’élément **Enterprise Mobility + Security E5**. Pointez votre souris dessus et cliquez sur **Démarrer l’essai gratuit**.
     
-4. Dans la page **Acheter des services**, recherchez l’élément **Enterprise Mobility + Security E5**. Pointez votre souris dessus et cliquez sur **Démarrer l’essai gratuit**.
+4. Dans la page **Confirmer votre commande**, cliquez sur **Essayer maintenant**.
     
-5. Dans la page **Confirmer votre commande**, cliquez sur **Essayer maintenant**.
-    
-6. Dans la page **Réception de la commande**, cliquez sur **Continuer**.
+5. Dans la page **Réception de la commande**, cliquez sur **Continuer**.
     
 Ensuite, activez la licence Enterprise Mobility + Security E5 pour votre compte d’administrateur général.
   
@@ -122,7 +120,7 @@ Ensuite, configurez l’octroi de licence automatique afin que des licences soie
     
 6. Fermez l’onglet du portail Azure dans votre navigateur.
     
-Ensuite, vous vous [connectez au module PowerShell Azure Active Directory V2](https://go.microsoft.com/fwlink/?linkid=842218).
+Ensuite, [connectez -vous au module PowerShell Azure Active Directory pour le module Graphique](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 Renseignez le nom de votre organisation, votre emplacement et un mot de passe commun, puis exécutez les commandes suivantes à partir de l’invite de commandes PowerShell ou de l’environnement de script intégré (ISE) pour créer des comptes d’utilisateur et les ajouter à leurs groupes :
   
@@ -179,7 +177,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 ```
 
 > [!NOTE]
-> L’utilisation d’un mot de passe commun permet d’automatiser et de faciliter la configuration d’un environnement de développement/test. Il n’est pas recommandé de l’utiliser dans un environnement de production. 
+> L’utilisation ici d’un mot de passe courant est pour l’automatisation et la simplicité de configuration pour un environnement de développement et de test. Bien évidemment, cela est hautement déconseillé pour les abonnements de production. 
   
 Utilisez ces étapes pour vérifier que la gestion des licences basée sur un groupe fonctionne correctement.
   
@@ -191,34 +189,35 @@ Utilisez ces étapes pour vérifier que la gestion des licences basée sur un gr
     
 4. Dans le volet qui affiche les propriétés du compte d’utilisateur **PDG**, vérifiez que les licences **Enterprise Mobility + Security E5** et **Office 365 Enterprise E5** lui ont été affectées (dans **Licences de produit**).
     
-## <a name="phase-3-create-office-365-labels"></a>Phase 3 : Créer des étiquettes Office 365
+## <a name="phase-3-create-office-365-retention-labels"></a>Phase 3: Créer des étiquettes de rétention Office 365
 
 Dans cette phase, vous allez créer les étiquettes correspondant aux différents niveaux de sécurité pour les dossiers de documents du site d’équipe SharePoint Online.
-  
-1. Si nécessaire, utilisez une instance privée de votre navigateur Internet et connectez-vous au centre d’administration avec le compte d’administrateur général de votre abonnement d’essai Office 365 E5. Pour obtenir de l’aide, consultez [Où se connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+
+
+1. Se connecter au[portail de conformité de Microsoft 365](https://compliance.microsoft.com) avec votre compte d’administrateur général.
     
-2. Sous l’onglet **Accueil Microsoft Office**, cliquez sur la vignette **Administration**.
+2. Sous l’onglet **Accueil- Conformité Microsoft 365** de votre navigateur, cliquez sur **Classifications > Étiquettes**.
     
-3. Sous le nouvel onglet **Centre d’administration Office** de votre navigateur, cliquez sur **Centres d’administration > Sécurité &amp; conformité**.
+3. Cliquez sur **Étiquettes de rétention > Créer une étiquette**.
     
-4. Sous le nouvel onglet **Accueil - Sécurité &amp; conformité de votre navigateur**, cliquez sur **Classifications > Étiquettes**.
+4. Dans le volet**Nommer votre étiquette**, saisissez**Public Interne**dans**Nommer votre étiquette**, puis cliquez sur**Suivant**.
+
+5. Sur le volet**descripteurs de plan fichier**, cliquez sur **suivant**.
     
-5. Depuis le volet Office **Accueil > Étiquettes**, cliquez sur l’onglet **Rétention**, puis cliquez sur **Créer une étiquette**.
+6. Dans le volet**Paramètres d’étiquette**, définissez, si nécessaire, la**Rétention** sur **Activé** puis cliquez sur **Suivant**.
     
-6. Dans le volet **Nom de l’étiquette**, saisissez **Interne public** et cliquez sur **Suivant**.
+7. Dans le volet **Vérifier vos paramètres**, cliquez sur **Créer l’étiquette**.
     
-7. Dans le volet **Paramètres de l’étiquette**, cliquez sur **Suivant**.
+8. Pour vos autres étiquettes, cliquez sur **Créer une étiquette**, puis répétez les étapes 3 à 7.
+
+9. Répétez les étapes 3 à 8 pour les autres étiquettes suivantes :
     
-8. Dans le volet **Vérifier vos paramètres**, cliquez sur **Créer cette étiquette**, puis cliquez sur **Fermer**.
-    
-9. Répétez les étapes 5 à 8 pour les autres étiquettes suivantes :
-    
-  - Privé
+  - Private
     
   - Sensible
     
   - Hautement confidentiel
-    
+  
 10. Dans le volet **Accueil > Étiquettes**, cliquez sur **Publier des étiquettes**.
     
 11. Dans le volet **Choisir les étiquettes à publier**, cliquez sur **Choisir les étiquettes à publier**.
@@ -243,7 +242,7 @@ Dans cette phase, vous créez et vous configurez les quatre types de sites d’�
 
 Pour créer une base de référence de site d’équipe SharePoint Online public, procédez comme suit :
   
-1. Si nécessaire, utilisez un navigateur de votre ordinateur local et connectez-vous au centre d’administration à l’aide de votre compte d’administrateur général. Pour obtenir de l’aide, consultez [Où se connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Si nécessaire, connectez-vous au[portail Office 365](https://portal.office.com) avec les informations d’identification du compte d’administrateur général de votre abonnement d’essai.
     
 2. Dans la liste des vignettes, cliquez sur **SharePoint**.
     
@@ -269,15 +268,11 @@ Ensuite, configurez le dossier des documents du site d’équipe Toute l’organ
     
 4. Dans **Paramètres - Appliquer une étiquette**, sélectionnez **Interne public**, puis cliquez sur **Enregistrer**.
     
-Voici la configuration finale.
-  
-![Protection de base pour le site d’équipe SharePoint Online consultable par les membres de l’organisation.](media/25c86847-a38d-49ad-bb5f-c7c04206b6dc.png)
-  
 ### <a name="project-1-team-site"></a>Site d’équipe Projet 1
 
 Pour créer un site d’équipe SharePoint Online privé de base de référence pour un projet au sein de l’organisation, procédez comme suit :
   
-1. Si nécessaire, utilisez un navigateur de votre ordinateur local et connectez-vous au centre d’administration à l’aide de votre compte d’administrateur général. Pour obtenir de l’aide, consultez [Où se connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Si nécessaire, connectez-vous au[portail Office 365](https://portal.office.com) avec les informations d’identification du compte d’administrateur général de votre abonnement d’essai.
     
 2. Dans la liste des vignettes, cliquez sur **SharePoint**.
     
@@ -301,17 +296,14 @@ Ensuite, configurez le dossier des documents du site d’équipe Projet 1 pour l
     
 3. Sous **Autorisations et gestion**, cliquez sur **Appliquer l’étiquette aux éléments de cette bibliothèque**.
     
-4. Dans **Paramètres - Appliquer l’étiquette**, sélectionnez **Privé**, puis cliquez sur **Enregistrer**.
+4. Dans **Paramètres - Appliquer une étiquette**, sélectionnez **Privé**, puis cliquez sur **Enregistrer**.
     
-Voici la configuration finale.
-  
-![Protection de base pour le site d’équipe SharePoint Online privé concernant Project1.](media/ecd96376-b5dc-4042-9cbd-b3765507ace7.png)
-  
 ### <a name="marketing-campaigns-team-site"></a>Site d’équipe des campagnes marketing
 
 Pour créer un site d’équipe SharePoint Online isolé de niveau sensible pour les ressources des campagnes marketing, procédez comme suit :
-  
-1. Utilisez un navigateur de votre ordinateur local et connectez-vous au centre d’administration à l’aide de votre compte d’administrateur général. Pour obtenir de l’aide, consultez [Où se connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+
+ 
+1. Si nécessaire, connectez-vous au[portail Office 365](https://portal.office.com) avec les informations d’identification du compte d’administrateur général de votre abonnement d’essai.
     
 2. Dans la liste des vignettes, cliquez sur **SharePoint**.
     
@@ -378,12 +370,12 @@ Ensuite, configurez le dossier de documents du site d’équipe Campagnes marke
 4. Dans **Paramètres - Appliquer l’étiquette**, sélectionnez **Sensible**, puis cliquez sur **Enregistrer**.
     
 Ensuite, configurez une stratégie de protection contre la perte de données qui avertit les utilisateurs quand ils partagent un document à l’extérieur de l’organisation sur un site d’équipe SharePoint Online avec l’étiquette Sensible, qui inclut le site Campagnes marketing.
-  
-1. Sous l’onglet **Accueil Microsoft Office** de votre navigateur, cliquez sur la vignette **Sécurité &amp; conformité**.
+
+1. Se connecter au[portail de conformité de Microsoft 365](https://compliance.microsoft.com/) avec votre compte d’administrateur général.
     
-2. Sous le nouvel onglet **Sécurité &amp; conformité** de votre navigateur, cliquez sur **Protection contre la perte de données > Stratégie**.
+2. Sous le nouvel onglet **Conformité Microsoft 365** de votre navigateur, cliquez sur **Stratégie > Protection contre la perte de données**.
     
-3. Dans le volet **Protection contre la perte de données**, cliquez sur **+ Créer une stratégie**.
+3. Dans le volet **Accueil > Protection contre la perte de données**, cliquez sur **Créer une stratégie**.
     
 4. Dans le volet **Utiliser un modèle ou créer une stratégie personnalisée**, cliquez sur **Personnalisé**, puis sur **Suivant**.
     
@@ -391,43 +383,39 @@ Ensuite, configurez une stratégie de protection contre la perte de données qui
     
 6. Dans le volet **Choisir des emplacements**, cliquez sur **Me laisser choisir des emplacements spécifiques**, puis cliquez sur **Suivant**.
     
-7. Dans la liste des emplacements, désactivez les emplacements **Messagerie Exchange** et **Comptes OneDrive**, puis cliquez sur **Suivant**.
+7. Dans la liste des emplacements, désactivez les emplacements **Courrier Exchange**, **Comptes OneDrive** et **Messages de conversations et de canaux Teams**, puis cliquez sur **Suivant**.
     
-8. Dans le volet **Personnaliser les types d’informations sensibles que vous voulez protéger**, cliquez sur **Modifier**.
+8. Dans le volet **Personnalisez le type de contenu que vous voulez protéger**, cliquez sur **Modifier**.
     
-9. Dans le volet **Choisir les types de contenu à protéger**, cliquez sur **Ajouter** dans la zone de liste déroulante, puis cliquez sur **Étiquettes**.
+9. Dans le volet **Choisissez les types de contenu à protéger**, cliquez sur **Ajouter** dans la zone déroulante, puis sélectionnez **Étiquettes de rétention**.
     
-10. Dans le volet **Étiquettes**, cliquez sur **+ Ajouter**, sélectionnez l’étiquette **Sensible**, cliquez sur **Ajouter**, puis sur **Terminé**.
+10. Dans le volet **Étiquettes de rétention**, cliquez sur **Ajouter**, sélectionnez l’étiquette **Sensible**, puis cliquez sur **Ajouter** et sur **Terminé**.
     
 11. Dans le volet **Choisir les types de contenu à protéger**, cliquez sur **Enregistrer**.
     
-12. Dans le volet **Personnaliser les types d’informations sensibles que vous voulez protéger**, cliquez sur **Suivant**.
-    
-13. Dans le volet **Que voulez-vous faire si nous détectons des informations confidentielles ?**, cliquez sur **Personnaliser l’info-bulle et la messagerie électronique**.
+12. Dans le volet **Personnaliser les types d’informations sensibles que vous souhaitez protéger**, cliquez sur **Suivant**.
+
+13. Dans le volet **Que faire en cas de détection d’informations sensibles ?**, cliquez sur **Personnaliser l’info-bulle et l’e-mail**.
     
 14. Dans le volet **Personnaliser les conseils et les notifications par e-mail de la stratégie**, cliquez sur **Personnaliser le texte de l’info-bulle de la stratégie**.
     
-15. Dans la zone de texte, tapez ou collez ce qui suit :
+15. Dans la zone de texte, saisissez ou collez l’un des conseils suivants, selon si vous avez implémenté Azure Information Protection pour protéger les fichiers hautement confidentiels :
     
   - Pour partager un fichier avec un utilisateur extérieur à l’organisation, téléchargez-le et ouvrez-le. Cliquez sur Fichier > Protéger le document > Chiffrer avec mot de passe, puis indiquez un mot de passe fort. Envoyez le mot de passe par e-mail ou un autre moyen de communication.
     
 16. Cliquez sur **OK**.
     
-17. Dans le volet **Que faire en cas de détection d’informations sensibles ?**, désélectionnez la case **Empêcher les utilisateurs de partager un fichier et restreindre l’accès au contenu partagé**, puis cliquez sur **Suivant**.
+17. Dans le volet Office **Que faire en cas de détection d’informations sensibles ?**, cliquez sur **Suivant**.
     
 18. Dans le volet **Voulez-vous activer la stratégie ou d’abord effectuer des tests ?**, cliquez sur **Oui, l’activer maintenant**, puis cliquez sur **Suivant**.
     
 19. Dans le volet **Vérifier vos paramètres**, cliquez sur **Créer**, puis sur **Fermer**.
-    
-Voici la configuration finale.
-  
-![Protection des données sensibles pour les sites d’équipe SharePoint Online isolés des campagnes marketing.](media/33992bd5-96ee-4bfb-9ecf-c8a6736dd100.png)
   
 ### <a name="company-strategy-team-site"></a>Site d’équipe Stratégie d’entreprise
 
 Pour créer un site d’équipe SharePoint Online isolé au niveau Hautement confidentiel pour les ressources d’entreprise stratégiques des dirigeants de l’organisation, procédez comme suit :
   
-1. Si nécessaire, utilisez un navigateur de votre ordinateur local et connectez-vous au centre d’administration à l’aide de votre compte d’administrateur général. Pour obtenir de l’aide, consultez [Où se connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Si nécessaire, connectez-vous au[portail Office 365](https://portal.office.com) avec les informations d’identification du compte d’administrateur général de votre abonnement d’essai.
     
 2. Dans la liste des vignettes, cliquez sur **SharePoint**.
     
@@ -491,53 +479,52 @@ Ensuite, configurez le dossier de documents du site d’équipe Stratégie d’e
     
 Ensuite, configurez une stratégie de protection contre la perte de données qui bloque les utilisateurs quand ils partagent un document à l’extérieur de l’organisation sur un site d’équipe SharePoint Online avec l’étiquette Hautement confidentiel, qui inclut le site Stratégie de l’entreprise.
   
-1. Si nécessaire, utilisez un navigateur de votre ordinateur local et connectez-vous au centre d’administration à l’aide d’un compte disposant du rôle Administrateur de la sécurité ou Administrateur de la société. Pour obtenir de l’aide, consultez [Où se connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Se connecter au[portail de conformité de Microsoft 365](https://compliance.microsoft.com/) avec votre compte d’administrateur général.
     
-2. Sous l’onglet **Accueil Microsoft Office** de votre navigateur, cliquez sur la vignette **Sécurité &amp; conformité**.
+2. Sous le nouvel onglet **Conformité Microsoft 365** de votre navigateur, cliquez sur **Stratégie > Protection contre la perte de données**.
     
-3. Sous le nouvel onglet **Sécurité &amp; conformité** de votre navigateur, cliquez sur **Protection contre la perte de données > Stratégie**.
+3. Dans le volet **Accueil > Protection contre la perte de données**, cliquez sur **Créer une stratégie**.
     
-4. Dans le volet **Protection contre la perte de données**, cliquez sur **+ Créer une stratégie**.
+4. Dans le volet **Utiliser un modèle ou créer une stratégie personnalisée**, cliquez sur **Personnalisé**, puis sur **Suivant**.
     
-5. Dans le volet **Utiliser un modèle ou créer une stratégie personnalisée**, cliquez sur **Personnalisé**, puis sur **Suivant**.
+5. Dans le volet **Nom de votre stratégie**, saisissez les **sites d’équipe SharePoint Online avec étiquette Hautement confidentiel** sous **Nom**, puis cliquez sur **Suivant**.
     
-6. Dans le volet **Nom de votre stratégie**, saisissez les **sites d’équipe SharePoint Online avec étiquette Hautement confidentiel** sous **Nom**, puis cliquez sur **Suivant**.
+6. Dans le volet **Choisir des emplacements**, cliquez sur **Me laisser choisir des emplacements spécifiques**, puis cliquez sur **Suivant**.
     
-7. Dans le volet **Choisir des emplacements**, cliquez sur **Me laisser choisir des emplacements spécifiques**, puis cliquez sur **Suivant**.
+7. Dans la liste des emplacements, désactivez les emplacements **Courrier Exchange**, **Comptes OneDrive** et **Messages de conversations et de canaux Teams**, puis cliquez sur **Suivant**.
     
-8. Dans la liste des emplacements, désactivez les emplacements **Messagerie Exchange** et **Comptes OneDrive**, puis cliquez sur **Suivant**.
+8. Dans le volet **Personnalisez le type de contenu que vous voulez protéger**, cliquez sur **Modifier**.
     
-9. Dans le volet **Personnaliser les types d’informations sensibles que vous voulez protéger**, cliquez sur **Modifier**.
+9. Dans le volet **Choisissez les types de contenu à protéger**, cliquez sur **Ajouter** dans la zone déroulante, puis sélectionnez **Étiquettes de rétention**.
     
-10. Dans le volet **Choisir les types de contenu à protéger**, cliquez sur **Ajouter** dans la zone de liste déroulante, puis cliquez sur **Étiquettes**.
+10. Dans le volet **Étiquettes de rétention**, cliquez sur **Ajouter**, sélectionnez l’étiquette **Hautement confidentiel**, puis cliquez sur **Ajouter** et sur **Terminé**.
     
-11. Dans le volet **Étiquettes**, cliquez sur **+ Ajouter**, sélectionnez l’étiquette **Hautement confidentiel**, cliquez sur **Ajouter**, puis sur **Terminé**.
+11. Dans le volet **Choisir les types de contenu à protéger**, cliquez sur **Enregistrer**.
     
-12. Dans le volet **Choisir les types de contenu à protéger**, cliquez sur **Enregistrer**.
+12. Dans le volet **Personnaliser les types d’informations sensibles que vous souhaitez protéger**, cliquez sur **Suivant**.
+
+13. Dans le volet **Que faire en cas de détection d’informations sensibles ?**, cliquez sur **Personnaliser l’info-bulle et l’e-mail**.
     
-13. Dans le volet **Personnaliser les types d’informations sensibles que vous voulez protéger**, cliquez sur **Suivant**.
+14. Dans le volet **Personnaliser les conseils et les notifications par e-mail de la stratégie**, cliquez sur **Personnaliser le texte de l’info-bulle de la stratégie**.
     
-14. Dans le volet **Que voulez-vous faire si nous détectons des informations confidentielles ?**, cliquez sur **Personnaliser l’info-bulle et la messagerie électronique**.
-    
-15. Dans le volet **Personnaliser les conseils et les notifications par e-mail de la stratégie**, cliquez sur **Personnaliser le texte de l’info-bulle de la stratégie**.
-    
-16. Dans la zone de texte, tapez ou collez ce qui suit :
+15. Dans la zone de texte, saisissez ou collez l’un des conseils suivants, selon si vous avez implémenté Azure Information Protection pour protéger les fichiers hautement confidentiels :
     
   - Pour partager un fichier avec un utilisateur extérieur à l’organisation, téléchargez-le et ouvrez-le. Cliquez sur Fichier > Protéger le document > Chiffrer avec mot de passe, puis indiquez un mot de passe fort. Envoyez le mot de passe par e-mail ou un autre moyen de communication.
     
-17. Cliquez sur **OK**.
+16. Cliquez sur **OK**.
     
-18. Dans le volet Office **Que faire en cas de détection d’informations sensibles ?**, cliquez sur **Suivant**.
+17. Dans le volet Office **Que faire en cas de détection d’informations sensibles ?**, cliquez sur **Suivant**.
     
-19. Dans le volet **Voulez-vous activer la stratégie ou d’abord effectuer des tests ?**, cliquez sur **Oui, l’activer maintenant**, puis cliquez sur **Suivant**.
+18. Dans le volet **Voulez-vous activer la stratégie ou d’abord effectuer des tests ?**, cliquez sur **Oui, l’activer maintenant**, puis cliquez sur **Suivant**.
     
-20. Dans le volet **Vérifier vos paramètres**, cliquez sur **Créer**, puis sur **Fermer**.
+19. Dans le volet **Vérifier vos paramètres**, cliquez sur **Créer**, puis sur **Fermer**.
+   
     
 Suivez ensuite les instructions contenues dans [Comment activer Azure Rights Management à partir du Centre d’administration Microsoft 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).
   
 Ensuite, configurez Azure Information Protection avec une nouvelle stratégie et une sous-étiquette délimitée pour le groupe C-Suite pour la protection et les autorisations en suivant ces étapes :
   
-1. Connectez-vous au centre d’administration avec un compte disposant du rôle Administrateur de la sécurité ou Administrateur de la société. Pour obtenir de l’aide, consultez [Où se connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Si cela est nécessaire, connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide de votre compte administrateur général.
     
 2. Dans un nouvel onglet de votre navigateur, accédez au portail Azure ([https://portal.azure.com](https://portal.azure.com)).
     
@@ -581,10 +568,6 @@ Ensuite, configurez Azure Information Protection avec une nouvelle stratégie et
     
 Pour protéger un document avec Azure Information Protection et cette nouvelle étiquette, vous devez [installer le client Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/install-client-app) sur une machine de test, installer Office à partir du centre d’administration, puis vous connecter à partir de Microsoft Word avec un compte du groupe **C-Suite** de votre abonnement d’essai.
   
-Voici la configuration finale.
-  
-![Protection avec un niveau de confidentialité élevé pour le site d’équipe SharePoint Online isolé de la stratégie d’entreprise.](media/c22695f9-50a1-4abf-a0dd-344b0c92cf94.png)
-  
 Vous êtes maintenant prêt à créer des documents dans ces quatre sites et à tester l’accès à ceux-ci avec différents comptes d’utilisateur de votre abonnement d’essai.
   
 Voici la configuration globale pour les quatre sites d’équipe SharePoint Online.
@@ -597,11 +580,11 @@ Quand vous êtes prêt à effectuer le déploiement en production de sites Share
   
 ## <a name="see-also"></a>Voir aussi
 
-[Sécuriser les fichiers et sites SharePoint Online](secure-sharepoint-online-sites-and-files.md)
+[Sécuriser des sites et des fichiers SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   
 [Adoption du cloud et solutions hybrides](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
   
-[Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Conseils de Sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
 
 
 
