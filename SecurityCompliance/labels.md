@@ -60,7 +60,7 @@ Avec les étiquettes de rétention, vous pouvez effectuer les actions suivantes�
     
 - **Mettre en œuvre la gestion des enregistrements dans Office 365**, notamment les e-mails et les documents. Vous pouvez utiliser une étiquette de rétention pour classer du contenu en tant qu’enregistrement. Lorsque cela se produit, l’étiquette ne peut pas être modifiée ou supprimée, et le contenu ne peut pas être modifié ou supprimé. 
     
-Créez et gérez des étiquettes de rétention dans l’onglet **Étiquettes** Page > **Rétention** dans le centre de conformité de Microsoft 365, dans le centre de sécurité Microsoft 365 ou dans le &amp;centre de conformité Office 365. 
+Pour créer et gérer des étiquettes de rétention, dans le portail Centre de conformité Microsoft 365, Centre de sécurité Microsoft 365 ou Centre de sécurité et conformité Office 365, accédez à la page **Étiquettes**, puis sélectionnez l’onglet **Rétention**. 
   
 
 ## <a name="how-retention-labels-work-with-label-policies"></a>Fonctionnement des étiquettes de rétention avec les stratégies d’étiquette
@@ -97,7 +97,7 @@ Toutes les informations de cette section s’appliquent uniquement aux étiquett
 
 Lorsque vous publiez ou appliquez automatiquement des étiquettes de rétention, elles ne prennent pas effet immédiatement :
   
-1. La stratégie d’étiquette doit d’abord être synchronisée à partir du centre d’administration avec les emplacements définis dans la stratégie.
+1. La première étape consiste à accéder au centre d’administration pour synchroniser la stratégie d’étiquette avec les emplacements définis dans la stratégie.
     
 2. Ensuite, l’emplacement a parfois besoin de temps pour rendre les étiquettes manuelles disponibles aux utilisateurs finaux ou appliquer automatiquement des étiquettes au contenu. Le temps nécessaire dépend de l’emplacement et du type d’étiquette.
     
@@ -109,7 +109,7 @@ Si vous publiez des étiquettes de rétention sur SharePoint ou OneDrive, cela p
   
 ### <a name="auto-apply-retention-labels"></a>Étiquettes de rétention appliquées automatiquement
 
-Si vous appliquez des étiquettes de rétention automatiquement à du contenu répondant à des conditions spécifiques, cela peut prendre sept jours pour que ces étiquettes soient appliquées à tout le contenu existant qui remplit les conditions. Mais notez qu’une fois que vos étiquettes rétention sont déployées, elles sont appliquées au nouveau contenu rapidement, généralement en 15 minutes ou moins.
+Si vous appliquez automatiquement des étiquettes de rétention à du contenu remplissant des critères spécifiques, l’application de ces étiquettes à ce contenu peut prendre jusqu’à 7 jours. Cependant, une fois déployées, vos étiquettes de rétention sont rapidement appliquées au nouveau contenu, généralement en 15 minutes, voire moins.
   
 ![Diagramme de la date d’effet des étiquettes à appliquer automatiquement](media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
   
@@ -389,7 +389,7 @@ Après avoir publié ou appliqué automatiquement vos étiquettes de rétention,
   
 - **Explorateur d’activité des étiquettes**. Grâce à l’explorateur (voir ci-après), vous pouvez rapidement rechercher et afficher l’activité des étiquettes de rétention pour tout le contenu au sein de SharePoint et OneDrive Entreprise au cours des 30 derniers jours. Pour obtenir plus d’informations, consultez l’article [Afficher l’activité des étiquettes pour les documents](view-label-activity-for-documents.md).
 
-- Page **analytique des étiquettes**. Dans le centre de conformité de Microsoft 365 et centre de sécurité Microsoft 365, vous pouvez voir rapidement les étiquettes qui sont les plus utilisées et où elles sont appliquées. Vous pouvez également afficher tout le contenu portant une étiquette spécifique. Pour plus d’informations, voir [Affichez l’utilisation des étiquettes avec l’analytique d’étiquettes](label-analytics.md).
+- Page **Analyse des étiquettes**. Les portails Centre de conformité Microsoft 365 et Centre de sécurité Microsoft 365 permettent d’afficher rapidement vos principales étiquettes et leurs applications. Ils permettent aussi d’afficher tous les contenus dotés d’étiquettes spécifiques. Pour en savoir plus, consultez la page [Afficher l’utilisation des étiquettes grâce à l’analyse des étiquettes](label-analytics.md).
     
 - **Rapports de gouvernance des données**. Grâce à ces rapports, vous pouvez rapidement afficher les activités et les tendances des étiquettes de rétention pour tout le contenu dans Exchange, SharePoint et OneDrive Entreprise au cours des 90 derniers jours. Pour obtenir plus d’informations, consultez l’article [Affichage des rapports de gouvernance des données](view-the-data-governance-reports.md).
     
@@ -397,7 +397,7 @@ Après avoir publié ou appliqué automatiquement vos étiquettes de rétention,
   
 ## <a name="using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it"></a>Utilisation de la recherche de contenu pour rechercher tout le contenu portant une étiquette de rétention spécifique
 
-Une fois que les étiquettes de rétention sont affectées au contenu, par les utilisateurs ou automatiquement, vous pouvez utiliser la recherche de contenu pour rechercher tout le contenu classé avec une étiquette de rétention spécifique.
+Lorsque les étiquettes de rétention sont affectées au contenu par les utilisateurs ou automatiquement, vous pouvez utiliser la recherche de contenu pour rechercher les contenus classés et dotés d’étiquettes de rétention spécifiques.
   
 Lorsque vous créez une recherche de contenu, sélectionnez la condition **Balise de conformité**, puis saisissez l’intégralité ou une partie du nom de l’étiquette et utilisez un caractère générique. Pour obtenir plus d’informations, consultez l’article [Requêtes par mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).
   
@@ -431,7 +431,7 @@ Enfin, une stratégie de rétention ou une étiquette ne peut pas supprimer déf
 
 Les étiquettes de rétention peuvent facilement être rendues disponibles pour l’ensemble d’une organisation et son contenu dans Office 365, y compris Exchange, SharePoint, OneDrive et les groupes Office 365. Si vous devez classer du contenu ou gérer des enregistrements dans Office 365, nous vous recommandons d’utiliser des étiquettes de rétention.
   
-Plusieurs autres fonctionnalités étaient utilisées auparavant pour classifier du contenu ou gérer des enregistrements dans Office 365. Celles-ci sont répertoriées ci-dessous. Ces fonctionnalités continueront de fonctionner parallèlement aux étiquettes de rétention. Notez que s’il existe des cas où l’implémentation des étiquettes de rétention diffère des fonctionnalités précédentes, seules les étiquettes de rétention seront utilisées pour gérer les enregistrements dans Office 365 à l’avenir. Aussi, pour la gouvernance des données, nous vous recommandons d’utiliser des étiquettes de rétention plutôt que ces fonctionnalités.
+Auparavant, d’autres fonctionnalités étaient utilisées pour classer des contenus ou gérer des enregistrements dans Office 365. Nous les avons répertoriées ci-dessous. Ces fonctionnalités restent utilisables. Cependant, même s’il existe encore certaines situations où vous pouvez encore choisir entre l’une de ces fonctionnalités et les étiquettes de rétention, sachez qu’à l’avenir, seules les étiquettes de rétention seront utilisées pour la gestion des documents dans Office 365. Nous vous recommandons donc d’utiliser immédiatement les étiquettes de rétention pour la gouvernance de vos données, plutôt que ces fonctionnalités.
   
 ### <a name="exchange-online"></a>Exchange Online
 
