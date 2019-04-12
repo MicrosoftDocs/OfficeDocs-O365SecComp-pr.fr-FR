@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: 'Utilisez le centre de sécurité & Compliance Center pour obtenir divers rapports pour votre organisation SharePoint Online et Exchange Online, ainsi que des rapports Azure Active Directory.  '
-ms.openlocfilehash: e336ddb500ced25fc17ebf4edfb680e410bae172
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: b902ce8e44e20fdb9e5fc22189ca07b6168be329
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999057"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813915"
 ---
 # <a name="reports-in-the-security--compliance-center"></a>Rapports dans le Centre de conformité et sécurité
 
@@ -37,7 +37,7 @@ Vous avez besoin des autorisations suivantes pour afficher des rapports dans le 
   
  **Pour ouvrir la page afficher les rapports dans le centre de sécurité & conformité, procédez comme suit:**
   
-1. Accédez à [https://compliance.microsoft.com/#/viewreports](https://compliance.microsoft.com/#/viewreports).
+1. Accédez à [https://protection.office.com/#/viewreports](https://protection.office.com/#/viewreports).
     
 2. Connectez-vous à Office 365 à l'aide des informations d'identification d'un compte d'utilisateur dans votre organisation Office 365.
     

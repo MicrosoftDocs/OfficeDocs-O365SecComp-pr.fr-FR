@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: Ajoutez et gérez les alertes d'activité dans le centre de sécurité et de conformité pour qu'Office 365 vous envoie des notifications par courrier électronique lorsque les utilisateurs effectuent des activités spécifiques dans Office 365.
-ms.openlocfilehash: 2bbd5b02ec9497b798c948ac58e5e6ac1501bbc4
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: d71763d4633c3396afdf58400e9cb7b8b8a468e8
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999657"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813985"
 ---
 # <a name="create-activity-alerts-in-the-office-365"></a>Créer des alertes d'activité dans Office 365
 
@@ -43,7 +43,7 @@ Vous pouvez créer une alerte d'activité qui vous enverra une notification par 
     
 ## <a name="create-an-activity-alert"></a>Créer une alerte d'activité
 
-1. Accédez à la page [https://compliance.microsoft.com/#/managealerts](https://compliance.microsoft.com/#/managealerts).
+1. Accédez à la page [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
     
 2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
@@ -82,7 +82,7 @@ Vous pouvez créer une alerte d'activité qui vous enverra une notification par 
 
 Vous pouvez désactiver une alerte d'activité de sorte qu'aucune notification par courrier électronique ne soit envoyée. Une fois que vous avez désactivé l'alerte d'activité, celle-ci apparaît toujours dans la liste des alertes d'activité de votre organisation et vous pouvez toujours afficher ses propriétés.
   
-1. Accédez à la page [https://compliance.microsoft.com/#/managealerts](https://compliance.microsoft.com/#/managealerts).
+1. Accédez à la vue [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
     
 2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
@@ -111,7 +111,7 @@ Pour réactiver une alerte activité, répétez ces étapes et cliquez sur **** 
     |:-----|:-----|:-----|
     |Affiche un document sur un site.  <br/> |Fichier accédé  <br/> |Activités de fichiers et de dossiers  <br/> |
     |Modifie ou modifie un document.  <br/> |Fichier modifié  <br/> |Activités de fichiers et de dossiers  <br/> |
-    |Partage un document avec un utilisateur en dehors de votre organisation.  <br/> |Partager un fichier, un dossier ou un site  <br/> Et  <br/> Invitation de partage créée  <br/> Pour plus d'informations, reportez-vous à [la rubrique utiliser l'audit de partage dans le journal d'audit Office 365](use-sharing-auditing.md).  <br/> |Activités de partage et d'accès aux demandes  <br/> |
+    |Partage un document avec un utilisateur en dehors de votre organisation.  <br/> |Partager un fichier, un dossier ou un site  <br/> And  <br/> Invitation de partage créée  <br/> Pour plus d'informations, reportez-vous à [la rubrique utiliser l'audit de partage dans le journal d'audit Office 365](use-sharing-auditing.md).  <br/> |Activités de partage et d'accès aux demandes  <br/> |
     |Charge ou télécharge un document.  <br/> |Fichier téléchargé  <br/> Et/ou  <br/> Fichier téléchargé  <br/> |Activités de fichiers et de dossiers  <br/> |
     |Modifie les autorisations d'accès à un site.  <br/> |Autorisations de site modifiées  <br/> |Activités d'administration de site  <br/> |
 
@@ -120,7 +120,7 @@ Pour réactiver une alerte activité, répétez ces étapes et cliquez sur **** 
     |**Lorsqu'un utilisateur effectue cette opération...**|**Créer une alerte pour cette activité**|**Groupe d'activités**|
     |:-----|:-----|:-----|
     |Supprime définitivement un message électronique de sa boîte aux lettres.  <br/> |Messages supprimés de la boîte aux lettres  <br/> | Activités de boîte aux lettres Exchange  <br/> |
-    |Envoie un message électronique à partir d'une boîte aux lettres partagée.  <br/> |Message envoyé à l'aide des autorisations Envoyer en tant que  <br/> Et  <br/> Message envoyé à l'aide des autorisations Envoyer de la part de  <br/> | Activités de boîte aux lettres Exchange  <br/> |
+    |Envoie un message électronique à partir d'une boîte aux lettres partagée.  <br/> |Message envoyé à l'aide des autorisations Envoyer en tant que  <br/> And  <br/> Message envoyé à l'aide des autorisations Envoyer de la part de  <br/> | Activités de boîte aux lettres Exchange  <br/> |
    
 - Vous pouvez également utiliser les cmdlets **New-ActivityAlert** et **Set-ActivityAlert** dans Security & Compliance Center PowerShell pour créer et modifier des alertes d'activité. Gardez les éléments suivants à l'esprit si vous utilisez ces cmdlets pour créer ou modifier des alertes d'activité: 
     

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Créez des stratégies d'alerte dans le centre de sécurité et de conformité dans Office 365 et Microsoft 365 pour surveiller les menaces potentielles, les pertes de données et les autorisations. Ensuite, vous pouvez afficher et gérer les alertes générées lorsque les utilisateurs effectuent des activités qui répondent aux conditions d'une stratégie d'alerte.
-ms.openlocfilehash: 137f90668f4f8c78d30a01af8f50278d973bf1cb
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 4770738dd94aaec3fcc776ff7601d99d8d806ace
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000717"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814125"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Stratégies d'alerte dans le centre de sécurité et conformité
 
@@ -47,7 +47,7 @@ Voici un aperçu rapide du fonctionnement des stratégies d'alerte et des alerte
 
 Une stratégie d'alerte se compose d'un ensemble de règles et de conditions qui définissent l'activité de l'utilisateur ou de l'administrateur qui générera une alerte, d'une liste des utilisateurs qui déclencheront l'alerte s'ils effectuent l'activité, ainsi que le seuil qui définit le nombre de fois que l'activité doit avoir lieu avant qu'une n l'alerte est déclenchée. Vous pouvez également catégoriser la stratégie et lui attribuer un niveau de gravité. Ces deux paramètres vous aident à gérer les stratégies d'alerte (et les alertes déclenchées lorsque les conditions de la stratégie sont respectées), car vous pouvez filtrer ces paramètres lors de la gestion des stratégies et de l'affichage des alertes dans le centre de sécurité et de conformité. Par exemple, vous pouvez afficher les alertes qui répondent aux conditions de la même catégorie ou afficher les alertes ayant le même niveau de gravité.
   
-Pour afficher et créer des stratégies d'alerte, [https://compliance.microsoft.com](https://compliance.microsoft.com) accédez à, puis cliquez sur **stratégies d'alerte**des **alertes** \> . 
+Pour afficher et créer des stratégies d'alerte, [https://protection.office.com](https://protection.office.com) accédez à, puis cliquez sur **stratégies d'alerte**des **alertes** \> . 
   
 ![Dans le centre de sécurité et de conformité, cliquez sur alertes, puis sur stratégies d'alerte pour afficher et créer des stratégies d'alerte.](media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
   
@@ -100,7 +100,7 @@ Le tableau suivant répertorie et décrit les stratégies d'alerte par défaut d
 
 Le tableau indique également les plans Office 365 entreprise et Office 365 pour le gouvernement américain requis pour chacune d'entre elles. Notez que certaines stratégies d'alerte par défaut sont disponibles si votre organisation dispose de l'abonnement de module complémentaire approprié en plus d'un abonnement E1/G1 ou E3/G3. 
   
-|**Stratégie d'alerte par défaut**|**Description**|**Category**|**Abonnement entreprise Office 365**|
+|**Stratégie d'alerte par défaut**|**Description**|**Catégorie**|**Abonnement entreprise Office 365**|
 |:-----|:-----|:-----|:-----|
 |**Un clic d'URL potentiellement malveillant a été détecté** <br/> |Génère une alerte lorsqu'un utilisateur protégé par [Office 365 les liens approuvés ATP](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links) dans votre organisation clique sur un lien malveillant. Cet événement est déclenché lorsque les modifications de verdict d'URL sont identifiées par Office 365 ATP ou lorsque les utilisateurs remplacent les pages de liens approuvés Office 365 ATP (en fonction de la stratégie de liens approuvés Office 365 ATP). Cette stratégie d'alerte a un paramètre de gravité **élevée** . Pour les clients Office 365 ATP P2, E5, G5, cette alerte déclenche automatiquement une [enquête et une réponse automatiséEs d'office 365](https://go.microsoft.com/fwlink/?linkid=2084737).  Pour plus d'informations sur les événements qui déclenchent cette alerte, consultez la rubrique [set up Office 365 ATP Safe Links Policies](https://docs.microsoft.com/office365/securitycompliance/set-up-atp-safe-links-policies).  <br/> |Gestion des menaces <br/> |Ajout d'un abonnement de complément P2 à l'ATP P2/G5 ou à Office 365  <br/> |
 |**Création d'une règle de transfert/redirection** <br/> |Génère une alerte lorsqu'une personne de votre organisation crée une règle de boîte de réception pour sa boîte aux lettres qui transfère ou redirige les messages vers un autre compte de messagerie. Cette stratégie effectue uniquement le suivi des règles de boîte de réception créées à l'aide d'Outlook sur le Web (anciennement Outlook Web App) ou Exchange Online PowerShell. Cette stratégie a un paramètre de gravité **faible** . Pour plus d'informations sur l'utilisation des règles de boîte de réception pour transférer et rediriger le courrier électronique dans Outlook sur le Web, consultez [la rubrique utiliser des règles dans Outlook sur le Web pour transférer automatiquement des messages vers un autre compte](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).  <br/> |Gestion des menaces <br/> |E1/G1, E3/G3 ou E5/G5  <br/> |
@@ -126,7 +126,7 @@ Notez que l'activité inhabituelle surveillée par certaines stratégies intégr
 
 Lorsqu'une activité effectuée par les utilisateurs au sein de votre organisation correspond aux paramètres d'une stratégie d'alerte, une alerte est générée et affichée sur la page **afficher les alertes** dans le centre de sécurité et de conformité en fonction des paramètres d'une stratégie d'alerte, un message électronique la notification est également envoyée à une liste d'utilisateurs spécifiés lorsqu'une alerte est déclenchée. Pour chaque alerte, le tableau de bord de la page **afficher les alertes** affiche le nom de la stratégie d'alerte correspondante, la gravité et la catégorie de l'alerte (définies dans la stratégie d'alerte), ainsi que le nombre de fois qu'une activité a eu lieu et que l'alerte a été générée. créés Cette valeur est basée sur le paramètre seuil de la stratégie d'alerte. Le tableau de bord affiche également l'état de chaque alerte. Pour plus d'informations sur l'utilisation de la propriété Status pour gérer les alertes, voir la section [gestion des alertes](#managing-alerts) . 
   
-Pour afficher les alertes, accédez [https://compliance.microsoft.com](https://compliance.microsoft.com) à, puis **** \> cliquez sur alertes- **Afficher**les alertes. 
+Pour afficher les alertes, accédez [https://protection.office.com](https://protection.office.com) à, puis **** \> cliquez sur alertes- **Afficher**les alertes. 
   
 ![Dans sécurité et conformité, cliquez sur alertes, puis sur Afficher les alertes pour afficher les alertes.](media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
   
@@ -149,7 +149,7 @@ Vous pouvez utiliser les filtres suivants pour afficher un sous-ensemble de tout
 > [!NOTE]
 > Les fonctionnalités décrites dans cette section seront déployées dans les organisations commençant le 20 février 2019 et seront réalisées dans le monde entier à la fin du 2019 mars.
 
-Les autorisations de contrôle d'accès des bases de rôles (RBAC) affectées aux utilisateurs de votre organisation déterminent les alertes qu'un utilisateur peut afficher sur la page **afficher les alertes** . Comment cela est-il accompli? Les rôles de gestion attribués aux utilisateurs (en fonction de leur appartenance à des groupes de rôles dans le centre de sécurité & Compliance Center) déterminent les catégories d'alertes qu'un utilisateur peut afficher sur la page **afficher les alertes** . Voici quelques exemples :
+Les autorisations de contrôle d'accès des bases de rôles (RBAC) affectées aux utilisateurs de votre organisation déterminent les alertes qu'un utilisateur peut afficher sur la page **afficher les alertes** . Comment cela est-il accompli? Les rôles de gestion attribués aux utilisateurs (en fonction de leur appartenance à des groupes de rôles dans le centre de sécurité & Compliance Center) déterminent les catégories d'alertes qu'un utilisateur peut afficher sur la page **afficher les alertes** . Voici quelques exemples :
 
 - Les membres du groupe de rôles Gestion des enregistrements peuvent afficher uniquement les alertes générées par les stratégies d'alerte auxquelles la catégorie de **gouvernance des données** est attribuée.
 

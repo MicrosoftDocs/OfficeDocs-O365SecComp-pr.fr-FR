@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Utilisez l'outil de recherche de contenu dans le centre de conformité dans Office 365 ou Microsoft 365 pour rechercher du contenu dans des boîtes aux lettres, des sites SharePoint Online, des comptes OneDrive, des équipes Microsoft Teams, des groupes Office 365 et des conversations Skype entreprise. Vous pouvez utiliser des requêtes de recherche par mot clé et des conditions de recherche pour affiner les résultats de la recherche. Vous pouvez ensuite afficher un aperçu et exporter les résultats de la recherche. La recherche de contenu est également un outil efficace pour rechercher du contenu susceptible d'être lié à une demande d'objet de données RGPD.
-ms.openlocfilehash: c9cbf135ce44f26322ca3a6972e0d8a7b749fc8c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 67b32dcc6efcc096b9952be41380a8dc3700a668
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001017"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814065"
 ---
 # <a name="content-search-in-office-365"></a>Recherche de contenu dans Office 365
 
@@ -44,7 +44,7 @@ Une fois que vous avez exécuté une recherche de contenu, le nombre d'emplaceme
 
 Pour accéder à la page de **recherche de contenu** afin d'exécuter des recherches et d'afficher un aperçu et d'exporter les résultats de la recherche, un administrateur, un responsable de la mise en conformité ou un gestionnaire eDiscovery doit être membre du groupe de rôles gestionnaire eDiscovery dans le centre de sécurité _AMP_ Compliance Center. Pour plus d'informations, consultez la rubrique [attribution d'autorisations eDiscovery](assign-ediscovery-permissions.md).
   
-1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com) et connectez-vous à l'aide de votre adresse de messagerie et de votre mot de passe Office 365.
+1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l'aide de votre adresse de messagerie et de votre mot de passe Office 365.
     
 2. Cliquez sur **recherche de contenu**de **recherche** \> .
     

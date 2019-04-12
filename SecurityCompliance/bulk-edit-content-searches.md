@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: Utilisez l'éditeur de recherche en bloc dans le centre de sécurité et de conformité dans Office 365 ou Microsoft 365 pour modifier rapidement les emplacements de requête et de contenu pour une ou plusieurs recherches de contenu.
-ms.openlocfilehash: d372b6b1969e5b321cdea84981449241f3cec1c6
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 3a484ad689b1c638e0e14ed1643edea0f2f56c09
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001097"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813935"
 ---
 # <a name="bulk-edit-content-searches"></a>Modifier en bloc les recherches de contenu
 
@@ -26,7 +26,7 @@ Pour plus d'informations sur l'utilisation de l'outil statistiques de recherche,
   
 ## <a name="use-the-bulk-search-editor-to-change-queries"></a>Utiliser l'éditeur de recherche en bloc pour modifier les requêtes
 
-1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com), puis cliquez sur **recherche de contenu**de **recherche** \> .
+1. Accédez à [https://protection.office.com](https://protection.office.com), puis cliquez sur **recherche de contenu**de **recherche** \> .
     
 2. Dans la liste des recherches, sélectionnez une ou plusieurs recherches, puis cliquez sur le bouton ![](media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png)éditeur de recherche en bloc de l'éditeur de **recherche en** bloc.
     

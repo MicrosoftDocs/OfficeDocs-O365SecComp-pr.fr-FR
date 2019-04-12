@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: 'Utilisez la recherche de contenu dans le centre de sécurité & Compliance Center pour rechercher des boîtes aux lettres, des sites SharePoint Online et des emplacements OneDrive entreprise. '
-ms.openlocfilehash: 780a9eacc94985cf1f59993a1d5c2816474b8cb5
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 4c3d9cc024a495ff8464e1117d5f46c13c1b9a08
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000277"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814075"
 ---
 # <a name="run-a-content-search-in-the-security--compliance-center"></a>Exécuter une recherche de contenu dans le Centre de conformité et sécurité
 
@@ -35,7 +35,7 @@ Vous pouvez utiliser l'outil eDiscovery de recherche de contenu dans le centre d
     
 La recherche de contenu est un nouvel outil de recherche de découverte électronique offrant des fonctionnalités nouvelles et améliorées de mise à l’échelle et de performances. Utilisez la recherche de contenu pour exécuter des recherches de découverte électronique d’envergure. Vous pouvez rechercher toutes les boîtes aux lettres, tous les dossiers publics Exchange, ainsi que tous les sites SharePoint Online et OneDrive entreprise dans une recherche de contenu unique. Il n'existe aucune limite quant au nombre d'emplacements de contenu que vous pouvez rechercher. De même, le nombre de recherches pouvant s’exécuter en même temps n’est pas limité. Une fois que vous avez exécuté une recherche de contenu, le nombre d'emplacements de contenu et un nombre estimé de résultats de recherche sont affichés dans le volet d'informations sur la page **recherche de contenu** . Après avoir exécuté une recherche, vous pouvez afficher un aperçu des résultats, obtenir des statistiques sur les mots clés pour une ou plusieurs recherches, modifier en bloc les recherches de contenu et exporter les résultats vers un ordinateur local. 
   
- **Contents**
+ **Sommaire**
   
 [Create a search](run-a-content-search-in-the-security-and-compliance-center.md#create)
   
@@ -47,7 +47,7 @@ La recherche de contenu est un nouvel outil de recherche de découverte électro
   
 [Edit a search](run-a-content-search-in-the-security-and-compliance-center.md#edit)
   
-[Retry a search](run-a-content-search-in-the-security-and-compliance-center.md#retry)
+[Réessayer une recherche](run-a-content-search-in-the-security-and-compliance-center.md#retry)
   
 
   
@@ -69,12 +69,12 @@ La recherche de contenu est un nouvel outil de recherche de découverte électro
     
     Consultez la section pour obtenir des conseils sur la recherche de contenu dans les groupes Office 365 et Microsoft Teams. 
     
-[Revenir au début](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Retour au début](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="create-a-search"></a>Create a search
 <a name="create"> </a>
 
-1. Accédez à la page [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Accédez à la page [https://protection.office.com](https://protection.office.com).
     
 2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
@@ -209,7 +209,7 @@ En outre, les types de conteneurs de fichiers suivants sont pris en charge. Vous
     
 - . gzip
     
-[Revenir au début](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Retour au début](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="update-search-results"></a>Mettre à jour des résultats de recherche
 <a name="restart"> </a>
@@ -222,7 +222,7 @@ Lorsque vous mettez à jour les résultats d'une recherche de contenu existante,
     
     Un message d’état s’affiche, indiquant que les résultats sont en cours de récupération. Une fois la recherche terminée, les informations mises à jour sont affichées sous **Résultats** dans le volet Détails. Notez que la date dans le champ **Date de recherche** dans le volet Détails est remplacée par la date et l’heure actuelles. Pour actualiser les informations dans la liste des recherches de contenu ****![, cliquez sur](media/O365-MDM-Policy-RefreshIcon.gif)actualiser l'actualisation.
     
-[Revenir au début](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Retour au début](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="edit-a-search"></a>Modifier une recherche
 <a name="edit"> </a>
@@ -265,7 +265,7 @@ Voici plus d'informations sur les recherches de contenu.
  
 [Groupes Microsoft teams et Office 365](#microsoft-teams-and-office-365-groups)
   
-[OneDrive Entreprise](#onedrive-for-business)
+[OneDrive Entreprise](#onedrive-for-business)
   
 [Requêtes de recherche](#search-queries)
   
@@ -273,7 +273,7 @@ Voici plus d'informations sur les recherches de contenu.
   
 [Divers](#miscellaneous)
   
-[Revenir au début](#before-you-begin)
+[Retour au début](#before-you-begin)
   
 ### <a name="limits-and-performance"></a>Limites et performances
   

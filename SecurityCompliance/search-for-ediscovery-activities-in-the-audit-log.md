@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Découvrez comment rechercher dans le journal d'audit Office 365 des événements consignés lorsque les administrateurs de conformité effectuent des tâches de recherche de contenu et de cas eDiscovery dans le centre de sécurité & Compliance Center.
-ms.openlocfilehash: 4d16fd162cb8d00d940df90dcab3c5856e9e59ee
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 62c58d123367fd5ee6778034716bc1deb5afc1e2
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000707"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814095"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Rechercher des activités eDiscovery dans le journal d'audit Office 365
 
@@ -42,7 +42,7 @@ Pour plus d'informations sur la recherche dans le journal d'audit Office 365, le
 
 Actuellement, vous devez effectuer quelques opérations spécifiques pour afficher les activités de découverte électronique dans le journal d'audit Office 365. Voici comment procéder.
   
-1. Accédez à la page [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Accédez à la page [https://protection.office.com](https://protection.office.com).
     
 2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
@@ -73,7 +73,7 @@ Le tableau suivant décrit la recherche de contenu et les activités de découve
 > [!NOTE]
 > Les activités eDiscovery décrites dans cette section fournissent des informations similaires aux activités de l'applet de commande eDiscovery décrite dans la section suivante. Nous vous recommandons d'utiliser les activités eDiscovery décrites dans cette section, car elles apparaîtront dans les résultats de la recherche dans le journal d'audit dans les 30 minutes. Il faut 24 heures pour que les activités de la cmdlet eDiscovery apparaissent dans les résultats de la recherche dans le journal d'audit. 
   
-|**Nom convivial**|**Operation**|**Cmdlet correspondante**|**Description**|
+|**Nom convivial**|**Opération**|**Cmdlet correspondante**|**Description**|
 |:-----|:-----|:-----|:-----|
 |Ajout d'un membre au cas eDiscovery  <br/> |CaseMemberAdded  <br/> |Add-ComplianceCaseMember  <br/> |Un utilisateur a été ajouté en tant que membre d'un cas de découverte électronique. En tant que membre d'un cas, un utilisateur peut effectuer différentes tâches liées à la casse selon qu'il a reçu ou non les autorisations nécessaires.  <br/> |
 |Recherche de contenu modifiée  <br/> |SearchUpdated  <br/> |Set-ComplianceSearch  <br/> |Une recherche de contenu existante a été modifiée. Les modifications peuvent inclure l'ajout ou la suppression d'emplacements de contenu ou la modification de la requête de recherche.  <br/> |
@@ -82,9 +82,9 @@ Le tableau suivant décrit la recherche de contenu et les activités de découve
 |Appartenance au cas de découverte électronique modifiée  <br/> |CaseMemberUpdated  <br/> |Update-ComplianceCaseMember  <br/> |La liste d'appartenance d'un cas de découverte électronique a été modifiée. Cette activité est enregistrée lorsque tous les membres sont remplacés par un groupe de nouveaux utilisateurs. Si un seul membre est ajouté ou supprimé, l'opération CaseMemberAdded ou CaseMemberRemoved est enregistrée.  <br/> |
 |Filtre des autorisations de recherche modifié  <br/> |SearchPermissionUpdated  <br/> |Set-ComplianceSecurityFilter  <br/> |Un filtre d'autorisations de recherche a été modifié.  <br/> |
 |Modification d'une requête de recherche pour la conservation de cas eDiscovery  <br/> |HoldUpdated  <br/> |Set-CaseHoldRule  <br/> |Une conservation basée sur une requête associée à un cas de découverte électronique a été modifiée. Les modifications possibles incluent la modification de la requête ou de la plage de dates pour une conservation basée sur une requête.  <br/> |
-|Élément d'aperçu de recherche de contenu téléchargé  <br/> |PreviewItemDownloaded  <br/> |N/D  <br/> |Un utilisateur A téléchargé un élément sur son ordinateur local (en cliquant sur le lien **Télécharger l'élément d'origine** ) lors de l'aperçu des résultats de la recherche.  <br/> |
-|Élément d'aperçu de recherche de contenu mentionné  <br/> |PreviewItemListed  <br/> |N/D  <br/> |Un utilisateur A cliqué sur **aperçu des résultats** de la recherche pour afficher la page Aperçu des résultats de la recherche, qui répertorie jusqu'à 1000 éléments à partir des résultats d'une recherche de contenu.  <br/> |
-|Élément d'aperçu de recherche de contenu affiché  <br/> |PreviewItemRendered  <br/> |N/D  <br/> |Un gestionnaire eDiscovery a affiché un élément en cliquant dessus lors de l'aperçu des résultats de la recherche.  <br/> |
+|Élément d'aperçu de recherche de contenu téléchargé  <br/> |PreviewItemDownloaded  <br/> |S/O  <br/> |Un utilisateur A téléchargé un élément sur son ordinateur local (en cliquant sur le lien **Télécharger l'élément d'origine** ) lors de l'aperçu des résultats de la recherche.  <br/> |
+|Élément d'aperçu de recherche de contenu mentionné  <br/> |PreviewItemListed  <br/> |S/O  <br/> |Un utilisateur A cliqué sur **aperçu des résultats** de la recherche pour afficher la page Aperçu des résultats de la recherche, qui répertorie jusqu'à 1000 éléments à partir des résultats d'une recherche de contenu.  <br/> |
+|Élément d'aperçu de recherche de contenu affiché  <br/> |PreviewItemRendered  <br/> |S/O  <br/> |Un gestionnaire eDiscovery a affiché un élément en cliquant dessus lors de l'aperçu des résultats de la recherche.  <br/> |
 |Recherche de contenu créée  <br/> |SearchCreated  <br/> |New-ComplianceSearch  <br/> |Une nouvelle recherche de contenu a été créée.  <br/> |
 |Administrateur eDiscovery créé  <br/> |CaseAdminAdded  <br/> |Add-eDiscoveryCaseAdmin  <br/> |Un utilisateur a été ajouté en tant qu'administrateur de découverte électronique dans l'organisation.  <br/> |
 |Création d'un cas eDiscovery  <br/> |CaseAdded  <br/> |New-ComplianceCase  <br/> |Un cas de découverte électronique a été créé. Lors de la création d'un cas, il vous suffit de lui attribuer un nom. D'autres tâches liées à la casse telles que l'ajout de membres, la création de conservations et la création de recherches de contenu associées au cas entraînent la journalisation d'événements supplémentaires.  <br/> |
@@ -95,8 +95,8 @@ Le tableau suivant décrit la recherche de contenu et les activités de découve
 |Suppression d'un cas eDiscovery  <br/> |CaseRemoved  <br/> |Remove-ComplianceCase  <br/> |Un cas de découverte électronique a été supprimé. Notez que toute conservation associée à la casse doit être supprimée avant de pouvoir supprimer le cas.  <br/> |
 |Filtre des autorisations de recherche supprimées  <br/> |SearchPermissionRemoved  <br/> |Remove-ComplianceSecurityFilter  <br/> |Un filtre d'autorisations de recherche a été supprimé.  <br/> |
 |Requête de recherche supprimée pour la conservation de cas eDiscovery  <br/> |HoldRemoved  <br/> |Remove-CaseHoldRule  <br/> |Une conservation basée sur une requête associée à un cas de découverte électronique a été supprimée. La suppression de la requête de la suspension est souvent le résultat de la suppression d'une suspension. Lorsqu'une requête de conservation ou de suspension est supprimée, les emplacements de contenu en attente sont libérés.  <br/> |
-|Exportation de la recherche de contenu téléchargée  <br/> |SearchExportDownloaded  <br/> |N/D  <br/> |Un utilisateur A téléchargé les résultats d'une recherche de contenu sur son ordinateur local. Notez qu'une **exportation démarrée de l'activité de recherche de contenu** doit être initiée avant de pouvoir télécharger les résultats de la recherche.  <br/> |
-|Résultats prévisualisés de la recherche de contenu  <br/> |SearchPreviewed  <br/> |N/D  <br/> |Un utilisateur A affiché un aperçu des résultats d'une recherche de contenu.  <br/> |
+|Exportation de la recherche de contenu téléchargée  <br/> |SearchExportDownloaded  <br/> |S/O  <br/> |Un utilisateur A téléchargé les résultats d'une recherche de contenu sur son ordinateur local. Notez qu'une **exportation démarrée de l'activité de recherche de contenu** doit être initiée avant de pouvoir télécharger les résultats de la recherche.  <br/> |
+|Résultats prévisualisés de la recherche de contenu  <br/> |SearchPreviewed  <br/> |S/O  <br/> |Un utilisateur A affiché un aperçu des résultats d'une recherche de contenu.  <br/> |
 |Résultats purgés de la recherche de contenu  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |Un utilisateur A purgé les résultats d'une recherche de contenu en exécutant la commande **New-ComplianceSearchAction-purge** .  <br/> |
 |Suppression de l'analyse de la recherche de contenu  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |Une action prepare de recherche de contenu (pour préparer les résultats de recherche pour Office 365 Advanced eDiscovery) a été supprimée. Si l'action de préparation était inférieure à deux semaines, les résultats de recherche préparés pour Advanced eDiscovery ont été supprimés de la zone de stockage Microsoft Azure. Si l'action de préparation remonte à plus de 2 semaines, cet événement indique que seule l'action de préparation correspondante a été supprimée.  <br/> |
 |Suppression de l'exportation de la recherche de contenu  <br/> |RemovedSearchExported  <br/> |Remove-ComplianceSearchAction  <br/> |Une action d'exportation de recherche de contenu a été supprimée. Si l'action d'exportation était inférieure à deux semaines, les résultats de recherche qui ont été téléchargés dans la zone de stockage Microsoft Azure ont été supprimés. Si l'action d'exportation remonte à plus de 2 semaines, cet événement indique que seule l'action d'exportation correspondante a été supprimée.  <br/> |
@@ -156,7 +156,7 @@ Le tableau suivant décrit les propriétés qui sont incluses lorsque vous cliqu
   
 |**Propriété**|**Description**|
 |:-----|:-----|
-|Case  <br/> |Identité (GUID) du cas eDiscovery qui a été créé, modifié ou supprimé.  <br/> |
+|Cas  <br/> |Identité (GUID) du cas eDiscovery qui a été créé, modifié ou supprimé.  <br/> |
 |ClientApplication  <br/> |les activités de l'applet de commande eDiscovery ont une valeur d' **EMC** pour cette propriété. Cela indique que l'activité a été effectuée à l'aide de l'interface utilisateur de Security & Compliance Center ou de l'exécution de l'applet de commande dans PowerShell.  <br/> |
 |ClientIP  <br/> |Adresse IP du périphérique utilisé lors de la journalisation de l’activité. L’adresse IP apparaît au format IPv4 ou IPv6.  <br/> |
 |ClientRequestId  <br/> | Pour les activités eDiscovery, cette propriété est généralement vide.  <br/> |

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: Le RGPD donne aux citoyens de l'Union européenne (appelés «personnes des données») des droits spécifiques sur leurs données personnelles; ces droits incluent l'obtention de copies de celle-ci, la demande de modifications, la limitation du traitement de celle-ci, sa suppression ou sa réception dans un format électronique. Une demande officielle d'un objet de données qui doit agir sur ses données personnelles est appelée demande de l'objet de données ou DSR. Vous pouvez utiliser les dossiers DSR dans le centre de conformité dans Office 365 et Microsoft 365 pour gérer les investigations DSR de votre organisation.
-ms.openlocfilehash: d491a0098bfa27818d8a03ded3b2f86da54c0453
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: a131da86350fc288c1c9af371d28464230b742d6
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000107"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814025"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Gérer les demandes des personnes associées aux données RGPD avec l'outil de cas DSR dans le centre de sécurité & Compliance Center
 
@@ -56,7 +56,7 @@ Pour gérer les enquêtes en réponse à un DSR envoyé par une personne au sein
     
 Voici le processus de haut niveau pour l'utilisation de l'outil de cas DSR afin de gérer les investigations DSR:
   
-[Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
+[Étape 1 : attribuer des autorisations de découverte électronique aux membres potentiels de cas](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
 [Étape 2: créer un cas DSR et ajouter des membres](#step-2-create-a-dsr-case-and-add-members)
 
@@ -84,7 +84,7 @@ Pour obtenir des instructions pas à pas, consultez [la rubrique Assign eDiscove
 
 L'étape suivante consiste à créer un boîtier DSR. Lorsque vous créez un cas, vous pouvez choisir de démarrer la recherche intégrée ou vous pouvez créer le cas sans lancer la recherche. La procédure suivante vous indique de créer le cas sans lancer la recherche, puis vous montrer comment ajouter des membres au cas.
   
-1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com) et connectez-vous à Office 365 à l'aide de votre compte professionnel ou scolaire. 
+1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à Office 365 à l'aide de votre compte professionnel ou scolaire. 
     
 2. Dans le centre de sécurité & conformité, cliquez sur **demandes**des personnes concernées par la **confidentialité** \> des données, puis cliquez sur ![ajouter une icône](media/ITPro-EAC-AddIcon.gif) **nouveau DSR case**.
     

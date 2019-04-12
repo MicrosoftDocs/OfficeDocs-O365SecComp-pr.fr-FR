@@ -3,7 +3,7 @@ title: 'Purge automatique zéro heure : protection contre le courrier indésirab
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 12/05/2018
+ms.date: 04/11/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,16 +17,16 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: La suppression automatique de zéro heure (ZAP) est une fonctionnalité de protection de la messagerie qui détecte les messages contenant du courrier indésirable ou des programmes malveillants qui ont déjà été remis dans la boîte de réception de vos utilisateurs, puis rend le contenu malveillant inoffensif. Le mode de fonctionnement de ZAP dépend du type de contenu malveillant détecté.
-ms.openlocfilehash: 7a357b50a75012408d6958ce528fddf8c203540a
-ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
+ms.openlocfilehash: 507cd6af5320a3b925841786136d518c996e4d29
+ms.sourcegitcommit: 86ff2eba1d57b9d5288840788529e69ad9d836b6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479630"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31818601"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Purge automatique zéro heure : protection contre le courrier indésirable et les programmes malveillants
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 La suppression automatique de zéro heure (ZAP) est une fonctionnalité de protection de la messagerie qui détecte les messages contenant des messages hameçons, des courriers indésirables ou des programmes malveillants qui ont déjà été remis dans la boîte de réception de vos utilisateurs, puis rend le contenu malveillant inoffensif. Le mode de fonctionnement de ZAP dépend du type de contenu malveillant détecté; les messages peuvent être zapped en raison du contenu, des URL ou des pièces jointes du courrier.
   
@@ -48,7 +48,7 @@ Office 365 met à jour quotidiennement les signatures du moteur de blocage du co
 
 - Pour les programmes malveillants nouvellement détectés, ZAP supprime les pièces jointes des messages électroniques, que l'e-mail ait été lu ou non.
   
-L'action ZAP est transparente pour l'utilisateur de boîte aux lettres; elles ne sont pas notifiées en cas de déplacement d'un message électronique.
+L'action ZAP est transparente pour l'utilisateur de boîte aux lettres; elles ne sont pas notifiées en cas de déplacement d'un message électronique. Le message ne doit pas être âgé de plus de 2 jours.
   
 Les listes d'autorisation, les [règles de flux de messagerie](https://go.microsoft.com/fwlink/p/?LinkId=722755)et les règles de l'utilisateur final ou les filtres supplémentaires prévalent sur zap.
   
@@ -89,8 +89,11 @@ ZAP ne déplace pas les messages en quarantaine dans la boîte de réception pou
 ### <a name="what-if-i-have-a-custom-mail-flow-rule-block-allow-rule"></a>Que se passe-t-il si j'utilise une règle de flux de messagerie personnalisée (règle bloquer/autoriser)?
   
 Les règles créées par les administrateurs (règles de flux de messagerie) ou les règles de blocage et d'autorisation sont prioritaires. Ces messages sont exclus des critères de fonctionnalité de sorte que le flux de messagerie suit l'action de la règle (règle bloquer/autoriser).
-  
-## <a name="related-topics"></a>Rubriques connexes
+
+### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rule"></a>Que se passe-t-il si un message est déplacé vers un autre dossier (par exemple, la règle de boîte de réception)?
+ZAP fonctionne toujours dans ce cas, sauf si le message a été supprimé ou se trouve dans un courrier inDésirable.
+
+## <a name="related-topics"></a>Voir aussi
 
 [Protection contre le courrier indésirable Office 365](anti-spam-protection.md)
   

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Utilisez le centre de sécurité & Compliance Center pour créer et gérer des cas eDiscovery dans votre organisation. Vous pouvez affecter des membres au cas, placer des emplacements de contenu en conservation, exécuter des recherches de contenu associées à l'incident et exporter les résultats de la recherche. Vous pouvez également préparer des données de cas pour une analyse approfondie dans Advanced eDiscovery.
-ms.openlocfilehash: 3c3d3fb6d4e2244554059e731b4585dd546ff52b
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: cd7e7f9dba947ef28b27faf9df7b9e927ca73bd5
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000727"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814105"
 ---
 # <a name="ediscovery-cases-in-the-security--compliance-center"></a>cas de découverte électronique dans le centre de sécurité & conformité
 
@@ -30,7 +30,7 @@ Un cas de découverte électronique permet d’ajouter des membres à un cas, de
   
 Utilisez le flux de travail suivant pour configurer et utiliser des cas eDiscovery dans le centre de sécurité & Compliance Center et Advanced eDiscovery.
 
-[Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
+[Étape 1 : attribuer des autorisations de découverte électronique aux membres potentiels de cas](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
 [Étape 2: créer un nouveau dossier](#step-2-create-a-new-case)
 
@@ -79,7 +79,7 @@ Pour plus d'informations sur les autorisations de découverte électronique, con
   
  **Pour attribuer des autorisations de découverte électronique, procédez comme suit :**
   
-1. Accédez à la page [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Accédez à la page [https://protection.office.com](https://protection.office.com).
     
 2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
@@ -97,7 +97,7 @@ Pour plus d'informations sur les autorisations de découverte électronique, con
 
 L'étape suivante consiste à créer un cas de découverte électronique. Vous devez être membre du groupe de rôles Gestionnaire de découverte électronique pour créer des cas de découverte électronique. Comme expliqué précédemment, une fois que vous avez créé un nouveau cas dans le centre de sécurité et de conformité Security &, vous (et les autres membres du cas) pourrez accéder à cette même demande dans Advanced eDiscovery si votre organisation dispose d'un abonnement Office 365 E5.
   
-1. Accédez à la page [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Accédez à la page [https://protection.office.com](https://protection.office.com).
     
 2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     

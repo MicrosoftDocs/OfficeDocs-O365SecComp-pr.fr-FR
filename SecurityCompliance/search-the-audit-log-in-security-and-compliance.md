@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilisez le centre de sécurité & Compliance Center pour rechercher le journal d'audit unifié afin d'afficher l'activité des utilisateurs et des administrateurs dans votre organisation Office 365. "
-ms.openlocfilehash: d593c7d5403f658175850a66a55603dab2b60d42
-ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
+ms.openlocfilehash: d7dc3849a0a12c52979c46b9ac16cfb0a7cd1f3d
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479680"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814175"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Rechercher dans le journal d'audit dans le centre de sécurité & Compliance Center
 
@@ -118,7 +118,7 @@ Veillez à lire les éléments suivants avant de commencer à rechercher dans le
     |Microsoft Forms  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Project  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Stream  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-    |Microsoft Teams  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Microsoft Teams  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Power BI  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Centre de conformité et sécurité  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Sharepoint Online et OneDrive Entreprise  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
@@ -147,7 +147,7 @@ Voici le processus de recherche dans le journal d'audit dans Office 365.
   
 ### <a name="step-1-run-an-audit-log-search"></a>Étape 1: exécuter une recherche de journal d'audit
 
-1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Accédez à [https://protection.office.com](https://protection.office.com).
     
     > [!TIP]
     > Utilisez une session de navigation privée (pas une session normale) pour accéder au centre de sécurité & Compliance, car cela empêchera les informations d'identification avec lesquelles vous avez ouvert une session. Pour ouvrir une session de navigation InPrivate dans Internet Explorer ou Microsoft Edge, appuyez simplement sur CTRL + MAJ + P. Pour ouvrir une session de navigation privée dans Google Chrome (appelée fenêtre Incognito), appuyez sur CTRL + MAJ + N. 
@@ -454,11 +454,11 @@ Le tableau suivant répertorie les activités qui peuvent être consignées par 
 |:-----|:-----|:-----|
 |Ajout des autorisations de boîte aux lettres déléguée  <br/> |Add-MailboxPermission  <br/> |Un administrateur a attribué l'autorisation de boîte aux lettres FullAccess à un utilisateur (appelé délégué) à la boîte aux lettres d'une autre personne. L'autorisation FullAccess permet au délégué d'ouvrir la boîte aux lettres de l'autre personne, de lire et de gérer le contenu de la boîte aux lettres.  <br/> |
 |Message classifié en tant qu'enregistrement  <br/> |ApplyRecordLabel<br/> |Un message a été classé comme un enregistrement. Cela se produit lorsqu'une étiquette de rétention qui classifie le contenu en tant qu'enregistrement est manuellement ou automatiquement appliquée à un message.<br/> |
-|Messages copiés dans un autre dossier  <br/> |Copy  <br/> |Un message a été copié dans un autre dossier.  <br/> |
+|Messages copiés dans un autre dossier  <br/> |Copier  <br/> |Un message a été copié dans un autre dossier.  <br/> |
 |Élément de boîte aux lettres créé  <br/> |Create  <br/> |Un élément est créé dans le dossier calendrier, contacts, notes ou tâches de la boîte aux lettres; par exemple, une nouvelle demande de réunion est créée. Notez que la création, l'envoi ou la réception d'un message n'est pas audité. En outre, la création d'un dossier de boîte aux lettres n'est pas auditée.  <br/> |
 |Création d'une nouvelle règle de boîte de réception dans Outlook Web App  <br/> |NewInboxRule<br/> |<br/> |
 |Messages supprimés du dossier éléments supprimés  <br/> |SoftDelete  <br/> |Un message a été définitivement supprimé ou supprimé (récupérable) du dossier Éléments supprimés. Ces éléments sont déplacés vers le dossier éléments récupérables. Les messages sont également déplacés vers le dossier éléments récupérables lorsqu'un utilisateur le sélectionne et appuie sur **MAJ + SUPPR**.  <br/> |
-|Messages déPlacés dans un autre dossier  <br/> |Move  <br/> |Un message a été déplacé vers un autre dossier.  <br/> |
+|Messages déPlacés dans un autre dossier  <br/> |Déplacer  <br/> |Un message a été déplacé vers un autre dossier.  <br/> |
 |Messages déPlacés vers le dossier éléments supprimés  <br/> |MoveToDeletedItems  <br/> |Un message a été supprimé et déplacé vers le dossier Éléments supprimés.  <br/> |
 |Autorisation de dossier modifiée  <br/> |UpdateFolderPermissions  <br/> |Une autorisation de dossier a été modifiée. Les autorisations de dossier contrôlent les utilisateurs de votre organisation qui peuvent accéder aux dossiers de boîte aux lettres et aux messages dans le dossier.  <br/> |
 |Messages purgés de la boîte aux lettres  <br/> |HardDelete  <br/> |Un message a été purgé du dossier éléments récupérables (supprimé définitivement de la boîte aux lettres).  <br/> |

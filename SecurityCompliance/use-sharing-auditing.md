@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: "Le partage est une activité essentielle dans SharePoint Online et OneDrive entreprise. Les administrateurs peuvent désormais utiliser l'audit de partage dans le journal d'audit Office 365 pour déterminer le mode d'utilisation du partage dans leur organisation. "
-ms.openlocfilehash: 919592bff43379b552b83258c7b22b7eddb14e7a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 08b511acdf74edac5b2d595d1b60bdd84d630918
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219884"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813945"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Audit de partage pour trouver les ressources partagées avec des utilisateurs externes
 
@@ -73,13 +73,13 @@ Une exigence commune pour les administrateurs est la création d'une liste de to
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>Étape 1: Rechercher des événements de partage et exporter les résultats dans un fichier CSV
 
-La première étape consiste à rechercher dans le journal d'audit Office 365 des événements de partage. Pour plus d'informations (y compris les autorisations requises) sur la recherche dans le journal d'audit, voir [Search the audit log &amp; dans le centre de sécurité conformité Office 365](search-the-audit-log-in-security-and-compliance.md).
+La première étape consiste à rechercher dans le journal d'audit Office 365 des événements de partage. Pour plus d'informations (y compris les autorisations requises) sur la recherche dans le journal d'audit, voir [Search the audit log dans le centre de sécurité _AMP_ Compliance Center](search-the-audit-log-in-security-and-compliance.md).
   
 1. Accédez à la page [https://protection.office.com](https://protection.office.com).
     
 2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
-3. Dans le volet gauche du centre de &amp; sécurité conformité, cliquez sur recherches de **recherche &amp; **, puis sur **recherche de journal d'audit**.
+3. Dans le volet gauche du centre de sécurité & conformité, cliquez ****  > sur Rechercher dans le**Journal d'audit**.
     
     La page **recherche du journal d'audit** s'affiche. 
     
@@ -105,7 +105,7 @@ L'étape suivante consiste à filtrer le fichier CSV pour les événements **Sha
   
 1. Dans Excel 2016, ouvrez un classeur vide.
     
-2. Cliquez sur l’onglet **Données**. 
+2. Cliquez sur l'onglet **données** . 
     
 3. Cliquez sur **nouvelle requête** \> **à partir d'un fichier** \> **CSV**.
     

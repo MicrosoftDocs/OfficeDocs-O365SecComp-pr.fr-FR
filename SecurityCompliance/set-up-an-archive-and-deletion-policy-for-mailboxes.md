@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Créer une stratégie d'archivage et de suppression dans Office 365 qui déplace automatiquement les éléments vers la boîte aux lettres d'archivage d'un utilisateur.
-ms.openlocfilehash: 87e155869c6740dd839c09e3e31e0cb819dc5d37
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+ms.openlocfilehash: d1dafb145564e6db7e0df7505cff09d10a72e3af
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935269"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814015"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Configurer une stratégie d'archivage et de suppression pour les boîtes aux lettres de votre organisation Office 365
 
@@ -64,7 +64,7 @@ La première étape consiste à activer la boîte aux lettres d'archivage pour c
 2. Sign in to Office 365 using your global administrator account.
     
     
-3. Dans le centre &amp; de sécurité conformité, accédez à **Archives**de **gouvernance** \> des données.
+3. Dans le centre de sécurité & conformité, accédez à **Archives**de **gouvernance** \> des données.
     
     Une liste des boîtes aux lettres de votre organisation s'affiche et indique si la boîte aux lettres d'archivage correspondante est activée ou désactivée. 
     
@@ -85,7 +85,7 @@ La première étape consiste à activer la boîte aux lettres d'archivage pour c
     
     ![La liste des boîtes aux lettres avec la boîte aux lettres d'archivage activée](media/61a7cb97-1bed-4808-aa5f-b6b761cfa8de.png)
   
-8. Laissez le centre &amp; de sécurité conformité ouvert. Vous l'utiliserez à l'étape suivante.
+8. Laissez le centre de sécurité & de conformité ouvert. Vous l'utiliserez à l'étape suivante.
     
 ## <a name="step-2-create-new-retention-tags-for-the-archive-and-deletion-policies"></a>Étape 2: créer de nouvelles balises de rétention pour les stratégies d'archivage et de suppression
 
@@ -99,11 +99,11 @@ Dans cette étape, vous allez créer les trois balises de rétention personnalis
     
 Pour créer des balises de rétention, vous devez utiliser le centre d'administration Exchange dans votre organisation Exchange Online.
   
-1. Dans le centre &amp; de sécurité conformité, cliquez sur le lanceur d'applications dans le coin supérieur gauche, puis cliquez sur la vignette **administrateur** . 
+1. Dans le centre de sécurité & Compliance Center, cliquez sur le lanceur d'applications dans le coin supérieur gauche, puis cliquez sur la vignette **admin** . 
     
-2. Dans le volet de navigation de gauche du centre d'administration Office 365, cliquez sur **centres d'administration**, puis cliquez sur **Exchange**.
+2. Dans le volet de navigation de gauche du centre d'administration Microsoft 365, cliquez sur **centres d'administration**, puis cliquez sur **Exchange**.
     
-    ![Screenshot shows the Office 365 admin center with the Admin centers option expanded and Exchange selected.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
+    ![Capture d'écran: affiche le centre d'administration Microsoft 365 avec l'option centres d'administration développée et Exchange sélectionné.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
   
 3. Dans le centre d'administration Exchange, accédez à balises de rétention de **gestion** \> **** de conformité
     
