@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Le gestionnaire de plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes et les stratégies de conservation, et fournit un moyen intégré de parcourir l’activité d’étiquette et d’étiquette vers le contenu pour l’intégralité du cycle de vie de votre contenu, de la création à la destruction finale, en passant par la collaboration, la déclaration d’enregistrement et la conservation.
-ms.openlocfilehash: a6086ce73f898d261af46a1f1493b624db10931d
-ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
+ms.openlocfilehash: f104e5ea0046af1e8cdee39b1e7dc5f47524e707
+ms.sourcegitcommit: d9f695650e26e4125b00b6281717b4d5b63fc401
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30997270"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "31824433"
 ---
 # <a name="overview-of-file-plan-manager"></a>Vue d’ensemble du gestionnaire de plan de gestion de fichiers
 
@@ -31,9 +31,26 @@ Le gestionnaire de plan de gestion de fichiers offre des fonctionnalités de ges
 
 Les deux conditions requises pour accéder au gestionnaire de plan de gestion de fichiers sont les suivantes :
 - Un abonnement Office 365 Entreprise E5.
-- L’affectation de l’un des rôles suivants du centre de sécurité et de conformité à l’utilisateur : 
+- L’affectation de l’un des rôles suivants du centre de sécurité et de conformité à l’utilisateur :
     - Gestionnaire de conservation
     - Gestionnaire de conservation en lecture seule
+
+## <a name="default-retention-labels-and-label-policy"></a>Étiquettes de rétention par défaut et stratégie d’étiquette
+
+S’il n’existe aucune des étiquettes de rétention dans le centre de sécurité et conformité, la première fois que vous sélectionnez **Offre Fichier** dans le volet de navigation gauche, cela crée une stratégie d’étiquette appelée **Stratégie de Publication de Gouvernance des Données par défaut**. 
+
+Cette stratégie d’étiquette contient trois étiquettes de rétention :
+
+- **Processus opérationnels**
+- **Entreprise générale**
+- **Accord Contrat**
+
+Ces étiquettes de rétention sont uniquement configurées pour conserver le contenu, et non supprimer le contenu. Cette stratégie d’étiquette peut être publiée dans l’ensemble de votre organisation et peut être désactivée ou supprimée. 
+
+Vous pouvez déterminer qui a ouvert le Gestionnaire d’Offre de fichiers et désactivé l’expérience de première exécution en passant en revue le journal d’audit pour les activités **Créé la stratégie de rétention** et **Créé la configuration de rétention pour une stratégie de rétention**.
+
+> [!NOTE]
+> En raison des commentaires des clients, nous avons supprimé cette fonctionnalité qui crée les étiquettes de rétention par défaut et la stratégie d’étiquette mentionnées ci-dessus. Vous seulement verrez cette stratégie et les étiquettes si vous avez utilisé le Gestionnaire d’Offre de fichiers avant le 11 avril 2019.
 
 ## <a name="navigating-your-file-plan"></a>Navigation dans votre plan de gestion de fichiers
 
@@ -44,8 +61,8 @@ Notez que les étiquettes de conservation créées en dehors du plan de gestion 
 Sur l’onglet des **étiquettes du plan de gestion de fichiers**, les informations et fonctionnalités supplémentaires suivantes sont disponibles :
 
 ### <a name="label-settings-columns"></a>Colonnes de paramètres des étiquettes
- 
-- **Basé sur** identifie le type de déclencheur qui marque le début de la période de conservation. Les valeurs valides sont : 
+
+- **Basé sur** identifie le type de déclencheur qui marque le début de la période de conservation. Les valeurs valides sont :
     - Événement
     - Date de création
     - Dernière modification
@@ -58,7 +75,7 @@ Sur l’onglet des **étiquettes du plan de gestion de fichiers**, les informati
     - Conserver
     - Conserver et supprimer
     - Supprimer
-- **Destination** détermine ce qu’il advient du contenu à la fin de la période de conservation. Les valeurs valides sont les suivantes : 
+- **Destination** détermine ce qu’il advient du contenu à la fin de la période de conservation. Les valeurs valides sont les suivantes :
     - null
     - Aucune action
     - Suppression automatique
