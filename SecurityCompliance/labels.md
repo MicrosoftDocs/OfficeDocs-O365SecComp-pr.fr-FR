@@ -389,7 +389,7 @@ Après avoir publié ou appliqué automatiquement vos étiquettes de rétention,
   
 - **Explorateur d’activité des étiquettes**. Grâce à l’explorateur (voir ci-après), vous pouvez rapidement rechercher et afficher l’activité des étiquettes de rétention pour tout le contenu au sein de SharePoint et OneDrive Entreprise au cours des 30 derniers jours. Pour obtenir plus d’informations, consultez l’article [Afficher l’activité des étiquettes pour les documents](view-label-activity-for-documents.md).
 
-- Page **Analyse des étiquettes**. Les portails Centre de conformité Microsoft 365 et Centre de sécurité Microsoft 365 permettent d’afficher rapidement vos principales étiquettes et leurs applications. Ils permettent aussi d’afficher tous les contenus dotés d’étiquettes spécifiques. Pour en savoir plus, consultez la page [Afficher l’utilisation des étiquettes grâce à l’analyse des étiquettes](label-analytics.md).
+- Page **Analyse des étiquettes**. Les portails Centre de conformité Microsoft 365 et Centre de sécurité Microsoft 365 permettent d’afficher rapidement vos principales étiquettes et leurs applications. Ils permettent aussi d’afficher tous les contenus dotés d’étiquettes spécifiques. Pour en savoir plus, consultez la page [Afficher l’utilisation des étiquettes grâce à la page Analyse des étiquettes](label-analytics.md).
     
 - **Rapports de gouvernance des données**. Grâce à ces rapports, vous pouvez rapidement afficher les activités et les tendances des étiquettes de rétention pour tout le contenu dans Exchange, SharePoint et OneDrive Entreprise au cours des 90 derniers jours. Pour obtenir plus d’informations, consultez l’article [Affichage des rapports de gouvernance des données](view-the-data-governance-reports.md).
     

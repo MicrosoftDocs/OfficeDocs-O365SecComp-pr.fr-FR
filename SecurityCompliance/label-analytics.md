@@ -1,5 +1,5 @@
 ---
-title: Afficher l’utilisation d’étiquette avec les analytiques d’étiquette
+title: Afficher l’utilisation d’étiquette grâce à la page Analyse des étiquettes
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Après avoir créé vos étiquettes de rétention et vos étiquettes de sensibilité, vous souhaiterez voir comment ils sont utilisés au sein de votre client. Avec les analytiques d’étiquette dans le centre de conformité de Microsoft 365 et centre de sécurité Microsoft 365, vous pouvez voir rapidement les étiquettes qui sont les plus utilisées et où elles sont appliquées.
+description: Après avoir créé vos étiquettes de rétention et vos étiquettes de sensibilité, vous souhaiterez voir comment ils sont utilisés au sein de votre client. Les portails Centre de conformité Microsoft 365 et Centre de sécurité Microsoft 365 sont dotés d’une page intitulée Analyse des étiquettes. Elle indique les étiquettes les plus utilisées et leurs types d’applications.
 ms.openlocfilehash: d0289eb79dca04262ef61d58a8e622ae6d7cbe93
 ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
@@ -21,9 +21,9 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/29/2019
 ms.locfileid: "30994840"
 ---
-# <a name="view-label-usage-with-label-analytics"></a>Afficher l’utilisation d’étiquette avec les analytiques d’étiquette
+# <a name="view-label-usage-with-label-analytics"></a>Afficher l’utilisation d’étiquette grâce à la page Analyse des étiquettes
 
-Après avoir créé vos étiquettes de rétention et vos étiquettes de sensibilité, vous souhaiterez voir comment ils sont utilisés au sein de votre client. Avec les analytiques d’étiquette dans le centre de conformité de Microsoft 365 et centre de sécurité Microsoft 365, vous pouvez voir rapidement les étiquettes qui sont les plus utilisées et où elles sont appliquées.
+Après avoir créé vos étiquettes de rétention et vos étiquettes de sensibilité, vous souhaiterez voir comment ils sont utilisés au sein de votre client. Les portails Centre de conformité Microsoft 365 et Centre de sécurité Microsoft 365 sont dotés d’une page intitulée Analyse des étiquettes. Elle indique les étiquettes les plus utilisées et leurs types d’applications.
 
 Par exemple, avec analytique étiquette, vous pouvez afficher:
 
