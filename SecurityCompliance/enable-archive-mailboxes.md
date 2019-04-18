@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Utilisez le centre de sécurité & conformité dans Office 365 pour activer les boîtes aux lettres d'archivage afin de prendre en charge les exigences de rétention, eDiscovery et de conservation des messages de votre organisation.
-ms.openlocfilehash: d363943910d970576976d8386196b450dd5694f3
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.openlocfilehash: 334af008f6eb8baedff1239ed1692a0ad73acdb6
+ms.sourcegitcommit: d3e3ce391130f209f4d63c2528e1da8342cd732f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813965"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901942"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Activer les boîtes aux lettres d'archivage dans le centre de sécurité & conformité
   
@@ -37,7 +37,7 @@ Vous devez disposer du rôle destinataires de messagerie dans Exchange Online po
   
 ## <a name="enable-an-archive-mailbox"></a>Activation d’une boîte aux lettres d’archivage
   
-1. Accédez à la page [https://protection.office.com](https://protection.office.com).
+1. Accédez à la page [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
@@ -68,7 +68,7 @@ Notez que la stratégie d'archivage par défaut affectée aux boîtes aux lettre
   
 Pour désactiver une boîte aux lettres d'archivage:
   
-1. Accédez à la page [https://protection.office.com](https://protection.office.com).
+1. Accédez à la page [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
@@ -141,6 +141,6 @@ Exécutez la commande suivante pour désactiver la boîte aux lettres d'archivag
     
   - [Balises et stratégies de rétention](https://go.microsoft.com/fwlink/?LinkId=404424)
     
-  - [Stratégie de réTention par défaut dans Exchange Online ](https://go.microsoft.com/fwlink/?linkid=839418)
+  - [Stratégie de réTention par défaut dans Exchange Online](https://go.microsoft.com/fwlink/?linkid=839418)
     
   - [Configurer une stratégie d'archivage et de suppression pour les boîtes aux lettres de votre organisation Office 365](set-up-an-archive-and-deletion-policy-for-mailboxes.md)

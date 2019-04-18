@@ -14,23 +14,23 @@ ms.assetid: 6336cabb-b06e-402f-9e85-8bb9eb4ce68f
 ms.collection:
 - M365-security-compliance
 description: Le 15 août 2018, nous allons supprimer l'application mobile Office 365 message enCryption (OME) Viewer d'Android et d'Apple stores. L'application mobile Office 365 message enCryption Viewer était nécessaire pour lire les messages électroniques et les pièces jointes chiffrés avec la version précédente de OME sur les téléphones Apple et Android. Hormis la suppression de l'application de la visionneuse OME, nous n'avons aucune autre modification apportée à la version précédente de OME.
-ms.openlocfilehash: 0aa8ef0f2610284c1e897290c3f337804d78185b
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 82f28249e6b9911faea866f5a3574b635e45156c
+ms.sourcegitcommit: d3e3ce391130f209f4d63c2528e1da8342cd732f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936674"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901932"
 ---
 # <a name="deprecating-office-365-message-encryption-viewer-app"></a>DéPréciation de l'application d'afficheur de chiffrement de messages Office 365
 
-Le 15 août 2018, nous allons supprimer l'application mobile Office 365 message enCryption (OME) Viewer d'Android et d'Apple stores. L'application mobile Office 365 message enCryption Viewer était nécessaire pour lire les messages électroniques et les pièces jointes chiffrés avec la version précédente de OME sur les téléphones Apple et Android. Hormis la suppression de l'application de la visionneuse OME, nous n'avons aucune autre modification apportée à la version précédente de OME.
+Le 15 août 2018, nous avons supprimé l'application mobile Office 365 message enCryption (OME) dans les magasins Android et Apple. L'application mobile Office 365 message enCryption Viewer était nécessaire pour lire les messages électroniques et les pièces jointes chiffrés avec la version précédente de OME sur les téléphones Apple et Android. Hormis la suppression de l'application de la visionneuse OME, nous n'avons aucune autre modification apportée à la version précédente de OME.
   
-## <a name="changes-beginning-august-2018"></a>Modifications au début du 2018 août
+## <a name="changes-from-august-2018"></a>Modifications du 2018 août
 
-Comme annoncé en septembre dernier, nous avons publié une nouvelle version d' [Office 365 message](https://aka.ms/ome2017) Encryption pour permettre aux utilisateurs d'envoyer des messages chiffrés et protégés à des personnes à l'intérieur ou à l'extérieur de l'organisation sans avoir besoin de l'application mobile. Depuis, nous avons ajouté des fonctionnalités supplémentaires: 
+Comme annoncé en septembre 2017, nous avons publié une nouvelle version d' [Office 365](https://aka.ms/ome2017) le chiffrement de messages pour permettre aux utilisateurs d'envoyer des messages chiffrés et protégés à des personnes à l'intérieur ou à l'extérieur de l'organisation sans qu'il soit nécessaire de l'application mobile. Depuis, nous avons ajouté des fonctionnalités supplémentaires:
   
 - [Modèle de chiffrement uniquement](https://aka.ms/encryptonly)
-    
+
 - [Contrôle de déchiffrement des pièces jointes](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Admin-control-for-attachments-now-available-in-Office-365/ba-p/204007)
     
 Avec cette modification, les utilisateurs ne pourront plus télécharger l'application mobile Office 365 message enCryption Viewer depuis le 1er août. Par conséquent, les destinataires de messagerie peuvent ne pas être en mesure de lire les messages chiffrés avec la version précédente de OME sur certains appareils Android et Apple Mobile. Toutefois, ils pourront toujours lire ces messages sur des ordinateurs personnels (via des navigateurs de bureau). Les utilisateurs qui ont déjà téléchargé l'application continueront à pouvoir l'utiliser.
