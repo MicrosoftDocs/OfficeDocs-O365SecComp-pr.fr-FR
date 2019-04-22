@@ -12,7 +12,13 @@
 ## [Vue d’ensemble du tableau de bord de sécurité](security-dashboard.md)
 ## [Utiliser votre abonnement Azure Active Directory gratuit](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Planifier la sécurité et la conformité dans Office 365](plan-for-security-and-compliance.md)
-## [Chef formation atelier sécurité informatique informations (CISO) ](ciso-workshop.md)
+## [Atelier de formation du directeur général de la sécurité de l'information (SRCO)](ciso-workshop.md)
+### [Module 1 – Réunion de cybersécurité Microsoft](ciso-workshop-module-1.md)
+### [Module 2 – Gestion de la sécurité](ciso-workshop-module-2.md)
+### [Module 3 – Gestion des identités et des accès](ciso-workshop-module-3.md)
+### [Module 4a – Stratégie de protection contre les menaces, partie I](ciso-workshop-module-4a.md)
+### [Module 4b – Stratégie de protection contre les menaces, partie II](ciso-workshop-module-4b.md)
+### [Module 5 – Protection des informations](ciso-workshop-module-5.md)
 
 # Protéger l’accès aux données et services
 ## [Protéger l’accès aux données et aux services dans Office 365](protect-access-to-data-and-services.md)
