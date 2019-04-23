@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Utilisez le centre de sécurité & conformité dans Office 365 pour activer les boîtes aux lettres d'archivage afin de prendre en charge les exigences de rétention, eDiscovery et de conservation des messages de votre organisation.
-ms.openlocfilehash: 334af008f6eb8baedff1239ed1692a0ad73acdb6
-ms.sourcegitcommit: d3e3ce391130f209f4d63c2528e1da8342cd732f
+ms.openlocfilehash: d363943910d970576976d8386196b450dd5694f3
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31901942"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958305"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Activer les boîtes aux lettres d'archivage dans le centre de sécurité & conformité
   
@@ -37,7 +37,7 @@ Vous devez disposer du rôle destinataires de messagerie dans Exchange Online po
   
 ## <a name="enable-an-archive-mailbox"></a>Activation d’une boîte aux lettres d’archivage
   
-1. Accédez à la page [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Accédez à la page [https://protection.office.com](https://protection.office.com).
     
 2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
@@ -68,7 +68,7 @@ Notez que la stratégie d'archivage par défaut affectée aux boîtes aux lettre
   
 Pour désactiver une boîte aux lettres d'archivage:
   
-1. Accédez à la page [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Accédez à la page [https://protection.office.com](https://protection.office.com).
     
 2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     

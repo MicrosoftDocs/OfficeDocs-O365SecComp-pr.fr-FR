@@ -13,11 +13,11 @@ search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Découvrez comment rechercher dans le journal d'audit Office 365 des événements consignés lorsque les administrateurs de conformité effectuent des tâches de recherche de contenu et de cas eDiscovery dans le centre de sécurité & Compliance Center.
 ms.openlocfilehash: 62c58d123367fd5ee6778034716bc1deb5afc1e2
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814095"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958715"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Rechercher des activités eDiscovery dans le journal d'audit Office 365
 
@@ -73,7 +73,7 @@ Le tableau suivant décrit la recherche de contenu et les activités de découve
 > [!NOTE]
 > Les activités eDiscovery décrites dans cette section fournissent des informations similaires aux activités de l'applet de commande eDiscovery décrite dans la section suivante. Nous vous recommandons d'utiliser les activités eDiscovery décrites dans cette section, car elles apparaîtront dans les résultats de la recherche dans le journal d'audit dans les 30 minutes. Il faut 24 heures pour que les activités de la cmdlet eDiscovery apparaissent dans les résultats de la recherche dans le journal d'audit. 
   
-|**Nom convivial**|**Opération**|**Cmdlet correspondante**|**Description**|
+|**Nom convivial**|**Operation**|**Cmdlet correspondante**|**Description**|
 |:-----|:-----|:-----|:-----|
 |Ajout d'un membre au cas eDiscovery  <br/> |CaseMemberAdded  <br/> |Add-ComplianceCaseMember  <br/> |Un utilisateur a été ajouté en tant que membre d'un cas de découverte électronique. En tant que membre d'un cas, un utilisateur peut effectuer différentes tâches liées à la casse selon qu'il a reçu ou non les autorisations nécessaires.  <br/> |
 |Recherche de contenu modifiée  <br/> |SearchUpdated  <br/> |Set-ComplianceSearch  <br/> |Une recherche de contenu existante a été modifiée. Les modifications peuvent inclure l'ajout ou la suppression d'emplacements de contenu ou la modification de la requête de recherche.  <br/> |
@@ -172,7 +172,7 @@ Le tableau suivant décrit les propriétés qui sont incluses lorsque vous cliqu
 |ObjectType  <br/> |Type d'objet eDiscovery que l'utilisateur a créé, supprimé ou modifié; par exemple, une action de recherche de contenu (aperçu, exportation ou purge), un cas eDiscovery ou une recherche de contenu.  <br/> |
 |Opération  <br/> |Nom de l'opération qui correspond à l'activité eDiscovery effectuée.  <br/> |
 |OrganizationId  <br/> |GUID de votre organisation Office 365.  <br/> |
-|Paramètres  <br/> |Le nom et la valeur des paramètres qui ont été utilisés avec la cmdlet correspondante.  <br/> |
+|Parameters  <br/> |Le nom et la valeur des paramètres qui ont été utilisés avec la cmdlet correspondante.  <br/> |
 |PublicFolderLocations  <br/> |Emplacements de dossiers publics dans Exchange Online inclus dans une recherche de contenu ou mis en attente dans un cas eDiscovery.  <br/> |
 |Requête  <br/> |Requête de recherche associée à l'activité, telle qu'une recherche de contenu ou une conservation basée sur une requête.  <br/> |
 |RecordType  <br/> |Type d’opération indiqué par l’enregistrement. La valeur de **18** indique un événement lié à une activité indiquée dans la section activités de l'applet de commande [eDiscovery](#ediscovery-cmdlet-activities) . La valeur **24** indique un événement lié à une activité indiquée dans la section [How to Search for and View eDiscovery Activities](#how-to-search-for-and-view-ediscovery-activities) .  <br/> |

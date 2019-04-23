@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Présentation des stratégies de surveillance dans Office 365
-ms.openlocfilehash: db0dedbbb41eef334165a4bde65c45a52d14299a
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: 550f37ad4aa8af9e6bc1d3fd8b799c72c37f2067
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900093"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958555"
 ---
 # <a name="supervision-policies-in-office-365"></a>Stratégies de surveillance dans Office 365
 
@@ -50,7 +50,7 @@ Les stratégies de surveillance peuvent faciliter la surveillance des communicat
 
 ### <a name="supervision-policy"></a>Stratégie de supervision
 
-Vous allez créer des stratégies de surveillance dans le centre de sécurité & Compliance Center. Ces stratégies définissent les communications et les utilisateurs qui font l'objet d'une vérification dans votre organisation, définissent les conditions personnalisées que les communications doivent respecter et spécifie qui doit effectuer des révisions. Les utilisateurs inclus dans le groupe de rôles examen de surveillance peuvent configurer des stratégies et toute personne à laquelle ce rôle est attribué peut accéder à la page surveillance sous gouvernance des données dans le centre de sécurité & de la sécurité d'Office 365.
+Vous allez créer des stratégies de surveillance dans le centre de conformité. Ces stratégies définissent les communications et les utilisateurs qui font l'objet d'une vérification dans votre organisation, définissent les conditions personnalisées que les communications doivent respecter et spécifie qui doit effectuer des révisions. Les utilisateurs inclus dans le groupe de rôles examen de surveillance peuvent configurer des stratégies et quiconque disposant de ce rôle peut accéder à la page surveillance dans le centre de conformité.
 
 ### <a name="supervised-users"></a>Utilisateurs superVisés
 
@@ -60,9 +60,9 @@ Avant de commencer à utiliser la surveillance, vous devez déterminer les perso
 > Les utilisateurs surveillés par des stratégies de surveillance doivent disposer d'une licence de conformité Microsoft 365 E5, d'une licence Office 365 entreprise E3 avec le complément de conformité avancé ou être inclus dans un abonnement Office 365 entreprise E5.
 Si vous ne disposez pas d'un plan entreprise E5 existant et que vous souhaitez essayer de contrôler, vous pouvez vous [inscrire pour obtenir une version d'évaluation d'Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
-### <a name="reviewers"></a>Reviewers
+### <a name="reviewers"></a>Relecteurs
 
-Lorsque vous créez une stratégie de surveillance, vous déterminez également qui effectuera les révisions des messages des utilisateurs supervisés. Dans la stratégie, vous utiliserez les adresses de messagerie des utilisateurs pour identifier des individus ou des groupes de personnes afin d'examiner les communications surveillées.
+Lorsque vous créez une stratégie de surveillance, vous déterminez également qui effectuera les révisions des messages des utilisateurs supervisés. Dans la stratégie, vous utiliserez les adresses de messagerie des utilisateurs pour identifier des individus ou des groupes de personnes afin d'examiner les communications surveillées. Tous les relecteurs doivent avoir des boîtes aux lettres hébergées sur Exchange Online.
 
 ### <a name="groups-for-supervised-users-and-reviewers"></a>Groupes pour les utilisateurs et les relecteurs surveillés
 
@@ -82,7 +82,7 @@ Avec les stratégies de surveillance, vous pouvez choisir de surveiller les mess
 
 ### <a name="policy-settings"></a>Paramètres de stratégie
 
-#### <a name="direction"></a>Direction (Sens)
+#### <a name="direction"></a>Direction
 
 Par défaut, la **direction est** la condition est affichée et ne peut pas être supprimée. Les paramètres de direction de communication d'une stratégie peuvent être choisis individuellement ou ensemble:
 
@@ -94,9 +94,9 @@ Par défaut, la **direction est** la condition est affichée et ne peut pas êtr
 
 Vous pouvez inclure des types d'informations sensibles dans le cadre de votre stratégie de supervision. Les types d'informations sensibles sont des types de données prédéfinis ou personnalisés qui peuvent vous aider à identifier et à protéger les numéros de carte de crédit, les numéros de compte bancaire, les numéros de passeport, et bien plus encore. Dans le cadre de la [protection contre la perte de données (DLP)](data-loss-prevention-policies.md)d'Office 365, la configuration des informations sensibles peut tirer parti des modèles, de la proximité des caractères, des niveaux de confiance et même des types de données personnalisés pour identifier et marquer le contenu susceptible d'être sensible. Les types d'informations sensibles par défaut sont les suivants:
 
-- Finances
+- Financier
 - Médecine et santé
-- Politique de confidentialité
+- Confidentialité
 - Type d'informations personnalisées
 
 Pour en savoir plus sur les détails des informations sensibles et les modèles inclus dans les types par défaut, consultez la rubrique [types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
@@ -139,7 +139,7 @@ Si vous entrez plusieurs conditions, Office 365 utilise toutes les conditions en
 
 #### <a name="review-percentage"></a>Vérifier le pourcentage
 
-Vous pouvez spécifier un pourcentage de toutes les communications gérées par une stratégie de surveillance si vous souhaitez réduire la quantité de contenu à réviser. Nous allons sélectionner de manière aléatoire cette quantité de contenu à partir du pourcentage total correspondant aux conditions que vous avez choisies. Si vous souhaitez que les relecteurs examinent tous les éléments, vous pouvez entrer **100%** dans une stratégie de surveillance.
+Si vous souhaitez réduire la quantité de contenu à réviser, vous pouvez spécifier un pourcentage de toutes les communications régies par une stratégie de surveillance. Nous allons sélectionner de manière aléatoire cette quantité de contenu à partir du pourcentage total correspondant aux conditions que vous avez choisies. Si vous souhaitez que les relecteurs examinent tous les éléments, vous pouvez entrer **100%** dans une stratégie de surveillance.
 
 ## <a name="monitoring--managing"></a>Surveillance de la gestion des &
 
@@ -147,7 +147,7 @@ La surveillance des résultats de vos stratégies de surveillance et l'applicati
 
 ### <a name="supervision-policy-dashboard"></a>Tableau de bord de stratégie de supervision
 
-Le moyen le plus simple de gérer les résultats de stratégie de surveillance et de résoudre les éléments non traités est d'utiliser le tableau de bord de stratégie de supervision. Ce tableau de bord permet aux relecteurs de voir rapidement les éléments à vérifier, de prendre des mesures sur un élément et de passer en revue les résultats des éléments précédemment examinés et résolus pour chaque stratégie de surveillance. vous pouvez accéder au tableau de bord de stratégie de surveillance dans le centre de conformité Office 365 Security & à**** la **surveillance** > *de votre stratégie* > personnalisée.
+Le moyen le plus simple de gérer les résultats de stratégie de surveillance et de résoudre les éléments non traités est d'utiliser le tableau de bord de stratégie de supervision. Ce tableau de bord permet aux relecteurs de voir rapidement les éléments à vérifier, de prendre des mesures sur un élément et de passer en revue les résultats des éléments précédemment examinés et résolus pour chaque stratégie de surveillance. Vous pouvez accéder au tableau de bord de stratégie de supervision dans le centre de conformité à**** la **surveillance** > de*votre stratégie* > personnalisée.
 
 #### <a name="dashboard-home"></a>Accueil du tableau de bord
 
@@ -181,9 +181,9 @@ Si les relecteurs préféreront ne pas utiliser le tableau de bord de surveillan
 
 #### <a name="outlook-on-the-web"></a>Outlook sur le web
 
-Les utilisateurs désignés en tant que relecteurs dans une stratégie de supervision peuvent utiliser Outlook sur le Web pour passer en revue et résoudre les éléments de supervision. Le complément supervision est automatiquement installé dans Outlook sur le Web pour tous les relecteurs que vous avez spécifiés dans la stratégie. Aucune configuration supplémentaire n'est requise par votre organisation pour que les dossiers partagés de stratégie de surveillance soient disponibles pour les relecteurs configurés.
+Les utilisateurs désignés en tant que relecteurs dans une stratégie de supervision peuvent utiliser Outlook sur le Web pour passer en revue et résoudre les éléments de supervision. Le complément supervision est automatiquement installé dans Outlook sur le Web pour tous les relecteurs que vous avez spécifiés dans la stratégie. Aucune configuration supplémentaire n'est nécessaire pour que les dossiers partagés de stratégie de surveillance soient disponibles pour les relecteurs configurés.
 
-À l'aide d'Outlook sur le Web, les relecteurs peuvent:
+Avec Outlook sur le Web, les relecteurs peuvent:
 
 - Afficher les éléments filtrés selon un État conforme, non conforme, suspect et résolu
 - Baliser un seul élément comme conforme, non conforme, question ou résolu. Vous pouvez également enregistrer un commentaire avec l'élément pour clarifier l'action de marquage effectuée.
@@ -194,7 +194,7 @@ Les utilisateurs désignés en tant que relecteurs dans une stratégie de superv
 
 Pour passer en revue les communications identifiées par une stratégie de surveillance, les relecteurs peuvent également utiliser le complément de supervision pour Microsoft Outlook. Toutefois, les relecteurs doivent suivre certaines étapes pour les installer dans la version de bureau d'Outlook. Pour obtenir des instructions détaillées sur l'installation du complément de supervision pour Outlook, consultez la rubrique [configurer les stratégies de surveillance](configure-supervision-policies.md).
 
-À l'aide d'Outlook, les relecteurs peuvent:
+Avec Outlook, les relecteurs peuvent:
 
 - Afficher les éléments filtrés selon un État conforme, non conforme, suspect et résolu
 - Baliser un seul élément comme conforme, non conforme, question ou résolu. Vous pouvez également enregistrer un commentaire avec l'élément pour clarifier l'action de marquage effectuée.
@@ -211,7 +211,7 @@ Utilisez les rapports de surveillance pour afficher l'activité de révision au 
 
 ### <a name="view-the-supervision-report"></a>Afficher le rapport de supervision
 
-1. Connectez-vous au [Centre de sécurité _AMP_ conformité](https://protection.office.com/) à l'aide des informations d'identification d'un compte d'administrateur de votre organisation Office 365 qui dispose des autorisations nécessaires pour afficher les rapports de surveillance.
+1. Connectez-vous au [Centre de conformité](https://compliance.microsoft.com) avec les informations d'identification d'un compte d'administrateur de votre organisation disposant des autorisations pour afficher les rapports de surveillance.
 2. Accédez au **tableau de bord** **rapports** \> ou à la **supervision**. Vous verrez un widget rapport de surveillance avec une synthèse de l'activité de stratégie de surveillance actuelle.
 3. Sélectionnez le widget **surveillance** pour ouvrir la page rapport détaillé.
 
@@ -220,7 +220,7 @@ Utilisez les rapports de surveillance pour afficher l'activité de révision au 
   
 ### <a name="how-to-use-the-report"></a>Utilisation du rapport
 
-Lorsqu'une stratégie de surveillance identifie un message de communication à des fins de révision, le courrier électronique est remis au dossier de surveillance du réviseur dans Outlook et Outlook sur le Web (anciennement Outlook Web App). Ce rapport répertorie chaque nom de stratégie et le nombre de communications à chaque étape du processus de révision.
+Lorsqu'une stratégie de surveillance identifie un message de communication à des fins de révision, le courrier électronique est remis au dossier de surveillance du réviseur dans Outlook et Outlook sur le Web (anciennement Outlook Web App). Ce rapport répertorie chaque stratégie et le nombre de communications à chaque étape du processus de révision.
   
 Utilisez le rapport pour:
   
@@ -234,7 +234,7 @@ Voici une répartition des valeurs que vous pouvez voir dans la colonne **type**
 |**Type de balise**|**Signification**|
 |:-----|:-----|
 | Non révisé | Nombre de messages électroniques qui n'ont pas encore été consultés. Ces messages sont en attente de vérification dans le tableau de bord de supervision Office 365 ou dans le dossier de surveillance du réviseur dans Outlook/Outlook sur le Web
-| Compliant | Le nombre de messages vérifiés et marqués comme étant conformes. Ces messages doivent toujours être résolus. |
+| Conforme | Le nombre de messages vérifiés et marqués comme étant conformes. Ces messages doivent toujours être résolus. |
 | Suspects | Le nombre de messages consultés et marqués comme suspects. Cela agit comme un indicateur; d'autres relecteurs peuvent vous aider à vérifier si un message électronique a besoin d'une enquête pour la conformité. Ces messages doivent toujours être résolus. |
 | Non conforme (actif) | Nombre de messages électroniques non conformes que les relecteurs examinent actuellement. |
 | Non conforme (résolu) | Nombre de messages électroniques non conformes que les relecteurs ont examinés et résolus. |
@@ -247,9 +247,9 @@ Voici une répartition des valeurs que vous pouvez voir dans la colonne **type**
 
 ## <a name="auditing"></a>Audit
 
-Dans certains cas, vous devrez fournir des informations aux auditeurs de réglementation ou de conformité pour prouver le contrôle des activités et des communications des employés. Il peut s'agir d'un résumé de toutes les activités de surveillance associées à une stratégie définie ou à chaque fois qu'une stratégie de surveillance a été modifiée ou mise à jour. Les stratégies de surveillance disposent de pistes d'audit intégrées pour une préparation complète des audits internes ou externes. La preuve de procédures de surveillance peut être prouvée avec un historique d'audit détaillé de toutes les actions surveillées par vos stratégies de surveillance.
+Dans certains cas, vous devez fournir des informations aux auditeurs de réglementation ou de conformité pour prouver le contrôle des activités et des communications des employés. Il peut s'agir d'un résumé de toutes les activités de surveillance associées à une stratégie définie ou à chaque fois qu'une stratégie de surveillance a été modifiée ou mise à jour. Les stratégies de surveillance disposent de pistes d'audit intégrées pour une préparation complète des audits internes ou externes. La preuve de procédures de surveillance peut être prouvée avec un historique d'audit détaillé de toutes les actions surveillées par vos stratégies de surveillance.
 
-Les activités de stratégie de surveillance suivantes sont vérifiées et peuvent être consultées à l'aide des journaux d'audit Office 365 unifiés:
+Les activités de stratégie de surveillance suivantes sont vérifiées et disponibles dans les journaux d'audit Office 365 unifiés:
 
 |**Activité**|**Commandes associées**|
 |:-----|:-----|
@@ -258,7 +258,7 @@ Les activités de stratégie de surveillance suivantes sont vérifiées et peuve
 | Suppression d'une stratégie| [Remove-Supervisoryreviewpolicyv2 permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
 | Affichage d'une stratégie | [Get-Supervisoryreviewpolicyv2 permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2) |
 
-Les audits peuvent être récupérés à l'aide de la fonction de recherche de journal d'audit unifiée ou à l'aide de l'applet de commande PowerShell [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) .
+Les activités d'audit sont affichées à l'aide de la fonction de recherche de journal d'audit unifiée ou de l'applet de commande PowerShell [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) .
 
 Par exemple, l'exemple suivant montre comment renvoyer les activités de toutes les activités de vérification de surveillance (stratégies et règles) et répertorier les informations détaillées pour chacune d'elles:
 

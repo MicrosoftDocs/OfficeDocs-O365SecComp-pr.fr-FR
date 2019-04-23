@@ -3,7 +3,7 @@ title: Remise et aperçu dynamiques avec les pièces jointes sécurisées ATP Of
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/12/2019
+ms.date: 04/19/2019
 ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: Lorsque vous configurez vos stratégies de pièces jointes approuvées ATP, vous choisissez la remise dynamique pour éviter les retards de message et permettre aux utilisateurs de prévisualiser les pièces jointes en cours d'analyse.
-ms.openlocfilehash: d27fa16f8d1d117aa56a2080eb020ab3638ca6fe
-ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
+ms.openlocfilehash: 567b5f0c5bc75123169073bf5dc33de191187846
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573508"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958565"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Remise et aperçu dynamiques avec les pièces jointes sécurisées ATP Office 365
 
@@ -81,4 +81,4 @@ Il existe certains scénarios dans lesquels la remise dynamique n'est pas prise 
 
 - Messages chiffrés à l'aide de [S/MIME (Secure/Multipurpose Internet Mail Extensions)](s-mime-for-message-signing-and-encryption.md))
 
-Dans les cas où la remise dynamique n'est pas prise en charge, les pièces jointes fiables ATP n'analysent pas les messages électroniques. Toutefois, en fonction de la configuration de vos [stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md) , les URL dans les messages électroniques (et les fichiers Office) sont vérifiées.
+- Dans les cas où la remise dynamique n'est pas prise en charge, les pièces jointes fiables ATP n'analysent pas les messages électroniques. Toutefois, la remise des messages électroniques contenant des pièces jointes contenant des URL est vérifiée, en fonction de la configuration de vos [stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md) . Dans ce cas, les URL dans les messages électroniques et les fichiers Office sont vérifiées.

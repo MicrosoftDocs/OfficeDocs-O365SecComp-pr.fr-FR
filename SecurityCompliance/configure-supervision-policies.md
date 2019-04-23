@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: ConFigurez des stratégies de vérification de surveillance pour capturer les communications des employés à des fins de révision.
-ms.openlocfilehash: 1e381f5f435c7edb9f59afb07c22905f12d35513
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 92630b1405af6e297390751d9b00e24a82e03087
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001027"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958616"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurer des stratégies de surveillance pour votre organisation
 
@@ -36,51 +36,51 @@ Procédez comme suit pour configurer et utiliser la surveillance dans votre orga
   
 - **Étape 1 (facultatif)** - [configurer des groupes pour la surveillance (facultatif)](#step-1---set-up-groups-for-supervision-optional)
 
-    Avant de commencer à utiliser la surveillance, déterminez qui aura ses communications et qui effectueront ces révisions. Si vous souhaitez commencer avec quelques utilisateurs seulement pour voir le fonctionnement de la surveillance, vous pouvez ignorer la configuration des groupes pour le moment.
+    Avant de commencer à utiliser la surveillance, déterminez qui a besoin des communications vérifiées et qui effectuera des révisions. Si vous souhaitez commencer avec quelques utilisateurs seulement pour voir le fonctionnement de la surveillance, vous pouvez ignorer la configuration des groupes pour le moment.
 
 - **Étape 2 (obligatoire)** - [faire en sorte que la surveillance soit disponible dans votre organisation (obligatoire)](#step-2---make-supervision-available-in-your-organization-required)
 
-    Ajoutez-vous au groupe de rôles examen de surveillance afin de pouvoir configurer des stratégies. Tous les utilisateurs auxquels ce rôle est attribué peuvent accéder à la page **surveillance** dans le centre de conformité. Si le courrier électronique à vérifier est hébergé sur Exchange Online, chaque réviseur doit également disposer [d'un accès à PowerShell à distance à Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
+    Ajoutez-vous au groupe de rôles examen de surveillance afin de pouvoir configurer des stratégies. Tous les utilisateurs auxquels ce rôle est attribué peuvent accéder à la page **surveillance** dans le centre de conformité. Si la messagerie Reviewable est hébergée sur Exchange Online, chaque réviseur doit disposer [d'un accès à PowerShell à distance à Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
 - **Étape 3 (facultatif)** - [créer des types d'informations sensibles personnalisés et des dictionnaires personnels de mots clés](#step-3---create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
-    Si vous devez utiliser un type d'informations sensibles personnalisé ou un dictionnaire de mots clés personnalisé pour votre stratégie de surveillance, vous devez le créer avant de démarrer l'Assistant surveillance.
+    Si vous avez besoin d'un type d'informations sensibles personnalisé ou d'un dictionnaire de mots clés personnalisé pour votre stratégie de surveillance, vous devez le créer avant de démarrer l'Assistant surveillance.
 
 - **Étape 4 (obligatoire)** - [configurer une stratégie de surveillance](#step-4---set-up-a-supervision-policy-required)
 
-    Vous allez créer des stratégies de surveillance dans le centre de conformité. Ces stratégies définissent les communications qui font l'objet d'un examen dans votre organisation et spécifie qui doit effectuer des révisions. Les communications incluent le courrier électronique et les communications Microsoft Teams, ainsi que les communications de plateformes tierces (par exemple, Facebook, Twitter, etc.)
+    Vous créez des stratégies de surveillance dans le centre de conformité. Ces stratégies définissent les communications qui font l'objet d'un examen dans votre organisation et spécifie qui effectue des révisions. Les communications incluent le courrier électronique et les communications Microsoft Teams, ainsi que les communications de plateformes tierces (par exemple, Facebook, Twitter, etc.)
 
 - **Étape 5-(facultatif)** [Tester votre stratégie de supervision](#step-5---test-your-supervision-policy-optional)
 
-    Le test de votre stratégie de surveillance pour vous assurer qu'elle fonctionne comme vous le souhaitez est une partie importante de la façon de s'assurer que votre stratégie de conformité répond à vos normes.
+    Testez votre stratégie de surveillance pour vous assurer qu'elle fonctionne comme vous le souhaitez. Il est important de s'assurer que la stratégie de conformité répond à vos normes.
 
 - **Étape 6-(facultatif)** [Configurer Outlook pour les relecteurs qui ne souhaitent pas utiliser le tableau de bord de surveillance Office 365 ou Outlook sur le Web (ancienneMent Outlook Web App) pour consulter les communications contrôlées](#step-6---configure-outlook-for-reviewers-optional)
 
-    Outlook peut être configuré pour donner aux réviseurs l'accès à la fonctionnalité de supervision dans le client Outlook afin qu'ils puissent évaluer et catégoriser chaque élément.
+    ConFigurez Outlook pour donner aux réviseurs l'accès à la fonctionnalité de supervision dans le client Outlook afin qu'ils puissent évaluer et catégoriser chaque élément.
 
 ## <a name="step-1---set-up-groups-for-supervision-optional"></a>Étape 1: configurer des groupes pour la surveillance (facultatif)
 
- Lorsque vous créez une stratégie de surveillance, vous déterminez les personnes auxquelles les communications seront vérifiées et qui effectueront ces révisions. Dans la stratégie, vous utiliserez des adresses de messagerie pour identifier des individus ou des groupes de personnes. Pour simplifier votre configuration, vous pouvez créer des groupes pour les personnes dont la communication est vérifiée et les groupes pour les personnes qui feront passer ces communications. Si vous utilisez des groupes, vous aurez peut-être besoin de plusieurs, par exemple, si vous souhaitez surveiller les communications entre deux groupes distincts de personnes ou si vous souhaitez spécifier un groupe qui n'est pas supervisé.
+ Lorsque vous créez une stratégie de surveillance, vous définissez les personnes qui ont consulté leurs communications et qui effectue des révisions. Dans la stratégie, vous utiliserez des adresses de messagerie pour identifier des individus ou des groupes de personnes. Pour simplifier votre configuration, vous pouvez créer des groupes pour les personnes dont la communication est vérifiée et les groupes pour les personnes qui examinent ces communications. Si vous utilisez des groupes, vous aurez peut-être besoin de plusieurs. Par exemple, vous souhaitez surveiller les communications entre deux groupes distincts de personnes ou si vous souhaitez spécifier un groupe qui n'est pas supervisé.
 
 Utilisez le tableau suivant pour vous aider à configurer les groupes de votre organisation pour les stratégies de surveillance:
 
 | **Membre de la stratégie** | **Groupes pris en charge** | **Groupes non pris en charge** |
 |:-----|:-----|:-----|
 |Utilisateurs superVisés | Groupes de distribution <br> Groupes Office 365 | Groupes de distribution dynamique |
-| Reviewers | Groupes de sécurité à extension messagerie  | Groupes de distribution <br> groupes de distribution dynamiques |
+| Relecteurs | Groupes de sécurité à extension messagerie  | Groupes de distribution <br> groupes de distribution dynamiques |
   
-Pour gérer les utilisateurs supervisés dans les grandes organisations d'entreprise, il se peut que vous deviez surveiller tous les utilisateurs dans un très grand groupe. Vous pouvez utiliser PowerShell pour configurer un groupe de distribution pour une stratégie de surveillance globale pour le groupe affecté. Cela peut vous aider à surveiller des milliers d'utilisateurs à l'aide d'une seule stratégie et à mettre à jour la stratégie de supervision lorsque de nouveaux employés rejoignent votre organisation.
+Pour gérer les utilisateurs supervisés dans les grandes organisations d'entreprise, il se peut que vous deviez surveiller tous les utilisateurs entre les grands groupes. Vous pouvez utiliser PowerShell pour configurer un groupe de distribution pour une stratégie de surveillance globale pour le groupe affecté. Cela vous permet de surveiller des milliers d'utilisateurs à l'aide d'une seule stratégie et de mettre à jour la stratégie de supervision lorsque de nouveaux employés rejoignent votre organisation.
 
-1. Créez un [groupe de distribution](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps) dédié pour votre stratégie de surveillance globale avec les propriétés suivantes. Assurez-vous que ce groupe de distribution n'est pas utilisé à d'autres fins ou d'autres services Office 365.
+1. Créez un [groupe de distribution](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps) dédié pour votre stratégie de surveillance globale avec les propriétés suivantes: Assurez-vous que ce groupe de distribution n'est pas utilisé à d'autres fins ou d'autres services Office 365.
 
-    - **MemberDepartRestriction = fermé**. Cela garantit que les utilisateurs ne peuvent pas se supprimer eux-mêmes du groupe de distribution.
-    - **MemberJoinRestriction = fermé**. Cela garantit que les utilisateurs ne peuvent pas s'ajouter eux-mêmes au groupe de distribution.
-    - **ModerationEnabled = true**. Cela permet de s'assurer que tous les messages envoyés à ce groupe doivent être approuvés et que le groupe n'est pas utilisé pour communiquer en dehors de la configuration de la stratégie de supervision.
+    - **MemberDepartRestriction = fermé**. Garantit que les utilisateurs ne peuvent pas se supprimer eux-mêmes du groupe de distribution.
+    - **MemberJoinRestriction = fermé**. Garantit que les utilisateurs ne peuvent pas s'ajouter eux-mêmes au groupe de distribution.
+    - **ModerationEnabled = true**. Garantit que tous les messages envoyés à ce groupe sont soumis à approbation et que le groupe n'est pas utilisé pour communiquer en dehors de la configuration de la stratégie de supervision.
 
     ```
     New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
     ```
-2. Sélectionnez un [attribut personnalisé Exchange](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes?view=exchserver-2019&viewFallbackFrom=exchonline-ww) inutilisé à utiliser pour le suivi des utilisateurs qui ont été ajoutés à la stratégie de surveillance dans votre organisation.
+2. Sélectionnez un [attribut personnalisé Exchange](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes?view=exchserver-2019&viewFallbackFrom=exchonline-ww) inutilisé pour suivre les utilisateurs ajoutés à la stratégie de surveillance dans votre organisation.
 
 3. Exécutez le script PowerShell suivant sur une planification périodique pour ajouter des utilisateurs à la stratégie de surveillance:
 
@@ -106,7 +106,7 @@ Pour plus d'informations sur la configuration des groupes, voir:
 
 Pour que la **surveillance** soit disponible sous la forme d'une option de menu dans le centre de conformité, vous devez disposer du rôle d'administrateur examen de surveillance.
   
-Pour ce faire, vous pouvez vous ajouter en tant que membre du groupe de rôles examen de surveillance ou créer un nouveau groupe de rôles.
+Pour ce faire, vous pouvez vous ajouter en tant que membre du groupe de rôles examen de surveillance, ou vous pouvez créer un groupe de rôles.
   
 ### <a name="add-members-to-the-supervisory-review-role-group"></a>Ajouter des membres au groupe de rôles examen de surveillance
 
@@ -140,7 +140,7 @@ Pour sélectionner des types d'informations sensibles personnalisés ou des dict
 
 ### <a name="create-custom-keyword-dictionarylexicon-optional"></a>Créer un dictionnaire/Lexique de mots clés personnalisé (facultatif)
 
-À l'aide d'un éditeur de texte (comme le bloc-notes), créez un nouveau fichier incluant les termes de mots clés que vous souhaitez surveiller dans une stratégie de surveillance. Assurez-vous que chaque terme se trouve sur une ligne distincte et enregistrez le fichier au format **Unicode/UTF-16 (Little endian)** .
+Utilisez un éditeur de texte (comme le bloc-notes) pour créer un fichier qui inclut les termes de mots clés que vous souhaitez surveiller dans une stratégie de surveillance. Assurez-vous que chaque terme se trouve sur une ligne distincte et enregistrez le fichier au format **Unicode/UTF-16 (Little endian)** .
 
 ### <a name="create-custom-sensitive-information-types"></a>Créer des types d'informations sensibles personnalisés
 
@@ -168,12 +168,12 @@ Pour sélectionner des types d'informations sensibles personnalisés ou des dict
     - Définir les conditions de la stratégie de surveillance.
     - Choisissez si vous souhaitez inclure des types d'informations sensibles. C'est ici que vous pouvez sélectionner les types d'informations sensibles par défaut et personnalisés.
     - Définir le pourcentage de communications à réviser.
-    - Choisissez les relecteurs de la stratégie. Les relecteurs peuvent être des utilisateurs individuels ou des [groupes de sécurité à extension messagerie](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group).
+    - Choisissez les relecteurs de la stratégie. Les relecteurs peuvent être des utilisateurs individuels ou des [groupes de sécurité à extension messagerie](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups#create-a-mail-enabled-security-group). Tous les relecteurs doivent avoir des boîtes aux lettres hébergées sur Exchange Online.
     - Examinez vos sélections de stratégie et créez la stratégie.
 
 ## <a name="step-5---test-your-supervision-policy-optional"></a>Étape 5: test de votre stratégie de supervision (facultatif)
 
-Une fois que vous avez créé une stratégie de surveillance, il est recommandé de tester les conditions que vous avez définies de façon appropriée. Vous pouvez également [tester vos stratégies de protection contre la perte de données (DLP)](create-test-tune-dlp-policy.md) si vos stratégies de surveillance incluent des types d'informations sensibles. Suivez les étapes ci-dessous pour tester votre stratégie de surveillance:
+Une fois que vous avez créé une stratégie de surveillance, il est recommandé de tester les conditions que vous avez définies de façon appropriée. Vous pouvez également [tester vos stratégies de protection contre la perte de données (DLP)](create-test-tune-dlp-policy.md) si vos stratégies de surveillance incluent des types d'informations sensibles. Suivez les étapes ci-dessous pour tester votre stratégie de supervision:
 
 1. Ouvrez un client de messagerie ou Microsoft teams connecté en tant qu'utilisateur supervisé défini dans la stratégie que vous souhaitez tester.
 2. Envoyez un message électronique ou une conversation Microsoft teams qui répond aux critères que vous avez définis dans la stratégie de supervision. Il peut s'agir d'un mot clé, d'une taille de pièce jointe, d'un domaine, etc. Assurez-vous de déterminer si vos paramètres conditionnels configurés dans la stratégie sont trop restrictifs ou trop stricts.
@@ -185,11 +185,11 @@ Une fois que vous avez créé une stratégie de surveillance, il est recommandé
 
 ## <a name="step-6---configure-outlook-for-reviewers-optional"></a>Étape 6-configurer Outlook pour les réviseurs (facultatif)
 
-Les relecteurs qui souhaitent utiliser Outlook au lieu d'utiliser le tableau de bord de surveillance dans Office 365 pour passer en revue les communications doivent configurer leur client Outlook.
+Les relecteurs qui souhaitent utiliser Outlook au lieu du tableau de bord de surveillance dans Office 365 pour examiner les communications doivent configurer leur client Outlook.
 
 ### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>Étape 1: Copiez l'adresse de la boîte aux lettres de supervision
 
-Pour configurer la révision pour le bureau Outlook ou pour Outlook pour le Web, vous aurez besoin de l'adresse de la boîte aux lettres de surveillance créée dans le cadre de la configuration de la stratégie de supervision.
+Pour configurer la révision pour le bureau Outlook ou pour Outlook pour le Web, vous avez besoin de l'adresse de la boîte aux lettres de surveillance créée dans le cadre de la configuration de la stratégie de supervision.
   
 > [!NOTE]
 > Si une autre personne a créé la stratégie, vous devez obtenir cette adresse auprès de celle-ci pour installer le complément.
@@ -200,13 +200,13 @@ Pour configurer la révision pour le bureau Outlook ou pour Outlook pour le Web,
 
 2. Accédez à **surveillance**.
 
-3. Cliquez sur la stratégie de surveillance qui rassemble les communications que vous souhaitez examiner.
+3. Sélectionnez une stratégie de surveillance pour les communications que vous souhaitez examiner.
 
 4. Dans la fenêtre mobile détails de la stratégie, sous **boîte aux lettres de supervision**, copiez l'adresse.<br/>![La section «boîte aux lettres de surveillance» d'une fenêtre de détails de la stratégie de supervision indiquant l'adresse de la supervision sélectionnée](media/71779d0e-4f01-4dd3-8234-5f9c30eeb067.jpg)
   
 ### <a name="step-2-configure-the-supervision-mailbox-for-outlook-access"></a>Étape 2: configuration de la boîte aux lettres de supervision pour l'accès à Outlook
 
-Ensuite, les relecteurs doivent exécuter des commandes PowerShell Exchange Online pour pouvoir connecter Outlook à la boîte aux lettres de supervision.
+Ensuite, les réviseurs doivent exécuter quelques commandes PowerShell Exchange Online pour pouvoir connecter Outlook à la boîte aux lettres de supervision.
   
 1. Connectez-vous à Exchange Online PowerShell. [Comment procéder ?](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
 
@@ -216,16 +216,16 @@ Ensuite, les relecteurs doivent exécuter des commandes PowerShell Exchange Onli
 
     ```Set-Mailbox "<SupervisoryReview{GUID}@domain.onmicrosoft.com>" -HiddenFromAddressListsEnabled: $false```
 
-3. Patientez au moins une heure avant de passer à l'étape 3 ci-dessous.
+3. Patientez au moins une heure avant de passer à l'étape 3.
 
 ### <a name="step-3-create-an-outlook-profile-to-connect-to-the-supervision-mailbox"></a>Étape 3: créer un profil Outlook pour se connecter à la boîte aux lettres de supervision
 
-Pour la dernière étape, les relecteurs devront créer un profil Outlook pour se connecter à la boîte aux lettres de supervision.
+Pour la dernière étape, les réviseurs doivent créer un profil Outlook pour se connecter à la boîte aux lettres de supervision.
 
 > [!NOTE]
 > Pour créer un nouveau profil Outlook, vous devez utiliser les paramètres de messagerie dans le panneau de configuration de Windows. Le chemin d'accès à ces paramètres peut dépendre du système d'exploitation Windows (Windows 7, Windows 8 ou Windows 10) que vous utilisez et de la version d'Outlook installée.
   
-1. Ouvrez le panneau de configuration et, dans la zone de **recherche** en haut de la fenêtre, tapez **courrier**.<br/>(Vous ne savez pas comment accéder au panneau de configuration? Voir [où est le panneau de configuration?](https://support.microsoft.com/help/13764/windows-where-is-control-panel)
+1. Ouvrez le panneau de configuration. Dans la zone de **recherche** en haut de la fenêtre, tapez **courrier**.<br/>(Vous ne savez pas comment accéder au panneau de configuration? Voir [où est le panneau de configuration?](https://support.microsoft.com/help/13764/windows-where-is-control-panel)
   
 2. Ouvrez l'application de **messagerie** .
 
@@ -241,11 +241,11 @@ Pour la dernière étape, les relecteurs devront créer un profil Outlook pour s
   
 8. Lorsque vous y êtes invité, entrez vos informations d'identification Office 365.
 
-9. Si elle réussit, vous verrez le dossier ** \<surveillance\> -nom** de la stratégie répertorié dans la liste des dossiers dans Outlook.
+9. Si elle réussit, vous verrez le dossier ** \<surveillance\> — nom** de la stratégie répertorié dans la liste des dossiers dans Outlook.
 
 ## <a name="powershell-reference"></a>Référence PowerShell
 
-Si nécessaire, vous pouvez créer et gérer des stratégies de surveillance à l'aide des applets de commande PowerShell suivantes:
+Si nécessaire, vous pouvez créer et gérer des stratégies de surveillance avec les cmdlets PowerShell suivantes:
 
 - [New-Supervisoryreviewpolicyv2 permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2?view=exchange-ps)
 - [Get-Supervisoryreviewpolicyv2 permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2?view=exchange-ps)

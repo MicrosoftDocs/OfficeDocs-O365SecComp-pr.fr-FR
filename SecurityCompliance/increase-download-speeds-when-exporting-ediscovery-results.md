@@ -12,18 +12,18 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: Découvrez comment configurer le Registre Windows pour augmenter le débit de données lors du téléchargement des résultats de recherche et des données de recherche à partir du centre de sécurité & Compliance Center et de la fonctionnalité eDiscovery avancée dans Office 365.
-ms.openlocfilehash: 36a4f1766f3ac0108d1829c93cfca63bc5cf09f5
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 10eff929d6b668d5e2bc22d8ee7f223da4943326
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000917"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958622"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>Augmentation de la vitesse de téléchargement lors de l'exportation des résultats de recherche eDiscovery à partir d'Office 365
 
 Lorsque vous utilisez l'outil d'exportation de découverte électronique Office 365 pour télécharger les résultats d'une recherche de contenu dans le centre de sécurité & Compliance Center ou télécharger des données à partir d'Office 365 Advanced eDiscovery, l'outil démarre un certain nombre d'opérations d'exportation simultanées à télécharger les données sur votre ordinateur local. Par défaut, le nombre d'opérations simultanées est défini sur 8 fois le nombre de cœurs de l'ordinateur que vous utilisez pour télécharger les données. Par exemple, si vous disposez d'un ordinateur double cœur (ce qui signifie que deux unités de traitement central sur une puce), le nombre d'opérations d'exportation simultanées par défaut est de 16. Pour augmenter le débit de transfert de données et accélérer le processus de téléchargement, vous pouvez augmenter le nombre d'opérations simultanées en configurant un paramètre de Registre Windows sur l'ordinateur que vous utilisez pour télécharger les résultats de la recherche. Pour accélérer le processus de téléchargement, nous vous recommandons de commencer avec un paramètre de 24 opérations simultanées.
   
-Si vous téléchargez des résultats de recherche sur un réseau à faible bande passante, l'augmentation de ce paramètre peut avoir un impact négatif. Vous pouvez également augmenter le paramètre sur plus de 24 opérations simultanées dans un réseau à bande passante élevée (le nombre maximal d'opérations simultanées est de 512). Une fois que vous avez configuré ce paramètre de Registre, vous devrez peut-être le modifier pour trouver le nombre optimal d'opérations simultanées pour votre environnement.
+Si vous téléchargez des résultats de recherche sur un réseau à faible bande passante, l'augmentation de ce paramètre peut avoir un impact négatif. Vous pouvez également augmenter le paramètre sur plus de 24 opérations simultanées dans un réseau à bande passante élevée (le nombre maximal d'opérations simultanées est de 48). Une fois que vous avez configuré ce paramètre de Registre, vous devrez peut-être le modifier pour trouver le nombre optimal d'opérations simultanées pour votre environnement.
   
 ## <a name="create-a-registry-setting-to-change-the-number-of-concurrent-operations-when-exporting-data"></a>Créer un paramètre de Registre pour modifier le nombre d'opérations simultanées lors de l'exportation des données
 

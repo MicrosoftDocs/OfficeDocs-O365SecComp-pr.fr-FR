@@ -16,11 +16,11 @@ ms.collection:
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: Le RGPD donne aux citoyens de l'Union européenne (appelés «personnes des données») des droits spécifiques sur leurs données personnelles; ces droits incluent l'obtention de copies de celle-ci, la demande de modifications, la limitation du traitement de celle-ci, sa suppression ou sa réception dans un format électronique. Une demande officielle d'un objet de données qui doit agir sur ses données personnelles est appelée demande de l'objet de données ou DSR. Vous pouvez utiliser les dossiers DSR dans le centre de conformité dans Office 365 et Microsoft 365 pour gérer les investigations DSR de votre organisation.
 ms.openlocfilehash: a131da86350fc288c1c9af371d28464230b742d6
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814025"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958705"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Gérer les demandes des personnes associées aux données RGPD avec l'outil de cas DSR dans le centre de sécurité & Compliance Center
 
@@ -56,7 +56,7 @@ Pour gérer les enquêtes en réponse à un DSR envoyé par une personne au sein
     
 Voici le processus de haut niveau pour l'utilisation de l'outil de cas DSR afin de gérer les investigations DSR:
   
-[Étape 1 : attribuer des autorisations de découverte électronique aux membres potentiels de cas](#step-1-assign-ediscovery-permissions-to-potential-case-members)
+[Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
 [Étape 2: créer un cas DSR et ajouter des membres](#step-2-create-a-dsr-case-and-add-members)
 

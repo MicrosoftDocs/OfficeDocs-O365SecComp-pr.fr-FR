@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d053d236faed0ff35504207d6dd1beb33928acd3
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 7830b483190a69e6055fae369580064c5df42f49
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295077"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958285"
 ---
 # <a name="add-search-results-to-a-working-set"></a>Ajouter des résultats de recherche à un ensemble de travail
 
@@ -34,3 +34,15 @@ Vous pouvez ensuite choisir de l'ajouter à un jeu de travail existant ou à un 
 ![Sélectionner une plage de travail](../media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
 
 L'ajout de données à un jeu de travail est un processus long, vous pouvez suivre l'avancement sous l'onglet travaux ou dans la colonne État de la plage de *travail* de l'onglet *recherches* .  Le processus inclut la collecte d'éléments à partir d'Office 365 et l'indexation & de l'ingestion.  Une fois le traitement des jeux de travail terminé, vous pouvez accéder à la plage de travail en cliquant sur l'onglet *jeux de travail* , puis sur le jeu de travail.  Vous pouvez ensuite passer à la recherche, à la révision, au balisage et à l'exportation de toutes les données pertinentes.
+
+## <a name="adding-a-sample-to-a-working-set"></a>Ajout d'un exemple à un jeu de travail
+
+Si vous souhaitez valider vos résultats de recherche plus thorougly avant de collecter tous les documents qui ont été récupérés par votre recherche, vous pouvez ajouter un échantillon aléatoire des résultats de la recherche à un jeu de travail au lieu d'ajouter tout.
+
+Pour ajouter un exemple à une plage de travail, commencez par sélectionner une recherche dans la fenêtre mobile des résultats de recherche, puis cliquez sur le bouton *exemple* .
+
+Vous pouvez ensuite choisir le paramètre de votre échantillonnage. Il existe deux options :
+- Niveau de confiance et intervalle: la taille de l'échantillon sera choisie pour répondre aux paramètres statistiques fournis.
+- Pourcentage: la taille de l'échantillon sera déterminée en fonction du nombre d'éléments renvoyés par la recherche et du paramètre choisi.
+
+Enfin, choisissez le jeu de travail auquel ajouter l'exemple. À partir de là, vous pouvez vérifier l'état du processus comme vous le feriez pour ajouter une recherche entière dans un jeu de travail. 

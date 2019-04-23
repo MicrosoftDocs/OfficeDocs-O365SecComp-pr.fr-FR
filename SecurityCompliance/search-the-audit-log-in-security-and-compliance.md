@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilisez le centre de sécurité & Compliance Center pour rechercher le journal d'audit unifié afin d'afficher l'activité des utilisateurs et des administrateurs dans votre organisation Office 365. "
 ms.openlocfilehash: d7dc3849a0a12c52979c46b9ac16cfb0a7cd1f3d
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814175"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958636"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Rechercher dans le journal d'audit dans le centre de sécurité & Compliance Center
 
@@ -105,7 +105,7 @@ Veillez à lire les éléments suivants avant de commencer à rechercher dans le
     
 - L'affichage de l'entrée de journal d'audit correspondante dans les résultats de la recherche peut prendre jusqu'à 30 minutes ou jusqu'à 24 heures. Le tableau suivant indique le temps nécessaire pour les différents services dans Office 365.
     
-    |**Service Office 365**|**30 minutes**|**24 heures**|
+    |**Service Office 365**|**30 minutes**|**24 heures**|
     |:-----|:-----|:-----|
     |Protection avancée contre les menaces et intelligence des menaces  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
     |Azure Active Directory (événements de connexion de l'utilisateur)  <br/> ||![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
@@ -466,7 +466,7 @@ Le tableau suivant répertorie les activités qui peuvent être consignées par 
 |Message envoyé à l'aide des autorisations Envoyer en tant que  <br/> |SendAs  <br/> |Un message a été envoyé à l’aide de l’autorisation SendAs. Cela signifie qu’un autre utilisateur a envoyé le message comme s’il provenait du propriétaire de la boîte aux lettres.  <br/> |
 |Message envoyé à l'aide des autorisations Envoyer de la part de  <br/> |SendOnBehalf  <br/> |Un message a été envoyé à l’aide de l’autorisation SendOnBehalf. Cela signifie qu’un autre utilisateur a envoyé le message de la part du propriétaire de la boîte aux lettres. Le message indique au destinataire de la part de qui le message a été envoyé et qui a envoyé réellement le message.  <br/> |
 |Mise à jour de l'accès délégué au dossier calendrier  <br/> |UpdateCalendarDelegation  <br/> |Une délégation de calendrier a été affectée à une boîte aux lettres. La délégation de calendrier donne à une autre personne de la même organisation des autorisations pour gérer le calendrier du propriétaire de la boîte aux lettres.  <br/> |
-|Message mis à jour  <br/> |Mettre à jour  <br/> |Un message ou ses propriétés ont été modifiés.  <br/> |
+|Message mis à jour  <br/> |Update  <br/> |Un message ou ses propriétés ont été modifiés.  <br/> |
 |L'utilisateur s'est connecté à la boîte aux lettres  <br/> |MailboxLogin  <br/> |L'utilisateur s'est connecté à sa boîte aux lettres.  <br/> |
 |(aucun)  <br/> |UpdateInboxRules  <br/> |Une règle de boîte de réception a été ajoutée, supprimée ou modifiée. Les règles de boîte de réception sont utilisées pour traiter les messages dans la boîte de réception de l'utilisateur en fonction des conditions spécifiées et prendre des mesures lorsque les conditions d'une règle sont remplies, telles que le transfert d'un message vers un dossier spécifié ou la suppression d'un message.  <br/> Pour renvoyer des entrées pour les activités de règle de boîte de réception, vous devez sélectionner **afficher les résultats pour toutes les activités** dans la liste **activités** . Utilisez les zones plage de dates et la liste **utilisateurs** pour affiner les résultats de la recherche.  <br/> |
 ||||
