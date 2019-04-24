@@ -1,6 +1,6 @@
 ---
-title: Sécurité et conformité d'Office 365
-description: 'Si votre organisation a besoin de protéger vos données ou de respecter des normes légales ou réglementaires, vous êtes au bon endroit. Ici, vous pouvez en savoir plus sur la sécurité et la conformité dans Office 365'
+title: Sécurité et conformité dans Office 365
+description: Si votre organisation a besoin de protéger vos données ou de respecter des normes légales ou réglementaires, vous êtes au bon endroit. Ici, vous pouvez en savoir plus sur la sécurité et la conformité dans Office 365
 services: office-365-security-compliance
 author: robmazz
 manager: laurawi
@@ -11,8 +11,14 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 12/27/2018
 ms.author: robmazz
+ms.openlocfilehash: 737d3a1b979b420e7f9bd24f056a4d5abf7a9906
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256502"
 ---
-# <a name="office-365-security-and-compliance"></a>Sécurité et conformité d'Office 365
+# <a name="office-365-security-and-compliance"></a>Sécurité et conformité dans Office 365
 
 Si votre organisation a besoin de protéger vos données ou de respecter des normes légales ou réglementaires, vous êtes au bon endroit. Les zones ci-dessous représentent la première étape de votre apprentissage concernant la sécurité et la conformité dans Office 365.
 

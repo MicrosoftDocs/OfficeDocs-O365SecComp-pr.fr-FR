@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: ee83594b89a3a1f968e5d9506c09b660f9fa4e3d
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240919"
 ---
-# <a name="review-case-data-in-advanced-ediscovery-preview"></a><span data-ttu-id="d06c2-102">Vérifier les données de cas dans Advanced eDiscovery (aperçu)</span><span class="sxs-lookup"><span data-stu-id="d06c2-102">Review case data in Advanced eDiscovery (Preview)</span></span>
+# <a name="review-case-data-in-advanced-ediscovery-preview"></a><span data-ttu-id="1b349-102">Vérifier les données de cas dans Advanced eDiscovery (aperçu)</span><span class="sxs-lookup"><span data-stu-id="1b349-102">Review case data in Advanced eDiscovery (Preview)</span></span>
 
 
-<span data-ttu-id="d06c2-103">Bientôt disponible</span><span class="sxs-lookup"><span data-stu-id="d06c2-103">Coming soon</span></span>
+<span data-ttu-id="1b349-103">Bientôt disponible</span><span class="sxs-lookup"><span data-stu-id="1b349-103">Coming soon</span></span>
