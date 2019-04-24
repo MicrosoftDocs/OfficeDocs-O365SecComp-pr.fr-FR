@@ -16,13 +16,13 @@ search.appverid:
 - MET150
 description: 'La façon la plus simple et la plus courante de démarrer avec les stratégies DLP consiste à utiliser l’un des modèles inclus dans Office 365. '
 ms.openlocfilehash: 7ebb2a77e8f1f9fa47882fcbb758b34cd40daee9
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258520"
 ---
-# <a name="create-a-dlp-policy-from-a-template"></a>Création d'une stratégie DLP à partir d'un modèle
+# <a name="create-a-dlp-policy-from-a-template"></a>Création d’une stratégie DLP à partir d’un modèle
 
 La façon la plus simple et la plus courante de démarrer avec les stratégies DLP consiste à utiliser l’un des modèles inclus dans Office 365. Vous pouvez utiliser l'un de ces modèles tel quel, ou personnaliser les règles pour répondre aux exigences de conformité spécifiques de votre organisation.
   
@@ -52,7 +52,7 @@ Dans cet exemple, vous allez créer une stratégie DLP qui identifie les donnée
     
 - Autorisez les utilisateurs à remplacer les actions en fournissant une justification professionnelle ou en signalant un faux positif. De cette manière, votre stratégie DLP n'empêchera pas les personnes de votre organisation de faire leur travail, à condition qu'elles aient une raison commerciale valide pour partager les informations sensibles.
     
-### <a name="create-a-dlp-policy-from-a-template"></a>Création d'une stratégie DLP à partir d'un modèle
+### <a name="create-a-dlp-policy-from-a-template"></a>Création d’une stratégie DLP à partir d’un modèle
 
 1. Accédez à la page [https://protection.office.com](https://protection.office.com).
     
@@ -167,7 +167,7 @@ Voici les différents états et leur signification.
 |**Test en cours, sans notifications** <br/> |La stratégie est en mode test. Les actions dans une règle ne sont pas appliquées, mais les correspondances de stratégie sont collectées et peuvent être consultées à l’aide des rapports DLP. Les notifications sur les correspondances de stratégie ne sont pas envoyées aux destinataires spécifiés.  <br/> |
 |**On** <br/> |La stratégie est appliquée et active. La stratégie a été correctement déployée sur toutes ses sources de contenu.  <br/> |
 |**Désactivation en cours...** <br/> |La stratégie est supprimée des sources de contenu qu’elle contient. La stratégie peut être toujours active et appliquée sur certaines sources. La désactivation d’une stratégie peut prendre jusqu’à 45 minutes.  <br/> |
-|**Off** <br/> |La stratégie n’est pas active et n’est pas appliquée. Les paramètres de la stratégie (sources, mots clés, durée, etc.) sont enregistrés.  <br/> |
+|**Désactivé** <br/> |La stratégie n’est pas active et n’est pas appliquée. Les paramètres de la stratégie (sources, mots clés, durée, etc.) sont enregistrés.  <br/> |
 |**Suppression...** <br/> |La stratégie est en cours de suppression. La stratégie n’est pas active et n’est pas appliquée.  <br/> |
    
 ## <a name="turn-off-a-dlp-policy"></a>Désactivation d’une stratégie DLP

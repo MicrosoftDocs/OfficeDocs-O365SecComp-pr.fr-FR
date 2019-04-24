@@ -1,5 +1,5 @@
 ---
-title: Comprendre l’Évaluation dans le module Pertinence dans Office 365 Advanced eDiscovery
+title: Comprendre l'évaluation en pertinence dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: Obtenez une vue d'ensemble de la phase d'évaluation et de son rôle dans la détermination de la richesse des problèmes lors de la formation à la pertinence dans Office 365 Advanced eDiscovery.
 ms.openlocfilehash: 1ddaa7ef37f762d7b63bb6c0c51193ff382b8d6b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30212974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32250201"
 ---
-# <a name="understand-assessment-in-relevance-in-office-365-advanced-ediscovery"></a>Comprendre l’Évaluation dans le module Pertinence dans Office 365 Advanced eDiscovery
+# <a name="understand-assessment-in-relevance-in-office-365-advanced-ediscovery"></a>Comprendre l'évaluation en pertinence dans Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

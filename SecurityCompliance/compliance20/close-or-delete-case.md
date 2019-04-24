@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 016b87388a17bc5cb01eb1a90d88aedb6e2e133c
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243767"
 ---
 # <a name="close-or-delete-a-case"></a>Fermer ou supprimer un cas
 
@@ -27,7 +27,7 @@ Lorsque le cas juridique ou l'enquête pris en charge par un cas de découverte 
 
 - Si le cas contient des emplacements de contenu en conservation, ceux-ci sont désactivés. Cela peut entraîner la suppression ou le vidage définitifs du contenu, soit par l'utilisateur, soit par un processus automatisé, tel qu'une stratégie de suppression.
 
-- La fermeture d'un incident ne désactive que les blocages associés à ce cas. Si d'autres suspensions sont placées sur un emplacement de contenu (comme une conservation pour litige. une stratégie de conservation, ou une suspension d'un autre cas de découverte électronique), ces conservations seront toujours conservées.
+- La fermeture d'un incident ne désactive que les blocages associés à ce cas. Si d'autres suspensions sont placées sur un emplacement de contenu (comme une conservation pour litige). une stratégie de conservation, ou une suspension d'un autre cas de découverte électronique (eDiscovery), ces conservations seront toujours conservées.
 
 - Le cas est toujours mentionné sur la page eDiscovery dans le centre de sécurité & Compliance Center. Les détails, les conservations, les recherches et les membres d'un cas fermé sont conservés.
 

@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: En tant qu'administrateur général Office 365, vous pouvez utiliser un simulateur d'attaque pour exécuter des scénarios d'attaque réaliste dans votre organisation. Cela peut vous aider à identifier et à trouver des utilisateurs vulnérables avant qu'une attaque réelle ne touche votre entreprise.
 ms.openlocfilehash: 88e71fe2db0ed9149ab84bb99e8b04910afdc265
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249698"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulateur d’attaques dans Office 365
 
@@ -127,7 +127,7 @@ Une attaque de mot de passe en force contre une organisation est généralement 
     
 ## <a name="new-features-in-attack-simulator"></a>Nouvelles fonctionnalités dans un simulateur d'attaque
 
-De nouvelles fonctionnalités sont ajoutées au simulateur d'attaques. Ces situations sont les suivantes :
+De nouvelles fonctionnalités sont ajoutées au simulateur d'attaques. Ces approches sont les suivantes :
 
 - **Fonctionnalités de création de rapports avancées**. Vous pourrez voir des données telles que le temps le plus rapide (ou le plus lent) pour ouvrir un message électronique de simulation d'attaque, le temps le plus rapide (ou le plus lent) de cliquer sur un lien dans le message, et bien plus encore.
 
@@ -139,7 +139,7 @@ Consultez la feuille de [route Microsoft 365](https://www.microsoft.com/microsof
 
 [Desription du service de protection avancée contre les menaces Office 365](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
-[Office 365 - Protection avancée contre les menaces](office-365-atp.md)
+[Office 365-Protection avancée contre les menaces](office-365-atp.md)
 
 
 

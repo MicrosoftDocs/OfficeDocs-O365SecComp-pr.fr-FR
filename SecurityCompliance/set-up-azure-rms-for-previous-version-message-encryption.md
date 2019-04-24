@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: La version précédente d'Office 365 le chiffrement de messages dépend de Microsoft Azure Rights Management (anciennement appelé Windows Azure Active Directory Rights Management).
 ms.openlocfilehash: 89b86035f57699457c86fefb49888b8428f4e01c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266886"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-office-365-message-encryption"></a>Configurer Azure Rights Management pour la version précédente de chiffrement de messages Office 365.
 
@@ -36,7 +36,7 @@ Office 365 message enCryption (OME), y compris la gestion des droits relatifs à
 
 - Si vous n'avez pas d'abonnement Azure RMS pour Exchange Online ou Exchange Online Protection, vous devez tout d'abord acheter un abonnement et l'activer.
 
-    Pour plus d'informations sur l'achat d'un abonnement à Azure Rights Management, consultez la rubrique [Azure Rights Management](https://portal.office.com/Signup/MainSignUp15.aspx?&amp;OfferId=9DF77AF9-DAAE-4d51-8E0E-EEEADD4866B8&amp;dl=RIGHTSMANAGEMENT). La section suivante vous donne des informations sur l'activation de la gestion des droits Azure.
+    Pour plus d'informations sur l'achat d'un abonnement à Azure Rights Management, consultez la rubrique [Azure Rights Management](https://portal.office.com/Signup/MainSignUp15.aspx?&amp;OfferId=9DF77AF9-DAAE-4d51-8E0E-EEEADD4866B8&amp;dl=RIGHTSMANAGEMENT). La section suivante fournit des informations sur l’activation d’Azure Rights Management.
 
 - Si vous disposez d'Azure Rights Management, mais qu'il n'est pas configuré pour Exchange Online ou Exchange Online Protection, cet article explique comment activer Azure Rights Management, puis décrit la meilleure façon de configurer OME pour qu'il fonctionne avec Azure Rights Management.
 
@@ -63,9 +63,9 @@ Un publication approuvé est un fichier XML qui contient des informations sur le
 |:-----|:-----|
 |Amérique du Nord  <br/> |https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
 |Union européenne  <br/> |https://sp-rms.eu.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
-|Asie  <br/> |https://sp-rms.ap.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
+|Région  <br/> |https://sp-rms.ap.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
 |Amérique du Sud  <br/> |https://sp-rms.sa.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
-|Office 365 pour le gouvernement (nuage communautaire propre aux gouvernements)  <br/> Cet emplacement de partage de clé RMS est réservé aux clients qui ont acheté des SKU Office 365 pour le gouvernement.  <br/> |https://sp-rms.govus.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
+|Office 365 Secteur Public (nuage communautaire propre aux gouvernements)  <br/> Cet emplacement de partage de clé RMS est réservé aux clients qui ont acheté des SKU Office 365 pour le gouvernement.  <br/> |https://sp-rms.govus.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
    
 3. ConFigurez l'emplacement de partage de clés en exécutant la cmdlet [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792%28v=exchg.160%29.aspx) comme suit: 
     
@@ -107,7 +107,7 @@ Un publication approuvé est un fichier XML qui contient des informations sur le
   Set-IRMConfiguration -InternalLicensingEnabled $true
   ```
 
-8. Pour vérifier que vous avez correctement importé le publication approuvé et activé Azure Rights Management, utilisez l'applet de commande test-IRMConfiguration pour tester la fonctionnalité de gestion des droits Azure. Pour plus d'informations, consultez la rubrique «exemple 1» dans [test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.150%29.aspx).
+8. Pour vérifier que vous avez correctement importé le publication approuvé et activé Azure Rights Management, utilisez l'applet de commande test-IRMConfiguration pour tester la fonctionnalité de gestion des droits Azure. Pour plus d'informations, consultez « Exemple 1 » dans la rubrique [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.150%29.aspx).
     
 ## <a name="i-have-the-previous-version-of-ome-set-up-with-active-directory-rights-management-not-azure-information-protection-what-do-i-do"></a>J'ai la version précédente de OME configurée avec Active Directory Rights Management not Azure information protection, que dois-je faire?
 <a name="importTPDs"> </a>

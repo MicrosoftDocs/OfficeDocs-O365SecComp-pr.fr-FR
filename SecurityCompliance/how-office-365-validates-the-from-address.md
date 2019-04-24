@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 'Pour éviter les attaques par hameçonnage, Office 365 et Outlook.com requièrent désormais une conformité RFC pour from: Addresses.'
 ms.openlocfilehash: e540e56a7a40d13a92719865fccefefa61de47c2
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253932"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Comment Office 365 valide l'adresse de pour empêcher le hameçonnage
 
@@ -35,7 +35,7 @@ Microsoft commencera à déployer la mise en œuvre des stratégies décrites da
   
 ## <a name="how-office-365-enforces-the-use-of-a-valid-from-address-to-prevent-phishing-attacks"></a>Comment Office 365 applique l'utilisation d'une adresse valide from: pour éviter les attaques par hameçonnage
 
-Office 365 apporte des modifications à la façon dont il applique l'utilisation de l'adresse de: dans les messages qu'il reçoit afin de mieux vous protéger contre les attaques par hameçonnage. Dans cet article:
+Office 365 apporte des modifications à la façon dont il applique l'utilisation de l'adresse de: dans les messages qu'il reçoit afin de mieux vous protéger contre les attaques par hameçonnage. Contenu de cet article :
   
 - [Tous les messages doivent inclure une adresse valide:](how-office-365-validates-the-from-address.md#MustIncludeFromAddress)
     
@@ -121,7 +121,7 @@ From: "Office 365" <sender@contoso.com> (Sent by a process)
 
 Pour from: les adresses qui incluent une valeur pour le nom d'affichage, les règles suivantes s'appliquent:
   
-- Si l'adresse de l'expéditeur inclut un nom complet et que le nom d'affichage inclut une virgule, le nom d'affichage doit être placé entre guillemets. Par exemple:
+- Si l'adresse de l'expéditeur inclut un nom complet et que le nom d'affichage inclut une virgule, le nom d'affichage doit être placé entre guillemets. Par exemple :
     
     L'exemple suivant est valide:
     

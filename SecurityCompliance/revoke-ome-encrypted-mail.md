@@ -11,11 +11,11 @@ search.appverid:
 - MET150
 description: En tant qu'administrateur Office 365, vous pouvez révoquer certains courriers électroniques chiffrés avec le chiffrement de messages Office 365.
 ms.openlocfilehash: 75b5e46e25f447ddac0de5a7911d0df8385da6b9
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264820"
 ---
 # <a name="office-365-message-encryption-email-revocation"></a>Révocation de courrier de chiffrement de messages Office 365
 
@@ -39,7 +39,7 @@ Une fois qu'un e-mail a été révoqué, le destinataire obtiendra une erreur lo
 
 ## <a name="how-to-revoke-an-encrypted-email"></a>Procédure de révocation d'un message électronique chiffré
 
-### <a name="step-1-obtain-the-message-id-of-the-email"></a>Étape 1. Obtenir l'ID de message de l'e-mail
+### <a name="step-1-obtain-the-message-id-of-the-email"></a>Étape 1. Obtenir l'ID de message de l'e-mail
 
 Avant de pouvoir révoquer un courrier chiffré, vous devez recueillir l'ID du message. Le MessageId se présente généralement au format suivant:
 
@@ -69,7 +69,7 @@ Pour vérifier si vous pouvez ou non révoquer un message électronique particul
      Get-OMEMessageStatus -MessageId "<messagieid>" | ft -a  Subject, IsRevocable
      ```
 
-   Cette valeur renvoie l'objet du message et indique si le message est révocable. Par exemple,
+   Cette valeur renvoie l'objet du message et indique si le message est révocable. For example,
 
      ```text
      Subject IsRevocable
@@ -77,7 +77,7 @@ Pour vérifier si vous pouvez ou non révoquer un message électronique particul
      “Test message”  True
      ```
 
-### <a name="step-3-revoke-the-mail"></a>Étape 3. Révoquer le courrier  
+### <a name="step-3-revoke-the-mail"></a>Étape 3. Révoquer le courrier  
 
 Une fois que vous avez identifié l'ID du message que vous souhaitez révoquer, et que vous avez vérifié que le message est révocable, vous pouvez le révoquer à l'aide de la cmdlet Set-OMEMessageRevocation.
 

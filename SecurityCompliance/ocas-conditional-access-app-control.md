@@ -11,11 +11,11 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Arrêter les violations et les fuites en temps réel avec le contrôle d'application d'accès conditionnel à Office 365 Cloud App Security.
 ms.openlocfilehash: d8370b1e02866db8f92ab7f6a46b06ddc3ed1055
-ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30312101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262986"
 ---
 # <a name="protect-apps-with-office-365-cloud-app-security-conditional-access-app-control"></a>Protéger les applications avec le contrôle d’accès conditionnel aux applications d’Office 365 Cloud App Security
 
@@ -28,7 +28,7 @@ Dans l'espace de travail d'aujourd'hui, il est souvent insuffisant de savoir ce 
 > [!IMPORTANT]
 > pour utiliser le contrôle d'application d'accès conditionnel sécurité des applications cloud, vous avez besoin d'une  [licence Azure active Directory P1](https://azure.microsoft.com/pricing/details/active-directory/)et d'un abonnement [Office 365 Cloud app security](office-365-cas-overview.md) .
 
-## <a name="how-it-works"></a>Fonctionnement
+## <a name="how-it-works"></a>Mode de fonctionnement
 
 Le contrôle d'application d'accès conditionnel utilise une architecture de proxy inverse et est intégré de manière unique à l'accès conditionnel Azure AD. L'accès conditionnel Azure AD vous permet d'appliquer des contrôles d'accès aux applications de votre organisation en fonction de certaines conditions. Les conditions définissent l' *identité* de l'utilisateur ou du groupe d'utilisateurs, ainsi *que* les ** applications Cloud auxquelles une stratégie d'accès conditionnel est appliquée. Une fois que vous avez déterminé les conditions, vous pouvez acheminer les utilisateurs vers la sécurité des applications Cloud Office 365 où vous pouvez protéger les données avec le contrôle d'application d'accès conditionnel en appliquant les contrôles d'accès et de session.
 

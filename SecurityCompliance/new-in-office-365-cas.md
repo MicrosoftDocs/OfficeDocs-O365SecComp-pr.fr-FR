@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: d674763c-a4c9-4604-8623-68c1836d27f3
 description: Découvrez les nouveautés d'Office 365 Cloud App Security
 ms.openlocfilehash: bc85c0c6444eadf8f623a6fee853ff03d31565d1
-ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30312061"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262997"
 ---
 # <a name="what-is-new-in-office-365-cloud-app-security"></a>Quelles sont les nouveautés de la sécurité des applications Cloud Office 365
 

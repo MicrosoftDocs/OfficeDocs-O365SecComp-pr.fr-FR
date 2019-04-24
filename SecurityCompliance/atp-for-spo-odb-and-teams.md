@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Étendez la protection avancée contre les menaces Office 365 aux fichiers dans SharePoint Online, OneDrive entreprise et Microsoft teams pour activer la collaboration en toute sécurité pour votre organisation.
 ms.openlocfilehash: 55bd613cd89819906773d663deb6278f804cb9de
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249636"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP pour SharePoint, OneDrive et Microsoft teams
 
@@ -28,7 +28,7 @@ ms.locfileid: "30692443"
 
 Les personnes partagent régulièrement des fichiers et collaborent à l'aide de SharePoint, de OneDrive et de Microsoft Teams. Avec [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), votre organisation peut collaborer de manière plus sûre. La protection avancée contre les menaces permet de détecter et de bloquer les fichiers identifiés comme étant malveillants dans les sites d'équipe et les bibliothèques de documents.  
   
-## <a name="how-it-works"></a>Fonctionnement
+## <a name="how-it-works"></a>Mode de fonctionnement
 
 Lorsqu'un fichier dans SharePoint Online, OneDrive entreprise et Microsoft teams a été identifié comme malveillant, la protection avancée contre les menaces s'intègre directement aux magasins de fichiers pour verrouiller ce fichier. L'image suivante montre un exemple de fichier malveillant détecté dans une bibliothèque.
   

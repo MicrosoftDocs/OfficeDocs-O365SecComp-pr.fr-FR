@@ -1,5 +1,5 @@
 ---
-title: Utiliser les utilitaires Office 365 Advanced eDiscovery
+title: Utiliser les utilitaires eDiscovery avancés d'Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
 description: "Découvrez les utilitaires d'Office 365 Advanced eDiscovery, notamment le journal des cas, les données claires, les erreurs de processus, la pertinence et l'analyse de la transparence.  "
 ms.openlocfilehash: bd100883804b300e77abcc8a2224cf1a59b53475
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265356"
 ---
-# <a name="use-office-365-advanced-ediscovery-utilities"></a>Utiliser les utilitaires Office 365 Advanced eDiscovery
+# <a name="use-office-365-advanced-ediscovery-utilities"></a>Utiliser les utilitaires eDiscovery avancés d'Office 365
 
 > [!NOTE]
 > Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

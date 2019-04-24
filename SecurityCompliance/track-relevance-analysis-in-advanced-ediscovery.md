@@ -1,5 +1,5 @@
 ---
-title: Suivre l’analyse du module Pertinence dans Office 365 Advanced eDiscovery
+title: Suivi de l'analyse de pertinence dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
 description: 'Découvrez comment afficher et interpréter la pertinence état de formation et résultats pour les problèmes de cas dans Office 365 Advanced eDiscovery.  '
 ms.openlocfilehash: 8bdfd2ddb88215b7217d1cc4cdacf2e775a0d977
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264400"
 ---
-# <a name="track-relevance-analysis-in-office-365-advanced-ediscovery"></a>Suivre l’analyse du module Pertinence dans Office 365 Advanced eDiscovery
+# <a name="track-relevance-analysis-in-office-365-advanced-ediscovery"></a>Suivi de l'analyse de pertinence dans Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -105,7 +105,7 @@ Dans l' **onglet \> suivi de pertinence** , développez la ligne d'un problème,
   
 ![Résumé du marquage du suivi de pertinence](media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
   
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 Un mot clé est une chaîne, un mot, une phrase ou une séquence de mots unique identifiée par Advanced eDiscovery comme un indicateur significatif de la pertinence d'un fichier. Le mot clé de liste de colonnes «include» et les pondérations dans les fichiers marqués comme pertinents et les colonnes «Exclude» répertorient les mots clés et les pondérations dans les fichiers marqués comme non pertinents.
   
@@ -136,7 +136,7 @@ Le volet progression de la **formation** inclut un graphique de progression de f
 
 Le volet **résultats du calcul par lots** inclut le nombre de fichiers dont la pertinence a été évaluée, comme suit: 
   
-- **Opération réussie**
+- **Success**
     
 - **Empty**: ne contient pas de texte, par exemple, uniquement des espaces/tabulations
     

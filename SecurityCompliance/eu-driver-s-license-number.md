@@ -11,11 +11,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Cette rubrique présente ce qu'une stratégie de protection contre la perte de données (DLP) recherche lorsqu'elle détecte le type d'informations sensibles du pilote de l'UE. Ce type d'informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
 ms.openlocfilehash: be9497c325866a670dff8d82b5170f4ca947c4ad
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255772"
 ---
 # <a name="eu-drivers-license-number"></a>Numéro de permis de conduire de l'UE
 
@@ -54,7 +54,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 | |
 |**Keywords_austria_eu_driver's_license_number**|
@@ -94,7 +94,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 | |
 |**Keywords__belgium_eu_driver's_license_number**|
@@ -134,7 +134,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 | |
 |**Keywords_bulgaria_eu_driver's_license_number**|
@@ -174,7 +174,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 | |
 |**Keywords_croatia_eu_driver's_license_number**|
@@ -213,7 +213,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 | |
 |**Keywords_cyprus_eu_driver's_license_number**|
@@ -259,7 +259,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 | |
 |**Keywords_czech_republic_eu_driver's_license_number**|
@@ -299,7 +299,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 | |
 |**Keywords_denmark_eu_driver's_license_number**|
@@ -342,7 +342,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 | |
 |**Keywords_estonia_eu_driver's_license_number**|
@@ -387,7 +387,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 | |
 |**Keywords_finland_eu_driver's_license_number**|
@@ -434,7 +434,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 | |
 |**Keywords_greece_eu_driver's_license_number**|
@@ -477,7 +477,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 | |
 |**Keywords_hungary_eu_driver's_license_number**|
@@ -520,7 +520,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 | |
 |**Keywords_ireland_eu_driver's_license_number**|
@@ -567,7 +567,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 | |
 |**Keywords_latvia_eu_driver's_license_number**|
@@ -606,7 +606,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 | |
 |**Keywords_lithuania_eu_driver's_license_number**|
@@ -645,7 +645,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 | |
 |**Keywords_luxemburg_eu_driver's_license_number**|
@@ -694,7 +694,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 | |
 |**Keywords_malta_eu_driver's_license_number**|
@@ -733,7 +733,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 | |
 |**Keywords_netherlands_eu_driver's_license_number**|
@@ -782,7 +782,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 | |
 |**Keywords_poland_eu_driver's_license_number**|
@@ -831,7 +831,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 | |
 |**Keywords_portugal_eu_driver's_license_number**|
@@ -874,7 +874,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 | |
 |**Keywords_romania_eu_driver's_license_number**|
@@ -917,7 +917,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 | |
 |**Keywords_slovakia_eu_driver's_license_number**|
@@ -956,7 +956,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 | |
 |**Keywords_slovenia_eu_driver's_license_number**|
@@ -999,7 +999,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 | |
 |**Keywords_spain_eu_driver's_license_number**|
@@ -1044,7 +1044,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity> 
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 | |
 |**Keywords_sweden_eu_driver's_license_number**|

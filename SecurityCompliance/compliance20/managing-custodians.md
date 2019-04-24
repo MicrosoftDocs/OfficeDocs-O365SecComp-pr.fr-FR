@@ -14,20 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c73f403bd13956904219c8db41afaa7f5e5fc088
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 538fd7e67456bc669b9f5cf140c995a716239fc2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30294767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240986"
 ---
 # <a name="work-with-custodians-in-advanced-ediscovery-preview"></a>Utiliser des dépositaires dans Advanced eDiscovery (aperçu)
 
-Souvent, lorsqu'une organisation répond à une enquête légale, le flux de travail concernant l'identification, la préservation et la collecte de contenu potentiellement pertinent est basé sur des personnes ou des dépositaires de données au sein de leur organisation. Dans eDiscovery, ces individus sont appelés dépositaires de données et sont définis comme des «personnes ayant le contrôle administratif d'un document ou d'un fichier électronique». Par exemple, le dépositaire de données d'un message électronique peut être le propriétaire de la boîte aux lettres qui contient le message pertinent.  
+Lorsqu'une organisation répond à une enquête légale, le flux de travail concernant l'identification, la préservation et la collecte de contenu potentiellement pertinent est basé sur des personnes ou des dépositaires de données au sein de leur organisation. Dans eDiscovery, ces individus sont appelés «dépositaires de *données* » (ou simplement des *dépositaires*) et sont définis comme des «personnes ayant le contrôle administratif d'un document ou d'un fichier électronique. Par exemple, le dépositaire d'un message électronique peut être le propriétaire de la boîte aux lettres qui contient le message pertinent.  
 
-Lorsqu'une enquête commence, l'équipe eDiscovery doit identifier rapidement tous les dépositaires pertinents et les sources de données associées à l'incident. Au fil du temps, les listes des dépositaires et de leurs sources de données peuvent développer ou contracter. Par conséquent, les organisations doivent maintenir un processus contrôlé concernant l'identification, la préservation et la collecte de contenu privative de temps pendant le cycle de vie d'un cas.
+Lorsqu'une enquête commence, l'équipe eDiscovery doit identifier rapidement tous les dépositaires pertinents et les sources de données associées à l'incident. Au fil du temps, la liste des dépositaires et de leurs sources de données peut augmenter ou decreasse. Par conséquent, les organisations doivent maintenir un processus contrôlé concernant l'identification, la préservation et la collecte de contenu privative de temps pendant le cycle de vie d'un cas.
 
-Dans un cas avancé eDiscovery (préversion), les équipes juridiques peuvent ajouter des personnes au sein de leur organisation en tant que dépositaires de données, et identifier et conserver automatiquement les sources privatives de Troie telles que les sites Exchange, OneDrive, SharePoint et Teams. À l'aide de l'outil de gestion des dépositaires intégrés et inaltérable, les organisations peuvent sécuriser les informations stockées électroniquement (ESI) contre la suppression par inadvertance et dire adieu aux procédures manuelles, longues et sujettes aux erreurs. 
+Dans un cas avancé eDiscovery (préversion), les équipes juridiques peuvent ajouter des personnes de leur organisation en tant que dépositaires et identifier et conserver automatiquement des sources de données privatives de ressources telles que des boîtes aux lettres Exchange, des comptes OneDrive et des sites SharePoint et Teams. À l'aide de l'outil de gestion des dépositaires intégré dans Advanced eDiscovery (aperçu), les organisations peuvent sécuriser les informations stockées électroniquement à partir de la suppression involontaire (ou intentionnelle) et dire adieu à une utilisation manuelle, fastidieuse et sujette aux erreurs. processus. 
 
 Pour plus d'informations sur l'utilisation des dépositaires, consultez les articles suivants: 
 

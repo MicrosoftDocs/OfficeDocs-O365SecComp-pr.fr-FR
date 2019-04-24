@@ -3,7 +3,6 @@ title: Exporter des champs de rapport dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: Décrit tous les champs inclus dans les rapports d'exportation pour Advanced eDiscovery.
-ms.openlocfilehash: a910fa94a1361e48099ef5792ce93d5934fdccc5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 36443f6aac70392603acfe6702bcc4fe7a4f4bf3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255462"
 ---
 # <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>Exporter des champs de rapport dans Office 365 Advanced eDiscovery
 
@@ -31,7 +30,7 @@ Cette rubrique décrit les champs de rapport d'exportation eDiscovery avancés p
 
 Le tableau suivant répertorie les champs de chaque modèle d'exportation.
   
-|**Exporter le nom du champ**|**Groupe**|**Description**|**Disponible dans le modèle standard**|**Disponible dans tous les modèles**|
+|**Exporter le nom du champ**|**Group**|**Description**|**Disponible dans le modèle standard**|**Disponible dans tous les modèles**|
 |:-----|:-----|:-----|:-----|:-----|
 |Row_number  <br/> |Général  <br/> |Numéro de ligne.  <br/> |Oui  <br/> |Oui  <br/> |
 |File_ID  <br/> |Général  <br/> |ID de fichier.  <br/> |Oui  <br/> |Oui  <br/> |
@@ -73,7 +72,7 @@ Le tableau suivant répertorie les champs de chaque modèle d'exportation.
 |Marked_as_seed  <br/> |Pertinence  <br/> |Balisage du fichier, s'il a été défini en tant que fichier Seed en fonction de la pertinence par problème/catégorie.  <br/> |Oui  <br/> |Oui  <br/> |
 |Balises Marked_as_pre  <br/> |Pertinence  <br/> |Balisage du fichier, s'il a été défini comme étant prédéfini en fonction de la pertinence par problème/catégorie.  <br/> |Oui  <br/> |Oui  <br/> |
 |Relevance_status_description  <br/> |Pertinence  <br/> |Description de l'état de pertinence.  <br/> |Oui  <br/> |Oui  <br/> |
-|Commentaires  <br/> |Général  <br/> |Commentaire entré par l'utilisateur.  <br/> |Oui  <br/> |Oui  <br/> |
+|Commentaire  <br/> |Général  <br/> |Commentaire entré par l'utilisateur.  <br/> |Oui  <br/> |Oui  <br/> |
 |Export_input_path  <br/> |Traitement  <br/> |Exporter le chemin d'accès d'entrée.  <br/> |Oui  <br/> |Oui  <br/> |
 |Pivot_ID  <br/> |Quasi-doublons  <br/> |ID de tableau croisé dynamique du fichier.  <br/> |Oui  <br/> |Oui  <br/> |
 |Family_size  <br/> |Traitement  <br/> |Nombre de fichiers dans une famille.  <br/> |Oui  <br/> |Oui  <br/> |
@@ -91,19 +90,19 @@ Le tableau suivant répertorie les champs de chaque modèle d'exportation.
 |Input_path  <br/> |Traitement  <br/> |Chemin d'accès du fichier d'entrée.  <br/> |Oui  <br/> |Oui  <br/> |
 |Input_date_modified  <br/> |Traitement  <br/> |Date de la dernière modification du fichier d'entrée.  <br/> |Oui  <br/> |Oui  <br/> |
 |ND_ET_sort_excl_attach  <br/> |Analyse  <br/> |Concaténation de l'ensemble de messages électroniques et de la définition de la valeur. 'D'est ajouté en tant que préfixe aux ensembles ND, et'E'est ajouté à l'adresse de messagerie ssets.  <br/> |Oui  <br/> |Oui  <br/> |
-|ND_ET_sort_incl_attach  <br/> |Analyse  <br/> |La concaténation du jeu de messages et de la sauvegarde de l'ensemble de messages pour révision d est ajoutée en tant que préfixe aux ensembles ND, et «E» est ajouté aux groupes de courriers. Par ailleurs, chaque message électronique dans un Email_set est suivi des pièces jointes appropriées.  <br/> |Oui  <br/> |Non  <br/> |
-|Deduped_custodians  <br/> |Général  <br/> |Dépositaires de fichiers de duped  <br/> |Oui  <br/> |Non  <br/> |
-|Deduped_file_IDs  <br/> |Général  <br/> |ID de fichiers de duped  <br/> |Oui  <br/> |Non  <br/> |
-|Deduped_paths  <br/> |Général  <br/> |Chemins d'accès aux fichiers de duped  <br/> |Oui  <br/> |Non  <br/> |
-|File_key  <br/> |Général  <br/> |Identificateur interne pour une utilisation ultérieure.  <br/> |Oui  <br/> |Non  <br/> |
-|Export_native_path  <br/> |Traitement  <br/> |Chemin d'accès du fichier natif dans le package d'exportation.  <br/> |Oui  <br/> |Non  <br/> |
-|Extracted_text_path  <br/> |Traitement  <br/> |Chemin d'accès du fichier extrait.  <br/> |Oui  <br/> |Non  <br/> |
-|Process_batch  <br/> |Traitement  <br/> |Identificateur de lot pour le lot d'importation.  <br/> |Oui  <br/> |Non  <br/> |
-|Process_status_ID  <br/> |Traitement  <br/> |Identificateur représentant l'état de l'étape de processus.  <br/> |Oui  <br/> |Non  <br/> |
-|Process_status_description  <br/> |Traitement  <br/> |Description de l'état du processus: description réussie ou erreur.  <br/> |Oui  <br/> |Non  <br/> |
-|Export_status_ID  <br/> |Traitement  <br/> |ID de l'état de l'exportation.  <br/> |Oui  <br/> |Non  <br/> |
-|Export_status_description  <br/> |Traitement  <br/> |Description de l'état d'exportation; Description de l'erreur ou de la réussite.  <br/> |Oui  <br/> |Non  <br/> |
-|Read_percent  <br/> |Pertinence  <br/> |Lire% (0-100). Par problème.  <br/> |Oui  <br/> |Non  <br/> |
+|ND_ET_sort_incl_attach  <br/> |Analyse  <br/> |La concaténation du jeu de messages et de la sauvegarde de l'ensemble de messages pour révision d est ajoutée en tant que préfixe aux ensembles ND, et «E» est ajouté aux groupes de courriers. Par ailleurs, chaque message électronique dans un Email_set est suivi des pièces jointes appropriées.  <br/> |Oui  <br/> |Oui  <br/> |
+|Deduped_custodians  <br/> |Général  <br/> |Dépositaires de fichiers de duped  <br/> |Oui  <br/> |Oui  <br/> |
+|Deduped_file_IDs  <br/> |Général  <br/> |ID de fichiers de duped  <br/> |Oui  <br/> |Oui  <br/> |
+|Deduped_paths  <br/> |Général  <br/> |Chemins d'accès aux fichiers de duped  <br/> |Oui  <br/> |Oui  <br/> |
+|File_key  <br/> |Général  <br/> |Identificateur interne pour une utilisation ultérieure.  <br/> |Oui  <br/> |Oui  <br/> |
+|Export_native_path  <br/> |Traitement  <br/> |Chemin d'accès du fichier natif dans le package d'exportation.  <br/> |Oui  <br/> |Oui  <br/> |
+|Extracted_text_path  <br/> |Traitement  <br/> |Chemin d'accès du fichier extrait.  <br/> |Oui  <br/> |Oui  <br/> |
+|Process_batch  <br/> |Traitement  <br/> |Identificateur de lot pour le lot d'importation.  <br/> |Oui  <br/> |Oui  <br/> |
+|Process_status_ID  <br/> |Traitement  <br/> |Identificateur représentant l'état de l'étape de processus.  <br/> |Oui  <br/> |Oui  <br/> |
+|Process_status_description  <br/> |Traitement  <br/> |Description de l'état du processus: description réussie ou erreur.  <br/> |Oui  <br/> |Oui  <br/> |
+|Export_status_ID  <br/> |Traitement  <br/> |ID de l'état de l'exportation.  <br/> |Oui  <br/> |Oui  <br/> |
+|Export_status_description  <br/> |Traitement  <br/> |Description de l'état d'exportation; Description de l'erreur ou de la réussite.  <br/> |Oui  <br/> |Oui  <br/> |
+|Read_percent  <br/> |Pertinence  <br/> |Lire% (0-100). Par problème.  <br/> |Oui  <br/> |Oui  <br/> |
 |Doc_author  <br/> |Propriétés du document  <br/> |Propriétés du document: auteur.  <br/> |Non  <br/> |Oui  <br/> |
 |Doc_comments  <br/> |Propriétés du document  <br/> |Propriétés du document: commentaires.  <br/> |Non  <br/> |Oui  <br/> |
 |Doc_keywords  <br/> |Propriétés du document  <br/> |Propriétés du document: Mots clés.  <br/> |Non  <br/> |Oui  <br/> |

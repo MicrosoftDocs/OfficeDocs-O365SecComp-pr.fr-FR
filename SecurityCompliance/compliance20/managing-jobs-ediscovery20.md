@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e5f7c6d0f0932041ef92591afcb59ad836cae0e4
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.openlocfilehash: 9898e3c4861da8dbd90168622395981f34aaa510
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240899"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery-preview"></a>Gérer les travaux dans Advanced eDiscovery (aperçu)
 
@@ -41,3 +41,17 @@ Voici une liste des travaux (qui sont généralement des processus de longue dur
 |Exécution de l'analyse | Un utilisateur analyse les données d'un jeu de travail en exécutant des outils d'analyse eDiscovery avancés, tels que la détection de la détection des doublons, l'analyse du Threading de messagerie et l'analyse des thèmes. Pour plus d'informations, consultez [la rubrique Analyze Data in a Working Set](analyzing-data-in-working-set.md). | 
 |Marquage des documents | Cette tâche est déclenchée lorsqu'un utilisateur clique sur **Démarrer le marquage du travail** dans le **panneau marquage** lors de l'examen des documents dans une plage de travail. Un utilisateur peut démarrer ce travail après avoir balisé des documents dans un jeu de travail, puis en les sélectionnant dans le panneau afficher le document. Pour plus d'informations, voir [tag documents in a Working](tagging-documents.md). | 
 |||
+
+
+## <a name="job-status"></a>État du travail
+
+Le tableau suivant décrit les différents États d'État pour les travaux.
+
+| Statut           | Description     |
+| :----------------- | :----------     |
+| Submitted | Une nouvelle tâche a été créée.  La date et l'heure auxquelles le travail a été soumis s'affichent dans la colonne **créé** sous l'onglet **travaux** . |
+| Échec de l'envoi | Échec de l'envoi du travail.  Essayez de réexécuter l'action qui a déclenché le travail. |
+| En cours | Le travail est en cours, vous pouvez surveiller la progression de la tâche dans l'onglet **travaux** . |
+| Satisfaisant | Le travail s'est terminé avec succès. La date et l'heure de fin du travail s'affichent dans la colonne **terminé** de l'onglet **travaux** . |
+| Partiellement réussi | Le travail a été partiellement réussi. |
+| Échec | Échec du travail.  Essayez de réexécuter l'action qui a déclenché le travail. Si la tâche échoue pour la deuxième fois, nous vous recommandons de contacter le support Microsoft et de fournir les informations de support du travail. |

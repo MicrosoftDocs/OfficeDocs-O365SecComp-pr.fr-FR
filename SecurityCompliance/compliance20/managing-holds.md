@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: fe6ab3a1e1108e9ab2e4fc201357b72a77453d38
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240949"
 ---
 # <a name="manage-holds-in-advanced-ediscovery-preview"></a>Gérer les suspensions dans Advanced eDiscovery (aperçu)
 
@@ -56,7 +56,7 @@ Pour créer une suspension pour un cas avancé eDiscovery (aperçu), procédez c
   
 4. Dans l' **** onglet suspensions, cliquez sur **créer**.
   
-5. Sur la page **nommer votre suspension** , donnez un nom. Le nom de la conservation doit être unique dans votre organisation.
+5. Sur la page **nommer votre suspension** , donnez un nom. Le nom de la conservation doit être unique dans toute votre organisation.
  
 6. Module Dans la zone **Description** , ajoutez une description de la conservation.
   
@@ -64,19 +64,19 @@ Pour créer une suspension pour un cas avancé eDiscovery (aperçu), procédez c
   
 8. Choisissez les emplacements de contenu que vous souhaitez mettre en attente. Vous pouvez placer les boîtes aux lettres, les sites et les dossiers publics en conservation.
 
-   un **message. Exchange** -cliquez sur **choisir les utilisateurs, les groupes ou les équipes** , puis cliquez à nouveau sur **choisir les utilisateurs, les groupes ou les équipes** pour spécifier les boîtes aux lettres à mettre en attente. Utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution (pour mettre en attente les boîtes aux lettres des membres du groupe) à mettre en attente. Vous pouvez également placer une conservation sur la boîte aux lettres associée pour un groupe Office 365 ou une équipe Microsoft. Activez la case à cocher utilisateur, groupe, équipe, cliquez sur **choisir**, puis sur **Terminer**.
+   a. **E-mail Exchange** -cliquez sur **choisir les utilisateurs, les groupes ou les équipes** , puis cliquez à nouveau sur **choisir les utilisateurs, les groupes ou les équipes** pour spécifier les boîtes aux lettres à mettre en attente. Utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution (pour mettre en attente les boîtes aux lettres des membres du groupe) à mettre en attente. Vous pouvez également placer une conservation sur la boîte aux lettres associée pour un groupe Office 365 ou une équipe Microsoft. Activez la case à cocher utilisateur, groupe, équipe, cliquez sur **choisir**, puis sur **Terminer**.
  
     > [!NOTE]
     > Lorsque vous cliquez sur **choisir les utilisateurs, les groupes ou les équipes** pour spécifier les boîtes aux lettres à mettre en attente, le sélecteur de boîtes aux lettres affiché est vide. Il s'agit d'une conception qui améliore les performances. Pour ajouter des personnes à cette liste, tapez un nom (un minimum de 3 caractères) dans la zone de recherche.
 
-    b. **sites SharePoint** : cliquez sur **choisir des sites** , puis cliquez à nouveau sur choisir les **sites** pour spécifier les sites SharePoint et OneDrive entreprise à mettre en attente. Tapez l'URL de chaque site que vous souhaitez mettre en attente. Vous pouvez également ajouter l'URL du site SharePoint pour un groupe Office 365 ou une équipe Microsoft. Cliquez sur **choisir**, puis sur **Terminer**.
+    b. **Sites SharePoint** : cliquez sur **choisir des sites** , puis cliquez à nouveau sur choisir les **sites** pour spécifier les sites SharePoint et OneDrive entreprise à mettre en attente. Saisissez l’URL de chaque site à placer en conservation. Vous pouvez également ajouter l'URL du site SharePoint pour un groupe Office 365 ou une équipe Microsoft. Cliquez sur **choisir**, puis sur **Terminer**.
     
      Consultez la section **Forum aux questions** pour obtenir des conseils sur la mise en attente des groupes Office 365 et de Microsoft Teams.
 
     > [!NOTE]
     > Dans le cas rare où le nom d'utilisateur principal (UPN) d'une personne a été modifié, l'URL de son compte OneDrive sera également modifiée de façon à intégrer le nouvel UPN. Dans ce cas, vous devez modifier la conservation en ajoutant la nouvelle URL OneDrive de l'utilisateur et en supprimant l'ancienne.
 
-     c. **dossiers publics Exchange** -déplacez le bouton bascule vers la position tout pour mettre en attente tous les dossiers publics de votre organisation Exchange Online. Notez que vous ne pouvez pas choisir des dossiers publics spécifiques à mettre en attente. Laissez le commutateur Toggle défini sur **None** si vous ne souhaitez pas mettre de conservation sur les dossiers publics.
+     c. **Dossiers publics Exchange** : déplacez le bouton bascule vers la position tout pour mettre en attente tous les dossiers publics de votre organisation Exchange Online. Notez que vous ne pouvez pas choisir des dossiers publics spécifiques à mettre en attente. Laissez le commutateur Toggle défini sur **None** si vous ne souhaitez pas mettre de conservation sur les dossiers publics.
 
 9. Lorsque vous avez terminé d'ajouter des emplacements de contenu au blocage, cliquez sur **suivant**.
   
@@ -84,7 +84,7 @@ Pour créer une suspension pour un cas avancé eDiscovery (aperçu), procédez c
     
     - Dans la zone sous **Mots clés**, tapez une requête de recherche dans le champ de sorte que seul le contenu qui répond aux critères de recherche est placé en conservation. Vous pouvez spécifier des mots clés, des propriétés de message ou des propriétés de document, telles que des noms de fichiers. Vous pouvez également utiliser des requêtes plus complexes qui utilisent un opérateur booléen, comme AND, OR ou NOT. Si vous laissez la zone mot clé vide, tout le contenu situé dans les emplacements de contenu spécifiés sera placé en conservation.
 
-    - Cliquez sur **Ajouter** des conditions pour ajouter une ou plusieurs conditions afin de limiter la requête de recherche pour la suspension. Chaque condition ajoute une clause à la requête de recherche KQL créée et exécutée lors de la création de la suspension. Par exemple, vous pouvez spécifier une plage de dates pour que les documents de courrier ou de site créés dans la plage de dates soient suspendus. Une condition est logiquement liée à la requête de mot clé (spécifiée dans la zone de mot clé) par l'opérateur AND. Cela signifie que les éléments doivent satisfaire à la fois la requête de mot clé et la condition à mettre en attente.
+    - Cliquez sur **Ajouter** des conditions pour ajouter une ou plusieurs conditions afin de limiter la requête de recherche pour la suspension. Chaque condition ajoute une clause à la requête de recherche KQL créée et exécutée lors de la création de la suspension. Par exemple, vous pouvez spécifier une plage de dates pour que les documents de courrier ou de site créés dans la plage de dates soient suspendus. Une condition est connectée à la requête de mot-clé (spécifiée dans la zone de mot-clé) sur le plan logique par l’opérateur AND. Cela signifie que les éléments doivent satisfaire à la fois la requête de mot clé et la condition à mettre en attente.
 
      Pour plus d'informations sur la création d'une requête de recherche et l'utilisation de conditions, consultez la rubrique [requêtes de mots clés et conditions de recherche pour la recherche de contenu](https://docs.microsoft.com/en-us/office365/SecurityCompliance/keyword-queries-and-search-conditions).
 

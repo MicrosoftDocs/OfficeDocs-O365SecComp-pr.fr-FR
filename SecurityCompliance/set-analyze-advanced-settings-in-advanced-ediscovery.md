@@ -1,5 +1,5 @@
 ---
-title: Définir les paramètres avancés d’analyse dans Office 365 Advanced eDiscovery
+title: Définir les paramètres avancés d'analyse dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: 'Découvrez comment configurer les paramètres avancés, notamment les doublons, les threads de messagerie et les thèmes, pour le processus Analyze dans Office 365 Advanced eDiscovery. '
 ms.openlocfilehash: d8dfb9f3ecfcda0f267dfccdc716eda40fe450b2
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260856"
 ---
-# <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>Définir les paramètres avancés d’analyse dans Office 365 Advanced eDiscovery
+# <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>Définir les paramètres avancés d'analyse dans Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

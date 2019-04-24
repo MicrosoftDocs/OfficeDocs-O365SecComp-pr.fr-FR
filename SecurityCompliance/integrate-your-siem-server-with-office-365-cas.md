@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: Vous pouvez intégrer votre serveur SIEM à la sécurité des applications Cloud Office 365. Lisez cet article pour obtenir une vue d'ensemble du fonctionnement et de la configuration.
 ms.openlocfilehash: 82b5e0e6467bd42acba3c40d67e4e0363a7e0f72
-ms.sourcegitcommit: 4abcc03497478abf1ae7fc84792f44360d8e59c1
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "30548584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254728"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>Intégrer votre serveur SIEM à la sécurité des applications cloud Office 365
   
@@ -45,7 +45,7 @@ La sécurité des applications Cloud Office 365 prend actuellement en charge les
 - Micro focus ArcSight
 - CEF générique
 
-### <a name="prerequisites"></a>Conditions requises
+### <a name="prerequisites"></a>Conditions préalables
 
 - Vous devez être un administrateur général ou un administrateur de sécurité pour effectuer les tâches décrites dans cet article. Consultez [la rubrique autorisations dans le centre &amp; de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md)
 
@@ -112,7 +112,7 @@ Après avoir cliqué sur Fermer et quitté l'Assistant, dans l'écran extensions
 
     - **Windows**: exécuter en tant que tâche planifiée, en veillant à configurer la tâche pour **qu'elle s'exécute si l'utilisateur est connecté ou non** et désactivez l'option **arrêter la tâche si elle s'exécute plus longtemps que** .
 
-    - **Linux**: ajoutez la commande Run avec un **&** dans le `rc.local` fichier. <br/>Exemple :<br/> 
+    - **Linux**: ajoutez la commande Run avec un **&** dans le `rc.local` fichier. <br/>Exemple :<br/> 
     ```
     java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &
     ```

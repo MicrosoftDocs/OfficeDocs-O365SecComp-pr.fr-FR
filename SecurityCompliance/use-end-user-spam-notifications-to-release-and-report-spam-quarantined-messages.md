@@ -13,11 +13,11 @@ ms.collection:
 - M365-security-compliance
 description: "Les utilisateurs qui voient un message de notification de courrier indésirable à l'utilisateur final de leur administrateur sur le courrier en quarantaine peuvent effectuer ces actions sur les messages. "
 ms.openlocfilehash: f9a8cdf21dfae631b311651aa2259af2f76d73b8
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30691973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264330"
 ---
 # <a name="use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages"></a>Utilisation des notifications de courrier indésirable pour l'utilisateur final et signalement des messages de courrier indésirable mis en quarantaine
 

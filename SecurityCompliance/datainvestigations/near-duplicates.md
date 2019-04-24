@@ -1,5 +1,5 @@
 ---
-title: Détecter des quasi-duplicatas
+title: Détection des quasi-duplicatas
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 941809193a3342d8c7b9de991370848aee4af070
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257662"
 ---
-# <a name="near-duplicate-detection"></a>Détecter des quasi-duplicatas
+# <a name="near-duplicate-detection"></a>Détection des quasi-duplicatas
 
 Considérez un ensemble de documents à examiner dans lequel un sous-ensemble est basé sur le même modèle et qui possède essentiellement le même langage, avec quelques différences ici et là. Si un réviseur peut identifier ce sous-ensemble, passer en revue l'une d'entre elles de façon approfondie et passer en revue les différences pour le reste, il n'aurait pas manqué d'informations uniques pendant une période de temps qui aurait été utilisée pour lire tous les documents. Les groupes de détection near-duplicate regroupent des documents textuellement similaires pour vous aider à améliorer l'efficacité de votre processus de révision.
 

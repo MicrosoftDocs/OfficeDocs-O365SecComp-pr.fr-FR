@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: Outre le chiffrement de base, le chiffrement au niveau du volume qui est activé via BitLocker et le gestionnaire de clés distribuées (DKM), Office 365 offre une couche de chiffrement supplémentaire au niveau de l'application pour le contenu client dans Office 365, y compris les données d'Exchange En ligne, Skype entreprise, SharePoint Online et OneDrive entreprise. Il s'agit du chiffrement de service.
-ms.openlocfilehash: 5e1acca69ccdd8acb986acb4d7a302d4ca3fbe8a
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 8515354d716df22fa124c03e18c36914d27102f4
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266940"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>FAQ : chiffrement de service avec une clé client pour Office 365
 
@@ -46,7 +46,7 @@ BYOK avec Azure information protection pour Exchange Online est proposé dans le
 ## <a name="does-office-365-message-encryption-and-bring-your-own-key-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>Est-ce que le chiffrement de messages Office 365 et apporter votre propre clé avec Azure information protection modifient l'approche de Microsoft pour les demandes de données tierces telles que les demandes?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Non. Le chiffrement de messages Office 365 et l'option permettant de fournir et de contrôler vos propres clés de chiffrement avec votre propre clé (BYOK) pour Azure information protection (AIP) n'a pas été conçu pour répondre aux apports à l'application de la Loi. Le chiffrement de messages Office 365 avec BYOK pour AIP a été conçu pour les clients ayant des objectifs de conformité qui doivent respecter leurs obligations de conformité internes ou externes. Microsoft prend des demandes tierces de données client très sérieusement. En tant que fournisseur de services Cloud, nous sommes toujours le partisan de la confidentialité des données client. Dans le cas où nous obtenons une demande, nous tentons toujours de rediriger la tierce partie vers le client pour obtenir les informations. (Lisez le blog de Brad Smith: [protection des données client de l'espionnage public](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Nous publions régulièrement des informations détaillées sur la demande que nous recevons [ici](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
+Non. Le chiffrement de messages Office 365 et l'option permettant de fournir et de contrôler vos propres clés de chiffrement avec votre propre clé (BYOK) pour Azure information protection n'ont pas été conçus pour répondre aux apports à l'application de la Loi. Le chiffrement de messages Office 365 avec BYOK pour AIP a été conçu pour les clients ayant des objectifs de conformité qui doivent respecter leurs obligations de conformité internes ou externes. Microsoft prend des demandes tierces de données client très sérieusement. En tant que fournisseur de services Cloud, nous sommes toujours le partisan de la confidentialité des données client. Dans le cas où nous obtenons une demande, nous tentons toujours de rediriger la tierce partie vers le client pour obtenir les informations. (Lisez le blog de Brad Smith: [protection des données client de l'espionnage public](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Nous publions régulièrement des informations détaillées sur la demande que nous recevons [ici](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
   
 Pour plus d'informations, consultez le centre de gestion de la [confidentialité](https://www.microsoft.com/en-us/trustcenter/default.aspx) relatif aux demandes de données tierces et à la «divulgation des données client» dans les [services en ligne (OST) ](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx).
   

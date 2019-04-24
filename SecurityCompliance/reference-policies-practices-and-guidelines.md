@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Microsoft a développé diverses stratégies, procédures et a adopté plusieurs meilleures pratiques du secteur afin de protéger les utilisateurs contre des courriers indésirables, indésirables ou malveillants.
 ms.openlocfilehash: a074bb1fbe6fedb9054b98d3723511607fed7304
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261532"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Référence : Stratégies, pratiques et conseils
   

@@ -11,11 +11,11 @@ ms.collection:
 - M365-security-compliance
 description: En savoir plus sur les principes de sécurité et les recommandations pour la modernisation de la sécurité dans votre organisation.
 ms.openlocfilehash: 51d9a9e44c08a7a41fc1a0a1e9d062bef02d9ef5
-ms.sourcegitcommit: d3e3ce391130f209f4d63c2528e1da8342cd732f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31908244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32244045"
 ---
 # <a name="ciso-workshop-module-3-identity-and-access-management"></a>Module d'atelier CISO 3: gestion des identités et des accès 
 

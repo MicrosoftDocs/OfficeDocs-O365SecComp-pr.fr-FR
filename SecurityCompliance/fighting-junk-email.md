@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: La feuille de route sécurité de messagerie de Microsoft implique une approche inter-produits sans correspondance. La technologie de filtrage anti-spam et anti-hameçonnage d'Exchange Online Protection (EOP) est appliquée sur les plateformes de messagerie de Microsoft pour fournir aux utilisateurs les innovations et les outils anti-spam et anti-hameçonnage les plus récents dans tout le réseau. L'objectif d'EOP est de proposer un service de messagerie complet et utilisable qui vous aide à détecter le courrier indésirable, les menaces d'e-mails frauduleux (hameçonnage) et les logiciels malveillants, et de protéger les utilisateurs.
 ms.openlocfilehash: 510b04d3f111c269d5f8579abcc809ddc283636b
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255442"
 ---
 # <a name="fighting-junk-email-sent-to-office-365"></a>Lutter contre le courrier indésirable envoyé à Office 365
 

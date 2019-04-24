@@ -13,11 +13,11 @@ ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Pour les rapports de conformité réglementaire en ligne pour Office 365, Azure et Dynamics 365 Online, Découvrez comment Microsoft conserve les données client sûres et comment vous pouvez vous conformer aux normes ISO, HIPAA, NIST, FINRA, RGPD et FedRAMP lorsque vous utilisez ces services en ligne.
 ms.openlocfilehash: ff14f1b88dbde06dbfd17a87bb94c3f32ddff81b
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30647334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254296"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Prise en main du portail d'approbation de service Microsoft
 
@@ -29,11 +29,11 @@ Le portail d'approbation de services contient des détails sur l'implémentation
   
 Les **clients existants peuvent accéder au portail d'approbation de service** à [https://aka.ms/STP](https://aka.ms/STP) l'aide de l'un des abonnements en ligne suivants (version d'évaluation ou payante): 
   
-- Office 365
+- Office 365
 
 - Dynamics 365
 
-- Azur
+- Azure
     
  > [!NOTE]
  > Les comptes Azure Active Directory associés aux organisations ont accès à l'ensemble des documents et des fonctionnalités, comme le gestionnaire de conformité. Les comptes Microsoft créés pour une utilisation personnelle ont un accès limité au contenu du portail d'approbation de services. 
@@ -118,7 +118,7 @@ Fonctions administratives uniquement disponibles pour le compte d'administrateur
   
  La page **paramètres** vous permet d'attribuer un accès basé sur les rôles au gestionnaire de conformité. Pour plus d'informations, reportez-vous à la section «autorisations et contrôle d'accès basé sur un rôle» dans [utiliser le gestionnaire de conformité pour répondre aux exigences réglementaires et de protection des données lors de l'utilisation des services Cloud de Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control).
   
-### <a name="search"></a>Recherche
+### <a name="search"></a>Rechercher
 
 Cliquez sur la loupe dans le coin supérieur droit de la page du portail d'approbation de service pour développer la zone, entrez vos termes de recherche, puis appuyez sur **entrée**.
 

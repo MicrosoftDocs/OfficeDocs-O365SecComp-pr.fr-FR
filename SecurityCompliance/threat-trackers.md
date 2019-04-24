@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: En savoir plus sur les suivis de menace, y compris les nouveaux suivis, pour aider votre organisation à répondre aux préoccupations de sécurité.
 ms.openlocfilehash: 4a12a1cfe68f8ebcfae640a65d0eca68e36fb04c
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260020"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Suivi des menaces-nouveautés et remarquables
 

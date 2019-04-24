@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Utilisez la gestion des menaces pour contrôler et gérer l'accès des appareils mobiles aux données de votre organisation, protéger votre organisation contre la perte de données et protéger les messages entrants et sortants contre les logiciels malveillants et le courrier indésirable. Vous pouvez également utiliser la gestion des menaces pour protéger la réputation de votre domaine et déterminer si les expéditeurs sont ou non usurpés de manière malveillante les comptes de votre domaine.
 ms.openlocfilehash: 9c6c39b7edc008c4a44146fac8076897e705b5f5
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259940"
 ---
 # <a name="threat-management-in-the-office-365-security-amp-compliance-center"></a>Threat management in the Office 365 Security &amp; Compliance Center
 

@@ -11,11 +11,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Cette rubrique présente l'aspect d'une stratégie de protection contre la perte de données (DLP) lorsqu'elle détecte le type d'informations sensibles du numéro d'identification national de l'UE. Ce type d'informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
 ms.openlocfilehash: afae2c3fa54fe5fcd93990cdf5797f5517c46202
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255642"
 ---
 # <a name="eu-national-identification-number"></a>Numéro d'identification nationale de l'UE
 
@@ -57,7 +57,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsaustriaeunationalidcard"></a>Keywords_austria_eu_national_id_card
 
@@ -121,7 +121,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsbulgarianationalnumber"></a>Keywords_bulgaria_national_number
 
@@ -195,7 +195,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordscypruseunationalidcard"></a>Keywords_cyprus_eu_national_id_card
 
@@ -264,7 +264,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsestoniaeunationalidcard"></a>Keywords_estonia_eu_national_id_card
 
@@ -348,7 +348,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordshungaryeunationalidcard"></a>Keywords_hungary_eu_national_id_card
 
@@ -415,7 +415,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsirelandeunationalidcard"></a>Keywords_ireland_eu_national_id_card
 
@@ -489,7 +489,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsitalyeunationalidcard"></a>Keywords_italy_eu_national_id_card
 
@@ -565,7 +565,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordslatviaeunationalidcard"></a>Keywords_latvia_eu_national_id_card
 
@@ -630,7 +630,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordslithuaniaeunationalidcard"></a>Keywords_lithuania_eu_national_id_card
 
@@ -695,7 +695,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsluxemburgeunationalidcard"></a>Keywords_luxemburg_eu_national_id_card
 
@@ -776,7 +776,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsmaltaeunationalidcard"></a>Keywords_malta_eu_national_id_card
 
@@ -837,7 +837,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsnetherlandseunationalidcard"></a>Keywords_netherlands_eu_national_id_card
 
@@ -910,7 +910,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsromaniaeunationalidcard"></a>Keywords_romania_eu_national_id_card
 
@@ -991,7 +991,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsslovakiaeunationalidcard"></a>Keywords_slovakia_eu_national_id_card
 
@@ -1068,7 +1068,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordssloveniaeunationalidcard"></a>Keywords_slovenia_eu_national_id_card
 
@@ -1128,7 +1128,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsspaineunationalidcard"></a>Keywords_spain_eu_national_id_card
 

@@ -1,5 +1,5 @@
 ---
-title: Configurer des chargements pour ajouter des fichiers importés dans Office 365 Advanced eDiscovery
+title: Configurer les charges pour ajouter des fichiers importés dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,20 +14,20 @@ search.appverid:
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: "Passez en revue les étapes nécessaires pour ajouter des fichiers importés à la dernière charge ou un lot de fichiers défini avant d'effectuer une formation pertinente dans Office 365 Advanced eDiscovery.  "
 ms.openlocfilehash: 8c5101628b468719f8aa4f81a4c73cbbb226105f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260736"
 ---
-# <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Configurer des chargements pour ajouter des fichiers importés dans Office 365 Advanced eDiscovery
+# <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Configurer les charges pour ajouter des fichiers importés dans Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Dans Advanced eDiscovery, une charge est un nouveau lot de fichiers ajouté à un cas. Par défaut, une charge est définie et tous les fichiers importés sont ajoutés à celle-ci. Avant d'effectuer une formation pertinente, les fichiers importés doivent être ajoutés au chargement. 
   
-Examinez les scénarios suivants:
+Plusieurs scénarios sont envisageables :
   
 - Les nouveaux fichiers sont semblables aux fichiers précédents chargés dans la base de données de cas, ou le chargement de fichiers précédent était un jeu aléatoire à partir de la collection de fichiers. Dans ce cas, ajoutez les fichiers importés au chargement du fichier en cours.
     

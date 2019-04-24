@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Une explication de la corruption des données dans Office 365, ainsi que les efforts de prévention et de récupération de Microsoft.
 ms.openlocfilehash: 9bf55243399ecd9f01f736e2da70d7c07231fa63
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262826"
 ---
 # <a name="dealing-with-data-corruption-in-office-365"></a>Gestion de l'altération des données dans Office 365
 

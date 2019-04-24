@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Utilisez le centre de sécurité & Compliance Center pour créer et gérer des cas eDiscovery dans votre organisation. Vous pouvez affecter des membres au cas, placer des emplacements de contenu en conservation, exécuter des recherches de contenu associées à l'incident et exporter les résultats de la recherche. Vous pouvez également préparer des données de cas pour une analyse approfondie dans Advanced eDiscovery.
 ms.openlocfilehash: 5f31153e70495dc28ee276c36e9edfc67638956e
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257912"
 ---
 # <a name="ediscovery-cases-in-the-security--compliance-center"></a>cas de découverte électronique dans le centre de sécurité & conformité
 

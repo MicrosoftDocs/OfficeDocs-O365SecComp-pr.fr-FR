@@ -18,11 +18,11 @@ ms.collection:
 - M365-security-compliance
 description: Vous pouvez utiliser la gestion des droits relatifs à l'information (IRM) pour contrôler et protéger les fichiers téléchargés à partir de listes ou de bibliothèques.
 ms.openlocfilehash: ae07136cf128f167695f667cc8a149492287f498
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32244023"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Appliquer la gestion des droits relatifs à l'information (IRM) à une liste ou une bibliothèque
 
@@ -62,7 +62,7 @@ Vous pouvez utiliser la gestion des droits relatifs à l'information (IRM) pour 
     
 7. Pour appliquer des restrictions supplémentaires aux documents de cette liste ou bibliothèque, cliquez sur **afficher les options**, puis effectuez l'une des opérations suivantes:
     
-|**Pour cela, procédez comme suit:**|**Procédez comme suit:**|
+|**Pour ce faire :**|**Procédez comme suit:**|
 |:-----|:-----|
 |Autoriser les utilisateurs à imprimer des documents à partir de cette liste ou bibliothèque  <br/> |Activez la case à cocher **autoriser les utilisateurs à imprimer** .  <br/> |
 |Autorisez les utilisateurs disposant au moins de l'autorisation Afficher les éléments à exécuter du code incorporé ou des macros dans un document.  <br/> |Activez la case à cocher **autoriser les visualiseurs à exécuter le script et le lecteur d'écran pour fonctionner sur les documents téléchargés** .  <br/> Si vous sélectionnez cette option, les utilisateurs peuvent exécuter du code pour extraire le contenu d'un document.           |
@@ -77,7 +77,7 @@ Vous pouvez utiliser la gestion des droits relatifs à l'information (IRM) pour 
 ## <a name="what-is-information-rights-management"></a>Qu'est-ce que la gestion des droits relatifs à l'information?
 <a name="__toc256598175"> </a>
 
-La gestion des droits relatifs à l'information (IRM) vous permet de limiter les actions que les utilisateurs peuvent effectuer sur les fichiers qui ont été téléchargés à partir de listes ou de bibliothèques. IRM chiffre les fichiers téléchargés et limite l'ensemble d'utilisateurs et de programmes autorisés à déchiffrer ces fichiers. La gestion des droits relatifs à l'information peut également limiter les droits des utilisateurs autorisés à lire des fichiers, afin qu'ils ne puissent pas effectuer des actions telles que l'impression de copies des fichiers ou la copie de texte à partir de celles-ci.
+La gestion des droits relatifs à l'information (IRM) vous permet de limiter les actions que les utilisateurs peuvent effectuer sur les fichiers qui ont été téléchargés à partir de listes ou de bibliothèques. IRM chiffre les fichiers téléchargés et limite l’ensemble des utilisateurs et des programmes autorisés à déchiffrer ces fichiers. IRM peut également limiter les droits des utilisateurs qui sont autorisés à lire des fichiers, pour leur interdire par exemple d’effectuer des actions telles qu’imprimer des copies des fichiers ou copier du texte de ceux-ci.
   
 Vous pouvez utiliser la gestion des droits relatifs à l'information (IRM) sur des listes ou des bibliothèques pour limiter la diffusion de contenu sensible. Par exemple, si vous créez une bibliothèque de documents pour partager des informations sur les produits à venir avec des délégués marketing sélectionnés, vous pouvez utiliser la gestion des droits relatifs à l'information pour empêcher ces personnes de partager ce contenu avec d'autres employés de l'entreprise.
   
@@ -133,7 +133,7 @@ Les types de restrictions appliquées à un fichier lorsqu'il est téléchargé 
 |:-----|:-----|
 |Gérer les autorisations, gérer le site Web  <br/> |**Contrôle total** (tel que défini par le programme client): cette autorisation permet généralement à un utilisateur de lire, modifier, copier, enregistrer et modifier des autorisations de contenu géré par des droits.  <br/> |
 |Modifier des éléments, gérer des listes, ajouter et personnaliser des pages  <br/> |**Modifier**, **copier**et **Enregistrer**: un utilisateur peut imprimer un fichier uniquement si la case **à cocher Autoriser les utilisateurs à imprimer des documents** est activée sur la page Paramètres de gestion des droits relatifs à l'information pour la liste ou la bibliothèque.  <br/> |
-|Afficher les éléments  <br/> |**Lecture**: un utilisateur peut lire le document, mais ne peut pas copier ou modifier son contenu. Un utilisateur ne peut imprimer que si la case à cocher **autoriser les utilisateurs à imprimer des documents** est activée sur la page Paramètres de gestion des droits relatifs à l'information pour la liste ou la bibliothèque.<br/> |
+|Afficher les éléments  <br/> |**Lecture**: un utilisateur peut lire le document, mais ne peut pas copier ou modifier son contenu. Un utilisateur ne peut imprimer que si la case à cocher **autoriser les utilisateurs à imprimer des documents** est activée sur la page Paramètres de gestion des droits relatifs à l'information pour la liste ou la bibliothèque.  <br/> |
 |Autre  <br/> |Aucune autre autorisation ne correspond directement aux autorisations IRM.  <br/> |
    
 Lorsque vous activez IRM pour une liste ou une bibliothèque dans SharePoint Server 2013, vous pouvez uniquement protéger les types de fichiers de cette liste ou bibliothèque pour lesquels un logiciel de protection est installé sur tous les serveurs Web frontaux. Un protecteur est un programme qui contrôle le chiffrement et le déchiffrement des fichiers gérés par des droits d'un format de fichier spécifique. SharePoint inclut des logiciels de protection pour les types de fichiers suivants:

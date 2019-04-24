@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Explication du fonctionnement de la journalisation interne pour Office 365 Engineering Teams.
 ms.openlocfilehash: e8798d4c6d4ba7393612f9a2b22bc282956a2aa9
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262676"
 ---
 # <a name="internal-logging-for-office-365-engineering"></a>Journalisation interne pour Office 365 Engineering
 Outre les événements et les données de journalisation disponibles pour les clients, il existe également un système de collecte de données de journal interne disponible pour les ingénieurs Office 365. De nombreux types de données de journal sont téléchargés à partir des serveurs Office 365 vers un service informatique interne et de grande taille appelé Cosmos. Chaque équipe de service télécharge les journaux d'audit de leurs serveurs respectifs dans la base de données Cosmos pour l'agrégation et l'analyse. Ce transfert de données se produit sur une connexion TLS validée par FIPS 140-2 sur des ports et protocoles approuvés spécifiquement à l'aide d'un outil Automation propriétaire appelé le chargeur de données Office (ODL). Les outils utilisés dans Office 365 pour collecter et traiter des enregistrements d'audit n'autorisent pas les modifications permanentes ou irréversibles du contenu des enregistrements d'audit d'origine ou de l'ordre des heures.

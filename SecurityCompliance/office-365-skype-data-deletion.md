@@ -3,23 +3,22 @@ title: Suppression des données Office 365 Skype entreprise
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Explication de la suppression de données dans Skype entreprise.
-ms.openlocfilehash: 77ead8b8c2251ce21f9a0c0db9e29d5d48829760
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: ca48a4bc57cdba7301a51cc6404a7d402166ffb0
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261302"
 ---
 # <a name="skype-for-business-data-deletion-in-office-365"></a>Suppression de données Skype entreprise dans Office 365
 
@@ -28,15 +27,15 @@ Skype Entreprise prend en charge l'archivage des messages instantanés de pair �
 Tout l'archivage réalisé dans Skype Entreprise est considéré comme « archivage de niveau utilisateur », car vous l'activez et le désactivez pour un ou plusieurs utilisateurs ou groupes d'utilisateurs spécifiques en créant, configurant et appliquant une stratégie d'archivage de niveau utilisateur à ces utilisateurs. Il n'existe aucun contrôle direct des paramètres d'archivage à partir du Centre d'administration Skype Entreprise.
 
 Les types de contenu suivants ne sont pas archivés dans Skype entreprise: 
-- Transferts de fichiers pair à pair
-- Audio/vidéo pour les messages instantanés et conférences pair à pair
+- Transferts de fichiers d’égal à égal
+- Audio/vidéo pour messages instantanés et conférences d’égal à égal
 - Partage d'applications pour les messages instantanés et les conférences pair à pair
 - Annotations de conférence 
 
 ## <a name="meeting-content-retention"></a>Rétention de contenu de réunion
-Les clients qui utilisent Skype entreprise peuvent télécharger du contenu dans une réunion Skype entreprise en tant que pièces jointes, telles que des présentations PowerPoint, des fichiers OneNote et d'autres fichiers. La période de rétention pour le contenu qui a été téléchargé vers une réunion est la suivante:
+Les clients qui utilisent Skype entreprise peuvent télécharger du contenu dans une réunion Skype entreprise en tant que pièces jointes, telles que des présentations PowerPoint, des fichiers OneNote et d'autres fichiers. La période de rétention du contenu téléchargé lors d’une réunion est la suivante :
 - **Réunion** ponctuelle: le contenu est conservé pendant 15 jours à partir du moment où la dernière personne quitte la réunion.
-- **Réunion périodique** -le contenu est conservé pendant 15 jours après que la dernière personne a quitté la dernière session de la réunion. Le minuteur de rétention est rétablit si quelqu'un rejoint la même session de réunion dans les 15 jours. Par exemple, supposons qu'une réunion Skype entreprise est planifiée pour s'exécuter une fois par semaine pendant un an, et qu'un fichier est chargé vers la réunion au cours de la première instance. Si au moins une personne rejoint la session de réunion chaque semaine, le fichier est conservé dans les serveurs Skype entreprise Online pendant toute l'année plus 15 jours après la fin de la dernière réunion de la série.
+- **Réunion périodique** -le contenu est conservé pendant 15 jours après que la dernière personne a quitté la dernière session de la réunion. Le minuteur déterminant la période de rétention est réinitialisé lorsqu’une personne participe à une même session dans les 15 jours. Par exemple, supposons qu'une réunion Skype entreprise est planifiée pour s'exécuter une fois par semaine pendant un an, et qu'un fichier est chargé vers la réunion au cours de la première instance. Si au moins une personne rejoint la session de réunion chaque semaine, le fichier est conservé dans les serveurs Skype entreprise Online pendant toute l'année plus 15 jours après la fin de la dernière réunion de la série.
 - **Réunion Conférence maintenant** : le contenu est conservé pendant 8 heures après l'heure de fin de la réunion.
 
 > [!NOTE]
@@ -49,7 +48,7 @@ Les utilisateurs peuvent accéder à une réunion spécifique après la fin, sou
 - **Réunion Conférence maintenant** : la réunion expire au bout de 8 heures.
 
 ## <a name="whiteboard-collaboration"></a>Collaboration sur le tableau blanc
-Les anNotations effectuées sur les tableaux blancs seront visibles par tous les participants. Lors de l'enregistrement d'un tableau blanc, le tableau blanc et toutes les annotations seront stockés sur Skype entreprise Server et seront conservés sur le serveur en fonction des stratégies d'expiration de contenu de réunion définies par l'administrateur.
+Tous les participants verront les annotations qui y sont ajoutées. Lors de l'enregistrement d'un tableau blanc, le tableau blanc et toutes les annotations seront stockés sur Skype entreprise Server et seront conservés sur le serveur en fonction des stratégies d'expiration de contenu de réunion définies par l'administrateur.
 
 ## <a name="audio-test-service"></a>Service de test audio
 Un échantillon court (environ 5 secondes) de votre voix est enregistré pendant l'appel du service de test audio. L'exemple de voix est utilisé par vous pour vérifier et/ou vérifier la qualité audio de votre appel Skype entreprise en fonction de la qualité de l'enregistrement. Lorsque l'appel du service de test audio prend fin, l'exemple de voix est supprimé.

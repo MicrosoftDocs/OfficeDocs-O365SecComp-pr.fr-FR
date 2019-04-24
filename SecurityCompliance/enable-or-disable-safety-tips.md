@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Indique à Office 365 et aux administrateurs EOP comment activer et désactiver les conseils de sécurité dans les messages électroniques.
 ms.openlocfilehash: 9be9c4cd7fc8e94208aac2ad8812c93a3465f58b
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256944"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>Activer ou désactiver les conseils de sécurité dans Office 365
 
@@ -40,7 +40,7 @@ Dans cet article :
 
 1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à Office 365 à l'aide de votre compte professionnel ou scolaire.
+2. Connectez-vous à Office 365 avec votre compte professionnel ou scolaire.
     
 3. Choisissez **** \> **stratégie**de gestion des menaces. 
     
@@ -93,7 +93,7 @@ Où :
 
 Pour plus d'informations sur cette cmdlet, consultez la rubrique [Set-HostedContentFilterPolicy](https://technet.microsoft.com/library/jj200781.aspx).
     
-## <a name="still-need-help"></a>Vous avez encore besoin d'aide ?
+## <a name="still-need-help"></a>Vous avez encore besoin d’aide ?
 <a name="pshellsafetytip"> </a>
 
 Si vous avez désactivé les conseils de sécurité, mais que vous les voyez toujours dans vos messages électroniques, vérifiez les points suivants:

@@ -3,23 +3,22 @@ title: Migrations de boîtes aux lettres Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Bref résumé des applets de commande utilisées pour les migrations de boîtes aux lettres Office 365.
-ms.openlocfilehash: 8e0f23a3efbbcf6f84364c09e667678972120e18
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f21462b1f4a1838ee617e0d429ba73f01ca2db90
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262576"
 ---
 # <a name="office-365-mailbox-migrations"></a>Migrations de boîtes aux lettres Office 365
 Avec un déploiement hybride basé sur Exchange, les clients peuvent choisir de déplacer des boîtes aux lettres Exchange locales vers une organisation [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) ou de déplacer des boîtes aux lettres Exchange Online vers une organisation [Exchange locale](https://docs.microsoft.com/Exchange/exchange-server) . Les lots de migration sont utilisés lors du déplacement de boîtes aux lettres entre des organisations locales et Exchange Online. Les clients peuvent consulter les statistiques et d'autres informations sur les migrations de boîtes aux lettres à l'aide des applets de commande suivantes:

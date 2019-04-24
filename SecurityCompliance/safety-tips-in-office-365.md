@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Présente des conseils de sécurité pour les messages électroniques filtrés par le filtre de courrier indésirable EOP et Office 365.
 ms.openlocfilehash: d85eb0bde24220fbbfc12e7b5f01acec69571dee
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261438"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>Conseils de sécurité dans les messages électroniques dans Office 365
 
@@ -58,7 +58,7 @@ Le Conseil de sécurité, un message codé en couleur, vous avertit des messages
 
 Les conseils de sécurité sont toujours activés pour Outlook sur le Web, même si tous les messages ne recevront pas tous les messages. Les administrateurs d'Office 365 peuvent désactiver les conseils de sécurité pour d'autres clients de messagerie, tels qu'Outlook. Pour plus d'informations, consultez la rubrique [activation ou désactivation des conseils de sécurité dans Office 365](enable-or-disable-safety-tips.md).
   
-Si vous n'êtes pas d'accord avec la façon dont Office 365 et EOP ont catégorisé un message (c'est-à-dire qu'il ne s'agit pas d'un courrier indésirable ou qu'il n'est pas légitime), vous pouvez envoyer les messages pour analyse afin de faciliter votre expérience. Pour plus d'informations, consultez [la rubrique signaler le courrier indésirable et les escroqueries par hameçonnage dans Outlook sur le Web](https://technet.microsoft.com/library/dn594557.aspx). Vous pouvez également cliquer sur le lien Commentaires dans le Conseil de sécurité pour envoyer des commentaires directement à Microsoft afin de nous aider à améliorer.
+Si vous n'êtes pas d'accord avec la façon dont Office 365 et EOP ont catégorisé un message (c'est-à-dire qu'il ne s'agit pas d'un courrier indésirable ou qu'il n'est pas légitime), vous pouvez envoyer les messages pour analyse afin de faciliter votre expérience. Pour plus d’informations, voir [Report junk email and phishing scams in Outlook on the web](https://technet.microsoft.com/library/dn594557.aspx). Vous pouvez également cliquer sur le lien Commentaires dans le Conseil de sécurité pour envoyer des commentaires directement à Microsoft afin de nous aider à améliorer.
   
 ## <a name="see-also"></a>Voir aussi
 

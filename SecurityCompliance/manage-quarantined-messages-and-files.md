@@ -17,17 +17,17 @@ ms.collection:
 - M365-security-compliance
 description: "En tant qu'administrateur, vous pouvez afficher, publier et signaler des messages en quarantaine faux positifs dans Office 365. Vous pouvez configurer des stratégies pour qu'Office 365 filtre les messages et les envoie à la mise en quarantaine pour plusieurs raisons: ils ont été identifiés comme courrier indésirable, en bloc, par hameçonnage, par programme malveillant ou parce qu'ils correspondent à une règle de flux de messagerie. "
 ms.openlocfilehash: c2a6fff9f6b4d93900174426e2230284695ff3bf
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32251985"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gestion des messages et des fichiers mis en quarantaine en tant qu'administrateur dans Office 365
 
 En tant qu'administrateur, vous pouvez afficher, publier et supprimer des messages mis en quarantaine, et signaler des messages en quarantaine faux positifs dans Office 365. Vous pouvez également afficher, télécharger et supprimer les fichiers mis en quarantaine capturés par Advance Threat Protection (ATP) pour SharePoint Online, OneDrive entreprise et Microsoft Teams. Vous pouvez configurer des stratégies pour qu'Office 365 filtre les messages et les envoie à la mise en quarantaine pour plusieurs raisons: ils ont été identifiés comme courrier indésirable, courrier en nombre, courrier de hameçonnage, contenant des programmes malveillants, ou parce qu'ils correspondent à une règle de flux de messagerie.
   
-Par défaut, Office 365 envoie des messages de hameçonnage et des messages contenant des programmes malveillants directement à la mise en quarantaine. Les autres messages filtrés sont envoyés dans le dossier de courrier inDésirable des utilisateurs, sauf si vous configurez une stratégie pour les envoyer en quarantaine.
+Par défaut, Office 365 envoie les messages de hameçonnage et les messages contenant des programmes malveillants directement en quarantaine. Les autres messages filtrés sont envoyés dans le dossier de courrier inDésirable des utilisateurs, sauf si vous configurez une stratégie pour les envoyer en quarantaine.
   
 Vous devez disposer des autorisations d'administrateur général (GA) dans Office 365 pour travailler avec des messages mis en quarantaine qui ont été envoyés à d'autres utilisateurs et pour utiliser des fichiers mis en quarantaine.
   
@@ -91,7 +91,8 @@ En fonction de vos paramètres, il peut y avoir un grand nombre de messages et d
     
 2. Sous **Trier les résultats par**, sélectionnez le filtre ou les filtres que vous souhaitez utiliser pour la recherche dans les listes déroulantes. Les options varient selon que vous recherchez des fichiers ou des messages. Les caractères génériques ne sont pas pris en charge dans les champs de recherche pour le moment.<br/><br/>Pour les fichiers et les messages, vous pouvez choisir de filtrer selon la date à laquelle le message ou le fichier a été envoyé en quarantaine. Vous pouvez spécifier la date ou une plage de dates, y compris l'heure. Vous pouvez également filtrer vos résultats de recherche en fonction de la date d'expiration à laquelle le fichier ou le message sera supprimé de la quarantaine, ou vous pouvez utiliser une combinaison de filtres. Pour effectuer une recherche par date d'expiration, choisissez **filtre avancé**. Sous **expire**, vous pouvez sélectionner les messages qui seront supprimés de la quarantaine au cours des prochaines 24 heures ( **aujourd'hui**), au cours des prochaines 48 heures ( **2 prochains jours**), au cours de la semaine suivante (7 prochains **jours**) ou vous pouvez sélectionner un intervalle de temps personnalisé.<br/><br/>Pour les messages, vous disposez des options supplémentaires suivantes:
     
-      - **ID du message**. Utilisez-la pour identifier un message spécifique lorsque vous êtes informé de l'ID du message.<br/><br/>Par exemple, si un message spécifique est envoyé par un utilisateur de votre organisation ou s'il est destiné à celui-ci, mais qu'il n'a jamais atteint sa destination, vous pouvez rechercher le message à l'aide d'un suivi des messages (consultez [la rubrique exécution d'un suivi de message et affichage des résultats](https://go.microsoft.com/fwlink/?LinkId=799737)). Si vous découvrez que le message a été envoyé en quarantaine, peut-être parce qu'il correspond à une règle de flux de messagerie ou qu'il a été identifié comme courrier indésirable, vous pouvez facilement trouver ce message en quarantaine en spécifiant son ID de message. Veillez à inclure la chaîne d'ID de message complète. Cela peut inclure des chevrons\<\>(), par exemple:<br/>
+      - **ID du message**. Utilisez-la pour identifier un message spécifique lorsque vous êtes informé de l'ID du message.<br/><br/>
+    Par exemple, si un message spécifique est envoyé par un utilisateur de votre organisation ou s'il est destiné à celui-ci, mais qu'il n'a jamais atteint sa destination, vous pouvez rechercher le message à l'aide d'un suivi des messages (consultez [la rubrique exécution d'un suivi de message et affichage des résultats](https://go.microsoft.com/fwlink/?LinkId=799737)). Si vous découvrez que le message a été envoyé en quarantaine, peut-être parce qu'il correspond à une règle de flux de messagerie ou qu'il a été identifié comme courrier indésirable, vous pouvez facilement trouver ce message en quarantaine en spécifiant son ID de message. Veillez à inclure la chaîne d'ID de message complète. Cela peut inclure des chevrons\<\>(), par exemple:<br/>
     `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`
     
       - **Adresse de messagerie**de l'expéditeur. Choisissez de filtrer par une adresse de messagerie d'expéditeur unique. 
@@ -110,7 +111,7 @@ Lorsque vous sélectionnez un élément affiché dans la liste de mise en quaran
     
 - **Adresse**de l'expéditeur. Qui a envoyé le message. 
     
-- **Reçu**. Date et heure auxquelles le message a été reçu. 
+- **Reçu**. Date et heure de réception du message. 
     
 - **Objet**. Texte de la ligne d'objet du message. 
     
@@ -204,6 +205,6 @@ Vous pouvez configurer la durée de mise en quarantaine des messages et des fich
     
 7. Sous **quarantaine**, dans la zone de texte conserver les courriers indésirables **pendant (jours)** , entrez la durée pendant laquelle vous souhaitez qu'Office 365 conserve les messages et les fichiers en quarantaine. La valeur par défaut est 30 jours. Il s'agit également de la valeur maximale. 
     
-8. Sélectionnez **Save (Enregistrer)**.
+8. Cliquez sur **Enregistrer**.
     
 

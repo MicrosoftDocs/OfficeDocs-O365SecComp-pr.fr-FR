@@ -14,11 +14,11 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Découvrez les fonctionnalités d'analyse et de réponse automatisées dans Office 365 Advanced Threat Protection.
 ms.openlocfilehash: 223a28a7f63f101dd5644e433d72a3ddf6e5dc23
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249850"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>Recherche et réponse automatisées (AIR) avec Office 365
 
@@ -82,7 +82,7 @@ Chaque étape de haut niveau inclut de nombreuses sous-étapes qui sont exécut�
 
 Lorsqu'un utilisateur de votre organisation soumet un message électronique et le signale à Microsoft à l'aide du [complément de message de rapport pour Outlook ou Outlook Web Access](enable-the-report-message-add-in.md), le rapport est également envoyé à votre système et est visible dans l'Explorateur dans la vue signalée par l'utilisateur. Ce message signalée par l'utilisateur déclenche désormais une alerte d'information basée sur le système, qui lance automatiquement le manuel d'enquête.
 
-Lors de la phase d'enquête de racine, différents aspects du courrier électronique sont évalués. Ces situations sont les suivantes :
+Lors de la phase d'enquête de racine, différents aspects du courrier électronique sont évalués. Ces approches sont les suivantes :
 - Détermination du type de menace susceptible de se présenter;
 - Expéditeur;
 - Emplacement d'envoi du courrier électronique (infrastructure émettrice);

@@ -13,11 +13,11 @@ ms.collection:
 - M365-security-compliance
 description: Dans cette articleSupported LanguagesInstall le dossier Junk Email rePorting Add-unUninstall the Junk Email rePorting Add-inFor more information
 ms.openlocfilehash: ee7d1ef3f906c7c03433140c50c5c975f456cb08
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259822"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installation du complément de création de rapports de courrier indésirable pour Microsoft Outlook
   
@@ -67,7 +67,7 @@ Vous pouvez installer le complément de création de rapports de courrier indés
     
 - En exécutant une installation sans assistance, c'est-à-dire sans interface utilisateur d'installation. Au lieu d'utiliser cette dernière, vous spécifiez des options de ligne de commande qui exécutent un script d'installation. Lorsque vous installez le complément, vous disposez d'options de configuration supplémentaires qui sont indisponibles dans l'interface GUI. Pour plus d'informations, consultez la rubrique relative à [Installation du complément de création de rapports de courrier indésirable en mode sans assistance](install-the-junk-email-reporting-add-in-for-microsoft-outlook.md#BKMK_InstalltheJunkEmailReportingAdd-IninSilentMode).
     
-### <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
+### <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 L'installation du complément de création de rapports de courrier indésirable Microsoft pour Microsoft Outlook requiert la configuration suivante :
   

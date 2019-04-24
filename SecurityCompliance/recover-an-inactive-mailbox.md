@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: "Si un ancien employé revient à votre organisation, ou si un nouvel employé est embauché pour prendre en charge les responsabilités d'un employé à l'origine de la demande, vous pouvez récupérer le contenu de la boîte aux lettres inactive dans Office 365. Lorsque vous récupérez une boîte aux lettres inactive, elle est convertie en une nouvelle boîte aux lettres qui contient le contenu de la boîte aux lettres inactive. "
 ms.openlocfilehash: c7f942c518dcc74a4bdb37d67e27e8a63879ab46
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261542"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>Récupérer une boîte aux lettres inactive dans Office 365
 

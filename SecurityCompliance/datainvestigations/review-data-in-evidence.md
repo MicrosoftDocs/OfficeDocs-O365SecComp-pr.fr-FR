@@ -1,5 +1,5 @@
 ---
-title: Examiner les données dans les preuves
+title: Consulter les données dans des preuves
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,104 +14,92 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 279d2117a69e889f9e605e0ab211c03c5842a59d
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: e84f05fa1a7356952b62f2f4adc3b7d0f1ddc94e
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258042"
 ---
-# <a name="review-data-in-evidence"></a>Examiner les données dans les preuves
+# <a name="review-the-data-in-evidence"></a>Consulter les données dans des preuves
 
-**Evidence** est un instantané des résultats de recherche que vous avez collectés. Lorsque vous ajoutez des résultats de recherche à une preuve, un processus est déclenché pour extraire des fichiers, des métadonnées et du texte. Ensuite, le système génère un nouvel index de toutes les données et ajoute des **preuves**. 
+Les données d'un ensemble de preuves dans une enquête sur les données sont un instantané des résultats de la recherche que vous avez collectés et ajoutés à l'ensemble de preuves. Lorsque vous ajoutez des résultats de recherche à une preuve, un processus est déclenché pour extraire les fichiers, les métadonnées et le texte des éléments renvoyés par la recherche. Ensuite, l'outil enquêtes de données (aperçu) crée un nouvel index (par un processus appelé *indexation avancée*) de toutes les données et ajoute un ensemble de preuves sur l'onglet **preuve** . 
 
-Pour tout incident sensible au temps, cela vous permet de rapidement contenir l'environnement en supprimant les données à l'emplacement d'origine lors de l'examen des preuves recréées dans un environnement en quarantaine. Une fois les preuves collectées, vous pouvez passer en revue les différents documents dans leur format natif, format texte ou quasi-natif. En outre, vous pouvez exécuter des requêtes pour affiner les données par plage de temps, types de fichiers, propriétaires de données et de nombreuses autres cartes de condition. À l'aide des cartes de condition auteur/expéditeur/destinataire, vous pouvez rapidement examiner les personnes impliquées dans le renversement et s'il existe des partages externes. Pour plus d'informations, consultez les rubriques suivantes :
+Pour les analyses urgentes, cela vous permet de contenir rapidement l'environnement en supprimant les données propagées ou involontaires dans la source de données d'origine, tout en vous permettant d'examiner les preuves recréées dans une environnement en quarantaine, qui est dans ce cas les données copiées dans l'ensemble de preuves). Une fois que la preuve a été collectée et ajoutée à l'ensemble de preuves, vous pouvez passer en revue des documents individuels au format natif, au format texte ou à un format quasi natif que vous pouvez utiliser pour annoter et biffer des documents. En outre, vous pouvez exécuter des requêtes pour affiner les données définies par plage de temps, types de fichiers, propriétaires de données, ainsi que de nombreuses autres propriétés et conditions de recherche. Par exemple, à l'aide des conditions auteur, expéditeur ou destinataire, vous pouvez identifier rapidement les personnes impliquées dans l'incident et si les données de votre organisation ont été partagées avec des utilisateurs externes. Pour plus d'informations sur la recherche dans les données d'un ensemble de preuves, voir [query the Data in Evidence](evidence-query.md).
 
-  - [InterRoger les données dans les preuves](evidence-query.md)
-
-Pour regrouper des documents et obtenir de l'aide supplémentaire pour votre révision, cliquez sur **gérer les preuves**. Dans la vignette **analyse** , cliquez sur **analyser**. Cette opération exécute des analyses avancées, telles que la détection des doublons, le Threading de messagerie électronique et l'analyse de thème. Par la suite, vous pouvez voir les thèmes généraux des données et organiser les documents par des threads de messagerie, des doublons exacts et des doublons pour faciliter votre examen. Pour plus d'informations, consultez les rubriques suivantes :
-
-  - [Exécuter des analyses pour une analyse plus rapide](run-analytics-to-investigate-faster.md)
+Pour regrouper des documents et obtenir de l'aide supplémentaire pour votre révision, sélectionnez un ensemble de preuves sous l'onglet **preuve** , puis cliquez sur **gérer les preuves**. Dans la vignette **analyse** , cliquez sur **reconstruire l'analyse pour l'ensemble du jeu**. Cette opération exécute des analyses avancées, telles que la détection des doublons, le Threading de messagerie électronique et l'analyse de thème. Par la suite, vous pouvez voir les thèmes généraux des données, ainsi qu'organiser les documents par des threads de messagerie, des doublons et des doublons exacts pour faciliter votre examen. Pour plus d'informations, reportez-vous [à exécuter Analytics pour effectuer des recherches plus rapidement](run-analytics-to-investigate-faster.md).
 
 ## <a name="view-documents-in-evidence"></a>Afficher les documents dans les preuves
 
-L'analyse des données (préversion) affiche du contenu via plusieurs visionneuses à des fins différentes. Les différents observateurs peuvent être utilisés en cliquant sur n'importe quel document dans **Evidence**. Les visionneuses actuellement fournies sont les suivantes:
+Les enquêtes de données (préversion) vous permettent d'afficher le contenu dans plusieurs visionneuses, chaque afficheur ayant un objectif différent. Ces utilisateurs sont les suivants:
 
 - Métadonnées de fichier
 - Affichage natif
 - Affichage de texte
 - AnNoter l'affichage
-- Vue conVertie
+
+Pour accéder à l'un de ces utilisateurs, il vous suffit de sélectionner un document dans un jeu de preuves.
 
 ## <a name="file-metadata"></a>Métadonnées de fichier
 
-Ce panneau peut être activé/désactivé pour afficher diverses métadonnées associées au document. Bien que la grille des résultats de la recherche puisse être personnalisée pour afficher des métadonnées spécifiques, il peut s'avérer difficile de faire défiler horizontalement les données lors de la révision des données. Le panneau métadonnées de fichier permet à un utilisateur de basculer sur une vue dans la visionneuse.
+Cette vue affiche diverses propriétés de métadonnées associées au document sélectionné. Vous pouvez activer ou désactiver cette vue en cliquant sur métadonnées de **fichier**. Lors de l'examen d'un document, vous pouvez afficher les métadonnées du fichier et continuer à modifier les différentes visionneuses.
 
-![Panneau métadonnées de fichier
-](../media/Reviewimage2.png)
+Voici un exemple de métadonnées de fichier pour un document. Pour plus d'informations sur les champs de métadonnées, voir [document Metadata Fields in Data investigations (Preview)](document-metadata-fields.md).
+
+![Panneau métadonnées de fichier](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>Affichage natif
 
-La visionneuse Native affiche l'affichage le plus enrichi d'un document. Il prend en charge des centaines de types de fichiers et permet d'afficher l'expérience la plus réelle vers Native possible. Pour les fichiers Microsoft Office, par exemple, la visionneuse exploite Office Online pour afficher du contenu tel que des commentaires de document, des formules Excel, des lignes/colonnes masquées, des notes PowerPoint, etc. Pour plus d'informations sur les visionneuses Office Online, \[reportez-vous à l'article suivant:\]
+La visionneuse Native affiche l'affichage le plus précis d'un document dans son format natif. L'affichage natif est pris en charge pour des centaines de types de fichiers et est destiné à afficher des documents dans l'expérience Native la plus réelle possible. Pour les fichiers Microsoft Office, la visionneuse Native utilise Office Online. Cela vous permet d'afficher du contenu tel que des commentaires dans différents documents Office, formules et lignes/colonnes masquées dans Excel, ainsi que l'affichage notes dans PowerPoint.
 
 ![Affichage natif
 ](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>Affichage de texte
 
-La visionneuse de texte fournit une vue du texte extrait d'un fichier. Elle ignore toutes les images incorporées et la mise en forme, mais elle est très performante si un utilisateur tente de comprendre le contenu rapidement. L'affichage de texte comprend également d'autres fonctionnalités:
+La visionneuse de texte fournit une vue du texte extrait d'un fichier. Elle ignore toutes les images incorporées et la mise en forme, mais cet affichage est très utile si vous essayez d'examiner et de comprendre rapidement le contenu d'un document. L'affichage de texte comprend également les fonctionnalités suivantes:
 
-  - Le compteur de ligne facilite la référence à des parties spécifiques d'un document.
+  - Un compteur de ligne, qui facilite la référence à des parties spécifiques d'un document.
 
-  - Mise en surbrillance des résultats de recherche, qui met en surbrillance les termes dans le document, ainsi que la barre de défilement
+  - Mise en surbrillance des résultats de recherche mettant en surbrillance les termes dans le document, ainsi que sur la barre de défilement
 
-  - L'affichage diff fournit un affichage de comparaison qui met en surbrillance les différences textuelles lors de l'affichage des documents en double.
+  - Une vue diff fournit un affichage de comparaison qui met en évidence les différences de texte lors de l'affichage des documents à l'aide du panneau **presque** des doublons.
+
+**Exemple de mise en surbrillance des compteurs de ligne et de recherche dans le texte et la barre de défilement**
 
 ![Affichage de texte
 ](../media/Reviewimage4.png)
+
+**Exemple de vue diff**
 
 ![Vue diff
 ](../media/Reviewimage5.png)
 
 ## <a name="annotate-view"></a>AnNoter l'affichage
 
-L'affichage anNoted propose des fonctionnalités qui permettent aux utilisateurs d'appliquer un balisage à un document lors de l'enquête, notamment:
+L'affichage anNoted propose des fonctionnalités qui vous permettent d'appliquer un balisage à un document pendant le processus de révision; ces outils sont les suivants:
 
-  - Zone Redactions: les utilisateurs peuvent dessiner un cadre sur le document afin de masquer le contenu sensible
+  - **Zone Redactions** : vous pouvez dessiner une zone opaque sur le document qui masque le contenu sensible.
 
-  - Crayon: les utilisateurs peuvent effectuer un dessin à main levée sur un document afin d'attirer l'attention sur certaines parties d'un document.
+  - **Crayon** : vous pouvez dessiner manuellement sur un document pour attirer l'attention sur certaines parties du contenu
 
-  - Sélectionner les annotations: les utilisateurs peuvent sélectionner des annotations dans un document afin de les supprimer.
+  - **Sélectionner** des annotations: vous pouvez sélectionner et supprimer des annotations dans un document.
 
-  - Activer/désactiver la transparence des annotations: rend les annotations semi-transparentes afin d'afficher le contenu derrière l'annotation.
+  - **Activer/désactiver la transparence** des annotations: vous pouvez activer/désactiver la transparence des annotations (entre opaque et semi-transparent) de sorte que vous puissiez visualiser le contenu derrière l'annotation. Cela inclut le basculement de la transparence des annotations et des annotations Redactions.
 
-  - Page précédente: navigue jusqu'à la page précédente
+La vue anNoted fournit également les fonctionnalités de navigation suivantes:
 
-  - Page suivante: accède à la page suivante.
+  - **Page précédente**, **page suivante**et **accéder aux** contrôles de navigation de page à utiliser pour les documents de plusieurs pages.
 
-  - Accéder à la page – l'utilisateur peut entrer un numéro de page spécifique vers lequel naviguer
+  - **Zoom** : augmente ou réduit la taille des documents en mode annotation.
 
-  - Zoom: définir le niveau de zoom pour l'affichage des annotations
+  - **Rotation** : rotation des documents dans le sens des aiguilles d'une montre.
 
-  - Rotation: l'utilisateur peut faire pivoter le document vers la droite
+  - **Search** : recherchez des mots clés dans un document, puis utilisez les contrôles Previous et Next pour afficher les résultats (qui sont mis en surbrillance) dans le document.
 
-  - Search: l'utilisateur peut effectuer des recherches dans un document et accéder aux différents accès au sein du document.
-    
-    ![AnNoter l'affichage
-    ](../media/Reviewimage1.png)
+**Exemple d'affichage anNoter**
 
-Notez que ces annotations se trouvent sur les données collectées en tant que preuves, et non à leur emplacement d'origine dans le système actif. 
+![AnNoter l'affichage](../media/Reviewimage1.png)
 
-## <a name="more-information"></a>Plus d’informations
-
-Le tableau suivant répertorie les limites pour les preuves dans les enquêtes de données (aperçu).  Tous les éléments qui dépassent le nombre maximal de fichiers sont affichés en tant qu'erreurs de traitement.
-    
-  |**Description de la limite**|**Limite**|
-  |:-----|:-----|
-  |Nombre maximal de collections de preuves  <br/> |50  <br/> |
-  |Nombre total de documents pouvant être ingérés dans un cas (pour toutes les collections de preuves de l'enquête)  <br/> |1 million  <br/> |
-  |Taille totale des fichiers par charge  <br/> |100 Go  <br/> |
-  |Taille maximale d'un fichier unique   <br/> |100 Mo  <br/> |
-  |Nombre maximal de caractères extraits à partir d'un seul fichier  <br/> |10 millions  <br/> |
-  |Profondeur des éléments incorporés dans un document  <br/> |25  <br/> |
-  
+> [!NOTE]
+> Les anNotations sont appliquées à une copie du document qui a été ajouté à l'ensemble de preuves. Les documents d'origine dans le service actif ne sont pas annotés.

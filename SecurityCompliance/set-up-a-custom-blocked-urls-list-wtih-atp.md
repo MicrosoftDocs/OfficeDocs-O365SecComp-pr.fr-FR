@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer une liste d'URL bloquées pour votre organisation à l'aide d'Office 365 Advanced Threat Protection. Les URL bloquées s'appliquent aux messages électroniques et aux documents Office en fonction de vos stratégies de liens fiables ATP.
 ms.openlocfilehash: c5444e644a35688ea626004fbc6865df4ae645f9
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264514"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Configurer une liste d'URL bloquées personnalisée à l'aide de liens fiables Office 365 ATP
 
@@ -41,7 +41,7 @@ Les [liens approuvés ATP dans Office 365](atp-safe-links.md) utilisent plusieur
 
 Pour modifier (ou définir) des stratégies ATP, vous devez disposer de l'un des rôles décrits dans le tableau suivant: 
 
-|Rôle  |WHERE/How Assigned  |
+|Role  |WHERE/How Assigned  |
 |---------|---------|
 |Administrateur général Office 365 |La personne qui s'inscrit pour acheter Office 365 est un administrateur global par défaut. (Pour en savoir plus, consultez la rubrique [à propos des rôles d'administrateur Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) .)         |
 |Administrateur de sécurité |Centre d'administration Azure Active Directory[https://aad.portal.azure.com](https://aad.portal.azure.com)()|
@@ -76,7 +76,7 @@ Lorsque vous ajoutez des URL à votre liste, gardez les points suivants à l'esp
     
 |**Exemple d'entrée**|**Ce qu'il fait**|
 |:-----|:-----|
-|`contoso.com`des`*contoso.com*`  <br/> |Bloque le domaine, les sous-domaines et les chemins d' `https://www.contoso.com`accès `http://sub.contoso.com`, par exemple, et`http://contoso.com/abc`  <br/> |
+|`contoso.com` ou `*contoso.com*`  <br/> |Bloque le domaine, les sous-domaines et les chemins d' `https://www.contoso.com`accès `http://sub.contoso.com`, par exemple, et`http://contoso.com/abc`  <br/> |
 |`http://contoso.com/a`  <br/> |Bloque un `http://contoso.com/a` site, mais pas les sous-chemins supplémentaires comme`http://contoso.com/a/b`  <br/> |
 |`http://contoso.com/a*`  <br/> |Bloque un `http://contoso.com/a` site et des sous-chemins supplémentaires comme`http://contoso.com/a/b`  <br/> |
 |`http://toys.contoso.com*`  <br/> |Bloque un sous-domaine («jouets» dans ce cas) tout en permettant de cliquer sur d' `http://contoso.com` autres `http://home.contoso.com`URL de domaine (par exemple, ou).  <br/> |

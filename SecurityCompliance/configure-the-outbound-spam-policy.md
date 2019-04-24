@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Le filtrage du courrier indésirable sortant est toujours activé si vous utilisez le service pour l'envoi de messages sortants, ce qui permet de protéger les organisations utilisant le service ainsi que leurs destinataires.
 ms.openlocfilehash: af48962879dd4ee1e5bbbe832f221e88900faa75
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258403"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>Configurer la stratégie anti-courrier indésirable sortant
 
@@ -29,7 +29,7 @@ La vidéo suivante illustre la configuration de la stratégie de courrier indés
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/1f20d655-0d3d-4141-9cae-e57f5a6cffe8?autoplay=false]
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 <a name="sectionSection0"> </a>
 
 Durée d'exécution estimée : 5 minutes

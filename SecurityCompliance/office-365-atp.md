@@ -1,5 +1,5 @@
 ---
-title: Office 365 - Protection avancée contre les menaces
+title: Office 365-Protection avancée contre les menaces
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -16,18 +16,18 @@ ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection inclut des pièces jointes sûres, des liens fiables, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités d'aide à la décision.
 ms.openlocfilehash: 402110fa7b835cd86ffbcf14439304d364cf03dd
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262946"
 ---
-# <a name="office-365-advanced-threat-protection"></a>Office 365 - Protection avancée contre les menaces
+# <a name="office-365-advanced-threat-protection"></a>Office 365-Protection avancée contre les menaces
 
 > [!IMPORTANT]
 > Cet article est destiné aux clients Office 365 Enterprise et Microsoft 365 Enterprise. Si vous utilisez Outlook.com, Office 365 Home ou Office 365 Personal, et que vous recherchez des informations sur les liens fiables dans Outlook, consultez [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Office 365 Advanced Threat Protection (ATP) protège votre organisation contre les menaces malveillantes posées par les messages électroniques, les liens (URL) et les outils de collaboration. La protection avancée contre les menaces inclut:
 

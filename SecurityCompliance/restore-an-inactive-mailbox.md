@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: Si un nouvel employé ou un autre utilisateur a besoin d'accéder au contenu d'une boîte aux lettres inactive dans Office 365, vous pouvez restaurer (ou fusionner) le contenu de la boîte aux lettres inactive dans une boîte aux lettres existante.
 ms.openlocfilehash: 1b80cf5bf9361959f1622b7b42f5c7598609539c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264914"
 ---
 # <a name="restore-an-inactive-mailbox-in-office-365"></a>Restaurer une boîte aux lettres inactive dans Office 365
 
@@ -45,7 +45,7 @@ Pour plus d'informations sur les différences entre la restauration et la récup
     
 - Pour plus d'informations sur les boîtes aux lettres inactives, consultez la rubrique [inactive mailboxes in Office 365](inactive-mailboxes-in-office-365.md).
     
-## <a name="restore-an-inactive-mailbox"></a>Restauration d’une boîte aux lettres inactive
+## <a name="restore-an-inactive-mailbox"></a>Restaurer une boîte aux lettres inactive
 
 Utilisez la cmdlet **New-MailboxRestoreRequest** avec les paramètres  _SourceMailbox_ et  _TargetMailbox_ pour restaurer le contenu d'une boîte aux lettres inactive vers une boîte aux lettres existante. Pour plus d'informations sur l'utilisation de cette cmdlet, consultez la rubrique [New-MailboxRestoreRequest](https://go.microsoft.com/fwlink/?linkid=856298).
   

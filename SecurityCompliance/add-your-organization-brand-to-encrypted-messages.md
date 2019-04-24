@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: En tant qu'administrateur Exchange, vous pouvez appliquer la personnalisation de votre organisation aux messages électroniques chiffrés de votre organisation et au contenu du portail de chiffrement.
 ms.openlocfilehash: b15bb058d68d0f1783d2a689fff180a2bf48023e
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242648"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>Ajouter la marque de votre organisation à vos messages chiffrés
 
@@ -59,7 +59,7 @@ Vous créez des modèles de personnalisation pour votre organisation dans Window
    ```powershell
    New-OMEConfiguration -Identity <OMEConfigurationIdParameter>
    ```
-   Par exemple,
+   For example,
 
    ```powershell
    New-OMEConfiguration -Identity <Branding template 1>
@@ -68,7 +68,7 @@ Vous créez des modèles de personnalisation pour votre organisation dans Window
 
 |**Pour personnaliser cette fonctionnalité de l’expérience de chiffrement**|**Utilisez ces commandes**|
 |:-----|:-----|
-|Couleur d'arrière-plan|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor "<Hexadecimal color code>"` <br/> **Exemple :** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"`|
+|Couleur d’arrière-plan|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor "<Hexadecimal color code>"` <br/> **Exemple :** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"`|
 |Logo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Exemple :** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Formats de fichier pris en charge : .png, .jpg, .bmp ou .tiff  <br/> Taille optimale du fichier de logo : moins de 40 Ko  <br/> Taille optimale de l’image de logo : 170x70 pixels|
 |Texte en regard du nom et de l'adresse de messagerie de l'expéditeur|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -IntroductionText "<String up to 1024 characters>"` <br/> **Exemple :** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
 |Texte qui apparaît sur le bouton «Lire le message»|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -ReadButtonText "<String up to 1024 characters>"` <br/> **Exemple :** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
@@ -92,7 +92,7 @@ Vous créez des modèles de personnalisation pour votre organisation dans Window
 |Déclaration de non-responsabilité du message électronique qui contient le message chiffré|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **Exemple :** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
 |Texte qui s’affiche en haut du portail d’affichage du message chiffré|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **Exemple de rétablissement de la valeur par défaut:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
 |Logo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **Exemple de rétablissement de la valeur par défaut:** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
-|Couleur d'arrière-plan|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor <"$null">` <br/> **Exemple de rétablissement de la valeur par défaut:** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
+|Couleur d’arrière-plan|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor <"$null">` <br/> **Exemple de rétablissement de la valeur par défaut:** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
 
 ## <a name="create-an-exchange-mail-flow-rule-that-applies-custom-branding-to-encrypted-emails"></a>Créer une règle de flux de messagerie Exchange qui applique une personnalisation aux courriers électroniques chiffrés
 

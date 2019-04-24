@@ -15,11 +15,11 @@ ms.custom:
 - SIEM
 description: "Résumé: consultez cet article pour obtenir une vue d'ensemble de l'intégration de serveur SIEM à Microsoft 365."
 ms.openlocfilehash: 905f6fc9b6fd62748e25c27d6e5cdbedacc0f806
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260662"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>Intégration de serveur SIEM aux services et applications Microsoft 365
 
@@ -33,7 +33,7 @@ Un serveur SIEM peut recevoir des données à partir d'un large éventail de ser
 
 | Service ou application Microsoft 365 | Entrées de serveur SIEM | Ressources pour en savoir plus |
 | --- | --- | --- |
-| [Office 365 - Protection avancée contre les menaces](office-365-atp.md) <br/>   ou   <br/>[Office 365 Threat Intelligence](office-365-ti.md) | Journaux d'audit | [Intégration SIEM avec Office 365 protection avancée contre les menaces](siem-integration-with-office-365-ti.md) |
+| [Office 365-Protection avancée contre les menaces](office-365-atp.md) <br/>   ou   <br/>[Office 365 Threat Intelligence](office-365-ti.md) | Journaux d'audit | [Intégration SIEM avec Office 365 protection avancée contre les menaces](siem-integration-with-office-365-ti.md) |
 | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | Intégration des journaux | [Intégration SIEM à la sécurité des applications Cloud Microsoft](https://docs.microsoft.com/cloud-app-security/siem) |
 | [Sécurité de l’application cloud Office 365](office-365-cas-overview.md) | Intégration des journaux | [Intégrer votre serveur SIEM à la sécurité des applications cloud Office 365](integrate-your-siem-server-with-office-365-cas.md) |
 | [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/) | Intégration des journaux | [Attirez les alertes sur vos outils SIEM](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection) |

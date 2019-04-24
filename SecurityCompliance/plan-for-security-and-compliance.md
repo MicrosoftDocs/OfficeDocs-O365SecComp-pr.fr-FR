@@ -15,11 +15,11 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Page d'accueil pour la planification de la sécurité et de la conformité
 ms.collection: M365-security-compliance
 ms.openlocfilehash: b0c7af13a78499f3ee8af5b902bc4c8db85aca32
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265866"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>Planifier la conformité &amp; de la sécurité dans Office 365
 
@@ -77,7 +77,7 @@ Configurer vos paramètres de sécurité et de conformité dans ces centres d'ad
   
 |**Abonnement**|**URL de gestion**|**Tableaux de bord et centres d'administration**|
 |:-----|:-----|:-----|
-|Office 365  <br/> |`https://admin.microsoft.com`  <br/> | Centre d'administration Microsoft 365  <br/>  Security &amp; Compliance Center  <br/>  Centre d’administration Exchange  <br/>  Centre d'administration SharePoint et centre d'administration OneDrive entreprise  <br/> |
+|Office 365  <br/> |`https://admin.microsoft.com`  <br/> | Centre d'administration Microsoft 365  <br/>  Security &amp; Compliance Center  <br/>  Centre d’administration Exchange  <br/>  Centre d'administration SharePoint et centre d'administration OneDrive entreprise  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Gestion des applications mobiles Microsoft  <br/>  Microsoft Intune  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Cloud App Security  <br/> |
    

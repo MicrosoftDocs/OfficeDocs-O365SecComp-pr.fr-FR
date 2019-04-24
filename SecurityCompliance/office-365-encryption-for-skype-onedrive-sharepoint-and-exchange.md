@@ -15,15 +15,15 @@ ms.collection:
 - Strat_O365_Enterprise
 description: 'Résumé: description du chiffrement pour Skype, OneDrive, SharePoint et Exchange Online.'
 ms.openlocfilehash: 55141f671e6cb3d7ea837bfcf9701e37a18fb7ba
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262786"
 ---
 # <a name="office-365-encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Chiffrement Office 365 pour Skype entreprise, OneDrive entreprise, SharePoint Online et Exchange Online
 
-Office 365 est un environnement hautement sécurisé qui offre une protection étendue dans plusieurs couches: sécurité du centre de données physique, sécurité du réseau, sécurité des accès, sécurité des applications et sécurité des données.
+Office 365 est un environnement hautement sécurisé qui fournit une protection étendue à de nombreux niveaux : sécurité de centre de données physique, sécurité réseau, sécurité d'accès, sécurité des applications et sécurité des données.
 
 ## <a name="skype-for-business"></a>Skype Entreprise
 
@@ -44,7 +44,7 @@ Plusieurs charges de travail dans Office 365 stockent des données dans SharePoi
     - La base de données de contenu est protégée par les contrôles d'accès aux bases de données et le chiffrement au repos. Le chiffrement est effectué à l'aide du [chiffreMent transparent des données](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption-tde) (TDE) dans la [base de données SQL Azure](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview). (Azure SQL Database est un service de base de données relationnelle à usage général dans Microsoft Azure qui prend en charge des structures telles que des données relationnelles, JSON, spatiale et XML.) Ces secrets se situent au niveau du service pour SharePoint Online, et non au niveau du client. Ces secrets (parfois appelés clés principales) sont stockés dans un référentiel sécurisé distinct appelé magasin de clés. TDE fournit la sécurité au repos pour la base de données active et les sauvegardes de base de données et les journaux de transaction.
     - Lorsque les clients fournissent la clé facultative, la clé client est stockée dans le coffre de clés Azure et le service utilise la clé pour chiffrer une clé de client, qui est utilisée pour chiffrer une clé de site, qui est ensuite utilisée pour chiffrer les clés de niveau fichier. Fondamentalement, une nouvelle hiérarchie de clés est introduite lorsque le client fournit une clé.
 - Le mappage utilisé pour ré-assembler le fichier est stocké dans la base de données de contenu avec les clés chiffrées, séparément de la clé principale nécessaire pour les déchiffrer.
-- Chaque compte de stockage Azure possède ses propres informations d'identification propres par type d'accès (lecture, écriture, énumération et suppression). Chaque jeu d'informations d'identification est conservé dans le magasin de clés sécurisée et est régulièrement actualisé. Comme indiqué ci-dessus, il existe trois types différents de magasins, chacun avec une fonction distincte:
+- Chaque compte de stockage Azure possède ses propres informations d'identification propres par type d'accès (lecture, écriture, énumération et suppression). Chaque jeu d’informations d’identification est conservé dans le magasin de clés sécurisé et est régulièrement actualisé. Comme indiqué ci-dessus, il existe trois types différents de magasins, chacun avec une fonction distincte:
     - Les données client sont stockées en tant qu'objets BLOB chiffrés dans le stockage Azure. La clé de chaque segment de données client est chiffrée et stockée séparément dans la base de données de contenu. Les données client elles-mêmes ne contiennent aucune indication quant à la façon dont elles peuvent être déchiffrées.
     - La base de données de contenu est une base de données SQL Server. Il contient le mappage requis pour localiser et réassembler les blobs de données client détenus dans le stockage Azure, ainsi que les clés nécessaires pour chiffrer ces objets BLOB. Toutefois, le jeu de clés est lui-même chiffré (comme expliqué ci-dessus) et il est conservé dans un magasin de clés distinct.
     - Le magasin de clés est physiquement distinct de la base de données de contenu et de l'espace de stockage Azure. Il contient les informations d'identification de chaque conteneur de stockage Azure et la clé principale de l'ensemble des clés chiffrées contenues dans la base de données de contenu.
@@ -73,8 +73,8 @@ Les éléments de liste sont des plus petits blocs de données client qui sont c
 
 Dans OneDrive Entreprise et SharePoint Online, il existe deux scénarios dans lesquels les données entrent et sortent des centres de données.
 
-- **Communication client avec le serveur** : la communication vers OneDrive entreprise sur Internet utilise des connexions SSL/TLS. Toutes les connexions SSL sont établies à l'aide de clés 2048 bits.
-- **Déplacement de données entre centres de données** : la principale raison de déplacer des données entre centres de données est la réplication géo pour activer la récupération d'urgence. Par exemple, les journaux de transactions SQL Server et les deltas de stockage BLOB se déplacent avec ce canal. Bien que ces données soient déjà transmises par le biais d'un réseau privé, elles sont également protégées par le chiffrement le plus approprié.
+- **Communication client avec le serveur** : la communication vers OneDrive entreprise sur Internet utilise des connexions SSL/TLS. Toutes les connexions SSL sont établies à l’aide de clés 2 048 bits.
+- **Déplacement de données entre centres de données** : la principale raison de déplacer des données entre centres de données est la réplication géo pour activer la récupération d'urgence. Par exemple, les deltas de stockage d'objets blob et les journaux de transaction SQL Server transitent par ce canal. Alors que ces données sont déjà transmises par le biais d'un réseau privé, elles sont encore mieux protégées à l'aide du meilleur chiffrement de sa catégorie.
 
 ## <a name="exchange-online"></a>Exchange Online
 

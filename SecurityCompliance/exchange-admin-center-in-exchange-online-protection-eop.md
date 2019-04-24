@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Le Centre d'administration Exchange (CAE) est la console de gestion basée sur le web pour Microsoft Exchange Online Protection (EOP).
 ms.openlocfilehash: 983f6fe6b9f1592115e524315c9e52e08fed5101
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255960"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Centre d’administration Exchange dans Exchange Online Protection 
 
@@ -214,7 +214,7 @@ Les langues suivantes sont prises en charge et disponibles dans Exchange Online 
     
 - Télougou
     
-- Thaïlandais
+- Thaï
     
 - Turc
     

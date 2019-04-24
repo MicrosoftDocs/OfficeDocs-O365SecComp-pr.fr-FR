@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 3000a066bf69f71327801035e7c270cc602565ac
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263806"
 ---
 # <a name="query-the-data-in-a-working-set"></a>Interroger les données d’un ensemble de travail
 
@@ -47,7 +47,7 @@ Il existe plusieurs types de cartes de condition:
 
 Outre les cartes de condition, vous pouvez utiliser un langage de requête de type KQL dans la carte de mots-clés pour créer votre requête. Le langage de requête prend en charge la syntaxe KQL standard comme AND, OR, NOT et NEAR (n). Le caractère générique (?) et caractère générique (*) est également pris en charge.
 
-## <a name="filter"></a>Filtre
+## <a name="filter"></a>Filter
 
 Outre les requêtes que vous pouvez enregistrer, vous pouvez superposer des conditions supplémentaires à la volée à vos résultats de requête à l'aide de filtres. Les filtres diffèrent des requêtes de différentes manières:
 - Les filtres sont transitoires (c'est-à-dire qu'ils ne sont pas conservés sur différentes sessions), tandis que les requêtes sont enregistrées dans le jeu de travail.

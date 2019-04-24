@@ -14,11 +14,11 @@ search.appverid:
 ms.collection: Strat_O365_Enterprise
 description: "Résumé: la stratégie de chiffrement des messages Office 365 pour les types d'informations sensibles est désormais disponible."
 ms.openlocfilehash: 99cb7a9f94c9cf4036c11b74a5208ddf0e819ceb
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261262"
 ---
 # <a name="office-365-message-encryption-policy-for-sensitive-information"></a>Stratégie de chiffrement des messages Office 365 pour les informations sensibles
 
@@ -50,9 +50,9 @@ L'exécution des commandes suivantes dans PowerShell crée une règle de flux de
 - Numéro d'acheminement ABA
 - Numéro de carte de crédit
 - Numéro de la Loi sur la mise en œuvre du médicament (DEA)
-- Numéro de passeport américain/Britannique
+- ANGLAIS (ÉTATS-UNIS) numéro de passeport
 - Numéro de compte bancaire américain
-- Numéro d'identification fiscale individuel (ITIN) États-Unis
+- Numéro d’identification fiscale individuel (ITIN) États-Unis
 - Numéro de sécurité sociale (SSN) États-Unis
 
 ```powershell

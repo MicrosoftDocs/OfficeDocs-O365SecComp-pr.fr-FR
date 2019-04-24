@@ -11,11 +11,11 @@ ms.assetid: ''
 description: Les administrateurs peuvent en savoir plus sur le rapport clients d'authentification SMTP dans le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance Center.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: b6698345a89edf52e4ee14cea144cb88ff080583
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252546"
 ---
 # <a name="smtp-auth-clients-report"></a>Rapport sur les clients SMTP AUTH
 

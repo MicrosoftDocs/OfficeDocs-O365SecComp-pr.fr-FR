@@ -1,5 +1,5 @@
 ---
-title: Informations sur le flux de messagerie dans le centre de sécurité & conformité
+title: Informations sur le flux de messagerie dans le centre de sécurité et conformité
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -10,13 +10,13 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Les administrateurs peuvent en savoir plus sur le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance Center.
 ms.openlocfilehash: 1e18bcb381a6b557d3141c0c17b8433cfcd00049
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252386"
 ---
-# <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informations sur le flux de messagerie dans le centre de sécurité & conformité
+# <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informations sur le flux de messagerie dans le centre de sécurité et conformité
 
 Les administrateurs peuvent utiliser le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance Center pour découvrir des tendances, des informations et prendre des mesures pour résoudre les problèmes liés au flux de messagerie dans leur organisation Office 365.
 

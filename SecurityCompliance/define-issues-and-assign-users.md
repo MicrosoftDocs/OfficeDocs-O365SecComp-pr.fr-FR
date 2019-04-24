@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
 description: Découvrez comment ajouter ou modifier un problème, y compris lui affecter des utilisateurs ou supprimer un problème pour un cas de découverte électronique dans Office 365 Advanced eDiscovery.
 ms.openlocfilehash: 80ea6e2579b8bc68b70e2181d9c986c91c890836
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257740"
 ---
 # <a name="define-issues-and-assign-users-in-office-365-advanced-ediscovery"></a>Définition des problèmes et affectation des utilisateurs dans Office 365 Advanced eDiscovery
 

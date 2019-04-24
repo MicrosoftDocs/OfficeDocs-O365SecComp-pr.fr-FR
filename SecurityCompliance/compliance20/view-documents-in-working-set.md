@@ -13,25 +13,23 @@ search.appverid:
 - MET150
 description: ''
 ms.openlocfilehash: 1502308fab4f27ed9e93e1dff204bdddf6ae726e
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241567"
 ---
 # <a name="view-documents-in-a-working-set"></a>Afficher des documents dans un ensemble de travail
 
 Advanced eDiscovery (préversion) affiche du contenu à l'aide de plusieurs observateurs à des fins différentes. Les différentes visionneuses peuvent être utilisées en cliquant sur n'importe quel document d'une plage de travail. Les visionneuses actuellement fournies sont les suivantes:
 
-- Métadonnées de fichier  
-
+- Métadonnées de fichier
 - Affichage natif
 - Affichage de texte
 - AnNoter l'affichage
 - Vue conVertie
 
-## <a name="file-metadata"></a>Métadonnées de fichier  
-
+## <a name="file-metadata"></a>Métadonnées de fichier
 
 Ce panneau peut être activé/désactivé pour afficher diverses métadonnées associées au document. Bien que la grille des résultats de la recherche puisse être personnalisée pour afficher des métadonnées spécifiques, il peut s'avérer difficile de faire défiler horizontalement les données lors de la révision des données. Le panneau métadonnées de fichier permet à un utilisateur de basculer sur une vue dans la visionneuse.
 

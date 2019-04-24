@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Pour vous assurer que le courrier électronique envoyé à partir de personnes que vous approuvez n'est pas bloqué, vous pouvez utiliser la stratégie de filtrage des connexions pour créer une liste verte, également appelée liste d'expéditeurs approuvés, des adresses IP que vous approuvez. Vous pouvez également créer une liste des expéditeurs bloqués.
 ms.openlocfilehash: 5ca6ad6721ac03e5ae62b40dda219671bde3e1c1
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259006"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configuration de la stratégie de filtrage des connexions
  
@@ -31,7 +31,7 @@ La vidéo suivante montre les étapes de configuration de la stratégie de filtr
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 <a name="sectionSection0"> </a>
 
 - Durée d'exécution estimée : 15 minutes

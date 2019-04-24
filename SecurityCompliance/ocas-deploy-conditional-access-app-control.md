@@ -11,11 +11,11 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Procédez comme suit pour configurer les applications Azure AD Office 365 qui seront contrôlées par le contrôle d'application d'accès conditionnel à Office 365 Cloud App Security.
 ms.openlocfilehash: 72be95b3213b90cfe60d851d0852d465cdbe6ef9
-ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30312071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263104"
 ---
 # <a name="deploy-conditional-access-app-control-for-office-365-apps"></a>Déployer le contrôle d’accès conditionnel aux applications pour les applications Office 365
 

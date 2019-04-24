@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ''
-ms.openlocfilehash: 2611205a41b9113c0ca30f787c119806d75f35c8
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: ff0be77e0fd6e35c6f0536f8bcfe9384c27d6b58
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243795"
 ---
 # <a name="limits-in-advanced-ediscovery-preview"></a>Limites dans Advanced eDiscovery (préversion)
 
@@ -25,25 +25,33 @@ Cet article décrit les limites dans Advanced eDiscovery (Preview).
 
 ## <a name="case-limits"></a>Limites de cas
 
-## <a name="indexing-limits"></a>Limites d’indexation
+Le tableau suivant répertorie les limites pour les cas dans Advanced eDiscovery (Preview).
+
+|**Description de la limite**|**Limite**|
+  |:-----|:-----|
+  |Nombre maximal de cas.  <br/> |50  <br/> |
+  |Nombre total de documents pouvant être ajoutés à un cas (pour tous les jeux de travail dans le cas).  <br/> |1 million  <br/> |
+  |Taille totale du fichier par charge.  <br/> |100 Go  <br/> |
+  |Taille maximale d'un fichier unique.   <br/> |100 Mo <sup></sup> <br/> |
+  |Nombre maximal de caractères extraits d'un fichier unique.  <br/> |10 millions <sup>1</sup> <br/> |
+  |Profondeur des éléments incorporés dans un document.  <br/> |25 <sup>1</sup> <br/> |
+|||
+ > [!NOTE]
+> <sup>1</sup> tous les éléments qui dépassent une limite de fichier unique apparaissent comme des erreurs de traitement. 
+
+## <a name="indexing-limits"></a>Limites d'indexation
+
+Contenu à paraître prochainement.
 
 ## <a name="search-limits"></a>Limites de la recherche
 
-## <a name="working-set-limits"></a>Limites du jeu de travail
+Contenu à paraître prochainement.
 
-Le tableau suivant répertorie les limites pour les jeux de travail dans Advanced eDiscovery (Preview).  Tous les éléments qui dépassent le nombre maximal de fichiers sont affichés en tant qu'erreurs de traitement.
-    
-  |**Description de la limite**|**Limite**|
-  |:-----|:-----|
-  |Nombre maximal de jeux de travail  <br/> |50  <br/> |
-  |Nombre total de documents pouvant être ingérés dans un cas (pour tous les jeux de travail dans le cas)  <br/> |1 million  <br/> |
-  |Taille totale des fichiers par charge  <br/> |100 Go  <br/> |
-  |Taille maximale d'un fichier unique   <br/> |100 Mo  <br/> |
-  |Nombre maximal de caractères extraits à partir d'un seul fichier  <br/> |10 millions  <br/> |
-  |Profondeur des éléments incorporés dans un document  <br/> |25  <br/> |
-  
+## <a name="export-limits"></a>Limites d'exportation
 
-## <a name="export-limits"></a>Exporter des limites
+Contenu à paraître prochainement.
 
-## <a name="download-limits"></a>Télécharger des limites
+## <a name="download-limits"></a>Limites de téléchargement
+
+Contenu à paraître prochainement.
 

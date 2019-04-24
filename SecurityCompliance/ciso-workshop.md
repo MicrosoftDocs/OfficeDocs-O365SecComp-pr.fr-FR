@@ -7,284 +7,35 @@ ms.audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
-description: En savoir plus sur les principes de sécurité, les meilleures pratiques et les meilleures pratiques pour la modernisation de votre organisation.
-ms.openlocfilehash: c98944b746fb564f946440408f0be87425237232
-ms.sourcegitcommit: e89c21d569b96f34e5d4d4074ae25d8eec9aeacf
+ms.collection:
+- M365-security-compliance
+description: En savoir plus sur les principes de sécurité et les recommandations pour la modernisation de la sécurité dans votre organisation.
+ms.openlocfilehash: 62f1150b0f72550de11ebfbf5562d92d585d52d2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242681"
 ---
 # <a name="chief-information-security-officer-ciso-workshop-training"></a>Formation pour les ateliers de directeur CISO (Information Security officier)
 
-Cet atelier CISO (Information Security Office) contient un ensemble d'apprentissages de sécurité, de principes, de meilleures pratiques établies et de meilleures pratiques pour la modernisation de la sécurité dans votre organisation pour l'âge du Cloud. Cet atelier est basé sur une combinaison d'expériences des équipes de sécurité de Microsoft et des enseignements de nos clients.
+L'atelier CISO (Information Security Office) contient un ensemble d'apprentissages de sécurité, de principes et de recommandations pour la modernisation de la sécurité au sein de votre organisation. Cet atelier de formation est une combinaison d'expériences de la part de Microsoft Security Teams et d'apprentissages des clients.
 
 L'atelier CISO peut aider votre organisation à répondre aux deux défis de la sécurité:
 
 - Attaques de plus en plus sophistiquées
 - Protection des biens d'une entreprise hybride qui inclut désormais les plateformes Cloud
 
-Les vidéos d'atelier CISO et le contenu de téléchargement PDF/PowerPoint sont conçus pour être modulaires afin que vous puissiez accéder à n'importe quelle section d'intérêt ou simplement commencer au début et passer tout au long de la procédure. Les diapositives sont disponibles ici avec une licence Creative de présentation (avec attribution) afin qu'elles puissent être réutilisées pour aider votre organisation à créer des stratégies de sécurité efficaces.
+Les vidéos d'atelier CISO et le contenu de téléchargement PDF/PowerPoint sont modulaires de sorte que vous puissiez accéder à n'importe quelle section d'intérêt ou commencer au début. Les diapositives de chaque module sont partagées avec une licence Creative (avec attribution) pour aider votre organisation à créer des stratégies de sécurité efficaces.
 
-## <a name="module-1--microsoft-cybersecurity-briefing"></a>Module 1 – Briefing de Microsoft Cybersecurity
+- [Module 1: Microsoft Cybersecurity Briefing](ciso-workshop-module-1.md): ce module couvre des vues d'ensemble de l'hygiène de sécurité critique, de l'architecture de référence Microsoft Cybersecurity, de la résilience Cybersecurity, de l'Internet des éléments et de la technique opérationnelle.
 
-Ce module décrit les vues d'ensemble de l'hygiène de sécurité critique, de l'architecture de référence Microsoft Cybersecurity, de la résilience Cybersecurity, de l'Internet des choses et de la technique opérationnelle.
+- [Module 2: gestion](ciso-workshop-module-2.md)de la sécurité: Découvrez comment augmenter la visibilité et le contrôle de votre parc hybride grâce à des conseils intégrés, à l'application de stratégie automatisée et à la surveillance.
 
-- Télécharger le Résumé PDF: [module 1 – Briefing de Microsoft Cybersecurity](media/ciso-workshop-1-cybersecurity-briefing.pdf)
-- Télécharger le résumé PowerPoint: [module 1 – Briefing de Microsoft Cybersecurity](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-1-cybersecurity-briefing.pptx)
+- [Module 3: gestion des identités et des accès](ciso-workshop-module-3.md): étant donné que la plupart des attaques modernes impliquent la compromission des identités des utilisateurs, Découvrez comment créer un nouveau périmètre de sécurité des identités pour protéger les ressources en dehors de votre réseau d'entreprise.
 
-### <a name="part-1--course-introduction-and-overview"></a>Partie 1 – présentation et présentation du cours
+- [Module 4a: stratégie de protection contre les menaces, partie I](ciso-workshop-module-4a.md): explorer les apprentissages clés relatifs à la protection contre les menaces, à l'évolution de la sécurité, aux stratégies et aux plans de sécurité.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYM5]
+- [Module 4b: stratégie de protection contre les menaces, partie II](ciso-workshop-module-4b.md): ce module examine l'évolution et la trajectoire des centres d'opérations de sécurité (SOC), gérées par les milliards de signaux dans le graphique de sécurité intelligente Microsoft.
 
-### <a name="part-2--cybersecurity-resilience"></a>Partie 2 – réSilience Cybersecurity
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQKW]
-
-### <a name="part-3--accelerating-threats--digital-transformation---new-imperatives"></a>Partie 3 – accélération des menaces + transformation numérique-nouvelles impératifs
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtT8P]
-
-### <a name="part-4--critical-security-hygiene-and-technical-debt"></a>Partie 4 – hygiène de sécurité critique et dette technique
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtVXF]
-
-### <a name="part-5--microsoft-cybersecurity-reference-architecture"></a>Partie 5 – architecture de référence Microsoft Cybersecurity
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQL2]
-
-### <a name="part-6--reference-architecture---identity-and-access"></a>Partie 6 – architecture de référence-identité et accès
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtITd]
-
-### <a name="part-7--reference-architecture---security-operations-center-soc"></a>Partie 7 – architecture de référence-Centre d'opérations de sécurité (SOC)
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYM6]
-
-### <a name="part-8--reference-architecture---pc-and-mobile-devices"></a>Partie 8 – architecture de référence-PC et appareils mobiles
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtT8R]
-
-### <a name="part-9--reference-architecture---hybrid-cloud-infrastructure"></a>Partie 9 – architecture de référence-infrastructure cloud hybride
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtLoK]
-
-### <a name="part-10--reference-architecture---software-as-a-service-saas"></a>Partie 10 – architecture de référence-Software as a service (SaaS)
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtVXM]
-
-### <a name="part-11--reference-architecture---iot-and-operational-tech"></a>Partie 11 – architecture de référence-IoT et technique opérationnelle
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQL5]
-
-### <a name="part-12--reference-architecture---info-protection"></a>Partie 12 – architecture de référence-protection des informations
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtITj]
-
-### <a name="part-13--conclusion-summary-of-ciso-workshop-approach"></a>Partie 13 – conclusion: Résumé de l'approche de l'atelier CISO
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtITk]
-
-## <a name="module-2--security-management"></a>Module 2 – gestion de la sécurité
-
-Découvrez comment augmenter la visibilité et le contrôle de votre parc hybride grâce à des conseils intégrés, à l'application de stratégie automatisée et à la surveillance de cette série de sept composants.
-
-- Télécharger le Résumé PDF: [module 2 – gestion](media/ciso-workshop-2-security-management.pdf) de la sécurité
-- Télécharger le résumé PowerPoint: [module 2 – gestion](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-2-security-management.pptx) de la sécurité
-
-### <a name="introduction---security-management"></a>Introduction-gestion de la sécurité
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtT8S]
-
-### <a name="part-1--disrupting-attacker-return-on-investment-roi"></a>Partie 1: interruption du retour sur investissement des pirates
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtGm1]
-
-### <a name="part-2--meet-productivity-and-security-goals"></a>Partie 2 – atteindre les objectifs de productivité et de sécurité
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtGm2]
-
-### <a name="part-3--assume-compromise"></a>Partie 3 – assumer la compromission
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtLoQ]
-
-### <a name="part-4--shared-responsibility"></a>Partie 4 – responsabilité partagée
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMa]
-
-### <a name="part-5--cloud-is-more-secure"></a>Partie 5 – le Cloud est plus sécurisé
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtITn]
-
-### <a name="part-6--security-management-visibility-control-guidance"></a>Partie 6 – gestion de la sécurité: visibilité, contrôle, conseils
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtLoR]
-
-### <a name="part-7--evolution-of-vulnerability-management"></a>Partie 7 – évolution de la gestion des vulnérabilités
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtNNR]
-
-## <a name="module-3--identity-and-access-management"></a>Module 3: gestion des identités et des accès
-
-Dans la mesure où la plupart des attaques modernes impliquent la compromission des identités des utilisateurs, Découvrez comment créer un nouveau périmètre de sécurité des identités pour protéger les ressources en dehors de votre réseau d'entreprise.
-
-- Télécharger le Résumé PDF: [module 3 – gestion des identités et des accès](media/ciso-workshop-3-identity-protection.pdf)
-- Télécharger le résumé PowerPoint: [module 3 – gestion des identités et des accès](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-3-identity-protection.pptx)
-
-### <a name="introduction--identity-and-access-management"></a>Introduction: gestion des identités et des accès
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtGm3]
-
-### <a name="part-1--history-and-trends-of-identity-security"></a>Partie 1 – historique et tendances de la sécurité des identités
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQL7]
-
-### <a name="part-2--identity-system-security"></a>Partie 2 – sécurité du système d'identité
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMf]
-
-### <a name="part-3--account-security-measuring-cost-of-attack-and-going-password-less"></a>Partie 3 – sécurité des comptes: mesure du coût de l'attaque et accès sans mot de passe
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtGm5]
-
-### <a name="part-4--building-an-identity-perimeter"></a>Partie 4: création d'un périmètre d'identité
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMg]
-
-### <a name="part-5--lowering-risk-using-business-to-business-b2b-and-business-to-customer-b2c"></a>Partie 5 – réduire les risques liés à l'utilisation de B2B (Business-to-Business) et de Business-to-Customer (B2C)
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMi]
-
-## <a name="module-4a--threat-protection-strategy"></a>Module 4a – stratégie de protection contre les menaces
-
-Explorez nos principaux apprentissages concernant la protection contre les menaces, l'évolution de la sécurité, les stratégies et les plans de sécurité.
-
-- Télécharger le Résumé PDF: [module 4a – stratégie de protection contre les menaces](media/ciso-workshop-4a-threat-protection.pdf)
-- Télécharger le résumé PowerPoint: [module 4a – stratégie de protection contre les menaces](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4a-threat-protection.pptx)
-
-### <a name="introduction--threat-protection-strategy-identify-protect"></a>Introduction – stratégie de protection contre les menaces (identifier-protéger)
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtLoV]
-
-### <a name="part-1--learnings-about-threat-protection"></a>Partie 1: apprentissage de la protection contre les menaces
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtITr]
-
-### <a name="part-2--security-evolution-overview"></a>Partie 2 – évolution de la sécurité: vue d'ensemble
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQLb]
-
-### <a name="part-3--security-evolution-office-365"></a>Partie 3 – évolution de la sécurité: Office 365
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtITt]
-
-### <a name="part-4--security-evolution-azure"></a>Partie 4 – évolution de la sécurité: Azure
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtVXV]
-
-### <a name="part-5--strategies-and-success-criteria"></a>Partie 5 – stratégies et critères de réussite
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMm]
-
-### <a name="part-6--roadmap-application-development--platform-as-a-service-paas"></a>Partie 6 – feuille de route: développement d'applications & Platform as a service (PaaS)
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQLJ]
-
-### <a name="part-7---roadmap-shadow-it-risk-from-3rd-party-software-as-a-service-saas"></a>Partie 7-feuille de route: déTourage des risques informatiques de logiciels tiers en tant que service (SaaS)
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMC]
-
-### <a name="part-8---roadmap-office-365-security"></a>Partie 8-feuille de route: sécurité Office 365
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQLL]
-
-### <a name="part-9---roadmap-infrastructure-as-a-service-iaas-and-on-premises"></a>Partie 9: feuille de route: infrastructure as a service (IaaS) et en local
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQLP]
-
-### <a name="part-10--roadmap-windows-10-security"></a>Partie 10 – feuille de route: sécurité Windows 10
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQLS]
-
-### <a name="part-11--roadmap-securing-privileged-access"></a>Partie 11 – feuille de route: sécurisation de l'accès privilégié
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtLpa]
-
-### <a name="part-12--roadmap-notpetya-and-critical-security-hygiene"></a>Partie 12 – feuille de route: (non) Petya et hygiène de sécurité critique
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtLpb]
-
-## <a name="module-4b--threat-protection-strategy"></a>Module 4b – stratégie de protection contre les menaces
-
-Ce module passe en revue l'évolution et la trajectoire de nos centres d'opérations de sécurité (SOC), gérées par les milliards de signaux de notre graphique de sécurité intelligent.
-
-- Télécharger le Résumé PDF: [module 4b – stratégie de protection contre les menaces](media/ciso-workshop-4b-threat-protection-strategy.pdf)
-- Télécharger le résumé PowerPoint: [module 4b – stratégie de protection contre les menaces](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4b-threat-protection-strategy.pptx)
-
-### <a name="introduction--threat-protection-strategy-detect-respond-recover"></a>Introduction – stratégie de protection contre les menaces (Detect-respond-reCover)
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMJ]
-
-### <a name="part-1--evolution-of-threat-landscape"></a>Partie 1 – évolution du paysage des menaces
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtT9w]
-
-### <a name="part-2--evolution-and-trajectory-of-security-operations-centers-soc"></a>Partie 2 – évolution et trajectoire des centres d'opérations de sécurité (SOC)
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtDxA]
-
-### <a name="part-3--learnings-from-microsofts-corporate-it-soc"></a>Partie 3 – apprentissages de la société de service informatique SOC de Microsoft
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtNO5]
-
-### <a name="part-4--intelligence"></a>Partie 4 – intelligence
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYME]
-
-### <a name="part-5--success-criteria"></a>Partie 5 – critères de réussite
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQLK]
-
-### <a name="part-6--full-kill-chain-approach-and-integrated-operations"></a>Partie 6: approche de chaîne de terminaison complète et opérations intégrées
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtNNZ]
-
-### <a name="part-7--applying-machine-learning-to-threat-detection"></a>Partie 7: application de l'apprentissage de machine à la détection des menaces
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMz]
-
-### <a name="part-8--dark-markets-criminal-forums"></a>Partie 8 – marchés sombres (forums criminels)
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMn]
-
-### <a name="part-9--graph-security-api"></a>Partie 9 – API de sécurité Graph
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMj]
-
-### <a name="part-10--summary-of-integrated-technology-and-automation"></a>Partie 10 – Résumé de la technologie et de l'automatisation intégrées
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtLoU]
-
-## <a name="module-5--information-protection"></a>Module 5 – protection des informations
-
-Découvrez comment protéger les informations sensibles partout où elles sont placées avec une classification automatique, un chiffrement persistant entre les appareils et une surveillance continue des données sur des appareils mobiles, des services Cloud et d'autres ressources d'entreprise.
-
-- Télécharger le Résumé PDF: [module 5 – protection des informations](media/ciso-workshop-5-information-protection-strategy.pdf)
-- Télécharger la synthèse PowerPoint: [module 5 – protection des informations](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-5-information-protection-strategy.pptx)
-
-### <a name="introduction--information-protection"></a>Introduction: protection des informations
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtLoT]
-
-### <a name="part-1--information-protection-history-and-context"></a>Partie 1: historique et contexte de protection des informations
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtVXT]
-
-### <a name="part-2--information-protection-strategy"></a>Partie 2: stratégie de protection des informations
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtLoS]
-
-### <a name="part-3--story-of-a-file-protecting-information-anywhere-it-goes"></a>Partie 3 – histoire d'un fichier: protection des informations n'importe où
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtITi]
+- [Module 5: protection des informations](ciso-workshop-module-5.md): Découvrez comment protéger les informations sensibles partout où elles sont associées à la classification automatique, au chiffrement persistant sur les appareils et à la surveillance continue des données sur les appareils mobiles, les services Cloud et les autres ressources d'entreprise.

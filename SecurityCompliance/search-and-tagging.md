@@ -12,11 +12,11 @@ search.appverid:
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: Dans Advanced eDiscovery, le module de recherche et de marquage vous permet de rechercher, de prévisualiser et d'organiser les documents dans votre cas. Actuellement, ce module est en version bêta.
 ms.openlocfilehash: 58913a01f30b4169470592f5fc271e3ce785ac5d
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30222963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261366"
 ---
 # <a name="search-and-tagging"></a>Recherche et balisage
 
@@ -35,22 +35,22 @@ Le tableau suivant répertorie les propriétés que vous pouvez rechercher à l'
 |:-----|:-----|
 |**caselabel** <br/> | Nom de la balise créée/appliquée lorsqu'un document est balisé. <br/> |
 |**gardien** <br/> | Dépositaire associé à un document; soumis à des limitations. <br/> |
-|**jours** <br/> | Date d'envoi du courrier électronique; Date de modification des documents de site. <br/> |
+|**date** <br/> | Date d'envoi du courrier électronique; Date de modification des documents de site. <br/> |
 |**combinaison** <br/> | ID de fichier dans le cas. <br/> |
 |**filetype** <br/> | Extension de fichier native. <br/> |
 |**fileclass** <br/> | Courrier électronique, document ou pièce jointe. <br/> |
 |**senderauthor** <br/> | Expéditeur du courrier électronique; auteur des documents de site. <br/> |
-|**longueur** <br/> | Taille du fichier en Ko. <br/> |
+|**size** <br/> | Taille du fichier en Ko. <br/> |
 |**subjecttitle** <br/> | L'objet de la messagerie; titre des documents de site. <br/> |
-|**bcc** <br/> | Champ CCI d'un message électronique. <br/> |
+|**bbc** <br/> | Champ CCI d'un message électronique. <br/> |
 |**cc** <br/> | Champ CC d'un message électronique. <br/> |
-|**auront** <br/> | Adresse de messagerie de tous les participants d'un thread de messagerie, y compris pour les liens manquants. <br/> |
-|**ont** <br/> | Date à laquelle un message électronique a été reçu. <br/> |
-|**destinataires** <br/> | Destinataires d'un e-mail, inclus dans les champs à, CC ou CCI. <br/> |
-|**expéditeur** <br/> | Expéditeur d'un message électronique. <br/> |
+|**participants** <br/> | Adresse de messagerie de tous les participants d'un thread de messagerie, y compris pour les liens manquants. <br/> |
+|**received** <br/> | Date à laquelle un message électronique a été reçu. <br/> |
+|**recipients** <br/> | Destinataires d'un e-mail, inclus dans les champs à, CC ou CCI. <br/> |
+|**sender** <br/> | Expéditeur d'un message électronique. <br/> |
 |**LastModifiedDate** <br/> | Date de la dernière modification d'un document de site. <br/> |
-|**envoyés** <br/> | Date d'envoi d'un message électronique. <br/> |
-|**À** <br/> | Destinataire figurant dans le champ à d'un message électronique. <br/> |
+|**sent** <br/> | Date d'envoi d'un message électronique. <br/> |
+|**to** <br/> | Destinataire figurant dans le champ à d'un message électronique. <br/> |
 |**créés** <br/> | Auteur d'un document de site. <br/> |
 |**title** <br/> | Titre d'un document de site. <br/> |
 |**dominanttheme**\* <br/> | Thème dominant d'un élément. <br/> |

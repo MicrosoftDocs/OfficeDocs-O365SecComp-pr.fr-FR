@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 'Résumé : Découvrez comment déployer un nouveau site d’équipe SharePoint Online isolé en suivant ces instructions détaillées.'
-ms.openlocfilehash: e59c92ff488f82f4ea042364d742f7418da50167
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 4cb60cd55f526592cb469d80a061375a4f556afe
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257004"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Déploiement d’un site d’équipe SharePoint Online isolé
 
@@ -83,7 +83,7 @@ Vous devez créer les groupes d’accès suivants dans Azure AD :
 6. Répétez les étapes 3-5 pour vos autres groupes.
     
 > [!NOTE]
-> Vous devez utiliser le portail Azure pour créer les groupes afin que les fonctionnalités Office soient activées. Si un site SharePoint Online isolé est par la suite configuré comme un site hautement confidentiel avec une étiquette Azure information protection (AIP) pour chiffrer les fichiers et attribuer des autorisations à des groupes spécifiques, les groupes autorisés doivent avoir été créés avec des fonctionnalités Office. activé. Vous ne pouvez pas modifier le paramètre fonctionnalités Office d'un groupe Azure AD une fois qu'il a été créé. 
+> Vous devez utiliser le portail Azure pour créer les groupes afin que les fonctionnalités Office soient activées. Si un site SharePoint Online isolé est par la suite configuré comme un site hautement confidentiel avec une étiquette Azure information protection pour chiffrer des fichiers et attribuer des autorisations à des groupes spécifiques, les groupes autorisés doivent avoir été créés avec les fonctionnalités Office activées. Vous ne pouvez pas modifier le paramètre fonctionnalités Office d'un groupe Azure AD une fois qu'il a été créé. 
   
 Voici la configuration obtenue avec les trois groupes d'accès au site.
   
@@ -105,7 +105,7 @@ Si vous gérez des comptes d’utilisateur et des groupes via Office 365, vous 
   
 Pour le centre d'administration Office, connectez-vous à l'aide d'un compte d'utilisateur auquel a été attribué le rôle administrateur de compte d'utilisateur ou administrateur de société et utilisez des groupes pour ajouter les comptes d'utilisateur et les groupes appropriés aux groupes d'accès appropriés.
   
-Pour PowerShell, consultez la rubrique [Se connecter à Office 365 PowerShell](https://go.microsoft.com/fwlink/?linkid=842218).
+Pour PowerShell, [Connectez-vous d'abord avec le module Azure Active Directory PowerShell pour Graph](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 Ensuite, utilisez le bloc de commandes suivant pour ajouter un compte d'utilisateur individuel à un groupe d'accès:
   
@@ -161,7 +161,7 @@ Au cours de cette phase, vous allez créer le site SharePoint Online isolé et 
   
 Commencez par créer le site d’équipe SharePoint Online en suivant ces étapes.
   
-1. Connectez-vous au centre d'administration à l'aide d'un compte qui sera également utilisé pour administrer le site d'équipe SharePoint Online (administrateur SharePoint Online). Pour obtenir de l’aide, consultez [Où se connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Connectez-vous au centre d’administration avec un compte qui servira également à gérer le site d’équipe SharePoint Online (par un administrateur SharePoint Online). Pour obtenir de l’aide, consultez [Où se connecter à Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Dans la liste des vignettes, cliquez sur **SharePoint**.
     

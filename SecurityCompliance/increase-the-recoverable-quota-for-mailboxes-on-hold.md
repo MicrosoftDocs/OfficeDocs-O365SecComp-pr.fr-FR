@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: "Activez la boîte aux lettres d'archivage et activez l'archivage à extension automatique pour augmenter la taille du dossier éléments récupérables pour une boîte aux lettres dans Office 365. "
 ms.openlocfilehash: f419da5b1b42d52433e9fc288aa5b401a2123c1c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254390"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Augmenter le quota des éléments récupérables pour les boîtes aux lettres placées en conservation
 

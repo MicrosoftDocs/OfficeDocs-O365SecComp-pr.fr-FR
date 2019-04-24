@@ -13,11 +13,11 @@ search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Utilisez la recherche de contenu dans le centre de sécurité & Compliance Center pour effectuer des collections ciblées. Une collection ciblée signifie que vous êtes sûr que les éléments réactifs à un cas ou des éléments privilégiés se trouvent dans une boîte aux lettres ou un dossier de site spécifique. Utilisez le script de cet article pour obtenir l'ID de dossier ou le chemin d'accès de la boîte aux lettres ou des dossiers de site spécifiques sur lesquels vous souhaitez effectuer une recherche.
 ms.openlocfilehash: 3d9a82926a08b3f7f1f245146e70d79617e7a413
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264008"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Utiliser la recherche de contenu dans Office 365 pour les collections ciblées
 

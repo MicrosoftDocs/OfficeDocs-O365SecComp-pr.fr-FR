@@ -11,11 +11,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Cette rubrique montre ce qu'une stratégie de protection contre la perte de données (DLP) recherche lorsqu'il détecte le type d'informations sensibles du numéro d'identification fiscale de l'UE. Ce type d'informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
 ms.openlocfilehash: 4914ff078695519c2a298190d82c86a6abebceb9
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255522"
 ---
 # <a name="eu-tax-identification-number"></a>Numéro d'identification fiscale de l'UE
 
@@ -70,7 +70,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsaustriaeutaxfilenumber"></a>Keywords_austria_eu_tax_file_number
 
@@ -128,7 +128,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsbelgiumeutaxfilenumber"></a>Keywords_belgium_eu_tax_file_number
 
@@ -187,7 +187,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsbulgariaeutaxfilenumber"></a>Keywords_bulgaria_eu_tax_file_number
 
@@ -262,7 +262,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordscroatiaeutaxfilenumber"></a>Keywords_croatia_eu_tax_file_number
 
@@ -323,7 +323,7 @@ Pattern confidenceLevel="75">
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordscypruseutaxfilenumber"></a>Keywords_cyprus_eu_tax_file_number
 
@@ -383,7 +383,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsczechrepubliceutaxfilenumber"></a>Keywords_czech_republic_eu_tax_file_number
 
@@ -444,7 +444,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsdenmarkeutaxfilenumber"></a>Keywords_denmark_eu_tax_file_number
 
@@ -509,7 +509,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsestoniaeutaxfilenumber"></a>Keywords_estonia_eu_tax_file_number
 
@@ -574,7 +574,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsfinlandeutaxfilenumber"></a>Keywords_finland_eu_tax_file_number
 
@@ -663,7 +663,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsfranceeutaxfilenumber"></a>Keywords_france_eu_tax_file_number
 
@@ -718,7 +718,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsgermanyeutaxfilenumber"></a>Keywords_germany_eu_tax_file_number
 
@@ -778,7 +778,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsgreeceeutaxfilenumber"></a>Keywords_greece_eu_tax_file_number
 
@@ -861,7 +861,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordshungaryeutaxfilenumber"></a>Keywords_hungary_eu_tax_file_number
 
@@ -936,7 +936,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsirelandeutaxfilenumber"></a>Keywords_ireland_eu_tax_file_number
 
@@ -1017,7 +1017,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsitalyeutaxfilenumber"></a>Keywords_italy_eu_tax_file_number
 
@@ -1084,7 +1084,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordslatviaeutaxfilenumber"></a>Keywords_latvia_eu_tax_file_number
 
@@ -1151,7 +1151,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordslithuaniaeutaxfilenumber"></a>Keywords_lithuania_eu_tax_file_number
 
@@ -1222,7 +1222,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsluxemburgeutaxfilenumber"></a>Keywords_luxemburg_eu_tax_file_number
 
@@ -1299,7 +1299,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsmaltaeutaxfilenumber"></a>Keywords_malta_eu_tax_file_number
 
@@ -1366,7 +1366,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsnetherlandseutaxfilenumber"></a>Keywords_netherlands_eu_tax_file_number
 
@@ -1457,7 +1457,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordspolandeutaxfilenumber"></a>Keywords_poland_eu_tax_file_number
 
@@ -1542,7 +1542,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsportugaleutaxfilenumber"></a>Keywords_portugal_eu_tax_file_number
 
@@ -1596,7 +1596,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsromaniaeutaxfilenumber"></a>Keywords_romania_eu_tax_file_number
 
@@ -1652,7 +1652,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsslovakiaeutaxfilenumber"></a>Keywords_slovakia_eu_tax_file_number
 
@@ -1725,7 +1725,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordssloveniaeutaxfilenumber"></a>Keywords_slovenia_eu_tax_file_number
 
@@ -1834,7 +1834,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsspaineutaxfilenumber"></a>Keywords_spain_eu_tax_file_number
 
@@ -1933,7 +1933,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsswedeneutaxfilenumber"></a>Keywords_sweden_eu_tax_file_number
 
@@ -2001,7 +2001,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsukeutaxfilenumber"></a>Keywords_uk_eu_tax_file_number
 

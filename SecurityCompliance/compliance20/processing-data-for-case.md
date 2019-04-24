@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 918a49859d3e3a10d14b346860027a1b434c73e9
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30297107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240909"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery-preview"></a>Utiliser des erreurs de traitement dans Advanced eDiscovery (aperçu)
 

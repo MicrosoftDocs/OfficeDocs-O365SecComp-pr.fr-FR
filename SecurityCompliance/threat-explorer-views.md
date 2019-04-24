@@ -1,5 +1,5 @@
 ---
-title: Affichages de l'Explorateur de menaces
+title: Affichages Threat Explorer
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,19 +13,19 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez les différents types d'affichage disponibles dans l'Explorateur (également appelé Explorateur de menaces) dans le cadre du plan 2 de protection avancée contre les menaces Office 365.
 ms.openlocfilehash: bcfa044db6844d9459b3dd62d9ced1cd37a999ec
-ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30736299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260534"
 ---
-# <a name="threat-explorer-views"></a>Affichages de l'Explorateur de menaces
+# <a name="threat-explorer-views"></a>Affichages Threat Explorer
 
 [Threat Explorer](use-explorer-in-security-and-compliance.md) est un outil puissant, quasiment en temps réel, qui permet aux équipes des opérations de sécurité d'examiner et de &amp; répondre aux menaces dans le centre de sécurité conformité. L'Explorateur affiche des informations sur les programmes malveillants suspects et les messages hameçons dans Office 365, ainsi que d'autres menaces et risques de sécurité pour votre organisation. 
 
 Lorsque vous ouvrez l'Explorateur pour la première fois, l'affichage par défaut affiche les détections de programmes malveillants par courrier électronique pour les 7 derniers jours. 
 
-![Explorateur de menaces](media/ThreatExplorerFirstOpened.png)
+![Threat Explorer](media/ThreatExplorerFirstOpened.png)
 
 Explorer peut également afficher les fonctionnalités de protection de la sécurité dans Office 365, notamment les [liens fiables](atp-safe-links.md) et [les pièces jointes fiables](atp-safe-attachments.md) , et peut être modifié pour afficher les données des 30 derniers jours. 
 

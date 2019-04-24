@@ -14,16 +14,16 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: Les paramètres de filtrage du courrier indésirable de base incluent la sélection de l'action à effectuer sur les messages identifiés comme courrier indésirable, ainsi que le filtrage des messages rédigés dans des langues spécifiques ou envoyés à partir de pays ou régions spécifiques.
-ms.openlocfilehash: 9cfccc3602758de2426940cea1c6abd91871d7c2
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 5773256e18e1910405bcc04a1869f631734447a4
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258812"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configuration de vos stratégies de filtrage du courrier indésirable
   
-Les paramètres de filtrage du courrier indésirable de base incluent la sélection de l'action à effectuer sur les messages identifiés comme courrier indésirable. Les paramètres de stratégie de filtrage du courrier inDésirable sont appliqués uniquement aux messages entrants. Vous pouvez modifier la stratégie de filtrage du courrier indésirable par défaut pour configurer vos paramètres de filtrage du courrier indésirable à l'échelle de l'entreprise et créer des stratégies personnalisées de filtrage du courrier indésirable, puis les appliquer à des utilisateurs, des groupes ou des domaines spécifiques de votre organisation Les stratégies personnalisées priment toujours sur la stratégie par défaut. Vous pouvez modifier l'ordre dans lequel vos stratégies personnalisées s'exécutent en modifiant la priorité de chaque stratégie personnalisée; Toutefois, seule la stratégie de priorité la plus élevée s'applique si plusieurs stratégies répondent aux critères définis. 
+Les paramètres de filtrage du courrier indésirable de base incluent la sélection de l'action à effectuer sur les messages identifiés comme courrier indésirable. Les paramètres de stratégie de filtrage du courrier inDésirable sont appliqués uniquement aux messages entrants. Vous pouvez modifier la stratégie de filtrage du courrier indésirable par défaut pour configurer vos paramètres de filtrage du courrier indésirable à l'échelle de l'entreprise et créer des stratégies personnalisées de filtrage du courrier indésirable, puis les appliquer à des utilisateurs, des groupes ou des domaines spécifiques de votre organisation Les stratégies personnalisées priment toujours sur la stratégie par défaut. Vous pouvez modifier l'ordre dans lequel vos stratégies personnalisées s'exécutent en modifiant la priorité de chaque stratégie personnalisée; Toutefois, seule la stratégie de priorité la plus élevée s'applique si plusieurs stratégies répondent aux critères définis.
   
 > [!IMPORTANT]
 > Pour les clients autonomes Exchange Online Protection (EOP): par défaut, les filtres de courrier indésirable EOP envoient des messages détectés par courrier indésirable dans le dossier de courrier inDésirable de chaque destinataire. Toutefois, pour vous assurer que l'action **déplacer le message vers le dossier** courrier indésirable fonctionne pour les boîtes aux lettres locales, vous devez configurer des règles de flux de messagerie Exchange (également appelées règles de transport) sur vos serveurs locaux pour détecter les en-têtes de courrier indésirable ajoutés par EOP. Pour plus d'informations, voir [Vérification de l'acheminement du courrier indésirable vers le dossier Courrier indésirable de chaque utilisateur](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 

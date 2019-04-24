@@ -1,5 +1,5 @@
 ---
-title: Types de fichiers pris en charge dans les enquêtes de données
+title: Types de fichiers pris en charge dans les enquêtes de données (aperçu)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,17 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bec8c01b75d68249a335c4de48909ce50ab3bf97
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: ec27b7a8e9dbaf03e9a1d5f987bb9dd9b7513b85
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257632"
 ---
-# <a name="supported-file-types-in-data-investigations"></a>Types de fichiers pris en charge dans les enquêtes de données
+# <a name="supported-file-types-in-data-investigations-preview"></a>Types de fichiers pris en charge dans les enquêtes de données (aperçu)
 
+Les enquêtes de données (aperçu) prennent en charge de nombreux types de fichiers de différentes manières, qui sont décrites dans le tableau suivant. Cette liste n'est pas finalisée, et nous allons ajouter de nouveaux types de fichiers lors de notre test de validation. Le tableau indique également si un type de fichier peut être affiché dans les visionneuses disponibles lorsque vous examinez les preuves.
 
-| Type MIME | Classe de fichiers (par exemple, image, Archive, email, document Office, etc.) | Visionneuse Native | Texte | Visionneuse d'anNotations | Extraction de conteneur | Extensions possibles |
+| Type MIME | Classe file | Visionneuse Native | Visionneuse de texte | Visionneuse d'anNotations | Extraction de conteneur | Extensions |
 | :- | :- | :- | :- | :- | :- | :- |
 | application/msword | Document | Oui | Oui | Oui | Non | . doc;. dat |
 | application/pdf | Document | Oui | Oui | Oui | Non | .pdf |
@@ -54,11 +55,11 @@ ms.locfileid: "31030053"
 | application/x-mspublisher | Document | Oui | Oui | Oui | Non | . pub |
 | application/x-rar-Compressed | Archive/conteneur | Non | Non | Non | Oui | . rar |
 | application/code postal | Archive/conteneur | Non | Non | Non | Oui | . zip |
-| image/BMP | Image | Oui | Oui | Oui | Non | . bmp |
+| image/BMP | Image | Oui | Oui | Oui | Non | .bmp |
 | image/EMF | Image | Oui | Oui | Oui | Non | . EMF |
-| image/gif | Document | Oui | Oui | Oui | Non | . gif |
+| image/gif | Document | Oui | Oui | Oui | Non | .gif |
 | image/jpeg | Image | Oui | Oui | Oui | Non | . jpg;. jpeg;. dat;. jpgt |
-| image/png | Image | Oui | Oui | Oui | Non | . png |
+| image/png | Image | Oui | Oui | Oui | Non | .png |
 | image/TIFF | Image | Oui | Oui | Oui | Non | . TIF |
 | image/vnd. dwg | Document | Oui | Oui | Oui | Non | . dwg;. format |
 | image/WMF | Document | Oui | Oui | Oui | Non | . wmf |
@@ -67,3 +68,4 @@ ms.locfileid: "31030053"
 | texte/html | Document | Oui | Oui | Oui | Non | . html;. shtml;. htm |
 | text/plain | Document | Oui | Oui | Oui | Non | . txt;. css;. con;. pl;. csv;. dat |
 | Text/vCard-contact | Document | Oui | Oui | Oui | Non | . vcf |
+||||||||

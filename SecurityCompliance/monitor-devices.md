@@ -13,11 +13,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.openlocfilehash: 31d89b8bbcad98814ff33764bad24bffbbba4968
-ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "31043255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263534"
 ---
 # <a name="monitor-devices-in-microsoft-365-security"></a>Surveillance des appareils dans Sécurité Microsoft 365
 

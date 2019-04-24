@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à utiliser des règles de flux de messagerie dans Exchange Online Protection pour le filtrage de courrier en nombre.
 ms.openlocfilehash: 43f0af6fe41bc7f8f4a62d0d87dbd825fb868f7b
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267007"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>Utiliser des règles de flux de messagerie pour configurer le filtrage du courrier en nombre dans Exchange Online Protection
 
@@ -31,7 +31,7 @@ Si vous souhaitez utiliser davantage d'options pour filtrer les messages en mass
   
 ## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-text-patterns"></a>Créer une règle de flux de messagerie pour filtrer les messages électroniques en masse en fonction des modèles de texte
 
-1. Dans le Centre d'administration Exchange (CAE), accédez à **Flux de messagerie** \> **Règles**.
+1. Dans le Centre d’administration Exchange, accédez à **Flux de messagerie** \> **Règles**.
     
 2. Cliquez sur **Ajouter** ![une](media/ITPro-EAC-AddIcon.gif) icône Ajouter, puis sélectionnez **créer une nouvelle règle**.
     

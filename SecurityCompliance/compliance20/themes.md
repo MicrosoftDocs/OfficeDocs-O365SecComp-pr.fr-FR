@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 7c9d1a52acef48d96816fefbb1c836032d262b93
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240976"
 ---
 # <a name="themes"></a>Thèmes
 Comment une personne écrit-t-elle un document? Elles commencent généralement par une ou plusieurs idées qu'elles souhaitent transférer dans le document, et composent des mots qui s'alignent sur les idées. Plus l'idée est fréquente, plus le nombre de mots liés à cette idée est important. Cela indique le mode d'utilisation des documents par les utilisateurs; l'essentiel de la lecture d'un document est l'idée des idées que le document tente de transmettre, et les idées qui apparaissent où et les relations entre les idées.

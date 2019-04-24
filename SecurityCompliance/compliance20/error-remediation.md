@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: f6db3c178e584c45cf282158c58fb5125dc41f3f
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252626"
 ---
 # <a name="error-remediation-when-processing-data"></a>Correction d’erreur lors du traitement des données
 

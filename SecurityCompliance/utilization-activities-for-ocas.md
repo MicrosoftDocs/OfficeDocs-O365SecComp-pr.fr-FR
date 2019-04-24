@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 86f414ad-81de-4703-b40a-c6615bbe9108
 description: Une fois que vous avez configuré et déployé Office 365 Cloud App Security, vous devez effectuer certaines tâches pour vous assurer que votre configuration est correcte et que vous êtes prêt à effectuer des révisions régulières.
 ms.openlocfilehash: 232de4df1d1eb4debdddcee2c1d8672d1aeb4b21
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242542"
 ---
 # <a name="utilization-activities-after-rolling-out-office-365-cloud-app-security"></a>Activités d’utilisation après avoir déployé la sécurité des applications cloud Office 365
   

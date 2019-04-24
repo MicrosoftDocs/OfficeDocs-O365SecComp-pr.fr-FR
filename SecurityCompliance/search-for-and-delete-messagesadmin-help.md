@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: Les administrateurs peuvent utiliser la cmdlet Search-Mailbox pour faire une recherche dans des boîtes aux lettres utilisateur, puis supprimer des messages d'une boîte aux lettres.
 ms.openlocfilehash: abf7e7f39fe719ecc6c23565e284c01aed8822ee
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260982"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>Recherche et suppression de messages - Aide de l’administrateur
   

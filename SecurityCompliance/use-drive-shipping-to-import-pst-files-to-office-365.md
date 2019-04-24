@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 description: 'Pour les administrateurs: Découvrez comment importer en bloc les fichiers PST de votre organisation vers des boîtes aux lettres Office 365 en copiant des fichiers PST sur un disque dur, puis en les expédiant à Microsoft. '
 ms.openlocfilehash: 5f04cc0a29fce7b607920253adb10aefb640c914
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264776"
 ---
 # <a name="use-drive-shipping-to-import-your-organization-pst-files-to-office-365"></a>Utiliser l'expédition de disque pour importer les fichiers PST de votre organisation vers Office 365
 

@@ -12,17 +12,17 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: Utilisez l'outil eDiscovery de la recherche de contenu dans le centre de sécurité & Compliance Center pour trouver rapidement des messages électroniques dans des boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, et des conversations de messagerie instantanée dans Skype entreprise.
 ms.openlocfilehash: fc0bea90ce9cbfc27f894985c7d3083756ab108a
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261352"
 ---
 # <a name="search-for-content-in-office-365"></a>Rechercher du contenu dans Office 365
 
 Utilisez l'outil de recherche de contenu dans le centre de sécurité & Compliance Center pour rechercher rapidement le courrier électronique dans les boîtes aux lettres Exchange, les documents dans les sites SharePoint et les emplacements OneDrive, ainsi que les conversations de messagerie instantanée dans Skype entreprise. Vous pouvez utiliser l'outil de recherche de contenu pour rechercher des courriers électroniques, des documents et des conversations de messagerie instantanée dans les outils de collaboration Office 365 tels que les groupes Microsoft teams et Office 365.
   
-## <a name="search-for-content"></a>Rechercher du contenu
+## <a name="search-for-content"></a>Recherche de contenu
 
 La première étape consiste à utiliser l'outil de recherche de contenu pour choisir les emplacements de contenu à rechercher et configurer une requête de mot clé afin de rechercher des éléments spécifiques. Vous pouvez également laisser la requête vide et renvoyer tous les éléments dans les emplacements cibles.
   

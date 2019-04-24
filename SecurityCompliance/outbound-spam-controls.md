@@ -14,16 +14,19 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Si votre organisation envoie un grand nombre de messages marqués comme courrier indésirable, vous pouvez être bloqué pour l'envoi de messages électroniques avec Office 365. Lisez cet article pour en savoir plus sur les raisons de cette situation et sur ce que vous pouvez faire.
-ms.openlocfilehash: 2cfcb7016b0c0d11117f6d78af2632229c70aa1d
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 0fcbe0c7b9d1bd340e2ab2feb5edec8283ecaf9a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262306"
 ---
 # <a name="controlling-outbound-spam-in-office-365"></a>Contrôle du courrier indésirable sortant dans Office 365
 
-Nous prévoyons la gestion du courrier indésirable sortant, car le nôtre est un service partagé.  Il existe de nombreux clients derrière un pool de ressources partagé, où si un client envoie du courrier indésirable sortant, il peut dégrader la réputation IP sortante du service et affecte la remise des messages électroniques pour d'autres clients. Il est incertain que le client A, si le client B spams et diverses listes de blocage IP tierces, répertorient l'adresse IP qu'il utilise.
+Nous prévoyons la gestion du courrier indésirable sortant, car le nôtre est un service partagé.  Il existe de nombreux clients derrière un pool de ressources partagé, où si un client envoie du courrier indésirable sortant, il peut dégrader la réputation IP sortante du service et affecte la remise des messages électroniques pour d'autres clients.
+
+> [!IMPORTANT]
+> La notification pour lorsqu'un expéditeur est restreint fait désormais partie de la plateforme d'alerte SCC (Security & Compliance Center). Au lieu d'utiliser les méthodes décrites ci-dessous pour envoyer des notifications, la liste des utilisateurs à alerter se trouve dans l'alerte «utilisateur restreint de l'envoi de courrier électronique». Commencez à utiliser la [page stratégies d'alerte](https://sip.protection.office.com/alertpolicies) du centre de sécurité _AMP_ Compliance Center pour configurer l'alerte, car la méthode précédente sera supprimée à l'avenir. Découvrez la nouvelle [expérience utilisateur restreint](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam). "
 
 ## <a name="what-admins-can-do-to-control-outbound-spam"></a>Ce que les administrateurs peuvent faire pour contrôler le courrier indésirable sortant
 
@@ -52,15 +55,15 @@ Un message unique marqué comme courrier indésirable peut être incorrect par l
 
 Il est difficile de trouver un équilibre entre les clients qui souhaitent envoyer un grand nombre de messages électroniques et la protection du service des comptes compromis et des courriers électroniques en masse avec des pratiques d'acquisition de liste médiocres. Encore une fois, le coût d'un atterrissage sur IP sortant sur une sélection de blocage tierce est plus élevé que le blocage d'un client pour l'envoi de messages sortants. Comme décrit dans la [Description du service Exchange Online](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx#Receiving and sending limits), l'utilisation d'EOP pour envoyer des messages en masse n'est pas une utilisation prise en charge du service et n'est autorisée que sur la base du «meilleur effort». Pour les clients qui souhaitent envoyer des courriers électroniques en masse, nous vous recommandons d'effectuer les opérations suivantes:
 
-a. **Envoyer les messages électroniques en nombre par le biais de ses propres serveurs de messagerie locaux**. Cela signifie que le client devra maintenir sa propre infrastructure de messagerie pour ce type de courrier électronique.
+a. **Envoyer les messages électroniques en masse via ses propres serveurs de messagerie locaux**. Cela signifie que le client devra maintenir sa propre infrastructure de messagerie pour ce type de courrier électronique.
 
-b. **utiliser un courrier électronique en masse tiers pour envoyer la communication de masse**. Il existe plusieurs expéditeurs de courriers électroniques en masse dont la seule entreprise est d'envoyer du courrier en nombre. Ils peuvent collaborer avec les clients pour s'assurer qu'ils disposent de bonnes pratiques en matière de messagerie et qu'ils disposent de ressources dédiées à leur application. 
+b. **Utilisez un courrier électronique en masse tiers pour envoyer la communication de masse**. Il existe plusieurs expéditeurs de courriers électroniques en masse dont la seule entreprise est d'envoyer du courrier en nombre. Ils peuvent collaborer avec les clients pour s'assurer qu'ils disposent de bonnes pratiques en matière de messagerie et qu'ils disposent de ressources dédiées à leur application. 
 
 Le groupe de travail de messagerie, mobile, anti-abus de programmes malveillants (MAAWG) publie sa liste d'appartenance [ici](http://www.maawg.org/about/roster). Plusieurs fournisseurs de courrier en masse figurent dans la liste et sont appelés citoyens Internet responsables. 
   
-## <a name="for-more-information"></a>Pour plus d’informations
+## <a name="for-more-information"></a>Pour plus d'informations
 
-[Exemple de notification lorsqu'un expéditeur est bloqué en raison de l'envoi de courrier indésirable sortant](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)
+[Exemple de notification lorsqu'un expéditeur est bloqué en cas d'envoi de courrier indésirable sortant](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)
 
 [Protection contre le courrier indésirable pour Office 365](anti-spam-protection.md)
 

@@ -13,11 +13,11 @@ search.appverid:
 - MOE150
 description: Voir ce qui a été publié pendant 2018 pour Office 365 Cloud App Security
 ms.openlocfilehash: 986fb64eedf8184e7835d1fec41845fde13b294b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263152"
 ---
 # <a name="office-365-cloud-app-security-updates-during-2018"></a>Mises à jour de sécurité des applications Cloud Office 365 pendant 2018
 
@@ -39,7 +39,7 @@ ms.locfileid: "30214344"
 
 - **Prise en charge supplémentaire de Dynamics** La sécurité des applications Cloud inclut désormais la prise en charge des activités Microsoft Dynamics prises en charge dans le journal d'audit Office 365. 
 
-- La **nouvelle terminologie!** Le nom des fonctionnalités d'autorisations d'application a été modifié pour plus de clarté: il est maintenant appelé applications OAuth. 
+- **La nouvelle terminologie!** Le nom des fonctionnalités d'autorisations d'application a été modifié pour plus de clarté: il est maintenant appelé applications OAuth. 
 
 ## <a name="office-365-cloud-app-security-release-136"></a>Office 365 Cloud App Security version 136
 

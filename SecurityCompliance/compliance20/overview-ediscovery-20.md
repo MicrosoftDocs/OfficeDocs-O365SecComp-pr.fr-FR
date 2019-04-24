@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: Cet article décrit la nouvelle version de Advanced eDiscovery (Preview) dans Microsoft 365.
 ms.openlocfilehash: 2296f4ee1867cacc90eada9e5f12888a8ea0d242
-ms.sourcegitcommit: 13c601ea11ce6a3c71036fdafda059061c6998d0
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30313150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252470"
 ---
 # <a name="overview-of-advanced-ediscovery-preview-in-microsoft-365"></a>Vue d'ensemble de Advanced eDiscovery (aperçu) dans Microsoft 365
 
@@ -57,7 +57,7 @@ Pour plus d'informations sur le flux de travail de bout en bout dans Advanced eD
 
 ![Onglets dans Advanced eDiscovery (aperçu) suivre le flux de travail EDRM](../media/aedisco-homepage-1.png)
 
-## <a name="managing-custodians"></a>Gérer des consignataires
+## <a name="managing-custodians"></a>Gestion des dépositaires
 
 Utilisez l' **** onglet dépositaires pour ajouter et gérer les personnes que vous avez identifiées comme des personnes intéressantes dans le cas. Lorsque vous ajoutez des dépositaires, vous pouvez rapidement effectuer des actions liées aux dépositaires, telles que la mise en attente légale sur les sources de données des dépositaires, comme leur compte de boîte aux lettres et OneDrive, la communication avec des dépositaires et la recherche de sources de données de dépositaires pour collecter du contenu. Cela est pertinent pour le cas. À mesure que le cas progresse, il est facile d'ajouter de nouveaux dépositaires ou de libérer des dépositaires à partir du cas. Pour plus d'informations, consultez la rubrique [utiliser des dépositaires dans Advanced eDiscovery (aperçu)](managing-custodians.md).
 
@@ -79,7 +79,7 @@ L'onglet **recherches** permet de créer des recherches pour rechercher des sour
 
 ## <a name="reviewing-and-analyzing-case-data"></a>Révision et analyse des données de cas
 
-Utilisez l'onglet **jeux de travail** pour examiner et analyser le contenu que vous avez collecté à partir du système actif et ajouté à une plage de travail. Un *jeu de travail* est une collection statique de ces données (en d'autres termes, une copie hors connexion des données) des données privatives de temps (et, le cas échéant, des données non privatives) que vous avez collectées au cours de la phase précédente du flux de travail de découverte électronique. Lorsque vous ajoutez des résultats de recherche à un jeu de travail, un processus est déclenché qui extrait les fichiers des conteneurs, extrait les métadonnées et extrait le texte. Une fois le processus terminé, le système crée un nouvel index de toutes les données collectées auprès des dépositaires et ajoutées à la plage de travail. Une fois que les données sont ajoutées au jeu de travail, vous pouvez exécuter des requêtes supplémentaires pour affiner les données de cas, afficher des données au format texte ou natif, et annoter, biffer et baliser des documents dans le jeu de travail. En outre, vous pouvez effectuer des analyses avancées, telles que l'identification de la duplication de documents, le Threading de courrier électronique et les thèmes. Une fois que vous avez consulté les données uniquement sur ce qui est pertinent pour le cas, vous pouvez télécharger les documents directement ou les exporter, ainsi que les métadonnées de fichier, les annotations et les balises. Pour plus d'informations, voir:
+Utilisez l'onglet **jeux de travail** pour examiner et analyser le contenu que vous avez collecté à partir du système actif et ajouté à une plage de travail. Un *jeu de travail* est une collection statique de ces données (en d'autres termes, une copie hors connexion des données) des données privatives de temps (et, le cas échéant, des données non privatives) que vous avez collectées au cours de la phase précédente du flux de travail de découverte électronique. Lorsque vous ajoutez des résultats de recherche à un jeu de travail, un processus est déclenché qui extrait les fichiers des conteneurs, extrait les métadonnées et extrait le texte. Une fois le processus terminé, le système crée un nouvel index de toutes les données collectées auprès des dépositaires et ajoutées à la plage de travail. Une fois que les données sont ajoutées au jeu de travail, vous pouvez exécuter des requêtes supplémentaires pour affiner les données de cas, afficher des données au format texte ou natif, et annoter, biffer et baliser des documents dans le jeu de travail. En outre, vous pouvez effectuer des analyses avancées, telles que l'identification de la duplication de documents, le Threading de courrier électronique et les thèmes. Une fois que vous avez consulté les données uniquement sur ce qui est pertinent pour le cas, vous pouvez télécharger les documents directement ou les exporter, ainsi que les métadonnées de fichier, les annotations et les balises. Pour plus d'informations, consultez les rubriques suivantes :
 
   - [Vérifier les données de cas dans Advanced eDiscovery (aperçu)](reviewing-data-in-working-set.md)
   - [Analyser les données d'une plage de travail dans Advanced eDiscovery (aperçu)](analyzing-data-in-working-set.md)
@@ -88,10 +88,10 @@ Utilisez l'onglet **jeux de travail** pour examiner et analyser le contenu que v
 
 Une fois que vous avez exporté les données à partir d'une plage de travail, utilisez l'onglet **exportations** pour gérer une tâche d'exportation et télécharger des données à partir d'une plage de travail. Lorsque vous exportez un jeu de travail, les données sont téléchargées vers un emplacement de stockage Azure, puis peuvent être téléchargées sur un ordinateur local. Vous pouvez obtenir la clé d'évaluation de l'emplacement et du stockage nécessaire pour télécharger les données exportées dans l'onglet **exportations** . Pour plus d'informations, consultez la rubrique [Export case Data in Advanced eDiscovery (Preview)](exporting-data-ediscover20.md).
 
-## <a name="managing-jobs"></a>Gérer des travaux
+## <a name="managing-jobs"></a>Gestion des travaux
 
 Utilisez l'onglet **travaux** pour surveiller les processus de longue durée pour les tâches liées à la casse que vous avez lancées. L'exemple de travaux inclut ceux liés à la réindexation, aux recherches et aux exportations. Par exemple, vous pouvez créer une recherche dans l'onglet **recherches** qui inclut un grand nombre de sources de données. L'état de ce processus de recherche s'affiche sous l'onglet **travaux** . Pour plus d'informations, consultez la rubrique [Manage jobs in Advanced eDiscovery (Preview)](managing-jobs-ediscovery20.md).
 
-## <a name="configuring-case-settings"></a>Configurer des paramètres de cas
+## <a name="configuring-case-settings"></a>Configuration des paramètres de cas
 
 Utilisez l'onglet **paramètres** pour configurer les paramètres à l'échelle de l'incident. Cela inclut l'ajout de membres à un cas, la fermeture ou la suppression d'un cas et la configuration du comportement de recherche et d'analyse. Pour plus d'informations, consultez la rubrique [configure case Settings in Advanced eDiscovery (Preview)](configuring-case-settings-ediscovery20.md).

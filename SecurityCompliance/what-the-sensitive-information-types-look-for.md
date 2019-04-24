@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité d'Office 365 inclut 80 types d'informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP recherche pour chaque type.
 ms.openlocfilehash: d161435c75149183289cfbfd6abe79d55e371e31
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30639191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266870"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Éléments recherchés par les types d’informations sensibles
 
@@ -63,7 +63,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ```
 
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordabarouting"></a>Keyword_ABA_Routing
 
@@ -120,7 +120,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordargentinanationalid"></a>Keyword_argentina_national_id
 
@@ -178,7 +178,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
  </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordaustraliabankaccountnumber"></a>Keyword_australia_bank_account_number
 
@@ -244,7 +244,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordaustraliadriverslicensenumber"></a>Keyword_australia_drivers_license_number
 
@@ -395,7 +395,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordaustraliamedicalaccountnumber"></a>Keyword_Australia_Medical_Account_Number
 
@@ -443,7 +443,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>   
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordpassport"></a>Keyword_passport
 
@@ -521,7 +521,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordaustraliataxfilenumber"></a>Keyword_Australia_Tax_File_Number
 
@@ -603,7 +603,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
 
@@ -663,7 +663,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
 
@@ -723,7 +723,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
 
@@ -774,7 +774,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
 
@@ -829,7 +829,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
 
@@ -923,7 +923,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
 
@@ -983,7 +983,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="cepazureemulatorstorageaccountfilter"></a>CEP_AzureEmulatorStorageAccountFilter
 
@@ -1072,7 +1072,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordbelgiumnationalnumber"></a>Keyword_belgium_national_number
 
@@ -1147,7 +1147,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordbrazilcpf"></a>Keyword_brazil_cpf
 
@@ -1207,7 +1207,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordbrazilcnpj"></a>Keyword_brazil_cnpj
 
@@ -1220,7 +1220,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Legal entities 
 - Registration Status 
 - Business 
-- Company
+- Société
 - CNPJ 
 - Cadastro Nacional da Pessoa Jurídica 
 - Cadastro Geral de Contribuintes 
@@ -1283,7 +1283,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordbrazilrg"></a>Keyword_brazil_rg
 
@@ -1336,7 +1336,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordcanadabankaccountnumber"></a>Keyword_canada_bank_account_number
 
@@ -1439,7 +1439,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordprovincenamedriverslicensename"></a>Keyword_ [province_name] _drivers_license_name
 
@@ -1611,7 +1611,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordcanadahealthservicenumber"></a>Keyword_canada_health_service_number
 
@@ -1658,7 +1658,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordcanadapassportnumber"></a>Keyword_canada_passport_number
 
@@ -1724,7 +1724,7 @@ Au moins deux mots clés de Keyword_canada_phin ou Keyword_canada_provinces sont
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordcanadaphin"></a>Keyword_canada_phin
 
@@ -1815,7 +1815,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsin"></a>Keyword_sin
 
@@ -1841,7 +1841,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - permis de conduire 
 - DOB 
 - Birthdate 
-- Anniversaire 
+- Birthday 
 - Date of Birth 
    
 ## <a name="chile-identity-card-number"></a>	Numéro de carte d’identité Chili
@@ -1889,7 +1889,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordchileidcard"></a>Keyword_chile_id_card
 
@@ -1948,7 +1948,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 ### <a name="keywordchinaresidentid"></a>Keyword_china_resident_id
 
@@ -2008,7 +2008,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordccverification"></a>Keyword_cc_verification
 
@@ -2237,7 +2237,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordcroatiaidcard"></a>Keyword_croatia_id_card
 
@@ -2285,7 +2285,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordcroatiaoibnumber"></a>Keyword_croatia_oib_number
 
@@ -2339,7 +2339,7 @@ La somme de contrôle est correcte.
    </Pattern>
 </Entity>
 ```
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 - Numéro d'identité personnelle tchèque
 - Rodné číslo
@@ -2377,7 +2377,7 @@ La somme de contrôle est correcte.
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyworddenmarkid"></a>Keyword_denmark_id
 
@@ -2418,7 +2418,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 Aucun
 
@@ -2465,7 +2465,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordeudebitcard"></a>Keyword_eu_debit_card
 
@@ -2827,7 +2827,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 - Keyword_finnish_national_id
 - Sosiaaliturvatunnus
@@ -2879,7 +2879,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordfrenchdriverslicense"></a>Keyword_french_drivers_license
 
@@ -2921,7 +2921,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 Aucun
    
@@ -2958,7 +2958,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordpassport"></a>Keyword_passport
 
@@ -3031,7 +3031,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordfrinsee"></a>Keyword_fr_insee
 
@@ -3100,7 +3100,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordgermandriverslicensenumber"></a>Keyword_german_drivers_license_number
 
@@ -3255,7 +3255,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordgermanpassport"></a>Keyword_german_passport
 
@@ -3320,7 +3320,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordgermanyidcard"></a>Keyword_germany_id_card
 
@@ -3370,7 +3370,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordgreeceidcard"></a>Keyword_greece_id_card
 
@@ -3420,7 +3420,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordhongkongidcard"></a>Keyword_hong_kong_id_card
 
@@ -3495,7 +3495,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordindiapermanentaccountnumber"></a>Keyword_india_permanent_account_number
 
@@ -3532,7 +3532,7 @@ La somme de contrôle est correcte.
 <Entity id="1ca46b29-76f5-4f46-9383-cfa15e91048f" recommendedConfidence="85" patternsProximity="300"> <Pattern confidenceLevel="85"> <IdMatch idRef="Func_india_aadhaar"/> <Match idRef="Keyword_india_aadhar"/> </Pattern> <Pattern confidenceLevel="75"> <IdMatch idRef="Func_india_aadhaar"/> </Pattern>
 </Entity>
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
    
 #### <a name="keywordindiaaadhar"></a>Keyword_india_aadhar
 - Aadhar
@@ -3584,7 +3584,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
    
 #### <a name="keywordindonesiaidcard"></a>Keyword_indonesia_id_card
 
@@ -3629,7 +3629,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 Aucun
 
@@ -3688,7 +3688,7 @@ Pour IPv6, le pourcentage de confiance d’une stratégie DLP ayant détecté c
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordipaddress"></a>Keyword_ipaddress
 
@@ -3726,7 +3726,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
       </Entity>
 ```
 
-Mots-clés
+Mots clés
 
 Tout terme du dictionnaire de mots clés Dictionary_icd_10_cm, qui est basé sur la [Classification internationale des maladies, dixième révision, modification clinique (ICD-10-cm)](https://go.microsoft.com/fwlink/?linkid=852604). Ce type recherche uniquement le terme, pas les codes d'assurance.
 
@@ -3758,7 +3758,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
       </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 Tout terme du dictionnaire de mots clés Dictionary_icd_9_cm, qui est basé sur la [Classification internationale des maladies, neuvième révision, modification clinique (ICD-9-cm)](https://go.microsoft.com/fwlink/?linkid=852605). Ce type recherche uniquement le terme, pas les codes d'assurance.
    
@@ -3816,7 +3816,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordirelandpps"></a>Keyword_ireland_pps
 
@@ -3872,7 +3872,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordisraelbankaccountnumber"></a>Keyword_israel_bank_account_number
 
@@ -3914,7 +3914,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordisraelnationalid"></a>Keyword_Israel_National_ID
 
@@ -3957,7 +3957,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyworditalydriverslicensenumber"></a>Keyword_italy_drivers_license_number
 
@@ -4016,7 +4016,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordjpbankaccount"></a>Keyword_jp_bank_account
 
@@ -4109,7 +4109,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordjpdriverslicensenumber"></a>Keyword_jp_drivers_license_number
 
@@ -4169,7 +4169,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordjppassport"></a>Keyword_jp_passport
 
@@ -4208,7 +4208,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordjpresidentregistrationnumber"></a>Keyword_jp_resident_registration_number
 
@@ -4267,7 +4267,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordjpsin"></a>Keyword_jp_sin
 
@@ -4310,7 +4310,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordjpresidencecardnumber"></a>Keyword_jp_residence_card_number
 
@@ -4356,7 +4356,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
    
 #### <a name="keywordmalaysiaidcardnumber"></a>Keyword_malaysia_id_card_number
 
@@ -4423,7 +4423,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordnetherlandsbsn"></a>Keyword_netherlands_bsn
 
@@ -4468,7 +4468,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-Mots-clés
+Mots clés
 
 Keyword_nz_terms
 
@@ -4517,7 +4517,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordnorwayidnumber"></a>Keyword_norway_id_number
 
@@ -4564,7 +4564,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
    
 #### <a name="keywordphilippinesid"></a>Keyword_philippines_id
 
@@ -4603,7 +4603,7 @@ La somme de contrôle est correcte.
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
@@ -4647,7 +4647,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordpeselidentificationnumber"></a>Keyword_pesel_identification_number
 
@@ -4687,7 +4687,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Version>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
@@ -4726,7 +4726,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordportugalcitizencard"></a>Keyword_portugal_citizen_card
 
@@ -4768,7 +4768,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordsaudiarabianationalid"></a>Keyword_saudi_arabia_national_id
 
@@ -4819,7 +4819,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
    
 #### <a name="keywordsingaporenric"></a>Keyword_singapore_nric
 
@@ -4868,7 +4868,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
    
 #### <a name="keywordsouthafricaidentificationnumber"></a>Keyword_south_africa_identification_number
 
@@ -4920,7 +4920,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
    
 #### <a name="keywordsouthkorearesidentnumber"></a>Keyword_south_korea_resident_number
 
@@ -4964,7 +4964,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 Aucun
 
@@ -5010,7 +5010,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="cepglobalfilter"></a>CEP_GlobalFilter
 
@@ -5077,7 +5077,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 Non
    
@@ -5116,7 +5116,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
    
 #### <a name="keywordswedenpassport"></a>Keyword_sweden_passport
 
@@ -5185,7 +5185,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
    
 #### <a name="keywordswift"></a>Keyword_swift
 
@@ -5255,7 +5255,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordtaiwanesenationalid"></a>Keyword_taiwanese_national_id
 
@@ -5309,7 +5309,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordtaiwanpassport"></a>Keyword_taiwan_passport
 
@@ -5354,7 +5354,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordtaiwanresidentcertificate"></a>Keyword_taiwan_resident_certificate
 
@@ -5408,7 +5408,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordthaicitizenid"></a>Keyword_Thai_Citizen_Id
 
@@ -5455,7 +5455,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordturkishnationalid"></a>Keyword_Turkish_National_Id
 
@@ -5500,7 +5500,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordukdriverslicense"></a>Keyword_uk_drivers_license
 
@@ -5552,7 +5552,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordukelectoral"></a>Keyword_uk_electoral
 
@@ -5605,7 +5605,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
    
 #### <a name="keyworduknhsnumber"></a>Keyword_uk_nhs_number
 
@@ -5687,7 +5687,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyworduknino"></a>Keyword_uk_nino
 
@@ -5733,7 +5733,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordpassport"></a>Keyword_passport
 
@@ -5786,7 +5786,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordusabankaccount"></a>Keyword_usa_Bank_Account
 
@@ -5863,7 +5863,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
     </Pattern>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordusdriverslicenseabbreviations"></a>Keyword_us_drivers_license_abbreviations
 
@@ -6036,7 +6036,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keyworditin"></a>Keyword_itin
 
@@ -6054,11 +6054,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keyworditincollaborative"></a>Keyword_itin_collaborative
 
-- License 
+- Licence 
 - LD 
 - DOB 
 - Birthdate 
-- Anniversaire 
+- Birthday 
 - Date of Birth 
    
 ## <a name="us-social-security-number-ssn"></a>Numéro de sécurité sociale (SSN) États-Unis
@@ -6131,7 +6131,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
     </Entity>
 ```
 
-### <a name="keywords"></a>Mots-clés
+### <a name="keywords"></a>Mots clés
 
 #### <a name="keywordssn"></a>Keyword_ssn
 

@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 367f25d3-10a0-4a91-bdae-70ebb7a79c98
 description: Définir des stratégies d'activité avec Office 365 Cloud App Security pour configurer des alertes à déclencher lorsque des activités spécifiques se produisent ou se produisent trop fréquemment. En configurant des stratégies pour déclencher des alertes, vous pouvez être informé et surveiller des activités spécifiques.
 ms.openlocfilehash: cfa58182ea35551ca3a3807c23e09c9f87c7be82
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242712"
 ---
 # <a name="activity-policies-and-alerts-in-office-365-cloud-app-security"></a>Stratégies d’activité et alertes pour Office 365 Cloud App Security
 

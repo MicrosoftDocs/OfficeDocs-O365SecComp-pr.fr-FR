@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: La fonctionnalité pièces jointes fiables permet de vérifier le temps de cliquer sur les pièces jointes des messages électroniques. Utilisez des pièces jointes fiables pour protéger votre organisation des fichiers malveillants envoyés ou reçus par courrier électronique.
 ms.openlocfilehash: 933a533a6deb52a41d1412e319c6fb6840046390
-ms.sourcegitcommit: 77e45ce4c9b992ec64420f90946bec6077fc73ad
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "31476822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32250964"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Pièces jointes sécurisées ATP Office 365
 
@@ -30,7 +30,7 @@ Les pièces jointes sécurisées ATP (ainsi que les [liens fiables ATP](atp-safe
   
 La protection contre l'ATP peut également être étendue aux fichiers dans SharePoint Online, OneDrive entreprise et Microsoft Teams. Pour en savoir plus, consultez la rubrique [Office 365 Advanced Threat Protection for SharePoint, OneDrive et Microsoft teams](atp-for-spo-odb-and-teams.md).
 
-## <a name="how-it-works"></a>Fonctionnement
+## <a name="how-it-works"></a>Mode de fonctionnement
 
 La fonctionnalité pièces jointes approuvées ATP vérifie les pièces jointes de courrier électronique pour les personnes de votre organisation. Lorsqu'une stratégie de pièces jointes approuvées ATP est en place et qu'une personne concernée par cette stratégie affiche son courrier électronique dans Office 365, ses pièces jointes sont vérifiées et les actions appropriées sont prises, en fonction des stratégies de pièces jointes approuvées ATP. En fonction de la définition de vos stratégies, les utilisateurs peuvent continuer à travailler sans jamais savoir qu'ils ont reçu des fichiers malveillants.
   

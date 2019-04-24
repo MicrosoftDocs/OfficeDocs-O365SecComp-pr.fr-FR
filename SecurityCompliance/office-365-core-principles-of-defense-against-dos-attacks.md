@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Utilisation des principes de base de l'absorption, de la détection et de l'atténuation dans sa défense contre les attaques par déni de service (DoS).
 ms.openlocfilehash: bbfffeaeb66fc83e80c274be9550a95dc8bd3f0d
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262926"
 ---
 # <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>Principes fondamentaux de défense contre les attaques par déni de service
 

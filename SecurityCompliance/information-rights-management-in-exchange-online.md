@@ -13,13 +13,13 @@ search.appverid:
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 description: "Les messageries électroniques sont souvent utilisées pour échanger des informations sensibles. Par exemple : rapports et états financiers, contrats juridiques, informations confidentielles sur des produits, comptes rendus et prévisions de ventes, données médicales relatives à des patients ou informations sur les clients et le personnel. Il s'en suit que les boîtes aux lettres deviennent vite des référentiels contenant de gros volumes d'informations potentiellement sensibles. C'est pourquoi, toute fuite d'informations peut constituer une véritable menace pour votre organisation."
 ms.openlocfilehash: aef3acaba6b0efe4550958ce1d98add371069648
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253982"
 ---
-# <a name="information-rights-management-in-exchange-online"></a>Gestion des droits relatifs à l'information (IRM) dans Exchange Online
+# <a name="information-rights-management-in-exchange-online"></a>Gestion des droits relatifs à l'information (IRM) dans Exchange Online
 
 Les messageries électroniques sont souvent utilisées pour échanger des informations sensibles. Par exemple : rapports et états financiers, contrats juridiques, informations confidentielles sur des produits, comptes rendus et prévisions de ventes, données médicales relatives à des patients ou informations sur les clients et le personnel. Il s'en suit que les boîtes aux lettres deviennent vite des référentiels contenant de gros volumes d'informations potentiellement sensibles. C'est pourquoi, toute fuite d'informations peut constituer une véritable menace pour votre organisation.
   

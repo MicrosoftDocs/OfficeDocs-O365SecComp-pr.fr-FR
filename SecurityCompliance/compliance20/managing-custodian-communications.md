@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 916691e1f2470ef9e9e54d9dfe06c5277a92ba53
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241251"
 ---
 # <a name="work-with-communications-in-advanced-ediscovery-preview"></a>Utiliser les communications dans Advanced eDiscovery (aperçu)
 
@@ -53,11 +53,11 @@ Les équipes juridiques peuvent contrôler et segmenter leur activité de cas à
 
 Pour créer et gérer des notifications de conservation légale, un utilisateur doit faire partie des groupes de rôles suivants:
 
-- **Gestionnaire eDiscovery** : les membres de ce groupe de rôles peuvent créer et gérer des cas eDiscovery. Ils peuvent ajouter et supprimer des membres, placer des dépositaires et des emplacements de contenu en conservation, gérer des notifications de conservation légale, créer et modifier des recherches de contenu associées à un cas, exporter les résultats d'une recherche de contenu et préparer des résultats de recherche pour analyse dans Advanced eDiscovery (aperçu). Il existe deux sous-groupes dans ce groupe de rôles. La différence entre ces sous-groupes est basée sur l'étendue.
+- **Gestionnaire eDiscovery** : les membres de ce groupe de rôles peuvent créer et gérer des cas eDiscovery. Ils peuvent ajouter et supprimer des membres, placer des dépositaires et des emplacements de contenu en conservation, gérer des notifications de conservation légale, créer et modifier des recherches de contenu associées à un cas, exporter les résultats d'une recherche de contenu et préparer des résultats de recherche pour analyse dans Advanced eDiscovery (aperçu). Il existe deux sous-groupes dans ce groupe de rôles. Ces sous-groupes ont différents rôles.
 
   - **Gestionnaire eDiscovery** : permet d'afficher et de gérer les cas eDiscovery qu'ils créent ou dont ils sont membres. Si un autre gestionnaire eDiscovery crée un cas mais n'ajoute pas de deuxième gestionnaire eDiscovery en tant que membre de ce dernier, le deuxième gestionnaire eDiscovery ne pourra pas afficher ou ouvrir le cas sur la page eDiscovery dans le centre de sécurité & Compliance Center. les gestionnaires eDiscovery peuvent également accéder à leurs incidents dans Advanced eDiscovery (aperçu) pour effectuer des tâches d'analyse.
 
-  - **administrateur eDiscovery** : peut effectuer toutes les tâches de gestion des dossiers qu'un gestionnaire eDiscovery peut effectuer. En outre, un administrateur de découverte électronique peut:
+  - **administrateur eDiscovery** : peut effectuer toutes les tâches de gestion des dossiers qu'un gestionnaire eDiscovery peut effectuer. De plus, un administrateur de découverte électronique peut :
     
     - Afficher tous les cas répertoriés sur la page Découverte électronique.
     - Gérez tous les cas dans l'organisation une fois qu'ils ont été ajoutés en tant que membre du cas.

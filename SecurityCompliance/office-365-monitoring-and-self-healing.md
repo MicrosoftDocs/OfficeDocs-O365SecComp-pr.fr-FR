@@ -3,23 +3,22 @@ title: Surveillance et autoRéparation d'Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Informations sur les fonctionnalités de surveillance et d'autoréparation d'Office 365.
-ms.openlocfilehash: 4878ca5889c9b893154e0e7b910cb17c4b36402c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6a7753fbd1e20c690c45b670240afa36baf9ffdb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262496"
 ---
 # <a name="office-365-monitoring-and-self-healing"></a>Surveillance et autoRéparation d'Office 365
 Étant donné l'ampleur d'Office 365, il serait impossible de maintenir les données client résistantes et sûres des programmes malveillants sans surveillance intégrée complète, alerte intelligente et auto-réparation rapide et fiable. La surveillance d'un ensemble de services à l'étendue d'Office 365 est très complexe. De nouvelles mentalités et méthodologies devaient être introduites, ainsi que de nouveaux ensembles de technologies qui devaient être créés pour fonctionner et gérer le service dans un environnement global connecté. Nous avons quitté l'approche de surveillance traditionnelle de la collecte de données et du filtrage pour créer des alertes à une approche basée sur l'analyse des données; prendre des signaux et renforcer la confiance de ces données, puis utiliser l'automatisation pour récupérer ou résoudre le problème. Cette approche permet de tirer le meilleur parti de l'équation de récupération, qui, à son tour, rend les opérations moins onéreuses, plus rapides et moins sujettes aux erreurs. 
@@ -35,16 +34,16 @@ En fonction de la combinaison de l'alerte d'échec et des alertes rouges, cette 
 En plus des fonctionnalités de réparation automatique, telles que la restauration d'une seule page, Exchange Online comprend plusieurs fonctionnalités qui prennent une approche de surveillance et d'auto-réparation qui se concentre sur la préservation de l'expérience de l'utilisateur final. Ces fonctionnalités incluent la *disponibilité gérée*, qui fournit des actions de surveillance et de récupération intégrées, et autoseed, qui restaure automatiquement la redondance des bases de données après une défaillance du disque. 
 
 ## <a name="managed-availability"></a>Disponibilité gérée 
-La disponibilité gérée offre une solution native de vérification et de récupération de l'intégrité qui surveille et protège l'expérience de l'utilisateur final via des actions orientées sur la récupération. La disponibilité gérée est l'intégration des actions de surveillance et de récupération intégrées à la plateforme de haute disponibilité Exchange. Elle est conçue pour détecter et récupérer les problèmes dès qu'ils se produisent et qui sont découverts par le système. À la différence des solutions et techniques de surveillance externe précédentes pour Exchange, la disponibilité gérée ne tente pas d'identifier ni de communiquer la cause première d'un problème. Au lieu de cela, il est axé sur des aspects de récupération qui concernent trois domaines clés de l'expérience de l'utilisateur final: 
+La disponibilité gérée offre une solution native de vérification et de récupération de l'intégrité qui surveille et protège l'expérience de l'utilisateur final via des actions orientées sur la récupération. La disponibilité gérée est l'intégration des actions de surveillance et de récupération intégrées à la plateforme de haute disponibilité Exchange. Elle est conçue pour détecter des problèmes et procéder à une récupération dès qu'ils apparaissent ou sont découverts par le système. À la différence des techniques et solutions externes de surveillance précédentes pour Exchange, la disponibilité gérée ne tente pas d'identifier ni de communiquer la cause première d'un incident. Au lieu de cela, il est axé sur des aspects de récupération qui concernent trois domaines clés de l'expérience de l'utilisateur final: 
 - **Disponibilité** : les utilisateurs peuvent-ils accéder au service? 
 - **Latence** -comment est l'expérience pour les utilisateurs? 
 - **Erreurs** -les utilisateurs peuvent-ils faire ce qu'ils veulent? 
 
-La disponibilité gérée est une fonctionnalité interne qui s'exécute sur chaque serveur Office 365 exécutant Exchange Online. Il interroge et analyse des centaines de mesures de l'état de santé toutes les secondes. Si un problème se trouve incorrect, la plupart du temps, il est résolu automatiquement. Toutefois, il y aura toujours des problèmes selon lesquels la disponibilité gérée ne sera pas en mesure de réparer de lui-même. Dans ce cas, la disponibilité gérée transmet le problème à une équipe de support Office 365 par le biais de la journalisation des événements. 
+La disponibilité gérée est une fonctionnalité interne qui s'exécute sur chaque serveur Office 365 exécutant Exchange Online. Elle interroge et analyse des centaines de paramètres d'intégrité par seconde. Si un problème se trouve incorrect, la plupart du temps, il est résolu automatiquement. Toutefois, il y aura toujours des problèmes selon lesquels la disponibilité gérée ne sera pas en mesure de réparer de lui-même. Dans ce cas, la disponibilité gérée transmet le problème à une équipe de support Office 365 par le biais de la journalisation des événements. 
 
 ## <a name="autoreseed"></a>AutoReseed 
 Les serveurs Exchange Online sont déployés dans une configuration qui stocke plusieurs bases de données et leurs flux de journal sur le même disque non RAID. Cette configuration est souvent appelée *simplement un paquet de disques* (JBOD) car aucun mécanisme de redondance de stockage, tel qu'un RAID, n'est utilisé pour dupliquer les données sur le disque. Lorsqu'un disque tombe en panne dans un environnement JBOD, les données sur ce disque sont perdues. 
 
 Étant donné la taille d'Exchange Online et le fait que le déploiement dans ce sont des millions de disques, les défaillances de lecteur de disque sont une occurrence normale dans Exchange Online. En fait, plus de 100 échouent tous les jours. Lorsqu'un disque tombe en panne dans un déploiement d'entreprise local, un administrateur doit manuellement remplacer le disque défaillant et restaurer les données affectées. Dans un déploiement Cloud, la taille d'Office 365, avec des opérateurs (administrateurs Cloud) qui remplacent manuellement les disques n'est ni pratique ni économiquement réalisable. 
 
-Le réAmorçage automatique **, ou autoseed, est une fonctionnalité qui remplace l'action normalement pilotée par un opérateur en réponse à une défaillance du disque, à un événement d'endommagement de la base de données ou à un autre problème nécessitant la réamorçage d'une copie de base de données. AutoSeed est conçu pour restaurer automatiquement la redondance des bases de données après une défaillance du disque à l'aide de disques de rechange qui ont été configurés sur le système. En cas de défaillance du disque, les copies de base de données stockées sur ce disque sont automatiquement réamorcées sur un disque de rechange préconfiguré sur le serveur, ce qui permet de restaurer la redondance. 
+Le réAmorçage automatique **, ou autoseed, est une fonctionnalité qui remplace l'action normalement pilotée par un opérateur en réponse à une défaillance du disque, à un événement d'endommagement de la base de données ou à un autre problème nécessitant la réamorçage d'une copie de base de données. La fonctionnalité AutoReseed permet de restaurer automatiquement la redondance de base de données après une défaillance de disque par le biais de disques de rechange qui ont été configurés sur le système. En cas de défaillance du disque, les copies de base de données stockées sur ce disque sont automatiquement réamorcées sur un disque de rechange préconfiguré sur le serveur, ce qui permet de restaurer la redondance. 

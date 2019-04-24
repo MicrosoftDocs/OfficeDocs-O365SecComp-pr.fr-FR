@@ -13,11 +13,11 @@ ms.collection:
 - M365-security-compliance
 description: Le chiffrement de messages Office 365 permet aux utilisateurs de messagerie d'envoyer des messages chiffrés à des personnes faisant partie ou non de leur organisation. En tant qu'administrateur, vous pouvez activer le chiffrement de messages Office 365 en créant des règles de flux de messagerie (également appelées règles de transport) qui définissent les conditions de chiffrement.
 ms.openlocfilehash: e15a433f7f9dacdec870faff11a43e4699bef822
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256682"
 ---
 # <a name="enable-message-encryption-and-decryption-in-office-365"></a>Activer le chiffrement et le déchiffrement des messages dans Office 365
 

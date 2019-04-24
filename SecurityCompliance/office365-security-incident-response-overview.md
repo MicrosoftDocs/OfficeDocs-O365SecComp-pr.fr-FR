@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Cette solution vous indique les attaques informatiques les plus courantes pouvant ressembler à Office 365 et comment y répondre.
 ms.openlocfilehash: 13e57d914138edc44d0001781459852fba994f61
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30656020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262356"
 ---
 # <a name="office-365-security-incident-response"></a>Réponse aux incidents de sécurité Office 365
 
@@ -47,11 +47,11 @@ Consultez cet article tous les mois à mesure que d'autres articles seront ajout
 
 - [Réponse à un compte de messagerie compromis dans Office 365](responding-to-a-compromised-email-account.md)
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Sécuriser Office 365 comme un Cybersecurity Pro
-Votre abonnement Office 365 est fourni avec un ensemble de fonctionnalités de sécurité puissantes que vous pouvez utiliser pour protéger vos données et vos utilisateurs.  Utilisez la feuille de [route de sécurité Office 365: les principales priorités pour les 30 jours, 90 jours et au-delà](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) pour implémenter les meilleures pratiques recommandées par Microsoft pour la sécurisation de votre client Office 365.
-- Tâches à accomplir dans les 30 premiers jours.  Ceux-ci ont des effets immédiats et ont un faible impact sur vos utilisateurs.
-- Tâches à effectuer dans les 90 jours. La planification et l'implémentation de ces deux éléments prennent un peu plus de temps, mais améliorent grandement votre position de sécurité
-- Au-delà de 90 jours. Ces améliorations s'appuient sur vos premiers 90 jours de travail.
+## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Sécuriser Office 365 comme un pro de la cyber-sécurité
+Votre abonnement Office 365 inclut un ensemble puissant de fonctionnalités de sécurité que vous pouvez utiliser pour protéger vos données et vos utilisateurs.  Utilisez la [Feuille de route pour sécuriser Office 365 : principales priorités pour les 30 premiers jours, 90 premiers jours et au-delà](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352), pour implémenter les meilleures pratiques recommandées par Microsoft pour sécuriser votre client Office 365.
+- Tâches à effectuer lors des 30 premiers jours.  Elle ont un effet immédiat et n’ont qu’un faible impact négatif sur vos utilisateurs.
+- Tâches à accomplir dans les 90 premiers jours. La planification et l'implémentation de ces deux éléments prennent un peu plus de temps, mais améliorent grandement votre position de sécurité
+- Au-delà de 90 jours. Ces améliorations sont à mettre en place pendant les 90 premiers jours.
 
 
 

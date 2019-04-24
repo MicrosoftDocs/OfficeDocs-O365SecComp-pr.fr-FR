@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilisez l'outil de recherche de contenu dans le centre de conformité & pour rechercher et exporter des données de conversation MicrosoftTeams (appelées conversations 1xN) pour les utilisateurs locaux dans un déploiement hybride Exchange.
 ms.openlocfilehash: 0c68023fdd4e1c9e06596937247270861cdbd2b3
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261000"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Recherche de boîtes aux lettres en nuage pour les utilisateurs locaux dans Office 365
 
@@ -36,7 +36,7 @@ Voici les conditions requises et la limitation pour la configuration et la reche
     
  **Remarque:** Les conversations de canal teams sont toujours stockées dans la boîte aux lettres en nuage qui est associée à l'équipe. Cela signifie que vous pouvez utiliser la recherche de contenu pour rechercher des conversations de canal sans avoir besoin de classer une demande de support. Pour plus d'informations sur la recherche de conversations de canal dans Teams, consultez la rubrique [recherche de groupes Microsoft teams et Office 365](content-search.md#searching-microsoft-teams-and-office-365-groups).
   
-## <a name="how-it-works"></a>Fonctionnement
+## <a name="how-it-works"></a>Mode de fonctionnement
 
 Si un utilisateur à extension de Microsoft teams dispose d'une boîte aux lettres locale et que son compte d'utilisateur/son identité a été synchronisé dans le nuage, Microsoft crée une boîte aux lettres en nuage pour stocker les données de conversation des équipes 1xN. Une fois que les données de conversation de teams sont stockées dans la boîte aux lettres en nuage, elles sont indexées pour la recherche. Cela vous permet d'utiliser la recherche de contenu (et les recherches associées aux cas eDiscovery) pour rechercher, prévisualiser et exporter des données de conversation de teams pour des utilisateurs locaux. Vous pouvez également utiliser ** \*** des applets de commande ComplianceSearch dans le centre de conformité & Compliance Center pour rechercher des données de conversation teams pour les utilisateurs locaux. 
   

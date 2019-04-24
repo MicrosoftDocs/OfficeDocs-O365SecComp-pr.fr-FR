@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 15fa4545-28b4-4dd4-bf85-88e0926bd5fc
 description: "Avec la sécurité des applications Cloud d'Office 365, vous pouvez voir ce qui se passe dans votre environnement Office 365 en consultant et en examinant les activités et les comptes. "
 ms.openlocfilehash: 0cc3860d953b40b0b0c247af6fb2b157d1abb235
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254830"
 ---
 # <a name="investigate-an-activity-in-office-365-cloud-app-security"></a>Examiner une activité concernant la sécurité des applications cloud Office 365
   

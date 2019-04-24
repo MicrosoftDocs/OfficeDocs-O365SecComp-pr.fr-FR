@@ -1,5 +1,5 @@
 ---
-title: Définir l’option Ignorer le texte pour l’analyse dans Office 365 Advanced eDiscovery
+title: Définir l'option ignorer le texte pour l'analyse dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
 description: "Découvrez comment définir la règle pour ignorer le texte spécifique lors de l'utilisation des modules Analyze et process dans Office 365 Advanced eDiscovery.  "
 ms.openlocfilehash: 3a4c1d17a9a56d3018509a8dcfd6b49abb951676
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260820"
 ---
-# <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>Définir l’option Ignorer le texte pour l’analyse dans Office 365 Advanced eDiscovery
+# <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>Définir l'option ignorer le texte pour l'analyse dans Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -37,7 +37,7 @@ Par exemple, si le contenu de texte est: «DAVE BOB ALICE CAROL veille», Voici 
   
 ||||
 |:-----|:-----|:-----|
-|**Ignorer les entrées de texte** <br/> |**==\>** <br/> |**Résultats** <br/> |
+|**Ignorer les entrées de texte** <br/> |**==\>** <br/> |**Results** <br/> |
 |«ALICE», «BOB CAROL»  <br/> |==\>  <br/> |«DAVID RÉVEILLON»  <br/> |
 |«ALICE», «BOB ALICE CAROL»  <br/> |==\>  <br/> |«DAVE BOB CAROL VEILLE»  <br/> |
    

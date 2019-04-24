@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: Votre organisation peut être amenée à conserver des documents pendant une période de temps en raison de la conformité, de la légalité ou d'autres exigences professionnelles. Toutefois, si votre organisation conserve les documents plus longtemps que nécessaire, vous risquez de créer des risques légaux inutiles. Avec une stratégie de suppression de documents, vous pouvez réduire de manière proactive les risques en supprimant des documents dans un site après une période de temps spécifique (par exemple, vous pouvez supprimer des documents dans les sites OneDrive entreprise de l'utilisateur cinq ans après la création des documents).
 ms.openlocfilehash: 2a6b1c29986020ebd63f6ddb960f0d28ba348b3e
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257572"
 ---
 # <a name="overview-of-document-deletion-policies"></a>Vue d’ensemble des stratégies de suppression de documents
 

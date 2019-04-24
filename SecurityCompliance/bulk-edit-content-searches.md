@@ -12,11 +12,11 @@ search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: Utilisez l'éditeur de recherche en bloc dans le centre de sécurité et de conformité dans Office 365 ou Microsoft 365 pour modifier rapidement les emplacements de requête et de contenu pour une ou plusieurs recherches de contenu.
 ms.openlocfilehash: 3a484ad689b1c638e0e14ed1643edea0f2f56c09
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243841"
 ---
 # <a name="bulk-edit-content-searches"></a>Modifier en bloc les recherches de contenu
 

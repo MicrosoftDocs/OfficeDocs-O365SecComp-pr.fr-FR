@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: 63a0b501-ba59-44b7-a35c-999f3be057b2
 ms.collection:
 - M365-security-compliance
-description: Une stratégie de gestion des informations est un ensemble de règles pour un type de contenu. Les stratégies de gestion des informations permettent aux organisations de contrôler et de suivre des éléments tels que la durée de conservation du contenu ou les actions que les utilisateurs peuvent effectuer avec ce contenu. Les stratégies de gestion des informations peuvent aider les organisations à se conformer aux réglementations juridiques ou gouvernementales, ou elles peuvent simplement appliquer les processus d'entreprise internes.
+description: Une stratégie de gestion des informations constitue un ensemble de règles pour un type de contenu. Les stratégies de gestion des informations permettent aux organisations de contrôler et de suivre des événements tels que la durée de rétention des contenus ou les actions que les utilisateurs sont autorisés à effectuer sur ces contenus. Les stratégies de gestion des informations peuvent aider les organisations à se conformer aux réglementations légales ou administratives, ou elles peuvent simplement appliquer les processus d’entreprise internes.
 ms.openlocfilehash: 23662c555dfc19b2fc83b0364d93724e922c7c97
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254232"
 ---
 # <a name="introduction-to-information-management-policies"></a>Introduction aux stratégies de gestion des informations
 
-Une stratégie de gestion des informations est un ensemble de règles pour un type de contenu. Les stratégies de gestion des informations permettent aux organisations de contrôler et de suivre des éléments tels que la durée de conservation du contenu ou les actions que les utilisateurs peuvent effectuer avec ce contenu. Les stratégies de gestion des informations peuvent aider les organisations à se conformer aux réglementations juridiques ou gouvernementales, ou elles peuvent simplement appliquer les processus d'entreprise internes. 
+Une stratégie de gestion des informations constitue un ensemble de règles pour un type de contenu. Les stratégies de gestion des informations permettent aux organisations de contrôler et de suivre des événements tels que la durée de rétention des contenus ou les actions que les utilisateurs sont autorisés à effectuer sur ces contenus. Les stratégies de gestion des informations peuvent aider les organisations à se conformer aux réglementations légales ou administratives, ou elles peuvent simplement appliquer les processus d’entreprise internes. 
   
 Par exemple, une organisation qui doit suivre des réglementations gouvernementales exigeant qu'elle démontre les «contrôles adéquats» de ses États financiers pourrait créer une ou plusieurs stratégies de gestion des informations qui auditent des actions spécifiques dans la création et processus d'approbation de tous les documents liés aux profils financiers.
   
@@ -43,12 +43,12 @@ La fonctionnalité de stratégie d'audit aide les organisations à analyser le m
   
 La fonctionnalité de stratégie d'expiration permet aux organisations de supprimer ou de supprimer du contenu obsolète de leurs sites de façon cohérente et facile à suivre. Cela vous permet de gérer à la fois les coûts et les risques associés à la conservation du contenu obsolète. Vous pouvez configurer une stratégie d'expiration pour spécifier que certains types de contenu expirent à une date donnée ou pendant un laps de temps après la création ou la dernière modification du document.
   
-Les organisations peuvent également créer et déployer des fonctionnalités de stratégie personnalisées pour répondre à des besoins spécifiques. Par exemple, une organisation de fabrication peut souhaiter définir une stratégie de gestion des informations pour tous les projets de spécifications de conception de produits qui empêche les utilisateurs d'imprimer des copies de ces documents sur des imprimantes non sécurisées. Pour définir ce type de stratégie de gestion des informations, vous pouvez créer et déployer une fonctionnalité de stratégie de restriction d'impression pouvant être ajoutée à la stratégie de gestion des informations pertinente pour le type de contenu spécification de conception de produit.
+Les organisations peuvent également créer et déployer des fonctionnalités de stratégie personnalisées afin de répondre à des besoins spécifiques. Par exemple, une organisation de fabrication peut souhaiter définir une stratégie de gestion des informations pour tous les projets de spécifications de conception de produits qui empêche les utilisateurs d'imprimer des copies de ces documents sur des imprimantes non sécurisées. Pour définir ce type de stratégie de gestion des informations, vous pouvez créer et déployer une fonctionnalité de stratégie de restriction d'impression pouvant être ajoutée à la stratégie de gestion des informations pertinente pour le type de contenu spécification de conception de produit.
   
 ## <a name="locations-to-use-an-information-management-policy"></a>Emplacements d'utilisation d'une stratégie de gestion des informations
 <a name="__toc340213528"> </a>
 
-Pour implémenter une stratégie de gestion des informations, vous devez l'ajouter à une liste, une bibliothèque ou un type de contenu dans un site. L'emplacement où vous créez ou ajoutez une stratégie de gestion des informations influe sur l'étendue de la stratégie ou sur son utilisation. Vous pouvez:
+Pour implémenter une stratégie de gestion des informations, vous devez l'ajouter à une liste, une bibliothèque ou un type de contenu dans un site. L'emplacement où vous créez ou ajoutez une stratégie de gestion des informations influe sur l'étendue de la stratégie ou sur son utilisation. Vous pouvez :
   
  **Créer une stratégie de collection de sites, puis ajouter cette stratégie à un type de contenu, une liste ou une bibliothèque** Vous pouvez créer une stratégie de collection de sites dans la liste stratégies du site de niveau supérieur d'une collection de sites. Une fois que vous avez créé une stratégie de collection de sites, vous pouvez l'exporter afin que les administrateurs d'autres collections de sites puissent l'importer dans leur liste de stratégies. La création d'une stratégie de collection de sites exportable vous permet de normaliser les stratégies de gestion des informations sur les différents sites de votre organisation. 
   

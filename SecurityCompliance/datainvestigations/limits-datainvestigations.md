@@ -14,38 +14,46 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 2e76203fa8f57f9e228919ec6abb1144f3cb48c5
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: a6240692916d1b38ccbdae272fcd7a9b4292b376
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258732"
 ---
-# <a name="data-investigations-limits"></a>Limites pour les enquêtes de données
+# <a name="data-investigations-preview-limits"></a>Limites des enquêtes de données (aperçu)
 
-Cet article décrit les limites dans les enquêtes de données.
+Cet article décrit les limites dans les enquêtes de données (aperçu).
 
-## <a name="investigatino-limits"></a>Limites Investigatino
+## <a name="investigation-limits"></a>Limites d'enquête
 
-## <a name="indexing-limits"></a>Limites d'indexation
-
-## <a name="search-limits"></a>Limites de la recherche
-
-## <a name="incident-limits"></a>Limites des incidents
-
-Le tableau suivant répertorie les limites pour les incidents dans les enquêtes de données.  Tous les éléments qui dépassent le nombre maximal de fichiers sont affichés en tant qu'erreurs de traitement.
+Le tableau suivant répertorie les limites pour les recherches dans les enquêtes de données (aperçu). 
     
   |**Description de la limite**|**Limite**|
   |:-----|:-----|
-  |Nombre maximal d'incidents  <br/> |50  <br/> |
-  |Nombre total de documents pouvant être ingérés dans un incident (pour tous les incidents de l'enquête)  <br/> |1 million  <br/> |
-  |Taille totale des fichiers par charge  <br/> |100 Go  <br/> |
-  |Taille maximale d'un fichier unique   <br/> |100 Mo  <br/> |
-  |Nombre maximal de caractères extraits à partir d'un seul fichier  <br/> |10 millions  <br/> |
-  |Profondeur des éléments incorporés dans un document  <br/> |25  <br/> |
-  
+  |Nombre maximal d'analyses.  <br/> |50  <br/> |
+  |Nombre total de documents pouvant être ajoutés à une enquête (pour tous les ensembles de preuves de l'enquête).  <br/> |1 million  <br/> |
+  |Taille totale du fichier par charge.  <br/> |100 Go  <br/> |
+  |Taille maximale d'un fichier unique.   <br/> |100 Mo <sup></sup> <br/> |
+  |Nombre maximal de caractères extraits d'un fichier unique.  <br/> |10 millions <sup>1</sup> <br/> |
+  |Profondeur des éléments incorporés dans un seul fichier.  <br/> |25 <sup>1</sup> <br/> |
+|||
+> [!NOTE]
+><sup>1</sup> tous les éléments qui dépassent une limite de fichier unique apparaissent comme des erreurs de traitement.
+
+## <a name="indexing-limits"></a>Limites d'indexation
+
+Contenu à paraître prochainement.
+
+## <a name="search-limits"></a>Limites de la recherche
+
+Contenu à paraître prochainement.
 
 ## <a name="export-limits"></a>Limites d'exportation
 
+Contenu à paraître prochainement.
+
 ## <a name="download-limits"></a>Limites de téléchargement
+
+Contenu à paraître prochainement.
 

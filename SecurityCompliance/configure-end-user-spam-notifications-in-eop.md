@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Vous pouvez configurer les notifications de courrier indésirable à l'utilisateur final pour la stratégie de filtrage de contenu par défaut à l'échelle de l'entreprise, ou pour les stratégies de filtrage de contenu personnalisées appliquées à des domaines.
 ms.openlocfilehash: 09ddd7fd2800e4038e354e53da53320184da3e77
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259622"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>Configurer des notifications de courrier indésirable pour l’utilisateur final dans EOP
   
@@ -43,7 +43,7 @@ Après la réception d'un message de notification, les utilisateurs finaux peuve
 
 **Bloquer** si vous souhaitez qu'Office 365 ajoute l'expéditeur à votre liste des expéditeurs bloqués.
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 <a name="sectionSection0"> </a>
 
 Durée d'exécution estimée : 5 minutes

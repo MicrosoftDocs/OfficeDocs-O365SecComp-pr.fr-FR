@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Obtenez une vue d'ensemble des pages d'avertissement qui peuvent s'afficher lorsque la protection avancée contre les menaces d'Office 365 est au travail.
 ms.openlocfilehash: e90951a010ff5de4d3b292259e9c4596b6cc8e89
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32251264"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Pages d'avertissement des liens approuvés Office 365 ATP
 

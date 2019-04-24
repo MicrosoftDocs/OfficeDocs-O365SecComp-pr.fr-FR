@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: c2957c88217bce4c9a34f8d3f9a9e291f1223cc9
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30294967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241241"
 ---
 # <a name="use-the-communications-editor"></a>Utiliser l’éditeur de communications
 
@@ -39,7 +39,7 @@ Vous pouvez utiliser les champs de fusion de messagerie en sélectionnant les ic
 
 | Nom du champ                  | Détails du champ | 
 | :------------------- | :------------------- |
-| Nom d'affichage  | Prénom et nom du dépositaire. | 
+| Nom complet  | Prénom et nom du dépositaire. | 
 | Lien d'accusé de réception | Lien personnalisé permettant d'enregistrer l'accusé de réception de chaque dépositaire.|                 |
 | Lien du portail     | Un lien personnalisé pour le portail de conformité du dépositaire.|                |
 | Officier émetteur                   | Adresse de messagerie du responsable émetteur spécifié.|                   |

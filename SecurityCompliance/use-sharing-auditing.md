@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: "Le partage est une activité essentielle dans SharePoint Online et OneDrive entreprise. Les administrateurs peuvent désormais utiliser l'audit de partage dans le journal d'audit Office 365 pour déterminer le mode d'utilisation du partage dans leur organisation. "
 ms.openlocfilehash: 08b511acdf74edac5b2d595d1b60bdd84d630918
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263390"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Audit de partage pour trouver les ressources partagées avec des utilisateurs externes
 

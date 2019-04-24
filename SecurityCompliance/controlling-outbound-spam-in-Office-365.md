@@ -1,5 +1,5 @@
 ---
-title: Contrôle du courrier indésirable sortant dans Office 365
+title: Contrôler le courrier indésirable sortant dans Office 365
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -15,24 +15,24 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Si votre organisation envoie un grand nombre de messages marqués comme courrier indésirable, vous pouvez être bloqué pour l'envoi de messages électroniques avec Office 365. Lisez cet article pour en savoir plus sur les raisons de cette situation et sur ce que vous pouvez faire.
-ms.openlocfilehash: 476e1ddff73493881708e050fb7834e6bd6b272a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 9261c61d472554ae7d2f3d4134514d23b600ee87
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258212"
 ---
-# <a name="controlling-outbound-spam-in-office-365"></a>Contrôle du courrier indésirable sortant dans Office 365
+# <a name="control-outbound-spam-in-office-365"></a>Contrôler le courrier indésirable sortant dans Office 365
 
 Nous prévoyons la gestion du courrier indésirable sortant, car le nôtre est un service partagé.  Il existe de nombreux clients derrière un pool de ressources partagé, où si un client envoie du courrier indésirable sortant, il peut dégrader la réputation IP sortante du service et affecte la remise des messages électroniques pour d'autres clients. Il est incertain que le client A, si le client B spams et diverses listes de blocage IP tierces, répertorient l'adresse IP qu'il utilise.
 
 ## <a name="what-admins-can-do-to-control-outbound-spam"></a>Ce que les administrateurs peuvent faire pour contrôler le courrier indésirable sortant
 
-- **Activer les notifications lorsqu'un compte envoie du courrier indésirable ou est arrêté**. Les administrateurs peuvent obtenir envoyé chaque fois qu'un message est marqué comme courrier indésirable sortant et qu'il est envoyé par le biais du pool à risque élevé. En surveillant cette boîte aux lettres, un administrateur peut détecter s'il dispose d'un compte compromis dans son réseau ou si le filtre de courrier indésirable marque par erreur son courrier électronique comme courrier indésirable.  Vous trouverez plus d'informations sur la configuration de la stratégie de courrier indésirable sortant [ici](configure-the-outbound-spam-policy.md).
+- **Activer les notifications lorsqu'un compte envoie du courrier indésirable ou est arrêté**. Les administrateurs peuvent obtenir envoyé chaque fois qu'un message est marqué comme courrier indésirable sortant et qu'il est envoyé par le biais du pool à risque élevé. En surveillant cette boîte aux lettres, un administrateur peut détecter s'il dispose d'un compte compromis dans son réseau ou si le filtre de courrier indésirable marque par erreur son courrier électronique comme courrier indésirable. Vous trouverez plus d'informations sur la configuration de la stratégie de courrier indésirable sortant [ici](configure-the-outbound-spam-policy.md).
  
 - **Passez en revue manuellement les plaintes de courrier indésirable des fournisseurs de messagerie**tiers. De nombreux services de messagerie tiers comme Outlook.com, Yahoo et AOL fournissent une boucle de commentaires où, si un utilisateur de son service marque un e-mail de notre service comme courrier indésirable, le message est empaqueté et est renvoyé à nous pour révision. Pour en savoir plus sur la prise en charge de l'expéditeur pour Outlook.com, cliquez [ici](https://sendersupport.olc.protection.outlook.com/pm/services.aspx).
 
-## <a name="what-eop-does-to-control-outbound-spam"></a>Ce que EOP fait pour contrôler le courrier indésirable sortant 
+## <a name="what-eop-does-to-control-outbound-spam"></a>Ce que EOP fait pour contrôler le courrier indésirable sortant
 
 1. **Répartition du trafic sortant dans des pools de systèmes d'adresses IP distincts**. Chaque message envoyé par des clients sortant via le service est analysé pour rechercher des courriers indésirables. Si le message est un courrier indésirable, il est routé via le pool de remise à haut risque. Ce pool IP contient des notifications d'état de non-remise et du courrier indésirable. La remise au destinataire concerné n'est pas garantie car un grand nombre de tiers n'accepteront pas de courrier électronique, car la qualité du courrier électronique qu'il émet.<br/><br/>Le fractionnement du trafic garantit ainsi que le courrier électronique de qualité inférieure (courrier indésirable, rétrodiffusion NDR) ne fait pas descendre la réputation des pools de messages sortants normaux. Le pool à risque élevé a généralement une réputation faible pour de nombreux récepteurs sur Internet, bien que ce ne soit pas universel. 
 
@@ -55,9 +55,9 @@ Il est difficile de trouver un équilibre entre les clients qui souhaitent envoy
 
 Le groupe de travail de messagerie, mobile, anti-abus de programmes malveillants (MAAWG) publie sa liste d'appartenance [ici](http://www.maawg.org/about/roster). Plusieurs fournisseurs de courrier en masse figurent dans la liste et sont appelés citoyens Internet responsables. 
   
-## <a name="for-more-information"></a>Pour plus d’informations
+## <a name="for-more-information"></a>Pour plus d'informations
 
-[Exemple de notification lorsqu'un expéditeur est bloqué en raison de l'envoi de courrier indésirable sortant](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)
+[Exemple de notification lorsqu'un expéditeur est bloqué en cas d'envoi de courrier indésirable sortant](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)
 
 [Protection contre le courrier indésirable pour Office 365](anti-spam-protection.md)
 

@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 description: "Si vous souhaitez utiliser les listes d'expéditeurs autorisés, vous devez savoir qu'Exchange Online Protection (EOP) et Outlook gèrent différemment le traitement. Le service respecte les expéditeurs et les domaines autorisés en inspectant l'adresse RFC 5321.MailFrom, tandis qu'Outlook ajoute l'adresse RFC 5322.From à la liste des expéditeurs autorisés d'un utilisateur. (Remarque : Le service inspecte les adresses 5321.MailFrom et 5322.MailFrom pour les expéditeurs et les domaines bloqués.)"
 ms.openlocfilehash: 006c2b9520f1e1f71f5ec745baaf84f906f31eb4
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259652"
 ---
-# <a name="manage-safe-sender-lists-for-bulk-mailers"></a>Gérer les listes d'expéditeurs autorisés pour les vers de publipostage en bloc
+# <a name="manage-safe-sender-lists-for-bulk-mailers"></a>Gérer les listes d’expéditeurs autorisés pour les vers de publipostage en bloc
 
 Si vous souhaitez utiliser les listes d'expéditeurs autorisés, vous devez savoir qu'Exchange Online Protection (EOP) et Outlook gèrent différemment le traitement. Le service Office 365 respecte les expéditeurs et les domaines approuvés en inspectant l'adresse RFC 5321. MailFrom et l'adresse RFC 5322. from, tandis qu'Outlook ajoute l'adresse RFC 5322. from à la liste des expéditeurs approuvés d'un utilisateur. (Remarque : Le service inspecte les adresses 5321.MailFrom et 5322.MailFrom pour les expéditeurs et les domaines bloqués.)
   

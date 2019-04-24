@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: Cet article décrit l'utilisation de l'outil nouvelles enquêtes de données (aperçu) dans le centre de sécurité & Compliance Center pour gérer un incident de fuite de données.
 ms.openlocfilehash: 93a98a4e01df011b789ba2453734f093ad8c19d6
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258822"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Gérer un incident de fuite de données dans Microsoft 365
 
@@ -111,7 +111,7 @@ Dans l'enquête, accédez à l'onglet **preuve** et cliquez sur l'ensemble de pr
 
 Pour regrouper des documents et obtenir de l'aide supplémentaire pour votre révision, cliquez sur **gérer les preuves**. Dans la vignette **analyse** , cliquez sur **analyser**. Cette opération exécute des analyses avancées, telles que la détection des doublons, le Threading de messagerie électronique et l'analyse de thème. Pour plus d'informations, consultez les rubriques suivantes :
 
-- [Exécuter des analyses pour une analyse plus rapide](run-analytics-to-investigate-faster.md)
+- [Exécuter les données d’analyse pour investiguer plus rapidement](run-analytics-to-investigate-faster.md)
 - [Détecter des quasi-duplicatas](near-duplicates.md)
 - [Threading de messagerie](email-threading.md)
 - [Thèmes](themes.md)

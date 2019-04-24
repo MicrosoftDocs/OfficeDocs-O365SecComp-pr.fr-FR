@@ -11,13 +11,13 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: La définition des utilisateurs de messagerie constitue une partie importante de la gestion du service Exchange Online Protection (EOP).
 ms.openlocfilehash: 2e266d4dd31c3bd614c1b4f8afa17ca747890385
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256452"
 ---
-# <a name="manage-mail-users-in-eop"></a>Gestion des utilisateurs de messagerie dans EOP
+# <a name="manage-mail-users-in-eop"></a>Gestion des utilisateurs de messagerie dans EOP
 
 La définition des utilisateurs de messagerie constitue une partie importante de la gestion du service Exchange Online Protection (EOP). Vous pouvez gérer les utilisateurs de différentes manières dans EOP.
   

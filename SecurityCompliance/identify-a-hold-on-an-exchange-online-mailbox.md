@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Découvrez comment identifier les différents types de conservation pouvant être placés sur une boîte aux lettres Office 365. Ces types de conservation incluent les conservations pour litige, la découverte électronique et les stratégies de rétention d'Office 365. Vous pouvez également déterminer si un utilisateur a été exclu d'une stratégie de rétention à l'échelle de l'organisation.
 ms.openlocfilehash: e0c1c54cedfc7494233f12f043bb6d033576eca8
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253883"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online
 
@@ -53,7 +53,7 @@ Vous pouvez exécuter les deux cmdlets suivantes dans Exchange Online PowerShell
 
 - **Get-OrganizationConfig** -Utilisez cette cmdlet pour obtenir les GUID pour les stratégies de rétention à l'échelle de l'organisation.
 
-Pour vous connecter à Exchange Online PowerShell, consultez la rubrique [connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
 ### <a name="get-mailbox"></a>Get-Mailbox
 

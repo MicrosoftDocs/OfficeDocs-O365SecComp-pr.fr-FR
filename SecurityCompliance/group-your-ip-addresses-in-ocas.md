@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: b5e1471c-1ad6-4bc5-9e75-ce791aee283c
 description: Pour identifier facilement les ensembles d'adresses IP que vous utiliserez dans Office 365 Cloud App Security, comme vos adresses IP de bureau physiques, vous pouvez configurer des groupes de plages d'adresses IP.
 ms.openlocfilehash: b8f5c1dd46b2e3990d53a65881d12ca8f3961b16
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254856"
 ---
 # <a name="group-your-ip-addresses-to-simplify-management-in-office-365-cloud-app-security"></a>Grouper vos adresses IP pour simplifier la gestion dans la sécurité des applications cloud Office 365
   
@@ -45,13 +45,13 @@ Chaque groupe de plages d'adresses IP peut être balisé avec des noms de balise
     
 |**Champ ou liste**|**Procédure**|
 |:-----|:-----|
-|**Nom** <br/> |Utilisez ce champ pour gérer votre plage d'adresses IP et vos paramètres. (Cette valeur ne s'affiche pas dans les journaux des activités.)  <br/> |
+|**Name** <br/> |Utilisez ce champ pour gérer votre plage d'adresses IP et vos paramètres. (Cette valeur ne s'affiche pas dans les journaux des activités.)  <br/> |
 |**Plages d'adresses IP** <br/> |Spécifiez une plage à l'aide de la notation de préfixe réseau (également appelée notation CIDR). Par exemple, 192.168.1.0/27 inclut la plage de valeurs 192.168.1.0 à 192.168.1.31 (inclus).  <br/> |
 |**Emplacement** et **fournisseur de services Internet inscrit** <br/> |Spécifiez l'emplacement et le fournisseur de services Internet (ISP) pour la plage d'adresses IP. Cela remplace les champs publics définis pour les adresses, ce qui est utile dans les cas, par exemple une adresse IP est considérée comme publique pour être en Irlande, mais en réalité aux États-Unis.  <br/> |
 |**Tags** <br/> |Utilisez des balises pour nommer vos groupes d'adresses IP. (Contrairement au champ nom, des balises s'affichent dans les journaux d'activité.) Tapez un mot ou une expression que vous souhaitez utiliser pour une balise. Vous pouvez ajouter autant de balises que vous le souhaitez pour chaque plage d'adresses IP. Si vous avez déjà configuré une balise et que vous souhaitez y ajouter cette plage d'adresses IP, sélectionnez-la dans la liste des balises actuelles qui apparaissent lorsque vous commencez à taper.  <br/> |
-|**Catégorie** <br/> | Affecter des catégories à vos balises pour faciliter la reconnaissance des activités provenant de certaines adresses IP. Choisissez l'une des options suivantes:<br/> **Administrative** Toutes les adresses IP de vos administrateurs.  <br/> **Fournisseur de Cloud** Adresse IP de votre proxy dans le Cloud.  <br/> **Entreprise** Toutes les adresses IP de votre réseau interne, de vos succursales et de vos adresses d'itinérance Wi-Fi.  <br/> **Risqué** Toutes les adresses IP que vous considérez comme risquées, telles que les adresses IP suspectes que vous avez vues dans le passé, les adresses IP des réseaux de vos concurrents, et ainsi de suite. Par défaut, les catégories à risque incluent deux balises IP: **proxy anonyme** et **TDR** <br/> **VPN** Toutes les adresses IP que vos employés distants utilisent.  <br/> |
+|**Catégorie** <br/> | Affecter des catégories à vos balises pour faciliter la reconnaissance des activités provenant de certaines adresses IP. Choisissez l'une des options suivantes :  <br/> **Administrative** Toutes les adresses IP de vos administrateurs.  <br/> **Fournisseur de Cloud** Adresse IP de votre proxy dans le Cloud.  <br/> **Entreprise** Toutes les adresses IP de votre réseau interne, de vos succursales et de vos adresses d'itinérance Wi-Fi.  <br/> **Risqué** Toutes les adresses IP que vous considérez comme risquées, telles que les adresses IP suspectes que vous avez vues dans le passé, les adresses IP des réseaux de vos concurrents, et ainsi de suite. Par défaut, les catégories à risque incluent deux balises IP: **proxy anonyme** et **TDR** <br/> **VPN** Toutes les adresses IP que vos employés distants utilisent.  <br/> |
    
-7. Sélectionnez **Save (Enregistrer)**.
+7. Cliquez sur **Enregistrer**.
     
 Une fois que vous avez configuré vos plages d'adresses IP, gardez à l'esprit que seuls les événements futurs sont affectés par ces modifications.
   

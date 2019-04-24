@@ -3,23 +3,22 @@ title: Contrôles du personnel Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: "Résumé: vue d'ensemble des pratiques de filtrage du personnel de Microsoft pour Office 365."
-ms.openlocfilehash: e7b7659447217adc2a5b7c001df0994e82180b3b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: b69c219ef6b405734035d74ce10195ea8cddf401
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262416"
 ---
 # <a name="office-365-personnel-controls"></a>Contrôles du personnel Office 365 
 
@@ -51,7 +50,7 @@ Pour vous assurer que seul le personnel approuvé a accès aux données du clien
 
 Dans les environnements de services Cloud de Microsoft, l'accès est restreint en fonction du rôle d'une personne et du type de données impliquées, comme indiqué dans le tableau ci-dessous. Le personnel qualifié ou non qualifié qui se trouve physiquement en dehors des États-Unis n'est pas autorisé à avoir accès aux données du client au sein d'un Cloud américain. L'accès aux environnements de Cloud nationaux est restreint de sorte que le personnel de Microsoft ne dispose pas d'un accès technique aux données client, ni aux systèmes contenant des données client, sans approbation de l'opérateur tiers ou du groupe de confiance des données.
 
-| Rôle | Accès aux données client | Accès aux données système |
+| Role | Accès aux données client | Accès aux données système |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|---------------------------------|
 | Personnel qualifié situé physiquement aux États-Unis | Tolérance | Tolérance |
 | Personnel qualifié physiquement situé en dehors des États-Unis | Non autorisé | Tolérance |
@@ -70,7 +69,8 @@ Lorsque la loi locale le permet, le service de sécurité global de Microsoft ef
 - Confirmation de l'identité auprès d'une identification publiée par un gouvernement
 - Vérification du crédit, le cas échéant
 
-La redirection périodique et/ou des vérifications d'arrière-plan supplémentaires peuvent être nécessaires pour certaines fonctions de gestion, de sécurité ou d'autres rôles, y compris mais sans s'y limiter, les employés basés aux États-Unis dans les rôles qui nécessitent un accès aux données client. Pour le personnel éventuel, le contrat avec le tiers spécifie les exigences de Microsoft en matière de filtrage qui doit être effectuée par le tiers. Pour les vérifications en arrière-plan, la société tierce est chargée de vérifier qu'un contrôle d'arrière-plan a été effectué. Les résultats de la vérification en arrière-plan sont généralement reçus par courrier électronique auprès du service des ressources humaines de tiers. Les employés de l'équipe internationale peuvent être exemptés du processus de filtrage en arrière-plan en raison de la législation en vigueur dans les pays qui interdisent les contrôles en arrière-plan.
+La redirection périodique et/ou des vérifications d'arrière-plan supplémentaires peuvent être nécessaires pour certaines fonctions de gestion, de sécurité ou d'autres rôles, y compris mais sans s'y limiter, les employés basés aux États-Unis dans les rôles qui nécessitent un accès aux données client.
+Pour le personnel éventuel, le contrat avec le tiers spécifie les exigences de Microsoft en matière de filtrage qui doit être effectuée par le tiers. Pour les vérifications en arrière-plan, la société tierce est chargée de vérifier qu'un contrôle d'arrière-plan a été effectué. Les résultats de la vérification en arrière-plan sont généralement reçus par courrier électronique auprès du service des ressources humaines de tiers. Les employés de l'équipe internationale peuvent être exemptés du processus de filtrage en arrière-plan en raison de la législation en vigueur dans les pays qui interdisent les contrôles en arrière-plan.
 
 ## <a name="microsoft-employment-screening"></a>Dépistage de l'emploi Microsoft
 Depuis 2004, Microsoft a demandé aux personnes de transmettre un écran de l'enregistrement pénal sur sept ans pour felonies et Misdemeanors, et de vérifier leur histoire de l'éducation et de l'emploi, dans le cadre de l'inspection préalable à l'emploi aux États-Unis pour les employés et les apprentis.

@@ -3,23 +3,22 @@ title: Contrôles de technologie Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: "Résumé: vue d'ensemble des pratiques de contrôle technologique de Microsoft pour Office 365."
-ms.openlocfilehash: 77dee44ec648ea2aa1dab61776089bf7d9e2580a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a8dcb65880fc729fc067b2f2bcf25c7db76dbca9
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262336"
 ---
 # <a name="office-365-technology-controls"></a>Contrôles de technologie Office 365 
 
@@ -34,7 +33,7 @@ Lockbox traite les demandes d'autorisations qui accordent aux ingénieurs la pos
 
 Le référentiel sécurisé du client pour Office 365 peut vous aider à respecter les obligations de conformité, telles que celles trouvées dans FedRAMP et HIPAA, si vous avez besoin de procédures en place pour l'autorisation explicite de l'accès aux données. Dans l'exemple rare où un ingénieur de service Microsoft a besoin d'accéder à vos données, vous accordez cet accès uniquement aux données requises pour résoudre le problème et pour une durée limitée. Les actions effectuées par l'ingénieur du support technique sont consignées à des fins d'audit et sont accessibles via l' [API activité de gestion d'Office 365](https://msdn.microsoft.com/library/office/dn707383.aspx) et le [Centre de sécurité et de conformité](http://protection.office.com/). Le référentiel sécurisé du client insère le client dans le processus d'approbation de la boîte de réception et lui permet de contrôler l'autorisation de Microsoft Access à son contenu Exchange Online ou SharePoint Online pour les opérations de service.
 
->**Remarque**: le référentiel sécurisé du client est disponible dans [Office 365 entreprise E5](https://products.office.com/business/office-365-enterprise-e5-business-software) et en tant qu'achat de complément, mais une action manuelle doit être effectuée dans le centre d'administration Office 365 (sous paramètres du service | Client Lockbox) pour l'activer. Pour plus d'informations, reportez-vous à la rubrique [Office 365 customEr Lockbox](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2)requests.
+>**Remarque**: le référentiel sécurisé du client est disponible dans [Office 365 entreprise E5](https://products.office.com/business/office-365-enterprise-e5-business-software) et en tant qu'achat de complément, mais une action manuelle doit être effectuée dans le centre d'administration Microsoft 365 (sous paramètres du service | Client Lockbox) pour l'activer. Pour plus d'informations, voir [Demandes Customer Lockbox dans Office 365](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
 
 Toutes les demandes de service pour Exchange Online et SharePoint Online sont gérées par le système bte post. Avec le référentiel sécurisé du client, toute opération de service nécessitant l'accès à ces services avec une exposition aux données client passe par le processus d'approbation de la boîte de réception, puis permet au client d'approuver ou de refuser la demande par la suite.
  

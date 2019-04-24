@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 55f31488-288a-473a-9b9e-831a11e3711a
 description: "Utilisez un script PowerShell pour créer une recherche de découverte électronique inaltérable dans Exchange Online, en fonction d'une recherche créée dans le centre de sécurité & Compliance Center. "
 ms.openlocfilehash: 2e4f1b3570ce2400472a0b2a9ddee886ffc4bab3
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263796"
 ---
 # <a name="use-content-search-in-your-ediscovery-workflow"></a>Utilisation de la recherche de contenu dans votre flux de travail de découverte électronique
 

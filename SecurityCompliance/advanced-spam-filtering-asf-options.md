@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Les options de filtrage avancé du courrier indésirable permettent aux administrateurs d'inspecter les différents attributs de contenu d'un message. La présence de ces attributs dans un message a pour effet d'augmenter le taux de mise en quarantaine du message (et donc la probabilité qu'il soit identifié comme courrier indésirable), ou de marquer le message comme courrier indésirable. Les options ASF ciblent certaines propriétés de message souvent rencontrées dans le courrier indésirable, telles que les balises HTML et une redirection des URL.
 ms.openlocfilehash: 0fad573c29c440d69e27b1e70810bf2fc67be164
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242482"
 ---
 # <a name="advanced-spam-filtering-options"></a>Options de filtrage avancé du courrier indésirable
 

@@ -1,5 +1,5 @@
 ---
-title: Afficher les résultats du module Processus dans Office 365 Advanced eDiscovery
+title: Afficher les résultats du module de processus dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
 description: "Découvrez comment trouver les résultats d'un module de processus exécuté dans Office 365 Advanced eDiscovery, y compris l'état de la tâche et le résumé des processus.  "
 ms.openlocfilehash: 0393cde78e559036d92b9ac48245afafc974a8b2
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267176"
 ---
-# <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>Afficher les résultats du module Processus dans Office 365 Advanced eDiscovery
+# <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>Afficher les résultats du module de processus dans Office 365 Advanced eDiscovery
 
 Une fois le **processus** de **préparation** \> initié, vous pouvez afficher l'avancement et les résultats. 
   

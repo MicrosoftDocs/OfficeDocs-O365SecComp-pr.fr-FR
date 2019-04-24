@@ -15,14 +15,13 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 0f5a98a7ba7a62e3b77794b38e444006a340cb49
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243189"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Configurer les paramètres de recherche et d’analyse
-
 
 ## <a name="near-duplicates-and-email-threading"></a>Quasi-doublons et Threading de courrier électronique
 
@@ -34,7 +33,8 @@ Dans cette section, vous pouvez définir des paramètres pour la détection des 
 
 - Masquer les doublons par défaut: si ce paramètre est activé, un filtre permettant de masquer les doublons de documents est appliqué par défaut dans le jeu de travail. Si nécessaire, le filtre peut être supprimé manuellement dans le jeu de travail.
 
-- Nombre minimal/maximum de mots: les doublons et les threads de courrier électronique s'exécutent uniquement sur les documents qui contiennent au moins le nombre minimal de mots et le nombre maximal de mots. Pour plus d'informations, consultez la rubrique [near Detection Detection](near-duplicates.md) and [email Threading](email-threading.md).
+- Nombre minimal/maximum de mots: les doublons et les threads de courrier électronique s'exécutent uniquement sur les documents qui contiennent au moins le nombre minimal de mots et le nombre maximal de mots.
+Pour plus d'informations, consultez la rubrique [near Detection Detection](near-duplicates.md) and [email Threading](email-threading.md).
 
 ## <a name="themes"></a>Thèmes
 

@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 3384c6f1-ffc0-4120-a211-1991aca51663
 description: Découvrez comment afficher, modifier et gérer les planifications des rapports dans le centre &amp; de sécurité et de conformité.
 ms.openlocfilehash: 045f539345613774fa38fe921e668e1dce7f2e7a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256326"
 ---
 # <a name="manage-schedules-for-multiple-reports-in-the-security-amp-compliance-center"></a>Gérer les planifications pour plusieurs rapports dans &amp; le centre de sécurité conformité
 

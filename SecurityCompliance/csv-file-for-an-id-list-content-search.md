@@ -13,11 +13,11 @@ search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: Utilisez le fichier results. csv ou unindexed Items. csv à partir d'une recherche de contenu existante pour créer une recherche de liste d'ID qui renvoie un message électronique spécifique. Les recherches de liste d'ID sont généralement utilisées pour renvoyer des éléments de boîte aux lettres partiellement indexés.
 ms.openlocfilehash: fc26f8dab11f1121deb11dd93b2cd0c70a1d629c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265448"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>Préparer un fichier CSV pour une recherche de contenu de liste d'ID dans Office 365
 

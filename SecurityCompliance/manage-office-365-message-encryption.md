@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Une fois que vous avez terminé la configuration d'Office 365 message enCryption (OME), vous pouvez personnaliser la configuration de votre déploiement de plusieurs façons. Par exemple, vous pouvez configurer s'il faut activer des codes de passe unique, afficher le bouton protéger dans Outlook sur le Web, et bien plus encore. Les tâches décrites dans cet article expliquent comment procéder.
 ms.openlocfilehash: 7b5297ae42d3efa071408540863c6ff7dbdee407
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259812"
 ---
 # <a name="manage-office-365-message-encryption"></a>Gérer le chiffrement de messages Office 365
 
@@ -109,7 +109,7 @@ Par défaut, le bouton **protéger** dans Outlook sur le Web n'est pas activé l
 
 ## <a name="enable-service-side-decryption-of-email-messages-for-ios-mail-app-users"></a>Activer le déchiffrement côté service des messages électroniques pour les utilisateurs de l'application de messagerie iOS
 
-L'application de messagerie iOS ne peut pas déchiffrer les messages protégés avec le chiffrement de messages Office 365. En tant qu'administrateur Office 365, vous pouvez appliquer le déchiffrement côté service pour les messages remis à l'application de messagerie iOS. Lorsque vous choisissez de le faire, le service envoie une copie déchiffrée du message au périphérique iOS. Le message est stocké déchiffré sur le périphérique client. Le message conserve également des informations sur les droits d'utilisation, même si l'application de messagerie iOS n'applique pas de droits d'utilisation côté client à l'utilisateur. Cela signifie que l'utilisateur peut copier ou imprimer le message même s'il ne dispose pas des droits nécessaires pour le faire. Toutefois, si l'utilisateur tente d'effectuer une action qui nécessite le serveur de messagerie Office 365, comme le transfert du message, le serveur n'autorise pas l'action si l'utilisateur n'a pas le droit d'utilisation à ce propos. Toutefois, les utilisateurs finaux peuvent contourner ne pas transférer la restriction d'utilisation en transférant le message à partir d'un autre compte dans son application de messagerie iOS. que vous configurez le déchiffrement côté service des messages, toutes les pièces jointes aux messages chiffrés et protégés par des droits. ne peut pas être affiché dans l'application de messagerie iOS.
+L'application de messagerie iOS ne peut pas déchiffrer les messages protégés avec le chiffrement de messages Office 365. En tant qu'administrateur Office 365, vous pouvez appliquer le déchiffrement côté service pour les messages remis à l'application de messagerie iOS. Lorsque vous choisissez de le faire, le service envoie une copie déchiffrée du message au périphérique iOS. Le message est stocké déchiffré sur le périphérique client. Le message conserve également des informations sur les droits d'utilisation, même si l'application de messagerie iOS n'applique pas de droits d'utilisation côté client à l'utilisateur. Cela signifie que l'utilisateur peut copier ou imprimer le message même s'il ne dispose pas des droits nécessaires pour le faire. Toutefois, si l'utilisateur tente d'effectuer une action qui nécessite le serveur de messagerie Office 365, comme le transfert du message, le serveur n'autorise pas l'action si l'utilisateur n'a pas le droit d'utilisation à ce propos. Toutefois, les utilisateurs finaux peuvent contourner ne pas transférer la restriction d'utilisation en transférant le message à partir d'un compte différent dans son application de messagerie iOS. Que vous configurez le déchiffrement côté service du courrier, toutes les pièces jointes aux messages chiffrés et protégés par des droits ne peuvent pas être affichées dans l'application de messagerie iOS.
   
 Si vous choisissez de ne pas autoriser les messages déchiffrés à être envoyés aux utilisateurs de l'application de messagerie iOS, les utilisateurs reçoivent un message qui indique qu'ils ne disposent pas des droits pour afficher le message. Par défaut, le déchiffrement côté service des messages électroniques n'est pas activé.
   

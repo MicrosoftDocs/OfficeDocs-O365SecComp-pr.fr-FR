@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 7955debee750019d60b8016d736ba50f1ff70bce
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240889"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery-preview"></a>Types de fichiers pris en charge dans Advanced eDiscovery (aperçu)
 
@@ -55,11 +55,11 @@ Advance eDiscovery (Preview) prend en charge de nombreux types de fichiers à di
 | application/x-mspublisher | Document | Oui | Oui | Oui | Non | . pub |
 | application/x-rar-Compressed | Archive/conteneur | Non | Non | Non | Oui | . rar |
 | application/code postal | Archive/conteneur | Non | Non | Non | Oui | . zip |
-| image/BMP | Image | Oui | Oui | Oui | Non | . bmp |
+| image/BMP | Image | Oui | Oui | Oui | Non | .bmp |
 | image/EMF | Image | Oui | Oui | Oui | Non | . EMF |
-| image/gif | Document | Oui | Oui | Oui | Non | . gif |
+| image/gif | Document | Oui | Oui | Oui | Non | .gif |
 | image/jpeg | Image | Oui | Oui | Oui | Non | . jpg;. jpeg;. dat;. jpgt |
-| image/png | Image | Oui | Oui | Oui | Non | . png |
+| image/png | Image | Oui | Oui | Oui | Non | .png |
 | image/TIFF | Image | Oui | Oui | Oui | Non | . TIF |
 | image/vnd. dwg | Document | Oui | Oui | Oui | Non | . dwg;. format |
 | image/WMF | Document | Oui | Oui | Oui | Non | . wmf |

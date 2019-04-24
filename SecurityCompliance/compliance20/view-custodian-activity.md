@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: defc89f1d54238e62f947fd197e7a866380ee601
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241028"
 ---
 # <a name="view-custodian-audit-activity"></a>Afficher l'activité d'audit du dépositaire
 
@@ -50,7 +50,7 @@ Vous devez disposer du rôle journaux d'audit en affichage seul ou journaux d'au
       
       c. **Dépositaires** : cliquez dans cette zone, puis sélectionnez un dépositaire spécifique pour lequel afficher les résultats de la recherche. Les enregistrements d'audit de l'activité sélectionnée effectuée par les utilisateurs que vous sélectionnez dans cette zone sont affichés dans la liste des résultats.
       
-   5. Cliquez sur   ![Bouton Rechercher](../media/SearchButton.PNG)  pour exécuter la recherche à l'aide de vos critères de recherche. Les résultats de la recherche sont chargés et, après quelques instants, s'affichent sous résultats dans la page recherche des activités du dépositaire. 
+   5. Clic    ![Bouton Rechercher](../media/SearchButton.PNG)  pour exécuter la recherche à l'aide de vos critères de recherche. Les résultats de la recherche sont chargés et, après quelques instants, s'affichent sous résultats dans la page recherche des activités du dépositaire. 
 
 ## <a name="step-2-view-the-audit-log-search-results"></a>Étape 2: afficher les résultats de la recherche du journal d'audit
 

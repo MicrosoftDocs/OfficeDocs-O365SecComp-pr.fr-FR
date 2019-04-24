@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
 description: "Obtenez une vue d'ensemble du processus Analyze, qui vous permet de définir des paramètres, des options d'exécution et des résultats d'affichage, dans Office 365 Advanced eDiscovery. "
 ms.openlocfilehash: 11ef6f9bd052134625012742e64c466ae1e54f91
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243025"
 ---
 # <a name="analyze-case-data-with-office-365-advanced-ediscovery"></a>Analyser les données de cas avec Office 365 Advanced eDiscovery
 

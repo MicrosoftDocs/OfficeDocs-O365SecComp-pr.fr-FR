@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 290b02bf-a988-4fb9-88b2-34e408216ac8
 description: La sécurité des applications Cloud Office 365 fonctionne avec les journaux de trafic Web provenant d'un large éventail de fournisseurs. Lisez cet article pour en savoir plus sur les journaux du trafic Web et les sources de données prises en charge pour Office 365 Cloud App Security.
 ms.openlocfilehash: 67246ded0e3d39c81b5b906f753b91298309d1d8
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266849"
 ---
 # <a name="web-traffic-logs-and-data-sources-for-office-365-cloud-app-security"></a>Historique de trafic web et sources de données pour la sécurité des applications cloud Office 365
   
@@ -84,7 +84,7 @@ Le tableau suivant récapitule les informations contenues dans les journaux du t
 |                 Juniper SSG                  |          Non          | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
 |                  McAfee SWG                  | <strong>Oui</strong> |          Non          |          Non          | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
 |                    MS TMG                    | <strong>Oui</strong> |          Non          | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
-|              Palo Alto Networks              |          Non          | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
+|              Réseaux Palo Alto              |          Non          | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |
 |                    Sophos                    | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> | <strong>Oui</strong> |          Non          |
 |                Squid (commun)                | <strong>Oui</strong> |          Non          | <strong>Oui</strong> | <strong>Oui</strong> |          Non          | <strong>Oui</strong> |
 |                Squid (natif)                | <strong>Oui</strong> |          Non          | <strong>Oui</strong> | <strong>Oui</strong> |          Non          | <strong>Oui</strong> |
@@ -130,7 +130,7 @@ La sécurité des applications Cloud Office 365 prend en charge les proxys et le
 
 Une fois que vous avez téléchargé les fichiers journaux du trafic Web, consultez le journal de gouvernance pour voir s'il y a eu des erreurs. S'il existe des erreurs, utilisez les informations du tableau ci-dessous pour résoudre ces erreurs.
   
-|**Erreur**|**Description**|**Résolution**|
+|**Error**|**Description**|**Solution**|
 |:-----|:-----|:-----|
 |Type de fichier non pris en charge  <br/> |Le fichier téléchargé n'est pas un fichier journal valide. Par exemple, un fichier image.  <br/> |Téléchargez un fichier texte, zip ou gzip qui a été directement exporté à partir de votre pare-feu ou de votre proxy.  <br/> |
 |Erreur interne  <br/> |Une défaillance de ressource interne a été détectée.  <br/> |Cliquez **** sur Réessayer pour réexécuter la tâche.  <br/> |
@@ -138,7 +138,7 @@ Une fois que vous avez téléchargé les fichiers journaux du trafic Web, consul
 Vérifiez que le journal n'est pas endommagé. Comparez et associez le format du fichier journal au format d'exemple indiqué sur la page de chargement. |
 |Les transactions sont datant de plus de 90 jours  <br/> |Toutes les transactions ont plus de 90 jours et sont donc ignorées.  <br/> |ExPortez un nouveau journal avec les événements récents et téléchargez-le à nouveau.  <br/> |
 |Aucune transaction pour cataloguer les applications Cloud  <br/> |Aucune transaction n'est trouvée dans le journal pour les applications Cloud reconnues.  <br/> |Vérifiez que le journal contient des informations de trafic sortant.  <br/> |
-|Type de journal non pris en charge  <br/> |Lorsque vous sélectionnez **Data source = Other (non pris en charge)**, le journal n'est pas analysé. Au lieu de cela, il est envoyé à la révision à l'équipe technique de [sécurité des applications Cloud de Microsoft](https://aka.ms/whatiscas) .<br/> |L'équipe technique de [sécurité des applications Cloud de Microsoft](https://aka.ms/whatiscas) crée un analyseur dédié pour chaque source de données. Les sources de données les plus populaires sont déjà prises en charge. Lorsqu'une source de données non prise en charge est chargée, elle est examinée et ajoutée à la liste des nouveaux analyseurs de sources de données potentiels.<br/> Lorsqu'un nouveau parseur est ajouté à la fonctionnalité, une notification est incluse dans les notes de publication de la sécurité des applications Cloud de Microsoft.  <br/> |
+|Type de journal non pris en charge  <br/> |Lorsque vous sélectionnez **Data source = Other (non pris en charge)**, le journal n'est pas analysé. Au lieu de cela, il est envoyé à la révision à l'équipe technique de [sécurité des applications Cloud de Microsoft](https://aka.ms/whatiscas) .  <br/> |L'équipe technique de [sécurité des applications Cloud de Microsoft](https://aka.ms/whatiscas) crée un analyseur dédié pour chaque source de données. Les sources de données les plus populaires sont déjà prises en charge. Lorsqu'une source de données non prise en charge est chargée, elle est examinée et ajoutée à la liste des nouveaux analyseurs de sources de données potentiels.  <br/> Lorsqu'un nouveau parseur est ajouté à la fonctionnalité, une notification est incluse dans les notes de publication de la sécurité des applications Cloud de Microsoft.  <br/> |
    
 ## <a name="next-steps"></a>Étapes suivantes
 

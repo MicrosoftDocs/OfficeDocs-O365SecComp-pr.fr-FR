@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 ms.openlocfilehash: 73f44e747581664f075608d972ee80c8381ca7fd
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30994844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256312"
 ---
 # <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>Quelle stratégie s'applique lorsque plusieurs méthodes de protection et analyses de détection s'exécutent sur votre courrier électronique
 
@@ -27,7 +27,7 @@ En règle générale, une stratégie appliquée à un message est identifiée da
 
 Les stratégies ci-dessous s'appliquent à _toutes les organisations_.
 
-|Priorité |Stratégie  |Catégorie  |Où maNaged |
+|Priority |Stratégie  |Catégorie  |Où maNaged |
 |---------|---------|---------|---------|
 |0,1     | Programme malveillant      | MALW      | Stratégie anti-programme malveillant   |
 |n°2     | Hameçonnage     | PHSH     | Configuration de vos stratégies de filtrage du courrier indésirable     |
@@ -38,14 +38,14 @@ Les stratégies ci-dessous s'appliquent à _toutes les organisations_.
 
 En outre, ces stratégies s'appliquent aux _organisations avec ATP_.
 
-|Priorité |Stratégie  |Catégorie  |Où maNaged |
+|Priority |Stratégie  |Catégorie  |Où maNaged |
 |---------|---------|---------|---------|
 |7j/7     | Emprunt d’identité de domaine         | DIMP         | Configuration de l’anti-hameçonnage d’Office 365 – Protection avancée contre les menaces et des stratégies anti-hameçonnage        |
 |8bits     | Emprunt d’identité d’utilisateur        | UIMP         | Configuration de l’anti-hameçonnage d’Office 365 – Protection avancée contre les menaces et des stratégies anti-hameçonnage         |
 
 Par exemple, si vous avez deux stratégies avec leurs priorités respectives:
 
-|Stratégie  |Priorité  |Emprunt d’identité d’utilisateur/de domaine  |Détection d’usurpation d’identité  |
+|Stratégie  |Priority  |Emprunt d’identité d’utilisateur/de domaine  |Détection d’usurpation d’identité  |
 |---------|---------|---------|---------|
 |A     | 0,1        | Activé        |Désactivé         |
 |B     | n°2        | Désactivé        | Activé        |

@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365 inclut des modèles de stratégie prêts à l'emploi qui répondent à des exigences de conformité communes, telles que la protection des informations sensibles soumises à la loi américaine Health Insurance Act ( HIPAA), U.S. Gramm-Leach-Bliley Act (GLBA) ou U.S. Patriot Act. Cette rubrique répertorie tous les modèles de stratégie, les types d'informations sensibles qu'ils recherchent, ainsi que les conditions et les actions par défaut.
 ms.openlocfilehash: 0031b5415db2f1c4a9497bcfbc5226da250b01b6
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266839"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>Ce qu’incluent les modèles de stratégie DLP
 

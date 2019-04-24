@@ -12,11 +12,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Les professionnels de l'informatique de votre organisation gèrent toutes sortes d'informations sensibles au cours d'une journée typique. La création d'une empreinte numérique de document facilite la protection de ces informations en identifiant les formulaires standard utilisés au sein de votre organisation. Cette rubrique décrit les concepts sous-jacents à la création d'une empreinte numérique de document et la manière d'en créer une à l'aide de PowerShell.
 ms.openlocfilehash: 2b8e4fd6b286f2c1a5c67863957f2b04fbef31b9
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256896"
 ---
 # <a name="document-fingerprinting"></a>Création d’une empreinte numérique de document
 

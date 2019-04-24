@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: Avec une stratégie de protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365, vous pouvez identifier, surveiller et protéger automatiquement les informations sensibles dans Office 365.
 ms.openlocfilehash: da8acd8904ac6a9b1945c8f794bad84a0adc64fb
-ms.sourcegitcommit: 94e9eeab8134a9c4d9004cc16de7da227a0e5cc0
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31784105"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262128"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Vue d’ensemble des stratégies de protection contre la perte de données
 
@@ -454,7 +454,7 @@ Sur tous vos sites SharePoint Online et OneDrive entreprise, les documents chang
   
 Pour cette raison, les stratégies DLP vérifient les correspondances de stratégie fréquemment dans les documents en arrière-plan. Vous pouvez considérer ceci comme une évaluation asynchrone des stratégies.
   
-#### <a name="how-it-works"></a>Fonctionnement
+#### <a name="how-it-works"></a>Mode de fonctionnement
  
 Au fur et à mesure que les utilisateurs ajoutent ou modifient des documents dans leurs sites, le moteur de recherche analyse le contenu, afin que vous puissiez le rechercher ultérieurement. Pendant ce temps, le contenu analyse également les informations sensibles afin de vérifier s'il est partagé. Toutes les informations sensibles trouvées sont stockées de manière sécurisée dans l'index de recherche, afin que seule l'équipe de conformité puisse y accéder, mais pas les utilisateurs classiques. Chaque stratégie DLP que vous avez activée s'exécute en arrière-plan (de façon asynchrone), en vérifiant fréquemment la recherche de contenu correspondant à une stratégie et en appliquant des actions pour la protéger contre des fuites involontaires.
   
@@ -522,9 +522,9 @@ Toutefois, les rapports DLP doivent extraire des données d'Office 365, y compri
     
 - [Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP](use-notifications-and-policy-tips.md)
     
-- [Création d’une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés](protect-documents-that-have-fci-or-other-properties.md)
+- [Créer une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés](protect-documents-that-have-fci-or-other-properties.md)
     
-- [Ce qu’incluent les modèles de stratégie DLP](what-the-dlp-policy-templates-include.md)
+- [Contenu des modèles de stratégie DLP](what-the-dlp-policy-templates-include.md)
     
 - [Éléments recherchés par les types d’informations sensibles](what-the-sensitive-information-types-look-for.md)
     

@@ -15,11 +15,11 @@ ms.collection:
 - Strat_O365_Enterprise
 description: 'Résumé: explication du chiffrement dans Azure.'
 ms.openlocfilehash: b8980b3979ada9ac02232065a27a7891936aa945
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265876"
 ---
 # <a name="office-365-encryption-in-azure"></a>Chiffrement Office 365 dans Azure
 
@@ -49,4 +49,4 @@ Certains services Office 365 utilisent Azure pour stocker des données. Par exem
 
 ## <a name="azure-key-vault"></a>Azure Key Vault
 
-La gestion des clés de sécurité n'est pas simplement essentielle aux meilleures pratiques de chiffrement; elle est également essentielle pour la protection des données dans le Cloud. Le [coffre-fort de clés Azure](https://docs.microsoft.com/azure/key-vault/key-vault-whatis) vous permet de chiffrer des clés et des petits secrets comme les mots de passe qui utilisent des clés stockées dans des modules de sécurité matérielle (HSM). Le coffre-fort de clés Azure est la solution recommandée par Microsoft pour la gestion et le contrôle de l'accès aux clés de chiffrement utilisées par les services Cloud. Les autorisations d'accès aux clés peuvent être attribuées à des services ou aux utilisateurs avec des comptes Azure Active Directory. Le coffre-fort de clés Azure soulage les organisations du besoin de configurer, de corriger et de gérer les modules HSM et les logiciels de gestion de clés. Avec Azure Key Vault, Microsoft ne voit jamais vos clés et applications n'y ont pas accès directement; vous conservez le contrôle. Vous pouvez également importer ou générer des clés dans des HSM. les organisations disposant d'un abonnement qui inclut Azure information protection peuvent configurer leur client Azure information protection de sorte qu'il utilise une clé gérée par [le client apporter votre propre clé](https://docs.microsoft.com/information-protection/plan-design/byok-price-restrictions) (BYOK)) et consigner [ son utilisation](https://docs.microsoft.com/information-protection/deploy-use/log-analyze-usage).
+La gestion des clés de sécurité n'est pas simplement essentielle aux meilleures pratiques de chiffrement; elle est également essentielle pour la protection des données dans le Cloud. Le [coffre-fort de clés Azure](https://docs.microsoft.com/azure/key-vault/key-vault-whatis) vous permet de chiffrer des clés et des petits secrets comme les mots de passe qui utilisent des clés stockées dans des modules de sécurité matérielle (HSM). Le coffre-fort de clés Azure est la solution recommandée par Microsoft pour la gestion et le contrôle de l'accès aux clés de chiffrement utilisées par les services Cloud. Les autorisations d'accès aux clés peuvent être attribuées à des services ou aux utilisateurs avec des comptes Azure Active Directory. Le coffre-fort de clés Azure soulage les organisations du besoin de configurer, de corriger et de gérer les modules HSM et les logiciels de gestion de clés. Avec Azure Key Vault, Microsoft ne voit jamais vos clés et applications n'y ont pas accès directement; vous conservez le contrôle. Vous pouvez également importer ou générer des clés dans des HSM. Les organisations disposant d'un abonnement qui inclut Azure information protection peuvent configurer leur client Azure information protection de sorte qu'il utilise une clé gérée par le client, [Mettez votre propre clé](https://docs.microsoft.com/information-protection/plan-design/byok-price-restrictions) (BYOK)) et consignez [son utilisation](https://docs.microsoft.com/information-protection/deploy-use/log-analyze-usage).

@@ -1,5 +1,5 @@
 ---
-title: Gestion d’un site d’équipe SharePoint Online isolé
+title: Gestion d'un site d'équipe SharePoint Online isolé
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: "Résumé : Découvrez comment gérer votre site d'équipe SharePoint Online isolé."
-ms.openlocfilehash: 81a6fcd80bb3e4950eb7b783d1ad964b9bc67cc5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f8531c4922f6ee6a86e32e646692825e71fafec2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32251988"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>Gestion d’un site d’équipe SharePoint Online isolé
 
@@ -41,7 +41,7 @@ Si vous gérez des comptes d’utilisateur et des groupes via Office 365, vous 
   
 - Pour le Centre d'administration Office, connectez-vous avec un compte d'utilisateur ayant le rôle Administrateur des comptes d'utilisateur ou Administrateur d'entreprise et utilisez les groupes pour ajouter les utilisateurs appropriés aux groupes d'accès appropriés.
     
-- Pour PowerShell, [connectez-vous au module Azure Active Directory V2 PowerShell](https://go.microsoft.com/fwlink/?linkid=842218). Pour ajouter un compte d’utilisateur à un groupe d’accès avec son nom d’utilisateur principal (UPN), utilisez le bloc de commandes PowerShell suivant :
+- Pour PowerShell, [Connectez-vous d'abord avec le module Azure Active Directory PowerShell pour Graph](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module). Pour ajouter un compte d'utilisateur à un groupe d'accès en utilisant son nom d'utilisateur principal (UPN), exécutez le bloc de commandes PowerShell suivant :
     
 ```
 $userUPN="<UPN of the user account>"
@@ -76,7 +76,8 @@ Si vous gérez des comptes d’utilisateur et des groupes via Office 365, vous 
   
 - Pour le Centre d'administration Office, connectez-vous avec un compte d'utilisateur ayant le rôle Administrateur des comptes d'utilisateur ou Administrateur d'entreprise et utilisez les groupes pour ajouter les groupes d'utilisateurs appropriés aux groupes d'accès appropriés.
     
-- Pour PowerShell, [connectez-vous au module Azure Active Directory V2 PowerShell](https://go.microsoft.com/fwlink/?linkid=842218). Utilisez ensuite les commandes PowerShell suivantes :
+- Pour PowerShell, [Connectez-vous d'abord avec le module Azure Active Directory PowerShell pour Graph](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+ Ensuite, utilisez les commandes PowerShell suivantes :
  
 ```
 $newGroupName="<display name of the new group to add>"
@@ -100,7 +101,8 @@ Si vous gérez des comptes d’utilisateur et des groupes via Office 365, vous 
   
 - Pour le Centre d'administration Office, connectez-vous avec un compte d'utilisateur ayant le rôle Administrateur des comptes d'utilisateur ou Administrateur d'entreprise et utilisez les groupes pour supprimer les utilisateurs appropriés des groupes d'accès appropriés.
     
-- Pour PowerShell, [connectez-vous au module Azure Active Directory V2 PowerShell](https://go.microsoft.com/fwlink/?linkid=842218). Pour supprimer un compte d’utilisateur d’un groupe d’accès avec son nom d’utilisateur principal (UPN), utilisez le bloc de commandes PowerShell suivant :
+- Pour PowerShell, [Connectez-vous d'abord avec le module Azure Active Directory PowerShell pour Graph](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Pour supprimer un compte d'utilisateur d'un groupe d'accès en utilisant son UPN, exécutez le bloc de commandes PowerShell suivant :
     
 ```
 $userUPN="<UPN of the user account>"
@@ -132,7 +134,7 @@ Si vous gérez des comptes d’utilisateur et des groupes via Office 365, vous 
   
 - Pour le Centre d'administration Office, connectez-vous avec un compte d'utilisateur disposant du rôle Administrateur des comptes d'utilisateur ou Administrateur d'entreprise et utilisez les groupes pour supprimer les groupes appropriés des groupes d'accès appropriés.
     
-- Pour PowerShell, consultez la rubrique [Se connecter à Office 365 PowerShell](https://go.microsoft.com/fwlink/?linkid=842218).    
+- Pour PowerShell, [Connectez-vous d'abord avec le module Azure Active Directory PowerShell pour Graph](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).    
 Pour supprimer un groupe d’un groupe d’accès en utilisant son nom d’affichage, exécutez le bloc de commandes PowerShell suivant :
     
 ```
@@ -183,9 +185,9 @@ Pour créer un sous-dossier de documents avec des autorisations personnalisées,
     
 ## <a name="see-also"></a>Voir aussi
 
-[Sites d'équipe SharePoint Online isolés](isolated-sharepoint-online-team-sites.md)
+[Sites d’équipe SharePoint Online isolés](isolated-sharepoint-online-team-sites.md)
   
-[Conception d'un site d'équipe SharePoint Online isolé](design-an-isolated-sharepoint-online-team-site.md)
+[Conception d’un site d’équipe SharePoint Online isolé](design-an-isolated-sharepoint-online-team-site.md)
 
 [Déploiement d’un site d’équipe SharePoint Online isolé](deploy-an-isolated-sharepoint-online-team-site.md)
 

@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 'Le complément de signalement de courrier indésirable de Microsoft pour Microsoft Office Outlook vous offre plusieurs méthodes pour signaler des messages en tant que courriers indésirables :'
 ms.openlocfilehash: 7e50143acd6efeb3d47ad0fa04d6d9b57a5ca161
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265008"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>Signaler les messages de courrier indésirable à Microsoft
 

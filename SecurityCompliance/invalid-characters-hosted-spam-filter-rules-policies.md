@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Fournit de l'aide aux administrateurs qui ont des caractères non valides dans leur configuration de blocage du courrier indésirable et &amp; génèrent des problèmes lors de la tentative d'utilisation du centre de sécurité conformité.
 ms.openlocfilehash: 797389da26823b6528c2aee0baaa118fbfcf7942
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253952"
 ---
 # <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>Éviter les caractères non valides dans vos règles de filtrage du courrier indésirable et votre stratégie de filtrage 
 
@@ -52,7 +52,7 @@ Une fois que vous avez identifié la stratégie et les règles qui contiennent d
     ```  
 
   
- ## <a name="for-more-information"></a>Pour plus d’informations
+ ## <a name="for-more-information"></a>Pour plus d'informations
 
 [Gestion des menaces dans le &amp; Centre de sécurité conformité](threat-management.md)
   

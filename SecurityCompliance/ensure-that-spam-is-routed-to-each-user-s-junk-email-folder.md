@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à acheminer le courrier indésirable vers les dossiers de courrier inDésirable de l'utilisateur dans Exchange Online Protection.
 ms.openlocfilehash: 30b115b5d7f8f02767e3e380b672341765052a9c
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256662"
 ---
-# <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Vérification de l'acheminement du courrier indésirable vers le dossier Courrier indésirable de chaque utilisateur
+# <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Vérification de l’acheminement du courrier indésirable vers le dossier Courrier indésirable de chaque utilisateur
 
 > [!IMPORTANT]
 > Cette rubrique s'applique uniquement aux clients Exchange Online Protection (EOP) qui hébergent des boîtes aux lettres localement dans un déploiement hybride. Les clients Exchange Online dont les boîtes aux lettres sont entièrement hébergées dans Office 365 n'ont pas besoin d'exécuter ces commandes. 

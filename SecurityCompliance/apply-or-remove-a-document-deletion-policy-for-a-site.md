@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
 description: Les organisations sont souvent soumises à des réglementations de conformité, juridiques ou autres qui les obligent à conserver des documents pendant une certaine période de temps. Toutefois, conserver des documents plus longtemps que nécessaire peut exposer l’organisation à un risque juridique. Pour cette raison, votre organisation peut avoir créé une stratégie de suppression de documents pour votre site (par exemple, il se pourrait que les documents commerciaux généraux doivent être supprimés cinq ans après leur création).
 ms.openlocfilehash: c00298a177ac405181ab2b2d9642b631e60a8a92
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243275"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>Application ou suppression d’une stratégie de suppression de documents pour un site
 
@@ -75,7 +75,7 @@ En tant que propriétaire de site ou propriétaire de collection de sites, votre
     > [!NOTE]
     > Le lien **stratégies de suppression de documents** ne s'affiche pas, sauf si des stratégies ont été affectées à la collection de sites. De plus, le lien ne s'affiche pas immédiatement après que des stratégies ont été affectées au site; le lien des stratégies de **Suppression de documents** peut prendre jusqu'à 24 heures. 
   
-3. Effectuez l'une des opérations suivantes :
+3. Effectuez l’une des opérations suivantes :
     
   - **Pour appliquer une stratégie** Sélectionnez une stratégie \> sélectionnez une règle dans l' \> **enregistrement**de la stratégie.
     
@@ -97,7 +97,7 @@ Un site peut utiliser d’autres stratégies pour la conservation et la suppress
     
 - stratégies de gestion des informations pour une liste ou une bibliothèque.
     
-Si vous appliquez une stratégie de suppression de documents à un site qui utilise déjà des stratégies de type de contenu ou des stratégies de gestion des informations pour une liste ou une bibliothèque, ces stratégies sont ignorées pendant l'application de la stratégie de suppression de documents. Si d'autres stratégies sont ignorées, le message «le contenu sur ce site utilise les stratégies de suppression de documents» s'affiche.
+Si vous appliquez une stratégie de suppression de documents à un site qui utilise déjà des stratégies de type de contenu ou des stratégies de gestion des informations pour une liste ou une bibliothèque, ces stratégies sont ignorées alors que la stratégie de suppression de documents est appliquée. Si d'autres stratégies sont ignorées, le message «le contenu sur ce site utilise les stratégies de suppression de documents» s'affiche.
   
 Cela signifie que vous devez planifier qu’un site n’utilise que des stratégies destinées à du contenu structuré (stratégies de gestion des informations et stratégies de type de contenu) ou à du contenu non structuré (stratégies de suppression de documents), et non les deux. Si vous refusez une stratégie de suppression de documents, l’avertissement ne s’affiche pas et d’autres types de stratégies continueront à fonctionner.
   
@@ -105,7 +105,7 @@ Les stratégies de site ne sont pas affectées par les stratégies de suppressio
   
 ### <a name="determine-if-content-type-policies-are-being-ignored"></a>Déterminer si les stratégies de type de contenu sont ignorées
 
-Si votre site utilise des stratégies de type de contenu et que vous voyez maintenant ce message, ces stratégies ne sont plus appliquées. Pour restaurer les stratégies de type de contenu, vous pouvez supprimer la stratégie de suppression de documents de votre site, comme décrit précédemment, si une option de désactivation est disponible. S'il n'existe pas d'option à désactiver, la stratégie de suppression de documents est obligatoire et vous devez contacter l'officier de conformité de votre organisation.
+Si votre site utilisait des stratégies de type de contenu et que ce message s’affiche maintenant, ces stratégies ne sont plus appliquées. Pour restaurer les stratégies de type de contenu, vous pouvez supprimer la stratégie de suppression de documents de votre site, comme décrit précédemment, si une option de désactivation est disponible. S'il n'existe pas d'option à désactiver, la stratégie de suppression de documents est obligatoire et vous devez contacter l'officier de conformité de votre organisation.
   
 1. Dans le coin supérieur droit, sélectionnez paramètres **** du \> **site**paramètres [icône d'engrenage].
     
@@ -115,15 +115,16 @@ Si votre site utilise des stratégies de type de contenu et que vous voyez maint
   
 ### <a name="determine-if-information-management-policies-are-being-ignored"></a>Déterminer si les stratégies de gestion des informations sont ignorées
 
-Si votre site utilise des stratégies de gestion des informations et que ce message s'affiche, ces stratégies ne sont plus en vigueur. Pour restaurer les stratégies de gestion des informations, vous pouvez supprimer la stratégie de suppression de documents de votre site, comme décrit précédemment, si une option de désactivation est disponible. S'il n'existe pas d'option à désactiver, la stratégie de suppression de documents est obligatoire et vous devez contacter l'officier de conformité de votre organisation.
+Si votre site utilisait des stratégies de gestion des informations et que ce message s’affiche maintenant, ces stratégies ne sont plus appliquées. Pour restaurer les stratégies de gestion des informations, vous pouvez supprimer la stratégie de suppression de documents de votre site, comme décrit précédemment, si une option de désactivation est disponible. S'il n'existe pas d'option à désactiver, la stratégie de suppression de documents est obligatoire et vous devez contacter l'officier de conformité de votre organisation.
   
 - Pour une liste ou une bibliothèque, dans les \> **** \> **paramètres** \> de la bibliothèque d'onglets de la bibliothèque du ruban, sous **paramètres de stratégie de gestion des informations**de **gestion** \> et des autorisations.
     
     ![Avertissement sur le site utilisé par les stratégies de suppression de documents](media/3f043057-a741-4cd8-a165-6d139b986064.png)
   
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
-[Vue d’ensemble des stratégies de suppression de documents](document-deletion-policies.md)
+
+  [Vue d’ensemble des stratégies de suppression de documents](document-deletion-policies.md)
   
 [Création d’une stratégie de suppression de documents](create-a-document-deletion-policy.md)
 

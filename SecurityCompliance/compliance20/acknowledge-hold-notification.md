@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 048c85c7b8d77b9c7d3b9527640648b9ebe463d0
-ms.sourcegitcommit: 5d6be2b208dbe28d5d5da057c60cf97729799c1b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30465451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243633"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Reconnaitre une notification de conservation 
 Lors de la réponse à une demande réglementaire ou à une enquête, il se peut que vous deviez informer les dépositaires de leur obligation de conserver les informations stockées électroniquement (ESI), ainsi que tout matériel pouvant être pertinent pour une question juridique active ou imminente. Une fois envoyés, les équipes juridiques doivent savoir que chaque dépositaire a reçu, lu et compris, et qu'il est convenu de respecter les instructions données.

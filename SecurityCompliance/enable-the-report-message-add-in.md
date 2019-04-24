@@ -16,18 +16,18 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment activer le complément de message de rapport pour Outlook et Outlook sur le Web, pour des utilisateurs individuels ou l'ensemble de votre organisation.
 ms.openlocfilehash: 3c476a6e097307b1aabc3580b598bb91a4407731
-ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30866340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257446"
 ---
 # <a name="enable-the-report-message-add-in"></a>Activer le complément Signaler le message
 
 > [!NOTE]
 > Le complément de message de rapport pour Outlook et Outlook sur le Web n'est pas exactement identique au filtre de courrier inDésirable [Outlook](https://support.office.com/article/Overview-of-the-Junk-Email-Filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089), bien que ces deux types permettent de marquer le courrier comme légitime, non légitime ou une tentative de hameçonnage. La différence réside dans le fait que le complément de message de rapport pour Outlook et Outlook sur le Web avertit Microsoft du courrier inDésirable, tandis que le filtre de courrier inDésirable d'Outlook est utilisé pour organiser les messages électroniques dans la boîte aux lettres d'un utilisateur. 
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Le complément de message de rapport pour Outlook et Outlook sur le Web permet aux utilisateurs de signaler facilement les messages électroniques, qu'ils soient fiables ou malveillants, à Microsoft et à ses filiales pour analyse. Microsoft utilise ces soumissions pour améliorer l'efficacité des technologies de protection de la messagerie. En outre, si votre organisation utilise [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) ou [plan 2](office-365-ti.md), le complément Report message fournit à l'équipe de sécurité de votre organisation des informations utiles qu'il peut utiliser pour examiner et mettre à jour les stratégies de sécurité. 
 

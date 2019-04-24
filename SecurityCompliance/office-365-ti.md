@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment les fonctionnalités d'aide à la décision dans Office 365 protection avancée contre les menaces peuvent vous aider à rechercher des menaces contre votre organisation, à répondre aux programmes malveillants, au hameçonnage et à d'autres attaques détectées par Office 365 pour votre part, et à rechercher des menaces. confirme.
 ms.openlocfilehash: 6f7e6e0a49bb4035458af2e9d7e45fd954a1f9fc
-ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30732267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265396"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Enquête et réponse aux menaces Office 365
 
@@ -77,7 +77,7 @@ Utilisez les ressources suivantes pour en savoir plus sur les fonctionnalités d
 
 [Se protéger contre les menaces dans Office 365](protect-against-threats.md)
   
-[Office 365 - Protection avancée contre les menaces](office-365-atp.md)
+[Office 365-Protection avancée contre les menaces](office-365-atp.md)
   
 [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
  

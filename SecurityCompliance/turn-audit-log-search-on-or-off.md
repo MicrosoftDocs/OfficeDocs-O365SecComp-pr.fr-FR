@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: Vous pouvez activer la fonctionnalité de recherche de journal d'audit dans le centre de sécurité & Compliance Center. Si vous changez d'avis, vous pouvez le désactiver à tout moment. Lorsque le paramètre de recherche du journal d'audit est désactivé, les administrateurs ne peuvent pas rechercher dans le journal d'audit Office 365 des activités de l'utilisateur et de l'administrateur dans votre organisation.
 ms.openlocfilehash: 0619b19f9dc6e8bdc21e26275f02a81948b40bf4
-ms.sourcegitcommit: 69d0c739a2f3b4a335b42182a2c7267ef554eb76
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "31389708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265374"
 ---
 # <a name="turn-office-365-audit-log-search-on-or-off"></a>Activer ou désactiver la recherche dans un journal d’audit Office 365
 

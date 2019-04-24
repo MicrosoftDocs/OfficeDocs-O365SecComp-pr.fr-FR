@@ -1,5 +1,5 @@
 ---
-title: Rechercher des données dans une enquête
+title: Rechercher des données dans une investigation
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 5f52f26c4443addd0e108794e1d3635a9b8efb98
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258052"
 ---
-# <a name="search-for-data-in-an-investigation"></a>Rechercher des données dans une enquête
+# <a name="search-for-data-in-an-investigation"></a>Rechercher des données dans une investigation
 
 Sous l'onglet **Rechercher** dans une enquête de données, vous pouvez rechercher des données déplacées, confidentielles ou sensibles dans les emplacements de contenu dans Office 365 à l'aide de mots clés et de conditions. 
 

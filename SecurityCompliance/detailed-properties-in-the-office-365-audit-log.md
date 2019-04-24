@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Descriptions des propriétés supplémentaires incluses dans un enregistrement de journal d'audit Office 365.
 ms.openlocfilehash: f64b514b777c08048e0f904c17e21c235f8a6f23
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000327"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257646"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Propriétés détaillées dans le journal d’audit Office 365
 
@@ -60,7 +60,7 @@ Le tableau suivant décrit les propriétés incluses, selon le service Office 36
 |LogonType|Type d'accès à la boîte aux lettres. Les valeurs suivantes indiquent le type d'utilisateur qui a accédé à la boîte aux lettres.  <br/><br/> **0** -indique un propriétaire de boîte aux lettres.<br/> **1** -indique un administrateur.<br/> **2** -indique un délégué. <br/>**3** -indique le service de transport dans le centre de Microsoft.<br/> **4** -indique un compte de service dans le centre de Microsoft. <br/>**6** -indique un administrateur délégué.|Exchange (activité de boîte aux lettres)|
 |MailboxGuid|GUID Exchange de la boîte aux lettres consultée.|Exchange (activité de boîte aux lettres)|
 |MailboxOwnerUPN|Adresse de messagerie du propriétaire de la boîte aux lettres consultée.|Exchange (activité de boîte aux lettres)|
-|Membres|Répertorie les utilisateurs qui ont été ajoutés ou supprimés d'une équipe. Les valeurs suivantes indiquent le type de rôle affecté à l'utilisateur.  <br/><br/> **1** -indique le rôle de propriétaire.<br/> **2** -indique le rôle de membre.<br/> **3** -indique le rôle invité. <br/><br/>La propriété Members inclut également le nom de votre organisation et l'adresse de messagerie du membre.|Microsoft Teams|
+|Members|Répertorie les utilisateurs qui ont été ajoutés ou supprimés d'une équipe. Les valeurs suivantes indiquent le type de rôle affecté à l'utilisateur.  <br/><br/> **1** -indique le rôle de propriétaire.<br/> **2** -indique le rôle de membre.<br/> **3** -indique le rôle invité. <br/><br/>La propriété Members inclut également le nom de votre organisation et l'adresse de messagerie du membre.|Microsoft Teams|
 |ModifiedProperties (Name, NewValue, OldValue)|La propriété est incluse pour les événements d’administration, par exemple l’ajout d’un utilisateur en tant que membre d’un site ou d’un groupe d’administration d’une collection de sites. La propriété inclut le nom de la propriété qui a été modifiée (par exemple, le groupe administrateurs de site) la nouvelle valeur de la propriété modifiée (par exemple, l'utilisateur qui a été ajouté en tant qu'administrateur de site, et la valeur précédente de l'objet modifié.|All (activité de l'administrateur)|
 |ObjectID|Pour la journalisation d’audit d’administration Exchange, il s’agit du nom de l’objet modifié par la cmdlet.  <br/> Pour l'activité SharePoint, le nom du chemin d'accès complet de l'URL du fichier ou du dossier auquel un utilisateur a accédé.  <br/> Pour l'activité Azure AD, le nom du compte d'utilisateur qui a été modifié.|Tous|
 |Opération|Nom de l’activité de l’utilisateur ou de l’administrateur. La valeur de cette propriété correspond à la valeur sélectionnée dans la liste déroulante **activités** . Si l'option **afficher les résultats pour toutes les activités** a été sélectionnée, le rapport inclura les entrées de toutes les activités d'utilisateur et d'administration de tous les services. Pour obtenir une description des opérations/activités qui sont consignées dans le journal d'audit Office 365, consultez l'onglet **activités auditées** dans Rechercher dans le [Journal d'audit dans le 365 Office](search-the-audit-log-in-security-and-compliance.md).  <br/> Pour une activité d’administration Exchange, cette propriété identifie le nom de la cmdlet qui a été exécutée.|Tous|
@@ -83,7 +83,7 @@ Le tableau suivant décrit les propriétés incluses, selon le service Office 36
 |TeamName|Nom d'une équipe dans Microsoft Teams.|Microsoft Teams|
 |UserAgent|Informations sur le navigateur de l'utilisateur. Ces informations sont fournies par le navigateur.|SharePoint|
 |UserDomain|Informations d'identité sur l'organisation cliente de l'utilisateur (acteur) qui a effectué l'action.|Azure Active Directory|
-|Identifi|Utilisateur qui a effectué l'action (spécifié dans la propriété **operation** ) ayant provoqué l'enregistrement journalisé. Notez que les enregistrements de l'activité effectuée par les comptes système (par exemple, SHAREPOINT\system ou NT AUTHORITY\SYSTEM) sont également inclus dans le journal d'audit.|Tous|
+|UserID|Utilisateur qui a effectué l'action (spécifié dans la propriété **operation** ) ayant provoqué l'enregistrement journalisé. Notez que les enregistrements de l'activité effectuée par les comptes système (par exemple, SHAREPOINT\system ou NT AUTHORITY\SYSTEM) sont également inclus dans le journal d'audit.|Tous|
 |UserKey|Autre ID pour l'utilisateur identifié dans la propriété **userid** . Par exemple, cette propriété est renseignée avec l'ID unique Passport (PUID) pour les événements exécutés par les utilisateurs dans SharePoint. Cette propriété peut également spécifier la même valeur que celle de la propriété **userid** pour les événements survenus dans d'autres services et événements exécutés par des comptes système.|Tous|
 |UserSharedWith|Utilisateur avec lequel une ressource a été partagée. Cette propriété est incluse si la valeur de la propriété **operation** est **SharingSet**. Cet utilisateur est également mentionné dans la colonne **partagé avec** du rapport.|SharePoint|
 |UserType|Type d’utilisateur ayant effectué l’opération. Les valeurs suivantes indiquent le type d'utilisateur. <br/> <br/> **0** -un utilisateur normal. <br/>**2** -un administrateur de votre organisation Office 365. <br/>**3** -un compte d'administrateur ou de système de centre de connaissances Microsoft. <br/>**4** -un compte système. <br/>**5** -une application. <br/>**6** -un principal de service.<br/>**7** -une stratégie personnalisée.<br/>**8** -une stratégie système.|Tous|

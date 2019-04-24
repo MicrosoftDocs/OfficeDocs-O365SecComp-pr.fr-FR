@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez l'Explorateur (également appelé Explorateur de menaces) dans le &amp; Centre de sécurité conformité.
 ms.openlocfilehash: c782e5962164b7d35947befe526c20f7dc0943d5
-ms.sourcegitcommit: 691370682825a7601bd4b77d0a8c4b51ed15682f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "31014013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264704"
 ---
 # <a name="use-threat-explorer-in-the-security-amp-compliance-center"></a>Utiliser Threat Explorer dans le centre &amp; de sécurité conformité
 

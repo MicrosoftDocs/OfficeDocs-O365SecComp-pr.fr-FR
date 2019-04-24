@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: Cet article décrit la nouvelle outil d'évaluation des données (aperçu) de Microsoft 365.
 ms.openlocfilehash: 11ba4d0870461695d327577396ccd535ac4340e1
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257716"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Vue d'ensemble des enquêtes de données (aperçu) dans Microsoft 365
 
@@ -43,9 +43,9 @@ Utilisez l'onglet **preuve** pour examiner les données que vous avez collectée
 
 Vous pouvez également exécuter l'analyse avancée sur les preuves que vous collectez. Cela peut vous fournir des thèmes généraux et organiser des preuves par des threads de messagerie, des doublons exacts et des doublons pour faciliter votre enquête. Vous pouvez passer en revue les documents dans l'affichage de texte extrait ou dans le format de fichier natif, et les baliser avec les résultats de l'enquête. Pour plus d'informations, consultez les rubriques suivantes :
 
-  - [Examiner les données dans les preuves](review-data-in-evidence.md)
+  - [Consulter les données dans des preuves](review-data-in-evidence.md)
 
-  - [Exécuter des analyses pour une analyse plus rapide](run-analytics-to-investigate-faster.md)
+  - [Exécuter les données d’analyse pour investiguer plus rapidement](run-analytics-to-investigate-faster.md)
 
 
 ## <a name="managing-people-of-interest"></a>Gestion des personnes concernées

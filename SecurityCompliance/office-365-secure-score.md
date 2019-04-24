@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
 description: Vous avez jamais étonnant quelle est la sécurisation de votre organisation dans Office 365? Le score de sécurité est là pour vous aider. Le score sécurisé analyse la sécurité de votre organisation en fonction de vos activités normales et des paramètres de sécurité dans Office 365 et affecte un score.
 ms.openlocfilehash: dd0dc87910853eba9f2ec3ec6752e857462b46e5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262450"
 ---
 # <a name="office-365-secure-score"></a>Secure Score Office 365
 
@@ -36,7 +36,7 @@ Le widget inclut un lien vers votre tableau de bord de score sécurisé.
 
 ![Tableau de bord de score sécurisé](media/SecureScore-WelcomeScreen.png)
   
-## <a name="how-it-works"></a>Fonctionnement
+## <a name="how-it-works"></a>Mode de fonctionnement
 
 Le score de sécurité détermine les services Office 365 que vous utilisez (par exemple, OneDrive, SharePoint et Exchange), puis compare vos paramètres et activités à une base établie par Microsoft. Vous obtiendrez un score en fonction de la manière dont votre organisation est bien alignée sur les meilleures pratiques en matière de sécurité. Vous obtiendrez également des recommandations sur les étapes que vous pouvez suivre pour améliorer le score de votre organisation. 
   
@@ -80,7 +80,7 @@ Pour afficher et utiliser votre tableau de bord de score sécurisé, vous devez 
 - Administrateur de mots de passe
 - Administrateur de sécurité
 - Lecteur de sécurité
-- Administrateur Exchange
+- Administrateur Exchange
 - Administrateur SharePoint
 
  Les utilisateurs qui ne sont pas affectés à un rôle d'administrateur ne peuvent pas accéder au score sécurisé.

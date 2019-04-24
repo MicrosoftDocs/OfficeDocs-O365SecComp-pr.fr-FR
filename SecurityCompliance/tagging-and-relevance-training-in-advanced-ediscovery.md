@@ -1,5 +1,5 @@
 ---
-title: Marquage et formation au module Pertinence dans Office 365 Advanced eDiscovery
+title: Étiquetage et formation à la pertinence dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: "Découvrez les étapes à suivre pour marquer, puis utiliser un exemple de formation de 40 fichiers pendant la phase de formation pertinence d'Office 365 Advanced eDiscovery.  "
 ms.openlocfilehash: e8c9c02d72a756565f6fe59011a6788f592463eb
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260404"
 ---
-# <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Marquage et formation au module Pertinence dans Office 365 Advanced eDiscovery
+# <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Étiquetage et formation à la pertinence dans Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -48,7 +48,7 @@ Une fois l'évaluation terminée dans Advanced eDiscovery et que vous entrez l'�
 |:-----|:-----|:-----|:-----|
 |R  <br/> |Y  <br/> |Z  <br/> |Maj + Z  <br/> |
 |NR  <br/> |Non pertinent  <br/> |X  <br/> |Maj + X  <br/> |
-|Ignoré  <br/> |Ignoré  <br/> |C  <br/> |Maj + A  <br/> |
+|Ignorer  <br/> |Ignorer  <br/> |C  <br/> |Maj + A  <br/> |
    
   - Lorsque plusieurs problèmes existent pour un fichier, après avoir balisé un problème, la sélection se déplace vers le prochain problème (le cas échéant). 
     
@@ -66,7 +66,7 @@ Une fois l'évaluation terminée dans Advanced eDiscovery et que vous entrez l'�
     
     Les fichiers ignorés ne sont pas considérés comme des objectifs de formation et de notation de pertinence.
     
-3. Les commentaires en texte libre, associés à un fichier, peuvent être affichés et modifiés via l'option **Commentaire** dans la liste déroulante du volet de gauche. module 
+3. Les commentaires en texte libre, associés à un fichier, peuvent être affichés et modifiés via l'option **Commentaire** dans la liste déroulante du volet de gauche. (facultatif) 
     
 4. Vous pouvez afficher les instructions de marquage en sélectionnant l'option **indications de marquage** dans la liste déroulante volet de gauche. 
     

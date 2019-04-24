@@ -11,13 +11,13 @@ localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: Les rapports d'audit dans Microsoft Exchange Online Protection (EOP) peuvent vous aider à respecter les exigences en matière de réglementation, de conformité et de litiges pour votre organisation. Vous pouvez obtenir des rapports d'audit à tout moment pour déterminer les modifications qui ont été apportées à votre configuration EOP. Ces rapports peuvent vous aider à résoudre les problèmes de configuration ou à trouver la cause des problèmes de sécurité ou de conformité.
 ms.openlocfilehash: b2b62939d4330b62e3cb78d682f6ac62251bb5bb
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256652"
 ---
-# <a name="auditing-reports-in-eop"></a>Rapports d'audit dans EOP
+# <a name="auditing-reports-in-eop"></a>Rapports d’audit dans EOP
 
 Les rapports d'audit dans Microsoft Exchange Online Protection (EOP) peuvent vous aider à respecter les exigences en matière de réglementation, de conformité et de litiges pour votre organisation. Vous pouvez obtenir des rapports d'audit à tout moment pour déterminer les modifications qui ont été apportées à votre configuration EOP. Ces rapports peuvent vous aider à résoudre les problèmes de configuration ou à trouver la cause des problèmes de sécurité ou de conformité.
   

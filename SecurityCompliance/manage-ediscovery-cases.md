@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: Utilisez le centre de sécurité & Compliance Center pour créer des conservations eDiscovery, et pour accéder à des cas eDiscovery dans votre organisation et les gérer.
 ms.openlocfilehash: 209f31187ad01ffa3e06cf8a5825c4538715fc7d
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253020"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Gérer des cas de découverte électronique dans le Centre de conformité et sécurité
 

@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Les utilisateurs doivent disposer d'autorisations dans le centre de sécurité &amp; conformité Office 365 avant de pouvoir gérer les fonctionnalités de sécurité ou de conformité.
 ms.openlocfilehash: 08b3781ceb48b9a8d5933a075106d7bd3b9ab17d
-ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30997233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253966"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>Donner aux utilisateurs l'accès au centre de &amp; sécurité conformité Office 365
 
@@ -29,7 +29,7 @@ Les utilisateurs doivent disposer d'autorisations dans le centre de sécurité &
   
 Pour plus d'informations sur les différentes autorisations que vous pouvez accorder aux utilisateurs dans &amp; le centre de sécurité conformité, consultez [la rubrique autorisations dans &amp; le centre de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md).
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 - Vous devez être un administrateur général Office 365 ou un membre du groupe de rôles OrganizationManagement dans le centre de sécurité &amp; conformité pour effectuer les étapes décrites dans cet article.
     

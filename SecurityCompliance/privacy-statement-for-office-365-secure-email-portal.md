@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 'Dernière mise à jour: mai 2017'
 ms.openlocfilehash: 5e7927bacb6513f01a276ef6487346f319ffb704
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265266"
 ---
 # <a name="privacy-statement-for-office-365-secure-email-portal"></a>Déclaration de confidentialité pour le portail de messagerie sécurisée Office 365
 
@@ -51,6 +51,6 @@ Redmond, Washington 98052 États-Unis
   
 ## <a name="changes"></a>Modifications
 
-Si nous publiez les modifications apportées à cette déclaration, nous allons modifier les données «dernière mise à jour» en haut de l'instruction. Consultez l'organisation qui vous permet d'accéder à leurs services pour en savoir plus sur les modifications apportées aux pratiques de confidentialité.
+Si nous publiez les modifications apportées à cette déclaration, nous allons modifier les données «dernière mise à jour» en haut de l'instruction. Contactez l’organisation qui vous fournit l’accès aux services pour en savoir plus sur les modifications des pratiques de confidentialité.
   
 

@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 5f02d20f-b9aa-4b2f-ad2d-506a4a3c4540
 description: "Avec la sécurité des applications Cloud d'Office 365, les actions de gouvernance que vous pouvez effectuer sont la suspension ou l'annulation de l'interruption d'un compte d'utilisateur. "
 ms.openlocfilehash: d162be9d4e5382c6c03c63ae1b30043edbf0295b
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260306"
 ---
 # <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>Suspendre ou restaurer un compte d’utilisateur dans la sécurité des applications cloud Office 365
 

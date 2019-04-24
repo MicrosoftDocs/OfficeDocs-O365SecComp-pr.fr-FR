@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
 description: 'Découvrez les étiquettes, les modules croisés et les paramètres de locataire que vous pouvez définir au niveau du cas dans Office 365 Advanced eDiscovery.  '
 ms.openlocfilehash: 2e95984651bf4da86bd64cfc3730fae75391410d
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256912"
 ---
 # <a name="define-case-and-tenant-settings-in-office-365-advanced-ediscovery"></a>Définir les paramètres de cas et de client dans Office 365 Advanced eDiscovery
 

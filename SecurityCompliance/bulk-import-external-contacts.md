@@ -13,12 +13,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: Découvrez comment les administrateurs peuvent utiliser Exchange Online PowerShell et un fichier CSV pour importer en bloc des contacts externes dans la liste d'adresses globale.
-ms.openlocfilehash: f95adcd54ebf2194536a199bca6fecf417064882
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: 2948332d7cdf2d1364b2b563f94efdb3e8d0672d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32244501"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Importation en bloc de contacts externes vers Exchange Online
 
@@ -91,7 +91,7 @@ L'étape suivante consiste à utiliser le fichier CSV que vous avez créé à l'
     Les contacts importés apparaissent dans le carnet d'adresses partagé d'Outlook et d'Outlook sur le Web.
     
     > [!NOTE]
-    > vous pouvez également afficher les contacts dans le centre d'administration Office 365 en accédant à **utilisateurs** \> et **contacts**. 
+    > vous pouvez également afficher les contacts dans le centre d'administration Microsoft 365 en accédant à **utilisateurs** \> et **contacts**. 
 
 ## <a name="step-3-add-information-to-the-properties-of-the-external-contacts"></a>Étape 3: ajouter des informations aux propriétés des contacts externes
 
@@ -134,7 +134,7 @@ Vous pouvez répéter les étapes 1 à 3 pour ajouter de nouveaux contacts exter
   
 ## <a name="hide-external-contacts-from-the-shared-address-book"></a>Masquer les contacts externes à partir de l'adresse partagée book>
 
-Certaines sociétés peuvent utiliser des contacts externes uniquement afin qu'ils puissent être ajoutés en tant que membres des groupes de distribution. Dans ce scénario, ils peuvent souhaiter masquer des contacts externes à partir du carnet d'adresses partagé. Procédez ainsi :
+Certaines sociétés peuvent utiliser des contacts externes uniquement afin qu'ils puissent être ajoutés en tant que membres des groupes de distribution. Dans ce scénario, ils peuvent souhaiter masquer des contacts externes à partir du carnet d'adresses partagé. Voici comment procéder :
   
 1.  Connectez PowerShell à votre organisation Exchange Online. Pour obtenir des instructions détaillées, consultez la rubrique [connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
     

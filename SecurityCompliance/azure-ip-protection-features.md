@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Pour vous aider avec la première étape de la protection de vos informations, à partir du 1er juillet 2018, tous les clients éligibles Azure information protection disposent par défaut des fonctionnalités de protection d'Azure information protection. Les fonctionnalités de protection d'Azure information protection étaient précédemment connues dans Office 365 en tant que gestion des droits ou Azure RMS. Si votre organisation dispose d'un plan de service E3 Office ou d'un plan de service supérieur, vous recevrez maintenant une tête de protection des informations via Azure information protection lors de la mise en route de ces fonctionnalités.
 ms.openlocfilehash: 2484f9b335a6698894046aaf429fdad68d82491e
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243973"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-office-365-tenants"></a>Fonctionnalités de protection dans Azure information protection pour les clients Office 365 existants
 
@@ -49,11 +49,11 @@ Le chiffrement de messages Office 365 exploite les fonctionnalités de protectio
 
 Si votre organisation Office 365 a acheté une licence Office 365 éligible, votre client sera affecté par cette modification.
   
- **Important!** Si vous utilisez les services AD RMS (Active Directory Rights Management Services) dans votre environnement local, vous devez annuler cette modification immédiatement ou migrer vers Azure information protection avant de déployer ces modifications au cours des 30 prochains jours. Pour plus d'informations sur la façon d'annuler l'abonnement, voir «j'utilise AD RMS, comment choisir out?» plus loin dans cet article. Si vous préférez effectuer une migration, reportez-vous à la rubrique [migration d'AD RMS vers Azure information protection.](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
+ **INDISPENSABLES!** Si vous utilisez les services AD RMS (Active Directory Rights Management Services) dans votre environnement local, vous devez annuler cette modification immédiatement ou migrer vers Azure information protection avant de déployer ces modifications au cours des 30 prochains jours. Pour plus d'informations sur la façon d'annuler l'abonnement, voir «j'utilise AD RMS, comment le désactiver?». » plus loin dans cet article. Si vous préférez effectuer une migration, reportez-vous à la rubrique [migration d'AD RMS vers Azure information protection.](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
   
 ## <a name="can-i-use-azure-information-protection-with-active-directory-rights-management-services-ad-rms"></a>Puis-je utiliser Azure information protection avec Active Directory Rights Management Services (AD RMS)?
 
-Nbre. Il ne s'agit pas d'un scénario de déploiement pris en charge. Sans prendre les autres étapes de désabonnement, certains ordinateurs peuvent démarrer automatiquement à l'aide du service Azure Rights Management et se connecter à votre cluster AD RMS. Ce scénario n'est pas pris en charge et présente des résultats peu fiables, c'est pourquoi il est important de désactiver ces modifications au cours des 30 prochains jours avant de déployer ces nouvelles fonctionnalités. Pour plus d'informations sur la façon d'annuler l'abonnement, voir «j'utilise AD RMS, comment choisir out?» plus loin dans cet article. Si vous préférez effectuer une migration, reportez-vous à la rubrique [migration d'AD RMS vers Azure information protection.](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
+Non. Il ne s'agit pas d'un scénario de déploiement pris en charge. Sans prendre les autres étapes de désabonnement, certains ordinateurs peuvent démarrer automatiquement à l'aide du service Azure Rights Management et se connecter à votre cluster AD RMS. Ce scénario n'est pas pris en charge et présente des résultats peu fiables, c'est pourquoi il est important de désactiver ces modifications au cours des 30 prochains jours avant de déployer ces nouvelles fonctionnalités. Pour plus d'informations sur la façon d'annuler l'abonnement, voir «j'utilise AD RMS, comment le désactiver?». » plus loin dans cet article. Si vous préférez effectuer une migration, reportez-vous à la rubrique [migration d'AD RMS vers Azure information protection.](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
   
 ## <a name="how-do-i-know-if-im-using-ad-rms"></a>Comment savoir si j'utilise AD RMS?
 

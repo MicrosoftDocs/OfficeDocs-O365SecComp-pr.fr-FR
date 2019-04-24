@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Utilisez des limites de conformité pour créer des limites logiques au sein d'une organisation Office 365 qui contrôlent les emplacements de contenu utilisateur qu'un gestionnaire eDiscovery peut rechercher. Les limites de conformité utilisent le filtrage des autorisations de recherche (également appelé filtres de sécurité de conformité) pour contrôler les boîtes aux lettres, les sites SharePoint et les comptes OneDrive pouvant être recherchés par des utilisateurs spécifiques.
 ms.openlocfilehash: b23c6d0c96874fb7e6205de6bf8a7f4eb00e4254
-ms.sourcegitcommit: 691370682825a7601bd4b77d0a8c4b51ed15682f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "31014023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264654"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurer les limites de conformité pour les enquêtes eDiscovery dans Office 365
 
@@ -56,7 +56,7 @@ La première étape consiste à choisir un attribut Azure Active Directory à ut
   
 Voici une liste d'attributs d'utilisateur Azure Active Directory que vous pouvez utiliser pour les limites de conformité:
   
-- Company
+- Société
     
 - CustomAttribute1-CustomAttribute15
     
@@ -190,7 +190,7 @@ Les filtres d'autorisations de recherche vous permettent également de contrôle
     |**Valeur du paramètre**|**Emplacement du centre de**|
     |:-----|:-----|
     |NAM  <br/> |Amérique du Nord (les centres de centres réels sont aux États-Unis)  <br/> |
-    |EUR  <br/> |Européen  <br/> |
+    |EUR  <br/> |Europe  <br/> |
     |APC  <br/> |Asie-Pacifique  <br/> |
     |CAN <br/> |Canada
     
@@ -201,12 +201,12 @@ Les filtres d'autorisations de recherche vous permettent également de contrôle
     |**Valeur du paramètre**|**Emplacements de routage de centre de ressources pour l'exportation**|
     |:-----|:-----|
     |NAM  <br/> |Contacter  <br/> |
-    |EUR  <br/> |Européen  <br/> |
+    |EUR  <br/> |Europe  <br/> |
     |APC  <br/> |Asie-Pacifique  <br/> |
     |CAN  <br/> |Contacter  <br/> |
     |AUS  <br/> |Asie-Pacifique  <br/> |
     |KOR  <br/> |Centre de données par défaut de l'Organisation  <br/> |
-    |GBR  <br/> |Européen  <br/> |
+    |GBR  <br/> |Europe  <br/> |
     |JPN  <br/> |Asie-Pacifique  <br/> |
     |IND  <br/> |Asie-Pacifique  <br/> |
     |BARRÉ  <br/> |Contacter  <br/> |

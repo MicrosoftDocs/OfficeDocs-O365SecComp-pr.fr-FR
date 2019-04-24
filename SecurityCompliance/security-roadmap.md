@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: "Principales recommandations de l'équipe Cybersecurity de Microsoft pour la mise en œuvre de fonctionnalités de sécurité pour protéger votre environnement Office 365. "
 ms.openlocfilehash: ba74827c34a869ee11553f02d9085b6f015b2d9d
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260922"
 ---
 # <a name="office-365-security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Feuille de route de sécurité Office 365-priorités principales des 30 premiers jours, 90 jours et au-delà
 

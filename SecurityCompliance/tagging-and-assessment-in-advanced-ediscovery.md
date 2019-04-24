@@ -1,5 +1,5 @@
 ---
-title: Marquage et évaluation dans Office 365 Advanced eDiscovery
+title: Balisage et évaluation dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 description: "Examinez les étapes pour effectuer une formation à l'évaluation, notamment des fichiers de marquage, et en examinant les résultats de l'évaluation dans Office 365 Advanced eDiscovery. "
 ms.openlocfilehash: 02dae23b6489b40243272beea1d79e871ca6a911
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260352"
 ---
-# <a name="tagging-and-assessment-in-office-365-advanced-ediscovery"></a>Marquage et évaluation dans Office 365 Advanced eDiscovery
+# <a name="tagging-and-assessment-in-office-365-advanced-ediscovery"></a>Balisage et évaluation dans Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

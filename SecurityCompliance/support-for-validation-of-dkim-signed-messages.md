@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: En savoir plus sur la validation des messages signés DKIM dans Exchange Online Protection et Exchange Online
 ms.openlocfilehash: b1e2af0511c3aa9eb819206aa859ad96e834e3ec
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30691664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260242"
 ---
 # <a name="support-for-validation-of-dkim-signed-messages"></a>Prise en charge de la validation des messages signés DKIM
 

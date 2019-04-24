@@ -3,23 +3,22 @@ title: Isolation du client dans Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Résumé de la manière dont Microsoft applique l'isolation du client pour Office 365.
-ms.openlocfilehash: dceff3b73ac01d3e0422a190d450ee28f7fdfb27
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 87fd8cddce830ef58bcaa08462d6bcb120d1e05f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262376"
 ---
 # <a name="tenant-isolation-in-office-365"></a>Isolation du client dans Office 365
 

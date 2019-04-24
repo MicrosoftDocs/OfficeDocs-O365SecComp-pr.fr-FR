@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: "Un Conseil de stratégie est une notification ou un avertissement qui s'affiche lorsqu'un utilisateur travaille avec du contenu qui entre en conflit avec une stratégie DLP. Vous pouvez utiliser des notifications par courrier électronique et des conseils de stratégie pour sensibiliser les utilisateurs aux stratégies de votre organisation. Vous pouvez également donner aux utilisateurs la possibilité de remplacer la stratégie, afin qu'ils ne soient pas bloqués s'ils ont un besoin opérationnel valide ou si la stratégie détecte un faux positif. "
 ms.openlocfilehash: b598b665de3d45846e221ea4c1b5c2f49a659c6b
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263876"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Envoyer des notifications par courrier électronique et afficher des conseils de stratégie pour les stratégies DLP
 
@@ -211,7 +211,7 @@ Actuellement, Outlook 2013 et les versions ultérieures prennent en charge l'aff
 - Le contenu contient
 - Le contenu est partagé
 
-Nous travaillons actuellement sur la prise en charge de l'affichage des conseils de stratégie pour des conditions supplémentaires. Ces situations sont les suivantes :
+Nous travaillons actuellement sur la prise en charge de l'affichage des conseils de stratégie pour des conditions supplémentaires. Ces approches sont les suivantes :
 
 - Le contenu d'une pièce jointe de courrier électronique n'a pas pu être analysé
 - Le contenu d'une pièce jointe de courrier électronique n'a pas terminé l'analyse

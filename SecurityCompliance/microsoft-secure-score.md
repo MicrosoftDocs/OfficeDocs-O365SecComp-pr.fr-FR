@@ -13,11 +13,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.openlocfilehash: fa76e2edd3f66595a47fb511881f15c07b441c77
-ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "31043245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252304"
 ---
 # <a name="microsoft-secure-score"></a>Degré de sécurisation Microsoft
 
@@ -25,7 +25,7 @@ Avec le score de sécurité Microsoft dans le centre de sécurité Microsoft 365
 
 Microsoft Secure score vous offre des visualisations robustes, l'intégration à d'autres produits Microsoft, la comparaison de votre score avec d'autres sociétés, le filtrage par catégorie, et bien plus encore. Avec cet outil, vous pouvez effectuer des actions d'amélioration de la sécurité au sein de votre organisation et suivre l'historique de votre score. Le score peut également indiquer quand les solutions tierces ont résolu les actions d'amélioration recommandées.  
 
-## <a name="how-it-works"></a>Fonctionnement
+## <a name="how-it-works"></a>Mode de fonctionnement
 
 Vous disposez de points pour configurer les fonctionnalités de sécurité recommandées, effectuer des tâches liées à la sécurité (telles que l'affichage des rapports) ou traiter l'action d'amélioration avec une application ou un logiciel tiers. Certaines actions sont évaluées pour une exécution partielle, comme l'activation de l'authentification multifacteur (MFA) pour vos utilisateurs. La sécurité doit toujours être équilibrée avec la convivialité et toutes les recommandations ne fonctionnent pas pour votre environnement.
 

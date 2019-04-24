@@ -14,22 +14,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1183264f64a74e50f750ee13618f7532ffe04eb7
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 510a10386ea51c0397408450f9fc700e9ce6db9c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241110"
 ---
 # <a name="tag-documents-in-a-working-set"></a>Baliser des documents dans un ensemble de travail
 
-L'organisation du contenu dans un jeu de travail est importante pour effectuer différents flux de travail dans le processus de découverte électronique. Celles-ci incluent les valeurs suivantes :
+L'organisation du contenu dans un jeu de travail est importante pour effectuer différents flux de travail dans le processus de découverte électronique. Cela inclut les opérations suivantes :
 
--  Élimination du contenu inutile.
+-  Élimination de contenu inutile
 
-- Identifier le contenu pertinent.
+- Identification du contenu pertinent
  
--  Identifier le contenu qui doit être révisé par un expert ou un avocat.
+-  Identification du contenu qui doit être révisé par un expert ou un avocat
 
 Lorsque des experts, des avocats ou d'autres utilisateurs consultent du contenu dans un jeu de travail, leurs opinions liées au contenu peuvent être capturées à l'aide de balises. Par exemple, si l'intention est d'effectuer une élimination de contenu inutile, un utilisateur peut marquer des documents avec une balise telle que «non réactif». Une fois que le contenu a été révisé et balisé, une recherche de jeu de travail peut être créée pour exclure le contenu marqué comme «non réactif», ce qui élimine ce contenu des étapes suivantes dans le flux de travail de découverte électronique. Le panneau des balises peut être personnalisé pour chaque cas afin que les balises puissent prendre en charge le flux de travail de révision prévu.
 

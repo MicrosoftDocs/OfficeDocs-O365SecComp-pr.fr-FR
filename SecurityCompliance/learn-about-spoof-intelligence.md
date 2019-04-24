@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Utilisez l'Assistant usurpation d'identité &amp; dans le centre de sécurité conformité de la page Paramètres anti-courrier indésirable pour examiner tous les expéditeurs qui usurpent l'identité des domaines qui font partie de votre organisation ou qui usurpent des domaines externes. L'intelligence d'usurpation d'identité est disponible dans le cadre d'Office 365 entreprise E5 ou séparément dans le cadre de la protection avancée contre les menaces et d'Exchange Online Protection.
 ms.openlocfilehash: 0d18b5f011597266a3a975d49722e88b411c52d8
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252252"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>En savoir plus sur l’usurpation d’identité
 

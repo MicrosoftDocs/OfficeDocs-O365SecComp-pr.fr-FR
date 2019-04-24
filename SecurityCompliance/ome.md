@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: Avec le chiffrement de messages Office 365, votre organisation peut envoyer et recevoir des messages électroniques chiffrés entre des personnes à l'intérieur et à l'extérieur de votre organisation. Le chiffrement des messages électroniques permet de s'assurer que seuls les destinataires prévus peuvent afficher le contenu du message.
 ms.openlocfilehash: 06c43bcb3364b83114e2d7b1a2ef0273858cffb0
-ms.sourcegitcommit: 895f67531f2b4afe46c7487ca5b44555ca791bae
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "31836808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261312"
 ---
 # <a name="office-365-message-encryption"></a>Chiffrement de messages Office 365
 

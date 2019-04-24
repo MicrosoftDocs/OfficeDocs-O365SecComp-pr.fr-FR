@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 3e68e691-1fc4-4d3e-a2c0-d3134eb64055
 description: Créer des rapports avec la sécurité des applications Cloud Office 365 qui vous permettent de comprendre comment les personnes de votre organisation utilisent Office 365 et d'autres applications.
 ms.openlocfilehash: 23165a52a09e5bcde46ee3ab2110dc17d0faf7f4
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259636"
 ---
 # <a name="create-app-discovery-reports-using-office-365-cloud-app-security"></a>Créer des rapports de découverte d’application à l’aide de la sécurité des applications cloud Office 365
 

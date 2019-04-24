@@ -12,21 +12,21 @@ search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
-description: Découvrez comment automatiser des tâches de recherche de contenu, telles que la création de recherches et l'exécution de rapports &amp; via des scripts PowerShell dans le centre de sécurité conformité Office 365.
-ms.openlocfilehash: 740f3384e5d4f26e09512cc846ad8779bcbc31ef
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+description: Découvrez comment automatiser des tâches de recherche de contenu, telles que la création de recherches et l'exécution de rapports via des scripts PowerShell dans le centre de sécurité & Compliance Center dans Office 365.
+ms.openlocfilehash: 96d10e274cd83a4785170239302d55e74d40ca84
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258434"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Créer, générer des rapports et supprimer plusieurs recherches de contenu
 
- La création et la création rapide de rapports de recherches de découverte est souvent une étape importante dans eDiscovery et des investigations lorsque vous essayez d'en savoir plus sur les données sous-jacentes, ainsi que la richesse et la qualité de vos recherches. Pour vous aider, le centre de sécurité &amp; conformité offre un ensemble d'applets de commande Windows PowerShell pour automatiser les tâches de recherche de contenu gourmandes en temps. Ces scripts offrent un moyen rapide et simple de créer plusieurs recherches, puis d'exécuter des rapports sur les résultats de recherche estimés qui peuvent vous aider à déterminer la quantité de données en question. Vous pouvez également utiliser les scripts pour créer différentes versions des recherches afin de comparer les résultats générés par chacun d'entre eux. Ces scripts peuvent vous aider à identifier et à rechercher rapidement vos données. 
+ La création et la création rapide de rapports de recherches de découverte est souvent une étape importante dans eDiscovery et des investigations lorsque vous essayez d'en savoir plus sur les données sous-jacentes, ainsi que la richesse et la qualité de vos recherches. Pour vous aider, le centre de sécurité & Compliance Center PowerShell offre un ensemble d'applets de commande permettant d'automatiser les tâches de recherche de contenu gourmandes en temps. Ces scripts offrent un moyen rapide et simple de créer plusieurs recherches, puis d'exécuter des rapports sur les résultats de recherche estimés qui peuvent vous aider à déterminer la quantité de données en question. Vous pouvez également utiliser les scripts pour créer différentes versions des recherches afin de comparer les résultats générés par chacun d'entre eux. Ces scripts peuvent vous aider à identifier et à rechercher rapidement vos données. 
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Vous devez être membre du groupe de rôles gestionnaire eDiscovery dans le centre de sécurité &amp; conformité pour exécuter les scripts décrits dans cette rubrique. 
+- Vous devez être membre du groupe de rôles gestionnaire eDiscovery dans le centre de sécurité & Compliance Center pour exécuter les scripts décrits dans cette rubrique. 
     
 - Pour collecter une liste des URL pour les sites OneDrive entreprise de votre organisation que vous pouvez ajouter au fichier CSV à l'étape 1, reportez-vous à la rubrique [créer une liste de tous les emplacements OneDrive de votre organisation](https://support.office.com/article/Create-a-list-of-all-OneDrive-locations-in-your-organization-8e200cb2-c768-49cb-88ec-53493e8ad80a). 
     
@@ -68,7 +68,7 @@ Le fichier de valeurs séparées par des virgules (CSV) que vous créez dans cet
   
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Étape 2: Connectez-vous au centre de sécurité & Compliance Center PowerShell
 
-L'étape suivante consiste à connecter Windows PowerShell au centre de &amp; sécurité conformité de votre organisation.
+L'étape suivante consiste à vous connecter au centre de sécurité & Compliance Center pour votre organisation.
   
 1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l'aide d'un suffixe de nom de fichier. ps1; par exemple, `ConnectSCC.ps1`. Enregistrez le fichier dans le dossier dans lequel vous avez enregistré le fichier CSV à l'étape 1.
     
@@ -77,7 +77,7 @@ L'étape suivante consiste à connecter Windows PowerShell au centre de &amp; s�
     $UserCredential = Get-Credential 
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
     Import-PSSession $Session -AllowClobber -DisableNameChecking 
-    $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Office 365 Security &amp; Compliance Center)" 
+    $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
     ```
 
 2. Sur votre ordinateur local, ouvrez Windows PowerShell, accédez au dossier dans lequel se trouve le script que vous avez créé à l'étape précédente, puis exécutez le script; par exemple:

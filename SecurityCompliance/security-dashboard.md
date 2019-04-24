@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Utilisez le nouveau tableau de bord de sécurité pour consulter l'état de protection contre les menaces d'Office 365, et afficher et agir sur les alertes de sécurité.
 ms.openlocfilehash: 83e75f1a38038f1c95697f4db3e7b1134d03779d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261070"
 ---
 # <a name="security-dashboard"></a>Tableau de bord de sécurité
 
@@ -85,7 +85,7 @@ Les mesures sont calculées de la manière décrite dans le tableau suivant:
 |Bloqué par [](office-365-atp.md) la protection avancée contre les menaces |Nombre de messages électroniques bloqués par la protection avancée contre les menaces multiplié par le nombre de destinataires |
 |Supprimés après la remise |Nombre de messages supprimés par [purge automatique 0 heure](zero-hour-auto-purge.md) multiplié par le nombre de destinataires |
 
-## <a name="malware"></a>Programmes malveillants
+## <a name="malware"></a>Programme malveillant
 
 Les widgets de programmes malveillants affichent des informations sur les tendances des programmes malveillants et les types de familles de programmes malveillants au cours des sept derniers jours.
 
@@ -124,7 +124,7 @@ Pour afficher ou accéder au widget alertes de gestion des menaces récentes, vo
   
 [Afficher les rapports pour Office 365 protection avancée contre les menaces](view-reports-for-atp.md)
   
-[Office 365 - Protection avancée contre les menaces](office-365-atp.md)
+[Office 365-Protection avancée contre les menaces](office-365-atp.md)
   
 [Enquête et réponse aux menaces Office 365](office-365-ti.md)
   

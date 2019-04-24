@@ -15,11 +15,11 @@ ms.collection:
 - M365-analytics
 description: Vue d'ensemble des fonctionnalités d'audit et de création de rapports dans Office 365, Microsoft 365 et service assurance.
 ms.openlocfilehash: a5df0dcb6f762723c6ec0102b2c39f1bc157720c
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262966"
 ---
 # <a name="auditing-and-reporting-in-microsoft-cloud-services"></a>Audit et création de rapports dans les services Cloud de Microsoft
 

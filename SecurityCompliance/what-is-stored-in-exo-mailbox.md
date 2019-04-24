@@ -16,11 +16,11 @@ ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les données générées par des applications basées sur le nuage dans Office 365 sont stockées dans la boîte aux lettres Exchange Online d'un utilisateur dans le Cloud Microsoft.
 ms.openlocfilehash: 6f7a81842df5972a03648a2f93d4bd6fbd738fec
-ms.sourcegitcommit: 7a6c742a81bc8ebd55b5a437e835bcb85485cf99
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31520247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266896"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes"></a>Contenu stocké dans les boîtes aux lettres Exchange Online
 

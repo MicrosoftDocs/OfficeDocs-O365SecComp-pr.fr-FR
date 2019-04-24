@@ -15,11 +15,11 @@ ms.custom:
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: "Résumé: conFigurez un site d'équipe SharePoint Online isolé du reste de l'organisation dans votre environnement de développement/test Office 365."
 ms.openlocfilehash: 56c10b1a3871014f26a4d2fd98d9b4139d19ac47
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254360"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Site d’équipe SharePoint Online isolé dans votre environnement de développement/test
 
@@ -141,7 +141,7 @@ Résultats
     
 La figure 1 présente les groupes d'accès et leur appartenance.
   
-**Figure 1**
+**Figure 1**
 
 ![Les groupes Office 365 et leur appartenance pour un site de groupe SharePoint Online isolé](media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
   
@@ -207,7 +207,7 @@ Voici les résultats de la configuration des autorisations :
     
 La figure 2 présente les groupes SharePoint et leur appartenance.
   
-**Figure 2**
+**Figure 2**
 
 ![Groupes SharePoint Online et leur appartenance pour un site de groupe SharePoint Online isolé](media/595abff4-64f9-49de-a37a-c70c6856936b.png)
   

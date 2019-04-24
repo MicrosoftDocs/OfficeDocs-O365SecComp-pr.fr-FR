@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 3f47fa706220973942d6a11731f77f421bc4fbd3
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258972"
 ---
-# <a name="close-or-delete-an-investigation"></a>Fermer ou supprimer une enquête
+# <a name="close-or-delete-an-investigation"></a>Fermer ou supprimer une investigation
 
 ## <a name="close-an-investigation"></a>Fermer une enquête
 

@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Si vous envoyez un volume important de courrier non enregistré de domaine, vous risquez de bloquer le blocage de votre courrier. Lisez cet article pour en savoir plus.
 ms.openlocfilehash: 21c403c8072902565f63048782b06c531cdbceb0
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263986"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>Courrier électronique de domaine non enregistré: ce que vous devez savoir
 

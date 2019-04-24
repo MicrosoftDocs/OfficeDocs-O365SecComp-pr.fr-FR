@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: aac65513-e75e-4c82-a668-9a6604dd9f9d
 description: Examen des rapports de découverte d'application dans Office 365 Cloud App Security peut vous aider à en savoir plus sur la façon dont les employés de votre organisation utilisent des applications Cloud. Une fois que vous avez créé des rapports de découverte d'application à l'aide de fichiers journaux de vos pare-feu et de vos proxys, examinez les résultats dans le tableau de bord de découverte d'application.
 ms.openlocfilehash: f50ad372450b2a1404829eeb6f6964c1d954dccd
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264962"
 ---
 # <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>Passer en revue les détections d'applications dans la sécurité des applications cloud Office 365
   
@@ -81,7 +81,7 @@ Vous pouvez exclure certains utilisateurs ou adresses IP de votre système afin 
     
 4. Spécifiez les utilisateurs ou les adresses IP, puis dans la zone **Commentaires** , tapez des informations expliquant pourquoi vous excluez ces utilisateurs ou adresses IP. 
     
-5. Cliquez sur **Add (Ajouter)**.
+5. Sélectionnez **Ajouter**.
     
 ## <a name="next-steps"></a>Étapes suivantes
 

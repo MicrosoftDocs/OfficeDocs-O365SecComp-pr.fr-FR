@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Ces articles aident les expéditeurs externes à améliorer leur réputation et à augmenter leur capacité à remettre des e-mails à des utilisateurs dans Office 365. Ils fournissent également des informations sur la façon dont vous pouvez signaler du courrier indésirable et des tentatives de hameçonnage même si vous n'êtes pas un utilisateur d'Office 365.
 ms.openlocfilehash: c3f9b6e383b604985a125d270a46c0b0211e7071
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260912"
 ---
 # <a name="sending-mail-to-office-365"></a>Envoyer du courrier vers Office 365
 

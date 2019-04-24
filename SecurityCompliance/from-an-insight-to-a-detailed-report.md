@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment vous pouvez vous déplacer d'un aperçu d'un rapport détaillé dans le &amp; Centre de conformité de la sécurité via un exemple de protection contre la perte de données.
 ms.openlocfilehash: 101aeec71e724204018dee8d12d6c74a120578bf
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255382"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>Procédure pas à pas. D’un aperçu à un rapport détaillé
 

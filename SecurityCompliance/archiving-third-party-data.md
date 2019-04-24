@@ -3,7 +3,7 @@ title: Archivage de données tierces dans Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 9/5/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: Les administrateurs peuvent importer des données tierces à partir de plateformes de réseaux sociaux, de plateformes de messagerie instantanée et de documents de collaboration vers des boîtes aux lettres de votre organisation Office 365. Cela vous permet d'archiver des données à partir de Facebook, de Twitter et de sources de données dans Office 365. Vous pouvez ensuite appliquer les fonctionnalités de conformité d'Office 365 (telles que la conservation légale, la recherche de contenu et les stratégies de rétention) aux données tierces.
-ms.openlocfilehash: 06ac436b1583187e89cb7f1beb26411ba02becec
-ms.sourcegitcommit: 86ff2eba1d57b9d5288840788529e69ad9d836b6
+ms.openlocfilehash: 6e5f40328c54a6f2c97cb6cfe14a1bc5727ae087
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31818611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249602"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>Archivage de données tierces dans Office 365
 
@@ -505,7 +505,7 @@ Voici les étapes à suivre pour créer et configurer une boîte aux lettres de 
     
     - Placez la boîte aux lettres de données tierces en conservation pour litige. Vous pouvez également appliquer une stratégie de rétention Office 365 dans le centre de sécurité et de conformité. La mise en attente de cette boîte aux lettres permet de conserver des éléments de données tiers (indéfiniment ou pour une durée spécifiée) et de les empêcher d'être purgés de la boîte aux lettres. Consultez l'une des rubriques suivantes:
     
-      - [Placement d’une boîte aux lettres en conservation pour litige](https://go.microsoft.com/fwlink/p/?LinkId=404420)
+      - [Créer une suspension pour litige](create-a-litigation-hold.md)
     
       - [Vue d'ensemble des stratégies de rétention](retention-policies.md)
     
@@ -521,7 +521,7 @@ L’étape suivante consiste à configurer les boîtes aux lettres des utilisate
     
 2. Placer les boîtes aux lettres utilisateur en conservation pour litige ou appliquer une stratégie de rétention Office 365; consultez l'une des rubriques suivantes: 
     
-    - [Placement d’une boîte aux lettres en conservation pour litige](https://go.microsoft.com/fwlink/p/?LinkId=404420)
+    - [Créer une suspension pour litige](create-a-litigation-hold.md)
     
     - [Vue d'ensemble des stratégies de rétention](retention-policies.md)
     
@@ -573,7 +573,7 @@ Pour révoquer le consentement d'un connecteur de données tiers, vous pouvez su
     |**JOURS** <br/> |Oui  <br/> |Date à laquelle l’élément a été initialement créé ou publié dans la source de données du client, par exemple, date à laquelle un message Twitter a été publié.  <br/> | `01 NOV 2015` <br/> |
     |**ENTITÉ** <br/> |Non  <br/> |Contenu du message ou de la publication. Pour certaines sources de données, le contenu de cette propriété peut être identique au contenu de la propriété **SUBJECT**. Pendant le processus d’importation, le connecteur partenaire va tenter de maintenir une fidélité maximale à la source de contenu. Si possible, les fichiers, les graphiques ou tout autre contenu du corps de l’élément source sont inclus dans cette propriété. Sinon, le contenu de l’élément source est inclus dans la propriété **ATTACHMENT**. Le contenu de cette propriété dépend du connecteur du partenaire et de la capacité de la plateforme source.  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
     |**CONNEXION** <br/> |Non  <br/> |Si un élément de la source de données (par exemple, un tweet dans Twitter ou une conversation de messagerie instantanée) a un fichier joint ou inclut des images, le partenaire Connect tente d'abord d'inclure les pièces jointes dans la propriété **Body** . Si cela n'est pas possible, il est ajouté à la propriété * * ATTACHment * *. Voici d’autres exemples de pièces jointes : mentions J’aime sur Facebook, métadonnées de la source de contenu et réponses à un message ou une publication.  <br/> | `image.gif` <br/> |
-    |**MESSAGECLASS** <br/> |Oui  <br/> | Il s’agit d’une propriété à valeurs multiples, qui est créée et remplie par le connecteur partenaire. Le format de cette propriété est `IPM.NOTE.Source.Event`. (Cette propriété doit commencer par `IPM.NOTE`; ce format est similaire à celui de la `IPM.NOTE.X` classe de message.) Cette propriété inclut les informations suivantes:  <br/><br/>`Source` -Indique la source de données tierce; par exemple, Twitter, Facebook ou BlackBerry.  <br/> <br/>  `Event` -Indique le type d'activité qui a été effectué dans la source de données tierce qui a produit les éléments; par exemple, un tweet dans Twitter ou un billet dans Facebook. Les événements sont propres à la source de données.  <br/> <br/>  L’un des objectifs de cette propriété est de filtrer des éléments spécifiques en fonction de la source de données d’origine d’un élément ou en fonction du type d’événement. Par exemple, lors d’une recherche de découverte électronique, vous pouvez créer une requête de recherche afin de trouver tous les tweets qui ont été publiés par un utilisateur spécifique.  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
+    |**MESSAGECLASS** <br/> |Oui  <br/> | Il s’agit d’une propriété à valeurs multiples, qui est créée et remplie par le connecteur partenaire. Le format de cette propriété est `IPM.NOTE.Source.Event`. (Cette propriété doit commencer par `IPM.NOTE`; ce format est similaire à celui de la `IPM.NOTE.X` classe de message.) Cette propriété inclut les informations suivantes:  <br/><br/>`Source`-Indique la source de données tierce; par exemple, Twitter, Facebook ou BlackBerry.  <br/> <br/>  `Event`-Indique le type d'activité qui a été effectué dans la source de données tierce qui a produit les éléments; par exemple, un tweet dans Twitter ou un billet dans Facebook. Les événements sont propres à la source de données.  <br/> <br/>  L’un des objectifs de cette propriété est de filtrer des éléments spécifiques en fonction de la source de données d’origine d’un élément ou en fonction du type d’événement. Par exemple, lors d’une recherche de découverte électronique, vous pouvez créer une requête de recherche afin de trouver tous les tweets qui ont été publiés par un utilisateur spécifique.  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
    
 - Lorsque des éléments sont correctement importés dans des boîtes aux lettres dans Office 365, un identificateur unique est renvoyé à l'appelant dans le cadre de la réponse HTTP. Cet identificateur, appelé `x-IngestionCorrelationID`, peut être utilisé à des fins de dépannage ultérieure par les partenaires pour le suivi de bout en bout des éléments. Nous recommandons que vos partenaires récupèrent ces informations et les conservent de leur côté. Voici un exemple d’une réponse HTTP avec cet identifiant :
 

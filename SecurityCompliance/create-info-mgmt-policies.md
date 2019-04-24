@@ -18,11 +18,11 @@ ms.collection:
 - M365-security-compliance
 description: Les stratégies de gestion des informations permettent à votre organisation de contrôler la durée de conservation du contenu, d'auditer les opérations effectuées par les utilisateurs et d'ajouter des codes-barres ou des étiquettes aux documents. Une stratégie peut contribuer à renforcer la conformité aux réglementations juridiques et gouvernementales ou aux processus d'entreprise internes. En tant qu'administrateur, vous pouvez configurer une stratégie pour contrôler le suivi des documents et la durée de conservation des documents.
 ms.openlocfilehash: 1d17dd8cadb721478831ab8fe77413c08f959f29
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258840"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Créer et appliquer des stratégies de gestion des informations
 

@@ -3,23 +3,22 @@ title: Office 365 surveillance et test des limites client
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Résumé: explique comment Microsoft surveille et teste les frontières client pour Office 365.'
-ms.openlocfilehash: fce217bfcb5fec1ba3fb6da70eb6f9da9a2c1d44
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: c0d6058a1ac4c0395f800b9b0da4108cb212bef9
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262514"
 ---
 # <a name="monitoring-and-testing-tenant-boundaries"></a>Surveillance et test des limites du client
 Microsoft surveille et teste explicitement les faiblesses et les vulnérabilités des clients, y compris la surveillance des intrusions, les tentatives de violation d'autorisation et la privation de ressources. Nous utilisons également plusieurs systèmes internes pour surveiller en permanence une utilisation inappropriée des ressources, qui, si elle est détectée, déclenche la limitation intégrée.

@@ -1,5 +1,5 @@
 ---
-title: Suivi des messages dans le centre de sécurité & conformité
+title: Suivi des messages dans le centre de conformité et de sécurité
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -10,13 +10,13 @@ localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Les administrateurs peuvent utiliser le suivi des messages dans le centre de sécurité & Compliance Center pour déterminer ce qui s'est passé aux messages.
 ms.openlocfilehash: ebfc8d5e19bbc45c32ad65451f3f850662f358b4
-ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265620"
 ---
-# <a name="message-trace-in-the-security--compliance-center"></a>Suivi des messages dans le centre de sécurité & conformité
+# <a name="message-trace-in-the-security--compliance-center"></a>Suivi des messages dans le centre de conformité et de sécurité
 
 ## <a name="overview"></a>Vue d’ensemble
 
@@ -109,7 +109,7 @@ Cette valeur est constante pendant toute la durée de vie du message. Pour les m
 
 Lorsque vous utilisez l' **ID de message** pour filtrer les résultats, veillez à inclure la chaîne complète, y compris tous les chevrons.
 
-#### <a name="direction"></a>Direction (Sens)
+#### <a name="direction"></a>Direction
 
 Vous pouvez laisser la valeur par défaut **tous** sélectionnée ou vous pouvez sélectionner **** les messages entrants (messages envoyés à des destinataires dans votre organisation) ou **sortants** (messages envoyés par les utilisateurs de votre organisation) pour filtrer les résultats.
 
@@ -325,7 +325,7 @@ Le champ **custom_data** d'un `AGENTINFO` événement est utilisé par divers ag
 
 Une valeur **custom_data** qui commence par `S:SFA` est l'agent de filtrage du courrier indésirable. Les détails clés sont décrits dans le tableau suivant:
 
-|**Valeur**|**Description**|
+|**Value**|**Description**|
 |:-----|:-----|
 |`SFV=NSPM`|Le message a été marqué comme n'étant pas un courrier indésirable et a été envoyé aux destinataires appropriés.|
 |`SFV=SPM`|Le message a été marqué comme courrier indésirable par le filtre de contenu.|
@@ -352,7 +352,7 @@ Exemple de valeur **custom_data** pour un message qui est filtré pour le courri
 
 Une valeur **custom_data** qui commence par `S:AMA` provient de l'agent de filtrage des programmes malveillants. Les détails clés sont décrits dans le tableau suivant:
 
-|**Valeur**|**Description**|
+|**Value**|**Description**|
 |:-----|:-----|
 |`AMA=SUM|v=1|` ou `AMA=EV|v=1`|Un programme malveillant a été détecté dans le message. `SUM`indique que le programme malveillant a pu être détecté par n'importe quel nombre de moteurs. `EV`indique que le programme malveillant a été détecté par un moteur spécifique. Lorsqu'un programme malveillant est détecté par un moteur, les actions suivantes se produisent.|
 |`Action=r`|Le message a été remplacé.|
@@ -375,7 +375,7 @@ Voici un exemple de valeur **custom_data** pour un message qui contient un progr
 
 Une valeur **custom_data** qui commence par`S:TRA` provient de l'agent de règles de transport pour les règles de flux de messagerie (également appelées règles de transport). Les détails clés sont décrits dans le tableau suivant:
 
-|**Valeur**|**Description**|
+|**Value**|**Description**|
 |:-----|:-----|
 |`ETR|ruleId=<guid>`|ID de la règle qui s'applique.|
 |`St=<datetime>`|Date et heure UTC de la correspondance de la règle.|

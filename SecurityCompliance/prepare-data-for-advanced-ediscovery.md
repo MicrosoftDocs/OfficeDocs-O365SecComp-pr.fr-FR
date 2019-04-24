@@ -1,5 +1,5 @@
 ---
-title: Configuration des données pour Office 365 Advanced eDiscovery
+title: Préparation des données pour Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -12,15 +12,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
-description: 'Découvrez comment utiliser le centre de sécurité &amp; conformité Office 365 pour préparer les données Office 365 pour analyse avec Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: 8ede0f0cb97e1b49297b66fb2b929b3cb292ed52
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 'Découvrez comment utiliser le centre de sécurité &amp; conformité Microsoft 365 pour préparer les données Office 365 pour analyse avec Office 365 Advanced eDiscovery. '
+ms.openlocfilehash: d9d81c145a86075affd76761eb6dcff0f84a1eac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265506"
 ---
-# <a name="prepare-data-for-office-365-advanced-ediscovery"></a>Configuration des données pour Office 365 Advanced eDiscovery
+# <a name="prepare-data-for-office-365-advanced-ediscovery"></a>Préparation des données pour Office 365 Advanced eDiscovery
 
 Cette rubrique décrit comment charger les résultats d'une recherche de contenu dans dans un cas dans Advanced eDiscovery. 
   
@@ -29,7 +29,7 @@ Cette rubrique décrit comment charger les résultats d'une recherche de contenu
   
 ## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>Étape 1: préparer les données Office 365 pour Advanced eDiscovery
 
-Pour analyser les données avec Advanced eDiscovery, vous pouvez utiliser les résultats d'une recherche de contenu que vous exécutez dans le centre &amp; de sécurité conformité Office 365 (mentionné sur la page **recherche de contenu** dans &amp; le centre de sécurité conformité d'Office 365) ou une recherche associé à un cas eDiscovery (mentionné sur la page **eDiscovery** du centre de &amp; sécurité conformité). 
+Pour analyser les données avec Advanced eDiscovery, vous pouvez utiliser les résultats d'une recherche de contenu que vous exécutez dans le centre &amp; de sécurité conformité Microsoft 365 (mentionné sur la page **recherche de contenu** dans &amp; le centre de sécurité conformité Microsoft 365) ou un recherche associée à un cas eDiscovery (figurant sur la page **eDiscovery** du centre de &amp; sécurité conformité). 
   
 Pour obtenir la procédure détaillée sur la préparation des résultats de recherche pour analyse dans Advanced eDiscovery, voir [Prepare Search Results for Office 365 Advanced eDiscovery](prepare-search-results-for-advanced-ediscovery.md).
   

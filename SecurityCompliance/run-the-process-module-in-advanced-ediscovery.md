@@ -1,5 +1,5 @@
 ---
-title: Exécuter le module Processus dans Office 365 Advanced eDiscovery
+title: Exécuter le module de processus dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
 description: 'Découvrez les instructions relatives à la préparation des fichiers de cas des données Office 365 pour analyse avec Office 365 Advanced eDiscovery.  '
 ms.openlocfilehash: 19d50bda21f752ec7c22fe52b6fa7272592de128
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261032"
 ---
-# <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>Exécuter le module Processus dans Office 365 Advanced eDiscovery
+# <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>Exécuter le module de processus dans Office 365 Advanced eDiscovery
 
 Les fichiers case sont chargés dans la découverte électronique avancée lors de la **préparation** \> ****. 
   
@@ -39,7 +39,7 @@ Les fichiers case sont chargés dans la découverte électronique avancée lors 
     
 - **Nom et type de fichier**:
     
-  - Advanced eDiscovery peut traiter des fichiers de différents formats et extraire les fichiers natifs chargés dans un format standard \*, comme. TXT, HTML ou. XML. le traitement des fichiers texte est plus rapide que les fichiers natifs. Les fichiers texte extraits sont stockés dans le dossier case.
+  - Advanced eDiscovery peut traiter des fichiers de différents formats et extraire les fichiers natifs chargés dans un format standard \*, comme. TXT, HTML ou. Langage. Le traitement des fichiers texte est plus rapide que les fichiers natifs. Les fichiers texte extraits sont stockés dans le dossier case.
     
   - Ne chargez pas les fichiers qui ne peuvent pas être extraits, tels que les fichiers système ou les images graphiques. Ces fichiers peuvent retarder le traitement.
     

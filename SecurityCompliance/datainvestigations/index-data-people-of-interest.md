@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 9537cf743b89da7167ce3a37a5915027f4eb717a
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260692"
 ---
 # <a name="advanced-indexing-of-data-for-an-investigation"></a>Indexation avancée des données pour une enquête
 

@@ -15,18 +15,19 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: a2234d0a0e94e3fbb15f8fac8f6e49cc7b26cfb2
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240966"
 ---
 # <a name="search-statistics"></a>Statistiques de recherche
 
 Vous pouvez valider vos résultats de recherche en examinant les statistiques de vos résultats afin de vous assurer qu'ils correspondent à vos attentes. Une fois la recherche terminée, les statistiques de haut niveau apparaissent dans la fenêtre d'affichage des détails de la recherche:
 - Nombre et volume d'éléments récupérés par la recherche
 - Nombre et volume d'éléments partiellement indexés/non indexés qui ont été trouvés dans les emplacements de recherche
-- Nombre de boîtes aux lettres et d'emplacements recherchés. Pour afficher des statistiques plus détaillées, cliquez sur «statistiques» dans la fenêtre mobile des détails de recherche.
+- Nombre de boîtes aux lettres et d'emplacements recherchés.
+Pour afficher des statistiques plus détaillées, cliquez sur «statistiques» dans la fenêtre mobile des détails de recherche.
 
 ## <a name="summary"></a>Résumé
 

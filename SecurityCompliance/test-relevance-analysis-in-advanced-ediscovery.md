@@ -1,5 +1,5 @@
 ---
-title: Tester l’analyse du module Pertinence dans Office 365 Advanced eDiscovery
+title: Tester l'analyse de pertinence dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 description: "Découvrez comment utiliser l'onglet test après le calcul par lot dans Office 365 Advanced eDiscovery pour tester, comparer et valider la qualité globale du traitement.  "
 ms.openlocfilehash: 735a6d8088b4696e2ebc348db435a11914bd0b10
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259970"
 ---
-# <a name="test-relevance-analysis-in-office-365-advanced-ediscovery"></a>Tester l’analyse du module Pertinence dans Office 365 Advanced eDiscovery
+# <a name="test-relevance-analysis-in-office-365-advanced-ediscovery"></a>Tester l'analyse de pertinence dans Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

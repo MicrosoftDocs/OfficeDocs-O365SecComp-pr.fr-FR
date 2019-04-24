@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Cet article fournit des informations de dépannage pour les expéditeurs qui rencontrent des problèmes lors de l'envoi d'e-mail à des boîtes de réception dans Office 365 et les meilleures pratiques pour l'envoi de courrier en nombre à des clients Office 365.
 ms.openlocfilehash: ac465e7ef42b9cfeb2587481202fab1b5adb5f75
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265906"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Résolution des problèmes de messages envoyés à Office 365
 

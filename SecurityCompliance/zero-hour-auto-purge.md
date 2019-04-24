@@ -18,11 +18,11 @@ ms.collection:
 - M365-security-compliance
 description: La suppression automatique de zéro heure (ZAP) est une fonctionnalité de protection de la messagerie qui détecte les messages contenant du courrier indésirable ou des programmes malveillants qui ont déjà été remis dans la boîte de réception de vos utilisateurs, puis rend le contenu malveillant inoffensif. Le mode de fonctionnement de ZAP dépend du type de contenu malveillant détecté.
 ms.openlocfilehash: 507cd6af5320a3b925841786136d518c996e4d29
-ms.sourcegitcommit: 86ff2eba1d57b9d5288840788529e69ad9d836b6
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31818601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266906"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Purge automatique zéro heure : protection contre le courrier indésirable et les programmes malveillants
 
@@ -95,6 +95,6 @@ ZAP fonctionne toujours dans ce cas, sauf si le message a été supprimé ou se 
 
 ## <a name="related-topics"></a>Voir aussi
 
-[Protection contre le courrier indésirable Office 365](anti-spam-protection.md)
+[Protection contre le courrier indésirable pour Office 365](anti-spam-protection.md)
   
-[Blocage du courrier indésirable avec le filtre Office 365 pour éviter les faux négatifs](reduce-spam-email.md)
+[Bloquer le courrier indésirable à l'aide du filtre d'Office 365 afin d'éviter les problèmes de faux négatifs](reduce-spam-email.md)

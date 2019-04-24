@@ -13,11 +13,11 @@ search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: Les éléments partiellement indexés (également appelés éléments non indexés) sont des éléments de boîte aux lettres Exchange et des documents sur les sites SharePoint et OneDrive qui n'ont pas été complètement indexés pour la recherche de contenu. Dans cet article, vous pouvez découvrir pourquoi les éléments ne peuvent pas être indexés pour la recherche et sont renvoyés en tant qu'éléments partiellement indexés, identifier les erreurs de recherche pour les éléments partiellement indexés et utiliser un script PowerShell pour déterminer l'exposition de votre organisation à l'e-mail partiellement indexé. sous.
 ms.openlocfilehash: d6b1326498780a5d40e49ff22aa1ac7d16bee8e4
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254124"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Examen d’éléments partiellement indexés dans eDiscovery Office 365
 
@@ -176,7 +176,7 @@ Voici un exemple de la sortie renvoyée par le script.
   
 ![Exemple de sortie d'un script qui génère un rapport sur l'exposition de votre organisation à des éléments de courrier électronique partiellement indexés](media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
   
-Remarques :
+Veuillez prendre en compte les éléments suivants:
   
 1. Le nombre total et la taille des éléments de courrier électronique, et le ratio de votre organisation pour les éléments de courrier électronique partiellement indexés (par nombre et par taille)
     
