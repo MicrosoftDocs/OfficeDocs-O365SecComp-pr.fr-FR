@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: La journalisation d'audit de boîte aux lettres est activée par défaut dans Microsoft 365 (également appelée audit de boîte aux lettres par défaut ou audit de boîte aux lettres par défaut). En d'autres termes, certaines actions effectuées par les propriétaires de boîtes aux lettres, les délégués et les administrateurs sont automatiquement enregistrées dans un journal d'audit de boîte aux lettres, dans lequel vous pouvez rechercher des activités effectuées sur la boîte aux lettres.
 ms.openlocfilehash: 38632798aedfa34ee7568a7038d5ff906888619c
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256982"
 ---
 # <a name="manage-mailbox-auditing"></a>Gérer l’audit de boîte aux lettres
   
@@ -93,10 +93,10 @@ Le tableau suivant répertorie les actions de boîte aux lettres actuellement en
 |Créer    |Créer       | HardDelete        |
 |HardDelete    |HardDelete        |MoveToDeletedItems       |
 |MoveToDeletedItems    |MoveToDeletedItems         |SoftDelete         |
-|SendAs    |SendAs      |    Mettre à jour     |
+|SendAs    |SendAs      |    Update     |
 |SendOnBehalf    |SendOnBehalf       |UpdateCalendarDelegation        |
 |SoftDelete     |SoftDelete      | UpdateFolderPermissions        |
-|Mettre à jour    |Mettre à jour       |UpdateInboxRules         |
+|Update    |Update       |UpdateInboxRules         |
 |UpdateCalendarDelegation    | UpdateFolderPermissions        |         |
 |UpdateFolderPermissions     | UpdateInboxRules        |         |
 |UpdateInboxRules     |         |         |
@@ -112,7 +112,7 @@ Voici les descriptions de ces actions de boîte aux lettres.
 |**SendAs** <br/> |Un message a été envoyé à l’aide de l’autorisation SendAs. Cela signifie qu’un autre utilisateur a envoyé le message comme s’il provenait du propriétaire de la boîte aux lettres.  <br/> |
 |**SendOnBehalf** <br/> |Un message a été envoyé à l’aide de l’autorisation SendOnBehalf. Cela signifie qu’un autre utilisateur a envoyé le message de la part du propriétaire de la boîte aux lettres. Le message indique au destinataire de la part de qui le message a été envoyé et qui a envoyé réellement le message.  <br/> |
 |**SoftDelete** <br/> |Un message a été définitivement supprimé ou supprimé (récupérable) du dossier Éléments supprimés. Les éléments supprimés récupérables sont déplacés vers le dossier Éléments récupérables.  <br/> |
-|**Mettre à jour** <br/> |Un message ou ses propriétés ont été modifiés.  <br/> |
+|**Update** <br/> |Un message ou ses propriétés ont été modifiés.  <br/> |
 |**UpdateCalendarDelegation** <br/> |Une délégation de calendrier a été affectée à une boîte aux lettres. La délégation de calendrier donne à une autre personne de la même organisation des autorisations pour gérer le calendrier du propriétaire de la boîte aux lettres.  <br/> |
 |**UpdateFolderPermissions** <br/> |Une autorisation de dossier a été modifiée. Les autorisations de dossier contrôlent les utilisateurs de votre organisation qui peuvent accéder aux dossiers d'une boîte aux lettres et aux messages qu'ils hébergent.  <br/> |
 |**UpdateInboxRules** <br/> |Une règle de boîte de réception a été ajoutée, supprimée ou modifiée. Les règles de boîte de réception sont utilisées pour traiter les messages dans la boîte de réception de l'utilisateur en fonction des conditions spécifiées et prendre des mesures lorsque les conditions d'une règle sont remplies, telles que le transfert d'un message vers un dossier spécifié ou la suppression d'un message.  <br/> |
@@ -268,7 +268,7 @@ La valeur **true** indique que l'enregistrement d'audit de boîte aux lettres es
   
 Le tableau suivant récapitule les actions qui sont auditées pour chaque type d'ouverture de session de l'utilisateur. Dans le tableau, un astérisque ( **\*** ) indique que l'action est enregistrée par défaut. Un **non** indique qu'une action ne peut pas être enregistrée pour ce type d'ouverture de session. Notez qu'un administrateur disposant de l'autorisation accès total à la boîte aux lettres d'un utilisateur est considéré comme un utilisateur délégué. 
   
-|**Opération**|**Description**|**Admin**|**Délégué**|**Propriétaire**|
+|**Action**|**Description**|**Administrateur**|**Délégué**|**Owner**|
 |:-----|:-----|:-----|:-----|:-----|
 |**Copier** <br/> |Un message a été copié dans un autre dossier.  <br/> |Oui  <br/> |Non  <br/> |Non  <br/> |
 |**Create** <br/> |Un élément est créé dans le dossier calendrier, contacts, notes ou tâches de la boîte aux lettres; par exemple, une nouvelle demande de réunion est créée. Notez que la création, l'envoi ou la réception d'un message n'est pas audité. En outre, la création d'un dossier de boîte aux lettres n'est pas auditée.  <br/> |Oui\*  <br/> |Oui\*  <br/> |Oui  <br/> |
@@ -281,7 +281,7 @@ Le tableau suivant récapitule les actions qui sont auditées pour chaque type d
 |**SendAs** <br/> |Un message a été envoyé à l’aide de l’autorisation SendAs. Cela signifie qu’un autre utilisateur a envoyé le message comme s’il provenait du propriétaire de la boîte aux lettres.  <br/> |Oui\*  <br/> |Oui\*  <br/> |Non  <br/> |
 |**SendOnBehalf** <br/> |Un message a été envoyé à l’aide de l’autorisation SendOnBehalf. Cela signifie qu’un autre utilisateur a envoyé le message de la part du propriétaire de la boîte aux lettres. Le message indique au destinataire de la part de qui le message a été envoyé et qui a envoyé réellement le message.  <br/> |Oui\*  <br/> |Oui\*  <br/> |Non  <br/> |
 |**SoftDelete** <br/> |Un message a été définitivement supprimé ou supprimé (récupérable) du dossier Éléments supprimés. Les éléments supprimés récupérables sont déplacés vers le dossier Éléments récupérables.  <br/> |Oui\*  <br/> |Oui\*  <br/> |Oui\*  <br/> |
-|**Mettre à jour** <br/> |Un message ou ses propriétés ont été modifiés.  <br/> |Oui\*  <br/> |Oui\*  <br/> |Oui\*  <br/> |
+|**Update** <br/> |Un message ou ses propriétés ont été modifiés.  <br/> |Oui\*  <br/> |Oui\*  <br/> |Oui\*  <br/> |
 |**UpdateCalendarDelegation** <br/> |Une délégation de calendrier a été affectée à une boîte aux lettres. La délégation de calendrier donne à une autre personne de l'Organisation des autorisations pour gérer le calendrier du propriétaire de la boîte aux lettres.  <br/> |Oui\*  <br/> |Non  <br/> |Oui\*  <br/> |
 |**UpdateFolderPermissions** <br/> |Une autorisation de dossier a été modifiée. Les autorisations de dossier contrôlent les utilisateurs de votre organisation qui peuvent accéder aux dossiers d'une boîte aux lettres et aux messages qu'ils hébergent.  <br/> |Oui\*  <br/> |Oui\*  <br/> |Oui\*  <br/> |
 |**UpdateInboxRules** <br/> |Une règle de boîte de réception a été ajoutée, supprimée ou modifiée. Les règles de boîte de réception sont utilisées pour traiter les messages dans la boîte de réception de l'utilisateur en fonction des conditions spécifiées et prendre des mesures lorsque les conditions d'une règle sont remplies, telles que le transfert d'un message vers un dossier spécifié ou la suppression d'un message.  <br/> |Oui\*  <br/> |Oui\*  <br/> |Oui\*  <br/> |

@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: e9e34d112cb84c27fec35e752eb2bfcbfe3136a3
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243430"
 ---
 # <a name="add-data-to-a-working-set-from-another-working-set"></a>Ajouter des données à un jeu de travail à partir d'une autre plage de travail
 Dans certains cas, il peut s'avérer nécessaire de détourer une partie des documents d'une plage de travail et de les manipuler individuellement dans un autre jeu de travail.  Ceci est particulièrement utile si vous avez fait des sélections de contenu dans un jeu de travail et que vous souhaitez exécuter des analyses sur le sous-ensemble de données.

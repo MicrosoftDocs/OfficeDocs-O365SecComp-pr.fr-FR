@@ -15,15 +15,15 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer la clé client pour Office 365 pour Exchange Online, Skype entreprise, SharePoint Online et OneDrive entreprise. Avec la clé client, vous contrôlez les clés de chiffrement de votre organisation, puis vous configurez Office 365 afin de les utiliser pour chiffrer vos données au repos dans les centres de données de Microsoft.
 ms.openlocfilehash: 219ddb94727cd2b708f734a77a8397b3bc3f1064
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296667"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258352"
 ---
 # <a name="controlling-your-data-in-office-365-using-customer-key"></a>Contrôle de vos données dans Office 365 à l'aide de la Clé client.
 
-Avec la clé client, vous contrôlez les clés de chiffrement de votre organisation, puis vous configurez Office 365 afin de les utiliser pour chiffrer vos données au repos dans les centres de données de Microsoft. En d'autres termes, la clé client permet aux clients d'ajouter une couche de chiffrement qui leur appartient, avec leurs clés. Les données de Rest incluent des données à partir d'Exchange Online et de Skype entreprise, qui sont stockées dans des boîtes aux lettres et des fichiers stockés dans SharePoint Online et OneDrive entreprise.
+Avec la clé client, vous contrôlez les clés de chiffrement de votre organisation, puis vous configurez Office 365 afin de les utiliser pour chiffrer vos données au repos dans les centres de données de Microsoft. En d'autres termes, la clé client permet aux clients d'ajouter une couche de chiffrement qui leur appartient, avec leurs clés. Les données au repos incluent les données issues d’Exchange Online et de Skype Entreprise qui sont enregistrées dans des boîtes aux lettres et des fichiers stockés dans SharePoint Online et OneDrive Entreprise.
   
 Vous devez configurer Azure avant de pouvoir utiliser la clé client pour Office 365. Cette rubrique décrit les étapes à suivre pour créer et configurer les ressources Azure requises, puis fournit la procédure de configuration de la clé client dans Office 365. Une fois que vous avez terminé la configuration d'Azure, vous déterminez la stratégie et, par conséquent, les clés, à affecter aux boîtes aux lettres et aux fichiers de votre organisation. Les boîtes aux lettres et les fichiers pour lesquels vous n'affectez pas de stratégie utilisent des stratégies de chiffrement qui sont contrôlées et gérées par Microsoft. Pour plus d'informations sur la clé client ou pour obtenir une vue d'ensemble, consultez la rubrique [customEr Key for Office 365 FAQ](service-encryption-with-customer-key-faq.md).
   
@@ -103,7 +103,7 @@ Effectuez ces tâches dans Azure Key Vault afin de configurer la clé client pou
 Deux abonnements Azure sont requis pour la clé client. Pour une meilleure pratique, Microsoft vous recommande de créer de nouveaux abonnements Azure à utiliser avec la clé client. Les clés Azure Key Vault peuvent uniquement être autorisées pour les applications dans le même client Azure Active Directory (AAD), vous devez créer les nouveaux abonnements à l'aide du même client Azure AD utilisé avec votre organisation Office 365 où les DEPs seront attribués. Par exemple, à l'aide de votre compte professionnel ou scolaire disposant de privilèges d'administrateur général dans votre organisation Office 365. Pour obtenir la procédure détaillée, consultez la rubrique [Inscrivez-vous à Azure en tant qu'organisation](https://azure.microsoft.com/en-us/documentation/articles/sign-up-organization/).
   
 > [!IMPORTANT]
-> La clé client nécessite deux clés pour chaque stratégie de chiffrement de données (DEP). Pour ce faire, vous devez créer deux abonnements Azure. En guise de meilleure pratique, Microsoft recommande que les membres distincts de votre organisation configurent une clé dans chaque abonnement. En outre, ces abonnements Azure ne doivent être utilisés que pour administrer les clés de chiffrement pour Office 365. Cela protège votre organisation si l'un de vos opérateurs supprime accidentellement, intentionnellement ou de manière malveillante ou non des clés dont il est responsable.<br/> Nous vous recommandons de configurer de nouveaux abonnements Azure uniquement utilisés pour gérer les ressources Azure Key Vault à utiliser avec la clé client. Il n'existe pas de limite pratique au nombre d'abonnements Azure que vous pouvez créer pour votre organisation. Le suivi de ces meilleures pratiques réduira l'impact de l'erreur humaine tout en aidant à gérer les ressources utilisées par la clé client. 
+> La clé client nécessite deux clés pour chaque stratégie de chiffrement de données (DEP). Pour ce faire, vous devez créer deux abonnements Azure. En guise de meilleure pratique, Microsoft recommande que les membres distincts de votre organisation configurent une clé dans chaque abonnement. En outre, ces abonnements Azure ne doivent être utilisés que pour administrer les clés de chiffrement pour Office 365. Cela protège votre organisation si l'un de vos opérateurs supprime accidentellement, intentionnellement ou de manière malveillante ou non des clés dont il est responsable. <br/> Nous vous recommandons de configurer de nouveaux abonnements Azure uniquement utilisés pour gérer les ressources Azure Key Vault à utiliser avec la clé client. Il n'existe pas de limite pratique au nombre d'abonnements Azure que vous pouvez créer pour votre organisation. Le suivi de ces meilleures pratiques réduira l'impact de l'erreur humaine tout en aidant à gérer les ressources utilisées par la clé client. 
   
 ### <a name="submit-a-request-to-activate-customer-key-for-office-365"></a>Soumettre une demande d'activation de la clé client pour Office 365
 <a name="FastTrack"> </a>
@@ -290,7 +290,7 @@ Où :
   
 - Si vous avez l'intention de protéger la clé avec un HSM, vérifiez que vous spécifiez **HSM** comme valeur du paramètre _destination_ , sinon, spécifiez **Software**.
     
-Par exemple,
+For example,
   
 ```
 Add-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -Destination Software -KeyOps wrapKey,unwrapKey
@@ -458,7 +458,7 @@ Pour créer la DEP, procédez comme suit:
     
    -  *KeyVaultURI2* est l'URI de la deuxième clé de la stratégie. Par exemple, https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02. Séparez les deux URI par une virgule et un espace. 
     
-   Exemple :
+   Exemple :
   
    ```
    New-DataEncryptionPolicy -Name USA_mailboxes -Description "Root key for mailboxes in USA and its territories" -AzureKeyIDs https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01, https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02
@@ -581,7 +581,7 @@ S'il existe déjà une clé portant le même nom dans le coffre-fort de clés, l
 Les touches de roulement ne sont pas requises par le coffre-fort des clés Azure ou par la clé client. En outre, les clés protégées par un HSM sont quasiment impossibles à compromettre. Même si une clé racine était en possession d'un acteur malveillant, il n'est pas possible de l'utiliser pour déchiffrer les données, étant donné que seul le code Office 365 sait comment l'utiliser. Toutefois, le lancement d'une clé est pris en charge par la clé client.
   
 > [!CAUTION]
-> N'annulez une clé de chiffrement que vous utilisez avec la clé du client lorsqu'il existe une raison technique claire ou qu'une exigence de conformité exige que vous deviez annuler la clé. En outre, ne supprimez pas de clés qui sont ou n'ont pas été associées à des stratégies. Lorsque vous restaurez vos clés, le contenu est chiffré avec les clés précédentes. Par exemple, bien que les boîtes aux lettres actives soient rechiffrées fréquemment, les boîtes aux lettres inactives, déconnectées et désactivées peuvent toujours être chiffrées avec les clés précédentes. SharePoint Online effectue des sauvegardes de contenu à des fins de restauration et de récupération, de sorte qu'il peut toujours y avoir un archivage de contenu à l'aide de clés plus anciennes.<br/> Pour garantir la sécurité de vos données, SharePoint Online ne permet pas qu'une seule opération de roulier de clés soit en cours à la fois. Si vous souhaitez exécuter les deux clés dans un coffre-fort de clés, vous devez attendre que la première opération de la première clé soit entièrement terminée. Nous vous recommandons d'échelonner vos opérations de roulement de clé à différents intervalles, de sorte qu'il ne s'agit pas d'un problème. 
+> N'annulez une clé de chiffrement que vous utilisez avec la clé du client lorsqu'il existe une raison technique claire ou qu'une exigence de conformité exige que vous deviez annuler la clé. En outre, ne supprimez pas de clés qui sont ou n'ont pas été associées à des stratégies. Lorsque vous restaurez vos clés, le contenu est chiffré avec les clés précédentes. Par exemple, bien que les boîtes aux lettres actives soient rechiffrées fréquemment, les boîtes aux lettres inactives, déconnectées et désactivées peuvent toujours être chiffrées avec les clés précédentes. SharePoint Online effectue des sauvegardes de contenu à des fins de restauration et de récupération, de sorte qu'il peut toujours y avoir un archivage de contenu à l'aide de clés plus anciennes. <br/> Pour garantir la sécurité de vos données, SharePoint Online ne permet pas qu'une seule opération de roulier de clés soit en cours à la fois. Si vous souhaitez exécuter les deux clés dans un coffre-fort de clés, vous devez attendre que la première opération de la première clé soit entièrement terminée. Nous vous recommandons d'échelonner vos opérations de roulement de clé à différents intervalles, de sorte qu'il ne s'agit pas d'un problème. 
   
 Lorsque vous annulez une touche, vous demandez une nouvelle version d'une clé existante. Pour demander une nouvelle version d'une clé existante, vous utilisez la même cmdlet, [Add-AzureKeyVaultKey](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Add-AzureKeyVaultKey), avec la même syntaxe que celle que vous avez utilisée pour créer la clé.
   

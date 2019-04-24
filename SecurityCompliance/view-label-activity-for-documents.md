@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: Avec l’Explorateur d’activité des étiquettes dans le Centre de sécurité &amp; conformité Office 365, vous pouvez rapidement rechercher et afficher l’activité des étiquettes pour tout le contenu au sein de SharePoint et OneDrive Entreprise au cours des 30 derniers jours. Il s’agit des données en temps réel qui vous offrent une bonne visibilité de ce qui se passe dans votre client.
 ms.openlocfilehash: 55888ff2ef8118389a88955a8f4e047170606524
-ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30997110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267329"
 ---
 # <a name="view-label-activity-for-documents"></a>Afficher l’activité des étiquettes pour les documents
 

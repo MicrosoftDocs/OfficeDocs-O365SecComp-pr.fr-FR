@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Microsoft Outlook sur le Web les utilisateurs peuvent signaler des courriers indésirables et des tentatives de hameçonnage à l'aide des options de création de rapports de messagerie intégrées. Vous pouvez également informer Microsoft qu'un message électronique a été identifié de manière incorrecte comme courrier indésirable (courrier indésirable).
 ms.openlocfilehash: 089792ab8e46f4b200a2d98781cd378c2666c35f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261574"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Signaler le courrier indésirable et les escroqueries par hameçonnage dans Outlook sur le Web 
 

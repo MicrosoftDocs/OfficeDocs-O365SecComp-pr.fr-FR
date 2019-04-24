@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Lorsque vous créez une étiquette de sensibilité, vous pouvez restreindre l’accès au contenu auquel l’étiquette sera appliquée. Les étiquettes de sensibilité peuvent utiliser le chiffrement pour protéger le contenu.
 ms.openlocfilehash: 69deeed69a5b2970d387c30b01a062c6c068c567
-ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30997040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257248"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Restriction de l’accès au contenu à l’aide du chiffrement dans les étiquettes de sensibilité
 

@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: "Pour les administrateurs: supprimez les éléments du dossier éléments récupérables d'un utilisateur pour une boîte aux lettres Exchange Online, même si cette boîte aux lettres est placée en conservation légale. Il s'agit d'un moyen efficace de supprimer des données accidentellement propagées dans Office 365."
 ms.openlocfilehash: 7badd45f582e4d5fef4cb5708c504573da0aba50
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256872"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Supprimer des éléments dans le dossier éléments récupérables des boîtes aux lettres en nuage en attente-aide de l'administrateur
 
@@ -346,7 +346,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
   
 ## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>Étape 6: rétablir l'état précédent de la boîte aux lettres
 
-La dernière étape consiste à rétablir la configuration précédente de la boîte aux lettres. Cela signifie que vous devez réinitialiser les propriétés modifiées à l'étape 2 et appliquer de nouveau les conservations que vous avez supprimées à l'étape 3. Celles-ci incluent les valeurs suivantes :
+La dernière étape consiste à rétablir la configuration précédente de la boîte aux lettres. Cela signifie que vous devez réinitialiser les propriétés modifiées à l'étape 2 et appliquer de nouveau les conservations que vous avez supprimées à l'étape 3. Cela inclut les opérations suivantes :
   
 - Modification de la période de rétention des éléments supprimés à sa valeur précédente. Vous pouvez également laisser cette valeur sur 30 jours, la valeur maximale dans Exchange Online.
     

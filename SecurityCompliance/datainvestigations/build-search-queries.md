@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: Utilisez des mots clés et des conditions pour limiter l'étendue de la recherche lors de la recherche de données lors de l'utilisation de l'enquête sur les données dans Microsoft 365.
 ms.openlocfilehash: eeca1bf7ff89d1b7f79ceeed3334668e354f035a
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262884"
 ---
 # <a name="build-search-queries"></a>Créer des requêtes de recherche
 

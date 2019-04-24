@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: "En tant qu'utilisateur d'Office 365, vous pouvez gérer vos propres messages de courrier indésirable mis en quarantaine de l'une des deux façons suivantes: en répondant aux notifications de courrier indésirable qui vous sont envoyées directement (si votre administrateur a configuré cette fonctionnalité &amp; ) ou en utilisant la fonctionnalité de mise en quarantaine du courrier indésirable dans la conformité de sécurité. Interactif."
 ms.openlocfilehash: acbf862f05a9282a26444b738400d29c03d07f1f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255202"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Rechercher et débloquer les messages mis en quarantaine en tant qu'utilisateur dans Office 365
 
@@ -61,7 +61,7 @@ Si vous avez un grand nombre d'éléments mis en quarantaine, vous pouvez rédui
     
   - **ID du message** Utilisez cette option pour sélectionner un message spécifique lorsque vous êtes informé de l'ID du message. 
     
-    Par exemple, si un message spécifique est envoyé par un utilisateur de votre organisation ou s'il est destiné à celui-ci, mais qu'il n'a jamais atteint sa destination, vous pouvez rechercher le message à l'aide d'un suivi des messages (consultez [la rubrique exécution d'un suivi de message et affichage des résultats](https://go.microsoft.com/fwlink/?LinkId=799737)). Si vous découvrez que le message a été envoyé en quarantaine, peut-être parce qu'il correspond à une règle de flux de messagerie ou qu'il a été identifié comme courrier indésirable, vous pouvez facilement trouver ce message en quarantaine en spécifiant son ID de message. Veillez à inclure la chaîne d'ID de message complète. Cela peut inclure des chevrons\<\>(), par exemple:
+    Par exemple, si un message spécifique est envoyé par un utilisateur de votre organisation ou s'il est destiné à celui-ci, mais qu'il n'a jamais atteint sa destination, vous pouvez rechercher le message à l'aide d'un suivi des messages (consultez [la rubrique exécution d'un suivi de message et affichage des résultats](https://go.microsoft.com/fwlink/?LinkId=799737)). Si vous découvrez que le message a été envoyé en quarantaine, peut-être parce qu'il correspond à une règle de flux de messagerie ou qu'il a été identifié comme courrier indésirable, vous pouvez facilement trouver ce message en quarantaine en spécifiant son ID de message. Veillez à inclure la chaîne ID complète du message. Cela peut inclure des chevrons\<\>(), par exemple:
     
     \<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com\>
     

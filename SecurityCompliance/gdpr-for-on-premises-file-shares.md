@@ -9,11 +9,11 @@ ms.service: O365-seccomp
 localization_priority: Priority
 description: Découvrez comment satisfaire aux exigences du RGPD dans le cadre des partages de fichier Windows Server en local.
 ms.openlocfilehash: 14af73a2ff2a162f2f3e621c2efeb5d9050c069a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255222"
 ---
 # <a name="gdpr-for-on-premises-windows-server-file-shares"></a>RGPD pour les partages de fichiers Windows Server en local
 

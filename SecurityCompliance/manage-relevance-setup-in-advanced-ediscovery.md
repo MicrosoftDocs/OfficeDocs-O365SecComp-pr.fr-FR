@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 description: Lisez les recommandations pour configurer l’entraînement Pertinence dans Office 365 Advanced eDiscovery pour qu’il note les fichiers selon leur pertinence et génère des résultats.
 ms.openlocfilehash: 7e06be032cc653681c19ee2d17547ca22421e0ae
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259662"
 ---
 # <a name="manage-relevance-setup-in-office-365-advanced-ediscovery"></a>Gestion de la configuration de l’entraînement Pertinence dans Office 365 Advanced eDiscovery
 

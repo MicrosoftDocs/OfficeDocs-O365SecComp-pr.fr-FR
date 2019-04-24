@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: Apprenez à créer et importer un type d’informations sensibles personnalisé pour la protection contre la perte de données dans le Centre de sécurité et conformité.
 ms.openlocfilehash: 7a21b62ddaf4d24793d4479d0d6270a18cc50532
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259082"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité
 

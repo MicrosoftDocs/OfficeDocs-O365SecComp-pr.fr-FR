@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à seulement quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou seulement au contenu remplissant certaines conditions.
 ms.openlocfilehash: 55680f16e92d33c2cbf612b6aabae1f51778f93a
-ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30997140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265120"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 

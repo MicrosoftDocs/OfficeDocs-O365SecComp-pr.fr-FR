@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment fonctionne la nouvelle usurpation d'aide à la décision.
 ms.openlocfilehash: 4303b8f2524e6722e7febbbd06ab9daa853ed802
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267248"
 ---
 # <a name="walkthrough-spoof-intelligence-insight"></a>Procédure pas à pas: usurpation d'aide
 
@@ -59,7 +59,7 @@ Dans les deux cas, les domaines usurpés affichés dans la vue sont séparés en
   
 Une *paire de domaine* est une combinaison de l'adresse «de:» et de l'infrastructure d'envoi. 
   
-- L'adresse «de» est l'adresse de l'expéditeur par votre application de messagerie. Cette adresse identifie l'auteur du message. C'est-à-dire, la boîte aux lettres de la personne ou du système responsable de l'écriture du message. Il s'agit parfois de l'adresse 5322. from.
+- L'adresse «de» est l'adresse de l'expéditeur par votre application de messagerie. Cette adresse identifie l'auteur du message. C'est-à-dire, la boîte aux lettres de la personne ou du système responsable de l'écriture du message. Elle est parfois appelée adresse 5322.From.
     
 - L'infrastructure d'envoi, ou expéditeur, est le domaine de l'organisation de l'enregistrement PTR de l'adresse IP d'envoi. Si l'adresse IP d'envoi n'a pas d'enregistrement PTR, l'expéditeur est identifié par l'adresse IP d'envoi avec le masque de sous-réseau 255.255.255.0 dans la notation CIDR (/24). Par exemple, si l'adresse IP est 192.168.100.100, l'adresse IP complète de l'expéditeur est 192.168.100.100/24.
     
@@ -87,11 +87,11 @@ Vous ajoutez ou supprimez un domaine de la liste des expéditeurs approuvés All
   
 Cela modifie la combinaison de paires de domaines unique du domaine usurpé et de l'infrastructure d'envoi et ne fournit pas de couverture pour l'ensemble du domaine usurpé ou l'infrastructure d'envoi isolée. Par exemple, si vous ajoutez la paire de domaines suivante à la liste verte de l'expéditeur «AllowedToSpoof»: *domaine usurpé* «gmail.com» et l' *infrastructure d'envoi* «TMS *. mx.com»,* seul le courrier de cette paire de domaines sera autorisé à usurper. Les autres expéditeurs qui tentent d'usurper «gmail.com» et d'autres domaines que «tms.mx.com» tentent d'usurper continueront à être protégés par l'intelligence des usurpations d'identité. 
   
-## <a name="related-topics"></a>Sujets associés
+## <a name="related-topics"></a>Voir aussi
 
-[En savoir plus sur la veille contre l’usurpation d’identité](learn-about-spoof-intelligence.md)
+[En savoir plus sur l’usurpation d’identité](learn-about-spoof-intelligence.md)
   
-[Protection contre l’usurpation dans Office 365](anti-spoofing-protection.md)
+[Protection anti-usurpation dans Office 365](anti-spoofing-protection.md)
   
 [Procédure pas à pas. D’un tableau de bord à un aperçu](from-a-dashboard-to-an-insight.md)
   

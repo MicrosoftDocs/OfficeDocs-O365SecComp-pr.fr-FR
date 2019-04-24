@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: En plus du centre de gestion de la confidentialité Office 365 qui fournit des informations sur la sécurité, la confidentialité et la conformité pour Office 365, vous souhaiterez peut-être savoir comment Office 365 protège les secrets que vous fournissez dans ses centres de données. Nous utilisons une technologie appelée Distributed Key Manager (DKM).
 ms.openlocfilehash: ba4c661899273f5e07c2468631298f5500d0e32f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255482"
 ---
 # <a name="how-exchange-online-secures-your-email-secrets"></a>Procédure de sécurisation des informations confidentielles dans votre courrier électronique dans Exchange Online
 
@@ -34,7 +34,6 @@ Le Gestionnaire de clés distribuées (DKM) est une fonctionnalité côté clien
 À des fins de débogage, de résolution des problèmes ou d’audit, un administrateur de centre de données doit demander un accès élevé pour obtenir des informations d’identification temporaires qui font partie du groupe de sécurité. Ce processus requiert plusieurs niveaux d’approbation juridique. Si l’accès est accordé, toutes les activités font l’objet d’une journalisation et d’un audit. En outre, l’accès est accordé uniquement pour un intervalle de temps défini suite auquel il expire automatiquement.
   
 Pour une protection supplémentaire, la technologie DKM inclut l’archivage et la substitution de clé automatisés. Ainsi, vous pouvez continuer à accéder à votre contenu plus ancien sans devoir utiliser la même clé indéfiniment.
-
   
 ## <a name="where-does-exchange-online-make-use-of-dkm"></a>Où le Gestionnaire de clés distribuées est-il utilisé dans Exchange Online ?
 
@@ -42,7 +41,7 @@ Microsoft utilise le Gestionnaire de clés distribuées pour chiffrer vos inform
   
 - Les informations d’identification de compte de messagerie pour les comptes connectés. Les comptes connectés sont des comptes tiers, tels que les comptes de messagerie Hotmail, Gmail et Yahoo!.
     
-- Clés racines du service RMS (Rights Management Service). Il s'agit de clés client importées à partir d'Azure RMS ou des déploiements RMS des services de domaine Active Directory locaux du client qui sont utilisés pour le chiffrement et le déchiffrement des messages électroniques avec le chiffrement de messages RMS ou Office 365 (OME).
+- Les clés racine des services RMS. Il s'agit de clés client importées à partir d'Azure RMS ou des déploiements RMS des services de domaine Active Directory locaux du client qui sont utilisés pour le chiffrement et le déchiffrement des messages électroniques avec le chiffrement de messages RMS ou Office 365 (OME).
     
 ## <a name="related-topics"></a>Voir aussi
 

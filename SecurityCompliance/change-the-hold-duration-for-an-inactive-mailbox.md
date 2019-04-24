@@ -15,11 +15,11 @@ search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: Une fois qu'une boîte aux lettres Office 365 est devenue inactive, vous pouvez modifier la durée de la conservation ou de la stratégie de rétention d'Office 365 affectée à la boîte aux lettres inactive. La durée de la conservation définit la durée de conservation des éléments dans le dossier Éléments récupérables.
 ms.openlocfilehash: 57b4bda5bda49785b752646174620101f8441135
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243687"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>Modifier la durée de la conservation pour une boîte aux lettres inactive dans Office 365
 

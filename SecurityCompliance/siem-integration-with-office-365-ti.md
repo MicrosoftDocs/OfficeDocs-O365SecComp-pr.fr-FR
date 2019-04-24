@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Intégrez le serveur SIEM de votre organisation avec Office 365 protection avancée contre les menaces et les événements de menace associés dans l'API de gestion des activités Office 365.
 ms.openlocfilehash: fa9dcda0556684b748068cbe5ee848ba443d7667
-ms.sourcegitcommit: f25a667e4c7d11c43c87604d576f1e6d6155b14f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30536174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260682"
 ---
 # <a name="siem-integration-with-office-365-advanced-threat-protection"></a>Intégration SIEM avec Office 365 protection avancée contre les menaces
 
@@ -47,7 +47,7 @@ Le serveur SIEM ou un autre système similaire doit interroger l' **audit.** cha
 
 [Enquête et réponse aux menaces Office 365](office-365-ti.md)
 
-[Office 365 - Protection avancée contre les menaces](office-365-atp.md)
+[Office 365-Protection avancée contre les menaces](office-365-atp.md)
 
 [Rapports intelligents et Insights dans le centre de sécurité &amp; conformité Office 365](reports-and-insights-in-security-and-compliance.md)
   

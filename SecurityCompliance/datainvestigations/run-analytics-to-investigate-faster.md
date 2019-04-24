@@ -1,5 +1,5 @@
 ---
-title: Exécuter des analyses pour une analyse plus rapide
+title: Exécuter les données d’analyse pour investiguer plus rapidement
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 9516035fb6c758fdff1852249fff2815f19af559
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257612"
 ---
-# <a name="run-analytics-to-investigate-faster"></a>Exécuter des analyses pour une analyse plus rapide
+# <a name="run-analytics-to-investigate-faster"></a>Exécuter les données d’analyse pour investiguer plus rapidement
 
 Lorsqu'une collection de preuves est volumineuse, il peut s'avérer difficile de les examiner tous. Un ensemble de preuves inclut souvent plusieurs copies de messages ou de documents de courrier identiques ou similaires. Les enquêtes de données (préversion) fournissent un certain nombre d'outils d'analyse qui peuvent vous aider à réduire le volume des documents qui doivent être analysés sans aucune perte de données. Pour en savoir plus sur ces fonctionnalités, consultez les éléments suivants:
 

@@ -19,11 +19,11 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Résumé : Recommandations de configuration pour la protection des fichiers dans SharePoint Online et Office 365.'
 ms.openlocfilehash: 5dd9866096f4fea4fbb578e39f6b017f5cc898a2
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265414"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Sécuriser des sites et des fichiers SharePoint Online
 
@@ -115,7 +115,7 @@ Le tableau suivant récapitule la configuration pour chacun des sites d’équip
   
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-||**Protection de référence n° 1** <br/> |**Protection de référence n° 2** <br/> |**Protection Sensible** <br/> |**Hautement confidentiel** <br/> |
+||**Protection Base de référence #1** <br/> |**Protection Base de référence #2** <br/> |**Protection Sensible** <br/> |**Hautement confidentiel** <br/> |
 |Description  <br/> |Découverte et collaboration ouvertes au sein de l’organisation.  <br/> |Site privé et groupe avec partage autorisé en dehors du groupe.  <br/> |Site isolé, dans lequel les niveaux d’accès sont définis par l’appartenance à des groupes spécifiques. Le partage est autorisé uniquement aux membres du site. La protection contre la perte de données avertit les utilisateurs quand ils tentent d’envoyer des fichiers à l’extérieur de l’organisation.  <br/> |Site isolé + chiffrement des fichiers et autorisations avec Azure Information Protection. La protection contre la perte de données empêche les utilisateurs d’envoyer des fichiers à l’extérieur de l’organisation.  <br/> |
 |Site d’équipe privé ou public  <br/> |Public  <br/> |Private  <br/> |Private  <br/> |Private  <br/> |
 |Qui a accès ?  <br/> |Tous les membres de l’organisation, y compris les utilisateurs B2B et les utilisateurs invités.  <br/> |Les membres du site uniquement. D’autres utilisateurs peuvent demander l’accès.  <br/> |Les membres du site uniquement. D’autres utilisateurs peuvent demander l’accès.  <br/> |Uniquement les membres. Personne d’autre ne peut demander l’accès.  <br/> |

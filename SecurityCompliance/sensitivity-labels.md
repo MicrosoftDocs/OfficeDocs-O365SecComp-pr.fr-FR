@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: Avec les étiquettes de sensibilité, vous pouvez classer et protéger le contenu sensible, tout en vous assurant que la productivité et la possibilité de collaboration des membres de votre organisation ne sont pas altérées. Vous pouvez utiliser les étiquettes de sensibilité afin d’appliquer des paramètres de protection, comme le chiffrement ou les filigranes, sur le contenu étiqueté.
 ms.openlocfilehash: f8442bc9fbeb32cb71fb46c4e5a54c9e1f0dce4b
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265740"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Vue d’ensemble des étiquettes de niveau de confidentialité
 

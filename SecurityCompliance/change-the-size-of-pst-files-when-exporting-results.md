@@ -12,11 +12,11 @@ search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: Vous pouvez modifier la taille par défaut des fichiers PST téléchargés sur votre ordinateur lorsque vous exportez les résultats de recherche de découverte électronique.
 ms.openlocfilehash: 98b543b6e34cb9cb075a765671def91742aee6c1
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243609"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Modifier la taille des fichiers PST lors de l'exportation des résultats de recherche eDiscovery
 

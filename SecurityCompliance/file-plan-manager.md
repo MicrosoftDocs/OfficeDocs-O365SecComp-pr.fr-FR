@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Le gestionnaire de plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes et les stratégies de conservation, et fournit un moyen intégré de parcourir l’activité d’étiquette et d’étiquette vers le contenu pour l’intégralité du cycle de vie de votre contenu, de la création à la destruction finale, en passant par la collaboration, la déclaration d’enregistrement et la conservation.
 ms.openlocfilehash: f104e5ea0046af1e8cdee39b1e7dc5f47524e707
-ms.sourcegitcommit: d9f695650e26e4125b00b6281717b4d5b63fc401
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "31824433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256060"
 ---
 # <a name="overview-of-file-plan-manager"></a>Vue d’ensemble du gestionnaire de plan de gestion de fichiers
 

@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: Dans les rapports de gouvernance des données du Centre de sécurité &amp; conformité Office 365, vous pouvez rapidement vérifier si vos étiquettes sont appliquées au contenu comme vous le souhaitiez.
 ms.openlocfilehash: 5374b54c87aaf79f70be733d626171b196639725
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266981"
 ---
 # <a name="view-the-data-governance-reports"></a>Affichage des rapports de gouvernance des données
 

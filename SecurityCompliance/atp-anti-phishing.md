@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: La protection anti-hameçonnage ATP fait partie de la protection avancée contre les menaces d'Office 365. La protection anti-hameçonnage ATP applique un ensemble de modèles d'apprentissage automatique avec des algorithmes de détection d'emprunt d'identité aux messages entrants pour assurer la protection contre les attaques par hameçonnage et les attaques par hameçonnage. Tous les messages sont soumis à un ensemble complet de modèles d'apprentissage automatique formés pour détecter les messages de hameçonnage, ainsi qu'un ensemble d'algorithmes avancés permettant de se protéger contre diverses attaques par emprunt d'identité d'utilisateur et de domaine.
 ms.openlocfilehash: 25e7845ab7d16b0766636006f2c55debfee2f9f9
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249564"
 ---
 # <a name="atp-anti-phishing-capabilities-in-office-365"></a>Fonctionnalités anti-hameçonnage ATP dans Office 365
 
@@ -59,7 +59,7 @@ Le tableau suivant décrit quelques exemples de scénarios. Dans chacun de ces e
 
 ## <a name="related-topics"></a>Voir aussi
 
-[Office 365 - Protection avancée contre les menaces](office-365-atp.md)
+[Office 365-Protection avancée contre les menaces](office-365-atp.md)
   
 [Protection anti-hameçonnage dans Office 365](anti-phishing-protection.md)
   

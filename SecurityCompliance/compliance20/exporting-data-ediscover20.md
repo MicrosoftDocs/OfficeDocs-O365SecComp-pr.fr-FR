@@ -14,21 +14,23 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: efdadd2769bf2b812d3642184fc7fd4ae1cbc8c2
-ms.sourcegitcommit: 9f38ba72eba0b656e507860ca228726e4199f7ec
+ms.openlocfilehash: 0798cb66729b215a50b21a29494183f7eed5d1d6
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30475684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256172"
 ---
 # <a name="export-case-data-in-advanced-ediscovery-preview"></a>Exporter des données de cas dans Advanced eDiscovery (aperçu)
 
-L'exportation est effectuée dans une plage de travail afin d'offrir une visibilité complète sur les éléments exportés à partir d'un client. Il existe trois méthodes distinctes pour exporter du contenu:
+Il existe trois façons d'exporter des données à partir d'une plage de travail:
 
-Download: permet à un utilisateur de télécharger un petit ensemble de fichiers natifs via le navigateur.
+**Télécharger** : permet de télécharger (à l'aide d'un navigateur) un petit ensemble de fichiers natifs. Il s'agit de la plus rapide consiste à exporter un petit groupe de données.
 
-Export: personnaliser l'exportation pour inclure du contenu supplémentaire, y compris un fichier de métadonnées, gravé dans des fichiers biffés et des fichiers texte.
+**Exporter** : permet de personnaliser les données exportées, notamment l'exportation des fichiers de métadonnées, des fichiers natifs, des fichiers texte et des documents biffés qui ont été enregistrés dans un fichier PDF. Après avoir téléchargé les données exportées vers l'emplacement de stockage Azure, vous devez les télécharger sur un ordinateur local. Pour plus d'informations, consultez les rubriques suivantes : 
 
-Plage de travail: permet à un utilisateur d'exporter le contenu d'un jeu de travail vers un autre jeu de travail.
+   - [Exporter des documents à partir d’un ensemble de travail](export-documents-from-working-set.md)
 
-Une fois l'exportation terminée, le contenu est placé dans un objet BLOB Microsoft Azure. Le contenu peut être atteint à l'aide des informations de l'onglet exportations. Pour plus d'informations, \[consultez la rubrique lien pour télécharger des travaux d'exportation\]
+   - [Télécharger l’exportation des travaux](download-export-jobs.md)
+
+**Ajouter à un autre ensemble de travail** : permet de copier les données d'une plage de travail vers une autre plage de travail. Pour plus d'informations, reportez-vous [à ajouter des données d'un jeu de travail à un autre jeu de travail](add-data-to-working-set-from-another-working-set.md). 

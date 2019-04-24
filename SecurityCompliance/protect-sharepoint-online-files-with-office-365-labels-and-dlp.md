@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Résumé : appliquez des étiquettes de rétention et des stratégies DLP à des sites d’équipe SharePoint Online, avec différents niveaux de protection des informations.'
 ms.openlocfilehash: 81173e96ce6e67ee3b513abce4424686abe79e02
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261654"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Protéger les fichiers SharePoint Online avec des étiquettes de rétention et la protection contre la perte de données (DLP)
 
@@ -45,9 +45,9 @@ La création, puis l’attribution d’étiquettes de rétention à des sites d�
 
 Au cours de cette phase, vous déterminez les noms de vos étiquettes de rétention pour les quatre niveaux de protection des informations appliqués aux sites d’équipe SharePoint Online. Le tableau suivant répertorie les noms recommandés pour chaque niveau.
   
-|**Niveau de protection d’un site d’équipe SharePoint Online**|**Nom de l’étiquette**|
+|**Niveau de protection du site d’équipe SharePoint Online**|**Nom de l’étiquette**|
 |:-----|:-----|
-|Référence-Public  <br/> |Public interne  <br/> |
+|Base de référence - Public  <br/> |Public interne  <br/> |
 |Base de référence - Privé  <br/> |Private  <br/> |
 |Sensible  <br/> |Sensible  <br/> |
 |Hautement confidentiel  <br/> |Hautement confidentiel  <br/> |
@@ -221,7 +221,7 @@ Voici le résultat de votre configuration pour les sites d’équipe SharePoint 
     
 ## <a name="see-also"></a>Voir aussi
 
-[Sécuriser des sites et des fichiers SharePoint Online](secure-sharepoint-online-sites-and-files.md)
+[Sécuriser les fichiers et sites SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   
 [Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   

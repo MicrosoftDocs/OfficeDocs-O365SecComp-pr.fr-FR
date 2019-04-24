@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Dans Office 365, les étiquettes de rétention vous aident à entreprendre les bonnes actions sur le contenu approprié. Grâce aux étiquettes de rétention, vous pouvez classer les données au sein de votre organisation à des fins de gouvernance, et appliquer des règles de rétention basées sur cette classification. Vous pouvez également utiliser des étiquettes de rétention pour implémenter la gestion des enregistrements dans Office 365.
 ms.openlocfilehash: e13c73e95a2b8bc25df0031a9bd94da4feb54b23
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255042"
 ---
 # <a name="overview-of-retention-labels"></a>Vue d’ensemble des étiquettes de rétention
 

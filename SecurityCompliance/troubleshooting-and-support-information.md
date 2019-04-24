@@ -1,5 +1,5 @@
 ---
-title: Résolution des problèmes et informations de support technique
+title: Dépannage et informations relatives au support
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -15,13 +15,13 @@ ms.collection:
 - M365-security-compliance
 description: Cette rubrique décrit les étapes de résolution des problèmes pour les utilisateurs finaux et les administrateurs, et fournit des informations sur la manière de contacter le support technique pour obtenir de l'aide.
 ms.openlocfilehash: bea2ad502f24d63874bfa954e6d67c73dc44d98d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259842"
 ---
-# <a name="troubleshooting-and-support-information"></a>Résolution des problèmes et informations de support technique
+# <a name="troubleshooting-and-support-information"></a>Dépannage et informations relatives au support
 
 Cette rubrique décrit les étapes de résolution des problèmes pour les utilisateurs finaux et les administrateurs, et fournit des informations sur la manière de contacter le support technique pour obtenir de l'aide.
   

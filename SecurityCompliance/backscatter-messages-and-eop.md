@@ -14,12 +14,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: La rétrodiffusion désigne l’envoi automatisé de messages non remis par des serveurs de messagerie, généralement à la suite de la détection d’un courrier indésirable entrant. La liste rouge DNS Backscatterer est une liste d'adresses IP qui envoient des messages de rétrodiffusion. Il ne s'agit pas d'une liste d'expéditeurs de courriers indésirables et nous n'essayons pas de retirer nos serveurs de la liste rouge DNS Backscatterer.
-ms.openlocfilehash: 7581255ce4e68f6eb661df280ecb0cb94b7515ef
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 62dd86d91e89e4f3c966b2969d0d763595bb5dc3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243895"
 ---
 # <a name="backscatter-messages-and-eop"></a>Messages de rétrodiffusion et EOP
 
@@ -28,10 +28,8 @@ La rétrodiffusion désigne l'envoi automatisé de messages non remis par des se
 > [!TIP]
 > Selon les instructions figurant sur le site web Backscatterer, l'utilisation du mode de rejet pour tous les messages entrants n'est pas une configuration ou une utilisation recommandée de ce service. Il doit plutôt être utilisé en mode sécurisé. Pour plus d'informations sur la mise en œuvre de la configuration de rétrodiffusion appropriée, consultez le site web [Backscatterer.org](http://www.backscatterer.org/?target=usage). 
   
-## <a name="for-more-information"></a>Pour plus d'informations
-
-[Liste d'adresses IP Backscatterer.org](https://blogs.msdn.com/b/tzink/archive/2012/08/22/the-backscatterer-org-ip-list.aspx)
+## <a name="related-topics"></a>Voir aussi
   
-Voir l'entrée «NDR rétrodiffusion» dans [Options avancées de filtrage du courrier](advanced-spam-filtering-asf-options.md) indésirable
+[Options de filtrage avancé du courrier indésirable](advanced-spam-filtering-asf-options.md)
   
 

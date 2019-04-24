@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: Dans Office 365, vous pouvez utiliser des étiquettes pour implémenter une planification de rétention pour votre organisation. En tant que gestionnaire des enregistrements ou responsable de la mise en conformité, vous avez peut-être des centaines d’étiquettes à créer et à publier. Vous pouvez le faire via l’interface utilisateur dans le Centre de sécurité et conformité, mais créer des étiquettes une à une est chronophage et inefficace. En utilisant le script et les fichiers .csv fournis ci-dessous, vous pouvez créer et publier en bloc des étiquettes et des stratégies d’étiquette. Tout d’abord, créez une liste des étiquettes et une liste des stratégies d’étiquette dans Excel, puis créez les étiquettes et les stratégies d’étiquette en bloc dans ces listes à l’aide de PowerShell. Cette méthode vous permet de créer et de publier en une fois toutes les étiquettes nécessaires pour votre planification de rétention.
 ms.openlocfilehash: f787171e0b463b09f99698c37ac0bf5c516fad8f
-ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30997280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32244135"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Création et publication en bloc d’étiquettes de rétention à l’aide de PowerShell
 

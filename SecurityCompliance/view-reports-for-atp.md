@@ -3,7 +3,7 @@ title: Afficher les rapports pour Office 365 protection avancée contre les mena
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/19/2019
+ms.date: 04/01/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment trouver et utiliser des rapports pour Office 365 protection avancée contre les menaces dans &amp; le centre de sécurité conformité.
-ms.openlocfilehash: 53d31bf05401d80e79f0d73c191d69fe378f98cb
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: ff80191ae75a37994d1ad08f587fa07f72b88f24
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267516"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Afficher les rapports pour Office 365 protection avancée contre les menaces
 
@@ -81,8 +81,9 @@ Lorsque vous placez le curseur de la souris sur une barre du graphique, vous pou
 
 Outre les rapports ATP décrits dans cet article, plusieurs autres rapports sont disponibles, comme décrit dans le tableau suivant:
 
-|Type de rapport  |En savoir plus  |
+|Rapport (s)  |Détails  |
 |---------|---------|
+|**Suivi des URL de liens fiables ATP** (Il s'agit d'un rapport que vous générez à l'aide de PowerShell.) Ce rapport affiche les résultats des actions de liens approuvés ATP au cours des sept (7) derniers jours. |[Référence de l'applet de commande Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-urltrace?view=exchange-ps) |
 |**Rapports de sécurité de messagerie**, tels que le rapport des expéditeurs et des destinataires, un rapport de courrier indésirable et un rapport de détection du courrier indésirable. | [Afficher les rapports de sécurité de messagerie &amp; dans le centre de sécurité conformité](view-email-security-reports.md)        |
 |**Explorateur** (également appelé «Explorateur de menaces», il est inclus dans [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md))     | [Utiliser l'Explorateur dans le &amp; Centre de sécurité conformité](use-explorer-in-security-and-compliance.md)        |
 |**Résultats EOP et ATP** (Il s'agit d'un rapport personnalisé que vous générez à l'aide de PowerShell). Ce rapport contient des informations, telles que le domaine, la date, le type d'événement, la direction, l'action et le nombre de messages.  | [Référence de l'applet de commande Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-mailtrafficatpreport?view=exchange-ps) |

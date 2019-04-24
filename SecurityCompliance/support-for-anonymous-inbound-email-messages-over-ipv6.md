@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer la prise en charge des messages anonymes provenant de sources IPv6 pour Exchange Online Protection et Exchange Online.
 ms.openlocfilehash: 5d87dc929d2d67681b21eb46a4aaa52ca32caff9
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260252"
 ---
 # <a name="support-for-anonymous-inbound-email-messages-over-ipv6"></a>Prise en charge des messages entrants anonymes sur IPv6
 

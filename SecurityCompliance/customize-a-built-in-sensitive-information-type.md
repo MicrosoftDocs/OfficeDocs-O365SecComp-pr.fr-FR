@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Lorsque vous recherchez des informations sensibles dans du contenu, vous devez décrire ces informations dans ce que l’on appelle une règle. La protection contre la perte de données (DLP) comprend des règles pour les types d’informations sensibles les plus courants que vous pouvez utiliser immédiatement. Pour utiliser ces règles, vous devez les inclure dans une stratégie. Vous voudrez peut-être ajuster ces règles intégrées pour répondre aux besoins spécifiques de votre organisation, et vous pouvez le faire en créant un type d’informations sensibles personnalisé. Cette rubrique vous montre comment personnaliser le fichier XML qui contient la collection de règles existante pour détecter un plus large éventail d’informations potentielles relatives aux cartes de crédit.
 ms.openlocfilehash: a4e9a6e981889bd2be19451127fc96b351b4b00f
-ms.sourcegitcommit: 69d0c739a2f3b4a335b42182a2c7267ef554eb76
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "31389682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258142"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personnaliser un type d’informations sensibles intégré
 
@@ -212,7 +212,7 @@ Voici les définitions des termes que vous avez rencontrés au cours de cette pr
   
 |**Terme**|**Définition**|
 |:-----|:-----|
-|Entity|Les entités sont ce que nous appelons des types d'informations sensibles, comme les numéros de carte de crédit. Chaque entité possède un GUID unique qui constitue son ID. Si vous copiez un GUID et que vous le recherchez dans le XML, vous trouvez la définition de règle XML, ainsi que toutes les traductions localisées de cette règle XML. Vous pouvez également trouver cette définition en localisant le GUID de la traduction, puis en recherchant ce GUID.|
+|Entité|Les entités sont ce que nous appelons des types d'informations sensibles, comme les numéros de carte de crédit. Chaque entité possède un GUID unique qui constitue son ID. Si vous copiez un GUID et que vous le recherchez dans le XML, vous trouvez la définition de règle XML, ainsi que toutes les traductions localisées de cette règle XML. Vous pouvez également trouver cette définition en localisant le GUID de la traduction, puis en recherchant ce GUID.|
 |Fonctions|Le fichier XML fait référence à `Func_credit_card`, qui est une fonction dans le code compilé. Les fonctions sont utilisées pour exécuter des expressions régulières complexes et vérifier que les sommes de contrôle correspondent pour nos règles intégrées. Étant donné que tout ceci se passe dans le code, certaines variables ne figurent pas dans le fichier XML.|
 |IdMatch|Il s’agit de l’identificateur auquel le modèle tente de correspondre, par exemple un numéro de carte de crédit. Vous pouvez en lire plus à ce sujet et au sujet des balises `Match` dans [Règles d’entité](https://support.office.com/article/c4ab8707-0839-4855-9390-3dbcb43475a7.aspx#dlp-entity).|
 |Listes de mots clés|Le fichier XML fait également référence à `keyword_cc_verification` et à `keyword_cc_name`, qui sont des listes de mots clés dans lesquelles nous recherchons des correspondances à l’intérieur du paramètre `patternsProximity` pour l’entité. Ces éléments ne sont actuellement pas affichés dans le fichier XML.|
