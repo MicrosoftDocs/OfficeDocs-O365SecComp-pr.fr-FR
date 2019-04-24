@@ -254,7 +254,7 @@
 ### [Utiliser la recherche de contenu pour rechercher des données tierces](use-content-search-to-search-third-party-data-that-was-imported.md)
 ### [Utiliser la recherche de contenu dans votre flux de travail eDiscovery](use-content-search-in-ediscovery.md)
 ### [Vérifier la présence d’erreurs dans vos requêtes de recherche de contenu](check-your-content-search-query-for-errors.md)
-### [Conserver les destinataires Cci pour la recherche de contenu](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members)
+### [Conserver les destinataires Cci pour la recherche de contenu](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 ## Comprendre la recherche de contenu
 ### [Limites de recherche de contenu](limits-for-content-search.md)
 ### [Éléments partiellement indexés dans la recherche de contenu](partially-indexed-items-in-content-search.md)
@@ -286,6 +286,7 @@
 ### [Supprimer des éléments en attente dans le dossier Éléments récupérables des boîtes aux lettres basées sur le cloud](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
 ### [Augmenter le quota des éléments récupérables pour les boîtes aux lettres placées en conservation](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
 ### [Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md)
+### [Conserver les destinataires Cci et les destinataires de groupe de distribution étendue](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 
 ## [Advanced eDiscovery (préversion) dans Microsoft 365](compliance20/overview-ediscovery-20.md)
 ### [Notes de publication](compliance20/release-notes-ediscovery20.md)
@@ -314,13 +315,14 @@
 #### [Statistiques de recherche](compliance20/search-statistics.md)
 #### [Ajouter des résultats de recherche à un ensemble de travail](compliance20/add-data-to-working-set.md)
 
+### [Gérer des ensembles de travail](compliance20/managing-working-sets.md)
+#### [Charger les données ne provenant pas d’Office 365 dans un ensemble de travail](compliance20/load-non-office365-data.md)
+#### [Ajouter des données à un autre ensemble de travail](compliance20/add-data-to-working-set-from-another-working-set.md)
+#### [Gérer les ensembles de charge](compliance20/manage-load-sets.md)
+
 ### [Examiner les données de cas](compliance20/reviewing-data-in-working-set.md)
 #### [Afficher des documents dans un ensemble de travail](compliance20/view-documents-in-working-set.md)
 #### [Interroger les données d’un ensemble de travail](compliance20/working-set-search.md)
-#### [Gérer des ensembles de travail](compliance20/managing-working-sets.md)
-#### [Ajouter des données à un autre ensemble de travail](compliance20/add-data-to-working-set-from-another-working-set.md)
-#### [Gérer les ensembles de charge](compliance20/manage-load-sets.md)
-#### [Charger les données ne provenant pas d’Office 365 dans un ensemble de travail](compliance20/load-non-office365-data.md)
 #### [Baliser des documents dans un ensemble de travail](compliance20/tagging-documents.md)
 
 ### [Analyser les données de cas](compliance20/analyzing-data-in-working-set.md)
@@ -579,7 +581,6 @@
 ### [Renseignements sur le flux de messagerie dans Office 365](mail-flow-intelligence-in-office-365.md)
 ## Conservations de boîtes aux lettres
 ### [Créer une suspension pour litige](create-a-litigation-hold.md)
-### [Conserver les destinataires Cci et les destinataires de groupe de distribution étendue pour eDiscovery](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 ### [Placer une conservation inaltérable dans une boîte aux lettres supprimée (récupérable)](put-an-in-place-hold-on-a-soft-deleted-mailbox.md)
 ## [Mise en quarantaine](quarantine.md)
 ### [Rechercher et débloquer les messages mis en quarantaine en tant qu’administrateur](find-and-release-quarantined-messages-as-an-administrator.md)

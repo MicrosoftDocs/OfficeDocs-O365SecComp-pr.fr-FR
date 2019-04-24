@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cette rubrique explique comment configurer votre flux de processus métier pour automatiser la rétention via des événements à l’aide de l’API REST de Microsoft 365.
-ms.openlocfilehash: 55bfdccea07b6aaa9227974b43b1b20adcf97ff5
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 99ece368cbda5318556d1f3863fa07ee11a1d003
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32251064"
 ---
 # <a name="automate-event-based-retention"></a>Rétentions basées sur des événements
 
@@ -50,19 +50,18 @@ Cette section décrit les activités devant être effectuées avant la conservat
 
 Identifier les différents rôles d’une organisation qui effectuent des tâches de gestion d’enregistrement qui seraient responsables de la rétention efficace et de documents professionnels.
 
-  | **Persona**| **Rôle**|
+  | **Persona**| **Role**|
   | - | - |
-  | Centre d’administration de Sécurité et Conformité
- | Crée des types d’Événement de Rétention, Étiquettes de Rétention et Référentiels d’Enregistrement dans SharePoint |
+  | Administrateur | Crée des types d’Événement de Rétention, Étiquettes de Rétention et Référentiels d’Enregistrement dans SharePoint |
   | Gestionnaire d’enregistrements                                  | Fournit des détails de recommandations et de conformité stratégies de rétention et des plannings de rétention   |
   | Administrateur système (entreprise)                          | Configure et gère les systèmes externes pour fonctionner avec Microsoft 365                       |
   | Travailleur de l'information                               | Gère le cycle de vie de leur processus métier (RH, Finance, etc. informatique)                 |
 
 ### <a name="set-up-the-security--compliance-center"></a>Accéder au Centre de Conformité et de Sécurité
   
-1. L’administrateur de conformité crée un type d’événement-par exemple, la résiliation employé ou d’Expiration de contrat ou fin de fabrication de produit (reportez-vous aux processus étape par étape dans [article rétention événement](https://docs.microsoft.com/fr-FR/office365/securitycompliance/event-driven-retention)
+1. L’administrateur de conformité crée un type d’événement : par exemple, la résiliation employé ou expiration de contrat ou fin de fabrication de produit (reportez-vous aux processus étape par étape dans l’article[rétention événement](https://docs.microsoft.com/fr-FR/office365/securitycompliance/event-driven-retention).
     
-1. Crée une étiquette en fonction d’un événement et l’associe à un type d’événement
+1. L’administrateur de conformité crée une étiquette en fonction d’un événement et l’associe à un type d’événement.
     
 1. Il existe 4 types de déclencheurs pour les étiquettes de rétention :
             
@@ -74,7 +73,7 @@ Identifier les différents rôles d’une organisation qui effectuent des tâche
                 
     1. Basé sur des événements
     
-1. Administrateur de conformité publie l’étiquette
+1. L’administrateur de conformité publie l’étiquette.
 
 ### <a name="set-up-sharepoint"></a>Configurer SharePoint
    
@@ -94,7 +93,7 @@ Pour créer un référentiel des enregistrements, l’administrateur de conformi
 
 Il existe deux façons avec lesquelles la rétention basée sur l’événement peut être déclenchée :
 
-- **À l’aide de sécurité et l’interface utilisateur du centre de conformité** il s’agit d’un processus qui peut être utilisé pour conserver le contenu est inférieure à la fois ou la fréquence de déclencheur rétention n’est pas souvent, par exemple, mensuelle ou annuelle. Pour plus d’informations sur cette méthode, voir [vue d’ensemble de rétention basées sur les événements](event-driven-retention.md). Toutefois, cette méthode pour déclencher la lecture rétention peut prendre du temps et sujettes aux erreurs, par conséquent rabougrissement évolutivité. Par conséquent, une solution automatisée, transparente associer au déclenchement de rétention peut améliorer la sécurité et conformité des données.
+- **Utiliser l’interface utilisateur du centre de conformité** il s’agit d’un processus qui peut être utilisé pour conserver moins de contenu à la fois ou la fréquence de déclenchement de rétention n’est pas souvent, par exemple, mensuelle ou annuelle. Pour plus d’informations sur cette méthode, voir [vue d’ensemble de rétention basée sur les événements](event-driven-retention.md). Toutefois, cette méthode pour déclencher la rétention peut prendre du temps et est sujette aux erreurs, et peut donc ralentir l’évolutivité. Par conséquent, une solution automatisée plus transparente associée au déclenchement de rétention peut améliorer la sécurité et conformité des données.
 
 - **À l’aide d’une API REST M365** Ce processus peut être utilisé lorsque les grandes quantités de contenu sont conservées à un moment et/ou la fréquence de rétention déclencheur est récurrente telle que de manière quotidienne ou hebdomadaire. Le flux détecte quand un événement se produit dans votre système métier de, puis crée automatiquement un événement connexe dans le centre de sécurité et conformité. Vous n’avez pas besoin de créer manuellement un événement dans l’interface utilisateur chaque fois que ce qui se passer.
 
@@ -136,11 +135,11 @@ Un processus automatisé associé au déclenchement de ces différentes horloges
 
   - L SCC d’administration
 
-  - OGs dans le Centre de Conformité et de Sécurité
+  - Connexions dans le Centre de Conformité et de Sécurité
 
-  - L’administrateur SCC crée des types d’événements liés à l’employé tels que « Résiliation employé », « Faire appel à employé »dans le Centre de Sécurité et Conformité.
+  - L’administrateur SCC crée des types d’événements liés à l’employé tels que « Renvoi employé », « Embauche employé » dans le Centre de Sécurité et Conformité.
 
-  - L’administrateur SCC crée l’étiquette « Employés » dans le Centre de Sécurité et Conformité.
+  - Administrateur SCC crée une étiquette « Employés ».
 
   - Cette étiquette « Employés » est publiée et appliquée manuellement ou automatiquement aux fichiers employé dans SharePoint
 
@@ -434,9 +433,9 @@ Un système de gestion de relation client (CRM) pouvez travailler avec Microsoft
 
   - L’administrateur SCG se connecte au Centre de Conformité et de Sécurité
 
-  - L’administrateur SCC crée un contrat lié aux types événements tels que « Création de contrat, » événements « Contrat d’Expiration » dans le Centre de Sécurité et Conformité.
+  - L’administrateur SCC crée un contrat lié aux types événements tels que « Création de contrat, » , « Expiration de contrat » dans le Centre de Sécurité et Conformité.
 
-  - L’administrateur SCC crée l’étiquette « Expiration du Contrat » dans le Centre de Sécurité et Conformité.
+  - Administrateur SCC crée une étiquette « Expiration de contrat ».
 
   - Cette étiquette « Expiration du Contrat » est publiée et appliquée manuellement ou automatiquement aux fichiers employé dans SharePoint
 
@@ -462,9 +461,9 @@ Un système de planification (ERP) peut fonctionner avec Microsoft 365 et Micros
 
   - L’administrateur SCG se connecte au Centre de Conformité et de Sécurité
 
-  - L’administrateur SCC crée des types d’événement lié à l’employé tels que « Commencer la fabrication de produit», « Fin de produit de fabrication » des événements dans le Centre de Sécurité et Conformité.
+  - L’administrateur SCC crée des types d’événement liés à l’employé tels que « Commencer la fabrication de produit », « Fin de fabrication de produit » dans le Centre de Sécurité et Conformité.
 
-  - L’administrateur SCC crée l’étiquette «Fin de la Fabrication du Produit» dans le Centre de Sécurité et Conformité.
+  - L’administrateur SCC crée l’étiquette « Fin de la Fabrication du Produit » dans le Centre de Sécurité et Conformité.
 
   - Cette étiquette «Fin de la Fabrication du Produit» est publiée et appliquée manuellement ou automatiquement aux fichiers employé dans SharePoint
 
