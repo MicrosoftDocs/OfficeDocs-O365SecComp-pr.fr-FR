@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Vous pouvez créer une boîte aux lettres inactive dans Office 365 en appliquant une stratégie de rétention de blocage ou d'Office 365 à la boîte aux lettres, puis en supprimant le compte d'utilisateur Office 365 correspondant. Les éléments d'une boîte aux lettres inactive sont conservés pendant la durée de la conservation ou de la stratégie de rétention qui lui a été appliquée avant qu'elle ne soit devenue inactive. Pour supprimer définitivement une boîte aux lettres inactive, supprimez simplement la stratégie de conservation ou de rétention.
 ms.openlocfilehash: ad874d2f21afaa86fa7fa5a18dc827dfa1b90574
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258884"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Créer et gérer des boîtes aux lettres inactives dans Office 365
 
@@ -52,7 +52,7 @@ Si une boîte aux lettres est déjà placée en conservation, ou si une stratég
   
 Pour savoir comment placer une boîte aux lettres en conservation pour litige ou appliquer une stratégie de rétention Office 365, consultez les rubriques suivantes :
   
-- [Placement d’une boîte aux lettres en conservation pour litige](https://go.microsoft.com/fwlink/?linkid=856286)
+- [Place a mailbox on Litigation Hold](https://go.microsoft.com/fwlink/?linkid=856286)
     
 - [Vue d'ensemble des stratégies de rétention](retention-policies.md)
     
