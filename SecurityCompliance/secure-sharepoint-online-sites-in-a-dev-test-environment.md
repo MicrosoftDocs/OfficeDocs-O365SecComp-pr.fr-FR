@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Résumé : Créez des sites d’équipe SharePoint Online publics, privés, sensibles et hautement confidentiels dans un environnement de développement/test.'
-ms.openlocfilehash: e1d5e6f98679e2efb4d5048009971d88f90181e8
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.openlocfilehash: 8598c73c07c5e6bca1c429c30cd88772d8ca6697
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260946"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Sécuriser des sites SharePoint Online dans un environnement de développement et de test
 
@@ -208,9 +208,7 @@ Dans cette phase, vous allez créer les étiquettes correspondant aux différent
     
 7. Dans le volet **Vérifier vos paramètres**, cliquez sur **Créer l’étiquette**.
     
-8. Pour vos autres étiquettes, cliquez sur **Créer une étiquette**, puis répétez les étapes 3 à 7.
-
-9. Répétez les étapes 3 à 8 pour les autres étiquettes suivantes :
+8. Répétez les étapes 3 à 7 pour les étiquettes supplémentaires avec ces noms :
     
   - Private
     
@@ -218,21 +216,21 @@ Dans cette phase, vous allez créer les étiquettes correspondant aux différent
     
   - Hautement confidentiel
   
-10. Dans le volet **Accueil > Étiquettes**, cliquez sur **Publier des étiquettes**.
+9. Dans le volet **Accueil > Étiquettes**, cliquez sur **Publier des étiquettes**.
     
-11. Dans le volet **Choisir les étiquettes à publier**, cliquez sur **Choisir les étiquettes à publier**.
+10. Dans le volet **Choisir les étiquettes à publier**, cliquez sur **Choisir les étiquettes à publier**.
     
-12. Dans le volet **Choisir des étiquettes**, cliquez sur **Ajouter** et sélectionnez les quatre étiquettes.
+11. Dans le volet **Choisir des étiquettes**, cliquez sur **Ajouter** et sélectionnez les quatre étiquettes.
     
-13. Cliquez sur **Terminé**.
+12. Cliquez sur **Terminé**.
     
-14. Dans le volet **Choisir les étiquettes à publier**, cliquez sur **Suivant**.
+13. Dans le volet **Choisir les étiquettes à publier**, cliquez sur **Suivant**.
     
-15. Dans le volet **Choisir les emplacements**, cliquez sur **Suivant**.
+14. Dans le volet **Choisir les emplacements**, cliquez sur **Suivant**.
     
-16. Dans le volet **Nom de votre stratégie**, saisissez **Exemple d’organisation** sous **Nom**, puis cliquez sur **Suivant**.
+15. Dans le volet **Nom de votre stratégie**, saisissez **Exemple d’organisation** sous **Nom**, puis cliquez sur **Suivant**.
     
-17. Dans le volet **Vérifier vos paramètres**, cliquez sur **Publier les étiquettes**, puis sur **Fermer**.
+16. Dans le volet **Vérifier vos paramètres**, cliquez sur **Publier les étiquettes**, puis sur **Fermer**.
     
 ## <a name="phase-4-create-your-sharepoint-online-team-sites"></a>Phase 4 : Création de vos sites d’équipe SharePoint Online
 
@@ -580,11 +578,11 @@ Quand vous êtes prêt à effectuer le déploiement en production de sites Share
   
 ## <a name="see-also"></a>Voir aussi
 
-[Sécuriser des sites et des fichiers SharePoint Online](secure-sharepoint-online-sites-and-files.md)
+[Sécuriser les fichiers et sites SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   
 [Adoption du cloud et solutions hybrides](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
   
-[Conseils de Sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
 
 
 

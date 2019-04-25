@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez comment utiliser des étiquettes Office dans le cadre de votre plan de protection RGPD.
-ms.openlocfilehash: 32f94e02dac81abaef46ef5495701e5037ff8c6b
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: a5ffcca94ea98a3d6426dc60fae0f6cb98d0029d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32244157"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Application d’étiquettes à des données personnelles dans Office 365
 
@@ -34,7 +34,7 @@ Si vous utilisez des étiquettes pour la protection des données personnelles da
 
 Sécurité des applications cloud ne prend actuellement pas en charge les étiquettes de rétention, mais vous pouvez utiliser des types d’informations confidentielles Office 365 avec Sécurité des applications cloud pour surveiller les données personnelles qui se trouvent dans d’autres applications SaaS.
 
-Les [étiquettes de sensibilité](sensitivity-labels.md) sont actuellement recommandées pour appliquer des étiquettes à des fichiers en local et dans d’autres services cloud et fournisseurs. Ceux-ci sont également recommandées pour les fichiers dans Office 365 nécessitant le chiffrement (point d’installation Azure Information Protection administrative) pour la protection des données, tels que les fichiers secrets commerciaux.
+Les [étiquettes de sensibilité](sensitivity-labels.md) sont actuellement recommandées pour appliquer des étiquettes à des fichiers en local et dans d’autres services cloud et fournisseurs. Ceux-ci sont également recommandées pour les fichiers dans Office 365 nécessitant le chiffrement Azure Information Protection pour la protection des données, tels que les fichiers secrets commerciaux.
 
 À ce stade, à l’aide d’Azure Information Protection pour appliquer le chiffrement n’est pas recommandée pour les fichiers dans Office 365 avec des données qui est soumis à la RGPD. Les services Office 365 ne peuvent pas lire actuellement dans les fichiers d’installation administrative chiffrés. Par conséquent, le service ne peut pas trouver de données confidentielles dans ces fichiers.
 
