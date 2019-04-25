@@ -13,13 +13,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Dans Office 365, vous pouvez baser une période de rétention sur l’occurrence d’un type spécifique d’événement grâce aux étiquettes. L’événement déclenche le début de la période de rétention, et les actions de rétention d’une étiquette sont appliquées sur tout le contenu portant l’étiquette en question pour ce type d’événement. Les rétentions basées sur des événements sont généralement utilisées dans le cadre d’un processus de gestion des enregistrements.
-ms.openlocfilehash: ceb4b2fde10e43235d8d310243fe56cce1a2b240
-ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
+description: Avec les étiquettes de rétention dans Office 365, vous pouvez baser une période de rétention sur la survenue d’un type d’événement spécifique. L’événement déclenche le début de la période de rétention, et tout le contenu portant une étiquette définie pour ce type d’événement se voit appliquer les actions de rétention de l’étiquette. La rétention basée sur un événement est généralement utilisée dans le cadre d’un processus de gestion des enregistrements.
+ms.openlocfilehash: d03abdc43a62d703fdebdb4cf9571dfbab9d744b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30866360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256382"
 ---
 # <a name="overview-of-event-driven-retention"></a>Vue d’ensemble des rétentions basées sur des événements
 
@@ -77,7 +77,7 @@ Voici le niveau le plus haut du flux de travail pour la rétention basée sur de
   
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>Étape 1 : créer une étiquette dont la période de rétention est basée sur des événements
 
-Dans le Centre de sécurité &amp; conformité, dans le volet de navigation de gauche, sous **Classifications**, sélectionnez **Étiquettes** \> **Créer une étiquette**.
+Pour créer et gérer des étiquettes de rétention, dans le portail Centre de conformité Microsoft 365, Centre de sécurité Microsoft 365&amp; ou Centre de sécurité et conformité Office 365, dans la partie gauche, choisissez **Classifications** > **Étiquettes** > **, puis sélectionnez **l’onglet **Créer une étiquette**.
   
 Lorsque vous créez l’étiquette, activez la rétention, puis sélectionnez l’option indiquée ci-dessous pour conserver ou supprimer le contenu basé sur un événement. Cela signifie que les paramètres de rétention ne rentrent pas en vigueur avant l’étape 5, lorsque vous créez un événement sur la page **Événements**. 
   
@@ -103,7 +103,7 @@ Notez qu’une fois que vous sélectionnez un type d’événement et créez l�
   
 ### <a name="step-3-publish-or-auto-apply-the-label"></a>Étape 3 : publier ou appliquer automatiquement l’étiquette
 
-Comme pour toute étiquette, vous devez publier ou appliquer automatiquement une étiquette basée sur un événement afin qu’elle soit appliquée manuellement ou automatiquement au contenu. Faites-le sur la page **Étiquettes**. Notez que les étiquettes qui classent le contenu en tant qu’enregistrement peuvent être uniquement publiées et appliquées manuellement au contenu ; elles ne peuvent pas être appliquées automatiquement au contenu. 
+Comme pour toute étiquette, vous devez publier ou appliquer automatiquement une étiquette basée sur un événement afin qu’elle soit appliquée manuellement ou automatiquement au contenu. Faites-le sur la page **Étiquettes** ou **Polices d’étiquettes**. Notez que les étiquettes qui classent le contenu en tant qu’enregistrement peuvent être uniquement publiées et appliquées manuellement au contenu. 
   
 ![Options permettant de publier ou d’appliquer automatiquement une étiquette](media/c9232c54-bbc0-40d2-abc2-122d5d1e70af.png)
   
@@ -149,7 +149,7 @@ Enfin, sélectionnez la date à laquelle l’événement est survenu. Cette date
   
 ## <a name="use-content-search-to-find-all-content-with-a-specific-label-or-asset-id"></a>Utilisation de la recherche de contenu pour rechercher tout le contenu portant une étiquette ou un ID d’élément spécifique
 
-Une fois que les étiquettes sont attribuées au contenu, vous pouvez utiliser la recherche de contenu dans le Centre de sécurité &amp; conformité pour rechercher tout le contenu classé avec une étiquette spécifique ou qui contient un ID d’élément spécifique.
+Une fois que les étiquettes sont attribuées au contenu, vous pouvez utiliser la recherche de contenu pour rechercher tout le contenu classé avec une étiquette spécifique ou qui contient un ID d’élément spécifique.
   
 Lorsque vous créez une recherche de contenu, procédez comme suit :
   
@@ -167,11 +167,9 @@ Pour obtenir plus d’informations, consultez l’article [Octroi de l’accès 
   
 ## <a name="automate-events-by-using-powershell"></a>Automatisation des événements à l’aide de PowerShell
 
-Dans le centre de sécurité &amp; conformité Office 365, vous pouvez uniquement créer des événements manuellement ; il n’est pas possible de déclencher automatiquement un événement lorsqu’il se produit. Toutefois, vous pouvez utiliser un script PowerShell pour automatiser les rétentions basées sur des événements à partir de vos applications métier.
-  
-Nous travaillons actuellement sur les API afin que vous puissiez connecter vos applications métier (par exemple, RH, CRM ou des applications financières) aux rétentions basées sur des événements. Par exemple, vous pourrez connecter votre système de RH aux rétentions basées sur des événements. Ainsi, lorsqu’un employé quitte l’organisation, l’événement de ce type d’événement se déclenche automatiquement.
-  
-En attendant, voici les cmdlets PowerShell disponibles pour les rétentions basées sur des événements :
+Dans le centre administrateur, vous pouvez uniquement créer des événements manuellement ; il n’est pas possible de déclencher automatiquement un événement lorsqu’il se produit. Toutefois, vous pouvez utiliser un Rest API pour automatiser les événements ; pour plus d’informations, voir [Automatiser la rétention basée sur des événements](automate-event-driven-retention.md).
+
+Vous pouvez aussi utiliser un script PowerShell pour automatiser une rétention basée sur l’événement à partir de vos applications entreprise. Voici les cmdlets PowerShell disponibles pour les rétentions basées sur des événements :
   
 - [Get-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873002)
     
