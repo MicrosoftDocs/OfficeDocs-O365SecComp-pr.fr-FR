@@ -3,7 +3,7 @@ title: Rechercher du contenu dans Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 4/4/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: Utilisez l'outil eDiscovery de la recherche de contenu dans le centre de sécurité & Compliance Center pour trouver rapidement des messages électroniques dans des boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, et des conversations de messagerie instantanée dans Skype entreprise.
-ms.openlocfilehash: fc0bea90ce9cbfc27f894985c7d3083756ab108a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3e8e0594cac700fe37ee7a4a6c889dbf862cd0fb
+ms.sourcegitcommit: 3509e324952aee703f3ced5b950dd53cb5f974ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261352"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33248299"
 ---
 # <a name="search-for-content-in-office-365"></a>Rechercher du contenu dans Office 365
 
@@ -42,7 +42,10 @@ La première étape consiste à utiliser l'outil de recherche de contenu pour ch
     
 - [Modification en bloc](bulk-edit-content-searches.md) des emplacements de requête et de contenu pour plusieurs recherches 
     
+- [Nouvelle tentative de recherche de contenu](retry-failed-content-search.md) pour résoudre une erreur d'emplacement de contenu
+
 - [Conserver les destinataires CCI](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) pour pouvoir les Rechercher 
+
 
 ## <a name="perform-actions-on-content-you-find"></a>Effectuer des actions sur le contenu que vous trouvez
 
