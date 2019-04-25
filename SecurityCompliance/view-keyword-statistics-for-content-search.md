@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: Utilisez la fonctionnalité statistiques de recherche pour afficher et comparer les statistiques de plusieurs recherches de contenu dans le centre de sécurité & Compliance Center. Vous pouvez également configurer la liste de mots clés lors de la création ou de la modification d'une requête de recherche pour obtenir des statistiques améliorées qui indiquent le nombre d'éléments correspondant à chaque expression de mot clé ou mot clé.
 ms.openlocfilehash: 5e4cca18f6a50f2647265f02dab7ab3f20f513fc
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267392"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Afficher les statistiques de mot clé pour les résultats de recherche de contenu
 
@@ -41,7 +41,7 @@ Pour afficher les statistiques des recherches de contenu:
   
 3. Sur la page **statistiques de recherche** , cliquez sur l'un des liens suivants pour afficher les statistiques sur les recherches sélectionnées. 
     
-    **Résumé**
+    **Summary**
     
     Cette page affiche des statistiques similaires à celles affichées dans le volet d'informations sur la page **recherche de contenu** . Les statistiques de toutes les recherches sélectionnées sont affichées. Notez que vous pouvez également réexécuter les recherches sélectionnées à partir de cette page pour mettre à jour les statistiques. 
     

@@ -14,12 +14,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez comment reconnaître et répondre à un compte de messagerie compromis dans Office 365
-ms.openlocfilehash: f974719e5609645314bf1e8d7b15ae30cda6282e
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: abb9cbae0d1df41f5513e7958aaf1dc04ce66154
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264836"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Réponse à un compte de messagerie compromis dans Office 365
 
@@ -132,3 +132,4 @@ Votre abonnement Office 365 inclut un ensemble puissant de fonctionnalités de s
 - [Détecter et résoudre les attaques par injections sur les règles d’Outlook et les formulaires personnalisés dans Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 - [Centre de plaintes contre la criminalité sur Internet ](http://www.ic3.gov/preventiontips.aspx)
 - [Securities and Exchange Commission (SEC) : fraude à « l’hameçonnage » (phishing)](http://www.sec.gov/investor/pubs/phishing.htm)
+- Pour signaler un courrier électronique indésirable directement à Microsoft et à votre administrateur [Utiliser le complément Message de Rapport](https://support.office.com/fr-FR/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
