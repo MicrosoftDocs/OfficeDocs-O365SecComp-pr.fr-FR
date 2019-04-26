@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) est un service de filtrage du courrier électronique dans le nuage, qui contribue à protéger votre organisation contre le courrier indésirable et les logiciels malveillants, ainsi que contre les violations de politique de messagerie.
-ms.openlocfilehash: c8450d5204635788a044538d701e23f4f77d1e0f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a0b736eb9773ace87f32f1272b3f4326532206d2
+ms.sourcegitcommit: eca85431f4e57878a8c160b7620adf5c44ef40e6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256156"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33306578"
 ---
 # <a name="exchange-online-protection-overview"></a>Vue d'ensemble d'Exchange Online Protection
 
@@ -25,9 +25,11 @@ Les principales manières d'utiliser EOP pour protéger la messagerie sont les s
   
 - **Dans un scénario autonome** EOP fournit une protection de messagerie en nuage pour votre environnement Microsoft Exchange Server 2013 local, les versions d'Exchange Server héritées ou pour toute autre solution de messagerie SMTP locale. 
     
-- **Dans le cadre d'une installation Microsoft Exchange Online** Par défaut, EOP protège les boîtes aux lettres Microsoft Exchange Online hébergées dans le nuage. 
+- **Dans le cadre d'une installation Microsoft Exchange Online** Par défaut, EOP protège les boîtes aux lettres Microsoft Exchange Online hébergées dans le nuage. Consultez la rubrique se [protéger contre les menaces](../protect-against-threats.md) pour vous aider à configurer ces fonctionnalités Exchange Online. 
     
 - **Dans un déploiement hybride** EOP peut être configuré pour protéger votre environnement de messagerie et contrôler le routage de messagerie quand vous disposez d'une combinaison de boîtes aux lettres locales et en nuage. 
+
+Ces articles relatifs à Exchange Online protection s'appliquent aux environnements hybrides et locaux. 
     
 ## <a name="how-eop-works"></a>Fonctionnement d'EOP
 
@@ -74,7 +76,7 @@ La configuration d'EOP peut être simple, en particulier dans le cas d'une organ
   
 Si vous avez déjà acheté EOP, consultez la rubrique [Configurer votre service EOP](set-up-your-eop-service.md) pour être certain d'accomplir toutes les étapes nécessaires à la configuration d'EOP pour la protection de votre environnement de messagerie. 
   
-## <a name="for-more-information"></a>Pour plus d'informations
+## <a name="for-more-information"></a>Pour plus d’informations
 
 [Fonctionnalités EOP](eop-features.md)
   
