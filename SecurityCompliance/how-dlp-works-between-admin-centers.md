@@ -3,7 +3,7 @@ title: Fonctionnement du DLP entre le Centre de sécurité et conformité et le 
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 8/4/2017
+ms.date: 04/19/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: Découvrez comment DLP dans le centre de sécurité & Compliance Center fonctionne avec DLP et les règles de flux de messagerie (règles de transport) dans le centre d'administration Exchange.
-ms.openlocfilehash: 66dceb447e02eb01810997c23644c76f68795844
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: efe8fb733417275a259a472db3444b8f6cad1f92
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254926"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33362032"
 ---
 # <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>Fonctionnement du DLP entre le Centre de sécurité et conformité et le Centre d’administration Exchange
 
 Dans Office 365, vous pouvez créer une stratégie de protection contre la perte de données (DLP) dans deux centres d'administration différents:
   
-- Dans le **Centre de sécurité _AMP_ Compliance Center**, vous pouvez créer une stratégie DLP unique pour protéger le contenu dans SharePoint, OneDrive et Exchange. Dans la mesure du possible, nous vous recommandons de créer une stratégie DLP ici. Pour plus d'informations, reportez-vous [à la rubrique DLP dans le centre de sécurité _AMP_ conformité](data-loss-prevention-policies.md).
+- Dans le **Centre de sécurité _AMP_ Compliance Center**, vous pouvez créer une stratégie DLP unique pour protéger le contenu dans SharePoint, OneDrive, Exchange et maintenant Microsoft Teams. Dans la mesure du possible, nous vous recommandons de créer une stratégie DLP ici. Pour plus d'informations, reportez-vous [à la rubrique DLP dans le centre de sécurité _AMP_ conformité](data-loss-prevention-policies.md).
     
 - Dans le **Centre d'administration Exchange**, vous pouvez créer une stratégie DLP pour protéger le contenu uniquement dans Exchange. Cette stratégie peut utiliser des règles de flux de messagerie Exchange (également appelées règles de transport), de sorte qu'elle dispose de plus d'options spécifiques pour gérer le courrier électronique. Pour plus d'informations, consultez [la rubrique DLP dans le centre d'administration Exchange](https://go.microsoft.com/fwlink/?linkid=852311).
     

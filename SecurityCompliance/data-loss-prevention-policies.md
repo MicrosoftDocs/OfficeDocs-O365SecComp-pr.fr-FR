@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Avec une stratégie de protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365, vous pouvez identifier, surveiller et protéger automatiquement les informations sensibles dans Office 365.
-ms.openlocfilehash: da8acd8904ac6a9b1945c8f794bad84a0adc64fb
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fedb48c20720a7eaa66cd0ea7d2184dd3dc4df55
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262128"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33362052"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Vue d’ensemble des stratégies de protection contre la perte de données
 
@@ -78,7 +78,7 @@ Une stratégie DLP peut trouver et protéger des informations sensibles dans Off
   
 Notez que si vous choisissez d'inclure ou d'exclure des sites SharePoint spécifiques ou des comptes OneDrive, une stratégie DLP ne peut pas contenir plus de 100 ces inclusions et exclusions. Bien que cette limite existe, sachez que vous pouvez dépasser cette limite en appliquant une stratégie à l'échelle de l'organisation ou une stratégie qui s'applique à l'ensemble des emplacements.
   
-### <a name="rules"></a>Règles
+### <a name="rules"></a>Rules
 
 Les règles mettent en œuvre les exigences de votre entreprise sur le contenu de votre organisation. Une stratégie contient une ou plusieurs règles, et chaque règle se compose de conditions et d’actions. Pour chaque règle, lorsque les conditions sont remplies, les actions sont effectuées automatiquement. Les règles sont exécutées de manière séquentielle, en commençant par la règle de priorité la plus élevée de chaque stratégie.
   
@@ -112,7 +112,7 @@ Une stratégie DLP peut aider à protéger les informations sensibles, qui est d
   
 Lorsqu'une stratégie DLP recherche un type d'informations sensibles comme un numéro de carte de crédit, il ne recherche pas simplement un nombre à 16 chiffres. Chaque type d’informations sensibles est défini et détecté en utilisant une combinaison des éléments suivants :
   
-- Mots clés
+- Mots-clés
     
 - Fonctions internes pour valider les sommes de contrôle ou la composition
     
@@ -478,11 +478,7 @@ L'évaluation de la stratégie DLP dans Office est conçue pour ne pas affecter 
 
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Évaluation de stratégie dans Microsoft teams
  
-Lorsque vous créez une stratégie DLP qui inclut Microsoft teams en tant qu'emplacement, la stratégie est synchronisée à partir du &amp; Centre de sécurité conformité Office 365 avec les comptes d'utilisateur et les canaux et conversations de Microsoft Teams. En fonction de la configuration des stratégies DLP, lorsque quelqu'un tente de partager des informations sensibles dans une conversation ou un canal Microsoft Teams, le message peut être bloqué ou révoqué. Les documents qui contiennent des informations sensibles et qui sont partagés avec des invités (utilisateurs externes) ne s'ouvrent pas pour ces utilisateurs.
-
-Par exemple, supposons qu'une personne tente de partager des informations sensibles dans une conversation ou un canal de teams avec des utilisateurs externes. Supposons qu'une stratégie DLP est définie pour éviter cela. Avec la protection en place, les messages contenant des informations sensibles envoyées à des utilisateurs externes sont supprimés. Cela se produit en quelques secondes et est exécuté automatiquement, en fonction de la configuration de la stratégie DLP.
-
-Les conseils de stratégie informent les expéditeurs de la raison pour laquelle leurs messages ont été bloqués ou révoqués. Par exemple, un expéditeur peut indiquer que son message contient des informations d'identification personnelle qui ne sont pas autorisées à être partagé avec quiconque, ou qu'un document qui contient des données personnelles ne peut pas être partagé avec des personnes en dehors de son organisation. L'expéditeur peut ensuite modifier son message afin qu'il soit conforme aux stratégies DLP.
+Lorsque vous créez une stratégie DLP qui inclut Microsoft teams en tant qu'emplacement, la stratégie est synchronisée à partir du &amp; Centre de sécurité conformité Office 365 avec les comptes d'utilisateur et les canaux et conversations de Microsoft Teams. En fonction de la configuration des stratégies DLP, lorsque quelqu'un tente de partager des informations sensibles dans une conversation ou un canal Microsoft Teams, le message peut être bloqué ou révoqué. Les documents qui contiennent des informations sensibles et qui sont partagés avec des invités (utilisateurs externes) ne s'ouvrent pas pour ces utilisateurs. Pour en savoir plus, consultez la rubrique [protection contre la perte de données et Microsoft teams](dlp-microsoft-teams.md).
  
 ## <a name="permissions"></a>Autorisations
 
