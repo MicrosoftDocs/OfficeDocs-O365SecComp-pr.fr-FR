@@ -10,12 +10,12 @@ ms.date: 02/27/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 description: Les stratégies de session de sécurité d'application Cloud d'Office 365 permettent l'analyse au niveau de la session en temps réel, ce qui vous offre une visibilité granulaire sur les applications Office 365 et la possibilité d'effectuer différentes actions en fonction de la stratégie que vous avez définie pour une session utilisateur. Au lieu d'autoriser ou de bloquer entièrement l'accès, avec le contrôle de session, vous pouvez autoriser l'accès tout en surveillant la session et/ou limitez les activités de session spécifiques à l'aide des fonctionnalités de proxy inverse du contrôle d'application d'accès conditionnel.
-ms.openlocfilehash: e0e4b04ee8cc0f7a14adbc26b074a5f2947e44c2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8abc7753543d5147ce8c48c1784a6795143f9105
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263024"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33403032"
 ---
 # <a name="session-policies-in-office-365-cloud-app-security"></a>Stratégies de session dans la sécurité des applications cloud Office 365
 
@@ -117,7 +117,7 @@ Contrôle des applications d'accès conditionnel enregistre les journaux de traf
 
 1. Accédez au COG paramètres, puis cliquez sur **contrôle d'application d'accès conditionnel**.
 
-2. Sur le côté droit du tableau, cliquez sur le bouton Exporter.<br>![bouton Exporter](media/image3.png)<br>
+2. Sur le côté droit du tableau, cliquez sur le bouton Exporter.<br>![bouton Exporter](media/OCASimage3.png)<br>
 
 3. Sélectionnez la plage du rapport, puis cliquez sur **Exporter**. Ce processus peut prendre un certain temps.
 
@@ -125,7 +125,7 @@ Contrôle des applications d'accès conditionnel enregistre les journaux de traf
 
 1. Une fois que le rapport est prêt, accédez à **paramètres** , puis à **rapports**exportés.
 
-2. Dans le tableau, sélectionnez le rapport approprié dans la liste des **journaux** de contrôle d'application d'accès conditionnel, puis cliquez sur Télécharger.<br>![bouton Télécharger](media/image4.png)<br>
+2. Dans le tableau, sélectionnez le rapport approprié dans la liste des **journaux** de contrôle d'application d'accès conditionnel, puis cliquez sur Télécharger.<br>![bouton Télécharger](media/OCASimage4.png)<br>
 
 ## <a name="block-all-downloads"></a>Bloquer tous les téléchargements
 

@@ -1,5 +1,5 @@
 ---
-title: Protéger l'accès des utilisateurs et des appareils
+title: Protéger l’accès aux appareils et l’accès des utilisateurs
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Page d'accueil pour la protection de l'accès aux données et services O365
 ms.openlocfilehash: e1b529a641d25f82521c40d0df9d091e0ebb5d90
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265226"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33403002"
 ---
-# <a name="protect-user-and-device-access"></a>Protéger l'accès des utilisateurs et des appareils
+# <a name="protect-user-and-device-access"></a>Protéger l’accès aux appareils et l’accès des utilisateurs
 
 La protection de l'accès à vos données et services Office 365 est cruciale pour la défense contre les attaques informatiques et la protection contre la perte de données. Les mêmes protections peuvent être appliquées à d'autres applications SaaS dans votre environnement et même aux applications locales publiées avec le proxy d'application Azure Active Directory.
   

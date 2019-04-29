@@ -12,18 +12,18 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Utiliser l'outil eDiscovery de recherche de contenu pour rechercher des éléments qui ont été importés dans des boîtes aux lettres dans Office 365 à partir d'une source de données tierce. Vous pouvez créer une requête pour rechercher tous les éléments importés ou créer une requête pour rechercher des types de données tiers spécifiques. Cet article répertorie les valeurs que vous pouvez utiliser dans une requête de mot clé pour rechercher les types de données tiers pouvant être importés dans Office 365.
-ms.openlocfilehash: 361ead435d397464452c5b58ecf251a7322ced05
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c71472b5e6d9b992196780aba55e3775823447ab
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263776"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402902"
 ---
 # <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>Utiliser la recherche de contenu pour rechercher des données tierces importées dans Office 365
 
 Vous pouvez utiliser l' [outil de découverte électronique de recherche de contenu](content-search.md) dans le centre de sécurité _AMP_ Compliance Center pour rechercher des éléments qui ont été importés dans des boîtes aux lettres dans Office 365 à partir d'une source de données tierce. Vous pouvez créer une requête pour rechercher tous les éléments de données tiers importés ou vous pouvez créer une requête pour rechercher uniquement des éléments de données tiers spécifiques. En outre, vous pouvez également créer une stratégie de conservation basée sur une requête ou une conservation eDiscovery basée sur une requête pour conserver les données tierces dans Office 365. 
   
-Pour plus d'informations sur l'importation de données tierces et sur la liste des types de données tierces pouvant être importés dans Office 365, consultez la rubrique archivage de données tierces [dans office 365](archiving-third-party-data.md). 
+Pour plus d'informations sur l'importation de données tierces et sur la liste des types de données tiers pouvant être importés dans Office 365, consultez [la rubrique collaborer avec un partenaire pour archiver des données tierces dans office 365](work-with-partner-to-archive-third-party-data.md). 
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>Création d'une requête pour rechercher toutes les données tierces
 
@@ -33,7 +33,7 @@ Pour rechercher (ou bloquer) tout type de données tierces que vous avez import�
 kind:externaldata AND subject:contoso
 ```
 
-L'exemple de requête de mot clé précédent inclut la propriété Subject. Pour obtenir la liste des autres propriétés des éléments de données tierces qui peuvent être incluses dans une requête de mot clé, consultez la section «plus d'informations» dans [archivage de données tierces dans Office 365](archiving-third-party-data.md#more-information).
+L'exemple de requête de mot clé précédent inclut la propriété Subject. Pour obtenir la liste des autres propriétés des éléments de données tiers pouvant être inclus dans une requête de mot-clé, voir la section «plus d'informations» dans [utilisation d'un partenaire pour archiver des données tierces dans Office 365](work-with-partner-to-archive-third-party-data.md#more-information).
   
 Lors de la création de requêtes de recherche et de conservation de données tierces, vous pouvez également utiliser des conditions pour affiner les résultats de la recherche. Pour plus d'informations sur la création de requêtes de recherche de contenu, consultez la rubrique [requêtes de mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).
   

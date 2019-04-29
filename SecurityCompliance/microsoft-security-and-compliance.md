@@ -12,11 +12,11 @@ ms.collection:
 localization_priority: Normal
 description: Préparez-vous pour le nouveau centre de sécurité Microsoft 365 et le centre de conformité
 ms.openlocfilehash: a64c64756f0c4588efcc6e467316b90aa1aabc3f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265484"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402992"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>Le nouveau centre de sécurité Microsoft 365 et le centre de conformité Microsoft 365 sont désormais généralement disponibles
 
@@ -102,7 +102,7 @@ Le tableau suivant résume qui peut accéder à différents portails dans Azure,
 |[Protection avancée contre les menaces](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)  |Oui |Oui |Non |
 |[Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection?ocid=tia-260153000#windows-defender-atp) |Oui |Oui |Non |
 |[Protection des identités](https://docs.microsoft.com/azure/active-directory/identity-protection)     |Oui |Oui |Non |
-|[Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |Oui |Oui |Non |
+|[Gestion des identités avec privilèges](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |Oui |Oui |Non |
 |[Intune](https://docs.microsoft.com/intune)     |Oui |Oui |Oui |
 |[Cloud App Security](https://docs.microsoft.com/cloud-app-security/)     |Oui |Oui |Oui |
 |[Secure Score](https://docs.microsoft.com/office365/securitycompliance/office-365-secure-score)     |Oui |Oui |Non |

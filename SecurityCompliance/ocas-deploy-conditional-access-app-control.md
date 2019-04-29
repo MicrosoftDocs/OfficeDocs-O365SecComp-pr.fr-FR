@@ -10,12 +10,12 @@ ms.date: 02/27/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 description: Procédez comme suit pour configurer les applications Azure AD Office 365 qui seront contrôlées par le contrôle d'application d'accès conditionnel à Office 365 Cloud App Security.
-ms.openlocfilehash: 72be95b3213b90cfe60d851d0852d465cdbe6ef9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 74cc415220282491694bf417a6761fd43a6d3521
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263104"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402942"
 ---
 # <a name="deploy-conditional-access-app-control-for-office-365-apps"></a>Déployer le contrôle d’accès conditionnel aux applications pour les applications Office 365
 
@@ -50,7 +50,7 @@ Procédez comme suit pour configurer les applications Azure AD Office 365 qui se
 
 6. Ajoutez les attributions de **condition**applicables ou les **contrôles** d'octroi (facultatif).
 
-> ![Accès conditionnel Azure AD](media/image1.png)
+> ![Accès conditionnel Azure AD](media/OCASimage1.png)
 
 ## <a name="step-2-sign-in-with-a-user-scoped-to-the-policy-in-the-apps"></a>Étape 2: se connecter avec un utilisateur étendu à la stratégie dans les applications 
 
@@ -72,7 +72,7 @@ pour configurer une stratégie avancée, créez une stratégie d' [accès](ocas
 
 3. Une fois le certificat téléchargé, vous pouvez créer des stratégies d'accès et des stratégies de session basées sur la **baliSe Device** et le **certificat client valide**.
 
-![ID de périphérique de contrôle d'application d'accès conditionnel](media/image2.png)
+![ID de périphérique de contrôle d'application d'accès conditionnel](media/OCASimage2.png)
 
 > [!NOTE]
 > Un certificat est uniquement demandé à un utilisateur si la session correspond à une stratégie qui utilise le filtre de certificat client valide.

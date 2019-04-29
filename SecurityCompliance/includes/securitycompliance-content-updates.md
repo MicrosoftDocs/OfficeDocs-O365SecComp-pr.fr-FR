@@ -41,7 +41,7 @@
 | 3/19/2019 | [Notes de publication pour Advanced eDiscovery (aperçu)](/Office365/SecurityCompliance/compliance20/release-notes-ediscovery20) | modifié |
 | 3/19/2019 | [Configurer des stratégies de surveillance pour votre organisation](/Office365/SecurityCompliance/configure-supervision-policies) | modifié |
 | 3/19/2019 | [Afficher les rapports de sécurité de messagerie &amp; dans le centre de sécurité conformité](/Office365/SecurityCompliance/view-email-security-reports) | modifié |
-| 3/19/2019 | [Démarrage rapide: configurer Office 365 protection avancée contre les menaces](/Office365/SecurityCompliance/checklist-atp-setup) | rajouté |
+| 3/19/2019 | [Démarrage rapide: configurer Office 365 protection avancée contre les menaces](/Office365/SecurityCompliance/checklist-atp-setup) | ajouté |
 | 3/19/2019 | [Protection anti-usurpation dans Office 365](/Office365/SecurityCompliance/anti-spoofing-protection) | modifié |
 | 3/19/2019 | [Office 365 ATP pour SharePoint, OneDrive et Microsoft teams](/Office365/SecurityCompliance/atp-for-spo-odb-and-teams) | modifié |
 | 3/19/2019 | [Simulateur d’attaques dans Office 365](/Office365/SecurityCompliance/attack-simulator) | modifié |
@@ -161,22 +161,22 @@
 | 3/20/2019 | [Configurer des stratégies de surveillance pour votre organisation](/Office365/SecurityCompliance/configure-supervision-policies) | modifié |
 | 3/20/2019 | [Créer un dictionnaire de mots clés](/Office365/SecurityCompliance/create-a-keyword-dictionary) | modifié |
 | 3/20/2019 | [Stratégies de surveillance dans Office 365](/Office365/SecurityCompliance/supervision-policies) | modifié |
-| 3/20/2019 | [Informations sur le flux de messagerie dans le centre de sécurité et conformité](/Office365/SecurityCompliance/mail-flow-insights-v2) | rajouté |
+| 3/20/2019 | [Informations sur le flux de messagerie dans le centre de sécurité et conformité](/Office365/SecurityCompliance/mail-flow-insights-v2) | ajouté |
 | 3/20/2019 | [Rapport des messages transférés automatiquement](/Office365/SecurityCompliance/mfi-auto-forwarded-messages-report) | modifié |
-| 3/20/2019 | [Aperçu de l'état du flux de messagerie de domaine supérieur](/Office365/SecurityCompliance/mfi-domain-mail-flow-status-insight) | rajouté |
-| 3/20/2019 | [Rapport de carte de flux de messagerie](/Office365/SecurityCompliance/mfi-mail-flow-map-report) | rajouté |
+| 3/20/2019 | [Aperçu de l'état du flux de messagerie de domaine supérieur](/Office365/SecurityCompliance/mfi-domain-mail-flow-status-insight) | ajouté |
+| 3/20/2019 | [Rapport de carte de flux de messagerie](/Office365/SecurityCompliance/mfi-mail-flow-map-report) | ajouté |
 | 3/20/2019 | [Informations sur les boucles de courrier](/Office365/SecurityCompliance/mfi-mail-loop-insight) | modifié |
-| 3/20/2019 | [Rapport de domaine non accepté](/Office365/SecurityCompliance/mfi-non-accepted-domain-report) | rajouté |
-| 3/20/2019 | [Rapport de non-remise](/Office365/SecurityCompliance/mfi-non-delivery-report) | rajouté |
+| 3/20/2019 | [Rapport de domaine non accepté](/Office365/SecurityCompliance/mfi-non-accepted-domain-report) | ajouté |
+| 3/20/2019 | [Rapport de non-remise](/Office365/SecurityCompliance/mfi-non-delivery-report) | ajouté |
 | 3/20/2019 | [Flux de courrier entrant et sortant](/Office365/SecurityCompliance/mfi-outbound-and-inbound-mail-flow) | modifié |
 | 3/20/2019 | [Alertes de files d’attente et files d’attente](/Office365/SecurityCompliance/mfi-queue-alerts-and-queues) | modifié |
-| 3/20/2019 | [Corriger l'adresse de domaine de l'expéditeur](/Office365/SecurityCompliance/mfi-sender-domain-insight) | rajouté |
+| 3/20/2019 | [Corriger l'adresse de domaine de l'expéditeur](/Office365/SecurityCompliance/mfi-sender-domain-insight) | ajouté |
 | 3/20/2019 | [Informations sur les règles de flux de messagerie lent](/Office365/SecurityCompliance/mfi-slow-mail-flow-rules-insight) | modifié |
-| 3/20/2019 | [Rapport sur les clients SMTP AUTH](/Office365/SecurityCompliance/mfi-smtp-auth-clients-report) | rajouté |
-| 3/21/2019 | [Recherche et réponse automatisées (AIR) avec Office 365 Threat Intelligence](/Office365/SecurityCompliance/automated-investigation-response-office) | rajouté |
+| 3/20/2019 | [Rapport sur les clients SMTP AUTH](/Office365/SecurityCompliance/mfi-smtp-auth-clients-report) | ajouté |
+| 3/21/2019 | [Recherche et réponse automatisées (AIR) avec Office 365 Threat Intelligence](/Office365/SecurityCompliance/automated-investigation-response-office) | ajouté |
 | 3/21/2019 | [Rechercher et identifier les courriers électroniques malveillants remis (Office 365 Threat Investigation and Response](/Office365/SecurityCompliance/investigate-malicious-email-that-was-delivered) | modifié |
-| 3/21/2019 | [Enquête et réponse aux menaces Office 365](/Office365/SecurityCompliance/office-365-ti) | modifié |
-| 3/21/2019 | [Affichages Threat Explorer](/Office365/SecurityCompliance/threat-explorer-views) | rajouté |
+| 3/21/2019 | [Examen et réponse contre les menaces Office 365](/Office365/SecurityCompliance/office-365-ti) | modifié |
+| 3/21/2019 | [Affichages Threat Explorer](/Office365/SecurityCompliance/threat-explorer-views) | ajouté |
 | 3/21/2019 | [Utiliser Threat Explorer dans le centre &amp; de sécurité conformité](/Office365/SecurityCompliance/use-explorer-in-security-and-compliance) | modifié |
 | 3/21/2019 | [Restreindre l’accès au contenu à l’aide du chiffrement dans les étiquettes de niveau de confidentialité](/Office365/SecurityCompliance/encryption-sensitivity-labels) | modifié |
 | 3/21/2019 | [Vue d’ensemble des étiquettes de niveau de confidentialité](/Office365/SecurityCompliance/sensitivity-labels) | modifié |
@@ -184,21 +184,21 @@
 | 3/21/2019 | [Charger les données ne provenant pas d’Office 365 dans un ensemble de travail](/Office365/SecurityCompliance/compliance20/load-non-office365-data) | modifié |
 | 3/21/2019 | [Gérer les travaux dans Advanced eDiscovery (aperçu)](/Office365/SecurityCompliance/compliance20/managing-jobs-ediscovery20) | modifié |
 | 3/21/2019 | [Types de fichiers pris en charge dans Advanced eDiscovery (aperçu)](/Office365/SecurityCompliance/compliance20/supported-filetypes-ediscovery20) | modifié |
-| 3/21/2019 | [Résolution des problèmes liés à AzCopy dans Advanced eDiscovery (aperçu)](/Office365/SecurityCompliance/compliance20/troubleshooting-azcopy) | rajouté |
+| 3/21/2019 | [Résolution des problèmes liés à AzCopy dans Advanced eDiscovery (aperçu)](/Office365/SecurityCompliance/compliance20/troubleshooting-azcopy) | ajouté |
 | 3/22/2019 | [Protection anti-hameçonnage dans Office 365](/Office365/SecurityCompliance/anti-phishing-protection) | modifié |
 | 3/22/2019 | [Protection anti-usurpation dans Office 365](/Office365/SecurityCompliance/anti-spoofing-protection) | modifié |
 | 3/22/2019 | [Recherche et réponse automatisées (AIR) avec Office 365](/Office365/SecurityCompliance/automated-investigation-response-office) | modifié |
 | 3/22/2019 | [Réponse à un compte de messagerie compromis dans Office 365](/Office365/SecurityCompliance/responding-to-a-compromised-email-account) | modifié |
 | 3/22/2019 | [Stratégies d'alerte dans le centre de &amp; sécurité conformité Office 365](/Office365/SecurityCompliance/alert-policies) | modifié |
-| 3/22/2019 | [Recherche de programmes malveillants et autres menaces dans Microsoft 365](/Office365/SecurityCompliance/hunting) | rajouté |
-| 3/22/2019 | [Comprendre les dernières campagnes et techniques d'attaque avec l'analyse des menaces](/Office365/SecurityCompliance/latest-attack-campaigns) | rajouté |
+| 3/22/2019 | [Recherche de programmes malveillants et autres menaces dans Microsoft 365](/Office365/SecurityCompliance/hunting) | ajouté |
+| 3/22/2019 | [Comprendre les dernières campagnes et techniques d'attaque avec l'analyse des menaces](/Office365/SecurityCompliance/latest-attack-campaigns) | ajouté |
 | 3/22/2019 | [Degré de sécurisation Microsoft](/Office365/SecurityCompliance/microsoft-secure-score) | modifié |
-| 3/22/2019 | [Surveillance des identités dans Sécurité Microsoft 365 et rapports à ce sujet](/Office365/SecurityCompliance/monitor-and-report-identities) | rajouté |
-| 3/22/2019 | [Surveiller et signaler l'état de l'application dans la sécurité Microsoft 365](/Office365/SecurityCompliance/monitor-apps) | rajouté |
-| 3/22/2019 | [Surveiller et signaler les données dans la sécurité Microsoft 365](/Office365/SecurityCompliance/monitor-data) | rajouté |
-| 3/22/2019 | [Surveillance des appareils dans Sécurité Microsoft 365](/Office365/SecurityCompliance/monitor-devices) | rajouté |
-| 3/22/2019 | [Surveillance et signalement de l'état de la sécurité dans le centre de sécurité Microsoft 365](/Office365/SecurityCompliance/monitoring-and-reporting) | rajouté |
-| 3/22/2019 | [Vue d'ensemble du centre de sécurité Microsoft 365](/Office365/SecurityCompliance/overview-security-center) | rajouté |
+| 3/22/2019 | [Surveillance des identités dans Sécurité Microsoft 365 et rapports à ce sujet](/Office365/SecurityCompliance/monitor-and-report-identities) | ajouté |
+| 3/22/2019 | [Surveiller et signaler l'état de l'application dans la sécurité Microsoft 365](/Office365/SecurityCompliance/monitor-apps) | ajouté |
+| 3/22/2019 | [Surveiller et signaler les données dans la sécurité Microsoft 365](/Office365/SecurityCompliance/monitor-data) | ajouté |
+| 3/22/2019 | [Surveillance des appareils dans Sécurité Microsoft 365](/Office365/SecurityCompliance/monitor-devices) | ajouté |
+| 3/22/2019 | [Surveillance et signalement de l'état de la sécurité dans le centre de sécurité Microsoft 365](/Office365/SecurityCompliance/monitoring-and-reporting) | ajouté |
+| 3/22/2019 | [Vue d'ensemble du centre de sécurité Microsoft 365](/Office365/SecurityCompliance/overview-security-center) | ajouté |
 | 3/22/2019 | [Sécuriser les fichiers et sites SharePoint Online](/Office365/SecurityCompliance/secure-sharepoint-online-sites-and-files) | modifié |
 | 3/22/2019 | [Application d’étiquettes à des données personnelles dans Office 365](/Office365/SecurityCompliance/apply-labels-to-personal-data-in-office-365) | modifié |
 | 3/22/2019 | [Création d’un schéma de classification pour les données personnelles](/Office365/SecurityCompliance/architect-a-classification-schema-for-personal-data) | modifié |
@@ -213,10 +213,10 @@
 | 3/25/2019 | [Permissions in the Office 365 Security &amp; Compliance Center](/Office365/SecurityCompliance/permissions-in-the-security-and-compliance-center) | modifié |
 | 3/25/2019 | [Application d’étiquettes à des données personnelles dans Office 365](/Office365/SecurityCompliance/apply-labels-to-personal-data-in-office-365) | modifié |
 | 3/25/2019 | [Création d’un schéma de classification pour les données personnelles](/Office365/SecurityCompliance/architect-a-classification-schema-for-personal-data) | modifié |
-| 3/26/2019 | [Bienvenue dans votre nouveau centre de conformité Microsoft 365](/Office365/SecurityCompliance/microsoft-365-compliance-center) | rajouté |
+| 3/26/2019 | [Bienvenue dans votre nouveau centre de conformité Microsoft 365](/Office365/SecurityCompliance/microsoft-365-compliance-center) | ajouté |
 | 3/26/2019 | [Configurer les limites de conformité pour les enquêtes eDiscovery dans Office 365](/Office365/SecurityCompliance/set-up-compliance-boundaries) | modifié |
 | 3/26/2019 | [Pages d'avertissement des liens approuvés Office 365 ATP](/Office365/SecurityCompliance/atp-safe-links-warning-pages) | modifié |
-| 3/26/2019 | [Liens fiables Office 365 ATP](/Office365/SecurityCompliance/atp-safe-links) | modifié |
+| 3/26/2019 | [Liens fiables Office 365 ATP (Protection avancée contre les menaces)](/Office365/SecurityCompliance/atp-safe-links) | modifié |
 | 3/26/2019 | [Simulateur d’attaques dans Office 365](/Office365/SecurityCompliance/attack-simulator) | modifié |
 | 3/26/2019 | [Importation en bloc de contacts externes vers Exchange Online](/Office365/SecurityCompliance/bulk-import-external-contacts) | modifié |
 | 3/26/2019 | [Gérer un incident de fuite de données dans Microsoft 365](/Office365/SecurityCompliance/compliance20/manage-data-spillage-incidents) | modifié |
@@ -238,10 +238,10 @@
 | 3/26/2019 | [Création d’une empreinte numérique de document](/Office365/SecurityCompliance/document-fingerprinting) | modifié |
 | 3/26/2019 | [Vue d’ensemble des rétentions basées sur des événements](/Office365/SecurityCompliance/event-driven-retention) | modifié |
 | 3/26/2019 | [Configurer des stratégies de surveillance pour votre organisation](/Office365/SecurityCompliance/configure-supervision-policies) | modifié |
-| 3/26/2019 | Combinaison des stratégies et des protections lorsque le courrier est marqué par un indicateur rouge | rajouté |
+| 3/26/2019 | Combinaison des stratégies et des protections lorsque le courrier est marqué par un indicateur rouge | ajouté |
 | 3/26/2019 | [Stratégies de surveillance dans Office 365](/Office365/SecurityCompliance/supervision-policies) | modifié |
 | 3/26/2019 | [Utiliser la recherche de contenu dans Office 365 pour les collections ciblées](/Office365/SecurityCompliance/use-content-search-for-targeted-collections) | modifié |
-| 3/26/2019 | [Atelier de directeur de la sécurité des informations (CISO)](/Office365/SecurityCompliance/ciso-workshop) | rajouté |
+| 3/26/2019 | [Atelier de directeur de la sécurité des informations (CISO)](/Office365/SecurityCompliance/ciso-workshop) | ajouté |
 | 3/26/2019 | [Atelier de directeur de la sécurité des informations (CISO)](/Office365/SecurityCompliance/ciso-workshop) | modifié |
 | 3/26/2019 | [Recherche de contenu dans Office 365](/Office365/SecurityCompliance/content-search) | modifié |
 | 3/26/2019 | [Supprimer une boîte aux lettres inactive dans Office 365](/Office365/SecurityCompliance/delete-an-inactive-mailbox) | modifié |
@@ -287,7 +287,7 @@
 | 3/27/2019 | [FAQ sur le chiffrement de messages Office 365](/Office365/SecurityCompliance/ome-faq) | modifié |
 | 3/27/2019 | [Comment empêcher les faux positifs de se produire dans Office 365](/Office365/SecurityCompliance/prevent-email-from-being-marked-as-spam) | modifié |
 | 3/27/2019 | [FAQ : chiffrement de service avec une clé client pour Office 365](/Office365/SecurityCompliance/service-encryption-with-customer-key-faq) | modifié |
-| 3/27/2019 | [Réglage de la protection anti-hameçonnage dans Office 365](/Office365/SecurityCompliance/tuning-anti-phishing) | rajouté |
+| 3/27/2019 | [Réglage de la protection anti-hameçonnage dans Office 365](/Office365/SecurityCompliance/tuning-anti-phishing) | ajouté |
 | 3/28/2019 | [Atelier de directeur de la sécurité des informations (CISO)](/Office365/SecurityCompliance/ciso-workshop) | modifié |
 | 3/28/2019 | [Qu'est-ce que EOP](/Office365/SecurityCompliance/eop/what-is-eop) | modifié |
 | 3/28/2019 | [Utiliser l'expédition de disque pour importer les fichiers PST de votre organisation vers Office 365](/Office365/SecurityCompliance/use-drive-shipping-to-import-pst-files-to-office-365) | modifié |
@@ -299,7 +299,7 @@
 | 3/28/2019 | [Application d’une protection aux données personnelles dans Office 365](/Office365/SecurityCompliance/apply-protection-to-personal-data-in-office-365) | modifié |
 | 3/28/2019 | [Personnalisation ou création d’un type d’informations sensibles](/Office365/SecurityCompliance/customize-or-create-a-new-sensitive-information-type) | modifié |
 | 3/28/2019 | [Combinaison des stratégies et des protections lorsque le courrier est marqué par un indicateur rouge](/Office365/SecurityCompliance/how-policies-and-protections-are-combined) | renommée |
-| 3/28/2019 | [Afficher l’utilisation d’étiquette avec les analytiques d’étiquette](/Office365/SecurityCompliance/label-analytics) | rajouté |
+| 3/28/2019 | [Afficher l’utilisation d’étiquette avec les analytiques d’étiquette](/Office365/SecurityCompliance/label-analytics) | ajouté |
 | 3/28/2019 | [Vue d’ensemble des étiquettes de rétention](/Office365/SecurityCompliance/labels) | modifié |
 | 3/28/2019 | [Surveillance des fuites de données personnelles](/Office365/SecurityCompliance/monitor-for-leaks-of-personal-data) | modifié |
 | 3/28/2019 | [Recherche et localisation des données personnelles](/Office365/SecurityCompliance/search-for-and-find-personal-data) | modifié |
@@ -485,7 +485,7 @@
 | 3/29/2019 | [Activités d’utilisation après avoir déployé la sécurité des applications cloud Office 365](/Office365/SecurityCompliance/utilization-activities-for-ocas) | modifié |
 | 3/29/2019 | [Afficher les statistiques de mot clé pour les résultats de recherche de contenu](/Office365/SecurityCompliance/view-keyword-statistics-for-content-search) | modifié |
 | 3/29/2019 | [En-têtes de messages anti-courrier indésirable](/Office365/SecurityCompliance/anti-spam-message-headers) | modifié |
-| 3/29/2019 | Sécurité et conformité dans Office 365 | supprimé |
+| 3/29/2019 | Sécurité et conformité d'Office 365 | supprimé |
 | 3/29/2019 | [Contrôles d’accès des administrateurs dans Office 365](/Office365/SecurityCompliance/office-365-administrative-access-controls-overview) | modifié |
 | 3/29/2019 | [Principes de base de la protection Office 365 contre les attaques par déni de service](/Office365/SecurityCompliance/office-365-core-principles-of-defense-against-dos-attacks) | modifié |
 | 3/29/2019 | [Destruction des données Office 365](/Office365/SecurityCompliance/office-365-data-destruction) | modifié |
@@ -531,41 +531,41 @@
 | 4/1/2019 | [Utiliser le chargement réseau pour importer les fichiers PST de votre organisation vers Office 365](/Office365/SecurityCompliance/use-network-upload-to-import-pst-files) | modifié |
 | 4/1/2019 | [Réponse à un compte de messagerie compromis dans Office 365](/Office365/SecurityCompliance/responding-to-a-compromised-email-account) | modifié |
 | 4/1/2019 | [Afficher les rapports pour Office 365 protection avancée contre les menaces](/Office365/SecurityCompliance/view-reports-for-atp) | modifié |
-| 4/1/2019 | [Ajouter ou supprimer des membres d'une enquête de données](/Office365/SecurityCompliance/datainvestigations/add-remove-members) | rajouté |
-| 4/1/2019 | [AnNoter et biffer des documents dans les preuves](/Office365/SecurityCompliance/datainvestigations/annotate-and-redact-documents) | rajouté |
-| 4/1/2019 | [Créer des requêtes de recherche](/Office365/SecurityCompliance/datainvestigations/build-search-queries) | rajouté |
-| 4/1/2019 | [Fermer ou supprimer une enquête de données](/Office365/SecurityCompliance/datainvestigations/close-or-delete-investigation) | rajouté |
-| 4/1/2019 | [Configurer les paramètres de recherche et d’analyse](/Office365/SecurityCompliance/datainvestigations/configure-search-analytics-settings) | rajouté |
-| 4/1/2019 | [Configurer les paramètres des enquêtes de données](/Office365/SecurityCompliance/datainvestigations/configure-settings-datainvestigations) | rajouté |
-| 4/1/2019 | [Créer une nouvelle enquête dans les enquêtes de données (aperçu)](/Office365/SecurityCompliance/datainvestigations/create-new-investigation) | rajouté |
+| 4/1/2019 | [Ajouter ou supprimer des membres d'une enquête de données](/Office365/SecurityCompliance/datainvestigations/add-remove-members) | ajouté |
+| 4/1/2019 | [AnNoter et biffer des documents dans les preuves](/Office365/SecurityCompliance/datainvestigations/annotate-and-redact-documents) | ajouté |
+| 4/1/2019 | [Créer des requêtes de recherche](/Office365/SecurityCompliance/datainvestigations/build-search-queries) | ajouté |
+| 4/1/2019 | [Fermer ou supprimer une enquête de données](/Office365/SecurityCompliance/datainvestigations/close-or-delete-investigation) | ajouté |
+| 4/1/2019 | [Configurer les paramètres de recherche et d’analyse](/Office365/SecurityCompliance/datainvestigations/configure-search-analytics-settings) | ajouté |
+| 4/1/2019 | [Configurer les paramètres des enquêtes de données](/Office365/SecurityCompliance/datainvestigations/configure-settings-datainvestigations) | ajouté |
+| 4/1/2019 | [Créer une nouvelle enquête dans les enquêtes de données (aperçu)](/Office365/SecurityCompliance/datainvestigations/create-new-investigation) | ajouté |
 | 4/1/2019 | [Notes de publication pour les enquêtes sur les données (aperçu) dans Microsoft 365](/Office365/SecurityCompliance/datainvestigations/data-investigations-release-notes) | renommée |
-| 4/1/2019 | [Champs de métadonnées de document](/Office365/SecurityCompliance/datainvestigations/document-metadata-fields) | rajouté |
-| 4/1/2019 | [Télécharger des travaux d'exportation à partir d'une enquête de données](/Office365/SecurityCompliance/datainvestigations/download-export-jobs) | rajouté |
-| 4/1/2019 | [Threading de messagerie](/Office365/SecurityCompliance/datainvestigations/email-threading) | rajouté |
-| 4/1/2019 | [Erreur de correction lors du traitement des données pour une enquête](/Office365/SecurityCompliance/datainvestigations/error-remediation) | rajouté |
-| 4/1/2019 | [InterRoger les données dans les preuves](/Office365/SecurityCompliance/datainvestigations/evidence-query) | rajouté |
-| 4/1/2019 | [Exporter des données à partir d’une investigation](/Office365/SecurityCompliance/datainvestigations/export-data) | rajouté |
-| 4/1/2019 | [Exporter des documents à partir d'un incident](/Office365/SecurityCompliance/datainvestigations/export-documents-from-incident) | rajouté |
-| 4/1/2019 | [Indexation avancée des données pour une enquête](/Office365/SecurityCompliance/datainvestigations/index-data-people-of-interest) | rajouté |
-| 4/1/2019 | [Limites pour les enquêtes de données](/Office365/SecurityCompliance/datainvestigations/limits-datainvestigations) | rajouté |
-| 4/1/2019 | [Charger des données non-Office 365 dans une preuve](/Office365/SecurityCompliance/datainvestigations/load-non-office365-data) | rajouté |
+| 4/1/2019 | [Champs de métadonnées de document](/Office365/SecurityCompliance/datainvestigations/document-metadata-fields) | ajouté |
+| 4/1/2019 | [Télécharger des travaux d'exportation à partir d'une enquête de données](/Office365/SecurityCompliance/datainvestigations/download-export-jobs) | ajouté |
+| 4/1/2019 | [Threading de messagerie](/Office365/SecurityCompliance/datainvestigations/email-threading) | ajouté |
+| 4/1/2019 | [Erreur de correction lors du traitement des données pour une enquête](/Office365/SecurityCompliance/datainvestigations/error-remediation) | ajouté |
+| 4/1/2019 | [InterRoger les données dans les preuves](/Office365/SecurityCompliance/datainvestigations/evidence-query) | ajouté |
+| 4/1/2019 | [Exporter des données à partir d’une investigation](/Office365/SecurityCompliance/datainvestigations/export-data) | ajouté |
+| 4/1/2019 | [Exporter des documents à partir d'un incident](/Office365/SecurityCompliance/datainvestigations/export-documents-from-incident) | ajouté |
+| 4/1/2019 | [Indexation avancée des données pour une enquête](/Office365/SecurityCompliance/datainvestigations/index-data-people-of-interest) | ajouté |
+| 4/1/2019 | [Limites pour les enquêtes de données](/Office365/SecurityCompliance/datainvestigations/limits-datainvestigations) | ajouté |
+| 4/1/2019 | [Charger des données non-Office 365 dans une preuve](/Office365/SecurityCompliance/datainvestigations/load-non-office365-data) | ajouté |
 | 4/1/2019 | [Gérer un incident de fuite de données dans Microsoft 365](/Office365/SecurityCompliance/datainvestigations/manage-data-spillage-incidents) | renommée |
-| 4/1/2019 | [Gérer les jeux de travail dans Advanced eDiscovery (aperçu)](/Office365/SecurityCompliance/datainvestigations/manage-incidents) | rajouté |
-| 4/1/2019 | [Gérer les travaux dans les enquêtes de données](/Office365/SecurityCompliance/datainvestigations/manage-jobs) | rajouté |
-| 4/1/2019 | [Gérer les ensembles de charge](/Office365/SecurityCompliance/datainvestigations/manage-load-sets) | rajouté |
-| 4/1/2019 | [Gérer les personnes concernées par les enquêtes de données (aperçu)](/Office365/SecurityCompliance/datainvestigations/manage-people-of-interest) | rajouté |
-| 4/1/2019 | [Détection des quasi-duplicatas](/Office365/SecurityCompliance/datainvestigations/near-duplicates) | rajouté |
-| 4/1/2019 | [Vue d'ensemble des enquêtes de données (aperçu) dans Microsoft 365](/Office365/SecurityCompliance/datainvestigations/overview-data-investigations) | rajouté |
-| 4/1/2019 | [Données de processus pour une enquête](/Office365/SecurityCompliance/datainvestigations/process-data-for-investigation) | rajouté |
-| 4/1/2019 | [Consulter les données dans des preuves](/Office365/SecurityCompliance/datainvestigations/review-data-in-evidence) | rajouté |
-| 4/1/2019 | [Exécuter les données d’analyse pour investiguer plus rapidement](/Office365/SecurityCompliance/datainvestigations/run-analytics-to-investigate-faster) | rajouté |
-| 4/1/2019 | [Rechercher des données dans une investigation](/Office365/SecurityCompliance/datainvestigations/search-for-data) | rajouté |
-| 4/1/2019 | [Statistiques de recherche](/Office365/SecurityCompliance/datainvestigations/search-statistics) | rajouté |
-| 4/1/2019 | [Types de fichiers pris en charge dans les enquêtes de données](/Office365/SecurityCompliance/datainvestigations/supported-filetypes-datainvestigations) | rajouté |
-| 4/1/2019 | [Marquer des documents dans des preuves](/Office365/SecurityCompliance/datainvestigations/tag-documents) | rajouté |
-| 4/1/2019 | [Thèmes](/Office365/SecurityCompliance/datainvestigations/themes) | rajouté |
-| 4/1/2019 | [Utiliser le module de pertinence pour analyser les données dans les preuves](/Office365/SecurityCompliance/datainvestigations/use-relevance-module) | rajouté |
-| 4/1/2019 | [Afficher l'activité d'audit des personnes concernées](/Office365/SecurityCompliance/datainvestigations/view-people-of-interest-activity) | rajouté |
+| 4/1/2019 | [Gérer les jeux de travail dans Advanced eDiscovery (aperçu)](/Office365/SecurityCompliance/datainvestigations/manage-incidents) | ajouté |
+| 4/1/2019 | [Gérer les travaux dans les enquêtes de données](/Office365/SecurityCompliance/datainvestigations/manage-jobs) | ajouté |
+| 4/1/2019 | [Gérer les ensembles de charge](/Office365/SecurityCompliance/datainvestigations/manage-load-sets) | ajouté |
+| 4/1/2019 | [Gérer les personnes concernées par les enquêtes de données (aperçu)](/Office365/SecurityCompliance/datainvestigations/manage-people-of-interest) | ajouté |
+| 4/1/2019 | [Détection des quasi-duplicatas](/Office365/SecurityCompliance/datainvestigations/near-duplicates) | ajouté |
+| 4/1/2019 | [Vue d'ensemble des enquêtes de données (aperçu) dans Microsoft 365](/Office365/SecurityCompliance/datainvestigations/overview-data-investigations) | ajouté |
+| 4/1/2019 | [Données de processus pour une enquête](/Office365/SecurityCompliance/datainvestigations/process-data-for-investigation) | ajouté |
+| 4/1/2019 | [Consulter les données dans des preuves](/Office365/SecurityCompliance/datainvestigations/review-data-in-evidence) | ajouté |
+| 4/1/2019 | [Exécuter les données d’analyse pour investiguer plus rapidement](/Office365/SecurityCompliance/datainvestigations/run-analytics-to-investigate-faster) | ajouté |
+| 4/1/2019 | [Rechercher des données dans une investigation](/Office365/SecurityCompliance/datainvestigations/search-for-data) | ajouté |
+| 4/1/2019 | [Statistiques de recherche](/Office365/SecurityCompliance/datainvestigations/search-statistics) | ajouté |
+| 4/1/2019 | [Types de fichiers pris en charge dans les enquêtes de données](/Office365/SecurityCompliance/datainvestigations/supported-filetypes-datainvestigations) | ajouté |
+| 4/1/2019 | [Marquer des documents dans des preuves](/Office365/SecurityCompliance/datainvestigations/tag-documents) | ajouté |
+| 4/1/2019 | [Thèmes](/Office365/SecurityCompliance/datainvestigations/themes) | ajouté |
+| 4/1/2019 | [Utiliser le module de pertinence pour analyser les données dans les preuves](/Office365/SecurityCompliance/datainvestigations/use-relevance-module) | ajouté |
+| 4/1/2019 | [Afficher l'activité d'audit des personnes concernées](/Office365/SecurityCompliance/datainvestigations/view-people-of-interest-activity) | ajouté |
 | 4/1/2019 | [Chiffrement dans Office 365](/Office365/SecurityCompliance/encryption) | modifié |
 | 4/1/2019 | [Bienvenue dans votre nouveau centre de conformité Microsoft 365](/Office365/SecurityCompliance/microsoft-365-compliance-center) | modifié |
 | 4/1/2019 | [Meilleures pratiques de sécurité pour Office 365](/Office365/SecurityCompliance/security-best-practices) | modifié |
@@ -588,7 +588,7 @@
 | 4/4/2019 | [Configurer les nouvelles fonctionnalités de chiffrement de messages Office 365](/Office365/SecurityCompliance/set-up-new-message-encryption-capabilities) | modifié |
 | 4/4/2019 | [Purge automatique zéro heure - protection contre le courrier indésirable et les programmes malveillants](/Office365/SecurityCompliance/zero-hour-auto-purge) | modifié |
 | 4/5/2019 | [Messages de rétrodiffusion et EOP](/Office365/SecurityCompliance/backscatter-messages-and-eop) | modifié |
-| 4/5/2019 | [Contenu stocké dans les boîtes aux lettres Exchange Online](/Office365/SecurityCompliance/what-is-stored-in-exo-mailbox) | rajouté |
+| 4/5/2019 | [Contenu stocké dans les boîtes aux lettres Exchange Online](/Office365/SecurityCompliance/what-is-stored-in-exo-mailbox) | ajouté |
 
 
 ## <a name="week-of-april-08-2019"></a>Semaine du 08 avril 2019
@@ -605,7 +605,7 @@
 | 4/9/2019 | [Protéger les fichiers SharePoint Online avec des étiquettes de rétention et la protection contre la perte de données (DLP)](/Office365/SecurityCompliance/protect-sharepoint-online-files-with-office-365-labels-and-dlp) | modifié |
 | 4/9/2019 | [Sécuriser les fichiers et sites SharePoint Online](/Office365/SecurityCompliance/secure-sharepoint-online-sites-and-files) | modifié |
 | 4/9/2019 | [Sécuriser les sites SharePoint Online dans un environnement de développement/test](/Office365/SecurityCompliance/secure-sharepoint-online-sites-in-a-dev-test-environment) | modifié |
-| 10/04/2019 | [Ajouter des données d'une plage de travail à une autre](/Office365/SecurityCompliance/compliance20/add-data-to-working-set-from-another-working-set) | rajouté |
+| 10/04/2019 | [Ajouter des données d'une plage de travail à une autre](/Office365/SecurityCompliance/compliance20/add-data-to-working-set-from-another-working-set) | ajouté |
 | 10/04/2019 | [Champs de métadonnées de document dans Advanced eDiscovery (aperçu)](/Office365/SecurityCompliance/compliance20/document-metadata-fields) | modifié |
 | 10/04/2019 | [Limites avancées eDiscovery (aperçu)](/Office365/SecurityCompliance/compliance20/limits-ediscovery20) | modifié |
 | 10/04/2019 | [Gérer les travaux dans Advanced eDiscovery (aperçu)](/Office365/SecurityCompliance/compliance20/managing-jobs-ediscovery20) | modifié |
@@ -696,12 +696,12 @@
 | 4/16/2019 | [Utiliser le chargement réseau pour importer des fichiers PST chiffrés via RMS dans Office 365](/Office365/SecurityCompliance/use-network-upload-to-import-rms-encrypted-pst-files) | modifié |
 | 4/16/2019 | [Audit de partage pour trouver les ressources partagées avec des utilisateurs externes](/Office365/SecurityCompliance/use-sharing-auditing) | modifié |
 | 4/16/2019 | [Stratégies d'alerte dans le centre de sécurité et conformité](/Office365/SecurityCompliance/alert-policies) | modifié |
-| 4/16/2019 | [Atelier de directeur de la sécurité des informations (CISO)-module 1 – Briefing de Microsoft Cybersecurity](/Office365/SecurityCompliance/ciso-workshop-module-1) | rajouté |
-| 4/16/2019 | [Atelier de directeur de la sécurité des informations (CISO)-module 2 – gestion de la sécurité](/Office365/SecurityCompliance/ciso-workshop-module-2) | rajouté |
-| 4/16/2019 | [Atelier de directeur de la sécurité des informations (CISO)-module 3 – gestion des identités et des accès](/Office365/SecurityCompliance/ciso-workshop-module-3) | rajouté |
-| 4/16/2019 | [Chief Information Security officier (CISO) Workshop-module 4a – stratégie de protection contre les menaces](/Office365/SecurityCompliance/ciso-workshop-module-4a) | rajouté |
-| 4/16/2019 | [Atelier de directeur de la sécurité des informations (CISO)-module 4b – stratégie de protection contre les menaces](/Office365/SecurityCompliance/ciso-workshop-module-4b) | rajouté |
-| 4/16/2019 | [Atelier de directeur de la sécurité des informations (CISO)-module 5 – protection des informations](/Office365/SecurityCompliance/ciso-workshop-module-5) | rajouté |
+| 4/16/2019 | [Atelier de directeur de la sécurité des informations (CISO)-module 1 – Briefing de Microsoft Cybersecurity](/Office365/SecurityCompliance/ciso-workshop-module-1) | ajouté |
+| 4/16/2019 | [Atelier de directeur de la sécurité des informations (CISO)-module 2 – gestion de la sécurité](/Office365/SecurityCompliance/ciso-workshop-module-2) | ajouté |
+| 4/16/2019 | [Atelier de directeur de la sécurité des informations (CISO)-module 3 – gestion des identités et des accès](/Office365/SecurityCompliance/ciso-workshop-module-3) | ajouté |
+| 4/16/2019 | [Chief Information Security officier (CISO) Workshop-module 4a – stratégie de protection contre les menaces](/Office365/SecurityCompliance/ciso-workshop-module-4a) | ajouté |
+| 4/16/2019 | [Atelier de directeur de la sécurité des informations (CISO)-module 4b – stratégie de protection contre les menaces](/Office365/SecurityCompliance/ciso-workshop-module-4b) | ajouté |
+| 4/16/2019 | [Atelier de directeur de la sécurité des informations (CISO)-module 5 – protection des informations](/Office365/SecurityCompliance/ciso-workshop-module-5) | ajouté |
 | 4/16/2019 | [Atelier de directeur de la sécurité des informations (CISO)](/Office365/SecurityCompliance/ciso-workshop) | modifié |
 | 4/16/2019 | [Exporter des données de cas dans Advanced eDiscovery (aperçu)](/Office365/SecurityCompliance/compliance20/exporting-data-ediscover20) | modifié |
 | 4/16/2019 | [Atelier de directeur de la sécurité des informations (CISO)-module 1 – Briefing de Microsoft Cybersecurity](/Office365/SecurityCompliance/ciso-workshop-module-1) | modifié |
@@ -710,17 +710,17 @@
 | 4/16/2019 | [Chief Information Security officier (CISO) Workshop-module 4a – stratégie de protection contre les menaces](/Office365/SecurityCompliance/ciso-workshop-module-4a) | modifié |
 | 4/16/2019 | [Atelier de directeur de la sécurité des informations (CISO)-module 4b – stratégie de protection contre les menaces](/Office365/SecurityCompliance/ciso-workshop-module-4b) | modifié |
 | 4/16/2019 | [Atelier de directeur de la sécurité des informations (CISO)-module 5 – protection des informations](/Office365/SecurityCompliance/ciso-workshop-module-5) | modifié |
-| 4/17/2019 | [Configurer des stratégies de surveillance pour votre organisation](/Office365/SecurityCompliance/configure-supervision-policies) | modifié |
-| 4/17/2019 | [Stratégies de surveillance dans Office 365](/Office365/SecurityCompliance/supervision-policies) | modifié |
-| 4/17/2019 | [Atelier de directeur de la sécurité des informations (CISO), module 1: Briefing Microsoft Cybersecurity](/Office365/SecurityCompliance/ciso-workshop-module-1) | modifié |
-| 4/17/2019 | [Atelier de directeur de la sécurité des informations (CISO), module 2: gestion de la sécurité](/Office365/SecurityCompliance/ciso-workshop-module-2) | modifié |
-| 4/17/2019 | [Atelier de directeur de la sécurité des informations (CISO), module 3: identité et gestion des accès](/Office365/SecurityCompliance/ciso-workshop-module-3) | modifié |
-| 4/17/2019 | [Atelier de directeur de la sécurité des informations (CISO), module 4a: stratégie de protection contre les menaces](/Office365/SecurityCompliance/ciso-workshop-module-4a) | modifié |
-| 4/17/2019 | [Atelier de directeur de la sécurité des informations (CISO), module 4b: stratégie de protection contre les menaces](/Office365/SecurityCompliance/ciso-workshop-module-4b) | modifié |
-| 4/17/2019 | [Atelier de directeur de la sécurité des informations (CISO), module 5: protection des informations](/Office365/SecurityCompliance/ciso-workshop-module-5) | modifié |
-| 4/17/2019 | [Atelier de directeur de la sécurité des informations (CISO)](/Office365/SecurityCompliance/ciso-workshop) | modifié |
-| 4/17/2019 | [Configuration de la gestion des accès privilégiés dans Office 365](/Office365/SecurityCompliance/privileged-access-management-configuration) | modifié |
-| 4/17/2019 | [Gestion des accès privilégiés dans Office 365](/Office365/SecurityCompliance/privileged-access-management-overview) | modifié |
+| 17/04/2019 | [Configurer des stratégies de surveillance pour votre organisation](/Office365/SecurityCompliance/configure-supervision-policies) | modifié |
+| 17/04/2019 | [Stratégies de surveillance dans Office 365](/Office365/SecurityCompliance/supervision-policies) | modifié |
+| 17/04/2019 | [Atelier de directeur de la sécurité des informations (CISO), module 1: Briefing Microsoft Cybersecurity](/Office365/SecurityCompliance/ciso-workshop-module-1) | modifié |
+| 17/04/2019 | [Atelier de directeur de la sécurité des informations (CISO), module 2: gestion de la sécurité](/Office365/SecurityCompliance/ciso-workshop-module-2) | modifié |
+| 17/04/2019 | [Atelier de directeur de la sécurité des informations (CISO), module 3: identité et gestion des accès](/Office365/SecurityCompliance/ciso-workshop-module-3) | modifié |
+| 17/04/2019 | [Atelier de directeur de la sécurité des informations (CISO), module 4a: stratégie de protection contre les menaces](/Office365/SecurityCompliance/ciso-workshop-module-4a) | modifié |
+| 17/04/2019 | [Atelier de directeur de la sécurité des informations (CISO), module 4b: stratégie de protection contre les menaces](/Office365/SecurityCompliance/ciso-workshop-module-4b) | modifié |
+| 17/04/2019 | [Atelier de directeur de la sécurité des informations (CISO), module 5: protection des informations](/Office365/SecurityCompliance/ciso-workshop-module-5) | modifié |
+| 17/04/2019 | [Atelier de directeur de la sécurité des informations (CISO)](/Office365/SecurityCompliance/ciso-workshop) | modifié |
+| 17/04/2019 | [Configuration de la gestion des accès privilégiés dans Office 365](/Office365/SecurityCompliance/privileged-access-management-configuration) | modifié |
+| 17/04/2019 | [Gestion des accès privilégiés dans Office 365](/Office365/SecurityCompliance/privileged-access-management-overview) | modifié |
 | 4/18/2019 | [Configurer votre client Office 365 pour une sécurité accrue](/Office365/SecurityCompliance/tenant-wide-setup-for-increased-security) | modifié |
 | 4/18/2019 | [Configurer des stratégies de surveillance pour votre organisation](/Office365/SecurityCompliance/configure-supervision-policies) | modifié |
 | 4/18/2019 | [Stratégies de surveillance dans Office 365](/Office365/SecurityCompliance/supervision-policies) | modifié |
@@ -748,4 +748,4 @@
 | 4/19/2019 | [Utiliser le chargement réseau pour importer des fichiers PST chiffrés via RMS dans Office 365](/Office365/SecurityCompliance/use-network-upload-to-import-rms-encrypted-pst-files) | modifié |
 | 4/19/2019 | [Audit de partage pour trouver les ressources partagées avec des utilisateurs externes](/Office365/SecurityCompliance/use-sharing-auditing) | modifié |
 | 4/19/2019 | [Envoi des courriers indésirables, non-courrier indésirable ou des messages d’hameçonnage à Microsoft pour analyse](/Office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis) | modifié |
-| 4/19/2019 | [Remise et aperçu dynamiques avec les pièces jointes sécurisées ATP Office 365](/Office365/SecurityCompliance/dynamic-delivery-and-previewing) | Modifié le |
+| 4/19/2019 | [Remise et aperçu dynamiques avec les pièces jointes sécurisées ATP Office 365](/Office365/SecurityCompliance/dynamic-delivery-and-previewing) | modifié |

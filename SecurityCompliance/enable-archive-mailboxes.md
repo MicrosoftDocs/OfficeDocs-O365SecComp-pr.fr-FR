@@ -8,7 +8,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.ArchivingHelp
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Utilisez le centre de sécurité & conformité dans Office 365 pour activer les boîtes aux lettres d'archivage afin de prendre en charge les exigences de rétention, eDiscovery et de conservation des messages de votre organisation.
-ms.openlocfilehash: d363943910d970576976d8386196b450dd5694f3
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.openlocfilehash: f4f02e5107526f2f45b0a46579e0676b791f0dd1
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958305"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402922"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Activer les boîtes aux lettres d'archivage dans le centre de sécurité & conformité
   
@@ -127,9 +127,11 @@ Exécutez la commande suivante pour désactiver la boîte aux lettres d'archivag
 
 ## <a name="more-information"></a>Plus d’informations
   
+- Lorsqu'une boîte aux lettres d'archivage est activée, les utilisateurs peuvent stocker des messages dans leur boîte aux lettres d'archivage. Les utilisateurs peuvent accéder à leurs boîtes aux lettres d'archivage à l'aide de Microsoft Outlook et d'Outlook sur le Web. À l’aide de l’une de ces applications clientes, les utilisateurs peuvent afficher les messages dans leur boîte aux lettres d’archivage et déplacer ou copier des messages entre leur boîte aux lettres principale et la boîte aux lettres d’archivage. Les utilisateurs peuvent également récupérer les éléments supprimés du dossier Éléments récupérables dans leur boîte aux lettres d’archivage à l’aide de l’outil de récupération des éléments supprimés.
+
+   Pour obtenir la liste des licences Outlook qui prennent en charge l'archivage inaltérable, consultez la rubrique [relative aux licences Outlook requises pour les fonctionnalités Exchange](https://support.office.com/article/outlook-license-requirements-for-exchange-features-46b6b7c5-c3ca-43e5-8424-1e2807917c99).
+
 - Les boîtes aux lettres d'archivage vous permettent, ainsi qu'à vos utilisateurs, de répondre aux exigences de rétention, de découverte électronique et de conservation de votre organisation. Par exemple, vous pouvez utiliser la stratégie de rétention Exchange de votre organisation pour déplacer le contenu de boîte aux lettres vers la boîte aux lettres d'archivage des utilisateurs. Lorsque vous utilisez l'outil de recherche de contenu dans le centre de sécurité & Compliance Center pour rechercher du contenu spécifique dans la boîte aux lettres d'un utilisateur, la boîte aux lettres d'archivage de l'utilisateur est également recherchée. En outre, lorsque vous placez une conservation pour litige ou que vous appliquez une stratégie de rétention Office 365 à la boîte aux lettres d'un utilisateur, les éléments de la boîte aux lettres d'archivage sont également conservés.
-  
-- Lorsqu'une boîte aux lettres d'archivage est activée, les utilisateurs peuvent stocker des messages dans leur boîte aux lettres d'archivage. Les utilisateurs peuvent accéder à leurs boîtes aux lettres d'archivage à l'aide de Microsoft Outlook et d'Outlook sur le Web. À l’aide de l’une de ces applications clientes, les utilisateurs peuvent afficher les messages dans leur boîte aux lettres d’archivage et déplacer ou copier des messages entre leur boîte aux lettres principale et la boîte aux lettres d’archivage. Les utilisateurs peuvent également récupérer les éléments supprimés du dossier Éléments récupérables dans leur boîte aux lettres d’archivage à l’aide de l’outil de récupération des éléments supprimés. 
   
 - Une fois les boîtes aux lettres d'archivage activées, votre organisation peut tirer parti de la stratégie de rétention Exchange par défaut (également appelée gestion des enregistrements de messagerie ou stratégie MRM) qui est automatiquement affectée à chaque boîte aux lettres. Lorsqu'une boîte aux lettres d'archivage est activée, la stratégie de rétention Exchange par défaut effectue automatiquement les opérations suivantes: 
   

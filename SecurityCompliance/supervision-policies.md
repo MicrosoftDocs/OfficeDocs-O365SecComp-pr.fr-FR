@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Présentation des stratégies de surveillance dans Office 365
 ms.openlocfilehash: 091f5b1f31fcf59162df6ded6a6b07fb501834c7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260322"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33403042"
 ---
 # <a name="supervision-policies-in-office-365"></a>Stratégies de surveillance dans Office 365
 
@@ -199,7 +199,7 @@ Avec Outlook, les relecteurs peuvent:
 - Afficher l'historique du balisage d'un élément unique, y compris la personne qui a résolu l'élément, la date et l'heure de l'action, la balise de résolution et tous les commentaires inclus.
 - Reclassez les éléments consultés précédemment comme conformes, non conformes ou douteux. Vous pouvez également enregistrer un commentaire avec des éléments uniques pour clarifier l'action de reclassification effectuée.
 
-## <a name="reports"></a>Reports
+## <a name="reports"></a>Rapports
 
 Utilisez les rapports de surveillance pour afficher l'activité de révision au niveau de la stratégie et du réviseur. Pour chaque stratégie, vous pouvez également afficher des statistiques réelles sur l'état actuel de l'activité de révision. Vous pouvez utiliser les rapports de surveillance pour:
   

@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: Les administrateurs peuvent en savoir plus sur les autorisations disponibles dans le centre de sécurité & conformité d'Office 365.
 ms.openlocfilehash: 4d5fb942ea613b7b732d1150de497b1992dbd717
-ms.sourcegitcommit: 81e86658c9c890a2fd0c36f73f1c94941cc74775
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32439338"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402972"
 ---
 # <a name="permissions-in-the-office-365-security--compliance-center"></a>Autorisations dans le Centre de conformité et sécurité Office 365
 
@@ -91,7 +91,7 @@ Notez que les rôles suivants ne sont pas attribués au groupe de rôles gestion
 
 - Administrateur de la vérification de surveillance
 
-|**Role**|**Description**|**Affectations de groupe de rôles par défaut**|
+|**Rôle**|**Description**|**Affectations de groupe de rôles par défaut**|
 |:-----|:-----|:-----|
 |**Journaux d'audit**|Activez et configurez l'audit pour l'organisation Office 365, affichez les rapports d'audit de l'organisation, puis exportez ces rapports vers un fichier.|Gestion de l’organisation <br/><br/> Gestion des enregistrements <br/><br/> Administrateur de sécurité|
 |**Gestion des cas**|Créer, modifier, supprimer et contrôler l'accès aux cas eDiscovery.|Administrateur de conformité <br/><br/> Gestionnaire eDiscovery <br/><br/> Gestion de l’organisation|
