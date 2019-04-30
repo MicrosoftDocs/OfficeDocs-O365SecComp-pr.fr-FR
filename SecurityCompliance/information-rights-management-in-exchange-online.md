@@ -1,5 +1,5 @@
 ---
-title: Gestion des droits relatifs à l'information (IRM) dans Exchange Online
+title: Chiffrement de messages Exchange Online avec AD RMS
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -11,19 +11,19 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
-description: "Les messageries électroniques sont souvent utilisées pour échanger des informations sensibles. Par exemple : rapports et états financiers, contrats juridiques, informations confidentielles sur des produits, comptes rendus et prévisions de ventes, données médicales relatives à des patients ou informations sur les clients et le personnel. Il s'en suit que les boîtes aux lettres deviennent vite des référentiels contenant de gros volumes d'informations potentiellement sensibles. C'est pourquoi, toute fuite d'informations peut constituer une véritable menace pour votre organisation."
-ms.openlocfilehash: aef3acaba6b0efe4550958ce1d98add371069648
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Vous pouvez configurer Exchange Online IRM pour qu'il utilise le service AD RMS (Active Directory Rights Management) local, si nécessaire, pour répondre aux besoins de votre organisation. Cela n’est pas courant. Si vous n'avez pas besoin d'utiliser AD RMS, utilisez plutôt le chiffrement de messages Office.
+ms.openlocfilehash: 423c6008a55539123b76225458a39c4f98e7725d
+ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253982"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "33470384"
 ---
-# <a name="information-rights-management-in-exchange-online"></a>Gestion des droits relatifs à l'information (IRM) dans Exchange Online
+# <a name="exchange-online-mail-encryption-with-ad-rms"></a>Chiffrement de messages Exchange Online avec AD RMS
 
-Les messageries électroniques sont souvent utilisées pour échanger des informations sensibles. Par exemple : rapports et états financiers, contrats juridiques, informations confidentielles sur des produits, comptes rendus et prévisions de ventes, données médicales relatives à des patients ou informations sur les clients et le personnel. Il s'en suit que les boîtes aux lettres deviennent vite des référentiels contenant de gros volumes d'informations potentiellement sensibles. C'est pourquoi, toute fuite d'informations peut constituer une véritable menace pour votre organisation.
-  
-Pour contribuer à la prévention des fuites d’informations, Exchange Online inclut des fonctionnalités de gestion des droits relatifs à l’information (IRM) qui offrent une protection en ligne et hors connexion des messages électroniques et des pièces jointes. La protection IRM peut être appliquée par les utilisateurs dans Microsoft Outlook ou Outlook sur le web et par les administrateurs à l’aide de règles de protection du transport ou de règles de protection Outlook. L’IRM vous aide, ainsi que vos utilisateurs, à contrôler l’accès, le transfert, l’impression ou la copie de données sensibles dans un courrier électronique.
+Pour contribuer à la prévention des fuites d'informations, Exchange Online inclut des fonctionnalités de gestion des droits relatifs à l'information (IRM) qui offrent une protection en ligne et hors connexion des messages électroniques et des pièces jointes. Vous pouvez configurer Exchange Online IRM pour qu'il utilise le service AD RMS (Active Directory Rights Management) local, si nécessaire, pour répondre aux besoins de votre organisation. Cela n’est pas courant. Si vous n'avez pas besoin d'utiliser AD RMS, utilisez plutôt le chiffrement de [messages Office](ome.md) . 
+
+La protection IRM peut être appliquée par les utilisateurs dans Microsoft Outlook ou Outlook sur le web et par les administrateurs à l'aide de règles de protection du transport ou de règles de protection Outlook. L’IRM vous aide, ainsi que vos utilisateurs, à contrôler l’accès, le transfert, l’impression ou la copie de données sensibles dans un courrier électronique.
   
 ## <a name="changes-to-how-irm-works-with-office-365-message-encryption-ome-and-azure-active-directory"></a>Changements concernant le fonctionnement de l’IRM avec le chiffrement de messages Office 365 (OME) et Azure Active Directory
 
