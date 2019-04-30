@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez le bouton nouvelle tentative pour résoudre les recherches de contenu présentant des erreurs d'emplacement de contenu.
-ms.openlocfilehash: 8334ec053e86e48f99955af2d56e511a2df5c25a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0963bccfe88a74b82ec3155469ca6d892bf2f7d8
+ms.sourcegitcommit: 72e8a74b55fe7f56b50e30ff10a635734b5a3220
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261496"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33472379"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Nouvelle tentative de recherche de contenu pour résoudre une erreur d'emplacement de contenu
 
-Lorsque vous utilisez la recherche de contenu dans le centre de sécurité et de conformité pour effectuer des recherches dans un très grand nombre de boîtes aux lettres (par exemple, recherche de boîtes aux lettres 100 000 ou plus dans une recherche de contenu unique), vous pouvez obtenir des erreurs de recherche semblables aux suivantes:
+Lorsque vous utilisez la recherche de contenu dans le centre de sécurité et de conformité pour rechercher un grand nombre de boîtes aux lettres, vous pouvez obtenir des erreurs de recherche semblables à celles-ci:
 
 ```
 Error
