@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c521ca4485b00963c7d144b3013134fcaa30f298
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: e3d1a33d14231fb0f383436c0bee7cb63c21d8af
+ms.sourcegitcommit: 25595bc8fae96bc23b7b6d7102a22f37878987c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33527149"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33641582"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>Gérer les ensembles de révision dans Advanced eDiscovery
 
@@ -27,11 +27,11 @@ Les ensembles de validation sont un ensemble statique de documents où vous pouv
 
 - [Analyser les données d’un ensemble de révision](analyzing-data-in-review-set.md)
 
-- [Interroger les données d’un ensemble de révision](review-set-search.md)
+- [Interroger les données d’un jeu à réviser](review-set-search.md)
 
-- [Afficher des documents dans un ensemble de révision](view-documents-in-review-set.md)
+- [Afficher les documents d’un jeu à réviser](view-documents-in-review-set.md)
 
-- [Baliser des documents dans un ensemble de révision](tagging-documents.md)
+- [Étiqueter les documents d’un jeu à réviser](tagging-documents.md)
 
 - [Exporter les données de cas](exporting-data-ediscover20.md)
 
@@ -41,16 +41,16 @@ Vous pouvez créer des ensembles de réviseurs sous l’onglet réviser les **en
 
 ![Ajouter un jeu de révision](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
-Un menu volant s’affiche.  Nom simplement le jeu de révision peut cliquer sur l' **enregistrement**.  Le nouveau jeu de révision s’affiche sous l’onglet **ensembles de révision** .
+Sur la page **Ajouter un jeu** de réexamen, entrez un nom pour l’ensemble de vérification, puis cliquez sur **Enregistrer**.  Le nouvel ensemble de révision est affiché dans la liste sous l’onglet réviser les **ensembles** .
 
-![Ajouter un menu volant jeu de révision](../media/5e5c99f8-42ca-4c2f-960f-f1a5709569d1.png)
+![Nouvel ensemble de réexamens figurant dans l’onglet Review Set](../media/AeDnewreviewset.png)
 
-Il existe trois façons d’ajouter du contenu à un jeu de révision:
+Il existe trois manières différentes d’ajouter des données à un jeu de réexamen dans un cas avancé de découverte électronique.
 
-1. [Ajouter des résultats de recherche à un jeu de révision](add-data-to-review-set.md)
+![Trois méthodes d’ajout à des ensembles de réviseurs](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
 
-2. [Charger des données non-Office 365 dans un jeu de révision](load-non-office365-data.md)
+1. [Ajouter des résultats de recherche à un jeu à réviser](add-data-to-review-set.md)
 
-3. [Ajouter des données à un jeu de révision à partir d’un autre ensemble de révision](add-data-to-review-set-from-another-review-set.md).
+2. [Charger des données autres qu’Office 365 dans un jeu à réviser](load-non-office365-data.md)
 
-![vérifier les ensembles](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
+3. [Ajouter des données à un jeu de révision à partir d’un autre ensemble de révision](add-data-to-review-set-from-another-review-set.md)
