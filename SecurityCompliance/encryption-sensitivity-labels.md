@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de sensibilité, vous pouvez restreindre l’accès au contenu auquel l’étiquette sera appliquée. Les étiquettes de sensibilité peuvent utiliser le chiffrement pour protéger le contenu.
-ms.openlocfilehash: 69deeed69a5b2970d387c30b01a062c6c068c567
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 41e1a9f1c789d555b1b5db3204b13f3279a6b56a
+ms.sourcegitcommit: d17ef25bf2a638c867cd399fff6c961ffeccaba4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257248"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33628329"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Restriction de l’accès au contenu à l’aide du chiffrement dans les étiquettes de sensibilité
 
@@ -113,6 +113,26 @@ L’émetteur Rights Management bénéficie toujours d’autorisations en contr�
 - L’émetteur Rights Management peut toujours ouvrir un document après sa révocation.
 
 Pour plus d’informations, reportez-vous à [Émetteur Rights Management et propriétaire Rights Management](https://docs.microsoft.com/fr-FR/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
+
+## <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>Qu’advient-il du chiffrement existant lorsqu’une nouvelle étiquette est appliquée ?
+
+Avant l’application d’une étiquette de niveau de confidentialité à du contenu, il est possible qu’un utilisateur ait déjà chiffré le contenu en lui appliquant un autre paramètre de protection. Par exemple, un utilisateur peut avoir appliqué :
+
+- L’option **Ne pas transférer**.
+- Une protection personnalisée à l’aide du client d’étiquetage unifié Azure Information Protection.
+- Un modèle Azure Rights Management Service (RMS) qui chiffre le contenu mais n’est pas associé à une étiquette.
+
+Ce tableau explique ce qu’il advient du chiffrement existant lorsqu’une étiquette de niveau de confidentialité est appliqué à ce contenu.
+<br/>
+<br/>
+
+| |**L’utilisateur applique une étiquette de niveau de confidentialité avec chiffrement désactivé**|**L’utilisateur applique une étiquette de niveau de confidentialité avec chiffrement activé**|**L’utilisateur applique une étiquette avec suppression de la protection**<sup>1</sup>|
+|:-----|:-----|:-----|:-----|
+|**Ne pas transférer**|E-mail - La protection est supprimée<br/>Document - La protection est conservée|La protection de l’étiquette est appliquée|L’option **Ne pas transférer** est supprimée|
+|**Protection personnalisée**<sup>1</sup>|La protection est conservée|La protection de l’étiquette est appliquée|La protection personnalisée est supprimée|
+|**Modèle Azure RMS**|La protection est conservée|La protection de l’étiquette est appliquée|La protection personnalisée est supprimée|
+
+<sup>1</sup>Uniquement pris en charge dans le client d’étiquetage Azure Information Protection.
 
 ## <a name="storing-encrypted-content-in-onedrive-and-sharepoint"></a>Stockage du contenu chiffré dans OneDrive et SharePoint
 

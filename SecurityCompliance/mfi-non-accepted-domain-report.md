@@ -9,22 +9,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Les administrateurs peuvent en savoir plus sur le rapport de domaine non accepté dans le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance Center.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a69a1e59241ea7b6680afe8608534dbf9460c269
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 11bddc79f81c30726ba653eb432238765a8cee74
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252134"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868572"
 ---
 # <a name="non-accepted-domain-report"></a>Rapport de domaine non accepté
 
-> [!NOTE]
-> Les fonctionnalités décrites dans cette rubrique n'ont pas été déployées sur toutes les organisations Office 365 et peuvent faire l'objet de modifications.
+Comme le domaine de l' **expéditeur** , le domaine **non accepté** identifie les messages de votre organisation de messagerie locale, mais le domaine de l’expéditeur n’est pas configuré en tant que domaine accepté dans votre organisation Office 365.
 
-Comme le domaine de l' **expéditeur** , le domaine **non accepté** identifie les messages de votre organisation de messagerie locale, mais le domaine de l'expéditeur n'est pas configuré en tant que domaine accepté dans votre organisation Office 365.
-
-Office 365 peut limiter ces messages si nous disposons de données pour prouver que l'objectif de ces messages est malveillant. Par conséquent, il est important de comprendre ce qui se passe et de résoudre le problème.
+Office 365 peut limiter ces messages si nous disposons de données pour prouver que l’objectif de ces messages est malveillant. Par conséquent, il est important de comprendre ce qui se passe et de résoudre le problème.
 
 ![Rapport de domaine non accepté dans le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance Center](media/non-accepted-domain-report-selected.png)
 
@@ -38,4 +34,4 @@ Lorsque vous sélectionnez une ligne dans le tableau, un menu volant vous indiqu
 
 ## <a name="see-also"></a>Voir aussi
 
-Pour plus d'informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security _AMP_ Compliance Center](mail-flow-insights-v2.md).
+Pour plus d’informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security _AMP_ Compliance Center](mail-flow-insights-v2.md).

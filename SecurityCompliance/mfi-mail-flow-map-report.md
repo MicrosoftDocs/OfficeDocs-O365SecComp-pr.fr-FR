@@ -9,20 +9,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Les administrateurs peuvent en savoir plus sur le rapport de carte de flux de messagerie dans le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance Center.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bd05ff5cb78adb9dd89dbe3f69c2c3a78d2b1df9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f80bb71434f4091d64318a096b1f55238a1409cc
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252422"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868583"
 ---
 # <a name="mail-flow-map-report"></a>Rapport de carte de flux de messagerie
 
-> [!NOTE]
-> Les fonctionnalités décrites dans cette rubrique n'ont pas été déployées sur toutes les organisations Office 365 et peuvent faire l'objet de modifications.
-
-Ce rapport fournit des informations sur la façon dont les messages circulent dans votre organisation Office 365. Vous pouvez utiliser ces informations pour apprendre des modèles, identifier des anomalies et corriger les problèmes au fur et à mesure qu'ils se produisent.
+Ce rapport fournit des informations sur la façon dont les messages circulent dans votre organisation Office 365. Vous pouvez utiliser ces informations pour apprendre des modèles, identifier des anomalies et corriger les problèmes au fur et à mesure qu’ils se produisent.
 
 ![Rapport de carte de flux de messagerie dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité](media/mail-flow-map-selected.png)
 
@@ -36,22 +32,22 @@ Par défaut, la carte de flux de messagerie indique le modèle de flux de messag
 
 Cliquez sur le widget **carte de flux de messagerie** pour accéder au rapport de carte de flux de **messagerie** . Vous trouverez ici un niveau plus granulaire du rapport, vous pouvez cliquer sur Afficher les détails de la table pour afficher des données détaillées. Vous pouvez également télécharger le rapport détaillé en cliquant sur rapport de demande.
 
-![Vue d'ensemble dans le rapport de carte de flux de messagerie](media/mail-flow-map-overview.png)
+![Vue d’ensemble dans le rapport de carte de flux de messagerie](media/mail-flow-map-overview.png)
 
 ## <a name="details"></a>Détails
 
-Par défaut, **afficher les données pour** est défini sur la valeur **vue d'ensemble**. Lorsque vous cliquez sur le menu déroulant et sélectionnez **détail**, l'affichage bascule vers le niveau de détail du domaine.
+Par défaut, **afficher les données pour** est défini sur la valeur **vue d’ensemble**. Lorsque vous cliquez sur le menu déroulant et sélectionnez **détail**, l’affichage bascule vers le niveau de détail du domaine.
 
-![Sélectionnez détail dans afficher les données de en mode vue d'ensemble dans le rapport de plan de flux de messagerie.](media/mail-flow-map-select-detail.png)
+![Sélectionnez détail dans afficher les données de en mode vue d’ensemble dans le rapport de plan de flux de messagerie.](media/mail-flow-map-select-detail.png)
 
-Les principaux domaines expéditeur et destinataire sont répertoriés et les autres sont placés dans **d'autres** , comme indiqué dans les diagrammes suivants:
+Les principaux domaines expéditeur et destinataire sont répertoriés et les autres sont placés dans **d’autres** , comme indiqué dans les diagrammes suivants:
 
 ![Vue détails dans le rapport de carte de flux de messagerie](media/mail-flow-map-detail.png)
 
 ## <a name="related-insights"></a>Insights connexes
 
-Les informations connexes apparaissent sous la carte de flux de messagerie si elles sont disponibles (par exemple, l'analyse de domaine de l'expéditeur ou l'analyseur de la boucle de messagerie).
+Les informations connexes apparaissent sous la carte de flux de messagerie si elles sont disponibles (par exemple, l’analyse de domaine de l’expéditeur ou l’analyseur de la boucle de messagerie).
 
 ## <a name="see-also"></a>Voir aussi
 
-Pour plus d'informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security _AMP_ Compliance Center](mail-flow-insights-v2.md).
+Pour plus d’informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security _AMP_ Compliance Center](mail-flow-insights-v2.md).
