@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Créez des stratégies d’alerte dans le centre de sécurité et de conformité dans Office 365 et Microsoft 365 pour surveiller les menaces potentielles, les pertes de données et les autorisations. Ensuite, vous pouvez afficher et gérer les alertes générées lorsque les utilisateurs effectuent des activités qui répondent aux conditions d’une stratégie d’alerte.
-ms.openlocfilehash: 7d7ef6f1f9737a0da3787b093d499a0833885eff
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: 57b30a3c7202940ebb5422d7ef392e93c5351bfb
+ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33516502"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33979500"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Stratégies d’alerte dans le centre de sécurité et conformité
 
@@ -229,7 +229,8 @@ Une fois les alertes générées et affichées sur la page **afficher les alerte
     
 ## <a name="viewing-cloud-app-security-alerts"></a>Affichage des alertes de sécurité des applications Cloud
   
-Les alertes déclenchées par les stratégies de sécurité des applications Cloud d’Office 365 s’affichent désormais sur la page **afficher les alertes** dans le centre de sécurité et de conformité. Cela inclut les alertes déclenchées par les stratégies d’activité et les alertes déclenchées par des stratégies de détection des anomalies dans Office 365 Cloud App Security. Cela signifie que vous pouvez afficher toutes les alertes dans le centre de sécurité et de conformité. Notez que la sécurité des applications Cloud Office 365 est uniquement disponible pour les organisations disposant d’un abonnement Office 365 Enterprise E5 ou Office 365 pour le gouvernement G5. Pour plus d’informations, consultez la rubrique [vue d’ensemble de la sécurité des applications Cloud Office 365](office-365-cas-overview.md).
+Les alertes déclenchées par les stratégies de sécurité des applications Cloud d’Office 365 s’affichent désormais sur la page **afficher les alertes** dans le centre de sécurité et de conformité. Cela inclut les alertes déclenchées par les stratégies d’activité et les alertes déclenchées par des stratégies de détection des anomalies dans Office 365 Cloud App Security. Cela signifie que vous pouvez afficher toutes les alertes dans le centre de sécurité et de conformité. Notez que la sécurité des applications Cloud Office 365 est uniquement disponible pour les organisations disposant d’un abonnement Office 365 Enterprise E5 ou Office 365 pour le gouvernement G5. Pour plus d’informations, consultez la rubrique [vue d’ensemble de la sécurité des applications Cloud](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
+).
 
 En outre, les organisations qui disposent d’un abonnement Enterprise Mobility + Security E5 ou en tant que service autonome peuvent également afficher les alertes de sécurité des applications Cloud liées aux applications et services Office 365 dans le & de sécurité. Centre de conformité.
 
@@ -237,7 +238,7 @@ Pour afficher uniquement les alertes de sécurité des applications Cloud dans l
 
 ![Utiliser le filtre source pour afficher uniquement les alertes de sécurité des applications Cloud](media/FilterCASAlerts.png)
 
-À l’instar d’une alerte déclenchée par une stratégie d’alerte du centre de sécurité et de conformité, vous pouvez cliquer sur une alerte de sécurité d’application Cloud pour afficher une page de menu volant avec des détails sur l’alerte. L’alerte comprend un lien permettant d’afficher les détails et de gérer l’alerte dans le portail de sécurité de l’application Cloud, ainsi qu’un lien vers la stratégie de sécurité de l’application Cloud correspondante qui a déclenché l’alerte. Consultez la rubrique [Review and take action on alerts in Office 365 Cloud App Security](review-office-365-cas-alerts.md).
+À l’instar d’une alerte déclenchée par une stratégie d’alerte du centre de sécurité et de conformité, vous pouvez cliquer sur une alerte de sécurité d’application Cloud pour afficher une page de menu volant avec des détails sur l’alerte. L’alerte comprend un lien permettant d’afficher les détails et de gérer l’alerte dans le portail de sécurité de l’application Cloud, ainsi qu’un lien vers la stratégie de sécurité de l’application Cloud correspondante qui a déclenché l’alerte. Consultez la rubrique [Monitor alerts in Cloud App Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts).
 
 ![Les détails de l’alerte contiennent des liens vers le portail de sécurité des applications Cloud](media/CASAlertDetail.png)
 
