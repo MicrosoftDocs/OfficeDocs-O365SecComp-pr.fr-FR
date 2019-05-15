@@ -182,19 +182,19 @@
 ## [Réponse à un compte de messagerie compromis dans Office 365](responding-to-a-compromised-email-account.md)
 
 # Gestion des enregistrements
-## [Gestionnaire de plan de fichiers](file-plan-manager.md)
-## [Étiquettes de rétention](labels.md)
-### [Se conformer à la réglementation SEC Rule 17 a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+## Plan de gestion de fichiers
+### [Gestionnaire de plan de fichiers](file-plan-manager.md)
+### [Étiquettes de rétention](labels.md)
 ### [Créer et publier des étiquettes de rétention à l’aide de PowerShell](https://docs.microsoft.com/fr-FR/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-## [Rétention basée sur des événements](event-driven-retention.md)
-### [Automatiser la rétention basée sur des événements](automate-event-driven-retention.md)
-## [Révisions avant élimination](disposition-reviews.md)
-## Surveiller la gestion des enregistrements
-### [Afficher les rapports de gouvernance des données](view-the-data-governance-reports.md)
+### [Afficher l’utilisation d’étiquette avec les analyses d’étiquettes](label-analytics.md)
 ### [Afficher l’activité des étiquettes pour les documents](view-label-activity-for-documents.md)
-### [Afficher l’utilisation d’étiquette avec les analytiques d’étiquette](label-analytics.md)
-## Informations supplémentaires sur la gestion des enregistrements
-### [Regarder des vidéos de l’équipe de gouvernance des données Microsoft](https://go.microsoft.com/fwlink/?linkid=867039)
+### [Afficher les rapports de gouvernance des données](view-the-data-governance-reports.md)
+## Événements
+### [Rétention basée sur des événements](event-driven-retention.md)
+### [Automatiser la rétention basée sur des événements](automate-event-driven-retention.md)
+## [Destruction](disposition-reviews.md)
+## En savoir plus sur la gestion des enregistrements
+### [Regarder des vidéos sur la gestion des enregistrements](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # Gérer la gouvernance des données
 ## [Importer des données](importing-pst-files-to-office-365.md)
