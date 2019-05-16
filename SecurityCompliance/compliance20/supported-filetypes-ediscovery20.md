@@ -14,60 +14,176 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 378bd9ae88269d6a6d15a672473550e50179f772
-ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
+ms.openlocfilehash: d8e9689cb04929137787225579dcda17005c8bfe
+ms.sourcegitcommit: 7be8617ce75909f0fa1a2f6e72749e2ef4bb2d3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33834933"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34088807"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>Types de fichiers pris en charge dans Advanced eDiscovery
 
-Advanced eDiscovery prend en charge de nombreux types de fichiers et les prend en charge à différents niveaux, décrits dans le tableau suivant. Cette liste n’est pas encore finalisée et nous allons ajouter de nouveaux types de fichiers lors de notre test de validation. Le tableau indique également si un type de fichier peut être affiché dans les visionneuses disponibles dans Advanced eDiscovery.
+Advanced eDiscovery prend en charge de nombreux types de fichiers à différents niveaux, décrits dans le tableau suivant. Cette liste n’est pas finalisée, et nous allons ajouter de nouveaux types de fichiers lors de notre test de validation. Le tableau indique si un type de fichier est pris en charge pour l’extraction de texte (OCR pour les images), affichable dans la visionneuse native et également pris en charge dans la visionneuse d’annotations dans Advanced eDiscovery.
 
-| Type MIME | Description | Visionneuse Native | Visionneuse de texte | Visionneuse d’annotations | Extraction de conteneur | Extensions |
-| :- | :- | :- | :- | :- | :- | :- |
-| application/mbox | Archive/conteneur |  |  |  | Oui | . mbox |
-| application/msword | Productivité | Oui | Oui | Oui |  | . doc;. dat |
-| application/pdf | Productivité | Oui | Oui | Oui |  | .pdf |
-| application/format RTF | Document | Oui | Oui | Oui |  | . rtf;. équ |
-| application/vnd. MS-Excel | Productivité | Oui | Oui | Oui |  | . xls;. dat |
-| application/vnd. MS-Excel. Sheet. Binary. macroenabled. 12 | Productivité | Oui | Oui | Non |  | . xlsb |
-| application/vnd. MS-Excel. Sheet. macroenabled. 12 | Productivité | Oui | Oui | Oui |  | . xlsm |
-| application/vnd. MS-Excel. template. macroenabled. 12 | Productivité | Non | Oui | Non |  | . xltm |
-| application/vnd. MS-Outlook | Collaboration | Oui | Oui | Oui |  | . MSG |
-| application/vnd. MS-Outlook-PST | Archive/conteneur |  |  |  | Oui | . pst |
-| application/vnd. MS-PowerPoint | Productivité | Oui | Oui | Oui |  | . ppt;. pps;. cafetière |
-| application/vnd. MS-Word. document. macroenabled. 12 | Productivité | Oui | Oui | Oui |  | .docm |
-| application/vnd. MS-Word. template. macroenabled. 12 | Productivité | Oui | Oui | Oui |  | . dotm |
-| application/vnd. oasis. OpenDocument. Text | Productivité | Oui | Oui | Oui |  | ODT  |
-| application/vnd.openxmlformats-officedocument.presentationml.presentation | Productivité | Oui | Oui | Oui |  | .pptx |
-| application/vnd. openxmlformats-officedocument. PresentationML. slideshow | Productivité | Oui | Oui | Oui |  | . ppsx |
-| application/vnd. openxmlformats-officedocument. PresentationML. Template | Productivité | Oui | Oui | Oui |  | . potx |
-| application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | Productivité | Oui | Oui | Oui |  | . xlsx |
-| application/vnd. openxmlformats-officedocument. SpreadsheetML. Template | Productivité | Oui | Oui | Oui |  | . xltx |
-| application/vnd.openxmlformats-officedocument.wordprocessingml.document | Productivité | Oui | Oui | Oui |  | . docx |
-| application/vnd. openxmlformats-officedocument. WordprocessingML. Template | Productivité | Oui | Oui | Oui |  | . dotx |
-| application/vnd. Visio | Productivité | Oui | Oui | Oui |  | . VSD |
-| application/x-7z-compressé | Archive/conteneur |  |  |  | Oui | .7z |
-| application/XHTML + XML | Document | Oui | Oui | Oui |  | . XHTML |
-| application/XML | Document | Oui | Oui | Oui |  | . Xml |
-| application/x-Msaccess | Productivité | Oui | Oui | Oui |  | . mdb |
-| application/x-mspublisher | Productivité | Oui | Oui | Oui |  | . pub |
-| application/x-rar-Compressed | Archive/conteneur |  |  |  | Oui | . rar |
-| application/tar x | Archive/conteneur |  |  |  | Oui | . tar |
-| application/code postal | Archive/conteneur |  |  |  | Oui | . zip |
-| image/BMP | Image | Oui | Oui | Oui |  | .bmp |
-| image/EMF | Image | Oui | Oui | Oui |  | . EMF |
-| image/gif | Image | Oui | Oui | Oui |  | .gif |
-| image/jpeg | Image | Oui | Oui | Oui |  | . jpg;. jpeg;. dat;. jpgt |
-| image/png | Image | Oui | Oui | Oui |  | .png |
-| image/TIFF | Image | Oui | Oui | Oui |  | . TIF |
-| image/vnd. dwg | Dessins | Oui | Oui | Oui |  | . dwg;. format |
-| image/WMF | Document | Oui | Oui | Oui |  | . wmf |
-| Message/RFC822 | Collaboration | Oui | Oui | Oui |  | . eml |
-| texte/CSV | Document | Oui | Oui | Oui |  | . csv |
-| texte/html | Document | Oui | Oui | Oui |  | . html;. shtml;. htm |
-| text/plain | Document | Oui | Oui | Oui |  | . txt;. css;. con;. pl;. csv;. dat |
-| Text/vCard-contact | Collaboration | Oui | Oui | Oui |  | . vcf |
+## <a name="archive--container"></a>Archive/conteneur
+
+| Type MIME | Identification de fichier | Extraction de métadonnées | Extraction de conteneur | Extensions possibles |
+| :- |  :- |  :- |  :- |  :- |
+| application/x-7z-compressé | Oui | Oui | Oui | .7z |
+| application/x-rar-Compressed | Oui | Oui | Oui | . rar |
+| application/tar x | Oui | Oui | Oui | . tar |
+| application/code postal | Oui | Oui | Oui | . zip |
+||||||||
+
+## <a name="database"></a>Database
+
+| Type MIME | Identification de fichier | Extraction de métadonnées | Extraction de texte | Visionneuse Native | Visionneuse d’annotations | Extensions possibles |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/x-Msaccess | Oui | Oui | Oui | Non | Non | . mdb |
+||||||||
+
+## <a name="email"></a>E-mail
+
+| Type MIME | Identification de fichier | Extraction de métadonnées | Extraction de texte | Visionneuse Native | Visionneuse d’annotations | Extensions possibles |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. MS-Outlook | Oui | Oui | Oui | Oui | Oui | . MSG |
+| Message/RFC822 | Oui | Oui | Oui | Oui | Oui | . eml |
+| Text/vCard-contact | Oui | Oui | Oui | Oui | Oui | . vcf |
+||||||||
+
+## <a name="email-container"></a>Conteneur de courrier électronique
+
+| Type MIME | Identification de fichier | Extraction de métadonnées | Extraction de conteneur | Extensions possibles |
+| :- |  :- |  :- |  :- |  :- |
+| application/mbox | Oui | Oui | Oui | . mbox |
+| application/vnd. MS-Outlook-PST | Oui | Oui | Oui | . pst |
+||||||||
+
+## <a name="html"></a>HTML
+
+| Type MIME | Identification de fichier | Extraction de métadonnées | Extraction de texte | Visionneuse Native | Visionneuse d’annotations | Extensions possibles |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/XHTML + XML | Oui | Oui | Oui | Oui | Oui | . XHTML |
+| application/XML | Oui | Oui | Oui | Oui | Oui | . Xml |
+| texte/html | Oui | Oui | Oui | Oui | Oui | . htm;. html;. shtml |
+||||||||
+
+## <a name="image"></a>Image
+
+| Type MIME | Identification de fichier | Extraction de métadonnées | Extraction de texte OCR | Visionneuse Native | Visionneuse d’annotations | Extensions possibles |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| image/BMP | Oui | Oui | Oui | Oui | Oui | .bmp |
+| image/EMF | Oui | Oui | Oui | Oui | Oui | . EMF |
+| image/gif | Oui | Oui | Oui | Oui | Oui | .gif |
+| image/jpeg | Oui | Oui | Oui | Oui | Oui | . jpeg;. jpg |
+| image/png | Oui | Oui | Oui | Oui | Oui | .png |
+| image/SVG + XML | Oui | Oui | Oui | Oui | Non | . svg |
+| image/TIFF | Oui | Oui | Oui | Oui | Oui | . TIF |
+| image/vnd. dwg | Oui | Oui | Oui | Oui | Oui | . dwg;. DXF |
+| image/WMF | Oui | Oui | Oui | Oui | Oui | . wmf |
+||||||||
+
+## <a name="microsoft-excel"></a>Microsoft Excel
+
+| Type MIME | Identification de fichier | Extraction de métadonnées | Extraction de texte | Visionneuse Native | Visionneuse d’annotations | Extensions possibles |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. MS-Excel | Oui | Oui | Oui | Oui | Oui | . dat;. xls |
+| application/vnd. MS-Excel. Sheet. Binary. macroenabled. 12 | Oui | Oui | Oui | Oui | Non | . xlsb |
+| application/vnd. MS-Excel. Sheet. macroenabled. 12 | Oui | Oui | Oui | Oui | Oui | . xlsm |
+| application/vnd. MS-Excel. template. macroenabled. 12 | Oui | Oui | Oui | Non | Non | . xltm |
+| application/vnd.openxmlformats-officedocument.spreadsheetml.sheet | Oui | Oui | Oui | Oui | Oui | . xlsx |
+| application/vnd. openxmlformats-officedocument. SpreadsheetML. Template | Oui | Oui | Oui | Oui | Oui | . xltx |
+||||||||
+
+## <a name="microsoft-powerpoint"></a>Microsoft PowerPoint
+
+| Type MIME | Identification de fichier | Extraction de métadonnées | Extraction de texte | Visionneuse Native | Visionneuse d’annotations | Extensions possibles |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. MS-PowerPoint | Oui | Oui | Oui | Oui | Oui | . pot;. pps;. ppt |
+| application/vnd.openxmlformats-officedocument.presentationml.presentation | Oui | Oui | Oui | Oui | Oui | .pptx |
+| application/vnd. openxmlformats-officedocument. PresentationML. slideshow | Oui | Oui | Oui | Oui | Oui | . ppsx |
+| application/vnd. openxmlformats-officedocument. PresentationML. Template | Oui | Oui | Oui | Oui | Oui | . potx |
+||||||||
+
+## <a name="microsoft-publisher"></a>Microsoft Publisher
+
+| Type MIME | Identification de fichier | Extraction de métadonnées | Extraction de texte | Visionneuse Native | Visionneuse d’annotations | Extensions possibles |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/x-mspublisher | Oui | Oui | Oui | Oui | Oui | . pub |
+||||||||
+
+## <a name="microsoft-visio"></a>Microsoft Visio
+
+| Type MIME | Identification de fichier | Extraction de métadonnées | Extraction de texte | Visionneuse Native | Visionneuse d’annotations | Extensions possibles |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. MS-Visio. Drawing | Oui | Oui | Oui | Oui | Non |  |
+| application/vnd. Visio | Oui | Oui | Oui | Oui | Oui | . VSD |
+||||||||
+
+## <a name="microsoft-word"></a>Microsoft Word
+
+| Type MIME | Identification de fichier | Extraction de métadonnées | Extraction de texte | Visionneuse Native | Visionneuse d’annotations | Extensions possibles |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/msword | Oui | Oui | Oui | Oui | Oui | . dat;. doc |
+| application/format RTF | Oui | Oui | Oui | Oui | Oui | . doc;. rtf |
+| application/vnd. MS-Word. document. macroenabled. 12 | Oui | Oui | Oui | Oui | Oui | .docm |
+| application/vnd. MS-Word. template. macroenabled. 12 | Oui | Oui | Oui | Oui | Oui | . dotm |
+| application/vnd.openxmlformats-officedocument.wordprocessingml.document | Oui | Oui | Oui | Oui | Oui | . docx |
+| application/vnd. openxmlformats-officedocument. WordprocessingML. Template | Oui | Oui | Oui | Oui | Oui | . dotx |
+||||||||
+
+## <a name="microsoft-works"></a>Microsoft Works
+
+| Type MIME | Identification de fichier | Extraction de métadonnées | Extraction de texte | Visionneuse Native | Visionneuse d’annotations | Extensions possibles |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. ms-Works-SS | Oui | Oui | Non | Non | Non | . WPS |
+| application/vnd. ms-Works-WP | Oui | Oui | Non | Non | Non | . WPS |
+||||||||
+
+## <a name="open-document-format"></a>Format Open Document
+
+| Type MIME | Identification de fichier | Extraction de métadonnées | Extraction de texte | Visionneuse Native | Visionneuse d’annotations | Extensions possibles |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. oasis. OpenDocument. Text | Oui | Oui | Oui | Oui | Oui | . odt |
+||||||||
+
+## <a name="other"></a>Other
+
+| Type MIME | Identification de fichier | Extraction de métadonnées | Extraction de texte | Visionneuse Native | Visionneuse d’annotations | Extensions possibles |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/json | Oui | Oui | Oui | Oui | Oui | N/A |
+| application/vnd. MS-Graph | Oui | Oui | Non | Non | Non |  |
+| application/winhlp | Oui | Oui | Non | Non | Non | . hlp |
+| application/x-TNEF | Oui | Oui | Non | Non | Non |  |
+||||||||
+
+## <a name="plain-text"></a>Texte brut
+
+| Type MIME | Identification de fichier | Extraction de métadonnées | Extraction de texte | Visionneuse Native | Visionneuse d’annotations | Extensions possibles |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| texte/CSV | Oui | Oui | Oui | Oui | Oui | . csv |
+| text/plain | Oui | Oui | Oui | Oui | Oui | . con;. css;. csv;. dat;. pl;. txt |
+||||||||
+
+## <a name="portable-document-format"></a>Portable Document Format
+
+| Type MIME | Identification de fichier | Extraction de métadonnées | Extraction de texte | Visionneuse Native | Visionneuse d’annotations | Extensions possibles |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/pdf | Oui | Oui | Oui | Oui | Oui | .pdf |
+||||||||
+
+## <a name="word-perfect"></a>Word Perfect
+
+| Type MIME | Identification de fichier | Extraction de métadonnées | Extraction de texte | Visionneuse Native | Visionneuse d’annotations | Extensions possibles |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. WordPerfect; version = 5.0 | Oui | Oui | Oui | Non | Non | . wpd |
+| application/vnd. WordPerfect; version = 5.1 | Oui | Oui | Oui | Non | Non | . wpd |
+| application/vnd. WordPerfect; version = 6. x | Oui | Oui | Oui | Non | Non | . wpd |
+||||||||
+
+## <a name="word-pro"></a>Word Pro
+
+| Type MIME | Identification de fichier | Extraction de métadonnées | Extraction de texte | Visionneuse Native | Visionneuse d’annotations | Extensions possibles |
+| :- |  :- |  :- |  :- |  :- |  :- |  :- |
+| application/vnd. Lotus-WordPro | Oui | Oui | Non | Non | Non | . LWP |
 ||||||||
