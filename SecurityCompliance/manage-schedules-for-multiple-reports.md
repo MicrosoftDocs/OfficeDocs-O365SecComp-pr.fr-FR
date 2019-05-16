@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/1/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: 3384c6f1-ffc0-4120-a211-1991aca51663
 description: Découvrez comment afficher, modifier et gérer les planifications des rapports dans le centre &amp; de sécurité et de conformité.
-ms.openlocfilehash: 045f539345613774fa38fe921e668e1dce7f2e7a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a8f230ddf9442ba0a29d5fdaeba40bc8524405b5
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256326"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077590"
 ---
 # <a name="manage-schedules-for-multiple-reports-in-the-security-amp-compliance-center"></a>Gérer les planifications pour plusieurs rapports dans &amp; le centre de sécurité conformité
 
-Dans le centre &amp; de sécurité conformité, plusieurs [rapports et](reports-and-insights-in-security-and-compliance.md) informations sont disponibles pour aider l'équipe de sécurité de votre organisation à réduire et à résoudre les menaces pesant sur votre organisation. Si vous êtes membre de l'équipe de sécurité de votre organisation, vous pouvez gérer les planifications pour un ou plusieurs rapports. 
+Dans le centre &amp; de sécurité conformité, plusieurs [rapports et](reports-and-insights-in-security-and-compliance.md) informations sont disponibles pour aider l’équipe de sécurité de votre organisation à réduire et à résoudre les menaces pesant sur votre organisation. Si vous êtes membre de l’équipe de sécurité de votre organisation, vous pouvez gérer les planifications pour un ou plusieurs rapports. 
   
 ## <a name="manage-schedules-for-reports"></a>Gérer les planifications des rapports
 
@@ -37,11 +37,11 @@ Dans le centre &amp; de sécurité conformité, plusieurs [rapports et](reports-
     
 3. Sélectionnez un élément dans la liste.
     
-4. Passez en revue les informations relatives à la planification de l'État.
+4. Passez en revue les informations relatives à la planification de l’État.
     
 5. Le cas échéant, modifiez ou supprimez la planification, puis cliquez sur **Fermer**.
     
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Rapports et informations dans le centre de sécurité &amp; conformité Office 365](reports-and-insights-in-security-and-compliance.md)
   

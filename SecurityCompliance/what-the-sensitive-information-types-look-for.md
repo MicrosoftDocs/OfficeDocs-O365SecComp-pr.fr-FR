@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 search.appverid: MET150
 ms.topic: reference
 f1_keywords:
@@ -13,17 +13,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité d'Office 365 inclut 80 types d'informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP recherche pour chaque type.
-ms.openlocfilehash: d161435c75149183289cfbfd6abe79d55e371e31
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité d’Office 365 inclut 80 types d’informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP recherche pour chaque type.
+ms.openlocfilehash: dc2958af5b64f9e9318faab5d55ed340404f1857
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266870"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077550"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Éléments recherchés par les types d’informations sensibles
 
-La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365 inclut de nombreux types d'informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP recherche pour chaque type. Un type d'informations sensibles est défini par un modèle qui peut être identifié par une fonction ou une expression régulière. En outre, des preuves corroborantes comme les mots clés et les sommes de contrôle peuvent être utilisées pour identifier un type d'informations sensibles. Le niveau de confiance et la proximité sont également utilisés dans le processus d’évaluation.
+La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365 inclut de nombreux types d’informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP recherche pour chaque type. Un type d'informations sensibles est défini par un modèle qui peut être identifié par une fonction ou une expression régulière. En outre, des preuves corroborantes comme les mots clés et les sommes de contrôle peuvent être utilisées pour identifier un type d'informations sensibles. Le niveau de confiance et la proximité sont également utilisés dans le processus d’évaluation.
   
 ## <a name="aba-routing-number"></a>Numéro de routage ABA
 
@@ -72,15 +72,15 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - # routage aba
 - numéro de routage aba
 - ABA
-- abarouting #
+- abarouting#
 - numéro aba
 - abaroutingnumber
 - # routage american bank association
 - numéro de routage american bank association
-- americanbankassociationrouting #
+- americanbankassociationrouting#
 - americanbankassociationroutingnumber
 - numéro de routage bancaire
-- bankrouting #
+- bankrouting#
 - bankroutingnumber
 - numéro de routage
 - RTN 
@@ -126,9 +126,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 - Argentina National Identity number 
 - Identité 
-- Identification de la carte d'identité nationale 
+- Identification de la carte d’identité nationale 
 - DNI 
-- CARTE d'interface réseau nationale du registre des personnes 
+- CARTE d’interface réseau nationale du registre des personnes 
 - Documento Nacional de Identidad 
 - Registro Nacional de las Personas 
 - Identidad 
@@ -279,34 +279,34 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Permis de conduire
 - Permis de conduire
 - Permis de conduire
-- DriverLic #
-- DriverLics #
-- DriverLicence #
-- DriverLicences #
+- DriverLic#
+- DriverLics#
+- DriverLicence#
+- DriverLicences#
 - #Permis conduire
 - #Permis conduire
 - #Permis de conduire
 - #Permis de conduire
-- DriversLic #
-- DriversLics #
-- DriversLicence #
-- DriversLicences #
+- DriversLic#
+- DriversLics#
+- DriversLicence#
+- DriversLicences#
 - #Permis conduire
 - #Permis conduire
 - #Permis de conduire
 - #Permis de conduire
-- Driver'Lic #
-- Driver'Lics #
-- Driver'Licence #
-- Driver'Licences #
+- Driver'Lic#
+- Driver'Lics#
+- Driver'Licence#
+- Driver'Licences#
 - #Permis conduire
 - #Permis conduire
 - #Permis de conduire
 - #Permis de conduire
-- Driver'sLic #
-- Driver'sLics #
-- Driver'sLicence #
-- Driver'sLicences #
+- Driver'sLic#
+- Driver'sLics#
+- Driver'sLicence#
+- Driver'sLicences#
 - #Permisconduire
 - #Permisconduire
 - #Permis de conduire
@@ -331,20 +331,20 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Driver'sLicenses
 - Permis de conduire
 - Driver’s Licenses
-- DriverLicense #
-- DriverLicenses #
+- DriverLicense#
+- DriverLicenses#
 - #Permis de conduire
 - #Permis de conduire
-- DriversLicense #
-- DriversLicenses #
+- DriversLicense#
+- DriversLicenses#
 - #Permis de conduire
 - #Permis de conduire
-- Driver'License #
-- Driver'Licenses #
+- Driver'License#
+- Driver'Licenses#
 - #Permis de conduire
 - #Permis de conduire
-- Driver'sLicense #
-- Driver'sLicenses #
+- Driver'sLicense#
+- Driver'sLicenses#
 - #Permis de conduire
 - #Permis de conduire
    
@@ -567,7 +567,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - 8888888888
 - 9999999999
 
-## <a name="azure-documentdb-auth-key"></a>Clé d'authentification Azure DocumentDB
+## <a name="azure-documentdb-auth-key"></a>Clé d’authentification Azure DocumentDB
 
 ### <a name="format"></a>Format
 
@@ -576,7 +576,7 @@ La chaîne «DocumentDb» suivie des caractères et des chaînes présentés dan
 ### <a name="pattern"></a>Modèle
 
 - La chaîne «DocumentDb»
-- N'importe quelle combinaison entre 3-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- N’importe quelle combinaison entre 3-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
 - Symbole supérieur à (>), signe égal (=), guillemet (") ou apostrophe (')
 - Toute combinaison de 86 lettres majuscules ou minuscules, des chiffres, une barre oblique (/) ou un signe plus (+)
 - Deux signes égal (=)
@@ -588,8 +588,8 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-- L'expression régulière CEP_Regex_AzureDocumentDBAuthKey trouve le contenu qui correspond au modèle.
-- L'expression régulière CEP_CommonExampleKeywords ne trouve **pas** le contenu qui correspond au modèle.
+- L’expression régulière CEP_Regex_AzureDocumentDBAuthKey trouve le contenu qui correspond au modèle.
+- L’expression régulière CEP_CommonExampleKeywords ne trouve **pas** le contenu qui correspond au modèle.
 
 ```
 <!-- Azure Document DB Auth Key -->
@@ -607,16 +607,16 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
 
-(Notez que techniquement, ce type d'informations sensibles identifie ces mots clés à l'aide d'une expression régulière, et non d'une liste de mots clés.)
+(Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
 - contoso
 - société
 - Northwind
 - immédiatement
-- OneBox
+- onebox
 - hôte
 - bouclage
-- TESTACS.<!--no-hyperlink-->com
+- testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Chaîne de connexion à la base de données IAAS Azure et chaîne de connexion Azure SQL
@@ -631,9 +631,9 @@ La chaîne «Server», «Server» ou «Data source» suivie des caractères et d
 - 0-2 espaces blancs
 - Signe égal (=)
 - 0-2 espaces blancs
-- N'importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- N’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
 - La chaîne «cloudapp. Azure.<!--no-hyperlink-->com "," cloudapp. Azure.<!--no-hyperlink-->NET "ou" Database. Windows.<!--no-hyperlink-->NET
-- N'importe quelle combinaison entre 1-300 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- N’importe quelle combinaison entre 1-300 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
 - La chaîne "password", "password" ou "PWD"
 - 0-2 espaces blancs
 - Signe égal (=)
@@ -648,8 +648,8 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-- L'expression régulière CEP_Regex_AzureConnectionString trouve le contenu qui correspond au modèle.
-- L'expression régulière CEP_CommonExampleKeywords ne trouve **pas** le contenu qui correspond au modèle.
+- L’expression régulière CEP_Regex_AzureConnectionString trouve le contenu qui correspond au modèle.
+- L’expression régulière CEP_CommonExampleKeywords ne trouve **pas** le contenu qui correspond au modèle.
 
 ```
 <!--Azure IAAS Database Connection String and Azure SQL Connection String-->
@@ -667,16 +667,16 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
 
-(Notez que techniquement, ce type d'informations sensibles identifie ces mots clés à l'aide d'une expression régulière, et non d'une liste de mots clés.)
+(Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
 - contoso
 - société
 - Northwind
 - immédiatement
-- OneBox
+- onebox
 - hôte
 - bouclage
-- TESTACS.<!--no-hyperlink-->com
+- testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-iot-connection-string"></a>Chaîne de connexion Azure IoT
@@ -691,9 +691,9 @@ La chaîne «nomhôte» suivie des caractères et des chaînes décrits dans le 
 - 0-2 espaces blancs
 - Signe égal (=)
 - 0-2 espaces blancs
-- N'importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- N’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
 - La chaîne «Azure-appareils.<!--no-hyperlink-->NET
-- N'importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- N’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
 - La chaîne «SharedAccessKey»
 - 0-2 espaces blancs
 - Signe égal (=)
@@ -708,8 +708,8 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-- L'expression régulière CEP_Regex_AzureIoTConnectionString trouve le contenu qui correspond au modèle.
-- L'expression régulière CEP_CommonExampleKeywords ne trouve **pas** le contenu qui correspond au modèle.
+- L’expression régulière CEP_Regex_AzureIoTConnectionString trouve le contenu qui correspond au modèle.
+- L’expression régulière CEP_CommonExampleKeywords ne trouve **pas** le contenu qui correspond au modèle.
 
 ```
 <!--Azure IoT Connection String-->
@@ -727,28 +727,28 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
 
-(Notez que techniquement, ce type d'informations sensibles identifie ces mots clés à l'aide d'une expression régulière, et non d'une liste de mots clés.)
+(Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
 - contoso
 - société
 - Northwind
 - immédiatement
-- OneBox
+- onebox
 - hôte
 - bouclage
-- TESTACS.<!--no-hyperlink-->com
+- testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-publish-setting-password"></a>Mot de passe de paramètre de publication Azure
 
 ### <a name="format"></a>Format
 
-La chaîne «userpwd =» suivie d'une chaîne alphanumérique.
+La chaîne «userpwd =» suivie d’une chaîne alphanumérique.
 
 ### <a name="pattern"></a>Modèle
 
 - La chaîne «userpwd =»
-- N'importe quelle combinaison de 60 lettres minuscules ou chiffres
+- N’importe quelle combinaison de 60 lettres minuscules ou chiffres
 - Guillemet (")
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -758,8 +758,8 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-- L'expression régulière CEP_Regex_AzurePublishSettingPasswords trouve le contenu qui correspond au modèle.
-- L'expression régulière CEP_CommonExampleKeywords ne trouve **pas** le contenu qui correspond au modèle.
+- L’expression régulière CEP_Regex_AzurePublishSettingPasswords trouve le contenu qui correspond au modèle.
+- L’expression régulière CEP_CommonExampleKeywords ne trouve **pas** le contenu qui correspond au modèle.
 
 
 ```
@@ -778,16 +778,16 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
 
-(Notez que techniquement, ce type d'informations sensibles identifie ces mots clés à l'aide d'une expression régulière, et non d'une liste de mots clés.)
+(Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
 - contoso
 - société
 - Northwind
 - immédiatement
-- OneBox
+- onebox
 - hôte
 - bouclage
-- TESTACS.<!--no-hyperlink-->com
+- testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-redis-cache-connection-string"></a>Chaîne de connexion au cache des inversions Azure
@@ -799,7 +799,7 @@ La chaîne «ReDim. cache. Windows.<!--no-hyperlink-->NET "suivi des caractères
 ### <a name="pattern"></a>Modèle
 
 - La chaîne «ReDim. cache. Windows.<!--no-hyperlink-->NET
-- N'importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- N’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
 - La chaîne «password» ou «pwd»
 - 0-2 espaces blancs
 - Signe égal (=)
@@ -814,8 +814,8 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-- L'expression régulière CEP_Regex_AzureRedisCacheConnectionString trouve le contenu qui correspond au modèle..
-- L'expression régulière CEP_CommonExampleKeywords ne trouve **pas** le contenu qui correspond au modèle.
+- L’expression régulière CEP_Regex_AzureRedisCacheConnectionString trouve le contenu qui correspond au modèle..
+- L’expression régulière CEP_CommonExampleKeywords ne trouve **pas** le contenu qui correspond au modèle.
 
 ```
 <!--Azure Redis Cache Connection String-->
@@ -833,16 +833,16 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
 
-(Notez que techniquement, ce type d'informations sensibles identifie ces mots clés à l'aide d'une expression régulière, et non d'une liste de mots clés.)
+(Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
 - contoso
 - société
 - Northwind
 - immédiatement
-- OneBox
+- onebox
 - hôte
 - bouclage
-- TESTACS.<!--no-hyperlink-->com
+- testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-sas"></a>SAS Azure
@@ -859,7 +859,7 @@ La chaîne «SIG» suivie des caractères et des chaînes présentés dans le mo
 - 0-2 espaces blancs
 - Toute combinaison comprise entre 43-53 caractères majuscules ou minuscules, des chiffres ou le signe pourcentage (%)
 - La chaîne «% 3D»
-- Tout caractère qui n'est pas une lettre majuscule, un chiffre ou un signe de pourcentage (%)
+- Tout caractère qui n’est pas une lettre majuscule, un chiffre ou un signe de pourcentage (%)
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -868,7 +868,7 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-- L'expression régulière CEP_Regex_AzureSAS trouve le contenu qui correspond au modèle.
+- L’expression régulière CEP_Regex_AzureSAS trouve le contenu qui correspond au modèle.
 
 ```
 <!--Azure SAS-->
@@ -891,9 +891,9 @@ La chaîne «point de terminaison» suivie des caractères et des chaînes décr
 - 0-2 espaces blancs
 - Signe égal (=)
 - 0-2 espaces blancs
-- N'importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- N’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
 - La chaîne «ServiceBus. Windows.<!--no-hyperlink-->NET
-- N'importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- N’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
 - La chaîne «SharedAccessKey»
 - 0-2 espaces blancs
 - Signe égal (=)
@@ -908,8 +908,8 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-- L'expression régulière CEP_Regex_AzureServiceBusConnectionString trouve le contenu qui correspond au modèle..
-- L'expression régulière CEP_CommonExampleKeywords ne trouve **pas** le contenu qui correspond au modèle.
+- L’expression régulière CEP_Regex_AzureServiceBusConnectionString trouve le contenu qui correspond au modèle..
+- L’expression régulière CEP_CommonExampleKeywords ne trouve **pas** le contenu qui correspond au modèle.
 
 ```
 <!--Azure Service Bus Connection String-->
@@ -927,16 +927,16 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
 
-(Notez que techniquement, ce type d'informations sensibles identifie ces mots clés à l'aide d'une expression régulière, et non d'une liste de mots clés.)
+(Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
 - contoso
 - société
 - Northwind
 - immédiatement
-- OneBox
+- onebox
 - hôte
 - bouclage
-- TESTACS.<!--no-hyperlink-->com
+- testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-storage-account-key"></a>Clé de compte de stockage Azure
@@ -951,7 +951,7 @@ La chaîne «DefaultEndpointsProtocol» suivie des caractères et des chaînes d
 - 0-2 espaces blancs
 - Signe égal (=)
 - 0-2 espaces blancs
-- N'importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- N’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
 - La chaîne «AccountKey»
 - 0-2 espaces blancs
 - Signe égal (=)
@@ -966,9 +966,9 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-- L'expression régulière CEP_Regex_AzureStorageAccountKey trouve le contenu qui correspond au modèle.
-- L'expression régulière CEP_AzureEmulatorStorageAccountFilter ne trouve **pas** le contenu qui correspond au modèle.
-- L'expression régulière CEP_CommonExampleKeywords ne trouve **pas** le contenu qui correspond au modèle.
+- L’expression régulière CEP_Regex_AzureStorageAccountKey trouve le contenu qui correspond au modèle.
+- L’expression régulière CEP_AzureEmulatorStorageAccountFilter ne trouve **pas** le contenu qui correspond au modèle.
+- L’expression régulière CEP_CommonExampleKeywords ne trouve **pas** le contenu qui correspond au modèle.
 
 ```
 <!--Azure Storage Account Key-->
@@ -987,22 +987,22 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="cepazureemulatorstorageaccountfilter"></a>CEP_AzureEmulatorStorageAccountFilter
 
-(Notez que techniquement, ce type d'informations sensibles identifie ces mots clés à l'aide d'une expression régulière, et non d'une liste de mots clés.)
+(Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
 - Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw = =
 
 #### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
 
-(Notez que techniquement, ce type d'informations sensibles identifie ces mots clés à l'aide d'une expression régulière, et non d'une liste de mots clés.)
+(Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
 - contoso
 - société
 - Northwind
 - immédiatement
-- OneBox
+- onebox
 - hôte
 - bouclage
-- TESTACS.<!--no-hyperlink-->com
+- testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->NET
 
 ## <a name="azure-storage-account-key-generic"></a>Clé de compte de stockage Azure (Générique)
@@ -1025,7 +1025,7 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-- L'expression régulière CEP_Regex_AzureStorageAccountKeyGeneric trouve le contenu qui correspond au modèle.
+- L’expression régulière CEP_Regex_AzureStorageAccountKeyGeneric trouve le contenu qui correspond au modèle.
 
 ```
 <!--Azure Storage Account Key (Generic)-->
@@ -1220,7 +1220,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Legal entities 
 - Registration Status 
 - Business 
-- Société
+- Company
 - CNPJ 
 - Cadastro Nacional da Pessoa Jurídica 
 - Cadastro Geral de Contribuintes 
@@ -1287,7 +1287,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywordbrazilrg"></a>Keyword_brazil_rg
 
-Cédula de identidade carte d'identité número de rregistro Registro de identidade Registro Geral RG (ce mot clé respecte la casse) RIC (ce mot clé respecte la casse) 
+Cédula de identidade carte d’identité número de rregistro Registro de identidade Registro Geral RG (ce mot clé respecte la casse) RIC (ce mot clé respecte la casse) 
    
 ## <a name="canada-bank-account-number"></a>Numéro de compte bancaire Canada
 
@@ -1441,7 +1441,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordprovincenamedriverslicensename"></a>Keyword_ [province_name] _drivers_license_name
+#### <a name="keywordprovincenamedriverslicensename"></a>Keyword_[province_name]_drivers_license_name
 
 - L’abréviation de la province, par exemple AB
 - Le nom de la province, par exemple Alberta
@@ -1509,7 +1509,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - # carte d’identification
 - carte d’identification
 - cartes d’identification
-- carte d'identification
+- carte d’identification
 - numéro d’identification
 - numéros d’identification
 - # identification
@@ -1520,49 +1520,49 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - LD
 - DISTRIBUTION 
 - CÈDE 
-- CDLS # 
-- DriverLic # 
-- DriverLics # 
-- DriverLicense # 
-- DriverLicenses # 
-- DriverLicence # 
-- DriverLicences # 
+- CDLS# 
+- DriverLic# 
+- DriverLics# 
+- DriverLicense# 
+- DriverLicenses# 
+- DriverLicence# 
+- DriverLicences# 
 - #Permis conduire
 - #Permis conduire 
 - #Permis de conduire 
 - #Permis de conduire 
 - #Permis de conduire 
 - #Permis de conduire 
-- DriversLic # 
-- DriversLics # 
-- DriversLicense # 
-- DriversLicenses # 
-- DriversLicence # 
-- DriversLicences # 
+- DriversLic# 
+- DriversLics# 
+- DriversLicense# 
+- DriversLicenses# 
+- DriversLicence# 
+- DriversLicences# 
 - #Permis conduire 
 - #Permis conduire 
 - #Permis de conduire 
 - #Permis de conduire 
 - #Permis de conduire 
 - #Permis de conduire 
-- Driver'Lic # 
-- Driver'Lics # 
-- Driver'License # 
-- Driver'Licenses # 
-- Driver'Licence # 
-- Driver'Licences # 
+- Driver'Lic# 
+- Driver'Lics# 
+- Driver'License# 
+- Driver'Licenses# 
+- Driver'Licence# 
+- Driver'Licences# 
 - #Permis conduire 
 - #Permis conduire 
 - #Permis de conduire 
 - #Permis de conduire 
 - #Permis de conduire 
 - #Permis de conduire 
-- Driver'sLic # 
-- Driver'sLics # 
-- Driver'sLicense # 
-- Driver'sLicenses # 
-- Driver'sLicence # 
-- Driver'sLicences # 
+- Driver'sLic# 
+- Driver'sLics# 
+- Driver'sLicense# 
+- Driver'sLicenses# 
+- Driver'sLicence# 
+- Driver'sLicences# 
 - #Permisconduire 
 - #Permisconduire 
 - #Permis de conduire 
@@ -1574,7 +1574,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - codes 
 - #carte carte d’identification 
 - #cartes carte d’identification 
-- carte d'identification 
+- carte d’identification 
 - #carte d’identification 
 - #cartes d’identification 
 - identificateur 
@@ -1621,7 +1621,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - services spécialisés
 - accident automobile
 - hôpital pour malades
-- Psychiatrist
+- psychiatrist
 - indemnisation des salariés
 - incapacité
       
@@ -1683,7 +1683,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - パスポート
 - パスポート番号
 - パスポートのNum
-- パスポート #
+- パスポート＃
 - Numéro de passeport
 - Passeport n°
 - Passeport numéro
@@ -1708,7 +1708,7 @@ Non
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP est sûre à 75% d'avoir détecté ce type d'informations sensibles si, dans une proximité de 300 caractères: l'expression régulière Regex_canada_phin trouve le contenu qui correspond au modèle.
+Une stratégie DLP est sûre à 75% d’avoir détecté ce type d’informations sensibles si, dans une proximité de 300 caractères: l’expression régulière Regex_canada_phin trouve le contenu qui correspond au modèle.
 Au moins deux mots clés de Keyword_canada_phin ou Keyword_canada_provinces sont trouvés..
 
 ```
@@ -2016,8 +2016,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - numéro d’identification de la carte
 - cryptogramme
 - nic
-- CVC2
-- CVV2
+- cvc2
+- cvv2
 - pin block
 - code de sécurité
 - numéro de sécurité
@@ -2029,33 +2029,33 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - numéro de sécurité
 - kreditkartenprüfnummer
 - kreditkartenprufnummer
-- Prüfziffer
+- prüfziffer
 - prufziffer
 - sicherheits Kode
-- Sicherheitscode
+- sicherheitscode
 - sicherheitsnummer
 - verfalldatum
 - codice di verifica
 - contre. sicurezza
 - cod sicurezza
 - n autorizzazione
-- Código
-- Codigo
+- código
+- codigo
 - contre. SEG
 - cod seg
 - código de segurança
 - codigo de seguranca
 - codigo de segurança
 - código de seguranca
-- Cód. Segurança
-- contre. Seguranca COD. Segurança
-- Cód. Seguranca
+- cód. segurança
+- contre. Seguranca COD. segurança
+- cód. seguranca
 - cód segurança
 - COD Seguranca COD Segurança
 - cód seguranca
 - número de verificação
 - numero de verificacao
-- Ablauf
+- ablauf
 - gültig bis
 - gültigkeitsdatum
 - gultig bis
@@ -2071,7 +2071,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - data de expiração
 - data de expiracao
 - data em que expira
-- Validade
+- validade
 - valorisation
 - vencimento
 - Venc 
@@ -2080,7 +2080,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 - American
 - american express
-- AmericanExpress
+- americanexpress
 - Délivrance
 - MasterCard
 - master card
@@ -2089,7 +2089,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - master cards
 - diner’s Club
 - diners club
-- DinersClub
+- dinersclub
 - discover card
 - discovercard
 - discover cards
@@ -2107,7 +2107,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - date d’exp
 - date expiration
 - carte bancaire
-- BankCard
+- bankcard
 - numéro de carte
 - num de carte
 - carte
@@ -2143,8 +2143,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - numero de carte
 - nº de la carte
 - nº de carte
-- Kreditkarte
-- Karte
+- kreditkarte
+- karte
 - karteninhaber
 - karteninhabers
 - kreditkarteninhaber
@@ -2153,8 +2153,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - eigentümername
 - kartennr 
 - kartennummer
-- Kreditkartennummer
-- Kreditkarten-Nummer
+- kreditkartennummer
+- kreditkarten-nummer
 - Carta di credito
 - Carta credito
 - Carta
@@ -2255,7 +2255,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 11 chiffres :
 - 10 chiffres 
-- Le chiffre final est un chiffre de contrôle aux fins de l'échange de données internationales, les lettres HR sont ajoutées avant les onze chiffres.
+- Le chiffre final est un chiffre de contrôle aux fins de l’échange de données internationales, les lettres HR sont ajoutées avant les onze chiffres.
 
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -2294,7 +2294,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - OIB 
 
    
-## <a name="czech-personal-identity-number"></a>Numéro d'identité personnelle tchèque
+## <a name="czech-personal-identity-number"></a>Numéro d’identité personnelle tchèque
 
 ### <a name="format"></a>Format
 
@@ -2326,7 +2326,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP est sûre à 85% d'avoir détecté ce type d'informations sensibles si, dans une proximité de 300 caractères: la fonction Func_czech_id_card trouve un contenu qui correspond au modèle.
+Une stratégie DLP est sûre à 85% d’avoir détecté ce type d’informations sensibles si, dans une proximité de 300 caractères: la fonction Func_czech_id_card trouve un contenu qui correspond au modèle.
 Un mot clé figurant dans la liste Keyword_czech_id_card est trouvé.
 La somme de contrôle est correcte.
 
@@ -2341,7 +2341,7 @@ La somme de contrôle est correcte.
 ```
 ### <a name="keywords"></a>Mots clés
 
-- Numéro d'identité personnelle tchèque
+- Numéro d’identité personnelle tchèque
 - Rodné číslo
    
 ## <a name="denmark-personal-identification-number"></a>	Numéro d’identification personnel Danemark
@@ -2363,7 +2363,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP est sûre à 75% d'avoir détecté ce type d'informations sensibles si, dans une proximité de 300 caractères: l'expression régulière Regex_denmark_id trouve le contenu qui correspond au modèle.
+Une stratégie DLP est sûre à 75% d’avoir détecté ce type d’informations sensibles si, dans une proximité de 300 caractères: l’expression régulière Regex_denmark_id trouve le contenu qui correspond au modèle.
 Un mot clé figurant dans la liste Keyword_denmark_id est trouvé.
 La somme de contrôle est correcte.
 
@@ -2481,7 +2481,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - num de compte 
 - n° compte 
 - american express 
-- AmericanExpress 
+- americanexpress 
 - americano espresso 
 - American 
 - carte de retrait 
@@ -2491,7 +2491,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - retrait 
 - atmkaart 
 - atmkaarten 
-- Bancontact 
+- bancontact 
 - carte bancaire 
 - bankkaart 
 - titulaire de la carte 
@@ -2546,7 +2546,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - débit 
 - debito automatico 
 - diners club 
-- DinersClub 
+- dinersclub 
 - connaissance 
 - discover card 
 - discover cards 
@@ -2562,22 +2562,22 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - japanese card bureau 
 - japanse kaartdienst 
 - JCB 
-- Kaart 
+- kaart 
 - kaart num 
 - kaartaantal 
 - kaartaantallen 
 - kaarthouder 
 - kaarthouders 
-- Karte  
+- karte  
 - karteninhaber 
 - karteninhabers
 - kartennr 
 - kartennummer 
-- Kreditkarte 
-- Kreditkarten-Nummer 
+- kreditkarte 
+- kreditkarten-nummer 
 - kreditkarteninhaber 
 - kreditkarteninstitut 
-- Kreditkartennummer 
+- kreditkartennummer 
 - kreditkartentyp 
 - sonne 
 - master card 
@@ -2667,28 +2667,28 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - cod segurança 
 - cod sicurezza 
 - contre. SEG 
-- contre. Seguranca 
-- contre. Segurança 
+- contre. seguranca 
+- contre. segurança 
 - contre. sicurezza 
 - codice di sicurezza 
 - codice di verifica 
-- Codigo 
+- codigo 
 - codigo de seguranca 
 - codigo de segurança 
 - crittogramma 
-- Cryptogram 
+- cryptogram 
 - cryptogramme 
-- CV2 
+- cv2 
 - lâche 
-- CVC2 
+- cvc2 
 - cryptogramme 
-- CVV 
-- CVV2 
+- cvv 
+- cvv2 
 - cód seguranca 
 - cód segurança 
-- Cód. Seguranca 
-- Cód. Segurança 
-- Código 
+- cód. seguranca 
+- cód. segurança 
+- código 
 - código de seguranca 
 - código de segurança 
 - de kaart controle 
@@ -2714,12 +2714,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - perno il blocco 
 - pin block 
 - prufziffer 
-- Prüfziffer 
+- prüfziffer 
 - code de sécurité 
 - n° de sécurité 
 - numéro de sécurité 
 - sicherheits kode 
-- Sicherheitscode 
+- sicherheitscode 
 - sicherheitsnummer 
 - speldblok 
 - veiligheid nr 
@@ -2730,7 +2730,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywordcardexpirationtermsdict"></a>Keyword_card_expiration_terms_dict
 
-- Ablauf 
+- ablauf 
 - data de expiracao 
 - data de expiração 
 - data del exp 
@@ -2743,8 +2743,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - datum afloop 
 - datum van exp 
 - de afloop 
-- Espira 
-- Espira 
+- espira 
+- espira 
 - date d’exp 
 - exp datum 
 - pire 
@@ -2760,7 +2760,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - la scadenza 
 - scadenza 
 - valable 
-- Validade 
+- validade 
 - valido hasta 
 - valorisation 
 - venc 
@@ -2772,23 +2772,23 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - vto 
 - válido hasta 
    
-## <a name="eu-drivers-license-number"></a>Numéro de permis de conduire de l'UE
+## <a name="eu-drivers-license-number"></a>Numéro de permis de conduire de l’UE
 
-Pour en savoir plus, consultez [la rubrique informations sensibles sur le numéro de permis de conduire du pilote de l'UE](eu-driver-s-license-number.md).
+Pour en savoir plus, consultez [la rubrique informations sensibles sur le numéro de permis de conduire du pilote de l’UE](eu-driver-s-license-number.md).
   
-## <a name="eu-national-identification-number"></a>Numéro d'identification nationale de l'UE
+## <a name="eu-national-identification-number"></a>Numéro d’identification nationale de l’UE
 
-Pour en savoir plus, consultez la rubrique [informations sensibles du numéro d'identification national](eu-national-identification-number.md)de l'UE.
+Pour en savoir plus, consultez la rubrique [informations sensibles du numéro d’identification national](eu-national-identification-number.md)de l’UE.
   
 ## <a name="eu-passport-number"></a>Numéro de passeport UE
 
-Pour en savoir plus, consultez la rubrique [type d'informations sensibles du numéro de passeport européen](eu-passport-number.md).
+Pour en savoir plus, consultez la rubrique [type d’informations sensibles du numéro de passeport européen](eu-passport-number.md).
   
-## <a name="eu-social-security-number-or-equivalent-id"></a>Numéro de sécurité sociale de l'UE ou ID équivalent
+## <a name="eu-social-security-number-or-equivalent-id"></a>Numéro de sécurité sociale de l’UE ou ID équivalent
 
-Pour en savoir plus, consultez la rubrique [numéro de sécurité sociale de l'UE ou type d'informations sensibles ID équivalent](eu-social-security-number-or-equivalent-id.md).
+Pour en savoir plus, consultez la rubrique [numéro de sécurité sociale de l’UE ou type d’informations sensibles ID équivalent](eu-social-security-number-or-equivalent-id.md).
   
-## <a name="eu-tax-identification-number"></a>Numéro d'identification fiscale de l'UE
+## <a name="eu-tax-identification-number"></a>Numéro d’identification fiscale de l’UE
 
 Pour en savoir plus, consultez la rubrique [euro Tax identification number sensitive type information](eu-tax-identification-number.md).
   
@@ -2837,7 +2837,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
    
 ## <a name="finland-passport-number"></a>Numéro de passeport Finlande
 
-Combinaison de format de neuf lettres et chiffres combinaison de neuf lettres et chiffres: deux lettres (ne respectant pas la casse) sept chiffres somme de contrôle no la stratégie DLP est de 75% en certitude qu'elle a détecté ce type d'informations sensibles si, dans un proximité de 300 caractères: l'expression régulière Regex_finland_passport_number trouve le contenu qui correspond au modèle.
+Combinaison de format de neuf lettres et chiffres combinaison de neuf lettres et chiffres: deux lettres (ne respectant pas la casse) sept chiffres somme de contrôle no la stratégie DLP est de 75% en certitude qu’elle a détecté ce type d’informations sensibles si, dans un proximité de 300 caractères: l’expression régulière Regex_finland_passport_number trouve le contenu qui correspond au modèle.
 Un mot clé figurant dans la liste Keyword_finland_passport_number est trouvé.
 <!-- Finland Passport Number -->
 <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern>
@@ -2991,7 +2991,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 ### <a name="pattern"></a>Modèle
 
 Doit correspondre à l’un des deux modèles suivants :
-- 13 chiffres suivis d'un espace suivi de deux chiffres<br/>
+- 13 chiffres suivis d’un espace suivi de deux chiffres<br/>
 ou
 - 15 chiffres consécutifs
 
@@ -3042,10 +3042,10 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - numéro d’identification nationale
 - numéro d’identité
 - n° d’identité
-- Nbre. d'identité
+- Nbre. d’identité
 - numéro d’identité
 - n° d’identité
-- Nbre. d'identite
+- Nbre. d’identite
 - numéro de sécurité sociale
 - code de sécurité sociale
 - numéro d’assurance sociale
@@ -3259,7 +3259,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywordgermanpassport"></a>Keyword_german_passport
 
-- Reisepass
+- reisepass
 - reisepasse
 - reisepassnummer
 - tel
@@ -3424,11 +3424,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywordhongkongidcard"></a>Keyword_hong_kong_id_card
 
-- carte d'identité de Hong Kong
+- carte d’identité de Hong Kong
 - HKIDC
 - carte d’identité
 - Carte d’identité
-- carte d'identité HK
+- carte d’identité HK
 - ID Hong Kong
 - 香港身份證
 - 香港永久性居民身份證
@@ -3523,10 +3523,10 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP est sûre à 85% d'avoir détecté ce type d'informations sensibles si, dans une proximité de 300 caractères: la fonction Func_india_aadhaar trouve un contenu qui correspond au modèle.
+Une stratégie DLP est sûre à 85% d’avoir détecté ce type d’informations sensibles si, dans une proximité de 300 caractères: la fonction Func_india_aadhaar trouve un contenu qui correspond au modèle.
 Un mot clé figurant dans la liste Keyword_india_aadhar est trouvé.
 La somme de contrôle est correcte.
-Une stratégie DLP est sûre à 75% d'avoir détecté ce type d'informations sensibles si, dans une proximité de 300 caractères: la fonction Func_india_aadhaar trouve un contenu qui correspond au modèle.
+Une stratégie DLP est sûre à 75% d’avoir détecté ce type d’informations sensibles si, dans une proximité de 300 caractères: la fonction Func_india_aadhaar trouve un contenu qui correspond au modèle.
 La somme de contrôle est correcte.
 <!-- India Unique Identification (Aadhaar) number -->
 <Entity id="1ca46b29-76f5-4f46-9383-cfa15e91048f" recommendedConfidence="85" patternsProximity="300"> <Pattern confidenceLevel="85"> <IdMatch idRef="Func_india_aadhaar"/> <Match idRef="Keyword_india_aadhar"/> </Pattern> <Pattern confidenceLevel="75"> <IdMatch idRef="Func_india_aadhaar"/> </Pattern>
@@ -3728,7 +3728,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 Mots clés
 
-Tout terme du dictionnaire de mots clés Dictionary_icd_10_cm, qui est basé sur la [Classification internationale des maladies, dixième révision, modification clinique (ICD-10-cm)](https://go.microsoft.com/fwlink/?linkid=852604). Ce type recherche uniquement le terme, pas les codes d'assurance.
+Tout terme du dictionnaire de mots clés Dictionary_icd_10_cm, qui est basé sur la [Classification internationale des maladies, dixième révision, modification clinique (ICD-10-cm)](https://go.microsoft.com/fwlink/?linkid=852604). Ce type recherche uniquement le terme, pas les codes d’assurance.
 
    
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>Classification internationale des maladies (ICD-9-CM)
@@ -3760,13 +3760,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-Tout terme du dictionnaire de mots clés Dictionary_icd_9_cm, qui est basé sur la [Classification internationale des maladies, neuvième révision, modification clinique (ICD-9-cm)](https://go.microsoft.com/fwlink/?linkid=852605). Ce type recherche uniquement le terme, pas les codes d'assurance.
+Tout terme du dictionnaire de mots clés Dictionary_icd_9_cm, qui est basé sur la [Classification internationale des maladies, neuvième révision, modification clinique (ICD-9-cm)](https://go.microsoft.com/fwlink/?linkid=852605). Ce type recherche uniquement le terme, pas les codes d’assurance.
    
 ## <a name="ireland-personal-public-service-pps-number"></a>Numéro de service public personnel (PPS) Irlande
 
 ### <a name="format"></a>Format
 
-Ancien format (jusqu'au 31 décembre 2012):
+Ancien format (jusqu’au 31 décembre 2012):
 - Sept chiffres suivis de 1 ou 2 lettres  
 
 Nouveau format (1er janvier 2013 et après):
@@ -3774,7 +3774,7 @@ Nouveau format (1er janvier 2013 et après):
 
 ### <a name="pattern"></a>Modèle
 
-Ancien format (jusqu'au 31 décembre 2012):
+Ancien format (jusqu’au 31 décembre 2012):
 - Sept chiffres  
 - 1 ou 2 lettres (ne respectant pas la casse)  
 
@@ -4055,23 +4055,23 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - 口座番号の確認 
 - 銀行口座番号 
 - 銀行口座 
-- 銀行口座 # 
+- 銀行口座＃ 
 - 銀行の勘定番号 
-- 銀行のacct # 
+- 銀行のacct＃ 
 - 銀行の勘定いいえ 
 - 銀行口座番号
 - 普通預金口座番号 
 - 預金口座 
-- 貯蓄口座 # 
+- 貯蓄口座＃ 
 - 貯蓄勘定の数 
-- 貯蓄勘定 # 
+- 貯蓄勘定＃ 
 - 貯蓄勘定番号 
 - 普通預金口座番号 
 - 引き落とし口座番号 
 - 口座番号 
-- 口座番号 # 
+- 口座番号＃ 
 - デビットのacct番号 
-- デビット勘定 # 
+- デビット勘定＃ 
 - デビットACCTの番号 
 - デビット口座番号 
 
@@ -4130,7 +4130,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - id d’état 
 - identification d’état 
 - numéro d’identification d’état 
-- 低所得国 # 
+- 低所得国＃ 
 - 免許証 
 - 状態ID
 - 状態の識別 
@@ -4176,7 +4176,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - パスポート 
 - パスポート番号 
 - パスポートのNum 
-- パスポート # 
+- パスポート＃ 
    
 ## <a name="japan-resident-registration-number"></a>Matricule de résident Japon
 
@@ -4219,8 +4219,8 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - N° d’enregistrement du résident 
 - N° de base d’enregistrement des résidents 
 - N° d’enregistrement du résident de base 
-- 住民登録番号 、 登録番号をレジデント 
-- 住民基本登録番号 、 登録番号 
+- 住民登録番号、登録番号をレジデント 
+- 住民基本登録番号、登録番号 
 - 住民基本レジストリ番号を常駐 
 - 登録番号を常駐住民基本台帳登録番号 
 
@@ -4297,7 +4297,7 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
-- L'expression régulière Regex_jp_residence_card_number trouve le contenu qui correspond au modèle.
+- L’expression régulière Regex_jp_residence_card_number trouve le contenu qui correspond au modèle.
 - Un mot clé depuis Keyword_jp_residence_card_number est trouvé.
 
 ```
@@ -4360,30 +4360,30 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
    
 #### <a name="keywordmalaysiaidcardnumber"></a>Keyword_malaysia_id_card_number
 
-- carte d'application numérique
+- carte d’application numérique
 - i/c
 - n ° i/c non
 - combustion
 - n ° IC
 - carte d’identité
-- Carte d'identification
+- Carte d’identification
 - Carte d’identité
 - k/p
 - n ° k/p
-- Kad akuan diri
+- kad akuan diri
 - Kad aplikasi numérique
 - Kad Pengenalan Malaisie
 - kgf
 - KP non
-- MyKad
+- mykad
 - mykas
-- MyKid
+- mykid
 - mypr
 - mytentera
-- carte d'identité Malaisie
-- carte d'identité malais
+- carte d’identité Malaisie
+- carte d’identité malais
 - NRIC
-- carte d'identification personnelle
+- carte d’identification personnelle
    
 ## <a name="netherlands-citizens-service-bsn-number"></a>Numéro de service du citoyen (BSN) Pays-Bas
 
@@ -4589,7 +4589,7 @@ Oui
 
 ### <a name="definition"></a>Définition
 
-Une stratégie DLP est sûre à 75% d'avoir détecté ce type d'informations sensibles si, dans une proximité de 300 caractères: la fonction Func_polish_national_id trouve un contenu qui correspond au modèle.
+Une stratégie DLP est sûre à 75% d’avoir détecté ce type d’informations sensibles si, dans une proximité de 300 caractères: la fonction Func_polish_national_id trouve un contenu qui correspond au modèle.
 Un mot clé figurant dans la liste Keyword_polish_national_id_passport_number est trouvé.
 La somme de contrôle est correcte.
 
@@ -4607,7 +4607,7 @@ La somme de contrôle est correcte.
 
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
-- Dowód OSOBISTY
+- Dowód osobisty
 - Chiffre dowodu osobistego
 - Nazwa i dowodu osobistego
 - Nazwa i Nr dowodu osobistego
@@ -4977,11 +4977,11 @@ La chaîne «User ID», «User ID», «UID» ou «UserId» suivi des caractères
 ### <a name="pattern"></a>Modèle
 
 - La chaîne «User ID», «User ID», «UID» ou «UserId»
-- N'importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
-- La chaîne "password" ou "PWD" où "PWD" n'est pas précédé d'une lettre minuscule
+- N’importe quelle combinaison entre 1-200 majuscules ou minuscules, des chiffres, des symboles, des caractères spéciaux ou des espaces
+- La chaîne "password" ou "PWD" où "PWD" n’est pas précédé d’une lettre minuscule
 - Signe égal (=)
-- Tout caractère qui n'est pas un signe dollar ($), un symbole de pourcentage (%), un symbole supérieur à (>), un symbole (@), un guillemet ("), un point-virgule (;), une accolade ouvrante ([) ou un crochet gauche ({)
-- N'importe quelle combinaison de 7-128 caractères qui ne sont pas des points-virgules (;), barre oblique (/) ou guillemets (")
+- Tout caractère qui n’est pas un signe dollar ($), un symbole de pourcentage (%), un symbole supérieur à (>), un symbole (@), un guillemet ("), un point-virgule (;), une accolade ouvrante ([) ou un crochet gauche ({)
+- N’importe quelle combinaison de 7-128 caractères qui ne sont pas des points-virgules (;), barre oblique (/) ou guillemets (")
 - Un point-virgule (;) ou guillemets (")
 
 ### <a name="checksum"></a>Somme de contrôle
@@ -4991,10 +4991,10 @@ Non
 ### <a name="definition"></a>Définition
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 85 % si, dans une proximité de 300 caractères :
-- L'expression régulière CEP_Regex_SQLServerConnectionString trouve le contenu qui correspond au modèle.
+- L’expression régulière CEP_Regex_SQLServerConnectionString trouve le contenu qui correspond au modèle.
 - Un mot clé depuis CEP_GlobalFilter **** est introuvable.
-- L'expression régulière CEP_PasswordPlaceHolder ne trouve **pas** le contenu qui correspond au modèle.
-- L'expression régulière CEP_CommonExampleKeywords ne trouve **pas** le contenu qui correspond au modèle.
+- L’expression régulière CEP_PasswordPlaceHolder ne trouve **pas** le contenu qui correspond au modèle.
+- L’expression régulière CEP_CommonExampleKeywords ne trouve **pas** le contenu qui correspond au modèle.
 
 ```
 <!---SQL Server Connection String>
@@ -5021,7 +5021,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="ceppasswordplaceholder"></a>CEP_PasswordPlaceHolder
 
-(Notez que techniquement, ce type d'informations sensibles identifie ces mots clés à l'aide d'une expression régulière, et non d'une liste de mots clés.)
+(Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
 - Mot de passe ou mot de passe suivi par 0-2 espaces, un signe égal (=), 0-2 espaces et un astérisque (*)--ou--
 - Mot de passe ou mot de passe suivi par:
@@ -5032,16 +5032,16 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
 
-(Notez que techniquement, ce type d'informations sensibles identifie ces mots clés à l'aide d'une expression régulière, et non d'une liste de mots clés.)
+(Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
 - contoso
 - société
 - Northwind
 - immédiatement
-- OneBox
+- onebox
 - hôte
 - bouclage
-- TESTACS.<!--no-hyperlink-->com
+- testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->NET
 
 ## <a name="sweden-national-id"></a>ID national Suède
@@ -5142,7 +5142,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - パスポート 
 - パスポート番号 
 - パスポートのNum 
-- パスポート # 
+- パスポート＃ 
 - Numéro de passeport 
 - Passeport n° 
 - Passeport numéro 
@@ -5191,9 +5191,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 - organisation internationale de normalisation 9362 
 - ISO 9362 
-- ISO9362 
+- iso9362 
 - rapide\# 
-- Swiftcode 
+- swiftcode 
 - swiftnumber 
 - swiftroutingnumber 
 - code swift 
@@ -5205,7 +5205,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - BIC\# 
 - code d’identification bancaire 
 - 標準化 9362 
-- 迅速 # 
+- 迅速＃ 
 - SWIFTコード 
 - SWIFT番号 
 - 迅速なルーティング番号 
@@ -5370,7 +5370,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - 外僑居留證 
 - 台灣地區居留證 
 
-## <a name="thai-population-identification-code"></a>Code d'identification du remplissage thaï
+## <a name="thai-population-identification-code"></a>Code d’identification du remplissage thaï
 
 ### <a name="format"></a>Format
 
@@ -5413,13 +5413,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 #### <a name="keywordthaicitizenid"></a>Keyword_Thai_Citizen_Id
 
 - ID Number
-- Numéro d'identification
+- Numéro d’identification
 - บัตรประชาชน
 - รหัสบัตรประชาชน
 - บัตรประชาชน
 - รหัสบัตรประชาชน
   
-## <a name="turkish-national-identification-number"></a>Numéro d'identification national turc
+## <a name="turkish-national-identification-number"></a>Numéro d’identification national turc
 
 ### <a name="format"></a>Format
 
@@ -5506,7 +5506,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 - DVLA 
 - véhicule utilitaire léger 
-- Quadbikes 
+- quadbikes 
 - automobiles 
 - 125cc 
 - annexes 
@@ -5747,7 +5747,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - パスポート 
 - パスポート番号 
 - パスポートのNum 
-- パスポート # 
+- パスポート＃ 
 - Numéro de passeport 
 - Passeport n° 
 - Passeport numéro 
@@ -5876,7 +5876,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - LD 
 - DISTRIBUTION 
 - CÈDE 
-- CDLS # 
+- CDLS# 
 - Réf
 - Codes 
 - Numéro d’identification 
@@ -5925,34 +5925,34 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - cartes d’identité 
 - carte d’identification 
 - cartes d’identification 
-- DriverLic # 
-- DriverLics # 
-- DriverLicense # 
-- DriverLicenses # 
+- DriverLic# 
+- DriverLics# 
+- DriverLicense# 
+- DriverLicenses# 
 - #Permis conduire 
 - #Permis conduire 
 - #Permis de conduire 
 - #Permis de conduire 
-- DriversLic # 
-- DriversLics # 
-- DriversLicense # 
-- DriversLicenses # 
+- DriversLic# 
+- DriversLics# 
+- DriversLicense# 
+- DriversLicenses# 
 - #Permis conduire 
 - #Permis conduire 
 - #Permis de conduire 
 - #Permis de conduire 
-- Driver'Lic # 
-- Driver'Lics # 
-- Driver'License # 
-- Driver'Licenses # 
+- Driver'Lic# 
+- Driver'Lics# 
+- Driver'License# 
+- Driver'Licenses# 
 - #Permis conduire 
 - #Permis conduire 
 - #Permis de conduire 
 - #Permis de conduire 
-- Driver'sLic # 
-- Driver'sLics # 
-- Driver'sLicense # 
-- Driver'sLicenses # 
+- Driver'sLic# 
+- Driver'sLics# 
+- Driver'sLicense# 
+- Driver'sLicenses# 
 - #Permisconduire 
 - #Permisconduire 
 - #Permis de conduire 
@@ -5963,7 +5963,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - #cartes d’identification 
 
 
-#### <a name="keywordstatenamedriverslicensename"></a>Keyword_ [state_name] _drivers_license_name
+#### <a name="keywordstatenamedriverslicensename"></a>Keyword_[state_name]_drivers_license_name
 
 - Abréviation de l’État (par exemple, « NY ») 
 - Nom de l’État (par exemple, « New York »)    
@@ -6043,7 +6043,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - redevable 
 - id fiscal 
 - identification fiscale 
-- ITIN 
+- itin 
 - SSN 
 - Etain 
 - sécurité sociale 
