@@ -1,35 +1,35 @@
 ---
-title: Numéro d'identification fiscale de l'UE
+title: Numéro d’identification fiscale de l’UE
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
-description: Cette rubrique montre ce qu'une stratégie de protection contre la perte de données (DLP) recherche lorsqu'il détecte le type d'informations sensibles du numéro d'identification fiscale de l'UE. Ce type d'informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
-ms.openlocfilehash: 4914ff078695519c2a298190d82c86a6abebceb9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Cette rubrique montre ce qu’une stratégie de protection contre la perte de données (DLP) recherche lorsqu’il détecte le type d’informations sensibles du numéro d’identification fiscale de l’UE. Ce type d’informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
+ms.openlocfilehash: adcd9be9b5f8775ad39010d771ff2ac214df1e17
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255522"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152956"
 ---
-# <a name="eu-tax-identification-number"></a>Numéro d'identification fiscale de l'UE
+# <a name="eu-tax-identification-number"></a>Numéro d’identification fiscale de l’UE
 
-Cette rubrique montre ce qu'une stratégie de protection contre la perte de données (DLP) recherche lorsqu'il détecte le type d'informations sensibles de l'ID taxe de l'UE (TIN). Ce type d'informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
+Cette rubrique montre ce qu’une stratégie de protection contre la perte de données (DLP) recherche lorsqu’il détecte le type d’informations sensibles de l’ID taxe de l’UE (TIN). Ce type d’informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
   
 ## <a name="austria"></a>Autriche
 
 ### <a name="format"></a>Format
 
-Neuf chiffres avec un trait d'union conditionnel et une barre oblique
+Neuf chiffres avec un trait d’union conditionnel et une barre oblique
   
 ### <a name="pattern"></a>Modèle
 
-Neuf chiffres avec un trait d'Union et une barre oblique facultatifs:
+Neuf chiffres avec un trait d’Union et une barre oblique facultatifs:
   
 -  Deux chiffres 
     
@@ -78,13 +78,13 @@ Numéro de taxe
   
 number
   
-Numéro d'enregistrement taxe
+Numéro d’enregistrement taxe
   
 id fiscal
   
-St.Nr.
+st.nr.
   
-Steuernummer
+steuernummer
   
 ## <a name="belgium"></a>Belgique
 
@@ -114,7 +114,7 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_belgium_eu_tax_file_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_belgium_eu_tax_file_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_belgium_eu_tax_file_number` from est trouvé. 
     
@@ -134,9 +134,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 Numéro de taxe
   
-Numéro d'enregistrement national
+Numéro d’enregistrement national
   
-Numéro d'enregistrement taxe
+Numéro d’enregistrement taxe
   
 id fiscal
   
@@ -146,7 +146,7 @@ nPour
   
 Numéro de registre national
   
-Numéro d'identification fiscale
+Numéro d’identification fiscale
   
 ## <a name="bulgaria"></a>Bulgarie
 
@@ -195,21 +195,21 @@ bucn
   
 numéro civil uniforme
   
-bucn #
+bucn#
   
-uniformcivilnumber #
+uniformcivilnumber#
   
 ID civil uniforme
   
 non civil uniforme
   
-EGN
+egn
   
 numéro civil uniforme bulgare
   
-uniformcivilno #
+uniformcivilno#
   
-EGN #
+egn#
   
 униформ граждански номер
   
@@ -276,7 +276,7 @@ oid
   
 OID
   
-porezni Broj
+porezni broj
   
 ## <a name="cyprus"></a>Chypre
 
@@ -333,17 +333,17 @@ codes
   
 id fiscal
   
-code d'identification fiscale
+code d’identification fiscale
   
 graduation
   
 graduation
   
-Αριθμός φορολογικού Μητρώου
+αριθμός φορολογικού μητρώου
   
 φορολογική ταυτότητα
   
-Κωδικός φορολογικού Μητρώου
+κωδικός φορολογικού μητρώου
   
 ## <a name="czech-republic"></a>République tchèque
 
@@ -369,7 +369,7 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_czech_republic_eu_tax_file_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_czech_republic_eu_tax_file_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_czech_republic_eu_tax_file_number` from est trouvé. 
     
@@ -403,17 +403,17 @@ osobní číslo
 
 ### <a name="format"></a>Format
 
-Dix chiffres contenant un trait d'Union
+Dix chiffres contenant un trait d’Union
   
 ### <a name="pattern"></a>Modèle
 
-Dix chiffres contenant un trait d'Union:
+Dix chiffres contenant un trait d’Union:
   
 -  Six chiffres correspondant à la date de naissance (JJMMAA) 
     
 - Un trait d’union 
     
-- Quatre chiffres correspondant à un numéro de séquence où le premier chiffre correspond au siècle de naissance et le dernier chiffre correspond au sexe de l'individu (impair pour les hommes et les femmes)
+- Quatre chiffres correspondant à un numéro de séquence où le premier chiffre correspond au siècle de naissance et le dernier chiffre correspond au sexe de l’individu (impair pour les hommes et les femmes)
     
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -458,7 +458,7 @@ numéro CPR
   
 cardio
   
-Skat Nummer
+skat nummer
   
 ID Skat
   
@@ -539,7 +539,7 @@ Combinaison de 11 caractères chiffres, lettres, et signe plus et moins:
   
 - Six chiffres
     
-- L'une des options suivantes: un signe plus, un signe moins ou la lettre «A» (ne respectant pas la casse), où le signe plus est né entre 1800-1899, le signe moins est né entre 1900-1999, et «A» désigne né 2000 et after
+- L’une des options suivantes: un signe plus, un signe moins ou la lettre «A» (ne respectant pas la casse), où le signe plus est né entre 1800-1899, le signe moins est né entre 1900-1999, et «A» désigne né 2000 et after
     
 - Trois chiffres
     
@@ -582,19 +582,19 @@ numéro d’identification
   
 ID personnel
   
-Numéro d'identité
+Numéro d’identité
   
-Numéro d'identification national finnois
+Numéro d’identification national finnois
   
-personalidnumber #
+personalidnumber#
   
 numéro d’identification nationale
   
-Numéro d'identification
+Numéro d’identification
   
-Numéro d'identification nationale
+Numéro d’identification nationale
   
-Numéro d'identification national
+Numéro d’identification national
   
 n ° ID
   
@@ -602,17 +602,17 @@ tunnistenumero
   
 henkilötunnus
   
-Yksilöllinen henkilökohtainen tunnistenumero
+yksilöllinen henkilökohtainen tunnistenumero
   
 ainutlaatuinen henkilökohtainen tunnus
   
 identiteetti numérique
   
-Suomen Kansallinen henkilötunnus
+suomen kansallinen henkilötunnus
   
-henkilötunnusnumero #
+henkilötunnusnumero#
   
-Kansallisen tunnistenumero
+kansallisen tunnistenumero
   
 tunnusnumero
   
@@ -667,13 +667,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywordsfranceeutaxfilenumber"></a>Keywords_france_eu_tax_file_number
 
-Numéro d'identification de taxe
+Numéro d’identification de taxe
   
 Numéro de taxe
   
 id fiscal
   
-Numéro d'identification fiscale
+Numéro d’identification fiscale
   
 ## <a name="germany"></a>Allemagne
 
@@ -726,9 +726,9 @@ Numéro de taxe
   
 n ° taxe
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
@@ -736,11 +736,11 @@ id fiscal
   
 n ° de taxi
   
-Numéro d'identification de taxe
+Numéro d’identification de taxe
   
-n ° d'identification fiscale
+n ° d’identification fiscale
   
-Steuernummer
+steuernummer
   
 ID Steuer
   
@@ -764,7 +764,7 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_greece_eu_tax_file_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_greece_eu_tax_file_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_greece_eu_tax_file_number` from est trouvé. 
     
@@ -790,7 +790,7 @@ n ° ID taxe
   
 n ° de taxe
   
-Numéro d'identification de taxe
+Numéro d’identification de taxe
   
 Numéro de registre des taxes
   
@@ -800,19 +800,19 @@ financement
   
 Etain
   
-taxidno #
+taxidno#
   
-taxregistryno #
+taxregistryno#
   
-Αριθμός φορολογικού Μητρώου
+αριθμός φορολογικού μητρώου
   
 aφμ
   
-aφμ Αριθμός
+aφμ αριθμός
   
-φορολογικού Μητρώου νο.
+φορολογικού μητρώου νο.
   
-τον αριθμό φορολογικού Μητρώου
+τον αριθμό φορολογικού μητρώου
   
 ## <a name="hungary"></a>Hongrie
 
@@ -828,7 +828,7 @@ Dix chiffres:
     
 - Cinq chiffres correspondant au nombre de jours entre la date 01/01/1867 et la date de naissance de la personne
     
-- Trois chiffres correspondant au nombre généré par l'opportunité pour différencier les individus nés le même jour
+- Trois chiffres correspondant au nombre généré par l’opportunité pour différencier les individus nés le même jour
     
 - Un chiffre de contrôle
     
@@ -865,27 +865,27 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywordshungaryeutaxfilenumber"></a>Keywords_hungary_eu_tax_file_number
 
-Numéro d'identification de taxe hongrois
+Numéro d’identification de taxe hongrois
   
 étain hongrois
   
-Numéro d'identification de taxe
+Numéro d’identification de taxe
   
 Numéro de TVA
   
-Numéro de l'autorité fiscale
+Numéro de l’autorité fiscale
   
-Numéro d'identité fiscale de l'ID taxe
+Numéro d’identité fiscale de l’ID taxe
   
-taxidnumber #
+taxidnumber#
   
 Etain
   
-hungatiantin #
+hungatiantin#
   
-n ° d'identification fiscale
+n ° d’identification fiscale
   
-taxidno #
+taxidno#
   
 adóazonosító szám
   
@@ -897,11 +897,11 @@ adóhatóság szám
 
 ### <a name="format"></a>Format
 
-Sept chiffres suivis d'une lettre sans espaces ni délimiteurs
+Sept chiffres suivis d’une lettre sans espaces ni délimiteurs
   
 ### <a name="pattern"></a>Modèle
 
-Sept chiffres suivis d'une lettre:
+Sept chiffres suivis d’une lettre:
   
 -  Sept chiffres  
     
@@ -950,11 +950,11 @@ Numéro de service personnel
   
 n ° de Service PPS
   
-ppsno #
+ppsno#
   
 n ° PPS irlandais
   
-publicserviceno #
+publicserviceno#
   
 Numéro de service public
   
@@ -978,7 +978,7 @@ uimhir aitheantais phearsanta
     
 - Trois lettres qui correspondent à la première, troisième et quatrième consonnes du prénom
     
-- Deux chiffres correspondant aux derniers chiffres de l'année de naissance
+- Deux chiffres correspondant aux derniers chiffres de l’année de naissance
     
 - Un chiffre correspondant au mois de naissance: les lettres sont utilisées par ordre alphabétique, mais seules les lettres de A à E, H, L, M, P, R à T sont utilisées (en janvier, A et octobre est R).
     
@@ -1025,9 +1025,9 @@ Numéro de taxe
   
 n ° taxe
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
@@ -1092,9 +1092,9 @@ Numéro de taxe
   
 n ° taxe
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
@@ -1102,13 +1102,13 @@ id fiscal
   
 n ° de taxi
   
-Numéro d'identification de taxe
+Numéro d’identification de taxe
   
-n ° d'identification fiscale
+n ° d’identification fiscale
   
 nodokļa numurs
   
-nodokļu IDENTIFIKĀCIJAS numurs
+nodokļu identifikācijas numurs
   
 nodokļu identifikācija numurs
   
@@ -1161,7 +1161,7 @@ n ° taxe
   
 n ° de taxe n °
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
@@ -1169,9 +1169,9 @@ id fiscal
   
 n ° de taxi
   
-Numéro d'identification de taxe
+Numéro d’identification de taxe
   
-n ° d'identification fiscale
+n ° d’identification fiscale
   
 ID mokesčių
   
@@ -1230,9 +1230,9 @@ Numéro de taxe
   
 n ° taxe
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
@@ -1240,11 +1240,11 @@ id fiscal
   
 n ° de taxi
   
-Numéro d'identification de taxe
+Numéro d’identification de taxe
   
-n ° d'identification fiscale
+n ° d’identification fiscale
   
-Steuernummer
+steuernummer
   
 ID Steuer
   
@@ -1307,9 +1307,9 @@ Numéro de taxe
   
 n ° taxe
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
@@ -1317,15 +1317,15 @@ id fiscal
   
 n ° de taxi
   
-Numéro d'identification de taxe
+Numéro d’identification de taxe
   
-n ° d'identification fiscale
+n ° d’identification fiscale
   
 numru tat-Taxxa
   
 ID tat-Taxxa
   
-numru ta'IDENTIFIKAZZJONI tat-Taxxa
+numru ta’IDENTIFIKAZZJONI tat-Taxxa
   
 ## <a name="netherlands"></a>Pays-Bas
 
@@ -1370,19 +1370,19 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywordsnetherlandseutaxfilenumber"></a>Keywords_netherlands_eu_tax_file_number
 
-Numéro d'identification fiscale néerlandaise
+Numéro d’identification fiscale néerlandaise
   
 identification fiscale néerlandaise
   
-Numéro d'identification de taxe de Netherland
+Numéro d’identification de taxe de Netherland
   
 identification fiscale de Netherland
   
-Numéro d'identification de taxe
+Numéro d’identification de taxe
   
 ID de taxe néerlandaise
   
-Numéro d'identification de taxe néerlandaise
+Numéro d’identification de taxe néerlandaise
   
 id fiscal
   
@@ -1400,11 +1400,11 @@ Etain
   
 étain (Pays-Bas)
   
-Netherland d'étain
+Netherland d’étain
   
 néerlandais qui a identificatienummer
   
-identificatienummer van à l'avant-dernière
+identificatienummer van à l’avant-dernière
   
 identificatienummer qui a été modifié
   
@@ -1414,7 +1414,7 @@ néerlandais qui a pour ID Nummer
   
 Néerlandais belastingnummer
   
-BTW Nummer
+btw nummer
   
 Nederlandse qui a identificatie
   
@@ -1465,9 +1465,9 @@ Numéro de taxe
   
 n ° taxe
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
@@ -1483,15 +1483,15 @@ ID du NIP
   
 n ° de NIP
   
-Numéro d'identification de taxe
+Numéro d’identification de taxe
   
-n ° d'identification fiscale
+n ° d’identification fiscale
   
 Numéro de TVA
   
 n ° TVA
   
-vatno #
+vatno#
   
 Numéro de TVA
   
@@ -1501,7 +1501,7 @@ chiffre identyfikacji podatkowej
   
 Polski identyfikacji podatkowej
   
-numeridentyfikacjipodatkowej #
+numeridentyfikacjipodatkowej#
   
 ## <a name="portugal"></a>Portugal
 
@@ -1550,9 +1550,9 @@ Numéro de taxe
   
 n ° taxe
   
-taxno #
+taxno#
   
-taxnumber #
+taxnumber#
   
 taxnumber
   
@@ -1582,7 +1582,7 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_romania_eu_tax_file_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_romania_eu_tax_file_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_romania_eu_tax_file_number` from est trouvé. 
     
@@ -1602,7 +1602,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 id fiscal
   
-Numéro d'identification de taxe
+Numéro d’identification de taxe
   
 n ° fichier taxe
   
@@ -1614,7 +1614,7 @@ Numéro de taxe
   
 n ° de taxi
   
-taxno #
+taxno#
   
 ID-UL taxei
   
@@ -1638,7 +1638,7 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_slovakia_eu_tax_file_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_slovakia_eu_tax_file_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_slovakia_eu_tax_file_number` from est trouvé. 
     
@@ -1658,13 +1658,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 id fiscal
   
-Numéro d'identification de taxe
+Numéro d’identification de taxe
   
-ID d'étain
+ID d’étain
   
-n ° d'étain
+n ° d’étain
   
-ID d'étain slovaque
+ID d’étain slovaque
   
 Etain
   
@@ -1678,7 +1678,7 @@ Numéro de taxe
   
 n ° de taxi
   
-taxno #
+taxno#
   
 daňové identifikačné číslo
   
@@ -1731,13 +1731,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 id fiscal
   
-Numéro d'identification de taxe
+Numéro d’identification de taxe
   
-ID d'étain
+ID d’étain
   
-n ° d'étain
+n ° d’étain
   
-ID d'étain slovène
+ID d’étain slovène
   
 Etain
   
@@ -1751,7 +1751,7 @@ Numéro de taxe
   
 n ° de taxi
   
-taxno #
+taxno#
   
 identifikacijska številka davka
   
@@ -1767,13 +1767,13 @@ Sept ou huit chiffres et une ou deux lettres dans le modèle spécifié
   
 ### <a name="pattern"></a>Modèle
 
-Personnes physiques espagnoles avec une carte d'identité nationale d'Espagne:
+Personnes physiques espagnoles avec une carte d’identité nationale d’Espagne:
   
 -  Huit chiffres 
     
 - Une lettre majuscule (respecte la casse) 
     
-Spaniards non résident sans carte d'identité nationale d'Espagne
+Spaniards non résident sans carte d’identité nationale d’Espagne
   
 - Une lettre majuscule «L» (respecte la casse)
     
@@ -1781,7 +1781,7 @@ Spaniards non résident sans carte d'identité nationale d'Espagne
     
 - Une lettre majuscule (respecte la casse) 
     
-Spaniards résident de moins de 14 ans sans carte d'identité nationale (Espagne):
+Spaniards résident de moins de 14 ans sans carte d’identité nationale (Espagne):
   
 - Une lettre majuscule «K» (respecte la casse)
     
@@ -1789,7 +1789,7 @@ Spaniards résident de moins de 14 ans sans carte d'identité nationale (Espagne
     
 - Une lettre majuscule (respecte la casse)
     
-Foreigners avec le numéro d'identification d'un étranger
+Foreigners avec le numéro d’identification d’un étranger
   
 - Une lettre majuscule qui est «X», «Y» ou «Z» (respecte la casse) 
     
@@ -1797,7 +1797,7 @@ Foreigners avec le numéro d'identification d'un étranger
     
 - Une lettre majuscule (respecte la casse) 
     
-Foreigners sans numéro d'identification étranger
+Foreigners sans numéro d’identification étranger
   
 - Une lettre majuscule qui est «M» (respecte la casse) 
     
@@ -1840,7 +1840,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 id fiscal
   
-Numéro d'identification de taxe
+Numéro d’identification de taxe
   
 identifiant CAF
   
@@ -1864,13 +1864,13 @@ Numéro de taxe
   
 n ° de taxi
   
-taxno #
+taxno#
   
-cifid #
+cifid#
   
-spanishcifid #
+spanishcifid#
   
-spanishcifno #
+spanishcifno#
   
 Número de contribuyente
   
@@ -1880,7 +1880,7 @@ Número de Identificación fiscal
   
 CIF número
   
-cifnúmero #
+cifnúmero#
   
 ## <a name="sweden"></a>Suède
 
@@ -1896,9 +1896,9 @@ Dix chiffres et un symbole:
     
 - Un signe plus, un signe moins ou une barre oblique inverse
     
-- Trois chiffres qui permettent de définir le numéro d'identification unique: 
+- Trois chiffres qui permettent de définir le numéro d’identification unique: 
     
-  - Pour les numéros émis avant le 1990, le septième et le huitième chiffre identifient le comté de naissance ou les personnes nées à l'étranger.
+  - Pour les numéros émis avant le 1990, le septième et le huitième chiffre identifient le comté de naissance ou les personnes nées à l’étranger.
     
   - Le chiffre de la neuvième position indique le sexe soit impair, soit pair pour femme.
     
@@ -1941,11 +1941,11 @@ id fiscal
   
 n ° ID taxe
   
-Numéro d'identification de taxe
+Numéro d’identification de taxe
   
 identification fiscale
   
-n ° d'identification fiscale
+n ° d’identification fiscale
   
 n ° taxe
   
@@ -1957,11 +1957,11 @@ fichier taxe
   
 n ° fichier taxe
   
-Numéro d'identification personnel
+Numéro d’identification personnel
   
 skatt ID Nummer
   
-skatt Identifikation
+skatt identifikation
   
 personnummer
   
@@ -1969,15 +1969,15 @@ personnummer
 
 ### <a name="format"></a>Format
 
-Référence de conTribuable unique (UTR): 10 chiffres sans espaces ni délimiteurs
+Référence de contribuable unique (UTR): 10 chiffres sans espaces ni délimiteurs
   
-Numéro d'assurance nationale (NINO): pour plus d'informations, reportez-vous à la section «Royaume-Uni National Insurance Number (NINO)» dans [ce que recherche les types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
+Numéro d’assurance nationale (NINO): pour plus d’informations, reportez-vous à la section «Royaume-Uni National Insurance Number (NINO)» dans [ce que recherche les types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ### <a name="pattern"></a>Modèle
 
-Référence de conTribuable unique (UTR): 10 chiffres
+Référence de contribuable unique (UTR): 10 chiffres
   
-Numéro d'assurance nationale (NINO): pour plus d'informations, reportez-vous à la section «Royaume-Uni National Insurance Number (NINO)» dans [ce que recherche les types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
+Numéro d’assurance nationale (NINO): pour plus d’informations, reportez-vous à la section «Royaume-Uni National Insurance Number (NINO)» dans [ce que recherche les types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -2009,11 +2009,11 @@ id fiscal
   
 n ° ID taxe
   
-Numéro d'identification de taxe
+Numéro d’identification de taxe
   
 identification fiscale
   
-n ° d'identification fiscale
+n ° d’identification fiscale
   
 n ° taxe
   

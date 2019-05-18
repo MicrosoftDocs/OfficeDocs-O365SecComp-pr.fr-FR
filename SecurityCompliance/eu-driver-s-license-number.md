@@ -1,25 +1,25 @@
 ---
-title: Numéro de permis de conduire de l'UE
+title: Numéro de permis de conduire de l’UE
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
-description: Cette rubrique présente ce qu'une stratégie de protection contre la perte de données (DLP) recherche lorsqu'elle détecte le type d'informations sensibles du pilote de l'UE. Ce type d'informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
-ms.openlocfilehash: be9497c325866a670dff8d82b5170f4ca947c4ad
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Cette rubrique présente ce qu’une stratégie de protection contre la perte de données (DLP) recherche lorsqu’elle détecte le type d’informations sensibles du pilote de l’UE. Ce type d’informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
+ms.openlocfilehash: f1a95ecbaf6b6d1ac189290dd6d076cfd91ab30f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255772"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152976"
 ---
-# <a name="eu-drivers-license-number"></a>Numéro de permis de conduire de l'UE
+# <a name="eu-drivers-license-number"></a>Numéro de permis de conduire de l’UE
 
-Cette rubrique présente ce qu'une stratégie de protection contre la perte de données (DLP) recherche lorsqu'elle détecte le type d'informations sensibles du pilote de l'UE. Ce type d'informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
+Cette rubrique présente ce qu’une stratégie de protection contre la perte de données (DLP) recherche lorsqu’elle détecte le type d’informations sensibles du pilote de l’UE. Ce type d’informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
   
 ## <a name="austria"></a>Autriche
 
@@ -39,7 +39,7 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_austria_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_austria_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_austria_eu_driver's_license_number` from est trouvé. 
     
@@ -59,7 +59,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_austria_eu_driver's_license_number**|
 |:-----|
-|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/>  Numéro de permis de conduire  <br/> dlno #  <br/> Fuhrerschein  <br/> Fuhrerschein Republik Osterreich  <br/> |
+|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/>  Numéro de permis de conduire  <br/> dlno#  <br/> Fuhrerschein  <br/> Fuhrerschein Republik Osterreich  <br/> |
    
 ## <a name="belgium"></a>Belgique
 
@@ -79,7 +79,7 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_belgium_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_belgium_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_belgium_eu_driver's_license_number` from est trouvé. 
     
@@ -99,7 +99,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords__belgium_eu_driver's_license_number**|
 |:-----|
-|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> führerscheinnummer  <br/> fuhrerscheinnummer  <br/> fuehrerscheinnummer  <br/> Führerschein-Nr  <br/> fuehrerschein-Nr  <br/> fuehrerschein-Nr  <br/> |
+|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno#  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> führerscheinnummer  <br/> fuhrerscheinnummer  <br/> fuehrerscheinnummer  <br/> Führerschein-Nr  <br/> fuehrerschein-Nr  <br/> fuehrerschein-Nr  <br/> |
    
 ## <a name="bulgaria"></a>Bulgarie
 
@@ -119,7 +119,7 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_bulgaria_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_bulgaria_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_bulgaria_eu_driver's_license_number` from est trouvé. 
     
@@ -139,7 +139,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_bulgaria_eu_driver's_license_number**|
 |:-----|
-|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> свидетелство за Управление на мпс  <br/> свидетелство за Управление на моторно превозно средство  <br/> сумпс  <br/> шофьорска книжка  <br/> |
+|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno#  <br/> свидетелство за управление на мпс  <br/> свидетелство за управление на моторно превозно средство  <br/> сумпс  <br/> шофьорска книжка  <br/> |
    
 ## <a name="croatia"></a>Croatie
 
@@ -159,7 +159,7 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_croatia_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_croatia_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_croatia_eu_driver's_license_number` from est trouvé. 
     
@@ -179,7 +179,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_croatia_eu_driver's_license_number**|
 |:-----|
-|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> vozačka Dozvola  <br/> |
+|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno#  <br/> vozačka dozvola  <br/> |
    
 ## <a name="cyprus"></a>Chypre
 
@@ -199,7 +199,7 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_cyprus_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_cyprus_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_cyprus_eu_driver's_license_number` from est trouvé. 
     
@@ -218,7 +218,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_cyprus_eu_driver's_license_number**|
 |:-----|
-|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> Άδεια Οδήγησης  <br/> |
+|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno#  <br/> άδεια οδήγησης  <br/> |
    
 ## <a name="czech-republic"></a>République tchèque
 
@@ -244,7 +244,7 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_czech_republic_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_czech_republic_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_czech_republic_eu_driver's_license_number` from est trouvé. 
     
@@ -264,7 +264,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_czech_republic_eu_driver's_license_number**|
 |:-----|
-|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> řidičský prúkaz  <br/> |
+|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno#  <br/> řidičský prúkaz  <br/> |
    
 ## <a name="denmark"></a>Danemark
 
@@ -284,7 +284,7 @@ Oui
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_denmark_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_denmark_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_denmark_eu_driver's_license_number` from est trouvé. 
     
@@ -304,7 +304,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_denmark_eu_driver's_license_number**|
 |:-----|
-|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> Kørekort  <br/> kørekortnummer  <br/> |
+|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno#  <br/> kørekort  <br/> kørekortnummer  <br/> |
    
 ## <a name="estonia"></a>Estonie
 
@@ -328,7 +328,7 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_estonia_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_estonia_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_estonia_eu_driver's_license_number` from est trouvé. 
     
@@ -347,7 +347,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_estonia_eu_driver's_license_number**|
 |:-----|
-|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> permis de conduire  <br/> |
+|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno#  <br/> permis de conduire  <br/> |
    
 ## <a name="finland"></a>Finlande
 
@@ -357,7 +357,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
   
 ### <a name="pattern"></a>Modèle
 
-10 chiffres contenant un trait d'Union:
+10 chiffres contenant un trait d’Union:
   
 -  Six chiffres 
     
@@ -373,7 +373,7 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_finland_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_finland_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_finland_eu_driver's_license_number` from est trouvé. 
     
@@ -392,15 +392,15 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_finland_eu_driver's_license_number**|
 |:-----|
-|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> Ajokortti  <br/> |
+|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno#  <br/> ajokortti  <br/> |
    
 ## <a name="france"></a>France
 
-Pour plus d'informations, reportez-vous à la section «numéro de permis de conduire France» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, reportez-vous à la section «numéro de permis de conduire France» dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="germany"></a>Allemagne
 
-Pour plus d'informations, consultez la section «numéro de permis de conduire allemand» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, consultez la section «numéro de permis de conduire allemand» dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="greece"></a>Grèce
 
@@ -420,7 +420,7 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_greece_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_greece_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_greece_eu_driver's_license_number` from est trouvé. 
     
@@ -439,7 +439,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_greece_eu_driver's_license_number**|
 |:-----|
-|Fichier  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> δεια Οδήγησης  <br/> Adeia odigisis  <br/> |
+|Fichier  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno#  <br/> δεια οδήγησης  <br/> Adeia odigisis  <br/> |
    
 ## <a name="hungary"></a>Hongrie
 
@@ -463,7 +463,7 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_hungary_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_hungary_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_hungary_eu_driver's_license_number` from est trouvé. 
     
@@ -482,7 +482,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_hungary_eu_driver's_license_number**|
 |:-----|
-|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> vezetoi engedely  <br/> |
+|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno#  <br/> vezetoi engedely  <br/> |
    
 ## <a name="ireland"></a>Irlande
 
@@ -506,7 +506,7 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_ireland_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_ireland_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_ireland_eu_driver's_license_number` from est trouvé. 
     
@@ -525,11 +525,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_ireland_eu_driver's_license_number**|
 |:-----|
-|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> Ceadúnas Tiomána  <br/> |
+|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno#  <br/> ceadúnas tiomána  <br/> |
    
 ## <a name="italy"></a>Italie
 
-Pour plus d'informations, reportez-vous à la section «Italie numéro de permis de conduire» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, reportez-vous à la section «Italie numéro de permis de conduire» dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="latvia"></a>Lettonie
 
@@ -553,7 +553,7 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_latvia_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_latvia_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_latvia_eu_driver's_license_number` from est trouvé. 
     
@@ -572,7 +572,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_latvia_eu_driver's_license_number**|
 |:-----|
-|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> autovadītāja APLIECĪBA  <br/> |
+|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno#  <br/> autovadītāja apliecība  <br/> |
    
 ## <a name="lithuania"></a>Lituanie
 
@@ -592,7 +592,7 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_lithuania_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_lithuania_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_lithuania_eu_driver's_license_number` from est trouvé. 
     
@@ -611,7 +611,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_lithuania_eu_driver's_license_number**|
 |:-----|
-|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> vairuotojo pažymėjimas  <br/> |
+|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno#  <br/> vairuotojo pažymėjimas  <br/> |
    
 ## <a name="luxemburg"></a>Relatif
 
@@ -631,7 +631,7 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_luxemburg_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_luxemburg_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_luxemburg_eu_driver's_license_number` from est trouvé. 
     
@@ -650,7 +650,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_luxemburg_eu_driver's_license_number**|
 |:-----|
-|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> fahrerlaubnis  <br/> |
+|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno#  <br/> fahrerlaubnis  <br/> |
    
 ## <a name="malta"></a>Malte
 
@@ -680,7 +680,7 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_malta_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_malta_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_malta_eu_driver's_license_number` from est trouvé. 
     
@@ -699,7 +699,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_malta_eu_driver's_license_number**|
 |:-----|
-|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> Liċenzja-sewqan  <br/> |
+|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno#  <br/> Liċenzja-sewqan  <br/> |
    
 ## <a name="netherlands"></a>Pays-Bas
 
@@ -719,7 +719,7 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_netherlands_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_netherlands_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_netherlands_eu_driver's_license_number` from est trouvé. 
     
@@ -738,7 +738,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_netherlands_eu_driver's_license_number**|
 |:-----|
-|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
+|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno#  <br/> permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
    
 ## <a name="poland"></a>Pologne
 
@@ -768,7 +768,7 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_poland_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_poland_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_poland_eu_driver's_license_number` from est trouvé. 
     
@@ -787,13 +787,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_poland_eu_driver's_license_number**|
 |:-----|
-|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> Prawo jazdy  <br/> |
+|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno#  <br/> prawo jazdy  <br/> |
    
 ## <a name="portugal"></a>Portugal
 
 ### <a name="format"></a>Format
 
-Deux lettres suivies d'un nombre de sept chiffres dans le modèle spécifié
+Deux lettres suivies d’un nombre de sept chiffres dans le modèle spécifié
   
 ### <a name="pattern"></a>Modèle
 
@@ -817,7 +817,7 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_portugal_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_portugal_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_portugal_eu_driver's_license_number` from est trouvé. 
     
@@ -836,7 +836,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_portugal_eu_driver's_license_number**|
 |:-----|
-|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> Carteira de motorista  <br/> |
+|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno#  <br/> Carteira de motorista  <br/> |
    
 ## <a name="romania"></a>Roumanie
 
@@ -860,7 +860,7 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_romania_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_romania_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_romania_eu_driver's_license_number` from est trouvé. 
     
@@ -879,7 +879,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_romania_eu_driver's_license_number**|
 |:-----|
-|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> permis de conducere  <br/> |
+|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno#  <br/> permis de conducere  <br/> |
    
 ## <a name="slovakia"></a>République de Slovaquie
 
@@ -903,7 +903,7 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_slovakia_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_slovakia_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_slovakia_eu_driver's_license_number` from est trouvé. 
     
@@ -922,7 +922,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_slovakia_eu_driver's_license_number**|
 |:-----|
-|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> vodičský PREUKAZ  <br/> |
+|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno#  <br/> vodičský preukaz  <br/> |
    
 ## <a name="slovenia"></a>Slovénie
 
@@ -942,7 +942,7 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_slovenia_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_slovenia_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_slovenia_eu_driver's_license_number` from est trouvé. 
     
@@ -961,17 +961,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_slovenia_eu_driver's_license_number**|
 |:-----|
-|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> vozniško Dovoljenje  <br/> |
+|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno#  <br/> vozniško dovoljenje  <br/> |
    
 ## <a name="spain"></a>Espagne
 
 ### <a name="format"></a>Format
 
-Huit chiffres suivis d'un caractère
+Huit chiffres suivis d’un caractère
   
 ### <a name="pattern"></a>Modèle
 
-Huit chiffres suivis d'un caractère:
+Huit chiffres suivis d’un caractère:
   
 -  Huit chiffres 
     
@@ -1004,17 +1004,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_spain_eu_driver's_license_number**|
 |:-----|
-|dlno #  <br/> LD  <br/> pilotes.  <br/> permis de conduire  <br/> Permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> permiso de Conducción  <br/> permiso Conducción  <br/> número licencia conducir  <br/> Número de carnet de conducir  <br/> conducir de carnet número  <br/> licencia conducir  <br/> Número de permiso de conducir  <br/> Número de permiso conducir  <br/> número permiso conducir  <br/> permiso conducir  <br/> licencia de manejo  <br/> carnet El de conducir  <br/> carnet conducir  <br/> |
+|dlno#  <br/> LD  <br/> pilotes.  <br/> permis de conduire  <br/> Permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> permiso de Conducción  <br/> permiso conducción  <br/> número licencia conducir  <br/> Número de carnet de conducir  <br/> conducir de carnet número  <br/> licencia conducir  <br/> Número de permiso de conducir  <br/> Número de permiso conducir  <br/> número permiso conducir  <br/> permiso conducir  <br/> licencia de manejo  <br/> carnet El de conducir  <br/> carnet conducir  <br/> |
    
 ## <a name="sweden"></a>Suède
 
 ### <a name="format"></a>Format
 
-Dix chiffres contenant un trait d'Union
+Dix chiffres contenant un trait d’Union
   
 ### <a name="pattern"></a>Modèle
 
-Dix chiffres contenant un trait d'Union:
+Dix chiffres contenant un trait d’Union:
   
 -  Six chiffres 
     
@@ -1030,7 +1030,7 @@ Non
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_sweden_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_sweden_eu_driver's_license_number` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_sweden_eu_driver's_license_number` from est trouvé. 
     
@@ -1049,11 +1049,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 | |
 |**Keywords_sweden_eu_driver's_license_number**|
 |:-----|
-|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno #  <br/> körkort  <br/> |
+|LD  <br/> Permis de conduire  <br/> Numéro de permis de conduire  <br/> permis de conduire  <br/> pilotes.  <br/> permis de conduire  <br/> permis de conduire  <br/> permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> Numéro de permis de conduire  <br/> dlno#  <br/> körkort  <br/> |
    
 ## <a name="uk"></a>R.U.
 
-Pour plus d'informations, reportez-vous à la section «Royaume-Uni Numéro de permis de conduire» dans [ce que recherche les types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, reportez-vous à la section «Royaume-Uni Numéro de permis de conduire» dans [ce que recherche les types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="see-also"></a>Voir aussi
 

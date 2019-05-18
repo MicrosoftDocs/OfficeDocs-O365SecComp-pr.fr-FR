@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e45400726537a3b1ebadcc3d828d9cb8110e2100
-ms.sourcegitcommit: 09fd88272187f82b6e635af83edabea08c2cc49c
+ms.openlocfilehash: 33e2603aaeb4505768e76149b76dc18648250a52
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33884752"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151936"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Champs de métadonnées de document dans Advanced eDiscovery
 
@@ -59,7 +59,7 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents da
 | Thème dominant | DominantTheme | Dominant_theme | Thème dominant | Thème dominant calculé pour l’analyse. |
 | Sous-ensemble dupliqué |  | Duplicate_subset | Sous-ensemble dupliqué | ID de groupe pour les doublons exacts. |
 | EmailAction |  | Email_action |  | Aucun, répondre, transférer en fonction de la ligne d’objet d’un message. |
-| Accusé de réception de courrier électronique |  | Email_delivery_receipt | Accusé de réception de courrier électronique | Adresse E-mail fournie dans les en-têtes Internet pour accusé de réception. |
+| Accusé de réception de courrier électronique |  | Email_delivery_receipt | Accusé de réception de courrier électronique | Adresse e-mail fournie dans les en-têtes Internet pour accusé de réception. |
 | Importance | EmailImportance | Email_importance | Importance | Importance du message: **0**: faible; **1**: normal; **2**: haute |
 | EmailLevel |  | Email_level |  | Indique le niveau d’un message dans le thread de messagerie auquel il appartient; les pièces jointes héritent la valeur de leur message parent. |
 | ID du message électronique |  | Email_message_ID | ID du message électronique | ID de message Internet du message. |

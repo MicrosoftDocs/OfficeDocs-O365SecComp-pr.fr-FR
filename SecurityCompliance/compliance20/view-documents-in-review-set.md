@@ -1,9 +1,9 @@
 ---
-title: Afficher des documents dans un ensemble de révision
+title: Afficher les documents d’un jeu à réviser
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 - MET150
 description: ''
-ms.openlocfilehash: 65b55f60e1b57b34dbdc7dd62f0a4b373f73a96b
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: 0e986510ca49cfbfd77ab6f4d43220df1ebf35c5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33527147"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151546"
 ---
-# <a name="view-documents-in-a-review-set"></a>Afficher des documents dans un ensemble de révision
+# <a name="view-documents-in-a-review-set"></a>Afficher les documents d’un jeu à réviser
 
 Advanced eDiscovery affiche le contenu par le biais de plusieurs observateurs à des fins différentes. Les différentes visionneuses peuvent être utilisées en cliquant sur n’importe quel document d’un jeu de révision. Les visionneuses actuellement fournies sont les suivantes:
 

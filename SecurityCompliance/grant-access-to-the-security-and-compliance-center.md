@@ -1,10 +1,10 @@
 ---
-title: Donner aux utilisateurs l'accès au centre de &amp; sécurité conformité Office 365
+title: Donner aux utilisateurs l’accès au centre de &amp; sécurité conformité Office 365
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.PermissionsHelp
@@ -15,21 +15,21 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: Les utilisateurs doivent disposer d'autorisations dans le centre de sécurité &amp; conformité Office 365 avant de pouvoir gérer les fonctionnalités de sécurité ou de conformité.
-ms.openlocfilehash: 08b3781ceb48b9a8d5933a075106d7bd3b9ab17d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Les utilisateurs doivent disposer d’autorisations dans le centre de sécurité &amp; conformité Office 365 avant de pouvoir gérer les fonctionnalités de sécurité ou de conformité.
+ms.openlocfilehash: aa0d1e9af6eb547bbb145d06cabfc431028ec4f0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253966"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154296"
 ---
-# <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>Donner aux utilisateurs l'accès au centre de &amp; sécurité conformité Office 365
+# <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>Donner aux utilisateurs l’accès au centre de &amp; sécurité conformité Office 365
 
-Les utilisateurs doivent disposer d'autorisations dans le centre de sécurité &amp; conformité Office 365 avant de pouvoir gérer les fonctionnalités de sécurité ou de conformité. En tant qu'administrateur général Office 365 ou membre du groupe de rôles OrganizationManagement dans le &amp; Centre de sécurité conformité, vous pouvez accorder ces autorisations aux utilisateurs. Ceux-ci pourront uniquement gérer les fonctionnalités de sécurité ou de conformité auxquelles vous leur donnez accès. 
+Les utilisateurs doivent disposer d’autorisations dans le centre de sécurité &amp; conformité Office 365 avant de pouvoir gérer les fonctionnalités de sécurité ou de conformité. En tant qu’administrateur général Office 365 ou membre du groupe de rôles OrganizationManagement dans le &amp; Centre de sécurité conformité, vous pouvez accorder ces autorisations aux utilisateurs. Ceux-ci pourront uniquement gérer les fonctionnalités de sécurité ou de conformité auxquelles vous leur donnez accès. 
   
-Pour plus d'informations sur les différentes autorisations que vous pouvez accorder aux utilisateurs dans &amp; le centre de sécurité conformité, consultez [la rubrique autorisations dans &amp; le centre de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md).
+Pour plus d’informations sur les différentes autorisations que vous pouvez accorder aux utilisateurs dans &amp; le centre de sécurité conformité, consultez [la rubrique autorisations dans &amp; le centre de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md).
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
 
 - Vous devez être un administrateur général Office 365 ou un membre du groupe de rôles OrganizationManagement dans le centre de sécurité &amp; conformité pour effectuer les étapes décrites dans cet article.
     
@@ -37,17 +37,17 @@ Pour plus d'informations sur les différentes autorisations que vous pouvez acco
     
 - Les appartenances aux groupes de rôles ne sont pas partagées &amp; entre Exchange Online et le centre de sécurité conformité.
     
-## <a name="use-the-office-365-admin-center-to-give-another-user-access-to-the-security-amp-compliance-center"></a>Utiliser le centre d'administration Office 365 pour donner à un autre utilisateur l' &amp; accès au centre de sécurité conformité
+## <a name="use-the-office-365-admin-center-to-give-another-user-access-to-the-security-amp-compliance-center"></a>Utiliser le centre d’administration Office 365 pour donner à un autre utilisateur l' &amp; accès au centre de sécurité conformité
 
-1. [Connectez-vous à Office 365 et accédez au centre d'administration](https://go.microsoft.com/fwlink/p/?LinkId=525275).
+1. [Connectez-vous à Office 365 et accédez au centre d’administration](https://go.microsoft.com/fwlink/p/?LinkId=525275).
     
-2. Dans le centre d'administration Office 365, ouvrez **centres** d'administration, puis cliquez sur **conformité de sécurité &amp; **. 
+2. Dans le centre d’administration Office 365, ouvrez **centres** d’administration, puis cliquez sur **conformité de sécurité &amp; **. 
     
 3. Dans le centre &amp; de sécurité conformité, accédez à **autorisations**.
     
-4. Dans la liste, choisissez le groupe de rôles auquel vous souhaitez ajouter l'utilisateur, puis cliquez sur **modifier** ![l'](media/O365_MDM_CreatePolicy_EditIcon.gif)icône modifier.
+4. Dans la liste, choisissez le groupe de rôles auquel vous souhaitez ajouter l’utilisateur, puis cliquez sur **modifier** ![l'](media/O365_MDM_CreatePolicy_EditIcon.gif)icône modifier.
     
-5. Dans la page des propriétés du groupe de rôles sous **membres**, cliquez sur](media/ITPro-EAC-AddIcon.gif) **Ajouter**![une icône et sélectionnez le nom de l'utilisateur (ou des utilisateurs) que vous souhaitez ajouter. 
+5. Dans la page des propriétés du groupe de rôles sous **membres**, cliquez sur](media/ITPro-EAC-AddIcon.gif) **Ajouter**![une icône et sélectionnez le nom de l’utilisateur (ou des utilisateurs) que vous souhaitez ajouter. 
     
 6. Une fois que vous avez sélectionné tous les utilisateurs que vous souhaitez ajouter au groupe de rôles, cliquez sur **ajouter-\> ** puis sur **OK**.
     
@@ -61,9 +61,9 @@ Pour plus d'informations sur les différentes autorisations que vous pouvez acco
     
 3. À droite, dans les détails du groupe de rôles, vous pouvez afficher les membres du groupe de rôles.
     
-## <a name="use-powershell-to-give-another-user-access-to-the-security-amp-compliance-center"></a>Utiliser PowerShell pour donner à un autre utilisateur l'accès &amp; au centre de sécurité conformité
+## <a name="use-powershell-to-give-another-user-access-to-the-security-amp-compliance-center"></a>Utiliser PowerShell pour donner à un autre utilisateur l’accès &amp; au centre de sécurité conformité
 
-1. [Connectez-vous au centre de sécurité & de la sécurité d'Office 365 PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+1. [Connectez-vous au centre de sécurité & de la sécurité d’Office 365 PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
     
 2. Utilisez la commande **Add-RoleGroupMember** pour ajouter un utilisateur au rôle Gestion de l’organisation, comme illustré dans l’exemple suivant. 
     
@@ -76,19 +76,19 @@ Pour plus d'informations sur les différentes autorisations que vous pouvez acco
   
 - _-Identity_ est le groupe de rôles auquel ajouter un membre. 
     
-- _Membre_ est la boîte aux lettres, le groupe de sécurité universel ou l'ordinateur à ajouter au groupe de rôles. Vous ne pouvez spécifier qu’un membre à la fois. 
+- _Membre_ est la boîte aux lettres, le groupe de sécurité universel ou l’ordinateur à ajouter au groupe de rôles. Vous ne pouvez spécifier qu’un membre à la fois. 
     
-Pour plus d'informations sur la syntaxe et les paramètres, voir [Add-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510859).
+Pour plus d’informations sur la syntaxe et les paramètres, voir [Add-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510859).
   
 ### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
-Pour vérifier que vous avez accordé aux utilisateurs l'accès au &amp; Centre de sécurité conformité, utilisez la cmdlet **Get-RoleGroupMember** pour afficher les membres du groupe de rôles gestion de l'organisation, comme illustré dans l'exemple suivant. 
+Pour vérifier que vous avez accordé aux utilisateurs l’accès au &amp; Centre de sécurité conformité, utilisez la cmdlet **Get-RoleGroupMember** pour afficher les membres du groupe de rôles gestion de l’organisation, comme illustré dans l’exemple suivant. 
   
 ```
 Get-RoleGroupMember -Identity "OrganizationManagement"
 
 ```
 
-Pour plus d'informations sur la syntaxe et les paramètres, consultez la rubrique [Get-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510860).
+Pour plus d’informations sur la syntaxe et les paramètres, consultez la rubrique [Get-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510860).
   
 

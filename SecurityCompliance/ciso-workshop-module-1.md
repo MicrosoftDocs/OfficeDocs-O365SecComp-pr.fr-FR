@@ -3,23 +3,23 @@ title: 'Atelier de directeur de la sécurité des informations (CISO), module 1:
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur les principes de sécurité et les recommandations pour la modernisation de la sécurité dans votre organisation.
-ms.openlocfilehash: 08a0a3fc93745ec32459746fce737ac9e9e164ef
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 35f3feca7597eb3e80076eccc36e00debd754d01
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243995"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152156"
 ---
-# <a name="ciso-workshop-module-1-microsoft-cybersecurity-briefing"></a>Module d'atelier CISO 1: Briefing Microsoft Cybersecurity
+# <a name="ciso-workshop-module-1-microsoft-cybersecurity-briefing"></a>Module d’atelier CISO 1: Briefing Microsoft Cybersecurity
 
-Ce module décrit les vues d'ensemble de l'hygiène de sécurité critique, de l'architecture de référence Microsoft Cybersecurity, de la résilience Cybersecurity, de l'Internet des choses et de la technique opérationnelle.
+Ce module décrit les vues d’ensemble de l’hygiène de sécurité critique, de l’architecture de référence Microsoft Cybersecurity, de la résilience Cybersecurity, de l’Internet des choses et de la technique opérationnelle.
 
 - Télécharger le Résumé PDF: [module 1: Briefing de Microsoft Cybersecurity](media/ciso-workshop-1-cybersecurity-briefing.pdf)
 - Télécharger le résumé PowerPoint: [module 1: Briefing de Microsoft Cybersecurity](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-1-cybersecurity-briefing.pptx)
@@ -28,7 +28,7 @@ Ce module décrit les vues d'ensemble de l'hygiène de sécurité critique, de l
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYM5]
 
-## <a name="part-2-cybersecurity-resilience-1350"></a>Partie 2: réSilience Cybersecurity (13:50)
+## <a name="part-2-cybersecurity-resilience-1350"></a>Partie 2: résilience Cybersecurity (13:50)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQKW]
 
@@ -44,7 +44,7 @@ Ce module décrit les vues d'ensemble de l'hygiène de sécurité critique, de l
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQL2]
 
-## <a name="part-6-reference-architecture-for-identity-and-access-725"></a>Partie 6: architecture de référence pour l'identité et l'accès (7:25)
+## <a name="part-6-reference-architecture-for-identity-and-access-725"></a>Partie 6: architecture de référence pour l’identité et l’accès (7:25)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtITd]
 
@@ -56,7 +56,7 @@ Ce module décrit les vues d'ensemble de l'hygiène de sécurité critique, de l
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtT8R]
 
-## <a name="part-9-reference-architecture-for-hybrid-cloud-infrastructure-1057"></a>Partie 9: architecture de référence pour l'infrastructure cloud hybride (10:57)
+## <a name="part-9-reference-architecture-for-hybrid-cloud-infrastructure-1057"></a>Partie 9: architecture de référence pour l’infrastructure cloud hybride (10:57)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtLoK]
 
@@ -64,7 +64,7 @@ Ce module décrit les vues d'ensemble de l'hygiène de sécurité critique, de l
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtVXM]
 
-## <a name="part-11-reference-architecture-for-iot-and-operational-tech-402"></a>Partie 11: architecture de référence pour IoT et technologie d'exploitation (4:02)
+## <a name="part-11-reference-architecture-for-iot-and-operational-tech-402"></a>Partie 11: architecture de référence pour IoT et technologie d’exploitation (4:02)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQL5]
 
@@ -72,6 +72,6 @@ Ce module décrit les vues d'ensemble de l'hygiène de sécurité critique, de l
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtITj]
 
-## <a name="part-13-conclusion-summary-of-ciso-workshop-approach-608"></a>Partie 13: conclusion: Résumé de l'approche CISO Workshop (6:08)
+## <a name="part-13-conclusion-summary-of-ciso-workshop-approach-608"></a>Partie 13: conclusion: Résumé de l’approche CISO Workshop (6:08)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtITk]

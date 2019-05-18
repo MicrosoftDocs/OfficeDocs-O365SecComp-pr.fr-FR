@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,26 +14,26 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: Cette rubrique fournit des réponses aux questions fréquemment posées concernant la protection contre le courrier indésirable. Les réponses s'appliquent aux clients de Microsoft Exchange Online et Exchange Online Protection (EOP).
-ms.openlocfilehash: fa2709c995ff9ef83213b86e079a778c61bef3a2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9ea57d34e14697a0dec9005a7377f320ac53ed81
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242492"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152376"
 ---
 # <a name="anti-spam-protection-faq"></a>Forum Aux Questions sur la protection anti-courrier indésirable
 
 Cette rubrique fournit des réponses aux questions fréquemment posées concernant la protection contre le courrier indésirable. Les réponses s'appliquent aux clients de Microsoft Exchange Online et Exchange Online Protection (EOP). 
   
 > [!TIP]
-> Pour obtenir des questions et des réponses sur les listes d'expéditeurs approuvés et d'expéditeurs bloqués, consultez la rubrique [Safe sender and blocked sender Lists in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md). Pour accéder à des questions et des réponses sur la mise en quarantaine, voir [FAQ sur la mise en quarantaine](quarantine-faq.md). 
+> Pour obtenir des questions et des réponses sur les listes d’expéditeurs approuvés et d’expéditeurs bloqués, consultez la rubrique [Safe sender and blocked sender Lists in Exchange Online](safe-sender-and-blocked-sender-lists-faq.md). Pour accéder à des questions et des réponses sur la mise en quarantaine, voir [FAQ sur la mise en quarantaine](quarantine-faq.md). 
   
  **Q. Par défaut, qu'arrive-t-il à un message identifié comme courrier indésirable ?**
   
 R. **Pour les messages entrants :** L'essentiel du courrier indésirable est supprimé par filtrage des connexions, sur la base de l'adresse IP de l'expéditeur. Le service inspecte ensuite le contenu du message. Par défaut, le courrier indésirable filtré sur le contenu est envoyé au dossier Courrier indésirable du destinataire. Vous pouvez modifier ce comportement. Par exemple, vous pouvez mettre les messages de courrier indésirable en quarantaine en configurant la stratégie de filtrage de contenu. 
   
 > [!IMPORTANT]
-> Pour les clients autonomes EOP: afin de s'assurer que l'action **déplacer le message vers le dossier** courrier indésirable fonctionnera avec des boîtes aux lettres locales, vous devez configurer deux règles de flux de messagerie Exchange (également appelées règles de transport) sur vos serveurs locaux pour détecter en-têtes de courrier indésirable ajoutés par EOP. Pour plus d'informations, consultez la rubrique [Vérification de l'acheminement du courrier indésirable vers le dossier Courrier indésirable de chaque utilisateur](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
+> Pour les clients autonomes EOP: afin de s’assurer que l’action **déplacer le message vers le dossier** courrier indésirable fonctionnera avec des boîtes aux lettres locales, vous devez configurer deux règles de flux de messagerie Exchange (également appelées règles de transport) sur vos serveurs locaux pour détecter en-têtes de courrier indésirable ajoutés par EOP. Pour plus d'informations, consultez la rubrique [Vérification de l'acheminement du courrier indésirable vers le dossier Courrier indésirable de chaque utilisateur](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
  **Pour les messages sortants :** le message est routé par le pool de remise à risque plus élevé ou est retourné et non remis. Dans ce cas, l'expéditeur doit recevoir un message de notification d'état de remise (DSN) indiquant que le message n'a pas pu être remis. 
   
@@ -71,7 +71,7 @@ R. Les messages de courrier indésirable et de courrier non indésirable peuvent
   
  **Q. Puis-je obtenir des rapports sur le courrier indésirable ?**
   
-A. Oui, par exemple, vous pouvez obtenir un rapport de détection de courrier indésirable dans le centre d'administration 365 de Microsoft. Ce rapport indique le volume du courrier indésirable sous forme de nombre de messages uniques. Pour plus d'informations sur les rapports, consultez les liens suivants :
+A. Oui, par exemple, vous pouvez obtenir un rapport de détection de courrier indésirable dans le centre d’administration 365 de Microsoft. Ce rapport indique le volume du courrier indésirable sous forme de nombre de messages uniques. Pour plus d'informations sur les rapports, consultez les liens suivants :
   
 Clients Exchange Online: [surveillance, création de rapports et suivi des messages dans Exchange Online](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   
@@ -109,7 +109,7 @@ R. Les instructions ci-dessous constituent les meilleures pratiques pour l'envoi
   
 1. **Le domaine d'envoi du message électronique doit se résoudre dans DNS.**
     
-    Par exemple, si l'expéditeur est utilisateur@example.com, la résolution du domaine example.com est l'adresse IP 192.0.43.10. Si aucun enregistrement A ou enregistrement MX ne correspond au domaine d’envoi dans DNS, le service route le message via son pool de remise à risque plus élevé, que le contenu du message soit du courrier indésirable ou non. Pour plus d'informations sur le pool de remise à risque plus élevé, consultez la rubrique [pool de remise à haut risque pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md). 
+    Par exemple, si l'expéditeur est utilisateur@example.com, la résolution du domaine example.com est l'adresse IP 192.0.43.10. Si aucun enregistrement A ou enregistrement MX ne correspond au domaine d’envoi dans DNS, le service route le message via son pool de remise à risque plus élevé, que le contenu du message soit du courrier indésirable ou non. Pour plus d’informations sur le pool de remise à risque plus élevé, consultez la rubrique [pool de remise à haut risque pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md). 
     
 2. **L'adresse IP d'envoi du serveur de courrier sortant doit avoir une entrée DNS inversée (PTR).**
     

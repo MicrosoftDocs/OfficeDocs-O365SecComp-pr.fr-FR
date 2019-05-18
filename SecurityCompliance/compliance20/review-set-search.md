@@ -1,10 +1,10 @@
 ---
-title: Interroger les données d’un ensemble de révision
+title: Interroger les données d’un jeu à réviser
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 395cc01238f4dbc91de5dd652e10121f5e0cc926
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: 446f3f2588a79cb328476db490f1f555448b5ce7
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33527153"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154006"
 ---
-# <a name="query-the-data-in-a-review-set"></a>Interroger les données d’un ensemble de révision
+# <a name="query-the-data-in-a-review-set"></a>Interroger les données d’un jeu à réviser
 
 Dans la plupart des cas, il est utile de pouvoir approfondir ce qui se trouve dans un ensemble de révision et de les organiser de manière plus efficace. Les requêtes au sein d’un ensemble de révision vous permettent de le faire en vous permettant de vous concentrer sur un sous-ensemble de documents qui répondent aux critères définis simultanément.
 

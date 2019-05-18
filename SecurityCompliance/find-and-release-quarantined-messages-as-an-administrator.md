@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 6/16/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,18 +14,18 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: Cette rubrique explique comment les administrateurs Exchange Online et Exchange Online Protection (EOP) peuvent rechercher, récupérer et signaler les messages mis en quarantaine dans le Centre d'administration Exchange (CAE).
-ms.openlocfilehash: a973d3a3b1875ed1ba691f91c1c23373ac8d6694
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7ac65ae5b4225e56861dacacdd61bf5a237f7ca8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255260"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154566"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Rechercher et débloquer les messages mis en quarantaine en tant qu’administrateur
 
-Cette rubrique explique comment les administrateurs Exchange Online et Exchange Online Protection (EOP) peuvent rechercher, récupérer et signaler les messages mis en quarantaine dans le Centre d'administration Exchange (CAE). Office 365 dirige les messages en quarantaine soit parce qu'ils ont été identifiés comme courrier indésirable, soit qu'ils correspondent à une règle de flux de messagerie (également appelée règle de transport). 
+Cette rubrique explique comment les administrateurs Exchange Online et Exchange Online Protection (EOP) peuvent rechercher, récupérer et signaler les messages mis en quarantaine dans le Centre d'administration Exchange (CAE). Office 365 dirige les messages en quarantaine soit parce qu’ils ont été identifiés comme courrier indésirable, soit qu’ils correspondent à une règle de flux de messagerie (également appelée règle de transport). 
   
-Utilisez le centre &amp; de sécurité conformité au lieu du centre d'administration Exchange pour effectuer l'une de ces tâches, ainsi que pour afficher et utiliser les messages qui ont été envoyés en quarantaine, car ils contiennent des programmes malveillants. Pour plus d'informations, consultez la rubrique [mise en quarantaine des messages électroniques dans Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
+Utilisez le centre &amp; de sécurité conformité au lieu du centre d’administration Exchange pour effectuer l’une de ces tâches, ainsi que pour afficher et utiliser les messages qui ont été envoyés en quarantaine, car ils contiennent des programmes malveillants. Pour plus d’informations, consultez la rubrique [mise en quarantaine des messages électroniques dans Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
   
 Les messages mis en quarantaine sont répertoriés sur la page de **mise en quarantaine** dans le CAE. Par défaut, les messages sont triés du plus récent au plus ancien sur la base du champ **REÇU**. Les valeurs **EXPÉDITEUR**, **OBJET** et **EXPIRE** sont également indiquées pour chaque message. Vous pouvez ordonner les messages en fonction des valeurs de l'un ou l'autre de ces champs en cliquant sur leur en-tête. Pour inverser l'ordre, cliquez sur l'en-tête de colonne une seconde fois. La page de **mise en quarantaine** affiche un maximum de 500 messages. 
   
@@ -38,7 +38,7 @@ Vous pouvez consulter la liste de tous les messages mis en quarantaine, ou reche
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 <a name="sectionSection0"> </a>
 
-- Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée «quarantaine» dans la rubrique [autorisations des fonctionnalités dans Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
+- Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l’entrée «quarantaine» dans la rubrique [autorisations des fonctionnalités dans Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
     
 - Vous pouvez diffuser ou signaler plusieurs messages à la fois sur la page de **mise en quarantaine**. Vous pouvez également créer un script Windows PowerShell à distance pour accomplir cette tâche. Utilisez la cmdlet [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) pour rechercher des messages et la cmdlet [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) pour les diffuser. 
     
@@ -69,9 +69,9 @@ Dans le centre d'administration Exchange, une recherche avancée vous permet de 
 6. **Expire** Vous pouvez indiquer que le message sera supprimé de la quarantaine au cours des prochaines 24 heures ( **Aujourd'hui**), au cours des prochaines 48 heures ( **2 prochains jours**), au cours de la semaine à venir ( **7 prochains jours**) ou vous pouvez sélectionner un intervalle de temps personnalisé au cours duquel le message sera supprimé de la quarantaine.
     
     > [!IMPORTANT]
-    > Par défaut, les messages de courrier indésirable mis en quarantaine sont conservés en quarantaine pendant 15 jours, tandis que les messages mis en quarantaine qui correspondent à une règle de flux de messagerie sont conservés en quarantaine pendant 7 jours. Une fois cette période écoulée, Office 365 supprime les messages qui ne peuvent ensuite plus être récupérés. La période de rétention des messages mis en quarantaine qui correspondent à une règle de flux de messagerie n'est pas configurable. Vous pouvez raccourcir la période de rétention à l'aide du paramètre **Conserver les courriers indésirables pendant (jours)** dans vos stratégies de filtrage du contenu. Pour plus d'informations, consultez la rubrique [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md). 
+    > Par défaut, les messages de courrier indésirable mis en quarantaine sont conservés en quarantaine pendant 15 jours, tandis que les messages mis en quarantaine qui correspondent à une règle de flux de messagerie sont conservés en quarantaine pendant 7 jours. Une fois cette période écoulée, Office 365 supprime les messages qui ne peuvent ensuite plus être récupérés. La période de rétention des messages mis en quarantaine qui correspondent à une règle de flux de messagerie n’est pas configurable. Vous pouvez raccourcir la période de rétention à l'aide du paramètre **Conserver les courriers indésirables pendant (jours)** dans vos stratégies de filtrage du contenu. Pour plus d'informations, consultez la rubrique [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md). 
   
-7. **Type (type** ) Vous pouvez spécifier s'il faut rechercher les messages mis en quarantaine identifiés comme **courrier**indésirable ou rechercher les messages qui correspondent à une règle de flux de messagerie (**règle de transport**).
+7. **Type (type** ) Vous pouvez spécifier s’il faut rechercher les messages mis en quarantaine identifiés comme **courrier**indésirable ou rechercher les messages qui correspondent à une règle de flux de messagerie (**règle de transport**).
     
 3. Pour lancer la recherche avancée, cliquez sur **OK**. 
     
@@ -89,7 +89,7 @@ Après avoir localisé un message spécifique sur la page de **mise en quarantai
     
     Les valeurs d' **État du message** sont les suivantes : 
     
-  - **Type (type** ) Indique si le message a été identifié comme **courrier** indésirable ou s'il correspond à une règle de flux de messagerie (**règle de transport**).
+  - **Type (type** ) Indique si le message a été identifié comme **courrier** indésirable ou s’il correspond à une règle de flux de messagerie (**règle de transport**).
     
   - **Expire** Date à laquelle le message sera supprimé de la quarantaine. 
     
@@ -144,7 +144,7 @@ Si vous souhaitez diffuser des messages à des destinataires, vos options sont l
   
 Cliquez sur **Diffuser le message sélectionné et autoriser l'expéditeur** dans la liste déroulante. 
     
-3. La boîte de dialogue **Diffuser le message et autoriser l'expéditeur** s'ouvre. Si vous voulez signaler le message à Microsoft, cliquez sur **Diffuser et autoriser**. Le message est diffusé à tous les destinataires auxquels il est adressé et tous les futurs messages provenant de cet expéditeur sont autorisés. Toutefois, si ce message a été mis en quarantaine en raison d'une règle de flux de messagerie ou d'un expéditeur bloqué, l'expéditeur continuera à être bloqué pour les futurs messages. 
+3. La boîte de dialogue **Diffuser le message et autoriser l'expéditeur** s'ouvre. Si vous voulez signaler le message à Microsoft, cliquez sur **Diffuser et autoriser**. Le message est diffusé à tous les destinataires auxquels il est adressé et tous les futurs messages provenant de cet expéditeur sont autorisés. Toutefois, si ce message a été mis en quarantaine en raison d’une règle de flux de messagerie ou d’un expéditeur bloqué, l’expéditeur continuera à être bloqué pour les futurs messages. 
     
 ### <a name="release-a-quarantined-message-to-specific-recipients-without-reporting-it-as-a-false-positive"></a>Diffuser un message en quarantaine à des destinataires spécifiques sans le signaler comme faux positif
 <a name="Releasequarantinedmessagetospecificrecipientswithoutreportingasfalsepositive"> </a>
@@ -192,7 +192,7 @@ Si vous cliquez sur l'icône **Actualiser**![Icône Actualiser](media/ITPro-EAC-
   
 Si vous cliquez sur l'icône **Actualiser**![Icône Actualiser](media/ITPro-EAC-RefreshIcon.gif) pour actualiser vos données, puis que vous double-cliquez sur le message, vous devriez voir que celui-ci a été libéré et envoyé aux destinataires appropriés 
   
-## <a name="for-more-information"></a>Pour plus d'informations
+## <a name="for-more-information"></a>Pour plus d’informations
 <a name="sectionSection4"> </a>
 
 [FAQ sur la mise en quarantaine](quarantine-faq.md)

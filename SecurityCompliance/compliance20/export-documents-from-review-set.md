@@ -1,10 +1,10 @@
 ---
-title: Exporter des documents à partir d’un ensemble de révision
+title: Exporter des documents d’un jeu à réviser
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ea9db6d95b003b5a741ae8a235fc5f06087f87d6
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: 14efa58305e1963aa43c0c94fb208e5391c87119
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33527159"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155066"
 ---
-# <a name="export-documents-from-a-review-set"></a>Exporter des documents à partir d’un ensemble de révision
+# <a name="export-documents-from-a-review-set"></a>Exporter des documents d’un jeu à réviser
 
 L’exportation de contenu à partir d’un jeu de révision peut être effectuée à l’aide de trois méthodes différentes:
 

@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft offre une assistance pour EOP à divers emplacements et via plusieurs méthodes, y compris via des options de support autonome et de support assisté.
-ms.openlocfilehash: 0df74ea3d517a08578099eb03119b23690de655a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4343643d7c1c69d21b45d3a46ac8ac6dba42c3d1
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256242"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150326"
 ---
 # <a name="help-and-support-for-eop"></a>Aide et support pour EOP
 
@@ -37,7 +37,7 @@ Page relative à la [procédure pas à pas relative au flux de messagerie Office
   
 ## <a name="assisted-support-from-microsoft"></a>Support assisté de Microsoft
 
-Vous pouvez obtenir de l'aide auprès de Microsoft en lançant une nouvelle demande de service dans le centre d'administration 365 de Microsoft ou en appelant le téléphone. Les abonnés au support Premier bénéficient d’une assistance supplémentaire.
+Vous pouvez obtenir de l’aide auprès de Microsoft en lançant une nouvelle demande de service dans le centre d’administration 365 de Microsoft ou en appelant le téléphone. Les abonnés au support Premier bénéficient d’une assistance supplémentaire.
   
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Assistance pour les abonnés au support Microsoft Premier
 
@@ -47,7 +47,7 @@ Pour plus d'informations sur la façon dont le support Premier peut aider votre 
   
 ### <a name="ask-for-help-on-the-web"></a>Demander une assistance sur le web
 
-1. Connectez-vous au centre d'administration Microsoft 365.
+1. Connectez-vous au centre d’administration Microsoft 365.
     
 2. Accédez à **Support** \> **Demander une assistance clientèle** \> **Nouvelle demande de service**.
     
@@ -55,7 +55,7 @@ Pour plus d'informations sur la façon dont le support Premier peut aider votre 
     
 ### <a name="ask-for-help-on-the-telephone"></a>Demander une assistance téléphonique
 
-1. Connectez-vous au centre d'administration Microsoft 365.
+1. Connectez-vous au centre d’administration Microsoft 365.
     
 2. Pour des problèmes d'ordre général concernant le produit, accédez à **Support** \> **Demander une assistance clientèle** \> **Appeler le support technique**.
     

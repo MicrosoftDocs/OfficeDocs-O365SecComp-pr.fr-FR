@@ -1,22 +1,22 @@
 ---
-title: Corriger l’adresse de domaine de l’expéditeur
+title: Informations sur la correction du domaine de l’expéditeur
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Les administrateurs peuvent en savoir plus sur la rubrique Fix sender Domain Insight dans le tableau de bord du flux de messagerie dans le centre de sécurité & Compliance Center.
-ms.openlocfilehash: a285a1c744ca540cc58b9408b4ee31e768f89479
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+ms.openlocfilehash: 181f224064b5f31fd17c348cc4547826fbcd29a9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868562"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158706"
 ---
-# <a name="fix-sender-domain-insight"></a>Corriger l’adresse de domaine de l’expéditeur
+# <a name="fix-sender-domain-insight"></a>Informations sur la correction du domaine de l’expéditeur
 
 Office 365 nécessite des messages envoyés depuis des environnements de messagerie internes locaux vers Office 365 pour répondre à certains critères de sécurité:
 

@@ -3,7 +3,7 @@ title: Chiffrement de messages avancé Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Le chiffrement de messages avancé dans Office 365 aide les organisations à respecter leurs obligations de conformité en permettant aux administrateurs d’expirer et de révoquer l’accès par le biais d’un portail Web Office 365 à des e-mails chiffrés.
-ms.openlocfilehash: 5559a2bca4cd804cfcfdf547146eeb416252ca5f
-ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
+ms.openlocfilehash: dcef5f861711acffb8359063373cd90d4b122d88
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33834903"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157647"
 ---
 # <a name="office-365-advanced-message-encryption"></a>Chiffrement de messages avancé Office 365
 

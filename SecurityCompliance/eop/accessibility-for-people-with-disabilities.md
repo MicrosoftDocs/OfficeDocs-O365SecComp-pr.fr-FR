@@ -4,21 +4,21 @@ ms.author: scotv
 author: scotvidican
 manager: laurawi
 ms.date: 12/15/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365_Hybrid
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
 description: Microsoft s'engage à faciliter l'utilisation de ses produits et services pour tous.
-ms.openlocfilehash: 271383361ee99f6959e81a1f38dea4b200c54fb5
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8cf86f2ce4aa176baa0a151edea93a247a2113c7
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257042"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154706"
 ---
-# <a name="accessibility-for-people-with-disabilities"></a>Accessibilité aux personnes handicapées
+# <a name="accessibility-for-people-with-disabilities"></a>Accessibilité pour les personnes présentant un handicap
 
 ## <a name="accessibility-features-of-exchange"></a>Fonctionnalités d'accessibilité d'Exchange
 
@@ -28,7 +28,7 @@ Les fonctionnalités suivantes visent à faciliter l’accès des personnes à m
     
 - [Raccourcis clavier dans Outlook sur le web](https://go.microsoft.com/fwlink/p/?LinkId=268079)
     
-En outre, certaines fonctionnalités et utilitaires d'accessibilité de Windows peuvent également constituer une aide pour les utilisateurs d'Exchange présentant un handicap. Les modifications des tailles et couleurs Windows PowerShell offrent également des options d'accessibilité dans le cadre de l'utilisation de l'environnement de ligne de commande Exchange Management Shell. Pour plus d'informations sur les options d'accessibilité de Windows PowerShell, consultez la rubrique [Accessibility in Windows powershell 2,0 ISE](https://go.microsoft.com/fwlink/p/?LinkId=258240).
+En outre, certaines fonctionnalités et utilitaires d'accessibilité de Windows peuvent également constituer une aide pour les utilisateurs d'Exchange présentant un handicap. Les modifications des tailles et couleurs Windows PowerShell offrent également des options d'accessibilité dans le cadre de l'utilisation de l'environnement de ligne de commande Exchange Management Shell. Pour plus d’informations sur les options d’accessibilité de Windows PowerShell, consultez la rubrique [Accessibility in Windows powershell 2,0 ISE](https://go.microsoft.com/fwlink/p/?LinkId=258240).
   
 ## <a name="accessibility-features-of-exchange-help"></a>Fonctionnalités d'accessibilité d'Aide de Microsoft Exchange
 
@@ -73,7 +73,7 @@ Si vous êtes sourd ou malentendant, un accès complet au service des produits M
     
 Les services de support technique Microsoft sont soumis aux tarifs, termes et conditions valables au moment de leur utilisation. Pour plus d'informations, voir [Support technique de Microsoft](https://go.microsoft.com/fwlink/p/?linkId=18142).
   
-## <a name="for-more-information"></a>Pour plus d'informations
+## <a name="for-more-information"></a>Pour plus d’informations
 
 Pour plus d'informations sur la manière dont la technologie d'accessibilité pour les ordinateurs contribue à faciliter la vie des personnes à mobilité réduite, consultez la page sur l'[accessibilité de Microsoft](http://go.microsoft.com/fwlink/p/?linkId=18139). 
   

@@ -3,7 +3,7 @@ title: Utiliser des règles de flux de messagerie pour configurer le filtrage du
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,21 +13,21 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: Les administrateurs peuvent apprendre à utiliser des règles de flux de messagerie dans Exchange Online Protection pour le filtrage de courrier en nombre.
-ms.openlocfilehash: 43f0af6fe41bc7f8f4a62d0d87dbd825fb868f7b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8ec0f8385393cfd573191b75dd56944f3a6123df
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267007"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157876"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>Utiliser des règles de flux de messagerie pour configurer le filtrage du courrier en nombre dans Exchange Online Protection
 
 Vous pouvez définir des filtres de contenu à l'échelle de l'entreprise pour le courrier indésirable et le courrier en masse à l'aide des stratégies de filtrage de contenu du courrier indésirable par défaut. Consultez la rubrique [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md) et [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy?view=exchange-ps) sur la façon de définir les stratégies de filtrage de contenu. 
   
-Si vous souhaitez utiliser davantage d'options pour filtrer les messages en masse, vous pouvez créer des règles de flux de messagerie (également appelées règles de transport) pour rechercher des modèles de texte ou des expressions fréquemment trouvées dans les messages électroniques en masse. Tout message contenant ces caractéristiques sera marqué comme courrier indésirable. L'utilisation de ces règles peut aider à réduire la quantité de messages électroniques indésirables que reçoit votre organisation.
+Si vous souhaitez utiliser davantage d’options pour filtrer les messages en masse, vous pouvez créer des règles de flux de messagerie (également appelées règles de transport) pour rechercher des modèles de texte ou des expressions fréquemment trouvées dans les messages électroniques en masse. Tout message contenant ces caractéristiques sera marqué comme courrier indésirable. L'utilisation de ces règles peut aider à réduire la quantité de messages électroniques indésirables que reçoit votre organisation.
 
 > [!IMPORTANT]
-> Avant de créer les règles de flux de messagerie décrites dans cette rubrique, nous vous recommandons de lire [d'abord la différence entre le courrier indésirable et le courrier électronique en](what-s-the-difference-between-junk-email-and-bulk-email.md) masse, ainsi que les [valeurs de niveau de réclamation en bloc](bulk-complaint-level-values.md).<br>Les procédures suivantes permettent de marquer un message comme indésirable à l'échelle de votre organisation toute entière. Toutefois, vous pouvez ajouter une condition afin de n'appliquer ces règles qu'à des destinataires spécifiques de votre organisation. De cette façon, les paramètres de filtrage restrictif des messages électroniques ne s'appliqueront qu'à quelques utilisateurs particulièrement ciblés et le reste de vos utilisateurs (qui reçoivent en général les messages électroniques en masse auxquels ils se sont inscrits) ne seront pas concernés. 
+> Avant de créer les règles de flux de messagerie décrites dans cette rubrique, nous vous recommandons de lire [d’abord la différence entre le courrier indésirable et le courrier électronique en](what-s-the-difference-between-junk-email-and-bulk-email.md) masse, ainsi que les [valeurs de niveau de réclamation en bloc](bulk-complaint-level-values.md).<br>Les procédures suivantes permettent de marquer un message comme indésirable à l'échelle de votre organisation toute entière. Toutefois, vous pouvez ajouter une condition afin de n'appliquer ces règles qu'à des destinataires spécifiques de votre organisation. De cette façon, les paramètres de filtrage restrictif des messages électroniques ne s'appliqueront qu'à quelques utilisateurs particulièrement ciblés et le reste de vos utilisateurs (qui reçoivent en général les messages électroniques en masse auxquels ils se sont inscrits) ne seront pas concernés. 
   
 ## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-text-patterns"></a>Créer une règle de flux de messagerie pour filtrer les messages électroniques en masse en fonction des modèles de texte
 
@@ -65,7 +65,7 @@ Si vous souhaitez utiliser davantage d'options pour filtrer les messages en mass
     
    - `click (here to|the) unsubscribe`
     
-   La liste ci-dessus n'est pas un ensemble exhaustif d'expressions régulières trouvées dans les messages électroniques en masse; vous pouvez en ajouter ou en supprimer autant que nécessaire. Toutefois, ils constituent un bon point de départ.<br>La recherche de mots ou de modèles de texte dans l'objet ou les autres champs d'en-tête du message se produit *après* que le message a été décodé à partir de la méthode de codage de transfert de contenu MIME qui a été utilisée pour transmettre le message binaire entre les serveurs SMTP dans le texte ASCII. Vous ne pouvez pas utiliser de conditions ou d’exceptions pour rechercher les valeurs codées brutes (en règle générale, en base 64) dans l’objet ou d’autres champs d’en-tête des messages. 
+   La liste ci-dessus n’est pas un ensemble exhaustif d’expressions régulières trouvées dans les messages électroniques en masse; vous pouvez en ajouter ou en supprimer autant que nécessaire. Toutefois, ils constituent un bon point de départ.<br>La recherche de mots ou de modèles de texte dans l’objet ou les autres champs d’en-tête du message se produit *après* que le message a été décodé à partir de la méthode de codage de transfert de contenu MIME qui a été utilisée pour transmettre le message binaire entre les serveurs SMTP dans le texte ASCII. Vous ne pouvez pas utiliser de conditions ou d’exceptions pour rechercher les valeurs codées brutes (en règle générale, en base 64) dans l’objet ou d’autres champs d’en-tête des messages. 
     
 6. Sous **Effectuer les opérations suivantes**, sélectionnez **Modifier les propriétés des messages** \> **Définir le seuil de probabilité de courrier indésirable (SCL)**.
     
@@ -73,7 +73,7 @@ Si vous souhaitez utiliser davantage d'options pour filtrer les messages en mass
     
    La définition du SCL sur 5 ou 6 déclenche l'action **Courrier indésirable**, tandis qu'une définition sur 9 déclenche l'action **Courrier indésirable à niveau de confiance élevé**, comme configuré dans la stratégie de filtrage du contenu. Le service effectue l'action définie dans la stratégie de filtrage de contenu. L'action par défaut consiste à placer le message dans le dossier Courrier indésirable des destinataires, mais différentes actions peuvent être configurées, comme décrit dans [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md).
     
-   Si votre action configurée consiste à mettre le message en quarantaine au lieu de l'envoyer au dossier de courrier inDésirable des destinataires, le message est envoyé à la mise en quarantaine de l'administrateur en tant que correspondance de règle de flux de messagerie et n'est pas disponible dans le cadre de la mise en quarantaine du courrier indésirable de l'utilisateur final ou via l'utilisateur final notifications de courrier indésirable. 
+   Si votre action configurée consiste à mettre le message en quarantaine au lieu de l’envoyer au dossier de courrier indésirable des destinataires, le message est envoyé à la mise en quarantaine de l’administrateur en tant que correspondance de règle de flux de messagerie et n’est pas disponible dans le cadre de la mise en quarantaine du courrier indésirable de l’utilisateur final ou via l’utilisateur final notifications de courrier indésirable. 
   
    Pour plus d'informations sur les valeurs SCL, voir [Seuils de probabilité de courrier indésirable](spam-confidence-levels.md).
     
@@ -117,7 +117,7 @@ Si vous souhaitez utiliser davantage d'options pour filtrer les messages en mass
     
    - `You are receiving this email because you are subscribed`
     
-   Cette liste n'est pas un ensemble exhaustif d'expressions trouvées dans les messages électroniques en masse; vous pouvez en ajouter ou en supprimer autant que nécessaire. Toutefois, ils constituent un bon point de départ.
+   Cette liste n’est pas un ensemble exhaustif d’expressions trouvées dans les messages électroniques en masse; vous pouvez en ajouter ou en supprimer autant que nécessaire. Toutefois, ils constituent un bon point de départ.
     
 6. Sous **Effectuer les opérations suivantes**, sélectionnez **Modifier les propriétés des messages** \> **Définir le seuil de probabilité de courrier indésirable (SCL)**.
     
@@ -125,13 +125,13 @@ Si vous souhaitez utiliser davantage d'options pour filtrer les messages en mass
     
    La définition du SCL sur 5 ou 6 déclenche l'action **Courrier indésirable**, tandis qu'une définition sur 9 déclenche l'action **Courrier indésirable à niveau de confiance élevé**, comme configuré dans la stratégie de filtrage du contenu. Le service effectue l'action définie dans la stratégie de filtrage de contenu. L'action par défaut consiste à placer le message dans le dossier Courrier indésirable des destinataires, mais différentes actions peuvent être configurées, comme décrit dans [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md).
     
-   Si votre action configurée consiste à mettre le message en quarantaine au lieu de l'envoyer au dossier de courrier inDésirable des destinataires, le message est envoyé à la mise en quarantaine de l'administrateur en tant que correspondance de règle de flux de messagerie et n'est pas disponible dans le cadre de la mise en quarantaine du courrier indésirable de l'utilisateur final ou via l'utilisateur final notifications de courrier indésirable. 
+   Si votre action configurée consiste à mettre le message en quarantaine au lieu de l’envoyer au dossier de courrier indésirable des destinataires, le message est envoyé à la mise en quarantaine de l’administrateur en tant que correspondance de règle de flux de messagerie et n’est pas disponible dans le cadre de la mise en quarantaine du courrier indésirable de l’utilisateur final ou via l’utilisateur final notifications de courrier indésirable. 
   
    Pour plus d'informations sur les valeurs SCL, voir [Seuils de probabilité de courrier indésirable](spam-confidence-levels.md).
 
 8. Enregistrez la règle.
 
-## <a name="for-more-information"></a>Pour plus d'informations
+## <a name="for-more-information"></a>Pour plus d’informations
 
 [Quelle est la différence entre courrier indésirable et message électronique en masse ?](what-s-the-difference-between-junk-email-and-bulk-email.md)
 

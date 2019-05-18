@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: Voici quelques éléments que vous devez connaître avant de commencer à utiliser EOP.
-ms.openlocfilehash: fdaeba4f38d2e7676b336519f6d04649ee9d8137
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3bf4874e3ab445813ee03de4def23ed12f66f537
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256462"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154666"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection 
 
@@ -47,13 +47,13 @@ Le contenu de l’aide pour les administrateurs d’EOP se compose des catégori
     
 - [Meilleures pratiques de configuration d'EOP](best-practices-for-configuring-eop.md) Décrit les paramètres de configuration recommandés et les éléments à prendre en compte une fois le service configuré et mis en service. 
     
-- [Stratégie et conformité de la messagerie dans EOP](messaging-policy-and-compliance-in-eop.md) Décrit comment utiliser des règles de flux de messagerie Exchange (également appelées règles de transport) pour appliquer des stratégies et des réglementations d'entreprise spécifiques, et comment utiliser les rapports d'audit pour suivre les modifications apportées à la configuration du service. 
+- [Stratégie et conformité de la messagerie dans EOP](messaging-policy-and-compliance-in-eop.md) Décrit comment utiliser des règles de flux de messagerie Exchange (également appelées règles de transport) pour appliquer des stratégies et des réglementations d’entreprise spécifiques, et comment utiliser les rapports d’audit pour suivre les modifications apportées à la configuration du service. 
     
 - [Anti-Spam and Anti-Malware Protection](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx) Décrit la filtrage du courrier indésirable et des programmes malveillants et ainsi que la procédure de personnalisation du filtrage afin de répondre aux besoins de votre organisation. Décrit également les tâches que les administrateurs et les utilisateurs finaux peuvent effectuer sur les messages en quarantaine. 
     
 - [Création de rapports et suivi des messages dans Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md) Décrit les outils de création de rapports et de résolution des problèmes disponibles. 
     
-- [Centre d'administration Exchange dans Exchange Online Protection](../exchange-admin-center-in-exchange-online-protection-eop.md) Indique comment accéder à l'interface de gestion du centre d'administration Exchange pour gérer votre service EOP et y accéder. 
+- [Centre d’administration Exchange dans Exchange Online Protection](../exchange-admin-center-in-exchange-online-protection-eop.md) Indique comment accéder à l’interface de gestion du centre d’administration Exchange pour gérer votre service EOP et y accéder. 
     
 - [PowerShell dans Exchange Online Protection](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx) Fournit des informations sur PowerShell à distance qui vous permet de gérer votre service EOP à partir de la ligne de commande. 
     
@@ -70,7 +70,7 @@ Le contenu de l'aide permettant de guider les utilisateurs finaux d'EOP dans la 
     
 - [Submitting malware and non-malware to Microsoft for analysis](../submitting-malware-and-non-malware-to-microsoft-for-analysis.md) Décrit les raisons pour lesquelles les utilisateurs finaux peuvent soumettre des programmes malveillants sans que ceux-ci soient bloqués par les filtres ou soumettre un fichier qui sera identifié à tort comme étant un programme malveillant. 
     
-- Les utilisateurs finaux peuvent ajouter des utilisateurs ou des domaines spécifiques à une liste d'expéditeurs approuvés ou à une liste d'expéditeurs bloqués en configurant leurs paramètres de courrier indésirable dans Outlook ou Outlook sur le Web. Notez que les messages envoyés par des expéditeurs bloqués sont marqués comme courrier indésirable, et non rejetés, ce qui signifie qu'ils peuvent être récupérés à partir du dossier courrier inDésirable ou mis en quarantaine (en fonction de l'emplacement où votre administrateur a configuré le service pour envoyer du courrier indésirable). Pour plus d'informations, consultez [la rubrique utiliser le complément de message de rapport](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+- Les utilisateurs finaux peuvent ajouter des utilisateurs ou des domaines spécifiques à une liste d’expéditeurs approuvés ou à une liste d’expéditeurs bloqués en configurant leurs paramètres de courrier indésirable dans Outlook ou Outlook sur le Web. Notez que les messages envoyés par des expéditeurs bloqués sont marqués comme courrier indésirable, et non rejetés, ce qui signifie qu’ils peuvent être récupérés à partir du dossier courrier indésirable ou mis en quarantaine (en fonction de l’emplacement où votre administrateur a configuré le service pour envoyer du courrier indésirable). Pour plus d’informations, consultez [la rubrique utiliser le complément de message de rapport](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
     
 - [Aide et support pour EOP](help-and-support-for-eop.md) Fournit des informations sur la manière d'obtenir de l'aide et un support technique. 
     

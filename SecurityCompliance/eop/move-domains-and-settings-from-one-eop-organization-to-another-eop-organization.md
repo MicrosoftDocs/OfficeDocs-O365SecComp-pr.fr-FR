@@ -4,25 +4,25 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: L'évolution des besoins professionnels peut parfois imposer de séparer une organisation Microsoft Exchange Online Protection (EOP) (locataire) en deux organisations distinctes, de fusionner deux organisations en une seule ou de déplacer vos domaines et vos paramètres EOP d'une organisation vers une autre.
-ms.openlocfilehash: 976594a3f28f2d120270dfabbf708ecb5815ad5c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: af773b1ecd3006f8751e353bb5233522f0dbad42
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256296"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150116"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>Déplacement de domaines et de paramètres d’une organisation EOP vers une autre organisation EOP
 
 L'évolution des besoins professionnels peut parfois imposer de séparer une organisation Microsoft Exchange Online Protection (EOP) (locataire) en deux organisations distinctes, de fusionner deux organisations en une seule ou de déplacer vos domaines et vos paramètres EOP d'une organisation vers une autre. Le déplacement d'une organisation EOP vers une deuxième organisation EOP peut être difficile, mais avec quelques scripts Windows PowerShell à distance basiques et un peu de préparation, cette opération peut être réalisée dans une fenêtre de maintenance relativement courte. 
   
 > [!NOTE]
->  Les réglages ne peuvent être déplacés de manière fiable que depuis une organisation EOP (standard) autonome vers une autre organisation EOP standard ou vers une organisation avec licence d'accès client Exchange Enterprise avec services (EOP Premium), ou depuis une organisation EOP Premium vers une autre organisation EOP premium. Étant donné que certaines fonctionnalités Premium ne sont pas prises en charge dans les organisations de norme EOP, il se peut que les déplacements d'une organisation EOP Premium vers une organisation EOP standard ne réussissent pas. >  Les présentes instructions ne concernent que les organisations à filtrage EOP uniquement. Le déplacement depuis une organisation Exchange Online vers une autre organisation Exchange Online pose des problèmes supplémentaires. Les organisations Exchange Online ne sont pas concernées par ces instructions. 
+>  Les réglages ne peuvent être déplacés de manière fiable que depuis une organisation EOP (standard) autonome vers une autre organisation EOP standard ou vers une organisation avec licence d'accès client Exchange Enterprise avec services (EOP Premium), ou depuis une organisation EOP Premium vers une autre organisation EOP premium. Étant donné que certaines fonctionnalités Premium ne sont pas prises en charge dans les organisations de norme EOP, il se peut que les déplacements d’une organisation EOP Premium vers une organisation EOP standard ne réussissent pas. >  Les présentes instructions ne concernent que les organisations à filtrage EOP uniquement. Le déplacement depuis une organisation Exchange Online vers une autre organisation Exchange Online pose des problèmes supplémentaires. Les organisations Exchange Online ne sont pas concernées par ces instructions. 
   
 Dans l'exemple suivant, Contoso, Ltd. a fusionné avec Contoso Suites. L'image suivante illustre le processus de déplacement des domaines, des utilisateurs et groupes de messagerie, et des paramètres depuis l'organisation EOP source (contoso.onmicrosoft.com) vers l'organisation EOP cible (contososuites.onmicrosoft.com) :
   
@@ -49,7 +49,7 @@ Afin de recréer l’organisation source dans l’organisation cible, veillez à
 - Règles de flux de messagerie (également appelées règles de transport)
     
     > [!NOTE]
-    > La prise en charge de l'applet de commande pour l'exportation et l'importation de la règle de flux de messagerie n'est actuellement prise en charge que pour les plans d'abonnement d'EOP Premium. 
+    > La prise en charge de l’applet de commande pour l’exportation et l’importation de la règle de flux de messagerie n’est actuellement prise en charge que pour les plans d’abonnement d’EOP Premium. 
   
 Le moyen le plus simple pour collecter tous vos paramètres consiste à utiliser la session Windows PowerShell à distance. Pour vous connecter à EOP à l'aide de la session Windows PowerShell à distance, consultez la rubrique [Connexion à Exchange Online Protection à l'aide d'une session PowerShell distante](http://technet.microsoft.com/library/054e0fd7-d465-4572-93f8-a00a9136e4d1.aspx).
   
@@ -65,7 +65,7 @@ mkdir C:\EOP\Export
 cd C:\EOP\Export
 ```
 
-Le script suivant peut être utilisé pour collecter tous les utilisateurs de messagerie, les groupes, les paramètres de blocage du courrier indésirable, les paramètres anti-programme malveillant, les connecteurs et les règles de flux de messagerie de l'organisation source. Copiez-collez le texte suivant dans un éditeur de texte comme le Bloc-notes, enregistrez le fichier sous le nom Source_EOP_Settings.ps1 dans le répertoire Export que vous venez de créer et exécutez la commande suivante :
+Le script suivant peut être utilisé pour collecter tous les utilisateurs de messagerie, les groupes, les paramètres de blocage du courrier indésirable, les paramètres anti-programme malveillant, les connecteurs et les règles de flux de messagerie de l’organisation source. Copiez-collez le texte suivant dans un éditeur de texte comme le Bloc-notes, enregistrez le fichier sous le nom Source_EOP_Settings.ps1 dans le répertoire Export que vous venez de créer et exécutez la commande suivante :
   
 ```Powershell
 & "C:\EOP\Export\Source_EOP_Settings.ps1"
@@ -171,9 +171,9 @@ Foreach ($domain in $Domains) {
 
 ```
 
-À présent, vous pouvez consulter et collecter les informations du centre d'administration Microsoft 365 de votre organisation cible afin de pouvoir vérifier rapidement vos domaines lorsque le temps est le suivant:
+À présent, vous pouvez consulter et collecter les informations du centre d’administration Microsoft 365 de votre organisation cible afin de pouvoir vérifier rapidement vos domaines lorsque le temps est le suivant:
   
-1. Connectez-vous au centre d'administration Microsoft 365 [https://portal.office.com](https://portal.office.com)à l'adresse.
+1. Connectez-vous au centre d’administration Microsoft 365 [https://portal.office.com](https://portal.office.com)à l’adresse.
     
 2. Cliquez sur **Domaines**.
     
@@ -242,7 +242,7 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 ## <a name="step-5-verify-domains-for-the-target-organization"></a>Étape 5 : Vérifier les domaines de l’organisation cible
 
-1. Connectez-vous au centre d'administration [https://portal.office.com](https://portal.office.com)à l'adresse.
+1. Connectez-vous au centre d’administration [https://portal.office.com](https://portal.office.com)à l’adresse.
     
 2. Cliquez sur **Domaines**.
     
@@ -925,6 +925,6 @@ if($HostedContentFilterPolicyCount -gt 0){
 
 ## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>Étape 8 : Rétablir vos paramètres DNS pour interrompre la mise en attente des messages
 
-Si vous avez choisi de définir vos enregistrements MX sur une adresse non valide de façon à ce que les expéditeurs envoient des messages en file d'attente pendant votre transition, vous devez les rétablir sur la valeur correcte, comme indiqué dans le [Centre d'administration](https://admin.microsoft.com). Pour plus d'informations sur la configuration du DNS, consultez la rubrique [Créer des enregistrements DNS pour Office 365 lorsque vous gérez vos enregistrements DNS](https://go.microsoft.com/fwlink/p/?LinkId=304219).
+Si vous avez choisi de définir vos enregistrements MX sur une adresse non valide de façon à ce que les expéditeurs envoient des messages en file d’attente pendant votre transition, vous devez les rétablir sur la valeur correcte, comme indiqué dans le [Centre d’administration](https://admin.microsoft.com). Pour plus d'informations sur la configuration du DNS, consultez la rubrique [Créer des enregistrements DNS pour Office 365 lorsque vous gérez vos enregistrements DNS](https://go.microsoft.com/fwlink/p/?LinkId=304219).
   
 

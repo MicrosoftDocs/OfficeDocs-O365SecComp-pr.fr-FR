@@ -3,7 +3,7 @@ title: Définition des problèmes et affectation des utilisateurs dans Office 36
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
 description: Découvrez comment ajouter ou modifier un problème, y compris lui affecter des utilisateurs ou supprimer un problème pour un cas de découverte électronique dans Office 365 Advanced eDiscovery.
-ms.openlocfilehash: 80ea6e2579b8bc68b70e2181d9c986c91c890836
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a7dad3cce54a3162cedf3c14e521f5e8fe966acf
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257740"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150686"
 ---
 # <a name="define-issues-and-assign-users-in-office-365-advanced-ediscovery"></a>Définition des problèmes et affectation des utilisateurs dans Office 365 Advanced eDiscovery
 
@@ -26,30 +26,30 @@ ms.locfileid: "32257740"
   
 Dans Advanced eDiscovery, un ou plusieurs problèmes peuvent être définis dans un cas. La définition des problèmes permet de catégoriser davantage les sujets. Lors de la connexion à un nouveau cas, un seul problème par défaut est fourni. Vous pouvez modifier le nom du problème par défaut et affecter des utilisateurs au problème. 
   
-## <a name="adding-or-editing-an-issue-and-assigning-users"></a>Ajout ou modification d'un problème et affectation d'utilisateurs
+## <a name="adding-or-editing-an-issue-and-assigning-users"></a>Ajout ou modification d’un problème et affectation d’utilisateurs
 
 1. Dans \> l' ** \> onglet Configuration** de pertinence pertinence, sélectionnez **problèmes**.
     
     ![Problèmes de configuration de pertinence](media/dfd8f9ef-b167-4ed9-980e-00ae98a97169.png)
   
-2. Pour ajouter un problème, cliquez sur l'icône * * + * *. La boîte de dialogue **Ajouter un problème** s'affiche. 
+2. Pour ajouter un problème, cliquez sur l’icône * * + * *. La boîte de dialogue **Ajouter un problème** s’affiche. 
     
     ![Problème d’ajout de configuration de pertinence](media/c8e94982-139a-472a-b85d-282f2d742046.png)
   
-    Pour modifier un problème, cliquez sur l'icône **modifier** . 
+    Pour modifier un problème, cliquez sur l’icône **modifier** . 
     
 3. Dans **nom du problème**, tapez un nom descriptif et significatif pour le cas. 
     
 4. Dans **Description**, entrez des informations sur le problème.
     
-5. Activez la case à cocher **activer la formation simultanée** pour activer l'option. Ce paramètre permet à plusieurs relecteurs de travailler simultanément sur le même problème (dans des exemples distincts). 
+5. Activez la case à cocher **activer la formation simultanée** pour activer l’option. Ce paramètre permet à plusieurs relecteurs de travailler simultanément sur le même problème (dans des exemples distincts). 
     
-6. Dans **affecter des utilisateurs au problème**, dans la liste **tous les utilisateurs** , sélectionnez un utilisateur à attribuer au problème, puis cliquez sur la flèche droite pour ajouter l'utilisateur à la liste des **utilisateurs sélectionnés** . Répétez l'opération autant de fois que nécessaire. Dans la fenêtre ci-dessus, «administrateur» apparaît en tant qu'utilisateur sélectionné. 
+6. Dans **affecter des utilisateurs au problème**, dans la liste **tous les utilisateurs** , sélectionnez un utilisateur à attribuer au problème, puis cliquez sur la flèche droite pour ajouter l’utilisateur à la liste des **utilisateurs sélectionnés** . Répétez l’opération autant de fois que nécessaire. Dans la fenêtre ci-dessus, «administrateur» apparaît en tant qu’utilisateur sélectionné. 
     
     > [!NOTE]
-    > L'attribution des utilisateurs aux problèmes peut être modifiée avant ou après un cycle de formation pertinent. 
+    > L’attribution des utilisateurs aux problèmes peut être modifiée avant ou après un cycle de formation pertinent. 
   
-7. Dans **utilisateurs sélectionnés**, dans la liste déroulante en regard du nom de l'utilisateur sélectionné, sélectionnez l'un des modes d'échantillonnage suivants: 
+7. Dans **utilisateurs sélectionnés**, dans la liste déroulante en regard du nom de l’utilisateur sélectionné, sélectionnez l’un des modes d’échantillonnage suivants: 
     
   - **Activé**: les fichiers peuvent être affichés et balisés. Il s'agit du paramètre par défaut.
     
@@ -57,17 +57,17 @@ Dans Advanced eDiscovery, un ou plusieurs problèmes peuvent être définis dans
     
   - **Off**: les fichiers ne peuvent pas être affichés ou balisés.
     
-8. Lorsque vous avez terminé d'ajouter des problèmes, cliquez sur **OK**.
+8. Lorsque vous avez terminé d’ajouter des problèmes, cliquez sur **OK**.
     
 ## <a name="deleting-issues"></a>Suppression des problèmes
 
-Des problèmes peuvent être supprimés (c'est-à-dire supprimés de la base de données) uniquement immédiatement après qu'ils ont été définis et qu'aucun travail réel n'a été effectué pour ce problème. 
+Des problèmes peuvent être supprimés (c’est-à-dire supprimés de la base de données) uniquement immédiatement après qu’ils ont été définis et qu’aucun travail réel n’a été effectué pour ce problème. 
   
 1. Dans l' ** \> onglet Configuration** de pertinence de pertinence, sélectionnez **problèmes**.
     
 2. Sélectionnez le problème à supprimer de la base de données, puis cliquez sur **supprimer**.
     
-3. Un message de confirmation s'affiche. Cliquez sur **Oui** pour confirmer l'opération. 
+3. Un message de confirmation s’affiche. Cliquez sur **Oui** pour confirmer l'opération. 
     
 4. Cliquez sur **OK**.
     

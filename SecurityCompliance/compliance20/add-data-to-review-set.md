@@ -1,10 +1,10 @@
 ---
-title: Ajouter des résultats de recherche à un jeu de révision
+title: Ajouter des résultats de recherche à un jeu à réviser
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fc32836026d1a2c449e73a28eafc2f5a631a1705
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: 4de390972672509422e055cd3fd6a9f65d54a7ba
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33527166"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155236"
 ---
-# <a name="add-search-results-to-a-review-set"></a>Ajouter des résultats de recherche à un jeu de révision
+# <a name="add-search-results-to-a-review-set"></a>Ajouter des résultats de recherche à un jeu à réviser
 
 Lorsque vous êtes satisfait des résultats d’une recherche et que vous êtes prêt à passer en revue et à analyser ces résultats de recherche, vous pouvez les ajouter à un jeu de révision dans le cas. La copie des données d’origine dans l’ensemble de révision facilite également le processus de révision et d’analyse en vous fournissant des outils d’analyse avancés, tels que la détection de thèmes, la détection de proximité et l’identification des threads de messagerie. Vous pouvez également ajouter des données provenant de sources de données autres que Office 365 à un jeu de réexamen afin que vous puissiez examiner ces données en plus des données que vous collectez à partir d’Office 365.
 

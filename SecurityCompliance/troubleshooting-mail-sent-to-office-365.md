@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 5/2/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
 description: Cet article fournit des informations de dépannage pour les expéditeurs qui rencontrent des problèmes lors de l'envoi d'e-mail à des boîtes de réception dans Office 365 et les meilleures pratiques pour l'envoi de courrier en nombre à des clients Office 365.
-ms.openlocfilehash: ac465e7ef42b9cfeb2587481202fab1b5adb5f75
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ecb5c407c793fa93bf6f64589531bb3cff3c3494
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265906"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158216"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Résolution des problèmes de messages envoyés à Office 365
 
@@ -116,7 +116,7 @@ Vous avez reçu une notification d'échec de remise car une activité suspecte a
 ### <a name="i-cant-receive-email-from-senders-in-office-365"></a>Je ne reçois pas les e-mails provenant d’expéditeurs dans Office 365
 <a name="AllowEOPIPs"> </a>
 
- Afin de recevoir des messages de la part de nos utilisateurs, assurez-vous que votre réseau autorise les connexions provenant des adresses IP utilisées par EOP dans nos centres de données. Pour plus d'informations, consultez la rubrique [Exchange Online Protection IP](eop/exchange-online-protection-ip-addresses.md)Addresses. 
+ Afin de recevoir des messages de la part de nos utilisateurs, assurez-vous que votre réseau autorise les connexions provenant des adresses IP utilisées par EOP dans nos centres de données. Pour plus d’informations, consultez la rubrique [Exchange Online Protection IP](eop/exchange-online-protection-ip-addresses.md)Addresses. 
   
 ## <a name="best-practices-for-bulk-emailing-to-office-365-users"></a>Meilleures pratiques pour l’envoi en bloc d’e-mails aux utilisateurs d’Office 365
 <a name="BulkMailer"> </a>

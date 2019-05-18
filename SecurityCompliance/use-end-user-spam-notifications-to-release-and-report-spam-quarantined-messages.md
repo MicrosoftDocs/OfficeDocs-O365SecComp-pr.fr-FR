@@ -4,20 +4,20 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4b250bc9-0056-4426-8397-7b4398f1b026
 ms.collection:
 - M365-security-compliance
-description: "Les utilisateurs qui voient un message de notification de courrier indésirable à l'utilisateur final de leur administrateur sur le courrier en quarantaine peuvent effectuer ces actions sur les messages. "
-ms.openlocfilehash: f9a8cdf21dfae631b311651aa2259af2f76d73b8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 'Les utilisateurs qui voient un message de notification de courrier indésirable à l’utilisateur final de leur administrateur sur le courrier en quarantaine peuvent effectuer ces actions sur les messages. '
+ms.openlocfilehash: 666640e15da8bc980ebcf4cc0733c1947eae26b9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264330"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156236"
 ---
 # <a name="use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages"></a>Utilisation des notifications de courrier indésirable pour l'utilisateur final et signalement des messages de courrier indésirable mis en quarantaine
 
@@ -40,6 +40,6 @@ Vous pouvez effectuer les actions suivantes sur chaque message :
 - **Signaler comme légitime** Cliquez sur ce lien pour envoyer une copie du message à Microsoft pour analyse. L'équipe du courrier indésirable évalue et analyse le message, puis, selon les résultats de l'analyse, adapte les règles de filtre de courrier indésirable pour autoriser le message. 
     
 > [!NOTE]
->  Les messages mis en quarantaine en raison d'une règle de flux de messagerie (également appelée a) ne sont pas inclus dans les messages de mise en quarantaine du courrier indésirable de l'utilisateur final. Seuls les messages mis en quarantaine car identifiés comme courrier indésirable sont répertoriés. >  Vous ne pouvez libérer un message et le signaler comme faux positif (légitime) qu'une fois. 
+>  Les messages mis en quarantaine en raison d’une règle de flux de messagerie (également appelée a) ne sont pas inclus dans les messages de mise en quarantaine du courrier indésirable de l’utilisateur final. Seuls les messages mis en quarantaine car identifiés comme courrier indésirable sont répertoriés. >  Vous ne pouvez libérer un message et le signaler comme faux positif (légitime) qu'une fois. 
   
 

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,13 +13,13 @@ search.appverid:
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
-description: Microsoft Outlook sur le Web les utilisateurs peuvent signaler des courriers indésirables et des tentatives de hameçonnage à l'aide des options de création de rapports de messagerie intégrées. Vous pouvez également informer Microsoft qu'un message électronique a été identifié de manière incorrecte comme courrier indésirable (courrier indésirable).
-ms.openlocfilehash: 089792ab8e46f4b200a2d98781cd378c2666c35f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Microsoft Outlook sur le Web les utilisateurs peuvent signaler des courriers indésirables et des tentatives de hameçonnage à l’aide des options de création de rapports de messagerie intégrées. Vous pouvez également informer Microsoft qu’un message électronique a été identifié de manière incorrecte comme courrier indésirable (courrier indésirable).
+ms.openlocfilehash: c8ee481271d77d0b131af44944b9e94a934d45ba
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261574"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156886"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Signaler le courrier indésirable et les escroqueries par hameçonnage dans Outlook sur le Web 
 
@@ -56,7 +56,7 @@ Pour soumettre une tentative d’hameçonnage à Microsoft, procédez comme suit
 
 Quand un message est incorrectement identifié comme courrier indésirable par Office 365, soumettez-le comme « légitime » à Microsoft :
   
-1. Dans votre dossier de courrier indésirable, cliquez sur le message, puis sur **Courrier légitime** dans la barre d'outils. Cette opération déplace le message vers votre **Boîte de réception** et ajoute l'expéditeur à votre liste des expéditeurs approuvés.<br/>Vous pouvez également cliquer avec le bouton droit sur un message dans votre dossier courrier inDésirable pour afficher un menu et cliquer sur **marquer comme légitime**. 
+1. Dans votre dossier de courrier indésirable, cliquez sur le message, puis sur **Courrier légitime** dans la barre d'outils. Cette opération déplace le message vers votre **Boîte de réception** et ajoute l'expéditeur à votre liste des expéditeurs approuvés.<br/>Vous pouvez également cliquer avec le bouton droit sur un message dans votre dossier courrier indésirable pour afficher un menu et cliquer sur **marquer comme légitime**. 
   
 2. Une boîte de dialogue apparaît et vous demande si vous voulez envoyer une copie du message légitime à Microsoft pour analyse. Cliquez sur **Signaler** pour envoyer le message à l’équipe d’analyse anti-spam de Microsoft. 
     

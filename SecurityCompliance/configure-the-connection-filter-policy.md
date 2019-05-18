@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 10/24/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,13 +13,13 @@ search.appverid:
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
-description: Pour vous assurer que le courrier électronique envoyé à partir de personnes que vous approuvez n'est pas bloqué, vous pouvez utiliser la stratégie de filtrage des connexions pour créer une liste verte, également appelée liste d'expéditeurs approuvés, des adresses IP que vous approuvez. Vous pouvez également créer une liste des expéditeurs bloqués.
-ms.openlocfilehash: 5ca6ad6721ac03e5ae62b40dda219671bde3e1c1
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Pour vous assurer que le courrier électronique envoyé à partir de personnes que vous approuvez n’est pas bloqué, vous pouvez utiliser la stratégie de filtrage des connexions pour créer une liste verte, également appelée liste d’expéditeurs approuvés, des adresses IP que vous approuvez. Vous pouvez également créer une liste des expéditeurs bloqués.
+ms.openlocfilehash: 5d19898b6baf01c7348b434f3caced202507c4d8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259006"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151296"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configuration de la stratégie de filtrage des connexions
  
@@ -31,14 +31,14 @@ La vidéo suivante montre les étapes de configuration de la stratégie de filtr
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
 <a name="sectionSection0"> </a>
 
 - Durée d'exécution estimée : 15 minutes
     
-- Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l'entrée «blocage du courrier indésirable» dans la rubrique [autorisations des fonctionnalités dans Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
+- Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l’entrée «blocage du courrier indésirable» dans la rubrique [autorisations des fonctionnalités dans Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
     
-- Pour obtenir l'adresse IP de l'expéditeur pour lequel vous souhaitez autoriser ou bloquer les messages, vous pouvez consulter l'en-tête Internet du message. Recherchez l'en-tête CIP comme décrit dans [En-têtes de messages anti-courrier indésirable](anti-spam-message-headers.md). Pour plus d'informations sur l'affichage de l'en-tête d'un message dans divers clients de messagerie, voir Analyseur d' [en-têtes de message](https://go.microsoft.com/fwlink/p/?LinkId=306583). 
+- Pour obtenir l'adresse IP de l'expéditeur pour lequel vous souhaitez autoriser ou bloquer les messages, vous pouvez consulter l'en-tête Internet du message. Recherchez l'en-tête CIP comme décrit dans [En-têtes de messages anti-courrier indésirable](anti-spam-message-headers.md). Pour plus d’informations sur l’affichage de l’en-tête d’un message dans divers clients de messagerie, voir Analyseur d' [en-têtes de message](https://go.microsoft.com/fwlink/p/?LinkId=306583). 
     
 - Les courriers électroniques envoyés depuis une adresse IP dans la liste d'adresses IP bloquées sont rejetés, ne sont pas marqués comme courriers indésirables et aucun filtrage supplémentaire n'est appliqué.
     
@@ -73,7 +73,7 @@ Voici des considérations supplémentaires que vous pouvez envisager ou dont vou
   
 ### <a name="specifying-a-cidr-range-that-falls-outside-of-the-recommended-range"></a>Spécification d'une plage de routage CIDR en dehors des plages recommandées
 
-Pour spécifier une plage d'adresses IP CIDR comprise entre/1 et/23, vous devez créer une règle de flux de messagerie qui fonctionne sur la plage d'adresses IP qui définit le seuil de probabilité de courrier indésirable (SCL) qui conTourne le **filtrage du courrier** indésirable (ce qui signifie que tous les messages reçus depuis cette plage d'adresses IP sont défini sur «pas de courrier indésirable») et aucun filtrage supplémentaire n'est effectué par le service). Toutefois, si l'une de ces adresses IP apparaît sur une liste rouge propriétaire de Microsoft ou sur l'une de nos listes de blocage tierces, ces messages seront toujours bloqués. Il est donc vivement recommandé d'utiliser la plage d'adresses IP/24 vers/32. 
+Pour spécifier une plage d’adresses IP CIDR comprise entre/1 et/23, vous devez créer une règle de flux de messagerie qui fonctionne sur la plage d’adresses IP qui définit le seuil de probabilité de courrier indésirable (SCL) qui contourne le **filtrage du courrier** indésirable (ce qui signifie que tous les messages reçus depuis cette plage d’adresses IP sont défini sur «pas de courrier indésirable») et aucun filtrage supplémentaire n’est effectué par le service). Toutefois, si l’une de ces adresses IP apparaît sur une liste rouge propriétaire de Microsoft ou sur l’une de nos listes de blocage tierces, ces messages seront toujours bloqués. Il est donc vivement recommandé d’utiliser la plage d’adresses IP/24 vers/32. 
   
 Pour créer cette règle de flux de messagerie, procédez comme suit.
   
@@ -85,21 +85,21 @@ Pour créer cette règle de flux de messagerie, procédez comme suit.
     
 4. Sous **Appliquer cette règle si**, sélectionnez **L'expéditeur**, puis **l'adresse IP se situe dans l'une de ces plages ou correspond exactement**.
     
-5. Dans la **zone spécifier des adresses IP**, spécifiez la plage d'adresses IP,](media/ITPro-EAC-AddIcon.gif)cliquez sur **Ajouter** ![une icône, puis cliquez sur **OK**.
+5. Dans la **zone spécifier des adresses IP**, spécifiez la plage d’adresses IP,](media/ITPro-EAC-AddIcon.gif)cliquez sur **Ajouter** ![une icône, puis cliquez sur **OK**.
     
 6. Sous **Faire ceci**, définissez l'action en sélectionnant **Modifier les propriétés des messages**, puis **Définir le seuil de probabilité de courrier indésirable (SCL)**. Dans le champ **spécifier la valeur SCL**, sélectionnez **Ignorer le filtrage du courrier indésirable**, puis cliquez sur **OK**.
     
-7. Si vous le souhaitez, vous pouvez effectuer des sélections pour auditer, tester et activer la règle sur une période spécifique, etc. Nous vous recommandons de tester la règle pendant un certain temps avant de l'appliquer. [Procédures pour les règles de flux de messagerie dans Exchange Server](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) contient plus d'informations sur ces sélections. 
+7. Si vous le souhaitez, vous pouvez effectuer des sélections pour auditer, tester et activer la règle sur une période spécifique, etc. Nous vous recommandons de tester la règle pendant un certain temps avant de l'appliquer. [Procédures pour les règles de flux de messagerie dans Exchange Server](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) contient plus d’informations sur ces sélections. 
     
 8. Cliquez sur **Enregistrer** pour enregistrer la règle. La règle apparaît dans votre liste de règles. 
     
-Une fois que vous avez créé et appliqué la règle, le service contourne le filtrage du courrier indésirable pour la plage d'adresses IP que vous avez spécifiée.
+Une fois que vous avez créé et appliqué la règle, le service contourne le filtrage du courrier indésirable pour la plage d’adresses IP que vous avez spécifiée.
   
 ### <a name="scoping-an-ip-allow-list-exception-for-a-specific-domain"></a>Définition de l'étendue d'une exception de liste verte IP pour un domaine spécifique
 
-En règle générale, nous vous recommandons d'ajouter les adresses IP (ou plages d'adresses IP) pour tous les domaines que vous jugez fiables à la liste verte IP. Toutefois, si vous ne voulez pas que votre entrée de liste d'adresses IP autorisées s'applique à tous vos domaines, vous pouvez créer une règle de flux de messagerie (également appelée règle de transport), à l'exception de domaines spécifiques. 
+En règle générale, nous vous recommandons d'ajouter les adresses IP (ou plages d'adresses IP) pour tous les domaines que vous jugez fiables à la liste verte IP. Toutefois, si vous ne voulez pas que votre entrée de liste d’adresses IP autorisées s’applique à tous vos domaines, vous pouvez créer une règle de flux de messagerie (également appelée règle de transport), à l’exception de domaines spécifiques. 
   
-Par exemple, supposons que vous disposez de trois domaines : ContosoA.com, ContosoB.com et ContosoC.com, et que vous souhaitez ajouter l'adresse IP (pour des raisons de simplicité, nous allons utiliser 1.2.3.4) et ignorer le filtrage uniquement pour le domaine ContosoB.com. Vous allez créer une liste verte IP pour 1.2.3.4, qui définit le seuil de probabilité de courrier indésirable (SCL) sur -1 (ce qui signifie qu'il est classé comme courrier non indésirable) pour tous les domaines. Vous pouvez ensuite créer une règle de flux de messagerie qui définit le SCL de tous les domaines à l'exception de ContosoB.com sur 0. Le message est alors réanalysé pour tous les domaines associés à l'adresse IP, à l'exception de ContosoB.com qui est le domaine répertorié comme l'exception à la règle. Le SCL de ContosoB.com est toujours de -1, ce qui signifie que le filtrage est ignoré, tandis que celui de ContosoA.com et ContosoC.com est de 0, ce qui signifie qu'ils seront réanalysés par le filtre de contenu.
+Par exemple, supposons que vous disposez de trois domaines : ContosoA.com, ContosoB.com et ContosoC.com, et que vous souhaitez ajouter l'adresse IP (pour des raisons de simplicité, nous allons utiliser 1.2.3.4) et ignorer le filtrage uniquement pour le domaine ContosoB.com. Vous allez créer une liste verte IP pour 1.2.3.4, qui définit le seuil de probabilité de courrier indésirable (SCL) sur -1 (ce qui signifie qu'il est classé comme courrier non indésirable) pour tous les domaines. Vous pouvez ensuite créer une règle de flux de messagerie qui définit le SCL de tous les domaines à l’exception de ContosoB.com sur 0. Le message est alors réanalysé pour tous les domaines associés à l'adresse IP, à l'exception de ContosoB.com qui est le domaine répertorié comme l'exception à la règle. Le SCL de ContosoB.com est toujours de -1, ce qui signifie que le filtrage est ignoré, tandis que celui de ContosoA.com et ContosoC.com est de 0, ce qui signifie qu'ils seront réanalysés par le filtre de contenu.
   
 Pour ce faire, procédez comme suit :
   
@@ -111,7 +111,7 @@ Pour ce faire, procédez comme suit :
     
 4. Sous **Appliquer cette règle si**, sélectionnez **L'expéditeur**, puis **l'adresse IP se situe dans l'une de ces plages ou correspond exactement**.
     
-5. Dans la zone **spécifier des adresses IP** , spécifiez l'adresse IP ou la plage d'adresses IP que vous avez entrée dans la liste d'](media/ITPro-EAC-AddIcon.gif)adresses IP autorisées, cliquez sur **Ajouter** ![une icône, puis cliquez sur **OK**.
+5. Dans la zone **spécifier des adresses IP** , spécifiez l’adresse IP ou la plage d’adresses IP que vous avez entrée dans la liste d'](media/ITPro-EAC-AddIcon.gif)adresses IP autorisées, cliquez sur **Ajouter** ![une icône, puis cliquez sur **OK**.
     
 6. Sous **Faire ceci**, définissez l'action en sélectionnant **Modifier les propriétés des messages**, puis **définir le seuil de probabilité de courrier indésirable (SCL)**. Dans le champ **spécifier la valeur SCL**, sélectionnez **0**, puis cliquez sur **OK**.
     
@@ -119,7 +119,7 @@ Pour ce faire, procédez comme suit :
     
 8. Dans le champ **Spécifier le domaine**, entrez le domaine pour lequel vous voulez contourner le filtrage du courrier indésirable, par exemple **contosob.com**. Cliquez sur **Ajouter** ![une](media/ITPro-EAC-AddIcon.gif) icône pour le déplacer vers la liste des expressions. Répétez cette étape pour ajouter d'autres domaines et exceptions, puis cliquez sur **OK** quand vous avez terminé. 
     
-9. Si vous le souhaitez, vous pouvez effectuer des sélections pour auditer, tester et activer la règle sur une période spécifique, etc. Nous vous recommandons de tester la règle pendant un certain temps avant de l'appliquer. [Procédures pour les règles de flux de messagerie dans Exchange Server](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) contient plus d'informations sur ces sélections. 
+9. Si vous le souhaitez, vous pouvez effectuer des sélections pour auditer, tester et activer la règle sur une période spécifique, etc. Nous vous recommandons de tester la règle pendant un certain temps avant de l'appliquer. [Procédures pour les règles de flux de messagerie dans Exchange Server](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) contient plus d’informations sur ces sélections. 
     
 10. Cliquez sur **Enregistrer** pour enregistrer la règle. La règle apparaît dans votre liste de règles. 
     
@@ -132,7 +132,7 @@ Après avoir créé et appliqué la règle, le filtrage du courrier indésirable
 |:-----|
 |![Icône rapide pour LinkedIn Learning](media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Vous débutez avec Office 365 ?**         Découvrez les cours vidéo gratuits pour **Office 365 admins and IT pros** proposés par LinkedIn Learning. |
    
-## <a name="for-more-information"></a>Pour plus d'informations
+## <a name="for-more-information"></a>Pour plus d’informations
 <a name="sectionSection4"> </a>
 
 [Listes des expéditeurs autorisés et des expéditeurs bloqués dans Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)

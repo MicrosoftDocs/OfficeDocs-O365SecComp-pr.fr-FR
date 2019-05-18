@@ -3,28 +3,28 @@ title: 'Atelier de directeur de la sécurité des informations (CISO), module 4b
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur les principes de sécurité et les recommandations pour la modernisation de la sécurité dans votre organisation.
-ms.openlocfilehash: bbe28d89280826202c9d338827ac2b1469c8a632
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f5b296351ed0fe076f22c148487ed1044da3ae4f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243365"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152136"
 ---
-# <a name="ciso-workshop-module-4b-threat-protection-strategy"></a>Module d'atelier CISO 4b: stratégie de protection contre les menaces 
+# <a name="ciso-workshop-module-4b-threat-protection-strategy"></a>Module d’atelier CISO 4b: stratégie de protection contre les menaces 
 
-Ce module examine l'évolution et la trajectoire des centres de sécurité Microsoft (SOC), gérées par les milliards de signaux dans le graphique de sécurité intelligente Microsoft.
+Ce module examine l’évolution et la trajectoire des centres de sécurité Microsoft (SOC), gérées par les milliards de signaux dans le graphique de sécurité intelligente Microsoft.
 
 - Télécharger le Résumé PDF: [module 4b: stratégie de protection contre les menaces](media/ciso-workshop-4b-threat-protection-strategy.pdf)
 - Télécharger le résumé PowerPoint: [module 4b: stratégie de protection contre les menaces](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4b-threat-protection-strategy.pptx)
 
-## <a name="introduction-threat-protection-strategy-detect-respond-recover-338"></a>Introduction: stratégie de protection contre les menaces (Detect-respond-reCover) (3:38)
+## <a name="introduction-threat-protection-strategy-detect-respond-recover-338"></a>Introduction: stratégie de protection contre les menaces (Detect-respond-Recover) (3:38)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMJ]
 
@@ -32,7 +32,7 @@ Ce module examine l'évolution et la trajectoire des centres de sécurité Micro
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtT9w]
 
-## <a name="part-2-evolution-and-trajectory-of-security-operations-centers-1042"></a>Partie 2: évolution et trajectoire des centres d'opérations de sécurité (10:42)
+## <a name="part-2-evolution-and-trajectory-of-security-operations-centers-1042"></a>Partie 2: évolution et trajectoire des centres d’opérations de sécurité (10:42)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtDxA]
 
@@ -52,7 +52,7 @@ Ce module examine l'évolution et la trajectoire des centres de sécurité Micro
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtNNZ]
 
-## <a name="part-7-applying-machine-learning-to-threat-detection-819"></a>Partie 7: application de l'apprentissage automatique à la détection des menaces (8:19)
+## <a name="part-7-applying-machine-learning-to-threat-detection-819"></a>Partie 7: application de l’apprentissage automatique à la détection des menaces (8:19)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMz]
 
@@ -64,6 +64,6 @@ Ce module examine l'évolution et la trajectoire des centres de sécurité Micro
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMj]
 
-## <a name="part-10-summary-of-integrated-technology-and-automation-933"></a>Partie 10: Résumé de la technologie et de l'automatisation intégrées (9:33)
+## <a name="part-10-summary-of-integrated-technology-and-automation-933"></a>Partie 10: Résumé de la technologie et de l’automatisation intégrées (9:33)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtLoU]

@@ -4,18 +4,18 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 11/17/2014
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 description: Quand un administrateur ajoute ou supprime des membres de groupes de rôles d'administrateur, Microsoft Exchange Online Protection (EOP) consigne chaque occurrence.
-ms.openlocfilehash: 752def771d95fcfbb3f7cbe0bc86a33b3967716d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 5004851ec08afba7fcb26cbaefbe18f8c14e629a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256182"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153046"
 ---
 # <a name="run-an-administrator-role-group-report-in-eop"></a>Exécution d’un rapport de groupe de rôles d'administrateur dans EOP 
 

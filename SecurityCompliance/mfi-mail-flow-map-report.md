@@ -1,22 +1,22 @@
 ---
-title: Rapport de carte de flux de messagerie
+title: Rapport carte de flux de courrier
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Les administrateurs peuvent en savoir plus sur le rapport de carte de flux de messagerie dans le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance Center.
-ms.openlocfilehash: f80bb71434f4091d64318a096b1f55238a1409cc
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+ms.openlocfilehash: 6b8c63f25e143c7b27202141362a4dada82b7a4d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868583"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158686"
 ---
-# <a name="mail-flow-map-report"></a>Rapport de carte de flux de messagerie
+# <a name="mail-flow-map-report"></a>Rapport carte de flux de courrier
 
 Ce rapport fournit des informations sur la façon dont les messages circulent dans votre organisation Office 365. Vous pouvez utiliser ces informations pour apprendre des modèles, identifier des anomalies et corriger les problèmes au fur et à mesure qu’ils se produisent.
 

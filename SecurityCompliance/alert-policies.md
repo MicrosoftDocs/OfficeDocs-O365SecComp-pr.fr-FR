@@ -3,7 +3,7 @@ title: Stratégies d’alerte dans le centre de sécurité et conformité
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Créez des stratégies d’alerte dans le centre de sécurité et de conformité dans Office 365 et Microsoft 365 pour surveiller les menaces potentielles, les pertes de données et les autorisations. Ensuite, vous pouvez afficher et gérer les alertes générées lorsque les utilisateurs effectuent des activités qui répondent aux conditions d’une stratégie d’alerte.
-ms.openlocfilehash: 57b30a3c7202940ebb5422d7ef392e93c5351bfb
-ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
+ms.openlocfilehash: d4d163a483f47f7b4d785d43a0554e5d7670d24a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33979500"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152506"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Stratégies d’alerte dans le centre de sécurité et conformité
 

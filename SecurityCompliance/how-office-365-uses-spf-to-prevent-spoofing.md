@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/15/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be
 ms.collection:
 - M365-security-compliance
 description: "Résumé : Cet article décrit comment Office 365 utilise l'enregistrement TXT SPF (Sender Policy Framework) dans le système DNS pour s'assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé. Cela s'applique aux messages sortants envoyés à partir d'Office 365. Les messages envoyés à partir d'Office 365 à un destinataire d'Office 365 passent toujours par SPF."
-ms.openlocfilehash: 5abe892eae4840b44a606f4004eb3b66a94accdc
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9c52f5d0f83ce90b4c46e0d377afcd02eadf224b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256544"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152786"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Comment Office 365 utilise SPF (Sender Policy Framework) pour éviter l’usurpation
 
@@ -241,7 +241,7 @@ Lorsque vous incluez des domaines tiers dans votre enregistrement TXT SPF, vous 
 
 Vous pouvez utiliser nslookup pour afficher vos enregistrements DNS, y compris votre enregistrement TXT SPF. Sinon, si vous préférez, il existe plusieurs outils gratuits en ligne que vous pouvez utiliser pour afficher le contenu de votre enregistrement TXT SPF. En consultant votre enregistrement TXT SPF et en suivant la chaîne d'instructions Include et de redirections, vous pouvez déterminer le nombre de recherches DNS dont l'enregistrement a besoin. Certains outils en ligne peuvent même compter et afficher ces recherches pour vous. Le fait d'assurer le suivi de cette donnée permettra d'éviter que les messages envoyés depuis votre organisation ne déclenchent une erreur permanente, appelée permerror, sur le serveur de réception.
   
-## <a name="for-more-information"></a>Pour plus d'informations
+## <a name="for-more-information"></a>Pour plus d’informations
 <a name="SPFTroubleshoot"> </a>
 
 Besoin d'aide pour ajouter l'enregistrement TXT SPF ? Des [instructions pas à pas](https://office.microsoft.com/en-us/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404) sont disponibles pour mettre à jour les enregistrements SPF (TXT) dans divers bureaux d'enregistrement de domaines courants. Les [En-têtes de messages anti-courrier indésirable](anti-spam-message-headers.md) incluent la syntaxe et les champs d'en-tête utilisés par Office 365 pour les vérifications SPF. 

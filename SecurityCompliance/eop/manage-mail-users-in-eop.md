@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: La définition des utilisateurs de messagerie constitue une partie importante de la gestion du service Exchange Online Protection (EOP).
-ms.openlocfilehash: 2e266d4dd31c3bd614c1b4f8afa17ca747890385
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 769ab13f99d7faae42bbdbed5b2b95bd37cfd55e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256452"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150236"
 ---
 # <a name="manage-mail-users-in-eop"></a>Gestion des utilisateurs de messagerie dans EOP
 
@@ -28,7 +28,7 @@ La définition des utilisateurs de messagerie constitue une partie importante de
 - Utiliser Windows PowerShell à distance pour gérer les utilisateurs de messagerie : ajoutez et gérez les utilisateurs de messagerie en exécutant Windows PowerShell à distance. Cette méthode est utile pour ajouter plusieurs enregistrements et pour la création de scripts.
     
 > [!NOTE]
-> Vous pouvez ajouter des utilisateurs dans le centre d'administration 365 de Microsoft, mais ces utilisateurs ne peuvent pas être utilisés comme destinataires de courrier. 
+> Vous pouvez ajouter des utilisateurs dans le centre d’administration 365 de Microsoft, mais ces utilisateurs ne peuvent pas être utilisés comme destinataires de courrier. 
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -44,10 +44,10 @@ La définition des utilisateurs de messagerie constitue une partie importante de
 Cette section fournit des informations sur la gestion des utilisateurs de messagerie électronique à l’aide de la synchronisation d’annuaires.
   
 > [!IMPORTANT]
-> Si vous utilisez la synchronisation d'annuaires pour gérer vos destinataires, vous pouvez toujours ajouter et gérer des utilisateurs dans le centre d'administration 365 de Microsoft, mais ils ne seront pas synchronisés avec votre annuaire Active Directory local. En effet, la synchronisation d'annuaires ne synchronise que les destinataires de votre annuaire Active Directory sur site vers le nuage. 
+> Si vous utilisez la synchronisation d’annuaires pour gérer vos destinataires, vous pouvez toujours ajouter et gérer des utilisateurs dans le centre d’administration 365 de Microsoft, mais ils ne seront pas synchronisés avec votre annuaire Active Directory local. En effet, la synchronisation d'annuaires ne synchronise que les destinataires de votre annuaire Active Directory sur site vers le nuage. 
   
 > [!TIP]
->  Il est recommandé d'utiliser la synchronisation d'annuaires avec les fonctionnalités suivantes: > **Outlook Safe sender and blocked sender lists** -lors de la synchronisation avec le service, ces listes prévalent sur le filtrage du courrier indésirable dans le service. Cela permet aux utilisateurs de gérer leurs propres listes d’expéditeurs autorisés et bloqués en fonction de l’utilisateur et du domaine. > **Blocage du périmètre basé sur l'annuaire (DBEB)** pour plus d'informations sur DBEB, voir [use Directory based Edge blockIng to Reject messages sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx). > **Mise en quarantaine du courrier** indésirable de l'utilisateur final: pour accéder à la mise en quarantaine du courrier indésirable de l'utilisateur final, les utilisateurs finaux doivent avoir un ID d'utilisateur et un mot de passe Office 365 valide. Les clients qui utilisent EOP pour la protection des boîtes aux lettres locales doivent être des utilisateurs de messagerie électronique valides. > **Règles de flux de messagerie** : lorsque vous utilisez la synchronisation d'annuaires, vos utilisateurs et groupes Active Directory existants sont automatiquement téléchargés dans le Cloud, puis vous pouvez créer des règles de flux de messagerie (également appelées règles de transport) qui ciblent des utilisateurs spécifiques et/ou groupes sans avoir à les ajouter manuellement via le centre d'administration Exchange ou Exchange Online Protection PowerShell. Notez que les [groupes de distribution dynamique](https://go.microsoft.com/fwlink/?LinkId=507569) ne peuvent pas être synchronisés via la synchronisation d'annuaires. 
+>  Il est recommandé d’utiliser la synchronisation d’annuaires avec les fonctionnalités suivantes: > **Outlook Safe sender and blocked sender lists** -lors de la synchronisation avec le service, ces listes prévalent sur le filtrage du courrier indésirable dans le service. Cela permet aux utilisateurs de gérer leurs propres listes d’expéditeurs autorisés et bloqués en fonction de l’utilisateur et du domaine. > **Blocage du périmètre basé sur l’annuaire (DBEB)** pour plus d’informations sur DBEB, voir [use Directory based Edge Blocking to Reject messages sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx). > **Mise en quarantaine du courrier** indésirable de l’utilisateur final: pour accéder à la mise en quarantaine du courrier indésirable de l’utilisateur final, les utilisateurs finaux doivent avoir un ID d’utilisateur et un mot de passe Office 365 valide. Les clients qui utilisent EOP pour la protection des boîtes aux lettres locales doivent être des utilisateurs de messagerie électronique valides. > **Règles de flux de messagerie** : lorsque vous utilisez la synchronisation d’annuaires, vos utilisateurs et groupes Active Directory existants sont automatiquement téléchargés dans le Cloud, puis vous pouvez créer des règles de flux de messagerie (également appelées règles de transport) qui ciblent des utilisateurs spécifiques et/ou groupes sans avoir à les ajouter manuellement via le centre d’administration Exchange ou Exchange Online Protection PowerShell. Notez que les [groupes de distribution dynamique](https://go.microsoft.com/fwlink/?LinkId=507569) ne peuvent pas être synchronisés via la synchronisation d’annuaires. 
   
  **Avant de commencer**
   
@@ -100,7 +100,7 @@ Des autorisations doivent vous être attribuées avant de pouvoir exécuter cett
     
 ### <a name="to-edit-or-remove-a-mail-user-in-the-eac"></a>Pour modifier ou supprimer un utilisateur de messagerie dans le CAE
 
-- Dans le CAE, accédez à **Destinataires** \> **Contacts**. Dans la liste des utilisateurs, cliquez sur l'utilisateur que vous souhaitez afficher ou modifier, puis sélectionnez **modifier** ![l'icône](../media/ITPro-EAC-EditIcon.gif) modifier pour mettre à jour les paramètres utilisateur selon vos besoins. Vous pouvez modifier le nom, l'alias ou les coordonnées de l'utilisateur et vous pouvez enregistrer des informations détaillées sur le rôle de l'utilisateur dans l'organisation. Vous pouvez également sélectionner un utilisateur, puis cliquer sur **Supprimer**![Icône Suppression](../media/ITPro-EAC-RemoveIcon.gif) pour le supprimer. 
+- Dans le CAE, accédez à **Destinataires** \> **Contacts**. Dans la liste des utilisateurs, cliquez sur l’utilisateur que vous souhaitez afficher ou modifier, puis sélectionnez **modifier** ![l’icône](../media/ITPro-EAC-EditIcon.gif) modifier pour mettre à jour les paramètres utilisateur selon vos besoins. Vous pouvez modifier le nom, l'alias ou les coordonnées de l'utilisateur et vous pouvez enregistrer des informations détaillées sur le rôle de l'utilisateur dans l'organisation. Vous pouvez également sélectionner un utilisateur, puis cliquer sur **Supprimer**![Icône Suppression](../media/ITPro-EAC-RemoveIcon.gif) pour le supprimer. 
     
 ## <a name="use-remote-windows-powershell-to-manage-mail-users"></a>Utiliser Windows PowerShell à distance pour gérer les utilisateurs de messagerie
 

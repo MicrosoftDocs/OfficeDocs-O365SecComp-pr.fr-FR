@@ -4,26 +4,26 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 11/17/2014
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 2921f544-8257-4bae-8e3a-ce9250e9f162
-description: Microsoft Exchange Online Protection (EOP) vous propose plusieurs façons de gérer vos destinataires de message. En tant qu'administrateur, vous pouvez effectuer certaines tâches de gestion dans le centre d'administration Exchange ou à l'aide de Windows PowerShell à distance et vérifier les autres tâches de gestion effectuées dans le centre d'administration 365 de Microsoft.
-ms.openlocfilehash: 1d9436cf02538ab5c69e0e68d20eda1af5b0a5cd
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Microsoft Exchange Online Protection (EOP) vous propose plusieurs façons de gérer vos destinataires de message. En tant qu’administrateur, vous pouvez effectuer certaines tâches de gestion dans le centre d’administration Exchange ou à l’aide de Windows PowerShell à distance et vérifier les autres tâches de gestion effectuées dans le centre d’administration 365 de Microsoft.
+ms.openlocfilehash: a08dc15588d75399d0f042e70eb205de6ab54350
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256612"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150086"
 ---
 # <a name="manage-recipients-in-eop"></a>Gestion des destinataires dans Exchange Online Protection (EOP)
 
-Microsoft Exchange Online Protection (EOP) vous propose plusieurs façons de gérer vos destinataires de message. En tant qu'administrateur, vous pouvez effectuer certaines tâches de gestion dans le centre d'administration Exchange ou à l'aide de Windows PowerShell à distance et vérifier les autres tâches de gestion effectuées dans le centre d'administration 365 de Microsoft.
+Microsoft Exchange Online Protection (EOP) vous propose plusieurs façons de gérer vos destinataires de message. En tant qu’administrateur, vous pouvez effectuer certaines tâches de gestion dans le centre d’administration Exchange ou à l’aide de Windows PowerShell à distance et vérifier les autres tâches de gestion effectuées dans le centre d’administration 365 de Microsoft.
   
 EOP prend en charge les types de destinataires suivants :
   
-- **Utilisateurs de messagerie** Les utilisateurs de messagerie sont des destinataires de vos domaines gérés EOP. Ces destinataires ont des informations d'identification d'ouverture de session dans votre organisation Office 365, mais elles ont des adresses de messagerie externes, ce qui signifie que leurs boîtes aux lettres de destinataire se trouvent en dehors de votre organisation en nuage. Vous pouvez ajouter des utilisateurs de messagerie afin qu'ils puissent recevoir des messages et que vous puissiez également créer des règles de flux de messagerie (également appelées règles de transport) pour des utilisateurs spécifiques. Vous pouvez également attribuer des rôles aux utilisateurs de messagerie de votre organisation; les utilisateurs disposant de privilèges de groupe de rôles de gestion peuvent accéder au centre d'administration Exchange et effectuer certaines tâches de gestion. Pour en savoir plus sur les rôles d'utilisateur et sur l'attribution de rôles d'utilisateur dans EOP, consultez la rubrique [Manage admin Role Group Permissions in EOP](manage-admin-role-group-permissions-in-eop.md).
+- **Utilisateurs de messagerie** Les utilisateurs de messagerie sont des destinataires de vos domaines gérés EOP. Ces destinataires ont des informations d’identification d’ouverture de session dans votre organisation Office 365, mais elles ont des adresses de messagerie externes, ce qui signifie que leurs boîtes aux lettres de destinataire se trouvent en dehors de votre organisation en nuage. Vous pouvez ajouter des utilisateurs de messagerie afin qu’ils puissent recevoir des messages et que vous puissiez également créer des règles de flux de messagerie (également appelées règles de transport) pour des utilisateurs spécifiques. Vous pouvez également attribuer des rôles aux utilisateurs de messagerie de votre organisation; les utilisateurs disposant de privilèges de groupe de rôles de gestion peuvent accéder au centre d’administration Exchange et effectuer certaines tâches de gestion. Pour en savoir plus sur les rôles d’utilisateur et sur l’attribution de rôles d’utilisateur dans EOP, consultez la rubrique [Manage admin Role Group Permissions in EOP](manage-admin-role-group-permissions-in-eop.md).
     
     Pour plus d'informations sur la gestion des utilisateurs de messagerie dans EOP, consultez la rubrique [Gestion des utilisateurs de messagerie dans EOP](manage-mail-users-in-eop.md).
     

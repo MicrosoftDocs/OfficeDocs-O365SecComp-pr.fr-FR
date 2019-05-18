@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 4/29/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Vous pouvez utiliser des règles de flux de messagerie (règles de transport) pour identifier et effectuer des actions sur les messages qui circulent dans votre organisation Office 365.
-ms.openlocfilehash: 379886788a4fa411d70830c702dd8850e8118b32
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 73f5668be76a20af7474f6de06d50e278057fd06
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256627"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153146"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Règles de flux de messagerie (règles de transport) dans Exchange Online Protection
 
@@ -53,13 +53,13 @@ Une règle de flux de messagerie est constituée de conditions, d'exceptions, d'
   
 - **Conditions** Identifient les messages auxquels que vous souhaitez appliquer les actions. Certaines conditions examinent les champs d'en-tête de message (par exemple, les champs À, De ou Cc). D'autres examinent les propriétés des messages (par exemple l'objet, le corps, les pièces jointes, la taille ou la classification du message). La plupart des conditions font appel à un opérateur de comparaison (par exemple, « égal à », « différent de » ou « contient ») ainsi qu'à une valeur de concordance que vous devez spécifier. S'il n'y a ni conditions ni d'exceptions, la règle s'applique à tous les messages. 
     
-    Pour plus d'informations sur les conditions des règles de flux de messagerie dans Exchange Online Protection, consultez la rubrique [mail Flow Rule conditions and exceptions (prédicats) in Exchange Online.](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
+    Pour plus d’informations sur les conditions des règles de flux de messagerie dans Exchange Online Protection, consultez la rubrique [mail Flow Rule conditions and exceptions (prédicats) in Exchange Online.](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
     
 - **Exceptions** Identifient éventuellement les messages auxquels les actions ne doivent pas s'appliquer. Les identificateurs de message disponibles dans les conditions le sont également dans les exceptions. Les exceptions ont la priorité sur les conditions et empêchent l'application d'actions à un message, même s'il remplit toutes les conditions configurées. 
     
 - **Actions** Spécifient que faire des messages qui remplissent les conditions de la règle et qui ne correspondent à aucune des exceptions. De nombreuses actions sont possibles, notamment le rejet, la suppression ou la redirection de messages, l'ajout de destinataires supplémentaires, l'ajout de préfixes à l'objet des messages ou l'insertion de clauses d'exclusion de responsabilité dans le corps des messages. 
     
-    Pour plus d'informations sur les actions de règle de flux de messagerie disponibles dans Exchange Online Protection, consultez la rubrique [mail Flow Rule actions in Exchange Online Protection](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx).
+    Pour plus d’informations sur les actions de règle de flux de messagerie disponibles dans Exchange Online Protection, consultez la rubrique [mail Flow Rule actions in Exchange Online Protection](http://technet.microsoft.com/library/f8621ecb-a177-4025-9011-a6569999746a.aspx).
     
 - **Propriétés** Spécifient d'autres paramètres de règles qui ne sont pas des conditions, des exceptions ou des actions. Par exemple, lorsque la règle doit être appliquée, les propriétés indiquent s'il faut appliquer ou tester la règle, ainsi que la période de temps sur laquelle la règle reste active. 
     
@@ -117,7 +117,7 @@ Plusieurs types de messages transitent par une organisation. Le tableau suivant 
    
 ## <a name="what-else-should-i-know"></a>Que dois-je savoir d’autre ?
 
-- La valeur de la propriété **version** ou **RuleVersion** d'une règle n'est pas importante dans Exchange Online Protection. 
+- La valeur de la propriété **version** ou **RuleVersion** d’une règle n’est pas importante dans Exchange Online Protection. 
     
 - Une fois que vous avez créé ou modifié une règle de flux de messagerie, l’application de la nouvelle règle ou de la règle mise à jour au courrier électronique peut prendre jusqu’à 30 minutes.
     
