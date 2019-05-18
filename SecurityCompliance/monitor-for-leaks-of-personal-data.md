@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 2/7/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.collection:
 - Strat_O365_Enterprise
@@ -16,259 +16,263 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez trois outils qui permettent de surveiller les fuites de données personnelles.
-ms.openlocfilehash: d9b48589ace06186d5f177d1b90f02f8657637bd
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d5dbf2841b165e46ef40125056f142cbd316e9ee
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263262"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158636"
 ---
-# <a name="monitor-for-leaks-of-personal-data"></a><span data-ttu-id="31909-103">Surveillance des fuites de données personnelles</span><span class="sxs-lookup"><span data-stu-id="31909-103">Monitor for leaks of personal data</span></span>
+# <a name="monitor-for-leaks-of-personal-data"></a><span data-ttu-id="7d6ac-103">Surveillance des fuites de données personnelles</span><span class="sxs-lookup"><span data-stu-id="7d6ac-103">Monitor for leaks of personal data</span></span>
 
-<span data-ttu-id="31909-p101">Il existe de nombreux outils qui peuvent être utilisés pour surveiller l’utilisation et le transport des données personnelles. Cette rubrique décrit trois outils qui fonctionnent correctement.</span><span class="sxs-lookup"><span data-stu-id="31909-p101">There are many tools that can be used to monitor the use and transport of personal data. This topic describes three tools that work well.</span></span>
+<span data-ttu-id="7d6ac-p101">Il existe de nombreux outils qui peuvent être utilisés pour surveiller l’utilisation et le transport des données personnelles. Cette rubrique décrit trois outils qui fonctionnent correctement.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-p101">There are many tools that can be used to monitor the use and transport of personal data. This topic describes three tools that work well.</span></span>
 
 ![Outils permettant de surveiller l’utilisation et le transport des données personnelles](Media/Monitor-for-leaks-of-personal-data-image1.png)
 
-<span data-ttu-id="31909-107">Dans cette illustration :</span><span class="sxs-lookup"><span data-stu-id="31909-107">In the illustration:</span></span>
+<span data-ttu-id="7d6ac-107">Dans cette illustration :</span><span class="sxs-lookup"><span data-stu-id="7d6ac-107">In the illustration:</span></span>
 
--   <span data-ttu-id="31909-p102">Commencez par les rapports sur la protection contre la perte de données Office 365 pour surveiller les données personnelles dans SharePoint Online, OneDrive Entreprise et le courrier électronique en transit. Ils offrent le meilleur niveau de détail pour surveiller les données personnelles. Toutefois, ces rapports n’incluent pas tous les services dans Office 365.</span><span class="sxs-lookup"><span data-stu-id="31909-p102">Start with Office 365 data loss prevention reports for monitoring personal data in SharePoint Online, OneDrive for Business, and email in transit. These provide the greatest level of detail for monitoring personal data. However, these reports don’t include all services in Office 365.</span></span>
+-   <span data-ttu-id="7d6ac-p102">Commencez par les rapports sur la protection contre la perte de données Office 365 pour surveiller les données personnelles dans SharePoint Online, OneDrive Entreprise et le courrier électronique en transit. Ils offrent le meilleur niveau de détail pour surveiller les données personnelles. Toutefois, ces rapports n’incluent pas tous les services dans Office 365.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-p102">Start with Office 365 data loss prevention reports for monitoring personal data in SharePoint Online, OneDrive for Business, and email in transit. These provide the greatest level of detail for monitoring personal data. However, these reports don’t include all services in Office 365.</span></span>
 
--   <span data-ttu-id="31909-p103">Utilisez ensuite les stratégies d’alerte et le journal d’audit Office 365 pour surveiller l’activité des services Office 365. Configurez la surveillance continue ou faites des recherches dans le journal d’audit pour identifier un incident. Le journal d’audit Office 365 fonctionne sur tous les services Office 365 (Sway, PowerBI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, l’activité d’administration, OneDrive Entreprise, SharePoint Online, le courrier électronique en transit et les boîtes aux lettres au repos). Les conversations Skype sont incluses dans les boîtes aux lettres au repos.</span><span class="sxs-lookup"><span data-stu-id="31909-p103">Next, use alert policies and the Office 365 audit log to monitor activity across Office 365 services. Setup ongoing monitoring or search the audit log to investigate an incident. The Office 365 audit log works across Office 365 services — Sway, PowerBI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, Admin activity, OneDrive for Business, SharePoint Online, mail in transit, and mailboxes at rest. Skype conversations are included in mailboxes at rest.</span></span>
+-   <span data-ttu-id="7d6ac-p103">Utilisez ensuite les stratégies d’alerte et le journal d’audit Office 365 pour surveiller l’activité des services Office 365. Configurez la surveillance continue ou faites des recherches dans le journal d’audit pour identifier un incident. Le journal d’audit Office 365 fonctionne sur tous les services Office 365 (Sway, PowerBI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, l’activité d’administration, OneDrive Entreprise, SharePoint Online, le courrier électronique en transit et les boîtes aux lettres au repos). Les conversations Skype sont incluses dans les boîtes aux lettres au repos.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-p103">Next, use alert policies and the Office 365 audit log to monitor activity across Office 365 services. Setup ongoing monitoring or search the audit log to investigate an incident. The Office 365 audit log works across Office 365 services — Sway, PowerBI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, Admin activity, OneDrive for Business, SharePoint Online, mail in transit, and mailboxes at rest. Skype conversations are included in mailboxes at rest.</span></span>
 
--   <span data-ttu-id="31909-p104">Enfin, utilisez Microsoft Cloud App Security pour surveiller les fichiers contenant des données sensibles dans d’autres fournisseurs SaaS. Il sera bientôt possible d’utiliser des types d’informations sensibles Office 365 et des étiquettes unifiées dans Azure Information Protection et Office avec Cloud App Security. Vous pouvez configurer des stratégies qui s’appliquent à toutes vos applications SaaS ou des applications spécifiques (Box, par exemple). Cloud App Security ne découvre pas les fichiers dans Exchange Online, y compris les fichiers joints à un courrier électronique.</span><span class="sxs-lookup"><span data-stu-id="31909-p104">Finally, Use Microsoft Cloud App Security to monitor files with sensitive data in other SaaS providers. Coming soon is the ability to use Office 365 sensitive information types and unified labels across Azure Information Protection and Office with Cloud App Security. You can setup policies that apply to all of your SaaS apps or specific apps (like Box). Cloud App Security doesn’t discover files in Exchange Online, including files attached to email.</span></span>
+-   <span data-ttu-id="7d6ac-p104">Enfin, utilisez Microsoft Cloud App Security pour surveiller les fichiers contenant des données sensibles dans d’autres fournisseurs SaaS. Il sera bientôt possible d’utiliser des types d’informations sensibles Office 365 et des étiquettes unifiées dans Azure Information Protection et Office avec Cloud App Security. Vous pouvez configurer des stratégies qui s’appliquent à toutes vos applications SaaS ou des applications spécifiques (Box, par exemple). Cloud App Security ne découvre pas les fichiers dans Exchange Online, y compris les fichiers joints à un courrier électronique.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-p104">Finally, Use Microsoft Cloud App Security to monitor files with sensitive data in other SaaS providers. Coming soon is the ability to use Office 365 sensitive information types and unified labels across Azure Information Protection and Office with Cloud App Security. You can setup policies that apply to all of your SaaS apps or specific apps (like Box). Cloud App Security doesn’t discover files in Exchange Online, including files attached to email.</span></span>
 
-## <a name="office-365-data-loss-prevention-reports"></a><span data-ttu-id="31909-119">Rapports de protection contre la perte de données d’Office 365</span><span class="sxs-lookup"><span data-stu-id="31909-119">Office 365 data loss prevention reports</span></span>
+## <a name="office-365-data-loss-prevention-reports"></a><span data-ttu-id="7d6ac-119">Rapports de protection contre la perte de données d’Office 365</span><span class="sxs-lookup"><span data-stu-id="7d6ac-119">Office 365 data loss prevention reports</span></span>
 
-<span data-ttu-id="31909-p105">Après avoir créé des stratégies de protection contre la perte de données, vous voulez vérifier qu’elles fonctionnent comme prévu et vous aident à maintenir la conformité. Avec les rapports DLP d’Office 365, vous pouvez rapidement visualiser le nombre de correspondances de stratégie DLP, de remplacements et de faux positifs, savoir si ce nombre augmente ou diminue dans le temps, filtrer le rapport de différentes manières et afficher des détails supplémentaires en sélectionnant un point sur une ligne du graphique.</span><span class="sxs-lookup"><span data-stu-id="31909-p105">After you create your data loss prevention (DLP) policies, you’ll want to verify that they’re working as you intended and helping you to stay compliant. With the DLP reports in Office 365, you can quickly view the number of DLP policy matches, overrides, or false positives; see whether they’re trending up or down over time; filter the report in different ways; and view additional details by selecting a point on a line on the graph.</span></span>
+<span data-ttu-id="7d6ac-p105">Après avoir créé des stratégies de protection contre la perte de données, vous voulez vérifier qu’elles fonctionnent comme prévu et vous aident à maintenir la conformité. Avec les rapports DLP d’Office 365, vous pouvez rapidement visualiser le nombre de correspondances de stratégie DLP, de remplacements et de faux positifs, savoir si ce nombre augmente ou diminue dans le temps, filtrer le rapport de différentes manières et afficher des détails supplémentaires en sélectionnant un point sur une ligne du graphique.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-p105">After you create your data loss prevention (DLP) policies, you’ll want to verify that they’re working as you intended and helping you to stay compliant. With the DLP reports in Office 365, you can quickly view the number of DLP policy matches, overrides, or false positives; see whether they’re trending up or down over time; filter the report in different ways; and view additional details by selecting a point on a line on the graph.</span></span>
 
-<span data-ttu-id="31909-122">Vous pouvez utiliser les rapports DLP pour :</span><span class="sxs-lookup"><span data-stu-id="31909-122">You can use the DLP reports to:</span></span>
+<span data-ttu-id="7d6ac-122">Vous pouvez utiliser les rapports DLP pour :</span><span class="sxs-lookup"><span data-stu-id="7d6ac-122">You can use the DLP reports to:</span></span>
 
--   <span data-ttu-id="31909-123">Vous concentrer sur des périodes de temps spécifiques et comprendre les raisons des pics et des tendances.</span><span class="sxs-lookup"><span data-stu-id="31909-123">Focus on specific time periods and understand the reasons for spikes and trends.</span></span>
+-   <span data-ttu-id="7d6ac-123">Vous concentrer sur des périodes de temps spécifiques et comprendre les raisons des pics et des tendances.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-123">Focus on specific time periods and understand the reasons for spikes and trends.</span></span>
 
--   <span data-ttu-id="31909-124">Découvrir les processus d’entreprise qui enfreignent les stratégies DLP de votre organisation</span><span class="sxs-lookup"><span data-stu-id="31909-124">Discover business processes that violate your organization’s DLP policies.</span></span>
+-   <span data-ttu-id="7d6ac-124">Découvrir les processus d’entreprise qui enfreignent les stratégies DLP de votre organisation</span><span class="sxs-lookup"><span data-stu-id="7d6ac-124">Discover business processes that violate your organization’s DLP policies.</span></span>
 
--   <span data-ttu-id="31909-125">Comprendre l’incidence des stratégies DLP sur l’entreprise.</span><span class="sxs-lookup"><span data-stu-id="31909-125">Understand any business impact of the DLP policies.</span></span>
+-   <span data-ttu-id="7d6ac-125">Comprendre l’incidence des stratégies DLP sur l’entreprise.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-125">Understand any business impact of the DLP policies.</span></span>
 
--   <span data-ttu-id="31909-126">Afficher les motifs présentés par les utilisateurs lorsqu'ils passent outre une stratégie ou signalent un faux positif.</span><span class="sxs-lookup"><span data-stu-id="31909-126">View the justifications submitted by users when they resolve a policy tip by overriding the policy or reporting a false positive.</span></span>
+-   <span data-ttu-id="7d6ac-126">Afficher les motifs présentés par les utilisateurs lorsqu'ils passent outre une stratégie ou signalent un faux positif.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-126">View the justifications submitted by users when they resolve a policy tip by overriding the policy or reporting a false positive.</span></span>
 
--   <span data-ttu-id="31909-127">Vérifier la conformité avec une stratégie DLP spécifique en affichant les correspondances pour cette stratégie.</span><span class="sxs-lookup"><span data-stu-id="31909-127">Verify compliance with a specific DLP policy by showing any matches for that policy.</span></span>
+-   <span data-ttu-id="7d6ac-127">Vérifier la conformité avec une stratégie DLP spécifique en affichant les correspondances pour cette stratégie.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-127">Verify compliance with a specific DLP policy by showing any matches for that policy.</span></span>
 
--   <span data-ttu-id="31909-128">Afficher la liste des fichiers avec des données sensibles qui correspondent à vos stratégies DLP dans le volet de détails.</span><span class="sxs-lookup"><span data-stu-id="31909-128">View a list of files with sensitive data that matches your DLP policies in the details pane.</span></span>
+-   <span data-ttu-id="7d6ac-128">Afficher la liste des fichiers avec des données sensibles qui correspondent à vos stratégies DLP dans le volet de détails.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-128">View a list of files with sensitive data that matches your DLP policies in the details pane.</span></span>
 
-<span data-ttu-id="31909-129">En outre, vous pouvez utiliser les rapports DLP pour affiner vos stratégies DLP lorsque vous les exécutez en mode test.</span><span class="sxs-lookup"><span data-stu-id="31909-129">In addition, you can use the DLP reports to fine tune your DLP policies as you run them in test mode.</span></span>
+<span data-ttu-id="7d6ac-129">En outre, vous pouvez utiliser les rapports DLP pour affiner vos stratégies DLP lorsque vous les exécutez en mode test.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-129">In addition, you can use the DLP reports to fine tune your DLP policies as you run them in test mode.</span></span>
 
-<span data-ttu-id="31909-130">Les rapports DLP sont dans le centre de sécurité et le centre de conformité.</span><span class="sxs-lookup"><span data-stu-id="31909-130">DLP reports are in the security center and the compliance center.</span></span> <span data-ttu-id="31909-131">Accéder aux rapports \>Afficher des rapports.</span><span class="sxs-lookup"><span data-stu-id="31909-131">Navigate to Reports \> View reports.</span></span> <span data-ttu-id="31909-132">Sous Protection contre la perte de données (DLP), choisissez soit Correspondances avec les règles et les stratégies DLP ou Remplacements et faux positifs DLP.</span><span class="sxs-lookup"><span data-stu-id="31909-132">Under Data loss prevention (DLP), go to either DLP policy and rule matches or DLP false positives and overrides.</span></span>
+<span data-ttu-id="7d6ac-130">Les rapports DLP sont dans le centre de sécurité et le centre de conformité.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-130">DLP reports are in the security center and the compliance center.</span></span> <span data-ttu-id="7d6ac-131">Accéder aux rapports \>Afficher des rapports.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-131">Navigate to Reports \> View reports.</span></span> <span data-ttu-id="7d6ac-132">Sous Protection contre la perte de données (DLP), choisissez soit Correspondances avec les règles et les stratégies DLP ou Remplacements et faux positifs DLP.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-132">Under Data loss prevention (DLP), go to either DLP policy and rule matches or DLP false positives and overrides.</span></span>
 
-<span data-ttu-id="31909-133">Pour plus d’informations, consultez la rubrique [Affichage des rapports de protection contre la perte de données](https://support.office.com/fr-FR/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b).</span><span class="sxs-lookup"><span data-stu-id="31909-133">For more information, see [View the reports for data loss prevention](https://support.office.com/fr-FR/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b).</span></span>
+<span data-ttu-id="7d6ac-133">Pour plus d’informations, consultez la rubrique [Affichage des rapports de protection contre la perte de données](https://support.office.com/fr-FR/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b).</span><span class="sxs-lookup"><span data-stu-id="7d6ac-133">For more information, see [View the reports for data loss prevention](https://support.office.com/en-us/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b).</span></span>
 
 ![Rapport affichant les correspondances de stratégie DLP](Media/Monitor-for-leaks-of-personal-data-image2.png)
 
-## <a name="office-365-audit-log-and-alert-policies"></a><span data-ttu-id="31909-135">Journal d’audit Office 365 et stratégies d’alerte</span><span class="sxs-lookup"><span data-stu-id="31909-135">Office 365 audit log and alert policies</span></span>
+## <a name="office-365-audit-log-and-alert-policies"></a><span data-ttu-id="7d6ac-135">Journal d’audit Office 365 et stratégies d’alerte</span><span class="sxs-lookup"><span data-stu-id="7d6ac-135">Office 365 audit log and alert policies</span></span>
 
-<span data-ttu-id="31909-136">Le journal d’audit Office 365 contient les événements Exchange Online, SharePoint Online, OneDrive Entreprise, Azure Active Directory, Microsoft Teams, Power BI, Sway et d’autres services Office 365.</span><span class="sxs-lookup"><span data-stu-id="31909-136">The Office 365 audit log contains events from Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Power BI, Sway, and other Office 365 services.</span></span>
+<span data-ttu-id="7d6ac-136">Le journal d’audit Office 365 contient les événements Exchange Online, SharePoint Online, OneDrive Entreprise, Azure Active Directory, Microsoft Teams, Power BI, Sway et d’autres services Office 365.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-136">The Office 365 audit log contains events from Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Power BI, Sway, and other Office 365 services.</span></span>
 
-<span data-ttu-id="31909-137">Le Centre de sécurité et de conformité propose deux méthodes pour surveiller et générer des rapports sur la base du journal d’audit Office 365 :</span><span class="sxs-lookup"><span data-stu-id="31909-137">The security center and compliance center provide two ways to monitor and report against the Office 365 audit log:</span></span>
+<span data-ttu-id="7d6ac-137">Le Centre de sécurité et de conformité propose deux méthodes pour surveiller et générer des rapports sur la base du journal d’audit Office 365 :</span><span class="sxs-lookup"><span data-stu-id="7d6ac-137">The security center and compliance center provide two ways to monitor and report against the Office 365 audit log:</span></span>
 
--   <span data-ttu-id="31909-138">Configurer des stratégies d’alerte, afficher des alertes et surveiller les tendances : utilisez les nouveaux outils de tableau de bord d’alertes et de stratégie d’alerte dans le Centre de sécurité et de conformité.</span><span class="sxs-lookup"><span data-stu-id="31909-138">Setup alert policies, view alerts, and monitor trends — Use the alert policy and alert dashboard tools in either the security center or compliance center.</span></span>
+-   <span data-ttu-id="7d6ac-138">Configurer des stratégies d’alerte, afficher des alertes et surveiller les tendances : utilisez les nouveaux outils de tableau de bord d’alertes et de stratégie d’alerte dans le Centre de sécurité et de conformité.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-138">Setup alert policies, view alerts, and monitor trends — Use the alert policy and alert dashboard tools in either the security center or compliance center.</span></span>
 
--   <span data-ttu-id="31909-p107">Effectuer des recherches directement dans le journal d’audit : vous pouvez rechercher tous les événements dans une plage de dates spécifiée ou filtrer les résultats en fonction de critères spécifiques, tels que l’utilisateur ayant effectué l’action, l’action ou l’objet cible.</span><span class="sxs-lookup"><span data-stu-id="31909-p107">Search the audit log directly — Search for all events in a specified date rage. Or you can filter the results based on specific criteria, such as the user who performed the action, the action, or the target object.</span></span>
+-   <span data-ttu-id="7d6ac-p107">Effectuer des recherches directement dans le journal d’audit : vous pouvez rechercher tous les événements dans une plage de dates spécifiée ou filtrer les résultats en fonction de critères spécifiques, tels que l’utilisateur ayant effectué l’action, l’action ou l’objet cible.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-p107">Search the audit log directly — Search for all events in a specified date rage. Or you can filter the results based on specific criteria, such as the user who performed the action, the action, or the target object.</span></span>
 
-<span data-ttu-id="31909-p108">Les équipes de conformité et de sécurité des informations peuvent utiliser ces outils pour revoir de façon proactive les activités effectuées par les utilisateurs finaux et les administrateurs dans les services Office 365. Des alertes automatiques peuvent être configurées pour envoyer des notifications par courrier électronique lorsque certaines activités se produisent sur des collections de sites spécifiques (par exemple, lorsque le contenu est partagé à partir de sites connus pour contenir des informations relatives au RGPD). Ainsi, ces équipes peuvent suivre les utilisateurs afin de vérifier que les stratégies de sécurité d’entreprise sont suivies, ou de fournir des formations supplémentaires.</span><span class="sxs-lookup"><span data-stu-id="31909-p108">Information security and compliance teams can use these tools to proactively review activities performed by both end users and administrators across Office 365 services. Automatic alerts can be configured to send email notifications when certain activities occur on specific site collections - for example when content is shared from sites known to contain GDPR related information. This allows those teams to follow up with users to ensure that corporate security policies are followed, or to provide additional training.</span></span>
+<span data-ttu-id="7d6ac-p108">Les équipes de conformité et de sécurité des informations peuvent utiliser ces outils pour revoir de façon proactive les activités effectuées par les utilisateurs finaux et les administrateurs dans les services Office 365. Des alertes automatiques peuvent être configurées pour envoyer des notifications par courrier électronique lorsque certaines activités se produisent sur des collections de sites spécifiques (par exemple, lorsque le contenu est partagé à partir de sites connus pour contenir des informations relatives au RGPD). Ainsi, ces équipes peuvent suivre les utilisateurs afin de vérifier que les stratégies de sécurité d’entreprise sont suivies, ou de fournir des formations supplémentaires.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-p108">Information security and compliance teams can use these tools to proactively review activities performed by both end users and administrators across Office 365 services. Automatic alerts can be configured to send email notifications when certain activities occur on specific site collections - for example when content is shared from sites known to contain GDPR related information. This allows those teams to follow up with users to ensure that corporate security policies are followed, or to provide additional training.</span></span>
 
-<span data-ttu-id="31909-p109">Les équipes de sécurité des informations peuvent aussi effectuer des recherches dans le journal pour enquêter sur des violations de données présumées, déterminer la cause initiale et l’étendue de la violation. Cette fonctionnalité intégrée facilite la conformité à l’article 33 et 34 du RGPD, qui exige que des notifications soient fournies à l’autorité de surveillance du RGPD et aux personnes victimes d’une violation de données sur une période donnée. Les entrées du journal d’audit sont conservées pendant 90 jours seulement au sein du service (il est souvent recommandé que ces journaux soient conservés pour des périodes de temps plus longues et de nombreuses organisations en ont fait la demande).</span><span class="sxs-lookup"><span data-stu-id="31909-p109">Information security teams can also search the audit log to investigate suspected data breaches and determine both root cause and the extent of the breach. This built in capability facilitates compliance with article 33 and 34 of the GDPR, which require notifications be provided to the GDPR supervisory authority and to the data subjects themselves of a data breach within a specific time period. Audit log entries are only retained for 90 days within the service - it is often recommended and many organizations required that these logs be retained for longer periods of time.</span></span>
+<span data-ttu-id="7d6ac-p109">Les équipes de sécurité des informations peuvent aussi effectuer des recherches dans le journal pour enquêter sur des violations de données présumées, déterminer la cause initiale et l’étendue de la violation. Cette fonctionnalité intégrée facilite la conformité à l’article 33 et 34 du RGPD, qui exige que des notifications soient fournies à l’autorité de surveillance du RGPD et aux personnes victimes d’une violation de données sur une période donnée. Les entrées du journal d’audit sont conservées pendant 90 jours seulement au sein du service (il est souvent recommandé que ces journaux soient conservés pour des périodes de temps plus longues et de nombreuses organisations en ont fait la demande).</span><span class="sxs-lookup"><span data-stu-id="7d6ac-p109">Information security teams can also search the audit log to investigate suspected data breaches and determine both root cause and the extent of the breach. This built in capability facilitates compliance with article 33 and 34 of the GDPR, which require notifications be provided to the GDPR supervisory authority and to the data subjects themselves of a data breach within a specific time period. Audit log entries are only retained for 90 days within the service - it is often recommended and many organizations required that these logs be retained for longer periods of time.</span></span>
 
-<span data-ttu-id="31909-p110">Il existe des solutions qui s’abonnent aux journaux d’audit unifiés via l’API Activité de gestion Microsoft et qui peuvent à la fois stocker des entrées du journal et fournir des alertes et des tableaux de bord avancés. [Microsoft Operations Management Suite (OMS)](https://docs.microsoft.com/fr-FR/azure/operations-management-suite/oms-solution-office-365) en est un exemple.</span><span class="sxs-lookup"><span data-stu-id="31909-p110">Solutions are available which subscribe to the Unified Audit Logs through the Microsoft Management Activity API and can both store log entries as needed, and provide advanced dashboards and alerts. One example is [Microsoft Operations Management Suite (OMS)](https://docs.microsoft.com/fr-FR/azure/operations-management-suite/oms-solution-office-365).</span></span>
+<span data-ttu-id="7d6ac-p110">Il existe des solutions qui s’abonnent aux journaux d’audit unifiés via l’API Activité de gestion Microsoft et qui peuvent à la fois stocker des entrées du journal et fournir des alertes et des tableaux de bord avancés. [Microsoft Operations Management Suite (OMS)](https://docs.microsoft.com/fr-FR/azure/operations-management-suite/oms-solution-office-365) en est un exemple.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-p110">Solutions are available which subscribe to the Unified Audit Logs through the Microsoft Management Activity API and can both store log entries as needed, and provide advanced dashboards and alerts. One example is [Microsoft Operations Management Suite (OMS)](https://docs.microsoft.com/en-us/azure/operations-management-suite/oms-solution-office-365).</span></span>
 
-<span data-ttu-id="31909-149">Plus d’informations sur les stratégies d’alerte et l’exécution d’une recherche dans le journal d’audit :</span><span class="sxs-lookup"><span data-stu-id="31909-149">More information about alert policies and searching the audit log:</span></span>
+<span data-ttu-id="7d6ac-149">Plus d’informations sur les stratégies d’alerte et l’exécution d’une recherche dans le journal d’audit :</span><span class="sxs-lookup"><span data-stu-id="7d6ac-149">More information about alert policies and searching the audit log:</span></span>
 
--   [<span data-ttu-id="31909-150">Stratégies d’alerte dans le Centre de sécurité et de conformité Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="31909-150">Alert policies in the Microsoft 365 security and compliance centers</span></span>](https://support.office.com/fr-FR/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
+-   <span data-ttu-id="7d6ac-150">
+  [Stratégies d’alerte dans le Centre de sécurité et de conformité Microsoft 365](https://support.office.com/fr-FR/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)</span><span class="sxs-lookup"><span data-stu-id="7d6ac-150">[Alert policies in the Microsoft 365 security and compliance centers](https://support.office.com/en-us/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)</span></span>
 
--   <span data-ttu-id="31909-151">[Effectuer des recherches dans le journal d’audit dans le Centre de sécurité et de conformité Office 365](https://support.office.com/fr-FR/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (introduction)</span><span class="sxs-lookup"><span data-stu-id="31909-151">[Search the audit log for user and admin activity in Office 365](https://support.office.com/fr-FR/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (introduction)</span></span>
+-   <span data-ttu-id="7d6ac-151">
+  [Effectuer des recherches dans le journal d’audit dans le Centre de sécurité et de conformité Office 365](https://support.office.com/fr-FR/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (introduction)</span><span class="sxs-lookup"><span data-stu-id="7d6ac-151">[Search the audit log for user and admin activity in Office 365](https://support.office.com/en-us/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (introduction)</span></span>
 
--   [<span data-ttu-id="31909-152">Activer ou désactiver la recherche dans un journal d’audit Office 365</span><span class="sxs-lookup"><span data-stu-id="31909-152">Turn Office 365 audit log search on or off</span></span>](https://support.office.com/fr-FR/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
+-   <span data-ttu-id="7d6ac-152">
+  [Activer ou désactiver la recherche dans un journal d’audit Office 365](https://support.office.com/fr-FR/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)</span><span class="sxs-lookup"><span data-stu-id="7d6ac-152">[Turn Office 365 audit log search on or off](https://support.office.com/en-us/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)</span></span>
 
--   <span data-ttu-id="31909-153">
-  [Rechercher le journal d’audit](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)</span><span class="sxs-lookup"><span data-stu-id="31909-153">[Search the audit log](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)</span></span>
+-   <span data-ttu-id="7d6ac-153">
+  [Rechercher le journal d’audit](https://support.office.com/fr-FR/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)</span><span class="sxs-lookup"><span data-stu-id="7d6ac-153">[Search the audit log](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)</span></span>
 
--   <span data-ttu-id="31909-154">
-  [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (cmdlet)</span><span class="sxs-lookup"><span data-stu-id="31909-154">[Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (cmdlet)</span></span> 
+-   <span data-ttu-id="7d6ac-154">
+  [Search-UnifiedAuditLog](https://technet.microsoft.com/fr-FR/library/mt238501(v=exchg.160).aspx) (cmdlet)</span><span class="sxs-lookup"><span data-stu-id="7d6ac-154">[Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (cmdlet)</span></span> 
 
--   [<span data-ttu-id="31909-155">Propriétés détaillées dans le journal d’audit Office 365</span><span class="sxs-lookup"><span data-stu-id="31909-155">Detailed properties in the Office 365 audit log</span></span>](https://support.office.com/fr-FR/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
+-   <span data-ttu-id="7d6ac-155">
+  [Propriétés détaillées dans le journal d’audit Office 365](https://support.office.com/fr-FR/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)</span><span class="sxs-lookup"><span data-stu-id="7d6ac-155">[Detailed properties in the Office 365 audit log](https://support.office.com/en-us/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)</span></span>
 
-## <a name="microsoft-cloud-app-security"></a><span data-ttu-id="31909-156">Microsoft Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="31909-156">Microsoft Cloud App Security</span></span>
+## <a name="microsoft-cloud-app-security"></a><span data-ttu-id="7d6ac-156">Microsoft Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="7d6ac-156">Microsoft Cloud App Security</span></span>
 
-<span data-ttu-id="31909-157">Microsoft Cloud App Security vous permet de découvrir d’autres applications SaaS utilisées dans vos réseaux et les données sensibles qui sont envoyées vers et depuis ces applications.</span><span class="sxs-lookup"><span data-stu-id="31909-157">Microsoft Cloud App Security helps you discover other SaaS apps in use across your networks and sensitive data that is sent to and from these apps.</span></span>
+<span data-ttu-id="7d6ac-157">Microsoft Cloud App Security vous permet de découvrir d’autres applications SaaS utilisées dans vos réseaux et les données sensibles qui sont envoyées vers et depuis ces applications.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-157">Microsoft Cloud App Security helps you discover other SaaS apps in use across your networks and sensitive data that is sent to and from these apps.</span></span>
 
-<span data-ttu-id="31909-p111">Microsoft Cloud App Security est un service complet fournissant une grande visibilité, des contrôles précis et une meilleure protection contre les menaces pour vos applications cloud. Il identifie plus de 15 000 applications cloud dans votre réseau (de tous les appareils) et fournit une notation des risques et une analyse et évaluation continues des risques. Aucun agent n’est obligatoire : les informations sont collectées à partir de vos pare-feu et proxys afin d’offrir une visibilité et un contexte complets pour l’utilisation du cloud et du Shadow IT.</span><span class="sxs-lookup"><span data-stu-id="31909-p111">Microsoft Cloud App Security is a comprehensive service providing deep visibility, granular controls and enhanced threat protection for your cloud apps. It identifies more than 15,000 cloud applications in your network-from all devices-and provides risk scoring and ongoing risk assessment and analytics. No agents required: information is collected from your firewalls and proxies to give you complete visibility and context for cloud usage and shadow IT.</span></span>
+<span data-ttu-id="7d6ac-p111">Microsoft Cloud App Security est un service complet fournissant une grande visibilité, des contrôles précis et une meilleure protection contre les menaces pour vos applications cloud. Il identifie plus de 15 000 applications cloud dans votre réseau (de tous les appareils) et fournit une notation des risques et une analyse et évaluation continues des risques. Aucun agent n’est obligatoire : les informations sont collectées à partir de vos pare-feu et proxys afin d’offrir une visibilité et un contexte complets pour l’utilisation du cloud et du Shadow IT.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-p111">Microsoft Cloud App Security is a comprehensive service providing deep visibility, granular controls and enhanced threat protection for your cloud apps. It identifies more than 15,000 cloud applications in your network-from all devices-and provides risk scoring and ongoing risk assessment and analytics. No agents required: information is collected from your firewalls and proxies to give you complete visibility and context for cloud usage and shadow IT.</span></span>
 
-<span data-ttu-id="31909-p112">Pour mieux comprendre votre environnement cloud, la fonctionnalité d’examen de Cloud App Security fournit une grande visibilité sur l’ensemble des activités, fichiers et comptes pour les applications approuvées et gérées. Vous pouvez obtenir des informations détaillées sur un niveau de fichier et découvrir où se déplacent les données dans les applications cloud.</span><span class="sxs-lookup"><span data-stu-id="31909-p112">To better understand your cloud environment, Cloud App Security investigate feature provides deep visibility into all activities, files and accounts for sanctioned and managed apps. You can gain detailed information on a file level and discover where data travels in the cloud apps.</span></span>
+<span data-ttu-id="7d6ac-p112">Pour mieux comprendre votre environnement cloud, la fonctionnalité d’examen de Cloud App Security fournit une grande visibilité sur l’ensemble des activités, fichiers et comptes pour les applications approuvées et gérées. Vous pouvez obtenir des informations détaillées sur un niveau de fichier et découvrir où se déplacent les données dans les applications cloud.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-p112">To better understand your cloud environment, Cloud App Security investigate feature provides deep visibility into all activities, files and accounts for sanctioned and managed apps. You can gain detailed information on a file level and discover where data travels in the cloud apps.</span></span>
 
-<span data-ttu-id="31909-163">Pour consulter des exemples, l’illustration suivante décrit deux stratégies Cloud App Security qui peuvent vous aider avec le RGPD.</span><span class="sxs-lookup"><span data-stu-id="31909-163">For examples, the following illustration demonstrates two Cloud App Security policies that can help with GDPR.</span></span>
+<span data-ttu-id="7d6ac-163">Pour consulter des exemples, l’illustration suivante décrit deux stratégies Cloud App Security qui peuvent vous aider avec le RGPD.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-163">For examples, the following illustration demonstrates two Cloud App Security policies that can help with GDPR.</span></span>
 
 ![Exemple de stratégies Cloud App Security](Media/Monitor-for-leaks-of-personal-data-image3.png)
 
-<span data-ttu-id="31909-165">La première stratégie signale lorsque des fichiers avec un attribut PII prédéfini ou une expression personnalisée que vous choisissez sont partagés en dehors de l’organisation à partir des applications SaaS que vous choisissez.</span><span class="sxs-lookup"><span data-stu-id="31909-165">The first policy alerts when files with a predefined PII attribute or custom expression that you choose is shared outside the organization from the SaaS apps that you choose.</span></span>
+<span data-ttu-id="7d6ac-165">La première stratégie signale lorsque des fichiers avec un attribut PII prédéfini ou une expression personnalisée que vous choisissez sont partagés en dehors de l’organisation à partir des applications SaaS que vous choisissez.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-165">The first policy alerts when files with a predefined PII attribute or custom expression that you choose is shared outside the organization from the SaaS apps that you choose.</span></span>
 
-<span data-ttu-id="31909-p113">La seconde stratégie bloque les téléchargements de fichiers sur des appareils non gérés. Vous choisissez les attributs dans les fichiers à rechercher et les applications SaaS auxquelles vous souhaitez appliquer la stratégie.</span><span class="sxs-lookup"><span data-stu-id="31909-p113">The second policy blocks downloads of files to any unmanaged device. You choose the attributes within the files to look for and the SaaS apps you want the policy to apply to.</span></span>
+<span data-ttu-id="7d6ac-p113">La seconde stratégie bloque les téléchargements de fichiers sur des appareils non gérés. Vous choisissez les attributs dans les fichiers à rechercher et les applications SaaS auxquelles vous souhaitez appliquer la stratégie.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-p113">The second policy blocks downloads of files to any unmanaged device. You choose the attributes within the files to look for and the SaaS apps you want the policy to apply to.</span></span>
 
-<span data-ttu-id="31909-168">Les types d’attribut suivants seront bientôt disponibles dans Cloud App Security :</span><span class="sxs-lookup"><span data-stu-id="31909-168">These attribute types are coming soon to Cloud App Security:</span></span>
+<span data-ttu-id="7d6ac-168">Les types d’attribut suivants seront bientôt disponibles dans Cloud App Security :</span><span class="sxs-lookup"><span data-stu-id="7d6ac-168">These attribute types are coming soon to Cloud App Security:</span></span>
 
--   <span data-ttu-id="31909-169">Types d'informations sensibles Office 365</span><span class="sxs-lookup"><span data-stu-id="31909-169">Office 365 sensitive information types</span></span>
+-   <span data-ttu-id="7d6ac-169">Types d'informations sensibles Office 365</span><span class="sxs-lookup"><span data-stu-id="7d6ac-169">Office 365 sensitive information types</span></span>
 
--   <span data-ttu-id="31909-170">Étiquettes unifiées dans Office 365 et Azure Information Protection</span><span class="sxs-lookup"><span data-stu-id="31909-170">Unified labels across Office 365 and Azure Information Protection</span></span>
+-   <span data-ttu-id="7d6ac-170">Étiquettes unifiées dans Office 365 et Azure Information Protection</span><span class="sxs-lookup"><span data-stu-id="7d6ac-170">Unified labels across Office 365 and Azure Information Protection</span></span>
 
-### <a name="cloud-app-security-dashboard"></a><span data-ttu-id="31909-171">Tableau de bord Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="31909-171">Cloud App Security dashboard</span></span>
+### <a name="cloud-app-security-dashboard"></a><span data-ttu-id="7d6ac-171">Tableau de bord Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="7d6ac-171">Cloud App Security dashboard</span></span>
 
-<span data-ttu-id="31909-p114">Si vous n’avez pas encore commencé à utiliser Cloud App Security, commencez par l’activer. Pour accéder à Cloud App Security : <https://portal.cloudappsecurity.com>.</span><span class="sxs-lookup"><span data-stu-id="31909-p114">If you haven’t yet started to use Cloud App Security, begin by starting it up. To access Cloud App Security: <https://portal.cloudappsecurity.com>.</span></span>
+<span data-ttu-id="7d6ac-p114">Si vous n’avez pas encore commencé à utiliser Cloud App Security, commencez par l’activer. Pour accéder à Cloud App Security : <https://portal.cloudappsecurity.com>.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-p114">If you haven’t yet started to use Cloud App Security, begin by starting it up. To access Cloud App Security: <https://portal.cloudappsecurity.com>.</span></span>
 
-<span data-ttu-id="31909-p115">Remarque : veillez à activer l’option « Analyser automatiquement les fichiers pour les étiquettes de classification Azure Information Protection » (dans les paramètres généraux) lors de la prise en main de Cloud App Security ou avant d’attribuer des étiquettes. Après la configuration, Cloud App Security n’analyse pas de nouveau les fichiers existants tant qu’ils ne sont pas modifiés.</span><span class="sxs-lookup"><span data-stu-id="31909-p115">Note: Be sure to enable ‘Automatically scan files for Azure Information Protection classification labels’ (in General settings) when getting started with Cloud App Security or before you assign labels. After setup, Cloud App Security does not scan existing files again until they are modified.</span></span>
+<span data-ttu-id="7d6ac-p115">Remarque : veillez à activer l’option « Analyser automatiquement les fichiers pour les étiquettes de classification Azure Information Protection » (dans les paramètres généraux) lors de la prise en main de Cloud App Security ou avant d’attribuer des étiquettes. Après la configuration, Cloud App Security n’analyse pas de nouveau les fichiers existants tant qu’ils ne sont pas modifiés.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-p115">Note: Be sure to enable ‘Automatically scan files for Azure Information Protection classification labels’ (in General settings) when getting started with Cloud App Security or before you assign labels. After setup, Cloud App Security does not scan existing files again until they are modified.</span></span>
 
 ![Tableau de bord affichant des informations sur les alertes](Media/Monitor-for-leaks-of-personal-data-image4.png)
 
-<span data-ttu-id="31909-177">Plus d’informations :</span><span class="sxs-lookup"><span data-stu-id="31909-177">More information:</span></span>
+<span data-ttu-id="7d6ac-177">Plus d’informations :</span><span class="sxs-lookup"><span data-stu-id="7d6ac-177">More information:</span></span>
 
--   <span data-ttu-id="31909-178">Rubrique relative au [déploiement de Cloud App Security](https://docs.microsoft.com/fr-FR/cloud-app-security/getting-started-with-cloud-app-security)</span><span class="sxs-lookup"><span data-stu-id="31909-178">[Deploy Cloud App Security](https://docs.microsoft.com/fr-FR/cloud-app-security/getting-started-with-cloud-app-security)</span></span>
+-   <span data-ttu-id="7d6ac-178">Rubrique relative au [déploiement de Cloud App Security](https://docs.microsoft.com/fr-FR/cloud-app-security/getting-started-with-cloud-app-security)</span><span class="sxs-lookup"><span data-stu-id="7d6ac-178">[Deploy Cloud App Security](https://docs.microsoft.com/en-us/cloud-app-security/getting-started-with-cloud-app-security)</span></span>
 
--   <span data-ttu-id="31909-179">Rubrique relative aux [informations supplémentaires concernant Microsoft Cloud App Security](https://www.microsoft.com/fr-FR/cloud-platform/cloud-app-security)</span><span class="sxs-lookup"><span data-stu-id="31909-179">[More information about Microsoft Cloud App Security](https://www.microsoft.com/fr-FR/cloud-platform/cloud-app-security)</span></span>
+-   <span data-ttu-id="7d6ac-179">Rubrique relative aux [informations supplémentaires concernant Microsoft Cloud App Security](https://www.microsoft.com/en-us/cloud-platform/cloud-app-security)</span><span class="sxs-lookup"><span data-stu-id="7d6ac-179">[More information about Microsoft Cloud App Security](https://www.microsoft.com/en-us/cloud-platform/cloud-app-security)</span></span>
 
--   <span data-ttu-id="31909-180">Rubrique relative au [blocage des téléchargements d’informations sensibles à l’aide du proxy Microsoft Cloud App Security](https://docs.microsoft.com/fr-FR/cloud-app-security/use-case-proxy-block-session-aad)</span><span class="sxs-lookup"><span data-stu-id="31909-180">[Block downloads of sensitive information using the Microsoft Cloud App Security proxy](https://docs.microsoft.com/fr-FR/cloud-app-security/use-case-proxy-block-session-aad)</span></span>
+-   <span data-ttu-id="7d6ac-180">Rubrique relative au [blocage des téléchargements d’informations sensibles à l’aide du proxy Microsoft Cloud App Security](https://docs.microsoft.com/fr-FR/cloud-app-security/use-case-proxy-block-session-aad)</span><span class="sxs-lookup"><span data-stu-id="7d6ac-180">[Block downloads of sensitive information using the Microsoft Cloud App Security proxy](https://docs.microsoft.com/en-us/cloud-app-security/use-case-proxy-block-session-aad)</span></span>
 
-## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a><span data-ttu-id="31909-181">Exemple de stratégies d’activité et de fichier pour détecter le partage de données personnelles</span><span class="sxs-lookup"><span data-stu-id="31909-181">Example file and activity policies to detect sharing of personal data</span></span>
+## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a><span data-ttu-id="7d6ac-181">Exemple de stratégies d’activité et de fichier pour détecter le partage de données personnelles</span><span class="sxs-lookup"><span data-stu-id="7d6ac-181">Example file and activity policies to detect sharing of personal data</span></span>
 
-### <a name="detect-sharing-of-files-containing-pii--credit-card-number"></a><span data-ttu-id="31909-182">Détection du partage de fichiers contenant des informations PII : numéro de carte de crédit</span><span class="sxs-lookup"><span data-stu-id="31909-182">Detect sharing of files containing PII — Credit card number</span></span>
+### <a name="detect-sharing-of-files-containing-pii--credit-card-number"></a><span data-ttu-id="7d6ac-182">Détection du partage de fichiers contenant des informations PII : numéro de carte de crédit</span><span class="sxs-lookup"><span data-stu-id="7d6ac-182">Detect sharing of files containing PII — Credit card number</span></span>
 
-<span data-ttu-id="31909-183">Alerte lorsqu’un fichier contenant un numéro de carte de crédit est partagé à partir d’une application cloud approuvée.</span><span class="sxs-lookup"><span data-stu-id="31909-183">Alert when a file containing a credit card number is shared from an approved cloud app.</span></span>
-
-<table>
-<thead>
-<tr class="header">
-<th align="left"><span data-ttu-id="31909-184"><strong>Contrôle</strong></span><span class="sxs-lookup"><span data-stu-id="31909-184"><strong>Control</strong></span></span></th>
-<th align="left"><span data-ttu-id="31909-185"><strong>Paramètres</strong></span><span class="sxs-lookup"><span data-stu-id="31909-185"><strong>Settings</strong></span></span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><span data-ttu-id="31909-186">Type de stratégie</span><span class="sxs-lookup"><span data-stu-id="31909-186">Policy type</span></span></td>
-<td align="left"><span data-ttu-id="31909-187">Stratégie de fichier</span><span class="sxs-lookup"><span data-stu-id="31909-187">File policy</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="31909-188">Modèle de stratégie</span><span class="sxs-lookup"><span data-stu-id="31909-188">Policy template</span></span></td>
-<td align="left"><span data-ttu-id="31909-189">Aucun modèle</span><span class="sxs-lookup"><span data-stu-id="31909-189">No template</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="31909-190">Gravité de la stratégie</span><span class="sxs-lookup"><span data-stu-id="31909-190">Policy severity</span></span></td>
-<td align="left"><span data-ttu-id="31909-191">Importante</span><span class="sxs-lookup"><span data-stu-id="31909-191">High</span></span></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="31909-192">Catégorie</span><span class="sxs-lookup"><span data-stu-id="31909-192">Category</span></span></td>
-<td align="left"><span data-ttu-id="31909-193">DLP</span><span class="sxs-lookup"><span data-stu-id="31909-193">DLP</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="31909-194">Paramètres de filtre</span><span class="sxs-lookup"><span data-stu-id="31909-194">Filter settings</span></span></td>
-<td align="left"><p><span data-ttu-id="31909-195">Niveau d’accès = Public (Internet), Public, Externe</span><span class="sxs-lookup"><span data-stu-id="31909-195">Access level = Public (Internet), Public, External</span></span></p>
-<p><span data-ttu-id="31909-196">Application = &lt;sélectionner les applications&gt; (utiliser ce paramètre pour limiter la surveillance à des applications SaaS spécifiques)</span><span class="sxs-lookup"><span data-stu-id="31909-196">App = &lt;select apps&gt; (use this setting if you want to limit monitoring to specific SaaS apps)</span></span></p></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="31909-197">Appliquer à</span><span class="sxs-lookup"><span data-stu-id="31909-197">Apply to</span></span></td>
-<td align="left"><span data-ttu-id="31909-198">Tous les fichiers, tous les propriétaires</span><span class="sxs-lookup"><span data-stu-id="31909-198">All files, all owners</span></span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="31909-199">Inspection du contenu</span><span class="sxs-lookup"><span data-stu-id="31909-199">Content inspection</span></span></td>
-<td align="left"><p><span data-ttu-id="31909-200">Inclut les fichiers qui correspondent à une expression présente : Tous les pays: Finance: Numéro de carte de crédit</span><span class="sxs-lookup"><span data-stu-id="31909-200">Includes files that match a present expression: All countries: Finance: Credit card number</span></span></p>
-<p><span data-ttu-id="31909-201">N’exige pas de contexte approprié : désactivé (ceci correspondra aux mots-clés et aux expressions régulières)</span><span class="sxs-lookup"><span data-stu-id="31909-201">Don’t require relevant context: unchecked (this will match keywords as well as regex)</span></span></p>
-<p><span data-ttu-id="31909-202">Inclut les fichiers avec au moins 1 correspondance</span><span class="sxs-lookup"><span data-stu-id="31909-202">Includes files with at least 1 match</span></span></p>
-<p><span data-ttu-id="31909-203">Annuler le masquage des 4 derniers caractères de la violation : activé</span><span class="sxs-lookup"><span data-stu-id="31909-203">Unmask the last 4 characters of the violation: checked</span></span></p></td>
-</tr>
-<tr class="even">
-<td align="left"><span data-ttu-id="31909-204">Alertes</span><span class="sxs-lookup"><span data-stu-id="31909-204">Alerts</span></span></td>
-<td align="left"><p><span data-ttu-id="31909-205">Crée une alerte pour chaque fichier correspondant : activé</span><span class="sxs-lookup"><span data-stu-id="31909-205">Create an alert for each matching file: checked</span></span></p>
-<p><span data-ttu-id="31909-206">Limite quotidienne d’alertes : 1 000</span><span class="sxs-lookup"><span data-stu-id="31909-206">Daily alert limit: 1000</span></span></p>
-<p><span data-ttu-id="31909-207">Sélectionner une alerte en tant qu’e-mail : activé</span><span class="sxs-lookup"><span data-stu-id="31909-207">Select an alert as email: checked</span></span></p>
-<p><span data-ttu-id="31909-208">À : infosec@contoso.com</span><span class="sxs-lookup"><span data-stu-id="31909-208">To: infosec@contoso.com</span></span></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><span data-ttu-id="31909-209">Gouvernance</span><span class="sxs-lookup"><span data-stu-id="31909-209">Governance</span></span></td>
-<td align="left"><p><span data-ttu-id="31909-210">Microsoft OneDrive Entreprise</span><span class="sxs-lookup"><span data-stu-id="31909-210">Microsoft OneDrive for Business</span></span></p>
-<p><span data-ttu-id="31909-211">Donner un caractère privé : sélectionner Supprimer les utilisateurs externes</span><span class="sxs-lookup"><span data-stu-id="31909-211">Make private: check Remove External Users</span></span></p>
-<p><span data-ttu-id="31909-212">Tous les autres paramètres : désactivé</span><span class="sxs-lookup"><span data-stu-id="31909-212">All other settings: unchecked</span></span></p>
-<p><span data-ttu-id="31909-213">Microsoft SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="31909-213">Microsoft SharePoint Online</span></span></p>
-<p><span data-ttu-id="31909-214">Donner un caractère privé : sélectionner Supprimer les utilisateurs externes</span><span class="sxs-lookup"><span data-stu-id="31909-214">Make private: check Remove External Users</span></span></p>
-<p><span data-ttu-id="31909-215">Tous les autres paramètres : désactivé</span><span class="sxs-lookup"><span data-stu-id="31909-215">All other settings: unchecked</span></span></p></td>
-</tr>
-</tbody>
-</table>
-
-<span data-ttu-id="31909-216">Stratégies similaires :</span><span class="sxs-lookup"><span data-stu-id="31909-216">Similar policies:</span></span>
-
--   <span data-ttu-id="31909-217">Détection du partage de fichiers contenant des informations PII : adresse e-mail</span><span class="sxs-lookup"><span data-stu-id="31909-217">Detect sharing of Files containing PII - Email Address</span></span>
-
--   <span data-ttu-id="31909-218">Détection du partage de fichiers contenant des informations PII : numéro de passeport</span><span class="sxs-lookup"><span data-stu-id="31909-218">Detect sharing of Files containing PII - Passport Number</span></span>
-
-### <a name="detect-customer-or-hr-data-in-box-or-onedrive-for-business"></a><span data-ttu-id="31909-219">Détection des données client ou RH dans Box ou OneDrive Entreprise</span><span class="sxs-lookup"><span data-stu-id="31909-219">Detect Customer or HR Data in Box or OneDrive for Business</span></span>
-
-<span data-ttu-id="31909-220">Alerte lorsqu’un fichier étiqueté en tant que Données client ou Données RH est chargé dans OneDrive Entreprise ou Box.</span><span class="sxs-lookup"><span data-stu-id="31909-220">Alert when a file labeled as Customer Data or HR Data is uploaded to OneDrive for Business or Box.</span></span>
-
-<span data-ttu-id="31909-221">Remarques :</span><span class="sxs-lookup"><span data-stu-id="31909-221">Notes:</span></span>
-
--   <span data-ttu-id="31909-222">La surveillance de Box requiert un connecteur configuré à l’aide du kit de développement logiciel (SDK) du connecteur de l’API.</span><span class="sxs-lookup"><span data-stu-id="31909-222">Box monitoring requires a connector be configured using the API Connector SDK.</span></span>
-
--   <span data-ttu-id="31909-223">Cette stratégie exige des fonctionnalités qui sont actuellement en Private Preview.</span><span class="sxs-lookup"><span data-stu-id="31909-223">This policy requires capabilities that are currently in private preview.</span></span>
+<span data-ttu-id="7d6ac-183">Alerte lorsqu’un fichier contenant un numéro de carte de crédit est partagé à partir d’une application cloud approuvée.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-183">Alert when a file containing a credit card number is shared from an approved cloud app.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><span data-ttu-id="31909-224"><strong>Contrôle</strong></span><span class="sxs-lookup"><span data-stu-id="31909-224"><strong>Control</strong></span></span></th>
-<th align="left"><span data-ttu-id="31909-225"><strong>Paramètres</strong></span><span class="sxs-lookup"><span data-stu-id="31909-225"><strong>Settings</strong></span></span></th>
+<th align="left"><span data-ttu-id="7d6ac-184"><strong>Contrôle</strong></span><span class="sxs-lookup"><span data-stu-id="7d6ac-184"><strong>Control</strong></span></span></th>
+<th align="left"><span data-ttu-id="7d6ac-185"><strong>Paramètres</strong></span><span class="sxs-lookup"><span data-stu-id="7d6ac-185"><strong>Settings</strong></span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><span data-ttu-id="31909-226">Type de stratégie</span><span class="sxs-lookup"><span data-stu-id="31909-226">Policy type</span></span></td>
-<td align="left"><span data-ttu-id="31909-227">Stratégie d’activité</span><span class="sxs-lookup"><span data-stu-id="31909-227">Activity policy</span></span></td>
+<td align="left"><span data-ttu-id="7d6ac-186">Type de stratégie</span><span class="sxs-lookup"><span data-stu-id="7d6ac-186">Policy type</span></span></td>
+<td align="left"><span data-ttu-id="7d6ac-187">Stratégie de fichier</span><span class="sxs-lookup"><span data-stu-id="7d6ac-187">File policy</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="31909-228">Modèle de stratégie</span><span class="sxs-lookup"><span data-stu-id="31909-228">Policy template</span></span></td>
-<td align="left"><span data-ttu-id="31909-229">Aucun modèle</span><span class="sxs-lookup"><span data-stu-id="31909-229">No template</span></span></td>
+<td align="left"><span data-ttu-id="7d6ac-188">Modèle de stratégie</span><span class="sxs-lookup"><span data-stu-id="7d6ac-188">Policy template</span></span></td>
+<td align="left"><span data-ttu-id="7d6ac-189">Aucun modèle</span><span class="sxs-lookup"><span data-stu-id="7d6ac-189">No template</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="31909-230">Gravité de la stratégie</span><span class="sxs-lookup"><span data-stu-id="31909-230">Policy severity</span></span></td>
-<td align="left"><span data-ttu-id="31909-231">Importante</span><span class="sxs-lookup"><span data-stu-id="31909-231">High</span></span></td>
+<td align="left"><span data-ttu-id="7d6ac-190">Gravité de la stratégie</span><span class="sxs-lookup"><span data-stu-id="7d6ac-190">Policy severity</span></span></td>
+<td align="left"><span data-ttu-id="7d6ac-191">Importante</span><span class="sxs-lookup"><span data-stu-id="7d6ac-191">High</span></span></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="31909-232">Catégorie</span><span class="sxs-lookup"><span data-stu-id="31909-232">Category</span></span></td>
-<td align="left"><span data-ttu-id="31909-233">Contrôle partagé</span><span class="sxs-lookup"><span data-stu-id="31909-233">Sharing Control</span></span></td>
+<td align="left"><span data-ttu-id="7d6ac-192">Catégorie</span><span class="sxs-lookup"><span data-stu-id="7d6ac-192">Category</span></span></td>
+<td align="left"><span data-ttu-id="7d6ac-193">DLP</span><span class="sxs-lookup"><span data-stu-id="7d6ac-193">DLP</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="31909-234">Agir sur</span><span class="sxs-lookup"><span data-stu-id="31909-234">Act on</span></span></td>
-<td align="left"><span data-ttu-id="31909-235">Activité unique</span><span class="sxs-lookup"><span data-stu-id="31909-235">Single activity</span></span></td>
+<td align="left"><span data-ttu-id="7d6ac-194">Paramètres de filtre</span><span class="sxs-lookup"><span data-stu-id="7d6ac-194">Filter settings</span></span></td>
+<td align="left"><p><span data-ttu-id="7d6ac-195">Niveau d’accès = Public (Internet), Public, Externe</span><span class="sxs-lookup"><span data-stu-id="7d6ac-195">Access level = Public (Internet), Public, External</span></span></p>
+<p><span data-ttu-id="7d6ac-196">Application = &lt;sélectionner les applications&gt; (utiliser ce paramètre pour limiter la surveillance à des applications SaaS spécifiques)</span><span class="sxs-lookup"><span data-stu-id="7d6ac-196">App = &lt;select apps&gt; (use this setting if you want to limit monitoring to specific SaaS apps)</span></span></p></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="31909-236">Paramètres de filtre</span><span class="sxs-lookup"><span data-stu-id="31909-236">Filter settings</span></span></td>
-<td align="left"><p><span data-ttu-id="31909-237">Type d’activité = Charger un fichier</span><span class="sxs-lookup"><span data-stu-id="31909-237">Activity type = Upload File</span></span></p>
-<p><span data-ttu-id="31909-238">Application = Microsoft OneDrive Entreprise et Box</span><span class="sxs-lookup"><span data-stu-id="31909-238">App = Microsoft OneDrive for Business and Box</span></span></p>
-<p><span data-ttu-id="31909-239">Étiquette de classification (actuellement en Private Preview) : Azure Information Protection = données sur les clients, ressources humaines - données sur le salaire, ressources humaines - données sur les employés</span><span class="sxs-lookup"><span data-stu-id="31909-239">Classification Label (currently in private preview): Azure Information Protection = Customer Data, Human Resources—Salary Data, Human Resources—Employee Data</span></span></p></td>
+<td align="left"><span data-ttu-id="7d6ac-197">Appliquer à</span><span class="sxs-lookup"><span data-stu-id="7d6ac-197">Apply to</span></span></td>
+<td align="left"><span data-ttu-id="7d6ac-198">Tous les fichiers, tous les propriétaires</span><span class="sxs-lookup"><span data-stu-id="7d6ac-198">All files, all owners</span></span></td>
 </tr>
 <tr class="odd">
-<td align="left"><span data-ttu-id="31909-240">Alertes</span><span class="sxs-lookup"><span data-stu-id="31909-240">Alerts</span></span></td>
-<td align="left"><p><span data-ttu-id="31909-241">Créer une alerte : activé</span><span class="sxs-lookup"><span data-stu-id="31909-241">Create an alert: checked</span></span></p>
-<p><span data-ttu-id="31909-242">Limite quotidienne d’alertes : 1 000</span><span class="sxs-lookup"><span data-stu-id="31909-242">Daily alert limit: 1000</span></span></p>
-<p><span data-ttu-id="31909-243">Sélectionner une alerte en tant qu’e-mail : activé</span><span class="sxs-lookup"><span data-stu-id="31909-243">Select an alert as email: checked</span></span></p>
-<p><span data-ttu-id="31909-244">À : infosec@contoso.com</span><span class="sxs-lookup"><span data-stu-id="31909-244">To: infosec@contoso.com</span></span></p></td>
+<td align="left"><span data-ttu-id="7d6ac-199">Inspection du contenu</span><span class="sxs-lookup"><span data-stu-id="7d6ac-199">Content inspection</span></span></td>
+<td align="left"><p><span data-ttu-id="7d6ac-200">Inclut les fichiers qui correspondent à une expression présente : Tous les pays: Finance: Numéro de carte de crédit</span><span class="sxs-lookup"><span data-stu-id="7d6ac-200">Includes files that match a present expression: All countries: Finance: Credit card number</span></span></p>
+<p><span data-ttu-id="7d6ac-201">N’exige pas de contexte approprié : désactivé (ceci correspondra aux mots-clés et aux expressions régulières)</span><span class="sxs-lookup"><span data-stu-id="7d6ac-201">Don’t require relevant context: unchecked (this will match keywords as well as regex)</span></span></p>
+<p><span data-ttu-id="7d6ac-202">Inclut les fichiers avec au moins 1 correspondance</span><span class="sxs-lookup"><span data-stu-id="7d6ac-202">Includes files with at least 1 match</span></span></p>
+<p><span data-ttu-id="7d6ac-203">Annuler le masquage des 4 derniers caractères de la violation : activé</span><span class="sxs-lookup"><span data-stu-id="7d6ac-203">Unmask the last 4 characters of the violation: checked</span></span></p></td>
 </tr>
 <tr class="even">
-<td align="left"><span data-ttu-id="31909-245">Gouvernance</span><span class="sxs-lookup"><span data-stu-id="31909-245">Governance</span></span></td>
-<td align="left"><p><span data-ttu-id="31909-246">Toutes les applications</span><span class="sxs-lookup"><span data-stu-id="31909-246">All apps</span></span></p>
-<p><span data-ttu-id="31909-247">Mettre l’utilisateur en quarantaine : activé</span><span class="sxs-lookup"><span data-stu-id="31909-247">Put user in quarantine: check</span></span></p>
-<p><span data-ttu-id="31909-248">Tous les autres paramètres : désactivé</span><span class="sxs-lookup"><span data-stu-id="31909-248">All other settings: unchecked</span></span></p>
-<p><span data-ttu-id="31909-249">Office 365</span><span class="sxs-lookup"><span data-stu-id="31909-249">Office 365</span></span></p>
-<p><span data-ttu-id="31909-250">Mettre l’utilisateur en quarantaine : activé</span><span class="sxs-lookup"><span data-stu-id="31909-250">Put user in quarantine: check</span></span></p>
-<p><span data-ttu-id="31909-251">Tous les autres paramètres : désactivé</span><span class="sxs-lookup"><span data-stu-id="31909-251">All other settings: unchecked</span></span></p></td>
+<td align="left"><span data-ttu-id="7d6ac-204">Alertes</span><span class="sxs-lookup"><span data-stu-id="7d6ac-204">Alerts</span></span></td>
+<td align="left"><p><span data-ttu-id="7d6ac-205">Crée une alerte pour chaque fichier correspondant : activé</span><span class="sxs-lookup"><span data-stu-id="7d6ac-205">Create an alert for each matching file: checked</span></span></p>
+<p><span data-ttu-id="7d6ac-206">Limite quotidienne d’alertes : 1 000</span><span class="sxs-lookup"><span data-stu-id="7d6ac-206">Daily alert limit: 1000</span></span></p>
+<p><span data-ttu-id="7d6ac-207">Sélectionner une alerte en tant qu’e-mail : activé</span><span class="sxs-lookup"><span data-stu-id="7d6ac-207">Select an alert as email: checked</span></span></p>
+<p><span data-ttu-id="7d6ac-208">À : infosec@contoso.com</span><span class="sxs-lookup"><span data-stu-id="7d6ac-208">To: infosec@contoso.com</span></span></p></td>
+</tr>
+<tr class="odd">
+<td align="left"><span data-ttu-id="7d6ac-209">Gouvernance</span><span class="sxs-lookup"><span data-stu-id="7d6ac-209">Governance</span></span></td>
+<td align="left"><p><span data-ttu-id="7d6ac-210">Microsoft OneDrive Entreprise</span><span class="sxs-lookup"><span data-stu-id="7d6ac-210">Microsoft OneDrive for Business</span></span></p>
+<p><span data-ttu-id="7d6ac-211">Donner un caractère privé : sélectionner Supprimer les utilisateurs externes</span><span class="sxs-lookup"><span data-stu-id="7d6ac-211">Make private: check Remove External Users</span></span></p>
+<p><span data-ttu-id="7d6ac-212">Tous les autres paramètres : désactivé</span><span class="sxs-lookup"><span data-stu-id="7d6ac-212">All other settings: unchecked</span></span></p>
+<p><span data-ttu-id="7d6ac-213">Microsoft SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="7d6ac-213">Microsoft SharePoint Online</span></span></p>
+<p><span data-ttu-id="7d6ac-214">Donner un caractère privé : sélectionner Supprimer les utilisateurs externes</span><span class="sxs-lookup"><span data-stu-id="7d6ac-214">Make private: check Remove External Users</span></span></p>
+<p><span data-ttu-id="7d6ac-215">Tous les autres paramètres : désactivé</span><span class="sxs-lookup"><span data-stu-id="7d6ac-215">All other settings: unchecked</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="31909-252">Stratégies similaires :</span><span class="sxs-lookup"><span data-stu-id="31909-252">Similar policies:</span></span>
+<span data-ttu-id="7d6ac-216">Stratégies similaires :</span><span class="sxs-lookup"><span data-stu-id="7d6ac-216">Similar policies:</span></span>
 
--   <span data-ttu-id="31909-253">Détection de téléchargements volumineux de données client ou de données RH : alerte lorsqu’un grand nombre de fichiers contenant des données client ou des données RH ont été téléchargés par un utilisateur unique dans un court délai.</span><span class="sxs-lookup"><span data-stu-id="31909-253">Detect large downloads of Customer data or HR Data — Alert when a large number of files containing customer data or HR data have been detected being downloaded by a single user within a short period of time.</span></span>
+-   <span data-ttu-id="7d6ac-217">Détection du partage de fichiers contenant des informations PII : adresse e-mail</span><span class="sxs-lookup"><span data-stu-id="7d6ac-217">Detect sharing of Files containing PII - Email Address</span></span>
 
--   <span data-ttu-id="31909-254">Détection du partage de données clients et de données RH : alerte lorsque des fichiers contenant des données clients ou des données RH sont partagés.</span><span class="sxs-lookup"><span data-stu-id="31909-254">Detect Sharing of Customer and HR Data — Alert when files containing Customer or HR Data are shared.</span></span>
+-   <span data-ttu-id="7d6ac-218">Détection du partage de fichiers contenant des informations PII : numéro de passeport</span><span class="sxs-lookup"><span data-stu-id="7d6ac-218">Detect sharing of Files containing PII - Passport Number</span></span>
+
+### <a name="detect-customer-or-hr-data-in-box-or-onedrive-for-business"></a><span data-ttu-id="7d6ac-219">Détection des données client ou RH dans Box ou OneDrive Entreprise</span><span class="sxs-lookup"><span data-stu-id="7d6ac-219">Detect Customer or HR Data in Box or OneDrive for Business</span></span>
+
+<span data-ttu-id="7d6ac-220">Alerte lorsqu’un fichier étiqueté en tant que Données client ou Données RH est chargé dans OneDrive Entreprise ou Box.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-220">Alert when a file labeled as Customer Data or HR Data is uploaded to OneDrive for Business or Box.</span></span>
+
+<span data-ttu-id="7d6ac-221">Remarques :</span><span class="sxs-lookup"><span data-stu-id="7d6ac-221">Notes:</span></span>
+
+-   <span data-ttu-id="7d6ac-222">La surveillance de Box requiert un connecteur configuré à l’aide du kit de développement logiciel (SDK) du connecteur de l’API.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-222">Box monitoring requires a connector be configured using the API Connector SDK.</span></span>
+
+-   <span data-ttu-id="7d6ac-223">Cette stratégie exige des fonctionnalités qui sont actuellement en Private Preview.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-223">This policy requires capabilities that are currently in private preview.</span></span>
+
+<table>
+<thead>
+<tr class="header">
+<th align="left"><span data-ttu-id="7d6ac-224"><strong>Contrôle</strong></span><span class="sxs-lookup"><span data-stu-id="7d6ac-224"><strong>Control</strong></span></span></th>
+<th align="left"><span data-ttu-id="7d6ac-225"><strong>Paramètres</strong></span><span class="sxs-lookup"><span data-stu-id="7d6ac-225"><strong>Settings</strong></span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span data-ttu-id="7d6ac-226">Type de stratégie</span><span class="sxs-lookup"><span data-stu-id="7d6ac-226">Policy type</span></span></td>
+<td align="left"><span data-ttu-id="7d6ac-227">Stratégie d’activité</span><span class="sxs-lookup"><span data-stu-id="7d6ac-227">Activity policy</span></span></td>
+</tr>
+<tr class="even">
+<td align="left"><span data-ttu-id="7d6ac-228">Modèle de stratégie</span><span class="sxs-lookup"><span data-stu-id="7d6ac-228">Policy template</span></span></td>
+<td align="left"><span data-ttu-id="7d6ac-229">Aucun modèle</span><span class="sxs-lookup"><span data-stu-id="7d6ac-229">No template</span></span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span data-ttu-id="7d6ac-230">Gravité de la stratégie</span><span class="sxs-lookup"><span data-stu-id="7d6ac-230">Policy severity</span></span></td>
+<td align="left"><span data-ttu-id="7d6ac-231">Importante</span><span class="sxs-lookup"><span data-stu-id="7d6ac-231">High</span></span></td>
+</tr>
+<tr class="even">
+<td align="left"><span data-ttu-id="7d6ac-232">Catégorie</span><span class="sxs-lookup"><span data-stu-id="7d6ac-232">Category</span></span></td>
+<td align="left"><span data-ttu-id="7d6ac-233">Contrôle partagé</span><span class="sxs-lookup"><span data-stu-id="7d6ac-233">Sharing Control</span></span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span data-ttu-id="7d6ac-234">Agir sur</span><span class="sxs-lookup"><span data-stu-id="7d6ac-234">Act on</span></span></td>
+<td align="left"><span data-ttu-id="7d6ac-235">Activité unique</span><span class="sxs-lookup"><span data-stu-id="7d6ac-235">Single activity</span></span></td>
+</tr>
+<tr class="even">
+<td align="left"><span data-ttu-id="7d6ac-236">Paramètres de filtre</span><span class="sxs-lookup"><span data-stu-id="7d6ac-236">Filter settings</span></span></td>
+<td align="left"><p><span data-ttu-id="7d6ac-237">Type d’activité = Charger un fichier</span><span class="sxs-lookup"><span data-stu-id="7d6ac-237">Activity type = Upload File</span></span></p>
+<p><span data-ttu-id="7d6ac-238">Application = Microsoft OneDrive Entreprise et Box</span><span class="sxs-lookup"><span data-stu-id="7d6ac-238">App = Microsoft OneDrive for Business and Box</span></span></p>
+<p><span data-ttu-id="7d6ac-239">Étiquette de classification (actuellement en Private Preview) : Azure Information Protection = données sur les clients, ressources humaines - données sur le salaire, ressources humaines - données sur les employés</span><span class="sxs-lookup"><span data-stu-id="7d6ac-239">Classification Label (currently in private preview): Azure Information Protection = Customer Data, Human Resources—Salary Data, Human Resources—Employee Data</span></span></p></td>
+</tr>
+<tr class="odd">
+<td align="left"><span data-ttu-id="7d6ac-240">Alertes</span><span class="sxs-lookup"><span data-stu-id="7d6ac-240">Alerts</span></span></td>
+<td align="left"><p><span data-ttu-id="7d6ac-241">Créer une alerte : activé</span><span class="sxs-lookup"><span data-stu-id="7d6ac-241">Create an alert: checked</span></span></p>
+<p><span data-ttu-id="7d6ac-242">Limite quotidienne d’alertes : 1 000</span><span class="sxs-lookup"><span data-stu-id="7d6ac-242">Daily alert limit: 1000</span></span></p>
+<p><span data-ttu-id="7d6ac-243">Sélectionner une alerte en tant qu’e-mail : activé</span><span class="sxs-lookup"><span data-stu-id="7d6ac-243">Select an alert as email: checked</span></span></p>
+<p><span data-ttu-id="7d6ac-244">À : infosec@contoso.com</span><span class="sxs-lookup"><span data-stu-id="7d6ac-244">To: infosec@contoso.com</span></span></p></td>
+</tr>
+<tr class="even">
+<td align="left"><span data-ttu-id="7d6ac-245">Gouvernance</span><span class="sxs-lookup"><span data-stu-id="7d6ac-245">Governance</span></span></td>
+<td align="left"><p><span data-ttu-id="7d6ac-246">Toutes les applications</span><span class="sxs-lookup"><span data-stu-id="7d6ac-246">All apps</span></span></p>
+<p><span data-ttu-id="7d6ac-247">Mettre l’utilisateur en quarantaine : activé</span><span class="sxs-lookup"><span data-stu-id="7d6ac-247">Put user in quarantine: check</span></span></p>
+<p><span data-ttu-id="7d6ac-248">Tous les autres paramètres : désactivé</span><span class="sxs-lookup"><span data-stu-id="7d6ac-248">All other settings: unchecked</span></span></p>
+<p><span data-ttu-id="7d6ac-249">Office 365</span><span class="sxs-lookup"><span data-stu-id="7d6ac-249">Office 365</span></span></p>
+<p><span data-ttu-id="7d6ac-250">Mettre l’utilisateur en quarantaine : activé</span><span class="sxs-lookup"><span data-stu-id="7d6ac-250">Put user in quarantine: check</span></span></p>
+<p><span data-ttu-id="7d6ac-251">Tous les autres paramètres : désactivé</span><span class="sxs-lookup"><span data-stu-id="7d6ac-251">All other settings: unchecked</span></span></p></td>
+</tr>
+</tbody>
+</table>
+
+<span data-ttu-id="7d6ac-252">Stratégies similaires :</span><span class="sxs-lookup"><span data-stu-id="7d6ac-252">Similar policies:</span></span>
+
+-   <span data-ttu-id="7d6ac-253">Détection de téléchargements volumineux de données client ou de données RH : alerte lorsqu’un grand nombre de fichiers contenant des données client ou des données RH ont été téléchargés par un utilisateur unique dans un court délai.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-253">Detect large downloads of Customer data or HR Data — Alert when a large number of files containing customer data or HR data have been detected being downloaded by a single user within a short period of time.</span></span>
+
+-   <span data-ttu-id="7d6ac-254">Détection du partage de données clients et de données RH : alerte lorsque des fichiers contenant des données clients ou des données RH sont partagés.</span><span class="sxs-lookup"><span data-stu-id="7d6ac-254">Detect Sharing of Customer and HR Data — Alert when files containing Customer or HR Data are shared.</span></span>
