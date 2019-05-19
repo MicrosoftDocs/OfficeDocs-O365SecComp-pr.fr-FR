@@ -3,35 +3,35 @@ title: RGPD pour Project Server
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: Découvrez comment satisfaire aux exigences du RGPD dans l’environnement Project Server local.
-ms.openlocfilehash: 67097cdab4fdab31537cf4b6dd27ce17234c2bdc
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8fb29c2d383c03c79d619d2c78df75cffb4eab27
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255282"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154496"
 ---
-# <a name="gdpr-for-project-server"></a><span data-ttu-id="04837-103">RGPD pour Project Server</span><span class="sxs-lookup"><span data-stu-id="04837-103">GDPR for Project Server</span></span>
+# <a name="gdpr-for-project-server"></a><span data-ttu-id="955d2-103">RGPD pour Project Server</span><span class="sxs-lookup"><span data-stu-id="955d2-103">GDPR for Project Server</span></span>
 
-<span data-ttu-id="04837-p101">Project Server utilise des scripts personnalisés pour exporter et supprimer des données utilisateur dans Project Web App. Le processus de base est le suivant :</span><span class="sxs-lookup"><span data-stu-id="04837-p101">Project Server uses custom scripts to export and redact user data in Project Web App. The basic process is:</span></span>
+<span data-ttu-id="955d2-p101">Project Server utilise des scripts personnalisés pour exporter et supprimer des données utilisateur dans Project Web App. Le processus de base est le suivant :</span><span class="sxs-lookup"><span data-stu-id="955d2-p101">Project Server uses custom scripts to export and redact user data in Project Web App. The basic process is:</span></span>
 
-1.  <span data-ttu-id="04837-106">Recherchez les sites Project Web App dans votre batterie de serveurs.</span><span class="sxs-lookup"><span data-stu-id="04837-106">Find the Project Web App sites in your farm.</span></span>
+1.  <span data-ttu-id="955d2-106">Recherchez les sites Project Web App dans votre batterie de serveurs.</span><span class="sxs-lookup"><span data-stu-id="955d2-106">Find the Project Web App sites in your farm.</span></span>
 
-2.  <span data-ttu-id="04837-107">Recherchez les projets dans chaque site contenant l’utilisateur.</span><span class="sxs-lookup"><span data-stu-id="04837-107">Find the projects in each site that contain the user.</span></span>
+2.  <span data-ttu-id="955d2-107">Recherchez les projets dans chaque site contenant l’utilisateur.</span><span class="sxs-lookup"><span data-stu-id="955d2-107">Find the projects in each site that contain the user.</span></span>
 
-3.  <span data-ttu-id="04837-108">Exportez et passez en revue les types de données que vous voulez examiner.</span><span class="sxs-lookup"><span data-stu-id="04837-108">Export and review the types of data that you want to review.</span></span>
+3.  <span data-ttu-id="955d2-108">Exportez et passez en revue les types de données que vous voulez examiner.</span><span class="sxs-lookup"><span data-stu-id="955d2-108">Export and review the types of data that you want to review.</span></span>
 
-4.  <span data-ttu-id="04837-109">Supprimez des données si nécessaire.</span><span class="sxs-lookup"><span data-stu-id="04837-109">Redact data as needed.</span></span>
+4.  <span data-ttu-id="955d2-109">Supprimez des données si nécessaire.</span><span class="sxs-lookup"><span data-stu-id="955d2-109">Redact data as needed.</span></span>
 
-<span data-ttu-id="04837-110">Ces étapes sont expliquées en détail dans les articles suivants :</span><span class="sxs-lookup"><span data-stu-id="04837-110">These steps are covered in detail in the following articles:</span></span>
+<span data-ttu-id="955d2-110">Ces étapes sont expliquées en détail dans les articles suivants :</span><span class="sxs-lookup"><span data-stu-id="955d2-110">These steps are covered in detail in the following articles:</span></span>
 
-- [<span data-ttu-id="04837-111">Exportation de données utilisateur depuis Project Server</span><span class="sxs-lookup"><span data-stu-id="04837-111">Export user data from Project Server</span></span>](/Project/export-user-data-from-project-server?toc=/Office365/Enterprise/toc.json)
+- [<span data-ttu-id="955d2-111">Exportation de données utilisateur depuis Project Server</span><span class="sxs-lookup"><span data-stu-id="955d2-111">Export user data from Project Server</span></span>](/Project/export-user-data-from-project-server?toc=/Office365/Enterprise/toc.json)
 
-- [<span data-ttu-id="04837-112">Suppression de données utilisateur de Project Server</span><span class="sxs-lookup"><span data-stu-id="04837-112">Delete user data from Project Server</span></span>](/Project/delete-user-data-from-project-server?toc=/Office365/Enterprise/toc.json)
+- [<span data-ttu-id="955d2-112">Suppression de données utilisateur de Project Server</span><span class="sxs-lookup"><span data-stu-id="955d2-112">Delete user data from Project Server</span></span>](/Project/delete-user-data-from-project-server?toc=/Office365/Enterprise/toc.json)
 
 
-<span data-ttu-id="04837-p102">Notez que Project Server est basé sur SharePoint Server et consigne les événements dans les journaux ULS de SharePoint et dans la base de données d’utilisation. Pour en savoir plus, consultez l’article qui traite du [RGPD dans SharePoint Server](gdpr-for-sharepoint-server.md).</span><span class="sxs-lookup"><span data-stu-id="04837-p102">Note that Project Server is built on top of SharePoint Server and logs events to the SharePoint ULS logs and Usage database. See [GDPR for SharePoint Server](gdpr-for-sharepoint-server.md) for more information.</span></span>
+<span data-ttu-id="955d2-p102">Notez que Project Server est basé sur SharePoint Server et consigne les événements dans les journaux ULS de SharePoint et dans la base de données d’utilisation. Pour en savoir plus, consultez l’article qui traite du [RGPD dans SharePoint Server](gdpr-for-sharepoint-server.md).</span><span class="sxs-lookup"><span data-stu-id="955d2-p102">Note that Project Server is built on top of SharePoint Server and logs events to the SharePoint ULS logs and Usage database. See [GDPR for SharePoint Server](gdpr-for-sharepoint-server.md) for more information.</span></span>
