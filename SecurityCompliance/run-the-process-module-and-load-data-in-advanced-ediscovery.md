@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
 description: 'Découvrez comment utiliser le centre de sécurité &amp; conformité Office 365 pour accéder à Office 365 Advanced eDiscovery et exécuter le module process pour un cas.  '
-ms.openlocfilehash: 95c73c034ed2ffa1c45f9aacd8463c497a842859
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 89a4be9bf56f35d9d9cbd88494bcae5a5a10fe7a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261400"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157016"
 ---
 # <a name="run-the-process-module-and-load-data-in-office-365-advanced-ediscovery"></a>Exécuter le module de processus et charger des données dans Office 365 Advanced eDiscovery
 
@@ -27,14 +27,14 @@ ms.locfileid: "32261400"
   
 Cette section décrit les fonctionnalités du module Advanced eDiscovery Process. 
   
-En plus des données de fichier, les métadonnées telles que le type de fichier, l'extension, l'emplacement ou le chemin d'accès, la date et l'heure de création, l'auteur, le dépositaire et l'objet peuvent être chargées dans eDiscovery avancée et enregistrées pour chaque cas. Certaines métadonnées sont calculées par Advanced eDiscovery, par exemple, lors du chargement des fichiers natifs. 
+En plus des données de fichier, les métadonnées telles que le type de fichier, l’extension, l’emplacement ou le chemin d’accès, la date et l’heure de création, l’auteur, le dépositaire et l’objet peuvent être chargées dans eDiscovery avancée et enregistrées pour chaque cas. Certaines métadonnées sont calculées par Advanced eDiscovery, par exemple, lors du chargement des fichiers natifs. 
   
-Advanced eDiscovery fournit des valeurs de métadonnées système, telles que des regroupements proches ou des scores de pertinence. D'autres métadonnées, telles que les annotations de fichier, peuvent être ajoutées par l'administrateur. 
+Advanced eDiscovery fournit des valeurs de métadonnées système, telles que des regroupements proches ou des scores de pertinence. D’autres métadonnées, telles que les annotations de fichier, peuvent être ajoutées par l’administrateur. 
   
-## <a name="running-process"></a>Processus en cours d'exécution
+## <a name="running-process"></a>Processus en cours d’exécution
 
 > [!NOTE]
-> Les numéros de lot sont affectés à un fichier pendant le processus pour permettre le suivi des fichiers. Le numéro de lot permet également l'identification des lots de processus pour les options de retraitement. Des filtres supplémentaires sont disponibles pour le filtrage par numéro de lot et par session. 
+> Les numéros de lot sont affectés à un fichier pendant le processus pour permettre le suivi des fichiers. Le numéro de lot permet également l’identification des lots de processus pour les options de retraitement. Des filtres supplémentaires sont disponibles pour le filtrage par numéro de lot et par session. 
   
 Procédez comme suit pour exécuter le processus.
   
@@ -54,7 +54,7 @@ Procédez comme suit pour exécuter le processus.
     
     Utilisez des fichiers pré-balisés pour automatiser la formation à la pertinence. Vous devez marquer au moins 1 500 fichiers et conserver la proportion de fichiers pertinents pour les fichiers non pertinents le même que dans la collection ajoutée à la pertinence. Ces fichiers doivent être balisés manuellement, et vous devez être sûr de la qualité du marquage.
     
-    ![Capture d'écran de la page des paramètres avancés pour le traitement des fichiers de commandes](media/3c25cb78-4484-41e5-bd34-3753c7ab6cf2.jpg)
+    ![Capture d’écran de la page des paramètres avancés pour le traitement des fichiers de commandes](media/3c25cb78-4484-41e5-bd34-3753c7ab6cf2.jpg)
   
   - Dans la section **Seed** : 
     
@@ -70,7 +70,7 @@ Procédez comme suit pour exécuter le processus.
     > [!NOTE]
     > Une fois que vous avez défini les fichiers comme étant **déjà balisés**, vous ne pouvez pas les marquer comme **Seed**. 
   
-  - Dans la section **étiquetage des courriers électroniques** . définir la partie d'un message électronique traité devant être marquée comme amorce ou pré-balisage. 
+  - Dans la section **étiquetage des courriers électroniques** . définir la partie d’un message électronique traité devant être marquée comme amorce ou pré-balisage. 
     
 6. Pour commencer, cliquez sur **traiter**. Une fois terminé, les résultats du processus sont affichés.
     

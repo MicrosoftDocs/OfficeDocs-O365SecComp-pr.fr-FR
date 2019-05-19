@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 2/7/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.collection:
 - Ent_O365
@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Découvrez comment rechercher et localiser des données personnelles dans Office 365.
-ms.openlocfilehash: 3c2981116e2abb3518a132084a697618ef3261cc
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b63cf930a38feab6df815b5350d60184a6339927
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265336"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158516"
 ---
 # <a name="search-for-and-find-personal-data"></a>Recherche et localisation des données personnelles
 
@@ -97,7 +97,7 @@ Pour l’instant, les types d’informations sensibles ne permettent pas de rech
 <tbody>
 <tr class="odd"><td align="left"><p>Accédez à Recherche de contenu dans le Centre de sécurité et de conformité</p></td>
 <td align="left"><p>Dans le volet gauche du Centre de sécurité et de conformité, cliquez sur **Recherches &amp; enquêtes** &gt; **Recherche de contenu**.</p>
-<p>Reportez-vous à la rubrique <a href="https://support.office.com/en-us/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">Exécuter une recherche de contenu dans le Centre de sécurité et de conformité Office 365</a>.</p></td>
+<p>Reportez-vous à la rubrique <a href="https://support.office.com/fr-FR/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">Exécuter une recherche de contenu dans le Centre de sécurité et de conformité Office 365</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Création d’un élément de recherche pour chaque type d’informations sensibles</p></td>
@@ -117,7 +117,7 @@ Pour l’instant, les types d’informations sensibles ne permettent pas de rech
 <td align="left"><p>Recherchez ces types de problèmes pour déterminer si la précision de la requête est un objectif :</p>
 <p><li>De nombreux faux positifs</li></p>
 <p><li>Instances de données connues manquantes</li></p>
-<p>Reportez-vous à la rubrique relative à l’<a href="https://support.office.com/en-us/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">exportation des résultats de la recherche de contenu du Centre de sécurité et de conformité Office 365</a>.</p>
+<p>Reportez-vous à la rubrique relative à l’<a href="https://support.office.com/fr-FR/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">exportation des résultats de la recherche de contenu du Centre de sécurité et de conformité Office 365</a>.</p>
 <p>Remarque : si vous utilisez Mozilla Firefox ou Chrome, il se peut que vous deviez d’abord télécharger des rapports avec Internet Explorer ou Edge pour installer le complément requis.</p></td>
 </tr>
 </tbody>

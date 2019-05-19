@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 8/29/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,13 +13,13 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
-description: Une fois qu'une boîte aux lettres Office 365 est devenue inactive, vous pouvez modifier la durée de la conservation ou de la stratégie de rétention d'Office 365 affectée à la boîte aux lettres inactive. La durée de la conservation définit la durée de conservation des éléments dans le dossier Éléments récupérables.
-ms.openlocfilehash: 57b4bda5bda49785b752646174620101f8441135
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Une fois qu’une boîte aux lettres Office 365 est devenue inactive, vous pouvez modifier la durée de la conservation ou de la stratégie de rétention d’Office 365 affectée à la boîte aux lettres inactive. La durée de la conservation définit la durée de conservation des éléments dans le dossier Éléments récupérables.
+ms.openlocfilehash: 7840131af3df32b8b8e5a0faa1b101f9ec8ef541
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243687"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155566"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>Modifier la durée de la conservation pour une boîte aux lettres inactive dans Office 365
 
@@ -32,7 +32,7 @@ Une boîte aux lettres inactive est utilisée pour conserver l'e-mail d'un ancie
 
 - You have to use Exchange Online PowerShell to change the hold duration for a Litigation Hold on an inactive mailbox. You can't use the Exchange admin center (EAC). But you can use Exchange Online PowerShell or the EAC to change the hold duration for an In-Place Hold. Vous pouvez utiliser le centre de sécurité et de conformité ou le centre de sécurité & Compliance Center PowerShell pour modifier la durée de la conservation pour une stratégie de rétention Office 365.
     
-- Pour vous connecter à Exchange Online PowerShell ou le centre de sécurité & conformité PowerShell, consultez l'une des rubriques suivantes:
+- Pour vous connecter à Exchange Online PowerShell ou le centre de sécurité & conformité PowerShell, consultez l’une des rubriques suivantes:
     
   - [Connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
@@ -40,7 +40,7 @@ Une boîte aux lettres inactive est utilisée pour conserver l'e-mail d'un ancie
     
 - Notez que les conservations associées aux cas eDiscovery sont des conservations infinies, ce qui signifie qu'il n'existe aucune durée de conservation à modifier. Les éléments sont mis en conservation indéfiniment ou jusqu'à ce que la conservation et la boîte aux lettres inactive soient supprimées.
     
-- Pour plus d'informations sur les boîtes aux lettres inactives, consultez la rubrique [inactive mailboxes in Office 365](inactive-mailboxes-in-office-365.md).
+- Pour plus d’informations sur les boîtes aux lettres inactives, consultez la rubrique [inactive mailboxes in Office 365](inactive-mailboxes-in-office-365.md).
     
 ## <a name="step-1-identify-the-holds-on-an-inactive-mailbox"></a>Étape 1 : Identifier les blocages sur une boîte aux lettres inactive
 
@@ -100,11 +100,11 @@ Le tableau suivant indique les cinq différents types de conservations qui ont �
 |:-----|:-----|:-----|
 |Ann Beebe  <br/> |Conservation pour litige  <br/> |La propriété  *LitigationHoldEnabled*  est définie sur  `True`.  <br/> |
 |Pilar Pinilla  <br/> |Conservation inaltérable  <br/> |La propriété  *InPlaceHolds*  contient le GUID de la conservation inaltérable appliquée à la boîte aux lettres inactive. Vous pouvez déterminer qu'il s'agit d'une conservation inaltérable, car l'ID ne commence pas par un préfixe.  <br/> Vous pouvez utiliser la commande  `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` dans Exchange Online PowerShell pour obtenir des informations sur la conservation inaltérable dans la boîte aux lettres inactive.  <br/> |
-|Mario Necaise  <br/> |Stratégie de rétention Office 365 à l'échelle de l'organisation dans le centre de sécurité & Compliance Center  <br/> |La propriété  *InPlaceHolds*  est vide. Cela indique qu'une ou plusieurs stratégies de rétention Office 365 (à l'échelle d'Exchange) ou à l'échelle de l'organisation sont appliquées à la boîte aux lettres inactive. Dans ce cas, vous pouvez exécuter la commande  `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` command in Exchange Online PowerShell to get a list of the GUIDs for organization-wide Office 365 retention policies. The GUID for organization-wide retention policies that are applied to Exchange mailboxes start with the  `mbx` prefix; for example  `mbxa3056bb15562480fadb46ce523ff7b02`.  <br/> <br/>Pour identifier la stratégie de rétention Office 365 qui est appliquée à la boîte aux lettres inactive, exécutez la commande suivante dans Security & Compliance Center PowerShell.  <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>
+|Mario Necaise  <br/> |Stratégie de rétention Office 365 à l’échelle de l’organisation dans le centre de sécurité & Compliance Center  <br/> |La propriété  *InPlaceHolds*  est vide. Cela indique qu'une ou plusieurs stratégies de rétention Office 365 (à l'échelle d'Exchange) ou à l'échelle de l'organisation sont appliquées à la boîte aux lettres inactive. Dans ce cas, vous pouvez exécuter la commande  `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` command in Exchange Online PowerShell to get a list of the GUIDs for organization-wide Office 365 retention policies. The GUID for organization-wide retention policies that are applied to Exchange mailboxes start with the  `mbx` prefix; for example  `mbxa3056bb15562480fadb46ce523ff7b02`.  <br/> <br/>Pour identifier la stratégie de rétention Office 365 qui est appliquée à la boîte aux lettres inactive, exécutez la commande suivante dans Security & Compliance Center PowerShell.  <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>
 |Carol Olson  <br/> |Stratégie de rétention Office 365 dans le centre de sécurité & conformité appliquée à des boîtes aux lettres spécifiques  <br/> |La propriété  *InPlaceHolds*  contient le GUID de la stratégie de rétention Office 365 qui est appliqué à la boîte aux lettres inactive. Vous pouvez déterminer qu'il s'agit d'une stratégie de rétention qui est appliquée à des boîtes aux lettres spécifiques, car le GUID commence par le préfixe  `mbx`. Notez que si le GUID de la stratégie de rétention appliquée à la boîte aux lettres inactive commence par le préfixe  `skp`, cela indique que la stratégie de rétention est appliquée à des conversations Skype Entreprise.  <br/><br/> Pour identifier la stratégie de rétention Office 365 qui est appliquée à la boîte aux lettres inactive, exécutez la commande suivante dans Security & Compliance Center PowerShell.<br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name` <br/><br/>N'oubliez pas de supprimer le préfixe  `mbx` ou  `skp` lorsque vous exécutez cette commande.  <br/> |
-|Abraham McMahon  <br/> |conservation des cas eDiscovery dans le centre de sécurité & Compliance Center  <br/> |La propriété  *InPlaceHolds*  contient le GUID de la conservation du cas eDiscovery qui figure dans la boîte aux lettres inactive. Vous pouvez déterminer qu'il s'agit d'une mise en conservation de cas eDiscovery, car le GUID commence par le préfixe  `UniH`.  <br/> Vous pouvez utiliser l' `Get-CaseHoldPolicy` applet de commande dans Security _AMP_ Compliance Center PowerShell pour obtenir des informations sur le cas eDiscovery auquel est associée la conservation de la boîte aux lettres inactive. For example, you can run the command  `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` to display the name of the case hold that's on the inactive mailbox. Be sure to remove the  `UniH` lorsque vous exécutez cette commande.  <br/><br/> Pour identifier le cas eDiscovery associé à la conservation dans la boîte aux lettres inactive, exécutez les commandes suivantes.  <br/><br/> `$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/> `Get-ComplianceCase $CaseHold.CaseId | FL Name`<br/><br/><br/> **Remarque:** Il n'est pas recommandé d'utiliser des suspensions eDiscovery pour les boîtes aux lettres inactives. En effet, les cas eDiscovery sont destinés à cas spécifiques, limités dans le temps et liés à un problème juridique. À un moment ou un autre, un dossier juridique se terminera probablement, et les conservations associées au cas seront supprimées et le cas eDiscovery sera fermé (ou supprimé). En fait, si une conservation figurant dans une boîte aux lettres inactive est associée à un cas eDiscovery et que la conservation est libérée, ou le cas eDiscovery est fermé ou supprimé, la boîte aux lettres inactive est définitivement supprimée. 
+|Abraham McMahon  <br/> |conservation des cas eDiscovery dans le centre de sécurité & Compliance Center  <br/> |La propriété  *InPlaceHolds*  contient le GUID de la conservation du cas eDiscovery qui figure dans la boîte aux lettres inactive. Vous pouvez déterminer qu'il s'agit d'une mise en conservation de cas eDiscovery, car le GUID commence par le préfixe  `UniH`.  <br/> Vous pouvez utiliser l' `Get-CaseHoldPolicy` applet de commande dans Security _AMP_ Compliance Center PowerShell pour obtenir des informations sur le cas eDiscovery auquel est associée la conservation de la boîte aux lettres inactive. For example, you can run the command  `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` to display the name of the case hold that's on the inactive mailbox. Be sure to remove the  `UniH` lorsque vous exécutez cette commande.  <br/><br/> Pour identifier le cas eDiscovery associé à la conservation dans la boîte aux lettres inactive, exécutez les commandes suivantes.  <br/><br/> `$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/> `Get-ComplianceCase $CaseHold.CaseId | FL Name`<br/><br/><br/> **Remarque:** Il n’est pas recommandé d’utiliser des suspensions eDiscovery pour les boîtes aux lettres inactives. En effet, les cas eDiscovery sont destinés à cas spécifiques, limités dans le temps et liés à un problème juridique. À un moment ou un autre, un dossier juridique se terminera probablement, et les conservations associées au cas seront supprimées et le cas eDiscovery sera fermé (ou supprimé). En fait, si une conservation figurant dans une boîte aux lettres inactive est associée à un cas eDiscovery et que la conservation est libérée, ou le cas eDiscovery est fermé ou supprimé, la boîte aux lettres inactive est définitivement supprimée. 
 
-Pour plus d'informations sur les stratégies de rétention Office 365, voir [Overview of](retention-policies.md)Retention Policies.
+Pour plus d’informations sur les stratégies de rétention Office 365, voir [Overview of](retention-policies.md)Retention Policies.
   
 ## <a name="step-2-change-the-hold-duration-for-an-inactive-mailbox"></a>Étape 2 : Modifier la durée de la conservation pour une boîte aux lettres inactive
 
@@ -137,7 +137,7 @@ Les éléments de la boîte aux lettres inactive sont alors conservés indéfini
 
 2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
-3. Sélectionnez la conservation inaltérable à modifier, puis cliquez sur **modifier** ![l'icône](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)modifier.
+3. Sélectionnez la conservation inaltérable à modifier, puis cliquez sur **modifier** ![l’icône](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)modifier.
     
 4. On the **In-Place eDiscovery &amp; Hold** properties page, click **In-Place Hold**. 
     
@@ -145,7 +145,7 @@ Les éléments de la boîte aux lettres inactive sont alors conservés indéfini
     
 1. Cliquez sur **Bloquer indéfiniment** pour bloquer les éléments pendant une période illimitée. 
     
-2. Cliquez sur **spécifier le nombre de jours de conservation des éléments par rapport à leur date de réception** pour conserver les éléments d'une période donnée. Type the number of days that you want to hold items for. 
+2. Cliquez sur **spécifier le nombre de jours de conservation des éléments par rapport à leur date de réception** pour conserver les éléments d’une période donnée. Type the number of days that you want to hold items for. 
     
     ![Capture d'écran de la modification de la durée d'une conservation inaltérable](media/cfcfd92a-9d65-40c0-90ef-ab72697b0166.png)
   

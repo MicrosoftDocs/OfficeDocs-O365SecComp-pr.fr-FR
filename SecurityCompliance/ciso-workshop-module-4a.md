@@ -3,23 +3,23 @@ title: 'Atelier de directeur de la sécurité des informations (CISO), module 4a
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur les principes de sécurité et les recommandations pour la modernisation de la sécurité dans votre organisation.
-ms.openlocfilehash: e9d3d650517e590100f4e812f46e91ccb265dcaa
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c9d418254db4a11716b4d1e58ecd683b92fdfd18
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243325"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155486"
 ---
-# <a name="ciso-workshop-module-4a-threat-protection-strategy"></a>Module d'atelier CISO 4a: stratégie de protection contre les menaces
+# <a name="ciso-workshop-module-4a-threat-protection-strategy"></a>Module d’atelier CISO 4a: stratégie de protection contre les menaces
 
-Explorez les apprentissages clés relatifs à la protection contre les menaces, à l'évolution de la sécurité, aux stratégies et aux plans de sécurité.
+Explorez les apprentissages clés relatifs à la protection contre les menaces, à l’évolution de la sécurité, aux stratégies et aux plans de sécurité.
 
 - Télécharger le Résumé PDF: [module 4a: stratégie de protection contre les menaces](media/ciso-workshop-4a-threat-protection.pdf)
 - Télécharger le résumé PowerPoint: [module 4a: stratégie de protection contre les menaces](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4a-threat-protection.pptx)
@@ -32,7 +32,7 @@ Explorez les apprentissages clés relatifs à la protection contre les menaces, 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtITr]
 
-## <a name="part-2-security-evolution-overview-329"></a>Partie 2: évolution de la sécurité: vue d'ensemble (3:29)
+## <a name="part-2-security-evolution-overview-329"></a>Partie 2: évolution de la sécurité: vue d’ensemble (3:29)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQLb]
 
@@ -48,11 +48,11 @@ Explorez les apprentissages clés relatifs à la protection contre les menaces, 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMm]
 
-## <a name="part-6-roadmap-for-application-development--platform-as-a-service-607"></a>Partie 6: feuille de route pour le développement d'applications & Platform as a service (6:07)
+## <a name="part-6-roadmap-for-application-development--platform-as-a-service-607"></a>Partie 6: feuille de route pour le développement d’applications & Platform as a service (6:07)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQLJ]
 
-## <a name="part-7-roadmap-for-shadow-it-risk-from-third-party-software-as-a-service-505"></a>Partie 7: feuille de route pour l'ombre des risques informatiques provenant de logiciels tiers en tant que service (5:05)
+## <a name="part-7-roadmap-for-shadow-it-risk-from-third-party-software-as-a-service-505"></a>Partie 7: feuille de route pour l’ombre des risques informatiques provenant de logiciels tiers en tant que service (5:05)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMC]
 
@@ -60,7 +60,7 @@ Explorez les apprentissages clés relatifs à la protection contre les menaces, 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQLL]
 
-## <a name="part-9-roadmap-for-infrastructure-as-a-service-and-on-premises-2438"></a>Partie 9: feuille de route pour l'infrastructure en tant que service et en local (24:38)
+## <a name="part-9-roadmap-for-infrastructure-as-a-service-and-on-premises-2438"></a>Partie 9: feuille de route pour l’infrastructure en tant que service et en local (24:38)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQLP]
 
@@ -68,7 +68,7 @@ Explorez les apprentissages clés relatifs à la protection contre les menaces, 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQLS]
 
-## <a name="part-11-roadmap-for-securing-privileged-access-1229"></a>Partie 11: feuille de route pour la sécurisation de l'accès privilégié (12:29)
+## <a name="part-11-roadmap-for-securing-privileged-access-1229"></a>Partie 11: feuille de route pour la sécurisation de l’accès privilégié (12:29)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtLpa]
 

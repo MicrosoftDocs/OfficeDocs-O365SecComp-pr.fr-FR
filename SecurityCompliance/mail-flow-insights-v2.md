@@ -3,18 +3,18 @@ title: Informations sur le flux de messagerie dans le centre de sécurité et co
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Les administrateurs peuvent en savoir plus sur le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance Center.
-ms.openlocfilehash: 80aa6b773d63b6c98293fa2787d38ad393e67b37
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+ms.openlocfilehash: c7c1a6a16c908f42098500c1015b3c3994175818
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868622"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155876"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informations sur le flux de messagerie dans le centre de sécurité et conformité
 
@@ -22,11 +22,11 @@ Les administrateurs peuvent utiliser le tableau de bord de flux de messagerie da
 
 Les informations, les rapports et les widgets disponibles dans le tableau de bord du flux de messagerie sont les suivants:
 
-- [Rapport de carte de flux de messagerie](mfi-mail-flow-map-report.md)
+- [Rapport carte de flux de courrier](mfi-mail-flow-map-report.md)
 
 - [Aperçu de l’état du flux de messagerie du domaine](mfi-domain-mail-flow-status-insight.md)
 
-- [Rapport sur les clients SMTP AUTH](mfi-smtp-auth-clients-report.md)
+- [Rapport de clients d’authentification SMTP](mfi-smtp-auth-clients-report.md)
 
 - [Aperçu de domaine de l’expéditeur](mfi-sender-domain-insight.md)
 

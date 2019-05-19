@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 5fd7d05b-96db-456f-81d6-1ac0e5bff530
 ms.collection:
 - M365-security-compliance
 description: La feuille de route sécurité de messagerie de Microsoft implique une approche inter-produits sans correspondance. La technologie de filtrage anti-spam et anti-hameçonnage d'Exchange Online Protection (EOP) est appliquée sur les plateformes de messagerie de Microsoft pour fournir aux utilisateurs les innovations et les outils anti-spam et anti-hameçonnage les plus récents dans tout le réseau. L'objectif d'EOP est de proposer un service de messagerie complet et utilisable qui vous aide à détecter le courrier indésirable, les menaces d'e-mails frauduleux (hameçonnage) et les logiciels malveillants, et de protéger les utilisateurs.
-ms.openlocfilehash: 510b04d3f111c269d5f8579abcc809ddc283636b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9ef8433279137a91a52f6a149844eff9c567150c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255442"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154516"
 ---
 # <a name="fighting-junk-email-sent-to-office-365"></a>Lutter contre le courrier indésirable envoyé à Office 365
 
@@ -45,7 +45,7 @@ Les règles dans EOP sont définies pour traiter les messages électroniques ave
   
 #### <a name="eop-filters"></a>Filtres EOP
 
-Outre les technologies de filtrage anti-spam, EOP offre également à l’administrateur système la possibilité de définir des niveaux de filtre pour personnaliser davantage la remise des messages à ses comptes d’utilisateurs. Les administrateurs peuvent facilement ajouter un nom d'expéditeur ou de domaine à la liste des domaines et des expéditeurs autorisés afin que les e-mails provenant de cet expéditeur ou domaine ne soient jamais traités comme du courrier indésirable, quel que soit le contenu du message. Pour plus d'informations, consultez la rubrique liste des expéditeurs autorisés [et des expéditeurs bloqués dans Exchange Online](safe-sender-and-blocked-sender-lists-faq.md).
+Outre les technologies de filtrage anti-spam, EOP offre également à l’administrateur système la possibilité de définir des niveaux de filtre pour personnaliser davantage la remise des messages à ses comptes d’utilisateurs. Les administrateurs peuvent facilement ajouter un nom d'expéditeur ou de domaine à la liste des domaines et des expéditeurs autorisés afin que les e-mails provenant de cet expéditeur ou domaine ne soient jamais traités comme du courrier indésirable, quel que soit le contenu du message. Pour plus d’informations, consultez la rubrique liste des expéditeurs autorisés [et des expéditeurs bloqués dans Exchange Online](safe-sender-and-blocked-sender-lists-faq.md).
   
 ### <a name="phishing-protection"></a>Protection contre le hameçonnage
 

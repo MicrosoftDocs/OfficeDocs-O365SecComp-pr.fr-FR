@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 2/19/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
 description: "Résumé : Cet article explique comment mettre à jour un enregistrement DNS (Domain Name Service) afin que vous puissiez utiliser le SPF (Sender Policy Framework) avec votre domaine personnalisé dans Office 365. L'utilisation de SPF permet de valider les messages sortants envoyés à partir de votre domaine personnalisé."
-ms.openlocfilehash: 039a09e7dac307ead156eac47699edbd2350b304
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 5194a9a8a8b694bc2dbac0eaf9b50517e46a9064
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260712"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158196"
 ---
 # <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>Configurer SPF dans Office 365 pour empêcher l’usurpation
 
@@ -67,15 +67,15 @@ Collectez les informations ci-dessous :
 |6.x  <br/> |Système de messagerie en local. Par exemple, Exchange Online Protection et un autre système de messagerie  <br/> |Non courant  <br/> | Utilisez l'un des éléments suivants pour chaque système de messagerie supplémentaire :  <br/>  ip4:\<  _IP address_\>  <br/>  ip6:\<  _IP address_\>  <br/>  include:\<  _domain name_\>  <br/>  Où la valeur de l'élément \<  _IP address_\> est l'adresse IP de l'autre système de messagerie et \< _domain name_\> correspond au nom de domaine de l'autre système de messagerie qui envoie un message au nom de votre domaine.  <br/> |
 |7j/7  <br/> |Un système de messagerie (obligatoire)  <br/> |Courant. Tous les enregistrements TXT SPF se terminent par cette valeur  <br/> |\< _enforcement rule_\>  <br/> Il peut s'agir de plusieurs valeurs. Il est recommandé d'utiliser **-all**.  <br/> |
    
-1,1 par exemple, si vous êtes entièrement hébergé dans Office 365, autrement dit, vous n'avez pas de serveur de messagerie local, votre enregistrement TXT SPF inclut les lignes 1, 2 et 7 et se présente comme suit:
+1,1 par exemple, si vous êtes entièrement hébergé dans Office 365, autrement dit, vous n’avez pas de serveur de messagerie local, votre enregistrement TXT SPF inclut les lignes 1, 2 et 7 et se présente comme suit:
     
   ```
    v=spf1 include:spf.protection.outlook.com -all
   ```
 
-1,2 il s'agit de l'enregistrement TXT SPF Office 365 le plus courant. Cet enregistrement fonctionne pour tout le monde, que votre centre de informations Office 365 soit situé aux États-Unis ou en Europe (y compris Germany) ou dans un autre emplacement.
+1,2 il s’agit de l’enregistrement TXT SPF Office 365 le plus courant. Cet enregistrement fonctionne pour tout le monde, que votre centre de informations Office 365 soit situé aux États-Unis ou en Europe (y compris Germany) ou dans un autre emplacement.
     
-1,3 Toutefois, si vous avez acheté Office 365 Germany, partie de Microsoft Cloud Germany, vous devez utiliser l'instruction include de la ligne 4 au lieu de la ligne 2. Par exemple, si vous êtes entièrement hébergé par Office 365 Germany, ce qui signifie que vous n’avez aucun serveur de messagerie local, votre enregistrement TXT SPF inclut les lignes 1, 4 et 7 et se présente comme suit :
+1,3 Toutefois, si vous avez acheté Office 365 Germany, partie de Microsoft Cloud Germany, vous devez utiliser l’instruction include de la ligne 4 au lieu de la ligne 2. Par exemple, si vous êtes entièrement hébergé par Office 365 Germany, ce qui signifie que vous n’avez aucun serveur de messagerie local, votre enregistrement TXT SPF inclut les lignes 1, 4 et 7 et se présente comme suit :
     
   ```
    v=spf1 include:spf.protection.outlook.de -all

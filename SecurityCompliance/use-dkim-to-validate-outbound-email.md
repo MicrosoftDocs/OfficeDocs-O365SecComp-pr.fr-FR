@@ -3,7 +3,7 @@ title: Utiliser DKIM pour les courriers électroniques dans votre domaine person
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 'Résumé : Cet article décrit comment utiliser DKIM (DomainKeys Identified Mail) avec Office 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.'
-ms.openlocfilehash: fc2a509aacdaac0aeef22696d85512f91957502f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 35df7cdd1a95311dac612aa486670e03f6f23d07
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263740"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158006"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé dans Office 365
 
@@ -88,7 +88,7 @@ Pour chaque domaine auquel vous souhaitez ajouter une signature DKIM dans le sys
 Utilisez le format suivant pour les enregistrements CNAMe.
 
 > [!IMPORTANT]
-> Si vous êtes l'un de nos clients très élevés, nous calculons _domainGuid_ différemment. Au lieu de consulter l'enregistrement MX de votre _initialDomain_ pour calculer _domainGuid_, nous le calculons directement à partir du domaine personnalisé. Par exemple, si votre domaine personnalisé est «contoso.com», votre domainGuid devient «contoso-com», les points sont remplacés par un tiret. Ainsi, quel que soit l'enregistrement MX vers lequel pointe votre initialDomain, vous utiliserez toujours la méthode ci-dessus pour calculer le domainGuid à utiliser dans vos enregistrements CNAMe.
+> Si vous êtes l’un de nos clients très élevés, nous calculons _domainGuid_ différemment. Au lieu de consulter l’enregistrement MX de votre _initialDomain_ pour calculer _domainGuid_, nous le calculons directement à partir du domaine personnalisé. Par exemple, si votre domaine personnalisé est «contoso.com», votre domainGuid devient «contoso-com», les points sont remplacés par un tiret. Ainsi, quel que soit l’enregistrement MX vers lequel pointe votre initialDomain, vous utiliserez toujours la méthode ci-dessus pour calculer le domainGuid à utiliser dans vos enregistrements CNAMe.
 
   
 ```
@@ -105,7 +105,7 @@ Où :
   
 - Pour Office 365, les sélecteurs seront toujours « selector1 » ou « selector2 ». 
     
-- _domainGUID_ est le même que le _domainGUID_ dans l'enregistrement MX personnalisé pour votre domaine personnalisé qui apparaît avant mail.protection.Outlook.com. Par exemple, dans l'enregistrement MX suivant pour le domaine contoso.com, _domainGUID_ est contoso-com: 
+- _domainGUID_ est le même que le _domainGUID_ dans l’enregistrement MX personnalisé pour votre domaine personnalisé qui apparaît avant mail.protection.Outlook.com. Par exemple, dans l’enregistrement MX suivant pour le domaine contoso.com, _domainGUID_ est contoso-com: 
     
     ```
     contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
@@ -136,9 +136,9 @@ TTL:                3600
 ### <a name="enable-dkim-signing-for-your-custom-domain-in-office-365"></a>Activation de la signature DKIM pour votre domaine personnalisé dans Office 365
 <a name="EnableDKIMinO365"> </a>
 
-Une fois que vous avez publié les enregistrements CNAME dans le système DNS, vous êtes prêt à activer la signature DKIM par l'intermédiaire d'Office 365. Pour ce faire, vous pouvez utiliser le centre d'administration Microsoft 365 ou PowerShell.
+Une fois que vous avez publié les enregistrements CNAME dans le système DNS, vous êtes prêt à activer la signature DKIM par l'intermédiaire d'Office 365. Pour ce faire, vous pouvez utiliser le centre d’administration Microsoft 365 ou PowerShell.
   
-#### <a name="to-enable-dkim-signing-for-your-custom-domain-through-the-admin-center"></a>Pour activer la signature DKIM pour votre domaine personnalisé via le centre d'administration
+#### <a name="to-enable-dkim-signing-for-your-custom-domain-through-the-admin-center"></a>Pour activer la signature DKIM pour votre domaine personnalisé via le centre d’administration
 
 1. [Connectez-vous à Office 365](https://support.office.microsoft.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) avec votre compte professionnel ou scolaire. 
     
@@ -225,7 +225,7 @@ La désactivation de la stratégie de signature ne désactive pas complètement 
     Set-DkimSigningConfig -identity $p[<number>].identity -enabled $false
     ```
 
-    Où _numéro_ est l'index de la stratégie. Par exemple : 
+    Où _numéro_ est l’index de la stratégie. Par exemple : 
     
     ```
     Set-DkimSigningConfig -identity $p[0].identity -enabled $false

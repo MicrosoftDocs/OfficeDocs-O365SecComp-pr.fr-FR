@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec les étiquettes de sensibilité, vous pouvez classer et protéger le contenu sensible, tout en vous assurant que la productivité et la possibilité de collaboration des membres de votre organisation ne sont pas altérées. Vous pouvez utiliser les étiquettes de sensibilité afin d’appliquer des paramètres de protection, comme le chiffrement ou les filigranes, sur le contenu étiqueté.
-ms.openlocfilehash: f8442bc9fbeb32cb71fb46c4e5a54c9e1f0dce4b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 21b325454c659d72e27349ede9015a0f4bde6dcb
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265740"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155976"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Vue d’ensemble des étiquettes de niveau de confidentialité
 
@@ -75,7 +75,7 @@ Une fois qu’une étiquette de niveau de confidentialité est appliquée à un 
     ![Filigrane et en-tête appliqués au document](media/Sensitivity_label_watermark_header.png)
 
 - 
-  **Éviter la perte de données** en activant la protection de point de terminaison dans Intune. Si du contenu sensible est téléchargé, vous pouvez empêcher la perte de données sur les appareils Windows. Par exemple, vous ne pouvez pas copier de contenu étiqueté dans Dropbox, Gmail ou un lecteur USB. Avant que les étiquettes de niveau de confidentialité puissent utiliser la protection des informations Windows, vous devez d’abord créer une stratégie de protection des applications dans le portail Azure. Pour plus d’informations, reportez-vous à l’article relatif à la manière dont [la protection des informations Windows protège les fichiers avec une étiquette de niveau de confidentialité](https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
+  **Éviter la perte de données** en activant la protection de point de terminaison dans Intune. Si du contenu sensible est téléchargé, vous pouvez empêcher la perte de données sur les appareils Windows. Par exemple, vous ne pouvez pas copier de contenu étiqueté dans Dropbox, Gmail ou un lecteur USB. Avant que les étiquettes de niveau de confidentialité puissent utiliser la protection des informations Windows, vous devez d’abord créer une stratégie de protection des applications dans le portail Azure. Pour plus d’informations, reportez-vous à l’article relatif à la manière dont [la protection des informations Windows protège les fichiers avec une étiquette de niveau de confidentialité](https://docs.microsoft.com/fr-FR/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
 
 - **Appliquer automatiquement l’étiquette au contenu qui contient des informations sensibles.** Vous pouvez choisir quels types d’informations sensibles vous souhaitez étiqueter et pouvez appliquer l’étiquette automatiquement, ou vous pouvez inviter les utilisateurs à appliquer l’étiquette que vous recommandez. si vous  recommandez une étiquette, l’invitation affiche le texte souhaité. Pour plus d’informations, voir[Appliquer automatiquement une étiquette sensibilité au contenu](apply_sensitivity_label_automatically.md).
 
@@ -185,8 +185,10 @@ Dans les applications Office sur les appareils Android, les étiquettes de nivea
 
 ### <a name="more-information-on-sensitivity-labels-in-office-apps"></a>Plus d’informations sur les étiquettes de niveau de confidentialité dans les applications Office
 
-- [Appliquer des étiquettes de niveau de confidentialité à vos documents et vos e-mails dans Office](https://support.office.com/fr-FR/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
-- [Problèmes connus lorsque vous appliquez des étiquettes de niveau de confidentialité à vos fichiers Office](https://support.office.com/fr-FR/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)
+- 
+  [Appliquer des étiquettes de niveau de confidentialité à vos documents et vos e-mails dans Office](https://support.office.com/fr-FR/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+- 
+  [Problèmes connus lorsque vous appliquez des étiquettes de niveau de confidentialité à vos fichiers Office](https://support.office.com/fr-FR/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)
 
 ## <a name="how-sensitivity-labels-work-with-existing-azure-information-protection-labels"></a>Fonctionnement des étiquettes de niveau de confidentialité avec les étiquettes Azure Information Protection existantes
 
@@ -215,13 +217,16 @@ Si un utilisateur tente d’enregistrer du contenu étiqueté sur un lecteur USB
 
 ### <a name="important-prerequisites"></a>Conditions préalables importantes
 
-Avant que les étiquettes de niveau de confidentialité puissent utiliser la protection des informations Windows, vous devez d’abord remplir les conditions préalables décrites ici : [La protection des informations Windows protège les fichiers avec une étiquette de niveau de confidentialité](https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553). Cette rubrique décrit les conditions préalables suivantes :
+Avant que les étiquettes de niveau de confidentialité puissent utiliser la protection des informations Windows, vous devez d’abord remplir les conditions préalables décrites ici : [La protection des informations Windows protège les fichiers avec une étiquette de niveau de confidentialité](https://docs.microsoft.com/fr-FR/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553). Cette rubrique décrit les conditions préalables suivantes :
 
 - Vérifiez que vous exécutez Windows 10, version 1809 ou version ultérieure.
-- [Configurez le module Protection avancée contre les menaces (ATP) Windows Defender](https://docs.microsoft.com/fr-FR/windows/security/threat-protection/windows-defender-atp/get-started), qui analyse le contenu pour une étiquette et applique la protection des informations Windows correspondante. ATP effectue certaines actions indépendamment de la protection des informations Windows, par exemple, la création de rapports sur les anomalies.
+- 
+  [Configurez le module Protection avancée contre les menaces (ATP) Windows Defender](https://docs.microsoft.com/fr-FR/windows/security/threat-protection/windows-defender-atp/get-started), qui analyse le contenu pour une étiquette et applique la protection des informations Windows correspondante. ATP effectue certaines actions indépendamment de la protection des informations Windows, par exemple, la création de rapports sur les anomalies.
 - Créez une stratégie de Protection des informations Windows (WIP) qui s’applique aux appareils de point de terminaison. Vous pouvez effectuer cette opération à partir de l’un des emplacements suivants :
-    - [Créer une stratégie de Protection des informations Windows (WIP) avec GPM à l’aide du portail Azure pour Microsoft Intune](https://docs.microsoft.com/fr-FR/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
-    - [Créer et déployer une stratégie de Protection des informations Windows (WIP) à l’aide de System Center Configuration Manager](https://docs.microsoft.com/fr-FR/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
+    - 
+  [Créer une stratégie de Protection des informations Windows (WIP) avec GPM à l’aide du portail Azure pour Microsoft Intune](https://docs.microsoft.com/fr-FR/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
+    - 
+  [Créer et déployer une stratégie de Protection des informations Windows (WIP) à l’aide de System Center Configuration Manager](https://docs.microsoft.com/fr-FR/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
 
 ## <a name="protect-content-in-third-party-apps-and-services-by-using-microsoft-cloud-app-security"></a>Protéger le contenu dans les services tiers et les applications tierces à l’aide de Microsoft Cloud App Security
 
@@ -233,8 +238,10 @@ Pour plus d’informations, reportez-vous à l’article [Appliquer automatiquem
 
 Avant que vos étiquettes de niveau de confidentialité puissent utiliser CAS, vous devez d’abord remplir les conditions préalables décrites ici : [Appliquer automatiquement des étiquettes de classification Azure Information Protection](https://docs.microsoft.com/fr-FR/cloud-app-security/use-case-information-protection). Cette rubrique décrit les conditions préalables suivantes :
 
-- [Activez Cloud App Security et Azure Information Protection](https://docs.microsoft.com/fr-FR/cloud-app-security/azip-integration) pour votre client.
-- [Connectez l’application](https://docs.microsoft.com/fr-FR/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) à Cloud App Security.
+- 
+  [Activez Cloud App Security et Azure Information Protection](https://docs.microsoft.com/fr-FR/cloud-app-security/azip-integration) pour votre client.
+- 
+  [Connectez l’application](https://docs.microsoft.com/fr-FR/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) à Cloud App Security.
 
 ## <a name="extend-sensitivity-labels-to-third-party-apps-and-services-by-using-the-microsoft-information-protection-sdk"></a>Étendre les étiquettes de niveau de confidentialité à des services tiers et applications tierces à l’aide du SDK Microsoft Information Protection
 

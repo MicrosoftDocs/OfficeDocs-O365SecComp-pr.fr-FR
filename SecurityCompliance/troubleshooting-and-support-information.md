@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 11/17/2014
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 ms.collection:
 - M365-security-compliance
 description: Cette rubrique décrit les étapes de résolution des problèmes pour les utilisateurs finaux et les administrateurs, et fournit des informations sur la manière de contacter le support technique pour obtenir de l'aide.
-ms.openlocfilehash: bea2ad502f24d63874bfa954e6d67c73dc44d98d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: baf8761ca4ce55695c2def74a39d3ca9a6de79ff
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259842"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156336"
 ---
 # <a name="troubleshooting-and-support-information"></a>Dépannage et informations relatives au support
 
@@ -86,9 +86,9 @@ En tant qu'administrateur, vous pouvez rencontrer des problèmes avec des utilis
     
 ## <a name="support-information"></a>Informations concernant le support
 
-Si vous avez besoin d'aide pour l'installation, la configuration ou la désinstallation du complément, veuillez contacter le support technique à l'aide du lien nouvelle demande de service sur la page support dans le centre d'administration 365 de Microsoft. Pour obtenir des options supplémentaires, notamment la soumission d'une demande de service via les options de téléphone et d'auto-assistance, consultez [l'aide et le support pour EOP](eop/help-and-support-for-eop.md).
+Si vous avez besoin d’aide pour l’installation, la configuration ou la désinstallation du complément, veuillez contacter le support technique à l’aide du lien nouvelle demande de service sur la page support dans le centre d’administration 365 de Microsoft. Pour obtenir des options supplémentaires, notamment la soumission d’une demande de service via les options de téléphone et d’auto-assistance, consultez [l’aide et le support pour EOP](eop/help-and-support-for-eop.md).
   
-## <a name="for-more-information"></a>Pour plus d'informations
+## <a name="for-more-information"></a>Pour plus d’informations
 
 [Activer le complément Signaler le message](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
   

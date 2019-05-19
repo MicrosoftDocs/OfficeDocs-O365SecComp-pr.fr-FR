@@ -1,25 +1,25 @@
 ---
-title: Numéro d'identification nationale de l'UE
+title: Numéro d’identification nationale de l’UE
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
-description: Cette rubrique présente l'aspect d'une stratégie de protection contre la perte de données (DLP) lorsqu'elle détecte le type d'informations sensibles du numéro d'identification national de l'UE. Ce type d'informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
-ms.openlocfilehash: afae2c3fa54fe5fcd93990cdf5797f5517c46202
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Cette rubrique présente l’aspect d’une stratégie de protection contre la perte de données (DLP) lorsqu’elle détecte le type d’informations sensibles du numéro d’identification national de l’UE. Ce type d’informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
+ms.openlocfilehash: 205019d040648f0600f3dbf4403063edf9f31c41
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255642"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154456"
 ---
-# <a name="eu-national-identification-number"></a>Numéro d'identification nationale de l'UE
+# <a name="eu-national-identification-number"></a>Numéro d’identification nationale de l’UE
 
-Cette rubrique présente l'aspect d'une stratégie de protection contre la perte de données (DLP) lorsqu'elle détecte le type d'informations sensibles du numéro d'identification national de l'UE. Ce type d'informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
+Cette rubrique présente l’aspect d’une stratégie de protection contre la perte de données (DLP) lorsqu’elle détecte le type d’informations sensibles du numéro d’identification national de l’UE. Ce type d’informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
   
 ## <a name="austria"></a>Autriche
 
@@ -43,7 +43,7 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_austria_eu_national_id_card` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_austria_eu_national_id_card` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_austria_eu_national_id_card` from est trouvé. 
     
@@ -61,19 +61,19 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywordsaustriaeunationalidcard"></a>Keywords_austria_eu_national_id_card
 
-Numéro d'identité autrichien
+Numéro d’identité autrichien
   
-Numéro d'identité nationale
+Numéro d’identité nationale
   
-Numéro d'identité
+Numéro d’identité
   
 id national
   
-Personalausweis Republik Österreich
+personalausweis republik österreich
   
 ## <a name="belgium"></a>Belgique
 
-Pour plus d'informations, reportez-vous à la section «Belgique numéro national» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, reportez-vous à la section «Belgique numéro national» dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="bulgaria"></a>Bulgarie
 
@@ -87,7 +87,7 @@ Dix chiffres sans espaces ni délimiteurs
   
 -  Six chiffres correspondant à la date de naissance (AAMMJJ) 
     
-- Deux chiffres correspondant à l'ordre de naissance
+- Deux chiffres correspondant à l’ordre de naissance
     
 - Un chiffre correspondant au sexe: un chiffre pair pour le mâle et un chiffre impair pour femelle.
     
@@ -125,9 +125,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywordsbulgarianationalnumber"></a>Keywords_bulgaria_national_number
 
-EGN
+egn
   
-EGN #
+egn#
   
 numéro national bulgare
   
@@ -135,7 +135,7 @@ numéro national
   
 numéro de sécurité sociale
   
-nationalnumber #
+nationalnumber#
   
 SSN
   
@@ -143,25 +143,25 @@ SSN
   
 nationalnumber
   
-BNN #
+bnn#
   
-BNN
+bnn
   
-Numéro d'identification personnel
+Numéro d’identification personnel
   
-personalidnumber #
+personalidnumber#
   
 единен граждански номер
   
-edinen grazhdanski Nomer
+edinen grazhdanski nomer
   
 егн
   
-егн #
+егн#
   
 ## <a name="croatia"></a>Croatie
 
-Pour plus d'informations, reportez-vous à la section «Croatie Identity Number» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, reportez-vous à la section «Croatie Identity Number» dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="cyprus"></a>Chypre
 
@@ -181,7 +181,7 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_cyprus_eu_national_id_card` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_cyprus_eu_national_id_card` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_cyprus_eu_national_id_card` from est trouvé. 
     
@@ -199,23 +199,23 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywordscypruseunationalidcard"></a>Keywords_cyprus_eu_national_id_card
 
-Numéro de carte d'identité
+Numéro de carte d’identité
   
 numéro d’identification nationale
   
-Numéro d'identification personnel
+Numéro d’identification personnel
   
-Numéro de carte d'identité
+Numéro de carte d’identité
   
 ταυτοτητασ
   
 ## <a name="czech-republic"></a>République tchèque
 
-Pour plus d'informations, consultez la section «numéro d'identité nationale tchèque» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, consultez la section «numéro d’identité nationale tchèque» dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="denmark"></a>Danemark
 
-Pour plus d'informations, reportez-vous à la section «numéro d'identification personnel Danemark» dans [ce que recherche les types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, reportez-vous à la section «numéro d’identification personnel Danemark» dans [ce que recherche les types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="estonia"></a>Estonie
 
@@ -268,17 +268,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywordsestoniaeunationalidcard"></a>Keywords_estonia_eu_national_id_card
 
-code d'identification personnel
+code d’identification personnel
   
-Numéro d'identification personnel
+Numéro d’identification personnel
   
 numéro d’identification nationale
   
 numéro national
   
-Numéro d'identification personnel
+Numéro d’identification personnel
   
-personalidnumber #
+personalidnumber#
   
 inverse
   
@@ -288,19 +288,19 @@ ID-kaart
   
 ## <a name="finland"></a>Finlande
 
-Pour plus d'informations, reportez-vous à la section «ID national de Finlande» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, reportez-vous à la section «ID national de Finlande» dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="france"></a>France
 
-Pour plus d'informations, reportez-vous à la section «carte d'identité nationale France (CNI)» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, reportez-vous à la section «carte d’identité nationale France (CNI)» dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="germany"></a>Allemagne
 
-Pour plus d'informations, reportez-vous à la section «Germany Identity Card Number» dans les [types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, reportez-vous à la section «Germany Identity Card Number» dans les [types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="greece"></a>Grèce
 
-Pour plus d'informations, reportez-vous à la section «carte d'identité nationale Grèce» dans [ce que recherche les types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, reportez-vous à la section «carte d’identité nationale Grèce» dans [ce que recherche les types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="hungary"></a>Hongrie
 
@@ -312,7 +312,7 @@ Pour plus d'informations, reportez-vous à la section «carte d'identité nation
 
 11 chiffres :
   
--  Un chiffre correspondant au sexe (1-mâle, 2 femelles), d'autres numéros sont également possibles pour les citoyens nés avant 1900 ou les citoyens ayant une double citoyenneté. 
+-  Un chiffre correspondant au sexe (1-mâle, 2 femelles), d’autres numéros sont également possibles pour les citoyens nés avant 1900 ou les citoyens ayant une double citoyenneté. 
     
 - Six chiffres correspondant à la date de naissance (AAMMJJ)
     
@@ -352,23 +352,23 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 #### <a name="keywordshungaryeunationalidcard"></a>Keywords_hungary_eu_national_id_card
 
-Numéro d'identification personnel
+Numéro d’identification personnel
   
 numéro d’identification
   
-Numéro d'identification personnel
+Numéro d’identification personnel
   
-személyazonosító Igazolvány
+személyazonosító igazolvány
   
 ## <a name="ireland"></a>Irlande
 
 ### <a name="format"></a>Format
 
-Combinaison de neuf caractères de lettres, de chiffres et d'un espace dans le modèle spécifié
+Combinaison de neuf caractères de lettres, de chiffres et d’un espace dans le modèle spécifié
   
 ### <a name="pattern"></a>Modèle
 
-Combinaison de neuf caractères de lettres, de chiffres et d'un espace dans le modèle spécifié
+Combinaison de neuf caractères de lettres, de chiffres et d’un espace dans le modèle spécifié
   
 Du 01 janvier 2013 au maintenant:
   
@@ -423,15 +423,15 @@ Numéro de service public
   
 n ° PPS
   
-Numéro de produit et d'assurance sociale
+Numéro de produit et d’assurance sociale
   
 RSI non
   
-Numéro d'identification personnel
+Numéro d’identification personnel
   
 numéro d’identification
   
-Numéro d'identification personnel
+Numéro d’identification personnel
   
 uimhir phearsanta seirbhíse poiblí
   
@@ -451,13 +451,13 @@ Combinaison de lettres et de chiffres de 16 caractères:
     
 - Trois lettres qui correspondent à la première, troisième et quatrième consonnes du prénom
     
-- Deux chiffres correspondant aux derniers chiffres de l'année de naissance
+- Deux chiffres correspondant aux derniers chiffres de l’année de naissance
     
-- Une lettre correspondant à la lettre du mois de naissance: les lettres sont utilisées dans l'ordre alphabétique, mais seules les lettres de A à E, H, L, M, P, R à T sont utilisées (par conséquent, le mois de janvier est A et le mois d'octobre est R).
+- Une lettre correspondant à la lettre du mois de naissance: les lettres sont utilisées dans l’ordre alphabétique, mais seules les lettres de A à E, H, L, M, P, R à T sont utilisées (par conséquent, le mois de janvier est A et le mois d’octobre est R).
     
 - Deux chiffres correspondant au jour du mois de naissance — afin de différencier les hommes, 40 est ajouté au jour de naissance pour les femmes
     
-- Quatre chiffres correspondant à l'indicatif régional propre à la municipalité où la personne est né (des codes pays sont utilisés pour les pays étrangers)
+- Quatre chiffres correspondant à l’indicatif régional propre à la municipalité où la personne est né (des codes pays sont utilisés pour les pays étrangers)
     
 - Un chiffre de parité
     
@@ -501,11 +501,11 @@ Numéro de certificat personnel
   
 code fiscal
   
-personalcodeno #
+personalcodeno#
   
-Numéro d'identification personnel
+Numéro d’identification personnel
   
-code d'identification personnel
+code d’identification personnel
   
 codice Personal
   
@@ -523,11 +523,11 @@ Codice fiscale
 
 ### <a name="format"></a>Format
 
-11 chiffres et un trait d'Union dans le format spécifié
+11 chiffres et un trait d’Union dans le format spécifié
   
 ### <a name="pattern"></a>Modèle
 
-11 chiffres et un trait d'Union:
+11 chiffres et un trait d’Union:
   
 -  Six chiffres correspondant à la date de naissance (JJMMAA) 
     
@@ -575,11 +575,11 @@ Numéro de code personnel
   
 Numéro de certificat personnel
   
-personalcodeno #
+personalcodeno#
   
-Numéro d'identification personnel
+Numéro d’identification personnel
   
-code d'identification personnel
+code d’identification personnel
   
 Personas kods
   
@@ -636,17 +636,17 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 code numérique personnel
   
-Numéro d'identification unique
+Numéro d’identification unique
   
 Numéro de service du citoyen
   
-Numéro d'identité unique
+Numéro d’identité unique
   
-uniqueidentityno #
+uniqueidentityno#
   
 code personnel.
   
-Asmeninis skaitmeninis kodas
+asmeninis skaitmeninis kodas
   
 unikalus identifikavimo
   
@@ -682,7 +682,7 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_luxemburg_eu_national_id_card` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_luxemburg_eu_national_id_card` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_luxemburg_eu_national_id_card` from est trouvé. 
     
@@ -701,19 +701,19 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ID personnel
   
-Numéro d'identification personnel
+Numéro d’identification personnel
   
-personalidno #
+personalidno#
   
-Numéro d'identification unique
+Numéro d’identification unique
   
-personalidnumber #
+personalidnumber#
   
-clé d'ID unique
+clé d’ID unique
   
-code d'identification personnel
+code d’identification personnel
   
-uniqueidkey #
+uniqueidkey#
   
 code individuel
   
@@ -725,23 +725,23 @@ ID eindeutige
   
 ID personnelle
   
-Numéro d'identification personnel
+Numéro d’identification personnel
   
-idpersonnelle #
+idpersonnelle#
   
-persönliche Identifikationsnummer
+persönliche identifikationsnummer
   
-eindeutigeid #
+eindeutigeid#
   
 ## <a name="malta"></a>Malte
 
 ### <a name="format"></a>Format
 
-Sept chiffres suivis d'une lettre
+Sept chiffres suivis d’une lettre
   
 ### <a name="pattern"></a>Modèle
 
-Sept chiffres suivis d'une lettre:
+Sept chiffres suivis d’une lettre:
   
 -  Sept chiffres  
     
@@ -755,13 +755,13 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_malta_eu_national_id_card` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_malta_eu_national_id_card` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_malta_eu_national_id_card` from est trouvé. 
     
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 65 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_malta_eu_national_id_card` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_malta_eu_national_id_card` régulière trouve le contenu qui correspond au modèle. 
     
 ```
  
@@ -782,21 +782,21 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 code numérique personnel
   
-Numéro d'identification unique
+Numéro d’identification unique
   
 Numéro de service du citoyen
   
-Numéro d'identité unique
+Numéro d’identité unique
   
-uniqueidentityno #
+uniqueidentityno#
   
 Kodiċi numerali
   
-numru ta'IDENTIFIKAZZJONI uniku
+numru ta’IDENTIFIKAZZJONI uniku
   
 numru-Servizz taċ-ċittadin
   
-numru ta'identità uniku
+numru ta’identità uniku
   
 ## <a name="netherlands"></a>Pays-Bas
 
@@ -843,13 +843,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 code numérique personnel
   
-Numéro d'identification unique
+Numéro d’identification unique
   
 Numéro de service du citoyen
   
-Numéro d'identité unique
+Numéro d’identité unique
   
-uniqueidentityno #
+uniqueidentityno#
   
 BSN
   
@@ -857,19 +857,19 @@ BSN
   
 persoonlijke Numerieke de code
   
-Uniek identificatienummer
+uniek identificatienummer
   
 burgerservicenummer
   
-Uniek identiteitsnummer
+uniek identiteitsnummer
   
 ## <a name="poland"></a>Pologne
 
-Pour plus d'informations, reportez-vous à la section «Pologne national ID (PESEL)» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, reportez-vous à la section «Pologne national ID (PESEL)» dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="portugal"></a>Portugal
 
-Pour plus d'informations, reportez-vous à la section «numéro de carte de citoyen Portugal» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, reportez-vous à la section «numéro de carte de citoyen Portugal» dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="romania"></a>Roumanie
 
@@ -916,23 +916,23 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 code numérique personnel
   
-Numéro d'identification unique
+Numéro d’identification unique
   
-CNP
+cnp
   
-CNP #
-  
-ancre
+cnp#
   
 ancre
   
-Numéro d'assurance
+ancre
   
-insurancenumber #
+Numéro d’assurance
   
-Numéro d'identité unique
+insurancenumber#
   
-uniqueidentityno #
+Numéro d’identité unique
+  
+uniqueidentityno#
   
 COD numérique personnel
   
@@ -946,11 +946,11 @@ număr identitate
   
 număr IDENTIFICARE personnel
   
-număridentitate #
+număridentitate#
   
-codnumericpersonal #
+codnumericpersonal#
   
-numărpersonalunic #
+numărpersonalunic#
   
 ## <a name="slovakia"></a>République de Slovaquie
 
@@ -999,11 +999,11 @@ Numéro de naissance
   
 numéro d’identification nationale
   
-Numéro d'identification personnel
+Numéro d’identification personnel
   
 numéro de sécurité sociale
   
-nationalnumber #
+nationalnumber#
   
 SSN
   
@@ -1011,15 +1011,15 @@ SSN
   
 numéro national
   
-Numéro d'identification personnel
+Numéro d’identification personnel
   
-personalidnumber #
+personalidnumber#
   
 rč
   
 rodné číslo
   
-Rodne Cislo
+rodne cislo
   
 ## <a name="slovenia"></a>Slovénie
 
@@ -1031,7 +1031,7 @@ Rodne Cislo
 
 13 chiffres dans le modèle spécifié:
   
--  Sept chiffres correspondant à la date de naissance (DDMMLLL) où «LLL» correspond aux trois derniers chiffres de l'année de naissance 
+-  Sept chiffres correspondant à la date de naissance (DDMMLLL) où «LLL» correspond aux trois derniers chiffres de l’année de naissance 
     
 - Deux chiffres correspondant à la zone de naissance
     
@@ -1074,13 +1074,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 code numérique personnel
   
-Numéro d'identification unique
+Numéro d’identification unique
   
-Numéro d'enregistrement unique
+Numéro d’enregistrement unique
   
-Numéro d'identité unique
+Numéro d’identité unique
   
-uniqueidentityno #
+uniqueidentityno#
   
 Numéro de citoyen principal unique
   
@@ -1096,11 +1096,11 @@ emšo
 
 ### <a name="format"></a>Format
 
-Sept chiffres suivis d'un caractère
+Sept chiffres suivis d’un caractère
   
 ### <a name="pattern"></a>Modèle
 
-Sept chiffres suivis d'un caractère
+Sept chiffres suivis d’un caractère
   
 - Sept chiffres 
     
@@ -1114,7 +1114,7 @@ Non applicable
 
 Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’informations sensibles est de 75 % si, dans une proximité de 300 caractères :
   
-- L'expression `Regex_spain_eu_national_id_card` régulière trouve le contenu qui correspond au modèle. 
+- L’expression `Regex_spain_eu_national_id_card` régulière trouve le contenu qui correspond au modèle. 
     
 - Un mot clé `Keywords_spain_eu_national_id_card"` from est trouvé. 
     
@@ -1136,49 +1136,49 @@ DNI
   
 numéro d’identification nationale
   
-Numéro d'identité nationale
+Numéro d’identité nationale
   
-Numéro d'assurance
+Numéro d’assurance
   
-Numéro d'identification personnel
+Numéro d’identification personnel
   
 identité nationale
   
-n ° d'identité personnelle
+n ° d’identité personnelle
   
-Numéro d'identité unique
+Numéro d’identité unique
   
-nationalidno #
+nationalidno#
   
 quei
   
 DNI
   
-nationalID #
+nationalid#
   
 nie
   
 nie
   
-nienúmero #
+nienúmero#
   
 nie número
   
 Documento Nacional de identidad
   
-identidad Único
+identidad único
   
 número Nacional identidad
   
 DNI número
   
-dninúmero #
+dninúmero#
   
-identidadúnico #
+identidadúnico#
   
 ## <a name="sweden"></a>Suède
 
-Pour plus d'informations, reportez-vous à la section «ID national Suède» dans [la recherche des types d'informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, reportez-vous à la section «ID national Suède» dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="see-also"></a>Voir aussi
 

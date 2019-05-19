@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,24 +12,24 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
-description: "Découvrez comment trouver les résultats d'un module de processus exécuté dans Office 365 Advanced eDiscovery, y compris l'état de la tâche et le résumé des processus.  "
-ms.openlocfilehash: 0393cde78e559036d92b9ac48245afafc974a8b2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 'Découvrez comment trouver les résultats d’un module de processus exécuté dans Office 365 Advanced eDiscovery, y compris l’état de la tâche et le résumé des processus.  '
+ms.openlocfilehash: 4bbdbf68f71e3459ff2ddcd8ba3fb33e52f16825
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267176"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157796"
 ---
 # <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>Afficher les résultats du module de processus dans Office 365 Advanced eDiscovery
 
-Une fois le **processus** de **préparation** \> initié, vous pouvez afficher l'avancement et les résultats. 
+Une fois le **processus** de **préparation** \> initié, vous pouvez afficher l’avancement et les résultats. 
   
 > [!NOTE]
 > Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="process-task-status"></a>État de tâche de processus
 
-Dans **préparer** \> les **résultats**du **processus** \> , la page affiche l'état actuel (si le processus est en cours d'exécution) ou l'état de la dernière tâche d'État du processus, comme illustré dans l'exemple suivant.
+Dans **préparer** \> les **résultats**du **processus** \> , la page affiche l’état actuel (si le processus est en cours d’exécution) ou l’état de la dernière tâche d’État du processus, comme illustré dans l’exemple suivant.
   
 ![État de tâche du module de processus](media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
   
@@ -43,25 +43,25 @@ Les tâches affichées peuvent varier en fonction des options de processus séle
     
 - **Synchronisation de la base de données**: processus de base de données interne.
     
-- **Copie**de fichiers: copie les fichiers du processus. Cette tâche est toujours affichée, même lorsque l'option copie avancée des fichiers est sélectionnée.
+- **Copie**de fichiers: copie les fichiers du processus. Cette tâche est toujours affichée, même lorsque l’option copie avancée des fichiers est sélectionnée.
     
-- **Extraction de texte**: lorsqu'il existe des fichiers natifs, Advanced eDiscovery extrait le texte de ces fichiers à l'aide de DTSearch. Le texte extrait de ces fichiers est stocké sous forme de fichiers texte dans le dossier case.
+- **Extraction de texte**: lorsqu’il existe des fichiers natifs, Advanced eDiscovery extrait le texte de ces fichiers à l’aide de DTSearch. Le texte extrait de ces fichiers est stocké sous forme de fichiers texte dans le dossier case.
     
 - **Mise à jour**des métadonnées: traite les métadonnées chargées. 
     
-- **Finalisation**: traitement interne qui finalise les données des fichiers de casse chargés (par exemple, identifier les fichiers d'erreur et de réussite). 
+- **Finalisation**: traitement interne qui finalise les données des fichiers de casse chargés (par exemple, identifier les fichiers d’erreur et de réussite). 
     
-État de la tâche: affiché une fois la tâche terminée. Pendant l'exécution des tâches, la durée de l'exécution s'affiche.
+État de la tâche: affiché une fois la tâche terminée. Pendant l’exécution des tâches, la durée de l’exécution s’affiche.
   
 > [!NOTE]
 > Les tâches achevées peuvent également inclure des totaux pour les fichiers ayant terminé le traitement ou des fichiers contenant des erreurs. 
   
 > [!TIP]
-> «Annuler» fournit une option de restauration pour arrêter l'exécution du processus, puis restaurer le remplissage de données précédent ou les données traitées enregistrées. La restauration efface toutes les données traitées. Si vous ne souhaitez pas que les données traitées soient perdues (par exemple, si vous envisagez de recharger ces fichiers), sélectionnez l'option «Annuler» dans cette fenêtre pour choisir de ne pas restaurer. 
+> «Annuler» fournit une option de restauration pour arrêter l’exécution du processus, puis restaurer le remplissage de données précédent ou les données traitées enregistrées. La restauration efface toutes les données traitées. Si vous ne souhaitez pas que les données traitées soient perdues (par exemple, si vous envisagez de recharger ces fichiers), sélectionnez l’option «Annuler» dans cette fenêtre pour choisir de ne pas restaurer. 
   
 ## <a name="process-summary"></a>Résumé du processus
 
-Dans la \> synthèse \> du \> processus de préparation des résultats du processus, une répartition des résultats des fichiers chargés est affichée en fonction du traitement réussi des fichiers et des résultats de l'erreur.
+Dans la \> synthèse \> du \> processus de préparation des résultats du processus, une répartition des résultats des fichiers chargés est affichée en fonction du traitement réussi des fichiers et des résultats de l’erreur.
   
 Les volets présentent un affichage graphique des statistiques sur les fichiers importés, comme suit:
   

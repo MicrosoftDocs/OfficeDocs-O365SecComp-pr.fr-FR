@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ec27b7a8e9dbaf03e9a1d5f987bb9dd9b7513b85
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 60e4baf2df94793b532fb4035a34ca3c7a5cd332
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257632"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153576"
 ---
 # <a name="supported-file-types-in-data-investigations-preview"></a>Types de fichiers pris en charge dans les enquêtes de données (aperçu)
 
-Les enquêtes de données (aperçu) prennent en charge de nombreux types de fichiers de différentes manières, qui sont décrites dans le tableau suivant. Cette liste n'est pas finalisée, et nous allons ajouter de nouveaux types de fichiers lors de notre test de validation. Le tableau indique également si un type de fichier peut être affiché dans les visionneuses disponibles lorsque vous examinez les preuves.
+Les enquêtes de données (aperçu) prennent en charge de nombreux types de fichiers de différentes manières, qui sont décrites dans le tableau suivant. Cette liste n’est pas finalisée, et nous allons ajouter de nouveaux types de fichiers lors de notre test de validation. Le tableau indique également si un type de fichier peut être affiché dans les visionneuses disponibles lorsque vous examinez les preuves.
 
-| Type MIME | Classe file | Visionneuse Native | Visionneuse de texte | Visionneuse d'anNotations | Extraction de conteneur | Extensions |
+| Type MIME | Classe file | Visionneuse Native | Visionneuse de texte | Visionneuse d’annotations | Extraction de conteneur | Extensions |
 | :- | :- | :- | :- | :- | :- | :- |
 | application/msword | Document | Oui | Oui | Oui | Non | . doc;. dat |
 | application/pdf | Document | Oui | Oui | Oui | Non | .pdf |

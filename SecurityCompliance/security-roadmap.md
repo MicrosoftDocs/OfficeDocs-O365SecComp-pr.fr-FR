@@ -4,7 +4,7 @@ ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
 ms.date: 10/08/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Principales recommandations de l’équipe Cybersecurity de Microsoft pour la mise en œuvre de fonctionnalités de sécurité pour protéger votre environnement Office 365. '
-ms.openlocfilehash: d6ac885d2517a7933df52b34124654784012c677
-ms.sourcegitcommit: 7be8617ce75909f0fa1a2f6e72749e2ef4bb2d3e
+ms.openlocfilehash: 12aa5833757901ba78a0716480cb34b5b60675a5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34088817"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157636"
 ---
 # <a name="office-365-security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Feuille de route de sécurité Office 365-priorités principales des 30 premiers jours, 90 jours et au-delà
 
@@ -74,7 +74,7 @@ Ces tâches prennent un peu plus de temps à planifier et à implémenter, mais 
 |Domaine  <br/> |Tâche  <br/> |
 |Gestion de la sécurité  <br/> | • Vérifier le score de sécurité pour les actions recommandées [https://securescore.office.com](https://securescore.office.com)pour votre environnement ().  <br/>  • Poursuivez régulièrement l’examen des tableaux de bord et des rapports dans le centre de sécurité Microsoft 365, dans la sécurité des applications Cloud et dans les outils SIEM.  <br/>  • Recherchez et mettez en œuvre des mises à jour logicielles.  <br/>  • Effectuez des simulations d’attaque pour le Spear Phishing, le vaporisation des mots de passe et les attaques de mot de passe en force à l’aide d’un simulateur d' [attaque](https://support.office.com/article/attack-simulator-office-365-da5845db-c578-4a41-b2cb-5a09689a551b) (inclus avec [Office 365 Threat Intelligence](office-365-ti.md)).  <br/>  • Recherchez le risque de partage en examinant la sécurité des rapports intégrés dans Cloud App Security (sous l’onglet examiner).  <br/>  • Consultez le [Gestionnaire de conformité](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md) pour vérifier l’état des réglementations qui s’appliquent à votre organisation (par exemple, RGPD, NIST 800-171).  <br/> |
 |Protection contre les menaces  <br/> | Implémenter des protections améliorées pour les comptes d’administrateur:  <br/>  • Configurez les [stations de travail d’accès privilégié](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations) (pattes) pour l’activité d’administration.  <br/>  • Configurez [Azure ad Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).  <br/>  • Configurez un outil de gestion des événements et des informations sur la sécurité (SIEM) pour collecter les données de journalisation à partir d’Office 365, de la sécurité des applications Cloud et d’autres services, y compris AD FS. Le journal d’audit Office 365 stocke les données de 90 jours seulement. La capture de ces données dans l’outil SIEM vous permet de stocker des données pendant une période plus longue.  <br/> |
-|Gestion des identités et des accès  <br/> | • Activer et appliquer l’authentification multiFACTEUR pour tous les utilisateurs.  <br/>  • Implémentez un ensemble d' [accès conditionnel et de stratégies associées](https://docs.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-policies-configurations). |
+|Gestion des identités et des accès  <br/> | • Activer et appliquer l’authentification multifacteur pour tous les utilisateurs.  <br/>  • Implémentez un ensemble d' [accès conditionnel et de stratégies associées](https://docs.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-policies-configurations). |
 |Protection des informations  <br/> | Adaptez et implémentez les stratégies de protection des informations. Ces ressources incluent des exemples:  <br/> • [Protection des informations Office 365 pour RGPD](http://aka.ms/o365gdpr) <br/> • [Sécuriser les sites et les fichiers SharePoint Online](https://docs.microsoft.com/Office365/enterprise/secure-sharepoint-online-sites-and-files) <br/> <br> Utilisez les stratégies de protection contre la perte de données et les outils de surveillance dans Office 365 pour les données stockées dans Office 365 (au lieu de la sécurité des applications Cloud). <br><br>Utilisez la sécurité des applications Cloud avec Office 365 pour les fonctionnalités d’alerte avancées (autres que la protection contre la perte de données).  <br/> |
    
 ## <a name="beyond"></a>Après

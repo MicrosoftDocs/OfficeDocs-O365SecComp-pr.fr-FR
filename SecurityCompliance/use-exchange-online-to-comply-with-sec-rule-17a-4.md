@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cohasset Associates a validé que lorsque Exchange Online et le centre de sécurité et conformité sont configurés comme recommandé, ils répondent aux exigences de stockage pertinentes de règle CFTC 1.31(c)-(d), FINRA règle 4511 et SEC règle 17 a-4. Vous pouvez télécharger l’évaluation.
-ms.openlocfilehash: 7558770f5a777667bd0e986a3156b39a91f0336e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 60b8d27ed75afbfd6ffc5d8e254738ea62e0d21b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263760"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156196"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Utiliser Exchange Online et le centre de sécurité et conformité pour se conformer à la règle SEC 17a-4
 

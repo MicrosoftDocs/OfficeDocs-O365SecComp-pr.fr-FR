@@ -4,42 +4,42 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 10/27/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
-description: Utiliser l'outil eDiscovery de recherche de contenu pour rechercher des éléments qui ont été importés dans des boîtes aux lettres dans Office 365 à partir d'une source de données tierce. Vous pouvez créer une requête pour rechercher tous les éléments importés ou créer une requête pour rechercher des types de données tiers spécifiques. Cet article répertorie les valeurs que vous pouvez utiliser dans une requête de mot clé pour rechercher les types de données tiers pouvant être importés dans Office 365.
-ms.openlocfilehash: c71472b5e6d9b992196780aba55e3775823447ab
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+description: Utiliser l’outil eDiscovery de recherche de contenu pour rechercher des éléments qui ont été importés dans des boîtes aux lettres dans Office 365 à partir d’une source de données tierce. Vous pouvez créer une requête pour rechercher tous les éléments importés ou créer une requête pour rechercher des types de données tiers spécifiques. Cet article répertorie les valeurs que vous pouvez utiliser dans une requête de mot clé pour rechercher les types de données tiers pouvant être importés dans Office 365.
+ms.openlocfilehash: 4a611ed04cc102aad4d978a379efbf46a0bd70e2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402902"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156206"
 ---
 # <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>Utiliser la recherche de contenu pour rechercher des données tierces importées dans Office 365
 
-Vous pouvez utiliser l' [outil de découverte électronique de recherche de contenu](content-search.md) dans le centre de sécurité _AMP_ Compliance Center pour rechercher des éléments qui ont été importés dans des boîtes aux lettres dans Office 365 à partir d'une source de données tierce. Vous pouvez créer une requête pour rechercher tous les éléments de données tiers importés ou vous pouvez créer une requête pour rechercher uniquement des éléments de données tiers spécifiques. En outre, vous pouvez également créer une stratégie de conservation basée sur une requête ou une conservation eDiscovery basée sur une requête pour conserver les données tierces dans Office 365. 
+Vous pouvez utiliser l' [outil de découverte électronique de recherche de contenu](content-search.md) dans le centre de sécurité _AMP_ Compliance Center pour rechercher des éléments qui ont été importés dans des boîtes aux lettres dans Office 365 à partir d’une source de données tierce. Vous pouvez créer une requête pour rechercher tous les éléments de données tiers importés ou vous pouvez créer une requête pour rechercher uniquement des éléments de données tiers spécifiques. En outre, vous pouvez également créer une stratégie de conservation basée sur une requête ou une conservation eDiscovery basée sur une requête pour conserver les données tierces dans Office 365. 
   
-Pour plus d'informations sur l'importation de données tierces et sur la liste des types de données tiers pouvant être importés dans Office 365, consultez [la rubrique collaborer avec un partenaire pour archiver des données tierces dans office 365](work-with-partner-to-archive-third-party-data.md). 
+Pour plus d’informations sur l’importation de données tierces et sur la liste des types de données tiers pouvant être importés dans Office 365, consultez [la rubrique collaborer avec un partenaire pour archiver des données tierces dans office 365](work-with-partner-to-archive-third-party-data.md). 
   
-## <a name="creating-a-query-to-search-all-third-party-data"></a>Création d'une requête pour rechercher toutes les données tierces
+## <a name="creating-a-query-to-search-all-third-party-data"></a>Création d’une requête pour rechercher toutes les données tierces
 
-Pour rechercher (ou bloquer) tout type de données tierces que vous avez importées dans Office 365, vous pouvez utiliser la `kind:externaldata` paire message-valeur de la zone de mot clé pour une recherche de contenu ou lors de la création d'une conservation basée sur une requête. Par exemple, pour rechercher des éléments qui ont été importés à partir d'une source de données tierce et qui contiennent le mot «Contoso» dans la propriété Subject de l'élément importé, utilisez la requête suivante: 
+Pour rechercher (ou bloquer) tout type de données tierces que vous avez importées dans Office 365, vous pouvez utiliser la `kind:externaldata` paire message-valeur de la zone de mot clé pour une recherche de contenu ou lors de la création d’une conservation basée sur une requête. Par exemple, pour rechercher des éléments qui ont été importés à partir d’une source de données tierce et qui contiennent le mot «Contoso» dans la propriété Subject de l’élément importé, utilisez la requête suivante: 
   
 ```
 kind:externaldata AND subject:contoso
 ```
 
-L'exemple de requête de mot clé précédent inclut la propriété Subject. Pour obtenir la liste des autres propriétés des éléments de données tiers pouvant être inclus dans une requête de mot-clé, voir la section «plus d'informations» dans [utilisation d'un partenaire pour archiver des données tierces dans Office 365](work-with-partner-to-archive-third-party-data.md#more-information).
+L’exemple de requête de mot clé précédent inclut la propriété Subject. Pour obtenir la liste des autres propriétés des éléments de données tiers pouvant être inclus dans une requête de mot-clé, voir la section «plus d’informations» dans [utilisation d’un partenaire pour archiver des données tierces dans Office 365](work-with-partner-to-archive-third-party-data.md#more-information).
   
-Lors de la création de requêtes de recherche et de conservation de données tierces, vous pouvez également utiliser des conditions pour affiner les résultats de la recherche. Pour plus d'informations sur la création de requêtes de recherche de contenu, consultez la rubrique [requêtes de mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).
+Lors de la création de requêtes de recherche et de conservation de données tierces, vous pouvez également utiliser des conditions pour affiner les résultats de la recherche. Pour plus d’informations sur la création de requêtes de recherche de contenu, consultez la rubrique [requêtes de mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md).
   
-## <a name="creating-a-query-to-search-specific-types-of-third-party-data"></a>Création d'une requête pour rechercher des types spécifiques de données tierces
+## <a name="creating-a-query-to-search-specific-types-of-third-party-data"></a>Création d’une requête pour rechercher des types spécifiques de données tierces
 
-Au lieu de rechercher tous les types de données tierces, vous pouvez créer des requêtes qui recherchent uniquement un type précis de données tierces à l'aide de la paire de propriétés de message suivante dans la zone de mot clé pour une recherche de contenu:
+Au lieu de rechercher tous les types de données tierces, vous pouvez créer des requêtes qui recherchent uniquement un type précis de données tierces à l’aide de la paire de propriétés de message suivante dans la zone de mot clé pour une recherche de contenu:
   
 ```
 itemclass:ipm.externaldata.<third-party data type>* 
@@ -69,9 +69,9 @@ Le tableau suivant répertorie les types de données tiers que vous pouvez reche
 |BearShare  <br/> | `ipm.externaldata.Bearshare*` <br/> |
 |BitTorrent  <br/> | `ipm.externaldata.BitTorrent*` <br/> |
 |BlackBerry  <br/> | `ipm.externaldata.Blackberry*` <br/> |
-|Journaux d'appels BlackBerry  <br/> | `ipm.externaldata.BlackBerryCall*` <br/> |
+|Journaux d’appels BlackBerry  <br/> | `ipm.externaldata.BlackBerryCall*` <br/> |
 |BlackBerry Messenger  <br/> | `ipm.externaldata.BlackBerryMessenger*` <br/> |
-|CODE confidentiel BlackBerry  <br/> | `ipm.externaldata.BlackBerryPIN*` <br/> |
+|Code confidentiel BlackBerry  <br/> | `ipm.externaldata.BlackBerryPIN*` <br/> |
 |BlackBerry SMS  <br/> | `ipm.externaldata.BlackBerrySMS*` <br/> |
 |Bloomberg  <br/> | `ipm.externaldata.Bloomberg*` <br/> |
 |Bloomberg Mail  <br/> | `ipm.externaldata.BloombergMail*` <br/> |

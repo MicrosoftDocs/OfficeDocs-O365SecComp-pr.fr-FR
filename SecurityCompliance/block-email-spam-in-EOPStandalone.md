@@ -5,7 +5,7 @@ author: msfttracyp
 ms.reviewer: andypunt
 manager: laurawi
 ms.date: 2/25/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -16,12 +16,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: Document pour les administrateurs autonomes d’EOP afin d’éviter le courrier indésirable faux négatifs
-ms.openlocfilehash: 598f63bba4be32c6c664db83126b40c5fae159a0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a79fb94a233cd101caac96312b05a4c0d24ea645
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243933"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152196"
 ---
 ## <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>Paramètres pour personnaliser le filtre anti-courrier indésirable Office 365
 
@@ -45,7 +45,8 @@ Le courrier indésirable que vous recevez comprend essentiellement du courrier e
   
 ### <a name="block-email-spam-using-spam-filter-block-lists"></a>Blocage du courrier indésirable à l’aide des listes de blocage du filtre anti-courrier indésirable
 
-[Configurez vos stratégies de filtrage du courrier indésirable](https://technet.microsoft.com/fr-FR/library/jj200684%28v=exchg.150%29.aspx) pour ajouter l’adresse de l’expéditeur à la liste des expéditeurs bloqués ou le domaine à la liste des domaines bloqués dans le filtre anti-courrier indésirable. Les e-mails provenant d’un expéditeur ou d’un domaine figurant dans l’une de ces listes seront marqués comme courrier indésirable. 
+
+  [Configurez vos stratégies de filtrage du courrier indésirable](https://technet.microsoft.com/fr-FR/library/jj200684%28v=exchg.150%29.aspx) pour ajouter l’adresse de l’expéditeur à la liste des expéditeurs bloqués ou le domaine à la liste des domaines bloqués dans le filtre anti-courrier indésirable. Les e-mails provenant d’un expéditeur ou d’un domaine figurant dans l’une de ces listes seront marqués comme courrier indésirable. 
   
 ## <a name="email-users-can-also-help-ensure-that-false-negative-and-email-spam-is-blocked-with-office-365-spam-filter"></a>Blocage des faux négatifs et du courrier indésirable par les utilisateurs eux-mêmes avec le filtre anti-courrier indésirable Office 365
 
@@ -81,7 +82,7 @@ Le service EOP prend en compte les listes des expéditeurs autorisés et bloqué
     Dans la mesure où la valeur SCL est égale à 0 dans votre serveur Exchange local, les messages non indésirables sont remis aux boîtes aux lettres de vos utilisateurs même si la liste des expéditeurs bloqués locale des utilisateurs peut toujours les envoyer dans le dossier Courrier indésirable. Si vous utilisez la mise en quarantaine du courrier indésirable dans EOP, il se peut que les expéditeurs figurant dans la liste fiable de vos utilisateurs soient identifiés comme courrier indésirable et mis en quarantaine. Néanmoins, si vous utilisez le dossier Courrier indésirable dans votre boîte aux lettres locale, les messages des expéditeurs autorisés parviendront jusqu’à la boîte de réception.
 
 > [!WARNING]
-> Si vous utilisez une règle de flux de messagerie pour attribuer la valeur SCL 0 (ou une valeur autre que -1), toutes les options de courrier indésirable d’Outlook sont appliquées au message. En d’autres termes, les listes des expéditeurs bloqués et autorisés sont prises en compte. De même, les messages qui ne proviennent pas d’adresses figurant dans les listes d’expéditeurs bloqués ou autorisés peuvent être marqués comme courrier indésirable par le filtre anti-courrier indésirable côté client. Pour qu’Outlook tienne compte des listes d’expéditeurs bloqués et autorisés sans utiliser le filtre anti-courrier indésirable côté client, définissez l’option sur « Aucun filtrage automatique » dans les options de courrier indésirable d’Outlook. Il s’agit de l’option par défaut dans les dernières versions d’Outlook. Vérifiez quand même que ce paramètre est bien défini pour interdire l’application du filtre anti-courrier indésirable côté client. Si vous êtes un administrateur, vous pouvez désactiver le filtre anti-courrier indésirable d’Outlook en suivant les instructions fournies dans l’article [Outlook : Paramètre de stratégie pour désactiver l’interface utilisateur de courrier électronique indésirable et le mécanisme de filtrage](https://support.microsoft.com/fr-FR/kb/2180568).
+> Si vous utilisez une règle de flux de messagerie pour attribuer la valeur SCL 0 (ou une valeur autre que -1), toutes les options de courrier indésirable d’Outlook sont appliquées au message. En d’autres termes, les listes des expéditeurs bloqués et autorisés sont prises en compte. De même, les messages qui ne proviennent pas d’adresses figurant dans les listes d’expéditeurs bloqués ou autorisés peuvent être marqués comme courrier indésirable par le filtre anti-courrier indésirable côté client. Pour qu’Outlook tienne compte des listes d’expéditeurs bloqués et autorisés sans utiliser le filtre anti-courrier indésirable côté client, définissez l’option sur « Aucun filtrage automatique » dans les options de courrier indésirable d’Outlook. Il s’agit de l’option par défaut dans les dernières versions d’Outlook. Vérifiez quand même que ce paramètre est bien défini pour interdire l’application du filtre anti-courrier indésirable côté client. Si vous êtes un administrateur, vous pouvez désactiver le filtre anti-courrier indésirable d’Outlook en suivant les instructions fournies dans l’article [Outlook : Paramètre de stratégie pour désactiver l’interface utilisateur de courrier électronique indésirable et le mécanisme de filtrage](https://support.microsoft.com/en-us/kb/2180568).
   
 ## <a name="see-also"></a>Voir aussi
 

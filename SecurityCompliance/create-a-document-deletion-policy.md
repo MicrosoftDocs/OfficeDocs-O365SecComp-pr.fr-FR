@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,21 +12,21 @@ search.appverid:
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
 description: Les organisations doivent souvent conserver des documents pendant une certaine période de temps en raison des réglementations de conformité, juridiques, ou autres. Toutefois, conserver des documents plus longtemps que nécessaire peut exposer l’organisation à un risque juridique.
-ms.openlocfilehash: 7fb0c546fb65bf2cc2e67fe7e047593892cea58d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e8f85f4cc9ae541d8a962dfb270e5216c912ac7d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259724"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153916"
 ---
 # <a name="create-a-document-deletion-policy"></a>Création d’une stratégie de suppression de documents
 
 > [!IMPORTANT]
-> Pour aller plus loin, nous vous recommandons d'utiliser une stratégie de rétention ou des étiquettes de rétention créées dans le centre de conformité Microsoft 365 &amp; , le centre de sécurité Microsoft 365 ou le centre de sécurité conformité Office 365 au lieu d'une stratégie de suppression de documents. Les stratégies de suppression de documents continueront à fonctionner côte à côte avec des stratégies de rétention, mais si vous devez conserver ou supprimer du contenu n'importe où dans Office 365, nous vous recommandons d'utiliser une stratégie de rétention. Pour plus d'informations, consultez [la rubrique utiliser une stratégie de rétention au lieu de ces fonctionnalités](retention-policies.md#use-a-retention-policy-instead-of-these-features). 
+> Pour aller plus loin, nous vous recommandons d’utiliser une stratégie de rétention ou des étiquettes de rétention créées dans le centre de conformité Microsoft 365 &amp; , le centre de sécurité Microsoft 365 ou le centre de sécurité conformité Office 365 au lieu d’une stratégie de suppression de documents. Les stratégies de suppression de documents continueront à fonctionner côte à côte avec des stratégies de rétention, mais si vous devez conserver ou supprimer du contenu n’importe où dans Office 365, nous vous recommandons d’utiliser une stratégie de rétention. Pour plus d’informations, consultez [la rubrique utiliser une stratégie de rétention au lieu de ces fonctionnalités](retention-policies.md#use-a-retention-policy-instead-of-these-features). 
   
 Les organisations doivent souvent conserver des documents pendant une certaine période de temps en raison des réglementations de conformité, juridiques, ou autres. Toutefois, conserver des documents plus longtemps que nécessaire peut exposer l’organisation à un risque juridique.
   
-Avec une stratégie de suppression de documents, vous pouvez réduire de manière proactive les risques en supprimant des documents dans un site après une période de temps spécifique (par exemple, vous pouvez supprimer des documents dans les sites OneDrive entreprise de l'utilisateur cinq ans après la création des documents). 
+Avec une stratégie de suppression de documents, vous pouvez réduire de manière proactive les risques en supprimant des documents dans un site après une période de temps spécifique (par exemple, vous pouvez supprimer des documents dans les sites OneDrive entreprise de l’utilisateur cinq ans après la création des documents). 
   
 Après avoir créé une stratégie de suppression de documents, vous pouvez l’affecter à un modèle de collection de sites, pour que la stratégie soit disponible pour toutes les collections de sites créées à partir de ce modèle. Vous pouvez également affecter une stratégie à une collection de sites spécifique, qui remplace toutes les stratégies qui ont pu être affectées au modèle pour cette collection de sites.
   
@@ -40,17 +40,17 @@ Vous pouvez créer une stratégie de suppression de document de A à Z ou vous p
   
 ## <a name="examples-of-how-to-use-document-deletion-policies"></a>Exemples
 
-Une collection de sites ou un modèle de collection de sites peut avoir plusieurs stratégies qui lui sont affectées, et chacune de ces stratégies peut avoir une ou plusieurs règles. Toutefois, il ne peut y avoir qu'une seule stratégie active par site, et il ne peut y avoir qu'une seule règle de suppression active à tout moment pour les bibliothèques au sein du site.
+Une collection de sites ou un modèle de collection de sites peut avoir plusieurs stratégies qui lui sont affectées, et chacune de ces stratégies peut avoir une ou plusieurs règles. Toutefois, il ne peut y avoir qu’une seule stratégie active par site, et il ne peut y avoir qu’une seule règle de suppression active à tout moment pour les bibliothèques au sein du site.
   
 ![Schéma montrant la relation entre les stratégies](media/IP-Two-policies-four-rules.png)
   
 En outre, vous pouvez sélectionner une stratégie comme stratégie obligatoire ou par défaut, et vous pouvez sélectionner une règle de suppression comme règle par défaut : 
   
-- **Stratégie obligatoire** Lorsqu'une stratégie est marquée comme obligatoire, une seule stratégie peut être affectée à la collection de sites ou au modèle. La stratégie doit être marquée comme valeur par défaut et sera appliquée à tous les sites. Les propriétaires de sites ne peuvent pas refuser la stratégie.
+- **Stratégie obligatoire** Lorsqu’une stratégie est marquée comme obligatoire, une seule stratégie peut être affectée à la collection de sites ou au modèle. La stratégie doit être marquée comme valeur par défaut et sera appliquée à tous les sites. Les propriétaires de sites ne peuvent pas refuser la stratégie.
     
-- **Stratégie par défaut** Lorsqu'une stratégie est définie par défaut, la stratégie est automatiquement active dans tous les sites auxquels elle est affectée sans action requise par le propriétaire du site.
+- **Stratégie par défaut** Lorsqu’une stratégie est définie par défaut, la stratégie est automatiquement active dans tous les sites auxquels elle est affectée sans action requise par le propriétaire du site.
     
-- **Règle par défaut** Lorsqu'une règle de suppression est définie par défaut, elle est automatiquement appliquée à toutes les bibliothèques dans les sites qui utilisent la stratégie.
+- **Règle par défaut** Lorsqu’une règle de suppression est définie par défaut, elle est automatiquement appliquée à toutes les bibliothèques dans les sites qui utilisent la stratégie.
     
 Les exemples suivants expliquent quand vous pouvez utiliser une stratégie obligatoire ou des stratégies et règles par défaut.
   
@@ -108,7 +108,7 @@ En outre, les stratégies et les règles sont adaptées à une collection de sit
 
 1. Dans le centre de &amp; conformité Office 365Security, accédez à **conservation**de la **gestion** \> des données. Sous **supprimer**, cliquez sur **gérer les stratégies de suppression de documents pour SharePoint Online et OneDrive entreprise**. Le centre de stratégies de suppression de documents s’ouvre dans un nouvel onglet du navigateur.
     
-    La première fois que vous naviguez depuis &amp; le centre de sécurité conformité vers le centre de stratégie de suppression de documents, le centre de stratégies est automatiquement créé pour vous. Vous pouvez également créer manuellement le centre de stratégies en [créant la collection de sites](http://go.microsoft.com/fwlink/p/?LinkID=404342) et en choisissant **Centre de stratégies de conformité** sous l'onglet **entreprise** . 
+    La première fois que vous naviguez depuis &amp; le centre de sécurité conformité vers le centre de stratégie de suppression de documents, le centre de stratégies est automatiquement créé pour vous. Vous pouvez également créer manuellement le centre de stratégies en [créant la collection de sites](http://go.microsoft.com/fwlink/p/?LinkID=404342) et en choisissant **Centre de stratégies de conformité** sous l’onglet **entreprise** . 
     
 2. Choisissez **stratégies de suppression**.
     
@@ -122,7 +122,7 @@ En outre, les stratégies et les règles sont adaptées à une collection de sit
     
 6. Entrez un nom et choisissez les options suivantes :
     
-  - Indiquez si la règle supprimera définitivement les documents ou les placera dans la Corbeille. La Corbeille fournit un filet de sécurité de deuxième niveau avant la suppression définitive d’un élément d’un site. Pour plus d'informations sur la corbeille, reportez-vous à [la section vidage de la Corbeille ou restauration de vos fichiers](http://go.microsoft.com/fwlink/p/?LinkID=404348).
+  - Indiquez si la règle supprimera définitivement les documents ou les placera dans la Corbeille. La Corbeille fournit un filet de sécurité de deuxième niveau avant la suppression définitive d’un élément d’un site. Pour plus d’informations sur la corbeille, reportez-vous à [la section vidage de la Corbeille ou restauration de vos fichiers](http://go.microsoft.com/fwlink/p/?LinkID=404348).
     
   - Indiquez si la date de suppression est calculée à partir de la date de création d’un document ou de la date de dernière modification.
     
@@ -136,10 +136,10 @@ En outre, les stratégies et les règles sont adaptées à une collection de sit
     
 8. Créez des règles supplémentaires si vous souhaitez que les propriétaires de sites puissent choisir différentes règles à appliquer à leur site. La règle par défaut, le cas échéant, s’appliquera si le propriétaire du site n’effectue aucune action.
     
-9. Pour supprimer une règle d'une stratégie, sélectionnez-la, cliquez sur **supprimer**, puis cliquez sur **OK**.
+9. Pour supprimer une règle d’une stratégie, sélectionnez-la, cliquez sur **supprimer**, puis cliquez sur **OK**.
     
     > [!NOTE]
-    > Si vous supprimez une règle et que la stratégie ne contient pas de règle par défaut, aucune règle n'est appliquée à cette stratégie (en d'autres termes, aucun document n'est supprimé). 
+    > Si vous supprimez une règle et que la stratégie ne contient pas de règle par défaut, aucune règle n’est appliquée à cette stratégie (en d’autres termes, aucun document n’est supprimé). 
   
 ![Message de confirmation de la suppression de la règle de la stratégie](media/IP-Remove-rule-from-policy-message.png)
   
@@ -171,7 +171,7 @@ Il est important de comprendre que la période spécifiée pour une stratégie d
 5. Cliquez sur **Enregistrer**.
     
     > [!NOTE]
-    > Chaque modèle ne peut avoir qu’un seul ensemble de règles qui lui est affecté. Si vous voyez une erreur indiquant que ce modèle a déjà des stratégies qui lui sont attribuées, sélectionnez **Annuler** \> l' **affectation à la collection de sites** dans le volet de navigation \> de gauche sélectionnez une collection de sites pour afficher et gérer l'ensemble des stratégies déjà présentes attribuée. 
+    > Chaque modèle ne peut avoir qu’un seul ensemble de règles qui lui est affecté. Si vous voyez une erreur indiquant que ce modèle a déjà des stratégies qui lui sont attribuées, sélectionnez **Annuler** \> l' **affectation à la collection de sites** dans le volet de navigation \> de gauche sélectionnez une collection de sites pour afficher et gérer l’ensemble des stratégies déjà présentes attribuée. 
   
 6. Choisissez **Gérer les stratégies affectées**, sélectionnez les stratégies à affecter, puis indiquez si une stratégie est la stratégie par défaut. Lorsque vous définissez une stratégie par défaut, tous les sites affectés à la stratégie ont automatiquement la stratégie active sans action requise par le propriétaire du site.
     
@@ -202,7 +202,7 @@ Il est important de comprendre que la période spécifiée pour une stratégie d
 4. Choisissez **choisir une collection de sites**. Recherchez la collection de sites par nom ou URL, sélectionnez la collection de sites, puis cliquez sur **Enregistrer**.
     
     > [!NOTE]
-    > Chaque collection de sites ne peut avoir qu’un seul ensemble de règles qui lui est affecté. Si vous voyez une erreur indiquant que des stratégies ont déjà été affectées à cette collection de sites, choisissez **Annuler** \> l' **affectation à la collection de sites** et sélectionnez une collection de sites pour afficher et gérer l'ensemble des stratégies déjà affectées. 
+    > Chaque collection de sites ne peut avoir qu’un seul ensemble de règles qui lui est affecté. Si vous voyez une erreur indiquant que des stratégies ont déjà été affectées à cette collection de sites, choisissez **Annuler** \> l' **affectation à la collection de sites** et sélectionnez une collection de sites pour afficher et gérer l’ensemble des stratégies déjà affectées. 
   
 ![Page Choisir une collection de sites](media/IP-Choose-a-site-collection-page.png)
   
@@ -226,13 +226,13 @@ Lorsque vous supprimez une affectation, les stratégies affectées ne s’appliq
     
 2. Choisissez **Attributions de stratégies pour les modèles** ou **Attributions de stratégies pour les collections de sites**.
     
-3. Sélectionnez l'élément d'affectation, puis cliquez sur **Supprimer l'élément**.
+3. Sélectionnez l’élément d’affectation, puis cliquez sur **Supprimer l’élément**.
     
     ![Commande de suppression d’élément pour l’attribution des stratégies](media/IP-Delete-policy-assignment.png)
   
 ## <a name="delete-a-policy"></a>Suppression d’une stratégie
 
-Vous ne pouvez pas supprimer une stratégie en cours d'utilisation. Avant de pouvoir supprimer une stratégie, vous devez d'abord supprimer toutes les affectations aux collections de sites et aux modèles de collection de sites qui incluent cette stratégie — consultez la section précédente.
+Vous ne pouvez pas supprimer une stratégie en cours d’utilisation. Avant de pouvoir supprimer une stratégie, vous devez d’abord supprimer toutes les affectations aux collections de sites et aux modèles de collection de sites qui incluent cette stratégie — consultez la section précédente.
   
 1. Dans le centre &amp; \> de sécurité conformité, choisissez **conservation** de la **gestion** \> des \> données dans le volet de navigation de gauche sous **supprimer** \> **gérer les stratégies de suppression de documents pour SharePoint Online et OneDrive pour les entreprises**. Le centre de stratégies de suppression de documents s’ouvre dans un nouvel onglet du navigateur.
     
@@ -242,11 +242,11 @@ Vous ne pouvez pas supprimer une stratégie en cours d'utilisation. Avant de pou
   
 3. Sélectionnez la stratégie.
     
-4. Dans l'onglet \> **** \> éléments du ruban, supprimez la **stratégie**.
+4. Dans l’onglet \> **** \> éléments du ruban, supprimez la **stratégie**.
     
     ![Bouton Supprimer la stratégie sur le ruban](media/IP-Remove-Policy-button-on-Ribbon.png)
   
-5. Si la stratégie est en cours d'utilisation, un message vous demande si vous souhaitez supprimer la stratégie de toutes les collections de sites où elle est utilisée. Si vous êtes sûr, choisissez **OK**.
+5. Si la stratégie est en cours d’utilisation, un message vous demande si vous souhaitez supprimer la stratégie de toutes les collections de sites où elle est utilisée. Si vous êtes sûr, choisissez **OK**.
     
     ![Message de confirmation de suppression de stratégie](media/IP-Delete-policy-confirmation.png)
   

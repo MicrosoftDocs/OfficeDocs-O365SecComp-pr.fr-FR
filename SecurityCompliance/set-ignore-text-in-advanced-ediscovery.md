@@ -1,10 +1,10 @@
 ---
-title: Définir l'option ignorer le texte pour l'analyse dans Office 365 Advanced eDiscovery
+title: Définir l’option ignorer le texte pour l’analyse dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,28 +12,28 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
-description: "Découvrez comment définir la règle pour ignorer le texte spécifique lors de l'utilisation des modules Analyze et process dans Office 365 Advanced eDiscovery.  "
-ms.openlocfilehash: 3a4c1d17a9a56d3018509a8dcfd6b49abb951676
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 'Découvrez comment définir la règle pour ignorer le texte spécifique lors de l’utilisation des modules Analyze et process dans Office 365 Advanced eDiscovery.  '
+ms.openlocfilehash: 70d9879f1cb6b3def06ff978fc2f7fa8f20a92f0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260820"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156676"
 ---
-# <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>Définir l'option ignorer le texte pour l'analyse dans Office 365 Advanced eDiscovery
+# <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>Définir l’option ignorer le texte pour l’analyse dans Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Pour utiliser Advanced eDiscovery, votre organisation doit souscrire un abonnement Office 365 E3 avec le module complémentaire Conformité avancée ou un abonnement E5. Si vous ne disposez pas d’un abonnement et que vous souhaitez essayer Advanced eDiscovery, vous pouvez vous [inscrire pour utiliser une version d’évaluation d’Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-La fonctionnalité ignorer le texte peut être appliquée à tout ou partie des modules avancés eDiscovery suivants: Analyze (Near-Duplicates, threads de messagerie, thèmes) et pertinence. Le texte ignoré n'apparaît pas dans les fichiers affichés par pertinence, et l'analyse/les calculs ignorent le texte ignoré.
+La fonctionnalité ignorer le texte peut être appliquée à tout ou partie des modules avancés eDiscovery suivants: Analyze (Near-Duplicates, threads de messagerie, thèmes) et pertinence. Le texte ignoré n’apparaît pas dans les fichiers affichés par pertinence, et l’analyse/les calculs ignorent le texte ignoré.
   
 Si la fonctionnalité ignorer le texte a été précédemment définie pour les modules qui ont déjà été exécutés, le paramètre ignorer le texte est maintenant protégé de la modification. Toutefois, la fonctionnalité ignorer le texte pour le module de pertinence peut toujours être modifiée à tout moment.
   
-## <a name="how-ignore-text-filters-are-applied"></a>Procédure d'application des filtres de texte
+## <a name="how-ignore-text-filters-are-applied"></a>Procédure d’application des filtres de texte
 
-Les filtres de texte ignoré multiples sont appliqués dans l'ordre dans lequel ils ont été entrés. Pour modifier l'ordre dans lequel ils sont appliqués, vous devez les supprimer et les saisir à nouveau dans l'ordre souhaité.
+Les filtres de texte ignoré multiples sont appliqués dans l’ordre dans lequel ils ont été entrés. Pour modifier l’ordre dans lequel ils sont appliqués, vous devez les supprimer et les saisir à nouveau dans l’ordre souhaité.
   
-Par exemple, si le contenu de texte est: «DAVE BOB ALICE CAROL veille», Voici des exemples d'entrées de texte ignorées et des résultats:
+Par exemple, si le contenu de texte est: «DAVE BOB ALICE CAROL veille», Voici des exemples d’entrées de texte ignorées et des résultats:
   
 ||||
 |:-----|:-----|:-----|
@@ -41,43 +41,43 @@ Par exemple, si le contenu de texte est: «DAVE BOB ALICE CAROL veille», Voici 
 |«ALICE», «BOB CAROL»  <br/> |==\>  <br/> |«DAVID RÉVEILLON»  <br/> |
 |«ALICE», «BOB ALICE CAROL»  <br/> |==\>  <br/> |«DAVE BOB CAROL VEILLE»  <br/> |
    
-La seconde entrée de texte ignorer n'est pas implémentée car la chaîne est introuvable comme telle après l'application du premier texte d'ignorer.
+La seconde entrée de texte ignorer n’est pas implémentée car la chaîne est introuvable comme telle après l’application du premier texte d’ignorer.
   
-## <a name="use-regular-expressions-when-defining-ignore-text"></a>Utiliser des expressions régulières lors de la définition d'un texte ignoré
+## <a name="use-regular-expressions-when-defining-ignore-text"></a>Utiliser des expressions régulières lors de la définition d’un texte ignoré
 
-Les expressions régulières sont prises en charge pour une utilisation lors de la définition d'un texte ignoré. Voici des exemples de syntaxe et d'utilisation des expressions régulières:
+Les expressions régulières sont prises en charge pour une utilisation lors de la définition d’un texte ignoré. Voici des exemples de syntaxe et d’utilisation des expressions régulières:
   
-- Pour supprimer (ignorer) le texte début jusqu'à la fin d'une ligne:
+- Pour supprimer (ignorer) le texte début jusqu’à la fin d’une ligne:
     
      `Begin(.*)$`
     
-    où «Begin» est l'occurrence initiale de cette chaîne dans la ligne.
+    où «Begin» est l’occurrence initiale de cette chaîne dans la ligne.
     
     Par exemple, pour le texte suivant:
     
-    **«Il s'agit de la première phrase et de la première ligne**
+    **«Il s’agit de la première phrase et de la première ligne**
     
-    **Il s'agit de la deuxième phrase et de la deuxième ligne»**
+    **Il s’agit de la deuxième phrase et de la deuxième ligne»**
     
     première expression régulière (.\*) $ entraînera:
     
     **"Ceci est**
     
-    **Il s'agit de la deuxième phrase et de la deuxième ligne»**
+    **Il s’agit de la deuxième phrase et de la deuxième ligne»**
     
-- Pour supprimer les clauses d'exclusion de responsabilité et les instructions légales insérées automatiquement à la fin des threads de messagerie:
+- Pour supprimer les clauses d’exclusion de responsabilité et les instructions légales insérées automatiquement à la fin des threads de messagerie:
     
      `Begin(.|\s)*End`
     
-    où «Begin» et «end» sont des chaînes uniques au début et à la fin d'un paragraphe de texte renvoyé à la page. 
+    où «Begin» et «end» sont des chaînes uniques au début et à la fin d’un paragraphe de texte renvoyé à la page. 
     
-    Par exemple, l'expression régulière suivante supprime les clauses d'exclusion de responsabilité et les instructions légales qui se trouvaient dans le fil de messagerie entre les chaînes de début et de fin:
+    Par exemple, l’expression régulière suivante supprime les clauses d’exclusion de responsabilité et les instructions légales qui se trouvaient dans le fil de messagerie entre les chaînes de début et de fin:
     
     **Ce message contient des informations confidentielles (. | \s)\*si la vérification est requise, demandez une version de copie papier.**
     
-- Pour supprimer une clause d'exclusion de responsabilité (y compris des caractères spéciaux): 
+- Pour supprimer une clause d’exclusion de responsabilité (y compris des caractères spéciaux): 
     
-    Par exemple, pour le texte suivant (avec la clause d'exclusion de responsabilité représentée par x): 
+    Par exemple, pour le texte suivant (avec la clause d’exclusion de responsabilité représentée par x): 
     
     **/\*\ Ce message contient des informations confidentielles. xxxx xxxx**
     
@@ -85,13 +85,13 @@ Les expressions régulières sont prises en charge pour une utilisation lors de 
     
     **xxxx xxxx si la vérification est requise, demandez une version en copie papier. /\*\**
     
-    l'expression régulière permettant de supprimer la clause d'exclusion de responsabilité ci-dessus doit être: 
+    l’expression régulière permettant de supprimer la clause d’exclusion de responsabilité ci-dessus doit être: 
     
     **\/\\*\\Ce message contient des informations\.confidentielles (. | \s)\* si la vérification est requise, demandez une version\. de copie papier.\/\\*\\**
     
-- Règles d'expression régulière:
+- Règles d’expression régulière:
     
-  - Tous les caractères qui ne font pas partie de l'alphabet, à l'exception de l'espace (s), «_» et «-»\", doivent être précédés de «.
+  - Tous les caractères qui ne font pas partie de l’alphabet, à l’exception de l’espace (s), «_» et «-»\", doivent être précédés de «.
     
   - Le champ eExpression normal peut avoir une longueur illimitée.
     
@@ -100,7 +100,7 @@ Les expressions régulières sont prises en charge pour une utilisation lors de 
   
 ## <a name="define-ignore-text-rule"></a>Définir la règle de texte ignorer
 
-1. Dans l' **onglet \> gérer \> ** l'analyse et les options, dans la section **Ignorer** le texte **+** , cliquez sur l'icône pour ajouter une règle. 
+1. Dans l' **onglet \> gérer \> ** l’analyse et les options, dans la section **Ignorer** le texte **+** , cliquez sur l’icône pour ajouter une règle. 
     
 2. Dans la boîte de dialogue **Ajouter le texte ignorer** , dans le champ **nom** , tapez un nom pour la règle ignorer le texte. 
     
@@ -115,7 +115,7 @@ Les expressions régulières sont prises en charge pour une utilisation lors de 
     
 5. Dans la liste **appliquer à** , sélectionnez les modules avancés eDiscovery dans lesquels appliquer la définition. 
     
-6. Si vous souhaitez une série de tests sur un exemple de texte, tapez exemple de texte dans la zone de texte de **saisie** , puis cliquez sur **test**. Les résultats s'affichent dans la zone de texte de **sortie** . 
+6. Si vous souhaitez une série de tests sur un exemple de texte, tapez exemple de texte dans la zone de texte de **saisie** , puis cliquez sur **test**. Les résultats s’affichent dans la zone de texte de **sortie** . 
     
 7. Cliquez sur **OK** pour enregistrer la règle ignorer le texte. La règle de texte ignorer est affichée. 
     
@@ -127,9 +127,9 @@ Les expressions régulières sont prises en charge pour une utilisation lors de 
   
 [Présentation de la similarité des documents](understand-document-similarity-in-advanced-ediscovery.md)
   
-[Définition des options d'analyse](set-analyze-options-in-advanced-ediscovery.md)
+[Définition des options d’analyse](set-analyze-options-in-advanced-ediscovery.md)
   
-[Définition des paramètres avancés d'analyse](set-analyze-advanced-settings-in-advanced-ediscovery.md)
+[Définition des paramètres avancés d’analyse](set-analyze-advanced-settings-in-advanced-ediscovery.md)
   
-[Affichage des résultats de l'analyse](view-analyze-results-in-advanced-ediscovery.md)
+[Affichage des résultats de l’analyse](view-analyze-results-in-advanced-ediscovery.md)
 

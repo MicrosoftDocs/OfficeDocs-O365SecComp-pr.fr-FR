@@ -3,26 +3,26 @@ title: Désactiver la création de rapports de courrier indésirable dans Outloo
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 8d57fe9e-57b8-4884-9317-80b380804b4a
 ms.collection:
 - M365-security-compliance
-description: En tant qu'administrateur Office 365, vous pouvez désactiver la possibilité pour les utilisateurs de signaler le courrier indésirable.
-ms.openlocfilehash: f3e8a8cf837e7923d3c7241852ab2acd375492b8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: En tant qu’administrateur Office 365, vous pouvez désactiver la possibilité pour les utilisateurs de signaler le courrier indésirable.
+ms.openlocfilehash: a33e43444225cd3c23bc5d40cbf8581d19df2489
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264166"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156286"
 ---
 # <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>Désactiver la création de rapports de courrier indésirable dans Outlook sur le Web
 
-Vous pouvez envoyer des messages indésirables, de hameçonnage et non de courrier indésirable à Microsoft à des fins d'analyse à l'aide des options de création de rapports de courrier indésirable Outlook sur le Web (anciennement appelé Outlook Web App), comme décrit dans le rapport de courrier indésirable [et les escroqueries par hameçonnage dans Outlook sur le Web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). Si vous ne souhaitez pas utiliser ces options, les administrateurs peuvent les désactiver via la cmdlet [Set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) . 
+Vous pouvez envoyer des messages indésirables, de hameçonnage et non de courrier indésirable à Microsoft à des fins d’analyse à l’aide des options de création de rapports de courrier indésirable Outlook sur le Web (anciennement appelé Outlook Web App), comme décrit dans le rapport de courrier indésirable [et les escroqueries par hameçonnage dans Outlook sur le Web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). Si vous ne souhaitez pas utiliser ces options, les administrateurs peuvent les désactiver via la cmdlet [Set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) . 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
 <a name="sectionSection0"> </a>
 
 - Durée d'exécution estimée : 5 minutes
@@ -34,7 +34,7 @@ Vous pouvez envoyer des messages indésirables, de hameçonnage et non de courri
 ## <a name="turn-off-junk-phishing-and-not-junk-reporting-to-microsoft"></a>Désactiver le courrier indésirable, le hameçonnage et les notifications de courrier indésirable à Microsoft
 <a name="sectionSection1"> </a>
 
-Tout d'abord, exécutez la commande suivante pour obtenir les noms de vos stratégies de boîte aux lettres Outlook sur le Web disponibles:
+Tout d’abord, exécutez la commande suivante pour obtenir les noms de vos stratégies de boîte aux lettres Outlook sur le Web disponibles:
   
 ```
 Get-OwaMailboxPolicy | Format-Table Name

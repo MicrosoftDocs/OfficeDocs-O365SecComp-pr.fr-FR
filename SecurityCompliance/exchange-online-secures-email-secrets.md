@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 5/24/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 989ba10c-f73f-4efb-ad1b-af3322e5f376
 ms.collection:
 - M365-security-compliance
 description: En plus du centre de gestion de la confidentialité Office 365 qui fournit des informations sur la sécurité, la confidentialité et la conformité pour Office 365, vous souhaiterez peut-être savoir comment Office 365 protège les secrets que vous fournissez dans ses centres de données. Nous utilisons une technologie appelée Distributed Key Manager (DKM).
-ms.openlocfilehash: ba4c661899273f5e07c2468631298f5500d0e32f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 609d59b6e4da779e0fa663b40fdbf26036753669
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255482"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154586"
 ---
 # <a name="how-exchange-online-secures-your-email-secrets"></a>Procédure de sécurisation des informations confidentielles dans votre courrier électronique dans Exchange Online
 
@@ -41,13 +41,13 @@ Microsoft utilise le Gestionnaire de clés distribuées pour chiffrer vos inform
   
 - Les informations d’identification de compte de messagerie pour les comptes connectés. Les comptes connectés sont des comptes tiers, tels que les comptes de messagerie Hotmail, Gmail et Yahoo!.
     
-- Les clés racine des services RMS. Il s'agit de clés client importées à partir d'Azure RMS ou des déploiements RMS des services de domaine Active Directory locaux du client qui sont utilisés pour le chiffrement et le déchiffrement des messages électroniques avec le chiffrement de messages RMS ou Office 365 (OME).
+- Les clés racine des services RMS. Il s’agit de clés client importées à partir d’Azure RMS ou des déploiements RMS des services de domaine Active Directory locaux du client qui sont utilisés pour le chiffrement et le déchiffrement des messages électroniques avec le chiffrement de messages RMS ou Office 365 (OME).
     
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Chiffrement dans Office 365](encryption.md)
   
-[Détails techniques de référence sur le chiffrement dans Office 365](technical-reference-details-about-encryption.md)
+[Détails techniques de référence sur le chiffrement dans Office 365](technical-reference-details-about-encryption.md)
   
 [Garantie de service dans le centre de &amp; sécurité conformité Office 365](https://go.microsoft.com/fwlink/?linkid=874645)
   

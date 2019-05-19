@@ -4,37 +4,37 @@ ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.date: 5/3/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 description: Les administrateurs peuvent en savoir plus sur les règles de flux de messagerie lentes dans le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance Center.
-ms.openlocfilehash: ede12e14f287599cab0e5f39aaf71c38ed519276
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1adbae56bfcf022250b66bac2f3bfd01a7f13234
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267218"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158586"
 ---
 # <a name="slow-mail-flow-rules-insight"></a>Informations sur les règles de flux de messagerie lent
 
-Des règles inefficaces de flux de messagerie (également appelées règles de transport) peuvent entraîner des retards de flux de messagerie pour votre organisation. Cette vue d'État indique les règles de flux de messagerie qui ont un impact sur le flux de messagerie de votre organisation. Voici des exemples de ces types de règles:
+Des règles inefficaces de flux de messagerie (également appelées règles de transport) peuvent entraîner des retards de flux de messagerie pour votre organisation. Cette vue d’État indique les règles de flux de messagerie qui ont un impact sur le flux de messagerie de votre organisation. Voici des exemples de ces types de règles:
 
 - Conditions utilisées par **est membre de** pour les grands groupes.
 
 - Conditions qui utilisent des critères de correspondance des expressions régulières complexes (Regex).
 
-- Conditions d'utilisation de l'archivage de contenu dans les pièces jointes.
+- Conditions d’utilisation de l’archivage de contenu dans les pièces jointes.
 
-Le centre d'analyse vous aidera à identifier et à ajuster les règles de flux de messagerie afin de réduire les délais de flux de messagerie.
+Le centre d’analyse vous aidera à identifier et à ajuster les règles de flux de messagerie afin de réduire les délais de flux de messagerie.
 
 ![Des règles de flux de messagerie lentes dans le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance Center](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
 
 Lorsque vous cliquez sur **afficher les détails**, un volet flyout apparaît dans lequel vous pouvez examiner la règle. Dans le volet flyout, peut également cliquer sur **afficher les exemples de messages** pour voir les types de messages concernés par la règle.
 
-![Volet flyout après avoir cliqué sur Afficher les détails dans une règle de flux de messagerie lente vue d'ensemble du tableau de bord de flux de messagerie](media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
+![Volet flyout après avoir cliqué sur Afficher les détails dans une règle de flux de messagerie lente vue d’ensemble du tableau de bord de flux de messagerie](media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
 
 ## <a name="see-also"></a>Voir aussi
 
-Pour plus d'informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security _AMP_ Compliance Center](mail-flow-insights.md).
+Pour plus d’informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security _AMP_ Compliance Center](mail-flow-insights.md).

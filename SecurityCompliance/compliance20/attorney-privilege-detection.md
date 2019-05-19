@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 6838203a500a4fe600d8186a4b848beed0730665
-ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
+ms.openlocfilehash: ee5f2257e73467c50a0ecc296d8d3b70b7c3d0f8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33835064"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155186"
 ---
 # <a name="set-up-attorney-client-privilege-detection-preview-in-advanced-ediscovery"></a>Configuration de la détection des privilèges client (préversion) dans Advanced eDiscovery
 
@@ -65,7 +65,7 @@ Lorsque vous analysez votre jeu de révision, la détection des privilèges du c
 
 ### <a name="step-2-create-a-smart-tag-group-with-attorney-client-privilege-detection-model"></a>Étape 2: créer un groupe de balises actives avec le modèle de détection de privilège client
 
-L’utilisation d’un groupe de balises actives est l’une des principales façons dont vous pouvez utiliser les résultats de la détection des droits du client dans votre processus de révision. Les groupes de balises actives prennent les résultats d’un modèle ML et affichent les résultats du modèle en ligne en regard des balises, afin que vous puissiez facilement utiliser les résultats du modèle, le cas échéant, et utiliser les balises dans votre processus de révision comme vous le feriez avec d’autres balises dans votre panneau de marquage.
+L’utilisation d’un groupe de balises actives est l’une des principales façons dont vous pouvez utiliser les résultats de la détection des droits du client dans votre processus de révision. Les groupes de balises actives prennent les résultats d’un modèle ML et affichent les résultats du modèle en ligne en regard des balises, afin que vous puissiez facilement utiliser les résultats du modèle, le cas échéant, et utiliser les balises dans votre processus de révision comme vous le feriez avec d’autres balises dans votre panneau de marquage. Pour plus d’informations, reportez-vous à la rubrique [set up Smart Tags for ml-Assisted Review in Advanced eDiscovery](smart-tags.md) .
 
 - Dans «gérer les balises», cliquez sur «Ajouter une balise».
 

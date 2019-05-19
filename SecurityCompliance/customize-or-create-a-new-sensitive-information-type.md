@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 2/7/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.collection:
 - Ent_O365
@@ -18,12 +18,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Découvrez comment modifier ou créer des types d’informations sensibles Office 365 pour le RGPD.
-ms.openlocfilehash: 6810a6b6d9b0ea34ab11cc778c32a76d556d7a17
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 264e310c019c47d1b3109b20fbdd61b323ec5530
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258782"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153736"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Personnalisation ou création d’un type d’informations sensibles
 
@@ -141,9 +141,11 @@ Il se peut que vous deviez créer des requêtes afin d’obtenir des données pe
 
 Utilisez ces ressources pour formuler et optimiser des requêtes à l’aide de KQL :
 
--   [Référence de syntaxe de langage de requête de mot-clé (KQL) (DMC)](https://docs.microsoft.com/fr-FR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+-   
+  [Référence de syntaxe de langage de requête de mot-clé (KQL) (DMC)](https://docs.microsoft.com/fr-FR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
--   [Exécuter une Recherche de Contenu](https://support.office.com/fr-FR/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
+-   
+  [Exécuter une Recherche de Contenu](https://support.office.com/fr-FR/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
 
 La recherche de contenu fournit une autre ressource pour vous aider à développer des requêtes KQL appropriées et des types d’informations sensibles : les mots-clés. Pourquoi utiliser la liste de mots-clés ? Vous pouvez obtenir des statistiques indiquant le nombre d’éléments qui correspondent à chaque mot-clé. Cela peut vous aider à identifier rapidement les mots-clés les plus (et les moins) efficaces. Pour plus d’informations sur les statistiques de recherche, reportez-vous à la rubrique relative à l’[affichage des statistiques de mots-clés pour les résultats de la recherche de contenu](https://support.office.com/fr-FR/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
 
