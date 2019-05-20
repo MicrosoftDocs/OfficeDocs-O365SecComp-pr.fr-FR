@@ -1,3 +1,5 @@
+# [Sécurité et conformité](index.md)
+
 # Prise en main
 ## [Feuille de route relative à la sécurité d’Office 365](security-roadmap.md)
 ## [Configurer votre client Office 365 pour une sécurité accrue](tenant-wide-setup-for-increased-security.md)
@@ -186,7 +188,8 @@
 ### [Utiliser le chargement réseau pour importer des fichiers PST chiffrés via RMS](use-network-upload-to-import-rms-encrypted-pst-files.md)
 ### [FAQ sur l’importation de fichiers PST](faqimporting-pst-files-to-office-365.md)
 ### [Archiver des données tierces dans Office 365](archiving-third-party-data.md)
-#### [Utiliser des exemples de connecteurs pour archiver des données tierces](archive-third-party-data-with-sample-connector.md)
+#### [Utiliser un exemple de connecteur pour archiver des données Facebook](archive-facebook-data-with-sample-connector.md)
+#### [Utiliser un exemple de connecteur pour archiver des données Twitter](archive-twitter-data-with-sample-connector.md)
 #### [Collaborer avec un partenaire pour archiver des données tierces](work-with-partner-to-archive-third-party-data.md)
 ## Stocker des données
 ### [Activer des boîtes aux lettres d’archivage](enable-archive-mailboxes.md)
@@ -203,7 +206,8 @@
 ### [Rétention basée sur des événements](event-driven-retention.md)
 ### [Automatiser la rétention basée sur des événements](automate-event-driven-retention.md)
 ## [Éliminer des données](disposition-reviews.md)
-## [Superviser les communications](supervision-policies.md)
+## Superviser les communications
+### [Stratégies de supervision](supervision-policies.md)
 ### [Configurer des stratégies de surveillance pour votre organisation](configure-supervision-policies.md)
 ## [Gestion des boîtes aux lettres inactives](inactive-mailboxes-in-office-365.md)
 ### [Créer et gérer des boîtes aux lettres inactives](create-and-manage-inactive-mailboxes.md)
