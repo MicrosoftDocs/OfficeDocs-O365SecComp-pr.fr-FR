@@ -167,8 +167,7 @@
 ## Plan de gestion de fichiers
 ### [Gestionnaire de plan de fichiers](file-plan-manager.md)
 ### [Étiquettes de rétention](labels.md)
-### 
-  [Créer et publier des étiquettes de rétention à l’aide de PowerShell](https://docs.microsoft.com/fr-FR/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Créer et publier des étiquettes de rétention à l’aide de PowerShell](https://docs.microsoft.com/fr-FR/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Afficher l’utilisation d’étiquette avec les analyses d’étiquettes](label-analytics.md)
 ### [Afficher l’activité des étiquettes pour les documents](view-label-activity-for-documents.md)
 ### [Afficher les rapports de gouvernance des données](view-the-data-governance-reports.md)
@@ -201,8 +200,7 @@
 ### [Gestionnaire de plan de fichiers](file-plan-manager.md)
 ### [Étiquettes de rétention](labels.md)
 ### [Se conformer à la réglementation SEC Rule 17 a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### 
-  [Créer et publier des étiquettes de rétention à l’aide de PowerShell](https://docs.microsoft.com/fr-FR/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Créer et publier des étiquettes de rétention à l’aide de PowerShell](https://docs.microsoft.com/fr-FR/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Rétention basée sur des événements](event-driven-retention.md)
 ### [Automatiser la rétention basée sur des événements](automate-event-driven-retention.md)
 ## [Éliminer des données](disposition-reviews.md)
