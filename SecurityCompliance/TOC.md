@@ -164,6 +164,7 @@
 ## [Réponse à un compte de messagerie compromis dans Office 365](responding-to-a-compromised-email-account.md)
 
 # Gestion des enregistrements
+## [Gestion des enregistrements](records-management.md)
 ## Plan de gestion de fichiers
 ### [Gestionnaire de plan de fichiers](file-plan-manager.md)
 ### [Étiquettes de rétention](labels.md)
