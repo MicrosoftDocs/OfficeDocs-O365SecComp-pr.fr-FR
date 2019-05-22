@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Pour empêcher les messages de hameçonnage d’atteindre votre boîte aux lettres, Outlook.com et Outlook sur le Web Vérifiez que l’expéditeur est bien ce qu’il dit, et marquez les messages suspects comme courrier indésirable.
-ms.openlocfilehash: ad94a2953b6fd53612b2fc15038a7157e97f3b39
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 92458a93a4da3e449061e4d2a4ba312d635c42cc
+ms.sourcegitcommit: 7f00f765e8fa674ce1c8c66f5b89b6bea45e13ac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157986"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34341622"
 ---
 # <a name="unverified-sender"></a>Expéditeur non vérifié
 
@@ -55,26 +55,6 @@ Lorsque Outlook.com et Outlook sur le Web ne peuvent pas vérifier l’identité
 
 Les messages qui ne parvient pas à s’authentifier ne sont pas tous malveillants. Toutefois, vous devez être prudent quant à l’interaction avec les messages qui ne sont pas authentifiés si vous ne reconnaissez pas l’expéditeur. Ou, si vous reconnaissez un expéditeur qui ne possède pas de «?» normalement dans l’image de l’expéditeur, mais que vous le voyez soudainement, cela peut être un signe que l’expéditeur est usurpé.
 
-### <a name="the-senders-address-is-different-than-what-appears-in-the-from-address"></a>L’adresse de l’expéditeur est différente de celle qui apparaît dans l’adresse de l’expéditeur
-
-Bien souvent, l’adresse de messagerie que vous voyez dans un message est différente de celle que vous voyez dans l’adresse de l’adresse. Parfois, les auteurs de phishing essaient de vous tromper en pensant que l’expéditeur est une personne qui n’est pas vraiment.
-
-Lorsque Outlook.com et Outlook sur le Web détectent une différence entre l’adresse réelle de l’expéditeur et l’adresse de l’adresse de, ils affichent l’expéditeur réel à l’aide de la balise via, qui est soulignée.
-
-![texte de remplacement de l’expéditeur non vérifié](media/unverified-sender-feature1.png)
-
-Dans cet exemple, le domaine `suspicious.com` d’envoi est authentifié, mais celui-ci est `unknown@contoso.com` placé dans l’adresse de l’expéditeur.
-
-Tous les messages avec une balise via ne sont pas suspects. Toutefois, si vous ne reconnaissez pas un message avec une balise via, soyez prudent lors de l’interaction avec celui-ci.
-
-Dans Outlook.com et le nouveau Outlook sur le Web, vous pouvez placer le curseur sur le nom ou l’adresse de l’expéditeur dans la liste des messages pour voir son adresse de messagerie, sans avoir à ouvrir le message.
-
-![Prise en main de OneDrive](media/get-started-with-onedrive-message.png)
-
-Comment savoir si vous utilisez le nouveau Outlook sur le Web? Consultez les exemples suivants:
-
-![Outlook vs Office 365](media/outlook-vs-outlook365.png)
-
 ## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 ### <a name="what-criteria-does-outlookcom-and-outlook-on-the-web-use-to-add-the--and-the-via-properties"></a>Quels critères les Outlook.com et Outlook sur le Web utilisent-ils pour ajouter les propriétés «?» et «via»?
@@ -83,11 +63,7 @@ Pour le «?» de l’image de l’expéditeur: Outlook.com requiert que le messa
 
 Pour la balise via: si le domaine de l’adresse de l’expéditeur est différent du domaine dans la signature DKIM ou SMTP MAIL FROM, Outlook.com affiche le domaine dans l’un de ces deux champs (en préférant la signature DKIM).
 
-### <a name="can-i-override-these-properties-with-ip-allows-exchange-transport-rule-allows-or-safe-senders"></a>Puis-je remplacer ces propriétés par le biais de l’IP autorisé, la règle de transport Exchange autorise ou les expéditeurs approuvés?
-
-Vous ne pouvez pas remplacer ces propriétés.
-
-### <a name="how-do-i-remove-these-properties"></a>Comment puis-je supprimer ces propriétés?
+### <a name="how-do-i-remove-the-"></a>Comment supprimer le «?»?
 
 Pour le «?» de l’image de l’expéditeur: en tant qu’expéditeur, vous devez authentifier votre message avec SPF ou DKIM.
 
