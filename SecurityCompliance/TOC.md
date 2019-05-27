@@ -100,7 +100,7 @@
 #### [Protégez vos utilisateurs grâce à l’examen et aux réponses contre les menaces](keep-users-safe-with-office-365-ti.md)
 #### [Rechercher et d’examiner le courrier électronique malveillant qui a été distribué](investigate-malicious-email-that-was-delivered.md)
 ### [Examen et réponse automatisés](automated-investigation-response-office.md)
-### [Threat Explorer](use-explorer-in-security-and-compliance.md)
+### [Explorateur de menaces et détections en temps réel](threat-explorer.md)
 #### [Affichages Threat Explorer](threat-explorer-views.md)
 ### [Suivi des menaces](threat-trackers.md)
 ### [Simulateur d’attaques dans Office 365](attack-simulator.md)
