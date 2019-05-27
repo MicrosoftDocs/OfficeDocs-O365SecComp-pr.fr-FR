@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 4/30/2019
+ms.date: 05/09/2019
 search.appverid:
 - MOE150
 - MET150
@@ -15,12 +15,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Utilisez cet article pour configurer vos fonctionnalités de protection contre les menaces dès maintenant.
-ms.openlocfilehash: 1697904dac69e3b634c0f853fbd48c5a5b5257d8
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: a9a2baccb4709b3e8d77f620281458d51ed0583a
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157296"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408389"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Se protéger contre les menaces dans Office 365
 
@@ -38,9 +38,9 @@ Les fonctionnalités de protection contre les menaces sont incluses dans tous le
 |Type de protection  |Conditions requises en matière d’abonnement  |
 |---------|---------|
 |Protection anti-programme malveillant    | [Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) EOP        |
-|Protection contre les URL et les fichiers malveillants dans les e-mails et les documents Office    | [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)        |
+|Protection contre les URL et les fichiers malveillants dans les e-mails et les documents Office    | [Office 365 protection avancée contre les menaces](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) CUMULÉ       |
 |Protection anti-hameçonnage    | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)      |
-|Protection avancée contre le hameçonnage    | [Office 365 protection avancée contre les menaces](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)   |
+|Protection avancée contre le hameçonnage    | [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)   |
 |Protection anti-courrier indésirable     | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)       |
 |Purge automatique avec zéro heure (pour la messagerie électronique)    | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) EOP        |
 |Journalisation d’audit (utilisé à des fins de création de rapports)    | [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)        |
@@ -59,7 +59,7 @@ Pour en savoir plus, consultez [la rubrique autorisations dans le &amp; Centre d
 
 ## <a name="part-1---anti-malware-protection"></a>Partie 1: protection anti-programme malveillant
 
-La [protection contre les programmes malveillants](anti-malware-protection.md) est disponible dans les abonnements incluant [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) (EoP). 
+La [protection contre les programmes malveillants](anti-malware-protection.md) est disponible dans les abonnements incluant [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description). 
 
 1. Dans le [Centre de sécurité & conformité](https://protection.office.com), choisissez**protection contre les programmes malveillants**pour la**stratégie** > de **gestion** > des menaces.
 

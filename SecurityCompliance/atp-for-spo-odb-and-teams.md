@@ -15,12 +15,12 @@ ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 ms.collection:
 - M365-security-compliance
 description: Étendez la protection avancée contre les menaces Office 365 aux fichiers dans SharePoint Online, OneDrive entreprise et Microsoft teams pour activer la collaboration en toute sécurité pour votre organisation.
-ms.openlocfilehash: 9a1c4d3f7eca335b1668f8fc0947387cc9d496f3
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: a73f978ca40571e33864061cfe9538033579b3c7
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077610"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408259"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP pour SharePoint, OneDrive et Microsoft teams
 
@@ -50,7 +50,7 @@ Pour plus d’informations, reportez-vous à [activer l’ATP Office 365 pour Sh
 
 - Assurez-vous que vos sites SharePoint sont configurés pour utiliser l' [expérience moderne](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience). Lorsqu’un fichier est identifié comme malveillant et bloqué, les utilisateurs peuvent voir qu’il s’est produit dans l’expérience moderne, mais pas dans l’affichage classique. La protection contre l’ATP s’applique si l’expérience moderne ou la vue standard est utilisée; Toutefois, les indicateurs visuels signalant qu’un fichier est bloqué sont présents uniquement dans l’expérience moderne.
     
-- Les fichiers identifiés comme étant malveillants dans SharePoint Online, OneDrive entreprise ou Microsoft teams s’afficheront dans des [rapports pour office 365 Advanced Threat Protection](view-reports-for-atp.md) et dans Threat Explorer (partie d' [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md) ).
+- Les fichiers identifiés comme étant malveillants dans SharePoint Online, OneDrive entreprise ou Microsoft teams s’afficheront dans des [rapports pour Office 365 protection avancée contre les menaces](view-reports-for-atp.md) et dans l' [Explorateur (et détections en temps réel)](threat-explorer.md).
     
 - La fonctionnalité ATP fait partie de la stratégie globale de protection contre les menaces de votre organisation, qui inclut la protection contre le courrier indésirable et les programmes malveillants, ainsi que des liens fiables et des pièces jointes fiables. Pour en savoir plus, consultez la rubrique Protégez-vous [contre les menaces dans Office 365](protect-against-threats.md).
     

@@ -15,12 +15,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment les fonctionnalités d’enquête et de réponse aux menaces Office 365 peuvent aider votre organisation à détecter les intrusions et les menaces, ainsi qu’à limiter et récupérer rapidement les menaces.
-ms.openlocfilehash: 51d776fe2ed5957016028451c1f7dcd1812973c3
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 6cd1a2add3300dad6d869de82d1a1616298fc635
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077260"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408279"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Assurer la sécurité de vos utilisateurs Office 365 avec les fonctionnalités d’enquête et de réponse aux menaces Office 365
 
@@ -37,7 +37,7 @@ Nous avons récemment ajouté de nouvelles fonctionnalités pour vous aider à a
   
 ## <a name="detect-intrusions-and-threats"></a>Détecter les intrusions et les menaces
 
-[Explorateur](use-explorer-in-security-and-compliance.md) (également appelé «Explorateur de menaces») permet aux administrateurs de sécurité et aux analystes d’identifier et de comprendre les menaces qui sont actives dans votre entreprise car même les paramètres de sécurité les plus complexes peuvent être contournés par des configurations d’utilisateur apparemment inoffensives telles que la sécurité listes blanches d’expéditeurs. L’Explorateur aide les administrateurs de sécurité ou globaux d’Office 365 à déterminer rapidement si les utilisateurs ont été compromis par des menaces telles que les programmes malveillants ou les hameçons. Cela permet de hiérarchiser les utilisateurs les plus exposés à une menace et la réponse requise. 
+[Explorateur de menaces (ou détections en temps réel)](threat-explorer.md) (également appelé «Explorateur de menaces») permet aux administrateurs de sécurité et aux analystes d’identifier et de comprendre les menaces qui sont actives dans votre entreprise car même les paramètres de sécurité les plus complexes peuvent être contournés par des configurations d’utilisateur apparemment inoffensives telles que la sécurité listes blanches d’expéditeurs. L’Explorateur aide les administrateurs de sécurité ou globaux d’Office 365 à déterminer rapidement si les utilisateurs ont été compromis par des menaces telles que les programmes malveillants ou les hameçons. Cela permet de hiérarchiser les utilisateurs les plus exposés à une menace et la réponse requise. 
   
 L’Explorateur aide également les administrateurs à parcourir les relations entre les utilisateurs et le courrier électronique. Connaissance d’un message particulier qui était incorrect? Recherchez-le pour savoir quels utilisateurs ont reçu le courrier, puis suivez la série d’événements et observez ce qu’ils ont fait.
 

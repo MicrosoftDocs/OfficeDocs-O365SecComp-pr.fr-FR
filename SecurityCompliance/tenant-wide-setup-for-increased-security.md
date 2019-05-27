@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Vous guide tout au long de la configuration recommandée pour les paramètres à l’échelle du client qui affectent la sécurité de votre environnement Office 365. Vos besoins en matière de sécurité peuvent nécessiter plus ou moins de sécurité. Utilisez ces recommandations comme point de départ.
-ms.openlocfilehash: d5e84bfe5994d1f17ddc75bcb1141fb4f4beace3
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: bac2592fcfefaeb150497cddf134679f9429c656
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158256"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408249"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Configurer votre client Office 365 pour une sécurité accrue
 
@@ -53,9 +53,9 @@ Visitez ces rapports et tableaux de bord pour en savoir plus sur l’état de sa
   
 |Tableau de bord * * * *|****Description****|
 |:-----|:-----|
-|Tableau de bord de gestion des menaces  <br/> |Dans la section gestion des menaces du centre de sécurité, utilisez ce tableau de bord pour voir les menaces qui ont déjà été gérées, et en tant qu’outil pratique pour le signalement aux décideurs d’entreprise sur les capacités d’enquête et de réponse des menaces déjà effectuées vers Sécurisez votre entreprise.  <br/> |
-|Explorateur de menaces  <br/> |Il s’agit également de la section gestion des menaces du centre de sécurité. Si vous recherchez ou rencontrez une attaque contre votre client Office 365, utilisez l’Explorateur de menaces pour analyser les menaces. L’Explorateur de menaces vous montre le volume des attaques au fil du temps et vous pouvez analyser ces données par des familles de menaces, une infrastructure d’agresseur, et bien plus encore. Vous pouvez également marquer tous les messages suspects pour la liste des incidents.  <br/> |
-|Rapports — tableau de bord  <br/> |Dans la section rapports du centre de sécurité, affichez les rapports d’audit de vos organisations SharePoint Online et Exchange Online. Vous pouvez également accéder aux rapports de connexion utilisateur Azure Active Directory (Azure AD), aux rapports d’activité de l’utilisateur et au Journal d’audit Azure AD à partir de la page afficher les rapports.  <br/> |
+|[Tableau de bord de gestion des menaces](security-dashboard.md)  <br/> |Dans la section **gestion des menaces** du centre de sécurité, utilisez ce tableau de bord pour voir les menaces qui ont déjà été gérées, et en tant qu’outil pratique pour le signalement aux décideurs d’entreprise sur les fonctionnalités d’analyse et de réponse des menaces. pour sécuriser votre entreprise.  <br/> |
+|[Explorateur de menaces (ou détections en temps réel)](threat-explorer.md)  <br/> |Il s’agit également de la section **gestion des menaces** du centre de sécurité. Si vous recherchez ou rencontrez une attaque contre votre client Office 365, utilisez l’Explorateur (ou les détections en temps réel) pour analyser les menaces. L’Explorateur (et le rapport de détections en temps réel) vous montre le volume des attaques au fil du temps, et vous pouvez analyser ces données par familles de menaces, infrastructure d’agresseur, et bien plus encore. Vous pouvez également marquer tous les messages suspects pour la liste des incidents.  <br/> |
+|Rapports — tableau de bord  <br/> |Dans la section **rapports** du centre de sécurité, affichez les rapports d’audit de vos organisations SharePoint Online et Exchange Online. Vous pouvez également accéder aux rapports de connexion utilisateur Azure Active Directory (Azure AD), aux rapports d’activité de l’utilisateur et au Journal d’audit Azure AD à partir de la page **afficher les rapports** .  <br/> |
    
 ![Tableau de bord du centre de sécurité](media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
   

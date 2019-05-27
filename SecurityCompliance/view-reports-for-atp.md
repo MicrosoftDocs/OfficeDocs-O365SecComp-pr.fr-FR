@@ -3,7 +3,7 @@ title: Afficher les rapports pour Office 365 protection avancée contre les mena
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 04/01/2019
+ms.date: 05/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment trouver et utiliser des rapports pour Office 365 protection avancée contre les menaces dans &amp; le centre de sécurité conformité.
-ms.openlocfilehash: 3525c71f8a627d930afbf94f5f0d12e55f19a0b6
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 6bf8c3222b0ce4cecd1b14f407f7e9ee42783a75
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077320"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408399"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Afficher les rapports pour Office 365 protection avancée contre les menaces
 
@@ -28,11 +28,20 @@ Si votre organisation dispose d' [Office 365 Advanced Threat Protection](office-
   
 ![Le tableau &amp; de bord du centre de sécurité conformité peut vous aider à déterminer le fonctionnement de la protection avancée contre les menaces](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
-Les rapports ATP incluent le rapport d' [État de protection contre les menaces](#threat-protection-status-report), le [rapport de types de fichiers ATP](#atp-file-types-report)et le [rapport de disposition de messages ATP](#atp-message-disposition-report). Cet article décrit les rapports ATP et inclut des liens vers d' [autres rapports à afficher](#additional-reports-to-view).
+Les rapports ATP sont les suivants:
+- [Rapport d’état de protection contre les menaces](#threat-protection-status-report)
+- [Rapport de types de fichiers ATP](#atp-file-types-report)
+- [Rapport de disposition des messages ATP](#atp-message-disposition-report)
+- [détections en temps réel ou Explorateur](threat-explorer.md) (selon que vous disposez d’Office 365 DAV plan 1 ou 2)
+- ... [et bien plus encore](#additional-reports-to-view). 
+
+Lisez cet article pour obtenir une vue d’ensemble des rapports ATP et comment les utiliser.
   
 ## <a name="threat-protection-status-report"></a>Rapport d’état de protection contre les menaces
 
-Le rapport d' **État de protection contre les menaces** est une vue unique qui rassemble des informations sur le contenu malveillant et les e-mails malveillants détectés et bloqués par [Exchange Online Protection](eop/exchange-online-protection-overview.md) (EOP) et [Office 365 ATP](office-365-atp.md). Le rapport fournit un nombre agrégé de messages électroniques uniques avec du contenu malveillant (des fichiers ou des adresses de sites Web (URL)) bloqués par le moteur anti-programme malveillant, la [purge automatique avec zéro heure (supprimable)](zero-hour-auto-purge.md)et les fonctionnalités ATP, telles que les [liens fiables ATP](atp-safe-links.md), le service [ATP Safe Pièces jointes](atp-safe-attachments.md)et [fonctionnalités anti-hameçonnage ATP](atp-anti-phishing.md).
+Le rapport d' **État de protection contre les menaces** est une vue unique qui rassemble des informations sur le contenu malveillant et les e-mails malveillants détectés et bloqués par [Exchange Online Protection](eop/exchange-online-protection-overview.md) (EOP) et [Office 365 ATP](office-365-atp.md). Ce rapport est utile pour afficher les détections au fil du temps (jusqu’à 90 jours) et permet aux administrateurs de sécurité d’identifier les tendances ou de déterminer si les stratégies ont besoin d’être ajustées. 
+
+Le rapport d’état de protection contre les menaces fournit un nombre agrégé de messages électroniques uniques avec du contenu malveillant, tels que des fichiers ou des adresses de sites Web (URL) bloqués par le moteur anti-programme malveillant, la [purge automatique des heures zéro heure](zero-hour-auto-purge.md)et des fonctionnalités ATP telles que Les [liens approuvés ATP](atp-safe-links.md), [les pièces jointes sûres ATP](atp-safe-attachments.md)et les [fonctionnalités anti-hameçonnage ATP](atp-anti-phishing.md). 
 
 > [!NOTE]
 > Un rapport d’état de protection contre les menaces est disponible pour les clients qui ont [Office 365 ATP](office-365-atp.md) ou [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EoP); Toutefois, les informations affichées dans le rapport d’état de protection contre les menaces pour les clients ATP contiennent probablement des données différentes de celles que peuvent afficher les clients EOP. Par exemple, le rapport d’état de protection contre les menaces pour les clients ATP contient des informations sur les [fichiers malveillants détectés dans SharePoint Online, OneDrive ou Microsoft teams](atp-for-spo-odb-and-teams.md). Ces informations sont spécifiques à la protection avancée contre les menaces, de sorte que les clients qui disposent d’EOP mais pas de la fonctionnalité ATP ne verront pas ces détails dans le rapport d’état de protection contre les menaces.
@@ -45,7 +54,7 @@ Pour obtenir l’état détaillé d’une journée, pointez sur le graphique.
   
 ![Données d’état de protection contre les menaces ATP pendant une journée](media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
   
-Par défaut, le rapport d’état de protection contre les menaces affiche les données des sept derniers jours. Toutefois, vous pouvez choisir **filtres** et modifier la plage de dates pour afficher les données pour 90 jours maximum. 
+Par défaut, le rapport d’état de protection contre les menaces affiche les données des sept derniers jours. Toutefois, vous pouvez choisir **filtres** et modifier la plage de dates pour afficher les données pour 90 jours maximum. (Si vous utilisez un abonnement d’évaluation, vous pouvez être limité à 30 jours de données.)
   
 ![Filtres d’état de protection contre les menaces ATP](media/4f703369-642b-402b-9758-b9c828283410.png)
   
@@ -83,9 +92,9 @@ Outre les rapports ATP décrits dans cet article, plusieurs autres rapports sont
 
 |Rapport (s)  |Détails  |
 |---------|---------|
-|**Suivi des URL de liens fiables ATP** (Il s’agit d’un rapport que vous générez à l’aide de PowerShell.) Ce rapport affiche les résultats des actions de liens approuvés ATP au cours des sept (7) derniers jours. |[Référence de l’applet de commande Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-urltrace?view=exchange-ps) |
+|L' **Explorateur** ou les **détections en temps réel** (Office 365 DAV ATP plan 2 Customers) ont un Explorateur; Office 365 DAV plan 1 les clients ont des détections en temps réel.)| [Explorateur de menaces (et détections en temps réel)](threat-explorer.md)       |
 |**Rapports de sécurité de messagerie**, tels que le rapport des expéditeurs et des destinataires, un rapport de courrier indésirable et un rapport de détection du courrier indésirable. | [Afficher les rapports de sécurité de messagerie &amp; dans le centre de sécurité conformité](view-email-security-reports.md)        |
-|**Explorateur** (également appelé «Explorateur de menaces», il est inclus dans [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md))     | [Utiliser l’Explorateur dans le &amp; Centre de sécurité conformité](use-explorer-in-security-and-compliance.md)        |
+|**Suivi des URL de liens fiables ATP** (Il s’agit d’un rapport que vous générez à l’aide de PowerShell.) Ce rapport affiche les résultats des actions de liens approuvés ATP au cours des sept (7) derniers jours. |[Référence de l’applet de commande Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-urltrace?view=exchange-ps) |
 |**Résultats EOP et ATP** (Il s’agit d’un rapport personnalisé que vous générez à l’aide de PowerShell). Ce rapport contient des informations, telles que le domaine, la date, le type d’événement, la direction, l’action et le nombre de messages.  | [Référence de l’applet de commande Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-mailtrafficatpreport?view=exchange-ps) |
 |**Détections EOP et ATP** (Il s’agit d’un rapport personnalisé que vous générez à l’aide de PowerShell). Ce rapport contient des détails sur les URL ou les fichiers malveillants, les tentatives de hameçonnage, l’emprunt d’identité et d’autres menaces potentielles dans les messages électroniques ou les fichiers.   | [Référence de l’applet de commande Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-maildetailatpreport?view=exchange-ps)        |
 
