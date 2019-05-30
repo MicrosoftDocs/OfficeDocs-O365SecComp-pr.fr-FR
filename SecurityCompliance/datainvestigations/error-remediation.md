@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bca6967fd99696ffb4b610105e448011b9837be4
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f8e253a3d38f0f4846485e3b88ea09914d9978ce
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150856"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547949"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>Erreur de correction lors du traitement des données pour une enquête
 
@@ -40,7 +40,7 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
     ![Correction des erreurs](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
-    La session de correction d’erreur commence, en commençant par une étape de préparation dans laquelle les fichiers qui ont été erronés sont déplacés vers un emplacement Azure sécurisé à télécharger.
+    La session de correction d’erreur commence, en commençant par une étape de préparation dans laquelle les fichiers contenant des erreurs sont copiés vers un emplacement Azure sécurisé afin qu’ils puissent être téléchargés.
 
     ![Préparation de la correction des erreurs](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
@@ -63,17 +63,18 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
     ![Préparation de la correction des erreurs](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
      > [!NOTE]
-     > Si vous rencontrez des problèmes lors de l’exécution https://go.microsoft.com/fwlink/?linkid=2038117 de cette commande, voir pour obtenir des conseils de dépannage.
+     > Si vous rencontrez des problèmes lors de l’exécution de cette commande, consultez la rubrique [Troubleshoot AzCopy in Advanced eDiscovery](../compliance20/troubleshooting-azcopy.md).
 
 7. Après avoir téléchargé les fichiers, vous pouvez les corriger à l’aide d’un outil approprié. Pour les fichiers protégés par mot de passe, il existe un certain nombre d’outils de craquage de mot de passe que vous pouvez utiliser. Si vous connaissiez les mots de passe des fichiers, vous pouvez les ouvrir et supprimer la protection par mot de passe.
-    > [!NOTE]
+    
+   > [!NOTE]
     > Il est important de conserver la structure de répertoire et les noms de fichier des fichiers corrigés dans l’élément tact.  Toutes les conventions d’affectation de noms utilisées dans les fichiers et les dossiers téléchargés permettent d’associer à nouveau les fichiers remdiated à l’original.
 
 8. À présent, revenez aux enquêtes de données (aperçu) et cliquez sur **suivant: charger les fichiers**.  Cette opération passe à l’étape suivante, dans laquelle vous pouvez à présent télécharger les fichiers.
 
     ![Charger des fichiers](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
-9. Spécifiez l’emplacement des fichiers corrigés dans la zone **de texte chemin d’accès à l’emplacement des fichiers** , puis cliquez sur **copier dans clibpboard**.
+9. Spécifiez l’emplacement des fichiers corrigés dans la zone **de texte chemin d’accès à l’emplacement des fichiers** , puis cliquez sur **copier dans le presse-papiers**.
 
 10. Collez la commande dans une invite de commande Windows et appuyez sur **entrée** pour charger les fichiers.
 
@@ -87,12 +88,9 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
 Lorsque les fichiers résolus sont téléchargés, les métadonnées d’origine sont conservées à l’exception des champs suivants: 
 
-- DocumentExtractedUrl
 - ExtractedTextSize
 - HasText
 - IsErrorRemediate
-- IsParentExtractedUrl
-- ItemExtractedUrl
 - LoadId
 - ProcessingErrorMessage
 - ProcessingStatus

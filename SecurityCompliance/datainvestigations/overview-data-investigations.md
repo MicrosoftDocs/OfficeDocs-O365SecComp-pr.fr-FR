@@ -14,18 +14,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article décrit la nouvelle outil d’évaluation des données (aperçu) de Microsoft 365.
-ms.openlocfilehash: 1e7621d577d8d08fd27dc7e20e6b8e7a3491236f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 2b125d8f1dc24337804ea0461039aba824c42b8a
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150676"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547909"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Vue d’ensemble des enquêtes de données (aperçu) dans Microsoft 365
 
 Une fuite de données se produit lorsqu’un document contenant du contenu confidentiel, sensible ou malveillant est publié dans un environnement non approuvé. Lors de la détection d’un détournement de données, il est important de contenir rapidement l’environnement, d’évaluer la taille et les emplacements du détournement, d’examiner les activités de l’utilisateur et de supprimer les données déplacées du service. À l’aide de la nouvelle outil d’analyse des données (aperçu), vous pouvez rechercher des données sensibles, malveillantes ou déplacées dans Office 365, examiner ce qui s’est passé et prendre les mesures appropriées pour corriger le problème.  
 
 Cet article décrit l’utilisation des fonctionnalités de l’outil nouvelles enquêtes de données (aperçu) pour résoudre un scénario de débordement de données.
+
+## <a name="permissions"></a>Autorisations
+
+Pour accéder à une enquête de données et effectuer une enquête, vous devez être membre du groupe de rôles Data investigation. Pour plus d’informations, consultez la rubrique [Assign Permissions for Data investigations](permissions.md).
 
 ## <a name="data-investigations-preview-workflow"></a>Flux de travail enquêtes de données (aperçu) 
 

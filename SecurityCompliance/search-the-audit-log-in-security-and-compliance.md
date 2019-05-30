@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Utilisez le centre de sécurité & Compliance Center pour rechercher le journal d’audit unifié afin d’afficher l’activité des utilisateurs et des administrateurs dans votre organisation Office 365. '
-ms.openlocfilehash: 4760d36a587dd1aad0463dcddc19400e8138135c
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d8a674785c982b19b04b5bd14cd941dde7a86f61
+ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158786"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490490"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Rechercher dans le journal d’audit dans le centre de sécurité & Compliance Center
 
@@ -115,7 +115,6 @@ Veillez à lire les éléments suivants avant de commencer à rechercher dans le
     |eDiscovery  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Exchange Online  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Microsoft Flow  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-    |Microsoft Forms  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Project  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Stream  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Teams  <br/> |![Coche](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
@@ -405,7 +404,7 @@ Le tableau suivant répertorie les activités de synchronisation de fichiers dan
 |Fichiers téléchargés sur l’ordinateur  <br/> |FileSyncDownloadedFull  <br/> |Un utilisateur établit une relation de synchronisation et télécharge des fichiers pour la première fois sur son ordinateur à partir d’une bibliothèque de documents.  <br/> |
 |Modifications apportées au fichier téléchargé sur l’ordinateur  <br/> |FileSyncDownloadedPartial  <br/> |Un utilisateur télécharge correctement les modifications apportées aux fichiers à partir d’une bibliothèque de documents. Cette activité indique que les modifications apportées aux fichiers dans la bibliothèque de documents ont été téléchargées sur l’ordinateur de l’utilisateur. Seules les modifications ont été téléchargées, car la bibliothèque de documents a été téléchargée précédemment par l’utilisateur (comme indiqué par l’activité **fichiers téléchargés vers l’ordinateur** ).  <br/> |
 |Fichiers téléchargés dans la bibliothèque de documents  <br/> |FileSyncUploadedFull  <br/> |Un utilisateur établit une relation de synchronisation et télécharge des fichiers pour la première fois à partir de son ordinateur vers une bibliothèque de documents.  <br/> |
-|Modifications de fichiers téléchargées dans la bibliothèque de documents  <br/> |FileSyncUploadedPartial  <br/> |L’utilisateur télécharge les modifications apportées aux fichiers dans une bibliothèque de documents. Cet événement indique que les modifications apportées à la version locale d’un fichier dans une bibliothèque de documents sont correctement chargées dans la bibliothèque de documents. Seules les modifications sont déchargées, car ces fichiers ont été précédemment téléchargés par l’utilisateur (comme indiqué par l’activité * * fichiers téléchargés vers la bibliothèque de documents * *).  <br/> |
+|Modifications de fichiers téléchargées dans la bibliothèque de documents  <br/> |FileSyncUploadedPartial  <br/> |L’utilisateur télécharge les modifications apportées aux fichiers dans une bibliothèque de documents. Cet événement indique que les modifications apportées à la version locale d’un fichier dans une bibliothèque de documents sont correctement chargées dans la bibliothèque de documents. Seules les modifications sont téléchargées, car ces fichiers ont été précédemment téléchargés par l’utilisateur (comme indiqué par l’activité des **fichiers téléchargés vers la bibliothèque de documents** ).  <br/> |
 ||||
   
 ### <a name="site-administration-activities"></a>Activités d’administration de site

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Le gestionnaire de plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes et les stratégies de conservation, et fournit un moyen intégré de parcourir l’activité d’étiquette et d’étiquette vers le contenu pour l’intégralité du cycle de vie de votre contenu, de la création à la destruction finale, en passant par la collaboration, la déclaration d’enregistrement et la conservation.
-ms.openlocfilehash: 377589ab0a8fd2f4c5e73a21eac3988091fa3ed3
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: b7d80ff6a7f78e592462fe2723a87383e046015f
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152896"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547969"
 ---
 # <a name="overview-of-file-plan-manager"></a>Vue d’ensemble du gestionnaire de plan de gestion de fichiers
 
@@ -50,7 +50,7 @@ Ces étiquettes de rétention sont uniquement configurées pour conserver le con
 Vous pouvez déterminer qui a ouvert le Gestionnaire d’Offre de fichiers et désactivé l’expérience de première exécution en passant en revue le journal d’audit pour les activités **Créé la stratégie de rétention** et **Créé la configuration de rétention pour une stratégie de rétention**.
 
 > [!NOTE]
-> En raison des commentaires des clients, nous avons supprimé cette fonctionnalité qui crée les étiquettes de rétention par défaut et la stratégie d’étiquette mentionnées ci-dessus. Vous seulement verrez cette stratégie et les étiquettes si vous avez utilisé le Gestionnaire d’Offre de fichiers avant le 11 avril 2019.
+> En raison des commentaires des clients, nous avons supprimé cette fonctionnalité qui crée les étiquettes de rétention par défaut et la stratégie d’étiquette de rétention mentionnées ci-dessus. Vous ne verrez que ces étiquettes de rétention et la stratégie d’étiquette de rétention si vous avez ouvert le gestionnaire de plan de gestion des fichiers avant le 11 avril 2019.
 
 ## <a name="navigating-your-file-plan"></a>Navigation dans votre plan de gestion de fichiers
 
@@ -83,9 +83,9 @@ Sur l’onglet des **étiquettes du plan de gestion de fichiers**, les informati
 
 ![Paramètres des étiquettes dans le plan de gestion de fichiers](media/file-plan-label-columns.png)
 
-### <a name="label-file-plan-descriptors-columns"></a>Colonnes des descripteurs de plan de gestion de fichiers pour les étiquettes
+### <a name="retention-label-file-plan-descriptors-columns"></a>Colonnes des descripteurs de plan de gestion de fichiers pour les étiquettes
 
-Vous pouvez désormais inclure plus d’informations dans la configuration de vos étiquettes de conservation. L’insertion de descripteurs de plan de gestion de fichiers dans les étiquettes permet de gérer et d’organiser plus facilement votre plan.
+Vous pouvez désormais inclure plus d’informations dans la configuration de vos étiquettes de conservation. L’insertion de descripteurs de plan de gestion de fichiers dans les étiquettes de rétention permet de gérer et d’organiser plus facilement votre plan.
 
 Pour vous aider à démarrer, le gestionnaire de plan de gestion de fichiers fournit des valeurs prédéfinies prêtes à être utilisées pour : Fonction/service, Catégorie, Type d’autorité et Mise en service/citation. Vous pouvez ajouter de nouvelles valeurs de descripteur de plan de gestion de fichiers lorsque vous créez ou modifiez une étiquette de conservation.
 
@@ -97,7 +97,7 @@ Voici une vue des colonnes de descripteurs du plan de gestion de fichiers dans l
 
 ![file-plan-descriptors-on-labels-tab.png](media/file-plan-descriptors-on-labels-tab.png)
 
-## <a name="export-labels-out-of-your-file-plan"></a>Export d’étiquettes depuis votre plan de gestion de fichiers
+## <a name="export-all-existing-retention-labels-to-analyze-andor-perform-offline-reviews"></a>Exporter toutes les étiquettes de rétention existantes pour analyser et/ou effectuer des révisions en mode hors connexion
 
 Depuis le gestionnaire de plan de gestion de fichiers, vous pouvez exporter les détails de toutes les étiquettes de conservation dans un fichier .csv pour vous aider à fournir des évaluations périodiques de conformité aux responsables de la gouvernance des données de votre organisation.
 
@@ -109,11 +109,11 @@ Un fichier *.csv contenant toutes les étiquettes de conservation existantes s�
 
 ![Fichier CSV affichant toutes les étiquettes de conservation](media/file-plan-csv-file.png)
 
-## <a name="import-labels-into-your-file-plan"></a>Import d’étiquettes dans votre plan de gestion de fichiers
+## <a name="import-retention-labels-into-your-file-plan"></a>Import d’étiquettes de rétention dans votre plan de gestion de fichiers
 
-Dans le gestionnaire de plan de gestion de fichiers, vous pouvez importer de nouvelles étiquettes en bloc mais aussi modifier des étiquettes de conservation existantes.
+Dans le gestionnaire de plan de gestion de fichiers, vous pouvez importer de nouvelles étiquettes de rétention en bloc mais aussi modifier des étiquettes de rétention existantes.
 
-Pour importer de nouvelles étiquettes de conservation et mettre à jour des étiquettes de conservation existantes, accédez au **gestionnaire de plan de gestion de fichiers** \> **Actions de plan de gestion de fichiers** \> **Importer les étiquettes**.
+Pour importer de nouvelles étiquettes de rétention et mettre à jour des étiquettes de rétention existantes, accédez au **gestionnaire de plan de gestion de fichiers** \> **Actions de plan de gestion de fichiers** \> **Importer les étiquettes**.
 
 ![Option d’import de plan de gestion de fichiers](media/file-plan-import-labels-option.png)
 
@@ -123,7 +123,7 @@ Téléchargez un modèle vide (ou démarrez à partir d’un export de votre pla
 
 ![Modèle de plan de gestion de fichiers vide ouvert dans Excel](media/file-plan-blank-template.png)
 
-Complétez le modèle (des informations de référence sur les valeurs valides pouvant être saisies seront bientôt disponibles).
+Complétez le modèle (prochainement : informations de référence sur les combinaisons valides de valeurs pour une seule étiquette de rétention).
 
 ![Modèle de plan de gestion de fichiers complété](media/file-plan-filled-out-template.png)
 
@@ -131,7 +131,9 @@ Chargez le modèle complété et le gestionnaire de plan de gestion de fichiers 
 
 ![Statistiques d’importation de plan de gestion de fichiers](media/file-plan-import-statistics.png)
 
-Une fois l’importation terminée, accédez à nouveau au gestionnaire de plan de gestion de fichiers pour attribuer de nouvelles étiquettes aux stratégies nouvelles ou existantes.
+En cas d’erreur de validation, l’importation de plan de fichiers continuera à valider chaque entrée dans le fichier d’importation et affichera toutes les erreurs faisant référence aux numéros de ligne/ligne dans le fichier d’importation, copiera les résultats d’erreur affichés afin de pouvoir facilement revenir au fichier d’importation et corriger les erreurs. 
+
+Une fois l’importation terminée, accédez à nouveau au gestionnaire de plan de gestion de fichiers pour attribuer de nouvelles étiquettes de rétention aux stratégies de rétention nouvelles ou existantes.
 
 ![Option de publication d’étiquettes](media/file-plan-publish-labels-option.png)
 

@@ -15,16 +15,16 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Découvrez l’Explorateur (et les détections en temps réel) dans le &amp; Centre de sécurité conformité.
-ms.openlocfilehash: 62ba70cb62b0c92cf65d77dfaf3eb7306e93fa98
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: 030f866c5e86daa3dc543bddae7152e19f377d3b
+ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34415717"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490530"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces (et détections en temps réel)
 
-Si votre organisation dispose d' [office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) et que vous disposez des [autorisations nécessaires](#required-licenses-and-permissions), vous disposez de l' **Explorateur** ou des détections **en temps réel** (précédemment des rapports en temps réel) [voir what’s New ](#new-features-in-real-time-detections)!). Dans le centre de sécurité & Compliance Center, accédez à **gestion des menaces**, puis choisissez **Explorateur** ou détections **en temps réel**. 
+Si votre organisation dispose d' [office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) et que vous disposez [des autorisations nécessaires](#required-licenses-and-permissions), vous disposez de l' **Explorateur** ou des détections **en temps réel** (précédemment des *rapports en temps réel* ) [Voir ](#new-features-in-real-time-detections)nouveautés!). Dans le centre de sécurité & Compliance Center, accédez à **gestion des menaces**, puis choisissez **Explorateur** ou détections **en temps réel**. 
 
 |Avec le plan ATP 2, vous pouvez voir:  |Avec le plan ATP 1, vous pouvez voir:  |
 |---------|---------|

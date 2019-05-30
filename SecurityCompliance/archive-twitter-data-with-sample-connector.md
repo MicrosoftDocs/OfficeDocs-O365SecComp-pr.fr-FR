@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur natif pour importer des données Twitter dans Office 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Office 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la gouvernance des données tierces de votre organisation.
-ms.openlocfilehash: b53d882a66ba30a0c4c90389253689a9fe1fb457
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: ad64a982340013fbc5ef9acb612982ccc846ad3a
+ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155616"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490500"
 ---
 # <a name="use-a-sample-connector-to-archive-twitter-data-in-office-365-preview"></a>Utiliser un exemple de connecteur pour archiver les données Twitter dans Office 365 (version préliminaire)
 
@@ -101,10 +101,10 @@ Pour obtenir des instructions pas à pas, reportez-vous à [l’étape 5: créer
 
 Lors de l’exécution de cette étape (en suivant les instructions pas à pas), vous enregistrez les informations suivantes dans un fichier texte. Les valeurs de ces éléments seront utilisées pour configurer l’application connecteur Twitter à l’étape 6.
 
-- ID de l’application Twitter
-- Clé secrète de l’application Twitter (clé secrète de l’API)
-- Jeton client Twitter
-- Clé secrète de jeton client Twitter
+- Clé de l’API Twitter
+- Clé secrète de l’API Twitter
+- Jeton d’accès Twitter
+- Jeton d’accès Twitter secret
 
 ## <a name="step-6-configure-the-twitter-connector-app"></a>Étape 6: configuration de l’application de connecteur Twitter
 
@@ -114,10 +114,10 @@ Pour obtenir des instructions pas à pas, reportez-vous à [l’étape 6: config
 
 Lors de l’exécution de cette étape (en suivant les instructions pas à pas), vous devez fournir les informations suivantes (que vous avez copiées dans un fichier texte après avoir effectué les étapes précédentes):
 
-- ID de l’application Twitter (obtenu à l’étape 5)
-- Clé secrète de l’application Twitter (obtenue à l’étape 5)
-- Jeton client Twitter (obtenu à l’étape 5)
-- Clé secrète de jeton client Twitter (obtenue à l’étape 5)
+- Clé de l’API Twitter (obtenue à l’étape 5)
+- Clé secrète de l’API Twitter (obtenue à l’étape 5)
+- Jeton d’accès Twitter (obtenu à l’étape 5)
+- Jeton d’accès Twitter secret (obtenu à l’étape 5)
 - ID d’application Azure Active Directory (l’ID d’application AAD obtenu à l’étape 2)
 - Clé secrète de l’application Azure Active Directory (la clé secrète de l’application AAD obtenue à l’étape 2)
 - URI de l’application Azure Active Directory (URI de l’application AAD obtenue à l’étape 2, par exemple,https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213)

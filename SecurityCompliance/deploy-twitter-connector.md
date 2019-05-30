@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur natif pour importer et archiver des données Twitter vers Office 365. Une fois ces données importées dans Office 365, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la gouvernance des données Twitter de votre organisation.
-ms.openlocfilehash: 01c77436fc346a30a3d2cafeac731bf091296632
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 4d3bce8418ef2fa62c40d221549e6e089dee9647
+ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150536"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490543"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data-in-office-365"></a>Déploiement d’un connecteur pour l’archivage des données Twitter dans Office 365
 
@@ -193,10 +193,10 @@ L’application de développeur Twitter est maintenant prête à être utilisée
 
 4. Sous **Détails**de la configuration, entrez les paramètres de configuration suivants 
 
-   - **ID de l’application Twitter** : ID de l’application Twitter que vous avez créée à l’étape 5.
-   - Clé secrète de l' **application Twitter** : clé secrète de l’API pour l’application Twitter que vous avez créée à l’étape 5.
-   - **Jeton client Twitter** : jeton d’accès que vous avez créé à l’étape 5.
-   - **Clé secrète de jeton client Twitter** -jeton d’accès secret que vous avez créé à l’étape 5.
+   - **Clé de l’API Twitter** : ID de l’application Twitter que vous avez créée à l’étape 5.
+   - **Clé secrète de l’API Twitter** : clé secrète de l’API pour l’application Twitter que vous avez créée à l’étape 5.
+   - **Jeton d’accès Twitter** : le jeton d’accès que vous avez créé à l’étape 5.
+   - **Clé secrète d’accès Twitter** : le secret de jeton d’accès que vous avez créé à l’étape 5.
    - **ID d’application AAD** : ID d’application pour l’application Azure Active Directory que vous avez créée à l’étape 2
    - **Clé secrète de l’application AAD** : valeur de la clé secrète APISecretKey que vous avez créée à l’étape 4.
    - **URI de l’application AAD** : URI de l’application AAD obtenue à l’étape 2; par exemple, https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213.
