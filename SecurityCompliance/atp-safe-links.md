@@ -22,12 +22,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La fonctionnalité liens fiables permet de vérifier le temps de cliquer sur les liens hypertexte dans les documents Office et dans les messages électroniques. Utilisez des liens fiables pour protéger votre organisation contre le hameçonnage et les autres attaques.
-ms.openlocfilehash: 1be7db8ad96a5fd0b46500288e674946e763385a
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.openlocfilehash: 4f1449fb97ad8d8f263073c917eed2c399bf4f22
+ms.sourcegitcommit: ff1d18aaddde2048f1cf88338c916295cf8c354e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34652527"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "34748577"
 ---
 # <a name="office-365-atp-safe-links"></a>Liens fiables Office 365 ATP (Protection avancée contre les menaces)
 
@@ -40,7 +40,7 @@ Office 365 DAV Safe Links (partie de la [protection avancée contre les menaces]
   
 Une fois vos stratégies de liens fiables ATP en place, les administrateurs globaux d’Office 365, les administrateurs de sécurité et les lecteurs de sécurité peuvent [afficher des rapports pour une protection avancée contre les menaces](view-reports-for-atp.md). Les informations contenues dans ces rapports peuvent aider votre équipe de sécurité à prendre des mesures supplémentaires pour protéger votre organisation ou Rechercher des incidents de sécurité.
 
-À mesure que de [nouvelles fonctionnalités sont ajoutées à](office-365-atp.md#new-features-in-office-365-atp)la protection avancée contre les menaces, votre équipe de sécurité Office 365 peut ajouter ou modifier les [stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md)de votre organisation. En outre, vous pouvez remarquer des modifications et des améliorations, telles que les [pages d’avertissement](atp-safe-links-warning-pages.md) et le rendu de liens natifs nouvellement modifiés dans Outlook.
+À mesure que de [nouvelles fonctionnalités sont ajoutées à](office-365-atp.md#new-features-in-office-365-atp)la protection avancée contre les menaces, votre équipe de sécurité Office 365 peut ajouter ou modifier les [stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md)de votre organisation. En outre, vous pouvez remarquer des modifications et des améliorations, telles que les [pages d’avertissement](atp-safe-links-warning-pages.md) et le rendu de liens natifs nouvellement modifiés dans Outlook (introduits dans la version 1809 d’Office 365 ProPlus).
          
 ## <a name="how-to-get-atp-safe-links-protection"></a>Comment obtenir la protection des liens fiables ATP
 

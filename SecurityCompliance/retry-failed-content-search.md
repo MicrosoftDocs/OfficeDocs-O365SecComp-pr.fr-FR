@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez le bouton nouvelle tentative pour résoudre les recherches de contenu présentant des erreurs d’emplacement de contenu.
-ms.openlocfilehash: ab6f33e00a057ccd9ee7b80e0499b2838855ac83
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 91c656a05111391ad93e03946cf367133f2c25a2
+ms.sourcegitcommit: ff1d18aaddde2048f1cf88338c916295cf8c354e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157066"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "34748567"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Nouvelle tentative de recherche de contenu pour résoudre une erreur d’emplacement de contenu
 
@@ -34,7 +34,7 @@ User1@contoso.com: Problem in processing the request. Please try again later. If
 User2@contoso.com: Application error occurred. Please try again later. (CS012-002)
 ```
 
-Ces erreurs (avec les codes d’erreur CS008-009 et CS012-002) indiquent que la recherche de contenu n’a pas pu Rechercher des emplacements de contenu spécifiques; dans cet exemple, deux boîtes aux lettres n’ont pas été recherchées. Ces erreurs s’affichent sur la page de menu volant des détails de l’état de la recherche de contenu.
+Ces erreurs (avec les codes d’erreur CS001-002, CS003-002, CS008-009, CS012-002, ainsi que d’autres erreurs de la forme CS0XX-0XX) indiquent que la recherche de contenu n’a pas pu Rechercher des emplacements de contenu spécifiques; dans cet exemple, deux boîtes aux lettres n’ont pas été recherchées. Ces erreurs s’affichent sur la page de menu volant des détails de l’état de la recherche de contenu.
 
 ## <a name="cause-of-content-location-errors"></a>Cause des erreurs d’emplacement de contenu
 
