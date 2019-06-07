@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec les étiquettes de rétention dans Office 365, vous pouvez baser une période de rétention sur la survenue d’un type d’événement spécifique. L’événement déclenche le début de la période de rétention, et tout le contenu portant une étiquette définie pour ce type d’événement se voit appliquer les actions de rétention de l’étiquette. La rétention basée sur un événement est généralement utilisée dans le cadre d’un processus de gestion des enregistrements.
-ms.openlocfilehash: 6d4d9a1af20e16453343dd2b68b87b033c46e324
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0b8b82038ef00e135b759b4b818a1bb4bd559cf7
+ms.sourcegitcommit: 34b37d83944dce0a05aa1aacc0d4f7bec55e959f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154626"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34728621"
 ---
 # <a name="overview-of-event-driven-retention"></a>Vue d’ensemble des rétentions basées sur des événements
 
@@ -103,7 +103,7 @@ Notez qu’une fois que vous sélectionnez un type d’événement et créez l�
   
 ### <a name="step-3-publish-or-auto-apply-the-label"></a>Étape 3 : publier ou appliquer automatiquement l’étiquette
 
-Comme pour toute étiquette, vous devez publier ou appliquer automatiquement une étiquette basée sur un événement afin qu’elle soit appliquée manuellement ou automatiquement au contenu. Faites-le sur la page **Étiquettes** ou **Polices d’étiquettes**. Notez que les étiquettes qui classent le contenu en tant qu’enregistrement peuvent être uniquement publiées et appliquées manuellement au contenu. 
+Comme pour n’importe quelle étiquette, vous devez publier ou appliquer automatiquement une étiquette basée sur un événement, de sorte qu’elle soit appliquée au contenu de façon manuelle ou automatique. Vous pouvez le faire sur la page **Étiquettes** ou la page **Stratégies d’étiquette**. 
   
 ![Options permettant de publier ou d’appliquer automatiquement une étiquette](media/c9232c54-bbc0-40d2-abc2-122d5d1e70af.png)
   
