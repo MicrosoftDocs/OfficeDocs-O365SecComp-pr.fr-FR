@@ -3,7 +3,7 @@ title: Créer et gérer des boîtes aux lettres inactives dans Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Vous pouvez créer une boîte aux lettres inactive dans Office 365 en appliquant une stratégie de rétention de blocage ou d’Office 365 à la boîte aux lettres, puis en supprimant le compte d’utilisateur Office 365 correspondant. Les éléments d’une boîte aux lettres inactive sont conservés pendant la durée de la conservation ou de la stratégie de rétention qui lui a été appliquée avant qu’elle ne soit devenue inactive. Pour supprimer définitivement une boîte aux lettres inactive, supprimez simplement la stratégie de conservation ou de rétention.
-ms.openlocfilehash: 1a2eb5a998de7f31bcf531aacf22dca51c71acb8
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e07b062f6b77f18589334b141e38edddc5ea18c5
+ms.sourcegitcommit: f88f14999aeb70ecf265cd98eb09a3304b150be8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151226"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34768949"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Créer et gérer des boîtes aux lettres inactives dans Office 365
 
@@ -36,7 +36,7 @@ Office 365 vous permet de conserver le contenu des boîtes aux lettres supprimé
     
 - La licence associée à la boîte aux lettres Exchange Online supprimée sera disponible une fois que vous aurez supprimé la boîte aux lettres Office 365 correspondante. Vous pouvez ensuite [attribuer des licences aux utilisateurs dans Office 365 pour les entreprises](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) à un autre utilisateur. 
     
-- Si une conservation pour litige ou une stratégie de rétention Office 365 n'est pas appliquée à une boîte aux lettres avant sa suppression, son contenu n'est ni conservé ni détectable. Cependant, la boîte aux lettres peut être récupérée dans les 30 jours suivant sa suppression, mais, à défaut de récupération, elle est définitivement supprimée avec son contenu à l'issue de cette période.
+- Si une conservation pour litige ou une stratégie de rétention Office 365 (configurée pour conserver ou conserver et supprimer du contenu) n’est pas appliquée à une boîte aux lettres avant sa suppression, le contenu de la boîte aux lettres n’est pas conservé ni découvrable. Cependant, la boîte aux lettres peut être récupérée dans les 30 jours suivant sa suppression, mais, à défaut de récupération, elle est définitivement supprimée avec son contenu à l'issue de cette période.
     
 - For more information about Litigation Hold, see [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=846124). Pour en savoir plus sur les stratégies de rétention Office 365, consultez la rubrique [Vue d'ensemble des stratégies de rétention dans Office 365](retention-policies.md).
   
@@ -46,7 +46,7 @@ La création d’une boîte aux lettres inactive implique deux étapes: 1) en pl
   
 ### <a name="step-1-place-a-mailbox-on-litigation-hold-or-apply-an-office-365-retention-policy"></a>Étape 1 : Placement d'une boîte aux lettres en conservation pour litige ou application d'une stratégie de rétention Office 365
 
-Le placement d'une boîte aux lettres en conservation pour litige ou l'application d'une stratégie de rétention Office 365 permet de conserver le contenu de la boîte aux lettres avant sa suppression. Ces deux types de conservation conservent l'ensemble du contenu de la boîte aux lettres, notamment les éléments supprimés et les versions d'origine des éléments modifiés. Les éléments supprimés et modifiés sont conservés dans la boîte aux lettres inactive pendant une période spécifiée, jusqu'à la suppression définitive de la boîte aux lettres inactive en supprimant la conservation ou la stratégie de rétention appliquée.
+Placer une boîte aux lettres en conservation pour litige ou appliquer une stratégie de rétention Office 365 (configurée pour conserver ou conserver et supprimer du contenu) conserve le contenu de la boîte aux lettres avant qu’elle ne soit supprimée. Ces deux types de conservation conservent l'ensemble du contenu de la boîte aux lettres, notamment les éléments supprimés et les versions d'origine des éléments modifiés. Les éléments supprimés et modifiés sont conservés dans la boîte aux lettres inactive pendant une période spécifiée, jusqu'à la suppression définitive de la boîte aux lettres inactive en supprimant la conservation ou la stratégie de rétention appliquée.
   
 Si une boîte aux lettres est déjà placée en conservation, ou si une stratégie de rétention Office 365 est déjà appliquée à une boîte aux lettres, il vous suffit de supprimer le compte d'utilisateur Office 365 correspondant, comme expliqué à l'étape 2.
   
@@ -102,7 +102,7 @@ Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,Disting
   
 ## <a name="search-and-export-the-contents-of-an-inactive-mailbox"></a>Recherche et exportation du contenu d'une boîte aux lettres inactive
 
-Vous pouvez accéder au contenu de la boîte aux lettres inactive à l’aide de l’outil de recherche de contenu dans le centre de sécurité & Compliance Center. When you search an inactive mailbox, you can create a keyword search query to search for specific items or you can return the entire contents of the inactive mailbox. You can preview the search results or export the search results to an Outlook Data (PST) file or as individual email messages. For step-by-step procedures for searching mailboxes and exporting search results, see the following topics:
+Vous pouvez accéder au contenu de la boîte aux lettres inactive à l’aide de l’outil de recherche de contenu dans le centre de sécurité & conformité. When you search an inactive mailbox, you can create a keyword search query to search for specific items or you can return the entire contents of the inactive mailbox. You can preview the search results or export the search results to an Outlook Data (PST) file or as individual email messages. For step-by-step procedures for searching mailboxes and exporting search results, see the following topics:
   
 - [Recherche de contenu dans Office 365](content-search.md)
     
