@@ -13,48 +13,51 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
-description: Les paramètres de filtrage du courrier indésirable de base incluent la sélection de l’action à effectuer sur les messages identifiés comme courrier indésirable, ainsi que le filtrage des messages rédigés dans des langues spécifiques ou envoyés à partir de pays ou régions spécifiques.
-ms.openlocfilehash: c52c82c32c32383e4fb2df173aa98518ac52b115
-ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
+description: Les paramètres de filtrage du courrier indésirable de base incluent la sélection de l’action à effectuer sur les messages identifiés comme courrier indésirable.
+ms.openlocfilehash: be99c017a5038fbfb431edbcf2d65c877d92388c
+ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490520"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857654"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configuration de vos stratégies de filtrage du courrier indésirable
-  
-Les paramètres de filtrage du courrier indésirable de base incluent la sélection de l’action à effectuer sur les messages identifiés comme courrier indésirable. Les paramètres de stratégie de filtrage du courrier indésirable sont appliqués uniquement aux messages entrants. Vous pouvez modifier la stratégie de filtrage du courrier indésirable par défaut pour configurer vos paramètres de filtrage du courrier indésirable à l’échelle de l’entreprise et créer des stratégies personnalisées de filtrage du courrier indésirable, puis les appliquer à des utilisateurs, des groupes ou des domaines spécifiques de votre organisation Les stratégies personnalisées priment toujours sur la stratégie par défaut. Vous pouvez modifier l’ordre dans lequel vos stratégies personnalisées s’exécutent en modifiant la priorité de chaque stratégie personnalisée; Toutefois, seule la stratégie de priorité la plus élevée s’applique si plusieurs stratégies répondent aux critères définis.
-  
-> [!IMPORTANT]
-> Pour les clients autonomes Exchange Online Protection (EOP): par défaut, les filtres de courrier indésirable EOP envoient des messages détectés par courrier indésirable dans le dossier de courrier indésirable de chaque destinataire. Toutefois, pour vous assurer que l’action **déplacer le message vers le dossier** courrier indésirable fonctionne pour les boîtes aux lettres locales, vous devez configurer des règles de flux de messagerie Exchange (également appelées règles de transport) sur vos serveurs locaux pour détecter les en-têtes de courrier indésirable ajoutés par EOP. Pour plus d'informations, voir [Vérification de l'acheminement du courrier indésirable vers le dossier Courrier indésirable de chaque utilisateur](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
-  
+Les paramètres de filtrage du courrier indésirable incluent la sélection de l’action à effectuer sur les messages identifiés comme courrier indésirable. Les paramètres de stratégie de filtrage du courrier indésirable sont appliqués aux messages entrants uniquement et il existe deux types:
+
+  - Valeur par défaut: la stratégie de filtrage du courrier indésirable par défaut est utilisée pour configurer les paramètres de filtrage du courrier indésirable dans l’entreprise Cette stratégie ne peut pas être renommée et est toujours active.
+
+  - Personnalisé: les stratégies personnalisées de filtrage du courrier indésirable peuvent être granulaires et appliquées à des utilisateurs, des groupes ou des domaines spécifiques de votre organisation. Les stratégies personnalisées priment toujours sur la stratégie par défaut. Vous pouvez modifier l’ordre dans lequel vos stratégies personnalisées s’exécutent en modifiant la priorité de chaque stratégie personnalisée; Toutefois, seule la stratégie dont la priorité est la plus élevée (par exemple, le nombre le plus proche de 0) s’applique si plusieurs stratégies répondent aux critères définis.
+
 ## <a name="what-you-must-know-before-you-begin"></a>Ce que vous devez savoir avant de commencer
 
 Durée d'exécution estimée : 30 minutes
   
-Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l’entrée blocage du courrier indésirable dans la rubrique [autorisations des fonctionnalités dans Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
-  
-Pour obtenir des informations sur les raccourcis clavier applicables aux procédures de cette rubrique, reportez-vous à l’article **Raccourcis clavier dans le Centre d’administration Exchange**.
-  
-## <a name="use-the-security--compliance-center-scc-to-configure-spam-filter-policies"></a>Utiliser le centre de sécurité & Compliance Center pour configurer des stratégies de filtrage du courrier indésirable
+Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l’entrée blocage du courrier indésirable dans la rubrique [autorisations des fonctionnalités dans Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) .
 
-1. Dans le centre de sécurité & conformité (SCC), accédez à **protection contre le courrier**indésirable de la **stratégie** \> de **gestion** \> des menaces.
-    
-2. Effectuez l’une des opérations suivantes dans la page **paramètres du blocage du courrier** indésirable: 
-    
-      - Passez en revue la stratégie à l’échelle de l’entreprise par défaut sous les paramètres standard.
-    
-      - Cliquez sur l’onglet **personnalisé** , modifiez le sélecteur de **paramètres personnalisés** en le définissant sur **activé**, puis cliquez sur le ![bouton ajouter](media/ITPro-EAC-AddIcon.gif) **une stratégie** pour créer une stratégie de filtrage du courrier indésirable personnalisée pouvant être appliquée à des utilisateurs, des groupes et domaines de votre organisation. Vous pouvez également modifier des stratégies personnalisées existantes en double-cliquant dessus. 
-    
-3. Pour les stratégies personnalisées uniquement, spécifiez un nom pour la stratégie. Vous pouvez également spécifier une description plus détaillée. Vous ne pouvez pas renommer la stratégie par défaut.<br/><br/>Remarque: lorsque vous créez une stratégie, tous les paramètres de configuration apparaissent sur un seul écran. En revanche, lorsque vous modifiez une stratégie, vous devez naviguer sur plusieurs écrans. Les paramètres sont les mêmes dans les deux cas, mais le reste de cette procédure explique comment accéder à ces paramètres lors de la modification d’une stratégie. 
-  
-4. Dans la section actions de courrier indésirable **** **et en bloc** , sous courrier indésirable, courrier indésirable à **haute fiabilité**, **courrier électronique de hameçonnage**et **courrier électronique en masse**, sélectionnez l’action à effectuer pour le courrier indésirable entrant. Les valeurs disponibles sont : 
+Les paramètres de stratégie de filtrage du courrier indésirable sont tous dans le centre de sécurité & conformité (SCC). Pour plus d’informations, [consultez le centre de conformité Office 365 Security &](go-to-the-securitycompliance-center.md). La page des paramètres de blocage du courrier indésirable se trouve dans la section **anti-spam** de la **stratégie** \> de **gestion** \> des menaces SCC \> .
 
-      - **Déplacer le message vers le dossier** courrier indésirable: Envoie le message au dossier courrier indésirable des destinataires spécifiés. Il s’agit de l’action par défaut pour le courrier indésirable, le courrier indésirable à fiabilité élevée et l’encombrement.
+## <a name="access-and-create-spam-filter-policies"></a>Accès et création de stratégies de filtrage du courrier indésirable
 
- **Important**: pour les clients Exchange Online Protection (EoP): pour que cette action fonctionne avec les boîtes aux lettres locales, vous devez configurer deux règles de flux de messagerie Exchange sur vos serveurs locaux pour détecter les en-têtes de courrier indésirable ajoutés par EOP. Pour plus d’informations, consultez la rubrique How to [s’assure que le courrier indésirable est acheminé vers le dossier de courrier indésirable de chaque utilisateur](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
- 
-      - **Ajouter un en-tête X:** Envoie le message aux destinataires spécifiés, mais ajoute un texte d’en-tête X à l’en-tête du message afin d’identifier le message en tant que courrier indésirable. En utilisant ce texte comme identificateur, vous pouvez éventuellement créer des règles de boîte de réception ou utiliser un appareil en aval pour agir sur le message. Le texte d'en-tête X par défaut est **Ce message semble être un courrier indésirable**.<br/>Vous pouvez personnaliser le texte d’en-tête X à l’aide de la zone de **texte ajouter ce texte d’en-tête x** . Si vous personnalisez le texte d’en-tête X, gardez à l’esprit les conditions suivantes: 
+Dans la page Paramètres de blocage du courrier indésirable, les paramètres par défaut peuvent être affichés sous l’onglet standard. Pour modifier ces paramètres, accédez à l’onglet **personnalisé** . Vous pourrez voir et configurer certains des paramètres par défaut dans la stratégie de filtrage du courrier indésirable par défaut.
+
+Pour activer des paramètres plus personnalisés ou ajouter des stratégies personnalisées, définissez le sélecteur de **paramètres personnalisés** sur **activé** pour activer les stratégies personnalisées de filtrage du courrier indésirable. Vous pouvez afficher les stratégies personnalisées existantes en les développant à partir d’ici.
+
+## <a name="configure-custom-spam-filter-policy-settings"></a>Configurer les paramètres de stratégie de filtrage du courrier indésirable
+
+1. Sélectionnez et cliquez sur **modifier la stratégie** si vous modifiez une stratégie; dans le cas contraire, cliquez sur **créer une stratégie** .
+
+2. Vous pouvez spécifier un nom unique pour les stratégies personnalisées, mais vous ne pouvez pas renommer la stratégie par défaut. Vous pouvez également spécifier une description plus détaillée pour n’importe quelle stratégie.
+
+3. Dans la section **actions de courrier indésirable et en bloc** :
+
+  - Sélectionnez une action pour le **** courrier indésirable, le courrier indésirable à **fiabilité élevée**, le **courrier électronique de hameçonnage**et les types de **messages électroniques en nombre** . Les valeurs disponibles sont : 
+
+    - **Déplacer le message vers le dossier** courrier indésirable: Envoie le message au dossier courrier indésirable des destinataires spécifiés. Il s’agit de l’action par défaut pour le courrier indésirable, le courrier indésirable à fiabilité élevée et l’encombrement.<br/><br/>
+
+    > [!NOTE]
+    > Pour que cette action fonctionne avec les boîtes aux lettres locales, vous devez configurer deux règles de flux de messagerie Exchange (également appelées règles de transport) sur vos serveurs locaux pour détecter les en-têtes de courrier indésirable ajoutés par EOP. Pour plus d’informations, consultez la rubrique How to [s’assure que le courrier indésirable est acheminé vers le dossier de courrier indésirable de chaque utilisateur](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). Cette étape est essentielle pour les clients autonomes Exchange Online Protection (EOP).
+
+    - **Ajouter un en-tête X:** Envoie le message aux destinataires spécifiés, mais ajoute un texte d’en-tête X à l’en-tête du message afin d’identifier le message en tant que courrier indésirable. En utilisant ce texte comme identificateur, vous pouvez éventuellement créer des règles de boîte de réception ou utiliser un appareil en aval pour agir sur le message. Le texte d'en-tête X par défaut est **Ce message semble être un courrier indésirable**.<br/>Vous pouvez personnaliser le texte d’en-tête X à l’aide de la zone de **texte ajouter ce texte d’en-tête x** . Si vous personnalisez le texte d’en-tête X, gardez à l’esprit les conditions suivantes: 
     
       - Si vous spécifiez uniquement l’en-tête \< dans l' *en-tête*\>de format, où \<il n’y a pas d’espaces dans l' *en-*\>tête, un signe deux-points est ajouté au texte personnalisé, suivi du texte par défaut.       Par exemple, si vous spécifiez «This-is-My-Custom-Header», le texte de l’en-tête X s’affiche sous la forme «This-is-My-Custom-header: ce message semble être un courrier indésirable». 
         
@@ -64,17 +67,17 @@ Pour obtenir des informations sur les raccourcis clavier applicables aux procéd
       
       - Sachez que les messages avec cet en-tête X peuvent toujours être déplacés vers le dossier courrier indésirable de la boîte aux lettres en raison de la configuration indésirable des boîtes aux lettres Vous pouvez modifier ce paramètre en désactivant cette fonctionnalité à l’aide de Set-MailboxJunkEmailConfiguration.
 
-      - **Ajouter une ligne d’objet avec du texte:** Envoie le message aux destinataires voulus, mais ajoute à la ligne d’objet le texte que vous spécifiez dans la **ligne d’objet du préfixe avec cette** zone d’entrée de texte. En utilisant ce texte comme identificateur, vous pouvez éventuellement créer des règles pour filtrer ou acheminer les messages selon vos besoins. 
+    - **Ajouter une ligne d’objet avec du texte:** Envoie le message aux destinataires voulus, mais ajoute à la ligne d’objet le texte que vous spécifiez dans la **ligne d’objet du préfixe avec cette** zone d’entrée de texte. En utilisant ce texte comme identificateur, vous pouvez éventuellement créer des règles pour filtrer ou acheminer les messages selon vos besoins. 
+
+    - **Rediriger le message vers l’adresse de messagerie:** Envoie le message à une adresse de messagerie désignée plutôt qu’aux destinataires prévus. Spécifiez l'adresse de redirection dans la zone d'entrée **Rediriger vers cette adresse e-mail**.
+
+    - **Message de suppression:** Supprime l’intégralité du message, y compris toutes les pièces jointes. 
         
-      - **Rediriger le message vers l’adresse de messagerie:** Envoie le message à une adresse de messagerie désignée plutôt qu’aux destinataires prévus. Spécifiez l'adresse de redirection dans la zone d'entrée **Rediriger vers cette adresse e-mail**.
+    - **Message de mise en quarantaine:** Envoie le message en quarantaine au lieu de l’envoyer aux destinataires prévus. Il s’agit de l’action par défaut pour le hameçonnage. Si vous sélectionnez cette option, dans la zone d'entrée **Conserver les courriers indésirables pendant (jours)**, spécifiez le nombre de jours pendant lesquels le courrier indésirable restera en quarantaine. (Il sera automatiquement supprimé à l'issue de cette période. La valeur par défaut est de 30 jours, c’est-à-dire la valeur maximale. La valeur minimale est 1 jour.)<br/><br/>Conseil: pour plus d’informations sur la façon dont les administrateurs peuvent gérer les messages électroniques qui se trouvent en quarantaine dans le centre d’administration Exchange, consultez la rubrique [mise en quarantaine](quarantine.md) et [Rechercher et débloquer les messages mis en quarantaine en tant qu’administrateur](find-and-release-quarantined-messages-as-an-administrator.md). > pour plus d’informations sur la façon de configurer les messages de notification de courrier indésirable à envoyer aux utilisateurs, consultez la rubrique [configure end-user spam notifications in EOP](configure-end-user-spam-notifications-in-eop.md) ou configure [End-user spam notifications in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
 
-      - **Message de suppression:** Supprime l’intégralité du message, y compris toutes les pièces jointes. 
-        
-      - **Message de mise en quarantaine:** Envoie le message en quarantaine au lieu de l’envoyer aux destinataires prévus. Il s’agit de l’action par défaut pour le hameçonnage. Si vous sélectionnez cette option, dans la zone d'entrée **Conserver les courriers indésirables pendant (jours)**, spécifiez le nombre de jours pendant lesquels le courrier indésirable restera en quarantaine. (Il sera automatiquement supprimé à l'issue de cette période. La valeur par défaut est de 30 jours, c’est-à-dire la valeur maximale. La valeur minimale est 1 jour.)<br/><br/>Conseil: pour plus d’informations sur la façon dont les administrateurs peuvent gérer les messages électroniques qui se trouvent en quarantaine dans le centre d’administration Exchange, consultez la rubrique [mise en quarantaine](quarantine.md) et [Rechercher et débloquer les messages mis en quarantaine en tant qu’administrateur](find-and-release-quarantined-messages-as-an-administrator.md). > pour plus d’informations sur la façon de configurer les messages de notification de courrier indésirable à envoyer aux utilisateurs, consultez la rubrique [configure end-user spam notifications in EOP](configure-end-user-spam-notifications-in-eop.md) ou configure [End-user spam notifications in Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
+  - Configurer: **sélectionnez le seuil** pour déterminer la manière dont vous souhaitez traiter les messages électroniques en masse en tant que courrier indésirable, en fonction du niveau de réclamation en masse (BCL) du message. Vous pouvez choisir un paramètre de seuil compris entre 1 et 9, où 1 indique la plupart des messages électroniques en nombre comme du courrier indésirable et 9 la plupart des messages électroniques en nombre. Le service effectue ensuite l'action configurée, comme par exemple l'envoi du message dans le dossier Courrier indésirable du destinataire. Consultez la rubrique [valeurs de niveau de réclamation en bloc](bulk-complaint-level-values.md) et [quelle est la différence entre courrier indésirable et courrier électronique en masse?](what-s-the-difference-between-junk-email-and-bulk-email.md) pour plus d’informations. 
 
-5. Sous **Messages électroniques en nombre**, vous pouvez sélectionner un seuil pour le traitement des messages électroniques en nombre en tant que courrier indésirable. Ce seuil est basé sur le niveau de réclamation en bloc (BCL) du message. Vous pouvez choisir un paramètre de seuil compris entre 1 et 9, où 1 indique la plupart des messages électroniques en nombre comme du courrier indésirable et 9 la plupart des messages électroniques en nombre. Le service effectue ensuite l'action configurée, comme par exemple l'envoi du message dans le dossier Courrier indésirable du destinataire. Consultez la rubrique [valeurs de niveau de réclamation en bloc](bulk-complaint-level-values.md) et [quelle est la différence entre courrier indésirable et courrier électronique en masse?](what-s-the-difference-between-junk-email-and-bulk-email.md) pour plus d’informations. 
-
-6. Sur la page **Propriétés du courrier** indésirable, vous pouvez définir les options de mode test pour la stratégie en configurant les éléments suivants: 
+4. Sur la page **Propriétés du courrier** indésirable, vous pouvez définir les options de mode test pour la stratégie en configurant les éléments suivants: 
     
       - **Aucune** Aucune action en mode test n'est appliquée au message. Il s'agit du paramétrage par défaut. 
         
@@ -82,7 +85,7 @@ Pour obtenir des informations sur les raccourcis clavier applicables aux procéd
         
       - **Envoyer un message CCI à cette adresse** La sélection de cette option envoie une copie carbone invisible du message à l’adresse de messagerie que vous spécifiez dans la zone d’entrée. <br/><br/>Pour plus d’informations sur les options de filtrage avancé du courrier indésirable, notamment des descriptions de chaque option et du texte d’en-tête X associé à chacun d’eux, voir [Options avancées de filtrage du courrier](advanced-spam-filtering-asf-options.md)indésirable.
 
-7. Pour les stratégies personnalisées uniquement, cliquez sur l’élément **de menu appliquer à** , puis créez une règle basée sur une condition pour spécifier les utilisateurs, les groupes et les domaines auxquels cette stratégie doit être appliquée. Vous pouvez créer plusieurs conditions, si elles sont uniques. 
+5. Pour les stratégies personnalisées uniquement, cliquez sur l’élément **de menu appliquer à** , puis créez une règle basée sur une condition pour spécifier les utilisateurs, les groupes et les domaines auxquels cette stratégie doit être appliquée. Vous pouvez créer plusieurs conditions, si elles sont uniques. 
     
       - Pour sélectionner des utilisateurs, cliquez sur **Le destinataire est**. Dans la boîte de dialogue suivante, sélectionnez un ou plusieurs expéditeurs de votre entreprise dans la liste sélecteur d’utilisateur, puis cliquez sur **Ajouter**. Pour ajouter des expéditeurs qui ne figurent pas dans la liste, entrez leurs adresses de messagerie, puis cliquez sur **vérifier les noms**. Dans ce champ, vous pouvez également entrer des caractères génériques pour sélectionner plusieurs adresses de messagerie (par exemple : \*@ _domainname_). Lorsque vous avez terminé vos sélections, cliquez sur **OK** pour revenir à l’écran principal. 
         
@@ -90,7 +93,7 @@ Pour obtenir des informations sur les raccourcis clavier applicables aux procéd
         
       - Pour sélectionner des domaines, sélectionnez **le domaine du destinataire est**. Ensuite, dans la boîte de dialogue suivante, ajoutez les domaines. Cliquez sur **OK** pour revenir à l'écran principal. <br/><br/>Vous pouvez créer des exceptions au sein de la règle. Par exemple, vous pouvez filtrer les messages de tous les domaines à l’exception d’un domaine donné. Cliquez sur **Ajouter une exception**, puis créez vos conditions d’exception de la même manière que vous avez créé les autres conditions.<br/><br/>L’application d’une stratégie de courrier indésirable à un groupe est prise en charge uniquement pour les **groupes de sécurité à extension messagerie**. 
   
-8. Cliquez sur **Enregistrer**. Un résumé de vos paramètres de stratégie s'affiche dans le volet droit.
+6. Cliquez sur **Enregistrer**. Un résumé de vos paramètres de stratégie s'affiche dans le volet droit.
 
 La stratégie par défaut ne peut pas être désactivée ou supprimée et les stratégies personnalisées ont toujours priorité sur la stratégie par défaut. Pour les stratégies personnalisées, vous pouvez activer ou désactiver les cases à cocher dans la colonne **activé** pour les activer ou les désactiver. Par défaut, toutes les stratégies sont activées. Pour supprimer une stratégie personnalisée, sélectionnez-la, cliquez sur ![l’icône](media/ITPro-EAC-DeleteIcon.gif) **** de suppression de l’icône de suppression, puis confirmez la suppression de la stratégie.
 

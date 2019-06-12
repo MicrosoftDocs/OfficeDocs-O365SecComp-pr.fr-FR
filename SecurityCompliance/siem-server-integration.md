@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 description: 'Résumé: consultez cet article pour obtenir une vue d’ensemble de l’intégration de serveur SIEM à Microsoft 365.'
-ms.openlocfilehash: 05b6e980ae8c6a6b5d32fb3428748468dd861902
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.openlocfilehash: cfa9c6c3ae501515f61799fdd480fc569918935f
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34652577"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852688"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>Intégration de serveur SIEM aux services et applications Microsoft 365
 
@@ -36,7 +36,7 @@ Un serveur SIEM peut recevoir des données à partir d’un large éventail de s
 | [Office 365 protection avancée contre les menaces](office-365-atp.md) <br/>   ou   <br/>[Office 365 Threat Intelligence](office-365-ti.md) | Journaux d'audit | [Intégration SIEM avec Office 365 protection avancée contre les menaces](siem-integration-with-office-365-ti.md) |
 | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | Intégration des journaux | [Intégration SIEM à la sécurité des applications Cloud Microsoft](https://docs.microsoft.com/cloud-app-security/siem) |
 | [Sécurité de l’application cloud Office 365](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | Intégration des journaux | [Intégration de votre serveur SIEM à la sécurité des applications Cloud](https://docs.microsoft.com/cloud-app-security/siem) |
-| [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/) | Intégration des journaux | [Attirez les alertes sur vos outils SIEM](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection) |
+| [Protection Microsoft contre les menaces](https://docs.microsoft.com/windows/security/threat-protection/) | Intégration des journaux | [Attirez les alertes sur vos outils SIEM](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem) |
 | [Centre de sécurité Azure](https://docs.microsoft.com/azure/security-center/security-center-intro) (Protection contre les menaces et détection des menaces) | Alertes | [Exportation de données de sécurité Azure vers la configuration SIEM-pipeline-aperçu](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem) |
 | [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) | Journaux d'audit | [Intégration des journaux d’audit Azure Active Directory](https://docs.microsoft.com/azure/security/security-azure-log-integration-ad) |
 | [Advanced Threat Analytics](https://docs.microsoft.com/azure/security/azure-threat-detection) | Intégration des journaux | [Référence du journal ATA SIEM](https://docs.microsoft.com/advanced-threat-analytics/cef-format-sa) |

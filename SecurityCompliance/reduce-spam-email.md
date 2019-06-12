@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Découvrez les méthodes fréquemment utilisées pour réduire le courrier indésirable dans Office 365.
-ms.openlocfilehash: 7c2ea48c4244d2b86f01c89decd4add006f21a5c
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 6603b5a3efdfb6ffde0743d3b674ca69ca39eaa0
+ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157346"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857594"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Réduire le courrier indésirable dans Office 365
 
@@ -48,14 +48,14 @@ Pour éviter que vous receviez trop de courrier indésirable, Exchange Online Pr
 - 
   **Activez la règle de courrier indésirable dans toutes les boîtes aux lettres** L’action de filtrage du courrier indésirable est définie par défaut sur **Déplacer le message vers le dossier Courrier indésirable**. S’il s’agit de l’action favorite active de la stratégie anti-courrier indésirable, [la règle de courrier indésirable doit également être activée](https://support.office.com/fr-FR/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) dans chaque boîte aux lettres. Pour le vérifier, vous pouvez exécuter la cmdlet Get-MailboxJunkEmailConfiguration dans une ou plusieurs boîtes aux lettres. Par exemple, vous pouvez vérifier toutes les boîtes aux lettres en exécutant la commande suivante : Get-MailboxJunkEmailConfiguration -Identity \* | Where {$_.Enabled -eq $false}
     
-    Quand le résultat s’affiche, la propriété Enable doit être définie sur True. Si elle est définie sur False, vous pouvez exécuter la commande Set-MailboxJunkEmailConfiguration pour la définir sur True.
+    Lorsque le résultat s’affiche, la propriété Enable doit être définie sur True. Si elle est définie sur False, vous pouvez exécuter Set-MailboxJunkEmailConfiguration pour la définir sur True, comme suit : Set-MailboxJunkEmailConfiguration -Identity $values.UserPrincipalName -Enabled $true.
     
 - **Créez des règles de flux de messagerie dans Exchange Server local** Si vous utilisez Exchange Online Protection, mais que vos boîtes aux lettres se trouvent dans l’environnement Exchange Server local, créez des règles de flux de messagerie dans l’environnement Exchange Server local. Consultez les [instructions relatives à EOP](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj900470(v=exchg.150)).
     
 - 
   **Marquez le courrier en nombre comme courrier indésirable** Le courrier en nombre désigne le courrier auquel les utilisateurs peuvent être abonnés mais qui est considéré comme indésirable. Dans l’en-tête de messages X-Microsoft-Antispam, recherchez la propriété BCL (seuil de probabilité de courrier en nombre). Si cette valeur est inférieure au seuil défini dans le filtre anti-courrier indésirable, nous vous recommandons d’ajuster ce seuil pour que ces messages en nombre soient marqués comme courrier indésirable. Les utilisateurs tolèrent différemment le courrier en nombre et ont différentes préférences concernant son [traitement](https://docs.microsoft.com/fr-FR/office365/SecurityCompliance/bulk-complaint-level-values). Vous pouvez créer des stratégies ou des règles différentes selon les préférences des utilisateurs. 
     
-- **Bloquez immédiatement l’expéditeur** Si vous devez bloquer immédiatement un expéditeur, vous pouvez le faire en fonction de son adresse e-mail, domaine ou adresse IP. Reportez-vous à la section [Utilisation du Centre d’administration Exchange pour créer une règle de flux de messagerie qui bloque les messages envoyés par un domaine ou un utilisateur](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-mail-flow-rule-that-blocks-messages-sent-from-a-domain-or-user). Une entrée de la liste verte d’un utilisateur final peut annuler un blocage défini par l’administrateur.
+- **Bloquez immédiatement un expéditeur** Si vous devez immédiatement bloquer un expéditeur, vous pouvez bloquer son adresse e-mail, son domaine ou son adresse IP. Consultez [Créer des listes d’expéditeurs bloqués dans Office 365](create-block-sender-lists-in-office-365.md). Une entrée dans la liste verte d’un utilisateur final peut remplacer un blocage défini par l’administrateur.
     
 - **Activez le complément Message de notification pour les utilisateurs** Nous vous recommandons vivement d’[activer le complément Message de notification pour vos utilisateurs](enable-the-report-message-add-in.md). En tant qu’administrateur, vous pouvez également consulter les commentaires envoyés par vos utilisateurs et utiliser des modèles pour ajuster les paramètres qui peuvent être à l’origine des problèmes.
 - **Autoriser [DKIM](use-dkim-to-validate-outbound-email.md)** à signer tous vos messages sortants pour renforcer la sécurité dans votre domaine et client.

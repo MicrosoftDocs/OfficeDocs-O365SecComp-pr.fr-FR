@@ -16,18 +16,18 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: Si un utilisateur envoie continuellement des courriers électroniques à partir d’Office 365 classés comme courrier indésirable, il ne pourra pas envoyer d’autres messages.
-ms.openlocfilehash: 7a44ff7f2bcf88f2132ee4c372cc11b9657dd16a
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 3e05b250d5a3cdca79c7cf494b84be02ce3ecdc9
+ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157246"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857624"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Suppression d’un utilisateur du portail Utilisateurs restreints après l’envoi d’un courrier indésirable
 
-Si un utilisateur envoie continuellement des courriers électroniques à partir d’Office 365 classés comme courrier indésirable, il ne sera pas autorisé à envoyer d’autres messages sortants. L’utilisateur est mentionné dans le service en tant qu’expéditeur sortant incorrect et reçoit une notification d’échec de remise qui indique:
+Si un utilisateur envoie continuellement des courriers électroniques classés comme courrier indésirable à partir d’Office 365, ils ne seront pas autorisés à envoyer des messages électroniques, mais ils pourront toujours le recevoir. L’utilisateur est mentionné dans le service en tant qu’expéditeur sortant incorrect et reçoit une notification d’échec de remise qui indique:
 
-- Votre message n’a pas pu être remis car vous n’avez pas été reconnu comme un expéditeur valide. La raison la plus fréquente de ce message est que votre adresse de courrier est suspecte d’envoyer du courrier indésirable et qu’elle n’est plus autorisée à envoyer des messages en dehors de votre organisation. Contactez votre administrateur de courrier électronique pour obtenir de l’aide. Le serveur distant a renvoyé' 550 5.1.8 accès refusé, expéditeur sortant incorrect "
+> «Votre message n’a pas pu être remis car vous n’avez pas été reconnu comme un expéditeur valide. La raison la plus fréquente de ce message est que votre adresse e-mail est suspecte d’envoyer du courrier indésirable et qu’elle n’est plus autorisée à envoyer des courriers électroniques.  Contactez votre administrateur de courrier électronique pour obtenir de l’aide. Le serveur distant a renvoyé' 550 5.1.8 accès refusé, expéditeur sortant incorrect. "
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
 <a name="sectionSection0"> </a>
@@ -40,14 +40,14 @@ La procédure suivante peut également être exécutée par le biais du service 
 
 ## <a name="remove-restrictions-for-a-blocked-office-365-email-account"></a>Supprimer les restrictions pour un compte de messagerie Office 365 bloqué
 
-Vous effectuez cette tâche dans le centre de sécurité & Compliance Center (SCC). Pour plus d’informations sur SCC, [accédez au centre de sécurité _AMP_ Compliance Center](go-to-the-securitycompliance-center.md) . Vous devez être dans le groupe de rôles gestion de l' **organisation** ou **administrateur de sécurité** pour effectuer ces fonctions. [Accédez à autorisations dans le centre de sécurité _AMP_ conformité](permissions-in-the-security-and-compliance-center.md) pour plus d’informations sur les groupes de rôles SCC.
+Vous effectuez cette tâche dans le centre de sécurité & conformité (SCC). Pour plus d’informations sur SCC, [accédez au centre de sécurité & Compliance Center](go-to-the-securitycompliance-center.md) . Vous devez être dans le groupe de rôles gestion de l' **organisation** ou **administrateur de sécurité** pour effectuer ces fonctions. Pour plus d’informations sur les groupes de rôles SCC, [accédez à autorisations dans le centre de sécurité & conformité](permissions-in-the-security-and-compliance-center.md) .
 
 1. À l’aide d’un compte professionnel ou scolaire disposant de privilèges d’administrateur général Office 365, connectez-vous au centre de sécurité et conformité Office 365 et, dans la liste de gauche, développez **gestion des menaces**, choisissez **examiner**, puis choisissez **restreint. Les utilisateurs**.
     
     > [!TIP]
     > Pour accéder directement à la page **utilisateurs restreints** (anciennement appelé centre de maintenance) dans le &amp; Centre de sécurité conformité, utilisez l’URL suivante: >[https://protection.office.com/#/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
 
-2. Cette page contient la liste des utilisateurs qui ont été bloqués pour l’envoi de messages à l’extérieur de votre organisation.  Recherchez l’utilisateur pour lequel vous souhaitez supprimer les restrictions, puis cliquez **** sur débloquer.
+2. Cette page contient la liste des utilisateurs qui ont été bloqués pour l’envoi de messages électroniques.  Recherchez l’utilisateur dont vous souhaitez supprimer les restrictions, puis sélectionnez **débloquer**.
 
 3. Un passage vers l’extérieur indiquera les détails du compte dont l’envoi est restreint. Vous devez passer en revue les recommandations pour vous assurer que vous prenez les mesures appropriées au cas où le compte est réellement compromis. Cliquez sur **suivant** lorsque vous avez fini.
 
@@ -56,11 +56,21 @@ Vous effectuez cette tâche dans le centre de sécurité & Compliance Center (SC
 5. Cliquez sur **Oui** pour confirmer la modification.
 
     > [!NOTE]
-    > La suppression des restrictions peut prendre jusqu’à 30 minutes. 
+    > Cette opération peut prendre 30 minutes ou plus avant la suppression des restrictions. 
 
 ## <a name="making-sure-admins-are-alerted-when-this-happens"></a>S’assurer que les administrateurs sont alertés lorsque cela se produit
 
-Les administrateurs de client reçoivent également une alerte indiquant que l’utilisateur n’a pas été autorisé à envoyer des messages sortants supplémentaires. Il s’agit d’une alerte par défaut fournie pour tous les clients et est indiquée dans la page stratégies d’alerte SCC, intitulée «utilisateur restreint de l’envoi de courrier électronique». Pour plus d’informations sur l’alerte, accédez à [stratégies d’alerte dans le centre de sécurité _AMP_ Compliance Center](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies) .
+Une alerte «utilisateur restreint à l’envoi de courrier électronique» est disponible sous forme de stratégie sous la page stratégies d’alerte de conformité d’Office 365 Security &. Il s’agissait précédemment de la stratégie de courrier indésirable sortant, qui est désormais native à la plateforme d’alerte Office 365. Pour plus d’informations sur les alertes, accédez à [stratégies d’alerte dans le centre de sécurité & conformité](alert-policies.md) .
+
+> [!IMPORTANT]
+> Pour que les alertes fonctionnent, la recherche dans le journal d’audit doit être activée. Pour plus d’informations, reportez-vous à la rubrique [activation ou désactivation de la recherche du journal d’audit Office 365](turn-audit-log-search-on-or-off.md) .
+
+La stratégie pour cette alerte est une stratégie par défaut et est fournie avec tous les clients Office 365 et n’a pas besoin d’être configurée. Elle est considérée comme une alerte de gravité élevée et enverra un courrier électronique au groupe TenantAdmins configuré lorsque l’alerte est déclenchée chaque fois qu’un utilisateur ne peut pas envoyer de courrier. Les administrateurs peuvent mettre à jour le groupe informé lorsque cette alerte se produit en accédant à l’alerte sous le portail SCC > les alertes > les stratégies d’alerte > les utilisateurs ne sont pas autorisés à envoyer des courriers électroniques.
+
+Vous serez en mesure de modifier l’alerte de la façon suivante:
+- Activer/désactiver les notifications par courrier électronique
+- Envoyer un message électronique aux destinataires requis
+- Limiter les notifications que vous recevez par jour
 
 ## <a name="for-more-information"></a>Pour plus d’informations
 
@@ -71,3 +81,5 @@ Les administrateurs de client reçoivent également une alerte indiquant que l�
 [Pool de remise à risque élevé pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md)
 
 [Autorisations dans le centre de conformité et de sécurité](permissions-in-the-security-and-compliance-center.md)
+
+[Stratégies d’alerte dans le centre de sécurité & conformité](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies)

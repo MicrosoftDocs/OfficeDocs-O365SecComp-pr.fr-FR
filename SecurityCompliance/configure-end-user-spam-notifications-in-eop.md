@@ -13,12 +13,12 @@ ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 ms.collection:
 - M365-security-compliance
 description: Vous pouvez configurer les notifications de courrier indésirable à l'utilisateur final pour la stratégie de filtrage de contenu par défaut à l'échelle de l'entreprise, ou pour les stratégies de filtrage de contenu personnalisées appliquées à des domaines.
-ms.openlocfilehash: 07bca81f06a347bbce5e997e570553f85deb5c1d
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 66d5cd5fe9456c57c62a3c15710ce84d2e2d6631
+ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151456"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857644"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>Configurer des notifications de courrier indésirable pour l’utilisateur final dans EOP
   
@@ -37,9 +37,9 @@ Après la réception d’un message de notification, les utilisateurs finaux peu
 
 **Release** si le message n’est pas un courrier indésirable et que vous souhaitez qu’Office 365 envoie le message à votre boîte aux lettres.
 
-**Release _AMP_ autoriser l’expéditeur** si le message n’est pas un courrier indésirable et que vous voulez qu’Office 365 ajoute l’expéditeur à votre liste des expéditeurs et destinataires approuvés pour les futurs courriers électroniques. Gardez à l’esprit que votre administrateur peut avoir d’autres configurations autoriser/bloquer des organisations qui remplacent votre liste d’expéditeurs autorisés.
+**Release & autoriser l’expéditeur** si le message n’est pas un courrier indésirable et que vous souhaitez qu’Office 365 ajoute l’expéditeur à votre liste des expéditeurs et destinataires approuvés pour les futurs courriers électroniques. Gardez à l’esprit que votre administrateur peut avoir d’autres configurations autoriser/bloquer des organisations qui remplacent votre liste d’expéditeurs autorisés.
 
-**Release _AMP_ Report**, si le message n’est pas indésirable et que vous voulez envoyer le message à votre boîte aux lettres et le signaler à Microsoft pour analyse.
+**Release & Report**, si le message n’est pas indésirable et que vous voulez envoyer le message à votre boîte aux lettres et le signaler à Microsoft pour analyse.
 
 **Bloquer** si vous souhaitez qu’Office 365 ajoute l’expéditeur à votre liste des expéditeurs bloqués.
   
@@ -54,7 +54,7 @@ Pour des informations sur les raccourcis clavier applicables aux procédures de 
   
 ## <a name="use-the-eac-to-configure-end-user-spam-notifications"></a>Utiliser le Centre d’administration Exchange (CAE) pour configurer les notifications de courrier indésirable à l’utilisateur final
 
-1. Dans le Centre d'administration Exchange (CAE), accédez à **Protection** \> **Filtre de contenu**.
+1. Dans le centre d’administration Exchange, accédez à **protection** > **anti-spam Filter**.
     
 2. Sélectionnez la stratégie de filtrage de contenu pour laquelle vous voulez activer les notifications de courrier indésirable à l'utilisateur final (elles sont désactivées par défaut).
     

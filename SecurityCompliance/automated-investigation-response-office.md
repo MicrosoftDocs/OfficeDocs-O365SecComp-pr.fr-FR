@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Découvrez les fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection.
-ms.openlocfilehash: af567fc7bf532fde5854e3e2ee3785ca69c3c7ed
-ms.sourcegitcommit: b7c17e1079da4e60404d704864ccbc08f8e4dbb8
+ms.openlocfilehash: bb992a4ebd9bf10f2659929bab4357117ea1c254
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34250317"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852618"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>Recherche et réponse automatisées (AIR) avec Office 365
 
@@ -37,11 +37,11 @@ Dans la version initiale d’AIR en avril 2019, les alertes générées à parti
 3. Messages électroniques contenant des programmes malveillants supprimés après la remise *
 4. Messages électroniques contenant des URL d’hameçonnage supprimées après la remise *
 
-***Remarque**: ces alertes ont reçu une sévérité «informatif» dans les stratégies d’alerte respectives dans le centre de sécurité _AMP_ Compliance Center avec notifications par courrier électronique désactivées. Ces éléments peuvent être activés par le biais de la configuration de la stratégie d’alerte.
+***Remarque**: ces alertes ont reçu une sévérité «informatif» dans les stratégies d’alerte respectives dans le centre de sécurité & conformité et les notifications par courrier électronique sont désactivées. Ces éléments peuvent être activés par le biais de la configuration de la stratégie d’alerte.
 
-Pour afficher les alertes, dans le centre de sécurité & Compliance Center, sélectionnez **Alerts** > **View Alerts**. Sélectionnez une alerte pour afficher ses détails, puis, à partir de là, utilisez le lien **consulter l’enquête** pour accéder à l' [enquête](#investigation-graph)correspondante. Notez que les alertes d’information sont masquées par défaut dans l’affichage des alertes. Pour les afficher, vous devez modifier le filtrage des alertes de manière à inclure des alertes d’information.
+Pour afficher les alertes, dans le centre de sécurité & conformité, sélectionnez **alertes** > **afficher les alertes**. Sélectionnez une alerte pour afficher ses détails, puis, à partir de là, utilisez le lien **consulter l’enquête** pour accéder à l' [enquête](#investigation-graph)correspondante. Notez que les alertes d’information sont masquées par défaut dans l’affichage des alertes. Pour les afficher, vous devez modifier le filtrage des alertes de manière à inclure des alertes d’information.
 
-Si votre organisation gère vos alertes de sécurité par le biais d’un système de gestion des alertes, d’un système de gestion des services ou d’un système de gestion des événements et des informations de sécurité (SIEM), vous pouvez envoyer des alertes Office 365 à ce système via une notification par courrier électronique ou via le [ API d’activité de gestion d’Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Les notifications d’alerte d’enquête via le courrier électronique ou l’API incluent des liens permettant d’accéder aux alertes dans le centre de sécurité Security &, ce qui permet à l’administrateur de sécurité affecté de naviguer rapidement dans l’enquête.
+Si votre organisation gère vos alertes de sécurité par le biais d’un système de gestion des alertes, d’un système de gestion des services ou d’un système de gestion des événements et des informations de sécurité (SIEM), vous pouvez envoyer des alertes Office 365 à ce système via une notification par courrier électronique ou via le [ API d’activité de gestion d’Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Les notifications d’alerte d’enquête via le courrier électronique ou l’API incluent des liens permettant d’accéder aux alertes dans le centre de sécurité & conformité, ce qui permet à l’administrateur de sécurité affecté de naviguer rapidement dans l’enquête.
 
 ![Alertes liées à des enquêtes](media/air-alerts-page-details.png) 
 
@@ -96,7 +96,7 @@ Une fois l’enquête terminée, le manuel fournit une liste des actions recomma
 Ensuite, plusieurs étapes d’enquête sur les menaces et de chasse sont exécutées:
 
 - Les messages électroniques similaires dans d’autres clusters de messagerie sont recherchés.
-- Le signal est partagé avec d’autres plateformes, telles que [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
+- Le signal est partagé avec d’autres plateformes, telles que [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
 - Une détermination est effectuée sur le fait que les utilisateurs aient cliqué sur les liens malveillants dans les messages électroniques suspects.
 - Une vérification est effectuée dans Office 365 Exchange Online Protection ([EOP](eop/exchange-online-protection-eop.md)) et Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)) pour voir s’il existe d’autres messages similaires signalés par les utilisateurs.
 - Une vérification est exécutée pour déterminer si un utilisateur a été compromis. Cette vérification exploite les signaux de la sécurité de l' [application Cloud Microsoft](https://docs.microsoft.com/cloud-app-security) et d' [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), en mettant en corrélation les anomalies d’activité de l’utilisateur associées. 
@@ -121,7 +121,7 @@ Autre exemple: Supposons que vous affichiez des données sur les messages élect
 
 ## <a name="get-started"></a>Prise en main
 
-Pour accéder à vos enquêtes, en tant qu’administrateur général Office 365, administrateur de sécurité ou lecteur de sécurité, accédez au centre de sécurité[https://protection.office.com](https://protection.office.com)_AMP_ Compliance Center () et connectez-vous. Effectuez ensuite l’une des opérations suivantes :
+Pour accéder à vos enquêtes, en tant qu’administrateur général Office 365, administrateur de sécurité ou lecteur de sécurité, accédez au centre de sécurité[https://protection.office.com](https://protection.office.com)& conformité () et connectez-vous. Effectuez ensuite l’une des opérations suivantes :
 
 - Dans le volet de navigation de gauche, accédez à alertes d'**affichage**des **alertes** > , ouvrez l’une des alertes liées à l’enquête, puis cliquez sur le lien **afficher l’enquête** au bas de la fenêtre d’alerte. 
 
@@ -131,7 +131,7 @@ Pour accéder à vos enquêtes, en tant qu’administrateur général Office 365
 
     ou
 
-- Visitez le tableau de bord de gestion des menaces (dans le centre de sécurité & Compliance Center, accédez au**tableau de bord**de **gestion** > des menaces).
+- Visitez le tableau de bord de gestion des menaces (dans le centre de sécurité & conformité, accédez au**tableau de bord** **gestion** > des menaces).
 
 ![Widgets d’AIR](media/air-widgets.png)
 
@@ -242,11 +242,12 @@ Sous l’onglet **ordinateurs** , vous pouvez voir tous les ordinateurs identifi
 
 ![Page de l’ordinateur d’enquête aérien](media/air-investigationmachinepage.png)
 
-Dans le cadre de l’enquête, AIR établit une corrélation entre les menaces de messagerie et les appareils. Par exemple, une enquête transmet un hachage de fichier malveillant à [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) pour enquêter. Cela permet l’analyse automatisée des ordinateurs pertinents pour vos utilisateurs, afin de garantir que les menaces sont résolues à la fois dans le nuage et sur vos points de terminaison. 
+Dans le cadre de l’enquête, AIR établit une corrélation entre les menaces de messagerie et les appareils. Par exemple, une enquête transmet un hachage de fichier malveillant à [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
+) pour enquêter. Cela permet l’analyse automatisée des ordinateurs pertinents pour vos utilisateurs, afin de garantir que les menaces sont résolues à la fois dans le nuage et sur vos points de terminaison. 
 
 Vous pouvez :
 - Obtenir une vue d’ensemble visuelle des ordinateurs et menaces actuels détectés.
-- Sélectionnez un ordinateur pour ouvrir une vue dans les [enquêtes Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection) associées dans le centre de sécurité Windows Defender ATP.
+- Sélectionnez un ordinateur pour ouvrir une vue dans les [recherches Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) associées dans le centre de sécurité Microsoft Defender.
 
 ### <a name="entity-investigation"></a>Enquête d’entité
 

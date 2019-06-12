@@ -14,12 +14,12 @@ ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
 description: Obtenez-vous un message d'erreur lorsque vous tentez d'envoyer un courrier électronique à un destinataire dont l'adresse de messagerie est dans Office 365 ? Si vous pensez que vous ne devriez pas recevoir de message d'erreur, vous pouvez utiliser le portail Supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués Office 365.
-ms.openlocfilehash: 7ad7ac050829f2014d2c16dd39ad67fb2e91a1ec
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d63d8ffcd72789d8b8a7b7b825248ee8d0cc64a7
+ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157846"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857634"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>Utilisation du portail Supprimer de la liste pour vous supprimer de la liste des expéditeurs bloqués Office 365
 
@@ -54,4 +54,6 @@ où  _IP address_ est l'adresse IP de l'ordinateur sur lequel s'exécute le serv
     Une fois que l'adresse IP est supprimée de la liste des expéditeurs bloqués, les messages électroniques provenant de cette adresse IP seront remis aux destinataires utilisant Office 365. Par conséquent, assurez-vous que les messages envoyés à partir de cette adresse IP ne sont pas abusifs ou malveillants. Dans le cas contraire, il est possible que l'adresse IP soit bloquée à nouveau.
     
     > [!NOTE]
-    > La suppression des restrictions peut prendre jusqu’à 1 heure.
+    > Cette opération peut prendre jusqu’à 24 heures ou les résultats peuvent varier considérablement avant la suppression des restrictions.
+    
+Découvrez [Comment empêcher le courrier électronique réel d’être marqué comme courrier indésirable dans office 365](prevent-email-from-being-marked-as-spam.md ) et de [contrôler le courrier indésirable sortant dans Office 365](outbound-spam-controls.md) afin d’empêcher IP d’être en liste de blocage.

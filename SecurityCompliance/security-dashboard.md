@@ -3,7 +3,6 @@ title: Vue d’ensemble du tableau de bord de sécurité
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/19/2019
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +14,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Utilisez le nouveau tableau de bord de sécurité pour consulter l’état de protection contre les menaces d’Office 365, et afficher et agir sur les alertes de sécurité.
-ms.openlocfilehash: 46f11a4e5693cf243ff72acd6d87406c34af247a
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 78e6a67ace757cca9d25086c601ab4b4437c7bf8
+ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077220"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857664"
 ---
 # <a name="security-dashboard"></a>Tableau de bord de sécurité
 
@@ -30,7 +29,7 @@ Le [Centre &amp; de sécurité conformité](go-to-the-securitycompliance-center.
   
 Regardez la vidéo pour obtenir une vue d’ensemble, puis lisez cet article pour en savoir plus.
   
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/3540b1f8-62d2-47fa-a07d-d7ad76f55b0f?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1VV3o]
   
 En fonction de l’abonnement Office 365 de votre organisation, le tableau de bord de sécurité inclut plusieurs widgets, tels que le résumé de la gestion des menaces, le statut de protection contre les menaces, des détections de menaces globales hebdomadaires, des programmes malveillants, etc., comme décrit dans le sections suivantes.
   
@@ -45,10 +44,10 @@ Le widget gestion des menaces explique en un clin d’œil comment votre organis
 
 ![Tableau de bord de sécurité-widget gestion des menaces-Résumé](media/SecDash-ThreatMgmtSummary.png)
 
-Les informations que vous verrez dans le résumé de gestion des menaces dépendent de ce que comprend l’abonnement. Le tableau suivant décrit les informations incluses pour Office 365 entreprise E3 et Office 365 entreprise E5.
+Les informations que vous verrez dans le résumé de gestion des menaces dépendent de ce que comprend l’abonnement. Le tableau suivant décrit les informations incluses pour Office 365 E3 et Office 365 E5.
 
 
-|Office 365 Entreprise E3  |Office 365 Entreprise E5  |
+|Office 365 E3  |Office 365 E5  |
 |---------|---------|
 |Messages malveillants bloqués<br/>Messages d’hameçonnage bloqués<br>Messages signalés par les utilisateurs<br><br><br><br> |Messages malveillants bloqués<br>Messages d’hameçonnage bloqués<br>Messages signalés par les utilisateurs<br>Blocage des programmes malveillants de jour zéro<br>Messages d’hameçonnage avancés détectés<br>URL malveillantes bloquées |
 

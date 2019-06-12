@@ -1,7 +1,7 @@
 ---
 title: Combinaison des stratégies et des protections lorsque le courrier est marqué par un indicateur rouge
 description: Les stratégies appliquées et les actions à effectuer, quand le courrier électronique est marqué comme programme malveillant, courrier indésirable, courrier indésirable à confiance élevée, hameçonnage et en bloc par EOP et/ou ATP.
-keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, ATP, Windows Defender ATP, Office 365 ATP, Azure ATP
+keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, ATP, Microsoft Defender ATP, Office 365 ATP, Azure ATP
 ms.author: tracyp
 author: MSFTTracyp
 manager: laurawi
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 1c2e575a57e1c1118154a912199d9e74cb4ceb4a
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e467910e577df46788763dd15f821c09a741e037
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152706"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852498"
 ---
 # <a name="what-policy-applies-when-multiple-protection-methods-and-detection-scans-run-on-your-email"></a>Quelle stratégie s’applique lorsque plusieurs méthodes de protection et analyses de détection s’exécutent sur votre courrier électronique
 

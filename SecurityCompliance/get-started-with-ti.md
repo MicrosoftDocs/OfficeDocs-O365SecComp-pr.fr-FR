@@ -15,12 +15,12 @@ ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
 description: Découvrez l’enquête et la réponse aux menaces Office 365 et comment commencer.
-ms.openlocfilehash: b003805b5732710df88d45662c2a71d6014640e0
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: 9be8e33be6445dc960c12c308c56bf9afc7fdd12
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408339"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852578"
 ---
 # <a name="get-started-with-threat-investigation-and-response-office-365-advanced-threat-protection-plan-2"></a>Prise en main de l’enquête et de la réponse aux menaces (plan Office 365 Advanced Threat Protection Plan 2)
 
@@ -37,7 +37,7 @@ Les fonctionnalités d’enquête et de réponse aux menaces aident à fournir d
   
 ## <a name="get-acquainted-with-the-threat-dashboard-explorer-and-incidents"></a>Se familiariser avec le tableau de bord, l’Explorateur et les incidents des menaces
 
-Ces fonctionnalités d’enquête et de réponse aux menaces figurent &amp; dans le centre de sécurité conformité, sous la forme d’un ensemble d’outils et de flux de travail de réponse, dont le [tableau de bord des menaces](#threat-dashboard), l’Explorateur de [menaces](#threat-explorer), les [incidents](get-started-with-ti.md#incidents), les [attaques Simulator](attack-simulator.md)et des enquêtes automatiques _AMP_ réponse.
+Ces fonctionnalités d’enquête et de réponse aux menaces figurent &amp; dans le centre de sécurité conformité, sous la forme d’un ensemble d’outils et de flux de travail de réponse, dont le [tableau de bord des menaces](#threat-dashboard), l’Explorateur de [menaces](#threat-explorer), les [incidents](get-started-with-ti.md#incidents), les [attaques Simulator](attack-simulator.md)et des enquêtes automatisées & réponse.
   
 ### <a name="threat-dashboard"></a>Tableau de bord des menaces
 
@@ -96,7 +96,7 @@ Office 365 Threat invesigation and Response Capabilities sont inclus dans Office
   |Utilisation de l' [Explorateur de menaces (et des détections en temps réel)](threat-explorer.md) pour analyser les menaces  <br/> |Administrateur général Office 365  <br/> Administrateur de sécurité (affecté dans le &amp; Centre de sécurité conformité)  <br/> Lecteur de sécurité (affecté dans le &amp; Centre de sécurité conformité)  <br/> |
   |Afficher les incidents (également appelés enquêtes) <br/> Ajouter des messages électroniques à un incident  <br/> |Administrateur général Office 365  <br/> Administrateur de sécurité (affecté dans le &amp; Centre de sécurité conformité)  <br/> Lecteur de sécurité (affecté dans le &amp; Centre de sécurité conformité)  <br/> |
   |Déclencher les actions de messagerie dans un incident  <br/> Rechercher et supprimer des messages électroniques suspects  <br/> |Administrateur général Office 365 ou administrateur de sécurité  <br/> L’un des rôles ci-dessus et la recherche et la purge (affectés &amp; dans le centre de sécurité conformité)  <br/> |
-  |Intégrer Office 365 Advanced Threat Protection Plan 2 à la protection avancée contre les menaces Windows Defender  <br/> Intégrer Office 365 Advanced Threat Protection Plan 2 à un serveur SIEM  <br/> |Administrateur général Office 365  <br/> Administrateur de sécurité (affecté dans le &amp; Centre de sécurité conformité)  <br/> Rôle approprié attribué dans des applications supplémentaires (par exemple, le portail de protection avancée contre les menaces Windows Defender ou un serveur SIEM)  <br/> |
+  |Intégrer Office 365 Advanced Threat Protection Plan 2 à Microsoft Defender ATP  <br/> Intégrer Office 365 Advanced Threat Protection Plan 2 à un serveur SIEM  <br/> |Administrateur général Office 365  <br/> Administrateur de sécurité (affecté dans le &amp; Centre de sécurité conformité)  <br/> Rôle approprié attribué dans des applications supplémentaires (telles que le centre de sécurité Microsoft Defender ou un serveur SIEM)  <br/> |
    
 Pour plus d’informations sur les rôles, les groupes de rôles et les autorisations, consultez [la &amp; rubrique autorisations dans le centre de sécurité conformité Office 365](permissions-in-the-security-and-compliance-center.md).
     
@@ -106,7 +106,7 @@ Pour plus d’informations sur les rôles, les groupes de rôles et les autorisa
     
 - [Rechercher et identifier les courriers électroniques malveillants remis (Office 365 Threat Investigation and Response)](investigate-malicious-email-that-was-delivered.md)
     
-- [Intégrer l’enquête de menace Office 365 et répondre à la protection avancée contre les menaces Windows Defender](integrate-office-365-ti-with-wdatp.md)
+- [Intégration de l’enquête de menace Office 365 et réponse à la protection avancée contre les menaces Microsoft Defender](integrate-office-365-ti-with-wdatp.md)
     
 - [En savoir plus sur les simulateurs d’attaques](attack-simulator.md)
   
