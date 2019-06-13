@@ -100,7 +100,7 @@
 ### [Utiliser le chargement réseau pour importer des fichiers PST chiffrés via RMS](use-network-upload-to-import-rms-encrypted-pst-files.md)
 ### [FAQ sur l’importation de fichiers PST](faqimporting-pst-files-to-office-365.md)
 ### [Archiver des données tierces dans Office 365](archiving-third-party-data.md)
-#### [Utiliser un exemple de connecteur pour archiver des données Facebook dans Office 365 (préversion)](archive-facebook-data-with-sample-connector.md)
+#### [Utiliser un exemple de connecteur pour archiver des données Facebook](archive-facebook-data-with-sample-connector.md)
 #### [Utiliser un exemple de connecteur pour archiver des données Twitter](archive-twitter-data-with-sample-connector.md)
 #### [Collaborer avec un partenaire pour archiver des données tierces](work-with-partner-to-archive-third-party-data.md)
 ## Stocker des données
@@ -153,6 +153,7 @@
 ### [Configurer la stratégie anti-courrier indésirable sortant](configure-the-outbound-spam-policy.md)
 ### [Suppression d’un utilisateur du portail Utilisateurs restreints après l’envoi d’un courrier indésirable](removing-user-from-restricted-users-portal-after-spam.md)
 ### [Seuils de probabilité de courrier indésirable](spam-confidence-levels.md)
+### [Correction du code d’erreur 5.7.7 XX dans Exchange Online](fix-error-code-5-7-7xx-in-exchange-online.md)
 #### [Utilisation des règles de flux de courrier pour définir le seuil de probabilité de courrier indésirable (SCL) dans les messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 #### [Envoi des courriers indésirables, non-courrier indésirable ou des messages d’hameçonnage à Microsoft pour analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)
 #### [Envoi de programmes malveillants et non malveillants à Microsoft pour analyse](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
@@ -204,7 +205,7 @@
 #### [PACM pour SharePoint, OneDrive et Microsoft Teams](atp-for-spo-odb-and-teams.md)
 ## Gérer votre sécurité – PACM après configuration
 ## [Comprendre les dernières campagnes d’attaque grâce aux statistiques de menaces](latest-attack-campaigns.md)
-## [Repérage dans PACM de Microsoft 365](hunting.md)
+## [Repérage dans Microsoft 365](hunting.md)
 ## [Consulter et lire vos rapports de PACM](view-reports-for-atp.md)
 ## [Que sont les pages d’avertissement de liens fiables de PACM](atp-safe-links-warning-pages.md)
 ## [Utiliser les suivis des menaces](threat-trackers.md)
@@ -214,8 +215,8 @@
 ## [Explorateur de menaces (et détections en temps réel)](threat-explorer.md)
 ### [Affichages de l’Explorateur de menaces](threat-explorer-views.md)
 ## Intégration pour renforcer la sécurité
-### [Intégrer Office 365 ATP à Windows Defender - Protection avancée contre les menaces](integrate-office-365-ti-with-wdatp.md)
-### [Intégration SIEM avec Office 365 ATP](siem-integration-with-office-365-ti.md)
+### [Intégrer Office 365 - Protection avancée contre les menaces avec Microsoft Defender ATP](integrate-office-365-ti-with-wdatp.md)
+### [Intégration de SIEM avec Office 365 - Protection avancée contre les menaces](siem-integration-with-office-365-ti.md)
 ## Fonctionnement de la PACM
 ### [Fonctionnement des liens fiables la PAM](how-atp-safe-links-works.md)
 ### [Fonctionnement des pièces jointes fiables de la PAM](how-atp-safe-attachments-works.md)
@@ -484,11 +485,12 @@
 ## [Rechercher des activités eDiscovery dans le journal d’audit](search-for-ediscovery-activities-in-the-audit-log.md)
 
 # Surveiller la sécurité et la conformité
-## [Surveillance et rapports du Centre de sécurité Microsoft 365](monitoring-and-reporting.md)
-### [Surveillance des identités dans Sécurité Microsoft 365 et rapports à ce sujet](monitor-and-report-identities.md)
-### [Surveillance des données dans Sécurité de Microsoft 365](monitor-data.md)
-### [Surveillance des appareils dans Sécurité Microsoft 365](monitor-devices.md)
-### [Surveillance des applications dans Sécurité Microsoft 365](monitor-apps.md)
+## Centre de sécurité Microsoft 365
+### [Surveiller et afficher les rapports](monitoring-and-reporting.md)
+### [Surveillance d’identités et création de rapports](monitor-and-report-identities.md)
+### [Surveillance de données et création de rapports](monitor-data.md)
+### [Surveillance d’appareils et création de rapports](monitor-devices.md)
+### [Surveillance d’applications et création de rapports](monitor-apps.md)
 ## [Stratégies d’alerte](alert-policies.md)
 
 # Flux de messagerie
