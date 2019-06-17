@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les demandes de référentiel sécurisé du client qui vous permettent de contrôler la manière dont un technicien du support technique Microsoft peut accéder à vos données lorsque vous rencontrez un problème.
-ms.openlocfilehash: 2f15201cb4c49a22d7789ffafcdd94b5266bcdd4
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f3cfdec6521cd5fe0bcb7007b27ce128ae3b2a1d
+ms.sourcegitcommit: 62447503300376aa95dd05fb5276f93a9f6a20b6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153836"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "34927577"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Référentiel sécurisé du client dans Office 365
 
@@ -78,7 +78,7 @@ Un administrateur Office 365 peut activer les contrôles de référentiel sécur
 
 1. Accédez à [https://admin.microsoft.com](https://admin.microsoft.com) et connectez-vous avec votre compte professionnel ou scolaire.
 
-2. Cliquez sur **paramètres _GT_ sécurité & confidentialité**.
+2. Cliquez sur **paramètres > sécurité & confidentialité**.
 
     ![Modifier les paramètres du référentiel sécurisé du client dans le centre d’administration](media/CustomerLockbox2.png)
 
@@ -93,7 +93,7 @@ Un administrateur Office 365 peut activer les contrôles de référentiel sécur
 
 1. Accédez à [https://admin.microsoft.com](https://admin.microsoft.com) et connectez-vous avec votre compte professionnel ou scolaire.
 
-2. Cliquez sur **prendre en charge les demandes de référentiel sécurisé du client >**.
+2. Cliquez sur **Support > demandes de référentiel sécurisé du client**.
 
     ![Cliquez sur support, puis sur demandes de référentiel sécurisé du client](media/CustomerLockbox5.png)
 
@@ -111,7 +111,7 @@ Un administrateur Office 365 peut activer les contrôles de référentiel sécur
 
 ## <a name="auditing-customer-lockbox-requests"></a>Audit des demandes de référentiel sécurisé du client 
 
-Les enregistrements d’audit qui correspondent aux demandes de référentiel sécurisé du client sont consignés dans le journal d’audit Office 365 et sont accessibles à l’aide de l' [outil de recherche de journal d’audit](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance) dans le centre de sécurité & conformité d’Office 365. Les actions liées à un client qui accepte ou refusent une demande de référentiel sécurisé client et les actions effectuées par des ingénieurs Microsoft (lorsque les demandes d’accès sont approuvées) sont consignées dans le journal d’audit Office 365. Vous pouvez rechercher et consulter ces enregistrements d’audit.
+Les enregistrements d’audit qui correspondent aux demandes de référentiel sécurisé du client sont consignés dans le journal d’audit Office 365 et sont accessibles à l’aide de l' [outil de recherche de journal d’audit](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance) dans le centre de conformité & Office 365 Security. Les actions liées à un client qui accepte ou refusent une demande de référentiel sécurisé client et les actions effectuées par des ingénieurs Microsoft (lorsque les demandes d’accès sont approuvées) sont consignées dans le journal d’audit Office 365. Vous pouvez rechercher et consulter ces enregistrements d’audit.
 
 > [!NOTE]
 > Vous devez disposer du rôle journaux d’audit en affichage seul ou journaux d’audit dans Exchange Online pour effectuer des recherches dans le journal d’audit Office 365. Pour en savoir plus, reportez-vous à l’article [Effectuer des recherches dans le journal d’audit dans le Centre de sécurité et de conformité Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin).
@@ -124,7 +124,7 @@ Voici comment créer une requête de recherche de journal d’audit pour renvoye
   
 2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
 
-3. Dans le volet gauche du centre de sécurité & Compliance Center, cliquez sur Search **& enquête** > **audit log Search**.
+3. Dans le volet gauche du centre de sécurité & conformité, cliquez sur recherche **&** > **Journal d’audit**de l’enquête Search.
 
     La page **recherche du journal d’audit** s’affiche.
 
@@ -232,7 +232,7 @@ Un administrateur général peut activer et configurer le référentiel sécuris
 
 #### <a name="if-i-approve-a-customer-lockbox-request-what-can-the-engineer-do-and-how-will-i-know-what-the-microsoft-engineer-did"></a>Si j’approuve une demande de référentiel sécurisé de client, qu’est-ce que l’ingénieur peut faire et comment puis-je savoir ce qu’a fait l’ingénieur Microsoft?
 
-Une fois que vous avez approuvé une demande de référentiel sécurisé de client, l’ingénieur Microsoft a accordé ces privilèges nécessaires pour accéder au contenu du client à l’aide d’applets de commande pré-approuvées. Les actions prises par les ingénieurs Microsoft en réponse aux demandes de référentiel sécurisé du client sont consignées dans le journal d’audit du centre 365 de sécurité &.
+Une fois que vous avez approuvé une demande de référentiel sécurisé de client, l’ingénieur Microsoft a accordé ces privilèges nécessaires pour accéder au contenu du client à l’aide d’applets de commande pré-approuvées. Les actions prises par les ingénieurs Microsoft en réponse aux demandes de référentiel sécurisé du client sont consignées dans le journal d’audit du centre de sécurité & Office 365 Security.
 
 #### <a name="how-do-i-know-that-microsoft-follows-the-approval-process"></a>Comment savoir que Microsoft suit le processus d’approbation?
 
@@ -264,7 +264,7 @@ Le flux d’activité du centre de conformité contient les activités de journa
 
 Les demandes de référentiel sécurisé du client ont une durée par défaut de 12 heures. Si vous ne répondez pas à une demande dans un délai de 12 heures, la demande expire.
 
-#### <a name="what-does-microsoft-when-a-customer-rejects-a-customer-lockbox-request"></a>Qu’est-ce que Microsoft lorsqu’un client rejette une demande de référentiel sécurisé client?
+#### <a name="what-does-microsoft-do-when-a-customer-rejects-a-customer-lockbox-request"></a>Qu’est-ce que Microsoft fait lorsqu’un client rejette une demande de référentiel sécurisé client?
 
 Si un client rejette une demande de référentiel sécurisé client, aucun accès au contenu du client n’est effectué. Si un utilisateur de votre organisation continue de présenter un problème de service exigeant que Microsoft accède au contenu client pour résoudre le problème, le problème de service peut persister et Microsoft informe l’utilisateur à ce sujet.
 

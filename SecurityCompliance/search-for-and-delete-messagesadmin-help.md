@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: Les administrateurs peuvent utiliser la cmdlet Search-Mailbox pour faire une recherche dans des boîtes aux lettres utilisateur, puis supprimer des messages d'une boîte aux lettres.
-ms.openlocfilehash: a097b39aa179ed18c3d5426eeeacff204d48ee9b
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1288679c7abb643c020d5b1a2a08ae64b7cb403f
+ms.sourcegitcommit: d20defdcf2ac643f0c8c1f2761b0b7f4f4090e5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158486"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34957416"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>Recherche et suppression de messages - Aide de l’administrateur
   
@@ -48,7 +48,7 @@ Pour plus de sécurité, vous pouvez d'abord copier les messages vers une autre 
     
 - Si vous incluez une requête de recherche (à l'aide du paramètre  *SearchQuery*  ), la cmdlet **Search-Mailbox** renverra au maximum 10 000 éléments dans les résultats de recherche. Ainsi, si vous incluez une requête de recherche, vous devrez peut-être exécuter la commande **Search-Mailbox** plusieurs fois pour supprimer plus de 10 000 éléments. 
     
-- La boîte aux lettres d'archivage de l'utilisateur est également incluse dans la recherche quand vous exécutez la cmdlet **Search-Mailbox**. De même, les éléments de la boîte aux lettres d'archivage principale sont supprimés quand vous utilisez la cmdlet **Search-Mailbox** avec le commutateur  _DeleteContent_. Pour éviter cela, vous pouvez inclure le commutateur  *DoNotIncludeArchive*  . Par ailleurs, nous vous recommandons de ne pas utiliser le commutateur _DeleteContent_ pour supprimer les messages dans les boîtes aux lettres Exchange Online dont l’archivage est automatiquement étendu, car une perte de données inattendue peut se produire. 
+- La boîte aux lettres d'archivage de l'utilisateur est également incluse dans la recherche quand vous exécutez la cmdlet **Search-Mailbox**. De même, les éléments de la boîte aux lettres d'archivage principale sont supprimés quand vous utilisez la cmdlet **Search-Mailbox** avec le commutateur  _DeleteContent_. Pour éviter cela, vous pouvez inclure le commutateur  *DoNotIncludeArchive*  .
     
 ## <a name="search-messages-and-log-the-search-results"></a>Rechercher des messages et enregistrer les résultats de la recherche
 

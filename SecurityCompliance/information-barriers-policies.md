@@ -3,7 +3,7 @@ title: Définir des stratégies de barrière des informations
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/31/2019
+ms.date: 06/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,33 +11,35 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Découvrez comment définir des stratégies pour les barrières d’informations dans Microsoft Teams.
-ms.openlocfilehash: 3ec9d89f22456f00104135013ee6009e8e4824df
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.openlocfilehash: 8d575d0cde4bfec7109cc302f68beaf1040cd894
+ms.sourcegitcommit: eeb51470d8996e93fac28d7f12c6117e2aeb0cf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34668294"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34935946"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>Définir des stratégies pour les barrières d’information (aperçu)
 
+## <a name="overview"></a>Vue d’ensemble
+
 Avec les barrières d’informations, vous pouvez définir des stratégies conçues pour empêcher certains segments d’utilisateurs de communiquer les uns avec les autres ou d’autoriser des segments spécifiques à communiquer uniquement avec certains autres segments. Les stratégies de barrière des informations peuvent aider votre organisation à respecter les normes et réglementations pertinentes de l’industrie et éviter les conflits d’intérêt potentiels. Pour en savoir plus, consultez la rubrique barrières de l' [information (aperçu)](information-barriers.md). 
 
-> [!IMPORTANT]
-> Cet article explique comment planifier, définir, implémenter et gérer les stratégies de barrière des informations. Plusieurs étapes sont impliquées et le flux de travail est divisé en plusieurs parties. Veillez à lire les [conditions préalables](#prerequisites) et l’ensemble du processus avant de commencer à définir (ou à modifier) des stratégies de barrière des informations.
+Cet article explique comment planifier, définir, implémenter et gérer les stratégies de barrière des informations. Plusieurs étapes sont impliquées et le flux de travail est divisé en plusieurs parties. Veillez à lire les [conditions préalables](#prerequisites) et l’ensemble du processus avant de commencer à définir (ou à modifier) des stratégies de barrière des informations.
+
+> [!TIP]
+> Cet article inclut un [exemple de scénario](#example-contosos-departments-segments-and-policies) et un [classeur Excel](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx) téléchargeable pour vous aider à planifier et à définir vos stratégies de barrière des informations.
 
 ## <a name="concepts-of-information-barrier-policies"></a>Concepts des stratégies de barrière des informations
 
-Avant de planifier, de définir et d’implémenter des stratégies de barrière des informations, familiarisez-vous avec les concepts sous-jacents. Avec des barrières d’informations, vous utiliserez des attributs de compte d’utilisateur, des segments, des stratégies de barrière des informations et un processus d’application de stratégie décrit dans cet article. 
+Il est utile de savoir quels sont les concepts sous-jacents des stratégies de barrière des informations:
 
-- Les **attributs de compte d’utilisateur** sont définis dans Azure Active Directory (ou Exchange Online). Ces attributs peuvent inclure le service, la fonction, l’emplacement, le nom de l’équipe, etc. 
+- Les **attributs de compte d’utilisateur** sont définis dans Azure Active Directory (ou Exchange Online). Ces attributs peuvent inclure le service, la fonction, l’emplacement, le nom de l’équipe et d’autres détails du profil de travail. 
 
-- Les **segments** sont définis dans le centre de conformité Office 365 Security & à l’aide d’un **attribut de compte d’utilisateur**sélectionné, par exemple service, fonction, emplacement, nom d’équipe ou tout [attribut pris en charge](information-barriers-attributes.md). La définition de segments n’a pas d’effet sur les utilisateurs; Il définit simplement l’étape de définition des stratégies de barrière des informations, puis leur application.
+- Les **segments** sont des ensembles d’utilisateurs définis dans le centre de conformité & la sécurité d’Office 365 à l’aide d’un **attribut de compte d’utilisateur**sélectionné. (Reportez-vous à la [liste des attributs pris en charge](information-barriers-attributes.md).) 
 
-- Les **stratégies de barrière des informations** sont définies et affectées à des **segments**individuels. Les segments ne seront pas affectés à une stratégie. En outre, il n’est pas possible d’affecter plusieurs stratégies à un seul segment. Lorsque vous définissez des stratégies, vous avez le choix entre deux types de stratégies:
-    - Stratégies qui empêchent un segment de communiquer avec un autre segment
-    - Stratégies qui permettent à un segment de communiquer avec certains autres segments seulement
-
-    Idéalement, vous utiliserez le nombre minimal de stratégies pour vous assurer que votre organisation est conforme aux exigences légales et industrielles.
+- Les **stratégies de barrière des informations** déterminent les limites ou restrictions de communication. Lorsque vous définissez des stratégies de barrière des informations, vous avez le choix entre deux types de stratégies:
+    - Stratégies «bloquer» qui empêchent un segment de communiquer avec un autre segment
+    - Stratégies «autoriser» qui permettent à un segment de communiquer avec certains autres segments seulement
 
 - Une **application de stratégie** est exécutée une fois toutes les stratégies de barrière des informations définies et vous êtes prêt à les appliquer dans votre organisation.
 
@@ -45,102 +47,73 @@ Avant de planifier, de définir et d’implémenter des stratégies de barrière
 
 |Phase    |Ce qui est impliqué  |
 |---------|---------|
-|[Vérifier que les conditions préalables sont remplies](#prerequisites)     |-Vérifiez que votre abonnement inclut des barrières d’informations<br/>-Vérifiez que vous disposez des autorisations nécessaires pour définir/modifier des segments et des stratégies<br/>-Assurez-vous que vos données d’annuaire reflètent la structure de votre organisation<br/>-Vérifier que la recherche dans l’annuaire étendu est activée dans Microsoft teams<br/>-Vérifiez que la journalisation d’audit est activée.<br/>-Utilisez PowerShell pour effectuer les tâches décrites dans cet article (des applets de commande sont fournies, par exemple).<br/>-Fournir le consentement de l’administrateur pour les barrières d’informations dans Microsoft Teams (étapes incluses)          |
+|[Vérifier que les conditions préalables sont remplies](#prerequisites)     |-Vérifiez que vous disposez des [autorisations et des licences requises](information-barriers.md#required-licenses-and-permissions)<br/>-Assurez-vous que l’annuaire de votre organisation inclut des données qui reflètent la structure de votre organisation.<br/>-Activer la recherche dans l’annuaire étendu pour Microsoft teams<br/>-Vérifiez que la journalisation d’audit est activée.<br/>-Utiliser PowerShell (des exemples sont fournis)<br/>-Fournir le consentement de l’administrateur pour Microsoft Teams (étapes incluses)          |
 |[Partie 1: segmenter tous les utilisateurs de votre organisation](#part-1-segment-users)     |-Déterminer les stratégies nécessaires<br/>-Créer une liste de segments à définir<br/>-Identifier les attributs à utiliser<br/>-Définir des segments en fonction de filtres de stratégie        |
 |[Partie 2: définir des stratégies de barrière des informations](#part-2-define-information-barrier-policies)     |-Définir vos stratégies (ne pas appliquer)<br/>-Choisir parmi deux types (bloquer ou autoriser) |
-|[Partie 3: appliquer des stratégies de barrière des informations](#part-3-apply-information-barrier-policies)     |-Définir les stratégies sur le statut actif<br/>-Exécuter l’application de stratégie<br/>-Vérifier l’état de la stratégie         |
-|(Si nécessaire) [Modifier un segment ou une stratégie](#edit-a-segment-or-a-policy)     |-Modifier un segment<br/>-Modifier ou supprimer une stratégie<br/>-Exécuter l’application de stratégie<br/>-Vérifier l’état de la stratégie         |
-|(Si nécessaire) [Résolution des problèmes](information-barriers-troubleshooting.md)|Action lorsque les stratégies ne fonctionnent pas comme prévu|
+|[Partie 3: appliquer des stratégies de barrière des informations](#part-3-apply-information-barrier-policies)     |-Définir les stratégies sur le statut actif<br/>-Exécuter l’application de stratégie<br/>-Afficher le statut de la stratégie         |
+|(Si nécessaire) [Modifier un segment ou une stratégie](#edit-a-segment-or-a-policy)     |-Modifier un segment<br/>-Modifier ou supprimer une stratégie<br/>-Exécuter l’application de stratégie<br/>-Afficher le statut de la stratégie         |
+|(Si nécessaire) [Résolution des problèmes](information-barriers-troubleshooting.md)|Action à effectuer lorsque des choses ne fonctionnent pas comme prévu|
 
 ## <a name="prerequisites"></a>Conditions préalables
 
-**Actuellement, la fonctionnalité de barrière des informations est en**préversion privée. Lorsque ces fonctionnalités sont généralement disponibles, elles sont incluses dans les abonnements, par exemple:
+En plus des [licences et des autorisations requises](information-barriers.md#required-licenses-and-permissions), assurez-vous que les conditions suivantes sont remplies: 
+     
+- **Données d’annuaire**. Assurez-vous que la structure de votre organisation est reflétée dans les données d’annuaire. Pour ce faire, assurez-vous que les attributs de compte d’utilisateur, tels que l’appartenance au groupe, le nom du service, etc., sont correctement renseignés dans Azure Active Directory (ou Exchange Online). Pour en savoir plus, consultez les ressources suivantes:
+  - [Attributs des stratégies de barrière des informations (aperçu)](information-barriers-attributes.md)
+  - [Ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide d’Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+  - [Configurer les propriétés des comptes d'utilisateur avec Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)
 
-- Microsoft 365 E5
-- Office 365 E5
-- Conformité avancée Office 365
-- Microsoft 365 E5 protection des informations et conformité
+- **Recherche dans l’annuaire étendu**. Avant de définir la première stratégie de barrière des informations de votre organisation, vous devez [activer la recherche dans l’annuaire d’étendues dans Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search). Attendez au moins 24 heures après l’activation de la recherche dans l’annuaire d’étendue avant de configurer ou de définir des stratégies de barrière des informations.
 
-Pour plus d’informations, consultez [la rubrique solutions de conformité](https://products.office.com/business/security-and-compliance/compliance-solutions).
+- **Journalisation d’audit**. Pour Rechercher l’état d’une application de stratégie, la journalisation d’audit doit être activée. Nous vous recommandons d’effectuer cette opération avant de commencer à définir des segments ou des stratégies. Pour en savoir plus, consultez la rubrique [activer ou désactiver la recherche dans le journal d’audit Office 365](turn-audit-log-search-on-or-off.md).
 
-### <a name="permissions"></a>Autorisations
+- **PowerShell**. Actuellement, les stratégies de barrière des informations sont définies et gérées dans le centre de conformité Office 365 Security & à l’aide d’applets de commande PowerShell. Bien que plusieurs exemples soient fournis dans cet article, vous devez être familiarisé avec les cmdlets et les paramètres PowerShell. [Connectez-vous au centre de sécurité & conformité d’Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
-Pour définir ou modifier des stratégies de barrière des informations, **vous devez disposer d’un rôle approprié**, comme suit:
-- Administrateur global Microsoft 365 entreprise
-- Administrateur général Office 365
-- Administrateur de conformité
-- IB gestion de la conformité (il s’agit d’un nouveau rôle!)
+- **Consentement de l’administrateur pour les barrières d’informations dans Microsoft teams**. Lorsque vos stratégies sont en place, les barrières d’informations peuvent supprimer des personnes des sessions de conversation auxquelles elles ne sont pas censées se trouver. Cela permet de s’assurer que votre organisation reste conforme aux stratégies et réglementations. Utilisez la procédure suivante pour permettre aux stratégies de barrière des informations de fonctionner comme prévu dans Microsoft Teams. 
 
-Pour en savoir plus sur les rôles et les autorisations, consultez [la rubrique autorisations dans le centre de sécurité & conformité d’Office 365](permissions-in-the-security-and-compliance-center.md).
-       
-### <a name="directory-data"></a>Données d’annuaire
+   1. Exécutez les applets de commande PowerShell suivantes:
 
-Assurez-vous **que la structure de votre organisation est reflétée dans les données d’annuaire**. Pour ce faire, assurez-vous que les attributs de compte d’utilisateur, tels que l’appartenance au groupe, le nom du service, etc., sont correctement renseignés dans Azure Active Directory (ou Exchange Online). Pour en savoir plus, consultez les ressources suivantes:
-- [Attributs des stratégies de barrière des informations (aperçu)](information-barriers-attributes.md)
-- [Ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide d’Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
-- [Configurer les propriétés des comptes d'utilisateur avec Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)
+      ```
+      Login-AzureRmAccount 
+      $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
+      $sp=Get-AzureRmADServicePrincipal -ServicePrincipalName $appId
+      if ($sp -eq $null) { New-AzureRmADServicePrincipal -ApplicationId $appId }
+      Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
+      ```
 
-### <a name="scoped-directory-search"></a>Recherche dans l’annuaire étendu
+   2. Lorsque vous y êtes invité, connectez-vous à l’aide de votre compte professionnel ou scolaire pour Office 365.
 
-**Avant de définir la première stratégie de barrière des informations de votre organisation, vous devez [activer la recherche dans l’annuaire d’étendues dans Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search)**. Attendez au moins 24 heures après l’activation de la recherche dans l’annuaire d’étendue avant de configurer ou de définir des stratégies de barrière des informations.
+   3. Dans la boîte de dialogue **autorisations demandées** , passez en revue les informations, puis choisissez **accepter**.
 
-### <a name="audit-logging"></a>Journalisation d'audit
+Lorsque toutes les conditions préalables sont remplies, passez à la section suivante.
 
-Pour Rechercher l’état d’une application de stratégie, la journalisation d’audit doit être activée. Nous vous recommandons d’effectuer cette opération avant de commencer à définir des segments ou des stratégies. Pour en savoir plus, consultez la rubrique [activer ou désactiver la recherche dans le journal d’audit Office 365](turn-audit-log-search-on-or-off.md).
-
-### <a name="powershell"></a>PowerShell
-
-**Actuellement, les stratégies de barrière des informations sont définies et gérées dans le centre de conformité Office 365 Security & à l’aide**d’applets de commande PowerShell. Bien que plusieurs scénarios et exemples soient fournis dans cet article, vous devez être familiarisé avec les cmdlets et les paramètres PowerShell. 
-
-[Connectez-vous au centre de sécurité & conformité d’Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
-
-### <a name="provide-admin-consent-for-information-barriers-in-microsoft-teams"></a>Fournir le consentement de l’administrateur pour les barrières d’informations dans Microsoft teams
-
-Utilisez la procédure suivante pour permettre aux stratégies de barrière des informations de fonctionner comme prévu dans Microsoft Teams. 
-
-Par exemple, lorsque vos stratégies sont en place, les barrières d’informations peuvent supprimer des personnes de sessions de conversation auxquelles elles ne sont pas censées se trouver. Cela permet de s’assurer que votre organisation reste conforme aux stratégies et réglementations. 
-
-1. Exécutez les applets de commande PowerShell suivantes:
-
-    ```
-    Login-AzureRmAccount 
-    $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
-    $sp=Get-AzureRmADServicePrincipal -ServicePrincipalName $appId
-    if ($sp -eq $null) { New-AzureRmADServicePrincipal -ApplicationId $appId }
-    Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
-    ```
-
-2. Lorsque vous y êtes invité, connectez-vous à l’aide de votre compte professionnel ou scolaire pour Office 365.
-
-3. Dans la boîte de dialogue **autorisations demandées** , passez en revue les informations, puis choisissez **accepter**.
+> [!TIP]
+> Pour vous aider à préparer votre plan, un exemple de scénario est inclus dans cet article. [Consultez la rubrique services, segments et stratégies de contoso](#example-contosos-departments-segments-and-policies).<p>En outre, un classeur Excel téléchargeable est disponible pour vous aider à planifier et à définir vos segments et stratégies (et à créer vos cmdlets PowerShell). [Obtenir le classeur](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx). 
 
 ## <a name="part-1-segment-users"></a>Partie 1: utilisateurs de segment
 
-Pendant cette phase, vous déterminez les stratégies nécessaires, créez une liste de segments à définir, puis définissez vos segments.
+Pendant cette phase, vous déterminez les stratégies de barrière des informations requises, créez une liste de segments à définir, puis définissez vos segments.
 
 ### <a name="determine-what-policies-are-needed"></a>Déterminer les stratégies nécessaires
 
 Considérant les réglementations juridiques et industrielles, qui sont les groupes au sein de votre organisation qui auront besoin de stratégies de barrière des informations? Créer une liste. Existe-t-il des groupes qui ne doivent pas être autorisés à communiquer avec un autre groupe? Existe-t-il des groupes qui doivent être autorisés à communiquer avec un ou deux autres groupes? Réfléchissez aux stratégies dont vous avez besoin en tant que appartenant à l’un des deux groupes suivants:
-- **Stratégies de blocage** qui empêchent un groupe de communiquer avec un autre groupe
-- **Autoriser les stratégies** qui permettent à certains groupes de communiquer avec certains autres groupes seulement.
+- Les stratégies «bloquer» empêchent un groupe de communiquer avec un autre groupe.
+- Les stratégies «autoriser» permettent à un groupe de communiquer avec certains autres groupes spécifiques.
 
-Lorsque vous disposez de la liste initiale des groupes et des stratégies, passez à l’identification des segments dont vous aurez besoin.
-
-(Voir l' [exemple: services de contoso et plan](#contosos-departments-and-plan) dans cet article.)
+Lorsque vous disposez de la liste initiale des groupes et des stratégies, passez à l’identification des segments dont vous aurez besoin. 
 
 ### <a name="identify-segments"></a>Identifier les segments
 
 En plus de votre liste initiale de stratégies, créez une liste de segments pour votre organisation. Chaque utilisateur de votre organisation doit appartenir à un segment, et aucun utilisateur ne doit appartenir à deux ou plusieurs segments. Chaque segment ne peut avoir qu’une seule stratégie de barrière des informations appliquée. 
 
-Déterminez les attributs des données d’annuaire de votre organisation que vous utiliserez pour définir des segments. Vous pouvez utiliser *Department*, *memberOf*ou l’un des attributs pris en charge. Assurez-vous que vous avez sélectionné des valeurs dans l’attribut que vous sélectionnez pour tous les utilisateurs. Pour afficher la liste des attributs pris en charge, reportez-vous à la rubrique [attributs pour les stratégies de barrière des informations (aperçu)](information-barriers-attributes.md).
+Déterminez les attributs des données d’annuaire de votre organisation que vous utiliserez pour définir des segments. Vous pouvez utiliser *Department*, *memberOf*ou l’un des attributs pris en charge. Assurez-vous que vous avez sélectionné des valeurs dans l’attribut que vous sélectionnez pour tous les utilisateurs. [Consultez la liste des attributs pris en charge pour les barrières d’informations (aperçu)](information-barriers-attributes.md).
 
 > [!IMPORTANT]
 > **Avant de passer à la section suivante, assurez-vous que vos données d’annuaire possèdent des valeurs pour les attributs que vous pouvez utiliser pour définir des segments**. Si vos données d’annuaire n’ont pas de valeurs pour les attributs que vous souhaitez utiliser, tous les comptes d’utilisateur doivent être mis à jour pour inclure ces informations avant de passer à des barrières d’informations. Pour obtenir de l’aide, consultez les ressources suivantes:<br/>- [Configurer les propriétés des comptes d’utilisateur avec Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)<br/>- [Ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide d’Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### <a name="define-segments-using-powershell"></a>Définir des segments à l’aide de PowerShell
 
-> [!IMPORTANT]
-> Assurez **-vous que vos segments ne se chevauchent pas**. Chaque utilisateur de votre organisation doit appartenir à un seul segment. Aucun utilisateur ne doit appartenir à deux segments ou plus. Les segments doivent être définis pour tous les utilisateurs de votre organisation. (Voir l' [exemple: segments définis par Contoso](#contosos-defined-segments) dans cet article.)
+La définition de segments n’a pas d’effet sur les utilisateurs; Il définit simplement l’étape de définition des stratégies de barrière des informations, puis leur application.
 
 1. Pour définir un segment d’organisation, utilisez la cmdlet **New-OrganizationSegment** avec le paramètre **UserGroupFilter** qui correspond à l' [attribut](information-barriers-attributes.md) que vous souhaitez utiliser. 
 
@@ -154,22 +127,22 @@ Déterminez les attributs des données d’annuaire de votre organisation que vo
 
     Une fois que vous avez exécuté chaque cmdlet, vous devez voir une liste de détails sur le nouveau segment. Les détails incluent le type du segment, qui a été créé ou modifié pour la dernière fois, et ainsi de suite. 
 
+> [!IMPORTANT]
+> Assurez **-vous que vos segments ne se chevauchent pas**. Chaque utilisateur de votre organisation doit appartenir à un seul segment. Aucun utilisateur ne doit appartenir à deux segments ou plus. Les segments doivent être définis pour tous les utilisateurs de votre organisation. (Voir l' [exemple: segments définis par Contoso](#contosos-defined-segments) dans cet article.)
+
 Une fois que vous avez défini vos segments, passez à la définition des stratégies de barrière des informations.
 
 ## <a name="part-2-define-information-barrier-policies"></a>Partie 2: définir des stratégies de barrière des informations
 
+Déterminez si vous devez empêcher les communications entre certains segments ou limiter les communications à certains segments. Idéalement, vous utiliserez le nombre minimal de stratégies pour vous assurer que votre organisation est conforme aux exigences légales et industrielles.
+
 Avec votre liste de segments d’utilisateurs et les stratégies de barrière des informations que vous souhaitez définir, sélectionnez un scénario, puis suivez les étapes. 
-
-> [!IMPORTANT]
-> Assurez **-vous que lorsque vous définissez des stratégies, vous n’affectez pas plusieurs stratégies à un segment**. Par exemple, si vous définissez une stratégie pour un segment appelé *ventes*, ne définissez pas de stratégie supplémentaire pour les *ventes*. 
-
-Déterminez si vous devez empêcher les communications entre certains segments ou limiter les communications à certains segments. Choisissez parmi les scénarios ci-dessous pour définir vos stratégies.
 
 - [Scénario 1: bloquer les communications entre les segments](#scenario-1-block-communications-between-segments)
 - [Scénario 2: autoriser un segment à communiquer avec un seul autre segment](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment)
 
-> [!NOTE]
-> Lorsque vous définissez des stratégies de barrière des informations, veillez à définir ces stratégies sur état inactif jusqu’à ce que vous soyez prêt à les appliquer. La définition (ou modification) de stratégies n’affecte pas les utilisateurs tant que ces stratégies n’ont pas le statut actif, puis appliquées.
+> [!IMPORTANT]
+> Assurez **-vous que lorsque vous définissez des stratégies, vous n’affectez pas plusieurs stratégies à un segment**. Par exemple, si vous définissez une stratégie pour un segment appelé *ventes*, ne définissez pas de stratégie supplémentaire pour les *ventes*.<p>De plus, lorsque vous définissez des stratégies de barrière des informations, veillez à définir ces stratégies sur état inactif jusqu’à ce que vous soyez prêt à les appliquer. La définition (ou modification) de stratégies n’affecte pas les utilisateurs tant que ces stratégies n’ont pas le statut actif, puis appliquées.
 
 (Voir l' [exemple: stratégies de barrière des informations de contoso](#contosos-information-barrier-policies) dans cet article.)
 
@@ -255,11 +228,11 @@ Les stratégies de barrière des informations ne sont pas appliquées tant que v
 
     Après une demi-heure environ, les stratégies sont appliquées, utilisateur par utilisateur, pour votre organisation. Si votre organisation est volumineuse, cette opération peut prendre 24 heures (ou plus). (En règle générale, il faut environ une heure pour traiter les comptes d’utilisateur 5 000.)
 
-## <a name="verify-status-of-user-accounts-segments-policies-or-policy-application"></a>Vérifier l’état des comptes d’utilisateur, des segments, des stratégies ou de l’application de stratégie
+## <a name="view-status-of-user-accounts-segments-policies-or-policy-application"></a>Afficher l’état des comptes d’utilisateurs, des segments, des stratégies ou de l’application de stratégie
 
-À l’aide de PowerShell, vous pouvez vérifier l’état des comptes d’utilisateurs, des segments, des stratégies et de l’application de stratégie, comme décrit dans le tableau suivant.
+Avec PowerShell, vous pouvez afficher l’état des comptes d’utilisateur, des segments, des stratégies et de l’application de stratégie, comme décrit dans le tableau suivant.
 
-|Pour vérifier cela  |Procédez comme suit  |
+|Pour afficher cette  |Procédez comme suit  |
 |---------|---------|
 |Comptes d’utilisateur     |Utilisez la cmdlet **Get-InformationBarrierRecipientStatus** avec les paramètres d’identité. <p>Syntaxe`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>Vous pouvez utiliser n’importe quelle valeur qui identifie de façon unique chaque utilisateur, comme le nom, l’alias, le nom unique, le nom de domaine canonique, l’adresse de messagerie ou le GUID. <p>Exemple : `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>Dans cet exemple, nous faisons référence à deux comptes d’utilisateur dans Office 365: *meganb* pour *Megan*, et *Alexw* pour *Alex*. <p>(Vous pouvez également utiliser cette applet de commande pour un seul `Get-InformationBarrierRecipientStatus -Identity <value>`utilisateur:) <p>Cette applet de commande retourne des informations sur les utilisateurs, telles que les valeurs d’attribut et les stratégies de barrière des informations qui sont appliquées.|
 |Pertinents     |Utilisez la cmdlet **Get-OrganizationSegment** .<p>Syntaxe`Get-OrganizationSegment` <p>Cette opération permet d’afficher la liste de tous les segments définis pour votre organisation.         |
