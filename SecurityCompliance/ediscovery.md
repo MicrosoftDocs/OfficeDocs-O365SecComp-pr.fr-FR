@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Office 365 offre un certain nombre d’outils eDiscovery que vous pouvez utiliser pour rechercher et conserver du contenu se trouvant dans différents emplacements, comme des boîtes aux lettres Exchange, des sites SharePoint et OneDrive entreprise, des groupes Office 365 et des conversations Skype entreprise.
-ms.openlocfilehash: 300de1a767e9ab3f6be81974a704506d367d68b4
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 80d22cf45412727c32a3557ac6b04ca68c9d17ce
+ms.sourcegitcommit: 3ffd188a7fd547ae343ccf14361c1e4300f88de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153316"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "35059522"
 ---
 # <a name="ediscovery-in-office-365"></a>eDiscovery dans Office 365
 
-La découverte électronique, ou eDiscovery, est le processus d'identification et de livraison d'informations électroniques qui peuvent être utilisées comme preuves dans des affaires juridiques. Vous pouvez utiliser la fonctionnalité eDiscovery dans Office 365 pour rechercher du contenu dans les boîtes aux lettres Exchange Online, les groupes Office 365, Microsoft Teams, SharePoint Online et OneDrive entreprise, ainsi que les conversations Skype entreprise. Vous pouvez rechercher des boîtes aux lettres et des sites dans la même recherche de découverte électronique à l’aide de l’outil de recherche de contenu dans le centre de sécurité & Compliance Center. Et vous pouvez utiliser des cas eDiscovery dans le centre de sécurité & Compliance Center pour identifier, mettre en attente et exporter du contenu se trouvant dans des boîtes aux lettres et des sites. Si votre organisation a un abonnement Office 365 E5, vous pouvez analyser davantage de contenu à l’aide d’Office 365 Advanced eDiscovery.
+La découverte électronique, ou eDiscovery, est le processus d'identification et de livraison d'informations électroniques qui peuvent être utilisées comme preuves dans des affaires juridiques. Vous pouvez utiliser la fonctionnalité eDiscovery dans Office 365 pour rechercher du contenu dans les boîtes aux lettres Exchange Online, les groupes Office 365, Microsoft Teams, SharePoint Online et OneDrive entreprise, ainsi que les conversations Skype entreprise. Vous pouvez rechercher des boîtes aux lettres et des sites dans la même recherche de découverte électronique à l’aide de l’outil de recherche de contenu du centre de sécurité & conformité. Et vous pouvez utiliser des cas eDiscovery dans le centre de conformité & Security pour identifier, mettre en attente et exporter du contenu trouvé dans les boîtes aux lettres et les sites. Si votre organisation a un abonnement Office 365 E5, vous pouvez analyser davantage de contenu à l’aide d’Office 365 Advanced eDiscovery.
   
 Office 365 fournit les outils eDiscovery suivants:
   
@@ -35,18 +35,18 @@ Office 365 fournit les outils eDiscovery suivants:
 ## <a name="content-search-in-the-security--compliance-center"></a>Recherche de contenu dans le centre de sécurité & conformité
 <a name="contentsearch"> </a>
 
-Le tableau suivant contient des liens vers des rubriques qui vous aideront à utiliser l’outil de recherche de contenu dans le centre de sécurité & Compliance Center.
+Le tableau suivant contient des liens vers des rubriques qui vous aideront à utiliser l’outil de recherche de contenu dans le centre de sécurité & conformité.
   
 |**Rubrique**|**Description**|
 |:-----|:-----|
-|[Exécuter une recherche de contenu dans le centre de sécurité & Compliance Center](run-a-content-search-in-the-security-and-compliance-center.md) <br/> |Découvrez comment utiliser l’outil de recherche de contenu pour rechercher des boîtes aux lettres, des dossiers publics, des groupes Office 365, Microsoft Teams, des sites SharePoint Online, un lecteur pour les sites d’entreprise et des conversations Skype entreprise dans votre organisation Office 365 dans une seule recherche.  <br/> |
+|[Exécuter une recherche de contenu dans le centre de sécurité & conformité](run-a-content-search-in-the-security-and-compliance-center.md) <br/> |Découvrez comment utiliser l’outil de recherche de contenu pour rechercher des boîtes aux lettres, des dossiers publics, des groupes Office 365, Microsoft Teams, des sites SharePoint Online, un lecteur pour les sites d’entreprise et des conversations Skype entreprise dans votre organisation Office 365 dans une seule recherche.  <br/> |
 |[Requêtes par mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md) <br/> |Découvrez les propriétés de messagerie et de fichier et les conditions de recherche que vous pouvez utiliser pour rechercher du contenu dans les boîtes aux lettres et les sites de votre organisation Office 365.  <br/> |
 |[Afficher les statistiques de mot clé pour les résultats de recherche de contenu](view-keyword-statistics-for-content-search.md) <br/> |Découvrez comment utiliser les statistiques de recherche pour afficher et comparer les statistiques d’une ou de plusieurs recherches de contenu, et pour configurer les recherches nouvelles et existantes afin de renvoyer des statistiques pour chaque mot clé dans la requête de recherche.  <br/> |
 |[Modifier en bloc les recherches de contenu dans le centre de sécurité & conformité](bulk-edit-content-searches.md) <br/> |Découvrez comment modifier en bloc les requêtes de recherche et les emplacements de contenu d’une ou de plusieurs recherches de contenu.  <br/> |
 |[Exporter les résultats de la recherche à partir du centre de sécurité & conformité](export-search-results.md) <br/> |Découvrez comment exporter les résultats d’une recherche de contenu.  <br/> |
 |[Augmentation de la vitesse de téléchargement lors de l’exportation des résultats de recherche eDiscovery à partir d’Office 365](increase-download-speeds-when-exporting-ediscovery-results.md) <br/> |Découvrez comment configurer le Registre Windows sur votre ordinateur afin d’augmenter la vitesse de téléchargement avec l’exportation des résultats de la recherche de contenu.  <br/> |
 |[Exporter un rapport de recherche de contenu](export-a-content-search-report.md) <br/> |Découvrez comment télécharger le rapport d’exportation sans avoir à exporter les résultats de la recherche.  <br/> |
-|[Limites de recherche de contenu dans le centre de sécurité & Compliance Center](limits-for-content-search.md) <br/> |Découvrez les limites de l’outil de recherche de contenu, telles que le nombre maximal de recherches que vous pouvez exécuter simultanément.  <br/> |
+|[Limites de recherche de contenu dans le centre de sécurité & conformité](limits-for-content-search.md) <br/> |Découvrez les limites de l’outil de recherche de contenu, telles que le nombre maximal de recherches que vous pouvez exécuter simultanément.  <br/> |
 |[Éléments non indexés dans la recherche de contenu](partially-indexed-items-in-content-search.md) <br/> |Découvrez les éléments non indexés dans Exchange et SharePoint que vous pouvez inclure dans les statistiques estimées des résultats de la recherche lors de l’exécution d’une recherche. Vous pouvez également inclure des éléments non indexés lorsque vous exportez des résultats de recherche.  <br/> |
 |[Différences entre les résultats de recherche de découverte électronique estimée et réelle dans Office 365](differences-between-estimated-and-actual-ediscovery-search-results.md) <br/> |Découvrez les raisons pour lesquelles il peut y avoir des différences entre le nombre de résultats estimés de recherche et le nombre d’éléments réels exportés.  <br/> |
 |[Déduplication dans les résultats de recherche eDiscovery](de-duplication-in-ediscovery-search-results.md) <br/> |Découvrez la fonctionnalité facultative de déduplication que vous pouvez activer lorsque vous exportez des messages électroniques Exchange qui sont les résultats d’une recherche de contenu.  <br/> |
@@ -64,14 +64,14 @@ Le tableau suivant contient des liens vers des rubriques qui vous aideront à ut
 ## <a name="ediscovery-cases-in-the-security--compliance-center"></a>Cas de découverte électronique dans le centre de sécurité & conformité
 <a name="ediscoverycases"> </a>
 
-Le tableau suivant contient des liens vers des rubriques qui vous aideront à utiliser des cas eDiscovery dans le centre de sécurité & Compliance Center. Les cas d’utilisation pour ajouter des membres qui peuvent accéder au cas, mettre en attente des emplacements de contenu pertinents pour le cas, associer plusieurs recherches de contenu avec le cas et exporter les résultats de la recherche à partir du cas.
+Le tableau suivant contient des liens vers des rubriques qui vous aideront à utiliser des cas eDiscovery dans le centre de sécurité & conformité. Les cas d’utilisation pour ajouter des membres qui peuvent accéder au cas, mettre en attente des emplacements de contenu pertinents pour le cas, associer plusieurs recherches de contenu avec le cas et exporter les résultats de la recherche à partir du cas.
   
 |**Rubrique**|**Description**|
 |:-----|:-----|
-|[Gérer les cas eDiscovery dans le centre de sécurité & Compliance Center](manage-ediscovery-cases.md) <br/> |Découvrez comment créer et gérer des cas eDiscovery dans le centre de sécurité & Compliance Center.  <br/> |
-|[Attribuer des autorisations eDiscovery dans le Office??? 365 Security & Compliance Center](assign-ediscovery-permissions.md) <br/> |Découvrez comment attribuer des autorisations eDiscovery dans le centre de sécurité & Compliance Center. Vous pouvez attribuer des autorisations pour permettre aux utilisateurs de créer des cas eDiscovery, de créer des suspensions associées à un cas eDiscovery, d’exécuter des recherches de contenu, d’afficher un aperçu des résultats de recherche et d’exporter des résultats de recherche.  <br/> |
+|[Gérer les cas de découverte électronique dans le centre de sécurité & conformité](manage-ediscovery-cases.md) <br/> |Découvrez comment créer et gérer des cas eDiscovery dans le centre de sécurité & conformité.  <br/> |
+|[Attribuer des autorisations eDiscovery dans le centre de conformité Office 365 Security &](assign-ediscovery-permissions.md) <br/> |Découvrez comment attribuer des autorisations eDiscovery dans le centre de sécurité & conformité. Vous pouvez attribuer des autorisations pour permettre aux utilisateurs de créer des cas eDiscovery, de créer des suspensions associées à un cas eDiscovery, d’exécuter des recherches de contenu, d’afficher un aperçu des résultats de recherche et d’exporter des résultats de recherche.  <br/> |
 |[Création d’un rapport sur les suspensions dans les cas de découverte électronique dans Office 365](create-a-report-on-holds-in-ediscovery-cases.md) <br/> |Découvrez comment utiliser le script Windows PowerShell dans cet article pour générer un rapport qui contient des informations sur toutes les suspensions associées à des cas eDiscovery dans le centre de sécurité & Compliance Center.  <br/> |
-|[Utiliser un script pour ajouter des utilisateurs à une conservation dans un cas eDiscovery dans le centre de sécurité & Compliance Center](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) <br/> |Découvrez comment utiliser le script Windows PowerShell dans cet article pour ajouter rapidement les boîtes aux lettres et les sites OneDrive entreprise pour une liste d’utilisateurs à une nouvelle conservation associée à un cas eDiscovery dans le centre de sécurité & Compliance Center.  <br/> |
+|[Utiliser un script pour ajouter des utilisateurs à une conservation dans un cas eDiscovery dans le centre de sécurité & conformité](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) <br/> |Découvrez comment utiliser le script Windows PowerShell dans cet article pour ajouter rapidement les boîtes aux lettres et les sites OneDrive entreprise pour une liste d’utilisateurs à une nouvelle conservation associée à un cas eDiscovery dans le centre de sécurité & Compliance Center.  <br/> |
 |[Rechercher des activités eDiscovery dans le journal d’audit Office 365](search-for-ediscovery-activities-in-the-audit-log.md) <br/> |Découvrez comment rechercher dans le journal d’audit Office 365 des activités liées à la création et à la gestion des cas eDiscovery et des recherches de contenu.  <br/> |
    
 [Revenir au début](ediscovery.md#top)

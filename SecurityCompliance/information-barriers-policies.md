@@ -3,20 +3,20 @@ title: Définir des stratégies de barrière des informations
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/13/2019
-ms.audience: ITPro
+ms.date: 06/18/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Découvrez comment définir des stratégies pour les barrières d’informations dans Microsoft Teams.
-ms.openlocfilehash: 8d575d0cde4bfec7109cc302f68beaf1040cd894
-ms.sourcegitcommit: eeb51470d8996e93fac28d7f12c6117e2aeb0cf0
+ms.openlocfilehash: 89faf404233f5862df6c95660b38f2886d84462a
+ms.sourcegitcommit: 3ffd188a7fd547ae343ccf14361c1e4300f88de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34935946"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "35059532"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>Définir des stratégies pour les barrières d’information (aperçu)
 
@@ -48,7 +48,7 @@ Il est utile de savoir quels sont les concepts sous-jacents des stratégies de b
 |Phase    |Ce qui est impliqué  |
 |---------|---------|
 |[Vérifier que les conditions préalables sont remplies](#prerequisites)     |-Vérifiez que vous disposez des [autorisations et des licences requises](information-barriers.md#required-licenses-and-permissions)<br/>-Assurez-vous que l’annuaire de votre organisation inclut des données qui reflètent la structure de votre organisation.<br/>-Activer la recherche dans l’annuaire étendu pour Microsoft teams<br/>-Vérifiez que la journalisation d’audit est activée.<br/>-Utiliser PowerShell (des exemples sont fournis)<br/>-Fournir le consentement de l’administrateur pour Microsoft Teams (étapes incluses)          |
-|[Partie 1: segmenter tous les utilisateurs de votre organisation](#part-1-segment-users)     |-Déterminer les stratégies nécessaires<br/>-Créer une liste de segments à définir<br/>-Identifier les attributs à utiliser<br/>-Définir des segments en fonction de filtres de stratégie        |
+|[Partie 1: segmenter les utilisateurs de votre organisation](#part-1-segment-users)     |-Déterminer les stratégies nécessaires<br/>-Créer une liste de segments à définir<br/>-Identifier les attributs à utiliser<br/>-Définir des segments en fonction de filtres de stratégie        |
 |[Partie 2: définir des stratégies de barrière des informations](#part-2-define-information-barrier-policies)     |-Définir vos stratégies (ne pas appliquer)<br/>-Choisir parmi deux types (bloquer ou autoriser) |
 |[Partie 3: appliquer des stratégies de barrière des informations](#part-3-apply-information-barrier-policies)     |-Définir les stratégies sur le statut actif<br/>-Exécuter l’application de stratégie<br/>-Afficher le statut de la stratégie         |
 |(Si nécessaire) [Modifier un segment ou une stratégie](#edit-a-segment-or-a-policy)     |-Modifier un segment<br/>-Modifier ou supprimer une stratégie<br/>-Exécuter l’application de stratégie<br/>-Afficher le statut de la stratégie         |
@@ -104,12 +104,12 @@ Lorsque vous disposez de la liste initiale des groupes et des stratégies, passe
 
 ### <a name="identify-segments"></a>Identifier les segments
 
-En plus de votre liste initiale de stratégies, créez une liste de segments pour votre organisation. Chaque utilisateur de votre organisation doit appartenir à un segment, et aucun utilisateur ne doit appartenir à deux ou plusieurs segments. Chaque segment ne peut avoir qu’une seule stratégie de barrière des informations appliquée. 
+En plus de votre liste initiale de stratégies, créez une liste de segments pour votre organisation. Les utilisateurs qui seront inclus dans les stratégies de barrière des informations doivent appartenir à un segment et aucun utilisateur ne doit appartenir à deux ou plusieurs segments. Chaque segment ne peut avoir qu’une seule stratégie de barrière des informations appliquée. 
 
-Déterminez les attributs des données d’annuaire de votre organisation que vous utiliserez pour définir des segments. Vous pouvez utiliser *Department*, *memberOf*ou l’un des attributs pris en charge. Assurez-vous que vous avez sélectionné des valeurs dans l’attribut que vous sélectionnez pour tous les utilisateurs. [Consultez la liste des attributs pris en charge pour les barrières d’informations (aperçu)](information-barriers-attributes.md).
+Déterminez les attributs des données d’annuaire de votre organisation que vous utiliserez pour définir des segments. Vous pouvez utiliser *Department*, *memberOf*ou l’un des attributs pris en charge. Assurez-vous que vous avez sélectionné des valeurs dans l’attribut que vous sélectionnez pour les utilisateurs. [Consultez la liste des attributs pris en charge pour les barrières d’informations (aperçu)](information-barriers-attributes.md).
 
 > [!IMPORTANT]
-> **Avant de passer à la section suivante, assurez-vous que vos données d’annuaire possèdent des valeurs pour les attributs que vous pouvez utiliser pour définir des segments**. Si vos données d’annuaire n’ont pas de valeurs pour les attributs que vous souhaitez utiliser, tous les comptes d’utilisateur doivent être mis à jour pour inclure ces informations avant de passer à des barrières d’informations. Pour obtenir de l’aide, consultez les ressources suivantes:<br/>- [Configurer les propriétés des comptes d’utilisateur avec Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)<br/>- [Ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide d’Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+> **Avant de passer à la section suivante, assurez-vous que vos données d’annuaire possèdent des valeurs pour les attributs que vous pouvez utiliser pour définir des segments**. Si vos données d’annuaire n’ont pas de valeurs pour les attributs que vous souhaitez utiliser, les comptes d’utilisateur doivent être mis à jour pour inclure ces informations avant de passer à des barrières d’informations. Pour obtenir de l’aide, consultez les ressources suivantes:<br/>- [Configurer les propriétés des comptes d’utilisateur avec Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)<br/>- [Ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide d’Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### <a name="define-segments-using-powershell"></a>Définir des segments à l’aide de PowerShell
 
@@ -128,7 +128,7 @@ La définition de segments n’a pas d’effet sur les utilisateurs; Il définit
     Une fois que vous avez exécuté chaque cmdlet, vous devez voir une liste de détails sur le nouveau segment. Les détails incluent le type du segment, qui a été créé ou modifié pour la dernière fois, et ainsi de suite. 
 
 > [!IMPORTANT]
-> Assurez **-vous que vos segments ne se chevauchent pas**. Chaque utilisateur de votre organisation doit appartenir à un seul segment. Aucun utilisateur ne doit appartenir à deux segments ou plus. Les segments doivent être définis pour tous les utilisateurs de votre organisation. (Voir l' [exemple: segments définis par Contoso](#contosos-defined-segments) dans cet article.)
+> Assurez **-vous que vos segments ne se chevauchent pas**. Chaque utilisateur qui sera affecté par les barrières d’informations doit appartenir à un seul segment (et un seul). Aucun utilisateur ne doit appartenir à deux segments ou plus. (Voir l' [exemple: segments définis par Contoso](#contosos-defined-segments) dans cet article.)
 
 Une fois que vous avez défini vos segments, passez à la définition des stratégies de barrière des informations.
 
