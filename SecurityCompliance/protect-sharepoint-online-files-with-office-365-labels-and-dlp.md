@@ -3,7 +3,7 @@ title: Protéger les fichiers SharePoint Online avec des étiquettes de rétenti
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/29/2019
+ms.date: 06/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Résumé : appliquez des étiquettes de rétention et des stratégies DLP à des sites d’équipe SharePoint Online, avec différents niveaux de protection des informations.'
-ms.openlocfilehash: 118911f6430c9ae79dec1fa4a32cd0ba8fa536da
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 72912cce6c6856b048df420a8d449d3d710ed40e
+ms.sourcegitcommit: 3ffd188a7fd547ae343ccf14361c1e4300f88de0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156896"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "35059552"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Protéger les fichiers SharePoint Online avec des étiquettes de rétention et la protection contre la perte de données (DLP)
 
@@ -167,7 +167,7 @@ Suivez ces étapes pour configurer une stratégie DLP qui avertit les utilisate
     
 Voici le résultat de votre configuration pour les sites d’équipe SharePoint Online sensibles.
   
-![Stratégie DLP pour un site d’équipe SharePoint Online isolé utilisant l’étiquette de rétention Sensible.](media/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
+![Stratégie DLP pour un site d’équipe SharePoint Online isolé utilisant l’étiquette de rétention Sensible](media/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
   
 Utilisez ces étapes pour configurer une stratégie de protection contre la perte de données qui bloque les utilisateurs quand ils partagent un document sur un site d’équipe SharePoint Online hautement confidentiel à l’extérieur de l’organisation.
   
@@ -205,7 +205,7 @@ Utilisez ces étapes pour configurer une stratégie de protection contre la pert
     
 16. Cliquez sur **OK**.
     
-17. Dans le volet Office **Que faire en cas de détection d’informations sensibles ?**, cliquez sur **Suivant**.
+17. Dans le volet **Que faire en cas de détection d’informations sensibles ?**, sous **Détecter les cas où une quantité spécifique d’informations sensibles sont partagées en même temps**, cliquez sur **Restreindre l’accès ou chiffrer le contenu**, puis cliquez sur **Suivant**.
     
 18. Dans le volet **Voulez-vous activer la stratégie ou d’abord effectuer des tests ?**, cliquez sur **Oui, l’activer maintenant**, puis cliquez sur **Suivant**.
     
@@ -213,7 +213,7 @@ Utilisez ces étapes pour configurer une stratégie de protection contre la pert
     
 Voici le résultat de votre configuration pour les sites d’équipe SharePoint Online hautement confidentiels.
   
-![Stratégie DLP pour un site d’équipe SharePoint Online isolé utilisant l’étiquette de rétention Hautement confidentiel.](media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
+![Stratégie DLP pour un site d’équipe SharePoint Online isolé utilisant l’étiquette de rétention Hautement confidentiel](media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
   
 ## <a name="next-step"></a>Étape suivante
 
