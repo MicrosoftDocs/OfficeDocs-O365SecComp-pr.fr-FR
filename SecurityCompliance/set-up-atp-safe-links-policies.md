@@ -15,17 +15,17 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configurez des stratégies de liens fiables pour protéger votre organisation contre les liens malveillants dans les fichiers Word, Excel, PowerPoint et Visio, ainsi que dans les messages électroniques.
-ms.openlocfilehash: fd67562955e14bf5d94280ad6bc8afcd72bcbeb5
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 505508771ae1e630d7d34fde9ee1525d19bd5039
+ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077230"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35113258"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configuration des stratégies de liens approuvés Office 365 ATP
 
 > [!IMPORTANT]
-> Cet article est destiné aux clients Office 365 entreprise. Si vous utilisez Outlook.com, Office 365 Home ou Office 365 Personal, et que vous recherchez des informations sur les liens fiables dans Outlook, consultez [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Cet article est destiné aux clients professionnels qui disposent d' [Office 365 Advanced Threat Protection](office-365-atp.md). Si vous êtes un utilisateur à domicile et que vous recherchez des informations sur les liens fiables dans Outlook, consultez la rubrique [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Les [liens fiables ATP](atp-safe-links.md), une fonctionnalité d' [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), peuvent vous aider à protéger votre organisation contre les liens malveillants utilisés dans le hameçonnage et les autres attaques. Si vous disposez des [autorisations nécessaires pour le centre de sécurité &amp; conformité Office 365](permissions-in-the-security-and-compliance-center.md), vous pouvez configurer des stratégies de liens fiables ATP afin de vous assurer que lorsque des utilisateurs cliquent sur des adresses Web (URL), votre organisation est protégée. Vos stratégies de liens fiables ATP peuvent être configurées pour analyser les URL dans les messages électroniques et les URL des documents Office.
   
@@ -122,7 +122,7 @@ Les options de stratégie par défaut s’appliquent à tous les membres de votr
 |Cette option  |Effectue cette action  |
 |---------|---------|
 | **Bloquer les URL suivantes** <br/>    | Permet à votre organisation d’avoir une liste personnalisée d’URL qui sont automatiquement bloquées. Lorsque les utilisateurs cliquent sur une URL de cette liste, ils sont dirigés vers une [page d’avertissement](atp-safe-links-warning-pages.md) expliquant pourquoi l’URL est bloquée. Pour plus d’informations, consultez [la rubrique Configurer une liste d’URL bloquées personnalisées à l’aide des liens de sécurité ATP Office 365](set-up-a-custom-blocked-urls-list-wtih-atp.md). |
-| **Office 365 ProPlus, Office pour iOS et Android** <br/>    | Lorsque cette option est sélectionnée, la protection des liens fiables ATP est appliquée aux URL dans les fichiers Word, Excel et PowerPoint sur Windows ou Mac OS, les documents Office sur iOS ou les appareils Android, Visio 2016 sur Windows et Office Online (Word Online, PowerPoint Online, Excel Online, et OneNote Online), à condition que l’utilisateur s’est connecté à Office 365. |
+| **Office 365 ProPlus, Office pour iOS et Android** <br/>    | Lorsque cette option est sélectionnée, la protection des liens fiables ATP est appliquée aux URL dans les fichiers Word, Excel et PowerPoint sur Windows ou Mac OS, les documents Office sur iOS ou les appareils Android, Visio 2016 sur Windows et les versions Web des applications Office (Word, PowerPoint, Excel et OneNote), à condition que l’utilisateur s’est connecté à Office 365. |
 | **Ne pas suivre lorsque les utilisateurs cliquent sur les liens fiables ATP** <br/>  | Lorsque cette option est sélectionnée, les données des URL dans les documents Word, Excel, PowerPoint et Visio ne sont pas stockées.  <br/> |
 |**Ne pas autoriser les utilisateurs à cliquer sur les liens fiables ATP vers l’URL d’origine** <br/> |Lorsque cette option est sélectionnée, les utilisateurs ne peuvent pas passer une [page d’avertissement](atp-safe-links-warning-pages.md) à une URL qui est considérée comme malveillante.  <br/> |
 

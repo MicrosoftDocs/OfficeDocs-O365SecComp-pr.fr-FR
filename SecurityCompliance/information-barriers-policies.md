@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Découvrez comment définir des stratégies pour les barrières d’informations dans Microsoft Teams.
-ms.openlocfilehash: fb162e380fa467cf3e832bd7bbdafcde136b1db6
-ms.sourcegitcommit: 087cf1a022b13c46e207270d6837f09a9752c972
+ms.openlocfilehash: fd091ce213159363a11d9dce378e38f55e132c89
+ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/20/2019
-ms.locfileid: "35083862"
+ms.locfileid: "35113248"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>Définir des stratégies pour les barrières d’information (aperçu)
 
@@ -134,7 +134,7 @@ Une fois que vous avez défini vos segments, passez à la définition des strat�
 
 ### <a name="using-equals-and-not-equals-in-segment-definitions"></a>Utilisation de «égal à» et «non égal à» dans les définitions de segment
 
-Dans le premier exemple ci-dessus, nous avons défini un segment qui inclut la logique, *Department est égal à HR*. Vous pouvez également définir des segments à l’aide d’un paramètre «différent de», comme indiqué dans l’exemple suivant:
+Dans le premier exemple ci-dessus, nous avons défini un segment de ce type: «Department Equals HR». Ce segment comprenait un paramètre «égal à». Vous pouvez également définir des segments à l’aide d’un paramètre «différent de», comme indiqué dans l’exemple suivant:
 
 Syntaxe`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`
 
