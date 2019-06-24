@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à seulement quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou seulement au contenu remplissant certaines conditions.
-ms.openlocfilehash: 43948106c69f2a49ce36631acc9d14365d8a2eb9
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 8abb14550df526d702854e43ae1e25496bf390d4
+ms.sourcegitcommit: c603a07d24c4c764bdcf13f9354b3b4b7a76f656
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156966"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "35131392"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -78,11 +78,14 @@ Le précédent s’applique au contenu qui existe lorsque la stratégie de réte
   
 Notez qu’un utilisateur reçoit un message d’erreur si un autre utilisateur tente de supprimer une bibliothèque, une liste, un dossier ou un site soumis à une stratégie de rétention. Un utilisateur peut supprimer un dossier si tout d’abord ils déplacent ou suppriment les fichiers dans le dossier qui sont soumis à la stratégie. Notez également que la bibliothèque de conservation est créée uniquement lorsque le premier élément doit être copié dans la bibliothèque-pas lorsque vous créez la stratégie de rétention. Par conséquent, pour tester votre stratégie, vous devez d’abord modifier ou supprimer un document dans un site soumis à la stratégie, puis accédez à la bibliothèque de conservation pour afficher la copie conservée.
   
-![Diagramme du flux de rétention dans SharePoint et OneDrive](media/858702f8-5a09-4464-86d0-3b16fed800f3.png)
+![Diagramme de cycle de vie de contenu dans SharePoint et OneDrive](Retention_Diagram_of_retention_flow_in_sites.png)
   
 Lorsqu’une stratégie de rétention est affectée à un compte OneDrive ou à un site SharePoint, le contenu suit l’un des deux chemins suivants :
   
-1. **Si le contenu est modifié ou supprimé** pendant la période de rétention, une copie du contenu d’origine tel qu’il était lorsque la stratégie de rétention a été attribuée est créée dans la bibliothèque de conservation et de préservation des documents. Ici, un travail du minuteur s’exécute régulièrement et identifie les éléments dont la période de rétention a expiré, et ces éléments sont supprimés définitivement dans les sept jours suivant la fin de la période de rétention. 
+1. **Si le contenu est modifié ou supprimé** pendant la période de rétention, une copie du contenu d’origine tel qu’il existait lors de l’attribution de la stratégie de rétention est créée dans la bibliothèque de conservation et de préservation des documents. Ici, un travail de minuteur s’exécute régulièrement et identifie les éléments dont la période de rétention a expiré, et ces éléments sont déplacés vers le second niveau de la Corbeille où ils sont ensuite supprimés définitivement dans un délai de 93 jours. Notez que la corbeille second niveau n’est pas visible par les utilisateurs finaux (seule la corbeille premier niveau l’est), mais les administrateurs de collection de sites peuvent afficher et restaurer du contenu à partir de cet emplacement.
+
+    > [!NOTE]
+    > Nous avons récemment modifié la manière dont le contenu est supprimé de la bibliothèque de conservation. Pour éviter toute perte de données par inadvertance, nous ne supprimons plus définitivement le contenu de la bibliothèque de conservation. Au lieu de cela, nous supprimons définitivement du contenu de la corbeille de façon à ce que tout le contenu de la bibliothèque de conservation soit désormais transmis par le biais de la corbeille second niveau.
     
 2. **Si le contenu n’est pas modifié ou supprimé** pendant la période de rétention, il est déplacé vers la Corbeille premier niveau à la fin de la période de rétention. Si un utilisateur supprime le contenu à partir de là ou vide cette Corbeille (également appelé purge), le document est déplacé vers la Corbeille second niveau. Une période de rétention de 93 jours s’étend sur les corbeilles premier niveau et second niveau. À la fin des 93 jours, le document est définitivement supprimé de son emplacement, la Corbeille premier niveau ou second niveau. Notez que la Corbeille n’est pas indexée et que, par conséquent, les recherches n’y trouvent pas de contenu. Cela signifie qu’une conservation eDiscovery ne trouve aucun contenu à conserver dans la Corbeille. 
     
@@ -102,7 +105,7 @@ Si un utilisateur quitte votre organisation et que sa boîte aux lettres est inc
   
 Lorsqu’une stratégie de rétention est affectée à une boîte aux lettres ou à un dossier public, le contenu suit l’un des deux chemins suivants :
   
-1. **Si l’élément est modifié ou supprimé définitivement** par l’utilisateur (par MAJ + SUPPR ou supprimé du dossier Éléments supprimés) pendant la période de rétention, l’élément est déplacé (ou copié, dans le cas d’une modification) vers le dossier Éléments récupérables. Ici, un processus s’exécute régulièrement et identifie les éléments dont la période de rétention a expiré, et ces éléments sont supprimés définitivement dans les 14 jours suivant la fin de la période de rétention. Notez que le paramètre par défaut est de 14 jours, mais qu’il peut être configuré sur 30 jours. 
+1. **Si l’élément est modifié ou supprimé définitivement** par l’utilisateur (par MAJ + SUPPR ou supprimé du dossier Éléments supprimés) pendant la période de rétention, l’élément est déplacé (ou copié, dans le cas d’une modification) vers le dossier Éléments récupérables. Ici, un processus s’exécute régulièrement et identifie les éléments dont la période de rétention a expiré, et ces éléments sont supprimés définitivement dans les 14 jours suivant la fin de la période de rétention. Notez que le paramètre par défaut est de 14 jours, mais qu’il peut être configuré sur 30 jours.
     
 2. **Si l’élément n’est pas modifié ou supprimé** pendant la période de rétention, le même processus s’exécute régulièrement sur tous les dossiers dans la boîte aux lettres et identifie les éléments dont la période de rétention a expiré, et ces éléments sont supprimés définitivement dans les 14 jours suivant la fin de la période de rétention. Notez que le paramètre par défaut est de 14 jours, mais qu’il peut être configuré sur 30 jours. 
     
@@ -260,7 +263,8 @@ Une stratégie de rétention qui s’applique à Teams peut utiliser le [Verroui
 À l’aide de PowerShell, vous pouvez exclure des types spécifiques d’éléments Exchange d’une stratégie de rétention. Par exemple, vous pouvez exclure des messages vocaux, des conversations par messagerie instantanée et d’autre contenu Skype Entreprise Online dans les boîtes aux lettres. Vous pouvez également exclure des éléments de calendrier, de note et de tâche. Cette fonctionnalité est disponible uniquement à l’aide de PowerShell ; elle n’est pas disponible dans l’interface utilisateur lorsque vous créez une stratégie de rétention.
   
 Pour ce faire, utilisez le paramètre `ExcludedItemClasses` des cmdlets `New-RetentionComplianceRule` et `Set-RetentionComplianceRule`. Pour obtenir plus d’informations sur PowerShell, consultez la section [Trouver les cmdlets PowerShell pour les stratégies de rétention](#find-the-powershell-cmdlets-for-retention-policies) indiquée ci-après.
-  
+
+
 ## <a name="locking-a-retention-policy"></a>Verrouillage d’une stratégie de rétention
 Certaines organisations doivent respecter des règles définies par des organismes de réglementation, comme la règle 17a-4 de la SEC (Securities and Exchange Commission), stipulant qu’après l’activation d’une stratégie de rétention, celle-ci ne peut pas être désactivée ni rendue moins restrictive. Grâce au verrouillage de conservation, vous pouvez verrouiller la stratégie afin que personne ne puisse la désactiver ni la rendre moins restrictive, pas même l’administrateur.
   
@@ -294,6 +298,24 @@ Enfin, pour placer un Verrouillage de Conservation sur la stratégie de rétenti
 
 ![Stratégie verrouillée avec tous les paramètres affichés dans PowerShell](media/retention-policy-preservation-lock-locked-policy.PNG)
   
+## <a name="releasing-a-retention-policy"></a>Publication d’une stratégie de rétention
+
+Vous pouvez désactiver ou supprimer une stratégie de rétention à tout moment. Lorsque vous procédez de la sorte, le contenu SharePoint ou OneDrive conservé n’est pas immédiatement supprimé définitivement. Au lieu de cela, pour éviter la perte accidentelle de données, il existe une période de grâce de 30 jours pendant laquelle l’expiration du contenu de cette stratégie ne se produit pas dans la bibliothèque de conservation de conservation, afin que vous puissiez restaurer tout contenu à partir de cet emplacement, le cas échéant. Vous pouvez également réactiver la stratégie de rétention pendant la période de grâce et aucun contenu ne sera supprimé pour cette stratégie. Vous pouvez configurer cette période à l’aide de PowerShell.
+
+Tout d’abord,[se connecter au Centre de Conformité et Sécurité Office 365 PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771).
+
+Puis exécutez ce script PowerShell. Vous pouvez définir une valeur comprise entre 0-100 jours à la propriété `ip_tenantGracePeriodInDays`dans les paramètres de l’abonnement client. Si vous configurez cette valeur sur 0, il n’y a pas de période de grâce et aucune stratégie de rétention ne sera publiée immédiatement. 
+
+`
+$siteSubscription = Get-SPSiteSubscription -Identity 
+$siteSubScriptionId 
+$siteSubSettingsMgr = [Microsoft.SharePoint.SPSiteSubscriptionSettingsManager]::Local
+$properties = $siteSubSettingsMgr.GetProperties($siteSubscription)
+$properties.SetValue("ip_tenantGracePeriodInDays",  30)
+`
+
+Cette période de grâce de 30 jours dans SharePoint et OneDrive correspond à un délai de 30 jours dans Exchange. Pour des informations supplémentaires, consultez [Gestion des boîtes aux lettres avec période de grâce](https://docs.microsoft.com/fr-FR/office365/securitycompliance/identify-a-hold-on-an-exchange-online-mailbox#managing-mailboxes-on-delay-hold).
+
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Principes de rétention et priorité
 
 Il est possible, voire même probable, que le contenu fasse l’objet de plusieurs stratégies de rétention, chacune avec une action (conservation, suppression ou les deux) et une période de rétention différentes. Laquelle est prioritaire ? Au plus haut niveau, sachez que le contenu conservé par une stratégie ne peut pas être supprimé définitivement par une autre stratégie.
