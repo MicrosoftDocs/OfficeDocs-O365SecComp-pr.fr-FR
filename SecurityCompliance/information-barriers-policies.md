@@ -3,7 +3,7 @@ title: Définir des stratégies de barrière des informations
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/21/2019
+ms.date: 06/24/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Découvrez comment définir des stratégies pour les barrières d’informations dans Microsoft Teams.
-ms.openlocfilehash: 4f63d79f59741f74d2ac8167a8cd86717c6f9ec4
-ms.sourcegitcommit: c603a07d24c4c764bdcf13f9354b3b4b7a76f656
+ms.openlocfilehash: f6a570675130410acc702ef9f8ca99bf87b7501b
+ms.sourcegitcommit: 7c48ce016fa9f45a3813467f7c5a2fd72f9b8f49
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "35131378"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203733"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>Définir des stratégies pour les barrières d’information (aperçu)
 
@@ -29,20 +29,6 @@ Cet article explique comment planifier, définir, implémenter et gérer les str
 > [!TIP]
 > Cet article inclut un [exemple de scénario](#example-contosos-departments-segments-and-policies) et un [classeur Excel](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx) téléchargeable pour vous aider à planifier et à définir vos stratégies de barrière des informations.
 
-## <a name="concepts-of-information-barrier-policies"></a>Concepts des stratégies de barrière des informations
-
-Il est utile de savoir quels sont les concepts sous-jacents des stratégies de barrière des informations:
-
-- Les **attributs de compte d’utilisateur** sont définis dans Azure Active Directory (ou Exchange Online). Ces attributs peuvent inclure le service, la fonction, l’emplacement, le nom de l’équipe et d’autres détails du profil de travail. 
-
-- Les **segments** sont des ensembles d’utilisateurs définis dans le centre de conformité & la sécurité d’Office 365 à l’aide d’un **attribut de compte d’utilisateur**sélectionné. (Reportez-vous à la [liste des attributs pris en charge](information-barriers-attributes.md).) 
-
-- Les **stratégies de barrière des informations** déterminent les limites ou restrictions de communication. Lorsque vous définissez des stratégies de barrière des informations, vous avez le choix entre deux types de stratégies:
-    - Les stratégies «bloquer» empêchent un segment de communiquer avec un autre segment.
-    - Les stratégies «autoriser» permettent à un segment de communiquer avec certains autres segments seulement.
-
-- Une **application de stratégie** est exécutée une fois toutes les stratégies de barrière des informations définies et vous êtes prêt à les appliquer dans votre organisation.
-
 ## <a name="the-work-flow-at-a-glance"></a>Flux de travail en un clin d’œil
 
 |Phase    |Ce qui est impliqué  |
@@ -51,7 +37,7 @@ Il est utile de savoir quels sont les concepts sous-jacents des stratégies de b
 |[Partie 1: segmenter les utilisateurs de votre organisation](#part-1-segment-users)     |-Déterminer les stratégies nécessaires<br/>-Créer une liste de segments à définir<br/>-Identifier les attributs à utiliser<br/>-Définir des segments en fonction de filtres de stratégie        |
 |[Partie 2: définir des stratégies de barrière des informations](#part-2-define-information-barrier-policies)     |-Définir vos stratégies (ne pas appliquer)<br/>-Choisir parmi deux types (bloquer ou autoriser) |
 |[Partie 3: appliquer des stratégies de barrière des informations](#part-3-apply-information-barrier-policies)     |-Définir les stratégies sur le statut actif<br/>-Exécuter l’application de stratégie<br/>-Afficher le statut de la stratégie         |
-|(Si nécessaire) [Modifier un segment ou une stratégie](#edit-a-segment-or-a-policy)     |-Modifier un segment<br/>-Modifier ou supprimer une stratégie<br/>-Exécuter l’application de stratégie<br/>-Afficher le statut de la stratégie         |
+|(Si nécessaire) [Modifier un segment ou une stratégie](information-barriers-edit-segments-policies.md.md)    |-Modifier un segment<br/>-Modifier ou supprimer une stratégie<br/>-Réexécuter l’application de stratégie<br/>-Afficher le statut de la stratégie         |
 |(Si nécessaire) [Résolution des problèmes](information-barriers-troubleshooting.md)|Action à effectuer lorsque des choses ne fonctionnent pas comme prévu|
 
 ## <a name="prerequisites"></a>Conditions préalables
@@ -113,38 +99,44 @@ Déterminez les attributs des données d’annuaire de votre organisation que vo
 
 ### <a name="define-segments-using-powershell"></a>Définir des segments à l’aide de PowerShell
 
-La définition de segments n’a pas d’effet sur les utilisateurs; Il définit simplement l’étape de définition des stratégies de barrière des informations, puis leur application.
-
-Pour définir un segment d’organisation, utilisez la cmdlet **New-OrganizationSegment** avec le paramètre **UserGroupFilter** qui correspond à l' [attribut](information-barriers-attributes.md) que vous souhaitez utiliser.
-
-Syntaxe`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`
-
-Exemple : `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
-
-Dans cet exemple, un segment appelé *HR* est défini à l’aide de *HR*, une valeur dans l’attribut *Department* . La partie «-EQ» de l’applet de commande fait référence à «égal».
-
-Répétez cette procédure pour chaque segment que vous souhaitez définir.
-
-Une fois que vous avez exécuté chaque cmdlet, vous devez voir une liste de détails sur le nouveau segment. Les détails incluent le type du segment, qui a été créé ou modifié pour la dernière fois, et ainsi de suite. 
-
 > [!IMPORTANT]
 > Assurez **-vous que vos segments ne se chevauchent pas**. Chaque utilisateur qui sera affecté par les barrières d’informations doit appartenir à un seul segment (et un seul). Aucun utilisateur ne doit appartenir à deux segments ou plus. (Voir l' [exemple: segments définis par Contoso](#contosos-defined-segments) dans cet article.)
 
-Une fois que vous avez défini vos segments, passez à la définition des stratégies de barrière des informations.
+La définition de segments n’a pas d’effet sur les utilisateurs; Il définit simplement l’étape de définition des stratégies de barrière des informations, puis leur application.
+
+1. Utilisez la cmdlet **New-OrganizationSegment** avec le paramètre **UserGroupFilter** qui correspond à l' [attribut](information-barriers-attributes.md) que vous souhaitez utiliser.
+    
+    Syntaxe`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`
+    
+    Exemple : `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
+    
+    Dans cet exemple, un segment appelé *HR* est défini à l’aide de *HR*, une valeur dans l’attribut *Department* . La partie **-EQ** de l’applet de commande fait référence à «Equals». (Vous pouvez également utiliser **-** ne pour signifier «différent de». Voir [using «Equals» et «not Equals» dans définitions de segment](#using-equals-and-not-equals-in-segment-definitions).)
+
+    Une fois que vous avez exécuté chaque cmdlet, vous devez voir une liste de détails sur le nouveau segment. Les détails incluent le type du segment, qui a été créé ou modifié pour la dernière fois, et ainsi de suite. 
+
+2. Répétez cette procédure pour chaque segment que vous souhaitez définir.
+
+Une fois que vous avez défini vos segments, passez à la [définition des stratégies de barrière des informations](#part-2-define-information-barrier-policies).
 
 ### <a name="using-equals-and-not-equals-in-segment-definitions"></a>Utilisation de «égal à» et «non égal à» dans les définitions de segment
 
-Dans le premier exemple ci-dessus, nous avons défini un segment de ce type: «Department Equals HR». Ce segment comprenait un paramètre «égal à». Vous pouvez également définir des segments à l’aide d’un paramètre «différent de», comme indiqué dans l’exemple suivant:
+Dans l’exemple suivant, nous définissons un segment de la manière suivante: «Department est égal à HR». 
 
-Syntaxe`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`
+**Exemple** : `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
 
-Exemple : `New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"`
+Notez que la définition de segment inclut un paramètre «égal à» désigné comme **-EQ**. 
 
-Dans cet exemple, nous avons défini un segment appelé NotSales qui inclut toutes les personnes qui ne sont pas dans les ventes. La partie «-ne» de l’applet de commande fait référence à «non égal à».
+Vous pouvez également définir des segments à l’aide d’un paramètre «différent de», indiqué comme **-** ne, comme le montre l’exemple suivant:
 
-De plus, vous pouvez définir un segment à l’aide des paramètres «égal à» et «différent de».
+**Syntaxe**:`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`
 
-Exemple : `New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" and "Position -ne 'Temporary'"`
+**Exemple** : `New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"`
+
+Dans cet exemple, nous avons défini un segment appelé *NotSales* qui inclut toutes les personnes qui ne sont pas dans les *ventes*. La partie **-** ne de l’applet de commande fait référence à «différent de».
+
+En plus de définir des segments à l’aide de «égal à» ou «différent de», vous pouvez définir un segment à l’aide des paramètres «égal à» et «différent de».
+
+**Exemple** : `New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" and "Position -ne 'Temporary'"`
 
 Dans cet exemple, nous avons défini un segment appelé *LocalFTE* qui inclut des personnes qui se trouvent localement et dont les positions ne sont pas répertoriées comme *temporaires*.
 
@@ -250,117 +242,6 @@ Avec PowerShell, vous pouvez afficher l’état des comptes d’utilisateur, des
 |Application de stratégie de barrière des informations la plus récente     | Utilisez la cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p>Syntaxe`Get-InformationBarrierPoliciesApplicationStatus`<p>    Cela permet d’afficher des informations indiquant si l’application de stratégie a été exécutée, si elle a échoué ou est en cours d’exécution.       |
 |Toutes les applications de stratégie de barrière des informations|Utilisant`Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>Cela permet d’afficher des informations indiquant si l’application de stratégie a été exécutée, si elle a échoué ou est en cours d’exécution.|
 
-## <a name="stop-a-policy-application"></a>Arrêter une application de stratégie
-
-Si, après avoir commencé à appliquer des stratégies de barrière des informations, vous souhaitez arrêter l’application de ces stratégies, utilisez la procédure suivante. N’oubliez pas que le processus doit durer environ 30-35 minutes.
-
-1. Pour afficher l’état de l’application de stratégie de barrière des informations la plus récente, utilisez la cmdlet **Get-InformationBarrierPoliciesApplicationStatus** .
-
-    Syntaxe`Get-InformationBarrierPoliciesApplicationStatus`
-
-    Notez le GUID de l’application.
-
-2. Utilisez la cmdlet **Stop-InformationBarrierPoliciesApplication** avec un paramètre Identity.
-
-    Syntaxe`Stop-InformationBarrierPoliciesApplication -Identity GUID`
-
-    Exemple : `Stop-InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1`
-
-    Dans cet exemple, nous arrêtons l’application des stratégies de barrière des informations.
-
-## <a name="edit-a-segment-or-a-policy"></a>Modifier un segment ou une stratégie
-
-### <a name="edit-a-segment"></a>Modifier un segment
-
-1. Pour afficher tous les segments existants, utilisez la cmdlet **Get-OrganizationSegment** .
-    
-    Syntaxe`Get-OrganizationSegment`
-
-    Vous verrez une liste de segments et des détails pour chacune d’elles, comme le type de segment, sa valeur UserGroupFilter, l’auteur ou la dernière modification, GUID, etc.
-
-    > [!TIP]
-    > Imprimez ou enregistrez votre liste de segments pour référence ultérieure. Par exemple, si vous souhaitez modifier un segment, vous devez connaître son nom ou identifier la valeur (utilisée avec le paramètre Identity).
-
-2. Pour modifier un segment, utilisez la cmdlet **Set-OrganizationSegment** avec le paramètre **Identity** et les détails pertinents. 
-
-    Syntaxe`Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"`
-
-    Exemple : `Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"`
-
-    Dans cet exemple, pour le segment qui a le GUID *c96e0837-C232-4A8A-841e-ef45787d8fcd*, nous avons mis à jour le nom du service en «hrdept».
-
-Une fois que vous avez terminé de modifier les segments de votre organisation, vous pouvez passer à [définir](#part-2-define-information-barrier-policies) ou [modifier](#edit-a-policy) des stratégies de barrière des informations.
-
-### <a name="edit-a-policy"></a>Modifier une stratégie
-
-1. Pour afficher la liste des stratégies de barrière des informations actuelles, utilisez la cmdlet **Get-InformationBarrierPolicy** .
-
-    Syntaxe`Get-InformationBarrierPolicy`
-
-    Dans la liste des résultats, identifiez la stratégie à modifier. Notez le GUID et le nom de la stratégie.
-
-2. Utilisez la cmdlet **Set-InformationBarrierPolicy** avec un paramètre **Identity** et spécifiez les modifications que vous souhaitez effectuer.
-
-    Exemple: Supposons qu’une stratégie a été définie pour empêcher le segment de *recherche* de communiquer avec les segments de *ventes* et de *marketing* . La stratégie a été définie à l’aide de cette applet de commande:`New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
-    
-    Supposons que nous voulons la modifier afin que les membres du segment de *recherche* puissent uniquement communiquer avec des personnes dans le segment *RH* . Pour effectuer cette modification, nous utilisons cette applet de commande:`Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
-
-    Dans cet exemple, nous avons modifié «SegmentsBlocked» en «SegmentsAllowed» et spécifié le segment *HR* .
-
-3. Lorsque vous avez terminé de modifier une stratégie, veillez à appliquer vos modifications. (Voir [appliquer des stratégies de barrière des informations](#part-3-apply-information-barrier-policies).)
-
-### <a name="remove-a-policy"></a>Supprimer une stratégie
-
-1. Pour afficher la liste des stratégies de barrière des informations actuelles, utilisez la cmdlet **Get-InformationBarrierPolicy** .
-
-    Syntaxe`Get-InformationBarrierPolicy`
-
-    Dans la liste des résultats, identifiez la stratégie à supprimer. Notez le GUID et le nom de la stratégie. Assurez-vous que la stratégie est définie sur état inactif.
-
-2. Utilisez la cmdlet **Remove-InformationBarrierPolicy** avec un paramètre Identity.
-
-    Syntaxe`Remove-InformationBarrierPolicy -Identity GUID`
-
-    Exemple: Supposons que nous voulons supprimer une stratégie qui a le GUID *43c37853-EA10-4b90-A23D-ab8c93772471*. Pour ce faire, nous utilisons cette applet de commande:
-    
-    `Remove-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471`
-
-    Lorsque vous y êtes invité, confirmez la modification.
-
-3. Répétez les étapes 1-2 pour chaque stratégie que vous souhaitez supprimer.
-
-4. Lorsque vous avez terminé de supprimer des stratégies, appliquez vos modifications. Pour ce faire, utilisez l’applet de commande **Start-InformationBarrierPoliciesApplication** .
-
-    Syntaxe`Start-InformationBarrierPoliciesApplication`
-
-    Les modifications sont appliquées, utilisateur par utilisateur, pour votre organisation. Si votre organisation est volumineuse, cette opération peut prendre 24 heures (ou plus).
-
-### <a name="set-a-policy-to-inactive-status"></a>Définir une stratégie sur état inactif
-
-1. Pour afficher la liste des stratégies de barrière des informations actuelles, utilisez la cmdlet **Get-InformationBarrierPolicy** .
-
-    Syntaxe`Get-InformationBarrierPolicy`
-
-    Dans la liste des résultats, identifiez la stratégie que vous souhaitez modifier (ou supprimer). Notez le GUID et le nom de la stratégie.
-
-2. Pour définir l’état de la stratégie sur inactive, utilisez la cmdlet **Set-InformationBarrierPolicy** avec un paramètre Identity et le paramètre State défini sur inactive.
-
-    Syntaxe`Set-InformationBarrierPolicy -Identity GUID -State Inactive`
-
-    `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive`
-
-    Dans cet exemple, nous définissons une stratégie de barrière des informations qui a un GUID *43c37853-EA10-4b90-A23D-ab8c9377247* à un état inactif.
-
-3. Pour appliquer vos modifications, utilisez l’applet de commande **Start-InformationBarrierPoliciesApplication** .
-
-    Syntaxe`Start-InformationBarrierPoliciesApplication`
-
-    Les modifications sont appliquées, utilisateur par utilisateur, pour votre organisation. Si votre organisation est volumineuse, cette opération peut prendre 24 heures (ou plus). (En règle générale, il faut environ une heure pour traiter les comptes d’utilisateur 5 000.)
-
-À ce stade, une ou plusieurs stratégies de barrière des informations sont définies sur l’état inactif. À partir de là, vous pouvez effectuer l’une des opérations suivantes:
-- Conservez-la telle quelle (une stratégie définie sur l’état inactif n’a aucun effet sur les utilisateurs)
-- [Modifier une stratégie](#edit-a-policy) 
-- [Supprimer une stratégie](#remove-a-policy)
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>Exemple: services, segments et stratégies de contoso
 
@@ -414,6 +295,8 @@ Une fois les segments et les stratégies définis, contoso applique les stratég
 Une fois cette configuration terminée, contoso est conforme aux exigences légales et industrielles.
 
 ## <a name="related-articles"></a>Articles connexes
+
+[Modifier ou supprimer des stratégies de barrière des informations (aperçu)](information-barriers-edit-segments-policies.md.md)
 
 [Obtenir une vue d’ensemble des barrières d’informations](information-barriers.md)
 
