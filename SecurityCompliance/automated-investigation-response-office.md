@@ -3,7 +3,7 @@ title: Recherche et réponse automatisées (AIR) avec Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/25/2019
+ms.date: 06/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Découvrez les fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection.
-ms.openlocfilehash: bb992a4ebd9bf10f2659929bab4357117ea1c254
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 4d611d9549ed3f5cda06274ea9209cdc6350ba7b
+ms.sourcegitcommit: bac1b5be5db381e6f8d8f652cff1f8ef4d7f6330
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852618"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35233331"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>Recherche et réponse automatisées (AIR) avec Office 365
 
@@ -37,7 +37,8 @@ Dans la version initiale d’AIR en avril 2019, les alertes générées à parti
 3. Messages électroniques contenant des programmes malveillants supprimés après la remise *
 4. Messages électroniques contenant des URL d’hameçonnage supprimées après la remise *
 
-***Remarque**: ces alertes ont reçu une sévérité «informatif» dans les stratégies d’alerte respectives dans le centre de sécurité & conformité et les notifications par courrier électronique sont désactivées. Ces éléments peuvent être activés par le biais de la configuration de la stratégie d’alerte.
+> [!NOTE]
+> Ces alertes ont reçu une sévérité «informatif» dans les stratégies d’alerte respectives dans le centre de sécurité & conformité avec notifications par courrier électronique désactivées. Ces éléments peuvent être activés par le biais de la configuration de la stratégie d’alerte.
 
 Pour afficher les alertes, dans le centre de sécurité & conformité, sélectionnez **alertes** > **afficher les alertes**. Sélectionnez une alerte pour afficher ses détails, puis, à partir de là, utilisez le lien **consulter l’enquête** pour accéder à l' [enquête](#investigation-graph)correspondante. Notez que les alertes d’information sont masquées par défaut dans l’affichage des alertes. Pour les afficher, vous devez modifier le filtrage des alertes de manière à inclure des alertes d’information.
 
@@ -56,18 +57,14 @@ Les règles de sécurité que vous obtenez avec AIR sont conçues pour aborder l
 
 Dans le cadre de l’AIR, les règles de sécurité sont déployées en phases.
 
-- **Phase 1 (avril 2019)**: les règles incluent des recommandations pour les actions que les administrateurs de la sécurité examinent et approuvent. 
+- **Phase 1 (avril 2019)**: les règles incluent des recommandations pour les actions que les administrateurs de la sécurité examinent et approuvent. La phase 1 inclut les règles suivantes:
+    - Message hameçon signalé par l’utilisateur
+    - URL cliquez sur modifier le verdict 
+    - Détection de programmes malveillants après la livraison (programmes malveillants ZAP)
+    - Hameçonnage détecté après la livraison ZAP (hameçon ZAP)
+    - Enquêtes manuelles par courrier électronique (à l’aide de l’Explorateur de menaces)
 
-- **Phase 2 (post-juin 2019)**: améliorations des manifestes, et les administrateurs de sécurité ont la possibilité de configurer des règles de sécurité pour effectuer automatiquement certaines actions sans intervention administrative.
-
-La phase 1 inclut les règles suivantes:
-- Message hameçon signalé par l’utilisateur
-- URL cliquez sur modifier le verdict 
-- Détection de programmes malveillants après la livraison (programmes malveillants ZAP)
-- Hameçonnage détecté après la livraison ZAP (hameçon ZAP)
-- Enquêtes manuelles par courrier électronique (à l’aide de l’Explorateur de menaces)
-
-Plusieurs autres règles sont prévues pour la phase 2.
+- **Phase 2 (deuxième semestre de 2019)**: plusieurs nouvelles règles et manifestes améliorés, ainsi que la possibilité pour les administrateurs de sécurité de configurer des règles de sécurité pour effectuer des actions automatiquement sans interaction administrative. 
 
 ### <a name="playbooks-include-investigation-and-recommendations"></a>Les règles incluent une enquête et des recommandations
 
