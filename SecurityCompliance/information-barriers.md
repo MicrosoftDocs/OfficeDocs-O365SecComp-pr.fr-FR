@@ -3,20 +3,20 @@ title: Vue d’ensemble des barrières de l’information
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/13/2019
-ms.audience: ITPro
+ms.date: 06/26/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Utilisez les barrières relatives aux informations pour garantir la conformité de la communication à l’aide de Microsoft teams au sein de votre organisation.
-ms.openlocfilehash: a2c202d08f1de60f92f13b2ac4c2b9d3c7f900e8
-ms.sourcegitcommit: eeb51470d8996e93fac28d7f12c6117e2aeb0cf0
+ms.openlocfilehash: 6565fc28d70ac6ff9a6f4df6edc75b89d19ae29a
+ms.sourcegitcommit: 1c254108c522d0cb44023565268b5041d07748aa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34935936"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35279472"
 ---
 # <a name="information-barriers-preview"></a>Barrières des informations (aperçu)
 
@@ -34,7 +34,7 @@ Les barrières pour les informations sont maintenant en avant-première à parti
 Pour tous ces exemples de scénarios (et plus), des stratégies de barrière des informations peuvent être définies pour empêcher ou autoriser les communications dans Microsoft Teams. De telles stratégies peuvent empêcher les personnes d’appeler ou de converser avec celles qu’ils ne doivent pas utiliser, ou d’autoriser les utilisateurs à communiquer uniquement avec des groupes spécifiques dans Microsoft Teams. Avec des stratégies de barrière des informations en vigueur, chaque fois que des utilisateurs couverts par ces stratégies tentent de communiquer avec d’autres personnes dans Microsoft Teams, des vérifications sont effectuées pour empêcher (ou autoriser) la communication (comme défini par les stratégies de barrière des informations). Pour en savoir plus sur l’expérience utilisateur avec des barrières d’informations, consultez la rubrique [barrières relatives aux informations dans Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
 
 > [!NOTE]
-> Les barrières d’informations ne s’appliquent pas aux communications de messagerie ou au partage de fichiers via SharePoint Online ou OneDrive.
+> Les barrières d’informations ne s’appliquent pas aux communications de messagerie ou au partage de fichiers via SharePoint Online ou OneDrive. En outre, les barrières de l’information sont indépendantes des [limites de conformité](set-up-compliance-boundaries.md).
 
 ## <a name="required-licenses-and-permissions"></a>Licences et autorisations requises
 
@@ -55,6 +55,20 @@ Pour [définir ou modifier des stratégies de barrière des informations](inform
 - Administrateur des barrières de l’information
 
 Vous devez être familiarisé avec les applets de commande PowerShell pour définir, valider ou modifier des stratégies de barrière des informations. Bien que nous fournissons plusieurs exemples d’applets de commande PowerShell dans les [procédures](information-barriers-policies.md), vous devez connaître les détails supplémentaires, tels que les paramètres, pour votre organisation.
+
+## <a name="concepts-of-information-barrier-policies"></a>Concepts des stratégies de barrière des informations
+
+Il est utile de savoir quels sont les concepts sous-jacents des stratégies de barrière des informations:
+
+- Les **attributs de compte d’utilisateur** sont définis dans Azure Active Directory (ou Exchange Online). Ces attributs peuvent inclure le service, la fonction, l’emplacement, le nom de l’équipe et d’autres détails du profil de travail. 
+
+- Les **segments** sont des ensembles d’utilisateurs définis dans le centre de conformité & la sécurité d’Office 365 à l’aide d’un **attribut de compte d’utilisateur**sélectionné. (Reportez-vous à la [liste des attributs pris en charge](information-barriers-attributes.md).) 
+
+- Les **stratégies de barrière des informations** déterminent les limites ou restrictions de communication. Lorsque vous définissez des stratégies de barrière des informations, vous avez le choix entre deux types de stratégies:
+    - Les stratégies «bloquer» empêchent un segment de communiquer avec un autre segment.
+    - Les stratégies «autoriser» permettent à un segment de communiquer avec certains autres segments seulement.
+
+- Une **application de stratégie** est exécutée une fois toutes les stratégies de barrière des informations définies et vous êtes prêt à les appliquer dans votre organisation.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

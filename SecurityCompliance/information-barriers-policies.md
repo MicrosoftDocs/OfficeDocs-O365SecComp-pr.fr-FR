@@ -3,7 +3,7 @@ title: Définir des stratégies de barrière des informations
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/24/2019
+ms.date: 06/26/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Découvrez comment définir des stratégies pour les barrières d’informations dans Microsoft Teams.
-ms.openlocfilehash: f6a570675130410acc702ef9f8ca99bf87b7501b
-ms.sourcegitcommit: 7c48ce016fa9f45a3813467f7c5a2fd72f9b8f49
+ms.openlocfilehash: 0603b5339672be3b4ac6ad4a18c6032f563acf27
+ms.sourcegitcommit: 1c254108c522d0cb44023565268b5041d07748aa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203733"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35279462"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>Définir des stratégies pour les barrières d’information (aperçu)
 
@@ -53,7 +53,9 @@ En plus des [licences et des autorisations requises](information-barriers.md#req
 
 - **Journalisation d’audit**. Pour Rechercher l’état d’une application de stratégie, la journalisation d’audit doit être activée. Nous vous recommandons d’effectuer cette opération avant de commencer à définir des segments ou des stratégies. Pour en savoir plus, consultez la rubrique [activer ou désactiver la recherche dans le journal d’audit Office 365](turn-audit-log-search-on-or-off.md).
 
-- **PowerShell**. Actuellement, les stratégies de barrière des informations sont définies et gérées dans le centre de conformité Office 365 Security & à l’aide d’applets de commande PowerShell. Bien que plusieurs exemples soient fournis dans cet article, vous devez être familiarisé avec les cmdlets et les paramètres PowerShell. [Connectez-vous au centre de sécurité & conformité d’Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+- **PowerShell**. Actuellement, les stratégies de barrière des informations sont définies et gérées dans le centre de conformité Office 365 Security & à l’aide d’applets de commande PowerShell. Bien que plusieurs exemples soient fournis dans cet article, vous devez être familiarisé avec les cmdlets et les paramètres PowerShell. Vous aurez également besoin du module AzureRM.
+    - [Connexion au Centre de Conformité et Sécurité Office 365 PowerShell ](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
+    - [Installer le module Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
 - **Consentement de l’administrateur pour les barrières d’informations dans Microsoft teams**. Lorsque vos stratégies sont en place, les barrières d’informations peuvent supprimer des personnes des sessions de conversation auxquelles elles ne sont pas censées se trouver. Cela permet de s’assurer que votre organisation reste conforme aux stratégies et réglementations. Utilisez la procédure suivante pour permettre aux stratégies de barrière des informations de fonctionner comme prévu dans Microsoft Teams. 
 
