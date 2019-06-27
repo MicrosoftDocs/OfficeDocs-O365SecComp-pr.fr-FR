@@ -27,7 +27,7 @@
 # [Protéger les informations](protect-information.md)
 ## [Étiquettes de niveau de confidentialité](sensitivity-labels.md)
 ### [Restreindre l’accès au contenu à l’aide du chiffrement dans les étiquettes de niveau de confidentialité](encryption-sensitivity-labels.md)
-### [Appliquer automatiquement une étiquette de confidentialité au contenu](apply_sensitivity_label_automatically.md)
+### [Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md)
 ### [Afficher l’utilisation d’étiquette avec les analytiques d’étiquette](label-analytics.md)
 
 ## [Éviter les pertes de données (DLP)](data-loss-prevention-policies.md)
@@ -331,7 +331,7 @@
 #### [Correction d’erreur lors du traitement des données](compliance20/error-remediation.md)
 
 ### [Collecter des données pour un cas](compliance20/collecting-data-for-ediscovery.md)
-#### [Créer une recherche pour collecter des données](compliance20/create-search-to-collect-data.md)
+#### [Créer une recherche](compliance20/create-search-to-collect-data.md)
 #### [Créer des requêtes de recherche](compliance20/building-search-queries.md)
 #### [Statistiques de recherche](compliance20/search-statistics.md)
 #### [Ajouter des résultats de recherche à un jeu à réviser](compliance20/add-data-to-review-set.md)
@@ -538,6 +538,8 @@
 ### [Définir des stratégies d’obstacle aux informations (préversion)](information-barriers-policies.md)
 ### [Attributs pour les stratégies d’obstacle aux informations (préversion)](information-barriers-attributes.md)
 ### [Résolution des problèmes d’obstacles aux informations (préversion)](information-barriers-troubleshooting.md)
+### [Modifier les stratégies d’obstacle aux informations (préversion)](information-barriers-edit-segments-policies.md.md)
+
 
 ## Clé client
 ### [Contrôle de vos données dans Office 365 à l'aide de la Clé client](controlling-your-data-using-customer-key.md).
