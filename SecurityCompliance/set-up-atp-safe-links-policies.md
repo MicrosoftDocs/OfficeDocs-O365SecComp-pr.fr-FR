@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 02/26/2019
+ms.date: 06/26/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configurez des stratégies de liens fiables pour protéger votre organisation contre les liens malveillants dans les fichiers Word, Excel, PowerPoint et Visio, ainsi que dans les messages électroniques.
-ms.openlocfilehash: 505508771ae1e630d7d34fde9ee1525d19bd5039
-ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
+ms.openlocfilehash: 8fd49eddc402400acafe0f9d702d19c7a3f63949
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35113258"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394339"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configuration des stratégies de liens approuvés Office 365 ATP
 
@@ -132,7 +132,8 @@ Les options de stratégie par défaut s’appliquent à tous les membres de votr
 |---------|---------|
 |**Désactivé** <br/> |N’analyse pas les URL dans les messages électroniques.  <br/> Vous permet de définir une règle d’exception, telle qu’une règle qui n’analyse pas les URL dans les messages électroniques pour un groupe spécifique de destinataires.  <br/> |
 |**On** <br/> |Réécrit les URL pour acheminer les utilisateurs via la protection de liens fiables ATP lorsque les utilisateurs cliquent sur les URL dans les messages électroniques.  <br/> Vérifie une URL lorsque vous cliquez sur une liste d’URL bloquées ou malveillantes.  <br/> |
-|**Utiliser les pièces jointes fiables pour analyser le contenu téléchargeable** <br/> |Lorsque cette option est sélectionnée, les URL qui pointent vers du contenu téléchargeable sont analysées.  <br/> |
+|**Application de l’analyse des URL en temps réel pour les liens suspects et les liens pointant vers des fichiers** <br/> |Lorsque cette option est sélectionnée, les URL et liens suspects qui pointent vers du contenu téléchargeable sont analysés.  <br/> |
+|**Attendre la fin de l’analyse des URL avant de remettre le message** <br/> |Lorsque cette option est sélectionnée, les messages contenant des URL à analyser sont conservés jusqu’à ce que les URL terminent l’analyse et qu’elles soient approuvées avant la remise des messages.  <br/> |
 |**Appliquer des liens fiables aux messages envoyés au sein de l’Organisation** <br/> | Lorsque cette option est disponible et sélectionnée, la protection des liens fiables ATP est appliquée aux messages électroniques envoyés entre les personnes de votre organisation, à condition que les comptes de messagerie soient hébergés dans Office 365.  <br/> |
 |**Ne pas suivre les clics des utilisateurs** <br/> |Lorsque cette option est sélectionnée, les données des URL des expéditeurs externes ne sont pas stockées. URL le suivi des liens dans les messages électroniques envoyés au sein de l’organisation n’est pas pris en charge actuellement.  <br/> |
 |**Ne pas autoriser les utilisateurs à cliquer vers l’URL d’origine** <br/> |Lorsque cette option est sélectionnée, les utilisateurs ne peuvent pas passer une [page d’avertissement](atp-safe-links-warning-pages.md) à une URL qui est considérée comme malveillante.  <br/> |
@@ -146,4 +147,4 @@ Une fois vos stratégies de liens fiables ATP en place, vous pouvez voir le fonc
 
 - [Utiliser l’Explorateur dans le &amp; Centre de sécurité conformité](use-explorer-in-security-and-compliance.md)
 
-Restez au fait des nouvelles fonctionnalités disponibles dans la protection avancée contre les menaces. consultez la feuille de [route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) et découvrez les [nouvelles fonctionnalités qui sont ajoutées à](office-365-atp.md#new-features-in-office-365-atp)la protection avancée contre les menaces.
+Restez au fait des nouvelles fonctionnalités disponibles dans la protection avancée contre les menaces. consultez la feuille de [route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=O365).

@@ -3,7 +3,7 @@ title: Explorateur de menaces (et détections en temps réel)
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/22/2019
+ms.date: 06/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,16 +15,16 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Découvrez l’Explorateur (et les détections en temps réel) dans le &amp; Centre de sécurité conformité.
-ms.openlocfilehash: 030f866c5e86daa3dc543bddae7152e19f377d3b
-ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
+ms.openlocfilehash: 3d2eab30b97655b692ed1bfe089b6a79834fd110
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490530"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394349"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces (et détections en temps réel)
 
-Si votre organisation dispose d' [office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) et que vous disposez [des autorisations nécessaires](#required-licenses-and-permissions), vous disposez de l' **Explorateur** ou des détections **en temps réel** (précédemment des *rapports en temps réel* ) [Voir ](#new-features-in-real-time-detections)nouveautés!). Dans le centre de sécurité & Compliance Center, accédez à **gestion des menaces**, puis choisissez **Explorateur** ou détections **en temps réel**. 
+Si votre organisation dispose d' [office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) et que vous disposez [des autorisations nécessaires](#required-licenses-and-permissions), vous disposez de l' **Explorateur** ou des détections **en temps réel** (précédemment des *rapports en temps réel* ) [Voir ](#new-features-in-real-time-detections)nouveautés!). Dans le centre de sécurité & conformité, accédez à **gestion des menaces**, puis choisissez **Explorateur** ou détections **en temps réel**. 
 
 |Avec le plan ATP 2, vous pouvez voir:  |Avec le plan ATP 1, vous pouvez voir:  |
 |---------|---------|
@@ -42,24 +42,39 @@ Ce rapport vous permet d’utiliser les actions suivantes:
 
 ## <a name="new-features-in-real-time-detections"></a>Nouvelles fonctionnalités dans les détections en temps réel
 
-Pour les clients Office 365 DAV plan 1, le rapport de *détection en temps réel* était auparavant appelé *rapports en temps réel*. Outre le changement de nom, plusieurs nouvelles fonctionnalités et améliorations sont déployées:
+L’Explorateur/détections en temps réel ajoute de nouveaux champs conçus pour vous donner une image plus complète de l’emplacement de vos courriers électroniques. Une partie de cette modification est de faciliter la chasse aux personnes qui effectuent des opérations de sécurité, mais le résultat net est de savoir en un clin d’œil l’emplacement des messages électroniques problématiques.
 
-- Dans la vue hameçonnage, vous pouvez voir plus de détails sur les URL détectées via les [liens fiables ATP](atp-safe-links.md). Les nouveaux détails et fonctionnalités sont les suivants:
-  - URL dans les messages électroniques
-  - Filtrage basé sur les informations d’URL
-  - Informations d’URL affichées dans les graphiques de données
-  - Données de temps de clic sur les clics dans les messages
+Comment cela est-il fait? L’état de remise est désormais divisé en deux colonnes:
 
-- Chaque fois qu’une modification est apportée à une URL, cliquez sur verdict, une alerte s’affiche. URL cliquez sur les verdicts peuvent changer lorsque la réputation d’une URL modifie la détonation ou lorsqu’un utilisateur protégé par les liens fiables ATP remplace un [avertissement de liens fiables ATP](atp-safe-links-warning-pages.md).  
- 
-Ces améliorations permettent aux administrateurs de sécurité de votre organisation d’afficher plus de détails qu’avant. Les administrateurs de la sécurité peuvent afficher des informations sur les domaines d’URL, les URL manquées, les verdicts, et bien plus encore, et ajuster les stratégies Office 365 ATP de manière appropriée.
+- Action de remise: quel est le statut de ce courrier électronique?
+- Emplacement de remise: où ce message électronique a-t-il été routé?
 
-> [!NOTE]
-> Bien que ces fonctionnalités soient en aperçu, les données URL seront disponibles pendant un nombre limité de jours. 
+L’action de remise est l’action entreprise sur un courrier électronique en raison de stratégies ou de détections existantes. Voici les actions possibles qu’un courrier électronique peut effectuer:
+
+|Cmds  |Courrier indésirable  |Blocked  |Été  |
+|---------|---------|---------|---------|
+|Le courrier électronique a été remis à la boîte de réception ou au dossier d’un utilisateur et l’utilisateur peut y accéder directement.    | Le courrier électronique a été envoyé vers le dossier de courrier indésirable de l’utilisateur ou le dossier de suppression, et l’utilisateur a accès aux courriers électroniques dans ces dossiers.       | Tous les messages électroniques mis en quarantaine, qui ont échoué ou qui ont été supprimés. Cette inaccessibilité est entièrement inaccessible par l’utilisateur.     | Tout courrier électronique où des pièces jointes malveillantes sont remplacées par des fichiers. txt qui indiquent que la pièce jointe était malveillante.     |
+
+Et voici ce que l’utilisateur peut voir, et ce qu’il ne peut pas faire:
+
+|Accessible aux utilisateurs finaux  |Inaccessible aux utilisateurs finaux  |
+|---------|---------|
+|Cmds     | Blocked        |
+|Courrier indésirable     | Été        |
+
+Emplacement de remise: affiche les résultats des stratégies et des détections qui exécutent une post-remise. Elle est liée à une action de remise. Ce champ a été ajouté pour permettre de mieux comprendre l’action entreprise lors de la détection d’un message problématique. Voici les valeurs possilbe de l’emplacement de remise:
+
+1. Boîte de réception ou dossier: le courrier électronique se trouve dans la boîte de réception ou dans un dossier (en fonction de vos règles de messagerie électronique).
+2. Local ou externe: la boîte aux lettres n’existe pas sur le Cloud, mais elle est locale.
+3. Dossier courrier indésirable – courrier électronique dans le dossier courrier indésirable d’un utilisateur.
+4. Dossier éléments supprimés: le courrier électronique dans le dossier éléments supprimés d’un utilisateur.
+5. Quarantaine: message en quarantaine et absent de la boîte aux lettres d’un utilisateur.
+6. Échec: la messagerie n’a pas pu atteindre la boîte aux lettres.
+7. Ignoré: le courrier électronique est perdu dans le flux de messagerie.
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Voir programmes malveillants détectés dans le courrier électronique par technologie
 
-Supposons que vous souhaitez voir les programmes malveillants détectés par les messages électroniques, par la technologie Office 365. Pour ce faire, utilisez la vue [programmes malveillants de messagerie >](threat-explorer-views.md#email--malware) de l’Explorateur (ou détections en temps réel).
+Supposons que vous souhaitez voir les programmes malveillants détectés par les messages électroniques, par la technologie Office 365. Pour ce faire, utilisez l’affichage [courrier > programmes malveillants](threat-explorer-views.md#email--malware) de l’Explorateur (ou des détections en temps réel).
 
 1. Dans le centre de sécurité & conformité[https://protection.office.com](https://protection.office.com)(), sélectionnez**Explorateur** de **gestion** > des menaces (ou **détections en temps réel**). (Cet exemple utilise Explorer.)
 
@@ -75,7 +90,7 @@ Le rapport est actualisé pour afficher les résultats de programmes malveillant
 
 Supposons que vous vouliez voir les tentatives de hameçonnage via des URL dans des e-mails, y compris une liste des URL qui ont été autorisées, bloquées et remplacées. L’identification des URL sur lesquelles l’utilisateur a cliqué requiert la configuration de [liens fiables ATP](atp-safe-links.md) . Assurez-vous que vous avez configuré les [stratégies de liens fiables ATP](set-up-atp-safe-links-policies.md) pour la protection du temps de clic et la journalisation des «verdict de clic» par les liens fiables ATP. 
 
-Pour consulter les URL de hameçonnage dans les messages et les clics sur les URL dans les messages hameçons, utilisez la vue [E-mail _GT_ hameçonnage](threat-explorer-views.md#email--phish) de l’Explorateur (ou détections en temps réel).
+Pour consulter les URL de hameçonnage dans les messages et les clics sur les URL dans les messages hameçons, utilisez la vue [courrier > hameçonnage](threat-explorer-views.md#email--phish) de l’Explorateur (ou des détections en temps réel).
 
 1. Dans le centre de sécurité & conformité[https://protection.office.com](https://protection.office.com)(), sélectionnez**Explorateur** de **gestion** > des menaces (ou **détections en temps réel**). (Cet exemple utilise Explorer.)
 
@@ -99,7 +114,7 @@ Pour consulter les URL de hameçonnage dans les messages et les clics sur les UR
 
 ## <a name="review-email-messages-reported-by-users"></a>Examiner les messages électroniques signalés par les utilisateurs
 
-Supposons que vous voulez afficher les messages électroniques que les utilisateurs de votre organisation ont signalés comme courriers indésirables, non légitimes ou le hameçonnage à l’aide du [complément de message de rapport pour Outlook et Outlook sur le Web](enable-the-report-message-add-in.md). Pour ce faire, utilisez l’affichage de [messagerie >](threat-explorer-views.md#email--user-reported) de l’Explorateur (ou des détections en temps réel).
+Supposons que vous voulez afficher les messages électroniques que les utilisateurs de votre organisation ont signalés comme courriers indésirables, non légitimes ou le hameçonnage à l’aide du [complément de message de rapport pour Outlook et Outlook sur le Web](enable-the-report-message-add-in.md). Pour ce faire, utilisez la [messagerie >](threat-explorer-views.md#email--user-reported) vue signalée par l’utilisateur de l’Explorateur (ou détections en temps réel).
 
 1. Dans le centre de sécurité & conformité[https://protection.office.com](https://protection.office.com)(), sélectionnez**Explorateur** de **gestion** > des menaces (ou **détections en temps réel**). (Cet exemple utilise Explorer.)
 
@@ -132,6 +147,7 @@ Outre les scénarios décrits dans cet article, vous disposez de nombreuses autr
 Vous devez disposer de la protection avancée contre les menaces [Office 365](office-365-atp.md) pour obtenir des détections de l’Explorateur ou en temps réel.
 - L’Explorateur est inclus dans Office 365 DAV plan 2. 
 - Le rapport de détections en temps réel est inclus dans Office 365 DAV plan 1.
+- Prévoyez d’attribuer des licences pour tous les utilisateurs qui doivent être protégés par la protection avancée contre les menaces. (L’Explorateur ou les détections en temps réel affichent les données de détection pour les utilisateurs sous licence.)
 
 Pour afficher et utiliser l’Explorateur ou les détections en temps réel, vous devez disposer des autorisations appropriées, telles que celles accordées à un administrateur de sécurité ou à un lecteur de sécurité. 
 

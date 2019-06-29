@@ -3,7 +3,7 @@ title: Définir des stratégies de barrière des informations
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/26/2019
+ms.date: 06/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Découvrez comment définir des stratégies pour les barrières d’informations dans Microsoft Teams.
-ms.openlocfilehash: 0603b5339672be3b4ac6ad4a18c6032f563acf27
-ms.sourcegitcommit: 1c254108c522d0cb44023565268b5041d07748aa
+ms.openlocfilehash: 844e01fc1df96e9de62b1830c2825db15426f7f4
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "35279462"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394319"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>Définir des stratégies pour les barrières d’information (aperçu)
 
@@ -29,11 +29,25 @@ Cet article explique comment planifier, définir, implémenter et gérer les str
 > [!TIP]
 > Cet article inclut un [exemple de scénario](#example-contosos-departments-segments-and-policies) et un [classeur Excel](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx) téléchargeable pour vous aider à planifier et à définir vos stratégies de barrière des informations.
 
+## <a name="concepts-of-information-barrier-policies"></a>Concepts des stratégies de barrière des informations
+
+Lorsque vous définissez des stratégies pour les barrières d’informations, vous utiliserez les attributs de compte d’utilisateur, les segments, les stratégies de blocage et/ou d’autorisation, ainsi que l’application de stratégie.
+
+- Les **attributs de compte d’utilisateur** sont définis dans Azure Active Directory (ou Exchange Online). Ces attributs peuvent inclure le service, la fonction, l’emplacement, le nom de l’équipe et d’autres détails du profil de travail. 
+
+- Les **segments** sont des ensembles d’utilisateurs définis dans le centre de conformité & la sécurité d’Office 365 à l’aide d’un **attribut de compte d’utilisateur**sélectionné. (Reportez-vous à la [liste des attributs pris en charge](information-barriers-attributes.md).) 
+
+- Les **stratégies de barrière des informations** déterminent les limites ou restrictions de communication. Lorsque vous définissez des stratégies de barrière des informations, vous avez le choix entre deux types de stratégies:
+    - Les stratégies «bloquer» empêchent un segment de communiquer avec un autre segment.
+    - Les stratégies «autoriser» permettent à un segment de communiquer avec certains autres segments seulement.
+
+- Une **application de stratégie** est exécutée une fois toutes les stratégies de barrière des informations définies et vous êtes prêt à les appliquer dans votre organisation.
+
 ## <a name="the-work-flow-at-a-glance"></a>Flux de travail en un clin d’œil
 
 |Phase    |Ce qui est impliqué  |
 |---------|---------|
-|[Vérifier que les conditions préalables sont remplies](#prerequisites)     |-Vérifiez que vous disposez des [autorisations et des licences requises](information-barriers.md#required-licenses-and-permissions)<br/>-Vérifiez que votre annuaire inclut des données pour la segmentation des utilisateurs<br/>-Activer la recherche dans l’annuaire étendu pour Microsoft teams<br/>-Vérifiez que la journalisation d’audit est activée.<br/>-Utiliser PowerShell (des exemples sont fournis)<br/>-Fournir le consentement de l’administrateur pour Microsoft Teams (étapes incluses)          |
+|[Vérifier que les conditions préalables sont remplies](#prerequisites)     |-Vérifiez que vous disposez des [autorisations et des licences requises](information-barriers.md#required-licenses-and-permissions)<br/>-Vérifiez que votre annuaire inclut des données pour la segmentation des utilisateurs<br/>-Activer la recherche dans l’annuaire étendu pour Microsoft teams<br/>-Vérifiez que la journalisation d’audit est activée.<br/>-Vérifier qu’aucune stratégie de carnet d’adresses Exchange n’est mise en place<br/>-Utiliser PowerShell (des exemples sont fournis)<br/>-Fournir le consentement de l’administrateur pour Microsoft Teams (étapes incluses)          |
 |[Partie 1: segmenter les utilisateurs de votre organisation](#part-1-segment-users)     |-Déterminer les stratégies nécessaires<br/>-Créer une liste de segments à définir<br/>-Identifier les attributs à utiliser<br/>-Définir des segments en fonction de filtres de stratégie        |
 |[Partie 2: définir des stratégies de barrière des informations](#part-2-define-information-barrier-policies)     |-Définir vos stratégies (ne pas appliquer)<br/>-Choisir parmi deux types (bloquer ou autoriser) |
 |[Partie 3: appliquer des stratégies de barrière des informations](#part-3-apply-information-barrier-policies)     |-Définir les stratégies sur le statut actif<br/>-Exécuter l’application de stratégie<br/>-Afficher le statut de la stratégie         |
@@ -52,6 +66,8 @@ En plus des [licences et des autorisations requises](information-barriers.md#req
 - **Recherche dans l’annuaire étendu**. Avant de définir la première stratégie de barrière des informations de votre organisation, vous devez [activer la recherche dans l’annuaire d’étendues dans Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search). Attendez au moins 24 heures après l’activation de la recherche dans l’annuaire d’étendue avant de configurer ou de définir des stratégies de barrière des informations.
 
 - **Journalisation d’audit**. Pour Rechercher l’état d’une application de stratégie, la journalisation d’audit doit être activée. Nous vous recommandons d’effectuer cette opération avant de commencer à définir des segments ou des stratégies. Pour en savoir plus, consultez la rubrique [activer ou désactiver la recherche dans le journal d’audit Office 365](turn-audit-log-search-on-or-off.md).
+
+- **Aucune stratégie de carnet d’adresses**. Avant de définir et d’appliquer des stratégies de barrière des informations, assurez-vous qu’aucune stratégie de carnet d’adresses Exchange n’est mise en place. Si vous disposez de ces stratégies, veillez à [Supprimer les stratégies de carnet d’adresses](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) en premier.
 
 - **PowerShell**. Actuellement, les stratégies de barrière des informations sont définies et gérées dans le centre de conformité Office 365 Security & à l’aide d’applets de commande PowerShell. Bien que plusieurs exemples soient fournis dans cet article, vous devez être familiarisé avec les cmdlets et les paramètres PowerShell. Vous aurez également besoin du module AzureRM.
     - [Connexion au Centre de Conformité et Sécurité Office 365 PowerShell ](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
@@ -101,22 +117,21 @@ Déterminez les attributs des données d’annuaire de votre organisation que vo
 
 ### <a name="define-segments-using-powershell"></a>Définir des segments à l’aide de PowerShell
 
-> [!IMPORTANT]
-> Assurez **-vous que vos segments ne se chevauchent pas**. Chaque utilisateur qui sera affecté par les barrières d’informations doit appartenir à un seul segment (et un seul). Aucun utilisateur ne doit appartenir à deux segments ou plus. (Voir l' [exemple: segments définis par Contoso](#contosos-defined-segments) dans cet article.)
-
 La définition de segments n’a pas d’effet sur les utilisateurs; Il définit simplement l’étape de définition des stratégies de barrière des informations, puis leur application.
 
 1. Utilisez la cmdlet **New-OrganizationSegment** avec le paramètre **UserGroupFilter** qui correspond à l' [attribut](information-barriers-attributes.md) que vous souhaitez utiliser.
-    
-    Syntaxe`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`
-    
-    Exemple : `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
-    
-    Dans cet exemple, un segment appelé *HR* est défini à l’aide de *HR*, une valeur dans l’attribut *Department* . La partie **-EQ** de l’applet de commande fait référence à «Equals». (Vous pouvez également utiliser **-** ne pour signifier «différent de». Voir [using «Equals» et «not Equals» dans définitions de segment](#using-equals-and-not-equals-in-segment-definitions).)
+
+    |Syntaxe   |Exemple  |
+    |---------|---------|
+    |`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`     |`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>Dans cet exemple, un segment appelé *HR* est défini à l’aide de *HR*, une valeur dans l’attribut *Department* . La partie **-EQ** de l’applet de commande fait référence à «Equals». (Vous pouvez également utiliser **-** ne pour signifier «différent de». Voir [using «Equals» et «not Equals» dans définitions de segment](#using-equals-and-not-equals-in-segment-definitions).)        |
 
     Une fois que vous avez exécuté chaque cmdlet, vous devez voir une liste de détails sur le nouveau segment. Les détails incluent le type du segment, qui a été créé ou modifié pour la dernière fois, et ainsi de suite. 
 
 2. Répétez cette procédure pour chaque segment que vous souhaitez définir.
+
+    > [!IMPORTANT]
+    > Assurez **-vous que vos segments ne se chevauchent pas**. Chaque utilisateur qui sera affecté par les barrières d’informations doit appartenir à un seul segment (et un seul). Aucun utilisateur ne doit appartenir à deux segments ou plus. (Voir l' [exemple: segments définis par Contoso](#contosos-defined-segments) dans cet article.)
+
 
 Une fois que vous avez défini vos segments, passez à la [définition des stratégies de barrière des informations](#part-2-define-information-barrier-policies).
 
@@ -124,23 +139,25 @@ Une fois que vous avez défini vos segments, passez à la [définition des strat
 
 Dans l’exemple suivant, nous définissons un segment de la manière suivante: «Department est égal à HR». 
 
-**Exemple** : `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
+|Exemple  |
+|---------|
+|`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>Notez que dans cet exemple, la définition de segment inclut un paramètre «Equals» désigné comme **-EQ**. 
+  |
 
-Notez que la définition de segment inclut un paramètre «égal à» désigné comme **-EQ**. 
+Vous pouvez également définir des segments à l’aide d’un paramètre «différent de», indiqué sous la forme **-** ne, comme indiqué dans le tableau suivant:
 
-Vous pouvez également définir des segments à l’aide d’un paramètre «différent de», indiqué comme **-** ne, comme le montre l’exemple suivant:
-
-**Syntaxe**:`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`
-
-**Exemple** : `New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"`
-
-Dans cet exemple, nous avons défini un segment appelé *NotSales* qui inclut toutes les personnes qui ne sont pas dans les *ventes*. La partie **-** ne de l’applet de commande fait référence à «différent de».
+|Syntaxe  |Exemple  |
+|---------|---------|
+|`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`    |`New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"` <p>Dans cet exemple, nous avons défini un segment appelé *NotSales* qui inclut toutes les personnes qui ne sont pas dans les *ventes*. La partie **-** ne de l’applet de commande fait référence à «différent de».  |
 
 En plus de définir des segments à l’aide de «égal à» ou «différent de», vous pouvez définir un segment à l’aide des paramètres «égal à» et «différent de».
 
-**Exemple** : `New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" and "Position -ne 'Temporary'"`
+|Exemple  |
+|---------|
+|`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" and "Position -ne 'Temporary'"` <p>Dans cet exemple, nous avons défini un segment appelé *LocalFTE* qui inclut des personnes qui se trouvent localement et dont les positions ne sont pas répertoriées comme *temporaires*.    |
 
-Dans cet exemple, nous avons défini un segment appelé *LocalFTE* qui inclut des personnes qui se trouvent localement et dont les positions ne sont pas répertoriées comme *temporaires*.
+> [!TIP]
+> Dans la mesure du possible, utilisez des définitions de segment qui incluent «-EQ» ou «-ne». Essayez de ne pas définir de définitions de segment complexes. 
 
 ## <a name="part-2-define-information-barrier-policies"></a>Partie 2: définir des stratégies de barrière des informations
 
@@ -164,18 +181,16 @@ Par exemple, supposons que vous souhaitez bloquer les communications entre le se
 
 1. Pour définir votre première stratégie de blocage, utilisez la cmdlet **New-InformationBarrierPolicy** avec le paramètre **SegmentsBlocked** . 
 
-    Syntaxe`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsBlocked "segment2name"`
-
-    Exemple : `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive`
-
-    Dans cet exemple, nous avons défini une stratégie appelée *Sales-Research* pour un segment appelé *Sales*. Lorsqu’elle est active et appliquée, cette stratégie empêche les personnes dans les *ventes* de communiquer avec des personnes dans un segment nommé *Research*.
+    |Syntaxe  |Exemple  |
+    |---------|---------|
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsBlocked "segment2name"`     |`New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p>    Dans cet exemple, nous avons défini une stratégie appelée *Sales-Research* pour un segment appelé *Sales*. Lorsqu’elle est active et appliquée, cette stratégie empêche les personnes dans les *ventes* de communiquer avec des personnes dans un segment nommé *Research*.         |
 
 2. Pour définir votre deuxième segment de blocage, utilisez à nouveau la cmdlet **New-InformationBarrierPolicy** avec le paramètre **SegmentsBlocked** , cette fois avec les segments contrepassés.
 
-    Exemple : `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive`
+    |Exemple  |
+    |---------|
+    |`New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p>    Dans cet exemple, nous avons défini une stratégie appelée *Research-Sales* pour empêcher les *recherches* de communiquer avec les *ventes*.     |
 
-    Dans cet exemple, nous avons défini une stratégie appelée *Research-Sales* pour empêcher les *recherches* de communiquer avec les *ventes*.
- 
 2. Passez à l’une des opérations suivantes:
 
    - (Si nécessaire) [Définir une stratégie pour permettre à un segment de communiquer avec un seul autre segment](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment) 
@@ -185,21 +200,15 @@ Par exemple, supposons que vous souhaitez bloquer les communications entre le se
 
 1. Pour permettre à un segment de communiquer avec un seul autre segment, utilisez la cmdlet **New-InformationBarrierPolicy** avec le paramètre **SegmentsAllowed** . 
 
-    Syntaxe`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name"`
-
-    Exemple : `New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR" -State Inactive`
-
-    Dans cet exemple, nous avons défini une stratégie appelée *Manufacturing-HR* pour un segment appelé *Manufacturing*. Lorsqu’il est actif et appliqué, cette stratégie permet aux personnes de *fabrication* de communiquer uniquement avec des personnes dans un segment appelé *RH*. (Dans ce cas, la *fabrication* ne peut pas communiquer avec des utilisateurs qui ne font pas partie de *RH*.)
+    |Syntaxe  |Exemple  |
+    |---------|---------|
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name"`     |`New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR" -State Inactive` <p>    Dans cet exemple, nous avons défini une stratégie appelée *Manufacturing-HR* pour un segment appelé *Manufacturing*. Lorsqu’il est actif et appliqué, cette stratégie permet aux personnes de *fabrication* de communiquer uniquement avec des personnes dans un segment appelé *RH*. (Dans ce cas, la *fabrication* ne peut pas communiquer avec des utilisateurs qui ne font pas partie de *RH*.)         |
 
     **Si nécessaire, vous pouvez spécifier plusieurs segments avec cette applet de commande, comme illustré dans l’exemple suivant.**
 
-    Syntaxe`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name"`
-
-    **Exemple 2: définition d’une stratégie pour permettre à un segment de communiquer avec deux autres segments seulement**    
-
-    `New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing" -State Inactive`
-
-    Dans cet exemple, nous avons défini une stratégie qui permet au segment de *recherche* de communiquer avec les *RH* et la *fabrication*.
+    |Syntaxe  |Exemple  |
+    |---------|---------|
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name"`     |`New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p>Dans cet exemple, nous avons défini une stratégie qui permet au segment de *recherche* de communiquer avec les *RH* et la *fabrication*.        |
 
     Répétez cette étape pour chaque stratégie que vous souhaitez définir pour permettre à des segments spécifiques de communiquer avec certains autres segments spécifiques.
 
@@ -218,11 +227,9 @@ Les stratégies de barrière des informations ne sont pas appliquées tant que v
 
 2. Pour définir une stratégie sur état actif, utilisez la cmdlet **Set-InformationBarrierPolicy** avec un paramètre **Identity** et le paramètre **State** défini sur **active**. 
 
-    Syntaxe`Set-InformationBarrierPolicy -Identity GUID -State Active`
-
-    Exemple : `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -State Active`
-    
-    Dans cet exemple, nous définissons une stratégie de barrière des informations qui a le GUID *43c37853-EA10-4b90-A23D-ab8c93772471* à Active Status.
+    |Syntaxe  |Exemple  |
+    |---------|---------|
+    |`Set-InformationBarrierPolicy -Identity GUID -State Active`     |`Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -State Active` <p>    Dans cet exemple, nous définissons une stratégie de barrière des informations qui a le GUID *43c37853-EA10-4b90-A23D-ab8c93772471* à Active Status.   |
 
     Répétez cette étape en fonction de chaque stratégie.
 
@@ -244,6 +251,17 @@ Avec PowerShell, vous pouvez afficher l’état des comptes d’utilisateur, des
 |Application de stratégie de barrière des informations la plus récente     | Utilisez la cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p>Syntaxe`Get-InformationBarrierPoliciesApplicationStatus`<p>    Cela permet d’afficher des informations indiquant si l’application de stratégie a été exécutée, si elle a échoué ou est en cours d’exécution.       |
 |Toutes les applications de stratégie de barrière des informations|Utilisant`Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>Cela permet d’afficher des informations indiquant si l’application de stratégie a été exécutée, si elle a échoué ou est en cours d’exécution.|
 
+## <a name="what-if-i-need-to-remove-or-change-policies"></a>Qu’en est-il si j’ai besoin de supprimer ou de modifier des stratégies?
+
+Des ressources sont disponibles pour vous aider à gérer vos stratégies de barrière des informations.
+
+- En cas de problème avec les barrières d’informations, consultez la rubrique [Troubleshooting information barrières (Preview)](information-barriers-troubleshooting.md).
+
+- Pour arrêter l’application des stratégies, voir [arrêter une application de stratégie](information-barriers-edit-segments-policies.md.md#stop-a-policy-application).
+
+- Pour supprimer une stratégie de barrière des informations, consultez [la rubrique supprimer une stratégie](information-barriers-edit-segments-policies.md.md#remove-a-policy).
+
+- Pour apporter des modifications à des segments ou des stratégies, consultez la rubrique [Modifier (ou supprimer) stratégies de barrière des informations (aperçu)](information-barriers-edit-segments-policies.md.md).
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>Exemple: services, segments et stratégies de contoso
 
@@ -298,12 +316,6 @@ Une fois cette configuration terminée, contoso est conforme aux exigences léga
 
 ## <a name="related-articles"></a>Articles connexes
 
-[Modifier ou supprimer des stratégies de barrière des informations (aperçu)](information-barriers-edit-segments-policies.md.md)
+- [Obtenir une vue d’ensemble des barrières en matière d’informations (aperçu)](information-barriers.md)
 
-[Obtenir une vue d’ensemble des barrières d’informations](information-barriers.md)
-
-[En savoir plus sur les barrières d’informations dans Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
-
-[Attributs des stratégies de barrière des informations (aperçu)](information-barriers-attributes.md)
-
-[Dépannage des barrières relatives aux informations (aperçu)](information-barriers-troubleshooting.md)
+- [Obstacles aux informations dans la version d’évaluation de Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
