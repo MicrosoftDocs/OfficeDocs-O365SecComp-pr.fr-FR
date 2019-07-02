@@ -1,5 +1,5 @@
 ---
-title: Configuration des balises actives pour l’identification de la détection des privilèges client dans Advanced eDiscovery
+title: Configuration des balises actives dans Advanced eDiscovery
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,28 +14,36 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-description: ''
-ms.openlocfilehash: 5310acad1aa1bc2e01cbabee69dd7bb38084bd9a
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: Les balises actives vous permettent d’appliquer les fonctionnalités d’apprentissage automatique lors de la révision du contenu dans un cas avancé de découverte électronique. Utilisez des groupes de balises actives pour afficher les résultats des modèles de détection d’apprentissage automatique, tels que le modèle de privilège avocat-client.
+ms.openlocfilehash: 68b558cc2282cc388387f8d61825b9ee569ff32a
+ms.sourcegitcommit: e323610df2df71c84f536e8a38650d33d8069e41
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153966"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34703827"
 ---
-# <a name="set-up-smart-tags-for-ml-assisted-review-in-advanced-ediscovery"></a>Configuration des balises actives pour une révision assistée par ML dans Advanced eDiscovery
+# <a name="set-up-smart-tags-in-advanced-ediscovery"></a>Configuration des balises actives dans Advanced eDiscovery
 
-Les fonctionnalités d’apprentissage automatique dans Advanced eDiscovery sont destinées à faciliter le processus de décision sur les documents. Les balises actives permettent de mettre en place les fonctionnalités d’apprentissage automatique dans l’emplacement où sont enregistrées les décisions: les balises et les groupes de balises. Lorsque vous créez un groupe de balises actives, les décisions du modèle ML mappées sur le groupe sont affichées en ligne avec les balises dans le groupe pour vous aider à afficher les informations en ligne, où elles sont le plus logiques.
+Les fonctionnalités machine learning (ML) dans Advanced eDiscovery peuvent vous aider à améliorer l’efficacité du processus de décision lors de la révision de documents de cas dans un jeu de révision. Les balises actives permettent de mettre en place les capacités de ML des décisions enregistrées: lors du marquage des documents lors de la révision. Lorsque vous créez un groupe de balises actives, les décisions qui sont le résultat du modèle ML que vous avez associé au groupe de balises actives s’affichent en ligne avec les balises dans le groupe de balises. Cela permet d’afficher les informations de résultats ML en ligne lorsque vous examinez des documents spécifiques.
 
 ## <a name="how-to-set-up-a-smart-tag-group"></a>Procédure de configuration d’un groupe de balises actives
 
-1. Dans un jeu de révision, accédez à **Manage Review Set** -> **Manage Tags**.
+1. Dans un jeu de révision, cliquez sur **gérer le jeu de révision** , puis sur gérer les **balises**.
 
-2. Cliquez sur le menu déroulant en regard d' **Ajouter un groupe** de balises et sélectionnez **Ajouter un groupe de balises actives**.
+2. Cliquez sur **Ajouter un groupe** de balises, puis sélectionnez **Ajouter un groupe de balises actives**.
 
-3. Sélectionnez le modèle que vous souhaitez mapper à ce groupe. Cette opération crée une section de balise et N balises enfants, où N représente le nombre de sorties possibles du modèle. Par exemple, le modèle de détection des privilèges du client avocat a deux sorties possibles: privilégié et non privilégié; la sélection de ce modèle crée deux balises enfants dans l’ensemble de révision, chacune correspondant à l’une des sorties possibles.
+3. Sélectionnez le modèle ML que vous souhaitez associer au groupe de balises.
+    
+   Cette méthode crée un groupe de balises et *n* balises enfants, où *n* représente le nombre de sorties possibles du modèle. Par exemple, le [modèle de détection des privilèges du client avocat](attorney-privilege-detection.md) a deux sorties possibles: 
 
-4. Renommez le groupe de balises et les balises en fonction de vos besoins.
+   - **Positif** : permet de baliser des documents qui contiennent du contenu privilégié par le client.
+   
+   - **Négatif** : permet de marquer des documents qui ne contiennent pas de contenu privilégié par le client.
+    
+    Si vous sélectionnez ce modèle, un groupe de balises avec deux balises enfant est créé (une balise enfant nommée **positive** et l’autre appelée **négatif**) pour l’ensemble de révision. Dans cet exemple, chaque balise enfant correspond à l’une des sorties possibles du modèle de détection des privilèges du client avocat.
 
-## <a name="how-to-use-a-smart-tag-group"></a>Utilisation d’un groupe de balises actives
+4. Vous pouvez également renommer le groupe de balises et les balises enfants. Par exemple, vous pouvez renommer la balise **positive** en **Privilege** et la balise **négative** pour **ne pas**obtenir de privilèges.
 
-Lors de l’examen d’un document, les résultats du modèle seront exposés en regard de la valeur de balise appropriée. Par exemple, si vous disposez d’un groupe de balises actives pour la détection des privilèges du client et que vous révisez un document que le modèle a décidé est potentiellement privilégié, vous verrez le motif de cette balise en regard de la balise appropriée. Il est important de noter que la balise n’est pas automatiquement appliquée; pour toutes les opérations et les objectifs, les balises d’un groupe de balises actives agissent de la même manière que les balises normales, à l’exception du fait qu’ils exposent les résultats du modèle en regard de ces derniers, le cas échéant
+## <a name="how-to-use-smart-tags"></a>Utilisation des balises actives
+
+Lors de l’examen d’un document, les résultats du modèle sont affichés en regard de la balise enfant appropriée. Par exemple, si vous disposez d’un groupe de balises actives pour la détection des privilèges du client et que vous révisez un document potentiellement privilégié, la raison de cette conclusion s’affiche en regard de la balise appropriée. Il est important de noter que la balise n’est pas automatiquement appliquée au document. Le relecteur prend la décision de baliser le document.

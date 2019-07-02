@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur les principes de sécurité et les recommandations pour la modernisation de la sécurité dans votre organisation.
-ms.openlocfilehash: 35f3feca7597eb3e80076eccc36e00debd754d01
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 90844018e12a165e57b41153cb2042967ffee641
+ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152156"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767315"
 ---
 # <a name="ciso-workshop-module-1-microsoft-cybersecurity-briefing"></a>Module d’atelier CISO 1: Briefing Microsoft Cybersecurity
 
@@ -40,17 +40,17 @@ Ce module décrit les vues d’ensemble de l’hygiène de sécurité critique, 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtVXF]
 
-## <a name="part-5-microsoft-cybersecurity-reference-architecture-2430"></a>Partie 5: architecture de référence Microsoft Cybersecurity (24:30)
+## <a name="part-5-microsoft-cybersecurity-reference-architecture-2114"></a>Partie 5: architecture de référence Microsoft Cybersecurity (21:14)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQL2]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36ldf]
 
 ## <a name="part-6-reference-architecture-for-identity-and-access-725"></a>Partie 6: architecture de référence pour l’identité et l’accès (7:25)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtITd]
 
-## <a name="part-7-reference-architecture-for-security-operations-center-739"></a>Partie 7: architecture de référence pour Security Operations Center (7:39)
+## <a name="part-7-reference-architecture-for-security-operations-center-937"></a>Partie 7: architecture de référence pour Security Operations Center (9:37)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYM6]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36dlc]
 
 ## <a name="part-8-reference-architecture-for-pc-and-mobile-devices-452"></a>Partie 8: architecture de référence pour PC et appareils mobiles (4:52)
 

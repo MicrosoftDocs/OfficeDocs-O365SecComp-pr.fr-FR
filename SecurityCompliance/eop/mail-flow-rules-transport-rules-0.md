@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Vous pouvez utiliser des règles de flux de messagerie (règles de transport) pour identifier et effectuer des actions sur les messages qui circulent dans votre organisation Office 365.
-ms.openlocfilehash: 73f5668be76a20af7474f6de06d50e278057fd06
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: a08d3ff0d976def1d104c99a9532fe5c826f0523
+ms.sourcegitcommit: 90e514177a1ee6b7485334b15c588b0ac906aa26
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153146"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34726055"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Règles de flux de messagerie (règles de transport) dans Exchange Online Protection
 
@@ -37,7 +37,7 @@ Pour mettre en œuvre des stratégies de messagerie spécifiques à l'aide de r�
     
 - [Utilisation des règles de flux de courrier pour définir le seuil de probabilité de courrier indésirable (SCL) dans les messages](../use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
     
-- [Créer des listes d’expéditeurs bloqués et autorisés à l’échelle de l’organisation dans Office 365](../create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md)
+- [Créer des listes d’expéditeurs bloqués dans Office 365](../create-block-sender-lists-in-office-365.md)
     
 - [Réduction des menaces de programmes malveillants par le biais du blocage des pièces jointes de fichier dans Exchange Online Protection](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
     
@@ -69,7 +69,7 @@ Une règle de flux de messagerie est constituée de conditions, d'exceptions, d'
 
 Le tableau suivant explique comment plusieurs conditions, valeurs de condition, exceptions et actions sont traitées dans une règle.
   
-|**Composant**|**Logique**|**Comments**|
+|**Composant**|**Logique**|**Commentaires**|
 |:-----|:-----|:-----|
 |Commentaires  <br/> |AND  <br/> |Un message doit remplir toutes les conditions de la règle. Si vous souhaitez qu'une condition ou une autre s'applique, utilisez des règles distinctes pour chaque condition. Par exemple, si vous souhaitez ajouter la même clause d'exclusion de responsabilité aux messages comportant des pièces jointes et aux messages contenant un texte spécifique, créez une règle pour chaque condition. Vous pouvez facilement copier une règle dans le CAE.  <br/> |
 |Un message doit remplir toutes les conditions de la règle. Si vous souhaitez qu’une condition ou une autre s’applique, utilisez des règles distinctes pour chaque condition. Par exemple, si vous souhaitez ajouter la même clause d’exclusion de responsabilité aux messages comportant des pièces jointes et aux messages dont le contenu correspond à un modèle, créez une règle pour chaque condition. Vous pouvez facilement copier une règle.  <br/> |OR  <br/> |Certaines conditions vous permettent de spécifier plusieurs valeurs. Le message doit correspondre à l'une des valeurs spécifiées (pas toutes). Par exemple, si l'objet d'un message électronique est Informations sur le cours des actions et que la condition **L'objet inclut l'un de ces mots** est configurée pour établir une correspondance avec le mot Contoso ou actions, la condition est remplie, car l'objet du message contient au moins l'une des valeurs spécifiées.  <br/> |

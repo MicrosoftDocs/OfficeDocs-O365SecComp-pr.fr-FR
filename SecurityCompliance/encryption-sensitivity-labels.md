@@ -3,7 +3,6 @@ title: Restriction de l’accès au contenu à l’aide du chiffrement dans les 
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de sensibilité, vous pouvez restreindre l’accès au contenu auquel l’étiquette sera appliquée. Les étiquettes de sensibilité peuvent utiliser le chiffrement pour protéger le contenu.
-ms.openlocfilehash: 20d547a66309382c3ae3229540a23cd47e18460c
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: c550b9d0a3ffb9e41f36b4630a80e1a1584a257f
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153266"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199767"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Restriction de l’accès au contenu à l’aide du chiffrement dans les étiquettes de sensibilité
 
@@ -50,7 +49,7 @@ Pour commencer, activez le **chiffrement**vers**Sur**, puis utilisez les options
 2. **Autoriser l’expiration des accès au contenu portant l’étiquette**, à une date spécifique ou au bout d’un certain nombre de jours après l’application de l’étiquette. Après cette période, les utilisateurs ne sont plus en mesure d’ouvrir l’élément étiqueté. Si vous spécifiez une date, elle prend effet le jour choisi à minuit dans votre fuseau horaire actuel. (Notez que certains clients de messagerie peuvent ne pas imposer l'expiration et ne pas afficher les e-mails dont la date d'expiration est dépassée, en raison de leurs mécanismes de mise en cache).
 3. **Autoriser l’accès hors connexion** : Jamais, Toujours ou pendant un nombre de jours déterminé après que l’étiquette a été appliquée. Si vous limitez l’accès hors connexion sur Jamais ou sur un nombre de jours, lorsque ce seuil est atteint, les utilisateurs doivent s’authentifier à nouveau et leur accès est journalisé. Pour plus d’informations, reportez-vous à la section suivante sur la licence d’utilisation de Rights Management.
 
-![Paramètres de chiffrement pour une étiquette de sensibilité](media/Sensitivity_Encryption_settings_for_sensitivity_label.png)
+![Paramètres de chiffrement pour une étiquette de sensibilité](media/Sensitivity-Encryption-settings-for-sensitivity-label.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>Licence d’utilisation de Rights Management pour l’accès en mode hors connexion
 
@@ -71,7 +70,7 @@ Pour ce faire, suivez un processus simple en deux étapes :
 1. Ajoutez tout d’abord les utilisateurs ou les groupes qui vont recevoir les autorisations sur le contenu étiqueté.
 2. Choisissez ensuite les autorisations desquelles les utilisateurs bénéficieront sur le contenu étiqueté.
 
-![Options d’attribution des autorisations aux utilisateurs](media/Sensitivity_Assign_permissions_settings.png)
+![Options d’attribution des autorisations aux utilisateurs](media/Sensitivity-Assign-permissions-settings.png)
 
 ### <a name="add-users-or-groups"></a>Ajouter des utilisateurs ou des groupes
 
@@ -94,13 +93,13 @@ Lorsque vous choisissez les autorisations à attribuer à ces utilisateurs ou ce
 
 Pour plus d’informations sur chacune des autorisations spécifiques, reportez-vous à [Descriptions et droits d’utilisation](https://docs.microsoft.com/fr-FR/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
 
-![Options de choix d’autorisations prédéfinies ou personnalisées](media/Sensitivity_Choose_permissions_settings.png)
+![Options de choix d’autorisations prédéfinies ou personnalisées](media/Sensitivity-Choose-permissions-settings.png)
 
 Notez qu’une même étiquette peut accorder différentes autorisations à différents utilisateurs. Par exemple, une étiquette unique peut affecter à certains utilisateurs des droits de réviseur et à un autre utilisateur des droits de co-auteur, comme illustré ci-dessous.
 
 Pour ce faire, ajoutez des utilisateurs ou groupes, attribuez-leur des autorisations et enregistrez ces paramètres. Répétez ensuite ces étapes : ajoutez des utilisateurs, attribuez-leur des autorisations et enregistrez les paramètres à chaque fois. Vous pouvez répéter cette procédure autant de fois que nécessaire, afin de définir différentes autorisations pour différents utilisateurs.
 
-![Différents utilisateurs avec différentes autorisations](media/Sensitivity_Multiple_users_permissions.png)
+![Différents utilisateurs avec différentes autorisations](media/Sensitivity-Multiple-users-permissions.png)
 
 ### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>L’émetteur de Rights Management (celui qui applique l’étiquette de sensibilité) bénéficie toujours d’un contrôle total.
 

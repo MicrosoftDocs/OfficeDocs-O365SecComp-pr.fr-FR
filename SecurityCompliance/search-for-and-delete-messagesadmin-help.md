@@ -3,7 +3,7 @@ title: Recherche et suppression de messages - Aide de l’administrateur
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 12/20/2017
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: Les administrateurs peuvent utiliser la cmdlet Search-Mailbox pour faire une recherche dans des boîtes aux lettres utilisateur, puis supprimer des messages d'une boîte aux lettres.
-ms.openlocfilehash: 1288679c7abb643c020d5b1a2a08ae64b7cb403f
-ms.sourcegitcommit: d20defdcf2ac643f0c8c1f2761b0b7f4f4090e5c
+ms.openlocfilehash: bb375bc7a3273e78acb44807e51a1cee0261e7af
+ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34957416"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35014748"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>Recherche et suppression de messages - Aide de l’administrateur
   

@@ -15,17 +15,17 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection inclut des pièces jointes sûres, des liens fiables, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités d’aide à la décision.
-ms.openlocfilehash: 903e089af172d8eac414aea69af75fcd696d5f20
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: ca70aeadb8fdde76fa5d7041fe1f0cf624496c24
+ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408379"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34652657"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365-Protection avancée contre les menaces
 
 > [!IMPORTANT]
-> Cet article est destiné aux clients Office 365 Enterprise et Microsoft 365 Enterprise. Si vous utilisez Outlook.com, Office 365 Home ou Office 365 Personal, et que vous recherchez des informations sur les liens fiables dans Outlook, consultez [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Cet article est destiné aux clients professionnels qui disposent d' [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Si vous utilisez Outlook.com, Office 365 Home ou Office 365 Personal, et que vous recherchez des informations sur les liens fiables dans Outlook, consultez [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 ## <a name="overview"></a>Vue d’ensemble
 
@@ -61,7 +61,7 @@ Les stratégies définies pour votre organisation déterminent le comportement e
 
 ## <a name="view-atp-reports"></a>Afficher les rapports ATP
 
-La protection avancée contre les menaces Office 365 inclut un [tableau de bord de rapports](view-reports-for-atp.md) avancé pour surveiller vos performances ATP. Vous pouvez y accéder via le **tableau de bord rapports >** dans le centre de sécurité _AMP_ Compliance Center. 
+La protection avancée contre les menaces Office 365 inclut un [tableau de bord de rapports](view-reports-for-atp.md) avancé pour surveiller vos performances ATP. Vous pouvez y accéder via le **tableau de bord rapports >** dans le centre de sécurité & conformité. 
 
 La mise à jour des rapports en temps réel vous fournit les dernières informations. Ces rapports fournissent également des recommandations et vous signalent les menaces imminentes. Les rapports prédéfinis sont les suivants: 
 

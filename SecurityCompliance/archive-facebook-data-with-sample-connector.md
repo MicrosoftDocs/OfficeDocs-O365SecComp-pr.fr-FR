@@ -10,23 +10,23 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur natif pour importer des données tierces à partir de sources de données telles que les pages Facebook, Twitter, les pages de la société LinkedIn et le service de recherche instantanée. Cela vous permet d’archiver des données provenant de sources de données tierces dans Office 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la gouvernance des données tierces de votre organisation.
-ms.openlocfilehash: 33972d6d3124841a4cd2636c3d7756ec55f5cfa9
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 2dde58e4d3ead0064e28c1ba1bfc04485c7a25df
+ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852608"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35014703"
 ---
 # <a name="use-a-sample-connector-to-archive-facebook-data-in-office-365-preview"></a>Utiliser un exemple de connecteur pour archiver des données Facebook dans Office 365 (version d’évaluation)
 
 L’exemple de fonctionnalité de connecteur permettant d’archiver des données Facebook dans Office 365 est en aperçu.
 
-Utilisez un exemple de connecteur dans le centre de sécurité & conformité dans Office 365 pour importer et archiver des données à partir d’une source de données tierce, telle que Facebook Business pages, LinkedIn, Twitter et le service de recherche instantanée. Une fois que vous avez configuré et configuré un exemple de connecteur, celui-ci se connecte à la source de données tierce (de manière planifiée), convertit le contenu d’un élément en un format de message électronique, puis importe ces éléments dans une boîte aux lettres dans Office 365.
+Utilisez un exemple de connecteur dans le centre de sécurité & conformité dans Office 365 pour importer et archiver des données à partir de pages d’entreprise Facebook vers Office 365. Une fois que vous avez configuré et configuré un exemple de connecteur, celui-ci se connecte à la page d’entreprise Facebook (de manière planifiée), convertit le contenu des éléments Facebook en format de message électronique, puis importe ces éléments dans une boîte aux lettres dans Office 365.
 
-Une fois les données tierces importées, vous pouvez appliquer les fonctionnalités de conformité d’Office 365 telles que la conservation pour litige, la recherche de contenu, l’archivage inaltérable, l’audit, la surveillance et les stratégies de rétention d’Office 365 aux données tierces. Par exemple, lorsqu’une boîte aux lettres est placée en conservation pour litige ou affectée à une stratégie de rétention, les données tierces sont conservées. Vous pouvez effectuer des recherches dans des données tierces à l’aide de la recherche de contenu ou l’associer à un dépositaire dans un cas avancé de découverte électronique. L’utilisation d’exemples de connecteurs pour importer et archiver des données tierces dans Office 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
+Une fois les données Facebook importées, vous pouvez appliquer les fonctionnalités de conformité d’Office 365 telles que la conservation pour litige, la recherche de contenu, l’archivage inaltérable, l’audit, la surveillance et les stratégies de rétention d’Office 365 aux données Facebook. Par exemple, lorsqu’une boîte aux lettres est placée en conservation pour litige ou affectée à une stratégie de rétention, les données Facebook sont conservées. Vous pouvez rechercher des données tierces à l’aide de la recherche de contenu ou associer la boîte aux lettres dans laquelle les données Facebook sont stockées avec un dépositaire dans un cas avancé de découverte électronique. L’utilisation d’un connecteur pour importer et archiver des données Facebook dans Office 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
 > [!NOTE]
-> Actuellement, seuls les exemples de connecteurs pour les pages d’entreprise Facebook et [Twitter](archive-twitter-data-with-sample-connector.md) sont disponibles pour l’aperçu. D’autres exemples de connecteurs seront bientôt disponibles.
+> Pour l’instant, seuls les exemples de connecteurs pour les pages d’entreprise Facebook et [Twitter](archive-twitter-data-with-sample-connector.md) sont disponibles pour l’aperçu. D’autres exemples de connecteurs seront bientôt disponibles.
 
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>Conditions préalables à la configuration d’un connecteur pour les pages d’entreprise Facebook
@@ -37,9 +37,9 @@ Vous devez remplir les conditions préalables suivantes avant de pouvoir install
 
 - Votre organisation doit disposer d’un abonnement Azure valide. Si vous n’avez pas d’abonnement Azure existant, vous pouvez vous inscrire à l’une de ces options:
 
-    – [Inscrivez-vous pour un abonnement Azure d’une année gratuite](https://azure.microsoft.com/free) 
+    - [Inscrivez-vous pour obtenir un abonnement Azure gratuit d’un an](https://azure.microsoft.com/free) 
 
-    – [Inscrivez-vous pour un abonnement Azure avec paiement en un](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/) clic
+    - [S’inscrire pour un abonnement Azure avec paiement en tant que](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
     > L' [abonnement Azure Active Directory gratuit](use-your-free-azure-ad-subscription-in-office-365.md) qui est inclus avec votre abonnement Office 365 ne prend pas en charge les connecteurs d’exemple dans le centre de sécurité & Compliance Center.
@@ -54,7 +54,7 @@ La première étape consiste à télécharger le code source pour l’applicatio
 
 1. Accédez à [ce site github](https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases). 
 2. Sous la dernière version, cliquez sur le fichier **SampleConnector. zip** .
-3. Enregistrez le fichier ZIP à un emplacement sur votre ordinateur local. Vous allez télécharger ce fichier zip vers Azure à l’étape 4.
+3. Enregistrez le fichier ZIP à un emplacement sur votre ordinateur local. Vous téléchargez ce fichier zip vers Azure à l’étape 4.
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>Étape 2: créer une application dans Azure Active Directory
 
@@ -62,7 +62,7 @@ L’étape suivante consiste à inscrire une nouvelle application dans Azure Act
 
 Pour obtenir des instructions pas à pas, consultez la rubrique [créer une application dans Azure Active Directory](deploy-facebook-connector.md#step-2-create-an-app-in-azure-active-directory).
 
-Lors de l’exécution de cette étape (en suivant les instructions pas à pas), vous enregistrez les informations suivantes dans un fichier texte. Ces valeurs sont utilisées dans les étapes ultérieures du processus de déploiement.
+Lors de l’exécution de cette étape (à l’aide des instructions étape par étape précédentes), vous enregistrerez les informations suivantes dans un fichier texte. Ces valeurs sont utilisées dans les étapes ultérieures du processus de déploiement.
 
 - ID d’application AAD
 - Clé secrète de l’application AAD
@@ -75,7 +75,7 @@ Le connecteur Facebook que vous déployez pour votre organisation télécharge l
 
 Pour obtenir des instructions détaillées, reportez-vous à la rubrique [créer un compte de stockage Azure](deploy-facebook-connector.md#step-3-create-an-azure-storage-account).
 
-Lors de l’exécution de cette étape (en suivant les instructions pas à pas), vous enregistrez l’URI de chaîne de connexion qui est généré. Vous utiliserez cette chaîne lors de la création d’une ressource d’application Web dans Azure à l’étape 4.
+Lors de l’exécution de cette étape (en suivant les instructions pas à pas), vous enregistrez l’URI de chaîne de connexion qui est généré. Vous utilisez cette chaîne lors de la création d’une ressource d’application Web dans Azure à l’étape 4.
 
 ## <a name="step-4-create-a-web-app-resource-in-azure"></a>Étape 4: créer une ressource d’application Web dans Azure
 

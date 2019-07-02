@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8e67c3c8a693e627bade9e581f0f1e246bf6802a
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 091d6f8835ae1aae2f075f0b510954255c3a6a5c
+ms.sourcegitcommit: e323610df2df71c84f536e8a38650d33d8069e41
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151886"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34703837"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>Collecter des données pour un cas dans Advanced eDiscovery
 
@@ -34,6 +34,7 @@ Cliquez sur **nouvelle recherche** sous l’onglet **recherches** pour démarrer
 Après la création d’une recherche, une page de menu volant contenant des informations s’affiche. Notez que les **statistiques** et les boutons d' **Aperçu** sont initialement estompés, car la recherche n’est pas encore terminée. Vous pouvez suivre la progression de la recherche dans l’onglet **recherches** .
 
 ## <a name="view-search-results-and-statistics"></a>Afficher les statistiques et les résultats de la recherche
+
 Il existe deux composants d’une recherche de contenu: statistiques (estimations) et aperçu. À mesure que chacun de ces composants est complet, l’état affiché dans les colonnes correspondantes de l’onglet **recherches** passe de **** de à à **en cours** à **terminé**.
 
 Une fois l’estimation de la recherche terminée, cliquez sur la recherche pour afficher la page de menu volant, qui affiche certaines statistiques de haut niveau sur les résultats de la recherche. À ce stade, le bouton **statistiques** est actif. Vous pouvez cliquer dessus pour afficher les statistiques de recherche, telles que:

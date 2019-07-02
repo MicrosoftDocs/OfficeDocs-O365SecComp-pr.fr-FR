@@ -3,7 +3,7 @@ title: Éléments recherchés par les types d’informations sensibles
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: 05/20/2019
 audience: Admin
 search.appverid: MET150
 ms.topic: reference
@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité d’Office 365 inclut 80 types d’informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP recherche pour chaque type.
-ms.openlocfilehash: dc2958af5b64f9e9318faab5d55ed340404f1857
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 1e1aeea164c15bb64c6040f7821bf006ee8ff42f
+ms.sourcegitcommit: b8737e52724a343d99082961bc113bba819d5681
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077550"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34247297"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Éléments recherchés par les types d’informations sensibles
 
@@ -128,7 +128,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Identité 
 - Identification de la carte d’identité nationale 
 - DNI 
-- CARTE d’interface réseau nationale du registre des personnes 
+- Carte d’interface réseau nationale du registre des personnes 
 - Documento Nacional de Identidad 
 - Registro Nacional de las Personas 
 - Identidad 
@@ -508,17 +508,16 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - La somme de contrôle est correcte.
 
 ```
-    <!-- Australia Tax File Number -->
-<Entity id="e29bc95f-ff70-4a37-aa01-04d17360a4c5" patternsProximity="300" recommendedConfidence="85">
-    
-  <Pattern confidenceLevel="85">
+   <!-- Australia Tax File Number -->
+    <Entity id="e29bc95f-ff70-4a37-aa01-04d17360a4c5" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_australian_tax_file_number" />
+        <Match idRef="Keyword_Australia_Tax_File_Number" />
         <Any minMatches="0" maxMatches="0">
-          <Match idRef="Keyword_Australia_Tax_File_Number" />
           <Match idRef="Keyword_number_exclusions" />
         </Any>
-  </Pattern>
-</Entity>
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>Mots clés
@@ -6142,6 +6141,6 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - NUMÉROS 
 - SSN 
 - SOCIALE 
-- IDENTIFIant SSID 
+- Identifiant SSID 
    
 

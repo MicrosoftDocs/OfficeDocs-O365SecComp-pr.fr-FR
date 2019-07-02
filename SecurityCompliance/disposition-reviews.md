@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de rétention qui conserve le contenu dans Microsoft 365, vous pouvez choisir de déclencher une révision de disposition à la fin de la période de rétention.
-ms.openlocfilehash: 6d4a8993efb3046e7f79f4e76a921921abf6d3e6
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 06b85d1ac4c8ed0527a8018129e146fee074d942
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153426"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199683"
 ---
 # <a name="overview-of-disposition-reviews"></a>Vue d’ensemble des révisions de destruction
 
@@ -33,7 +33,7 @@ Lorsque le contenu atteint la fin de sa période de rétention, il existe plusie
     
 - Renvoyer le contenu aux clients ou le transférer vers une autre organisation.
     
-Lorsque vous créez une étiquette de rétention dans le centre de conformité Microsoft 365, le centre de sécurité Microsoft 365 365 ou le centre de sécurité &, vous pouvez choisir de déclencher une révision de destruction à la fin de la période de rétention. Dans une révision de disposition:
+Lorsque vous créez une étiquette de rétention dans le centre de conformité Microsoft 365, le centre de sécurité Microsoft 365 ou le centre de sécurité & conformité Office 365, vous pouvez choisir de déclencher une révision de destruction à la fin de la période de rétention. Dans une révision de disposition:
   
 - Les personnes que vous choisissez reçoivent une notification par courrier électronique dont le contenu doit être révisé. Ces relecteurs peuvent être des utilisateurs individuels, des groupes de distribution ou des groupes de sécurité ou des groupes Office 365. Notez que les notifications sont envoyées chaque semaine.
     
@@ -54,7 +54,7 @@ Lorsque vous créez une étiquette de rétention dans le centre de conformité M
   
 Une révision de disposition peut inclure du contenu dans des boîtes aux lettres Exchange, des sites SharePoint, des comptes OneDrive et des groupes Office 365. Le contenu en attente d’une révision de disposition dans ces emplacements est supprimé uniquement lorsqu’un relecteur choisit de supprimer définitivement le contenu.
   
-![Page des dispositions dans le centre de sécurité et conformité](media/Retention_Dispositions_v2_page.png)
+![Page des dispositions dans le centre de sécurité et conformité](media/Retention-Dispositions-v2-page.png)
 
 ## <a name="setting-up-the-disposition-review-by-creating-a-retention-label"></a>Configuration de la révision de la disposition en créant une étiquette de rétention
 
@@ -74,7 +74,7 @@ Lorsqu’un réviseur est averti par courrier électronique que le contenu est p
 
 Une fois que vous avez sélectionné une étiquette de rétention, la page suivante affiche toutes les impositions en attente pour cette étiquette.
 
-![Options de disposition](media/Retention_Disposition_options_v2.png)
+![Options de disposition](media/Retention-Disposition-options-v2.png)
 
 Le réviseur peut ensuite: 
   
@@ -118,13 +118,13 @@ Sur la page **destruction en attente** , vous pouvez afficher les impositions en
     
 - L’onglet **éléments supprimés** indique que les éléments ont été approuvés pour suppression lors d’une révision de destruction et qu’ils sont désormais supprimés définitivement. Les éléments auxquels une étiquette de rétention différente a été appliquée ou leur période de rétention étendue dans le cadre d’une révision ne s’affichent pas ici.
 
-![Onglets de disposition](media/Retention_Disposition_tabs.png)
+![Onglets de disposition](media/Retention-Disposition-tabs.png)
     
 ### <a name="filter-the-disposition-views"></a>Filtrer les vues de disposition
 
 Vous pouvez filtrer ces affichages par étiquette de rétention ou plage horaire. Pour les impositions en attente, la plage horaire est basée sur la date d’expiration. Pour les éléments supprimés, la plage horaire est basée sur la date de suppression.
   
-![Options de filtre de disposition](media/Retention_filter_options.png)
+![Options de filtre de disposition](media/Retention-filter-options.png)
 
 ### <a name="export-the-disposition-items"></a>Exportation des éléments de disposition
 

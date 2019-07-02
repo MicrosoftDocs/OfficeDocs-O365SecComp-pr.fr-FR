@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/18/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,13 +13,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Les types d'informations sensibles recherchent un modèle spécifique et le corroborent en garantissant une mise en forme appropriée, en appliquant des checksums et en recherchant des mots clés pertinents ou d'autres informations. Certaines de ces fonctionnalités sont effectuées par des fonctions internes. Cette rubrique explique ce que ces fonctions recherchent, pour vous aider à comprendre le fonctionnement des types d’informations sensibles prédéfinis.
-ms.openlocfilehash: d0aeb38001f42d9db2b124466b02746ee106b078
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Les types d’informations sensibles recherchent un modèle spécifique et le corroborent en garantissant une mise en forme appropriée, en appliquant des checksums et en recherchant des mots clés pertinents ou d’autres informations. Certaines de ces fonctionnalités sont effectuées par des fonctions internes. Cette rubrique explique ce que ces fonctions recherchent, pour vous aider à comprendre le fonctionnement des types d’informations sensibles prédéfinis.
+ms.openlocfilehash: 044920a7ff28ffc1c4338a642bc130ee07ef7264
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266916"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34078000"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>Éléments recherchés par les fonctions DLP
 
@@ -103,9 +103,9 @@ Noms de mois acceptés :
     
 - Italien
     
-  - gennaio, febbraio, marzo, Aprile, Maggio, Giugno, luglio, Agosto, Settembre, Ottobre, novembre, dicembre
+  - gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre
     
-  - Genn. febbr. détériore. avancé. Magg. giugno luglio AG. Sett. Verlag. novembre. DIC.
+  - genn. febbr. détériore. avancé. magg. giugno luglio AG. sett. Verlag. novembre. DIC.
     
 - Portugais
     
@@ -115,7 +115,7 @@ Noms de mois acceptés :
     
 - Espagnol
     
-  - Enero, febrero, marzo, Abril, Mayo, junio, Julio, Agosto, septiembre, octubre, noviembre, diciembre
+  - enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre
     
   - enero fév. marzo abr. Mayo Jun. juil. agosto sept./Set. OPO. novembre. DIC.
     

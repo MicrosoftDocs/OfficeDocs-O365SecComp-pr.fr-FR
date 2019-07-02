@@ -1,5 +1,5 @@
 ---
-title: Rechercher dans le journal d’audit dans le centre de sécurité & Compliance Center
+title: Rechercher dans le journal d’audit dans le centre de sécurité & conformité
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: 'Utilisez le centre de sécurité & Compliance Center pour rechercher le journal d’audit unifié afin d’afficher l’activité des utilisateurs et des administrateurs dans votre organisation Office 365. '
-ms.openlocfilehash: cb44dd3d7c87928b325a72e783feea85e252dc49
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+description: 'Utilisez le centre de sécurité & conformité pour rechercher le journal d’audit unifié afin d’afficher l’activité des utilisateurs et des administrateurs dans votre organisation Office 365. '
+ms.openlocfilehash: 6f27929da0a802e99c2b6373ba7ae9791776c67e
+ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547989"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35113288"
 ---
-# <a name="search-the-audit-log-in-the-security--compliance-center"></a>Rechercher dans le journal d’audit dans le centre de sécurité & Compliance Center
+# <a name="search-the-audit-log-in-the-security--compliance-center"></a>Rechercher dans le journal d’audit dans le centre de sécurité & conformité
 
 ## <a name="introduction"></a>Introduction
 
@@ -31,9 +31,6 @@ Vous avez besoin de savoir si un utilisateur a affiché un document spécifique 
 - Activité des utilisateurs dans SharePoint Online et OneDrive entreprise
     
 - Activité de l’utilisateur dans Exchange Online (journalisation d’audit de boîte aux lettres Exchange)
-    
-    > [!IMPORTANT]
-    > L’enregistrement d’audit de boîte aux lettres doit être activé pour chaque boîte aux lettres d’utilisateur avant que l’activité utilisateur dans Exchange Online ne soit enregistrée. Pour plus d’informations, consultez la rubrique [activation de l’audit des boîtes aux lettres dans Office 365](enable-mailbox-auditing.md).
   
 - Activité d’administration dans SharePoint Online
     
@@ -74,7 +71,7 @@ Veillez à lire les éléments suivants avant de commencer à rechercher dans le
 - Vous devez disposer du rôle journaux d’audit en affichage seul ou journaux d’audit dans Exchange Online pour effectuer des recherches dans le journal d’audit Office 365. Par défaut, ces rôles sont attribués aux groupes de rôles gestion de la conformité et gestion de l’organisation dans la page **autorisations** du centre d’administration Exchange. Notez que les administrateurs globaux dans Office 365 et Microsoft 365 sont automatiquement ajoutés en tant que membres du groupe de rôles gestion de l’organisation dans Exchange Online. Pour permettre à un utilisateur d’effectuer des recherches dans le journal d’audit Office 365 avec le niveau de privilèges minimum, vous pouvez créer un groupe de rôles personnalisé dans Exchange Online, ajouter les journaux d’audit en affichage seul ou les journaux d’audit, puis ajouter l’utilisateur en tant que membre du nouveau groupe de rôles. Pour plus d’informations, consultez la rubrique [gérer des groupes de rôles dans Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
     
     > [!IMPORTANT]
-    > Si vous attribuez à un utilisateur le rôle journaux d’audit en affichage seul ou journaux d’audit sur la page des **autorisations** dans le centre de sécurité _AMP_ Compliance Center, il ne pourra pas effectuer de recherche dans le journal d’audit Office 365. Vous devez attribuer les autorisations dans Exchange Online. Cela est dû au fait que la cmdlet sous-jacente utilisée pour effectuer des recherches dans le journal d’audit est une applet de commande Exchange Online. 
+    > Si vous attribuez à un utilisateur le rôle journaux d’audit en affichage seul ou journaux d’audit sur la page **autorisations** dans le centre de sécurité & conformité, il ne pourra pas effectuer de recherche dans le journal d’audit Office 365. Vous devez attribuer les autorisations dans Exchange Online. Cela est dû au fait que la cmdlet sous-jacente utilisée pour effectuer des recherches dans le journal d’audit est une applet de commande Exchange Online. 
   
 - Lorsqu’une activité auditée est effectuée par un utilisateur ou un administrateur, un enregistrement d’audit est généré et stocké dans le journal d’audit Office 365 de votre organisation. La durée pendant laquelle un enregistrement d’audit est conservé (et pouvant faire l’objet d’une recherche dans le journal d’audit) dépend de votre abonnement Office 365, ainsi que du type de licence affecté à un utilisateur spécifique.
 
@@ -99,9 +96,9 @@ Veillez à lire les éléments suivants avant de commencer à rechercher dans le
 
     Pour plus d’informations, consultez la rubrique [désactiver la recherche de journal d’audit dans Office 365](turn-audit-log-search-on-or-off.md).
     
-- Comme indiqué précédemment, la cmdlet sous-jacente utilisée pour effectuer des recherches dans le journal d’audit est une applet de commande Exchange Online, qui est **Search-UnifiedAuditLog**. Cela signifie que vous pouvez utiliser cette applet de commande pour effectuer une recherche dans le journal d’audit Office 365 au lieu d’utiliser la page de **recherche de journal d’audit** dans le centre de sécurité _AMP_ Compliance Center. Vous devez exécuter cette applet de commande dans PowerShell à distance connecté à votre organisation Exchange Online. Pour plus d’informations, consultez la rubrique [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
+- Comme indiqué précédemment, la cmdlet sous-jacente utilisée pour effectuer des recherches dans le journal d’audit est une applet de commande Exchange Online, qui est **Search-UnifiedAuditLog**. Cela signifie que vous pouvez utiliser cette applet de commande pour rechercher dans le journal d’audit Office 365 au lieu d’utiliser la page de **recherche de journal d’audit** dans le centre de sécurité & conformité. Vous devez exécuter cette applet de commande dans PowerShell à distance connecté à votre organisation Exchange Online. Pour plus d’informations, consultez la rubrique [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
     
-- Si vous souhaitez télécharger par programme des données à partir du journal d’audit Office 365, nous vous recommandons d’utiliser l’API d’activité de gestion d’Office 365 au lieu d’utiliser un script PowerShell. L’API d’activité de gestion Office 365 est un service REST qui vous permet de développer des solutions d’opérations, de sécurité et de surveillance de la conformité pour votre organisation. Pour plus d’informations, voir référence de l' [API activité de gestion Office 365](https://go.microsoft.com/fwlink/?linkid=852309).
+- Si vous souhaitez télécharger par programme des données à partir du journal d’audit Office 365, nous vous recommandons d’utiliser l’API d’activité de gestion d’Office 365 au lieu d’utiliser un script PowerShell. L’API d’activité de gestion Office 365 est un service REST qui vous permet de développer des solutions d’opérations, de sécurité et de surveillance de la conformité pour votre organisation. Pour plus d’informations, voir référence de l' [API activité de gestion Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).
     
 - L’affichage de l’entrée de journal d’audit correspondante dans les résultats de la recherche peut prendre jusqu’à 30 minutes ou jusqu’à 24 heures. Le tableau suivant indique le temps nécessaire pour les différents services dans Office 365.
     
@@ -149,7 +146,7 @@ Voici le processus de recherche dans le journal d’audit dans Office 365.
 1. Accédez à [https://protection.office.com](https://protection.office.com).
     
     > [!TIP]
-    > Utilisez une session de navigation privée (pas une session normale) pour accéder au centre de sécurité & Compliance, car cela empêchera les informations d’identification avec lesquelles vous avez ouvert une session. Pour ouvrir une session de navigation InPrivate dans Internet Explorer ou Microsoft Edge, appuyez simplement sur CTRL + MAJ + P. Pour ouvrir une session de navigation privée dans Google Chrome (appelée fenêtre Incognito), appuyez sur CTRL + MAJ + N. 
+    > Utilisez une session de navigation privée (pas une session normale) pour accéder au centre de sécurité & conformité, car cela empêchera les informations d’identification avec lesquelles vous avez ouvert une session. Pour ouvrir une session de navigation InPrivate dans Internet Explorer ou Microsoft Edge, appuyez simplement sur CTRL + MAJ + P. Pour ouvrir une session de navigation privée dans Google Chrome (appelée fenêtre Incognito), appuyez sur CTRL + MAJ + N. 
   
 2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
     
@@ -266,12 +263,12 @@ Vous pouvez exporter les résultats d’une recherche de journal d’audit dans 
     
 2. Cliquez sur **Exporter les résultats** , puis sélectionnez l’une des options suivantes: 
     
-  - **Enregistrer les résultats chargés** Choisissez cette option pour exporter uniquement les entrées affichées sous **résultats** dans la page * * Search log Search * *. Le fichier CSV téléchargé contient les mêmes colonnes (et données) que celles affichées sur la page (date, utilisateur, activité, élément et détails). Une colonne supplémentaire (nommée **More**) est incluse dans le fichier CSV qui contient plus d’informations à partir de l’entrée du journal d’audit. Étant donné que vous exportez les mêmes résultats qui sont chargés (et affichables) sur la page de **recherche du journal d’audit** , un maximum de 5 000 entrées sont exportées. 
+     - **Enregistrer les résultats chargés** : choisissez cette option pour exporter uniquement les entrées affichées sous **résultats** dans la page **recherche du journal d’audit** . Le fichier CSV téléchargé contient les mêmes colonnes (et données) que celles affichées sur la page (date, utilisateur, activité, élément et détails). Une colonne supplémentaire (nommée **More**) est incluse dans le fichier CSV qui contient plus d’informations à partir de l’entrée du journal d’audit. Étant donné que vous exportez les mêmes résultats qui sont chargés (et affichables) sur la page de **recherche du journal d’audit** , un maximum de 5 000 entrées sont exportées. 
     
-  - **Télécharger tous les résultats** Choisissez cette option pour exporter toutes les entrées du journal d’audit Office 365 correspondant aux critères de recherche. Pour un grand ensemble de résultats de recherche, choisissez cette option pour télécharger toutes les entrées à partir du journal d’audit en plus des résultats 5 000 qui peuvent être affichés sur la page de **recherche du journal d’audit** . Cette option télécharge les données brutes à partir du journal d’audit vers un fichier CSV, et contient des informations supplémentaires provenant de l’entrée du journal d’audit dans une colonne nommée **AuditData**. Le téléchargement du fichier peut prendre plus de temps si vous choisissez cette option d’exportation, car le fichier peut être plus volumineux que celui téléchargé si vous choisissez l’autre option.
+     - **Télécharger tous les résultats** : choisissez cette option pour exporter toutes les entrées du journal d’audit Office 365 correspondant aux critères de recherche. Pour un grand ensemble de résultats de recherche, choisissez cette option pour télécharger toutes les entrées à partir du journal d’audit en plus des résultats 5 000 qui peuvent être affichés sur la page de **recherche du journal d’audit** . Cette option télécharge les données brutes à partir du journal d’audit vers un fichier CSV, et contient des informations supplémentaires provenant de l’entrée du journal d’audit dans une colonne nommée **AuditData**. Le téléchargement du fichier peut prendre plus de temps si vous choisissez cette option d’exportation, car le fichier peut être plus volumineux que celui téléchargé si vous choisissez l’autre option.
     
-    > [!IMPORTANT]
-    > Vous pouvez télécharger un maximum de 50 000 entrées dans un fichier CSV à partir d’une seule recherche de journal d’audit. Si 50 000 entrées sont téléchargées dans le fichier CSV, vous pouvez probablement supposer qu’il y a plus de 50 000 événements correspondant aux critères de recherche. Pour exporter plus de cette limite, essayez d’utiliser une plage de dates pour réduire le nombre d’entrées du journal d’audit. Il se peut que vous deviez exécuter plusieurs recherches avec des plages de dates plus petites pour exporter plus de 50 000 entrées. 
+       > [!IMPORTANT]
+       > Vous pouvez télécharger un maximum de 50 000 entrées dans un fichier CSV à partir d’une seule recherche de journal d’audit. Si 50 000 entrées sont téléchargées dans le fichier CSV, vous pouvez probablement supposer qu’il y a plus de 50 000 événements correspondant aux critères de recherche. Pour exporter plus de cette limite, essayez d’utiliser une plage de dates pour réduire le nombre d’entrées du journal d’audit. Il se peut que vous deviez exécuter plusieurs recherches avec des plages de dates plus petites pour exporter plus de 50 000 entrées. 
   
 3. Une fois que vous avez sélectionné une option d’exportation, un message s’affiche en bas de la fenêtre qui vous invite à ouvrir le fichier CSV, à l’enregistrer dans le dossier téléchargements, ou à l’enregistrer dans un dossier spécifique.
 
@@ -301,13 +298,13 @@ Cliquez sur l’un des liens suivants pour accéder à une table spécifique.
 ||||
 |:-----|:-----|:-----|
 |[Activités de fichier et de page](#file-and-page-activities)<br/> |[Activités de dossier](#folder-activities)<br/> |[Activités de liste SharePoint](#sharepoint-list-activities)<br/>|
-|[Activités de partage et d’accès aux demandes](#sharing-and-access-request-activities)<br/> |[Activités de synchronisation](#synchronization-activities)<br/> |[Activités d’administration de site](#site-administration-activities)<br/> |
-|[Activités de boîte aux lettres Exchange](#exchange-mailbox-activities)<br/> |[Activités Sway](#sway-activities) <br/> |[Activités d’administration des utilisateurs](#user-administration-activities) <br/> |
-|[Activités d’administration du groupe Azure AD](#azure-ad-group-administration-activities) <br/> |[Activités d’administration des applications](#application-administration-activities) <br/> |[Activités d’administration des rôles](#role-administration-activities) <br/> |
-|[Activités d’administration d’annuaire](#directory-administration-activities) <br/>|[activités eDiscovery](#ediscovery-activities) <br/> |[Activités eDiscovery avancées](#advanced-ediscovery-activities)<br/> |
-|[Activités Power BI](#power-bi-activities) <br/> |[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|[Activités de Microsoft teams](#microsoft-teams-activities) <br/> |
-|[Activités Yammer](#yammer-activities) <br/> |[Activités de flux Microsoft](#microsoft-flow-activities) <br/>|[Activités Microsoft PowerApp](#microsoft-powerapps)<br/>|
-|[Activités de Microsoft Stream](#microsoft-stream-activities) <br/>|[Activités d’administration d’Exchange](#exchange-admin-audit-log)<br/>|
+|[Activités de partage et d’accès aux demandes](#sharing-and-access-request-activities)<br/> |[Activités de synchronisation](#synchronization-activities)<br/> |[Activités des autorisations de site](#site-permissions-activities)<br/> |
+|[Activités d’administration de site](#site-administration-activities)<br/> |[Activités de boîte aux lettres Exchange](#exchange-mailbox-activities)<br/> |[Activités Sway](#sway-activities) <br/> |
+|[Activités d’administration des utilisateurs](#user-administration-activities) <br/> |[Activités d’administration du groupe Azure AD](#azure-ad-group-administration-activities) <br/> |[Activités d’administration des applications](#application-administration-activities) <br/> |
+|[Activités d’administration des rôles](#role-administration-activities) <br/> |[Activités d’administration d’annuaire](#directory-administration-activities) <br/>|[activités eDiscovery](#ediscovery-activities) <br/> |
+|[Activités eDiscovery avancées](#advanced-ediscovery-activities)<br/> |[Activités Power BI](#power-bi-activities) <br/> |[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|
+|[Activités de Microsoft teams](#microsoft-teams-activities) <br/> |[Activités Yammer](#yammer-activities) <br/> |[Activités de flux Microsoft](#microsoft-flow-activities) <br/>|
+|[Activités Microsoft PowerApp](#microsoft-powerapps)<br/>|[Activités de Microsoft Stream](#microsoft-stream-activities) <br/>|[Activités d’administration d’Exchange](#exchange-admin-audit-log)<br/>|
 ||||
   
 ### <a name="file-and-page-activities"></a>Activités de fichier et de page
@@ -318,12 +315,16 @@ Le tableau suivant décrit les activités de fichier et de page dans SharePoint 
 |:-----|:-----|:-----|
 |Fichier accédé  <br/> |FileAccessed  <br/> |Un compte d’utilisateur ou système accède à un fichier.  <br/> |
 |(aucun)  <br/> |FileAccessedExtended  <br/> |Ceci est lié à l’activité «accès au fichier» (FileAccessed). Un événement FileAccessedExtended est enregistré lorsque la même personne accède en permanence à un fichier pendant une période prolongée (jusqu’à 3 heures). L’objectif de la journalisation des événements FileAccessedExtended est de réduire le nombre d’événements FileAccessed enregistrés lors d’un accès permanent à un fichier. Cela permet de réduire le bruit de plusieurs enregistrements FileAccessed pour ce qui est essentiellement la même activité utilisateur et vous permet de vous concentrer sur l’événement initial (et plus important) FileAccessed.  <br/> |
+|Étiquette de stratégie de conformité modifiée<br/> |ComplianceSettingChanged<br/> |Une étiquette de rétention a été appliquée à un document ou supprimée de celui-ci. Cet événement est déclenché lorsqu’une étiquette de rétention est appliquée manuellement ou automatiquement à un message.<br/> |
+|État de l’enregistrement modifié sur verrouillé<br/> |LockRecord<br/> |État de l’enregistrement d’une étiquette de rétention qui classifie un document en tant qu’enregistrement verrouillé. Cela signifie que le document ne peut pas être modifié ou supprimé. Seuls les utilisateurs qui disposent au moins de l’autorisation de collaborateur pour un site peuvent modifier l’état de l’enregistrement d’un document.<br/> |
+|État de l’enregistrement modifié sur déverrouillé<br/> |UnlockRecord<br/> |État de l’enregistrement d’une étiquette de rétention qui classifie un document en tant qu’enregistrement déverrouillé. Cela signifie que le document peut être modifié ou supprimé. Seuls les utilisateurs qui disposent au moins de l’autorisation de collaborateur pour un site peuvent modifier l’état de l’enregistrement d’un document.<br/><br/> |
 |Fichier archivé  <br/> |FileCheckedIn  <br/> |Un utilisateur archive un document qu’il a extrait d’une bibliothèque de documents.  <br/> |
 |Fichier extrait  <br/> |FileCheckedOut  <br/> |Un utilisateur extrait un document situé dans une bibliothèque de documents. Les utilisateurs peuvent extraire et apporter des modifications aux documents partagés avec eux.  <br/> |
 |Fichier copié  <br/> |FileCopied  <br/> |Un utilisateur copie un document à partir d’un site. Le fichier copié peut être enregistré dans un autre dossier sur le site.  <br/> |
 |Fichier supprimé  <br/> |FileDeleted  <br/> |Un utilisateur supprime un document d’un site.  <br/> |
 |Fichier supprimé de la corbeille  <br/> |FileDeletedFirstStageRecycleBin  <br/> |Un utilisateur supprime un fichier de la corbeille d’un site.  <br/> |
 |Fichier supprimé de la Corbeille secondaire  <br/> |FileDeletedSecondStageRecycleBin  <br/> |Un utilisateur supprime un fichier de la Corbeille secondaire d’un site.  <br/> |
+|Étiquette de stratégie de conformité des enregistrements supprimés<br/> |ComplianceRecordDelete<br/> |Un document qui a été classé comme enregistrement a été supprimé. Un document est considéré comme un enregistrement lorsqu’une étiquette de rétention qui classifie le contenu en tant qu’enregistrement est appliquée au document. <br/> |
 |Incompatibilité de la sensibilité des documents détectés <br/>|DocumentSensitivityMismatchDetected<br/>|Un utilisateur charge un document classé avec une étiquette de sensibilité dont la priorité est supérieure à l’étiquette de sensibilité appliquée au site vers lequel le document est chargé. Remarque Cet événement n’est pas déclenché si l’étiquette de sensibilité appliquée à un site a une priorité plus élevée que l’étiquette de sensibilité appliquée à un document qui est chargé sur le site. Pour plus d’informations sur la priorité de l’étiquette de sensibilité, consultez la section «priorité des étiquettes» dans [vue d’ensemble des étiquettes de sensibilité](sensitivity-labels.md#label-priority-order-matters).<br/>|
 |Programmes malveillants détectés dans le fichier  <br/> |FileMalwareDetected  <br/> |Le moteur de protection antivirus SharePoint détecte un programme malveillant dans un fichier.  <br/> |
 |Extraction des fichiers ignorés  <br/> |FileCheckOutDiscarded  <br/> |Un utilisateur ignore (ou annule) un fichier extrait. Les modifications qu’il a apportées au fichier le temps de son extraction sont ignorées et ne sont pas enregistrées dans la version du document dans la bibliothèque de documents.  <br/> |
@@ -398,12 +399,12 @@ Le tableau suivant décrit les activités de partage d’utilisateurs et de dema
   
 |**Nom convivial**|**Opération**|**Description**|
 |:-----|:-----|:-----|
+|Niveau d’autorisation ajouté à la collection de sites  <br/> |PermissionLevelAdded  <br/> |Un niveau d’autorisation a été ajouté à une collection de sites.  <br/> |
 |Demande d’accès acceptée  <br/> |AccessRequestAccepted  <br/> |Une demande d’accès à un site, un dossier ou un document a été acceptée et l’utilisateur à l’origine de la demande a reçu l’autorisation d’accès.  <br/> |
 |Invitation de partage acceptée  <br/> |SharingInvitationAccepted  <br/> |Un utilisateur (membre ou invité) a accepté une invitation de partage et a reçu l’autorisation d’accéder à une ressource. Cet événement inclut des informations sur l’utilisateur qui a été invité et l’adresse de messagerie utilisée pour accepter l’invitation (elles peuvent être différentes). Cette activité est souvent accompagnée d’un deuxième événement qui décrit le mode d’accès à la ressource accordé à l’utilisateur, par exemple, l’ajout de l’utilisateur à un groupe ayant accès à la ressource.  <br/> |
-|Niveau d’autorisation ajouté à la collection de sites  <br/> |PermissionLevelAdded  <br/> |Un niveau d’autorisation a été ajouté à une collection de sites.  <br/> |
 |Invitation de partage bloquée  <br/> |SharingInvitationBlocked  <br/> | Une invitation de partage envoyée par un utilisateur de votre organisation est bloquée en raison d’une stratégie de partage externe qui autorise ou refuse le partage externe en fonction du domaine de l’utilisateur cible. Dans ce cas, l’invitation de partage a été bloquée pour les raisons suivantes:  <br/>  Le domaine de l’utilisateur cible n’est pas inclus dans la liste des domaines autorisés.  <br/>  Ou  <br/>  Le domaine de l’utilisateur cible est inclus dans la liste des domaines bloqués.  <br/>  Pour plus d’informations sur l’autorisation ou le blocage du partage externe basé sur des domaines, voir [Restricted Domains sharing in SharePoint Online et OneDrive entreprise](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9).  <br/> |
-|Création d’un lien partageant une société  <br/> |CompanyLinkCreated  <br/> |Un utilisateur a créé un lien à l’échelle de l’entreprise vers une ressource. les liens à l’échelle de l’entreprise ne peuvent être utilisés que par les membres de votre organisation. Ils ne peuvent pas être utilisés par les invités.  <br/> |
 |Demande d’accès créée  <br/> |AccessRequestCreated  <br/> |Un utilisateur demande l’accès à un site, un dossier ou un document auquel il n’est pas autorisé à accéder.  <br/> |
+|Création d’un lien partageant une société  <br/> |CompanyLinkCreated  <br/> |Un utilisateur a créé un lien à l’échelle de l’entreprise vers une ressource. les liens à l’échelle de l’entreprise ne peuvent être utilisés que par les membres de votre organisation. Ils ne peuvent pas être utilisés par les invités.  <br/> |
 |Création d’un lien anonyme  <br/> |AnonymousLinkCreated  <br/> |Un utilisateur a créé un lien anonyme vers une ressource. Toute personne disposant de ce lien peut accéder à la ressource sans avoir à être authentifiée.  <br/> |
 |Lien sécurisé créé  <br/> |SecureLinkCreated  <br/> |Un lien de partage sécurisé a été créé sur cet élément.  <br/> |
 |Invitation de partage créée  <br/> |SharingInvitationCreated  <br/> |Un utilisateur a partagé une ressource dans SharePoint Online ou OneDrive entreprise avec un utilisateur qui n’est pas dans l’annuaire de votre organisation.  <br/> |
@@ -503,27 +504,32 @@ Le tableau suivant répertorie les événements qui résultent de tâches d’ad
   
 ### <a name="exchange-mailbox-activities"></a>Activités de boîte aux lettres Exchange
   
-Le tableau suivant répertorie les activités qui peuvent être consignées par l’enregistrement d’audit de boîte aux lettres. Les activités de boîte aux lettres effectuées par le propriétaire de la boîte aux lettres, un utilisateur délégué ou un administrateur sont journalisées. Par défaut, l’audit des boîtes aux lettres dans Office 365 n’est pas activé. La journalisation d’audit des boîtes aux lettres doit être activée pour chaque boîte aux lettres avant que l’activité de la boîte aux lettres ne soit enregistrée. Pour plus d’informations, consultez la rubrique [activation de l’audit des boîtes aux lettres dans Office 365](https://go.microsoft.com/fwlink/p/?LinkID=626109).
+Le tableau suivant répertorie les activités qui peuvent être consignées par l’enregistrement d’audit de boîte aux lettres. Les activités de boîte aux lettres effectuées par le propriétaire de la boîte aux lettres, un utilisateur délégué ou un administrateur sont automatiquement consignées dans le journal d’audit Office 365 pendant 90 jours. Notez qu’un administrateur peut désactiver l’enregistrement d’audit des boîtes aux lettres pour tous les utilisateurs de votre organizatin. Dans ce cas, aucune action de boîte aux lettres n’est enregistrée pour les utilisateurs. Pour plus d’informations, consultez la rubrique [Manage Mailbox Auditing](enable-mailbox-auditing.md).
+
+ Vous pouvez également rechercher des activités de boîte aux lettres à l’aide de la cmdlet [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) dans Exchange Online PowerShell. 
   
 |**Nom convivial**|**Opération**|**Description**|
 |:-----|:-----|:-----|
-|Ajout des autorisations de boîte aux lettres déléguée  <br/> |Add-MailboxPermission  <br/> |Un administrateur a attribué l’autorisation de boîte aux lettres FullAccess à un utilisateur (appelé délégué) à la boîte aux lettres d’une autre personne. L’autorisation FullAccess permet au délégué d’ouvrir la boîte aux lettres de l’autre personne, de lire et de gérer le contenu de la boîte aux lettres.  <br/> |
-|Message classifié en tant qu’enregistrement  <br/> |ApplyRecordLabel<br/> |Un message a été classé comme un enregistrement. Cela se produit lorsqu’une étiquette de rétention qui classifie le contenu en tant qu’enregistrement est manuellement ou automatiquement appliquée à un message.<br/> |
+|Ajout des autorisations de boîte aux lettres déléguée  <br/> |AddMailboxPermissions  <br/> |Un administrateur a attribué l’autorisation de boîte aux lettres FullAccess à un utilisateur (appelé délégué) à la boîte aux lettres d’une autre personne. L’autorisation FullAccess permet au délégué d’ouvrir la boîte aux lettres de l’autre personne, de lire et de gérer le contenu de la boîte aux lettres.  <br/> |
+|Ajout ou suppression d’un utilisateur avec un accès délégué au dossier de calendrier<br/> |UpdateCalendarDelegation<br/> |Un utilisateur a été ajouté ou supprimé en tant que délégué du calendrier de la boîte aux lettres d’un autre utilisateur. La délégation de calendrier donne à une autre personne de la même organisation des autorisations pour gérer le calendrier du propriétaire de la boîte aux lettres. <br/> |
+|Ajout d’autorisations au dossier<br/> |AddFolderPermissions<br/> |Une autorisation de dossier a été ajoutée. Les autorisations de dossier contrôlent les utilisateurs de votre organisation qui peuvent accéder aux dossiers d’une boîte aux lettres et aux messages qu’ils hébergent.<br/> |
 |Messages copiés dans un autre dossier  <br/> |Copier  <br/> |Un message a été copié dans un autre dossier.  <br/> |
 |Élément de boîte aux lettres créé  <br/> |Create  <br/> |Un élément est créé dans le dossier calendrier, contacts, notes ou tâches de la boîte aux lettres; par exemple, une nouvelle demande de réunion est créée. Notez que la création, l’envoi ou la réception d’un message n’est pas audité. En outre, la création d’un dossier de boîte aux lettres n’est pas auditée.  <br/> |
-|Création d’une nouvelle règle de boîte de réception dans Outlook Web App  <br/> |NewInboxRule<br/> |Un utilisateur a créé une nouvelle règle de boîte de réception dans Outlook Web App (OWA).<br/> |
+|Création d’une nouvelle règle de boîte de réception dans Outlook Web App  <br/> |NewInboxRule<br/> |Un propriétaire de boîte aux lettres ou un autre utilisateur ayant accès à la boîte aux lettres a créé une nouvelle règle de boîte de réception dans Outlook Web App.<br/> |
 |Messages supprimés du dossier éléments supprimés  <br/> |SoftDelete  <br/> |Un message a été définitivement supprimé ou supprimé (récupérable) du dossier Éléments supprimés. Ces éléments sont déplacés vers le dossier éléments récupérables. Les messages sont également déplacés vers le dossier éléments récupérables lorsqu’un utilisateur le sélectionne et appuie sur **MAJ + SUPPR**.  <br/> |
+|Message étiqueté en tant qu’enregistrement  <br/> |ApplyRecordLabel<br/> |Un message a été classé comme un enregistrement. Cela se produit lorsqu’une étiquette de rétention qui classifie le contenu en tant qu’enregistrement est manuellement ou automatiquement appliquée à un message.<br/> |
 |Messages déplacés dans un autre dossier  <br/> |Déplacer  <br/> |Un message a été déplacé vers un autre dossier.  <br/> |
 |Messages déplacés vers le dossier éléments supprimés  <br/> |MoveToDeletedItems  <br/> |Un message a été supprimé et déplacé vers le dossier Éléments supprimés.  <br/> |
 |Autorisation de dossier modifiée  <br/> |UpdateFolderPermissions  <br/> |Une autorisation de dossier a été modifiée. Les autorisations de dossier contrôlent les utilisateurs de votre organisation qui peuvent accéder aux dossiers de boîte aux lettres et aux messages dans le dossier.  <br/> |
+|Règle de boîte de réception modifiée à partir d’Outlook Web App<br/> |SetInboxRule<br/> |Un propriétaire de boîte aux lettres ou un autre utilisateur ayant accès à la boîte aux lettres A modifié une règle de boîte de réception à l’aide d’Outlook Web App.<br/> |
 |Messages purgés de la boîte aux lettres  <br/> |HardDelete  <br/> |Un message a été purgé du dossier éléments récupérables (supprimé définitivement de la boîte aux lettres).  <br/> |
 |Suppression des autorisations de boîte aux lettres déléguée  <br/> |Remove-MailboxPermission  <br/> |Un administrateur a supprimé l’autorisation FullAccess (qui a été affectée à un délégué) de la boîte aux lettres d’une personne. Après la suppression de l’autorisation FullAccess, le délégué ne peut pas ouvrir la boîte aux lettres de l’autre personne ou accéder à son contenu.  <br/> |
+|Autorisations supprimées du dossier<br/> |RemoveFolderPermissions<br/> |Une autorisation de dossier a été supprimée. Les autorisations de dossier contrôlent les utilisateurs de votre organisation qui peuvent accéder aux dossiers d’une boîte aux lettres et aux messages qu’ils hébergent.<br/> |
 |Message envoyé à l’aide des autorisations Envoyer en tant que  <br/> |SendAs  <br/> |Un message a été envoyé à l’aide de l’autorisation SendAs. Cela signifie qu’un autre utilisateur a envoyé le message comme s’il provenait du propriétaire de la boîte aux lettres.  <br/> |
 |Message envoyé à l’aide des autorisations Envoyer de la part de  <br/> |SendOnBehalf  <br/> |Un message a été envoyé à l’aide de l’autorisation SendOnBehalf. Cela signifie qu’un autre utilisateur a envoyé le message de la part du propriétaire de la boîte aux lettres. Le message indique au destinataire de la part de qui le message a été envoyé et qui a envoyé réellement le message.  <br/> |
-|Mise à jour de l’accès délégué au dossier calendrier  <br/> |UpdateCalendarDelegation  <br/> |Une délégation de calendrier a été affectée à une boîte aux lettres. La délégation de calendrier donne à une autre personne de la même organisation des autorisations pour gérer le calendrier du propriétaire de la boîte aux lettres.  <br/> |
+|Règles de boîte de réception mises à jour à partir du client Outlook<br/> |UpdateInboxRules<br/> |Un propriétaire de boîte aux lettres ou un autre utilisateur ayant accès à la boîte aux lettres A modifié une règle de boîte de réception dans le client Outlook.<br/> |
 |Message mis à jour  <br/> |Update  <br/> |Un message ou ses propriétés ont été modifiés.  <br/> |
 |L’utilisateur s’est connecté à la boîte aux lettres  <br/> |MailboxLogin  <br/> |L'utilisateur s'est connecté à sa boîte aux lettres.  <br/> |
-|(aucun)  <br/> |UpdateInboxRules  <br/> |Une règle de boîte de réception a été ajoutée, supprimée ou modifiée. Les règles de boîte de réception sont utilisées pour traiter les messages dans la boîte de réception de l’utilisateur en fonction des conditions spécifiées et prendre des mesures lorsque les conditions d’une règle sont remplies, telles que le transfert d’un message vers un dossier spécifié ou la suppression d’un message.  <br/> Pour renvoyer des entrées pour les activités de règle de boîte de réception, vous devez sélectionner **afficher les résultats pour toutes les activités** dans la liste **activités** . Utilisez les zones plage de dates et la liste **utilisateurs** pour affiner les résultats de la recherche.  <br/> |
 ||||
 
 ### <a name="sway-activities"></a>Activités Sway
@@ -756,7 +762,7 @@ Le tableau suivant répertorie les activités de l’utilisateur et de l’admin
    
 ### <a name="microsoft-flow-activities"></a>Activités de flux Microsoft
 
-Vous pouvez rechercher des activités dans le journal d’audit dans Microsoft Flow. Ces activités incluent la création, la modification et la suppression de flux, ainsi que la modification des autorisations de flux. Pour plus d’informations sur l’audit des activités de flux, reportez-vous au blog [Microsoft Flow audit Events now available in Security _AMP_ Compliance Center](https://flow.microsoft.com/blog/security-and-compliance-center).
+Vous pouvez rechercher des activités dans le journal d’audit dans Microsoft Flow. Ces activités incluent la création, la modification et la suppression de flux, ainsi que la modification des autorisations de flux. Pour plus d’informations sur l’audit des activités de flux, reportez-vous au blog [Microsoft Flow audit Events now available in Security & Compliance Center](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 ### <a name="microsoft-powerapps"></a>Microsoft PowerApps
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 4bf85fb8294ce7d95f31574112b9719b2b633c3e
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 9e8e85d92543c4d49ad7841f8b2592a539a13977
+ms.sourcegitcommit: e323610df2df71c84f536e8a38650d33d8069e41
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154036"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34703749"
 ---
 # <a name="manage-review-sets-in-advanced-ediscovery"></a>Gérer les ensembles de révision dans Advanced eDiscovery
 
@@ -41,7 +41,7 @@ Vous pouvez créer des ensembles de réviseurs sous l’onglet réviser les **en
 
 ![Ajouter un jeu de révision](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
-Sur la page **Ajouter un jeu** de réexamen, entrez un nom pour l’ensemble de vérification, puis cliquez sur **Enregistrer**.  Le nouvel ensemble de révision est affiché dans la liste sous l’onglet réviser les **ensembles** .
+Sur la page **Ajouter un jeu** de réexamen, entrez un nom pour l’ensemble de vérification, puis cliquez sur **Enregistrer**. Le nouvel ensemble de révision est affiché dans la liste sous l’onglet réviser les **ensembles** .
 
 ![Nouvel ensemble de réexamens figurant dans l’onglet Review Set](../media/AeDnewreviewset.png)
 

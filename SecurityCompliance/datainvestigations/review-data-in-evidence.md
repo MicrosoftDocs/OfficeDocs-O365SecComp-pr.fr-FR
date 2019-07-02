@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 781b0b749390b36ecdf391bff1089d6180e7c3d2
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: a5c1c578f8d45cf7b95629e8053911d93b5b8583
+ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150666"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767335"
 ---
 # <a name="review-the-data-in-evidence"></a>Consulter les données dans des preuves
 
@@ -50,7 +50,7 @@ Voici un exemple de métadonnées de fichier pour un document. Pour plus d’inf
 
 ## <a name="native-view"></a>Affichage natif
 
-La visionneuse Native affiche l’affichage le plus précis d’un document dans son format natif. L’affichage natif est pris en charge pour des centaines de types de fichiers et est destiné à afficher des documents dans l’expérience Native la plus réelle possible. Pour les fichiers Microsoft Office, la visionneuse Native utilise Office Online. Cela vous permet d’afficher du contenu tel que des commentaires dans différents documents Office, formules et lignes/colonnes masquées dans Excel, ainsi que l’affichage notes dans PowerPoint.
+La visionneuse Native affiche l’affichage le plus précis d’un document dans son format natif. L’affichage natif est pris en charge pour des centaines de types de fichiers et est destiné à afficher des documents dans l’expérience Native la plus réelle possible. Pour les fichiers Microsoft Office, la visionneuse Native utilise la version Web des applications Office. Cela vous permet d’afficher du contenu tel que des commentaires dans différents documents Office, formules et lignes/colonnes masquées dans Excel, ainsi que l’affichage notes dans PowerPoint.
 
 ![Affichage natif
 ](../media/Reviewimage3.png)

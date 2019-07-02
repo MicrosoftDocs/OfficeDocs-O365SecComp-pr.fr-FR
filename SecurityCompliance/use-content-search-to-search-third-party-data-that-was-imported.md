@@ -12,16 +12,16 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Utiliser l’outil eDiscovery de recherche de contenu pour rechercher des éléments qui ont été importés dans des boîtes aux lettres dans Office 365 à partir d’une source de données tierce. Vous pouvez créer une requête pour rechercher tous les éléments importés ou créer une requête pour rechercher des types de données tiers spécifiques. Cet article répertorie les valeurs que vous pouvez utiliser dans une requête de mot clé pour rechercher les types de données tiers pouvant être importés dans Office 365.
-ms.openlocfilehash: 4a611ed04cc102aad4d978a379efbf46a0bd70e2
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0881456d377569fb55f0daf0d0a8a2a15bce62fc
+ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156206"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35014746"
 ---
 # <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>Utiliser la recherche de contenu pour rechercher des données tierces importées dans Office 365
 
-Vous pouvez utiliser l' [outil de découverte électronique de recherche de contenu](content-search.md) dans le centre de sécurité _AMP_ Compliance Center pour rechercher des éléments qui ont été importés dans des boîtes aux lettres dans Office 365 à partir d’une source de données tierce. Vous pouvez créer une requête pour rechercher tous les éléments de données tiers importés ou vous pouvez créer une requête pour rechercher uniquement des éléments de données tiers spécifiques. En outre, vous pouvez également créer une stratégie de conservation basée sur une requête ou une conservation eDiscovery basée sur une requête pour conserver les données tierces dans Office 365. 
+Vous pouvez utiliser l' [outil de découverte électronique de recherche de contenu](content-search.md) dans le centre de sécurité & Compliance Center pour rechercher des éléments qui ont été importés dans des boîtes aux lettres dans Office 365 à partir d’une source de données tierce. Vous pouvez créer une requête pour rechercher tous les éléments de données tiers importés ou vous pouvez créer une requête pour rechercher uniquement des éléments de données tiers spécifiques. En outre, vous pouvez également créer une stratégie de rétention Office 365 basée sur une requête ou une conservation eDiscovery basée sur une requête pour conserver les données tierces dans Office 365. 
   
 Pour plus d’informations sur l’importation de données tierces et sur la liste des types de données tiers pouvant être importés dans Office 365, consultez [la rubrique collaborer avec un partenaire pour archiver des données tierces dans office 365](work-with-partner-to-archive-third-party-data.md). 
   

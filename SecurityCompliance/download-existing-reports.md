@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/1/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
 description: Découvrez comment télécharger un ou plusieurs rapports existants dans le centre de &amp; sécurité conformité.
-ms.openlocfilehash: 0ea48eca0744dbcf663d15f52342546a54a85af2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 19bae24fd72cb6414f015218db1e2737d1fcd0d6
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256922"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077840"
 ---
 # <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>Télécharger des rapports existants dans le &amp; Centre de sécurité conformité
 
-Dans le [Centre &amp; de sécurité conformité](https://protection.office.com), plusieurs [rapports et](reports-and-insights-in-security-and-compliance.md) informations sont disponibles pour aider l'équipe de sécurité de votre organisation à réduire et à résoudre les menaces pesant sur votre organisation. Si vous êtes membre de l'équipe de sécurité de votre organisation, vous pouvez télécharger un ou plusieurs rapports existants. 
+Dans le [Centre &amp; de sécurité conformité](https://protection.office.com), plusieurs [rapports et](reports-and-insights-in-security-and-compliance.md) informations sont disponibles pour aider l’équipe de sécurité de votre organisation à réduire et à résoudre les menaces pesant sur votre organisation. Si vous êtes membre de l’équipe de sécurité de votre organisation, vous pouvez télécharger un ou plusieurs rapports existants. 
   
 ## <a name="download-existing-reports"></a>Télécharger des rapports existants
 
@@ -35,7 +35,7 @@ Dans le [Centre &amp; de sécurité conformité](https://protection.office.com),
     
 3. Cliquez sur **Télécharger le rapport**, puis cliquez sur **Fermer**.
     
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Rapports et informations dans le centre de sécurité &amp; conformité Office 365](reports-and-insights-in-security-and-compliance.md)
   

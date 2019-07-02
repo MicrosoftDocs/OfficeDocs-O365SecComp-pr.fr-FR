@@ -1,5 +1,5 @@
 ---
-title: Créer une recherche pour collecter des données
+title: Create a search
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,24 +14,24 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 360ba6a67d43a0b78b1104ae64885697009bb222
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1aa4ce6e406e4b3a3b72b9d93f651416b1fc65f9
+ms.sourcegitcommit: 803baca9f99a6691fb41a3308e799752e4d8f20c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155106"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35222248"
 ---
-# <a name="create-a-search-to-collect-data"></a>Créer une recherche pour collecter des données
+# <a name="create-a-search"></a>Create a search
 
 Sous l’onglet **recherches** de votre cas, vous pouvez créer une nouvelle recherche en cliquant sur **nouvelle recherche** et en suivant l’Assistant.
 
-## <a name="name-your-search-and-give-description"></a>Nommer votre recherche et donner une description
+## <a name="name-your-search-and-give-it-a-description"></a>Nommez votre recherche et donnez-lui une description.
 
 Chaque recherche avec un cas doit avoir un nom unique. Vous pouvez éventuellement fournir une description pour votre recherche. 
 
-## <a name="define-your-conditions"></a>Définir vos conditions
+## <a name="define-your-search-query-and-conditions"></a>Définition de la requête et des conditions de recherche
 
-Vous pouvez définir les conditions de votre recherche à l’aide des cartes de condition prédéfinies ou du langage KQL (Keyword Query Language). Pour plus d’informations, consultez la rubrique [créer des requêtes de recherche](building-search-queries.md).
+Vous pouvez définir la requête de mots clés et les conditions de la recherche à l’aide des cartes de condition prédéfinies ou du langage de requête de mot clé (KQL). Pour plus d’informations, consultez la rubrique [créer des requêtes de recherche](building-search-queries.md).
 
 ## <a name="choose-the-custodians-to-search-from"></a>Choisir les dépositaires à rechercher
 

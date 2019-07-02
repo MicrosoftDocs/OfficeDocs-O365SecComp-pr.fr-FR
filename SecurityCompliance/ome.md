@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: Avec le chiffrement de messages Office 365, votre organisation peut envoyer et recevoir des messages électroniques chiffrés entre des personnes à l’intérieur et à l’extérieur de votre organisation. Le chiffrement des messages électroniques permet de s’assurer que seuls les destinataires prévus peuvent afficher le contenu du message.
-ms.openlocfilehash: d9716d3021f4190f1679a5d387e9378b60586154
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f6f6f59225d267d08ba20e1fdea219dc5d890ed5
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157586"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852858"
 ---
 # <a name="office-365-message-encryption"></a>Chiffrement de messages Office 365
 
@@ -58,7 +58,7 @@ Le chiffrement de messages avancé Office 365 permet de créer plusieurs modèle
 
 Le chiffrement de messages avancé dans Office 365 vous aide à respecter les obligations de conformité qui nécessitent un contrôle plus flexible de l’accès des destinataires externes aux messages chiffrés. Avec le chiffrement de messages avancé dans Office 365, en tant qu’administrateur, vous pouvez contrôler les e-mails sensibles partagés hors de l’organisation à l’aide de stratégies automatiques qui détectent des types d’informations sensibles (par exemple, des données personnelles, des ID financiers ou d’assurance maladie) ou des mots clés à améliorer. protection en arrivant à expiration de l’accès via un portail Web sécurisé aux e-mails chiffrés. En outre, en tant qu’administrateur, vous pouvez contrôler les e-mails chiffrés accessibles en externe via un portail Web Office 365 en révoquant l’accès à un e-mail à tout moment.
 
-La révocation et l’expiration des messages fonctionnent uniquement pour les courriers électroniques que vos utilisateurs envoient à des destinataires extérieurs à votre organisation Office 365. En outre, les destinataires doivent accéder au courrier électronique par le biais du portail Web. Pour vous assurer que le destinataire utilise le portail pour recevoir des courriers électroniques, vous configurez un modèle de personnalisation qui applique le wrapper. Ensuite, vous appliquez le modèle de personnalisation dans une règle de flux de messagerie. Pour plus d’informations sur le chiffrement de messages avancé, consultez la rubrique [Office 365 Advanced message](https://ome-advanced-message-encryption.md)Encryption.
+La révocation et l’expiration des messages fonctionnent uniquement pour les courriers électroniques que vos utilisateurs envoient à des destinataires extérieurs à votre organisation Office 365. En outre, les destinataires doivent accéder au courrier électronique par le biais du portail Web. Pour vous assurer que le destinataire utilise le portail pour recevoir des courriers électroniques, vous configurez un modèle de personnalisation qui applique le wrapper. Ensuite, vous appliquez le modèle de personnalisation dans une règle de flux de messagerie. Pour plus d’informations sur le chiffrement de messages avancé, consultez la rubrique [Office 365 Advanced message](ome-advanced-message-encryption.md)Encryption.
 
 ## <a name="defining-rules-for-office-365-message-encryption"></a>Définir les règles pour le chiffrement de messages Office 365
 

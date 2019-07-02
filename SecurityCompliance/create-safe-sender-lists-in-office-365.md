@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 4/29/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Si vous souhaitez être sûr de recevoir des messages d’un expéditeur particulier, étant donné que vous les approuvez et leurs messages, vous pouvez ajuster votre liste verte dans une stratégie de filtrage du courrier indésirable dans le centre d’administration Exchange.
-ms.openlocfilehash: b97767a3ee4882b1a9b052bc845e8758a6402534
-ms.sourcegitcommit: e834d4168f584f2efb22479aec108497eea267f6
+ms.openlocfilehash: 4526441c68d187e644a06228c5b1be820968524a
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34709112"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199567"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Créer des listes d’expéditeurs approuvés dans Office 365
 
@@ -61,12 +61,12 @@ L’action sur la règle doit respecter ce modèle:
 
 2. Ajoutez un en-tête X pour indiquer l’action de la règle. Dans l’exemple ci-dessous, vous pouvez ajouter un simple en-tête «X-ETR: contourner le filtrage `contoso.com`du courrier indésirable pour l’expéditeur authentifié». Si cette règle comporte plusieurs domaines, vous pouvez modifier le texte d’en-tête en fonction de vos besoins. **Lorsqu’un message ignore le filtrage en raison d’un ETR, il marque SFV: SKN dans l’en-tête X-Forefront-antispam-Report** (**s’il s’agit d’une liste d’adresses IP autorisées, il marque également IPV: CAL**). Cela vous aidera à résoudre les problèmes.
 
-![Interface utilisateur graphique permettant de contourner le filtrage du courrier indésirable.](media/1_AllowList_SkipFilteringFromContoso.png)
+![Interface utilisateur graphique permettant de contourner le filtrage du courrier indésirable.](media/1-AllowList-SkipFilteringFromContoso.png)
 
 > [!CAUTION]
 > Ne configurez pas les règles de flux de messagerie avec *le domaine de l’expéditeur* comme condition d’ignorer le filtrage du courrier indésirable. Cette méthode augmente considérablement le risque que les spammeurs usurpent le domaine d’envoi (ou empruntent l’identité de l’adresse de messagerie complète) ignorez le filtrage du courrier indésirable, les vérifications d’authentification de l’expéditeur et le message arrivera dans la boîte de réception d’une personne.
 
-![Comment définir la valeur SCL sur moins un.](media/2_AllowList_SetsSCLMinus1.png)
+![Comment définir la valeur SCL sur moins un.](media/2-AllowList-SetsSCLMinus1.png)
 
 N’ajoutez pas de domaines que vous possédez ou des domaines populaires ( `microsoft.com`par exemple,) à la règle de flux de messagerie en tant que condition. Ceci est considéré comme un risque élevé, car il permet aux acteurs incorrects de vous envoyer des messages qui seraient autrement filtrés.
 

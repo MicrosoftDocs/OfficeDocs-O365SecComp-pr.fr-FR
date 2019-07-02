@@ -3,7 +3,7 @@ title: Envoi des notifications et affichage des conseils de stratégie pour les 
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/21/2018
+ms.date: 06/14/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Un Conseil de stratégie est une notification ou un avertissement qui s’affiche lorsqu’un utilisateur travaille avec du contenu qui entre en conflit avec une stratégie DLP. Vous pouvez utiliser des notifications par courrier électronique et des conseils de stratégie pour sensibiliser les utilisateurs aux stratégies de votre organisation. Vous pouvez également donner aux utilisateurs la possibilité de remplacer la stratégie, afin qu’ils ne soient pas bloqués s’ils ont un besoin opérationnel valide ou si la stratégie détecte un faux positif. '
-ms.openlocfilehash: 487d3704b471b10ec876b0df3022d33d13583763
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 4de22c8ad8a45cf1489e72516d30f078889774e3
+ms.sourcegitcommit: 9df5bf99c1860ace0c5cc90647733d075be412ad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077360"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34948902"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP
 
@@ -41,9 +41,9 @@ Dans le centre de sécurité &amp; conformité Office 365, lorsque vous créez u
     
   - Pour le courrier électronique dans Outlook sur le Web et Outlook 2013 et versions ultérieures, le Conseil de stratégie apparaît en haut d’un message au-dessus des destinataires lors de la composition du message.
     
-  - Pour les documents dans un compte OneDrive entreprise ou un site SharePoint Online, le Conseil de stratégie est indiqué par une icône d’avertissement qui apparaît sur l’élément. Pour afficher plus d’informations, vous pouvez sélectionner un élément, puis ****![choisir volet informations sur](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) les informations dans le coin supérieur droit de la page pour ouvrir le volet d’informations. 
+  - Pour les documents dans un compte OneDrive entreprise ou un site SharePoint Online, le Conseil de stratégie est indiqué par une icône d’avertissement qui apparaît sur l’élément. Pour afficher plus d’informations, vous pouvez sélectionner un élément, puis **** ![choisir volet informations sur](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) les informations dans le coin supérieur droit de la page pour ouvrir le volet d’informations. 
     
-  - Pour les documents Excel 2016, PowerPoint 2016 et Word 2016 stockés sur un site OneDrive entreprise ou un site SharePoint Online inclus dans la stratégie DLP, le Conseil de stratégie s’affiche dans la barre des messages et le mode Backstage (menu **fichier** \> ** Info**).
+  - Pour les documents Excel, PowerPoint et Word stockés sur un site OneDrive entreprise ou un site SharePoint Online inclus dans la stratégie DLP, le Conseil de stratégie s’affiche dans la barre des messages et le mode Backstage ( \> **informations**du menu **fichier** ).
     
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>Ajouter des notifications utilisateur à une stratégie DLP
 
@@ -80,6 +80,9 @@ Lorsque vous créez une stratégie DLP, les notifications par courrier électron
 9. Dans l’éditeur de règles, sous **notifications utilisateur**, changez l’état de.
     
     ![Section notifications utilisateur de l’éditeur de règles](media/47705927-c60b-4054-a072-ab914f33d15d.png)
+
+> [!NOTE]
+> Les stratégies DLP s’appliquent à tous les documents qui correspondent à la stratégie, qu’ils soient nouveaux ou existants. Toutefois, une notification par courrier électronique est générée uniquement lorsque le nouveau contenu correspond à une stratégie DLP existante. Le contenu existant est protégé, mais ne génère pas de notification d’utilisateur par courrier électronique.
   
 ## <a name="options-for-configuring-email-notifications"></a>Options de configuration des notifications par courrier électronique
 
@@ -162,7 +165,7 @@ Lorsqu’un document sur un site OneDrive entreprise ou un site SharePoint Onlin
     
 ![Icônes de Conseil de stratégie sur les documents dans un compte OneDrive](media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
   
-Pour effectuer une action sur un document, vous pouvez sélectionner un \> élément ****![choisir un volet informations](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) sur l’icône dans le coin supérieur droit de la page pour ouvrir le \> **Conseil de stratégie afficher**le volet d’informations.
+Pour effectuer une action sur un document, vous pouvez sélectionner un \> élément **** ![choisir un volet informations](media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) sur l’icône dans le coin supérieur droit de la page pour ouvrir le \> **Conseil de stratégie afficher**le volet d’informations.
   
 Le Conseil de stratégie répertorie les problèmes liés au contenu et, si les conseils de stratégie sont configurés avec ces options, vous pouvez choisir **résoudre**, puis **remplacer** le Conseil de stratégie ou **signaler** un faux positif. 
   
@@ -229,7 +232,7 @@ Les conseils de stratégie peuvent fonctionner soit avec les stratégies DLP et 
   
 Si vous avez configuré des conseils de stratégie dans le centre d’administration Exchange, tous les conseils de stratégie que vous configurez dans le centre de sécurité &amp; conformité d’Office 365 n’apparaîtront pas pour les utilisateurs dans Outlook sur le Web et Outlook 2013 et les versions ultérieures jusqu’à ce que vous désactiviez les conseils dans l’Exchange Centre d’administration. Cela permet de s’assurer que vos règles de flux de messagerie Exchange actuelles (également appelées règles de transport) continueront de fonctionner jusqu’à ce que vous &amp; choisissiez de basculer vers le centre de sécurité conformité Office 365.
   
-Notez que si 365 les conseils de stratégie ne peuvent tirer qu’à partir d’un seul emplacement, les notifications par courrier électronique sont toujours envoyées, même si vous utilisez les stratégies DLP dans le centre de sécurité et le centre d’administration Exchange.
+Notez que si 365 les conseils de stratégie ne peuvent tirer qu’à partir d’un seul emplacement, les notifications par courrier électronique sont toujours envoyées, même si vous &amp; utilisez les stratégies DLP dans le centre de sécurité et le centre d’administration Exchange.
   
 ### <a name="default-text-for-policy-tips-in-email"></a>Texte par défaut pour les conseils de stratégie dans les courriers électroniques
 
@@ -241,15 +244,15 @@ Par défaut, les conseils de stratégie affichent un texte semblable à celui ci
 |Bloque l’accès, envoie une notification et autorise le remplacement  <br/> |Votre courrier est en conflit avec une stratégie de votre organisation.  <br/> |
 |Bloque l’accès et envoie une notification  <br/> |Votre courrier est en conflit avec une stratégie de votre organisation.  <br/> |
    
-## <a name="policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Conseils de stratégie dans Excel 2016, PowerPoint 2016 et Word 2016
+## <a name="policy-tips-in-excel-powerpoint-and-word"></a>Conseils de stratégie dans Excel, PowerPoint et Word
 
-Lorsque les utilisateurs travaillent avec du contenu sensible dans les versions de bureau d’Excel 2016, PowerPoint 2016 et Word 2016, les conseils de stratégie peuvent les informer en temps réel que le contenu entre en conflit avec une stratégie DLP. Cela nécessite les éléments suivants:
+Lorsque les utilisateurs travaillent avec du contenu sensible dans les versions de bureau d’Excel, PowerPoint et Word, les conseils de stratégie peuvent les informer en temps réel que le contenu est en conflit avec une stratégie DLP. Cela nécessite les éléments suivants:
   
 - Le document Office est stocké sur un site OneDrive entreprise ou un site SharePoint Online.
     
 - Le site est inclus dans une stratégie DLP configurée pour utiliser les conseils de stratégie.
     
-Ces programmes de bureau Office 2016 synchronisent automatiquement les stratégies DLP directement à partir d’Office 365, puis analysent vos documents afin de s’assurer qu’ils ne sont pas en conflit avec vos stratégies DLP et d’afficher des conseils de stratégie en temps réel.
+Les programmes de bureau Office synchronisent automatiquement les stratégies DLP directement à partir d’Office 365, puis analysent vos documents pour s’assurer qu’ils ne sont pas en conflit avec vos stratégies DLP et afficher les conseils de stratégie en temps réel.
   
 En fonction de la façon dont vous configurez les conseils de stratégie dans la stratégie DLP, les utilisateurs peuvent simplement ignorer le Conseil de stratégie, remplacer la stratégie avec ou sans justification professionnelle ou signaler un faux positif.
   
@@ -265,7 +268,7 @@ Si les conseils de stratégie dans la stratégie DLP sont configurés avec ces o
   
 ![Options relatives aux conseils de stratégie en mode Backstage dans Excel 2016](media/5b3857ba-907e-456e-ae43-888b594c049c.png)
   
-Dans chacun de ces programmes de bureau Office 2016, les utilisateurs peuvent choisir de désactiver les conseils de stratégie. Si ce paramètre est désactivé, les conseils de stratégie qui sont des notifications simples n’apparaissent pas dans la barre des messages ou le mode Backstage (sous l’onglet **fichier** ). Toutefois, les conseils de stratégie concernant le blocage et le remplacement continueront d’apparaître, et ils continueront de recevoir la notification par courrier électronique. En outre, la désactivation des conseils de stratégie n’exempte pas le document des stratégies DLP qui lui ont été appliquées. 
+Dans chacun de ces programmes de bureau Office, les utilisateurs peuvent choisir de désactiver les conseils de stratégie. Si ce paramètre est désactivé, les conseils de stratégie qui sont des notifications simples n’apparaissent pas dans la barre des messages ou le mode Backstage (sous l’onglet **fichier** ). Toutefois, les conseils de stratégie concernant le blocage et le remplacement continueront d’apparaître, et ils continueront de recevoir la notification par courrier électronique. En outre, la désactivation des conseils de stratégie n’exempte pas le document des stratégies DLP qui lui ont été appliquées. 
   
 ### <a name="default-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Texte par défaut pour les conseils de stratégie dans Excel 2016, PowerPoint 2016 et Word 2016
 
@@ -277,7 +280,7 @@ Par défaut, les conseils de stratégie affichent du texte similaire à ce qui s
 |Bloque l’accès, envoie une notification et autorise le remplacement  <br/> |Ce fichier est en conflit avec une stratégie de votre organisation. Si vous ne résolvez pas ce conflit, l’accès à ce fichier peut être bloqué. Pour plus d’informations, consultez le menu **fichier** .  <br/> |
 |Bloque l’accès et envoie une notification  <br/> |Ce fichier est en conflit avec une stratégie de votre organisation. Si vous ne résolvez pas ce conflit, l’accès à ce fichier peut être bloqué. Pour plus d’informations, consultez le menu **fichier** .  <br/> |
    
-### <a name="custom-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Texte personnalisé pour les conseils de stratégie dans Excel 2016, PowerPoint 2016 et Word 2016
+### <a name="custom-text-for-policy-tips-in-excel-powerpoint-and-word"></a>Texte personnalisé pour les conseils de stratégie dans Excel, PowerPoint et Word
 
 Vous pouvez personnaliser le texte pour les conseils de stratégie indépendamment de la notification par courrier électronique. Contrairement au texte personnalisé pour les notifications par courrier électronique (voir la section ci-dessus), le texte personnalisé pour les conseils de stratégie n’accepte pas les codes HTML ou les jetons. Au lieu de cela, le texte personnalisé pour les conseils de stratégie est uniquement en texte brut avec une limite de 256 caractères.
   

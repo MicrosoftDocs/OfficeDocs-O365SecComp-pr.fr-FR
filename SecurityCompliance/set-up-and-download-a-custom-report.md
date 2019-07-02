@@ -3,7 +3,7 @@ title: Configurer et télécharger un rapport personnalisé dans le centre de &a
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,21 +14,21 @@ ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer et télécharger un rapport avec une plage de dates et des filtres personnalisés dans le centre &amp; de sécurité et de conformité.
-ms.openlocfilehash: 912dfb43a7fd146f4fb00eb68a7d1004db81466c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 5e0d6e06be4589f7da837d5e0c2a6f883643ffdb
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264354"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077790"
 ---
 # <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>Configurer et télécharger un rapport personnalisé dans le centre de &amp; sécurité conformité
 
-Dans le [Centre &amp; de sécurité conformité](https://protection.office.com), plusieurs [rapports et](reports-and-insights-in-security-and-compliance.md) informations sont disponibles pour aider l'équipe de sécurité de votre organisation à réduire et à résoudre les menaces pesant sur votre organisation. Si vous êtes membre de l'équipe de sécurité de votre organisation, vous pouvez configurer un rapport avec des plages de dates et des filtres personnalisés, puis télécharger votre rapport personnalisé. 
+Dans le [Centre &amp; de sécurité conformité](https://protection.office.com), plusieurs [rapports et](reports-and-insights-in-security-and-compliance.md) informations sont disponibles pour aider l’équipe de sécurité de votre organisation à réduire et à résoudre les menaces pesant sur votre organisation. Si vous êtes membre de l’équipe de sécurité de votre organisation, vous pouvez configurer un rapport avec des plages de dates et des filtres personnalisés, puis télécharger votre rapport personnalisé. 
   
 ## <a name="download-a-custom-report"></a>Télécharger un rapport personnalisé
 
 > [!IMPORTANT]
-> Assurez-vous que vous disposez des [autorisations nécessaires pour le centre &amp; de sécurité conformité d'Office 365](permissions-in-the-security-and-compliance-center.md). En règle générale, les administrateurs globaux Office 365, les administrateurs de la sécurité et les lecteurs de &amp; sécurité peuvent accéder aux rapports dans le centre de sécurité conformité. 
+> Assurez-vous que vous disposez des [autorisations nécessaires pour le centre &amp; de sécurité conformité d’Office 365](permissions-in-the-security-and-compliance-center.md). En règle générale, les administrateurs globaux Office 365, les administrateurs de la sécurité et les lecteurs de &amp; sécurité peuvent accéder aux rapports dans le centre de sécurité conformité. 
   
 1. Dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez à **rapports** \> de **tableau de bord**.
     
@@ -42,7 +42,7 @@ Dans le [Centre &amp; de sécurité conformité](https://protection.office.com),
     
 6. Spécifiez les destinataires du rapport, puis cliquez sur **Enregistrer**.
     
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets associés
 
 [Rapports et informations dans le centre de sécurité &amp; conformité Office 365](reports-and-insights-in-security-and-compliance.md)
   

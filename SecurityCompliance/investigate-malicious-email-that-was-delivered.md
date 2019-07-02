@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment utiliser les fonctionnalités d’analyse et de réponse aux menaces pour rechercher et examiner des courriers électroniques malveillants.
-ms.openlocfilehash: 5f8c615bed07b75cd3c06ec48f5ba73586f0f6d5
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: febcf6704b1ba9dc23bf4e698715fb4b929b998b
+ms.sourcegitcommit: d3b2bffa8af5f19d97fe9771068c80705b890e85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394289"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "35414804"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>Rechercher et identifier les messages électroniques malveillants qui ont été remis (Office 365 Advanced Threat Protection Plan 2)
 
@@ -78,10 +78,9 @@ Pour afficher les modifications apportées au champ d’état de remise précéd
 1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou scolaire pour Office 365. Vous accédez au centre de sécurité &amp; conformité. 
     
 2. Dans le volet de navigation de gauche, choisissez **Explorateur**de **gestion** \> des menaces.
-
-![Capture d’écran de l’Explorateur de menaces.](media/Threat Explorer Delivery Action and Delivery Location.PNG)
-
 <!--Comment>
+![Threat Explorer with Delivery Action and Delivery Location fields.](media/ThreatExFields.PNG)
+
     
 3. In the View menu, choose **All email**.<br/>![Use the View menu to choose between Email and Content reports](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   

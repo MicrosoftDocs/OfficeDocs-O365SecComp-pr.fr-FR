@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: En tant qu’administrateur général Office 365, vous pouvez appliquer la personnalisation de votre organisation aux messages électroniques chiffrés de votre organisation et au contenu du portail de chiffrement.
-ms.openlocfilehash: 6b51aefc10c0070749fcf4bc8c2d56c7ff7a3ef3
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 19f227971c522f9d92aec343f1865ab7f23c13aa
+ms.sourcegitcommit: b0ea2d66bc4c7f2fc0a8abab28d2ae652b1c4b73
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152466"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34721371"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>Ajouter la marque de votre organisation à vos messages chiffrés
 
@@ -75,7 +75,7 @@ Vous créez des modèles de personnalisation pour votre organisation dans Window
    For example,
 
    ```powershell
-   New-OMEConfiguration -Identity <Branding template 1>
+   New-OMEConfiguration -Identity "Branding template 1"
    ```
 
 3. Définissez les personnalisations pour le modèle que vous venez de définir à l’aide de la cmdlet Set-OMEConfiguration comme décrit dans [Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration) ou utilisez le tableau suivant pour obtenir des instructions.

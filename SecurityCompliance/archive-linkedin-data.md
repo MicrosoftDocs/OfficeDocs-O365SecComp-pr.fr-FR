@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur natif pour importer des données à partir d’une page de la société LinkedIn vers Office 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Office 365 de sorte que vous puissiez utiliser les fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la conformité des données tierces de votre organisation.
-ms.openlocfilehash: 2b89f990f18ae13ad15015f240ea4c4b0ec434b0
-ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
+ms.openlocfilehash: 618cef7c0208378179d41a94f4a274a0bddadee9
+ms.sourcegitcommit: ecc823c2a4f1465114cf1d3a4630e31c47779ddc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017945"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "35079378"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data-in-office-365-preview"></a>Configuration d’un connecteur pour l’archivage des données LinkedIn dans Office 365 (aperçu)
 
@@ -27,9 +27,11 @@ Une fois que les données de la page de la société LinkedIn sont stockées dan
 
 ## <a name="before-you--begin"></a>Avant de commencer
 
-- Vous devez disposer des informations d’identification de connexion (adresse de messagerie ou numéro de téléphone et mot de passe) d’un compte d’utilisateur de LinkedIn qui est administrateur de la page de la société LinkedIn que vous souhaitez archiver. Vous utilisez ces informations d’identification pour vous connecter à LinkedIn lors de la configuration du connecteur.
+- Votre organisation doit consentir à autoriser le service d’importation Office 365 à accéder aux données de boîte aux lettres dans votre organisation. Pour accepter cette demande, accédez à [cette page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), connectez-vous à l’aide des informations d’identification d’un administrateur général Office 365, puis acceptez la demande.
 
 - L’utilisateur qui crée un connecteur de page de société LinkedIn doit disposer du rôle d’exportation d’importation de boîte aux lettres dans Exchange Online. Cela est nécessaire pour accéder à la page **données** tierces d’archivage dans le centre de sécurité & conformité. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle exportation d’importation de boîte aux lettres au groupe de rôles gestion de l’organisation dans Exchange Online. Vous pouvez aussi créer un groupe de rôles, attribuer le rôle d’exportation d’importation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, reportez-vous aux sections [créer des groupes de rôles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) ou modifier des [groupes](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) de rôles dans l’article «gérer des groupes de rôles dans Exchange Online».
+
+- Vous devez disposer des informations d’identification de connexion (adresse de messagerie ou numéro de téléphone et mot de passe) d’un compte d’utilisateur de LinkedIn qui est administrateur de la page de la société LinkedIn que vous souhaitez archiver. Vous utilisez ces informations d’identification pour vous connecter à LinkedIn lors de la configuration du connecteur.
 
 ## <a name="create-a-linkedin-connector"></a>Créer un connecteur LinkedIn
 
@@ -50,7 +52,6 @@ Une fois que les données de la page de la société LinkedIn sont stockées dan
    Une page d’Assistant s’affiche avec la liste de toutes les pages de la société LinkedIn associées au compte auquel vous vous êtes connecté. Un connecteur ne peut être configuré que pour une seule page de la société. Si votre organisation dispose de plusieurs pages d’entreprise LinkedIn, vous devez créer un connecteur pour chacune d’entre elles.
 
    ![Une page avec une liste de pages de la société LinkedIn s’affiche.](media/LinkedInSelectCompanyPage.png)
-
 
 6. Sélectionnez la page de la société à partir de laquelle vous souhaitez archiver des éléments, puis cliquez sur **suivant**.
 
@@ -80,4 +81,4 @@ Pour afficher plus de détails, cliquez sur le connecteur dans la liste sur la p
    subject:"Contoso Company Page"
    ```
 
-- Pour faciliter la localisation ou la gestion des éléments LinkedIn importés dans Office 365, le propriétaire de la boîte aux lettres de stockage (ou quiconque lui a attribué l’autorisation FullAccess) peut configurer une règle de boîte de réception pour déplacer les éléments d’une page de la société LinkedIn spécifique vers un dossier spécifique. Cela est utile si la boîte aux lettres de stockage est utilisée pour archiver des éléments qui sont importés à partir de différentes sources de données tierces. Par exemple, vous pouvez créer une règle de boîte de réception qui déplace tous les éléments contenant le nom d’une page de la société LinkedIn spécifique dans le champ Subject vers un dossier spécifique.
+- Pour faciliter la localisation ou la gestion des éléments LinkedIn importés dans Office 365, le propriétaire de la boîte aux lettres de stockage (ou quiconque lui a attribué l’autorisation FullAccess) peut configurer une règle de boîte de réception pour déplacer les éléments d’une page de la société LinkedIn vers un dossier spécifique. Cela est utile si la boîte aux lettres de stockage est utilisée pour archiver des éléments importés de différentes sources de données tierces. Par exemple, vous pouvez créer une règle de boîte de réception qui déplace tous les éléments contenant le nom d’une page de la société LinkedIn spécifique dans le champ Subject vers un dossier spécifique.

@@ -9,19 +9,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 55f31488-288a-473a-9b9e-831a11e3711a
-description: 'Utilisez un script PowerShell pour créer une recherche de découverte électronique inaltérable dans Exchange Online, en fonction d’une recherche créée dans le centre de sécurité & Compliance Center. '
-ms.openlocfilehash: d021836a735d5c5dd12124e16e348729d88e6022
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 'Utilisez un script PowerShell pour créer une recherche de découverte électronique inaltérable dans Exchange Online, en fonction d’une recherche créée dans le centre de sécurité & conformité. '
+ms.openlocfilehash: f3d5eb76dfa91334bccae42e0ddb66a71f739a6f
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157976"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199821"
 ---
 # <a name="use-content-search-in-your-ediscovery-workflow"></a>Utilisation de la recherche de contenu dans votre flux de travail de découverte électronique
 
-La fonctionnalité de recherche de contenu dans le centre de sécurité & Compliance Center vous permet d’effectuer des recherches dans toutes les boîtes aux lettres de votre organisation. Contrairement à la découverte électronique inaltérable dans Exchange Online (où vous pouvez effectuer des recherches dans des boîtes aux lettres de 10 000), il n’existe aucune limite au nombre de boîtes aux lettres cibles dans une seule recherche. Pour les scénarios qui nécessitent d’effectuer des recherches à l’échelle de l’organisation, vous pouvez utiliser la recherche de contenu pour consulter toutes les boîtes aux lettres. Ensuite, vous pouvez utiliser les fonctionnalités de flux de travail de la découverte électronique inaltérable pour effectuer d'autres tâches relatives à la découverte électronique, telles que la conservation des boîtes aux lettres et l'exportation des résultats de la recherche. Par exemple, supposons que vous devez réaliser une recherche dans toutes les boîtes aux lettres pour identifier des responsables spécifiques impliqués dans une affaire judiciaire. Vous pouvez utiliser la recherche de contenu dans le centre de sécurité & Compliance Center pour rechercher toutes les boîtes aux lettres de votre organisation afin d’identifier celles qui répondent au cas. Vous pouvez ensuite utiliser cette liste de boîtes aux lettres de dépositaire comme boîtes aux lettres source pour une recherche de découverte électronique inaltérable dans Exchange Online. À l'aide de la découverte électronique inaltérable, vous pouvez suspendre ces boîtes aux lettres source, copier les résultats de la recherche dans une boîte aux lettres de découverte et exporter les résultats de la recherche.
+La fonctionnalité de recherche de contenu dans le centre de sécurité & conformité vous permet d’effectuer des recherches dans toutes les boîtes aux lettres de votre organisation. Contrairement à la découverte électronique inaltérable dans Exchange Online (où vous pouvez effectuer des recherches dans des boîtes aux lettres de 10 000), il n’existe aucune limite au nombre de boîtes aux lettres cibles dans une seule recherche. Pour les scénarios qui nécessitent d’effectuer des recherches à l’échelle de l’organisation, vous pouvez utiliser la recherche de contenu pour consulter toutes les boîtes aux lettres. Ensuite, vous pouvez utiliser les fonctionnalités de flux de travail de la découverte électronique inaltérable pour effectuer d'autres tâches relatives à la découverte électronique, telles que la conservation des boîtes aux lettres et l'exportation des résultats de la recherche. Par exemple, supposons que vous devez réaliser une recherche dans toutes les boîtes aux lettres pour identifier des responsables spécifiques impliqués dans une affaire judiciaire. Vous pouvez utiliser la recherche de contenu dans le centre de sécurité & conformité pour rechercher toutes les boîtes aux lettres de votre organisation afin d’identifier celles qui répondent au cas. Vous pouvez ensuite utiliser cette liste de boîtes aux lettres de dépositaire comme boîtes aux lettres source pour une recherche de découverte électronique inaltérable dans Exchange Online. À l'aide de la découverte électronique inaltérable, vous pouvez suspendre ces boîtes aux lettres source, copier les résultats de la recherche dans une boîte aux lettres de découverte et exporter les résultats de la recherche.
   
-Cette rubrique comprend un script que vous pouvez exécuter pour créer une recherche de découverte électronique inaltérable dans Exchange Online à l’aide de la liste des boîtes aux lettres source et de la requête de recherche à partir d’une recherche créée dans le centre de sécurité & Compliance Center. Voici une vue d’ensemble du processus :
+Cette rubrique comprend un script que vous pouvez exécuter pour créer une recherche de découverte électronique inaltérable dans Exchange Online à l’aide de la liste des boîtes aux lettres source et de la requête de recherche à partir d’une recherche créée dans le centre de sécurité & conformité. Voici une vue d’ensemble du processus :
   
 [Étape 1 : créer une recherche de contenu pour consulter toutes les boîtes aux lettres de votre organisation](#step-1-create-a-content-search-to-search-all-mailboxes-in-your-organization)
 
@@ -33,14 +33,14 @@ Cette rubrique comprend un script que vous pouvez exécuter pour créer une rech
 
 ## <a name="step-1-create-a-content-search-to-search-all-mailboxes-in-your-organization"></a>Étape 1 : créer une recherche de contenu pour consulter toutes les boîtes aux lettres de votre organisation
 
-La première étape consiste à utiliser le centre de sécurité & Compliance Center (ou Security & Compliance Center PowerShell) pour créer une recherche de contenu qui recherche toutes les boîtes aux lettres de votre organisation. Il n’existe aucune limite sur le nombre de boîtes aux lettres pour une recherche de contenu donnée. Spécifiez une requête de mot clé appropriée (ou une requête pour des types d’informations sensibles) afin que la recherche renvoie uniquement les boîtes aux lettres source pertinentes pour votre enquête. Si nécessaire, affinez la requête de recherche pour limiter l’étendue des résultats de recherche et des boîtes aux lettres source renvoyés.
+La première étape consiste à utiliser le centre de sécurité & conformité (ou le centre de sécurité & PowerShell) pour créer une recherche de contenu qui recherche toutes les boîtes aux lettres de votre organisation. Il n’existe aucune limite sur le nombre de boîtes aux lettres pour une recherche de contenu donnée. Spécifiez une requête de mot clé appropriée (ou une requête pour des types d’informations sensibles) afin que la recherche renvoie uniquement les boîtes aux lettres source pertinentes pour votre enquête. Si nécessaire, affinez la requête de recherche pour limiter l’étendue des résultats de recherche et des boîtes aux lettres source renvoyés.
   
 > [!NOTE]
 > Si la recherche de contenu source ne renvoie aucun résultat, aucune découverte électronique inaltérable n’est créée lorsque vous exécutez le script à l’étape 3. Il se peut que vous deviez modifier la requête de recherche, puis réexécuter la recherche de contenu pour renvoyer des résultats de recherche. 
   
 ### <a name="use-the-security--compliance-center-to-search-all-mailboxes"></a>Utiliser le Centre de conformité et sécurité pour effectuer une recherche dans toutes les boîtes aux lettres
 
-1. [Accédez au centre de sécurité _AMP_ Compliance Center](go-to-the-securitycompliance-center.md). 
+1. [Accédez au centre de sécurité & conformité](go-to-the-securitycompliance-center.md). 
     
 2. Cliquez sur**recherche de contenu**de **recherche** > , puis sur nouvelle icône](media/O365-MDM-CreatePolicy-AddIcon.gif)ajouter une **recherche** ![.
     
@@ -56,9 +56,9 @@ La première étape consiste à utiliser le centre de sécurité & Compliance Ce
     
 7.  Si nécessaire, affinez la requête de recherche pour limiter l’étendue des résultats de recherche, puis redémarrez la recherche. 
     
-### <a name="use-security--compliance-center-powershell-to-search-all-mailboxes"></a>Utiliser le centre de sécurité & Compliance Center PowerShell pour rechercher toutes les boîtes aux lettres
+### <a name="use-security--compliance-center-powershell-to-search-all-mailboxes"></a>Utiliser la sécurité & Centre de conformité PowerShell pour rechercher toutes les boîtes aux lettres
 
-Vous pouvez également utiliser la cmdlet **New-ComplianceSearch** pour effectuer une recherche dans toutes les boîtes aux lettres de votre organisation. La première étape consiste à [vous connecter au centre de sécurité _AMP_ Compliance Center PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=627084).
+Vous pouvez également utiliser la cmdlet **New-ComplianceSearch** pour effectuer une recherche dans toutes les boîtes aux lettres de votre organisation. La première étape consiste à [vous connecter à la sécurité & Centre de conformité PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=627084).
   
 Voici un exemple d’utilisation de PowerShell pour effectuer une recherche dans toutes les boîtes aux lettres de votre organisation. La requête de recherche renvoie tous les messages envoyés entre le 1er janvier 2015 et le 30 juin 2015 contenant l’expression « financial report » dans l’objet. La première commande crée la recherche et la deuxième commande l'exécute. 
   
@@ -110,7 +110,7 @@ Pour vous aider à créer une recherche de contenu ne comportant pas plus de 1 0
   "Number of mailboxes that have search hits: " + $mailboxes.Count
   ```
 
-2. Dans le centre de sécurité & Compliance Center PowerShell, accédez au dossier dans lequel se trouve le script que vous avez créé à l’étape précédente, puis exécutez le script. par exemple:
+2. Dans Security & Compliance Center PowerShell, accédez au dossier dans lequel se trouve le script que vous avez créé à l’étape précédente, puis exécutez le script. par exemple:
     
     ```
     .\SourceMailboxes.ps1
@@ -124,7 +124,7 @@ Si le nombre de boîtes aux lettres source est supérieur à 1 000, essayez de c
   
 ## <a name="step-2-connect-to-the-security--compliance-center-and-exchange-online-in-a-single-remote-powershell-session"></a>Étape 2: se connecter au centre \& de sécurité conformité et à Exchange Online en une seule session PowerShell à distance
 
-L’étape suivante consiste à connecter Windows PowerShell au centre de sécurité & Compliance Center et à votre organisation Exchange Online. Cela est nécessaire, car le script que vous exécutez à l’étape 3 requiert l’accès aux cmdlets de recherche de contenu dans le centre de sécurité & Compliance Center et les cmdlets de découverte électronique inaltérable dans Exchange Online.
+L’étape suivante consiste à connecter Windows PowerShell au centre de sécurité & au centre de conformité et à votre organisation Exchange Online. Cela est nécessaire, car le script que vous exécutez à l’étape 3 doit accéder aux applets de commande de recherche de contenu dans le centre de sécurité & conformité et aux cmdlets de découverte électronique inaltérable dans Exchange Online.
   
 1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l'aide du suffixe de nom de fichier .ps1. Par exemple, vous pouvez l’enregistrer dans un fichier nommé `ConnectEXO-CC.ps1`.
     
@@ -143,7 +143,7 @@ L’étape suivante consiste à connecter Windows PowerShell au centre de sécur
     .\ConnectEXO-CC.ps1
     ```
 
-Comment savoir si cela a fonctionné ? Une fois que vous avez exécuté le script, les cmdlets du centre de sécurité & conformité et d’Exchange Online sont importées dans votre session PowerShell locale. Si vous ne recevez aucune erreur, la connexion est établie. Un test rapide consiste à exécuter une cmdlet Security & Compliance Center (par exemple, **install-UnifiedCompliancePrerequisite** ) et une cmdlet Exchange Online, telle que **Get-Mailbox**. 
+Comment savoir si cela a fonctionné ? Après avoir exécuté le script, les cmdlets du centre de conformité & de sécurité et d’Exchange Online sont importées dans votre session PowerShell locale. Si vous ne recevez aucune erreur, la connexion est établie. Un test rapide consiste à exécuter une cmdlet Security & Compliance Center (par exemple, **install-UnifiedCompliancePrerequisite** ) et une cmdlet Exchange Online, telle que **Get-Mailbox**. 
   
 ## <a name="step-3-run-the-script-to-create-an-in-place-ediscovery-search-from-the-content-search"></a>Étape 3 : exécuter le script pour créer une recherche de découverte électronique inaltérable à partir de la recherche de contenu
 
@@ -266,7 +266,7 @@ Après avoir créé et démarré la recherche de découverte électronique inalt
 
 1. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
-2. Dans l’affichage liste, sélectionnez la recherche de découverte électronique inaltérable que vous avez créée à l’étape 3, puis **** ![cliquez sur modifier](media/O365_MDM_CreatePolicy_EditIcon.gif)l’icône modifier.
+2. Dans l’affichage liste, sélectionnez la recherche de découverte électronique inaltérable que vous avez créée à l’étape 3, puis **** ![cliquez sur modifier](media/O365-MDM-CreatePolicy-EditIcon.gif)l’icône modifier.
     
 3. Dans la page **Conservation inaltérable**, cochez la case **Mettre en attente le contenu correspondant à la requête de recherche des boîtes aux lettres sélectionnées**, puis sélectionnez l'une des options suivantes : 
     

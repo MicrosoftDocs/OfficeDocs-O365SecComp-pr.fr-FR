@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Préparez-vous pour le nouveau centre de sécurité Microsoft 365 et le centre de conformité
-ms.openlocfilehash: 0bb30ef3cd6f7d35e0f5a86842a8638e87e89773
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.openlocfilehash: 435030c9ab5d9b62c54483dd2ca072999d539712
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34652487"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852768"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>Le nouveau centre de sécurité Microsoft 365 et le centre de conformité Microsoft 365 sont désormais généralement disponibles
 
@@ -102,7 +102,7 @@ Le tableau suivant résume qui peut accéder à différents portails dans Azure,
 |[Azure Information Protection](https://docs.microsoft.com/azure/information-protection) |Oui |Oui |Non |
 |[Azure Security Center](https://docs.microsoft.com/azure/security-center/)  |Oui |Oui |Non |
 |[Protection avancée contre les menaces](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)  |Oui |Oui |Non |
-|[Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection?ocid=tia-260153000#windows-defender-atp) |Oui |Oui |Non |
+|[Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) |Oui |Oui |Non |
 |[Protection des identités](https://docs.microsoft.com/azure/active-directory/identity-protection)     |Oui |Oui |Non |
 |[Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |Oui |Oui |Non |
 |[Intune](https://docs.microsoft.com/intune)     |Oui |Oui |Oui |

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: En savoir plus sur les stratégies de surveillance dans Office 365
-ms.openlocfilehash: 2948cc0440bf481e3f0e90e76a23392233d81cc8
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d802fb0e17894a769fb330aa5f080fbd6151b44e
+ms.sourcegitcommit: 3699da2cad6e6a2002083e2884e32393dacab0ca
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156476"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34694708"
 ---
 # <a name="supervision-policies-in-office-365"></a>Stratégies de surveillance dans Office 365
 
@@ -31,7 +31,7 @@ Ces stratégies peuvent également vous aider à surmonter de nombreux défis de
 
 - Surveillance de types croissants de canaux de communication
 - Augmentation du volume des données de message
-- Respect de la réglementation & risques d’amendes
+- Application réglementaire & le risque d’amendes
 
 Dans certaines organisations, le support informatique et le groupe de gestion de la conformité peuvent séparer les tâches. Office 365 prend en charge la séparation entre la configuration de la fonctionnalité de stratégie de surveillance et la configuration des stratégies pour les communications capturées. Par exemple, le groupe informatique d’une organisation peut être responsable de la configuration des autorisations de rôle et des groupes afin de prendre en charge les stratégies de surveillance configurées et gérées par l’équipe de conformité de l’organisation.
 
@@ -82,10 +82,15 @@ Pour simplifier votre configuration, créez des groupes pour les personnes qui o
 Avec les stratégies de surveillance, vous pouvez choisir de surveiller les messages dans une ou plusieurs des plateformes de communication suivantes:
 
 - **Courrier électronique Exchange:** Les boîtes aux lettres hébergées sur Exchange Online dans le cadre de votre abonnement Office 365 sont toutes éligibles pour la supervision des messages. Les e-mails et les pièces jointes correspondant aux conditions de stratégie de surveillance sont immédiatement disponibles pour la surveillance et les rapports de surveillance. Les types de pièces jointes prises en charge pour la surveillance sont les mêmes que pour les [types de fichiers pris en charge pour les inspections de contenu des règles de flux de messagerie](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)
+
 - **Microsoft teams:** Les communications de conversation et les pièces jointes associées dans les canaux Microsoft teams publics et privés, ainsi que dans les conversations individuelles, peuvent être surveillées. Les conversations teams correspondant aux conditions de stratégie de contrôle sont traitées une fois toutes les 24 heures, puis disponibles pour la surveillance et les rapports de surveillance. Utilisez les configurations de gestion de groupe suivantes pour superviser les conversations des utilisateurs individuels et les communications de canal dans teams:
 
     - **Pour la supervision de la conversation teams:** Affectez des utilisateurs individuels ou affectez un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de surveillance. Il s’agit des relations utilisateur/conversation 1-à-1 ou 1-n.
     - **Pour les communications de canal teams:** Affectez tous les groupes Microsoft Team Channel ou Office 365 que vous souhaitez surveiller, qui contient un utilisateur spécifique à la stratégie de surveillance. Si vous ajoutez le même utilisateur à d’autres canaux Microsoft teams ou à des groupes Office 365, veillez à ajouter ces nouveaux canaux et groupes à la stratégie de surveillance.
+
+- **Skype entreprise Online:** Les communications de conversation et les pièces jointes associées dans Skype entreprise Online peuvent être surveillées. Les conversations Skype entreprise Online correspondant à des conditions de stratégie de supervision sont traitées une fois toutes les 24 heures, puis disponibles pour la surveillance et les rapports de surveillance. Les conversations de conversation surveillées proviennent de [conversations précédentes enregistrées dans Skype entreprise Online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Utilisez la configuration de gestion de groupe suivante pour superviser les communications de conversation des utilisateurs dans Skype entreprise Online:
+
+    - **Pour la supervision de la conversation Skype entreprise Online:** Affectez des utilisateurs individuels ou affectez un [groupe de distribution](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) à la stratégie de surveillance. Il s’agit des relations utilisateur/conversation 1-à-1 ou 1-n.
 
 - **Sources** tierces: Vous pouvez superviser les communications provenant de sources tierces (par exemple, Facebook ou DropBox) pour les données importées dans les boîtes aux lettres Office 365 de votre organisation. [Découvrez comment importer des données tierces dans Office 365](https://docs.microsoft.com/office365/securitycompliance/archiving-third-party-data).
 
@@ -145,12 +150,12 @@ Le tableau suivant décrit plus en plus de chaque condition.
   
 |**Condition**|**Comment utiliser cette condition ?**|
 |:-----|:-----|
-| **Un message est reçu à partir de l’un de ces domaines**  <br><br> **Le message n’est reçu à partir d’aucun de ces domaines** | Pour appliquer la stratégie lorsque certains domaines sont inclus ou exclus d’un message reçu, entrez chaque domaine et plusieurs domaines séparés par une virgule. Chaque domaine que vous entrez est appliqué séparément (un seul de ces domaines doit s’appliquer à la stratégie à appliquer au message). |
-| **Un message est envoyé à l’un de ces domaines**  <br><br> **Le message n’est pas envoyé à l’un de ces domaines** | Pour appliquer la stratégie lorsque certains domaines sont inclus ou exclus d’un message envoyé, entrez chaque domaine et plusieurs domaines séparés par une virgule. Chaque domaine que vous entrez sera appliqué séparément (un seul de ces domaines doit s’appliquer à la stratégie à appliquer au message). |
+| **Un message est reçu à partir de l’un de ces domaines**  <br><br> **Le message n’est reçu à partir d’aucun de ces domaines** | Appliquez la stratégie pour inclure ou exclure des domaines ou des adresses de messagerie spécifiques dans les messages reçus. Entrez chaque domaine ou adresse de messagerie et séparez les domaines ou adresses de messagerie par une virgule. Chaque domaine ou adresse de messagerie entré est appliqué séparément, un seul domaine ou une seule adresse de messagerie doit s’appliquer pour la stratégie à appliquer au message. <br><br> Si vous souhaitez surveiller tous les messages électroniques à partir d’un domaine spécifique mais souhaitez exclure les messages qui n’ont pas besoin d’être réexaminés (bulletins d’information, annonces, etc.), vous devez configurer deux conditions: <br> -Un **message est reçu à partir de l’une des conditions de ces domaines** qui définit le domaine («contoso.com»), et <br> -Aucun **message n’est reçu à partir de l’un de ces domaines** , qui exclut l’adresse de messagerie («Newsletter@contoso.com»). |
+| **Un message est envoyé à l’un de ces domaines**  <br><br> **Le message n’est pas envoyé à l’un de ces domaines** | Appliquez la stratégie pour inclure ou exclure des domaines ou des adresses de messagerie spécifiques dans les messages envoyés. Entrez chaque domaine ou adresse de messagerie et séparez les domaines ou adresses de messagerie par une virgule. Chaque domaine ou adresse de messagerie est appliqué séparément, un seul domaine ou une seule adresse de messagerie doit s’appliquer pour la stratégie à appliquer au message. <br><br> Si vous souhaitez surveiller tous les messages électroniques envoyés à un domaine spécifique mais exclure les messages envoyés qui n’ont pas besoin d’être réexaminés, vous devez configurer deux conditions: <br> -Un **message est envoyé à l’un de ces domaines** qui définit le domaine («contoso.com»), et <br> -Un **message n’est pas envoyé à l’un de ces domaines** , qui exclut l’adresse de messagerie («Subscriptions@contoso.com»). |
 | **Le message est classé avec l’une de ces étiquettes**  <br><br> **Le message n’est classé avec aucune de ces étiquettes** | Pour appliquer la stratégie lorsque certaines étiquettes de rétention sont incluses ou exclues dans un message. Les étiquettes de rétention doivent être configurées séparément et les étiquettes configurées dans le cadre de cette condition. Chaque étiquette que vous choisissez est appliquée séparément (une seule de ces étiquettes doit s’appliquer pour la stratégie à appliquer au message). Pour plus d’informations sur la configuration des étiquettes de rétention, consultez la rubrique [vue d’ensemble des étiquettes de](https://docs.microsoft.com/office365/securitycompliance/labels)rétention.|
 | **Le message contient l’un de ces mots**  <br><br> **Le message ne contient aucun de ces mots** | Pour appliquer la stratégie lorsque certains mots ou expressions sont inclus ou exclus dans un message, entrez chaque mot ou expression sur une ligne distincte. Chaque ligne de mots que vous entrez est appliquée séparément (une seule de ces lignes doit s’appliquer à la stratégie à appliquer au message). Pour plus d’informations sur la saisie des mots ou des expressions, voir la section suivante [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
 | **La pièce jointe contient l’un de ces mots**  <br><br> **La pièce jointe ne contient aucun de ces mots** | Pour appliquer la stratégie lorsque certains mots ou expressions sont inclus ou exclus dans une pièce jointe (par exemple, un document Word), entrez chaque mot ou expression sur une ligne distincte. Chaque ligne de mots que vous entrez est appliquée séparément (une seule ligne doit s’appliquer à la stratégie à appliquer à la pièce jointe). Pour plus d’informations sur la saisie des mots ou des expressions, voir la section suivante [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
-| **La pièce jointe est l’un de ces types de fichiers**  <br><br> **Aucune de ces types de fichiers n’est associée à la pièce jointe** | Pour superviser les communications qui incluent ou excluent des types spécifiques de pièces jointes, entrez les extensions de fichiers (par exemple,. exe ou. pdf). Si vous souhaitez inclure ou exclure plusieurs extensions de fichiers, entrez-les sur des lignes distinctes. Il suffit que l’extension d’une seule pièce jointe corresponde pour que la stratégie s’applique.|
+| **La pièce jointe est l’un de ces types de fichiers**  <br><br> **Aucune de ces types de fichiers n’est associée à la pièce jointe** | Pour superviser les communications qui incluent ou excluent des types spécifiques de pièces jointes, entrez les extensions de fichiers (par exemple,. exe ou. pdf). Si vous souhaitez inclure ou exclure plusieurs extensions de fichiers, entrez-les sur des lignes distinctes. Une seule extension de pièce jointe doit correspondre pour que la stratégie s’applique.|
 | **La taille du message est supérieure à**  <br><br> **La taille du message n’est pas supérieure à** | Pour examiner les messages en fonction d’une certaine taille, utilisez les conditions suivantes pour spécifier la taille maximale ou minimale qu’un message peut contenir avant d’être soumis à révision. Par exemple, si vous spécifiez une **taille de message supérieure à** \> **1,0 Mo**, tous les messages de 1,01 Mo et plus sont soumis à révision. Vous pouvez choisir des octets, kilo-octets, mégaoctets ou gigaoctets pour cette condition.|
 | **La taille de la pièce jointe est supérieure à**  <br><br> **La pièce jointe n’est pas supérieure à** | Pour examiner les messages en fonction de la taille de leurs pièces jointes, spécifiez la taille maximale ou minimale qu’une pièce jointe peut contenir avant que le message et ses pièces jointes soient soumis à révision. Par exemple, si vous spécifiez une **taille de pièce jointe supérieure** \> à **2,0 Mo**, tous les messages avec des pièces jointes 2,01 Mo et supérieures sont soumis à la révision. Vous pouvez choisir des octets, kilo-octets, mégaoctets ou gigaoctets pour cette condition.|
    
@@ -159,7 +164,7 @@ Le tableau suivant décrit plus en plus de chaque condition.
   
 ##### <a name="enter-multiple-conditions"></a>Entrer plusieurs conditions
 
-Si vous entrez plusieurs conditions, Office 365 utilise toutes les conditions ensemble pour déterminer le moment auquel appliquer la stratégie aux éléments de communication. Lorsque vous configurez plusieurs conditions, elles doivent toutes être remplies pour que la stratégie s’applique, sauf si vous entrez une exception. Par exemple, vous devez créer une stratégie qui s’applique si un message contient le mot «commercial» et est supérieur à 2 Mo. Toutefois, si le message contient également les mots «approuvé par Contoso Financial», la stratégie ne doit pas s’appliquer. Ainsi, dans ce cas, les trois conditions suivantes sont les suivantes:
+Si vous entrez plusieurs conditions, Office 365 utilise toutes les conditions ensemble pour déterminer le moment auquel appliquer la stratégie aux éléments de communication. Lorsque vous configurez plusieurs conditions, toutes les conditions doivent être remplies pour que la stratégie s’applique, sauf si vous entrez une exception. Par exemple, vous avez besoin d’une stratégie qui s’applique si un message contient le mot «commercial» et qu’il est supérieur à 2 Mo. Toutefois, si le message contient également les mots «approuvé par Contoso Financial», la stratégie ne doit pas s’appliquer. Ainsi, dans ce cas, les trois conditions suivantes sont les suivantes:
   
 - Le **message contient l’un de ces mots**, avec les mots clés «Trade»
 
@@ -173,15 +178,19 @@ Si vous souhaitez réduire la quantité de contenu à réviser, vous pouvez spé
 
 ## <a name="monitor--manage"></a>Surveiller & gérer
 
-Il est facile de surveiller les résultats de vos stratégies de surveillance et d’appliquer une balise de résolution. Vous pouvez rapidement voir l’état des éléments vérifiés, les utilisateurs et les groupes sous surveillance, ainsi que les utilisateurs et les groupes désignés comme relecteurs.
+Il est facile de surveiller les résultats de vos stratégies de surveillance et d’appliquer une balise de résolution. Vous pouvez voir rapidement:
+
+- État des éléments vérifiés
+- Utilisateurs et groupes sous surveillance
+- Utilisateurs et groupes désignés comme relecteurs
 
 ### <a name="supervision-policy-dashboard"></a>Tableau de bord de stratégie de supervision
 
-Utilisez le tableau de bord de stratégie de supervision pour gérer les résultats de stratégie de surveillance et résoudre les éléments non traités. Ce tableau de bord permet aux relecteurs d’afficher les éléments devant être vérifiés, d’effectuer des actions sur un élément et de passer en revue les résultats des éléments précédemment examinés et résolus pour chaque stratégie de surveillance. Vous pouvez accéder au tableau de bord de stratégie de supervision dans le centre de conformité à**** la **surveillance** > de*votre stratégie* > personnalisée.
+Utilisez le tableau de bord de stratégie de supervision pour gérer les résultats de stratégie de surveillance et résoudre les éléments non traités. Ce tableau de bord permet aux relecteurs d’afficher les éléments devant être vérifiés, d’agir sur un élément et de passer en revue les résultats des éléments précédemment examinés et résolus pour chaque stratégie de surveillance. Vous pouvez accéder au tableau de bord de stratégie de supervision dans le centre de conformité à**** la **surveillance** > de*votre stratégie* > personnalisée.
 
 #### <a name="dashboard-home"></a>Accueil du tableau de bord
 
-La page d' **Accueil** du tableau de bord comporte plusieurs sections qui vous permettent d’effectuer rapidement des actions sur vos stratégies de surveillance. Ici, vous pouvez:
+La page d' **Accueil** du tableau de bord comporte plusieurs sections qui vous permettent d’agir rapidement sur vos stratégies de surveillance. Ici, vous pouvez:
 
 - Vérifier rapidement les points forts en attente et résolus pour la semaine
 - Afficher la liste des utilisateurs et des groupes supervisés de la stratégie sélectionnée
@@ -195,7 +204,7 @@ L’onglet **révision** permet de classer et de résoudre les éléments identi
 - Filtrer les éléments en attente, conformes, non conformes et douteux.
 - Baliser un élément unique comme étant conforme, non conforme ou douteable. Vous pouvez également enregistrer un commentaire avec l’élément pour clarifier l’action de marquage effectuée.
 - Balise en bloc plusieurs éléments comme conformes, non conformes ou douteux. Vous pouvez également enregistrer un commentaire avec plusieurs éléments pour clarifier l’action de marquage effectuée.
-- Afficher l’historique du balisage pour un seul élément. Il s’agit notamment de la personne qui a résolu l’élément, de la date et de l’heure de l’action, de la balise de résolution et de tous les commentaires inclus.
+- Afficher l’historique du balisage pour un seul élément. Inclut qui a résolu l’élément, la date et l’heure de l’action, la balise de résolution et les commentaires inclus.
 - Reclassez les éléments consultés précédemment comme conformes, non conformes ou douteux. Vous pouvez également enregistrer un commentaire avec un ou plusieurs éléments afin de clarifier l’action de reclassification effectuée.
 
 #### <a name="resolved-items-tab"></a>Onglet éléments résolus
@@ -215,8 +224,8 @@ Utilisez les rapports de surveillance pour afficher l’activité de révision a
 
 ### <a name="view-the-supervision-report"></a>Afficher le rapport de supervision
 
-1. Connectez-vous au [Centre de conformité](https://compliance.microsoft.com) avec les informations d’identification d’un compte d’administrateur de votre organisation disposant des autorisations pour afficher les rapports de surveillance.
-2. Accédez au **tableau de bord** **rapports** \> ou à la **surveillance** pour afficher le widget rapports de supervision avec une synthèse de l’activité de stratégie de surveillance actuelle.
+1. Connectez-vous au [Centre de conformité](https://compliance.microsoft.com) avec des informations d’identification pour un compte d’administrateur disposant des autorisations pour afficher les rapports de surveillance.
+2. Accédez au **tableau de bord** **rapports** \> ou à la **surveillance** pour afficher le widget rapports de supervision pour un résumé de l’activité de stratégie de surveillance actuelle.
 3. Sélectionnez le widget **surveillance** pour ouvrir la page rapport détaillé.
 
 > [!NOTE]
@@ -237,7 +246,7 @@ Voici une répartition des valeurs affichées dans la colonne **type** de balise
 |:-----|:-----|
 | **Non révisé** | Nombre d’e-mails non vérifiés. Ces messages sont en attente de révision dans le tableau de bord de supervision Office 365.
 | **Compliant** | Le nombre de messages vérifiés et marqués comme étant conformes. Ces messages nécessitent toujours une résolution. |
-| **Suspects** | Le nombre de messages consultés et marqués comme suspects. Cela sert d’indicateur pour les autres réviseurs afin de vérifier si un message électronique a besoin d’une enquête pour la conformité. Ces messages nécessitent toujours une résolution. |
+| **Suspects** | Le nombre de messages consultés et marqués comme suspects. Sert d’indicateur pour les autres réviseurs afin de vérifier si un message électronique a besoin d’une enquête pour la conformité. Ces messages nécessitent toujours une résolution. |
 | **Non conforme (actif)** | Nombre de messages électroniques non conformes que les relecteurs examinent actuellement. |
 | **Non conforme (résolu)** | Nombre de messages électroniques non conformes que les relecteurs ont examinés et résolus. |
 | **Stratégie de correspondance** | Nombre total de messages provenant d’Exchange, de teams et de sources de données tierces qui correspondent à une ou plusieurs conditions définies dans une stratégie de surveillance |
@@ -245,7 +254,7 @@ Voici une répartition des valeurs affichées dans la colonne **type** de balise
 | **Resolved** | Nombre total de messages provenant d’Exchange, de teams et de sources de données tierces **** classées comme résolus|
 
 > [!NOTE]
-> Les stratégies de surveillance doivent d’abord être mises en service pour qu’elles apparaissent dans ce rapport. En outre, si des stratégies sont supprimées, les données historiques continuent d’apparaître. Toutefois, elles sont indiquées en tant que «stratégie inexistante» et la fonction d' **exportation** n’est pas disponible.
+> Les stratégies de surveillance doivent être mises en service avant d’apparaître dans les rapports. Si des stratégies sont supprimées, les données historiques continuent d’apparaître. Toutefois, elles sont indiquées en tant que «stratégie inexistante» et la fonction d' **exportation** n’est pas disponible.
 
 ## <a name="audit"></a>Contrôlé
 
@@ -258,7 +267,6 @@ Les activités de stratégie de surveillance suivantes sont vérifiées et dispo
 | **Créer une stratégie** | [New-Supervisoryreviewpolicyv2 permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2) <br> [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule) |
 | **Modifier une stratégie** | [Set-Supervisoryreviewpolicyv2 permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2) <br> [Set-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule) |
 | **Suppression d’une stratégie** | [Remove-Supervisoryreviewpolicyv2 permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
-| **Afficher une stratégie** | [Get-Supervisoryreviewpolicyv2 permet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2) |
 
 Afficher les activités d’audit dans le journal d’audit unifié ou avec l’applet de commande PowerShell [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) .
 
@@ -272,4 +280,4 @@ Outre les informations fournies dans les journaux et les rapports de surveillanc
 
 ## <a name="ready-to-get-started"></a>Vous êtes prêt ?
 
-Pour commencer à configurer les stratégies de surveillance pour votre organisation, consultez la rubrique [configurer les stratégies de surveillance](configure-supervision-policies.md).
+Pour configurer les stratégies de surveillance pour votre organisation, consultez la rubrique [configurer les stratégies de surveillance](configure-supervision-policies.md).

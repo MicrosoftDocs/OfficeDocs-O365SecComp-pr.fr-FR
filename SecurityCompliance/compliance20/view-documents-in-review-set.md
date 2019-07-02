@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ''
-ms.openlocfilehash: 0e986510ca49cfbfd77ab6f4d43220df1ebf35c5
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d1a51e2496bd57d83e1baf78d82611c406a10e26
+ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151546"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767365"
 ---
 # <a name="view-documents-in-a-review-set"></a>Afficher les documents d’un jeu à réviser
 
@@ -38,14 +38,14 @@ Ce panneau peut être activé/désactivé pour afficher diverses métadonnées a
 
 ## <a name="native-view"></a>Affichage natif
 
-La visionneuse Native affiche l’affichage le plus enrichi d’un document. Il prend en charge des centaines de types de fichiers et permet d’afficher l’expérience la plus réelle vers Native possible. Pour les fichiers Microsoft Office, par exemple, la visionneuse exploite Office Online pour afficher du contenu tel que des commentaires de document, des formules Excel, des lignes/colonnes masquées, des notes PowerPoint, etc. Pour plus d’informations sur les visionneuses Office Online, \[reportez-vous à l’article suivant:\]
+La visionneuse Native affiche l’affichage le plus enrichi d’un document. Il prend en charge des centaines de types de fichiers et permet d’afficher l’expérience la plus réelle vers Native possible. Pour les fichiers Microsoft Office, la visionneuse utilise la version Web des applications Office pour afficher du contenu tel que des commentaires de document, des formules Excel, des lignes/colonnes masquées et des notes PowerPoint.
 
 ![Affichage natif
 ](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>Affichage de texte
 
-La visionneuse de texte fournit une vue du texte extrait d’un fichier. Elle ignore toutes les images incorporées et la mise en forme, mais elle est très performante si un utilisateur tente de comprendre le contenu rapidement. L’affichage de texte comprend également d’autres fonctionnalités:
+La visionneuse de texte fournit une vue du texte extrait d’un fichier. Elle ignore toutes les images incorporées et la mise en forme, mais est très efficace si vous essayez de comprendre le contenu rapidement. L’affichage de texte comprend également les fonctionnalités suivantes:
 
   - Le compteur de ligne facilite la référence à des parties spécifiques d’un document.
 

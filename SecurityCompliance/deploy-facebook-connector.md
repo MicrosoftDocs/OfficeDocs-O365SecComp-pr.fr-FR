@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Les administrateurs peuvent configurer un connecteur natif pour importer et archiver des pages Facebook dans Office 365. Une fois ces données importées dans Office 365, vous pouvez utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer la gouvernance des données Facebook de votre organisation.
-ms.openlocfilehash: b0ec46cea2dd5722633e7fc302cdd0d03cd5d56d
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1f5b0f241616cc95e79e80d054a8782f97c5887b
+ms.sourcegitcommit: 3699da2cad6e6a2002083e2884e32393dacab0ca
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150556"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34694736"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-data-in-office-365"></a>Déployer un connecteur pour archiver des données Facebook dans Office 365
 
@@ -24,7 +24,7 @@ Cet article contient le processus étape par étape pour déployer un connecteur
 
 ## <a name="step-1-download-the-package"></a>Étape 1: Télécharger le package
 
-Téléchargez le package prédéfini à partir de la section Release dans le référentiel GitHub à l’adresse <https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases>suivante:. Sous la dernière version, téléchargez le fichier zip nommé **SampleConnector. zip**. Vous allez télécharger ce fichier zip vers Azure à l’étape 4.
+Téléchargez le package prédéfini à partir de la section Release dans le référentiel GitHub à l' <https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases>adresse. Sous la dernière version, téléchargez le fichier zip nommé **SampleConnector. zip**. Vous téléchargez ce fichier zip vers Azure à l’étape 4.
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>Étape 2: créer une application dans Azure Active Directory
 
@@ -44,7 +44,7 @@ Téléchargez le package prédéfini à partir de la section Release dans le ré
 
    ![](media/FBCimage4.png)
 
-5. Copiez l’ID d' **application (client)** et l' **ID de répertoire (** client) et enregistrez-les dans un fichier texte ou un autre emplacement sûr. Vous utiliserez ces ID dans les étapes ultérieures.
+5. Copiez l’ID d' **application (client)** et l' **ID de répertoire (** client) et enregistrez-les dans un fichier texte ou un autre emplacement sûr. Vous utilisez ces ID dans les étapes ultérieures.
 
    ![](media/FBCimage5.png)
 
@@ -60,11 +60,11 @@ Téléchargez le package prédéfini à partir de la section Release dans le ré
 
     ![](media/FBCimage8.png)
 
-9. Copiez la valeur de la clé secrète et enregistrez-la dans un fichier texte ou dans un autre emplacement de stockage. Il s’agit de la clé secrète de l’application AAD que vous utiliserez plus tard.
+9. Copiez la valeur de la clé secrète et enregistrez-la dans un fichier texte ou dans un autre emplacement de stockage. Il s’agit de la clé secrète de l’application AAD que vous utilisez dans les étapes ultérieures.
 
    ![](media/FBCimage9.png)
 
-10. Accédez au **manifeste** et copiez le identifierUris (également appelé URI de l’application AAD) en surbrillance dans la capture d’écran suivante. Copiez l’URI de l’application AAD dans un fichier texte ou un autre emplacement de stockage. Vous l’utiliserez à l’étape 6.
+10. Accédez au **manifeste** et copiez le identifierUris (également appelé URI de l’application AAD) en surbrillance dans la capture d’écran suivante. Copiez l’URI de l’application AAD dans un fichier texte ou un autre emplacement de stockage. Vous l’utilisez à l’étape 6.
 
    ![](media/FBCimage10.png)
 
@@ -102,7 +102,7 @@ Téléchargez le package prédéfini à partir de la section Release dans le ré
 
     ![](media/FBCimage18.png)
 
-9. Copiez une **chaîne de connexion** et enregistrez-la dans un fichier texte ou un autre emplacement de stockage. Vous l’utiliserez lors de la création d’une ressource d’application Web.
+9. Copiez une **chaîne de connexion** et enregistrez-la dans un fichier texte ou un autre emplacement de stockage. Vous l’utilisez lors de la création d’une ressource d’application Web.
 
     ![](media/FBCimage19.png)
 
@@ -112,17 +112,17 @@ Téléchargez le package prédéfini à partir de la section Release dans le ré
 
    ![](media/FBCimage20.png)
 
-2. Renseignez les détails (comme indiqué ci-dessous), puis créez l’application Web. Notez que le nom que vous entrez dans la zone nom de l' **application** sera utilisé pour créer l’URL du service d’application Azure. par exemple fbconnector.azurewebsites.net.
+2. Renseignez les détails (comme indiqué ci-dessous), puis créez l’application Web. Notez que le nom que vous entrez dans la zone nom de l' **application** est utilisé pour créer l’URL du service d’application Azure; par exemple, fbconnector.azurewebsites.net.
 
    ![](media/FBCimage21.png)
 
-3. Accédez à la ressource d’application Web nouvellement créée, cliquez sur paramètres de l' **application** dans le volet de navigation de gauche. Sous paramètres de l’application, cliquez sur Ajouter un nouveau paramètre, puis ajoutez les trois paramètres suivants. Utilisez les valeurs (que vous avez copiées dans le fichier texte à partir des étapes précédentes): 
+3. Accédez à la ressource d’application Web nouvellement créée, cliquez sur paramètres de l' **application** dans le volet de navigation de gauche. Sous paramètres de l’application, cliquez sur Ajouter un nouveau paramètre et ajoutez les trois paramètres suivants: utilisez les valeurs (que vous avez copiées dans le fichier texte à partir des étapes précédentes): 
 
-    - **APISecretKey** : vous pouvez taper n’importe quelle valeur comme clé secrète. Il sera utilisé pour accéder à l’application Web de connecteur à l’étape 7.
+    – **APISecretKey** – vous pouvez taper n’importe quelle valeur comme clé secrète. Il est utilisé pour accéder à l’application Web de connecteur à l’étape 7.
 
-    - **StorageAccountConnectionString** – URI de chaîne de connexion que vous avez copiée après avoir créé le compte de stockage Azure à l’étape 3.
+    – * * StorageAccountConnectionString: URI de chaîne de connexion que vous avez copiée après avoir créé le compte de stockage Azure à l’étape 3.
 
-    - **tenantId** : ID de client de votre organisation Office 365 que vous avez copié après avoir créé l’application de connecteur Facebook dans Azure Active Directory à l’étape 2.
+    – **tenantId** – ID de client de votre organisation Office 365 que vous avez copié après avoir créé l’application de connecteur Facebook dans Azure Active Directory à l’étape 2.
 
     ![](media/FBCimage22.png)
 
@@ -132,13 +132,13 @@ Téléchargez le package prédéfini à partir de la section Release dans le ré
 
 5. La dernière étape consiste à télécharger le code source de l’application du connecteur vers Azure que vous avez téléchargé à l’étape 1. Dans un navigateur Web, accédez à https://<AzureAppResourceName>. SCM.azurewebsites.net/ZipDeployUi. Par exemple, si le nom de votre ressource d’application Azure (que vous avez nommée à l’étape 2 de cette section) est **fbconnector**, vous accédez https://fbconnector.scm.azurewebsites.net/ZipDeployUià. 
 
-6. Faites glisser et déposez le SampleConnector. zip (que vous avez téléchargé à l’étape 1) sur cette page. Une fois que les fichiers sont téléchargés et que le déploiement réussit, la page ressemblera à la capture d’écran suivante.
+6. Faites glisser et déposez le SampleConnector. zip (que vous avez téléchargé à l’étape 1) sur cette page. Une fois les fichiers téléchargés et le déploiement réussi, la capture d’écran suivante se présente:
 
    ![](media/FBCimage24.png)
 
 ## <a name="step-5-register-the-facebook-app"></a>Étape 5: inscrire l’application Facebook
 
-1. Accédez à <https://developers.facebook.com> , connectez-vous à l’aide des informations d’identification du compte pour les pages d’entreprise Facebook de votre organisation, puis cliquez sur **Ajouter une nouvelle application**.
+1. Accédez à <https://developers.facebook.com>, connectez-vous à l’aide des informations d’identification du compte pour les pages d’entreprise Facebook de votre organisation, puis cliquez sur **Ajouter une nouvelle application**.
 
    ![](media/FBCimage25.png)
 
@@ -162,7 +162,7 @@ Téléchargez le package prédéfini à partir de la section Release dans le ré
 
    ![](media/FBCimage30.png)
 
-7. Dans le volet de navigation de gauche sous **connexion Facebook**, cliquez sur **paramètres**, puis ajoutez l’URI de redirection OAuth dans la zone URI de **redirection OAuth valide** ; Utilisez le format ** \<connectorserviceuri>/views/FacebookOAuth**, où la valeur de connectorserviceuri est l’URL de service d’application Azure pour votre organisation; par exemple https://fbconnector.azurewebsites.net.
+7. Dans le volet de navigation de gauche sous **connexion Facebook**, cliquez sur **paramètres**, puis ajoutez l’URI de redirection OAuth dans la zone URI de **redirection OAuth valide** . Utilisez le format ** \<connectorserviceuri>/views/facebookoauth**, où la valeur de connectorserviceuri est l’URL de service d’application Azure pour votre organisation; par exemple, https://fbconnector.azurewebsites.net.
 
    ![](media/FBCimage31.png)
 
@@ -206,7 +206,7 @@ Téléchargez le package prédéfini à partir de la section Release dans le ré
 
 ## <a name="step-6-configure-the-connector-web-app"></a>Étape 6: configuration de l’application Web de connecteur
 
-1. Accédez à https://\<AzureAppResourceName>. azurewebsites. net (où AzureAppResourceName est le nom de votre ressource d’application Azure que vous avez nommée à l’étape 4) par exemple, si le nom est **fbconnector**, accédez à https://fbconnector.azurewebsites.net. La page d’accueil de l’application ressemblera à la capture d’écran suivante.
+1. Accédez à https://\<AzureAppResourceName>. azurewebsites.net (où AzureAppResourceName est le nom de votre ressource d’application Azure que vous avez nommée à l’étape 4) par exemple, si le nom est **fbconnector**, accédez à https://fbconnector.azurewebsites.net. La page d’accueil de l’application se présente comme la capture d’écran suivante:
 
 
    ![](media/FBCimage41.png)
@@ -222,17 +222,17 @@ Téléchargez le package prédéfini à partir de la section Release dans le ré
 
 4. Sous **Détails**de la configuration, entrez les paramètres de configuration suivants 
 
-   - **ID d’application Facebook** : ID d’application pour l’application Facebook que vous avez obtenue à l’étape 5.
-   - **Clé d’application Facebook** : la clé secrète de l’application Facebook que vous avez obtenue à l’étape 5.
-   - **Contrôle** des webhooks Facebook: le jeton de vérification que vous avez créé à l’étape 5.
-   - **ID d’application AAD** : ID d’application pour l’application Azure Active Directory que vous avez créée à l’étape 2.
-   - **Clé secrète de l’application AAD** : valeur de la clé secrète APISecretKey que vous avez créée à l’étape 4.
-   - **URI de l’application AAD** : URI de l’application AAD obtenue à l’étape 2; par exemple, https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213.
-   - **Clé d’instrumentation Insights** de l’application-laissez cette zone vide.
+   – **ID d’application Facebook** – ID d’application pour l’application Facebook que vous avez obtenue à l’étape 5.
+   – **Clé d’application Facebook** : clé secrète de l’application Facebook que vous avez obtenue à l’étape 5.
+   – **Facebook webhooks Verify** : le jeton de vérification que vous avez créé à l’étape 5.
+   – **ID d’application AAD** – ID d’application pour l’application Azure Active Directory que vous avez créée à l’étape 2.
+   – **Clé secrète de l’application AAD** – valeur de la clé secrète APISecretKey que vous avez créée à l’étape 4.
+   – **URI de l’application AAD** – URI de l’application AAD obtenue à l’étape 2; par exemple, https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213.
+   – **Clé d’instrumentation Insights** de l’application: laissez cette zone vide.
 
 5. Cliquez sur **Enregistrer** pour enregistrer les paramètres du connecteur.
 
-## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>Étape 7: configurer un connecteur personnalisé dans le centre de sécurité & Compliance Center
+## <a name="step-7-set-up-a-custom-connector-in-the-security--compliance-center"></a>Étape 7: configurer un connecteur personnalisé dans le centre de sécurité & conformité
 
 1. Accédez à <https://protection.office.com> , puis cliquez sur importation de la **gouvernance \> des données \> importer des données**tierces.
 
@@ -244,9 +244,9 @@ Téléchargez le package prédéfini à partir de la section Release dans le ré
 
 3.  Dans la page **Ajouter une application connecteur** , entrez les informations suivantes, puis cliquez sur **valider le connecteur**.
 
-    - Dans la première zone, tapez un nom pour le connecteur, tel que **Facebook**.
-    - Dans la deuxième zone, tapez ou collez la valeur du APISecretKey que vous avez ajouté à l’étape 4.
-    - Dans la troisième zone, tapez ou collez l’URL du service d’application Azure; par exemple **https://fbconnector.azurewebsites.net**.
+    – Dans la première zone, tapez un nom pour le connecteur, tel que **Facebook**.
+    – Dans la deuxième zone, tapez ou collez la valeur du APISecretKey que vous avez ajouté à l’étape 4.
+    – Dans la troisième zone, tapez ou collez l’URL du service d’application Azure; par exemple **https://fbconnector.azurewebsites.net**.
  
     Une fois le connecteur validé, cliquez sur **suivant**.
     
@@ -265,7 +265,7 @@ Téléchargez le package prédéfini à partir de la section Release dans le ré
 
    ![](media/FBCimage49.png)
 
-7. Sur la page **se connecter à Facebook** , connectez-vous à l’aide des informations d’identification du compte pour les pages de l’entreprise Facebook de votre organisation. Vérifiez que le compte Facebook auquel vous êtes connecté se voit attribuer le rôle d’administrateur pour les pages d’entreprise Facebook de votre organisation.
+7. Sur la page **se connecter à Facebook** , connectez-vous à l’aide des informations d’identification du compte pour les pages de l’entreprise Facebook de votre organisation. Assurez-vous que le compte Facebook auquel vous êtes connecté se voit attribuer le rôle d’administrateur pour les pages d’entreprise Facebook de votre organisation.
 
    ![](media/FBCimage50.png)
 
@@ -277,7 +277,7 @@ Téléchargez le package prédéfini à partir de la section Release dans le ré
 
     ![](media/FBCimage52.png)
 
-10. Cliquez sur **Terminer** pour quitter le programme d’installation de l’application de service connecteur.
+10. Cliquez sur **préparer** pour quitter le programme d’installation de l’application de service connecteur.
 
     ![](media/FBCimage53.png)
 
@@ -289,7 +289,7 @@ Téléchargez le package prédéfini à partir de la section Release dans le ré
 
     ![](media/FBCimage55.png)
 
-13. Vérifiez vos paramètres, puis cliquez sur **Terminer** pour terminer l’installation du connecteur dans le centre de sécurité _AMP_ Compliance Center.
+13. Vérifiez vos paramètres, puis cliquez sur **Terminer** pour terminer l’installation du connecteur dans le centre de sécurité & conformité.
 
     ![](media/FBCimage56.png)
 
