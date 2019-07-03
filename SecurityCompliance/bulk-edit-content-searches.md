@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: Utilisez l’éditeur de recherche en bloc dans le centre de sécurité et de conformité dans Office 365 ou Microsoft 365 pour modifier rapidement les emplacements de requête et de contenu pour une ou plusieurs recherches de contenu.
-ms.openlocfilehash: d4f79cc323b752d020606e22ff72a47bc03e9ae9
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 69d2a40a28fd435873eae9b19ad2c8ad1e25d27c
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152216"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435114"
 ---
 # <a name="bulk-edit-content-searches"></a>Modifier en bloc les recherches de contenu
 
@@ -92,7 +92,7 @@ Voici quelques conseils pour modifier les emplacements de contenu à l’aide de
 - Vous pouvez ajouter plusieurs emplacements de contenu à une ou plusieurs recherches en copiant plusieurs lignes à partir d’un fichier texte ou d’un fichier Excel, puis en les collant dans une section de la page **emplacements** . Une fois que vous avez ajouté de nouveaux emplacements, veillez à activer la case à cocher pour chaque recherche à laquelle vous souhaitez ajouter l’emplacement. 
     
     > [!TIP]
-    > Pour générer une liste d’adresses de messagerie pour tous les utilisateurs de votre organisation, exécutez la commande PowerShell à l’étape 2 dans [utiliser la recherche de contenu pour rechercher une liste d’utilisateurs dans la boîte aux lettres et le site OneDrive entreprise](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step2). Ou utilisez le script dans [créer une liste de tous les emplacements onedrive de votre organisation](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a) pour générer une liste de tous les sites onedrive entreprise de votre organisation. Notez que vous devez ajouter l’URL du domaine de site mon site organization’s (par exemple, https://contoso-my.sharepoint.com) aux sites OneDrive entreprise créés par le script. Une fois que vous avez une liste d’adresses de messagerie ou de sites OneDrive entreprise, vous pouvez les copier et les coller dans la page **emplacements** de l’éditeur de recherche en bloc. 
+    > Pour générer une liste d’adresses de messagerie pour tous les utilisateurs de votre organisation, exécutez la commande PowerShell à l’étape 2 de l' [étape 2: générer une liste d’utilisateurs](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step-2-generate-a-list-of-users). Sinon, suivez les étapes décrites dans [obtenir une liste de toutes les URL onedrive utilisateur de votre organisation](https://docs.microsoft.com/onedrive/list-onedrive-urls) pour générer une liste de tous les sites onedrive entreprise de votre organisation. Notez que vous devez ajouter l’URL du domaine de site mon site de votre organisation (par exemple https://contoso-my.sharepoint.com) , aux sites OneDrive entreprise créés par le script. Une fois que vous avez une liste d’adresses de messagerie ou de sites OneDrive entreprise, vous pouvez les copier et les coller dans la page **emplacements** de l’éditeur de recherche en bloc. 
   
 - Une fois que vous avez cliqué sur **Enregistrer** pour enregistrer les modifications apportées à l’éditeur de recherche en bloc, l’adresse de messagerie des boîtes aux lettres que vous avez ajoutées à une recherche est validée. Si l’adresse de messagerie n’existe pas, un message d’erreur s’affiche indiquant que la boîte aux lettres est introuvable. Notez que les URL des sites ne sont pas validées. 
   

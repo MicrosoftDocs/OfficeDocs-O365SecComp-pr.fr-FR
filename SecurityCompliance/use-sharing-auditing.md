@@ -3,7 +3,7 @@ title: Audit de partage pour trouver les ressources partagées avec des utilisat
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 2/13/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 'Le partage est une activité essentielle dans SharePoint Online et OneDrive entreprise. Les administrateurs peuvent désormais utiliser l’audit de partage dans le journal d’audit Office 365 pour déterminer le mode d’utilisation du partage dans leur organisation. '
-ms.openlocfilehash: a363ebe2e8b1697521ab5f84df0b3fc221a2abcd
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e2865d35e988d8c0e42a6c51f78507db8b170d4c
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157896"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435237"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Audit de partage pour trouver les ressources partagées avec des utilisateurs externes
 
@@ -42,7 +42,7 @@ Il existe une autre propriété de schéma importante pour l’histoire du parta
 
 ## <a name="the-sharepoint-sharing-model-and-sharing-events"></a>Modèle de partage SharePoint et événements de partage
 
-Le partage est en fait défini par trois événements distincts: **SharingSet**, **SharingInvitationCreated**et **SharingInvitaitonAccepted**. Voici le flux de travail concernant la façon dont les événements de partage sont consignés dans le journal d’audit Office 365. 
+Le partage est défini par trois événements distincts: **SharingSet**, **SharingInvitationCreated**et **SharingInvitaitonAccepted**. Voici le flux de travail concernant la façon dont les événements de partage sont consignés dans le journal d’audit Office 365. 
   
 ![Organigramme illustrant le fonctionnement du partage d’audit](media/d83dd40f-919b-484f-bfd6-5dc8de31bff6.png)
   
@@ -73,7 +73,7 @@ Une exigence commune pour les administrateurs est la création d’une liste de 
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>Étape 1: Rechercher des événements de partage et exporter les résultats dans un fichier CSV
 
-La première étape consiste à rechercher dans le journal d’audit Office 365 des événements de partage. Pour plus d’informations (y compris les autorisations requises) sur la recherche dans le journal d’audit, voir [Search the audit log dans le centre de sécurité _AMP_ Compliance Center](search-the-audit-log-in-security-and-compliance.md).
+La première étape consiste à rechercher dans le journal d’audit Office 365 des événements de partage. Pour plus d’informations (y compris les autorisations requises) sur la recherche dans le journal d’audit, voir [Search the audit log dans le centre de sécurité & Compliance Center](search-the-audit-log-in-security-and-compliance.md).
   
 1. Accédez à la page [https://protection.office.com](https://protection.office.com).
     
@@ -83,9 +83,9 @@ La première étape consiste à rechercher dans le journal d’audit Office 365 
     
     La page **recherche du journal d’audit** s’affiche. 
     
-4. Sous **activités**, cliquez sur **activités de partage** pour rechercher uniquement les événements de partage. 
+4. Sous **activités**, cliquez sur **activités de partage et d’accès aux requêtes** pour rechercher des événements associés au partage. 
     
-    ![Sous activités, sélectionnez activités de partage](media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
+    ![Sous activités, sélectionnez activités de partage et d’accès aux demandes.](media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
   
 5.  Sélectionnez une date et une plage horaire pour rechercher les événements de partage qui se sont produits au cours de cette période. 
     
@@ -96,54 +96,24 @@ La première étape consiste à rechercher dans le journal d’audit Office 365 
     Une fois que vous avez sélectionné l’option Exporter, un message s’affiche en bas de la fenêtre qui vous invite à ouvrir ou à enregistrer le fichier CSV.
     
 8. Cliquez sur **Enregistrer** \> **Enregistrer sous** et enregistrez le fichier CSV dans un dossier sur votre ordinateur local. 
-    
 
-  
 ### <a name="step-2-filter-the-csv-file-for-resources-shared-with-external-users"></a>Étape 2: filtrage du fichier CSV pour les ressources partagées avec des utilisateurs externes
 
-L’étape suivante consiste à filtrer le fichier CSV pour les événements **SharingSet** et **SharingInvitationCreated** , et à afficher les événements pour lesquels la propriété **TargetUserOrGroupType** est **Guest**. Pour ce faire, utilisez la fonctionnalité Power Query dans Excel. La procédure suivante est effectuée dans Excel 2016. 
-  
-1. Dans Excel 2016, ouvrez un classeur vide.
+L’étape suivante consiste à filtrer le fichier CSV pour les événements **SharingSet** et **SharingInvitationCreated** , et à afficher les événements pour lesquels la propriété **TargetUserOrGroupType** est **Guest**. Pour ce faire, utilisez l’outil Éditeur de la requête Power dans Excel. Pour obtenir des instructions pas à pas, reportez-vous à la rubrique [Exporter, configurer et afficher les enregistrements du journal d’audit](export-view-audit-log-records.md). 
+
+Une fois que vous avez suivi les instructions de la rubrique précédente pour préparer le fichier CSV, procédez comme suit:
     
-2. Cliquez sur l’onglet **données** . 
+1. Ouvrez le fichier CSV que vous avez préparé avec l’éditeur de Power Query. 
+
+2. Sous l’onglet **Accueil** , cliquez sur **Trier & filtrer**, puis sur **Filtrer**.
     
-3. Cliquez sur **nouvelle requête** \> **à partir d’un fichier** \> **CSV**.
-    
-    ![Sous l’onglet données, sélectionnez nouvelle requête, sélectionnez à partir du fichier, puis à partir de CSV](media/5170ab34-b449-40ea-bd3f-f1432c1c5973.png)
-  
-4. Ouvrez le fichier CSV que vous avez téléchargé à l’étape 1.
-    
-    Le fichier CSV s’ouvre dans l’éditeur de requête. Notez qu’il y a quatre colonnes: **heure**, **utilisateur**, **action**et **détail**. La colonne de **détail** est un champ à plusieurs propriétés. L’étape suivante consiste à créer une nouvelle colonne pour chacune des propriétés dans la colonne de **détail** . 
-    
-5. Sélectionnez la **colonne détail** , puis, sous l’onglet **Accueil** , cliquez sur Fractionner les **colonnes** \> **par**délimiteur.
-    
-    ![Sous l’onglet Accueil, cliquez sur Fractionner la colonne, puis sur par délimiteur.](media/aeb503e8-565b-42ea-91e2-9f127a74c00c.png)
-  
-6. Dans la fenêtre fractionner les **colonnes par** délimiteur, procédez comme suit: 
-    
-      - Sous **Sélectionner ou entrer le séparateur**, sélectionnez **virgule**.
-    
-      - Sous **fractionnement**, sélectionnez **à chaque occurrence du**délimiteur.
-    
-7. Cliquez sur **OK**.
-    
-    La colonne de **détail** est divisée en plusieurs colonnes. Chaque nouvelle colonne est nommée **Detail. 1**, **Detail. 2**, **Detail. 3**, etc. Vous remarquerez les valeurs de chaque cellule dans le **détail. n** les colonnes sont précédées du nom de la propriété; par exemple, **operation: SharingSet**, **operation: SharingInvitationAccepted**et **operation: SharingInvitationCreated**.
-    
-    ![La colonne de détail est divisée en plusieurs colonnes, une pour chaque propriété](media/4b104ead-0313-4bd4-b2a9-f143ccb378ac.png)
-  
-8. Sous l’onglet **fichier** , cliquez sur **fermer &amp; la charge** pour fermer l’éditeur de requête et ouvrez le fichier dans un classeur Excel. 
-    
-    L’étape suivante consiste à filtrer le fichier pour n’afficher que les événements **SharingSet** et **SharingInvitationCreated** . 
-    
-9. Accédez à l’onglet **Accueil** , puis sélectionnez la colonne **action** . 
-    
-10. Dans la liste déroulante ** &amp; filtre de tri** , effacez toutes les sélections, sélectionnez **SharingSet** et **SharingInvitationCreated**, puis cliquez sur **OK**.
+3. Dans la liste déroulante **trier & filtre** de la colonne **opérations** , effacez toutes les sélections, sélectionnez **SharingSet** et **SharingInvitationCreated**, puis cliquez sur **OK**.
     
     Excel affiche les lignes pour les événements **SharingSet** et **SharingInvitationCreated** . 
     
-11. Accédez à la colonne nommée **Detail. 17** (ou quelle que soit la colonne qui contient la propriété **TargetUserOrGroupType** ) et sélectionnez-la. 
+4. Accédez à la colonne nommée **TargetUserOrGroupType** et sélectionnez-la. 
     
-12. Dans la liste déroulante **filtre de tri &amp; ** , effacez toutes les sélections, sélectionnez **TargetUserOrGroupType: invité**, puis cliquez sur **OK**.
+5. Dans la liste déroulante **trier & filtre** , effacez toutes les sélections, sélectionnez **TargetUserOrGroupType: invité**, puis cliquez sur **OK**.
     
     À présent, Excel affiche les lignes pour les événements **SharingInvitationCreated** et **SharingSet** et l’emplacement de l’utilisateur cible à l’extérieur de votre organisation, car les utilisateurs externes sont identifiés par la valeur **TargetUserOrGroupType: Guest**. 
     
@@ -151,7 +121,7 @@ Le tableau suivant présente tous les utilisateurs de l’organisation qui ont p
   
 ![Partage d’événements dans le journal d’audit Office 365](media/0e0ecbe3-c794-4ca6-a2ca-63478fb3bb34.png)
   
-Bien qu’elle ne soit pas incluse dans le tableau précédent, la colonne **Detail. 10** (ou la colonne contenant la propriété **ObjectID** ) identifie la ressource qui a été partagée avec l’utilisateur cible; par exemple `ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`.
+Bien qu’elle ne soit pas incluse dans le tableau précédent, la propriété **ObjectID** identifie la ressource qui a été partagée avec l’utilisateur cible; par exemple `ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`.
   
 > [!TIP]
-> Si vous souhaitez identifier à quel moment un utilisateur invité a reçu des autorisations d’accès à une ressource (par opposition aux ressources partagées avec celles-ci), répétez les étapes 10, 11 et 12 et filtrez sur le **SharingInvitationAccepted** et **SharingSet **événements à l’étape 10. 
+> Si vous souhaitez identifier à quel moment un utilisateur invité a reçu des autorisations d’accès à une ressource (par opposition aux ressources partagées avec celles-ci), répétez les étapes 2, 3 et 4, et filtrez sur les **SharingInvitationAccepted** et **SharingSet** événements à l’étape 5. 

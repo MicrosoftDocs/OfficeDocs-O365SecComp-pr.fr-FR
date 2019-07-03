@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Utilisez le centre de sécurité & conformité pour rechercher le journal d’audit unifié afin d’afficher l’activité des utilisateurs et des administrateurs dans votre organisation Office 365. '
-ms.openlocfilehash: 6f27929da0a802e99c2b6373ba7ae9791776c67e
-ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
+ms.openlocfilehash: 656bb3a82c11308e8596c0eb71972ead5dfed620
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35113288"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435224"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Rechercher dans le journal d’audit dans le centre de sécurité & conformité
 
@@ -257,7 +257,7 @@ Pour filtrer les résultats:
 
 ### <a name="step-4-export-the-search-results-to-a-file"></a>Étape 4: exporter les résultats de la recherche dans un fichier
 
-Vous pouvez exporter les résultats d’une recherche de journal d’audit dans un fichier de valeurs séparées par des virgules (CSV) sur votre ordinateur local. Vous pouvez ouvrir ce fichier dans Microsoft Excel et utiliser des fonctionnalités telles que la recherche, le tri, le filtrage et le fractionnement d’une seule colonne (contenant des cellules à plusieurs valeurs) en plusieurs colonnes.
+Vous pouvez exporter les résultats d’une recherche de journal d’audit dans un fichier de valeurs séparées par des virgules (CSV) sur votre ordinateur local. Vous pouvez ouvrir ce fichier dans Microsoft Excel et utiliser des fonctionnalités telles que la recherche, le tri, le filtrage et le fractionnement d’une seule colonne (qui contient plusieurs propriétés) en plusieurs colonnes.
   
 1. Exécutez une recherche dans le journal d’audit, puis modifiez les critères de recherche jusqu’à ce que vous ayez les résultats souhaités.
     
@@ -265,27 +265,24 @@ Vous pouvez exporter les résultats d’une recherche de journal d’audit dans 
     
      - **Enregistrer les résultats chargés** : choisissez cette option pour exporter uniquement les entrées affichées sous **résultats** dans la page **recherche du journal d’audit** . Le fichier CSV téléchargé contient les mêmes colonnes (et données) que celles affichées sur la page (date, utilisateur, activité, élément et détails). Une colonne supplémentaire (nommée **More**) est incluse dans le fichier CSV qui contient plus d’informations à partir de l’entrée du journal d’audit. Étant donné que vous exportez les mêmes résultats qui sont chargés (et affichables) sur la page de **recherche du journal d’audit** , un maximum de 5 000 entrées sont exportées. 
     
-     - **Télécharger tous les résultats** : choisissez cette option pour exporter toutes les entrées du journal d’audit Office 365 correspondant aux critères de recherche. Pour un grand ensemble de résultats de recherche, choisissez cette option pour télécharger toutes les entrées à partir du journal d’audit en plus des résultats 5 000 qui peuvent être affichés sur la page de **recherche du journal d’audit** . Cette option télécharge les données brutes à partir du journal d’audit vers un fichier CSV, et contient des informations supplémentaires provenant de l’entrée du journal d’audit dans une colonne nommée **AuditData**. Le téléchargement du fichier peut prendre plus de temps si vous choisissez cette option d’exportation, car le fichier peut être plus volumineux que celui téléchargé si vous choisissez l’autre option.
+     - **Télécharger tous les résultats** : choisissez cette option pour exporter toutes les entrées du journal d’audit Office 365 correspondant aux critères de recherche. Pour un grand ensemble de résultats de recherche, choisissez cette option pour télécharger toutes les entrées à partir du journal d’audit en plus des enregistrements d’audit 5 000 qui peuvent être affichés sur la page de **recherche du journal d’audit** . Cette option télécharge les données brutes à partir du journal d’audit vers un fichier CSV, et contient des informations supplémentaires provenant de l’entrée du journal d’audit dans une colonne nommée **AuditData**. Le téléchargement du fichier peut prendre plus de temps si vous choisissez cette option d’exportation, car le fichier peut être plus volumineux que celui téléchargé si vous choisissez l’autre option.
     
        > [!IMPORTANT]
        > Vous pouvez télécharger un maximum de 50 000 entrées dans un fichier CSV à partir d’une seule recherche de journal d’audit. Si 50 000 entrées sont téléchargées dans le fichier CSV, vous pouvez probablement supposer qu’il y a plus de 50 000 événements correspondant aux critères de recherche. Pour exporter plus de cette limite, essayez d’utiliser une plage de dates pour réduire le nombre d’entrées du journal d’audit. Il se peut que vous deviez exécuter plusieurs recherches avec des plages de dates plus petites pour exporter plus de 50 000 entrées. 
   
 3. Une fois que vous avez sélectionné une option d’exportation, un message s’affiche en bas de la fenêtre qui vous invite à ouvrir le fichier CSV, à l’enregistrer dans le dossier téléchargements, ou à l’enregistrer dans un dossier spécifique.
+ 
+#### <a name="more-information-about-exporting-and-viewing-audit-log-search-results"></a>Plus d’informations sur l’exportation et l’affichage des résultats de la recherche du journal d’audit
 
-  
-#### <a name="more-information-about-exporting-audit-log-search-results"></a>Plus d’informations sur l’exportation des résultats de la recherche du journal d’audit
-
-- L’option **Télécharger tous les résultats** transfère les données brutes à partir du journal d’audit Office 365 vers un fichier CSV. Ce fichier contient différents noms de colonne (CreationDate, UserIds, Operation, AuditData) que le fichier téléchargé si vous sélectionnez l’option **enregistrer les résultats chargés** . Les valeurs des deux fichiers CSV différents pour la même activité peuvent également être différentes. Par exemple, l’activité dans la colonne **action** du fichier CSV et peut avoir une valeur différente de celle qui est affichée dans la colonne **activité** de la page de **recherche du journal d’audit** ; par exemple, MailboxLogin vs. User s’est connecté à la boîte aux lettres.
-    
-- Si vous téléchargez tous les résultats, le fichier CSV contient une colonne nommée **AuditData**, qui contient des informations supplémentaires sur chaque événement. Comme indiqué précédemment, cette colonne contient une propriété à valeurs multiples pour plusieurs propriétés de l’enregistrement du journal d’audit. Chacune des paires **propriété: valeur** de cette propriété à valeurs multiples est séparée par une virgule. Vous pouvez utiliser la Power Query dans Excel pour fractionner cette colonne en plusieurs colonnes afin que chaque propriété dispose de sa propre colonne. Cela vous permettra de trier et de filtrer sur une ou plusieurs de ces propriétés. Pour savoir comment procéder, consultez la section «fractionner une colonne par délimiteur» dans [fractionner une colonne de texte (Power Query)](https://support.office.com/article/5282d425-6dd0-46ca-95bf-8e0da9539662).
+- Si vous téléchargez tous les résultats de la recherche, le fichier CSV contient une colonne nommée **AuditData**, qui contient des informations supplémentaires sur chaque événement. Les données de cette colonne se composent d’un objet JSON qui contient plusieurs propriétés de l’enregistrement du journal d’audit. Chaque paire *propriété: valeur* dans l’objet JSON est séparée par une virgule. Vous pouvez utiliser l’outil transformation JSON de l’éditeur Power Query dans Excel pour fractionner une colonne **AuditData** en plusieurs colonnes, de sorte que chaque propriété de l’objet JSON ait sa propre colonne. Cela vous permettra de trier et de filtrer sur une ou plusieurs de ces propriétés. Pour obtenir des instructions pas à pas à l’aide de l’éditeur de la requête Power pour transformer l’objet JSON, voir [Exporter, configurer et afficher les enregistrements du journal d’audit](export-view-audit-log-records.md).
     
     Une fois que vous avez séparé la colonne **AuditData** , vous pouvez filtrer sur la colonne **opérations** pour afficher les propriétés détaillées d’un type spécifique d’activité. 
     
-- Il existe une limite de 3 060 caractères pour les données affichées dans le champ **AuditData** pour un enregistrement d’audit. Si la limite de 3 060 caractères est dépassée, les données de ce champ sont tronquées. 
-    
+- L’option **Télécharger tous les résultats** transfère les données brutes à partir du journal d’audit Office 365 vers un fichier CSV. Ce fichier contient différents noms de colonne (CreationDate, UserIds, Operation, AuditData) que le fichier téléchargé si vous sélectionnez l’option **enregistrer les résultats chargés** . Les valeurs des deux fichiers CSV différents pour la même activité peuvent également être différentes. Par exemple, l’activité dans la colonne **action** du fichier CSV et peut avoir une valeur différente de celle qui est affichée dans la colonne **activité** de la page de **recherche du journal d’audit** ; par exemple, MailboxLogin vs. User s’est connecté à la boîte aux lettres.
+
 - Lorsque vous téléchargez tous les résultats à partir d’une requête de recherche qui contient des événements provenant de différents services Office 365, la colonne **AuditData** du fichier CSV contient différentes propriétés en fonction du service dans lequel l’action a été exécutée. Par exemple, les entrées des journaux d’audit Exchange et Azure AD incluent une propriété nommée **ResultStatus** qui indique si l’action a réussi ou non. Cette propriété n’est pas incluse pour les événements dans SharePoint. De même, les événements SharePoint ont une propriété qui identifie l’URL du site pour les activités associées aux fichiers et aux dossiers. Pour atténuer ce comportement, envisagez d’utiliser des recherches différentes pour exporter les résultats des activités à partir d’un seul service. 
     
-    Pour obtenir une description des propriétés répertoriées dans la colonne **AuditData** du fichier CSV lorsque vous téléchargez tous les résultats, et que le service auquel chacune d’entre elles s’applique, voir [Propriétés détaillées dans le journal d’audit Office 365](detailed-properties-in-the-office-365-audit-log.md).
+    Pour obtenir une description de la plupart des propriétés répertoriées dans la colonne **AuditData** du fichier CSV lorsque vous téléchargez tous les résultats, et que le service auquel chacune d’entre elles s’applique, reportez-vous à la rubrique [Propriétés détaillées dans le journal d’audit Office 365](detailed-properties-in-the-office-365-audit-log.md).
 
 ## <a name="audited-activities"></a>Activités vérifiées
 

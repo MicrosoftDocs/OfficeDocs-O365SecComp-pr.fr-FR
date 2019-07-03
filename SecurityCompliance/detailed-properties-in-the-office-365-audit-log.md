@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: Descriptions des propriétés supplémentaires incluses dans un enregistrement de journal d’audit Office 365.
-ms.openlocfilehash: 8ce85ea452389b0d8239de88730acd6039cc02be
-ms.sourcegitcommit: a6968df6e47ab5733a995f1efdc6e3676c5b5d7b
+ms.openlocfilehash: 00f2eb2a9259247085973642b317ffbca8ba064a
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35253933"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435154"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Propriétés détaillées dans le journal d’audit Office 365
 
@@ -29,7 +29,7 @@ Lorsque vous exportez les résultats d’une recherche de journal d’audit à p
   
  Lorsque vous exportez tous les résultats d’une recherche de journal d’audit, les données brutes du journal d’audit unifié Office 365 sont copiées dans un fichier de valeurs séparées par des virgules (CSV) qui est téléchargé sur votre ordinateur local. Ce fichier contient des informations supplémentaires à partir de chaque enregistrement d’audit dans une colonne nommée **AuditData**. Cette colonne contient une propriété à valeurs multiples pour plusieurs propriétés de l’enregistrement du journal d’audit. Chacune des paires **propriété: valeur** de cette propriété à valeurs multiples est séparée par une virgule. 
   
-Le tableau suivant décrit les propriétés incluses, selon le service Office 365 dans lequel un événement se produit, dans la colonne **AuditData** multi-propriété. Le **service Office 365 qui a cette** colonne de propriété indique le service et le type d’activité (utilisateur ou administrateur) qui inclut la propriété. Pour plus d’informations sur ces propriétés ou sur les propriétés qui ne sont peut-être pas mentionnées dans cette rubrique, voir [Office 365 Management Activity Schema API Schema](https://go.microsoft.com/fwlink/p/?LinkId=717993).
+Le tableau suivant décrit les propriétés incluses (en fonction du service Office 365 dans lequel un événement se produit) dans la colonne **AuditData** à plusieurs propriétés. Le **service Office 365 qui a cette** colonne de propriété indique le service et le type d’activité (utilisateur ou administrateur) qui inclut la propriété. Pour plus d’informations sur ces propriétés ou sur les propriétés qui ne sont peut-être pas mentionnées dans cette rubrique, voir [Office 365 Management Activity Schema API Schema](https://go.microsoft.com/fwlink/p/?LinkId=717993).
   
 > [!TIP]
 > Vous pouvez utiliser la Power Query dans Excel pour fractionner cette colonne en plusieurs colonnes afin que chaque propriété dispose de sa propre colonne. Cela vous permettra de trier et de filtrer sur une ou plusieurs de ces propriétés. Pour savoir comment procéder, consultez la section «fractionner une colonne par délimiteur» dans [fractionner une colonne de texte (Power Query)](https://support.office.com/article/5282d425-6dd0-46ca-95bf-8e0da9539662). 
@@ -52,7 +52,7 @@ Le tableau suivant décrit les propriétés incluses, selon le service Office 36
 |DestinationRelativeUrl|URL du dossier de destination dans lequel un fichier est copié ou déplacé. La combinaison des valeurs des propriétés **SiteUrl**, **DestinationRelativeURL**et **destinationFileName** est identique à la valeur de la propriété **ObjectID** , qui est le nom du chemin d’accès complet au fichier qui a été copié. Cette propriété s’affiche uniquement pour les activités utilisateur les et FileMoved.|SharePoint|
 |EventSource|Identifie qu’un événement s’est produit dans SharePoint. Les valeurs possibles sont **SharePoint** et **ObjectModel**.|SharePoint|
 |ExternalAccess|Pour l’activité d’administration Exchange, indique si la cmdlet a été exécutée par un utilisateur de votre organisation, par le personnel du centre de connaissances Microsoft ou par un compte de service de centre de de services, ou par un administrateur délégué. La valeur **False** indique que la cmdlet a été exécutée par un membre de votre organisation. La valeur **True** indique que la cmdlet a été exécutée par le personnel du centre de données, un compte de service du centre de données ou un administrateur délégué.  <br/> Pour l’activité des boîtes aux lettres Exchange, indique si un utilisateur a accédé à une boîte aux lettres à l’extérieur de votre organisation.|Exchange|
-|ExtendedProperties|Les propriétés étendues pour un événement Azure Active Directory.|Azure Active Directory|
+|ExtendedProperties|Propriétés étendues d’un événement Azure Active Directory.|Azure Active Directory|
 |ID|ID de l’entrée de rapport. L’ID identifie de manière unique l’entrée de rapport.|Tout|
 |InternalLogonType|Réservé à une utilisation interne.|Exchange (activité de boîte aux lettres)|
 |ItemType|Type d’objet consulté ou modifié. Les valeurs possibles sont les suivants: **file**, **Folder**, **Web**, **site**, **client**et **DocumentLibrary**.|SharePoint|
@@ -77,7 +77,7 @@ Le tableau suivant décrit les propriétés incluses, selon le service Office 36
 |SourceFileName|Nom du fichier ou du dossier consulté par l’utilisateur.|SharePoint|
 |SourceRelativeUrl|URL du dossier contenant le fichier consulté par l’utilisateur. La combinaison des valeurs des propriétés **SiteUrl**, **SourceRelativeURL**et **sourceFileName** est identique à la valeur de la propriété **ObjectID** , qui est le nom du chemin d’accès complet au fichier accédé par l’utilisateur.|SharePoint|
 |Subject|Ligne d’objet du message qui a été consulté.|Exchange (activité de boîte aux lettres)|
-|TabType| Type d’onglet ajouté, supprimé ou mis à jour dans une équipe. Les valeurs possibles pour cette propriété sont les suivantes :  <br/><br/> **Excelpin** -un onglet Excel.  <br/> **Extension** -toutes les applications tierces et tierces; comme Planner, VSTS et Forms.  <br/> Onglet **Notes** -OneNote.  <br/> **Pdfpin** -onglet PDF.  <br/> **Powerbi** -un onglet Powerbi.  <br/> **Powerpointpin** -un onglet PowerPoint.  <br/> **Sharepointfiles** -un onglet SharePoint.  <br/> **Page Web** : onglet site Web épinglé.  <br/> **Wiki-onglet** -un onglet wiki.  <br/> **Wordpin** -un onglet Word.|Microsoft Teams|
+|TabType| Type d’onglet ajouté, supprimé ou mis à jour dans une équipe. Les valeurs possibles pour cette propriété sont les suivantes :  <br/><br/> **Code confidentiel Excel** -onglet Excel.  <br/> **Extension** -toutes les applications tierces et tierces; telles que Schedule Class, VSTS et Forms.  <br/> Onglet **Notes** -OneNote.  <br/> **Pdfpin** -onglet PDF.  <br/> **Powerbi** -un onglet Powerbi.  <br/> **Powerpointpin** -un onglet PowerPoint.  <br/> **Sharepointfiles** -un onglet SharePoint.  <br/> **Page Web** : onglet site Web épinglé.  <br/> **Wiki-onglet** -un onglet wiki.  <br/> **Wordpin** -un onglet Word.|Microsoft Teams|
 |Target|Utilisateur sur lequel l’action (identifiée dans la propriété **operation** ) a été effectuée. Par exemple, si un utilisateur invité est ajouté à SharePoint ou à une équipe Microsoft, cet utilisateur est mentionné dans cette propriété.|Azure Active Directory|
 |TeamGuid|ID d’une équipe dans Microsoft Teams.|Microsoft Teams|
 |TeamName|Nom d’une équipe dans Microsoft Teams.|Microsoft Teams|
