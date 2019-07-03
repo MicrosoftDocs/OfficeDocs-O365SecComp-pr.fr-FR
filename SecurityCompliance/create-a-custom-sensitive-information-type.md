@@ -1,11 +1,12 @@
 ---
-title: Créer un type d’informations sensibles personnalisé
+title: Créer un type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.date: 04/17/2019
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
@@ -13,54 +14,26 @@ search.appverid:
 - MOE150
 - MET150
 description: Apprenez à créer, modifier, supprimer et tester des types d’informations sensibles personnalisés pour la protection contre la perte de données dans l’interface utilisateur graphique du Centre de sécurité et conformité.
-ms.openlocfilehash: de7bbc8ee624fe9468dc64a9811db31d529984bf
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 55e54bf8b49ec21bb5ed4f161efc4e5924ee52fb
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258270"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077740"
 ---
-# <a name="create-a-custom-sensitive-information-type"></a>Créer un type d’informations sensibles personnalisé
+# <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>Créer un type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité
 
-La protection contre la perte de données (DLP) dans Office 365 inclut de nombreux [types d’informations sensibles](what-the-sensitive-information-types-look-for.md) intégrés qui sont prêts à l’emploi dans vos stratégies DLP. Ces types intégrés permettent d’identifier et de protéger les numéros de carte de crédit, les numéros de compte bancaire, les numéros de passeport, et bien plus encore. 
+## <a name="summary"></a>Résumé
 
-Cependant, si vous devez identifier et protéger un autre type d’informations sensibles (par exemple, l’ID des employés ou des numéros de projet qui utilisent un format spécifique de votre organisation), vous pouvez créer un type d’informations sensibles personnalisé.
+Lisez cet article pour [créer un type d’informations sensibles personnalisé](custom-sensitive-info-types.md) dans le Centre de Conformité et Sécurité ([https://protection.office.com](https://protection.office.com)). Les types d’informations sensibles personnalisés que vous créez en utilisant cette méthode sont ajoutés au package de règles nommé `Microsoft.SCCManaged.CustomRulePack`.
 
-Les éléments fondamentaux d’un type d’informations sensibles personnalisé sont :
+Vous pouvez également créer des types d’informations sensibles personnalisés à l’aide de PowerShell et de fonctionnalités de correspondance exacte des données. Pour en savoir plus sur ces méthodes, consultez :
+- [Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Créer un type d’informations sensibles personnalisé pour DLP à l’aide d’une correspondance exacte des données](create-custom-sensitive-info-type-edm.md)
 
-- **Modèle principal** : numéros d’identification d’employé, numéros de projet, etc. Cela est généralement identifié par une expression régulière (RegEx) mais il peut aussi s’agir d’une liste de mots clés.
+## <a name="before-you-begin"></a>Avant de commencer...
 
-- **Preuves supplémentaires** : supposons que vous recherchez un numéro d’identification d’employé à neuf chiffres. Tous les numéros à neuf chiffres ne sont pas des numéros d’identification d’employé, donc vous pouvez rechercher un texte supplémentaire : les mots clés comme « employé », « badge », « ID » ou d’autres modèles de texte suivant d’autres expressions régulières. Cette preuve (également appelée preuve _justificative_ ou _probante_) augmente la probabilité que le nombre à neuf chiffres trouvé dans le contenu est réellement un numéro d’identification d’employé.
-
-- **Proximité de caractère** : il est logique que plus le modèle principal et la preuve justificative sont proches, plus le contenu détecté a des chances d’être ce que vous recherchez. Vous pouvez spécifier la distance de caractère entre le modèle principal et la preuve justificative (également appelée _fenêtre de proximité_) comme illustré dans le diagramme suivant :
-
-    ![Diagramme de la fenêtre de proximité et de preuves probantes](media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
-
-- **Niveau de confiance** : plus la preuve que vous possédez est justificative, plus la probabilité qu’un résultat contienne les informations sensibles que vous recherchez est élevée. Vous pouvez affecter des niveaux de confiance supérieurs pour les correspondances détectées en utilisant plus de preuves.
-
-  Lorsqu’il est satisfait, un modèle renvoie un nombre et un niveau de confiance, que vous pouvez utiliser dans les conditions dans votre stratégie DLP. Lorsque vous ajoutez une condition de détection d’un type d’informations sensibles à une stratégie DLP, vous pouvez modifier le nombre et le niveau de confiance comme illustré dans le diagramme suivant :
-
-    ![Nombre d’instances et options de précision de correspondance](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
-
-Pour créer des types d’informations sensibles personnalisés dans le Centre de sécurité et conformité, vous disposez des options suivantes :
-
-- **Utiliser l’interface utilisateur** : cette méthode est plus facile et plus rapide, mais vous disposez de moins d’options de configuration que PowerShell. Le reste de cette rubrique décrit ces procédures.
-
-- **Utiliser PowerShell** : pour utiliser cette méthode, vous devez commencer par créer un fichier XML (appelé _package de règles_) contenant un ou plusieurs types d’informations sensibles, puis utiliser PowerShell pour importer le package de règles (l’importation de celui-ci est simple par rapport à la création d’un nouveau package de règles). Cette méthode est beaucoup plus complexe que l’utilisation de l’interface utilisateur, mais vous disposez d’un plus grand nombre d’options de configuration. Pour obtenir des instructions, consultez la rubrique [Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité](create-a-custom-sensitive-information-type-in-scc-powershell.md).
-
-Les différences clés sont décrites dans le tableau suivant :
-
-|**Types d’informations sensibles personnalisés dans l’interface utilisateur**|**Types d’informations sensibles personnalisés dans PowerShell**|
-|:-----|:-----|
-|Le nom et la description apparaissent dans une langue.|Prend en charge plusieurs langues pour le nom et la description.|
-|Prend en charge un motif.|Prend en charge plusieurs motifs.|
-|La preuve justificative peut être : <br/>• Expressions régulières <br/>• Mots clés <br/>• Dictionnaires de mots clés|La preuve justificative peut être : <br/>• Expressions régulières <br/>• Mots clés <br/>• Dictionnaires de mots clés <br/>• [Fonctions DLP intégrées](what-the-dlp-functions-look-for.md)|
-|Types d’informations sensibles personnalisés ajoutées au package de règles nommé Microsoft.SCCManaged.CustomRulePack|Vous pouvez créer jusqu'à 10 packages de règles contenant des types d’informations sensibles personnalisés.|
-|La recherche par modèle exige la détection du modèle principal et de toutes les preuves justificatives (l’opérateur implicite AND est utilisé).|La recherche par modèle exige la détection du modèle principal et d’un nombre configurable de preuves justificatives (les opérateurs implicites AND et OR sont utilisés).|
-
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
-
-- Pour ouvrir le Centre de sécurité et conformité, consultez la rubrique [Accéder au Centre de sécurité et conformité](go-to-the-securitycompliance-center.md).
+- Votre organisation doit disposer d’un abonnement, par exemple, Office 365 Entreprise, qui inclut la protection contre la perte de données (DLP). Voir [Description du service Stratégie et conformité de messagerie](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc). 
 
 - Les types d’informations sensibles personnalisés exigent des connaissances relatives aux expressions régulières (RegEx). Pour plus d’informations sur le moteur Boost.RegEx (anciennement appelé RegEx++) utilisé pour le traitement du texte, consultez l’article [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
 
