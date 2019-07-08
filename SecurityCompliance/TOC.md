@@ -12,7 +12,7 @@
 ### [Octroi de l’accès au Centre de conformité et de sécurité aux utilisateurs](grant-access-to-the-security-and-compliance-center.md)
 ## [Utiliser votre abonnement Azure Active Directory gratuit](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Planifier la sécurité et la conformité dans Office 365](plan-for-security-and-compliance.md)
-## [Atelier de formation du directeur général de la sécurité de l'information (SRCO)](ciso-workshop.md)
+## [Atelier de formation du directeur général de la sécurité de l’information (SRCO)](ciso-workshop.md)
 ### [Module 1 – Réunion de cybersécurité Microsoft](ciso-workshop-module-1.md)
 ### [Module 2 – Gestion de la sécurité](ciso-workshop-module-2.md)
 ### [Module 3 – Gestion des identités et des accès](ciso-workshop-module-3.md)
@@ -30,7 +30,7 @@
 ### [Appliquer automatiquement une étiquette de confidentialité au contenu](apply-sensitivity-label-automatically.md)
 ### [Afficher l’utilisation d’étiquette avec les analytiques d’étiquette](label-analytics.md)
 
-## [Éviter les pertes de données (DLP)](data-loss-prevention-policies.md)
+## [Protection contre la perte de données (DLP)](data-loss-prevention-policies.md)
 ### [DLP et Microsoft Teams](dlp-microsoft-teams.md)
 ### [Visionner une présentation étendue de la DLP](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ### Configurer le DLP
@@ -103,6 +103,7 @@
 #### [Utiliser un exemple de connecteur pour archiver des données Facebook](archive-facebook-data-with-sample-connector.md)
 #### [Utiliser un exemple de connecteur pour archiver des données Twitter](archive-twitter-data-with-sample-connector.md)
 #### [Configurer un connecteur pour archiver les données LinkedIn](archive-linkedin-data.md)
+#### [Configurer un connecteur pour archiver les données Instant Bloomberg](archive-instant-bloomberg-data.md)
 #### [Collaborer avec un partenaire pour archiver des données tierces](work-with-partner-to-archive-third-party-data.md)
 ## Stocker des données
 ### [Activer des boîtes aux lettres d’archivage](enable-archive-mailboxes.md)
@@ -171,7 +172,7 @@
 ### [Prise en charge des messages électroniques entrants anonymes sur IPv6](support-for-anonymous-inbound-email-messages-over-ipv6.md)
 ## [Mise en quarantaine des messages électroniques dans Office 365](quarantine-email-messages.md)
 ### [Gérer les fichiers et les messages mis en quarantaine en tant qu’administrateur](manage-quarantined-messages-and-files.md)
-### [Rechercher et débloquer les messages mis en quarantaine en tant qu'utilisateur](find-and-release-quarantined-messages-as-a-user.md)
+### [Rechercher et débloquer les messages mis en quarantaine en tant qu’utilisateur](find-and-release-quarantined-messages-as-a-user.md)
 ### [FAQ sur la mise en quarantaine pour Office 365](quarantine-faq.md)
 ### [Utilisation des notifications de courrier indésirable de l’utilisateur pour le déblocage et le signalement des messages de courrier indésirable mis en quarantaine dans Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md)
 ### [Utilisation des notifications de courrier indésirable de l’utilisateur pour le déblocage et le signalement des messages de courrier indésirable mis en quarantaine dans Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md)
@@ -245,6 +246,7 @@
 #### [Utiliser un exemple de connecteur pour archiver des données Facebook](archive-facebook-data-with-sample-connector.md)
 #### [Utiliser un exemple de connecteur pour archiver des données Twitter](archive-twitter-data-with-sample-connector.md)
 #### [Configurer un connecteur pour archiver les données LinkedIn](archive-linkedin-data.md)
+#### [Configurer un connecteur pour archiver les données Instant Bloomberg](archive-instant-bloomberg-data.md)
 #### [Collaborer avec un partenaire pour archiver des données tierces](work-with-partner-to-archive-third-party-data.md)
 ## Stocker des données
 ### [Activer des boîtes aux lettres d’archivage](enable-archive-mailboxes.md)
@@ -482,6 +484,7 @@
 ## [Activer ou désactiver la recherche dans le journal d’audit](turn-audit-log-search-on-or-off.md)
 ## [Gérer l’audit de boîte aux lettres](enable-mailbox-auditing.md)
 ## [Propriétés détaillées dans le journal d’audit](detailed-properties-in-the-office-365-audit-log.md)
+## [Exporter, configurer et afficher des enregistrements du journal d’audit](export-view-audit-log-records.md)
 ## [Dépanner des scénarios courants à l’aide du journal d’audit](auditing-troubleshooting-scenarios.md)
 ## [Utiliser le partage d’audit dans le journal d’audit](use-sharing-auditing.md)
 ## [Rechercher des activités eDiscovery dans le journal d’audit](search-for-ediscovery-activities-in-the-audit-log.md)
@@ -542,7 +545,7 @@
 
 
 ## Clé client
-### [Contrôle de vos données dans Office 365 à l'aide de la Clé client](controlling-your-data-using-customer-key.md).
+### [Contrôle de vos données dans Office 365 à l’aide de la Clé client](controlling-your-data-using-customer-key.md).
 ### [FAQ : chiffrement de service avec une clé client pour Office 365](service-encryption-with-customer-key-faq.md)
 ## [Outil de demande de la personne concernée du RGPD](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [Customer Lockbox](customer-lockbox-requests.md)
@@ -629,12 +632,12 @@
 #### [Messages de rétrodiffusion et EOP](backscatter-messages-and-eop.md)
 ### [Stratégie et conformité de la messagerie dans EOP](eop/messaging-policy-and-compliance-in-eop.md)
 #### [Rapports d’audit dans EOP](eop/auditing-reports-in-eop.md)
-#### [Exécution d’un rapport de groupe de rôles d'administrateur dans EOP](eop/run-an-administrator-role-group-report-in-eop-eop.md)
+#### [Exécution d’un rapport de groupe de rôles d’administrateur dans EOP](eop/run-an-administrator-role-group-report-in-eop-eop.md)
 ### [Gestion des destinataires et des groupes de rôles d’administrateur dans EOP](eop/manage-recipients-and-admin-role-groups-in-eop.md)
 #### Gestion des destinataires dans Exchange Online Protection (EOP)
 #### Gestion des utilisateurs de messagerie dans EOP
 #### [Gestion des groupes dans EOP](eop/manage-groups-in-eop.md)
-#### [Gestion des autorisations du groupe de rôles d'administrateur dans EOP](eop/manage-admin-role-group-permissions-in-eop.md)
+#### [Gestion des autorisations du groupe de rôles d’administrateur dans EOP](eop/manage-admin-role-group-permissions-in-eop.md)
 ### [Flux de messagerie dans EOP](eop/mail-flow-in-eop.md)
 #### [Comment s’assurer qu’un message n’est pas marqué comme courrier indésirable](how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md)
 #### [Règles de flux de messagerie (règles de transport)](eop/mail-flow-rules-transport-rules-0.md)
