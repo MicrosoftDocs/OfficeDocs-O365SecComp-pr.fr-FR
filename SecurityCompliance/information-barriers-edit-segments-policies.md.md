@@ -3,7 +3,7 @@ title: Modifier les stratégies de barrière des informations
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,14 +11,14 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Découvrez comment modifier ou supprimer des stratégies pour les barrières d’informations.
-ms.openlocfilehash: c3dca18ad217b89d9f9ae78b590cfb07f4631f37
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: c55ffac0984fe83fec1ef7b995d1589ea770bfef
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394329"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587073"
 ---
-# <a name="edit-or-remove-information-barrier-policies-preview"></a>Modifier (ou supprimer) des stratégies de barrière des informations (aperçu)
+# <a name="edit-or-remove-information-barrier-policies"></a>Modifier (ou supprimer) des stratégies de barrière des informations
 
 Une fois que vous avez [défini des stratégies de barrière des informations](information-barriers-policies.md), vous devrez peut-être modifier ces stratégies ou vos segments d’utilisateur, dans le cadre de la [résolution des problèmes](information-barriers-troubleshooting.md) ou de la maintenance normale. Utilisez cet article comme guide.
 
@@ -32,8 +32,8 @@ Une fois que vous avez [défini des stratégies de barrière des informations](i
 |[Définir une stratégie sur état inactif](#set-a-policy-to-inactive-status)     |Définissez une stratégie sur état inactif lorsque vous voulez modifier une stratégie ou si vous ne souhaitez pas qu’une stratégie soit appliquée.         |
 |[Supprimer une stratégie](#remove-a-policy)     |Supprimez une stratégie de barrière des informations lorsque vous n’avez plus besoin d’une stratégie particulière en place.         |
 |[Arrêter une application de stratégie](#stop-a-policy-application)     |Procédez comme suit pour arrêter le processus d’application des stratégies de barrière des informations.<br/>Notez que l’arrêt d’une application de stratégie n’est pas instantané et qu’elle n’annule pas les stratégies déjà appliquées aux utilisateurs.         |
-|[Définir des stratégies pour les barrières d’information (aperçu)](information-barriers-policies.md)     |Définissez une stratégie de barrière des informations lorsque vous n’avez pas déjà de telles stratégies, et vous devez limiter ou limiter les communications entre des groupes d’utilisateurs spécifiques.         |
-|[Dépannage des barrières relatives aux informations (aperçu)](information-barriers-troubleshooting.md)     |Reportez-vous à cet article lorsque vous rencontrez des problèmes inattendus avec des barrières d’informations.         |
+|[Définir des stratégies pour les barrières des informations](information-barriers-policies.md)     |Définissez une stratégie de barrière des informations lorsque vous n’avez pas déjà de telles stratégies, et vous devez limiter ou limiter les communications entre des groupes d’utilisateurs spécifiques.         |
+|[Résolution des problèmes liés aux informations](information-barriers-troubleshooting.md)     |Reportez-vous à cet article lorsque vous rencontrez des problèmes inattendus avec des barrières d’informations.         |
 
 > [!IMPORTANT]
 > Pour effectuer les tâches décrites dans cet article, vous devez disposer d’un rôle approprié, par exemple:<br/>-Administrateur général de Microsoft 365 entreprise<br/>-Administrateur général Office 365<br/>-Administrateur de conformité<br/>-IB gestion de la conformité (il s’agit d’un nouveau rôle!)<p>Pour en savoir plus sur les conditions préalables pour les barrières d’informations, reportez-vous à la rubrique [conditions préalables (pour les stratégies de barrière des informations)](information-barriers-policies.md#prerequisites).<p>Assurez [-vous de vous connecter au centre de sécurité & de sécurité Office 365 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
@@ -52,7 +52,7 @@ Les attributs de compte d’utilisateur sont utilisés pour définir des segment
     |---------|---------|
     |`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>   Vous pouvez utiliser n’importe quelle valeur qui identifie de façon unique chaque utilisateur, comme le nom, l’alias, le nom unique, le nom de domaine canonique, l’adresse de messagerie ou le GUID. <p>   (Vous pouvez également utiliser cette applet de commande pour un seul `Get-InformationBarrierRecipientStatus -Identity <value>`utilisateur:)      |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw`  <p>   Dans cet exemple, nous faisons référence à deux comptes d’utilisateur dans Office 365: *meganb* pour *Megan*, et *Alexw* pour *Alex*.         |
 
-2. Déterminez l’attribut que vous souhaitez modifier pour vos profils de compte d’utilisateur. Pour plus d’informations, reportez-vous à la rubrique [attributs pour les stratégies de barrière des informations (aperçu)](information-barriers-attributes.md) . 
+2. Déterminez l’attribut que vous souhaitez modifier pour vos profils de compte d’utilisateur. Pour plus d’informations, reportez-vous à la rubrique [attributs pour les stratégies de barrière des informations](information-barriers-attributes.md) . 
 
 3. Modifiez un ou plusieurs comptes d’utilisateur pour inclure des valeurs pour l’attribut que vous avez sélectionné à l’étape précédente. Pour ce faire, utilisez l’une des procédures suivantes:
 
@@ -168,10 +168,10 @@ Si, après avoir commencé à appliquer des stratégies de barrière des informa
 
 [Obtenir une vue d’ensemble des barrières d’informations](information-barriers.md)
 
-[Définir des stratégies pour les barrières d’information (aperçu)](information-barriers-policies.md)
+[Définir des stratégies pour les barrières des informations](information-barriers-policies.md)
 
 [En savoir plus sur les barrières d’informations dans Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
 
-[Attributs des stratégies de barrière des informations (aperçu)](information-barriers-attributes.md)
+[Attributs des stratégies de barrière des informations](information-barriers-attributes.md)
 
-[Dépannage des barrières relatives aux informations (aperçu)](information-barriers-troubleshooting.md)
+[Résolution des problèmes liés aux informations](information-barriers-troubleshooting.md)

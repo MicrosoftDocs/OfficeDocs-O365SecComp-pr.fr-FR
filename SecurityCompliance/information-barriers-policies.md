@@ -3,7 +3,7 @@ title: Définir des stratégies de barrière des informations
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,18 +11,18 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Découvrez comment définir des stratégies pour les barrières d’informations dans Microsoft Teams.
-ms.openlocfilehash: 844e01fc1df96e9de62b1830c2825db15426f7f4
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: 527f059eb0bccb97429c649d055496c06710c2a9
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394319"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587083"
 ---
-# <a name="define-policies-for-information-barriers-preview"></a>Définir des stratégies pour les barrières d’information (aperçu)
+# <a name="define-policies-for-information-barriers"></a>Définir des stratégies pour les barrières des informations
 
 ## <a name="overview"></a>Vue d’ensemble
 
-Avec les barrières d’informations, vous pouvez définir des stratégies conçues pour empêcher certains segments d’utilisateurs de communiquer les uns avec les autres ou d’autoriser des segments spécifiques à communiquer uniquement avec certains autres segments. Les stratégies de barrière des informations peuvent aider votre organisation à respecter les normes et réglementations pertinentes de l’industrie et éviter les conflits d’intérêt potentiels. Pour en savoir plus, consultez la rubrique barrières de l' [information (aperçu)](information-barriers.md). 
+Avec les barrières d’informations, vous pouvez définir des stratégies conçues pour empêcher certains segments d’utilisateurs de communiquer les uns avec les autres ou d’autoriser des segments spécifiques à communiquer uniquement avec certains autres segments. Les stratégies de barrière des informations peuvent aider votre organisation à respecter les normes et réglementations pertinentes de l’industrie et éviter les conflits d’intérêt potentiels. Pour en savoir plus, consultez la rubrique [barrières relatives aux informations](information-barriers.md). 
 
 Cet article explique comment planifier, définir, implémenter et gérer les stratégies de barrière des informations. Plusieurs étapes sont impliquées et le flux de travail est divisé en plusieurs parties. Veillez à lire les [conditions préalables](#prerequisites) et l’ensemble du processus avant de commencer à définir (ou à modifier) des stratégies de barrière des informations.
 
@@ -59,7 +59,7 @@ Lorsque vous définissez des stratégies pour les barrières d’informations, v
 En plus des [licences et des autorisations requises](information-barriers.md#required-licenses-and-permissions), assurez-vous que les conditions suivantes sont remplies: 
      
 - **Données d’annuaire**. Assurez-vous que la structure de votre organisation est reflétée dans les données d’annuaire. Pour ce faire, assurez-vous que les attributs de compte d’utilisateur, tels que l’appartenance au groupe, le nom du service, etc., sont correctement renseignés dans Azure Active Directory (ou Exchange Online). Pour en savoir plus, consultez les ressources suivantes:
-  - [Attributs des stratégies de barrière des informations (aperçu)](information-barriers-attributes.md)
+  - [Attributs des stratégies de barrière des informations](information-barriers-attributes.md)
   - [Ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide d’Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Configurer les propriétés des comptes d'utilisateur avec Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)
 
@@ -67,7 +67,7 @@ En plus des [licences et des autorisations requises](information-barriers.md#req
 
 - **Journalisation d’audit**. Pour Rechercher l’état d’une application de stratégie, la journalisation d’audit doit être activée. Nous vous recommandons d’effectuer cette opération avant de commencer à définir des segments ou des stratégies. Pour en savoir plus, consultez la rubrique [activer ou désactiver la recherche dans le journal d’audit Office 365](turn-audit-log-search-on-or-off.md).
 
-- **Aucune stratégie de carnet d’adresses**. Avant de définir et d’appliquer des stratégies de barrière des informations, assurez-vous qu’aucune stratégie de carnet d’adresses Exchange n’est mise en place. Si vous disposez de ces stratégies, veillez à [Supprimer les stratégies de carnet d’adresses](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) en premier.
+- **Aucune stratégie de carnet d’adresses**. Avant de définir et d’appliquer des stratégies de barrière des informations, assurez-vous qu’aucune stratégie de carnet d’adresses Exchange n’est mise en place. (Les barrières d’informations sont basées sur les stratégies de carnet d’adresses, mais les deux types de stratégies ne sont pas interchangeables.) Si vous disposez de ces stratégies, veillez à [Supprimer les stratégies de carnet d’adresses](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) en premier.
 
 - **PowerShell**. Actuellement, les stratégies de barrière des informations sont définies et gérées dans le centre de conformité Office 365 Security & à l’aide d’applets de commande PowerShell. Bien que plusieurs exemples soient fournis dans cet article, vous devez être familiarisé avec les cmdlets et les paramètres PowerShell. Vous aurez également besoin du module AzureRM.
     - [Connexion au Centre de Conformité et Sécurité Office 365 PowerShell ](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
@@ -110,7 +110,7 @@ Lorsque vous disposez de la liste initiale des groupes et des stratégies, passe
 
 En plus de votre liste initiale de stratégies, créez une liste de segments pour votre organisation. Les utilisateurs qui seront inclus dans les stratégies de barrière des informations doivent appartenir à un segment et aucun utilisateur ne doit appartenir à deux ou plusieurs segments. Chaque segment ne peut avoir qu’une seule stratégie de barrière des informations appliquée. 
 
-Déterminez les attributs des données d’annuaire de votre organisation que vous utiliserez pour définir des segments. Vous pouvez utiliser *Department*, *memberOf*ou l’un des attributs pris en charge. Assurez-vous que vous avez sélectionné des valeurs dans l’attribut que vous sélectionnez pour les utilisateurs. [Consultez la liste des attributs pris en charge pour les barrières d’informations (aperçu)](information-barriers-attributes.md).
+Déterminez les attributs des données d’annuaire de votre organisation que vous utiliserez pour définir des segments. Vous pouvez utiliser *Department*, *memberOf*ou l’un des attributs pris en charge. Assurez-vous que vous avez sélectionné des valeurs dans l’attribut que vous sélectionnez pour les utilisateurs. [Consultez la liste des attributs pris en charge pour les barrières d’informations](information-barriers-attributes.md).
 
 > [!IMPORTANT]
 > **Avant de passer à la section suivante, assurez-vous que vos données d’annuaire possèdent des valeurs pour les attributs que vous pouvez utiliser pour définir des segments**. Si vos données d’annuaire n’ont pas de valeurs pour les attributs que vous souhaitez utiliser, les comptes d’utilisateur doivent être mis à jour pour inclure ces informations avant de passer à des barrières d’informations. Pour obtenir de l’aide, consultez les ressources suivantes:<br/>- [Configurer les propriétés des comptes d’utilisateur avec Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)<br/>- [Ajouter ou mettre à jour les informations de profil d’un utilisateur à l’aide d’Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
@@ -255,13 +255,13 @@ Avec PowerShell, vous pouvez afficher l’état des comptes d’utilisateur, des
 
 Des ressources sont disponibles pour vous aider à gérer vos stratégies de barrière des informations.
 
-- En cas de problème avec les barrières d’informations, consultez la rubrique [Troubleshooting information barrières (Preview)](information-barriers-troubleshooting.md).
+- En cas de problème avec les barrières d’informations, consultez la rubrique [Troubleshooting information barrières](information-barriers-troubleshooting.md).
 
 - Pour arrêter l’application des stratégies, voir [arrêter une application de stratégie](information-barriers-edit-segments-policies.md.md#stop-a-policy-application).
 
 - Pour supprimer une stratégie de barrière des informations, consultez [la rubrique supprimer une stratégie](information-barriers-edit-segments-policies.md.md#remove-a-policy).
 
-- Pour apporter des modifications à des segments ou des stratégies, consultez la rubrique [Modifier (ou supprimer) stratégies de barrière des informations (aperçu)](information-barriers-edit-segments-policies.md.md).
+- Pour apporter des modifications à des segments ou des stratégies, consultez la rubrique [Modifier (ou supprimer) des stratégies de barrière des informations](information-barriers-edit-segments-policies.md.md).
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>Exemple: services, segments et stratégies de contoso
 
@@ -316,6 +316,6 @@ Une fois cette configuration terminée, contoso est conforme aux exigences léga
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Obtenir une vue d’ensemble des barrières en matière d’informations (aperçu)](information-barriers.md)
+- [Obtenir une vue d’ensemble des barrières d’informations](information-barriers.md)
 
-- [Obstacles aux informations dans la version d’évaluation de Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [Barrières des informations dans Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)

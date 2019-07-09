@@ -3,7 +3,7 @@ title: Attributs des stratégies de barrière des informations
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,21 +11,21 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Utilisez cet article comme référence pour différents attributs que vous pouvez utiliser dans les stratégies de barrière des informations.
-ms.openlocfilehash: 1537dae2c99555a9257bbe5c3f9754a1f975fbbe
-ms.sourcegitcommit: 8f399f260687d17a497a15bcc644187c277ea8fe
+ms.openlocfilehash: 1e2e183da350308a57fa5d627b4867b9b3d30cee
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "35462405"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587063"
 ---
-# <a name="attributes-for-information-barrier-policies-preview"></a>Attributs des stratégies de barrière des informations (aperçu)
+# <a name="attributes-for-information-barrier-policies"></a>Attributs des stratégies de barrière des informations
 
 Certains attributs d’Azure Active Directory peuvent être utilisés pour segmenter les utilisateurs. Une fois les segments définis, ces segments peuvent être utilisés comme filtres pour les stratégies de barrière des informations. Par exemple, vous pouvez utiliser **Department** pour définir des segments d’utilisateurs par service au sein de votre organisation (en supposant qu’aucun employé ne travaille pour deux départements en même temps). 
 
 Cet article explique comment utiliser des attributs avec des barrières d’informations et fournit une liste des attributs qui peuvent être utilisés. Pour en savoir plus sur les barrières d’informations, consultez les ressources suivantes:
-- [Barrières des informations (aperçu)](information-barriers.md)
-- [Définir des stratégies pour les barrières d’informations dans Microsoft Teams (aperçu)](information-barriers-policies.md)
-- [Modifier (ou supprimer) des stratégies de barrière des informations (aperçu)](information-barriers-edit-segments-policies.md.md)
+- [Barrières des informations](information-barriers.md)
+- [Définir des stratégies pour les barrières d’informations dans Microsoft teams](information-barriers-policies.md)
+- [Modifier (ou supprimer) des stratégies de barrière des informations](information-barriers-edit-segments-policies.md.md)
 
 ## <a name="how-to-use-attributes-in-information-barrier-policies"></a>Comment utiliser les attributs dans les stratégies de barrière des informations
 
@@ -93,11 +93,11 @@ Le tableau suivant répertorie les attributs que vous pouvez utiliser avec les b
 
 ## <a name="related-topics"></a>Sujets associés
 
-[Définir des stratégies pour les barrières d’informations dans Microsoft Teams (aperçu)](information-barriers-policies.md)
+[Définir des stratégies pour les barrières d’informations dans Microsoft teams](information-barriers-policies.md)
 
-[Dépannage des barrières relatives aux informations (aperçu)](information-barriers-troubleshooting.md)
+[Résolution des problèmes liés aux informations](information-barriers-troubleshooting.md)
 
-[Barrières des informations (aperçu)](information-barriers.md)
+[Barrières des informations](information-barriers.md)
 
 
 

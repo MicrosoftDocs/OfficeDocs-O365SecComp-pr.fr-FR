@@ -3,7 +3,7 @@ title: Vue d’ensemble des barrières de l’information
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,20 +11,20 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Utilisez les barrières relatives aux informations pour garantir la conformité de la communication à l’aide de Microsoft teams au sein de votre organisation.
-ms.openlocfilehash: 9750eab3c91b40cc96e16a386dbf59ba767ae877
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: e37c97ae8a5e3777e2a30432e8289abadae8f14c
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394279"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587043"
 ---
-# <a name="information-barriers-preview"></a>Barrières des informations (aperçu)
+# <a name="information-barriers"></a>Barrières des informations
 
 ## <a name="overview"></a>Vue d’ensemble
 
 Les services de Cloud Computing Microsoft incluent de puissantes fonctionnalités de communication et de collaboration. Mais supposons que vous souhaitiez restreindre les communications entre deux groupes afin d’éviter un conflit d’intérêts au sein de votre organisation. Vous pouvez aussi souhaiter restreindre les communications entre certaines personnes au sein de votre organisation afin de protéger les informations internes. Microsoft 365 permet la communication et la collaboration entre les groupes et les organisations, de sorte qu’y a-t-il un moyen de restreindre les communications entre des groupes d’utilisateurs spécifiques lorsque cela est nécessaire? Avec des barrières d’informations, vous pouvez le faire! 
 
-Les barrières pour les informations sont maintenant en avant-première à partir de Microsoft Teams. Lorsque ces fonctionnalités sont disponibles pour votre organisation, un administrateur de conformité ou un administrateur des barrières de l’information peut définir des stratégies pour autoriser ou empêcher les communications entre les groupes d’utilisateurs dans Microsoft Teams. Les stratégies de barrière des informations peuvent être utilisées pour des situations comme celles-ci:
+Les barrières de l’information sont désormais déployées à partir de Microsoft Teams. Si votre [abonnement](#required-licenses-and-permissions) inclut des barrières d’informations, un administrateur de conformité ou un administrateur des barrières de l’information peut définir des stratégies pour autoriser ou empêcher les communications entre les groupes d’utilisateurs dans Microsoft Teams. Les stratégies de barrière des informations peuvent être utilisées pour des situations comme celles-ci:
 
 - Un commerçant en journée ne peut pas appeler une personne de l’équipe marketing
 - Le personnel financier travaillant sur les informations confidentielles d’une société ne peut pas recevoir d’appels de certains groupes au sein de son organisation
@@ -34,7 +34,7 @@ Les barrières pour les informations sont maintenant en avant-première à parti
 Pour tous ces exemples de scénarios (et plus), des stratégies de barrière des informations peuvent être définies pour empêcher ou autoriser les communications dans Microsoft Teams. De telles stratégies peuvent empêcher les personnes d’appeler ou de converser avec celles qu’ils ne doivent pas utiliser, ou d’autoriser les utilisateurs à communiquer uniquement avec des groupes spécifiques dans Microsoft Teams. Avec des stratégies de barrière des informations en vigueur, chaque fois que des utilisateurs couverts par ces stratégies tentent de communiquer avec d’autres personnes dans Microsoft Teams, des vérifications sont effectuées pour empêcher (ou autoriser) la communication (comme défini par les stratégies de barrière des informations). Pour en savoir plus sur l’expérience utilisateur avec des barrières d’informations, consultez la rubrique [barrières relatives aux informations dans Microsoft teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
 
 > [!IMPORTANT]
-> Actuellement, les barrières de l’information ne s’appliquent pas aux communications de messagerie ou au partage de fichiers via SharePoint Online ou OneDrive. En outre, les barrières de l’information sont indépendantes des [limites de conformité](set-up-compliance-boundaries.md).<p>Avant de définir et d’appliquer des stratégies de barrière des informations, assurez-vous que votre organisation ne dispose pas des [stratégies de carnet d’adresses Exchange](https://docs.microsoft.com/en-us/exchange/address-books/address-book-policies/address-book-policies) en vigueur.  
+> Actuellement, les barrières de l’information ne s’appliquent pas aux communications de messagerie ou au partage de fichiers via SharePoint Online ou OneDrive. En outre, les barrières de l’information sont indépendantes des [limites de conformité](set-up-compliance-boundaries.md).<p>Avant de définir et d’appliquer des stratégies de barrière des informations, assurez-vous que votre organisation ne dispose pas des [stratégies de carnet d’adresses Exchange](https://docs.microsoft.com/en-us/exchange/address-books/address-book-policies/address-book-policies) en vigueur. (Les barrières d’informations sont basées sur les stratégies de carnet d’adresses.) 
 
 ## <a name="what-happens-with-information-barriers"></a>Qu’en est-il des barrières de l’information?
 
@@ -55,7 +55,7 @@ Pour en savoir plus sur l’expérience utilisateur avec des barrières d’info
 
 ## <a name="required-licenses-and-permissions"></a>Licences et autorisations requises
 
-**Actuellement, les barrières de l’information sont en**préversion. Lorsque ces fonctionnalités sont généralement disponibles, elles sont incluses dans les abonnements, par exemple:
+Les barrières de l’information se dérouleront maintenant et sont incluses dans les abonnements, telles que:
 
 - Microsoft 365 E5
 - Office 365 E5
@@ -83,5 +83,5 @@ Vous devez être familiarisé avec les applets de commande PowerShell pour défi
 
 - [Définir des stratégies pour les barrières des informations](information-barriers-policies.md)
 
-- [Modifier (ou supprimer) des stratégies de barrière des informations (aperçu)](information-barriers-edit-segments-policies.md.md) 
+- [Modifier (ou supprimer) des stratégies de barrière des informations](information-barriers-edit-segments-policies.md.md) 
 
