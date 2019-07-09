@@ -3,7 +3,7 @@ title: Personnaliser un type d’informations sensibles intégré
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 04/03/2019
+ms.date: 07/08/2019
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous recherchez des informations sensibles dans du contenu, vous devez décrire ces informations dans ce que l’on appelle une règle. La protection contre la perte de données (DLP) comprend des règles pour les types d’informations sensibles les plus courants que vous pouvez utiliser immédiatement. Pour utiliser ces règles, vous devez les inclure dans une stratégie. Vous voudrez peut-être ajuster ces règles intégrées pour répondre aux besoins spécifiques de votre organisation, et vous pouvez le faire en créant un type d’informations sensibles personnalisé. Cette rubrique vous montre comment personnaliser le fichier XML qui contient la collection de règles existante pour détecter un plus large éventail d’informations potentielles relatives aux cartes de crédit.
-ms.openlocfilehash: ddfd8bd82164fde6d2121b37d867caaa69355b4b
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 8a621e3f1b24a8cea9cd263e44dc2def8a8b95b7
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077200"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587103"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personnaliser un type d’informations sensibles intégré
 
@@ -214,7 +214,7 @@ Voici les définitions des termes que vous avez rencontrés au cours de cette pr
 |:-----|:-----|
 |Entité|Les entités sont ce que nous appelons des types d'informations sensibles, comme les numéros de carte de crédit. Chaque entité possède un GUID unique qui constitue son ID. Si vous copiez un GUID et que vous le recherchez dans le XML, vous trouvez la définition de règle XML, ainsi que toutes les traductions localisées de cette règle XML. Vous pouvez également trouver cette définition en localisant le GUID de la traduction, puis en recherchant ce GUID.|
 |Fonctions|Le fichier XML fait référence à `Func_credit_card`, qui est une fonction dans le code compilé. Les fonctions sont utilisées pour exécuter des expressions régulières complexes et vérifier que les sommes de contrôle correspondent pour nos règles intégrées. Étant donné que tout ceci se passe dans le code, certaines variables ne figurent pas dans le fichier XML.|
-|IdMatch|Il s’agit de l’identificateur auquel le modèle tente de correspondre, par exemple un numéro de carte de crédit. Vous pouvez en lire plus à ce sujet et au sujet des balises `Match` dans [Règles d’entité](https://support.office.com/article/c4ab8707-0839-4855-9390-3dbcb43475a7.aspx#dlp-entity).|
+|IdMatch|Il s’agit de l’identificateur auquel le modèle tente de correspondre, par exemple un numéro de carte de crédit.|
 |Listes de mots clés|Le fichier XML fait également référence à `keyword_cc_verification` et à `keyword_cc_name`, qui sont des listes de mots clés dans lesquelles nous recherchons des correspondances à l’intérieur du paramètre `patternsProximity` pour l’entité. Ces éléments ne sont actuellement pas affichés dans le fichier XML.|
 |Modèle|Le modèle contient la liste de ce que le type sensible recherche. Cela inclut des mots clés, des expressions régulières et des fonctions internes (qui effectuent des tâches telles que la vérification des sommes de contrôle). Ces types d’informations sensibles peuvent avoir plusieurs modèles avec des niveaux de confiance uniques. Ceci est utile lors de la création d’un type d’informations sensibles qui renvoie un niveau de confiance élevé si des preuves crédibles sont trouvées et un niveau de confiance faible dans le cas contraire.|
 |confidenceLevel|Il s’agit du niveau de confiance appliqué lorsque le moteur DLP trouve une correspondance. Ce niveau de confiance est associé à une correspondance pour le modèle si les exigences du modèle sont remplies. C’est la mesure de confiance à prendre en considération lorsque vous utilisez des règles de flux de messagerie Exchange (également appelées règles de transport).|
