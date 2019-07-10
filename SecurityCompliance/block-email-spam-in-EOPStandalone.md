@@ -3,7 +3,7 @@ title: Bloquer le courrier indésirable dans EOP autonome
 ms.author: tracyp
 author: msfttracyp
 ms.reviewer: andypunt
-manager: laurawi
+manager: dansimp
 ms.date: 2/25/2019
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: Document pour les administrateurs autonomes d’EOP afin d’éviter le courrier indésirable faux négatifs
-ms.openlocfilehash: a79fb94a233cd101caac96312b05a4c0d24ea645
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 20533f12ccc71fc97d82590efdaf551ab036b17d
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152196"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598490"
 ---
 ## <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>Paramètres pour personnaliser le filtre anti-courrier indésirable Office 365
 
@@ -35,7 +35,7 @@ Personnalisez votre filtre anti-courrier indésirable Office 365 en ajoutant l�
     
 2. Recherchez l’adresse IP qui suit la balise CIP dans l’en-tête X-Forefront-Antispam-Report à l’aide de l’[analyseur d’en-têtes de message](https://testconnectivity.microsoft.com/?tabid=mha) ou manuellement. 
     
-3. Ajoutez l’adresse IP à la liste d’adresses IP bloquées en suivant les étapes décrites dans la section « Utilisation du Centre d’administration Exchange (CAE) pour modifier la stratégie par défaut de filtrage des connexions », dans l’article [Configuration de la stratégie de filtrage des connexions](https://technet.microsoft.com/fr-FR/library/jj200718%28v=exchg.150%29.aspx).
+3. Ajoutez l’adresse IP à la liste d’adresses IP bloquées en suivant les étapes décrites dans la section « Utilisation du Centre d’administration Exchange (CAE) pour modifier la stratégie par défaut de filtrage des connexions », dans l’article [Configuration de la stratégie de filtrage des connexions](https://technet.microsoft.com/en-us/library/jj200718%28v=exchg.150%29.aspx).
     
 ### <a name="block-bulk-mail-with-mail-flow-rules-transport-rules-or-the-spam-filter"></a>Blocage du courrier en nombre à l’aide des règles de flux de messagerie (règles de transport) ou du filtre anti-courrier indésirable
 
@@ -45,8 +45,7 @@ Le courrier indésirable que vous recevez comprend essentiellement du courrier e
   
 ### <a name="block-email-spam-using-spam-filter-block-lists"></a>Blocage du courrier indésirable à l’aide des listes de blocage du filtre anti-courrier indésirable
 
-
-  [Configurez vos stratégies de filtrage du courrier indésirable](https://technet.microsoft.com/fr-FR/library/jj200684%28v=exchg.150%29.aspx) pour ajouter l’adresse de l’expéditeur à la liste des expéditeurs bloqués ou le domaine à la liste des domaines bloqués dans le filtre anti-courrier indésirable. Les e-mails provenant d’un expéditeur ou d’un domaine figurant dans l’une de ces listes seront marqués comme courrier indésirable. 
+[Configurez vos stratégies de filtrage du courrier indésirable](https://technet.microsoft.com/en-us/library/jj200684%28v=exchg.150%29.aspx) pour ajouter l’adresse de l’expéditeur à la liste des expéditeurs bloqués ou le domaine à la liste des domaines bloqués dans le filtre anti-courrier indésirable. Les e-mails provenant d’un expéditeur ou d’un domaine figurant dans l’une de ces listes seront marqués comme courrier indésirable. 
   
 ## <a name="email-users-can-also-help-ensure-that-false-negative-and-email-spam-is-blocked-with-office-365-spam-filter"></a>Blocage des faux négatifs et du courrier indésirable par les utilisateurs eux-mêmes avec le filtre anti-courrier indésirable Office 365
 
@@ -55,7 +54,7 @@ Pour vous aider à bloquer les faux négatifs et le courrier indésirable dans O
 ![Blocage d’un expéditeur dans Outlook sur le Web ](media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
   
 > [!NOTE]
-> Pour en savoir plus sur les listes d’expéditeurs autorisés, consultez la [FAQ sur les listes des expéditeurs autorisés et des expéditeurs bloqués](https://technet.microsoft.com/fr-FR/library/dn133608%28v=exchg.150%29.aspx). 
+> Pour en savoir plus sur les listes d’expéditeurs autorisés, consultez la [FAQ sur les listes des expéditeurs autorisés et des expéditeurs bloqués](https://technet.microsoft.com/en-us/library/dn133608%28v=exchg.150%29.aspx). 
   
 ## <a name="eop-only-customers-set-up-directory-synchronization"></a>Clients d’EOP : utilisez la synchronisation d’annuaires
 

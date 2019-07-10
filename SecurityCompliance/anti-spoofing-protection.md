@@ -2,7 +2,7 @@
 title: Protection contre l’usurpation d’identité dans Office 365
 ms.author: tracyp
 author: MSFTtracyp
-manager: laurawi
+manager: dansimp
 ms.date: 03/29/2019
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Cet article explique comment Office 365 prévient les attaques par hameçonnage utilisant des domaines d’expéditeur falsifiés, ou usurpés. Pour ce faire, Microsoft analyse les messages et bloque ceux qui ne peuvent être authentifiés ni à l’aide de méthodes d’authentification standard du courrier, ni à l’aide d’autres techniques basées sur la réputation des expéditeurs. Cette modification a été apportée afin de réduire le nombre d’attaques par hameçonnage auxquelles sont exposées les organisations utilisant Office 365.
-ms.openlocfilehash: 455ce577e4ffb3dc4d943004dd3c299e7e6f1eae
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 066fbee27291ad8d89a7cb9d0f2abc586835b780
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155776"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598370"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protection contre l’usurpation d’identité dans Office 365
 
@@ -114,7 +114,7 @@ Microsoft distingue deux types de messages d’usurpation d’identité :
   
  **Usurpation intra-organisationnelle**
   
-Également appelée usurpation self-to-self, elle se produit lorsque le domaine figurant dans l’adresse De : est identique au domaine du destinataire ou aligné sur celui-ci (lorsque le domaine du destinataire est l’un des [Domaines acceptés](https://technet.microsoft.com/fr-FR/library/jj945194%28v=exchg.150%29.aspx) par l’organisation), ou lorsque le domaine figurant dans l’adresse De : fait partie de la même organisation.
+Également appelée usurpation self-to-self, elle se produit lorsque le domaine figurant dans l’adresse De : est identique au domaine du destinataire ou aligné sur celui-ci (lorsque le domaine du destinataire est l’un des [Domaines acceptés](https://technet.microsoft.com/en-us/library/jj945194%28v=exchg.150%29.aspx) par l’organisation), ou lorsque le domaine figurant dans l’adresse De : fait partie de la même organisation.
   
 Par exemple, l’expéditeur et le destinataire du message suivant appartiennent au même domaine (contoso.com). (Des espaces sont insérées dans les adresses de courrier pour empêcher d’éventuels bots de spam de prélever celles-ci sur cette page) :
   
@@ -653,7 +653,7 @@ La technologie de détection d’usurpation d’identité de Microsoft a été i
   
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>Comment signaler des messages comme étant ou n’étant pas du courrier indésirable à Microsoft ?
 
-Vous pouvez utiliser le [complément Signaler un message pour Outlook](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2) ou, s’il n’est pas installé, [envoyer les messages indésirables, légitimes ou de hameçonnage à Microsoft pour analyse](https://technet.microsoft.com/fr-FR/library/jj200769%28v=exchg.150%29.aspx).
+Vous pouvez utiliser le [complément Signaler un message pour Outlook](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2) ou, s’il n’est pas installé, [envoyer les messages indésirables, légitimes ou de hameçonnage à Microsoft pour analyse](https://technet.microsoft.com/en-us/library/jj200769%28v=exchg.150%29.aspx).
   
 ### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>Je suis un administrateur de domaine qui ne connaît pas tous ses expéditeurs...
 
