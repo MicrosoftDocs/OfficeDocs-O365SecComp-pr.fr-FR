@@ -2,7 +2,7 @@
 title: Pool de remise à risque élevé pour les messages sortants
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 8/24/2016
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
 description: Lorsque le système de courrier d’un client a été compromis par un programme malveillant ou une attaque de courrier indésirable malveillant, et qu’il envoie du courrier indésirable sortant via le service de filtrage hébergé, les adresses IP des serveurs du centre de données Office 365 sont peut-être référencées dans un bloc tiers. établit.
-ms.openlocfilehash: 0581d4d0ac745f7520f73cd6b4465d72fa1dcf48
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 5b9241dead5b40e9f216ecd3023d6f8b86fb0205
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152726"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599160"
 ---
 # <a name="high-risk-delivery-pool-for-outbound-messages"></a>Pool de remise à risque élevé pour les messages sortants
 

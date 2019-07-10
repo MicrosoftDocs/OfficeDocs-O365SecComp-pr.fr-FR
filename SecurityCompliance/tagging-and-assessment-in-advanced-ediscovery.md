@@ -3,7 +3,7 @@ title: Balisage et évaluation dans Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
+ms.date: 09/14/2017
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 description: 'Examinez les étapes pour effectuer une formation à l’évaluation, notamment des fichiers de marquage, et en examinant les résultats de l’évaluation dans Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: 15463ac841e2fbbafe1fe502657a659f4a9e1883
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 067f8933bd7fc1286e468d664bf4dbd754e64f00
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156406"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600737"
 ---
 # <a name="tagging-and-assessment-in-office-365-advanced-ediscovery"></a>Balisage et évaluation dans Office 365 Advanced eDiscovery
 
@@ -47,7 +47,7 @@ Cette section décrit la procédure pour le module d’évaluation de la pertine
     ![Suivi de pertinence - Évaluation](media/da911ba5-8678-40d6-9ad5-fd0b058355c1.png)
   
     > [!TIP]
-    > Par défaut, nous vous recommandons de passer à l’étape suivante par défaut lorsque l’indicateur de progression de l’évaluation du problème est terminé, indiquant que l’exemple d’évaluation a été révisé et que des fichiers appropriés ont été marqués. > sinon, si vous voulez afficher les résultats de l’onglet de **suivi** et contrôler la marge d’erreur et l’étape suivante, cliquez sur **modifier** en regard de l' **étape suivante**, sélectionnez **continuer l’évaluation**, puis cliquez sur **OK**. 
+    > Par défaut, nous vous recommandons de passer à l’étape suivante par défaut lorsque l’indicateur de progression de l’évaluation du problème est terminé, indiquant que l’exemple d’évaluation a été révisé et que des fichiers appropriés ont été marqués. > sinon, si vous souhaitez afficher les résultats de l’onglet de **suivi** et contrôler la marge d’erreur et l’étape suivante, cliquez sur **modifier** en regard de l' **étape suivante**, sélectionnez **continuer l’évaluation**, puis cliquez sur **OK**. 
   
 1. Cliquez sur **modifier** à droite de la case à cocher **évaluation** pour afficher et spécifier les paramètres d’évaluation par problème. Une boîte de dialogue de **niveau d’évaluation** s’affiche pour chaque problème, comme illustré dans l’exemple suivant: 
     
@@ -118,7 +118,7 @@ Lorsque la richesse est très faible, le nombre de fichiers d’évaluation supp
 En l’absence de stabilisation statistiquement basée statistiquement, les résultats seront moins élevés. Toutefois, ces résultats peuvent être utilisés pour rechercher des fichiers pertinents lorsque vous n’avez pas besoin de connaître le pourcentage de fichiers pertinents trouvés. De même, cet État peut être utilisé pour former des problèmes avec une faible richesse, où les scores de pertinence peuvent accélérer l’accès aux fichiers pertinents à un problème spécifique.
   
 > [!TIP]
-> Dans l' **onglet \> suivi de pertinence** , affichage des problèmes étendus, les options d’affichage suivantes sont disponibles: > l’étape suivante recommandée, telle que l' **étape suivante: le marquage** peut être contourné (par problème) en cliquant sur le bouton **modifier** pour son à droite, puis en sélectionnant une autre étape dans l' **étape suivante**. Lorsque l’indicateur de progression de l’évaluation n’est pas terminé, l’option évaluation est recommandée suivant, pour baliser les fichiers d’évaluation et augmenter la précision des statistiques. > vous pouvez modifier la marge d’erreur et évaluer son impact en cliquant sur **modifier**, puis dans la **boîte de dialogue niveau d’évaluation**, en modifiant la **marge d’erreur cible pour les estimations de rappel**, et en cliquant sur **mettre à jour les valeurs**. De plus, dans cette boîte de dialogue, vous pouvez afficher les options avancées en cliquant sur **avancé**. > vous pouvez afficher des statistiques supplémentaires sur le niveau d’évaluation et leur impact en cliquant sur **affichage**. Dans la boîte de dialogue résultats détaillés affichés, les statistiques sont disponibles par problème, lorsqu’il y a au moins 500 fichiers d’évaluation marqués et que 18 fichiers sont balisés comme pertinents pour le problème. 
+> Dans l' **onglet \> suivi de pertinence** , affichage des problèmes étendus, les options d’affichage suivantes sont disponibles: > l’étape suivante recommandée, telle que l' **étape suivante: le marquage** peut être contourné (par problème) en cliquant sur le bouton **modifier** à sa droite. , puis en sélectionnant une autre étape dans l' **étape suivante**. Lorsque l’indicateur de progression de l’évaluation n’est pas terminé, l’option évaluation est recommandée suivant, pour baliser les fichiers d’évaluation et augmenter la précision des statistiques. > vous pouvez modifier la marge d’erreur et évaluer son impact, en cliquant sur **modifier**, puis dans la **boîte de dialogue niveau d’évaluation**, en modifiant la **marge d’erreur cible pour les estimations de rappel**, puis en cliquant sur **mettre à jour les valeurs**. De plus, dans cette boîte de dialogue, vous pouvez afficher les options avancées en cliquant sur **avancé**. > vous pouvez afficher des statistiques supplémentaires sur le niveau d’évaluation et leur impact en cliquant sur **affichage**. Dans la boîte de dialogue résultats détaillés affichés, les statistiques sont disponibles par problème, lorsqu’il y a au moins 500 fichiers d’évaluation marqués et que 18 fichiers sont balisés comme pertinents pour le problème. 
   
 ## <a name="see-also"></a>Voir aussi
 

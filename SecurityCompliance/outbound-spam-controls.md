@@ -2,7 +2,7 @@
 title: Contrôle du courrier indésirable sortant dans Office 365
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,19 +14,19 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Si votre organisation envoie un grand nombre de messages marqués comme courrier indésirable, vous pouvez être bloqué pour l’envoi de messages électroniques avec Office 365. Lisez cet article pour en savoir plus sur les raisons de cette situation et sur ce que vous pouvez faire.
-ms.openlocfilehash: 742006374b76156ffc2ffe6b158ef5e0ac890ebe
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 09aa71cd8b273a3235bc2673d3d17c3decf71da5
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157596"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601131"
 ---
 # <a name="controlling-outbound-spam-in-office-365"></a>Contrôle du courrier indésirable sortant dans Office 365
 
 Nous prévoyons la gestion du courrier indésirable sortant, car le nôtre est un service partagé.  Il existe de nombreux clients derrière un pool de ressources partagé, où si un client envoie du courrier indésirable sortant, il peut dégrader la réputation IP sortante du service et affecte la remise des messages électroniques pour d’autres clients.
 
 > [!IMPORTANT]
-> La notification pour lorsqu’un expéditeur est restreint fait désormais partie de la plateforme d’alerte SCC (Security & Compliance Center). Au lieu d’utiliser les méthodes décrites ci-dessous pour envoyer des notifications, la liste des utilisateurs à alerter se trouve dans l’alerte «utilisateur restreint de l’envoi de courrier électronique». Commencez à utiliser la [page stratégies d’alerte](https://sip.protection.office.com/alertpolicies) du centre de sécurité _AMP_ Compliance Center pour configurer l’alerte, car la méthode précédente sera supprimée à l’avenir. Découvrez la nouvelle [expérience utilisateur restreint](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam). "
+> La notification d’un expéditeur restreint fait désormais partie de la plateforme d’alerte SCC (Security & Compliance Center). Au lieu d’utiliser les méthodes décrites ci-dessous pour envoyer des notifications, la liste des utilisateurs à alerter se trouve dans l’alerte «utilisateur restreint de l’envoi de courrier électronique». Commencez à utiliser la [page stratégies d’alerte](https://sip.protection.office.com/alertpolicies) dans le centre de sécurité & conformité pour configurer l’alerte, car la méthode précédente sera supprimée à l’avenir. Découvrez la nouvelle [expérience utilisateur restreint](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam). "
 
 ## <a name="what-admins-can-do-to-control-outbound-spam"></a>Ce que les administrateurs peuvent faire pour contrôler le courrier indésirable sortant
 

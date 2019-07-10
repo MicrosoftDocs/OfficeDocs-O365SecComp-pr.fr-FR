@@ -2,19 +2,19 @@
 title: Informations sur la correction du domaine de l’expéditeur
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Les administrateurs peuvent en savoir plus sur la rubrique Fix sender Domain Insight dans le tableau de bord du flux de messagerie dans le centre de sécurité & Compliance Center.
-ms.openlocfilehash: 181f224064b5f31fd17c348cc4547826fbcd29a9
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 89c94616d612fa02c067e0bc2a89f5a3be704ed5
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158706"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598060"
 ---
 # <a name="fix-sender-domain-insight"></a>Informations sur la correction du domaine de l’expéditeur
 
@@ -34,7 +34,7 @@ Les messages qui ne répondent pas aux critères ne sont pas attribués à l’o
 
 La fonction **Fix sender Domain** Insight affiche les messages électroniques provenant de votre environnement local qui ne répondent pas aux critères, vous permet d’identifier les ordinateurs et les comptes d’utilisateur potentiellement compromis dans votre environnement de messagerie local et vous aide à prendre actions de correction.
 
-![La fonction Fix sender Domain Insight dans le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance Center](media/sender-domain-insight-selected.png)
+![Le tableau de bord des expéditeurs du tableau de bord du flux de messagerie dans le centre de sécurité & conformité](media/sender-domain-insight-selected.png)
 
 Lorsque vous cliquez sur **afficher les détails**, vous êtes dirigé vers un autre widget avec plus de détails, comme illustré dans le diagramme suivant:
 
@@ -46,4 +46,4 @@ Vous verrez le connecteur entrant qui a été utilisé pour livrer les messages 
 
 ## <a name="see-also"></a>Voir aussi
 
-Pour plus d’informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security _AMP_ Compliance Center](mail-flow-insights-v2.md).
+Pour plus d’informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).

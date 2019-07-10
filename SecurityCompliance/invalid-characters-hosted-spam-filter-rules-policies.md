@@ -2,8 +2,8 @@
 title: Éviter les caractères non valides dans vos règles de filtrage du courrier indésirable et la stratégie de filtrage
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 9/24/2018
+manager: dansimp
+ms.date: 09/24/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Fournit de l’aide aux administrateurs qui ont des caractères non valides dans leur configuration de blocage du courrier indésirable et &amp; génèrent des problèmes lors de la tentative d’utilisation du centre de sécurité conformité.
-ms.openlocfilehash: 0e7dcb40d8e54045caa55083e2cbf0585a80869d
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: c5ac6a262c80bc54a970dbef43684755e6d61e6a
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154159"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598960"
 ---
 # <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>Éviter les caractères non valides dans vos règles de filtrage du courrier indésirable et votre stratégie de filtrage 
 

@@ -2,7 +2,7 @@
 title: Gestion des messages et des fichiers mis en quarantaine en tant qu’administrateur dans Office 365
 ms.author: tracyp
 author: MSFTTracyp
-manager: laurawi
+manager: dansimp
 ms.date: 09/05/2018
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'En tant qu’administrateur, vous pouvez afficher, publier et signaler des messages en quarantaine faux positifs dans Office 365. Vous pouvez configurer des stratégies pour qu’Office 365 filtre les messages et les envoie à la mise en quarantaine pour plusieurs raisons: ils ont été identifiés comme courrier indésirable, en bloc, par hameçonnage, par programme malveillant ou parce qu’ils correspondent à une règle de flux de messagerie. '
-ms.openlocfilehash: abe9aa1a8c7d78af4d82d9a06284e12745d24dee
-ms.sourcegitcommit: dde3dc1dd419b97daa1da9827787c27935a2c757
+ms.openlocfilehash: 245068b7d3ec51cbca887883f791b19ea116731a
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35115925"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598800"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gestion des messages et des fichiers mis en quarantaine en tant qu’administrateur dans Office 365
 

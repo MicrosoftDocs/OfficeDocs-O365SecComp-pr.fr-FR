@@ -2,7 +2,7 @@
 title: Expéditeur non vérifié
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 04/25/2019
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Pour empêcher les messages de hameçonnage d’atteindre votre boîte aux lettres, Outlook.com et Outlook sur le Web Vérifiez que l’expéditeur est bien ce qu’il dit, et marquez les messages suspects comme courrier indésirable.
-ms.openlocfilehash: 92458a93a4da3e449061e4d2a4ba312d635c42cc
-ms.sourcegitcommit: 7f00f765e8fa674ce1c8c66f5b89b6bea45e13ac
+ms.openlocfilehash: a69af1efb634e1805f055d49ec5515f4b4252c3b
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34341622"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600260"
 ---
 # <a name="unverified-sender"></a>Expéditeur non vérifié
 
@@ -33,9 +33,9 @@ Outlook.com et Outlook sur le Web affichent des indicateurs lorsque l’expédit
 
 ## <a name="how-to-manage-which-messages-receive-the-unverified-sender-treatment"></a>Comment gérer les messages qui reçoivent le traitement de l’expéditeur non vérifié 
 
-Si vous êtes un client Office 365, vous pouvez gérer cette fonctionnalité via le centre de sécurité & Compliance Center. 
+Si vous êtes un client Office 365, vous pouvez gérer cette fonctionnalité via le centre de sécurité & conformité. 
 
-- Dans le centre de sécurité & de la sécurité d’Office 365, les administrateurs du client peuvent activer ou désactiver la fonctionnalité de protection contre l’usurpation d’identité dans le cadre de la stratégie anti-hameçonnage. En outre, elle peut être gérée via la cmdlet «Set-Antiphishpolicy permet». Pour plus d’informations, consultez la rubrique anti-phishing protection in Office 365 et Set-Antiphishpolicy permet.
+- Dans le centre de conformité Office 365 Security &, les administrateurs du client peuvent activer ou désactiver la fonctionnalité de protection contre l’usurpation d’identité dans le cadre de la stratégie anti-hameçonnage. En outre, elle peut être gérée via la cmdlet «Set-Antiphishpolicy permet». Pour plus d’informations, consultez la rubrique anti-phishing protection in Office 365 et Set-Antiphishpolicy permet.
 
     ![Modification des expéditeurs non authentifiés dans l’interface graphique.](media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 

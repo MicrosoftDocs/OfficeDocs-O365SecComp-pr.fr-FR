@@ -2,25 +2,25 @@
 title: Informations sur les boucles de courrier
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
-description: Les administrateurs peuvent en savoir plus sur la vue de boucle de courrier dans le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance Center.
-ms.openlocfilehash: eddd65bb02fb0ca0d64b0cf9e35a7e40c29e47c5
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: Les administrateurs peuvent en savoir plus sur la vue de boucle de courrier dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
+ms.openlocfilehash: 00dfdcb87bce8ced58195ead88954c90c32c54a2
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158666"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598120"
 ---
 # <a name="mail-loop-insight"></a>Informations sur les boucles de courrier
 
 Une boucle de courrier est incorrecte car elle gaspille des ressources système, consomme le quota de volume de courrier de votre organisation et envoie des notifications d’échec de remise confuses (également appelées notifications de non-remise) aux expéditeurs d’origine. Cet aperçu indique quand une boucle de courrier est trouvée dans votre organisation, les domaines de messagerie impliqués dans la boucle et le nombre de messages de la journée précédente qui se trouvaient dans la boucle.
 
-![Vue de boucle de courrier dans le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance Center](media/c3f707cb-4c89-4e88-989c-81ce1d1d6b99.png)
+![Vue de boucle de courrier dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité](media/c3f707cb-4c89-4e88-989c-81ce1d1d6b99.png)
 
 Vous pouvez cliquer sur **afficher les détails** pour afficher les détails dans un volet flyout. Nous allons également identifier les scénarios de boucle les plus courants et fournir les actions recommandées (le cas échéant) pour corriger la boucle.
 
@@ -28,4 +28,4 @@ Vous pouvez cliquer sur **afficher les détails** pour afficher les détails dan
 
 ## <a name="see-also"></a>Voir aussi
 
-Pour plus d’informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security _AMP_ Compliance Center](mail-flow-insights.md).
+Pour plus d’informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security & Compliance Center](mail-flow-insights.md).

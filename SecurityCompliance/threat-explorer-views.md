@@ -2,7 +2,7 @@
 title: Affichages dans l’Explorateur de menaces et détections en temps réel
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 03/18/2019
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: Découvrez les différents types d’affichage disponibles dans l’Explorateur de menaces et les détections en temps réel.
-ms.openlocfilehash: 14cdbbd602e53615abec12bedbac2f16be40111f
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: 71ec20daae45bee8385f24091850ea6223399eae
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408319"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600817"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Affichages dans l’Explorateur de menaces et détections en temps réel
 
@@ -52,7 +52,7 @@ Sous le graphique, affichez plus de détails sur des messages spécifiques. Lors
 
 ![Explorateur de menaces avec le lanceur ouvert](media/ThreatExplorerMalwareItemSelectedFlyout.png)
 
-## <a name="email--phish"></a>E-mail > hameçonnage
+## <a name="email--phish"></a>Courrier électronique > hameçonnage
 
 Pour afficher ce rapport, dans l’Explorateur (ou les détections en temps réel), sélectionnez **Afficher** > le**hameçonnage****par courrier électronique** > . Cet affichage montre les messages électroniques identifiés comme des tentatives de hameçonnage.  
 
@@ -103,7 +103,7 @@ Pour appliquer un filtre, choisissez **expéditeur**, sélectionnez un élément
 
 Sous le graphique, affichez plus de détails sur des messages électroniques spécifiques, tels que la ligne d’objet, le destinataire, l’expéditeur, l’État, etc. 
 
-## <a name="content--malware"></a>Programme malveillant de contenu >
+## <a name="content--malware"></a>Contenu > programme malveillant
 
 Pour afficher ce rapport, dans l’Explorateur (ou les détections en temps réel), sélectionnez **Afficher** > **le contenu** > **malveillant**. Cet affichage montre les fichiers identifiés comme étant malveillants par [Office 365 protection avancée contre les menaces dans SharePoint Online, OneDrive entreprise et Microsoft teams](atp-for-spo-odb-and-teams.md).
 

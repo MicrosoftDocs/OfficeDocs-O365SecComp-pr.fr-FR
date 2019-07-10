@@ -2,8 +2,8 @@
 title: Rapports intelligents et aperçus dans le centre de sécurité et conformité
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
-ms.date: 7/19/2018
+manager: dansimp
+ms.date: 07/19/2018
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
 description: Obtenez une vue d’ensemble des rapports et des Insights avialable dans le &amp; Centre de sécurité conformité.
-ms.openlocfilehash: e84aebe117735e50e205e3f79124f50d9dc71d75
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: ccdfd9e8a61a4cde64522a1cd2a3f17b063f6410
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408239"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601161"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>Rapports intelligents et Insights dans le centre de sécurité &amp; conformité Office 365
 

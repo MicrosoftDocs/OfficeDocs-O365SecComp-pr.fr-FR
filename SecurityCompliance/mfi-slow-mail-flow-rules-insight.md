@@ -2,20 +2,20 @@
 title: Informations sur les règles de flux de messagerie lent
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 ms.date: 5/3/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
-description: Les administrateurs peuvent en savoir plus sur les règles de flux de messagerie lentes dans le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance Center.
-ms.openlocfilehash: 1adbae56bfcf022250b66bac2f3bfd01a7f13234
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: Les administrateurs peuvent en savoir plus sur les règles de flux de messagerie lentes du tableau de bord de flux de messagerie dans le centre de sécurité & conformité.
+ms.openlocfilehash: 4477b388df321ee774ec7916a695cbfc69fc8e87
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158586"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598070"
 ---
 # <a name="slow-mail-flow-rules-insight"></a>Informations sur les règles de flux de messagerie lent
 
@@ -29,7 +29,7 @@ Des règles inefficaces de flux de messagerie (également appelées règles de t
 
 Le centre d’analyse vous aidera à identifier et à ajuster les règles de flux de messagerie afin de réduire les délais de flux de messagerie.
 
-![Des règles de flux de messagerie lentes dans le tableau de bord de flux de messagerie dans le centre de sécurité & Compliance Center](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
+![Des règles de flux de messagerie lentes dans le tableau de bord de flux de messagerie dans le centre de sécurité & conformité](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
 
 Lorsque vous cliquez sur **afficher les détails**, un volet flyout apparaît dans lequel vous pouvez examiner la règle. Dans le volet flyout, peut également cliquer sur **afficher les exemples de messages** pour voir les types de messages concernés par la règle.
 
@@ -37,4 +37,4 @@ Lorsque vous cliquez sur **afficher les détails**, un volet flyout apparaît da
 
 ## <a name="see-also"></a>Voir aussi
 
-Pour plus d’informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security _AMP_ Compliance Center](mail-flow-insights.md).
+Pour plus d’informations sur les autres flux de messagerie dans le tableau de bord de flux de messagerie, voir [mail Flow Insights in the Security & Compliance Center](mail-flow-insights.md).

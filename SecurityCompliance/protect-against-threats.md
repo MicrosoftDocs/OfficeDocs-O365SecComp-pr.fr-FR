@@ -2,7 +2,7 @@
 title: Se protéger contre les menaces dans Office 365
 ms.author: tracyp
 author: msfttracyp
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Utilisez cet article pour configurer vos fonctionnalités de protection contre les menaces dès maintenant.
-ms.openlocfilehash: 6700e2714ea607f675b487204404d53c1d51db93
-ms.sourcegitcommit: 424a614141c1f19a1c84a67ec2d71dd3d7ef6694
+ms.openlocfilehash: 950259bb11446c3b7f27606b69a44f07ad478e79
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590577"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600520"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Se protéger contre les menaces dans Office 365
 
@@ -47,7 +47,7 @@ Les fonctionnalités de protection contre les menaces sont incluses dans tous le
 
 ### <a name="roles-and-permissions"></a>Rôles et autorisations
 
-Vous devez disposer d’un rôle approprié pour configurer les stratégies dans le [Centre de sécurité _AMP_ Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). Le tableau suivant contient des exemples: 
+Vous devez disposer d’un rôle approprié pour configurer les stratégies dans le [Centre de sécurité & conformité](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). Le tableau suivant contient des exemples: 
 
 |Rôle ou groupe de rôles  |Où en savoir plus  |
 |---------|---------|
@@ -83,7 +83,7 @@ La protection du temps de clic à partir d’URL et de fichiers malveillants est
 
 Pour configurer des [pièces jointes sûres ATP](atp-safe-attachments.md), vous devez définir au moins une stratégie de pièces jointes approuvées ATP. 
 
-1. Dans le [Centre de sécurité & Compliance Center](https://protection.office.com), choisissez protection**** > **contre les** **menaces** > pièces jointes ATP.
+1. **** > Dans le [Centre de sécurité & conformité](https://protection.office.com), sélectionnez **gestion** > des menaces-**pièces jointes ATP**.
 
 2. Sélectionnez l’option Activer la protection avancée contre **les menaces pour SharePoint, OneDrive et Microsoft teams**.
 
@@ -141,7 +141,7 @@ Pour plus d’informations, reportez-vous à la rubrique [set up Office 365 ATP 
 
 La [protection anti-hameçonnage](anti-phishing-protection.md) est disponible dans les abonnements incluant [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description). La protection avancée contre le hameçonnage est disponible dans [](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)la protection avancée contre les menaces. La procédure suivante décrit comment configurer une stratégie anti-hameçonnage ATP. Les étapes sont similaires pour la configuration d’une stratégie anti-hameçonnage (sans ATP).
 
-1. Dans le [Centre de sécurité & Compliance Center](https://protection.office.com), sélectionnez **Threat Management** > **Policy** > **protection contre le hameçonnage**.
+1. Dans le [Centre de sécurité & conformité](https://protection.office.com), sélectionnez**** > **protection contre les** **menaces** > pour le hameçonnage.
 
 2. Cliquez sur **stratégie par défaut**.
 

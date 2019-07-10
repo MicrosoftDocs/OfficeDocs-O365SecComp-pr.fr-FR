@@ -2,6 +2,7 @@
 title: Présentation des usurpations d’identité
 ms.author: tracyp
 author: MSFTTracyP
+manager: dansimp
 ms.date: 7/30/2018
 audience: ITPro
 ms.topic: overview
@@ -14,12 +15,12 @@ ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment fonctionne la nouvelle usurpation d’aide à la décision.
-ms.openlocfilehash: cdfdf90779137455e0b74cea5fe41aee7b1b26e5
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f9e9ba03f69703060a34ae3142607550b5ccee90
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156066"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598420"
 ---
 # <a name="walkthrough-spoof-intelligence-insight"></a>Procédure pas à pas: usurpation d’aide
 

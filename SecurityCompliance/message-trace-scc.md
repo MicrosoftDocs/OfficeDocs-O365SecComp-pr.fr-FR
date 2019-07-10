@@ -2,19 +2,19 @@
 title: Suivi des messages dans le centre de conformité et de sécurité
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
-description: Les administrateurs peuvent utiliser le suivi des messages dans le centre de sécurité & Compliance Center pour déterminer ce qui s’est passé aux messages.
-ms.openlocfilehash: 0db1780057172fe1a6a6c1f7a334fbbd2220df30
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: Les administrateurs peuvent utiliser le suivi des messages dans le centre de sécurité & conformité afin de déterminer ce qui s’est passé aux messages.
+ms.openlocfilehash: fb173dd09adf02c1b2eb7d0dbf9d5736483f231b
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158676"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601011"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Suivi des messages dans le centre de conformité et de sécurité
 
@@ -32,7 +32,7 @@ Le suivi des messages dans le centre de sécurité & conformité améliore le su
 
 3. Dans le volet de navigation en bas à gauche, développez **centres d’administration** et sélectionnez **sécurité & conformité**.
 
-4. Dans la page conformité du service de **sécurité &** qui s’ouvre, développez **flux de messagerie**, puis sélectionnez **suivi des messages**.
+4. Dans la page **conformité des & de sécurité** qui s’ouvre, développez flux de **messagerie**, puis sélectionnez suivi des **messages**.
 
 ## <a name="message-trace-page"></a>Page de suivi des messages
 
@@ -65,11 +65,11 @@ La valeur par défaut est **2 jours**, mais vous pouvez spécifier des plages de
 
 - Par défaut, vous sélectionnez la plage de temps dans le mode **curseur** à l’aide d’une ligne de temps. Vous pouvez uniquement sélectionner les paramètres de jour ou d’heure affichés. La tentative de sélection d’une valeur entre-entre va aligner la bulle de début/fin au paramètre affiché le plus proche.
 
-   ![Un intervalle de temps de curseur dans un nouveau suivi des messages dans le centre de sécurité & Compliance Center](media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
+   ![Un intervalle de temps de curseur dans un nouveau suivi des messages dans le centre de sécurité & conformité](media/55a9e9c1-f7d5-4047-b217-824e8b976bcb.png)
 
    Toutefois, vous pouvez également passer en mode affichage **personnalisé** où vous pouvez spécifier les valeurs de date de **début** et de **Date de fin** (y compris les heures), et vous pouvez également sélectionner le **fuseau horaire** pour la plage date/heure. Notez que le paramètre **fuseau horaire** s’applique à la fois à vos entrées de requête et à vos résultats de requête.
 
-   ![Une plage de temps personnalisée dans un nouveau suivi des messages dans le centre de sécurité & Compliance Center](media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
+   ![Une plage de temps personnalisée dans un nouveau suivi des messages dans le centre de sécurité & conformité](media/ed4c8d50-9ea5-4694-93f9-ee3ab6660b4f.png)
 
    Pendant 10 jours ou moins, les résultats sont disponibles instantanément sous la forme d’un rapport de **synthèse** . Si vous spécifiez un intervalle de temps qui est encore légèrement supérieur à 10 jours, les résultats seront retardés, car ils ne seront disponibles que sous forme de fichier CSV **** téléchargeable ( **Résumé amélioré** ou rapports étendus).
 
@@ -145,7 +145,7 @@ Les différents types de rapport renvoient différents niveaux d’informations.
 
 Après avoir exécuté le suivi des messages, les résultats sont affichés, triés par ordre décroissant de date/heure (en premier lieu).
 
-![Résultats du rapport de synthèse pour le suivi des messages dans le centre de sécurité & Compliance Center](media/0664bafe-0b03-477b-b571-0b046ac8c977.png)
+![Résultats du rapport de synthèse pour le suivi des messages dans le centre de sécurité & conformité](media/0664bafe-0b03-477b-b571-0b046ac8c977.png)
 
 Le rapport de synthèse contient les informations suivantes:
 
@@ -183,7 +183,7 @@ Dans le rapport de synthèse, vous pouvez afficher les détails relatifs à un m
 
 - Activez la case à cocher ligne, puis cliquez sur **autres options** ![plus](media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **afficher les détails du message**.
 
-   ![Détails après un double-clic sur une ligne dans le rapport de synthèse résultats du suivi des messages dans le centre de sécurité & Compliance Center](media/e50ee7cd-810a-4c06-8b58-e56ffd7028d1.png)
+   ![Détails après un double-clic sur une ligne dans le rapport de synthèse résultats du suivi des messages dans le centre de sécurité & conformité](media/e50ee7cd-810a-4c06-8b58-e56ffd7028d1.png)
 
 Les détails de suivi des messages contiennent les informations supplémentaires suivantes qui ne sont pas présentes dans le rapport récapitulatif:
 

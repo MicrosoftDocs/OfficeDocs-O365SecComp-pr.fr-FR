@@ -2,8 +2,7 @@
 title: Gérer les planifications pour plusieurs rapports dans &amp; le centre de sécurité conformité
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
-ms.date: 6/1/2018
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3384c6f1-ffc0-4120-a211-1991aca51663
 description: Découvrez comment afficher, modifier et gérer les planifications des rapports dans le centre &amp; de sécurité et de conformité.
-ms.openlocfilehash: a8f230ddf9442ba0a29d5fdaeba40bc8524405b5
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 7ea5815d058e4e8d9b0cecb5d06888e695bb526d
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077590"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598810"
 ---
 # <a name="manage-schedules-for-multiple-reports-in-the-security-amp-compliance-center"></a>Gérer les planifications pour plusieurs rapports dans &amp; le centre de sécurité conformité
 
@@ -31,7 +30,7 @@ Dans le centre &amp; de sécurité conformité, plusieurs [rapports et](reports-
   
 ![Dans le centre &amp; de sécurité conformité, choisissez \> rapports gérer les planifications](media/efa5e2f9-bf73-4f85-acea-f1ca7e2bca5e.png)
 
-1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous. Vous accédez au centre de sécurité & Compliance Center.
+1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous. Vous accédez au centre de sécurité & conformité.
 
 2. Dans le centre &amp; de sécurité conformité, accédez à **rapports** \> **gérer**les planifications.
     

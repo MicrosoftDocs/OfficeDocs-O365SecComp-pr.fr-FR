@@ -2,7 +2,7 @@
 title: Quelle est la différence entre courrier indésirable et message électronique en masse ?
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 1/7/2015
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 ms.collection:
 - M365-security-compliance
 description: Les clients askwhat parfois la différence entre le courrier indésirable et les messages électroniques en masse? L’objectif de cette rubrique est d’expliquer la différence et de fournir des informations sur les différentes options disponibles dans Exchange Online et Exchange Online Protection (EOP).
-ms.openlocfilehash: f0e80b460af2ff5b51f5380063780ee653e00b3d
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: ee684fb079b11fd345eae6e2c8f5980fcbca5cb0
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155986"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598290"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>Quelle est la différence entre courrier indésirable et message électronique en masse ?
 

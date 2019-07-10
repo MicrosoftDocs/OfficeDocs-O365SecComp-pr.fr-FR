@@ -2,8 +2,8 @@
 title: Options de filtrage avancé du courrier indésirable
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 6/26/2015
+manager: dansimp
+ms.date: 07/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
 description: Les options de filtrage avancé du courrier indésirable permettent aux administrateurs d’inspecter les différents attributs de contenu d’un message. La présence de ces attributs dans un message a pour effet d'augmenter le taux de mise en quarantaine du message (et donc la probabilité qu'il soit identifié comme courrier indésirable), ou de marquer le message comme courrier indésirable. Les options ASF ciblent certaines propriétés de message souvent rencontrées dans le courrier indésirable, telles que les balises HTML et une redirection des URL.
-ms.openlocfilehash: 84807b102967dc5d4a3812e97681a1c8fc7fa318
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0f1fb22a0500df5e9ff261bd60b0430dd4fad4d0
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152446"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598670"
 ---
 # <a name="advanced-spam-filtering-options"></a>Options de filtrage avancé du courrier indésirable
 
@@ -54,5 +54,5 @@ Le tableau suivant décrit chaque option de filtrage avancé du courrier indési
 |Enregistrement SPF : échec sévère|Lorsque cette option est activée, les messages qui échouent à la vérification SPF (ce qui signifie qu'ils ont été envoyés à partir d'une adresse IP non spécifiée dans l'enregistrement SPF) seront marqués comme courriers indésirables. L'activation de ce paramètre est recommandée pour les organisations soucieuses de ne pas recevoir de messages d'hameçonnage.    <br/> <br/> Le mode test n’est pas disponible pour cette option.  <br/> |X-CustomSpam: échec de l'enregistrement SPF  <br/> |
 |Filtrage conditionnel de l'ID de l'expéditeur : échec sévère  <br/> |Lorsque ce paramètre est activé, tout message qui échoue sévèrement à un contrôle conditionnel de l'ID de l'expéditeur est marqué comme courrier indésirable. Cette option combine un contrôle SPF avec un contrôle de l'ID de l'expéditeur afin de contribuer à la protection contre les en-têtes de message contenant de faux expéditeurs.    <br/> <br/> Le mode test n’est pas disponible pour cette option.  <br/> |X-CustomSpam: échec SPF à partir de l'enregistrement  <br/> |
 |Rétrodiffusion de rapport de non-remise  <br/> |Si vous utilisez EOP pour protéger des boîtes aux lettres locales, lorsque ce paramètre est activé, tous les messages de rapport de non-remise légitime sont remis à l'expéditeur d'origine et tous les messages de rétrodiffusion (rapport de non-remise illégitime) sont identifiés comme du courrier indésirable. Si vous n'activez pas ce paramètre, tous les rapports de non-remise passent à travers le filtrage de courrier indésirable. Dans ce cas, les messages les plus légitimes seront remis à l'expéditeur d'origine alors que certains messages de rétrodiffusion, mais pas tous, seront identifiés comme du courrier indésirable. Toutefois, les messages de rétrodiffusion qui ne sont pas identifiés comme du courrier indésirable ne sont pas transmis à l'expéditeur d'origine, car ils sont adressés à l'expéditeur falsifié.  <br/> <br/> Si vous utilisez le service pour protéger des boîtes aux lettres Exchange Online hébergées dans le nuage, vous n'avez pas besoin de configurer ce paramètre.  <br/><br/> Pour les deux scénarios (boîtes aux lettres locales et hébergées dans le Cloud), il n’est pas nécessaire non plus d’activer ce paramètre pour les messages sortants envoyés via le service, car les notifications d’échec de remise légitimes sont automatiquement détectées et remises à l’expéditeur d’origine. . >  Le mode test n'est pas disponible pour cette option.           <br/><br/>Conseil: pour plus d’informations sur les messages de rétrodiffusion et sur EOP, consultez la rubrique [rétrodiffusion messages and EOP](backscatter-messages-and-eop.md).           |X-CustomSpam: Rétrodiffusion de rapport de non-remise  <br/> |
-|Courrier en nombre|Le filtrage avancé du courrier indésirable a été supprimé et remplacé par les paramètres de seuil de courrier électronique en nombre. Consultez les rubriques [Quelle est la différence entre courrier indésirable et message électronique en masse ?](what-s-the-difference-between-junk-email-and-bulk-email.md) et [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md) pour plus d'informations et pour découvrir la procédure de configuration des paramètres.  ||
+|Courrier en nombre|Le filtrage avancé du courrier indésirable a été supprimé et remplacé par les paramètres de seuil de courrier électronique en nombre. Consultez les rubriques [Quelle est la différence entre courrier indésirable et message électronique en masse ?](what-s-the-difference-between-junk-email-and-bulk-email.md) et [Configuration de vos stratégies de filtrage du courrier indésirable](configure-your-spam-filter-policies.md) pour plus d'informations et pour découvrir la procédure de configuration des paramètres.  |X-CustomSpam: courrier en nombre | Courrier en nombre  <br/> |
 |

@@ -2,7 +2,7 @@
 title: Rechercher et identifier les courriers électroniques malveillants remis (Office 365 Threat Investigation and Response
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 03/19/2019
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment utiliser les fonctionnalités d’analyse et de réponse aux menaces pour rechercher et examiner des courriers électroniques malveillants.
-ms.openlocfilehash: febcf6704b1ba9dc23bf4e698715fb4b929b998b
-ms.sourcegitcommit: d3b2bffa8af5f19d97fe9771068c80705b890e85
+ms.openlocfilehash: d96083f0f48136b1c789fa83f9e9069d0dfccf4d
+ms.sourcegitcommit: 5abe4c11bf3c0659180c7812dd26be9689ab01ca
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "35414804"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35605449"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>Rechercher et identifier les messages électroniques malveillants qui ont été remis (Office 365 Advanced Threat Protection Plan 2)
 
@@ -78,10 +78,21 @@ Pour afficher les modifications apportées au champ d’état de remise précéd
 1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou scolaire pour Office 365. Vous accédez au centre de sécurité &amp; conformité. 
     
 2. Dans le volet de navigation de gauche, choisissez **Explorateur**de **gestion** \> des menaces.
-<!--Comment>
-![Threat Explorer with Delivery Action and Delivery Location fields.](media/ThreatExFields.PNG)
 
-    
+
+![Explorateur de menaces avec les champs d’action de remise et d’emplacement de remise.](media/ThreatExFields.PNG)
+
+Vous remarquerez peut-être la nouvelle colonne «actions spéciales» dans ce graphique. Cette fonctionnalité vise à indiquer aux administrateurs le résultat du traitement d’un message électronique. Les actions spéciales peuvent être mises à jour à la fin de la *chronologie du courrier électronique*de l’Explorateur de menaces, qui est une nouvelle fonctionnalité visant à améliorer l’expérience de la chasse des administrateurs.
+
+La chronologie par courrier électronique diminue en fonction de la randomisation, car il y a moins de temps passé à vérifier différents emplacements pour essayer de comprendre les événements qui se sont produits depuis que le courrier électronique est arrivé. Lorsque plusieurs événements se produisent à la même heure ou proches de celle-ci dans un e-mail, ces événements apparaissent dans un affichage chronologie. Certains événements qui ont lieu après la livraison de votre courrier seront capturés dans la colonne «actions spéciales». Le fait de combiner les informations de la chronologie du courrier *électronique* de ce message avec les *actions spéciales* prises lors de la livraison post-remise permettra aux administrateurs de mieux comprendre le fonctionnement de leurs stratégies, où le courrier a été finalement routé et, dans certains cas, ce qu’est le final l’évaluation était. La colonne actions spéciales est accessible au même endroit que l’action de remise et l’emplacement de remise, mais pour afficher une chronologie par courrier électronique:
+
+1. Cliquez sur l’objet du message électronique.
+2. Dans le panneau qui s’affiche, cliquez sur *chronologie du courrier électronique*. (Il apparaîtra dans les autres en-têtes, comme «résumé» ou «détails», et cetera.)
+
+Une fois que vous avez ouvert la chronologie du courrier, vous devez voir un tableau indiquant les événements de post-remise pour ce message ou, en l’absence d’autres événements pour le courrier, vous devriez voir un seul événement pour la remise d’origine qui indiquera un résultat comme *bloqué* . avec un verdict comme le *hameçonnage*. L’onglet permet également d’exporter l’intégralité de la chronologie du courrier électronique, ce qui permet d’exporter tous les détails de l’onglet et les détails de l’e-mail (par exemple, l’objet, l’expéditeur, le destinataire, le réseau et l’ID du message).
+
+
+<!--Comment>    
 3. In the View menu, choose **All email**.<br/>![Use the View menu to choose between Email and Content reports](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   
 4. Notice the labels that appear in the report, such as **Delivered**, **Unknown**, or **Delivered to junk**.<br/>![Threat Explorer showing data for all email](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>(Depending on the actions that were taken on email messages for your organization, you might see additional labels, such as **Blocked** or **Replaced**.)

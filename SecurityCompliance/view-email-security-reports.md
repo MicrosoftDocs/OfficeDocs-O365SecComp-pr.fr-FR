@@ -2,7 +2,7 @@
 title: Afficher les rapports de sécurité de messagerie &amp; dans le centre de sécurité conformité
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 05/21/2019
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation. Les rapports de sécurité de messagerie sont disponibles &amp; dans le centre de sécurité conformité.
-ms.openlocfilehash: 1dc009260e80c2aca1c5107d1c5f116ec63dd94f
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: 17a8114ec1d4af9a665c235e38461f281f4fe83f
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408409"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598550"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Afficher les rapports de sécurité de messagerie &amp; dans le centre de sécurité conformité
 
@@ -43,7 +43,7 @@ Vos rapports de sécurité de messagerie incluent les éléments suivants:
 
 (**Nouveau!**) Le **rapport** de chiffrement affiche des informations sur les messages électroniques qui ont été chiffrés, via les stratégies de votre organisation ou par le biais de contrôles utilisateur final. L’équipe de sécurité de votre organisation peut utiliser les informations contenues dans ce rapport pour identifier des modèles et appliquer ou ajuster de façon proactive des stratégies pour les messages électroniques sensibles.
 
-Pour afficher ce rapport, dans le centre de sécurité & conformité, accédez à **rapports** \> **tableau de bord de tableau de bord** \> ****.
+Pour afficher ce rapport, accédez au **rapport**de chiffrement du **tableau de bord** \> des **rapports** \> dans le centre de sécurité & conformité.
 
 ![Rapport de chiffrement](media/encryptionreport-defaultview.png) 
 

@@ -2,7 +2,7 @@
 title: Créer des listes d’expéditeurs approuvés dans Office 365
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 4/29/2019
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Si vous souhaitez être sûr de recevoir des messages d’un expéditeur particulier, étant donné que vous les approuvez et leurs messages, vous pouvez ajuster votre liste verte dans une stratégie de filtrage du courrier indésirable dans le centre d’administration Exchange.
-ms.openlocfilehash: 4526441c68d187e644a06228c5b1be820968524a
-ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
+ms.openlocfilehash: f0397ce3d26f6c539b3d7d663298c468e1155161
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "35199567"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599980"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Créer des listes d’expéditeurs approuvés dans Office 365
 
@@ -86,6 +86,8 @@ Lorsqu’il n’est pas possible d’utiliser ETR pour autoriser globalement un 
 ## <a name="use-anti-spam-policy-senderdomain-allow-lists"></a>Utilisation de la stratégie de blocage du courrier indésirable listes des expéditeurs/domaines autorisés
 
 L’option la moins intéressante consiste à autoriser l’expéditeur/domaine. Cette option doit être évitée si cela est *possible* car elle contourne totalement le courrier indésirable/frauduleux/frauduleux et n’évalue pas l’authentification de l’expéditeur. Cette méthode augmente le risque de recevoir des messages à partir d’acteurs incorrects et est recommandé temporairement et uniquement lors des tests. Les étapes détaillées sont disponibles dans la documentation [configurer vos stratégies de filtrage du courrier](https://docs.microsoft.com/en-us/office365/securitycompliance/configure-your-spam-filter-policies) indésirable.
+
+La limite maximale de ces listes est d’environ 1000 entrées.
 
 > [!CAUTION]
 > La configuration des stratégies de blocage du courrier indésirable pour autoriser le domaine de l' *expéditeur/* de l’autorisation entraînera l’ignorance du filtrage du courrier indésirable pour un des messages provenant d’expéditeurs figurant dans la liste verte, ou b) de tous les expéditeurs d’un domaine autorisé. Cette méthode augmente considérablement le risque que les spammeurs usurpent le domaine d’envoi (ou empruntent l’identité de l’adresse de messagerie complète), ce qui ignore le filtrage du courrier indésirable, les vérifications d’authentification de l’expéditeur et envoie le message directement dans la boîte de réception d’une personne.

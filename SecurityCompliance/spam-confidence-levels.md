@@ -2,8 +2,8 @@
 title: Seuils de probabilité de courrier indésirable
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 10/2/2017
+manager: dansimp
+ms.date: 10/02/2017
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
 - M365-security-compliance
 description: Un message électronique qui passe à travers le filtrage anti-spam reçoit un score de mise en quarantaine. Ce score est mappé à une valeur de seuil de probabilité de courrier indésirable (SCL) individuelle et marqué dans un en-tête X. Le service entreprend des actions sur les messages en fonction de l'interprétation de la probabilité de courrier indésirable de la valeur SCL. Le tableau suivant indique comment sont interprétées les différentes valeurs SCL par les filtres ainsi que l'action par défaut entreprise sur les messages entrants pour chaque valeur.
-ms.openlocfilehash: 4eba1dc6fa1bbadcfd135a7bf43e7353755df6c4
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: beb322341f4d0de25d7bac9681c0beed93c48e5f
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158266"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600874"
 ---
 # <a name="spam-confidence-levels"></a>Seuils de probabilité de courrier indésirable
 

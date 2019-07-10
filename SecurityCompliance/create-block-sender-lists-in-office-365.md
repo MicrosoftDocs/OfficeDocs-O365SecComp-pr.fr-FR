@@ -2,7 +2,7 @@
 title: Créer des listes d’expéditeurs bloqués dans Office 365
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 5/6/2019
 audience: ITPro
 ms.topic: article
@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Les options de liste d’expéditeurs de blocs incluent les expéditeurs bloqués Outlook, les listes rouges d’expéditeurs de domaine, les listes d’adresses IP bloquées et les règles de transport Exchange (ETR), également appelées règles de flux de messagerie.
-ms.openlocfilehash: 9933cb79b7dce949384815a7b2ed8a9ac8a7824b
-ms.sourcegitcommit: f96029928a6cdd141783026d57bc2179d7963af6
+ms.openlocfilehash: 861fa0e47980a6bc295672cf1e8e35954c6f1dfb
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017686"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599990"
 ---
 # <a name="create-block-sender-lists-in-office-365"></a>Créer des listes d’expéditeurs bloqués dans Office 365
 
@@ -48,6 +48,8 @@ Les étapes à suivre pour la configuration diffèrent entre [Outlook Web App](h
 ## <a name="use-anti-spam-policy-senderdomain-block-lists"></a>Utiliser les listes rouge de l’expéditeur/du domaine du courrier indésirable
 
 Lorsque plusieurs utilisateurs sont affectés, l’étendue est plus large et vous devez utiliser une stratégie de blocage du courrier indésirable des expéditeurs et des domaines dans l’ensemble de l’entreprise. Les étapes détaillées sont disponibles dans la documentation [configurer vos stratégies de filtrage du courrier](https://docs.microsoft.com/en-us/office365/securitycompliance/configure-your-spam-filter-policies) indésirable. Tous les messages bloqués via cette méthode suivent l’action de courrier indésirable, comme configuré dans la stratégie.
+
+La limite maximale de ces listes est d’environ 1000 entrées.
 
 ## <a name="use-exchange-transport-rules-etrs-to-block-specific-senders"></a>Utiliser les règles de transport Exchange (ETR) pour bloquer des expéditeurs spécifiques
 

@@ -2,8 +2,8 @@
 title: Complément de création de rapports de courrier indésirable pour Microsoft Outlook
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 1/14/2016
+manager: dansimp
+ms.date: 01/14/2016
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +12,12 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: "Le complément de création de rapports de courrier indésirable pour Microsoft Outlook permet aux utilisateurs d'Exchange Online et Exchange Online Protection de signaler facilement le courrier électronique indésirable (spam) à Microsoft afin de procéder à une analyse visant à réduire le nombre et l'impact des futurs messages électroniques indésirables filtrés par le service. Compatible avec Microsoft Outlook 2013, Outlook 2010 ou Outlook 2007 avec Windows 7, Windows 8 ou Windows 10, le complément de création de rapports offre les avantages suivants :"
-ms.openlocfilehash: 2304aa96d90629b95348ad59e8a6b45ad5ab1eae
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f92f4308b14d8512eeef534124e4d5dde518c603
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152546"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598940"
 ---
 # <a name="junk-email-reporting-add-in-for-microsoft-outlook"></a>Complément de création de rapports de courrier indésirable pour Microsoft Outlook
 
