@@ -537,11 +537,11 @@
 ### [Nouveautés du Gestionnaire de conformité (préversion)](compliance-manager-release-notes.md)
 ### [Utilisation du Gestionnaire de conformité (préversion)](working-with-compliance-manager.md)
 ### [Méthodologie score de conformité (préversion)](compliance-score-methodology.md)
-## [Obstacles aux informations (préversion)](information-barriers.md)
-### [Définir des stratégies d’obstacle aux informations (préversion)](information-barriers-policies.md)
-### [Attributs pour les stratégies d’obstacle aux informations (préversion)](information-barriers-attributes.md)
-### [Résolution des problèmes d’obstacles aux informations (préversion)](information-barriers-troubleshooting.md)
-### [Modifier les stratégies d’obstacle aux informations (préversion)](information-barriers-edit-segments-policies.md.md)
+## [Obstacles aux informations](information-barriers.md)
+### [Définir des stratégies d’obstacle aux informations](information-barriers-policies.md)
+### [Attributs pour les stratégies d’obstacle aux informations](information-barriers-attributes.md)
+### [Résolution des problèmes d’obstacles aux informations](information-barriers-troubleshooting.md)
+### [Modifier les stratégies d’obstacle aux informations](information-barriers-edit-segments-policies.md.md)
 
 
 ## Clé client
