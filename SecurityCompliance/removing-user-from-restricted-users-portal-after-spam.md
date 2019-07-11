@@ -3,7 +3,7 @@ title: Suppression d’un utilisateur du portail Utilisateurs restreints après 
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 03/12/2019
+ms.date: 07/10/2019
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: Si un utilisateur envoie continuellement des courriers électroniques à partir d’Office 365 classés comme courrier indésirable, il ne pourra pas envoyer d’autres messages.
-ms.openlocfilehash: 80eb03ccb96f2178f168139234de8700b9b97e29
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 40d63bb452392041401fd1af6d0d6d4af67e5d2b
+ms.sourcegitcommit: 986f40a00ab454093b21e724d58594b8b8b4a9ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35601151"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35613652"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Suppression d’un utilisateur du portail Utilisateurs restreints après l’envoi d’un courrier indésirable
 
@@ -71,6 +71,11 @@ Vous serez en mesure de modifier l’alerte de la façon suivante:
 - Activer/désactiver les notifications par courrier électronique
 - Envoyer un message électronique aux destinataires requis
 - Limiter les notifications que vous recevez par jour
+
+## <a name="checking-for-and-removing-restrictions-using-powershell"></a>Vérification et suppression des restrictions à l’aide de PowerShell
+Les commandes PowerShell pour les utilisateurs avec accès restreint sont les suivantes:
+- `Get-BlockedSenderAddress`: Exécuter pour extraire la liste des utilisateurs qui ne sont pas autorisés à envoyer des courriers électroniques
+- `Remove-BlockedSenderAddress`: Exécuter pour supprimer les utilisateurs dont l’accès est restreint
 
 ## <a name="for-more-information"></a>Pour plus d’informations
 

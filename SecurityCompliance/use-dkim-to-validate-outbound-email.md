@@ -13,12 +13,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 'Résumé : Cet article décrit comment utiliser DKIM (DomainKeys Identified Mail) avec Office 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.'
-ms.openlocfilehash: e29a6e5d92c169c29e7562d9fb563e9ddc6c5d03
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 25427060140caee242944d56b24eaab362c2f36a
+ms.sourcegitcommit: 986f40a00ab454093b21e724d58594b8b8b4a9ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600420"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35613682"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé dans Office 365
 
@@ -234,7 +234,7 @@ La désactivation de la stratégie de signature ne désactive pas complètement 
 ## <a name="default-behavior-for-dkim-and-office-365"></a>Comportement par défaut pour DKIM et Office 365
 <a name="DefaultDKIMbehavior"> </a>
 
-Si vous n'activez pas DKIM, Office 365 crée automatiquement une clé publique DKIM 1 024 bits pour votre domaine personnalisé et une clé privée associée que nous stockons en interne dans notre centre de données. Par défaut, Office 365 utilise une configuration de signature par défaut pour les domaines ne disposant d'aucune stratégie définie. Cela signifie que si vous ne configurez pas DKIM vous-même, Office 365 utilise sa stratégie par défaut et les clés qu'il crée pour activer DKIM sur votre domaine.
+Si vous n’activez pas DKIM, Office 365 crée automatiquement une clé publique DKIM 1024 bits pour votre domaine par défaut et la clé privée associée que nous stockons en interne dans notre centre de centre de tâches. Par défaut, Office 365 utilise une configuration de signature par défaut pour les domaines ne disposant d'aucune stratégie définie. Cela signifie que si vous ne configurez pas DKIM vous-même, Office 365 utilise sa stratégie par défaut et les clés qu'il crée pour activer DKIM sur votre domaine.
   
 En outre, si vous désactivez la signature DKIM, après un certain temps, Office 365 applique automatiquement sa stratégie par défaut pour votre domaine.
   

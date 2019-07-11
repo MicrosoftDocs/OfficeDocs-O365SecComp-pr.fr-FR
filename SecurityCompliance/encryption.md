@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Avec Office 365, votre contenu est chiffré au repos et en transit, en utilisant le chiffrement, les protocoles et les technologies les plus puissants disponibles. Obtenez une vue d’ensemble du chiffrement dans Office 365.
-ms.openlocfilehash: 3cd72b3caf26c18ca6836490bc3cd48c2977863b
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 4e41528aed3461cc15fef1bc2ab970d1823129fb
+ms.sourcegitcommit: 986f40a00ab454093b21e724d58594b8b8b4a9ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154716"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35613642"
 ---
 # <a name="encryption-in-office-365"></a>Chiffrement dans Office 365
 
@@ -77,6 +77,6 @@ Pour en savoir plus, consultez les ressources suivantes:
 
 ## <a name="related-topics"></a>Sujets associés
 
-[Planifier les fonctionnalités de protection des informations et de sécurité d’Office 365](https://support.office.com/article/3d4ac4a1-3920-4ff9-918f-011f3ce60408)
+[Planifier les fonctionnalités de protection des informations et de sécurité d’Office 365](plan-for-security-and-compliance.md)
   
-[Sécurité et conformité dans Office 365 pour les entreprises-aide de l’administrateur](https://support.office.com/article/7fe448f7-49bd-4d3e-919d-0a6d1cf675bb)
+[Sécuriser votre petite entreprise](https://docs.microsoft.com/en-us/Office365/Admin/security-and-compliance/secure-your-business-data)
