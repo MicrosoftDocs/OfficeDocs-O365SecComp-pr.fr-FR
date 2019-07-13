@@ -3,7 +3,7 @@ title: Vue d’ensemble de la protection contre la perte de données
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/03/2019
+ms.date: 07/12/2019
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -15,17 +15,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: Avec une stratégie de protection contre la perte de données (DLP &amp; ) dans le centre de sécurité conformité, vous pouvez identifier, surveiller et protéger automatiquement les informations sensibles dans Office 365.
-ms.openlocfilehash: 0199d43a7232b41dbbf1a5c67ab77ebe69d47a84
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 2f20b3e3ec7ec3178156ca76c82ec323022f1979
+ms.sourcegitcommit: ea630cf1cbaa98ede5ee320c71a0fad7d7def6fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077850"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35672923"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Vue d’ensemble de la protection contre la perte de données
 
 > [!NOTE]
-> Les fonctionnalités de protection contre la perte de données ont récemment été ajoutées à Microsoft teams dans Office 365 E5 et Office 365 Advanced Compliance. Pour en savoir plus sur la disponibilité des fonctionnalités, voir [Description des services office 365 365: Centre de sécurité & conformité](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+> Les fonctionnalités de protection contre la perte de données ont récemment été ajoutées à la conversation de Microsoft teams et aux messages de canal pour les utilisateurs titulaires d’une licence pour pour Office 365 Advanced Compliance, qui est disponible en tant qu’option autonome et est inclus dans Office 365 E5 et Microsoft 365 E5 conformité. Pour en savoir plus sur les conditions requises en matière de licences, consultez [les conseils Microsoft 365 client-Level services Licensing](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
 Pour se conformer aux normes et aux réglementations sectorielles, les organisations doivent protéger les informations sensibles et empêcher toute divulgation involontaire. Les informations sensibles peuvent inclure des données financières ou des informations d’identification personnelle, telles que des numéros de carte de crédit, des numéros de sécurité sociale ou des enregistrements d’intégrité. Avec une stratégie de protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité Office 365, vous pouvez identifier, surveiller et protéger automatiquement les informations sensibles dans Office 365.
   
@@ -59,7 +59,7 @@ Vous créez et gérez des stratégies DLP sur la page protection contre la perte
 
 Une stratégie DLP contient quelques éléments de base :
   
-- Emplacement de protection du contenu: des **emplacements** comme Exchange Online, SharePoint Online et OneDrive entreprise, ainsi que des conversations et canaux Microsoft Teams. 
+- Emplacement de protection du contenu: **emplacements** comme Exchange Online, SharePoint Online et OneDrive entreprise, ainsi que les messages de conversation et de canal de Microsoft Teams. 
     
 - Circonstances de protection du contenu en appliquant des **règles** comprenant les éléments suivants : 
     
@@ -75,7 +75,7 @@ Par exemple, vous pouvez disposer d’une stratégie DLP qui vous permet de dét
   
 ### <a name="locations"></a>Emplacements
 
-Une stratégie DLP peut trouver et protéger des informations sensibles dans Office 365, que ces informations se trouvent dans Exchange Online, SharePoint Online, OneDrive entreprise ou Microsoft Teams. Vous pouvez choisir de protéger le contenu dans les courriers électroniques Exchange, les conversations et les canaux de Microsoft Teams, ainsi que toutes les bibliothèques SharePoint ou OneDrive, ou sélectionner des emplacements spécifiques pour une stratégie.
+Une stratégie DLP peut trouver et protéger des informations sensibles dans Office 365, que ces informations se trouvent dans Exchange Online, SharePoint Online, OneDrive entreprise ou Microsoft Teams. Vous pouvez choisir de protéger le contenu dans les courriers électroniques Exchange, les conversations de Microsoft teams et les messages de canal, ainsi que toutes les bibliothèques SharePoint ou OneDrive, ou sélectionner des emplacements spécifiques pour une stratégie.
   
 ![Options pour les emplacements dans lesquels une stratégie DLP peut être appliquée](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
@@ -447,7 +447,7 @@ Une fois que vous avez créé une stratégie DLP &amp; dans le centre de sécuri
     
 - Programmes de bureau Office (Excel, PowerPoint et Word)
 
-- Canaux et conversations Microsoft Teams
+- Canaux Microsoft teams et messages de conversation
     
 Une fois que la stratégie a été synchronisée aux emplacements corrects, elle commence à évaluer le contenu et à appliquer les actions.
   
@@ -481,7 +481,7 @@ L’évaluation de la stratégie DLP dans Office est conçue pour ne pas affecte
 
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Évaluation de stratégie dans Microsoft teams
  
-Lorsque vous créez une stratégie DLP qui inclut Microsoft teams en tant qu’emplacement, la stratégie est synchronisée à partir du &amp; Centre de sécurité conformité Office 365 avec les comptes d’utilisateur et les canaux et conversations de Microsoft Teams. En fonction de la configuration des stratégies DLP, lorsque quelqu’un tente de partager des informations sensibles dans une conversation ou un canal Microsoft Teams, le message peut être bloqué ou révoqué. Les documents qui contiennent des informations sensibles et qui sont partagés avec des invités (utilisateurs externes) ne s’ouvrent pas pour ces utilisateurs. Pour en savoir plus, consultez la rubrique [protection contre la perte de données et Microsoft teams](dlp-microsoft-teams.md).
+Lorsque vous créez une stratégie DLP qui inclut Microsoft teams en tant qu’emplacement, la stratégie est synchronisée à partir du &amp; Centre de sécurité conformité Office 365 avec les comptes d’utilisateur et les canaux Microsoft teams et les messages de conversation. En fonction de la configuration des stratégies DLP, lorsqu’une personne tente de partager des informations sensibles dans un message de conversation ou de canal Microsoft Teams, le message peut être bloqué ou révoqué. Les documents qui contiennent des informations sensibles et qui sont partagés avec des invités (utilisateurs externes) ne s’ouvrent pas pour ces utilisateurs. Pour en savoir plus, consultez la rubrique [protection contre la perte de données et Microsoft teams](dlp-microsoft-teams.md).
  
 ## <a name="permissions"></a>Autorisations
 
