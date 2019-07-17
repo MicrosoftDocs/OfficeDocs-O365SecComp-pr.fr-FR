@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: Découvrez comment utiliser la gestion des droits relatifs à l’information (IRM) de SharePoint Online via Microsoft Azure Active Directory Rights Management Services (RMS) pour protéger les listes et les bibliothèques de documents SharePoint.
-ms.openlocfilehash: 0df2639a12472ab6452afb7d9b66bc48beb9ba1f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 16a76ecda37bd5480285dd70670843a88198bdb7
+ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156556"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35756846"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
@@ -38,7 +38,7 @@ Après avoir activé le service RMS, connectez-vous au centre d’administration
     
 3. Dans le volet de gauche, choisissez **centres** \> d’administration **SharePoint**.
     
-4. Dans le volet de gauche, sélectionnez **paramètres**.
+4. Dans le volet gauche, choisissez **paramètres**, puis **page paramètres classiques**.
     
 5. Dans la section gestion des droits relatifs à l' **information (IRM)** , sélectionnez **utiliser le service IRM spécifié dans votre configuration**, puis actualiser les **paramètres IRM**. Une fois que vous avez actualisé les paramètres IRM, les personnes de votre organisation peuvent commencer à utiliser la gestion des droits relatifs à l’information dans leurs bibliothèques de documents et listes SharePoint. Toutefois, les options permettant d’effectuer cette opération peuvent prendre jusqu’à une heure pour apparaître dans les paramètres de la bibliothèque et les paramètres de la liste.
     
