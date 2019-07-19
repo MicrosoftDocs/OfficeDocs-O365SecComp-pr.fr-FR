@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 62f0dc9e32e89954b2838b70757d3a7c17d79cc4
-ms.sourcegitcommit: 6302a43d947a908dd10a8e40550b806f491692fc
+ms.openlocfilehash: f88bdcfc4ac7ed31ec44a7d18bd74cc2a1842bc5
+ms.sourcegitcommit: 2560a3ecc6a5e3b8b79bbf56a157b66c7553682e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2019
-ms.locfileid: "35672963"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35795576"
 ---
 # <a name="review-conversations-in-advanced-ediscovery"></a>Examiner les conversations dans Advanced eDiscovery 
 
@@ -85,7 +85,7 @@ Pour activer la récupération de conversation:
   
 2. Sélectionnez un ensemble de révision existant ou créez un jeu de révision. Vous pouvez configurer les options de récupération lors de l’ajout de résultats de recherche à un jeu de révision de conversation ou standard.
   
-3. Configurez les options de récupération de conversation pour les sources de contenu que vous souhaitez développer dans votre recherche, puis cliquez sur **Ajouter** pour démarrer le processus.  
+3. Sous **options de collection**, configurez les options de récupération de conversation pour les sources de contenu que vous souhaitez développer dans votre recherche, puis cliquez sur **Ajouter** pour démarrer le processus.  
   
 4. Une fois que le travail **Ajouter au jeu de révision** sous l’onglet **travaux** a terminé, vous pouvez commencer à examiner les conversations.
 
@@ -97,9 +97,15 @@ Une fois que le contenu a été traité et ajouté à l’ensemble de vérificat
 
 Dans un ensemble de révision standard, les messages sont traités et affichés en tant qu’éléments individuels, de la même manière qu’ils sont stockés dans un dossier de boîte aux lettres. Dans ce flux de travail, chaque message est traité comme un élément distinct. Par conséquent, le résumé lié et les options d’exportation ne sont pas disponibles dans un jeu de révision standard. 
 
+  ![Ensemble de révision standard](../media/standardrs.PNG)
+
 ### <a name="reviewing-conversations-in-a-conversation-review-set"></a>Examen des conversations dans un jeu de révision de conversation
 
-Dans un ensemble de révision de conversation, les messages individuels sont regroupés et présentés sous forme de conversations. Cela vous permet de passer en revue et d’exporter des conversations contextuelles. Les sections suivantes décrivent la révision et l’exportation de conversations dans un jeu de révision de conversation.
+Dans un ensemble de révision de conversation, les messages individuels sont regroupés et présentés sous forme de conversations. Cela vous permet de passer en revue et d’exporter des conversations contextuelles. 
+
+  ![Ensemble de révision de conversation](../media/ConversationRSOptions.PNG)
+
+Les sections suivantes décrivent la révision et l’exportation de conversations dans un jeu de révision de conversation.
 
 #### <a name="reviewing-conversations"></a>Examen des conversations
 
@@ -117,9 +123,9 @@ Dans un ensemble de révision de conversation, vous pouvez utiliser les options 
 
 - **Annoter:** Vous permet de baliser une vue thématique de la conversation. Tous les messages de la conversation partagent le même document annoté.
 
-- **Balise:** Lors de l’affichage des conversations dans un jeu de vérification, vous pouvez afficher et appliquer des balises en cliquant sur le **panneau codage**.
+- **Balisage:** Lors de l’affichage des conversations dans un jeu de vérification, vous pouvez afficher et appliquer des balises en cliquant sur **panneau de marquage** dans le panneau codage.
 
-- **Réexécuter la conversion de conversation:** Lorsque des messages sont ajoutés à un jeu de révision de conversation, une tâche de conversion est automatiquement exécutée pour créer le résumé lié aux threads et annoter les vues. Si la tâche de reconstruction de conversation échoue, vous pouvez réexécuter le travail de conversion en cliquant sur **Action > créer un fichier PDF de conversation** dans l’ensemble de révision.
+- **Réexécuter la conversion de conversation:** Lorsque des messages sont ajoutés à un jeu de révision de conversation, une tâche de conversion est automatiquement exécutée pour créer le résumé lié aux threads et annoter les vues. Si le travail de reconstruction des conversations échoue, vous pouvez réexécuter ce travail en cliquant sur **Action > créer un fichier PDF de conversation** dans l’ensemble de révision.
 
 
 #### <a name="exporting-conversations"></a>Exportation de conversations
