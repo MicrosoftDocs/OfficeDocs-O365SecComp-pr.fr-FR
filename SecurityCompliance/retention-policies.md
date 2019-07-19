@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à seulement quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou seulement au contenu remplissant certaines conditions.
-ms.openlocfilehash: 87abb5bde49204a465e820afd522d6757a10e97c
-ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
+ms.openlocfilehash: e4690c9c68bd2ead17daa2f717dd751e14338131
+ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35587113"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "35772171"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -62,7 +62,7 @@ Concernant les collections de site SharePoint, une copie du contenu d’origine 
   
 Remarques :
   
-- Le contenu Skype est stocké dans Exchange, où la stratégie est appliquée en fonction du type de message (e-mail ou conversation).
+- Le contenu de Teams (conversation) est stocké dans Exchange, où la stratégie est appliquée en fonction du type de message (e-mail ou conversation).
     
 - Une stratégie de rétention appliquée à un groupe Office 365 inclut la boîte aux lettres de groupe et le site.
     

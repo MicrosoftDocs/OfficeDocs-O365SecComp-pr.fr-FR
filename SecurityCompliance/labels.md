@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dans Office 365, les étiquettes de rétention vous aident à entreprendre les bonnes actions sur le contenu approprié. Grâce aux étiquettes de rétention, vous pouvez classer les données au sein de votre organisation à des fins de gouvernance, et appliquer des règles de rétention basées sur cette classification. Vous pouvez également utiliser des étiquettes de rétention pour implémenter la gestion des enregistrements dans Office 365.
-ms.openlocfilehash: 9f9f1ead57d7082e227e229f2204e5af627a7b9c
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+ms.openlocfilehash: b3637470e0de1413589fc8e1ba35dc48e6823c4b
+ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547979"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "35772161"
 ---
 # <a name="overview-of-retention-labels"></a>Vue d’ensemble des étiquettes de rétention
 
@@ -72,9 +72,10 @@ Les étiquettes de rétention sont des blocs de construction indépendants et r�
   
 ![Diagramme des étiquettes, des stratégies d’étiquette et des emplacements](media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
-1. Lorsque vous publiez des étiquettes, celles-ci sont incluses dans une stratégie d’étiquette. 
+1. Lorsque vous publiez des étiquettes, celles-ci sont incluses dans une stratégie d’étiquette. Veuillez noter que les noms d’étiquettes de conservation sont définitifs et ne peuvent plus être modifiés une fois créés.
 
-2. Une seule étiquette de rétention peut être incluse dans de nombreuses stratégies d’étiquette de rétention.
+
+2. Une étiquette de conservation peut être incluse dans plusieurs nombreuses stratégies d’étiquette de rétention.
 
 3. Un seul emplacement peut être inclus dans de nombreuses stratégies d’étiquette de rétention.    
     
