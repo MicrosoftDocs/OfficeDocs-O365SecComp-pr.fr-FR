@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Utilisez le centre de sécurité & conformité pour rechercher le journal d’audit unifié afin d’afficher l’activité des utilisateurs et des administrateurs dans votre organisation Office 365. '
-ms.openlocfilehash: 62fdd26ec4da38610324347e189878f2fb4ad584
-ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
+ms.openlocfilehash: f2ac7e39f4bb94b516ff64323179e8107a179906
+ms.sourcegitcommit: eda5fdbefdd1d9188375f83868c07bc075841c41
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35756876"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820497"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Rechercher dans le journal d’audit dans le centre de sécurité & conformité
 
@@ -329,6 +329,7 @@ Le tableau suivant décrit les activités de fichier et de page dans SharePoint 
 |Fichier modifié  <br/> |FileModified  <br/> |Le compte d’utilisateur ou système modifie le contenu ou les propriétés d’un document sur un site.  <br/> |
 |(aucun)  <br/> |FileModifiedExtended  <br/> |Cela est lié à l’activité «fichier modifié» (FileModified). Un événement FileModifiedExtended est enregistré lorsque la même personne modifie continuellement un fichier pendant une période prolongée (jusqu’à 3 heures). L’objectif de la journalisation des événements FileModifiedExtended est de réduire le nombre d’événements FileModified enregistrés quand un fichier est continuellement modifié. Cela permet de réduire le bruit de plusieurs enregistrements FileModified pour ce qui est essentiellement la même activité utilisateur et vous permet de vous concentrer sur l’événement initial (et plus important) FileModified.  <br/> |
 |Fichier déplacé  <br/> |FileMoved  <br/> |Un utilisateur déplace un document de son emplacement actuel sur un site vers un nouvel emplacement.  <br/> |
+|(aucun)  <br/> |FilePreviewed  <br/> |L’utilisateur affiche un aperçu des fichiers sur un site SharePoint ou OneDrive entreprise. Ces événements se produisent généralement dans des volumes élevés sur la base d’une activité unique, telle que l’affichage d’une galerie d’images.  <br/> |
 |Recyclage de toutes les versions mineures du fichier  <br/> |FileVersionsAllMinorsRecycled  <br/> |L’utilisateur supprime toutes les versions secondaires de l’historique des versions d’un fichier. Les versions supprimées sont déplacées vers la corbeille du site.  <br/> |
 |Recyclage de toutes les versions du fichier  <br/> |FileVersionsAllRecycled  <br/> |Un utilisateur supprime toutes les versions de l’historique des versions d’un fichier. Les versions supprimées sont déplacées vers la corbeille du site.  <br/> |
 |Version recyclée du fichier  <br/> |FileVersionRecycled  <br/> |Un utilisateur supprime une version de l’historique des versions d’un fichier. La version supprimée est déplacée vers la corbeille du site.  <br/> |

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilisez l’outil de recherche de contenu dans le centre de sécurité & conformité pour rechercher et exporter des données de conversation MicrosoftTeams (appelées conversations 1xN) pour les utilisateurs locaux dans un déploiement hybride Exchange.
-ms.openlocfilehash: 4bc63c4a908aba61b0f289d347d1434222ec2ed8
-ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
+ms.openlocfilehash: 38aff6116bd3cd8e4ba9f0f46d6fd81f790803f3
+ms.sourcegitcommit: eda5fdbefdd1d9188375f83868c07bc075841c41
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35756856"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820487"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Recherche de boîtes aux lettres en nuage pour les utilisateurs locaux dans Office 365
 
@@ -163,6 +163,6 @@ Non.
   
 Microsoft a commencé à stocker les données de conversation de teams pour les utilisateurs locaux le 31 janvier 2018. Par conséquent, si l’identité d’un utilisateur de teams sur site a été synchronisée entre Active Directory et Azure Active Directory depuis cette date, les données de conversation de teams sont stockées dans une boîte aux lettres en nuage et sont consultables à l’aide de la recherche de contenu. Microsoft travaille également sur le stockage des données de conversation teams depuis le 31 janvier 2018 dans les boîtes aux lettres en nuage pour les utilisateurs locaux. Pour plus d’informations, reportez-vous bientôt.
 
- * * Les utilisateurs locaux ont-ils besoin d’une licence pour stocker les données de conversation des équipes dans une boîte aux lettres en nuage? 
+ **Les utilisateurs locaux ont-ils besoin d’une licence pour stocker les données de conversation des équipes dans une boîte aux lettres en nuage?**
   
 Oui. Pour stocker les données de conversation des équipes pour un utilisateur local dans une boîte aux lettres en nuage, une licence Microsoft teams et une licence Exchange Online plan doivent être attribuées à l’utilisateur dans Office 365 (ou Microsoft 365).
