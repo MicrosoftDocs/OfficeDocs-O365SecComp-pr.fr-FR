@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à seulement quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou seulement au contenu remplissant certaines conditions.
-ms.openlocfilehash: e4690c9c68bd2ead17daa2f717dd751e14338131
-ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
+ms.openlocfilehash: ca68d2ecb7757435b8af6b63505b5acb2688daf6
+ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "35772171"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840900"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -78,7 +78,7 @@ Le précédent s’applique au contenu qui existe lorsque la stratégie de réte
   
 Notez qu’un utilisateur reçoit un message d’erreur si un autre utilisateur tente de supprimer une bibliothèque, une liste, un dossier ou un site soumis à une stratégie de rétention. Un utilisateur peut supprimer un dossier si tout d’abord ils déplacent ou suppriment les fichiers dans le dossier qui sont soumis à la stratégie. Notez également que la bibliothèque de conservation est créée uniquement lorsque le premier élément doit être copié dans la bibliothèque-pas lorsque vous créez la stratégie de rétention. Par conséquent, pour tester votre stratégie, vous devez d’abord modifier ou supprimer un document dans un site soumis à la stratégie, puis accédez à la bibliothèque de conservation pour afficher la copie conservée.
   
-![Diagramme de cycle de vie de contenu dans SharePoint et OneDrive](Retention_Diagram_of_retention_flow_in_sites.png)
+![Diagramme de cycle de vie de contenu dans SharePoint et OneDrive](media/Retention_Diagram_of_retention_flow_in_sites.png)
   
 Lorsqu’une stratégie de rétention est affectée à un compte OneDrive ou à un site SharePoint, le contenu suit l’un des deux chemins suivants :
   
