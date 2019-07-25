@@ -7,7 +7,7 @@ ms.date: 03/28/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - MET150
 - MOE150
@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection inclut des pièces jointes sûres, des liens fiables, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités d’aide à la décision.
-ms.openlocfilehash: 0793036f10444064f5f049a6a6ea7254de179967
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 96e79a8aabe0788388473da9fcd514b9285e1c00
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600961"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854778"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365-Protection avancée contre les menaces
 
@@ -53,7 +53,7 @@ Les stratégies définies pour votre organisation déterminent le comportement e
 
 - [Pièces jointes sécurisées](atp-safe-attachments.md)pour la protection avancée contre les menaces: permet de protéger votre système de messagerie en vérifiant les pièces jointes de courrier électronique. Il achemine tous les messages et les pièces jointes qui n’ont pas de signature de virus/programme malveillant dans un environnement spécial, puis utilise des techniques d’analyse et d’analyse de machine pour détecter les intentions malveillantes. Si aucune activité suspecte n’est trouvée, le message est transféré vers la boîte aux lettres. Pour en savoir plus, consultez la rubrique [configurer des stratégies de pièces jointes approuvées pour Office 365 ATP](set-up-atp-safe-attachments-policies.md).
 
-- [Liens fiables ATP](atp-safe-links.md): permet de vérifier les URL dans les messages électroniques et les fichiers Office avec un temps de clic. La protection est continue et s’applique à votre environnement de messagerie et de bureau. Les liens sont analysés pour chaque clic: les liens fiables restent accessibles et les liens malveillants sont bloqués de manière dynamique. Pour plus d’informations, reportez-vous à la rubrique [set up Office 365 ATP Safe Links Policies](https://docs.microsoft.com/en-us/office365/securitycompliance/set-up-atp-safe-links-policies). 
+- [ATP Safe Links](atp-safe-links.md): permet de vérifier les URL de temps à autre, par exemple dans les messages électroniques et les fichiers Office. La protection est continue et s’applique à votre environnement de messagerie et de bureau. Les liens sont analysés pour chaque clic: les liens fiables restent accessibles et les liens malveillants sont bloqués de manière dynamique. Pour plus d’informations, reportez-vous à la rubrique [set up Office 365 ATP Safe Links Policies](https://docs.microsoft.com/en-us/office365/securitycompliance/set-up-atp-safe-links-policies). 
 
 - [ATP pour SharePoint, OneDrive et Microsoft teams](atp-for-spo-odb-and-teams.md): protège votre organisation quand les utilisateurs collaborent et partagent des fichiers en identifiant et en bloquant les fichiers malveillants dans les sites d’équipe et les bibliothèques de documents. Pour plus d’informations, reportez-vous à [activer l’ATP Office 365 pour SharePoint, OneDrive et Microsoft teams](turn-on-atp-for-spo-odb-and-teams.md). 
 

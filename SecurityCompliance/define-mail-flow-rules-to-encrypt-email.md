@@ -13,13 +13,13 @@ search.appverid:
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
-description: Les administrateurs peuvent apprendre à créer des règles de flux de messagerie (règles de transport) pour chiffrer et déchiffrer les messages à l’aide du chiffrement de messages Office 365.
-ms.openlocfilehash: 624219c3d974c0a9ab8004bb7b606264c5d0f8ee
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: Les administrateurs peuvent apprendre à créer des règles de flux de messagerie (règles de transport) pour chiffrer et déchiffrer des messages à l’aide du chiffrement de messages Office 365.
+ms.openlocfilehash: 75b8e3c977a2708eb1edb8e2b94f555aa54045ca
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150646"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854688"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Définir des règles de flux de courrier pour le chiffrement du courriers dans Office 365
 
@@ -47,7 +47,7 @@ Vous pouvez définir des règles de flux de messagerie pour déclencher le chiff
 
 2. Sélectionnez la vignette **admin** .
 
-3. Dans le Centre d'administration Office 365, choisissez **Centres d'administration** \> **Exchange**.
+3. Dans le centre d’administration 365 de Microsoft, sélectionnez **centres** \> d’administration **Exchange**.
 
 4. Dans le centre d’administration Exchange, accédez à **règles** de **flux** \> de messagerie et sélectionnez **nouvelle** ![icône](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **créer une nouvelle règle**. Pour plus d’informations sur l’utilisation du centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
@@ -79,7 +79,7 @@ Vous pouvez définir des règles de flux de messagerie pour déclencher le chiff
 
 2. Sélectionnez la vignette **admin** .
 
-3. Dans le Centre d'administration Office 365, choisissez **Centres d'administration** \> **Exchange**.
+3. Dans le centre d’administration 365 de Microsoft, sélectionnez **centres** \> d’administration **Exchange**.
 
 4. Dans le CAE, accédez à **Flux de messagerie** \> **Règles**.
 
@@ -105,7 +105,7 @@ Si vous n’avez pas encore déplacé votre organisation Office 365 vers les nou
 
 2. Sélectionnez la vignette **admin** .
 
-3. Dans le Centre d'administration Office 365, choisissez **Centres d'administration** \> **Exchange**.
+3. Dans le centre d’administration 365 de Microsoft, sélectionnez **centres** \> d’administration **Exchange**.
 
 4. Dans le centre d’administration Exchange, accédez à **règles** de **flux** \> de messagerie et sélectionnez **nouvelle** ![icône](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **créer une nouvelle règle**. Pour plus d’informations sur l’utilisation du centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
@@ -163,7 +163,7 @@ Lorsque vos utilisateurs de messagerie envoient des messages chiffrés, les dest
 
 2. Sélectionnez la vignette **admin** .
 
-3. Dans le Centre d'administration Office 365, choisissez **Centres d'administration** \> **Exchange**.
+3. Dans le centre d’administration 365 de Microsoft, sélectionnez **centres** \> d’administration **Exchange**.
 
 4. Dans le centre d’administration Exchange, accédez à **règles** de **flux** \> de messagerie et sélectionnez **nouvelle** ![icône](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **créer une nouvelle règle**. Pour plus d’informations sur l’utilisation du centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 

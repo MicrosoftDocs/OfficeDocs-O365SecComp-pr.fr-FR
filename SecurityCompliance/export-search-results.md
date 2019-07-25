@@ -17,29 +17,29 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: 'Exportez les résultats de la recherche à partir d’une recherche de contenu dans le centre de sécurité & Compliance Center sur un ordinateur local. Les résultats par courrier électronique sont exportés en tant que fichiers PST. Le contenu de sites SharePoint et OneDrive entreprise est exporté sous forme de documents Office natifs. '
-ms.openlocfilehash: deb777125f75f30a3d98d090c4427de8c5388800
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 'Exportez les résultats de la recherche à partir d’une recherche de contenu dans le centre de sécurité & conformité sur un ordinateur local. Les résultats par courrier électronique sont exportés en tant que fichiers PST. Le contenu de sites SharePoint et OneDrive entreprise est exporté sous forme de documents Office natifs. '
+ms.openlocfilehash: 198459eb013c2f34b1a440d29375069175bfb0c6
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154546"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854648"
 ---
 # <a name="export-content-search-results"></a>Exporter les résultats de la recherche de contenu
 
-Une fois qu’une recherche de contenu est exécutée correctement, vous pouvez exporter les résultats de la recherche vers un ordinateur local. Lorsque vous exportez des résultats du courrier électronique, ils sont téléchargés sur votre ordinateur dans des fichiers PST. Lorsque vous exportez du contenu à partir de sites SharePoint et OneDrive entreprise, des copies des documents Office natifs sont exportées. D’autres documents et rapports sont inclus dans les résultats exportés.
+Une fois qu’une recherche de contenu est exécutée correctement, vous pouvez exporter les résultats de la recherche vers un ordinateur local. Lorsque vous exportez des résultats du courrier électronique, ils sont téléchargés sur votre ordinateur dans des fichiers PST. Lorsque vous exportez du contenu à partir de sites SharePoint et OneDrive entreprise, des copies des documents Office natifs sont exportées. D’autres documents et rapports sont inclus dans les résultats de recherche exportés.
   
-De plus, tous les messages électroniques chiffrés par RMS qui sont inclus dans les résultats d’une recherche de contenu sont déchiffrés lorsque vous les exportez (en tant que messages individuels). Cette fonctionnalité de déchiffrement est activée par défaut pour les membres du groupe de rôles gestionnaire de découverte électronique. Cela est dû au fait que le rôle de gestion de déchiffrement RMS est affecté à ce groupe de rôles. Pour plus d’informations sur le déchiffrement RMS lors de l’exportation des résultats de la recherche, voir la section [more information](#more-information) . 
+Tous les messages électroniques chiffrés par RMS inclus dans les résultats d’une recherche de contenu sont déchiffrés lorsque vous les exportez (en tant que messages individuels). Cette fonctionnalité de déchiffrement est activée par défaut pour les membres du groupe de rôles gestionnaire de découverte électronique. Cela est dû au fait que le rôle de gestion de déchiffrement RMS est affecté à ce groupe de rôles. Pour plus d’informations sur le déchiffrement RMS lors de l’exportation des résultats de la recherche, voir la section [more information](#more-information) . 
   
 L’exportation des résultats d’une recherche de contenu implique la préparation des résultats, puis leur téléchargement sur un ordinateur local.
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Pour exporter les résultats de la recherche, vous devez disposer du rôle de gestion de l’exportation dans le centre de sécurité & Compliance Center. Ce rôle est affecté au groupe de rôles Gestionnaire de découverte électronique intégré. Ce rôle n’est pas affecté par défaut au groupe de rôles Gestion de l’organisation. Pour plus d’informations, consultez la rubrique [attribution d’autorisations eDiscovery](assign-ediscovery-permissions.md).
+- Pour exporter les résultats de la recherche, vous devez disposer du rôle de gestion de l’exportation dans le centre de sécurité & conformité. Ce rôle est affecté au groupe de rôles Gestionnaire de découverte électronique intégré. Ce rôle n’est pas affecté par défaut au groupe de rôles Gestion de l’organisation. Pour plus d’informations, consultez la rubrique [attribution d’autorisations eDiscovery](assign-ediscovery-permissions.md).
     
 - L’ordinateur que vous utilisez pour exporter les résultats de recherche doit répondre aux exigences système suivantes :
     
-  - versions 32 ou 64 bits de Windows 7 et versions ultérieures
+  - versions 32 bits ou 64 bits de Windows 7 et versions ultérieures
     
   - Microsoft .NET Framework 4,7
     
@@ -55,13 +55,13 @@ L’exportation des résultats d’une recherche de contenu implique la prépara
     
 - Lorsque vous téléchargez les résultats de recherche (décrit à l’étape 2), vous pouvez augmenter la vitesse de téléchargement en configurant un paramètre de Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Pour plus d’informations, consultez [la rubrique augmentation de la vitesse de téléchargement lors de l’exportation des résultats de recherche eDiscovery à partir d’Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
     
-- Lorsque vous exportez des résultats de recherche, les données sont stockées temporairement dans un emplacement de stockage Microsoft Azure unique dans le Cloud Microsoft avant d’être téléchargé sur votre ordinateur local. Assurez-vous que votre organisation peut se connecter au point de terminaison dans Azure, c’est-à-dire ** \*. blob.Core.Windows.net** (le caractère générique représente un identificateur unique pour votre exportation). Les données de résultats de recherche sont supprimées de l’emplacement de stockage Azure deux semaines après sa création. 
+- Lorsque vous exportez des résultats de recherche, les données sont stockées temporairement dans un emplacement de stockage Azure fourni par Microsoft dans le Cloud Microsoft avant d’être téléchargé sur votre ordinateur local. Assurez-vous que votre organisation peut se connecter au point de terminaison dans Azure, c’est-à-dire ** \*. blob.Core.Windows.net** (le caractère générique représente un identificateur unique pour votre exportation). Les données de résultats de recherche sont supprimées de l’emplacement de stockage Azure deux semaines après sa création. 
     
 - Si votre organisation utilise un serveur proxy pour communiquer avec Internet, vous devez définir les paramètres de serveur proxy sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche (de sorte que l’outil d’exportation puisse être authentifié par votre serveur proxy). Pour ce faire, ouvrez le fichier *machine. config* à l’emplacement qui correspond à votre version de Windows. 
     
-  - **32 bits** - `%windir%\Microsoft.NET\Framework\[version]\Config\machine.config`
+  - **32-bit:**`%windir%\Microsoft.NET\Framework\[version]\Config\machine.config`
     
-  - **64 bits** - `%windir%\Microsoft.NET\Framework64\[version]\Config\machine.config`
+  - **64-bit:**`%windir%\Microsoft.NET\Framework64\[version]\Config\machine.config`
     
     Ajoutez les lignes suivantes au fichier *machine. config* entre les `<configuration>` balises et `</configuration>` . N’oubliez pas de `ProxyServer` remplacer `Port` et d’utiliser les valeurs appropriées pour votre organisation; par exemple, `proxy01.contoso.com:80` . 
     
@@ -78,7 +78,7 @@ L’exportation des résultats d’une recherche de contenu implique la prépara
     
 ## <a name="step-1-prepare-search-results-for-export"></a>Étape 1 : Préparer les résultats de recherche pour l’exportation
 
-Vous devez préparer les résultats de recherche pour l’exportation. Lorsque vous préparez des résultats, ceux-ci sont téléchargés vers un emplacement de stockage Azure dans le Cloud Microsoft. Notez que le contenu provenant de boîtes aux lettres et de sites est téléchargé à un débit maximal de 2 Go par heure.
+Vous devez préparer les résultats de recherche pour l’exportation. Lorsque vous préparez des résultats, ceux-ci sont téléchargés vers un emplacement de stockage Azure fourni par Microsoft dans le Cloud Microsoft. Le contenu des boîtes aux lettres et des sites est téléchargé à un débit maximal de 2 Go par heure.
   
 1. Accédez à la page [https://protection.office.com](https://protection.office.com).
     
@@ -105,22 +105,22 @@ Vous devez préparer les résultats de recherche pour l’exportation. Lorsque v
     
 7. Sous **Exporter le contenu Exchange en tant que**, choisissez l’une des options suivantes:
     
-    - **Un fichier PST pour chaque boîte aux lettres** -exporte un fichier PST pour chaque boîte aux lettres d’utilisateur qui contient les résultats de la recherche. Tous les résultats de la boîte aux lettres d’archivage de l’utilisateur sont inclus dans le même fichier PST. Notez que cette option reproduit la structure de dossiers de boîte aux lettres à partir de la boîte aux lettres source. 
+    - **Un fichier PST pour chaque boîte aux lettres:** Exporte un fichier PST pour chaque boîte aux lettres d’utilisateur qui contient les résultats de la recherche. Tous les résultats de la boîte aux lettres d’archivage de l’utilisateur sont inclus dans le même fichier PST. Cette option reproduit la structure de dossiers de boîte aux lettres à partir de la boîte aux lettres source. 
     
-    - **Un fichier PST contenant tous les messages** : exporte un seul fichier PST (nommé *Exchange. pst* ) qui contient les résultats de la recherche de toutes les boîtes aux lettres source incluses dans la recherche. Notez que cette option reproduit la structure de dossiers de boîte aux lettres pour chaque message. 
+    - **Un fichier PST contenant tous les messages:** Exporte un seul fichier PST (nommé *Exchange. pst*) qui contient les résultats de la recherche de toutes les boîtes aux lettres source incluses dans la recherche. Cette option reproduit la structure de dossiers de boîte aux lettres pour chaque message. 
     
-    - **Un fichier PST contenant tous les messages dans un dossier unique** : exporte les résultats de la recherche vers un fichier PST unique où tous les messages se trouvent dans un seul dossier de niveau supérieur. Cette option permet aux relecteurs de vérifier les éléments par ordre chronologique (les éléments sont triés par date d’envoi) sans avoir à naviguer dans la structure de dossiers de boîte aux lettres d’origine pour chaque élément. 
+    - **Un fichier PST contenant tous les messages dans un dossier unique:** Exporte les résultats de la recherche vers un fichier PST unique où tous les messages se trouvent dans un seul dossier de niveau supérieur. Cette option permet aux relecteurs de vérifier les éléments par ordre chronologique (les éléments sont triés par date d’envoi) sans avoir à naviguer dans la structure de dossiers de boîte aux lettres d’origine pour chaque élément. 
     
-    - **Messages individuels** : exporte les résultats de recherche en tant que messages électroniques individuels au format. msg. Si vous sélectionnez cette option, les résultats de la recherche de messagerie sont exportés vers un dossier dans le système de fichiers. Le chemin d’accès du dossier pour les messages individuels est le même que celui utilisé si vous avez exporté les résultats vers des fichiers PST. 
+    - **Messages individuels:** Exporte les résultats de recherche en tant que messages électroniques individuels au format. msg. Si vous sélectionnez cette option, les résultats de la recherche de messagerie sont exportés vers un dossier dans le système de fichiers. Le chemin d’accès du dossier pour les messages individuels est le même que celui utilisé si vous avez exporté les résultats vers des fichiers PST. 
     
       > [!IMPORTANT]
       > Pour déchiffrer les messages chiffrés par RMS lorsqu’ils sont exportés, vous devez exporter les résultats de la recherche de courrier électronique en tant que messages individuels. Les messages chiffrés resteront chiffrés si vous exportez les résultats de la recherche en tant que fichier PST. 
   
-8. Activez la case à cocher **activer** la déduplication pour exclure les messages en double. Cette option n’est disponible que si les sources de contenu de la recherche incluent des dossiers publics ou des boîtes aux lettres Exchange. 
+8. Activez la case à cocher **activer** la déduplication pour exclure les messages en double. Cette option apparaît uniquement si les sources de contenu de la recherche incluent des boîtes aux lettres Exchange ou des dossiers publics. 
     
     Si vous sélectionnez cette option, une seule copie d’un message est exportée même si plusieurs copies du même message sont trouvées dans les boîtes aux lettres qui ont été recherchées. Le rapport exporter les résultats (Results. csv) contiendra une ligne pour chaque copie d’un message en double afin que vous puissiez identifier les boîtes aux lettres (ou dossiers publics) qui contiennent une copie du message dupliqué. Pour plus d’informations sur la déduplication et sur l’identification des éléments dupliqués, voir [déduplication dans les résultats de recherche de découverte électronique](de-duplication-in-ediscovery-search-results.md).
     
-9. Cliquez sur la case à cocher **inclure les versions pour les documents SharePoint** pour exporter toutes les versions des documents SharePoint. Cette option n’est disponible que si les sources de contenu de la recherche incluent des sites SharePoint ou OneDrive entreprise. 
+9. Cliquez sur la case à cocher **inclure les versions pour les documents SharePoint** pour exporter toutes les versions des documents SharePoint. Cette option apparaît uniquement si les sources de contenu de la recherche incluent des sites SharePoint ou OneDrive entreprise. 
     
 10. Cliquez sur la case à cocher **Exporter les fichiers dans un dossier compressé (zippé)** pour exporter les résultats de recherche dans des dossiers compressés. Cette option est disponible uniquement lorsque vous choisissez d’exporter les éléments Exchange en tant que messages individuels et lorsque les résultats de la recherche incluent des documents SharePoint ou OneDrive. Cette option est principalement utilisée pour contourner la limite de 260 caractères dans les noms de chemin d’accès des fichiers Windows lorsque les éléments sont exportés. Voir «noms de fichier des éléments exportés» dans la section [plus d’informations](#more-information) . 
     
@@ -142,13 +142,13 @@ Comme expliqué précédemment, vous pouvez augmenter la vitesse de télécharge
     
     - La taille totale estimée des éléments à télécharger.
     
-    - Si les éléments indexés ou non indexés seront exportés. Les éléments non indexés sont des éléments qui ont un format reconnu, qui sont chiffrés ou n’ont pas été indexés pour d’autres raisons. Pour plus d’informations, consultez la rubrique [Unindexed items in Content Search](partially-indexed-items-in-content-search.md).
+    - Si les éléments indexés ou non indexés seront exportés. Les éléments non indexés sont des éléments qui ont un format reconnu, sont chiffrés ou n’ont pas été indexés pour d’autres raisons. Pour plus d’informations, consultez la rubrique [Unindexed items in Content Search](partially-indexed-items-in-content-search.md).
     
-    - Si les versions des documents SharePoint seront téléchargés.
+    - Indique si les versions des documents SharePoint doivent être téléchargées.
     
     - L’état de la préparation. Vous pouvez commencer à télécharger les résultats de recherche, même si la préparation des données n’est pas terminée.
     
-2. Sous **Clé d’exportation**, cliquez sur **Copier dans le Presse-papiers**. Cette clé vous permet de télécharger les résultats de recherche à l’étape 5.
+2. Sous **Clé d’exportation**, cliquez sur **Copier dans le Presse-papiers**. Cette clé est utilisée à l’étape 5 pour télécharger les résultats de la recherche.
     
     > [!NOTE]
     > Étant donné que tout le monde peut installer et lancer l’outil d’exportation de découverte électronique, et utiliser cette clé pour télécharger les résultats de recherche, prenez toutes les précautions nécessaires pour protéger cette clé, comme vous le feriez avec les mots de passe ou d’autres informations de sécurité.  
@@ -190,7 +190,7 @@ Voici plus d’informations sur l’exportation des résultats de la recherche.
   
  ### <a name="export-limits"></a>Limites d’exportation
   
-- L’exportation des résultats de recherche à partir du centre de sécurité & Compliance offre les limites suivantes:
+- L’exportation des résultats de recherche à partir du centre de sécurité & conformité présente les limites suivantes:
     
   - Vous pouvez exporter un maximum de 2 to de données à partir d’une seule recherche de contenu. Si les résultats de la recherche sont supérieurs à 2 to, envisagez d’utiliser des plages de dates ou d’autres types de filtres pour réduire la taille totale des résultats de la recherche.
     
@@ -203,9 +203,9 @@ Voici plus d’informations sur l’exportation des résultats de la recherche.
   > [!NOTE]
   > L’exportation des rapports à partir d’une recherche de contenu permet également de compter sur le nombre d’exportations exécutées en même temps et le nombre d’exportations qu’un utilisateur unique peut exécuter.
     
-- Comme indiqué précédemment, les résultats de la recherche provenant de boîtes aux lettres et de sites sont téléchargés vers l’emplacement de stockage Azure (comme décrit dans l' [étape 1: préparer les résultats de recherche pour l’exportation](#step-1-prepare-search-results-for-export)) à un débit maximal de 2 Go par heure.
+- Comme indiqué précédemment, les résultats de recherche provenant de boîtes aux lettres et de sites sont téléchargés vers un emplacement de stockage Azure fourni par Microsoft (comme décrit dans l' [étape 1: préparer les résultats de recherche pour l’exportation](#step-1-prepare-search-results-for-export)) à un taux maximal de 2 Go par heure.
     
-- Par défaut, la taille maximale d’un fichier PST pouvant être exporté est de 10 Go. Cela signifie que si les résultats de la recherche de la boîte aux lettres d’un utilisateur sont supérieurs à 10 Go, les résultats de la recherche de la boîte aux lettres seront exportés dans deux (ou plusieurs) fichiers PST distincts. En outre, si vous choisissez d’exporter tous les résultats de recherche dans un seul fichier PST, le fichier PST sera Spilt dans des fichiers PST supplémentaires si la taille totale des résultats de la recherche est supérieure à 10 Go. Si vous souhaitez modifier cette taille par défaut, vous pouvez modifier le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Consultez [la rubrique modifier la taille des fichiers PST lors de l’exportation des résultats de recherche eDiscovery](change-the-size-of-pst-files-when-exporting-results.md).
+- Par défaut, la taille maximale d’un fichier PST pouvant être exporté est de 10 Go. Cela signifie que si les résultats de la recherche de la boîte aux lettres d’un utilisateur sont supérieurs à 10 Go, les résultats de la recherche de la boîte aux lettres seront exportés dans deux (ou plusieurs) fichiers PST distincts. Si vous choisissez d’exporter tous les résultats de recherche dans un seul fichier PST, le fichier PST sera Spilt dans des fichiers PST supplémentaires si la taille totale des résultats de la recherche est supérieure à 10 Go. Si vous souhaitez modifier cette taille par défaut, vous pouvez modifier le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. Consultez [la rubrique modifier la taille des fichiers PST lors de l’exportation des résultats de recherche eDiscovery](change-the-size-of-pst-files-when-exporting-results.md).
     
     De plus, les résultats de recherche d’une boîte aux lettres spécifique ne sont pas réparties entre plusieurs fichiers PST, sauf si le contenu d’une boîte aux lettres unique est supérieur à 10 Go. Si vous avez choisi d’exporter les résultats de la recherche dans un fichier PST pour qui contient tous les messages dans un seul dossier et que les résultats de la recherche sont supérieurs à 10 Go, les éléments sont toujours organisés par ordre chronologique, de sorte qu’ils seront Spilt dans des fichiers PST supplémentaires en fonction du d r.
      
@@ -254,7 +254,7 @@ Voici plus d’informations sur l’exportation des résultats de la recherche.
   
 - Si vous exportez des éléments de boîte aux lettres à partir d’une recherche de contenu qui renvoie tous les éléments de boîte aux lettres dans les résultats de la recherche (car aucun mot clé n’est inclus dans la requête de recherche), les éléments partiellement indexés ne sont pas copiés dans le fichier PST contenant les éléments non indexés. Cela est dû au fait que tous les éléments, y compris les éléments partiellement indexés, sont automatiquement inclus dans les résultats de la recherche standard. Cela signifie que les éléments partiellement indexés sont inclus dans un fichier PST (ou sous forme de messages individuels) qui contient les autres éléments indexés.
     
-    En outre, si vous exportez les éléments indexés et partiellement indexés ou si vous exportez uniquement les éléments indexés à partir d’une recherche de contenu qui renvoie tous les éléments, le même nombre d’éléments sera téléchargé. Cela se produit bien que les résultats de recherche estimés pour la recherche de contenu (affichés dans les statistiques de recherche dans le centre de sécurité & Compliance Center) incluent toujours une estimation distincte pour le nombre d’éléments partiellement indexés. Par exemple, supposons que l’estimation d’une recherche incluant tous les éléments (pas de mot-clé dans la requête de recherche) indique qu' 1 000 éléments ont été trouvés et que 200 éléments partiellement indexés étaient également trouvés. Dans ce cas, les éléments 1 000 incluent les éléments partiellement indexés, car la recherche renvoie tous les éléments. En d’autres termes, 1 000 nombre total d’éléments renvoyés par la recherche, et non pas 1 200 éléments (comme prévu). Si vous exportez les résultats de cette recherche et choisissez d’exporter des éléments indexés et partiellement indexés (ou simplement des éléments indexés), 1 000 éléments seront téléchargés. Là encore, cela est dû au fait que les éléments partiellement indexés sont inclus dans les résultats réguliers (indexés) lorsque vous utilisez une requête de recherche vierge pour renvoyer tous les éléments. Dans le même exemple, si vous choisissez d’exporter uniquement des éléments partiellement indexés, seuls les éléments non indexés 200 seront téléchargés.
+    Si vous exportez les éléments indexés et partiellement indexés ou si vous exportez uniquement les éléments indexés à partir d’une recherche de contenu qui renvoie tous les éléments, le même nombre d’éléments sera téléchargé. Cela se produit même si les résultats de recherche estimés pour la recherche de contenu (affichés dans les statistiques de recherche dans le centre de sécurité & conformité) incluent toujours une estimation distincte pour le nombre d’éléments partiellement indexés. Par exemple, supposons que l’estimation d’une recherche incluant tous les éléments (pas de mot-clé dans la requête de recherche) indique qu' 1 000 éléments ont été trouvés et que 200 éléments partiellement indexés étaient également trouvés. Dans ce cas, les éléments 1 000 incluent les éléments partiellement indexés, car la recherche renvoie tous les éléments. En d’autres termes, 1 000 nombre total d’éléments renvoyés par la recherche, et non pas 1 200 éléments (comme prévu). Si vous exportez les résultats de cette recherche et choisissez d’exporter les éléments indexés et partiellement indexés (ou uniquement les éléments indexés partiellement), 1 000 les éléments seront téléchargés. Là encore, cela est dû au fait que les éléments partiellement indexés sont inclus dans les résultats réguliers (indexés) lorsque vous utilisez une requête de recherche vierge pour renvoyer tous les éléments. Dans le même exemple, si vous choisissez d’exporter uniquement des éléments partiellement indexés, seuls les éléments non indexés 200 seront téléchargés.
     
     Notez également que dans l’exemple précédent (lorsque vous exportez des éléments indexés et partiellement indexés ou que vous exportez uniquement des éléments indexés), le rapport de **synthèse d’exportation** inclus avec les résultats de recherche exportés répertorie 1 000 éléments estimés et 1 000 téléchargé éléments pour les mêmes raisons que celles décrites précédemment. 
     
@@ -262,22 +262,22 @@ Voici plus d’informations sur l’exportation des résultats de la recherche.
     
     Pour exporter des éléments partiellement indexés de tous les emplacements de contenu pour une recherche, configurez la recherche de sorte qu’elle renvoie tous les éléments (en supprimant les mots clés de la requête de recherche), puis exportez uniquement les éléments partiellement indexés lorsque vous exportez les résultats de la recherche.
     
-    ![Utiliser l’option d’exportation Thrid pour exporter uniquement les éléments non indexés](media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
+    ![Utiliser la troisième option d’exportation pour exporter uniquement les éléments non indexés](media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
   
-- Lors de l’exportation des résultats de recherche à partir de sites SharePoint ou OneDrive entreprise, la possibilité d’exporter des éléments non indexés dépend également de l’option d’exportation que vous sélectionnez et selon que le site recherché contient un élément indexé correspondant aux critères de recherche. Par exemple, si vous recherchez des sites SharePoint ou OneDrive entreprise spécifiques et qu’aucun résultat de recherche n’est trouvé, les éléments non indexés de ces sites ne seront pas exportés si vous choisissez la deuxième option d’exportation pour exporter les éléments indexés et non indexés. Si un élément indexé d’un site correspond aux critères de recherche, tous les éléments non indexés de ce site seront exportés lors de l’exportation des éléments indexés et non indexés. L’illustration suivante décrit les options d’exportation selon que le site contient ou non un élément indexé correspondant aux critères de recherche.
+- Lors de l’exportation des résultats de recherche à partir de sites SharePoint ou OneDrive entreprise, la possibilité d’exporter des éléments non indexés dépend également de l’option d’exportation que vous sélectionnez et selon que le site recherché contient un élément indexé correspondant aux critères de recherche. Par exemple, si vous recherchez des sites SharePoint ou OneDrive entreprise spécifiques et qu’aucun résultat de recherche n’est trouvé, les éléments non indexés de ces sites ne seront pas exportés si vous choisissez la deuxième option d’exportation pour exporter les éléments indexés et non indexés. Si un élément indexé d’un site correspond aux critères de recherche, tous les éléments non indexés de ce site seront exportés lors de l’exportation des éléments indexés et non indexés. L’illustration suivante décrit les options d’exportation selon qu’un site contient un élément indexé correspondant aux critères de recherche.
     
-    ![Choisissez l’option Exporter en fonction du fait qu’un site contient ou non un élément indexé correspondant aux critères de recherche.](media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
+    ![Choisissez l’option d’exportation en fonction du fait qu’un site contient un élément indexé correspondant aux critères de recherche.](media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
 
     
-    Seuls les éléments indexés qui correspondent aux critères de recherche sont exportés. Aucun élément indexé partiellement n’est exporté.
+    a. Seuls les éléments indexés qui correspondent aux critères de recherche sont exportés. Aucun élément indexé partiellement n’est exporté.
     
-    B-si aucun élément indexé d’un site ne correspond aux critères de recherche, alors les éléments partiellement indexés de ce site ne sont pas exportés. Si les éléments indexés d’un site sont renvoyés dans les résultats de la recherche, les éléments partiellement indexés de ce site sont exportés. En d’autres termes, seuls les éléments partiellement indexés des sites qui contiennent des éléments correspondant aux critères de recherche sont exportés.
+    b. Si aucun élément indexé d’un site ne correspond aux critères de recherche, alors les éléments partiellement indexés de ce site ne sont pas exportés. Si les éléments indexés d’un site sont renvoyés dans les résultats de la recherche, les éléments partiellement indexés de ce site sont exportés. En d’autres termes, seuls les éléments partiellement indexés des sites qui contiennent des éléments correspondant aux critères de recherche sont exportés.
     
-    C-tous les éléments partiellement indexés de tous les sites de la recherche sont exportés, qu’un site contienne ou non des éléments qui correspondent aux critères de recherche.
+    c. Tous les éléments partiellement indexés de tous les sites de la recherche sont exportés, qu’un site contienne ou non des éléments qui correspondent aux critères de recherche.
     
     Si vous choisissez d’exporter des éléments partiellement indexés, les éléments de boîte aux lettres partiellement indexés sont exportés dans un fichier PST distinct quelle que soit l’option sélectionnée sous **Exporter le contenu Exchange en tant que**.
 
-- Si des éléments partiellement indexés sont renvoyés dans les résultats de la recherche (étant donné que les autres propriétés d’un élément partiellement indexé correspondent aux critères de recherche), ces éléments partiellement indexés sont exportés avec les résultats de la recherche standard. Par conséquent, si vous choisissez d’exporter des éléments indexés et des éléments partiellement indexés (en sélectionnant l’option **tous les éléments, y compris ceux dont le format n’est pas reconnu, sont chiffrés ou n’ont pas été indexés pour d’autres raisons** ), les éléments partiellement indexés exportés les résultats réguliers seront affichés dans le rapport results. csv. Elles ne seront pas mentionnées dans le rapport éléments non indexés. csv.
+- Si des éléments partiellement indexés sont renvoyés dans les résultats de la recherche (car les autres propriétés des éléments partiellement indexés correspondent aux critères de recherche), ces éléments partiellement indexés sont exportés avec les résultats de la recherche standard. Par conséquent, si vous choisissez d’exporter des éléments indexés et des éléments partiellement indexés (en sélectionnant l’option **tous les éléments, y compris ceux dont le format n’est pas reconnu, sont chiffrés ou n’ont pas été indexés pour d’autres raisons** ), les éléments partiellement indexés exportés les résultats réguliers seront affichés dans le rapport results. csv. Elles ne seront pas mentionnées dans le rapport éléments non indexés. csv.
     
  ### <a name="exporting-individual-messages-or-pst-files"></a>Exportation de messages individuels ou de fichiers PST
   
@@ -285,11 +285,11 @@ Voici plus d’informations sur l’exportation des résultats de la recherche.
     
 - Comme expliqué précédemment, les résultats de la recherche de messagerie sont exportés vers un dossier dans le système de fichiers. Le chemin d’accès du dossier pour les messages individuels réplique le chemin d’accès au dossier dans la boîte aux lettres de l’utilisateur. Par exemple, pour une recherche nommée «ContosoCase101», les messages de la boîte de réception d’un utilisateur se trouveraient dans le chemin d’accès `~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox`du dossier. 
     
-- Si vous choisissez d’exporter les messages électroniques dans un fichier PST contenant tous les messages d’un seul dossier, un dossier **éléments supprimés** et un dossier **dossiers de recherche** sont inclus dans le niveau supérieur du dossier PST. Ces dossiers seront vides. 
+- Si vous choisissez d’exporter les messages électroniques dans un fichier PST contenant tous les messages d’un seul dossier, un dossier **éléments supprimés** et un dossier **dossiers de recherche** sont inclus dans le niveau supérieur du dossier PST. Ces dossiers sont vides. 
   
  ### <a name="decrypting-rms-encrypted-messages"></a>Déchiffrement des messages chiffrés RMS
   
-- Comme expliqué précédemment, pour déchiffrer les messages chiffrés RMS lorsque vous les exportez, vous devez exporter les résultats de la recherche en tant que messages individuels. Si vous exportez des résultats de recherche vers un fichier PST, les messages chiffrés RMS resteront chiffrés.
+- Comme expliqué précédemment, pour déchiffrer les messages chiffrés RMS lorsque vous les exportez, vous devez exporter les résultats de la recherche en tant que messages individuels. Si vous exportez des résultats de recherche vers un fichier PST, les messages chiffrés RMS restent chiffrés.
     
 - La fonctionnalité de déchiffrement RMS dans la recherche de contenu ne déchiffre pas les messages chiffrés avec le chiffrement de messages Office 365 (OME) lorsque vous exportez des résultats de recherche. Toutefois, si un message chiffré avec OME est envoyé par un utilisateur de votre organisation, la copie du message dans le dossier envoyé de l’utilisateur n’est pas chiffrée et sera visible après son exportation. Toutefois, si des messages chiffrés avec OME sont reçus par des utilisateurs de votre organisation, ils ne seront pas déchiffrés après leur exportation. Pour plus d’informations sur OME, consultez la rubrique [Office 365 message](https://go.microsoft.com/fwlink/p/?linkid=844966)Encryption.
     
@@ -317,9 +317,9 @@ Voici plus d’informations sur l’exportation des résultats de la recherche.
     
     Pour aider à atténuer ce problème, envisagez de télécharger les résultats de recherche vers un emplacement avec un nom de chemin d’accès court; par exemple, le téléchargement des résultats de recherche dans `C:\Results` un dossier nommé ajoute des caractères aux noms de chemin d’accès des éléments exportés de `C:\Users\Admin\Desktop\Results`sorte qu’ils ne les téléchargent pas dans un dossier nommé.
     
-- Lorsque vous exportez des documents de site, il est également possible que le nom de fichier d’origine d’un document soit modifié. Cela se produit spécifiquement pour les documents qui ont été supprimés d’un site SharePoint ou OneDrive entreprise qui a été mis en attente. Après la suppression d’un document situé sur un site en conservation, le document supprimé est automatiquement déplacé vers la bibliothèque de conservation de conservation pour le site (qui a été créé lors de la mise en attente du site). Lorsque le document supprimé est déplacé vers la bibliothèque de conservation de conservation, un ID généré de manière aléatoire et unique est ajouté au nom de fichier d’origine du document. Par exemple, si le nom de fichier d’un `FY2017Budget.xlsx` document est supprimé par la suite et déplacé vers la bibliothèque de conservation, le nom de fichier du document déplacé vers la bibliothèque de conservation de conservation est modifié comme suit `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx`. Si un document de la bibliothèque de conservation de conservation correspond à la requête d’une recherche de contenu et que vous exportez les résultats de cette recherche, le nom de fichier est modifié dans le fichier exporté. dans cet exemple, le nom de fichier du document exporté est `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx`.
+- Lorsque vous exportez des documents de site, il est également possible que le nom de fichier d’origine d’un document soit modifié. Cela se produit spécifiquement pour les documents qui ont été supprimés d’un site SharePoint ou OneDrive entreprise qui a été mis en attente. Une fois qu’un document se trouvant sur un site en conservation est supprimé, le document supprimé est automatiquement déplacé vers la bibliothèque de conservation de conservation pour le site (qui a été créé lors de la mise en attente du site). Lorsque le document supprimé est déplacé vers la bibliothèque de conservation de conservation, un ID généré de manière aléatoire et unique est ajouté au nom de fichier d’origine du document. Par exemple, si le nom de fichier d’un `FY2017Budget.xlsx` document est supprimé par la suite et déplacé vers la bibliothèque de conservation, le nom de fichier du document déplacé vers la bibliothèque de conservation de conservation est modifié comme suit `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx`. Si un document de la bibliothèque de conservation de conservation correspond à la requête d’une recherche de contenu et que vous exportez les résultats de cette recherche, le nom du fichier exporté est modifié; dans cet exemple, le nom de fichier du document exporté est `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx`.
     
-    De plus, lorsqu’un document situé sur un site en conservation est modifié (et que le contrôle de version de la bibliothèque de documents du site a été activé), une copie du fichier est automatiquement créée dans la bibliothèque de conservation de conservation. Dans ce cas, un ID unique et généré de manière aléatoire est également ajouté au nom de fichier du document qui est copié dans la bibliothèque de conservation de conservation.
+    Lorsqu’un document sur un site en conservation est modifié (et que le contrôle de version de la bibliothèque de documents dans le site a été activé), une copie du fichier est automatiquement créée dans la bibliothèque de conservation de conservation. Dans ce cas, un ID généré de manière aléatoire et unique est également ajouté au nom de fichier du document qui est copié dans la bibliothèque de conservation de conservation.
     
     La raison pour laquelle les noms de fichier des documents qui ont été déplacés ou copiés vers la bibliothèque de conservation de conservation est d’empêcher les noms de fichier conflictuels. Pour plus d’informations sur l’insertion d’une conservation sur les sites et la bibliothèque de conservation des données, voir vue d’ensemble de la conservation inaltérable [dans SharePoint Server 2016](https://support.office.com/article/5e400d68-cd51-444a-8fe6-e4df1d20aa95).
     

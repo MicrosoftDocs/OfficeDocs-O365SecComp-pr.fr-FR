@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Pour les administrateurs: Découvrez comment utiliser le chargement réseau pour importer en bloc plusieurs fichiers PST dans des boîtes aux lettres utilisateur dans Office 365.'
-ms.openlocfilehash: fb64eecdbeac40aa597d17459f06525b8859fb1f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: bd15216df69e003a5aaddb2ec21ede4da5c5c312
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156166"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854818"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>Utiliser le chargement réseau pour importer les fichiers PST de votre organisation vers Office 365
 
@@ -48,7 +48,7 @@ Notez que vous devez effectuer l’étape 1 une seule fois pour importer des fic
   
 - Vous devez disposer du rôle d’exportation d’importation de boîte aux lettres dans Exchange Online pour importer des fichiers PST dans des boîtes aux lettres Office 365. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself as a member. Pour plus d’informations, consultez les sections «ajouter un rôle à un groupe de rôles» ou «créer un groupe de rôles» dans [gérer des groupes de rôles](https://go.microsoft.com/fwlink/p/?LinkId=730688).
     
-    De plus, pour créer des travaux d’importation dans le centre de sécurité & Compliance Center, l’une des conditions suivantes doit être vraie:
+    De plus, pour créer des travaux d’importation dans le centre de sécurité & conformité, l’une des conditions suivantes doit être vraie:
     
   - Vous devez disposer du rôle destinataires de messagerie dans Exchange Online. By default, this role is assigned to the Organization Management and Recipient Management roles groups.
     
@@ -94,7 +94,7 @@ La première étape consiste à télécharger et à installer l’outil AzCopy d
 2. Dans le volet gauche du centre de sécurité & conformité, cliquez sur **importation**de la **gouvernance** \> de données.
     
     > [!NOTE]
-    > Vous devez disposer des autorisations appropriées pour accéder à la page d' **importation** dans le centre de sécurité _AMP_ Compliance Center. Pour plus d’informations, reportez-vous à la section **avant de commencer** . 
+    > Vous devez disposer des autorisations appropriées pour accéder à la page d' **importation** dans le centre de sécurité & conformité. Pour plus d’informations, reportez-vous à la section **avant de commencer** . 
     
 3. Sur la page **Importer** , cliquez ![sur Ajouter](media/ITPro-EAC-AddIcon.gif) une icône **nouveau travail d’importation**.
     
@@ -244,7 +244,7 @@ L’étape suivante consiste à créer le travail d’importation PST dans le se
     
 3. Sur la page **Importer** , cliquez ![sur Ajouter](media/ITPro-EAC-AddIcon.gif) une icône **nouveau travail d’importation**.
     
-    **Remarque:** Vous devez disposer des autorisations appropriées pour accéder à la page d' **importation** dans le centre de sécurité _AMP_ Compliance Center pour créer une tâche d’importation. Pour plus d’informations, reportez-vous à la section **avant de commencer** . 
+    **Remarque:** Vous devez disposer des autorisations appropriées pour accéder à la page d' **importation** dans le centre de sécurité & conformité afin de créer une nouvelle tâche d’importation. Pour plus d’informations, reportez-vous à la section **avant de commencer** . 
     
 4. Tapez un nom pour le travail d’importation PST, puis cliquez sur **suivant**. Utilisez des lettres minuscules, des chiffres, des tirets et des traits de soulignement. Vous ne pouvez pas utiliser des lettres majuscules ou inclure des espaces dans le nom.
     
@@ -314,7 +314,7 @@ Voici une illustration et une description du processus de chargement réseau pou
   
 ![Flux de travail du processus de chargement réseau pour importer des fichiers PST vers Office 365](media/9e05a19e-1e7a-4f1f-82df-9118f51588c4.png)
   
-1. **Téléchargez l’outil d’importation PST et la clé vers l’emplacement de stockage privé Azure** : la première étape consiste à télécharger l’outil de ligne de commande Azure AzCopy et à utiliser une clé d’accès pour télécharger les fichiers PST vers un emplacement de stockage Azure dans le Cloud Microsoft. Vous les obtenez à partir de la page d' **importation** dans le centre de sécurité _AMP_ Compliance Center. La clé (appelée clé de signature d’accès sécurisé (SAS) vous fournit les autorisations nécessaires pour télécharger des fichiers PST vers un emplacement de stockage Azure sécurisé et privé. Cette clé d’accès est propre à votre organisation et empêche tout accès non autorisé à vos fichiers PST une fois qu’ils sont téléchargés vers le Cloud Microsoft. Notez que l’importation de fichiers PST dans Office 365 ne nécessite pas que votre organisation dispose d’un abonnement Azure distinct. 
+1. **Téléchargez l’outil d’importation PST et la clé vers l’emplacement de stockage privé Azure** : la première étape consiste à télécharger l’outil de ligne de commande Azure AzCopy et à utiliser une clé d’accès pour télécharger les fichiers PST vers un emplacement de stockage Azure dans le Cloud Microsoft. Vous les obtenez à partir de la page d' **importation** dans le centre de sécurité & conformité. La clé (appelée clé de signature d’accès sécurisé (SAS) vous fournit les autorisations nécessaires pour télécharger des fichiers PST vers un emplacement de stockage Azure sécurisé et privé. Cette clé d’accès est propre à votre organisation et empêche tout accès non autorisé à vos fichiers PST une fois qu’ils sont téléchargés vers le Cloud Microsoft. Notez que l’importation de fichiers PST dans Office 365 ne nécessite pas que votre organisation dispose d’un abonnement Azure distinct. 
     
 2. **Chargement des fichiers PST dans l’emplacement de stockage Azure** : l’étape suivante consiste à utiliser l’outil AzCopy. exe (téléchargé à l’étape 1) pour télécharger et stocker vos fichiers PST dans un emplacement de stockage Azure qui réside dans le même centre de Microsoft régional où votre Office 365 Organisation. Pour les télécharger, les fichiers PST que vous souhaitez importer vers Office 365 doivent être situés dans un partage de fichiers ou un serveur de fichiers de votre organisation.
     
@@ -322,11 +322,11 @@ Voici une illustration et une description du processus de chargement réseau pou
     
 3. **Créer un fichier de mappage d’importation PST** -une fois que les fichiers PST ont été téléchargés vers l’emplacement de stockage Azure, l’étape suivante consiste à créer un fichier de valeurs séparées par des virgules (CSV) qui spécifie les boîtes aux lettres d’utilisateur dans lesquelles les fichiers PST seront importés, Notez qu’un fichier PST peut être  importé dans la boîte aux lettres principale d’un utilisateur ou dans sa boîte aux lettres d’archivage. Le service d’importation Office 365 utilisera les informations du fichier CSV pour importer les fichiers PST.
     
-4. **Créer une tâche d’importation PST** : l’étape suivante consiste à créer une tâche d’importation PST sur la page d' **importation** dans le centre de sécurité & Compliance Center et à envoyer le fichier de mappage d’importation PST créé à l’étape précédente. Après avoir créé la tâche d’importation, Office 365 analyse les données dans les fichiers PST, puis vous offre la possibilité de définir des filtres qui contrôlent les données importées dans les boîtes aux lettres spécifiées dans le fichier de mappage d’importation PST. 
+4. **Créer une tâche d’importation PST** : l’étape suivante consiste à créer une tâche d’importation PST sur la page d' **importation** dans le centre de sécurité & conformité et à envoyer le fichier de mappage d’importation PST créé à l’étape précédente. Après avoir créé la tâche d’importation, Office 365 analyse les données dans les fichiers PST, puis vous offre la possibilité de définir des filtres qui contrôlent les données importées dans les boîtes aux lettres spécifiées dans le fichier de mappage d’importation PST. 
     
 5. **Filtrer les données PST qui seront importées dans des boîtes aux lettres** -après la création et le démarrage de la tâche d’importation, Office 365 analyse les données dans les fichiers PST (en toute sécurité et en toute sécurité) en identifiant l’âge des éléments et les différents types de messages inclus dans les fichiers PST. . Lorsque l’analyse est terminée et que les données sont prêtes à être importées, vous avez la possibilité d’importer toutes les données contenues dans les fichiers PST ou vous pouvez réduire les données importées en définissant des filtres qui contrôlent les données à importer.
     
-6. **Démarrer le travail d’importation PST** : une fois la tâche d’importation démarrée, Office 365 utilise les informations du fichier de mappage d’importation PST pour importer les fichiers PST à partir de l’emplacement de stockage Azure vers les boîtes aux lettres utilisateur. Les informations d’État relatives à la tâche d’importation (y compris les informations relatives à chaque fichier PST importé) sont affichées dans la page d' **importation** dans le centre de sécurité _AMP_ Compliance Center. Une fois le travail d’importation terminé, l’état du travail est défini sur **terminé**.
+6. **Démarrer le travail d’importation PST** : une fois la tâche d’importation démarrée, Office 365 utilise les informations du fichier de mappage d’importation PST pour importer les fichiers PST à partir de l’emplacement de stockage Azure vers les boîtes aux lettres utilisateur. Les informations d’État relatives à la tâche d’importation (y compris les informations relatives à chaque fichier PST importé) sont affichées dans la page d' **importation** dans le centre de sécurité & conformité. Une fois le travail d’importation terminé, l’état du travail est défini sur **terminé**.
   
 ## <a name="more-information"></a>Plus d’informations
 
