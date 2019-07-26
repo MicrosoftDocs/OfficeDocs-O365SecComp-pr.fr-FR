@@ -16,16 +16,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Avec Office 365, votre contenu est chiffré au repos et en transit, en utilisant le chiffrement, les protocoles et les technologies les plus puissants disponibles. Obtenez une vue d’ensemble du chiffrement dans Office 365.
-ms.openlocfilehash: 4e41528aed3461cc15fef1bc2ab970d1823129fb
-ms.sourcegitcommit: 986f40a00ab454093b21e724d58594b8b8b4a9ba
+ms.openlocfilehash: 66b428abd67d86ba257e4f4336c6b12ee1c3d97b
+ms.sourcegitcommit: a550519ca8f2a54712bf0a43be7f954e55675dac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35613642"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35902476"
 ---
 # <a name="encryption-in-office-365"></a>Chiffrement dans Office 365
 
-Le chiffrement est une partie importante de vos stratégies de protection des informations et de protection des informations. Lisez cet article pour obtenir une vue d’ensemble du chiffrement utilisé pour toutes les versions d’Office 365 et obtenir de l’aide sur les tâches de chiffrement, de la configuration du chiffrement de votre organisation à la protection par mot de passe des documents Office.
+Le chiffrement est une partie importante de votre stratégie de protection des informations et de protection des informations. Lisez cet article pour obtenir une vue d’ensemble du chiffrement utilisé pour toutes les versions d’Office 365 et obtenir de l’aide sur les tâches de chiffrement, de la configuration du chiffrement de votre organisation à la protection par mot de passe des documents Office.
   
 - Si vous recherchez des informations sur les certificats et les technologies telles que TLS, consultez les [Détails de référence technique sur le chiffrement dans Office 365](technical-reference-details-about-encryption.md).
 
@@ -61,7 +61,7 @@ Pour en savoir plus, consultez les ressources suivantes:
   
 - [Qu’est-ce que Azure Rights Management?](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
-- [Azure Rights Management dans le Centre d’administration Office 365](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
+- [Activer la gestion des droits dans le centre d’administration](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
 
 - [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
 
@@ -72,7 +72,7 @@ Pour en savoir plus, consultez les ressources suivantes:
 |Configurer le chiffrement pour mon organisation  <br/> |[Configurer le chiffrement dans Office 365 Entreprise](set-up-encryption.md) <br/> |
 |Afficher des détails sur les certificats, les technologies et les suites de chiffrement TLS dans Office 365  <br/> |[Détails techniques sur le chiffrement dans Office 365](technical-reference-details-about-encryption.md) <br/> |
 |Utiliser des messages chiffrés sur un appareil mobile  <br/> |[Afficher des messages chiffrés sur votre appareil Android](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [Afficher des messages chiffrés sur votre iPhone ou iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
-|Chiffrer un document à l’aide de la protection par mot de passe  <br/><br/>  Actuellement, la protection par mot de passe n’est pas prise en charge dans Office Online. Utiliser les versions de bureau de Word, Excel et PowerPoint pour la protection par mot de passe.           |[Ajouter ou supprimer la protection dans votre document, classeur ou présentation](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) (Choisissez une section **Ajouter une protection** , puis reportez-vous **à chiffrer avec mot de passe** )  <br/> |
+|Chiffrer un document à l’aide de la protection par mot de passe  <br/><br/>  Actuellement, la protection par mot de passe n’est pas prise en charge dans Office dans un navigateur. Utiliser les versions de bureau de Word, Excel et PowerPoint pour la protection par mot de passe.           |[Ajouter ou supprimer la protection dans votre document, classeur ou présentation](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) (Choisissez une section **Ajouter une protection** , puis reportez-vous **à chiffrer avec mot de passe** )  <br/> |
 |Supprimer le chiffrement d’un document  <br/> |[Ajouter ou supprimer la protection dans votre document, classeur ou présentation](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) (Choisissez une section **protection contre la suppression** , puis voir supprimer le chiffrement du **mot de passe** )  <br/> |
 
 ## <a name="related-topics"></a>Sujets associés
