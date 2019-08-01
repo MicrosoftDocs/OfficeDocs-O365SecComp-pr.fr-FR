@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Les administrateurs peuvent utiliser le suivi des messages dans le centre de sécurité & conformité afin de déterminer ce qui s’est passé aux messages.
-ms.openlocfilehash: fb173dd09adf02c1b2eb7d0dbf9d5736483f231b
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: af3739174203d7c8d81086a5bf7d036bc2bdd76f
+ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35601011"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36048216"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Suivi des messages dans le centre de conformité et de sécurité
 
@@ -23,6 +23,9 @@ ms.locfileid: "35601011"
 Le suivi des messages dans le centre de sécurité & conformité suit les messages électroniques échangés via votre organisation Exchange Online. Vous pouvez déterminer si un message a été reçu, rejeté, différé ou remis par le service. Cela indique également les actions entamées par rapport au message avant qu'il atteigne son statut final.
 
 Le suivi des messages dans le centre de sécurité & conformité améliore le suivi des messages qui était disponible dans le centre d’administration Exchange. Vous pouvez utiliser les informations du suivi des messages pour répondre efficacement aux questions des utilisateurs sur ce qui s’est passé à leurs messages, résoudre les problèmes de flux de messagerie et valider les modifications de stratégie.
+
+> [!NOTE]
+> La limite pour le nombre de messages renvoyé est 50 000. Dans la console, lors de l’exécution d’une requête très volumineuse, le nombre de messages du rapport de cmdlet Get-HistoricalSearch dépasse 240 000.
 
 ## <a name="open-message-trace"></a>Ouvrir le suivi des messages
 

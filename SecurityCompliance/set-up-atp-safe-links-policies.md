@@ -2,7 +2,7 @@
 title: Configuration des stratégies de liens approuvés Office 365 ATP
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.topic: article
 ms.date: 06/26/2019
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configurez des stratégies de liens fiables pour protéger votre organisation contre les liens malveillants dans les fichiers Word, Excel, PowerPoint et Visio, ainsi que dans les messages électroniques.
-ms.openlocfilehash: 8fd49eddc402400acafe0f9d702d19c7a3f63949
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: 0acee8ee333c8a8f81ed624c52287c412a25ccbb
+ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394339"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36048076"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configuration des stratégies de liens approuvés Office 365 ATP
 
@@ -97,9 +97,9 @@ Une fois que vous avez révisé (ou modifié) la stratégie de liens approuvés 
     
   - Dans la section **Sélectionnez l’action** , choisissez **activé**.
     
-  - Sélectionnez **utiliser les pièces jointes approuvées pour analyser le contenu**téléchargeable.
+  - Sélectionnez **appliquer l’analyse des URL en temps réel pour les liens suspects et les liens pointant vers des fichiers** si vous souhaitez activer la détonation de l’URL pour les URL suspectes et pointant vers des fichiers (recommandé). Et sélectionnez **attendre que l’analyse des URL se termine avant de remettre le message** si vous souhaitez uniquement que les utilisateurs reçoivent des messages une fois que les URL ont été entièrement analysées.
     
-  - Si cette option est disponible, sélectionnez **appliquer les liens fiables aux messages envoyés au sein de l’organisation**.
+  - Sélectionnez **appliquer les liens fiables aux messages envoyés au sein de l’organisation** si vous souhaitez activer les liens fiables pour les messages envoyés entre les utilisateurs au sein de votre organisation (recommandé).
     
   - Sélectionnez **ne pas autoriser l’utilisateur à cliquer vers l’URL d’origine**.
     

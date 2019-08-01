@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Importer des données non-Office 365 vers un jeu de réexamen dans un cas avancé de découverte électronique.
-ms.openlocfilehash: 37f8c2a5c97452845152e2a12578b9d243ab6711
-ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
+ms.openlocfilehash: d7609c774e7c8a42e24b22a87fbed271a12a97f5
+ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840846"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36048106"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>Charger des données autres qu’Office 365 dans un jeu à réviser
 
@@ -40,7 +40,7 @@ L’utilisation de la fonctionnalité de téléchargement non-Office 365 décrit
 
 - Les données non-Office 365 doivent être un type de fichier pris en charge par Advanced eDiscovery. Pour plus d’informations, consultez la rubrique [types de fichiers pris en charge dans Advanced eDiscovery](supported-filetypes-ediscovery20.md).
 
-- Tous les fichiers téléchargés vers un jeu de révision doivent se trouver dans des dossiers, où chaque dossier est associé à un dépositaire spécifique. Les noms de ces dossiers doivent utiliser le format d’affectation de noms suivant: *alias @ NomDomaine*. L' *alias @ DomainName* doit être l’alias et le domaine Office 365 de l’utilisateur. Vous pouvez collecter tous les dossiers *alias @ NomDomaine* dans un dossier racine. Le dossier racine ne peut contenir que les dossiers *alias @ NomDomaine* . Les fichiers libres dans le dossier racine ne sont pas pris en charge.
+- Tous les fichiers téléchargés vers un jeu de révision doivent se trouver dans des dossiers, où chaque dossier est associé à un dépositaire spécifique. Les noms de ces dossiers doivent utiliser le format d’affectation de noms suivant: *alias @ NomDomaine*. L’alias @ DomainName doit être l’alias et le domaine Office 365 de l’utilisateur. Vous pouvez collecter tous les dossiers alias @ NomDomaine dans un dossier racine. Le dossier racine ne peut contenir que les dossiers alias @ NomDomaine. Les fichiers libres dans le dossier racine ne sont pas pris en charge.
 
    La structure de dossiers pour les données non-Office 365 que vous souhaitez télécharger serait semblable à l’exemple suivant:
 
@@ -54,7 +54,7 @@ L’utilisation de la fonctionnalité de téléchargement non-Office 365 décrit
 
 - Un compte qui est affecté au groupe de rôles gestionnaire eDiscovery (et ajouté en tant qu’administrateur eDiscovery).
 
-- Outils de stockage Microsoft Azure installés sur un ordinateur ayant accès à la structure de dossiers de contenu non Office 365. Pour installer AzCopy, consultez la rubrique [prise en main de AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy). Veillez à installer AzCopy à l’emplacement par défaut, à savoir **% ProgramFiles (x86)% \ Microsoft SDKs\Azure\AzCopy**.
+- L’outil AzCopy v 8.1 installé sur un ordinateur ayant accès à la structure de dossiers de contenu non Office 365. Pour installer AzCopy, consultez [la rubrique transférer des données avec le AzCopy v 8.1 sous Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy). Veillez à installer AzCopy à l’emplacement par défaut, à savoir **% ProgramFiles (x86)% \ Microsoft SDKs\Azure\AzCopy**. Vous devez utiliser AzCopy v 8.1. Il se peut que d’autres versions de AzCopy ne fonctionnent pas lors du chargement de données non-Office 365 dans Advanced eDiscovery.
 
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Chargement de contenu non-Office 365 dans Advanced eDiscovery
@@ -81,14 +81,14 @@ L’utilisation de la fonctionnalité de téléchargement non-Office 365 décrit
 
    a. Dans la zone **chemin d’accès à l’emplacement des fichiers** , vérifiez ou tapez l’emplacement du dossier racine dans lequel vous avez stocké les données non Office 365 que vous souhaitez télécharger. Par exemple, pour l’emplacement des fichiers d’exemple présentés dans la **section avant de commencer**, vous devez taper **%USERPROFILE\Downloads\nonO365**. La fourniture de l’emplacement correct garantit que la commande AzCopy affichée dans la zone sous le chemin est correctement mise à jour.
 
-   b. Cliquez sur **copier dans le presse-papiers** pour copier la commande affichée dans la zone. Démarrez une invite de commandes Windows, collez la commande et appuyez sur entrée.  Les fichiers sont téléchargés vers le stockage BLOB Azure sécurisé pour l’étape suivante.
+   b. Cliquez sur **copier dans le presse-papiers** pour copier la commande affichée dans la zone.
 
 7. Démarrez une invite de commandes Windows, collez la commande que vous avez copiée à l’étape précédente, puis appuyez sur **entrée** pour démarrer la commande AzCopy.  Une fois que vous avez démarré la commande, les fichiers non-Office 365 sont téléchargés vers l’emplacement de stockage Azure préparé à l’étape 4.
 
    ![Importation non-Office 365: AzCopy](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
    > [!NOTE]
-   > Si la commande AzCopy fournie échoue, reportez-vous à la rubrique [Troubleshoot AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md)
+   > Comme indiqué précédemment, vous devez utiliser AzCopy v 8.1 pour utiliser correctement la commande fournie dans la page **Télécharger les fichiers** . Si la commande AzCopy fournie échoue, reportez-vous à la rubrique [Troubleshoot AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
 
 8. Revenez dans le centre de sécurité & conformité, puis cliquez sur **suivant: traiter les fichiers** dans l’Assistant.  Cela lance le traitement, l’extraction de texte et l’indexation des fichiers non-Office 365 qui ont été téléchargés vers l’emplacement de stockage Azure.  
 
