@@ -3,7 +3,7 @@ title: Informations héritées pour le chiffrement de messages Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 01/04/2018
+ms.date: 07/11/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
 description: Si vous n’avez pas encore déplacé votre organisation Office 365 vers les nouvelles fonctionnalités OME, mais que vous avez déjà déployé OME, les informations contenues dans cet article s’appliquent à votre organisation. Microsoft vous recommande de planifier la migration vers les nouvelles fonctionnalités de OME dès que cela est raisonnable pour votre organisation. Pour obtenir des instructions, consultez la rubrique Set up New Office 365 message Encryption Capabilities Built-Top of Azure information protection. Si vous souhaitez en savoir plus sur la façon dont les nouvelles fonctionnalités fonctionnent en premier, consultez la rubrique Office 365 message Encryption. Le reste de cet article fait référence au comportement d’OME avant la publication des nouvelles fonctionnalités OME.
-ms.openlocfilehash: 89d3adfa2672e86dd6f247ad408ccc95ebaf2b7f
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 421a690ee9934368f1611f352bf8c6a75da1d09c
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598920"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054746"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Informations héritées pour le chiffrement de messages Office 365
 
@@ -30,15 +30,15 @@ Avec le chiffrement de messages Office 365, votre organisation peut envoyer et r
 Voici quelques exemples :
   
 - Un employé de la banque envoie des relevés de carte de crédit aux clients.
-    
+
 - Un représentant de société d’assurance fournit des informations de stratégie aux clients
-    
+
 - Un courtier hypothécaire demande des informations financières à un client pour une demande de prêt
-    
+
 - Un fournisseur de soins d’intégrité envoie des informations médicales aux patients.
-    
+
 - Un avocat envoie des informations confidentielles à un client ou à un autre avocat
-    
+
 ## <a name="how-office-365-message-encryption-works-without-the-new-capabilities"></a>Fonctionnement du chiffrement de messages Office 365 sans les nouvelles fonctionnalités
 
 Le chiffrement de messages Office 365 est un service en ligne qui repose sur Microsoft Azure Rights Management (Azure RMS). Avec Azure RMS, les administrateurs peuvent définir des règles de flux de messagerie pour déterminer les conditions de chiffrement. Par exemple, une règle peut exiger le chiffrement de tous les messages adressés à un destinataire spécifique.
@@ -74,13 +74,13 @@ Les destinataires suivent les instructions contenues dans le message pour ouvrir
 En tant qu’administrateur Exchange Online et Exchange Online Protection, vous pouvez personnaliser vos messages chiffrés. Par exemple, vous pouvez ajouter la marque et le logo de votre entreprise, spécifier une introduction et ajouter le texte de la clause d’exclusion de responsabilité dans les messages chiffrés et dans le portail où les destinataires affichent vos messages chiffrés. Avec les cmdlets Windows PowerShell, vous pouvez personnaliser les aspects suivants de l’expérience d’affichage des destinataires de messages électroniques chiffrés :
   
 - Le texte d’introduction du message électronique contenant le message chiffré
-    
+
 - Le texte d’exclusion de responsabilité du message électronique contentant le message chiffré
-    
+
 - Le texte du portail qui apparaîtra dans le portail d’affichage des messages
-    
+
 - Le logo qui apparaîtra dans le message électronique et le portail d’affichage
-    
+
 Vous pouvez également rétablir l’apparence par défaut à tout moment.
   
 L’exemple suivant montre un logo personnalisé pour ContosoPharma dans la pièce jointe d’un message électronique :
@@ -90,9 +90,9 @@ L’exemple suivant montre un logo personnalisé pour ContosoPharma dans la piè
  **Pour personnaliser les messages électroniques de chiffrement et le portail de chiffrement avec la marque de votre organisation**
   
 1. Connectez-vous à Exchange Online à l’aide de Remote PowerShell, comme décrit dans [connexion à Exchange Online à l’aide de Remote PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated).
-    
-2. Utilisez la cmdlet Set-OMEConfiguration comme décrit ici: [Set-OMEConfiguration](http://technet.microsoft.com/en-us/3ef0aec0-ce28-411d-abe8-7236f082af1b) ou utilisez le tableau suivant pour obtenir des instructions. 
-    
+
+2. Utilisez la cmdlet Set-OMEConfiguration comme décrit ici: [Set-OMEConfiguration](http://technet.microsoft.com/en-us/3ef0aec0-ce28-411d-abe8-7236f082af1b) ou utilisez le tableau suivant pour obtenir des instructions.
+
    **Options de personnalisation du chiffrement**
 
 |**Pour personnaliser cette fonctionnalité de l’expérience de chiffrement**|**Utilisez ces commandes Windows PowerShell**|
@@ -101,13 +101,13 @@ L’exemple suivant montre un logo personnalisé pour ContosoPharma dans la piè
 |Déclaration de non-responsabilité du message électronique qui contient le message chiffré  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<your disclaimer statement, string of up to 1024 characters>"` <br/> **Exemple :** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText "This message is confidential for the use of the addressee only"` <br/> |
 |Texte qui s’affiche en haut du portail d’affichage du message chiffré  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<text for your portal, string of up to 128 characters>"` <br/> **Exemple :** `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal"` <br/> |
 |Logo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Exemple :** `Set-OMEConfiguration -Identity "OME configuration" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Formats de fichier pris en charge : .png, .jpg, .bmp ou .tiff  <br/> Taille optimale du fichier de logo : moins de 40 Ko  <br/> Taille optimale de l’image de logo : 170x70 pixels  <br/> |
-   
+
  **Pour supprimer les personnalisations de la marque du chiffrement des messages électroniques et du portail de chiffrement**
   
 1. Connectez-vous à Exchange Online à l’aide de Remote PowerShell, comme décrit dans [connexion à Exchange Online à l’aide de Remote PowerShell](http://technet.microsoft.com/en-us/library/jj984289%28v=exchg.150%29.aspx).
-    
+
 2. Utilisez la cmdlet Set-OMEConfiguration comme décrit ici: [Set-OMEConfiguration](http://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b). Pour supprimer les personnalisations personnalisées de votre organisation des valeurs DisclaimerText, EmailText et PortalText, définissez la valeur sur une chaîne vide, `""`. Pour toutes les valeurs d’image, telles que logo, définissez la `"$null"`valeur sur.
-    
+
    **Options de personnalisation du chiffrement**
 
 |**Pour annuler cette fonctionnalité de chiffrement et rétablir le texte et l’image par défaut**|**Utilisez ces commandes Windows PowerShell**|
@@ -116,7 +116,7 @@ L’exemple suivant montre un logo personnalisé pour ContosoPharma dans la piè
 |Déclaration de non-responsabilité du message électronique qui contient le message chiffré  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **Exemple :** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""` <br/> |
 |Texte qui s’affiche en haut du portail d’affichage du message chiffré  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **Exemple de rétablissement de la valeur par défaut:**`Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""` <br/> |
 |Logo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **Exemple de rétablissement de la valeur par défaut:**`Set-OMEConfiguration -Identity "OME configuration" -Image $null` <br/> |
-   
+
 ## <a name="service-information-for-legacy-office-365-message-encryption-prior-to-the-release-of-the-new-ome-capabilities"></a>Informations sur les services pour le chiffrement de messages Office 365 hérité avant la publication des nouvelles fonctionnalités OME
 <a name="LegacyServiceInfo"> </a>
 
@@ -131,7 +131,7 @@ Le tableau suivant fournit des détails techniques sur le service de chiffrement
 |Stratégies de rétention des messages électroniques Exchange Online  <br/> |Exchange Online ne stocke pas les messages chiffrés.  <br/> |
 |Prise en charge linguistique pour le chiffrement de messages Office 365  <br/> | Le chiffrement de messages Office 365 prend en charge les langues d’Office 365 comme suit :  <br/>  Les messages électroniques entrants et les fichiers HTML joints sont localisés en fonction des paramètres de langue de l’expéditeur.  <br/>  Le portail d’affichage est localisé en fonction des paramètres de navigateur du destinataire.  <br/>  Le corps (contenu) du message chiffré n’est pas localisé.  <br/> |
 |Informations de confidentialité pour le portail OME et l’application Visionneuse OME  <br/> |La [Office 365 Messaging Encryption Portal privacy statement](protected-message-viewer-portal-privacy-statement.md) fournit des informations détaillées sur ce que fait et ne fait pas Microsoft avec vos informations privées.  <br/> |
-   
+
 ## <a name="frequently-asked-questions-about-legacy-ome"></a>Forum aux questions sur les OME héritées
 <a name="LegacyServiceInfo"> </a>
 
@@ -142,9 +142,9 @@ Vous avez des questions sur le chiffrement de messages Office 365? Voici les ré
 Les destinataires externes à votre organisation qui reçoivent des messages chiffrés Office 365 peuvent les afficher de l’une des deux manières suivantes :
   
 - En vous connectant avec un compte Microsoft ou un compte professionnel ou scolaire associé à Office 365.
-    
+
 - À l’aide d’un code d’accès unique.
-    
+
  **Q. Les messages électroniques chiffrés Office 365 sont-ils stockés dans le nuage ou sur les serveurs Microsoft ?**
   
 Non, les messages chiffrés sont conservés sur le système de courrier du destinataire, et lorsque le destinataire ouvre le message, il est temporairement publié pour l’affichage sur les serveurs Office 365. Les messages électroniques n’y sont pas stockés.
@@ -159,7 +159,7 @@ Une licence est obligatoire pour chaque utilisateur de l’organisation qui envo
   
  **Q. Les destinataires externes exigent-ils des abonnements ?**
   
-Non, les destinataires externes n’ont pas besoin d’un abonnement pour lire ou répondre à des messages chiffrés. 
+Non, les destinataires externes n’ont pas besoin d’un abonnement pour lire ou répondre à des messages chiffrés.
   
  **Q. Comment le chiffrement de messages Office 365 est-il différent des services RMS (Rights Management Services)?**
   
@@ -186,12 +186,12 @@ Le contenu HTML et les messages électroniques entrants sont localisés en fonct
 Le chiffrement de messages Office 365 utilise Rights Management Services (RMS) comme infrastructure de chiffrement. La méthode de chiffrement utilisée dépend de l’endroit où vous obtenez les clés RMS servant à chiffrer et déchiffrer les messages.
   
 - Si vous utilisez Microsoft Azure RMS pour obtenir les clés, le mode de chiffrement 2 est utilisé. Le mode de chiffrement 2 est un processus de chiffrement AD RMS amélioré et mis à jour. Il prend en charge RSA 2048 pour la signature et le chiffrement, et SHA 256 pour la signature.
-    
+
 - Si vous utilisez Active Directory (AD) RMS pour obtenir les clés, le mode de chiffrement 1 ou 2 est utilisé. La méthode utilisée dépend de votre déploiement AD RMS local. Le mode de chiffrement 1 est le processus de chiffrement d’origine AD RMS. Il prend en charge RSA 1024 pour la signature et le chiffrement, et SHA-1 pour la signature. Ce mode est encore pris en charge par toutes les versions actuelles de RMS.
-    
+
 Pour plus d’informations, consultez la rubrique [AD RMS Cryptographic modes](http://go.microsoft.com/fwlink/p/?LinkId=398616).
   
- **Q. Pourquoi certains messages chiffrés déclarent-ils provenir de l’adresse Office365@messaging.microsoft.com ?**
+ **Q. pourquoi certains messages chiffrés disent-ils qu’ils proviennent de** office365@messaging.microsoft.com?
   
 Lorsqu’une réponse chiffrée est envoyée à partir du portail de chiffrement ou via l’application Visionneuse OME, l’adresse de messagerie de l’expéditeur est définie sur Office365@messaging.microsoft.com, car le message chiffré est envoyé par le biais d’un point de terminaison Microsoft. Cela permet d’éviter que les messages chiffrés soient marqués comme courrier indésirable. Le nom affiché dans le message électronique et l’adresse dans le portail de chiffrement ne sont pas modifiés en raison de cet étiquetage. En outre, cet étiquetage s’applique uniquement aux messages envoyés via le portail, et non par le biais de n’importe quel autre client de messagerie.
   
@@ -205,7 +205,7 @@ Oui. Vous devez ajouter des URL à la liste d’adresses autorisées pour Exchan
   
  **Q : À combien de destinataires puis-je envoyer un message chiffré par Office 365 ?**
   
-Le nombre maximal de destinataires pour un message chiffré est basé sur le nombre de caractères contenus dans le champ **à** . Lorsqu’elles sont combinées (après extension de la liste de distribution), les adresses des destinataires du champ **À** ne doivent pas dépasser 11 980 caractères. Étant donné que les adresses de messagerie peuvent varier en caractères, il n’existe pas de limite de destinataires standard pour un seul message chiffré. 
+La limite de destinataires est de 500 destinataires par message ou, si elle est combinée après l’expansion de la liste **** de distribution, 11 980 caractères dans le champ du message, selon le premier cas.
   
  **Q : Est-il possible de révoquer un message envoyé à un destinataire particulier ?**
   
@@ -217,6 +217,5 @@ Il n’existe pas de rapport qui indique si un message chiffré a été affiché
   
  **Q. Que fait Microsoft des informations que je fournis par le biais du portail OME et de l’application Visionneuse OME ?**
   
-La [déclaration de confidentialité du portail de chiffrement de messagerie Office 365](protected-message-viewer-portal-privacy-statement.md) fournit des informations détaillées sur ce que Microsoft fait et ne fait pas avec vos informations personnelles. 
-  
-
+La [déclaration de confidentialité du portail de chiffrement de messagerie Office 365](protected-message-viewer-portal-privacy-statement.md) fournit des informations détaillées sur ce que Microsoft fait et ne fait pas avec vos informations personnelles.
+ 

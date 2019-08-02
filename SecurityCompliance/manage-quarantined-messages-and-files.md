@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'En tant qu’administrateur, vous pouvez afficher, publier et signaler des messages en quarantaine faux positifs dans Office 365. Vous pouvez configurer des stratégies pour qu’Office 365 filtre les messages et les envoie à la mise en quarantaine pour plusieurs raisons: ils ont été identifiés comme courrier indésirable, en bloc, par hameçonnage, par programme malveillant ou parce qu’ils correspondent à une règle de flux de messagerie. '
-ms.openlocfilehash: 245068b7d3ec51cbca887883f791b19ea116731a
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: dda6766ec5fa7858abef0037f0a67ec8869abd59
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598800"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054716"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Gestion des messages et des fichiers mis en quarantaine en tant qu’administrateur dans Office 365
 
@@ -29,14 +29,14 @@ En tant qu’administrateur, vous pouvez afficher, publier et supprimer des mess
   
 Par défaut, Office 365 envoie les messages de hameçonnage et les messages contenant des programmes malveillants directement en quarantaine. Les autres messages filtrés sont envoyés dans le dossier de courrier indésirable des utilisateurs, sauf si vous configurez une stratégie pour les envoyer en quarantaine.
   
-Vous devez disposer des autorisations d’administrateur général (GA) dans Office 365 ou administrateur de sécurité dans le centre de sécurité et conformité pour travailler avec des messages mis en quarantaine qui ont été envoyés à d’autres utilisateurs et pour utiliser des fichiers mis en quarantaine.
+Vous devez disposer des autorisations d’administrateur général (GA) dans Office 365 ou être membre d’un ou de plusieurs groupes de rôles Security & Compliance Center pour travailler avec des messages mis en quarantaine ou mis en quarantaine. Pour plus d’informations, consultez [la rubrique autorisations dans le centre de conformité & Office 365 Security](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center) .
   
 > [!IMPORTANT]
 >Par défaut, les messages de courrier indésirable et de phishing sont conservés en quarantaine pendant 30 jours. Les messages mis en quarantaine en raison d’une correspondance avec une règle de flux de messagerie sont conservés en quarantaine pendant 7 jours. Les messages malveillants sont maintenus en quarantaine pendant 15 jours. Vous pouvez personnaliser la durée de mise en quarantaine du courrier indésirable dans les &amp; paramètres de blocage du courrier indésirable dans le centre de sécurité conformité. Lorsque Office 365 supprime un message de la mise en quarantaine, vous ne pouvez pas le récupérer. Si vous le souhaitez, vous pouvez modifier la période de rétention des messages mis en quarantaine dans vos stratégies de filtrage du courrier indésirable. Pour plus d’informations, reportez-vous à [la rubrique définition de la période](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) de rétention de quarantaine dans cet article. 
   
 ## <a name="view-your-organizations-quarantined-messages"></a>Afficher les messages mis en quarantaine de votre organisation
 
-1. À l’aide d’un compte professionnel ou scolaire doté de privilèges d’administrateur général dans votre organisation Office 365, connectez-vous à Office 365 et [accédez au centre de sécurité et de conformité](go-to-the-securitycompliance-center.md).
+1. À l’aide d’un compte professionnel ou scolaire disposant de privilèges d’administrateur général (ou des rôles de centre de sécurité & conformité appropriés) dans votre organisation Office 365, connectez-vous à Office 365 et [accédez au centre de sécurité et de conformité](go-to-the-securitycompliance-center.md).
     
 2. Dans la liste de gauche, développez **gestion des menaces**, **** réviser, puis **mettre en quarantaine**.
     
@@ -189,7 +189,7 @@ Vous pouvez configurer la durée de mise en quarantaine des messages et des fich
   
 ### <a name="to-modify-the-quarantine-retention-period-for-the-default-spam-filter-policy-in-the-security-and-compliance-center"></a>Pour modifier la période de rétention de quarantaine pour la stratégie de filtrage du courrier indésirable par défaut dans le centre de sécurité et de conformité
 
-1. À l’aide d’un compte professionnel ou scolaire doté de privilèges d’administrateur général dans votre organisation Office 365, connectez-vous à Office 365 et [accédez au centre de sécurité et de conformité](go-to-the-securitycompliance-center.md).
+1. À l’aide d’un compte professionnel ou scolaire doté de privilèges d’administrateur général (ou des rôles de centre de sécurité & conformité appropriés) dans votre organisation Office 365, connectez-vous à Office 365 et [accédez au centre de sécurité et de conformité](go-to-the-securitycompliance-center.md).
     
 2. Sur la gauche, développez **gestion des menaces**, choisissez **stratégie**, puis **blocage du courrier**indésirable. <br/>
     > [!TIP]

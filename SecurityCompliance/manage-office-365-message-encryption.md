@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Une fois que vous avez terminé la configuration d’Office 365 message Encryption (OME), vous pouvez personnaliser la configuration de votre déploiement de plusieurs façons. Par exemple, vous pouvez configurer s’il faut activer des codes de passe unique, afficher le bouton protéger dans Outlook sur le Web, et bien plus encore. Les tâches décrites dans cet article expliquent comment procéder.
-ms.openlocfilehash: f19556f88783eed86bd33a7fdcbd1efae18c3ef3
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 9b59e352131121978ae6a523cc07ea40196e8038
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852528"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054696"
 ---
 # <a name="manage-office-365-message-encryption"></a>Gérer le chiffrement de messages Office 365
 
@@ -133,6 +133,9 @@ Pour plus d’informations et pour une vue de l’expérience client, consultez 
    ```powershell
    Set-ActiveSyncOrganizationSettings -AllowRMSSupportForUnenlightenedApps $false
    ```
+> [!NOTE]
+
+> Les stratégies de boîte aux lettres individuelles (OWA/ActiveSync) remplacent ces paramètres (par exemple, si-IRMEnabled est défini sur false dans la stratégie de boîte aux lettres OWA correspondante ou dans la stratégie de boîte aux lettres ActiveSync, ces configurations ne s’appliquent pas).
 
 ## <a name="enable-service-side-decryption-of-email-attachments-for-web-browser-mail-clients"></a>Activer le déchiffrement côté service des pièces jointes de courrier électronique pour les clients de messagerie de navigateur Web
 

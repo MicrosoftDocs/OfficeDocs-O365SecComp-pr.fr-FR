@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Utilisez le centre de sécurité & conformité pour rechercher le journal d’audit unifié afin d’afficher l’activité des utilisateurs et des administrateurs dans votre organisation Office 365. '
-ms.openlocfilehash: 5ba3659f8e6b004020b5270b62a40415e64ba96c
-ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
+ms.openlocfilehash: d2e099343581c8842551491eb885534cbcbc961b
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35854808"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054776"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Rechercher dans le journal d’audit dans le centre de sécurité & conformité
 
@@ -140,6 +140,9 @@ Voici le processus de recherche dans le journal d’audit dans Office 365.
 [Étape 3: filtrer les résultats de la recherche](#step-3-filter-the-search-results)
 
 [Étape 4: exporter les résultats de la recherche dans un fichier](#step-4-export-the-search-results-to-a-file)
+
+
+
   
 ### <a name="step-1-run-an-audit-log-search"></a>Étape 1: exécuter une recherche de journal d’audit
 
@@ -787,6 +790,13 @@ Voici quelques conseils pour rechercher des activités d’administration d’Ex
   
 - Pour obtenir des informations sur la cmdlet qui a été exécutée, les paramètres et les valeurs des paramètres qui ont été utilisés, ainsi que les objets affectés, vous pouvez exporter les résultats de la recherche en sélectionnant l’option **Télécharger tous les résultats** . Pour plus d’informations, consultez la rubrique [Exporter, configurer et afficher les enregistrements du journal d’audit](export-view-audit-log-records.md). 
     
+
+- Vous pouvez également afficher les événements dans le journal d’audit de l’administrateur Exchange à l’aide du centre d’administration Exchange. Pour obtenir des instructions, consultez [la rubrique afficher le journal d’audit de l’administrateur](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx).
+
+> [!IMPORTANT]
+>  Pour rechercher et suivre l’utilisation d’Exchange Online Administrator privilegies, utilisez l’applet de commande *Search-AdminAuditLog* sur la *recherche-UnifiedAuditLog*.
+
+
 - Vous pouvez également utiliser la `Search-UnifiedAuditLog -RecordType ExchangeAdmin` commande dans Exchange Online PowerShell pour renvoyer uniquement des enregistrements d’audit à partir du journal d’audit de l’administrateur Exchange. Une applet de commande Exchange est exécutée pour que l’entrée du journal d’audit correspondante soit renvoyée dans les résultats de la recherche. Pour plus d’informations, consultez la rubrique [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog). Pour plus d’informations sur l’exportation des résultats de la recherche renvoyés par la cmdlet **Search-UnifiedAuditLog** dans un fichier CSV, consultez la section «conseils pour l’exportation et l’affichage du journal d’audit» dans [Exporter, configurer et afficher les enregistrements du journal d’audit](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
 - Vous pouvez également afficher les événements dans le journal d’audit de l’administrateur Exchange à l’aide du centre d’administration Exchange ou en exécutant la commande **Search-AdminAuditLog** dans Exchange Online PowerShell. Pour obtenir des instructions, voir :

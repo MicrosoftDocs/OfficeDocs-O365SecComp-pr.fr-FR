@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Découvrez l’Explorateur (et les détections en temps réel) dans le &amp; Centre de sécurité conformité.
-ms.openlocfilehash: 127652ccb1c32ce84d8c80213d737b095913db40
-ms.sourcegitcommit: 5abe4c11bf3c0659180c7812dd26be9689ab01ca
+ms.openlocfilehash: dff1fae01aa525135226d88b305de7c7c3aefb7c
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35605473"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054756"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces (et détections en temps réel)
 
@@ -170,3 +170,8 @@ Pour en savoir plus sur les rôles et les autorisations, consultez les ressource
 - [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 - [Autorisations des fonctionnalités dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
   
+## <a name="some-differences-between-real-time-detection-and-threat-exporter"></a>Différences entre la détection en temps réel et l’exportateur de menace.
+
+ - **Le rapport de détection en temps réel** est fourni avec un abonnement à la protection avancée contre les menaces, tandis que l' **Explorateur de menaces** est fourni avec ATP P2.
+ - Le rapport de **détections en temps réel** vous permet d’afficher les détections en temps réel, tandis que les rapports de l’Explorateur de menaces vous permettent d’obtenir plus de détails dans une attaque donnée.
+ - Les rapports **Threat Explorer** offrent différents ensembles de rapports qui améliorent votre expérience en matière de rapports de **détecteur en temps réel** .

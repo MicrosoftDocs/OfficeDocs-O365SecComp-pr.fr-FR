@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: La définition des utilisateurs de messagerie constitue une partie importante de la gestion du service Exchange Online Protection (EOP).
-ms.openlocfilehash: 520ca0fb48a131026d9a46138605892203bf6e93
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 6d982b635513050d931397bbc517ae3d76ee3752
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599600"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054726"
 ---
 # <a name="manage-mail-users-in-eop"></a>Gestion des utilisateurs de messagerie dans EOP
 
@@ -64,11 +64,9 @@ Obtenez les autorisations nécessaires et préparez la synchronisation d'annuair
     > [!IMPORTANT]
     > Après exécution de l'Assistant Configuration de l'outil de synchronisation Azure Active Directory, le compte **MSOL_AD_SYNC** est créé dans votre forêt Active Directory. Ce compte permet de lire et de synchroniser vos informations Active Directory sur site. Pour que la synchronisation d'annuaires fonctionne correctement, assurez-vous que le port TCP 443 est ouvert sur votre serveur de synchronisation d'annuaires sur site. 
   
-4. Activez les utilisateurs synchronisés, comme décrit dans la rubrique [Activer les utilisateurs synchronisés](http://go.microsoft.com/fwlink/p/?LinkId=308913).
+  4. Gérez la synchronisation d'annuaires, comme décrit dans la rubrique [Gérer la synchronisation d'annuaires](http://go.microsoft.com/fwlink/p/?LinkId=308915).
     
-5. Gérez la synchronisation d'annuaires, comme décrit dans la rubrique [Gérer la synchronisation d'annuaires](http://go.microsoft.com/fwlink/p/?LinkId=308915).
-    
-6. Vérifiez qu'EOP effectue la synchronisation correctement. Dans le CAE, accédez à **Destinataires** \> **Contacts** et vérifiez que la liste des utilisateurs a été correctement synchronisée à partir de votre environnement local. 
+  5. Vérifiez qu'EOP effectue la synchronisation correctement. Dans le CAE, accédez à **Destinataires** \> **Contacts** et vérifiez que la liste des utilisateurs a été correctement synchronisée à partir de votre environnement local. 
     
 ## <a name="use-the-eac-to-manage-mail-users"></a>Utilisation du CAE pour gérer les utilisateurs de messagerie
 
