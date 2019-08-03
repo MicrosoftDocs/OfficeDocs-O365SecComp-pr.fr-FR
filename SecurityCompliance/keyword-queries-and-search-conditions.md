@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Découvrez les propriétés de messagerie et de fichier que vous pouvez rechercher dans les boîtes aux lettres Exchange Online et dans SharePoint ou OneDrive entreprise à l’aide de l’outil de recherche de contenu dans le centre de conformité & Compliance Center.  '
-ms.openlocfilehash: 2d9cc41b4e0f8139db385a9614d3022230cda50d
-ms.sourcegitcommit: f96029928a6cdd141783026d57bc2179d7963af6
+ms.openlocfilehash: 70f005d6875735dfe95e10bf4487c8e1373431ea
+ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017646"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36168182"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Requêtes par mots clés et conditions de recherche pour la recherche de contenu
 
@@ -70,7 +70,7 @@ Le tableau suivant répertorie les propriétés de message électronique pouvant
 |||||
    
 > [!NOTE]
-> <sup>1</sup> pour la valeur d’une propriété de destinataire, vous pouvez utiliser l’adresse de messagerie (également appelée *nom d’utilisateur principal* ou UPN), le nom d’affichage ou l’alias pour spécifier un utilisateur. Par exemple, vous pouvez utiliser annb@contoso.com, annb ou « Ann Beebe » pour spécifier l'utilisateur Ann Beebe.<br/><br/>Lors de la recherche dans n’importe quelle propriété du destinataire (de, à, CC, CCI, participants et destinataires), Office 365 tente de développer l’identité de chaque utilisateur en le recherchant dans Azure Active Directory.  Si l’utilisateur est trouvé dans Azure Active Directory, la requête est étendue de manière à inclure l’adresse de messagerie (ou UPN), l’alias, le nom d’affichage et le LegacyExchangeDN de l’utilisateur.<br/><br/>Par exemple, une requête telle que `participants:ronnie@contoso.com` Expands to `participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"`.
+> <sup>1</sup> pour la valeur d’une propriété de destinataire, vous pouvez utiliser l’adresse de messagerie (également appelée *nom d’utilisateur principal* ou UPN), le nom d’affichage ou l’alias pour spécifier un utilisateur. Par exemple, vous pouvez utiliser annb@contoso.com, annb ou « Ann Beebe » pour spécifier l'utilisateur Ann Beebe.<br/><br/>Lors de la recherche dans n’importe quelle propriété du destinataire (de, à, CC, CCI, participants et destinataires), Office 365 tente de développer l’identité de chaque utilisateur en le recherchant dans Azure Active Directory.  Si l’utilisateur est trouvé dans Azure Active Directory, la requête est étendue de manière à inclure l’adresse de messagerie (ou UPN), l’alias, le nom d’affichage et le LegacyExchangeDN de l’utilisateur.<br/><br/>Par exemple, une requête telle que `participants:ronnie@contoso.com` Expands to `participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"`.<br/><br/>Pour empêcher l’expansion des destinataires, vous pouvez ajouter un caractère générique (astérisque) à la fin de l’adresse de messagerie dans la requête de recherche; par exemple, `participants:ronnie@contoso.com*`.
 
 ## <a name="searchable-site-properties"></a>Propriétés de site utilisables dans une requête
 

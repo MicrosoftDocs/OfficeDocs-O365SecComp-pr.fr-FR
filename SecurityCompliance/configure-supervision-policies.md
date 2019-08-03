@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurez des stratégies de vérification de surveillance pour capturer les communications des employés à des fins de révision.
-ms.openlocfilehash: 4cf8c47f761f13165898cbc719f94e9bf9fd66f2
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 9cc13cb953d8166ceac04856fa8b54d0a4629bd6
+ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151536"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36168172"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurer des stratégies de surveillance pour votre organisation
 
@@ -53,7 +53,7 @@ Procédez comme suit pour configurer et utiliser la surveillance dans votre orga
 
     Testez votre stratégie de surveillance pour vous assurer qu’elle fonctionne comme vous le souhaitez. Il est important de s’assurer que la stratégie de conformité répond à vos normes.
 
-- **Étape 6 (facultatif)**: [configurer Outlook pour les relecteurs qui ne souhaitent pas utiliser le tableau de bord de surveillance Office 365 ou Outlook sur le Web (anciennement appelé Outlook Web App) pour consulter les communications surveillées](#step-6-configure-outlook-for-reviewers-optional)
+- **Étape 6 (facultatif)**: [configurer Outlook pour les relecteurs qui ne souhaitent pas utiliser le tableau de bord de surveillance Office 365 pour consulter les communications surveillées](#step-6-configure-outlook-for-reviewers-optional)
 
     Configurez Outlook pour donner aux réviseurs l’accès à la fonctionnalité de supervision dans le client Outlook afin qu’ils puissent évaluer et catégoriser chaque élément.
 
@@ -68,6 +68,8 @@ Utilisez le tableau suivant pour vous aider à configurer les groupes de votre o
 |Utilisateurs supervisés <br> Utilisateurs non supervisés | Groupes de distribution <br> Groupes Office 365 | Groupes de distribution dynamique |
 | Relecteurs | Groupes de sécurité à extension messagerie  | Groupes de distribution <br> groupes de distribution dynamiques |
   
+Lorsque vous sélectionnez un groupe Office 365 pour les utilisateurs supervisés, la stratégie surveille le contenu de la boîte aux lettres Office 365 partagée et les canaux Microsoft teams associés au groupe. Lorsque vous sélectionnez une liste de distribution, la stratégie analyse les boîtes aux lettres des utilisateurs individuels.
+
 Pour gérer les utilisateurs supervisés dans les grandes organisations d’entreprise, il se peut que vous deviez surveiller tous les utilisateurs entre les grands groupes. Vous pouvez utiliser PowerShell pour configurer un groupe de distribution pour une stratégie de surveillance globale pour le groupe affecté. Cela vous permet de surveiller des milliers d’utilisateurs à l’aide d’une seule stratégie et de mettre à jour la stratégie de supervision lorsque de nouveaux employés rejoignent votre organisation.
 
 1. Créez un [groupe de distribution](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps) dédié pour votre stratégie de surveillance globale avec les propriétés suivantes: Assurez-vous que ce groupe de distribution n’est pas utilisé à d’autres fins ou d’autres services Office 365.
@@ -143,7 +145,7 @@ Utilisez un éditeur de texte (comme le bloc-notes) pour créer un fichier qui i
 
 ### <a name="create-custom-sensitive-information-types"></a>Créer des types d’informations sensibles personnalisés
 
-1. Créez un nouveau type d’informations sensibles et ajoutez votre dictionnaire personnalisé dans le centre de sécurité & de la sécurité d’Office 365. Naviguez **** \> jusqu’à types d' **informations sensibles** sur les classifications et suivez les étapes de l' **Assistant Nouveau type d’informations sensibles**. Ici, vous allez:
+1. Créez un nouveau type d’informations sensibles et ajoutez votre dictionnaire personnalisé dans le centre de conformité Office 365 Security &. Naviguez **** \> jusqu’à types d' **informations sensibles** sur les classifications et suivez les étapes de l' **Assistant Nouveau type d’informations sensibles**. Ici, vous allez:
 
     - Définir un nom et une description pour le type d’informations sensibles
     - Définir les éléments de proximité, de niveau de confiance et de modèle principal
@@ -189,7 +191,7 @@ Les relecteurs qui souhaitent utiliser Outlook au lieu du tableau de bord de sur
 
 ### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>Étape 1: Copiez l’adresse de la boîte aux lettres de supervision
 
-Pour configurer la révision pour le bureau Outlook ou pour Outlook pour le Web, vous avez besoin de l’adresse de la boîte aux lettres de surveillance créée dans le cadre de la configuration de la stratégie de supervision.
+Pour configurer la révision pour le bureau Outlook, vous avez besoin de l’adresse de la boîte aux lettres de surveillance créée dans le cadre de la configuration de la stratégie de supervision.
   
 > [!NOTE]
 > Si une autre personne a créé la stratégie, vous devez obtenir cette adresse auprès de celle-ci pour installer le complément.
