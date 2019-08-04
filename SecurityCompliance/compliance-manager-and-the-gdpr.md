@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: a082d069aced13aa9260a1a856d942c4feb7dd4b
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: af0efa2711215946930c091fc7c38cc1b9f575fd
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152091"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786649"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Gestionnaire de conformité Microsoft et RGPD
 
-Le règlement général sur la protection des données (RGPD) mis en oeuvre par l’Union européenne peut influer sur la stratégie de conformité et les actions requises pour gérer les informations utilisateur et client utilisées dans le gestionnaire de conformité.
+Le règlement général sur la protection des données (RGPD), traité par l’Union européenne, peut avoir un impact sur votre stratégie de conformité et imposer des actions spécifiques pour gérer les informations utilisateur et client utilisées dans le gestionnaire de conformité.
 
 ## <a name="user-privacy-settings"></a>Paramètres de confidentialité de l’utilisateur
 
@@ -59,7 +59,7 @@ Pour chaque compte d’utilisateur identifié, vous pouvez générer un rapport 
 3. Ouvrez le document pour consulter les données du rapport.
 
 > [!IMPORTANT]
-> Il ne s’agit pas d’un rapport d’historique qui conserve et affiche les modifications d’État apportées à l’historique des affectations d’éléments d’action. Le rapport généré est une capture instantanée des éléments d’action de contrôle affectés lors de l’exécution du rapport (horodatage écrit dans le rapport). Par exemple, toute réaffectation ultérieure d’éléments d’action entraîne des données de rapport de capture instantanée différentes si ce rapport est de nouveau généré pour le même utilisateur.
+> Les données de rapport ne sont pas une liste historique qui conserve et affiche les modifications d’État apportées à l’historique des affectations d’éléments d’action. Le rapport généré est une capture instantanée des éléments d’action de contrôle affectés lors de l’exécution du rapport (horodatage écrit dans le rapport). Par exemple, toute réaffectation ultérieure d’éléments d’action entraîne des données de rapport de capture instantanée différentes si le rapport est régénéré pour le même utilisateur.
   
 ## <a name="delete-user-data-history"></a>Supprimer l’historique des données d’un utilisateur
 

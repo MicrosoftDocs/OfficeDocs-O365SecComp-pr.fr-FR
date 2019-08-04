@@ -2,7 +2,7 @@
 title: Soumission des messages indésirables, légitimes ou des tentatives de hameçonnage à Microsoft pour analyse
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 04/19/2019
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Vous et vos utilisateurs pouvez soumettre des messages indésirables faux positifs et faux positifs à Microsoft pour analyse. '
-ms.openlocfilehash: 8949e3422b62a5bca0b72be8168054d8c1b96a70
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 4ca0cf08a2c24ce077756a4c481afd7af59b20a7
+ms.sourcegitcommit: 73d4cbcf7389935a04d2e451903ef14ebb38e096
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156456"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35638473"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Soumission des messages indésirables, légitimes ou des tentatives de hameçonnage à Microsoft pour analyse
 
@@ -27,6 +27,8 @@ Il peut être frustrant lorsque les utilisateurs de votre organisation reçoiven
   
 > [!NOTE]
 > En raison du volume élevé des envois que nous recevons, il se peut que nous ne parvenons pas à répondre à toutes les demandes d’analyse. 
+
+Les administrateurs peuvent envoyer des courriers électroniques, des URL et des pièces jointes à Microsoft à des fins de révision. Consultez la rubrique [envois administratifs dans Office 365 ATP](admin-submission.md).
   
 ## <a name="submit-junk-or-phishing-messages-that-passed-through-the-spam-filters"></a>Soumettre des courriers indésirables ou des tentatives de hameçonnage passés à travers les filtres de courrier indésirable
 <a name="sectionSection0"> </a>

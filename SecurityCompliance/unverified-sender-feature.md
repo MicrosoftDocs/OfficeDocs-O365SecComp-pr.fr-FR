@@ -3,7 +3,7 @@ title: Expéditeur non vérifié
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 04/25/2019
+ms.date: 07/11/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +13,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Pour empêcher les messages de hameçonnage d’atteindre votre boîte aux lettres, Outlook.com et Outlook sur le Web Vérifiez que l’expéditeur est bien ce qu’il dit, et marquez les messages suspects comme courrier indésirable.
-ms.openlocfilehash: a69af1efb634e1805f055d49ec5515f4b4252c3b
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 233474dbfff430be8dd95d513adeb257bb26c5c7
+ms.sourcegitcommit: 9e2df36b05a2c93ce2629a7a5eda8f44159d114d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600260"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35628507"
 ---
 # <a name="unverified-sender"></a>Expéditeur non vérifié
+
+> [!NOTE] 
+> Ces mises à jour s’exécutent désormais et peuvent ne pas encore être disponibles pour tous les utilisateurs.
 
 Pour empêcher les messages de hameçonnage d’atteindre votre boîte aux lettres, Outlook.com et Outlook sur le Web Vérifiez que l’expéditeur est bien ce qu’il dit, et marquez les messages suspects comme courrier indésirable.
 
@@ -35,7 +38,7 @@ Outlook.com et Outlook sur le Web affichent des indicateurs lorsque l’expédit
 
 Si vous êtes un client Office 365, vous pouvez gérer cette fonctionnalité via le centre de sécurité & conformité. 
 
-- Dans le centre de conformité Office 365 Security &, les administrateurs du client peuvent activer ou désactiver la fonctionnalité de protection contre l’usurpation d’identité dans le cadre de la stratégie anti-hameçonnage. En outre, elle peut être gérée via la cmdlet «Set-Antiphishpolicy permet». Pour plus d’informations, consultez la rubrique anti-phishing protection in Office 365 et Set-Antiphishpolicy permet.
+- Dans le centre de conformité Office 365 Security &, les administrateurs globaux ou de sécurité peuvent activer ou désactiver la fonctionnalité via la protection contre l’usurpation d’identité dans le cadre de la stratégie anti-hameçonnage. En outre, elle peut être gérée via la cmdlet «Set-Antiphishpolicy permet». Pour plus d’informations, consultez la rubrique [anti-phishing protection in Office 365](anti-phishing-protection.md) et [Set-antiphishpolicy permet](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy?view=exchange-ps).
 
     ![Modification des expéditeurs non authentifiés dans l’interface graphique.](media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 

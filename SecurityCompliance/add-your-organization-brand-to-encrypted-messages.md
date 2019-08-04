@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: En tant qu’administrateur général Office 365, vous pouvez appliquer la personnalisation de votre organisation aux messages électroniques chiffrés de votre organisation et au contenu du portail de chiffrement.
-ms.openlocfilehash: 19f227971c522f9d92aec343f1865ab7f23c13aa
-ms.sourcegitcommit: b0ea2d66bc4c7f2fc0a8abab28d2ae652b1c4b73
+ms.openlocfilehash: dd08ffad4a50cafd90f2306645e93e623b8076cd
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34721371"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792060"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>Ajouter la marque de votre organisation à vos messages chiffrés
 
@@ -122,7 +122,7 @@ Pour plus d’informations sur la création d’une règle de flux de messagerie
 
 2. Sélectionnez la vignette **admin** .
 
-3. Dans le Centre d'administration Office 365, choisissez **Centres d'administration** \> **Exchange**.
+3. Dans le centre d’administration 365 de Microsoft, sélectionnez **centres** \> d’administration **Exchange**.
 
 4. Dans le centre d’administration Exchange, accédez à **règles** de **flux** \> de messagerie et sélectionnez **nouvelle** ![icône](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **créer une nouvelle règle**. Pour plus d’informations sur l’utilisation du centre d’administration Exchange, consultez la rubrique [Exchange Admin Center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez les demandes de référentiel sécurisé du client qui vous permettent de contrôler la manière dont un technicien du support technique Microsoft peut accéder à vos données lorsque vous rencontrez un problème.
-ms.openlocfilehash: f3cfdec6521cd5fe0bcb7007b27ce128ae3b2a1d
-ms.sourcegitcommit: 62447503300376aa95dd05fb5276f93a9f6a20b6
+ms.openlocfilehash: 2cbf19ad3c648373704c379794e24590fcb6d290
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "34927577"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786619"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Référentiel sécurisé du client dans Office 365
 
@@ -226,7 +226,7 @@ Les administrateurs globaux et tout utilisateur qui a attribué le rôle d’adm
 
 Les administrateurs globaux et quiconque disposant du rôle d’administrateur d’approbation d’accès au client peuvent approuver les demandes du client Lockbox. Les clients contrôlent ces attributions de rôles dans leur organisation.
 
-#### <a name="how-do-i-opt-in-to-customer-lockbox"></a>Comment puis-je opter pour le référentiel sécurisé du client?
+#### <a name="how-do-i-opt-in-to-customer-lockbox"></a>Comment puis-je choisir de cliquer sur le référentiel sécurisé du client?
 
 Un administrateur général peut activer et configurer le référentiel sécurisé du client dans le centre d’administration Microsoft 365 ou Microsoft 365.
 

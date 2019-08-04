@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: La fonctionnalité liens fiables permet de vérifier le temps de cliquer sur les liens hypertexte dans les documents Office et dans les messages électroniques. Lisez cet article pour découvrir le fonctionnement des liens fiables ATP.
-ms.openlocfilehash: 7570fd65a9831a6436eec8c402a2bc0c2ae09b40
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 67779560e279028c158179c265196199b5d37d1c
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599180"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792040"
 ---
 # <a name="how-office-365-atp-safe-links-works"></a>Fonctionnement des liaisons approuvées ATP Office 365
          
@@ -49,9 +49,9 @@ ms.locfileid: "35599180"
     
 ## <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>Fonctionnement des liaisons approuvées ATP avec les URL des documents Office
 
-À un niveau élevé, voici le fonctionnement de la protection [des liens fiables ATP](atp-safe-links.md) pour les URL dans les applications Office 365 ProPlus (versions actuelles de Word, Excel et PowerPoint sur Windows ou Mac, les applications Office sur les appareils iOS ou Android, Visio sur Windows, OneNote Online et Office En ligne):
+À un niveau élevé, voici le fonctionnement de la protection [des liens fiables ATP](atp-safe-links.md) pour les URL dans les applications Office 365 ProPlus (versions actuelles de Word, Excel et PowerPoint sur Windows ou Mac, les applications Office sur les appareils iOS ou Android, Visio sur Windows, OneNote dans un navigateur et Office dans un navigateur):
   
-1. Les utilisateurs ont installé Office 365 ProPlus sur leur ordinateur, smartphone ou tablette. (Ou, ils utilisent Office Online dans leur navigateur.)
+1. Les utilisateurs ont installé Office 365 ProPlus sur leur ordinateur, smartphone ou tablette. (Ou, ils utilisent Office dans leur navigateur.)
     
 2. Un utilisateur ouvre un mot, Excel, PowerPoint ou Visio et se connecte à Office 365 Enterprise à l’aide de son compte professionnel ou scolaire. Le document contient des URL.
     

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: 5d59ef322fc9b5686d16230cb59ae141cd338090
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 55f90996997a60fd95347941bdcad7707c890166
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155256"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786639"
 ---
 # <a name="compliance-score-methodology-preview"></a>Méthodologie du score de conformité (aperçu)
 
@@ -39,15 +39,15 @@ Les éléments d’action sont mappés aux contrôles et lorsqu’un contrôle e
   
 ### <a name="mandatory-or-discretionary-controls"></a>Contrôles obligatoires ou discrétionnaires
   
- Les **contrôles obligatoires** sont des contrôles qui ne peuvent pas être contournés intentionnellement ou accidentellement. Un exemple de contrôle obligatoire commun est une stratégie de mot de passe géré de manière centralisée qui définit les exigences de longueur, de complexité et d’expiration des mots de passe. Les utilisateurs doivent se conformer à ces exigences pour accéder au système.
+ Les **contrôles obligatoires** sont des actions qui ne peuvent pas être contournées intentionnellement ou accidentellement. Un exemple de contrôle obligatoire commun est une stratégie de mot de passe géré de manière centralisée qui définit les exigences de longueur, de complexité et d’expiration des mots de passe. Les utilisateurs doivent se conformer à ces exigences pour accéder au système.
   
  Les **contrôles discrétionnaires** reposent sur les utilisateurs pour comprendre la stratégie et agir en conséquence. Par exemple, une stratégie imposant aux utilisateurs de verrouiller leur ordinateur lorsqu’ils le quittent est un contrôle discrétionnaire, car il s’appuie sur l’utilisateur.
   
 ### <a name="preventative-detective-or-corrective-controls"></a>Contrôles de prévention, de détective ou de correction
   
- Les **contrôles de prévention** sont des contrôles qui empêchent des risques spécifiques. Par exemple, la protection des informations sur REST à l’aide du chiffrement est un contrôle préventif contre les attaques et les violations. La séparation des tâches est un contrôle préventive permettant de gérer le conflit d’intérêt et de se protéger contre la fraude.
+ Les **contrôles de prévention** sont des actions qui empêchent des risques spécifiques. Par exemple, la protection des informations sur REST à l’aide du chiffrement est un contrôle préventif contre les attaques et les violations. La séparation des tâches est un contrôle préventive permettant de gérer le conflit d’intérêt et de se protéger contre la fraude.
   
- Les **contrôles de détective** sont des contrôles qui surveillent activement les systèmes pour identifier les problèmes ou les comportements irréguliers qui représentent un risque ou qui peuvent être utilisés pour détecter des intrusions ou déterminer si une violation s’est produite. Audit de l’accès au système et actions d’administration privilégiées l’audit est des types de contrôles de surveillance du détective. Conformité réglementaire les audits sont un type de contrôle de détective utilisé pour détecter les problèmes de processus.
+ Les **contrôles de détective** sont des actions qui surveillent activement les systèmes pour identifier les problèmes ou les comportements irréguliers qui représentent un risque ou qui peuvent être utilisés pour détecter des intrusions ou déterminer si une violation s’est produite. Audit de l’accès au système et actions d’administration privilégiées l’audit est des types de contrôles de surveillance du détective. Conformité réglementaire les audits sont un type de contrôle de détective utilisé pour détecter les problèmes de processus.
   
 Les **contrôles de correction** sont des contrôles qui tentent de limiter les effets néfastes d’un incident de sécurité à un minimum, de prendre des mesures correctives pour réduire l’effet immédiat, et de renverser les dommages, si possible. La réponse aux incidents de confidentialité est un contrôle correct pour limiter les dommages et restaurer les systèmes à un état opérationnel après une violation.
   

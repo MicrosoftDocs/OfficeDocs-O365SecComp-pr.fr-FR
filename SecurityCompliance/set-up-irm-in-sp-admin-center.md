@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: Découvrez comment utiliser la gestion des droits relatifs à l’information (IRM) de SharePoint Online via Microsoft Azure Active Directory Rights Management Services (RMS) pour protéger les listes et les bibliothèques de documents SharePoint.
-ms.openlocfilehash: 16a76ecda37bd5480285dd70670843a88198bdb7
-ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
+ms.openlocfilehash: 6fc51eaaf7f5d5d22167d10ab70d45dbf03cc6d2
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35756846"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792070"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
 
@@ -34,7 +34,7 @@ Après avoir activé le service RMS, connectez-vous au centre d’administration
   
 1. Connectez-vous à Office 365 en tant qu’administrateur général ou SharePoint.
     
-2. Sélectionnez l’icône ![du lanceur d’applications l’icône du lanceur d’applications dans Office 365](media/e5aee650-c566-4100-aaad-4cc2355d909f.png) dans le coin supérieur gauche et choisissez **administrateur** pour ouvrir le centre d’administration Office 365. (If you don't see the Admin tile, you don't have Office 365 administrator permissions in your organization.) 
+2. Sélectionnez l’icône du lanceur d’applications ![Icône du lanceur d’applications dans Office 365](media/e5aee650-c566-4100-aaad-4cc2355d909f.png) dans la partie supérieure gauche, puis **Administrateur** pour ouvrir le centre d’administration Microsoft 365. (Si vous ne voyez pas la mosaïque Administration, vous ne disposez pas des autorisations d’administrateur Office 365 dans votre organisation.) 
     
 3. Dans le volet de gauche, choisissez **centres** \> d’administration **SharePoint**.
     
@@ -51,7 +51,7 @@ Lorsque les propriétaires de site activent la gestion des droits relatifs à l�
   
 Lorsque des personnes téléchargent des fichiers dans une liste ou une bibliothèque activée pour IRM, les fichiers sont chiffrés de sorte que seules les personnes autorisées puissent les afficher. Chaque fichier géré par des droits contient également une licence d’émission qui impose des restrictions sur les personnes qui visualisent le fichier. Les restrictions habituelles incluent la création d’un fichier en lecture seule, la désactivation de la copie de texte, l’interdiction de l’enregistrement d’une copie locale et l’interdiction d’impression du fichier. Les programmes clients qui peuvent lire les types de fichiers pris en charge par IRM utilisent la licence d’émission dans le fichier géré par des droits pour appliquer ces restrictions. Voici comment un fichier géré par des droits conserve sa protection même après avoir été téléchargé. Pour activer la gestion des droits relatifs à l’information sur une liste ou une bibliothèque, voir [apply Information Rights Management to a list or Library](apply-irm-to-a-list-or-library.md).
   
-Vous ne pouvez pas créer ou modifier des documents dans une bibliothèque activée pour IRM à l’aide d’Office Online. Au lieu de cela, une personne à la fois peut télécharger et modifier des fichiers chiffrés par IRM. Utiliser l’archivage et l’extraction pour gérer la *co-création* ou la création entre plusieurs utilisateurs. 
+Vous ne pouvez pas créer ou modifier des documents dans une bibliothèque activée pour IRM à l’aide d’Office dans un navigateur. Au lieu de cela, une personne à la fois peut télécharger et modifier des fichiers chiffrés par IRM. Utiliser l’archivage et l’extraction pour gérer la *co-création* ou la création entre plusieurs utilisateurs. 
   
 Lorsque vous téléchargez un fichier PDF à partir d’une bibliothèque protégée par IRM, Office 365 crée un fichier PDF protégé. L’extension du fichier n’est pas modifiée, mais le fichier est protégé. Pour afficher ce fichier, vous devez disposer d’Azure information protection Viewer, de l’intégralité du client Azure information protection ou d’une autre application qui prend en charge l’affichage des fichiers PDF protégés. 
   

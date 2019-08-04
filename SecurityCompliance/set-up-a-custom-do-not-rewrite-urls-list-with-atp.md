@@ -2,7 +2,7 @@
 title: Configurer une liste d’URL do-not-Rewrite personnalisée à l’aide de liens fiables Office 365 ATP
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.topic: article
 ms.date: 02/06/2019
@@ -15,12 +15,12 @@ ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection:
 - M365-security-compliance
 description: Lorsque vous configurez vos stratégies de liens approuvés ATP, vous pouvez inclure une liste d’URL do-not-Rewrite’pour permettre à certaines personnes de votre organisation de visiter des sites que vous incluez dans votre liste.
-ms.openlocfilehash: a7f8f041832d7d5935ea959073d2b11cc6bdcf53
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.openlocfilehash: 88a3f816c9156abc2d910d8710296e471e2fc540
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34652727"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601361"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurer une liste d’URL do-not-Rewrite personnalisée à l’aide de liens fiables Office 365 ATP
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e8ec5114983d64e7d717d4b7ab866bfee9d8d488
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 4e46eba010cd51ab0722fb43196230ba44f4e9a4
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154896"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35791990"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Gérer les suspensions dans Advanced eDiscovery
 
@@ -31,7 +31,7 @@ Dans certains cas, il se peut que vous ayez identifié un ensemble de dépositai
 
 Pour afficher la stratégie de blocage des dépositaires:
 
-1. Dans le **Centre de sécurité _AMP_ Compliance Center**, cliquez sur **eDiscovery > Advanced eDiscovery** pour afficher la liste des incidents de votre organisation.
+1. Dans le **Centre de sécurité & conformité**, cliquez sur **eDiscovery > Advanced eDiscovery** pour afficher la liste des incidents de votre organisation.
    
 2. Accédez à l' **** onglet dépositaires pour ajouter des dépositaires dans votre cas. Pour savoir comment ajouter et placer des dépositaires en attente dans un cas avancé eDiscovery, voir [Add dépositaires to a Advanced eDiscovery case](add-custodians-to-case.md). Si vous avez déjà ajouté des dépositaires et les avez placés en conservation, passez à l’étape 3.
    
@@ -48,7 +48,7 @@ Lorsque vous créez une suspension, vous disposez des options suivantes pour dé
 
 Pour créer une suspension pour un cas de découverte électronique avancée:
 
-1. Dans le **Centre de sécurité _AMP_ Compliance Center**, cliquez sur **eDiscovery > Advanced eDiscovery** pour afficher la liste des incidents de votre organisation.
+1. Dans le **Centre de sécurité & conformité**, cliquez sur **eDiscovery > Advanced eDiscovery** pour afficher la liste des incidents de votre organisation.
   
 2. Cliquez sur **ouvrir** en regard du cas dans lequel vous souhaitez créer les suspensions.
   
@@ -132,7 +132,7 @@ Gardez les points suivants à l’esprit concernant les statistiques de conserva
 
  - Lors de la recherche dans la boîte aux lettres d’un utilisateur, le groupe Office 365 ou l’équipe Microsoft dont l’utilisateur est membre ne feront pas l’objet d’une recherche. De même, lorsque vous placez un groupe Office 365 ou un blocage d’équipe Microsoft, seule la boîte aux lettres de groupe et le site de groupe sont mis en attente; les boîtes aux lettres et les sites OneDrive entreprise des membres du groupe ne sont pas mis en attente, sauf si vous les ajoutez explicitement en tant que dépositaires ou que leurs sources de données ne sont pas conservées. Par conséquent, si vous devez placer un groupe Office 365 ou Microsoft Team en conservation pour un dépositaire spécifique, envisagez de mapper le site de groupe et la boîte aux lettres de groupe au dépositaire (voir Managing dépositaires in Advanced eDiscovery). Si le groupe Office 365 ou l’équipe Microsoft n’est pas attribuable à un seul dépositaire, envisagez d’ajouter la source à une conservation non privatives de personnes. 
  
- - Pour obtenir la liste des membres d’un groupe ou d’une équipe Microsoft Office 365, vous pouvez afficher les propriétés sur la page groupes de > d’accueil dans le centre d’administration Office 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell:
+ - Pour obtenir la liste des membres d’un groupe ou d’une équipe Microsoft Office 365, vous pouvez afficher les propriétés de la page groupes d' > d’accueil dans le centre d’administration Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell:
 
    ``` 
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress

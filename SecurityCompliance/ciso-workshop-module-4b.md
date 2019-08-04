@@ -10,16 +10,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: En savoir plus sur les principes de sécurité et les recommandations pour la modernisation de la sécurité dans votre organisation.
-ms.openlocfilehash: 640fb15a6e28ee00bc383f6502c06d80db287135
-ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
+ms.openlocfilehash: f4f2eb8c98575a03635ec69274396cdf8769e498
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34767295"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786589"
 ---
 # <a name="ciso-workshop-module-4b-threat-protection-strategy"></a>Module d’atelier CISO 4b: stratégie de protection contre les menaces 
 
-Ce module examine l’évolution et la trajectoire des centres de sécurité Microsoft (SOC), gérées par les milliards de signaux dans le graphique de sécurité intelligente Microsoft.
+Ce module examine l’évolution et la trajectoire des centres de sécurité Microsoft (SOC), sous la forme de milliards de signaux dans le graphique de sécurité intelligente Microsoft.
 
 - Télécharger le Résumé PDF: [module 4b: stratégie de protection contre les menaces](media/ciso-workshop-4b-threat-protection-strategy.pdf)
 - Télécharger le résumé PowerPoint: [module 4b: stratégie de protection contre les menaces](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4b-threat-protection-strategy.pptx)
@@ -36,7 +36,7 @@ Ce module examine l’évolution et la trajectoire des centres de sécurité Mic
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtDxA]
 
-## <a name="part-3-learnings-from-microsofts-corporate-it-soc-2207"></a>Partie 3: découvrir de la société de service informatique SOC de Microsoft (22:07)
+## <a name="part-3-learnings-from-microsoft-corporate-it-soc-2207"></a>Partie 3: apprentissages de la société de service informatique SOC de Microsoft (22:07)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE368fZ]
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Les utilisateurs doivent disposer d’autorisations dans le centre de conformité Office 365 Security & pour pouvoir gérer les fonctionnalités de sécurité ou de conformité.
-ms.openlocfilehash: 7963a8c3db64e83566960abe9298b9a2d636ae53
-ms.sourcegitcommit: 6302a43d947a908dd10a8e40550b806f491692fc
+ms.openlocfilehash: ea774648efcfe80461eae937f80856acaf1db224
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2019
-ms.locfileid: "35645119"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792010"
 ---
 # <a name="give-users-access-to-the-office-365-security--compliance-center"></a>Octroi de l’accès au Centre de conformité et sécurité Office 365 aux utilisateurs
 
@@ -39,11 +39,11 @@ Pour plus d’informations sur les différentes autorisations que vous pouvez ac
 
 - Les autorisations des partenaires DAP (Delegated Access permission) avec administrer de la part de (administrateur) ne peuvent pas accéder au centre de conformité &.
 
-## <a name="use-the-office-365-admin-center-to-give-another-user-access-to-the-security--compliance-center"></a>Utiliser le centre d’administration Office 365 pour accorder à un autre utilisateur l’accès au centre de sécurité & conformité
+## <a name="use-the-admin-center-to-give-another-user-access-to-the-security--compliance-center"></a>Utiliser le centre d’administration pour accorder à un autre utilisateur l’accès au centre de sécurité & conformité
 
 1. [Connectez-vous à Office 365 et accédez au centre d’administration](https://go.microsoft.com/fwlink/p/?LinkId=525275).
 
-2. Dans le centre d’administration Office 365, ouvrez **centres** d’administration, puis cliquez sur **sécurité & conformité**.
+2. Dans le centre d’administration 365 de Microsoft, ouvrez **centres d’administration** , puis cliquez sur **sécurité & conformité**.
 
 3. Dans le centre de sécurité & conformité, accédez à **autorisations**.
 

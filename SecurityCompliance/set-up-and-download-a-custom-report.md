@@ -2,7 +2,7 @@
 title: Configurer et télécharger un rapport personnalisé dans le centre de &amp; sécurité conformité
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer et télécharger un rapport avec une plage de dates et des filtres personnalisés dans le centre &amp; de sécurité et de conformité.
-ms.openlocfilehash: 5e0d6e06be4589f7da837d5e0c2a6f883643ffdb
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 0cd787b33ce86ad7a31093107c257d0fe3dbb381
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077790"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601351"
 ---
 # <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>Configurer et télécharger un rapport personnalisé dans le centre de &amp; sécurité conformité
 

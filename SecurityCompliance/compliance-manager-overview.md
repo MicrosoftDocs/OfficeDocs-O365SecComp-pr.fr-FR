@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: e7c8afd3a9b2e0514e0df7df0f10871b0a7ca329
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e2539a2bb7a5929330410db1f611ff9b8b1a7173
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155286"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786629"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Gestionnaire de conformité Microsoft (aperçu)
 
@@ -107,7 +107,7 @@ Les [éléments actions](https://docs.microsoft.com/office365/securitycompliance
 
 Les membres de votre organisation peuvent utiliser le gestionnaire de conformité pour examiner les contrôles gérés par le client à partir de toutes les évaluations pour lesquelles ils sont affectés. Lorsqu’un utilisateur se connecte au gestionnaire de conformité et ouvre le tableau de bord des **éléments d’action** , une liste d’actions qui leur sont affectées s’affiche. Selon le rôle du gestionnaire de conformité attribué à l’utilisateur, ils peuvent fournir des informations sur l’implémentation ou les tests, mettre à jour l’État ou affecter des éléments d’action.
 
-Les contrôles de certification sont généralement mis en œuvre par une personne et testés par un autre. Par exemple, après l’exécution des éléments d’action initialement affectés à une personne pour l’implémentation, les éléments d’action sont affectés à la personne suivante pour le test et le chargement des preuves. Tout utilisateur disposant des autorisations suffisantes pour les affectations de contrôle peut affecter et réaffecter des éléments d’action. Cela permet la gestion centrale des affectations de contrôle et le routage décentralisé des éléments d’action entre les implémenteurs et les testeurs.
+Les contrôles de certification sont généralement mis en œuvre par une personne et testés par un autre. Par exemple, après l’exécution des éléments d’action initialement affectés à une personne pour l’implémentation, les éléments d’action sont affectés à la personne suivante pour tester et charger les preuves. Tout utilisateur disposant des autorisations suffisantes pour les affectations de contrôle peut affecter et réaffecter des éléments d’action. Cela permet la gestion centrale des affectations de contrôle et le routage décentralisé des éléments d’action entre les implémenteurs et les testeurs.
 
 ## <a name="permissions"></a>Autorisations
 
@@ -115,7 +115,7 @@ Le gestionnaire de conformité utilise un [modèle d’autorisation](https://doc
 
 Pour modifier les autorisations par défaut et implémenter un modèle de contrôle d’accès basé sur un rôle, au moins un utilisateur doit être ajouté à chaque rôle de gestionnaire de conformité. Une fois qu’un utilisateur est ajouté à un rôle, les autorisations permettant d’effectuer les actions affectées à ce rôle sont supprimées de l’ensemble d’autorisations par défaut disponible pour tous les utilisateurs. Seuls les utilisateurs configurés avec le rôle seront en mesure d’accéder au gestionnaire de conformité et d’effectuer les actions autorisées par ce rôle.
 
-Par exemple, si vous ajoutez un utilisateur au rôle pour gérer les évaluations, seuls les membres de ce rôle peuvent gérer les évaluations. Si vous n’ajoutez pas d’utilisateur au rôle qui permet aux utilisateurs de lire les données dans les évaluations, tous les utilisateurs de votre organisation peuvent accéder au gestionnaire de conformité et lire les données dans n’importe quelle évaluation.
+Si vous ajoutez un utilisateur au rôle pour gérer les évaluations, seuls les membres de ce rôle peuvent gérer les évaluations. Si vous n’ajoutez pas d’utilisateur au rôle qui permet aux utilisateurs de lire les données dans les évaluations, tous les utilisateurs de votre organisation peuvent accéder au gestionnaire de conformité et lire les données dans n’importe quelle évaluation.
   
 ## <a name="manage-evidence"></a>Gérer les preuves
 
