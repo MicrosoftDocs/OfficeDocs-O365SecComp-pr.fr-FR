@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Découvrez les méthodes fréquemment utilisées pour réduire le courrier indésirable dans Office 365.
-ms.openlocfilehash: 3dca1aeb404bd121cec3a363eb9413f3fe79b36b
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: d99b5e1452c60be713f0f4cfbab965d30eeeb8ef
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35601231"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054706"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Réduire le courrier indésirable dans Office 365
 
  **Vous recevez trop de courrier indésirable dans Office 365 ? Suivez ces conseils.**
   
-Nous vous recommandons vivement de signaler les messages de faux négatifs en [à l’aide du complément Message rapport](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) Aidez-nous à améliorer notre filtres. En outre, vous pouvez transférer le message *tant que pièce jointe* junk@office365.microsoft.com ou phish@office365.microsoft.com (s’il s’agit hameçon).
+Nous vous recommandons vivement de signaler les messages de type faux négatifs à l’aide du [complément de rapport de message ](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)pour nous aider à améliorer nos filtres. Vous pouvez également envoyer le message à l’aide de [l'Explorateur des envois](admin-submission.md).
 
 > [!TIP]
 > Si vous pensez qu’il s’agit d’un message indésirable et qu’il se trouve dans le dossier Courrier indésirable, cela ne devrait pas poser de problème. Si vous ne voulez pas le voir dans la boîte de réception, vous devez modifier la stratégie anti-courrier indésirable pour mettre le message en quarantaine. Pour plus d’informations sur la mise en quarantaine d’un message, consultez l’article relatif à la [mise en quarantaine des courriers électroniques dans Office 365](quarantine-email-messages.md).
@@ -57,7 +57,10 @@ Pour éviter que vous receviez trop de courrier indésirable, Exchange Online Pr
     
 - **Bloquez immédiatement un expéditeur** Si vous devez immédiatement bloquer un expéditeur, vous pouvez bloquer son adresse e-mail, son domaine ou son adresse IP. Consultez [Créer des listes d’expéditeurs bloqués dans Office 365](create-block-sender-lists-in-office-365.md). Une entrée dans la liste verte d’un utilisateur final peut remplacer un blocage défini par l’administrateur.
     
-- **Activez le complément Message de notification pour les utilisateurs** Nous vous recommandons vivement d’[activer le complément Message de notification pour vos utilisateurs](enable-the-report-message-add-in.md). En tant qu’administrateur, vous pouvez également consulter les commentaires envoyés par vos utilisateurs et utiliser des modèles pour ajuster les paramètres qui peuvent être à l’origine des problèmes.
+- **Activez le complément de signalement de courrier indésirable pour les utilisateurs** Nous vous recommandons vivement [d’activer le complément de signalement de courrier indésirable pour vos utilisateurs](enable-the-report-message-add-in.md).
+
+- **Utiliser [l’Explorateur d’envoi](admin-submission.md)** Les administrateurs peuvent désormais envoyer des e-mails en utilisant l'ID de fichier ou de message réseau, les URL et les fichiers à numériser par Microsoft dans Office 365. En tant qu’administrateur, vous pouvez peut-être consulter les commentaires que vos utilisateurs envoient et utiliser des modèles pour ajuster les paramètres à l’origine de problèmes éventuels.
+
 - **Autoriser [DKIM](use-dkim-to-validate-outbound-email.md)** à signer tous vos messages sortants pour renforcer la sécurité dans votre domaine et client.
  > [!TIP]
 > Après avoir activé DKIM vous devez activer [DMARC](use-dkim-to-validate-outbound-email.md) étant donné que cet enregistrement permet de valider si DKIM et SPF fonctionnent correctement et généralement, les messages électroniques frauduleux n’ont pas la signature, étant donné qu’Office 365 gère votre clé symétrique publique et privée.
@@ -66,8 +69,6 @@ Pour éviter que vous receviez trop de courrier indésirable, Exchange Online Pr
 
 - **Activez la règle de courrier indésirable et vérifiez votre liste verte** Vérifiez que la règle de l’action anti-courrier indésirable est activée et que l’expéditeur ou le domaine de l’expéditeur ne peut pas être remplacé dans votre liste verte. Pour accéder à ces paramètres, accédez aux paramètres du courrier indésirable [Bloquer ou autoriser](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46). Ici, vous pouvez également choisir de bloquer l’adresse e-mail ou le domaine de l’expéditeur.
     
-- **Signalez le courrier indésirable à Microsoft** Signalez les messages indésirables à Microsoft à l’aide du [complément Message de notification](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Vous pouvez également envoyer un message à junk@office365.microsoft.com et joindre un ou plusieurs messages au rapport.
-    
-    **Important** Si vous ne transférez pas les messages en pièces jointes, les en-têtes seront manquants et nous ne serons pas en mesure d’améliorer le filtre anti-courrier indésirable dans Office 365. 
-    
+- **Signalez le courrier indésirable à Microsoft** Signalez le courrier indésirable à Microsoft à l’aide du [complément Signaler le message](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+       
 - **Désabonnez-vous du courrier en nombre** Si vous vous êtes abonné à ce message (bulletin d’informations, annonce de produit, etc.) et qu’il contient un lien Se désabonner provenant d’une source de confiance, nous vous recommandons simplement de vous désabonner. Généralement, Office 365 ne traite pas ces messages comme du courrier indésirable. Vous pouvez également choisir de bloquer l’expéditeur, ou de demander à votre administrateur de modifier les paramètres pour que tout le courrier en nombre soit traité comme du courrier indésirable.

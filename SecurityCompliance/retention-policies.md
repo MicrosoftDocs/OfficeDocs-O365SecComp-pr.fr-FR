@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à seulement quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou seulement au contenu remplissant certaines conditions.
-ms.openlocfilehash: ca68d2ecb7757435b8af6b63505b5acb2688daf6
-ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
+ms.openlocfilehash: 1d9ad24a8322bec471a2725e16c0cd49ffa71202
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840900"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054766"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -300,19 +300,7 @@ Enfin, pour placer un Verrouillage de Conservation sur la stratégie de rétenti
   
 ## <a name="releasing-a-retention-policy"></a>Publication d’une stratégie de rétention
 
-Vous pouvez désactiver ou supprimer une stratégie de rétention à tout moment. Lorsque vous procédez de la sorte, le contenu SharePoint ou OneDrive conservé n’est pas immédiatement supprimé définitivement. Au lieu de cela, pour éviter la perte accidentelle de données, il existe une période de grâce de 30 jours pendant laquelle l’expiration du contenu de cette stratégie ne se produit pas dans la bibliothèque de conservation de conservation, afin que vous puissiez restaurer tout contenu à partir de cet emplacement, le cas échéant. Vous pouvez également réactiver la stratégie de rétention pendant la période de grâce et aucun contenu ne sera supprimé pour cette stratégie. Vous pouvez configurer cette période à l’aide de PowerShell.
-
-Tout d’abord,[se connecter au Centre de Conformité et Sécurité Office 365 PowerShell](http://go.microsoft.com/fwlink/p/?LinkID=799771).
-
-Puis exécutez ce script PowerShell. Vous pouvez définir une valeur comprise entre 0-100 jours à la propriété `ip_tenantGracePeriodInDays`dans les paramètres de l’abonnement client. Si vous configurez cette valeur sur 0, il n’y a pas de période de grâce et aucune stratégie de rétention ne sera publiée immédiatement. 
-
-`
-$siteSubscription = Get-SPSiteSubscription -Identity 
-$siteSubScriptionId 
-$siteSubSettingsMgr = [Microsoft.SharePoint.SPSiteSubscriptionSettingsManager]::Local
-$properties = $siteSubSettingsMgr.GetProperties($siteSubscription)
-$properties.SetValue("ip_tenantGracePeriodInDays",  30)
-`
+Vous pouvez désactiver ou supprimer une stratégie de rétention à tout moment. Lorsque vous procédez de la sorte, le contenu SharePoint ou OneDrive conservé n’est pas immédiatement supprimé définitivement. Au lieu de cela, pour éviter la perte accidentelle de données, il existe une période de grâce de 30 jours pendant laquelle l’expiration du contenu de cette stratégie ne se produit pas dans la bibliothèque de conservation de conservation, afin que vous puissiez restaurer tout contenu à partir de cet emplacement, le cas échéant. Vous pouvez également réactiver la stratégie de rétention pendant la période de grâce et aucun contenu ne sera supprimé pour cette stratégie. Cette période de grâce peut être configurée à l’aide de PowerShell. Nous fournirons bientôt un exemple de script que vous pouvez utiliser.
 
 Cette période de grâce de 30 jours dans SharePoint et OneDrive correspond à un délai de 30 jours dans Exchange. Pour des informations supplémentaires, consultez [Gestion des boîtes aux lettres avec période de grâce](https://docs.microsoft.com/fr-FR/office365/securitycompliance/identify-a-hold-on-an-exchange-online-mailbox#managing-mailboxes-on-delay-hold).
 

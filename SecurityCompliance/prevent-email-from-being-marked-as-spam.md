@@ -14,20 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Apprenez comment prévenir les faux positifs et éviter les courriels indésirables dans Office 365.
-ms.openlocfilehash: c49bd519adf6c66f7f8c6c97fb7a24a0c7f85a99
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: baf3fa52f34107ad82c392b52295d35a7e0002c4
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157476"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054672"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Empêcher le courrier d’être marqué comme courrier indésirable dans Office 365
 
  **Votre courrier est marqué comme courrier indésirable dans Office 365 ? Suivez ces conseils.**
   
-Si vous obtenez un faux positif, merci de signaler le message à Microsoft à l’aide du [complément Utiliser la fonctionnalité de rapport d’un message](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). En outre, vous pouvez transférer le message *en tant que pièce jointe* à not_junk@office365.microsoft.com.
-
-**Important** Si vous ne pouvez pas transférer les messages en tant que pièces jointes, les en-têtes seront manquants et nous ne serons pas en mesure d’améliorer le filtrage du courrier indésirable dans Office 365.
+Si vous obtenez un faux positif, merci de signaler le message à Microsoft à l’aide du [complément Utiliser la fonctionnalité de rapport d’un message](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). En outre, vous pouvez envoyer le message avec [l’Explorateur des envois](admin-submission.md).
     
 ## <a name="determine-the-reason-why-the-message-was-marked-as-spam"></a>Identifier pourquoi le message a été marqué comme courrier indésirable
 
@@ -62,7 +60,9 @@ Pour travailler efficacement, Exchange Online Protection (EOP) exige que les adm
 
 - **Pointez vos enregistrements DNS vers Office 365** Afin qu’EOP vous protège efficacement du courrier indésirable, les enregistrements DNS de votre serveur de messagerie (MX) pour tous les domaines doivent pointer vers Office 365 uniquement. Si votre MX ne pointe pas vers Office 365, EOP ne filtre pas le courrier indésirable pour vos utilisateurs. Si vous voulez utiliser un autre service ou dispositif pour filtrer le courrier indésirable dans votre domaine, pensez à désactiver la protection contre le courrier indésirable dans EOP. Pour cela, vous pouvez créer une règle de flux de messagerie qui définit la valeur SCL sur -1. Si vous décidez ultérieurement d’utiliser EOP, pensez à supprimer cette règle de flux de messagerie. 
     
-- **Activez le complément Message de notification pour les utilisateurs** Nous vous recommandons vivement d’[activer le complément Message de notification pour vos utilisateurs](enable-the-report-message-add-in.md). En tant qu’administrateur, vous pouvez également consulter les commentaires envoyés par vos utilisateurs et utiliser des modèles pour ajuster les paramètres qui peuvent être à l’origine des problèmes.
+- **Activez le complément de signalement de courrier indésirable pour les utilisateurs** Nous vous recommandons vivement [d’activer le complément de signalement de courrier indésirable pour vos utilisateurs](enable-the-report-message-add-in.md).
+
+- **Utiliser [l’Explorateur d’envoi](admin-submission.md)** Les administrateurs peuvent désormais envoyer des e-mails en utilisant l'ID de fichier ou de message réseau, les URL et les fichiers à numériser par Microsoft dans Office 365. En tant qu’administrateur, vous pouvez peut-être consulter les commentaires que vos utilisateurs envoient et utiliser des modèles pour ajuster les paramètres à l’origine de problèmes éventuels.
 
 - 
   **Assurez-vous que vos utilisateurs respectent les limites autorisées** pour envoyer et recevoir des e-mails, comme indiqué [ici](https://docs.microsoft.com/fr-FR/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
@@ -80,7 +80,6 @@ EOP respecte la liste des expéditeurs et destinataires approuvés des utilisate
 - **Désactivez le filtrage SmartScreen dans Outlook** Si vous utilisez un ancien client Outlook pour ordinateur de bureau, vous devez désactiver la fonctionnalité de filtrage SmartScreen, qui n’est plus disponible. Si elle est activée, elle peut générer des faux positifs. Ignorez cette étape si vous exécutez un client Outlook pour ordinateur de bureau mis à jour.
 
 ## <a name="troubleshooting-a-message-ends-up-in-the-junk-folder-even-though-eop-marked-the-message-as-non-spam"></a>Résolution des problèmes : un message se retrouve dans le dossier courrier indésirable même si EOP marqué le message comme n’étant pas du courrier indésirable
-
 
 Si vos utilisateurs ont l'option activée dans Outlook "Listes sécurisées uniquement : seul le courrier provenant de personnes ou de domaines figurant sur vos listes d'expéditeurs ou de destinataires approuvés sera envoyé dans votre boîte de réception", alors tous les e-mails seront envoyés dans le dossier des courriers indésirables de l'expéditeur, sauf si celui-ci est sur la liste des expéditeurs approuvés par le destinataire. Ceci se produira indépendamment du fait que EOP marque un message comme étant un message non indésirable, ou si vous avez configuré une règle dans EOP pour marquer un message comme non indésirable.
   
