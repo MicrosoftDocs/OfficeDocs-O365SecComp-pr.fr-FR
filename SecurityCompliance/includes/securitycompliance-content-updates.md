@@ -3,46 +3,6 @@
 
 
 
-## <a name="week-of-june-24-2019"></a>Semaine du 24 juin, 2019
-
-
-| Publié le |Titre de la rubrique | Modification |
-|------|------------|--------|
-| 6/24/2019 | [Créer des listes d’expéditeurs approuvés dans Office 365](/Office365/SecurityCompliance/create-safe-sender-lists-in-office-365) | modifié |
-| 6/24/2019 | [Vue d’ensemble des révisions de destruction](/Office365/SecurityCompliance/disposition-reviews) | modifié |
-| 6/24/2019 | [Création d’une empreinte numérique de document](/Office365/SecurityCompliance/document-fingerprinting) | modifié |
-| 6/24/2019 | [Restreindre l’accès au contenu à l’aide du chiffrement dans les étiquettes de niveau de confidentialité](/Office365/SecurityCompliance/encryption-sensitivity-labels) | modifié |
-| 6/24/2019 | [Donner aux utilisateurs l’accès au centre de sécurité & de sécurité Office 365](/Office365/SecurityCompliance/grant-access-to-the-security-and-compliance-center) | modifié |
-| 6/24/2019 | [Définir des stratégies de barrière des informations](/Office365/SecurityCompliance/information-barriers-policies) | modifié |
-| 6/24/2019 | [Résolution des problèmes liés aux informations](/Office365/SecurityCompliance/information-barriers-troubleshooting) | modifié |
-| 6/24/2019 | [Vue d’ensemble des barrières de l’information](/Office365/SecurityCompliance/information-barriers) | modifié |
-| 6/24/2019 | [Vue d’ensemble des étiquettes de niveau de confidentialité](/Office365/SecurityCompliance/sensitivity-labels) | modifié |
-| 6/24/2019 | [Utiliser la recherche de contenu dans votre flux de travail eDiscovery](/Office365/SecurityCompliance/use-content-search-in-ediscovery) | modifié |
-| 6/24/2019 | [Collaborer avec un partenaire pour archiver des données tierces dans Office 365](/Office365/SecurityCompliance/work-with-partner-to-archive-third-party-data) | modifié |
-| 6/25/2019 | [Create a search](/Office365/SecurityCompliance/compliance20/create-search-to-collect-data) | modifié |
-| 6/25/2019 | [Limites avancées eDiscovery](/Office365/SecurityCompliance/compliance20/limits-ediscovery20) | modifié |
-| 6/25/2019 | [Modifier les stratégies de barrière des informations](/Office365/SecurityCompliance/information-barriers-edit-segments-policies.md) | modifié |
-| 6/25/2019 | [Configurer le filtrage des autorisations pour la recherche de contenu](/Office365/SecurityCompliance/permissions-filtering-for-content-search) | modifié |
-| 6/25/2019 | [FAQ sur le chiffrement de messages Office 365](/Office365/SecurityCompliance/ome-faq) | modifié |
-| 6/25/2019 | [Ajouter des résultats de recherche à un jeu à réviser](/Office365/SecurityCompliance/compliance20/add-data-to-review-set) | modifié |
-| 6/25/2019 | [Recherche et réponse automatisées (AIR) avec Office 365](/Office365/SecurityCompliance/automated-investigation-response-office) | modifié |
-| 6/26/2019 | [Attributs des stratégies de barrière des informations](/Office365/SecurityCompliance/information-barriers-attributes) | modifié |
-| 6/26/2019 | [Propriétés détaillées dans le journal d’audit Office 365](/Office365/SecurityCompliance/detailed-properties-in-the-office-365-audit-log) | modifié |
-| 6/26/2019 | [Utiliser la recherche de contenu pour rechercher une liste d’utilisateurs dans la boîte aux lettres et OneDrive Entreprise](/Office365/SecurityCompliance/search-the-mailbox-and-onedrive-for-business-for-a-list-of-users) | modifié |
-| 6/26/2019 | [Configuration des stratégies de liens approuvés Office 365 ATP](/Office365/SecurityCompliance/set-up-atp-safe-links-policies) | modifié |
-| 6/26/2019 | [Définir des stratégies de barrière des informations](/Office365/SecurityCompliance/information-barriers-policies) | modifié |
-| 6/26/2019 | [Vue d’ensemble des barrières de l’information](/Office365/SecurityCompliance/information-barriers) | modifié |
-| 6/26/2019 | [Configurer des stratégies anti-hameçonnage Office 365 ATP](/Office365/SecurityCompliance/set-up-anti-phishing-policies) | modifié |
-| 6/28/2019 | [Rechercher et identifier les courriers électroniques malveillants remis (Office 365 Threat Investigation and Response](/Office365/SecurityCompliance/investigate-malicious-email-that-was-delivered) | modifié |
-| 6/28/2019 | [Configuration des stratégies de liens approuvés Office 365 ATP](/Office365/SecurityCompliance/set-up-atp-safe-links-policies) | modifié |
-| 6/28/2019 | [Explorateur de menaces (et détections en temps réel)](/Office365/SecurityCompliance/threat-explorer) | modifié |
-| 6/28/2019 | [Attributs des stratégies de barrière des informations](/Office365/SecurityCompliance/information-barriers-attributes) | modifié |
-| 6/28/2019 | [Modifier les stratégies de barrière des informations](/Office365/SecurityCompliance/information-barriers-edit-segments-policies.md) | modifié |
-| 6/28/2019 | [Définir des stratégies de barrière des informations](/Office365/SecurityCompliance/information-barriers-policies) | modifié |
-| 6/28/2019 | [Résolution des problèmes liés aux informations](/Office365/SecurityCompliance/information-barriers-troubleshooting) | modifié |
-| 6/28/2019 | [Vue d’ensemble des barrières de l’information](/Office365/SecurityCompliance/information-barriers) | modifié |
-
-
 ## <a name="week-of-july-01-2019"></a>Semaine du 1er juillet 2019
 
 
@@ -352,3 +312,52 @@
 | 7/25/2019 | [Chiffrement dans Office 365](/Office365/SecurityCompliance/encryption) | modifié |
 | 7/26/2019 | [Stratégies de surveillance dans Office 365](/Office365/SecurityCompliance/supervision-policies) | modifié |
 | 7/26/2019 | [Audit de partage pour trouver les ressources partagées avec des utilisateurs externes](/Office365/SecurityCompliance/use-sharing-auditing) | modifié |
+
+
+## <a name="week-of-july-29-2019"></a>Semaine du 29 juillet 2019
+
+
+| Publié le |Titre de la rubrique | Modification |
+|------|------------|--------|
+| 7/31/2019 | [Résolution des problèmes liés à AzCopy dans Advanced eDiscovery](/Office365/SecurityCompliance/compliance20/troubleshooting-azcopy) | modifié |
+| 7/31/2019 | [Recherche de contenu dans Office 365](/Office365/SecurityCompliance/content-search) | modifié |
+| 7/31/2019 | [Suivi des messages dans le centre de conformité et de sécurité](/Office365/SecurityCompliance/message-trace-scc) | modifié |
+| 7/31/2019 | [Vue d’ensemble du nouveau centre de conformité Microsoft 365](/Office365/SecurityCompliance/microsoft-365-compliance-center) | modifié |
+| 7/31/2019 | [Protection contre les programmes malveillants et les ransomware Office 365](/Office365/SecurityCompliance/office-365-malware-and-ransomware-protection) | modifié |
+| 7/31/2019 | [Configuration des stratégies de liens approuvés Office 365 ATP](/Office365/SecurityCompliance/set-up-atp-safe-links-policies) | modifié |
+| 7/31/2019 | [Détails techniques de référence sur le chiffrement dans Office 365](/Office365/SecurityCompliance/technical-reference-details-about-encryption) | modifié |
+| 7/31/2019 | [Correction d’erreur lors du traitement des données](/Office365/SecurityCompliance/compliance20/error-remediation) | modifié |
+| 7/31/2019 | Limites d’indexation dans Advanced eDiscovery | removed |
+| 7/31/2019 | [Charger des données autres qu’Office 365 dans un jeu à réviser](/Office365/SecurityCompliance/compliance20/load-non-office365-data) | modifié |
+| 7/31/2019 | Limites de recherche dans Advanced eDiscovery | removed |
+| 7/31/2019 | [Configurer les limites de conformité pour les enquêtes eDiscovery dans Office 365](/Office365/SecurityCompliance/set-up-compliance-boundaries) | modifié |
+| 8/1/2019 | [Configuration de groupes et d’utilisateurs pour un environnement de développement/test pour une campagne électorale](/Office365/SecurityCompliance/configure-groups-and-users-for-a-political-campaign-dev-test-environment) | modifié |
+| 8/1/2019 | [Création de sites d’équipe dans un environnement de développement/test dans le cadre d’une campagne électorale](/Office365/SecurityCompliance/create-team-sites-in-a-political-campaign-dev-test-environment) | modifié |
+| 8/1/2019 | [Déploiement d’un site d’équipe SharePoint Online isolé](/Office365/SecurityCompliance/deploy-an-isolated-sharepoint-online-team-site) | modifié |
+| 8/1/2019 | [Conception d’un site d’équipe SharePoint Online isolé](/Office365/SecurityCompliance/design-an-isolated-sharepoint-online-team-site) | modifié |
+| 8/1/2019 | [Site d’équipe SharePoint Online isolé dans votre environnement de développement/test](/Office365/SecurityCompliance/isolated-sharepoint-online-team-site-dev-test-environment) | modifié |
+| 8/1/2019 | [Gestion d’un site d’équipe SharePoint Online isolé](/Office365/SecurityCompliance/manage-an-isolated-sharepoint-online-team-site) | modifié |
+| 8/1/2019 | [Sécuriser les sites SharePoint Online dans un environnement de développement/test](/Office365/SecurityCompliance/secure-sharepoint-online-sites-in-a-dev-test-environment) | modifié |
+| 8/1/2019 | [Vue d’ensemble des stratégies de rétention](/Office365/SecurityCompliance/retention-policies) | modifié |
+| 8/1/2019 | [Options de filtrage avancé du courrier indésirable](/Office365/SecurityCompliance/advanced-spam-filtering-asf-options) | modifié |
+| 8/1/2019 | [Informations héritées pour le chiffrement de messages Office 365](/Office365/SecurityCompliance/legacy-information-for-message-encryption) | modifié |
+| 8/1/2019 | [Comment empêcher les faux positifs de se produire dans Office 365](/Office365/SecurityCompliance/prevent-email-from-being-marked-as-spam) | modifié |
+| 8/1/2019 | [Configurer la stratégie anti-courrier indésirable sortant](/Office365/SecurityCompliance/configure-the-outbound-spam-policy) | modifié |
+| 8/1/2019 | Gestion des utilisateurs de messagerie dans EOP | modifié |
+| 8/1/2019 | [Gérer le chiffrement de messages Office 365](/Office365/SecurityCompliance/manage-office-365-message-encryption) | modifié |
+| 8/1/2019 | [Gestion des messages et des fichiers mis en quarantaine en tant qu’administrateur dans Office 365](/Office365/SecurityCompliance/manage-quarantined-messages-and-files) | modifié |
+| 8/1/2019 | [Comment réduire le courrier indésirable dans Office 365](/Office365/SecurityCompliance/reduce-spam-email) | modifié |
+| 8/1/2019 | [Rechercher dans le journal d’audit dans le centre de sécurité & conformité](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | modifié |
+| 8/1/2019 | [Explorateur de menaces (et détections en temps réel)](/Office365/SecurityCompliance/threat-explorer) | modifié |
+| 8/1/2019 | [Utiliser DKIM pour les courriers électroniques dans votre domaine personnalisé dans Office 365](/Office365/SecurityCompliance/use-dkim-to-validate-outbound-email) | modifié |
+| 8/2/2019 | [Configurer des stratégies de surveillance pour votre organisation](/Office365/SecurityCompliance/configure-supervision-policies) | modifié |
+| 8/2/2019 | [Rechercher dans le journal d’audit dans le centre de sécurité & conformité](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | modifié |
+| 8/2/2019 | [Configurer les limites de conformité pour les enquêtes eDiscovery dans Office 365](/Office365/SecurityCompliance/set-up-compliance-boundaries) | modifié |
+| 8/2/2019 | [Stratégies de surveillance dans Office 365](/Office365/SecurityCompliance/supervision-policies) | modifié |
+| 8/2/2019 | [FAQ sur l’administration déléguée](/Office365/SecurityCompliance/eop/delegated-administration-faq) | modifié |
+| 8/2/2019 | [Rechercher et identifier les courriers électroniques malveillants remis (Office 365 Threat Investigation and Response](/Office365/SecurityCompliance/investigate-malicious-email-that-was-delivered) | modifié |
+| 8/2/2019 | [Protection des informations Office 365 pour le RGPD - Vue d’ensemble](/Office365/SecurityCompliance/office-365-info-protection-for-gdpr-overview) | modifié |
+| 8/2/2019 | [Explorateur de menaces (et détections en temps réel)](/Office365/SecurityCompliance/threat-explorer) | modifié |
+| 8/2/2019 | [Correction d’erreur lors du traitement des données](/Office365/SecurityCompliance/compliance20/error-remediation) | modifié |
+| 8/2/2019 | [Requêtes par mots clés et conditions de recherche pour la recherche de contenu](/Office365/SecurityCompliance/keyword-queries-and-search-conditions) | modifié |
+| 8/2/2019 | [Office 365 protection avancée contre les menaces](/Office365/SecurityCompliance/office-365-atp) | modifié |
