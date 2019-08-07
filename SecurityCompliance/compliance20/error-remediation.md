@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5168196dcac8a2cb3809f43fabb470c0f64cd0f7
-ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
+ms.openlocfilehash: efcee812b6082a7f7ee36e6aea0ecb7ed0243077
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36048139"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36168128"
 ---
 # <a name="error-remediation-when-processing-data"></a>Correction d’erreur lors du traitement des données
 
@@ -48,13 +48,13 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
     ![Télécharger des fichiers](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
-5. Pour télécharger des fichiers, spécifiez le **chemin de destination pour le téléchargement**. Il s’agit d’un chemin d’accès sur votre ordinateur local où le fichier sera téléchargé.  Le chemin d’accès par défaut,%USERPROFILE%\Downloads\errors, pointe vers le dossier downloads de l’utilisateur connecté. Vous pouvez modifier ce chemin si nécessaire. Si vous le modifiez, nous vous recommandons d’utiliser un chemin d’accès local au lieu d’un chemin d’accès réseau distant pour des performances optimales.
+5. Pour télécharger des fichiers, spécifiez le **chemin de destination pour le téléchargement**. Il s’agit d’un chemin d’accès sur votre ordinateur local où le fichier est téléchargé.  Le chemin d’accès par défaut,%USERPROFILE%\Downloads\errors, pointe vers le dossier downloads de l’utilisateur connecté. Vous pouvez modifier ce chemin si nécessaire. Si vous le modifiez, nous vous recommandons d’utiliser un chemin d’accès local pour obtenir les meilleures performances. N’utilisez pas de chemin d’accès réseau distant.
 
 6. Copiez la commande prédéfinie en cliquant sur **copier dans le presse-papiers**. Démarrez une invite de commandes Windows, collez la commande, puis appuyez sur **entrée**.  
 
     Les fichiers sont téléchargés.
 
-    ![Préparation de la correction des erreurs](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
+    ![Préparer la correction des erreurs](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
     > Vous devez utiliser AzCopy v 8.1 pour utiliser la commande fournie sur la page Télécharger les **fichiers** . Vous devez également utiliser AzCopy v 8.1 pour télécharger les fichiers à l’étape 10 ci-dessous. Pour installer cette version de AzCopy, consultez [la rubrique transférer des données avec le AzCopy v 8.1 sous Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy). Si la commande AzCopy fournie échoue, reportez-vous à la rubrique [Troubleshoot AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
@@ -75,7 +75,7 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
 11. Revenez à Advanced eDiscovery et cliquez sur **Next: process files**.
 
-12. Une fois le traitement terminé.  Vous pouvez revenir à l’ensemble de révision et voir le fichier corrigé.
+12. Une fois le traitement terminé. Vous pouvez revenir à l’ensemble de révision et voir le fichier corrigé.
 
 ## <a name="what-happens-when-files-are-remediated"></a>Que se passe-t-il lorsque les fichiers sont convertis?
 
@@ -91,4 +91,4 @@ Lorsque les fichiers résolus sont téléchargés, les métadonnées d’origine
 - WordCount
 - WorkingsetId
 
-Pour obtenir une définition de tous les champs de métadonnées de document dans Advanced eDiscovery, consultez la rubrique [document Metadata Fields](document-metadata-fields.md).
+Pour obtenir une définition de tous les champs de métadonnées dans Advanced eDiscovery, consultez la rubrique [document Metadata Fields](document-metadata-fields.md).

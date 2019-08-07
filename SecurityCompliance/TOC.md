@@ -6,6 +6,7 @@
 ## [Se préparer pour le nouveau Centre de sécurité Microsoft 365 et Centre de conformité Microsoft 365](microsoft-security-and-compliance.md)
 ### [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md)
 ### [Centre de sécurité Microsoft 365](overview-security-center.md)
+### [Autorisations dans le Centre de conformité Microsoft 365 et le Centre de sécurité Microsoft 365](permissions-microsoft-365-compliance-security.md)
 ### [Degré de sécurisation Microsoft](microsoft-secure-score.md)
 ## [Accéder au centre de conformité et de sécurité](go-to-the-securitycompliance-center.md)
 ### [Autorisations dans le centre de conformité et de sécurité](permissions-in-the-security-and-compliance-center.md)

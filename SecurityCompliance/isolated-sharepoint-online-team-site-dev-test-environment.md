@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Résumé: configurez un site d’équipe SharePoint Online isolé du reste de l’organisation dans votre environnement de développement/test Office 365.'
-ms.openlocfilehash: 23b734e55e8c68cdc42f41b4e61bdfe152fb01e0
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e4d4d4462efa91247954501c51a71120a7d341e0
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152586"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36053089"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Site d’équipe SharePoint Online isolé dans votre environnement de développement/test
 
@@ -59,7 +59,7 @@ Si vous souhaitez simplement créer un site d’équipe SharePoint Online isolé
 Si vous souhaitez créer un site d’équipe SharePoint Online isolé dans une configuration d’entreprise simulée, suivez les instructions de [DirSync pour votre environnement de développement/test Office 365](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment).
   
 > [!NOTE]
-> La création d’un site SharePoint Online isolé ne requiert pas l’environnement de développement/test en entreprise simulée, qui utilise un intranet simulé connecté à Internet et la synchronisation d’annuaire pour une forêt Windows Server AD. Il est proposé comme option dans cet article afin que vous puissiez tester un site SharePoint Online isolé et faire des essais dans un environnement qui représente une organisation classique. 
+> La création d’un site SharePoint Online isolé ne nécessite pas l’environnement de développement/test d’entreprise simulé, qui inclut un intranet simulé connecté à Internet et la synchronisation d’annuaires pour une forêt des services de domaine Active Directory (AD DS). Il est proposé comme option dans cet article afin que vous puissiez tester un site SharePoint Online isolé et faire des essais dans un environnement qui représente une organisation classique. 
   
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a>Phase 2: créer des comptes d’utilisateurs et des groupes d’accès
 
@@ -151,7 +151,7 @@ Pour créer un site d’équipe SharePoint Online pour ProjectX, procédez comme
   
 1. À l’aide d’un navigateur sur votre ordinateur local (configuration légère) ou sur CLIENT1 (configuration d’entreprise simulée), connectez-vous au portail[https://admin.microsoft.com](https://admin.microsoft.com)Office 365 () à l’aide de votre compte d’administrateur général.
     
-2. Dans la liste des vignettes, cliquez sur **SharePoint**.
+2. Dans la liste des mosaïques, cliquez sur **SharePoint**.
     
 3. Dans le nouvel onglet SharePoint de votre navigateur, cliquez sur **+ Créer un site**.
     
@@ -235,7 +235,7 @@ Nous allons maintenant illustrer l’accès à l’aide du compte d’utilisateu
     
 11. Dans le nouvel onglet **ProjectX-Documents** de votre navigateur, cliquez sur **Nouveau > Document Word**.
     
-12. Saisissez du texte dans la page **Word Online**, attendez que l’état indique **Enregistré**et cliquez sur le bouton de retour de votre navigateur, puis actualisez la page. Vous devriez voir un nouveau **Document.docx** dans le dossier **Documents**.
+12. Tapez du texte sur la page, attendez que l’état indique **enregistré**, cliquez sur le bouton précédent de votre navigateur, puis actualisez la page. Vous devriez voir un nouveau **Document.docx** dans le dossier **Documents**.
     
 13. Cliquez sur les points de suspension du document **Document.docx**, puis sur **Obtenir un lien**.
     

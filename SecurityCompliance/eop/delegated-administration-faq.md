@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 description: Cette rubrique contient des questions fréquemment posées et la réponse à ces questions pour les partenaires et les revendeurs Microsoft qui veulent effectuer des tâches d'administration Office 365 déléguée, y compris la capacité à gérer Exchange Online Protection (EOP) pour d'autres locataires (entreprises).
-ms.openlocfilehash: 8d28c8b6e0e85e9cfbe71e5b4b787159cc88ce08
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 0121c0a50e7f3ef7e5ab918a69efbd9ed609413e
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599800"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36165640"
 ---
 # <a name="delegated-administration-faq"></a>FAQ sur l’administration déléguée
 
@@ -29,7 +29,7 @@ A. Si vous êtes un partenaire ou un revendeur Microsoft et que vous êtes inscr
     
 2. Inscrivez-vous à l'administration déléguée Office 365. Avant que vous puissiez administrer le compte d'un client, celui-ci doit vous fournir les autorisations d'administrateur délégué. Pour obtenir leur approbation, vous devez d'abord [leur envoyer une offre d'administration déléguée](https://go.microsoft.com/fwlink/?LinkId=396829). (Vous pouvez également proposer l'administration déléguée à votre client ultérieurement.) 
     
-3. Créez le compte d'administrateur délégué à l'aide des étapes répertoriées dans l'article [Ajouter ou supprimer des relations de partenariat](https://go.microsoft.com/fwlink/?LinkId=396831).
+3. Créez le compte d’administrateur délégué.
     
 Consultez l'article [Partenaires : développez votre activité et gérez votre compte Office 365](https://go.microsoft.com/fwlink/?LinkId=301485) pour plus d'informations sur la configuration d'une administration déléguée Office 365. 
   
