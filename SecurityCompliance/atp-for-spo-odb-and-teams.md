@@ -1,7 +1,7 @@
 ---
 title: Office 365 ATP pour SharePoint, OneDrive et Microsoft teams
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: MSFTTracyP
 manager: dansimp
 audience: Admin
 ms.date: 03/19/2019
@@ -15,12 +15,12 @@ ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 ms.collection:
 - M365-security-compliance
 description: Étendez la protection avancée contre les menaces Office 365 aux fichiers dans SharePoint Online, OneDrive entreprise et Microsoft teams pour activer la collaboration en toute sécurité pour votre organisation.
-ms.openlocfilehash: 1a9fbf54b1393f250bc259ecb2e8bb9fd36f2ae0
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: adb12bf2e4c529e305104460e150b57807f24988
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598640"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36231148"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP pour SharePoint, OneDrive et Microsoft teams
 

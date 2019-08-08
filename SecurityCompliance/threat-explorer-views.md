@@ -3,7 +3,7 @@ title: Affichages dans l’Explorateur de menaces et détections en temps réel
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 03/18/2019
+ms.date: 08/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +12,12 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: Découvrez les différents types d’affichage disponibles dans l’Explorateur de menaces et les détections en temps réel.
-ms.openlocfilehash: 71ec20daae45bee8385f24091850ea6223399eae
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 82476f9af3b703904fff40c8347f2848cf919dfc
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600817"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230388"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Affichages dans l’Explorateur de menaces et détections en temps réel
 
@@ -72,9 +72,9 @@ Lorsque vous sélectionnez un élément dans la liste, tel qu’une URL qui a é
 
 ![Détails sur une URL détectée](media/ThreatExplorerEmailPhishURLDetails.png)
 
-## <a name="email--user-reported"></a>Courrier électronique > signalé par l’utilisateur
+## <a name="email--submissions"></a>Envois de > de messagerie
 
-Pour afficher ce rapport, dans l’Explorateur (ou les détections en temps réel), sélectionnez **Afficher** > **le courrier électronique** > **signalé**par l’utilisateur. Cet affichage montre le courrier électronique que les utilisateurs ont signalés comme courrier indésirable, non légitime ou courrier électronique de hameçonnage. 
+Pour afficher ce rapport, dans l’Explorateur (ou les détections en temps réel), sélectionnez **Afficher** > les envois de**courrier** > ****. Cet affichage montre le courrier électronique que les utilisateurs ont signalés comme courrier indésirable, non légitime ou courrier électronique de hameçonnage. 
 
 ![Messages électroniques signalés par les utilisateurs](media/ThreatExplorerEmailUserReportedViewOptions.png) 
 
@@ -135,7 +135,7 @@ La possibilité de filtrer un clic et d’accéder à des détails spécifiques 
 
 ## <a name="queries-and-filters"></a>Requêtes et filtres
 
-L’Explorateur (et le rapport de détections en temps réel) dispose de plusieurs filtres et fonctionnalités d’interrogation puissants qui vous permettent d’explorer les détails, tels que les principaux utilisateurs ciblés, les principales familles de programmes malveillants, la technologie de détection, et bien plus encore. Chaque type de rapport offre plusieurs façons d’afficher et d’explorer les données.
+L’Explorateur (ainsi que le rapport de détections en temps réel) dispose de plusieurs filtres et fonctionnalités d’interrogation puissants qui vous permettent d’explorer les détails, tels que les principaux utilisateurs ciblés, les principales familles de logiciels malveillants, la technologie de détection et bien plus encore. Chaque type de rapport offre plusieurs façons d’afficher et d’explorer les données.
 
 > [!IMPORTANT]
-> N’utilisez pas de caractères génériques, tels qu’un astérisque (*) ou un point d’interrogation (?), dans la barre de requête pour l’Explorateur (ou les détections en temps réel). Lorsque vous effectuez une recherche dans le champ Subject pour les messages électroniques, l’Explorateur (ou les détections en temps réel) effectue une correspondance partielle et génère des résultats similaires à une recherche par caractères génériques.
+> N’utilisez pas de caractères génériques, tels qu’un astérisque ou un point d’interrogation, dans la barre de requête pour l’Explorateur (ou les détections en temps réel). Lorsque vous effectuez une recherche dans le **champ Subject** pour les messages électroniques, l’Explorateur (ou les détections en temps réel) effectue une correspondance partielle et génère des résultats similaires à une recherche par caractères génériques.

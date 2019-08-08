@@ -1,7 +1,7 @@
 ---
 title: Affichage des rapports de protection contre la perte de données
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 6/7/2018
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec les rapports DLP dans Office 365, vous pouvez rapidement afficher le nombre de correspondances de stratégies DLP, de remplacements ou de faux positifs; voir si elles sont recherchées dans le temps; filtrer le rapport de différentes manières; et affichez des détails supplémentaires en sélectionnant un point sur une ligne sur le graphique.
-ms.openlocfilehash: edca8ad8ae970453e6baf9c1910e17cc62568af5
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: f3161854a19f9f9a04390eec508ae43e92119f96
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077300"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230368"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Affichage des rapports de protection contre la perte de données
 
@@ -77,7 +77,7 @@ Pour afficher les rapports DLP dans le centre de sécurité & conformité, vous 
 
 - Rôle **lecteur de sécurité** dans le centre d’administration Exchange. Par défaut, ce rôle est affecté aux groupes de rôles gestion de l’organisation et lecteur de sécurité dans le centre d’administration Exchange.
 
-- Rôle de **gestion de conformité DLP en lecture seule** dans le centre de sécurité _AMP_ Compliance Center. Par défaut, ce rôle est affecté aux groupes de rôles Administrateur de conformité, gestion de l’organisation, administrateur de sécurité et lecteur de sécurité dans le centre de sécurité & Compliance Center.
+- Rôle de **gestion de conformité DLP en lecture seule** dans le centre de sécurité & conformité. Par défaut, ce rôle est affecté aux groupes de rôles Administrateur de conformité, gestion de l’organisation, administrateur de sécurité et lecteur de sécurité dans le centre de sécurité & conformité.
 
 - Rôle destinataires en **Affichage seul** dans le centre d’administration Exchange. Par défaut, ce rôle est affecté aux groupes de rôles gestion de la conformité, gestion de l’organisation et gestion de l’organisation en affichage seul dans le centre d’administration Exchange.
 

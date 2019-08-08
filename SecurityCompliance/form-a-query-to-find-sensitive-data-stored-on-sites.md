@@ -1,8 +1,8 @@
 ---
 title: Créer une requête pour trouver des données sensibles stockées sur des sites
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: chrfox
+author: chrfox
+manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec la protection contre la perte de données (DLP) dans SharePoint Online, vous pouvez découvrir des documents qui contiennent des données sensibles sur l’ensemble de votre client. Après avoir découvert les documents, vous pouvez travailler avec leurs propriétaires pour protéger les données. Cette rubrique peut vous aider à créer une requête pour rechercher des données sensibles.
-ms.openlocfilehash: a200cbd802922a694510e82bb8d394fed6bb2a32
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: c9013e8334a4ef891885c7bc53b746b2db42b156
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599320"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230548"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Créer une requête pour trouver des données sensibles stockées sur des sites
 

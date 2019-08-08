@@ -1,9 +1,9 @@
 ---
-title: Rechercher et identifier les courriers électroniques malveillants remis (Office 365 Threat Investigation and Response
+title: Rechercher et identifier les courriers électroniques malveillants remis dans Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 08/02/2019
+ms.date: 08/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,14 +15,14 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment utiliser les fonctionnalités d’analyse et de réponse aux menaces pour rechercher et examiner des courriers électroniques malveillants.
-ms.openlocfilehash: 9a1e5e1bb571b3b5c517ae628c29c10b44987adb
-ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
+ms.openlocfilehash: 1f558614d77577408a824b3c6181aae22753ab0f
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36165670"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230558"
 ---
-# <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>Rechercher et identifier les messages électroniques malveillants qui ont été remis (Office 365 Advanced Threat Protection Plan 2)
+# <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>Rechercher et identifier les courriers électroniques malveillants remis dans Office 365
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) vous permet d’examiner les activités qui permettent aux utilisateurs de protéger votre organisation. Par exemple, si vous participez à l’équipe de sécurité de votre organisation, vous pouvez rechercher et enquêter sur les messages électroniques suspects qui ont été remis à vos utilisateurs. Vous pouvez le faire à l’aide de l' [Explorateur de menaces (ou des détections en temps réel)](threat-explorer.md).
   
@@ -30,7 +30,7 @@ ms.locfileid: "36165670"
 
 Assurez-vous que les conditions suivantes sont remplies :
   
-- Votre organisation dispose d' [Office 365 Advanced Threat Protection](office-365-atp.md) (plan 2) et des [licences sont attribuées aux utilisateurs](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
+- Votre organisation dispose d' [Office 365 protection avancée contre les menaces](office-365-atp.md) et des [licences sont attribuées aux utilisateurs](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
     
 - La [journalisation d’audit Office 365](turn-audit-log-search-on-or-off.md) est activée pour votre organisation. 
     

@@ -1,7 +1,7 @@
 ---
 title: Office 365-Protection avancée contre les menaces
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 ms.date: 03/28/2019
 audience: Admin
@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection inclut des pièces jointes sûres, des liens fiables, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités d’aide à la décision.
-ms.openlocfilehash: 7fe5abb65679a33b7895263137d43b0621fb04e6
-ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
+ms.openlocfilehash: ca948fdd99ca04830ecb7685ed8930a71345299f
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36168152"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36231088"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365-Protection avancée contre les menaces
 

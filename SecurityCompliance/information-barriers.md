@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble des barrières de l’information
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 07/08/2019
 audience: ITPro
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Utilisez les barrières relatives aux informations pour garantir la conformité de la communication à l’aide de Microsoft teams au sein de votre organisation.
-ms.openlocfilehash: e37c97ae8a5e3777e2a30432e8289abadae8f14c
-ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
+ms.openlocfilehash: b23e0f4285b2bee08dd19793f8461f39328e85f5
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35587043"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230398"
 ---
 # <a name="information-barriers"></a>Barrières des informations
 

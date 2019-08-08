@@ -15,16 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Découvrez la croissance automatique de l’archivage dans Office 365, qui offre un stockage d’archive illimité pour les boîtes aux lettres Exchange Online.
-ms.openlocfilehash: 9b63bcd7cbf8c1cef8df336553debdbf7af2ba12
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 21489683bbb9f3e2addb5e95a38d8f8a418639de
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158066"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36231078"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Vue d’ensemble d’un archivage illimité dans Office 365
 
-Dans Office 365, les boîtes aux lettres d’archivage fournissent aux utilisateurs un espace de stockage de boîte aux lettres supplémentaire. Une fois la boîte aux lettres d’archivage d’un utilisateur activée, jusqu’à 100 Go d’espace de stockage supplémentaire est disponible. Lorsque le quota de stockage de 100 Go est atteint, les organisations devaient contacter Microsoft pour demander un espace de stockage supplémentaire pour une boîte aux lettres d’archivage. Cela n’est plus le cas. La nouvelle fonctionnalité d’archivage illimitée dans Office 365 (appelée *archivage à extension automatique*) offre une quantité illimitée de stockage dans les boîtes aux lettres d’archivage. À présent, lorsque le quota de stockage dans la boîte aux lettres d’archivage est atteint, Office 365 augmente automatiquement la taille de l’archive, ce qui signifie que les utilisateurs ne peuvent pas manquer d’espace de stockage de boîte aux lettres et que les administrateurs n’ont pas à demander un stockage supplémentaire pour les boîtes aux lettres d’archivage. .
+Dans Office 365, les boîtes aux lettres d’archivage fournissent aux utilisateurs un espace de stockage de boîte aux lettres supplémentaire. Une fois la boîte aux lettres d’archivage d’un utilisateur activée, jusqu’à 100 Go d’espace de stockage supplémentaire est disponible. Dans le passé, lorsque le quota de stockage de 100 Go était atteint, les organisations devaient contacter Microsoft pour demander un espace de stockage supplémentaire pour une boîte aux lettres d’archivage. Cela n’est plus le cas.
+
+La fonctionnalité d’archivage illimité d’Office 365 (appelée *archivage à extension automatique*) fournit un espace illimité de stockage dans les boîtes aux lettres d’archivage. À présent, lorsque le quota de stockage dans la boîte aux lettres d’archivage est atteint, Office 365 augmente automatiquement la taille de l’archive, ce qui signifie que les utilisateurs ne peuvent pas manquer d’espace de stockage de boîte aux lettres et que les administrateurs n’ont pas à demander un stockage supplémentaire pour les boîtes aux lettres d’archivage. .
   
 Pour obtenir des instructions détaillées sur l’activation de l’archivage à extension automatique, consultez la rubrique [activation de l’archivage illimité dans Office 365](enable-unlimited-archiving.md).
   

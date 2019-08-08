@@ -1,7 +1,7 @@
 ---
 title: Configuration des stratégies de liens approuvés Office 365 ATP
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 audience: Admin
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configurez des stratégies de liens fiables pour protéger votre organisation contre les liens malveillants dans les fichiers Word, Excel, PowerPoint et Visio, ainsi que dans les messages électroniques.
-ms.openlocfilehash: 0acee8ee333c8a8f81ed624c52287c412a25ccbb
-ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
+ms.openlocfilehash: d84c57d1f21ea835d5a29e59a4efe4a11ff876c0
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36048076"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230338"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configuration des stratégies de liens approuvés Office 365 ATP
 

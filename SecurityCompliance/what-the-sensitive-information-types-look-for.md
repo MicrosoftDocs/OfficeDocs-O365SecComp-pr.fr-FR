@@ -1,7 +1,7 @@
 ---
 title: Éléments recherchés par les types d’informations sensibles
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 05/20/2019
 audience: Admin
@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La protection contre la perte de données (DLP) dans &amp; le centre de sécurité conformité d’Office 365 inclut 80 types d’informations sensibles que vous pouvez utiliser dans vos stratégies DLP. Cette rubrique répertorie tous ces types d'informations sensibles et indique ce qu'une stratégie DLP recherche pour chaque type.
-ms.openlocfilehash: 1e1aeea164c15bb64c6040f7821bf006ee8ff42f
-ms.sourcegitcommit: b8737e52724a343d99082961bc113bba819d5681
+ms.openlocfilehash: 7f5c879b35f77ef142b8c45965357715f577832e
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34247297"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230378"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Éléments recherchés par les types d’informations sensibles
 
@@ -65,22 +65,22 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordabarouting"></a>Keyword_ABA_Routing
+#### <a name="keyword_aba_routing"></a>Keyword_ABA_Routing
 
 - ABA
 - # aba
 - # routage aba
 - numéro de routage aba
-- ABA
-- abarouting#
+- ABA #
+- abarouting #
 - numéro aba
 - abaroutingnumber
 - # routage american bank association
 - numéro de routage american bank association
-- americanbankassociationrouting#
+- americanbankassociationrouting #
 - americanbankassociationroutingnumber
 - numéro de routage bancaire
-- bankrouting#
+- bankrouting #
 - bankroutingnumber
 - numéro de routage
 - RTN 
@@ -122,7 +122,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordargentinanationalid"></a>Keyword_argentina_national_id
+#### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Argentina National Identity number 
 - Identité 
@@ -180,7 +180,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordaustraliabankaccountnumber"></a>Keyword_australia_bank_account_number
+#### <a name="keyword_australia_bank_account_number"></a>Keyword_australia_bank_account_number
 
 - code swift banque
 - banque correspondante
@@ -246,7 +246,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordaustraliadriverslicensenumber"></a>Keyword_australia_drivers_license_number
+#### <a name="keyword_australia_drivers_license_number"></a>Keyword_australia_drivers_license_number
 
 - permis de conduite internationaux
 - australian automobile association
@@ -279,40 +279,40 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Permis de conduire
 - Permis de conduire
 - Permis de conduire
-- DriverLic#
-- DriverLics#
-- DriverLicence#
-- DriverLicences#
+- DriverLic #
+- DriverLics #
+- DriverLicence #
+- DriverLicences #
 - #Permis conduire
 - #Permis conduire
 - #Permis de conduire
 - #Permis de conduire
-- DriversLic#
-- DriversLics#
-- DriversLicence#
-- DriversLicences#
+- DriversLic #
+- DriversLics #
+- DriversLicence #
+- DriversLicences #
 - #Permis conduire
 - #Permis conduire
 - #Permis de conduire
 - #Permis de conduire
-- Driver'Lic#
-- Driver'Lics#
-- Driver'Licence#
-- Driver'Licences#
+- Driver'Lic #
+- Driver'Lics #
+- Driver'Licence #
+- Driver'Licences #
 - #Permis conduire
 - #Permis conduire
 - #Permis de conduire
 - #Permis de conduire
-- Driver'sLic#
-- Driver'sLics#
-- Driver'sLicence#
-- Driver'sLicences#
+- Driver'sLic #
+- Driver'sLics #
+- Driver'sLicence #
+- Driver'sLicences #
 - #Permisconduire
 - #Permisconduire
 - #Permis de conduire
 - #Permis de conduire 
 
-#### <a name="keywordaustraliadriverslicensenumberexclusions"></a>Keyword_australia_drivers_license_number_exclusions
+#### <a name="keyword_australia_drivers_license_number_exclusions"></a>Keyword_australia_drivers_license_number_exclusions
 
 - AAA
 - DriverLicense
@@ -331,20 +331,20 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Driver'sLicenses
 - Permis de conduire
 - Driver’s Licenses
-- DriverLicense#
-- DriverLicenses#
+- DriverLicense #
+- DriverLicenses #
 - #Permis de conduire
 - #Permis de conduire
-- DriversLicense#
-- DriversLicenses#
+- DriversLicense #
+- DriversLicenses #
 - #Permis de conduire
 - #Permis de conduire
-- Driver'License#
-- Driver'Licenses#
+- Driver'License #
+- Driver'Licenses #
 - #Permis de conduire
 - #Permis de conduire
-- Driver'sLicense#
-- Driver'sLicenses#
+- Driver'sLicense #
+- Driver'sLicenses #
 - #Permis de conduire
 - #Permis de conduire
    
@@ -397,7 +397,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordaustraliamedicalaccountnumber"></a>Keyword_Australia_Medical_Account_Number
+#### <a name="keyword_australia_medical_account_number"></a>Keyword_Australia_Medical_Account_Number
 
 - informations sur le compte bancaire
 - remboursements d’assurance maladie
@@ -445,12 +445,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordpassport"></a>Keyword_passport
+#### <a name="keyword_passport"></a>Keyword_passport
 
 - Numéro de passeport
 - N° de passeport
 - # Passeport
-- Tel
+- Tel #
 - PassportID
 - N ° passeport
 - passportnumber
@@ -462,11 +462,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Passeport n°
 - Passeport numéro
 - # Passeport
-- Passeport
+- Passeport #
 - PasseportNon
 - Passeportn °
 
-#### <a name="keywordaustraliapassportnumber"></a>Keyword_australia_passport_number
+#### <a name="keyword_australia_passport_number"></a>Keyword_australia_passport_number
 
 - tel
 - informations sur le passeport
@@ -522,7 +522,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordaustraliataxfilenumber"></a>Keyword_Australia_Tax_File_Number
+#### <a name="keyword_australia_tax_file_number"></a>Keyword_Australia_Tax_File_Number
 
 - numéro d’entreprise australien
 - taux d’imposition marginale
@@ -533,7 +533,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - déclaration d’impôts individuels
 - numéro de dossier fiscal
 
-#### <a name="keywordnumberexclusions"></a>Keyword_number_exclusions
+#### <a name="keyword_number_exclusions"></a>Keyword_number_exclusions
 
 - 00000000
 - 11111111
@@ -604,7 +604,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
 (Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
@@ -664,7 +664,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
 (Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
@@ -724,7 +724,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
 (Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
@@ -775,7 +775,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
 (Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
@@ -830,7 +830,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
 (Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
@@ -924,7 +924,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
 (Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
@@ -984,13 +984,13 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="cepazureemulatorstorageaccountfilter"></a>CEP_AzureEmulatorStorageAccountFilter
+#### <a name="cep_azureemulatorstorageaccountfilter"></a>CEP_AzureEmulatorStorageAccountFilter
 
 (Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
 - Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw = =
 
-#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
 (Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
@@ -1073,7 +1073,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordbelgiumnationalnumber"></a>Keyword_belgium_national_number
+#### <a name="keyword_belgium_national_number"></a>Keyword_belgium_national_number
 
 - Identité
 - Son
@@ -1148,7 +1148,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordbrazilcpf"></a>Keyword_brazil_cpf
+#### <a name="keyword_brazil_cpf"></a>Keyword_brazil_cpf
 
 - CPF
 - Identificateur
@@ -1208,7 +1208,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordbrazilcnpj"></a>Keyword_brazil_cnpj
+#### <a name="keyword_brazil_cnpj"></a>Keyword_brazil_cnpj
 
 - CNPJ 
 - CNPJ/MF 
@@ -1284,7 +1284,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordbrazilrg"></a>Keyword_brazil_rg
+#### <a name="keyword_brazil_rg"></a>Keyword_brazil_rg
 
 Cédula de identidade carte d’identité número de rregistro Registro de identidade Registro Geral RG (ce mot clé respecte la casse) RIC (ce mot clé respecte la casse) 
    
@@ -1337,7 +1337,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordcanadabankaccountnumber"></a>Keyword_canada_bank_account_number
+#### <a name="keyword_canada_bank_account_number"></a>Keyword_canada_bank_account_number
 
 - obligations d’épargne du Canada
 - agence du revenu du Canada
@@ -1440,12 +1440,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordprovincenamedriverslicensename"></a>Keyword_[province_name]_drivers_license_name
+#### <a name="keyword_province_name_drivers_license_name"></a>Keyword_[province_name]_drivers_license_name
 
 - L’abréviation de la province, par exemple AB
 - Le nom de la province, par exemple Alberta
 
-#### <a name="keywordcanadadriverslicense"></a>Keyword_canada_drivers_license
+#### <a name="keyword_canada_drivers_license"></a>Keyword_canada_drivers_license
 
 - LD
 - DISTRIBUTION
@@ -1516,52 +1516,52 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - carte d’identification
 - cartes d’identification
 - identificateur 
-- LD
-- DISTRIBUTION 
-- CÈDE 
-- CDLS# 
-- DriverLic# 
-- DriverLics# 
-- DriverLicense# 
-- DriverLicenses# 
-- DriverLicence# 
-- DriverLicences# 
+- LD #
+- DISTRIBUTION # 
+- CÈDE # 
+- CDLS # 
+- DriverLic # 
+- DriverLics # 
+- DriverLicense # 
+- DriverLicenses # 
+- DriverLicence # 
+- DriverLicences # 
 - #Permis conduire
 - #Permis conduire 
 - #Permis de conduire 
 - #Permis de conduire 
 - #Permis de conduire 
 - #Permis de conduire 
-- DriversLic# 
-- DriversLics# 
-- DriversLicense# 
-- DriversLicenses# 
-- DriversLicence# 
-- DriversLicences# 
+- DriversLic # 
+- DriversLics # 
+- DriversLicense # 
+- DriversLicenses # 
+- DriversLicence # 
+- DriversLicences # 
 - #Permis conduire 
 - #Permis conduire 
 - #Permis de conduire 
 - #Permis de conduire 
 - #Permis de conduire 
 - #Permis de conduire 
-- Driver'Lic# 
-- Driver'Lics# 
-- Driver'License# 
-- Driver'Licenses# 
-- Driver'Licence# 
-- Driver'Licences# 
+- Driver'Lic # 
+- Driver'Lics # 
+- Driver'License # 
+- Driver'Licenses # 
+- Driver'Licence # 
+- Driver'Licences # 
 - #Permis conduire 
 - #Permis conduire 
 - #Permis de conduire 
 - #Permis de conduire 
 - #Permis de conduire 
 - #Permis de conduire 
-- Driver'sLic# 
-- Driver'sLics# 
-- Driver'sLicense# 
-- Driver'sLicenses# 
-- Driver'sLicence# 
-- Driver'sLicences# 
+- Driver'sLic # 
+- Driver'sLics # 
+- Driver'sLicense # 
+- Driver'sLicenses # 
+- Driver'sLicence # 
+- Driver'sLicences # 
 - #Permisconduire 
 - #Permisconduire 
 - #Permis de conduire 
@@ -1569,14 +1569,14 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - #Permis de conduire 
 - #Permis de conduire 
 - Permis de conduire # 
-- Réf 
-- codes 
+- Réf # 
+- codes # 
 - #carte carte d’identification 
 - #cartes carte d’identification 
-- carte d’identification 
+- carte d’identification # 
 - #carte d’identification 
 - #cartes d’identification 
-- identificateur 
+- identificateur # 
    
 ## <a name="canada-health-service-number"></a>Numéro de service de santé Canada
 
@@ -1612,7 +1612,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordcanadahealthservicenumber"></a>Keyword_canada_health_service_number
+#### <a name="keyword_canada_health_service_number"></a>Keyword_canada_health_service_number
 
 - numéro d’assurance-maladie
 - informations sur le patient
@@ -1659,7 +1659,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordcanadapassportnumber"></a>Keyword_canada_passport_number
+#### <a name="keyword_canada_passport_number"></a>Keyword_canada_passport_number
 
 - citoyenneté canadienne
 - passeport canadien
@@ -1670,12 +1670,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - temps de traitement
 - demande de renouvellement
 
-#### <a name="keywordpassport"></a>Keyword_passport
+#### <a name="keyword_passport"></a>Keyword_passport
 
 - Numéro de passeport
 - N° de passeport
 - # Passeport
-- Tel
+- Tel #
 - PassportID
 - N ° passeport
 - passportnumber
@@ -1687,7 +1687,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Passeport n°
 - Passeport numéro
 - # Passeport
-- Passeport
+- Passeport #
 - PasseportNon
 - Passeportn °
    
@@ -1725,7 +1725,7 @@ Au moins deux mots clés de Keyword_canada_phin ou Keyword_canada_provinces sont
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordcanadaphin"></a>Keyword_canada_phin
+#### <a name="keyword_canada_phin"></a>Keyword_canada_phin
 
 - numéro d’assurance sociale
 - loi sur les renseignements médicaux
@@ -1743,7 +1743,7 @@ Au moins deux mots clés de Keyword_canada_phin ou Keyword_canada_provinces sont
 - orientation d’un patient
 - santé et bien-être
 
-#### <a name="keywordcanadaprovinces"></a>Keyword_canada_provinces
+#### <a name="keyword_canada_provinces"></a>Keyword_canada_provinces
 
 - Nunavut
 - Régime
@@ -1816,7 +1816,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordsin"></a>Keyword_sin
+#### <a name="keyword_sin"></a>Keyword_sin
 
 - assoc 
 - assurance sociale 
@@ -1828,11 +1828,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - numéro d’assurance sociale 
 - numéro d’identification nationale 
 - id national 
-- sine 
+- sine # 
 - ass soc 
 - ass sociale 
 
-#### <a name="keywordsincollaborative"></a>Keyword_sin_collaborative
+#### <a name="keyword_sin_collaborative"></a>Keyword_sin_collaborative
 
 - permis de conduire 
 - permis de conduire 
@@ -1890,7 +1890,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordchileidcard"></a>Keyword_chile_id_card
+#### <a name="keyword_chile_id_card"></a>Keyword_chile_id_card
 
 - National Identification Number 
 - Identity card 
@@ -1949,7 +1949,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-### <a name="keywordchinaresidentid"></a>Keyword_china_resident_id
+### <a name="keyword_china_resident_id"></a>Keyword_china_resident_id
 
 - Resident Identity Card 
 - FIGURANT 
@@ -2009,7 +2009,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordccverification"></a>Keyword_cc_verification
+#### <a name="keyword_cc_verification"></a>Keyword_cc_verification
 
 - vérification de la carte
 - numéro d’identification de la carte
@@ -2075,7 +2075,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - vencimento
 - Venc 
 
-#### <a name="keywordccname"></a>Keyword_cc_name
+#### <a name="keyword_cc_name"></a>Keyword_cc_name
 
 - American
 - american express
@@ -2097,7 +2097,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - carte blanche
 - carteblanche
 - carte de crédit
-- CC
+- CC #
 - n ° de CC:
 - date d’expiration
 - date d’exp
@@ -2238,7 +2238,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordcroatiaidcard"></a>Keyword_croatia_id_card
+#### <a name="keyword_croatia_id_card"></a>Keyword_croatia_id_card
 
 - Croatian identity card
 - Osobna iskaznica
@@ -2286,7 +2286,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordcroatiaoibnumber"></a>Keyword_croatia_oib_number
+#### <a name="keyword_croatia_oib_number"></a>Keyword_croatia_oib_number
 
 - Personal Identification Number
 - Osobni identifikacijski broj 
@@ -2378,7 +2378,7 @@ La somme de contrôle est correcte.
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keyworddenmarkid"></a>Keyword_denmark_id
+#### <a name="keyword_denmark_id"></a>Keyword_denmark_id
 
 - Personal Identification Number
 - CARDIO
@@ -2466,15 +2466,15 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordeudebitcard"></a>Keyword_eu_debit_card
+#### <a name="keyword_eu_debit_card"></a>Keyword_eu_debit_card
 
 - numéro de compte 
 - numéro de carte 
 - n° carte 
 - numéro de sécurité 
-- CC 
+- CC # 
 
-#### <a name="keywordcardtermsdict"></a>Keyword_card_terms_dict
+#### <a name="keyword_card_terms_dict"></a>Keyword_card_terms_dict
 
 - num de compte 
 - num de compte 
@@ -2655,7 +2655,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - visum 
 - vpay   
 
-#### <a name="keywordcardsecuritytermsdict"></a>Keyword_card_security_terms_dict
+#### <a name="keyword_card_security_terms_dict"></a>Keyword_card_security_terms_dict
 
 - numéro d’identification de la carte
 - vérification de la carte 
@@ -2727,7 +2727,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - veiligheidsnummer 
 - verfalldatum 
 
-#### <a name="keywordcardexpirationtermsdict"></a>Keyword_card_expiration_terms_dict
+#### <a name="keyword_card_expiration_terms_dict"></a>Keyword_card_expiration_terms_dict
 
 - ablauf 
 - data de expiracao 
@@ -2880,7 +2880,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordfrenchdriverslicense"></a>Keyword_french_drivers_license
+#### <a name="keyword_french_drivers_license"></a>Keyword_french_drivers_license
 
 - permis de conduire
 - permis de conduire
@@ -2959,12 +2959,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordpassport"></a>Keyword_passport
+#### <a name="keyword_passport"></a>Keyword_passport
 
 - Numéro de passeport
 - N° de passeport
 - # Passeport
-- Tel
+- Tel #
 - PassportID
 - N ° passeport
 - passportnumber
@@ -2976,7 +2976,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Passeport n°
 - Passeport numéro
 - # Passeport
-- Passeport
+- Passeport #
 - PasseportNon
 - Passeportn °
 
@@ -3032,7 +3032,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordfrinsee"></a>Keyword_fr_insee
+#### <a name="keyword_fr_insee"></a>Keyword_fr_insee
 
 - INSEE
 - securité sociale
@@ -3101,7 +3101,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordgermandriverslicensenumber"></a>Keyword_german_drivers_license_number
+#### <a name="keyword_german_drivers_license_number"></a>Keyword_german_drivers_license_number
 
 - Führerschein
 - Fuhrerschein
@@ -3169,7 +3169,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Permis de conduire 
 - Permis de conduire
 
-#### <a name="keywordgermandriverslicensecollaborative"></a>Keyword_german_drivers_license_collaborative
+#### <a name="keyword_german_drivers_license_collaborative"></a>Keyword_german_drivers_license_collaborative
 
 - Nr-Führerschein 
 - Nr-Fuhrerschein 
@@ -3190,7 +3190,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - N-Fuhrerschein 
 - N-Fuehrerschein 
 
-#### <a name="keywordgermandriverslicense"></a>Keyword_german_drivers_license
+#### <a name="keyword_german_drivers_license"></a>Keyword_german_drivers_license
 
 - ausstellungsdatum
 - ausstellungsort
@@ -3256,7 +3256,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordgermanpassport"></a>Keyword_german_passport
+#### <a name="keyword_german_passport"></a>Keyword_german_passport
 
 - reisepass
 - reisepasse
@@ -3264,21 +3264,21 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - tel
 - passeports
 
-#### <a name="keywordgermanpassportcollaborative"></a>Keyword_german_passport_collaborative
+#### <a name="keyword_german_passport_collaborative"></a>Keyword_german_passport_collaborative
 
 - geburtsdatum
 - ausstellungsdatum
 - ausstellungsort
 
-#### <a name="keywordgermanpassportnumber"></a>Keyword_german_passport_number
+#### <a name="keyword_german_passport_number"></a>Keyword_german_passport_number
 
 No-Reisepass Nr-Reisepass
 
-#### <a name="keywordgermanpassport1"></a>Keyword_german_passport1
+#### <a name="keyword_german_passport1"></a>Keyword_german_passport1
 
 Reisepass-Nr
 
-#### <a name="keywordgermanpassport2"></a>Keyword_german_passport2
+#### <a name="keyword_german_passport2"></a>Keyword_german_passport2
 
 bnationalit. t
    
@@ -3321,7 +3321,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordgermanyidcard"></a>Keyword_germany_id_card
+#### <a name="keyword_germany_id_card"></a>Keyword_germany_id_card
 
 - Identity Card
 - ID
@@ -3371,7 +3371,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordgreeceidcard"></a>Keyword_greece_id_card
+#### <a name="keyword_greece_id_card"></a>Keyword_greece_id_card
 
 - Greek identity Card
 - Tautotita
@@ -3421,7 +3421,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordhongkongidcard"></a>Keyword_hong_kong_id_card
+#### <a name="keyword_hong_kong_id_card"></a>Keyword_hong_kong_id_card
 
 - carte d’identité de Hong Kong
 - HKIDC
@@ -3496,7 +3496,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordindiapermanentaccountnumber"></a>Keyword_india_permanent_account_number
+#### <a name="keyword_india_permanent_account_number"></a>Keyword_india_permanent_account_number
 
 - Permanent Account Number 
 - PANEUROPÉENNES 
@@ -3533,7 +3533,7 @@ La somme de contrôle est correcte.
 
 ### <a name="keywords"></a>Mots clés
    
-#### <a name="keywordindiaaadhar"></a>Keyword_india_aadhar
+#### <a name="keyword_india_aadhar"></a>Keyword_india_aadhar
 - Aadhar
 - Aadhaar
 - UID
@@ -3585,7 +3585,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
    
-#### <a name="keywordindonesiaidcard"></a>Keyword_indonesia_id_card
+#### <a name="keyword_indonesia_id_card"></a>Keyword_indonesia_id_card
 
 - KTP
 - Kartu Tanda Penduduk 
@@ -3689,7 +3689,7 @@ Pour IPv6, le pourcentage de confiance d’une stratégie DLP ayant détecté c
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordipaddress"></a>Keyword_ipaddress
+#### <a name="keyword_ipaddress"></a>Keyword_ipaddress
 
 - IP (ce mot clé respecte la casse)
 - ip address 
@@ -3817,14 +3817,14 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordirelandpps"></a>Keyword_ireland_pps
+#### <a name="keyword_ireland_pps"></a>Keyword_ireland_pps
 
 - Personal Public Service Number 
 - PPS Number 
 - PPS Num 
 - PPS No. 
 - PPS # 
-- Spa 
+- Spa # 
 - PPSN 
 - Public Services Card 
 - Uimhir Phearsanta Seirbhíse Poiblí 
@@ -3873,7 +3873,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordisraelbankaccountnumber"></a>Keyword_israel_bank_account_number
+#### <a name="keyword_israel_bank_account_number"></a>Keyword_israel_bank_account_number
 
 - Bank Account Number 
 - Bank Account 
@@ -3915,7 +3915,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordisraelnationalid"></a>Keyword_Israel_National_ID
+#### <a name="keyword_israel_national_id"></a>Keyword_Israel_National_ID
 
 - מספר זהות 
 - Numéro d’identification nationale
@@ -3958,7 +3958,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keyworditalydriverslicensenumber"></a>Keyword_italy_drivers_license_number
+#### <a name="keyword_italy_drivers_license_number"></a>Keyword_italy_drivers_license_number
 
 - numero di patente di guida 
 - patente di guida 
@@ -4017,7 +4017,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordjpbankaccount"></a>Keyword_jp_bank_account
+#### <a name="keyword_jp_bank_account"></a>Keyword_jp_bank_account
 
 - Numéro de compte courant 
 - Compte courant 
@@ -4074,7 +4074,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - デビットACCTの番号 
 - デビット口座番号 
 
-#### <a name="keywordjpbankbranchcode"></a>Keyword_jp_bank_branch_code
+#### <a name="keyword_jp_bank_branch_code"></a>Keyword_jp_bank_branch_code
 
 Otemachi
 
@@ -4110,11 +4110,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordjpdriverslicensenumber"></a>Keyword_jp_drivers_license_number
+#### <a name="keyword_jp_drivers_license_number"></a>Keyword_jp_drivers_license_number
 
+- LD # 
 - LD 
-- LD 
-- distribution 
+- distribution # 
 - DISTRIBUTION 
 - Permis de conduire 
 - Permis de conduire 
@@ -4123,9 +4123,9 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Permis de conduire 
 - Permis de conduire 
 - permis de conduire 
+- Profil # 
 - Profil 
-- Profil 
-- conduire 
+- conduire # 
 - id d’état 
 - identification d’état 
 - numéro d’identification d’état 
@@ -4170,7 +4170,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordjppassport"></a>Keyword_jp_passport
+#### <a name="keyword_jp_passport"></a>Keyword_jp_passport
 
 - パスポート 
 - パスポート番号 
@@ -4209,7 +4209,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordjpresidentregistrationnumber"></a>Keyword_jp_resident_registration_number
+#### <a name="keyword_jp_resident_registration_number"></a>Keyword_jp_resident_registration_number
 
 - Numéro d’enregistrement du résident
 - Numéro d’enregistrement du résident 
@@ -4268,7 +4268,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordjpsin"></a>Keyword_jp_sin
+#### <a name="keyword_jp_sin"></a>Keyword_jp_sin
 
 - N° d’assurance sociale 
 - Numéro d’assurance sociale 
@@ -4311,11 +4311,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordjpresidencecardnumber"></a>Keyword_jp_residence_card_number
+#### <a name="keyword_jp_residence_card_number"></a>Keyword_jp_residence_card_number
 
 - Numéro de carte de séjour
 - N ° carte de séjour
-- N ° de carte de séjour
+- Carte de séjour #
 - 在留カード番号
    
 ## <a name="malaysia-id-card-number"></a>Numéro de carte d’identité Malaisie
@@ -4357,7 +4357,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
    
-#### <a name="keywordmalaysiaidcardnumber"></a>Keyword_malaysia_id_card_number
+#### <a name="keyword_malaysia_id_card_number"></a>Keyword_malaysia_id_card_number
 
 - carte d’application numérique
 - i/c
@@ -4424,7 +4424,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordnetherlandsbsn"></a>Keyword_netherlands_bsn
+#### <a name="keyword_netherlands_bsn"></a>Keyword_netherlands_bsn
 
 - Citizen service number 
 - BSN 
@@ -4518,7 +4518,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordnorwayidnumber"></a>Keyword_norway_id_number
+#### <a name="keyword_norway_id_number"></a>Keyword_norway_id_number
 
 - Personal identification number
 - Norwegian ID Number
@@ -4565,7 +4565,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
    
-#### <a name="keywordphilippinesid"></a>Keyword_philippines_id
+#### <a name="keyword_philippines_id"></a>Keyword_philippines_id
 
 - Unified Multi-Purpose ID 
 - UMID 
@@ -4604,7 +4604,7 @@ La somme de contrôle est correcte.
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
+#### <a name="keyword_polish_national_id_passport_number"></a>Keyword_polish_national_id_passport_number
 
 - Dowód osobisty
 - Chiffre dowodu osobistego
@@ -4648,7 +4648,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordpeselidentificationnumber"></a>Keyword_pesel_identification_number
+#### <a name="keyword_pesel_identification_number"></a>Keyword_pesel_identification_number
 
 - Nr PESEL
 - PESEL   
@@ -4688,7 +4688,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
+#### <a name="keyword_polish_national_id_passport_number"></a>Keyword_polish_national_id_passport_number
 
 - Numéro paszportu
 - Nr. Paszportu
@@ -4727,7 +4727,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordportugalcitizencard"></a>Keyword_portugal_citizen_card
+#### <a name="keyword_portugal_citizen_card"></a>Keyword_portugal_citizen_card
 
 - Citizen Card
 - National ID Card
@@ -4769,7 +4769,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordsaudiarabianationalid"></a>Keyword_saudi_arabia_national_id
+#### <a name="keyword_saudi_arabia_national_id"></a>Keyword_saudi_arabia_national_id
 
 - Carte d’identification 
 - numéro de carte d’identité 
@@ -4820,7 +4820,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
    
-#### <a name="keywordsingaporenric"></a>Keyword_singapore_nric
+#### <a name="keyword_singapore_nric"></a>Keyword_singapore_nric
 
 - National Registration Identity Card 
 - Identity Card Number 
@@ -4869,7 +4869,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
    
-#### <a name="keywordsouthafricaidentificationnumber"></a>Keyword_south_africa_identification_number
+#### <a name="keyword_south_africa_identification_number"></a>Keyword_south_africa_identification_number
 
 - Identity card
 - ID
@@ -4921,7 +4921,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
    
-#### <a name="keywordsouthkorearesidentnumber"></a>Keyword_south_korea_resident_number
+#### <a name="keyword_south_korea_resident_number"></a>Keyword_south_korea_resident_number
 
 - National ID card 
 - Citizen’s Registration Number 
@@ -5011,14 +5011,14 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="cepglobalfilter"></a>CEP_GlobalFilter
+#### <a name="cep_globalfilter"></a>CEP_GlobalFilter
 
 - some-password
 - somepassword
 - secretPassword
 - échantillonnage
 
-#### <a name="ceppasswordplaceholder"></a>CEP_PasswordPlaceHolder
+#### <a name="cep_passwordplaceholder"></a>CEP_PasswordPlaceHolder
 
 (Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
@@ -5029,7 +5029,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
     - Toute combinaison de 1-200 caractères qui sont des lettres majuscules ou minuscules, des chiffres, un astérisque (*), un tiret (-), un trait de soulignement (_) ou un espace blanc
     - Symbole supérieur à (>)
 
-#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
 (Notez que techniquement, ce type d’informations sensibles identifie ces mots clés à l’aide d’une expression régulière, et non d’une liste de mots clés.)
 
@@ -5117,7 +5117,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
    
-#### <a name="keywordswedenpassport"></a>Keyword_sweden_passport
+#### <a name="keyword_sweden_passport"></a>Keyword_sweden_passport
 
 - exigences en matière de visa 
 - Carte d’enregistrement d’une personne étrangère 
@@ -5129,12 +5129,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Entrée multiple 
 - Frais de traitement G3 
 
-#### <a name="keywordpassport"></a>Keyword_passport
+#### <a name="keyword_passport"></a>Keyword_passport
 
 - Numéro de passeport 
 - N° de passeport 
 - # Passeport 
-- Tel 
+- Tel # 
 - PassportID 
 - N ° passeport 
 - passportnumber 
@@ -5146,7 +5146,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Passeport n° 
 - Passeport numéro 
 - # Passeport 
-- Passeport 
+- Passeport # 
 - PasseportNon 
 - Passeportn ° 
    
@@ -5186,7 +5186,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
    
-#### <a name="keywordswift"></a>Keyword_swift
+#### <a name="keyword_swift"></a>Keyword_swift
 
 - organisation internationale de normalisation 9362 
 - ISO 9362 
@@ -5256,7 +5256,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordtaiwanesenationalid"></a>Keyword_taiwanese_national_id
+#### <a name="keyword_taiwanese_national_id"></a>Keyword_taiwanese_national_id
 
 - 身份證字號 
 - 身份證 
@@ -5310,7 +5310,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordtaiwanpassport"></a>Keyword_taiwan_passport
+#### <a name="keyword_taiwan_passport"></a>Keyword_taiwan_passport
 
 - ROC passport number 
 - Passport number 
@@ -5355,7 +5355,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordtaiwanresidentcertificate"></a>Keyword_taiwan_resident_certificate
+#### <a name="keyword_taiwan_resident_certificate"></a>Keyword_taiwan_resident_certificate
 
 - Resident Certificate 
 - Resident Cert 
@@ -5409,7 +5409,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordthaicitizenid"></a>Keyword_Thai_Citizen_Id
+#### <a name="keyword_thai_citizen_id"></a>Keyword_Thai_Citizen_Id
 
 - ID Number
 - Numéro d’identification
@@ -5456,7 +5456,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordturkishnationalid"></a>Keyword_Turkish_National_Id
+#### <a name="keyword_turkish_national_id"></a>Keyword_Turkish_National_Id
 
 - TC Kimlik non
 - TC Kimlik numarası
@@ -5501,7 +5501,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordukdriverslicense"></a>Keyword_uk_drivers_license
+#### <a name="keyword_uk_drivers_license"></a>Keyword_uk_drivers_license
 
 - DVLA 
 - véhicule utilitaire léger 
@@ -5553,7 +5553,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordukelectoral"></a>Keyword_uk_electoral
+#### <a name="keyword_uk_electoral"></a>Keyword_uk_electoral
 
 - nomination au conseil 
 - formulaire de nomination 
@@ -5606,21 +5606,21 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
    
-#### <a name="keyworduknhsnumber"></a>Keyword_uk_nhs_number
+#### <a name="keyword_uk_nhs_number"></a>Keyword_uk_nhs_number
 
 - service national de santé 
 - NHS 
 - administration des services de santé 
 - administration de la santé
 
-#### <a name="keyworduknhsnumber1"></a>Keyword_uk_nhs_number1
+#### <a name="keyword_uk_nhs_number1"></a>Keyword_uk_nhs_number1
 
 - id du patient 
 - identification du patient 
 - n° patient 
 - numéro de patient
 
-#### <a name="keyworduknhsnumberdob"></a>Keyword_uk_nhs_number_dob
+#### <a name="keyword_uk_nhs_number_dob"></a>Keyword_uk_nhs_number_dob
 
 - GP 
 - DOB 
@@ -5688,7 +5688,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keyworduknino"></a>Keyword_uk_nino
+#### <a name="keyword_uk_nino"></a>Keyword_uk_nino
 
 - numéro d’assurance nationale 
 - cotisations sociales 
@@ -5734,12 +5734,12 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordpassport"></a>Keyword_passport
+#### <a name="keyword_passport"></a>Keyword_passport
 
 - Numéro de passeport 
 - N° de passeport 
 - # Passeport 
-- Tel 
+- Tel # 
 - PassportID 
 - N ° passeport 
 - passportnumber 
@@ -5751,7 +5751,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - Passeport n° 
 - Passeport numéro 
 - # Passeport 
-- Passeport 
+- Passeport # 
 - PasseportNon 
 - Passeportn ° 
    
@@ -5787,7 +5787,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordusabankaccount"></a>Keyword_usa_Bank_Account
+#### <a name="keyword_usa_bank_account"></a>Keyword_usa_Bank_Account
 
 - Numéro de compte courant 
 - Compte courant 
@@ -5864,7 +5864,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordusdriverslicenseabbreviations"></a>Keyword_us_drivers_license_abbreviations
+#### <a name="keyword_us_drivers_license_abbreviations"></a>Keyword_us_drivers_license_abbreviations
 
 - LD 
 - DISTRIBUTION 
@@ -5872,18 +5872,18 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - CDLS 
 - ID 
 - Codes 
-- LD 
-- DISTRIBUTION 
-- CÈDE 
-- CDLS# 
-- Réf
-- Codes 
+- LD # 
+- DISTRIBUTION # 
+- CÈDE # 
+- CDLS # 
+- Réf #
+- Codes # 
 - Numéro d’identification 
 - Numéros d’identification 
 - Profil 
-- Profil 
+- Profil # 
 
-#### <a name="keywordusdriverslicense"></a>Keyword_us_drivers_license
+#### <a name="keyword_us_drivers_license"></a>Keyword_us_drivers_license
 
 - DriverLic 
 - DriverLics 
@@ -5924,34 +5924,34 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - cartes d’identité 
 - carte d’identification 
 - cartes d’identification 
-- DriverLic# 
-- DriverLics# 
-- DriverLicense# 
-- DriverLicenses# 
+- DriverLic # 
+- DriverLics # 
+- DriverLicense # 
+- DriverLicenses # 
 - #Permis conduire 
 - #Permis conduire 
 - #Permis de conduire 
 - #Permis de conduire 
-- DriversLic# 
-- DriversLics# 
-- DriversLicense# 
-- DriversLicenses# 
+- DriversLic # 
+- DriversLics # 
+- DriversLicense # 
+- DriversLicenses # 
 - #Permis conduire 
 - #Permis conduire 
 - #Permis de conduire 
 - #Permis de conduire 
-- Driver'Lic# 
-- Driver'Lics# 
-- Driver'License# 
-- Driver'Licenses# 
+- Driver'Lic # 
+- Driver'Lics # 
+- Driver'License # 
+- Driver'Licenses # 
 - #Permis conduire 
 - #Permis conduire 
 - #Permis de conduire 
 - #Permis de conduire 
-- Driver'sLic# 
-- Driver'sLics# 
-- Driver'sLicense# 
-- Driver'sLicenses# 
+- Driver'sLic # 
+- Driver'sLics # 
+- Driver'sLicense # 
+- Driver'sLicenses # 
 - #Permisconduire 
 - #Permisconduire 
 - #Permis de conduire 
@@ -5962,7 +5962,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - #cartes d’identification 
 
 
-#### <a name="keywordstatenamedriverslicensename"></a>Keyword_[state_name]_drivers_license_name
+#### <a name="keyword_state_name_drivers_license_name"></a>Keyword_[state_name]_drivers_license_name
 
 - Abréviation de l’État (par exemple, « NY ») 
 - Nom de l’État (par exemple, « New York »)    
@@ -6037,7 +6037,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keyworditin"></a>Keyword_itin
+#### <a name="keyword_itin"></a>Keyword_itin
 
 - redevable 
 - id fiscal 
@@ -6051,7 +6051,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 - taxi 
 - contribuable individuel 
 
-#### <a name="keyworditincollaborative"></a>Keyword_itin_collaborative
+#### <a name="keyword_itin_collaborative"></a>Keyword_itin_collaborative
 
 - Licence 
 - LD 
@@ -6132,15 +6132,15 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordssn"></a>Keyword_ssn
+#### <a name="keyword_ssn"></a>Keyword_ssn
 
 - Sécurité sociale 
 - # sécurité sociale 
 - Sécu sociale 
 - SSN 
 - NUMÉROS 
-- SSN 
-- SOCIALE 
+- SSN # 
+- SOCIALE # 
 - Identifiant SSID 
    
 

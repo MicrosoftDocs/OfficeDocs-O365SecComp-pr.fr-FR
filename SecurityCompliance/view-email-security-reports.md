@@ -1,7 +1,7 @@
 ---
 title: Afficher les rapports de sécurité de messagerie &amp; dans le centre de sécurité conformité
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: dansimp
 ms.date: 05/21/2019
 audience: ITPro
@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation. Les rapports de sécurité de messagerie sont disponibles &amp; dans le centre de sécurité conformité.
-ms.openlocfilehash: 17a8114ec1d4af9a665c235e38461f281f4fe83f
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 1e9d51c76b6df02c9d70626392a58c307ee214db
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598550"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230418"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Afficher les rapports de sécurité de messagerie &amp; dans le centre de sécurité conformité
 

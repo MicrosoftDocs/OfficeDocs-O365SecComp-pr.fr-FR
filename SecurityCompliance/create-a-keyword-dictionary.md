@@ -1,7 +1,7 @@
 ---
 title: Créer un dictionnaire de mots clés
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pour identifier des informations sensibles, vous devrez parfois rechercher des mots clés, notamment pour identifier du contenu générique (par exemple, des communications liées au secteur de la santé) ou du langage inapproprié ou explicite. Vous pouvez créer des listes de mots clés dans les types d’informations sensibles, mais la taille de ces listes de mots clés est limitée, et vous devez modifier le code XML pour créer ou modifier ces listes. Les dictionnaires de mots clés simplifient la gestion des mots clés et, à plus grande échelle, permettent la prise en charge de 100 000 termes par dictionnaire.
-ms.openlocfilehash: 9fcd1504104f367d177d0cc835736d728f36c277
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 5e99cad328115ad6b49982ea4c5749cdea6e43ed
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077570"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230788"
 ---
 # <a name="create-a-keyword-dictionary"></a>Créer un dictionnaire de mots clés
 
@@ -29,17 +29,17 @@ La protection contre la perte de données (DLP) dans Office 365 peut identifier,
 
 Les mots clés de votre dictionnaire peuvent provenir de diverses sources, le plus souvent d’un fichier (par exemple, une liste .csv ou .txt) importé dans le service ou par cmdlet PowerShell, d’une liste à laquelle vous accédez directement dans la cmdlet PowerShell ou d’un dictionnaire existant. Lorsque vous créez un dictionnaire de mots clés, vous suivez les mêmes étapes fondamentales :
   
-1. Utilisez le **Centre de sécurité & Compliance Center** ([https://protection.office.com](https://protection.office.com)) ou connectez-vous au **Centre de sécurité &amp; conformité Office 365**.
+1. Utilisez le **Centre de sécurité & conformité** ([https://protection.office.com](https://protection.office.com)) ou connectez-vous au **Centre de &amp; sécurité conformité Office 365**.
     
 2. **Définissez ou chargez vos mots clés à partir de la source voulue**. L’Assistant et l’applet de commande acceptent une liste de mots clés séparés par des virgules pour créer un dictionnaire de mots clés personnalisé, de sorte que cette étape varie légèrement en fonction de l’emplacement d’origine de vos mots-clés. Une fois chargés, les mots clés sont encodés et convertis en un tableau d’octets avant d’être importés.
     
 3. **Créez votre dictionnaire**. Choisissez un nom et une description, puis créez votre dictionnaire.
 
-## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>Créer un dictionnaire de mots clés à l’aide du centre de sécurité & Compliance Center
+## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>Créer un dictionnaire de mots clés à l’aide du centre de sécurité & conformité
 
 Procédez comme suit pour créer et importer des mots clés pour un dictionnaire personnalisé :
 
-1. Connectez-vous au centre de sécurité &[https://protection.office.com](https://protection.office.com)Compliance Center ().
+1. Connectez-vous au centre de sécurité &[https://protection.office.com](https://protection.office.com)conformité ().
 
 2. Accédez à **Classifications > Types d’informations sensibles**.
 

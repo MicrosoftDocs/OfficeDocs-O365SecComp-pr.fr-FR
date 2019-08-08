@@ -1,9 +1,9 @@
 ---
-title: Explorateur de menaces (et détections en temps réel)
+title: Explorateur de menaces et détections en temps réel
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 06/20/2019
+ms.date: 08/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
-description: Découvrez l’Explorateur (et les détections en temps réel) dans le &amp; Centre de sécurité conformité.
-ms.openlocfilehash: dff1fae01aa525135226d88b305de7c7c3aefb7c
-ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
+description: Découvrez l’Explorateur et les détections en temps réel dans le &amp; Centre de sécurité conformité.
+ms.openlocfilehash: 2e3e60c2b197c30f01efcfcba5e118091b29a22b
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054756"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230408"
 ---
-# <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces (et détections en temps réel)
+# <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces et détections en temps réel
 
 Si votre organisation dispose d' [office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) et que vous disposez [des autorisations nécessaires](#required-licenses-and-permissions), vous disposez de l' **Explorateur** ou des détections **en temps réel** (précédemment des *rapports en temps réel* ) [Voir ](#new-features-in-real-time-detections)nouveautés!). Dans le centre de sécurité & conformité, accédez à **gestion des menaces**, puis choisissez **Explorateur** ou détections **en temps réel**. 
 
@@ -42,7 +42,7 @@ Ce rapport vous permet d’utiliser les actions suivantes:
 
 ## <a name="new-features-in-real-time-detections"></a>Nouvelles fonctionnalités dans les détections en temps réel
 
-L’Explorateur/détections en temps réel ajoute de nouveaux champs conçus pour vous donner une image plus complète de l’emplacement de vos courriers électroniques. Une partie de cette modification est de faciliter la chasse aux personnes qui effectuent des opérations de sécurité, mais le résultat net est de savoir en un clin d’œil l’emplacement des messages électroniques problématiques.
+L’Explorateur (et les détections en temps réel) ajoute de nouveaux champs conçus pour vous donner une image plus complète de l’emplacement de vos messages électroniques. Une partie de cette modification est de faciliter la chasse aux personnes qui effectuent des opérations de sécurité, mais le résultat net est de savoir en un clin d’œil l’emplacement des messages électroniques problématiques.
 
 Comment cela est-il fait? L’état de remise est désormais divisé en deux colonnes:
 
@@ -105,9 +105,9 @@ Pour consulter les URL de hameçonnage dans les messages et les clics sur les UR
 
     Le rapport est actualisé pour afficher deux tables d’URL différentes sous l’onglet URL sous le rapport:
 
-   1. Les **URL principales** sont les URL contenues dans les messages que vous avez filtrés vers et l’action de remise de courrier électronique compte pour chaque URL. Dans l’affichage e-mail de hameçonnage, cette liste contient généralement des URL légitimes. Les agresseurs incluent un mélange d’URL correctes et incorrectes dans leurs messages pour essayer de les remettre, mais ils rendent les liens malveillants plus intéressants pour l’utilisateur. Le tableau des URL est trié par nombre total d’e-mails (Remarque: cette colonne n’est pas affichée pour simplifier l’affichage).
+   - Les **URL principales** sont les URL contenues dans les messages que vous avez filtrés vers et l’action de remise de courrier électronique compte pour chaque URL. Dans l’affichage e-mail de hameçonnage, cette liste contient généralement des URL légitimes. Les agresseurs incluent un mélange d’URL correctes et incorrectes dans leurs messages pour essayer de les remettre, mais ils rendent les liens malveillants plus intéressants pour l’utilisateur. Le tableau des URL est trié par nombre total d’e-mails (Remarque: cette colonne n’est pas affichée pour simplifier l’affichage).
 
-   2. Les **clics en haut** sont les liens fiables les URL sur lesquelles l’utilisateur a cliqué, triées par nombre total de clics (cette colonne ne montre pas non plus comment simplifier l’affichage). Nombre total par colonne indique le nombre de liens approuvés cliquez sur nombre de verdicts pour chaque URL sur laquelle vous avez cliqué. Dans la vue e-mail de hameçonnage, il s’agit plus souvent d’URL suspectes ou malveillantes, mais peut inclure des URL propres qui se trouvent dans des messages hameçons. Les clics d’URL sur les liens non justifiés ne s’afficheront pas ici.
+   - Les **clics en haut** sont les liens fiables les URL sur lesquelles l’utilisateur a cliqué, triées par nombre total de clics (cette colonne ne montre pas non plus comment simplifier l’affichage). Nombre total par colonne indique le nombre de liens approuvés cliquez sur nombre de verdicts pour chaque URL sur laquelle vous avez cliqué. Dans la vue e-mail de hameçonnage, il s’agit plus souvent d’URL suspectes ou malveillantes, mais peut inclure des URL propres qui se trouvent dans des messages hameçons. Les clics d’URL sur les liens non justifiés ne s’afficheront pas ici.
    
    Les deux tableaux d’URL affichent les URL les plus fréquentes dans les messages d’hameçonnage par action de remise et par emplacement, et ils affichent des clics d’URL bloqués (ou visités malgré un avertissement) afin que vous puissiez comprendre quels liens incorrects potentiels ont été reçus par les utilisateurs et interagis avec les utilisateurs. À partir de là, vous pouvez effectuer une analyse plus poussée. Par exemple, sous le graphique, vous pouvez voir les URL principales dans les messages électroniques qui ont été bloqués dans l’environnement de votre organisation.
    
@@ -117,11 +117,11 @@ Pour consulter les URL de hameçonnage dans les messages et les clics sur les UR
 
 ## <a name="review-email-messages-reported-by-users"></a>Examiner les messages électroniques signalés par les utilisateurs
 
-Supposons que vous voulez afficher les messages électroniques que les utilisateurs de votre organisation ont signalés comme courriers indésirables, non légitimes ou le hameçonnage à l’aide du [complément de message de rapport pour Outlook et Outlook sur le Web](enable-the-report-message-add-in.md). Pour ce faire, utilisez la [messagerie >](threat-explorer-views.md#email--user-reported) vue signalée par l’utilisateur de l’Explorateur (ou détections en temps réel).
+Supposons que vous voulez afficher les messages électroniques que les utilisateurs de votre organisation ont signalés comme courriers indésirables, non légitimes ou le hameçonnage à l’aide du [complément de message de rapport pour Outlook et Outlook sur le Web](enable-the-report-message-add-in.md). Pour ce faire, utilisez l’affichage [courrier >](threat-explorer-views.md#email--submissions) les soumissions de l’Explorateur (ou des détections en temps réel).
 
 1. Dans le centre de sécurité & conformité[https://protection.office.com](https://protection.office.com)(), sélectionnez**Explorateur** de **gestion** > des menaces (ou **détections en temps réel**). (Cet exemple utilise Explorer.)
 
-2. Dans le menu **affichage** , choisissez **e-mail** > **-signalé**par l’utilisateur.<br/>![Menu Affichage de l’Explorateur](media/ExplorerViewMenuEmailUserReported.png)<br/>
+2. Dans le menu **affichage** , choisissez envois de **courrier électronique** > ****.<br/>![Menu Affichage de l’Explorateur](media/ExplorerViewMenuEmailUserReported.png)<br/>
 
 3. Cliquez sur **expéditeur**, puis sur**type de rapport**de **base** > .
 
@@ -170,8 +170,7 @@ Pour en savoir plus sur les rôles et les autorisations, consultez les ressource
 - [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 - [Autorisations des fonctionnalités dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
   
-## <a name="some-differences-between-real-time-detection-and-threat-exporter"></a>Différences entre la détection en temps réel et l’exportateur de menace.
+## <a name="some-differences-between-threat-exporter-and-real-time-detections"></a>Différences entre les exportateurs de menaces et les détections en temps réel
 
- - **Le rapport de détection en temps réel** est fourni avec un abonnement à la protection avancée contre les menaces, tandis que l' **Explorateur de menaces** est fourni avec ATP P2.
- - Le rapport de **détections en temps réel** vous permet d’afficher les détections en temps réel, tandis que les rapports de l’Explorateur de menaces vous permettent d’obtenir plus de détails dans une attaque donnée.
- - Les rapports **Threat Explorer** offrent différents ensembles de rapports qui améliorent votre expérience en matière de rapports de **détecteur en temps réel** .
+ - Le rapport de **détections en temps réel** est disponible dans Office 365 DAV plan 1, tandis que l' **Explorateur de menaces** est disponible dans Office 365 DAV plan 2.
+ - Le rapport des **détections en temps réel** vous permet d’afficher les détections en temps réel. L' **Explorateur de menaces** le fait également, mais vous permet également d’afficher des détails supplémentaires pour une attaque donnée.
