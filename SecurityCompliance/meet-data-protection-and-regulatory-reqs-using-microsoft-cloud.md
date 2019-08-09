@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: Le Gestionnaire de conformité, disponible dans le Portail d’approbation de services de Microsoft, propose des outils pour suivre, implémenter et gérer les contrôles permettant à votre organisation de se conformer aux normes du secteur en matière de sécurité et de protection des données (par exemple, le RGPD, les normes ISO 27001 et 27018, la loi américaine HIPAA), quand elle utilise les services de cloud computing Microsoft, tels qu’Office 365 et Microsoft Azure. Le Gestionnaire de conformité permet à la personne responsable de la stratégie de protection des données et de la vie privée de votre organisation de gérer vos processus d’évaluation des risques et de conformité.
-ms.openlocfilehash: c4b7188428fc494ca8b0bfc9f76b725a7b9f6538
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1c3bf4db5c2e1eabd431bc4d799c46ba8f41e97e
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158836"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786709"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Répondre aux exigences sur la protection des données et aux réglementations pendant l’utilisation des services de cloud computing Microsoft à l’aide du Gestionnaire de conformité
 
@@ -120,7 +120,7 @@ Dans le tableau de bord, le gestionnaire de conformité affiche le score total d
   
 Les points restants proviennent de l’évaluation réussie du contrôle du client, à la suite de l’implémentation et du test des contrôles gérés par le client, chaque étape correspondant à une valeur spécifique qui s’ajoute au score de conformité global. 
   
-Chaque évaluation affiche un Score de conformité basé sur les risques pour vous aider à évaluer le niveau de risque (pour cause de non conformité ou de défaillance d’un contrôle) associé à chaque contrôle (qu’il soit géré par Microsoft ou le client) d’une évaluation. Chaque contrôle géré par le client reçoit un certain nombre de points (*classement selon la gravité*) sur une échelle de 1 à 10 en fonction de la gravité du risque : plus le facteur de risque est élevé, plus le contrôle obtient de points. 
+Chaque évaluation affiche un Score de conformité basé sur les risques pour vous aider à évaluer le niveau de risque (pour cause de non conformité ou de défaillance d’un contrôle) associé à chaque contrôle (qu’il soit géré par Microsoft ou le client) d’une évaluation. Chaque contrôle géré par le client reçoit un certain nombre de points (classement selon la gravité) sur une échelle de 1 à 10 en fonction de la gravité du risque : plus le facteur de risque est élevé, plus le contrôle obtient de points. 
   
 Par exemple, le contrôle d’évaluation Gestion de l’accès utilisateur illustré ci-dessous présente un risque très élevé et affiche une valeur de 10.
   
@@ -142,13 +142,13 @@ Le Gestionnaire de conformité affecte un degré de gravité par défaut à chaq
     
 Les valeurs affichées du Score de conformité du contrôle sont appliquées *intégralement* au Score de conformité total si le contrôle est implémenté et réussit le test d’évaluation qui suit. Aucun point n’est accordé pour une implémentation partielle. Les points accordés sont ajoutés au Score de conformité total seulement si l’**État d’implémentation** du contrôle est défini sur **Implémenté** ou **Implémentation alternative** et le **Résultat de test** est défini sur **Réussite**. 
   
-N’oubliez pas que le Score de conformité peut vous aider à hiérarchiser les contrôles à implémenter en priorité en indiquant les contrôles ayant un risque potentiel plus élevé en cas de problème lié à un contrôle. De plus, quand les contrôles d’évaluation sont associés à d’autres contrôles (soit dans la même évaluation, soit dans une autre évaluation du même regroupement), le succès de l’implémentation et du test d’un contrôle peut permettre de considérablement réduire les efforts liés à la synchronisation des résultats de test du contrôle.
+De plus, le Score de conformité peut vous aider à hiérarchiser les contrôles à implémenter en priorité en indiquant les contrôles ayant un risque potentiel plus élevé en cas de problème lié à un contrôle. De plus, quand les contrôles d’évaluation sont associés à d’autres contrôles (soit dans la même évaluation, soit dans une autre évaluation du même regroupement), le succès de l’implémentation et du test d’un contrôle peut permettre de considérablement réduire les efforts liés à la synchronisation des résultats de test du contrôle.
   
 Par exemple, dans l’image ci-dessous, l’évaluation GDPR-Office 365 est finalisée à 46 %, avec 51 contrôles sur 111 évalués et un score de conformité total de 289 sur un total possible de 600.
   
 ![Gestionnaire de conformité – Aperçu de l’évaluation](media/595eedae-e3e0-4d1f-8cf5-7c1c9f4fd1e8.png)
   
-Dans l’évaluation GDPR ci-dessous, le contrôle 7.5.5 est associé à 5 autres contrôles (7.4.1, 7.4.3, 7.4.4,.7.4.8 et 7.4.9) ayant une cote de risque modéré à élevé de 6 ou 8). Nous avons utilisé le filtre de l’évaluation pour sélectionner tous ces contrôles et les afficher. Nous pouvons alors voir qu’aucun d’entre eux n’a été évalué. 
+Dans l’évaluation GDPR ci-dessous, le contrôle 7.5.5 est associé à 5 autres contrôles (7.4.1, 7.4.3, 7.4.4, 7.4.8,.7.4.9 et 6) ayant une cote de risque modéré à élevé de 8 ou 8). Nous avons utilisé le filtre de l’évaluation pour sélectionner tous ces contrôles et les afficher. Nous pouvons alors voir qu’aucun d’entre eux n’a été évalué. 
   
 ![Gestionnaire de conformité – Affichage de l’évaluation – Contrôles de filtre, aucun évalué](media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) Si l’un de ces 6 contrôles est finalisé, les résultats de test seront synchronisés avec les contrôles associés de cette évaluation (tout comme n’importe quel contrôle d’une évaluation appartenant au même regroupement). À la fin de l’implémentation et du test du contrôle GDPR 7.5.5, la zone de détails du contrôle s’actualise et indique que les 6 contrôles ont été évalués, le nombre de contrôles évalués passant de 57 et 51 % et le Score de conformité total à + 40. 
   
@@ -277,13 +277,13 @@ En fonction de la gravité du contrôle, le contrôle obtient un score de confor
    
 En hiérarchisant les contrôles d’évaluation selon la valeur du score de conformité, l’organisation peut se concentrer sur les éléments qui présentent le risque le plus élevé. Ainsi, plus de points sont ajoutés au score de conformité total de l’évaluation pour chaque évaluation de contrôle terminée.
   
-### <a name="summmary-of-scoring-methodology"></a>En bref
+### <a name="summary-of-scoring-methodology"></a>Résumé de la méthodologie de notation
   
 Le Score de conformité est un composant majeur du Gestionnaire de conformité qui permet aux organisations de comprendre et de gérer leur conformité. Le Score de conformité d’une évaluation reflète la conformité de l’entreprise avec une norme ou un règlement donné. Plus le score est élevé (jusqu’au nombre maximal de points alloué pour l’évaluation), plus l’entreprise est en conformité avec cette norme ou ce règlement. Il est essentiel pour les organisations de bien comprendre la méthodologie de notation de la conformité pour pouvoir hiérarchiser leurs actions. Pour la résumer, les contrôles d’évaluation obtiennent des notes comprises entre 1 et 10 selon la gravité du risque (faible à élevé) et les évaluations des contrôles terminées augmentent le score de conformité total.
 
 ## <a name="grouping-assessments"></a>Regroupement des évaluations
 
-Quand vous créez une évaluation, vous êtes invité à créer un groupe pour affecter l’évaluation à un groupe existant ou à affecter tout simplement l’évaluation à un groupe. Les groupes vous permettent d’organiser les évaluations de manière logique et de partager des informations et des tâches de flux de travail courantes entre les évaluations ayant des contrôles gérés par le client identiques ou associés.
+Lorsque vous créez une analyse, vous êtes invité à créer un groupe auquel attribuer l’analyse ou à attribuer cette dernière à un groupe existant. Les groupes vous permettent d’organiser logiquement les analyses et de partager des informations courantes ainsi que des tâches de flux de travail entre les analyses dotées de contrôles gérés par le client similaires ou associés.
   
 Par exemple, vous pouvez regrouper les évaluations par année ou par équipe, service ou organisme au sein de votre organisation. Voici quelques exemples de groupe et d’évaluation qu’ils peuvent contenir.
   
@@ -318,15 +318,15 @@ Par exemple, vous pouvez regrouper les évaluations par année ou par équipe, s
   
 Voici les conditions requises pour regrouper des évaluations :
   
-- Le nom de chaque groupe (également appelé *ID de groupe*) doit être unique au sein de votre organisation. 
+- Le nom de chaque groupe (également appelé ID de groupe) doit être unique au sein de votre organisation. 
     
 - Les groupes peuvent contenir des évaluations pour la même certification/réglementation, mais chaque groupe peut contenir une seule évaluation pour une paire service cloud/certification spécifique. Par exemple, un groupe ne peut pas contenir deux évaluations pour Office 365 et le RGPD. De même, un groupe peut contenir plusieurs évaluations pour le même service cloud à condition que la certification/réglementation correspondante soit différente pour chacune d’entre elles.
     
-Une fois qu’une évaluation a été ajoutée à un regroupement d’évaluations, vous ne pouvez plus modifier le regroupement. Vous pouvez renommer le groupe d’évaluations, ce qui modifie le nom du regroupement de toutes les évaluations associées à ce groupe. Vous pouvez créer une évaluation et un groupe d’évaluations et copier les informations d’une évaluation existante, ce qui crée un duplicata de cette évaluation dans un autre groupe d’évaluations. L’archivage d’une évaluation rompt la relation entre cette évaluation et le groupe d’évaluations. Ainsi, si d’autres évaluations associées sont mises à jour, celles-ci ne seront pas reflétées dans l’évaluation archivée.
+Une fois qu’une analyse a été ajoutée à un groupe d’analyses, il n’est plus possible de modifier celui-ci. Vous pouvez renommer le groupe d’analyses, ce qui a pour effet de modifier son nom pour toutes les analyses qui y sont associées. Vous pouvez créer une analyse et nouveau groupe d’analyses, puis copier les informations d’une analyse existante, ce qui a pour effet de créer une copie de cette analyse dans un autre groupe d’analyses. L’archivage d’une analyse rompt la relation entre cette analyse et le groupe d’analyse. Les mises à jour apportées aux autres analyses associées ne sont plus répercutées dans l’analyse archivée.
   
-Comme indiqué précédemment, quand deux évaluations différentes du même groupe partagent le même contrôle géré par le client (et donc les mêmes actions du client), les détails de l’implémentation, les informations du test et l’état du contrôle d’une évaluation sont synchronisés avec le même contrôle d’une autre évaluation du groupe. En d’autres termes, si des évaluations partagent le même contrôle et que ces évaluations appartiennent au même groupe, vous n’aurez pas besoin de gérer le processus d’évaluation du contrôle d’une seule évaluation. Les résultats pour ce contrôle sont automatiquement synchronisés avec les autres évaluations. Par exemple, les évaluations ISO 27001 et ISO 27018 contiennent toutes deux un contrôle lié aux stratégies de mot de passe. Si l’État du test pour le contrôle est défini sur « Réussite » dans une évaluation, le contrôle est mis à jour (et marqué « Réussite») dans l’autre évaluation, à condition que les deux évaluations appartiennent au même groupe d’évaluations.
+Comme expliqué précédemment, l’utilisation de groupes lorsque deux analyses du même groupe partagent le même contrôle géré par le client (et dès lors, les actions du client sont les mêmes pour chaque contrôle) présente l’avantage de synchroniser les détails de mise en œuvre, les informations de test et l’état du contrôle dans une analyse avec le même contrôle dans toute autre analyse du groupe. En d’autres termes, si des analyses partagent le même contrôle et que ces analyses appartiennent au même groupe, vous pouvez gérer le processus d’analyse du contrôle dans une même analyse. Les résultats de ce contrôle sont automatiquement synchronisés avec d’autres analyses. Par exemple, ISO 27001 et ISO 27018 possèdent un contrôle associé aux stratégies de mot de passe. Si le paramètre État du test correspondant au contrôle est défini sur « Réussi » dans une analyse, le contrôle est mis à jour (et marqué comme « Réussi ») dans l’autre analyse, tant que les deux analyses font partie du même groupe d’analyses.
   
-Prenons l’exemple de ces deux contrôles d’évaluation associés, le contrôle 6.10.1.2 de l’évaluation Office 365-GDPR et le contrôle SC-13 de l’évaluation Office 365-NIST 800-53, qui sont tous deux liés au chiffrement des données sur les réseaux publics. Ces deux contrôles sont associés dans deux évaluations différentes du groupe Default Group. Au départ, aucune évaluation de contrôle client n’était terminée dans ces deux évaluations, comme illustré dans le tableau de bord du Gestionnaire de conformité ci-dessous.
+À titre d’exemple, considérons ces deux contrôles d’analyse connexes ayant trait au chiffrement de données sur des réseaux publics, à savoir le contrôle 6.10.1.2 dans l’analyse Office 365 - RGPD et le contrôle SC-13 dans Office 365 - NIST 800- 53. Il s’agit de contrôles d’analyse connexes, dans deux analyses différentes faisant partie du groupe par défaut.  Dans un premier temps, aucune analyse n’a porté sur le contrôle du client, comme le montre le tableau de bord du Gestionnaire de conformité présentant ces deux analyses.
   
 ![Tableau de bord du Gestionnaire de conformité – Évaluations groupées – avant](media/dc0126a3-415c-4fbe-a020-1806dd1caebd.png)
   
@@ -340,7 +340,7 @@ En cliquant sur l’évaluation **Office 365-GDPR**, et en utilisant les contr�
   
 En accédant au contrôle associé de l’évaluation groupée, nous pouvons voir que le contrôle NIST 800-53 SC-13 a également été marqué comme terminé à la même date et à la même heure, alors qu’aucun effort n’a été déployé pour réaliser l’implémentation et le test de ce contrôle.
   
-![Évaluation dans le Gestionnaire de conformité -NIST 800-53 SC-13 terminé](media/b5933592-db5a-4fdd-9be2-bba777646a88.png)
+![Évaluation dans le Gestionnaire de conformité - NIST 800-53 SC (13) terminé](media/b5933592-db5a-4fdd-9be2-bba777646a88.png)
   
 Dans le tableau de bord, nous pouvons voir que chaque évaluation comporte une évaluation de contrôle terminée et que le Score de conformité total de chaque évaluation a augmenté de 8 points (valeur du score de conformité de ce contrôle partagé).
   
@@ -369,7 +369,7 @@ Pour ajouter ou supprimer des utilisateurs des rôles du Gestionnaire de conform
     
 4. Dans la liste déroulante **Sélectionner un rôle**, cliquez sur le rôle à gérer. 
     
-5. Les utilisateurs ajoutés aux rôles figurent sur la page **Sélectionner un rôle**. 
+5. Les utilisateurs ajoutés à chaque rôle figurent sur la page **Sélectionner un rôle**. 
     
 6. Pour ajouter des utilisateurs à ce rôle, cliquez sur **Ajouter**. Dans la boîte de dialogue **Ajouter des utilisateurs**, cliquez sur le champ utilisateur. Vous pouvez parcourir la liste des utilisateurs disponibles ou saisir le nom de l’utilisateur pour filtrer la liste selon votre recherche. Cliquez sur l’utilisateur pour ajouter ce compte à la liste **Ajouter des utilisateurs** et lui affecter ce rôle. Pour ajouter plusieurs utilisateurs simultanément, commencez à saisir un nom d’utilisateur pour filtrer la liste, puis cliquez sur l’utilisateur à ajouter à la liste. Cliquez sur **Enregistrer** pour affecter le rôle sélectionné à ces utilisateurs. 
     
@@ -397,7 +397,7 @@ Certaines réglementations exigent que les organisations soient en mesure de sup
 
 Pour rechercher un compte d’utilisateur :
   
-1. Entrez l’adresse e-mail de l’utilisateur dans l’alias (informations à gauche du symbole @), puis choisissez le nom de domaine en cliquant sur la liste des suffixes de domaine à droite. Si le client possède plusieurs domaines inscrits, vérifiez le suffixe du nom de domaine de l’adresse e-mail pour éviter toute erreur.
+1. Entrez l’adresse e-mail de l’utilisateur en saisissant l’alias (informations situées à gauche du symbole @), puis choisissez le nom de domaine en cliquant sur la liste des suffixes de domaine à droite. S’il s’agit d’un client comportant plusieurs domaines inscrits, vous pouvez revérifier le suffixe du nom de domaine de l’adresse e-mail pour vous assurer qu’il est correct.
     
 2. Une fois que le nom d’utilisateur est correctement entré, cliquez sur **Rechercher**. 
     
@@ -409,11 +409,11 @@ Pour rechercher un compte d’utilisateur :
     
 ### <a name="export-a-report-of-account-data-history"></a>Exporter le rapport de l’historique des données d’un compte
 
-Une fois le compte d’utilisateur identifié, vous pouvez générer un rapport sur les dépendances existantes liées à ce compte. Ces informations vous permettront de réaffecter des éléments d’action en cours ou de garantir l’accès à des preuves chargées. 
+Une fois le compte d’utilisateur identifié, vous pouvez générer un rapport sur les dépendances liées à ce compte. Cette information vous permettra de réattribuer des éléments d’action ouverts ou de garantir l’accès aux preuves précédemment chargées. 
   
  Pour générer et exporter un rapport :
   
-1. Cliquez sur **Exporter** pour générer et télécharger un rapport sur les éléments d’action d’un contrôle du Gestionnaire de conformité actuellement affectés au compte d’utilisateur renvoyé, ainsi que la liste des documents chargés par cet utilisateur. S’il n’y a aucune action affectée ni aucun document téléchargé, un message d’erreur indique « Aucune donnée liée à cet utilisateur ». 
+1. Cliquez sur **Exporter** pour générer et télécharger un rapport sur les éléments d’action de contrôle du Gestionnaire de conformité actuellement attribués au compte d’utilisateur renvoyé, ainsi que la liste des documents chargés par cet utilisateur. En l’absence d’actions attribuées ou de documents chargés, un message d’erreur indique « Aucune données pour cet utilisateur ». 
     
 2. Le rapport est téléchargé en arrière-plan de la fenêtre active du navigateur. Si aucune fenêtre de téléchargement n’apparaît, vérifiez l’historique de téléchargement de votre navigateur.
     
@@ -432,7 +432,7 @@ Cette fonction permet aux organisations de supprimer des dépendances actives ou
     
 2. Sélectionnez **Remplacer** pour réaffecter au nouvel utilisateur sélectionné tous les éléments d’action du contrôle de l’utilisateur renvoyé. 
     
-3. Une boîte de dialogue de confirmation apparaît, indiquant « Cette action réaffecte tous les éléments d’action du contrôle de l’utilisateur actuel à l’utilisateur sélectionné. Cette action ne peut pas être annulée. Voulez-vous vraiment continuer ? »
+3. Une boîte de dialogue de confirmation affiche le message suivant : « Tous les éléments d’action de contrôle de l’utilisateur actuel seront réattribués à l’utilisateur sélectionné. Cette action ne peut pas être annulée. Voulez-vous vraiment continuer ? »
     
 4. Pour continuer, cliquez sur **OK**, sinon cliquez sur **Annuler**. 
     
@@ -493,7 +493,7 @@ Le Gestionnaire de conformité est accessible depuis le Portail d’approbation 
   
 ## <a name="viewing-action-items"></a>Affichage des éléments d’action
 
-Le Gestionnaire de conformité vous permet de visualiser tous les éléments d’action d’une évaluation de contrôle affectée et d’effectuer une action rapidement et facilement. Vous pouvez afficher tous les éléments d’action ou sélectionner les éléments d’action correspondant à une certification spécifique en cliquant sur l’onglet associé à cette évaluation. Par exemple, dans l’image ci-dessous, l’onglet GDPR est sélectionné et affiche les contrôles associés à l’évaluation GDPR.
+Le Gestionnaire de conformité fournit une vue pratique de tous les points d’action d’analyse de contrôle qui vous sont attribués, ce qui vous permet d’agir rapidement et facilement sur ceux-ci. Vous pouvez afficher tous les points d’action ou sélectionner ceux qui correspondent à une certification spécifique en cliquant sur l’onglet associé à cette analyse. Par exemple, dans l’image ci-dessous, l’onglet RGPD sélectionné présente les contrôles liés à l’analyse RGPD.
   
 ![Gestionnaire de conformité –Liste des éléments d’action et onglet GDPR sélectionnés](media/ba960f5c-becb-4d95-a000-d08ec77b7b46.png)
   
@@ -513,13 +513,13 @@ Pour ajouter une évaluation au Gestionnaire de conformité :
     
 2. Dans la fenêtre **Ajouter une évaluation**, vous pouvez créer un groupe auquel ajouter l’évaluation ou vous pouvez l’ajouter à un groupe existant (le groupe intégré est intitulé « Groupe initial »). Selon l’option choisie, soit vous tapez le nom d’un nouveau groupe, soit vous sélectionnez un groupe existant dans la liste déroulante. Pour en savoir plus, consultez la section [Regroupement des évaluations](#grouping-assessments).
     
-    Si vous créez un groupe, vous pouvez également copier les informations d’un groupe existant dans la nouvelle évaluation. Ainsi, toutes les informations ajoutées aux champs Détails de l’implémentation, Plan de test et Réponse de la direction des contrôles gérés par le client des évaluations du groupe copié sont copiés dans les contrôles gérés par le client identiques (ou associés) de la nouvelle évaluation. Si vous ajoutez une nouvelle évaluation à un groupe existant, les informations communes des évaluations de ce groupe sont copiées dans la nouvelle évaluation. Pour en savoir plus, consultez la section [Copie des informations des évaluations existantes](#copying-information-from-existing-assessments).
+    Si vous créez un groupe, vous avez également la possibilité de copier les informations d’un groupe existant vers la nouvelle analyse. Ainsi, les informations ajoutées dans les champs Détails de mise en œuvre, Plan du test et Réponse de gestion des contrôles gérés par le client des analyses du groupe à partir duquel vous effectuez la copie sont copiées vers les mêmes contrôles gérés par le client (ou associés) dans la nouvelle analyse. Si vous ajoutez une nouvelle analyse à un groupe existant, les informations courantes des analyses de ce groupe sont copiées vers la nouvelle analyse. Pour plus d’informations, voir [Copie d’informations à partir d’analyse existantes](#copying-information-from-existing-assessments).
     
 3. Cliquez sur **Suivant**, puis :
     
-    a. Choisissez un service cloud Microsoft à évaluer dans la liste déroulante **Sélectionner un produit**. 
+    a. Sélectionnez un service de cloud computing Microsoft à des fins d’analyse de la conformité dans la liste déroulante **Sélectionner un produit**. 
     
-    b. Choisissez une certification pour évaluer le service cloud sélectionné dans la liste déroulante **Sélectionner une certification**. 
+    b. Sélectionnez une certification pour analyser le service de cloud computing dans la liste déroulante **Sélectionner une certification**. 
     
 4. Cliquez sur **Ajouter au tableau de bord** pour créer l’évaluation. L’évaluation est ajoutée au tableau de bord du Gestionnaire de conformité dans une nouvelle vignette à la fin de la liste des vignettes existantes. 
     
@@ -533,7 +533,7 @@ Pour ajouter une évaluation au Gestionnaire de conformité :
 
 ## <a name="copying-information-from-existing-assessments"></a>Copie des informations des évaluations existantes
 
-Comme indiqué précédemment, quand vous créez un groupe d’évaluations, vous pouvez copier les informations des évaluations d’un groupe existant dans la nouvelle évaluation du nouveau groupe. Ainsi, vous pouvez appliquer l’évaluation et les tests réalisés aux mêmes contrôles gérés par le client de la nouvelle évaluation. Par exemple, si votre organisation contient un groupe pour toutes les évaluations liées au RGPD, vous pouvez copier les informations communes d’une évaluation existante quand vous ajoutez une nouvelle évaluation au groupe.
+Comme indiqué précédemment, lorsque vous créez un groupe d’analyses, vous avez la possibilité de copier les informations des analyses d’un groupe existant vers la nouvelle analyse du nouveau groupe. Vous pouvez ainsi appliquer l’analyse et le processus de test effectués pour les mêmes contrôles gérés par le client à la nouvelle analyse. Par exemple, si vous disposez d’un groupe pour toutes les analyses RGPD associées au sein de votre organisation, vous pouvez copier les informations courantes d’une analyse existante lorsque vous ajoutez une nouvelle analyse au groupe.
   
 Vous pouvez copier les informations suivantes d’un contrôle géré par le client dans une nouvelle évaluation :
   
@@ -543,11 +543,11 @@ Vous pouvez copier les informations suivantes d’un contrôle géré par le cli
     
 - Informations sur les détails de l’implémentation et le plan de test.
     
-De même, les informations des contrôles gérés par le client partagés au sein du même groupe d’évaluations sont synchronisées. Il en est de même pour les informations des contrôles gérés par le client associés appartenant à la même évaluation.
+De même, les informations issues des contrôles gérés par le client partagés dans le même groupe d’analyses sont synchronisées. Les informations issues des contrôles gérés par le client associés dans la même analyse sont également synchronisées.
 
 ## <a name="viewing-assessments"></a>Affichage des évaluations
 
-1. Localisez la vignette de l’évaluation que vous souhaitez consulter, puis cliquez sur le nom de l’évaluation pour l’ouvrir et afficher les contrôles gérés par Microsoft et le client associés à l’évaluation, ainsi que la liste des services cloud inclus dans l’évaluation. Voici un exemple d’évaluation liée à Office 365 et au RGPD.
+1. Localisez la vignette de l’évaluation que vous souhaitez consulter, puis cliquez sur le nom de l’évaluation pour l’ouvrir et afficher les contrôles gérés par Microsoft et le client associés à l’évaluation, ainsi que la liste des services cloud inclus dans l’évaluation.  Voici un exemple d’évaluation liée à Office 365 et au RGPD.
     
     ![Affichage de l’évaluation dans le Gestionnaire de conformité – plein écran avec des légendes](media/169a02eb-e805-412d-b9e7-89561aa7ad1d.png)
   
@@ -557,15 +557,15 @@ De même, les informations des contrôles gérés par le client partagés au sei
     
 3. Cette section affiche les services cloud inclus dans l’évaluation.
     
-4. Cette section contient les contrôles gérés par Microsoft. Les contrôles associés sont organisés en familles de contrôles. Cliquez sur une famille de contrôles pour la développer et afficher les contrôles individuels.
+4. Cette section contient les contrôles gérés par Microsoft. Les contrôles associés sont organisés par famille de contrôles. Cliquez sur une famille de contrôles pour la développer et afficher les contrôles individuels.
     
-5. Cette section contient les contrôles gérés par le client. Ils sont eux aussi organisés en familles de contrôles. Cliquez sur une famille de contrôles pour la développer et afficher les contrôles individuels.
+5. Cette section contient les contrôles gérés par le client, qui sont également organisés par famille de contrôles. Cliquez sur une famille de contrôles pour la développer et afficher les contrôles individuels.
     
-6. Affiche le nombre total de contrôles dans la famille de contrôles et le nombre de contrôles évalués dans cette famille. Dans le Gestionnaire de conformité, vous pouvez suivre la progression des évaluations des contrôles gérés par le client réalisées par votre organisation. Pour en savoir plus, consultez la section [Présentation du Score de conformité](#understanding-the-compliance-score). 
+6. Affiche le nombre total de contrôles de la famille de contrôles ainsi que le nombre de contrôles analysés. Le suivi de la progression de votre organisation en matière d’analyse des contrôles gérés par le client constitue une fonctionnalité clé du Gestionnaire de conformité. Pour plus d’informations, voir [Compréhension du score de conformité](#understanding-the-compliance-score). 
 
 ## <a name="managing-the-assessment-process"></a>Gestion du processus d’évaluation
 
-Au départ, le créateur de l’évaluation est le seul utilisateur de l’évaluation. Pour chaque contrôle géré par le client, vous pouvez affecter un élément d’action à une personne de votre organisation. Elle devient alors un utilisateur de l’évaluation et peut effectuer les actions du client recommandées, collecter et charger des preuves. Quand vous affectez un élément d’action, vous pouvez choisir d’envoyer un e-mail à la personne en l’informant des actions du client recommandées et de la priorité de l’élément d’action. L’e-mail de notification contient un lien vers le tableau de bord des **éléments d’action**, qui répertorie tous les éléments d’action affectés à cette personne. 
+Le créateur d’une analyse est dans un premier temps le seul utilisateur de l’analyse. Pour chaque contrôle géré par le client, vous pouvez attribuer un élément d’action à une membre de votre organisation pour permettre à ce membre de devenir utilisateur de l’analyse, d’effectuer les actions du client recommandées, de collecter et de charger des preuves. Lorsque vous attribuez un élément d’action, vous pouvez choisir d’envoyer un e-mail contenant les détails à une personne, notamment les actions du client recommandées ainsi que l’élément d’action prioritaire. La notification par e-mail comprend un lien vers le tableau de bord **Éléments d’action**, qui répertorie tous les éléments d’action attribués à cette personne. 
   
 Voici une liste des tâches que vous pouvez effectuer à l’aide des fonctionnalités de flux de travail du Gestionnaire de conformité.
   
@@ -573,9 +573,9 @@ Voici une liste des tâches que vous pouvez effectuer à l’aide des fonctionna
   
 1. **Utilisez les options de filtrage pour trouver des contrôles d’évaluation spécifiques** : le Gestionnaire de conformité propose des **Options de filtrage** qui vous permettent d’afficher des contrôles d’évaluation selon des critères de sélection très précis et de concentrer vos efforts de mise en conformité sur des points spécifiques. 
     
-    Cliquez sur l’icône d’entonnoir situé à droite de la page pour afficher ou masquer les **Options de filtrage** des contrôles. Ces contrôles vous permettent de spécifier les critères de filtrage. Seuls les contrôles d’évaluation qui correspondent à ces critères seront affichés. ![Contrôles de filtre des évaluations du Gestionnaire de conformité](media/d44e1b4b-d928-4778-8a3a-6231edde9ca0.png)
+    L’icône d’entonnoir du côté droit de la page permet d’afficher ou de masquer les contrôles **Options de filtre**. Ces contrôles vous permettent de spécifier des critères de filtre de façon à ce que seul les contrôles d’analyse correspondant à ceux-ci s’affichent en dessous. ![Contrôles de filtre des analyses du Gestionnaire de conformité](media/d44e1b4b-d928-4778-8a3a-6231edde9ca0.png)
   
-    - **Articles** : filtre le nom de l’article et renvoie les contrôles d’évaluation associés à cet article. Par exemple, si vous tapez « Article (5) », une liste de sélection d’articles dont le nom inclut cette chaîne est renvoyée (par exemple, Article (5)(1)(a), Article (5)(1)(b), Article (5)(1)(c), etc.). Si vous sélectionnez Article (5)(1)(c), les contrôles associés à Article (5)(1)(c) sont renvoyés. Il s’agit d’un champ à sélection multiple qui utilise un opérateur OR à valeurs multiples. Par exemple, si vous sélectionnez Article (5)(1)(a) puis ajoutez Article (5)(1)(c), le filtre renvoie les contrôles associés à Article (5)(1)(a) ou Article (5)(1)(c). 
+    - **Articles**: permet de filtrer sur le nom de l’article pour obtenir les contrôles d’analyse associés à celui-ci. Par exemple, en tapant « Article (5) », vous obtenez une liste de sélection répertoriant les articles dont le nom inclut cette chaîne, à savoir l’Article (5)(1)(a), l’Article (5)(1)(b), l’Article (5)(1)(c), etc. Sélectionner l’article (5)(1)(c) va renvoyer les contrôles associés à l’article (5)(1)(c). Il s’agit d’un champ à sélections multiples qui utilise un opérateur OU avec plusieurs valeurs. Par exemple, si vous sélectionnez Article (5)(1)(a), puis ajoutez Article (5)(1)(c), le filtre retourne les contrôles associés à l’Article (5)(1)(a) ou à l’Article (5)(1)(c). 
     
       ![Évaluation dans le Gestionnaire de conformité – Filtre des noms d’article](media/8b0507a0-589d-484a-bc60-80a3debe3ddb.png)
   
@@ -597,17 +597,17 @@ Voici une liste des tâches que vous pouvez effectuer à l’aide des fonctionna
     
 3. **Affecter un élément d’action à un utilisateur** : vous pouvez affecter un élément d’action à une personne pour implémenter les exigences d’une certification/réglementation, ou pour tester, vérifier et documenter les exigences d’implémentation de votre organisation. Quand vous affectez un élément d’action, vous pouvez choisir d’envoyer un e-mail à cette personne en l’informant des actions du client recommandées et de la priorité de l’élément d’action. Vous pouvez également désaffecter ou réaffecter un élément d’action à une autre personne. 
     
-4. **Gérer les documents** : les contrôles gérés par le client disposent également d’un emplacement pour gérer les documents liés aux tâches d’implémentation, de test et de validation. Toute personne ayant l’autorisation de modifier les données dans le Gestionnaire de conformité peut charger des documents en cliquant sur **Gérer les documents**. Une fois qu’un document est chargé, vous pouvez cliquer sur **Gérer les documents** pour afficher et télécharger les fichiers. 
+4. **Gérer les documents** Les contrôles gérés par le client permettent aussi de gérer les documents associés afin d’effectuer des tâches de mise en œuvre, ainsi que des tâches de test et de validation. Toute personne disposant des autorisations requises pour modifier les données dans le Gestionnaire de conformité peut charger des documents en cliquant sur **Gérer les documents**. Une fois le document chargé, cliquez sur **Gérer les documents** pour afficher et télécharger les fichiers. 
     
 5. **Fournir des détails sur l’implémentation et le test** : tous les contrôles gérés par le client contiennent un champ modifiable où les utilisateurs peuvent ajouter des détails sur l’implémentation qui documentent les tâches effectuées par votre organisation pour répondre aux exigences de la certification/réglementation, et pour valider et documenter les actions effectuées par votre organisation pour y répondre.
     
 6. **Définir l’état** : permet de définir l’état de chaque élément dans le cadre du processus d’évaluation. Les états disponibles sont **Implémenté**, **Implémentation alternative**, **Planifié** et **Non inclus**. 
     
-7. **Entrer la date du test et le résultat de test** : la personne ayant le rôle Évaluateur du Gestionnaire de conformité peut vérifier que les tests appropriés sont réalisés, consulter les détails de l’implémentation, le plan de test, les résultats de test et les preuves chargées, puis définir la Date du test et le Résultat de test. Les valeurs disponibles pour le résultat de test sont **Réussite**, **Échec - Risque faible**, **Échec - Risque modéré** **** et **Échec - Risque élevé**. 
+7. **Entrer la date du test et les résultats du test** La personne dotée du rôle Analyste du Gestionnaire de conformité peut vérifier la bonne exécution du test, revoir les détails de mise en œuvre, du plan du test, des résultats du test et toute autre preuve chargée, puis définir la Date du test et les Résultats du test. Les valeurs de résultat de test disponibles sont les suivantes : **Réussi**, **Échec avec faible risque**, **Échec avec risque intermédiaire** et Échec avec risque élevé. 
 
 ## <a name="managing-action-items"></a>Gestion des éléments d’action
 
-Les personnes participant au processus d’évaluation dans votre organisation peuvent utiliser le Gestionnaire de conformité pour examiner les contrôles gérés par le client de toutes les évaluations dont ils sont utilisateurs. Quand un utilisateur se connecte au Gestionnaire de conformité et ouvre le tableau de bord **Éléments d’action**, la liste des éléments d’action qui leur sont assignés s’affiche. Selon le rôle du Gestionnaire de conformité affecté à l’utilisateur, ils peuvent fournir des informations sur l’implémentation ou le test, mettre à jour l’état ou affecter des éléments d’action. 
+Les employés impliqués dans le processus d’analyse de votre organisation peuvent utiliser le Gestionnaire de conformité pour examiner les contrôles gérés par le client de toutes les analyses pour lesquelles il existe des utilisateurs. Lorsqu’un utilisateur se connecte au Gestionnaire de conformité et ouvre le tableau de bord **Éléments d’action**, la liste des éléments d’action qui lui sont attribués s’affiche. Selon le rôle du Gestionnaire de conformité attribué à l’utilisateur, il peut fournir les détails de mise en œuvre et de test, mettre à jour l’état ou attribuer des éléments d’action. 
   
 Comme les contrôles des certifications sont généralement implémentés par une seule personne et testés par une autre, l’élément d’action du contrôle peut être affecté dès le départ au responsable de l’implémentation. Une fois cette opération terminée, cette personne peut réaffecter l’élément d’action du contrôle à une autre personne pour tester le contrôle et charger les preuves. Tout utilisateur ayant un rôle dans le Gestionnaire de conformité et les autorisations requises peut affecter/réaffecter les actions du contrôle, ce qui lui permet de centraliser la gestion des affectations ou de décentraliser le routage des éléments d’action du contrôle, du responsable de l’implémentation au testeur selon le contexte.
   
@@ -635,7 +635,7 @@ Les notes associées à l’élément d’action sont conservées dans la sectio
 
 ## <a name="exporting-information-from-an-assessment"></a>Exportation des informations d’une évaluation
 
-Vous pouvez exporter une évaluation dans un fichier Excel, qui peut être consulté par les personnes chargées de la mise en conformité dans votre organisation et fourni aux auditeurs et aux autorités de régulation. Ce rapport d’évaluation est une capture instantanée de l’évaluation aux date et heure auxquelles le rapport est créé. Il contient les détails des contrôles gérés par Microsoft et des contrôles gérés par le client pour cette évaluation, notamment l’état d’implémentation, la date du test et les résultats de test du contrôle, et fournit des liens vers les preuves chargées. Nous vous recommandons d’exporter le rapport d’évaluation avant d’archiver une évaluation. En effet, une fois archivée, l’évaluation ne contient plus les liens vers les documents chargés.
+Vous pouvez exporter une analyse vers un fichier Excel. Celui-ci peut ensuite être examiné par les parties prenantes en matière de conformité de votre organisation, et mis à la disposition d’auditeurs et de régulateurs. Ce rapport d’analyse est un instantané de l’analyse aux date et heure de création du rapport. Il contient les détails des contrôles gérés par Microsoft et par le client pour cette analyse, à savoir l’état d’implémentation du contrôle, la date de test du contrôle, les résultats du test et des liens vers les documents de preuve chargés. Il est recommandé d’exporter le rapport d’analyse avant d’archiver une analyse, car les analyses archivées ne conservent pas les liens vers les documents chargés.
   
 Pour exporter un rapport d’évaluation :
   
@@ -684,7 +684,7 @@ Par défaut, le contrôle Recherche affiche des documents dans les résultats. V
   
 ![Portail d’approbation de services – Recherche de documents filtrée](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
   
-Cliquez sur le lien Gestionnaire de conformité pour afficher les résultats de la recherche associés aux contrôles d’évaluation du Gestionnaire de conformité. Les résultats répertoriés affichent la date de création de l’évaluation, le nom du regroupement d’évaluations, le service cloud concerné, et si les contrôles sont gérés par Microsoft ou le client.
+Cliquez sur le lien Gestionnaire de conformité afin d’afficher les résultats de la recherche pour les contrôles d’analyse du Gestionnaire de conformité. Les résultats de la recherche affichent la date de création de l’analyse, le nom du regroupement d’analyses, le service cloud applicable, et indiquent si les contrôles sont gérés par Microsoft ou le client.
   
 ![Portail d’approbation de services – Recherche sur les contrôles du Gestionnaire de conformité](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
   
@@ -700,7 +700,7 @@ Le Portail d’approbation de services vous permet d’afficher le contenu de la
 
 ## <a name="change-log-for-customer-managed-controls"></a>Journal des modifications des contrôles gérés par le client
 
-Le Gestionnaire de conformité est conçu pour être régulièrement mis à jour afin de rester en phase avec les modifications apportées aux exigences réglementaires ainsi qu’à nos services cloud. Ces mises à jour incluent les modifications apportées aux contrôles gérés par le client. Un journal des modifications est fourni afin de vous aider à comprendre l’impact de ces changements, par exemple, les détails du contenu ajouté ou modifié et des indications relatives à l’incidence des modifications sur les analyses existantes. En règle générale, il existe deux types de modifications :
+Le gestionnaire de conformité est conçu pour être mis à jour régulièrement afin qu’il prenne en compte les modifications apportées aux exigences réglementaires, ainsi que les modifications apportées à nos services cloud. Ces mises à jour incluent les modifications apportées aux contrôles gérés par les clients. Un journal des modifications est fourni afin de vous aider à comprendre l’impact de ces changements, par exemple, les détails du contenu ajouté ou modifié et des indications relatives à l’incidence des modifications sur les analyses existantes. En règle générale, il existe deux types de modifications :
   
 - Une modification **majeure** désigne une modification importante apportée aux actions du client, telles que l’ajout ou la suppression d’un contrôle ou d’étapes numérotées spécifiques, ou à l’aide portant sur les responsabilités, les recommandations ou les preuves. Pour effectuer des modifications majeures, nous vous recommandons de ré-évaluer votre implémentation et/ou votre évaluation du contrôle concerné.
     
