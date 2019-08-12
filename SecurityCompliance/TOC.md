@@ -345,7 +345,7 @@
 #### [Ajouter des données dans un autre jeu à réviser](compliance20/add-data-to-review-set-from-another-review-set.md)
 #### [Gérer les ensembles de charge](compliance20/manage-load-sets.md)
 
-### [Examiner les données de cas](compliance20/reviewing-data-in-review-set.md)
+### Examiner les données de cas
 #### [Afficher les documents d’un jeu à réviser](compliance20/view-documents-in-review-set.md)
 #### [Interroger les données d’un jeu à réviser](compliance20/review-set-search.md)
 #### [Étiqueter les documents d’un jeu à réviser](compliance20/tagging-documents.md)
@@ -361,9 +361,9 @@
 #### [Exporter des documents d’un jeu à réviser](compliance20/export-documents-from-review-set.md)
 #### [Télécharger l’exportation des travaux](compliance20/download-export-jobs.md)
 
-### [Gérer les travaux](compliance20/managing-jobs-ediscovery20.md)
+### [Gérer les tâches](compliance20/managing-jobs-ediscovery20.md)
 
-### [Configurer des paramètres de cas](compliance20/configuring-case-settings-ediscovery20.md)
+### Configurer des paramètres de cas
 #### [Fermer ou supprimer un cas](compliance20/close-or-delete-case.md)
 #### [Ajouter ou supprimer des membres à partir d’un cas](compliance20/add-remove-members.md)
 #### [Configurer les paramètres de recherche et d’analyse](compliance20/configure-search-analytics-settings.md)
