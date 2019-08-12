@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Obtenez une vue d’ensemble de la protection des informations Office 365 pour le RGPD. Apprenez à découvrir, classer, protéger et surveiller les données personnelles.
-ms.openlocfilehash: 0231951aa4fde3075dc525707fc7cac98e8f7a45
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0c1c43bdbe16b82a1fe85222b2faf9c76dfc6fe0
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152486"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36165660"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>Protection des informations Office 365 pour le RGPD - Vue d’ensemble
 
@@ -35,7 +35,7 @@ Article 4 - Définitions
 
 Cette solution a été conçue pour permettre aux organisations de découvrir et protéger les données personnelles dans Office 365 qui peuvent être soumises au RGPD. Elle n’est pas proposée comme attestation de conformité au RGPD. Les organisations doivent garantir elles-mêmes leur conformité au RGPD et sont invitées à consulter leurs équipes juridiques et de conformité ou à s’adresser à des tiers spécialisés dans le domaine de la conformité.
 
-L’outil d’[évaluation RGPD](https://assessment.microsoft.com/gdpr-compliance) est un outil rapide d’auto-évaluation en ligne, disponible gratuitement pour aider votre organisation à revoir son niveau de préparation global pour se conformer au RGPD (<http://aka.ms/gdprassessment>).
+L’outil d’[évaluation RGPD](https://www.microsoft.com/cyberassessment/en/gdpr/uso365?ls=Email&mkt_tok=eyJpIjoiTTJFeE5USXlOR1EwTWpJMiIsInQiOiJQTmdCYWR5NTlOd3JLWHZlb2NzNldKclQ4ZVBzVmhGeUhoUlFcL1pvSDIyXC9Ka05iTUR1aGpxT0YxQ0FUeGNDOUlkbWZLM1U4SUZWZmEyaGF6XC9ueUxkTHJzZnB3VDRMZlhPdkR4MzRLWkF5ckRNdWwxUkgzXC9yRU8yNkttSHhTb3VpZjNyVlJrNm9TTVZRYU5HR240a0FRPT0ifQ%3D%3D) est un outil rapide d’auto-évaluation en ligne, disponible gratuitement pour aider votre organisation à revoir son niveau de préparation global pour se conformer au RGPD.
 
 ## <a name="assess-and-manage-your-compliance-risk"></a>Évaluation et gestion des risques de conformité
 
@@ -47,7 +47,7 @@ Le Gestionnaire de conformité fournit des outils pour suivre, implémenter et g
 
 ![Utilisation du Gestionnaire de conformité pour afficher les exigences et suivre la progression](Media/Overview-image1.png)
 
-Pour plus d’informations, reportez-vous à la rubrique [Utiliser le Gestionnaire de conformité dans le portail de gestion de la confidentialité du Service](https://support.office.com/fr-FR/article/Use-Compliance-Manager-in-the-Service-Trust-Portal-Preview-5756d342-5af9-4496-82e8-4dd50fa39942). 
+Pour plus d’informations, reportez-vous à la rubrique [Utiliser le Gestionnaire de conformité dans le portail de gestion de la confidentialité du Service](https://servicetrust.microsoft.com/ComplianceManager). 
 
 ### <a name="step-2--use-content-search-and-sensitive-information-types-to-find-personal-data"></a>Étape 2 - Utilisez la recherche de contenu et les types d’informations sensibles pour rechercher des données personnelles 
 
