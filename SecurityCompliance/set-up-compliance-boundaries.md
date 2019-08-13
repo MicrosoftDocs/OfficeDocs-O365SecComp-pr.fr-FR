@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Utilisez des limites de conformité pour créer des limites logiques au sein d’une organisation Office 365 qui contrôlent les emplacements de contenu utilisateur qu’un gestionnaire eDiscovery peut rechercher. Les limites de conformité utilisent le filtrage des autorisations de recherche (également appelé filtres de sécurité de conformité) pour contrôler les boîtes aux lettres, les sites SharePoint et les comptes OneDrive pouvant être recherchés par des utilisateurs spécifiques.
-ms.openlocfilehash: d94835c457884b98e84f68db6536e8f3774af669
-ms.sourcegitcommit: c8ea7c0900e69e69bd5c735960df70aae27690a5
+ms.openlocfilehash: 44c157b8f155755c6a48830231074643a830f498
+ms.sourcegitcommit: 226adb6d05015da16138b315dd2f5b937bf4354d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "36258597"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302423"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurer les limites de conformité pour les enquêtes eDiscovery dans Office 365
 
@@ -107,7 +107,7 @@ Une fois que vous avez créé des groupes de rôles pour chaque agence, l’éta
 Voici la syntaxe utilisée pour créer un filtre d’autorisations de recherche utilisé pour les limites de conformité.
 
 ```
-New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<Compliance attribute from Step 1>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL> *'" -Action <Action >
+New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_<ComplianceAttribute>  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'" -Action <Action >
 ```
   
 Voici une description de chaque paramètre de la commande:
@@ -116,19 +116,22 @@ Voici une description de chaque paramètre de la commande:
     
 -  `Users`: Spécifie les utilisateurs ou groupes auxquels ce filtre est appliqué aux actions de recherche de contenu qu’ils effectuent. Pour les limites de conformité, ce paramètre spécifie les groupes de rôles (que vous avez créés à l’étape 3) de l’organisme pour lequel vous créez le filtre. Remarque Il s’agit d’un paramètre à valeurs multiples qui vous permet d’inclure un ou plusieurs groupes de rôles, séparés par des virgules. 
     
--  `Filters`: Spécifie les critères de recherche pour le filtre. Pour les limites de conformité, définissez les filtres suivants: chacun d’eux s’applique à un emplacement de contenu. 
+-  `Filters`: Spécifie les critères de recherche pour le filtre. Pour les limites de conformité, définissez les filtres suivants. Chacune d’entre elles s’applique à un emplacement de contenu. 
     
-  -  `Mailbox`: Spécifie les boîtes aux lettres dans lesquelles les groupes de `Users` rôles définis dans le paramètre peuvent effectuer des recherches. Pour les limites de conformité, *ComplianceAttribute* est le même attribut que celui que vous avez identifié à l’étape 1 et *AttributeValue* spécifie l’Agence. Ce filtre permet aux membres du groupe de rôles de rechercher uniquement les boîtes aux lettres d’une agence spécifique; par exemple, `"Mailbox_Department -eq 'FourthCoffee'"`. 
+    -  `Mailbox`: Spécifie les boîtes aux lettres dans lesquelles les groupes de `Users` rôles définis dans le paramètre peuvent effectuer des recherches. Pour les limites de conformité, *ComplianceAttribute* est le même attribut que celui que vous avez identifié à l’étape 1 et *AttributeValue* spécifie l’Agence. Ce filtre permet aux membres du groupe de rôles de rechercher uniquement les boîtes aux lettres d’une agence spécifique; par exemple, `"Mailbox_Department -eq 'FourthCoffee'"`. 
     
-  -  `Site`: Spécifie les comptes OneDrive que les groupes de rôles définis `Users` dans le paramètre peuvent rechercher. Pour le filtre OneDrive, utilisez la chaîne `ComplianceAttribute`réelle. Correspond au même attribut que celui que vous avez identifié à l’étape 1 et qui est synchronisé avec les comptes OneDrive à la suite de la demande de support que vous avez envoyée à l’étape 2;  *AttributeValue* spécifie l’Agence. Ce filtre permet aux membres du groupe de rôles de rechercher uniquement les comptes OneDrive d’une agence spécifique; par exemple, `"Site_ComplianceAttribute -eq 'FourthCoffee'"`.
+    -  `Site`: Spécifie les comptes OneDrive que les groupes de rôles définis `Users` dans le paramètre peuvent rechercher. Pour le filtre OneDrive, utilisez la chaîne `ComplianceAttribute`réelle. Correspond au même attribut que celui que vous avez identifié à l’étape 1 et qui est synchronisé avec les comptes OneDrive à la suite de la demande de support que vous avez envoyée à l’étape 2;  *AttributeValue* spécifie l’Agence. Ce filtre permet aux membres du groupe de rôles de rechercher uniquement les comptes OneDrive d’une agence spécifique; par exemple, `"Site_ComplianceAttribute -eq 'FourthCoffee'"`.
     
-  -  `Site_Path`: Spécifie les sites SharePoint que les groupes de rôles définis `Users` dans le paramètre peuvent rechercher. Le *SharePointURL* spécifie les sites de l’Agence que les membres du groupe de rôles peuvent rechercher; par exemple,`"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`
+    -  `Site_Path`: Spécifie les sites SharePoint que les groupes de rôles définis `Users` dans le paramètre peuvent rechercher. Le *SharePointURL* spécifie les sites de l’Agence que les membres du groupe de rôles peuvent rechercher; par exemple, `"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"` Notez que `Site` les `Site_Path` filtres et sont connectés par un opérateur **-ou** .
     
+     > [!NOTE]
+     > La syntaxe du `Filters` paramètre inclut une *liste de filtres*. Une liste de filtres est un filtre qui inclut un filtre de boîte aux lettres et un filtre de site séparés par une virgule. Dans l’exemple précédent, Notez qu’une virgule sépare **Mailbox_ComplianceAttribute** et **Site_ComplianceAttribute**: `-Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'"`. Lorsque ce filtre est traité lors de l’exécution d’une recherche de contenu, deux filtres d’autorisations de recherche sont créés à partir de la liste Filtres: un filtre de boîte aux lettres et un filtre de site. Une alternative à l’utilisation d’une liste de filtres consiste à créer deux filtres d’autorisations de recherche distincts pour chaque agence: un filtre d’autorisations de recherche pour l’attribut de boîte aux lettres et un filtre pour les attributs de site. Dans les deux cas, les résultats seront identiques. L’utilisation d’une liste de filtres ou la création de filtres d’autorisations de recherche distincts est une question de préférence.
+
 -  `Action`: Spécifie le type d’action de recherche de conformité auquel le filtre est appliqué. Par exemple, `-Action Search` applique uniquement le filtre lorsque les membres du groupe de rôles défini dans le `Users` paramètre exécutent une recherche de contenu. Dans ce cas, le filtre ne doit pas être appliqué lors de l’exportation des résultats de la recherche. Pour les limites de conformité `-Action All` , utilisez de sorte que le filtre s’applique à toutes les actions de recherche. 
     
     Pour obtenir la liste des actions de recherche de contenu, voir la section «New-ComplianceSecurityFilter» dans la rubrique [configurer le filtrage des autorisations pour la recherche de contenu](permissions-filtering-for-content-search.md#new-compliancesecurityfilter).
-    
-Voici des exemples de deux filtres d’autorisations de recherche qui seraient créés pour prendre en charge le scénario de limites de conformité contoso.
+
+Voici des exemples de deux filtres d’autorisations de recherche qui seraient créés pour prendre en charge le scénario de limites de conformité contoso. Ces deux exemples incluent une liste de filtres séparés par des virgules, dans laquelle les filtres de boîte aux lettres et de site sont inclus dans le même filtre des autorisations de recherche et sont séparés par une virgule.
   
  **Fourth Coffee**
 
