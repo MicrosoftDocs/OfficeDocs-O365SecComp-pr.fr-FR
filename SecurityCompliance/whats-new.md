@@ -16,12 +16,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Nous ajoutons constamment de nouvelles fonctionnalités au centre de conformité Microsoft 365, à la résolution des problèmes que nous apprendons et en apportant des modifications en fonction de vos commentaires. Découvrez ce que nous avons fait dans ce mois-ci.
-ms.openlocfilehash: 1c51edbe5c6ac29d174fe0277c3f17628cdaf229
-ms.sourcegitcommit: ea86a64cf19f07952be4c16c89e0389b4ba3768e
+ms.openlocfilehash: 22c3253f3c529ff361fc1984f6bc82de8d72b094
+ms.sourcegitcommit: 28c104fb6a72d624fab5ac6178b5b0df9fa81484
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2019
-ms.locfileid: "36286265"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297804"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Nouveautés du centre de conformité Microsoft 365
 
@@ -46,10 +46,6 @@ Nous avons publié deux nouveaux rôles d’administrateur pour vous aider à g�
 Il n’y a plus de défilement dans un océan de rapports pour trouver ceux que vous souhaitez. Vous pouvez désormais Rechercher des rapports (en fonction de leur titre) et filtrer sur des catégories telles que «labels» et «Compliance» et des sources comme «Office 365» et «Microsoft Cloud App Security».
 
 ![Capture d’écran des boutons de recherche et de filtre des rapports avec un filtre appliqué](media/mcc_report_filtering.png)
-
-### <a name="partners-admin-on-behalf-of-aobo-permissions"></a>Autorisations des partenaires: administrateur de la part de (administrateur)
-
-Bonne nouvelle pour les partenaires certifiés Microsoft. Les partenaires disposant d’autorisations d’administrateur de la part de (administrateur) peuvent désormais accéder aux centres de sécurité et de conformité de Microsoft 365 en ajoutant le domaine du client à l’URL. Par exemple : `https://security.microsoft.com/contoso.com`.
 
 ### <a name="help-content"></a>Contenu de l'aide
 
