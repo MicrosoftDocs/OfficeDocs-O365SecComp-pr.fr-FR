@@ -1,5 +1,5 @@
 ---
-title: Explorateur de menaces et détections en temps réel
+title: Explorateur de menaces et détections en temps réel, nouveauté de l’Explorateur de menaces, des modifications apportées à l’Explorateur de menaces 365, de la sécurité, de la sécurité dans le Cloud et de la sécurité dans la protection avancée contre les menaces
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Découvrez l’Explorateur et les détections en temps réel dans le &amp; Centre de sécurité conformité.
-ms.openlocfilehash: 2e3e60c2b197c30f01efcfcba5e118091b29a22b
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: 4e2a11162d3b67dd92cdcc1a7c0342ec861543ab
+ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230408"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36407953"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces et détections en temps réel
 
@@ -42,12 +42,16 @@ Ce rapport vous permet d’utiliser les actions suivantes:
 
 ## <a name="new-features-in-real-time-detections"></a>Nouvelles fonctionnalités dans les détections en temps réel
 
-L’Explorateur (et les détections en temps réel) ajoute de nouveaux champs conçus pour vous donner une image plus complète de l’emplacement de vos messages électroniques. Une partie de cette modification est de faciliter la chasse aux personnes qui effectuent des opérations de sécurité, mais le résultat net est de savoir en un clin d’œil l’emplacement des messages électroniques problématiques.
+Trois nouvelles fonctionnalités ajoutées à l’Explorateur de menaces sont présentées ci-dessous.
+
+Tout d’abord, **l’aperçu de l’en-tête de messagerie et le téléchargement du corps du message** sont de nouvelles fonctionnalités disponibles dans l’Explorateur de menaces. Les administrateurs pourront analyser les en-têtes et les e-mails téléchargés contre les menaces. Étant donné que le téléchargement des messages peut compromettre l’exposition des informations, ce processus est contrôlé par le contrôle d’accès basé sur les rôles (RBAC). Un nouveau rôle appelé «Preview» doit être ajouté à un autre groupe de rôles Office 365 (par exemple, dans les opérations s ou l’administrateur sec) pour accorder la possibilité de télécharger des messages et des en-têtes d’aperçu dans la vue tous les messages électroniques.
+
+Mais l’Explorateur (et les détections en temps réel) ajoute également de nouveaux champs conçus pour vous donner une image plus complète de l’endroit où vos courriers électroniques sont présents. Une partie de cette modification est de faciliter la chasse aux personnes qui effectuent des opérations de sécurité, mais le résultat net est de savoir en un clin d’œil l’emplacement des messages électroniques problématiques.
 
 Comment cela est-il fait? L’état de remise est désormais divisé en deux colonnes:
 
-- Action de remise: quel est le statut de ce courrier électronique?
-- Emplacement de remise: où ce message électronique a-t-il été routé?
+- **Action de remise** : quel est le statut de ce courrier électronique?
+- **Emplacement de remise** : où ce message électronique a-t-il été routé?
 
 L’action de remise est l’action entreprise sur un courrier électronique en raison de stratégies ou de détections existantes. Voici les actions possibles qu’un courrier électronique peut effectuer:
 
@@ -62,7 +66,7 @@ Et voici ce que l’utilisateur peut voir, et ce qu’il ne peut pas faire:
 |Cmds     | Blocked        |
 |Courrier indésirable     | Été        |
 
-Emplacement de remise: affiche les résultats des stratégies et des détections qui exécutent une post-remise. Elle est liée à une action de remise. Ce champ a été ajouté pour permettre de mieux comprendre l’action entreprise lors de la détection d’un message problématique. Voici les valeurs possilbe de l’emplacement de remise:
+Emplacement de remise: affiche les résultats des stratégies et des détections qui exécutent une post-remise. Elle est liée à une action de remise. Ce champ a été ajouté pour permettre de mieux comprendre l’action entreprise lors de la détection d’un message problématique. Voici les valeurs possibles de l’emplacement de remise:
 
 1. Boîte de réception ou dossier: le courrier électronique se trouve dans la boîte de réception ou dans un dossier (en fonction de vos règles de messagerie électronique).
 2. Local ou externe: la boîte aux lettres n’existe pas sur le Cloud, mais elle est locale.
@@ -72,8 +76,9 @@ Emplacement de remise: affiche les résultats des stratégies et des détections
 6. Échec: la messagerie n’a pas pu atteindre la boîte aux lettres.
 7. Ignoré: le courrier électronique est perdu dans le flux de messagerie.
 
-La chronologie par courrier électronique est une autre nouvelle fonctionnalité d’explorateur destinée à améliorer l’expérience de la chasse des administrateurs. Il réduit le traitement aléatoire, car il y a moins de temps passé à vérifier différents emplacements pour essayer de comprendre l’événement. Lorsque plusieurs événements se produisent à la même heure ou proches de celle-ci dans un e-mail, ces événements apparaissent dans un affichage chronologie. En fait, certains événements qui ont lieu après la livraison à votre courrier seront capturés dans la colonne «action spéciale». La combinaison des informations de la chronologie de ce message avec l’action spéciale entreprise lors de la livraison post-remise donnera aux administrateurs un aperçu de la façon dont leurs stratégies fonctionnent, où les messages ont été finalement routés et, dans certains cas, ce qu’étaient l’évaluation finale.
+La **chronologie par courrier électronique** est une autre nouvelle fonctionnalité d’explorateur destinée à améliorer l’expérience de la chasse des administrateurs. Il réduit le traitement aléatoire, car il y a moins de temps passé à vérifier différents emplacements pour essayer de comprendre l’événement. Lorsque plusieurs événements se produisent à la même heure ou proches de celle-ci dans un e-mail, ces événements apparaissent dans un affichage chronologie. En fait, certains événements qui ont lieu après la livraison à votre courrier seront capturés dans la colonne «action spéciale». La combinaison des informations de la chronologie de ce message avec l’action spéciale entreprise lors de la livraison post-remise donnera aux administrateurs un aperçu de la façon dont leurs stratégies fonctionnent, où les messages ont été finalement routés et, dans certains cas, ce qu’étaient l’évaluation finale.
 
+Pour plus d’informations sur l’enquête sur les messages électroniques malveillants, consultez la rubrique [Rechercher et enquêter le courrier électronique malveillant livré dans Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/investigate-malicious-email-that-was-delivered).
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Voir programmes malveillants détectés dans le courrier électronique par technologie
 
