@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Le gestionnaire de plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes et les stratégies de conservation, et fournit un moyen intégré de parcourir l’activité d’étiquette et d’étiquette vers le contenu pour l’intégralité du cycle de vie de votre contenu, de la création à la destruction finale, en passant par la collaboration, la déclaration d’enregistrement et la conservation.
-ms.openlocfilehash: b7d80ff6a7f78e592462fe2723a87383e046015f
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+ms.openlocfilehash: 38bfb1e6a6cde931804e518660ddf6c2b45205b0
+ms.sourcegitcommit: f443de08971da2fe200a159b8efbed40effba125
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547969"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36430011"
 ---
 # <a name="overview-of-file-plan-manager"></a>Vue d’ensemble du gestionnaire de plan de gestion de fichiers
 
@@ -123,7 +123,28 @@ Téléchargez un modèle vide (ou démarrez à partir d’un export de votre pla
 
 ![Modèle de plan de gestion de fichiers vide ouvert dans Excel](media/file-plan-blank-template.png)
 
-Complétez le modèle (prochainement : informations de référence sur les combinaisons valides de valeurs pour une seule étiquette de rétention).
+Complétez le modèle. Ce tableau fournit les valeurs admises.
+
+|**Propriété**|**Type**|**Valeurs admises**|
+|:-----|:-----|:-----|
+|LabelName|Chaîne|Si la valeur contient des espaces, placez-la entre guillemets (").|
+|Commentaire|Chaîne|Si la valeur contient des espaces, placez-la entre guillemets ("). |
+|Remarques|Chaîne|Personnalisé|
+|IsRecordLabel|Chaîne|$true: L’intitulé est un intitulé d’enregistrement.</br>$false: L’intitulé n’est pas un intitulé d’enregistrement. Il s’agit de la valeur par défaut.|
+|RetentionAction|Chaîne|Supprimer</br>Stocker</br>KeepAndDelete |
+|RetentionDuration|Chaîne|Cette propriété spécifie la durée de rétention du contenu en nombre de jours. Les valeurs valides sont les suivantes :</br>Nombre entier positif.</br>La valeur est illimitée.|
+|RetentionType|Chaîne|Cette propriété indique si la durée de rétention est calculée à partir de la date de création de contenu, de la date étiquetée (marquée) ou de la date de la dernière modification. Les valeurs valides sont les suivantes :</br>CreationAgeInDays</br>EventAgeInDays</br>ModificationAgeInDays</br>TaggedAgeInDays |
+|ReviewerEmail|SmtpAddress[]|Cette propriété spécifie l’adresse électronique d’un réviseur pour les actions de rétention Delete et KeepAndDelete. Vous pouvez spécifier plusieurs adresses e-mail séparées par des virgules.|
+|ReferenceId|Chaîne|Personnalisé|
+|Departmentname|Chaîne|Personnalisé|
+|Catégorie|String|Personnalisé|
+|Sous-catégorie|Chaîne|Personnalisé|
+|AuthorityType|Chaîne|Personnalisé|
+|CitationName|Chaîne|Personnalisé|
+|CitationUrl|Chaîne|Personnalisé|
+|CitationJurisdiction|Chaîne|Personnalisé|
+|Réglementaire|Chaîne|Personnalisé|
+|EventType|Chaîne|Cette propriété spécifie la règle de rétention associée à l’étiquette. Vous pouvez utiliser une valeur quelconque qui identifie distinctement la règle. Par exemple :</br>Nom</br>Nom unique (DN)</br>GUID </br>Vous pouvez utiliser l'applet de commande [Get-RetentionComplianceRule](https://docs.microsoft.com/fr-FR/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) pour afficher les règles de rétention disponibles.|
 
 ![Modèle de plan de gestion de fichiers complété](media/file-plan-filled-out-template.png)
 
