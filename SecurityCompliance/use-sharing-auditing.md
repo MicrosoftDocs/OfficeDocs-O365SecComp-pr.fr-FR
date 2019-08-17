@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 'Le partage est une activité essentielle dans SharePoint Online et OneDrive entreprise. Les administrateurs peuvent désormais utiliser l’audit de partage dans le journal d’audit Office 365 pour identifier les ressources partagées avec des utilisateurs en dehors de leur organisation. '
-ms.openlocfilehash: 54fa32ec9ed16a65354eb845421c56f6d58559e4
-ms.sourcegitcommit: c8ea7c0900e69e69bd5c735960df70aae27690a5
+ms.openlocfilehash: 48fc1a67f501c807e76ba2333170df83a1248428
+ms.sourcegitcommit: 60c701e9808d505cf96990d0643be10b8fbc0180
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "36258567"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36447361"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Audit de partage pour trouver les ressources partagées avec des utilisateurs externes
 
@@ -53,9 +53,9 @@ Le partage est défini par le fait qu’un utilisateur (l’utilisateur *agissan
 
 - **AnonymousLinkUsed:** Comme son nom l’indique, cet événement est enregistré lorsqu’un lien anonyme est utilisé pour accéder à une ressource. 
 
-- **SecureLinkCreated:** Un utilisateur a créé un lien «personnes spécifiques» pour partager une ressource avec une personne spécifique. Cet utilisateur cible peut être une personne extérieure à votre organisation.
+- **SecureLinkCreated:** Un utilisateur a créé un lien «personnes spécifiques» pour partager une ressource avec une personne spécifique. Cet utilisateur cible peut être une personne extérieure à votre organisation. La personne avec laquelle la ressource est partagée est identifiée dans l’enregistrement d’audit de l’événement **AddedToSecureLink** . Les horodatages de ces deux événements sont presque identiques.
 
-- **AddedToSecureLink:** Un utilisateur a été ajouté à un lien personnes spécifiques. Cet utilisateur cible peut être une personne extérieure à votre organisation.
+- **AddedToSecureLink:** Un utilisateur a été ajouté à un lien personnes spécifiques. Utilisez le champ **TargetUserOrGroupName** dans cet événement pour identifier l’utilisateur ajouté au lien personnes spécifiques correspondant. Cet utilisateur cible peut être une personne extérieure à votre organisation.
 
 ## <a name="sharing-auditing-work-flow"></a>Flux de travail d’audit de partage
   
@@ -81,7 +81,7 @@ Si un compte d’utilisateur pour l’utilisateur cible ne se trouve pas dans le
     
    - Lorsque l’utilisateur cible accepte l’invitation de partage qui lui est envoyée (en cliquant sur le lien dans l’invitation), SharePoint consigne un événement **SharingInvitationAccepted** et affecte les autorisations de l’utilisateur cible pour accéder à la ressource. Si l’utilisateur cible reçoit un lien anonyme, l’événement **AnonymousLinkUsed** est journalisé une fois que l’utilisateur cible utilise le lien pour accéder à la ressource. Pour les liens sécurisés, un événement **FileAccessed** est enregistré lorsqu’un utilisateur externe utilise le lien pour accéder à la ressource.
 
-Des informations supplémentaires sur l’utilisateur cible sont également consignées, telles que l’identité de l’utilisateur auquel l’invitation est adressée et l’utilisateur qui accepte réellement l’invitation. Dans certains cas, ces utilisateurs (ou adresses de messagerie) peuvent être différents. 
+Des informations supplémentaires sur l’utilisateur cible sont également consignées, telles que l’identité de l’utilisateur auquel l’invitation est adressée et l’utilisateur qui accepte l’invitation. Dans certains cas, ces utilisateurs (ou adresses de messagerie) peuvent être différents. 
 
 ## <a name="how-to-identify-resources-shared-with-external-users"></a>Comment identifier les ressources partagées avec des utilisateurs externes
 
@@ -109,7 +109,7 @@ La première étape consiste à rechercher dans le journal d’audit Office 365 
     
 7. Lorsque l’exécution de la recherche est terminée et que les résultats sont affichés, cliquez sur **Exporter les résultats** \> pour **Télécharger tous les résultats**.
     
-    Une fois que vous avez sélectionné l’option Exporter, un message s’affiche en bas de la fenêtre qui vous invite à ouvrir ou à enregistrer le fichier CSV.
+    Une fois que vous avez sélectionné l’option Exporter, un message en bas de la fenêtre vous invite à ouvrir ou à enregistrer le fichier CSV.
     
 8. Cliquez sur **Enregistrer** \> **Enregistrer sous** et enregistrez le fichier CSV dans un dossier sur votre ordinateur local. 
 
