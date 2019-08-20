@@ -1,5 +1,5 @@
 ---
-title: Explorateur de menaces et détections en temps réel, nouveauté de l’Explorateur de menaces, des modifications apportées à l’Explorateur de menaces 365, de la sécurité, de la sécurité dans le Cloud et de la sécurité dans la protection avancée contre les menaces
+title: Explorateur de menaces et détections en temps réel, nouveauté de l’Explorateur de menaces, des modifications apportées à l’Explorateur de menaces 365, de la sécurité, de la sécurité du Cloud, de la sécurité dans l’ATP, des nouvelles fonctionnalités ATP
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Découvrez l’Explorateur et les détections en temps réel dans le &amp; Centre de sécurité conformité.
-ms.openlocfilehash: 4e2a11162d3b67dd92cdcc1a7c0342ec861543ab
-ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
+ms.openlocfilehash: 049d26a328074be5e209ddecd959cd888a34b650
+ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36407953"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36444884"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorateur de menaces et détections en temps réel
 
