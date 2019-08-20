@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: En savoir plus sur les stratégies de surveillance dans Office 365
-ms.openlocfilehash: d802fb0e17894a769fb330aa5f080fbd6151b44e
-ms.sourcegitcommit: 3699da2cad6e6a2002083e2884e32393dacab0ca
+ms.openlocfilehash: 6480c3ccb069e5e16618739303d71df115074baf
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34694708"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36165650"
 ---
 # <a name="supervision-policies-in-office-365"></a>Stratégies de surveillance dans Office 365
 
@@ -66,8 +66,7 @@ Vous créez des stratégies de surveillance dans le centre de conformité. Ces s
 Avant de commencer à utiliser la surveillance, vous devez déterminer qui a besoin de ses communications. Dans la stratégie, les adresses de messagerie des utilisateurs identifient des individus ou des groupes de personnes à superviser. Les groupes Office 365, les listes de distribution Exchange et les canaux Microsoft teams sont des exemples de ces groupes. Vous pouvez également exclure des utilisateurs ou des groupes spécifiques de la surveillance avec un groupe supervisé ou une liste de groupes.
 
 > [!IMPORTANT]
-> Les utilisateurs surveillés par des stratégies de surveillance doivent disposer d’une licence de conformité Microsoft 365 E5, d’une licence Office 365 entreprise E3 avec le complément de conformité avancé ou être inclus dans un abonnement Office 365 entreprise E5.
-Si vous ne disposez pas d’un plan entreprise E5 existant et que vous souhaitez essayer de contrôler, vous pouvez vous [inscrire pour obtenir une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+> Les utilisateurs surveillés par des stratégies de surveillance doivent disposer d’une licence de conformité Microsoft 365 E5, d’une licence Office 365 entreprise E3 avec le complément de conformité avancé ou être inclus dans un abonnement Office 365 entreprise E5. Si vous ne disposez pas d’un plan entreprise E5 existant et que vous souhaitez essayer de contrôler, vous pouvez vous [inscrire pour obtenir une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ### <a name="reviewers"></a>Relecteurs
 
@@ -76,6 +75,8 @@ Lorsque vous créez une stratégie de surveillance, vous devez déterminer qui e
 ### <a name="groups-for-supervised-users-and-reviewers"></a>Groupes pour les utilisateurs et les relecteurs surveillés
 
 Pour simplifier votre configuration, créez des groupes pour les personnes qui ont besoin de leurs communications et des groupes pour les personnes qui examinent ces communications. Si vous utilisez des groupes, vous aurez peut-être besoin de plusieurs. Par exemple, si vous souhaitez surveiller les communications entre deux groupes distincts de personnes, ou si vous souhaitez spécifier un groupe qui n’est pas supervisé.
+
+Lorsque vous sélectionnez un groupe Office 365 pour les utilisateurs supervisés, la stratégie surveille le contenu de la boîte aux lettres Office 365 partagée et les canaux Microsoft teams associés au groupe. Lorsque vous sélectionnez une liste de distribution, la stratégie analyse les boîtes aux lettres des utilisateurs individuels.
 
 ### <a name="supported-communication-types"></a>Types de communication pris en charge
 
@@ -123,24 +124,24 @@ Configurez des dictionnaires de mots clés personnalisés (ou des lexiques) pour
 
 #### <a name="offensive-language"></a>Choquant
 
-Surveiller les messages électroniques envoyés ou reçus dans votre organisation pour une langue offensante. Le modèle utilise une combinaison d’apprentissage automatique, d’intelligence artificielle et de mots-clés pour identifier les messages électroniques inappropriés dans le cadre des exigences de surveillance du blocage du courrier indésirable et de la intimidation. Pour empêcher ou bloquer le langage offensant pour les autres communications au sein de votre organisation, créez une [stratégie de protection contre la perte de données](create-test-tune-dlp-policy.md) qui utilise un dictionnaire de [Mots clés](create-a-keyword-dictionary.md) choquant.
+Surveiller les messages électroniques envoyés ou reçus dans votre organisation pour une langue offensante. Le modèle utilise une combinaison d’apprentissage automatique, d’intelligence artificielle et de mots-clés pour identifier la langue dans les messages électroniques susceptibles de violer les stratégies anti-harcèlement et intimidation. Le modèle de langage offensant prend actuellement en charge les mots clés anglais et surveille le corps des messages électroniques.
 
-Le modèle de langage offensant prend actuellement en charge les mots clés anglais et surveille le corps des messages électroniques. Le modèle de langage offensant surveille le courrier électronique en fonction des types de langue suivants:
+> [!NOTE]
+> Créez une [stratégie de protection contre la perte de données](create-test-tune-dlp-policy.md) avec un [dictionnaire de mots clés personnalisé](create-a-keyword-dictionary.md) pour les termes bloqués si vous devez:
+>
+> - surveiller les communications de Microsoft teams dans votre organisation pour une langue choquante
+> - empêcher ou bloquer le langage offensant dans les communications dans votre organisation
+
+Veuillez noter que le modèle ne fournit pas une liste exhaustive du langage offensant. De plus, les normes linguistiques et culturelles changent en permanence, et à la lumière de ces réalités, Microsoft se réserve le droit de mettre à jour le modèle à sa discrétion. Bien que le modèle puisse aider votre organisation à surveiller le langage offensant, le modèle n’est pas destiné à fournir aux seuls moyens de surveillance ou d’adressage de cette langue de votre organisation. Votre organisation, et non Microsoft, reste responsable de toutes les décisions relatives à la surveillance et au blocage du langage offensant.
+
+Le modèle de langage offensant surveille le courrier électronique en fonction des types de langue suivants:
 
 |**Type**|**Description**|
 |:-----|:-----|
-| **Blasphèmes** | Expressions inappropriées et gênantes pour la plupart des gens. |
-| **Slurs** | Expressions qui attaquent les cultures et les ethniques. |
-| **Taunts** | Expressions que taunt, condemn et ridicule. |
-| **Références aux handicaps** | Expressions qui ciblent les handicaps physiques ou mentaux. |
-| **Langue Squalid** | Expressions qui ciblent les intérêts sexuels et l’état physique de la propreté. |
-| **Homophobia** | Expressions qui ciblent les préférences sexuelles. |
-| **Racist** | Expressions qui ciblent la race et la ethnique. |
-| **Extrémité** | Expressions qui ciblent la religion et les Ideologies politiques. |
-| **Simul** | Expressions pour lesquelles la signification ou la prononciation est identique à celle d’un autre terme offensant. |
-| **Langue Provocative** | Expressions susceptibles de provoquer une Anger ou une violence. |
-| **Taboo** | Expressions généralement inappropriées dans les communications sociales polies. |
-| **Langue inraffinée** | Expressions qui manquent de manière cohérente et qui sont potentiellement extrêmes et impropres. |
+| **Blasphèmes** | Expressions qui dépassent la plupart des gens. |
+| **Slurs** | Expressions qui portent préjudice à des groupes particuliers (par exemple, race, ethnique, orientation sexuelle, handicap). |
+| **Taunts** | Expressions que taunt, condemn, ridicule, ou qui peut entraîner une Anger ou une violence. |
+| **Expressions masquées** | Expressions pour lesquelles la signification ou la prononciation est identique à celle d’un autre terme offensant. |
 
 #### <a name="conditional-settings"></a>Paramètres conditionnels
 
@@ -150,7 +151,7 @@ Le tableau suivant décrit plus en plus de chaque condition.
   
 |**Condition**|**Comment utiliser cette condition ?**|
 |:-----|:-----|
-| **Un message est reçu à partir de l’un de ces domaines**  <br><br> **Le message n’est reçu à partir d’aucun de ces domaines** | Appliquez la stratégie pour inclure ou exclure des domaines ou des adresses de messagerie spécifiques dans les messages reçus. Entrez chaque domaine ou adresse de messagerie et séparez les domaines ou adresses de messagerie par une virgule. Chaque domaine ou adresse de messagerie entré est appliqué séparément, un seul domaine ou une seule adresse de messagerie doit s’appliquer pour la stratégie à appliquer au message. <br><br> Si vous souhaitez surveiller tous les messages électroniques à partir d’un domaine spécifique mais souhaitez exclure les messages qui n’ont pas besoin d’être réexaminés (bulletins d’information, annonces, etc.), vous devez configurer deux conditions: <br> -Un **message est reçu à partir de l’une des conditions de ces domaines** qui définit le domaine («contoso.com»), et <br> -Aucun **message n’est reçu à partir de l’un de ces domaines** , qui exclut l’adresse de messagerie («Newsletter@contoso.com»). |
+| **Un message est reçu à partir de l’un de ces domaines**  <br><br> **Le message n’est reçu à partir d’aucun de ces domaines** | Appliquez la stratégie pour inclure ou exclure des domaines ou des adresses de messagerie spécifiques dans les messages reçus. Entrez chaque domaine ou adresse de messagerie et séparez les domaines ou adresses de messagerie par une virgule. Chaque domaine ou adresse de messagerie entré est appliqué séparément, un seul domaine ou une seule adresse de messagerie doit s’appliquer pour la stratégie à appliquer au message. <br><br> Si vous souhaitez surveiller tous les messages électroniques à partir d’un domaine spécifique mais souhaitez exclure les messages qui n’ont pas besoin d’être réexaminés (bulletins d’information, annonces, etc.), vous devez configurer la condition qu’un **message n’est pas reçu de l’un de ces domaines** . adresse de messagerie (par exemple, «newsletter@contoso.com»). |
 | **Un message est envoyé à l’un de ces domaines**  <br><br> **Le message n’est pas envoyé à l’un de ces domaines** | Appliquez la stratégie pour inclure ou exclure des domaines ou des adresses de messagerie spécifiques dans les messages envoyés. Entrez chaque domaine ou adresse de messagerie et séparez les domaines ou adresses de messagerie par une virgule. Chaque domaine ou adresse de messagerie est appliqué séparément, un seul domaine ou une seule adresse de messagerie doit s’appliquer pour la stratégie à appliquer au message. <br><br> Si vous souhaitez surveiller tous les messages électroniques envoyés à un domaine spécifique mais exclure les messages envoyés qui n’ont pas besoin d’être réexaminés, vous devez configurer deux conditions: <br> -Un **message est envoyé à l’un de ces domaines** qui définit le domaine («contoso.com»), et <br> -Un **message n’est pas envoyé à l’un de ces domaines** , qui exclut l’adresse de messagerie («Subscriptions@contoso.com»). |
 | **Le message est classé avec l’une de ces étiquettes**  <br><br> **Le message n’est classé avec aucune de ces étiquettes** | Pour appliquer la stratégie lorsque certaines étiquettes de rétention sont incluses ou exclues dans un message. Les étiquettes de rétention doivent être configurées séparément et les étiquettes configurées dans le cadre de cette condition. Chaque étiquette que vous choisissez est appliquée séparément (une seule de ces étiquettes doit s’appliquer pour la stratégie à appliquer au message). Pour plus d’informations sur la configuration des étiquettes de rétention, consultez la rubrique [vue d’ensemble des étiquettes de](https://docs.microsoft.com/office365/securitycompliance/labels)rétention.|
 | **Le message contient l’un de ces mots**  <br><br> **Le message ne contient aucun de ces mots** | Pour appliquer la stratégie lorsque certains mots ou expressions sont inclus ou exclus dans un message, entrez chaque mot ou expression sur une ligne distincte. Chaque ligne de mots que vous entrez est appliquée séparément (une seule de ces lignes doit s’appliquer à la stratégie à appliquer au message). Pour plus d’informations sur la saisie des mots ou des expressions, voir la section suivante [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
@@ -161,6 +162,8 @@ Le tableau suivant décrit plus en plus de chaque condition.
    
 ##### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Correspondance de mots et expressions avec des courriers électroniques ou des pièces jointes
 <a name="Matchwords"></a> Chaque ligne de mots que vous entrez est appliquée séparément (une seule ligne doit s’appliquer à la condition de stratégie à appliquer à l’e-mail ou à la pièce jointe). Par exemple, nous utilisons la condition, le **message contient l’un de ces mots**, avec les mots-clés «Banker» et «negociing Insider» sur des lignes distinctes. La stratégie s’applique aux messages qui incluent le mot «Banker» ou l’expression «negociation Insiders». Un seul de ces mots ou expression doit être présent pour que cette condition de stratégie s’applique. Les mots contenus dans le message ou dans la pièce jointe doivent correspondre exactement à ce que vous entrez.
+
+Pour analyser les messages électroniques et les pièces jointes des mêmes mots clés, créez une [stratégie de protection contre la perte de données](create-test-tune-dlp-policy.md) avec un dictionnaire de [Mots clés personnalisé](create-a-keyword-dictionary.md) pour les termes que vous souhaitez surveiller. Cette configuration de stratégie identifie les mots clés définis qui apparaissent dans le message électronique **ou** dans la pièce jointe du courrier électronique. L’utilisation des paramètres de stratégie conditionnelle standard (le*message contient l’un de ces mots* et la *pièce jointe contient l’un de ces mots*) pour identifier les termes dans les **** messages et dans les pièces jointes exige que les termes soient présents dans le message et le connexion.
   
 ##### <a name="enter-multiple-conditions"></a>Entrer plusieurs conditions
 

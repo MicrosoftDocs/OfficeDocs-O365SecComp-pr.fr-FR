@@ -22,12 +22,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La fonctionnalité liens fiables permet de vérifier le temps de cliquer sur les liens hypertexte dans les documents Office et dans les messages électroniques. Utilisez des liens fiables pour protéger votre organisation contre le hameçonnage et les autres attaques.
-ms.openlocfilehash: bb6a4c94f72e24ff4cf3baee337bc7c14953a399
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: 725d5c331b330b2edca030b74a26eaa692f36465
+ms.sourcegitcommit: 72ee6feaa0e0fd6bf01bfb855ad6e3bef370bf89
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36231098"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36393323"
 ---
 # <a name="office-365-atp-safe-links"></a>Liens fiables Office 365 ATP (Protection avancée contre les menaces)
 

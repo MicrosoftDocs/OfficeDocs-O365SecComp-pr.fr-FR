@@ -1,5 +1,5 @@
 ---
-title: Rechercher et examiner les messages électroniques malveillants qui ont été remis dans Office 365, TIMailData-Inline, incident de sécurité, incident, PowerShell ATP, messages malveillants de messagerie, utilisateurs compromis, hameçonnage par courrier électronique, programmes malveillants de messagerie électronique
+title: Rechercher et examiner les messages électroniques malveillants qui ont été remis dans Office 365, TIMailData-Inline, incident de sécurité, incident, PowerShell ATP, messages malveillants de messagerie, utilisateurs compromis, hameçonnage par courrier électronique, programmes malveillants de messagerie électronique, lire les en-têtes de messagerie, lire les en-têtes, ouvrir les en-têtes de messages électroniques
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment utiliser les fonctionnalités d’analyse et de réponse aux menaces pour rechercher et examiner des courriers électroniques malveillants.
-ms.openlocfilehash: aefadeba265ddc4fc6188f857f94c78fae4aa8e9
-ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
+ms.openlocfilehash: 2049b3b8e0d7b9173639af3c48f75a072744fb7f
+ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36407943"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36444867"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>Rechercher et identifier les courriers électroniques malveillants remis dans Office 365
 
@@ -40,9 +40,56 @@ Assurez-vous que les conditions suivantes sont remplies :
     
 ## <a name="dealing-with-suspicious-emails"></a>Traitement des e-mails suspects
 
-Les utilisateurs malveillants peuvent envoyer des courriers électroniques à vos utilisateurs pour essayer d’envoyer leurs informations d’identification et accéder à vos secrets d’entreprise. Pour éviter cela, vous devez utiliser les services de protection contre les menaces dans Office 365, y compris [Exchange Online Protection](eop/exchange-online-protection-overview.md) et [Advanced Threat Protection](office-365-atp.md). Toutefois, il arrive qu’un agresseur puisse envoyer un message électronique à vos utilisateurs contenant une URL et, par la suite, faire pointer cette URL vers du contenu malveillant (programmes malveillants, etc.). Par ailleurs, vous pouvez vous rendre compte que l’utilisateur de votre organisation a été compromis et que, pendant qu’il a été compromis, un utilisateur malveillant a utilisé ce compte pour envoyer des courriers électroniques à d’autres utilisateurs de votre entreprise. Dans le cadre du nettoyage de ces deux scénarios, vous souhaiterez peut-être supprimer les messages électroniques des boîtes de réception des utilisateurs. Dans ce cas, vous pouvez utiliser l' [Explorateur de menaces (ou les détections en temps réel)](threat-explorer.md) pour rechercher et supprimer ces messages électroniques.
+Les utilisateurs malveillants peuvent envoyer des courriers électroniques à vos utilisateurs pour essayer d’envoyer leurs informations d’identification et accéder à vos secrets d’entreprise. Pour éviter cela, vous devez utiliser les services de protection contre les menaces dans Office 365, y compris [Exchange Online Protection](eop/exchange-online-protection-overview.md) et [Advanced Threat Protection](office-365-atp.md). Toutefois, il arrive qu’un agresseur puisse envoyer un message électronique à vos utilisateurs contenant une URL et, par la suite, faire pointer cette URL vers du contenu malveillant (programmes malveillants, etc.). 
+
+Par ailleurs, vous pouvez vous rendre compte que l’utilisateur de votre organisation a été compromis et que, pendant qu’il a été compromis, un utilisateur malveillant a utilisé ce compte pour envoyer des courriers électroniques à d’autres utilisateurs de votre entreprise. Dans le cadre du nettoyage de ces deux scénarios, vous souhaiterez peut-être supprimer les messages électroniques des boîtes de réception des utilisateurs. Dans ce cas, vous pouvez utiliser l' [Explorateur de menaces (ou les détections en temps réel)](threat-explorer.md) pour rechercher et supprimer ces messages électroniques.
 
 ## <a name="where-re-routed-emails-are-located-after-actions-are-taken"></a>Où se trouvent les messages électroniques reroutés une fois les actions effectuées
+
+Quels sont les messages qui posent problème et quels sont les outils permettant aux enquêteurs de comprendre ce qu’ils ont passé? Champs de l’Explorateur de menaces indiquent les informations qui aideront les administrateurs à résoudre les problèmes liés aux messages électroniques.
+
+### <a name="view-the-email-headers-and-download-the-email-body"></a>Afficher les en-têtes des messages et télécharger le corps du message
+
+La préversion **de l’en-tête du message et le téléchargement du corps du message** sont des fonctionnalités utiles de gestion des menaces de messagerie dans l’Explorateur de menaces. Les administrateurs pourront analyser et télécharger des en-têtes et des e-mails pour contrer les menaces. Access pour utiliser cette fonctionnalité est contrôlée par le contrôle d’accès basé sur les rôles (RBAC), afin de réduire le risque d’exposition du contenu du courrier électronique de l’utilisateur.
+
+Un nouveau *rôle*appelé «Preview» doit être ajouté à un autre groupe de rôles Office 365 (par exemple, dans les opérations s ou l’administrateur sec) pour accorder la possibilité de télécharger des messages et des en-têtes d’aperçu dans la vue tous les messages électroniques.
+
+Pour afficher la fenêtre mobile avec les options d’aperçu du téléchargement et de l’en-tête de messagerie: 
+
+1. Accédez à [https://protection.office.com](https://protection.office.com) et connectez-vous à l’aide de votre compte professionnel ou scolaire pour Office 365. Vous accédez au centre de sécurité &amp; conformité. 
+    
+2. Dans le volet de navigation de gauche, choisissez **Explorateur**de **gestion** \> des menaces.
+
+3. Cliquez sur un objet dans le tableau Threat Explorer.
+
+Cette opération ouvre le lanceur, dans lequel les liens de l’aperçu de l’en-tête et du téléchargement du courrier électronique sont positionnés.
+
+> [!IMPORTANT]
+> Utilisez les deux tableaux qui suivent. L’un indique le RBAC requis, l’autre, l’emplacement auquel les droits doivent être accordés.
+<p>
+
+|Activité  |RBAC RoleGroup avec Access |Rôle «aperçu» nécessaire?  |
+|---------|---------|---------|
+|Utilisation de l’Explorateur de menaces (et des détections en temps réel) pour analyser les menaces     |  Administrateur général Office 365,<br> Administrateur de sécurité, <br> Lecteur de sécurité      | Non   |
+|Utiliser l’Explorateur de menaces (et les détections en temps réel) pour afficher des en-têtes de courriers électroniques, ainsi qu’afficher un aperçu et télécharger des courriers électroniques mis en quarantaine    |     Administrateur général Office 365, <br> Administrateur de sécurité, <br>Lecteur de sécurité    |       Non  |
+|Utiliser l’Explorateur de menaces pour afficher les en-têtes et télécharger les messages remis aux boîtes aux lettres     |      Administrateur général Office 365, <br>Administrateur de sécurité,<br> Lecteur de sécurité, <br> Aperçu    |   Oui      |
+
+<br>
+
+|RBAC RoleGroup  |Emplacement auquel les utilisateurs sont affectés  |
+|---------|---------|
+| Administrateur général   | Centre d’administration Office 365        |
+| Administrateur de la sécurité      |    Centre de conformité et sécurité     |
+| Lecteur de sécurité   |    Centre de conformité et sécurité     |
+|      |    Centre de conformité et sécurité     |
+
+
+> [!CAUTION]
+> N’oubliez pas que «Preview» est un rôle et non un RoleGroup et que ce rôle doit être ajouté à un RoleGroup par la suite.
+
+![Menu volant de l’Explorateur de menaces avec les liens télécharger et aperçu sur la page.](media/ThreatExplorerDownloadandPreview.PNG)
+
+### <a name="check-the-delivery-action-and-location"></a>Vérifier l’action de remise et l’emplacement
 
 L’Explorateur de menaces les détections en temps réel ont ajouté les champs de l’action de remise et de l’emplacement de remise au lieu de l’état de remise. Cela a pour effet d’obtenir une image plus complète de l’emplacement de vos courriers électroniques. Une partie de cette modification est de faciliter la chasse aux personnes qui effectuent des opérations de sécurité, mais le résultat net est de savoir en un clin d’œil l’emplacement des messages électroniques problématiques.
 
@@ -67,7 +114,11 @@ Emplacement de remise: affiche les résultats des stratégies et des détections
 - **Quarantaine** : message en quarantaine et absent de la boîte aux lettres d’un utilisateur.
 - **Échec** : la messagerie n’a pas pu atteindre la boîte aux lettres.
 - **Ignoré** : le courrier électronique est perdu dans le flux de messagerie.
+
+### <a name="view-the-timeline-of-your-email"></a>Affichage de la chronologie de votre courrier électronique
   
+ **Chronologie par courrier électronique** un autre champ dans l’Explorateur de menaces est également plus facile à ake pour les administrateurs. Au lieu de passer un temps précieux à rechercher le courrier électronique, lorsque, lors de l’enquête sur un événement, lorsque plusieurs événements se produisent ou se rapprochent de la même heure dans un e-mail, ces événements apparaissent dans un affichage chronologie. Certains événements qui ont lieu après la livraison de votre courrier seront capturés dans la colonne «*action spéciale*». En associant les informations de la chronologie du message à l’action spéciale effectuée sur le post-remise, les administrateurs ont connaissance des stratégies et de la gestion des menaces (par exemple, l’endroit où le courrier a été acheminé et, dans certains cas, l’évaluation finale).
+
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Rechercher et supprimer les e-mails suspects qui ont été remis
 
 > [!TIP]
