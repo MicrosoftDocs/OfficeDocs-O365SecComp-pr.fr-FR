@@ -3,7 +3,7 @@ title: Assurer la sécurité de vos utilisateurs Office 365 avec les fonctionnal
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 07/09/2019
+ms.date: 08/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment les fonctionnalités d’enquête et de réponse aux menaces Office 365 peuvent aider votre organisation à détecter les intrusions et les menaces, ainsi qu’à limiter et récupérer rapidement les menaces.
-ms.openlocfilehash: 28fbf0a66370e2e1d407454017943e57f5f368b1
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 2170bf53247412ecf0ae1b9ca13286a6df8a6336
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598980"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478173"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Assurer la sécurité de vos utilisateurs Office 365 avec les fonctionnalités d’enquête et de réponse aux menaces Office 365
 
@@ -28,13 +28,13 @@ ms.locfileid: "35598980"
 
 Savez-vous quels sont les utilisateurs de vos utilisateurs d’Office 365 qui sont attaqués ou qui sont pirement compromis? Comment limiter et récupérer des attaques ciblant vos utilisateurs? Saviez-vous que vous pouvez faire exactement cela avec des fonctionnalités de sécurité qui sont déjà disponibles dans Office 365? 
   
-Les fonctionnalités d' [enquête et de réponse aux menaces office 365](office-365-ti.md) sont incluses dans votre abonnement Office 365 E5 (dans le cadre d’Office 365 Advanced Threat Protection Plan 2). Ces fonctionnalités ont aidé Microsoft IT à réduire le temps moyen de résolution des incidents de génie social de 80% et à augmenter le débit de 37% par mois par rapport aux 2 trimestres précédents. 
+Les fonctionnalités d' [enquête et de réponse aux menaces office 365](office-365-ti.md) sont incluses dans votre abonnement Office 365 E5 (dans le cadre d' [Office 365 Advanced Threat Protection](office-365-atp.md) plan 2). Ces fonctionnalités ont aidé Microsoft IT à réduire le temps moyen de résolution des incidents de génie social de 80% et à augmenter le débit de 37% par mois par rapport aux 2 trimestres précédents. 
 
 Nous avons récemment ajouté de nouvelles fonctionnalités pour vous aider à améliorer la détection et la récupération des menaces. Voici un aperçu rapide de la façon dont les fonctionnalités d’enquête et de réponse aux menaces mises à jour peuvent vous aider à améliorer votre efficacité.
   
 ## <a name="detect-intrusions-and-threats"></a>Détecter les intrusions et les menaces
 
-[Explorateur de menaces (ou détections en temps réel)](threat-explorer.md) (également appelé «Explorateur de menaces») permet aux administrateurs de sécurité et aux analystes d’identifier et de comprendre les menaces qui sont actives dans votre entreprise car même les paramètres de sécurité les plus complexes peuvent être contournés par des configurations d’utilisateur apparemment inoffensives telles que la sécurité listes blanches d’expéditeurs. L’Explorateur aide les administrateurs de sécurité ou globaux d’Office 365 à déterminer rapidement si les utilisateurs ont été compromis par des menaces telles que les programmes malveillants ou les hameçons. Cela permet de hiérarchiser les utilisateurs les plus exposés à une menace et la réponse requise. 
+[Explorateur de menaces (ou détections en temps réel)](threat-explorer.md) (également appelé Explorateur) permet aux administrateurs de sécurité et aux analystes d’identifier et de comprendre les menaces qui sont actives dans votre entreprise, car même les paramètres de sécurité les plus complexes peuvent être contournés par des configurations d’utilisateur apparemment inoffensives comme l’expéditeur approuvé autorisation. L’Explorateur aide les administrateurs de sécurité ou globaux d’Office 365 à déterminer rapidement si les utilisateurs ont été compromis par des menaces telles que les programmes malveillants ou les hameçons. Cela permet de hiérarchiser les utilisateurs les plus exposés à une menace et la réponse requise. 
   
 L’Explorateur aide également les administrateurs à parcourir les relations entre les utilisateurs et le courrier électronique. Connaissance d’un message particulier qui était incorrect? Recherchez-le pour savoir quels utilisateurs ont reçu le courrier, puis suivez la série d’événements et observez ce qu’ils ont fait.
 
@@ -56,7 +56,6 @@ Si vous ne disposez pas de ces fonctionnalités, [essayez-le maintenant](https:/
 
 Les fonctionnalités d’enquête et de réponse aux menaces Office 365 sont basées sur les données du graphique de sécurité intelligent de Microsoft. Le graphique obtient le signal de menace le plus récent de plus de 1 milliard appareils Windows, 450 milliards de connexions Azure mensuelles et de 400 milliards messages électroniques dans Office 365. Ce signal de menace inégal est ce qui donne la grande visibilité à un client client, ce qui est crucial pour les administrateurs et les analystes de sécurité afin de disposer d’une vue complète des menaces ayant un impact sur leur organisation. 
   
-   
 ## <a name="why-use-office-365-threat-investigation-and-response-capabilities"></a>Pourquoi utiliser les fonctionnalités d’enquête et de réponse aux menaces Office 365?
 
 Gartner estime que, dans 2017 seul sur $90B, il a été passé sur Cybersecurity. Le SID Deshpande, principal Research Analyst chez Gartner, est indiqué comme disant «le secteur passe à la détection et à la réponse... envoie un message clair indiquant que la prévention est futile, sauf si elle est liée à une fonctionnalité de détection et de réponse. L’enquête sur les menaces et la réponse sont un élément essentiel du portefeuille de services de chaque entreprise, et peuvent être utilisés en tant que service autonome ou en tant que partie intégrante d’Office 365 E5.
