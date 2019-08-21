@@ -1,5 +1,5 @@
 ---
-title: Assurer la sécurité de vos utilisateurs Office 365 avec les fonctionnalités d’enquête et de réponse aux menaces Office 365
+title: Sécuriser votre organisation grâce aux fonctionnalités d’enquête et de réponse aux menaces Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,14 +15,14 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment les fonctionnalités d’enquête et de réponse aux menaces Office 365 peuvent aider votre organisation à détecter les intrusions et les menaces, ainsi qu’à limiter et récupérer rapidement les menaces.
-ms.openlocfilehash: 2170bf53247412ecf0ae1b9ca13286a6df8a6336
-ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
+ms.openlocfilehash: baedfb1ff74117bd2ed36cdf4551f898d377a971
+ms.sourcegitcommit: 4fd64e1811ae96633035cbc9cab1dbef3cbba34d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "36478173"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36484397"
 ---
-# <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Assurer la sécurité de vos utilisateurs Office 365 avec les fonctionnalités d’enquête et de réponse aux menaces Office 365
+# <a name="keep-your-organization-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Sécuriser votre organisation grâce aux fonctionnalités d’enquête et de réponse aux menaces Office 365
 
 ## <a name="overview"></a>Vue d’ensemble
 
