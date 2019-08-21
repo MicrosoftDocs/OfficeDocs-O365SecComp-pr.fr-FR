@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenez une vue d’ensemble des types d’informations sensibles personnalisés pour la protection contre la perte de données (DLP).
-ms.openlocfilehash: 3c3acceb23fe74d22b9e952bf5dc76d9ed6eefd9
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: b73f0d51e57106cbcc6f0986261faabb26cc5b4a
+ms.sourcegitcommit: 0a0d9c1325b4b0581018c31037dcc707d3d679b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230778"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "36279146"
 ---
 # <a name="custom-sensitive-information-types"></a>Types d’informations sensibles personnalisés
 
@@ -49,7 +49,7 @@ Les éléments fondamentaux d’un type d’informations sensibles personnalisé
 
 Pour créer des types d’informations sensibles personnalisés dans le Centre de sécurité et conformité, vous disposez des options suivantes :
 
-- **Utiliser EDM** (nouveau) Vous pouvez configurer des types d’informations sensibles personnalisés à l’aide d’une classification de correspondance exacte des données (EDM, Exact Data Match). Cette méthode vous permet de créer un type d’informations sensibles dynamique à l’aide d’une base de données sécurisée que vous pouvez actualiser régulièrement. Voir l’article sur la [création d’un type d’informations sensibles personnalisé à l’aide d’une classification de correspondance exacte des données (préversion)](create-custom-sensitive-info-type-edm.md).
+- **Utiliser EDM** (nouveau) Vous pouvez configurer des types d’informations sensibles personnalisés à l’aide d’une classification de correspondance exacte des données (EDM, Exact Data Match). Cette méthode vous permet de créer un type d’informations sensibles dynamique à l’aide d’une base de données sécurisée que vous pouvez actualiser régulièrement. Voir l’article sur la [création d’un type d’informations sensibles personnalisé à l’aide d’une classification de correspondance exacte des données](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 
 - **Utiliser PowerShell** vous pouvez configurer des types d’informations sensibles personnalisés à l’aide de PowerShell. Bien que cette méthode soit plus complexe que celle de l’interface utilisateur, elle offre davantage d’options de configuration. Voir [Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 

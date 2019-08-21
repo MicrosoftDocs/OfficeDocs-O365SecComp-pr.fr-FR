@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à seulement quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou seulement au contenu remplissant certaines conditions.
-ms.openlocfilehash: 1d9ad24a8322bec471a2725e16c0cd49ffa71202
-ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
+ms.openlocfilehash: 71c7fbf06709dd9d7e6ba3f084e0377f821ca171
+ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054766"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36444894"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -300,9 +300,9 @@ Enfin, pour placer un Verrouillage de Conservation sur la stratégie de rétenti
   
 ## <a name="releasing-a-retention-policy"></a>Publication d’une stratégie de rétention
 
-Vous pouvez désactiver ou supprimer une stratégie de rétention à tout moment. Lorsque vous procédez de la sorte, le contenu SharePoint ou OneDrive conservé n’est pas immédiatement supprimé définitivement. Au lieu de cela, pour éviter la perte accidentelle de données, il existe une période de grâce de 30 jours pendant laquelle l’expiration du contenu de cette stratégie ne se produit pas dans la bibliothèque de conservation de conservation, afin que vous puissiez restaurer tout contenu à partir de cet emplacement, le cas échéant. Vous pouvez également réactiver la stratégie de rétention pendant la période de grâce et aucun contenu ne sera supprimé pour cette stratégie. Cette période de grâce peut être configurée à l’aide de PowerShell. Nous fournirons bientôt un exemple de script que vous pouvez utiliser.
+Vous pouvez désactiver ou supprimer une stratégie de rétention à tout moment. Lorsque vous procédez de la sorte, le contenu SharePoint ou OneDrive conservé dans la bibliothèque de conservation n’est pas immédiatement supprimé définitivement. Au lieu de cela, pour éviter la perte accidentelle de données, il existe une période de grâce de 30 jours pendant laquelle l’expiration du contenu de cette stratégie ne se produit pas dans la bibliothèque de conservation de conservation, afin que vous puissiez restaurer tout contenu à partir de cet emplacement, le cas échéant. Vous pouvez également réactiver la stratégie de rétention pendant la période de grâce et aucun contenu ne sera supprimé pour cette stratégie.
 
-Cette période de grâce de 30 jours dans SharePoint et OneDrive correspond à un délai de 30 jours dans Exchange. Pour des informations supplémentaires, consultez [Gestion des boîtes aux lettres avec période de grâce](https://docs.microsoft.com/fr-FR/office365/securitycompliance/identify-a-hold-on-an-exchange-online-mailbox#managing-mailboxes-on-delay-hold).
+Cette période de grâce de 30 jours dans SharePoint et OneDrive correspond à un délai de 30 jours dans Exchange. Pour des informations supplémentaires, consultez [Gestion des boîtes aux lettres avec période de grâce](https://docs.microsoft.com/fr-FR/office365/securitycompliance/identify-a-hold-on-an-exchange-online-mailbox#managing-mailboxes-on-delay-hold).
 
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Principes de rétention et priorité
 
