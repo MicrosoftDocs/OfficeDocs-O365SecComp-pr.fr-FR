@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: En savoir plus sur les stratégies de surveillance dans Office 365
-ms.openlocfilehash: 6480c3ccb069e5e16618739303d71df115074baf
-ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
+ms.openlocfilehash: 3259620e16b626c81c9c0f71f7be1f627e9c6bc9
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36165650"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490761"
 ---
 # <a name="supervision-policies-in-office-365"></a>Stratégies de surveillance dans Office 365
 
@@ -144,6 +144,7 @@ Le modèle de langage offensant surveille le courrier électronique en fonction 
 | **Expressions masquées** | Expressions pour lesquelles la signification ou la prononciation est identique à celle d’un autre terme offensant. |
 
 #### <a name="conditional-settings"></a>Paramètres conditionnels
+<a name="ConditionalSettings"> </a>
 
 Les conditions que vous choisissez pour la stratégie s’appliquent aux communications à partir de la messagerie et des sources tierces de votre organisation (par exemple, Facebook ou DropBox).
 

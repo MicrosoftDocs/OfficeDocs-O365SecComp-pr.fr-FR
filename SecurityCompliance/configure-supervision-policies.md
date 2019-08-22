@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurez des stratégies de vérification de surveillance pour capturer les communications des employés à des fins de révision.
-ms.openlocfilehash: 9cc13cb953d8166ceac04856fa8b54d0a4629bd6
-ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
+ms.openlocfilehash: c4735226235d557dc138d6eebaf9c7a84c39020c
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36168172"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490781"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurer des stratégies de surveillance pour votre organisation
 
@@ -29,7 +29,7 @@ Utilisez des stratégies de surveillance pour capturer les communications des em
 
 > [!NOTE]
 > Les utilisateurs surveillés par des stratégies de surveillance doivent disposer d’une licence de conformité Microsoft 365 E5, d’une licence Office 365 entreprise E3 avec le complément de conformité avancé ou être inclus dans un abonnement Office 365 entreprise E5.
-Si vous ne disposez pas d’un plan entreprise E5 existant et que vous souhaitez essayer de contrôler, vous pouvez vous [inscrire pour obtenir une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+> Si vous ne disposez pas d’un plan entreprise E5 existant et que vous souhaitez essayer de contrôler, vous pouvez vous [inscrire pour obtenir une version d’évaluation d’Office 365 entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
 Procédez comme suit pour configurer et utiliser la surveillance dans votre organisation Office 365:
   
@@ -99,6 +99,7 @@ Pour gérer les utilisateurs supervisés dans les grandes organisations d’entr
     ```
 
 Pour plus d’informations sur la configuration des groupes, voir:
+
 - [Création et gestion de groupes de distribution](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [Gérer les groupes de sécurité à extension de messagerie](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
 - [Vue d’ensemble des groupes Office 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
@@ -166,7 +167,7 @@ Utilisez un éditeur de texte (comme le bloc-notes) pour créer un fichier qui i
 
     - Donnez un nom et une description à la stratégie.
     - Choisissez les utilisateurs ou les groupes à superviser, y compris le choix des utilisateurs ou des groupes que vous souhaitez exclure.
-    - Définir les conditions de la stratégie de surveillance.
+    - Définir les [conditions](supervision-policies.md#ConditionalSettings)de la stratégie de surveillance. Vous pouvez choisir entre une adresse de message, un mot clé, un type de fichier et une condition de correspondance de taille.
     - Choisissez si vous souhaitez inclure des types d’informations sensibles. C’est ici que vous pouvez sélectionner les types d’informations sensibles par défaut et personnalisés.
     - Choisissez si vous souhaitez activer le modèle de langage offensant. Cette fonctionnalité détecte les langues inappropriées envoyées ou reçues dans le corps des messages électroniques.
     - Définir le pourcentage de communications à réviser.
@@ -196,7 +197,7 @@ Pour configurer la révision pour le bureau Outlook, vous avez besoin de l’adr
 > [!NOTE]
 > Si une autre personne a créé la stratégie, vous devez obtenir cette adresse auprès de celle-ci pour installer le complément.
 
- **Pour Rechercher l’adresse de la boîte aux lettres de supervision**
+**Pour Rechercher l’adresse de la boîte aux lettres de supervision**
   
 1. Connectez-vous au [Centre de conformité](https://compliance.microsoft.com) à l’aide des informations d’identification d’un compte d’administrateur de votre organisation.
 

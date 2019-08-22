@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: efcee812b6082a7f7ee36e6aea0ecb7ed0243077
-ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
+ms.openlocfilehash: c9c2660929037430535c9b612218563c51b1f056
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36168128"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490791"
 ---
 # <a name="error-remediation-when-processing-data"></a>Correction d’erreur lors du traitement des données
 
@@ -61,7 +61,7 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
 7. Après avoir téléchargé les fichiers, vous pouvez les corriger à l’aide d’un outil approprié. Pour les fichiers protégés par mot de passe, il existe plusieurs outils de craquage de mot de passe que vous pouvez utiliser. Si vous connaissiez les mots de passe des fichiers, vous pouvez les ouvrir et supprimer la protection par mot de passe.
     > [!NOTE]
-    > Il est important de conserver la structure de répertoire et les noms de fichier des fichiers corrigés dans l’élément tact.  Toutes les conventions d’affectation de noms utilisées dans les fichiers et les dossiers téléchargés permettent d’associer à nouveau les fichiers remdiated à l’original.
+    > Il est important de conserver la structure de répertoire et les noms de fichier des fichiers corrigés. Les noms de chemin d’accès des fichiers et dossiers téléchargés permettent d’associer les fichiers corrigés aux fichiers d’origine.  Si la structure du répertoire ou les noms de fichier sont modifiés, vous recevez l’erreur `Cannot apply Error Remediation to the current Workingset`suivante:.
 
 8. À présent, revenez à Advanced eDiscovery et cliquez sur **suivant: upload files**.  Cette opération passe à l’étape suivante, dans laquelle vous pouvez à présent télécharger les fichiers.
 

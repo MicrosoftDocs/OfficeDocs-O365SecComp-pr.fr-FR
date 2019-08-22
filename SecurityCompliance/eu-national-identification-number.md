@@ -3,19 +3,19 @@ title: Numéro d’identification nationale de l’UE
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 8/17/2018
+ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Cette rubrique présente l’aspect d’une stratégie de protection contre la perte de données (DLP) lorsqu’elle détecte le type d’informations sensibles du numéro d’identification national de l’UE. Ce type d’informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
-ms.openlocfilehash: 205019d040648f0600f3dbf4403063edf9f31c41
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: cbcacb3f85877f5a84238468fb52d612d90f5f0b
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154456"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490771"
 ---
 # <a name="eu-national-identification-number"></a>Numéro d’identification nationale de l’UE
 
@@ -59,7 +59,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordsaustriaeunationalidcard"></a>Keywords_austria_eu_national_id_card
+#### <a name="keywords_austria_eu_national_id_card"></a>Keywords_austria_eu_national_id_card
 
 Numéro d’identité autrichien
   
@@ -123,11 +123,11 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordsbulgarianationalnumber"></a>Keywords_bulgaria_national_number
+#### <a name="keywords_bulgaria_national_number"></a>Keywords_bulgaria_national_number
 
 egn
   
-egn#
+egn #
   
 numéro national bulgare
   
@@ -135,21 +135,21 @@ numéro national
   
 numéro de sécurité sociale
   
-nationalnumber#
+nationalnumber #
   
-SSN
+SSN #
   
 SSN
   
 nationalnumber
   
-bnn#
+bnn #
   
 bnn
   
 Numéro d’identification personnel
   
-personalidnumber#
+personalidnumber #
   
 единен граждански номер
   
@@ -157,7 +157,7 @@ edinen grazhdanski nomer
   
 егн
   
-егн#
+егн #
   
 ## <a name="croatia"></a>Croatie
 
@@ -197,7 +197,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordscypruseunationalidcard"></a>Keywords_cyprus_eu_national_id_card
+#### <a name="keywords_cyprus_eu_national_id_card"></a>Keywords_cyprus_eu_national_id_card
 
 Numéro de carte d’identité
   
@@ -266,7 +266,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordsestoniaeunationalidcard"></a>Keywords_estonia_eu_national_id_card
+#### <a name="keywords_estonia_eu_national_id_card"></a>Keywords_estonia_eu_national_id_card
 
 code d’identification personnel
   
@@ -278,7 +278,7 @@ numéro national
   
 Numéro d’identification personnel
   
-personalidnumber#
+personalidnumber #
   
 inverse
   
@@ -350,7 +350,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordshungaryeunationalidcard"></a>Keywords_hungary_eu_national_id_card
+#### <a name="keywords_hungary_eu_national_id_card"></a>Keywords_hungary_eu_national_id_card
 
 Numéro d’identification personnel
   
@@ -417,7 +417,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordsirelandeunationalidcard"></a>Keywords_ireland_eu_national_id_card
+#### <a name="keywords_ireland_eu_national_id_card"></a>Keywords_ireland_eu_national_id_card
 
 Numéro de service public
   
@@ -491,7 +491,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordsitalyeunationalidcard"></a>Keywords_italy_eu_national_id_card
+#### <a name="keywords_italy_eu_national_id_card"></a>Keywords_italy_eu_national_id_card
 
 code personnel
   
@@ -501,7 +501,7 @@ Numéro de certificat personnel
   
 code fiscal
   
-personalcodeno#
+personalcodeno #
   
 Numéro d’identification personnel
   
@@ -519,7 +519,7 @@ codice ID personnel
   
 Codice fiscale
   
-## <a name="italy"></a>Italie
+## <a name="latvia"></a>Lettonie
 
 ### <a name="format"></a>Format
 
@@ -567,7 +567,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordslatviaeunationalidcard"></a>Keywords_latvia_eu_national_id_card
+#### <a name="keywords_latvia_eu_national_id_card"></a>Keywords_latvia_eu_national_id_card
 
 code personnel
   
@@ -575,7 +575,7 @@ Numéro de code personnel
   
 Numéro de certificat personnel
   
-personalcodeno#
+personalcodeno #
   
 Numéro d’identification personnel
   
@@ -632,7 +632,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordslithuaniaeunationalidcard"></a>Keywords_lithuania_eu_national_id_card
+#### <a name="keywords_lithuania_eu_national_id_card"></a>Keywords_lithuania_eu_national_id_card
 
 code numérique personnel
   
@@ -642,7 +642,7 @@ Numéro de service du citoyen
   
 Numéro d’identité unique
   
-uniqueidentityno#
+uniqueidentityno #
   
 code personnel.
   
@@ -697,23 +697,23 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordsluxemburgeunationalidcard"></a>Keywords_luxemburg_eu_national_id_card
+#### <a name="keywords_luxemburg_eu_national_id_card"></a>Keywords_luxemburg_eu_national_id_card
 
 ID personnel
   
 Numéro d’identification personnel
   
-personalidno#
+personalidno #
   
 Numéro d’identification unique
   
-personalidnumber#
+personalidnumber #
   
 clé d’ID unique
   
 code d’identification personnel
   
-uniqueidkey#
+uniqueidkey #
   
 code individuel
   
@@ -727,11 +727,11 @@ ID personnelle
   
 Numéro d’identification personnel
   
-idpersonnelle#
+idpersonnelle #
   
 persönliche identifikationsnummer
   
-eindeutigeid#
+eindeutigeid #
   
 ## <a name="malta"></a>Malte
 
@@ -778,7 +778,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordsmaltaeunationalidcard"></a>Keywords_malta_eu_national_id_card
+#### <a name="keywords_malta_eu_national_id_card"></a>Keywords_malta_eu_national_id_card
 
 code numérique personnel
   
@@ -788,7 +788,7 @@ Numéro de service du citoyen
   
 Numéro d’identité unique
   
-uniqueidentityno#
+uniqueidentityno #
   
 Kodiċi numerali
   
@@ -839,7 +839,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordsnetherlandseunationalidcard"></a>Keywords_netherlands_eu_national_id_card
+#### <a name="keywords_netherlands_eu_national_id_card"></a>Keywords_netherlands_eu_national_id_card
 
 code numérique personnel
   
@@ -849,11 +849,11 @@ Numéro de service du citoyen
   
 Numéro d’identité unique
   
-uniqueidentityno#
+uniqueidentityno #
   
 BSN
   
-BSN
+BSN #
   
 persoonlijke Numerieke de code
   
@@ -912,7 +912,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordsromaniaeunationalidcard"></a>Keywords_romania_eu_national_id_card
+#### <a name="keywords_romania_eu_national_id_card"></a>Keywords_romania_eu_national_id_card
 
 code numérique personnel
   
@@ -920,19 +920,19 @@ Numéro d’identification unique
   
 cnp
   
-cnp#
+cnp #
   
 ancre
   
-ancre
+ancre #
   
 Numéro d’assurance
   
-insurancenumber#
+insurancenumber #
   
 Numéro d’identité unique
   
-uniqueidentityno#
+uniqueidentityno #
   
 COD numérique personnel
   
@@ -946,11 +946,11 @@ număr identitate
   
 număr IDENTIFICARE personnel
   
-număridentitate#
+număridentitate #
   
-codnumericpersonal#
+codnumericpersonal #
   
-numărpersonalunic#
+numărpersonalunic #
   
 ## <a name="slovakia"></a>République de Slovaquie
 
@@ -993,7 +993,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordsslovakiaeunationalidcard"></a>Keywords_slovakia_eu_national_id_card
+#### <a name="keywords_slovakia_eu_national_id_card"></a>Keywords_slovakia_eu_national_id_card
 
 Numéro de naissance
   
@@ -1003,9 +1003,9 @@ Numéro d’identification personnel
   
 numéro de sécurité sociale
   
-nationalnumber#
+nationalnumber #
   
-SSN
+SSN #
   
 SSN
   
@@ -1013,7 +1013,7 @@ numéro national
   
 Numéro d’identification personnel
   
-personalidnumber#
+personalidnumber #
   
 rč
   
@@ -1070,7 +1070,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordssloveniaeunationalidcard"></a>Keywords_slovenia_eu_national_id_card
+#### <a name="keywords_slovenia_eu_national_id_card"></a>Keywords_slovenia_eu_national_id_card
 
 code numérique personnel
   
@@ -1080,7 +1080,7 @@ Numéro d’enregistrement unique
   
 Numéro d’identité unique
   
-uniqueidentityno#
+uniqueidentityno #
   
 Numéro de citoyen principal unique
   
@@ -1130,7 +1130,7 @@ Le pourcentage de confiance d’une stratégie DLP ayant détecté ce type d’
 
 ### <a name="keywords"></a>Mots clés
 
-#### <a name="keywordsspaineunationalidcard"></a>Keywords_spain_eu_national_id_card
+#### <a name="keywords_spain_eu_national_id_card"></a>Keywords_spain_eu_national_id_card
 
 DNI
   
@@ -1148,19 +1148,19 @@ n ° d’identité personnelle
   
 Numéro d’identité unique
   
-nationalidno#
+nationalidno #
   
-quei
+quei #
   
-DNI
+DNI #
   
-nationalid#
+nationalid #
+  
+nie #
   
 nie
   
-nie
-  
-nienúmero#
+nienúmero #
   
 nie número
   
@@ -1172,9 +1172,9 @@ número Nacional identidad
   
 DNI número
   
-dninúmero#
+dninúmero #
   
-identidadúnico#
+identidadúnico #
   
 ## <a name="sweden"></a>Suède
 
