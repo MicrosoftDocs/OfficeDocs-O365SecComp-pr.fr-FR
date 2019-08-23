@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Utilisez l’outil recherche de contenu dans le centre de conformité dans Office 365 ou Microsoft 365 pour rechercher du contenu dans les boîtes aux lettres, les sites SharePoint Online, les comptes OneDrive, Microsoft Teams, les groupes Office 365 et les conversations Skype Entreprise. Vous pouvez utiliser des requêtes de recherche par mot clé et des conditions de recherche pour affiner les résultats de la recherche. Vous pouvez ensuite obtenir un aperçu et exporter les résultats de la recherche. La recherche de contenu est également un outil efficace pour rechercher du contenu lié à une demande d’objet de données RGPD.
-ms.openlocfilehash: cf1935b8ab4df80182739497f60adf5a2bc6a6d7
-ms.sourcegitcommit: 59039d3bf479c4b2c1d2e2556a0adc755f431a1f
+ms.openlocfilehash: 2fff94899dabca85338ba1ca924ec37afa1dccf3
+ms.sourcegitcommit: 873c5bc0e6cd1ca3dfdb3a99a5371353b419311f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "36473414"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493165"
 ---
 # <a name="content-search-in-office-365"></a>Recherche de contenu dans Office 365
 
@@ -69,7 +69,7 @@ Pour accéder à la page **recherche de contenu** pour effectuer des recherches 
   
    - **Mots clés à Rechercher :** tapez une requête de recherche dans la zone**Mots clés**. Vous pouvez spécifier des mots clés, des propriétés de message telles que les dates d’envoi et de réception, ou des propriétés de document telles que les noms de fichier ou la date de dernière modification d’un document. Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, tels que **ET**, **OU**, **PAS**, et **PRÈS**. Vous pouvez également rechercher des informations sensibles (des numéros de sécurité sociale, par exemple) dans des documents ou rechercher des documents qui ont été partagés en externe. Si vous laissez la zone du mot clé vide, tout le contenu se trouvant dans les emplacements de contenu spécifiés sera inclus dans les résultats de recherche.
     
-      Vous pouvez également cliquer sur la case à cocher **Afficher la liste de mots clés **puis taper un mot clé dans chaque ligne. Si vous procédez ainsi, les mots clés sur chaque ligne sont connectés à l’aide d'un opérateur logique (**c:s**) qui présente les mêmes fonctionnalités que l’opérateur OU de la requête de recherche créée. 
+      Vous pouvez également cliquer sur la case à cocher **Afficher la liste de mots clés **puis taper un mot clé dans chaque ligne. Si vous procédez ainsi, les mots clés sur chaque ligne sont connectés à l’aide d'un opérateur logique (**c:s**) qui présente les mêmes fonctionnalités que l’opérateur **OU** de la requête de recherche créée. 
     
       Pourquoi utiliser la liste de mots clés ? Vous pouvez obtenir des statistiques qui indiquent le nombre d’éléments qui correspondent à chaque mot clé. Cela peut vous aider à identifier rapidement les mots clés les plus importants (et les moins). Vous pouvez également utiliser une expression de mot clé (entre parenthèses) dans une ligne. Pour plus d’informations sur les statistiques de recherche, voir [afficher les statistiques des mots clés pour les résultats de recherche de contenu](view-keyword-statistics-for-content-search.md).
 
@@ -206,7 +206,7 @@ Pour plus d’informations sur la création d’une requête de recherche, l’u
   
 Gardez les points suivants à l’esprit lorsque vous utilisez la liste de mots clés pour créer une requête de recherche.
   
-- Vous devez cocher la case **Afficher la liste de mots clés, puis taper chaque mot-clé dans une ligne distincte pour créer une requête de recherche dans laquelle les mots-clés (ou les phrases de mots-clés) de chaque ligne sont connectés par l’opérateur ou. Si vous collez une liste de mots clés dans la zone de mot clé ou appuyez sur la touche **entrée** après avoir tapé un mot clé, ils ne sont pas connectés par l’opérateur **ou**. Voici quelques exemples incorrects et corrects d’ajout d’une liste de mots clés. 
+- Vous devez cocher la case **Afficher la liste de mots clés**, puis taper chaque mot-clé dans une ligne distincte pour créer une requête de recherche dans laquelle les mots-clés (ou les phrases de mots-clés) de chaque ligne sont connectés par l’opérateur **ou**. Si vous collez une liste de mots clés dans la zone de mot clé ou appuyez sur la touche **entrée** après avoir tapé un mot clé, ils ne sont pas connectés par l’opérateur **ou**. Voici quelques exemples incorrects et corrects d’ajout d’une liste de mots clés. 
     
     **Incorrect**
     
@@ -309,7 +309,7 @@ Les conditions sont logiquement connectées à la requête de mot clé par l’o
   
 ### <a name="searching-inactive-mailboxes"></a>Recherche des boîtes aux lettres inactives
 
-Vous pouvez effectuer une recherche dans les boîtes aux lettres inactives dans une recherche de contenu. Pour obtenir une liste des boîtes aux lettres inactives de votre organisation, exécutez la commande `Get-Mailbox -InactiveMailboxOnly` dans Exchange Online PowerShell. Vous pouvez également accéder à **Rétention**de la ** gouvernance des données** \> dans le centre de sécurité & conformité, puis cliquer sur **Plus**![ Barre de navigation : sélections   boîtes aux lettres inactives .
+Vous pouvez effectuer une recherche dans les boîtes aux lettres inactives dans une recherche de contenu. Pour obtenir une liste des boîtes aux lettres inactives de votre organisation, exécutez la commande `Get-Mailbox -InactiveMailboxOnly` dans Exchange Online PowerShell. Vous pouvez également accéder à **Rétention**de la ** gouvernance des données** \> dans le centre de sécurité & conformité, puis cliquer sur **Plus**![ Barre de navigation : sélections ](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)\> ** boîtes aux lettres inactives **.
   
 Voici quelques éléments à prendre en considération lors de la recherche de boîtes aux lettres inactives.
 
@@ -333,15 +333,15 @@ Voici quelques éléments à prendre en considération lors de la recherche de b
 
 ### <a name="searching-disconnected-or-de-licensed-mailboxes"></a>Recherche de boîtes aux lettres déconnectées ou sans licence
 
-Si la licence Exchange Online (ou la licence Office 365 entière) est supprimée d’un compte d’utilisateur dans Office 365 ou Azure Active Directory, la boîte aux lettres de l'utilisateur devient une *boîte aux lettres déconnectée*. Cela signifie que la boîte aux lettres n’est plus associée au compte d’utilisateur. Voici ce qui se produit lorsque vous effectuez des recherches dans les boîtes aux lettres déconnectées :
+Si la licence Exchange Online (ou la licence Office 365 entière) est supprimée d’un compte d’utilisateur dans Office 365 ou Azure Active Directory, la boîte aux lettres de l'utilisateur devient une *boîte aux lettres déconnectée*. Cela signifie que la boîte aux lettres n’est plus associée au compte d’utilisateur. Voici ce qui se produit lorsque vous effectuez des recherches dans les boîtes aux lettres déconnectées :
 
-- Lorsque la licence est supprimée d’une boîte aux lettres, la boîte aux lettres est placée dans une période de grâce de 30 jours. Pendant cette période de grâce, vous pouvez encore utiliser la recherche de contenu pour effectuer une recherche dans la boîte aux lettres.
+- Si la licence est supprimée d’une boîte aux lettres, il n’est plus possible d’y effectuer des recherches. 
 
-- Si la boîte aux lettres n’est pas remise sous licence dans un délai de 30 jours, elle sera marquée pour suppression définitive et supprimée d’Office 365 la prochaine fois que la boîte aux lettres sera traitée. Selon la date d’expiration du traitement de la boîte aux lettres, vous pouvez peut-être effectuer une recherche à la fin de la période de grâce de 30 jours. Les boîtes aux lettres sont généralement traitées une fois tous les sept jours. Une fois qu’elle est traitée, la boîte aux lettres est supprimée et ne peut plus faire l’objet d’une recherche.
+- Si une recherche de contenu existante inclut une boîte aux lettres dont laquelle la licence est supprimée, aucun résultat de la boîte aux lettres déconnectée ne sera renvoyé si vous réexécutez la recherche de contenu.
 
-- Si une recherche de contenu existante inclut une boîte aux lettres d’utilisateur dans laquelle la licence a été supprimée, la boîte aux lettres déconnectée est incluse lorsque vous réexécutez la recherche jusqu’à l’expiration de la période de grâce de 30 jours. Une fois que la période de grâce expire et la boîte aux lettres est supprimée, elle ne sera plus incluse lorsque vous relancerez la recherche.
+- Si vous utilisez la cmdlet **New-ComplianceSearch** pour créer une recherche de contenu et spécifiez une boîte aux lettres déconnectée comme emplacement de contenu Exchange où effectuer la recherche, la recherche de contenu ne renverra aucun résultat de la boîte aux lettres déconnectée.
 
-- Si la licence est supprimée d’une boîte aux lettres qui a été suspendue (par l' [une des fonctionnalités de blocage dans Office 365](identify-a-hold-on-an-exchange-online-mailbox.md), la boîte aux lettres sera conservée indéfiniment et pourra rester recherchée au-delà de la période de grâce de 30 jours.
+Si vous devez conserver les données d’une boîte aux lettres déconnectée pour y effectuer des recherches, vous devez placer la boîte aux lettres en conservation avant de supprimer la licence. Cela conserve les données et permet de continuer à effectuer des recherches dans la boîte aux lettres déconnectée jusqu’à ce que la conservation soit supprimée. Pour plus d’informations sur les conservations, voir [Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md).
 
 ### <a name="previewing-search-results"></a>Affichage des résultats de recherche
 
