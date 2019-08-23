@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment utiliser les fonctionnalités d’analyse et de réponse aux menaces pour rechercher et examiner des courriers électroniques malveillants.
-ms.openlocfilehash: 2049b3b8e0d7b9173639af3c48f75a072744fb7f
-ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
+ms.openlocfilehash: 25eb1f4a13ad698d7b6817ea7917ccabea7210ae
+ms.sourcegitcommit: f473bf7f215ba4eb2f49e0dd23a9d2e39fa512c9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36444867"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36566222"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>Rechercher et identifier les courriers électroniques malveillants remis dans Office 365
 
@@ -88,6 +88,9 @@ Cette opération ouvre le lanceur, dans lequel les liens de l’aperçu de l’e
 > N’oubliez pas que «Preview» est un rôle et non un RoleGroup et que ce rôle doit être ajouté à un RoleGroup par la suite.
 
 ![Menu volant de l’Explorateur de menaces avec les liens télécharger et aperçu sur la page.](media/ThreatExplorerDownloadandPreview.PNG)
+
+> [!IMPORTANT]
+> Cette fonctionnalité ne s’affiche pas pour les courriers électroniques qui n’ont jamais été trouvés dans la boîte aux lettres d’un utilisateur, ce qui peut se produire si un e-mail a été abandonné ou si sa remise a échoué. Pour les cas où des courriers électroniques ont été supprimés des boîtes aux lettres des utilisateurs, les administrateurs verront une erreur indiquant «courrier introuvable».
 
 ### <a name="check-the-delivery-action-and-location"></a>Vérifier l’action de remise et l’emplacement
 
