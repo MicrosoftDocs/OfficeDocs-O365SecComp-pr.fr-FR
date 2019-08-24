@@ -14,13 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Apprenez à créer, modifier, supprimer et tester des types d’informations sensibles personnalisés pour la protection contre la perte de données dans l’interface utilisateur graphique du Centre de sécurité et conformité.
-ms.openlocfilehash: e7b2d07c64d97eafee5b269bbc0e395855c2ab44
-ms.sourcegitcommit: 0a0d9c1325b4b0581018c31037dcc707d3d679b4
+ms.openlocfilehash: c291d7265df460113769b997aae49b5295d8727f
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "36279156"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478213"
 ---
+<!-- rename md file to match the display name -->
 # <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>Créer un type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité
 
 ## <a name="summary"></a>Résumé
@@ -37,9 +38,9 @@ Vous pouvez également créer des types d’informations sensibles personnalisé
 
 - Les types d’informations sensibles personnalisés exigent des connaissances relatives aux expressions régulières (RegEx). Pour plus d’informations sur le moteur Boost.RegEx (anciennement appelé RegEx++) utilisé pour le traitement du texte, consultez l’article [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
 
-  Le Support technique et Service clientèle Microsoft ne peut pas aider à fournir des définitions de recherche de contenu personnalisées (création de classifications personnalisées ou de modèles d’expressions régulières). Les ingénieurs du support technique peuvent fournir un support limité pour la fonctionnalité (en fournissant, par exemple, des exemples de modèles d’expressions régulières à des fins de test, ou en aidant à résoudre des problèmes avec un modèle d’expression régulière existant ne se déclenchant pas comme prévu), mais ne peuvent pas garantir que le développement de correspondance de contenu personnalisé satisfera vos exigences ou obligations.
+  La division Support technique et Service clientèle Microsoft ne peut pas vous aider à créer des classifications personnalisées ou des modèles d’expressions régulières. Les ingénieurs du support technique peuvent offrir un support limité pour la fonctionnalité, comme vous fournir des exemples de modèles d’expressions régulières à des fins de test, ou vous aider à résoudre un problème avec un modèle d’expression régulière existant qui n’opère pas de déclenchement comme prévu. En revanche, ils ne peuvent pas garantir que le développement correspondant à du contenu personnalisé répondra à vos exigences ou obligations.
 
-- DLP utilise le robot de recherche pour identifier et classer les informations sensibles dans les sites SharePoint Online et OneDrive Entreprise. Pour identifier votre nouveau type d’informations sensibles personnalisé dans le contenu existant, le contenu doit être de nouveau analysé. La nouvelle analyse du contenu est planifiée mais vous pouvez réanalyser manuellement le contenu pour une collection de sites, une liste ou une bibliothèque. Pour plus d’informations, consultez la rubrique relative à la façon de [demander manuellement l’analyse et la réindexation d’un site, d’une bibliothèque ou d’une liste](https://docs.microsoft.com/sharepoint/crawl-site-content).
+- La protection contre la perte de données DLP utilise le robot de recherche pour identifier et classer des informations sensibles dans des sites SharePoint Online et OneDrive Entreprise. Pour identifier votre nouveau type d’informations sensibles personnalisé dans du contenu existant, celui-ci doit être ré-analysé. Le contenu est analysé sur la base d’un planning, mais vous pouvez le réanalyser manuellement pour une collection de sites, une liste ou une bibliothèque. Pour plus d’informations, voir [Demander manuellement l’analyse et la réindexation d’un site, d’une bibliothèque ou d’une liste](https://docs.microsoft.com/sharepoint/crawl-site-content).
 
 ## <a name="create-custom-sensitive-information-types-in-the-security--compliance-center"></a>Créer un type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité
 
@@ -118,7 +119,7 @@ Pour vérifier que vous avez correctement créé un nouveau type d’information
 ## <a name="modify-custom-sensitive-information-types-in-the-security--compliance-center"></a>Modifier des types d’informations sensibles personnalisés dans le Centre de conformité et sécurité
 
 **Remarques** :
-
+<!-- check to see if this note contradicts the guidance in "customize a built in sensitive information type https://docs.microsoft.com/en-us/office365/securitycompliance/customize-a-built-in-sensitive-information-type it sure seems like it does-->
 - Vous pouvez modifier uniquement les types d’informations sensibles personnalisés ; vous ne pouvez pas modifier les types d’informations sensibles intégrés. Cependant, vous pouvez utiliser PowerShell pour exporter des types d’informations sensibles personnalisés intégrés, les personnaliser et les importer comme types d’informations sensibles personnalisés. Pour plus d’informations, consultez la rubrique [Personnaliser un type d’informations sensibles intégré](customize-a-built-in-sensitive-information-type.md).
 
 - Vous pouvez uniquement modifier les types d’informations sensibles personnalisés que vous avez créés dans l’interface utilisateur. Si vous avez utilisé la [procédure PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md) pour importer un package de règles pour les types d’informations sensibles personnalisés, vous recevrez une erreur.

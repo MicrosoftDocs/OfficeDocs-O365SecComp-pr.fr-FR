@@ -15,15 +15,15 @@ ms.collection:
 search.appverid:
 - MET150
 description: Les stratégies de protection contre la perte de données (DLP) disponibles dans le Centre de sécurité &amp; conformité vous permettent d’identifier, de surveiller et de protéger automatiquement des informations sensibles dans Office 365.
-ms.openlocfilehash: 9209adfa913b753ccbb665959cd165d3f2362d0a
-ms.sourcegitcommit: 19939bc577937ff5e423500e9bedc0c29f729e20
+ms.openlocfilehash: 3b108e292e7c7942e471d345b11124beac52f369
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36393914"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478243"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Vue d’ensemble de la protection contre la perte de données
-
+<!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 > [!NOTE]
 > Des fonctionnalités de protection contre la perte de données ont récemment été ajoutées aux messages de discussion et de canal Microsoft Teams pour les utilisateurs titulaires d’une licence de Conformité avancée Office 365, disponible sous la forme d’une option autonome et incluse dans Office 365 E5 et Microsoft 365 E5 Conformité. Pour en savoir plus sur les conditions d’octroi de licences, consultez [Conseils sur la gestion des licences des services de niveau client de Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
@@ -314,6 +314,7 @@ Pour ces raisons, les conseils pour la création de règles avec des précisions
 ## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>Utilisation d’une étiquette comme condition dans une stratégie DLP
 
 Vous pouvez créer une étiquette, puis :
+<!-- what kind of label? -->
   
 - la **publier** afin que les utilisateurs finaux y aient accès et puissent manuellement l’appliquer au contenu ; 
     
@@ -367,7 +368,7 @@ Soyez rassuré, en réalité, les paramètres simples et avancés fonctionnent d
   
 ### <a name="simple-settings"></a>Paramètres simples
 
-Le scénario DLP de loin le plus courant consiste à créer une stratégie pour empêcher le partage de contenu comportant des informations sensibles avec des personnes extérieures à votre organisation, et à prendre des mesures correctives automatiques telles que la restriction de l’accès au contenu, l’envoi de notifications à l’utilisateur final ou à l’administrateur et l’audit de l’événement pour examen ultérieur. Les stratégies DLP permettent d’empêcher la divulgation accidentelle d’informations sensibles.
+Le scénario de protection contre la perte de données (DLP) de loin le plus courant consiste à créer une stratégie pour empêcher le partage de contenu comportant des informations sensibles avec des personnes extérieures à votre organisation, et à exécuter des actions de correction automatiques telles que la restriction de l’accès au contenu, l’envoi de notifications aux utilisateurs finaux ou à l’administrateur, et l’audit de l’événement en vue d’un examen ultérieur. Les stratégies de protection contre la perte de données (DLP) permettent d’empêcher la divulgation accidentelle d’informations sensibles.
   
 Pour atteindre cet objectif plus facilement, vous pouvez choisir d’utiliser les **paramètres simples** lorsque vous créez une stratégie DLP. Ces paramètres proposent toutes les options nécessaires pour implémenter les stratégies DLP les plus courantes, sans avoir à ouvrir l’éditeur de règles.
   
@@ -450,22 +451,24 @@ Une fois qu’une stratégie DLP est créée dans le centre de conformité et de
 - Canaux et messages de conversations Microsoft Teams
     
 Une fois la stratégie synchronisée avec les emplacements adéquats, elle commence à évaluer le contenu et à mettre en place des actions.
+<!-- what is the time delay for first deployment of a policy and what is the sync schedule? -->
   
 ### <a name="policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites"></a>Évaluation des stratégies dans les sites OneDrive Entreprise et SharePoint Online
 
 Dans l’ensemble de vos sites SharePoint Online et OneDrive Entreprise, les documents changent constamment : ils sont continuellement créés, modifiés, partagés, etc. Cela signifie que les documents peuvent à tout moment soit être en conflit, soit être conformes à la stratégie DLP. Par exemple, une personne peut télécharger un document ne contenant aucune information sensible sur le site de son équipe mais une autre personne peut ensuite modifier le même document et y ajouter des informations sensibles.
   
 Pour cette raison, les stratégies DLP vérifient les correspondances de stratégie fréquemment dans les documents en arrière-plan. Vous pouvez considérer ceci comme une évaluation asynchrone des stratégies.
+<!-- what is the frequency? looks like it is tied to the search crawl schedule -->
   
 #### <a name="how-it-works"></a>Mode de fonctionnement
  
 Au fur et à mesure de l’ajout ou de la modification de documents dans ses sites, le moteur de recherche analyse le contenu de sorte que vous puissiez le rechercher ultérieurement. Pendant ce temps, le contenu est également analysé pour vérifier s’il présente des informations sensibles et s’il est partagé. Les informations sensibles trouvées sont stockées en toute sécurité dans l’index de recherche, afin que seule l’équipe de conformité puisse y accéder, et pas les utilisateurs standard. Chaque stratégie DLP que vous avez activée s’exécute en arrière-plan (de façon asynchrone), en vérifiant fréquemment le contenu qui correspond à une stratégie et en appliquant des actions pour le protéger de toute divulgation accidentelle.
   
-![Diagramme montrant comment la stratégie DLP évalue le contenu de façon asynchrone](media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
+![Diagramme montrant comment la stratégie de protection contre la perte de données (DLP) évalue le contenu de façon asynchrone](media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
   
-Enfin, les documents peuvent entrer en conflit avec une stratégie DLP, mais ils peuvent également y devenir conformes. Par exemple, si une personne ajoute des numéros de carte de crédit à un document, une stratégie DLP peut alors bloquer l’accès au document automatiquement. Toutefois, si cette personne supprime ensuite les informations sensibles, l’action (dans ce cas, le blocage) est annulée automatiquement à la prochaine évaluation du document par rapport à la stratégie.
+<!-- conflict with a DLP policy is bad wording --> Enfin, les documents peuvent entrer en conflit avec une stratégie DLP, mais ils peuvent également y devenir conformes. Par exemple, si une personne ajoute des numéros de carte de crédit à un document, une stratégie DLP peut alors bloquer l’accès au document automatiquement. Toutefois, si cette personne supprime ensuite les informations sensibles, l’action (dans ce cas, le blocage) est annulée automatiquement à la prochaine évaluation du document par rapport à la stratégie.
   
-La DLP évalue le contenu pouvant être indexé. Pour plus d’informations sur les types de fichiers analysés par défaut, consultez la rubrique [Extensions de nom de fichier et types de fichier analysés par défaut dans SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
+La protection contre la perte de données évalue le contenu pouvant être indexé. Pour plus d’informations sur les types de fichiers analysés par défaut, consultez la rubrique [Extensions de nom de fichier et types de fichier analysés par défaut dans SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
   
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Évaluation des stratégies dans Exchange Online, Outlook et Outlook sur le web
 
@@ -475,12 +478,14 @@ Lors de la rédaction d’un message dans Outlook, l’utilisateur peut voir les
   
 ### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Évaluation des stratégies dans les programmes de bureau Office
 
+<!-- same capability to identify sensitive information line conflates sensitive information types and such -->
 Excel, PowerPoint et Word incluent la même capacité à identifier les informations sensibles et à appliquer les stratégies DLP que SharePoint Online et OneDrive Entreprise. Ces programmes Office synchronisent leurs stratégies DLP directement à partir du magasin central de stratégies, puis évaluent en permanence le contenu par rapport aux stratégies DLP lorsque les utilisateurs travaillent avec des documents ouverts à partir d’un site inclus dans une stratégie DLP.
   
 L’évaluation des stratégies DLP dans Office est conçue pour ne pas avoir d’incidence sur les performances des programmes ou la productivité des personnes qui travaillent sur le contenu. Si elles travaillent sur un document volumineux ou que l’ordinateur de l’utilisateur est occupé, l’affichage d’un conseil de stratégie peut prendre quelques secondes.
 
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Évaluation des stratégies dans Microsoft Teams
- 
+ <!--what do you mean that it's synched to user accounts?  I thought DLP policies were applied to locations not users like sensitivity labels are  -->
+
 Lorsque vous créez une stratégie DLP qui inclut Microsoft Teams comme emplacement, celle-ci est synchronisée à partir du centre de conformité et de sécurité Office 365 avec les comptes utilisateurs et les canaux et messages de conversation Microsoft Teams. Selon la configuration des stratégies DLP, lorsque quelqu’un tente de partager des informations sensibles dans une conversation ou un message de canal Microsoft Teams, le message peut être bloqué ou révoqué. Les documents qui contiennent des informations sensibles et qui sont partagés avec des invités (utilisateurs externes) ne s’ouvrent pas pour ces utilisateurs. Consultez l’article sur la [protection contre la perte de données et Microsoft Teams](dlp-microsoft-teams.md) pour obtenir plus d’informations à ce sujet.
  
 ## <a name="permissions"></a>Autorisations

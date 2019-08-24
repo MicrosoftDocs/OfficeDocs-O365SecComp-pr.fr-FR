@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
-ms.openlocfilehash: a937d5ccc947ee9322c5796cf49e9a8ff3eead16
-ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
+ms.openlocfilehash: 3c2b7cbabc77328f7d907927008e93606d40eded
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36407906"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478193"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -337,7 +337,7 @@ Pour vérifier que vos données sensibles ont été téléchargées, exécutez l
 
 `EdmUploadAgent.exe /GetDataStore`
 
-La liste des magasins de données apparaît, ainsi que la date de la dernière mise à jour, comme suit :
+La liste des magasins de données apparaît, ainsi que la date de la dernière mise à jour.
 
 Poursuivez la configuration de votre processus et planifiez l’ [actualisation de votre base de données d’informations sensibles](#refreshing-your-sensitive-information-database).
 
