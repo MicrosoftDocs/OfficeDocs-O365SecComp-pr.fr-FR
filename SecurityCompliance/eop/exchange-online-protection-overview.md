@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Exchange Online Protection (EOP) est un service de filtrage du courrier électronique dans le nuage, qui contribue à protéger votre organisation contre le courrier indésirable et les logiciels malveillants, ainsi que contre les violations de politique de messagerie.
-ms.openlocfilehash: 4035a676bf815642735699a106e6430cf8245a05
-ms.sourcegitcommit: f473bf7f215ba4eb2f49e0dd23a9d2e39fa512c9
+ms.openlocfilehash: a59839c212f365e9602c3b329c3c30953dbbf1ac
+ms.sourcegitcommit: 01a9f8073eb911709be893e41414e94ec01906af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36566195"
+ms.lasthandoff: 08/24/2019
+ms.locfileid: "36622023"
 ---
 # <a name="exchange-online-protection-overview"></a>Vue d'ensemble d'Exchange Online Protection
 
@@ -35,9 +35,9 @@ Ces articles relatifs à Exchange Online protection s’appliquent aux environne
 
 Pour comprendre le fonctionnement d'EOP, il est utile devoir comment le courrier entrant est traité :
 
-![Processus de messagerie dans EOP.](../media/GitHubBugs/emailprocessingineop.png)
+![Diagramme de processus de courrier électronique.](../media/GitHubBugs/emailprocessingineop1.png)
   
-Un message entrant passe initialement par le filtrage des connexions, qui vérifie la réputation de l’expéditeur et inspecte le message pour les programmes malveillants. La majorité du courrier indésirable est arrêtée à ce stade et supprimée par EOP. Les messages se poursuivent via le filtrage des stratégies, dans lequel les messages sont évalués par rapport aux règles de flux de messagerie personnalisées (également appelées règles de transport) que vous créez ou appliquez à partir d’un modèle. Par exemple, vous pouvez avoir une règle qui envoie une notification à un responsable lorsque le courrier électronique est envoyé par un expéditeur spécifique. (Les vérifications de la protection contre la perte de données se produisent également à ce stade, si vous disposez de cette fonctionnalité; pour plus d’informations sur la disponibilité des fonctionnalités, consultez la rubrique [Description du service de protection Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=320619).) Ensuite, les messages passent par le filtrage du contenu, où le contenu est vérifié pour la terminologie ou les propriétés communes au courrier indésirable. Un message déterminé comme étant du courrier indésirable par le filtre de contenu peut être envoyé dans le dossier de courrier indésirable d’un utilisateur ou en quarantaine, entre autres options, en fonction de vos paramètres. Une fois qu’un message a réussi à transmettre tous ces calques de protection, il est remis au destinataire.
+Un message entrant passe initialement par le filtrage des connexions, qui vérifie la réputation de l’expéditeur et inspecte le message pour les programmes malveillants. La majorité du courrier indésirable est arrêtée à ce stade et supprimée par EOP. Les messages se poursuivent via le filtrage des stratégies, dans lequel les messages sont évalués par rapport aux règles de flux de messagerie personnalisées (également appelées règles de transport) que vous créez ou appliquez à partir d’un modèle. Par exemple, vous pouvez avoir une règle qui envoie une notification à un responsable lorsque le courrier électronique est envoyé par un expéditeur spécifique. (Les vérifications de la protection contre la perte de données se produisent également à ce stade, si vous disposez de cette fonctionnalité; pour plus d’informations sur la disponibilité des fonctionnalités, consultez la rubrique [Description du service de protection Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=320619).) Ensuite, les messages passent par le filtrage du contenu, où le contenu est vérifié pour la terminologie ou les propriétés communes au courrier indésirable. Un message déterminé comme étant du courrier indésirable par le filtre de contenu peut être envoyé dans le dossier de courrier indésirable d’un utilisateur ou en quarantaine, entre autres options (y compris la boîte de réception ou le dossier personnalisé), en fonction de vos paramètres. Une fois qu’un message a réussi à transmettre tous ces calques de protection, il est remis au destinataire.
   
 ### <a name="eop-datacenters"></a>Centres de données EOP
 

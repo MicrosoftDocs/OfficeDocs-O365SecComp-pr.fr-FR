@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: La définition des utilisateurs de messagerie constitue une partie importante de la gestion du service Exchange Online Protection (EOP).
-ms.openlocfilehash: 6d982b635513050d931397bbc517ae3d76ee3752
-ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
+ms.openlocfilehash: 69ed6460966a399ac5b1e3cf71bd985917bec82c
+ms.sourcegitcommit: f57d411e06c955d648dfa1a2a473aa45416e1377
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054726"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "36620488"
 ---
 # <a name="manage-mail-users-in-eop"></a>Gestion des utilisateurs de messagerie dans EOP
 
@@ -53,20 +53,20 @@ Cette section fournit des informations sur la gestion des utilisateurs de messag
   
 Obtenez les autorisations nécessaires et préparez la synchronisation d'annuaires, comme décrit dans la rubrique [Préparer la synchronisation d'annuaires](https://go.microsoft.com/fwlink/p/?LinkId=308908).
   
-### <a name="to-synchronize-user-directories"></a>Pour synchroniser les annuaires d’utilisateurs
+### <a name="to-synchronize-user-directories-with-azure-active-directory-connect-aad-connect"></a>Pour synchroniser les annuaires d’utilisateurs avec Azure Active Directory Connect (AAD Connect)
 
-1. Activez la synchronisation d'annuaires, comme décrit dans la rubrique [Activer la synchronisation d'annuaires](https://go.microsoft.com/fwlink/p/?LinkId=308909).
-    
-2. Configurez votre ordinateur de synchronisation d'annuaires, comme décrit dans la rubrique [Configurer votre ordinateur de synchronisation d'annuaires](http://go.microsoft.com/fwlink/p/?LinkId=308911).
-    
-3. Synchronisez vos annuaires, comme décrit dans la rubrique [Utiliser l'Assistant Configuration pour synchroniser vos annuaires](http://go.microsoft.com/fwlink/?LinkId=308912).
-    
-    > [!IMPORTANT]
-    > Après exécution de l'Assistant Configuration de l'outil de synchronisation Azure Active Directory, le compte **MSOL_AD_SYNC** est créé dans votre forêt Active Directory. Ce compte permet de lire et de synchroniser vos informations Active Directory sur site. Pour que la synchronisation d'annuaires fonctionne correctement, assurez-vous que le port TCP 443 est ouvert sur votre serveur de synchronisation d'annuaires sur site. 
-  
-  4. Gérez la synchronisation d'annuaires, comme décrit dans la rubrique [Gérer la synchronisation d'annuaires](http://go.microsoft.com/fwlink/p/?LinkId=308915).
-    
-  5. Vérifiez qu'EOP effectue la synchronisation correctement. Dans le CAE, accédez à **Destinataires** \> **Contacts** et vérifiez que la liste des utilisateurs a été correctement synchronisée à partir de votre environnement local. 
+Pour synchroniser les utilisateurs avec Azure Active Directory (AAD), vous devez d’abord **activer la synchronisation**d’annuaires, comme décrit dans la rubrique activation de la [synchronisation](https://go.microsoft.com/fwlink/p/?LinkId=308909)d’annuaires.
+
+Ensuite, l’installation et la configuration d’un ordinateur local pour exécuter AAD Connect (si vous n’avez pas encore besoin de vérifier à l’avance). L’article ci-dessous indique comment configurer et synchroniser vos comptes sur site vers Azure AD avec AAD Connect.
+
+[La configuration d’AAD Connect, la méthode rapide.](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-express)
+
+Avant d’effectuer cette opération, assurez-vous que [vous remplissez les conditions préalables] (https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-prerequisiteset [Choisissez votre type d’installation](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-select-installation). Le lien publié ci-dessus est un petit article pour les installations rapides. Vous pouvez également trouver des articles sur les [installations personnalisées](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-custom)ou [l’authentification directe](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta-quick-start) si elles sont nécessaires.
+
+> [!IMPORTANT]
+> Après exécution de l'Assistant Configuration de l'outil de synchronisation Azure Active Directory, le compte **MSOL_AD_SYNC** est créé dans votre forêt Active Directory. Ce compte permet de lire et de synchroniser vos informations Active Directory sur site. Pour que la synchronisation d’annuaires fonctionne correctement, assurez-vous que le protocole TCP 443 sur votre serveur de synchronisation d’annuaires local est ouvert. 
+
+Après avoir configuré votre synchronisation, assurez-vous de vérifier que EOP effectue une synchronisation correcte. Dans le CAE, accédez à **Destinataires** \> **Contacts** et vérifiez que la liste des utilisateurs a été correctement synchronisée à partir de votre environnement local.
     
 ## <a name="use-the-eac-to-manage-mail-users"></a>Utilisation du CAE pour gérer les utilisateurs de messagerie
 
