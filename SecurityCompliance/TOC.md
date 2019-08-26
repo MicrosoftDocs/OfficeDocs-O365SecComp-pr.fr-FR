@@ -52,7 +52,7 @@
 ### [Visionner une présentation étendue de personnalisation DLP](https://go.microsoft.com/fwlink/?linkid=852306)
 ### [Personnaliser un type d’informations sensibles intégré](customize-a-built-in-sensitive-information-type.md)
 ### [Types d’informations sensibles personnalisés](custom-sensitive-info-types.md)
-### [Créer un type d’informations sensibles personnalisé à l’aide d’une correspondance exacte des données (préversion)](create-custom-sensitive-info-type-edm.md).
+### [Créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 ### [Créer un type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité](create-a-custom-sensitive-information-type.md)
 ### [Créer un type d’informations sensibles personnalisé à l’aide de PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 ### [Créer un dictionnaire de mots clés](create-a-keyword-dictionary.md)
@@ -205,9 +205,7 @@
 #### [Configurer une liste d’URL personnalisée « ne pas réécrire »](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
 #### [Configurer une liste d’URL bloquée personnalisée](set-up-a-custom-blocked-urls-list-wtih-atp.md)
 ### Tâches de configuration d’administrateur de rôle
-#### [Activer la protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
-#### [PACM pour SharePoint, OneDrive et Microsoft Teams](atp-for-spo-odb-and-teams.md)
-## Gérer votre sécurité – PACM après configuration
+#### [Activer la protection avancée contre les menaces pour SharePoint, OneDrive et Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)
 ## [Comprendre les dernières campagnes d’attaque grâce aux statistiques de menaces](latest-attack-campaigns.md)
 ## [Repérage dans Microsoft 365](hunting.md)
 ## [Consulter et lire vos rapports de PACM](view-reports-for-atp.md)
@@ -218,17 +216,18 @@
 ## [Rechercher et d’examiner le courrier électronique malveillant qui a été distribué](investigate-malicious-email-that-was-delivered.md)
 ## [Explorateur de menaces (et détections en temps réel)](threat-explorer.md)
 ### [Affichages de l’Explorateur de menaces](threat-explorer-views.md)
+### [Identifier les messages suspects dans Outlook.com et Outlook sur le web](unverified-sender-feature.md)
 ## Intégration pour renforcer la sécurité
 ### [Intégrer Office 365 - Protection avancée contre les menaces avec Microsoft Defender ATP](integrate-office-365-ti-with-wdatp.md)
 ### [Intégration de SIEM avec Office 365 - Protection avancée contre les menaces](siem-integration-with-office-365-ti.md)
 ## Fonctionnement de la PACM
 ### [Fonctionnement des liens fiables la PAM](how-atp-safe-links-works.md)
 ### [Fonctionnement des pièces jointes fiables de la PAM](how-atp-safe-attachments-works.md)
-#### [Remise dynamique et aperçu des détails](dynamic-delivery-and-previewing.md)
-### [Fonctionnement de l’examen des menaces et de la réponse à celles-ci](get-started-with-ti.md)
-#### [À propos de l’examen des menaces et de la réponse à celles-ci](office-365-ti.md)
+### [Remise dynamique et aperçu des détails](dynamic-delivery-and-previewing.md)
+### [ATP pour SharePoint, OneDrive et Microsoft Teams](atp-for-spo-odb-and-teams.md)
+### [Fonctionnement de l’examen des menaces et de la réponse à celles-ci](office-365-ti.md)
 ### [Fonctionnement de l’examen et de la réponse automatisés](automated-investigation-response-office.md)
-### [Identifier les messages suspects dans Outlook.com et Outlook sur le web](unverified-sender-feature.md)
+
 
 # Gestion des incidents de sécurité
 ## [Réponse aux incidents de sécurité Office 365](office365-security-incident-response-overview.md)
