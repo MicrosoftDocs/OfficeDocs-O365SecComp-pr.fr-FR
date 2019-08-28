@@ -1,9 +1,9 @@
 ---
-title: Configuration de la stratégie de filtrage des connexions
+title: Configurer la stratégie de filtrage des connexions, la liste verte, la liste rouge
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 10/24/2018
+ms.date: 8/27/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,18 +14,25 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Pour vous assurer que le courrier électronique envoyé à partir de personnes que vous approuvez n’est pas bloqué, vous pouvez utiliser la stratégie de filtrage des connexions pour créer une liste verte, également appelée liste d’expéditeurs approuvés, des adresses IP que vous approuvez. Vous pouvez également créer une liste des expéditeurs bloqués.
-ms.openlocfilehash: 8589f7d714199414e7c5177ff227859da50e3e06
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: a3d9703bc90c0bc1000c2aa755451ffc2cb7d060
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600090"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643216"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configuration de la stratégie de filtrage des connexions
  
 Nous avons tous des amis et des partenaires professionnels en qui nous avons confiance. Cela peut être frustrant de retrouver leurs messages électroniques dans votre dossier de courrier indésirable, ou même complètement bloqués par un filtre de blocage du courrier indésirable. Si vous voulez vous assurer que les messages envoyés par des personnes de confiance ne sont pas bloqués, vous pouvez utiliser la stratégie de filtrage des connexions pour créer une liste d'adresses IP approuvées (également appelée liste d'expéditeurs autorisés) en lesquelles vous avez confiance. Vous pouvez également créer une liste d'expéditeurs bloqués, qui est une liste d'adresses IP, généralement d'expéditeurs de courrier indésirable connus, desquels vous ne voulez jamais recevoir de messages électroniques.
   
+- Lorsque vous pensez aux *[listes d’autorisation](create-safe-sender-lists-in-office-365.md)*, gardez à l’esprit que les stratégies de filtrage des connexions se posent elles-mêmes avec les *comptes approuvés autorisés* par le filtre. Cette opération est effectuée dans le but de filtrer plus précisément les expéditeurs de courrier non approuvés ou non approuvés, tout en maintenant les éléments dont vous avez besoin. Une liste d’adresses IP autorisées de stratégie de filtrage des connexions concerne le filtrage des rares adresses IP approuvées à partir d’un pool de comptes et d’adresses IP digne de confiance, tout en garantissant un accès plus facile aux expéditeurs approuvés.
+
+- Une stratégie de filtrage des connexions la création d’une liste rouge peut être considérée comme une interception moins importante ou non fiable des comptes dans le filtre.
+
  Pour plus d'informations sur d'autres paramètres de courrier indésirable applicables à l'ensemble de l'organisation, consultez les rubriques relatives aux procédures permettant de [s'assurer qu'un message n'est pas marqué comme courrier indésirable](https://go.microsoft.com/fwlink/p/?LinkId=534224) et de [bloquer le courrier indésirable avec le filtre anti-courrier indésirable d'Office 365 pour éviter les problèmes de faux négatifs](https://go.microsoft.com/fwlink/p/?LinkId=534225). Ces procédures sont utiles si vous disposez d'un contrôle de niveau administrateur et que vous souhaitez éviter les faux positifs ou les faux négatifs.
+
+> [!TIP]
+> Vous souhaiterez peut-être suspendre et savoir comment créer des [listes de blocage](create-block-sender-lists-in-office-365.md) [(ou d’expéditeur autorisé)](create-safe-sender-lists-in-office-365.md) .
   
 La vidéo suivante montre les étapes de configuration de la stratégie de filtrage des connexions :
   

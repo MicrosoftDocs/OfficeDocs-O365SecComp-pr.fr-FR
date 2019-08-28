@@ -1,7 +1,7 @@
 ---
 title: Utiliser le gestionnaire de conformité Microsoft (aperçu)
-ms.author: robmazz
-author: robmazz
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: 6a6cc7cc51b911feddf21cfc107bc5c85bb959ba
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 07aee08c8929443b8b4f4805d22a94b0ad9db27a
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157866"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643306"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Utiliser le gestionnaire de conformité Microsoft (aperçu)
 
@@ -205,7 +205,7 @@ En un clin d’œil, vous pouvez voir le titre, le propriétaire, la catégorie,
     - Voulez- **vous copier les données à partir d’un groupe existant? (facultatif):** fait basculer le contrôle pour activer la copie de groupe, puis:
         - **Sélectionnez un groupe (facultatif):** Si la copie de groupe est activée, sélectionnez le groupe à partir duquel effectuer la copie.
             - **Détails de l’implémentation (facultatif):** Sélectionnez cette option pour copier les détails de l’implémentation dans le nouveau groupe.
-            - **Plan de test & informations supplémentaires (facultatif):** Sélectionnez cette option pour copier le plan de test et les détails des informations supplémentaires dans le nouveau groupe.
+            - **Plan de Test & des informations supplémentaires (facultatif):** Sélectionnez cette option pour copier le plan de test et les détails des informations supplémentaires dans le nouveau groupe.
             - **Documents (facultatif):** Sélectionnez cette option pour copier les documents vers le nouveau groupe
 
 3. Sélectionnez **Enregistrer** pour créer l’évaluation.
@@ -223,7 +223,7 @@ En un clin d’œil, vous pouvez voir le titre, le propriétaire, la catégorie,
 Lorsque vous créez une évaluation, vous avez la possibilité de copier des informations à partir d’un groupe existant. Cela vous permet d’appliquer les informations entrées dans l’évaluation copiée aux mêmes contrôles dans la nouvelle évaluation. Par exemple, si vous avez un groupe pour toutes les évaluations liées à FFIEC dans votre organisation, vous pouvez copier les informations suivantes à partir d’évaluations existantes:
 
 - Détails de l’implémentation
-- Informations supplémentaires sur le plan de test &
+- Plan de test & des informations supplémentaires
 - Documents
 
 #### <a name="copy-information-from-an-existing-assessment-to-a-new-assessment"></a>Copier des informations d’une évaluation existante vers une nouvelle évaluation
@@ -237,7 +237,7 @@ Lorsque vous créez une évaluation, vous avez la possibilité de copier des inf
     - **Sélectionnez un groupe ou ajoutez un nouveau groupe (obligatoire):** Sélectionnez **Ajouter un nouveau groupe** et indiquez un nom de groupe unique.
     - Voulez- **vous copier les données à partir d’un groupe existant? (facultatif):** fait basculer le contrôle sur activé pour activer la copie de groupe, puis:- **Sélectionner un groupe (facultatif):** si la copie de groupe est activée, sélectionnez le groupe à partir duquel copier.
             - **Détails de l’implémentation (facultatif):** Sélectionnez cette option pour copier les détails de l’implémentation dans le nouveau groupe.
-            - **Plan de test & informations supplémentaires (facultatif):** Sélectionnez cette option pour copier le plan de test et les détails des informations supplémentaires dans le nouveau groupe.
+            - **Plan de Test & des informations supplémentaires (facultatif):** Sélectionnez cette option pour copier le plan de test et les détails des informations supplémentaires dans le nouveau groupe.
             - **Documents (facultatif):** Sélectionnez cette option pour copier les documents vers le nouveau groupe.
 
 3. Sélectionnez **Enregistrer** pour créer l’évaluation.

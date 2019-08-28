@@ -1,5 +1,5 @@
 ---
-title: Rechercher et examiner les messages électroniques malveillants qui ont été remis dans Office 365, TIMailData-Inline, incident de sécurité, incident, PowerShell ATP, messages malveillants de messagerie, utilisateurs compromis, hameçonnage par courrier électronique, programmes malveillants de messagerie électronique, lire les en-têtes de messagerie, lire les en-têtes, ouvrir les en-têtes de messages électroniques
+title: Rechercher et identifier les courriers électroniques malveillants remis dans Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment utiliser les fonctionnalités d’analyse et de réponse aux menaces pour rechercher et examiner des courriers électroniques malveillants.
-ms.openlocfilehash: 25eb1f4a13ad698d7b6817ea7917ccabea7210ae
-ms.sourcegitcommit: f473bf7f215ba4eb2f49e0dd23a9d2e39fa512c9
+ms.openlocfilehash: fba73e49192b4880ec2990ec17c81f646b51264b
+ms.sourcegitcommit: 43c609653ac6ade486a2c5c2650cac02aa7d3b4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36566222"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36645330"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>Rechercher et identifier les courriers électroniques malveillants remis dans Office 365
 
