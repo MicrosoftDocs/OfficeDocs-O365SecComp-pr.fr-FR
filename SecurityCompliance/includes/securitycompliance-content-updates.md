@@ -3,46 +3,6 @@
 
 
 
-## <a name="week-of-july-15-2019"></a>Semaine du 15 juillet 2019
-
-
-| Publié le |Titre de la rubrique | Modification |
-|------|------------|--------|
-| 7/16/2019 | [Recherche de boîtes aux lettres en nuage pour les utilisateurs locaux dans Office 365](/Office365/SecurityCompliance/search-cloud-based-mailboxes-for-on-premises-users) | modifié |
-| 7/16/2019 | [Rechercher dans le journal d’audit dans le centre de sécurité & conformité](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | modifié |
-| 7/16/2019 | [Set up Information Rights Management (IRM) in SharePoint admin center](/Office365/SecurityCompliance/set-up-irm-in-sp-admin-center) | modifié |
-| 7/16/2019 | [Utiliser la recherche de contenu dans Office 365 pour les collections ciblées](/Office365/SecurityCompliance/use-content-search-for-targeted-collections) | modifié |
-| 7/17/2019 | [Vue d’ensemble des étiquettes de rétention](/Office365/SecurityCompliance/labels) | modifié |
-| 7/17/2019 | [Résilience de données SharePoint Office 365](/Office365/SecurityCompliance/office-365-sharepoint-data-resiliency) | modifié |
-| 7/17/2019 | [Vue d’ensemble des stratégies de rétention](/Office365/SecurityCompliance/retention-policies) | modifié |
-| 7/17/2019 | Résilience de données SharePoint Office 365 | removed |
-| 7/18/2019 | [Atelier de directeur de la sécurité des informations (CISO), module 3: identité et gestion des accès](/Office365/SecurityCompliance/ciso-workshop-module-3) | modifié |
-| 7/18/2019 | [Atelier de directeur de la sécurité des informations (CISO), module 4a: stratégie de protection contre les menaces](/Office365/SecurityCompliance/ciso-workshop-module-4a) | modifié |
-| 7/18/2019 | [Atelier de directeur de la sécurité des informations (CISO), module 4b: stratégie de protection contre les menaces](/Office365/SecurityCompliance/ciso-workshop-module-4b) | modifié |
-| 7/18/2019 | [Atelier de directeur de la sécurité des informations (CISO), module 5: protection des informations](/Office365/SecurityCompliance/ciso-workshop-module-5) | modifié |
-| 7/18/2019 | [Gestionnaire de conformité Microsoft et RGPD](/Office365/SecurityCompliance/compliance-manager-and-the-gdpr) | modifié |
-| 7/18/2019 | [Présentation du gestionnaire de conformité Microsoft](/Office365/SecurityCompliance/compliance-manager-overview) | modifié |
-| 7/18/2019 | [Méthodologie du score de conformité](/Office365/SecurityCompliance/compliance-score-methodology) | modifié |
-| 7/18/2019 | [Demandes de référentiel sécurisé du client Office 365](/Office365/SecurityCompliance/customer-lockbox-requests) | modifié |
-| 7/18/2019 | [Répondre aux exigences sur la protection des données et aux réglementations pendant l’utilisation des services de cloud computing Microsoft à l’aide du Gestionnaire de conformité](/Office365/SecurityCompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud) | modifié |
-| 7/18/2019 | [Résilience des données dans Office 365](/Office365/SecurityCompliance/office-365-data-resiliency-overview) | modifié |
-| 7/18/2019 | [Office 365 traitant de l’endommagement des données](/Office365/SecurityCompliance/office-365-dealing-with-data-corruption) | modifié |
-| 7/18/2019 | [Office 365 défendant les services Cloud contre les attaques par déni de service](/Office365/SecurityCompliance/office-365-defending-cloud-services-against-dos-attacks) | modifié |
-| 7/18/2019 | [Résilience de données Exchange 365 Office](/Office365/SecurityCompliance/office-365-exchange-data-resiliency) | modifié |
-| 7/18/2019 | [Suppression des données Exchange Online d’Office 365](/Office365/SecurityCompliance/office-365-exchange-online-data-deletion) | modifié |
-| 7/18/2019 | [Ajouter la marque de votre organisation à vos messages chiffrés](/Office365/SecurityCompliance/add-your-organization-brand-to-encrypted-messages) | modifié |
-| 7/18/2019 | [Gérer les suspensions dans Advanced eDiscovery](/Office365/SecurityCompliance/compliance20/managing-holds) | modifié |
-| 7/18/2019 | [Définir des règles de flux de courrier pour le chiffrement du courriers dans Office 365](/Office365/SecurityCompliance/define-mail-flow-rules-to-encrypt-email) | modifié |
-| 7/18/2019 | [Chiffrement dans Office 365](/Office365/SecurityCompliance/encryption) | modifié |
-| 7/18/2019 | [RGPD pour Office Online Server et Office Web Apps Server](/Office365/SecurityCompliance/gdpr-for-office-online-server) | modifié |
-| 7/18/2019 | [Donner aux utilisateurs l’accès au centre de sécurité & de sécurité Office 365](/Office365/SecurityCompliance/grant-access-to-the-security-and-compliance-center) | modifié |
-| 7/18/2019 | [Fonctionnement des liaisons approuvées ATP Office 365](/Office365/SecurityCompliance/how-atp-safe-links-works) | modifié |
-| 7/18/2019 | [Site d’équipe SharePoint Online isolé dans votre environnement de développement/test](/Office365/SecurityCompliance/isolated-sharepoint-online-team-site-dev-test-environment) | modifié |
-| 7/18/2019 | [Set up Information Rights Management (IRM) in SharePoint admin center](/Office365/SecurityCompliance/set-up-irm-in-sp-admin-center) | modifié |
-| 7/18/2019 | [Configurer les nouvelles fonctionnalités de chiffrement de messages Office 365](/Office365/SecurityCompliance/set-up-new-message-encryption-capabilities) | modifié |
-| 7/18/2019 | [Examiner les conversations dans Advanced eDiscovery](/Office365/SecurityCompliance/compliance20/conversation-review-sets) | modifié |
-
-
 ## <a name="week-of-july-22-2019"></a>Semaine du 22 juillet 2019
 
 
@@ -218,3 +178,41 @@
 | 8/16/2019 | [Explorateur de menaces et détections en temps réel, nouveauté de l’Explorateur de menaces, des modifications apportées à l’Explorateur de menaces 365, de la sécurité, de la sécurité du Cloud, de la sécurité dans l’ATP, des nouvelles fonctionnalités ATP](/Office365/SecurityCompliance/threat-explorer) | modifié |
 | 8/16/2019 | [Requêtes par mots clés et conditions de recherche pour la recherche de contenu](/Office365/SecurityCompliance/keyword-queries-and-search-conditions) | modifié |
 | 8/16/2019 | [Audit de partage pour trouver les ressources partagées avec des utilisateurs externes](/Office365/SecurityCompliance/use-sharing-auditing) | modifié |
+
+
+## <a name="week-of-august-19-2019"></a>Semaine du 19 août 2019
+
+
+| Publié le |Titre de la rubrique | Modification |
+|------|------------|--------|
+| 8/19/2019 | [Requêtes par mots clés et conditions de recherche pour la recherche de contenu](/Office365/SecurityCompliance/keyword-queries-and-search-conditions) | modifié |
+| 8/19/2019 | [Collaborer avec un partenaire pour archiver des données tierces dans Office 365](/Office365/SecurityCompliance/work-with-partner-to-archive-third-party-data) | modifié |
+| 8/20/2019 | [Recherche de contenu dans Office 365](/Office365/SecurityCompliance/content-search) | modifié |
+| 8/20/2019 | [Collaborer avec un partenaire pour archiver des données tierces dans Office 365](/Office365/SecurityCompliance/work-with-partner-to-archive-third-party-data) | modifié |
+| 8/20/2019 | Prise en main de l’enquête et de la réponse aux menaces Office 365 | removed |
+| 8/20/2019 | [Examen et réponse contre les menaces Office 365](/Office365/SecurityCompliance/office-365-ti) | modifié |
+| 8/20/2019 | [Configurer le filtrage des autorisations pour la recherche de contenu](/Office365/SecurityCompliance/permissions-filtering-for-content-search) | modifié |
+| 8/20/2019 | [Assurer la sécurité de vos utilisateurs Office 365 avec les fonctionnalités d’enquête et de réponse aux menaces Office 365](/Office365/SecurityCompliance/keep-users-safe-with-office-365-ti) | modifié |
+| 8/20/2019 | [Créer un type d’informations sensibles personnalisé dans la sécurité & Centre de conformité PowerShell](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type-in-scc-powershell) | modifié |
+| 8/20/2019 | [Créer un type d’informations sensibles personnalisé dans le Centre de Conformité et Sécurité](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type) | modifié |
+| 8/20/2019 | [Créer des types d’informations sensibles personnalisés avec une correspondance de données exacte](/Office365/SecurityCompliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification) | modifié |
+| 8/20/2019 | [Personnaliser un type d’informations sensibles intégré](/Office365/SecurityCompliance/customize-a-built-in-sensitive-information-type) | modifié |
+| 8/20/2019 | [Vue d’ensemble de la protection contre la perte de données](/Office365/SecurityCompliance/data-loss-prevention-policies) | modifié |
+| 8/20/2019 | [Protection contre la perte de données et Microsoft teams](/Office365/SecurityCompliance/dlp-microsoft-teams) | modifié |
+| 8/20/2019 | [Éléments recherchés par les types d’informations sensibles](/Office365/SecurityCompliance/what-the-sensitive-information-types-look-for) | modifié |
+| 8/20/2019 | [Sécuriser votre organisation grâce aux fonctionnalités d’enquête et de réponse aux menaces Office 365](/Office365/SecurityCompliance/keep-users-safe-with-office-365-ti) | modifié |
+| 8/21/2019 | [Résilience des données dans Office 365](/Office365/SecurityCompliance/office-365-data-resiliency-overview) | modifié |
+| 8/21/2019 | [Correction d’erreur lors du traitement des données](/Office365/SecurityCompliance/compliance20/error-remediation) | modifié |
+| 8/21/2019 | [Erreur de correction lors du traitement des données pour une enquête](/Office365/SecurityCompliance/datainvestigations/error-remediation) | modifié |
+| 8/21/2019 | [Numéro d’identification nationale de l’UE](/Office365/SecurityCompliance/eu-national-identification-number) | modifié |
+| 8/21/2019 | [Configurer des stratégies de surveillance pour votre organisation](/Office365/SecurityCompliance/configure-supervision-policies) | modifié |
+| 8/21/2019 | [Stratégies de surveillance dans Office 365](/Office365/SecurityCompliance/supervision-policies) | modifié |
+| 8/21/2019 | [Recherche de contenu dans Office 365](/Office365/SecurityCompliance/content-search) | modifié |
+| 8/21/2019 | [Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online](/Office365/SecurityCompliance/identify-a-hold-on-an-exchange-online-mailbox) | modifié |
+| 8/22/2019 | [Rechercher et examiner les messages électroniques malveillants qui ont été remis dans Office 365, TIMailData-Inline, incident de sécurité, incident, PowerShell ATP, messages malveillants de messagerie, utilisateurs compromis, hameçonnage par courrier électronique, programmes malveillants de messagerie électronique, lire les en-têtes de messagerie, lire les en-têtes, ouvrir les en-têtes de messages électroniques](/Office365/SecurityCompliance/investigate-malicious-email-that-was-delivered) | modifié |
+| 8/22/2019 | [Examen et réponse contre les menaces Office 365](/Office365/SecurityCompliance/office-365-ti) | modifié |
+| 8/22/2019 | [Vue d’ensemble d’Exchange Online Protection](/Office365/SecurityCompliance/eop/exchange-online-protection-overview) | modifié |
+| 8/23/2019 | [Valeurs de niveau de réclamation en bloc, expéditeurs de courrier indésirable, niveaux BCL, fonctionnement de BCL, indices BCL, courrier indésirable, en-tête de courrier indésirable, filtrage du courrier en nombre](/Office365/SecurityCompliance/bulk-complaint-level-values) | modifié |
+| 8/23/2019 | Gestion des utilisateurs de messagerie dans EOP | modifié |
+| 8/23/2019 | [Utilisation des notifications de courrier indésirable de l’utilisateur pour le déblocage et le signalement des messages de courrier indésirable mis en quarantaine dans Office 365](/Office365/SecurityCompliance/use-spam-notifications-to-release-and-report-quarantined-messages) | modifié |
+| 8/23/2019 | [Vue d’ensemble d’Exchange Online Protection](/Office365/SecurityCompliance/eop/exchange-online-protection-overview) | modifié |
