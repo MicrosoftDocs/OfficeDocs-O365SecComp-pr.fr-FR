@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Utilisez des mots clés et des conditions pour limiter l’étendue de la recherche lors de la recherche de données lors de l’utilisation de l’enquête sur les données dans Microsoft 365.
-ms.openlocfilehash: 6d6c7e99257d071595365ec9a9557892fe3fe8db
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 913306ff488d9cf2ba715c26eaa49f6f8e1473aa
+ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151056"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36649939"
 ---
 # <a name="build-search-queries"></a>Créer des requêtes de recherche
 
@@ -29,9 +29,9 @@ Lors de la création de requêtes de recherche, vous pouvez utiliser des mots cl
 
 ## <a name="keyword-searches"></a>Recherches par Mots clés
 
-Tapez une requête de mot clé dans la zone **Mots clés** de la requête de recherche. Vous pouvez spécifier des mots clés, des propriétés de message électronique (par exemple, des dates d’envoi et de réception) ou des propriétés de document (telles que des noms de fichiers ou la date de la dernière modification d’un document). Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, comme **and**, **or**, **not**et **near**. Vous pouvez également rechercher des informations sensibles (telles que des numéros de sécurité sociale) dans des documents dans SharePoint et OneDrive (pas dans les messages électroniques) ou Rechercher des documents qui ont été partagés en externe. Si vous laissez la zone **Mots clés** vide, tout le contenu situé dans les emplacements de contenu spécifiés sera inclus dans les résultats de la recherche.
+Tapez une requête de mot clé dans la zone **Mots clés** de la requête de recherche. Vous pouvez spécifier des mots clés, des propriétés de message électronique (par exemple, des dates d’envoi et de réception) ou des propriétés de document (telles que des noms de fichiers ou la date de la dernière modification d’un document). Vous pouvez utiliser des requêtes plus complexes qui utilisent un opérateur booléen, comme **and**, **or**, **not**et **near**. Vous pouvez également rechercher des informations sensibles (telles que des numéros de sécurité sociale) dans des documents dans SharePoint et OneDrive (pas dans les messages électroniques) ou Rechercher des documents qui ont été partagés en externe. Si vous laissez la zone **Mots clés** vide, tout le contenu situé dans les emplacements de contenu spécifiés est inclus dans les résultats de la recherche.
     
-Vous pouvez également cliquer sur la case à cocher **afficher la liste de mots clés** et tapez un mot clé ou une expression de mot clé dans chaque ligne. Dans ce cas, les mots clés de chaque ligne sont connectés par un opérateur logique (représenté par *c:s*) qui est similaire à la fonctionnalité de l’opérateur **or** de la requête de recherche qui est créée. Cela signifie que les éléments qui contiennent un mot clé dans n’importe quelle ligne seront inclus dans les résultats de la recherche.
+Vous pouvez également cliquer sur la case à cocher **afficher la liste de mots clés** et tapez un mot clé ou une expression de mot clé dans chaque ligne. Dans ce cas, les mots clés de chaque ligne sont connectés par un opérateur logique (représenté sous la forme *c:s*) qui est similaire à la fonctionnalité de l’opérateur **or** de la requête de recherche créée. Cela signifie que les éléments qui contiennent un mot clé dans n’importe quelle ligne sont inclus dans les résultats de la recherche.
 
 ![Utiliser la liste de mots clés pour obtenir des statistiques sur chaque mot clé dans la requête](../media/KeywordListSearch.png)
 

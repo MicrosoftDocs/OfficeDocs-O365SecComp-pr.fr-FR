@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le gestionnaire de conformité Microsoft est un outil d’évaluation des risques gratuit basé sur un flux de travail dans le portail d’approbation de service Microsoft. Le gestionnaire de conformité vous permet de suivre, d’affecter et de vérifier les activités de conformité réglementaire liées aux services Cloud de Microsoft.
-ms.openlocfilehash: af0efa2711215946930c091fc7c38cc1b9f575fd
-ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
+ms.openlocfilehash: e41b28972dc2ada5c0591de0e73c04ea3306e039
+ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35786649"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36649959"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Gestionnaire de conformité Microsoft et RGPD
 
@@ -40,7 +40,7 @@ Pour rechercher un compte d’utilisateur :
 
 2. Une fois le nom d’utilisateur correctement entré, sélectionnez **recherche**.
 
-3. Pour les comptes d’utilisateur qui ne sont pas renvoyés, le message «utilisateur introuvable» s’affiche sur la page. Vérifiez les informations de l’adresse de messagerie de l’utilisateur et effectuez les corrections nécessaires. Pour réessayer, sélectionnez **recherche**.
+3. Pour les comptes d’utilisateur qui ne sont pas renvoyés, la page affiche « **utilisateur**introuvable». Vérifiez les informations de l’adresse de messagerie de l’utilisateur et effectuez les corrections nécessaires. Pour réessayer, sélectionnez **recherche**.
 
 4. Pour les comptes d’utilisateur renvoyés, le texte du bouton passe de la **recherche** à **Effacer**. Cela indique que le compte d’utilisateur renvoyé est le contexte d’exploitation pour les fonctions supplémentaires et que ces fonctions s’appliquent à ce compte d’utilisateur.
 

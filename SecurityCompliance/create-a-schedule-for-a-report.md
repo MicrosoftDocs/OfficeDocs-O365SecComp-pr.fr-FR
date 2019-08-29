@@ -3,7 +3,7 @@ title: Créer une planification pour un rapport dans le centre &amp; de sécurit
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/1/2018
+ms.date: 08/28/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment configurer une planification pour un rapport dans le centre de sécurité &amp; conformité.
-ms.openlocfilehash: cd7856a55f6d3442d96941012d5d06bf93c3d9d7
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 41831116d98ef7ea430387f1402f572ab6b35443
+ms.sourcegitcommit: 73f1db241c0686020167d43442e7b07a2199ea3a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077600"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36658083"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Créer une planification pour un rapport dans le centre &amp; de sécurité conformité
 
@@ -33,11 +33,29 @@ Dans le centre &amp; de sécurité conformité, plusieurs [rapports et](reports-
   
 1. Dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez à **rapports** \> de **tableau de bord**.
     
-2. Choisissez un rapport. Pour cet exemple, nous allons choisir le rapport d’état de protection contre les menaces.
+2. Choisissez l’un des rapports suivants: 
+
+    - Correspondances de stratégie DLP
+    - Règle de transport Exchange
+    - Les faux positifs et les remplacements DLP
+    - Types de fichiers ATP Office 365
+    - Disposition des messages ATP Office 365
+    - Programmes malveillants détectés dans le courrier électronique
+    - Principaux programmes malveillants
+    - Principaux expéditeurs et destinataires
+    - Détections d’usurpation d’identité
+    - Détections de courrier indésirable
+    - Courrier électronique envoyé et reçu
+    - Incidents DLP
+    - Rapport de chiffrement
+
+    Pour cet exemple, nous allons choisir le rapport types de fichiers de protection avancée contre les menaces.
     
-3. Dans le coin supérieur gauche de l’État, choisissez **+ créer une planification**.
+3. Dans le coin supérieur gauche de l’État, choisissez **+ créer une planification**. 
     
-    ![Vous pouvez créer une planification pour les rapports dans le &amp; Centre de sécurité conformité](media/2311327c-14f6-4a17-b604-0c9ff2d485d1.png)
+    ![Créer une planification](media/atpfiletypes-createschedule.png)
+
+    (Remarque: tous les rapports ne disposent pas du bouton **+ créer une planification** .)
   
     La boîte de dialogue **créer une planification** s’ouvre. 
     

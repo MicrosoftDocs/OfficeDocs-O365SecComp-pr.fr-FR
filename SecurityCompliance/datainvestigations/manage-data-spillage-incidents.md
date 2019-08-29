@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-audience: Admin
+ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,17 +13,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Cet article décrit l’utilisation de l’outil nouvelles enquêtes de données (aperçu) dans le centre de sécurité & Compliance Center pour gérer un incident de fuite de données.
-ms.openlocfilehash: 7aada296566bb5312ab56680485798323d0ab096
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: Cet article décrit l’utilisation de l’outil nouvelles enquêtes de données (aperçu) dans le centre de sécurité & Compliance pour gérer un incident de déversement de données.
+ms.openlocfilehash: 93199ad1f548e999dce9ad79ab311a57345b8772
+ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150746"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36649923"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Gérer un incident de fuite de données dans Microsoft 365
 
-La fuite de données est un document contenant des informations confidentielles, sensibles ou malveillantes dans un environnement non approuvé. Lors de la détection d’un incident de volume de données, il est important de contenir rapidement l’environnement, d’évaluer la taille et les emplacements du détournement, d’examiner les activités de l’utilisateur et de supprimer les données déplacées du service. À l’aide de l’outil d’analyse des données (aperçu), vous pouvez rechercher des données sensibles, malveillantes ou déplacées dans Office 365, enquêter pour savoir ce qui s’est passé et prendre les mesures appropriées.  
+Les données sont libérées lorsqu’un document contenant des informations confidentielles, sensibles ou malveillantes est publié dans un environnement non approuvé. Lors de la détection d’un incident de volume de données, il est important de contenir rapidement l’environnement, d’évaluer la taille et les emplacements du détournement, d’examiner les activités de l’utilisateur et de supprimer les données déplacées du service. À l’aide de l’outil d’analyse des données (aperçu), vous pouvez rechercher des données sensibles, malveillantes ou déplacées dans Office 365, enquêter pour savoir ce qui s’est passé et prendre les mesures appropriées.  
 
 ## <a name="scope-of-this-article"></a>Portée de cet article
 
@@ -56,11 +56,7 @@ Voici le flux de travail pour l’utilisation des enquêtes de données (préver
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Vous utiliserez l’outil d’analyse des données (aperçu) dans le centre de sécurité & Compliance Center pour créer une enquête, rechercher les données déversées et les examiner et les analyser. Vous utiliserez ensuite le centre de sécurité & Compliance Center PowerShell pour supprimer définitivement les données déduites d’Office 365. 
-
-- Pour créer une enquête, vous devez être membre du groupe de rôles Administrateur de conformité dans le centre de sécurité & Compliance Center.
-
-- Pour supprimer des messages, vous devez être membre d’un groupe de rôles dans le centre de sécurité & Compliance Center auquel est attribué le rôle de recherche et de purge. Par défaut, ce rôle est attribué au groupe de rôles gestion de l’organisation. Pour plus d’informations sur l’ajout d’utilisateurs à un groupe de rôles, voir permissions [in the Security _AMP_ Compliance Center](../permissions-in-the-security-and-compliance-center.md). 
+- Pour créer une enquête sur les données, Rechercher du contenu et supprimer des données déduites, vous devez être membre du groupe de rôles Data investigation dans le centre de sécurité & Compliance Center.
 
 - Pour contrôler les boîtes aux lettres utilisateur et les comptes OneDrive qu’un enquêteur peut rechercher, votre organisation peut définir des limites de conformité. Pour plus d’informations, configurez [les limites de conformité pour les enquêtes de découverte électronique](../set-up-compliance-boundaries.md). 
 
@@ -68,21 +64,21 @@ Voici le flux de travail pour l’utilisation des enquêtes de données (préver
 
 Pour créer une enquête dans l’outil d’analyse des données (aperçu):
 
-1. Accédez à la page [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Accédez à [https://protection.office.com](https://protection.office.com).
     
-2. Connectez-vous à Office 365 à l'aide de votre compte scolaire ou professionnel.
+2. Connectez-vous à Office 365 à l’aide d’un compte membre du groupe de rôles Data investigation.
     
-3. Dans le centre de conformité, cliquez sur **analyses de données**.
+3. Dans le centre de sécurité et de conformité, cliquez sur **analyses de données**.
  
 4. Dans la page **enquêtes de données (aperçu)** , cliquez sur **créer une nouvelle enquête**.
     
-5. Sur la page nouveau menu volant d’analyse des **données** , donnez un nom à l’enquête (obligatoire), puis tapez un numéro d’enquête facultatif et une description. Notez que le nom doit être unique dans votre organisation.
+5. Sur la page nouveau menu volant d’analyse des **données** , donnez un nom à l’enquête (obligatoire), puis tapez un numéro d’enquête facultatif et une description. Le nom doit être unique dans votre organisation.
 
 6. Sous **voulez-vous configurer des paramètres supplémentaires après avoir créé cette enquête?**, effectuez l’une des opérations suivantes:
 
     - Cliquez sur **Oui** pour créer l’enquête, puis affichez la page **paramètres** dans le nouvel incident. Cela vous permet d’ajouter des membres à l’enquête.
     
-    - Cliquez sur **non** pour créer l’enquête et l’afficher dans la liste des incidents dans la page enquêtes sur les **données (aperçu)** . Si vous choisissez cette option, vous serez ajouté en tant que membre unique de l’enquête et les paramètres de recherche et d’analyse par défaut seront utilisés. Vous pouvez ajouter des membres ou modifier des paramètres à tout moment après la création de l’enquête.
+    - Cliquez sur **non** pour créer l’enquête et l’afficher dans la liste des incidents dans la page enquêtes sur les **données (aperçu)** . Si vous choisissez cette option, vous serez ajouté en tant que membre unique de l’enquête et les paramètres de recherche et d’analyse par défaut seront utilisés. Vous pouvez ajouter des membres ou modifier les paramètres à tout moment après la création de l’enquête.
 
 7. Cliquez sur **Enregistrer** pour créer l’enquête.
 
@@ -93,17 +89,15 @@ Pour créer une enquête dans l’outil d’analyse des données (aperçu):
     L’onglet **Accueil** de l’enquête s’affiche. 
 
 > [!TIP]
-> Songez à établir une convention d’affectation de noms pour les enquêtes et fournissez autant d’informations que possible dans le nom et la description afin de pouvoir localiser et faire référence à ultérieurement si nécessaire.
+> Songez à établir une convention d’affectation de noms pour les enquêtes et fournissez autant d’informations que possible dans le nom et la description afin de pouvoir les localiser et y faire référence ultérieurement si nécessaire.
  
 ## <a name="step-2-search-for-the-spilled-data"></a>Étape 2: Rechercher les données déversées 
  
 Si vous identifiez les utilisateurs pour lesquels vous souhaitez rechercher des données déduites, vous pouvez les ajouter en tant que personnes intéressantes pour mapper leurs sources de données à l’enquête et effectuer rapidement des recherches dans leurs comptes de boîte aux lettres et OneDrive. Pour ajouter des personnes intéressantes pour l’enquête, cliquez sur **personnes intéressantes**, puis sur **Ajouter des personnes intéressantes**. Pour plus d’informations, consultez la rubrique [Manage People of Interest](manage-people-of-interest.md).
 
-Dans l’onglet **recherches** , vous pouvez créer des recherches pour trouver les données déversées. Vous allez utiliser la même requête de recherche que celle que vous avez utilisée pour trouver les données déversées afin de supprimer ces mêmes messages à l' [étape 4](#step-4-delete-the-spilled-data). Pour plus d’informations sur la création de recherches, voir [Rechercher des données dans une enquête](search-for-data.md).
+Dans l’onglet **recherches** , vous pouvez créer des recherches pour trouver les données déversées. Pour plus d’informations sur la création de recherches, voir [Rechercher des données dans une enquête](search-for-data.md).
 
-Après avoir exécuté la recherche, vous pouvez prévisualiser des exemples de résultats de recherche et afficher des statistiques de recherche pour évaluer l’efficacité de votre requête de recherche. Une fois que vous avez identifié les éléments que vous souhaitez supprimer d’Office 365, vous pouvez cliquer sur l’onglet **preuve** , puis créer un ensemble de preuves et ajouter des résultats de recherche qui contiennent ces éléments. 
-
-Pour ce faire, cliquez sur la recherche que vous souhaitez examiner. Sur la page de menu volant, cliquez sur **Ajouter des résultats à des preuves** et suivez les instructions. Ensuite, dans la preuve, vous pouvez passer en revue des documents individuels, examiner qui a eu accès aux documents et exporter les documents. Pour supprimer simplement les documents au lieu de les passer en revue, passez à l' [étape 4](#step-4-delete-the-spilled-data). 
+Après avoir exécuté la recherche, vous pouvez prévisualiser des exemples de résultats de recherche et afficher des statistiques de recherche pour évaluer l’efficacité de votre requête de recherche. Après avoir identifié les éléments que vous souhaitez supprimer d’Office 365, vous pouvez ajouter les résultats de la recherche à un jeu de preuves. Pour ce faire, cliquez sur la recherche que vous souhaitez examiner. Sur la page de menu volant, cliquez sur **Ajouter des résultats à des preuves** et suivez les instructions. Ensuite, dans l’ensemble de preuves, vous pouvez passer en revue des documents individuels, examiner qui a eu accès aux documents et exporter les documents. Pour supprimer les documents (ou un sous-ensemble de documents) au lieu de les revoir, passez à l' [étape 4](#step-4-delete-the-spilled-data). 
 
 > [!IMPORTANT]
 > Les mots clés que vous utilisez dans la requête de recherche peuvent contenir les données propagées réelles que vous recherchez. Par exemple, si vous recherchez des documents contenant un numéro de sécurité sociale et que vous l’utilisez comme mot clé dans la requête de recherche, vous devez supprimer la requête ultérieurement afin d’éviter tout débordement. Vous pouvez supprimer la recherche ou supprimer l’intégralité de l’analyse à l' [étape 5](#step-5-close-or-delete-the-investigation). 
@@ -112,31 +106,30 @@ Pour ce faire, cliquez sur la recherche que vous souhaitez examiner. Sur la page
 
 Dans l’enquête, accédez à l’onglet **preuve** et cliquez sur l’ensemble de preuves que vous avez créé à l’étape précédente. Une fois le travail de traitement terminé et les résultats de la recherche ajoutés à la preuve, vous pouvez passer en revue des documents individuels au format natif, au format texte ou au format quasi natif. Vous pouvez créer des requêtes supplémentaires pour affiner la liste des documents et marquer des documents pour indiquer les conclusions de votre enquête. Pour plus d’informations, voir [examiner les données dans les preuves](review-data-in-evidence.md)
 
-Pour regrouper des documents et obtenir de l’aide supplémentaire pour votre révision, cliquez sur **gérer les preuves**. Dans la vignette **analyse** , cliquez sur **analyser**. Cette opération exécute des analyses avancées, telles que la détection des doublons, le Threading de messagerie électronique et l’analyse de thème. Pour plus d’informations, reportez-vous aux rubriques suivantes :
+Pour regrouper des documents et obtenir de l’aide supplémentaire pour votre révision, cliquez sur **gérer les preuves**. Dans la vignette **analyse** , cliquez sur **analyser**. Cela exécute des analyses avancées, telles que la détection des doublons, le Threading de messagerie électronique et l’analyse de thème. Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
 - [Exécuter les données d’analyse pour investiguer plus rapidement](run-analytics-to-investigate-faster.md)
 - [Détecter des quasi-duplicatas](near-duplicates.md)
 - [Threading de messagerie](email-threading.md)
 - [Thèmes](themes.md)
 
-Pour déterminer les utilisateurs impliqués dans le débordement des données, vous pouvez créer une nouvelle requête dans l’ensemble de preuves, puis utiliser les conditions de l’expéditeur/auteur et des destinataires. Cette opération permet de créer une liste de tous les expéditeurs, destinataires et auteurs figurant dans les données collectées qui ont été ajoutées à la preuve. Veillez à examiner la liste pour déterminer s’il existe des utilisateurs externes. Pour plus d’informations sur l’utilisation de conditions pour limiter les résultats de recherche, consultez la rubrique [conditions de recherche](../keyword-queries-and-search-conditions.md#search-conditions).
+Pour déterminer les utilisateurs impliqués dans le débordement des données, vous pouvez créer une requête dans l’ensemble de preuves, puis utiliser les conditions de l’expéditeur/auteur et des destinataires. Cette méthode crée une liste de tous les expéditeurs, destinataires et auteurs figurant dans les données collectées qui ont été ajoutées à la preuve. Veillez à examiner la liste pour déterminer s’il existe des utilisateurs externes. Pour plus d’informations sur l’utilisation de conditions pour limiter les résultats de recherche, consultez la rubrique [conditions de recherche](../keyword-queries-and-search-conditions.md#search-conditions).
 
 ## <a name="step-4-delete-the-spilled-data"></a>Étape 4: supprimer les données propagées
 
-### <a name="deleting-mailbox-items"></a>Suppression d’éléments de boîte aux lettres
+À l’aide de l’outil d’examen des données, vous pouvez supprimer des éléments de leur emplacement d’origine. Par exemple, vous pouvez supprimer des éléments de boîtes aux lettres, de sites SharePoint et de comptes OneDrive au sein de votre organisation. N’oubliez pas que, étant donné que vous avez collecté des éléments en tant que preuves (en ajoutant les résultats de la recherche à l’ensemble de preuves à l’étape 2), vous disposez de copies des éléments dans l’ensemble de preuves pour les examiner ou les conserver.
 
-Après avoir examiné et vérifié que les résultats de la recherche contiennent uniquement les messages électroniques qui doivent être supprimés, vous pouvez les supprimer définitivement en exécutant la commande **New-ComplianceSearchAction-purge-PurgeType permet HardDelete** dans Security & Compliance. Centre PowerShell. Pour obtenir des instructions, consultez la rubrique [Rechercher et supprimer des messages électroniques](../search-for-and-delete-messages-in-your-organization.md). 
+Pour supprimer des éléments de leur emplacement d’origine:
 
-Si la récupération d’élément unique est activée pour les boîtes aux lettres de votre organisation, les éléments définitivement supprimés sont conservés dans le dossier éléments récupérables de l’utilisateur (et accessible par les administrateurs) jusqu’à la fin de la période de rétention des éléments supprimés (la valeur par défaut est 14 jours). En outre, si une boîte aux lettres contenant des données inversées est en conservation légale ou affectée à une stratégie de rétention, les messages purgés sont conservés dans le dossier éléments récupérables jusqu’à ce que la durée de la conservation de l’élément expire. Pour supprimer définitivement les messages immédiatement, vous devez effectuer des tâches d’ajout. Pour obtenir des instructions, consultez [la rubrique supprimer des éléments dans le dossier éléments récupérables des boîtes aux lettres en nuage en conservation](../delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md).  
+1. Dans l’ensemble de preuves, sélectionnez les éléments que vous souhaitez supprimer. Si vous sélectionnez des éléments joints à un message électronique, le message électronique parent est également sélectionné et supprimé. 
+ 
+2. Cliquez sur **action** , puis sur **Supprimer les éléments des emplacements d’origine**.
 
-> [!IMPORTANT]
-> Vérifiez auprès de votre gestion des enregistrements ou de vos services juridiques avant de supprimer une stratégie de conservation ou de rétention. Votre organisation peut avoir une stratégie qui détermine si une boîte aux lettres en attente ou un incident de débordement de données est prioritaire. 
+   ![Cliquez sur action, puis sur supprimer les éléments des emplacements d’origine](../media/DataInvestigationsDeleteItems1.png)
 
-### <a name="deleting-site-items"></a>Suppression d’éléments de site
+3. Sur la page de menu volant, vérifiez le nombre d’éléments et les documents enfants associés qui seront supprimés, puis cliquez sur **supprimer**.
 
-Pour supprimer définitivement un document d’un site SharePoint ou d’un compte OneDrive, vous devez supprimer le document, puis le supprimer de la corbeille du site, puis le supprimer de la corbeille de la collection de sites. Pour plus d’informations, consultez la rubrique [supprimer des documents dans SharePoint et OneDrive](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#deleting-documents-in-sharepoint-online-and-onedrive-for-business).
-
-Vous pouvez également supprimer une collection de sites entière susceptible de contenir des données déplacées. Pour obtenir des instructions, consultez [la rubrique supprimer une collection de sites](https://docs.microsoft.com/sharepoint/delete-site-collection).
+Pour l’instant, lorsque vous supprimez des éléments de leur emplacement d’origine, les éléments sont supprimés de manière récupérable. Cela signifie que les éléments supprimés seront conservés jusqu’à ce que la période de récupération des éléments supprimés de l’élément expire. Cela signifie également que les utilisateurs peuvent récupérer ces éléments. Pour plus d’informations sur ce qui se produit lorsque des éléments sont supprimés de boîtes aux lettres et de sites, consultez [la rubrique supprimer des éléments de leur emplacement d’origine](delete-items-from-original-locations.md).
 
 ## <a name="step-5-close-or-delete-the-investigation"></a>Étape 5: fermer ou supprimer l’enquête
 
@@ -148,4 +141,4 @@ Pour supprimer une enquête:
 
 2. Cliquez sur **Supprimer l’enquête**. 
 
-Si vous n’avez pas besoin de supprimer l’enquête ou si vous souhaitez enregistrer les informations que vous avez collectées pendant l’enquête, vous pouvez cliquer sur **Fermer le cas**. Vous pourrez ensuite rouvrir les enquêtes terminées à une date ultérieure.
+Si vous n’avez pas besoin de supprimer l’enquête ou si vous souhaitez enregistrer les informations que vous avez collectées pendant l’enquête, vous pouvez cliquer sur **Fermer le cas**. Ensuite, vous pouvez rouvrir des enquêtes fermées.

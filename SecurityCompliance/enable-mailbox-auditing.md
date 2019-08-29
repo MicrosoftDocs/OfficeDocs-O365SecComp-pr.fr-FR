@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
-description: La journalisation d’audit de boîte aux lettres est activée par défaut dans Microsoft 365 (également appelée audit de boîte aux lettres par défaut ou audit de boîte aux lettres par défaut). En d’autres termes, certaines actions effectuées par les propriétaires de boîtes aux lettres, les délégués et les administrateurs sont automatiquement enregistrées dans un journal d’audit de boîte aux lettres, dans lequel vous pouvez rechercher des activités effectuées sur la boîte aux lettres.
-ms.openlocfilehash: 7b50885379b7843ea1c602f08dc2976d5007d8ca
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+description: La journalisation d’audit de boîte aux lettres est activée par défaut dans Office 365 (également appelée audit de boîte aux lettres par défaut ou audit de boîte aux lettres par défaut). En d’autres termes, certaines actions effectuées par les propriétaires de boîtes aux lettres, les délégués et les administrateurs sont automatiquement enregistrées dans un journal d’audit de boîte aux lettres, dans lequel vous pouvez rechercher des activités effectuées sur la boîte aux lettres.
+ms.openlocfilehash: 049b9fe79ae3389e09fb07017fd2deb810640f35
+ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599920"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36649909"
 ---
 # <a name="manage-mailbox-auditing"></a>Gérer l’audit de boîte aux lettres
 
-À compter du 1er janvier 2019, Microsoft Active la journalisation d’audit des boîtes aux lettres par défaut pour toutes les organisations Microsoft 365. Cela signifie que certaines actions effectuées par les propriétaires de boîtes aux lettres, les délégués et les administrateurs sont automatiquement journalisées et que les enregistrements d’audit de boîte aux lettres correspondants sont disponibles lorsque vous les recherchez dans le journal d’audit de boîte aux lettres. Avant que l’audit des boîtes aux lettres ait été activé par défaut, vous devez l’activer manuellement pour chaque boîte aux lettres d’utilisateur de votre organisation.
+À compter du 1er janvier 2019, Microsoft Active la journalisation d’audit des boîtes aux lettres par défaut pour toutes les organisations Office 365. Cela signifie que certaines actions effectuées par les propriétaires de boîtes aux lettres, les délégués et les administrateurs sont automatiquement journalisées et que les enregistrements d’audit de boîte aux lettres correspondants sont disponibles lorsque vous les recherchez dans le journal d’audit de boîte aux lettres. Avant que l’audit des boîtes aux lettres ait été activé par défaut, vous devez l’activer manuellement pour chaque boîte aux lettres d’utilisateur de votre organisation.
 
 Voici quelques avantages de l’audit des boîtes aux lettres par défaut:
 
@@ -36,8 +36,8 @@ Voici quelques avantages de l’audit des boîtes aux lettres par défaut:
 
 - Vous disposez d’une stratégie d’audit de boîte aux lettres cohérente au sein de votre organisation (car vous auditez les mêmes actions pour toutes les boîtes aux lettres).
 
-> [!TIP]
-> Il est important de garder à l’esprit la publication de l’audit des boîtes aux lettres sur par défaut: vous n’avez rien à faire pour gérer l’audit des boîtes aux lettres. Toutefois, pour en savoir plus, personnaliser l’audit des boîtes aux lettres à partir des paramètres par défaut ou le désactiver, cette rubrique peut vous aider.
+> [!NOTE]
+>• Il est important de garder à l’esprit la publication de l’audit des boîtes aux lettres sur par défaut: vous n’avez rien à faire pour gérer l’audit des boîtes aux lettres. Toutefois, pour en savoir plus, personnaliser l’audit des boîtes aux lettres à partir des paramètres par défaut ou le désactiver, cette rubrique peut vous aider. <br><br>• Même lorsque l’audit de boîte aux lettres activé est activé par défaut, vous pouvez remarquer que des événements d’audit de boîte aux lettres pour certains utilisateurs ne sont pas détectés dans les recherches dans le journal d’audit dans le centre de sécurité & ou via l’API activité de gestion d’Office 365. Pour plus d’informations, reportez-vous à la section [plus d’informations](#more-information) de cette rubrique.
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>Vérifier que l’audit de boîte aux lettres activé est activé par défaut
 
@@ -334,7 +334,23 @@ La valeur **true** indique que l’enregistrement d’audit de boîte aux lettre
 
 ## <a name="more-information"></a>Plus d’informations
 
-- Par défaut, les enregistrements du journal d’audit de boîte aux lettres sont conservés pendant 90 jours avant d’être supprimés. Vous pouvez modifier la limite d’âge pour les enregistrements du journal d’audit à l’aide du paramètre *AuditLogAgeLimit* sur la cmdlet **Set-Mailbox** dans Exchange Online PowerShell. Toutefois, l’augmentation de cette valeur ne vous permet pas de rechercher des événements datant de plus de 90 jours dans le journal d’audit de Microsoft 365.
+- Seuls les utilisateurs disposant de licences E5 ou de boîtes aux lettres pour lesquelles l’enregistrement d’audit de boîte aux lettres a été activé manuellement par un administrateur renvoient des événements de journal d’audit de boîte aux lettres dans le centre de sécurité & Compliance Center ou via l’API d’activité de gestion d’Office 365.
+
+  Pour récupérer les entrées du journal d’audit de boîte aux lettres pour les utilisateurs sans licence E5, vous pouvez:
+
+  - Utilisez les applets de commande suivantes dans Exchange Online PowerShell:
+
+    - [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) pour rechercher des utilisateurs spécifiques dans le journal d’audit de boîte aux lettres.
+
+    - [New-MailboxAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/new-mailboxauditlogsearch) pour rechercher des utilisateurs spécifiques dans le journal d’audit de boîte aux lettres et pour que les résultats soient envoyés par courrier électronique à des destinataires spécifiés.
+
+  - Utilisez le centre d’administration Exchange dans Exchange Online pour effectuer les opérations suivantes:
+
+    - [Exporter les journaux d’audit de boîte aux lettres](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
+
+    - [Exécuter un rapport d'accès aux boîtes aux lettres par des non-propriétaires](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
+
+- Par défaut, les enregistrements du journal d’audit de boîte aux lettres sont conservés pendant 90 jours avant d’être supprimés. Vous pouvez modifier la limite d’âge pour les enregistrements du journal d’audit à l’aide du paramètre *AuditLogAgeLimit* sur la cmdlet **Set-Mailbox** dans Exchange Online PowerShell. Toutefois, l’augmentation de cette valeur ne vous permet pas de rechercher des événements datant de plus de 90 jours dans le journal d’audit Office 365.
 
   Si vous augmentez la limite d’âge, vous devez utiliser la cmdlet [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) dans Exchange Online PowerShell pour rechercher dans le journal d’audit de la boîte aux lettres de l’utilisateur des enregistrements datant de plus de 90 jours.
 
@@ -361,6 +377,6 @@ La valeur **true** indique que l’enregistrement d’audit de boîte aux lettre
       Get-MailboxFolderStatistics -Identity <MailboxIdentity> -FolderScope RecoverableItems | Where-Object {$_.Name -eq 'Audits'} | Format-List FolderPath,FolderSize,ItemsInFolder
       ```
 
-    - Vous ne pouvez pas accéder directement à un enregistrement de journal d’audit dans le dossier éléments récupérables; au lieu de cela, vous utilisez la cmdlet **Search-MailboxAuditLog** ou recherchez dans le journal d’audit de Microsoft 365 des enregistrements d’audit de boîte aux lettres.
+    - Vous ne pouvez pas accéder directement à un enregistrement de journal d’audit dans le dossier éléments récupérables; à la place, vous utilisez la cmdlet **Search-MailboxAuditLog** ou recherchez dans le journal d’audit Office 365 pour rechercher et afficher des enregistrements d’audit de boîte aux lettres.
 
 - Si une boîte aux lettres est placée en conservation ou affectée à une stratégie de rétention dans le centre de conformité, les enregistrements du journal d’audit sont toujours conservés pendant la durée définie par la propriété *AuditLogAgeLimit* de la boîte aux lettres (90 jours par défaut). Pour conserver les enregistrements du journal d’audit plus longtemps pour les boîtes aux lettres en attente, vous devez augmenter la valeur *AuditLogAgeLimit* de la boîte aux lettres.
