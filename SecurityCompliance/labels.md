@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Dans Office 365, les étiquettes de rétention vous aident à entreprendre les bonnes actions sur le contenu approprié. Grâce aux étiquettes de rétention, vous pouvez classer les données au sein de votre organisation à des fins de gouvernance, et appliquer des règles de rétention basées sur cette classification. Vous pouvez également utiliser des étiquettes de rétention pour implémenter la gestion des enregistrements dans Office 365.
-ms.openlocfilehash: b3637470e0de1413589fc8e1ba35dc48e6823c4b
-ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
+ms.openlocfilehash: e4028fa9526afbb33cb184adb7b3cd301feae837
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "35772161"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676654"
 ---
 # <a name="overview-of-retention-labels"></a>Vue d’ensemble des étiquettes de rétention
 
@@ -163,7 +163,7 @@ En outre, une étiquette de rétention dispose de deux options de rétention qui
   
 - Déclencher une révision de destruction à la fin de la période de rétention, afin que les documents SharePoint et OneDrive soient vérifiés avant d’être supprimés. Pour obtenir plus d’informations, consultez l’article [Vue d’ensemble des révisions de destruction](disposition-reviews.md).
     
-- Démarrer la période de rétention à compter de la date d’étiquetage du contenu, au lieu de l’ancienneté du contenu ou de la date de sa dernière modification.
+- Démarrer la période de rétention à compter de la date d’étiquetage du contenu, au lieu de l’ancienneté du contenu ou de la date de sa dernière modification. Notez que cette option s'applique uniquement au contenu des sites SharePoint et des comptes OneDrive. Pour la messagerie Exchange, la période de rétention est toujours basée sur la date à laquelle le message a été envoyé ou reçu, quelle que soit l’option choisie.
     
 ![Paramètres de rétention avec les options spécifiques des étiquettes](media/c49118c9-6279-4661-94db-deffa76e27ac.png)
   

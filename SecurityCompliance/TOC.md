@@ -235,50 +235,6 @@
 ## [Détecter et résoudre les attaques par injections sur les règles d’Outlook et les formulaires personnalisés dans Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 ## [Réponse à un compte de messagerie compromis dans Office 365](responding-to-a-compromised-email-account.md)
 
-# Gérer la gouvernance des données
-## [Importer des données](importing-pst-files-to-office-365.md)
-### [Utiliser le chargement réseau pour importer des fichiers PST](use-network-upload-to-import-pst-files.md)
-### [Utiliser l’envoi de lecteurs pour importer des fichiers PST](use-drive-shipping-to-import-pst-files-to-office-365.md)
-### [Utiliser l’outil de collecte PST pour rechercher, copier et supprimer les fichiers PST](find-copy-and-delete-pst-files-in-your-organization.md)
-### [Filtrer les données lors de l’importation de fichiers PST](filter-data-when-importing-pst-files.md)
-### [Utiliser le chargement réseau pour importer des fichiers PST chiffrés via RMS](use-network-upload-to-import-rms-encrypted-pst-files.md)
-### [FAQ sur l’importation de fichiers PST](faqimporting-pst-files-to-office-365.md)
-### [Archiver des données tierces dans Office 365](archiving-third-party-data.md)
-#### [Utiliser un exemple de connecteur pour archiver des données Facebook](archive-facebook-data-with-sample-connector.md)
-#### [Utiliser un exemple de connecteur pour archiver des données Twitter](archive-twitter-data-with-sample-connector.md)
-#### [Configurer un connecteur pour archiver les données LinkedIn](archive-linkedin-data.md)
-#### [Configurer un connecteur pour archiver les données Instant Bloomberg](archive-instant-bloomberg-data.md)
-#### [Collaborer avec un partenaire pour archiver des données tierces](work-with-partner-to-archive-third-party-data.md)
-## Stocker des données
-### [Activer des boîtes aux lettres d’archivage](enable-archive-mailboxes.md)
-### [Vue d’ensemble de l’archivage illimité](unlimited-archiving.md)
-### [Activer l’archivage illimité](enable-unlimited-archiving.md)
-### [Configurer une stratégie d’archivage et de suppression de boîtes aux lettres](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
-## Conservation de données
-### [Stratégies de rétention](retention-policies.md)
-### [Gestionnaire de plan de fichiers](file-plan-manager.md)
-### [Étiquettes de rétention](labels.md)
-### [Se conformer à la réglementation SEC Rule 17 a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [Créer et publier des étiquettes de rétention à l’aide de PowerShell](https://docs.microsoft.com/fr-FR/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-### [Rétention basée sur des événements](event-driven-retention.md)
-### [Automatiser la rétention basée sur des événements](automate-event-driven-retention.md)
-## [Éliminer des données](disposition-reviews.md)
-## Superviser les communications
-### [Stratégies de supervision](supervision-policies.md)
-### [Configurer des stratégies de surveillance pour votre organisation](configure-supervision-policies.md)
-## [Gestion des boîtes aux lettres inactives](inactive-mailboxes-in-office-365.md)
-### [Créer et gérer des boîtes aux lettres inactives](create-and-manage-inactive-mailboxes.md)
-### [Modifier la durée de conservation pour une boîte aux lettres inactive](change-the-hold-duration-for-an-inactive-mailbox.md)
-### [Récupérer une boîte aux lettres inactive](recover-an-inactive-mailbox.md)
-### [Restaurer une boîte aux lettres inactive](restore-an-inactive-mailbox.md)
-### [Supprimer une boîte aux lettres inactive](delete-an-inactive-mailbox.md)
-## Surveiller la gouvernance des données
-### [Afficher l’activité des étiquettes pour les documents](view-label-activity-for-documents.md)
-### [Afficher l’utilisation d’étiquette avec les analytiques d’étiquette](label-analytics.md)
-### [Afficher les rapports de gouvernance des données](view-the-data-governance-reports.md)
-## Plus d’informations sur la gouvernance des données
-### [Regarder des vidéos de l’équipe de gouvernance des données Microsoft](https://go.microsoft.com/fwlink/?linkid=867039)
-
 # [Rechercher du contenu](search-for-content.md)
 ## [Utiliser la recherche de contenu](content-search.md)
 ### [Requêtes par mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md)
@@ -441,7 +397,6 @@
 ### [Conserver les destinataires Cci et les destinataires de groupe de distribution étendue](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 
 # [Gestion des investigations de données](datainvestigations/overview-data-investigations.md)
-## [Notes de publication](datainvestigations/data-investigations-release-notes.md)
 ## [Gérer un incident d’écoulement de données](datainvestigations/manage-data-spillage-incidents.md)
 ## [Créer une nouvelle investigation](datainvestigations/create-new-investigation.md)
 ## [Affecter des autorisations pour les investigations de données](datainvestigations/permissions.md)
@@ -456,6 +411,7 @@
 ### [Annoter et préparer des documents pour la publication](datainvestigations/annotate-and-redact-documents.md)
 ### [Charger des données n’appartenant pas à Office 365](datainvestigations/load-non-office365-data.md)
 ### [Correction d’erreur lors du traitement des données](datainvestigations/error-remediation.md)
+### [Supprimer des éléments de leur emplacement d’origine](datainvestigations/delete-items-from-original-locations.md)
 
 ## [Exécuter les données d’analyse pour investiguer plus rapidement](datainvestigations/run-analytics-to-investigate-faster.md)
 ### [Threading de messagerie](datainvestigations/email-threading.md)
@@ -477,6 +433,7 @@
 ### [Fermer ou supprimer une investigation](datainvestigations/close-or-delete-investigation.md)
 
 ## Référence des investigations de données
+### [Notes de publication](datainvestigations/data-investigations-release-notes.md)
 ### [Limites des investigations de données](datainvestigations/limits-datainvestigations.md)
 ### [Types de fichiers pris en charge](datainvestigations/supported-filetypes-datainvestigations.md)
 ### [Champs de métadonnées de document](datainvestigations/document-metadata-fields.md)
