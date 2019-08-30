@@ -10,42 +10,42 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: "Cette rubrique présente les réponses aux questions générales les plus fréquentes concernant le service de filtrage du courrier électronique hébergé dans le nuage Microsoft Exchange Online Protection (EOP). Pour d'autres rubriques du Forum Aux Questions (FAQ), suivez les liens suivants :"
-ms.openlocfilehash: e8f10cfea19cf27fcb6c676c1eff301a87486679
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: e16e1664abd52c1e40aa9c1ac2ea328924708a13
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599760"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676824"
 ---
 # <a name="eop-general-faq"></a>Forum Aux Questions d’ordre général concernant Exchange Online Protection (EOP)
 
 Cette rubrique présente les réponses aux questions générales les plus fréquentes concernant le service de filtrage du courrier électronique hébergé dans le nuage Microsoft Exchange Online Protection (EOP). Pour d'autres rubriques du Forum Aux Questions (FAQ), suivez les liens suivants :
   
 - Questions fréquemment posées sur les messages mis en file d’attente, différés et retournés dans EOP
-    
+
 - [FAQ sur l’administration déléguée](delegated-administration-faq.md)
-    
+
 - [FAQ sur la protection contre le courrier indésirable](../anti-spam-protection-faq.md)
-    
+
 - [Listes des expéditeurs autorisés et des expéditeurs bloqués dans Exchange Online](../safe-sender-and-blocked-sender-lists-faq.md)
-    
+
 - [FAQ sur la mise en quarantaine](../quarantine-faq.md)
-    
+
 - [FAQ sur la protection anti-programme malveillant](../anti-malware-protection-faq-eop.md)
-    
+
 - [Forum Aux Questions sur le suivi des messages](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx)
-    
+
  **Q. Qu'est-ce qu'EOP ?**
   
 R. EOP est un service de filtrage de courrier électronique hébergé dans le nuage, conçu pour protéger les clients contre le courrier indésirable et les logiciels malveillants, et pour implémenter des règles de stratégie personnalisées.
   
  **Q. Comment m'inscrire pour un essai d'EOP ou acheter EOP ?**
   
-R. Pour vous inscrire pour un essai d'EOP ou pour l'acheter sur le web, visitez la page [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?LinkId=279912). Notez que les fonctionnalités du produit lors de l'achat d'une version d'essai sont identiques à celles du produit avec un abonnement payant, mais que des fonctionnalités supplémentaires fournies avec le plan d'abonnement [Licence d'accès client Exchange Enterprise avec services](https://go.microsoft.com/fwlink/p/?LinkId=320619) sont également comprises. 
+R. Pour vous inscrire pour un essai d'EOP ou pour l'acheter sur le web, visitez la page [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection). Notez que les fonctionnalités du produit lors de l'achat d'une version d'essai sont identiques à celles du produit avec un abonnement payant, mais que des fonctionnalités supplémentaires fournies avec le plan d'abonnement [Licence d'accès client Exchange Enterprise avec services](https://products.office.com/exchange/microsoft-exchange-server-licensing-licensing-overview) sont également comprises.
   
  **Q. Que coûte EOP ?**
   
-R. EOP fait l'objet d'une licence par utilisateur. Pour obtenir les derniers tarifs, consultez la page [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?LinkId=279912).
+R. EOP fait l'objet d'une licence par utilisateur. Pour obtenir les derniers tarifs, consultez la page [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection).
   
  **Q. Combien de temps faut-il pour qu'EOP soit opérationnel ?**
   
@@ -53,7 +53,7 @@ R. Le filtrage commence dès que vous modifiez votre enregistrement MX, conform�
   
  **Q. Do I have to use all features of Microsoft Office 365 to use EOP? What if I just want EOP protection and that's all?**
   
-R. Vous pouvez utiliser EOP pour protéger vos boîtes aux lettres locales sans utiliser aucune autre fonctionnalité d'Office 365. C'est ce qu'on appelle un abonnement autonome. Une liste des fonctionnalités d'EOP est disponible dans la rubrique [Description du service de protection Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=320619).
+R. Vous pouvez utiliser EOP pour protéger vos boîtes aux lettres locales sans utiliser aucune autre fonctionnalité d'Office 365. C'est ce qu'on appelle un abonnement autonome. Une liste des fonctionnalités d'EOP est disponible dans la rubrique [Description du service de protection Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
   
  **Q. Pourquoi ai-je besoin d'un client Office 365 lors de l'inscription pour le filtrage des messages électroniques par EOP ?**
   
@@ -63,7 +63,7 @@ R. Office 365 est le nom donné à un ensemble de produits et de services qui so
   
 R. Le centre d’administration Microsoft 365 dispose de certaines de ces informations. Si vous êtes concerné par un événement de niveau de service, vous devriez voir une alerte de communication (généralement accompagnée d’une icône en cloche) après vous être connecté au centre d’administration de Microsoft 365. Nous vous recommandons de lire ces informations et d'effectuer les actions appropriées.
   
-Pour les nouvelles fonctionnalités EOP, la [feuille de route d'Office 365 pour les entreprises](https://office.microsoft.com/en-us/products/office-365-roadmap-FX104343353.aspx) est une excellente ressource pour trouver des informations sur les nouvelles fonctionnalités à venir. Nous publierons également des articles de blog concernant les nouvelles fonctionnalités sur le site des [blogs Office](https://go.microsoft.com/fwlink/p/?LinkId=392724). 
+Pour les nouvelles fonctionnalités EOP, la [feuille de route d'Office 365 pour les entreprises](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) est une excellente ressource pour trouver des informations sur les nouvelles fonctionnalités à venir. Nous publierons également des Articles de blog sur les nouvelles fonctionnalités sur le site Web des [blogs Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/blog/) .
   
  **Q. Le service fonctionne-t-il avec des versions d'Exchange héritées (par exemple, Exchange Server 2010) et les environnements non Exchange ?**
   
@@ -79,14 +79,12 @@ Pour configurer EOP, vous devez être un administrateur global Office 365 ou un 
   
  **Q. Comment savoir si mes données et informations sont en sûreté ?**
   
-R. Pour en savoir plus sur les mesures que nous avons prises pour assurer la sécurité de vos données et informations privées, y compris sur les contrats de niveau de service (SLA), visitez le [Centre de gestion de la protection des données d'Office 365](https://go.microsoft.com/fwlink/p/?LinkId=285405).
+R. Pour en savoir plus sur les mesures que nous avons prises pour assurer la sécurité de vos données et informations privées, y compris sur les contrats de niveau de service (SLA), visitez le [Centre de gestion de la protection des données d'Office 365](https://www.microsoft.com/trust-center).
   
  **Q. Existe-t-il des limites que je devrais connaître, telles que les limites de taille pour les messages ?**
   
-R. Oui. Pour plus d'informations sur les limites dans EOP, voir [Limites d'Exchange Online Protection](https://go.microsoft.com/fwlink/p/?LinkId=402617). 
+R. Oui. Pour plus d'informations sur les limites dans EOP, voir [Limites d'Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits).
   
- **Q. EOP prend-il en charge Windows PowerShell à distance ?**
+ **Q. EOP prend-il en charge PowerShell?**
   
-R. Oui, toutes les fonctionnalités d'EOP sont disponibles via Windows PowerShell à distance. Pour plus d'informations, voir [PowerShell dans Exchange Online Protection](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx).
-  
-
+A. Oui, la fonctionnalité EOP complète est disponible via PowerShell. Pour plus d’informations, consultez la rubrique [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell).

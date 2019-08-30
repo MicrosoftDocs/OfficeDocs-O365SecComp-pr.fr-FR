@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: La journalisation d’audit de boîte aux lettres est activée par défaut dans Office 365 (également appelée audit de boîte aux lettres par défaut ou audit de boîte aux lettres par défaut). En d’autres termes, certaines actions effectuées par les propriétaires de boîtes aux lettres, les délégués et les administrateurs sont automatiquement enregistrées dans un journal d’audit de boîte aux lettres, dans lequel vous pouvez rechercher des activités effectuées sur la boîte aux lettres.
-ms.openlocfilehash: 049b9fe79ae3389e09fb07017fd2deb810640f35
-ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
+ms.openlocfilehash: 50be60e3ca863c6625693c1b4debce1217571002
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "36649909"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676864"
 ---
 # <a name="manage-mailbox-auditing"></a>Gérer l’audit de boîte aux lettres
 
@@ -88,7 +88,7 @@ Les types d’ouverture de session classent l’utilisateur qui a effectué les 
 
     - Découverte électronique inaltérable dans Exchange Online.
 
-  - La boîte aux lettres est accessible à l’aide de l' [Éditeur MAPI Microsoft Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=204086).
+  - La boîte aux lettres est accessible à l’aide de l’Éditeur MAPI Microsoft Exchange Server.
 
 ### <a name="mailbox-actions-for-user-mailboxes-and-shared-mailboxes"></a>Actions de boîte aux lettres pour les boîtes aux lettres utilisateur et les boîtes aux lettres partagées
 

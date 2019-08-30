@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft offre une assistance pour EOP à divers emplacements et via plusieurs méthodes, y compris via des options de support autonome et de support assisté.
-ms.openlocfilehash: b1153149897efaeecec2f5003e7dfb10e28dc5ba
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: a60a45833eafd0151ac3a48ff67087b90bd50e31
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599660"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676760"
 ---
 # <a name="help-and-support-for-eop"></a>Aide et support pour EOP
 
@@ -48,40 +48,38 @@ Pour plus d'informations sur la façon dont le support Premier peut aider votre 
 ### <a name="ask-for-help-on-the-web"></a>Demander une assistance sur le web
 
 1. Connectez-vous au centre d’administration Microsoft 365.
-    
+
 2. Accédez à **Support** \> **Demander une assistance clientèle** \> **Nouvelle demande de service**.
-    
+
 3. Renseignez le formulaire avec les informations concernant votre problème, recherchez des solutions à des problèmes précédents ou joignez des journaux ou des fichiers associés.
-    
+
 ### <a name="ask-for-help-on-the-telephone"></a>Demander une assistance téléphonique
 
 1. Connectez-vous au centre d’administration Microsoft 365.
-    
+
 2. Pour des problèmes d'ordre général concernant le produit, accédez à **Support** \> **Demander une assistance clientèle** \> **Appeler le support technique**.
-    
+
     Pour des questions préalables à l'achat d'EOP ou ayant trait à la facturation et aux abonnements, accédez à **Support** \> **Demander une assistance clientèle** \> **Appeler le support de facturation et d'abonnement**.
-    
+
 3. Utilisez l'agent virtuel pour Microsoft Office 365 afin de rechercher le numéro de téléphone approprié le plus récent.
-    
+
 ## <a name="support-telephone-numbers"></a>Numéros de téléphone du support technique
 
 Microsoft met à disposition des numéros de téléphone locaux ou gratuits pour contacter le support technique dans le monde entier. La plupart de ces Centres d'aide et de support fournissent une assistance dans votre langue pendant les heures d'ouverture ou une assistance en anglais 24h/24, 7j/7. Si votre emplacement ne figure pas dans la liste ci-dessous, utilisez l'agent virtuel pour Microsoft Office 365 afin de trouver le numéro de téléphone du support technique local, comme décrit précédemment.
   
 |**Pays ou région**|**Questions préalables à l'achat et concernant la facturation**|**Questions d'assistance technique**|
 |:-----|:-----|:-----|
-|Brésil  <br/> |Numéro gratuit : 08007621146          Local : 1147001999  <br/> |Identique  <br/> |
-|France  <br/> |Numéro gratuit : 0805 540 594           Local : 01 57 32 42 97  <br/> |Identique  <br/> |
-|Allemagne  <br/> |Numéro gratuit : 0800 589 2332           Local : 069 380 789 508  <br/> |Identique  <br/> |
-|Japon  <br/> |Numéro gratuit : 0120-628860          Local : 343326257  <br/> |Numéro gratuit : 0120-996680          Local : 357679793  <br/> |
-|Corée  <br/> |Numéro gratuit : 080-495-0880          Local : 234831937  <br/> |Identique  <br/> |
-|Espagne  <br/> |Numéro gratuit : 900 814 197          Local : 912 718 160  <br/> |Identique  <br/> |
-|Royaume-Uni  <br/> |Numéro gratuit : 0800 032 6417          Local : 0203 450 6455  <br/> |Identique  <br/> |
-|États-Unis  <br/> |Numéro gratuit : 1-877-913-2707  <br/> |Numéro gratuit : 1-800-865-9408  <br/> |
+|Brésil|Numéro gratuit: 08007621146 <br/> Local: 1147001999|Identique|
+|France|Numéro gratuit: 0805 540 594 <br/> Local: 01 57 32 42 97|Identique|
+|Allemagne|Numéro gratuit: 0800 589 2332 <br/>  Local: 069 380 789 508|Identique|
+|Japon|Numéro gratuit: 0120-628860 <br/> Local: 343326257|Numéro gratuit: 0120-996680 <br/> Local: 357679793|
+|Corée|Numéro gratuit: 080-495-0880 <br/> Local: 234831937|Identique|
+|Espagne|Numéro gratuit: 900 814 197 <br/> Local: 912 718 160|Identique|
+|Royaume-Uni|Numéro gratuit: 0800 032 6417 <br/> Local: 0203 450 6455|Identique|
+|États-Unis|Numéro gratuit : 1-877-913-2707|Numéro gratuit : 1-800-865-9408|
    
 ## <a name="for-more-information-about-eop-documentation"></a>Pour plus d'informations sur la documentation relative à EOP
 
 [Coyright tiers](third-party-copyright-notices.md)
   
 [Accessibilité pour les personnes présentant un handicap](accessibility-for-people-with-disabilities.md)
-  
-

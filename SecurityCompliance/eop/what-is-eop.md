@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
 description: Ce document de présentation vous aidera à comprendre Exchange Online Protection (EOP) et quelques termes importants. Ceci s’applique aux clients Office 365 qui protègent les boîtes aux lettres Exchange Online hébergées dans le Cloud et les clients autonomes EOP qui protègent les boîtes aux lettres locales telles qu’Exchange Server 2016.
-ms.openlocfilehash: b0d3aac6e2c7e70ce298309d2053a7d6bb5920c1
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 87dba47a7a942dcb8eb103cee1a171dca6e53805
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599460"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676644"
 ---
 ## <a name="what-is-exchange-online-protection-eop"></a>Qu’est-ce qu’Exchange Online Protection (EOP)
 
-Exchange Online Protection (EOP) est un service de filtrage du courrier basé sur le Cloud qui permet de protéger votre organisation contre le courrier indésirable et les programmes malveillants. Si vous avez des boîtes aux lettres dans Office 365, elles sont automatiquement protégées par EOP depuis qu’elle fait partie du service. Cela inclut les organisations qui ont des boîtes aux lettres dans Office 365 et sur site, généralement appelé scénario hybride. EOP standalone est également disponible pour les clients qui n’ont pas de boîtes aux lettres dans le Cloud, mais qui souhaitent protéger leurs boîtes aux lettres locales. 
+Exchange Online Protection (EOP) est un service de filtrage du courrier basé sur le Cloud qui permet de protéger votre organisation contre le courrier indésirable et les programmes malveillants. Si vous avez des boîtes aux lettres dans Office 365, elles sont automatiquement protégées par EOP depuis qu’elle fait partie du service. Cela inclut les organisations qui ont des boîtes aux lettres dans Office 365 et sur site, généralement appelé scénario hybride. EOP standalone est également disponible pour les clients qui n’ont pas de boîtes aux lettres dans le Cloud, mais qui souhaitent protéger leurs boîtes aux lettres locales.
 
 EOP tente de filtrer les courriers indésirables, ce qui permet d’effacer le contenu que les utilisateurs ne veulent pas voir. Normalement, le courrier indésirable est remis dans le dossier courrier indésirable. Certains utilisateurs aiment s’assurer que le filtrage fait ce qu’ils veulent, afin que le dossier courrier indésirable soit un moyen facile pour les utilisateurs de s’en assurer.  
 
@@ -32,22 +32,22 @@ EOP tente de filtrer les courriers indésirables, ce qui permet d’effacer le c
 
 ## <a name="important-terms"></a>Conditions importantes
 
-**Entrant:** Messages entrant dans Office 365.
+**Entrant**: messages entrant dans Office 365.
 
-**Trafic sortant:** Messages sortants d’Office 365.
+**Sortant**: messages sortants d’Office 365.
 
-**Internal:** Messages provenant d’une personne au sein de l’organisation à une personne au sein de l’organisation. Cela inclut les clients qui se trouvent dans des scénarios hybrides et une boîte aux lettres peut être locale et l’autre dans le Cloud.
+**Internal**: messages provenant d’une personne au sein de l’organisation à une personne au sein de l’organisation. Cela inclut les clients qui se trouvent dans des scénarios hybrides et une boîte aux lettres peut être locale et l’autre dans le Cloud.
 
-**Faux négatif (FN):** Courrier indésirable et autre courrier indésirable qui est envoyé de manière incorrecte dans la boîte de réception.
+**Faux négatif (FN)**: courrier indésirable et autre courrier indésirable envoyé de manière incorrecte dans la boîte de réception.
 
-**Faux positif (FP):** Messages légitimes identifiés de manière incorrecte comme courrier indésirable et placés dans le dossier courrier indésirable ou mis en quarantaine.
+**Faux positif (FP)**: messages légitimes qui sont marqués de manière incorrecte comme courrier indésirable et placés dans le dossier de courrier indésirable ou mis en quarantaine.
 
-Courrier indésirable **, également appelé courrier indésirable:** Cela prend la forme d’une publicité commerciale, de lettres en chaîne, de publipostages politiques, etc. Il s’agit d’un message électronique indiquant que les utilisateurs ne s’inscrivent pas auprès des expéditeurs de courrier indésirable qui tentent de solliciter des produits ou tentent de valider des fraudes.
+Courrier indésirable **, également appelé courrier**indésirable: il s’agit d’une publicité commerciale, de lettres en chaîne, de publipostages politiques, etc. Il s’agit d’un message électronique indiquant que les utilisateurs ne s’inscrivent pas auprès des expéditeurs de courrier indésirable qui tentent de solliciter des produits ou tentent de valider des fraudes.
 
-**Hameçonnage:** Le hameçonnage est un type spécial de courrier indésirable destiné à vous inciter à donner des informations personnelles dans le but de valider le vol d’identité ou la fraude. Ce type de message contient généralement un lien malveillant ou une pièce jointe, mais pas toujours.
+**Hameçonnage**: le hameçonnage est un type spécial de courrier indésirable destiné à vous inciter à donner des informations personnelles dans le but de valider l’usurpation d’identité ou la fraude. Ce type de message contient généralement un lien malveillant ou une pièce jointe, mais pas toujours.
 
-**Spoof:** L’usurpation se fait lorsque des expéditeurs de courrier indésirable falsifient l’en-tête FROM de sorte que les messages semblent provenir de quelqu’un ou d’un autre emplacement que la source réelle. Il peut s’agir d’un courrier indésirable, mais généralement couramment utilisé pour les utilisateurs hameçons.
+**Spoof**: l’usurpation est effectuée lorsque des spammeurs falsifient l’en-tête from de sorte que les messages semblent provenir de quelqu’un ou d’un autre emplacement que la source réelle. Il peut s’agir d’un courrier indésirable, mais généralement couramment utilisé pour les utilisateurs hameçons.
 
-**Emprunt d’identité:** Ce type de courrier indésirable constitue également un moyen de falsifier l’adresse de l’expéditeur, mais elle est réalisée en modifiant une partie du nom ou du domaine afin qu’elle ressemble à la source réelle. Par exemple, Bi11@micr0s0ft.com, où le «l» de Bill était en fait le nombre onze et «o» dans Microsoft a été remplacé par le chiffre zéro.
+**Emprunt d’identité**: ce type de courrier indésirable est également un moyen de falsifier l’adresse de l’expéditeur, mais elle est réalisée en modifiant une partie du nom ou du domaine afin qu’elle se présente comme la véritable source. Par exemple, Bi11@micr0s0ft.com, où le «l» de Bill était en fait le nombre onze et «o» dans Microsoft a été remplacé par le chiffre zéro.
 
-**En bloc:** Le courrier en nombre est généralement sollicité par les utilisateurs, bien que parfois indirectement lorsque les sociétés vendent des informations à d’autres sociétés. Il est courant que les utilisateurs s’inscrivent intentionnellement pour le courrier en nombre (par exemple, newletters), mais ils l’oublient plus tard et pensent qu’il s’agit de courrier indésirable. Le courrier en nombre devient un courrier indésirable lorsque les expéditeurs de courriers électroniques envoient plus de utilisateurs et que les niveaux de réclamation deviennent trop élevés.
+**En vrac**: le courrier en nombre est généralement sollicité par les utilisateurs, bien que parfois indirectement lorsque les sociétés vendent des informations à d’autres sociétés. Il est courant que les utilisateurs s’inscrivent intentionnellement pour le courrier en nombre (par exemple, newletters), mais ils l’oublient plus tard et pensent qu’il s’agit de courrier indésirable. Le courrier en nombre devient un courrier indésirable lorsque les expéditeurs de courriers électroniques envoient plus de utilisateurs et que les niveaux de réclamation deviennent trop élevés.

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 description: L'exemple de script suivant permet aux administrateurs Microsoft Exchange Online Protection (EOP) qui gèrent plusieurs locataires (entreprises) d'utiliser Windows PowerShell pour appliquer les paramètres de configuration à leurs locataires.
-ms.openlocfilehash: f064a44722d165711543e5a15ec6a19d70af4b25
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 7ef2ea5b93835a37683f73fa43549af4bab5d47e
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154556"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676634"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>Exemple de script pour l’application de paramètres EOP à plusieurs locataires
 
@@ -24,34 +24,34 @@ L'exemple de script suivant permet aux administrateurs Microsoft Exchange Online
 ### <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a>Pour exécuter un script ou une cmdlet sur plusieurs locataires
 
 1. À l'aide d'une application telle qu'Excel, créez un fichier .csv (par exemple, c:\scripts\inputfile.csv) :
-    
-1. Dans le fichier .csv, spécifiez deux noms de colonne : UserName et Cmdlet.
-    
-2. Pour chaque ligne dans le fichier .csv, ajouter le nom d'administrateur du locataire dans la colonne Nom d'utilisateur et la cmdlet à exécuter pour ce locataire dans la colonne Cmdlet. Par exemple, utilisez admin@contoso.com et Get-AcceptedDomain.
-    
-2. Copiez le script [RunCmdletOnMultipleTenants.ps1](sample-script-for-applying-eop-settings-to-multiple-tenants.md#RunCmdletOnMultipleTenants.ps1) dans un éditeur tel que le Bloc-notes, puis enregistrez le fichier dans un emplacement (comme c:\scripts) permettant de trouver facilement les fichiers .ps1. 
-    
-3. Exécutez le script à l'aide de la syntaxe suivante :
-    ```Powershell
-     & "<file path>\RunCmdletOnMultipleTenants.ps1" "<file path>\inputfile.csv"
-    ```
-    
-    Voici un exemple. 
-    
-    ```Powershell
-    & "c:\scripts\RunCmdletOnMultipleTenanats.ps1" "c:\scripts\inputfile.csv"
-    ```
 
-4. Chaque client sera connecté et la cmdlet sera exécutée.
-    
+2. Dans le fichier .csv, spécifiez deux noms de colonne : UserName et Cmdlet.
+
+3. Pour chaque ligne dans le fichier .csv, ajouter le nom d'administrateur du locataire dans la colonne Nom d'utilisateur et la cmdlet à exécuter pour ce locataire dans la colonne Cmdlet. Par exemple, utilisez admin@contoso.com et Get-AcceptedDomain.
+
+4. Copiez le script [RunCmdletOnMultipleTenants.ps1](sample-script-for-applying-eop-settings-to-multiple-tenants.md#RunCmdletOnMultipleTenants.ps1) dans un éditeur tel que le Bloc-notes, puis enregistrez le fichier dans un emplacement (comme c:\scripts) permettant de trouver facilement les fichiers .ps1.
+
+5. Exécutez le script à l'aide de la syntaxe suivante :
+
+   ```Powershell
+   & "<file path>\RunCmdletOnMultipleTenants.ps1" "<file path>\inputfile.csv"
+   ```
+
+   Voici un exemple.
+
+   ```Powershell
+   & "c:\scripts\RunCmdletOnMultipleTenanats.ps1" "c:\scripts\inputfile.csv"
+   ```
+
+6. Chaque client sera connecté et la cmdlet sera exécutée.
+
 ## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants. ps1
-<a name="RunCmdletOnMultipleTenants.ps1"> </a>
 
 ```Powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.
 # Usage: RunCmdletOnMultipleTenants.ps1 inputfile.csv
 #  
-# .csv input file sample: 
+# .csv input file sample:
 # UserName,Cmdlet
 # admin@contoso.com,Get-AcceptedDomain | ft Name
 # URI for connecting to remote Windows PowerShell
@@ -75,9 +75,6 @@ Import-PSSession $Session
 # In this example, the cmdlet in the .csv file runs.
 Invoke-Expression $Cmdlet
 # End the current PowerShell session.
-remove-pssession -session $Session
+Remove-PsSession -Session $Session
 }
-
 ```
-
-
