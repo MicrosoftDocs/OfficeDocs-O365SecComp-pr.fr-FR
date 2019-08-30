@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Utilisez des limites de conformité pour créer des limites logiques au sein d’une organisation Office 365 qui contrôlent les emplacements de contenu utilisateur qu’un gestionnaire eDiscovery peut rechercher. Les limites de conformité utilisent le filtrage des autorisations de recherche (également appelé filtres de sécurité de conformité) pour contrôler les boîtes aux lettres, les sites SharePoint et les comptes OneDrive pouvant être recherchés par des utilisateurs spécifiques.
-ms.openlocfilehash: 44c157b8f155755c6a48830231074643a830f498
-ms.sourcegitcommit: 226adb6d05015da16138b315dd2f5b937bf4354d
+ms.openlocfilehash: abca7624cb5aa97c85686fc570a653c88b6b8b6b
+ms.sourcegitcommit: d55dab629ce1f8431b8370afde4131498dfc7471
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36302423"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36675445"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurer les limites de conformité pour les enquêtes eDiscovery dans Office 365
 
@@ -233,7 +233,7 @@ Gardez les points suivants à l’esprit lors de la recherche et de l’exportat
   
 - Le paramètre **Region** ne contrôle pas les recherches de boîtes aux lettres Exchange. Tous les centres de données sont recherchés lorsque vous effectuez des recherches dans des boîtes aux lettres. Pour limiter l’étendue des boîtes aux lettres Exchange pouvant faire l’objet d’une **** recherche, utilisez le paramètre Filters lors de la création ou de la modification d’un filtre d’autorisations de recherche. 
     
-- S’il est nécessaire pour un gestionnaire eDiscovery d’effectuer des recherches dans plusieurs régions SharePoint, vous devez créer un compte d’utilisateur différent pour ce gestionnaire eDiscovery qui peut être utilisé dans le filtre d’autorisations de recherche pour spécifier la région secondaire où SharePoint les sites ou les comptes OneDrive sont situés.
+- S’il est nécessaire pour un gestionnaire eDiscovery d’effectuer des recherches dans plusieurs régions SharePoint, vous devez créer un compte d’utilisateur différent pour ce gestionnaire eDiscovery qui peut être utilisé dans le filtre d’autorisations de recherche pour spécifier la région dans laquelle les sites SharePoint ou Les comptes OneDrive sont situés. Pour plus d’informations sur la configuration de ces paramètres, consultez la section «recherche de contenu dans un environnement multi-géo SharePoint» dans [recherche de contenu dans Office 365](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment).
     
 - Lors de la recherche de contenu dans SharePoint et OneDrive, le paramètre **Region** dirige les recherches vers l’emplacement principal ou satellite où le gestionnaire eDiscovery effectuera des investigations eDiscovery. Si un gestionnaire eDiscovery recherche des sites SharePoint et OneDrive en dehors de la région spécifiée dans le filtre des autorisations de recherche, aucun résultat de recherche n’est renvoyé. 
     
