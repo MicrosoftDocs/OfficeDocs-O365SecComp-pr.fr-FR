@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Avec les étiquettes de sensibilité, vous pouvez classer et protéger le contenu sensible, tout en vous assurant que la productivité et la possibilité de collaboration des membres de votre organisation ne sont pas altérées. Vous pouvez utiliser les étiquettes de sensibilité afin d’appliquer des paramètres de protection, comme le chiffrement ou les filigranes, sur le contenu étiqueté.
-ms.openlocfilehash: 5e6ece4358362a3b32ad3b8b0b30f923e6d872cb
-ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
+ms.openlocfilehash: 7ec9b2d171e4ddbe8a923161e503bb813dfc6813
+ms.sourcegitcommit: d55dab629ce1f8431b8370afde4131498dfc7471
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840886"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36675455"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Vue d’ensemble des étiquettes de niveau de confidentialité
 
@@ -237,7 +237,7 @@ Si un utilisateur tente d’enregistrer du contenu étiqueté sur un lecteur USB
 Avant que les étiquettes de niveau de confidentialité puissent utiliser la protection des informations Windows, vous devez d’abord remplir les conditions préalables décrites ici : [La protection des informations Windows protège les fichiers avec une étiquette de niveau de confidentialité](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553). Cette rubrique décrit les conditions préalables suivantes :
 
 - Vérifiez que vous exécutez Windows 10, version 1809 ou version ultérieure.
-- [Configurez Microsoft Defender – Protection avancée contre les menaces (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/get-started) qui analyse le contenu pour rechercher une étiquette et applique la protection des travaux des informations Windows correspondante. ATP effectue certaines opérations indépendamment de Protection des informations Windows (WIP), comme signaler des anomalies.
+- [Configurez Microsoft Defender – Protection avancée contre les menaces (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/) qui analyse le contenu pour rechercher une étiquette et applique la protection des travaux des informations Windows correspondante. ATP effectue certaines opérations indépendamment de Protection des informations Windows (WIP), comme signaler des anomalies.
 - Créez une stratégie de Protection des informations Windows (WIP) qui s’applique aux appareils de point de terminaison. Vous pouvez effectuer cette opération à partir de l’un des emplacements suivants :
     - [Créer une stratégie de Protection des informations Windows (WIP) avec GPM à l’aide du portail Azure pour Microsoft Intune](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
     - [Créer et déployer une stratégie de Protection des informations Windows (WIP) à l’aide de System Center Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
