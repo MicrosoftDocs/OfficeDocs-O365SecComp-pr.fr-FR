@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Les administrateurs peuvent utiliser le suivi des messages dans le centre de sécurité & conformité afin de déterminer ce qui s’est passé aux messages.
-ms.openlocfilehash: 3c5efb1d832a52c6b6b5eb9cfb81ece216c64513
-ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
+ms.openlocfilehash: ad5e6e1f5e95b97cf9601890c11129f498fe95b9
+ms.sourcegitcommit: 769b506c828c475c713dbb337e115714dcc7f17c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36643256"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699222"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Suivi des messages dans le centre de conformité et de sécurité
 
@@ -25,7 +25,7 @@ Le suivi des messages dans le centre de sécurité & conformité suit les messag
 Le suivi des messages dans le centre de sécurité & conformité améliore le suivi des messages qui était disponible dans le centre d’administration Exchange. Vous pouvez utiliser les informations du suivi des messages pour répondre efficacement aux questions des utilisateurs sur ce qui s’est passé à leurs messages, résoudre les problèmes de flux de messagerie et valider les modifications de stratégie.
 
 > [!NOTE]
->  Le nombre de messages s’arrêtera à 50 000 et le rapport reflétera uniquement ce montant dans la console. La cmdlet PowerShell Get-HistoricalSearch de l’applet de commande PowerShell affichera le nombre de messages vrais.
+> Seuls les premiers messages 50000 sont affichés dans les résultats. La cmdlet [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) dans Exchange Online PowerShell ou Exchange Online Protection PowerShell renvoie tous les messages dans les résultats.
 
 ## <a name="open-message-trace"></a>Ouvrir le suivi des messages
 
@@ -190,35 +190,39 @@ Dans le rapport de synthèse, vous pouvez afficher les détails relatifs à un m
 
 Les détails de suivi des messages contiennent les informations supplémentaires suivantes qui ne sont pas présentes dans le rapport récapitulatif:
 
-- **Événements de message**: cette section contient des classifications qui permettent de classer les actions effectuées par le service sur les messages. Voici quelques-uns des événements les plus intéressants que vous pouvez rencontrer:
+- **Événements de message**: cette section contient des classifications qui permettent de classer les actions effectuées par le service sur les messages. Voici **quelques-uns des événements les plus intéressants** que vous pouvez rencontrer:
 
-   - **Receive**: le message a été reçu par le service.
+  - **Receive**: le message a été reçu par le service.
 
-   - **Send**: le message a été envoyé par le service.
+  - **Send**: le message a été envoyé par le service.
 
-   - **Échec**: le message n’a pas pu être remis.
+  - **Échec**: le message n’a pas pu être remis.
 
-   - **Remettre**: le message a été remis à une boîte aux lettres.
+  - **Remettre**: le message a été remis à une boîte aux lettres.
 
-   - **Expand**: le message a été envoyé à un groupe de distribution qui a été étendu.
+  - **Expand**: le message a été envoyé à un groupe de distribution qui a été étendu.
 
-   - **Transfert**: les destinataires ont été déplacés vers un message de bifurcation en raison de la conversion de contenu, de limites de destinataires de messages ou d’agents.
+  - **Transfert**: les destinataires ont été déplacés vers un message de bifurcation en raison de la conversion de contenu, de limites de destinataires de messages ou d’agents.
 
-   - **Defer**: la remise du message a été différée et peut être retentée ultérieurement.
+  - **Defer**: la remise du message a été différée et peut être retentée ultérieurement.
 
-   - **Résolu**: le message a été redirigé vers une nouvelle adresse de destinataire en fonction d’une recherche Active Directory. Lorsque cela se produit, l'adresse du destinataire d'origine est répertoriée sur une ligne distincte dans le suivi des messages avec l'état de remise final du message.
+  - **Résolu**: le message a été redirigé vers une nouvelle adresse de destinataire en fonction d’une recherche Active Directory. Lorsque cela se produit, l'adresse du destinataire d'origine est répertoriée sur une ligne distincte dans le suivi des messages avec l'état de remise final du message.
 
-   Notez que même un message qui n’a pas été correctement remis génère plusieurs entrées d' **événements** dans le suivi des messages.
+  Remarques :
+
+  - Un message non événementiel qui est remis avec succès génèrera plusieurs entrées d' **événements** dans le suivi des messages.
+
+  - Cette liste n’est pas destinée à être exhaustive. Pour obtenir des descriptions d’événements supplémentaires, consultez [la rubrique types d’événements dans le journal de suivi des messages](https://docs.microsoft.com/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log). Notez que ce lien est un serveur Exchange (Exchange sur site).
 
 - **Informations supplémentaires**: cette section contient les informations suivantes:
 
-   - **ID du message**: cette valeur est décrite dans la section [ID du message](#message-id) , plus haut dans cette rubrique. Par exemple, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
+  - **ID du message**: cette valeur est décrite dans la section [ID du message](#message-id) , plus haut dans cette rubrique. Par exemple, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
 
-   - **Taille du message**
+  - **Taille du message**
 
-   - **IP from**: adresse IP de l’ordinateur qui a envoyé le message. Pour les messages sortants envoyés à partir d'Exchange Online, ce champ est vide.
+  - **IP from**: adresse IP de l’ordinateur qui a envoyé le message. Pour les messages sortants envoyés à partir d'Exchange Online, ce champ est vide.
 
-   - **Vers IP**: adresse ou adresses IP où le service a tenté de livrer le message. Si le message contient plusieurs destinataires, ceux-ci sont affichés. Pour les messages entrants envoyés à Exchange Online, ce champ est vide.
+  - **Vers IP**: adresse ou adresses IP où le service a tenté de livrer le message. Si le message contient plusieurs destinataires, ceux-ci sont affichés. Pour les messages entrants envoyés à Exchange Online, ce champ est vide.
 
 ### <a name="enhanced-summary-reports"></a>Rapports de synthèse améliorés
 
@@ -230,11 +234,11 @@ Les rapports de synthèse (terminé) disponibles sont disponibles dans la sectio
 
 - **Recipient_status**: état de la remise du message au destinataire. Si le message a été envoyé à plusieurs destinataires, il affiche tous les destinataires et l’état correspondant pour chacun, au format \<:*État*\>de l' *adresse*\>##\<de messagerie. Par exemple :
 
-   - **# #Receive, envoyer** signifie que le message a été reçu par le service et qu’il a été envoyé à la destination prévue.
+  - **# #Receive, envoyer** signifie que le message a été reçu par le service et qu’il a été envoyé à la destination prévue.
 
-   - **# #Receive, Fail** signifie que le message a été reçu par le service, mais que la remise à la destination prévue a échoué.
+  - **# #Receive, Fail** signifie que le message a été reçu par le service, mais que la remise à la destination prévue a échoué.
 
-   - **# #Receive, Deliver** signifie que le message a été reçu par le service et qu’il a été remis à la boîte aux lettres du destinataire.
+  - **# #Receive, Deliver** signifie que le message a été reçu par le service et qu’il a été remis à la boîte aux lettres du destinataire.
 
 - **message_subject**: les premiers 256 caractères du champ **Subject** du message.
 
@@ -268,17 +272,17 @@ Les rapports étendus disponibles (terminés) sont disponibles dans la section *
 
 - **source_context**: informations supplémentaires associées au champ **source** . Par exemple :
 
-   - `Protocol Filter Agent`
+  - `Protocol Filter Agent`
 
-   - `3489061114359050000`
+  - `3489061114359050000`
 
 - **source**: composant Exchange Online responsable de l’événement. Par exemple :
 
-   - `AGENT`
+  - `AGENT`
 
-   - `MAILBOXRULE`
+  - `MAILBOXRULE`
 
-   - `SMTP`
+  - `SMTP`
 
 - **event_id**: ils correspondent aux valeurs d' **événement de message** qui sont expliquées dans la section [Rechercher des enregistrements liés pour ce message](#find-related-records-for-this-message) .
 
@@ -292,27 +296,27 @@ Les rapports étendus disponibles (terminés) sont disponibles dans la section *
 
 - **référence**: ce champ contient des informations supplémentaires pour des types d’événements spécifiques. Par exemple :
 
-   - **DSN**: contient le lien de rapport, qui est la valeur **message_id** de la notification d’état de remise associée (également appelée DSN, notification d’échec de remise, notification d’échec de remise ou message de retour) si un DSN est généré suite à cet événement. S’il s’agit d’un message DSN, ce champ contient la valeur **message_id** du message d’origine pour lequel le DSN a été généré.
+  - **DSN**: contient le lien de rapport, qui est la valeur **message_id** de la notification d’état de remise associée (également appelée DSN, notification d’échec de remise, notification d’échec de remise ou message de retour) si un DSN est généré suite à cet événement. S’il s’agit d’un message DSN, ce champ contient la valeur **message_id** du message d’origine pour lequel le DSN a été généré.
 
-   - **Expand**: contient la valeur **related_recipient_address** des messages connexes.
+  - **Expand**: contient la valeur **related_recipient_address** des messages connexes.
 
-   - **Receive**: peut contenir la valeur **message_id** du message connexe si le message a été généré par d’autres processus (par exemple, les règles de boîte de réception).
+  - **Receive**: peut contenir la valeur **message_id** du message connexe si le message a été généré par d’autres processus (par exemple, les règles de boîte de réception).
 
-   - **Send**: contient la valeur **internal_message_id** de tous les messages DSN.
+  - **Send**: contient la valeur **internal_message_id** de tous les messages DSN.
 
-   - **Transfer**: contient la valeur **internal_message_id** du message en cours de bifurcation (par exemple, par conversion de contenu, limites de destinataires de message ou agents).
+  - **Transfer**: contient la valeur **internal_message_id** du message en cours de bifurcation (par exemple, par conversion de contenu, limites de destinataires de message ou agents).
 
-   - **MAILBOXRULE**: contient la valeur **internal_message_id** du message entrant qui a provoqué la génération du message sortant par la règle de boîte de réception.
+  - **MAILBOXRULE**: contient la valeur **internal_message_id** du message entrant qui a provoqué la génération du message sortant par la règle de boîte de réception.
 
-   Pour les autres types d’événements, ce champ est généralement vide.
+    Pour les autres types d’événements, ce champ est généralement vide.
 
 - **return_path**: adresse de messagerie de retour spécifiée par la commande **Mail from** qui a envoyé le message. Bien que ce champ ne soit jamais vide, il peut avoir la valeur de l’adresse de `<>`l’expéditeur null représentée par.
 
 - **message_info**: informations supplémentaires sur le message. Par exemple :
 
-   - Date et heure d’origine du message au format UTC `DELIVER` pour `SEND` les événements et. La date d’origine date-heure est l’heure à laquelle le message est entré pour la première fois dans l’organisation Exchange Online. L’heure UTC est représentée au format de date-heure ISO 8601: `yyyy-mm-ddThh:mm:ss.fffZ`, où `yyyy` = année, `mm` = mois, `dd` = jour, `T` indique le début du composant d’heure, `hh` = heure, `mm` = minute, `ss` = seconde, = `fff` les fractions de seconde, et `Z` signifient `Zulu`, qui est une autre façon de désigner UTC.
+  - Date et heure d’origine du message au format UTC `DELIVER` pour `SEND` les événements et. La date d’origine date-heure est l’heure à laquelle le message est entré pour la première fois dans l’organisation Exchange Online. L’heure UTC est représentée au format de date-heure ISO 8601: `yyyy-mm-ddThh:mm:ss.fffZ`, où `yyyy` = année, `mm` = mois, `dd` = jour, `T` indique le début du composant d’heure, `hh` = heure, `mm` = minute, `ss` = seconde, = `fff` les fractions de seconde, et `Z` signifient `Zulu`, qui est une autre façon de désigner UTC.
 
-   - Erreurs d'authentification. Par exemple, vous pouvez voir la valeur `11a` et le type d’authentification utilisé lorsque l’erreur d’authentification s’est produite.
+  - Erreurs d'authentification. Par exemple, vous pouvez voir la valeur `11a` et le type d’authentification utilisé lorsque l’erreur d’authentification s’est produite.
 
 - **tenant_id**: valeur GUID qui représente l’organisation Exchange Online (par exemple, `39238e87-b5ab-4ef6-a559-af54c6b07b42`).
 

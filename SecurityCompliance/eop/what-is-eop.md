@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
 description: Ce document de présentation vous aidera à comprendre Exchange Online Protection (EOP) et quelques termes importants. Ceci s’applique aux clients Office 365 qui protègent les boîtes aux lettres Exchange Online hébergées dans le Cloud et les clients autonomes EOP qui protègent les boîtes aux lettres locales telles qu’Exchange Server 2016.
-ms.openlocfilehash: 87dba47a7a942dcb8eb103cee1a171dca6e53805
-ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
+ms.openlocfilehash: c2dba2cbb16126e2169e0fb3907ceabe8185e82a
+ms.sourcegitcommit: 769b506c828c475c713dbb337e115714dcc7f17c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "36676644"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699192"
 ---
 ## <a name="what-is-exchange-online-protection-eop"></a>Qu’est-ce qu’Exchange Online Protection (EOP)
 
@@ -36,7 +36,7 @@ EOP tente de filtrer les courriers indésirables, ce qui permet d’effacer le c
 
 **Sortant**: messages sortants d’Office 365.
 
-**Internal**: messages provenant d’une personne au sein de l’organisation à une personne au sein de l’organisation. Cela inclut les clients qui se trouvent dans des scénarios hybrides et une boîte aux lettres peut être locale et l’autre dans le Cloud.
+**Internal**: messages provenant d’une personne au sein de l’organisation à une personne au sein de l’organisation. Cela inclut les clients qui se trouvent dans des scénarios hybrides et une boîte aux lettres peut être en local et l’autre dans le Cloud.
 
 **Faux négatif (FN)**: courrier indésirable et autre courrier indésirable envoyé de manière incorrecte dans la boîte de réception.
 

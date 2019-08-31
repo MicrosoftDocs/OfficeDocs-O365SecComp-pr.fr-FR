@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Si vous souhaitez être sûr de recevoir des messages d’un expéditeur particulier, étant donné que vous les approuvez et leurs messages, vous pouvez ajuster votre liste verte dans une stratégie de filtrage du courrier indésirable dans le centre d’administration Exchange.
-ms.openlocfilehash: f0397ce3d26f6c539b3d7d663298c468e1155161
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 49803dee186a0f89e3caa42f8c7559bb6ce0c7c9
+ms.sourcegitcommit: 769b506c828c475c713dbb337e115714dcc7f17c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599980"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699212"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Créer des listes d’expéditeurs approuvés dans Office 365
 
@@ -51,7 +51,7 @@ Pour vous assurer que seuls les messages légitimes sont autorisés dans votre o
 > [!IMPORTANT]
 > Si vous autorisez une adresse IP NATted, vous devez déterminer les ordinateurs impliqués dans ce pool NAT afin de déterminer l’étendue de votre autorisation. N’oubliez pas que les adresses IP peuvent varier, et les participants NAT peuvent également l’être. Vous devez revérifier toutes les listes d’autorisation, y compris le protocole IP autorisé dans le cadre de votre maintenance standard.
 
-- Ajoutez *éventuellement*une condition dont le message provient de l’extérieur de l’organisation (Ceci est implicite, mais il convient de l’ajouter en tant que condition pour tenir compte des serveurs sur site qui ne sont peut-être pas correctement configurés).
+- Ajoutez *éventuellement*une condition dont le message provient de l’extérieur de l’organisation (Ceci est implicite, mais il convient de l’ajouter en tant que condition pour prendre en compte les serveurs locaux qui ne sont peut-être pas correctement configurés).
 
 - ** Si vous le souhaitez, si vous pouvez identifier des mots clés ou des expressions uniques dans l’objet ou le corps du message, utilisez ces informations comme condition supplémentaire pour limiter davantage les messages électroniques autorisés par la règle de flux de messagerie.
 
