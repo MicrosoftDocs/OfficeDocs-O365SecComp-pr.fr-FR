@@ -248,11 +248,9 @@ L’illustration représente les niveaux d’autorisation complète de contrôle
 
 Plus d’informations :
 
--   
-  [Présentation des niveaux d’autorisation dans SharePoint](https://support.office.com/fr-FR/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
+-   [Présentation des niveaux d’autorisation dans SharePoint](https://support.office.com/fr-FR/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
 
--   
-  [Présentation des groupes SharePoint](https://support.office.com/fr-FR/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
+-   [Présentation des groupes SharePoint](https://support.office.com/fr-FR/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
 
 ### <a name="external-sharing-policies-for-sharepoint-and-onedrive-for-business-libraries"></a>Stratégies de partage externe pour les bibliothèques SharePoint et OneDrive Entreprise
 
@@ -302,11 +300,9 @@ Le tableau suivant récapitule les contrôles que vous pouvez configurer.
 
 Plus d’informations :
 
--   
-  [Gérer le partage externe pour votre environnement SharePoint Online](https://support.office.com/fr-FR/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
+-   [Gérer le partage externe pour votre environnement SharePoint Online](https://support.office.com/fr-FR/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
 
--   
-  [Partager des sites ou des documents avec des personnes extérieures à votre organisation](https://support.office.com/fr-FR/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
+-   [Partager des sites ou des documents avec des personnes extérieures à votre organisation](https://support.office.com/fr-FR/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
 
 ### <a name="site-level-device-access-policies"></a>Stratégies d’accès aux appareils au niveau du site
 

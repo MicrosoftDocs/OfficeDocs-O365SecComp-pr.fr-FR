@@ -43,8 +43,7 @@ Dans l’en-tête, repérez les titres et les valeurs suivantes.
     
 - **SFV:SKB** Indique que le message a été marqué comme courrier indésirable, car il correspond à une liste d’expéditeurs bloqués dans la stratégie de filtrage du courrier indésirable. 
     
-- 
-  **SFV:BULK** Indique que la valeur BCL figurant dans l’en-tête X-Microsoft-Antispam dépasse le seuil de probabilité de courrier en nombre défini pour le filtrage de contenu. Le courrier en nombre désigne le courrier auquel les utilisateurs peuvent être abonnés mais qui est considéré comme indésirable. Dans l’en-tête de messages X-Microsoft-Antispam, recherchez la propriété BCL (seuil de probabilité de courrier en nombre). Si cette valeur est inférieure au seuil défini dans le filtre anti-courrier indésirable, nous vous recommandons d’ajuster ce seuil pour que ces messages en nombre soient marqués comme courrier indésirable. Les utilisateurs tolèrent différemment le courrier en nombre et ont différentes préférences concernant son [traitement](https://docs.microsoft.com/fr-FR/office365/SecurityCompliance/bulk-complaint-level-values). Vous pouvez créer des stratégies ou des règles différentes selon les préférences des utilisateurs.
+- **SFV:BULK** Indique que la valeur BCL figurant dans l’en-tête X-Microsoft-Antispam dépasse le seuil de probabilité de courrier en nombre défini pour le filtrage de contenu. Le courrier en nombre désigne le courrier auquel les utilisateurs peuvent être abonnés mais qui est considéré comme indésirable. Dans l’en-tête de messages X-Microsoft-Antispam, recherchez la propriété BCL (seuil de probabilité de courrier en nombre). Si cette valeur est inférieure au seuil défini dans le filtre anti-courrier indésirable, nous vous recommandons d’ajuster ce seuil pour que ces messages en nombre soient marqués comme courrier indésirable. Les utilisateurs tolèrent différemment le courrier en nombre et ont différentes préférences concernant son [traitement](https://docs.microsoft.com/fr-FR/office365/SecurityCompliance/bulk-complaint-level-values). Vous pouvez créer des stratégies ou des règles différentes selon les préférences des utilisateurs.
     
 - **CAT:SPOOF** ou **CAT:PHISH** Indique que le message semble être falsifié, ce qui signifie que la source du message ne peut pas être validée et pourrait être suspecte. Si l’expéditeur est valide, il doit s’assurer qu’une configuration SPF et DKIM adaptée est mise en place. Vérifiez l’en-tête Authentication-Results pour obtenir des informations complémentaires. Même s’il est difficile de convaincre tous les expéditeurs d’utiliser des méthodes d’authentification de messagerie appropriées, ignorer ces vérifications peut être très dangereux et entraîner des failles de sécurité. 
     
@@ -64,8 +63,7 @@ Pour travailler efficacement, Exchange Online Protection (EOP) exige que les adm
 
 - **Utiliser [l’Explorateur d’envoi](admin-submission.md)** Les administrateurs peuvent désormais envoyer des e-mails en utilisant l'ID de fichier ou de message réseau, les URL et les fichiers à numériser par Microsoft dans Office 365. En tant qu’administrateur, vous pouvez peut-être consulter les commentaires que vos utilisateurs envoient et utiliser des modèles pour ajuster les paramètres à l’origine de problèmes éventuels.
 
-- 
-  **Assurez-vous que vos utilisateurs respectent les limites autorisées** pour envoyer et recevoir des e-mails, comme indiqué [ici](https://docs.microsoft.com/fr-FR/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
+- **Assurez-vous que vos utilisateurs respectent les limites autorisées** pour envoyer et recevoir des e-mails, comme indiqué [ici](https://docs.microsoft.com/fr-FR/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
  - **Vérifiez les seuils de courrier en nombre**, comme précisé [ici](bulk-complaint-level-values.md)
     
@@ -83,7 +81,7 @@ EOP respecte la liste des expéditeurs et destinataires approuvés des utilisate
 
 Si vos utilisateurs ont l'option activée dans Outlook "Listes sécurisées uniquement : seul le courrier provenant de personnes ou de domaines figurant sur vos listes d'expéditeurs ou de destinataires approuvés sera envoyé dans votre boîte de réception", alors tous les e-mails seront envoyés dans le dossier des courriers indésirables de l'expéditeur, sauf si celui-ci est sur la liste des expéditeurs approuvés par le destinataire. Ceci se produira indépendamment du fait que EOP marque un message comme étant un message non indésirable, ou si vous avez configuré une règle dans EOP pour marquer un message comme non indésirable.
   
-Vous pouvez désactiver l’option des listes sécurisées uniquement en suivant les instructions fournies dans [Outlook : Paramètre de stratégie pour désactiver l’interface utilisateur de courrier indésirable et le mécanisme de filtrage](https://support.microsoft.com/en-us/kb/2180568).
+Vous pouvez désactiver l’option des listes sécurisées uniquement en suivant les instructions fournies dans [Outlook : Paramètre de stratégie pour désactiver l’interface utilisateur de courrier indésirable et le mécanisme de filtrage](https://support.microsoft.com/fr-FR/kb/2180568).
   
 Si vous affichez le message dans Outlook sur le Web, un Conseil de sécurité de couleur jaune s’affiche, indiquant que le message se trouve dans le dossier courrier indésirable, car l’expéditeur n’est pas dans la liste des expéditeurs approuvés du destinataire.
   

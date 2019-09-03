@@ -186,8 +186,7 @@ Vous êtes invité à confirmer comme suit :
 
 Lorsque vous configurez votre package de règles, veillez à référencer correctement vos fichier .csv et edm.xml. Vous pouvez copier, modifier et utiliser notre exemple. Dans cet exemple de fichier xml, les champs suivants doivent être personnalisés pour créer votre type sensible d’EDM :
 
-- 
-  **RulePack id & ExactMatch id** : utilisez  [New-GUID](https://docs.microsoft.com/fr-FR/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6)  pour générer un GUID.
+- **RulePack id & ExactMatch id** : utilisez  [New-GUID](https://docs.microsoft.com/fr-FR/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6)  pour générer un GUID.
 
 - **Datastore** : ce champ spécifie le magasin de données de recherche EDM à utiliser. Vous indiquez un nom de source de données ou un schéma EDM configuré.
 
@@ -481,19 +480,15 @@ Les types d’informations sensibles EDM pour les scénarios suivants sont en co
 
 ## <a name="related-articles"></a>Articles connexes
 
+[Obtenir la liste des types d’informations sensibles intégrés et ce qu’ils recherchent](https://docs.microsoft.com/fr-FR/office365/securitycompliance/what-the-sensitive-information-types-look-for)
 
-  [Obtenir la liste des types d’informations sensibles intégrés et ce qu’ils recherchent](https://docs.microsoft.com/fr-FR/office365/securitycompliance/what-the-sensitive-information-types-look-for)
+[Types d’informations sensibles personnalisés](https://docs.microsoft.com/fr-FR/office365/securitycompliance/custom-sensitive-info-types)
 
-
-  [Types d’informations sensibles personnalisés](https://docs.microsoft.com/fr-FR/office365/securitycompliance/custom-sensitive-info-types)
-
-
-  [Vue d’ensemble des stratégies DLP](https://docs.microsoft.com/fr-FR/office365/securitycompliance/data-loss-prevention-policies)
+[Vue d’ensemble des stratégies DLP](https://docs.microsoft.com/fr-FR/office365/securitycompliance/data-loss-prevention-policies)
 
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
-
-  [New-DlpEdmSchema](https://docs.microsoft.com/fr-FR/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
+[New-DlpEdmSchema](https://docs.microsoft.com/fr-FR/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
 
 ## <a name="feedback"></a>Commentaires
 Les commentaires sur GitHub sont activés, mais l’ajout de problèmes n’est possible que sur le site public.

@@ -47,14 +47,13 @@ Azure RMS est également activé automatiquement pour la plupart des offres éli
 Pour plus d’informations, voir :
 
 - [De quels abonnements ai-je besoin pour utiliser les nouvelles fonctionnalités OME ?](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities) pour vérifier si votre plan d’abonnement inclut Azure Information Protection (qui inclut les fonctionnalités Azure RMS).
-- [Azure Information Protection](https://azure.microsoft.com/en-us/services/information-protection/) pour plus d’informations sur l’achat d’un abonnement éligible.  
+- [Azure Information Protection](https://azure.microsoft.com/fr-FR/services/information-protection/) pour plus d’informations sur l’achat d’un abonnement éligible.  
 
 ### <a name="manually-activating-azure-rights-management"></a>Activation manuelle d’Azure Rights Management
 
 Si vous avez désactivé Azure RMS, ou si le service n’a pas été automatiquement activé pour une raison quelconque, vous pouvez l’activer manuellement dans le :
 
-- 
-  **Centre d’administration Microsoft 365** : reportez-vous à [Comment activer Azure Rights Management à partir du centre d’administration](https://docs.microsoft.com/fr-FR/azure/information-protection/activate-office365) pour obtenir des instructions.
+- **Centre d’administration Microsoft 365** : reportez-vous à [Comment activer Azure Rights Management à partir du centre d’administration](https://docs.microsoft.com/fr-FR/azure/information-protection/activate-office365) pour obtenir des instructions.
 - **Portail Azure** : reportez-vous à [Comment activer Azure Rights Management à partir du portail Azure](https://docs.microsoft.com/en-gb/azure/information-protection/activate-azure) pour obtenir des instructions.
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>Configurer la gestion de votre clé de client Azure Information Protection
@@ -67,8 +66,7 @@ Il existe de nombreuses raisons, par exemple des exigences de conformité, qui p
 
 Vous pouvez vérifier que votre client Office 365 est correctement configuré pour utiliser les nouvelles fonctionnalités OME dans [Exchange Online PowerShell](https://docs.microsoft.com/fr-FR/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps).
   
-1. 
-  [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/fr-FR/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) à l’aide d’un compte disposant des autorisations d’administrateur général dans votre client Office 365.
+1. [Connectez-vous à Exchange Online PowerShell](https://docs.microsoft.com/fr-FR/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) à l’aide d’un compte disposant des autorisations d’administrateur général dans votre client Office 365.
 
 2. Exécutez la cmdlet Get-IRMConfiguration.
 

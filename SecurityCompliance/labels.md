@@ -283,14 +283,12 @@ Vous pouvez appliquer automatiquement des étiquettes au contenu remplissant cer
 
 Pour obtenir plus d’informations sur la syntaxe de requête, consultez l’article suivant :
 
-- 
-  [Référence de syntaxe de langage de requête de mot clé (KQL)](https://docs.microsoft.com/fr-FR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [Référence de syntaxe de langage de requête de mot clé (KQL)](https://docs.microsoft.com/fr-FR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 Les étiquettes basées sur une requête utilisent l’index de recherche pour identifier le contenu. Pour plus d’informations sur les propriétés valides utilisables dans une requête, consultez l’article suivant :
 
 - [Requêtes par mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md)
-- 
-  [Vue d’ensemble des propriétés analysées et gérées dans SharePoint Server](https://docs.microsoft.com/fr-FR/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+- [Vue d’ensemble des propriétés analysées et gérées dans SharePoint Server](https://docs.microsoft.com/fr-FR/SharePoint/technical-reference/crawled-and-managed-properties-overview)
 
 Exemples de requêtes :
 

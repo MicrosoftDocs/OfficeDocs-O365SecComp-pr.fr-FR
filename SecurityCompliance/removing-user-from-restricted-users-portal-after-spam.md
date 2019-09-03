@@ -81,12 +81,10 @@ Les commandes PowerShell pour les utilisateurs avec accès restreint sont les su
 
 [Réponse à un compte de messagerie compromis](responding-to-a-compromised-email-account.md)
 
-
-  [Présentation de l’alerte l’utilisateur n’est pas autorisé à envoyer des messages](https://docs.microsoft.com/fr-FR/office365/securitycompliance/alert-policies)
+[Présentation de l’alerte l’utilisateur n’est pas autorisé à envoyer des messages](https://docs.microsoft.com/fr-FR/office365/securitycompliance/alert-policies)
 
 [Pool de remise à haut risque pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md)
 
 [Autorisations dans le centre de conformité et de sécurité](permissions-in-the-security-and-compliance-center.md)
 
-
-  [Stratégies d’alerte dans le Centre de sécurité et de conformité](https://docs.microsoft.com/fr-FR/office365/securitycompliance/alert-policies)
+[Stratégies d’alerte dans le Centre de sécurité et de conformité](https://docs.microsoft.com/fr-FR/office365/securitycompliance/alert-policies)
