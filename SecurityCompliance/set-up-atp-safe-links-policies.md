@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configurez des stratégies de liens fiables pour protéger votre organisation contre les liens malveillants dans les fichiers Word, Excel, PowerPoint et Visio, ainsi que dans les messages électroniques.
-ms.openlocfilehash: d84c57d1f21ea835d5a29e59a4efe4a11ff876c0
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: f33f351d9a4875a52854a239cf9f875be8e076d6
+ms.sourcegitcommit: fd3db13cd4fc71cd2cb164fd702007acba3e7399
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230338"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36717634"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configuration des stratégies de liens approuvés Office 365 ATP
 
@@ -101,7 +101,7 @@ Une fois que vous avez révisé (ou modifié) la stratégie de liens approuvés 
     
   - Sélectionnez **appliquer les liens fiables aux messages envoyés au sein de l’organisation** si vous souhaitez activer les liens fiables pour les messages envoyés entre les utilisateurs au sein de votre organisation (recommandé).
     
-  - Sélectionnez **ne pas autoriser l’utilisateur à cliquer vers l’URL d’origine**.
+  - Sélectionnez **ne pas autoriser l’utilisateur à cliquer sur vers l’URL d’origine** si vous ne souhaitez pas que les utilisateurs individuels remplacent une *analyse en cours* ou des pages de notification de *blocage d’URL* .
     
   - (Cette option est facultative) Dans la section **ne pas réécrire les URL suivantes** , spécifiez une ou plusieurs URL considérées comme sûres pour votre organisation. (Voir [configurer une liste d’URL «ne pas réécrire» personnalisée à l’aide des liens fiables ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md))
     
