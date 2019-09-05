@@ -13,25 +13,25 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Page d’accueil pour la protection de l’accès aux données et services O365
-ms.openlocfilehash: 7cddedfbb5b0b7789f370f0445be167b6d4e187d
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 9fc1691e7e36f994b5d0b8a6a9735fe8ccd8735a
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852738"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761610"
 ---
 # <a name="protect-user-and-device-access"></a>Protéger l’accès aux appareils et l’accès des utilisateurs
 
-La protection de l’accès à vos données et services Office 365 est cruciale pour la défense contre les attaques informatiques et la protection contre la perte de données. Les mêmes protections peuvent être appliquées à d’autres applications SaaS dans votre environnement et même aux applications locales publiées avec le proxy d’application Azure Active Directory.
+La protection de l’accès à vos données et services Office 365 est cruciale pour la défense contre les cyberattaques et la protection contre la perte de données. Les mêmes protections peuvent être appliquées à d’autres applications SaaS dans votre environnement et même aux applications locales publiées avec le proxy d’application Azure Active Directory.
   
-## <a name="step-1-review-recommendations"></a>Étape 1: passer en revue les recommandations
+## <a name="step-1-review-recommendations"></a>Étape 1 : passer en revue les recommandations
 
 Découvrez les fonctionnalités recommandées relatives à la protection des identités et des appareils qui accèdent à Office 365, aux autres services SaaS et applications locales publiées avec le proxy d’application Azure AD.
   
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [Plus de langues](https://www.microsoft.com/download/details.aspx?id=55032)
   
-## <a name="step-2-protect-administrator-accounts-and-access"></a>Étape 2: Protégez les comptes d’administrateur et l’accès
-Les comptes d’administration que vous utilisez pour administrer votre environnement Office 365 incluent des privilèges élevés. Il s’agit de cibles précieuses pour les pirates et les cybercriminels. 
+## <a name="step-2-protect-administrator-accounts-and-access"></a>Étape 2 : Protégez les comptes d’administrateur et l’accès
+Les comptes d’administration que vous utilisez pour administrer votre environnement Office 365 incluent des privilèges élevés. Il s’agit de cibles précieuses pour les pirates et les cyberattackers. 
 
 Commencez par utiliser les comptes d’administrateur uniquement pour l’administration. Les administrateurs doivent disposer d’un compte d’utilisateur distinct pour une utilisation normale et non administrative et n’utiliser leur compte d’administrateur que si nécessaire pour effectuer une tâche associée à leur fonction.
 
@@ -42,23 +42,23 @@ Ensuite, configurez la gestion des accès privilégiés dans Office 365. La gest
 - [Vue d’ensemble de la gestion des accès privilégiés](privileged-access-management-overview.md)
 - [Configurer la gestion des accès privilégiés](privileged-access-management-configuration.md)
 
-Il est également recommandé d’utiliser des stations de travail spécifiquement configurées pour le travail administratif. Il s’agit d’appareils dédiés qui sont utilisés uniquement pour les tâches d’administration. Consultez la rubrique Sécurisation de [l’accès privilégié](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access).
+Il est également recommandé d’utiliser des stations de travail spécifiquement configurées pour le travail administratif. Il s’agit d’appareils dédiés qui sont utilisés uniquement pour les tâches d’administration. Consultez la rubrique [sécurisation de l’accès privilégié](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access).
 
 Enfin, vous pouvez limiter l’impact d’un manque d’accès administratif par inadvertance en créant au moins deux comptes d’accès d’urgence dans votre client. Consultez la rubrique [Manage Emergency Access Accounts in Azure ad](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access). 
 
-## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a>Étape 3: configurer les stratégies d’identité et d’accès aux appareils recommandées
+## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a>Étape 3 : configurer les stratégies d’identité et d’accès aux appareils recommandées
 L’authentification multifacteur (MFA) et les stratégies d’accès conditionnel sont des outils puissants pour atténuer les comptes compromis et les accès non autorisés. Nous vous recommandons d’implémenter un ensemble de stratégies qui ont été testées ensemble. Pour plus d’informations, y compris sur les étapes de déploiement, voir [configurations d’identité et d’accès aux appareils](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations).
 
- Ces stratégies implémentent les fonctionnalités suivantes:
+ Ces stratégies implémentent les fonctionnalités suivantes :
 - Authentification multifacteur
 - Accès conditionnel
 - Protection des applications Intune (application et protection des données pour les appareils)
 - Conformité des appareils Intune
 - Azure AD Identity Protection
 
-La conformité des appareils Implemetning Intune nécessite l’enregistrement de l’appareil. La gestion des appareils vous permet de vous assurer qu’ils sont intègres et conformes avant de leur accorder l’accès à des ressources dans votre environnement. Voir [inscrire des appareils pour la gestion dans Intune](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
+L’implémentation de la conformité des appareils Intune nécessite l’application de l’appareil. La gestion des appareils vous permet de vous assurer qu’ils sont intègres et conformes avant de leur accorder l’accès à des ressources dans votre environnement. Voir [inscrire des appareils pour la gestion dans Intune](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
 
-## <a name="step-4-configure-sharepoint-device-access-policies"></a>Étape 4: configurer les stratégies d’accès aux appareils SharePoint
+## <a name="step-4-configure-sharepoint-device-access-policies"></a>Étape 4 : configurer les stratégies d’accès aux appareils SharePoint
 
 Microsoft vous recommande de protéger le contenu des sites SharePoint avec du contenu sensible et hautement réglementé avec des contrôles d’accès aux appareils. Pour plus d’informations, reportez-vous à [stratégies recommandées pour la sécurisation des sites et des fichiers SharePoint](https://docs.microsoft.com/microsoft-365/enterprise/sharepoint-file-access-policies).
 

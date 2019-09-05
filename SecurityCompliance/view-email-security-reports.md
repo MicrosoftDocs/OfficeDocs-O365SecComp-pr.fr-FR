@@ -1,9 +1,9 @@
 ---
 title: Afficher les rapports de sécurité de messagerie &amp; dans le centre de sécurité conformité
-ms.author: chrfox
-author: chrfox
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
-ms.date: 05/21/2019
+ms.date: 08/29/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment rechercher et utiliser des rapports de sécurité de messagerie pour votre organisation. Les rapports de sécurité de messagerie sont disponibles &amp; dans le centre de sécurité conformité.
-ms.openlocfilehash: 1e9d51c76b6df02c9d70626392a58c307ee214db
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: 90b4ab2c9fafc5c882791a5471e7e5a24f5ae4bd
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230418"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761710"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Afficher les rapports de sécurité de messagerie &amp; dans le centre de sécurité conformité
 
@@ -28,8 +28,8 @@ Un grand nombre de rapports sont disponibles dans [le &amp; Centre de sécurité
   
 ![Tableau de bord où se trouve le fonctionnement de la protection avancée contre les menaces](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
-Vos rapports de sécurité de messagerie incluent les éléments suivants:
-- [Rapport](#encryption-report) de chiffrement (Nouveau!)
+Vos rapports de sécurité de messagerie incluent les éléments suivants :
+- [Rapport de chiffrement](#encryption-report) (Nouveau !)
 - [Rapport d’état de protection contre les menaces](#threat-protection-status-report) 
 - [Rapport de détection des programmes malveillants](#malware-detections-report) 
 - [Premier rapport de programmes malveillants](#top-malware-report)
@@ -41,9 +41,9 @@ Vos rapports de sécurité de messagerie incluent les éléments suivants:
     
 ## <a name="encryption-report"></a>Rapport de chiffrement
 
-(**Nouveau!**) Le **rapport** de chiffrement affiche des informations sur les messages électroniques qui ont été chiffrés, via les stratégies de votre organisation ou par le biais de contrôles utilisateur final. L’équipe de sécurité de votre organisation peut utiliser les informations contenues dans ce rapport pour identifier des modèles et appliquer ou ajuster de façon proactive des stratégies pour les messages électroniques sensibles.
+(**Nouveau !**) Le **rapport de chiffrement** affiche des informations sur les messages électroniques qui ont été chiffrés, via les stratégies de votre organisation ou par le biais de contrôles utilisateur final. L’équipe de sécurité de votre organisation peut utiliser les informations contenues dans ce rapport pour identifier des modèles et appliquer ou ajuster de façon proactive des stratégies pour les messages électroniques sensibles.
 
-Pour afficher ce rapport, accédez au **rapport**de chiffrement du **tableau de bord** \> des **rapports** \> dans le centre de sécurité & conformité.
+Pour afficher ce rapport, accédez au **rapport de chiffrement**du **tableau de bord** \> des **rapports** \> dans le centre de sécurité & conformité.
 
 ![Rapport de chiffrement](media/encryptionreport-defaultview.png) 
 
@@ -51,7 +51,7 @@ Lors de la première ouverture du rapport, vous verrez des données sur les mét
 
 ![Filtres du rapport de chiffrement](media/encryptionreport-filters.png)   
 
-Vous pouvez également utiliser le menu dépanner **par** pour afficher les données en utilisant un modèle de chiffrement (ou une méthode).
+Vous pouvez également utiliser le menu **dépanner par** pour afficher les données en utilisant un modèle de chiffrement (ou une méthode).
 
 ![Méthode de chiffrement ou modèle](media/encryptionreport-breakdownby.png)
 
@@ -74,7 +74,7 @@ Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https
   
 ![Rapport d’état de protection contre les menaces](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
-Lorsque vous ouvrez pour la première fois le rapport d’état de protection contre les menaces, le rapport affiche les données des sept derniers jours par défaut; Toutefois, vous pouvez cliquer sur **filtres** et modifier la plage de dates pour un maximum de 90 jours de détail. (Si vous utilisez un abonnement d’évaluation, vous pouvez être limité à 30 jours de données.)
+Lorsque vous ouvrez pour la première fois le rapport d’état de protection contre les menaces, le rapport affiche les données des sept derniers jours par défaut ; Toutefois, vous pouvez cliquer sur **filtres** et modifier la plage de dates pour un maximum de 90 jours de détail. (Si vous utilisez un abonnement d’évaluation, vous pouvez être limité à 30 jours de données.)
 
 Ce rapport est utile pour l’affichage de l’efficacité et de l’impact des [fonctionnalités Exchange Online Protection](eop/eop-features.md)de votre organisation et pour des tendances à long terme. 
   
@@ -86,7 +86,7 @@ Vous pouvez également choisir d’afficher les données pour les e-mails identi
   
 ## <a name="malware-detections-report"></a>Rapport de détection des programmes malveillants
 
-Le rapport détections de **programmes malveillants** indique le nombre de messages entrants et sortants détectés comme contenant des programmes malveillants pour votre organisation. 
+Le rapport **détections de programmes malveillants** indique le nombre de messages entrants et sortants détectés comme contenant des programmes malveillants pour votre organisation. 
   
 Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez à **rapports** \> **tableau de bord** \> des **programmes malveillants**.
   
@@ -130,9 +130,9 @@ Sous le graphique, vous verrez les expéditeurs et destinataires de courriers le
   
 ## <a name="spoof-detections-report"></a>Rapport des détections d’usurpation
 
-Le rapport des détections d' **usurpation** indique le nombre de messages d’usurpation d’identité détectés et ceux qui ont été considérés comme «corrects» (courrier infalsifiable pour des raisons professionnelles légitimes). 
+Le rapport des **détections d’usurpation** indique le nombre de messages d’usurpation d’identité détectés et ceux qui ont été considérés comme « corrects » (courrier infalsifiable pour des raisons professionnelles légitimes). 
   
-Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez à rapports **tableau de bord** \> **** des **rapports** \> .
+Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez **à rapports** \> **tableau de bord** \> **** des rapports.
   
 ![Dans le centre &amp; de sécurité conformité, accédez à \> rapports \> tableau de bord de courrier frauduleux](media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
   
@@ -142,9 +142,9 @@ Cliquez (ou appuyez) sur le rapport pour l’ouvrir dans une nouvelle fenêtre d
   
 ## <a name="spam-detections-report"></a>Rapport de détections de courrier indésirable
 
-Le rapport détections du **courrier** indésirable affiche tout le contenu du courrier indésirable bloqué par Exchange Online. 
+Le rapport **détections du courrier indésirable** affiche tout le contenu du courrier indésirable bloqué par Exchange Online. Les messages sont comptabilisés par message et non par destinataire. Par exemple, si un message électronique a été envoyé à 100 destinataires au sein de votre organisation, il est compté comme un seul message.
   
-Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez à **rapports** \> **tableau de bord** \> de **courrier**indésirable.
+Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez à **rapports** \> **tableau de bord** \> de **courrier indésirable**.
   
 ![Pour afficher ce rapport, dans le centre &amp; de sécurité conformité, accédez à \> rapports \> tableau de bord de courriers indésirables EOP](media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
   
@@ -158,7 +158,7 @@ Sous le graphique, vous verrez une liste d’éléments de courrier indésirable
   
 ## <a name="sent-and-received-email-report"></a>Rapport de courrier électronique envoyé et reçu
 
-Le rapport de **courrier électronique envoyé et reçu** est un rapport intelligent qui affiche des informations sur les messages entrants et sortants, notamment les détections de courrier indésirable, les programmes malveillants et la messagerie électronique identifiés comme étant «en qualité». 
+Le rapport de **courrier électronique envoyé et reçu** est un rapport intelligent qui affiche des informations sur les messages entrants et sortants, notamment les détections de courrier indésirable, les programmes malveillants et la messagerie électronique identifiés comme étant « en qualité ». 
   
 Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https://protection.office.com), accédez à **rapports** \> **tableau de bord** \> des **messages envoyés et reçus**.
   
@@ -186,7 +186,7 @@ Des détails sont disponibles pour chaque message, notamment la raison de remise
   
 ![Le rapport messages signalés par l’utilisateur affiche les messages marqués comme courriers indésirables, non légitimes ou par tentatives de hameçonnage.](media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
   
-Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https://protection.office.com), effectuez l’une des opérations suivantes:
+Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https://protection.office.com), effectuez l’une des opérations suivantes :
   
 - Accédez au **** \> **tableau de bord** \> gestion **des menaces-messages signalés par l’utilisateur**.
     
@@ -197,31 +197,31 @@ Pour afficher ce rapport, dans le [Centre &amp; de sécurité conformité](https
 > [!IMPORTANT]
 > Pour que le rapport des messages signalés par l’utilisateur fonctionne correctement, la **journalisation d’audit doit être activée** pour votre environnement Office 365. Cette opération est généralement réalisée par une personne disposant du rôle journaux d’audit dans Exchange Online. Pour plus d’informations, voir [activer ou désactiver la recherche dans le journal d’audit Office 365](turn-audit-log-search-on-or-off.md). 
   
-## <a name="what-permissions-are-needed-to-view-these-reports"></a>Quelles sont les autorisations nécessaires pour afficher ces rapports?
+## <a name="what-permissions-are-needed-to-view-these-reports"></a>Quelles sont les autorisations nécessaires pour afficher ces rapports ?
 
 Pour afficher et utiliser les rapports décrits dans cet article, **vous devez disposer d’un rôle approprié pour le centre de sécurité &amp; et le centre d’administration Exchange**.
 
-- Pour le centre &amp; de sécurité conformité, vous devez disposer de l’un des rôles suivants:
+- Pour le centre &amp; de sécurité conformité, vous devez disposer de l’un des rôles suivants :
     - Gestion de l’organisation
     - Administrateur de la sécurité (qui peut être affecté dans le centre d’administration Azure[https://aad.portal.azure.com](https://aad.portal.azure.com)Active Directory ()
     - Lecteur de sécurité
 
-- Pour Exchange Online, vous devez disposer de l’un des rôles suivants, qui est affecté dans le centre[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)d’administration Exchange () ou avec des applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)):
+- Pour Exchange Online, vous devez disposer de l’un des rôles suivants, qui est affecté dans le centre[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)d’administration Exchange () ou avec des applets de commande PowerShell (consultez la rubrique [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) :
     - Gestion de l’organisation
     - Gestion de l’organisation en affichage seul
     - Rôle Destinataires en affichage uniquement
     - Gestion de la conformité
 
-Pour en savoir plus, consultez les ressources suivantes:
+Pour en savoir plus, consultez les ressources suivantes :
 
 - [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 
 - [Autorisations des fonctionnalités dans Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
    
    
-## <a name="what-if-the-reports-arent-showing-data"></a>Qu’en est-il si les rapports n’affichent pas de données?
+## <a name="what-if-the-reports-arent-showing-data"></a>Qu’en est-il si les rapports n’affichent pas de données ?
 
-Si vous ne voyez pas de données dans vos rapports, vérifiez que vos stratégies sont correctement configurées. Pour en savoir plus, consultez la rubrique Protégez-vous [contre les menaces dans Office 365](protect-against-threats.md).
+Si vous ne voyez pas de données dans vos rapports, vérifiez que vos stratégies sont correctement configurées. Pour en savoir plus, consultez la rubrique [Protégez-vous contre les menaces dans Office 365](protect-against-threats.md).
   
 ## <a name="related-topics"></a>Sujets associés
 

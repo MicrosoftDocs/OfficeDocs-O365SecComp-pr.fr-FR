@@ -13,22 +13,22 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Cette solution vous indique les attaques informatiques les plus courantes pouvant ressembler à Office 365 et comment y répondre.
-ms.openlocfilehash: 900022d97c974bdf84d3077c1127e715c06fa5de
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: Cette solution vous indique les attaques Cybersecurity les plus courantes pouvant ressembler à Office 365 et comment y répondre.
+ms.openlocfilehash: f756141b9edfdef2769f18979dcab5ba731ee3fe
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157675"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761670"
 ---
 # <a name="office-365-security-incident-response"></a>Réponse aux incidents de sécurité Office 365
 
- **Résumé:** Cette solution vous indique les indicateurs pour les attaques de Cyber-sécurité les plus courantes dans Office 365, la confirmation positive d’une attaque donnée et la façon de y répondre.
+ **Résumé :** Cette solution vous indique les indicateurs pour les attaques Cybersecurity les plus courantes dans Office 365, la confirmation positive d’une attaque donnée et la façon de y répondre.
   
 ## <a name="overview"></a>Vue d’ensemble
-Toutes les attaques informatiques ne peuvent pas être contrecarrées. Les agresseurs cherchent constamment de nouvelles faiblesses dans votre stratégie défensive ou ils exploitent les anciens. Savoir comment reconnaître une attaque vous permet de y répondre plus rapidement, ce qui réduit la durée de l’incident de sécurité.
+Tous les cyberattaques ne peuvent pas être déconsidérés. Les agresseurs cherchent constamment de nouvelles faiblesses dans votre stratégie défensive ou ils exploitent les anciens. Savoir comment reconnaître une attaque vous permet de y répondre plus rapidement, ce qui réduit la durée de l’incident de sécurité.
 
-Cette série d’articles vous aide à comprendre ce qu’un type d’attaque particulier peut ressembler dans Office 365 et vous indique les étapes que vous pouvez suivre pour répondre. Il s’agit de points d’entrée rapides à comprendre:
+Cette série d’articles vous aide à comprendre ce qu’un type d’attaque particulier peut ressembler dans Office 365 et vous indique les étapes que vous pouvez suivre pour répondre. Il s’agit de points d’entrée rapides à comprendre :
  
 - Ce qu’est l’attaque et comment elle fonctionne.
 - Quels signes, appelés indicateurs de compromission (IOC), Rechercher et comment les Rechercher.

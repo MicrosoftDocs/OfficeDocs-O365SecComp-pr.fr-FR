@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Vue d’ensemble des attaques par déni de service (DoS).
-ms.openlocfilehash: df3ab233271f02b91f16f8954972a61000bf4d3b
-ms.sourcegitcommit: aa60a6cdf83c67576e858668d1182cd4fffeb5e0
+ms.openlocfilehash: 94f87a11f396cb8ef09fd6d670d73ba8d1e88eda
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33622474"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761660"
 ---
 # <a name="defend-against-denial-of-service-attacks-in-office-365"></a>Défense contre les attaques par déni de service dans Office 365
 
@@ -34,13 +34,13 @@ Microsoft offre une infrastructure de confiance pour plus de 200 services Cloud 
 - Skype
 - Xbox LIVE
 
-En tant qu’organisation mondiale avec une présence Internet importante et de nombreuses propriétés Internet importantes qui fournissent des services en nuage, Microsoft est une cible commune et commune aux pirates et autres personnes malveillantes. La couche de communication réseau entre les clients et le Cloud Microsoft est l’une des principales cibles d’attaques malveillantes. En fait, Microsoft se comporte de façon continue et permanente sous une forme de cyber-attaque basée sur le réseau. En fonction de ces principes, Microsoft utilise des principes de sécurité de défense en profondeur pour protéger ses services et réseaux Cloud. Sans systèmes d’atténuation fiables et persistants qui se défendent contre ces attaques, les services Cloud de Microsoft seraient hors ligne et indisponibles pour les clients.
+En tant qu’organisation mondiale avec une présence Internet importante et de nombreuses propriétés Internet importantes qui fournissent des services en nuage, Microsoft est une cible commune et commune aux pirates et autres personnes malveillantes. La couche de communication réseau entre les clients et le Cloud Microsoft est l’une des principales cibles d’attaques malveillantes. En fait, Microsoft s’exécute de façon continue et permanente sous une forme de cyber basée sur le réseau. En fonction de ces principes, Microsoft utilise des principes de sécurité de défense en profondeur pour protéger ses services et réseaux Cloud. Sans systèmes d’atténuation fiables et persistants qui se défendent contre ces attaques, les services Cloud de Microsoft seraient hors ligne et indisponibles pour les clients.
 
 ## <a name="definition-and-symptoms-of-denial-of-service-attacks"></a>Définition et symptômes des attaques par déni de service
 
 Pour attaquer les services réseau, il est possible de créer de nombreuses requêtes auprès d’hôtes de service afin de submerger le réseau et les serveurs afin de refuser les services aux utilisateurs légitimes. Il s’agit d’une attaque par déni de service (DoS). Lorsque l’attaque est effectuée par plusieurs acteurs, points de terminaison et/ou vecteurs, elle est considérée comme une attaque de déni de service distribuée. Bien que les moyens, les motivations et les cibles varient, les attaques DoS et DDoS consistent généralement à empêcher un site ou un service Internet de fonctionner correctement ou du tout, de façon temporaire ou indéfinie.
 
-L’équipe américaine de préparation de l' [urgence informatique](https://www.us-cert.gov/) (US-CERT) définit les symptômes des attaques par déni:
+L’équipe américaine de préparation de l' [urgence informatique](https://www.us-cert.gov/) (US-CERT) définit les symptômes des attaques par déni :
 
 - Ralentissement des performances réseau (lors de l’ouverture de fichiers ou accès aux sites Internet)
 - Indisponibilité d’un site Web
