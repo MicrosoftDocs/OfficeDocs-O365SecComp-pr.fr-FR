@@ -4,7 +4,7 @@ keywords: AIR, autoIR, ATP, automatisation, analyse, réponse, correction, menac
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/04/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Prise en main des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 2c64ea936170524811839db7c593d67bfe11a928
-ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
+ms.openlocfilehash: c2c2b9a0409c472c99b07293a002f9bdbf6c5090
+ms.sourcegitcommit: e6c0d9aea3172a5ccc6c7943625d69144ba20aca
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36762021"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36790928"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Examiner et répondre automatiquement aux menaces dans Office 365
 
@@ -89,6 +89,12 @@ Certains types d’alertes déclenchent une enquête automatisée dans Office 36
 5. Sélectionnez un élément dans la liste. Un menu volant s’ouvre, avec des détails sur l’alerte et des liens vers des informations et des actions supplémentaires.
 
 6. Passez en revue les informations de la fenêtre mobile et, en fonction de l’alerte en particulier, effectuez une action, telle que **résoudre**, **supprimer**ou **avertir les utilisateurs**. 
+
+    - La **résolution** équivaut à la fermeture d’une alerte
+    
+    - La **suppression** entraîne le déclenchement d’alertes par une stratégie pendant une période de temps spécifiée.
+    
+    - **Avertir les utilisateurs** de l’envoi d’un courrier électronique avec les adresses de messagerie des utilisateurs déjà entrées, et permet à l’équipe des opérations de sécurité de taper un message pour ces utilisateurs. (Ceci est similaire à l’envoi d’un message à des destinataires à l’aide de l' [Explorateur de menaces](threat-explorer.md).)  
 
 ## <a name="use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>Utiliser l’API activité de gestion d’Office 365 pour des solutions de création de rapports personnalisées ou tierces
 
