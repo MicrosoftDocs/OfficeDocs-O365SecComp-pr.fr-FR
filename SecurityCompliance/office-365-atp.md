@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 – Protection avancée contre les menaces inclut des pièces jointes sécurisées, des liens sûrs, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités d’intelligence contre les menaces.
-ms.openlocfilehash: ca948fdd99ca04830ecb7685ed8930a71345299f
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: d9dda9b19f601e26d01a18f7602f4fae3e0a0cb4
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36231088"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761720"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 – Protection avancée contre les menaces
 
