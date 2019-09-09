@@ -1,5 +1,5 @@
 ---
-title: Recherche de contenu dans Office 365
+title: Recherche de contenu dans Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -185,7 +185,7 @@ Pour plus d’informations sur les recherches de contenu, voir les sections suiv
   
 [Éléments partiellement indexés](#partially-indexed-items)
 
-[Recherche de contenu dans un environnement multi-géographique SharePoint](#searching-for-content-in-a-sharepoint-multi-geo-environment)
+[Recherche de contenu dans un environnement SharePoint multigéographique](#searching-for-content-in-a-sharepoint-multi-geo-environment)
   
 ### <a name="content-search-limits"></a>Limites de la recherche de contenu
 
@@ -369,21 +369,21 @@ De plus, les types de conteneur de fichier suivants sont pris en charge. Vous po
 
 - Comme indiqué précédemment, les éléments partiellement indexés dans les boîtes aux lettres sont inclus dans les résultats de recherche estimés. Les éléments partiellement indexés de SharePoint et OneDrive ne sont pas inclus dans les résultats de recherche estimés. 
     
-- Si un élément partiellement non indexé correspond à la requête de la recherche (car d’autres propriétés de document ou de message répondent aux critères de recherche), il ne sera pas inclus dans l’estimation du nombre d’éléments non indexés. Si un élément partiellement indexé est exclu des critères de recherche, il n’est pas inclus dans le nombre estimé d’éléments non indexés. Pour plus d’informations, voir[Éléments partiellement indexés dans la recherche de contenu dans Office 365](partially-indexed-items-in-content-search.md).
+- Si un élément partiellement non indexé correspond à la requête de la recherche (car d’autres propriétés de document ou de message répondent aux critères de recherche), il ne sera pas inclus dans l’estimation du nombre d’éléments non indexés. Si un élément partiellement indexé est exclu des critères de recherche, il n’est pas inclus dans le nombre estimé d’éléments non indexés. Si vous souhaitez en savoir plus, veuillez consulter l’article [Éléments partiellement indexés dans la recherche de contenu dans Office 365](partially-indexed-items-in-content-search.md).
 
-### <a name="searching-for-content-in-a-sharepoint-multi-geo-environment"></a>Recherche de contenu dans un environnement multi-géographique SharePoint
+### <a name="searching-for-content-in-a-sharepoint-multi-geo-environment"></a>Recherche de contenu dans un environnement SharePoint multigéographique
 
-S’il est nécessaire pour un gestionnaire eDiscovery de rechercher du contenu dans SharePoint et OneDrive dans différentes régions dans un [environnement multi-géographique SharePoint](https://go.microsoft.com/fwlink/?linkid=860840), vous devez effectuer les opérations suivantes :
+Si une personne dotée du rôle Gestionnaire eDiscovery doit rechercher du contenu dans SharePoint et OneDrive à travers différentes régions dans un [environnement SharePoint multigéographique](https://go.microsoft.com/fwlink/?linkid=860840), vous devez effectuer les opérations suivantes :
    
-1. Créez un compte d’utilisateur distinct pour chaque emplacement géographique satellite dans lequel le gestionnaire eDiscovery doit effectuer une recherche. Pour rechercher du contenu dans les sites dans cet emplacement géographique, le gestionnaire eDiscovery doit se connecter au compte que vous avez créé pour cet emplacement, puis exécuter une recherche de contenu.
+1. Créez un compte d’utilisateur distinct pour chaque position géographique de satellite où le Gestionnaire eDiscovery doit effectuer une recherche. Pour rechercher du contenu dans les sites dans cette position géographique, le Gestionnaire eDiscovery doit se connecter au compte que vous avez créé pour cette position, puis exécuter une recherche de contenu.
 
-2. Créez un filtre d’autorisation de recherche pour chaque emplacement géographique satellite (et le compte d’utilisateur correspondant) sur lequel le gestionnaire eDiscovery doit effectuer une recherche. Chacun de ces filtres d’autorisations de recherche limite l’étendue de la recherche de contenu à un emplacement géographique spécifique lorsque le gestionnaire eDiscovery est connecté au compte d’utilisateur associé à cet emplacement.
+2. Créez un filtre d’autorisation de recherche pour chaque position géographique de satellite (et le compte d’utilisateur correspondant) où le Gestionnaire eDiscovery doit effectuer une recherche. Chacun de ces filtres d’autorisations de recherche limite l’étendue de la recherche de contenu à une position géographique spécifique lorsque le Gestionnaire eDiscovery est connecté au compte d’utilisateur associé à cette position.
  
 > [!TIP]
-> Vous n’êtes pas obligé d’utiliser cette stratégie lorsque vous utilisez l'outil de recherche dans [Advanced eDiscovery](compliance20/overview-ediscovery-20.md). En effet, tous les centres de données sont recherchés lorsque vous effectuez des recherches dans les sites SharePoint et les comptes OneDrive dans Advanced eDiscovery. Vous devez utiliser cette stratégie de comptes d’utilisateurs et de filtres d’autorisations spécifiques aux zones de recherche uniquement lorsque vous utilisez l’outil de recherche de contenu et que vous exécutez des recherches associées à des cas de eDiscovery](ediscovery-cases.md). 
+> Vous n’êtes pas obligé d’utiliser cette stratégie lorsque vous utilisez l'outil de recherche dans [Advanced eDiscovery](compliance20/overview-ediscovery-20.md). En effet, lorsque vous effectuez des recherches dans les sites SharePoint et les comptes OneDrive dans Advanced eDiscovery, elles s’effectuent sur tous les centres de données. Vous devez uniquement utiliser cette stratégie de comptes d’utilisateurs et de filtres d’autorisations propres aux zones de recherche lorsque vous utilisez l’outil de recherche de contenu et que vous exécutez des recherches associées à des [cas eDiscovery](ediscovery-cases.md). 
 
 
-Par exemple, supposons qu’un gestionnaire eDiscovery a besoin de rechercher du contenu SharePoint et OneDrive dans des emplacements satellites dans Chicago, Londres et Tokyo. La première étape consiste à créer trois comptes d’utilisateurs, un pour chaque emplacement. L’étape suivante consiste à créer trois filtres d’autorisations de recherche, un pour chaque emplacement et compte d’utilisateur correspondant. Voici quelques exemples des trois filtres d’autorisations de recherche pour ce scénario. Dans chacun de ces exemples, la **région** spécifie l’emplacement du centre de données SharePoint pour cette géo et le paramètre **utilisateurs** spécifie le compte d’utilisateur correspondant. 
+Prenons l’exemple d’un Gestionnaire eDiscovery devant rechercher du contenu SharePoint et OneDrive dans des satellites positionnés à Chicago, Londres et Tokyo. La première étape consiste à créer trois comptes d’utilisateurs : un pour chaque position. L’étape suivante consiste à créer trois filtres d’autorisations de recherche, un pour chaque position et compte d’utilisateur correspondant. Voici quelques exemples des trois filtres d’autorisations de recherche pour ce scénario. Dans chacun de ces exemples, le paramètre **Région** spécifie la position du centre de données SharePoint pour cette zone géographique et le paramètre **Utilisateurs** spécifie le compte d’utilisateur correspondant. 
 
 **Amérique du Nord**
 ```
@@ -400,10 +400,10 @@ New-ComplianceSecurityFilter -FilterName "SPMultiGeo-London" -Users ediscovery-l
 New-ComplianceSecurityFilter -FilterName "SPMultiGeo-Toyko" -Users ediscovery-tokyo@contoso.com -Region JPN -Action ALL
 ```
 
-Gardez les points suivants à l’esprit lorsque vous utilisez des filtres d’autorisation de recherche pour rechercher du contenu dans des environnements multi-géographiques :
+Lorsque vous utilisez des filtres d’autorisation de recherche pour rechercher du contenu dans des environnements multigéographiques, n’oubliez pas les points suivants :
 
-- Le paramètre **Région** dirige les recherches vers l’emplacement de satellite spécifié. Si un gestionnaire d’eDiscovery recherche uniquement les sites SharePoint et OneDrive en dehors de la région spécifiée dans le filtre des autorisations de recherche, aucun résultat de recherche n’est renvoyé. 
+- Le paramètre **Région** dirige les recherches vers la position de satellite spécifiée. La recherche ne retourne aucun résultat lorsqu’un Gestionnaire eDiscovery recherche uniquement des sites SharePoint et OneDrive en dehors de la position spécifiée dans le filtre des autorisations de recherche. 
 
-- Le paramètre **Région** ne contrôle pas les recherches dans les boîtes aux lettres Exchange. La recherche s’effectue dans tous les centres de données lorsque vous effectuez des recherches dans les boîtes aux lettres. 
+- Le paramètre **Région** ne contrôle pas les recherches dans les boîtes aux lettres Exchange. Lorsque vous effectuez des recherches dans des boîtes aux lettres, elles s’appliquent à tous les centres de données. 
     
-Pour plus d’informations sur l’utilisation des filtres d’autorisation de recherche dans un environnement multi-géographique, voir la section «Rechercher et exporter du contenu dans des environnements multi-géo» de la rubrique [Configurer des limites de conformité pour les investigations eDiscovery dans Office 365](set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments).
+Si vous souhaitez en savoir plus sur l’utilisation des filtres d’autorisation de recherche dans un environnement multigéographique, veuillez consulter la section « Recherche et exportation de contenu dans des environnements multigéographiques » de l’article [Configurer les limites de conformité pour les enquêtes eDiscovery dans Office 365](set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments).
