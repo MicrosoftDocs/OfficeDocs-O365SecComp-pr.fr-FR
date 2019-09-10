@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Une stratégie de rétention vous permet de décider de façon proactive de conserver du contenu, de le supprimer (ou les deux), de conserver du contenu, puis de le supprimer ; d’appliquer une stratégie unique à l’ensemble de l’organisation ou à seulement quelques emplacements ou utilisateurs ; et d’appliquer une stratégie à tout le contenu ou seulement au contenu remplissant certaines conditions.
-ms.openlocfilehash: 71c7fbf06709dd9d7e6ba3f084e0377f821ca171
-ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
+ms.openlocfilehash: bb5c9a8c3c2443ff6913b3de1b88807d7530384e
+ms.sourcegitcommit: 81b3bff27bc60235a38004c5b0297ac454331b25
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36444894"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822504"
 ---
 # <a name="overview-of-retention-policies"></a>Vue d’ensemble des stratégies de rétention
 
@@ -51,8 +51,8 @@ Enfin, certaines organisations doivent respecter des réglementations telles que
   
 La création et la gestion des stratégies de rétention s’effectuent sur :
 
-- la page **Stratégies** du Centre de conformité Microsoft 365 ;
-- la page **Rétention** (sous **Gouvernance des données**) du Centre de sécurité &amp; conformité Office 365.
+- la page **Stratégies** du [Centre de conformité Microsoft 365](https://compliance.microsoft.com/).
+- la page **Rétention** sous **Gouvernance des données** du [Centre de sécurité &amp;et de conformité Office 365](https://protection.office.com/).
   
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>Fonctionnement d’une stratégie de rétention avec du contenu sur place
 
@@ -187,7 +187,7 @@ L’une des fonctionnalités les plus puissantes d’une stratégie de rétentio
     
 - Comptes OneDrive
     
-- Les groupes Office 365 (s’applique au contenu de la boîte aux lettres, du site et des documents du groupe. La prise en charge pour le contenu dans Planner, Yammer et CRM sera bientôt disponible.)
+- Groupes Office 365 (s’applique au contenu de la boîte aux lettres, du site, des documents.)
     
 - Dossiers publics Exchange
     
@@ -198,6 +198,8 @@ Voici d’autres fonctionnalités importantes d’une stratégie de rétention m
 - Il n’existe aucune limite au nombre de boîtes aux lettres ou de sites que la stratégie peut inclure.
     
 - Pour Exchange, toute nouvelle boîte aux lettres créée après l’application de la stratégie hérite automatiquement de la stratégie.
+
+
   
 ### <a name="a-policy-that-applies-to-entire-locations"></a>Une stratégie qui s’applique aux emplacements entiers
 
@@ -231,7 +233,7 @@ Notez que **Historique des conversations**, un dossier dans Outlook, est une fon
 
 ### <a name="office-365-groups-locations"></a>Emplacements de groupes Office 365
 
-Pour conserver le contenu pour un groupe Office 365, vous devez utiliser l’emplacement de groupes Office 365. Même si un groupe Office 365 a une boîte aux lettres Exchange, une stratégie de rétention qui inclut l’emplacement Exchange entier n’inclut pas du contenu dans les boîtes aux lettres de groupe Office 365. Une stratégie de rétention appliquée à un groupe Office 365 inclut la boîte aux lettres de groupe et le site.
+Pour conserver le contenu d'un groupe Office 365, vous devez utiliser l'emplacement des groupes Office 365. Même si un groupe Office 365 possède une boîte aux lettres Exchange, une politique de rétention qui inclut l'ensemble de l'emplacement Exchange n'inclut pas le contenu des boîtes aux lettres du groupe Office 365. Une stratégie de rétention appliquée à un groupe Office 365 inclut la boîte aux lettres de groupe et le site. Une stratégie de rétention appliquée à un groupe Office 365 protège les ressources créées par un groupe Office 365, ce qui inclut Microsoft Teams.
 
 Par ailleurs, il n’est pas possible d’utiliser l’emplacement Exchange pour inclure ou exclure une boîte aux lettres de groupe spécifique. Bien que l’emplacement Exchange permet au départ d’une boîte aux lettres de groupe impérativement être sélectionnées, lorsque vous essayez d’enregistrer la stratégie de rétention, vous recevrez une erreur « RemoteGroupMailbox » n’est pas une sélection valide pour l’emplacement Exchange. 
   
@@ -253,7 +255,7 @@ Nous continuons de travailler sur la rétention dans Teams, et des fonctionnalit
     
 - **Teams peut prendre jusqu’à 30 jours pour nettoyer le contenu conservé** Une stratégie de rétention appliquée à Teams permet de supprimer le contenu de tous les emplacements de stockage pertinents. Toutefois, immédiatement après le lancement, cela peut prendre jusqu’à 30 jours à Teams pour nettoyer le contenu en fonction de la stratégie de rétention. Mais même si le contenu apparaît toujours dans les clients Teams, ce contenu n’apparaît pas dans la recherche de contenu ou eDiscovery après la fin de la période de rétention. 
     
-Dans une équipe, les fichiers partagés dans une conversation sont stockés dans le compte OneDrive de l’utilisateur qui a partagé le fichier. Les fichiers chargés sur des canaux sont stockés dans le site SharePoint pour l’équipe en question. Par conséquent, pour conserver ou supprimer des fichiers dans une équipe, vous devez créer une stratégie de rétention qui s’applique aux emplacements SharePoint et OneDrive. Si vous voulez appliquer une stratégie aux fichiers d’une équipe spécifique, vous pouvez choisir le site SharePoint de l’équipe et les comptes OneDrive des utilisateurs au sein de l’équipe.
+Dans une équipe, les fichiers qui sont partagés au cours d’une conversation sont stockés dans le compte OneDrive de l’utilisateur qui partage le fichier. Les fichiers qui sont chargés dans des canaux sont stockés dans le site SharePoint associé à l’équipe. Par conséquent, pour conserver ou supprimer des fichiers dans une équipe, vous devez créer une stratégie de rétention qui s’applique spécifiquement aux emplacements SharePoint et OneDrive. Pour appliquer une stratégie aux fichiers d’une équipe spécifique, vous pouvez choisir le site SharePoint de l’équipe et les comptes OneDrive des utilisateurs qui font partie de l’équipe.
   
 Une stratégie de rétention qui s’applique à Teams peut utiliser le [Verrouillage de conservation](#locking-a-retention-policy).
   
@@ -339,6 +341,8 @@ Plusieurs autres fonctionnalités étaient auparavant utilisées pour conserver 
 - [Gestion des cas eDiscovery dans le Centre de sécurité &amp; conformité Office 365](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (conservation eDiscovery) 
     
 - [Conservation inaltérable et conservation pour litige](https://go.microsoft.com/fwlink/?linkid=846124) (conservation eDiscovery) 
+
+- [Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online](https://docs.microsoft.com/office365/securitycompliance/identify-a-hold-on-an-exchange-online-mailbox)
     
 - [Balises de rétention et stratégies de rétention](https://go.microsoft.com/fwlink/?linkid=846125), aussi appelées [gestion des enregistrements de messagerie (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) (suppression uniquement) 
     
@@ -364,11 +368,11 @@ Sur les sites SharePoint, vous utilisez peut-être des [stratégies de gestion d
   
 ## <a name="what-happened-to-preservation-policies"></a>Qu’est-il advenu des stratégies de conservation ?
 
-Si vous utilisiez une stratégie de conservation, celle-ci a été automatiquement convertie en stratégie de rétention qui utilise uniquement l’action de conservation : la stratégie ne supprimera pas le contenu. La stratégie de conservation continuera de fonctionner et de conserver votre contenu sans que vous ayez à apporter la moindre modification. Vous trouverez ces stratégies sur la page **Stratégies** du Centre de conformité Microsoft 365 ou sur la page **Rétention** (sous **Gouvernance des données**) du Centre de sécurité &amp; conformité. Vous pouvez modifier une stratégie de conservation afin de changer la période de rétention, mais vous ne pouvez pas apporter d’autres modifications ; par exemple, vous ne pouvez pas ajouter ou supprimer des emplacements. 
+Si vous utilisiez une stratégie de conservation, celle-ci a été automatiquement convertie en stratégie de rétention qui utilise uniquement l’action de conservation : la stratégie ne supprimera pas le contenu. La stratégie de conservation continuera de fonctionner et de conserver votre contenu sans que vous ayez à apporter la moindre modification. Vous trouverez ces stratégies sur la page **Stratégies** du [Centre de conformité Microsoft 365](https://compliance.microsoft.com/) ou sur la page**Rétention** sous **Gouvernance des données** du [Centre de sécurité &amp; et de conformité](https://protection.office.com/). Vous pouvez modifier une stratégie de conservation afin de changer la période de rétention, mais vous ne pouvez pas apporter d’autres modifications ; par exemple, vous ne pouvez pas ajouter ou supprimer des emplacements. 
   
 ## <a name="permissions"></a>Autorisations
 
-Les membres de votre équipe de conformité appelés à créer des stratégies de rétention nécessitent des autorisations pour le Centre de sécurité &amp; conformité. Par défaut, votre administrateur client a accès à cet emplacement et peut accorder l’accès aux responsables de la mise en conformité et à d’autres personnes au Centre de sécurité &amp; conformité, sans leur donner toutes les autorisations d’un administrateur client. Pour ce faire, nous vous recommandons d’accéder à la page **Autorisations** du Centre de sécurité &amp; conformité, de modifier le groupe de rôles **Administrateur de conformité** et d’ajouter des membres à ce groupe de rôles. 
+Les membres de votre équipe de conformité appelés à créer des stratégies de rétention ont besoin d’autorisations pour accéder au [Centre de sécurité &amp;et de conformité](https://protection.office.com/). Par défaut, votre administrateur locataire a accès à cet emplacement et peut accorder l’accès aux responsables de la mise en conformité et à d’autres personnes du [Centre de sécurité &amp; et de conformité](https://protection.office.com/), sans leur donner toutes les autorisations d’un administrateur locataire. Pour ce faire, nous vous recommandons d’accéder à la page **Autorisations** du [Centre de sécurité &amp; et de conformité](https://protection.office.com/), de modifier le groupe de rôles **Administrateur de conformité** et d’ajouter des membres à ce groupe de rôles. 
   
 Pour obtenir plus d’informations, consultez l’article [Octroi de l’accès au Centre de sécurité &amp; conformité Office 365 aux utilisateurs](grant-access-to-the-security-and-compliance-center.md).
   
@@ -385,5 +389,7 @@ Pour utiliser les cmdlets des stratégies de rétention, vous devez effectuer le
 ## <a name="more-information"></a>Plus d’informations
 
 - [Vue d’ensemble des étiquettes](labels.md)
+- [Limites de SharePoint Online](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+- [Limites et spécifications de Microsoft Teams](https://docs.microsoft.com/fr-FR/microsoftteams/limits-specifications-teams) 
     
 
