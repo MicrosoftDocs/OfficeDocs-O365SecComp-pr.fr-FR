@@ -1,9 +1,9 @@
 ---
-title: Recherche et réponse automatiques dans Office 365
+title: Réponse automatique aux incidents (AIR) dans Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/04/2019
+ms.date: 09/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,17 +12,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Découvrez les fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection.
-ms.openlocfilehash: a62714adb0682d3faf27e25fff365bb1ba6d4fc5
-ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
+description: Découvrez les fonctionnalités de réponse aux incidents automatisées dans Office 365 Advanced Threat Protection.
+ms.openlocfilehash: 84b68efe35ebefddf4770f491cc3be453a81f577
+ms.sourcegitcommit: 81b3bff27bc60235a38004c5b0297ac454331b25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36761700"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822484"
 ---
-# <a name="automated-investigation-and-response-air-in-office-365"></a>Recherche et réponse automatiques dans Office 365
+# <a name="automated-incident-response-air-in-office-365"></a>Réponse automatique aux incidents (AIR) dans Office 365
 
-Les fonctionnalités d’analyse et de réponse automatisées (incluses dans [Office 365 Advanced Threat Protection](office-365-atp.md) plan 2) vous permettent d’exécuter des processus d’enquête automatisés en réponse à des menaces connues qui existent aujourd’hui. Lisez cet article pour obtenir une vue d’ensemble de l’AIR et comment il peut aider votre organisation et les équipes chargées de la sécurité à réduire les menaces de manière plus efficace. Pour commencer à utiliser AIR, consultez la rubrique [enquêter et répondre aux menaces dans Office 365](office-365-air.md).
+Les fonctionnalités de réponse aux incidents (AIR) automatisé (incluses dans [Office 365 Advanced Threat Protection](office-365-atp.md) plan 2) vous permettent d’exécuter des processus d’enquête automatisés en réponse à des menaces connues qui existent aujourd’hui. Lisez cet article pour obtenir une vue d’ensemble de l’AIR et comment il peut aider votre organisation et les équipes chargées de la sécurité à réduire les menaces de manière plus efficace. Pour commencer à utiliser AIR, consultez la rubrique [enquêter et répondre aux menaces dans Office 365](office-365-air.md).
 
 > [!NOTE]
 > Vous devez être un administrateur général, un administrateur de sécurité, un opérateur de sécurité ou un lecteur de sécurité pour effectuer les tâches décrites dans cet article. Pour plus d’informations, consultez la rubrique [Microsoft 365 Security Center : Roles and Permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
@@ -102,19 +102,22 @@ Vous pouvez :
 - Appliquer des filtres. Choisissez entre **type**d’enquête **, période**, **État**ou une combinaison de ces éléments.
 - Exportez les données dans un fichier. csv.
 
-L’état d’enquête indique la progression de l’analyse et des actions. Lors de l’exécution de l’enquête, les États changent pour indiquer si des menaces ont été détectées et si des actions ont été approuvées. 
-- **Début**: l’enquête est mise en file d’attente pour commencer bientôt.
-- **En cours d’exécution**: l’enquête a commencé et mène son analyse
-- **Aucune menace détectée**: l’enquête a terminé son analyse et aucune menace n’a été détectée.
-- **Terminé par le système**: l’enquête n’a pas été fermée et a expiré après 7 jours
-- **Action en attente**: l’enquête a détecté des menaces avec des actions recommandées
-- **Menaces détectées**: l’enquête a détecté des menaces, mais les menaces n’ont pas d’actions disponibles dans l’air
-- **Corrigé**: l’enquête s’est terminée et a été entièrement corrigée (toutes les actions ont été approuvées)
-- **Partiellement résolue**: l’enquête terminée et certaines des actions recommandées ont été approuvées
-- **Terminé par l’utilisateur**: un administrateur a mis fin à l’enquête.
-- **Échec**: une erreur s’est produite lors de l’enquête qui l’empêche d’atteindre une conclusion sur les menaces
-- Mise **en file d’attente par limitation**: l’enquête attend une analyse en raison de limitations de traitement du système (pour protéger les performances du service)
-- **Interruption par la limitation**: l’enquête n’a pas pu être terminée en temps suffisant en raison des limitations de traitement du volume et du système. Vous pouvez déclencher à nouveau l’enquête en sélectionnant l’e-mail dans l’Explorateur et en sélectionnant l’action examiner.
+L’état d’enquête indique la progression de l’analyse et des actions. Lors de l’exécution de l’enquête, les États changent pour indiquer si des menaces ont été détectées et si des actions ont été approuvées, comme décrit dans le tableau suivant :
+
+|Statut | Description  |
+|----|----| 
+|**Démarrage**|L’enquête est mise en file d’attente pour commencer bientôt |
+|**En cours d'exécution** |L’enquête a commencé et mène son analyse |
+|**Aucune menace détectée** |L’enquête a terminé son analyse et aucune menace n’a été trouvée |
+|**Terminé par le système** |L’enquête n’a pas été fermée et a expiré après 7 jours |
+|**Action en attente** |L’enquête a détecté des menaces avec des actions recommandées |
+|**Menaces détectées** |L’enquête a détecté des menaces, mais les menaces n’ont pas d’actions disponibles dans l’AIR |
+|**Corrigés** |L’enquête s’est terminée et a été entièrement corrigée (toutes les actions ont été approuvées) |
+|**Partiellement résolu** |L’enquête terminée et certaines des actions recommandées ont été approuvées |
+|**Terminé par l’utilisateur** |Un administrateur a mis fin à l’enquête |
+|**Échec**|Une erreur s’est produite lors de l’enquête qui l’a empêché d’atteindre une conclusion sur les menaces |
+|**Mise en file d’attente par limitation**|L’enquête est en attente d’analyse en raison de limitations de traitement du système (pour protéger les performances du service) |
+|**Interruption par la limitation**|L’enquête n’a pas pu être terminée en temps suffisant en raison des limitations de traitement du volume et du système. Vous pouvez déclencher à nouveau l’enquête en sélectionnant l’e-mail dans l’Explorateur et en sélectionnant l’action examiner. |
 
 ### <a name="investigation-graph"></a>Graphique d’enquête
 
@@ -270,7 +273,7 @@ La correction est la phase finale du manuel. Pendant cette phase, les étapes de
 
 ## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>Exemple : un administrateur de sécurité déclenche une enquête à partir de l’Explorateur de menaces
 
-En plus des recherches automatiques déclenchées par une alerte, l’équipe des opérations de sécurité de votre organisation peut déclencher une enquête automatique à partir d’une vue dans l' [Explorateur de menaces](use-explorer-in-security-and-compliance.md).
+En plus des recherches automatisées déclenchées par une alerte, l’équipe des opérations de sécurité de votre organisation peut déclencher une enquête automatisée à partir d’une vue dans l' [Explorateur de menaces](use-explorer-in-security-and-compliance.md).
 
 Par exemple, supposons que vous affichiez des données dans l’Explorateur à propos des messages signalés par l’utilisateur. Vous pouvez sélectionner un élément dans la liste des résultats, puis cliquer sur **examiner**.
 
@@ -280,7 +283,7 @@ Autre exemple : Supposons que vous affichiez des données sur les messages éle
 
 ![Démarrage d’une enquête pour les programmes malveillants dans l’Explorateur](media/Explorer-Malware-Email-ActionsInvestigate.png)
 
-À l’instar des règles déclenchées par une alerte, les recherches automatiques déclenchées à partir d’une vue dans l’Explorateur incluent une enquête de racine, des étapes permettant d’identifier et de corréler les menaces, ainsi que les actions recommandées pour atténuer ces menaces.
+À l’instar des règles déclenchées par une alerte, les enquêtes automatiques déclenchées à partir d’une vue dans l’Explorateur incluent une enquête de racine, des étapes permettant d’identifier et de corréler les menaces, ainsi que les actions recommandées pour atténuer ces menaces.
 
 ## <a name="how-to-get-air"></a>Comment obtenir de l’AIR
 

@@ -1,5 +1,5 @@
 ---
-title: Configurer la stratégie anti-courrier indésirable sortant
+title: Configurer les notifications de stratégie de courrier indésirable sortant dans Office 365
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -13,62 +13,104 @@ search.appverid:
 ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
-description: Le filtrage du courrier indésirable sortant est toujours activé si vous utilisez le service pour l’envoi de messages sortants, ce qui permet de protéger les organisations utilisant le service ainsi que leurs destinataires.
-ms.openlocfilehash: 9c8c2f7e9ff0be02f11fa66409690cbb854d8c56
-ms.sourcegitcommit: 769b506c828c475c713dbb337e115714dcc7f17c
+description: Les administrateurs peuvent apprendre à modifier les paramètres de notification pour les détections de courrier indésirable sortant dans Office 365.
+ms.openlocfilehash: c48b6cd634417a00040fb5479313782b44f6aa8d
+ms.sourcegitcommit: 81b3bff27bc60235a38004c5b0297ac454331b25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "36699239"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822514"
 ---
-# <a name="configure-the-outbound-spam-policy"></a>Configurer la stratégie anti-courrier indésirable sortant
+# <a name="configure-outbound-spam-policy-notifications-in-office-365"></a>Configurer les notifications de stratégie de courrier indésirable sortant dans Office 365
 
-Le filtrage du courrier indésirable sortant est toujours activé si vous utilisez le service pour l'envoi de messages sortants, ce qui permet de protéger les organisations utilisant le service ainsi que leurs destinataires. Comme pour le filtrage entrant, le filtrage de courrier indésirable sortant comprend le filtrage de connexion et le filtrage de contenu. Toutefois, les paramètres de filtrage sortant ne peuvent pas être configurés. Si un message sortant est déterminé comme étant du courrier indésirable, il est routé via le pool de remise à risque plus élevé, ce qui réduit la probabilité d'ajout du pool d'IP sortantes normales à une liste rouge. Si un client continue à envoyer du courrier indésirable sortant au service, ses messages sont bloqués. Bien que le filtrage de courrier indésirable sortant ne puisse pas être désactivé ou modifié, vous pouvez configurer plusieurs paramètres de courrier indésirable à l'échelle de l'entreprise via la stratégie de courrier indésirable sortant par défaut. 
-  
-La vidéo suivante illustre la configuration de la stratégie de courrier indésirable sortant :
-  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/1f20d655-0d3d-4141-9cae-e57f5a6cffe8?autoplay=false]
-  
-> [!NOTE]
-> Pour obtenir les meilleurs résultats de filtrage, le contenu de la vidéo ci-dessus doit être utilisé avec une configuration correcte et une connaissance des [contrôles de courrier indésirable sortants dans Office 365](https://docs.microsoft.com/office365/securitycompliance/outbound-spam-controls).
+Le filtrage du courrier indésirable sortant est toujours activé si vous utilisez le service pour l’envoi de messages sortants, ce qui permet de protéger les organisations utilisant le service ainsi que leurs destinataires. À l’instar du filtrage des messages entrants, le filtrage du courrier indésirable sortant est composé du filtrage des connexions et du filtrage du contenu, mais les paramètres du filtre sortant ne sont pas configurables. Si un message sortant est considéré comme du courrier indésirable, il est routé via le pool de remise à risque plus élevé, ce qui réduit la probabilité que le pool IP sortant normal soit ajouté à une liste rouge. Si un client continue à envoyer du courrier indésirable sortant via le service, il ne sera pas autorisé à envoyer des messages.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
-<a name="sectionSection0"> </a>
+Bien que vous ne puissiez pas désactiver ou modifier le filtrage du courrier indésirable sortant, vous pouvez configurer les paramètres de notification de courrier indésirable sortants suivants :
 
-Durée d'exécution estimée : 5 minutes
-  
-Des autorisations doivent vous être attribuées avant de pouvoir exécuter cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez la rubrique «entrée anti-courrier indésirable dans la rubrique [autorisations des fonctionnalités dans Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
-  
-Pour plus d’informations sur les raccourcis clavier applicables aux procédures de cette rubrique, voir [raccourcis clavier pour le centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
-  
-La procédure suivante peut également être exécutée par le biais du service PowerShell à distance. Utilisez la cmdlet [Get-HostedOutboundSpamFilterPolicy](http://technet.microsoft.com/library/8f15c83c-c10a-4d9d-b135-35321430bdc2.aspx) pour vérifier vos paramètres et la cmdlet [Set-HostedOutboundSpamFilterPolicy](http://technet.microsoft.com/library/665d1b04-d4b5-4a0e-811a-4e37096ccbfd.aspx) pour modifier les paramètres de votre stratégie anti-courrier indésirable sortant. Pour apprendre à utiliser Windows PowerShell afin de vous connecter à Exchange Online Protection, consultez la rubrique [Connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290). Pour apprendre à utiliser Windows PowerShell afin de vous connecter à Exchange Online, consultez la rubrique [Connexion à Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
-  
-## <a name="use-the-eac-to-edit-the-default-outbound-spam-policy"></a>Utiliser le Centre d'administration Exchange (CAE) pour modifier la stratégie de courrier indésirable sortant par défaut
-<a name="sectionSection1"> </a>
+- **Envoyer des copies des messages suspects**: ces messages sont marqués comme courrier indésirable (quelle que soit la valeur de contrôle d’accès SCL) et ne sont pas rejetés par le filtre, mais sont acheminés via le pool de remise à risque plus élevé. Vous pouvez utiliser le centre d’administration Exchange ou les ** \*** applets de commande-HostedOutboundSpamFilterPolicy dans Exchange Online PowerShell ou Exchange Online Protection PowerShell pour spécifier des destinataires d’ajout pour ces messages détectés. Notez que les destinataires sont ajoutés en tant que destinataires **CCI** (les champs **de** et **à** sont les expéditeurs et destinataires d’origine).
 
-La procédure suivante vous permet de modifier la stratégie de courrier indésirable sortant par défaut :
-  
-### <a name="to-configure-the-default-outbound-spam-policy"></a>Pour configurer la stratégie de courrier indésirable sortant par défaut
+- **Envoyer des notifications lorsqu’un expéditeur est bloqué**: lorsqu’une quantité importante de courrier indésirable provient d’un utilisateur particulier, l’utilisateur est désactivé pour l’envoi de messages électroniques. Les administrateurs sont avertis par défaut, mais vous pouvez utiliser l’option l’utilisateur ne peut pas envoyer de [stratégie d’alerte](alert-policies.md) par **courrier électronique** dans le centre de conformité Office 365 Security & pour configurer des destinataires de notification supplémentaires.
 
-1. Dans le CAE, accédez à **Protection**\> **Courrier indésirable sortant**, puis double-cliquez sur la stratégie par défaut.
-    
-2. Sélectionnez l'option de menu **Préférences de courrier indésirable sortant**. 
-    
-3. Cochez les cases suivantes relatives aux messages sortants, puis spécifiez une ou plusieurs adresses de messagerie associées dans la zone de texte connexe (il peut s'agir de listes de distribution si elles se résolvent en tant que destinations SMTP valides) :
-    
-1. **Envoyer une copie de tous les messages électroniques sortants suspects à l'adresse ou aux adresses de messagerie suivantes**. Il s'agit de messages marqués comme étant courriers indésirables par le filtre (quelle que soit la valeur SCL). Le filtre ne les rejette pas, mais ils sont routés via le pool de remise à risque plus élevé. S'il y a plusieurs adresses, utilisez un point-virgule pour les séparer. Notez que les destinataires spécifiés recevront les messages en tant qu'adresse Cci (les champs De et À correspondent à l'expéditeur et au destinataire initiaux).
-    
-2. **Envoyer une notification à l'adresse de messagerie suivante quand un utilisateur est bloqué en relation avec l'envoi de courrier indésirable sortant**. S'il y a plusieurs adresses, utilisez un point-virgule pour les séparer.
-    
-    Quand une quantité importante de courriers indésirables provenant d'un utilisateur en particulier est détectée, cet utilisateur est désactivé et ne peut plus envoyer de messages électroniques. L'administrateur du domaine, spécifié à l'aide de ce paramètre, est informé que l'envoi de messages sortants est bloqué pour cet utilisateur. Pour savoir à quoi ressemble cette notification, voir [Exemple de notification lorsqu'un expéditeur est bloqué en raison de l'envoi de courrier indésirable sortant](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md). Pour plus d'informations sur le mode de réactivaction, consultez la rubrique [Removing a user, domain, or IP address from a block list after sending spam email](http://technet.microsoft.com/library/712cfcc1-31e8-4e51-8561-b64258a8f1e5.aspx).
-    
-4. Cliquez sur **Enregistrer**. Un résumé de vos paramètres de stratégie par défaut s'affiche dans le volet droit.
-    
-## <a name="for-more-information"></a>Pour plus d'informations
-<a name="sectionSection2"> </a>
+  Pour savoir à quoi ressemble cette notification, voir [Exemple de notification lorsqu'un expéditeur est bloqué en raison de l'envoi de courrier indésirable sortant](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md). Pour plus d'informations sur le mode de réactivaction, consultez la rubrique [Removing a user, domain, or IP address from a block list after sending spam email](http://technet.microsoft.com/library/712cfcc1-31e8-4e51-8561-b64258a8f1e5.aspx).
+
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
+
+- Durée d’exécution estimée : 5 minutes
+
+- Pour ouvrir le Centre de conformité et sécurité, consultez la rubrique [Accéder au centre de conformité et sécurité d’Office 365](go-to-the-securitycompliance-center.md).
+
+- Pour ouvrir le centre d’administration Exchange, consultez la rubrique [Centre d’administration Exchange dans Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center) ou [Centre d’administration Exchange dans Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md).
+
+- Pour ouvrir Exchange Online PowerShell, consultez la rubrique [connexion à Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). Pour ouvrir Exchange Online Protection PowerShell, consultez la rubrique [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell).
+
+- Votre compte doit disposer d’autorisations pour pouvoir effectuer cette procédure. Pour voir les autorisations qui vous sont nécessaires, consultez l’entrée de rôle « gérer les alertes » dans [autorisations dans le centre de conformité Office 365 Security &](permissions-in-the-security-and-compliance-center.md).
+
+## <a name="use-the-eac-to-configure-additional-recipients-for-outbound-spam-messages"></a>Utiliser le centre d’administration Exchange pour configurer des destinataires supplémentaires pour les messages indésirables sortants
+
+1. Dans le centre d’administration Exchange, accédez à **protection** \> contre le **courrier indésirable sortant**.
+
+2. Sélectionnez la stratégie nommée **par défaut**, puis cliquez sur **modifier** ![l'](media/ITPro-EAC-EditIcon.png)icône modifier.
+
+3. Dans la page de propriétés qui s’ouvre, vérifiez que l’onglet **Préférences de courrier indésirable sortant** est sélectionné, puis configurez le paramètre suivant :
+
+   **Envoyer une copie de tous les messages électroniques sortants suspects à l’adresse ou aux adresses de messagerie suivantes**: activez la case à cocher et entrez les adresses de messagerie d’un ou plusieurs administrateurs devant être ajoutés au champ **CCI** des messages détectés. Séparez les adresses de messagerie par un point-virgule (;).
+
+   Lorsque vous avez terminé, cliquez sur **Enregistrer**.
+
+### <a name="use-exchange-online-powershell-or-exchange-online-protection-powershell-to-configure-additional-recipients-for-outbound-spam-messages"></a>Utiliser Exchange Online PowerShell ou Exchange Online Protection PowerShell pour configurer des destinataires supplémentaires pour les messages de courrier indésirable sortants
+
+Pour activer et configurer des destinataires supplémentaires pour les messages de courrier indésirable sortants, utilisez la syntaxe suivante :
+
+```PowerShell
+Set-HostedOutboundSpamFilterPolicy -Identity Default -BccSuspiciousOutboundMail $true -BccSuspiciousOutboundAdditionalRecipients <recipients>
+```
+
+- Pour spécifier les destinataires qui remplacent toutes les valeurs existantes, `emailaddress1,emailaddress2,...emailaddressN`utilisez la syntaxe.
+
+- Pour ajouter ou supprimer des destinataires de manière sélective sans affecter les autres entrées, `@{Add="\<emailaddress1\>","\<emailaddress2\>"...; Remove="\<emailaddress1\>","\<emailaddress2\>"...}`utilisez la syntaxe.
+
+Cet exemple active et configure chris@contoso.com, laura@contoso.com et julia@contoso.com comme destinataires CCI pour les messages indésirables sortants.
+
+```PowerShell
+Set-HostedOutboundSpamFilterPolicy -Identity Default -BccSuspiciousOutboundMail $true -BccSuspiciousOutboundAdditionalRecipients chris@contoso.com,laura@contoso.com,julia@contoso.com
+```
+
+Cet exemple montre comment ajouter michelle@contoso.com en tant que destinataire CCI supplémentaire.
+
+```PowerShell
+Set-HostedOutboundSpamFilterPolicy -Identity Default -BccSuspiciousOutboundAdditionalRecipients @{Add=michelle@contoso.com}
+```
+
+Cet exemple montre comment supprimer chris@contoso.com et julia@contoso.com de la liste des destinataires en copie carbone invisible.
+
+```PowerShell
+Set-HostedOutboundSpamFilterPolicy -Identity Default -BccSuspiciousOutboundAdditionalRecipients @{Remove='chris@contoso.com','julia@contoso.com'}
+```
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez la rubrique [Set-HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterpolicy).
+
+**Remarque**: exécutez la commande `Get-HostedOutboundSpamFilterPolicy | Format-List` pour afficher les valeurs actuelles des propriétés *BccSuspiciousOutboundMail* et *BccSuspiciousOutboundAdditionalRecipients* .
+
+## <a name="use-the-security--compliance-center-to-configure-notifications-when-a-sender-is-blocked"></a>Utiliser le centre de sécurité & conformité pour configurer les notifications lorsqu’un expéditeur est bloqué
+
+1. Dans le **Centre de sécurité** \> & conformité, accédez à alerts **Alert Policies**.
+
+2. Recherchez et sélectionnez la stratégie appelée **utilisateur restreint de l’envoi de courrier électronique**.
+
+3. Dans le survol qui s’ouvre, cliquez sur **modifier la stratégie**.
+
+4. Dans la page **modifier les destinataires** qui s’affiche, configurez les paramètres suivants :
+
+   - **Envoyer des notifications par courrier électronique**: Vérifiez que **activé** est sélectionné.
+
+   - **Destinataires du message électronique**: par défaut, **TenantAdmins** est la seule valeur ici. Pour ajouter des destinataires supplémentaires, cliquez sur un emplacement vide dans cette zone, commencez à taper le destinataire, puis sélectionnez le destinataire lorsque son nom est résolu. Pour supprimer des destinataires, cliquez sur **X** en regard de leur nom.
+
+   - **Limite quotidienne des notifications**: la valeur par défaut est **illimitée**, mais vous pouvez configurer différentes limites entre 1 et 200.
+
+   Lorsque vous avez terminé, cliquez sur **Enregistrer**.
+
+## <a name="for-more-information"></a>Pour plus d’informations
 
 [Pool de remise à risque élevé pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md)
-  
-[FAQ sur la protection contre le courrier indésirable](anti-spam-protection-faq.md)
-  
 
+[FAQ sur la protection contre le courrier indésirable](anti-spam-protection-faq.md)

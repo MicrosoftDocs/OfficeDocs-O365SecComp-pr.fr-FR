@@ -4,7 +4,7 @@ keywords: AIR, autoIR, ATP, automatisation, analyse, réponse, correction, menac
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/06/2019
+ms.date: 09/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Prise en main des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: c2c2b9a0409c472c99b07293a002f9bdbf6c5090
-ms.sourcegitcommit: e6c0d9aea3172a5ccc6c7943625d69144ba20aca
+ms.openlocfilehash: 45fea46a591aac88a8d92c7a67d024d1446e9124
+ms.sourcegitcommit: 81b3bff27bc60235a38004c5b0297ac454331b25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36790928"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36822494"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Examiner et répondre automatiquement aux menaces dans Office 365
 
 ## <a name="overview"></a>Vue d’ensemble
 
-[Office 365 protection avancée contre les menaces](office-365-atp.md) Le plan 2 inclut des fonctionnalités d’analyse et de réponse automatisées qui permettent d’économiser le temps et les efforts de l’équipe des opérations de sécurité pour traiter les alertes et les menaces. Lisez cet article pour commencer à utiliser les fonctionnalités AIR dans Office 365. Pour en savoir plus sur le fonctionnement de l’avion, voir [Automated State and Response (air) with Office 365](automated-investigation-response-office.md).
+[Office 365 protection avancée contre les menaces](office-365-atp.md) Plan 2 inclut des fonctionnalités de réponse aux incidents (AIR) qui permettent d’économiser le temps et les efforts de l’équipe des opérations de sécurité pour traiter les alertes et les menaces. Lisez cet article pour commencer à utiliser les fonctionnalités AIR dans Office 365. Pour en savoir plus sur le fonctionnement de l’avion, voir [réponse automatique aux incidents dans Office 365](automated-investigation-response-office.md).
 
 Avec AIR, lorsque certaines alertes sont déclenchées, un ou plusieurs règles de sécurité se déclenchent et une enquête automatisée commence. Pendant et après un processus d’enquête automatisé, l’équipe des administrateurs et des opérations de sécurité peut :
 
@@ -98,7 +98,7 @@ Certains types d’alertes déclenchent une enquête automatisée dans Office 36
 
 ## <a name="use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>Utiliser l’API activité de gestion d’Office 365 pour des solutions de création de rapports personnalisées ou tierces
 
-Si votre organisation utilise une solution de création de rapports personnalisée ou une solution de création de rapports tierce, vous pouvez afficher des informations sur les analyses automatisées dans cette solution à l’aide de l’API activité de gestion d’Office 365.
+Si votre organisation utilise une solution de création de rapports personnalisée ou tierce, vous pouvez afficher des informations sur les analyses automatisées dans cette solution à l’aide de l’API activité de gestion d’Office 365.
 
 Pour ce faire, utilisez les ressources suivantes :
 
