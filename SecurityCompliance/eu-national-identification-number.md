@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Cette rubrique présente l’aspect d’une stratégie de protection contre la perte de données (DLP) lorsqu’elle détecte le type d’informations sensibles du numéro d’identification national de l’UE. Ce type d’informations sensibles définit différents modèles, Mots clés et autres preuves pour chaque pays.
-ms.openlocfilehash: cbcacb3f85877f5a84238468fb52d612d90f5f0b
-ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
+ms.openlocfilehash: b784b7509eed899f9f03db96ee5e827b9bf70d2e
+ms.sourcegitcommit: ff370e93b792204547694139ef99bc0848304570
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36490771"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36852746"
 ---
 # <a name="eu-national-identification-number"></a>Numéro d’identification nationale de l’UE
 
@@ -29,7 +29,7 @@ Combinaison de 24 caractères de lettres, de chiffres et de caractères spéciau
   
 ### <a name="pattern"></a>Modèle
 
-24 caractères:
+24 caractères :
   
 -  22 lettres (ne respectent pas la casse), chiffres, barres obliques inverses, barres obliques ou signes plus 
     
@@ -73,7 +73,7 @@ personalausweis republik österreich
   
 ## <a name="belgium"></a>Belgique
 
-Pour plus d’informations, reportez-vous à la section «Belgique numéro national» dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, reportez-vous à la section « Belgique numéro national » dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="bulgaria"></a>Bulgarie
 
@@ -89,7 +89,7 @@ Dix chiffres sans espaces ni délimiteurs
     
 - Deux chiffres correspondant à l’ordre de naissance
     
-- Un chiffre correspondant au sexe: un chiffre pair pour le mâle et un chiffre impair pour femelle.
+- Un chiffre correspondant au sexe : un chiffre pair pour le mâle et un chiffre impair pour femelle.
     
 - Un chiffre de contrôle
     
@@ -161,7 +161,7 @@ edinen grazhdanski nomer
   
 ## <a name="croatia"></a>Croatie
 
-Pour plus d’informations, reportez-vous à la section «Croatie Identity Number» dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, reportez-vous à la section « Croatie Identity Number » dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="cyprus"></a>Chypre
 
@@ -211,11 +211,11 @@ Numéro de carte d’identité
   
 ## <a name="czech-republic"></a>République tchèque
 
-Pour plus d’informations, consultez la section «numéro d’identité nationale tchèque» dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, consultez la section « numéro d’identité nationale tchèque » dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="denmark"></a>Danemark
 
-Pour plus d’informations, reportez-vous à la section «numéro d’identification personnel Danemark» dans [ce que recherche les types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, reportez-vous à la section « numéro d’identification personnel Danemark » dans [ce que recherche les types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="estonia"></a>Estonie
 
@@ -227,7 +227,7 @@ Pour plus d’informations, reportez-vous à la section «numéro d’identifica
 
 11 chiffres :
   
-- Un chiffre correspondant au sexe et au siècle de naissance (nombre impair mâle, numéro pair femelle; 1-2:19 siècle; 3-4:20ème siècle; 5-6:21ème siècle)
+- Un chiffre correspondant au sexe et au siècle de naissance (nombre impair mâle, numéro pair femelle ; 1-2:19 siècle ; 3-4:20ème siècle ; 5-6:21ème siècle)
     
 - Six chiffres correspondant à la date de naissance (AAMMJJ)
     
@@ -288,19 +288,19 @@ ID-kaart
   
 ## <a name="finland"></a>Finlande
 
-Pour plus d’informations, reportez-vous à la section «ID national de Finlande» dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, reportez-vous à la section « ID national de Finlande » dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="france"></a>France
 
-Pour plus d’informations, reportez-vous à la section «carte d’identité nationale France (CNI)» dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, reportez-vous à la section « carte d’identité nationale France (CNI) » dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="germany"></a>Allemagne
 
-Pour plus d’informations, reportez-vous à la section «Germany Identity Card Number» dans les [types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, reportez-vous à la section « Germany Identity Card Number » dans les [types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="greece"></a>Grèce
 
-Pour plus d’informations, reportez-vous à la section «carte d’identité nationale Grèce» dans [ce que recherche les types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, reportez-vous à la section « carte d’identité nationale Grèce » dans [ce que recherche les types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="hungary"></a>Hongrie
 
@@ -370,15 +370,15 @@ Combinaison de neuf caractères de lettres, de chiffres et d’un espace dans le
 
 Combinaison de neuf caractères de lettres, de chiffres et d’un espace dans le modèle spécifié
   
-Du 01 janvier 2013 au maintenant:
+Du 01 janvier 2013 au maintenant :
   
 -  Sept chiffres  
     
 - Un chiffre de contrôle
     
-- Un espace ou la lettre majuscule «W» (respecte la casse)
+- Un espace ou la lettre majuscule « W » (respecte la casse)
     
-Avant le 1er janvier 2013:
+Avant le 1er janvier 2013 :
   
 -  Sept chiffres  
     
@@ -445,7 +445,7 @@ Combinaison de 16 caractères de lettres et de chiffres dans le modèle spécifi
   
 ### <a name="pattern"></a>Modèle
 
-Combinaison de lettres et de chiffres de 16 caractères:
+Combinaison de lettres et de chiffres de 16 caractères :
   
 - Trois lettres qui correspondent aux trois premières consonnes du nom de la famille
     
@@ -453,7 +453,7 @@ Combinaison de lettres et de chiffres de 16 caractères:
     
 - Deux chiffres correspondant aux derniers chiffres de l’année de naissance
     
-- Une lettre correspondant à la lettre du mois de naissance: les lettres sont utilisées dans l’ordre alphabétique, mais seules les lettres de A à E, H, L, M, P, R à T sont utilisées (par conséquent, le mois de janvier est A et le mois d’octobre est R).
+- Une lettre correspondant à la lettre du mois de naissance : les lettres sont utilisées dans l’ordre alphabétique, mais seules les lettres de A à E, H, L, M, P, R à T sont utilisées (par conséquent, le mois de janvier est A et le mois d’octobre est R).
     
 - Deux chiffres correspondant au jour du mois de naissance — afin de différencier les hommes, 40 est ajouté au jour de naissance pour les femmes
     
@@ -527,13 +527,13 @@ Codice fiscale
   
 ### <a name="pattern"></a>Modèle
 
-11 chiffres et un trait d’Union:
+11 chiffres et un trait d’Union :
   
 -  Six chiffres correspondant à la date de naissance (JJMMAA) 
     
 - Un trait d’union 
     
-- Un chiffre correspondant au siècle de naissance («0» pour le 19 siècle, «1» pour le vingtième siècle et «2» pour le 21ème siècle).
+- Un chiffre correspondant au siècle de naissance (« 0 » pour le 19 siècle, « 1 » pour le vingtième siècle et « 2 » pour le 21ème siècle).
     
 - Quatre chiffres, généré de manière aléatoire
     
@@ -591,7 +591,7 @@ Personas kods
   
 ### <a name="pattern"></a>Modèle
 
-11 chiffres sans espaces ni délimiteurs:
+11 chiffres sans espaces ni délimiteurs :
   
 - Un chiffre correspondant au sexe et au siècle de la personne
     
@@ -741,7 +741,7 @@ Sept chiffres suivis d’une lettre
   
 ### <a name="pattern"></a>Modèle
 
-Sept chiffres suivis d’une lettre:
+Sept chiffres suivis d’une lettre :
   
 -  Sept chiffres  
     
@@ -865,11 +865,11 @@ uniek identiteitsnummer
   
 ## <a name="poland"></a>Pologne
 
-Pour plus d’informations, reportez-vous à la section «Pologne national ID (PESEL)» dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, reportez-vous à la section « Pologne national ID (PESEL) » dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="portugal"></a>Portugal
 
-Pour plus d’informations, reportez-vous à la section «numéro de carte de citoyen Portugal» dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, reportez-vous à la section « numéro de carte de citoyen Portugal » dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="romania"></a>Roumanie
 
@@ -960,7 +960,7 @@ Dix chiffres contenant une barre oblique inverse
   
 ### <a name="pattern"></a>Modèle
 
-Dix chiffres contenant une barre oblique inverse:
+Dix chiffres contenant une barre oblique inverse :
   
 ### <a name="checksum"></a>Somme de contrôle
 
@@ -1029,9 +1029,9 @@ rodne cislo
   
 ### <a name="pattern"></a>Modèle
 
-13 chiffres dans le modèle spécifié:
+13 chiffres dans le modèle spécifié :
   
--  Sept chiffres correspondant à la date de naissance (DDMMLLL) où «LLL» correspond aux trois derniers chiffres de l’année de naissance 
+-  Sept chiffres correspondant à la date de naissance (DDMMLLL) où « LLL » correspond aux trois derniers chiffres de l’année de naissance 
     
 - Deux chiffres correspondant à la zone de naissance
     
@@ -1096,13 +1096,13 @@ emšo
 
 ### <a name="format"></a>Format
 
-Sept chiffres suivis d’un caractère
+Huit chiffres suivis d’un caractère
   
 ### <a name="pattern"></a>Modèle
 
-Sept chiffres suivis d’un caractère
+Huit chiffres suivis d’un caractère
   
-- Sept chiffres 
+- Huit chiffres
     
 - Un chiffre ou une lettre (ne respectant pas la casse)
     
@@ -1178,7 +1178,7 @@ identidadúnico #
   
 ## <a name="sweden"></a>Suède
 
-Pour plus d’informations, reportez-vous à la section «ID national Suède» dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
+Pour plus d’informations, reportez-vous à la section « ID national Suède » dans [la recherche des types d’informations sensibles](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="see-also"></a>Voir aussi
 

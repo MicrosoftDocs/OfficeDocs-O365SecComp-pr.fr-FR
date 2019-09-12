@@ -13,13 +13,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Prise en main des fonctionnalités d’analyse et de réponse automatisées dans Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 45fea46a591aac88a8d92c7a67d024d1446e9124
-ms.sourcegitcommit: 81b3bff27bc60235a38004c5b0297ac454331b25
+description: Prise en main des fonctionnalités de réponse aux incidents automatisées dans Office 365 Advanced Threat Protection Plan 2.
+ms.openlocfilehash: a7cec69fc7f739e065503121e456cc9bb3a34b31
+ms.sourcegitcommit: ff370e93b792204547694139ef99bc0848304570
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "36822494"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36852756"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Examiner et répondre automatiquement aux menaces dans Office 365
 

@@ -1,7 +1,7 @@
 ---
 title: Examen et réponse contre les menaces Office 365
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 ms.date: 08/23/2019
 audience: Admin
@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment les fonctionnalités d’aide à la décision dans Office 365 protection avancée contre les menaces peuvent vous aider à rechercher des menaces contre votre organisation, à répondre aux programmes malveillants, au hameçonnage et à d’autres attaques détectées par Office 365 pour votre part, et à rechercher des menaces. confirme.
-ms.openlocfilehash: 1d31f3a464060f5b72730e15895d918e61aa09a1
-ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
+ms.openlocfilehash: 0edf68f3383759a4cffd9cb7c25260a51913beb0
+ms.sourcegitcommit: ff370e93b792204547694139ef99bc0848304570
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36761650"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36852766"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Examen et réponse contre les menaces Office 365
 
@@ -74,7 +74,7 @@ Utilisez un simulateur d’attaque pour configurer et exécuter une cyberattaque
 
 ### <a name="automated-investigation-and-response"></a>Examen et réponse automatisés
 
-Utilisez les fonctionnalités d’analyse et de réponse automatisées pour gagner du temps et des efforts afin de corréler le contenu, les appareils et les personnes à risque en fonction des menaces de votre organisation. Les processus d’AIR peuvent commencer chaque fois que certaines alertes sont déclenchées ou lorsqu’elles sont démarrées par votre équipe des opérations de sécurité. Pour en savoir plus, consultez la rubrique autoformation [and Response (air) with Office 365](automated-investigation-response-office.md). 
+Utilisez les fonctionnalités d’analyse et de réponse automatisées pour gagner du temps et des efforts afin de corréler le contenu, les appareils et les personnes à risque en fonction des menaces de votre organisation. Les processus d’AIR peuvent commencer chaque fois que certaines alertes sont déclenchées ou lorsqu’elles sont démarrées par votre équipe des opérations de sécurité. Pour en savoir plus, consultez la rubrique [Automated incident Response (air) with Office 365](automated-investigation-response-office.md). 
   
 ## <a name="threat-intelligence-widgets"></a>Widgets d’aide à la décision
 
