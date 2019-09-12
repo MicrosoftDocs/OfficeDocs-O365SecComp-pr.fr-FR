@@ -141,11 +141,9 @@ Il se peut que vous deviez créer des requêtes afin d’obtenir des données pe
 
 Utilisez ces ressources pour formuler et optimiser des requêtes à l’aide de KQL :
 
--   
-  [Référence de syntaxe de langage de requête de mot-clé (KQL) (DMC)](https://docs.microsoft.com/fr-FR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+-   [Référence de syntaxe de langage de requête de mot-clé (KQL) (DMC)](https://docs.microsoft.com/fr-FR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
--   
-  [Exécuter une Recherche de Contenu](https://support.office.com/fr-FR/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
+-   [Exécuter une Recherche de Contenu](https://support.office.com/fr-FR/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
 
 La recherche de contenu fournit une autre ressource pour vous aider à développer des requêtes KQL appropriées et des types d’informations sensibles : les mots-clés. Pourquoi utiliser la liste de mots-clés ? Vous pouvez obtenir des statistiques indiquant le nombre d’éléments qui correspondent à chaque mot-clé. Cela peut vous aider à identifier rapidement les mots-clés les plus (et les moins) efficaces. Pour plus d’informations sur les statistiques de recherche, reportez-vous à la rubrique relative à l’[affichage des statistiques de mots-clés pour les résultats de la recherche de contenu](https://support.office.com/fr-FR/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
 

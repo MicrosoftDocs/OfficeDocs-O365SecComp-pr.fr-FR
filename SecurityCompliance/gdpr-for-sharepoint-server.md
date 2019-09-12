@@ -35,9 +35,7 @@ Voici l’approche à adopter concernant le contenu généré par l’utilisateu
 
 Voici la procédure recommandée à suivre concernant les partages de fichiers, ainsi que les bibliothèques et les sites SharePoint :
 
-1.  
-  **
-  [Installez et configurez le scanneur Azure Information Protection.](https://docs.microsoft.com/fr-FR/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
+1.  **[Installez et configurez le scanneur Azure Information Protection.](https://docs.microsoft.com/fr-FR/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
 
     -   Déterminez les types de données sensibles à utiliser.
 
