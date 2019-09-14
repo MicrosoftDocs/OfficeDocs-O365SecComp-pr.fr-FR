@@ -16,19 +16,25 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Nous ajoutons constamment de nouvelles fonctionnalités au centre de conformité Microsoft 365, à la résolution des problèmes que nous apprendons et en apportant des modifications en fonction de vos commentaires. Découvrez ce que nous avons fait dans ce mois-ci.
-ms.openlocfilehash: 06c1292138ef7ca4c8421c169555454686ef8858
-ms.sourcegitcommit: 72ee6feaa0e0fd6bf01bfb855ad6e3bef370bf89
+ms.openlocfilehash: b3adf13fe662640c2dbc21eea6a48e2629a1113c
+ms.sourcegitcommit: 9fd606e8d912f4507fbcd9f1fcb9dfcfd20de08b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36393333"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "36980430"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Nouveautés du centre de conformité Microsoft 365
 
 Nous ajoutons constamment de nouvelles fonctionnalités au [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md), à la résolution des problèmes que nous apprendons et en apportant des modifications en fonction de vos commentaires. Jetez un œil à ce qui est disponible dès aujourd’hui. Certaines fonctionnalités sont déployées à des vitesses différentes à nos clients. Si vous ne voyez pas encore de fonctionnalité, essayez de vous ajouter à la [version ciblée](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365).
 
 > [!TIP]
-> Que se passe-t-il dans d’autres centres d’administration? Consultez les articles suivants:<br>[Nouveautés du centre d’administration Microsoft 365](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Nouveautés du centre d’administration SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+> Que se passe-t-il dans d’autres centres d’administration ? Consultez les articles suivants :<br>[Nouveautés du centre d’administration Microsoft 365](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Nouveautés du centre d’administration SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+
+## <a name="august-2019"></a>Août 2019
+
+### <a name="data-investigations"></a>Enquêtes de données
+
+Lors de l’exécution d’une enquête sur les données, vous pouvez maintenant supprimer des éléments de leur emplacement d’origine. Cela signifie que vous pouvez supprimer des éléments de boîtes aux lettres Exchange, de sites SharePoint et de comptes OneDrive au sein de votre organisation. Étant donné que vous avez collecté les éléments en tant que preuve, vous pouvez effectuer des copies de ces éléments dans l’ensemble de preuves pour vous faire une étude plus approfondie ou conserver une référence. [En savoir plus](datainvestigations/delete-items-from-original-locations.md)
 
 ## <a name="july-2019"></a>Juillet 2019
 
@@ -43,7 +49,7 @@ Nous avons publié deux nouveaux rôles d’administrateur pour vous aider à g�
 
 ### <a name="search-and-filtering-for-reports"></a>Recherche et filtrage des rapports
 
-Il n’y a plus de défilement dans un océan de rapports pour trouver ceux que vous souhaitez. Vous pouvez désormais Rechercher des rapports (en fonction de leur titre) et filtrer sur des catégories telles que «labels» et «Compliance» et des sources comme «Office 365» et «Microsoft Cloud App Security».
+Il n’y a plus de défilement dans un océan de rapports pour trouver ceux que vous souhaitez. Vous pouvez désormais Rechercher des rapports (en fonction de leur titre) et filtrer sur des catégories telles que « labels » et « Compliance » et des sources comme « Office 365 » et « Microsoft Cloud App Security ».
 
 ![Capture d’écran des boutons de recherche et de filtre des rapports avec un filtre appliqué](media/mcc_report_filtering.png)
 
