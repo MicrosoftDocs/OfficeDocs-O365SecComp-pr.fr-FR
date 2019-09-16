@@ -15,19 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Utilisez le Centre de sécurité et conformité pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation Office 365.\n "
-ms.openlocfilehash: f10c6b488683201a2980702cc83efe97bf54f046
-ms.sourcegitcommit: 50a2654d6d56249c3f836607f436446049be7833
+ms.openlocfilehash: 9fa2d1b2d047638ade395a2602ba6f6c8bf2ea79
+ms.sourcegitcommit: 6cc11f46f27a8c4f460100ba4da20c23bfd96f7e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838164"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "36877313"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité 
 
 ## <a name="introduction"></a>Introduction
 
-Vous avez besoin de déterminer si un utilisateur a consulté un document spécifique ou supprimé définitivement un élément de sa boîte aux lettres ? Si c’est le cas, vous pouvez utiliser le Centre de sécurité &amp; conformité Office 365 pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation Office 365.
- Qu’est-ce qu’un journal d’audit unifié ? Un tel journal permet de rechercher les types suivants d’activité des utilisateurs et administrateurs dans Office 365 :
+Vous avez besoin de déterminer si un utilisateur a consulté un document spécifique ou supprimé définitivement un élément de sa boîte aux lettres ? Si c’est le cas, vous pouvez utiliser le Centre de sécurité et de conformité Office 365 pour rechercher dans le journal d’audit unifié les activités des utilisateurs et des administrateurs de votre organisation Office 365. Qu’est-ce qu’un journal d’audit unifié ? Un tel journal permet de rechercher les types suivants d’activité des utilisateurs et administrateurs dans Office 365 :
 
 - Activité utilisateur dans SharePoint Online et OneDrive Entreprise
 
@@ -77,7 +76,10 @@ Avant de commencer à effectuer une recherche dans le journal d’audit d’Offi
 
   - **Office 365 E3 :** Les dossiers d’audit sont conservés pendant 90 jours. Vous pouvez rechercher les activités effectuées au cours des 90 derniers jours dans le journal d’audit.  
 
-  - **Office 365 E5 :** Les dossiers d’audit sont également conservés pendant 90 jours. La conservation d’enregistrements d’audit pendant un an peut être mise à la disposition des utilisateurs et utilisateurs de E5 et des utilisateurs avec une licence E3 et d’une licence de composant additionnel de conformité avancée Office 365.
+    > [!NOTE]
+    > Même lorsque l’audit de boîtes aux lettres est activé par défaut, vous remarquerez peut-être que les événements d’audit de boîtes aux lettres de certains utilisateurs sont introuvables dans les recherches du journal d’audit dans le Centre de sécurité et de conformité ou via l’API Activité de gestion Office 365. Pour plus d’informations, consultez la rubrique [Plus d’informations sur la journalisation d’audit de boîtes aux lettres](enable-mailbox-auditing.md#more-information).
+
+  - **Office 365 E5 :** les dossiers d’audit sont également conservés pendant 90 jours. La conservation d’enregistrements d’audit pendant un an peut être mise à la disposition des utilisateurs et utilisateurs de E5 et des utilisateurs avec une licence E3 et d’une licence de composant additionnel de conformité avancée Office 365.
 
     > [!NOTE]
     > Le programme d’aperçu privé pour la période de rétention d’un an pour les enregistrements d’audit pour les organisations E5 (ou pour les utilisateurs de E3 organisations disposant de licences complémentaires de conformité avancées) de prend plus de nouvelle inscription. Cet article sera mis à jour lorsque la période de rétention d’un an sera disponible en version publique ou publiée pour une disponibilité générale.
