@@ -1,7 +1,8 @@
 # [Sécurité et conformité](index.md)
 
 # Prise en main
-## [Nouveautés du Centre de conformité ](whats-new.md)
+## [Nouveautés du centre de conformité](whats-new.md)
+## [Mises à jour récentes apportées au contenu de conformité](new-updated-compliance-content.md)
 ## [Feuille de route relative à la sécurité d’Office 365](security-roadmap.md)
 ## [Configurer votre client Office 365 pour une sécurité accrue](tenant-wide-setup-for-increased-security.md)
 ## [Se préparer pour le nouveau Centre de sécurité Microsoft 365 et Centre de conformité Microsoft 365](microsoft-security-and-compliance.md)
