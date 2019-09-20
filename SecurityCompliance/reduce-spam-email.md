@@ -28,7 +28,7 @@ ms.locfileid: "36054706"
 
  **Vous recevez trop de courrier indésirable dans Office 365 ? Suivez ces conseils.**
   
-Nous vous recommandons vivement de signaler les messages de type faux négatifs à l’aide du [complément de rapport de message ](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)pour nous aider à améliorer nos filtres. Vous pouvez également envoyer le message à l’aide de [l'Explorateur des envois](admin-submission.md).
+Nous vous recommandons vivement de signaler les messages de type « Faux négatifs » à l’aide du [complément Signaler le message](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) pour nous aider à améliorer nos filtres. Vous pouvez également nous soumettre le message pour examen à l’aide de l’[Explorateur de soumissions](admin-submission.md).
 
 > [!TIP]
 > Si vous pensez qu’il s’agit d’un message indésirable et qu’il se trouve dans le dossier Courrier indésirable, cela ne devrait pas poser de problème. Si vous ne voulez pas le voir dans la boîte de réception, vous devez modifier la stratégie anti-courrier indésirable pour mettre le message en quarantaine. Pour plus d’informations sur la mise en quarantaine d’un message, consultez l’article relatif à la [mise en quarantaine des courriers électroniques dans Office 365](quarantine-email-messages.md).
@@ -53,11 +53,11 @@ Pour éviter que vous receviez trop de courrier indésirable, Exchange Online Pr
     
 - **Marquez le courrier en nombre comme courrier indésirable** Le courrier en nombre désigne le courrier auquel les utilisateurs peuvent être abonnés mais qui est considéré comme indésirable. Dans l’en-tête de messages X-Microsoft-Antispam, recherchez la propriété BCL (seuil de probabilité de courrier en nombre). Si cette valeur est inférieure au seuil défini dans le filtre anti-courrier indésirable, nous vous recommandons d’ajuster ce seuil pour que ces messages en nombre soient marqués comme courrier indésirable. Les utilisateurs tolèrent différemment le courrier en nombre et ont différentes préférences concernant son [traitement](https://docs.microsoft.com/fr-FR/office365/SecurityCompliance/bulk-complaint-level-values). Vous pouvez créer des stratégies ou des règles différentes selon les préférences des utilisateurs. 
     
-- **Bloquez immédiatement un expéditeur** Si vous devez immédiatement bloquer un expéditeur, vous pouvez bloquer son adresse e-mail, son domaine ou son adresse IP. Consultez [Créer des listes d’expéditeurs bloqués dans Office 365](create-block-sender-lists-in-office-365.md). Une entrée dans la liste verte d’un utilisateur final peut remplacer un blocage défini par l’administrateur.
+- **Bloquer immédiatement un expéditeur** : si vous devez immédiatement bloquer un expéditeur, vous pouvez bloquer son adresse de courrier, son domaine ou son adresse IP. Si vous souhaitez en savoir plus, veuillez consulter la page [Créer des listes d’expéditeurs bloqués dans Office 365](create-block-sender-lists-in-office-365.md). Une entrée dans la liste verte d’un utilisateur final peut remplacer un blocage défini par l’administrateur.
     
-- **Activez le complément de signalement de courrier indésirable pour les utilisateurs** Nous vous recommandons vivement [d’activer le complément de signalement de courrier indésirable pour vos utilisateurs](enable-the-report-message-add-in.md).
+- **Activer le complément Signaler le message pour les utilisateurs** : nous vous recommandons vivement d’[activer le complément Signaler le message pour vos utilisateurs](enable-the-report-message-add-in.md).
 
-- **Utiliser [l’Explorateur d’envoi](admin-submission.md)** Les administrateurs peuvent désormais envoyer des e-mails en utilisant l'ID de fichier ou de message réseau, les URL et les fichiers à numériser par Microsoft dans Office 365. En tant qu’administrateur, vous pouvez peut-être consulter les commentaires que vos utilisateurs envoient et utiliser des modèles pour ajuster les paramètres à l’origine de problèmes éventuels.
+- **Utiliser l’[Explorateur de soumissions](admin-submission.md)**  : les administrateurs Office 365 peuvent désormais utiliser un ID de fichier ou de message réseau pour transmettre à Microsoft des courriers électroniques, des URL et des fichiers à analyser. En tant qu’administrateur, vous pouvez normalement consulter les commentaires de vos utilisateurs et utiliser des modèles pour régler les paramètres pouvant poser problème.
 
 - **Autoriser [DKIM](use-dkim-to-validate-outbound-email.md)** à signer tous vos messages sortants pour renforcer la sécurité dans votre domaine et client.
  > [!TIP]
@@ -67,6 +67,6 @@ Pour éviter que vous receviez trop de courrier indésirable, Exchange Online Pr
 
 - **Activez la règle de courrier indésirable et vérifiez votre liste verte** Vérifiez que la règle de l’action anti-courrier indésirable est activée et que l’expéditeur ou le domaine de l’expéditeur ne peut pas être remplacé dans votre liste verte. Pour accéder à ces paramètres, accédez aux paramètres du courrier indésirable [Bloquer ou autoriser](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46). Ici, vous pouvez également choisir de bloquer l’adresse e-mail ou le domaine de l’expéditeur.
     
-- **Signalez le courrier indésirable à Microsoft** Signalez le courrier indésirable à Microsoft à l’aide du [complément Signaler le message](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+- **Signaler le courrier indésirable à Microsoft** : vous pouvez signaler le courrier indésirable à Microsoft à l’aide du complément [Signaler le message](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
        
 - **Désabonnez-vous du courrier en nombre** Si vous vous êtes abonné à ce message (bulletin d’informations, annonce de produit, etc.) et qu’il contient un lien Se désabonner provenant d’une source de confiance, nous vous recommandons simplement de vous désabonner. Généralement, Office 365 ne traite pas ces messages comme du courrier indésirable. Vous pouvez également choisir de bloquer l’expéditeur, ou de demander à votre administrateur de modifier les paramètres pour que tout le courrier en nombre soit traité comme du courrier indésirable.
